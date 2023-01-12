@@ -102,7 +102,8 @@ object anon {
       __obj.asInstanceOf[AlignX]
     }
     
-    extension [Self <: AlignX](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AlignX] (val x: Self) extends AnyVal {
       
       inline def setAlignX(value: Requireable[Any]): Self = StObject.set(x, "alignX", value.asInstanceOf[js.Any])
       
@@ -173,7 +174,8 @@ object anon {
       __obj.asInstanceOf[Breakpoint]
     }
     
-    extension [Self <: Breakpoint](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Breakpoint] (val x: Self) extends AnyVal {
       
       inline def setBreakpoint(value: Double): Self = StObject.set(x, "breakpoint", value.asInstanceOf[js.Any])
     }
@@ -255,7 +257,8 @@ object anon {
       __obj.asInstanceOf[Clearfix]
     }
     
-    extension [Self <: Clearfix](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Clearfix] (val x: Self) extends AnyVal {
       
       inline def setClearfix(value: Boolean): Self = StObject.set(x, "clearfix", value.asInstanceOf[js.Any])
       

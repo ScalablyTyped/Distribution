@@ -36,7 +36,8 @@ object baseRequestConfig {
     __obj.asInstanceOf[baseRequestConfig]
   }
   
-  extension [Self <: baseRequestConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: baseRequestConfig] (val x: Self) extends AnyVal {
     
     inline def setMeta(value: Any): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
     

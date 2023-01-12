@@ -28,7 +28,8 @@ object CreateServiceLinkedRoleRequest {
     __obj.asInstanceOf[CreateServiceLinkedRoleRequest]
   }
   
-  extension [Self <: CreateServiceLinkedRoleRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateServiceLinkedRoleRequest] (val x: Self) extends AnyVal {
     
     inline def setAWSServiceName(value: groupNameType): Self = StObject.set(x, "AWSServiceName", value.asInstanceOf[js.Any])
     

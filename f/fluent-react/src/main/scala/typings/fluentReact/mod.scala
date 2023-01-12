@@ -93,7 +93,8 @@ object mod {
       __obj.asInstanceOf[Context]
     }
     
-    extension [Self <: Context](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Context] (val x: Self) extends AnyVal {
       
       inline def setL10n(value: ReactLocalization): Self = StObject.set(x, "l10n", value.asInstanceOf[js.Any])
       
@@ -124,7 +125,8 @@ object mod {
       __obj.asInstanceOf[InjectedProps]
     }
     
-    extension [Self <: InjectedProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InjectedProps] (val x: Self) extends AnyVal {
       
       inline def setGetString(value: (/* id */ String, /* args */ js.UndefOr[js.Object]) => String): Self = StObject.set(x, "getString", js.Any.fromFunction2(value))
     }
@@ -145,7 +147,8 @@ object mod {
       __obj.asInstanceOf[LocalizationProviderProps]
     }
     
-    extension [Self <: LocalizationProviderProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LocalizationProviderProps] (val x: Self) extends AnyVal {
       
       inline def setBundles(value: IterableIterator[FluentBundle]): Self = StObject.set(x, "bundles", value.asInstanceOf[js.Any])
       
@@ -172,7 +175,8 @@ object mod {
       __obj.asInstanceOf[LocalizedProps]
     }
     
-    extension [Self <: LocalizedProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LocalizedProps] (val x: Self) extends AnyVal {
       
       inline def setAttrs(value: js.Object): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
       
@@ -211,7 +215,8 @@ object mod {
       __obj.asInstanceOf[Node]
     }
     
-    extension [Self <: Node](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Node] (val x: Self) extends AnyVal {
       
       inline def setLocalName(value: String): Self = StObject.set(x, "localName", value.asInstanceOf[js.Any])
       

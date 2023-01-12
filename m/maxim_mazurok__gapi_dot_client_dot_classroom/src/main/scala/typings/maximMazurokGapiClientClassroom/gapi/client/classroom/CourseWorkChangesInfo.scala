@@ -16,7 +16,8 @@ object CourseWorkChangesInfo {
     __obj.asInstanceOf[CourseWorkChangesInfo]
   }
   
-  extension [Self <: CourseWorkChangesInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CourseWorkChangesInfo] (val x: Self) extends AnyVal {
     
     inline def setCourseId(value: String): Self = StObject.set(x, "courseId", value.asInstanceOf[js.Any])
     

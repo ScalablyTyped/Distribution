@@ -20,7 +20,8 @@ object DialogflowV1OriginalRequest {
     __obj.asInstanceOf[DialogflowV1OriginalRequest]
   }
   
-  extension [Self <: DialogflowV1OriginalRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DialogflowV1OriginalRequest] (val x: Self) extends AnyVal {
     
     inline def setData(value: GoogleActionsV2AppRequest): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

@@ -40,7 +40,8 @@ object AddressRuleCondition {
     __obj.asInstanceOf[AddressRuleCondition]
   }
   
-  extension [Self <: AddressRuleCondition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AddressRuleCondition] (val x: Self) extends AnyVal {
     
     inline def setAddress(value: Any): Self = StObject.set(x, "Address", value.asInstanceOf[js.Any])
     

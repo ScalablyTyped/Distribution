@@ -25,7 +25,8 @@ object SasPortalDeployment {
     __obj.asInstanceOf[SasPortalDeployment]
   }
   
-  extension [Self <: SasPortalDeployment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SasPortalDeployment] (val x: Self) extends AnyVal {
     
     inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     

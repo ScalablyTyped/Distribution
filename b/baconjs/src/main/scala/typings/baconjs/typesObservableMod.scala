@@ -973,7 +973,8 @@ object typesObservableMod {
       __obj.asInstanceOf[EventStreamOptions]
     }
     
-    extension [Self <: EventStreamOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EventStreamOptions] (val x: Self) extends AnyVal {
       
       inline def setForceAsync(value: Boolean): Self = StObject.set(x, "forceAsync", value.asInstanceOf[js.Any])
     }

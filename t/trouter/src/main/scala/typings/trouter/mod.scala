@@ -26,7 +26,8 @@ object mod {
       __obj.asInstanceOf[FindResult[T]]
     }
     
-    extension [Self <: FindResult[?], T](x: Self & FindResult[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FindResult[?], T] (val x: Self & FindResult[T]) extends AnyVal {
       
       inline def setHandlers(value: js.Array[T]): Self = StObject.set(x, "handlers", value.asInstanceOf[js.Any])
       

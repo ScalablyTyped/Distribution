@@ -2131,7 +2131,8 @@ object fillstringoutlineWidthnum {
     __obj.asInstanceOf[fillstringoutlineWidthnum]
   }
   
-  extension [Self <: fillstringoutlineWidthnum](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: fillstringoutlineWidthnum] (val x: Self) extends AnyVal {
     
     inline def setAccentColor(value: AccentColor): Self = StObject.set(x, "accentColor", value.asInstanceOf[js.Any])
     

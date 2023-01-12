@@ -63,7 +63,8 @@ object distBadgeSrcBadgeMod {
       __obj.asInstanceOf[InnerBadgeProps]
     }
     
-    extension [Self <: InnerBadgeProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InnerBadgeProps] (val x: Self) extends AnyVal {
       
       inline def setAs(value: ElementType[Any]): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       

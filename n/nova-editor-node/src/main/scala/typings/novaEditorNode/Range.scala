@@ -50,7 +50,8 @@ object Range {
     __obj.asInstanceOf[Range]
   }
   
-  extension [Self <: Range](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Range] (val x: Self) extends AnyVal {
     
     inline def setCompare(value: Range => Double): Self = StObject.set(x, "compare", js.Any.fromFunction1(value))
     

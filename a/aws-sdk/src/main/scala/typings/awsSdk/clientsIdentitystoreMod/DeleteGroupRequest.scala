@@ -23,7 +23,8 @@ object DeleteGroupRequest {
     __obj.asInstanceOf[DeleteGroupRequest]
   }
   
-  extension [Self <: DeleteGroupRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteGroupRequest] (val x: Self) extends AnyVal {
     
     inline def setGroupId(value: ResourceId): Self = StObject.set(x, "GroupId", value.asInstanceOf[js.Any])
     

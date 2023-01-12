@@ -15,7 +15,8 @@ object ResponderProvided {
     __obj.asInstanceOf[ResponderProvided]
   }
   
-  extension [Self <: ResponderProvided](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResponderProvided] (val x: Self) extends AnyVal {
     
     inline def setAnnounce(value: /* message */ String => Unit): Self = StObject.set(x, "announce", js.Any.fromFunction1(value))
   }

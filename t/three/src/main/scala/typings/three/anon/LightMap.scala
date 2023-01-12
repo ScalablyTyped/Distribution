@@ -18,7 +18,8 @@ object LightMap {
     __obj.asInstanceOf[LightMap]
   }
   
-  extension [Self <: LightMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LightMap] (val x: Self) extends AnyVal {
     
     inline def setLightMap(value: IUniform[Any]): Self = StObject.set(x, "lightMap", value.asInstanceOf[js.Any])
     

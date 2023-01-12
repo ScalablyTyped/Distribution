@@ -28,7 +28,8 @@ object LambdaFunctionCompletedEventAttributes {
     __obj.asInstanceOf[LambdaFunctionCompletedEventAttributes]
   }
   
-  extension [Self <: LambdaFunctionCompletedEventAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LambdaFunctionCompletedEventAttributes] (val x: Self) extends AnyVal {
     
     inline def setResult(value: Data): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     

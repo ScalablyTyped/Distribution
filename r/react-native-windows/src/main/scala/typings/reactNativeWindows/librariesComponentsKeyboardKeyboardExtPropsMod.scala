@@ -84,7 +84,8 @@ object librariesComponentsKeyboardKeyboardExtPropsMod {
       __obj.asInstanceOf[IHandledKeyboardEvent]
     }
     
-    extension [Self <: IHandledKeyboardEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IHandledKeyboardEvent] (val x: Self) extends AnyVal {
       
       inline def setAltKey(value: Boolean): Self = StObject.set(x, "altKey", value.asInstanceOf[js.Any])
       
@@ -133,7 +134,8 @@ object librariesComponentsKeyboardKeyboardExtPropsMod {
       __obj.asInstanceOf[IKeyboardProps]
     }
     
-    extension [Self <: IKeyboardProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IKeyboardProps] (val x: Self) extends AnyVal {
       
       inline def setKeyDownEvents(value: js.Array[IHandledKeyboardEvent]): Self = StObject.set(x, "keyDownEvents", value.asInstanceOf[js.Any])
       
@@ -196,7 +198,8 @@ object librariesComponentsKeyboardKeyboardExtPropsMod {
       __obj.asInstanceOf[INativeKeyboardEvent]
     }
     
-    extension [Self <: INativeKeyboardEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: INativeKeyboardEvent] (val x: Self) extends AnyVal {
       
       inline def setAltKey(value: Boolean): Self = StObject.set(x, "altKey", value.asInstanceOf[js.Any])
       

@@ -47,7 +47,8 @@ object SearchCriteria {
     __obj.asInstanceOf[SearchCriteria]
   }
   
-  extension [Self <: SearchCriteria](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchCriteria] (val x: Self) extends AnyVal {
     
     inline def setCompleteMatch(value: Boolean): Self = StObject.set(x, "completeMatch", value.asInstanceOf[js.Any])
     

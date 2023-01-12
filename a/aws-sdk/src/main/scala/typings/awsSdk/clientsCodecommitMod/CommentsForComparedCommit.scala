@@ -48,7 +48,8 @@ object CommentsForComparedCommit {
     __obj.asInstanceOf[CommentsForComparedCommit]
   }
   
-  extension [Self <: CommentsForComparedCommit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CommentsForComparedCommit] (val x: Self) extends AnyVal {
     
     inline def setAfterBlobId(value: ObjectId): Self = StObject.set(x, "afterBlobId", value.asInstanceOf[js.Any])
     

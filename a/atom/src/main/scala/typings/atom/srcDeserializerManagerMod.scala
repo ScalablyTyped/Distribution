@@ -20,7 +20,8 @@ object srcDeserializerManagerMod {
       __obj.asInstanceOf[Deserializer]
     }
     
-    extension [Self <: Deserializer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Deserializer] (val x: Self) extends AnyVal {
       
       inline def setDeserialize(value: js.Object => js.Object): Self = StObject.set(x, "deserialize", js.Any.fromFunction1(value))
       
@@ -43,7 +44,8 @@ object srcDeserializerManagerMod {
       __obj.asInstanceOf[DeserializerManager]
     }
     
-    extension [Self <: DeserializerManager](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeserializerManager] (val x: Self) extends AnyVal {
       
       inline def setAdd(value: /* repeated */ Deserializer => Disposable): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
       

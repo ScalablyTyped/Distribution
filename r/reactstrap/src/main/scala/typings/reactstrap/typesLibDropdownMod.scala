@@ -87,7 +87,8 @@ object typesLibDropdownMod {
       __obj.asInstanceOf[DropdownProps]
     }
     
-    extension [Self <: DropdownProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DropdownProps] (val x: Self) extends AnyVal {
       
       inline def setA11y(value: Boolean): Self = StObject.set(x, "a11y", value.asInstanceOf[js.Any])
       
@@ -172,7 +173,8 @@ object typesLibDropdownMod {
       __obj.asInstanceOf[UncontrolledDropdownProps]
     }
     
-    extension [Self <: UncontrolledDropdownProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UncontrolledDropdownProps] (val x: Self) extends AnyVal {
       
       inline def setDefaultOpen(value: Boolean): Self = StObject.set(x, "defaultOpen", value.asInstanceOf[js.Any])
       

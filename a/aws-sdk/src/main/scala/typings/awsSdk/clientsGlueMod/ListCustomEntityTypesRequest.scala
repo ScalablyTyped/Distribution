@@ -23,7 +23,8 @@ object ListCustomEntityTypesRequest {
     __obj.asInstanceOf[ListCustomEntityTypesRequest]
   }
   
-  extension [Self <: ListCustomEntityTypesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListCustomEntityTypesRequest] (val x: Self) extends AnyVal {
     
     inline def setMaxResults(value: PageSize): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     

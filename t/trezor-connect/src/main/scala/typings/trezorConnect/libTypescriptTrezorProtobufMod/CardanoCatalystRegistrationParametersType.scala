@@ -26,7 +26,8 @@ object CardanoCatalystRegistrationParametersType {
     __obj.asInstanceOf[CardanoCatalystRegistrationParametersType]
   }
   
-  extension [Self <: CardanoCatalystRegistrationParametersType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CardanoCatalystRegistrationParametersType] (val x: Self) extends AnyVal {
     
     inline def setNonce(value: UintType): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
     

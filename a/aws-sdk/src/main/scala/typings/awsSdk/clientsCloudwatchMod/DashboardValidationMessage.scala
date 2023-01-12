@@ -23,7 +23,8 @@ object DashboardValidationMessage {
     __obj.asInstanceOf[DashboardValidationMessage]
   }
   
-  extension [Self <: DashboardValidationMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DashboardValidationMessage] (val x: Self) extends AnyVal {
     
     inline def setDataPath(value: DataPath): Self = StObject.set(x, "DataPath", value.asInstanceOf[js.Any])
     

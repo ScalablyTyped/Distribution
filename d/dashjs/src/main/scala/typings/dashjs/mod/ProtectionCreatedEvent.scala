@@ -22,7 +22,8 @@ object ProtectionCreatedEvent {
     __obj.asInstanceOf[ProtectionCreatedEvent]
   }
   
-  extension [Self <: ProtectionCreatedEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProtectionCreatedEvent] (val x: Self) extends AnyVal {
     
     inline def setController(value: js.Object): Self = StObject.set(x, "controller", value.asInstanceOf[js.Any])
     

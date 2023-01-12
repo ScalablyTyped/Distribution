@@ -17,7 +17,8 @@ object UserChangedEventArgs {
     __obj.asInstanceOf[UserChangedEventArgs]
   }
   
-  extension [Self <: UserChangedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UserChangedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setUser(value: User): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
   }

@@ -41,7 +41,8 @@ object ProposalId {
     __obj.asInstanceOf[ProposalId]
   }
   
-  extension [Self <: ProposalId](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProposalId] (val x: Self) extends AnyVal {
     
     inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
     

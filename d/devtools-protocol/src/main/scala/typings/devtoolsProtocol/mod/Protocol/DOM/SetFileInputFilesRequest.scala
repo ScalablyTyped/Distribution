@@ -34,7 +34,8 @@ object SetFileInputFilesRequest {
     __obj.asInstanceOf[SetFileInputFilesRequest]
   }
   
-  extension [Self <: SetFileInputFilesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetFileInputFilesRequest] (val x: Self) extends AnyVal {
     
     inline def setBackendNodeId(value: BackendNodeId): Self = StObject.set(x, "backendNodeId", value.asInstanceOf[js.Any])
     

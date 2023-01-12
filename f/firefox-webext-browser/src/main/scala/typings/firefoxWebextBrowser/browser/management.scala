@@ -100,7 +100,8 @@ object management {
       __obj.asInstanceOf[ExtensionInfo]
     }
     
-    extension [Self <: ExtensionInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExtensionInfo] (val x: Self) extends AnyVal {
       
       inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
@@ -219,7 +220,8 @@ object management {
       __obj.asInstanceOf[IconInfo]
     }
     
-    extension [Self <: IconInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IconInfo] (val x: Self) extends AnyVal {
       
       inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
@@ -242,7 +244,8 @@ object management {
       __obj.asInstanceOf[InstallOptions]
     }
     
-    extension [Self <: InstallOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InstallOptions] (val x: Self) extends AnyVal {
       
       inline def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
       
@@ -263,7 +266,8 @@ object management {
       __obj.asInstanceOf[InstallReturnResult]
     }
     
-    extension [Self <: InstallReturnResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InstallReturnResult] (val x: Self) extends AnyVal {
       
       inline def setId(value: ExtensionID): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     }
@@ -284,7 +288,8 @@ object management {
       __obj.asInstanceOf[UninstallSelfOptions]
     }
     
-    extension [Self <: UninstallSelfOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UninstallSelfOptions] (val x: Self) extends AnyVal {
       
       inline def setDialogMessage(value: String): Self = StObject.set(x, "dialogMessage", value.asInstanceOf[js.Any])
       

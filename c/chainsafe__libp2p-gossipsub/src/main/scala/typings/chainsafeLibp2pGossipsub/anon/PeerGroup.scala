@@ -25,7 +25,8 @@ object PeerGroup {
     __obj.asInstanceOf[PeerGroup]
   }
   
-  extension [Self <: PeerGroup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PeerGroup] (val x: Self) extends AnyVal {
     
     inline def setPeerGroup(
       value: /* keyof @chainsafe/libp2p-gossipsub.@chainsafe/libp2p-gossipsub/dist/src/metrics.ToSendGroupCount */ direct | floodsub | mesh | fanout

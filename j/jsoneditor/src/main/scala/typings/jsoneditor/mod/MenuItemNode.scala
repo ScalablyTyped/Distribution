@@ -20,7 +20,8 @@ object MenuItemNode {
     __obj.asInstanceOf[MenuItemNode]
   }
   
-  extension [Self <: MenuItemNode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MenuItemNode] (val x: Self) extends AnyVal {
     
     inline def setPath(value: js.Array[String]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     

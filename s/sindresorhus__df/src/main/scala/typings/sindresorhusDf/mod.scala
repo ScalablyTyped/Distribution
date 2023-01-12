@@ -70,7 +70,8 @@ object mod {
       __obj.asInstanceOf[SpaceInfo]
     }
     
-    extension [Self <: SpaceInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SpaceInfo] (val x: Self) extends AnyVal {
       
       inline def setAvailable(value: Double): Self = StObject.set(x, "available", value.asInstanceOf[js.Any])
       

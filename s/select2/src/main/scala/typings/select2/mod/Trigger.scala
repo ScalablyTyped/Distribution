@@ -20,7 +20,8 @@ object Trigger {
     __obj.asInstanceOf[Trigger]
   }
   
-  extension [Self <: Trigger](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Trigger] (val x: Self) extends AnyVal {
     
     inline def setParams(value: Data): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     

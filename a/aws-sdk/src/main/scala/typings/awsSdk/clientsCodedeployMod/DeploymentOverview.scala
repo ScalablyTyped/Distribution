@@ -43,7 +43,8 @@ object DeploymentOverview {
     __obj.asInstanceOf[DeploymentOverview]
   }
   
-  extension [Self <: DeploymentOverview](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeploymentOverview] (val x: Self) extends AnyVal {
     
     inline def setFailed(value: InstanceCount): Self = StObject.set(x, "Failed", value.asInstanceOf[js.Any])
     

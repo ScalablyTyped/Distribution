@@ -88,7 +88,8 @@ object pluginMod {
       __obj.asInstanceOf[PluginMap]
     }
     
-    extension [Self <: PluginMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PluginMap] (val x: Self) extends AnyVal {
       
       inline def setConstructors(value: StringDictionary[TypeofScrollbarPlugin]): Self = StObject.set(x, "constructors", value.asInstanceOf[js.Any])
       

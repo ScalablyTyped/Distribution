@@ -28,7 +28,8 @@ object TextConversionResult {
     __obj.asInstanceOf[TextConversionResult]
   }
   
-  extension [Self <: TextConversionResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextConversionResult] (val x: Self) extends AnyVal {
     
     inline def setBoundary(value: Boundary): Self = StObject.set(x, "Boundary", value.asInstanceOf[js.Any])
     

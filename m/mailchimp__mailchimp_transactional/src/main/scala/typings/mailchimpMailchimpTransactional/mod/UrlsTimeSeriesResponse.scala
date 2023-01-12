@@ -25,7 +25,8 @@ object UrlsTimeSeriesResponse {
     __obj.asInstanceOf[UrlsTimeSeriesResponse]
   }
   
-  extension [Self <: UrlsTimeSeriesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UrlsTimeSeriesResponse] (val x: Self) extends AnyVal {
     
     inline def setClicks(value: Double): Self = StObject.set(x, "clicks", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object UpdateWirelessGatewayTaskCreate {
     __obj.asInstanceOf[UpdateWirelessGatewayTaskCreate]
   }
   
-  extension [Self <: UpdateWirelessGatewayTaskCreate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateWirelessGatewayTaskCreate] (val x: Self) extends AnyVal {
     
     inline def setLoRaWAN(value: LoRaWANUpdateGatewayTaskCreate): Self = StObject.set(x, "LoRaWAN", value.asInstanceOf[js.Any])
     

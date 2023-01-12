@@ -16,7 +16,8 @@ object KnockoutExtenders {
     __obj.asInstanceOf[KnockoutExtenders]
   }
   
-  extension [Self <: KnockoutExtenders](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KnockoutExtenders] (val x: Self) extends AnyVal {
     
     inline def setDeferred(value: (Any, Boolean) => Any): Self = StObject.set(x, "deferred", js.Any.fromFunction2(value))
   }

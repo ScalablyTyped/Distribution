@@ -28,7 +28,8 @@ object CADESCOMInstallResponseRestrictionFlags {
     __obj.asInstanceOf[CADESCOMInstallResponseRestrictionFlags]
   }
   
-  extension [Self <: CADESCOMInstallResponseRestrictionFlags](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CADESCOMInstallResponseRestrictionFlags] (val x: Self) extends AnyVal {
     
     inline def setCADESCOM_AllowNoOutstandingRequest(value: `1`): Self = StObject.set(x, "CADESCOM_AllowNoOutstandingRequest", value.asInstanceOf[js.Any])
     

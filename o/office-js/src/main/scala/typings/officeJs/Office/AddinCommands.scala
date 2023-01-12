@@ -104,7 +104,8 @@ object AddinCommands {
       __obj.asInstanceOf[EventCompletedOptions]
     }
     
-    extension [Self <: EventCompletedOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EventCompletedOptions] (val x: Self) extends AnyVal {
       
       inline def setAllowEvent(value: Boolean): Self = StObject.set(x, "allowEvent", value.asInstanceOf[js.Any])
       
@@ -131,7 +132,8 @@ object AddinCommands {
       __obj.asInstanceOf[Source]
     }
     
-    extension [Self <: Source](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Source] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     }

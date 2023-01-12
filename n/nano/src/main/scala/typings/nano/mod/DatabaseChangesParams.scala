@@ -118,7 +118,8 @@ object DatabaseChangesParams {
     __obj.asInstanceOf[DatabaseChangesParams]
   }
   
-  extension [Self <: DatabaseChangesParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DatabaseChangesParams] (val x: Self) extends AnyVal {
     
     inline def setAtt_encoding_info(value: Boolean): Self = StObject.set(x, "att_encoding_info", value.asInstanceOf[js.Any])
     

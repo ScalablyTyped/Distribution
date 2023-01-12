@@ -39,7 +39,8 @@ object LoadFontFaceOption {
     __obj.asInstanceOf[LoadFontFaceOption]
   }
   
-  extension [Self <: LoadFontFaceOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LoadFontFaceOption] (val x: Self) extends AnyVal {
     
     inline def setComplete(value: /* result */ LoadFontFaceCompleteCallbackResult => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
     

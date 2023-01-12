@@ -25,7 +25,8 @@ object FilterDescriptor {
     __obj.asInstanceOf[FilterDescriptor]
   }
   
-  extension [Self <: FilterDescriptor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FilterDescriptor] (val x: Self) extends AnyVal {
     
     inline def setFixture(value: String): Self = StObject.set(x, "fixture", value.asInstanceOf[js.Any])
     

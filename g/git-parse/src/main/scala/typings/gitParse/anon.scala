@@ -21,7 +21,8 @@ object anon {
       __obj.asInstanceOf[AddErrorHandler]
     }
     
-    extension [Self <: AddErrorHandler](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AddErrorHandler] (val x: Self) extends AnyVal {
       
       inline def setAddErrorHandler(value: GitLogStreamErrorHandler => Double): Self = StObject.set(x, "addErrorHandler", js.Any.fromFunction1(value))
       
@@ -42,7 +43,8 @@ object anon {
       __obj.asInstanceOf[Stderr]
     }
     
-    extension [Self <: Stderr](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Stderr] (val x: Self) extends AnyVal {
       
       inline def setStderr(value: String): Self = StObject.set(x, "stderr", value.asInstanceOf[js.Any])
       

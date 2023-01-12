@@ -20,7 +20,8 @@ object CKernel {
     __obj.asInstanceOf[CKernel]
   }
   
-  extension [Self <: CKernel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CKernel] (val x: Self) extends AnyVal {
     
     inline def setCKernel(value: IUniform[Any]): Self = StObject.set(x, "cKernel", value.asInstanceOf[js.Any])
     

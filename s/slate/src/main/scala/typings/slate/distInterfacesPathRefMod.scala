@@ -24,7 +24,8 @@ object distInterfacesPathRefMod {
     @js.native
     val ^ : PathRefInterface = js.native
     
-    extension [Self <: PathRef](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PathRef] (val x: Self) extends AnyVal {
       
       inline def setAffinity(value: forward | backward): Self = StObject.set(x, "affinity", value.asInstanceOf[js.Any])
       
@@ -51,7 +52,8 @@ object distInterfacesPathRefMod {
       __obj.asInstanceOf[PathRefInterface]
     }
     
-    extension [Self <: PathRefInterface](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PathRefInterface] (val x: Self) extends AnyVal {
       
       inline def setTransform(value: (PathRef, Operation) => Unit): Self = StObject.set(x, "transform", js.Any.fromFunction2(value))
     }

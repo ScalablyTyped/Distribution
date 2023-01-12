@@ -25,7 +25,8 @@ object MlDataframeAnalyticsFieldSelection {
     __obj.asInstanceOf[MlDataframeAnalyticsFieldSelection]
   }
   
-  extension [Self <: MlDataframeAnalyticsFieldSelection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlDataframeAnalyticsFieldSelection] (val x: Self) extends AnyVal {
     
     inline def setFeature_type(value: String): Self = StObject.set(x, "feature_type", value.asInstanceOf[js.Any])
     

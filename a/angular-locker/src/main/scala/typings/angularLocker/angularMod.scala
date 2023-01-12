@@ -30,7 +30,8 @@ object angularMod {
         __obj.asInstanceOf[ILockerProvider]
       }
       
-      extension [Self <: ILockerProvider](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ILockerProvider] (val x: Self) extends AnyVal {
         
         inline def setDefaults(value: ILockerSettings => Unit): Self = StObject.set(x, "defaults", js.Any.fromFunction1(value))
       }
@@ -219,7 +220,8 @@ object angularMod {
         __obj.asInstanceOf[ILockerSettings]
       }
       
-      extension [Self <: ILockerSettings](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ILockerSettings] (val x: Self) extends AnyVal {
         
         inline def setDriver(value: String): Self = StObject.set(x, "driver", value.asInstanceOf[js.Any])
         

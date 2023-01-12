@@ -55,7 +55,8 @@ object GetObjectAttributesOutput {
     __obj.asInstanceOf[GetObjectAttributesOutput]
   }
   
-  extension [Self <: GetObjectAttributesOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetObjectAttributesOutput] (val x: Self) extends AnyVal {
     
     inline def setChecksum(value: Checksum): Self = StObject.set(x, "Checksum", value.asInstanceOf[js.Any])
     

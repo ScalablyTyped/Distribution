@@ -17,7 +17,8 @@ object CloseListbox {
     __obj.asInstanceOf[CloseListbox]
   }
   
-  extension [Self <: CloseListbox](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CloseListbox] (val x: Self) extends AnyVal {
     
     inline def setCloseListbox(value: () => Unit): Self = StObject.set(x, "closeListbox", js.Any.fromFunction0(value))
     

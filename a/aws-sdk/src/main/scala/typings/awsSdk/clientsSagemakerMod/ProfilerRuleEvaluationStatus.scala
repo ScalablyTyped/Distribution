@@ -38,7 +38,8 @@ object ProfilerRuleEvaluationStatus {
     __obj.asInstanceOf[ProfilerRuleEvaluationStatus]
   }
   
-  extension [Self <: ProfilerRuleEvaluationStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProfilerRuleEvaluationStatus] (val x: Self) extends AnyVal {
     
     inline def setLastModifiedTime(value: js.Date): Self = StObject.set(x, "LastModifiedTime", value.asInstanceOf[js.Any])
     

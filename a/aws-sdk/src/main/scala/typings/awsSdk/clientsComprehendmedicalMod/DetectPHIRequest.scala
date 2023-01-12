@@ -18,7 +18,8 @@ object DetectPHIRequest {
     __obj.asInstanceOf[DetectPHIRequest]
   }
   
-  extension [Self <: DetectPHIRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DetectPHIRequest] (val x: Self) extends AnyVal {
     
     inline def setText(value: BoundedLengthString): Self = StObject.set(x, "Text", value.asInstanceOf[js.Any])
   }

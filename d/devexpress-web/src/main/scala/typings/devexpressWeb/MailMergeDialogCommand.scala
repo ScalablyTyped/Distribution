@@ -23,7 +23,8 @@ object MailMergeDialogCommand {
     __obj.asInstanceOf[MailMergeDialogCommand]
   }
   
-  extension [Self <: MailMergeDialogCommand](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MailMergeDialogCommand] (val x: Self) extends AnyVal {
     
     inline def setExecute(value: () => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction0(value))
   }

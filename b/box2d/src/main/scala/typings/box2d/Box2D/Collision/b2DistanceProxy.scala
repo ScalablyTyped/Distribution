@@ -72,7 +72,8 @@ object b2DistanceProxy {
     __obj.asInstanceOf[b2DistanceProxy]
   }
   
-  extension [Self <: b2DistanceProxy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: b2DistanceProxy] (val x: Self) extends AnyVal {
     
     inline def setGetSupport(value: b2Vec2 => Double): Self = StObject.set(x, "GetSupport", js.Any.fromFunction1(value))
     

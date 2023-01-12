@@ -40,7 +40,8 @@ object ColorMapSize {
     __obj.asInstanceOf[ColorMapSize]
   }
   
-  extension [Self <: ColorMapSize](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ColorMapSize] (val x: Self) extends AnyVal {
     
     inline def setColorMapSize(value: Double): Self = StObject.set(x, "colorMapSize", value.asInstanceOf[js.Any])
     

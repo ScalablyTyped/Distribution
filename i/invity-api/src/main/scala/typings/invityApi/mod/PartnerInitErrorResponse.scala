@@ -22,7 +22,8 @@ object PartnerInitErrorResponse {
     __obj.asInstanceOf[PartnerInitErrorResponse]
   }
   
-  extension [Self <: PartnerInitErrorResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartnerInitErrorResponse] (val x: Self) extends AnyVal {
     
     inline def setCode(value: ReturnUrlRequired | ExchangeNotFound | PartnerInitFailed | MissingRequestBody): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     

@@ -79,7 +79,8 @@ object CSSTransitionClassNamesObject {
     __obj.asInstanceOf[CSSTransitionClassNamesObject]
   }
   
-  extension [Self <: CSSTransitionClassNamesObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CSSTransitionClassNamesObject] (val x: Self) extends AnyVal {
     
     inline def setAppear(value: String): Self = StObject.set(x, "appear", value.asInstanceOf[js.Any])
     

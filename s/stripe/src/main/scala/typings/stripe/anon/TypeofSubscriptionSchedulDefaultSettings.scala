@@ -17,7 +17,8 @@ object TypeofSubscriptionSchedulDefaultSettings {
     __obj.asInstanceOf[TypeofSubscriptionSchedulDefaultSettings]
   }
   
-  extension [Self <: TypeofSubscriptionSchedulDefaultSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofSubscriptionSchedulDefaultSettings] (val x: Self) extends AnyVal {
     
     inline def setDefaultSettings(value: Any): Self = StObject.set(x, "DefaultSettings", value.asInstanceOf[js.Any])
     

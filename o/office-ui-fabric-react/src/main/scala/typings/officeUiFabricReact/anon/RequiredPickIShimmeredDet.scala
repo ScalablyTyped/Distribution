@@ -16,7 +16,8 @@ object RequiredPickIShimmeredDet {
     __obj.asInstanceOf[RequiredPickIShimmeredDet]
   }
   
-  extension [Self <: RequiredPickIShimmeredDet](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RequiredPickIShimmeredDet] (val x: Self) extends AnyVal {
     
     inline def setTheme(value: Any): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
   }

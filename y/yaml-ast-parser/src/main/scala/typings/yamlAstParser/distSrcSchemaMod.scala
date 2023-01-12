@@ -54,7 +54,8 @@ object distSrcSchemaMod {
       __obj.asInstanceOf[SchemaDefinition]
     }
     
-    extension [Self <: SchemaDefinition](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SchemaDefinition] (val x: Self) extends AnyVal {
       
       inline def setExplicit(value: js.Array[Type]): Self = StObject.set(x, "explicit", value.asInstanceOf[js.Any])
       

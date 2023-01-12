@@ -18,7 +18,8 @@ object GetFindingsPublicationConfigurationResponse {
     __obj.asInstanceOf[GetFindingsPublicationConfigurationResponse]
   }
   
-  extension [Self <: GetFindingsPublicationConfigurationResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetFindingsPublicationConfigurationResponse] (val x: Self) extends AnyVal {
     
     inline def setSecurityHubConfiguration(value: SecurityHubConfiguration): Self = StObject.set(x, "securityHubConfiguration", value.asInstanceOf[js.Any])
     

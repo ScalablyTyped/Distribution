@@ -125,7 +125,8 @@ object HPIds {
     __obj.asInstanceOf[HPIds]
   }
   
-  extension [Self <: HPIds](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HPIds] (val x: Self) extends AnyVal {
     
     inline def setActions(value: String): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     

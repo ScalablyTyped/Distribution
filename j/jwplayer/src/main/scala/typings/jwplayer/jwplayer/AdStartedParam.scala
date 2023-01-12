@@ -17,7 +17,8 @@ object AdStartedParam {
     __obj.asInstanceOf[AdStartedParam]
   }
   
-  extension [Self <: AdStartedParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AdStartedParam] (val x: Self) extends AnyVal {
     
     inline def setCreativetype(value: String): Self = StObject.set(x, "creativetype", value.asInstanceOf[js.Any])
     

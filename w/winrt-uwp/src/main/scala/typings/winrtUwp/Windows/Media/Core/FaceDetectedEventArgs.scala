@@ -17,7 +17,8 @@ object FaceDetectedEventArgs {
     __obj.asInstanceOf[FaceDetectedEventArgs]
   }
   
-  extension [Self <: FaceDetectedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FaceDetectedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setResultFrame(value: FaceDetectionEffectFrame): Self = StObject.set(x, "resultFrame", value.asInstanceOf[js.Any])
   }

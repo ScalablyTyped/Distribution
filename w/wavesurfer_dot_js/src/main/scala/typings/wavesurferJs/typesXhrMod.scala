@@ -39,7 +39,8 @@ object typesXhrMod {
       __obj.asInstanceOf[XHROptions]
     }
     
-    extension [Self <: XHROptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XHROptions] (val x: Self) extends AnyVal {
       
       inline def setCache(value: String): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
       
@@ -98,7 +99,8 @@ object typesXhrMod {
       __obj.asInstanceOf[XHRRequestHeader]
     }
     
-    extension [Self <: XHRRequestHeader](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XHRRequestHeader] (val x: Self) extends AnyVal {
       
       inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       

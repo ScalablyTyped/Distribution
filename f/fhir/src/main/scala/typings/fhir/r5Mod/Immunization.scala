@@ -207,7 +207,8 @@ object Immunization {
     __obj.asInstanceOf[Immunization]
   }
   
-  extension [Self <: Immunization](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Immunization] (val x: Self) extends AnyVal {
     
     inline def setBasedOn(value: js.Array[Reference]): Self = StObject.set(x, "basedOn", value.asInstanceOf[js.Any])
     

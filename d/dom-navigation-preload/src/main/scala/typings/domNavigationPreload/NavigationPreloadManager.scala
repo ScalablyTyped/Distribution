@@ -27,7 +27,8 @@ object NavigationPreloadManager {
     __obj.asInstanceOf[NavigationPreloadManager]
   }
   
-  extension [Self <: NavigationPreloadManager](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NavigationPreloadManager] (val x: Self) extends AnyVal {
     
     inline def setDisable(value: () => js.Promise[Unit]): Self = StObject.set(x, "disable", js.Any.fromFunction0(value))
     

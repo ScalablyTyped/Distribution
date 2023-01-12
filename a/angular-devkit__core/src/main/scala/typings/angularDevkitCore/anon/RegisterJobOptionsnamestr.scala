@@ -25,7 +25,8 @@ object RegisterJobOptionsnamestr {
     __obj.asInstanceOf[RegisterJobOptionsnamestr]
   }
   
-  extension [Self <: RegisterJobOptionsnamestr](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RegisterJobOptionsnamestr] (val x: Self) extends AnyVal {
     
     inline def setArgument(value: DeepReadonly[JsonSchema]): Self = StObject.set(x, "argument", value.asInstanceOf[js.Any])
     

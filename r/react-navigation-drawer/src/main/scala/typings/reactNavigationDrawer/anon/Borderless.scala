@@ -17,7 +17,8 @@ object Borderless {
     __obj.asInstanceOf[Borderless]
   }
   
-  extension [Self <: Borderless](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Borderless] (val x: Self) extends AnyVal {
     
     inline def setBorderless(value: Boolean): Self = StObject.set(x, "borderless", value.asInstanceOf[js.Any])
     

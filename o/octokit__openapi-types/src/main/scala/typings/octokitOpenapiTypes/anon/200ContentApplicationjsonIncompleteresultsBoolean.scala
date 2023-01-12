@@ -23,7 +23,8 @@ object `200ContentApplicationjsonIncompleteresultsBoolean` {
     __obj.asInstanceOf[`200ContentApplicationjsonIncompleteresultsBoolean`]
   }
   
-  extension [Self <: `200ContentApplicationjsonIncompleteresultsBoolean`](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: `200ContentApplicationjsonIncompleteresultsBoolean`] (val x: Self) extends AnyVal {
     
     inline def set200(value: ContentApplicationjsonIncompleteresultsBoolean): Self = StObject.set(x, "200", value.asInstanceOf[js.Any])
     

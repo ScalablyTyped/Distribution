@@ -115,7 +115,8 @@ object LeafletEventHandlerFnMap {
     __obj.asInstanceOf[LeafletEventHandlerFnMap]
   }
   
-  extension [Self <: LeafletEventHandlerFnMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LeafletEventHandlerFnMap] (val x: Self) extends AnyVal {
     
     inline def setAdd(value: /* event */ LeafletEvent => Unit): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
     

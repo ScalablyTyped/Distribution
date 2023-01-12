@@ -18,7 +18,8 @@ object RedirectToOptions {
     __obj.asInstanceOf[RedirectToOptions]
   }
   
-  extension [Self <: RedirectToOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RedirectToOptions] (val x: Self) extends AnyVal {
     
     inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }

@@ -230,7 +230,8 @@ object PartialTheme {
     __obj.asInstanceOf[PartialTheme]
   }
   
-  extension [Self <: PartialTheme](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialTheme] (val x: Self) extends AnyVal {
     
     inline def setAction_sheet_zindex(value: Double): Self = StObject.set(x, "action_sheet_zindex", value.asInstanceOf[js.Any])
     

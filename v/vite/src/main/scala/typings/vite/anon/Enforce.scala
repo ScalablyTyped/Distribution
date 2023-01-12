@@ -24,7 +24,8 @@ object Enforce {
     __obj.asInstanceOf[Enforce]
   }
   
-  extension [Self <: Enforce](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Enforce] (val x: Self) extends AnyVal {
     
     inline def setEnforce(value: pre | post): Self = StObject.set(x, "enforce", value.asInstanceOf[js.Any])
     

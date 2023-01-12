@@ -19,7 +19,8 @@ object TypeofINFO {
     __obj.asInstanceOf[TypeofINFO]
   }
   
-  extension [Self <: TypeofINFO](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofINFO] (val x: Self) extends AnyVal {
     
     inline def setTransformArguments(value: String => js.Array[String]): Self = StObject.set(x, "transformArguments", js.Any.fromFunction1(value))
     

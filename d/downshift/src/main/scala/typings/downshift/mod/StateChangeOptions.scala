@@ -25,7 +25,8 @@ object StateChangeOptions {
     __obj.asInstanceOf[StateChangeOptions[Item]]
   }
   
-  extension [Self <: StateChangeOptions[?], Item](x: Self & StateChangeOptions[Item]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StateChangeOptions[?], Item] (val x: Self & StateChangeOptions[Item]) extends AnyVal {
     
     inline def setHighlightedIndex(value: Double): Self = StObject.set(x, "highlightedIndex", value.asInstanceOf[js.Any])
     

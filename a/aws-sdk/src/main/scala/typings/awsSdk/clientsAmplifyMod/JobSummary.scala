@@ -67,7 +67,8 @@ object JobSummary {
     __obj.asInstanceOf[JobSummary]
   }
   
-  extension [Self <: JobSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JobSummary] (val x: Self) extends AnyVal {
     
     inline def setCommitId(value: CommitId): Self = StObject.set(x, "commitId", value.asInstanceOf[js.Any])
     

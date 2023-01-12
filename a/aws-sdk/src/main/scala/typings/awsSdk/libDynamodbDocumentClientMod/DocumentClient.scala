@@ -158,7 +158,8 @@ object DocumentClient {
       __obj.asInstanceOf[ArchivalSummary]
     }
     
-    extension [Self <: ArchivalSummary](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ArchivalSummary] (val x: Self) extends AnyVal {
       
       inline def setArchivalBackupArn(value: BackupArn): Self = StObject.set(x, "ArchivalBackupArn", value.asInstanceOf[js.Any])
       
@@ -201,7 +202,8 @@ object DocumentClient {
       __obj.asInstanceOf[AttributeDefinition]
     }
     
-    extension [Self <: AttributeDefinition](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AttributeDefinition] (val x: Self) extends AnyVal {
       
       inline def setAttributeName(value: KeySchemaAttributeName): Self = StObject.set(x, "AttributeName", value.asInstanceOf[js.Any])
       
@@ -242,7 +244,8 @@ object DocumentClient {
       __obj.asInstanceOf[AttributeValueUpdate]
     }
     
-    extension [Self <: AttributeValueUpdate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AttributeValueUpdate] (val x: Self) extends AnyVal {
       
       inline def setAction(value: AttributeAction): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
       
@@ -273,7 +276,8 @@ object DocumentClient {
       __obj.asInstanceOf[AutoScalingPolicyDescription]
     }
     
-    extension [Self <: AutoScalingPolicyDescription](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AutoScalingPolicyDescription] (val x: Self) extends AnyVal {
       
       inline def setPolicyName(value: AutoScalingPolicyName): Self = StObject.set(x, "PolicyName", value.asInstanceOf[js.Any])
       
@@ -310,7 +314,8 @@ object DocumentClient {
       __obj.asInstanceOf[AutoScalingPolicyUpdate]
     }
     
-    extension [Self <: AutoScalingPolicyUpdate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AutoScalingPolicyUpdate] (val x: Self) extends AnyVal {
       
       inline def setPolicyName(value: AutoScalingPolicyName): Self = StObject.set(x, "PolicyName", value.asInstanceOf[js.Any])
       
@@ -356,7 +361,8 @@ object DocumentClient {
       __obj.asInstanceOf[AutoScalingSettingsDescription]
     }
     
-    extension [Self <: AutoScalingSettingsDescription](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AutoScalingSettingsDescription] (val x: Self) extends AnyVal {
       
       inline def setAutoScalingDisabled(value: BooleanObject): Self = StObject.set(x, "AutoScalingDisabled", value.asInstanceOf[js.Any])
       
@@ -416,7 +422,8 @@ object DocumentClient {
       __obj.asInstanceOf[AutoScalingSettingsUpdate]
     }
     
-    extension [Self <: AutoScalingSettingsUpdate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AutoScalingSettingsUpdate] (val x: Self) extends AnyVal {
       
       inline def setAutoScalingDisabled(value: BooleanObject): Self = StObject.set(x, "AutoScalingDisabled", value.asInstanceOf[js.Any])
       
@@ -469,7 +476,8 @@ object DocumentClient {
       __obj.asInstanceOf[AutoScalingTargetTrackingScalingPolicyConfigurationDescription]
     }
     
-    extension [Self <: AutoScalingTargetTrackingScalingPolicyConfigurationDescription](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AutoScalingTargetTrackingScalingPolicyConfigurationDescription] (val x: Self) extends AnyVal {
       
       inline def setDisableScaleIn(value: BooleanObject): Self = StObject.set(x, "DisableScaleIn", value.asInstanceOf[js.Any])
       
@@ -516,7 +524,8 @@ object DocumentClient {
       __obj.asInstanceOf[AutoScalingTargetTrackingScalingPolicyConfigurationUpdate]
     }
     
-    extension [Self <: AutoScalingTargetTrackingScalingPolicyConfigurationUpdate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AutoScalingTargetTrackingScalingPolicyConfigurationUpdate] (val x: Self) extends AnyVal {
       
       inline def setDisableScaleIn(value: BooleanObject): Self = StObject.set(x, "DisableScaleIn", value.asInstanceOf[js.Any])
       
@@ -566,7 +575,8 @@ object DocumentClient {
       __obj.asInstanceOf[BackupDescription]
     }
     
-    extension [Self <: BackupDescription](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BackupDescription] (val x: Self) extends AnyVal {
       
       inline def setBackupDetails(value: BackupDetails): Self = StObject.set(x, "BackupDetails", value.asInstanceOf[js.Any])
       
@@ -632,7 +642,8 @@ object DocumentClient {
       __obj.asInstanceOf[BackupDetails]
     }
     
-    extension [Self <: BackupDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BackupDetails] (val x: Self) extends AnyVal {
       
       inline def setBackupArn(value: BackupArn): Self = StObject.set(x, "BackupArn", value.asInstanceOf[js.Any])
       
@@ -727,7 +738,8 @@ object DocumentClient {
       __obj.asInstanceOf[BackupSummary]
     }
     
-    extension [Self <: BackupSummary](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BackupSummary] (val x: Self) extends AnyVal {
       
       inline def setBackupArn(value: BackupArn): Self = StObject.set(x, "BackupArn", value.asInstanceOf[js.Any])
       
@@ -808,7 +820,8 @@ object DocumentClient {
       __obj.asInstanceOf[BatchExecuteStatementInput]
     }
     
-    extension [Self <: BatchExecuteStatementInput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BatchExecuteStatementInput] (val x: Self) extends AnyVal {
       
       inline def setReturnConsumedCapacity(value: ReturnConsumedCapacity): Self = StObject.set(x, "ReturnConsumedCapacity", value.asInstanceOf[js.Any])
       
@@ -839,7 +852,8 @@ object DocumentClient {
       __obj.asInstanceOf[BatchExecuteStatementOutput]
     }
     
-    extension [Self <: BatchExecuteStatementOutput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BatchExecuteStatementOutput] (val x: Self) extends AnyVal {
       
       inline def setConsumedCapacity(value: ConsumedCapacityMultiple): Self = StObject.set(x, "ConsumedCapacity", value.asInstanceOf[js.Any])
       
@@ -873,7 +887,8 @@ object DocumentClient {
       __obj.asInstanceOf[BatchGetItemInput]
     }
     
-    extension [Self <: BatchGetItemInput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BatchGetItemInput] (val x: Self) extends AnyVal {
       
       inline def setRequestItems(value: BatchGetRequestMap): Self = StObject.set(x, "RequestItems", value.asInstanceOf[js.Any])
       
@@ -907,7 +922,8 @@ object DocumentClient {
       __obj.asInstanceOf[BatchGetItemOutput]
     }
     
-    extension [Self <: BatchGetItemOutput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BatchGetItemOutput] (val x: Self) extends AnyVal {
       
       inline def setConsumedCapacity(value: ConsumedCapacityMultiple): Self = StObject.set(x, "ConsumedCapacity", value.asInstanceOf[js.Any])
       
@@ -948,7 +964,8 @@ object DocumentClient {
       __obj.asInstanceOf[BatchStatementError]
     }
     
-    extension [Self <: BatchStatementError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BatchStatementError] (val x: Self) extends AnyVal {
       
       inline def setCode(value: BatchStatementErrorCodeEnum): Self = StObject.set(x, "Code", value.asInstanceOf[js.Any])
       
@@ -1000,7 +1017,8 @@ object DocumentClient {
       __obj.asInstanceOf[BatchStatementRequest]
     }
     
-    extension [Self <: BatchStatementRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BatchStatementRequest] (val x: Self) extends AnyVal {
       
       inline def setConsistentRead(value: ConsistentRead): Self = StObject.set(x, "ConsistentRead", value.asInstanceOf[js.Any])
       
@@ -1040,7 +1058,8 @@ object DocumentClient {
       __obj.asInstanceOf[BatchStatementResponse]
     }
     
-    extension [Self <: BatchStatementResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BatchStatementResponse] (val x: Self) extends AnyVal {
       
       inline def setError(value: BatchStatementError): Self = StObject.set(x, "Error", value.asInstanceOf[js.Any])
       
@@ -1081,7 +1100,8 @@ object DocumentClient {
       __obj.asInstanceOf[BatchWriteItemInput]
     }
     
-    extension [Self <: BatchWriteItemInput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BatchWriteItemInput] (val x: Self) extends AnyVal {
       
       inline def setRequestItems(value: BatchWriteItemRequestMap): Self = StObject.set(x, "RequestItems", value.asInstanceOf[js.Any])
       
@@ -1119,7 +1139,8 @@ object DocumentClient {
       __obj.asInstanceOf[BatchWriteItemOutput]
     }
     
-    extension [Self <: BatchWriteItemOutput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BatchWriteItemOutput] (val x: Self) extends AnyVal {
       
       inline def setConsumedCapacity(value: ConsumedCapacityMultiple): Self = StObject.set(x, "ConsumedCapacity", value.asInstanceOf[js.Any])
       
@@ -1167,7 +1188,8 @@ object DocumentClient {
       __obj.asInstanceOf[BillingModeSummary]
     }
     
-    extension [Self <: BillingModeSummary](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BillingModeSummary] (val x: Self) extends AnyVal {
       
       inline def setBillingMode(value: BillingMode): Self = StObject.set(x, "BillingMode", value.asInstanceOf[js.Any])
       
@@ -1197,7 +1219,8 @@ object DocumentClient {
       __obj.asInstanceOf[BinarySet]
     }
     
-    extension [Self <: BinarySet](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BinarySet] (val x: Self) extends AnyVal {
       
       inline def setType(value: Binary_): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
@@ -1240,7 +1263,8 @@ object DocumentClient {
       __obj.asInstanceOf[Capacity]
     }
     
-    extension [Self <: Capacity](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Capacity] (val x: Self) extends AnyVal {
       
       inline def setCapacityUnits(value: ConsumedCapacityUnits): Self = StObject.set(x, "CapacityUnits", value.asInstanceOf[js.Any])
       
@@ -1299,7 +1323,8 @@ object DocumentClient {
       __obj.asInstanceOf[Condition]
     }
     
-    extension [Self <: Condition](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Condition] (val x: Self) extends AnyVal {
       
       inline def setAttributeValueList(value: AttributeValueList): Self = StObject.set(x, "AttributeValueList", value.asInstanceOf[js.Any])
       
@@ -1352,7 +1377,8 @@ object DocumentClient {
       __obj.asInstanceOf[ConditionCheck]
     }
     
-    extension [Self <: ConditionCheck](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConditionCheck] (val x: Self) extends AnyVal {
       
       inline def setConditionExpression(value: ConditionExpression): Self = StObject.set(x, "ConditionExpression", value.asInstanceOf[js.Any])
       
@@ -1429,7 +1455,8 @@ object DocumentClient {
       __obj.asInstanceOf[ConsumedCapacity]
     }
     
-    extension [Self <: ConsumedCapacity](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConsumedCapacity] (val x: Self) extends AnyVal {
       
       inline def setCapacityUnits(value: ConsumedCapacityUnits): Self = StObject.set(x, "CapacityUnits", value.asInstanceOf[js.Any])
       
@@ -1486,7 +1513,8 @@ object DocumentClient {
       __obj.asInstanceOf[ContinuousBackupsDescription]
     }
     
-    extension [Self <: ContinuousBackupsDescription](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContinuousBackupsDescription] (val x: Self) extends AnyVal {
       
       inline def setContinuousBackupsStatus(value: ContinuousBackupsStatus): Self = StObject.set(x, "ContinuousBackupsStatus", value.asInstanceOf[js.Any])
       
@@ -1552,7 +1580,8 @@ object DocumentClient {
       __obj.asInstanceOf[ContributorInsightsSummary]
     }
     
-    extension [Self <: ContributorInsightsSummary](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContributorInsightsSummary] (val x: Self) extends AnyVal {
       
       inline def setContributorInsightsStatus(value: ContributorInsightsStatus): Self = StObject.set(x, "ContributorInsightsStatus", value.asInstanceOf[js.Any])
       
@@ -1590,7 +1619,8 @@ object DocumentClient {
       __obj.asInstanceOf[ConverterOptions]
     }
     
-    extension [Self <: ConverterOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConverterOptions] (val x: Self) extends AnyVal {
       
       inline def setConvertEmptyValues(value: Boolean): Self = StObject.set(x, "convertEmptyValues", value.asInstanceOf[js.Any])
       
@@ -1621,7 +1651,8 @@ object DocumentClient {
       __obj.asInstanceOf[CreateBackupInput]
     }
     
-    extension [Self <: CreateBackupInput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateBackupInput] (val x: Self) extends AnyVal {
       
       inline def setBackupName(value: BackupName): Self = StObject.set(x, "BackupName", value.asInstanceOf[js.Any])
       
@@ -1643,7 +1674,8 @@ object DocumentClient {
       __obj.asInstanceOf[CreateBackupOutput]
     }
     
-    extension [Self <: CreateBackupOutput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateBackupOutput] (val x: Self) extends AnyVal {
       
       inline def setBackupDetails(value: BackupDetails): Self = StObject.set(x, "BackupDetails", value.asInstanceOf[js.Any])
       
@@ -1680,7 +1712,8 @@ object DocumentClient {
       __obj.asInstanceOf[CreateGlobalSecondaryIndexAction]
     }
     
-    extension [Self <: CreateGlobalSecondaryIndexAction](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateGlobalSecondaryIndexAction] (val x: Self) extends AnyVal {
       
       inline def setIndexName(value: IndexName): Self = StObject.set(x, "IndexName", value.asInstanceOf[js.Any])
       
@@ -1715,7 +1748,8 @@ object DocumentClient {
       __obj.asInstanceOf[CreateGlobalTableInput]
     }
     
-    extension [Self <: CreateGlobalTableInput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateGlobalTableInput] (val x: Self) extends AnyVal {
       
       inline def setGlobalTableName(value: TableName): Self = StObject.set(x, "GlobalTableName", value.asInstanceOf[js.Any])
       
@@ -1741,7 +1775,8 @@ object DocumentClient {
       __obj.asInstanceOf[CreateGlobalTableOutput]
     }
     
-    extension [Self <: CreateGlobalTableOutput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateGlobalTableOutput] (val x: Self) extends AnyVal {
       
       inline def setGlobalTableDescription(value: GlobalTableDescription): Self = StObject.set(x, "GlobalTableDescription", value.asInstanceOf[js.Any])
       
@@ -1763,7 +1798,8 @@ object DocumentClient {
       __obj.asInstanceOf[CreateReplicaAction]
     }
     
-    extension [Self <: CreateReplicaAction](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateReplicaAction] (val x: Self) extends AnyVal {
       
       inline def setRegionName(value: RegionName): Self = StObject.set(x, "RegionName", value.asInstanceOf[js.Any])
     }
@@ -1805,7 +1841,8 @@ object DocumentClient {
       __obj.asInstanceOf[CreateReplicationGroupMemberAction]
     }
     
-    extension [Self <: CreateReplicationGroupMemberAction](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateReplicationGroupMemberAction] (val x: Self) extends AnyVal {
       
       inline def setGlobalSecondaryIndexes(value: ReplicaGlobalSecondaryIndexList): Self = StObject.set(x, "GlobalSecondaryIndexes", value.asInstanceOf[js.Any])
       
@@ -1843,7 +1880,8 @@ object DocumentClient {
       __obj.asInstanceOf[CreateSetOptions]
     }
     
-    extension [Self <: CreateSetOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateSetOptions] (val x: Self) extends AnyVal {
       
       inline def setValidate(value: Boolean): Self = StObject.set(x, "validate", value.asInstanceOf[js.Any])
       
@@ -1915,7 +1953,8 @@ object DocumentClient {
       __obj.asInstanceOf[CreateTableInput]
     }
     
-    extension [Self <: CreateTableInput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateTableInput] (val x: Self) extends AnyVal {
       
       inline def setAttributeDefinitions(value: AttributeDefinitions): Self = StObject.set(x, "AttributeDefinitions", value.asInstanceOf[js.Any])
       
@@ -1981,7 +2020,8 @@ object DocumentClient {
       __obj.asInstanceOf[CreateTableOutput]
     }
     
-    extension [Self <: CreateTableOutput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateTableOutput] (val x: Self) extends AnyVal {
       
       inline def setTableDescription(value: TableDescription): Self = StObject.set(x, "TableDescription", value.asInstanceOf[js.Any])
       
@@ -2014,7 +2054,8 @@ object DocumentClient {
       __obj.asInstanceOf[CsvOptions]
     }
     
-    extension [Self <: CsvOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CsvOptions] (val x: Self) extends AnyVal {
       
       inline def setDelimiter(value: CsvDelimiter): Self = StObject.set(x, "Delimiter", value.asInstanceOf[js.Any])
       
@@ -2071,7 +2112,8 @@ object DocumentClient {
       __obj.asInstanceOf[Delete]
     }
     
-    extension [Self <: Delete](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Delete] (val x: Self) extends AnyVal {
       
       inline def setConditionExpression(value: ConditionExpression): Self = StObject.set(x, "ConditionExpression", value.asInstanceOf[js.Any])
       
@@ -2109,7 +2151,8 @@ object DocumentClient {
       __obj.asInstanceOf[DeleteBackupInput]
     }
     
-    extension [Self <: DeleteBackupInput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeleteBackupInput] (val x: Self) extends AnyVal {
       
       inline def setBackupArn(value: BackupArn): Self = StObject.set(x, "BackupArn", value.asInstanceOf[js.Any])
     }
@@ -2129,7 +2172,8 @@ object DocumentClient {
       __obj.asInstanceOf[DeleteBackupOutput]
     }
     
-    extension [Self <: DeleteBackupOutput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeleteBackupOutput] (val x: Self) extends AnyVal {
       
       inline def setBackupDescription(value: BackupDescription): Self = StObject.set(x, "BackupDescription", value.asInstanceOf[js.Any])
       
@@ -2151,7 +2195,8 @@ object DocumentClient {
       __obj.asInstanceOf[DeleteGlobalSecondaryIndexAction]
     }
     
-    extension [Self <: DeleteGlobalSecondaryIndexAction](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeleteGlobalSecondaryIndexAction] (val x: Self) extends AnyVal {
       
       inline def setIndexName(value: IndexName): Self = StObject.set(x, "IndexName", value.asInstanceOf[js.Any])
     }
@@ -2217,7 +2262,8 @@ object DocumentClient {
       __obj.asInstanceOf[DeleteItemInput]
     }
     
-    extension [Self <: DeleteItemInput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeleteItemInput] (val x: Self) extends AnyVal {
       
       inline def setConditionExpression(value: ConditionExpression): Self = StObject.set(x, "ConditionExpression", value.asInstanceOf[js.Any])
       
@@ -2281,7 +2327,8 @@ object DocumentClient {
       __obj.asInstanceOf[DeleteItemOutput]
     }
     
-    extension [Self <: DeleteItemOutput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeleteItemOutput] (val x: Self) extends AnyVal {
       
       inline def setAttributes(value: AttributeMap): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
       
@@ -2311,7 +2358,8 @@ object DocumentClient {
       __obj.asInstanceOf[DeleteReplicaAction]
     }
     
-    extension [Self <: DeleteReplicaAction](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeleteReplicaAction] (val x: Self) extends AnyVal {
       
       inline def setRegionName(value: RegionName): Self = StObject.set(x, "RegionName", value.asInstanceOf[js.Any])
     }
@@ -2331,7 +2379,8 @@ object DocumentClient {
       __obj.asInstanceOf[DeleteReplicationGroupMemberAction]
     }
     
-    extension [Self <: DeleteReplicationGroupMemberAction](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeleteReplicationGroupMemberAction] (val x: Self) extends AnyVal {
       
       inline def setRegionName(value: RegionName): Self = StObject.set(x, "RegionName", value.asInstanceOf[js.Any])
     }
@@ -2351,7 +2400,8 @@ object DocumentClient {
       __obj.asInstanceOf[DeleteRequest]
     }
     
-    extension [Self <: DeleteRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeleteRequest] (val x: Self) extends AnyVal {
       
       inline def setKey(value: Key): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
     }
@@ -2371,7 +2421,8 @@ object DocumentClient {
       __obj.asInstanceOf[DeleteTableInput]
     }
     
-    extension [Self <: DeleteTableInput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeleteTableInput] (val x: Self) extends AnyVal {
       
       inline def setTableName(value: TableName): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
     }
@@ -2391,7 +2442,8 @@ object DocumentClient {
       __obj.asInstanceOf[DeleteTableOutput]
     }
     
-    extension [Self <: DeleteTableOutput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeleteTableOutput] (val x: Self) extends AnyVal {
       
       inline def setTableDescription(value: TableDescription): Self = StObject.set(x, "TableDescription", value.asInstanceOf[js.Any])
       
@@ -2413,7 +2465,8 @@ object DocumentClient {
       __obj.asInstanceOf[DescribeBackupInput]
     }
     
-    extension [Self <: DescribeBackupInput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DescribeBackupInput] (val x: Self) extends AnyVal {
       
       inline def setBackupArn(value: BackupArn): Self = StObject.set(x, "BackupArn", value.asInstanceOf[js.Any])
     }
@@ -2433,7 +2486,8 @@ object DocumentClient {
       __obj.asInstanceOf[DescribeBackupOutput]
     }
     
-    extension [Self <: DescribeBackupOutput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DescribeBackupOutput] (val x: Self) extends AnyVal {
       
       inline def setBackupDescription(value: BackupDescription): Self = StObject.set(x, "BackupDescription", value.asInstanceOf[js.Any])
       
@@ -2455,7 +2509,8 @@ object DocumentClient {
       __obj.asInstanceOf[DescribeContinuousBackupsInput]
     }
     
-    extension [Self <: DescribeContinuousBackupsInput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DescribeContinuousBackupsInput] (val x: Self) extends AnyVal {
       
       inline def setTableName(value: TableName): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
     }
@@ -2477,7 +2532,8 @@ object DocumentClient {
       __obj.asInstanceOf[DescribeContinuousBackupsOutput]
     }
     
-    extension [Self <: DescribeContinuousBackupsOutput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DescribeContinuousBackupsOutput] (val x: Self) extends AnyVal {
       
       inline def setContinuousBackupsDescription(value: ContinuousBackupsDescription): Self = StObject.set(x, "ContinuousBackupsDescription", value.asInstanceOf[js.Any])
       
@@ -2504,7 +2560,8 @@ object DocumentClient {
       __obj.asInstanceOf[DescribeContributorInsightsInput]
     }
     
-    extension [Self <: DescribeContributorInsightsInput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DescribeContributorInsightsInput] (val x: Self) extends AnyVal {
       
       inline def setIndexName(value: IndexName): Self = StObject.set(x, "IndexName", value.asInstanceOf[js.Any])
       
@@ -2557,7 +2614,8 @@ object DocumentClient {
       __obj.asInstanceOf[DescribeContributorInsightsOutput]
     }
     
-    extension [Self <: DescribeContributorInsightsOutput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DescribeContributorInsightsOutput] (val x: Self) extends AnyVal {
       
       inline def setContributorInsightsRuleList(value: ContributorInsightsRuleList): Self = StObject.set(x, "ContributorInsightsRuleList", value.asInstanceOf[js.Any])
       
@@ -2603,7 +2661,8 @@ object DocumentClient {
       __obj.asInstanceOf[DescribeEndpointsResponse]
     }
     
-    extension [Self <: DescribeEndpointsResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DescribeEndpointsResponse] (val x: Self) extends AnyVal {
       
       inline def setEndpoints(value: Endpoints): Self = StObject.set(x, "Endpoints", value.asInstanceOf[js.Any])
       
@@ -2625,7 +2684,8 @@ object DocumentClient {
       __obj.asInstanceOf[DescribeExportInput]
     }
     
-    extension [Self <: DescribeExportInput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DescribeExportInput] (val x: Self) extends AnyVal {
       
       inline def setExportArn(value: ExportArn): Self = StObject.set(x, "ExportArn", value.asInstanceOf[js.Any])
     }
@@ -2645,7 +2705,8 @@ object DocumentClient {
       __obj.asInstanceOf[DescribeExportOutput]
     }
     
-    extension [Self <: DescribeExportOutput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DescribeExportOutput] (val x: Self) extends AnyVal {
       
       inline def setExportDescription(value: ExportDescription): Self = StObject.set(x, "ExportDescription", value.asInstanceOf[js.Any])
       
@@ -2667,7 +2728,8 @@ object DocumentClient {
       __obj.asInstanceOf[DescribeGlobalTableInput]
     }
     
-    extension [Self <: DescribeGlobalTableInput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DescribeGlobalTableInput] (val x: Self) extends AnyVal {
       
       inline def setGlobalTableName(value: TableName): Self = StObject.set(x, "GlobalTableName", value.asInstanceOf[js.Any])
     }
@@ -2689,7 +2751,8 @@ object DocumentClient {
       __obj.asInstanceOf[DescribeGlobalTableOutput]
     }
     
-    extension [Self <: DescribeGlobalTableOutput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DescribeGlobalTableOutput] (val x: Self) extends AnyVal {
       
       inline def setGlobalTableDescription(value: GlobalTableDescription): Self = StObject.set(x, "GlobalTableDescription", value.asInstanceOf[js.Any])
       
@@ -2711,7 +2774,8 @@ object DocumentClient {
       __obj.asInstanceOf[DescribeGlobalTableSettingsInput]
     }
     
-    extension [Self <: DescribeGlobalTableSettingsInput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DescribeGlobalTableSettingsInput] (val x: Self) extends AnyVal {
       
       inline def setGlobalTableName(value: TableName): Self = StObject.set(x, "GlobalTableName", value.asInstanceOf[js.Any])
     }
@@ -2736,7 +2800,8 @@ object DocumentClient {
       __obj.asInstanceOf[DescribeGlobalTableSettingsOutput]
     }
     
-    extension [Self <: DescribeGlobalTableSettingsOutput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DescribeGlobalTableSettingsOutput] (val x: Self) extends AnyVal {
       
       inline def setGlobalTableName(value: TableName): Self = StObject.set(x, "GlobalTableName", value.asInstanceOf[js.Any])
       
@@ -2764,7 +2829,8 @@ object DocumentClient {
       __obj.asInstanceOf[DescribeImportInput]
     }
     
-    extension [Self <: DescribeImportInput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DescribeImportInput] (val x: Self) extends AnyVal {
       
       inline def setImportArn(value: ImportArn): Self = StObject.set(x, "ImportArn", value.asInstanceOf[js.Any])
     }
@@ -2784,7 +2850,8 @@ object DocumentClient {
       __obj.asInstanceOf[DescribeImportOutput]
     }
     
-    extension [Self <: DescribeImportOutput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DescribeImportOutput] (val x: Self) extends AnyVal {
       
       inline def setImportTableDescription(value: ImportTableDescription): Self = StObject.set(x, "ImportTableDescription", value.asInstanceOf[js.Any])
     }
@@ -2804,7 +2871,8 @@ object DocumentClient {
       __obj.asInstanceOf[DescribeKinesisStreamingDestinationInput]
     }
     
-    extension [Self <: DescribeKinesisStreamingDestinationInput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DescribeKinesisStreamingDestinationInput] (val x: Self) extends AnyVal {
       
       inline def setTableName(value: TableName): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
     }
@@ -2831,7 +2899,8 @@ object DocumentClient {
       __obj.asInstanceOf[DescribeKinesisStreamingDestinationOutput]
     }
     
-    extension [Self <: DescribeKinesisStreamingDestinationOutput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DescribeKinesisStreamingDestinationOutput] (val x: Self) extends AnyVal {
       
       inline def setKinesisDataStreamDestinations(value: KinesisDataStreamDestinations): Self = StObject.set(x, "KinesisDataStreamDestinations", value.asInstanceOf[js.Any])
       
@@ -2876,7 +2945,8 @@ object DocumentClient {
       __obj.asInstanceOf[DescribeLimitsOutput]
     }
     
-    extension [Self <: DescribeLimitsOutput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DescribeLimitsOutput] (val x: Self) extends AnyVal {
       
       inline def setAccountMaxReadCapacityUnits(value: PositiveLongObject): Self = StObject.set(x, "AccountMaxReadCapacityUnits", value.asInstanceOf[js.Any])
       
@@ -2910,7 +2980,8 @@ object DocumentClient {
       __obj.asInstanceOf[DescribeTableInput]
     }
     
-    extension [Self <: DescribeTableInput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DescribeTableInput] (val x: Self) extends AnyVal {
       
       inline def setTableName(value: TableName): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
     }
@@ -2930,7 +3001,8 @@ object DocumentClient {
       __obj.asInstanceOf[DescribeTableOutput]
     }
     
-    extension [Self <: DescribeTableOutput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DescribeTableOutput] (val x: Self) extends AnyVal {
       
       inline def setTable(value: TableDescription): Self = StObject.set(x, "Table", value.asInstanceOf[js.Any])
       
@@ -2952,7 +3024,8 @@ object DocumentClient {
       __obj.asInstanceOf[DescribeTableReplicaAutoScalingInput]
     }
     
-    extension [Self <: DescribeTableReplicaAutoScalingInput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DescribeTableReplicaAutoScalingInput] (val x: Self) extends AnyVal {
       
       inline def setTableName(value: TableName): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
     }
@@ -2974,7 +3047,8 @@ object DocumentClient {
       __obj.asInstanceOf[DescribeTableReplicaAutoScalingOutput]
     }
     
-    extension [Self <: DescribeTableReplicaAutoScalingOutput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DescribeTableReplicaAutoScalingOutput] (val x: Self) extends AnyVal {
       
       inline def setTableAutoScalingDescription(value: TableAutoScalingDescription): Self = StObject.set(x, "TableAutoScalingDescription", value.asInstanceOf[js.Any])
       
@@ -2996,7 +3070,8 @@ object DocumentClient {
       __obj.asInstanceOf[DescribeTimeToLiveInput]
     }
     
-    extension [Self <: DescribeTimeToLiveInput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DescribeTimeToLiveInput] (val x: Self) extends AnyVal {
       
       inline def setTableName(value: TableName): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
     }
@@ -3016,7 +3091,8 @@ object DocumentClient {
       __obj.asInstanceOf[DescribeTimeToLiveOutput]
     }
     
-    extension [Self <: DescribeTimeToLiveOutput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DescribeTimeToLiveOutput] (val x: Self) extends AnyVal {
       
       inline def setTimeToLiveDescription(value: TimeToLiveDescription): Self = StObject.set(x, "TimeToLiveDescription", value.asInstanceOf[js.Any])
       
@@ -3059,7 +3135,8 @@ object DocumentClient {
       __obj.asInstanceOf[DocumentClientOptions]
     }
     
-    extension [Self <: DocumentClientOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DocumentClientOptions] (val x: Self) extends AnyVal {
       
       inline def setParams(value: StringDictionary[Any]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
@@ -3122,7 +3199,8 @@ object DocumentClient {
       __obj.asInstanceOf[Endpoint]
     }
     
-    extension [Self <: Endpoint](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Endpoint] (val x: Self) extends AnyVal {
       
       inline def setAddress(value: typings.awsSdk.libDynamodbDocumentClientMod.DocumentClient.String): Self = StObject.set(x, "Address", value.asInstanceOf[js.Any])
       
@@ -3176,7 +3254,8 @@ object DocumentClient {
       __obj.asInstanceOf[ExecuteStatementInput]
     }
     
-    extension [Self <: ExecuteStatementInput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExecuteStatementInput] (val x: Self) extends AnyVal {
       
       inline def setConsistentRead(value: ConsistentRead): Self = StObject.set(x, "ConsistentRead", value.asInstanceOf[js.Any])
       
@@ -3230,7 +3309,8 @@ object DocumentClient {
       __obj.asInstanceOf[ExecuteStatementOutput]
     }
     
-    extension [Self <: ExecuteStatementOutput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExecuteStatementOutput] (val x: Self) extends AnyVal {
       
       inline def setConsumedCapacity(value: ConsumedCapacity): Self = StObject.set(x, "ConsumedCapacity", value.asInstanceOf[js.Any])
       
@@ -3278,7 +3358,8 @@ object DocumentClient {
       __obj.asInstanceOf[ExecuteTransactionInput]
     }
     
-    extension [Self <: ExecuteTransactionInput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExecuteTransactionInput] (val x: Self) extends AnyVal {
       
       inline def setClientRequestToken(value: ClientRequestToken): Self = StObject.set(x, "ClientRequestToken", value.asInstanceOf[js.Any])
       
@@ -3313,7 +3394,8 @@ object DocumentClient {
       __obj.asInstanceOf[ExecuteTransactionOutput]
     }
     
-    extension [Self <: ExecuteTransactionOutput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExecuteTransactionOutput] (val x: Self) extends AnyVal {
       
       inline def setConsumedCapacity(value: ConsumedCapacityMultiple): Self = StObject.set(x, "ConsumedCapacity", value.asInstanceOf[js.Any])
       
@@ -3360,7 +3442,8 @@ object DocumentClient {
       __obj.asInstanceOf[ExpectedAttributeValue]
     }
     
-    extension [Self <: ExpectedAttributeValue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExpectedAttributeValue] (val x: Self) extends AnyVal {
       
       inline def setAttributeValueList(value: AttributeValueList): Self = StObject.set(x, "AttributeValueList", value.asInstanceOf[js.Any])
       
@@ -3488,7 +3571,8 @@ object DocumentClient {
       __obj.asInstanceOf[ExportDescription]
     }
     
-    extension [Self <: ExportDescription](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExportDescription] (val x: Self) extends AnyVal {
       
       inline def setBilledSizeBytes(value: BilledSizeBytes): Self = StObject.set(x, "BilledSizeBytes", value.asInstanceOf[js.Any])
       
@@ -3612,7 +3696,8 @@ object DocumentClient {
       __obj.asInstanceOf[ExportSummary]
     }
     
-    extension [Self <: ExportSummary](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExportSummary] (val x: Self) extends AnyVal {
       
       inline def setExportArn(value: ExportArn): Self = StObject.set(x, "ExportArn", value.asInstanceOf[js.Any])
       
@@ -3678,7 +3763,8 @@ object DocumentClient {
       __obj.asInstanceOf[ExportTableToPointInTimeInput]
     }
     
-    extension [Self <: ExportTableToPointInTimeInput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExportTableToPointInTimeInput] (val x: Self) extends AnyVal {
       
       inline def setClientToken(value: ClientToken): Self = StObject.set(x, "ClientToken", value.asInstanceOf[js.Any])
       
@@ -3728,7 +3814,8 @@ object DocumentClient {
       __obj.asInstanceOf[ExportTableToPointInTimeOutput]
     }
     
-    extension [Self <: ExportTableToPointInTimeOutput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExportTableToPointInTimeOutput] (val x: Self) extends AnyVal {
       
       inline def setExportDescription(value: ExportDescription): Self = StObject.set(x, "ExportDescription", value.asInstanceOf[js.Any])
       
@@ -3767,7 +3854,8 @@ object DocumentClient {
       __obj.asInstanceOf[FailureException]
     }
     
-    extension [Self <: FailureException](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FailureException] (val x: Self) extends AnyVal {
       
       inline def setExceptionDescription(value: ExceptionDescription): Self = StObject.set(x, "ExceptionDescription", value.asInstanceOf[js.Any])
       
@@ -3812,7 +3900,8 @@ object DocumentClient {
       __obj.asInstanceOf[Get]
     }
     
-    extension [Self <: Get](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Get] (val x: Self) extends AnyVal {
       
       inline def setExpressionAttributeNames(value: ExpressionAttributeNameMap): Self = StObject.set(x, "ExpressionAttributeNames", value.asInstanceOf[js.Any])
       
@@ -3871,7 +3960,8 @@ object DocumentClient {
       __obj.asInstanceOf[GetItemInput]
     }
     
-    extension [Self <: GetItemInput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetItemInput] (val x: Self) extends AnyVal {
       
       inline def setAttributesToGet(value: AttributeNameList): Self = StObject.set(x, "AttributesToGet", value.asInstanceOf[js.Any])
       
@@ -3920,7 +4010,8 @@ object DocumentClient {
       __obj.asInstanceOf[GetItemOutput]
     }
     
-    extension [Self <: GetItemOutput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetItemOutput] (val x: Self) extends AnyVal {
       
       inline def setConsumedCapacity(value: ConsumedCapacity): Self = StObject.set(x, "ConsumedCapacity", value.asInstanceOf[js.Any])
       
@@ -3961,7 +4052,8 @@ object DocumentClient {
       __obj.asInstanceOf[GlobalSecondaryIndex]
     }
     
-    extension [Self <: GlobalSecondaryIndex](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GlobalSecondaryIndex] (val x: Self) extends AnyVal {
       
       inline def setIndexName(value: IndexName): Self = StObject.set(x, "IndexName", value.asInstanceOf[js.Any])
       
@@ -3993,7 +4085,8 @@ object DocumentClient {
       __obj.asInstanceOf[GlobalSecondaryIndexAutoScalingUpdate]
     }
     
-    extension [Self <: GlobalSecondaryIndexAutoScalingUpdate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GlobalSecondaryIndexAutoScalingUpdate] (val x: Self) extends AnyVal {
       
       inline def setIndexName(value: IndexName): Self = StObject.set(x, "IndexName", value.asInstanceOf[js.Any])
       
@@ -4061,7 +4154,8 @@ object DocumentClient {
       __obj.asInstanceOf[GlobalSecondaryIndexDescription]
     }
     
-    extension [Self <: GlobalSecondaryIndexDescription](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GlobalSecondaryIndexDescription] (val x: Self) extends AnyVal {
       
       inline def setBackfilling(value: Backfilling): Self = StObject.set(x, "Backfilling", value.asInstanceOf[js.Any])
       
@@ -4134,7 +4228,8 @@ object DocumentClient {
       __obj.asInstanceOf[GlobalSecondaryIndexInfo]
     }
     
-    extension [Self <: GlobalSecondaryIndexInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GlobalSecondaryIndexInfo] (val x: Self) extends AnyVal {
       
       inline def setIndexName(value: IndexName): Self = StObject.set(x, "IndexName", value.asInstanceOf[js.Any])
       
@@ -4182,7 +4277,8 @@ object DocumentClient {
       __obj.asInstanceOf[GlobalSecondaryIndexUpdate]
     }
     
-    extension [Self <: GlobalSecondaryIndexUpdate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GlobalSecondaryIndexUpdate] (val x: Self) extends AnyVal {
       
       inline def setCreate(value: CreateGlobalSecondaryIndexAction): Self = StObject.set(x, "Create", value.asInstanceOf[js.Any])
       
@@ -4221,7 +4317,8 @@ object DocumentClient {
       __obj.asInstanceOf[GlobalTable]
     }
     
-    extension [Self <: GlobalTable](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GlobalTable] (val x: Self) extends AnyVal {
       
       inline def setGlobalTableName(value: TableName): Self = StObject.set(x, "GlobalTableName", value.asInstanceOf[js.Any])
       
@@ -4271,7 +4368,8 @@ object DocumentClient {
       __obj.asInstanceOf[GlobalTableDescription]
     }
     
-    extension [Self <: GlobalTableDescription](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GlobalTableDescription] (val x: Self) extends AnyVal {
       
       inline def setCreationDateTime(value: js.Date): Self = StObject.set(x, "CreationDateTime", value.asInstanceOf[js.Any])
       
@@ -4321,7 +4419,8 @@ object DocumentClient {
       __obj.asInstanceOf[GlobalTableGlobalSecondaryIndexSettingsUpdate]
     }
     
-    extension [Self <: GlobalTableGlobalSecondaryIndexSettingsUpdate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GlobalTableGlobalSecondaryIndexSettingsUpdate] (val x: Self) extends AnyVal {
       
       inline def setIndexName(value: IndexName): Self = StObject.set(x, "IndexName", value.asInstanceOf[js.Any])
       
@@ -4415,7 +4514,8 @@ object DocumentClient {
       __obj.asInstanceOf[ImportSummary]
     }
     
-    extension [Self <: ImportSummary](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ImportSummary] (val x: Self) extends AnyVal {
       
       inline def setCloudWatchLogGroupArn(value: CloudWatchLogGroupArn): Self = StObject.set(x, "CloudWatchLogGroupArn", value.asInstanceOf[js.Any])
       
@@ -4559,7 +4659,8 @@ object DocumentClient {
       __obj.asInstanceOf[ImportTableDescription]
     }
     
-    extension [Self <: ImportTableDescription](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ImportTableDescription] (val x: Self) extends AnyVal {
       
       inline def setClientToken(value: ClientToken): Self = StObject.set(x, "ClientToken", value.asInstanceOf[js.Any])
       
@@ -4682,7 +4783,8 @@ object DocumentClient {
       __obj.asInstanceOf[ImportTableInput]
     }
     
-    extension [Self <: ImportTableInput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ImportTableInput] (val x: Self) extends AnyVal {
       
       inline def setClientToken(value: ClientToken): Self = StObject.set(x, "ClientToken", value.asInstanceOf[js.Any])
       
@@ -4718,7 +4820,8 @@ object DocumentClient {
       __obj.asInstanceOf[ImportTableOutput]
     }
     
-    extension [Self <: ImportTableOutput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ImportTableOutput] (val x: Self) extends AnyVal {
       
       inline def setImportTableDescription(value: ImportTableDescription): Self = StObject.set(x, "ImportTableDescription", value.asInstanceOf[js.Any])
     }
@@ -4767,7 +4870,8 @@ object DocumentClient {
       __obj.asInstanceOf[InputFormatOptions]
     }
     
-    extension [Self <: InputFormatOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InputFormatOptions] (val x: Self) extends AnyVal {
       
       inline def setCsv(value: CsvOptions): Self = StObject.set(x, "Csv", value.asInstanceOf[js.Any])
       
@@ -4800,7 +4904,8 @@ object DocumentClient {
       __obj.asInstanceOf[ItemCollectionMetrics]
     }
     
-    extension [Self <: ItemCollectionMetrics](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ItemCollectionMetrics] (val x: Self) extends AnyVal {
       
       inline def setItemCollectionKey(value: ItemCollectionKeyAttributeMap): Self = StObject.set(x, "ItemCollectionKey", value.asInstanceOf[js.Any])
       
@@ -4840,7 +4945,8 @@ object DocumentClient {
       __obj.asInstanceOf[ItemResponse]
     }
     
-    extension [Self <: ItemResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ItemResponse] (val x: Self) extends AnyVal {
       
       inline def setItem(value: AttributeMap): Self = StObject.set(x, "Item", value.asInstanceOf[js.Any])
       
@@ -4885,7 +4991,8 @@ object DocumentClient {
       __obj.asInstanceOf[KeySchemaElement]
     }
     
-    extension [Self <: KeySchemaElement](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KeySchemaElement] (val x: Self) extends AnyVal {
       
       inline def setAttributeName(value: KeySchemaAttributeName): Self = StObject.set(x, "AttributeName", value.asInstanceOf[js.Any])
       
@@ -4934,7 +5041,8 @@ object DocumentClient {
       __obj.asInstanceOf[KeysAndAttributes]
     }
     
-    extension [Self <: KeysAndAttributes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KeysAndAttributes] (val x: Self) extends AnyVal {
       
       inline def setAttributesToGet(value: AttributeNameList): Self = StObject.set(x, "AttributesToGet", value.asInstanceOf[js.Any])
       
@@ -4984,7 +5092,8 @@ object DocumentClient {
       __obj.asInstanceOf[KinesisDataStreamDestination]
     }
     
-    extension [Self <: KinesisDataStreamDestination](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KinesisDataStreamDestination] (val x: Self) extends AnyVal {
       
       inline def setDestinationStatus(value: DestinationStatus): Self = StObject.set(x, "DestinationStatus", value.asInstanceOf[js.Any])
       
@@ -5021,7 +5130,8 @@ object DocumentClient {
       __obj.asInstanceOf[KinesisStreamingDestinationInput]
     }
     
-    extension [Self <: KinesisStreamingDestinationInput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KinesisStreamingDestinationInput] (val x: Self) extends AnyVal {
       
       inline def setStreamArn(value: StreamArn): Self = StObject.set(x, "StreamArn", value.asInstanceOf[js.Any])
       
@@ -5053,7 +5163,8 @@ object DocumentClient {
       __obj.asInstanceOf[KinesisStreamingDestinationOutput]
     }
     
-    extension [Self <: KinesisStreamingDestinationOutput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KinesisStreamingDestinationOutput] (val x: Self) extends AnyVal {
       
       inline def setDestinationStatus(value: DestinationStatus): Self = StObject.set(x, "DestinationStatus", value.asInstanceOf[js.Any])
       
@@ -5112,7 +5223,8 @@ object DocumentClient {
       __obj.asInstanceOf[ListBackupsInput]
     }
     
-    extension [Self <: ListBackupsInput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListBackupsInput] (val x: Self) extends AnyVal {
       
       inline def setBackupType(value: BackupTypeFilter): Self = StObject.set(x, "BackupType", value.asInstanceOf[js.Any])
       
@@ -5159,7 +5271,8 @@ object DocumentClient {
       __obj.asInstanceOf[ListBackupsOutput]
     }
     
-    extension [Self <: ListBackupsOutput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListBackupsOutput] (val x: Self) extends AnyVal {
       
       inline def setBackupSummaries(value: BackupSummaries): Self = StObject.set(x, "BackupSummaries", value.asInstanceOf[js.Any])
       
@@ -5197,7 +5310,8 @@ object DocumentClient {
       __obj.asInstanceOf[ListContributorInsightsInput]
     }
     
-    extension [Self <: ListContributorInsightsInput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListContributorInsightsInput] (val x: Self) extends AnyVal {
       
       inline def setMaxResults(value: ListContributorInsightsLimit): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
       
@@ -5236,7 +5350,8 @@ object DocumentClient {
       __obj.asInstanceOf[ListContributorInsightsOutput]
     }
     
-    extension [Self <: ListContributorInsightsOutput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListContributorInsightsOutput] (val x: Self) extends AnyVal {
       
       inline def setContributorInsightsSummaries(value: ContributorInsightsSummaries): Self = StObject.set(x, "ContributorInsightsSummaries", value.asInstanceOf[js.Any])
       
@@ -5274,7 +5389,8 @@ object DocumentClient {
       __obj.asInstanceOf[ListExportsInput]
     }
     
-    extension [Self <: ListExportsInput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListExportsInput] (val x: Self) extends AnyVal {
       
       inline def setMaxResults(value: ListExportsMaxLimit): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
       
@@ -5311,7 +5427,8 @@ object DocumentClient {
       __obj.asInstanceOf[ListExportsOutput]
     }
     
-    extension [Self <: ListExportsOutput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListExportsOutput] (val x: Self) extends AnyVal {
       
       inline def setExportSummaries(value: ExportSummaries): Self = StObject.set(x, "ExportSummaries", value.asInstanceOf[js.Any])
       
@@ -5349,7 +5466,8 @@ object DocumentClient {
       __obj.asInstanceOf[ListGlobalTablesInput]
     }
     
-    extension [Self <: ListGlobalTablesInput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListGlobalTablesInput] (val x: Self) extends AnyVal {
       
       inline def setExclusiveStartGlobalTableName(value: TableName): Self = StObject.set(x, "ExclusiveStartGlobalTableName", value.asInstanceOf[js.Any])
       
@@ -5384,7 +5502,8 @@ object DocumentClient {
       __obj.asInstanceOf[ListGlobalTablesOutput]
     }
     
-    extension [Self <: ListGlobalTablesOutput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListGlobalTablesOutput] (val x: Self) extends AnyVal {
       
       inline def setGlobalTables(value: GlobalTableList): Self = StObject.set(x, "GlobalTables", value.asInstanceOf[js.Any])
       
@@ -5422,7 +5541,8 @@ object DocumentClient {
       __obj.asInstanceOf[ListImportsInput]
     }
     
-    extension [Self <: ListImportsInput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListImportsInput] (val x: Self) extends AnyVal {
       
       inline def setNextToken(value: ImportNextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
       
@@ -5459,7 +5579,8 @@ object DocumentClient {
       __obj.asInstanceOf[ListImportsOutput]
     }
     
-    extension [Self <: ListImportsOutput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListImportsOutput] (val x: Self) extends AnyVal {
       
       inline def setImportSummaryList(value: ImportSummaryList): Self = StObject.set(x, "ImportSummaryList", value.asInstanceOf[js.Any])
       
@@ -5492,7 +5613,8 @@ object DocumentClient {
       __obj.asInstanceOf[ListTablesInput]
     }
     
-    extension [Self <: ListTablesInput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListTablesInput] (val x: Self) extends AnyVal {
       
       inline def setExclusiveStartTableName(value: TableName): Self = StObject.set(x, "ExclusiveStartTableName", value.asInstanceOf[js.Any])
       
@@ -5525,7 +5647,8 @@ object DocumentClient {
       __obj.asInstanceOf[ListTablesOutput]
     }
     
-    extension [Self <: ListTablesOutput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListTablesOutput] (val x: Self) extends AnyVal {
       
       inline def setLastEvaluatedTableName(value: TableName): Self = StObject.set(x, "LastEvaluatedTableName", value.asInstanceOf[js.Any])
       
@@ -5558,7 +5681,8 @@ object DocumentClient {
       __obj.asInstanceOf[ListTagsOfResourceInput]
     }
     
-    extension [Self <: ListTagsOfResourceInput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListTagsOfResourceInput] (val x: Self) extends AnyVal {
       
       inline def setNextToken(value: NextTokenString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
       
@@ -5587,7 +5711,8 @@ object DocumentClient {
       __obj.asInstanceOf[ListTagsOfResourceOutput]
     }
     
-    extension [Self <: ListTagsOfResourceOutput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListTagsOfResourceOutput] (val x: Self) extends AnyVal {
       
       inline def setNextToken(value: NextTokenString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
       
@@ -5625,7 +5750,8 @@ object DocumentClient {
       __obj.asInstanceOf[LocalSecondaryIndex]
     }
     
-    extension [Self <: LocalSecondaryIndex](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LocalSecondaryIndex] (val x: Self) extends AnyVal {
       
       inline def setIndexName(value: IndexName): Self = StObject.set(x, "IndexName", value.asInstanceOf[js.Any])
       
@@ -5676,7 +5802,8 @@ object DocumentClient {
       __obj.asInstanceOf[LocalSecondaryIndexDescription]
     }
     
-    extension [Self <: LocalSecondaryIndexDescription](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LocalSecondaryIndexDescription] (val x: Self) extends AnyVal {
       
       inline def setIndexArn(value: typings.awsSdk.libDynamodbDocumentClientMod.DocumentClient.String): Self = StObject.set(x, "IndexArn", value.asInstanceOf[js.Any])
       
@@ -5732,7 +5859,8 @@ object DocumentClient {
       __obj.asInstanceOf[LocalSecondaryIndexInfo]
     }
     
-    extension [Self <: LocalSecondaryIndexInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LocalSecondaryIndexInfo] (val x: Self) extends AnyVal {
       
       inline def setIndexName(value: IndexName): Self = StObject.set(x, "IndexName", value.asInstanceOf[js.Any])
       
@@ -5786,7 +5914,8 @@ object DocumentClient {
       __obj.asInstanceOf[NumberSet]
     }
     
-    extension [Self <: NumberSet](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NumberSet] (val x: Self) extends AnyVal {
       
       inline def setType(value: Number_): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
@@ -5817,7 +5946,8 @@ object DocumentClient {
       __obj.asInstanceOf[ParameterizedStatement]
     }
     
-    extension [Self <: ParameterizedStatement](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParameterizedStatement] (val x: Self) extends AnyVal {
       
       inline def setParameters(value: PreparedStatementParameters): Self = StObject.set(x, "Parameters", value.asInstanceOf[js.Any])
       
@@ -5865,7 +5995,8 @@ object DocumentClient {
       __obj.asInstanceOf[PointInTimeRecoveryDescription]
     }
     
-    extension [Self <: PointInTimeRecoveryDescription](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PointInTimeRecoveryDescription] (val x: Self) extends AnyVal {
       
       inline def setEarliestRestorableDateTime(value: js.Date): Self = StObject.set(x, "EarliestRestorableDateTime", value.asInstanceOf[js.Any])
       
@@ -5895,7 +6026,8 @@ object DocumentClient {
       __obj.asInstanceOf[PointInTimeRecoverySpecification]
     }
     
-    extension [Self <: PointInTimeRecoverySpecification](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PointInTimeRecoverySpecification] (val x: Self) extends AnyVal {
       
       inline def setPointInTimeRecoveryEnabled(value: BooleanObject): Self = StObject.set(x, "PointInTimeRecoveryEnabled", value.asInstanceOf[js.Any])
     }
@@ -5935,7 +6067,8 @@ object DocumentClient {
       __obj.asInstanceOf[Projection]
     }
     
-    extension [Self <: Projection](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Projection] (val x: Self) extends AnyVal {
       
       inline def setNonKeyAttributes(value: NonKeyAttributeNameList): Self = StObject.set(x, "NonKeyAttributes", value.asInstanceOf[js.Any])
       
@@ -5978,7 +6111,8 @@ object DocumentClient {
       __obj.asInstanceOf[ProvisionedThroughput]
     }
     
-    extension [Self <: ProvisionedThroughput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProvisionedThroughput] (val x: Self) extends AnyVal {
       
       inline def setReadCapacityUnits(value: PositiveLongObject): Self = StObject.set(x, "ReadCapacityUnits", value.asInstanceOf[js.Any])
       
@@ -6020,7 +6154,8 @@ object DocumentClient {
       __obj.asInstanceOf[ProvisionedThroughputDescription]
     }
     
-    extension [Self <: ProvisionedThroughputDescription](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProvisionedThroughputDescription] (val x: Self) extends AnyVal {
       
       inline def setLastDecreaseDateTime(value: js.Date): Self = StObject.set(x, "LastDecreaseDateTime", value.asInstanceOf[js.Any])
       
@@ -6058,7 +6193,8 @@ object DocumentClient {
       __obj.asInstanceOf[ProvisionedThroughputOverride]
     }
     
-    extension [Self <: ProvisionedThroughputOverride](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProvisionedThroughputOverride] (val x: Self) extends AnyVal {
       
       inline def setReadCapacityUnits(value: PositiveLongObject): Self = StObject.set(x, "ReadCapacityUnits", value.asInstanceOf[js.Any])
       
@@ -6107,7 +6243,8 @@ object DocumentClient {
       __obj.asInstanceOf[Put]
     }
     
-    extension [Self <: Put](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Put] (val x: Self) extends AnyVal {
       
       inline def setConditionExpression(value: ConditionExpression): Self = StObject.set(x, "ConditionExpression", value.asInstanceOf[js.Any])
       
@@ -6191,7 +6328,8 @@ object DocumentClient {
       __obj.asInstanceOf[PutItemInput]
     }
     
-    extension [Self <: PutItemInput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PutItemInput] (val x: Self) extends AnyVal {
       
       inline def setConditionExpression(value: ConditionExpression): Self = StObject.set(x, "ConditionExpression", value.asInstanceOf[js.Any])
       
@@ -6257,7 +6395,8 @@ object DocumentClient {
       __obj.asInstanceOf[PutItemOutput]
     }
     
-    extension [Self <: PutItemOutput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PutItemOutput] (val x: Self) extends AnyVal {
       
       inline def setAttributes(value: AttributeMap): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
       
@@ -6287,7 +6426,8 @@ object DocumentClient {
       __obj.asInstanceOf[PutRequest]
     }
     
-    extension [Self <: PutRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PutRequest] (val x: Self) extends AnyVal {
       
       inline def setItem(value: PutItemInputAttributeMap): Self = StObject.set(x, "Item", value.asInstanceOf[js.Any])
     }
@@ -6386,7 +6526,8 @@ object DocumentClient {
       __obj.asInstanceOf[QueryInput]
     }
     
-    extension [Self <: QueryInput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QueryInput] (val x: Self) extends AnyVal {
       
       inline def setAttributesToGet(value: AttributeNameList): Self = StObject.set(x, "AttributesToGet", value.asInstanceOf[js.Any])
       
@@ -6492,7 +6633,8 @@ object DocumentClient {
       __obj.asInstanceOf[QueryOutput]
     }
     
-    extension [Self <: QueryOutput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QueryOutput] (val x: Self) extends AnyVal {
       
       inline def setConsumedCapacity(value: ConsumedCapacity): Self = StObject.set(x, "ConsumedCapacity", value.asInstanceOf[js.Any])
       
@@ -6534,7 +6676,8 @@ object DocumentClient {
       __obj.asInstanceOf[Replica]
     }
     
-    extension [Self <: Replica](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Replica] (val x: Self) extends AnyVal {
       
       inline def setRegionName(value: RegionName): Self = StObject.set(x, "RegionName", value.asInstanceOf[js.Any])
       
@@ -6570,7 +6713,8 @@ object DocumentClient {
       __obj.asInstanceOf[ReplicaAutoScalingDescription]
     }
     
-    extension [Self <: ReplicaAutoScalingDescription](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReplicaAutoScalingDescription] (val x: Self) extends AnyVal {
       
       inline def setGlobalSecondaryIndexes(value: ReplicaGlobalSecondaryIndexAutoScalingDescriptionList): Self = StObject.set(x, "GlobalSecondaryIndexes", value.asInstanceOf[js.Any])
       
@@ -6619,7 +6763,8 @@ object DocumentClient {
       __obj.asInstanceOf[ReplicaAutoScalingUpdate]
     }
     
-    extension [Self <: ReplicaAutoScalingUpdate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReplicaAutoScalingUpdate] (val x: Self) extends AnyVal {
       
       inline def setRegionName(value: RegionName): Self = StObject.set(x, "RegionName", value.asInstanceOf[js.Any])
       
@@ -6694,7 +6839,8 @@ object DocumentClient {
       __obj.asInstanceOf[ReplicaDescription]
     }
     
-    extension [Self <: ReplicaDescription](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReplicaDescription] (val x: Self) extends AnyVal {
       
       inline def setGlobalSecondaryIndexes(value: ReplicaGlobalSecondaryIndexDescriptionList): Self = StObject.set(x, "GlobalSecondaryIndexes", value.asInstanceOf[js.Any])
       
@@ -6759,7 +6905,8 @@ object DocumentClient {
       __obj.asInstanceOf[ReplicaGlobalSecondaryIndex]
     }
     
-    extension [Self <: ReplicaGlobalSecondaryIndex](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReplicaGlobalSecondaryIndex] (val x: Self) extends AnyVal {
       
       inline def setIndexName(value: IndexName): Self = StObject.set(x, "IndexName", value.asInstanceOf[js.Any])
       
@@ -6792,7 +6939,8 @@ object DocumentClient {
       __obj.asInstanceOf[ReplicaGlobalSecondaryIndexAutoScalingDescription]
     }
     
-    extension [Self <: ReplicaGlobalSecondaryIndexAutoScalingDescription](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReplicaGlobalSecondaryIndexAutoScalingDescription] (val x: Self) extends AnyVal {
       
       inline def setIndexName(value: IndexName): Self = StObject.set(x, "IndexName", value.asInstanceOf[js.Any])
       
@@ -6830,7 +6978,8 @@ object DocumentClient {
       __obj.asInstanceOf[ReplicaGlobalSecondaryIndexAutoScalingUpdate]
     }
     
-    extension [Self <: ReplicaGlobalSecondaryIndexAutoScalingUpdate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReplicaGlobalSecondaryIndexAutoScalingUpdate] (val x: Self) extends AnyVal {
       
       inline def setIndexName(value: IndexName): Self = StObject.set(x, "IndexName", value.asInstanceOf[js.Any])
       
@@ -6865,7 +7014,8 @@ object DocumentClient {
       __obj.asInstanceOf[ReplicaGlobalSecondaryIndexDescription]
     }
     
-    extension [Self <: ReplicaGlobalSecondaryIndexDescription](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReplicaGlobalSecondaryIndexDescription] (val x: Self) extends AnyVal {
       
       inline def setIndexName(value: IndexName): Self = StObject.set(x, "IndexName", value.asInstanceOf[js.Any])
       
@@ -6920,7 +7070,8 @@ object DocumentClient {
       __obj.asInstanceOf[ReplicaGlobalSecondaryIndexSettingsDescription]
     }
     
-    extension [Self <: ReplicaGlobalSecondaryIndexSettingsDescription](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReplicaGlobalSecondaryIndexSettingsDescription] (val x: Self) extends AnyVal {
       
       inline def setIndexName(value: IndexName): Self = StObject.set(x, "IndexName", value.asInstanceOf[js.Any])
       
@@ -6972,7 +7123,8 @@ object DocumentClient {
       __obj.asInstanceOf[ReplicaGlobalSecondaryIndexSettingsUpdate]
     }
     
-    extension [Self <: ReplicaGlobalSecondaryIndexSettingsUpdate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReplicaGlobalSecondaryIndexSettingsUpdate] (val x: Self) extends AnyVal {
       
       inline def setIndexName(value: IndexName): Self = StObject.set(x, "IndexName", value.asInstanceOf[js.Any])
       
@@ -7041,7 +7193,8 @@ object DocumentClient {
       __obj.asInstanceOf[ReplicaSettingsDescription]
     }
     
-    extension [Self <: ReplicaSettingsDescription](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReplicaSettingsDescription] (val x: Self) extends AnyVal {
       
       inline def setRegionName(value: RegionName): Self = StObject.set(x, "RegionName", value.asInstanceOf[js.Any])
       
@@ -7117,7 +7270,8 @@ object DocumentClient {
       __obj.asInstanceOf[ReplicaSettingsUpdate]
     }
     
-    extension [Self <: ReplicaSettingsUpdate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReplicaSettingsUpdate] (val x: Self) extends AnyVal {
       
       inline def setRegionName(value: RegionName): Self = StObject.set(x, "RegionName", value.asInstanceOf[js.Any])
       
@@ -7178,7 +7332,8 @@ object DocumentClient {
       __obj.asInstanceOf[ReplicaUpdate]
     }
     
-    extension [Self <: ReplicaUpdate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReplicaUpdate] (val x: Self) extends AnyVal {
       
       inline def setCreate(value: CreateReplicaAction): Self = StObject.set(x, "Create", value.asInstanceOf[js.Any])
       
@@ -7216,7 +7371,8 @@ object DocumentClient {
       __obj.asInstanceOf[ReplicationGroupUpdate]
     }
     
-    extension [Self <: ReplicationGroupUpdate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReplicationGroupUpdate] (val x: Self) extends AnyVal {
       
       inline def setCreate(value: CreateReplicationGroupMemberAction): Self = StObject.set(x, "Create", value.asInstanceOf[js.Any])
       
@@ -7267,7 +7423,8 @@ object DocumentClient {
       __obj.asInstanceOf[RestoreSummary]
     }
     
-    extension [Self <: RestoreSummary](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RestoreSummary] (val x: Self) extends AnyVal {
       
       inline def setRestoreDateTime(value: js.Date): Self = StObject.set(x, "RestoreDateTime", value.asInstanceOf[js.Any])
       
@@ -7327,7 +7484,8 @@ object DocumentClient {
       __obj.asInstanceOf[RestoreTableFromBackupInput]
     }
     
-    extension [Self <: RestoreTableFromBackupInput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RestoreTableFromBackupInput] (val x: Self) extends AnyVal {
       
       inline def setBackupArn(value: BackupArn): Self = StObject.set(x, "BackupArn", value.asInstanceOf[js.Any])
       
@@ -7373,7 +7531,8 @@ object DocumentClient {
       __obj.asInstanceOf[RestoreTableFromBackupOutput]
     }
     
-    extension [Self <: RestoreTableFromBackupOutput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RestoreTableFromBackupOutput] (val x: Self) extends AnyVal {
       
       inline def setTableDescription(value: TableDescription): Self = StObject.set(x, "TableDescription", value.asInstanceOf[js.Any])
       
@@ -7440,7 +7599,8 @@ object DocumentClient {
       __obj.asInstanceOf[RestoreTableToPointInTimeInput]
     }
     
-    extension [Self <: RestoreTableToPointInTimeInput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RestoreTableToPointInTimeInput] (val x: Self) extends AnyVal {
       
       inline def setBillingModeOverride(value: BillingMode): Self = StObject.set(x, "BillingModeOverride", value.asInstanceOf[js.Any])
       
@@ -7500,7 +7660,8 @@ object DocumentClient {
       __obj.asInstanceOf[RestoreTableToPointInTimeOutput]
     }
     
-    extension [Self <: RestoreTableToPointInTimeOutput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RestoreTableToPointInTimeOutput] (val x: Self) extends AnyVal {
       
       inline def setTableDescription(value: TableDescription): Self = StObject.set(x, "TableDescription", value.asInstanceOf[js.Any])
       
@@ -7568,7 +7729,8 @@ object DocumentClient {
       __obj.asInstanceOf[S3BucketSource]
     }
     
-    extension [Self <: S3BucketSource](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: S3BucketSource] (val x: Self) extends AnyVal {
       
       inline def setS3Bucket(value: S3Bucket): Self = StObject.set(x, "S3Bucket", value.asInstanceOf[js.Any])
       
@@ -7622,7 +7784,8 @@ object DocumentClient {
       __obj.asInstanceOf[SSEDescription]
     }
     
-    extension [Self <: SSEDescription](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SSEDescription] (val x: Self) extends AnyVal {
       
       inline def setInaccessibleEncryptionDateTime(value: js.Date): Self = StObject.set(x, "InaccessibleEncryptionDateTime", value.asInstanceOf[js.Any])
       
@@ -7668,7 +7831,8 @@ object DocumentClient {
       __obj.asInstanceOf[SSESpecification]
     }
     
-    extension [Self <: SSESpecification](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SSESpecification] (val x: Self) extends AnyVal {
       
       inline def setEnabled(value: SSEEnabled): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
       
@@ -7797,7 +7961,8 @@ object DocumentClient {
       __obj.asInstanceOf[ScanInput]
     }
     
-    extension [Self <: ScanInput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScanInput] (val x: Self) extends AnyVal {
       
       inline def setAttributesToGet(value: AttributeNameList): Self = StObject.set(x, "AttributesToGet", value.asInstanceOf[js.Any])
       
@@ -7899,7 +8064,8 @@ object DocumentClient {
       __obj.asInstanceOf[ScanOutput]
     }
     
-    extension [Self <: ScanOutput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScanOutput] (val x: Self) extends AnyVal {
       
       inline def setConsumedCapacity(value: ConsumedCapacity): Self = StObject.set(x, "ConsumedCapacity", value.asInstanceOf[js.Any])
       
@@ -8000,7 +8166,8 @@ object DocumentClient {
       __obj.asInstanceOf[SourceTableDetails]
     }
     
-    extension [Self <: SourceTableDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SourceTableDetails] (val x: Self) extends AnyVal {
       
       inline def setBillingMode(value: BillingMode): Self = StObject.set(x, "BillingMode", value.asInstanceOf[js.Any])
       
@@ -8068,7 +8235,8 @@ object DocumentClient {
       __obj.asInstanceOf[SourceTableFeatureDetails]
     }
     
-    extension [Self <: SourceTableFeatureDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SourceTableFeatureDetails] (val x: Self) extends AnyVal {
       
       inline def setGlobalSecondaryIndexes(value: GlobalSecondaryIndexes): Self = StObject.set(x, "GlobalSecondaryIndexes", value.asInstanceOf[js.Any])
       
@@ -8119,7 +8287,8 @@ object DocumentClient {
       __obj.asInstanceOf[StreamSpecification]
     }
     
-    extension [Self <: StreamSpecification](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StreamSpecification] (val x: Self) extends AnyVal {
       
       inline def setStreamEnabled(value: StreamEnabled): Self = StObject.set(x, "StreamEnabled", value.asInstanceOf[js.Any])
       
@@ -8158,7 +8327,8 @@ object DocumentClient {
       __obj.asInstanceOf[StringSet]
     }
     
-    extension [Self <: StringSet](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StringSet] (val x: Self) extends AnyVal {
       
       inline def setType(value: String_): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
@@ -8196,7 +8366,8 @@ object DocumentClient {
       __obj.asInstanceOf[TableAutoScalingDescription]
     }
     
-    extension [Self <: TableAutoScalingDescription](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TableAutoScalingDescription] (val x: Self) extends AnyVal {
       
       inline def setReplicas(value: ReplicaAutoScalingDescriptionList): Self = StObject.set(x, "Replicas", value.asInstanceOf[js.Any])
       
@@ -8240,7 +8411,8 @@ object DocumentClient {
       __obj.asInstanceOf[TableClassSummary]
     }
     
-    extension [Self <: TableClassSummary](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TableClassSummary] (val x: Self) extends AnyVal {
       
       inline def setLastUpdateDateTime(value: js.Date): Self = StObject.set(x, "LastUpdateDateTime", value.asInstanceOf[js.Any])
       
@@ -8292,7 +8464,8 @@ object DocumentClient {
       __obj.asInstanceOf[TableCreationParameters]
     }
     
-    extension [Self <: TableCreationParameters](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TableCreationParameters] (val x: Self) extends AnyVal {
       
       inline def setAttributeDefinitions(value: AttributeDefinitions): Self = StObject.set(x, "AttributeDefinitions", value.asInstanceOf[js.Any])
       
@@ -8443,7 +8616,8 @@ object DocumentClient {
       __obj.asInstanceOf[TableDescription]
     }
     
-    extension [Self <: TableDescription](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TableDescription] (val x: Self) extends AnyVal {
       
       inline def setArchivalSummary(value: ArchivalSummary): Self = StObject.set(x, "ArchivalSummary", value.asInstanceOf[js.Any])
       
@@ -8582,7 +8756,8 @@ object DocumentClient {
       __obj.asInstanceOf[Tag]
     }
     
-    extension [Self <: Tag](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Tag] (val x: Self) extends AnyVal {
       
       inline def setKey(value: TagKeyString): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
       
@@ -8615,7 +8790,8 @@ object DocumentClient {
       __obj.asInstanceOf[TagResourceInput]
     }
     
-    extension [Self <: TagResourceInput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TagResourceInput] (val x: Self) extends AnyVal {
       
       inline def setResourceArn(value: ResourceArnString): Self = StObject.set(x, "ResourceArn", value.asInstanceOf[js.Any])
       
@@ -8652,7 +8828,8 @@ object DocumentClient {
       __obj.asInstanceOf[TimeToLiveDescription]
     }
     
-    extension [Self <: TimeToLiveDescription](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TimeToLiveDescription] (val x: Self) extends AnyVal {
       
       inline def setAttributeName(value: TimeToLiveAttributeName): Self = StObject.set(x, "AttributeName", value.asInstanceOf[js.Any])
       
@@ -8685,7 +8862,8 @@ object DocumentClient {
       __obj.asInstanceOf[TimeToLiveSpecification]
     }
     
-    extension [Self <: TimeToLiveSpecification](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TimeToLiveSpecification] (val x: Self) extends AnyVal {
       
       inline def setAttributeName(value: TimeToLiveAttributeName): Self = StObject.set(x, "AttributeName", value.asInstanceOf[js.Any])
       
@@ -8716,7 +8894,8 @@ object DocumentClient {
       __obj.asInstanceOf[TransactGetItem]
     }
     
-    extension [Self <: TransactGetItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TransactGetItem] (val x: Self) extends AnyVal {
       
       inline def setGet(value: Get): Self = StObject.set(x, "Get", value.asInstanceOf[js.Any])
     }
@@ -8745,7 +8924,8 @@ object DocumentClient {
       __obj.asInstanceOf[TransactGetItemsInput]
     }
     
-    extension [Self <: TransactGetItemsInput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TransactGetItemsInput] (val x: Self) extends AnyVal {
       
       inline def setReturnConsumedCapacity(value: ReturnConsumedCapacity): Self = StObject.set(x, "ReturnConsumedCapacity", value.asInstanceOf[js.Any])
       
@@ -8776,7 +8956,8 @@ object DocumentClient {
       __obj.asInstanceOf[TransactGetItemsOutput]
     }
     
-    extension [Self <: TransactGetItemsOutput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TransactGetItemsOutput] (val x: Self) extends AnyVal {
       
       inline def setConsumedCapacity(value: ConsumedCapacityMultiple): Self = StObject.set(x, "ConsumedCapacity", value.asInstanceOf[js.Any])
       
@@ -8821,7 +9002,8 @@ object DocumentClient {
       __obj.asInstanceOf[TransactWriteItem]
     }
     
-    extension [Self <: TransactWriteItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TransactWriteItem] (val x: Self) extends AnyVal {
       
       inline def setConditionCheck(value: ConditionCheck): Self = StObject.set(x, "ConditionCheck", value.asInstanceOf[js.Any])
       
@@ -8873,7 +9055,8 @@ object DocumentClient {
       __obj.asInstanceOf[TransactWriteItemsInput]
     }
     
-    extension [Self <: TransactWriteItemsInput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TransactWriteItemsInput] (val x: Self) extends AnyVal {
       
       inline def setClientRequestToken(value: ClientRequestToken): Self = StObject.set(x, "ClientRequestToken", value.asInstanceOf[js.Any])
       
@@ -8912,7 +9095,8 @@ object DocumentClient {
       __obj.asInstanceOf[TransactWriteItemsOutput]
     }
     
-    extension [Self <: TransactWriteItemsOutput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TransactWriteItemsOutput] (val x: Self) extends AnyVal {
       
       inline def setConsumedCapacity(value: ConsumedCapacityMultiple): Self = StObject.set(x, "ConsumedCapacity", value.asInstanceOf[js.Any])
       
@@ -8945,7 +9129,8 @@ object DocumentClient {
       __obj.asInstanceOf[UntagResourceInput]
     }
     
-    extension [Self <: UntagResourceInput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UntagResourceInput] (val x: Self) extends AnyVal {
       
       inline def setResourceArn(value: ResourceArnString): Self = StObject.set(x, "ResourceArn", value.asInstanceOf[js.Any])
       
@@ -9001,7 +9186,8 @@ object DocumentClient {
       __obj.asInstanceOf[Update]
     }
     
-    extension [Self <: Update](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Update] (val x: Self) extends AnyVal {
       
       inline def setConditionExpression(value: ConditionExpression): Self = StObject.set(x, "ConditionExpression", value.asInstanceOf[js.Any])
       
@@ -9046,7 +9232,8 @@ object DocumentClient {
       __obj.asInstanceOf[UpdateContinuousBackupsInput]
     }
     
-    extension [Self <: UpdateContinuousBackupsInput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UpdateContinuousBackupsInput] (val x: Self) extends AnyVal {
       
       inline def setPointInTimeRecoverySpecification(value: PointInTimeRecoverySpecification): Self = StObject.set(x, "PointInTimeRecoverySpecification", value.asInstanceOf[js.Any])
       
@@ -9070,7 +9257,8 @@ object DocumentClient {
       __obj.asInstanceOf[UpdateContinuousBackupsOutput]
     }
     
-    extension [Self <: UpdateContinuousBackupsOutput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UpdateContinuousBackupsOutput] (val x: Self) extends AnyVal {
       
       inline def setContinuousBackupsDescription(value: ContinuousBackupsDescription): Self = StObject.set(x, "ContinuousBackupsDescription", value.asInstanceOf[js.Any])
       
@@ -9102,7 +9290,8 @@ object DocumentClient {
       __obj.asInstanceOf[UpdateContributorInsightsInput]
     }
     
-    extension [Self <: UpdateContributorInsightsInput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UpdateContributorInsightsInput] (val x: Self) extends AnyVal {
       
       inline def setContributorInsightsAction(value: ContributorInsightsAction): Self = StObject.set(x, "ContributorInsightsAction", value.asInstanceOf[js.Any])
       
@@ -9140,7 +9329,8 @@ object DocumentClient {
       __obj.asInstanceOf[UpdateContributorInsightsOutput]
     }
     
-    extension [Self <: UpdateContributorInsightsOutput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UpdateContributorInsightsOutput] (val x: Self) extends AnyVal {
       
       inline def setContributorInsightsStatus(value: ContributorInsightsStatus): Self = StObject.set(x, "ContributorInsightsStatus", value.asInstanceOf[js.Any])
       
@@ -9177,7 +9367,8 @@ object DocumentClient {
       __obj.asInstanceOf[UpdateGlobalSecondaryIndexAction]
     }
     
-    extension [Self <: UpdateGlobalSecondaryIndexAction](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UpdateGlobalSecondaryIndexAction] (val x: Self) extends AnyVal {
       
       inline def setIndexName(value: IndexName): Self = StObject.set(x, "IndexName", value.asInstanceOf[js.Any])
       
@@ -9204,7 +9395,8 @@ object DocumentClient {
       __obj.asInstanceOf[UpdateGlobalTableInput]
     }
     
-    extension [Self <: UpdateGlobalTableInput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UpdateGlobalTableInput] (val x: Self) extends AnyVal {
       
       inline def setGlobalTableName(value: TableName): Self = StObject.set(x, "GlobalTableName", value.asInstanceOf[js.Any])
       
@@ -9230,7 +9422,8 @@ object DocumentClient {
       __obj.asInstanceOf[UpdateGlobalTableOutput]
     }
     
-    extension [Self <: UpdateGlobalTableOutput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UpdateGlobalTableOutput] (val x: Self) extends AnyVal {
       
       inline def setGlobalTableDescription(value: GlobalTableDescription): Self = StObject.set(x, "GlobalTableDescription", value.asInstanceOf[js.Any])
       
@@ -9277,7 +9470,8 @@ object DocumentClient {
       __obj.asInstanceOf[UpdateGlobalTableSettingsInput]
     }
     
-    extension [Self <: UpdateGlobalTableSettingsInput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UpdateGlobalTableSettingsInput] (val x: Self) extends AnyVal {
       
       inline def setGlobalTableBillingMode(value: BillingMode): Self = StObject.set(x, "GlobalTableBillingMode", value.asInstanceOf[js.Any])
       
@@ -9326,7 +9520,8 @@ object DocumentClient {
       __obj.asInstanceOf[UpdateGlobalTableSettingsOutput]
     }
     
-    extension [Self <: UpdateGlobalTableSettingsOutput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UpdateGlobalTableSettingsOutput] (val x: Self) extends AnyVal {
       
       inline def setGlobalTableName(value: TableName): Self = StObject.set(x, "GlobalTableName", value.asInstanceOf[js.Any])
       
@@ -9410,7 +9605,8 @@ object DocumentClient {
       __obj.asInstanceOf[UpdateItemInput]
     }
     
-    extension [Self <: UpdateItemInput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UpdateItemInput] (val x: Self) extends AnyVal {
       
       inline def setAttributeUpdates(value: AttributeUpdates): Self = StObject.set(x, "AttributeUpdates", value.asInstanceOf[js.Any])
       
@@ -9482,7 +9678,8 @@ object DocumentClient {
       __obj.asInstanceOf[UpdateItemOutput]
     }
     
-    extension [Self <: UpdateItemOutput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UpdateItemOutput] (val x: Self) extends AnyVal {
       
       inline def setAttributes(value: AttributeMap): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
       
@@ -9534,7 +9731,8 @@ object DocumentClient {
       __obj.asInstanceOf[UpdateReplicationGroupMemberAction]
     }
     
-    extension [Self <: UpdateReplicationGroupMemberAction](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UpdateReplicationGroupMemberAction] (val x: Self) extends AnyVal {
       
       inline def setGlobalSecondaryIndexes(value: ReplicaGlobalSecondaryIndexList): Self = StObject.set(x, "GlobalSecondaryIndexes", value.asInstanceOf[js.Any])
       
@@ -9612,7 +9810,8 @@ object DocumentClient {
       __obj.asInstanceOf[UpdateTableInput]
     }
     
-    extension [Self <: UpdateTableInput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UpdateTableInput] (val x: Self) extends AnyVal {
       
       inline def setAttributeDefinitions(value: AttributeDefinitions): Self = StObject.set(x, "AttributeDefinitions", value.asInstanceOf[js.Any])
       
@@ -9670,7 +9869,8 @@ object DocumentClient {
       __obj.asInstanceOf[UpdateTableOutput]
     }
     
-    extension [Self <: UpdateTableOutput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UpdateTableOutput] (val x: Self) extends AnyVal {
       
       inline def setTableDescription(value: TableDescription): Self = StObject.set(x, "TableDescription", value.asInstanceOf[js.Any])
       
@@ -9704,7 +9904,8 @@ object DocumentClient {
       __obj.asInstanceOf[UpdateTableReplicaAutoScalingInput]
     }
     
-    extension [Self <: UpdateTableReplicaAutoScalingInput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UpdateTableReplicaAutoScalingInput] (val x: Self) extends AnyVal {
       
       inline def setGlobalSecondaryIndexUpdates(value: GlobalSecondaryIndexAutoScalingUpdateList): Self = StObject.set(x, "GlobalSecondaryIndexUpdates", value.asInstanceOf[js.Any])
       
@@ -9742,7 +9943,8 @@ object DocumentClient {
       __obj.asInstanceOf[UpdateTableReplicaAutoScalingOutput]
     }
     
-    extension [Self <: UpdateTableReplicaAutoScalingOutput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UpdateTableReplicaAutoScalingOutput] (val x: Self) extends AnyVal {
       
       inline def setTableAutoScalingDescription(value: TableAutoScalingDescription): Self = StObject.set(x, "TableAutoScalingDescription", value.asInstanceOf[js.Any])
       
@@ -9769,7 +9971,8 @@ object DocumentClient {
       __obj.asInstanceOf[UpdateTimeToLiveInput]
     }
     
-    extension [Self <: UpdateTimeToLiveInput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UpdateTimeToLiveInput] (val x: Self) extends AnyVal {
       
       inline def setTableName(value: TableName): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
       
@@ -9793,7 +9996,8 @@ object DocumentClient {
       __obj.asInstanceOf[UpdateTimeToLiveOutput]
     }
     
-    extension [Self <: UpdateTimeToLiveOutput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UpdateTimeToLiveOutput] (val x: Self) extends AnyVal {
       
       inline def setTimeToLiveSpecification(value: TimeToLiveSpecification): Self = StObject.set(x, "TimeToLiveSpecification", value.asInstanceOf[js.Any])
       
@@ -9820,7 +10024,8 @@ object DocumentClient {
       __obj.asInstanceOf[WriteRequest]
     }
     
-    extension [Self <: WriteRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WriteRequest] (val x: Self) extends AnyVal {
       
       inline def setDeleteRequest(value: DeleteRequest): Self = StObject.set(x, "DeleteRequest", value.asInstanceOf[js.Any])
       

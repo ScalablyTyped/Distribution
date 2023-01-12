@@ -62,7 +62,8 @@ object XSheetAnnotation {
     __obj.asInstanceOf[XSheetAnnotation]
   }
   
-  extension [Self <: XSheetAnnotation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XSheetAnnotation] (val x: Self) extends AnyVal {
     
     inline def setAuthor(value: String): Self = StObject.set(x, "Author", value.asInstanceOf[js.Any])
     

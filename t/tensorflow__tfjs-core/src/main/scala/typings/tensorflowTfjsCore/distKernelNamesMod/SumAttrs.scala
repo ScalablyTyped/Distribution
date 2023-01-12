@@ -17,7 +17,8 @@ object SumAttrs {
     __obj.asInstanceOf[SumAttrs]
   }
   
-  extension [Self <: SumAttrs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SumAttrs] (val x: Self) extends AnyVal {
     
     inline def setAxis(value: Double | js.Array[Double]): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
     

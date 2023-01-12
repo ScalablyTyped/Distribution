@@ -52,7 +52,8 @@ object ChartDataPoint {
     __obj.asInstanceOf[ChartDataPoint]
   }
   
-  extension [Self <: ChartDataPoint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChartDataPoint] (val x: Self) extends AnyVal {
     
     inline def setExploded(value: Boolean): Self = StObject.set(x, "exploded", value.asInstanceOf[js.Any])
     

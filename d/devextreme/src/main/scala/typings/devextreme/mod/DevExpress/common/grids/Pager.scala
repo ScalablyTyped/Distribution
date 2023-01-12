@@ -56,7 +56,8 @@ object Pager {
     __obj.asInstanceOf[Pager]
   }
   
-  extension [Self <: Pager](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Pager] (val x: Self) extends AnyVal {
     
     inline def setAllowedPageSizes(value: (js.Array[Double | PagerPageSize]) | Mode): Self = StObject.set(x, "allowedPageSizes", value.asInstanceOf[js.Any])
     

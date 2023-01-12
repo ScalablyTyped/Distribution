@@ -31,7 +31,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[typings.detectTouchEvents.mod.detectTouchEvents]
     }
     
-    extension [Self <: typings.detectTouchEvents.mod.detectTouchEvents](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.detectTouchEvents.mod.detectTouchEvents] (val x: Self) extends AnyVal {
       
       inline def setHasApi(value: Boolean): Self = StObject.set(x, "hasApi", value.asInstanceOf[js.Any])
       

@@ -48,7 +48,8 @@ object anon {
       __obj.asInstanceOf[FromSSOInitPartialSsoCred]
     }
     
-    extension [Self <: FromSSOInitPartialSsoCred](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FromSSOInitPartialSsoCred] (val x: Self) extends AnyVal {
       
       inline def setConfigFilepath(value: String): Self = StObject.set(x, "configFilepath", value.asInstanceOf[js.Any])
       

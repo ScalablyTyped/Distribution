@@ -37,7 +37,8 @@ object SubstancePolymerMonomerSetStartingMaterial {
     __obj.asInstanceOf[SubstancePolymerMonomerSetStartingMaterial]
   }
   
-  extension [Self <: SubstancePolymerMonomerSetStartingMaterial](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubstancePolymerMonomerSetStartingMaterial] (val x: Self) extends AnyVal {
     
     inline def setAmount(value: Quantity): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
     

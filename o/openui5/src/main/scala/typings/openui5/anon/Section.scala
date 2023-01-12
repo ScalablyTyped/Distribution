@@ -24,7 +24,8 @@ object Section {
     __obj.asInstanceOf[Section]
   }
   
-  extension [Self <: Section](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Section] (val x: Self) extends AnyVal {
     
     inline def setSection(value: default): Self = StObject.set(x, "section", value.asInstanceOf[js.Any])
     

@@ -36,7 +36,8 @@ object IBaseMouseTarget {
     __obj.asInstanceOf[IBaseMouseTarget]
   }
   
-  extension [Self <: IBaseMouseTarget](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IBaseMouseTarget] (val x: Self) extends AnyVal {
     
     inline def setElement(value: Element): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     

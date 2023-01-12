@@ -37,7 +37,8 @@ object ChannelConnection {
     __obj.asInstanceOf[ChannelConnection]
   }
   
-  extension [Self <: ChannelConnection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChannelConnection] (val x: Self) extends AnyVal {
     
     inline def setActivationToken(value: String): Self = StObject.set(x, "activationToken", value.asInstanceOf[js.Any])
     

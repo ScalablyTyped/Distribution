@@ -17,7 +17,8 @@ object Crls {
     __obj.asInstanceOf[Crls]
   }
   
-  extension [Self <: Crls](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Crls] (val x: Self) extends AnyVal {
     
     inline def setCerts(value: String): Self = StObject.set(x, "certs", value.asInstanceOf[js.Any])
     

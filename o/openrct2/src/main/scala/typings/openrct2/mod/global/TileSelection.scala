@@ -17,7 +17,8 @@ object TileSelection {
     __obj.asInstanceOf[TileSelection]
   }
   
-  extension [Self <: TileSelection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TileSelection] (val x: Self) extends AnyVal {
     
     inline def setRange(value: MapRange): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     

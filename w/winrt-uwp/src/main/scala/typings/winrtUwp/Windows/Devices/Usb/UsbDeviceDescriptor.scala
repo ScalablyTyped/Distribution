@@ -39,7 +39,8 @@ object UsbDeviceDescriptor {
     __obj.asInstanceOf[UsbDeviceDescriptor]
   }
   
-  extension [Self <: UsbDeviceDescriptor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UsbDeviceDescriptor] (val x: Self) extends AnyVal {
     
     inline def setBcdDeviceRevision(value: Double): Self = StObject.set(x, "bcdDeviceRevision", value.asInstanceOf[js.Any])
     

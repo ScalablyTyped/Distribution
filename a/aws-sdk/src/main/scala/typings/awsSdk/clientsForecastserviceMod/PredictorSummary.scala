@@ -58,7 +58,8 @@ object PredictorSummary {
     __obj.asInstanceOf[PredictorSummary]
   }
   
-  extension [Self <: PredictorSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PredictorSummary] (val x: Self) extends AnyVal {
     
     inline def setCreationTime(value: js.Date): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     

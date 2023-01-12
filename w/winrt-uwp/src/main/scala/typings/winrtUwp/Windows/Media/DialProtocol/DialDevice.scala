@@ -36,7 +36,8 @@ object DialDevice {
     __obj.asInstanceOf[DialDevice]
   }
   
-  extension [Self <: DialDevice](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DialDevice] (val x: Self) extends AnyVal {
     
     inline def setFriendlyName(value: String): Self = StObject.set(x, "friendlyName", value.asInstanceOf[js.Any])
     

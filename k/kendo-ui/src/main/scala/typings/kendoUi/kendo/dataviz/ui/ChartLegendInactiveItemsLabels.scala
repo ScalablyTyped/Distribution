@@ -19,7 +19,8 @@ object ChartLegendInactiveItemsLabels {
     __obj.asInstanceOf[ChartLegendInactiveItemsLabels]
   }
   
-  extension [Self <: ChartLegendInactiveItemsLabels](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChartLegendInactiveItemsLabels] (val x: Self) extends AnyVal {
     
     inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

@@ -46,7 +46,8 @@ object PartialStateReadonlykeystIndex {
     __obj.asInstanceOf[PartialStateReadonlykeystIndex]
   }
   
-  extension [Self <: PartialStateReadonlykeystIndex](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialStateReadonlykeystIndex] (val x: Self) extends AnyVal {
     
     inline def setHistory(value: js.Array[Any]): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
     

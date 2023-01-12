@@ -28,7 +28,8 @@ object RadialBarChartProps {
     __obj.asInstanceOf[RadialBarChartProps]
   }
   
-  extension [Self <: RadialBarChartProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RadialBarChartProps] (val x: Self) extends AnyVal {
     
     inline def setCx(value: String | Double): Self = StObject.set(x, "cx", value.asInstanceOf[js.Any])
     

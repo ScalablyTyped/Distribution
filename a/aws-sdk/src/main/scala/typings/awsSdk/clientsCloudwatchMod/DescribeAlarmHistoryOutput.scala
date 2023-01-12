@@ -23,7 +23,8 @@ object DescribeAlarmHistoryOutput {
     __obj.asInstanceOf[DescribeAlarmHistoryOutput]
   }
   
-  extension [Self <: DescribeAlarmHistoryOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeAlarmHistoryOutput] (val x: Self) extends AnyVal {
     
     inline def setAlarmHistoryItems(value: AlarmHistoryItems): Self = StObject.set(x, "AlarmHistoryItems", value.asInstanceOf[js.Any])
     

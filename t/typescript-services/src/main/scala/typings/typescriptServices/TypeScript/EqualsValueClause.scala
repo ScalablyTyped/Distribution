@@ -39,7 +39,8 @@ object EqualsValueClause {
     __obj.asInstanceOf[EqualsValueClause]
   }
   
-  extension [Self <: EqualsValueClause](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EqualsValueClause] (val x: Self) extends AnyVal {
     
     inline def setValue(value: AST): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }

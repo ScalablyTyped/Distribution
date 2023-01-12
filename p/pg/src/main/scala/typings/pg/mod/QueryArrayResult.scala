@@ -17,7 +17,8 @@ object QueryArrayResult {
     __obj.asInstanceOf[QueryArrayResult[R]]
   }
   
-  extension [Self <: QueryArrayResult[?], R /* <: js.Array[Any] */](x: Self & QueryArrayResult[R]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryArrayResult[?], R /* <: js.Array[Any] */] (val x: Self & QueryArrayResult[R]) extends AnyVal {
     
     inline def setRows(value: js.Array[R]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
     

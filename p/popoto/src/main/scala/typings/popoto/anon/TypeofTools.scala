@@ -68,7 +68,8 @@ object TypeofTools {
     __obj.asInstanceOf[TypeofTools]
   }
   
-  extension [Self <: TypeofTools](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofTools] (val x: Self) extends AnyVal {
     
     inline def setCENTER_GRAPH(value: Boolean): Self = StObject.set(x, "CENTER_GRAPH", value.asInstanceOf[js.Any])
     

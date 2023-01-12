@@ -40,7 +40,8 @@ object GetIosReopenAttributionResponse {
     __obj.asInstanceOf[GetIosReopenAttributionResponse]
   }
   
-  extension [Self <: GetIosReopenAttributionResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetIosReopenAttributionResponse] (val x: Self) extends AnyVal {
     
     inline def setDeepLink(value: String): Self = StObject.set(x, "deepLink", value.asInstanceOf[js.Any])
     

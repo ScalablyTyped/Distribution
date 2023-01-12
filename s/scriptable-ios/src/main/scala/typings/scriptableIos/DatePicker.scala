@@ -114,7 +114,8 @@ object DatePicker {
     __obj.asInstanceOf[DatePicker]
   }
   
-  extension [Self <: DatePicker](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DatePicker] (val x: Self) extends AnyVal {
     
     inline def setCountdownDuration(value: Double): Self = StObject.set(x, "countdownDuration", value.asInstanceOf[js.Any])
     

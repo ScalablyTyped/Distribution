@@ -33,7 +33,8 @@ object PlotGaugeOnPointOptions {
     __obj.asInstanceOf[PlotGaugeOnPointOptions]
   }
   
-  extension [Self <: PlotGaugeOnPointOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotGaugeOnPointOptions] (val x: Self) extends AnyVal {
     
     inline def setConnectorOptions(value: PlotGaugeOnPointConnectorOptions | SVGAttributes): Self = StObject.set(x, "connectorOptions", value.asInstanceOf[js.Any])
     

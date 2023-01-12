@@ -26,7 +26,8 @@ object UnsupportedFieldProps {
     __obj.asInstanceOf[UnsupportedFieldProps[T, F]]
   }
   
-  extension [Self <: UnsupportedFieldProps[?, ?], T, F](x: Self & (UnsupportedFieldProps[T, F])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UnsupportedFieldProps[?, ?], T, F] (val x: Self & (UnsupportedFieldProps[T, F])) extends AnyVal {
     
     inline def setIdSchema(value: IdSchema[T]): Self = StObject.set(x, "idSchema", value.asInstanceOf[js.Any])
     

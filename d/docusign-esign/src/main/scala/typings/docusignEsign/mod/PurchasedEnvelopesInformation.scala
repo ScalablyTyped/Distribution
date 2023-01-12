@@ -58,7 +58,8 @@ object PurchasedEnvelopesInformation {
     __obj.asInstanceOf[PurchasedEnvelopesInformation]
   }
   
-  extension [Self <: PurchasedEnvelopesInformation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PurchasedEnvelopesInformation] (val x: Self) extends AnyVal {
     
     inline def setAmount(value: String): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
     

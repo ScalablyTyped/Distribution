@@ -32,7 +32,8 @@ object libAdaptorGeometriesEdgeMod {
       __obj.asInstanceOf[EdgeGeometryOptions]
     }
     
-    extension [Self <: EdgeGeometryOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EdgeGeometryOptions] (val x: Self) extends AnyVal {
       
       inline def setEdge(value: MappingOptions): Self = StObject.set(x, "edge", value.asInstanceOf[js.Any])
       

@@ -64,7 +64,8 @@ object gapi {
           __obj.asInstanceOf[GoogleExampleLibraryagentV1Book]
         }
         
-        extension [Self <: GoogleExampleLibraryagentV1Book](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: GoogleExampleLibraryagentV1Book] (val x: Self) extends AnyVal {
           
           inline def setAuthor(value: String): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
           
@@ -99,7 +100,8 @@ object gapi {
           __obj.asInstanceOf[GoogleExampleLibraryagentV1ListBooksResponse]
         }
         
-        extension [Self <: GoogleExampleLibraryagentV1ListBooksResponse](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: GoogleExampleLibraryagentV1ListBooksResponse] (val x: Self) extends AnyVal {
           
           inline def setBooks(value: js.Array[GoogleExampleLibraryagentV1Book]): Self = StObject.set(x, "books", value.asInstanceOf[js.Any])
           
@@ -131,7 +133,8 @@ object gapi {
           __obj.asInstanceOf[GoogleExampleLibraryagentV1ListShelvesResponse]
         }
         
-        extension [Self <: GoogleExampleLibraryagentV1ListShelvesResponse](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: GoogleExampleLibraryagentV1ListShelvesResponse] (val x: Self) extends AnyVal {
           
           inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
           
@@ -160,7 +163,8 @@ object gapi {
           __obj.asInstanceOf[GoogleExampleLibraryagentV1Shelf]
         }
         
-        extension [Self <: GoogleExampleLibraryagentV1Shelf](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: GoogleExampleLibraryagentV1Shelf] (val x: Self) extends AnyVal {
           
           inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
           

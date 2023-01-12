@@ -50,7 +50,8 @@ object mod {
       __obj.asInstanceOf[Finger]
     }
     
-    extension [Self <: Finger](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Finger] (val x: Self) extends AnyVal {
       
       inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
@@ -206,7 +207,8 @@ object mod {
       __obj.asInstanceOf[IGesture]
     }
     
-    extension [Self <: IGesture](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IGesture] (val x: Self) extends AnyVal {
       
       inline def setDirection(value: all | vertical | horizontal): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       
@@ -406,7 +408,8 @@ object mod {
       __obj.asInstanceOf[IGestureStatus]
     }
     
-    extension [Self <: IGestureStatus](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IGestureStatus] (val x: Self) extends AnyVal {
       
       inline def setAvailablePan(value: Boolean): Self = StObject.set(x, "availablePan", value.asInstanceOf[js.Any])
       
@@ -497,7 +500,8 @@ object mod {
       __obj.asInstanceOf[MultiFingerStatus]
     }
     
-    extension [Self <: MultiFingerStatus](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MultiFingerStatus] (val x: Self) extends AnyVal {
       
       inline def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
       
@@ -530,7 +534,8 @@ object mod {
       __obj.asInstanceOf[SingeFingerMoveStatus]
     }
     
-    extension [Self <: SingeFingerMoveStatus](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SingeFingerMoveStatus] (val x: Self) extends AnyVal {
       
       inline def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
       

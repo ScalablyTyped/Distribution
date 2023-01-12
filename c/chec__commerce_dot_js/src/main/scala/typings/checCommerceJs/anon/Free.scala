@@ -17,7 +17,8 @@ object Free {
     __obj.asInstanceOf[Free]
   }
   
-  extension [Self <: Free](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Free] (val x: Self) extends AnyVal {
     
     inline def setFree(value: Boolean): Self = StObject.set(x, "free", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object CallOptionsWithPagination {
     __obj.asInstanceOf[CallOptionsWithPagination]
   }
   
-  extension [Self <: CallOptionsWithPagination](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CallOptionsWithPagination] (val x: Self) extends AnyVal {
     
     inline def setAutoPaginate(value: `false`): Self = StObject.set(x, "autoPaginate", value.asInstanceOf[js.Any])
   }

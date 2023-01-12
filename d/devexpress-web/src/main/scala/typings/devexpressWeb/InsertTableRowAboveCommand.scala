@@ -23,7 +23,8 @@ object InsertTableRowAboveCommand {
     __obj.asInstanceOf[InsertTableRowAboveCommand]
   }
   
-  extension [Self <: InsertTableRowAboveCommand](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InsertTableRowAboveCommand] (val x: Self) extends AnyVal {
     
     inline def setExecute(value: () => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction0(value))
   }

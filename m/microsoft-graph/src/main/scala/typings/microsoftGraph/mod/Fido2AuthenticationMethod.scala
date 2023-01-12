@@ -33,7 +33,8 @@ object Fido2AuthenticationMethod {
     __obj.asInstanceOf[Fido2AuthenticationMethod]
   }
   
-  extension [Self <: Fido2AuthenticationMethod](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Fido2AuthenticationMethod] (val x: Self) extends AnyVal {
     
     inline def setAaGuid(value: NullableOption[String]): Self = StObject.set(x, "aaGuid", value.asInstanceOf[js.Any])
     

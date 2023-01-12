@@ -100,7 +100,8 @@ object SVGTextPathElement {
     __obj.asInstanceOf[SVGTextPathElement]
   }
   
-  extension [Self <: SVGTextPathElement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SVGTextPathElement] (val x: Self) extends AnyVal {
     
     inline def setClassName(value: SVGAnimatedString): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     

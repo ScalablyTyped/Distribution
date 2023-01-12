@@ -41,7 +41,8 @@ object distEs2015CoreDataMainDataMod {
       __obj.asInstanceOf[ContextConfigData]
     }
     
-    extension [Self <: ContextConfigData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContextConfigData] (val x: Self) extends AnyVal {
       
       inline def setOptions(value: Alpha): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     }

@@ -64,7 +64,8 @@ object mod extends Shortcut {
     @js.native
     val ^ : Network = js.native
     
-    extension [Self <: Network](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Network] (val x: Self) extends AnyVal {
       
       inline def setALL(value: String): Self = StObject.set(x, "ALL", value.asInstanceOf[js.Any])
       
@@ -86,7 +87,8 @@ object mod extends Shortcut {
     @js.native
     val ^ : Priority = js.native
     
-    extension [Self <: Priority](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Priority] (val x: Self) extends AnyVal {
       
       inline def setHIGH(value: String): Self = StObject.set(x, "HIGH", value.asInstanceOf[js.Any])
       
@@ -127,7 +129,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Directories_]
     }
     
-    extension [Self <: Directories_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Directories_] (val x: Self) extends AnyVal {
       
       inline def setDocuments(value: String): Self = StObject.set(x, "documents", value.asInstanceOf[js.Any])
     }
@@ -154,7 +157,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[DownloadOption]
     }
     
-    extension [Self <: DownloadOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DownloadOption] (val x: Self) extends AnyVal {
       
       inline def setDestination(value: String): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
       
@@ -234,7 +238,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[DownloadTask]
     }
     
-    extension [Self <: DownloadTask](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DownloadTask] (val x: Self) extends AnyVal {
       
       inline def setBegin(value: BeginHandler => DownloadTask): Self = StObject.set(x, "begin", js.Any.fromFunction1(value))
       
@@ -310,7 +315,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[RNBackgroundDownloader]
     }
     
-    extension [Self <: RNBackgroundDownloader](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RNBackgroundDownloader] (val x: Self) extends AnyVal {
       
       inline def setCheckForExistingDownloads(value: () => js.Promise[js.Array[DownloadTask]]): Self = StObject.set(x, "checkForExistingDownloads", js.Any.fromFunction0(value))
       
@@ -347,7 +353,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[TaskInfoObject]
     }
     
-    extension [Self <: TaskInfoObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TaskInfoObject] (val x: Self) extends AnyVal {
       
       inline def setBytesWritten(value: Double): Self = StObject.set(x, "bytesWritten", value.asInstanceOf[js.Any])
       

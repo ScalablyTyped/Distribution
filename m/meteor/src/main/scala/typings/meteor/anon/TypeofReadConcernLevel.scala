@@ -28,7 +28,8 @@ object TypeofReadConcernLevel {
     __obj.asInstanceOf[TypeofReadConcernLevel]
   }
   
-  extension [Self <: TypeofReadConcernLevel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofReadConcernLevel] (val x: Self) extends AnyVal {
     
     inline def setAvailable(value: available): Self = StObject.set(x, "available", value.asInstanceOf[js.Any])
     

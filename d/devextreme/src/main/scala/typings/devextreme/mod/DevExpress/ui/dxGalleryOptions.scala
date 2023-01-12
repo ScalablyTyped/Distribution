@@ -71,7 +71,8 @@ object dxGalleryOptions {
     __obj.asInstanceOf[dxGalleryOptions[TItem, TKey]]
   }
   
-  extension [Self <: dxGalleryOptions[?, ?], TItem /* <: ItemLike */, TKey](x: Self & (dxGalleryOptions[TItem, TKey])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxGalleryOptions[?, ?], TItem /* <: ItemLike */, TKey] (val x: Self & (dxGalleryOptions[TItem, TKey])) extends AnyVal {
     
     inline def setAnimationDuration(value: Double): Self = StObject.set(x, "animationDuration", value.asInstanceOf[js.Any])
     

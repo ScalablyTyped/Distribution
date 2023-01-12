@@ -42,7 +42,8 @@ object BaseGaugeTooltip {
     __obj.asInstanceOf[BaseGaugeTooltip]
   }
   
-  extension [Self <: BaseGaugeTooltip](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BaseGaugeTooltip] (val x: Self) extends AnyVal {
     
     inline def setContentTemplate(
       value: template | (js.Function2[

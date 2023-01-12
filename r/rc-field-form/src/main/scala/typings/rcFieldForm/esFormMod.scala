@@ -485,7 +485,8 @@ object esFormMod extends Shortcut {
       __obj.asInstanceOf[BaseFormProps]
     }
     
-    extension [Self <: BaseFormProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseFormProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       
@@ -1258,7 +1259,8 @@ object esFormMod extends Shortcut {
       __obj.asInstanceOf[FormProps[Values]]
     }
     
-    extension [Self <: FormProps[?], Values](x: Self & FormProps[Values]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FormProps[?], Values] (val x: Self & FormProps[Values]) extends AnyVal {
       
       inline def setChildren(value: RenderProps | ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

@@ -38,7 +38,8 @@ object SendBonusRequest {
     __obj.asInstanceOf[SendBonusRequest]
   }
   
-  extension [Self <: SendBonusRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SendBonusRequest] (val x: Self) extends AnyVal {
     
     inline def setAssignmentId(value: EntityId): Self = StObject.set(x, "AssignmentId", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object distTypesTypesDriveResponseMod {
       __obj.asInstanceOf[DeleteManyResponse]
     }
     
-    extension [Self <: DeleteManyResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeleteManyResponse] (val x: Self) extends AnyVal {
       
       inline def setDeleted(value: js.Array[String]): Self = StObject.set(x, "deleted", value.asInstanceOf[js.Any])
       
@@ -50,7 +51,8 @@ object distTypesTypesDriveResponseMod {
       __obj.asInstanceOf[ListResponse]
     }
     
-    extension [Self <: ListResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListResponse] (val x: Self) extends AnyVal {
       
       inline def setNames(value: js.Array[String]): Self = StObject.set(x, "names", value.asInstanceOf[js.Any])
       
@@ -75,7 +77,8 @@ object distTypesTypesDriveResponseMod {
       __obj.asInstanceOf[UploadResponse]
     }
     
-    extension [Self <: UploadResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UploadResponse] (val x: Self) extends AnyVal {
       
       inline def setError(value: js.Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       

@@ -27,7 +27,8 @@ object distSrcClassicEditorGeneralDistComponentsPlayCircleMod extends Shortcut {
       __obj.asInstanceOf[PlayCircleProps]
     }
     
-    extension [Self <: PlayCircleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PlayCircleProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

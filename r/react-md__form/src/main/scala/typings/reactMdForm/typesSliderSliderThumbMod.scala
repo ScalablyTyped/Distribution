@@ -68,7 +68,8 @@ object typesSliderSliderThumbMod {
       __obj.asInstanceOf[BaseThumbProps]
     }
     
-    extension [Self <: BaseThumbProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseThumbProps] (val x: Self) extends AnyVal {
       
       inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       

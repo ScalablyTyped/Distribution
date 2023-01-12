@@ -16,7 +16,8 @@ object IFloatValue {
     __obj.asInstanceOf[IFloatValue]
   }
   
-  extension [Self <: IFloatValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IFloatValue] (val x: Self) extends AnyVal {
     
     inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     

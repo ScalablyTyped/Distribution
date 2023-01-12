@@ -23,7 +23,8 @@ object ListCompatibleImagesRequest {
     __obj.asInstanceOf[ListCompatibleImagesRequest]
   }
   
-  extension [Self <: ListCompatibleImagesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListCompatibleImagesRequest] (val x: Self) extends AnyVal {
     
     inline def setMaxResults(value: ListLimit): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     

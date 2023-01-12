@@ -25,7 +25,8 @@ object DevToolsConfig {
     __obj.asInstanceOf[DevToolsConfig[Instance, TextInstance, RendererInspectionConfig]]
   }
   
-  extension [Self <: DevToolsConfig[?, ?, ?], Instance, TextInstance, RendererInspectionConfig](x: Self & (DevToolsConfig[Instance, TextInstance, RendererInspectionConfig])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DevToolsConfig[?, ?, ?], Instance, TextInstance, RendererInspectionConfig] (val x: Self & (DevToolsConfig[Instance, TextInstance, RendererInspectionConfig])) extends AnyVal {
     
     inline def setBundleType(value: BundleType): Self = StObject.set(x, "bundleType", value.asInstanceOf[js.Any])
     

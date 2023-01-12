@@ -28,7 +28,8 @@ object AwsAutoScalingLaunchConfigurationMetadataOptions {
     __obj.asInstanceOf[AwsAutoScalingLaunchConfigurationMetadataOptions]
   }
   
-  extension [Self <: AwsAutoScalingLaunchConfigurationMetadataOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsAutoScalingLaunchConfigurationMetadataOptions] (val x: Self) extends AnyVal {
     
     inline def setHttpEndpoint(value: NonEmptyString): Self = StObject.set(x, "HttpEndpoint", value.asInstanceOf[js.Any])
     

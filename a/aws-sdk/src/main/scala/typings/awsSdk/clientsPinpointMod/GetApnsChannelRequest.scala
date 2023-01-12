@@ -18,7 +18,8 @@ object GetApnsChannelRequest {
     __obj.asInstanceOf[GetApnsChannelRequest]
   }
   
-  extension [Self <: GetApnsChannelRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetApnsChannelRequest] (val x: Self) extends AnyVal {
     
     inline def setApplicationId(value: string): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
   }

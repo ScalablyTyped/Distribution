@@ -24,7 +24,8 @@ object distLibSnykTestTypesMod {
       __obj.asInstanceOf[DepTreeFromResolveDeps]
     }
     
-    extension [Self <: DepTreeFromResolveDeps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DepTreeFromResolveDeps] (val x: Self) extends AnyVal {
       
       inline def setNumDependencies(value: Double): Self = StObject.set(x, "numDependencies", value.asInstanceOf[js.Any])
       
@@ -55,7 +56,8 @@ object distLibSnykTestTypesMod {
       __obj.asInstanceOf[Payload]
     }
     
-    extension [Self <: Payload](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Payload] (val x: Self) extends AnyVal {
       
       inline def setBody(value: PayloadBody | TestDependenciesRequest): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
@@ -118,7 +120,8 @@ object distLibSnykTestTypesMod {
       __obj.asInstanceOf[PayloadBody]
     }
     
-    extension [Self <: PayloadBody](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PayloadBody] (val x: Self) extends AnyVal {
       
       inline def setCallGraph(value: Any): Self = StObject.set(x, "callGraph", value.asInstanceOf[js.Any])
       
@@ -189,7 +192,8 @@ object distLibSnykTestTypesMod {
       __obj.asInstanceOf[TestDependenciesRequest]
     }
     
-    extension [Self <: TestDependenciesRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TestDependenciesRequest] (val x: Self) extends AnyVal {
       
       inline def setScanResult(value: ScanResult): Self = StObject.set(x, "scanResult", value.asInstanceOf[js.Any])
     }

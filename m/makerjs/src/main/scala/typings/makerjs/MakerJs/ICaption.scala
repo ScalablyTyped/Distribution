@@ -29,7 +29,8 @@ object ICaption {
     __obj.asInstanceOf[ICaption]
   }
   
-  extension [Self <: ICaption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICaption] (val x: Self) extends AnyVal {
     
     inline def setAnchor(value: IPathLine): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object StartSpeechSynthesisTaskOutput {
     __obj.asInstanceOf[StartSpeechSynthesisTaskOutput]
   }
   
-  extension [Self <: StartSpeechSynthesisTaskOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartSpeechSynthesisTaskOutput] (val x: Self) extends AnyVal {
     
     inline def setSynthesisTask(value: SynthesisTask): Self = StObject.set(x, "SynthesisTask", value.asInstanceOf[js.Any])
     

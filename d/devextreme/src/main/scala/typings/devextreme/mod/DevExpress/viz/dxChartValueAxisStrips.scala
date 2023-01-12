@@ -36,7 +36,8 @@ object dxChartValueAxisStrips {
     __obj.asInstanceOf[dxChartValueAxisStrips]
   }
   
-  extension [Self <: dxChartValueAxisStrips](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxChartValueAxisStrips] (val x: Self) extends AnyVal {
     
     inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object PartialSinonSandboxConfig {
     __obj.asInstanceOf[PartialSinonSandboxConfig]
   }
   
-  extension [Self <: PartialSinonSandboxConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialSinonSandboxConfig] (val x: Self) extends AnyVal {
     
     inline def setInjectInto(value: js.Object): Self = StObject.set(x, "injectInto", value.asInstanceOf[js.Any])
     

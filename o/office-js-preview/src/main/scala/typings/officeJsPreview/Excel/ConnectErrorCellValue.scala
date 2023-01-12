@@ -88,7 +88,8 @@ object ConnectErrorCellValue {
     __obj.asInstanceOf[ConnectErrorCellValue]
   }
   
-  extension [Self <: ConnectErrorCellValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConnectErrorCellValue] (val x: Self) extends AnyVal {
     
     inline def setBasicType(value: error | Error): Self = StObject.set(x, "basicType", value.asInstanceOf[js.Any])
     

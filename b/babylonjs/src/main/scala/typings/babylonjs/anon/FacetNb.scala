@@ -21,7 +21,8 @@ object FacetNb {
     __obj.asInstanceOf[FacetNb]
   }
   
-  extension [Self <: FacetNb](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FacetNb] (val x: Self) extends AnyVal {
     
     inline def setDelta(value: Double): Self = StObject.set(x, "delta", value.asInstanceOf[js.Any])
     

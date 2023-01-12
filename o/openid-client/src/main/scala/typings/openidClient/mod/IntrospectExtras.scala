@@ -17,7 +17,8 @@ object IntrospectExtras {
     __obj.asInstanceOf[IntrospectExtras]
   }
   
-  extension [Self <: IntrospectExtras](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IntrospectExtras] (val x: Self) extends AnyVal {
     
     inline def setClientAssertionPayload(value: js.Object): Self = StObject.set(x, "clientAssertionPayload", value.asInstanceOf[js.Any])
     

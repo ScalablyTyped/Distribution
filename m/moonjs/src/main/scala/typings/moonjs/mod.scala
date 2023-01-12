@@ -66,7 +66,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[ComponentOptionsProperties[Props, Data, Methods]]
     }
     
-    extension [Self <: ComponentOptionsProperties[?, ?, ?], Props /* <: String */, Data, Methods](x: Self & (ComponentOptionsProperties[Props, Data, Methods])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ComponentOptionsProperties[?, ?, ?], Props /* <: String */, Data, Methods] (val x: Self & (ComponentOptionsProperties[Props, Data, Methods])) extends AnyVal {
       
       inline def setData(value: Data): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -201,7 +202,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[LifecycleHooks]
     }
     
-    extension [Self <: LifecycleHooks](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LifecycleHooks] (val x: Self) extends AnyVal {
       
       inline def setDestroyed(value: () => Unit): Self = StObject.set(x, "destroyed", js.Any.fromFunction0(value))
       
@@ -246,7 +248,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[MoonConfig]
     }
     
-    extension [Self <: MoonConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MoonConfig] (val x: Self) extends AnyVal {
       
       inline def setDelimiters(value: js.Array[String]): Self = StObject.set(x, "delimiters", value.asInstanceOf[js.Any])
       
@@ -316,7 +319,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[VDomElement]
     }
     
-    extension [Self <: VDomElement](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VDomElement] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: js.Array[VDomElement]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

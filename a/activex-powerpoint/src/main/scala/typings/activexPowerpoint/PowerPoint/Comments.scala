@@ -34,7 +34,8 @@ object Comments {
     __obj.asInstanceOf[Comments]
   }
   
-  extension [Self <: Comments](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Comments] (val x: Self) extends AnyVal {
     
     inline def setAdd(value: (Double, Double, String, String, String) => Comment): Self = StObject.set(x, "Add", js.Any.fromFunction5(value))
     

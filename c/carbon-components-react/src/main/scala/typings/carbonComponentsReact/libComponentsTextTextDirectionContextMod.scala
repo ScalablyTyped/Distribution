@@ -39,7 +39,8 @@ object libComponentsTextTextDirectionContextMod {
       __obj.asInstanceOf[TextDirectionContextData]
     }
     
-    extension [Self <: TextDirectionContextData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TextDirectionContextData] (val x: Self) extends AnyVal {
       
       inline def setDirection(value: TextDirection): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       

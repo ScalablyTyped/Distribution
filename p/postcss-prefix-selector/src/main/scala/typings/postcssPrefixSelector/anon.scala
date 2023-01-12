@@ -34,7 +34,8 @@ object anon {
       __obj.asInstanceOf[ReadonlyOptions]
     }
     
-    extension [Self <: ReadonlyOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadonlyOptions] (val x: Self) extends AnyVal {
       
       inline def setExclude(value: js.Array[String | js.RegExp]): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
       

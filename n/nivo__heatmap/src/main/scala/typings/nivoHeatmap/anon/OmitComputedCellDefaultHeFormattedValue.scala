@@ -41,7 +41,8 @@ object OmitComputedCellDefaultHeFormattedValue {
     __obj.asInstanceOf[OmitComputedCellDefaultHeFormattedValue]
   }
   
-  extension [Self <: OmitComputedCellDefaultHeFormattedValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OmitComputedCellDefaultHeFormattedValue] (val x: Self) extends AnyVal {
     
     inline def setData(value: DefaultHeatMapDatum): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

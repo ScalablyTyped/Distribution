@@ -16,7 +16,8 @@ object JQueryStatic {
     __obj.asInstanceOf[JQueryStatic]
   }
   
-  extension [Self <: JQueryStatic](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JQueryStatic] (val x: Self) extends AnyVal {
     
     inline def setSeamless(value: Static): Self = StObject.set(x, "seamless", value.asInstanceOf[js.Any])
   }

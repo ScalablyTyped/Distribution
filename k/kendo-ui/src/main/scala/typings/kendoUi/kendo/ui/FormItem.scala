@@ -44,7 +44,8 @@ object FormItem {
     __obj.asInstanceOf[FormItem]
   }
   
-  extension [Self <: FormItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FormItem] (val x: Self) extends AnyVal {
     
     inline def setAttributes(value: Any): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     

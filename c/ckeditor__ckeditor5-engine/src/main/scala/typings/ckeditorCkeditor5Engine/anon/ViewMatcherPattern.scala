@@ -23,7 +23,8 @@ object ViewMatcherPattern {
     __obj.asInstanceOf[ViewMatcherPattern]
   }
   
-  extension [Self <: ViewMatcherPattern](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ViewMatcherPattern] (val x: Self) extends AnyVal {
     
     inline def setConverterPriority(
       value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PriorityString */ Any) | Double

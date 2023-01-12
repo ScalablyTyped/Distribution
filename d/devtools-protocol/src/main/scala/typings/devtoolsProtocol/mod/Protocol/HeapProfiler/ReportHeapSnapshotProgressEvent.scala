@@ -20,7 +20,8 @@ object ReportHeapSnapshotProgressEvent {
     __obj.asInstanceOf[ReportHeapSnapshotProgressEvent]
   }
   
-  extension [Self <: ReportHeapSnapshotProgressEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReportHeapSnapshotProgressEvent] (val x: Self) extends AnyVal {
     
     inline def setDone(value: integer): Self = StObject.set(x, "done", value.asInstanceOf[js.Any])
     

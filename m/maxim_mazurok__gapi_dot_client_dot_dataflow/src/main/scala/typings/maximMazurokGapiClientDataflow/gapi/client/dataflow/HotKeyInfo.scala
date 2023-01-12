@@ -22,7 +22,8 @@ object HotKeyInfo {
     __obj.asInstanceOf[HotKeyInfo]
   }
   
-  extension [Self <: HotKeyInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HotKeyInfo] (val x: Self) extends AnyVal {
     
     inline def setHotKeyAge(value: String): Self = StObject.set(x, "hotKeyAge", value.asInstanceOf[js.Any])
     

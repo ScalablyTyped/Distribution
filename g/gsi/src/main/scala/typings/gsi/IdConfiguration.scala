@@ -60,7 +60,8 @@ object IdConfiguration {
     __obj.asInstanceOf[IdConfiguration]
   }
   
-  extension [Self <: IdConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IdConfiguration] (val x: Self) extends AnyVal {
     
     inline def setAllowed_parent_origin(value: String | js.Array[String]): Self = StObject.set(x, "allowed_parent_origin", value.asInstanceOf[js.Any])
     

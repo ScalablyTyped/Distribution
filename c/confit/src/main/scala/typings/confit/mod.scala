@@ -41,7 +41,8 @@ object mod {
       __obj.asInstanceOf[ConfigStore]
     }
     
-    extension [Self <: ConfigStore](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConfigStore] (val x: Self) extends AnyVal {
       
       inline def setGet(value: String => Any): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
       
@@ -68,7 +69,8 @@ object mod {
       __obj.asInstanceOf[options]
     }
     
-    extension [Self <: options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: options] (val x: Self) extends AnyVal {
       
       inline def setBasedir(value: String): Self = StObject.set(x, "basedir", value.asInstanceOf[js.Any])
       

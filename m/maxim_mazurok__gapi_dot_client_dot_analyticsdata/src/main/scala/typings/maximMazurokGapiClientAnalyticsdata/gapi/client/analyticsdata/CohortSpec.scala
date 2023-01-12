@@ -25,7 +25,8 @@ object CohortSpec {
     __obj.asInstanceOf[CohortSpec]
   }
   
-  extension [Self <: CohortSpec](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CohortSpec] (val x: Self) extends AnyVal {
     
     inline def setCohortReportSettings(value: CohortReportSettings): Self = StObject.set(x, "cohortReportSettings", value.asInstanceOf[js.Any])
     

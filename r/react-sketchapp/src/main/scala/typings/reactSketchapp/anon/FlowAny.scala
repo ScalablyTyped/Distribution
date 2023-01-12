@@ -17,7 +17,8 @@ object FlowAny {
     __obj.asInstanceOf[FlowAny]
   }
   
-  extension [Self <: FlowAny](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FlowAny] (val x: Self) extends AnyVal {
     
     inline def setFlow(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FileFormat.FlowConnection */ Any

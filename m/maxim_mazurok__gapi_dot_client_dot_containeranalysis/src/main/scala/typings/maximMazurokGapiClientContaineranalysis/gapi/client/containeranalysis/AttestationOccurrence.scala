@@ -29,7 +29,8 @@ object AttestationOccurrence {
     __obj.asInstanceOf[AttestationOccurrence]
   }
   
-  extension [Self <: AttestationOccurrence](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AttestationOccurrence] (val x: Self) extends AnyVal {
     
     inline def setJwts(value: js.Array[Jwt]): Self = StObject.set(x, "jwts", value.asInstanceOf[js.Any])
     

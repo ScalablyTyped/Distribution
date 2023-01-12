@@ -27,7 +27,8 @@ object ServoGeneralOption {
     __obj.asInstanceOf[ServoGeneralOption]
   }
   
-  extension [Self <: ServoGeneralOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServoGeneralOption] (val x: Self) extends AnyVal {
     
     inline def setCenter(value: Boolean): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
     

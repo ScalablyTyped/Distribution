@@ -24,7 +24,8 @@ object mod {
           __obj.asInstanceOf[Matchers[T]]
         }
         
-        extension [Self <: Matchers[?], T](x: Self & Matchers[T]) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: Matchers[?], T] (val x: Self & Matchers[T]) extends AnyVal {
           
           inline def setToEqualJSX(value: Expected[T] => Boolean): Self = StObject.set(x, "toEqualJSX", js.Any.fromFunction1(value))
           

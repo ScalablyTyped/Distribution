@@ -47,7 +47,8 @@ object DoStatement {
     __obj.asInstanceOf[DoStatement]
   }
   
-  extension [Self <: DoStatement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DoStatement] (val x: Self) extends AnyVal {
     
     inline def setCondition(value: AST): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
     

@@ -66,7 +66,8 @@ object DERInteger {
     __obj.asInstanceOf[DERInteger]
   }
   
-  extension [Self <: DERInteger](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DERInteger] (val x: Self) extends AnyVal {
     
     inline def setSetByBigInteger(value: BigInteger => Unit): Self = StObject.set(x, "setByBigInteger", js.Any.fromFunction1(value))
     

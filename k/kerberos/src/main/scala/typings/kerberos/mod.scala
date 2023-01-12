@@ -209,7 +209,8 @@ object mod {
       __obj.asInstanceOf[InitializeClientOptions]
     }
     
-    extension [Self <: InitializeClientOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InitializeClientOptions] (val x: Self) extends AnyVal {
       
       inline def setGssFlag(value: Double): Self = StObject.set(x, "gssFlag", value.asInstanceOf[js.Any])
       
@@ -239,7 +240,8 @@ object mod {
       __obj.asInstanceOf[WrapOptions]
     }
     
-    extension [Self <: WrapOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WrapOptions] (val x: Self) extends AnyVal {
       
       inline def setUser(value: String): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
       

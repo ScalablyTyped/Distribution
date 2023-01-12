@@ -18,7 +18,8 @@ object PutRequest {
     __obj.asInstanceOf[PutRequest]
   }
   
-  extension [Self <: PutRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutRequest] (val x: Self) extends AnyVal {
     
     inline def setItem(value: PutItemInputAttributeMap): Self = StObject.set(x, "Item", value.asInstanceOf[js.Any])
   }

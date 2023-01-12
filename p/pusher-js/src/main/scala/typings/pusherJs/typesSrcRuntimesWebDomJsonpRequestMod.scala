@@ -55,7 +55,8 @@ object typesSrcRuntimesWebDomJsonpRequestMod {
       __obj.asInstanceOf[JSONPRequest]
     }
     
-    extension [Self <: JSONPRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JSONPRequest] (val x: Self) extends AnyVal {
       
       inline def setCleanup(value: () => Unit): Self = StObject.set(x, "cleanup", js.Any.fromFunction0(value))
       

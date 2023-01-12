@@ -33,7 +33,8 @@ object XRView {
     __obj.asInstanceOf[XRView]
   }
   
-  extension [Self <: XRView](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XRView] (val x: Self) extends AnyVal {
     
     inline def setEye(value: XREye): Self = StObject.set(x, "eye", value.asInstanceOf[js.Any])
     

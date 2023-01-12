@@ -245,7 +245,8 @@ object mod {
       __obj.asInstanceOf[URLRecord]
     }
     
-    extension [Self <: URLRecord](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: URLRecord] (val x: Self) extends AnyVal {
       
       inline def setFragment(value: String): Self = StObject.set(x, "fragment", value.asInstanceOf[js.Any])
       

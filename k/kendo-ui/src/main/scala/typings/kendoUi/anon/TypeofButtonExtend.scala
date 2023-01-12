@@ -20,7 +20,8 @@ object TypeofButtonExtend {
     __obj.asInstanceOf[TypeofButtonExtend]
   }
   
-  extension [Self <: TypeofButtonExtend](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofButtonExtend] (val x: Self) extends AnyVal {
     
     inline def setExtend(value: js.Object => Button): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
     

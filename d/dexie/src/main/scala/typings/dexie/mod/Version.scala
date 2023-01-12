@@ -22,7 +22,8 @@ object Version {
     __obj.asInstanceOf[Version]
   }
   
-  extension [Self <: Version](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Version] (val x: Self) extends AnyVal {
     
     inline def setStores(value: StringDictionary[String | Null] => Version): Self = StObject.set(x, "stores", js.Any.fromFunction1(value))
     

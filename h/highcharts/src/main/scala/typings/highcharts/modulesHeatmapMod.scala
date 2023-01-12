@@ -1115,7 +1115,8 @@ object modulesHeatmapMod {
         __obj.asInstanceOf[Point]
       }
       
-      extension [Self <: Point](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Point] (val x: Self) extends AnyVal {
         
         inline def setPointPadding(value: Double): Self = StObject.set(x, "pointPadding", value.asInstanceOf[js.Any])
         
@@ -1149,7 +1150,8 @@ object modulesHeatmapMod {
         __obj.asInstanceOf[PointOptionsObject]
       }
       
-      extension [Self <: PointOptionsObject](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: PointOptionsObject] (val x: Self) extends AnyVal {
         
         inline def setPointPadding(value: Double): Self = StObject.set(x, "pointPadding", value.asInstanceOf[js.Any])
         

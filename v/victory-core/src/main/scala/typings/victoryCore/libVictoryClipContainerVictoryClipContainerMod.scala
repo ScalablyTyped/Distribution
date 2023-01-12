@@ -107,7 +107,8 @@ object libVictoryClipContainerVictoryClipContainerMod {
       __obj.asInstanceOf[VictoryClipContainerProps]
     }
     
-    extension [Self <: VictoryClipContainerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VictoryClipContainerProps] (val x: Self) extends AnyVal {
       
       inline def `setAria-label`(value: String): Self = StObject.set(x, "aria-label", value.asInstanceOf[js.Any])
       

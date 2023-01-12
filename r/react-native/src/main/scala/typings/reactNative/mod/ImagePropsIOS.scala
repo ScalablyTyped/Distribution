@@ -40,7 +40,8 @@ object ImagePropsIOS {
     __obj.asInstanceOf[ImagePropsIOS]
   }
   
-  extension [Self <: ImagePropsIOS](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImagePropsIOS] (val x: Self) extends AnyVal {
     
     inline def setBlurRadius(value: Double): Self = StObject.set(x, "blurRadius", value.asInstanceOf[js.Any])
     

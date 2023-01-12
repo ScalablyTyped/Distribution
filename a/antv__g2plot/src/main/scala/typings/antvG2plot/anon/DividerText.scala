@@ -24,7 +24,8 @@ object DividerText {
     __obj.asInstanceOf[DividerText]
   }
   
-  extension [Self <: DividerText](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DividerText] (val x: Self) extends AnyVal {
     
     inline def setActiveTextStyle(value: Fill): Self = StObject.set(x, "activeTextStyle", value.asInstanceOf[js.Any])
     

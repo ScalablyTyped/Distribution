@@ -40,7 +40,8 @@ object RNFetchBlobReadStream {
     __obj.asInstanceOf[RNFetchBlobReadStream]
   }
   
-  extension [Self <: RNFetchBlobReadStream](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RNFetchBlobReadStream] (val x: Self) extends AnyVal {
     
     inline def setBufferSize(value: Double): Self = StObject.set(x, "bufferSize", value.asInstanceOf[js.Any])
     

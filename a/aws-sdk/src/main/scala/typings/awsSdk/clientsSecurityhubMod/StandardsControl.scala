@@ -63,7 +63,8 @@ object StandardsControl {
     __obj.asInstanceOf[StandardsControl]
   }
   
-  extension [Self <: StandardsControl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StandardsControl] (val x: Self) extends AnyVal {
     
     inline def setControlId(value: NonEmptyString): Self = StObject.set(x, "ControlId", value.asInstanceOf[js.Any])
     

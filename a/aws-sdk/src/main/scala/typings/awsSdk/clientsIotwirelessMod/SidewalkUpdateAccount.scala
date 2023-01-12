@@ -18,7 +18,8 @@ object SidewalkUpdateAccount {
     __obj.asInstanceOf[SidewalkUpdateAccount]
   }
   
-  extension [Self <: SidewalkUpdateAccount](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SidewalkUpdateAccount] (val x: Self) extends AnyVal {
     
     inline def setAppServerPrivateKey(value: AppServerPrivateKey): Self = StObject.set(x, "AppServerPrivateKey", value.asInstanceOf[js.Any])
     

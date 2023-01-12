@@ -77,7 +77,8 @@ object libSimpleLayoutColumnGroupMod {
       __obj.asInstanceOf[ColumnGroup]
     }
     
-    extension [Self <: ColumnGroup](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColumnGroup] (val x: Self) extends AnyVal {
       
       inline def setAlign(value: String): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       

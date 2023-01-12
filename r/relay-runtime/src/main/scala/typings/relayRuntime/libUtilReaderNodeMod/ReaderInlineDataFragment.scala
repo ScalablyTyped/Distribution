@@ -21,7 +21,8 @@ object ReaderInlineDataFragment {
     __obj.asInstanceOf[ReaderInlineDataFragment]
   }
   
-  extension [Self <: ReaderInlineDataFragment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReaderInlineDataFragment] (val x: Self) extends AnyVal {
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

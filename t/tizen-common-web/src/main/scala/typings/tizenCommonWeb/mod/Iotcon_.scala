@@ -138,7 +138,8 @@ object Iotcon_ {
     __obj.asInstanceOf[Iotcon_]
   }
   
-  extension [Self <: Iotcon_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Iotcon_] (val x: Self) extends AnyVal {
     
     inline def setAddGeneratedPinListener(value: GeneratedPinCallback => Double): Self = StObject.set(x, "addGeneratedPinListener", js.Any.fromFunction1(value))
     

@@ -28,7 +28,8 @@ object Scte35SpliceInsert {
     __obj.asInstanceOf[Scte35SpliceInsert]
   }
   
-  extension [Self <: Scte35SpliceInsert](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Scte35SpliceInsert] (val x: Self) extends AnyVal {
     
     inline def setAdAvailOffset(value: integerMinNegative1000Max1000): Self = StObject.set(x, "AdAvailOffset", value.asInstanceOf[js.Any])
     

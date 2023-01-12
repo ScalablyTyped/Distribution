@@ -17,7 +17,8 @@ object IConsensusCancelBlockResponse {
     __obj.asInstanceOf[IConsensusCancelBlockResponse]
   }
   
-  extension [Self <: IConsensusCancelBlockResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IConsensusCancelBlockResponse] (val x: Self) extends AnyVal {
     
     inline def setStatus(value: Status): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     

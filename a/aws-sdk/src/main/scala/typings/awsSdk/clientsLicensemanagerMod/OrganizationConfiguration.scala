@@ -18,7 +18,8 @@ object OrganizationConfiguration {
     __obj.asInstanceOf[OrganizationConfiguration]
   }
   
-  extension [Self <: OrganizationConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OrganizationConfiguration] (val x: Self) extends AnyVal {
     
     inline def setEnableIntegration(value: Boolean): Self = StObject.set(x, "EnableIntegration", value.asInstanceOf[js.Any])
   }

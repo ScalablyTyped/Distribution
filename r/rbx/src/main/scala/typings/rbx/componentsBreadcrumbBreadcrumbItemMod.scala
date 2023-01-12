@@ -66,7 +66,8 @@ object componentsBreadcrumbBreadcrumbItemMod {
       __obj.asInstanceOf[BreadcrumbItemModifierProps]
     }
     
-    extension [Self <: BreadcrumbItemModifierProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BreadcrumbItemModifierProps] (val x: Self) extends AnyVal {
       
       inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
@@ -160,7 +161,8 @@ object componentsBreadcrumbBreadcrumbItemMod {
       __obj.asInstanceOf[BreadcrumbItemProps]
     }
     
-    extension [Self <: BreadcrumbItemProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BreadcrumbItemProps] (val x: Self) extends AnyVal {
       
       inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       

@@ -23,7 +23,8 @@ object CustomErrorResponses {
     __obj.asInstanceOf[CustomErrorResponses]
   }
   
-  extension [Self <: CustomErrorResponses](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomErrorResponses] (val x: Self) extends AnyVal {
     
     inline def setItems(value: CustomErrorResponseList): Self = StObject.set(x, "Items", value.asInstanceOf[js.Any])
     

@@ -33,7 +33,8 @@ object buildBucketHostnameMod {
       __obj.asInstanceOf[BucketHostnameParameters]
     }
     
-    extension [Self <: BucketHostnameParameters](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BucketHostnameParameters] (val x: Self) extends AnyVal {
       
       inline def setAccelerateEndpoint(value: Boolean): Self = StObject.set(x, "accelerateEndpoint", value.asInstanceOf[js.Any])
       
@@ -70,7 +71,8 @@ object buildBucketHostnameMod {
       __obj.asInstanceOf[BucketHostname_]
     }
     
-    extension [Self <: BucketHostname_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BucketHostname_] (val x: Self) extends AnyVal {
       
       inline def setBucketEndpoint(value: Boolean): Self = StObject.set(x, "bucketEndpoint", value.asInstanceOf[js.Any])
       

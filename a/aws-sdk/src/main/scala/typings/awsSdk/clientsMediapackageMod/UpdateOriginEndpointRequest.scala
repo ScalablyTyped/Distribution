@@ -62,7 +62,8 @@ object UpdateOriginEndpointRequest {
     __obj.asInstanceOf[UpdateOriginEndpointRequest]
   }
   
-  extension [Self <: UpdateOriginEndpointRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateOriginEndpointRequest] (val x: Self) extends AnyVal {
     
     inline def setAuthorization(value: Authorization): Self = StObject.set(x, "Authorization", value.asInstanceOf[js.Any])
     

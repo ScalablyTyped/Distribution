@@ -64,7 +64,8 @@ object libShapesArcMod {
       __obj.asInstanceOf[ArcConfig]
     }
     
-    extension [Self <: ArcConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ArcConfig] (val x: Self) extends AnyVal {
       
       inline def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
       

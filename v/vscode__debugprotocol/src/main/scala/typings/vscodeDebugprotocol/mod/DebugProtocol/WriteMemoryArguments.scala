@@ -28,7 +28,8 @@ object WriteMemoryArguments {
     __obj.asInstanceOf[WriteMemoryArguments]
   }
   
-  extension [Self <: WriteMemoryArguments](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WriteMemoryArguments] (val x: Self) extends AnyVal {
     
     inline def setAllowPartial(value: Boolean): Self = StObject.set(x, "allowPartial", value.asInstanceOf[js.Any])
     

@@ -16,7 +16,8 @@ object ApplicationViewTransferContext {
     __obj.asInstanceOf[ApplicationViewTransferContext]
   }
   
-  extension [Self <: ApplicationViewTransferContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApplicationViewTransferContext] (val x: Self) extends AnyVal {
     
     inline def setViewId(value: Any): Self = StObject.set(x, "viewId", value.asInstanceOf[js.Any])
   }

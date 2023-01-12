@@ -15,7 +15,8 @@ object IndicesSettingsHighlight {
     __obj.asInstanceOf[IndicesSettingsHighlight]
   }
   
-  extension [Self <: IndicesSettingsHighlight](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndicesSettingsHighlight] (val x: Self) extends AnyVal {
     
     inline def setMax_analyzed_offset(value: integer): Self = StObject.set(x, "max_analyzed_offset", value.asInstanceOf[js.Any])
     

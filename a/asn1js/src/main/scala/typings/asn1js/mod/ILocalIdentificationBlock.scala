@@ -19,7 +19,8 @@ object ILocalIdentificationBlock {
     __obj.asInstanceOf[ILocalIdentificationBlock]
   }
   
-  extension [Self <: ILocalIdentificationBlock](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ILocalIdentificationBlock] (val x: Self) extends AnyVal {
     
     inline def setIsConstructed(value: scala.Boolean): Self = StObject.set(x, "isConstructed", value.asInstanceOf[js.Any])
     

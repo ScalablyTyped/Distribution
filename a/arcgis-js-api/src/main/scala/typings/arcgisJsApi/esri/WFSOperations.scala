@@ -23,7 +23,8 @@ object WFSOperations {
     __obj.asInstanceOf[WFSOperations]
   }
   
-  extension [Self <: WFSOperations](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WFSOperations] (val x: Self) extends AnyVal {
     
     inline def setDescribeFeatureType(value: WFSOperationsDescribeFeatureType): Self = StObject.set(x, "DescribeFeatureType", value.asInstanceOf[js.Any])
     

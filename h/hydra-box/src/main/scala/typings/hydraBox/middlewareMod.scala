@@ -66,7 +66,8 @@ object middlewareMod {
       __obj.asInstanceOf[HydraBoxMiddleware]
     }
     
-    extension [Self <: HydraBoxMiddleware](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HydraBoxMiddleware] (val x: Self) extends AnyVal {
       
       inline def setOperations(
         value: (RequestHandler[
@@ -147,7 +148,8 @@ object middlewareMod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setBaseIriFromRequest(value: Boolean): Self = StObject.set(x, "baseIriFromRequest", value.asInstanceOf[js.Any])
       

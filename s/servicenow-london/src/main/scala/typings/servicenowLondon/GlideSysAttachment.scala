@@ -38,7 +38,8 @@ object GlideSysAttachment {
     __obj.asInstanceOf[GlideSysAttachment]
   }
   
-  extension [Self <: GlideSysAttachment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GlideSysAttachment] (val x: Self) extends AnyVal {
     
     inline def setCopy(value: (String, String, String, String) => Unit): Self = StObject.set(x, "copy", js.Any.fromFunction4(value))
     

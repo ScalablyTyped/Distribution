@@ -28,7 +28,8 @@ object ListResourcesRequest {
     __obj.asInstanceOf[ListResourcesRequest]
   }
   
-  extension [Self <: ListResourcesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListResourcesRequest] (val x: Self) extends AnyVal {
     
     inline def setFilterConditionList(value: FilterConditionList): Self = StObject.set(x, "FilterConditionList", value.asInstanceOf[js.Any])
     

@@ -82,7 +82,8 @@ object JdbcResultSetMetaData {
     __obj.asInstanceOf[JdbcResultSetMetaData]
   }
   
-  extension [Self <: JdbcResultSetMetaData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JdbcResultSetMetaData] (val x: Self) extends AnyVal {
     
     inline def setGetCatalogName(value: Integer => String): Self = StObject.set(x, "getCatalogName", js.Any.fromFunction1(value))
     

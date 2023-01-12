@@ -21,7 +21,8 @@ object NodesUsageRequest {
     __obj.asInstanceOf[NodesUsageRequest]
   }
   
-  extension [Self <: NodesUsageRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodesUsageRequest] (val x: Self) extends AnyVal {
     
     inline def setMetric(value: Metrics): Self = StObject.set(x, "metric", value.asInstanceOf[js.Any])
     

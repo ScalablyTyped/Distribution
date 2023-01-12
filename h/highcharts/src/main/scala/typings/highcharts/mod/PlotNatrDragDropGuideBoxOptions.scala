@@ -18,7 +18,8 @@ object PlotNatrDragDropGuideBoxOptions {
     __obj.asInstanceOf[PlotNatrDragDropGuideBoxOptions]
   }
   
-  extension [Self <: PlotNatrDragDropGuideBoxOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotNatrDragDropGuideBoxOptions] (val x: Self) extends AnyVal {
     
     inline def setDefault(value: DragDropGuideBoxOptionsObject): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     

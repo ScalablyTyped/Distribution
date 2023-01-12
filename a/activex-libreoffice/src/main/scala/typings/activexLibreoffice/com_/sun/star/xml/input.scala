@@ -138,7 +138,8 @@ object input {
       __obj.asInstanceOf[XAttributes]
     }
     
-    extension [Self <: XAttributes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XAttributes] (val x: Self) extends AnyVal {
       
       inline def setGetIndexByQName(value: String => Double): Self = StObject.set(x, "getIndexByQName", js.Any.fromFunction1(value))
       
@@ -270,7 +271,8 @@ object input {
       __obj.asInstanceOf[XElement]
     }
     
-    extension [Self <: XElement](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XElement] (val x: Self) extends AnyVal {
       
       inline def setAttributes(value: XAttributes): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
       
@@ -332,7 +334,8 @@ object input {
       __obj.asInstanceOf[XNamespaceMapping]
     }
     
-    extension [Self <: XNamespaceMapping](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XNamespaceMapping] (val x: Self) extends AnyVal {
       
       inline def setGetUidByUri(value: String => Double): Self = StObject.set(x, "getUidByUri", js.Any.fromFunction1(value))
       
@@ -391,7 +394,8 @@ object input {
       __obj.asInstanceOf[XRoot]
     }
     
-    extension [Self <: XRoot](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XRoot] (val x: Self) extends AnyVal {
       
       inline def setEndDocument(value: () => Unit): Self = StObject.set(x, "endDocument", js.Any.fromFunction0(value))
       

@@ -25,7 +25,8 @@ object SignatureLinesCollection {
     __obj.asInstanceOf[SignatureLinesCollection]
   }
   
-  extension [Self <: SignatureLinesCollection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SignatureLinesCollection] (val x: Self) extends AnyVal {
     
     inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object anon {
       __obj.asInstanceOf[Bind]
     }
     
-    extension [Self <: Bind](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Bind] (val x: Self) extends AnyVal {
       
       inline def setBind(value: (IScope, String) => Unit): Self = StObject.set(x, "bind", js.Any.fromFunction2(value))
     }
@@ -39,7 +40,8 @@ object anon {
       __obj.asInstanceOf[Email]
     }
     
-    extension [Self <: Email](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Email] (val x: Self) extends AnyVal {
       
       inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     }
@@ -60,7 +62,8 @@ object anon {
       __obj.asInstanceOf[Height]
     }
     
-    extension [Self <: Height](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Height] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -87,7 +90,8 @@ object anon {
       __obj.asInstanceOf[Id]
     }
     
-    extension [Self <: Id](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Id] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     }
@@ -110,7 +114,8 @@ object anon {
       __obj.asInstanceOf[Password]
     }
     
-    extension [Self <: Password](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Password] (val x: Self) extends AnyVal {
       
       inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
       
@@ -139,7 +144,8 @@ object anon {
       __obj.asInstanceOf[Username]
     }
     
-    extension [Self <: Username](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Username] (val x: Self) extends AnyVal {
       
       inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
     }

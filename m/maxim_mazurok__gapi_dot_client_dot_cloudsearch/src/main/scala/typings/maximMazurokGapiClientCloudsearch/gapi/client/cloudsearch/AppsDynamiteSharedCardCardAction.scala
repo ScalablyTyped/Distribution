@@ -19,7 +19,8 @@ object AppsDynamiteSharedCardCardAction {
     __obj.asInstanceOf[AppsDynamiteSharedCardCardAction]
   }
   
-  extension [Self <: AppsDynamiteSharedCardCardAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppsDynamiteSharedCardCardAction] (val x: Self) extends AnyVal {
     
     inline def setActionLabel(value: String): Self = StObject.set(x, "actionLabel", value.asInstanceOf[js.Any])
     

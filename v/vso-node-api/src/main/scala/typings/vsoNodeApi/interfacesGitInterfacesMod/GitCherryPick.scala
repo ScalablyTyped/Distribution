@@ -24,7 +24,8 @@ object GitCherryPick {
     __obj.asInstanceOf[GitCherryPick]
   }
   
-  extension [Self <: GitCherryPick](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GitCherryPick] (val x: Self) extends AnyVal {
     
     inline def setCherryPickId(value: Double): Self = StObject.set(x, "cherryPickId", value.asInstanceOf[js.Any])
   }

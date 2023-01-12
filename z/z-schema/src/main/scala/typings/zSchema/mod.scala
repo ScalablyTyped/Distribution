@@ -109,7 +109,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setAssumeAdditional(value: Boolean): Self = StObject.set(x, "assumeAdditional", value.asInstanceOf[js.Any])
       
@@ -236,7 +237,8 @@ object mod {
       __obj.asInstanceOf[Report]
     }
     
-    extension [Self <: Report](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Report] (val x: Self) extends AnyVal {
       
       inline def setAddCustomError(value: (String, String, js.Array[String], String, String) => Unit): Self = StObject.set(x, "addCustomError", js.Any.fromFunction5(value))
       
@@ -265,7 +267,8 @@ object mod {
       __obj.asInstanceOf[SchemaError]
     }
     
-    extension [Self <: SchemaError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SchemaError] (val x: Self) extends AnyVal {
       
       inline def setDetails(value: js.Array[SchemaErrorDetail]): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
       
@@ -325,7 +328,8 @@ object mod {
       __obj.asInstanceOf[SchemaErrorDetail]
     }
     
-    extension [Self <: SchemaErrorDetail](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SchemaErrorDetail] (val x: Self) extends AnyVal {
       
       inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       

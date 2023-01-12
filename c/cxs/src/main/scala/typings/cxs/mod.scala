@@ -429,7 +429,8 @@ object mod {
       __obj.asInstanceOf[CSSPseudos]
     }
     
-    extension [Self <: CSSPseudos](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CSSPseudos] (val x: Self) extends AnyVal {
       
       inline def `setColon-khtml-any-link`(value: CSSObject): Self = StObject.set(x, ":-khtml-any-link", value.asInstanceOf[js.Any])
       

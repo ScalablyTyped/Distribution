@@ -23,7 +23,8 @@ object BucketSortCriteria {
     __obj.asInstanceOf[BucketSortCriteria]
   }
   
-  extension [Self <: BucketSortCriteria](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BucketSortCriteria] (val x: Self) extends AnyVal {
     
     inline def setAttributeName(value: string): Self = StObject.set(x, "attributeName", value.asInstanceOf[js.Any])
     

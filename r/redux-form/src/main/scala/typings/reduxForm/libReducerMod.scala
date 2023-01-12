@@ -34,7 +34,8 @@ object libReducerMod extends Shortcut {
       __obj.asInstanceOf[FieldState]
     }
     
-    extension [Self <: FieldState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FieldState] (val x: Self) extends AnyVal {
       
       inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
@@ -87,7 +88,8 @@ object libReducerMod extends Shortcut {
       __obj.asInstanceOf[FormState]
     }
     
-    extension [Self <: FormState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FormState] (val x: Self) extends AnyVal {
       
       inline def setActive(value: String): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
@@ -145,7 +147,8 @@ object libReducerMod extends Shortcut {
       __obj.asInstanceOf[RegisteredFieldState]
     }
     
-    extension [Self <: RegisteredFieldState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RegisteredFieldState] (val x: Self) extends AnyVal {
       
       inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       

@@ -27,7 +27,8 @@ object GoogleActionsOrdersV3VerticalsPurchasePickupInfoCurbsideInfo {
     __obj.asInstanceOf[GoogleActionsOrdersV3VerticalsPurchasePickupInfoCurbsideInfo]
   }
   
-  extension [Self <: GoogleActionsOrdersV3VerticalsPurchasePickupInfoCurbsideInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleActionsOrdersV3VerticalsPurchasePickupInfoCurbsideInfo] (val x: Self) extends AnyVal {
     
     inline def setCurbsideFulfillmentType(value: GoogleActionsOrdersV3VerticalsPurchasePickupInfoCurbsideInfoCurbsideFulfillmentType): Self = StObject.set(x, "curbsideFulfillmentType", value.asInstanceOf[js.Any])
     

@@ -38,7 +38,8 @@ object SequenceParams {
     __obj.asInstanceOf[SequenceParams]
   }
   
-  extension [Self <: SequenceParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SequenceParams] (val x: Self) extends AnyVal {
     
     inline def setAs(value: FieldName): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
     

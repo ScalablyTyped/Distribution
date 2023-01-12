@@ -265,7 +265,8 @@ object mod {
       __obj.asInstanceOf[PixlParseOptions]
     }
     
-    extension [Self <: PixlParseOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PixlParseOptions] (val x: Self) extends AnyVal {
       
       inline def setForceArrays(value: Boolean): Self = StObject.set(x, "forceArrays", value.asInstanceOf[js.Any])
       

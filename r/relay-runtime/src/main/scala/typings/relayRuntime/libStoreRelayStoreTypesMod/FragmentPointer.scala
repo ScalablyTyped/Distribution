@@ -22,7 +22,8 @@ object FragmentPointer {
     __obj.asInstanceOf[FragmentPointer]
   }
   
-  extension [Self <: FragmentPointer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FragmentPointer] (val x: Self) extends AnyVal {
     
     inline def set__fragmentOwner(value: RequestDescriptor): Self = StObject.set(x, "__fragmentOwner", value.asInstanceOf[js.Any])
     

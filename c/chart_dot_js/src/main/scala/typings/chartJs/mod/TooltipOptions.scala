@@ -282,7 +282,8 @@ object TooltipOptions {
     __obj.asInstanceOf[TooltipOptions[TType]]
   }
   
-  extension [Self <: TooltipOptions[?], TType /* <: ChartType */](x: Self & TooltipOptions[TType]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TooltipOptions[?], TType /* <: ChartType */] (val x: Self & TooltipOptions[TType]) extends AnyVal {
     
     inline def setAnimation(value: AnimationSpec[TType]): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     

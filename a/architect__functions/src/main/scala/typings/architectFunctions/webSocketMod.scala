@@ -18,7 +18,8 @@ object webSocketMod {
       __obj.asInstanceOf[ArcWebSocket]
     }
     
-    extension [Self <: ArcWebSocket](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ArcWebSocket] (val x: Self) extends AnyVal {
       
       inline def setSend(value: Id => js.Promise[Unit]): Self = StObject.set(x, "send", js.Any.fromFunction1(value))
     }

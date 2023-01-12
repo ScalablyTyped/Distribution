@@ -33,7 +33,8 @@ object ConfigRuleComplianceFilters {
     __obj.asInstanceOf[ConfigRuleComplianceFilters]
   }
   
-  extension [Self <: ConfigRuleComplianceFilters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConfigRuleComplianceFilters] (val x: Self) extends AnyVal {
     
     inline def setAccountId(value: AccountId): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
     

@@ -43,7 +43,8 @@ object HasRings {
     __obj.asInstanceOf[HasRings]
   }
   
-  extension [Self <: HasRings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HasRings] (val x: Self) extends AnyVal {
     
     inline def setArc(value: Double): Self = StObject.set(x, "arc", value.asInstanceOf[js.Any])
     

@@ -42,7 +42,8 @@ object OptionsTopBarBackground {
     __obj.asInstanceOf[OptionsTopBarBackground]
   }
   
-  extension [Self <: OptionsTopBarBackground](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OptionsTopBarBackground] (val x: Self) extends AnyVal {
     
     inline def setBlur(value: Boolean): Self = StObject.set(x, "blur", value.asInstanceOf[js.Any])
     

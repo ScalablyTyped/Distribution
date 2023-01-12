@@ -22,7 +22,8 @@ object ParallelMachineConfig {
     __obj.asInstanceOf[ParallelMachineConfig[TContext, TStateSchema, TEvent]]
   }
   
-  extension [Self <: ParallelMachineConfig[?, ?, ?], TContext, TStateSchema /* <: StateSchema[Any] */, TEvent /* <: EventObject */](x: Self & (ParallelMachineConfig[TContext, TStateSchema, TEvent])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParallelMachineConfig[?, ?, ?], TContext, TStateSchema /* <: StateSchema[Any] */, TEvent /* <: EventObject */] (val x: Self & (ParallelMachineConfig[TContext, TStateSchema, TEvent])) extends AnyVal {
     
     inline def setInitial(value: Unit): Self = StObject.set(x, "initial", value.asInstanceOf[js.Any])
     

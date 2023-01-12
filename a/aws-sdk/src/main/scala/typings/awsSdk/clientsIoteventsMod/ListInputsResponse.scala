@@ -23,7 +23,8 @@ object ListInputsResponse {
     __obj.asInstanceOf[ListInputsResponse]
   }
   
-  extension [Self <: ListInputsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListInputsResponse] (val x: Self) extends AnyVal {
     
     inline def setInputSummaries(value: InputSummaries): Self = StObject.set(x, "inputSummaries", value.asInstanceOf[js.Any])
     

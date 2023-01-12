@@ -21,7 +21,8 @@ object BuildSerializer {
     __obj.asInstanceOf[BuildSerializer]
   }
   
-  extension [Self <: BuildSerializer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BuildSerializer] (val x: Self) extends AnyVal {
     
     inline def setBuildSerializer(value: (/* externalSchemas */ Any, /* options */ Options) => js.Function1[/* doc */ Any, String]): Self = StObject.set(x, "buildSerializer", js.Any.fromFunction2(value))
     

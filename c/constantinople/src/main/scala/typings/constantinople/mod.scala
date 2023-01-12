@@ -43,7 +43,8 @@ object mod {
       __obj.asInstanceOf[ExpressionToConstantOptions]
     }
     
-    extension [Self <: ExpressionToConstantOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExpressionToConstantOptions] (val x: Self) extends AnyVal {
       
       inline def setConstants(value: Any): Self = StObject.set(x, "constants", value.asInstanceOf[js.Any])
       
@@ -64,7 +65,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setBabylon(value: ParserOptions): Self = StObject.set(x, "babylon", value.asInstanceOf[js.Any])
       

@@ -45,7 +45,8 @@ object Dashboard {
     __obj.asInstanceOf[Dashboard]
   }
   
-  extension [Self <: Dashboard](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Dashboard] (val x: Self) extends AnyVal {
     
     inline def setGetObjects(value: () => js.Array[DashboardObject]): Self = StObject.set(x, "getObjects", js.Any.fromFunction0(value))
     

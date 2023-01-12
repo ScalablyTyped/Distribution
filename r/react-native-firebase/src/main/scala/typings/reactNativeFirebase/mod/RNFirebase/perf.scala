@@ -111,7 +111,8 @@ object perf {
       __obj.asInstanceOf[HttpMetric]
     }
     
-    extension [Self <: HttpMetric](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HttpMetric] (val x: Self) extends AnyVal {
       
       inline def setGetAttribute(value: String => js.Promise[String | Null]): Self = StObject.set(x, "getAttribute", js.Any.fromFunction1(value))
       
@@ -163,7 +164,8 @@ object perf {
       __obj.asInstanceOf[Perf]
     }
     
-    extension [Self <: Perf](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Perf] (val x: Self) extends AnyVal {
       
       inline def setNewHttpMetric(value: (String, HttpMethod) => HttpMetric): Self = StObject.set(x, "newHttpMetric", js.Any.fromFunction2(value))
       
@@ -237,7 +239,8 @@ object perf {
       __obj.asInstanceOf[Trace]
     }
     
-    extension [Self <: Trace](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Trace] (val x: Self) extends AnyVal {
       
       inline def setGetAttribute(value: String => js.Promise[String | Null]): Self = StObject.set(x, "getAttribute", js.Any.fromFunction1(value))
       

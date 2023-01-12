@@ -28,7 +28,8 @@ object ASPxClientVerticalGridBatchEditRecordRecoveringEventArgs {
     __obj.asInstanceOf[ASPxClientVerticalGridBatchEditRecordRecoveringEventArgs]
   }
   
-  extension [Self <: ASPxClientVerticalGridBatchEditRecordRecoveringEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientVerticalGridBatchEditRecordRecoveringEventArgs] (val x: Self) extends AnyVal {
     
     inline def setRecordValues(value: Any): Self = StObject.set(x, "recordValues", value.asInstanceOf[js.Any])
     

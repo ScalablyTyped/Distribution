@@ -46,7 +46,8 @@ object PolylineOptions {
     __obj.asInstanceOf[PolylineOptions]
   }
   
-  extension [Self <: PolylineOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PolylineOptions] (val x: Self) extends AnyVal {
     
     inline def setClickable(value: Boolean): Self = StObject.set(x, "clickable", value.asInstanceOf[js.Any])
     

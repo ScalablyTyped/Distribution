@@ -17,7 +17,8 @@ object PivotDiscoverRequestRestrictionOptions {
     __obj.asInstanceOf[PivotDiscoverRequestRestrictionOptions]
   }
   
-  extension [Self <: PivotDiscoverRequestRestrictionOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PivotDiscoverRequestRestrictionOptions] (val x: Self) extends AnyVal {
     
     inline def setCatalogName(value: String): Self = StObject.set(x, "catalogName", value.asInstanceOf[js.Any])
     

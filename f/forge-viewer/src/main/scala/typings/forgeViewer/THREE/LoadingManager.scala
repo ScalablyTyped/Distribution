@@ -35,7 +35,8 @@ object LoadingManager {
     __obj.asInstanceOf[LoadingManager]
   }
   
-  extension [Self <: LoadingManager](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LoadingManager] (val x: Self) extends AnyVal {
     
     inline def setItemEnd(value: String => Unit): Self = StObject.set(x, "itemEnd", js.Any.fromFunction1(value))
     

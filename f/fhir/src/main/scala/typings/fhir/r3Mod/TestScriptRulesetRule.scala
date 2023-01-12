@@ -27,7 +27,8 @@ object TestScriptRulesetRule {
     __obj.asInstanceOf[TestScriptRulesetRule]
   }
   
-  extension [Self <: TestScriptRulesetRule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TestScriptRulesetRule] (val x: Self) extends AnyVal {
     
     inline def setParam(value: js.Array[TestScriptRulesetRuleParam]): Self = StObject.set(x, "param", value.asInstanceOf[js.Any])
     

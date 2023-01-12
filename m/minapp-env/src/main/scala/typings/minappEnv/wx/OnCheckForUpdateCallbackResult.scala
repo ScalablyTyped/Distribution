@@ -16,7 +16,8 @@ object OnCheckForUpdateCallbackResult {
     __obj.asInstanceOf[OnCheckForUpdateCallbackResult]
   }
   
-  extension [Self <: OnCheckForUpdateCallbackResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnCheckForUpdateCallbackResult] (val x: Self) extends AnyVal {
     
     inline def setHasUpdate(value: Boolean): Self = StObject.set(x, "hasUpdate", value.asInstanceOf[js.Any])
   }

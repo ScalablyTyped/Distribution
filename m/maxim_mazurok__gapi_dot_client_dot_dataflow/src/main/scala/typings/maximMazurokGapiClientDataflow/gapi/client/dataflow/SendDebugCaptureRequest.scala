@@ -28,7 +28,8 @@ object SendDebugCaptureRequest {
     __obj.asInstanceOf[SendDebugCaptureRequest]
   }
   
-  extension [Self <: SendDebugCaptureRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SendDebugCaptureRequest] (val x: Self) extends AnyVal {
     
     inline def setComponentId(value: String): Self = StObject.set(x, "componentId", value.asInstanceOf[js.Any])
     

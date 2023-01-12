@@ -28,7 +28,8 @@ object DescribeGlobalNetworksRequest {
     __obj.asInstanceOf[DescribeGlobalNetworksRequest]
   }
   
-  extension [Self <: DescribeGlobalNetworksRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeGlobalNetworksRequest] (val x: Self) extends AnyVal {
     
     inline def setGlobalNetworkIds(value: GlobalNetworkIdList): Self = StObject.set(x, "GlobalNetworkIds", value.asInstanceOf[js.Any])
     

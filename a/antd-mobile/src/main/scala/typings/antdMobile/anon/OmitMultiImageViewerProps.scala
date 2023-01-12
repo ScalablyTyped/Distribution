@@ -34,7 +34,8 @@ object OmitMultiImageViewerProps {
     __obj.asInstanceOf[OmitMultiImageViewerProps]
   }
   
-  extension [Self <: OmitMultiImageViewerProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OmitMultiImageViewerProps] (val x: Self) extends AnyVal {
     
     inline def setAfterClose(value: () => Unit): Self = StObject.set(x, "afterClose", js.Any.fromFunction0(value))
     

@@ -78,7 +78,8 @@ object staticDisjointSetMod {
       __obj.asInstanceOf[StaticDisjointSet]
     }
     
-    extension [Self <: StaticDisjointSet](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StaticDisjointSet] (val x: Self) extends AnyVal {
       
       inline def setCompile(value: () => js.Array[js.Array[Double]]): Self = StObject.set(x, "compile", js.Any.fromFunction0(value))
       

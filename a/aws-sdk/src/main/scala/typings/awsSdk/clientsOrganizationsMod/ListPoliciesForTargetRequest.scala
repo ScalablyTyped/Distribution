@@ -33,7 +33,8 @@ object ListPoliciesForTargetRequest {
     __obj.asInstanceOf[ListPoliciesForTargetRequest]
   }
   
-  extension [Self <: ListPoliciesForTargetRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListPoliciesForTargetRequest] (val x: Self) extends AnyVal {
     
     inline def setFilter(value: PolicyType): Self = StObject.set(x, "Filter", value.asInstanceOf[js.Any])
     

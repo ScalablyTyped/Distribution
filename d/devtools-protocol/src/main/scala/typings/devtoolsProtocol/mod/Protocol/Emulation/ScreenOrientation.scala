@@ -32,7 +32,8 @@ object ScreenOrientation {
     __obj.asInstanceOf[ScreenOrientation]
   }
   
-  extension [Self <: ScreenOrientation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScreenOrientation] (val x: Self) extends AnyVal {
     
     inline def setAngle(value: integer): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
     

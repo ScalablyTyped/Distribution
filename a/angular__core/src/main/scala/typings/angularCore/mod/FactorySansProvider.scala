@@ -27,7 +27,8 @@ object FactorySansProvider {
     __obj.asInstanceOf[FactorySansProvider]
   }
   
-  extension [Self <: FactorySansProvider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FactorySansProvider] (val x: Self) extends AnyVal {
     
     inline def setDeps(value: js.Array[Any]): Self = StObject.set(x, "deps", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object Id {
     __obj.asInstanceOf[Id]
   }
   
-  extension [Self <: Id](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Id] (val x: Self) extends AnyVal {
     
     inline def setFile(value: Blob | js.typedarray.ArrayBuffer | String | ReadStream): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
     

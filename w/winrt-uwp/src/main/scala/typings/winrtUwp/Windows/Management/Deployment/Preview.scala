@@ -22,7 +22,8 @@ object Preview {
       __obj.asInstanceOf[InstalledClassicAppInfo]
     }
     
-    extension [Self <: InstalledClassicAppInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InstalledClassicAppInfo] (val x: Self) extends AnyVal {
       
       inline def setDisplayName(value: Any): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
       

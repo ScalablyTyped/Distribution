@@ -15,7 +15,8 @@ object QFolder {
     __obj.asInstanceOf[QFolder]
   }
   
-  extension [Self <: QFolder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QFolder] (val x: Self) extends AnyVal {
     
     inline def setQFolder(value: String): Self = StObject.set(x, "qFolder", value.asInstanceOf[js.Any])
   }

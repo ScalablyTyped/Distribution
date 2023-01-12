@@ -32,7 +32,8 @@ object JumpList {
     __obj.asInstanceOf[JumpList]
   }
   
-  extension [Self <: JumpList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JumpList] (val x: Self) extends AnyVal {
     
     inline def setItems(value: IVector[JumpListItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object NavigationEventSubscription {
     __obj.asInstanceOf[NavigationEventSubscription]
   }
   
-  extension [Self <: NavigationEventSubscription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NavigationEventSubscription] (val x: Self) extends AnyVal {
     
     inline def setRemove(value: () => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction0(value))
   }

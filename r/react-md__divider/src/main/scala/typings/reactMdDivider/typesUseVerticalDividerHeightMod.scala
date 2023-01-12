@@ -29,7 +29,8 @@ object typesUseVerticalDividerHeightMod {
       __obj.asInstanceOf[VerticalDividerHeight[E]]
     }
     
-    extension [Self <: VerticalDividerHeight[?], E /* <: HTMLElement */](x: Self & VerticalDividerHeight[E]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VerticalDividerHeight[?], E /* <: HTMLElement */] (val x: Self & VerticalDividerHeight[E]) extends AnyVal {
       
       inline def setRef(value: /* instance */ E | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
       
@@ -68,7 +69,8 @@ object typesUseVerticalDividerHeightMod {
       __obj.asInstanceOf[VerticalDividerHookOptions[E]]
     }
     
-    extension [Self <: VerticalDividerHookOptions[?], E /* <: HTMLElement */](x: Self & VerticalDividerHookOptions[E]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VerticalDividerHookOptions[?], E /* <: HTMLElement */] (val x: Self & VerticalDividerHookOptions[E]) extends AnyVal {
       
       inline def setMaxHeight(value: Double): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
       

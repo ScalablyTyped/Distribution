@@ -67,7 +67,8 @@ object coreOptionsMod {
       __obj.asInstanceOf[ActionDefaults]
     }
     
-    extension [Self <: ActionDefaults](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ActionDefaults] (val x: Self) extends AnyVal {
       
       inline def setDrag(value: DraggableOptions): Self = StObject.set(x, "drag", value.asInstanceOf[js.Any])
       
@@ -104,7 +105,8 @@ object coreOptionsMod {
       __obj.asInstanceOf[BaseDefaults]
     }
     
-    extension [Self <: BaseDefaults](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseDefaults] (val x: Self) extends AnyVal {
       
       inline def setActionChecker(value: Any): Self = StObject.set(x, "actionChecker", value.asInstanceOf[js.Any])
       
@@ -151,7 +153,8 @@ object coreOptionsMod {
       __obj.asInstanceOf[Defaults_]
     }
     
-    extension [Self <: Defaults_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Defaults_] (val x: Self) extends AnyVal {
       
       inline def setActions(value: ActionDefaults): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
       
@@ -223,7 +226,8 @@ object coreOptionsMod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setActionChecker(value: Any): Self = StObject.set(x, "actionChecker", value.asInstanceOf[js.Any])
       
@@ -370,7 +374,8 @@ object coreOptionsMod {
       __obj.asInstanceOf[OptionsArg]
     }
     
-    extension [Self <: OptionsArg](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OptionsArg] (val x: Self) extends AnyVal {
       
       inline def setActionChecker(value: Any): Self = StObject.set(x, "actionChecker", value.asInstanceOf[js.Any])
       
@@ -461,7 +466,8 @@ object coreOptionsMod {
       __obj.asInstanceOf[PerActionDefaults]
     }
     
-    extension [Self <: PerActionDefaults](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PerActionDefaults] (val x: Self) extends AnyVal {
       
       inline def setAllowFrom(value: String | Element): Self = StObject.set(x, "allowFrom", value.asInstanceOf[js.Any])
       

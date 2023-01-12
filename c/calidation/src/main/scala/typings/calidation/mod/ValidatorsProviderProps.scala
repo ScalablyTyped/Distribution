@@ -19,7 +19,8 @@ object ValidatorsProviderProps {
     __obj.asInstanceOf[ValidatorsProviderProps[T]]
   }
   
-  extension [Self <: ValidatorsProviderProps[?], T /* <: js.Object */](x: Self & ValidatorsProviderProps[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ValidatorsProviderProps[?], T /* <: js.Object */] (val x: Self & ValidatorsProviderProps[T]) extends AnyVal {
     
     inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

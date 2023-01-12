@@ -21,7 +21,8 @@ object AutoReconnectOptions {
     __obj.asInstanceOf[AutoReconnectOptions]
   }
   
-  extension [Self <: AutoReconnectOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AutoReconnectOptions] (val x: Self) extends AnyVal {
     
     inline def setInitialDelay(value: Double): Self = StObject.set(x, "initialDelay", value.asInstanceOf[js.Any])
     

@@ -33,7 +33,8 @@ object SliderAddons {
     __obj.asInstanceOf[SliderAddons]
   }
   
-  extension [Self <: SliderAddons](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SliderAddons] (val x: Self) extends AnyVal {
     
     inline def setAfterAddon(value: ReactNode): Self = StObject.set(x, "afterAddon", value.asInstanceOf[js.Any])
     

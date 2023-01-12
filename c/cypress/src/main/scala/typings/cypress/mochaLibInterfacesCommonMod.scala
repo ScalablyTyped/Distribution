@@ -107,7 +107,8 @@ object mochaLibInterfacesCommonMod {
       __obj.asInstanceOf[CreateOptions]
     }
     
-    extension [Self <: CreateOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateOptions] (val x: Self) extends AnyVal {
       
       inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
       
@@ -153,7 +154,8 @@ object mochaLibInterfacesCommonMod {
       __obj.asInstanceOf[SuiteFunctions]
     }
     
-    extension [Self <: SuiteFunctions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SuiteFunctions] (val x: Self) extends AnyVal {
       
       inline def setCreate(value: CreateOptions => Suite): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
       
@@ -187,7 +189,8 @@ object mochaLibInterfacesCommonMod {
       __obj.asInstanceOf[TestFunctions]
     }
     
-    extension [Self <: TestFunctions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TestFunctions] (val x: Self) extends AnyVal {
       
       inline def setOnly(value: (Mocha, Test) => Test): Self = StObject.set(x, "only", js.Any.fromFunction2(value))
       

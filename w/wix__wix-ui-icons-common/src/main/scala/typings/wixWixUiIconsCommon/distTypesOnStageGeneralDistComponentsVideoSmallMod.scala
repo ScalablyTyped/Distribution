@@ -27,7 +27,8 @@ object distTypesOnStageGeneralDistComponentsVideoSmallMod extends Shortcut {
       __obj.asInstanceOf[VideoSmallProps]
     }
     
-    extension [Self <: VideoSmallProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VideoSmallProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

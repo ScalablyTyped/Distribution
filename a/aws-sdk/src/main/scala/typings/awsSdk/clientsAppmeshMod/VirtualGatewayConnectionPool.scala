@@ -28,7 +28,8 @@ object VirtualGatewayConnectionPool {
     __obj.asInstanceOf[VirtualGatewayConnectionPool]
   }
   
-  extension [Self <: VirtualGatewayConnectionPool](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VirtualGatewayConnectionPool] (val x: Self) extends AnyVal {
     
     inline def setGrpc(value: VirtualGatewayGrpcConnectionPool): Self = StObject.set(x, "grpc", value.asInstanceOf[js.Any])
     

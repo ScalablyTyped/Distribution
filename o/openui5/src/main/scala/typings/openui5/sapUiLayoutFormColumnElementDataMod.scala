@@ -222,7 +222,8 @@ object sapUiLayoutFormColumnElementDataMod {
       __obj.asInstanceOf[ColumnElementDataSettings]
     }
     
-    extension [Self <: ColumnElementDataSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColumnElementDataSettings] (val x: Self) extends AnyVal {
       
       inline def setCellsLarge(value: ColumnCells | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "cellsLarge", value.asInstanceOf[js.Any])
       

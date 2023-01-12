@@ -61,7 +61,8 @@ object libStartupStartupSystemMod {
       __obj.asInstanceOf[StartupOptions]
     }
     
-    extension [Self <: StartupOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StartupOptions] (val x: Self) extends AnyVal {
       
       inline def setBackground(value: BackgroundOptions): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
       

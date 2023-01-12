@@ -31,7 +31,8 @@ object TextureProvider {
     __obj.asInstanceOf[TextureProvider]
   }
   
-  extension [Self <: TextureProvider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextureProvider] (val x: Self) extends AnyVal {
     
     inline def setGetAspect(value: () => Double): Self = StObject.set(x, "getAspect", js.Any.fromFunction0(value))
     

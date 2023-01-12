@@ -15,7 +15,8 @@ object TypeofReportRunCreatePara {
     __obj.asInstanceOf[TypeofReportRunCreatePara]
   }
   
-  extension [Self <: TypeofReportRunCreatePara](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofReportRunCreatePara] (val x: Self) extends AnyVal {
     
     inline def setParameters(value: Any): Self = StObject.set(x, "Parameters", value.asInstanceOf[js.Any])
   }

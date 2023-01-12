@@ -23,7 +23,8 @@ object Raw {
     __obj.asInstanceOf[Raw]
   }
   
-  extension [Self <: Raw](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Raw] (val x: Self) extends AnyVal {
     
     inline def setType(value: typings.cssTree.cssTreeStrings.Raw): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

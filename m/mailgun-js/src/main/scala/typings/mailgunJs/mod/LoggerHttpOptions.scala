@@ -41,7 +41,8 @@ object LoggerHttpOptions {
     __obj.asInstanceOf[LoggerHttpOptions]
   }
   
-  extension [Self <: LoggerHttpOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LoggerHttpOptions] (val x: Self) extends AnyVal {
     
     inline def setAgent(value: `false`): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
     

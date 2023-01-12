@@ -40,7 +40,8 @@ object WebGeocoordinates {
     __obj.asInstanceOf[WebGeocoordinates]
   }
   
-  extension [Self <: WebGeocoordinates](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebGeocoordinates] (val x: Self) extends AnyVal {
     
     inline def setAccuracy(value: Double): Self = StObject.set(x, "accuracy", value.asInstanceOf[js.Any])
     

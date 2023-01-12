@@ -19,7 +19,8 @@ object MenuButtonOptions {
     __obj.asInstanceOf[MenuButtonOptions]
   }
   
-  extension [Self <: MenuButtonOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MenuButtonOptions] (val x: Self) extends AnyVal {
     
     inline def setIniChildren(value: Boolean): Self = StObject.set(x, "iniChildren", value.asInstanceOf[js.Any])
     

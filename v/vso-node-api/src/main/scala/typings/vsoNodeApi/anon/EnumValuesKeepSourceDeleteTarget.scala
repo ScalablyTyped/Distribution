@@ -15,7 +15,8 @@ object EnumValuesKeepSourceDeleteTarget {
     __obj.asInstanceOf[EnumValuesKeepSourceDeleteTarget]
   }
   
-  extension [Self <: EnumValuesKeepSourceDeleteTarget](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnumValuesKeepSourceDeleteTarget] (val x: Self) extends AnyVal {
     
     inline def setEnumValues(value: KeepSourceDeleteTarget): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
   }

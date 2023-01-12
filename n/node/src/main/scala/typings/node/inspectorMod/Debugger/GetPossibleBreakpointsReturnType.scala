@@ -18,7 +18,8 @@ object GetPossibleBreakpointsReturnType {
     __obj.asInstanceOf[GetPossibleBreakpointsReturnType]
   }
   
-  extension [Self <: GetPossibleBreakpointsReturnType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetPossibleBreakpointsReturnType] (val x: Self) extends AnyVal {
     
     inline def setLocations(value: js.Array[BreakLocation]): Self = StObject.set(x, "locations", value.asInstanceOf[js.Any])
     

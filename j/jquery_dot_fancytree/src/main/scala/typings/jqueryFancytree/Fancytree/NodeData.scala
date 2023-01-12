@@ -69,7 +69,8 @@ object NodeData {
     __obj.asInstanceOf[NodeData]
   }
   
-  extension [Self <: NodeData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodeData] (val x: Self) extends AnyVal {
     
     inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     

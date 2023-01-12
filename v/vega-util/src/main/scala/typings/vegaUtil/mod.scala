@@ -322,7 +322,8 @@ object mod {
       __obj.asInstanceOf[FastMap_]
     }
     
-    extension [Self <: FastMap_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FastMap_] (val x: Self) extends AnyVal {
       
       inline def setClean(value: () => Unit): Self = StObject.set(x, "clean", js.Any.fromFunction0(value))
       

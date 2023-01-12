@@ -77,7 +77,8 @@ object GridExcelExporterSettings {
     __obj.asInstanceOf[GridExcelExporterSettings]
   }
   
-  extension [Self <: GridExcelExporterSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GridExcelExporterSettings] (val x: Self) extends AnyVal {
     
     inline def setColumnsToSkip(value: js.Array[Any]): Self = StObject.set(x, "columnsToSkip", value.asInstanceOf[js.Any])
     

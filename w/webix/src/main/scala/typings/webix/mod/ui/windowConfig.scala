@@ -91,7 +91,8 @@ object windowConfig {
     __obj.asInstanceOf[windowConfig]
   }
   
-  extension [Self <: windowConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: windowConfig] (val x: Self) extends AnyVal {
     
     inline def setAnimate(value: Boolean | obj): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     

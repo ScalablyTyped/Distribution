@@ -48,7 +48,8 @@ object ResourceMetadata {
     __obj.asInstanceOf[ResourceMetadata]
   }
   
-  extension [Self <: ResourceMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResourceMetadata] (val x: Self) extends AnyVal {
     
     inline def setId(value: ResourceIdType): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     

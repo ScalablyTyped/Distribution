@@ -18,7 +18,8 @@ object GeometriesByMaterial {
     __obj.asInstanceOf[GeometriesByMaterial]
   }
   
-  extension [Self <: GeometriesByMaterial](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GeometriesByMaterial] (val x: Self) extends AnyVal {
     
     inline def setGeometries(value: IdGeometries): Self = StObject.set(x, "geometries", value.asInstanceOf[js.Any])
     

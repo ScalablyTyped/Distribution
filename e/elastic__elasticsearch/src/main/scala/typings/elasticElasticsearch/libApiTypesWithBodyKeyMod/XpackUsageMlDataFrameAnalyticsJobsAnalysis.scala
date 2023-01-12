@@ -19,7 +19,8 @@ object XpackUsageMlDataFrameAnalyticsJobsAnalysis {
     __obj.asInstanceOf[XpackUsageMlDataFrameAnalyticsJobsAnalysis]
   }
   
-  extension [Self <: XpackUsageMlDataFrameAnalyticsJobsAnalysis](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XpackUsageMlDataFrameAnalyticsJobsAnalysis] (val x: Self) extends AnyVal {
     
     inline def setClassification(value: integer): Self = StObject.set(x, "classification", value.asInstanceOf[js.Any])
     

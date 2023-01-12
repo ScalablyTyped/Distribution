@@ -49,7 +49,8 @@ object ApplicationReport {
     __obj.asInstanceOf[ApplicationReport]
   }
   
-  extension [Self <: ApplicationReport](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApplicationReport] (val x: Self) extends AnyVal {
     
     inline def setApplicationSource(value: String): Self = StObject.set(x, "applicationSource", value.asInstanceOf[js.Any])
     

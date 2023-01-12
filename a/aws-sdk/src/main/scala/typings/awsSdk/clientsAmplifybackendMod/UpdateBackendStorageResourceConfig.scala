@@ -23,7 +23,8 @@ object UpdateBackendStorageResourceConfig {
     __obj.asInstanceOf[UpdateBackendStorageResourceConfig]
   }
   
-  extension [Self <: UpdateBackendStorageResourceConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateBackendStorageResourceConfig] (val x: Self) extends AnyVal {
     
     inline def setPermissions(value: BackendStoragePermissions): Self = StObject.set(x, "Permissions", value.asInstanceOf[js.Any])
     

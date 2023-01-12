@@ -18,7 +18,8 @@ object PartialProviderConfigurat {
     __obj.asInstanceOf[PartialProviderConfigurat]
   }
   
-  extension [Self <: PartialProviderConfigurat](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialProviderConfigurat] (val x: Self) extends AnyVal {
     
     inline def setInitFocus(value: /* callback */ js.Function0[Unit] => js.Function0[Unit] | Unit): Self = StObject.set(x, "initFocus", js.Any.fromFunction1(value))
     

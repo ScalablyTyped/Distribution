@@ -23,7 +23,8 @@ object RemoteAccessConfig {
     __obj.asInstanceOf[RemoteAccessConfig]
   }
   
-  extension [Self <: RemoteAccessConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RemoteAccessConfig] (val x: Self) extends AnyVal {
     
     inline def setEc2SshKey(value: String): Self = StObject.set(x, "ec2SshKey", value.asInstanceOf[js.Any])
     

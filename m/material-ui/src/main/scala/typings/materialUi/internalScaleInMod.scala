@@ -38,7 +38,8 @@ object internalScaleInMod {
       __obj.asInstanceOf[ScaleInProps]
     }
     
-    extension [Self <: ScaleInProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScaleInProps] (val x: Self) extends AnyVal {
       
       inline def setChildStyle(value: CSSProperties): Self = StObject.set(x, "childStyle", value.asInstanceOf[js.Any])
       

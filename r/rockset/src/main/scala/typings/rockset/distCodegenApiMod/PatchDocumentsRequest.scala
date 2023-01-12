@@ -20,7 +20,8 @@ object PatchDocumentsRequest {
     __obj.asInstanceOf[PatchDocumentsRequest]
   }
   
-  extension [Self <: PatchDocumentsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PatchDocumentsRequest] (val x: Self) extends AnyVal {
     
     inline def setData(value: js.Array[PatchDocument]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

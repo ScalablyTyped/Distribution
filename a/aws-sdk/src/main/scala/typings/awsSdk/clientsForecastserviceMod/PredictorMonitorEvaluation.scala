@@ -68,7 +68,8 @@ object PredictorMonitorEvaluation {
     __obj.asInstanceOf[PredictorMonitorEvaluation]
   }
   
-  extension [Self <: PredictorMonitorEvaluation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PredictorMonitorEvaluation] (val x: Self) extends AnyVal {
     
     inline def setEvaluationState(value: EvaluationState): Self = StObject.set(x, "EvaluationState", value.asInstanceOf[js.Any])
     

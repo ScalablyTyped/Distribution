@@ -49,7 +49,8 @@ object distLibCommandsClusterINFOMod {
       __obj.asInstanceOf[ClusterInfoReply]
     }
     
-    extension [Self <: ClusterInfoReply](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClusterInfoReply] (val x: Self) extends AnyVal {
       
       inline def setCurrentEpoch(value: Double): Self = StObject.set(x, "currentEpoch", value.asInstanceOf[js.Any])
       

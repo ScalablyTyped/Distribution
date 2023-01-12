@@ -104,7 +104,8 @@ object Statistics {
     __obj.asInstanceOf[Statistics]
   }
   
-  extension [Self <: Statistics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Statistics] (val x: Self) extends AnyVal {
     
     inline def setAverageTimeInQueue(value: Double): Self = StObject.set(x, "averageTimeInQueue", value.asInstanceOf[js.Any])
     

@@ -190,7 +190,8 @@ object libTableTableMod extends Shortcut {
       __obj.asInstanceOf[TableProps[RecordType]]
     }
     
-    extension [Self <: TableProps[?], RecordType](x: Self & TableProps[RecordType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TableProps[?], RecordType] (val x: Self & TableProps[RecordType]) extends AnyVal {
       
       inline def setBordered(value: Boolean): Self = StObject.set(x, "bordered", value.asInstanceOf[js.Any])
       

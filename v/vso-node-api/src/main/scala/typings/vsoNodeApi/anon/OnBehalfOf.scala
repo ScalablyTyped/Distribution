@@ -17,7 +17,8 @@ object OnBehalfOf {
     __obj.asInstanceOf[OnBehalfOf]
   }
   
-  extension [Self <: OnBehalfOf](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnBehalfOf] (val x: Self) extends AnyVal {
     
     inline def setOnBehalfOf(value: scala.Double): Self = StObject.set(x, "onBehalfOf", value.asInstanceOf[js.Any])
     

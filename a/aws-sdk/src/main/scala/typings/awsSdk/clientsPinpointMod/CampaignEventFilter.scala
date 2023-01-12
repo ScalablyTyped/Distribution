@@ -23,7 +23,8 @@ object CampaignEventFilter {
     __obj.asInstanceOf[CampaignEventFilter]
   }
   
-  extension [Self <: CampaignEventFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CampaignEventFilter] (val x: Self) extends AnyVal {
     
     inline def setDimensions(value: EventDimensions): Self = StObject.set(x, "Dimensions", value.asInstanceOf[js.Any])
     

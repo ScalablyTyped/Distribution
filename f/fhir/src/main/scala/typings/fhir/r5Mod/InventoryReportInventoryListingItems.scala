@@ -58,7 +58,8 @@ object InventoryReportInventoryListingItems {
     __obj.asInstanceOf[InventoryReportInventoryListingItems]
   }
   
-  extension [Self <: InventoryReportInventoryListingItems](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InventoryReportInventoryListingItems] (val x: Self) extends AnyVal {
     
     inline def setCategory(value: CodeableConcept): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object SQLTransaction {
     __obj.asInstanceOf[SQLTransaction]
   }
   
-  extension [Self <: SQLTransaction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SQLTransaction] (val x: Self) extends AnyVal {
     
     inline def setExecuteSql(value: String => SQLResultSet): Self = StObject.set(x, "executeSql", js.Any.fromFunction1(value))
   }

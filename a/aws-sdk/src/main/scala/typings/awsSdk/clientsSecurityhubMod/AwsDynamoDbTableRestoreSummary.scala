@@ -33,7 +33,8 @@ object AwsDynamoDbTableRestoreSummary {
     __obj.asInstanceOf[AwsDynamoDbTableRestoreSummary]
   }
   
-  extension [Self <: AwsDynamoDbTableRestoreSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsDynamoDbTableRestoreSummary] (val x: Self) extends AnyVal {
     
     inline def setRestoreDateTime(value: NonEmptyString): Self = StObject.set(x, "RestoreDateTime", value.asInstanceOf[js.Any])
     

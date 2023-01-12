@@ -17,7 +17,8 @@ object ApplyType {
     __obj.asInstanceOf[ApplyType]
   }
   
-  extension [Self <: ApplyType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApplyType] (val x: Self) extends AnyVal {
     
     inline def setApplyType(value: Double): Self = StObject.set(x, "ApplyType", value.asInstanceOf[js.Any])
     

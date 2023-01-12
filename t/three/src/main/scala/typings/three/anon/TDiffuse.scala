@@ -18,7 +18,8 @@ object TDiffuse {
     __obj.asInstanceOf[TDiffuse]
   }
   
-  extension [Self <: TDiffuse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TDiffuse] (val x: Self) extends AnyVal {
     
     inline def setColor(value: IUniform[Any]): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

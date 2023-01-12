@@ -27,7 +27,8 @@ object distTypesGeneralDistComponentsAlignTopSmallMod extends Shortcut {
       __obj.asInstanceOf[AlignTopSmallProps]
     }
     
-    extension [Self <: AlignTopSmallProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AlignTopSmallProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

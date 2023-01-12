@@ -17,7 +17,8 @@ object TableCurrentDataSource {
     __obj.asInstanceOf[TableCurrentDataSource[RecordType]]
   }
   
-  extension [Self <: TableCurrentDataSource[?], RecordType](x: Self & TableCurrentDataSource[RecordType]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TableCurrentDataSource[?], RecordType] (val x: Self & TableCurrentDataSource[RecordType]) extends AnyVal {
     
     inline def setAction(value: TableAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     

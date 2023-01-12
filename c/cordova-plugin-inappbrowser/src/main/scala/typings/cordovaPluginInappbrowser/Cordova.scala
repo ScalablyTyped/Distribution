@@ -15,7 +15,8 @@ object Cordova {
     __obj.asInstanceOf[Cordova]
   }
   
-  extension [Self <: Cordova](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Cordova] (val x: Self) extends AnyVal {
     
     inline def setInAppBrowser(value: InAppBrowser): Self = StObject.set(x, "InAppBrowser", value.asInstanceOf[js.Any])
   }

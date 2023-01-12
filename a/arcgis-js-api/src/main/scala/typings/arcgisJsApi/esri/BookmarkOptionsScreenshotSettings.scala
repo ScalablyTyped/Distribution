@@ -41,7 +41,8 @@ object BookmarkOptionsScreenshotSettings {
     __obj.asInstanceOf[BookmarkOptionsScreenshotSettings]
   }
   
-  extension [Self <: BookmarkOptionsScreenshotSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BookmarkOptionsScreenshotSettings] (val x: Self) extends AnyVal {
     
     inline def setArea(value: BookmarkOptionsScreenshotSettingsArea): Self = StObject.set(x, "area", value.asInstanceOf[js.Any])
     

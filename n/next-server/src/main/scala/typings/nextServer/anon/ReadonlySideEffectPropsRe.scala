@@ -25,7 +25,8 @@ object ReadonlySideEffectPropsRe {
     __obj.asInstanceOf[ReadonlySideEffectPropsRe]
   }
   
-  extension [Self <: ReadonlySideEffectPropsRe](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadonlySideEffectPropsRe] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

@@ -34,7 +34,8 @@ object MixUser {
     __obj.asInstanceOf[MixUser]
   }
   
-  extension [Self <: MixUser](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MixUser] (val x: Self) extends AnyVal {
     
     inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     

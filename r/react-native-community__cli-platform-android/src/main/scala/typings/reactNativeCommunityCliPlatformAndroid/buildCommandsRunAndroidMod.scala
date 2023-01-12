@@ -80,7 +80,8 @@ object buildCommandsRunAndroidMod {
       __obj.asInstanceOf[Flags]
     }
     
-    extension [Self <: Flags](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Flags] (val x: Self) extends AnyVal {
       
       inline def setActiveArchOnly(value: Boolean): Self = StObject.set(x, "activeArchOnly", value.asInstanceOf[js.Any])
       

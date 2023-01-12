@@ -30,7 +30,8 @@ object rippleRippleMod {
       __obj.asInstanceOf[RippleProps]
     }
     
-    extension [Self <: RippleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RippleProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

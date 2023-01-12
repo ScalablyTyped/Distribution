@@ -16,7 +16,8 @@ object UNSTABLErenderPolicy {
     __obj.asInstanceOf[UNSTABLErenderPolicy]
   }
   
-  extension [Self <: UNSTABLErenderPolicy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UNSTABLErenderPolicy] (val x: Self) extends AnyVal {
     
     inline def setUNSTABLE_renderPolicy(value: RenderPolicy): Self = StObject.set(x, "UNSTABLE_renderPolicy", value.asInstanceOf[js.Any])
     

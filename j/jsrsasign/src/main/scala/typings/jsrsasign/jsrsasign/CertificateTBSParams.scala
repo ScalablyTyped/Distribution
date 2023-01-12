@@ -56,7 +56,8 @@ object CertificateTBSParams {
     __obj.asInstanceOf[CertificateTBSParams]
   }
   
-  extension [Self <: CertificateTBSParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CertificateTBSParams] (val x: Self) extends AnyVal {
     
     inline def setExt(value: js.Array[Dictx]): Self = StObject.set(x, "ext", value.asInstanceOf[js.Any])
     

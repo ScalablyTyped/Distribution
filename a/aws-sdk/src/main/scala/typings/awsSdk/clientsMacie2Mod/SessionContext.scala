@@ -23,7 +23,8 @@ object SessionContext {
     __obj.asInstanceOf[SessionContext]
   }
   
-  extension [Self <: SessionContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SessionContext] (val x: Self) extends AnyVal {
     
     inline def setAttributes(value: SessionContextAttributes): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     

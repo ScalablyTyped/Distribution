@@ -22,7 +22,8 @@ object ResponseListUserOrganization200 {
     __obj.asInstanceOf[ResponseListUserOrganization200]
   }
   
-  extension [Self <: ResponseListUserOrganization200](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResponseListUserOrganization200] (val x: Self) extends AnyVal {
     
     inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     

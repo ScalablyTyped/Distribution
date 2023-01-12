@@ -25,7 +25,8 @@ object Radius {
     __obj.asInstanceOf[Radius[BaseToken]]
   }
   
-  extension [Self <: Radius[?], BaseToken](x: Self & Radius[BaseToken]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Radius[?], BaseToken] (val x: Self & Radius[BaseToken]) extends AnyVal {
     
     inline def setColor(value: BaseToken): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

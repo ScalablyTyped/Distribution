@@ -59,7 +59,8 @@ object mod {
       __obj.asInstanceOf[ReactTimeoutProps]
     }
     
-    extension [Self <: ReactTimeoutProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReactTimeoutProps] (val x: Self) extends AnyVal {
       
       inline def setCancelAnimationFrame(value: /* id */ Id => Unit): Self = StObject.set(x, "cancelAnimationFrame", js.Any.fromFunction1(value))
       

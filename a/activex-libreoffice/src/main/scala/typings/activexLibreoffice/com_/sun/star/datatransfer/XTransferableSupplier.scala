@@ -39,7 +39,8 @@ object XTransferableSupplier {
     __obj.asInstanceOf[XTransferableSupplier]
   }
   
-  extension [Self <: XTransferableSupplier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XTransferableSupplier] (val x: Self) extends AnyVal {
     
     inline def setGetTransferable(value: () => XTransferable): Self = StObject.set(x, "getTransferable", js.Any.fromFunction0(value))
     

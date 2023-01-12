@@ -31,7 +31,8 @@ object StellarTransaction {
     __obj.asInstanceOf[StellarTransaction]
   }
   
-  extension [Self <: StellarTransaction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StellarTransaction] (val x: Self) extends AnyVal {
     
     inline def setFee(value: Double): Self = StObject.set(x, "fee", value.asInstanceOf[js.Any])
     

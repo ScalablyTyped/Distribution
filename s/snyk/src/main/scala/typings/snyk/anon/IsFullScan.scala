@@ -15,7 +15,8 @@ object IsFullScan {
     __obj.asInstanceOf[IsFullScan]
   }
   
-  extension [Self <: IsFullScan](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IsFullScan] (val x: Self) extends AnyVal {
     
     inline def setIsFullScan(value: Boolean): Self = StObject.set(x, "isFullScan", value.asInstanceOf[js.Any])
   }

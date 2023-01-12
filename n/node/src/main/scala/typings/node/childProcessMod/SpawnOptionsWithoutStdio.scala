@@ -18,7 +18,8 @@ object SpawnOptionsWithoutStdio {
     __obj.asInstanceOf[SpawnOptionsWithoutStdio]
   }
   
-  extension [Self <: SpawnOptionsWithoutStdio](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpawnOptionsWithoutStdio] (val x: Self) extends AnyVal {
     
     inline def setStdio(value: StdioPipeNamed | js.Array[StdioPipe]): Self = StObject.set(x, "stdio", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object UpdateSMBFileShareVisibilityInput {
     __obj.asInstanceOf[UpdateSMBFileShareVisibilityInput]
   }
   
-  extension [Self <: UpdateSMBFileShareVisibilityInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateSMBFileShareVisibilityInput] (val x: Self) extends AnyVal {
     
     inline def setFileSharesVisible(value: Boolean): Self = StObject.set(x, "FileSharesVisible", value.asInstanceOf[js.Any])
     

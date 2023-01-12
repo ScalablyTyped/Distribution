@@ -33,7 +33,8 @@ object SnapshotErrorMessage {
     __obj.asInstanceOf[SnapshotErrorMessage]
   }
   
-  extension [Self <: SnapshotErrorMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SnapshotErrorMessage] (val x: Self) extends AnyVal {
     
     inline def setFailureCode(value: String): Self = StObject.set(x, "FailureCode", value.asInstanceOf[js.Any])
     

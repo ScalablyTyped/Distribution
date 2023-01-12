@@ -478,7 +478,8 @@ object distSrcTypesEnhancersMod {
       __obj.asInstanceOf[CssProps]
     }
     
-    extension [Self <: CssProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CssProps] (val x: Self) extends AnyVal {
       
       inline def setAlignContent(value: AlignContent): Self = StObject.set(x, "alignContent", value.asInstanceOf[js.Any])
       
@@ -1089,7 +1090,8 @@ object distSrcTypesEnhancersMod {
       __obj.asInstanceOf[EnhancedProp]
     }
     
-    extension [Self <: EnhancedProp](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EnhancedProp] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -1419,7 +1421,8 @@ object distSrcTypesEnhancersMod {
       __obj.asInstanceOf[EnhancerProps]
     }
     
-    extension [Self <: EnhancerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EnhancerProps] (val x: Self) extends AnyVal {
       
       inline def setAlignContent(value: AlignContent | Double | `false`): Self = StObject.set(x, "alignContent", value.asInstanceOf[js.Any])
       

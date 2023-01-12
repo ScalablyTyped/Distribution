@@ -33,7 +33,8 @@ object TestIdentityProviderResponse {
     __obj.asInstanceOf[TestIdentityProviderResponse]
   }
   
-  extension [Self <: TestIdentityProviderResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TestIdentityProviderResponse] (val x: Self) extends AnyVal {
     
     inline def setMessage(value: Message): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
     

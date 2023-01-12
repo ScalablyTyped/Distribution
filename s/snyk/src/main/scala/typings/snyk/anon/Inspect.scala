@@ -21,7 +21,8 @@ object Inspect {
     __obj.asInstanceOf[Inspect]
   }
   
-  extension [Self <: Inspect](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Inspect] (val x: Self) extends AnyVal {
     
     inline def setInspect(
       value: (Any, Any, Any) => js.Promise[

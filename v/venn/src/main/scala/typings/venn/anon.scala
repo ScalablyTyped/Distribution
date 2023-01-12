@@ -17,7 +17,8 @@ object anon {
       __obj.asInstanceOf[Setid]
     }
     
-    extension [Self <: Setid](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Setid] (val x: Self) extends AnyVal {
       
       inline def setSetid(value: String): Self = StObject.set(x, "setid", value.asInstanceOf[js.Any])
     }

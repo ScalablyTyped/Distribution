@@ -17,7 +17,8 @@ object DiagramShapeConnectorDefaultsHoverFill {
     __obj.asInstanceOf[DiagramShapeConnectorDefaultsHoverFill]
   }
   
-  extension [Self <: DiagramShapeConnectorDefaultsHoverFill](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DiagramShapeConnectorDefaultsHoverFill] (val x: Self) extends AnyVal {
     
     inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

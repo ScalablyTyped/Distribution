@@ -157,7 +157,8 @@ object Autocomplete {
       __obj.asInstanceOf[ActionBeginEventArgs]
     }
     
-    extension [Self <: ActionBeginEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ActionBeginEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -214,7 +215,8 @@ object Autocomplete {
       __obj.asInstanceOf[ActionCompleteEventArgs]
     }
     
-    extension [Self <: ActionCompleteEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ActionCompleteEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -281,7 +283,8 @@ object Autocomplete {
       __obj.asInstanceOf[ActionFailureEventArgs]
     }
     
-    extension [Self <: ActionFailureEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ActionFailureEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -346,7 +349,8 @@ object Autocomplete {
       __obj.asInstanceOf[ActionSuccessEventArgs]
     }
     
-    extension [Self <: ActionSuccessEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ActionSuccessEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -409,7 +413,8 @@ object Autocomplete {
       __obj.asInstanceOf[ChangeEventArgs]
     }
     
-    extension [Self <: ChangeEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChangeEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -450,7 +455,8 @@ object Autocomplete {
       __obj.asInstanceOf[CloseEventArgs]
     }
     
-    extension [Self <: CloseEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CloseEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -487,7 +493,8 @@ object Autocomplete {
       __obj.asInstanceOf[CreateEventArgs]
     }
     
-    extension [Self <: CreateEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -524,7 +531,8 @@ object Autocomplete {
       __obj.asInstanceOf[DestroyEventArgs]
     }
     
-    extension [Self <: DestroyEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DestroyEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -565,7 +573,8 @@ object Autocomplete {
       __obj.asInstanceOf[Fields]
     }
     
-    extension [Self <: Fields](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Fields] (val x: Self) extends AnyVal {
       
       inline def setGroupBy(value: String): Self = StObject.set(x, "groupBy", value.asInstanceOf[js.Any])
       
@@ -610,7 +619,8 @@ object Autocomplete {
       __obj.asInstanceOf[FocusInEventArgs]
     }
     
-    extension [Self <: FocusInEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FocusInEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -655,7 +665,8 @@ object Autocomplete {
       __obj.asInstanceOf[FocusOutEventArgs]
     }
     
-    extension [Self <: FocusOutEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FocusOutEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -954,7 +965,8 @@ object Autocomplete {
       __obj.asInstanceOf[typings.ejWebAll.ej.Autocomplete.Model]
     }
     
-    extension [Self <: typings.ejWebAll.ej.Autocomplete.Model](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.ejWebAll.ej.Autocomplete.Model] (val x: Self) extends AnyVal {
       
       inline def setActionBegin(value: /* e */ ActionBeginEventArgs => Unit): Self = StObject.set(x, "actionBegin", js.Any.fromFunction1(value))
       
@@ -1215,7 +1227,8 @@ object Autocomplete {
       __obj.asInstanceOf[MultiColumnSettings]
     }
     
-    extension [Self <: MultiColumnSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MultiColumnSettings] (val x: Self) extends AnyVal {
       
       inline def setColumns(value: js.Array[MultiColumnSettingsColumn]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
       
@@ -1285,7 +1298,8 @@ object Autocomplete {
       __obj.asInstanceOf[MultiColumnSettingsColumn]
     }
     
-    extension [Self <: MultiColumnSettingsColumn](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MultiColumnSettingsColumn] (val x: Self) extends AnyVal {
       
       inline def setCssClass(value: String): Self = StObject.set(x, "cssClass", value.asInstanceOf[js.Any])
       
@@ -1338,7 +1352,8 @@ object Autocomplete {
       __obj.asInstanceOf[OpenEventArgs]
     }
     
-    extension [Self <: OpenEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OpenEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -1391,7 +1406,8 @@ object Autocomplete {
       __obj.asInstanceOf[SelectEventArgs]
     }
     
-    extension [Self <: SelectEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SelectEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       

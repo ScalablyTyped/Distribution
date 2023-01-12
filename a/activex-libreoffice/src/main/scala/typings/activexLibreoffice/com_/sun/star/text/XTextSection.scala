@@ -48,7 +48,8 @@ object XTextSection {
     __obj.asInstanceOf[XTextSection]
   }
   
-  extension [Self <: XTextSection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XTextSection] (val x: Self) extends AnyVal {
     
     inline def setChildSections(value: SafeArray[XTextSection]): Self = StObject.set(x, "ChildSections", value.asInstanceOf[js.Any])
     

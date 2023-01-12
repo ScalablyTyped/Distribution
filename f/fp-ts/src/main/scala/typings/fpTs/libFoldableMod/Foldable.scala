@@ -43,7 +43,8 @@ object Foldable {
     __obj.asInstanceOf[Foldable[F]]
   }
   
-  extension [Self <: Foldable[?], F](x: Self & Foldable[F]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Foldable[?], F] (val x: Self & Foldable[F]) extends AnyVal {
     
     inline def setFoldMap(
       value: Monoid[Any] => js.Function2[

@@ -26,7 +26,8 @@ object EmbeddedOptions {
     __obj.asInstanceOf[EmbeddedOptions]
   }
   
-  extension [Self <: EmbeddedOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EmbeddedOptions] (val x: Self) extends AnyVal {
     
     inline def setContainer(value: HTMLElement): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     

@@ -38,7 +38,8 @@ object CreateHostedZoneRequest {
     __obj.asInstanceOf[CreateHostedZoneRequest]
   }
   
-  extension [Self <: CreateHostedZoneRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateHostedZoneRequest] (val x: Self) extends AnyVal {
     
     inline def setCallerReference(value: Nonce): Self = StObject.set(x, "CallerReference", value.asInstanceOf[js.Any])
     

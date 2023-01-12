@@ -78,7 +78,8 @@ object Av1Settings {
     __obj.asInstanceOf[Av1Settings]
   }
   
-  extension [Self <: Av1Settings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Av1Settings] (val x: Self) extends AnyVal {
     
     inline def setAdaptiveQuantization(value: Av1AdaptiveQuantization): Self = StObject.set(x, "AdaptiveQuantization", value.asInstanceOf[js.Any])
     

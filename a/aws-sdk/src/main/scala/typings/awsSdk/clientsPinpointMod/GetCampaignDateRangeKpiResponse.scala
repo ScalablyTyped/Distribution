@@ -15,7 +15,8 @@ object GetCampaignDateRangeKpiResponse {
     __obj.asInstanceOf[GetCampaignDateRangeKpiResponse]
   }
   
-  extension [Self <: GetCampaignDateRangeKpiResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetCampaignDateRangeKpiResponse] (val x: Self) extends AnyVal {
     
     inline def setCampaignDateRangeKpiResponse(value: CampaignDateRangeKpiResponse): Self = StObject.set(x, "CampaignDateRangeKpiResponse", value.asInstanceOf[js.Any])
   }

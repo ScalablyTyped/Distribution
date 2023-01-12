@@ -62,7 +62,8 @@ object XGraphicProvider {
     __obj.asInstanceOf[XGraphicProvider]
   }
   
-  extension [Self <: XGraphicProvider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XGraphicProvider] (val x: Self) extends AnyVal {
     
     inline def setQueryGraphic(value: PropertyValues => XGraphic): Self = StObject.set(x, "queryGraphic", js.Any.fromFunction1(value))
     

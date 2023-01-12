@@ -34,7 +34,8 @@ object SeriesNetworkgraphDataLabelsFormatterContextObject {
     __obj.asInstanceOf[SeriesNetworkgraphDataLabelsFormatterContextObject]
   }
   
-  extension [Self <: SeriesNetworkgraphDataLabelsFormatterContextObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SeriesNetworkgraphDataLabelsFormatterContextObject] (val x: Self) extends AnyVal {
     
     inline def setColor(value: ColorString): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

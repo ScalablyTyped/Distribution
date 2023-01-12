@@ -19,7 +19,8 @@ object ListJobsInput {
     __obj.asInstanceOf[ListJobsInput]
   }
   
-  extension [Self <: ListJobsInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListJobsInput] (val x: Self) extends AnyVal {
     
     inline def setAPIVersion(value: APIVersion_): Self = StObject.set(x, "APIVersion", value.asInstanceOf[js.Any])
     

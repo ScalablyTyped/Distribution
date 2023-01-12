@@ -19,7 +19,8 @@ object TimelineGroupEditableOption {
     __obj.asInstanceOf[TimelineGroupEditableOption]
   }
   
-  extension [Self <: TimelineGroupEditableOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimelineGroupEditableOption] (val x: Self) extends AnyVal {
     
     inline def setAdd(value: Boolean): Self = StObject.set(x, "add", value.asInstanceOf[js.Any])
     

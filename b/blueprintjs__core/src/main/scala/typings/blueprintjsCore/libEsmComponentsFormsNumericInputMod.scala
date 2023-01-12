@@ -261,7 +261,8 @@ object libEsmComponentsFormsNumericInputMod {
       __obj.asInstanceOf[INumericInputProps]
     }
     
-    extension [Self <: INumericInputProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: INumericInputProps] (val x: Self) extends AnyVal {
       
       inline def setAllowNumericCharactersOnly(value: Boolean): Self = StObject.set(x, "allowNumericCharactersOnly", value.asInstanceOf[js.Any])
       
@@ -365,7 +366,8 @@ object libEsmComponentsFormsNumericInputMod {
       __obj.asInstanceOf[INumericInputState]
     }
     
-    extension [Self <: INumericInputState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: INumericInputState] (val x: Self) extends AnyVal {
       
       inline def setCurrentImeInputInvalid(value: Boolean): Self = StObject.set(x, "currentImeInputInvalid", value.asInstanceOf[js.Any])
       

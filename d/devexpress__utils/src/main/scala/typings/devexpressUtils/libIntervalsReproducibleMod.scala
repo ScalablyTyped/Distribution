@@ -26,7 +26,8 @@ object libIntervalsReproducibleMod {
       __obj.asInstanceOf[IReproducibleInterval[T]]
     }
     
-    extension [Self <: IReproducibleInterval[?], T /* <: ConstInterval */](x: Self & IReproducibleInterval[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IReproducibleInterval[?], T /* <: ConstInterval */] (val x: Self & IReproducibleInterval[T]) extends AnyVal {
       
       inline def setMakeByLengthEnd(value: (Double, Double) => T): Self = StObject.set(x, "makeByLengthEnd", js.Any.fromFunction2(value))
       

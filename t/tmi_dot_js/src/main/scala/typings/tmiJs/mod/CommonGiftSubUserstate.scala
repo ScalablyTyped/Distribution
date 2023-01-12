@@ -23,7 +23,8 @@ object CommonGiftSubUserstate {
     __obj.asInstanceOf[CommonGiftSubUserstate]
   }
   
-  extension [Self <: CommonGiftSubUserstate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CommonGiftSubUserstate] (val x: Self) extends AnyVal {
     
     inline def `setMsg-param-months`(value: Boolean | String): Self = StObject.set(x, "msg-param-months", value.asInstanceOf[js.Any])
     

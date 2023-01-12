@@ -17,7 +17,8 @@ object EventStartCondition {
     __obj.asInstanceOf[EventStartCondition]
   }
   
-  extension [Self <: EventStartCondition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventStartCondition] (val x: Self) extends AnyVal {
     
     inline def setEventFilter(value: EventFilter): Self = StObject.set(x, "EventFilter", value.asInstanceOf[js.Any])
     

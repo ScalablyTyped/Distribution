@@ -17,7 +17,8 @@ object ExpandClause {
     __obj.asInstanceOf[ExpandClause]
   }
   
-  extension [Self <: ExpandClause](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExpandClause] (val x: Self) extends AnyVal {
     
     inline def setPropertyPaths(value: js.Array[String]): Self = StObject.set(x, "propertyPaths", value.asInstanceOf[js.Any])
     

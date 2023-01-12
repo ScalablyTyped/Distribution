@@ -25,7 +25,8 @@ object SerialOptions {
     __obj.asInstanceOf[SerialOptions]
   }
   
-  extension [Self <: SerialOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SerialOptions] (val x: Self) extends AnyVal {
     
     inline def setBaudRate(value: Double): Self = StObject.set(x, "baudRate", value.asInstanceOf[js.Any])
     

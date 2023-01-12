@@ -531,7 +531,8 @@ object sapUiLayoutFormFormContainerMod {
       __obj.asInstanceOf[FormContainerSettings]
     }
     
-    extension [Self <: FormContainerSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FormContainerSettings] (val x: Self) extends AnyVal {
       
       inline def setAriaLabelledBy(value: js.Array[typings.openui5.sapUiCoreControlMod.default | String]): Self = StObject.set(x, "ariaLabelledBy", value.asInstanceOf[js.Any])
       

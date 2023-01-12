@@ -30,7 +30,8 @@ object IndexingPolicy {
     __obj.asInstanceOf[IndexingPolicy]
   }
   
-  extension [Self <: IndexingPolicy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndexingPolicy] (val x: Self) extends AnyVal {
     
     inline def setAutomatic(value: Boolean): Self = StObject.set(x, "automatic", value.asInstanceOf[js.Any])
     

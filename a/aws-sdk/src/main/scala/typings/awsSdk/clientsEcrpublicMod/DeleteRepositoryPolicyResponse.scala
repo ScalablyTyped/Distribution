@@ -28,7 +28,8 @@ object DeleteRepositoryPolicyResponse {
     __obj.asInstanceOf[DeleteRepositoryPolicyResponse]
   }
   
-  extension [Self <: DeleteRepositoryPolicyResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteRepositoryPolicyResponse] (val x: Self) extends AnyVal {
     
     inline def setPolicyText(value: RepositoryPolicyText): Self = StObject.set(x, "policyText", value.asInstanceOf[js.Any])
     

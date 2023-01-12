@@ -67,7 +67,8 @@ object IDatePicker {
     __obj.asInstanceOf[IDatePicker]
   }
   
-  extension [Self <: IDatePicker](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IDatePicker] (val x: Self) extends AnyVal {
     
     inline def setDateFormat(value: String): Self = StObject.set(x, "dateFormat", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object UnshiftCommand {
     __obj.asInstanceOf[UnshiftCommand]
   }
   
-  extension [Self <: UnshiftCommand](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UnshiftCommand] (val x: Self) extends AnyVal {
     
     inline def set$unshift(value: js.Array[scala.Any]): Self = StObject.set(x, "$unshift", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object ManagedResourceSummary {
     __obj.asInstanceOf[ManagedResourceSummary]
   }
   
-  extension [Self <: ManagedResourceSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ManagedResourceSummary] (val x: Self) extends AnyVal {
     
     inline def setAssociationCount(value: BoxLong): Self = StObject.set(x, "AssociationCount", value.asInstanceOf[js.Any])
     

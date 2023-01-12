@@ -55,7 +55,8 @@ object libShellMod {
       __obj.asInstanceOf[ShellDeps]
     }
     
-    extension [Self <: ShellDeps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ShellDeps] (val x: Self) extends AnyVal {
       
       inline def setLog(value: ILogger): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
     }
@@ -72,7 +73,8 @@ object libShellMod {
       __obj.asInstanceOf[ShellOptions]
     }
     
-    extension [Self <: ShellOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ShellOptions] (val x: Self) extends AnyVal {
       
       inline def setAlterPath(value: /* p */ String => String): Self = StObject.set(x, "alterPath", js.Any.fromFunction1(value))
       

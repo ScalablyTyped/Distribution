@@ -18,7 +18,8 @@ object Warnings {
     __obj.asInstanceOf[Warnings]
   }
   
-  extension [Self <: Warnings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Warnings] (val x: Self) extends AnyVal {
     
     inline def setVersionMismatch(value: Boolean): Self = StObject.set(x, "versionMismatch", value.asInstanceOf[js.Any])
     

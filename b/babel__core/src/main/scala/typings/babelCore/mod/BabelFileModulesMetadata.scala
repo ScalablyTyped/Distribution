@@ -18,7 +18,8 @@ object BabelFileModulesMetadata {
     __obj.asInstanceOf[BabelFileModulesMetadata]
   }
   
-  extension [Self <: BabelFileModulesMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BabelFileModulesMetadata] (val x: Self) extends AnyVal {
     
     inline def setExports(value: Exported): Self = StObject.set(x, "exports", value.asInstanceOf[js.Any])
     

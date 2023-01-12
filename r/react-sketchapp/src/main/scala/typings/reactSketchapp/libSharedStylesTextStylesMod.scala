@@ -32,7 +32,8 @@ object libSharedStylesTextStylesMod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setClearExistingStyles(value: Boolean): Self = StObject.set(x, "clearExistingStyles", value.asInstanceOf[js.Any])
       
@@ -66,7 +67,8 @@ object libSharedStylesTextStylesMod {
       __obj.asInstanceOf[RegisteredStyle]
     }
     
-    extension [Self <: RegisteredStyle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RegisteredStyle] (val x: Self) extends AnyVal {
       
       inline def setCssStyle(value: TextStyle): Self = StObject.set(x, "cssStyle", value.asInstanceOf[js.Any])
       

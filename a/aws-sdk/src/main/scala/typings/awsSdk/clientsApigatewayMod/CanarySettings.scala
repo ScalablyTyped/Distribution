@@ -33,7 +33,8 @@ object CanarySettings {
     __obj.asInstanceOf[CanarySettings]
   }
   
-  extension [Self <: CanarySettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CanarySettings] (val x: Self) extends AnyVal {
     
     inline def setDeploymentId(value: String): Self = StObject.set(x, "deploymentId", value.asInstanceOf[js.Any])
     

@@ -247,7 +247,8 @@ object layersHighlightLayerMod {
       __obj.asInstanceOf[IHighlightLayerOptions]
     }
     
-    extension [Self <: IHighlightLayerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IHighlightLayerOptions] (val x: Self) extends AnyVal {
       
       inline def setAlphaBlendingMode(value: Double): Self = StObject.set(x, "alphaBlendingMode", value.asInstanceOf[js.Any])
       
@@ -294,7 +295,8 @@ object layersHighlightLayerMod {
         __obj.asInstanceOf[AbstractScene]
       }
       
-      extension [Self <: AbstractScene](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AbstractScene] (val x: Self) extends AnyVal {
         
         inline def setGetHighlightLayerByName(value: String => Nullable[HighlightLayer]): Self = StObject.set(x, "getHighlightLayerByName", js.Any.fromFunction1(value))
       }

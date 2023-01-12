@@ -20,7 +20,8 @@ object PressedPaintTokenRestingPaintToken {
     __obj.asInstanceOf[PressedPaintTokenRestingPaintToken[BaseToken]]
   }
   
-  extension [Self <: PressedPaintTokenRestingPaintToken[?], BaseToken](x: Self & PressedPaintTokenRestingPaintToken[BaseToken]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PressedPaintTokenRestingPaintToken[?], BaseToken] (val x: Self & PressedPaintTokenRestingPaintToken[BaseToken]) extends AnyVal {
     
     inline def setHover(value: PaintToken[BaseToken]): Self = StObject.set(x, "hover", value.asInstanceOf[js.Any])
     

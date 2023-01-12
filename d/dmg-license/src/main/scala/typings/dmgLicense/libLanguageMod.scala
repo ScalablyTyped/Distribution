@@ -124,7 +124,8 @@ object libLanguageMod {
         __obj.asInstanceOf[Options[T, U]]
       }
       
-      extension [Self <: Options[?, ?], T, U](x: Self & (Options[T, U])) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Options[?, ?], T, U] (val x: Self & (Options[T, U])) extends AnyVal {
         
         inline def setFilter(value: /* object */ T => Boolean): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
         
@@ -156,7 +157,8 @@ object libLanguageMod {
       __obj.asInstanceOf[Localization]
     }
     
-    extension [Self <: Localization](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Localization] (val x: Self) extends AnyVal {
       
       inline def setLang(value: LangSpecs): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
       

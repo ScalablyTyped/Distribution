@@ -38,7 +38,8 @@ object libContextWebGLExtensionsMod {
       __obj.asInstanceOf[WEBGLCompressedTextureAtc]
     }
     
-    extension [Self <: WEBGLCompressedTextureAtc](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WEBGLCompressedTextureAtc] (val x: Self) extends AnyVal {
       
       inline def setCOMPRESSED_RGBA_ATC_EXPLICIT_ALPHA_WEBGL(value: Double): Self = StObject.set(x, "COMPRESSED_RGBA_ATC_EXPLICIT_ALPHA_WEBGL", value.asInstanceOf[js.Any])
       
@@ -88,7 +89,8 @@ object libContextWebGLExtensionsMod {
       __obj.asInstanceOf[WEBGLCompressedTextureEtc]
     }
     
-    extension [Self <: WEBGLCompressedTextureEtc](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WEBGLCompressedTextureEtc] (val x: Self) extends AnyVal {
       
       inline def setCOMPRESSED_R11_EAC(value: Double): Self = StObject.set(x, "COMPRESSED_R11_EAC", value.asInstanceOf[js.Any])
       
@@ -123,7 +125,8 @@ object libContextWebGLExtensionsMod {
       __obj.asInstanceOf[WEBGLCompressedTextureEtc1]
     }
     
-    extension [Self <: WEBGLCompressedTextureEtc1](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WEBGLCompressedTextureEtc1] (val x: Self) extends AnyVal {
       
       inline def setCOMPRESSED_RGB_ETC1_WEBGL(value: Double): Self = StObject.set(x, "COMPRESSED_RGB_ETC1_WEBGL", value.asInstanceOf[js.Any])
     }
@@ -151,7 +154,8 @@ object libContextWebGLExtensionsMod {
       __obj.asInstanceOf[WEBGLCompressedTexturePvrtc]
     }
     
-    extension [Self <: WEBGLCompressedTexturePvrtc](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WEBGLCompressedTexturePvrtc] (val x: Self) extends AnyVal {
       
       inline def setCOMPRESSED_RGBA_PVRTC_2BPPV1_IMG(value: Double): Self = StObject.set(x, "COMPRESSED_RGBA_PVRTC_2BPPV1_IMG", value.asInstanceOf[js.Any])
       
@@ -208,7 +212,8 @@ object libContextWebGLExtensionsMod {
       __obj.asInstanceOf[WebGLExtensions]
     }
     
-    extension [Self <: WebGLExtensions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WebGLExtensions] (val x: Self) extends AnyVal {
       
       inline def setAnisotropicFiltering(value: EXTTextureFilterAnisotropic): Self = StObject.set(x, "anisotropicFiltering", value.asInstanceOf[js.Any])
       

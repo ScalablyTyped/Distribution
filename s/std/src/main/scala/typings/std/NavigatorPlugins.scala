@@ -33,7 +33,8 @@ object NavigatorPlugins {
     __obj.asInstanceOf[NavigatorPlugins]
   }
   
-  extension [Self <: NavigatorPlugins](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NavigatorPlugins] (val x: Self) extends AnyVal {
     
     inline def setJavaEnabled(value: () => scala.Boolean): Self = StObject.set(x, "javaEnabled", js.Any.fromFunction0(value))
     

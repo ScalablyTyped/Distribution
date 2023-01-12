@@ -78,7 +78,8 @@ object mod {
       __obj.asInstanceOf[VoiceEngine]
     }
     
-    extension [Self <: VoiceEngine](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VoiceEngine] (val x: Self) extends AnyVal {
       
       inline def setProcessFrame(value: Any => Unit): Self = StObject.set(x, "processFrame", js.Any.fromFunction1(value))
     }
@@ -107,7 +108,8 @@ object mod {
       __obj.asInstanceOf[VoiceProcessor]
     }
     
-    extension [Self <: VoiceProcessor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VoiceProcessor] (val x: Self) extends AnyVal {
       
       inline def setStart(
         value: (js.Array[VoiceEngine], Double, String, js.Function1[/* e */ js.Error, Unit], js.Function1[/* data */ Any, Unit], js.Function2[/* analyzer */ AnalyserNode, /* gainNode */ GainNode, Unit]) => Unit

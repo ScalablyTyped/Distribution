@@ -55,7 +55,8 @@ object mod {
       __obj.asInstanceOf[ParsedNodeVersion]
     }
     
-    extension [Self <: ParsedNodeVersion](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParsedNodeVersion] (val x: Self) extends AnyVal {
       
       inline def setBuild(value: String): Self = StObject.set(x, "build", value.asInstanceOf[js.Any])
       

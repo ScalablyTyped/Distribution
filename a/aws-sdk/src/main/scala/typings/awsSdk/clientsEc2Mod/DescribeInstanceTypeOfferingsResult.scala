@@ -23,7 +23,8 @@ object DescribeInstanceTypeOfferingsResult {
     __obj.asInstanceOf[DescribeInstanceTypeOfferingsResult]
   }
   
-  extension [Self <: DescribeInstanceTypeOfferingsResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeInstanceTypeOfferingsResult] (val x: Self) extends AnyVal {
     
     inline def setInstanceTypeOfferings(value: InstanceTypeOfferingsList): Self = StObject.set(x, "InstanceTypeOfferings", value.asInstanceOf[js.Any])
     

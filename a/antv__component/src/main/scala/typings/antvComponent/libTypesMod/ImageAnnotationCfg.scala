@@ -42,7 +42,8 @@ object ImageAnnotationCfg {
     __obj.asInstanceOf[ImageAnnotationCfg]
   }
   
-  extension [Self <: ImageAnnotationCfg](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImageAnnotationCfg] (val x: Self) extends AnyVal {
     
     inline def setEnd(value: Point): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     

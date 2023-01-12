@@ -30,7 +30,8 @@ object DynamicDictionaries {
     __obj.asInstanceOf[DynamicDictionaries]
   }
   
-  extension [Self <: DynamicDictionaries](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DynamicDictionaries] (val x: Self) extends AnyVal {
     
     inline def setConnection_costs(value: ConnectionCosts): Self = StObject.set(x, "connection_costs", value.asInstanceOf[js.Any])
     

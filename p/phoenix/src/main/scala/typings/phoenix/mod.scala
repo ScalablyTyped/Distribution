@@ -431,7 +431,8 @@ object mod {
       __obj.asInstanceOf[PresenceOpts]
     }
     
-    extension [Self <: PresenceOpts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PresenceOpts] (val x: Self) extends AnyVal {
       
       inline def setEvents(value: Diff): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
       
@@ -500,7 +501,8 @@ object mod {
       __obj.asInstanceOf[SocketConnectOption]
     }
     
-    extension [Self <: SocketConnectOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SocketConnectOption] (val x: Self) extends AnyVal {
       
       inline def setBinaryType(value: BinaryType): Self = StObject.set(x, "binaryType", value.asInstanceOf[js.Any])
       

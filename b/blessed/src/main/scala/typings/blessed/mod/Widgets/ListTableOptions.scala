@@ -33,7 +33,8 @@ object ListTableOptions {
     __obj.asInstanceOf[ListTableOptions]
   }
   
-  extension [Self <: ListTableOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListTableOptions] (val x: Self) extends AnyVal {
     
     inline def setData(value: js.Array[js.Array[String]]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

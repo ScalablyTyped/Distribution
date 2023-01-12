@@ -371,7 +371,8 @@ object mod {
       __obj.asInstanceOf[ModelOptions]
     }
     
-    extension [Self <: ModelOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ModelOptions] (val x: Self) extends AnyVal {
       
       inline def setCache(value: JSONGraph): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
       
@@ -426,7 +427,8 @@ object mod {
       __obj.asInstanceOf[Scheduler]
     }
     
-    extension [Self <: Scheduler](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Scheduler] (val x: Self) extends AnyVal {
       
       inline def setCatch(value: js.Function1[/* exception */ Any, Boolean] => Scheduler): Self = StObject.set(x, "catch", js.Any.fromFunction1(value))
       

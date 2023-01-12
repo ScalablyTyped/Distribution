@@ -19,7 +19,8 @@ object FetchSize {
     __obj.asInstanceOf[FetchSize]
   }
   
-  extension [Self <: FetchSize](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FetchSize] (val x: Self) extends AnyVal {
     
     inline def setFetchSize(value: Double): Self = StObject.set(x, "fetchSize", value.asInstanceOf[js.Any])
     

@@ -42,7 +42,8 @@ object EnabledElement {
     __obj.asInstanceOf[EnabledElement]
   }
   
-  extension [Self <: EnabledElement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnabledElement] (val x: Self) extends AnyVal {
     
     inline def setCanvas(value: HTMLCanvasElement): Self = StObject.set(x, "canvas", value.asInstanceOf[js.Any])
     

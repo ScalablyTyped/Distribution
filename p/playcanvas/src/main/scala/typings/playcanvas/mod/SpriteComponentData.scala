@@ -15,7 +15,8 @@ object SpriteComponentData {
     __obj.asInstanceOf[SpriteComponentData]
   }
   
-  extension [Self <: SpriteComponentData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpriteComponentData] (val x: Self) extends AnyVal {
     
     inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
   }

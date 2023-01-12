@@ -36,7 +36,8 @@ object libSliderPropsTypeMod {
       __obj.asInstanceOf[SliderPropsType]
     }
     
-    extension [Self <: SliderPropsType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SliderPropsType] (val x: Self) extends AnyVal {
       
       inline def setDefaultValue(value: Double): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
       

@@ -87,7 +87,8 @@ object mod {
       __obj.asInstanceOf[Choice]
     }
     
-    extension [Self <: Choice](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Choice] (val x: Self) extends AnyVal {
       
       inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
@@ -128,7 +129,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setOnCancel(value: (/* prompt */ PromptObject[String], /* answers */ Any) => Unit): Self = StObject.set(x, "onCancel", js.Any.fromFunction2(value))
       
@@ -203,7 +205,8 @@ object mod {
       __obj.asInstanceOf[PromptObject[T]]
     }
     
-    extension [Self <: PromptObject[?], T /* <: String */](x: Self & PromptObject[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PromptObject[?], T /* <: String */] (val x: Self & PromptObject[T]) extends AnyVal {
       
       inline def setActive(value: String | (PrevCaller[T, String | Falsy])): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       

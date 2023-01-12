@@ -125,7 +125,8 @@ object esmUtilsObservableMod {
       __obj.asInstanceOf[CompletionObserver[T, E, C]]
     }
     
-    extension [Self <: CompletionObserver[?, ?, ?], T, E, C](x: Self & (CompletionObserver[T, E, C])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CompletionObserver[?, ?, ?], T, E, C] (val x: Self & (CompletionObserver[T, E, C])) extends AnyVal {
       
       inline def setComplete(value: C => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
       
@@ -156,7 +157,8 @@ object esmUtilsObservableMod {
       __obj.asInstanceOf[ErrorObserver[T, E, C]]
     }
     
-    extension [Self <: ErrorObserver[?, ?, ?], T, E, C](x: Self & (ErrorObserver[T, E, C])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ErrorObserver[?, ?, ?], T, E, C] (val x: Self & (ErrorObserver[T, E, C])) extends AnyVal {
       
       inline def setComplete(value: /* res */ C => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
       
@@ -188,7 +190,8 @@ object esmUtilsObservableMod {
       __obj.asInstanceOf[IObserver[T, E, C]]
     }
     
-    extension [Self <: IObserver[?, ?, ?], T, E, C](x: Self & (IObserver[T, E, C])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IObserver[?, ?, ?], T, E, C] (val x: Self & (IObserver[T, E, C])) extends AnyVal {
       
       inline def setComplete(value: C => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
       
@@ -236,7 +239,8 @@ object esmUtilsObservableMod {
       __obj.asInstanceOf[ISubscriptionLike]
     }
     
-    extension [Self <: ISubscriptionLike](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISubscriptionLike] (val x: Self) extends AnyVal {
       
       inline def setClosed(value: Boolean): Self = StObject.set(x, "closed", value.asInstanceOf[js.Any])
     }
@@ -254,7 +258,8 @@ object esmUtilsObservableMod {
       __obj.asInstanceOf[IUnsubscribable]
     }
     
-    extension [Self <: IUnsubscribable](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IUnsubscribable] (val x: Self) extends AnyVal {
       
       inline def setUnsubscribe(value: () => Unit): Self = StObject.set(x, "unsubscribe", js.Any.fromFunction0(value))
     }
@@ -277,7 +282,8 @@ object esmUtilsObservableMod {
       __obj.asInstanceOf[NextObserver[T, E, C]]
     }
     
-    extension [Self <: NextObserver[?, ?, ?], T, E, C](x: Self & (NextObserver[T, E, C])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NextObserver[?, ?, ?], T, E, C] (val x: Self & (NextObserver[T, E, C])) extends AnyVal {
       
       inline def setComplete(value: /* res */ C => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
       
@@ -333,7 +339,8 @@ object esmUtilsObservableMod {
       __obj.asInstanceOf[Subscription]
     }
     
-    extension [Self <: Subscription](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Subscription] (val x: Self) extends AnyVal {
       
       inline def setAdd(value: TeardownLogic => Unit): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
       

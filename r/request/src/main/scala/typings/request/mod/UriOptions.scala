@@ -18,7 +18,8 @@ object UriOptions {
     __obj.asInstanceOf[UriOptions]
   }
   
-  extension [Self <: UriOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UriOptions] (val x: Self) extends AnyVal {
     
     inline def setUri(value: String | Url): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
   }

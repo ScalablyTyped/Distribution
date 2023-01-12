@@ -27,7 +27,8 @@ object anon {
       __obj.asInstanceOf[Accept]
     }
     
-    extension [Self <: Accept](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Accept] (val x: Self) extends AnyVal {
       
       inline def setAccept(value: js.Array[String]): Self = StObject.set(x, "accept", value.asInstanceOf[js.Any])
       
@@ -135,7 +136,8 @@ object anon {
       __obj.asInstanceOf[PartialRecord1week1month6]
     }
     
-    extension [Self <: PartialRecord1week1month6](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialRecord1week1month6] (val x: Self) extends AnyVal {
       
       inline def set1_month(value: Histogram): Self = StObject.set(x, "1_month", value.asInstanceOf[js.Any])
       
@@ -181,7 +183,8 @@ object anon {
       __obj.asInstanceOf[PartialRecord3days1week1m]
     }
     
-    extension [Self <: PartialRecord3days1week1m](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialRecord3days1week1m] (val x: Self) extends AnyVal {
       
       inline def set1_month(value: Histogram): Self = StObject.set(x, "1_month", value.asInstanceOf[js.Any])
       
@@ -225,7 +228,8 @@ object anon {
       __obj.asInstanceOf[PartialRecord6months1year]
     }
     
-    extension [Self <: PartialRecord6months1year](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialRecord6months1year] (val x: Self) extends AnyVal {
       
       inline def set1_year(value: Histogram): Self = StObject.set(x, "1_year", value.asInstanceOf[js.Any])
       

@@ -22,7 +22,8 @@ object MenuObject {
     __obj.asInstanceOf[MenuObject[T]]
   }
   
-  extension [Self <: MenuObject[?], T /* <: RowComponent | CellComponent | ColumnComponent | GroupComponent */](x: Self & MenuObject[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MenuObject[?], T /* <: RowComponent | CellComponent | ColumnComponent | GroupComponent */] (val x: Self & MenuObject[T]) extends AnyVal {
     
     inline def setAction(value: (/* e */ Any, /* component */ T) => Any): Self = StObject.set(x, "action", js.Any.fromFunction2(value))
     

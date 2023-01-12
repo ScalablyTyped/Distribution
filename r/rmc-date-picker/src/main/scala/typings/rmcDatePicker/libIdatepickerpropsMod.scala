@@ -65,7 +65,8 @@ object libIdatepickerpropsMod {
       __obj.asInstanceOf[IDatePickerProps]
     }
     
-    extension [Self <: IDatePickerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDatePickerProps] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       

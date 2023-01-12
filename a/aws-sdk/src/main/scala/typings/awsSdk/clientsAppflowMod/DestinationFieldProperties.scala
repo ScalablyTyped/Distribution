@@ -43,7 +43,8 @@ object DestinationFieldProperties {
     __obj.asInstanceOf[DestinationFieldProperties]
   }
   
-  extension [Self <: DestinationFieldProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DestinationFieldProperties] (val x: Self) extends AnyVal {
     
     inline def setIsCreatable(value: Boolean): Self = StObject.set(x, "isCreatable", value.asInstanceOf[js.Any])
     

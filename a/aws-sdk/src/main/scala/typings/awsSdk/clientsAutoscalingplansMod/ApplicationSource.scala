@@ -23,7 +23,8 @@ object ApplicationSource {
     __obj.asInstanceOf[ApplicationSource]
   }
   
-  extension [Self <: ApplicationSource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApplicationSource] (val x: Self) extends AnyVal {
     
     inline def setCloudFormationStackARN(value: XmlString): Self = StObject.set(x, "CloudFormationStackARN", value.asInstanceOf[js.Any])
     

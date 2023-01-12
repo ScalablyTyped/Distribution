@@ -42,7 +42,8 @@ object DeflateOptions {
     __obj.asInstanceOf[DeflateOptions]
   }
   
-  extension [Self <: DeflateOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeflateOptions] (val x: Self) extends AnyVal {
     
     inline def setChunkSize(value: Double): Self = StObject.set(x, "chunkSize", value.asInstanceOf[js.Any])
     

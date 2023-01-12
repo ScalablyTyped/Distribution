@@ -23,7 +23,8 @@ object Subdivisions {
     __obj.asInstanceOf[Subdivisions]
   }
   
-  extension [Self <: Subdivisions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Subdivisions] (val x: Self) extends AnyVal {
     
     inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     

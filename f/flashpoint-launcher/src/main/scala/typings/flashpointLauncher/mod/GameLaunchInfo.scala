@@ -20,7 +20,8 @@ object GameLaunchInfo {
     __obj.asInstanceOf[GameLaunchInfo]
   }
   
-  extension [Self <: GameLaunchInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GameLaunchInfo] (val x: Self) extends AnyVal {
     
     inline def setActiveData(value: GameData_): Self = StObject.set(x, "activeData", value.asInstanceOf[js.Any])
     

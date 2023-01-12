@@ -41,7 +41,8 @@ object mod {
       __obj.asInstanceOf[Conflict]
     }
     
-    extension [Self <: Conflict](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Conflict] (val x: Self) extends AnyVal {
       
       inline def setA(value: js.Array[String]): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
       
@@ -76,7 +77,8 @@ object mod {
       __obj.asInstanceOf[DiffResult]
     }
     
-    extension [Self <: DiffResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DiffResult] (val x: Self) extends AnyVal {
       
       inline def setConflict(value: Conflict): Self = StObject.set(x, "conflict", value.asInstanceOf[js.Any])
       

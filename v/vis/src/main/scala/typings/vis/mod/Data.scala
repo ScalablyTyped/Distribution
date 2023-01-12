@@ -17,7 +17,8 @@ object Data {
     __obj.asInstanceOf[Data]
   }
   
-  extension [Self <: Data](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Data] (val x: Self) extends AnyVal {
     
     inline def setEdges(value: js.Array[Edge] | DataSet[Edge]): Self = StObject.set(x, "edges", value.asInstanceOf[js.Any])
     

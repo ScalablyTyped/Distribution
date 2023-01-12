@@ -71,7 +71,8 @@ object gray {
     __obj.asInstanceOf[gray]
   }
   
-  extension [Self <: gray](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: gray] (val x: Self) extends AnyVal {
     
     inline def setAnsi16(value: GRAY_ => ANSI16_): Self = StObject.set(x, "ansi16", js.Any.fromFunction1(value))
     

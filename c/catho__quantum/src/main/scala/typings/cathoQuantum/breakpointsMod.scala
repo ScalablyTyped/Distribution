@@ -29,7 +29,8 @@ object breakpointsMod extends Shortcut {
       __obj.asInstanceOf[Breakpoints]
     }
     
-    extension [Self <: Breakpoints](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Breakpoints] (val x: Self) extends AnyVal {
       
       inline def setLarge(value: Columns): Self = StObject.set(x, "large", value.asInstanceOf[js.Any])
       

@@ -51,7 +51,8 @@ object colorRamps {
     __obj.asInstanceOf[colorRamps]
   }
   
-  extension [Self <: colorRamps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: colorRamps] (val x: Self) extends AnyVal {
     
     inline def setAll(value: () => js.Array[colorRampsColorRamp]): Self = StObject.set(x, "all", js.Any.fromFunction0(value))
     

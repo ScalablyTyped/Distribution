@@ -33,7 +33,8 @@ object RelationOption {
     __obj.asInstanceOf[RelationOption]
   }
   
-  extension [Self <: RelationOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RelationOption] (val x: Self) extends AnyVal {
     
     inline def setLinkChanged(value: /* target */ TrivialInstance => Unit): Self = StObject.set(x, "linkChanged", js.Any.fromFunction1(value))
     

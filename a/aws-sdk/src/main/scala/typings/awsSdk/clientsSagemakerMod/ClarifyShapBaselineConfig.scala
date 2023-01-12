@@ -28,7 +28,8 @@ object ClarifyShapBaselineConfig {
     __obj.asInstanceOf[ClarifyShapBaselineConfig]
   }
   
-  extension [Self <: ClarifyShapBaselineConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClarifyShapBaselineConfig] (val x: Self) extends AnyVal {
     
     inline def setMimeType(value: ClarifyMimeType): Self = StObject.set(x, "MimeType", value.asInstanceOf[js.Any])
     

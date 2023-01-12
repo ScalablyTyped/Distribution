@@ -19,7 +19,8 @@ object GetBrowserContextsResponse {
     __obj.asInstanceOf[GetBrowserContextsResponse]
   }
   
-  extension [Self <: GetBrowserContextsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetBrowserContextsResponse] (val x: Self) extends AnyVal {
     
     inline def setBrowserContextIds(value: js.Array[BrowserContextID]): Self = StObject.set(x, "browserContextIds", value.asInstanceOf[js.Any])
     

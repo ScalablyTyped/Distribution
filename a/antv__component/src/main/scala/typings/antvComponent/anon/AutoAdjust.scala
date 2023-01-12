@@ -84,7 +84,8 @@ object AutoAdjust {
     __obj.asInstanceOf[AutoAdjust]
   }
   
-  extension [Self <: AutoAdjust](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AutoAdjust] (val x: Self) extends AnyVal {
     
     inline def setAnimate(value: Boolean): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     

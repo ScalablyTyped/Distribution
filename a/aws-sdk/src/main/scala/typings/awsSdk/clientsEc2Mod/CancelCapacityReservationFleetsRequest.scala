@@ -23,7 +23,8 @@ object CancelCapacityReservationFleetsRequest {
     __obj.asInstanceOf[CancelCapacityReservationFleetsRequest]
   }
   
-  extension [Self <: CancelCapacityReservationFleetsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CancelCapacityReservationFleetsRequest] (val x: Self) extends AnyVal {
     
     inline def setCapacityReservationFleetIds(value: CapacityReservationFleetIdSet): Self = StObject.set(x, "CapacityReservationFleetIds", value.asInstanceOf[js.Any])
     

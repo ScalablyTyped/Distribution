@@ -32,7 +32,8 @@ object formidableErrorMod {
         FormidableError
       ] = js.native
     
-    extension [Self <: FormidableError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FormidableError] (val x: Self) extends AnyVal {
       
       inline def setHttpCode(value: Double): Self = StObject.set(x, "httpCode", value.asInstanceOf[js.Any])
       

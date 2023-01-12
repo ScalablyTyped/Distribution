@@ -109,7 +109,8 @@ object Contactemail {
     __obj.asInstanceOf[Contactemail]
   }
   
-  extension [Self <: Contactemail](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Contactemail] (val x: Self) extends AnyVal {
     
     inline def setAccess_tokens_url(value: String): Self = StObject.set(x, "access_tokens_url", value.asInstanceOf[js.Any])
     

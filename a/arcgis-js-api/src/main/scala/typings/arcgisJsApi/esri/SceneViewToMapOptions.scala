@@ -31,7 +31,8 @@ object SceneViewToMapOptions {
     __obj.asInstanceOf[SceneViewToMapOptions]
   }
   
-  extension [Self <: SceneViewToMapOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SceneViewToMapOptions] (val x: Self) extends AnyVal {
     
     inline def setExclude(
       value: (js.Array[IntersectItem | Collection[IntersectItem] | js.Array[IntersectItem] | Ground]) | Collection[IntersectItem] | IntersectItem

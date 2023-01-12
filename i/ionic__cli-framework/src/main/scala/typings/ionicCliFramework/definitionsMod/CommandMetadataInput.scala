@@ -19,7 +19,8 @@ object CommandMetadataInput {
     __obj.asInstanceOf[CommandMetadataInput]
   }
   
-  extension [Self <: CommandMetadataInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CommandMetadataInput] (val x: Self) extends AnyVal {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

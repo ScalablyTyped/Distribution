@@ -38,7 +38,8 @@ object PartialCompileDataFields {
     __obj.asInstanceOf[PartialCompileDataFields]
   }
   
-  extension [Self <: PartialCompileDataFields](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialCompileDataFields] (val x: Self) extends AnyVal {
     
     inline def setCharacterReferenceType(value: String): Self = StObject.set(x, "characterReferenceType", value.asInstanceOf[js.Any])
     

@@ -26,7 +26,8 @@ object PlaceChooserViewSetupOptions {
     __obj.asInstanceOf[PlaceChooserViewSetupOptions]
   }
   
-  extension [Self <: PlaceChooserViewSetupOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlaceChooserViewSetupOptions] (val x: Self) extends AnyVal {
     
     inline def setLayoutMode(value: PlaceChooserLayoutMode): Self = StObject.set(x, "layoutMode", value.asInstanceOf[js.Any])
     

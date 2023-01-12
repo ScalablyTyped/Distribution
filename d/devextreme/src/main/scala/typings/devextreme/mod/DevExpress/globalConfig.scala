@@ -77,7 +77,8 @@ object globalConfig {
     __obj.asInstanceOf[globalConfig]
   }
   
-  extension [Self <: globalConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: globalConfig] (val x: Self) extends AnyVal {
     
     inline def setDecimalSeparator(value: String): Self = StObject.set(x, "decimalSeparator", value.asInstanceOf[js.Any])
     

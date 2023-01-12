@@ -25,7 +25,8 @@ object SecurityVendorInformation {
     __obj.asInstanceOf[SecurityVendorInformation]
   }
   
-  extension [Self <: SecurityVendorInformation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SecurityVendorInformation] (val x: Self) extends AnyVal {
     
     inline def setProvider(value: NullableOption[String]): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object FragmentShaderSource {
     __obj.asInstanceOf[FragmentShaderSource]
   }
   
-  extension [Self <: FragmentShaderSource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FragmentShaderSource] (val x: Self) extends AnyVal {
     
     inline def setFragmentShaderSource(value: String): Self = StObject.set(x, "fragmentShaderSource", value.asInstanceOf[js.Any])
     

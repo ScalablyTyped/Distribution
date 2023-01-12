@@ -20,7 +20,8 @@ object Enter {
     __obj.asInstanceOf[Enter[Datum]]
   }
   
-  extension [Self <: Enter[?], Datum /* <: DatumWithArc */](x: Self & Enter[Datum]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Enter[?], Datum /* <: DatumWithArc */] (val x: Self & Enter[Datum]) extends AnyVal {
     
     inline def setEnter(value: Datum => EndAngle): Self = StObject.set(x, "enter", js.Any.fromFunction1(value))
     

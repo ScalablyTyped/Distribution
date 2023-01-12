@@ -44,7 +44,8 @@ object JsxScriptElementProps {
     __obj.asInstanceOf[JsxScriptElementProps]
   }
   
-  extension [Self <: JsxScriptElementProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JsxScriptElementProps] (val x: Self) extends AnyVal {
     
     inline def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
     

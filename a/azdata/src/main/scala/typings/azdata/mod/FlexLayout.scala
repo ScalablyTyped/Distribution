@@ -64,7 +64,8 @@ object FlexLayout {
     __obj.asInstanceOf[FlexLayout]
   }
   
-  extension [Self <: FlexLayout](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FlexLayout] (val x: Self) extends AnyVal {
     
     inline def setAlignContent(value: AlignContentType): Self = StObject.set(x, "alignContent", value.asInstanceOf[js.Any])
     

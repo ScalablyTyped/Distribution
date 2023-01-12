@@ -20,7 +20,8 @@ object mod {
       __obj.asInstanceOf[Datum]
     }
     
-    extension [Self <: Datum](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Datum] (val x: Self) extends AnyVal {
       
       inline def setEllipsoid(value: Ellipsoid): Self = StObject.set(x, "ellipsoid", value.asInstanceOf[js.Any])
       
@@ -47,7 +48,8 @@ object mod {
       __obj.asInstanceOf[Ellipsoid]
     }
     
-    extension [Self <: Ellipsoid](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Ellipsoid] (val x: Self) extends AnyVal {
       
       inline def setA(value: Double): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
       
@@ -88,7 +90,8 @@ object mod {
       __obj.asInstanceOf[GeoJSON]
     }
     
-    extension [Self <: GeoJSON](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GeoJSON] (val x: Self) extends AnyVal {
       
       inline def setCoordinates(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "coordinates", value.asInstanceOf[js.Any])
       

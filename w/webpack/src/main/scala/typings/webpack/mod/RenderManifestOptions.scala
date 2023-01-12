@@ -48,7 +48,8 @@ object RenderManifestOptions {
     __obj.asInstanceOf[RenderManifestOptions]
   }
   
-  extension [Self <: RenderManifestOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RenderManifestOptions] (val x: Self) extends AnyVal {
     
     inline def setChunk(value: Chunk): Self = StObject.set(x, "chunk", value.asInstanceOf[js.Any])
     

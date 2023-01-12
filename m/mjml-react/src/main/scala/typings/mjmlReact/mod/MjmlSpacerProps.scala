@@ -26,7 +26,8 @@ object MjmlSpacerProps {
     __obj.asInstanceOf[MjmlSpacerProps]
   }
   
-  extension [Self <: MjmlSpacerProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MjmlSpacerProps] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

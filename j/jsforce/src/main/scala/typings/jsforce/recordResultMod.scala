@@ -24,7 +24,8 @@ object recordResultMod {
       __obj.asInstanceOf[Error]
     }
     
-    extension [Self <: Error](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Error] (val x: Self) extends AnyVal {
       
       inline def setFields(value: js.Array[String]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
       
@@ -51,7 +52,8 @@ object recordResultMod {
       __obj.asInstanceOf[ErrorResult]
     }
     
-    extension [Self <: ErrorResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ErrorResult] (val x: Self) extends AnyVal {
       
       inline def setErrors(value: js.Array[Error]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
       
@@ -94,7 +96,8 @@ object recordResultMod {
       __obj.asInstanceOf[SuccessResult]
     }
     
-    extension [Self <: SuccessResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SuccessResult] (val x: Self) extends AnyVal {
       
       inline def setId(value: SalesforceId): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       

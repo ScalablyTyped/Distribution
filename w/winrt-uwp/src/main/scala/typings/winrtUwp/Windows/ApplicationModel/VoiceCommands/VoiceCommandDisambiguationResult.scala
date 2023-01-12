@@ -17,7 +17,8 @@ object VoiceCommandDisambiguationResult {
     __obj.asInstanceOf[VoiceCommandDisambiguationResult]
   }
   
-  extension [Self <: VoiceCommandDisambiguationResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VoiceCommandDisambiguationResult] (val x: Self) extends AnyVal {
     
     inline def setSelectedItem(value: VoiceCommandContentTile): Self = StObject.set(x, "selectedItem", value.asInstanceOf[js.Any])
   }

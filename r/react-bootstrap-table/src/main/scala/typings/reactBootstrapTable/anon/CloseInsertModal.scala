@@ -50,7 +50,8 @@ object CloseInsertModal {
     __obj.asInstanceOf[CloseInsertModal]
   }
   
-  extension [Self <: CloseInsertModal](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CloseInsertModal] (val x: Self) extends AnyVal {
     
     inline def setCloseInsertModal(value: () => Unit): Self = StObject.set(x, "closeInsertModal", js.Any.fromFunction0(value))
     

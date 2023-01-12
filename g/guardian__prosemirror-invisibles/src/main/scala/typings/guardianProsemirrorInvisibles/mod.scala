@@ -57,7 +57,8 @@ object mod {
       __obj.asInstanceOf[InvisiblesOptions]
     }
     
-    extension [Self <: InvisiblesOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InvisiblesOptions] (val x: Self) extends AnyVal {
       
       inline def setDisplayLineEndSelection(value: Boolean): Self = StObject.set(x, "displayLineEndSelection", value.asInstanceOf[js.Any])
       

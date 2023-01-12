@@ -43,7 +43,8 @@ object EventRootProps {
     __obj.asInstanceOf[EventRootProps]
   }
   
-  extension [Self <: EventRootProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventRootProps] (val x: Self) extends AnyVal {
     
     inline def setChildren(
       value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Ref<any> */ Any, js.Array[String], /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Ref<any> */ Any, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ComponentChildren */ Any, EventContentArg) => Any

@@ -38,7 +38,8 @@ object CreateViewInput {
     __obj.asInstanceOf[CreateViewInput]
   }
   
-  extension [Self <: CreateViewInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateViewInput] (val x: Self) extends AnyVal {
     
     inline def setClientToken(value: CreateViewInputClientTokenString): Self = StObject.set(x, "ClientToken", value.asInstanceOf[js.Any])
     

@@ -31,7 +31,8 @@ object MlPutTrainedModelTrainedModelTreeNode {
     __obj.asInstanceOf[MlPutTrainedModelTrainedModelTreeNode]
   }
   
-  extension [Self <: MlPutTrainedModelTrainedModelTreeNode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlPutTrainedModelTrainedModelTreeNode] (val x: Self) extends AnyVal {
     
     inline def setDecision_type(value: String): Self = StObject.set(x, "decision_type", value.asInstanceOf[js.Any])
     

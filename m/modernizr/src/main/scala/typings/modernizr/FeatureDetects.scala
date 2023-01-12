@@ -869,7 +869,8 @@ object FeatureDetects {
     __obj.asInstanceOf[FeatureDetects]
   }
   
-  extension [Self <: FeatureDetects](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FeatureDetects] (val x: Self) extends AnyVal {
     
     inline def setAdownload(value: Boolean): Self = StObject.set(x, "adownload", value.asInstanceOf[js.Any])
     

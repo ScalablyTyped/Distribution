@@ -20,7 +20,8 @@ object MappingVersionProperty {
     __obj.asInstanceOf[MappingVersionProperty]
   }
   
-  extension [Self <: MappingVersionProperty](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MappingVersionProperty] (val x: Self) extends AnyVal {
     
     inline def setType(value: version): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

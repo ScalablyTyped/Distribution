@@ -23,7 +23,8 @@ object Adjustment {
     __obj.asInstanceOf[Adjustment]
   }
   
-  extension [Self <: Adjustment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Adjustment] (val x: Self) extends AnyVal {
     
     inline def setMetric(value: NonEmptyString): Self = StObject.set(x, "Metric", value.asInstanceOf[js.Any])
     

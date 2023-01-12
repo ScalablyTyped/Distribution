@@ -34,7 +34,8 @@ object ElevationProfileLineQuerySource {
     __obj.asInstanceOf[ElevationProfileLineQuerySource]
   }
   
-  extension [Self <: ElevationProfileLineQuerySource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ElevationProfileLineQuerySource] (val x: Self) extends AnyVal {
     
     inline def setQueryElevation(
       value: (/* geometry */ Point | Multipoint | Polyline, /* options */ js.UndefOr[Any]) => js.Promise[ElevationLayerElevationQueryResult]

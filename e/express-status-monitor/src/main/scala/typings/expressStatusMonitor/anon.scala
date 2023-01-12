@@ -30,7 +30,8 @@ object anon {
       __obj.asInstanceOf[Cpu]
     }
     
-    extension [Self <: Cpu](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Cpu] (val x: Self) extends AnyVal {
       
       inline def setCpu(value: Boolean): Self = StObject.set(x, "cpu", value.asInstanceOf[js.Any])
       

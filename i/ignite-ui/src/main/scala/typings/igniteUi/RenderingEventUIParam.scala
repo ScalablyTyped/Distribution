@@ -23,7 +23,8 @@ object RenderingEventUIParam {
     __obj.asInstanceOf[RenderingEventUIParam]
   }
   
-  extension [Self <: RenderingEventUIParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RenderingEventUIParam] (val x: Self) extends AnyVal {
     
     inline def setElement(value: Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     

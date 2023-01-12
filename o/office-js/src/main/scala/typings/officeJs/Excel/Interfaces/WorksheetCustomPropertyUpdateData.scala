@@ -22,7 +22,8 @@ object WorksheetCustomPropertyUpdateData {
     __obj.asInstanceOf[WorksheetCustomPropertyUpdateData]
   }
   
-  extension [Self <: WorksheetCustomPropertyUpdateData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorksheetCustomPropertyUpdateData] (val x: Self) extends AnyVal {
     
     inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     

@@ -30,7 +30,8 @@ object RemoveDuplicatesResultData {
     __obj.asInstanceOf[RemoveDuplicatesResultData]
   }
   
-  extension [Self <: RemoveDuplicatesResultData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RemoveDuplicatesResultData] (val x: Self) extends AnyVal {
     
     inline def setRemoved(value: Double): Self = StObject.set(x, "removed", value.asInstanceOf[js.Any])
     

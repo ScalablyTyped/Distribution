@@ -28,7 +28,8 @@ object DurationInputObject {
     __obj.asInstanceOf[DurationInputObject]
   }
   
-  extension [Self <: DurationInputObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DurationInputObject] (val x: Self) extends AnyVal {
     
     inline def setQ(value: Double): Self = StObject.set(x, "Q", value.asInstanceOf[js.Any])
     

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "prettyjson"
-version := "0.0-unknown-dt-20221103Z-598eaf"
+version := "0.0-unknown-dt-20221103Z-dc5678"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

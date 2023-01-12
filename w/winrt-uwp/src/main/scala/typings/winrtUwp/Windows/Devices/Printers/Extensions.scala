@@ -173,7 +173,8 @@ object Extensions {
       __obj.asInstanceOf[Print3DWorkflowPrintRequestedEventArgs]
     }
     
-    extension [Self <: Print3DWorkflowPrintRequestedEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Print3DWorkflowPrintRequestedEventArgs] (val x: Self) extends AnyVal {
       
       inline def setSetExtendedStatus(value: Print3DWorkflowDetail => Unit): Self = StObject.set(x, "setExtendedStatus", js.Any.fromFunction1(value))
       
@@ -204,7 +205,8 @@ object Extensions {
       __obj.asInstanceOf[PrintNotificationEventDetails]
     }
     
-    extension [Self <: PrintNotificationEventDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PrintNotificationEventDetails] (val x: Self) extends AnyVal {
       
       inline def setEventData(value: String): Self = StObject.set(x, "eventData", value.asInstanceOf[js.Any])
       
@@ -273,7 +275,8 @@ object Extensions {
       __obj.asInstanceOf[PrintTaskConfigurationSaveRequest]
     }
     
-    extension [Self <: PrintTaskConfigurationSaveRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PrintTaskConfigurationSaveRequest] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
       
@@ -298,7 +301,8 @@ object Extensions {
       __obj.asInstanceOf[PrintTaskConfigurationSaveRequestedDeferral]
     }
     
-    extension [Self <: PrintTaskConfigurationSaveRequestedDeferral](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PrintTaskConfigurationSaveRequestedDeferral] (val x: Self) extends AnyVal {
       
       inline def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
     }
@@ -317,7 +321,8 @@ object Extensions {
       __obj.asInstanceOf[PrintTaskConfigurationSaveRequestedEventArgs]
     }
     
-    extension [Self <: PrintTaskConfigurationSaveRequestedEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PrintTaskConfigurationSaveRequestedEventArgs] (val x: Self) extends AnyVal {
       
       inline def setRequest(value: PrintTaskConfigurationSaveRequest): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     }

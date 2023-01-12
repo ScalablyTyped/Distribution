@@ -18,7 +18,8 @@ object GetConnectionStatusRequest {
     __obj.asInstanceOf[GetConnectionStatusRequest]
   }
   
-  extension [Self <: GetConnectionStatusRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetConnectionStatusRequest] (val x: Self) extends AnyVal {
     
     inline def setTarget(value: SessionTarget): Self = StObject.set(x, "Target", value.asInstanceOf[js.Any])
   }

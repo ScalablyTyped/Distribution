@@ -68,7 +68,8 @@ object XDataSource {
     __obj.asInstanceOf[XDataSource]
   }
   
-  extension [Self <: XDataSource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XDataSource] (val x: Self) extends AnyVal {
     
     inline def setGetConnection(value: (String, String) => XConnection): Self = StObject.set(x, "getConnection", js.Any.fromFunction2(value))
     

@@ -140,7 +140,8 @@ object DropotronConfiguration {
     __obj.asInstanceOf[DropotronConfiguration]
   }
   
-  extension [Self <: DropotronConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DropotronConfiguration] (val x: Self) extends AnyVal {
     
     inline def setAlignment(value: String): Self = StObject.set(x, "alignment", value.asInstanceOf[js.Any])
     

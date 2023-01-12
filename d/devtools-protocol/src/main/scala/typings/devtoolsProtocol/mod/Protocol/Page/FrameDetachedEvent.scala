@@ -25,7 +25,8 @@ object FrameDetachedEvent {
     __obj.asInstanceOf[FrameDetachedEvent]
   }
   
-  extension [Self <: FrameDetachedEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FrameDetachedEvent] (val x: Self) extends AnyVal {
     
     inline def setFrameId(value: FrameId): Self = StObject.set(x, "frameId", value.asInstanceOf[js.Any])
     

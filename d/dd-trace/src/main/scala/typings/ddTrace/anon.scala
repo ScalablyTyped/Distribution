@@ -36,7 +36,8 @@ object anon {
       __obj.asInstanceOf[`0`]
     }
     
-    extension [Self <: `0`](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: `0`] (val x: Self) extends AnyVal {
       
       inline def setRequest(
         value: (/* span */ js.UndefOr[Span], /* req */ js.UndefOr[ClientRequest], /* res */ js.UndefOr[IncomingMessage]) => Any
@@ -62,7 +63,8 @@ object anon {
       __obj.asInstanceOf[`1`]
     }
     
-    extension [Self <: `1`](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: `1`] (val x: Self) extends AnyVal {
       
       inline def setRequest(value: (/* span */ js.UndefOr[Span], /* response */ js.UndefOr[anyObject]) => Any): Self = StObject.set(x, "request", js.Any.fromFunction2(value))
       
@@ -91,7 +93,8 @@ object anon {
       __obj.asInstanceOf[`2`]
     }
     
-    extension [Self <: `2`](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: `2`] (val x: Self) extends AnyVal {
       
       inline def setRequest(
         value: (/* span */ js.UndefOr[Span], /* req */ js.UndefOr[IncomingMessage | ClientRequest], /* res */ js.UndefOr[ServerResponse[IncomingMessage] | IncomingMessage]) => Any
@@ -137,7 +140,8 @@ object anon {
       __obj.asInstanceOf[B3]
     }
     
-    extension [Self <: B3](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: B3] (val x: Self) extends AnyVal {
       
       inline def setB3(value: Boolean): Self = StObject.set(x, "b3", value.asInstanceOf[js.Any])
       
@@ -211,7 +215,8 @@ object anon {
       __obj.asInstanceOf[Enabled]
     }
     
-    extension [Self <: Enabled](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Enabled] (val x: Self) extends AnyVal {
       
       inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       
@@ -267,7 +272,8 @@ object anon {
       __obj.asInstanceOf[Execute]
     }
     
-    extension [Self <: Execute](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Execute] (val x: Self) extends AnyVal {
       
       inline def setExecute(
         value: (/* span */ js.UndefOr[typings.ddTrace.mod.Span], /* args */ js.UndefOr[ExecutionArgs], /* res */ js.UndefOr[Any]) => Unit
@@ -309,7 +315,8 @@ object anon {
       __obj.asInstanceOf[Hostname]
     }
     
-    extension [Self <: Hostname](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Hostname] (val x: Self) extends AnyVal {
       
       inline def setHostname(value: String): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
       
@@ -363,7 +370,8 @@ object anon {
       __obj.asInstanceOf[ObfuscatorKeyRegex]
     }
     
-    extension [Self <: ObfuscatorKeyRegex](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ObfuscatorKeyRegex] (val x: Self) extends AnyVal {
       
       inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       
@@ -407,7 +415,8 @@ object anon {
       __obj.asInstanceOf[Query]
     }
     
-    extension [Self <: Query](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Query] (val x: Self) extends AnyVal {
       
       inline def setQuery(value: (/* span */ js.UndefOr[Span], /* params */ js.UndefOr[TransportRequestParams]) => Any): Self = StObject.set(x, "query", js.Any.fromFunction2(value))
       
@@ -434,7 +443,8 @@ object anon {
       __obj.asInstanceOf[RateLimit]
     }
     
-    extension [Self <: RateLimit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RateLimit] (val x: Self) extends AnyVal {
       
       inline def setRateLimit(value: Double): Self = StObject.set(x, "rateLimit", value.asInstanceOf[js.Any])
       
@@ -472,7 +482,8 @@ object anon {
       __obj.asInstanceOf[Receive]
     }
     
-    extension [Self <: Receive](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Receive] (val x: Self) extends AnyVal {
       
       inline def setReceive(value: (/* span */ js.UndefOr[Span], /* request */ js.UndefOr[Any]) => Any): Self = StObject.set(x, "receive", js.Any.fromFunction2(value))
       
@@ -507,7 +518,8 @@ object anon {
       __obj.asInstanceOf[Request]
     }
     
-    extension [Self <: Request](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Request] (val x: Self) extends AnyVal {
       
       inline def setRequest(
         value: (/* span */ js.UndefOr[Span], /* req */ js.UndefOr[IncomingMessage], /* res */ js.UndefOr[ServerResponse[IncomingMessage]]) => Any

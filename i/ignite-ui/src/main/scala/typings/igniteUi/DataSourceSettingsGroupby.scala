@@ -65,7 +65,8 @@ object DataSourceSettingsGroupby {
     __obj.asInstanceOf[DataSourceSettingsGroupby]
   }
   
-  extension [Self <: DataSourceSettingsGroupby](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataSourceSettingsGroupby] (val x: Self) extends AnyVal {
     
     inline def setDefaultCollapseState(value: Boolean): Self = StObject.set(x, "defaultCollapseState", value.asInstanceOf[js.Any])
     

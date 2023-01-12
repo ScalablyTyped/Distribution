@@ -19,7 +19,8 @@ object IEditorExperimentalOptions {
     __obj.asInstanceOf[IEditorExperimentalOptions]
   }
   
-  extension [Self <: IEditorExperimentalOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IEditorExperimentalOptions] (val x: Self) extends AnyVal {
     
     inline def setStickyScroll(value: Enabled): Self = StObject.set(x, "stickyScroll", value.asInstanceOf[js.Any])
     

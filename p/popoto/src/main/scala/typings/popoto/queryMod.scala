@@ -160,7 +160,8 @@ object queryMod {
         __obj.asInstanceOf[NEO4J_INTERNAL_ID]
       }
       
-      extension [Self <: NEO4J_INTERNAL_ID](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: NEO4J_INTERNAL_ID] (val x: Self) extends AnyVal {
         
         inline def setQueryInternalName(value: NEO4JID): Self = StObject.set(x, "queryInternalName", value.asInstanceOf[js.Any])
       }
@@ -198,7 +199,8 @@ object queryMod {
       __obj.asInstanceOf[QueryStructure]
     }
     
-    extension [Self <: QueryStructure](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QueryStructure] (val x: Self) extends AnyVal {
       
       inline def setEndElements(value: js.Array[String]): Self = StObject.set(x, "endElements", value.asInstanceOf[js.Any])
       

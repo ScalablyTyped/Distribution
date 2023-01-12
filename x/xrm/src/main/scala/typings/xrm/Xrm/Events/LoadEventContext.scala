@@ -40,7 +40,8 @@ object LoadEventContext {
     __obj.asInstanceOf[LoadEventContext]
   }
   
-  extension [Self <: LoadEventContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LoadEventContext] (val x: Self) extends AnyVal {
     
     inline def setGetEventArgs(value: () => LoadEventArguments): Self = StObject.set(x, "getEventArgs", js.Any.fromFunction0(value))
   }

@@ -23,7 +23,8 @@ object ListAccountAliasesRequest {
     __obj.asInstanceOf[ListAccountAliasesRequest]
   }
   
-  extension [Self <: ListAccountAliasesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListAccountAliasesRequest] (val x: Self) extends AnyVal {
     
     inline def setMarker(value: markerType): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     

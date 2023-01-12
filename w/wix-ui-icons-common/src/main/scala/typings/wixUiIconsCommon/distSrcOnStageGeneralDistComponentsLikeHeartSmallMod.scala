@@ -27,7 +27,8 @@ object distSrcOnStageGeneralDistComponentsLikeHeartSmallMod extends Shortcut {
       __obj.asInstanceOf[LikeHeartSmallProps]
     }
     
-    extension [Self <: LikeHeartSmallProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LikeHeartSmallProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

@@ -23,7 +23,8 @@ object AuthorizeSecurityGroupIngressResult {
     __obj.asInstanceOf[AuthorizeSecurityGroupIngressResult]
   }
   
-  extension [Self <: AuthorizeSecurityGroupIngressResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AuthorizeSecurityGroupIngressResult] (val x: Self) extends AnyVal {
     
     inline def setReturn(value: Boolean): Self = StObject.set(x, "Return", value.asInstanceOf[js.Any])
     

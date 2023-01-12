@@ -123,7 +123,8 @@ object libWidgetMod {
         __obj.asInstanceOf[IOptions[T]]
       }
       
-      extension [Self <: IOptions[?], T /* <: Widget */](x: Self & IOptions[T]) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IOptions[?], T /* <: Widget */] (val x: Self & IOptions[T]) extends AnyVal {
         
         inline def setContent(value: T): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       }
@@ -143,7 +144,8 @@ object libWidgetMod {
       __obj.asInstanceOf[ISourceDisplayed]
     }
     
-    extension [Self <: ISourceDisplayed](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISourceDisplayed] (val x: Self) extends AnyVal {
       
       inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       

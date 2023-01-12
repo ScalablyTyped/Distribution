@@ -19,7 +19,8 @@ object OAuthConnectUrlRequest {
     __obj.asInstanceOf[OAuthConnectUrlRequest]
   }
   
-  extension [Self <: OAuthConnectUrlRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OAuthConnectUrlRequest] (val x: Self) extends AnyVal {
     
     inline def setRedirectUri(value: String): Self = StObject.set(x, "redirectUri", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object anon {
       __obj.asInstanceOf[PickAgentaddRequest]
     }
     
-    extension [Self <: PickAgentaddRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PickAgentaddRequest] (val x: Self) extends AnyVal {
       
       inline def setAddRequest(value: Any): Self = StObject.set(x, "addRequest", value.asInstanceOf[js.Any])
       

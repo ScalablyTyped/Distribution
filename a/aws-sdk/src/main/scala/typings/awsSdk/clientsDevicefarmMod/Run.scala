@@ -173,7 +173,8 @@ object Run {
     __obj.asInstanceOf[Run]
   }
   
-  extension [Self <: Run](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Run] (val x: Self) extends AnyVal {
     
     inline def setAppUpload(value: AmazonResourceName): Self = StObject.set(x, "appUpload", value.asInstanceOf[js.Any])
     

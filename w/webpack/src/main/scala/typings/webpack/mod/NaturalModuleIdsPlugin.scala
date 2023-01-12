@@ -19,7 +19,8 @@ object NaturalModuleIdsPlugin {
     __obj.asInstanceOf[NaturalModuleIdsPlugin]
   }
   
-  extension [Self <: NaturalModuleIdsPlugin](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NaturalModuleIdsPlugin] (val x: Self) extends AnyVal {
     
     inline def setApply(value: Compiler => Unit): Self = StObject.set(x, "apply", js.Any.fromFunction1(value))
   }

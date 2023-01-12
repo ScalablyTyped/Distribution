@@ -21,7 +21,8 @@ object TileUTFGridOptions {
     __obj.asInstanceOf[TileUTFGridOptions]
   }
   
-  extension [Self <: TileUTFGridOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TileUTFGridOptions] (val x: Self) extends AnyVal {
     
     inline def setJsonp(value: Boolean): Self = StObject.set(x, "jsonp", value.asInstanceOf[js.Any])
     

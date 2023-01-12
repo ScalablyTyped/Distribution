@@ -27,7 +27,8 @@ object GetLatestUserKeySuccessCallbackResult {
     __obj.asInstanceOf[GetLatestUserKeySuccessCallbackResult]
   }
   
-  extension [Self <: GetLatestUserKeySuccessCallbackResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetLatestUserKeySuccessCallbackResult] (val x: Self) extends AnyVal {
     
     inline def setEncryptKey(value: String): Self = StObject.set(x, "encryptKey", value.asInstanceOf[js.Any])
     

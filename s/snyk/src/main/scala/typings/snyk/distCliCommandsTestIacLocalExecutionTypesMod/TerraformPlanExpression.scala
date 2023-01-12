@@ -15,7 +15,8 @@ object TerraformPlanExpression {
     __obj.asInstanceOf[TerraformPlanExpression]
   }
   
-  extension [Self <: TerraformPlanExpression](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TerraformPlanExpression] (val x: Self) extends AnyVal {
     
     inline def setReferences(value: js.Array[String]): Self = StObject.set(x, "references", value.asInstanceOf[js.Any])
     

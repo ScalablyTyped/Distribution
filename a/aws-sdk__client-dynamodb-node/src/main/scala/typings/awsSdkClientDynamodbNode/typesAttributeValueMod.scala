@@ -70,7 +70,8 @@ object typesAttributeValueMod {
       __obj.asInstanceOf[AttributeValue]
     }
     
-    extension [Self <: AttributeValue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AttributeValue] (val x: Self) extends AnyVal {
       
       inline def setB(value: js.typedarray.ArrayBuffer | js.typedarray.ArrayBufferView | String): Self = StObject.set(x, "B", value.asInstanceOf[js.Any])
       
@@ -171,7 +172,8 @@ object typesAttributeValueMod {
       __obj.asInstanceOf[UnmarshalledAttributeValue]
     }
     
-    extension [Self <: UnmarshalledAttributeValue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnmarshalledAttributeValue] (val x: Self) extends AnyVal {
       
       inline def setB(value: js.typedarray.Uint8Array): Self = StObject.set(x, "B", value.asInstanceOf[js.Any])
       

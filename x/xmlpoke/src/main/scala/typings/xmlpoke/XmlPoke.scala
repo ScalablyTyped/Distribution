@@ -46,7 +46,8 @@ object XmlPoke {
       __obj.asInstanceOf[CDataValue]
     }
     
-    extension [Self <: CDataValue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CDataValue] (val x: Self) extends AnyVal {
       
       inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
@@ -116,7 +117,8 @@ object XmlPoke {
       __obj.asInstanceOf[XmlValue]
     }
     
-    extension [Self <: XmlValue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XmlValue] (val x: Self) extends AnyVal {
       
       inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }

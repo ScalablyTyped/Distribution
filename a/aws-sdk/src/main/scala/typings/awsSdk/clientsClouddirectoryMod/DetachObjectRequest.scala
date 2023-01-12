@@ -28,7 +28,8 @@ object DetachObjectRequest {
     __obj.asInstanceOf[DetachObjectRequest]
   }
   
-  extension [Self <: DetachObjectRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DetachObjectRequest] (val x: Self) extends AnyVal {
     
     inline def setDirectoryArn(value: Arn): Self = StObject.set(x, "DirectoryArn", value.asInstanceOf[js.Any])
     

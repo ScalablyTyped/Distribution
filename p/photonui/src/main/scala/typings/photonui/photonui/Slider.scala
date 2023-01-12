@@ -49,7 +49,8 @@ object Slider {
     __obj.asInstanceOf[Slider]
   }
   
-  extension [Self <: Slider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Slider] (val x: Self) extends AnyVal {
     
     inline def setFieldVisible(value: Boolean): Self = StObject.set(x, "fieldVisible", value.asInstanceOf[js.Any])
   }

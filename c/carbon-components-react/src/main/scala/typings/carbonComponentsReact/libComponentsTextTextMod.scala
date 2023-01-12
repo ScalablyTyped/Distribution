@@ -608,7 +608,8 @@ object libComponentsTextTextMod {
       __obj.asInstanceOf[TextBaseProps]
     }
     
-    extension [Self <: TextBaseProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TextBaseProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -931,7 +932,8 @@ object libComponentsTextTextMod {
       __obj.asInstanceOf[TextDefaultProps]
     }
     
-    extension [Self <: TextDefaultProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TextDefaultProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       

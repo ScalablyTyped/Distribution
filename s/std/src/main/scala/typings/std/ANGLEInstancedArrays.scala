@@ -31,7 +31,8 @@ object ANGLEInstancedArrays {
     __obj.asInstanceOf[ANGLEInstancedArrays]
   }
   
-  extension [Self <: ANGLEInstancedArrays](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ANGLEInstancedArrays] (val x: Self) extends AnyVal {
     
     inline def setDrawArraysInstancedANGLE(value: (GLenum, GLint, GLsizei, GLsizei) => Unit): Self = StObject.set(x, "drawArraysInstancedANGLE", js.Any.fromFunction4(value))
     

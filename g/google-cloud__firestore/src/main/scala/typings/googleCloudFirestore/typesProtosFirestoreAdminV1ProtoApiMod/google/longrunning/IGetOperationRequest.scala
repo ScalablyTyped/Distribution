@@ -17,7 +17,8 @@ object IGetOperationRequest {
     __obj.asInstanceOf[IGetOperationRequest]
   }
   
-  extension [Self <: IGetOperationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IGetOperationRequest] (val x: Self) extends AnyVal {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

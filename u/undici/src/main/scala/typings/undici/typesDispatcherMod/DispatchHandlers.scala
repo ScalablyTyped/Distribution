@@ -50,7 +50,8 @@ object DispatchHandlers {
     __obj.asInstanceOf[DispatchHandlers]
   }
   
-  extension [Self <: DispatchHandlers](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DispatchHandlers] (val x: Self) extends AnyVal {
     
     inline def setOnBodySent(value: (/* chunkSize */ Double, /* totalBytesSent */ Double) => Unit): Self = StObject.set(x, "onBodySent", js.Any.fromFunction2(value))
     

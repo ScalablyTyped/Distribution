@@ -21,7 +21,8 @@ object DdCloseToken {
     __obj.asInstanceOf[DdCloseToken]
   }
   
-  extension [Self <: DdCloseToken](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DdCloseToken] (val x: Self) extends AnyVal {
     
     inline def setType(value: dd_close): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

@@ -106,7 +106,8 @@ object libMappingMod {
         __obj.asInstanceOf[FindDocInfo]
       }
       
-      extension [Self <: FindDocInfo](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: FindDocInfo] (val x: Self) extends AnyVal {
         
         inline def setFields(value: js.Array[String]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
         
@@ -139,7 +140,8 @@ object libMappingMod {
         __obj.asInstanceOf[InsertDocInfo]
       }
       
-      extension [Self <: InsertDocInfo](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: InsertDocInfo] (val x: Self) extends AnyVal {
         
         inline def setFields(value: js.Array[String]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
         
@@ -178,7 +180,8 @@ object libMappingMod {
         __obj.asInstanceOf[MappingExecutionOptions]
       }
       
-      extension [Self <: MappingExecutionOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: MappingExecutionOptions] (val x: Self) extends AnyVal {
         
         inline def setExecutionProfile(value: String): Self = StObject.set(x, "executionProfile", value.asInstanceOf[js.Any])
         
@@ -217,7 +220,8 @@ object libMappingMod {
         __obj.asInstanceOf[MappingOptions]
       }
       
-      extension [Self <: MappingOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: MappingOptions] (val x: Self) extends AnyVal {
         
         inline def setModels(value: StringDictionary[ModelOptions]): Self = StObject.set(x, "models", value.asInstanceOf[js.Any])
       }
@@ -253,7 +257,8 @@ object libMappingMod {
         __obj.asInstanceOf[ModelColumnOptions]
       }
       
-      extension [Self <: ModelColumnOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ModelColumnOptions] (val x: Self) extends AnyVal {
         
         inline def setFromModel(value: /* modelValue */ Any => Any): Self = StObject.set(x, "fromModel", js.Any.fromFunction1(value))
         
@@ -354,7 +359,8 @@ object libMappingMod {
         __obj.asInstanceOf[ModelOptions]
       }
       
-      extension [Self <: ModelOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ModelOptions] (val x: Self) extends AnyVal {
         
         inline def setColumns(value: StringDictionary[String | ModelColumnOptions]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
         
@@ -389,7 +395,8 @@ object libMappingMod {
         __obj.asInstanceOf[ModelTables]
       }
       
-      extension [Self <: ModelTables](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ModelTables] (val x: Self) extends AnyVal {
         
         inline def setIsView(value: Boolean): Self = StObject.set(x, "isView", value.asInstanceOf[js.Any])
         
@@ -416,7 +423,8 @@ object libMappingMod {
         __obj.asInstanceOf[RemoveDocInfo]
       }
       
-      extension [Self <: RemoveDocInfo](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: RemoveDocInfo] (val x: Self) extends AnyVal {
         
         inline def setDeleteOnlyColumns(value: Boolean): Self = StObject.set(x, "deleteOnlyColumns", value.asInstanceOf[js.Any])
         
@@ -472,7 +480,8 @@ object libMappingMod {
         __obj.asInstanceOf[TableMappings]
       }
       
-      extension [Self <: TableMappings](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: TableMappings] (val x: Self) extends AnyVal {
         
         inline def setGetColumnName(value: String => String): Self = StObject.set(x, "getColumnName", js.Any.fromFunction1(value))
         
@@ -505,7 +514,8 @@ object libMappingMod {
         __obj.asInstanceOf[UpdateDocInfo]
       }
       
-      extension [Self <: UpdateDocInfo](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: UpdateDocInfo] (val x: Self) extends AnyVal {
         
         inline def setDeleteOnlyColumns(value: Boolean): Self = StObject.set(x, "deleteOnlyColumns", value.asInstanceOf[js.Any])
         

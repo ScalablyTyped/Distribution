@@ -23,7 +23,8 @@ object ContinuousBackupsDescription {
     __obj.asInstanceOf[ContinuousBackupsDescription]
   }
   
-  extension [Self <: ContinuousBackupsDescription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContinuousBackupsDescription] (val x: Self) extends AnyVal {
     
     inline def setContinuousBackupsStatus(value: ContinuousBackupsStatus): Self = StObject.set(x, "ContinuousBackupsStatus", value.asInstanceOf[js.Any])
     

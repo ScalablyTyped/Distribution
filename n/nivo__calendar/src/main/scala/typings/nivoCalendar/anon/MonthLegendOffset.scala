@@ -30,7 +30,8 @@ object MonthLegendOffset {
     __obj.asInstanceOf[MonthLegendOffset[Month]]
   }
   
-  extension [Self <: MonthLegendOffset[?], Month /* <: /* import warning: importer.ImportType#apply Failed type conversion: {  bbox :@nivo/calendar.@nivo/calendar/dist/types/types.BBox} */ js.Any */](x: Self & MonthLegendOffset[Month]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MonthLegendOffset[?], Month /* <: /* import warning: importer.ImportType#apply Failed type conversion: {  bbox :@nivo/calendar.@nivo/calendar/dist/types/types.BBox} */ js.Any */] (val x: Self & MonthLegendOffset[Month]) extends AnyVal {
     
     inline def setDirection(value: horizontal | vertical): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     

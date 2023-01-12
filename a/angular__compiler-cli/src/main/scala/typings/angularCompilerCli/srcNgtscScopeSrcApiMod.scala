@@ -91,7 +91,8 @@ object srcNgtscScopeSrcApiMod {
       __obj.asInstanceOf[ComponentScopeReader]
     }
     
-    extension [Self <: ComponentScopeReader](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ComponentScopeReader] (val x: Self) extends AnyVal {
       
       inline def setGetRemoteScope(value: ClassDeclaration[DeclarationNode] => RemoteScope | Null): Self = StObject.set(x, "getRemoteScope", js.Any.fromFunction1(value))
       
@@ -113,7 +114,8 @@ object srcNgtscScopeSrcApiMod {
       __obj.asInstanceOf[ExportScope]
     }
     
-    extension [Self <: ExportScope](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExportScope] (val x: Self) extends AnyVal {
       
       inline def setExported(value: ScopeData): Self = StObject.set(x, "exported", value.asInstanceOf[js.Any])
     }
@@ -147,7 +149,8 @@ object srcNgtscScopeSrcApiMod {
       __obj.asInstanceOf[LocalModuleScope]
     }
     
-    extension [Self <: LocalModuleScope](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LocalModuleScope] (val x: Self) extends AnyVal {
       
       inline def setCompilation(value: ScopeData): Self = StObject.set(x, "compilation", value.asInstanceOf[js.Any])
       
@@ -186,7 +189,8 @@ object srcNgtscScopeSrcApiMod {
       __obj.asInstanceOf[RemoteScope]
     }
     
-    extension [Self <: RemoteScope](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RemoteScope] (val x: Self) extends AnyVal {
       
       inline def setDirectives(value: js.Array[Reference[Node]]): Self = StObject.set(x, "directives", value.asInstanceOf[js.Any])
       
@@ -215,7 +219,8 @@ object srcNgtscScopeSrcApiMod {
       __obj.asInstanceOf[ScopeData]
     }
     
-    extension [Self <: ScopeData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScopeData] (val x: Self) extends AnyVal {
       
       inline def setDependencies(value: js.Array[DirectiveMeta | PipeMeta]): Self = StObject.set(x, "dependencies", value.asInstanceOf[js.Any])
       
@@ -252,7 +257,8 @@ object srcNgtscScopeSrcApiMod {
       __obj.asInstanceOf[StandaloneScope]
     }
     
-    extension [Self <: StandaloneScope](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StandaloneScope] (val x: Self) extends AnyVal {
       
       inline def setComponent(value: ClassDeclaration[DeclarationNode]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
       

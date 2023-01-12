@@ -19,7 +19,8 @@ object GooglePrivacyDlpV2InspectDataSourceDetails {
     __obj.asInstanceOf[GooglePrivacyDlpV2InspectDataSourceDetails]
   }
   
-  extension [Self <: GooglePrivacyDlpV2InspectDataSourceDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GooglePrivacyDlpV2InspectDataSourceDetails] (val x: Self) extends AnyVal {
     
     inline def setRequestedOptions(value: GooglePrivacyDlpV2RequestedOptions): Self = StObject.set(x, "requestedOptions", value.asInstanceOf[js.Any])
     

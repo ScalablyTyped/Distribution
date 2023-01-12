@@ -26,7 +26,8 @@ object distSrcCommandParserCommandParserMod {
       __obj.asInstanceOf[CommandParser]
     }
     
-    extension [Self <: CommandParser](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommandParser] (val x: Self) extends AnyVal {
       
       inline def setParse(value: CommandInfo => CommandInfo | js.Array[CommandInfo]): Self = StObject.set(x, "parse", js.Any.fromFunction1(value))
     }

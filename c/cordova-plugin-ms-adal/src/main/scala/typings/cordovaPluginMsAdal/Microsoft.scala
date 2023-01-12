@@ -108,7 +108,8 @@ object Microsoft {
         __obj.asInstanceOf[AuthenticationResult]
       }
       
-      extension [Self <: AuthenticationResult](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AuthenticationResult] (val x: Self) extends AnyVal {
         
         inline def setAccessToken(value: String): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
         
@@ -208,7 +209,8 @@ object Microsoft {
         __obj.asInstanceOf[TokenCache]
       }
       
-      extension [Self <: TokenCache](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: TokenCache] (val x: Self) extends AnyVal {
         
         inline def setClear(value: () => Promise): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
         
@@ -257,7 +259,8 @@ object Microsoft {
         __obj.asInstanceOf[TokenCacheItem]
       }
       
-      extension [Self <: TokenCacheItem](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: TokenCacheItem] (val x: Self) extends AnyVal {
         
         inline def setAccessToken(value: String): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
         
@@ -313,7 +316,8 @@ object Microsoft {
         __obj.asInstanceOf[UserInfo]
       }
       
-      extension [Self <: UserInfo](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: UserInfo] (val x: Self) extends AnyVal {
         
         inline def setDisplayableId(value: String): Self = StObject.set(x, "displayableId", value.asInstanceOf[js.Any])
         

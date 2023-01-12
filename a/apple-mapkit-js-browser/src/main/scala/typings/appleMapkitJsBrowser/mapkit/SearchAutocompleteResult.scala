@@ -26,7 +26,8 @@ object SearchAutocompleteResult {
     __obj.asInstanceOf[SearchAutocompleteResult]
   }
   
-  extension [Self <: SearchAutocompleteResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchAutocompleteResult] (val x: Self) extends AnyVal {
     
     inline def setCoordinate(value: Coordinate): Self = StObject.set(x, "coordinate", value.asInstanceOf[js.Any])
     

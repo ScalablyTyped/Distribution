@@ -31,7 +31,8 @@ object ImportProductSetsGcsSource {
     __obj.asInstanceOf[ImportProductSetsGcsSource]
   }
   
-  extension [Self <: ImportProductSetsGcsSource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImportProductSetsGcsSource] (val x: Self) extends AnyVal {
     
     inline def setCsvFileUri(value: String): Self = StObject.set(x, "csvFileUri", value.asInstanceOf[js.Any])
     

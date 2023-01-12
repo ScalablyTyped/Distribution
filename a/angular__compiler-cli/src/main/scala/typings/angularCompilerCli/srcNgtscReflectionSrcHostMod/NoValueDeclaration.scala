@@ -23,7 +23,8 @@ object NoValueDeclaration {
     __obj.asInstanceOf[NoValueDeclaration]
   }
   
-  extension [Self <: NoValueDeclaration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NoValueDeclaration] (val x: Self) extends AnyVal {
     
     inline def setDecl(value: typings.typescript.mod.Declaration): Self = StObject.set(x, "decl", value.asInstanceOf[js.Any])
     

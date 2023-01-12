@@ -104,7 +104,8 @@ object jQueryCropBox {
       __obj.asInstanceOf[Cropbox]
     }
     
-    extension [Self <: Cropbox](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Cropbox] (val x: Self) extends AnyVal {
       
       inline def setDrag(value: CropboxDragOptions => Unit): Self = StObject.set(x, "drag", js.Any.fromFunction1(value))
       
@@ -145,7 +146,8 @@ object jQueryCropBox {
       __obj.asInstanceOf[CropboxArea]
     }
     
-    extension [Self <: CropboxArea](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CropboxArea] (val x: Self) extends AnyVal {
       
       inline def setCropH(value: Double): Self = StObject.set(x, "cropH", value.asInstanceOf[js.Any])
       
@@ -174,7 +176,8 @@ object jQueryCropBox {
       __obj.asInstanceOf[CropboxDragOptions]
     }
     
-    extension [Self <: CropboxDragOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CropboxDragOptions] (val x: Self) extends AnyVal {
       
       inline def setDx(value: Double): Self = StObject.set(x, "dx", value.asInstanceOf[js.Any])
       
@@ -230,7 +233,8 @@ object jQueryCropBox {
       __obj.asInstanceOf[CropboxOptions]
     }
     
-    extension [Self <: CropboxOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CropboxOptions] (val x: Self) extends AnyVal {
       
       inline def setControls(value: Any): Self = StObject.set(x, "controls", value.asInstanceOf[js.Any])
       
@@ -279,7 +283,8 @@ object jQueryCropBox {
       __obj.asInstanceOf[CropboxSetCropOptions]
     }
     
-    extension [Self <: CropboxSetCropOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CropboxSetCropOptions] (val x: Self) extends AnyVal {
       
       inline def setCropH(value: Double): Self = StObject.set(x, "cropH", value.asInstanceOf[js.Any])
       

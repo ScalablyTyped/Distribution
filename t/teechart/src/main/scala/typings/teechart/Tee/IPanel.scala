@@ -19,7 +19,8 @@ object IPanel {
     __obj.asInstanceOf[IPanel]
   }
   
-  extension [Self <: IPanel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPanel] (val x: Self) extends AnyVal {
     
     inline def setFormat(value: IFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     

@@ -44,7 +44,8 @@ object IAsyncOperationWithProgress {
     __obj.asInstanceOf[IAsyncOperationWithProgress[TResult, TProgress]]
   }
   
-  extension [Self <: IAsyncOperationWithProgress[?, ?], TResult, TProgress](x: Self & (IAsyncOperationWithProgress[TResult, TProgress])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IAsyncOperationWithProgress[?, ?], TResult, TProgress] (val x: Self & (IAsyncOperationWithProgress[TResult, TProgress])) extends AnyVal {
     
     inline def setCompleted(
       value: (/* asyncInfo */ IAsyncOperationWithProgress[TResult, TProgress], /* asyncStatus */ AsyncStatus) => Unit

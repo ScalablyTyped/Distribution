@@ -111,7 +111,8 @@ object RenderCamera {
     __obj.asInstanceOf[RenderCamera]
   }
   
-  extension [Self <: RenderCamera](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RenderCamera] (val x: Self) extends AnyVal {
     
     inline def setCenter(value: ArrayLike[Double]): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
     

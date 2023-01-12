@@ -123,7 +123,8 @@ object mod {
       __obj.asInstanceOf[DistributedTracePayload]
     }
     
-    extension [Self <: DistributedTracePayload](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DistributedTracePayload] (val x: Self) extends AnyVal {
       
       inline def setHttpSafe(value: () => String): Self = StObject.set(x, "httpSafe", js.Any.fromFunction0(value))
       
@@ -189,7 +190,8 @@ object mod {
       __obj.asInstanceOf[LinkingMetadata]
     }
     
-    extension [Self <: LinkingMetadata](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LinkingMetadata] (val x: Self) extends AnyVal {
       
       inline def setEntityDotguid(value: String): Self = StObject.set(x, "entity.guid", value.asInstanceOf[js.Any])
       
@@ -230,7 +232,8 @@ object mod {
       __obj.asInstanceOf[Metric]
     }
     
-    extension [Self <: Metric](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Metric] (val x: Self) extends AnyVal {
       
       inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       
@@ -263,7 +266,8 @@ object mod {
       __obj.asInstanceOf[TraceMetadata]
     }
     
-    extension [Self <: TraceMetadata](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TraceMetadata] (val x: Self) extends AnyVal {
       
       inline def setSpanId(value: String): Self = StObject.set(x, "spanId", value.asInstanceOf[js.Any])
       

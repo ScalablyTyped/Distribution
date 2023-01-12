@@ -23,7 +23,8 @@ object TrackListMessage {
     __obj.asInstanceOf[TrackListMessage]
   }
   
-  extension [Self <: TrackListMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TrackListMessage] (val x: Self) extends AnyVal {
     
     inline def setMaintenanceTracks(value: TrackList): Self = StObject.set(x, "MaintenanceTracks", value.asInstanceOf[js.Any])
     

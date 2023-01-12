@@ -22,7 +22,8 @@ object GuardMeta {
     __obj.asInstanceOf[GuardMeta[TContext, TEvent]]
   }
   
-  extension [Self <: GuardMeta[?, ?], TContext, TEvent /* <: EventObject */](x: Self & (GuardMeta[TContext, TEvent])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GuardMeta[?, ?], TContext, TEvent /* <: EventObject */] (val x: Self & (GuardMeta[TContext, TEvent])) extends AnyVal {
     
     inline def setCond(value: Guard[TContext, TEvent]): Self = StObject.set(x, "cond", value.asInstanceOf[js.Any])
   }

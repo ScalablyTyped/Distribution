@@ -43,7 +43,8 @@ object ServerEventsApplicationObject {
     __obj.asInstanceOf[ServerEventsApplicationObject]
   }
   
-  extension [Self <: ServerEventsApplicationObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServerEventsApplicationObject] (val x: Self) extends AnyVal {
     
     inline def setChannels(value: String | js.Array[String]): Self = StObject.set(x, "channels", value.asInstanceOf[js.Any])
     

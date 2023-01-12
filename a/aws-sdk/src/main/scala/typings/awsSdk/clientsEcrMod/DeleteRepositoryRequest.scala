@@ -28,7 +28,8 @@ object DeleteRepositoryRequest {
     __obj.asInstanceOf[DeleteRepositoryRequest]
   }
   
-  extension [Self <: DeleteRepositoryRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteRepositoryRequest] (val x: Self) extends AnyVal {
     
     inline def setForce(value: ForceFlag): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
     

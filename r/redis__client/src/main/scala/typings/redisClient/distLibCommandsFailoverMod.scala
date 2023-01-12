@@ -32,7 +32,8 @@ object distLibCommandsFailoverMod {
       __obj.asInstanceOf[FailoverOptions]
     }
     
-    extension [Self <: FailoverOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FailoverOptions] (val x: Self) extends AnyVal {
       
       inline def setABORT(value: `true`): Self = StObject.set(x, "ABORT", value.asInstanceOf[js.Any])
       

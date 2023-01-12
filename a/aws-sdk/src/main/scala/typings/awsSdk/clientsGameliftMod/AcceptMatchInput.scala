@@ -28,7 +28,8 @@ object AcceptMatchInput {
     __obj.asInstanceOf[AcceptMatchInput]
   }
   
-  extension [Self <: AcceptMatchInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AcceptMatchInput] (val x: Self) extends AnyVal {
     
     inline def setAcceptanceType(value: AcceptanceType): Self = StObject.set(x, "AcceptanceType", value.asInstanceOf[js.Any])
     

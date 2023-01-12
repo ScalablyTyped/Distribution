@@ -49,7 +49,8 @@ object libInputItemStyleMod {
       __obj.asInstanceOf[InputItemStyle]
     }
     
-    extension [Self <: InputItemStyle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InputItemStyle] (val x: Self) extends AnyVal {
       
       inline def setClear(value: ViewStyle): Self = StObject.set(x, "clear", value.asInstanceOf[js.Any])
       

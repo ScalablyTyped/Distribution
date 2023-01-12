@@ -96,7 +96,8 @@ object AllowAnonLogging {
     __obj.asInstanceOf[AllowAnonLogging]
   }
   
-  extension [Self <: AllowAnonLogging](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AllowAnonLogging] (val x: Self) extends AnyVal {
     
     inline def setAllowAnonLogging(value: Boolean): Self = StObject.set(x, "allowAnonLogging", value.asInstanceOf[js.Any])
     

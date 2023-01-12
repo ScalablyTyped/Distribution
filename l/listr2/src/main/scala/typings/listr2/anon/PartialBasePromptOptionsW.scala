@@ -53,7 +53,8 @@ object PartialBasePromptOptionsW {
     __obj.asInstanceOf[PartialBasePromptOptionsW]
   }
   
-  extension [Self <: PartialBasePromptOptionsW](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialBasePromptOptionsW] (val x: Self) extends AnyVal {
     
     inline def setFooter(value: String): Self = StObject.set(x, "footer", value.asInstanceOf[js.Any])
     

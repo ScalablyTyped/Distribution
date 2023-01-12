@@ -18,7 +18,8 @@ object ListHsmsRequest {
     __obj.asInstanceOf[ListHsmsRequest]
   }
   
-  extension [Self <: ListHsmsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListHsmsRequest] (val x: Self) extends AnyVal {
     
     inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

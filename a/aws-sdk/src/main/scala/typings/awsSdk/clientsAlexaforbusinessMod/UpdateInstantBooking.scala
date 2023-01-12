@@ -23,7 +23,8 @@ object UpdateInstantBooking {
     __obj.asInstanceOf[UpdateInstantBooking]
   }
   
-  extension [Self <: UpdateInstantBooking](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateInstantBooking] (val x: Self) extends AnyVal {
     
     inline def setDurationInMinutes(value: Minutes): Self = StObject.set(x, "DurationInMinutes", value.asInstanceOf[js.Any])
     

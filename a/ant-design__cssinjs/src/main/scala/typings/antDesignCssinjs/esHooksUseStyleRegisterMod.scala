@@ -3432,7 +3432,8 @@ object esHooksUseStyleRegisterMod {
       __obj.asInstanceOf[CSSProperties]
     }
     
-    extension [Self <: CSSProperties](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CSSProperties] (val x: Self) extends AnyVal {
       
       inline def setAccentColor(value: AccentColor | js.Array[NonNullable[js.UndefOr[AccentColor]]]): Self = StObject.set(x, "accentColor", value.asInstanceOf[js.Any])
       
@@ -15733,7 +15734,8 @@ object esHooksUseStyleRegisterMod {
       __obj.asInstanceOf[CSSPropertiesWithMultiValues]
     }
     
-    extension [Self <: CSSPropertiesWithMultiValues](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CSSPropertiesWithMultiValues] (val x: Self) extends AnyVal {
       
       inline def setAccentColor(
         value: AccentColor | (js.Array[
@@ -30106,7 +30108,8 @@ object esHooksUseStyleRegisterMod {
       __obj.asInstanceOf[CSSPseudos]
     }
     
-    extension [Self <: CSSPseudos](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CSSPseudos] (val x: Self) extends AnyVal {
       
       inline def `setColon-khtml-any-link`(value: CSSObject): Self = StObject.set(x, ":-khtml-any-link", value.asInstanceOf[js.Any])
       
@@ -30637,7 +30640,8 @@ object esHooksUseStyleRegisterMod {
       __obj.asInstanceOf[ParseConfig]
     }
     
-    extension [Self <: ParseConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParseConfig] (val x: Self) extends AnyVal {
       
       inline def setHashId(value: String): Self = StObject.set(x, "hashId", value.asInstanceOf[js.Any])
       
@@ -30670,7 +30674,8 @@ object esHooksUseStyleRegisterMod {
       __obj.asInstanceOf[ParseInfo]
     }
     
-    extension [Self <: ParseInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParseInfo] (val x: Self) extends AnyVal {
       
       inline def setInjectHash(value: Boolean): Self = StObject.set(x, "injectHash", value.asInstanceOf[js.Any])
       

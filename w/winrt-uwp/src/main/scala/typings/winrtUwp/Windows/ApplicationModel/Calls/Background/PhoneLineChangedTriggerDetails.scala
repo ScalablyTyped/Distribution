@@ -31,7 +31,8 @@ object PhoneLineChangedTriggerDetails {
     __obj.asInstanceOf[PhoneLineChangedTriggerDetails]
   }
   
-  extension [Self <: PhoneLineChangedTriggerDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PhoneLineChangedTriggerDetails] (val x: Self) extends AnyVal {
     
     inline def setChangeType(value: PhoneLineChangeKind): Self = StObject.set(x, "changeType", value.asInstanceOf[js.Any])
     

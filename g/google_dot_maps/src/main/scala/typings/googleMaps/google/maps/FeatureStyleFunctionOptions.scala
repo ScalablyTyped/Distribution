@@ -23,7 +23,8 @@ object FeatureStyleFunctionOptions {
     __obj.asInstanceOf[FeatureStyleFunctionOptions]
   }
   
-  extension [Self <: FeatureStyleFunctionOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FeatureStyleFunctionOptions] (val x: Self) extends AnyVal {
     
     inline def setFeature(value: Feature): Self = StObject.set(x, "feature", value.asInstanceOf[js.Any])
   }

@@ -108,7 +108,8 @@ object XDatabaseRange {
     __obj.asInstanceOf[XDatabaseRange]
   }
   
-  extension [Self <: XDatabaseRange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XDatabaseRange] (val x: Self) extends AnyVal {
     
     inline def setDataArea(value: CellRangeAddress): Self = StObject.set(x, "DataArea", value.asInstanceOf[js.Any])
     

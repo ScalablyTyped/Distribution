@@ -38,7 +38,8 @@ object ColumnDragCanceledEventUIParam {
     __obj.asInstanceOf[ColumnDragCanceledEventUIParam]
   }
   
-  extension [Self <: ColumnDragCanceledEventUIParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ColumnDragCanceledEventUIParam] (val x: Self) extends AnyVal {
     
     inline def setColumnIndex(value: Double): Self = StObject.set(x, "columnIndex", value.asInstanceOf[js.Any])
     

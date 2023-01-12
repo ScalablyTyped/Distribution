@@ -22,7 +22,8 @@ object MatchFor {
     __obj.asInstanceOf[MatchFor]
   }
   
-  extension [Self <: MatchFor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MatchFor] (val x: Self) extends AnyVal {
     
     inline def `setHTML-CSS`(value: Boolean): Self = StObject.set(x, "HTML-CSS", value.asInstanceOf[js.Any])
     

@@ -27,7 +27,8 @@ object AgentNotebookHistoryResult {
     __obj.asInstanceOf[AgentNotebookHistoryResult]
   }
   
-  extension [Self <: AgentNotebookHistoryResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AgentNotebookHistoryResult] (val x: Self) extends AnyVal {
     
     inline def setHistories(value: js.Array[AgentNotebookHistoryInfo]): Self = StObject.set(x, "histories", value.asInstanceOf[js.Any])
     

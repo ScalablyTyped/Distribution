@@ -80,7 +80,8 @@ object XAtomServer {
     __obj.asInstanceOf[XAtomServer]
   }
   
-  extension [Self <: XAtomServer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XAtomServer] (val x: Self) extends AnyVal {
     
     inline def setGetAtom(value: (Double, String, Boolean) => Double): Self = StObject.set(x, "getAtom", js.Any.fromFunction3(value))
     

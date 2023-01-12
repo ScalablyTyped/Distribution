@@ -33,7 +33,8 @@ object buildFrameworksMod {
       __obj.asInstanceOf[PickleResult]
     }
     
-    extension [Self <: PickleResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PickleResult] (val x: Self) extends AnyVal {
       
       inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
@@ -76,7 +77,8 @@ object buildFrameworksMod {
       __obj.asInstanceOf[PickleStep]
     }
     
-    extension [Self <: PickleStep](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PickleStep] (val x: Self) extends AnyVal {
       
       inline def setAstNodeIds(value: js.Array[String]): Self = StObject.set(x, "astNodeIds", value.asInstanceOf[js.Any])
       
@@ -105,7 +107,8 @@ object buildFrameworksMod {
       __obj.asInstanceOf[Results]
     }
     
-    extension [Self <: Results](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Results] (val x: Self) extends AnyVal {
       
       inline def setFailed(value: Double): Self = StObject.set(x, "failed", value.asInstanceOf[js.Any])
       
@@ -141,7 +144,8 @@ object buildFrameworksMod {
       __obj.asInstanceOf[Suite]
     }
     
-    extension [Self <: Suite](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Suite] (val x: Self) extends AnyVal {
       
       inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
@@ -211,7 +215,8 @@ object buildFrameworksMod {
       __obj.asInstanceOf[Test]
     }
     
-    extension [Self <: Test](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Test] (val x: Self) extends AnyVal {
       
       inline def setAsync(value: Double): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
       
@@ -278,7 +283,8 @@ object buildFrameworksMod {
       __obj.asInstanceOf[TestResult]
     }
     
-    extension [Self <: TestResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TestResult] (val x: Self) extends AnyVal {
       
       inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
@@ -313,7 +319,8 @@ object buildFrameworksMod {
       __obj.asInstanceOf[World]
     }
     
-    extension [Self <: World](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: World] (val x: Self) extends AnyVal {
       
       inline def setPickle(value: Name): Self = StObject.set(x, "pickle", value.asInstanceOf[js.Any])
       

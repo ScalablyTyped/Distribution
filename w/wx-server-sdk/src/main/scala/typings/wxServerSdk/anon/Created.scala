@@ -20,7 +20,8 @@ object Created {
     __obj.asInstanceOf[Created]
   }
   
-  extension [Self <: Created](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Created] (val x: Self) extends AnyVal {
     
     inline def setCreated(value: typings.wxServerSdk.wxServerSdkInts.`0` | typings.wxServerSdk.wxServerSdkInts.`1`): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
     

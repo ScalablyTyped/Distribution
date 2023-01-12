@@ -15,7 +15,8 @@ object Singleton {
     __obj.asInstanceOf[Singleton[T]]
   }
   
-  extension [Self <: Singleton[?], T](x: Self & Singleton[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Singleton[?], T] (val x: Self & Singleton[T]) extends AnyVal {
     
     inline def setGet(value: String => T): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
   }

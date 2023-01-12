@@ -31,7 +31,8 @@ object ResizeComponent {
     __obj.asInstanceOf[ResizeComponent]
   }
   
-  extension [Self <: ResizeComponent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResizeComponent] (val x: Self) extends AnyVal {
     
     inline def setBind(value: () => Unit): Self = StObject.set(x, "bind", js.Any.fromFunction0(value))
     

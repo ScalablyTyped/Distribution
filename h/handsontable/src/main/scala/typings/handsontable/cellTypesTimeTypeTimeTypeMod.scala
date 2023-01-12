@@ -83,7 +83,8 @@ object cellTypesTimeTypeTimeTypeMod {
       __obj.asInstanceOf[TimeCellType]
     }
     
-    extension [Self <: TimeCellType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TimeCellType] (val x: Self) extends AnyVal {
       
       inline def setEditor(value: Instantiable1[/* instance */ default, TimeEditor]): Self = StObject.set(x, "editor", value.asInstanceOf[js.Any])
       

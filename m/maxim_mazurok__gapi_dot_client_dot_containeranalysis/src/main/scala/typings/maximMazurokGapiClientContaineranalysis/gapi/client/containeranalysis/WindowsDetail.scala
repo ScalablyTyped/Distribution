@@ -28,7 +28,8 @@ object WindowsDetail {
     __obj.asInstanceOf[WindowsDetail]
   }
   
-  extension [Self <: WindowsDetail](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WindowsDetail] (val x: Self) extends AnyVal {
     
     inline def setCpeUri(value: String): Self = StObject.set(x, "cpeUri", value.asInstanceOf[js.Any])
     

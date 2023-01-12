@@ -151,7 +151,8 @@ object XAcceleratorConfiguration {
     __obj.asInstanceOf[XAcceleratorConfiguration]
   }
   
-  extension [Self <: XAcceleratorConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XAcceleratorConfiguration] (val x: Self) extends AnyVal {
     
     inline def setAllKeyEvents(value: SafeArray[KeyEvent]): Self = StObject.set(x, "AllKeyEvents", value.asInstanceOf[js.Any])
     

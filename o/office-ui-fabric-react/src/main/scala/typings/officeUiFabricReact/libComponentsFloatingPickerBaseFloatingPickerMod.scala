@@ -111,7 +111,8 @@ object libComponentsFloatingPickerBaseFloatingPickerMod {
       __obj.asInstanceOf[IBaseFloatingPickerState]
     }
     
-    extension [Self <: IBaseFloatingPickerState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IBaseFloatingPickerState] (val x: Self) extends AnyVal {
       
       inline def setDidBind(value: Boolean): Self = StObject.set(x, "didBind", value.asInstanceOf[js.Any])
       

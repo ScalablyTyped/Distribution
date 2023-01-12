@@ -36,7 +36,8 @@ object SpamCheck {
     __obj.asInstanceOf[SpamCheck]
   }
   
-  extension [Self <: SpamCheck](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpamCheck] (val x: Self) extends AnyVal {
     
     inline def setGetEnable(value: () => Boolean): Self = StObject.set(x, "getEnable", js.Any.fromFunction0(value))
     

@@ -18,7 +18,8 @@ object DescribeAppInstanceRequest {
     __obj.asInstanceOf[DescribeAppInstanceRequest]
   }
   
-  extension [Self <: DescribeAppInstanceRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeAppInstanceRequest] (val x: Self) extends AnyVal {
     
     inline def setAppInstanceArn(value: ChimeArn): Self = StObject.set(x, "AppInstanceArn", value.asInstanceOf[js.Any])
   }

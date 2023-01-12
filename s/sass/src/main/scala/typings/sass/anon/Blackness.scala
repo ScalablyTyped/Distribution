@@ -21,7 +21,8 @@ object Blackness {
     __obj.asInstanceOf[Blackness]
   }
   
-  extension [Self <: Blackness](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Blackness] (val x: Self) extends AnyVal {
     
     inline def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
     

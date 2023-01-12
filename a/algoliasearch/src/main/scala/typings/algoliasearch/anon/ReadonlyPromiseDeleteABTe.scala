@@ -28,7 +28,8 @@ object ReadonlyPromiseDeleteABTe {
     __obj.asInstanceOf[ReadonlyPromiseDeleteABTe]
   }
   
-  extension [Self <: ReadonlyPromiseDeleteABTe](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadonlyPromiseDeleteABTe] (val x: Self) extends AnyVal {
     
     inline def setCatch(value: () => js.Promise[DeleteABTestResponse | Any]): Self = StObject.set(x, "catch", js.Any.fromFunction0(value))
     

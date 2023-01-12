@@ -23,7 +23,8 @@ object AwsRedshiftClusterResizeInfo {
     __obj.asInstanceOf[AwsRedshiftClusterResizeInfo]
   }
   
-  extension [Self <: AwsRedshiftClusterResizeInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsRedshiftClusterResizeInfo] (val x: Self) extends AnyVal {
     
     inline def setAllowCancelResize(value: Boolean): Self = StObject.set(x, "AllowCancelResize", value.asInstanceOf[js.Any])
     

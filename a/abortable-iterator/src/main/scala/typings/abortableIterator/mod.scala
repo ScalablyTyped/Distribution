@@ -55,7 +55,8 @@ object mod {
       __obj.asInstanceOf[Options[T]]
     }
     
-    extension [Self <: Options[?], T](x: Self & Options[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options[?], T] (val x: Self & Options[T]) extends AnyVal {
       
       inline def setAbortCode(value: String): Self = StObject.set(x, "abortCode", value.asInstanceOf[js.Any])
       

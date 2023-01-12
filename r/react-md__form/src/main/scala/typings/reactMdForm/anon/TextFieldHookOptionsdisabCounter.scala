@@ -140,7 +140,8 @@ object TextFieldHookOptionsdisabCounter {
     __obj.asInstanceOf[TextFieldHookOptionsdisabCounter]
   }
   
-  extension [Self <: TextFieldHookOptionsdisabCounter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextFieldHookOptionsdisabCounter] (val x: Self) extends AnyVal {
     
     inline def setCounter(value: Boolean): Self = StObject.set(x, "counter", value.asInstanceOf[js.Any])
     

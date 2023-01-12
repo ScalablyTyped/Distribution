@@ -19,7 +19,8 @@ object DeviceMap {
     __obj.asInstanceOf[DeviceMap]
   }
   
-  extension [Self <: DeviceMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeviceMap] (val x: Self) extends AnyVal {
     
     inline def setAudioInput(value: js.Array[Device]): Self = StObject.set(x, "audioInput", value.asInstanceOf[js.Any])
     

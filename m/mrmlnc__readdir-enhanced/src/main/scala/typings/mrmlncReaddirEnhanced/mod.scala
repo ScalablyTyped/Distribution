@@ -106,7 +106,8 @@ object mod {
       __obj.asInstanceOf[FileSystem]
     }
     
-    extension [Self <: FileSystem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileSystem] (val x: Self) extends AnyVal {
       
       inline def setLstat(value: (/* path */ String, /* callback */ Callback[Stats]) => Unit): Self = StObject.set(x, "lstat", js.Any.fromFunction2(value))
       
@@ -143,7 +144,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setBasePath(value: String): Self = StObject.set(x, "basePath", value.asInstanceOf[js.Any])
       

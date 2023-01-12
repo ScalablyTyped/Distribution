@@ -167,7 +167,8 @@ object IAbstractStore {
     __obj.asInstanceOf[IAbstractStore]
   }
   
-  extension [Self <: IAbstractStore](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IAbstractStore] (val x: Self) extends AnyVal {
     
     inline def setAutoLoad(value: Any): Self = StObject.set(x, "autoLoad", value.asInstanceOf[js.Any])
     

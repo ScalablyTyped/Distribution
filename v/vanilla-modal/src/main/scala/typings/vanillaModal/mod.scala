@@ -98,7 +98,8 @@ object mod {
       __obj.asInstanceOf[VanillaModalConfig]
     }
     
-    extension [Self <: VanillaModalConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VanillaModalConfig] (val x: Self) extends AnyVal {
       
       inline def setClass(value: String): Self = StObject.set(x, "class", value.asInstanceOf[js.Any])
       
@@ -185,7 +186,8 @@ object mod {
       __obj.asInstanceOf[VanillaModalDomNodes]
     }
     
-    extension [Self <: VanillaModalDomNodes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VanillaModalDomNodes] (val x: Self) extends AnyVal {
       
       inline def setModal(value: HTMLElement): Self = StObject.set(x, "modal", value.asInstanceOf[js.Any])
       

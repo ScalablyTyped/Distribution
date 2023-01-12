@@ -57,7 +57,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[IFsStats]
     }
     
-    extension [Self <: IFsStats](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IFsStats] (val x: Self) extends AnyVal {
       
       inline def setAtime(value: js.Date): Self = StObject.set(x, "atime", value.asInstanceOf[js.Any])
       
@@ -124,7 +125,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[IOptions]
     }
     
-    extension [Self <: IOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
       
       inline def setNewLine(value: String): Self = StObject.set(x, "newLine", value.asInstanceOf[js.Any])
     }
@@ -149,7 +151,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[IVinylOptions]
     }
     
-    extension [Self <: IVinylOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IVinylOptions] (val x: Self) extends AnyVal {
       
       inline def setBase(value: String): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
       

@@ -25,7 +25,8 @@ object IGeoXmlSummaryMetadata {
     __obj.asInstanceOf[IGeoXmlSummaryMetadata]
   }
   
-  extension [Self <: IGeoXmlSummaryMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IGeoXmlSummaryMetadata] (val x: Self) extends AnyVal {
     
     inline def setBounds(value: LocationRect): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
     

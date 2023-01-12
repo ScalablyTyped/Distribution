@@ -62,7 +62,8 @@ object ojcontextMod {
       __obj.asInstanceOf[Context]
     }
     
-    extension [Self <: Context](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Context] (val x: Self) extends AnyVal {
       
       inline def setGetBusyContext(value: () => BusyContext): Self = StObject.set(x, "getBusyContext", js.Any.fromFunction0(value))
     }

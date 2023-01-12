@@ -34,7 +34,8 @@ object CreateTournamentPayload {
     __obj.asInstanceOf[CreateTournamentPayload]
   }
   
-  extension [Self <: CreateTournamentPayload](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateTournamentPayload] (val x: Self) extends AnyVal {
     
     inline def setConfig(value: CreateTournamentConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     

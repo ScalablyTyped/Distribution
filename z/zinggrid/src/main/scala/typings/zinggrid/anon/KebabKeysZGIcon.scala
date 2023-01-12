@@ -16,7 +16,8 @@ object KebabKeysZGIcon {
     __obj.asInstanceOf[KebabKeysZGIcon]
   }
   
-  extension [Self <: KebabKeysZGIcon](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KebabKeysZGIcon] (val x: Self) extends AnyVal {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

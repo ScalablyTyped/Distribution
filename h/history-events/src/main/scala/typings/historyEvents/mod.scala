@@ -66,7 +66,8 @@ object mod {
         __obj.asInstanceOf[Window]
       }
       
-      extension [Self <: Window](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Window] (val x: Self) extends AnyVal {
         
         inline def setOnchangestate(value: () => Unit): Self = StObject.set(x, "onchangestate", js.Any.fromFunction0(value))
         
@@ -110,7 +111,8 @@ object mod {
         __obj.asInstanceOf[WindowEventHandlersEventMap]
       }
       
-      extension [Self <: WindowEventHandlersEventMap](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: WindowEventHandlersEventMap] (val x: Self) extends AnyVal {
         
         inline def setChangestate(value: HistoryEvent): Self = StObject.set(x, "changestate", value.asInstanceOf[js.Any])
         

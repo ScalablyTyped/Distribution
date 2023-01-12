@@ -35,7 +35,8 @@ object utils {
     __obj.asInstanceOf[utils]
   }
   
-  extension [Self <: utils](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: utils] (val x: Self) extends AnyVal {
     
     inline def setGetDefaultBandCombination(value: utilsGetDefaultBandCombinationParams => js.Promise[js.Array[Double]]): Self = StObject.set(x, "getDefaultBandCombination", js.Any.fromFunction1(value))
     

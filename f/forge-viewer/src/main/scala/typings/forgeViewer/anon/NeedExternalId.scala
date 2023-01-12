@@ -15,7 +15,8 @@ object NeedExternalId {
     __obj.asInstanceOf[NeedExternalId]
   }
   
-  extension [Self <: NeedExternalId](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NeedExternalId] (val x: Self) extends AnyVal {
     
     inline def setNeedExternalId(value: Boolean): Self = StObject.set(x, "needExternalId", value.asInstanceOf[js.Any])
   }

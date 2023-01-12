@@ -50,7 +50,8 @@ object MetricMetadata {
     __obj.asInstanceOf[MetricMetadata]
   }
   
-  extension [Self <: MetricMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MetricMetadata] (val x: Self) extends AnyVal {
     
     inline def setApiName(value: String): Self = StObject.set(x, "apiName", value.asInstanceOf[js.Any])
     

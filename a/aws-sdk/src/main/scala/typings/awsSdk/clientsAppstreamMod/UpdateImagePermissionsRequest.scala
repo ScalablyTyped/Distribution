@@ -28,7 +28,8 @@ object UpdateImagePermissionsRequest {
     __obj.asInstanceOf[UpdateImagePermissionsRequest]
   }
   
-  extension [Self <: UpdateImagePermissionsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateImagePermissionsRequest] (val x: Self) extends AnyVal {
     
     inline def setImagePermissions(value: ImagePermissions): Self = StObject.set(x, "ImagePermissions", value.asInstanceOf[js.Any])
     

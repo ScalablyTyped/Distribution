@@ -24,7 +24,8 @@ object EnumTypeDefinition {
     __obj.asInstanceOf[EnumTypeDefinition]
   }
   
-  extension [Self <: EnumTypeDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnumTypeDefinition] (val x: Self) extends AnyVal {
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

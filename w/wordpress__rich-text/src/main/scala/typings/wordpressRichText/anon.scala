@@ -32,7 +32,8 @@ object anon {
       __obj.asInstanceOf[Element]
     }
     
-    extension [Self <: Element](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Element] (val x: Self) extends AnyVal {
       
       inline def setElement(value: typings.std.Element): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
@@ -71,7 +72,8 @@ object anon {
       __obj.asInstanceOf[Html]
     }
     
-    extension [Self <: Html](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Html] (val x: Self) extends AnyVal {
       
       inline def setHtml(value: String): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
     }
@@ -92,7 +94,8 @@ object anon {
       __obj.asInstanceOf[MultilineTag]
     }
     
-    extension [Self <: MultilineTag](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MultilineTag] (val x: Self) extends AnyVal {
       
       inline def setMultilineTag(
         value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112, starting with typings.wordpressRichText.wordpressRichTextStrings.a, typings.wordpressRichText.wordpressRichTextStrings.abbr, typings.wordpressRichText.wordpressRichTextStrings.address */ Any
@@ -115,7 +118,8 @@ object anon {
       __obj.asInstanceOf[Text]
     }
     
-    extension [Self <: Text](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Text] (val x: Self) extends AnyVal {
       
       inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     }
@@ -155,7 +159,8 @@ object anon {
       __obj.asInstanceOf[TypeofimportedSelectors]
     }
     
-    extension [Self <: TypeofimportedSelectors](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypeofimportedSelectors] (val x: Self) extends AnyVal {
       
       inline def setGetFormatType(value: String => js.UndefOr[NamedFormatConfiguration]): Self = StObject.set(x, "getFormatType", js.Any.fromFunction1(value))
       

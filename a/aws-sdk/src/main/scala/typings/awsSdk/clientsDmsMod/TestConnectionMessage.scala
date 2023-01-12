@@ -23,7 +23,8 @@ object TestConnectionMessage {
     __obj.asInstanceOf[TestConnectionMessage]
   }
   
-  extension [Self <: TestConnectionMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TestConnectionMessage] (val x: Self) extends AnyVal {
     
     inline def setEndpointArn(value: String): Self = StObject.set(x, "EndpointArn", value.asInstanceOf[js.Any])
     

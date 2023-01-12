@@ -44,7 +44,8 @@ object mod {
       __obj.asInstanceOf[ConversionOptions]
     }
     
-    extension [Self <: ConversionOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConversionOptions] (val x: Self) extends AnyVal {
       
       inline def setBuffer(value: ArrayBufferLike): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
       
@@ -67,7 +68,8 @@ object mod {
       __obj.asInstanceOf[Convertible]
     }
     
-    extension [Self <: Convertible](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Convertible] (val x: Self) extends AnyVal {
       
       inline def setConvert(value: () => js.Promise[js.typedarray.ArrayBuffer]): Self = StObject.set(x, "convert", js.Any.fromFunction0(value))
     }

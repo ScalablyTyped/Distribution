@@ -15,7 +15,8 @@ object Sticky {
     __obj.asInstanceOf[Sticky]
   }
   
-  extension [Self <: Sticky](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Sticky] (val x: Self) extends AnyVal {
     
     inline def setSticky(value: ZIndex): Self = StObject.set(x, "sticky", value.asInstanceOf[js.Any])
     

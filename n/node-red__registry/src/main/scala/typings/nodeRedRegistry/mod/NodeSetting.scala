@@ -17,7 +17,8 @@ object NodeSetting {
     __obj.asInstanceOf[NodeSetting[T]]
   }
   
-  extension [Self <: NodeSetting[?], T](x: Self & NodeSetting[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodeSetting[?], T] (val x: Self & NodeSetting[T]) extends AnyVal {
     
     inline def setExportable(value: Boolean): Self = StObject.set(x, "exportable", value.asInstanceOf[js.Any])
     

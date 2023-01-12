@@ -26,7 +26,8 @@ object AlternativePlaceId {
     __obj.asInstanceOf[AlternativePlaceId]
   }
   
-  extension [Self <: AlternativePlaceId](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AlternativePlaceId] (val x: Self) extends AnyVal {
     
     inline def setPlace_id(value: String): Self = StObject.set(x, "place_id", value.asInstanceOf[js.Any])
     

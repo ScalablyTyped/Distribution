@@ -152,7 +152,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setAllowEmptyInput(value: Boolean): Self = StObject.set(x, "allowEmptyInput", value.asInstanceOf[js.Any])
       
@@ -359,7 +360,8 @@ object mod {
       __obj.asInstanceOf[StylelintWebpackPlugin]
     }
     
-    extension [Self <: StylelintWebpackPlugin](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StylelintWebpackPlugin] (val x: Self) extends AnyVal {
       
       inline def setApply(value: Compiler => Unit): Self = StObject.set(x, "apply", js.Any.fromFunction1(value))
       

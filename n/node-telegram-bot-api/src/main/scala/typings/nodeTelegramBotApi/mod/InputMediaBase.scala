@@ -19,7 +19,8 @@ object InputMediaBase {
     __obj.asInstanceOf[InputMediaBase]
   }
   
-  extension [Self <: InputMediaBase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InputMediaBase] (val x: Self) extends AnyVal {
     
     inline def setCaption(value: String): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
     

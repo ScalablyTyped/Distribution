@@ -91,7 +91,8 @@ object srcNgtscTypecheckSrcTcbUtilMod {
       __obj.asInstanceOf[ReferenceEmitEnvironment]
     }
     
-    extension [Self <: ReferenceEmitEnvironment](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReferenceEmitEnvironment] (val x: Self) extends AnyVal {
       
       inline def setCanReferenceType(value: Reference[Node] => Boolean): Self = StObject.set(x, "canReferenceType", js.Any.fromFunction1(value))
     }
@@ -125,7 +126,8 @@ object srcNgtscTypecheckSrcTcbUtilMod {
       __obj.asInstanceOf[TemplateSourceResolver]
     }
     
-    extension [Self <: TemplateSourceResolver](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TemplateSourceResolver] (val x: Self) extends AnyVal {
       
       inline def setGetSourceMapping(value: TemplateId => TemplateSourceMapping): Self = StObject.set(x, "getSourceMapping", js.Any.fromFunction1(value))
       

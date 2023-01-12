@@ -28,7 +28,8 @@ object EventParameters {
     __obj.asInstanceOf[EventParameters]
   }
   
-  extension [Self <: EventParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventParameters] (val x: Self) extends AnyVal {
     
     inline def setDescriptionRegex(value: DescriptionRegex): Self = StObject.set(x, "DescriptionRegex", value.asInstanceOf[js.Any])
     

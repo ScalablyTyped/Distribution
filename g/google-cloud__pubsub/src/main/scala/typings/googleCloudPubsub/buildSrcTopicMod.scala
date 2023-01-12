@@ -717,7 +717,8 @@ object buildSrcTopicMod {
       __obj.asInstanceOf[GetTopicOptions]
     }
     
-    extension [Self <: GetTopicOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetTopicOptions] (val x: Self) extends AnyVal {
       
       inline def setAutoCreate(value: Boolean): Self = StObject.set(x, "autoCreate", value.asInstanceOf[js.Any])
       
@@ -750,7 +751,8 @@ object buildSrcTopicMod {
       __obj.asInstanceOf[MessageOptions]
     }
     
-    extension [Self <: MessageOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MessageOptions] (val x: Self) extends AnyVal {
       
       inline def setJson(value: Any): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
       

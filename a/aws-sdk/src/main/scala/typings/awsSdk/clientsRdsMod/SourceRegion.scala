@@ -33,7 +33,8 @@ object SourceRegion {
     __obj.asInstanceOf[SourceRegion]
   }
   
-  extension [Self <: SourceRegion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SourceRegion] (val x: Self) extends AnyVal {
     
     inline def setEndpoint(value: String): Self = StObject.set(x, "Endpoint", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object srcComponentsContainerMod extends Shortcut {
       __obj.asInstanceOf[ContainerProps]
     }
     
-    extension [Self <: ContainerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContainerProps] (val x: Self) extends AnyVal {
       
       inline def setBreakpoint(value: Breakpoint | fluid): Self = StObject.set(x, "breakpoint", value.asInstanceOf[js.Any])
       

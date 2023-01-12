@@ -27,7 +27,8 @@ object GetFullAXTreeRequest {
     __obj.asInstanceOf[GetFullAXTreeRequest]
   }
   
-  extension [Self <: GetFullAXTreeRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetFullAXTreeRequest] (val x: Self) extends AnyVal {
     
     inline def setDepth(value: integer): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
     

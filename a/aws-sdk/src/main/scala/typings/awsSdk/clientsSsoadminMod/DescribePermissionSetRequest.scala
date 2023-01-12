@@ -23,7 +23,8 @@ object DescribePermissionSetRequest {
     __obj.asInstanceOf[DescribePermissionSetRequest]
   }
   
-  extension [Self <: DescribePermissionSetRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribePermissionSetRequest] (val x: Self) extends AnyVal {
     
     inline def setInstanceArn(value: InstanceArn): Self = StObject.set(x, "InstanceArn", value.asInstanceOf[js.Any])
     

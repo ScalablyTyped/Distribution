@@ -17,7 +17,8 @@ object MaxDate {
     __obj.asInstanceOf[MaxDate[T]]
   }
   
-  extension [Self <: MaxDate[?], T](x: Self & MaxDate[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MaxDate[?], T] (val x: Self & MaxDate[T]) extends AnyVal {
     
     inline def setIncludeDates(value: js.Array[T]): Self = StObject.set(x, "includeDates", value.asInstanceOf[js.Any])
     

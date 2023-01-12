@@ -52,7 +52,8 @@ object ExtensionBaseUri {
     __obj.asInstanceOf[ExtensionBaseUri]
   }
   
-  extension [Self <: ExtensionBaseUri](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExtensionBaseUri] (val x: Self) extends AnyVal {
     
     inline def setExtensionBaseUri(value: String): Self = StObject.set(x, "extensionBaseUri", value.asInstanceOf[js.Any])
     

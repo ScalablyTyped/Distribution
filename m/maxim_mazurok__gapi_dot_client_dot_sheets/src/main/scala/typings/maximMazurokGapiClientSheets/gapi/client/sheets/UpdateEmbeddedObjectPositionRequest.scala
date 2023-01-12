@@ -28,7 +28,8 @@ object UpdateEmbeddedObjectPositionRequest {
     __obj.asInstanceOf[UpdateEmbeddedObjectPositionRequest]
   }
   
-  extension [Self <: UpdateEmbeddedObjectPositionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateEmbeddedObjectPositionRequest] (val x: Self) extends AnyVal {
     
     inline def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     

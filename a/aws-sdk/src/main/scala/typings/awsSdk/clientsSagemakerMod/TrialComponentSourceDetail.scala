@@ -33,7 +33,8 @@ object TrialComponentSourceDetail {
     __obj.asInstanceOf[TrialComponentSourceDetail]
   }
   
-  extension [Self <: TrialComponentSourceDetail](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TrialComponentSourceDetail] (val x: Self) extends AnyVal {
     
     inline def setProcessingJob(value: ProcessingJob): Self = StObject.set(x, "ProcessingJob", value.asInstanceOf[js.Any])
     

@@ -33,7 +33,8 @@ object ContactInfo {
     __obj.asInstanceOf[ContactInfo]
   }
   
-  extension [Self <: ContactInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContactInfo] (val x: Self) extends AnyVal {
     
     inline def setAor(value: String): Self = StObject.set(x, "aor", value.asInstanceOf[js.Any])
     

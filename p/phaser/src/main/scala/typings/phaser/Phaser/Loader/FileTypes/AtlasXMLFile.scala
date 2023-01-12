@@ -48,7 +48,8 @@ object AtlasXMLFile {
     __obj.asInstanceOf[AtlasXMLFile]
   }
   
-  extension [Self <: AtlasXMLFile](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AtlasXMLFile] (val x: Self) extends AnyVal {
     
     inline def setAddToCache(value: () => Unit): Self = StObject.set(x, "addToCache", js.Any.fromFunction0(value))
   }

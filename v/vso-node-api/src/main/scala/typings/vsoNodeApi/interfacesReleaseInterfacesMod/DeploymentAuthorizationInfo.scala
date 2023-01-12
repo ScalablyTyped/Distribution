@@ -26,7 +26,8 @@ object DeploymentAuthorizationInfo {
     __obj.asInstanceOf[DeploymentAuthorizationInfo]
   }
   
-  extension [Self <: DeploymentAuthorizationInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeploymentAuthorizationInfo] (val x: Self) extends AnyVal {
     
     inline def setAuthorizationHeaderFor(value: AuthorizationHeaderFor): Self = StObject.set(x, "authorizationHeaderFor", value.asInstanceOf[js.Any])
     

@@ -86,7 +86,8 @@ object WeakValidationMapVictoryCActive {
     __obj.asInstanceOf[WeakValidationMapVictoryCActive]
   }
   
-  extension [Self <: WeakValidationMapVictoryCActive](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WeakValidationMapVictoryCActive] (val x: Self) extends AnyVal {
     
     inline def setActive(
       value: /* import warning: importer.ImportType#apply Failed type conversion: null extends boolean | undefined ? react.react.Validator<boolean | undefined | null | undefined> : undefined extends boolean | undefined ? react.react.Validator<boolean | undefined | null | undefined> : react.react.Validator<boolean | undefined> */ js.Any

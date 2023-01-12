@@ -31,7 +31,8 @@ object mod {
       __obj.asInstanceOf[PortInfo]
     }
     
-    extension [Self <: PortInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PortInfo] (val x: Self) extends AnyVal {
       
       inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
@@ -54,7 +55,8 @@ object mod {
       __obj.asInstanceOf[ServiceInfo]
     }
     
-    extension [Self <: ServiceInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ServiceInfo] (val x: Self) extends AnyVal {
       
       inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       

@@ -74,7 +74,8 @@ object distLibRouterRouterMod {
       __obj.asInstanceOf[BaseRouter]
     }
     
-    extension [Self <: BaseRouter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseRouter] (val x: Self) extends AnyVal {
       
       inline def setAsPath(value: String): Self = StObject.set(x, "asPath", value.asInstanceOf[js.Any])
       
@@ -146,7 +147,8 @@ object distLibRouterRouterMod {
       __obj.asInstanceOf[NextRouter]
     }
     
-    extension [Self <: NextRouter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NextRouter] (val x: Self) extends AnyVal {
       
       inline def setAsPath(value: String): Self = StObject.set(x, "asPath", value.asInstanceOf[js.Any])
       
@@ -195,7 +197,8 @@ object distLibRouterRouterMod {
       __obj.asInstanceOf[RouteInfo]
     }
     
-    extension [Self <: RouteInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RouteInfo] (val x: Self) extends AnyVal {
       
       inline def setComponent(value: ComponentType[js.Object]): Self = StObject.set(x, "Component", value.asInstanceOf[js.Any])
       

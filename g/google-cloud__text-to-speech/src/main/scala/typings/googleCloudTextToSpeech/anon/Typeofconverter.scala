@@ -29,7 +29,8 @@ object Typeofconverter {
     __obj.asInstanceOf[Typeofconverter]
   }
   
-  extension [Self <: Typeofconverter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Typeofconverter] (val x: Self) extends AnyVal {
     
     inline def setFromObject(value: Type => Codegen): Self = StObject.set(x, "fromObject", js.Any.fromFunction1(value))
     

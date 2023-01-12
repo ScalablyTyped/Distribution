@@ -22,7 +22,8 @@ object anon {
       __obj.asInstanceOf[Counter]
     }
     
-    extension [Self <: Counter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Counter] (val x: Self) extends AnyVal {
       
       inline def setCounter(value: Double): Self = StObject.set(x, "counter", value.asInstanceOf[js.Any])
       
@@ -45,7 +46,8 @@ object anon {
       __obj.asInstanceOf[Secret]
     }
     
-    extension [Self <: Secret](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Secret] (val x: Self) extends AnyVal {
       
       inline def setSecret(value: SecretKey): Self = StObject.set(x, "secret", value.asInstanceOf[js.Any])
       

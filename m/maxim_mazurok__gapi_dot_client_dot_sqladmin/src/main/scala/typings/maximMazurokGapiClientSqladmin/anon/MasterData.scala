@@ -20,7 +20,8 @@ object MasterData {
     __obj.asInstanceOf[MasterData]
   }
   
-  extension [Self <: MasterData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MasterData] (val x: Self) extends AnyVal {
     
     inline def setMasterData(value: Double): Self = StObject.set(x, "masterData", value.asInstanceOf[js.Any])
     

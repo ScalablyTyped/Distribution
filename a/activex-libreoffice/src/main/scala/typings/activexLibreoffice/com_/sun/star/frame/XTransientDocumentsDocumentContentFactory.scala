@@ -39,7 +39,8 @@ object XTransientDocumentsDocumentContentFactory {
     __obj.asInstanceOf[XTransientDocumentsDocumentContentFactory]
   }
   
-  extension [Self <: XTransientDocumentsDocumentContentFactory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XTransientDocumentsDocumentContentFactory] (val x: Self) extends AnyVal {
     
     inline def setCreateDocumentContent(value: XModel => XContent): Self = StObject.set(x, "createDocumentContent", js.Any.fromFunction1(value))
   }

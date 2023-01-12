@@ -24,7 +24,8 @@ object AnalysisCharGroupTokenizer {
     __obj.asInstanceOf[AnalysisCharGroupTokenizer]
   }
   
-  extension [Self <: AnalysisCharGroupTokenizer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnalysisCharGroupTokenizer] (val x: Self) extends AnyVal {
     
     inline def setMax_token_length(value: integer): Self = StObject.set(x, "max_token_length", value.asInstanceOf[js.Any])
     

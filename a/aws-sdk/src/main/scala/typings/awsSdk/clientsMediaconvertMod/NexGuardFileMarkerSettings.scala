@@ -33,7 +33,8 @@ object NexGuardFileMarkerSettings {
     __obj.asInstanceOf[NexGuardFileMarkerSettings]
   }
   
-  extension [Self <: NexGuardFileMarkerSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NexGuardFileMarkerSettings] (val x: Self) extends AnyVal {
     
     inline def setLicense(value: stringMin1Max100000): Self = StObject.set(x, "License", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object ListBrokersResponse {
     __obj.asInstanceOf[ListBrokersResponse]
   }
   
-  extension [Self <: ListBrokersResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListBrokersResponse] (val x: Self) extends AnyVal {
     
     inline def setBrokerSummaries(value: listOfBrokerSummary): Self = StObject.set(x, "BrokerSummaries", value.asInstanceOf[js.Any])
     

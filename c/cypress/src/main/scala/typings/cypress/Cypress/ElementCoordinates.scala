@@ -31,7 +31,8 @@ object ElementCoordinates {
     __obj.asInstanceOf[ElementCoordinates]
   }
   
-  extension [Self <: ElementCoordinates](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ElementCoordinates] (val x: Self) extends AnyVal {
     
     inline def setFromAutWindow(value: WindowPositionxnumberynum): Self = StObject.set(x, "fromAutWindow", value.asInstanceOf[js.Any])
     

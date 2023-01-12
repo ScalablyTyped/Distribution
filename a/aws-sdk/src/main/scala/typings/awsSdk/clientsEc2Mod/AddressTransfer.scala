@@ -43,7 +43,8 @@ object AddressTransfer {
     __obj.asInstanceOf[AddressTransfer]
   }
   
-  extension [Self <: AddressTransfer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AddressTransfer] (val x: Self) extends AnyVal {
     
     inline def setAddressTransferStatus(value: AddressTransferStatus): Self = StObject.set(x, "AddressTransferStatus", value.asInstanceOf[js.Any])
     

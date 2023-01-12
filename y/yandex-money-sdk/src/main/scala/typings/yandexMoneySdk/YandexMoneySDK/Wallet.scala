@@ -39,7 +39,8 @@ object Wallet {
       __obj.asInstanceOf[AccountInfoResult]
     }
     
-    extension [Self <: AccountInfoResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AccountInfoResult] (val x: Self) extends AnyVal {
       
       inline def setAccount(value: String): Self = StObject.set(x, "account", value.asInstanceOf[js.Any])
       
@@ -80,7 +81,8 @@ object Wallet {
       __obj.asInstanceOf[GetAccessTokenResult]
     }
     
-    extension [Self <: GetAccessTokenResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetAccessTokenResult] (val x: Self) extends AnyVal {
       
       inline def setAccess_token(value: String): Self = StObject.set(x, "access_token", value.asInstanceOf[js.Any])
       
@@ -109,7 +111,8 @@ object Wallet {
       __obj.asInstanceOf[IncomingTransferAcceptResult]
     }
     
-    extension [Self <: IncomingTransferAcceptResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IncomingTransferAcceptResult] (val x: Self) extends AnyVal {
       
       inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
@@ -140,7 +143,8 @@ object Wallet {
       __obj.asInstanceOf[IncomingTransferRejectResult]
     }
     
-    extension [Self <: IncomingTransferRejectResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IncomingTransferRejectResult] (val x: Self) extends AnyVal {
       
       inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
@@ -205,7 +209,8 @@ object Wallet {
       __obj.asInstanceOf[OperationDetailsResult]
     }
     
-    extension [Self <: OperationDetailsResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OperationDetailsResult] (val x: Self) extends AnyVal {
       
       inline def setAmount(value: Double): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
       
@@ -325,7 +330,8 @@ object Wallet {
       __obj.asInstanceOf[OperationHistoryOptions]
     }
     
-    extension [Self <: OperationHistoryOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OperationHistoryOptions] (val x: Self) extends AnyVal {
       
       inline def setDetails(value: Boolean): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
       
@@ -370,7 +376,8 @@ object Wallet {
       __obj.asInstanceOf[OperationHistoryResult]
     }
     
-    extension [Self <: OperationHistoryResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OperationHistoryResult] (val x: Self) extends AnyVal {
       
       inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
@@ -413,7 +420,8 @@ object Wallet {
       __obj.asInstanceOf[ProcessPaymentOptions]
     }
     
-    extension [Self <: ProcessPaymentOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProcessPaymentOptions] (val x: Self) extends AnyVal {
       
       inline def setCsc(value: String): Self = StObject.set(x, "csc", value.asInstanceOf[js.Any])
       
@@ -484,7 +492,8 @@ object Wallet {
       __obj.asInstanceOf[ProcessPaymentResult]
     }
     
-    extension [Self <: ProcessPaymentResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProcessPaymentResult] (val x: Self) extends AnyVal {
       
       inline def setAccount_unblock_uri(value: String): Self = StObject.set(x, "account_unblock_uri", value.asInstanceOf[js.Any])
       
@@ -581,7 +590,8 @@ object Wallet {
       __obj.asInstanceOf[RequestPaymentOptions]
     }
     
-    extension [Self <: RequestPaymentOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequestPaymentOptions] (val x: Self) extends AnyVal {
       
       inline def setAmount(value: Double): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
       
@@ -670,7 +680,8 @@ object Wallet {
       __obj.asInstanceOf[RequestPaymentResult]
     }
     
-    extension [Self <: RequestPaymentResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequestPaymentResult] (val x: Self) extends AnyVal {
       
       inline def setAccount_unblock_uri(value: String): Self = StObject.set(x, "account_unblock_uri", value.asInstanceOf[js.Any])
       
@@ -731,7 +742,8 @@ object Wallet {
       __obj.asInstanceOf[SendAuthenticatedRequestParams]
     }
     
-    extension [Self <: SendAuthenticatedRequestParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SendAuthenticatedRequestParams] (val x: Self) extends AnyVal {
       
       inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       

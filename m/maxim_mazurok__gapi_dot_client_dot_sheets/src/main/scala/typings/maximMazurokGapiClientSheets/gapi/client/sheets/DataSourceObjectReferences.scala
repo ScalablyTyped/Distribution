@@ -16,7 +16,8 @@ object DataSourceObjectReferences {
     __obj.asInstanceOf[DataSourceObjectReferences]
   }
   
-  extension [Self <: DataSourceObjectReferences](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataSourceObjectReferences] (val x: Self) extends AnyVal {
     
     inline def setReferences(value: js.Array[DataSourceObjectReference]): Self = StObject.set(x, "references", value.asInstanceOf[js.Any])
     

@@ -113,7 +113,8 @@ object GeneratedCodeInfo {
         __obj.asInstanceOf[typings.googleProtobuf.googleProtobufDescriptorPbMod.GeneratedCodeInfo.Annotation.AsObject]
       }
       
-      extension [Self <: typings.googleProtobuf.googleProtobufDescriptorPbMod.GeneratedCodeInfo.Annotation.AsObject](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.googleProtobuf.googleProtobufDescriptorPbMod.GeneratedCodeInfo.Annotation.AsObject] (val x: Self) extends AnyVal {
         
         inline def setBegin(value: Double): Self = StObject.set(x, "begin", value.asInstanceOf[js.Any])
         
@@ -170,7 +171,8 @@ object GeneratedCodeInfo {
       __obj.asInstanceOf[AsObject]
     }
     
-    extension [Self <: AsObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AsObject] (val x: Self) extends AnyVal {
       
       inline def setAnnotationList(
         value: js.Array[

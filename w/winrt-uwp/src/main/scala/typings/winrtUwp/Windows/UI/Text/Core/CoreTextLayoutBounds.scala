@@ -21,7 +21,8 @@ object CoreTextLayoutBounds {
     __obj.asInstanceOf[CoreTextLayoutBounds]
   }
   
-  extension [Self <: CoreTextLayoutBounds](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CoreTextLayoutBounds] (val x: Self) extends AnyVal {
     
     inline def setControlBounds(value: Rect): Self = StObject.set(x, "controlBounds", value.asInstanceOf[js.Any])
     

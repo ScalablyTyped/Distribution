@@ -23,7 +23,8 @@ object ArcMark {
     __obj.asInstanceOf[ArcMark]
   }
   
-  extension [Self <: ArcMark](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ArcMark] (val x: Self) extends AnyVal {
     
     inline def setType(value: arc): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

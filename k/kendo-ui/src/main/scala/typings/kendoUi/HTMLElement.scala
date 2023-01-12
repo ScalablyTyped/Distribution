@@ -16,7 +16,8 @@ object HTMLElement {
     __obj.asInstanceOf[HTMLElement]
   }
   
-  extension [Self <: HTMLElement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HTMLElement] (val x: Self) extends AnyVal {
     
     inline def setKendoBindingTarget(value: BindingTarget): Self = StObject.set(x, "kendoBindingTarget", value.asInstanceOf[js.Any])
   }

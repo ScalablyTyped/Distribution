@@ -33,7 +33,8 @@ object withWidthWithWidthMod {
       __obj.asInstanceOf[WithWidth]
     }
     
-    extension [Self <: WithWidth](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WithWidth] (val x: Self) extends AnyVal {
       
       inline def setWidth(value: Breakpoint): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     }
@@ -56,7 +57,8 @@ object withWidthWithWidthMod {
       __obj.asInstanceOf[WithWidthOptions]
     }
     
-    extension [Self <: WithWidthOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WithWidthOptions] (val x: Self) extends AnyVal {
       
       inline def setInitialWidth(value: Breakpoint): Self = StObject.set(x, "initialWidth", value.asInstanceOf[js.Any])
       
@@ -90,7 +92,8 @@ object withWidthWithWidthMod {
       __obj.asInstanceOf[WithWidthProps]
     }
     
-    extension [Self <: WithWidthProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WithWidthProps] (val x: Self) extends AnyVal {
       
       inline def setInnerRef(value: Ref[Any]): Self = StObject.set(x, "innerRef", value.asInstanceOf[js.Any])
       

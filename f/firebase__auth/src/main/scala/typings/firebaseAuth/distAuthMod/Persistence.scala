@@ -25,7 +25,8 @@ object Persistence {
     __obj.asInstanceOf[Persistence]
   }
   
-  extension [Self <: Persistence](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Persistence] (val x: Self) extends AnyVal {
     
     inline def setType(value: SESSION | LOCAL | NONE): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

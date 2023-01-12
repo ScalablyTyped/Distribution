@@ -28,7 +28,8 @@ object PhoneNumberError {
     __obj.asInstanceOf[PhoneNumberError]
   }
   
-  extension [Self <: PhoneNumberError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PhoneNumberError] (val x: Self) extends AnyVal {
     
     inline def setErrorCode(value: ErrorCode): Self = StObject.set(x, "ErrorCode", value.asInstanceOf[js.Any])
     

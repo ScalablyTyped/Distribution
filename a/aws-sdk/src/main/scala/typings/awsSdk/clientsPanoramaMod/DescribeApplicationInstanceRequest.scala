@@ -18,7 +18,8 @@ object DescribeApplicationInstanceRequest {
     __obj.asInstanceOf[DescribeApplicationInstanceRequest]
   }
   
-  extension [Self <: DescribeApplicationInstanceRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeApplicationInstanceRequest] (val x: Self) extends AnyVal {
     
     inline def setApplicationInstanceId(value: ApplicationInstanceId): Self = StObject.set(x, "ApplicationInstanceId", value.asInstanceOf[js.Any])
   }

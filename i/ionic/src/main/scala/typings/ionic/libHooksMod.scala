@@ -57,7 +57,8 @@ object libHooksMod {
       __obj.asInstanceOf[HookDeps]
     }
     
-    extension [Self <: HookDeps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HookDeps] (val x: Self) extends AnyVal {
       
       inline def setConfig(value: IConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       

@@ -30,7 +30,8 @@ object MlDiscoveryNode {
     __obj.asInstanceOf[MlDiscoveryNode]
   }
   
-  extension [Self <: MlDiscoveryNode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlDiscoveryNode] (val x: Self) extends AnyVal {
     
     inline def setAttributes(value: Record[String, String]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     

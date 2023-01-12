@@ -25,7 +25,8 @@ object GetDetails {
     __obj.asInstanceOf[GetDetails]
   }
   
-  extension [Self <: GetDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetDetails] (val x: Self) extends AnyVal {
     
     inline def setIncognito(value: Boolean): Self = StObject.set(x, "incognito", value.asInstanceOf[js.Any])
     

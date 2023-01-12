@@ -153,7 +153,8 @@ object libEsmCellCellMod {
       __obj.asInstanceOf[ICellProps]
     }
     
-    extension [Self <: ICellProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICellProps] (val x: Self) extends AnyVal {
       
       inline def setCellRef(value: Ref[HTMLDivElement]): Self = StObject.set(x, "cellRef", value.asInstanceOf[js.Any])
       

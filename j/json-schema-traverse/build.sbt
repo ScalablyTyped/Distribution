@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "json-schema-traverse"
-version := "1.0.0-6e46e7"
+version := "1.0.0-5b8c2b"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

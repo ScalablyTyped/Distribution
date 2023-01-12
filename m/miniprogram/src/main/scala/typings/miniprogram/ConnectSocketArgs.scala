@@ -21,7 +21,8 @@ object ConnectSocketArgs {
     __obj.asInstanceOf[ConnectSocketArgs]
   }
   
-  extension [Self <: ConnectSocketArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConnectSocketArgs] (val x: Self) extends AnyVal {
     
     inline def setData(value: Common): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

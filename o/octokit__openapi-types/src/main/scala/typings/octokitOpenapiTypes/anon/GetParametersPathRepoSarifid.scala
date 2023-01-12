@@ -16,7 +16,8 @@ object GetParametersPathRepoSarifid {
     __obj.asInstanceOf[GetParametersPathRepoSarifid]
   }
   
-  extension [Self <: GetParametersPathRepoSarifid](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetParametersPathRepoSarifid] (val x: Self) extends AnyVal {
     
     inline def setGet(value: ParametersPathRepoSarifid): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
   }

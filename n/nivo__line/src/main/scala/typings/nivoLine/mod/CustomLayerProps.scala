@@ -176,7 +176,8 @@ object CustomLayerProps {
     __obj.asInstanceOf[CustomLayerProps]
   }
   
-  extension [Self <: CustomLayerProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomLayerProps] (val x: Self) extends AnyVal {
     
     inline def setAnimate(value: Boolean): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     

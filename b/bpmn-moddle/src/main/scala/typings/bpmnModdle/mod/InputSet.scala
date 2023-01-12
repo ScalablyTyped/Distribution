@@ -34,7 +34,8 @@ object InputSet {
     __obj.asInstanceOf[InputSet]
   }
   
-  extension [Self <: InputSet](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InputSet] (val x: Self) extends AnyVal {
     
     inline def setDataInputRefs(value: js.Array[DataInput]): Self = StObject.set(x, "dataInputRefs", value.asInstanceOf[js.Any])
     

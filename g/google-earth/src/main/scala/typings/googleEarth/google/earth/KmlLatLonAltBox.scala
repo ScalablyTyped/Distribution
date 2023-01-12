@@ -109,7 +109,8 @@ object KmlLatLonAltBox {
     __obj.asInstanceOf[KmlLatLonAltBox]
   }
   
-  extension [Self <: KmlLatLonAltBox](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KmlLatLonAltBox] (val x: Self) extends AnyVal {
     
     inline def setGetAltitudeMode(value: () => KmlAltitudeModeEnum): Self = StObject.set(x, "getAltitudeMode", js.Any.fromFunction0(value))
     

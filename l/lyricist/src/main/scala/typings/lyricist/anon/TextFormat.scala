@@ -16,7 +16,8 @@ object TextFormat {
     __obj.asInstanceOf[TextFormat]
   }
   
-  extension [Self <: TextFormat](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextFormat] (val x: Self) extends AnyVal {
     
     inline def setTextFormat(value: LyricistTextFormat): Self = StObject.set(x, "textFormat", value.asInstanceOf[js.Any])
     

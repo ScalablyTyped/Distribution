@@ -67,7 +67,8 @@ object BulkEnvelope {
     __obj.asInstanceOf[BulkEnvelope]
   }
   
-  extension [Self <: BulkEnvelope](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BulkEnvelope] (val x: Self) extends AnyVal {
     
     inline def setBulkRecipientRow(value: String): Self = StObject.set(x, "bulkRecipientRow", value.asInstanceOf[js.Any])
     

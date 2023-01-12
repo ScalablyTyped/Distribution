@@ -43,7 +43,8 @@ object AllowListSummary {
     __obj.asInstanceOf[AllowListSummary]
   }
   
-  extension [Self <: AllowListSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AllowListSummary] (val x: Self) extends AnyVal {
     
     inline def setArn(value: stringMin71Max89PatternArnAwsAwsCnAwsUsGovMacie2AZ19920D12AllowListAZ0922): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     

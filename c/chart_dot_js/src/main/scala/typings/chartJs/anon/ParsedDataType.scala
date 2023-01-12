@@ -41,7 +41,8 @@ object ParsedDataType {
     __obj.asInstanceOf[ParsedDataType]
   }
   
-  extension [Self <: ParsedDataType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParsedDataType] (val x: Self) extends AnyVal {
     
     inline def setChartOptions(value: PieControllerChartOptions): Self = StObject.set(x, "chartOptions", value.asInstanceOf[js.Any])
     

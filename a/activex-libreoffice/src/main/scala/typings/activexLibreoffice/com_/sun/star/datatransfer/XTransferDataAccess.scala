@@ -44,7 +44,8 @@ object XTransferDataAccess {
     __obj.asInstanceOf[XTransferDataAccess]
   }
   
-  extension [Self <: XTransferDataAccess](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XTransferDataAccess] (val x: Self) extends AnyVal {
     
     inline def setGetData(value: SeqEquiv[DataFlavor] => SafeArray[Any]): Self = StObject.set(x, "getData", js.Any.fromFunction1(value))
     

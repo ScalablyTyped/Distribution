@@ -26,7 +26,8 @@ object VastCreative {
     __obj.asInstanceOf[VastCreative]
   }
   
-  extension [Self <: VastCreative](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VastCreative] (val x: Self) extends AnyVal {
     
     inline def setAdId(value: String): Self = StObject.set(x, "adId", value.asInstanceOf[js.Any])
     

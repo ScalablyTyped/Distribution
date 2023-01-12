@@ -22,7 +22,8 @@ object UpdatePageElementTransformRequest {
     __obj.asInstanceOf[UpdatePageElementTransformRequest]
   }
   
-  extension [Self <: UpdatePageElementTransformRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdatePageElementTransformRequest] (val x: Self) extends AnyVal {
     
     inline def setApplyMode(value: String): Self = StObject.set(x, "applyMode", value.asInstanceOf[js.Any])
     

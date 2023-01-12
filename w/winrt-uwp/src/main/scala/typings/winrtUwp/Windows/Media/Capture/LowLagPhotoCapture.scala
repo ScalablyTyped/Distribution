@@ -31,7 +31,8 @@ object LowLagPhotoCapture {
     __obj.asInstanceOf[LowLagPhotoCapture]
   }
   
-  extension [Self <: LowLagPhotoCapture](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LowLagPhotoCapture] (val x: Self) extends AnyVal {
     
     inline def setCaptureAsync(value: () => IPromiseWithIAsyncOperation[CapturedPhoto]): Self = StObject.set(x, "captureAsync", js.Any.fromFunction0(value))
     

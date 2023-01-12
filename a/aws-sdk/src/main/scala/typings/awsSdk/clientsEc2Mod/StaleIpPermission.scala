@@ -43,7 +43,8 @@ object StaleIpPermission {
     __obj.asInstanceOf[StaleIpPermission]
   }
   
-  extension [Self <: StaleIpPermission](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StaleIpPermission] (val x: Self) extends AnyVal {
     
     inline def setFromPort(value: Integer): Self = StObject.set(x, "FromPort", value.asInstanceOf[js.Any])
     

@@ -85,7 +85,8 @@ object DataSource {
     __obj.asInstanceOf[DataSource]
   }
   
-  extension [Self <: DataSource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataSource] (val x: Self) extends AnyVal {
     
     inline def setComputeStatistics(value: ComputeStatistics): Self = StObject.set(x, "ComputeStatistics", value.asInstanceOf[js.Any])
     

@@ -138,7 +138,8 @@ object EventSourceMappingConfiguration {
     __obj.asInstanceOf[EventSourceMappingConfiguration]
   }
   
-  extension [Self <: EventSourceMappingConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventSourceMappingConfiguration] (val x: Self) extends AnyVal {
     
     inline def setAmazonManagedKafkaEventSourceConfig(value: AmazonManagedKafkaEventSourceConfig): Self = StObject.set(x, "AmazonManagedKafkaEventSourceConfig", value.asInstanceOf[js.Any])
     

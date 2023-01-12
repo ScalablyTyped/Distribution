@@ -28,7 +28,8 @@ object DescribeDataSetResponse {
     __obj.asInstanceOf[DescribeDataSetResponse]
   }
   
-  extension [Self <: DescribeDataSetResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeDataSetResponse] (val x: Self) extends AnyVal {
     
     inline def setDataSet(value: DataSet): Self = StObject.set(x, "DataSet", value.asInstanceOf[js.Any])
     

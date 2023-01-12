@@ -22,7 +22,8 @@ object SubscriptionContentDetails {
     __obj.asInstanceOf[SubscriptionContentDetails]
   }
   
-  extension [Self <: SubscriptionContentDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubscriptionContentDetails] (val x: Self) extends AnyVal {
     
     inline def setActivityType(value: String): Self = StObject.set(x, "activityType", value.asInstanceOf[js.Any])
     

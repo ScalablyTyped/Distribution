@@ -40,7 +40,8 @@ object BarHandlers {
     __obj.asInstanceOf[BarHandlers[RawDatum, Element]]
   }
   
-  extension [Self <: BarHandlers[?, ?], RawDatum, Element](x: Self & (BarHandlers[RawDatum, Element])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BarHandlers[?, ?], RawDatum, Element] (val x: Self & (BarHandlers[RawDatum, Element])) extends AnyVal {
     
     inline def setOnClick(
       value: (/* datum */ ComputedDatum[RawDatum] & Color, /* event */ MouseEvent[Element, NativeMouseEvent]) => Unit

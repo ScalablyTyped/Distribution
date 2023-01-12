@@ -22,7 +22,8 @@ object ViewDef {
     __obj.asInstanceOf[ViewDef]
   }
   
-  extension [Self <: ViewDef](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ViewDef] (val x: Self) extends AnyVal {
     
     inline def setComponent(value: ViewComponentType): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
     

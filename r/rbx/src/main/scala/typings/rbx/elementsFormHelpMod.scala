@@ -68,7 +68,8 @@ object elementsFormHelpMod {
       __obj.asInstanceOf[HelpModifierProps]
     }
     
-    extension [Self <: HelpModifierProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HelpModifierProps] (val x: Self) extends AnyVal {
       
       inline def setColor(value: primary | success | info | warning | danger | light | dark | white | black | link): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -164,7 +165,8 @@ object elementsFormHelpMod {
       __obj.asInstanceOf[HelpProps]
     }
     
-    extension [Self <: HelpProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HelpProps] (val x: Self) extends AnyVal {
       
       inline def setBackgroundColor(
         value: primary | success | info | warning | danger | light | dark | white | black | link | `black-bis` | `black-ter` | `grey-darker` | `grey-dark` | grey | `grey-light` | `grey-lighter` | `white-ter` | `white-bis`

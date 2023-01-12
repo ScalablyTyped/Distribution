@@ -20,7 +20,8 @@ object InclusiveBoolean {
     __obj.asInstanceOf[InclusiveBoolean]
   }
   
-  extension [Self <: InclusiveBoolean](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InclusiveBoolean] (val x: Self) extends AnyVal {
     
     inline def setInclusive(value: Boolean): Self = StObject.set(x, "inclusive", value.asInstanceOf[js.Any])
     

@@ -366,7 +366,8 @@ object MultiRemote {
     __obj.asInstanceOf[MultiRemote]
   }
   
-  extension [Self <: MultiRemote](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MultiRemote] (val x: Self) extends AnyVal {
     
     inline def setAfter(
       value: (js.Function3[

@@ -45,7 +45,8 @@ object SignedExchangeHeader {
     __obj.asInstanceOf[SignedExchangeHeader]
   }
   
-  extension [Self <: SignedExchangeHeader](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SignedExchangeHeader] (val x: Self) extends AnyVal {
     
     inline def setHeaderIntegrity(value: String): Self = StObject.set(x, "headerIntegrity", value.asInstanceOf[js.Any])
     

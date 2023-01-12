@@ -138,7 +138,8 @@ object mod {
       __obj.asInstanceOf[FieldConfig[FieldValue]]
     }
     
-    extension [Self <: FieldConfig[?], FieldValue](x: Self & FieldConfig[FieldValue]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FieldConfig[?], FieldValue] (val x: Self & FieldConfig[FieldValue]) extends AnyVal {
       
       inline def setAfterSubmit(value: () => Unit): Self = StObject.set(x, "afterSubmit", js.Any.fromFunction0(value))
       
@@ -284,7 +285,8 @@ object mod {
       __obj.asInstanceOf[FieldSubscription]
     }
     
-    extension [Self <: FieldSubscription](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FieldSubscription] (val x: Self) extends AnyVal {
       
       inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
@@ -555,7 +557,8 @@ object mod {
       __obj.asInstanceOf[FormState[FormValues, InitialFormValues]]
     }
     
-    extension [Self <: FormState[?, ?], FormValues, InitialFormValues](x: Self & (FormState[FormValues, InitialFormValues])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FormState[?, ?], FormValues, InitialFormValues] (val x: Self & (FormState[FormValues, InitialFormValues])) extends AnyVal {
       
       inline def setActive(value: /* keyof FormValues */ String): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
@@ -678,7 +681,8 @@ object mod {
       __obj.asInstanceOf[FormSubscription]
     }
     
-    extension [Self <: FormSubscription](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FormSubscription] (val x: Self) extends AnyVal {
       
       inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
@@ -842,7 +846,8 @@ object mod {
       __obj.asInstanceOf[InternalFieldState[FieldValue]]
     }
     
-    extension [Self <: InternalFieldState[?], FieldValue](x: Self & InternalFieldState[FieldValue]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InternalFieldState[?], FieldValue] (val x: Self & InternalFieldState[FieldValue]) extends AnyVal {
       
       inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
@@ -942,7 +947,8 @@ object mod {
       __obj.asInstanceOf[InternalFormState]
     }
     
-    extension [Self <: InternalFormState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InternalFormState] (val x: Self) extends AnyVal {
       
       inline def setActive(value: String): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
@@ -1017,7 +1023,8 @@ object mod {
       __obj.asInstanceOf[MutableState[FormValues, InitialFormValues]]
     }
     
-    extension [Self <: MutableState[?, ?], FormValues, InitialFormValues](x: Self & (MutableState[FormValues, InitialFormValues])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MutableState[?, ?], FormValues, InitialFormValues] (val x: Self & (MutableState[FormValues, InitialFormValues])) extends AnyVal {
       
       inline def setFieldSubscribers(value: StringDictionary[Subscribers[FieldState[Any]]]): Self = StObject.set(x, "fieldSubscribers", value.asInstanceOf[js.Any])
       
@@ -1078,7 +1085,8 @@ object mod {
       __obj.asInstanceOf[Subscribers[T]]
     }
     
-    extension [Self <: Subscribers[?], T /* <: js.Object */](x: Self & Subscribers[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Subscribers[?], T /* <: js.Object */] (val x: Self & Subscribers[T]) extends AnyVal {
       
       inline def setEntries(value: NumberDictionary[Notified[T]]): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
       
@@ -1130,7 +1138,8 @@ object mod {
       __obj.asInstanceOf[Tools[FormValues, InitialFormValues]]
     }
     
-    extension [Self <: Tools[?, ?], FormValues, InitialFormValues](x: Self & (Tools[FormValues, InitialFormValues])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Tools[?, ?], FormValues, InitialFormValues] (val x: Self & (Tools[FormValues, InitialFormValues])) extends AnyVal {
       
       inline def setChangeValue(
         value: (/* state */ MutableState[FormValues, InitialFormValues], /* name */ String, /* mutate */ js.Function1[/* value */ Any, Any]) => Unit

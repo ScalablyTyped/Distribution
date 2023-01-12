@@ -21,7 +21,8 @@ object anon {
       __obj.asInstanceOf[BindFocus]
     }
     
-    extension [Self <: BindFocus](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BindFocus] (val x: Self) extends AnyVal {
       
       inline def setBindFocus(value: OnBlur): Self = StObject.set(x, "bindFocus", value.asInstanceOf[js.Any])
       
@@ -42,7 +43,8 @@ object anon {
       __obj.asInstanceOf[OnBlur]
     }
     
-    extension [Self <: OnBlur](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OnBlur] (val x: Self) extends AnyVal {
       
       inline def setOnBlur(value: () => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction0(value))
       
@@ -63,7 +65,8 @@ object anon {
       __obj.asInstanceOf[Ref]
     }
     
-    extension [Self <: Ref](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Ref] (val x: Self) extends AnyVal {
       
       inline def setRef(value: MutableRefObject[HTMLDivElement | Null]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
       

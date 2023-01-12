@@ -16,7 +16,8 @@ object GoogleCloudStorage {
     __obj.asInstanceOf[GoogleCloudStorage]
   }
   
-  extension [Self <: GoogleCloudStorage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudStorage] (val x: Self) extends AnyVal {
     
     inline def setGcsPath(value: String): Self = StObject.set(x, "gcsPath", value.asInstanceOf[js.Any])
     

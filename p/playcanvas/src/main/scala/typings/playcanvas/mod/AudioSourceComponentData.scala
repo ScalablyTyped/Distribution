@@ -57,7 +57,8 @@ object AudioSourceComponentData {
     __obj.asInstanceOf[AudioSourceComponentData]
   }
   
-  extension [Self <: AudioSourceComponentData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AudioSourceComponentData] (val x: Self) extends AnyVal {
     
     inline def set3d(value: Boolean): Self = StObject.set(x, "3d", value.asInstanceOf[js.Any])
     

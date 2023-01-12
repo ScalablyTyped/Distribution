@@ -22,7 +22,8 @@ object ContextFileSystemInfoEntry {
     __obj.asInstanceOf[ContextFileSystemInfoEntry]
   }
   
-  extension [Self <: ContextFileSystemInfoEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContextFileSystemInfoEntry] (val x: Self) extends AnyVal {
     
     inline def setResolved(value: ResolvedContextFileSystemInfoEntry): Self = StObject.set(x, "resolved", value.asInstanceOf[js.Any])
     

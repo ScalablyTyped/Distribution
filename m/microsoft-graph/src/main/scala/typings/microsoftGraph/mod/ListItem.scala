@@ -36,7 +36,8 @@ object ListItem {
     __obj.asInstanceOf[ListItem]
   }
   
-  extension [Self <: ListItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListItem] (val x: Self) extends AnyVal {
     
     inline def setAnalytics(value: NullableOption[ItemAnalytics]): Self = StObject.set(x, "analytics", value.asInstanceOf[js.Any])
     

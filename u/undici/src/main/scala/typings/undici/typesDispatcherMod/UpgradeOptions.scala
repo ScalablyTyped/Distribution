@@ -36,7 +36,8 @@ object UpgradeOptions {
     __obj.asInstanceOf[UpgradeOptions]
   }
   
-  extension [Self <: UpgradeOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpgradeOptions] (val x: Self) extends AnyVal {
     
     inline def setHeaders(value: IncomingHttpHeaders | js.Array[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     

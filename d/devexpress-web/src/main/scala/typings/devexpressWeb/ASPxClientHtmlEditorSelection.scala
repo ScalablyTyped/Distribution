@@ -49,7 +49,8 @@ object ASPxClientHtmlEditorSelection {
     __obj.asInstanceOf[ASPxClientHtmlEditorSelection]
   }
   
-  extension [Self <: ASPxClientHtmlEditorSelection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientHtmlEditorSelection] (val x: Self) extends AnyVal {
     
     inline def setGetElements(value: () => js.Array[Any]): Self = StObject.set(x, "GetElements", js.Any.fromFunction0(value))
     

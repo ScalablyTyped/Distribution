@@ -15,7 +15,8 @@ object Row {
     __obj.asInstanceOf[Row[D]]
   }
   
-  extension [Self <: Row[?], D /* <: js.Object */](x: Self & Row[D]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Row[?], D /* <: js.Object */] (val x: Self & Row[D]) extends AnyVal {
     
     inline def setRow(value: typings.reactTable.mod.Row[D]): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
   }

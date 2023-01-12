@@ -83,7 +83,8 @@ object IconView {
     __obj.asInstanceOf[IconView]
   }
   
-  extension [Self <: IconView](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IconView] (val x: Self) extends AnyVal {
     
     inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     

@@ -370,7 +370,8 @@ object mod {
       __obj.asInstanceOf[SubjectPosition]
     }
     
-    extension [Self <: SubjectPosition](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SubjectPosition] (val x: Self) extends AnyVal {
       
       inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       

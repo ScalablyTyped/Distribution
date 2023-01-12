@@ -88,7 +88,8 @@ object ReplicationConfigurationTemplate {
     __obj.asInstanceOf[ReplicationConfigurationTemplate]
   }
   
-  extension [Self <: ReplicationConfigurationTemplate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReplicationConfigurationTemplate] (val x: Self) extends AnyVal {
     
     inline def setArn(value: ARN): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object ReferenceDataSource {
     __obj.asInstanceOf[ReferenceDataSource]
   }
   
-  extension [Self <: ReferenceDataSource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReferenceDataSource] (val x: Self) extends AnyVal {
     
     inline def setReferenceSchema(value: SourceSchema): Self = StObject.set(x, "ReferenceSchema", value.asInstanceOf[js.Any])
     

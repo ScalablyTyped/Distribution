@@ -18,7 +18,8 @@ object ClassicLoadBalancer {
     __obj.asInstanceOf[ClassicLoadBalancer]
   }
   
-  extension [Self <: ClassicLoadBalancer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClassicLoadBalancer] (val x: Self) extends AnyVal {
     
     inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     

@@ -56,7 +56,8 @@ object Buff {
     __obj.asInstanceOf[Buff]
   }
   
-  extension [Self <: Buff](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Buff] (val x: Self) extends AnyVal {
     
     inline def setArg1(value: Double): Self = StObject.set(x, "arg1", value.asInstanceOf[js.Any])
     

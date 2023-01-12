@@ -24,7 +24,8 @@ object ListConfigurationsParams {
     __obj.asInstanceOf[ListConfigurationsParams]
   }
   
-  extension [Self <: ListConfigurationsParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListConfigurationsParams] (val x: Self) extends AnyVal {
     
     inline def setEnvironment_id(value: String): Self = StObject.set(x, "environment_id", value.asInstanceOf[js.Any])
     

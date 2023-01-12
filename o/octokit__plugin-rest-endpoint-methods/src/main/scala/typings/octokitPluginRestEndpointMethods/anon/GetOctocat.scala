@@ -103,7 +103,8 @@ object GetOctocat {
     __obj.asInstanceOf[GetOctocat]
   }
   
-  extension [Self <: GetOctocat](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetOctocat] (val x: Self) extends AnyVal {
     
     inline def setGet(value: `355`): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
     

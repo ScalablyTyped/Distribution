@@ -23,7 +23,8 @@ object ListManagedRuleSetsResponse {
     __obj.asInstanceOf[ListManagedRuleSetsResponse]
   }
   
-  extension [Self <: ListManagedRuleSetsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListManagedRuleSetsResponse] (val x: Self) extends AnyVal {
     
     inline def setManagedRuleSets(value: ManagedRuleSetSummaries): Self = StObject.set(x, "ManagedRuleSets", value.asInstanceOf[js.Any])
     

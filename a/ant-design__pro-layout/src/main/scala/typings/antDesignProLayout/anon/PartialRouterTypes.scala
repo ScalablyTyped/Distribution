@@ -32,7 +32,8 @@ object PartialRouterTypes {
     __obj.asInstanceOf[PartialRouterTypes]
   }
   
-  extension [Self <: PartialRouterTypes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialRouterTypes] (val x: Self) extends AnyVal {
     
     inline def setComputedMatch(value: `match`[Any]): Self = StObject.set(x, "computedMatch", value.asInstanceOf[js.Any])
     

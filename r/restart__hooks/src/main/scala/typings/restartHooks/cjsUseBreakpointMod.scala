@@ -62,7 +62,8 @@ object cjsUseBreakpointMod {
       __obj.asInstanceOf[DefaultBreakpointMap]
     }
     
-    extension [Self <: DefaultBreakpointMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DefaultBreakpointMap] (val x: Self) extends AnyVal {
       
       inline def setLg(value: BreakpointDirection): Self = StObject.set(x, "lg", value.asInstanceOf[js.Any])
       

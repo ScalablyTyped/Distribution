@@ -34,7 +34,8 @@ object PartialMDCTextFieldIconAd {
     __obj.asInstanceOf[PartialMDCTextFieldIconAd]
   }
   
-  extension [Self <: PartialMDCTextFieldIconAd](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialMDCTextFieldIconAd] (val x: Self) extends AnyVal {
     
     inline def setDeregisterInteractionHandler(value: (/* evtType */ EventType, /* handler */ SpecificEventListener[EventType]) => Unit): Self = StObject.set(x, "deregisterInteractionHandler", js.Any.fromFunction2(value))
     

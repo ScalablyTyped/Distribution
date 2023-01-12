@@ -16,7 +16,8 @@ object `23` {
     __obj.asInstanceOf[`23`[K, D]]
   }
   
-  extension [Self <: `23`[?, ?], K, D](x: Self & (`23`[K, D])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: `23`[?, ?], K, D] (val x: Self & (`23`[K, D])) extends AnyVal {
     
     inline def setDatasource(value: DataProvider[K, D]): Self = StObject.set(x, "datasource", value.asInstanceOf[js.Any])
     

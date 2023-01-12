@@ -592,7 +592,8 @@ object mod {
       __obj.asInstanceOf[NumericInputProps]
     }
     
-    extension [Self <: NumericInputProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NumericInputProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       
@@ -1509,7 +1510,8 @@ object mod {
       __obj.asInstanceOf[NumericInputState]
     }
     
-    extension [Self <: NumericInputState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NumericInputState] (val x: Self) extends AnyVal {
       
       inline def setBtnDownActive(value: Boolean): Self = StObject.set(x, "btnDownActive", value.asInstanceOf[js.Any])
       

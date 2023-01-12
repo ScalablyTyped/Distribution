@@ -21,7 +21,8 @@ object AccessReviewSet {
     __obj.asInstanceOf[AccessReviewSet]
   }
   
-  extension [Self <: AccessReviewSet](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccessReviewSet] (val x: Self) extends AnyVal {
     
     inline def setDefinitions(value: NullableOption[js.Array[AccessReviewScheduleDefinition]]): Self = StObject.set(x, "definitions", value.asInstanceOf[js.Any])
     

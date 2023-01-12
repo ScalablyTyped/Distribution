@@ -177,7 +177,8 @@ object IPicker {
     __obj.asInstanceOf[IPicker]
   }
   
-  extension [Self <: IPicker](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPicker] (val x: Self) extends AnyVal {
     
     inline def setActiveCls(value: java.lang.String): Self = StObject.set(x, "activeCls", value.asInstanceOf[js.Any])
     

@@ -33,7 +33,8 @@ object ModifyCustomDBEngineVersionMessage {
     __obj.asInstanceOf[ModifyCustomDBEngineVersionMessage]
   }
   
-  extension [Self <: ModifyCustomDBEngineVersionMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModifyCustomDBEngineVersionMessage] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: Description): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     

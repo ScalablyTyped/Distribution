@@ -18,7 +18,8 @@ object MixinOptions {
     __obj.asInstanceOf[MixinOptions]
   }
   
-  extension [Self <: MixinOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MixinOptions] (val x: Self) extends AnyVal {
     
     inline def setChain(value: Boolean): Self = StObject.set(x, "chain", value.asInstanceOf[js.Any])
     

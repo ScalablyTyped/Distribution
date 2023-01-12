@@ -43,7 +43,8 @@ object PackageFilter {
     __obj.asInstanceOf[PackageFilter]
   }
   
-  extension [Self <: PackageFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PackageFilter] (val x: Self) extends AnyVal {
     
     inline def setArchitecture(value: StringFilter): Self = StObject.set(x, "architecture", value.asInstanceOf[js.Any])
     

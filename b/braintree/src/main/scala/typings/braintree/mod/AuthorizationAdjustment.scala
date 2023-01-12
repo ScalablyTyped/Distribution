@@ -32,7 +32,8 @@ object AuthorizationAdjustment {
     __obj.asInstanceOf[AuthorizationAdjustment]
   }
   
-  extension [Self <: AuthorizationAdjustment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AuthorizationAdjustment] (val x: Self) extends AnyVal {
     
     inline def setAmount(value: String): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
     

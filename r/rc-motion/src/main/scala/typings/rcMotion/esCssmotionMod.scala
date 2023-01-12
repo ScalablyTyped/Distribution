@@ -104,7 +104,8 @@ object esCssmotionMod {
       __obj.asInstanceOf[CSSMotionProps]
     }
     
-    extension [Self <: CSSMotionProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CSSMotionProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: (/* props */ Dictkey, /* ref */ js.Function1[/* node */ Any, Unit]) => ReactElement): Self = StObject.set(x, "children", js.Any.fromFunction2(value))
       
@@ -235,7 +236,8 @@ object esCssmotionMod {
       __obj.asInstanceOf[CSSMotionState]
     }
     
-    extension [Self <: CSSMotionState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CSSMotionState] (val x: Self) extends AnyVal {
       
       inline def setNewStatus(value: Boolean): Self = StObject.set(x, "newStatus", value.asInstanceOf[js.Any])
       

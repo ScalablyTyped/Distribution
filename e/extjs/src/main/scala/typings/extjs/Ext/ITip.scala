@@ -18,7 +18,8 @@ object ITip {
     __obj.asInstanceOf[ITip]
   }
   
-  extension [Self <: ITip](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ITip] (val x: Self) extends AnyVal {
     
     inline def setConstrainPosition(value: Boolean): Self = StObject.set(x, "constrainPosition", value.asInstanceOf[js.Any])
     

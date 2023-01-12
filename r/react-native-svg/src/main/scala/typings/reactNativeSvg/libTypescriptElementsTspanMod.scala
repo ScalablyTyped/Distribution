@@ -57,7 +57,8 @@ object libTypescriptElementsTspanMod {
       __obj.asInstanceOf[TSpanProps]
     }
     
-    extension [Self <: TSpanProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TSpanProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: TextChild): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

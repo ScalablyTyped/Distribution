@@ -24,7 +24,8 @@ object GeneratePrimeOptions {
     __obj.asInstanceOf[GeneratePrimeOptions]
   }
   
-  extension [Self <: GeneratePrimeOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GeneratePrimeOptions] (val x: Self) extends AnyVal {
     
     inline def setAdd(value: LargeNumberLike): Self = StObject.set(x, "add", value.asInstanceOf[js.Any])
     

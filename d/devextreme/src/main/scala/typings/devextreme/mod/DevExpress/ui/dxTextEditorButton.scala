@@ -29,7 +29,8 @@ object dxTextEditorButton {
     __obj.asInstanceOf[dxTextEditorButton]
   }
   
-  extension [Self <: dxTextEditorButton](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxTextEditorButton] (val x: Self) extends AnyVal {
     
     inline def setLocation(value: TextEditorButtonLocation): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     

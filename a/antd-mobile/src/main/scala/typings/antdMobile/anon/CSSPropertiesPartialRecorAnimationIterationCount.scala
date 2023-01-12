@@ -9971,7 +9971,8 @@ object CSSPropertiesPartialRecorAnimationIterationCount {
     __obj.asInstanceOf[CSSPropertiesPartialRecorAnimationIterationCount]
   }
   
-  extension [Self <: CSSPropertiesPartialRecorAnimationIterationCount](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CSSPropertiesPartialRecorAnimationIterationCount] (val x: Self) extends AnyVal {
     
     inline def `set--background-color`(value: String): Self = StObject.set(x, "--background-color", value.asInstanceOf[js.Any])
     

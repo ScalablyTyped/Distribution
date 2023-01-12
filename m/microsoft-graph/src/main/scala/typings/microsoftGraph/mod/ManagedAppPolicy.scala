@@ -30,7 +30,8 @@ object ManagedAppPolicy {
     __obj.asInstanceOf[ManagedAppPolicy]
   }
   
-  extension [Self <: ManagedAppPolicy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ManagedAppPolicy] (val x: Self) extends AnyVal {
     
     inline def setCreatedDateTime(value: String): Self = StObject.set(x, "createdDateTime", value.asInstanceOf[js.Any])
     

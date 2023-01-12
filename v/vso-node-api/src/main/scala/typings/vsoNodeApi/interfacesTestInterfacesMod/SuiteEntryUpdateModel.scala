@@ -28,7 +28,8 @@ object SuiteEntryUpdateModel {
     __obj.asInstanceOf[SuiteEntryUpdateModel]
   }
   
-  extension [Self <: SuiteEntryUpdateModel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SuiteEntryUpdateModel] (val x: Self) extends AnyVal {
     
     inline def setChildSuiteId(value: Double): Self = StObject.set(x, "childSuiteId", value.asInstanceOf[js.Any])
     

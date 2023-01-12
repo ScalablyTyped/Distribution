@@ -28,7 +28,8 @@ object GetFlowTemplateRevisionsRequest {
     __obj.asInstanceOf[GetFlowTemplateRevisionsRequest]
   }
   
-  extension [Self <: GetFlowTemplateRevisionsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetFlowTemplateRevisionsRequest] (val x: Self) extends AnyVal {
     
     inline def setId(value: Urn): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object DescribeElasticsearchInstanceTypeLimitsResponse {
     __obj.asInstanceOf[DescribeElasticsearchInstanceTypeLimitsResponse]
   }
   
-  extension [Self <: DescribeElasticsearchInstanceTypeLimitsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeElasticsearchInstanceTypeLimitsResponse] (val x: Self) extends AnyVal {
     
     inline def setLimitsByRole(value: LimitsByRole): Self = StObject.set(x, "LimitsByRole", value.asInstanceOf[js.Any])
     

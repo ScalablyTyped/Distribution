@@ -140,7 +140,8 @@ object libPlotsCirclePackingTypesMod {
       __obj.asInstanceOf[CirclePackingOptions]
     }
     
-    extension [Self <: CirclePackingOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CirclePackingOptions] (val x: Self) extends AnyVal {
       
       inline def setAnimation(value: Animation): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
       

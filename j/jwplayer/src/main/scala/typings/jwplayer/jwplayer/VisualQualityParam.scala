@@ -19,7 +19,8 @@ object VisualQualityParam {
     __obj.asInstanceOf[VisualQualityParam]
   }
   
-  extension [Self <: VisualQualityParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VisualQualityParam] (val x: Self) extends AnyVal {
     
     inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     

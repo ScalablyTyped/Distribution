@@ -61,7 +61,8 @@ object relationshipUpdateRendererParams {
     __obj.asInstanceOf[relationshipUpdateRendererParams]
   }
   
-  extension [Self <: relationshipUpdateRendererParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: relationshipUpdateRendererParams] (val x: Self) extends AnyVal {
     
     inline def setColors(value: js.Array[Color_]): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
     

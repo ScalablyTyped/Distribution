@@ -103,7 +103,8 @@ object Optimization {
       __obj.asInstanceOf[LinearOptimizationConstraint]
     }
     
-    extension [Self <: LinearOptimizationConstraint](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LinearOptimizationConstraint] (val x: Self) extends AnyVal {
       
       inline def setSetCoefficient(value: (String, Double) => LinearOptimizationConstraint): Self = StObject.set(x, "setCoefficient", js.Any.fromFunction2(value))
     }
@@ -272,7 +273,8 @@ object Optimization {
       __obj.asInstanceOf[LinearOptimizationService]
     }
     
-    extension [Self <: LinearOptimizationService](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LinearOptimizationService] (val x: Self) extends AnyVal {
       
       inline def setCreateEngine(value: () => LinearOptimizationEngine): Self = StObject.set(x, "createEngine", js.Any.fromFunction0(value))
       
@@ -356,7 +358,8 @@ object Optimization {
       __obj.asInstanceOf[LinearOptimizationSolution]
     }
     
-    extension [Self <: LinearOptimizationSolution](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LinearOptimizationSolution] (val x: Self) extends AnyVal {
       
       inline def setGetObjectiveValue(value: () => Double): Self = StObject.set(x, "getObjectiveValue", js.Any.fromFunction0(value))
       

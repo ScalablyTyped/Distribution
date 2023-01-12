@@ -119,7 +119,8 @@ object IgLayoutManager {
     __obj.asInstanceOf[IgLayoutManager]
   }
   
-  extension [Self <: IgLayoutManager](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgLayoutManager] (val x: Self) extends AnyVal {
     
     inline def setBorderLayout(value: IgLayoutManagerBorderLayout): Self = StObject.set(x, "borderLayout", value.asInstanceOf[js.Any])
     

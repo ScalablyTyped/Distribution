@@ -31,7 +31,8 @@ object NativeFormatterOptions {
     __obj.asInstanceOf[NativeFormatterOptions]
   }
   
-  extension [Self <: NativeFormatterOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NativeFormatterOptions] (val x: Self) extends AnyVal {
     
     inline def setMeridiem(value: lowercase | short | narrow | Boolean): Self = StObject.set(x, "meridiem", value.asInstanceOf[js.Any])
     

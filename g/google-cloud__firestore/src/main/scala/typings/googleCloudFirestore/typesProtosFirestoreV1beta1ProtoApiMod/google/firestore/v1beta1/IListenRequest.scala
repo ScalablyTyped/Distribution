@@ -27,7 +27,8 @@ object IListenRequest {
     __obj.asInstanceOf[IListenRequest]
   }
   
-  extension [Self <: IListenRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IListenRequest] (val x: Self) extends AnyVal {
     
     inline def setAddTarget(value: ITarget): Self = StObject.set(x, "addTarget", value.asInstanceOf[js.Any])
     

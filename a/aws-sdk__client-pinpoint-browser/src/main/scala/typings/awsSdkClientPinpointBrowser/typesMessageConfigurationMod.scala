@@ -56,7 +56,8 @@ object typesMessageConfigurationMod {
       __obj.asInstanceOf[MessageConfiguration]
     }
     
-    extension [Self <: MessageConfiguration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MessageConfiguration] (val x: Self) extends AnyVal {
       
       inline def setADMMessage(value: Message): Self = StObject.set(x, "ADMMessage", value.asInstanceOf[js.Any])
       
@@ -141,7 +142,8 @@ object typesMessageConfigurationMod {
       __obj.asInstanceOf[UnmarshalledMessageConfiguration]
     }
     
-    extension [Self <: UnmarshalledMessageConfiguration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnmarshalledMessageConfiguration] (val x: Self) extends AnyVal {
       
       inline def setADMMessage(value: UnmarshalledMessage): Self = StObject.set(x, "ADMMessage", value.asInstanceOf[js.Any])
       

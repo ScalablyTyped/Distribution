@@ -17,7 +17,8 @@ object Granularity {
     __obj.asInstanceOf[Granularity]
   }
   
-  extension [Self <: Granularity](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Granularity] (val x: Self) extends AnyVal {
     
     inline def setGranularity(value: String): Self = StObject.set(x, "granularity", value.asInstanceOf[js.Any])
     

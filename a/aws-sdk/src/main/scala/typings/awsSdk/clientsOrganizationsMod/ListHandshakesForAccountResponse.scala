@@ -23,7 +23,8 @@ object ListHandshakesForAccountResponse {
     __obj.asInstanceOf[ListHandshakesForAccountResponse]
   }
   
-  extension [Self <: ListHandshakesForAccountResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListHandshakesForAccountResponse] (val x: Self) extends AnyVal {
     
     inline def setHandshakes(value: Handshakes): Self = StObject.set(x, "Handshakes", value.asInstanceOf[js.Any])
     

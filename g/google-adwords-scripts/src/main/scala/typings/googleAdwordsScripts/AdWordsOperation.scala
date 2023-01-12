@@ -19,7 +19,8 @@ object AdWordsOperation {
     __obj.asInstanceOf[AdWordsOperation[E]]
   }
   
-  extension [Self <: AdWordsOperation[?], E](x: Self & AdWordsOperation[E]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AdWordsOperation[?], E] (val x: Self & AdWordsOperation[E]) extends AnyVal {
     
     inline def setGetErrors(value: () => js.Array[String]): Self = StObject.set(x, "getErrors", js.Any.fromFunction0(value))
     

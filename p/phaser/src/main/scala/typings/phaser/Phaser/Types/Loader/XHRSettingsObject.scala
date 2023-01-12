@@ -69,7 +69,8 @@ object XHRSettingsObject {
     __obj.asInstanceOf[XHRSettingsObject]
   }
   
-  extension [Self <: XHRSettingsObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XHRSettingsObject] (val x: Self) extends AnyVal {
     
     inline def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
     

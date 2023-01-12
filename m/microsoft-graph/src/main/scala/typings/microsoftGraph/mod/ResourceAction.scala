@@ -19,7 +19,8 @@ object ResourceAction {
     __obj.asInstanceOf[ResourceAction]
   }
   
-  extension [Self <: ResourceAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResourceAction] (val x: Self) extends AnyVal {
     
     inline def setAllowedResourceActions(value: NullableOption[js.Array[String]]): Self = StObject.set(x, "allowedResourceActions", value.asInstanceOf[js.Any])
     

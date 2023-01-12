@@ -20,7 +20,8 @@ object WeekCalendarProps {
     __obj.asInstanceOf[WeekCalendarProps]
   }
   
-  extension [Self <: WeekCalendarProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WeekCalendarProps] (val x: Self) extends AnyVal {
     
     inline def setAllowShadow(value: Boolean): Self = StObject.set(x, "allowShadow", value.asInstanceOf[js.Any])
     

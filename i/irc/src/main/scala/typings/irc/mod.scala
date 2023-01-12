@@ -220,7 +220,8 @@ object mod {
       __obj.asInstanceOf[IChannel]
     }
     
-    extension [Self <: IChannel](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IChannel] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -373,7 +374,8 @@ object mod {
       __obj.asInstanceOf[IClientOpts]
     }
     
-    extension [Self <: IClientOpts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IClientOpts] (val x: Self) extends AnyVal {
       
       inline def setAutoConnect(value: Boolean): Self = StObject.set(x, "autoConnect", value.asInstanceOf[js.Any])
       
@@ -491,7 +493,8 @@ object mod {
       __obj.asInstanceOf[IMessage]
     }
     
-    extension [Self <: IMessage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IMessage] (val x: Self) extends AnyVal {
       
       inline def setArgs(value: js.Array[String]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
@@ -551,7 +554,8 @@ object mod {
       __obj.asInstanceOf[IWhoisData]
     }
     
-    extension [Self <: IWhoisData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IWhoisData] (val x: Self) extends AnyVal {
       
       inline def setChannels(value: js.Array[String]): Self = StObject.set(x, "channels", value.asInstanceOf[js.Any])
       

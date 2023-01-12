@@ -65,7 +65,8 @@ object distEs2015EventBinderEventRegisterMod {
       __obj.asInstanceOf[EventRegisterData]
     }
     
-    extension [Self <: EventRegisterData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EventRegisterData] (val x: Self) extends AnyVal {
       
       inline def setDomHandler(value: js.Function): Self = StObject.set(x, "domHandler", value.asInstanceOf[js.Any])
       

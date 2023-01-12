@@ -33,7 +33,8 @@ object AdStyle {
     __obj.asInstanceOf[AdStyle]
   }
   
-  extension [Self <: AdStyle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AdStyle] (val x: Self) extends AnyVal {
     
     inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     

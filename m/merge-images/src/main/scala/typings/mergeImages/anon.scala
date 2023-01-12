@@ -24,7 +24,8 @@ object anon {
       __obj.asInstanceOf[Opacity]
     }
     
-    extension [Self <: Opacity](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Opacity] (val x: Self) extends AnyVal {
       
       inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
       

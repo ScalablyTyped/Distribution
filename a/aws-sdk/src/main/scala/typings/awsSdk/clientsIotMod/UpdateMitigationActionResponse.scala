@@ -23,7 +23,8 @@ object UpdateMitigationActionResponse {
     __obj.asInstanceOf[UpdateMitigationActionResponse]
   }
   
-  extension [Self <: UpdateMitigationActionResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateMitigationActionResponse] (val x: Self) extends AnyVal {
     
     inline def setActionArn(value: MitigationActionArn): Self = StObject.set(x, "actionArn", value.asInstanceOf[js.Any])
     

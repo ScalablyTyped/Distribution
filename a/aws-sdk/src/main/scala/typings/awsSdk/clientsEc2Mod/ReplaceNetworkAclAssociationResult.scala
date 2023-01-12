@@ -18,7 +18,8 @@ object ReplaceNetworkAclAssociationResult {
     __obj.asInstanceOf[ReplaceNetworkAclAssociationResult]
   }
   
-  extension [Self <: ReplaceNetworkAclAssociationResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReplaceNetworkAclAssociationResult] (val x: Self) extends AnyVal {
     
     inline def setNewAssociationId(value: String): Self = StObject.set(x, "NewAssociationId", value.asInstanceOf[js.Any])
     

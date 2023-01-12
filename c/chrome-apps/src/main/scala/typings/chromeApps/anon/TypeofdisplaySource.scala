@@ -88,7 +88,8 @@ object TypeofdisplaySource {
     __obj.asInstanceOf[TypeofdisplaySource]
   }
   
-  extension [Self <: TypeofdisplaySource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofdisplaySource] (val x: Self) extends AnyVal {
     
     inline def setAuthenticationMethod(value: PBC): Self = StObject.set(x, "AuthenticationMethod", value.asInstanceOf[js.Any])
     

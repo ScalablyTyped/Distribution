@@ -32,7 +32,8 @@ object distSrcInsecurePbProtoMod {
     
     inline def encode(obj: Exchange): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(obj.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
     
-    extension [Self <: Exchange](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Exchange] (val x: Self) extends AnyVal {
       
       inline def setId(value: js.typedarray.Uint8Array): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -104,7 +105,8 @@ object distSrcInsecurePbProtoMod {
     
     inline def encode(obj: PublicKey): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(obj.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
     
-    extension [Self <: PublicKey](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PublicKey] (val x: Self) extends AnyVal {
       
       inline def setData(value: js.typedarray.Uint8Array): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
       

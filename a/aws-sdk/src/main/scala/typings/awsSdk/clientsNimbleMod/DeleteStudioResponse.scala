@@ -18,7 +18,8 @@ object DeleteStudioResponse {
     __obj.asInstanceOf[DeleteStudioResponse]
   }
   
-  extension [Self <: DeleteStudioResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteStudioResponse] (val x: Self) extends AnyVal {
     
     inline def setStudio(value: Studio): Self = StObject.set(x, "studio", value.asInstanceOf[js.Any])
   }

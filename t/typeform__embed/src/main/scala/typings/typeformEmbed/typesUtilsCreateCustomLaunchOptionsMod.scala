@@ -24,7 +24,8 @@ object typesUtilsCreateCustomLaunchOptionsMod {
       __obj.asInstanceOf[RemoveHandler]
     }
     
-    extension [Self <: RemoveHandler](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RemoveHandler] (val x: Self) extends AnyVal {
       
       inline def setRemove(value: () => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction0(value))
     }

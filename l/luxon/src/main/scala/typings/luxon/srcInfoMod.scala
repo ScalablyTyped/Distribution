@@ -199,7 +199,8 @@ object srcInfoMod {
       __obj.asInstanceOf[Features]
     }
     
-    extension [Self <: Features](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Features] (val x: Self) extends AnyVal {
       
       inline def setRelative(value: Boolean): Self = StObject.set(x, "relative", value.asInstanceOf[js.Any])
     }
@@ -218,7 +219,8 @@ object srcInfoMod {
       __obj.asInstanceOf[InfoCalendarOptions]
     }
     
-    extension [Self <: InfoCalendarOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InfoCalendarOptions] (val x: Self) extends AnyVal {
       
       inline def setOutputCalendar(value: CalendarSystem): Self = StObject.set(x, "outputCalendar", value.asInstanceOf[js.Any])
       
@@ -237,7 +239,8 @@ object srcInfoMod {
       __obj.asInstanceOf[InfoOptions]
     }
     
-    extension [Self <: InfoOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InfoOptions] (val x: Self) extends AnyVal {
       
       inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
       
@@ -258,7 +261,8 @@ object srcInfoMod {
       __obj.asInstanceOf[InfoUnitOptions]
     }
     
-    extension [Self <: InfoUnitOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InfoUnitOptions] (val x: Self) extends AnyVal {
       
       inline def setNumberingSystem(value: NumberingSystem): Self = StObject.set(x, "numberingSystem", value.asInstanceOf[js.Any])
       

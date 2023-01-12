@@ -17,7 +17,8 @@ object ShareOpenGraphDialogResponse {
     __obj.asInstanceOf[ShareOpenGraphDialogResponse]
   }
   
-  extension [Self <: ShareOpenGraphDialogResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShareOpenGraphDialogResponse] (val x: Self) extends AnyVal {
     
     inline def setPost_id(value: String): Self = StObject.set(x, "post_id", value.asInstanceOf[js.Any])
   }

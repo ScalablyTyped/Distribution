@@ -32,7 +32,8 @@ object b2ContactFilter {
     __obj.asInstanceOf[b2ContactFilter]
   }
   
-  extension [Self <: b2ContactFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: b2ContactFilter] (val x: Self) extends AnyVal {
     
     inline def setRayCollide(value: Any => Boolean): Self = StObject.set(x, "RayCollide", js.Any.fromFunction1(value))
     

@@ -22,7 +22,8 @@ object RetentionConfig {
     __obj.asInstanceOf[RetentionConfig]
   }
   
-  extension [Self <: RetentionConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RetentionConfig] (val x: Self) extends AnyVal {
     
     inline def setPerPartitionBytes(value: String): Self = StObject.set(x, "perPartitionBytes", value.asInstanceOf[js.Any])
     

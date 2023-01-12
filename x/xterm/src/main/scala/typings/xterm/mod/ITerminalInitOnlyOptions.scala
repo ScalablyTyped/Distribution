@@ -23,7 +23,8 @@ object ITerminalInitOnlyOptions {
     __obj.asInstanceOf[ITerminalInitOnlyOptions]
   }
   
-  extension [Self <: ITerminalInitOnlyOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ITerminalInitOnlyOptions] (val x: Self) extends AnyVal {
     
     inline def setCols(value: Double): Self = StObject.set(x, "cols", value.asInstanceOf[js.Any])
     

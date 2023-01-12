@@ -17,7 +17,8 @@ object DefaultMessage {
     __obj.asInstanceOf[DefaultMessage]
   }
   
-  extension [Self <: DefaultMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DefaultMessage] (val x: Self) extends AnyVal {
     
     inline def setDefaultMessage(value: String): Self = StObject.set(x, "defaultMessage", value.asInstanceOf[js.Any])
     

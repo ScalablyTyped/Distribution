@@ -20,7 +20,8 @@ object Shasum {
     __obj.asInstanceOf[Shasum]
   }
   
-  extension [Self <: Shasum](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Shasum] (val x: Self) extends AnyVal {
     
     inline def setShasum(value: String): Self = StObject.set(x, "shasum", value.asInstanceOf[js.Any])
     

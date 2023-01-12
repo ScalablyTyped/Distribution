@@ -56,7 +56,8 @@ object XSearchableDictionary {
     __obj.asInstanceOf[XSearchableDictionary]
   }
   
-  extension [Self <: XSearchableDictionary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XSearchableDictionary] (val x: Self) extends AnyVal {
     
     inline def setSearchSimilarEntries(value: String => SafeArray[XDictionaryEntry]): Self = StObject.set(x, "searchSimilarEntries", js.Any.fromFunction1(value))
   }

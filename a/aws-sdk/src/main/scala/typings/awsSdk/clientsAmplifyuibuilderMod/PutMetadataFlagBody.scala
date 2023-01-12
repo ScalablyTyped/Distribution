@@ -18,7 +18,8 @@ object PutMetadataFlagBody {
     __obj.asInstanceOf[PutMetadataFlagBody]
   }
   
-  extension [Self <: PutMetadataFlagBody](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutMetadataFlagBody] (val x: Self) extends AnyVal {
     
     inline def setNewValue(value: String): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
   }

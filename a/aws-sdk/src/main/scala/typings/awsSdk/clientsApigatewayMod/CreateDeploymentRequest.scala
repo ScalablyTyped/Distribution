@@ -58,7 +58,8 @@ object CreateDeploymentRequest {
     __obj.asInstanceOf[CreateDeploymentRequest]
   }
   
-  extension [Self <: CreateDeploymentRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateDeploymentRequest] (val x: Self) extends AnyVal {
     
     inline def setCacheClusterEnabled(value: NullableBoolean): Self = StObject.set(x, "cacheClusterEnabled", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object ASPxClientDashboardTitleToolbarUpdatedEventArgs {
     __obj.asInstanceOf[ASPxClientDashboardTitleToolbarUpdatedEventArgs]
   }
   
-  extension [Self <: ASPxClientDashboardTitleToolbarUpdatedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientDashboardTitleToolbarUpdatedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setOptions(value: Any): Self = StObject.set(x, "Options", value.asInstanceOf[js.Any])
   }

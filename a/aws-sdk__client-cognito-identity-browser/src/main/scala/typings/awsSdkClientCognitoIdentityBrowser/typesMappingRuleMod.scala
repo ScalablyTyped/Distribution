@@ -44,7 +44,8 @@ object typesMappingRuleMod {
       __obj.asInstanceOf[MappingRule]
     }
     
-    extension [Self <: MappingRule](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MappingRule] (val x: Self) extends AnyVal {
       
       inline def setClaim(value: String): Self = StObject.set(x, "Claim", value.asInstanceOf[js.Any])
       

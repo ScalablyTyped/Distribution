@@ -42,7 +42,8 @@ object FilterView {
     __obj.asInstanceOf[FilterView]
   }
   
-  extension [Self <: FilterView](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FilterView] (val x: Self) extends AnyVal {
     
     inline def setCriteria(
       value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.sheets.gapi.client.sheets.FilterCriteria} */ js.Any

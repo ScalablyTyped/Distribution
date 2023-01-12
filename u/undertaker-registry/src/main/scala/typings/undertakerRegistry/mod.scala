@@ -98,7 +98,8 @@ object mod {
       __obj.asInstanceOf[UndertakerRegistry]
     }
     
-    extension [Self <: UndertakerRegistry](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UndertakerRegistry] (val x: Self) extends AnyVal {
       
       inline def setGet(value: String => Any): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
       

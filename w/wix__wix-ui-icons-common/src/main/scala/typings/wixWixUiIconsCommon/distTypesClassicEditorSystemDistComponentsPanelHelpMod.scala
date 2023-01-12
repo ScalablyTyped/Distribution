@@ -27,7 +27,8 @@ object distTypesClassicEditorSystemDistComponentsPanelHelpMod extends Shortcut {
       __obj.asInstanceOf[PanelHelpProps]
     }
     
-    extension [Self <: PanelHelpProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PanelHelpProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

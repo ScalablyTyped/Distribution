@@ -54,7 +54,8 @@ object EventAttendee {
     __obj.asInstanceOf[EventAttendee]
   }
   
-  extension [Self <: EventAttendee](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventAttendee] (val x: Self) extends AnyVal {
     
     inline def setAdditionalGuests(value: Double): Self = StObject.set(x, "additionalGuests", value.asInstanceOf[js.Any])
     

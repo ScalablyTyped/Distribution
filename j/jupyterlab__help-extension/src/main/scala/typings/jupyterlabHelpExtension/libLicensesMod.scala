@@ -293,7 +293,8 @@ object libLicensesMod {
         __obj.asInstanceOf[ICreateArgs]
       }
       
-      extension [Self <: ICreateArgs](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ICreateArgs] (val x: Self) extends AnyVal {
         
         inline def setCurrentBundleName(value: String): Self = StObject.set(x, "currentBundleName", value.asInstanceOf[js.Any])
         
@@ -329,7 +330,8 @@ object libLicensesMod {
         __obj.asInstanceOf[IDownloadOptions]
       }
       
-      extension [Self <: IDownloadOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IDownloadOptions] (val x: Self) extends AnyVal {
         
         inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       }
@@ -359,7 +361,8 @@ object libLicensesMod {
         __obj.asInstanceOf[ILicenseBundle]
       }
       
-      extension [Self <: ILicenseBundle](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ILicenseBundle] (val x: Self) extends AnyVal {
         
         inline def setPackages(value: js.Array[IPackageLicenseInfo]): Self = StObject.set(x, "packages", value.asInstanceOf[js.Any])
         
@@ -381,7 +384,8 @@ object libLicensesMod {
         __obj.asInstanceOf[ILicenseResponse]
       }
       
-      extension [Self <: ILicenseResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ILicenseResponse] (val x: Self) extends AnyVal {
         
         inline def setBundles(value: StringDictionary[ILicenseBundle]): Self = StObject.set(x, "bundles", value.asInstanceOf[js.Any])
       }
@@ -407,7 +411,8 @@ object libLicensesMod {
         __obj.asInstanceOf[IModelOptions]
       }
       
-      extension [Self <: IModelOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IModelOptions] (val x: Self) extends AnyVal {
         
         inline def setLicensesUrl(value: String): Self = StObject.set(x, "licensesUrl", value.asInstanceOf[js.Any])
         
@@ -433,7 +438,8 @@ object libLicensesMod {
         __obj.asInstanceOf[IOptions]
       }
       
-      extension [Self <: IOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
         
         inline def setModel(value: Model): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       }
@@ -480,7 +486,8 @@ object libLicensesMod {
         __obj.asInstanceOf[IPackageLicenseInfo]
       }
       
-      extension [Self <: IPackageLicenseInfo](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IPackageLicenseInfo] (val x: Self) extends AnyVal {
         
         inline def setExtractedText(value: String): Self = StObject.set(x, "extractedText", value.asInstanceOf[js.Any])
         
@@ -508,7 +515,8 @@ object libLicensesMod {
         __obj.asInstanceOf[IReportFormat]
       }
       
-      extension [Self <: IReportFormat](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IReportFormat] (val x: Self) extends AnyVal {
         
         inline def setIcon(value: LabIcon): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
         

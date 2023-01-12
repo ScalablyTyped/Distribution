@@ -23,7 +23,8 @@ object WhenSchemaOptions {
     __obj.asInstanceOf[WhenSchemaOptions]
   }
   
-  extension [Self <: WhenSchemaOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WhenSchemaOptions] (val x: Self) extends AnyVal {
     
     inline def setOtherwise(value: SchemaLike): Self = StObject.set(x, "otherwise", value.asInstanceOf[js.Any])
     

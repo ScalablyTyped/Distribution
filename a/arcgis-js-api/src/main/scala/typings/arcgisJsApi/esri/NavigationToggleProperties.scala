@@ -47,7 +47,8 @@ object NavigationToggleProperties {
     __obj.asInstanceOf[NavigationToggleProperties]
   }
   
-  extension [Self <: NavigationToggleProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NavigationToggleProperties] (val x: Self) extends AnyVal {
     
     inline def setIconClass(value: String): Self = StObject.set(x, "iconClass", value.asInstanceOf[js.Any])
     

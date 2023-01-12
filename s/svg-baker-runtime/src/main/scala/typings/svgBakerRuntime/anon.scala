@@ -36,7 +36,8 @@ object anon {
       __obj.asInstanceOf[Ariahidden]
     }
     
-    extension [Self <: Ariahidden](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Ariahidden] (val x: Self) extends AnyVal {
       
       inline def `setAria-hidden`(value: String): Self = StObject.set(x, "aria-hidden", value.asInstanceOf[js.Any])
       
@@ -71,7 +72,8 @@ object anon {
       __obj.asInstanceOf[Content]
     }
     
-    extension [Self <: Content](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Content] (val x: Self) extends AnyVal {
       
       inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       

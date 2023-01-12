@@ -142,7 +142,8 @@ object CustomFunctions {
       __obj.asInstanceOf[CancelableInvocation]
     }
     
-    extension [Self <: CancelableInvocation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CancelableInvocation] (val x: Self) extends AnyVal {
       
       inline def setOnCanceled(value: () => Unit): Self = StObject.set(x, "onCanceled", js.Any.fromFunction0(value))
     }
@@ -179,7 +180,8 @@ object CustomFunctions {
       __obj.asInstanceOf[Error]
     }
     
-    extension [Self <: Error](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Error] (val x: Self) extends AnyVal {
       
       inline def setCode(value: ErrorCode): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
@@ -235,7 +237,8 @@ object CustomFunctions {
       __obj.asInstanceOf[Invocation]
     }
     
-    extension [Self <: Invocation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Invocation] (val x: Self) extends AnyVal {
       
       inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       

@@ -45,7 +45,8 @@ object SketchDefaultUpdateOptionsReshapeOptions {
     __obj.asInstanceOf[SketchDefaultUpdateOptionsReshapeOptions]
   }
   
-  extension [Self <: SketchDefaultUpdateOptionsReshapeOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SketchDefaultUpdateOptionsReshapeOptions] (val x: Self) extends AnyVal {
     
     inline def setEdgeOperation(value: none_ | split | offset): Self = StObject.set(x, "edgeOperation", value.asInstanceOf[js.Any])
     

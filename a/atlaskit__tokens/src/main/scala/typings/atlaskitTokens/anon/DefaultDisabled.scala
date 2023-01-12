@@ -55,7 +55,8 @@ object DefaultDisabled {
     __obj.asInstanceOf[DefaultDisabled[BaseToken]]
   }
   
-  extension [Self <: DefaultDisabled[?], BaseToken](x: Self & DefaultDisabled[BaseToken]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DefaultDisabled[?], BaseToken] (val x: Self & DefaultDisabled[BaseToken]) extends AnyVal {
     
     inline def setBold(value: PaintToken[BaseToken]): Self = StObject.set(x, "bold", value.asInstanceOf[js.Any])
     

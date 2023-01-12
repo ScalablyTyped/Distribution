@@ -18,7 +18,8 @@ object DeleteBGPPeerResponse {
     __obj.asInstanceOf[DeleteBGPPeerResponse]
   }
   
-  extension [Self <: DeleteBGPPeerResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteBGPPeerResponse] (val x: Self) extends AnyVal {
     
     inline def setVirtualInterface(value: VirtualInterface): Self = StObject.set(x, "virtualInterface", value.asInstanceOf[js.Any])
     

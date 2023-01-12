@@ -329,7 +329,8 @@ object distEsmAmqpConnectionManagerMod {
       __obj.asInstanceOf[AmqpConnectionManagerOptions]
     }
     
-    extension [Self <: AmqpConnectionManagerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AmqpConnectionManagerOptions] (val x: Self) extends AnyVal {
       
       inline def setConnectionOptions(value: AmqpConnectionOptions): Self = StObject.set(x, "connectionOptions", value.asInstanceOf[js.Any])
       

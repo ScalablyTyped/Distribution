@@ -23,7 +23,8 @@ object CalendarSharingMessage {
     __obj.asInstanceOf[CalendarSharingMessage]
   }
   
-  extension [Self <: CalendarSharingMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CalendarSharingMessage] (val x: Self) extends AnyVal {
     
     inline def setCanAccept(value: NullableOption[Boolean]): Self = StObject.set(x, "canAccept", value.asInstanceOf[js.Any])
     

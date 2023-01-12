@@ -18,7 +18,8 @@ object PutOpts {
     __obj.asInstanceOf[PutOpts]
   }
   
-  extension [Self <: PutOpts](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutOpts] (val x: Self) extends AnyVal {
     
     inline def setScope(value: Scope): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     

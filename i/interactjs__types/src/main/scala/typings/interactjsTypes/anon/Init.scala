@@ -44,7 +44,8 @@ object Init {
     __obj.asInstanceOf[Init]
   }
   
-  extension [Self <: Init](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Init] (val x: Self) extends AnyVal {
     
     inline def setInit(value: Any => Unit): Self = StObject.set(x, "init", js.Any.fromFunction1(value))
     

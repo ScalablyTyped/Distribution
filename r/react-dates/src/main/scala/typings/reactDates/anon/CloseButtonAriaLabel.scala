@@ -35,7 +35,8 @@ object CloseButtonAriaLabel {
     __obj.asInstanceOf[CloseButtonAriaLabel]
   }
   
-  extension [Self <: CloseButtonAriaLabel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CloseButtonAriaLabel] (val x: Self) extends AnyVal {
     
     inline def setCloseButtonAriaLabel(value: String): Self = StObject.set(x, "closeButtonAriaLabel", value.asInstanceOf[js.Any])
     

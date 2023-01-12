@@ -48,7 +48,8 @@ object dxGanttFilterRow {
     __obj.asInstanceOf[dxGanttFilterRow]
   }
   
-  extension [Self <: dxGanttFilterRow](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxGanttFilterRow] (val x: Self) extends AnyVal {
     
     inline def setBetweenEndText(value: String): Self = StObject.set(x, "betweenEndText", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object AggregationsAutoDateHistogramAggregate {
     __obj.asInstanceOf[AggregationsAutoDateHistogramAggregate]
   }
   
-  extension [Self <: AggregationsAutoDateHistogramAggregate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AggregationsAutoDateHistogramAggregate] (val x: Self) extends AnyVal {
     
     inline def setInterval(value: DurationLarge): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
   }

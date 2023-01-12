@@ -206,7 +206,8 @@ object TracerOptions {
     __obj.asInstanceOf[TracerOptions]
   }
   
-  extension [Self <: TracerOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TracerOptions] (val x: Self) extends AnyVal {
     
     inline def setAppsec(value: Boolean | ObfuscatorKeyRegex): Self = StObject.set(x, "appsec", value.asInstanceOf[js.Any])
     

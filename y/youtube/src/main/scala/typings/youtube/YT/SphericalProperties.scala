@@ -23,7 +23,8 @@ object SphericalProperties {
     __obj.asInstanceOf[SphericalProperties]
   }
   
-  extension [Self <: SphericalProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SphericalProperties] (val x: Self) extends AnyVal {
     
     inline def setEnableOrientationSensor(value: Boolean): Self = StObject.set(x, "enableOrientationSensor", value.asInstanceOf[js.Any])
     

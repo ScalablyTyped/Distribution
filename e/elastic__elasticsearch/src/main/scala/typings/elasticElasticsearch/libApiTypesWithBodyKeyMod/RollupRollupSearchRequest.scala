@@ -25,7 +25,8 @@ object RollupRollupSearchRequest {
     __obj.asInstanceOf[RollupRollupSearchRequest]
   }
   
-  extension [Self <: RollupRollupSearchRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RollupRollupSearchRequest] (val x: Self) extends AnyVal {
     
     inline def setBody(value: Size): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

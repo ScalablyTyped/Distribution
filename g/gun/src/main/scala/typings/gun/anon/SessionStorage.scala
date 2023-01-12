@@ -15,7 +15,8 @@ object SessionStorage {
     __obj.asInstanceOf[SessionStorage]
   }
   
-  extension [Self <: SessionStorage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SessionStorage] (val x: Self) extends AnyVal {
     
     inline def setSessionStorage(value: Boolean): Self = StObject.set(x, "sessionStorage", value.asInstanceOf[js.Any])
   }

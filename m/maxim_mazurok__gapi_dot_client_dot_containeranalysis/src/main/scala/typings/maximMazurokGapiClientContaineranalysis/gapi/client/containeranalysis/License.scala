@@ -22,7 +22,8 @@ object License {
     __obj.asInstanceOf[License]
   }
   
-  extension [Self <: License](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: License] (val x: Self) extends AnyVal {
     
     inline def setComments(value: String): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
     

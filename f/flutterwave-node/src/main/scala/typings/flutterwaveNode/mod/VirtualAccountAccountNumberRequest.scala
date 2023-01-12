@@ -25,7 +25,8 @@ object VirtualAccountAccountNumberRequest {
     __obj.asInstanceOf[VirtualAccountAccountNumberRequest]
   }
   
-  extension [Self <: VirtualAccountAccountNumberRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VirtualAccountAccountNumberRequest] (val x: Self) extends AnyVal {
     
     inline def setDuration(value: String): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     

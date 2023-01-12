@@ -84,7 +84,8 @@ object distEngineDatasetFakesMod {
       __obj.asInstanceOf[FakeDatasetArgs]
     }
     
-    extension [Self <: FakeDatasetArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FakeDatasetArgs] (val x: Self) extends AnyVal {
       
       inline def setBatchSize(value: Double): Self = StObject.set(x, "batchSize", value.asInstanceOf[js.Any])
       

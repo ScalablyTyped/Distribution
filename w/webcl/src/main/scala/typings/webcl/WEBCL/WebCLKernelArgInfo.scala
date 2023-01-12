@@ -24,7 +24,8 @@ object WebCLKernelArgInfo {
     __obj.asInstanceOf[WebCLKernelArgInfo]
   }
   
-  extension [Self <: WebCLKernelArgInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebCLKernelArgInfo] (val x: Self) extends AnyVal {
     
     inline def setAccessQualifier(value: String): Self = StObject.set(x, "accessQualifier", value.asInstanceOf[js.Any])
     

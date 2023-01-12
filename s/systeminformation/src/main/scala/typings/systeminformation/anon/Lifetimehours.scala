@@ -20,7 +20,8 @@ object Lifetimehours {
     __obj.asInstanceOf[Lifetimehours]
   }
   
-  extension [Self <: Lifetimehours](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Lifetimehours] (val x: Self) extends AnyVal {
     
     inline def setLifetime_hours(value: Double): Self = StObject.set(x, "lifetime_hours", value.asInstanceOf[js.Any])
     

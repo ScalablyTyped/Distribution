@@ -19,7 +19,8 @@ object SessionTransport {
     __obj.asInstanceOf[SessionTransport]
   }
   
-  extension [Self <: SessionTransport](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SessionTransport] (val x: Self) extends AnyVal {
     
     inline def setClear(value: /* res */ Response => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction1(value))
     

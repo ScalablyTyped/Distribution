@@ -29,7 +29,8 @@ object FancyBoxButtonTemplateOptions {
     __obj.asInstanceOf[FancyBoxButtonTemplateOptions]
   }
   
-  extension [Self <: FancyBoxButtonTemplateOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FancyBoxButtonTemplateOptions] (val x: Self) extends AnyVal {
     
     inline def setArrowLeft(value: String): Self = StObject.set(x, "arrowLeft", value.asInstanceOf[js.Any])
     

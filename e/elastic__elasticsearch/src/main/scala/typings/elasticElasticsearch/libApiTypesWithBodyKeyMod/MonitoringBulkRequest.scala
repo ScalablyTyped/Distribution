@@ -30,7 +30,8 @@ object MonitoringBulkRequest {
     __obj.asInstanceOf[MonitoringBulkRequest[TDocument, TPartialDocument]]
   }
   
-  extension [Self <: MonitoringBulkRequest[?, ?], TDocument, TPartialDocument](x: Self & (MonitoringBulkRequest[TDocument, TPartialDocument])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MonitoringBulkRequest[?, ?], TDocument, TPartialDocument] (val x: Self & (MonitoringBulkRequest[TDocument, TPartialDocument])) extends AnyVal {
     
     inline def setBody(
       value: js.Array[

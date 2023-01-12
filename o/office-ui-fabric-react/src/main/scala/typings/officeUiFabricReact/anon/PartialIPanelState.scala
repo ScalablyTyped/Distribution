@@ -21,7 +21,8 @@ object PartialIPanelState {
     __obj.asInstanceOf[PartialIPanelState]
   }
   
-  extension [Self <: PartialIPanelState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialIPanelState] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

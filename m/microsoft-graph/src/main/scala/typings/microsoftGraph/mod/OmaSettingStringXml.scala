@@ -21,7 +21,8 @@ object OmaSettingStringXml {
     __obj.asInstanceOf[OmaSettingStringXml]
   }
   
-  extension [Self <: OmaSettingStringXml](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OmaSettingStringXml] (val x: Self) extends AnyVal {
     
     inline def setFileName(value: NullableOption[String]): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
     

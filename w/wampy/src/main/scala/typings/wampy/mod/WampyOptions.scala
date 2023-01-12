@@ -47,7 +47,8 @@ object WampyOptions {
     __obj.asInstanceOf[WampyOptions]
   }
   
-  extension [Self <: WampyOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WampyOptions] (val x: Self) extends AnyVal {
     
     inline def setAuthid(value: String): Self = StObject.set(x, "authid", value.asInstanceOf[js.Any])
     

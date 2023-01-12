@@ -18,7 +18,8 @@ object EnableAllFeaturesResponse {
     __obj.asInstanceOf[EnableAllFeaturesResponse]
   }
   
-  extension [Self <: EnableAllFeaturesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnableAllFeaturesResponse] (val x: Self) extends AnyVal {
     
     inline def setHandshake(value: Handshake): Self = StObject.set(x, "Handshake", value.asInstanceOf[js.Any])
     

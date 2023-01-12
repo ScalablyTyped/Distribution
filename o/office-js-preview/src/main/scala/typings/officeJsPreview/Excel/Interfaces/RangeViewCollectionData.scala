@@ -16,7 +16,8 @@ object RangeViewCollectionData {
     __obj.asInstanceOf[RangeViewCollectionData]
   }
   
-  extension [Self <: RangeViewCollectionData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RangeViewCollectionData] (val x: Self) extends AnyVal {
     
     inline def setItems(value: js.Array[RangeViewData]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     

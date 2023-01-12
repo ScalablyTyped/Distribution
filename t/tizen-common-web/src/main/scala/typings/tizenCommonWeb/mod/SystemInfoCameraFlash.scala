@@ -75,7 +75,8 @@ object SystemInfoCameraFlash {
     __obj.asInstanceOf[SystemInfoCameraFlash]
   }
   
-  extension [Self <: SystemInfoCameraFlash](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SystemInfoCameraFlash] (val x: Self) extends AnyVal {
     
     inline def setBrightness(value: Double): Self = StObject.set(x, "brightness", value.asInstanceOf[js.Any])
     

@@ -91,7 +91,8 @@ object Input {
         __obj.asInstanceOf[Axis]
       }
       
-      extension [Self <: Axis](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Axis] (val x: Self) extends AnyVal {
         
         inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
         
@@ -166,7 +167,8 @@ object Input {
         __obj.asInstanceOf[Button]
       }
       
-      extension [Self <: Button](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Button] (val x: Self) extends AnyVal {
         
         inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
         
@@ -1721,7 +1723,8 @@ object Input {
         __obj.asInstanceOf[KeyCombo]
       }
       
-      extension [Self <: KeyCombo](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: KeyCombo] (val x: Self) extends AnyVal {
         
         inline def setCurrent(value: Double): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
         
@@ -2470,7 +2473,8 @@ object Input {
         __obj.asInstanceOf[MouseManager]
       }
       
-      extension [Self <: MouseManager](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: MouseManager] (val x: Self) extends AnyVal {
         
         inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
         
@@ -3125,7 +3129,8 @@ object Input {
         __obj.asInstanceOf[TouchManager]
       }
       
-      extension [Self <: TouchManager](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: TouchManager] (val x: Self) extends AnyVal {
         
         inline def setCapture(value: Boolean): Self = StObject.set(x, "capture", value.asInstanceOf[js.Any])
         

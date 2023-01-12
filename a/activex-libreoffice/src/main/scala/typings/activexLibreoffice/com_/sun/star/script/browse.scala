@@ -157,7 +157,8 @@ object browse {
       __obj.asInstanceOf[XBrowseNode]
     }
     
-    extension [Self <: XBrowseNode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XBrowseNode] (val x: Self) extends AnyVal {
       
       inline def setChildNodes(value: SafeArray[XBrowseNode]): Self = StObject.set(x, "ChildNodes", value.asInstanceOf[js.Any])
       
@@ -199,7 +200,8 @@ object browse {
       __obj.asInstanceOf[XBrowseNodeFactory]
     }
     
-    extension [Self <: XBrowseNodeFactory](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XBrowseNodeFactory] (val x: Self) extends AnyVal {
       
       inline def setCreateView(value: Double => XBrowseNode): Self = StObject.set(x, "createView", js.Any.fromFunction1(value))
     }

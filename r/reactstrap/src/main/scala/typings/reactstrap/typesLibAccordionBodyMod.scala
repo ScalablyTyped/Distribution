@@ -38,7 +38,8 @@ object typesLibAccordionBodyMod {
       __obj.asInstanceOf[AccordionBodyProps]
     }
     
-    extension [Self <: AccordionBodyProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AccordionBodyProps] (val x: Self) extends AnyVal {
       
       inline def setAccordionId(value: String): Self = StObject.set(x, "accordionId", value.asInstanceOf[js.Any])
       

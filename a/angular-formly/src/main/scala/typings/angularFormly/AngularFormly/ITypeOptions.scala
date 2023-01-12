@@ -56,7 +56,8 @@ object ITypeOptions {
     __obj.asInstanceOf[ITypeOptions]
   }
   
-  extension [Self <: ITypeOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ITypeOptions] (val x: Self) extends AnyVal {
     
     inline def setApiCheck(value: StringDictionary[js.Function]): Self = StObject.set(x, "apiCheck", value.asInstanceOf[js.Any])
     

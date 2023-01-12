@@ -52,7 +52,8 @@ object Typeofruntime {
     __obj.asInstanceOf[Typeofruntime]
   }
   
-  extension [Self <: Typeofruntime](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Typeofruntime] (val x: Self) extends AnyVal {
     
     inline def setActionType(value: NEWNOTE): Self = StObject.set(x, "ActionType", value.asInstanceOf[js.Any])
     

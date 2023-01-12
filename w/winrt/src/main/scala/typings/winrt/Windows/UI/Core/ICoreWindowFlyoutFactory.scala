@@ -18,7 +18,8 @@ object ICoreWindowFlyoutFactory {
     __obj.asInstanceOf[ICoreWindowFlyoutFactory]
   }
   
-  extension [Self <: ICoreWindowFlyoutFactory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICoreWindowFlyoutFactory] (val x: Self) extends AnyVal {
     
     inline def setCreate(value: Point => CoreWindowFlyout): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
     

@@ -48,7 +48,8 @@ object UpdateServiceTemplateVersionInput {
     __obj.asInstanceOf[UpdateServiceTemplateVersionInput]
   }
   
-  extension [Self <: UpdateServiceTemplateVersionInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateServiceTemplateVersionInput] (val x: Self) extends AnyVal {
     
     inline def setCompatibleEnvironmentTemplates(value: CompatibleEnvironmentTemplateInputList): Self = StObject.set(x, "compatibleEnvironmentTemplates", value.asInstanceOf[js.Any])
     

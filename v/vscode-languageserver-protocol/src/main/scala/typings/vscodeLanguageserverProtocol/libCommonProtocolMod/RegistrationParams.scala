@@ -15,7 +15,8 @@ object RegistrationParams {
     __obj.asInstanceOf[RegistrationParams]
   }
   
-  extension [Self <: RegistrationParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RegistrationParams] (val x: Self) extends AnyVal {
     
     inline def setRegistrations(value: js.Array[Registration]): Self = StObject.set(x, "registrations", value.asInstanceOf[js.Any])
     

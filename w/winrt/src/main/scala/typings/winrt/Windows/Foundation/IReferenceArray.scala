@@ -59,7 +59,8 @@ object IReferenceArray {
     __obj.asInstanceOf[IReferenceArray[T]]
   }
   
-  extension [Self <: IReferenceArray[?], T](x: Self & IReferenceArray[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IReferenceArray[?], T] (val x: Self & IReferenceArray[T]) extends AnyVal {
     
     inline def setValue(value: js.Array[T]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     

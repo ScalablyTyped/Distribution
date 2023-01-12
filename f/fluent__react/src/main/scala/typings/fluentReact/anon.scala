@@ -20,7 +20,8 @@ object anon {
       __obj.asInstanceOf[L10n]
     }
     
-    extension [Self <: L10n](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: L10n] (val x: Self) extends AnyVal {
       
       inline def setL10n(value: ReactLocalization): Self = StObject.set(x, "l10n", value.asInstanceOf[js.Any])
     }
@@ -45,7 +46,8 @@ object anon {
       __obj.asInstanceOf[PartialWithLocalizationPr]
     }
     
-    extension [Self <: PartialWithLocalizationPr](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialWithLocalizationPr] (val x: Self) extends AnyVal {
       
       inline def setGetString(
         value: (/* id */ String, /* args */ js.UndefOr[(Record[String, FluentVariable]) | Null], /* fallback */ js.UndefOr[String]) => String

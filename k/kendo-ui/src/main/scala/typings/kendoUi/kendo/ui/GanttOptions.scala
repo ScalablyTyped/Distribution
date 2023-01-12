@@ -121,7 +121,8 @@ object GanttOptions {
     __obj.asInstanceOf[GanttOptions]
   }
   
-  extension [Self <: GanttOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GanttOptions] (val x: Self) extends AnyVal {
     
     inline def setAdd(value: /* e */ GanttAddEvent => Unit): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
     

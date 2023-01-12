@@ -18,7 +18,8 @@ object DeleteLunaClientRequest {
     __obj.asInstanceOf[DeleteLunaClientRequest]
   }
   
-  extension [Self <: DeleteLunaClientRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteLunaClientRequest] (val x: Self) extends AnyVal {
     
     inline def setClientArn(value: ClientArn): Self = StObject.set(x, "ClientArn", value.asInstanceOf[js.Any])
   }

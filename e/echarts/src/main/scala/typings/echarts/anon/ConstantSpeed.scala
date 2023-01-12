@@ -151,7 +151,8 @@ object ConstantSpeed {
     __obj.asInstanceOf[ConstantSpeed]
   }
   
-  extension [Self <: ConstantSpeed](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConstantSpeed] (val x: Self) extends AnyVal {
     
     inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

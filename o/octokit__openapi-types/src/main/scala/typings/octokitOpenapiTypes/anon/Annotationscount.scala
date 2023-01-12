@@ -24,7 +24,8 @@ object Annotationscount {
     __obj.asInstanceOf[Annotationscount]
   }
   
-  extension [Self <: Annotationscount](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Annotationscount] (val x: Self) extends AnyVal {
     
     inline def setAnnotations_count(value: Double): Self = StObject.set(x, "annotations_count", value.asInstanceOf[js.Any])
     

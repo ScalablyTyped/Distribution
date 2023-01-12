@@ -22,7 +22,8 @@ object OmitUsePopperOptionsenabl {
     __obj.asInstanceOf[OmitUsePopperOptionsenabl]
   }
   
-  extension [Self <: OmitUsePopperOptionsenabl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OmitUsePopperOptionsenabl] (val x: Self) extends AnyVal {
     
     inline def setModifiers(value: js.Array[typings.popperjsCore.anon.PartialModifieranyany]): Self = StObject.set(x, "modifiers", value.asInstanceOf[js.Any])
     

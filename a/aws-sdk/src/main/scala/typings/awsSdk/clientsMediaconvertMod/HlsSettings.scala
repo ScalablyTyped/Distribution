@@ -48,7 +48,8 @@ object HlsSettings {
     __obj.asInstanceOf[HlsSettings]
   }
   
-  extension [Self <: HlsSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HlsSettings] (val x: Self) extends AnyVal {
     
     inline def setAudioGroupId(value: string): Self = StObject.set(x, "AudioGroupId", value.asInstanceOf[js.Any])
     

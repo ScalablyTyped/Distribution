@@ -29,7 +29,8 @@ object IColumnConfig {
     __obj.asInstanceOf[IColumnConfig[T]]
   }
   
-  extension [Self <: IColumnConfig[?], T](x: Self & IColumnConfig[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IColumnConfig[?], T] (val x: Self & IColumnConfig[T]) extends AnyVal {
     
     inline def setCast(value: String): Self = StObject.set(x, "cast", value.asInstanceOf[js.Any])
     

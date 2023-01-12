@@ -60,7 +60,8 @@ object mod {
       __obj.asInstanceOf[ConvertOptions]
     }
     
-    extension [Self <: ConvertOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConvertOptions] (val x: Self) extends AnyVal {
       
       inline def setFormat(value: FormatOptions): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
@@ -153,7 +154,8 @@ object mod {
       __obj.asInstanceOf[FormatOptions]
     }
     
-    extension [Self <: FormatOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FormatOptions] (val x: Self) extends AnyVal {
       
       inline def setOptions(
         value: (/* options */ js.Object, /* transformPropName */ js.UndefOr[js.Function1[/* name */ String, String]]) => Unit
@@ -213,7 +215,8 @@ object mod {
       __obj.asInstanceOf[StyleMap]
     }
     
-    extension [Self <: StyleMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StyleMap] (val x: Self) extends AnyVal {
       
       inline def setAliases(value: Aliases): Self = StObject.set(x, "aliases", value.asInstanceOf[js.Any])
       
@@ -295,7 +298,8 @@ object mod {
       __obj.asInstanceOf[TransformOptions[T]]
     }
     
-    extension [Self <: TransformOptions[?], T /* <: String */](x: Self & TransformOptions[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TransformOptions[?], T /* <: String */] (val x: Self & TransformOptions[T]) extends AnyVal {
       
       inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       

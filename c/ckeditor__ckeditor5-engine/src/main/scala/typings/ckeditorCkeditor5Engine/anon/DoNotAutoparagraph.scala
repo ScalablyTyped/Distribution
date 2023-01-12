@@ -19,7 +19,8 @@ object DoNotAutoparagraph {
     __obj.asInstanceOf[DoNotAutoparagraph]
   }
   
-  extension [Self <: DoNotAutoparagraph](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DoNotAutoparagraph] (val x: Self) extends AnyVal {
     
     inline def setDoNotAutoparagraph(value: Boolean): Self = StObject.set(x, "doNotAutoparagraph", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object ListDomainConfigurationsRequest {
     __obj.asInstanceOf[ListDomainConfigurationsRequest]
   }
   
-  extension [Self <: ListDomainConfigurationsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListDomainConfigurationsRequest] (val x: Self) extends AnyVal {
     
     inline def setMarker(value: Marker): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
     

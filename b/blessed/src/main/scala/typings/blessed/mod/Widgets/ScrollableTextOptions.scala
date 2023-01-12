@@ -31,7 +31,8 @@ object ScrollableTextOptions {
     __obj.asInstanceOf[ScrollableTextOptions]
   }
   
-  extension [Self <: ScrollableTextOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScrollableTextOptions] (val x: Self) extends AnyVal {
     
     inline def setKeys(value: String | js.Array[String] | Boolean): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
     

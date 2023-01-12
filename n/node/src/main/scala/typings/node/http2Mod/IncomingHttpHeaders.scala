@@ -27,7 +27,8 @@ object IncomingHttpHeaders {
     __obj.asInstanceOf[IncomingHttpHeaders]
   }
   
-  extension [Self <: IncomingHttpHeaders](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IncomingHttpHeaders] (val x: Self) extends AnyVal {
     
     inline def setColonauthority(value: String): Self = StObject.set(x, ":authority", value.asInstanceOf[js.Any])
     

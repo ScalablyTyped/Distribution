@@ -101,7 +101,8 @@ object IWebXRTeleportationOptions {
     __obj.asInstanceOf[IWebXRTeleportationOptions]
   }
   
-  extension [Self <: IWebXRTeleportationOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IWebXRTeleportationOptions] (val x: Self) extends AnyVal {
     
     inline def setCustomUtilityLayerScene(value: Scene): Self = StObject.set(x, "customUtilityLayerScene", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object Arm64RegMrsOperand {
     __obj.asInstanceOf[Arm64RegMrsOperand]
   }
   
-  extension [Self <: Arm64RegMrsOperand](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Arm64RegMrsOperand] (val x: Self) extends AnyVal {
     
     inline def setType(value: `reg-mrs`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

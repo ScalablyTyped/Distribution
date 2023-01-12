@@ -26,7 +26,8 @@ object libRateMod extends Shortcut {
       __obj.asInstanceOf[RateProps]
     }
     
-    extension [Self <: RateProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RateProps] (val x: Self) extends AnyVal {
       
       inline def setTooltips(value: js.Array[String]): Self = StObject.set(x, "tooltips", value.asInstanceOf[js.Any])
       

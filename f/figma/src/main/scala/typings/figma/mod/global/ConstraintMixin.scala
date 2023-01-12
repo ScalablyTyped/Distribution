@@ -15,7 +15,8 @@ object ConstraintMixin {
     __obj.asInstanceOf[ConstraintMixin]
   }
   
-  extension [Self <: ConstraintMixin](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConstraintMixin] (val x: Self) extends AnyVal {
     
     inline def setConstraints(value: Constraints): Self = StObject.set(x, "constraints", value.asInstanceOf[js.Any])
   }

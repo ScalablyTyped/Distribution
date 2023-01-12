@@ -22,7 +22,8 @@ object AsyncBatchAnnotateFilesRequest {
     __obj.asInstanceOf[AsyncBatchAnnotateFilesRequest]
   }
   
-  extension [Self <: AsyncBatchAnnotateFilesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AsyncBatchAnnotateFilesRequest] (val x: Self) extends AnyVal {
     
     inline def setParent(value: String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     

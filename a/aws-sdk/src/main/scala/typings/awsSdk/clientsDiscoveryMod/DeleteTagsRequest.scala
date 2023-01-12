@@ -23,7 +23,8 @@ object DeleteTagsRequest {
     __obj.asInstanceOf[DeleteTagsRequest]
   }
   
-  extension [Self <: DeleteTagsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteTagsRequest] (val x: Self) extends AnyVal {
     
     inline def setConfigurationIds(value: ConfigurationIdList): Self = StObject.set(x, "configurationIds", value.asInstanceOf[js.Any])
     

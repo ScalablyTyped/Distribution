@@ -33,7 +33,8 @@ object libInversifyInversifyProtocolMod {
       __obj.asInstanceOf[InversifyContext]
     }
     
-    extension [Self <: InversifyContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InversifyContext] (val x: Self) extends AnyVal {
       
       inline def setContainer(value: Container): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     }
@@ -69,7 +70,8 @@ object libInversifyInversifyProtocolMod {
       __obj.asInstanceOf[InversifyRegister]
     }
     
-    extension [Self <: InversifyRegister](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InversifyRegister] (val x: Self) extends AnyVal {
       
       inline def setBind(value: /* serviceIdentifier */ ServiceIdentifier[Any] => BindingToSyntax[Any]): Self = StObject.set(x, "bind", js.Any.fromFunction1(value))
       

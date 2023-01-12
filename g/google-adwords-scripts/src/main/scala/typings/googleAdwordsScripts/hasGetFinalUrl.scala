@@ -17,7 +17,8 @@ object hasGetFinalUrl {
     __obj.asInstanceOf[hasGetFinalUrl]
   }
   
-  extension [Self <: hasGetFinalUrl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: hasGetFinalUrl] (val x: Self) extends AnyVal {
     
     inline def setGetFinalUrl(value: () => String): Self = StObject.set(x, "getFinalUrl", js.Any.fromFunction0(value))
     

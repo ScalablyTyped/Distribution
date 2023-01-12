@@ -73,7 +73,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setComments(value: SyntaxFeatureOption): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
       
@@ -152,7 +153,8 @@ object mod {
       __obj.asInstanceOf[StyleSearchMatch]
     }
     
-    extension [Self <: StyleSearchMatch](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StyleSearchMatch] (val x: Self) extends AnyVal {
       
       inline def setEndIndex(value: Double): Self = StObject.set(x, "endIndex", value.asInstanceOf[js.Any])
       

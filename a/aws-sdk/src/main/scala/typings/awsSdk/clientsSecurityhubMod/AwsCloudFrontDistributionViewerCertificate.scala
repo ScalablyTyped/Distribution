@@ -48,7 +48,8 @@ object AwsCloudFrontDistributionViewerCertificate {
     __obj.asInstanceOf[AwsCloudFrontDistributionViewerCertificate]
   }
   
-  extension [Self <: AwsCloudFrontDistributionViewerCertificate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsCloudFrontDistributionViewerCertificate] (val x: Self) extends AnyVal {
     
     inline def setAcmCertificateArn(value: NonEmptyString): Self = StObject.set(x, "AcmCertificateArn", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object HttpActionHeader {
     __obj.asInstanceOf[HttpActionHeader]
   }
   
-  extension [Self <: HttpActionHeader](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HttpActionHeader] (val x: Self) extends AnyVal {
     
     inline def setKey(value: HeaderKey): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     

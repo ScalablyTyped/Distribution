@@ -43,7 +43,8 @@ object ATVPlayerRatingInfo {
     __obj.asInstanceOf[ATVPlayerRatingInfo]
   }
   
-  extension [Self <: ATVPlayerRatingInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ATVPlayerRatingInfo] (val x: Self) extends AnyVal {
     
     inline def setRatingImageURL(value: String): Self = StObject.set(x, "ratingImageURL", value.asInstanceOf[js.Any])
     

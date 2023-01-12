@@ -21,7 +21,8 @@ object TreeListFilterable {
     __obj.asInstanceOf[TreeListFilterable]
   }
   
-  extension [Self <: TreeListFilterable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TreeListFilterable] (val x: Self) extends AnyVal {
     
     inline def setExtra(value: Boolean): Self = StObject.set(x, "extra", value.asInstanceOf[js.Any])
     

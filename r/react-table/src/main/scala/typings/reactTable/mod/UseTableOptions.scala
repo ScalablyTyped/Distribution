@@ -54,7 +54,8 @@ object UseTableOptions {
     __obj.asInstanceOf[UseTableOptions[D]]
   }
   
-  extension [Self <: UseTableOptions[?], D /* <: js.Object */](x: Self & UseTableOptions[D]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UseTableOptions[?], D /* <: js.Object */] (val x: Self & UseTableOptions[D]) extends AnyVal {
     
     inline def setAutoResetHiddenColumns(value: Boolean): Self = StObject.set(x, "autoResetHiddenColumns", value.asInstanceOf[js.Any])
     

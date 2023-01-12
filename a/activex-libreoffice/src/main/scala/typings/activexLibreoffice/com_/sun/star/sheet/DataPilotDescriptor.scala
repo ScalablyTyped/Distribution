@@ -120,7 +120,8 @@ object DataPilotDescriptor {
     __obj.asInstanceOf[DataPilotDescriptor]
   }
   
-  extension [Self <: DataPilotDescriptor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataPilotDescriptor] (val x: Self) extends AnyVal {
     
     inline def setColumnGrand(value: Boolean): Self = StObject.set(x, "ColumnGrand", value.asInstanceOf[js.Any])
     

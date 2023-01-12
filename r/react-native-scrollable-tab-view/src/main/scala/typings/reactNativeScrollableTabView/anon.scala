@@ -32,7 +32,8 @@ object anon {
       __obj.asInstanceOf[ActiveTab]
     }
     
-    extension [Self <: ActiveTab](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ActiveTab] (val x: Self) extends AnyVal {
       
       inline def setActiveTab(value: Double): Self = StObject.set(x, "activeTab", value.asInstanceOf[js.Any])
       
@@ -78,7 +79,8 @@ object anon {
       __obj.asInstanceOf[TabBarProps]
     }
     
-    extension [Self <: TabBarProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TabBarProps] (val x: Self) extends AnyVal {
       
       inline def setActiveTab(value: Double): Self = StObject.set(x, "activeTab", value.asInstanceOf[js.Any])
       
@@ -140,7 +142,8 @@ object anon {
       __obj.asInstanceOf[TabBarPropsDefaultTabBarP]
     }
     
-    extension [Self <: TabBarPropsDefaultTabBarP](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TabBarPropsDefaultTabBarP] (val x: Self) extends AnyVal {
       
       inline def setActiveTab(value: Double): Self = StObject.set(x, "activeTab", value.asInstanceOf[js.Any])
       
@@ -240,7 +243,8 @@ object anon {
       __obj.asInstanceOf[TabBarPropsScrollableTabB]
     }
     
-    extension [Self <: TabBarPropsScrollableTabB](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TabBarPropsScrollableTabB] (val x: Self) extends AnyVal {
       
       inline def setActiveTab(value: Double): Self = StObject.set(x, "activeTab", value.asInstanceOf[js.Any])
       
@@ -319,7 +323,8 @@ object anon {
       __obj.asInstanceOf[TabLabel]
     }
     
-    extension [Self <: TabLabel](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TabLabel] (val x: Self) extends AnyVal {
       
       inline def setTabLabel(value: ReactChild): Self = StObject.set(x, "tabLabel", value.asInstanceOf[js.Any])
     }

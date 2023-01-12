@@ -20,7 +20,8 @@ object TypeofFloatingActionButto {
     __obj.asInstanceOf[TypeofFloatingActionButto]
   }
   
-  extension [Self <: TypeofFloatingActionButto](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofFloatingActionButto] (val x: Self) extends AnyVal {
     
     inline def setExtend(value: js.Object => FloatingActionButton): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
     

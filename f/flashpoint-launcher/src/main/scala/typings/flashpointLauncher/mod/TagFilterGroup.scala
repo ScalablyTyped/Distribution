@@ -40,7 +40,8 @@ object TagFilterGroup {
     __obj.asInstanceOf[TagFilterGroup]
   }
   
-  extension [Self <: TagFilterGroup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TagFilterGroup] (val x: Self) extends AnyVal {
     
     inline def setCategories(value: TagFilter): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
     

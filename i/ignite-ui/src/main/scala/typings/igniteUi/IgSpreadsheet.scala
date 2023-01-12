@@ -295,7 +295,8 @@ object IgSpreadsheet {
     __obj.asInstanceOf[IgSpreadsheet]
   }
   
-  extension [Self <: IgSpreadsheet](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgSpreadsheet] (val x: Self) extends AnyVal {
     
     inline def setActionExecuted(value: (/* event */ Event, /* ui */ ActionExecutedEventUIParam) => Unit): Self = StObject.set(x, "actionExecuted", js.Any.fromFunction2(value))
     

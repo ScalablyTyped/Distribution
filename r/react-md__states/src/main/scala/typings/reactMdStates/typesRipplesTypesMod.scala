@@ -80,7 +80,8 @@ object typesRipplesTypesMod {
       __obj.asInstanceOf[MergableRippleHandlers[E]]
     }
     
-    extension [Self <: MergableRippleHandlers[?], E /* <: HTMLElement */](x: Self & MergableRippleHandlers[E]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MergableRippleHandlers[?], E /* <: HTMLElement */] (val x: Self & MergableRippleHandlers[E]) extends AnyVal {
       
       inline def setOnClick(value: MouseEvent[E, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
       
@@ -147,7 +148,8 @@ object typesRipplesTypesMod {
       __obj.asInstanceOf[RippleEvent[E]]
     }
     
-    extension [Self <: RippleEvent[?], E /* <: HTMLElement */](x: Self & RippleEvent[E]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RippleEvent[?], E /* <: HTMLElement */] (val x: Self & RippleEvent[E]) extends AnyVal {
       
       inline def setButton(value: Double): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
       
@@ -206,7 +208,8 @@ object typesRipplesTypesMod {
       __obj.asInstanceOf[RippleState]
     }
     
-    extension [Self <: RippleState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RippleState] (val x: Self) extends AnyVal {
       
       inline def setEntered(value: Boolean): Self = StObject.set(x, "entered", value.asInstanceOf[js.Any])
       
@@ -303,7 +306,8 @@ object typesRipplesTypesMod {
       __obj.asInstanceOf[RipplesOptions[E]]
     }
     
-    extension [Self <: RipplesOptions[?], E /* <: HTMLElement */](x: Self & RipplesOptions[E]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RipplesOptions[?], E /* <: HTMLElement */] (val x: Self & RipplesOptions[E]) extends AnyVal {
       
       inline def setDisableProgrammaticRipple(value: Boolean): Self = StObject.set(x, "disableProgrammaticRipple", value.asInstanceOf[js.Any])
       

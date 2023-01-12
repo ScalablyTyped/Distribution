@@ -30,7 +30,8 @@ object DeviceEnrollmentPlatformRestrictionsConfiguration {
     __obj.asInstanceOf[DeviceEnrollmentPlatformRestrictionsConfiguration]
   }
   
-  extension [Self <: DeviceEnrollmentPlatformRestrictionsConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeviceEnrollmentPlatformRestrictionsConfiguration] (val x: Self) extends AnyVal {
     
     inline def setAndroidRestriction(value: NullableOption[DeviceEnrollmentPlatformRestriction]): Self = StObject.set(x, "androidRestriction", value.asInstanceOf[js.Any])
     

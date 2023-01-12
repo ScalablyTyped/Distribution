@@ -26,7 +26,8 @@ object DataBlock {
     __obj.asInstanceOf[DataBlock]
   }
   
-  extension [Self <: DataBlock](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataBlock] (val x: Self) extends AnyVal {
     
     inline def setCodewords(value: js.Array[Double]): Self = StObject.set(x, "Codewords", value.asInstanceOf[js.Any])
     

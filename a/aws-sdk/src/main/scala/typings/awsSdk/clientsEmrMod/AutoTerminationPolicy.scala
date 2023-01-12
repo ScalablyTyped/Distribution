@@ -18,7 +18,8 @@ object AutoTerminationPolicy {
     __obj.asInstanceOf[AutoTerminationPolicy]
   }
   
-  extension [Self <: AutoTerminationPolicy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AutoTerminationPolicy] (val x: Self) extends AnyVal {
     
     inline def setIdleTimeout(value: Long): Self = StObject.set(x, "IdleTimeout", value.asInstanceOf[js.Any])
     

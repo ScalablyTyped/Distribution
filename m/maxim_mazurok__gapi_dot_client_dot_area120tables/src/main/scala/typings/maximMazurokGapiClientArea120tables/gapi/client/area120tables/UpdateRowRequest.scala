@@ -22,7 +22,8 @@ object UpdateRowRequest {
     __obj.asInstanceOf[UpdateRowRequest]
   }
   
-  extension [Self <: UpdateRowRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateRowRequest] (val x: Self) extends AnyVal {
     
     inline def setRow(value: Row): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
     

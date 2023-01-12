@@ -218,7 +218,8 @@ object TestScriptSetupActionAssert {
     __obj.asInstanceOf[TestScriptSetupActionAssert]
   }
   
-  extension [Self <: TestScriptSetupActionAssert](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TestScriptSetupActionAssert] (val x: Self) extends AnyVal {
     
     inline def setCompareToSourceExpression(value: String): Self = StObject.set(x, "compareToSourceExpression", value.asInstanceOf[js.Any])
     

@@ -44,7 +44,8 @@ object AnalysisIcuCollationTokenFilter {
     __obj.asInstanceOf[AnalysisIcuCollationTokenFilter]
   }
   
-  extension [Self <: AnalysisIcuCollationTokenFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnalysisIcuCollationTokenFilter] (val x: Self) extends AnyVal {
     
     inline def setAlternate(value: AnalysisIcuCollationAlternate): Self = StObject.set(x, "alternate", value.asInstanceOf[js.Any])
     

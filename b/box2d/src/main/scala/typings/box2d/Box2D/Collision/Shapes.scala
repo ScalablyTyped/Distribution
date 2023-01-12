@@ -62,7 +62,8 @@ object Shapes {
       __obj.asInstanceOf[b2CircleShape]
     }
     
-    extension [Self <: b2CircleShape](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: b2CircleShape] (val x: Self) extends AnyVal {
       
       inline def setGetLocalPosition(value: () => b2Vec2): Self = StObject.set(x, "GetLocalPosition", js.Any.fromFunction0(value))
       
@@ -100,7 +101,8 @@ object Shapes {
       __obj.asInstanceOf[b2EdgeChainDef]
     }
     
-    extension [Self <: b2EdgeChainDef](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: b2EdgeChainDef] (val x: Self) extends AnyVal {
       
       inline def setIsALoop(value: Boolean): Self = StObject.set(x, "isALoop", value.asInstanceOf[js.Any])
       
@@ -239,7 +241,8 @@ object Shapes {
       __obj.asInstanceOf[b2EdgeShape]
     }
     
-    extension [Self <: b2EdgeShape](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: b2EdgeShape] (val x: Self) extends AnyVal {
       
       inline def setCorner1IsConvex(value: () => Boolean): Self = StObject.set(x, "Corner1IsConvex", js.Any.fromFunction0(value))
       
@@ -297,7 +300,8 @@ object Shapes {
       __obj.asInstanceOf[b2MassData]
     }
     
-    extension [Self <: b2MassData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: b2MassData] (val x: Self) extends AnyVal {
       
       inline def setCenter(value: b2Vec2): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
       
@@ -466,7 +470,8 @@ object Shapes {
       __obj.asInstanceOf[b2Shape]
     }
     
-    extension [Self <: b2Shape](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: b2Shape] (val x: Self) extends AnyVal {
       
       inline def setComputeAABB(value: (b2AABB, b2Transform) => Unit): Self = StObject.set(x, "ComputeAABB", js.Any.fromFunction2(value))
       

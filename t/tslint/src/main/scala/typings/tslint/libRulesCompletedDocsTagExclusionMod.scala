@@ -40,7 +40,8 @@ object libRulesCompletedDocsTagExclusionMod {
       __obj.asInstanceOf[ITagExclusionDescriptor]
     }
     
-    extension [Self <: ITagExclusionDescriptor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITagExclusionDescriptor] (val x: Self) extends AnyVal {
       
       inline def setTags(value: Content): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       

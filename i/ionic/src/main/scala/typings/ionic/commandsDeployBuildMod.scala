@@ -73,7 +73,8 @@ object commandsDeployBuildMod {
       __obj.asInstanceOf[DeployBuild]
     }
     
-    extension [Self <: DeployBuild](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeployBuild] (val x: Self) extends AnyVal {
       
       inline def setAutomation_id(value: Double): Self = StObject.set(x, "automation_id", value.asInstanceOf[js.Any])
       

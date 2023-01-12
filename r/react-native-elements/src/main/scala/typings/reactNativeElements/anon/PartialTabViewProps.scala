@@ -28,7 +28,8 @@ object PartialTabViewProps {
     __obj.asInstanceOf[PartialTabViewProps]
   }
   
-  extension [Self <: PartialTabViewProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialTabViewProps] (val x: Self) extends AnyVal {
     
     inline def setAnimationConfig(value: Omit[SpringAnimationConfig & TimingAnimationConfig, toValue]): Self = StObject.set(x, "animationConfig", value.asInstanceOf[js.Any])
     

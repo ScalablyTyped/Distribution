@@ -17,7 +17,8 @@ object Affects {
     __obj.asInstanceOf[Affects]
   }
   
-  extension [Self <: Affects](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Affects] (val x: Self) extends AnyVal {
     
     inline def setAffects(value: js.Array[typings.firebaseFirestore.distFirestoreSrcCoreQueryMod.Query]): Self = StObject.set(x, "affects", value.asInstanceOf[js.Any])
     

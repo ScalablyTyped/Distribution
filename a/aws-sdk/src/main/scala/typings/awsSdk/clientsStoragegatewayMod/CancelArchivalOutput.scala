@@ -18,7 +18,8 @@ object CancelArchivalOutput {
     __obj.asInstanceOf[CancelArchivalOutput]
   }
   
-  extension [Self <: CancelArchivalOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CancelArchivalOutput] (val x: Self) extends AnyVal {
     
     inline def setTapeARN(value: TapeARN): Self = StObject.set(x, "TapeARN", value.asInstanceOf[js.Any])
     

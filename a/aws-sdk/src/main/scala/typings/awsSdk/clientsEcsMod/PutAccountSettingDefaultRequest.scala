@@ -23,7 +23,8 @@ object PutAccountSettingDefaultRequest {
     __obj.asInstanceOf[PutAccountSettingDefaultRequest]
   }
   
-  extension [Self <: PutAccountSettingDefaultRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutAccountSettingDefaultRequest] (val x: Self) extends AnyVal {
     
     inline def setName(value: SettingName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

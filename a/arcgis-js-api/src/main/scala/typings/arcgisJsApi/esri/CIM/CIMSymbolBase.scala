@@ -16,7 +16,8 @@ object CIMSymbolBase {
     __obj.asInstanceOf[CIMSymbolBase]
   }
   
-  extension [Self <: CIMSymbolBase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CIMSymbolBase] (val x: Self) extends AnyVal {
     
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

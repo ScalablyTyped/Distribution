@@ -65,7 +65,8 @@ object ScCommunicator {
       __obj.asInstanceOf[Environment]
     }
     
-    extension [Self <: Environment](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Environment] (val x: Self) extends AnyVal {
       
       inline def setDOMAIN(value: String): Self = StObject.set(x, "DOMAIN", value.asInstanceOf[js.Any])
       
@@ -149,7 +150,8 @@ object ScCommunicator {
       __obj.asInstanceOf[Environments]
     }
     
-    extension [Self <: Environments](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Environments] (val x: Self) extends AnyVal {
       
       inline def setDEVELOPMENT(value: Environment): Self = StObject.set(x, "DEVELOPMENT", value.asInstanceOf[js.Any])
       
@@ -209,7 +211,8 @@ object ScCommunicator {
       __obj.asInstanceOf[ScEnvironmentsProvider]
     }
     
-    extension [Self <: ScEnvironmentsProvider](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScEnvironmentsProvider] (val x: Self) extends AnyVal {
       
       inline def set$get(value: () => Any): Self = StObject.set(x, "$get", js.Any.fromFunction0(value))
       

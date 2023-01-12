@@ -28,7 +28,8 @@ object DataProcessing {
     __obj.asInstanceOf[DataProcessing]
   }
   
-  extension [Self <: DataProcessing](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataProcessing] (val x: Self) extends AnyVal {
     
     inline def setInputFilter(value: JsonPath): Self = StObject.set(x, "InputFilter", value.asInstanceOf[js.Any])
     

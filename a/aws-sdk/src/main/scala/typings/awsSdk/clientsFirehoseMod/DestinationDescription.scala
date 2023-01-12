@@ -50,7 +50,8 @@ object DestinationDescription {
     __obj.asInstanceOf[DestinationDescription]
   }
   
-  extension [Self <: DestinationDescription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DestinationDescription] (val x: Self) extends AnyVal {
     
     inline def setAmazonopensearchserviceDestinationDescription(value: AmazonopensearchserviceDestinationDescription): Self = StObject.set(x, "AmazonopensearchserviceDestinationDescription", value.asInstanceOf[js.Any])
     

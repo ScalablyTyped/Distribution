@@ -23,7 +23,8 @@ object DescribeClassicLinkInstancesResult {
     __obj.asInstanceOf[DescribeClassicLinkInstancesResult]
   }
   
-  extension [Self <: DescribeClassicLinkInstancesResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeClassicLinkInstancesResult] (val x: Self) extends AnyVal {
     
     inline def setInstances(value: ClassicLinkInstanceList): Self = StObject.set(x, "Instances", value.asInstanceOf[js.Any])
     

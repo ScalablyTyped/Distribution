@@ -23,7 +23,8 @@ object ListRecordHistorySearchFilter {
     __obj.asInstanceOf[ListRecordHistorySearchFilter]
   }
   
-  extension [Self <: ListRecordHistorySearchFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListRecordHistorySearchFilter] (val x: Self) extends AnyVal {
     
     inline def setKey(value: SearchFilterKey): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
     

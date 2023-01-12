@@ -26,7 +26,8 @@ object LocalRelativeObjectIdentifierValueBlockJson {
     __obj.asInstanceOf[LocalRelativeObjectIdentifierValueBlockJson]
   }
   
-  extension [Self <: LocalRelativeObjectIdentifierValueBlockJson](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LocalRelativeObjectIdentifierValueBlockJson] (val x: Self) extends AnyVal {
     
     inline def setSidArray(value: js.Array[LocalRelativeSidValueBlockJson]): Self = StObject.set(x, "sidArray", value.asInstanceOf[js.Any])
     

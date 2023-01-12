@@ -43,7 +43,8 @@ object FilterCriteria {
     __obj.asInstanceOf[FilterCriteria]
   }
   
-  extension [Self <: FilterCriteria](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FilterCriteria] (val x: Self) extends AnyVal {
     
     inline def setExcludeChats(value: Boolean): Self = StObject.set(x, "excludeChats", value.asInstanceOf[js.Any])
     

@@ -47,7 +47,8 @@ object IFieldOptions {
     __obj.asInstanceOf[IFieldOptions]
   }
   
-  extension [Self <: IFieldOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IFieldOptions] (val x: Self) extends AnyVal {
     
     inline def setCtype(value: CType): Self = StObject.set(x, "ctype", value.asInstanceOf[js.Any])
     

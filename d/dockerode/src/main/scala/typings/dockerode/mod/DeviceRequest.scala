@@ -24,7 +24,8 @@ object DeviceRequest {
     __obj.asInstanceOf[DeviceRequest]
   }
   
-  extension [Self <: DeviceRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeviceRequest] (val x: Self) extends AnyVal {
     
     inline def setCapabilities(value: js.Array[js.Array[String]]): Self = StObject.set(x, "Capabilities", value.asInstanceOf[js.Any])
     

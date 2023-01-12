@@ -21,7 +21,8 @@ object MixModeSettings {
     __obj.asInstanceOf[MixModeSettings]
   }
   
-  extension [Self <: MixModeSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MixModeSettings] (val x: Self) extends AnyVal {
     
     inline def setInsertAfterTag(value: String | HTMLElement): Self = StObject.set(x, "insertAfterTag", value.asInstanceOf[js.Any])
     

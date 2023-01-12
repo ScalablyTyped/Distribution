@@ -175,7 +175,8 @@ object miscTimerMod {
       __obj.asInstanceOf[ITimerData[T]]
     }
     
-    extension [Self <: ITimerData[?], T](x: Self & ITimerData[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITimerData[?], T] (val x: Self & ITimerData[T]) extends AnyVal {
       
       inline def setCompleteRate(value: Double): Self = StObject.set(x, "completeRate", value.asInstanceOf[js.Any])
       
@@ -235,7 +236,8 @@ object miscTimerMod {
       __obj.asInstanceOf[ITimerOptions[T]]
     }
     
-    extension [Self <: ITimerOptions[?], T](x: Self & ITimerOptions[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITimerOptions[?], T] (val x: Self & ITimerOptions[T]) extends AnyVal {
       
       inline def setBreakCondition(value: /* data */ js.UndefOr[ITimerData[T]] => Boolean): Self = StObject.set(x, "breakCondition", js.Any.fromFunction1(value))
       

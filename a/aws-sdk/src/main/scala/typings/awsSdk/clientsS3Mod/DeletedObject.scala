@@ -33,7 +33,8 @@ object DeletedObject {
     __obj.asInstanceOf[DeletedObject]
   }
   
-  extension [Self <: DeletedObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeletedObject] (val x: Self) extends AnyVal {
     
     inline def setDeleteMarker(value: DeleteMarker): Self = StObject.set(x, "DeleteMarker", value.asInstanceOf[js.Any])
     

@@ -160,7 +160,8 @@ object distTypesCoreServicesProjectsMod {
       __obj.asInstanceOf[NamespaceInfoSchema]
     }
     
-    extension [Self <: NamespaceInfoSchema](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NamespaceInfoSchema] (val x: Self) extends AnyVal {
       
       inline def setAvatar_url(value: String): Self = StObject.set(x, "avatar_url", value.asInstanceOf[js.Any])
       
@@ -354,7 +355,8 @@ object distTypesCoreServicesProjectsMod {
       __obj.asInstanceOf[ProjectSchema]
     }
     
-    extension [Self <: ProjectSchema](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProjectSchema] (val x: Self) extends AnyVal {
       
       inline def setArchived(value: Boolean): Self = StObject.set(x, "archived", value.asInstanceOf[js.Any])
       

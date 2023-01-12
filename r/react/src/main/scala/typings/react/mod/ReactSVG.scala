@@ -179,7 +179,8 @@ object ReactSVG {
     __obj.asInstanceOf[ReactSVG]
   }
   
-  extension [Self <: ReactSVG](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReactSVG] (val x: Self) extends AnyVal {
     
     inline def setAnimate(value: SVGFactory): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     

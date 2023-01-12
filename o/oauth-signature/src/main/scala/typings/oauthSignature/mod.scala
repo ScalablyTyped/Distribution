@@ -142,7 +142,8 @@ object mod {
         __obj.asInstanceOf[GenerateOptions]
       }
       
-      extension [Self <: GenerateOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: GenerateOptions] (val x: Self) extends AnyVal {
         
         inline def setEncodeSignature(value: Boolean): Self = StObject.set(x, "encodeSignature", value.asInstanceOf[js.Any])
       }
@@ -159,7 +160,8 @@ object mod {
         __obj.asInstanceOf[typings.oauthSignature.mod.OauthSignature_.HmacSha1]
       }
       
-      extension [Self <: typings.oauthSignature.mod.OauthSignature_.HmacSha1](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.oauthSignature.mod.OauthSignature_.HmacSha1] (val x: Self) extends AnyVal {
         
         inline def setGetBase64EncodedHash(value: () => String): Self = StObject.set(x, "getBase64EncodedHash", js.Any.fromFunction0(value))
       }
@@ -183,7 +185,8 @@ object mod {
         __obj.asInstanceOf[typings.oauthSignature.mod.OauthSignature_.HttpMethodElement]
       }
       
-      extension [Self <: typings.oauthSignature.mod.OauthSignature_.HttpMethodElement](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.oauthSignature.mod.OauthSignature_.HttpMethodElement] (val x: Self) extends AnyVal {
         
         inline def setGet(value: () => String): Self = StObject.set(x, "get", js.Any.fromFunction0(value))
       }
@@ -200,7 +203,8 @@ object mod {
         __obj.asInstanceOf[typings.oauthSignature.mod.OauthSignature_.ParametersElement]
       }
       
-      extension [Self <: typings.oauthSignature.mod.OauthSignature_.ParametersElement](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.oauthSignature.mod.OauthSignature_.ParametersElement] (val x: Self) extends AnyVal {
         
         inline def setGet(value: () => String): Self = StObject.set(x, "get", js.Any.fromFunction0(value))
       }
@@ -217,7 +221,8 @@ object mod {
         __obj.asInstanceOf[typings.oauthSignature.mod.OauthSignature_.ParametersLoader]
       }
       
-      extension [Self <: typings.oauthSignature.mod.OauthSignature_.ParametersLoader](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.oauthSignature.mod.OauthSignature_.ParametersLoader] (val x: Self) extends AnyVal {
         
         inline def setGet(value: () => StringDictionary[Any]): Self = StObject.set(x, "get", js.Any.fromFunction0(value))
       }
@@ -240,7 +245,8 @@ object mod {
         __obj.asInstanceOf[ParsedUrl]
       }
       
-      extension [Self <: ParsedUrl](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ParsedUrl] (val x: Self) extends AnyVal {
         
         inline def setAuthority(value: String): Self = StObject.set(x, "authority", value.asInstanceOf[js.Any])
         
@@ -273,7 +279,8 @@ object mod {
         __obj.asInstanceOf[typings.oauthSignature.mod.OauthSignature_.SignatureBaseString]
       }
       
-      extension [Self <: typings.oauthSignature.mod.OauthSignature_.SignatureBaseString](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.oauthSignature.mod.OauthSignature_.SignatureBaseString] (val x: Self) extends AnyVal {
         
         inline def setGenerate(value: () => String): Self = StObject.set(x, "generate", js.Any.fromFunction0(value))
       }
@@ -298,7 +305,8 @@ object mod {
         __obj.asInstanceOf[typings.oauthSignature.mod.OauthSignature_.UrlElement]
       }
       
-      extension [Self <: typings.oauthSignature.mod.OauthSignature_.UrlElement](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.oauthSignature.mod.OauthSignature_.UrlElement] (val x: Self) extends AnyVal {
         
         inline def setGet(value: () => js.UndefOr[String | Null]): Self = StObject.set(x, "get", js.Any.fromFunction0(value))
         

@@ -52,7 +52,8 @@ object ContinuousDeploymentDefinition {
     __obj.asInstanceOf[ContinuousDeploymentDefinition]
   }
   
-  extension [Self <: ContinuousDeploymentDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContinuousDeploymentDefinition] (val x: Self) extends AnyVal {
     
     inline def setConnectedService(value: WebApiConnectedServiceRef): Self = StObject.set(x, "connectedService", value.asInstanceOf[js.Any])
     

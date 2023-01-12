@@ -1015,7 +1015,8 @@ object typesBaseIframeOptionsMod {
       __obj.asInstanceOf[HTMLIFrameElementWithStyleString]
     }
     
-    extension [Self <: HTMLIFrameElementWithStyleString](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HTMLIFrameElementWithStyleString] (val x: Self) extends AnyVal {
       
       inline def setATTRIBUTE_NODE(value: Double): Self = StObject.set(x, "ATTRIBUTE_NODE", value.asInstanceOf[js.Any])
       
@@ -2284,7 +2285,8 @@ object typesBaseIframeOptionsMod {
       __obj.asInstanceOf[IframeOptions]
     }
     
-    extension [Self <: IframeOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IframeOptions] (val x: Self) extends AnyVal {
       
       inline def setIframeProps(value: PartialHTMLIFrameElementW): Self = StObject.set(x, "iframeProps", value.asInstanceOf[js.Any])
       
@@ -2303,7 +2305,8 @@ object typesBaseIframeOptionsMod {
       __obj.asInstanceOf[StyleString]
     }
     
-    extension [Self <: StyleString](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StyleString] (val x: Self) extends AnyVal {
       
       inline def setStyle(value: String): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     }

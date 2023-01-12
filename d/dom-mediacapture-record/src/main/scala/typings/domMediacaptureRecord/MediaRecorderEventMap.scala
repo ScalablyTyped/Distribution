@@ -26,7 +26,8 @@ object MediaRecorderEventMap {
     __obj.asInstanceOf[MediaRecorderEventMap]
   }
   
-  extension [Self <: MediaRecorderEventMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MediaRecorderEventMap] (val x: Self) extends AnyVal {
     
     inline def setDataavailable(value: BlobEvent): Self = StObject.set(x, "dataavailable", value.asInstanceOf[js.Any])
     

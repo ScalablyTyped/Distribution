@@ -62,7 +62,8 @@ object CatAllocationAllocationRecord {
     __obj.asInstanceOf[CatAllocationAllocationRecord]
   }
   
-  extension [Self <: CatAllocationAllocationRecord](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CatAllocationAllocationRecord] (val x: Self) extends AnyVal {
     
     inline def setDa(value: ByteSize): Self = StObject.set(x, "da", value.asInstanceOf[js.Any])
     

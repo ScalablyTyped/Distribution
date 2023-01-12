@@ -40,7 +40,8 @@ object AccessPackageAssignmentReviewSettings {
     __obj.asInstanceOf[AccessPackageAssignmentReviewSettings]
   }
   
-  extension [Self <: AccessPackageAssignmentReviewSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccessPackageAssignmentReviewSettings] (val x: Self) extends AnyVal {
     
     inline def setExpirationBehavior(value: NullableOption[AccessReviewExpirationBehavior]): Self = StObject.set(x, "expirationBehavior", value.asInstanceOf[js.Any])
     

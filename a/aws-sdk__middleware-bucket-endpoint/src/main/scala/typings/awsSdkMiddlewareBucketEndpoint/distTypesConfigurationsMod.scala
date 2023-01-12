@@ -60,7 +60,8 @@ object distTypesConfigurationsMod {
       __obj.asInstanceOf[BucketEndpointInputConfig]
     }
     
-    extension [Self <: BucketEndpointInputConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BucketEndpointInputConfig] (val x: Self) extends AnyVal {
       
       inline def setBucketEndpoint(value: Boolean): Self = StObject.set(x, "bucketEndpoint", value.asInstanceOf[js.Any])
       
@@ -186,7 +187,8 @@ object distTypesConfigurationsMod {
       __obj.asInstanceOf[BucketEndpointResolvedConfig]
     }
     
-    extension [Self <: BucketEndpointResolvedConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BucketEndpointResolvedConfig] (val x: Self) extends AnyVal {
       
       inline def setBucketEndpoint(value: Boolean): Self = StObject.set(x, "bucketEndpoint", value.asInstanceOf[js.Any])
       
@@ -248,7 +250,8 @@ object distTypesConfigurationsMod {
       __obj.asInstanceOf[PreviouslyResolved]
     }
     
-    extension [Self <: PreviouslyResolved](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PreviouslyResolved] (val x: Self) extends AnyVal {
       
       inline def setIsCustomEndpoint(value: Boolean): Self = StObject.set(x, "isCustomEndpoint", value.asInstanceOf[js.Any])
       

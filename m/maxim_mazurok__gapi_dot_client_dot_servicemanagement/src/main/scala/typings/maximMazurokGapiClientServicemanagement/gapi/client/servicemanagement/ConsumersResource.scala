@@ -31,7 +31,8 @@ object ConsumersResource {
     __obj.asInstanceOf[ConsumersResource]
   }
   
-  extension [Self <: ConsumersResource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConsumersResource] (val x: Self) extends AnyVal {
     
     inline def setGetIamPolicy(value: (PrettyPrint, GetIamPolicyRequest) => Request[Policy]): Self = StObject.set(x, "getIamPolicy", js.Any.fromFunction2(value))
     

@@ -245,7 +245,8 @@ object mod {
       __obj.asInstanceOf[MenuElement]
     }
     
-    extension [Self <: MenuElement](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MenuElement] (val x: Self) extends AnyVal {
       
       inline def setRender(value: EditorView => Dom): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
     }
@@ -327,7 +328,8 @@ object mod {
       __obj.asInstanceOf[MenuItemSpec]
     }
     
-    extension [Self <: MenuItemSpec](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MenuItemSpec] (val x: Self) extends AnyVal {
       
       inline def setActive(value: /* state */ EditorState => Boolean): Self = StObject.set(x, "active", js.Any.fromFunction1(value))
       

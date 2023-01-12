@@ -18,7 +18,8 @@ object TypeofCLUSTERMEET {
     __obj.asInstanceOf[TypeofCLUSTERMEET]
   }
   
-  extension [Self <: TypeofCLUSTERMEET](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofCLUSTERMEET] (val x: Self) extends AnyVal {
     
     inline def setTransformArguments(value: (String, Double) => js.Array[String]): Self = StObject.set(x, "transformArguments", js.Any.fromFunction2(value))
     

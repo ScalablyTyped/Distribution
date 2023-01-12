@@ -51,7 +51,8 @@ object EnvelopeAttachments {
     __obj.asInstanceOf[EnvelopeAttachments]
   }
   
-  extension [Self <: EnvelopeAttachments](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnvelopeAttachments] (val x: Self) extends AnyVal {
     
     inline def setAccessControl(value: String): Self = StObject.set(x, "accessControl", value.asInstanceOf[js.Any])
     

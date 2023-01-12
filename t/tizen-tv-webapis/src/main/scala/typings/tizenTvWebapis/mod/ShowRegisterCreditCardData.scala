@@ -17,7 +17,8 @@ object ShowRegisterCreditCardData {
     __obj.asInstanceOf[ShowRegisterCreditCardData]
   }
   
-  extension [Self <: ShowRegisterCreditCardData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShowRegisterCreditCardData] (val x: Self) extends AnyVal {
     
     inline def setOpenDeepLinkDetail(value: String): Self = StObject.set(x, "openDeepLinkDetail", value.asInstanceOf[js.Any])
     

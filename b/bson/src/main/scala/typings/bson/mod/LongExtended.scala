@@ -16,7 +16,8 @@ object LongExtended {
     __obj.asInstanceOf[LongExtended]
   }
   
-  extension [Self <: LongExtended](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LongExtended] (val x: Self) extends AnyVal {
     
     inline def set$numberLong(value: String): Self = StObject.set(x, "$numberLong", value.asInstanceOf[js.Any])
   }

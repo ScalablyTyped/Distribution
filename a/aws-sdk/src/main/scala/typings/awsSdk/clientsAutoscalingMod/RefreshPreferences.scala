@@ -38,7 +38,8 @@ object RefreshPreferences {
     __obj.asInstanceOf[RefreshPreferences]
   }
   
-  extension [Self <: RefreshPreferences](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RefreshPreferences] (val x: Self) extends AnyVal {
     
     inline def setCheckpointDelay(value: CheckpointDelay): Self = StObject.set(x, "CheckpointDelay", value.asInstanceOf[js.Any])
     

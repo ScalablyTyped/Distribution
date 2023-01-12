@@ -24,7 +24,8 @@ object MovedSectionId {
     __obj.asInstanceOf[MovedSectionId]
   }
   
-  extension [Self <: MovedSectionId](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MovedSectionId] (val x: Self) extends AnyVal {
     
     inline def setMovedSectionId(value: String): Self = StObject.set(x, "movedSectionId", value.asInstanceOf[js.Any])
     

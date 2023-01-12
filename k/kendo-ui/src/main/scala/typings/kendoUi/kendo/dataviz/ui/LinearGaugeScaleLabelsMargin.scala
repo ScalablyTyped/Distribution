@@ -21,7 +21,8 @@ object LinearGaugeScaleLabelsMargin {
     __obj.asInstanceOf[LinearGaugeScaleLabelsMargin]
   }
   
-  extension [Self <: LinearGaugeScaleLabelsMargin](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LinearGaugeScaleLabelsMargin] (val x: Self) extends AnyVal {
     
     inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
     

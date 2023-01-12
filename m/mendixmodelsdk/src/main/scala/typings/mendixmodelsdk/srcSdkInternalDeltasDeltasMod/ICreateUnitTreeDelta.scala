@@ -47,7 +47,8 @@ object ICreateUnitTreeDelta {
     __obj.asInstanceOf[ICreateUnitTreeDelta]
   }
   
-  extension [Self <: ICreateUnitTreeDelta](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICreateUnitTreeDelta] (val x: Self) extends AnyVal {
     
     inline def setContainerId(value: String): Self = StObject.set(x, "containerId", value.asInstanceOf[js.Any])
     

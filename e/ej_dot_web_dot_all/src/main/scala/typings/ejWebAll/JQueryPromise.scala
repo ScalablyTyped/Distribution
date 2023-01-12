@@ -18,7 +18,8 @@ object JQueryPromise {
     __obj.asInstanceOf[JQueryPromise[T]]
   }
   
-  extension [Self <: JQueryPromise[?], T](x: Self & JQueryPromise[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JQueryPromise[?], T] (val x: Self & JQueryPromise[T]) extends AnyVal {
     
     inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
     

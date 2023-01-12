@@ -18,7 +18,8 @@ object CreateCarrierGatewayResult {
     __obj.asInstanceOf[CreateCarrierGatewayResult]
   }
   
-  extension [Self <: CreateCarrierGatewayResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateCarrierGatewayResult] (val x: Self) extends AnyVal {
     
     inline def setCarrierGateway(value: CarrierGateway): Self = StObject.set(x, "CarrierGateway", value.asInstanceOf[js.Any])
     

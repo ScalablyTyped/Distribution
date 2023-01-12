@@ -23,7 +23,8 @@ object UserAccessLoggingSettingsSummary {
     __obj.asInstanceOf[UserAccessLoggingSettingsSummary]
   }
   
-  extension [Self <: UserAccessLoggingSettingsSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UserAccessLoggingSettingsSummary] (val x: Self) extends AnyVal {
     
     inline def setKinesisStreamArn(value: KinesisStreamArn): Self = StObject.set(x, "kinesisStreamArn", value.asInstanceOf[js.Any])
     

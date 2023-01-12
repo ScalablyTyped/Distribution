@@ -86,7 +86,8 @@ object OnlineMeeting {
     __obj.asInstanceOf[OnlineMeeting]
   }
   
-  extension [Self <: OnlineMeeting](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnlineMeeting] (val x: Self) extends AnyVal {
     
     inline def setAllowAttendeeToEnableCamera(value: NullableOption[Boolean]): Self = StObject.set(x, "allowAttendeeToEnableCamera", value.asInstanceOf[js.Any])
     

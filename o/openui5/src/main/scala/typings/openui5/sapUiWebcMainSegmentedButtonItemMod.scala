@@ -690,7 +690,8 @@ object sapUiWebcMainSegmentedButtonItemMod {
       __obj.asInstanceOf[SegmentedButtonItemSettings]
     }
     
-    extension [Self <: SegmentedButtonItemSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SegmentedButtonItemSettings] (val x: Self) extends AnyVal {
       
       inline def setAccessibilityAttributes(value: js.Object | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "accessibilityAttributes", value.asInstanceOf[js.Any])
       

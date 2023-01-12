@@ -23,7 +23,8 @@ object RemediationActionWithOrder {
     __obj.asInstanceOf[RemediationActionWithOrder]
   }
   
-  extension [Self <: RemediationActionWithOrder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RemediationActionWithOrder] (val x: Self) extends AnyVal {
     
     inline def setOrder(value: BasicInteger): Self = StObject.set(x, "Order", value.asInstanceOf[js.Any])
     

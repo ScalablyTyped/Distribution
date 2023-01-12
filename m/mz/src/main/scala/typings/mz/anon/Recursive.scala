@@ -20,7 +20,8 @@ object Recursive {
     __obj.asInstanceOf[Recursive]
   }
   
-  extension [Self <: Recursive](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Recursive] (val x: Self) extends AnyVal {
     
     inline def setEncoding(value: buffer): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
     

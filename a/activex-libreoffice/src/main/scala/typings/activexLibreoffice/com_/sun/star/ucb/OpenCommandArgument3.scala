@@ -39,7 +39,8 @@ object OpenCommandArgument3 {
     __obj.asInstanceOf[OpenCommandArgument3]
   }
   
-  extension [Self <: OpenCommandArgument3](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OpenCommandArgument3] (val x: Self) extends AnyVal {
     
     inline def setOpeningFlags(value: SafeArray[NamedValue]): Self = StObject.set(x, "OpeningFlags", value.asInstanceOf[js.Any])
   }

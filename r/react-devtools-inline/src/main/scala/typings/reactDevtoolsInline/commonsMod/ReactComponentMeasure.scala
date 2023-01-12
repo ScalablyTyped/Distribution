@@ -29,7 +29,8 @@ object ReactComponentMeasure {
     __obj.asInstanceOf[ReactComponentMeasure]
   }
   
-  extension [Self <: ReactComponentMeasure](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReactComponentMeasure] (val x: Self) extends AnyVal {
     
     inline def setComponentName(value: String): Self = StObject.set(x, "componentName", value.asInstanceOf[js.Any])
     

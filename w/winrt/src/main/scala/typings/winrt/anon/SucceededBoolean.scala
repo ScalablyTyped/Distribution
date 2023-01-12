@@ -17,7 +17,8 @@ object SucceededBoolean {
     __obj.asInstanceOf[SucceededBoolean]
   }
   
-  extension [Self <: SucceededBoolean](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SucceededBoolean] (val x: Self) extends AnyVal {
     
     inline def setSucceeded(value: Boolean): Self = StObject.set(x, "succeeded", value.asInstanceOf[js.Any])
     

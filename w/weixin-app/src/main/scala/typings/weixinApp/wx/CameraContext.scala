@@ -26,7 +26,8 @@ object CameraContext {
     __obj.asInstanceOf[CameraContext]
   }
   
-  extension [Self <: CameraContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CameraContext] (val x: Self) extends AnyVal {
     
     inline def setStartRecord(value: StartRecordOptions => Unit): Self = StObject.set(x, "startRecord", js.Any.fromFunction1(value))
     

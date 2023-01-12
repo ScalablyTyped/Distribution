@@ -195,7 +195,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[MarkerClusterGroupProps]
     }
     
-    extension [Self <: MarkerClusterGroupProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MarkerClusterGroupProps] (val x: Self) extends AnyVal {
       
       inline def setAnimate(value: Boolean): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
       

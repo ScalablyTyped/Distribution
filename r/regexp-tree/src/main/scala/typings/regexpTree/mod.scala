@@ -175,7 +175,8 @@ object mod {
       __obj.asInstanceOf[NodeTraversalCallbacks[T]]
     }
     
-    extension [Self <: NodeTraversalCallbacks[?], T /* <: AstNode */](x: Self & NodeTraversalCallbacks[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NodeTraversalCallbacks[?], T /* <: AstNode */] (val x: Self & NodeTraversalCallbacks[T]) extends AnyVal {
       
       inline def setPost(
         value: (T, /* parent */ NodePath[AstNode] | Null, /* property */ js.UndefOr[String], /* index */ js.UndefOr[Double]) => Unit | Boolean
@@ -209,7 +210,8 @@ object mod {
       __obj.asInstanceOf[NodeTraversalHandlers[T]]
     }
     
-    extension [Self <: NodeTraversalHandlers[?], T /* <: AstNode */](x: Self & NodeTraversalHandlers[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NodeTraversalHandlers[?], T /* <: AstNode */] (val x: Self & NodeTraversalHandlers[T]) extends AnyVal {
       
       inline def setAsterisk(
         value: (AstNode, /* parent */ NodePath[AstNode] | Null, /* property */ js.UndefOr[String], /* index */ js.UndefOr[Double]) => Unit | Boolean
@@ -240,7 +242,8 @@ object mod {
       __obj.asInstanceOf[ParserOptions]
     }
     
-    extension [Self <: ParserOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParserOptions] (val x: Self) extends AnyVal {
       
       inline def setAllowGroupNameDuplicates(value: Boolean): Self = StObject.set(x, "allowGroupNameDuplicates", value.asInstanceOf[js.Any])
       
@@ -304,7 +307,8 @@ object mod {
       __obj.asInstanceOf[SpecificNodeTraversalHandlers]
     }
     
-    extension [Self <: SpecificNodeTraversalHandlers](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SpecificNodeTraversalHandlers] (val x: Self) extends AnyVal {
       
       inline def setAlternative(value: NodeTraversalCallback[Alternative] | NodeTraversalCallbacks[Alternative]): Self = StObject.set(x, "Alternative", value.asInstanceOf[js.Any])
       
@@ -448,7 +452,8 @@ object mod {
       __obj.asInstanceOf[SpecificTraversalHandlers]
     }
     
-    extension [Self <: SpecificTraversalHandlers](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SpecificTraversalHandlers] (val x: Self) extends AnyVal {
       
       inline def setAlternative(value: TraversalCallback[Alternative] | TraversalCallbacks[Alternative]): Self = StObject.set(x, "Alternative", value.asInstanceOf[js.Any])
       
@@ -535,7 +540,8 @@ object mod {
       __obj.asInstanceOf[TraversalCallbacks[T]]
     }
     
-    extension [Self <: TraversalCallbacks[?], T /* <: AstNode */](x: Self & TraversalCallbacks[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TraversalCallbacks[?], T /* <: AstNode */] (val x: Self & TraversalCallbacks[T]) extends AnyVal {
       
       inline def setPost(value: /* path */ NodePath[T] => Unit | Boolean): Self = StObject.set(x, "post", js.Any.fromFunction1(value))
       
@@ -565,7 +571,8 @@ object mod {
       __obj.asInstanceOf[TraversalHandlers[T]]
     }
     
-    extension [Self <: TraversalHandlers[?], T /* <: AstNode */](x: Self & TraversalHandlers[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TraversalHandlers[?], T /* <: AstNode */] (val x: Self & TraversalHandlers[T]) extends AnyVal {
       
       inline def setAsterisk(value: /* path */ NodePath[AstNode] => Unit | Boolean): Self = StObject.set(x, "*", js.Any.fromFunction1(value))
       

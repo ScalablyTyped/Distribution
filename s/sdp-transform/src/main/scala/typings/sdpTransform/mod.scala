@@ -133,7 +133,8 @@ object mod {
       __obj.asInstanceOf[MediaAttributes]
     }
     
-    extension [Self <: MediaAttributes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MediaAttributes] (val x: Self) extends AnyVal {
       
       inline def setCandidates(value: js.Array[Foundation]): Self = StObject.set(x, "candidates", value.asInstanceOf[js.Any])
       
@@ -283,7 +284,8 @@ object mod {
       __obj.asInstanceOf[SessionAttributes]
     }
     
-    extension [Self <: SessionAttributes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SessionAttributes] (val x: Self) extends AnyVal {
       
       inline def setGroups(value: js.Array[Mids]): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
       
@@ -346,7 +348,8 @@ object mod {
       __obj.asInstanceOf[SessionDescription]
     }
     
-    extension [Self <: SessionDescription](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SessionDescription] (val x: Self) extends AnyVal {
       
       inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
       
@@ -425,7 +428,8 @@ object mod {
       __obj.asInstanceOf[SharedAttributes]
     }
     
-    extension [Self <: SharedAttributes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SharedAttributes] (val x: Self) extends AnyVal {
       
       inline def setControl(value: String): Self = StObject.set(x, "control", value.asInstanceOf[js.Any])
       
@@ -487,7 +491,8 @@ object mod {
       __obj.asInstanceOf[SharedDescriptionFields]
     }
     
-    extension [Self <: SharedDescriptionFields](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SharedDescriptionFields] (val x: Self) extends AnyVal {
       
       inline def setBandwidth(value: js.Array[Limit]): Self = StObject.set(x, "bandwidth", value.asInstanceOf[js.Any])
       

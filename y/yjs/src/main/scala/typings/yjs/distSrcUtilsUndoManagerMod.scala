@@ -165,7 +165,8 @@ object distSrcUtilsUndoManagerMod {
       __obj.asInstanceOf[StackItem]
     }
     
-    extension [Self <: StackItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StackItem] (val x: Self) extends AnyVal {
       
       inline def setDeletions(value: DeleteSet): Self = StObject.set(x, "deletions", value.asInstanceOf[js.Any])
       
@@ -211,7 +212,8 @@ object distSrcUtilsUndoManagerMod {
       __obj.asInstanceOf[UndoManagerOptions]
     }
     
-    extension [Self <: UndoManagerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UndoManagerOptions] (val x: Self) extends AnyVal {
       
       inline def setCaptureTimeout(value: Double): Self = StObject.set(x, "captureTimeout", value.asInstanceOf[js.Any])
       

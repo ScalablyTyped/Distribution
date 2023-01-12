@@ -70,7 +70,8 @@ object relayHooksUseMutationMod {
       __obj.asInstanceOf[UseMutationConfig[TMutation]]
     }
     
-    extension [Self <: UseMutationConfig[?], TMutation /* <: MutationParameters */](x: Self & UseMutationConfig[TMutation]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UseMutationConfig[?], TMutation /* <: MutationParameters */] (val x: Self & UseMutationConfig[TMutation]) extends AnyVal {
       
       inline def setConfigs(value: js.Array[DeclarativeMutationConfig]): Self = StObject.set(x, "configs", value.asInstanceOf[js.Any])
       

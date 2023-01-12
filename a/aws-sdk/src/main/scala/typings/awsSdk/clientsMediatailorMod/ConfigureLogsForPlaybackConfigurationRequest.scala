@@ -23,7 +23,8 @@ object ConfigureLogsForPlaybackConfigurationRequest {
     __obj.asInstanceOf[ConfigureLogsForPlaybackConfigurationRequest]
   }
   
-  extension [Self <: ConfigureLogsForPlaybackConfigurationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConfigureLogsForPlaybackConfigurationRequest] (val x: Self) extends AnyVal {
     
     inline def setPercentEnabled(value: _Integer): Self = StObject.set(x, "PercentEnabled", value.asInstanceOf[js.Any])
     

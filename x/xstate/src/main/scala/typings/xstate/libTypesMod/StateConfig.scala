@@ -64,7 +64,8 @@ object StateConfig {
     __obj.asInstanceOf[StateConfig[TContext, TEvent]]
   }
   
-  extension [Self <: StateConfig[?, ?], TContext, TEvent /* <: EventObject */](x: Self & (StateConfig[TContext, TEvent])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StateConfig[?, ?], TContext, TEvent /* <: EventObject */] (val x: Self & (StateConfig[TContext, TEvent])) extends AnyVal {
     
     inline def setActions(value: js.Array[ActionObject[TContext, TEvent]]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     

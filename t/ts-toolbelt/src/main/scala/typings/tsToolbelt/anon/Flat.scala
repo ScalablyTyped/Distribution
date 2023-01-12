@@ -20,7 +20,8 @@ object Flat {
     __obj.asInstanceOf[Flat[O, K]]
   }
   
-  extension [Self <: Flat[?, ?], O /* <: js.Object */, K /* <: Key */](x: Self & (Flat[O, K])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Flat[?, ?], O /* <: js.Object */, K /* <: Key */] (val x: Self & (Flat[O, K])) extends AnyVal {
     
     inline def setDeep(value: NonNullableDeep[O, K]): Self = StObject.set(x, "deep", value.asInstanceOf[js.Any])
     

@@ -165,7 +165,8 @@ object sapMSemanticMainActionMod {
       __obj.asInstanceOf[MainActionSettings]
     }
     
-    extension [Self <: MainActionSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MainActionSettings] (val x: Self) extends AnyVal {
       
       inline def setText(value: String | PropertyBindingInfo): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       

@@ -19,7 +19,8 @@ object FtruncateSyncOption {
     __obj.asInstanceOf[FtruncateSyncOption]
   }
   
-  extension [Self <: FtruncateSyncOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FtruncateSyncOption] (val x: Self) extends AnyVal {
     
     inline def setFd(value: String): Self = StObject.set(x, "fd", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object CancelContentControl {
     __obj.asInstanceOf[CancelContentControl]
   }
   
-  extension [Self <: CancelContentControl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CancelContentControl] (val x: Self) extends AnyVal {
     
     inline def setCancel(value: Boolean): Self = StObject.set(x, "Cancel", value.asInstanceOf[js.Any])
     

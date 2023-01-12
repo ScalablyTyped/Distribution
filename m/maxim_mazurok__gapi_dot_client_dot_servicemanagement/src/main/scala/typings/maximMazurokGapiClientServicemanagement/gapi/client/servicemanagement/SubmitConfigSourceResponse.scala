@@ -16,7 +16,8 @@ object SubmitConfigSourceResponse {
     __obj.asInstanceOf[SubmitConfigSourceResponse]
   }
   
-  extension [Self <: SubmitConfigSourceResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubmitConfigSourceResponse] (val x: Self) extends AnyVal {
     
     inline def setServiceConfig(value: Service): Self = StObject.set(x, "serviceConfig", value.asInstanceOf[js.Any])
     

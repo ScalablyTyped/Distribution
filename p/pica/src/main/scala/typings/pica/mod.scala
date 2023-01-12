@@ -125,7 +125,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[PicaOptions]
     }
     
-    extension [Self <: PicaOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PicaOptions] (val x: Self) extends AnyVal {
       
       inline def setConcurrency(value: Double): Self = StObject.set(x, "concurrency", value.asInstanceOf[js.Any])
       
@@ -223,7 +224,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[PicaResizeBufferOptions]
     }
     
-    extension [Self <: PicaResizeBufferOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PicaResizeBufferOptions] (val x: Self) extends AnyVal {
       
       inline def setDest(value: js.typedarray.Uint8Array): Self = StObject.set(x, "dest", value.asInstanceOf[js.Any])
       
@@ -318,7 +320,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[PicaResizeOptions]
     }
     
-    extension [Self <: PicaResizeOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PicaResizeOptions] (val x: Self) extends AnyVal {
       
       inline def setCancelToken(value: js.Promise[Any]): Self = StObject.set(x, "cancelToken", value.asInstanceOf[js.Any])
       

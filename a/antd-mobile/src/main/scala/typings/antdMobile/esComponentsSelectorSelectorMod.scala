@@ -74,7 +74,8 @@ object esComponentsSelectorSelectorMod {
       __obj.asInstanceOf[SelectorOption[V]]
     }
     
-    extension [Self <: SelectorOption[?], V](x: Self & SelectorOption[V]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SelectorOption[?], V] (val x: Self & SelectorOption[V]) extends AnyVal {
       
       inline def setDescription(value: ReactNode): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
@@ -358,7 +359,8 @@ object esComponentsSelectorSelectorMod {
       __obj.asInstanceOf[SelectorProps[V]]
     }
     
-    extension [Self <: SelectorProps[?], V](x: Self & SelectorProps[V]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SelectorProps[?], V] (val x: Self & SelectorProps[V]) extends AnyVal {
       
       inline def `setAria-activedescendant`(value: String): Self = StObject.set(x, "aria-activedescendant", value.asInstanceOf[js.Any])
       

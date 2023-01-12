@@ -29,7 +29,8 @@ object babylonjsSceneAugmentingMod {
       __obj.asInstanceOf[Scene]
     }
     
-    extension [Self <: Scene](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Scene] (val x: Self) extends AnyVal {
       
       inline def setPostProcessRenderPipelineManager(
         value: typings.babylonjs.postProcessesRenderPipelinePostProcessRenderPipelineManagerMod.PostProcessRenderPipelineManager

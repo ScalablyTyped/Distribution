@@ -50,7 +50,8 @@ object EffectInformation {
     __obj.asInstanceOf[EffectInformation]
   }
   
-  extension [Self <: EffectInformation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EffectInformation] (val x: Self) extends AnyVal {
     
     inline def setAfterEffect(value: MsoAnimAfterEffect): Self = StObject.set(x, "AfterEffect", value.asInstanceOf[js.Any])
     

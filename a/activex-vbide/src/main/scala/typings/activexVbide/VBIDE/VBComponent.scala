@@ -62,7 +62,8 @@ object VBComponent {
     __obj.asInstanceOf[VBComponent]
   }
   
-  extension [Self <: VBComponent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VBComponent] (val x: Self) extends AnyVal {
     
     inline def setActivate(value: () => Unit): Self = StObject.set(x, "Activate", js.Any.fromFunction0(value))
     

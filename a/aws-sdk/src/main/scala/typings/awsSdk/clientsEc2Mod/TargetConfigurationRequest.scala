@@ -23,7 +23,8 @@ object TargetConfigurationRequest {
     __obj.asInstanceOf[TargetConfigurationRequest]
   }
   
-  extension [Self <: TargetConfigurationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TargetConfigurationRequest] (val x: Self) extends AnyVal {
     
     inline def setInstanceCount(value: Integer): Self = StObject.set(x, "InstanceCount", value.asInstanceOf[js.Any])
     

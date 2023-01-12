@@ -351,7 +351,8 @@ object libToolsApkUtilsMod extends Shortcut {
       __obj.asInstanceOf[AppInfo]
     }
     
-    extension [Self <: AppInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AppInfo] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -378,7 +379,8 @@ object libToolsApkUtilsMod extends Shortcut {
       __obj.asInstanceOf[CachingOptions]
     }
     
-    extension [Self <: CachingOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CachingOptions] (val x: Self) extends AnyVal {
       
       inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
@@ -428,7 +430,8 @@ object libToolsApkUtilsMod extends Shortcut {
       __obj.asInstanceOf[InstallOptions]
     }
     
-    extension [Self <: InstallOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InstallOptions] (val x: Self) extends AnyVal {
       
       inline def setAllowTestPackages(value: Boolean): Self = StObject.set(x, "allowTestPackages", value.asInstanceOf[js.Any])
       
@@ -494,7 +497,8 @@ object libToolsApkUtilsMod extends Shortcut {
       __obj.asInstanceOf[InstallOrUpgradeOptions]
     }
     
-    extension [Self <: InstallOrUpgradeOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InstallOrUpgradeOptions] (val x: Self) extends AnyVal {
       
       inline def setAllowTestPackages(value: Boolean): Self = StObject.set(x, "allowTestPackages", value.asInstanceOf[js.Any])
       
@@ -539,7 +543,8 @@ object libToolsApkUtilsMod extends Shortcut {
       __obj.asInstanceOf[InstallOrUpgradeResult]
     }
     
-    extension [Self <: InstallOrUpgradeResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InstallOrUpgradeResult] (val x: Self) extends AnyVal {
       
       inline def setAppState(value: APP_INSTALL_STATE): Self = StObject.set(x, "appState", value.asInstanceOf[js.Any])
       
@@ -562,7 +567,8 @@ object libToolsApkUtilsMod extends Shortcut {
       __obj.asInstanceOf[PackageActivityInfo]
     }
     
-    extension [Self <: PackageActivityInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PackageActivityInfo] (val x: Self) extends AnyVal {
       
       inline def setAppActivity(value: String): Self = StObject.set(x, "appActivity", value.asInstanceOf[js.Any])
       
@@ -650,7 +656,8 @@ object libToolsApkUtilsMod extends Shortcut {
       __obj.asInstanceOf[StartAppOptions]
     }
     
-    extension [Self <: StartAppOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StartAppOptions] (val x: Self) extends AnyVal {
       
       inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
@@ -707,7 +714,8 @@ object libToolsApkUtilsMod extends Shortcut {
       __obj.asInstanceOf[StartUriOptions]
     }
     
-    extension [Self <: StartUriOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StartUriOptions] (val x: Self) extends AnyVal {
       
       inline def setWaitForLaunch(value: Boolean): Self = StObject.set(x, "waitForLaunch", value.asInstanceOf[js.Any])
       
@@ -736,7 +744,8 @@ object libToolsApkUtilsMod extends Shortcut {
       __obj.asInstanceOf[UninstallOptions]
     }
     
-    extension [Self <: UninstallOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UninstallOptions] (val x: Self) extends AnyVal {
       
       inline def setKeepData(value: Boolean): Self = StObject.set(x, "keepData", value.asInstanceOf[js.Any])
       

@@ -30,7 +30,8 @@ object SlideMasterData {
     __obj.asInstanceOf[SlideMasterData]
   }
   
-  extension [Self <: SlideMasterData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SlideMasterData] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

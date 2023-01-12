@@ -15,7 +15,8 @@ object IBackgroundTask {
     __obj.asInstanceOf[IBackgroundTask]
   }
   
-  extension [Self <: IBackgroundTask](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IBackgroundTask] (val x: Self) extends AnyVal {
     
     inline def setRun(value: IBackgroundTaskInstance => Unit): Self = StObject.set(x, "run", js.Any.fromFunction1(value))
   }

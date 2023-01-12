@@ -17,7 +17,8 @@ object TemplateBindingIdentifier {
     __obj.asInstanceOf[TemplateBindingIdentifier]
   }
   
-  extension [Self <: TemplateBindingIdentifier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TemplateBindingIdentifier] (val x: Self) extends AnyVal {
     
     inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     

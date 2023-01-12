@@ -36,7 +36,8 @@ object buildResizeDetectorMod {
       __obj.asInstanceOf[ChildFunctionProps[ElementT]]
     }
     
-    extension [Self <: ChildFunctionProps[?], ElementT /* <: HTMLElement */](x: Self & ChildFunctionProps[ElementT]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChildFunctionProps[?], ElementT /* <: HTMLElement */] (val x: Self & ChildFunctionProps[ElementT]) extends AnyVal {
       
       inline def setTargetRef(value: RefObject[ElementT]): Self = StObject.set(x, "targetRef", value.asInstanceOf[js.Any])
       
@@ -102,7 +103,8 @@ object buildResizeDetectorMod {
       __obj.asInstanceOf[ComponentsProps[ElementT]]
     }
     
-    extension [Self <: ComponentsProps[?], ElementT /* <: HTMLElement */](x: Self & ComponentsProps[ElementT]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ComponentsProps[?], ElementT /* <: HTMLElement */] (val x: Self & ComponentsProps[ElementT]) extends AnyVal {
       
       inline def setChildren(value: ReactNode | (js.Function1[/* props */ ChildFunctionProps[ElementT], ReactNode])): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -196,7 +198,8 @@ object buildResizeDetectorMod {
       __obj.asInstanceOf[Props]
     }
     
-    extension [Self <: Props](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
       
       inline def setHandleHeight(value: Boolean): Self = StObject.set(x, "handleHeight", value.asInstanceOf[js.Any])
       
@@ -245,7 +248,8 @@ object buildResizeDetectorMod {
       __obj.asInstanceOf[ReactResizeDetectorDimensions]
     }
     
-    extension [Self <: ReactResizeDetectorDimensions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReactResizeDetectorDimensions] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       

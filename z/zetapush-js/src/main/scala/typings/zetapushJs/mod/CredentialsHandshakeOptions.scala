@@ -21,7 +21,8 @@ object CredentialsHandshakeOptions {
     __obj.asInstanceOf[CredentialsHandshakeOptions]
   }
   
-  extension [Self <: CredentialsHandshakeOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CredentialsHandshakeOptions] (val x: Self) extends AnyVal {
     
     inline def setAuthType(value: String): Self = StObject.set(x, "authType", value.asInstanceOf[js.Any])
     

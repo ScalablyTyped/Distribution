@@ -22,7 +22,8 @@ object UDPSocketOnMessageCallbackResult {
     __obj.asInstanceOf[UDPSocketOnMessageCallbackResult]
   }
   
-  extension [Self <: UDPSocketOnMessageCallbackResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UDPSocketOnMessageCallbackResult] (val x: Self) extends AnyVal {
     
     inline def setLocalInfo(value: LocalInfo): Self = StObject.set(x, "localInfo", value.asInstanceOf[js.Any])
     

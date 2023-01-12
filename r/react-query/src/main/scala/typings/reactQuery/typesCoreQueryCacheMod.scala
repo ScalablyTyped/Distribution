@@ -84,7 +84,8 @@ object typesCoreQueryCacheMod {
       __obj.asInstanceOf[NotifyEventObserverAdded]
     }
     
-    extension [Self <: NotifyEventObserverAdded](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NotifyEventObserverAdded] (val x: Self) extends AnyVal {
       
       inline def setObserver(value: QueryObserver[Any, Any, Any, Any, Any]): Self = StObject.set(x, "observer", value.asInstanceOf[js.Any])
       
@@ -112,7 +113,8 @@ object typesCoreQueryCacheMod {
       __obj.asInstanceOf[NotifyEventObserverRemoved]
     }
     
-    extension [Self <: NotifyEventObserverRemoved](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NotifyEventObserverRemoved] (val x: Self) extends AnyVal {
       
       inline def setObserver(value: QueryObserver[Any, Any, Any, Any, Any]): Self = StObject.set(x, "observer", value.asInstanceOf[js.Any])
       
@@ -138,7 +140,8 @@ object typesCoreQueryCacheMod {
       __obj.asInstanceOf[NotifyEventObserverResultsUpdated]
     }
     
-    extension [Self <: NotifyEventObserverResultsUpdated](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NotifyEventObserverResultsUpdated] (val x: Self) extends AnyVal {
       
       inline def setQuery(value: Query[Any, Any, Any, Any]): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
       
@@ -162,7 +165,8 @@ object typesCoreQueryCacheMod {
       __obj.asInstanceOf[NotifyEventQueryAdded]
     }
     
-    extension [Self <: NotifyEventQueryAdded](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NotifyEventQueryAdded] (val x: Self) extends AnyVal {
       
       inline def setQuery(value: Query[Any, Any, Any, Any]): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
       
@@ -186,7 +190,8 @@ object typesCoreQueryCacheMod {
       __obj.asInstanceOf[NotifyEventQueryRemoved]
     }
     
-    extension [Self <: NotifyEventQueryRemoved](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NotifyEventQueryRemoved] (val x: Self) extends AnyVal {
       
       inline def setQuery(value: Query[Any, Any, Any, Any]): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
       
@@ -212,7 +217,8 @@ object typesCoreQueryCacheMod {
       __obj.asInstanceOf[NotifyEventQueryUpdated]
     }
     
-    extension [Self <: NotifyEventQueryUpdated](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NotifyEventQueryUpdated] (val x: Self) extends AnyVal {
       
       inline def setAction(value: Action[Any, Any]): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
@@ -235,7 +241,8 @@ object typesCoreQueryCacheMod {
       __obj.asInstanceOf[QueryCacheConfig]
     }
     
-    extension [Self <: QueryCacheConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QueryCacheConfig] (val x: Self) extends AnyVal {
       
       inline def setOnError(value: (/* error */ Any, /* query */ Query[Any, Any, Any, QueryKey]) => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction2(value))
       

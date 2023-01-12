@@ -17,7 +17,8 @@ object MinKeyExtended {
     __obj.asInstanceOf[MinKeyExtended]
   }
   
-  extension [Self <: MinKeyExtended](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MinKeyExtended] (val x: Self) extends AnyVal {
     
     inline def set$minKey(value: `1`): Self = StObject.set(x, "$minKey", value.asInstanceOf[js.Any])
   }

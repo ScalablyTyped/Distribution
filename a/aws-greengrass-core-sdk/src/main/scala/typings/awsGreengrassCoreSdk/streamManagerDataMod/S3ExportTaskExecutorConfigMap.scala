@@ -23,7 +23,8 @@ object S3ExportTaskExecutorConfigMap {
     __obj.asInstanceOf[S3ExportTaskExecutorConfigMap]
   }
   
-  extension [Self <: S3ExportTaskExecutorConfigMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: S3ExportTaskExecutorConfigMap] (val x: Self) extends AnyVal {
     
     inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     

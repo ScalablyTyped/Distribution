@@ -20,7 +20,8 @@ object MappingLongRangeProperty {
     __obj.asInstanceOf[MappingLongRangeProperty]
   }
   
-  extension [Self <: MappingLongRangeProperty](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MappingLongRangeProperty] (val x: Self) extends AnyVal {
     
     inline def setType(value: long_range): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

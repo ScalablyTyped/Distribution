@@ -22,7 +22,8 @@ object CompiledSubexpressionToken {
     __obj.asInstanceOf[CompiledSubexpressionToken]
   }
   
-  extension [Self <: CompiledSubexpressionToken](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CompiledSubexpressionToken] (val x: Self) extends AnyVal {
     
     inline def setExpression(value: Boolean): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
     

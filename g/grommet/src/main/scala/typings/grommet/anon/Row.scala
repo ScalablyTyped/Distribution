@@ -18,7 +18,8 @@ object Row {
     __obj.asInstanceOf[Row]
   }
   
-  extension [Self <: Row](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Row] (val x: Self) extends AnyVal {
     
     inline def setColumn(value: GapType): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
     

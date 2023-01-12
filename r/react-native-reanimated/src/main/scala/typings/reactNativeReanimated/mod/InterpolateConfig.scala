@@ -26,7 +26,8 @@ object InterpolateConfig {
     __obj.asInstanceOf[InterpolateConfig]
   }
   
-  extension [Self <: InterpolateConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InterpolateConfig] (val x: Self) extends AnyVal {
     
     inline def setCache(value: SharedValue[InterpolateRGB | InterpolateHSV | Null]): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
     

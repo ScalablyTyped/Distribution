@@ -39,7 +39,8 @@ object typesDecoratorTypecheckerIsNumberMod {
       __obj.asInstanceOf[IsNumberOptions]
     }
     
-    extension [Self <: IsNumberOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IsNumberOptions] (val x: Self) extends AnyVal {
       
       inline def setAllowInfinity(value: Boolean): Self = StObject.set(x, "allowInfinity", value.asInstanceOf[js.Any])
       

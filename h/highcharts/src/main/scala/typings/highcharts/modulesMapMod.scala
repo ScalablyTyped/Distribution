@@ -1266,7 +1266,8 @@ object modulesMapMod {
         __obj.asInstanceOf[MapLonLatObject]
       }
       
-      extension [Self <: MapLonLatObject](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: MapLonLatObject] (val x: Self) extends AnyVal {
         
         inline def setLat(value: Double): Self = StObject.set(x, "lat", value.asInstanceOf[js.Any])
         
@@ -1519,7 +1520,8 @@ object modulesMapMod {
         __obj.asInstanceOf[Point]
       }
       
-      extension [Self <: Point](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Point] (val x: Self) extends AnyVal {
         
         inline def setPointPadding(value: Double): Self = StObject.set(x, "pointPadding", value.asInstanceOf[js.Any])
         
@@ -1550,7 +1552,8 @@ object modulesMapMod {
         __obj.asInstanceOf[PointOptionsObject]
       }
       
-      extension [Self <: PointOptionsObject](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: PointOptionsObject] (val x: Self) extends AnyVal {
         
         inline def setPointPadding(value: Double): Self = StObject.set(x, "pointPadding", value.asInstanceOf[js.Any])
         
@@ -1586,7 +1589,8 @@ object modulesMapMod {
         __obj.asInstanceOf[ProjectedXY]
       }
       
-      extension [Self <: ProjectedXY](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ProjectedXY] (val x: Self) extends AnyVal {
         
         inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
         

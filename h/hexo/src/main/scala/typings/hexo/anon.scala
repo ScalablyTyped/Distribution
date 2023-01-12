@@ -47,7 +47,8 @@ object anon {
       __obj.asInstanceOf[Args]
     }
     
-    extension [Self <: Args](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Args] (val x: Self) extends AnyVal {
       
       inline def setArgs(value: ParsedArgs): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
@@ -82,7 +83,8 @@ object anon {
       __obj.asInstanceOf[Autodetect]
     }
     
-    extension [Self <: Autodetect](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Autodetect] (val x: Self) extends AnyVal {
       
       inline def setAuto_detect(value: Boolean): Self = StObject.set(x, "auto_detect", value.asInstanceOf[js.Any])
       
@@ -160,7 +162,8 @@ object anon {
       __obj.asInstanceOf[Console]
     }
     
-    extension [Self <: Console](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Console] (val x: Self) extends AnyVal {
       
       inline def setConsole(value: typings.hexo.mod.extend.Console): Self = StObject.set(x, "console", value.asInstanceOf[js.Any])
       
@@ -195,7 +198,8 @@ object anon {
       __obj.asInstanceOf[Content]
     }
     
-    extension [Self <: Content](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Content] (val x: Self) extends AnyVal {
       
       inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
@@ -216,7 +220,8 @@ object anon {
       __obj.asInstanceOf[Desc]
     }
     
-    extension [Self <: Desc](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Desc] (val x: Self) extends AnyVal {
       
       inline def setDesc(value: String): Self = StObject.set(x, "desc", value.asInstanceOf[js.Any])
       
@@ -237,7 +242,8 @@ object anon {
       __obj.asInstanceOf[Dictkey]
     }
     
-    extension [Self <: Dictkey](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Dictkey] (val x: Self) extends AnyVal {
       
       inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     }
@@ -256,7 +262,8 @@ object anon {
       __obj.asInstanceOf[Encoding]
     }
     
-    extension [Self <: Encoding](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Encoding] (val x: Self) extends AnyVal {
       
       inline def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       
@@ -285,7 +292,8 @@ object anon {
       __obj.asInstanceOf[Path]
     }
     
-    extension [Self <: Path](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Path] (val x: Self) extends AnyVal {
       
       inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       

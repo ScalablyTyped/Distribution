@@ -25,7 +25,8 @@ object DetailedMethodSpec {
     __obj.asInstanceOf[DetailedMethodSpec[I]]
   }
   
-  extension [Self <: DetailedMethodSpec[?], I](x: Self & DetailedMethodSpec[I]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DetailedMethodSpec[?], I] (val x: Self & DetailedMethodSpec[I]) extends AnyVal {
     
     inline def setImplementation(value: I): Self = StObject.set(x, "implementation", value.asInstanceOf[js.Any])
     

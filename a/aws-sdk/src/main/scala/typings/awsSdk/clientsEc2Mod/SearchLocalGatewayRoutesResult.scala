@@ -23,7 +23,8 @@ object SearchLocalGatewayRoutesResult {
     __obj.asInstanceOf[SearchLocalGatewayRoutesResult]
   }
   
-  extension [Self <: SearchLocalGatewayRoutesResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchLocalGatewayRoutesResult] (val x: Self) extends AnyVal {
     
     inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

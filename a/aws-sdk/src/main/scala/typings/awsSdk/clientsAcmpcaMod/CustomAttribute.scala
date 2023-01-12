@@ -23,7 +23,8 @@ object CustomAttribute {
     __obj.asInstanceOf[CustomAttribute]
   }
   
-  extension [Self <: CustomAttribute](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomAttribute] (val x: Self) extends AnyVal {
     
     inline def setObjectIdentifier(value: CustomObjectIdentifier): Self = StObject.set(x, "ObjectIdentifier", value.asInstanceOf[js.Any])
     

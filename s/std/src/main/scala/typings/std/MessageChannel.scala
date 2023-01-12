@@ -22,7 +22,8 @@ object MessageChannel {
     __obj.asInstanceOf[MessageChannel]
   }
   
-  extension [Self <: MessageChannel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MessageChannel] (val x: Self) extends AnyVal {
     
     inline def setPort1(value: MessagePort): Self = StObject.set(x, "port1", value.asInstanceOf[js.Any])
     

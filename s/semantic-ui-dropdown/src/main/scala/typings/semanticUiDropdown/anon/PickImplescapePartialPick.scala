@@ -40,7 +40,8 @@ object PickImplescapePartialPick {
     __obj.asInstanceOf[PickImplescapePartialPick]
   }
   
-  extension [Self <: PickImplescapePartialPick](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickImplescapePartialPick] (val x: Self) extends AnyVal {
     
     inline def setBackspace(value: Double): Self = StObject.set(x, "backspace", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object SimpleOrientationSensorOrientationChangedEventArgs {
     __obj.asInstanceOf[SimpleOrientationSensorOrientationChangedEventArgs]
   }
   
-  extension [Self <: SimpleOrientationSensorOrientationChangedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SimpleOrientationSensorOrientationChangedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setOrientation(value: SimpleOrientation): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
     

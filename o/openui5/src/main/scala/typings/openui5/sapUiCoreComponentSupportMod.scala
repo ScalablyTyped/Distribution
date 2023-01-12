@@ -99,7 +99,8 @@ object sapUiCoreComponentSupportMod extends Shortcut {
       __obj.asInstanceOf[ComponentSupport]
     }
     
-    extension [Self <: ComponentSupport](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ComponentSupport] (val x: Self) extends AnyVal {
       
       inline def setRun(value: () => Unit): Self = StObject.set(x, "run", js.Any.fromFunction0(value))
     }

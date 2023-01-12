@@ -87,7 +87,8 @@ object distComponentsAuthMod {
       __obj.asInstanceOf[AuthStore]
     }
     
-    extension [Self <: AuthStore](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AuthStore] (val x: Self) extends AnyVal {
       
       inline def setAuthenticate(value: (AuthContextConfig, String, Boolean) => AuthenticateResult): Self = StObject.set(x, "authenticate", js.Any.fromFunction3(value))
       
@@ -110,7 +111,8 @@ object distComponentsAuthMod {
       __obj.asInstanceOf[AuthenticateResult]
     }
     
-    extension [Self <: AuthenticateResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AuthenticateResult] (val x: Self) extends AnyVal {
       
       inline def setAuthenticated(value: KeycloakPromise[Boolean, KeycloakError]): Self = StObject.set(x, "authenticated", value.asInstanceOf[js.Any])
       

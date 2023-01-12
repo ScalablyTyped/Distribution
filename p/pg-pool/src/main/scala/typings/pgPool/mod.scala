@@ -35,7 +35,8 @@ object mod {
       __obj.asInstanceOf[Config[T]]
     }
     
-    extension [Self <: Config[?], T /* <: Client */](x: Self & Config[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Config[?], T /* <: Client */] (val x: Self & Config[T]) extends AnyVal {
       
       inline def setClient(value: ClientLikeCtr[T]): Self = StObject.set(x, "Client", value.asInstanceOf[js.Any])
       

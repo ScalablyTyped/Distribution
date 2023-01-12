@@ -95,7 +95,8 @@ object mod {
       __obj.asInstanceOf[CollapsibleProps]
     }
     
-    extension [Self <: CollapsibleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CollapsibleProps] (val x: Self) extends AnyVal {
       
       inline def setAccordionPosition(value: String | Double): Self = StObject.set(x, "accordionPosition", value.asInstanceOf[js.Any])
       

@@ -23,7 +23,8 @@ object ExplainabilityConfig {
     __obj.asInstanceOf[ExplainabilityConfig]
   }
   
-  extension [Self <: ExplainabilityConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExplainabilityConfig] (val x: Self) extends AnyVal {
     
     inline def setTimePointGranularity(value: TimePointGranularity): Self = StObject.set(x, "TimePointGranularity", value.asInstanceOf[js.Any])
     

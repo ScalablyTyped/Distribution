@@ -17,7 +17,8 @@ object IPickleRejected {
     __obj.asInstanceOf[IPickleRejected]
   }
   
-  extension [Self <: IPickleRejected](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPickleRejected] (val x: Self) extends AnyVal {
     
     inline def setPickleId(value: String): Self = StObject.set(x, "pickleId", value.asInstanceOf[js.Any])
     

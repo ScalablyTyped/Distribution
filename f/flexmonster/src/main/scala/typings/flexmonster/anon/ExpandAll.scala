@@ -19,7 +19,8 @@ object ExpandAll {
     __obj.asInstanceOf[ExpandAll]
   }
   
-  extension [Self <: ExpandAll](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExpandAll] (val x: Self) extends AnyVal {
     
     inline def setColumns(value: js.Array[Measure]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     

@@ -202,7 +202,8 @@ object mod {
       __obj.asInstanceOf[IFileOptions]
     }
     
-    extension [Self <: IFileOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IFileOptions] (val x: Self) extends AnyVal {
       
       inline def setDir(value: String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
       
@@ -256,7 +257,8 @@ object mod {
       __obj.asInstanceOf[IFormats]
     }
     
-    extension [Self <: IFormats](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IFormats] (val x: Self) extends AnyVal {
       
       inline def setIni(value: IFormat): Self = StObject.set(x, "ini", value.asInstanceOf[js.Any])
       
@@ -279,7 +281,8 @@ object mod {
       __obj.asInstanceOf[ISecureFileOptions]
     }
     
-    extension [Self <: ISecureFileOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISecureFileOptions] (val x: Self) extends AnyVal {
       
       inline def setAlg(value: String): Self = StObject.set(x, "alg", value.asInstanceOf[js.Any])
       

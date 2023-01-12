@@ -55,7 +55,8 @@ object CheckHasPositionalTracking {
     __obj.asInstanceOf[CheckHasPositionalTracking]
   }
   
-  extension [Self <: CheckHasPositionalTracking](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CheckHasPositionalTracking] (val x: Self) extends AnyVal {
     
     inline def setCheckHasPositionalTracking(value: () => Boolean): Self = StObject.set(x, "checkHasPositionalTracking", js.Any.fromFunction0(value))
     

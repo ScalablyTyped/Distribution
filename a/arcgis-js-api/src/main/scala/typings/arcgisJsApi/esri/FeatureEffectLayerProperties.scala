@@ -20,7 +20,8 @@ object FeatureEffectLayerProperties {
     __obj.asInstanceOf[FeatureEffectLayerProperties]
   }
   
-  extension [Self <: FeatureEffectLayerProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FeatureEffectLayerProperties] (val x: Self) extends AnyVal {
     
     inline def setFeatureEffect(value: FeatureEffectProperties): Self = StObject.set(x, "featureEffect", value.asInstanceOf[js.Any])
     

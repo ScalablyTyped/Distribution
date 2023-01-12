@@ -20,7 +20,8 @@ object SocketActivityTriggerDetails {
     __obj.asInstanceOf[SocketActivityTriggerDetails]
   }
   
-  extension [Self <: SocketActivityTriggerDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SocketActivityTriggerDetails] (val x: Self) extends AnyVal {
     
     inline def setReason(value: SocketActivityTriggerReason): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     

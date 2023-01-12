@@ -19,7 +19,8 @@ object Hosted {
     __obj.asInstanceOf[Hosted]
   }
   
-  extension [Self <: Hosted](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Hosted] (val x: Self) extends AnyVal {
     
     inline def setAll(value: scala.Double): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
     

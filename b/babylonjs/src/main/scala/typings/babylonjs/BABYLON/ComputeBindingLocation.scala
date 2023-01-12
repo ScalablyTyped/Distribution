@@ -17,7 +17,8 @@ object ComputeBindingLocation {
     __obj.asInstanceOf[ComputeBindingLocation]
   }
   
-  extension [Self <: ComputeBindingLocation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ComputeBindingLocation] (val x: Self) extends AnyVal {
     
     inline def setBinding(value: Double): Self = StObject.set(x, "binding", value.asInstanceOf[js.Any])
     

@@ -58,7 +58,8 @@ object mod {
       __obj.asInstanceOf[JsOutput]
     }
     
-    extension [Self <: JsOutput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JsOutput] (val x: Self) extends AnyVal {
       
       inline def setData(value: ReadonlycodestringlineCou): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -111,7 +112,8 @@ object mod {
       __obj.asInstanceOf[JsTransformOptions]
     }
     
-    extension [Self <: JsTransformOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JsTransformOptions] (val x: Self) extends AnyVal {
       
       inline def setCustomTransformOptions(value: CustomTransformOptions): Self = StObject.set(x, "customTransformOptions", value.asInstanceOf[js.Any])
       
@@ -225,7 +227,8 @@ object mod {
       __obj.asInstanceOf[JsTransformerConfig]
     }
     
-    extension [Self <: JsTransformerConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JsTransformerConfig] (val x: Self) extends AnyVal {
       
       inline def setAllowOptionalDependencies(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AllowOptionalDependencies */ Any
@@ -298,7 +301,8 @@ object mod {
       __obj.asInstanceOf[MinifierOptions]
     }
     
-    extension [Self <: MinifierOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MinifierOptions] (val x: Self) extends AnyVal {
       
       inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
@@ -329,7 +333,8 @@ object mod {
       __obj.asInstanceOf[MinifierResult]
     }
     
-    extension [Self <: MinifierResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MinifierResult] (val x: Self) extends AnyVal {
       
       inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
@@ -360,7 +365,8 @@ object mod {
       __obj.asInstanceOf[TransformResponse]
     }
     
-    extension [Self <: TransformResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TransformResponse] (val x: Self) extends AnyVal {
       
       inline def setDependencies(
         value: js.Array[

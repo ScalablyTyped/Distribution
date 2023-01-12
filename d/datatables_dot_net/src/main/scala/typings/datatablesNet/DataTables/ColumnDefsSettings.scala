@@ -17,7 +17,8 @@ object ColumnDefsSettings {
     __obj.asInstanceOf[ColumnDefsSettings]
   }
   
-  extension [Self <: ColumnDefsSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ColumnDefsSettings] (val x: Self) extends AnyVal {
     
     inline def setTargets(value: String | Double | (js.Array[Double | String])): Self = StObject.set(x, "targets", value.asInstanceOf[js.Any])
     

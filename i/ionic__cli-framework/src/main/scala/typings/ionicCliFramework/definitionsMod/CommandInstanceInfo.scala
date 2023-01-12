@@ -24,7 +24,8 @@ object CommandInstanceInfo {
     __obj.asInstanceOf[CommandInstanceInfo[C, N, M, I, O]]
   }
   
-  extension [Self <: CommandInstanceInfo[?, ?, ?, ?, ?], C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, M, I, O] */, M /* <: CommandMetadata[I, O] */, I /* <: CommandMetadataInput */, O /* <: CommandMetadataOption */](x: Self & (CommandInstanceInfo[C, N, M, I, O])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CommandInstanceInfo[?, ?, ?, ?, ?], C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, M, I, O] */, M /* <: CommandMetadata[I, O] */, I /* <: CommandMetadataInput */, O /* <: CommandMetadataOption */] (val x: Self & (CommandInstanceInfo[C, N, M, I, O])) extends AnyVal {
     
     inline def setEnv(value: ProcessEnv): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
     

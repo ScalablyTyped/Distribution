@@ -65,7 +65,8 @@ object PartialStyleRulesTableCel {
     __obj.asInstanceOf[PartialStyleRulesTableCel]
   }
   
-  extension [Self <: PartialStyleRulesTableCel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialStyleRulesTableCel] (val x: Self) extends AnyVal {
     
     inline def setAlignCenter(
       value: CSSProperties | CreateCSSProperties[js.Object] | (PropsFunc[js.Object, CreateCSSProperties[js.Object]])

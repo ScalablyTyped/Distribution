@@ -34,7 +34,8 @@ object Checkforupdate {
     __obj.asInstanceOf[Checkforupdate]
   }
   
-  extension [Self <: Checkforupdate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Checkforupdate] (val x: Self) extends AnyVal {
     
     inline def setCheckforupdate(value: Boolean): Self = StObject.set(x, "checkforupdate", value.asInstanceOf[js.Any])
     

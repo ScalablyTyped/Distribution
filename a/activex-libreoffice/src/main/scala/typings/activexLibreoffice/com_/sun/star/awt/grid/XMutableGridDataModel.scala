@@ -147,7 +147,8 @@ object XMutableGridDataModel {
     __obj.asInstanceOf[XMutableGridDataModel]
   }
   
-  extension [Self <: XMutableGridDataModel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XMutableGridDataModel] (val x: Self) extends AnyVal {
     
     inline def setAddGridDataListener(value: XGridDataListener => Unit): Self = StObject.set(x, "addGridDataListener", js.Any.fromFunction1(value))
     

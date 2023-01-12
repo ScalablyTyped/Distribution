@@ -34,7 +34,8 @@ object anon {
       __obj.asInstanceOf[Columns]
     }
     
-    extension [Self <: Columns](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Columns] (val x: Self) extends AnyVal {
       
       inline def setColumns(value: js.Array[ColumnModel]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
       
@@ -61,7 +62,8 @@ object anon {
       __obj.asInstanceOf[Data]
     }
     
-    extension [Self <: Data](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Data] (val x: Self) extends AnyVal {
       
       inline def setData(value: RowProps): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -84,7 +86,8 @@ object anon {
       __obj.asInstanceOf[Ref]
     }
     
-    extension [Self <: Ref](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Ref] (val x: Self) extends AnyVal {
       
       inline def setRef(value: typings.react.mod.Ref[HTMLElement]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
       

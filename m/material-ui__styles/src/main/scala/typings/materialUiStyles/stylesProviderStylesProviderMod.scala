@@ -48,7 +48,8 @@ object stylesProviderStylesProviderMod extends Shortcut {
       __obj.asInstanceOf[StylesOptions]
     }
     
-    extension [Self <: StylesOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StylesOptions] (val x: Self) extends AnyVal {
       
       inline def setDisableGeneration(value: Boolean): Self = StObject.set(x, "disableGeneration", value.asInstanceOf[js.Any])
       
@@ -93,7 +94,8 @@ object stylesProviderStylesProviderMod extends Shortcut {
       __obj.asInstanceOf[StylesProviderProps]
     }
     
-    extension [Self <: StylesProviderProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StylesProviderProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

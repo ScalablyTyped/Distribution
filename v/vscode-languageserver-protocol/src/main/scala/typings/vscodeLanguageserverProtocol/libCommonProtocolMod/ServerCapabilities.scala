@@ -251,7 +251,8 @@ object ServerCapabilities {
     __obj.asInstanceOf[ServerCapabilities[T]]
   }
   
-  extension [Self <: ServerCapabilities[?], T](x: Self & ServerCapabilities[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServerCapabilities[?], T] (val x: Self & ServerCapabilities[T]) extends AnyVal {
     
     inline def setCallHierarchyProvider(value: Boolean | CallHierarchyOptions | CallHierarchyRegistrationOptions): Self = StObject.set(x, "callHierarchyProvider", value.asInstanceOf[js.Any])
     

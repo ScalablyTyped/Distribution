@@ -23,7 +23,8 @@ object ListFleetMetricsResponse {
     __obj.asInstanceOf[ListFleetMetricsResponse]
   }
   
-  extension [Self <: ListFleetMetricsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListFleetMetricsResponse] (val x: Self) extends AnyVal {
     
     inline def setFleetMetrics(value: FleetMetricNameAndArnList): Self = StObject.set(x, "fleetMetrics", value.asInstanceOf[js.Any])
     

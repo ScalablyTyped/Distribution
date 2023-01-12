@@ -22,7 +22,8 @@ object ContaineranalysisGoogleDevtoolsCloudbuildV1BuildApproval {
     __obj.asInstanceOf[ContaineranalysisGoogleDevtoolsCloudbuildV1BuildApproval]
   }
   
-  extension [Self <: ContaineranalysisGoogleDevtoolsCloudbuildV1BuildApproval](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContaineranalysisGoogleDevtoolsCloudbuildV1BuildApproval] (val x: Self) extends AnyVal {
     
     inline def setConfig(value: ContaineranalysisGoogleDevtoolsCloudbuildV1ApprovalConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     

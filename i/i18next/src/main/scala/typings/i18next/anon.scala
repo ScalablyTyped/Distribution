@@ -21,7 +21,8 @@ object anon {
       __obj.asInstanceOf[`0`]
     }
     
-    extension [Self <: `0`](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: `0`] (val x: Self) extends AnyVal {
       
       inline def setReturnDetails(value: `true`): Self = StObject.set(x, "returnDetails", value.asInstanceOf[js.Any])
     }
@@ -71,7 +72,8 @@ object anon {
       __obj.asInstanceOf[AllowedHosts]
     }
     
-    extension [Self <: AllowedHosts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AllowedHosts] (val x: Self) extends AnyVal {
       
       inline def setAllowedHosts(value: js.Array[String]): Self = StObject.set(x, "allowedHosts", value.asInstanceOf[js.Any])
       
@@ -112,7 +114,8 @@ object anon {
       __obj.asInstanceOf[KeySeparator]
     }
     
-    extension [Self <: KeySeparator](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KeySeparator] (val x: Self) extends AnyVal {
       
       inline def setKeySeparator(value: String): Self = StObject.set(x, "keySeparator", value.asInstanceOf[js.Any])
       
@@ -136,7 +139,8 @@ object anon {
       __obj.asInstanceOf[PickInitOptionsfallbackLn]
     }
     
-    extension [Self <: PickInitOptionsfallbackLn](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PickInitOptionsfallbackLn] (val x: Self) extends AnyVal {
       
       inline def setFallbackLng(value: `false` | FallbackLng): Self = StObject.set(x, "fallbackLng", value.asInstanceOf[js.Any])
       
@@ -162,7 +166,8 @@ object anon {
       __obj.asInstanceOf[PickInitOptionskeySeparat]
     }
     
-    extension [Self <: PickInitOptionskeySeparat](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PickInitOptionskeySeparat] (val x: Self) extends AnyVal {
       
       inline def setIgnoreJSONStructure(value: Boolean): Self = StObject.set(x, "ignoreJSONStructure", value.asInstanceOf[js.Any])
       
@@ -187,7 +192,8 @@ object anon {
       __obj.asInstanceOf[ReturnDetails]
     }
     
-    extension [Self <: ReturnDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReturnDetails] (val x: Self) extends AnyVal {
       
       inline def setReturnDetails(value: `true`): Self = StObject.set(x, "returnDetails", value.asInstanceOf[js.Any])
       
@@ -206,7 +212,8 @@ object anon {
       __obj.asInstanceOf[ReturnObjects]
     }
     
-    extension [Self <: ReturnObjects](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReturnObjects] (val x: Self) extends AnyVal {
       
       inline def setReturnObjects(value: `true`): Self = StObject.set(x, "returnObjects", value.asInstanceOf[js.Any])
     }

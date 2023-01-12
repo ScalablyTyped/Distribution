@@ -33,7 +33,8 @@ object ASPxClientTreeListBatchEditEndEditingEventArgs {
     __obj.asInstanceOf[ASPxClientTreeListBatchEditEndEditingEventArgs]
   }
   
-  extension [Self <: ASPxClientTreeListBatchEditEndEditingEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientTreeListBatchEditEndEditingEventArgs] (val x: Self) extends AnyVal {
     
     inline def setFocusedColumn(value: ASPxClientTreeListColumn): Self = StObject.set(x, "focusedColumn", value.asInstanceOf[js.Any])
     

@@ -24,7 +24,8 @@ object ValidatorValidateInputEvent {
     __obj.asInstanceOf[ValidatorValidateInputEvent]
   }
   
-  extension [Self <: ValidatorValidateInputEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ValidatorValidateInputEvent] (val x: Self) extends AnyVal {
     
     inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     

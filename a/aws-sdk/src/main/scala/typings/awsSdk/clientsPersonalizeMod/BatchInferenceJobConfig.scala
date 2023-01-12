@@ -18,7 +18,8 @@ object BatchInferenceJobConfig {
     __obj.asInstanceOf[BatchInferenceJobConfig]
   }
   
-  extension [Self <: BatchInferenceJobConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchInferenceJobConfig] (val x: Self) extends AnyVal {
     
     inline def setItemExplorationConfig(value: HyperParameters): Self = StObject.set(x, "itemExplorationConfig", value.asInstanceOf[js.Any])
     

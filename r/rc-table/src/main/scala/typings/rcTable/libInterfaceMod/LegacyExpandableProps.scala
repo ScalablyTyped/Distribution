@@ -53,7 +53,8 @@ object LegacyExpandableProps {
     __obj.asInstanceOf[LegacyExpandableProps[RecordType]]
   }
   
-  extension [Self <: LegacyExpandableProps[?], RecordType](x: Self & LegacyExpandableProps[RecordType]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LegacyExpandableProps[?], RecordType] (val x: Self & LegacyExpandableProps[RecordType]) extends AnyVal {
     
     inline def setChildrenColumnName(value: String): Self = StObject.set(x, "childrenColumnName", value.asInstanceOf[js.Any])
     

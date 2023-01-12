@@ -24,7 +24,8 @@ object PipelineTopicExpression_ {
     __obj.asInstanceOf[PipelineTopicExpression_]
   }
   
-  extension [Self <: PipelineTopicExpression_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PipelineTopicExpression_] (val x: Self) extends AnyVal {
     
     inline def setExpression(value: Expression): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
     

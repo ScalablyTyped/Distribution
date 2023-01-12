@@ -105,7 +105,8 @@ object distParserWrappedAstDefaultCalculatorMod {
       __obj.asInstanceOf[ValueCalculator]
     }
     
-    extension [Self <: ValueCalculator](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ValueCalculator] (val x: Self) extends AnyVal {
       
       inline def setCalculate(value: (IProperty, IHighLevelNode) => Any): Self = StObject.set(x, "calculate", js.Any.fromFunction2(value))
       

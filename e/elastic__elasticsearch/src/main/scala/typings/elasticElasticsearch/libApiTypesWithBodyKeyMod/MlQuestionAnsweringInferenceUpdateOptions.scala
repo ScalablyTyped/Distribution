@@ -23,7 +23,8 @@ object MlQuestionAnsweringInferenceUpdateOptions {
     __obj.asInstanceOf[MlQuestionAnsweringInferenceUpdateOptions]
   }
   
-  extension [Self <: MlQuestionAnsweringInferenceUpdateOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlQuestionAnsweringInferenceUpdateOptions] (val x: Self) extends AnyVal {
     
     inline def setMax_answer_length(value: integer): Self = StObject.set(x, "max_answer_length", value.asInstanceOf[js.Any])
     

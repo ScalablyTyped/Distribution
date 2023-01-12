@@ -24,7 +24,8 @@ object anon {
       __obj.asInstanceOf[DisableQuery]
     }
     
-    extension [Self <: DisableQuery](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DisableQuery] (val x: Self) extends AnyVal {
       
       inline def setDisableQuery(value: Boolean): Self = StObject.set(x, "disableQuery", value.asInstanceOf[js.Any])
       

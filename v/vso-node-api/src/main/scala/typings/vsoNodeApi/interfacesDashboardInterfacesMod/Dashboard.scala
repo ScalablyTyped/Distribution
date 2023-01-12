@@ -68,7 +68,8 @@ object Dashboard {
     __obj.asInstanceOf[Dashboard]
   }
   
-  extension [Self <: Dashboard](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Dashboard] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

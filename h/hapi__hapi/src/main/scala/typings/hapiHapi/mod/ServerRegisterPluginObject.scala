@@ -25,7 +25,8 @@ object ServerRegisterPluginObject {
     __obj.asInstanceOf[ServerRegisterPluginObject[T]]
   }
   
-  extension [Self <: ServerRegisterPluginObject[?], T](x: Self & ServerRegisterPluginObject[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServerRegisterPluginObject[?], T] (val x: Self & ServerRegisterPluginObject[T]) extends AnyVal {
     
     inline def setOptions(value: T): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     

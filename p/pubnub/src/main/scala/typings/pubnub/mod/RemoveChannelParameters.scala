@@ -17,7 +17,8 @@ object RemoveChannelParameters {
     __obj.asInstanceOf[RemoveChannelParameters]
   }
   
-  extension [Self <: RemoveChannelParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RemoveChannelParameters] (val x: Self) extends AnyVal {
     
     inline def setChannelGroup(value: String): Self = StObject.set(x, "channelGroup", value.asInstanceOf[js.Any])
     

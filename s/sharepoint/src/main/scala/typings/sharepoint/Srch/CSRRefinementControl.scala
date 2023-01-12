@@ -50,7 +50,8 @@ object CSRRefinementControl {
     __obj.asInstanceOf[CSRRefinementControl]
   }
   
-  extension [Self <: CSRRefinementControl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CSRRefinementControl] (val x: Self) extends AnyVal {
     
     inline def setCsr_displayTitle(value: String): Self = StObject.set(x, "csr_displayTitle", value.asInstanceOf[js.Any])
     

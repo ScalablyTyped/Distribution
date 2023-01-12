@@ -23,7 +23,8 @@ object ClientResponse {
     __obj.asInstanceOf[ClientResponse[T]]
   }
   
-  extension [Self <: ClientResponse[?], T](x: Self & ClientResponse[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClientResponse[?], T] (val x: Self & ClientResponse[T]) extends AnyVal {
     
     inline def setHeaders(value: StringDictionary[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     

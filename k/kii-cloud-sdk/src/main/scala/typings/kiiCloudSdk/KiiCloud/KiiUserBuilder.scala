@@ -93,7 +93,8 @@ object KiiUserBuilder {
     __obj.asInstanceOf[KiiUserBuilder]
   }
   
-  extension [Self <: KiiUserBuilder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KiiUserBuilder] (val x: Self) extends AnyVal {
     
     inline def setBuild(value: () => KiiUser): Self = StObject.set(x, "build", js.Any.fromFunction0(value))
     

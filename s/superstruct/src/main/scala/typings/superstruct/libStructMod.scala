@@ -94,7 +94,8 @@ object libStructMod {
       __obj.asInstanceOf[Context]
     }
     
-    extension [Self <: Context](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Context] (val x: Self) extends AnyVal {
       
       inline def setBranch(value: js.Array[Any]): Self = StObject.set(x, "branch", value.asInstanceOf[js.Any])
       

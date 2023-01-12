@@ -30,7 +30,8 @@ object dateRangePickerCalendarMod {
     @js.native
     val ^ : DateRangePickerCalendar = js.native
     
-    extension [Self <: DateRangePickerCalendar](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DateRangePickerCalendar] (val x: Self) extends AnyVal {
       
       inline def setComputed(value: DisplayedEndDate): Self = StObject.set(x, "computed", value.asInstanceOf[js.Any])
       

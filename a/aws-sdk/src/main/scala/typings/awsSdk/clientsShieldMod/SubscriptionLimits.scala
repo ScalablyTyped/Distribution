@@ -23,7 +23,8 @@ object SubscriptionLimits {
     __obj.asInstanceOf[SubscriptionLimits]
   }
   
-  extension [Self <: SubscriptionLimits](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubscriptionLimits] (val x: Self) extends AnyVal {
     
     inline def setProtectionGroupLimits(value: ProtectionGroupLimits): Self = StObject.set(x, "ProtectionGroupLimits", value.asInstanceOf[js.Any])
     

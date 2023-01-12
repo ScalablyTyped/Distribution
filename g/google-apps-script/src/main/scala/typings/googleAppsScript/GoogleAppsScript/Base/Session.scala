@@ -39,7 +39,8 @@ object Session {
     __obj.asInstanceOf[Session]
   }
   
-  extension [Self <: Session](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Session] (val x: Self) extends AnyVal {
     
     inline def setGetActiveUser(value: () => User): Self = StObject.set(x, "getActiveUser", js.Any.fromFunction0(value))
     

@@ -18,7 +18,8 @@ object WebExtensionLangpackManifestLanguagesPatternType {
     __obj.asInstanceOf[WebExtensionLangpackManifestLanguagesPatternType]
   }
   
-  extension [Self <: WebExtensionLangpackManifestLanguagesPatternType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebExtensionLangpackManifestLanguagesPatternType] (val x: Self) extends AnyVal {
     
     inline def setChrome_resources(value: Record[String, ExtensionURL | (Record[String, ExtensionURL])]): Self = StObject.set(x, "chrome_resources", value.asInstanceOf[js.Any])
     

@@ -30,7 +30,8 @@ object distTfjsTypesMod {
       __obj.asInstanceOf[MediaPipeFaceMeshTfjsModelConfig]
     }
     
-    extension [Self <: MediaPipeFaceMeshTfjsModelConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MediaPipeFaceMeshTfjsModelConfig] (val x: Self) extends AnyVal {
       
       inline def setDetectorModelUrl(value: String | IOHandler): Self = StObject.set(x, "detectorModelUrl", value.asInstanceOf[js.Any])
       

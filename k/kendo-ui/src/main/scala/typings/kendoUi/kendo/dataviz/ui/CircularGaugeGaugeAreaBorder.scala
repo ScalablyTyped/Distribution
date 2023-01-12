@@ -21,7 +21,8 @@ object CircularGaugeGaugeAreaBorder {
     __obj.asInstanceOf[CircularGaugeGaugeAreaBorder]
   }
   
-  extension [Self <: CircularGaugeGaugeAreaBorder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CircularGaugeGaugeAreaBorder] (val x: Self) extends AnyVal {
     
     inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

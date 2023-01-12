@@ -78,7 +78,8 @@ object componentsUiShellHeaderNavMod {
       __obj.asInstanceOf[HeaderNav]
     }
     
-    extension [Self <: HeaderNav](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HeaderNav] (val x: Self) extends AnyVal {
       
       inline def setGetCurrentNavigation(value: () => Null | Element): Self = StObject.set(x, "getCurrentNavigation", js.Any.fromFunction0(value))
       
@@ -113,7 +114,8 @@ object componentsUiShellHeaderNavMod {
       __obj.asInstanceOf[HeaderNavOptions]
     }
     
-    extension [Self <: HeaderNavOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HeaderNavOptions] (val x: Self) extends AnyVal {
       
       inline def setSelectorInit(value: String): Self = StObject.set(x, "selectorInit", value.asInstanceOf[js.Any])
       

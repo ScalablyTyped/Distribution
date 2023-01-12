@@ -19,7 +19,8 @@ object IsLeft {
     __obj.asInstanceOf[IsLeft]
   }
   
-  extension [Self <: IsLeft](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IsLeft] (val x: Self) extends AnyVal {
     
     inline def set$isLeft(value: Boolean): Self = StObject.set(x, "$isLeft", value.asInstanceOf[js.Any])
     

@@ -44,7 +44,8 @@ object libFormSectionMod {
       __obj.asInstanceOf[FormSectionProps[P]]
     }
     
-    extension [Self <: FormSectionProps[?], P](x: Self & FormSectionProps[P]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FormSectionProps[?], P] (val x: Self & FormSectionProps[P]) extends AnyVal {
       
       inline def setComponent(value: ComponentType[P]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
       

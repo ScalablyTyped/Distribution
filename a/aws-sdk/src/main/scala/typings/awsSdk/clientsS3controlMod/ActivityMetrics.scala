@@ -18,7 +18,8 @@ object ActivityMetrics {
     __obj.asInstanceOf[ActivityMetrics]
   }
   
-  extension [Self <: ActivityMetrics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ActivityMetrics] (val x: Self) extends AnyVal {
     
     inline def setIsEnabled(value: IsEnabled): Self = StObject.set(x, "IsEnabled", value.asInstanceOf[js.Any])
     

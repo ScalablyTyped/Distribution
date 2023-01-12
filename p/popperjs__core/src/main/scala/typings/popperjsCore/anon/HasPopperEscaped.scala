@@ -27,7 +27,8 @@ object HasPopperEscaped {
     __obj.asInstanceOf[HasPopperEscaped]
   }
   
-  extension [Self <: HasPopperEscaped](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HasPopperEscaped] (val x: Self) extends AnyVal {
     
     inline def setHasPopperEscaped(value: Boolean): Self = StObject.set(x, "hasPopperEscaped", value.asInstanceOf[js.Any])
     

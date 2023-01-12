@@ -63,7 +63,8 @@ object XIdlArray {
     __obj.asInstanceOf[XIdlArray]
   }
   
-  extension [Self <: XIdlArray](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XIdlArray] (val x: Self) extends AnyVal {
     
     inline def setGet(value: (Any, Double) => Any): Self = StObject.set(x, "get", js.Any.fromFunction2(value))
     

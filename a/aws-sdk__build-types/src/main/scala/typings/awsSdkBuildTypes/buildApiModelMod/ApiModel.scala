@@ -25,7 +25,8 @@ object ApiModel {
     __obj.asInstanceOf[ApiModel]
   }
   
-  extension [Self <: ApiModel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApiModel] (val x: Self) extends AnyVal {
     
     inline def setDocumentation(value: java.lang.String): Self = StObject.set(x, "documentation", value.asInstanceOf[js.Any])
     

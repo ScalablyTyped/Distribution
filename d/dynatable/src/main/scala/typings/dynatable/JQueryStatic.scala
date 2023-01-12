@@ -22,7 +22,8 @@ object JQueryStatic {
     __obj.asInstanceOf[JQueryStatic]
   }
   
-  extension [Self <: JQueryStatic](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JQueryStatic] (val x: Self) extends AnyVal {
     
     inline def setDynatableSetup(value: Options => Unit): Self = StObject.set(x, "dynatableSetup", js.Any.fromFunction1(value))
   }

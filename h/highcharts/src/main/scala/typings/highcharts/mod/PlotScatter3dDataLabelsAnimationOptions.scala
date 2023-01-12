@@ -20,7 +20,8 @@ object PlotScatter3dDataLabelsAnimationOptions {
     __obj.asInstanceOf[PlotScatter3dDataLabelsAnimationOptions]
   }
   
-  extension [Self <: PlotScatter3dDataLabelsAnimationOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotScatter3dDataLabelsAnimationOptions] (val x: Self) extends AnyVal {
     
     inline def setDefer(value: Double): Self = StObject.set(x, "defer", value.asInstanceOf[js.Any])
     

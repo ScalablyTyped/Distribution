@@ -92,7 +92,8 @@ object libPlatformWebSimpleUserSimpleUserDelegateMod {
       __obj.asInstanceOf[SimpleUserDelegate]
     }
     
-    extension [Self <: SimpleUserDelegate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SimpleUserDelegate] (val x: Self) extends AnyVal {
       
       inline def setOnCallAnswered(value: () => Unit): Self = StObject.set(x, "onCallAnswered", js.Any.fromFunction0(value))
       

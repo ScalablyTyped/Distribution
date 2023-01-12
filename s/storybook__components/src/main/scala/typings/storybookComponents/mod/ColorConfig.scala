@@ -19,7 +19,8 @@ object ColorConfig {
     __obj.asInstanceOf[ColorConfig]
   }
   
-  extension [Self <: ColorConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ColorConfig] (val x: Self) extends AnyVal {
     
     inline def setPresetColors(value: js.Array[PresetColor]): Self = StObject.set(x, "presetColors", value.asInstanceOf[js.Any])
     

@@ -46,7 +46,8 @@ object NamingSystemUniqueId {
     __obj.asInstanceOf[NamingSystemUniqueId]
   }
   
-  extension [Self <: NamingSystemUniqueId](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NamingSystemUniqueId] (val x: Self) extends AnyVal {
     
     inline def setPeriod(value: Period): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
     

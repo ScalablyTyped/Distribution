@@ -30,7 +30,8 @@ object ModeChangeEvent {
     __obj.asInstanceOf[ModeChangeEvent]
   }
   
-  extension [Self <: ModeChangeEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModeChangeEvent] (val x: Self) extends AnyVal {
     
     inline def setNewMode(value: String): Self = StObject.set(x, "NewMode", value.asInstanceOf[js.Any])
   }

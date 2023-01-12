@@ -28,7 +28,8 @@ object CustomerManagedDatastoreS3Storage {
     __obj.asInstanceOf[CustomerManagedDatastoreS3Storage]
   }
   
-  extension [Self <: CustomerManagedDatastoreS3Storage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomerManagedDatastoreS3Storage] (val x: Self) extends AnyVal {
     
     inline def setBucket(value: BucketName): Self = StObject.set(x, "bucket", value.asInstanceOf[js.Any])
     

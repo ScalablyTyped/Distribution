@@ -36,7 +36,8 @@ object SnapToRoadsRequest {
     __obj.asInstanceOf[SnapToRoadsRequest]
   }
   
-  extension [Self <: SnapToRoadsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SnapToRoadsRequest] (val x: Self) extends AnyVal {
     
     inline def setInterpolate(value: Boolean): Self = StObject.set(x, "interpolate", value.asInstanceOf[js.Any])
     

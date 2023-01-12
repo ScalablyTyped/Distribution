@@ -20,7 +20,8 @@ object LineOption {
     __obj.asInstanceOf[LineOption]
   }
   
-  extension [Self <: LineOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LineOption] (val x: Self) extends AnyVal {
     
     inline def setClasses(value: js.Array[String]): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
     

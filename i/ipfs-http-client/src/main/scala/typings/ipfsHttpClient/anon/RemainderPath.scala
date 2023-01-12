@@ -17,7 +17,8 @@ object RemainderPath {
     __obj.asInstanceOf[RemainderPath]
   }
   
-  extension [Self <: RemainderPath](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RemainderPath] (val x: Self) extends AnyVal {
     
     inline def setRemainderPath(value: String): Self = StObject.set(x, "remainderPath", value.asInstanceOf[js.Any])
     

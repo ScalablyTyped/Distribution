@@ -21,7 +21,8 @@ object IAccelerometerReading {
     __obj.asInstanceOf[IAccelerometerReading]
   }
   
-  extension [Self <: IAccelerometerReading](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IAccelerometerReading] (val x: Self) extends AnyVal {
     
     inline def setAccelerationX(value: Double): Self = StObject.set(x, "accelerationX", value.asInstanceOf[js.Any])
     

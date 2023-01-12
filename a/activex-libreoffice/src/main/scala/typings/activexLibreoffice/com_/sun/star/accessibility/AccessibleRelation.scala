@@ -37,7 +37,8 @@ object AccessibleRelation {
     __obj.asInstanceOf[AccessibleRelation]
   }
   
-  extension [Self <: AccessibleRelation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccessibleRelation] (val x: Self) extends AnyVal {
     
     inline def setRelationType(value: Double): Self = StObject.set(x, "RelationType", value.asInstanceOf[js.Any])
     

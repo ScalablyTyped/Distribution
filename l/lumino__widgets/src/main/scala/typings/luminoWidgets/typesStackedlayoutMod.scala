@@ -73,7 +73,8 @@ object typesStackedlayoutMod {
         __obj.asInstanceOf[IOptions]
       }
       
-      extension [Self <: IOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
         
         inline def setHiddenMode(value: HiddenMode): Self = StObject.set(x, "hiddenMode", value.asInstanceOf[js.Any])
         

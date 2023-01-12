@@ -19,7 +19,8 @@ object ZGMenu {
     __obj.asInstanceOf[ZGMenu]
   }
   
-  extension [Self <: ZGMenu](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ZGMenu] (val x: Self) extends AnyVal {
     
     inline def setReplace(value: Boolean): Self = StObject.set(x, "replace", value.asInstanceOf[js.Any])
     

@@ -126,7 +126,8 @@ object RequiredDateOption {
     __obj.asInstanceOf[RequiredDateOption]
   }
   
-  extension [Self <: RequiredDateOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RequiredDateOption] (val x: Self) extends AnyVal {
     
     inline def setBtns(value: js.Array[clear | now | confirm]): Self = StObject.set(x, "btns", value.asInstanceOf[js.Any])
     

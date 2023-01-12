@@ -39,7 +39,8 @@ object ModalDialog {
     __obj.asInstanceOf[ModalDialog]
   }
   
-  extension [Self <: ModalDialog](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModalDialog] (val x: Self) extends AnyVal {
     
     inline def setClose(value: DialogResult => Unit): Self = StObject.set(x, "close", js.Any.fromFunction1(value))
   }

@@ -47,7 +47,8 @@ object TableId {
     __obj.asInstanceOf[TableId]
   }
   
-  extension [Self <: TableId](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TableId] (val x: Self) extends AnyVal {
     
     inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
     

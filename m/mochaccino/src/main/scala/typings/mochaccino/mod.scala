@@ -45,7 +45,8 @@ object mod {
       __obj.asInstanceOf[Dom_]
     }
     
-    extension [Self <: Dom_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Dom_] (val x: Self) extends AnyVal {
       
       inline def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
       
@@ -118,7 +119,8 @@ object mod {
       __obj.asInstanceOf[Expect_]
     }
     
-    extension [Self <: Expect_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Expect_] (val x: Self) extends AnyVal {
       
       inline def setNot(value: Expect_): Self = StObject.set(x, "not", value.asInstanceOf[js.Any])
       
@@ -183,7 +185,8 @@ object mod {
       __obj.asInstanceOf[SpyProxy]
     }
     
-    extension [Self <: SpyProxy](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SpyProxy] (val x: Self) extends AnyVal {
       
       inline def setAnd(value: SpyProxy): Self = StObject.set(x, "and", value.asInstanceOf[js.Any])
       

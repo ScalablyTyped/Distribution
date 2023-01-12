@@ -20,7 +20,8 @@ object Magellan {
     __obj.asInstanceOf[Magellan]
   }
   
-  extension [Self <: Magellan](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Magellan] (val x: Self) extends AnyVal {
     
     inline def setCalcPoints(value: () => Unit): Self = StObject.set(x, "calcPoints", js.Any.fromFunction0(value))
     

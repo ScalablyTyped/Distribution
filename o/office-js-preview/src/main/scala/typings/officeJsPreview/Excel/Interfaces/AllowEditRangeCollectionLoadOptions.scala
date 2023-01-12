@@ -55,7 +55,8 @@ object AllowEditRangeCollectionLoadOptions {
     __obj.asInstanceOf[AllowEditRangeCollectionLoadOptions]
   }
   
-  extension [Self <: AllowEditRangeCollectionLoadOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AllowEditRangeCollectionLoadOptions] (val x: Self) extends AnyVal {
     
     inline def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
     

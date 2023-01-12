@@ -19,7 +19,8 @@ object AsyncOptions {
     __obj.asInstanceOf[AsyncOptions]
   }
   
-  extension [Self <: AsyncOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AsyncOptions] (val x: Self) extends AnyVal {
     
     inline def setConsume(value: Boolean): Self = StObject.set(x, "consume", value.asInstanceOf[js.Any])
     

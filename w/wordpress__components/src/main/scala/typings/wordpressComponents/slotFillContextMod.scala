@@ -49,7 +49,8 @@ object slotFillContextMod extends Shortcut {
       __obj.asInstanceOf[SlotFillContext]
     }
     
-    extension [Self <: SlotFillContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SlotFillContext] (val x: Self) extends AnyVal {
       
       inline def setGetFills(value: (String, Component[js.Object, js.Object, Any]) => js.Array[Componentanyoccurrencenum]): Self = StObject.set(x, "getFills", js.Any.fromFunction2(value))
       

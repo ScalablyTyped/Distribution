@@ -23,7 +23,8 @@ object SearchResourcesSortCriteria {
     __obj.asInstanceOf[SearchResourcesSortCriteria]
   }
   
-  extension [Self <: SearchResourcesSortCriteria](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchResourcesSortCriteria] (val x: Self) extends AnyVal {
     
     inline def setAttributeName(value: SearchResourcesSortAttributeName): Self = StObject.set(x, "attributeName", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object IRoutePanelParameters {
     __obj.asInstanceOf[IRoutePanelParameters]
   }
   
-  extension [Self <: IRoutePanelParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IRoutePanelParameters] (val x: Self) extends AnyVal {
     
     inline def setOptions(value: Autofocus): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     

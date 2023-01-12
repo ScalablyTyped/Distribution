@@ -18,7 +18,8 @@ object InvalidTrackLanguageError {
     __obj.asInstanceOf[InvalidTrackLanguageError]
   }
   
-  extension [Self <: InvalidTrackLanguageError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InvalidTrackLanguageError] (val x: Self) extends AnyVal {
     
     inline def setName(value: typings.vimeoPlayer.vimeoPlayerStrings.InvalidTrackLanguageError): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }

@@ -18,7 +18,8 @@ object PfCancel {
     __obj.asInstanceOf[PfCancel]
   }
   
-  extension [Self <: PfCancel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PfCancel] (val x: Self) extends AnyVal {
     
     inline def setPDocument(value: _XDocument): Self = StObject.set(x, "pDocument", value.asInstanceOf[js.Any])
     

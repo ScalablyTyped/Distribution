@@ -24,7 +24,8 @@ object PlotKeltnerchannelsBottomLineStylesOptions {
     __obj.asInstanceOf[PlotKeltnerchannelsBottomLineStylesOptions]
   }
   
-  extension [Self <: PlotKeltnerchannelsBottomLineStylesOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotKeltnerchannelsBottomLineStylesOptions] (val x: Self) extends AnyVal {
     
     inline def setLineColor(value: String): Self = StObject.set(x, "lineColor", value.asInstanceOf[js.Any])
     

@@ -127,7 +127,8 @@ object mod {
       __obj.asInstanceOf[InitOptions]
     }
     
-    extension [Self <: InitOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InitOptions] (val x: Self) extends AnyVal {
       
       inline def setAppId(value: String): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
       
@@ -168,7 +169,8 @@ object mod {
       __obj.asInstanceOf[LoginOptions]
     }
     
-    extension [Self <: LoginOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LoginOptions] (val x: Self) extends AnyVal {
       
       inline def setAppId(value: String): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
       
@@ -207,7 +209,8 @@ object mod {
       __obj.asInstanceOf[OAuthRequestParams]
     }
     
-    extension [Self <: OAuthRequestParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OAuthRequestParams] (val x: Self) extends AnyVal {
       
       inline def setAccessToken(value: String): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
       
@@ -234,7 +237,8 @@ object mod {
       __obj.asInstanceOf[OauthSession]
     }
     
-    extension [Self <: OauthSession](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OauthSession] (val x: Self) extends AnyVal {
       
       inline def setAccessToken(value: String): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
       
@@ -267,7 +271,8 @@ object mod {
       __obj.asInstanceOf[PinData]
     }
     
-    extension [Self <: PinData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PinData] (val x: Self) extends AnyVal {
       
       inline def setBoard(value: String): Self = StObject.set(x, "board", value.asInstanceOf[js.Any])
       

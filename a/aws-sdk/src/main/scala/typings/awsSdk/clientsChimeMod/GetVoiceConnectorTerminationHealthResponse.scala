@@ -18,7 +18,8 @@ object GetVoiceConnectorTerminationHealthResponse {
     __obj.asInstanceOf[GetVoiceConnectorTerminationHealthResponse]
   }
   
-  extension [Self <: GetVoiceConnectorTerminationHealthResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetVoiceConnectorTerminationHealthResponse] (val x: Self) extends AnyVal {
     
     inline def setTerminationHealth(value: TerminationHealth): Self = StObject.set(x, "TerminationHealth", value.asInstanceOf[js.Any])
     

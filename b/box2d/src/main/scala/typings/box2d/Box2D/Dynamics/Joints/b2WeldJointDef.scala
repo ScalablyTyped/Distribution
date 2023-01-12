@@ -51,7 +51,8 @@ object b2WeldJointDef {
     __obj.asInstanceOf[b2WeldJointDef]
   }
   
-  extension [Self <: b2WeldJointDef](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: b2WeldJointDef] (val x: Self) extends AnyVal {
     
     inline def setInitialize(value: (b2Body, b2Body, b2Vec2) => Unit): Self = StObject.set(x, "Initialize", js.Any.fromFunction3(value))
     

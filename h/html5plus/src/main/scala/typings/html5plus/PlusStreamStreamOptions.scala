@@ -120,7 +120,8 @@ object PlusStreamStreamOptions {
     __obj.asInstanceOf[PlusStreamStreamOptions]
   }
   
-  extension [Self <: PlusStreamStreamOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlusStreamStreamOptions] (val x: Self) extends AnyVal {
     
     inline def setAppid(value: String): Self = StObject.set(x, "appid", value.asInstanceOf[js.Any])
     

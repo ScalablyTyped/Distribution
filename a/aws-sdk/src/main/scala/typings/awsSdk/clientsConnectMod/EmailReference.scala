@@ -23,7 +23,8 @@ object EmailReference {
     __obj.asInstanceOf[EmailReference]
   }
   
-  extension [Self <: EmailReference](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EmailReference] (val x: Self) extends AnyVal {
     
     inline def setName(value: ReferenceKey): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     

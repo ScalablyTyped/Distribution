@@ -23,7 +23,8 @@ object CreateChannelModeratorResponse {
     __obj.asInstanceOf[CreateChannelModeratorResponse]
   }
   
-  extension [Self <: CreateChannelModeratorResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateChannelModeratorResponse] (val x: Self) extends AnyVal {
     
     inline def setChannelArn(value: ChimeArn): Self = StObject.set(x, "ChannelArn", value.asInstanceOf[js.Any])
     

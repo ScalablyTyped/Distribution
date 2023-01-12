@@ -46,7 +46,8 @@ object ConstructorType {
     __obj.asInstanceOf[ConstructorType]
   }
   
-  extension [Self <: ConstructorType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConstructorType] (val x: Self) extends AnyVal {
     
     inline def setParameterList(value: ParameterList): Self = StObject.set(x, "parameterList", value.asInstanceOf[js.Any])
     

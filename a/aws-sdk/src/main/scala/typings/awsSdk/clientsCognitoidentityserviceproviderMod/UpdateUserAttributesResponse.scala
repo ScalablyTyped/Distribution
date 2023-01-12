@@ -18,7 +18,8 @@ object UpdateUserAttributesResponse {
     __obj.asInstanceOf[UpdateUserAttributesResponse]
   }
   
-  extension [Self <: UpdateUserAttributesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateUserAttributesResponse] (val x: Self) extends AnyVal {
     
     inline def setCodeDeliveryDetailsList(value: CodeDeliveryDetailsListType): Self = StObject.set(x, "CodeDeliveryDetailsList", value.asInstanceOf[js.Any])
     

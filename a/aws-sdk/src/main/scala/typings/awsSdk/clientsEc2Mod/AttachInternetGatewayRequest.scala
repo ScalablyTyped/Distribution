@@ -28,7 +28,8 @@ object AttachInternetGatewayRequest {
     __obj.asInstanceOf[AttachInternetGatewayRequest]
   }
   
-  extension [Self <: AttachInternetGatewayRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AttachInternetGatewayRequest] (val x: Self) extends AnyVal {
     
     inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     

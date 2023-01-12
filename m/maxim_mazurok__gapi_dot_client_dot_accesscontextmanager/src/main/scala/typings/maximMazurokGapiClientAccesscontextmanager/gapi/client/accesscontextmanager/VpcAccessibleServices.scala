@@ -22,7 +22,8 @@ object VpcAccessibleServices {
     __obj.asInstanceOf[VpcAccessibleServices]
   }
   
-  extension [Self <: VpcAccessibleServices](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VpcAccessibleServices] (val x: Self) extends AnyVal {
     
     inline def setAllowedServices(value: js.Array[String]): Self = StObject.set(x, "allowedServices", value.asInstanceOf[js.Any])
     

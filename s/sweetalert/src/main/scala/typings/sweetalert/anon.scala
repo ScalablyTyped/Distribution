@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[`0`]
     }
     
-    extension [Self <: `0`](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: `0`] (val x: Self) extends AnyVal {
       
       inline def setCloseModal(value: Boolean): Self = StObject.set(x, "closeModal", value.asInstanceOf[js.Any])
       
@@ -40,7 +41,8 @@ object anon {
       __obj.asInstanceOf[CloseModal]
     }
     
-    extension [Self <: CloseModal](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CloseModal] (val x: Self) extends AnyVal {
       
       inline def setCloseModal(value: Boolean): Self = StObject.set(x, "closeModal", value.asInstanceOf[js.Any])
       
@@ -82,7 +84,8 @@ object anon {
       __obj.asInstanceOf[PartialSwalOptions]
     }
     
-    extension [Self <: PartialSwalOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialSwalOptions] (val x: Self) extends AnyVal {
       
       inline def setButtons(value: ButtonList | (js.Array[String | Boolean])): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
       
@@ -141,7 +144,8 @@ object anon {
       __obj.asInstanceOf[Reject]
     }
     
-    extension [Self <: Reject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Reject] (val x: Self) extends AnyVal {
       
       inline def setReject(value: () => Unit): Self = StObject.set(x, "reject", js.Any.fromFunction0(value))
       
@@ -166,7 +170,8 @@ object anon {
       __obj.asInstanceOf[Value]
     }
     
-    extension [Self <: Value](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Value] (val x: Self) extends AnyVal {
       
       inline def setCloseModal(value: Boolean): Self = StObject.set(x, "closeModal", value.asInstanceOf[js.Any])
       

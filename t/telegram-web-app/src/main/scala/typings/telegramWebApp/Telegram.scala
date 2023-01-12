@@ -15,7 +15,8 @@ object Telegram {
     __obj.asInstanceOf[Telegram]
   }
   
-  extension [Self <: Telegram](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Telegram] (val x: Self) extends AnyVal {
     
     inline def setWebApp(value: WebApp): Self = StObject.set(x, "WebApp", value.asInstanceOf[js.Any])
   }

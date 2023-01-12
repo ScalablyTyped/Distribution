@@ -17,7 +17,8 @@ object ApplicationjsonBodyColumnsurl {
     __obj.asInstanceOf[ApplicationjsonBodyColumnsurl]
   }
   
-  extension [Self <: ApplicationjsonBodyColumnsurl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApplicationjsonBodyColumnsurl] (val x: Self) extends AnyVal {
     
     inline def setApplicationSlashjson(value: BodyColumnsurl): Self = StObject.set(x, "application/json", value.asInstanceOf[js.Any])
   }

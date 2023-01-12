@@ -38,7 +38,8 @@ object FileReaderEventMap {
     __obj.asInstanceOf[FileReaderEventMap]
   }
   
-  extension [Self <: FileReaderEventMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FileReaderEventMap] (val x: Self) extends AnyVal {
     
     inline def setAbort(value: ProgressEvent[FileReader]): Self = StObject.set(x, "abort", value.asInstanceOf[js.Any])
     

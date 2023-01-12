@@ -28,7 +28,8 @@ object GetOpsMetadataRequest {
     __obj.asInstanceOf[GetOpsMetadataRequest]
   }
   
-  extension [Self <: GetOpsMetadataRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetOpsMetadataRequest] (val x: Self) extends AnyVal {
     
     inline def setMaxResults(value: GetOpsMetadataMaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     

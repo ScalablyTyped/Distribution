@@ -44,7 +44,8 @@ object DisplayMultiParams {
     __obj.asInstanceOf[DisplayMultiParams]
   }
   
-  extension [Self <: DisplayMultiParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisplayMultiParams] (val x: Self) extends AnyVal {
     
     inline def setAltValue(value: String | Double): Self = StObject.set(x, "altValue", value.asInstanceOf[js.Any])
     

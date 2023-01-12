@@ -30,7 +30,8 @@ object Subscription {
       __obj.asInstanceOf[CancelSubscriptionParams]
     }
     
-    extension [Self <: CancelSubscriptionParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CancelSubscriptionParams] (val x: Self) extends AnyVal {
       
       inline def setCancellation_dates(value: Strings): Self = StObject.set(x, "cancellation_dates", value.asInstanceOf[js.Any])
       
@@ -72,7 +73,8 @@ object Subscription {
       __obj.asInstanceOf[typings.chartmogulNode.mod.Subscription.Subscription]
     }
     
-    extension [Self <: typings.chartmogulNode.mod.Subscription.Subscription](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.chartmogulNode.mod.Subscription.Subscription] (val x: Self) extends AnyVal {
       
       inline def setCancellation_dates(value: Strings): Self = StObject.set(x, "cancellation_dates", value.asInstanceOf[js.Any])
       
@@ -105,7 +107,8 @@ object Subscription {
       __obj.asInstanceOf[Subscriptions]
     }
     
-    extension [Self <: Subscriptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Subscriptions] (val x: Self) extends AnyVal {
       
       inline def setCustomer_uuid(value: String): Self = StObject.set(x, "customer_uuid", value.asInstanceOf[js.Any])
       

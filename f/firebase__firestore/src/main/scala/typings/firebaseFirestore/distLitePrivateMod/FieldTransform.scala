@@ -22,7 +22,8 @@ object FieldTransform {
     __obj.asInstanceOf[FieldTransform]
   }
   
-  extension [Self <: FieldTransform](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FieldTransform] (val x: Self) extends AnyVal {
     
     inline def setField(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FieldPath_2 */ Any

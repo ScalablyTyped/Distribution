@@ -48,7 +48,8 @@ object SVGAttributes {
     __obj.asInstanceOf[SVGAttributes]
   }
   
-  extension [Self <: SVGAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SVGAttributes] (val x: Self) extends AnyVal {
     
     inline def setD(value: String | SVGPathArray): Self = StObject.set(x, "d", value.asInstanceOf[js.Any])
     

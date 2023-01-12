@@ -16,7 +16,8 @@ object Minlength {
     __obj.asInstanceOf[Minlength]
   }
   
-  extension [Self <: Minlength](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Minlength] (val x: Self) extends AnyVal {
     
     inline def setMinlength(value: minlength): Self = StObject.set(x, "minlength", value.asInstanceOf[js.Any])
   }

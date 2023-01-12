@@ -25,7 +25,8 @@ object KeyFilter {
     __obj.asInstanceOf[KeyFilter]
   }
   
-  extension [Self <: KeyFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KeyFilter] (val x: Self) extends AnyVal {
     
     inline def setKeys(value: Keys): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
     

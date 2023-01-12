@@ -494,7 +494,8 @@ object typesLibButtonToggleMod {
       __obj.asInstanceOf[ButtonToggleProps]
     }
     
-    extension [Self <: ButtonToggleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ButtonToggleProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       

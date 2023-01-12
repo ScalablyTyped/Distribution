@@ -30,7 +30,8 @@ object TrackedActionLastAccessed {
     __obj.asInstanceOf[TrackedActionLastAccessed]
   }
   
-  extension [Self <: TrackedActionLastAccessed](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TrackedActionLastAccessed] (val x: Self) extends AnyVal {
     
     inline def setActionName(value: stringType): Self = StObject.set(x, "ActionName", value.asInstanceOf[js.Any])
     

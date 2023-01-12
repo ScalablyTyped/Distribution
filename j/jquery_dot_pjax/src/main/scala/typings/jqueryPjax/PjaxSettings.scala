@@ -60,7 +60,8 @@ object PjaxSettings {
     __obj.asInstanceOf[PjaxSettings]
   }
   
-  extension [Self <: PjaxSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PjaxSettings] (val x: Self) extends AnyVal {
     
     inline def setContainer(value: String): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     

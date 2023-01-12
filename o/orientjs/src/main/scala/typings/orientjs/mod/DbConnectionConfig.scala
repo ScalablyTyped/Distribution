@@ -35,7 +35,8 @@ object DbConnectionConfig {
     __obj.asInstanceOf[DbConnectionConfig]
   }
   
-  extension [Self <: DbConnectionConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DbConnectionConfig] (val x: Self) extends AnyVal {
     
     inline def setForcePrepare(value: Boolean): Self = StObject.set(x, "forcePrepare", value.asInstanceOf[js.Any])
     

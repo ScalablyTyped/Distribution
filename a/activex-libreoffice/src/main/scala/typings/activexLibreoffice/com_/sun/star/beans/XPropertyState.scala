@@ -67,7 +67,8 @@ object XPropertyState {
     __obj.asInstanceOf[XPropertyState]
   }
   
-  extension [Self <: XPropertyState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XPropertyState] (val x: Self) extends AnyVal {
     
     inline def setGetPropertyDefault(value: String => Any): Self = StObject.set(x, "getPropertyDefault", js.Any.fromFunction1(value))
     

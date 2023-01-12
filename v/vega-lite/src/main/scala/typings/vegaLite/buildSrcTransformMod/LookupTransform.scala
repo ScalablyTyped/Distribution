@@ -46,7 +46,8 @@ object LookupTransform {
     __obj.asInstanceOf[LookupTransform]
   }
   
-  extension [Self <: LookupTransform](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LookupTransform] (val x: Self) extends AnyVal {
     
     inline def setAs(value: FieldName | js.Array[FieldName]): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
     

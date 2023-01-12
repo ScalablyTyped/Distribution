@@ -30,7 +30,8 @@ object typesUtilsSetupGoogleAnalyticsInstanceMod {
         __obj.asInstanceOf[Window]
       }
       
-      extension [Self <: Window](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Window] (val x: Self) extends AnyVal {
         
         inline def setGoogleAnalyticsObject(value: String): Self = StObject.set(x, "GoogleAnalyticsObject", value.asInstanceOf[js.Any])
       }

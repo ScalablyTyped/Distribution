@@ -41,7 +41,8 @@ object CreatedatEvent {
     __obj.asInstanceOf[CreatedatEvent]
   }
   
-  extension [Self <: CreatedatEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreatedatEvent] (val x: Self) extends AnyVal {
     
     inline def setActor(value: Avatarurl): Self = StObject.set(x, "actor", value.asInstanceOf[js.Any])
     

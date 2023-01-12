@@ -19,7 +19,8 @@ object IClientPagingControls {
     __obj.asInstanceOf[IClientPagingControls]
   }
   
-  extension [Self <: IClientPagingControls](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IClientPagingControls] (val x: Self) extends AnyVal {
     
     inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object ASPxClientWebDocumentViewerDocumentOperationResponse {
     __obj.asInstanceOf[ASPxClientWebDocumentViewerDocumentOperationResponse]
   }
   
-  extension [Self <: ASPxClientWebDocumentViewerDocumentOperationResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientWebDocumentViewerDocumentOperationResponse] (val x: Self) extends AnyVal {
     
     inline def setCustomData(value: String): Self = StObject.set(x, "customData", value.asInstanceOf[js.Any])
     

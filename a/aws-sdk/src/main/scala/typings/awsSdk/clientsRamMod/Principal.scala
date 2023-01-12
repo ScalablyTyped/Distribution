@@ -38,7 +38,8 @@ object Principal {
     __obj.asInstanceOf[Principal]
   }
   
-  extension [Self <: Principal](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Principal] (val x: Self) extends AnyVal {
     
     inline def setCreationTime(value: js.Date): Self = StObject.set(x, "creationTime", value.asInstanceOf[js.Any])
     

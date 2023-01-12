@@ -68,7 +68,8 @@ object anon {
       __obj.asInstanceOf[ACTIONATTRIBUTE]
     }
     
-    extension [Self <: ACTIONATTRIBUTE](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ACTIONATTRIBUTE] (val x: Self) extends AnyVal {
       
       inline def setACTION_ATTRIBUTE(value: String): Self = StObject.set(x, "ACTION_ATTRIBUTE", value.asInstanceOf[js.Any])
       
@@ -151,7 +152,8 @@ object anon {
       __obj.asInstanceOf[CLOSING]
     }
     
-    extension [Self <: CLOSING](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CLOSING] (val x: Self) extends AnyVal {
       
       inline def setCLOSING(value: String): Self = StObject.set(x, "CLOSING", value.asInstanceOf[js.Any])
       
@@ -194,7 +196,8 @@ object anon {
       __obj.asInstanceOf[DIALOGANIMATIONCLOSETIMEMS]
     }
     
-    extension [Self <: DIALOGANIMATIONCLOSETIMEMS](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DIALOGANIMATIONCLOSETIMEMS] (val x: Self) extends AnyVal {
       
       inline def setDIALOG_ANIMATION_CLOSE_TIME_MS(value: Double): Self = StObject.set(x, "DIALOG_ANIMATION_CLOSE_TIME_MS", value.asInstanceOf[js.Any])
       
@@ -276,7 +279,8 @@ object anon {
       __obj.asInstanceOf[PartialMDCDialogAdapter]
     }
     
-    extension [Self <: PartialMDCDialogAdapter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialMDCDialogAdapter] (val x: Self) extends AnyVal {
       
       inline def setAddBodyClass(value: /* className */ String => Unit): Self = StObject.set(x, "addBodyClass", js.Any.fromFunction1(value))
       

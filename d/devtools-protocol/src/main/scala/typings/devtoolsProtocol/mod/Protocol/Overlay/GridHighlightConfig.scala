@@ -114,7 +114,8 @@ object GridHighlightConfig {
     __obj.asInstanceOf[GridHighlightConfig]
   }
   
-  extension [Self <: GridHighlightConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GridHighlightConfig] (val x: Self) extends AnyVal {
     
     inline def setAreaBorderColor(value: RGBA): Self = StObject.set(x, "areaBorderColor", value.asInstanceOf[js.Any])
     

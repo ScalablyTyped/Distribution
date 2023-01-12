@@ -71,7 +71,8 @@ object distCommonjsViewsFeedFeedContentMod extends Shortcut {
       __obj.asInstanceOf[StrictFeedContentProps]
     }
     
-    extension [Self <: StrictFeedContentProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StrictFeedContentProps] (val x: Self) extends AnyVal {
       
       inline def setAs(value: Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       

@@ -64,7 +64,8 @@ object ViewerPreferencesInput {
     __obj.asInstanceOf[ViewerPreferencesInput]
   }
   
-  extension [Self <: ViewerPreferencesInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ViewerPreferencesInput] (val x: Self) extends AnyVal {
     
     inline def setCenterWindow(value: Boolean): Self = StObject.set(x, "CenterWindow", value.asInstanceOf[js.Any])
     

@@ -110,7 +110,8 @@ object PlotOptionsGaugeOptions {
     __obj.asInstanceOf[PlotOptionsGaugeOptions]
   }
   
-  extension [Self <: PlotOptionsGaugeOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotOptionsGaugeOptions] (val x: Self) extends AnyVal {
     
     inline def setAnimation(value: Animation): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     

@@ -104,7 +104,8 @@ object buildSrcCompositemarkErrorbandMod {
       __obj.asInstanceOf[ErrorBandConfig]
     }
     
-    extension [Self <: ErrorBandConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ErrorBandConfig] (val x: Self) extends AnyVal {
       
       inline def setCenter(value: ErrorBarCenter): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
       
@@ -138,7 +139,8 @@ object buildSrcCompositemarkErrorbandMod {
       __obj.asInstanceOf[ErrorBandConfigMixins]
     }
     
-    extension [Self <: ErrorBandConfigMixins](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ErrorBandConfigMixins] (val x: Self) extends AnyVal {
       
       inline def setErrorband(value: ErrorBandConfig): Self = StObject.set(x, "errorband", value.asInstanceOf[js.Any])
       

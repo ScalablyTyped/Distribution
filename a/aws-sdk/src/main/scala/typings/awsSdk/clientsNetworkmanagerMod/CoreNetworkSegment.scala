@@ -28,7 +28,8 @@ object CoreNetworkSegment {
     __obj.asInstanceOf[CoreNetworkSegment]
   }
   
-  extension [Self <: CoreNetworkSegment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CoreNetworkSegment] (val x: Self) extends AnyVal {
     
     inline def setEdgeLocations(value: ExternalRegionCodeList): Self = StObject.set(x, "EdgeLocations", value.asInstanceOf[js.Any])
     

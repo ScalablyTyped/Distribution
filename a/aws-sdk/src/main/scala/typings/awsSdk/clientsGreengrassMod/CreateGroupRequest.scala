@@ -33,7 +33,8 @@ object CreateGroupRequest {
     __obj.asInstanceOf[CreateGroupRequest]
   }
   
-  extension [Self <: CreateGroupRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateGroupRequest] (val x: Self) extends AnyVal {
     
     inline def setAmznClientToken(value: string): Self = StObject.set(x, "AmznClientToken", value.asInstanceOf[js.Any])
     

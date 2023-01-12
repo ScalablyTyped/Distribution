@@ -33,7 +33,8 @@ object View {
     __obj.asInstanceOf[View]
   }
   
-  extension [Self <: View](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: View] (val x: Self) extends AnyVal {
     
     inline def setADOXDotView_typekey(value: View): Self = StObject.set(x, "ADOX.View_typekey", value.asInstanceOf[js.Any])
     

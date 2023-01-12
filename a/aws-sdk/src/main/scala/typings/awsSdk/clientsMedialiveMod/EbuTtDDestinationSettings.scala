@@ -40,7 +40,8 @@ object EbuTtDDestinationSettings {
     __obj.asInstanceOf[EbuTtDDestinationSettings]
   }
   
-  extension [Self <: EbuTtDDestinationSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EbuTtDDestinationSettings] (val x: Self) extends AnyVal {
     
     inline def setCopyrightHolder(value: stringMax1000): Self = StObject.set(x, "CopyrightHolder", value.asInstanceOf[js.Any])
     

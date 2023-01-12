@@ -72,7 +72,8 @@ object WorkspaceUserAuthorization {
     __obj.asInstanceOf[WorkspaceUserAuthorization]
   }
   
-  extension [Self <: WorkspaceUserAuthorization](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkspaceUserAuthorization] (val x: Self) extends AnyVal {
     
     inline def setCanDelete(value: String): Self = StObject.set(x, "canDelete", value.asInstanceOf[js.Any])
     

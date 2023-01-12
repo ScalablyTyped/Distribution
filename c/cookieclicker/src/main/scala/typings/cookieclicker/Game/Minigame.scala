@@ -54,7 +54,8 @@ object Minigame {
     __obj.asInstanceOf[Minigame]
   }
   
-  extension [Self <: Minigame](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Minigame] (val x: Self) extends AnyVal {
     
     inline def setDraw(value: () => Unit): Self = StObject.set(x, "draw", js.Any.fromFunction0(value))
     

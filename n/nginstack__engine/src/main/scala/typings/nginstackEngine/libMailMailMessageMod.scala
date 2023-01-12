@@ -42,7 +42,8 @@ object libMailMailMessageMod {
       __obj.asInstanceOf[MailMessage]
     }
     
-    extension [Self <: MailMessage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MailMessage] (val x: Self) extends AnyVal {
       
       inline def setDecode(value: String => Unit): Self = StObject.set(x, "decode", js.Any.fromFunction1(value))
       

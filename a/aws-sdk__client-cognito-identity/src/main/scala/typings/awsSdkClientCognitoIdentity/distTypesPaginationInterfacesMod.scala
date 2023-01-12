@@ -23,7 +23,8 @@ object distTypesPaginationInterfacesMod {
       __obj.asInstanceOf[CognitoIdentityPaginationConfiguration]
     }
     
-    extension [Self <: CognitoIdentityPaginationConfiguration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CognitoIdentityPaginationConfiguration] (val x: Self) extends AnyVal {
       
       inline def setClient(value: CognitoIdentity | CognitoIdentityClient): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
     }

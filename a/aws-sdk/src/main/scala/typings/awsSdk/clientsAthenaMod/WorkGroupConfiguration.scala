@@ -43,7 +43,8 @@ object WorkGroupConfiguration {
     __obj.asInstanceOf[WorkGroupConfiguration]
   }
   
-  extension [Self <: WorkGroupConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkGroupConfiguration] (val x: Self) extends AnyVal {
     
     inline def setBytesScannedCutoffPerQuery(value: BytesScannedCutoffValue): Self = StObject.set(x, "BytesScannedCutoffPerQuery", value.asInstanceOf[js.Any])
     

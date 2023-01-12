@@ -36,7 +36,8 @@ object ConnectedWidget {
     __obj.asInstanceOf[ConnectedWidget]
   }
   
-  extension [Self <: ConnectedWidget](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConnectedWidget] (val x: Self) extends AnyVal {
     
     inline def setCreateURL(value: /* repeated */ Any => String): Self = StObject.set(x, "createURL", js.Any.fromFunction1(value))
     

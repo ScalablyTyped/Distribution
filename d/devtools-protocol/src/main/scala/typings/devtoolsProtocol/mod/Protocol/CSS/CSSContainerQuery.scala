@@ -46,7 +46,8 @@ object CSSContainerQuery {
     __obj.asInstanceOf[CSSContainerQuery]
   }
   
-  extension [Self <: CSSContainerQuery](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CSSContainerQuery] (val x: Self) extends AnyVal {
     
     inline def setLogicalAxes(value: LogicalAxes): Self = StObject.set(x, "logicalAxes", value.asInstanceOf[js.Any])
     

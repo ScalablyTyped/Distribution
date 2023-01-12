@@ -23,7 +23,8 @@ object AsyncInferenceNotificationConfig {
     __obj.asInstanceOf[AsyncInferenceNotificationConfig]
   }
   
-  extension [Self <: AsyncInferenceNotificationConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AsyncInferenceNotificationConfig] (val x: Self) extends AnyVal {
     
     inline def setErrorTopic(value: SnsTopicArn): Self = StObject.set(x, "ErrorTopic", value.asInstanceOf[js.Any])
     

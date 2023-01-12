@@ -20,7 +20,8 @@ object SecurityPutPrivilegesRequest {
     __obj.asInstanceOf[SecurityPutPrivilegesRequest]
   }
   
-  extension [Self <: SecurityPutPrivilegesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SecurityPutPrivilegesRequest] (val x: Self) extends AnyVal {
     
     inline def setPrivileges(value: Record[String, Record[String, SecurityPutPrivilegesActions]]): Self = StObject.set(x, "privileges", value.asInstanceOf[js.Any])
     

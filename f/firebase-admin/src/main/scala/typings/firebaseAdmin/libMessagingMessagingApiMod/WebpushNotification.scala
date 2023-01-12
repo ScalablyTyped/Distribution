@@ -106,7 +106,8 @@ object WebpushNotification {
     __obj.asInstanceOf[WebpushNotification]
   }
   
-  extension [Self <: WebpushNotification](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebpushNotification] (val x: Self) extends AnyVal {
     
     inline def setActions(value: js.Array[Action]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     

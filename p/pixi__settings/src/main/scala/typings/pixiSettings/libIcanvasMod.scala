@@ -184,7 +184,8 @@ object libIcanvasMod {
       __obj.asInstanceOf[ICanvasRect]
     }
     
-    extension [Self <: ICanvasRect](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICanvasRect] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -213,7 +214,8 @@ object libIcanvasMod {
       __obj.asInstanceOf[ICanvasRenderingContext2DSettings]
     }
     
-    extension [Self <: ICanvasRenderingContext2DSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICanvasRenderingContext2DSettings] (val x: Self) extends AnyVal {
       
       inline def setAlpha(value: Boolean): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
       
@@ -254,7 +256,8 @@ object libIcanvasMod {
       __obj.asInstanceOf[ICanvasStyle]
     }
     
-    extension [Self <: ICanvasStyle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICanvasStyle] (val x: Self) extends AnyVal {
       
       inline def setCursor(value: String): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
       
@@ -309,7 +312,8 @@ object libIcanvasMod {
       __obj.asInstanceOf[WebGLContextEventMap]
     }
     
-    extension [Self <: WebGLContextEventMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WebGLContextEventMap] (val x: Self) extends AnyVal {
       
       inline def setWebglcontextlost(value: WebGLContextEvent): Self = StObject.set(x, "webglcontextlost", value.asInstanceOf[js.Any])
       

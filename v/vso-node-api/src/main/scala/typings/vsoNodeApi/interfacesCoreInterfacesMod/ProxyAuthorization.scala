@@ -35,7 +35,8 @@ object ProxyAuthorization {
     __obj.asInstanceOf[ProxyAuthorization]
   }
   
-  extension [Self <: ProxyAuthorization](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProxyAuthorization] (val x: Self) extends AnyVal {
     
     inline def setAuthorizationUrl(value: String): Self = StObject.set(x, "authorizationUrl", value.asInstanceOf[js.Any])
     

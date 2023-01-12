@@ -25,7 +25,8 @@ object triggerAppsyncResolverMod {
       __obj.asInstanceOf[AppSyncAuthorizerEvent]
     }
     
-    extension [Self <: AppSyncAuthorizerEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AppSyncAuthorizerEvent] (val x: Self) extends AnyVal {
       
       inline def setAuthorizationToken(value: String): Self = StObject.set(x, "authorizationToken", value.asInstanceOf[js.Any])
       
@@ -54,7 +55,8 @@ object triggerAppsyncResolverMod {
       __obj.asInstanceOf[AppSyncAuthorizerResult[TResolverContext]]
     }
     
-    extension [Self <: AppSyncAuthorizerResult[?], TResolverContext](x: Self & AppSyncAuthorizerResult[TResolverContext]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AppSyncAuthorizerResult[?], TResolverContext] (val x: Self & AppSyncAuthorizerResult[TResolverContext]) extends AnyVal {
       
       inline def setDeniedFields(value: js.Array[String]): Self = StObject.set(x, "deniedFields", value.asInstanceOf[js.Any])
       
@@ -118,7 +120,8 @@ object triggerAppsyncResolverMod {
       __obj.asInstanceOf[AppSyncIdentityCognito]
     }
     
-    extension [Self <: AppSyncIdentityCognito](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AppSyncIdentityCognito] (val x: Self) extends AnyVal {
       
       inline def setClaims(value: Any): Self = StObject.set(x, "claims", value.asInstanceOf[js.Any])
       
@@ -178,7 +181,8 @@ object triggerAppsyncResolverMod {
       __obj.asInstanceOf[AppSyncIdentityIAM]
     }
     
-    extension [Self <: AppSyncIdentityIAM](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AppSyncIdentityIAM] (val x: Self) extends AnyVal {
       
       inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
       
@@ -213,7 +217,8 @@ object triggerAppsyncResolverMod {
       __obj.asInstanceOf[AppSyncIdentityLambda]
     }
     
-    extension [Self <: AppSyncIdentityLambda](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AppSyncIdentityLambda] (val x: Self) extends AnyVal {
       
       inline def setResolverContext(value: Any): Self = StObject.set(x, "resolverContext", value.asInstanceOf[js.Any])
     }
@@ -236,7 +241,8 @@ object triggerAppsyncResolverMod {
       __obj.asInstanceOf[AppSyncIdentityOIDC]
     }
     
-    extension [Self <: AppSyncIdentityOIDC](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AppSyncIdentityOIDC] (val x: Self) extends AnyVal {
       
       inline def setClaims(value: Any): Self = StObject.set(x, "claims", value.asInstanceOf[js.Any])
       
@@ -275,7 +281,8 @@ object triggerAppsyncResolverMod {
       __obj.asInstanceOf[AppSyncResolverEvent[TArguments, TSource]]
     }
     
-    extension [Self <: AppSyncResolverEvent[?, ?], TArguments, TSource](x: Self & (AppSyncResolverEvent[TArguments, TSource])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AppSyncResolverEvent[?, ?], TArguments, TSource] (val x: Self & (AppSyncResolverEvent[TArguments, TSource])) extends AnyVal {
       
       inline def setArguments(value: TArguments): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
       

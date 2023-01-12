@@ -101,7 +101,8 @@ object distCjsParserFormattingElementListMod {
       __obj.asInstanceOf[ElementEntry[T]]
     }
     
-    extension [Self <: ElementEntry[?], T /* <: TreeAdapterTypeMap[Any, Any, Any, Any, Any, Any, Any, Any, Any, Any] */](x: Self & ElementEntry[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ElementEntry[?], T /* <: TreeAdapterTypeMap[Any, Any, Any, Any, Any, Any, Any, Any, Any, Any] */] (val x: Self & ElementEntry[T]) extends AnyVal {
       
       inline def setElement(value: /* import warning: importer.ImportType#apply Failed type conversion: T['element'] */ js.Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
@@ -149,7 +150,8 @@ object distCjsParserFormattingElementListMod {
       __obj.asInstanceOf[MarkerEntry]
     }
     
-    extension [Self <: MarkerEntry](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MarkerEntry] (val x: Self) extends AnyVal {
       
       inline def setType(value: Marker): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }

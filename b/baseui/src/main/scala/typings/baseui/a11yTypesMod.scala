@@ -20,7 +20,8 @@ object a11yTypesMod {
       __obj.asInstanceOf[ViolationProps]
     }
     
-    extension [Self <: ViolationProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ViolationProps] (val x: Self) extends AnyVal {
       
       inline def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       

@@ -60,7 +60,8 @@ object GeneralClientCapabilities {
     __obj.asInstanceOf[GeneralClientCapabilities]
   }
   
-  extension [Self <: GeneralClientCapabilities](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GeneralClientCapabilities] (val x: Self) extends AnyVal {
     
     inline def setMarkdown(value: MarkdownClientCapabilities): Self = StObject.set(x, "markdown", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object DescribeDatasetGroupResponse {
     __obj.asInstanceOf[DescribeDatasetGroupResponse]
   }
   
-  extension [Self <: DescribeDatasetGroupResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeDatasetGroupResponse] (val x: Self) extends AnyVal {
     
     inline def setDatasetGroup(value: DatasetGroup): Self = StObject.set(x, "datasetGroup", value.asInstanceOf[js.Any])
     

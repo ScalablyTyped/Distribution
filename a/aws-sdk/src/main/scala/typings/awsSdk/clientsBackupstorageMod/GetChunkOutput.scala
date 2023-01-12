@@ -33,7 +33,8 @@ object GetChunkOutput {
     __obj.asInstanceOf[GetChunkOutput]
   }
   
-  extension [Self <: GetChunkOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetChunkOutput] (val x: Self) extends AnyVal {
     
     inline def setChecksum(value: String): Self = StObject.set(x, "Checksum", value.asInstanceOf[js.Any])
     

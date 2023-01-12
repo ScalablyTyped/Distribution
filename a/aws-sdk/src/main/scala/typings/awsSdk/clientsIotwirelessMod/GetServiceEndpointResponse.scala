@@ -28,7 +28,8 @@ object GetServiceEndpointResponse {
     __obj.asInstanceOf[GetServiceEndpointResponse]
   }
   
-  extension [Self <: GetServiceEndpointResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetServiceEndpointResponse] (val x: Self) extends AnyVal {
     
     inline def setServerTrust(value: CertificatePEM): Self = StObject.set(x, "ServerTrust", value.asInstanceOf[js.Any])
     

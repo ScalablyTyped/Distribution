@@ -39,7 +39,8 @@ object HoverLabel {
     __obj.asInstanceOf[HoverLabel]
   }
   
-  extension [Self <: HoverLabel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HoverLabel] (val x: Self) extends AnyVal {
     
     inline def setAlign(value: left | right | auto): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     

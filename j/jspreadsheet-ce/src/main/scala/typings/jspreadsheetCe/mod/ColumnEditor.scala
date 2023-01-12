@@ -25,7 +25,8 @@ object ColumnEditor {
     __obj.asInstanceOf[ColumnEditor]
   }
   
-  extension [Self <: ColumnEditor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ColumnEditor] (val x: Self) extends AnyVal {
     
     inline def setCloseEditor(value: js.Function): Self = StObject.set(x, "closeEditor", value.asInstanceOf[js.Any])
     

@@ -541,7 +541,8 @@ object libComponentsToolbarSearchToolbarSearchMod {
       __obj.asInstanceOf[InheritedProps]
     }
     
-    extension [Self <: InheritedProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InheritedProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       
@@ -1401,7 +1402,8 @@ object libComponentsToolbarSearchToolbarSearchMod {
       __obj.asInstanceOf[ToolbarSearchProps]
     }
     
-    extension [Self <: ToolbarSearchProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ToolbarSearchProps] (val x: Self) extends AnyVal {
       
       inline def setLabelId(value: String): Self = StObject.set(x, "labelId", value.asInstanceOf[js.Any])
       

@@ -21,7 +21,8 @@ object anon {
       __obj.asInstanceOf[CachePath]
     }
     
-    extension [Self <: CachePath](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CachePath] (val x: Self) extends AnyVal {
       
       inline def setCachePath(value: String): Self = StObject.set(x, "cachePath", value.asInstanceOf[js.Any])
       

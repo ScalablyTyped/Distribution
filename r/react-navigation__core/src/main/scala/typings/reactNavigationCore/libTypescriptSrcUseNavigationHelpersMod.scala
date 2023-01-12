@@ -45,7 +45,8 @@ object libTypescriptSrcUseNavigationHelpersMod {
       __obj.asInstanceOf[Options[State, Action]]
     }
     
-    extension [Self <: Options[?, ?], State /* <: NavigationState[ParamListBase] */, Action /* <: NavigationAction */](x: Self & (Options[State, Action])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options[?, ?], State /* <: NavigationState[ParamListBase] */, Action /* <: NavigationAction */] (val x: Self & (Options[State, Action])) extends AnyVal {
       
       inline def setEmitter(value: NavigationEventEmitter[Any]): Self = StObject.set(x, "emitter", value.asInstanceOf[js.Any])
       

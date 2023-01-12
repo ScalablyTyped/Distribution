@@ -62,7 +62,8 @@ object AndroidModel {
     __obj.asInstanceOf[AndroidModel]
   }
   
-  extension [Self <: AndroidModel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AndroidModel] (val x: Self) extends AnyVal {
     
     inline def setBrand(value: String): Self = StObject.set(x, "brand", value.asInstanceOf[js.Any])
     

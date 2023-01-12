@@ -50,7 +50,8 @@ object mod {
       __obj.asInstanceOf[PurchaseItem]
     }
     
-    extension [Self <: PurchaseItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PurchaseItem] (val x: Self) extends AnyVal {
       
       inline def setId(value: String | Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -102,7 +103,8 @@ object mod {
       __obj.asInstanceOf[RestlerResult]
     }
     
-    extension [Self <: RestlerResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RestlerResult] (val x: Self) extends AnyVal {
       
       inline def setOn(
         value: (String, js.Function2[

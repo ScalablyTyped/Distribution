@@ -82,7 +82,8 @@ object sapMIllustrationPoolMod extends Shortcut {
       __obj.asInstanceOf[IllustrationPool]
     }
     
-    extension [Self <: IllustrationPool](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IllustrationPool] (val x: Self) extends AnyVal {
       
       inline def setLoadAsset(value: (String, String) => Unit): Self = StObject.set(x, "loadAsset", js.Any.fromFunction2(value))
       

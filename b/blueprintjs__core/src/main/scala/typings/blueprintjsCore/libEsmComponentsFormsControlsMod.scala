@@ -145,7 +145,8 @@ object libEsmComponentsFormsControlsMod {
       __obj.asInstanceOf[ICheckboxProps]
     }
     
-    extension [Self <: ICheckboxProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICheckboxProps] (val x: Self) extends AnyVal {
       
       inline def setDefaultIndeterminate(value: Boolean): Self = StObject.set(x, "defaultIndeterminate", value.asInstanceOf[js.Any])
       
@@ -168,7 +169,8 @@ object libEsmComponentsFormsControlsMod {
       __obj.asInstanceOf[ICheckboxState]
     }
     
-    extension [Self <: ICheckboxState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICheckboxState] (val x: Self) extends AnyVal {
       
       inline def setIndeterminate(value: Boolean): Self = StObject.set(x, "indeterminate", value.asInstanceOf[js.Any])
     }
@@ -408,7 +410,8 @@ object libEsmComponentsFormsControlsMod {
       __obj.asInstanceOf[IControlProps]
     }
     
-    extension [Self <: IControlProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IControlProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       
@@ -785,7 +788,8 @@ object libEsmComponentsFormsControlsMod {
       __obj.asInstanceOf[ISwitchProps]
     }
     
-    extension [Self <: ISwitchProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISwitchProps] (val x: Self) extends AnyVal {
       
       inline def setInnerLabel(value: String): Self = StObject.set(x, "innerLabel", value.asInstanceOf[js.Any])
       

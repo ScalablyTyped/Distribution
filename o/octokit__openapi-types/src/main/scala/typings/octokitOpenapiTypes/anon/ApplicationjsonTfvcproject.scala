@@ -17,7 +17,8 @@ object ApplicationjsonTfvcproject {
     __obj.asInstanceOf[ApplicationjsonTfvcproject]
   }
   
-  extension [Self <: ApplicationjsonTfvcproject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApplicationjsonTfvcproject] (val x: Self) extends AnyVal {
     
     inline def setApplicationSlashjson(value: Tfvcproject): Self = StObject.set(x, "application/json", value.asInstanceOf[js.Any])
   }

@@ -28,7 +28,8 @@ object RoutingStrategy {
     __obj.asInstanceOf[RoutingStrategy]
   }
   
-  extension [Self <: RoutingStrategy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RoutingStrategy] (val x: Self) extends AnyVal {
     
     inline def setFleetId(value: FleetId): Self = StObject.set(x, "FleetId", value.asInstanceOf[js.Any])
     

@@ -50,7 +50,8 @@ object IMacroResource {
     __obj.asInstanceOf[IMacroResource]
   }
   
-  extension [Self <: IMacroResource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IMacroResource] (val x: Self) extends AnyVal {
     
     inline def setGetMacroParameters(value: Double => Any): Self = StObject.set(x, "getMacroParameters", js.Any.fromFunction1(value))
     

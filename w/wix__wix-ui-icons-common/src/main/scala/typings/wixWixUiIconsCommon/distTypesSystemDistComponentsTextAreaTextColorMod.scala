@@ -27,7 +27,8 @@ object distTypesSystemDistComponentsTextAreaTextColorMod extends Shortcut {
       __obj.asInstanceOf[TextAreaTextColorProps]
     }
     
-    extension [Self <: TextAreaTextColorProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TextAreaTextColorProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

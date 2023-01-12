@@ -27,7 +27,8 @@ object argThresholdOpts {
     __obj.asInstanceOf[argThresholdOpts]
   }
   
-  extension [Self <: argThresholdOpts](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: argThresholdOpts] (val x: Self) extends AnyVal {
     
     inline def setD(value: Double): Self = StObject.set(x, "d", value.asInstanceOf[js.Any])
     

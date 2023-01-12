@@ -23,7 +23,8 @@ object CipherInfoOptions {
     __obj.asInstanceOf[CipherInfoOptions]
   }
   
-  extension [Self <: CipherInfoOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CipherInfoOptions] (val x: Self) extends AnyVal {
     
     inline def setIvLength(value: Double): Self = StObject.set(x, "ivLength", value.asInstanceOf[js.Any])
     

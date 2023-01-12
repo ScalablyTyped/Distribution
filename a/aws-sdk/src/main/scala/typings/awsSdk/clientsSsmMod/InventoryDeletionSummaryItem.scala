@@ -28,7 +28,8 @@ object InventoryDeletionSummaryItem {
     __obj.asInstanceOf[InventoryDeletionSummaryItem]
   }
   
-  extension [Self <: InventoryDeletionSummaryItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InventoryDeletionSummaryItem] (val x: Self) extends AnyVal {
     
     inline def setCount(value: ResourceCount): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     

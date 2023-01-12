@@ -23,7 +23,8 @@ object VpcAttachment {
     __obj.asInstanceOf[VpcAttachment]
   }
   
-  extension [Self <: VpcAttachment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VpcAttachment] (val x: Self) extends AnyVal {
     
     inline def setState(value: AttachmentStatus): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     

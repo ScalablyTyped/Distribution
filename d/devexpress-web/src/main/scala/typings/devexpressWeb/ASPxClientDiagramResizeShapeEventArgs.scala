@@ -33,7 +33,8 @@ object ASPxClientDiagramResizeShapeEventArgs {
     __obj.asInstanceOf[ASPxClientDiagramResizeShapeEventArgs]
   }
   
-  extension [Self <: ASPxClientDiagramResizeShapeEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientDiagramResizeShapeEventArgs] (val x: Self) extends AnyVal {
     
     inline def setNewSize(value: Any): Self = StObject.set(x, "newSize", value.asInstanceOf[js.Any])
     

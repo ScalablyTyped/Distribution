@@ -23,7 +23,8 @@ object CategoricalValues {
     __obj.asInstanceOf[CategoricalValues]
   }
   
-  extension [Self <: CategoricalValues](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CategoricalValues] (val x: Self) extends AnyVal {
     
     inline def setNumberOfCategory(value: Integer): Self = StObject.set(x, "NumberOfCategory", value.asInstanceOf[js.Any])
     

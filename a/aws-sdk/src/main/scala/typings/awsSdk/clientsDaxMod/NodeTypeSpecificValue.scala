@@ -23,7 +23,8 @@ object NodeTypeSpecificValue {
     __obj.asInstanceOf[NodeTypeSpecificValue]
   }
   
-  extension [Self <: NodeTypeSpecificValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodeTypeSpecificValue] (val x: Self) extends AnyVal {
     
     inline def setNodeType(value: String): Self = StObject.set(x, "NodeType", value.asInstanceOf[js.Any])
     

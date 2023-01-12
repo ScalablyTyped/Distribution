@@ -18,7 +18,8 @@ object GpuDeviceMemoryInfo {
     __obj.asInstanceOf[GpuDeviceMemoryInfo]
   }
   
-  extension [Self <: GpuDeviceMemoryInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GpuDeviceMemoryInfo] (val x: Self) extends AnyVal {
     
     inline def setSizeInMiB(value: GpuDeviceMemorySize): Self = StObject.set(x, "SizeInMiB", value.asInstanceOf[js.Any])
     

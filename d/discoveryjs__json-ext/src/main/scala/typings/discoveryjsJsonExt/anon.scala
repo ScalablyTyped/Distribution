@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[Async]
     }
     
-    extension [Self <: Async](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Async] (val x: Self) extends AnyVal {
       
       inline def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
       
@@ -48,7 +49,8 @@ object anon {
       __obj.asInstanceOf[Circular]
     }
     
-    extension [Self <: Circular](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Circular] (val x: Self) extends AnyVal {
       
       inline def setAsync(value: js.Array[Any]): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
       

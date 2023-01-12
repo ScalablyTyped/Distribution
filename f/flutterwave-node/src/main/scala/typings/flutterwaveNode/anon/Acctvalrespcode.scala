@@ -125,7 +125,8 @@ object Acctvalrespcode {
     __obj.asInstanceOf[Acctvalrespcode]
   }
   
-  extension [Self <: Acctvalrespcode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Acctvalrespcode] (val x: Self) extends AnyVal {
     
     inline def setAccountId(value: Double): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
     

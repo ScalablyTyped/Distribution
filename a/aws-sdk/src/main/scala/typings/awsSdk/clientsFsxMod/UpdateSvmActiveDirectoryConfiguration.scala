@@ -15,7 +15,8 @@ object UpdateSvmActiveDirectoryConfiguration {
     __obj.asInstanceOf[UpdateSvmActiveDirectoryConfiguration]
   }
   
-  extension [Self <: UpdateSvmActiveDirectoryConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateSvmActiveDirectoryConfiguration] (val x: Self) extends AnyVal {
     
     inline def setSelfManagedActiveDirectoryConfiguration(value: SelfManagedActiveDirectoryConfigurationUpdates): Self = StObject.set(x, "SelfManagedActiveDirectoryConfiguration", value.asInstanceOf[js.Any])
     

@@ -47,7 +47,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Rusha]
     }
     
-    extension [Self <: Rusha](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Rusha] (val x: Self) extends AnyVal {
       
       inline def setCreateHash(value: () => Hash): Self = StObject.set(x, "createHash", js.Any.fromFunction0(value))
       
@@ -95,7 +96,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[RushaWorkerRequest]
     }
     
-    extension [Self <: RushaWorkerRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RushaWorkerRequest] (val x: Self) extends AnyVal {
       
       inline def setData(value: String | js.Array[Double] | js.typedarray.ArrayBuffer | Buffer | Blob): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -118,7 +120,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[RushaWorkerResponse]
     }
     
-    extension [Self <: RushaWorkerResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RushaWorkerResponse] (val x: Self) extends AnyVal {
       
       inline def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
       

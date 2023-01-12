@@ -22,7 +22,8 @@ object ThemeIcons {
     __obj.asInstanceOf[ThemeIcons]
   }
   
-  extension [Self <: ThemeIcons](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ThemeIcons] (val x: Self) extends AnyVal {
     
     inline def setDark(value: ExtensionURL): Self = StObject.set(x, "dark", value.asInstanceOf[js.Any])
     

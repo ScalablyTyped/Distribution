@@ -28,7 +28,8 @@ object ListGroupsForUserRequest {
     __obj.asInstanceOf[ListGroupsForUserRequest]
   }
   
-  extension [Self <: ListGroupsForUserRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListGroupsForUserRequest] (val x: Self) extends AnyVal {
     
     inline def setMarker(value: markerType): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     

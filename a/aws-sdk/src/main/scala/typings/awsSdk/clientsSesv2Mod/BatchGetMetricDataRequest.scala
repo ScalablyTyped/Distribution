@@ -18,7 +18,8 @@ object BatchGetMetricDataRequest {
     __obj.asInstanceOf[BatchGetMetricDataRequest]
   }
   
-  extension [Self <: BatchGetMetricDataRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchGetMetricDataRequest] (val x: Self) extends AnyVal {
     
     inline def setQueries(value: BatchGetMetricDataQueries): Self = StObject.set(x, "Queries", value.asInstanceOf[js.Any])
     

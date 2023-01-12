@@ -20,7 +20,8 @@ object TaggedTemplateLiteralInvocationType {
     __obj.asInstanceOf[TaggedTemplateLiteralInvocationType[Result]]
   }
   
-  extension [Self <: TaggedTemplateLiteralInvocationType[?], Result](x: Self & TaggedTemplateLiteralInvocationType[Result]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TaggedTemplateLiteralInvocationType[?], Result] (val x: Self & TaggedTemplateLiteralInvocationType[Result]) extends AnyVal {
     
     inline def setSql(value: String): Self = StObject.set(x, "sql", value.asInstanceOf[js.Any])
     

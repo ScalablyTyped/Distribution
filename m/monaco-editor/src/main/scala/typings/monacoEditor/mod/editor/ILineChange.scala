@@ -22,7 +22,8 @@ object ILineChange {
     __obj.asInstanceOf[ILineChange]
   }
   
-  extension [Self <: ILineChange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ILineChange] (val x: Self) extends AnyVal {
     
     inline def setCharChanges(value: js.Array[ICharChange]): Self = StObject.set(x, "charChanges", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object UntrashParameters {
     __obj.asInstanceOf[UntrashParameters]
   }
   
-  extension [Self <: UntrashParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UntrashParameters] (val x: Self) extends AnyVal {
     
     inline def setFileId(value: String): Self = StObject.set(x, "fileId", value.asInstanceOf[js.Any])
     

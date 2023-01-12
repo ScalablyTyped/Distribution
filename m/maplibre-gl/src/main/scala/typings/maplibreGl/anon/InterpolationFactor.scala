@@ -29,7 +29,8 @@ object InterpolationFactor {
     __obj.asInstanceOf[InterpolationFactor]
   }
   
-  extension [Self <: InterpolationFactor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InterpolationFactor] (val x: Self) extends AnyVal {
     
     inline def setEvaluate(value: ZoomAny => Any): Self = StObject.set(x, "evaluate", js.Any.fromFunction1(value))
     

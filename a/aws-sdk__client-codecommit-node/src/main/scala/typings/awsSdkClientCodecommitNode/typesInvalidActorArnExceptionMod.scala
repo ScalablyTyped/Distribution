@@ -21,7 +21,8 @@ object typesInvalidActorArnExceptionMod {
       __obj.asInstanceOf[InvalidActorArnException]
     }
     
-    extension [Self <: InvalidActorArnException](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InvalidActorArnException] (val x: Self) extends AnyVal {
       
       inline def setName(
         value: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.InvalidActorArnException

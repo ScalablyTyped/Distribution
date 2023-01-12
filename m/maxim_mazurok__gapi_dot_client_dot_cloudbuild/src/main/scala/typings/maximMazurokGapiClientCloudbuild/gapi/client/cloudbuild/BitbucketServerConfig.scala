@@ -51,7 +51,8 @@ object BitbucketServerConfig {
     __obj.asInstanceOf[BitbucketServerConfig]
   }
   
-  extension [Self <: BitbucketServerConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BitbucketServerConfig] (val x: Self) extends AnyVal {
     
     inline def setApiKey(value: String): Self = StObject.set(x, "apiKey", value.asInstanceOf[js.Any])
     

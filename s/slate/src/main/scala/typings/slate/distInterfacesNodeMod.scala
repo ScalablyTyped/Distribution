@@ -39,7 +39,8 @@ object distInterfacesNodeMod {
       __obj.asInstanceOf[NodeAncestorsOptions]
     }
     
-    extension [Self <: NodeAncestorsOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NodeAncestorsOptions] (val x: Self) extends AnyVal {
       
       inline def setReverse(value: Boolean): Self = StObject.set(x, "reverse", value.asInstanceOf[js.Any])
       
@@ -58,7 +59,8 @@ object distInterfacesNodeMod {
       __obj.asInstanceOf[NodeChildrenOptions]
     }
     
-    extension [Self <: NodeChildrenOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NodeChildrenOptions] (val x: Self) extends AnyVal {
       
       inline def setReverse(value: Boolean): Self = StObject.set(x, "reverse", value.asInstanceOf[js.Any])
       
@@ -85,7 +87,8 @@ object distInterfacesNodeMod {
       __obj.asInstanceOf[NodeDescendantsOptions]
     }
     
-    extension [Self <: NodeDescendantsOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NodeDescendantsOptions] (val x: Self) extends AnyVal {
       
       inline def setFrom(value: Path): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       
@@ -128,7 +131,8 @@ object distInterfacesNodeMod {
       __obj.asInstanceOf[NodeElementsOptions]
     }
     
-    extension [Self <: NodeElementsOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NodeElementsOptions] (val x: Self) extends AnyVal {
       
       inline def setFrom(value: Path): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       
@@ -225,7 +229,8 @@ object distInterfacesNodeMod {
       __obj.asInstanceOf[NodeLevelsOptions]
     }
     
-    extension [Self <: NodeLevelsOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NodeLevelsOptions] (val x: Self) extends AnyVal {
       
       inline def setReverse(value: Boolean): Self = StObject.set(x, "reverse", value.asInstanceOf[js.Any])
       
@@ -252,7 +257,8 @@ object distInterfacesNodeMod {
       __obj.asInstanceOf[NodeNodesOptions]
     }
     
-    extension [Self <: NodeNodesOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NodeNodesOptions] (val x: Self) extends AnyVal {
       
       inline def setFrom(value: Path): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       
@@ -297,7 +303,8 @@ object distInterfacesNodeMod {
       __obj.asInstanceOf[NodeTextsOptions]
     }
     
-    extension [Self <: NodeTextsOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NodeTextsOptions] (val x: Self) extends AnyVal {
       
       inline def setFrom(value: Path): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       

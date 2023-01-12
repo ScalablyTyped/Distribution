@@ -19,7 +19,8 @@ object GooglePrivacyDlpV2Error {
     __obj.asInstanceOf[GooglePrivacyDlpV2Error]
   }
   
-  extension [Self <: GooglePrivacyDlpV2Error](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GooglePrivacyDlpV2Error] (val x: Self) extends AnyVal {
     
     inline def setDetails(value: GoogleRpcStatus): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
     

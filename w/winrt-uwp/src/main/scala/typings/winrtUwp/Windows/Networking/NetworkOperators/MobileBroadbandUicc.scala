@@ -27,7 +27,8 @@ object MobileBroadbandUicc {
     __obj.asInstanceOf[MobileBroadbandUicc]
   }
   
-  extension [Self <: MobileBroadbandUicc](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MobileBroadbandUicc] (val x: Self) extends AnyVal {
     
     inline def setGetUiccAppsAsync(value: () => IPromiseWithIAsyncOperation[MobileBroadbandUiccAppsResult]): Self = StObject.set(x, "getUiccAppsAsync", js.Any.fromFunction0(value))
     

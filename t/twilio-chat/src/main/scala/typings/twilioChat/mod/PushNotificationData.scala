@@ -31,7 +31,8 @@ object PushNotificationData {
     __obj.asInstanceOf[PushNotificationData]
   }
   
-  extension [Self <: PushNotificationData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PushNotificationData] (val x: Self) extends AnyVal {
     
     inline def setConversationSid(value: String): Self = StObject.set(x, "conversationSid", value.asInstanceOf[js.Any])
     

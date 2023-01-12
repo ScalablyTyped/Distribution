@@ -28,7 +28,8 @@ object CurrentTimeNode {
     __obj.asInstanceOf[CurrentTimeNode]
   }
   
-  extension [Self <: CurrentTimeNode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CurrentTimeNode] (val x: Self) extends AnyVal {
     
     inline def setMode(value: timestamp | date): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     

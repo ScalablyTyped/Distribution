@@ -17,7 +17,8 @@ object CountryRecord {
     __obj.asInstanceOf[CountryRecord]
   }
   
-  extension [Self <: CountryRecord](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CountryRecord] (val x: Self) extends AnyVal {
     
     inline def setConfidence(value: Double): Self = StObject.set(x, "confidence", value.asInstanceOf[js.Any])
     

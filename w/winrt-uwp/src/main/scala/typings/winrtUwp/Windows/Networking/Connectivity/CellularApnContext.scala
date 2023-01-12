@@ -39,7 +39,8 @@ object CellularApnContext {
     __obj.asInstanceOf[CellularApnContext]
   }
   
-  extension [Self <: CellularApnContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CellularApnContext] (val x: Self) extends AnyVal {
     
     inline def setAccessPointName(value: String): Self = StObject.set(x, "accessPointName", value.asInstanceOf[js.Any])
     

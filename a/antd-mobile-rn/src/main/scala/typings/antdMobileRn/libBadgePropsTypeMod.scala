@@ -27,7 +27,8 @@ object libBadgePropsTypeMod {
       __obj.asInstanceOf[BadgePropsTypes]
     }
     
-    extension [Self <: BadgePropsTypes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BadgePropsTypes] (val x: Self) extends AnyVal {
       
       inline def setCorner(value: Boolean): Self = StObject.set(x, "corner", value.asInstanceOf[js.Any])
       

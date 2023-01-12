@@ -15,7 +15,8 @@ object PrivateStepConfig {
     __obj.asInstanceOf[PrivateStepConfig]
   }
   
-  extension [Self <: PrivateStepConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PrivateStepConfig] (val x: Self) extends AnyVal {
     
     inline def setSkip(value: Boolean): Self = StObject.set(x, "skip", value.asInstanceOf[js.Any])
     

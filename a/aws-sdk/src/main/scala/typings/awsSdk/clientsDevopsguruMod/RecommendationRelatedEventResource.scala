@@ -23,7 +23,8 @@ object RecommendationRelatedEventResource {
     __obj.asInstanceOf[RecommendationRelatedEventResource]
   }
   
-  extension [Self <: RecommendationRelatedEventResource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecommendationRelatedEventResource] (val x: Self) extends AnyVal {
     
     inline def setName(value: RecommendationRelatedEventResourceName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     

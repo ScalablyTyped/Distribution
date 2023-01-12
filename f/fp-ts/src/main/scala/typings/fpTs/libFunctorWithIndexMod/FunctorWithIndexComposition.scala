@@ -24,7 +24,8 @@ object FunctorWithIndexComposition {
     __obj.asInstanceOf[FunctorWithIndexComposition[F, FI, G, GI]]
   }
   
-  extension [Self <: FunctorWithIndexComposition[?, ?, ?, ?], F, FI, G, GI](x: Self & (FunctorWithIndexComposition[F, FI, G, GI])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FunctorWithIndexComposition[?, ?, ?, ?], F, FI, G, GI] (val x: Self & (FunctorWithIndexComposition[F, FI, G, GI])) extends AnyVal {
     
     inline def setMapWithIndex(
       value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, HKT<G, A>> */ Any, js.Function2[/* i */ js.Tuple2[FI, GI], Any, Any]) => Any

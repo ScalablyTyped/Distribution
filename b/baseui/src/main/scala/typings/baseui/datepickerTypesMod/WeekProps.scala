@@ -79,7 +79,8 @@ object WeekProps {
     __obj.asInstanceOf[WeekProps[T]]
   }
   
-  extension [Self <: WeekProps[?], T](x: Self & WeekProps[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WeekProps[?], T] (val x: Self & WeekProps[T]) extends AnyVal {
     
     inline def setAdapter(value: DateIOAdapter[T]): Self = StObject.set(x, "adapter", value.asInstanceOf[js.Any])
     

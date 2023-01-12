@@ -23,7 +23,8 @@ object TransitGatewayRegistrationStateReason {
     __obj.asInstanceOf[TransitGatewayRegistrationStateReason]
   }
   
-  extension [Self <: TransitGatewayRegistrationStateReason](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransitGatewayRegistrationStateReason] (val x: Self) extends AnyVal {
     
     inline def setCode(value: TransitGatewayRegistrationState): Self = StObject.set(x, "Code", value.asInstanceOf[js.Any])
     

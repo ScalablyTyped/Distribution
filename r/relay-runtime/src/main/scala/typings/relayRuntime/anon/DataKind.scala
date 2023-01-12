@@ -21,7 +21,8 @@ object DataKind {
     __obj.asInstanceOf[DataKind[T]]
   }
   
-  extension [Self <: DataKind[?], T](x: Self & DataKind[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataKind[?], T] (val x: Self & DataKind[T]) extends AnyVal {
     
     inline def setData(value: T): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

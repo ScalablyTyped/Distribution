@@ -22,7 +22,8 @@ object anon {
       __obj.asInstanceOf[DictcustomModuleName]
     }
     
-    extension [Self <: DictcustomModuleName](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DictcustomModuleName] (val x: Self) extends AnyVal {
       
       inline def setHome(value: DrawflowModuleData): Self = StObject.set(x, "Home", value.asInstanceOf[js.Any])
     }

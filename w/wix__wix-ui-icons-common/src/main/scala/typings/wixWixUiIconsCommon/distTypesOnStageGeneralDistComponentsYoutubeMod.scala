@@ -27,7 +27,8 @@ object distTypesOnStageGeneralDistComponentsYoutubeMod extends Shortcut {
       __obj.asInstanceOf[YoutubeProps]
     }
     
-    extension [Self <: YoutubeProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: YoutubeProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

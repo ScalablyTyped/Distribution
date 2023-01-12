@@ -27,7 +27,8 @@ object ResourceServer {
     __obj.asInstanceOf[ResourceServer]
   }
   
-  extension [Self <: ResourceServer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResourceServer] (val x: Self) extends AnyVal {
     
     inline def setAccessTokenFormat(value: TokenFormat): Self = StObject.set(x, "accessTokenFormat", value.asInstanceOf[js.Any])
     

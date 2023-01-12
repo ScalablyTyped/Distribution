@@ -102,7 +102,8 @@ object DirectionPointProperties {
     __obj.asInstanceOf[DirectionPointProperties]
   }
   
-  extension [Self <: DirectionPointProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DirectionPointProperties] (val x: Self) extends AnyVal {
     
     inline def setArrivalTime(value: DateProperties): Self = StObject.set(x, "arrivalTime", value.asInstanceOf[js.Any])
     

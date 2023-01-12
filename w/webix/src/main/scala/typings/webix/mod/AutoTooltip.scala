@@ -23,7 +23,8 @@ object AutoTooltip {
   @js.native
   val ^ : AutoTooltip = js.native
   
-  extension [Self <: AutoTooltip](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AutoTooltip] (val x: Self) extends AnyVal {
     
     inline def set$tooltipIn(value: HTMLElement => HTMLElement): Self = StObject.set(x, "$tooltipIn", js.Any.fromFunction1(value))
     

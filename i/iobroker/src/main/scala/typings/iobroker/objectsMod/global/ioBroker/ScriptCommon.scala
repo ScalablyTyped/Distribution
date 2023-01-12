@@ -55,7 +55,8 @@ object ScriptCommon {
     __obj.asInstanceOf[ScriptCommon]
   }
   
-  extension [Self <: ScriptCommon](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScriptCommon] (val x: Self) extends AnyVal {
     
     inline def setCompiled(value: String): Self = StObject.set(x, "compiled", value.asInstanceOf[js.Any])
     

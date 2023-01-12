@@ -135,7 +135,8 @@ object mod {
       __obj.asInstanceOf[ByteRange]
     }
     
-    extension [Self <: ByteRange](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ByteRange] (val x: Self) extends AnyVal {
       
       inline def setFrom(value: Double): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       
@@ -172,7 +173,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setCache(value: Double | Boolean): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
       

@@ -38,7 +38,8 @@ object mod {
       __obj.asInstanceOf[ModalFilterPickerOption]
     }
     
-    extension [Self <: ModalFilterPickerOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ModalFilterPickerOption] (val x: Self) extends AnyVal {
       
       inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
@@ -114,7 +115,8 @@ object mod {
       __obj.asInstanceOf[ModalFilterPickerProps[T]]
     }
     
-    extension [Self <: ModalFilterPickerProps[?], T /* <: ModalFilterPickerOption */](x: Self & ModalFilterPickerProps[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ModalFilterPickerProps[?], T /* <: ModalFilterPickerOption */] (val x: Self & ModalFilterPickerProps[T]) extends AnyVal {
       
       inline def setAndroidUnderlineColor(value: String): Self = StObject.set(x, "androidUnderlineColor", value.asInstanceOf[js.Any])
       

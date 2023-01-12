@@ -39,7 +39,8 @@ object LViewDebugRange {
     __obj.asInstanceOf[LViewDebugRange]
   }
   
-  extension [Self <: LViewDebugRange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LViewDebugRange] (val x: Self) extends AnyVal {
     
     inline def setContent(value: js.Array[LViewDebugRangeContent]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     

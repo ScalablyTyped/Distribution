@@ -18,7 +18,8 @@ object CancelCertificateTransferRequest {
     __obj.asInstanceOf[CancelCertificateTransferRequest]
   }
   
-  extension [Self <: CancelCertificateTransferRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CancelCertificateTransferRequest] (val x: Self) extends AnyVal {
     
     inline def setCertificateId(value: CertificateId): Self = StObject.set(x, "certificateId", value.asInstanceOf[js.Any])
   }

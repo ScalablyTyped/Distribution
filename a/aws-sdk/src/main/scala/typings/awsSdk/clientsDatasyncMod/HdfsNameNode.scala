@@ -23,7 +23,8 @@ object HdfsNameNode {
     __obj.asInstanceOf[HdfsNameNode]
   }
   
-  extension [Self <: HdfsNameNode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HdfsNameNode] (val x: Self) extends AnyVal {
     
     inline def setHostname(value: HdfsServerHostname): Self = StObject.set(x, "Hostname", value.asInstanceOf[js.Any])
     

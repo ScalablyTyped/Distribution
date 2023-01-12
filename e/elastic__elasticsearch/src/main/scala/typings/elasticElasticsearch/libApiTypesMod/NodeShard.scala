@@ -32,7 +32,8 @@ object NodeShard {
     __obj.asInstanceOf[NodeShard]
   }
   
-  extension [Self <: NodeShard](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodeShard] (val x: Self) extends AnyVal {
     
     inline def setAllocation_id(value: Record[String, Id]): Self = StObject.set(x, "allocation_id", value.asInstanceOf[js.Any])
     

@@ -62,7 +62,8 @@ object AppflowIntegrationWorkflowStep {
     __obj.asInstanceOf[AppflowIntegrationWorkflowStep]
   }
   
-  extension [Self <: AppflowIntegrationWorkflowStep](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppflowIntegrationWorkflowStep] (val x: Self) extends AnyVal {
     
     inline def setBatchRecordsEndTime(value: string1To255): Self = StObject.set(x, "BatchRecordsEndTime", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object ContactConnectedServiceAccount {
     __obj.asInstanceOf[ContactConnectedServiceAccount]
   }
   
-  extension [Self <: ContactConnectedServiceAccount](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContactConnectedServiceAccount] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

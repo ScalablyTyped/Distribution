@@ -20,7 +20,8 @@ object distServicesAabbInterfacesMod {
     @js.native
     val ^ : DefinedToken = js.native
     
-    extension [Self <: GeometryAABBUpdater[?], T /* <: ParsedBaseStyleProps */](x: Self & GeometryAABBUpdater[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GeometryAABBUpdater[?], T /* <: ParsedBaseStyleProps */] (val x: Self & GeometryAABBUpdater[T]) extends AnyVal {
       
       inline def setUpdate(value: (T, DisplayObject[Any, Any]) => Depth): Self = StObject.set(x, "update", js.Any.fromFunction2(value))
     }

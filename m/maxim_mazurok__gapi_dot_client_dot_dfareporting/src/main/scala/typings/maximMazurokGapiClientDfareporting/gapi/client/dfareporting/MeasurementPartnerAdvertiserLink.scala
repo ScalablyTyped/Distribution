@@ -22,7 +22,8 @@ object MeasurementPartnerAdvertiserLink {
     __obj.asInstanceOf[MeasurementPartnerAdvertiserLink]
   }
   
-  extension [Self <: MeasurementPartnerAdvertiserLink](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MeasurementPartnerAdvertiserLink] (val x: Self) extends AnyVal {
     
     inline def setLinkStatus(value: String): Self = StObject.set(x, "linkStatus", value.asInstanceOf[js.Any])
     

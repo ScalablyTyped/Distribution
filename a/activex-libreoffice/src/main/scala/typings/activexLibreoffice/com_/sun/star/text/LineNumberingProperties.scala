@@ -64,7 +64,8 @@ object LineNumberingProperties {
     __obj.asInstanceOf[LineNumberingProperties]
   }
   
-  extension [Self <: LineNumberingProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LineNumberingProperties] (val x: Self) extends AnyVal {
     
     inline def setCharStyleName(value: String): Self = StObject.set(x, "CharStyleName", value.asInstanceOf[js.Any])
     

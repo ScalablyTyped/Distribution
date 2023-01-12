@@ -23,7 +23,8 @@ object CapacityUnitsConfiguration {
     __obj.asInstanceOf[CapacityUnitsConfiguration]
   }
   
-  extension [Self <: CapacityUnitsConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CapacityUnitsConfiguration] (val x: Self) extends AnyVal {
     
     inline def setQueryCapacityUnits(value: QueryCapacityUnit): Self = StObject.set(x, "QueryCapacityUnits", value.asInstanceOf[js.Any])
     

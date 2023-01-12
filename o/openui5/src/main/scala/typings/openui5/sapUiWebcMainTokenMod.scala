@@ -375,7 +375,8 @@ object sapUiWebcMainTokenMod {
       __obj.asInstanceOf[TokenSettings]
     }
     
-    extension [Self <: TokenSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TokenSettings] (val x: Self) extends AnyVal {
       
       inline def setCloseIcon(value: IIcon): Self = StObject.set(x, "closeIcon", value.asInstanceOf[js.Any])
       

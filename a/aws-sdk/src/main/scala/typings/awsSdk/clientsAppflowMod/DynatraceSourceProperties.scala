@@ -19,7 +19,8 @@ object DynatraceSourceProperties {
     __obj.asInstanceOf[DynatraceSourceProperties]
   }
   
-  extension [Self <: DynatraceSourceProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DynatraceSourceProperties] (val x: Self) extends AnyVal {
     
     inline def setObject(value: Object): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
   }

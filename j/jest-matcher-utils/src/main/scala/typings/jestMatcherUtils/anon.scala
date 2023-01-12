@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[ReplacedExpected]
     }
     
-    extension [Self <: ReplacedExpected](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReplacedExpected] (val x: Self) extends AnyVal {
       
       inline def setReplacedExpected(value: Any): Self = StObject.set(x, "replacedExpected", value.asInstanceOf[js.Any])
       

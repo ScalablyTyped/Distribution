@@ -27,7 +27,8 @@ object distSrcSystemDistComponentsToggleOffMod extends Shortcut {
       __obj.asInstanceOf[ToggleOffProps]
     }
     
-    extension [Self <: ToggleOffProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ToggleOffProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

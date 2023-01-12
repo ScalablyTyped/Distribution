@@ -15,7 +15,8 @@ object Dismantle {
     __obj.asInstanceOf[Dismantle]
   }
   
-  extension [Self <: Dismantle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Dismantle] (val x: Self) extends AnyVal {
     
     inline def setDismantle(value: typings.screeps.screepsInts.`2`): Self = StObject.set(x, "dismantle", value.asInstanceOf[js.Any])
   }

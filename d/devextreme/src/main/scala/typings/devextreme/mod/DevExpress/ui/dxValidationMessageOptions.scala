@@ -27,7 +27,8 @@ object dxValidationMessageOptions {
     __obj.asInstanceOf[dxValidationMessageOptions]
   }
   
-  extension [Self <: dxValidationMessageOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxValidationMessageOptions] (val x: Self) extends AnyVal {
     
     inline def setBoundary(value: String | UserDefinedElement[Element]): Self = StObject.set(x, "boundary", value.asInstanceOf[js.Any])
     

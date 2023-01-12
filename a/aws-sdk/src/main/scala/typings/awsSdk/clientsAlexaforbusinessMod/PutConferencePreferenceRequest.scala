@@ -18,7 +18,8 @@ object PutConferencePreferenceRequest {
     __obj.asInstanceOf[PutConferencePreferenceRequest]
   }
   
-  extension [Self <: PutConferencePreferenceRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutConferencePreferenceRequest] (val x: Self) extends AnyVal {
     
     inline def setConferencePreference(value: ConferencePreference): Self = StObject.set(x, "ConferencePreference", value.asInstanceOf[js.Any])
   }

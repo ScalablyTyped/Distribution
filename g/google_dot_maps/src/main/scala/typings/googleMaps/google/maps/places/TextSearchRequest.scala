@@ -79,7 +79,8 @@ object TextSearchRequest {
     __obj.asInstanceOf[TextSearchRequest]
   }
   
-  extension [Self <: TextSearchRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextSearchRequest] (val x: Self) extends AnyVal {
     
     inline def setBounds(value: LatLngBounds | LatLngBoundsLiteral): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
     

@@ -38,7 +38,8 @@ object CreateFolderMembershipRequest {
     __obj.asInstanceOf[CreateFolderMembershipRequest]
   }
   
-  extension [Self <: CreateFolderMembershipRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateFolderMembershipRequest] (val x: Self) extends AnyVal {
     
     inline def setAwsAccountId(value: AwsAccountId): Self = StObject.set(x, "AwsAccountId", value.asInstanceOf[js.Any])
     

@@ -58,7 +58,8 @@ object EndpointSetting {
     __obj.asInstanceOf[EndpointSetting]
   }
   
-  extension [Self <: EndpointSetting](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EndpointSetting] (val x: Self) extends AnyVal {
     
     inline def setApplicability(value: String): Self = StObject.set(x, "Applicability", value.asInstanceOf[js.Any])
     

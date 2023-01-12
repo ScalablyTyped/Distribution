@@ -23,7 +23,8 @@ object RevokeVpcEndpointAccessRequest {
     __obj.asInstanceOf[RevokeVpcEndpointAccessRequest]
   }
   
-  extension [Self <: RevokeVpcEndpointAccessRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RevokeVpcEndpointAccessRequest] (val x: Self) extends AnyVal {
     
     inline def setAccount(value: AWSAccount): Self = StObject.set(x, "Account", value.asInstanceOf[js.Any])
     

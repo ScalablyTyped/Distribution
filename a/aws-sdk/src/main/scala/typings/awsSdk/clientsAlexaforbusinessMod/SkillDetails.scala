@@ -63,7 +63,8 @@ object SkillDetails {
     __obj.asInstanceOf[SkillDetails]
   }
   
-  extension [Self <: SkillDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SkillDetails] (val x: Self) extends AnyVal {
     
     inline def setBulletPoints(value: BulletPoints): Self = StObject.set(x, "BulletPoints", value.asInstanceOf[js.Any])
     

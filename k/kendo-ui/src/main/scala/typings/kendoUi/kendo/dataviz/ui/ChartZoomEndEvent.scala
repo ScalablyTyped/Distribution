@@ -19,7 +19,8 @@ object ChartZoomEndEvent {
     __obj.asInstanceOf[ChartZoomEndEvent]
   }
   
-  extension [Self <: ChartZoomEndEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChartZoomEndEvent] (val x: Self) extends AnyVal {
     
     inline def setAxisRanges(value: Any): Self = StObject.set(x, "axisRanges", value.asInstanceOf[js.Any])
     

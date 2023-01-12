@@ -23,7 +23,8 @@ object PageRanges {
     __obj.asInstanceOf[PageRanges]
   }
   
-  extension [Self <: PageRanges](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PageRanges] (val x: Self) extends AnyVal {
     
     inline def setFrom(value: Double): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     

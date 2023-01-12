@@ -25,7 +25,8 @@ object MedicinalProductDefinitionCrossReference {
     __obj.asInstanceOf[MedicinalProductDefinitionCrossReference]
   }
   
-  extension [Self <: MedicinalProductDefinitionCrossReference](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MedicinalProductDefinitionCrossReference] (val x: Self) extends AnyVal {
     
     inline def setProduct(value: CodeableReference): Self = StObject.set(x, "product", value.asInstanceOf[js.Any])
     

@@ -64,7 +64,8 @@ object componentsChipChipMod {
       __obj.asInstanceOf[ChipProps]
     }
     
-    extension [Self <: ChipProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChipProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -123,7 +124,8 @@ object componentsChipChipMod {
       __obj.asInstanceOf[ChipTheme]
     }
     
-    extension [Self <: ChipTheme](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChipTheme] (val x: Self) extends AnyVal {
       
       inline def setAvatar(value: String): Self = StObject.set(x, "avatar", value.asInstanceOf[js.Any])
       

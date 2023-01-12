@@ -159,7 +159,8 @@ object sizeCreateVisualVariablesParams {
     __obj.asInstanceOf[sizeCreateVisualVariablesParams]
   }
   
-  extension [Self <: sizeCreateVisualVariablesParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: sizeCreateVisualVariablesParams] (val x: Self) extends AnyVal {
     
     inline def setAxis(value: all | height): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
     

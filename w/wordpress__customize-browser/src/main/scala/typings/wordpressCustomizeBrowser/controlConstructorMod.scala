@@ -65,7 +65,8 @@ object controlConstructorMod {
       __obj.asInstanceOf[ControlConstructor]
     }
     
-    extension [Self <: ControlConstructor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ControlConstructor] (val x: Self) extends AnyVal {
       
       inline def setBackground(value: Instantiable0[BackgroundControl]): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
       

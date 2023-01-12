@@ -25,7 +25,8 @@ object HistogramQueryResult {
     __obj.asInstanceOf[HistogramQueryResult]
   }
   
-  extension [Self <: HistogramQueryResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HistogramQueryResult] (val x: Self) extends AnyVal {
     
     inline def setHistogram(
       value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any

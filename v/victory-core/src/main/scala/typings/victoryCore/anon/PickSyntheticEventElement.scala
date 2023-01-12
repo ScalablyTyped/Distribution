@@ -20,7 +20,8 @@ object PickSyntheticEventElement {
     __obj.asInstanceOf[PickSyntheticEventElement]
   }
   
-  extension [Self <: PickSyntheticEventElement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickSyntheticEventElement] (val x: Self) extends AnyVal {
     
     inline def setNativeEvent(value: Event): Self = StObject.set(x, "nativeEvent", value.asInstanceOf[js.Any])
     

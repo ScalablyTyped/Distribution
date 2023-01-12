@@ -34,7 +34,8 @@ object DimensionMetadata {
     __obj.asInstanceOf[DimensionMetadata]
   }
   
-  extension [Self <: DimensionMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DimensionMetadata] (val x: Self) extends AnyVal {
     
     inline def setApiName(value: String): Self = StObject.set(x, "apiName", value.asInstanceOf[js.Any])
     

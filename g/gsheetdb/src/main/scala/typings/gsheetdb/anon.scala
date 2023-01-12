@@ -20,7 +20,8 @@ object anon {
       __obj.asInstanceOf[RowNb]
     }
     
-    extension [Self <: RowNb](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RowNb] (val x: Self) extends AnyVal {
       
       inline def setRowNb(value: Double): Self = StObject.set(x, "rowNb", value.asInstanceOf[js.Any])
       

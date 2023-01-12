@@ -23,7 +23,8 @@ object GetItemPropsOptions {
     __obj.asInstanceOf[GetItemPropsOptions[Item]]
   }
   
-  extension [Self <: GetItemPropsOptions[?], Item](x: Self & GetItemPropsOptions[Item]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetItemPropsOptions[?], Item] (val x: Self & GetItemPropsOptions[Item]) extends AnyVal {
     
     inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     

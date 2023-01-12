@@ -49,7 +49,8 @@ object DeveloperMetadataLookup {
     __obj.asInstanceOf[DeveloperMetadataLookup]
   }
   
-  extension [Self <: DeveloperMetadataLookup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeveloperMetadataLookup] (val x: Self) extends AnyVal {
     
     inline def setLocationMatchingStrategy(value: String): Self = StObject.set(x, "locationMatchingStrategy", value.asInstanceOf[js.Any])
     

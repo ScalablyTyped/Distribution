@@ -42,7 +42,8 @@ object PrinterInfo {
     __obj.asInstanceOf[PrinterInfo]
   }
   
-  extension [Self <: PrinterInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PrinterInfo] (val x: Self) extends AnyVal {
     
     inline def setIsAutoCutSupported(value: Boolean): Self = StObject.set(x, "isAutoCutSupported", value.asInstanceOf[js.Any])
     

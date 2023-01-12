@@ -18,7 +18,8 @@ object Flagged {
     __obj.asInstanceOf[Flagged]
   }
   
-  extension [Self <: Flagged](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Flagged] (val x: Self) extends AnyVal {
     
     inline def setFlagged(value: Boolean): Self = StObject.set(x, "flagged", value.asInstanceOf[js.Any])
     

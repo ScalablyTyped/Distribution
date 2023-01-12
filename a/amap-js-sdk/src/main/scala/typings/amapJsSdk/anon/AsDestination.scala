@@ -42,7 +42,8 @@ object AsDestination {
     __obj.asInstanceOf[AsDestination]
   }
   
-  extension [Self <: AsDestination](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AsDestination] (val x: Self) extends AnyVal {
     
     inline def setAsDestination(value: Boolean): Self = StObject.set(x, "asDestination", value.asInstanceOf[js.Any])
     

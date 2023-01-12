@@ -33,7 +33,8 @@ object WordWrap {
     __obj.asInstanceOf[WordWrap]
   }
   
-  extension [Self <: WordWrap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WordWrap] (val x: Self) extends AnyVal {
     
     inline def setFont(value: typings.devextreme.mod.DevExpress.viz.Font): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
     

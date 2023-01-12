@@ -62,7 +62,8 @@ object Rule {
     __obj.asInstanceOf[Rule]
   }
   
-  extension [Self <: Rule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Rule] (val x: Self) extends AnyVal {
     
     inline def setCreated_at(
       value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['alert-created-at'] */ js.Any

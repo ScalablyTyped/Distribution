@@ -37,7 +37,8 @@ object mod {
       __obj.asInstanceOf[Error]
     }
     
-    extension [Self <: Error](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Error] (val x: Self) extends AnyVal {
       
       inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
@@ -70,7 +71,8 @@ object mod {
       __obj.asInstanceOf[GitInfo]
     }
     
-    extension [Self <: GitInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GitInfo] (val x: Self) extends AnyVal {
       
       inline def setAccount(value: String): Self = StObject.set(x, "account", value.asInstanceOf[js.Any])
       
@@ -111,7 +113,8 @@ object mod {
       __obj.asInstanceOf[Package]
     }
     
-    extension [Self <: Package](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Package] (val x: Self) extends AnyVal {
       
       inline def setDependencies(value: StringDictionary[String]): Self = StObject.set(x, "dependencies", value.asInstanceOf[js.Any])
       
@@ -177,7 +180,8 @@ object mod {
       __obj.asInstanceOf[Props]
     }
     
-    extension [Self <: Props](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
       
       inline def setAfterDeploy(value: (/* sandboxUrl */ String, /* sandboxId */ String) => Any): Self = StObject.set(x, "afterDeploy", js.Any.fromFunction2(value))
       
@@ -284,7 +288,8 @@ object mod {
       __obj.asInstanceOf[State]
     }
     
-    extension [Self <: State](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: State] (val x: Self) extends AnyVal {
       
       inline def setDeployPromise(value: js.Promise[Any]): Self = StObject.set(x, "deployPromise", value.asInstanceOf[js.Any])
       

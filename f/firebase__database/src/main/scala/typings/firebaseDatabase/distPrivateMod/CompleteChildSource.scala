@@ -28,7 +28,8 @@ object CompleteChildSource {
     __obj.asInstanceOf[CompleteChildSource]
   }
   
-  extension [Self <: CompleteChildSource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CompleteChildSource] (val x: Self) extends AnyVal {
     
     inline def setGetChildAfterChild(value: (Index, NamedNode, Boolean) => NamedNode | Null): Self = StObject.set(x, "getChildAfterChild", js.Any.fromFunction3(value))
     

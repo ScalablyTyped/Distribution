@@ -28,7 +28,8 @@ object ListGroupsForUserResponse {
     __obj.asInstanceOf[ListGroupsForUserResponse]
   }
   
-  extension [Self <: ListGroupsForUserResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListGroupsForUserResponse] (val x: Self) extends AnyVal {
     
     inline def setGroups(value: groupListType): Self = StObject.set(x, "Groups", value.asInstanceOf[js.Any])
     

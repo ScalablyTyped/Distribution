@@ -121,7 +121,8 @@ object b2PrismaticJoint {
     __obj.asInstanceOf[b2PrismaticJoint]
   }
   
-  extension [Self <: b2PrismaticJoint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: b2PrismaticJoint] (val x: Self) extends AnyVal {
     
     inline def setEnableLimit(value: Boolean => Unit): Self = StObject.set(x, "EnableLimit", js.Any.fromFunction1(value))
     

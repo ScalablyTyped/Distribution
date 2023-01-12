@@ -51,7 +51,8 @@ object esPanelsMonthPanelMonthBodyMod {
       __obj.asInstanceOf[MonthBodyProps[DateType]]
     }
     
-    extension [Self <: MonthBodyProps[?], DateType](x: Self & MonthBodyProps[DateType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MonthBodyProps[?], DateType] (val x: Self & MonthBodyProps[DateType]) extends AnyVal {
       
       inline def setDisabledDate(value: /* date */ DateType => Boolean): Self = StObject.set(x, "disabledDate", js.Any.fromFunction1(value))
       

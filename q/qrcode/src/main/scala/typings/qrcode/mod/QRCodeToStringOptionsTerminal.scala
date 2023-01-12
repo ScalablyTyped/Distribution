@@ -30,7 +30,8 @@ object QRCodeToStringOptionsTerminal {
     __obj.asInstanceOf[QRCodeToStringOptionsTerminal]
   }
   
-  extension [Self <: QRCodeToStringOptionsTerminal](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QRCodeToStringOptionsTerminal] (val x: Self) extends AnyVal {
     
     inline def setSmall(value: Boolean): Self = StObject.set(x, "small", value.asInstanceOf[js.Any])
     

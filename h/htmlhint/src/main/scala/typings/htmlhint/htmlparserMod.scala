@@ -34,7 +34,8 @@ object htmlparserMod {
       __obj.asInstanceOf[Attr]
     }
     
-    extension [Self <: Attr](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Attr] (val x: Self) extends AnyVal {
       
       inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
@@ -91,7 +92,8 @@ object htmlparserMod {
       __obj.asInstanceOf[Block]
     }
     
-    extension [Self <: Block](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Block] (val x: Self) extends AnyVal {
       
       inline def setAttrs(value: js.Array[Attr]): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
       

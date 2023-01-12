@@ -18,7 +18,8 @@ object PartialSig {
     __obj.asInstanceOf[PartialSig]
   }
   
-  extension [Self <: PartialSig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialSig] (val x: Self) extends AnyVal {
     
     inline def setPubkey(value: Buffer): Self = StObject.set(x, "pubkey", value.asInstanceOf[js.Any])
     

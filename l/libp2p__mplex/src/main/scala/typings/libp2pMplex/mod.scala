@@ -58,7 +58,8 @@ object mod {
       __obj.asInstanceOf[MplexInit]
     }
     
-    extension [Self <: MplexInit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MplexInit] (val x: Self) extends AnyVal {
       
       inline def setDisconnectThreshold(value: Double): Self = StObject.set(x, "disconnectThreshold", value.asInstanceOf[js.Any])
       

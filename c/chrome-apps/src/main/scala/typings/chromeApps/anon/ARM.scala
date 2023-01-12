@@ -28,7 +28,8 @@ object ARM {
     __obj.asInstanceOf[ARM]
   }
   
-  extension [Self <: ARM](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ARM] (val x: Self) extends AnyVal {
     
     inline def setARM(value: arm_): Self = StObject.set(x, "ARM", value.asInstanceOf[js.Any])
     

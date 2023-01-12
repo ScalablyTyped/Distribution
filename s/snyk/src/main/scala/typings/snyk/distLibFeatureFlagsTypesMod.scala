@@ -23,7 +23,8 @@ object distLibFeatureFlagsTypesMod {
       __obj.asInstanceOf[OrgFeatureFlagResponse]
     }
     
-    extension [Self <: OrgFeatureFlagResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OrgFeatureFlagResponse] (val x: Self) extends AnyVal {
       
       inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       

@@ -21,7 +21,8 @@ object EventCall {
     __obj.asInstanceOf[EventCall[T]]
   }
   
-  extension [Self <: EventCall[?], T](x: Self & EventCall[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventCall[?], T] (val x: Self & EventCall[T]) extends AnyVal {
     
     inline def setHeaders(value: EventHttpHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     

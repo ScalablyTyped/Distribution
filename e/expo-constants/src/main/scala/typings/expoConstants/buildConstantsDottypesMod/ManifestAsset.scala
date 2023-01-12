@@ -15,7 +15,8 @@ object ManifestAsset {
     __obj.asInstanceOf[ManifestAsset]
   }
   
-  extension [Self <: ManifestAsset](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ManifestAsset] (val x: Self) extends AnyVal {
     
     inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }

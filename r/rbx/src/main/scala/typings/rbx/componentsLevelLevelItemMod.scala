@@ -78,7 +78,8 @@ object componentsLevelLevelItemMod {
       __obj.asInstanceOf[LevelItemModifierProps]
     }
     
-    extension [Self <: LevelItemModifierProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LevelItemModifierProps] (val x: Self) extends AnyVal {
       
       inline def setAlign(value: left | right): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       
@@ -172,7 +173,8 @@ object componentsLevelLevelItemMod {
       __obj.asInstanceOf[LevelItemProps]
     }
     
-    extension [Self <: LevelItemProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LevelItemProps] (val x: Self) extends AnyVal {
       
       inline def setAlign(value: left | right): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       
@@ -328,7 +330,8 @@ object componentsLevelLevelItemMod {
       __obj.asInstanceOf[LevelItemVariables]
     }
     
-    extension [Self <: LevelItemVariables](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LevelItemVariables] (val x: Self) extends AnyVal {
       
       inline def setAlignments(value: left | right): Self = StObject.set(x, "alignments", value.asInstanceOf[js.Any])
     }
@@ -345,7 +348,8 @@ object componentsLevelLevelItemMod {
       __obj.asInstanceOf[LevelItemVariablesDefaults]
     }
     
-    extension [Self <: LevelItemVariablesDefaults](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LevelItemVariablesDefaults] (val x: Self) extends AnyVal {
       
       inline def setAlignments(value: left | right): Self = StObject.set(x, "alignments", value.asInstanceOf[js.Any])
     }

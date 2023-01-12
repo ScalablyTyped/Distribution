@@ -32,7 +32,8 @@ object TableBackground {
     __obj.asInstanceOf[TableBackground]
   }
   
-  extension [Self <: TableBackground](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TableBackground] (val x: Self) extends AnyVal {
     
     inline def setFill(value: FillFormat): Self = StObject.set(x, "Fill", value.asInstanceOf[js.Any])
     

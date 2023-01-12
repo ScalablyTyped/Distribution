@@ -18,7 +18,8 @@ object MapStateStartedEventDetails {
     __obj.asInstanceOf[MapStateStartedEventDetails]
   }
   
-  extension [Self <: MapStateStartedEventDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MapStateStartedEventDetails] (val x: Self) extends AnyVal {
     
     inline def setLength(value: UnsignedInteger): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     

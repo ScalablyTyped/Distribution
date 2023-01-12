@@ -26,7 +26,8 @@ object IFreezable {
     __obj.asInstanceOf[IFreezable]
   }
   
-  extension [Self <: IFreezable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IFreezable] (val x: Self) extends AnyVal {
     
     inline def setEvents(value: IEventManager[js.Object]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     

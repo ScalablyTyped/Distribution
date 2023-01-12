@@ -19,7 +19,8 @@ object ClusterRerouteCommandAllocateReplicaAction {
     __obj.asInstanceOf[ClusterRerouteCommandAllocateReplicaAction]
   }
   
-  extension [Self <: ClusterRerouteCommandAllocateReplicaAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClusterRerouteCommandAllocateReplicaAction] (val x: Self) extends AnyVal {
     
     inline def setIndex(value: IndexName): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     

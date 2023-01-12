@@ -63,7 +63,8 @@ object libCollapseCollapseMod extends Shortcut {
       __obj.asInstanceOf[CollapseProps]
     }
     
-    extension [Self <: CollapseProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CollapseProps] (val x: Self) extends AnyVal {
       
       inline def setAccordion(value: Boolean): Self = StObject.set(x, "accordion", value.asInstanceOf[js.Any])
       
@@ -178,7 +179,8 @@ object libCollapseCollapseMod extends Shortcut {
       __obj.asInstanceOf[PanelProps]
     }
     
-    extension [Self <: PanelProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PanelProps] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       

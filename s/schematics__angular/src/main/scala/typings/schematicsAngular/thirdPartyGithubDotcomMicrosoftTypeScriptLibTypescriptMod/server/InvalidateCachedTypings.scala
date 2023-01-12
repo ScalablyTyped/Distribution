@@ -18,7 +18,8 @@ object InvalidateCachedTypings {
     __obj.asInstanceOf[InvalidateCachedTypings]
   }
   
-  extension [Self <: InvalidateCachedTypings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InvalidateCachedTypings] (val x: Self) extends AnyVal {
     
     inline def setKind(value: ActionInvalidate): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
   }

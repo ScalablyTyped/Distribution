@@ -23,7 +23,8 @@ object PropertyValueHistory {
     __obj.asInstanceOf[PropertyValueHistory]
   }
   
-  extension [Self <: PropertyValueHistory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PropertyValueHistory] (val x: Self) extends AnyVal {
     
     inline def setEntityPropertyReference(value: EntityPropertyReference): Self = StObject.set(x, "entityPropertyReference", value.asInstanceOf[js.Any])
     

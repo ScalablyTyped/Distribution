@@ -25,7 +25,8 @@ object OnLocalServiceFoundCallbackResult {
     __obj.asInstanceOf[OnLocalServiceFoundCallbackResult]
   }
   
-  extension [Self <: OnLocalServiceFoundCallbackResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnLocalServiceFoundCallbackResult] (val x: Self) extends AnyVal {
     
     inline def setIp(value: String): Self = StObject.set(x, "ip", value.asInstanceOf[js.Any])
     

@@ -16,7 +16,8 @@ object PeriodicWaveConstraints {
     __obj.asInstanceOf[PeriodicWaveConstraints]
   }
   
-  extension [Self <: PeriodicWaveConstraints](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PeriodicWaveConstraints] (val x: Self) extends AnyVal {
     
     inline def setDisableNormalization(value: scala.Boolean): Self = StObject.set(x, "disableNormalization", value.asInstanceOf[js.Any])
     

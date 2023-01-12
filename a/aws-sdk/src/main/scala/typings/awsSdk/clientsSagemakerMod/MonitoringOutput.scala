@@ -18,7 +18,8 @@ object MonitoringOutput {
     __obj.asInstanceOf[MonitoringOutput]
   }
   
-  extension [Self <: MonitoringOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MonitoringOutput] (val x: Self) extends AnyVal {
     
     inline def setS3Output(value: MonitoringS3Output): Self = StObject.set(x, "S3Output", value.asInstanceOf[js.Any])
   }

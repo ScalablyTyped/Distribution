@@ -24,7 +24,8 @@ object Discontinuity {
     __obj.asInstanceOf[Discontinuity]
   }
   
-  extension [Self <: Discontinuity](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Discontinuity] (val x: Self) extends AnyVal {
     
     inline def setDiscontinuity(value: Boolean): Self = StObject.set(x, "discontinuity", value.asInstanceOf[js.Any])
     

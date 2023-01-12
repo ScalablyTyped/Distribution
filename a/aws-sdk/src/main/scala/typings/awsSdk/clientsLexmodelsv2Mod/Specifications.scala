@@ -23,7 +23,8 @@ object Specifications {
     __obj.asInstanceOf[Specifications]
   }
   
-  extension [Self <: Specifications](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Specifications] (val x: Self) extends AnyVal {
     
     inline def setSlotTypeId(value: BuiltInOrCustomSlotTypeId): Self = StObject.set(x, "slotTypeId", value.asInstanceOf[js.Any])
     

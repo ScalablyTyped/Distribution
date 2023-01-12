@@ -24,7 +24,8 @@ object FunctionDataSourceSettings {
     __obj.asInstanceOf[FunctionDataSourceSettings]
   }
   
-  extension [Self <: FunctionDataSourceSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FunctionDataSourceSettings] (val x: Self) extends AnyVal {
     
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

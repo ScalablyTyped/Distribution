@@ -341,7 +341,8 @@ object distLibHeapMod {
       __obj.asInstanceOf[Heap[T]]
     }
     
-    extension [Self <: Heap[?], T](x: Self & Heap[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Heap[?], T] (val x: Self & Heap[T]) extends AnyVal {
       
       inline def setAdd(value: T => Boolean): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
       

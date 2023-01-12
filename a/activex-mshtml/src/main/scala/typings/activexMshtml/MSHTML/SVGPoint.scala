@@ -23,7 +23,8 @@ object SVGPoint {
     __obj.asInstanceOf[SVGPoint]
   }
   
-  extension [Self <: SVGPoint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SVGPoint] (val x: Self) extends AnyVal {
     
     inline def setMSHTMLDotSVGPoint_typekey(value: SVGPoint): Self = StObject.set(x, "MSHTML.SVGPoint_typekey", value.asInstanceOf[js.Any])
     

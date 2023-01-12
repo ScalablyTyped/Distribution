@@ -19,7 +19,8 @@ object SSOProfileUpdatedEvent {
     __obj.asInstanceOf[SSOProfileUpdatedEvent]
   }
   
-  extension [Self <: SSOProfileUpdatedEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SSOProfileUpdatedEvent] (val x: Self) extends AnyVal {
     
     inline def setInboundSsoProfileChanges(value: String): Self = StObject.set(x, "inboundSsoProfileChanges", value.asInstanceOf[js.Any])
     

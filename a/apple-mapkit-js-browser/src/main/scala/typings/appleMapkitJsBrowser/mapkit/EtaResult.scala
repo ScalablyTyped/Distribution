@@ -37,7 +37,8 @@ object EtaResult {
     __obj.asInstanceOf[EtaResult]
   }
   
-  extension [Self <: EtaResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EtaResult] (val x: Self) extends AnyVal {
     
     inline def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
     

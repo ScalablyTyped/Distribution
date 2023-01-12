@@ -33,7 +33,8 @@ object plotOptions {
     __obj.asInstanceOf[plotOptions]
   }
   
-  extension [Self <: plotOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: plotOptions] (val x: Self) extends AnyVal {
     
     inline def setColors(value: js.Array[Any]): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
     

@@ -89,7 +89,8 @@ object Checkrunsurl {
     __obj.asInstanceOf[Checkrunsurl]
   }
   
-  extension [Self <: Checkrunsurl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Checkrunsurl] (val x: Self) extends AnyVal {
     
     inline def setAfter(value: String): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
     

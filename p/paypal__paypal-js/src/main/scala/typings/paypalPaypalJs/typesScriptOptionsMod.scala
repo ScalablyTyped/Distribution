@@ -34,7 +34,8 @@ object typesScriptOptionsMod {
       __obj.asInstanceOf[PayPalScriptDataAttributes]
     }
     
-    extension [Self <: PayPalScriptDataAttributes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PayPalScriptDataAttributes] (val x: Self) extends AnyVal {
       
       inline def `setData-client-metadata-id`(value: String): Self = StObject.set(x, "data-client-metadata-id", value.asInstanceOf[js.Any])
       
@@ -91,7 +92,8 @@ object typesScriptOptionsMod {
       __obj.asInstanceOf[PayPalScriptOptions]
     }
     
-    extension [Self <: PayPalScriptOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PayPalScriptOptions] (val x: Self) extends AnyVal {
       
       inline def setSdkBaseURL(value: String): Self = StObject.set(x, "sdkBaseURL", value.asInstanceOf[js.Any])
       
@@ -139,7 +141,8 @@ object typesScriptOptionsMod {
       __obj.asInstanceOf[PayPalScriptQueryParameters]
     }
     
-    extension [Self <: PayPalScriptQueryParameters](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PayPalScriptQueryParameters] (val x: Self) extends AnyVal {
       
       inline def `setBuyer-country`(value: String): Self = StObject.set(x, "buyer-country", value.asInstanceOf[js.Any])
       

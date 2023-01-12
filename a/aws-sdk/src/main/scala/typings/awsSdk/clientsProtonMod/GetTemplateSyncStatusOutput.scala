@@ -28,7 +28,8 @@ object GetTemplateSyncStatusOutput {
     __obj.asInstanceOf[GetTemplateSyncStatusOutput]
   }
   
-  extension [Self <: GetTemplateSyncStatusOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetTemplateSyncStatusOutput] (val x: Self) extends AnyVal {
     
     inline def setDesiredState(value: Revision): Self = StObject.set(x, "desiredState", value.asInstanceOf[js.Any])
     

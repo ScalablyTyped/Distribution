@@ -32,7 +32,8 @@ object libTabBarPropsTypeMod {
       __obj.asInstanceOf[TabBarItemProps]
     }
     
-    extension [Self <: TabBarItemProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TabBarItemProps] (val x: Self) extends AnyVal {
       
       inline def setBadge(value: String | Double): Self = StObject.set(x, "badge", value.asInstanceOf[js.Any])
       
@@ -81,7 +82,8 @@ object libTabBarPropsTypeMod {
       __obj.asInstanceOf[TabBarProps]
     }
     
-    extension [Self <: TabBarProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TabBarProps] (val x: Self) extends AnyVal {
       
       inline def setAnimated(value: Boolean): Self = StObject.set(x, "animated", value.asInstanceOf[js.Any])
       

@@ -40,7 +40,8 @@ object IDBPCursorIteratorValueExtends {
     __obj.asInstanceOf[IDBPCursorIteratorValueExtends[DBTypes, TxStores, StoreName, IndexName, Mode]]
   }
   
-  extension [Self <: IDBPCursorIteratorValueExtends[?, ?, ?, ?, ?], DBTypes /* <: DBSchema | Any */, TxStores /* <: ArrayLike[StoreNames[DBTypes]] */, StoreName /* <: StoreNames[DBTypes] */, IndexName /* <: (IndexNames[DBTypes, StoreName]) | Any */, Mode /* <: IDBTransactionMode */](x: Self & (IDBPCursorIteratorValueExtends[DBTypes, TxStores, StoreName, IndexName, Mode])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IDBPCursorIteratorValueExtends[?, ?, ?, ?, ?], DBTypes /* <: DBSchema | Any */, TxStores /* <: ArrayLike[StoreNames[DBTypes]] */, StoreName /* <: StoreNames[DBTypes] */, IndexName /* <: (IndexNames[DBTypes, StoreName]) | Any */, Mode /* <: IDBTransactionMode */] (val x: Self & (IDBPCursorIteratorValueExtends[DBTypes, TxStores, StoreName, IndexName, Mode])) extends AnyVal {
     
     inline def setDelete(
       value: /* import warning: importer.ImportType#apply Failed type conversion: Mode extends 'readonly' ? undefined : (): std.Promise<void> */ js.Any

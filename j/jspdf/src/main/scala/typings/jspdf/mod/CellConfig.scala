@@ -26,7 +26,8 @@ object CellConfig {
     __obj.asInstanceOf[CellConfig]
   }
   
-  extension [Self <: CellConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CellConfig] (val x: Self) extends AnyVal {
     
     inline def setAlign(value: left | center | right): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     

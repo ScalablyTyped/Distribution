@@ -30,7 +30,8 @@ object anon {
       __obj.asInstanceOf[Body]
     }
     
-    extension [Self <: Body](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Body] (val x: Self) extends AnyVal {
       
       inline def setBody(
         value: /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<unfetch.anon.FnCall>[0] */ js.Any
@@ -74,7 +75,8 @@ object anon {
       __obj.asInstanceOf[Entries]
     }
     
-    extension [Self <: Entries](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Entries] (val x: Self) extends AnyVal {
       
       inline def setEntries(value: () => js.Array[js.Tuple2[String, String]]): Self = StObject.set(x, "entries", js.Any.fromFunction0(value))
       

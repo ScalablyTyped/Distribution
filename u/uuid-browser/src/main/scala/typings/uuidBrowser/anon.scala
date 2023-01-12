@@ -21,7 +21,8 @@ object anon {
       __obj.asInstanceOf[Random]
     }
     
-    extension [Self <: Random](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Random] (val x: Self) extends AnyVal {
       
       inline def setRandom(value: InputBuffer): Self = StObject.set(x, "random", value.asInstanceOf[js.Any])
     }
@@ -40,7 +41,8 @@ object anon {
       __obj.asInstanceOf[Rng]
     }
     
-    extension [Self <: Rng](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Rng] (val x: Self) extends AnyVal {
       
       inline def setRng(value: () => InputBuffer): Self = StObject.set(x, "rng", js.Any.fromFunction0(value))
     }

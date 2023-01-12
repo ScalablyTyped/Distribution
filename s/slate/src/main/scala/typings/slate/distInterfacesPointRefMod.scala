@@ -23,7 +23,8 @@ object distInterfacesPointRefMod {
     @js.native
     val ^ : PointRefInterface = js.native
     
-    extension [Self <: PointRef](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PointRef] (val x: Self) extends AnyVal {
       
       inline def setAffinity(value: TextDirection): Self = StObject.set(x, "affinity", value.asInstanceOf[js.Any])
       
@@ -48,7 +49,8 @@ object distInterfacesPointRefMod {
       __obj.asInstanceOf[PointRefInterface]
     }
     
-    extension [Self <: PointRefInterface](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PointRefInterface] (val x: Self) extends AnyVal {
       
       inline def setTransform(value: (PointRef, Operation) => Unit): Self = StObject.set(x, "transform", js.Any.fromFunction2(value))
     }

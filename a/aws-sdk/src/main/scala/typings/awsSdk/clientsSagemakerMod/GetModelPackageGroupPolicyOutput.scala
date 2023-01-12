@@ -18,7 +18,8 @@ object GetModelPackageGroupPolicyOutput {
     __obj.asInstanceOf[GetModelPackageGroupPolicyOutput]
   }
   
-  extension [Self <: GetModelPackageGroupPolicyOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetModelPackageGroupPolicyOutput] (val x: Self) extends AnyVal {
     
     inline def setResourcePolicy(value: PolicyString): Self = StObject.set(x, "ResourcePolicy", value.asInstanceOf[js.Any])
   }

@@ -406,7 +406,8 @@ object srcRnremotemessageMod {
       __obj.asInstanceOf[RNRemoteMessage]
     }
     
-    extension [Self <: RNRemoteMessage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RNRemoteMessage] (val x: Self) extends AnyVal {
       
       inline def setGetAnalyticInfo(value: () => String): Self = StObject.set(x, "getAnalyticInfo", js.Any.fromFunction0(value))
       

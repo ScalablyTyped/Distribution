@@ -20,7 +20,8 @@ object TypeofDatePicker {
     __obj.asInstanceOf[TypeofDatePicker]
   }
   
-  extension [Self <: TypeofDatePicker](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofDatePicker] (val x: Self) extends AnyVal {
     
     inline def setExtend(value: js.Object => DatePicker): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
     

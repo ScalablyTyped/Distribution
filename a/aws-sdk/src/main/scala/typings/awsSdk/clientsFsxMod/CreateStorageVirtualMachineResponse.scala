@@ -18,7 +18,8 @@ object CreateStorageVirtualMachineResponse {
     __obj.asInstanceOf[CreateStorageVirtualMachineResponse]
   }
   
-  extension [Self <: CreateStorageVirtualMachineResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateStorageVirtualMachineResponse] (val x: Self) extends AnyVal {
     
     inline def setStorageVirtualMachine(value: StorageVirtualMachine): Self = StObject.set(x, "StorageVirtualMachine", value.asInstanceOf[js.Any])
     

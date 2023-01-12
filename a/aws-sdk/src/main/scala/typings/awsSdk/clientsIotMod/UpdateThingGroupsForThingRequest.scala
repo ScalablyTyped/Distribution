@@ -33,7 +33,8 @@ object UpdateThingGroupsForThingRequest {
     __obj.asInstanceOf[UpdateThingGroupsForThingRequest]
   }
   
-  extension [Self <: UpdateThingGroupsForThingRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateThingGroupsForThingRequest] (val x: Self) extends AnyVal {
     
     inline def setOverrideDynamicGroups(value: OverrideDynamicGroups): Self = StObject.set(x, "overrideDynamicGroups", value.asInstanceOf[js.Any])
     

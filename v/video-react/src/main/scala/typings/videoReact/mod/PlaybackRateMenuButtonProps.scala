@@ -19,7 +19,8 @@ object PlaybackRateMenuButtonProps {
     __obj.asInstanceOf[PlaybackRateMenuButtonProps]
   }
   
-  extension [Self <: PlaybackRateMenuButtonProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlaybackRateMenuButtonProps] (val x: Self) extends AnyVal {
     
     inline def setRates(value: js.Array[Double]): Self = StObject.set(x, "rates", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object TextStructureFindStructureTopHit {
     __obj.asInstanceOf[TextStructureFindStructureTopHit]
   }
   
-  extension [Self <: TextStructureFindStructureTopHit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextStructureFindStructureTopHit] (val x: Self) extends AnyVal {
     
     inline def setCount(value: long): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     

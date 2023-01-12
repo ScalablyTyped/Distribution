@@ -55,7 +55,8 @@ object TransactionReceipt {
     __obj.asInstanceOf[TransactionReceipt]
   }
   
-  extension [Self <: TransactionReceipt](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransactionReceipt] (val x: Self) extends AnyVal {
     
     inline def setBlockHash(value: String): Self = StObject.set(x, "blockHash", value.asInstanceOf[js.Any])
     

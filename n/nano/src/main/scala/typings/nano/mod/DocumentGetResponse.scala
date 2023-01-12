@@ -46,7 +46,8 @@ object DocumentGetResponse {
     __obj.asInstanceOf[DocumentGetResponse]
   }
   
-  extension [Self <: DocumentGetResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DocumentGetResponse] (val x: Self) extends AnyVal {
     
     inline def set_attachments(value: Any): Self = StObject.set(x, "_attachments", value.asInstanceOf[js.Any])
     

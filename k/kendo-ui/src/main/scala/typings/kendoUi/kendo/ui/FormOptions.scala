@@ -46,7 +46,8 @@ object FormOptions {
     __obj.asInstanceOf[FormOptions]
   }
   
-  extension [Self <: FormOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FormOptions] (val x: Self) extends AnyVal {
     
     inline def setButtonsTemplate(value: String | js.Function): Self = StObject.set(x, "buttonsTemplate", value.asInstanceOf[js.Any])
     

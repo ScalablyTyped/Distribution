@@ -23,7 +23,8 @@ object AnalysisIcuTokenizer {
     __obj.asInstanceOf[AnalysisIcuTokenizer]
   }
   
-  extension [Self <: AnalysisIcuTokenizer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnalysisIcuTokenizer] (val x: Self) extends AnyVal {
     
     inline def setRule_files(value: String): Self = StObject.set(x, "rule_files", value.asInstanceOf[js.Any])
     

@@ -25,7 +25,8 @@ object typesDeleteVaultAccessPolicyOutputMod {
       __obj.asInstanceOf[DeleteVaultAccessPolicyOutput]
     }
     
-    extension [Self <: DeleteVaultAccessPolicyOutput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeleteVaultAccessPolicyOutput] (val x: Self) extends AnyVal {
       
       inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
     }

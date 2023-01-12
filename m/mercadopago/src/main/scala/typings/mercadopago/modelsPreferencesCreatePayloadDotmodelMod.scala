@@ -97,7 +97,8 @@ object modelsPreferencesCreatePayloadDotmodelMod {
       __obj.asInstanceOf[CreatePreferencePayload]
     }
     
-    extension [Self <: CreatePreferencePayload](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreatePreferencePayload] (val x: Self) extends AnyVal {
       
       inline def setAdditional_info(value: String): Self = StObject.set(x, "additional_info", value.asInstanceOf[js.Any])
       
@@ -209,7 +210,8 @@ object modelsPreferencesCreatePayloadDotmodelMod {
       __obj.asInstanceOf[PreferenceBackUrl]
     }
     
-    extension [Self <: PreferenceBackUrl](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PreferenceBackUrl] (val x: Self) extends AnyVal {
       
       inline def setFailure(value: String): Self = StObject.set(x, "failure", value.asInstanceOf[js.Any])
       
@@ -258,7 +260,8 @@ object modelsPreferencesCreatePayloadDotmodelMod {
       __obj.asInstanceOf[PreferenceItem]
     }
     
-    extension [Self <: PreferenceItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PreferenceItem] (val x: Self) extends AnyVal {
       
       inline def setCategory_id(value: String): Self = StObject.set(x, "category_id", value.asInstanceOf[js.Any])
       
@@ -324,7 +327,8 @@ object modelsPreferencesCreatePayloadDotmodelMod {
       __obj.asInstanceOf[PreferencePayer]
     }
     
-    extension [Self <: PreferencePayer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PreferencePayer] (val x: Self) extends AnyVal {
       
       inline def setAddress(value: SimpleAddress): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
@@ -380,7 +384,8 @@ object modelsPreferencesCreatePayloadDotmodelMod {
       __obj.asInstanceOf[PreferencePaymentMethods]
     }
     
-    extension [Self <: PreferencePaymentMethods](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PreferencePaymentMethods] (val x: Self) extends AnyVal {
       
       inline def setDefault_installments(value: Double): Self = StObject.set(x, "default_installments", value.asInstanceOf[js.Any])
       
@@ -445,7 +450,8 @@ object modelsPreferencesCreatePayloadDotmodelMod {
       __obj.asInstanceOf[PreferenceShipment]
     }
     
-    extension [Self <: PreferenceShipment](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PreferenceShipment] (val x: Self) extends AnyVal {
       
       inline def setCost(value: Double): Self = StObject.set(x, "cost", value.asInstanceOf[js.Any])
       
@@ -502,7 +508,8 @@ object modelsPreferencesCreatePayloadDotmodelMod {
       __obj.asInstanceOf[PreferenceTrack]
     }
     
-    extension [Self <: PreferenceTrack](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PreferenceTrack] (val x: Self) extends AnyVal {
       
       inline def setType(value: google_ad | facebook_ad): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       

@@ -63,7 +63,8 @@ object mod {
         __obj.asInstanceOf[SAlertBeepProps]
       }
       
-      extension [Self <: SAlertBeepProps](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SAlertBeepProps] (val x: Self) extends AnyVal {
         
         inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
         
@@ -114,7 +115,8 @@ object mod {
         __obj.asInstanceOf[SAlertConfigProps]
       }
       
-      extension [Self <: SAlertConfigProps](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SAlertConfigProps] (val x: Self) extends AnyVal {
         
         inline def setBeep(value: String | Boolean | SAlertBeepProps): Self = StObject.set(x, "beep", value.asInstanceOf[js.Any])
         
@@ -175,7 +177,8 @@ object mod {
         __obj.asInstanceOf[SAlertProps]
       }
       
-      extension [Self <: SAlertProps](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SAlertProps] (val x: Self) extends AnyVal {
         
         inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
         
@@ -196,7 +199,8 @@ object mod {
         __obj.asInstanceOf[SAlertStackProps]
       }
       
-      extension [Self <: SAlertStackProps](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SAlertStackProps] (val x: Self) extends AnyVal {
         
         inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
         

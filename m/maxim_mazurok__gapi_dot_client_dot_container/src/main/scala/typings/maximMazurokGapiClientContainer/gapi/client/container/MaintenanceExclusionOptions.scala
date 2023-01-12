@@ -16,7 +16,8 @@ object MaintenanceExclusionOptions {
     __obj.asInstanceOf[MaintenanceExclusionOptions]
   }
   
-  extension [Self <: MaintenanceExclusionOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MaintenanceExclusionOptions] (val x: Self) extends AnyVal {
     
     inline def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     

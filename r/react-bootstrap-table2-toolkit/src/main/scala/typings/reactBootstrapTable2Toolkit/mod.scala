@@ -85,7 +85,8 @@ object mod {
       __obj.asInstanceOf[CSVProps]
     }
     
-    extension [Self <: CSVProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CSVProps] (val x: Self) extends AnyVal {
       
       inline def setBlobType(value: String): Self = StObject.set(x, "blobType", value.asInstanceOf[js.Any])
       
@@ -136,7 +137,8 @@ object mod {
       __obj.asInstanceOf[ClearSearchButtonProps]
     }
     
-    extension [Self <: ClearSearchButtonProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClearSearchButtonProps] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -169,7 +171,8 @@ object mod {
       __obj.asInstanceOf[ExportCSVButtonProps]
     }
     
-    extension [Self <: ExportCSVButtonProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExportCSVButtonProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -202,7 +205,8 @@ object mod {
       __obj.asInstanceOf[InjectedSearchProps]
     }
     
-    extension [Self <: InjectedSearchProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InjectedSearchProps] (val x: Self) extends AnyVal {
       
       inline def setOnClear(value: () => Unit): Self = StObject.set(x, "onClear", js.Any.fromFunction0(value))
       
@@ -233,7 +237,8 @@ object mod {
       __obj.asInstanceOf[SearchBarProps[T]]
     }
     
-    extension [Self <: SearchBarProps[?], T](x: Self & SearchBarProps[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SearchBarProps[?], T] (val x: Self & SearchBarProps[T]) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -274,7 +279,8 @@ object mod {
       __obj.asInstanceOf[SearchMatchProps[T]]
     }
     
-    extension [Self <: SearchMatchProps[?], T /* <: js.Object */](x: Self & SearchMatchProps[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SearchMatchProps[?], T /* <: js.Object */] (val x: Self & SearchMatchProps[T]) extends AnyVal {
       
       inline def setColumn(value: ColumnDescription[T, Any]): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
@@ -307,7 +313,8 @@ object mod {
       __obj.asInstanceOf[TableSearchProps[T]]
     }
     
-    extension [Self <: TableSearchProps[?], T /* <: js.Object */](x: Self & TableSearchProps[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TableSearchProps[?], T /* <: js.Object */] (val x: Self & TableSearchProps[T]) extends AnyVal {
       
       inline def setAfterSearch(value: /* newResult */ js.Array[T] => js.UndefOr[Unit]): Self = StObject.set(x, "afterSearch", js.Any.fromFunction1(value))
       
@@ -367,7 +374,8 @@ object mod {
       __obj.asInstanceOf[TableToolkitProps[T]]
     }
     
-    extension [Self <: TableToolkitProps[?], T /* <: js.Object */](x: Self & TableToolkitProps[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TableToolkitProps[?], T /* <: js.Object */] (val x: Self & TableToolkitProps[T]) extends AnyVal {
       
       inline def setBootstrap4(value: Boolean): Self = StObject.set(x, "bootstrap4", value.asInstanceOf[js.Any])
       
@@ -431,7 +439,8 @@ object mod {
       __obj.asInstanceOf[ToggleListProps]
     }
     
-    extension [Self <: ToggleListProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ToggleListProps] (val x: Self) extends AnyVal {
       
       inline def setBtnClassName(value: String): Self = StObject.set(x, "btnClassName", value.asInstanceOf[js.Any])
       
@@ -479,7 +488,8 @@ object mod {
       __obj.asInstanceOf[ToolkitContextType]
     }
     
-    extension [Self <: ToolkitContextType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ToolkitContextType] (val x: Self) extends AnyVal {
       
       inline def setBaseProps(value: Bootstrap4): Self = StObject.set(x, "baseProps", value.asInstanceOf[js.Any])
       

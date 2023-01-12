@@ -177,7 +177,8 @@ object componentsDataTableDataTableMod {
       __obj.asInstanceOf[DataTable]
     }
     
-    extension [Self <: DataTable](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DataTable] (val x: Self) extends AnyVal {
       
       inline def setActivateSearch(value: HTMLElement => Unit): Self = StObject.set(x, "activateSearch", js.Any.fromFunction1(value))
       
@@ -320,7 +321,8 @@ object componentsDataTableDataTableMod {
       __obj.asInstanceOf[DataTableOptions]
     }
     
-    extension [Self <: DataTableOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DataTableOptions] (val x: Self) extends AnyVal {
       
       inline def setClassActionBarActive(value: String): Self = StObject.set(x, "classActionBarActive", value.asInstanceOf[js.Any])
       
@@ -401,7 +403,8 @@ object componentsDataTableDataTableMod {
       __obj.asInstanceOf[Detail]
     }
     
-    extension [Self <: Detail](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Detail] (val x: Self) extends AnyVal {
       
       inline def setElement(value: HTMLElement): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     }

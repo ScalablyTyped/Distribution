@@ -28,7 +28,8 @@ object ChildrenPopulatedEventUIParam {
     __obj.asInstanceOf[ChildrenPopulatedEventUIParam]
   }
   
-  extension [Self <: ChildrenPopulatedEventUIParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChildrenPopulatedEventUIParam] (val x: Self) extends AnyVal {
     
     inline def setId(value: Any): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

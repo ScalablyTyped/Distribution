@@ -48,7 +48,8 @@ object SchemaListItem {
     __obj.asInstanceOf[SchemaListItem]
   }
   
-  extension [Self <: SchemaListItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SchemaListItem] (val x: Self) extends AnyVal {
     
     inline def setCreatedTime(value: CreatedTimestamp): Self = StObject.set(x, "CreatedTime", value.asInstanceOf[js.Any])
     

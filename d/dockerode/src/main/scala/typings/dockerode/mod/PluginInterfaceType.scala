@@ -19,7 +19,8 @@ object PluginInterfaceType {
     __obj.asInstanceOf[PluginInterfaceType]
   }
   
-  extension [Self <: PluginInterfaceType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PluginInterfaceType] (val x: Self) extends AnyVal {
     
     inline def setCapability(value: String): Self = StObject.set(x, "Capability", value.asInstanceOf[js.Any])
     

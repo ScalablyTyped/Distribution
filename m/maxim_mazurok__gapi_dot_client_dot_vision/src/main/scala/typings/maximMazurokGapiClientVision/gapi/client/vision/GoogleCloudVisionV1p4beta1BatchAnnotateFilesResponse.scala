@@ -16,7 +16,8 @@ object GoogleCloudVisionV1p4beta1BatchAnnotateFilesResponse {
     __obj.asInstanceOf[GoogleCloudVisionV1p4beta1BatchAnnotateFilesResponse]
   }
   
-  extension [Self <: GoogleCloudVisionV1p4beta1BatchAnnotateFilesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudVisionV1p4beta1BatchAnnotateFilesResponse] (val x: Self) extends AnyVal {
     
     inline def setResponses(value: js.Array[GoogleCloudVisionV1p4beta1AnnotateFileResponse]): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
     

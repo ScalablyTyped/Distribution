@@ -71,7 +71,8 @@ object XSheetAuditing {
     __obj.asInstanceOf[XSheetAuditing]
   }
   
-  extension [Self <: XSheetAuditing](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XSheetAuditing] (val x: Self) extends AnyVal {
     
     inline def setClearArrows(value: () => Unit): Self = StObject.set(x, "clearArrows", js.Any.fromFunction0(value))
     

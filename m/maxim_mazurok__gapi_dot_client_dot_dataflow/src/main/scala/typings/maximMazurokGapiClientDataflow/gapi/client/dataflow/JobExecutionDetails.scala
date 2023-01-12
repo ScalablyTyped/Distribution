@@ -19,7 +19,8 @@ object JobExecutionDetails {
     __obj.asInstanceOf[JobExecutionDetails]
   }
   
-  extension [Self <: JobExecutionDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JobExecutionDetails] (val x: Self) extends AnyVal {
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     

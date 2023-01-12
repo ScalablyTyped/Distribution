@@ -17,7 +17,8 @@ object MobileDeviceRegistrationRequest {
     __obj.asInstanceOf[MobileDeviceRegistrationRequest]
   }
   
-  extension [Self <: MobileDeviceRegistrationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MobileDeviceRegistrationRequest] (val x: Self) extends AnyVal {
     
     inline def setMobileDeviceRegistrationRequest(value: typings.authorizenet.mod.APIContracts.MobileDeviceRegistrationRequest): Self = StObject.set(x, "mobileDeviceRegistrationRequest", value.asInstanceOf[js.Any])
   }

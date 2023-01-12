@@ -25,7 +25,8 @@ object mod {
       __obj.asInstanceOf[Stemmer]
     }
     
-    extension [Self <: Stemmer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Stemmer] (val x: Self) extends AnyVal {
       
       inline def setStem(value: String => String): Self = StObject.set(x, "stem", js.Any.fromFunction1(value))
     }

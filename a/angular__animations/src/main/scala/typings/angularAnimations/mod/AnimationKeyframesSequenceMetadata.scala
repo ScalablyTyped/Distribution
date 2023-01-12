@@ -21,7 +21,8 @@ object AnimationKeyframesSequenceMetadata {
     __obj.asInstanceOf[AnimationKeyframesSequenceMetadata]
   }
   
-  extension [Self <: AnimationKeyframesSequenceMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnimationKeyframesSequenceMetadata] (val x: Self) extends AnyVal {
     
     inline def setSteps(value: js.Array[AnimationStyleMetadata]): Self = StObject.set(x, "steps", value.asInstanceOf[js.Any])
     

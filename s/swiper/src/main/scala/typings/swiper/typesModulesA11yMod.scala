@@ -110,7 +110,8 @@ object typesModulesA11yMod {
       __obj.asInstanceOf[A11yOptions]
     }
     
-    extension [Self <: A11yOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: A11yOptions] (val x: Self) extends AnyVal {
       
       inline def setContainerMessage(value: String): Self = StObject.set(x, "containerMessage", value.asInstanceOf[js.Any])
       

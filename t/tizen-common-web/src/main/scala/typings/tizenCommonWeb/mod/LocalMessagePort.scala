@@ -53,7 +53,8 @@ object LocalMessagePort {
     __obj.asInstanceOf[LocalMessagePort]
   }
   
-  extension [Self <: LocalMessagePort](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LocalMessagePort] (val x: Self) extends AnyVal {
     
     inline def setAddMessagePortListener(value: MessagePortCallback => Double): Self = StObject.set(x, "addMessagePortListener", js.Any.fromFunction1(value))
     

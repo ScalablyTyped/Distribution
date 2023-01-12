@@ -31,7 +31,8 @@ object Translation {
     __obj.asInstanceOf[Translation]
   }
   
-  extension [Self <: Translation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Translation] (val x: Self) extends AnyVal {
     
     inline def setDetectedLanguageCode(value: String): Self = StObject.set(x, "detectedLanguageCode", value.asInstanceOf[js.Any])
     

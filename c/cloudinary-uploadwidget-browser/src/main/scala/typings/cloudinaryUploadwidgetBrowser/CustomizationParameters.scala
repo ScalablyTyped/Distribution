@@ -27,7 +27,8 @@ object CustomizationParameters {
     __obj.asInstanceOf[CustomizationParameters]
   }
   
-  extension [Self <: CustomizationParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomizationParameters] (val x: Self) extends AnyVal {
     
     inline def setButtonCaption(value: String): Self = StObject.set(x, "buttonCaption", value.asInstanceOf[js.Any])
     

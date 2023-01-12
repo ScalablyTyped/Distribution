@@ -18,7 +18,8 @@ object IOriginatorPublicKey {
     __obj.asInstanceOf[IOriginatorPublicKey]
   }
   
-  extension [Self <: IOriginatorPublicKey](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IOriginatorPublicKey] (val x: Self) extends AnyVal {
     
     inline def setAlgorithm(value: AlgorithmIdentifier): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
     

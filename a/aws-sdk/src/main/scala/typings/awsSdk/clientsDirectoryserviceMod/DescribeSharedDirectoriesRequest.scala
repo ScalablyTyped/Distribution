@@ -33,7 +33,8 @@ object DescribeSharedDirectoriesRequest {
     __obj.asInstanceOf[DescribeSharedDirectoriesRequest]
   }
   
-  extension [Self <: DescribeSharedDirectoriesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeSharedDirectoriesRequest] (val x: Self) extends AnyVal {
     
     inline def setLimit(value: Limit): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
     

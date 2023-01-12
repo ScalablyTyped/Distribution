@@ -21,7 +21,8 @@ object Registration_ {
     __obj.asInstanceOf[Registration_[TBase, TImpl, TArgs]]
   }
   
-  extension [Self <: Registration_[?, ?, ?], TBase, TImpl /* <: Impl[TBase] */, TArgs /* <: Args[TBase] */](x: Self & (Registration_[TBase, TImpl, TArgs])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Registration_[?, ?, ?], TBase, TImpl /* <: Impl[TBase] */, TArgs /* <: Args[TBase] */] (val x: Self & (Registration_[TBase, TImpl, TArgs])) extends AnyVal {
     
     inline def setRegisterResolver(
       value: (Container, PrimitiveOrDependencyCtor[TBase, TImpl, TArgs], DependencyCtorOrFunctor[TBase, TImpl, TArgs]) => Resolver_

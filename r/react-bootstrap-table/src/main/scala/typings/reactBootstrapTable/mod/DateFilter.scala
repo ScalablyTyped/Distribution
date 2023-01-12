@@ -43,7 +43,8 @@ object DateFilter {
     __obj.asInstanceOf[DateFilter]
   }
   
-  extension [Self <: DateFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DateFilter] (val x: Self) extends AnyVal {
     
     inline def setDateComparators(value: js.Array[FilterComparator]): Self = StObject.set(x, "dateComparators", value.asInstanceOf[js.Any])
     

@@ -68,7 +68,8 @@ object Suite {
     __obj.asInstanceOf[Suite]
   }
   
-  extension [Self <: Suite](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Suite] (val x: Self) extends AnyVal {
     
     inline def setArn(value: AmazonResourceName): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     

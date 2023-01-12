@@ -32,7 +32,8 @@ object RouteRecordMatcher {
     __obj.asInstanceOf[RouteRecordMatcher]
   }
   
-  extension [Self <: RouteRecordMatcher](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RouteRecordMatcher] (val x: Self) extends AnyVal {
     
     inline def setAlias(value: js.Array[RouteRecordMatcher]): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
     

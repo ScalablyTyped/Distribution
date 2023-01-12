@@ -43,7 +43,8 @@ object AggregatedUtterancesSummary {
     __obj.asInstanceOf[AggregatedUtterancesSummary]
   }
   
-  extension [Self <: AggregatedUtterancesSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AggregatedUtterancesSummary] (val x: Self) extends AnyVal {
     
     inline def setContainsDataFromDeletedResources(value: BoxedBoolean): Self = StObject.set(x, "containsDataFromDeletedResources", value.asInstanceOf[js.Any])
     

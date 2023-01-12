@@ -96,7 +96,8 @@ object mod {
       __obj.asInstanceOf[Command]
     }
     
-    extension [Self <: Command](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Command] (val x: Self) extends AnyVal {
       
       inline def setConsumer_concurrency_ok(value: String => js.Promise[CommandResult | ErrorConstructor]): Self = StObject.set(x, "consumer_concurrency_ok", js.Any.fromFunction1(value))
       
@@ -149,7 +150,8 @@ object mod {
       __obj.asInstanceOf[CommandResult]
     }
     
-    extension [Self <: CommandResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommandResult] (val x: Self) extends AnyVal {
       
       inline def setError(value: ErrorConstructor): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
@@ -224,7 +226,8 @@ object mod {
       __obj.asInstanceOf[CrimsonQClient]
     }
     
-    extension [Self <: CrimsonQClient](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CrimsonQClient] (val x: Self) extends AnyVal {
       
       inline def setCommand(value: Command): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
       
@@ -262,7 +265,8 @@ object mod {
       __obj.asInstanceOf[Producer]
     }
     
-    extension [Self <: Producer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Producer] (val x: Self) extends AnyVal {
       
       inline def setPing(value: (String, js.Object) => js.Promise[CommandResult | ErrorConstructor]): Self = StObject.set(x, "ping", js.Any.fromFunction2(value))
       
@@ -297,7 +301,8 @@ object mod {
       __obj.asInstanceOf[RecievedMessage]
     }
     
-    extension [Self <: RecievedMessage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RecievedMessage] (val x: Self) extends AnyVal {
       
       inline def setConsumer(value: Consumer): Self = StObject.set(x, "consumer", value.asInstanceOf[js.Any])
       

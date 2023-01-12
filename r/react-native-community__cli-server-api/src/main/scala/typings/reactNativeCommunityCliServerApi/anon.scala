@@ -43,7 +43,8 @@ object anon {
       __obj.asInstanceOf[DebuggerProxyEndpoint]
     }
     
-    extension [Self <: DebuggerProxyEndpoint](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DebuggerProxyEndpoint] (val x: Self) extends AnyVal {
       
       inline def setDebuggerProxyEndpoint(value: IsDebuggerConnected): Self = StObject.set(x, "debuggerProxyEndpoint", value.asInstanceOf[js.Any])
       
@@ -82,7 +83,8 @@ object anon {
       __obj.asInstanceOf[Debuggerproxy]
     }
     
-    extension [Self <: Debuggerproxy](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Debuggerproxy] (val x: Self) extends AnyVal {
       
       inline def `setSlashdebugger-proxy`(value: Server[WebSocket]): Self = StObject.set(x, "/debugger-proxy", value.asInstanceOf[js.Any])
       
@@ -105,7 +107,8 @@ object anon {
       __obj.asInstanceOf[IsDebuggerConnected]
     }
     
-    extension [Self <: IsDebuggerConnected](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IsDebuggerConnected] (val x: Self) extends AnyVal {
       
       inline def setIsDebuggerConnected(value: () => Boolean): Self = StObject.set(x, "isDebuggerConnected", js.Any.fromFunction0(value))
       
@@ -124,7 +127,8 @@ object anon {
       __obj.asInstanceOf[RawBody]
     }
     
-    extension [Self <: RawBody](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RawBody] (val x: Self) extends AnyVal {
       
       inline def setRawBody(value: String): Self = StObject.set(x, "rawBody", value.asInstanceOf[js.Any])
     }
@@ -143,7 +147,8 @@ object anon {
       __obj.asInstanceOf[ReportEvent]
     }
     
-    extension [Self <: ReportEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReportEvent] (val x: Self) extends AnyVal {
       
       inline def setReportEvent(value: Any => Unit): Self = StObject.set(x, "reportEvent", js.Any.fromFunction1(value))
       

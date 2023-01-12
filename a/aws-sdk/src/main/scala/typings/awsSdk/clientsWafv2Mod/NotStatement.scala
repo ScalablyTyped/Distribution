@@ -18,7 +18,8 @@ object NotStatement {
     __obj.asInstanceOf[NotStatement]
   }
   
-  extension [Self <: NotStatement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NotStatement] (val x: Self) extends AnyVal {
     
     inline def setStatement(value: Statement): Self = StObject.set(x, "Statement", value.asInstanceOf[js.Any])
   }

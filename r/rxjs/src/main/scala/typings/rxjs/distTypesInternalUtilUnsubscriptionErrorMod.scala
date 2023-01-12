@@ -20,7 +20,8 @@ object distTypesInternalUtilUnsubscriptionErrorMod {
     @js.native
     val ^ : UnsubscriptionErrorCtor = js.native
     
-    extension [Self <: UnsubscriptionError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnsubscriptionError] (val x: Self) extends AnyVal {
       
       inline def setErrors(value: js.Array[Any]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
       

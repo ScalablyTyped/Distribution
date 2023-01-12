@@ -58,7 +58,8 @@ object InvocationMetricsV2 {
     __obj.asInstanceOf[InvocationMetricsV2]
   }
   
-  extension [Self <: InvocationMetricsV2](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InvocationMetricsV2] (val x: Self) extends AnyVal {
     
     inline def setHighPriority(value: Dictk): Self = StObject.set(x, "highPriority", value.asInstanceOf[js.Any])
     

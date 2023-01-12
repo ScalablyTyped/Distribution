@@ -17,7 +17,8 @@ object CreatingHookContext {
     __obj.asInstanceOf[CreatingHookContext[T, Key]]
   }
   
-  extension [Self <: CreatingHookContext[?, ?], T, Key](x: Self & (CreatingHookContext[T, Key])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreatingHookContext[?, ?], T, Key] (val x: Self & (CreatingHookContext[T, Key])) extends AnyVal {
     
     inline def setOnerror(value: /* err */ Any => Unit): Self = StObject.set(x, "onerror", js.Any.fromFunction1(value))
     

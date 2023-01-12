@@ -20,7 +20,8 @@ object DirectionsSaveAsOptions {
     __obj.asInstanceOf[DirectionsSaveAsOptions]
   }
   
-  extension [Self <: DirectionsSaveAsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DirectionsSaveAsOptions] (val x: Self) extends AnyVal {
     
     inline def setFolder(value: PortalFolder): Self = StObject.set(x, "folder", value.asInstanceOf[js.Any])
     

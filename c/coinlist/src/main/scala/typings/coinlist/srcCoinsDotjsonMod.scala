@@ -26,7 +26,8 @@ object srcCoinsDotjsonMod extends Shortcut {
       __obj.asInstanceOf[Coin]
     }
     
-    extension [Self <: Coin](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Coin] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       

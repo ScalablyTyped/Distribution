@@ -15,7 +15,8 @@ object PDFViewerView {
     __obj.asInstanceOf[PDFViewerView]
   }
   
-  extension [Self <: PDFViewerView](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PDFViewerView] (val x: Self) extends AnyVal {
     
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

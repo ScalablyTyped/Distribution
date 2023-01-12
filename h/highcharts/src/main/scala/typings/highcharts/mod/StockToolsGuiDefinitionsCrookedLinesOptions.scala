@@ -27,7 +27,8 @@ object StockToolsGuiDefinitionsCrookedLinesOptions {
     __obj.asInstanceOf[StockToolsGuiDefinitionsCrookedLinesOptions]
   }
   
-  extension [Self <: StockToolsGuiDefinitionsCrookedLinesOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StockToolsGuiDefinitionsCrookedLinesOptions] (val x: Self) extends AnyVal {
     
     inline def setCrooked3(value: StockToolsGuiDefinitionsCrookedLinesCrooked3Options): Self = StObject.set(x, "crooked3", value.asInstanceOf[js.Any])
     

@@ -16,7 +16,8 @@ object RefreshRuntimeTokenInternalRequest {
     __obj.asInstanceOf[RefreshRuntimeTokenInternalRequest]
   }
   
-  extension [Self <: RefreshRuntimeTokenInternalRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RefreshRuntimeTokenInternalRequest] (val x: Self) extends AnyVal {
     
     inline def setVmId(value: String): Self = StObject.set(x, "vmId", value.asInstanceOf[js.Any])
     

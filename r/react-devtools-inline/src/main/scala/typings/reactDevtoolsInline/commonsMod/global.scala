@@ -17,7 +17,8 @@ object global {
       __obj.asInstanceOf[Window]
     }
     
-    extension [Self <: Window](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Window] (val x: Self) extends AnyVal {
       
       inline def set__REACT_DEVTOOLS_GLOBAL_HOOK__(value: DevToolsHook): Self = StObject.set(x, "__REACT_DEVTOOLS_GLOBAL_HOOK__", value.asInstanceOf[js.Any])
     }

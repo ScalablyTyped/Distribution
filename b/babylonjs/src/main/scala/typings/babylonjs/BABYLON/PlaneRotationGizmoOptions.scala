@@ -18,7 +18,8 @@ object PlaneRotationGizmoOptions {
     __obj.asInstanceOf[PlaneRotationGizmoOptions]
   }
   
-  extension [Self <: PlaneRotationGizmoOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlaneRotationGizmoOptions] (val x: Self) extends AnyVal {
     
     inline def setColor(value: Color3): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

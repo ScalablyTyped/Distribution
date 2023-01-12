@@ -38,7 +38,8 @@ object TypeInstanceProperty {
     __obj.asInstanceOf[TypeInstanceProperty]
   }
   
-  extension [Self <: TypeInstanceProperty](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeInstanceProperty] (val x: Self) extends AnyVal {
     
     inline def setIsArray(value: () => Boolean): Self = StObject.set(x, "isArray", js.Any.fromFunction0(value))
     

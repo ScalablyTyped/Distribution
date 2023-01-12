@@ -21,7 +21,8 @@ object typesSrcCoreTransportsPingDelayOptionsMod {
       __obj.asInstanceOf[PingDelayOptions]
     }
     
-    extension [Self <: PingDelayOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PingDelayOptions] (val x: Self) extends AnyVal {
       
       inline def setMaxPingDelay(value: Double): Self = StObject.set(x, "maxPingDelay", value.asInstanceOf[js.Any])
       

@@ -19,7 +19,8 @@ object GoogleCloudDialogflowV2beta1IntentMessageImage {
     __obj.asInstanceOf[GoogleCloudDialogflowV2beta1IntentMessageImage]
   }
   
-  extension [Self <: GoogleCloudDialogflowV2beta1IntentMessageImage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDialogflowV2beta1IntentMessageImage] (val x: Self) extends AnyVal {
     
     inline def setAccessibilityText(value: String): Self = StObject.set(x, "accessibilityText", value.asInstanceOf[js.Any])
     

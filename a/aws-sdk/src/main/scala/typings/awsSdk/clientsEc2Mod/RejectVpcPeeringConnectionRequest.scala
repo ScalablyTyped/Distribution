@@ -23,7 +23,8 @@ object RejectVpcPeeringConnectionRequest {
     __obj.asInstanceOf[RejectVpcPeeringConnectionRequest]
   }
   
-  extension [Self <: RejectVpcPeeringConnectionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RejectVpcPeeringConnectionRequest] (val x: Self) extends AnyVal {
     
     inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     

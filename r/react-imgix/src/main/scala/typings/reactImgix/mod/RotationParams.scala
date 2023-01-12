@@ -19,7 +19,8 @@ object RotationParams {
     __obj.asInstanceOf[RotationParams]
   }
   
-  extension [Self <: RotationParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RotationParams] (val x: Self) extends AnyVal {
     
     inline def setFlip(value: ImgixParamType): Self = StObject.set(x, "flip", value.asInstanceOf[js.Any])
     

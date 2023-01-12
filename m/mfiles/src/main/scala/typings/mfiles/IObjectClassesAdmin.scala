@@ -26,7 +26,8 @@ object IObjectClassesAdmin {
     __obj.asInstanceOf[IObjectClassesAdmin]
   }
   
-  extension [Self <: IObjectClassesAdmin](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IObjectClassesAdmin] (val x: Self) extends AnyVal {
     
     inline def setAdd(value: (Double, IObjectClassAdmin) => Unit): Self = StObject.set(x, "Add", js.Any.fromFunction2(value))
     

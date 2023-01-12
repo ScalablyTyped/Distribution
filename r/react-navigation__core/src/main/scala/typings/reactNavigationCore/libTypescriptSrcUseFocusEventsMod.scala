@@ -29,7 +29,8 @@ object libTypescriptSrcUseFocusEventsMod {
       __obj.asInstanceOf[Options[State]]
     }
     
-    extension [Self <: Options[?], State /* <: NavigationState[ParamListBase] */](x: Self & Options[State]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options[?], State /* <: NavigationState[ParamListBase] */] (val x: Self & Options[State]) extends AnyVal {
       
       inline def setEmitter(value: NavigationEventEmitter[EventMapCore[State]]): Self = StObject.set(x, "emitter", value.asInstanceOf[js.Any])
       

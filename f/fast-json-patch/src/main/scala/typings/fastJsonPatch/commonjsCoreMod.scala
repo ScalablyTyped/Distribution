@@ -274,7 +274,8 @@ object commonjsCoreMod {
       __obj.asInstanceOf[AddOperation[T]]
     }
     
-    extension [Self <: AddOperation[?], T](x: Self & AddOperation[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AddOperation[?], T] (val x: Self & AddOperation[T]) extends AnyVal {
       
       inline def setOp(value: add): Self = StObject.set(x, "op", value.asInstanceOf[js.Any])
       
@@ -293,7 +294,8 @@ object commonjsCoreMod {
       __obj.asInstanceOf[BaseOperation]
     }
     
-    extension [Self <: BaseOperation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseOperation] (val x: Self) extends AnyVal {
       
       inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     }
@@ -315,7 +317,8 @@ object commonjsCoreMod {
       __obj.asInstanceOf[CopyOperation]
     }
     
-    extension [Self <: CopyOperation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CopyOperation] (val x: Self) extends AnyVal {
       
       inline def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       
@@ -338,7 +341,8 @@ object commonjsCoreMod {
       __obj.asInstanceOf[GetOperation[T]]
     }
     
-    extension [Self <: GetOperation[?], T](x: Self & GetOperation[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetOperation[?], T] (val x: Self & GetOperation[T]) extends AnyVal {
       
       inline def setOp(value: _get): Self = StObject.set(x, "op", value.asInstanceOf[js.Any])
       
@@ -362,7 +366,8 @@ object commonjsCoreMod {
       __obj.asInstanceOf[MoveOperation]
     }
     
-    extension [Self <: MoveOperation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MoveOperation] (val x: Self) extends AnyVal {
       
       inline def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       
@@ -396,7 +401,8 @@ object commonjsCoreMod {
       __obj.asInstanceOf[OperationResult[T]]
     }
     
-    extension [Self <: OperationResult[?], T](x: Self & OperationResult[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OperationResult[?], T] (val x: Self & OperationResult[T]) extends AnyVal {
       
       inline def setNewDocument(value: T): Self = StObject.set(x, "newDocument", value.asInstanceOf[js.Any])
       
@@ -432,7 +438,8 @@ object commonjsCoreMod {
       __obj.asInstanceOf[RemoveOperation]
     }
     
-    extension [Self <: RemoveOperation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RemoveOperation] (val x: Self) extends AnyVal {
       
       inline def setOp(value: remove): Self = StObject.set(x, "op", value.asInstanceOf[js.Any])
     }
@@ -453,7 +460,8 @@ object commonjsCoreMod {
       __obj.asInstanceOf[ReplaceOperation[T]]
     }
     
-    extension [Self <: ReplaceOperation[?], T](x: Self & ReplaceOperation[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReplaceOperation[?], T] (val x: Self & ReplaceOperation[T]) extends AnyVal {
       
       inline def setOp(value: replace): Self = StObject.set(x, "op", value.asInstanceOf[js.Any])
       
@@ -476,7 +484,8 @@ object commonjsCoreMod {
       __obj.asInstanceOf[TestOperation[T]]
     }
     
-    extension [Self <: TestOperation[?], T](x: Self & TestOperation[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TestOperation[?], T] (val x: Self & TestOperation[T]) extends AnyVal {
       
       inline def setOp(value: test): Self = StObject.set(x, "op", value.asInstanceOf[js.Any])
       

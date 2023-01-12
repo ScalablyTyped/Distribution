@@ -21,7 +21,8 @@ object SrvData {
     __obj.asInstanceOf[SrvData]
   }
   
-  extension [Self <: SrvData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SrvData] (val x: Self) extends AnyVal {
     
     inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     

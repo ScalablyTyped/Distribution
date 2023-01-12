@@ -64,7 +64,8 @@ object SourceTableDetails {
     __obj.asInstanceOf[SourceTableDetails]
   }
   
-  extension [Self <: SourceTableDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SourceTableDetails] (val x: Self) extends AnyVal {
     
     inline def setBillingMode(value: BillingMode): Self = StObject.set(x, "BillingMode", value.asInstanceOf[js.Any])
     

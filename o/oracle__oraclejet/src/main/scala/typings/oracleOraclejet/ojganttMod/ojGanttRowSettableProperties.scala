@@ -20,7 +20,8 @@ object ojGanttRowSettableProperties {
     __obj.asInstanceOf[ojGanttRowSettableProperties]
   }
   
-  extension [Self <: ojGanttRowSettableProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ojGanttRowSettableProperties] (val x: Self) extends AnyVal {
     
     inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     

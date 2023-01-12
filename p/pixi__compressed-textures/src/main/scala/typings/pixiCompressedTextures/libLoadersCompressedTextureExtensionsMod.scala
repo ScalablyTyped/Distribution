@@ -50,7 +50,8 @@ object libLoadersCompressedTextureExtensionsMod {
       __obj.asInstanceOf[CompressedTextureExtensions]
     }
     
-    extension [Self <: CompressedTextureExtensions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CompressedTextureExtensions] (val x: Self) extends AnyVal {
       
       inline def setAstc(value: WEBGLCompressedTextureAstc): Self = StObject.set(x, "astc", value.asInstanceOf[js.Any])
       

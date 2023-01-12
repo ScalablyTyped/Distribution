@@ -76,7 +76,8 @@ object AudioContent {
     __obj.asInstanceOf[AudioContent]
   }
   
-  extension [Self <: AudioContent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AudioContent] (val x: Self) extends AnyVal {
     
     inline def setAlbum(value: String): Self = StObject.set(x, "album", value.asInstanceOf[js.Any])
     

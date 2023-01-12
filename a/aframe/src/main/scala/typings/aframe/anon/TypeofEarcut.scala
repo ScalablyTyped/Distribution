@@ -16,7 +16,8 @@ object TypeofEarcut {
     __obj.asInstanceOf[TypeofEarcut]
   }
   
-  extension [Self <: TypeofEarcut](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofEarcut] (val x: Self) extends AnyVal {
     
     inline def setTriangulate(value: (js.Array[Double], js.Array[Double], Double) => js.Array[Triangle]): Self = StObject.set(x, "triangulate", js.Any.fromFunction3(value))
   }

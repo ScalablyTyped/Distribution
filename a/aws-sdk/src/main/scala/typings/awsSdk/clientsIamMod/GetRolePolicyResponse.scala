@@ -28,7 +28,8 @@ object GetRolePolicyResponse {
     __obj.asInstanceOf[GetRolePolicyResponse]
   }
   
-  extension [Self <: GetRolePolicyResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetRolePolicyResponse] (val x: Self) extends AnyVal {
     
     inline def setPolicyDocument(value: policyDocumentType): Self = StObject.set(x, "PolicyDocument", value.asInstanceOf[js.Any])
     

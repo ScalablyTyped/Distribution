@@ -55,7 +55,8 @@ object WebMapUpdateFromOptions {
     __obj.asInstanceOf[WebMapUpdateFromOptions]
   }
   
-  extension [Self <: WebMapUpdateFromOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebMapUpdateFromOptions] (val x: Self) extends AnyVal {
     
     inline def setBackgroundExcluded(value: Boolean): Self = StObject.set(x, "backgroundExcluded", value.asInstanceOf[js.Any])
     

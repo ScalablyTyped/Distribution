@@ -18,7 +18,8 @@ object Rest {
     __obj.asInstanceOf[Rest[T]]
   }
   
-  extension [Self <: Rest[?], T](x: Self & Rest[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Rest[?], T] (val x: Self & Rest[T]) extends AnyVal {
     
     inline def setRest(value: IterableIterator[T]): Self = StObject.set(x, "rest", value.asInstanceOf[js.Any])
     

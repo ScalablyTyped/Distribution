@@ -38,7 +38,8 @@ object MultipartUploadOptions {
     __obj.asInstanceOf[MultipartUploadOptions]
   }
   
-  extension [Self <: MultipartUploadOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MultipartUploadOptions] (val x: Self) extends AnyVal {
     
     inline def setCallback(value: ObjectCallback): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
     

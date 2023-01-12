@@ -219,7 +219,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Base16Theme]
     }
     
-    extension [Self <: Base16Theme](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Base16Theme] (val x: Self) extends AnyVal {
       
       inline def setAuthor(value: String): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
       

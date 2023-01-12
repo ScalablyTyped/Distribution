@@ -63,7 +63,8 @@ object libAppMod {
       __obj.asInstanceOf[AppClientDeps]
     }
     
-    extension [Self <: AppClientDeps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AppClientDeps] (val x: Self) extends AnyVal {
       
       inline def setClient(value: IClient): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
     }
@@ -82,7 +83,8 @@ object libAppMod {
       __obj.asInstanceOf[AppCreateDetails]
     }
     
-    extension [Self <: AppCreateDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AppCreateDetails] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       

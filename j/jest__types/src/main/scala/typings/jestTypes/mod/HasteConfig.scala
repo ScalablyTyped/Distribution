@@ -44,7 +44,8 @@ object HasteConfig {
     __obj.asInstanceOf[HasteConfig]
   }
   
-  extension [Self <: HasteConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HasteConfig] (val x: Self) extends AnyVal {
     
     inline def setComputeSha1(value: Boolean): Self = StObject.set(x, "computeSha1", value.asInstanceOf[js.Any])
     

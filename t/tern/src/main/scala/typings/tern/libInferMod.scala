@@ -67,7 +67,8 @@ object libInferMod {
     @js.native
     val ^ : ANull = js.native
     
-    extension [Self <: ANull](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ANull] (val x: Self) extends AnyVal {
       
       inline def setAddType(value: /* repeated */ Any => Unit): Self = StObject.set(x, "addType", js.Any.fromFunction1(value))
       
@@ -327,7 +328,8 @@ object libInferMod {
     @js.native
     val ^ : ContextConstructor = js.native
     
-    extension [Self <: Context](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Context] (val x: Self) extends AnyVal {
       
       inline def setBool(value: Primnamebool): Self = StObject.set(x, "bool", value.asInstanceOf[js.Any])
       
@@ -602,7 +604,8 @@ object libInferMod {
     @js.native
     val ^ : PrimConstructor = js.native
     
-    extension [Self <: Prim](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Prim] (val x: Self) extends AnyVal {
       
       inline def setGatherProperties(value: (js.Function1[/* repeated */ Any, Unit], Double) => Unit): Self = StObject.set(x, "gatherProperties", js.Any.fromFunction2(value))
       
@@ -914,7 +917,8 @@ object libInferMod {
       __obj.asInstanceOf[Constraint_]
     }
     
-    extension [Self <: Constraint_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Constraint_] (val x: Self) extends AnyVal {
       
       inline def setPropHint(value: () => js.UndefOr[String]): Self = StObject.set(x, "propHint", js.Any.fromFunction0(value))
       
@@ -987,7 +991,8 @@ object libInferMod {
       __obj.asInstanceOf[IType]
     }
     
-    extension [Self <: IType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IType] (val x: Self) extends AnyVal {
       
       inline def setGetType(value: () => typings.tern.libInferMod.Type): Self = StObject.set(x, "getType", js.Any.fromFunction0(value))
       

@@ -24,7 +24,8 @@ object UploadResult {
     __obj.asInstanceOf[UploadResult]
   }
   
-  extension [Self <: UploadResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UploadResult] (val x: Self) extends AnyVal {
     
     inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

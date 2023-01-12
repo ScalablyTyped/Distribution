@@ -29,7 +29,8 @@ object createGenerateClassNameCreateGenerateClassNameMod {
       __obj.asInstanceOf[GenerateClassNameOptions]
     }
     
-    extension [Self <: GenerateClassNameOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GenerateClassNameOptions] (val x: Self) extends AnyVal {
       
       inline def setDisableGlobal(value: Boolean): Self = StObject.set(x, "disableGlobal", value.asInstanceOf[js.Any])
       

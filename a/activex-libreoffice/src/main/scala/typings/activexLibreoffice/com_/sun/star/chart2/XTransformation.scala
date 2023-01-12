@@ -52,7 +52,8 @@ object XTransformation {
     __obj.asInstanceOf[XTransformation]
   }
   
-  extension [Self <: XTransformation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XTransformation] (val x: Self) extends AnyVal {
     
     inline def setGetSourceDimension(value: () => Double): Self = StObject.set(x, "getSourceDimension", js.Any.fromFunction0(value))
     

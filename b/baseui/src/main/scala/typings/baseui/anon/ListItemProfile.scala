@@ -30,7 +30,8 @@ object ListItemProfile {
     __obj.asInstanceOf[ListItemProfile]
   }
   
-  extension [Self <: ListItemProfile](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListItemProfile] (val x: Self) extends AnyVal {
     
     inline def setChildMenuPopover(value: Override[Any]): Self = StObject.set(x, "ChildMenuPopover", value.asInstanceOf[js.Any])
     

@@ -119,7 +119,8 @@ object AnimationMixerLayer {
     __obj.asInstanceOf[AnimationMixerLayer]
   }
   
-  extension [Self <: AnimationMixerLayer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnimationMixerLayer] (val x: Self) extends AnyVal {
     
     inline def setAnimationLayerName(value: String): Self = StObject.set(x, "animationLayerName", value.asInstanceOf[js.Any])
     

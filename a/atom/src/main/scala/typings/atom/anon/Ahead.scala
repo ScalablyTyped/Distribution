@@ -17,7 +17,8 @@ object Ahead {
     __obj.asInstanceOf[Ahead]
   }
   
-  extension [Self <: Ahead](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Ahead] (val x: Self) extends AnyVal {
     
     inline def setAhead(value: Double): Self = StObject.set(x, "ahead", value.asInstanceOf[js.Any])
     

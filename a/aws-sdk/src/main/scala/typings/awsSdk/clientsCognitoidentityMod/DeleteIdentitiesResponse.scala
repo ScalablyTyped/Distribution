@@ -18,7 +18,8 @@ object DeleteIdentitiesResponse {
     __obj.asInstanceOf[DeleteIdentitiesResponse]
   }
   
-  extension [Self <: DeleteIdentitiesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteIdentitiesResponse] (val x: Self) extends AnyVal {
     
     inline def setUnprocessedIdentityIds(value: UnprocessedIdentityIdList): Self = StObject.set(x, "UnprocessedIdentityIds", value.asInstanceOf[js.Any])
     

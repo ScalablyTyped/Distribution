@@ -36,7 +36,8 @@ object actionAdapterMod {
       __obj.asInstanceOf[MDCChipActionAdapter]
     }
     
-    extension [Self <: MDCChipActionAdapter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MDCChipActionAdapter] (val x: Self) extends AnyVal {
       
       inline def setEmitEvent(value: (MDCChipActionEvents, Any) => Unit): Self = StObject.set(x, "emitEvent", js.Any.fromFunction2(value))
       

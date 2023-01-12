@@ -19,7 +19,8 @@ object Realm {
     __obj.asInstanceOf[Realm]
   }
   
-  extension [Self <: Realm](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Realm] (val x: Self) extends AnyVal {
     
     inline def setAcs(value: String): Self = StObject.set(x, "acs", value.asInstanceOf[js.Any])
     

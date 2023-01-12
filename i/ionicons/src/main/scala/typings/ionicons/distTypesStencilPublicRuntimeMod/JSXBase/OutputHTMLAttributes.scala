@@ -23,7 +23,8 @@ object OutputHTMLAttributes {
     __obj.asInstanceOf[OutputHTMLAttributes[T]]
   }
   
-  extension [Self <: OutputHTMLAttributes[?], T](x: Self & OutputHTMLAttributes[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OutputHTMLAttributes[?], T] (val x: Self & OutputHTMLAttributes[T]) extends AnyVal {
     
     inline def setForm(value: String): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
     

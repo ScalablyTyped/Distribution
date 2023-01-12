@@ -59,7 +59,8 @@ object distExecutorModelAnalysisMod {
       __obj.asInstanceOf[ExecutionInfo]
     }
     
-    extension [Self <: ExecutionInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExecutionInfo] (val x: Self) extends AnyVal {
       
       inline def setDynamicNode(value: Node): Self = StObject.set(x, "dynamicNode", value.asInstanceOf[js.Any])
       

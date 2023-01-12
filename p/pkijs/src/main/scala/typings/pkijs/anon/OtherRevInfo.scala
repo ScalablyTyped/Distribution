@@ -17,7 +17,8 @@ object OtherRevInfo {
     __obj.asInstanceOf[OtherRevInfo]
   }
   
-  extension [Self <: OtherRevInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OtherRevInfo] (val x: Self) extends AnyVal {
     
     inline def setOtherRevInfo(value: String): Self = StObject.set(x, "otherRevInfo", value.asInstanceOf[js.Any])
     

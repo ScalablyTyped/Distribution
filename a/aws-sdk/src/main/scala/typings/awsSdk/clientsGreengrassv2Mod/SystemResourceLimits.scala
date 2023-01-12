@@ -23,7 +23,8 @@ object SystemResourceLimits {
     __obj.asInstanceOf[SystemResourceLimits]
   }
   
-  extension [Self <: SystemResourceLimits](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SystemResourceLimits] (val x: Self) extends AnyVal {
     
     inline def setCpus(value: CPU): Self = StObject.set(x, "cpus", value.asInstanceOf[js.Any])
     

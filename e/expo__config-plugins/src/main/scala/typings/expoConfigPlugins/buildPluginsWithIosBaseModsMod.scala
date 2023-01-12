@@ -84,7 +84,8 @@ object buildPluginsWithIosBaseModsMod {
       __obj.asInstanceOf[IosDefaultProviders]
     }
     
-    extension [Self <: IosDefaultProviders](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IosDefaultProviders] (val x: Self) extends AnyVal {
       
       inline def setAppDelegate(value: BaseModProviderMethods[AppDelegateProjectFile, PartialPickBaseModOptions]): Self = StObject.set(x, "appDelegate", value.asInstanceOf[js.Any])
       

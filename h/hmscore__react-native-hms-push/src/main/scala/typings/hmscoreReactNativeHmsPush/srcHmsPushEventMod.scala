@@ -65,7 +65,8 @@ object srcHmsPushEventMod {
       __obj.asInstanceOf[HmsPushEventListeners]
     }
     
-    extension [Self <: HmsPushEventListeners](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HmsPushEventListeners] (val x: Self) extends AnyVal {
       
       inline def setOnLocalNotificationAction(value: js.Function1[/* result */ DataJSONString, Unit] => NativeEventSubscription): Self = StObject.set(x, "onLocalNotificationAction", js.Any.fromFunction1(value))
       
@@ -141,7 +142,8 @@ object srcHmsPushEventMod {
       __obj.asInstanceOf[HmsPushEvents]
     }
     
-    extension [Self <: HmsPushEvents](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HmsPushEvents] (val x: Self) extends AnyVal {
       
       inline def setLOCAL_NOTIFICATION_ACTION_EVENT(value: LOCAL_NOTIFICATION_ACTION_EVENT): Self = StObject.set(x, "LOCAL_NOTIFICATION_ACTION_EVENT", value.asInstanceOf[js.Any])
       

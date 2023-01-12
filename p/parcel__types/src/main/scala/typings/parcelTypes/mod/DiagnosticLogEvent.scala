@@ -28,7 +28,8 @@ object DiagnosticLogEvent {
     __obj.asInstanceOf[DiagnosticLogEvent]
   }
   
-  extension [Self <: DiagnosticLogEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DiagnosticLogEvent] (val x: Self) extends AnyVal {
     
     inline def setDiagnostics(value: js.Array[Diagnostic]): Self = StObject.set(x, "diagnostics", value.asInstanceOf[js.Any])
     

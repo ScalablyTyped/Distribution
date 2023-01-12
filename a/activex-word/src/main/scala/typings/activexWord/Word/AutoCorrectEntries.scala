@@ -40,7 +40,8 @@ object AutoCorrectEntries {
     __obj.asInstanceOf[AutoCorrectEntries]
   }
   
-  extension [Self <: AutoCorrectEntries](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AutoCorrectEntries] (val x: Self) extends AnyVal {
     
     inline def setAdd(value: (String, String) => AutoCorrectEntry): Self = StObject.set(x, "Add", js.Any.fromFunction2(value))
     

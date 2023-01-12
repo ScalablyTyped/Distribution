@@ -19,7 +19,8 @@ object TransformContainer {
     __obj.asInstanceOf[TransformContainer]
   }
   
-  extension [Self <: TransformContainer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransformContainer] (val x: Self) extends AnyVal {
     
     inline def setChain(value: js.Array[TransformContainer]): Self = StObject.set(x, "chain", value.asInstanceOf[js.Any])
     

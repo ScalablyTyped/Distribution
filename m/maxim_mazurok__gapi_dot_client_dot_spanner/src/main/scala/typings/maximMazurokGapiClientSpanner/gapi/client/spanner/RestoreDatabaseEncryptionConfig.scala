@@ -22,7 +22,8 @@ object RestoreDatabaseEncryptionConfig {
     __obj.asInstanceOf[RestoreDatabaseEncryptionConfig]
   }
   
-  extension [Self <: RestoreDatabaseEncryptionConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RestoreDatabaseEncryptionConfig] (val x: Self) extends AnyVal {
     
     inline def setEncryptionType(value: String): Self = StObject.set(x, "encryptionType", value.asInstanceOf[js.Any])
     

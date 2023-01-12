@@ -28,7 +28,8 @@ object Syntax {
     __obj.asInstanceOf[Syntax]
   }
   
-  extension [Self <: Syntax](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Syntax] (val x: Self) extends AnyVal {
     
     inline def setParse(
       value: (/* css */ String | ToString, /* opts */ js.UndefOr[PickProcessOptionsmapfrom]) => typings.postcss.libRootMod.default | typings.postcss.libDocumentMod.default

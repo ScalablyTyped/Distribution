@@ -18,7 +18,8 @@ object GetOuterHTMLResponse {
     __obj.asInstanceOf[GetOuterHTMLResponse]
   }
   
-  extension [Self <: GetOuterHTMLResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetOuterHTMLResponse] (val x: Self) extends AnyVal {
     
     inline def setOuterHTML(value: String): Self = StObject.set(x, "outerHTML", value.asInstanceOf[js.Any])
   }

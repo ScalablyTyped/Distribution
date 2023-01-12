@@ -442,7 +442,8 @@ object IBaseField {
     __obj.asInstanceOf[IBaseField]
   }
   
-  extension [Self <: IBaseField](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IBaseField] (val x: Self) extends AnyVal {
     
     inline def setActiveError(value: String): Self = StObject.set(x, "activeError", value.asInstanceOf[js.Any])
     

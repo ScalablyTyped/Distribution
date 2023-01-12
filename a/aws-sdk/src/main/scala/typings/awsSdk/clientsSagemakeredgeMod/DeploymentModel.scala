@@ -53,7 +53,8 @@ object DeploymentModel {
     __obj.asInstanceOf[DeploymentModel]
   }
   
-  extension [Self <: DeploymentModel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeploymentModel] (val x: Self) extends AnyVal {
     
     inline def setDesiredState(value: ModelState): Self = StObject.set(x, "DesiredState", value.asInstanceOf[js.Any])
     

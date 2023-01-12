@@ -274,7 +274,8 @@ object anon {
       __obj.asInstanceOf[Typeofqueries]
     }
     
-    extension [Self <: Typeofqueries](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Typeofqueries] (val x: Self) extends AnyVal {
       
       inline def setFindAllByAltText(value: Parameters[FindAllByBoundAttribute[Any]] => ReturnType[FindAllByBoundAttribute[Any]]): Self = StObject.set(x, "findAllByAltText", js.Any.fromFunction1(value))
       

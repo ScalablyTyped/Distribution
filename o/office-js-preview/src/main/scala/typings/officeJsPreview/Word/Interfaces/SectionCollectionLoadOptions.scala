@@ -33,7 +33,8 @@ object SectionCollectionLoadOptions {
     __obj.asInstanceOf[SectionCollectionLoadOptions]
   }
   
-  extension [Self <: SectionCollectionLoadOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SectionCollectionLoadOptions] (val x: Self) extends AnyVal {
     
     inline def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
     

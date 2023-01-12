@@ -24,7 +24,8 @@ object WatchResource {
     __obj.asInstanceOf[WatchResource]
   }
   
-  extension [Self <: WatchResource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WatchResource] (val x: Self) extends AnyVal {
     
     inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     

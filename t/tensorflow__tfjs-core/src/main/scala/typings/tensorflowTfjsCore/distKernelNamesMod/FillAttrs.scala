@@ -20,7 +20,8 @@ object FillAttrs {
     __obj.asInstanceOf[FillAttrs]
   }
   
-  extension [Self <: FillAttrs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FillAttrs] (val x: Self) extends AnyVal {
     
     inline def setDtype(value: DataType): Self = StObject.set(x, "dtype", value.asInstanceOf[js.Any])
     

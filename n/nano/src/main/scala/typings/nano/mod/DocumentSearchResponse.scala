@@ -33,7 +33,8 @@ object DocumentSearchResponse {
     __obj.asInstanceOf[DocumentSearchResponse[V]]
   }
   
-  extension [Self <: DocumentSearchResponse[?], V](x: Self & DocumentSearchResponse[V]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DocumentSearchResponse[?], V] (val x: Self & DocumentSearchResponse[V]) extends AnyVal {
     
     inline def setBookmark(value: String): Self = StObject.set(x, "bookmark", value.asInstanceOf[js.Any])
     

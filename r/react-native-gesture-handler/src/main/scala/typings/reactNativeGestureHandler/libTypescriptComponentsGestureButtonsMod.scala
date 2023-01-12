@@ -144,7 +144,8 @@ object libTypescriptComponentsGestureButtonsMod {
       __obj.asInstanceOf[BaseButtonProps]
     }
     
-    extension [Self <: BaseButtonProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseButtonProps] (val x: Self) extends AnyVal {
       
       inline def setDelayLongPress(value: Double): Self = StObject.set(x, "delayLongPress", value.asInstanceOf[js.Any])
       
@@ -188,7 +189,8 @@ object libTypescriptComponentsGestureButtonsMod {
       __obj.asInstanceOf[BorderlessButtonProps]
     }
     
-    extension [Self <: BorderlessButtonProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BorderlessButtonProps] (val x: Self) extends AnyVal {
       
       inline def setActiveOpacity(value: Double): Self = StObject.set(x, "activeOpacity", value.asInstanceOf[js.Any])
       
@@ -248,7 +250,8 @@ object libTypescriptComponentsGestureButtonsMod {
       __obj.asInstanceOf[RawButtonProps]
     }
     
-    extension [Self <: RawButtonProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RawButtonProps] (val x: Self) extends AnyVal {
       
       inline def setBorderless(value: Boolean): Self = StObject.set(x, "borderless", value.asInstanceOf[js.Any])
       
@@ -301,7 +304,8 @@ object libTypescriptComponentsGestureButtonsMod {
       __obj.asInstanceOf[RectButtonProps]
     }
     
-    extension [Self <: RectButtonProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RectButtonProps] (val x: Self) extends AnyVal {
       
       inline def setActiveOpacity(value: Double): Self = StObject.set(x, "activeOpacity", value.asInstanceOf[js.Any])
       

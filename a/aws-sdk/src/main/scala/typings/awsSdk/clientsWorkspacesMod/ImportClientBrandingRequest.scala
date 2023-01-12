@@ -48,7 +48,8 @@ object ImportClientBrandingRequest {
     __obj.asInstanceOf[ImportClientBrandingRequest]
   }
   
-  extension [Self <: ImportClientBrandingRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImportClientBrandingRequest] (val x: Self) extends AnyVal {
     
     inline def setDeviceTypeAndroid(value: DefaultImportClientBrandingAttributes): Self = StObject.set(x, "DeviceTypeAndroid", value.asInstanceOf[js.Any])
     

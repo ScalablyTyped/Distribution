@@ -15,7 +15,8 @@ object Lineshift {
     __obj.asInstanceOf[Lineshift]
   }
   
-  extension [Self <: Lineshift](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Lineshift] (val x: Self) extends AnyVal {
     
     inline def setLine_shift(value: Double): Self = StObject.set(x, "line_shift", value.asInstanceOf[js.Any])
   }

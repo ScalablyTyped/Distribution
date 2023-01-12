@@ -43,7 +43,8 @@ object IntlCache {
     __obj.asInstanceOf[IntlCache]
   }
   
-  extension [Self <: IntlCache](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IntlCache] (val x: Self) extends AnyVal {
     
     inline def setDateTime(value: Record[String, DateTimeFormat]): Self = StObject.set(x, "dateTime", value.asInstanceOf[js.Any])
     

@@ -35,7 +35,8 @@ object CircleLayoutOptions {
     __obj.asInstanceOf[CircleLayoutOptions]
   }
   
-  extension [Self <: CircleLayoutOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CircleLayoutOptions] (val x: Self) extends AnyVal {
     
     inline def setClockwise(value: Boolean): Self = StObject.set(x, "clockwise", value.asInstanceOf[js.Any])
     

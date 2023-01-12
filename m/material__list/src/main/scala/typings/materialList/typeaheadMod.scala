@@ -53,7 +53,8 @@ object typeaheadMod {
       __obj.asInstanceOf[HandleKeydownOpts]
     }
     
-    extension [Self <: HandleKeydownOpts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HandleKeydownOpts] (val x: Self) extends AnyVal {
       
       inline def setEvent(value: KeyboardEvent): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
       
@@ -97,7 +98,8 @@ object typeaheadMod {
       __obj.asInstanceOf[TypeaheadMatchItemOpts]
     }
     
-    extension [Self <: TypeaheadMatchItemOpts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypeaheadMatchItemOpts] (val x: Self) extends AnyVal {
       
       inline def setFocusItemAtIndex(value: Double => Unit): Self = StObject.set(x, "focusItemAtIndex", js.Any.fromFunction1(value))
       
@@ -135,7 +137,8 @@ object typeaheadMod {
       __obj.asInstanceOf[TypeaheadState]
     }
     
-    extension [Self <: TypeaheadState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypeaheadState] (val x: Self) extends AnyVal {
       
       inline def setBufferClearTimeout(value: Double): Self = StObject.set(x, "bufferClearTimeout", value.asInstanceOf[js.Any])
       

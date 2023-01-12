@@ -21,7 +21,8 @@ object IBatchWriteResponse {
     __obj.asInstanceOf[IBatchWriteResponse]
   }
   
-  extension [Self <: IBatchWriteResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IBatchWriteResponse] (val x: Self) extends AnyVal {
     
     inline def setStatus(value: js.Array[IStatus]): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     

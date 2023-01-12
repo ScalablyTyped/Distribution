@@ -36,7 +36,8 @@ object ExpressionLength {
     __obj.asInstanceOf[ExpressionLength]
   }
   
-  extension [Self <: ExpressionLength](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExpressionLength] (val x: Self) extends AnyVal {
     
     inline def setDefault(value: js.Array[Double]): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     

@@ -39,7 +39,8 @@ object GetSourceRequest {
     __obj.asInstanceOf[GetSourceRequest]
   }
   
-  extension [Self <: GetSourceRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetSourceRequest] (val x: Self) extends AnyVal {
     
     inline def setId(value: Id): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

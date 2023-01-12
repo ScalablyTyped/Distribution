@@ -25,7 +25,8 @@ object ContaineranalysisGoogleDevtoolsCloudbuildV1Source {
     __obj.asInstanceOf[ContaineranalysisGoogleDevtoolsCloudbuildV1Source]
   }
   
-  extension [Self <: ContaineranalysisGoogleDevtoolsCloudbuildV1Source](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContaineranalysisGoogleDevtoolsCloudbuildV1Source] (val x: Self) extends AnyVal {
     
     inline def setRepoSource(value: ContaineranalysisGoogleDevtoolsCloudbuildV1RepoSource): Self = StObject.set(x, "repoSource", value.asInstanceOf[js.Any])
     

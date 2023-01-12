@@ -37,7 +37,8 @@ object BaselineValueFormat {
     __obj.asInstanceOf[BaselineValueFormat]
   }
   
-  extension [Self <: BaselineValueFormat](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BaselineValueFormat] (val x: Self) extends AnyVal {
     
     inline def setComparisonType(value: String): Self = StObject.set(x, "comparisonType", value.asInstanceOf[js.Any])
     

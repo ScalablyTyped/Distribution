@@ -56,7 +56,8 @@ object LensFlare {
     __obj.asInstanceOf[LensFlare]
   }
   
-  extension [Self <: LensFlare](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LensFlare] (val x: Self) extends AnyVal {
     
     inline def setAlphaMode(value: Double): Self = StObject.set(x, "alphaMode", value.asInstanceOf[js.Any])
     

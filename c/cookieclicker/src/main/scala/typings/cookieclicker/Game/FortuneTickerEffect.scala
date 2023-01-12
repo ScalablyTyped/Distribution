@@ -27,7 +27,8 @@ object FortuneTickerEffect {
     __obj.asInstanceOf[FortuneTickerEffect]
   }
   
-  extension [Self <: FortuneTickerEffect](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FortuneTickerEffect] (val x: Self) extends AnyVal {
     
     inline def setSub(value: GenericTieredUpgrade[fortune] | fortuneGC | fortuneCPS): Self = StObject.set(x, "sub", value.asInstanceOf[js.Any])
     

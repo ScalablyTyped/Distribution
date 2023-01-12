@@ -39,7 +39,8 @@ object ComputedDatum {
     __obj.asInstanceOf[ComputedDatum[RawDatum]]
   }
   
-  extension [Self <: ComputedDatum[?], RawDatum](x: Self & ComputedDatum[RawDatum]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ComputedDatum[?], RawDatum] (val x: Self & ComputedDatum[RawDatum]) extends AnyVal {
     
     inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

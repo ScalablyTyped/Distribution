@@ -33,7 +33,8 @@ object ListBuiltInIntentsRequest {
     __obj.asInstanceOf[ListBuiltInIntentsRequest]
   }
   
-  extension [Self <: ListBuiltInIntentsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListBuiltInIntentsRequest] (val x: Self) extends AnyVal {
     
     inline def setLocaleId(value: LocaleId): Self = StObject.set(x, "localeId", value.asInstanceOf[js.Any])
     

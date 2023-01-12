@@ -17,7 +17,8 @@ object DirCriteria {
     __obj.asInstanceOf[DirCriteria]
   }
   
-  extension [Self <: DirCriteria](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DirCriteria] (val x: Self) extends AnyVal {
     
     inline def setEmpty(value: Boolean): Self = StObject.set(x, "empty", value.asInstanceOf[js.Any])
     

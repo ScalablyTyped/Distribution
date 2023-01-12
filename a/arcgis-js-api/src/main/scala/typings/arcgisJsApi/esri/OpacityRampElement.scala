@@ -37,7 +37,8 @@ object OpacityRampElement {
     __obj.asInstanceOf[OpacityRampElement]
   }
   
-  extension [Self <: OpacityRampElement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OpacityRampElement] (val x: Self) extends AnyVal {
     
     inline def setInfos(value: js.Array[OpacityRampStop]): Self = StObject.set(x, "infos", value.asInstanceOf[js.Any])
     

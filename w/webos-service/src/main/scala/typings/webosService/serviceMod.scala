@@ -185,7 +185,8 @@ object serviceMod {
       __obj.asInstanceOf[ServiceOptions]
     }
     
-    extension [Self <: ServiceOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ServiceOptions] (val x: Self) extends AnyVal {
       
       inline def setIdleTimer(value: Double): Self = StObject.set(x, "idleTimer", value.asInstanceOf[js.Any])
       

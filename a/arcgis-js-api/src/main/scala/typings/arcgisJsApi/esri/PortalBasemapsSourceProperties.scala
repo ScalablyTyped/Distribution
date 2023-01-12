@@ -43,7 +43,8 @@ object PortalBasemapsSourceProperties {
     __obj.asInstanceOf[PortalBasemapsSourceProperties]
   }
   
-  extension [Self <: PortalBasemapsSourceProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PortalBasemapsSourceProperties] (val x: Self) extends AnyVal {
     
     inline def setFilterFunction(value: (/* item */ Basemap, /* index */ Double, /* array */ js.Array[Basemap]) => Boolean): Self = StObject.set(x, "filterFunction", js.Any.fromFunction3(value))
     

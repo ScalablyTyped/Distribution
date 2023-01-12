@@ -19,7 +19,8 @@ object NOINDEX {
     __obj.asInstanceOf[NOINDEX]
   }
   
-  extension [Self <: NOINDEX](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NOINDEX] (val x: Self) extends AnyVal {
     
     inline def setNOINDEX(value: `true`): Self = StObject.set(x, "NOINDEX", value.asInstanceOf[js.Any])
     

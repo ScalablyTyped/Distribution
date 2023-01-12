@@ -120,7 +120,8 @@ object mod {
       __obj.asInstanceOf[WAAClock]
     }
     
-    extension [Self <: WAAClock](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WAAClock] (val x: Self) extends AnyVal {
       
       inline def setCallbackAtTime(value: (js.Function1[/* e */ Event, Unit], Double) => Event): Self = StObject.set(x, "callbackAtTime", js.Any.fromFunction2(value))
       

@@ -28,7 +28,8 @@ object Hashes {
     __obj.asInstanceOf[Hashes]
   }
   
-  extension [Self <: Hashes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Hashes] (val x: Self) extends AnyVal {
     
     inline def setCrc32Hash(value: NullableOption[String]): Self = StObject.set(x, "crc32Hash", value.asInstanceOf[js.Any])
     

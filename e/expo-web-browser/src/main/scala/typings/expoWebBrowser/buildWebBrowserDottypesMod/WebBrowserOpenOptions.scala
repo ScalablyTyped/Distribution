@@ -105,7 +105,8 @@ object WebBrowserOpenOptions {
     __obj.asInstanceOf[WebBrowserOpenOptions]
   }
   
-  extension [Self <: WebBrowserOpenOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebBrowserOpenOptions] (val x: Self) extends AnyVal {
     
     inline def setBrowserPackage(value: String): Self = StObject.set(x, "browserPackage", value.asInstanceOf[js.Any])
     

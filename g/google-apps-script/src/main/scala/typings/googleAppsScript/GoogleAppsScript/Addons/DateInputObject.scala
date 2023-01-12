@@ -19,7 +19,8 @@ object DateInputObject {
     __obj.asInstanceOf[DateInputObject]
   }
   
-  extension [Self <: DateInputObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DateInputObject] (val x: Self) extends AnyVal {
     
     inline def setMsSinceEpoch(value: String): Self = StObject.set(x, "msSinceEpoch", value.asInstanceOf[js.Any])
   }

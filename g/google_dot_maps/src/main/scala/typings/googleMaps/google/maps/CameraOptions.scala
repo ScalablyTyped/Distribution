@@ -25,7 +25,8 @@ object CameraOptions {
     __obj.asInstanceOf[CameraOptions]
   }
   
-  extension [Self <: CameraOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CameraOptions] (val x: Self) extends AnyVal {
     
     inline def setCenter(value: LatLngLiteral | LatLng): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
     

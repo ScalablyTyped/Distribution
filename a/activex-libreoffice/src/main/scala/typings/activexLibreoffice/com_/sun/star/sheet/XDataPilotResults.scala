@@ -49,7 +49,8 @@ object XDataPilotResults {
     __obj.asInstanceOf[XDataPilotResults]
   }
   
-  extension [Self <: XDataPilotResults](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XDataPilotResults] (val x: Self) extends AnyVal {
     
     inline def setGetFilteredResults(value: SeqEquiv[DataPilotFieldFilter] => SafeArray[Double]): Self = StObject.set(x, "getFilteredResults", js.Any.fromFunction1(value))
     

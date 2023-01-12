@@ -19,7 +19,8 @@ object IndexList {
     __obj.asInstanceOf[IndexList]
   }
   
-  extension [Self <: IndexList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndexList] (val x: Self) extends AnyVal {
     
     inline def set_workaround(value: Null): Self = StObject.set(x, "_workaround", value.asInstanceOf[js.Any])
   }

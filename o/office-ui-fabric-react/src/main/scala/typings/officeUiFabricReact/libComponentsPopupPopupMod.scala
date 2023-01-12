@@ -71,7 +71,8 @@ object libComponentsPopupPopupMod {
       __obj.asInstanceOf[IPopupState]
     }
     
-    extension [Self <: IPopupState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPopupState] (val x: Self) extends AnyVal {
       
       inline def setNeedsVerticalScrollBar(value: Boolean): Self = StObject.set(x, "needsVerticalScrollBar", value.asInstanceOf[js.Any])
       

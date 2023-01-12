@@ -19,7 +19,8 @@ object DraggingInfo {
     __obj.asInstanceOf[DraggingInfo]
   }
   
-  extension [Self <: DraggingInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DraggingInfo] (val x: Self) extends AnyVal {
     
     inline def setPoint(value: Point): Self = StObject.set(x, "point", value.asInstanceOf[js.Any])
   }

@@ -31,7 +31,8 @@ object AppsDynamiteFrontendBotInfoSupportUrls {
     __obj.asInstanceOf[AppsDynamiteFrontendBotInfoSupportUrls]
   }
   
-  extension [Self <: AppsDynamiteFrontendBotInfoSupportUrls](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppsDynamiteFrontendBotInfoSupportUrls] (val x: Self) extends AnyVal {
     
     inline def setAdminConfigUrl(value: String): Self = StObject.set(x, "adminConfigUrl", value.asInstanceOf[js.Any])
     

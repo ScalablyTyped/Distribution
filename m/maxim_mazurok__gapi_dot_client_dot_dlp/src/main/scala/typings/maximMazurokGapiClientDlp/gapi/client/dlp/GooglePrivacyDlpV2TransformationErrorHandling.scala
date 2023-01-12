@@ -19,7 +19,8 @@ object GooglePrivacyDlpV2TransformationErrorHandling {
     __obj.asInstanceOf[GooglePrivacyDlpV2TransformationErrorHandling]
   }
   
-  extension [Self <: GooglePrivacyDlpV2TransformationErrorHandling](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GooglePrivacyDlpV2TransformationErrorHandling] (val x: Self) extends AnyVal {
     
     inline def setLeaveUntransformed(value: Any): Self = StObject.set(x, "leaveUntransformed", value.asInstanceOf[js.Any])
     

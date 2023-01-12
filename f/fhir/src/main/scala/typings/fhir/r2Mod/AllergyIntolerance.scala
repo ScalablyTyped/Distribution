@@ -122,7 +122,8 @@ object AllergyIntolerance {
     __obj.asInstanceOf[AllergyIntolerance]
   }
   
-  extension [Self <: AllergyIntolerance](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AllergyIntolerance] (val x: Self) extends AnyVal {
     
     inline def setCategory(value: food | medication_ | environment | other): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     

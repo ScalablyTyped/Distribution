@@ -50,7 +50,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[ErrorContext]
     }
     
-    extension [Self <: ErrorContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ErrorContext] (val x: Self) extends AnyVal {
       
       inline def setAttributes(value: StringDictionary[String]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
@@ -193,7 +194,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setAttemptToExtractTokenInPayload(value: Boolean): Self = StObject.set(x, "attemptToExtractTokenInPayload", value.asInstanceOf[js.Any])
       
@@ -275,7 +277,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[RegisterOptions]
     }
     
-    extension [Self <: RegisterOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RegisterOptions] (val x: Self) extends AnyVal {
       
       inline def setVerify(value: (/* decoded */ Any, /* request */ Request[ReqRefDefaults]) => js.Promise[Credentials]): Self = StObject.set(x, "verify", js.Any.fromFunction2(value))
       
@@ -300,7 +303,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[ValidationResult]
     }
     
-    extension [Self <: ValidationResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ValidationResult] (val x: Self) extends AnyVal {
       
       inline def setCredentials(value: Any): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
       

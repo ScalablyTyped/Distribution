@@ -27,7 +27,8 @@ object mod {
         __obj.asInstanceOf[Request]
       }
       
-      extension [Self <: Request](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Request] (val x: Self) extends AnyVal {
         
         inline def setProxy(value: String => Request): Self = StObject.set(x, "proxy", js.Any.fromFunction1(value))
       }

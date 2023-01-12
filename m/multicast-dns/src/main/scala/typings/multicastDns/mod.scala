@@ -84,7 +84,8 @@ object mod {
       __obj.asInstanceOf[FullPacket]
     }
     
-    extension [Self <: FullPacket](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FullPacket] (val x: Self) extends AnyVal {
       
       inline def setAdditionals(value: js.Array[Answer]): Self = StObject.set(x, "additionals", value.asInstanceOf[js.Any])
       
@@ -494,7 +495,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setBind(value: `false` | String): Self = StObject.set(x, "bind", value.asInstanceOf[js.Any])
       
@@ -552,7 +554,8 @@ object mod {
       __obj.asInstanceOf[QueryOutgoingPacket]
     }
     
-    extension [Self <: QueryOutgoingPacket](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QueryOutgoingPacket] (val x: Self) extends AnyVal {
       
       inline def setQuestions(value: js.Array[Question]): Self = StObject.set(x, "questions", value.asInstanceOf[js.Any])
       
@@ -582,7 +585,8 @@ object mod {
       __obj.asInstanceOf[QueryPacket]
     }
     
-    extension [Self <: QueryPacket](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QueryPacket] (val x: Self) extends AnyVal {
       
       inline def setType(value: query): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
@@ -601,7 +605,8 @@ object mod {
       __obj.asInstanceOf[RemoteInfoOutgoing]
     }
     
-    extension [Self <: RemoteInfoOutgoing](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RemoteInfoOutgoing] (val x: Self) extends AnyVal {
       
       inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
@@ -625,7 +630,8 @@ object mod {
       __obj.asInstanceOf[ResponseOutgoingPacket]
     }
     
-    extension [Self <: ResponseOutgoingPacket](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResponseOutgoingPacket] (val x: Self) extends AnyVal {
       
       inline def setAnswers(value: js.Array[Answer]): Self = StObject.set(x, "answers", value.asInstanceOf[js.Any])
       
@@ -655,7 +661,8 @@ object mod {
       __obj.asInstanceOf[ResponsePacket]
     }
     
-    extension [Self <: ResponsePacket](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResponsePacket] (val x: Self) extends AnyVal {
       
       inline def setType(value: response): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }

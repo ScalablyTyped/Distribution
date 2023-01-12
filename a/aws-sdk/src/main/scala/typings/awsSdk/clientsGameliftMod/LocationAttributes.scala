@@ -28,7 +28,8 @@ object LocationAttributes {
     __obj.asInstanceOf[LocationAttributes]
   }
   
-  extension [Self <: LocationAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LocationAttributes] (val x: Self) extends AnyVal {
     
     inline def setLocationState(value: LocationState): Self = StObject.set(x, "LocationState", value.asInstanceOf[js.Any])
     

@@ -95,7 +95,8 @@ object revWalkMod {
         __obj.asInstanceOf[HistoryEntry]
       }
       
-      extension [Self <: HistoryEntry](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: HistoryEntry] (val x: Self) extends AnyVal {
         
         inline def setCommit(value: Commit): Self = StObject.set(x, "commit", value.asInstanceOf[js.Any])
         

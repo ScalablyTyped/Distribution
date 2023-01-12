@@ -70,7 +70,8 @@ object typesRuntimeInternalAwaitBlockMod {
       __obj.asInstanceOf[PromiseInfo[T]]
     }
     
-    extension [Self <: PromiseInfo[?], T](x: Self & PromiseInfo[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PromiseInfo[?], T] (val x: Self & PromiseInfo[T]) extends AnyVal {
       
       inline def setAnchor(value: HTMLElement): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
       

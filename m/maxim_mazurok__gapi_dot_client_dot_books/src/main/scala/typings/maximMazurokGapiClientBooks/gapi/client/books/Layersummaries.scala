@@ -22,7 +22,8 @@ object Layersummaries {
     __obj.asInstanceOf[Layersummaries]
   }
   
-  extension [Self <: Layersummaries](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Layersummaries] (val x: Self) extends AnyVal {
     
     inline def setItems(value: js.Array[Layersummary]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     

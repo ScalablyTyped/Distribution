@@ -85,7 +85,8 @@ object libMod {
       __obj.asInstanceOf[SliceProps]
     }
     
-    extension [Self <: SliceProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SliceProps] (val x: Self) extends AnyVal {
       
       inline def setAriaLabel(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify StringOrCallback */ Any
@@ -239,7 +240,8 @@ object libMod {
       __obj.asInstanceOf[VictoryPieProps]
     }
     
-    extension [Self <: VictoryPieProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VictoryPieProps] (val x: Self) extends AnyVal {
       
       inline def setCategories(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CategoryPropType */ Any

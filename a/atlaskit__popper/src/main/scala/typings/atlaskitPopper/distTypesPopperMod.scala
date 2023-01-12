@@ -65,7 +65,8 @@ object distTypesPopperMod {
       __obj.asInstanceOf[CustomPopperProps[Modifiers]]
     }
     
-    extension [Self <: CustomPopperProps[?], Modifiers](x: Self & CustomPopperProps[Modifiers]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CustomPopperProps[?], Modifiers] (val x: Self & CustomPopperProps[Modifiers]) extends AnyVal {
       
       inline def setChildren(value: /* childrenProps */ PopperChildrenProps => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
       

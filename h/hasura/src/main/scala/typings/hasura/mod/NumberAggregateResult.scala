@@ -43,7 +43,8 @@ object NumberAggregateResult {
     __obj.asInstanceOf[NumberAggregateResult[T, Keys]]
   }
   
-  extension [Self <: NumberAggregateResult[?, ?], T, Keys /* <: /* keyof T */ String */](x: Self & (NumberAggregateResult[T, Keys])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NumberAggregateResult[?, ?], T, Keys /* <: /* keyof T */ String */] (val x: Self & (NumberAggregateResult[T, Keys])) extends AnyVal {
     
     inline def setAvg(
       value: /* import warning: importer.ImportType#apply Failed type conversion: {[ key in Keys ]:? number} */ js.Any

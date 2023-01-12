@@ -52,7 +52,8 @@ object IShadowOptions {
     __obj.asInstanceOf[IShadowOptions]
   }
   
-  extension [Self <: IShadowOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IShadowOptions] (val x: Self) extends AnyVal {
     
     inline def setAffectStroke(value: Boolean): Self = StObject.set(x, "affectStroke", value.asInstanceOf[js.Any])
     

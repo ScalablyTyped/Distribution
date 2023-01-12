@@ -20,7 +20,8 @@ object BucketByTimePeriod {
     __obj.asInstanceOf[BucketByTimePeriod]
   }
   
-  extension [Self <: BucketByTimePeriod](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BucketByTimePeriod] (val x: Self) extends AnyVal {
     
     inline def setTimeZoneId(value: String): Self = StObject.set(x, "timeZoneId", value.asInstanceOf[js.Any])
     

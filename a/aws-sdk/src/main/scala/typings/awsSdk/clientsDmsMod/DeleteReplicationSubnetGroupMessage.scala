@@ -18,7 +18,8 @@ object DeleteReplicationSubnetGroupMessage {
     __obj.asInstanceOf[DeleteReplicationSubnetGroupMessage]
   }
   
-  extension [Self <: DeleteReplicationSubnetGroupMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteReplicationSubnetGroupMessage] (val x: Self) extends AnyVal {
     
     inline def setReplicationSubnetGroupIdentifier(value: String): Self = StObject.set(x, "ReplicationSubnetGroupIdentifier", value.asInstanceOf[js.Any])
   }

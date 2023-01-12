@@ -18,7 +18,8 @@ object StockToolsGuiDefinitionsMeasureMeasureXOptions {
     __obj.asInstanceOf[StockToolsGuiDefinitionsMeasureMeasureXOptions]
   }
   
-  extension [Self <: StockToolsGuiDefinitionsMeasureMeasureXOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StockToolsGuiDefinitionsMeasureMeasureXOptions] (val x: Self) extends AnyVal {
     
     inline def setSymbol(value: String): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
     

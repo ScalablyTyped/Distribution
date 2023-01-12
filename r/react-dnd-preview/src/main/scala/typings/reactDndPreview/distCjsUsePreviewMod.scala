@@ -66,7 +66,8 @@ object distCjsUsePreviewMod {
       __obj.asInstanceOf[usePreviewStateContent[T, El]]
     }
     
-    extension [Self <: usePreviewStateContent[?, ?], T, El /* <: Element */](x: Self & (usePreviewStateContent[T, El])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: usePreviewStateContent[?, ?], T, El /* <: Element */] (val x: Self & (usePreviewStateContent[T, El])) extends AnyVal {
       
       inline def setItem(value: T): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
       
@@ -103,7 +104,8 @@ object distCjsUsePreviewMod {
       __obj.asInstanceOf[usePreviewStateFull[T, El]]
     }
     
-    extension [Self <: usePreviewStateFull[?, ?], T, El /* <: Element */](x: Self & (usePreviewStateFull[T, El])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: usePreviewStateFull[?, ?], T, El /* <: Element */] (val x: Self & (usePreviewStateFull[T, El])) extends AnyVal {
       
       inline def setDisplay(value: `true`): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
     }

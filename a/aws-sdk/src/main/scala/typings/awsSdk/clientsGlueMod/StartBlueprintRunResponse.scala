@@ -18,7 +18,8 @@ object StartBlueprintRunResponse {
     __obj.asInstanceOf[StartBlueprintRunResponse]
   }
   
-  extension [Self <: StartBlueprintRunResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartBlueprintRunResponse] (val x: Self) extends AnyVal {
     
     inline def setRunId(value: IdString): Self = StObject.set(x, "RunId", value.asInstanceOf[js.Any])
     

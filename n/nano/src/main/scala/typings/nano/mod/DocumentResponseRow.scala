@@ -19,7 +19,8 @@ object DocumentResponseRow {
     __obj.asInstanceOf[DocumentResponseRow[D]]
   }
   
-  extension [Self <: DocumentResponseRow[?], D](x: Self & DocumentResponseRow[D]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DocumentResponseRow[?], D] (val x: Self & DocumentResponseRow[D]) extends AnyVal {
     
     inline def setDoc(value: D & Document): Self = StObject.set(x, "doc", value.asInstanceOf[js.Any])
     

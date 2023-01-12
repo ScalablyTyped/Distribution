@@ -18,7 +18,8 @@ object IdentityArgs {
     __obj.asInstanceOf[IdentityArgs]
   }
   
-  extension [Self <: IdentityArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IdentityArgs] (val x: Self) extends AnyVal {
     
     inline def setGain(value: Double): Self = StObject.set(x, "gain", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object FetchByOffsetCapability {
     __obj.asInstanceOf[FetchByOffsetCapability[D]]
   }
   
-  extension [Self <: FetchByOffsetCapability[?], D](x: Self & FetchByOffsetCapability[D]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FetchByOffsetCapability[?], D] (val x: Self & FetchByOffsetCapability[D]) extends AnyVal {
     
     inline def setImplementation(value: iteration | randomAccess): Self = StObject.set(x, "implementation", value.asInstanceOf[js.Any])
   }

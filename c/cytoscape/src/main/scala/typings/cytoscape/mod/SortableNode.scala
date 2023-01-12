@@ -16,7 +16,8 @@ object SortableNode {
     __obj.asInstanceOf[SortableNode]
   }
   
-  extension [Self <: SortableNode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SortableNode] (val x: Self) extends AnyVal {
     
     inline def setData(value: Weight): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
   }

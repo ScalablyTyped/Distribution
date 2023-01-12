@@ -18,7 +18,8 @@ object CreateInstancesResult {
     __obj.asInstanceOf[CreateInstancesResult]
   }
   
-  extension [Self <: CreateInstancesResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateInstancesResult] (val x: Self) extends AnyVal {
     
     inline def setOperations(value: OperationList): Self = StObject.set(x, "operations", value.asInstanceOf[js.Any])
     

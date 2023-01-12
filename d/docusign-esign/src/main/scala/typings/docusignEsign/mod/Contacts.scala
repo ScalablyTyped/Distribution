@@ -113,7 +113,8 @@ object Contacts {
     __obj.asInstanceOf[Contacts]
   }
   
-  extension [Self <: Contacts](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Contacts] (val x: Self) extends AnyVal {
     
     inline def setCloudProvider(value: String): Self = StObject.set(x, "cloudProvider", value.asInstanceOf[js.Any])
     

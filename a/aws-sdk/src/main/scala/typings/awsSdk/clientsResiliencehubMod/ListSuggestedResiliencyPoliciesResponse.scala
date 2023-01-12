@@ -23,7 +23,8 @@ object ListSuggestedResiliencyPoliciesResponse {
     __obj.asInstanceOf[ListSuggestedResiliencyPoliciesResponse]
   }
   
-  extension [Self <: ListSuggestedResiliencyPoliciesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListSuggestedResiliencyPoliciesResponse] (val x: Self) extends AnyVal {
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     

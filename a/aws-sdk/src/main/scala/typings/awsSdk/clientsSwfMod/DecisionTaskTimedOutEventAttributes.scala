@@ -28,7 +28,8 @@ object DecisionTaskTimedOutEventAttributes {
     __obj.asInstanceOf[DecisionTaskTimedOutEventAttributes]
   }
   
-  extension [Self <: DecisionTaskTimedOutEventAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DecisionTaskTimedOutEventAttributes] (val x: Self) extends AnyVal {
     
     inline def setScheduledEventId(value: EventId): Self = StObject.set(x, "scheduledEventId", value.asInstanceOf[js.Any])
     

@@ -635,7 +635,8 @@ object ojGantt {
       __obj.asInstanceOf[Dependency[K1, K2]]
     }
     
-    extension [Self <: Dependency[?, ?], K1, K2](x: Self & (Dependency[K1, K2])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Dependency[?, ?], K1, K2] (val x: Self & (Dependency[K1, K2])) extends AnyVal {
       
       inline def setId(value: K1): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -677,7 +678,8 @@ object ojGantt {
       __obj.asInstanceOf[ReferenceObject]
     }
     
-    extension [Self <: ReferenceObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReferenceObject] (val x: Self) extends AnyVal {
       
       inline def setSvgClassName(value: String): Self = StObject.set(x, "svgClassName", value.asInstanceOf[js.Any])
       
@@ -711,7 +713,8 @@ object ojGantt {
       __obj.asInstanceOf[Row[K2]]
     }
     
-    extension [Self <: Row[?], K2](x: Self & Row[K2]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Row[?], K2] (val x: Self & Row[K2]) extends AnyVal {
       
       inline def setId(value: Any): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -762,7 +765,8 @@ object ojGantt {
       __obj.asInstanceOf[RowAxisLabelRendererContext[K2, D2]]
     }
     
-    extension [Self <: RowAxisLabelRendererContext[?, ?], K2, D2](x: Self & (RowAxisLabelRendererContext[K2, D2])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RowAxisLabelRendererContext[?, ?], K2, D2] (val x: Self & (RowAxisLabelRendererContext[K2, D2])) extends AnyVal {
       
       inline def setComponentElement(value: Element): Self = StObject.set(x, "componentElement", value.asInstanceOf[js.Any])
       
@@ -818,7 +822,8 @@ object ojGantt {
       __obj.asInstanceOf[RowTask[K2]]
     }
     
-    extension [Self <: RowTask[?], K2](x: Self & RowTask[K2]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RowTask[?], K2] (val x: Self & RowTask[K2]) extends AnyVal {
       
       inline def setBaseline(value: End): Self = StObject.set(x, "baseline", value.asInstanceOf[js.Any])
       
@@ -907,7 +912,8 @@ object ojGantt {
       __obj.asInstanceOf[TooltipContext[K2, D2]]
     }
     
-    extension [Self <: TooltipContext[?, ?], K2, D2](x: Self & (TooltipContext[K2, D2])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TooltipContext[?, ?], K2, D2] (val x: Self & (TooltipContext[K2, D2])) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       

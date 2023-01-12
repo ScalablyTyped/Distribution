@@ -167,7 +167,8 @@ object PartialStepsProps {
     __obj.asInstanceOf[PartialStepsProps]
   }
   
-  extension [Self <: PartialStepsProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialStepsProps] (val x: Self) extends AnyVal {
     
     inline def `setAria-activedescendant`(value: String): Self = StObject.set(x, "aria-activedescendant", value.asInstanceOf[js.Any])
     

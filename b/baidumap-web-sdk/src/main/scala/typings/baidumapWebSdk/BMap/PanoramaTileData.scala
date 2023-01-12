@@ -19,7 +19,8 @@ object PanoramaTileData {
     __obj.asInstanceOf[PanoramaTileData]
   }
   
-  extension [Self <: PanoramaTileData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PanoramaTileData] (val x: Self) extends AnyVal {
     
     inline def setCenterHeading(value: Double): Self = StObject.set(x, "centerHeading", value.asInstanceOf[js.Any])
     

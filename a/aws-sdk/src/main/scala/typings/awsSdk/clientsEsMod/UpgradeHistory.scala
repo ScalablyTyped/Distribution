@@ -33,7 +33,8 @@ object UpgradeHistory {
     __obj.asInstanceOf[UpgradeHistory]
   }
   
-  extension [Self <: UpgradeHistory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpgradeHistory] (val x: Self) extends AnyVal {
     
     inline def setStartTimestamp(value: js.Date): Self = StObject.set(x, "StartTimestamp", value.asInstanceOf[js.Any])
     

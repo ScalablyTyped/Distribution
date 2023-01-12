@@ -20,7 +20,8 @@ object PopupTemplateCreatorEvent {
     __obj.asInstanceOf[PopupTemplateCreatorEvent]
   }
   
-  extension [Self <: PopupTemplateCreatorEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PopupTemplateCreatorEvent] (val x: Self) extends AnyVal {
     
     inline def setGraphic(value: Graphic): Self = StObject.set(x, "graphic", value.asInstanceOf[js.Any])
   }

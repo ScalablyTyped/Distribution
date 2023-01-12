@@ -46,7 +46,8 @@ object SingleReference {
     __obj.asInstanceOf[SingleReference]
   }
   
-  extension [Self <: SingleReference](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SingleReference] (val x: Self) extends AnyVal {
     
     inline def setColumn(value: Double): Self = StObject.set(x, "Column", value.asInstanceOf[js.Any])
     

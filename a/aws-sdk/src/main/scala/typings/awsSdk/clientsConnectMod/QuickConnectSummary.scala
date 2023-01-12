@@ -33,7 +33,8 @@ object QuickConnectSummary {
     __obj.asInstanceOf[QuickConnectSummary]
   }
   
-  extension [Self <: QuickConnectSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QuickConnectSummary] (val x: Self) extends AnyVal {
     
     inline def setArn(value: ARN): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     

@@ -398,7 +398,8 @@ object sapUiUnifiedShellHeadUserItemMod {
       __obj.asInstanceOf[ShellHeadUserItemSettings]
     }
     
-    extension [Self <: ShellHeadUserItemSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ShellHeadUserItemSettings] (val x: Self) extends AnyVal {
       
       inline def setAriaLabelledBy(value: js.Array[typings.openui5.sapUiCoreControlMod.default | String]): Self = StObject.set(x, "ariaLabelledBy", value.asInstanceOf[js.Any])
       

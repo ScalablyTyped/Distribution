@@ -23,7 +23,8 @@ object FileRename {
     __obj.asInstanceOf[FileRename]
   }
   
-  extension [Self <: FileRename](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FileRename] (val x: Self) extends AnyVal {
     
     inline def setNewUri(value: String): Self = StObject.set(x, "newUri", value.asInstanceOf[js.Any])
     

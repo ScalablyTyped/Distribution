@@ -19,7 +19,8 @@ object BadgeEnhancer {
     __obj.asInstanceOf[BadgeEnhancer]
   }
   
-  extension [Self <: BadgeEnhancer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BadgeEnhancer] (val x: Self) extends AnyVal {
     
     inline def setBadgeEnhancerContent(value: ComponentType[SizeNumber]): Self = StObject.set(x, "badgeEnhancerContent", value.asInstanceOf[js.Any])
     

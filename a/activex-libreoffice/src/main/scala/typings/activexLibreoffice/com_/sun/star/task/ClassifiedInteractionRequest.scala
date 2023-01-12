@@ -21,7 +21,8 @@ object ClassifiedInteractionRequest {
     __obj.asInstanceOf[ClassifiedInteractionRequest]
   }
   
-  extension [Self <: ClassifiedInteractionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClassifiedInteractionRequest] (val x: Self) extends AnyVal {
     
     inline def setClassification(value: InteractionClassification): Self = StObject.set(x, "Classification", value.asInstanceOf[js.Any])
   }

@@ -817,7 +817,8 @@ object sapMComboBoxBaseMod {
       __obj.asInstanceOf[ComboBoxBaseSettings]
     }
     
-    extension [Self <: ComboBoxBaseSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ComboBoxBaseSettings] (val x: Self) extends AnyVal {
       
       inline def setItems(
         value: js.Array[typings.openui5.sapUiCoreItemMod.default] | typings.openui5.sapUiCoreItemMod.default | AggregationBindingInfo | (/* template literal string: {${string}} */ String)

@@ -22,7 +22,8 @@ object FilesystemChangeRename {
     __obj.asInstanceOf[FilesystemChangeRename]
   }
   
-  extension [Self <: FilesystemChangeRename](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FilesystemChangeRename] (val x: Self) extends AnyVal {
     
     inline def setOldPath(value: String): Self = StObject.set(x, "oldPath", value.asInstanceOf[js.Any])
   }

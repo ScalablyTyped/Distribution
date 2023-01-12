@@ -53,7 +53,8 @@ object libInlineHelpInlineHelpMod extends Shortcut {
       __obj.asInstanceOf[InlineHelpProps]
     }
     
-    extension [Self <: InlineHelpProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InlineHelpProps] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       

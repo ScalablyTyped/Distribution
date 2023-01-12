@@ -36,7 +36,8 @@ object distUseDebouncedCallbackMod {
       __obj.asInstanceOf[CallOptions]
     }
     
-    extension [Self <: CallOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CallOptions] (val x: Self) extends AnyVal {
       
       inline def setLeading(value: Boolean): Self = StObject.set(x, "leading", value.asInstanceOf[js.Any])
       
@@ -72,7 +73,8 @@ object distUseDebouncedCallbackMod {
       __obj.asInstanceOf[ControlFunctions]
     }
     
-    extension [Self <: ControlFunctions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ControlFunctions] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
       
@@ -108,7 +110,8 @@ object distUseDebouncedCallbackMod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setMaxWait(value: Double): Self = StObject.set(x, "maxWait", value.asInstanceOf[js.Any])
       

@@ -19,7 +19,8 @@ object StandaloneFormatSpec {
     __obj.asInstanceOf[StandaloneFormatSpec]
   }
   
-  extension [Self <: StandaloneFormatSpec](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StandaloneFormatSpec] (val x: Self) extends AnyVal {
     
     inline def setFormat(value: js.Array[String]): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     

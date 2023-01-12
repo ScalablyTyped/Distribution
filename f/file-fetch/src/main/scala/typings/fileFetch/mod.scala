@@ -55,7 +55,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[FileFetchOptions]
     }
     
-    extension [Self <: FileFetchOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileFetchOptions] (val x: Self) extends AnyVal {
       
       inline def setBaseDir(value: String): Self = StObject.set(x, "baseDir", value.asInstanceOf[js.Any])
       

@@ -18,7 +18,8 @@ object MaintenanceWindowTaskParameterValueExpression {
     __obj.asInstanceOf[MaintenanceWindowTaskParameterValueExpression]
   }
   
-  extension [Self <: MaintenanceWindowTaskParameterValueExpression](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MaintenanceWindowTaskParameterValueExpression] (val x: Self) extends AnyVal {
     
     inline def setValues(value: MaintenanceWindowTaskParameterValueList): Self = StObject.set(x, "Values", value.asInstanceOf[js.Any])
     

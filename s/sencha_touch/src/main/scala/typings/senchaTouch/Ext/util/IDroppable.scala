@@ -76,7 +76,8 @@ object IDroppable {
     __obj.asInstanceOf[IDroppable]
   }
   
-  extension [Self <: IDroppable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IDroppable] (val x: Self) extends AnyVal {
     
     inline def setActiveCls(value: String): Self = StObject.set(x, "activeCls", value.asInstanceOf[js.Any])
     

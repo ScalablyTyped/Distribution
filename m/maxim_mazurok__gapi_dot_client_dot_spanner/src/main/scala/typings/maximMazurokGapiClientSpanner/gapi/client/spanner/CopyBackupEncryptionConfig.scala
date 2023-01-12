@@ -22,7 +22,8 @@ object CopyBackupEncryptionConfig {
     __obj.asInstanceOf[CopyBackupEncryptionConfig]
   }
   
-  extension [Self <: CopyBackupEncryptionConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CopyBackupEncryptionConfig] (val x: Self) extends AnyVal {
     
     inline def setEncryptionType(value: String): Self = StObject.set(x, "encryptionType", value.asInstanceOf[js.Any])
     

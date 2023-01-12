@@ -30,7 +30,8 @@ object DetectedApp {
     __obj.asInstanceOf[DetectedApp]
   }
   
-  extension [Self <: DetectedApp](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DetectedApp] (val x: Self) extends AnyVal {
     
     inline def setDeviceCount(value: Double): Self = StObject.set(x, "deviceCount", value.asInstanceOf[js.Any])
     

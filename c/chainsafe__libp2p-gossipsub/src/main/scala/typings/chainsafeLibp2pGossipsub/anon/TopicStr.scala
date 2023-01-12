@@ -15,7 +15,8 @@ object TopicStr {
     __obj.asInstanceOf[TopicStr]
   }
   
-  extension [Self <: TopicStr](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TopicStr] (val x: Self) extends AnyVal {
     
     inline def setTopicStr(value: typings.chainsafeLibp2pGossipsub.distSrcTypesMod.TopicStr): Self = StObject.set(x, "topicStr", value.asInstanceOf[js.Any])
   }

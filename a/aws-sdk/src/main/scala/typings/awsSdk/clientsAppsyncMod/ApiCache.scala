@@ -43,7 +43,8 @@ object ApiCache {
     __obj.asInstanceOf[ApiCache]
   }
   
-  extension [Self <: ApiCache](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApiCache] (val x: Self) extends AnyVal {
     
     inline def setApiCachingBehavior(value: ApiCachingBehavior): Self = StObject.set(x, "apiCachingBehavior", value.asInstanceOf[js.Any])
     

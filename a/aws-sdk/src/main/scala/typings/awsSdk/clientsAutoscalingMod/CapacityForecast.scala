@@ -23,7 +23,8 @@ object CapacityForecast {
     __obj.asInstanceOf[CapacityForecast]
   }
   
-  extension [Self <: CapacityForecast](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CapacityForecast] (val x: Self) extends AnyVal {
     
     inline def setTimestamps(value: PredictiveScalingForecastTimestamps): Self = StObject.set(x, "Timestamps", value.asInstanceOf[js.Any])
     

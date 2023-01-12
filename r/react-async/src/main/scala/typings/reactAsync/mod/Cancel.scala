@@ -22,7 +22,8 @@ object Cancel {
     __obj.asInstanceOf[Cancel]
   }
   
-  extension [Self <: Cancel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Cancel] (val x: Self) extends AnyVal {
     
     inline def setType(value: cancel): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

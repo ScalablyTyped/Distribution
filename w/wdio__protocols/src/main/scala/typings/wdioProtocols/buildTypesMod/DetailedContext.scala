@@ -21,7 +21,8 @@ object DetailedContext {
     __obj.asInstanceOf[DetailedContext]
   }
   
-  extension [Self <: DetailedContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DetailedContext] (val x: Self) extends AnyVal {
     
     inline def setBundleId(value: String): Self = StObject.set(x, "bundleId", value.asInstanceOf[js.Any])
     

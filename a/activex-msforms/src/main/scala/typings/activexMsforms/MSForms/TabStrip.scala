@@ -124,7 +124,8 @@ object TabStrip {
     __obj.asInstanceOf[TabStrip]
   }
   
-  extension [Self <: TabStrip](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TabStrip] (val x: Self) extends AnyVal {
     
     inline def setBackColor(value: Double): Self = StObject.set(x, "BackColor", value.asInstanceOf[js.Any])
     

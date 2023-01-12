@@ -99,7 +99,8 @@ object typesSrcDisplayAnnotationLayerMod {
       __obj.asInstanceOf[AnnotationElementParameters]
     }
     
-    extension [Self <: AnnotationElementParameters](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AnnotationElementParameters] (val x: Self) extends AnyVal {
       
       inline def setAnnotationStorage(value: AnnotationStorage): Self = StObject.set(x, "annotationStorage", value.asInstanceOf[js.Any])
       
@@ -193,7 +194,8 @@ object typesSrcDisplayAnnotationLayerMod {
       __obj.asInstanceOf[AnnotationLayerParameters]
     }
     
-    extension [Self <: AnnotationLayerParameters](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AnnotationLayerParameters] (val x: Self) extends AnyVal {
       
       inline def setAnnotationCanvasMap(value: Map[String, HTMLCanvasElement]): Self = StObject.set(x, "annotationCanvasMap", value.asInstanceOf[js.Any])
       

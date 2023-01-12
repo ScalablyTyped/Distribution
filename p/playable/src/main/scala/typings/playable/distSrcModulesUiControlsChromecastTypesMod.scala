@@ -35,7 +35,8 @@ object distSrcModulesUiControlsChromecastTypesMod {
       __obj.asInstanceOf[IChromecastButton]
     }
     
-    extension [Self <: IChromecastButton](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IChromecastButton] (val x: Self) extends AnyVal {
       
       inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
       
@@ -64,7 +65,8 @@ object distSrcModulesUiControlsChromecastTypesMod {
       __obj.asInstanceOf[IChromecastStyles]
     }
     
-    extension [Self <: IChromecastStyles](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IChromecastStyles] (val x: Self) extends AnyVal {
       
       inline def setButtonWrapper(value: String): Self = StObject.set(x, "buttonWrapper", value.asInstanceOf[js.Any])
       
@@ -85,7 +87,8 @@ object distSrcModulesUiControlsChromecastTypesMod {
       __obj.asInstanceOf[IChromecastViewCallbacks]
     }
     
-    extension [Self <: IChromecastViewCallbacks](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IChromecastViewCallbacks] (val x: Self) extends AnyVal {
       
       inline def setOnButtonClick(value: js.Function): Self = StObject.set(x, "onButtonClick", value.asInstanceOf[js.Any])
     }
@@ -113,7 +116,8 @@ object distSrcModulesUiControlsChromecastTypesMod {
       __obj.asInstanceOf[IChromecastViewConfig]
     }
     
-    extension [Self <: IChromecastViewConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IChromecastViewConfig] (val x: Self) extends AnyVal {
       
       inline def setCallbacks(value: IChromecastViewCallbacks): Self = StObject.set(x, "callbacks", value.asInstanceOf[js.Any])
       

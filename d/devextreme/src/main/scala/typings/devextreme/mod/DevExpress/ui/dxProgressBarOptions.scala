@@ -38,7 +38,8 @@ object dxProgressBarOptions {
     __obj.asInstanceOf[dxProgressBarOptions]
   }
   
-  extension [Self <: dxProgressBarOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxProgressBarOptions] (val x: Self) extends AnyVal {
     
     inline def setOnComplete(value: /* e */ CompleteEvent => Unit): Self = StObject.set(x, "onComplete", js.Any.fromFunction1(value))
     

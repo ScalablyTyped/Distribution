@@ -37,7 +37,8 @@ object CreateOrderInput {
     __obj.asInstanceOf[CreateOrderInput]
   }
   
-  extension [Self <: CreateOrderInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateOrderInput] (val x: Self) extends AnyVal {
     
     inline def setLineItems(value: LineItemRequestListDefinition): Self = StObject.set(x, "LineItems", value.asInstanceOf[js.Any])
     

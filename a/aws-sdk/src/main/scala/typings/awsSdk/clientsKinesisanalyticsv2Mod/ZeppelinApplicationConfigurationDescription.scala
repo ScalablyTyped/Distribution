@@ -35,7 +35,8 @@ object ZeppelinApplicationConfigurationDescription {
     __obj.asInstanceOf[ZeppelinApplicationConfigurationDescription]
   }
   
-  extension [Self <: ZeppelinApplicationConfigurationDescription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ZeppelinApplicationConfigurationDescription] (val x: Self) extends AnyVal {
     
     inline def setCatalogConfigurationDescription(value: CatalogConfigurationDescription): Self = StObject.set(x, "CatalogConfigurationDescription", value.asInstanceOf[js.Any])
     

@@ -29,7 +29,8 @@ object System {
       __obj.asInstanceOf[Context]
     }
     
-    extension [Self <: Context](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Context] (val x: Self) extends AnyVal {
       
       inline def setImport(value: (/* moduleId */ String, /* parentUrl */ js.UndefOr[String]) => js.Promise[Module]): Self = StObject.set(x, "import", js.Any.fromFunction2(value))
       
@@ -50,7 +51,8 @@ object System {
       __obj.asInstanceOf[Declare]
     }
     
-    extension [Self <: Declare](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Declare] (val x: Self) extends AnyVal {
       
       inline def setExecute(value: () => Any): Self = StObject.set(x, "execute", js.Any.fromFunction0(value))
       
@@ -99,7 +101,8 @@ object System {
       __obj.asInstanceOf[ImportMap]
     }
     
-    extension [Self <: ImportMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ImportMap] (val x: Self) extends AnyVal {
       
       inline def setImports(value: Record[String, String]): Self = StObject.set(x, "imports", value.asInstanceOf[js.Any])
       
@@ -124,7 +127,8 @@ object System {
       __obj.asInstanceOf[Module]
     }
     
-    extension [Self <: Module](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Module] (val x: Self) extends AnyVal {
       
       inline def setDefault(value: Any): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
       

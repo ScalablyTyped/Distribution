@@ -112,7 +112,8 @@ object MedicationUsage {
     __obj.asInstanceOf[MedicationUsage]
   }
   
-  extension [Self <: MedicationUsage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MedicationUsage] (val x: Self) extends AnyVal {
     
     inline def setAdherence(value: MedicationUsageAdherence): Self = StObject.set(x, "adherence", value.asInstanceOf[js.Any])
     

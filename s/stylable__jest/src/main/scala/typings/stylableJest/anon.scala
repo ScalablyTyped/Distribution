@@ -28,7 +28,8 @@ object anon {
       __obj.asInstanceOf[Code]
     }
     
-    extension [Self <: Code](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Code] (val x: Self) extends AnyVal {
       
       inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     }
@@ -62,7 +63,8 @@ object anon {
       __obj.asInstanceOf[GetCacheKey]
     }
     
-    extension [Self <: GetCacheKey](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetCacheKey] (val x: Self) extends AnyVal {
       
       inline def setCanInstrument(value: Boolean): Self = StObject.set(x, "canInstrument", value.asInstanceOf[js.Any])
       
@@ -85,7 +87,8 @@ object anon {
       __obj.asInstanceOf[Instrument]
     }
     
-    extension [Self <: Instrument](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Instrument] (val x: Self) extends AnyVal {
       
       inline def setInstrument(value: Boolean): Self = StObject.set(x, "instrument", value.asInstanceOf[js.Any])
     }

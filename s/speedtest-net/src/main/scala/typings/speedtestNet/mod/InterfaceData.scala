@@ -23,7 +23,8 @@ object InterfaceData {
     __obj.asInstanceOf[InterfaceData]
   }
   
-  extension [Self <: InterfaceData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InterfaceData] (val x: Self) extends AnyVal {
     
     inline def setExternalIp(value: String): Self = StObject.set(x, "externalIp", value.asInstanceOf[js.Any])
     

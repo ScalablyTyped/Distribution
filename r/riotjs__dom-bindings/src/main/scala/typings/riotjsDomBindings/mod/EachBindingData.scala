@@ -33,7 +33,8 @@ object EachBindingData {
     __obj.asInstanceOf[EachBindingData[Scope, ItemName, IndexName, ItemValue, ExtendedScope]]
   }
   
-  extension [Self <: EachBindingData[?, ?, ?, ?, ?], Scope, ItemName /* <: String */, IndexName /* <: String */, ItemValue /* <: Any */, ExtendedScope](x: Self & (EachBindingData[Scope, ItemName, IndexName, ItemValue, ExtendedScope])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EachBindingData[?, ?, ?, ?, ?], Scope, ItemName /* <: String */, IndexName /* <: String */, ItemValue /* <: Any */, ExtendedScope] (val x: Self & (EachBindingData[Scope, ItemName, IndexName, ItemValue, ExtendedScope])) extends AnyVal {
     
     inline def setCondition(value: /* scope */ ExtendedScope => Any): Self = StObject.set(x, "condition", js.Any.fromFunction1(value))
     

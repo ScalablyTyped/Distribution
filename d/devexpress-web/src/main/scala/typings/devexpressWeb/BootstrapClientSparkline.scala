@@ -55,7 +55,8 @@ object BootstrapClientSparkline {
     __obj.asInstanceOf[BootstrapClientSparkline]
   }
   
-  extension [Self <: BootstrapClientSparkline](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BootstrapClientSparkline] (val x: Self) extends AnyVal {
     
     inline def setTooltipHidden(
       value: ASPxClientEvent[BootstrapClientSparklineTooltipHiddenEventHandler[BootstrapClientSparkline]]

@@ -33,7 +33,8 @@ object DisassociateSubnetsRequest {
     __obj.asInstanceOf[DisassociateSubnetsRequest]
   }
   
-  extension [Self <: DisassociateSubnetsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisassociateSubnetsRequest] (val x: Self) extends AnyVal {
     
     inline def setFirewallArn(value: ResourceArn): Self = StObject.set(x, "FirewallArn", value.asInstanceOf[js.Any])
     

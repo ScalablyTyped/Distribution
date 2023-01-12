@@ -17,7 +17,8 @@ object OpacityChangeTiledImageEvent {
     __obj.asInstanceOf[OpacityChangeTiledImageEvent]
   }
   
-  extension [Self <: OpacityChangeTiledImageEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OpacityChangeTiledImageEvent] (val x: Self) extends AnyVal {
     
     inline def setOpacity(value: Boolean): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
   }

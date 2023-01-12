@@ -29,7 +29,8 @@ object ISynthesizeSpeechConfig {
     __obj.asInstanceOf[ISynthesizeSpeechConfig]
   }
   
-  extension [Self <: ISynthesizeSpeechConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISynthesizeSpeechConfig] (val x: Self) extends AnyVal {
     
     inline def setEffectsProfileId(value: js.Array[String]): Self = StObject.set(x, "effectsProfileId", value.asInstanceOf[js.Any])
     

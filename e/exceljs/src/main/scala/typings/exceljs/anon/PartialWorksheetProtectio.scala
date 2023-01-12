@@ -44,7 +44,8 @@ object PartialWorksheetProtectio {
     __obj.asInstanceOf[PartialWorksheetProtectio]
   }
   
-  extension [Self <: PartialWorksheetProtectio](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialWorksheetProtectio] (val x: Self) extends AnyVal {
     
     inline def setAutoFilter(value: Boolean): Self = StObject.set(x, "autoFilter", value.asInstanceOf[js.Any])
     

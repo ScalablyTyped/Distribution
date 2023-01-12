@@ -27,7 +27,8 @@ object CreateTableRequest {
     __obj.asInstanceOf[CreateTableRequest]
   }
   
-  extension [Self <: CreateTableRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateTableRequest] (val x: Self) extends AnyVal {
     
     inline def setInitialSplits(value: js.Array[Split]): Self = StObject.set(x, "initialSplits", value.asInstanceOf[js.Any])
     

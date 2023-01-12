@@ -169,7 +169,8 @@ object mod {
       __obj.asInstanceOf[IIndexStrategy]
     }
     
-    extension [Self <: IIndexStrategy](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IIndexStrategy] (val x: Self) extends AnyVal {
       
       inline def setExpandToken(value: String => js.Array[String]): Self = StObject.set(x, "expandToken", js.Any.fromFunction1(value))
     }
@@ -186,7 +187,8 @@ object mod {
       __obj.asInstanceOf[ISanitizer]
     }
     
-    extension [Self <: ISanitizer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISanitizer] (val x: Self) extends AnyVal {
       
       inline def setSanitize(value: String => String): Self = StObject.set(x, "sanitize", js.Any.fromFunction1(value))
     }
@@ -208,7 +210,8 @@ object mod {
       __obj.asInstanceOf[ISearchIndex]
     }
     
-    extension [Self <: ISearchIndex](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISearchIndex] (val x: Self) extends AnyVal {
       
       inline def setIndexDocument(value: (String, String, js.Object) => Unit): Self = StObject.set(x, "indexDocument", js.Any.fromFunction3(value))
       
@@ -236,7 +239,8 @@ object mod {
       __obj.asInstanceOf[ITfIdfTokenMetadata]
     }
     
-    extension [Self <: ITfIdfTokenMetadata](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITfIdfTokenMetadata] (val x: Self) extends AnyVal {
       
       inline def set$numDocumentOccurrences(value: Double): Self = StObject.set(x, "$numDocumentOccurrences", value.asInstanceOf[js.Any])
       
@@ -263,7 +267,8 @@ object mod {
       __obj.asInstanceOf[ITfIdfUidMetadata]
     }
     
-    extension [Self <: ITfIdfUidMetadata](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITfIdfUidMetadata] (val x: Self) extends AnyVal {
       
       inline def set$document(value: js.Object): Self = StObject.set(x, "$document", value.asInstanceOf[js.Any])
       
@@ -282,7 +287,8 @@ object mod {
       __obj.asInstanceOf[ITokenizer]
     }
     
-    extension [Self <: ITokenizer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITokenizer] (val x: Self) extends AnyVal {
       
       inline def setTokenize(value: String => js.Array[String]): Self = StObject.set(x, "tokenize", js.Any.fromFunction1(value))
     }

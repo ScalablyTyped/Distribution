@@ -19,7 +19,8 @@ object DataSourceChartProperties {
     __obj.asInstanceOf[DataSourceChartProperties]
   }
   
-  extension [Self <: DataSourceChartProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataSourceChartProperties] (val x: Self) extends AnyVal {
     
     inline def setDataExecutionStatus(value: DataExecutionStatus): Self = StObject.set(x, "dataExecutionStatus", value.asInstanceOf[js.Any])
     

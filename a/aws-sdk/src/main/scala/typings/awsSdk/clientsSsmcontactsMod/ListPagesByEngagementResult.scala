@@ -23,7 +23,8 @@ object ListPagesByEngagementResult {
     __obj.asInstanceOf[ListPagesByEngagementResult]
   }
   
-  extension [Self <: ListPagesByEngagementResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListPagesByEngagementResult] (val x: Self) extends AnyVal {
     
     inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

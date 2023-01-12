@@ -137,7 +137,8 @@ object libInputareaMod {
           __obj.asInstanceOf[typings.jupyterlabCells.libInputareaMod.InputArea.ContentFactory.IOptions]
         }
         
-        extension [Self <: typings.jupyterlabCells.libInputareaMod.InputArea.ContentFactory.IOptions](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: typings.jupyterlabCells.libInputareaMod.InputArea.ContentFactory.IOptions] (val x: Self) extends AnyVal {
           
           inline def setEditorFactory(value: /* options */ typings.jupyterlabCodeeditor.libEditorMod.CodeEditor.IOptions => IEditor): Self = StObject.set(x, "editorFactory", js.Any.fromFunction1(value))
           
@@ -191,7 +192,8 @@ object libInputareaMod {
         __obj.asInstanceOf[IContentFactory]
       }
       
-      extension [Self <: IContentFactory](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IContentFactory] (val x: Self) extends AnyVal {
         
         inline def setCreateInputPrompt(value: () => IInputPrompt): Self = StObject.set(x, "createInputPrompt", js.Any.fromFunction0(value))
         
@@ -233,7 +235,8 @@ object libInputareaMod {
         __obj.asInstanceOf[IOptions]
       }
       
-      extension [Self <: IOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
         
         inline def setContentFactory(value: IContentFactory): Self = StObject.set(x, "contentFactory", value.asInstanceOf[js.Any])
         

@@ -33,7 +33,8 @@ object CalculateRouteMatrixResponse {
     __obj.asInstanceOf[CalculateRouteMatrixResponse]
   }
   
-  extension [Self <: CalculateRouteMatrixResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CalculateRouteMatrixResponse] (val x: Self) extends AnyVal {
     
     inline def setRouteMatrix(value: RouteMatrix): Self = StObject.set(x, "RouteMatrix", value.asInstanceOf[js.Any])
     

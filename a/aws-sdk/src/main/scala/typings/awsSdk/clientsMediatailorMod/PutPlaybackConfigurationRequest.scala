@@ -83,7 +83,8 @@ object PutPlaybackConfigurationRequest {
     __obj.asInstanceOf[PutPlaybackConfigurationRequest]
   }
   
-  extension [Self <: PutPlaybackConfigurationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutPlaybackConfigurationRequest] (val x: Self) extends AnyVal {
     
     inline def setAdDecisionServerUrl(value: _String): Self = StObject.set(x, "AdDecisionServerUrl", value.asInstanceOf[js.Any])
     

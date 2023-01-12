@@ -23,7 +23,8 @@ object PublishFunctionRequest {
     __obj.asInstanceOf[PublishFunctionRequest]
   }
   
-  extension [Self <: PublishFunctionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PublishFunctionRequest] (val x: Self) extends AnyVal {
     
     inline def setIfMatch(value: String): Self = StObject.set(x, "IfMatch", value.asInstanceOf[js.Any])
     

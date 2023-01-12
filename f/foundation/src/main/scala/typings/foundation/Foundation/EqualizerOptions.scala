@@ -18,7 +18,8 @@ object EqualizerOptions {
     __obj.asInstanceOf[EqualizerOptions]
   }
   
-  extension [Self <: EqualizerOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EqualizerOptions] (val x: Self) extends AnyVal {
     
     inline def setEqualize_on_stack(value: Boolean): Self = StObject.set(x, "equalize_on_stack", value.asInstanceOf[js.Any])
     

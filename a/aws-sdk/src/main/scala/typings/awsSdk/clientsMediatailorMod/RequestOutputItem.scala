@@ -33,7 +33,8 @@ object RequestOutputItem {
     __obj.asInstanceOf[RequestOutputItem]
   }
   
-  extension [Self <: RequestOutputItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RequestOutputItem] (val x: Self) extends AnyVal {
     
     inline def setDashPlaylistSettings(value: DashPlaylistSettings): Self = StObject.set(x, "DashPlaylistSettings", value.asInstanceOf[js.Any])
     

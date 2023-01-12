@@ -19,7 +19,8 @@ object QueryDefinitionQuery {
     __obj.asInstanceOf[QueryDefinitionQuery]
   }
   
-  extension [Self <: QueryDefinitionQuery](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryDefinitionQuery] (val x: Self) extends AnyVal {
     
     inline def setQuery(value: DefinitionQuery): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     

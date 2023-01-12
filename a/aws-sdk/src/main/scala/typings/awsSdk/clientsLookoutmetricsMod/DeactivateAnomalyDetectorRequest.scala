@@ -18,7 +18,8 @@ object DeactivateAnomalyDetectorRequest {
     __obj.asInstanceOf[DeactivateAnomalyDetectorRequest]
   }
   
-  extension [Self <: DeactivateAnomalyDetectorRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeactivateAnomalyDetectorRequest] (val x: Self) extends AnyVal {
     
     inline def setAnomalyDetectorArn(value: Arn): Self = StObject.set(x, "AnomalyDetectorArn", value.asInstanceOf[js.Any])
   }

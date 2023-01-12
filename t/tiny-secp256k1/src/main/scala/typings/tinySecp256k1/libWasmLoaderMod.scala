@@ -134,7 +134,8 @@ object libWasmLoaderMod extends Shortcut {
       __obj.asInstanceOf[Secp256k1WASM]
     }
     
-    extension [Self <: Secp256k1WASM](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Secp256k1WASM] (val x: Self) extends AnyVal {
       
       inline def setEXTRA_DATA_INPUT(value: WebAssemblyGlobal): Self = StObject.set(x, "EXTRA_DATA_INPUT", value.asInstanceOf[js.Any])
       
@@ -209,7 +210,8 @@ object libWasmLoaderMod extends Shortcut {
       __obj.asInstanceOf[WebAssemblyGlobal]
     }
     
-    extension [Self <: WebAssemblyGlobal](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WebAssemblyGlobal] (val x: Self) extends AnyVal {
       
       inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
@@ -226,7 +228,8 @@ object libWasmLoaderMod extends Shortcut {
       __obj.asInstanceOf[WebAssemblyMemory]
     }
     
-    extension [Self <: WebAssemblyMemory](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WebAssemblyMemory] (val x: Self) extends AnyVal {
       
       inline def setBuffer(value: js.typedarray.Uint8Array): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
     }

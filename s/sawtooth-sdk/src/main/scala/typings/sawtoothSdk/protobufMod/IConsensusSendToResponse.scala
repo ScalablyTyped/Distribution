@@ -17,7 +17,8 @@ object IConsensusSendToResponse {
     __obj.asInstanceOf[IConsensusSendToResponse]
   }
   
-  extension [Self <: IConsensusSendToResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IConsensusSendToResponse] (val x: Self) extends AnyVal {
     
     inline def setStatus(value: Status): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     

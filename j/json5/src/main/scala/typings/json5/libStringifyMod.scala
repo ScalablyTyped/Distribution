@@ -111,7 +111,8 @@ object libStringifyMod {
       __obj.asInstanceOf[StringifyOptions]
     }
     
-    extension [Self <: StringifyOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StringifyOptions] (val x: Self) extends AnyVal {
       
       inline def setQuote(value: String): Self = StObject.set(x, "quote", value.asInstanceOf[js.Any])
       

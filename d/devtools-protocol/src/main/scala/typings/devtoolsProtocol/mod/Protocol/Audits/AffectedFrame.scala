@@ -16,7 +16,8 @@ object AffectedFrame {
     __obj.asInstanceOf[AffectedFrame]
   }
   
-  extension [Self <: AffectedFrame](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AffectedFrame] (val x: Self) extends AnyVal {
     
     inline def setFrameId(value: FrameId): Self = StObject.set(x, "frameId", value.asInstanceOf[js.Any])
   }

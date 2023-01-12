@@ -165,7 +165,8 @@ object ojfilepickerMod {
       __obj.asInstanceOf[FileUploadTransport]
     }
     
-    extension [Self <: FileUploadTransport](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileUploadTransport] (val x: Self) extends AnyVal {
       
       inline def setFlush(value: () => Unit): Self = StObject.set(x, "flush", js.Any.fromFunction0(value))
       
@@ -1293,7 +1294,8 @@ object ojfilepickerMod {
       __obj.asInstanceOf[ojFilePickerEventMap]
     }
     
-    extension [Self <: ojFilePickerEventMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ojFilePickerEventMap] (val x: Self) extends AnyVal {
       
       inline def setAcceptChanged(value: JetElementCustomEvent[js.Array[String] | Null]): Self = StObject.set(x, "acceptChanged", value.asInstanceOf[js.Any])
       
@@ -1322,7 +1324,8 @@ object ojfilepickerMod {
       __obj.asInstanceOf[ojFilePickerSettableProperties]
     }
     
-    extension [Self <: ojFilePickerSettableProperties](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ojFilePickerSettableProperties] (val x: Self) extends AnyVal {
       
       inline def setAccept(value: js.Array[String]): Self = StObject.set(x, "accept", value.asInstanceOf[js.Any])
       
@@ -1354,7 +1357,8 @@ object ojfilepickerMod {
       __obj.asInstanceOf[ojFilePickerSettablePropertiesLenient]
     }
     
-    extension [Self <: ojFilePickerSettablePropertiesLenient](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ojFilePickerSettablePropertiesLenient] (val x: Self) extends AnyVal {
       
       inline def setAccept(value: js.Array[String]): Self = StObject.set(x, "accept", value.asInstanceOf[js.Any])
       

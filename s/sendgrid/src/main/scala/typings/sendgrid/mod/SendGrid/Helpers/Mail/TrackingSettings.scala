@@ -42,7 +42,8 @@ object TrackingSettings {
     __obj.asInstanceOf[TrackingSettings]
   }
   
-  extension [Self <: TrackingSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TrackingSettings] (val x: Self) extends AnyVal {
     
     inline def setGetClickTracking(value: () => ClickTracking): Self = StObject.set(x, "getClickTracking", js.Any.fromFunction0(value))
     

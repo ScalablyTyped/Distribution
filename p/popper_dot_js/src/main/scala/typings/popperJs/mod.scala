@@ -148,7 +148,8 @@ object mod {
         __obj.asInstanceOf[Attributes]
       }
       
-      extension [Self <: Attributes](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Attributes] (val x: Self) extends AnyVal {
         
         inline def `setX-out-of-boundaries`(value: _empty | `false`): Self = StObject.set(x, "x-out-of-boundaries", value.asInstanceOf[js.Any])
         
@@ -171,7 +172,8 @@ object mod {
         __obj.asInstanceOf[typings.popperJs.mod.Popper.BaseModifier]
       }
       
-      extension [Self <: typings.popperJs.mod.Popper.BaseModifier](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.popperJs.mod.Popper.BaseModifier] (val x: Self) extends AnyVal {
         
         inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
         
@@ -262,7 +264,8 @@ object mod {
         __obj.asInstanceOf[typings.popperJs.mod.Popper.Data]
       }
       
-      extension [Self <: typings.popperJs.mod.Popper.Data](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.popperJs.mod.Popper.Data] (val x: Self) extends AnyVal {
         
         inline def setArrowElement(value: Element): Self = StObject.set(x, "arrowElement", value.asInstanceOf[js.Any])
         
@@ -325,7 +328,8 @@ object mod {
         __obj.asInstanceOf[typings.popperJs.mod.Popper.Modifiers]
       }
       
-      extension [Self <: typings.popperJs.mod.Popper.Modifiers](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.popperJs.mod.Popper.Modifiers] (val x: Self) extends AnyVal {
         
         inline def setApplyStyle(value: BaseModifieronLoadFunctio): Self = StObject.set(x, "applyStyle", value.asInstanceOf[js.Any])
         
@@ -369,7 +373,8 @@ object mod {
       }
     }
     
-    extension [Self <: Popper](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Popper] (val x: Self) extends AnyVal {
       
       inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
       
@@ -405,7 +410,8 @@ object mod {
         __obj.asInstanceOf[typings.popperJs.mod.Popper.Offset]
       }
       
-      extension [Self <: typings.popperJs.mod.Popper.Offset](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.popperJs.mod.Popper.Offset] (val x: Self) extends AnyVal {
         
         inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
         
@@ -434,7 +440,8 @@ object mod {
         __obj.asInstanceOf[typings.popperJs.mod.Popper.Padding]
       }
       
-      extension [Self <: typings.popperJs.mod.Popper.Padding](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.popperJs.mod.Popper.Padding] (val x: Self) extends AnyVal {
         
         inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
         
@@ -528,7 +535,8 @@ object mod {
         __obj.asInstanceOf[typings.popperJs.mod.Popper.PopperOptions]
       }
       
-      extension [Self <: typings.popperJs.mod.Popper.PopperOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.popperJs.mod.Popper.PopperOptions] (val x: Self) extends AnyVal {
         
         inline def setEventsEnabled(value: Boolean): Self = StObject.set(x, "eventsEnabled", value.asInstanceOf[js.Any])
         
@@ -595,7 +603,8 @@ object mod {
         __obj.asInstanceOf[typings.popperJs.mod.Popper.ReferenceObject]
       }
       
-      extension [Self <: typings.popperJs.mod.Popper.ReferenceObject](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.popperJs.mod.Popper.ReferenceObject] (val x: Self) extends AnyVal {
         
         inline def setClientHeight(value: Double): Self = StObject.set(x, "clientHeight", value.asInstanceOf[js.Any])
         

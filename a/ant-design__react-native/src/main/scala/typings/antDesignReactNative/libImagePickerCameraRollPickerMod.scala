@@ -124,7 +124,8 @@ object libImagePickerCameraRollPickerMod {
       __obj.asInstanceOf[CameraRollPickerProps]
     }
     
-    extension [Self <: CameraRollPickerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CameraRollPickerProps] (val x: Self) extends AnyVal {
       
       inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
       
@@ -173,7 +174,8 @@ object libImagePickerCameraRollPickerMod {
       __obj.asInstanceOf[CameraRollPickerState]
     }
     
-    extension [Self <: CameraRollPickerState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CameraRollPickerState] (val x: Self) extends AnyVal {
       
       inline def setImages(value: js.Array[Any]): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
       
@@ -200,7 +202,8 @@ object libImagePickerCameraRollPickerMod {
       __obj.asInstanceOf[CameraRollPickerStyle]
     }
     
-    extension [Self <: CameraRollPickerStyle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CameraRollPickerStyle] (val x: Self) extends AnyVal {
       
       inline def setMarker(value: ViewStyle): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
       

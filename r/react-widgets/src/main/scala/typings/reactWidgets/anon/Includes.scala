@@ -33,7 +33,8 @@ object Includes {
     __obj.asInstanceOf[Includes]
   }
   
-  extension [Self <: Includes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Includes] (val x: Self) extends AnyVal {
     
     inline def setFindOrSelf(value: (js.Array[Any], Value) => Any): Self = StObject.set(x, "findOrSelf", js.Any.fromFunction2(value))
     

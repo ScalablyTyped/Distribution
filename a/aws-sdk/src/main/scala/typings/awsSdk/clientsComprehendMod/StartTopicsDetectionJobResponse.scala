@@ -28,7 +28,8 @@ object StartTopicsDetectionJobResponse {
     __obj.asInstanceOf[StartTopicsDetectionJobResponse]
   }
   
-  extension [Self <: StartTopicsDetectionJobResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartTopicsDetectionJobResponse] (val x: Self) extends AnyVal {
     
     inline def setJobArn(value: ComprehendArn): Self = StObject.set(x, "JobArn", value.asInstanceOf[js.Any])
     

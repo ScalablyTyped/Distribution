@@ -15,7 +15,8 @@ object GetLayersForNodeResponse {
     __obj.asInstanceOf[GetLayersForNodeResponse]
   }
   
-  extension [Self <: GetLayersForNodeResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetLayersForNodeResponse] (val x: Self) extends AnyVal {
     
     inline def setRootLayer(value: CSSLayerData): Self = StObject.set(x, "rootLayer", value.asInstanceOf[js.Any])
   }

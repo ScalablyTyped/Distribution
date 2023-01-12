@@ -30,7 +30,8 @@ object TileEvent {
     __obj.asInstanceOf[TileEvent]
   }
   
-  extension [Self <: TileEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TileEvent] (val x: Self) extends AnyVal {
     
     inline def setCoords(value: Coords): Self = StObject.set(x, "coords", value.asInstanceOf[js.Any])
     

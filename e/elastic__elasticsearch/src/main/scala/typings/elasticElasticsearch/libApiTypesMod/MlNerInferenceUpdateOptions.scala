@@ -17,7 +17,8 @@ object MlNerInferenceUpdateOptions {
     __obj.asInstanceOf[MlNerInferenceUpdateOptions]
   }
   
-  extension [Self <: MlNerInferenceUpdateOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlNerInferenceUpdateOptions] (val x: Self) extends AnyVal {
     
     inline def setResults_field(value: String): Self = StObject.set(x, "results_field", value.asInstanceOf[js.Any])
     

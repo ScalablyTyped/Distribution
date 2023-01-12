@@ -21,7 +21,8 @@ object MlDataDescription {
     __obj.asInstanceOf[MlDataDescription]
   }
   
-  extension [Self <: MlDataDescription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlDataDescription] (val x: Self) extends AnyVal {
     
     inline def setField_delimiter(value: String): Self = StObject.set(x, "field_delimiter", value.asInstanceOf[js.Any])
     

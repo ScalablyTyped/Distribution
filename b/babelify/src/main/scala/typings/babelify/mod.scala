@@ -52,7 +52,8 @@ object mod {
       __obj.asInstanceOf[BabelifyOptions]
     }
     
-    extension [Self <: BabelifyOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BabelifyOptions] (val x: Self) extends AnyVal {
       
       inline def setExtensions(value: String | js.Array[String]): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
       

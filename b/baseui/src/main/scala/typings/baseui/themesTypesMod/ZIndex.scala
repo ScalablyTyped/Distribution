@@ -15,7 +15,8 @@ object ZIndex {
     __obj.asInstanceOf[ZIndex]
   }
   
-  extension [Self <: ZIndex](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ZIndex] (val x: Self) extends AnyVal {
     
     inline def setModal(value: Double): Self = StObject.set(x, "modal", value.asInstanceOf[js.Any])
   }

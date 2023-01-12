@@ -191,7 +191,8 @@ object SymbolsProps {
     __obj.asInstanceOf[SymbolsProps]
   }
   
-  extension [Self <: SymbolsProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SymbolsProps] (val x: Self) extends AnyVal {
     
     inline def setAlignmentBaseline(value: String): Self = StObject.set(x, "alignmentBaseline", value.asInstanceOf[js.Any])
     

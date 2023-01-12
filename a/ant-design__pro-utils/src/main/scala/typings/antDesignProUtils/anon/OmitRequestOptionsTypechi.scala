@@ -26,7 +26,8 @@ object OmitRequestOptionsTypechi {
     __obj.asInstanceOf[OmitRequestOptionsTypechi]
   }
   
-  extension [Self <: OmitRequestOptionsTypechi](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OmitRequestOptionsTypechi] (val x: Self) extends AnyVal {
     
     inline def setLabel(value: ReactNode): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object GetOfferingStatusRequest {
     __obj.asInstanceOf[GetOfferingStatusRequest]
   }
   
-  extension [Self <: GetOfferingStatusRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetOfferingStatusRequest] (val x: Self) extends AnyVal {
     
     inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     

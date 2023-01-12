@@ -30,7 +30,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[AwsRegionInfo]
     }
     
-    extension [Self <: AwsRegionInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AwsRegionInfo] (val x: Self) extends AnyVal {
       
       inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
@@ -66,7 +67,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[ListOptions]
     }
     
-    extension [Self <: ListOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListOptions] (val x: Self) extends AnyVal {
       
       inline def setPublic(value: Boolean): Self = StObject.set(x, "public", value.asInstanceOf[js.Any])
       
@@ -105,7 +107,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[LookupOptionsCode]
     }
     
-    extension [Self <: LookupOptionsCode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LookupOptionsCode] (val x: Self) extends AnyVal {
       
       inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     }
@@ -124,7 +127,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[LookupOptionsName]
     }
     
-    extension [Self <: LookupOptionsName](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LookupOptionsName] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }

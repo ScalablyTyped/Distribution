@@ -64,7 +64,8 @@ object UpdateDestinationInput {
     __obj.asInstanceOf[UpdateDestinationInput]
   }
   
-  extension [Self <: UpdateDestinationInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateDestinationInput] (val x: Self) extends AnyVal {
     
     inline def setAmazonopensearchserviceDestinationUpdate(value: AmazonopensearchserviceDestinationUpdate): Self = StObject.set(x, "AmazonopensearchserviceDestinationUpdate", value.asInstanceOf[js.Any])
     

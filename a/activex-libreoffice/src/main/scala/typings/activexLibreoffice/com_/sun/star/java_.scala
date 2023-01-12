@@ -80,7 +80,8 @@ object java_ {
       __obj.asInstanceOf[JavaVMCreationFailureException]
     }
     
-    extension [Self <: JavaVMCreationFailureException](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JavaVMCreationFailureException] (val x: Self) extends AnyVal {
       
       inline def setErrorCode(value: Double): Self = StObject.set(x, "ErrorCode", value.asInstanceOf[js.Any])
     }
@@ -112,7 +113,8 @@ object java_ {
       __obj.asInstanceOf[MissingJavaRuntimeException]
     }
     
-    extension [Self <: MissingJavaRuntimeException](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MissingJavaRuntimeException] (val x: Self) extends AnyVal {
       
       inline def setURLRuntimeLib(value: String): Self = StObject.set(x, "URLRuntimeLib", value.asInstanceOf[js.Any])
     }
@@ -151,7 +153,8 @@ object java_ {
       __obj.asInstanceOf[WrongJavaVersionException]
     }
     
-    extension [Self <: WrongJavaVersionException](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WrongJavaVersionException] (val x: Self) extends AnyVal {
       
       inline def setDetectedVersion(value: String): Self = StObject.set(x, "DetectedVersion", value.asInstanceOf[js.Any])
       
@@ -200,7 +203,8 @@ object java_ {
       __obj.asInstanceOf[XJavaThreadRegister11]
     }
     
-    extension [Self <: XJavaThreadRegister11](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XJavaThreadRegister11] (val x: Self) extends AnyVal {
       
       inline def setIsThreadAttached(value: () => Boolean): Self = StObject.set(x, "isThreadAttached", js.Any.fromFunction0(value))
       
@@ -271,7 +275,8 @@ object java_ {
       __obj.asInstanceOf[XJavaVM]
     }
     
-    extension [Self <: XJavaVM](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XJavaVM] (val x: Self) extends AnyVal {
       
       inline def setGetJavaVM(value: SeqEquiv[Double] => Any): Self = StObject.set(x, "getJavaVM", js.Any.fromFunction1(value))
       

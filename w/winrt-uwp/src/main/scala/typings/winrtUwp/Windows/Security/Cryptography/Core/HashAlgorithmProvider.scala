@@ -39,7 +39,8 @@ object HashAlgorithmProvider {
     __obj.asInstanceOf[HashAlgorithmProvider]
   }
   
-  extension [Self <: HashAlgorithmProvider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HashAlgorithmProvider] (val x: Self) extends AnyVal {
     
     inline def setAlgorithmName(value: String): Self = StObject.set(x, "algorithmName", value.asInstanceOf[js.Any])
     

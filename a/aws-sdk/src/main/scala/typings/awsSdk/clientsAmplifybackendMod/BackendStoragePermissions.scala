@@ -23,7 +23,8 @@ object BackendStoragePermissions {
     __obj.asInstanceOf[BackendStoragePermissions]
   }
   
-  extension [Self <: BackendStoragePermissions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BackendStoragePermissions] (val x: Self) extends AnyVal {
     
     inline def setAuthenticated(value: ListOfAuthenticatedElement): Self = StObject.set(x, "Authenticated", value.asInstanceOf[js.Any])
     

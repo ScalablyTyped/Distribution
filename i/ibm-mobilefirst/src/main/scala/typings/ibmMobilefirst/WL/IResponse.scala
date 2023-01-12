@@ -15,7 +15,8 @@ object IResponse {
     __obj.asInstanceOf[IResponse]
   }
   
-  extension [Self <: IResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IResponse] (val x: Self) extends AnyVal {
     
     inline def setInvocationContext(value: Any): Self = StObject.set(x, "invocationContext", value.asInstanceOf[js.Any])
     

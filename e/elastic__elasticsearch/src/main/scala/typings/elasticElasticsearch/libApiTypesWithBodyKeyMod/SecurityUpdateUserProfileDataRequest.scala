@@ -27,7 +27,8 @@ object SecurityUpdateUserProfileDataRequest {
     __obj.asInstanceOf[SecurityUpdateUserProfileDataRequest]
   }
   
-  extension [Self <: SecurityUpdateUserProfileDataRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SecurityUpdateUserProfileDataRequest] (val x: Self) extends AnyVal {
     
     inline def setBody(value: Labels): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

@@ -68,7 +68,8 @@ object mod {
       __obj.asInstanceOf[SensorData]
     }
     
-    extension [Self <: SensorData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SensorData] (val x: Self) extends AnyVal {
       
       inline def setHumidity(value: Double): Self = StObject.set(x, "humidity", value.asInstanceOf[js.Any])
       

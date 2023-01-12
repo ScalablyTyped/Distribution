@@ -18,7 +18,8 @@ object ContextID {
     __obj.asInstanceOf[ContextID]
   }
   
-  extension [Self <: ContextID](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContextID] (val x: Self) extends AnyVal {
     
     inline def setContextID(value: Double): Self = StObject.set(x, "contextID", value.asInstanceOf[js.Any])
     

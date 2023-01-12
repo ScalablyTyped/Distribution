@@ -19,7 +19,8 @@ object UpgradeInsight {
     __obj.asInstanceOf[UpgradeInsight]
   }
   
-  extension [Self <: UpgradeInsight](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpgradeInsight] (val x: Self) extends AnyVal {
     
     inline def setPackageName(value: String): Self = StObject.set(x, "packageName", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object RegisterDebuggeeResponse {
     __obj.asInstanceOf[RegisterDebuggeeResponse]
   }
   
-  extension [Self <: RegisterDebuggeeResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RegisterDebuggeeResponse] (val x: Self) extends AnyVal {
     
     inline def setAgentId(value: String): Self = StObject.set(x, "agentId", value.asInstanceOf[js.Any])
     

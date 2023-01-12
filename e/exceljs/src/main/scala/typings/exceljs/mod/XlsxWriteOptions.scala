@@ -29,7 +29,8 @@ object XlsxWriteOptions {
     __obj.asInstanceOf[XlsxWriteOptions]
   }
   
-  extension [Self <: XlsxWriteOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XlsxWriteOptions] (val x: Self) extends AnyVal {
     
     inline def setZip(value: PartialJSZipGeneratorOpti): Self = StObject.set(x, "zip", value.asInstanceOf[js.Any])
   }

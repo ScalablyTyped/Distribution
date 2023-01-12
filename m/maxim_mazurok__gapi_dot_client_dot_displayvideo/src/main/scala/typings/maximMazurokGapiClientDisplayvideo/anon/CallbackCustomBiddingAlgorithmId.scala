@@ -56,7 +56,8 @@ object CallbackCustomBiddingAlgorithmId {
     __obj.asInstanceOf[CallbackCustomBiddingAlgorithmId]
   }
   
-  extension [Self <: CallbackCustomBiddingAlgorithmId](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CallbackCustomBiddingAlgorithmId] (val x: Self) extends AnyVal {
     
     inline def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
     

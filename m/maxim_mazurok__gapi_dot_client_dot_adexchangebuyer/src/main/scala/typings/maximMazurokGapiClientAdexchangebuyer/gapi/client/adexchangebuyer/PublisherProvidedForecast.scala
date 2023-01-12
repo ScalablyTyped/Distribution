@@ -22,7 +22,8 @@ object PublisherProvidedForecast {
     __obj.asInstanceOf[PublisherProvidedForecast]
   }
   
-  extension [Self <: PublisherProvidedForecast](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PublisherProvidedForecast] (val x: Self) extends AnyVal {
     
     inline def setDimensions(value: js.Array[Dimension]): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
     

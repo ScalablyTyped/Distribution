@@ -36,7 +36,8 @@ object anon {
       __obj.asInstanceOf[OptionsencodingEncoding]
     }
     
-    extension [Self <: OptionsencodingEncoding](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OptionsencodingEncoding] (val x: Self) extends AnyVal {
       
       inline def setEncoding(value: Encoding): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       

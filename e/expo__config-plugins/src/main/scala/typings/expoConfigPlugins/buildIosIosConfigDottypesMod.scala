@@ -37,7 +37,8 @@ object buildIosIosConfigDottypesMod {
       __obj.asInstanceOf[ExpoPlist]
     }
     
-    extension [Self <: ExpoPlist](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExpoPlist] (val x: Self) extends AnyVal {
       
       inline def setEXUpdatesCheckOnLaunch(value: String): Self = StObject.set(x, "EXUpdatesCheckOnLaunch", value.asInstanceOf[js.Any])
       
@@ -132,7 +133,8 @@ object buildIosIosConfigDottypesMod {
       __obj.asInstanceOf[URLScheme]
     }
     
-    extension [Self <: URLScheme](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: URLScheme] (val x: Self) extends AnyVal {
       
       inline def setCFBundleURLName(value: String): Self = StObject.set(x, "CFBundleURLName", value.asInstanceOf[js.Any])
       

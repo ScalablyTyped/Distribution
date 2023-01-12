@@ -22,7 +22,8 @@ object TimeoutConfig {
     __obj.asInstanceOf[TimeoutConfig]
   }
   
-  extension [Self <: TimeoutConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimeoutConfig] (val x: Self) extends AnyVal {
     
     inline def setTimeoutMs(value: Double): Self = StObject.set(x, "timeoutMs", value.asInstanceOf[js.Any])
   }

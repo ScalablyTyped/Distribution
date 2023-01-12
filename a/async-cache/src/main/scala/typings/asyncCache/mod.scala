@@ -72,7 +72,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Options[T]]
     }
     
-    extension [Self <: Options[?], T](x: Self & Options[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options[?], T] (val x: Self & Options[T]) extends AnyVal {
       
       inline def setLoad(
         value: (String, js.Function3[/* error */ Any, /* asyncValue */ T, /* maxAge */ js.UndefOr[Double], Unit]) => Unit

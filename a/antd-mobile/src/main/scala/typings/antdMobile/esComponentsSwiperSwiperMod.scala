@@ -335,7 +335,8 @@ object esComponentsSwiperSwiperMod {
       __obj.asInstanceOf[SwiperProps]
     }
     
-    extension [Self <: SwiperProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SwiperProps] (val x: Self) extends AnyVal {
       
       inline def setAllowTouchMove(value: Boolean): Self = StObject.set(x, "allowTouchMove", value.asInstanceOf[js.Any])
       
@@ -618,7 +619,8 @@ object esComponentsSwiperSwiperMod {
       __obj.asInstanceOf[SwiperRef]
     }
     
-    extension [Self <: SwiperRef](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SwiperRef] (val x: Self) extends AnyVal {
       
       inline def setSwipeNext(value: () => Unit): Self = StObject.set(x, "swipeNext", js.Any.fromFunction0(value))
       

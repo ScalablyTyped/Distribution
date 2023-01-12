@@ -21,7 +21,8 @@ object anon {
       __obj.asInstanceOf[Code]
     }
     
-    extension [Self <: Code](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Code] (val x: Self) extends AnyVal {
       
       inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
@@ -67,7 +68,8 @@ object anon {
       __obj.asInstanceOf[PartialDiscPropertiesObje]
     }
     
-    extension [Self <: PartialDiscPropertiesObje](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialDiscPropertiesObje] (val x: Self) extends AnyVal {
       
       inline def setBCoeff(value: Double): Self = StObject.set(x, "bCoeff", value.asInstanceOf[js.Any])
       
@@ -136,7 +138,8 @@ object anon {
       __obj.asInstanceOf[X]
     }
     
-    extension [Self <: X](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: X] (val x: Self) extends AnyVal {
       
       inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       

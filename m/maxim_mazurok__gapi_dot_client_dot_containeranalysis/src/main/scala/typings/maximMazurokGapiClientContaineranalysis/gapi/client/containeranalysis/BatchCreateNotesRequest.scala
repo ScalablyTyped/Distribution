@@ -18,7 +18,8 @@ object BatchCreateNotesRequest {
     __obj.asInstanceOf[BatchCreateNotesRequest]
   }
   
-  extension [Self <: BatchCreateNotesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchCreateNotesRequest] (val x: Self) extends AnyVal {
     
     inline def setNotes(
       value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.containeranalysis.gapi.client.containeranalysis.Note} */ js.Any

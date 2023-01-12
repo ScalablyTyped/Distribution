@@ -16,7 +16,8 @@ object ReopenMatterResponse {
     __obj.asInstanceOf[ReopenMatterResponse]
   }
   
-  extension [Self <: ReopenMatterResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReopenMatterResponse] (val x: Self) extends AnyVal {
     
     inline def setMatter(value: Matter): Self = StObject.set(x, "matter", value.asInstanceOf[js.Any])
     

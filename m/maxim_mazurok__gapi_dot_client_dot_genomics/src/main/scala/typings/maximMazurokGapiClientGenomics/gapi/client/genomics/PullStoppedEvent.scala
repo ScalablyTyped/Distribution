@@ -16,7 +16,8 @@ object PullStoppedEvent {
     __obj.asInstanceOf[PullStoppedEvent]
   }
   
-  extension [Self <: PullStoppedEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PullStoppedEvent] (val x: Self) extends AnyVal {
     
     inline def setImageUri(value: String): Self = StObject.set(x, "imageUri", value.asInstanceOf[js.Any])
     

@@ -87,7 +87,8 @@ object DatetimepickerOptions {
     __obj.asInstanceOf[DatetimepickerOptions]
   }
   
-  extension [Self <: DatetimepickerOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DatetimepickerOptions] (val x: Self) extends AnyVal {
     
     inline def setAutoclose(value: Double | Boolean): Self = StObject.set(x, "autoclose", value.asInstanceOf[js.Any])
     

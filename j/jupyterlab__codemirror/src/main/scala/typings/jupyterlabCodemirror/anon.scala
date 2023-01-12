@@ -47,7 +47,8 @@ object anon {
       __obj.asInstanceOf[Bias]
     }
     
-    extension [Self <: Bias](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Bias] (val x: Self) extends AnyVal {
       
       inline def setBias(value: Double): Self = StObject.set(x, "bias", value.asInstanceOf[js.Any])
       
@@ -78,7 +79,8 @@ object anon {
       __obj.asInstanceOf[Bottom]
     }
     
-    extension [Self <: Bottom](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Bottom] (val x: Self) extends AnyVal {
       
       inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       
@@ -104,7 +106,8 @@ object anon {
       __obj.asInstanceOf[From]
     }
     
-    extension [Self <: From](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: From] (val x: Self) extends AnyVal {
       
       inline def setFrom(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CodeMirror.Position */ Any
@@ -200,7 +203,8 @@ object anon {
       __obj.asInstanceOf[PartialIConfig]
     }
     
-    extension [Self <: PartialIConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialIConfig] (val x: Self) extends AnyVal {
       
       inline def setAutoClosingBrackets(value: Boolean): Self = StObject.set(x, "autoClosingBrackets", value.asInstanceOf[js.Any])
       
@@ -424,7 +428,8 @@ object anon {
       __obj.asInstanceOf[TypeofCodeMirror]
     }
     
-    extension [Self <: TypeofCodeMirror](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypeofCodeMirror] (val x: Self) extends AnyVal {
       
       inline def setBasicSetup(value: Extension): Self = StObject.set(x, "basicSetup", value.asInstanceOf[js.Any])
       

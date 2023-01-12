@@ -48,7 +48,8 @@ object CatalogKinesisSource {
     __obj.asInstanceOf[CatalogKinesisSource]
   }
   
-  extension [Self <: CatalogKinesisSource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CatalogKinesisSource] (val x: Self) extends AnyVal {
     
     inline def setDataPreviewOptions(value: StreamingDataPreviewOptions): Self = StObject.set(x, "DataPreviewOptions", value.asInstanceOf[js.Any])
     

@@ -33,7 +33,8 @@ object namespacesSidebarActionMod {
         __obj.asInstanceOf[GetPanelDetailsType]
       }
       
-      extension [Self <: GetPanelDetailsType](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: GetPanelDetailsType] (val x: Self) extends AnyVal {
         
         inline def setTabId(value: Double): Self = StObject.set(x, "tabId", value.asInstanceOf[js.Any])
         
@@ -66,7 +67,8 @@ object namespacesSidebarActionMod {
         __obj.asInstanceOf[GetTitleDetailsType]
       }
       
-      extension [Self <: GetTitleDetailsType](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: GetTitleDetailsType] (val x: Self) extends AnyVal {
         
         inline def setTabId(value: Double): Self = StObject.set(x, "tabId", value.asInstanceOf[js.Any])
         
@@ -113,7 +115,8 @@ object namespacesSidebarActionMod {
         __obj.asInstanceOf[IsOpenDetailsType]
       }
       
-      extension [Self <: IsOpenDetailsType](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IsOpenDetailsType] (val x: Self) extends AnyVal {
         
         inline def setWindowId(value: Double): Self = StObject.set(x, "windowId", value.asInstanceOf[js.Any])
         
@@ -163,7 +166,8 @@ object namespacesSidebarActionMod {
         __obj.asInstanceOf[SetIconDetailsType]
       }
       
-      extension [Self <: SetIconDetailsType](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SetIconDetailsType] (val x: Self) extends AnyVal {
         
         inline def setImageData(value: ImageDataType | (Record[String, ImageDataType])): Self = StObject.set(x, "imageData", value.asInstanceOf[js.Any])
         
@@ -211,7 +215,8 @@ object namespacesSidebarActionMod {
         __obj.asInstanceOf[SetPanelDetailsType]
       }
       
-      extension [Self <: SetPanelDetailsType](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SetPanelDetailsType] (val x: Self) extends AnyVal {
         
         inline def setPanel(value: String): Self = StObject.set(x, "panel", value.asInstanceOf[js.Any])
         
@@ -253,7 +258,8 @@ object namespacesSidebarActionMod {
         __obj.asInstanceOf[SetTitleDetailsType]
       }
       
-      extension [Self <: SetTitleDetailsType](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SetTitleDetailsType] (val x: Self) extends AnyVal {
         
         inline def setTabId(value: Double): Self = StObject.set(x, "tabId", value.asInstanceOf[js.Any])
         
@@ -347,7 +353,8 @@ object namespacesSidebarActionMod {
         __obj.asInstanceOf[Static]
       }
       
-      extension [Self <: Static](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Static] (val x: Self) extends AnyVal {
         
         inline def setClose(value: () => js.Promise[Unit]): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
         

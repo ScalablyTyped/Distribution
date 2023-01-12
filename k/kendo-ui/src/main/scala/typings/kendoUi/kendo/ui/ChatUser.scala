@@ -17,7 +17,8 @@ object ChatUser {
     __obj.asInstanceOf[ChatUser]
   }
   
-  extension [Self <: ChatUser](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChatUser] (val x: Self) extends AnyVal {
     
     inline def setIconUrl(value: String): Self = StObject.set(x, "iconUrl", value.asInstanceOf[js.Any])
     

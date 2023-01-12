@@ -22,7 +22,8 @@ object ServeAfterHookInput {
     __obj.asInstanceOf[ServeAfterHookInput]
   }
   
-  extension [Self <: ServeAfterHookInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServeAfterHookInput] (val x: Self) extends AnyVal {
     
     inline def setName(value: serveColonafter): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

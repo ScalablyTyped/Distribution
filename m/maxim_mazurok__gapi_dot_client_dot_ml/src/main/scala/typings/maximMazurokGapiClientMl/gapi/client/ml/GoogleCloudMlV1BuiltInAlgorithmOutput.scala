@@ -25,7 +25,8 @@ object GoogleCloudMlV1BuiltInAlgorithmOutput {
     __obj.asInstanceOf[GoogleCloudMlV1BuiltInAlgorithmOutput]
   }
   
-  extension [Self <: GoogleCloudMlV1BuiltInAlgorithmOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudMlV1BuiltInAlgorithmOutput] (val x: Self) extends AnyVal {
     
     inline def setFramework(value: String): Self = StObject.set(x, "framework", value.asInstanceOf[js.Any])
     

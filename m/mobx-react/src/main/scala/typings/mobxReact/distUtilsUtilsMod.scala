@@ -34,7 +34,8 @@ object distUtilsUtilsMod {
       __obj.asInstanceOf[Mixins]
     }
     
-    extension [Self <: Mixins](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Mixins] (val x: Self) extends AnyVal {
       
       inline def setLocks(value: Double): Self = StObject.set(x, "locks", value.asInstanceOf[js.Any])
       

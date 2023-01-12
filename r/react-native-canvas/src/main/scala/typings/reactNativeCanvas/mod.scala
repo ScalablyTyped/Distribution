@@ -130,7 +130,8 @@ object mod {
       __obj.asInstanceOf[CanvasGradient]
     }
     
-    extension [Self <: CanvasGradient](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CanvasGradient] (val x: Self) extends AnyVal {
       
       inline def setAddColorStop(value: (Double, String) => Unit): Self = StObject.set(x, "addColorStop", js.Any.fromFunction2(value))
     }
@@ -160,7 +161,8 @@ object mod {
       __obj.asInstanceOf[CanvasProps]
     }
     
-    extension [Self <: CanvasProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CanvasProps] (val x: Self) extends AnyVal {
       
       inline def setBaseUrl(value: String): Self = StObject.set(x, "baseUrl", value.asInstanceOf[js.Any])
       
@@ -450,7 +452,8 @@ object mod {
       __obj.asInstanceOf[DOMMatrix2DInit]
     }
     
-    extension [Self <: DOMMatrix2DInit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DOMMatrix2DInit] (val x: Self) extends AnyVal {
       
       inline def setA(value: Double): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
       

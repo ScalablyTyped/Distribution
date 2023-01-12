@@ -22,7 +22,8 @@ object PaginationChanged {
     __obj.asInstanceOf[PaginationChanged]
   }
   
-  extension [Self <: PaginationChanged](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PaginationChanged] (val x: Self) extends AnyVal {
     
     inline def setPaginationChanged(value: (IScope, paginationChangedHandler) => Unit): Self = StObject.set(x, "paginationChanged", js.Any.fromFunction2(value))
   }

@@ -423,7 +423,8 @@ object distReactDottagifyMod {
       __obj.asInstanceOf[TagifyBaseReactProps[T]]
     }
     
-    extension [Self <: TagifyBaseReactProps[?], T /* <: BaseTagData */](x: Self & TagifyBaseReactProps[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TagifyBaseReactProps[?], T /* <: BaseTagData */] (val x: Self & TagifyBaseReactProps[T]) extends AnyVal {
       
       inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
       
@@ -600,7 +601,8 @@ object distReactDottagifyMod {
       __obj.asInstanceOf[TagifyTagsReactProps[T]]
     }
     
-    extension [Self <: TagifyTagsReactProps[?], T /* <: BaseTagData */](x: Self & TagifyTagsReactProps[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TagifyTagsReactProps[?], T /* <: BaseTagData */] (val x: Self & TagifyTagsReactProps[T]) extends AnyVal {
       
       inline def setInputMode(value: InputMode): Self = StObject.set(x, "InputMode", value.asInstanceOf[js.Any])
       

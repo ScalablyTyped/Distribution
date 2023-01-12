@@ -17,7 +17,8 @@ object MaskedInputDefaults {
     __obj.asInstanceOf[MaskedInputDefaults]
   }
   
-  extension [Self <: MaskedInputDefaults](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MaskedInputDefaults] (val x: Self) extends AnyVal {
     
     inline def setAliases(value: Any): Self = StObject.set(x, "aliases", value.asInstanceOf[js.Any])
     

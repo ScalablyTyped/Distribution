@@ -63,7 +63,8 @@ object RestoreTableToPointInTimeInput {
     __obj.asInstanceOf[RestoreTableToPointInTimeInput]
   }
   
-  extension [Self <: RestoreTableToPointInTimeInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RestoreTableToPointInTimeInput] (val x: Self) extends AnyVal {
     
     inline def setBillingModeOverride(value: BillingMode): Self = StObject.set(x, "BillingModeOverride", value.asInstanceOf[js.Any])
     

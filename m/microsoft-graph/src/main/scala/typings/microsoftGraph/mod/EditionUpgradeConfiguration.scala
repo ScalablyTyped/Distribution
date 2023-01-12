@@ -32,7 +32,8 @@ object EditionUpgradeConfiguration {
     __obj.asInstanceOf[EditionUpgradeConfiguration]
   }
   
-  extension [Self <: EditionUpgradeConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EditionUpgradeConfiguration] (val x: Self) extends AnyVal {
     
     inline def setLicense(value: NullableOption[String]): Self = StObject.set(x, "license", value.asInstanceOf[js.Any])
     

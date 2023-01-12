@@ -19,7 +19,8 @@ object scopeJobScopeSudo {
     __obj.asInstanceOf[scopeJobScopeSudo]
   }
   
-  extension [Self <: scopeJobScopeSudo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: scopeJobScopeSudo] (val x: Self) extends AnyVal {
     
     inline def setScope(value: JobScope): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     

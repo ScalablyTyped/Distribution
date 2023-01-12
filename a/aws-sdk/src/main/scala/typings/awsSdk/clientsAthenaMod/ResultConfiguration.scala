@@ -33,7 +33,8 @@ object ResultConfiguration {
     __obj.asInstanceOf[ResultConfiguration]
   }
   
-  extension [Self <: ResultConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResultConfiguration] (val x: Self) extends AnyVal {
     
     inline def setAclConfiguration(value: AclConfiguration): Self = StObject.set(x, "AclConfiguration", value.asInstanceOf[js.Any])
     

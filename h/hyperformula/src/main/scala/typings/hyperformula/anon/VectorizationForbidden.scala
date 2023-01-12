@@ -29,7 +29,8 @@ object VectorizationForbidden {
     __obj.asInstanceOf[VectorizationForbidden]
   }
   
-  extension [Self <: VectorizationForbidden](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VectorizationForbidden] (val x: Self) extends AnyVal {
     
     inline def setDoesNotNeedArgumentsToBeComputed(value: Boolean): Self = StObject.set(x, "doesNotNeedArgumentsToBeComputed", value.asInstanceOf[js.Any])
     

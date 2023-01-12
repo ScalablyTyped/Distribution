@@ -28,7 +28,8 @@ object AcceptInvitationRequest {
     __obj.asInstanceOf[AcceptInvitationRequest]
   }
   
-  extension [Self <: AcceptInvitationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AcceptInvitationRequest] (val x: Self) extends AnyVal {
     
     inline def setAdministratorAccountId(value: string): Self = StObject.set(x, "administratorAccountId", value.asInstanceOf[js.Any])
     

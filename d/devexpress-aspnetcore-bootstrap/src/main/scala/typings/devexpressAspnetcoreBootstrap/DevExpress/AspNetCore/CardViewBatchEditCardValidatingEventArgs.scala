@@ -19,7 +19,8 @@ object CardViewBatchEditCardValidatingEventArgs {
     __obj.asInstanceOf[CardViewBatchEditCardValidatingEventArgs]
   }
   
-  extension [Self <: CardViewBatchEditCardValidatingEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CardViewBatchEditCardValidatingEventArgs] (val x: Self) extends AnyVal {
     
     inline def setValidationInfo(value: Any): Self = StObject.set(x, "validationInfo", value.asInstanceOf[js.Any])
     

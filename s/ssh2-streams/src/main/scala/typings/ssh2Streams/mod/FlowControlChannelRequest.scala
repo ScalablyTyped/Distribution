@@ -22,7 +22,8 @@ object FlowControlChannelRequest {
     __obj.asInstanceOf[FlowControlChannelRequest]
   }
   
-  extension [Self <: FlowControlChannelRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FlowControlChannelRequest] (val x: Self) extends AnyVal {
     
     inline def setClientControl(value: Boolean): Self = StObject.set(x, "clientControl", value.asInstanceOf[js.Any])
     

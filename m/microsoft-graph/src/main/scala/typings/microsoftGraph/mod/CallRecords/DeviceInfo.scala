@@ -104,7 +104,8 @@ object DeviceInfo {
     __obj.asInstanceOf[DeviceInfo]
   }
   
-  extension [Self <: DeviceInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeviceInfo] (val x: Self) extends AnyVal {
     
     inline def setCaptureDeviceDriver(value: NullableOption[String]): Self = StObject.set(x, "captureDeviceDriver", value.asInstanceOf[js.Any])
     

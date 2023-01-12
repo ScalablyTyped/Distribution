@@ -35,7 +35,8 @@ object CmsAttachedSignature {
     __obj.asInstanceOf[CmsAttachedSignature]
   }
   
-  extension [Self <: CmsAttachedSignature](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CmsAttachedSignature] (val x: Self) extends AnyVal {
     
     inline def setCertificates(value: IVectorView[Certificate]): Self = StObject.set(x, "certificates", value.asInstanceOf[js.Any])
     

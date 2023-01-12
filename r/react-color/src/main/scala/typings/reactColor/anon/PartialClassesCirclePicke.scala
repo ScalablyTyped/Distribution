@@ -16,7 +16,8 @@ object PartialClassesCirclePicke {
     __obj.asInstanceOf[PartialClassesCirclePicke]
   }
   
-  extension [Self <: PartialClassesCirclePicke](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialClassesCirclePicke] (val x: Self) extends AnyVal {
     
     inline def setDefault(value: PartialCirclePickerStyles): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     

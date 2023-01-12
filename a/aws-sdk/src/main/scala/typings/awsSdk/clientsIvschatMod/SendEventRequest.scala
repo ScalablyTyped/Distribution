@@ -28,7 +28,8 @@ object SendEventRequest {
     __obj.asInstanceOf[SendEventRequest]
   }
   
-  extension [Self <: SendEventRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SendEventRequest] (val x: Self) extends AnyVal {
     
     inline def setAttributes(value: EventAttributes): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     

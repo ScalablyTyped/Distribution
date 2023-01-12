@@ -35,7 +35,8 @@ object EducationAssignmentDefaults {
     __obj.asInstanceOf[EducationAssignmentDefaults]
   }
   
-  extension [Self <: EducationAssignmentDefaults](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EducationAssignmentDefaults] (val x: Self) extends AnyVal {
     
     inline def setAddToCalendarAction(value: NullableOption[EducationAddToCalendarOptions]): Self = StObject.set(x, "addToCalendarAction", value.asInstanceOf[js.Any])
     

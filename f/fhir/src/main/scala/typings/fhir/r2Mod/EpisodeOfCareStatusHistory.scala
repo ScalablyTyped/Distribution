@@ -33,7 +33,8 @@ object EpisodeOfCareStatusHistory {
     __obj.asInstanceOf[EpisodeOfCareStatusHistory]
   }
   
-  extension [Self <: EpisodeOfCareStatusHistory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EpisodeOfCareStatusHistory] (val x: Self) extends AnyVal {
     
     inline def setPeriod(value: Period): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
     

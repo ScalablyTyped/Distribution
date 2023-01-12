@@ -96,7 +96,8 @@ object InstanceGroupDetail {
     __obj.asInstanceOf[InstanceGroupDetail]
   }
   
-  extension [Self <: InstanceGroupDetail](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InstanceGroupDetail] (val x: Self) extends AnyVal {
     
     inline def setBidPrice(value: XmlStringMaxLen256): Self = StObject.set(x, "BidPrice", value.asInstanceOf[js.Any])
     

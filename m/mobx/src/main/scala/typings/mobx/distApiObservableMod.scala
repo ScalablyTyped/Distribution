@@ -80,7 +80,8 @@ object distApiObservableMod {
       __obj.asInstanceOf[CreateObservableOptions]
     }
     
-    extension [Self <: CreateObservableOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateObservableOptions] (val x: Self) extends AnyVal {
       
       inline def setAutoBind(value: Boolean): Self = StObject.set(x, "autoBind", value.asInstanceOf[js.Any])
       

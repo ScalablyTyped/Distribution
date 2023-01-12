@@ -19,7 +19,8 @@ object AutoscalingSettings {
     __obj.asInstanceOf[AutoscalingSettings]
   }
   
-  extension [Self <: AutoscalingSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AutoscalingSettings] (val x: Self) extends AnyVal {
     
     inline def setAlgorithm(value: String): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
     

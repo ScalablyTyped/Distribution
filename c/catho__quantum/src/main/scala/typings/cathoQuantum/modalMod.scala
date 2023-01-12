@@ -83,7 +83,8 @@ object modalMod {
       __obj.asInstanceOf[ModalProps]
     }
     
-    extension [Self <: ModalProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ModalProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: js.Array[ReactNode] | ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -120,7 +121,8 @@ object modalMod {
       __obj.asInstanceOf[StaticProps]
     }
     
-    extension [Self <: StaticProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StaticProps] (val x: Self) extends AnyVal {
       
       inline def setTheme(value: `17`): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       

@@ -20,7 +20,8 @@ object ExplicitObj {
     __obj.asInstanceOf[ExplicitObj]
   }
   
-  extension [Self <: ExplicitObj](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExplicitObj] (val x: Self) extends AnyVal {
     
     inline def setExplicit(value: `true`): Self = StObject.set(x, "explicit", value.asInstanceOf[js.Any])
     

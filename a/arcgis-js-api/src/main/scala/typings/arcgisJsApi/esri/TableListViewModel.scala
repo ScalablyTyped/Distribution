@@ -73,7 +73,8 @@ object TableListViewModel {
     __obj.asInstanceOf[TableListViewModel]
   }
   
-  extension [Self <: TableListViewModel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TableListViewModel] (val x: Self) extends AnyVal {
     
     inline def setCheckPublishStatusEnabled(value: Boolean): Self = StObject.set(x, "checkPublishStatusEnabled", value.asInstanceOf[js.Any])
     

@@ -16,7 +16,8 @@ object GoogleCloudDialogflowV2SmartReplyModelMetadata {
     __obj.asInstanceOf[GoogleCloudDialogflowV2SmartReplyModelMetadata]
   }
   
-  extension [Self <: GoogleCloudDialogflowV2SmartReplyModelMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDialogflowV2SmartReplyModelMetadata] (val x: Self) extends AnyVal {
     
     inline def setTrainingModelType(value: String): Self = StObject.set(x, "trainingModelType", value.asInstanceOf[js.Any])
     

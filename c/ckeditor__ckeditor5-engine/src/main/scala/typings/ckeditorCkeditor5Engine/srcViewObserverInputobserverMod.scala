@@ -36,7 +36,8 @@ object srcViewObserverInputobserverMod {
         __obj.asInstanceOf[Observers]
       }
       
-      extension [Self <: Observers](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Observers] (val x: Self) extends AnyVal {
         
         inline def setInputObserver(value: InputObserver): Self = StObject.set(x, "InputObserver", value.asInstanceOf[js.Any])
       }

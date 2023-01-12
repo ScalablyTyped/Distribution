@@ -17,7 +17,8 @@ object PivotDataSourceV2Column {
     __obj.asInstanceOf[PivotDataSourceV2Column]
   }
   
-  extension [Self <: PivotDataSourceV2Column](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PivotDataSourceV2Column] (val x: Self) extends AnyVal {
     
     inline def setExpand(value: Boolean): Self = StObject.set(x, "expand", value.asInstanceOf[js.Any])
     

@@ -29,7 +29,8 @@ object distSrcModelsSelectionModelMod {
       __obj.asInstanceOf[SelectionModel]
     }
     
-    extension [Self <: SelectionModel](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SelectionModel] (val x: Self) extends AnyVal {
       
       inline def setInitialX(value: Double): Self = StObject.set(x, "initialX", value.asInstanceOf[js.Any])
       

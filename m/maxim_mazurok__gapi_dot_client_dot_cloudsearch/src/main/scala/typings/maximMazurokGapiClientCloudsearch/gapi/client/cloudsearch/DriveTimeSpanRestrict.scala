@@ -15,7 +15,8 @@ object DriveTimeSpanRestrict {
     __obj.asInstanceOf[DriveTimeSpanRestrict]
   }
   
-  extension [Self <: DriveTimeSpanRestrict](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DriveTimeSpanRestrict] (val x: Self) extends AnyVal {
     
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

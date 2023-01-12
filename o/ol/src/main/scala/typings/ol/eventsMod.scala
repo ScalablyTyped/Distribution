@@ -54,7 +54,8 @@ object eventsMod {
       __obj.asInstanceOf[EventsKey]
     }
     
-    extension [Self <: EventsKey](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EventsKey] (val x: Self) extends AnyVal {
       
       inline def setListener(value: /* p0 */ Event | default => Boolean): Self = StObject.set(x, "listener", js.Any.fromFunction1(value))
       
@@ -82,7 +83,8 @@ object eventsMod {
       __obj.asInstanceOf[ListenerObject]
     }
     
-    extension [Self <: ListenerObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListenerObject] (val x: Self) extends AnyVal {
       
       inline def setHandleEvent(value: /* p0 */ Event | default => Boolean): Self = StObject.set(x, "handleEvent", js.Any.fromFunction1(value))
     }

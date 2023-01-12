@@ -25,7 +25,8 @@ object GetBatchPayoutResponse {
     __obj.asInstanceOf[GetBatchPayoutResponse]
   }
   
-  extension [Self <: GetBatchPayoutResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetBatchPayoutResponse] (val x: Self) extends AnyVal {
     
     inline def setBatch_header(value: PayoutBatchHeader): Self = StObject.set(x, "batch_header", value.asInstanceOf[js.Any])
     

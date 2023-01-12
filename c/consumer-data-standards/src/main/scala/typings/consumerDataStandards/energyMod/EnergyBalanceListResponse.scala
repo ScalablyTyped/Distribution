@@ -23,7 +23,8 @@ object EnergyBalanceListResponse {
     __obj.asInstanceOf[EnergyBalanceListResponse]
   }
   
-  extension [Self <: EnergyBalanceListResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnergyBalanceListResponse] (val x: Self) extends AnyVal {
     
     inline def setData(value: DictkBalances): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

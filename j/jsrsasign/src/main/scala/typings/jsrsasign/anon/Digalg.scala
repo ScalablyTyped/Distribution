@@ -36,7 +36,8 @@ object Digalg {
     __obj.asInstanceOf[Digalg]
   }
   
-  extension [Self <: Digalg](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Digalg] (val x: Self) extends AnyVal {
     
     inline def setDigalg(value: String): Self = StObject.set(x, "digalg", value.asInstanceOf[js.Any])
     

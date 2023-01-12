@@ -104,7 +104,8 @@ object IgGridTooltips {
     __obj.asInstanceOf[IgGridTooltips]
   }
   
-  extension [Self <: IgGridTooltips](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgGridTooltips] (val x: Self) extends AnyVal {
     
     inline def setColumnSettings(value: IgGridTooltipsColumnSettings): Self = StObject.set(x, "columnSettings", value.asInstanceOf[js.Any])
     

@@ -120,7 +120,8 @@ object mod {
       __obj.asInstanceOf[IPostgresInterval]
     }
     
-    extension [Self <: IPostgresInterval](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPostgresInterval] (val x: Self) extends AnyVal {
       
       inline def setDays(value: Double): Self = StObject.set(x, "days", value.asInstanceOf[js.Any])
       

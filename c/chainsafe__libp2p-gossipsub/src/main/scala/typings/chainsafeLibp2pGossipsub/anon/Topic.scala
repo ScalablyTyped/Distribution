@@ -19,7 +19,8 @@ object Topic {
     __obj.asInstanceOf[Topic]
   }
   
-  extension [Self <: Topic](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Topic] (val x: Self) extends AnyVal {
     
     inline def setReason(value: ChurnReason): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     

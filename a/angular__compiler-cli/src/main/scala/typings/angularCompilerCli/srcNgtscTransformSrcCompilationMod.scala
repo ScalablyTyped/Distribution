@@ -205,7 +205,8 @@ object srcNgtscTransformSrcCompilationMod {
       __obj.asInstanceOf[ClassRecord]
     }
     
-    extension [Self <: ClassRecord](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClassRecord] (val x: Self) extends AnyVal {
       
       inline def setHasPrimaryHandler(value: Boolean): Self = StObject.set(x, "hasPrimaryHandler", value.asInstanceOf[js.Any])
       

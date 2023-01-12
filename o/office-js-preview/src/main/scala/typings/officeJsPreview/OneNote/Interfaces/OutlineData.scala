@@ -30,7 +30,8 @@ object OutlineData {
     __obj.asInstanceOf[OutlineData]
   }
   
-  extension [Self <: OutlineData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OutlineData] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

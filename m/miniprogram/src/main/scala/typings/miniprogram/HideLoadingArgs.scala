@@ -19,7 +19,8 @@ object HideLoadingArgs {
     __obj.asInstanceOf[HideLoadingArgs]
   }
   
-  extension [Self <: HideLoadingArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HideLoadingArgs] (val x: Self) extends AnyVal {
     
     inline def setPage(value: Any): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
   }

@@ -18,7 +18,8 @@ object PlannerBucketTaskBoardTaskFormat {
     __obj.asInstanceOf[PlannerBucketTaskBoardTaskFormat]
   }
   
-  extension [Self <: PlannerBucketTaskBoardTaskFormat](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlannerBucketTaskBoardTaskFormat] (val x: Self) extends AnyVal {
     
     inline def setOrderHint(value: NullableOption[String]): Self = StObject.set(x, "orderHint", value.asInstanceOf[js.Any])
     

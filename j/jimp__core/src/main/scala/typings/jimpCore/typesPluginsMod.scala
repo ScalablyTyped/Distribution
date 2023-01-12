@@ -47,7 +47,8 @@ object typesPluginsMod {
       __obj.asInstanceOf[JimpType[T]]
     }
     
-    extension [Self <: JimpType[?], T /* <: Image */](x: Self & JimpType[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JimpType[?], T /* <: Image */] (val x: Self & JimpType[T]) extends AnyVal {
       
       inline def setClass(value: Any): Self = StObject.set(x, "class", value.asInstanceOf[js.Any])
       
@@ -101,7 +102,8 @@ object typesPluginsMod {
       __obj.asInstanceOf[WellFormedPlugin[ImageType]]
     }
     
-    extension [Self <: WellFormedPlugin[?], ImageType /* <: Image */](x: Self & WellFormedPlugin[ImageType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WellFormedPlugin[?], ImageType /* <: Image */] (val x: Self & WellFormedPlugin[ImageType]) extends AnyVal {
       
       inline def setClass(value: Any): Self = StObject.set(x, "class", value.asInstanceOf[js.Any])
       

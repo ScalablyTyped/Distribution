@@ -33,7 +33,8 @@ object BitstreamSwitchingSegment {
     __obj.asInstanceOf[BitstreamSwitchingSegment]
   }
   
-  extension [Self <: BitstreamSwitchingSegment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BitstreamSwitchingSegment] (val x: Self) extends AnyVal {
     
     inline def setBitstreamSwitchingSegment(value: Double): Self = StObject.set(x, "BitstreamSwitchingSegment", value.asInstanceOf[js.Any])
     

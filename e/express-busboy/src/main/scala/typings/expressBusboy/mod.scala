@@ -38,7 +38,8 @@ object mod {
       __obj.asInstanceOf[ExpressBusboyOptions]
     }
     
-    extension [Self <: ExpressBusboyOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExpressBusboyOptions] (val x: Self) extends AnyVal {
       
       inline def setAllowedPath(value: String | js.RegExp | (js.Function1[/* url */ String, Boolean])): Self = StObject.set(x, "allowedPath", value.asInstanceOf[js.Any])
       

@@ -101,7 +101,8 @@ object libUtilitiesDraggableZoneDraggableZoneMod {
       __obj.asInstanceOf[IDraggableZoneState]
     }
     
-    extension [Self <: IDraggableZoneState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDraggableZoneState] (val x: Self) extends AnyVal {
       
       inline def setIsDragging(value: Boolean): Self = StObject.set(x, "isDragging", value.asInstanceOf[js.Any])
       

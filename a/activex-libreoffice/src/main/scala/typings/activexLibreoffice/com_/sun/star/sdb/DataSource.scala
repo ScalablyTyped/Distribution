@@ -165,7 +165,8 @@ object DataSource {
     __obj.asInstanceOf[DataSource]
   }
   
-  extension [Self <: DataSource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataSource] (val x: Self) extends AnyVal {
     
     inline def setInfo(value: SafeArray[PropertyValue]): Self = StObject.set(x, "Info", value.asInstanceOf[js.Any])
     

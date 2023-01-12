@@ -16,7 +16,8 @@ object PickEditorColorcolor {
     __obj.asInstanceOf[PickEditorColorcolor]
   }
   
-  extension [Self <: PickEditorColorcolor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickEditorColorcolor] (val x: Self) extends AnyVal {
     
     inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
   }

@@ -29,7 +29,8 @@ object TypeofInvoice {
     __obj.asInstanceOf[TypeofInvoice]
   }
   
-  extension [Self <: TypeofInvoice](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofInvoice] (val x: Self) extends AnyVal {
     
     inline def setAutomaticTax(value: Any): Self = StObject.set(x, "AutomaticTax", value.asInstanceOf[js.Any])
     

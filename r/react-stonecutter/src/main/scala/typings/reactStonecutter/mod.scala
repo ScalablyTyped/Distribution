@@ -134,7 +134,8 @@ object mod {
       __obj.asInstanceOf[CSSGridProps]
     }
     
-    extension [Self <: CSSGridProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CSSGridProps] (val x: Self) extends AnyVal {
       
       inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
@@ -222,7 +223,8 @@ object mod {
       __obj.asInstanceOf[CommonGridProps]
     }
     
-    extension [Self <: CommonGridProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommonGridProps] (val x: Self) extends AnyVal {
       
       inline def setAngleUnit(value: AngleUnit): Self = StObject.set(x, "angleUnit", value.asInstanceOf[js.Any])
       
@@ -356,7 +358,8 @@ object mod {
       __obj.asInstanceOf[Easings_]
     }
     
-    extension [Self <: Easings_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Easings_] (val x: Self) extends AnyVal {
       
       inline def setBackIn(value: Easing): Self = StObject.set(x, "backIn", value.asInstanceOf[js.Any])
       
@@ -434,7 +437,8 @@ object mod {
       __obj.asInstanceOf[Layout_]
     }
     
-    extension [Self <: Layout_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Layout_] (val x: Self) extends AnyVal {
       
       inline def setGridHeight(value: Double): Self = StObject.set(x, "gridHeight", value.asInstanceOf[js.Any])
       
@@ -487,7 +491,8 @@ object mod {
       __obj.asInstanceOf[MakeResponsiveOptions]
     }
     
-    extension [Self <: MakeResponsiveOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MakeResponsiveOptions] (val x: Self) extends AnyVal {
       
       inline def setDefaultColumns(value: Double): Self = StObject.set(x, "defaultColumns", value.asInstanceOf[js.Any])
       
@@ -523,7 +528,8 @@ object mod {
       __obj.asInstanceOf[MeasureItemsOptions]
     }
     
-    extension [Self <: MeasureItemsOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MeasureItemsOptions] (val x: Self) extends AnyVal {
       
       inline def setBackground(value: Boolean | String): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
       
@@ -550,7 +556,8 @@ object mod {
       __obj.asInstanceOf[SpringGridProps]
     }
     
-    extension [Self <: SpringGridProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SpringGridProps] (val x: Self) extends AnyVal {
       
       inline def setSpringConfig(value: Any): Self = StObject.set(x, "springConfig", value.asInstanceOf[js.Any])
       

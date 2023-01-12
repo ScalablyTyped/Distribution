@@ -26,7 +26,8 @@ object pipeMod {
       __obj.asInstanceOf[EmitterPipe]
     }
     
-    extension [Self <: EmitterPipe](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EmitterPipe] (val x: Self) extends AnyVal {
       
       inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
     }

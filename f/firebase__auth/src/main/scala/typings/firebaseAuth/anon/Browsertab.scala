@@ -15,7 +15,8 @@ object Browsertab {
     __obj.asInstanceOf[Browsertab]
   }
   
-  extension [Self <: Browsertab](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Browsertab] (val x: Self) extends AnyVal {
     
     inline def setBrowsertab(value: Close): Self = StObject.set(x, "browsertab", value.asInstanceOf[js.Any])
   }

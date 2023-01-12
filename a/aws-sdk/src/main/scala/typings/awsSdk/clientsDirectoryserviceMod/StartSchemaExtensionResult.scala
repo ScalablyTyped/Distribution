@@ -18,7 +18,8 @@ object StartSchemaExtensionResult {
     __obj.asInstanceOf[StartSchemaExtensionResult]
   }
   
-  extension [Self <: StartSchemaExtensionResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartSchemaExtensionResult] (val x: Self) extends AnyVal {
     
     inline def setSchemaExtensionId(value: SchemaExtensionId): Self = StObject.set(x, "SchemaExtensionId", value.asInstanceOf[js.Any])
     

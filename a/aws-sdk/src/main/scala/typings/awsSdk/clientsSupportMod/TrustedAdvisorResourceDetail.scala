@@ -38,7 +38,8 @@ object TrustedAdvisorResourceDetail {
     __obj.asInstanceOf[TrustedAdvisorResourceDetail]
   }
   
-  extension [Self <: TrustedAdvisorResourceDetail](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TrustedAdvisorResourceDetail] (val x: Self) extends AnyVal {
     
     inline def setIsSuppressed(value: Boolean): Self = StObject.set(x, "isSuppressed", value.asInstanceOf[js.Any])
     

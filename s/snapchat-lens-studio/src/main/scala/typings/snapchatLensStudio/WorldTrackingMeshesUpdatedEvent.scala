@@ -27,7 +27,8 @@ object WorldTrackingMeshesUpdatedEvent {
     __obj.asInstanceOf[WorldTrackingMeshesUpdatedEvent]
   }
   
-  extension [Self <: WorldTrackingMeshesUpdatedEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorldTrackingMeshesUpdatedEvent] (val x: Self) extends AnyVal {
     
     inline def setGetMeshes(value: () => js.Array[TrackedMesh]): Self = StObject.set(x, "getMeshes", js.Any.fromFunction0(value))
   }

@@ -19,7 +19,8 @@ object headerNavigationTypesMod {
       __obj.asInstanceOf[HeaderNavigationOverrides]
     }
     
-    extension [Self <: HeaderNavigationOverrides](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HeaderNavigationOverrides] (val x: Self) extends AnyVal {
       
       inline def setRoot(value: Override[Any]): Self = StObject.set(x, "Root", value.asInstanceOf[js.Any])
       
@@ -41,7 +42,8 @@ object headerNavigationTypesMod {
       __obj.asInstanceOf[HeaderNavigationProps]
     }
     
-    extension [Self <: HeaderNavigationProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HeaderNavigationProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

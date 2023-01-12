@@ -87,7 +87,8 @@ object distCryptoPopTokenGeneratorMod {
       __obj.asInstanceOf[ReqCnf]
     }
     
-    extension [Self <: ReqCnf](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReqCnf] (val x: Self) extends AnyVal {
       
       inline def setKid(value: String): Self = StObject.set(x, "kid", value.asInstanceOf[js.Any])
       
@@ -110,7 +111,8 @@ object distCryptoPopTokenGeneratorMod {
       __obj.asInstanceOf[ReqCnfData]
     }
     
-    extension [Self <: ReqCnfData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReqCnfData] (val x: Self) extends AnyVal {
       
       inline def setKid(value: String): Self = StObject.set(x, "kid", value.asInstanceOf[js.Any])
       

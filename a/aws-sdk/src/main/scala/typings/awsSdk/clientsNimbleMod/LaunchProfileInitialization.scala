@@ -58,7 +58,8 @@ object LaunchProfileInitialization {
     __obj.asInstanceOf[LaunchProfileInitialization]
   }
   
-  extension [Self <: LaunchProfileInitialization](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LaunchProfileInitialization] (val x: Self) extends AnyVal {
     
     inline def setActiveDirectory(value: LaunchProfileInitializationActiveDirectory): Self = StObject.set(x, "activeDirectory", value.asInstanceOf[js.Any])
     

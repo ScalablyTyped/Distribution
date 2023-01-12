@@ -40,7 +40,8 @@ object XDimensionsSupplier {
     __obj.asInstanceOf[XDimensionsSupplier]
   }
   
-  extension [Self <: XDimensionsSupplier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XDimensionsSupplier] (val x: Self) extends AnyVal {
     
     inline def setDimensions(value: XNameAccess): Self = StObject.set(x, "Dimensions", value.asInstanceOf[js.Any])
     

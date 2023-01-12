@@ -17,7 +17,8 @@ object ReadonlyIColorRectangleSt {
     __obj.asInstanceOf[ReadonlyIColorRectangleSt]
   }
   
-  extension [Self <: ReadonlyIColorRectangleSt](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadonlyIColorRectangleSt] (val x: Self) extends AnyVal {
     
     inline def setColor(value: IColor): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
   }

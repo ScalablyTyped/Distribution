@@ -56,7 +56,8 @@ object RowProps {
     __obj.asInstanceOf[RowProps]
   }
   
-  extension [Self <: RowProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RowProps] (val x: Self) extends AnyVal {
     
     inline def setAlignContent(value: start | end | center | between | around | evenly | stretch): Self = StObject.set(x, "alignContent", value.asInstanceOf[js.Any])
     

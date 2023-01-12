@@ -32,7 +32,8 @@ object ElasticChannelConfiguration {
     __obj.asInstanceOf[ElasticChannelConfiguration]
   }
   
-  extension [Self <: ElasticChannelConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ElasticChannelConfiguration] (val x: Self) extends AnyVal {
     
     inline def setMaximumSubChannels(value: MaximumSubChannels): Self = StObject.set(x, "MaximumSubChannels", value.asInstanceOf[js.Any])
     

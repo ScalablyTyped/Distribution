@@ -76,7 +76,8 @@ object gamepadsGamepadSceneComponentMod {
         __obj.asInstanceOf[ArcRotateCameraInputsManager]
       }
       
-      extension [Self <: ArcRotateCameraInputsManager](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ArcRotateCameraInputsManager] (val x: Self) extends AnyVal {
         
         inline def setAddGamepad(value: () => ArcRotateCameraInputsManager): Self = StObject.set(x, "addGamepad", js.Any.fromFunction0(value))
       }
@@ -104,7 +105,8 @@ object gamepadsGamepadSceneComponentMod {
         __obj.asInstanceOf[FreeCameraInputsManager]
       }
       
-      extension [Self <: FreeCameraInputsManager](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: FreeCameraInputsManager] (val x: Self) extends AnyVal {
         
         inline def setAddGamepad(value: () => FreeCameraInputsManager): Self = StObject.set(x, "addGamepad", js.Any.fromFunction0(value))
       }
@@ -132,7 +134,8 @@ object gamepadsGamepadSceneComponentMod {
         __obj.asInstanceOf[typings.babylonjs.gamepadsGamepadSceneComponentMod.babylonjsSceneAugmentingMod.Scene]
       }
       
-      extension [Self <: typings.babylonjs.gamepadsGamepadSceneComponentMod.babylonjsSceneAugmentingMod.Scene](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.babylonjs.gamepadsGamepadSceneComponentMod.babylonjsSceneAugmentingMod.Scene] (val x: Self) extends AnyVal {
         
         inline def setGamepadManager(value: GamepadManager): Self = StObject.set(x, "gamepadManager", value.asInstanceOf[js.Any])
         

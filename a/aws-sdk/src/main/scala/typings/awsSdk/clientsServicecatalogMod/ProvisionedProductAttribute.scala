@@ -108,7 +108,8 @@ object ProvisionedProductAttribute {
     __obj.asInstanceOf[ProvisionedProductAttribute]
   }
   
-  extension [Self <: ProvisionedProductAttribute](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProvisionedProductAttribute] (val x: Self) extends AnyVal {
     
     inline def setArn(value: ProvisionedProductNameOrArn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     

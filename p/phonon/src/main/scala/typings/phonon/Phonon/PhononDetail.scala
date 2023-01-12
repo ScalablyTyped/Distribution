@@ -17,7 +17,8 @@ object PhononDetail {
     __obj.asInstanceOf[PhononDetail]
   }
   
-  extension [Self <: PhononDetail](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PhononDetail] (val x: Self) extends AnyVal {
     
     inline def setPage(value: String): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
     

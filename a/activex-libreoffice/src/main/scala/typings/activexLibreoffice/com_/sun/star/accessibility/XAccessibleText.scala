@@ -328,7 +328,8 @@ object XAccessibleText {
     __obj.asInstanceOf[XAccessibleText]
   }
   
-  extension [Self <: XAccessibleText](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XAccessibleText] (val x: Self) extends AnyVal {
     
     inline def setCaretPosition(value: Double): Self = StObject.set(x, "CaretPosition", value.asInstanceOf[js.Any])
     

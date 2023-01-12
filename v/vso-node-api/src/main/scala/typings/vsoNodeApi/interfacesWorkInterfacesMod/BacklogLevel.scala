@@ -38,7 +38,8 @@ object BacklogLevel {
     __obj.asInstanceOf[BacklogLevel]
   }
   
-  extension [Self <: BacklogLevel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BacklogLevel] (val x: Self) extends AnyVal {
     
     inline def setCategoryReferenceName(value: String): Self = StObject.set(x, "categoryReferenceName", value.asInstanceOf[js.Any])
     

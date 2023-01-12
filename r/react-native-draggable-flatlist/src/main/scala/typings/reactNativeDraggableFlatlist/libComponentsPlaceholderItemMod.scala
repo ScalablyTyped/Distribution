@@ -27,7 +27,8 @@ object libComponentsPlaceholderItemMod {
       __obj.asInstanceOf[Props[T]]
     }
     
-    extension [Self <: Props[?], T](x: Self & Props[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Props[?], T] (val x: Self & Props[T]) extends AnyVal {
       
       inline def setRenderPlaceholder(value: /* params */ Index[T] => Element): Self = StObject.set(x, "renderPlaceholder", js.Any.fromFunction1(value))
       

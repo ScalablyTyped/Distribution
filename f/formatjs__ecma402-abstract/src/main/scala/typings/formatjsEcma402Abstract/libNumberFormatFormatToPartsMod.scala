@@ -49,7 +49,8 @@ object libNumberFormatFormatToPartsMod {
       __obj.asInstanceOf[NumberResult]
     }
     
-    extension [Self <: NumberResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NumberResult] (val x: Self) extends AnyVal {
       
       inline def setExponent(value: Double): Self = StObject.set(x, "exponent", value.asInstanceOf[js.Any])
       

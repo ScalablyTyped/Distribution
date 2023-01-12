@@ -39,7 +39,8 @@ object BaseUrl {
     __obj.asInstanceOf[BaseUrl]
   }
   
-  extension [Self <: BaseUrl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BaseUrl] (val x: Self) extends AnyVal {
     
     inline def setActiveTerminologies(value: js.Array[String]): Self = StObject.set(x, "activeTerminologies", value.asInstanceOf[js.Any])
     

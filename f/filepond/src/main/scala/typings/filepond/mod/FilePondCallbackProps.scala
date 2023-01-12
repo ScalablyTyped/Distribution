@@ -96,7 +96,8 @@ object FilePondCallbackProps {
     __obj.asInstanceOf[FilePondCallbackProps]
   }
   
-  extension [Self <: FilePondCallbackProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FilePondCallbackProps] (val x: Self) extends AnyVal {
     
     inline def setOnactivatefile(value: /* file */ FilePondFile => Unit): Self = StObject.set(x, "onactivatefile", js.Any.fromFunction1(value))
     

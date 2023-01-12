@@ -21,7 +21,8 @@ object AndroidApi {
     __obj.asInstanceOf[AndroidApi]
   }
   
-  extension [Self <: AndroidApi](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AndroidApi] (val x: Self) extends AnyVal {
     
     inline def setActionViewIntent(value: (String, String) => js.Promise[Any]): Self = StObject.set(x, "actionViewIntent", js.Any.fromFunction2(value))
   }

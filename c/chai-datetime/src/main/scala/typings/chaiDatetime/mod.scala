@@ -138,7 +138,8 @@ object mod extends Shortcut {
           __obj.asInstanceOf[Assertion]
         }
         
-        extension [Self <: Assertion](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: Assertion] (val x: Self) extends AnyVal {
           
           inline def setAfterDate(value: Date => Assertion): Self = StObject.set(x, "afterDate", js.Any.fromFunction1(value))
           
@@ -180,7 +181,8 @@ object mod extends Shortcut {
         __obj.asInstanceOf[Date]
       }
       
-      extension [Self <: Date](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Date] (val x: Self) extends AnyVal {
         
         inline def setShould(value: Assertion): Self = StObject.set(x, "should", value.asInstanceOf[js.Any])
       }

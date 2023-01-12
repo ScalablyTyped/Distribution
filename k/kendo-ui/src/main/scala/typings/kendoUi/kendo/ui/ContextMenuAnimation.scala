@@ -17,7 +17,8 @@ object ContextMenuAnimation {
     __obj.asInstanceOf[ContextMenuAnimation]
   }
   
-  extension [Self <: ContextMenuAnimation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContextMenuAnimation] (val x: Self) extends AnyVal {
     
     inline def setClose(value: ContextMenuAnimationClose): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object DeleteLFTagRequest {
     __obj.asInstanceOf[DeleteLFTagRequest]
   }
   
-  extension [Self <: DeleteLFTagRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteLFTagRequest] (val x: Self) extends AnyVal {
     
     inline def setCatalogId(value: CatalogIdString): Self = StObject.set(x, "CatalogId", value.asInstanceOf[js.Any])
     

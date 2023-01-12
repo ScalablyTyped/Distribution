@@ -45,7 +45,8 @@ object XSelectionSupplier {
     __obj.asInstanceOf[XSelectionSupplier]
   }
   
-  extension [Self <: XSelectionSupplier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XSelectionSupplier] (val x: Self) extends AnyVal {
     
     inline def setAddSelectionChangeListener(value: XSelectionChangeListener => Unit): Self = StObject.set(x, "addSelectionChangeListener", js.Any.fromFunction1(value))
     

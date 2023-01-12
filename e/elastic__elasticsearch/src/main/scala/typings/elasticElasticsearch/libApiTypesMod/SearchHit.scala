@@ -52,7 +52,8 @@ object SearchHit {
     __obj.asInstanceOf[SearchHit[TDocument]]
   }
   
-  extension [Self <: SearchHit[?], TDocument](x: Self & SearchHit[TDocument]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchHit[?], TDocument] (val x: Self & SearchHit[TDocument]) extends AnyVal {
     
     inline def setFields(value: Record[String, Any]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     

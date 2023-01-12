@@ -81,7 +81,8 @@ object typesStreamDescriptionSummaryMod {
       __obj.asInstanceOf[StreamDescriptionSummary]
     }
     
-    extension [Self <: StreamDescriptionSummary](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StreamDescriptionSummary] (val x: Self) extends AnyVal {
       
       inline def setConsumerCount(value: Double): Self = StObject.set(x, "ConsumerCount", value.asInstanceOf[js.Any])
       
@@ -144,7 +145,8 @@ object typesStreamDescriptionSummaryMod {
       __obj.asInstanceOf[UnmarshalledStreamDescriptionSummary]
     }
     
-    extension [Self <: UnmarshalledStreamDescriptionSummary](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnmarshalledStreamDescriptionSummary] (val x: Self) extends AnyVal {
       
       inline def setEnhancedMonitoring(value: js.Array[UnmarshalledEnhancedMetrics]): Self = StObject.set(x, "EnhancedMonitoring", value.asInstanceOf[js.Any])
       

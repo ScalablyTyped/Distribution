@@ -27,7 +27,8 @@ object ResponseRegisterDataRecipientList {
     __obj.asInstanceOf[ResponseRegisterDataRecipientList]
   }
   
-  extension [Self <: ResponseRegisterDataRecipientList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResponseRegisterDataRecipientList] (val x: Self) extends AnyVal {
     
     inline def setData(value: js.Array[AccreditationLevel]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

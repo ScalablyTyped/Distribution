@@ -17,7 +17,8 @@ object AcknowledgedDocs {
     __obj.asInstanceOf[AcknowledgedDocs]
   }
   
-  extension [Self <: AcknowledgedDocs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AcknowledgedDocs] (val x: Self) extends AnyVal {
     
     inline def setAcknowledgedDocs(value: js.Array[String]): Self = StObject.set(x, "acknowledgedDocs", value.asInstanceOf[js.Any])
     

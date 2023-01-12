@@ -31,7 +31,8 @@ object X509CertificateDetails {
     __obj.asInstanceOf[X509CertificateDetails]
   }
   
-  extension [Self <: X509CertificateDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: X509CertificateDetails] (val x: Self) extends AnyVal {
     
     inline def setExpiryTime(value: String): Self = StObject.set(x, "expiryTime", value.asInstanceOf[js.Any])
     

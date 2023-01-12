@@ -25,7 +25,8 @@ object ArrowStylePropsArgthemeTh {
     __obj.asInstanceOf[ArrowStylePropsArgthemeTh]
   }
   
-  extension [Self <: ArrowStylePropsArgthemeTh](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ArrowStylePropsArgthemeTh] (val x: Self) extends AnyVal {
     
     inline def set$arrowOffset(value: Offset): Self = StObject.set(x, "$arrowOffset", value.asInstanceOf[js.Any])
     

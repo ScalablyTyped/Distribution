@@ -28,7 +28,8 @@ object DisassociateQueueQuickConnectsRequest {
     __obj.asInstanceOf[DisassociateQueueQuickConnectsRequest]
   }
   
-  extension [Self <: DisassociateQueueQuickConnectsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisassociateQueueQuickConnectsRequest] (val x: Self) extends AnyVal {
     
     inline def setInstanceId(value: InstanceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
     

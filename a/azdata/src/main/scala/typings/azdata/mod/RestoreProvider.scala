@@ -30,7 +30,8 @@ object RestoreProvider {
     __obj.asInstanceOf[RestoreProvider]
   }
   
-  extension [Self <: RestoreProvider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RestoreProvider] (val x: Self) extends AnyVal {
     
     inline def setCancelRestorePlan(value: (String, RestoreInfo) => Thenable[Boolean]): Self = StObject.set(x, "cancelRestorePlan", js.Any.fromFunction2(value))
     

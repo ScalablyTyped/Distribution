@@ -17,7 +17,8 @@ object RankedChartData {
     __obj.asInstanceOf[RankedChartData]
   }
   
-  extension [Self <: RankedChartData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RankedChartData] (val x: Self) extends AnyVal {
     
     inline def setMaxValue(value: Double): Self = StObject.set(x, "maxValue", value.asInstanceOf[js.Any])
     

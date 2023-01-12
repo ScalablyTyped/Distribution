@@ -126,7 +126,8 @@ object AndroidWorkProfileGeneralDeviceConfiguration {
     __obj.asInstanceOf[AndroidWorkProfileGeneralDeviceConfiguration]
   }
   
-  extension [Self <: AndroidWorkProfileGeneralDeviceConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AndroidWorkProfileGeneralDeviceConfiguration] (val x: Self) extends AnyVal {
     
     inline def setPasswordBlockFingerprintUnlock(value: Boolean): Self = StObject.set(x, "passwordBlockFingerprintUnlock", value.asInstanceOf[js.Any])
     

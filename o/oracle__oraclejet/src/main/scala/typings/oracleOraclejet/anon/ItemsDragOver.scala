@@ -15,7 +15,8 @@ object ItemsDragOver {
     __obj.asInstanceOf[ItemsDragOver]
   }
   
-  extension [Self <: ItemsDragOver](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ItemsDragOver] (val x: Self) extends AnyVal {
     
     inline def setItems(value: DragOver): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
   }

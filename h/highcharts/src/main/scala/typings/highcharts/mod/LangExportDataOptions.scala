@@ -29,7 +29,8 @@ object LangExportDataOptions {
     __obj.asInstanceOf[LangExportDataOptions]
   }
   
-  extension [Self <: LangExportDataOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LangExportDataOptions] (val x: Self) extends AnyVal {
     
     inline def setAnnotationHeader(value: String): Self = StObject.set(x, "annotationHeader", value.asInstanceOf[js.Any])
     

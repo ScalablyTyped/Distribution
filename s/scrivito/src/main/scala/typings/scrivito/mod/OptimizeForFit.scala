@@ -26,7 +26,8 @@ object OptimizeForFit {
     __obj.asInstanceOf[OptimizeForFit]
   }
   
-  extension [Self <: OptimizeForFit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OptimizeForFit] (val x: Self) extends AnyVal {
     
     inline def setCrop(value: center | top | left | right | bottom): Self = StObject.set(x, "crop", value.asInstanceOf[js.Any])
     

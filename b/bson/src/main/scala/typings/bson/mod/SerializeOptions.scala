@@ -26,7 +26,8 @@ object SerializeOptions {
     __obj.asInstanceOf[SerializeOptions]
   }
   
-  extension [Self <: SerializeOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SerializeOptions] (val x: Self) extends AnyVal {
     
     inline def setCheckKeys(value: Boolean): Self = StObject.set(x, "checkKeys", value.asInstanceOf[js.Any])
     

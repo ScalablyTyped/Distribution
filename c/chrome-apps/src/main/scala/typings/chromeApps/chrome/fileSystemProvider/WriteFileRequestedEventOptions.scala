@@ -32,7 +32,8 @@ object WriteFileRequestedEventOptions {
     __obj.asInstanceOf[WriteFileRequestedEventOptions]
   }
   
-  extension [Self <: WriteFileRequestedEventOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WriteFileRequestedEventOptions] (val x: Self) extends AnyVal {
     
     inline def setData(value: js.typedarray.ArrayBuffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

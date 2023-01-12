@@ -23,7 +23,8 @@ object RaspberryRevisionData {
     __obj.asInstanceOf[RaspberryRevisionData]
   }
   
-  extension [Self <: RaspberryRevisionData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RaspberryRevisionData] (val x: Self) extends AnyVal {
     
     inline def setManufacturer(value: String): Self = StObject.set(x, "manufacturer", value.asInstanceOf[js.Any])
     

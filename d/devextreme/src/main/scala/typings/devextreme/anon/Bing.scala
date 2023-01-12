@@ -28,7 +28,8 @@ object Bing {
     __obj.asInstanceOf[Bing]
   }
   
-  extension [Self <: Bing](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Bing] (val x: Self) extends AnyVal {
     
     inline def setBing(value: String): Self = StObject.set(x, "bing", value.asInstanceOf[js.Any])
     

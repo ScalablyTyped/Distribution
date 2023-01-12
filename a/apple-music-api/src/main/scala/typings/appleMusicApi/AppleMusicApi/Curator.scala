@@ -27,7 +27,8 @@ object Curator {
     __obj.asInstanceOf[Curator]
   }
   
-  extension [Self <: Curator](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Curator] (val x: Self) extends AnyVal {
     
     inline def setAttributes(value: Url): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     

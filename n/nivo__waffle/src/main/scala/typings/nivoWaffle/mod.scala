@@ -109,7 +109,8 @@ object mod {
       __obj.asInstanceOf[WaffleBaseProps]
     }
     
-    extension [Self <: WaffleBaseProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WaffleBaseProps] (val x: Self) extends AnyVal {
       
       inline def setColumns(value: Double): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
       
@@ -181,7 +182,8 @@ object mod {
       __obj.asInstanceOf[WaffleCanvasProps]
     }
     
-    extension [Self <: WaffleCanvasProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WaffleCanvasProps] (val x: Self) extends AnyVal {
       
       inline def setBorderColor(value: InheritedColorConfig[WaffleDatum]): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
       
@@ -317,7 +319,8 @@ object mod {
       __obj.asInstanceOf[WaffleCommonProps]
     }
     
-    extension [Self <: WaffleCommonProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WaffleCommonProps] (val x: Self) extends AnyVal {
       
       inline def setBorderColor(value: InheritedColorConfig[WaffleDatum]): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
       
@@ -406,7 +409,8 @@ object mod {
       __obj.asInstanceOf[WaffleDatum]
     }
     
-    extension [Self <: WaffleDatum](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WaffleDatum] (val x: Self) extends AnyVal {
       
       inline def setId(value: String | Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -496,7 +500,8 @@ object mod {
       __obj.asInstanceOf[WaffleHtmlProps]
     }
     
-    extension [Self <: WaffleHtmlProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WaffleHtmlProps] (val x: Self) extends AnyVal {
       
       inline def setAnimate(value: Boolean): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
       
@@ -660,7 +665,8 @@ object mod {
       __obj.asInstanceOf[WaffleSvgProps]
     }
     
-    extension [Self <: WaffleSvgProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WaffleSvgProps] (val x: Self) extends AnyVal {
       
       inline def setAnimate(value: Boolean): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
       
@@ -808,7 +814,8 @@ object mod {
       __obj.asInstanceOf[WaffleTooltipData]
     }
     
-    extension [Self <: WaffleTooltipData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WaffleTooltipData] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       

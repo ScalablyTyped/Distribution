@@ -21,7 +21,8 @@ object MlPutTrainedModelAggregateOutput {
     __obj.asInstanceOf[MlPutTrainedModelAggregateOutput]
   }
   
-  extension [Self <: MlPutTrainedModelAggregateOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlPutTrainedModelAggregateOutput] (val x: Self) extends AnyVal {
     
     inline def setExponent(value: MlPutTrainedModelWeights): Self = StObject.set(x, "exponent", value.asInstanceOf[js.Any])
     

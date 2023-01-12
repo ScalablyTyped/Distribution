@@ -19,7 +19,8 @@ object TypeofCharge {
     __obj.asInstanceOf[TypeofCharge]
   }
   
-  extension [Self <: TypeofCharge](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofCharge] (val x: Self) extends AnyVal {
     
     inline def setLevel3(value: Any): Self = StObject.set(x, "Level3", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object UseBroadcastChannel {
     __obj.asInstanceOf[UseBroadcastChannel]
   }
   
-  extension [Self <: UseBroadcastChannel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UseBroadcastChannel] (val x: Self) extends AnyVal {
     
     inline def setUseBroadcastChannel(value: Boolean): Self = StObject.set(x, "useBroadcastChannel", value.asInstanceOf[js.Any])
   }

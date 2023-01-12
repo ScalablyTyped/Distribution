@@ -27,7 +27,8 @@ object distSrcSystemDistComponentsTextAreaItalicMod extends Shortcut {
       __obj.asInstanceOf[TextAreaItalicProps]
     }
     
-    extension [Self <: TextAreaItalicProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TextAreaItalicProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

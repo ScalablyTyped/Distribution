@@ -203,7 +203,8 @@ object buildSrcChannelOptionsMod {
       __obj.asInstanceOf[ChannelOptions]
     }
     
-    extension [Self <: ChannelOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChannelOptions] (val x: Self) extends AnyVal {
       
       inline def `setGrpc-nodeDotmax_session_memory`(value: Double): Self = StObject.set(x, "grpc-node.max_session_memory", value.asInstanceOf[js.Any])
       

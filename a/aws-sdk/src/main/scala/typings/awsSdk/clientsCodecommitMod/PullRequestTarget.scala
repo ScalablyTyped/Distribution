@@ -48,7 +48,8 @@ object PullRequestTarget {
     __obj.asInstanceOf[PullRequestTarget]
   }
   
-  extension [Self <: PullRequestTarget](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PullRequestTarget] (val x: Self) extends AnyVal {
     
     inline def setDestinationCommit(value: CommitId): Self = StObject.set(x, "destinationCommit", value.asInstanceOf[js.Any])
     

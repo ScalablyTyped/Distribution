@@ -22,7 +22,8 @@ object ReplaceSitesRequest {
     __obj.asInstanceOf[ReplaceSitesRequest]
   }
   
-  extension [Self <: ReplaceSitesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReplaceSitesRequest] (val x: Self) extends AnyVal {
     
     inline def setAdvertiserId(value: String): Self = StObject.set(x, "advertiserId", value.asInstanceOf[js.Any])
     

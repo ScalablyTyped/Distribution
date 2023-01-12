@@ -18,7 +18,8 @@ object DeleteAccessorInput {
     __obj.asInstanceOf[DeleteAccessorInput]
   }
   
-  extension [Self <: DeleteAccessorInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteAccessorInput] (val x: Self) extends AnyVal {
     
     inline def setAccessorId(value: ResourceIdString): Self = StObject.set(x, "AccessorId", value.asInstanceOf[js.Any])
   }

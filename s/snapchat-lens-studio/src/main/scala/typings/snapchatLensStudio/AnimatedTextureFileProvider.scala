@@ -90,7 +90,8 @@ object AnimatedTextureFileProvider {
     __obj.asInstanceOf[AnimatedTextureFileProvider]
   }
   
-  extension [Self <: AnimatedTextureFileProvider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnimatedTextureFileProvider] (val x: Self) extends AnyVal {
     
     inline def setGetCurrentPlayingFrame(value: () => Double): Self = StObject.set(x, "getCurrentPlayingFrame", js.Any.fromFunction0(value))
     

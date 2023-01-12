@@ -23,7 +23,8 @@ object RuntimePlatform {
     __obj.asInstanceOf[RuntimePlatform]
   }
   
-  extension [Self <: RuntimePlatform](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RuntimePlatform] (val x: Self) extends AnyVal {
     
     inline def setCpuArchitecture(value: CPUArchitecture): Self = StObject.set(x, "cpuArchitecture", value.asInstanceOf[js.Any])
     

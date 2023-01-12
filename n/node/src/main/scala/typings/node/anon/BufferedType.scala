@@ -19,7 +19,8 @@ object BufferedType {
     __obj.asInstanceOf[BufferedType]
   }
   
-  extension [Self <: BufferedType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BufferedType] (val x: Self) extends AnyVal {
     
     inline def setBuffered(value: Boolean): Self = StObject.set(x, "buffered", value.asInstanceOf[js.Any])
     

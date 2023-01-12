@@ -9455,7 +9455,8 @@ object Rules {
     __obj.asInstanceOf[Rules]
   }
   
-  extension [Self <: Rules](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Rules] (val x: Self) extends AnyVal {
     
     inline def setAbbr_close(
       value: (/* tokens */ js.Array[AbbrCloseToken], /* idx */ Double, /* options */ js.UndefOr[Options], /* env */ js.UndefOr[Env], /* instance */ js.UndefOr[Remarkable]) => String

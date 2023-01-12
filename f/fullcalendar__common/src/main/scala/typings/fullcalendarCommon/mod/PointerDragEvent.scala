@@ -37,7 +37,8 @@ object PointerDragEvent {
     __obj.asInstanceOf[PointerDragEvent]
   }
   
-  extension [Self <: PointerDragEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PointerDragEvent] (val x: Self) extends AnyVal {
     
     inline def setDeltaX(value: Double): Self = StObject.set(x, "deltaX", value.asInstanceOf[js.Any])
     

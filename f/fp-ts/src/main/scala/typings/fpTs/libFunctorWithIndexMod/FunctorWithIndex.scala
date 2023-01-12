@@ -25,7 +25,8 @@ object FunctorWithIndex {
     __obj.asInstanceOf[FunctorWithIndex[F, I]]
   }
   
-  extension [Self <: FunctorWithIndex[?, ?], F, I](x: Self & (FunctorWithIndex[F, I])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FunctorWithIndex[?, ?], F, I] (val x: Self & (FunctorWithIndex[F, I])) extends AnyVal {
     
     inline def setMapWithIndex(
       value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, A> */ Any, js.Function2[/* i */ I, Any, Any]) => Any

@@ -17,7 +17,8 @@ object Naclarch {
     __obj.asInstanceOf[Naclarch]
   }
   
-  extension [Self <: Naclarch](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Naclarch] (val x: Self) extends AnyVal {
     
     inline def setNacl_arch(value: String): Self = StObject.set(x, "nacl_arch", value.asInstanceOf[js.Any])
     

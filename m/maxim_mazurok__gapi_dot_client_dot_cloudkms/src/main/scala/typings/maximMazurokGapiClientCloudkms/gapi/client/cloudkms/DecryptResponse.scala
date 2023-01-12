@@ -31,7 +31,8 @@ object DecryptResponse {
     __obj.asInstanceOf[DecryptResponse]
   }
   
-  extension [Self <: DecryptResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DecryptResponse] (val x: Self) extends AnyVal {
     
     inline def setPlaintext(value: String): Self = StObject.set(x, "plaintext", value.asInstanceOf[js.Any])
     

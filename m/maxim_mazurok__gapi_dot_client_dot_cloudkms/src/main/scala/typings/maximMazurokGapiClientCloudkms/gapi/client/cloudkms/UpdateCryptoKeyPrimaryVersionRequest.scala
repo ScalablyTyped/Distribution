@@ -16,7 +16,8 @@ object UpdateCryptoKeyPrimaryVersionRequest {
     __obj.asInstanceOf[UpdateCryptoKeyPrimaryVersionRequest]
   }
   
-  extension [Self <: UpdateCryptoKeyPrimaryVersionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateCryptoKeyPrimaryVersionRequest] (val x: Self) extends AnyVal {
     
     inline def setCryptoKeyVersionId(value: String): Self = StObject.set(x, "cryptoKeyVersionId", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object UserScriptable {
     __obj.asInstanceOf[UserScriptable]
   }
   
-  extension [Self <: UserScriptable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UserScriptable] (val x: Self) extends AnyVal {
     
     inline def setBody(value: UserFunction): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

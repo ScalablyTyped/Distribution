@@ -30,7 +30,8 @@ object Geolocation {
     __obj.asInstanceOf[Geolocation]
   }
   
-  extension [Self <: Geolocation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Geolocation] (val x: Self) extends AnyVal {
     
     inline def setClearWatch(value: Double => Double): Self = StObject.set(x, "clearWatch", js.Any.fromFunction1(value))
     

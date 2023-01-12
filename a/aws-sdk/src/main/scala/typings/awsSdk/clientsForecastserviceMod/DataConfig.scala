@@ -28,7 +28,8 @@ object DataConfig {
     __obj.asInstanceOf[DataConfig]
   }
   
-  extension [Self <: DataConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataConfig] (val x: Self) extends AnyVal {
     
     inline def setAdditionalDatasets(value: AdditionalDatasets): Self = StObject.set(x, "AdditionalDatasets", value.asInstanceOf[js.Any])
     

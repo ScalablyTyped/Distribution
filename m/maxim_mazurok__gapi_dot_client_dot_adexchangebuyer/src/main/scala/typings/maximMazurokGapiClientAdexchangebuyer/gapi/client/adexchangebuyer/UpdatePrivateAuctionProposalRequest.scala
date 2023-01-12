@@ -25,7 +25,8 @@ object UpdatePrivateAuctionProposalRequest {
     __obj.asInstanceOf[UpdatePrivateAuctionProposalRequest]
   }
   
-  extension [Self <: UpdatePrivateAuctionProposalRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdatePrivateAuctionProposalRequest] (val x: Self) extends AnyVal {
     
     inline def setExternalDealId(value: String): Self = StObject.set(x, "externalDealId", value.asInstanceOf[js.Any])
     

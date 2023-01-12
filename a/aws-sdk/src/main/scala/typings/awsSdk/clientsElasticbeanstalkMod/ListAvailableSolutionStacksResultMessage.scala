@@ -23,7 +23,8 @@ object ListAvailableSolutionStacksResultMessage {
     __obj.asInstanceOf[ListAvailableSolutionStacksResultMessage]
   }
   
-  extension [Self <: ListAvailableSolutionStacksResultMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListAvailableSolutionStacksResultMessage] (val x: Self) extends AnyVal {
     
     inline def setSolutionStackDetails(value: AvailableSolutionStackDetailsList): Self = StObject.set(x, "SolutionStackDetails", value.asInstanceOf[js.Any])
     

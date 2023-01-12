@@ -28,7 +28,8 @@ object CreateDatasetRequest {
     __obj.asInstanceOf[CreateDatasetRequest]
   }
   
-  extension [Self <: CreateDatasetRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateDatasetRequest] (val x: Self) extends AnyVal {
     
     inline def setDatasetSource(value: DatasetSource): Self = StObject.set(x, "DatasetSource", value.asInstanceOf[js.Any])
     

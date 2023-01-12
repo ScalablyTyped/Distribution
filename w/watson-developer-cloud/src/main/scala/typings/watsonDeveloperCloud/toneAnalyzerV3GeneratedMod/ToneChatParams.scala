@@ -29,7 +29,8 @@ object ToneChatParams {
     __obj.asInstanceOf[ToneChatParams]
   }
   
-  extension [Self <: ToneChatParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ToneChatParams] (val x: Self) extends AnyVal {
     
     inline def setAccept_language(value: AcceptLanguage | String): Self = StObject.set(x, "accept_language", value.asInstanceOf[js.Any])
     

@@ -50,7 +50,8 @@ object PartialFastCsvParserOptio {
     __obj.asInstanceOf[PartialFastCsvParserOptio]
   }
   
-  extension [Self <: PartialFastCsvParserOptio](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialFastCsvParserOptio] (val x: Self) extends AnyVal {
     
     inline def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
     

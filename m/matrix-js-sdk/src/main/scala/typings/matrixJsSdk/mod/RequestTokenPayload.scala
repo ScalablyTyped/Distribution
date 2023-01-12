@@ -17,7 +17,8 @@ object RequestTokenPayload {
     __obj.asInstanceOf[RequestTokenPayload]
   }
   
-  extension [Self <: RequestTokenPayload](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RequestTokenPayload] (val x: Self) extends AnyVal {
     
     inline def setSid(value: String): Self = StObject.set(x, "sid", value.asInstanceOf[js.Any])
     

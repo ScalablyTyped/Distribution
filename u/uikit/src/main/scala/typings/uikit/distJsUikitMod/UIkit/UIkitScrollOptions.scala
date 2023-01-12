@@ -15,7 +15,8 @@ object UIkitScrollOptions {
     __obj.asInstanceOf[UIkitScrollOptions]
   }
   
-  extension [Self <: UIkitScrollOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UIkitScrollOptions] (val x: Self) extends AnyVal {
     
     inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     

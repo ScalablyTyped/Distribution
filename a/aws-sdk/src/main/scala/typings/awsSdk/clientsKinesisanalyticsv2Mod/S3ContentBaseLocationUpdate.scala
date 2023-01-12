@@ -23,7 +23,8 @@ object S3ContentBaseLocationUpdate {
     __obj.asInstanceOf[S3ContentBaseLocationUpdate]
   }
   
-  extension [Self <: S3ContentBaseLocationUpdate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: S3ContentBaseLocationUpdate] (val x: Self) extends AnyVal {
     
     inline def setBasePathUpdate(value: BasePath): Self = StObject.set(x, "BasePathUpdate", value.asInstanceOf[js.Any])
     

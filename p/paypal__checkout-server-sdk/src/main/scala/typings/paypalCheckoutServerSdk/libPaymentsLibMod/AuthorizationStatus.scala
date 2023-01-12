@@ -17,7 +17,8 @@ object AuthorizationStatus {
     __obj.asInstanceOf[AuthorizationStatus]
   }
   
-  extension [Self <: AuthorizationStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AuthorizationStatus] (val x: Self) extends AnyVal {
     
     inline def setStatus(value: Status): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     

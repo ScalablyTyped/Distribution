@@ -28,7 +28,8 @@ object FunctionCoverage {
     __obj.asInstanceOf[FunctionCoverage]
   }
   
-  extension [Self <: FunctionCoverage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FunctionCoverage] (val x: Self) extends AnyVal {
     
     inline def setFunctionName(value: String): Self = StObject.set(x, "functionName", value.asInstanceOf[js.Any])
     

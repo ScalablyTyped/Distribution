@@ -37,7 +37,8 @@ object anon {
       __obj.asInstanceOf[Bold]
     }
     
-    extension [Self <: Bold](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Bold] (val x: Self) extends AnyVal {
       
       inline def setBold(value: Boolean): Self = StObject.set(x, "bold", value.asInstanceOf[js.Any])
       
@@ -78,7 +79,8 @@ object anon {
       __obj.asInstanceOf[Color]
     }
     
-    extension [Self <: Color](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Color] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -102,7 +104,8 @@ object anon {
       __obj.asInstanceOf[Extra]
     }
     
-    extension [Self <: Extra](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Extra] (val x: Self) extends AnyVal {
       
       inline def setExtra(value: Bold): Self = StObject.set(x, "extra", value.asInstanceOf[js.Any])
       
@@ -131,7 +134,8 @@ object anon {
       __obj.asInstanceOf[Max]
     }
     
-    extension [Self <: Max](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Max] (val x: Self) extends AnyVal {
       
       inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
       
@@ -159,7 +163,8 @@ object anon {
       __obj.asInstanceOf[ModList]
     }
     
-    extension [Self <: ModList](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ModList] (val x: Self) extends AnyVal {
       
       inline def setModList(value: js.Array[String]): Self = StObject.set(x, "modList", value.asInstanceOf[js.Any])
       
@@ -188,7 +193,8 @@ object anon {
       __obj.asInstanceOf[Name]
     }
     
-    extension [Self <: Name](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Name] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       

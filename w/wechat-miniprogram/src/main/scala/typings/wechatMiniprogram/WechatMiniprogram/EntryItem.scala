@@ -52,7 +52,8 @@ object EntryItem {
     __obj.asInstanceOf[EntryItem]
   }
   
-  extension [Self <: EntryItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EntryItem] (val x: Self) extends AnyVal {
     
     inline def setEncoding(
       value: ascii | base64 | binary | hex | ucs2 | `ucs-2` | utf16le | `utf-16le` | `utf-8` | utf8 | latin1

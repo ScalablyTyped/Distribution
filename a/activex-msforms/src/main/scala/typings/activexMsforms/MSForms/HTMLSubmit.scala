@@ -37,7 +37,8 @@ object HTMLSubmit {
     __obj.asInstanceOf[HTMLSubmit]
   }
   
-  extension [Self <: HTMLSubmit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HTMLSubmit] (val x: Self) extends AnyVal {
     
     inline def setAction(value: String): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
     

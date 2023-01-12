@@ -1229,7 +1229,8 @@ object sapUiLayoutGridDataMod {
       __obj.asInstanceOf[GridDataSettings]
     }
     
-    extension [Self <: GridDataSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GridDataSettings] (val x: Self) extends AnyVal {
       
       inline def setIndent(value: GridIndent | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "indent", value.asInstanceOf[js.Any])
       

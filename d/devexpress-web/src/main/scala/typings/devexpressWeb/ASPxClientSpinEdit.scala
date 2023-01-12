@@ -119,7 +119,8 @@ object ASPxClientSpinEdit {
     __obj.asInstanceOf[ASPxClientSpinEdit]
   }
   
-  extension [Self <: ASPxClientSpinEdit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientSpinEdit] (val x: Self) extends AnyVal {
     
     inline def setGetMaxValue(value: () => Double): Self = StObject.set(x, "GetMaxValue", js.Any.fromFunction0(value))
     

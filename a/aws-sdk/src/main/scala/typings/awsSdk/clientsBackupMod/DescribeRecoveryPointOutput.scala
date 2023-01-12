@@ -108,7 +108,8 @@ object DescribeRecoveryPointOutput {
     __obj.asInstanceOf[DescribeRecoveryPointOutput]
   }
   
-  extension [Self <: DescribeRecoveryPointOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeRecoveryPointOutput] (val x: Self) extends AnyVal {
     
     inline def setBackupSizeInBytes(value: Long_): Self = StObject.set(x, "BackupSizeInBytes", value.asInstanceOf[js.Any])
     

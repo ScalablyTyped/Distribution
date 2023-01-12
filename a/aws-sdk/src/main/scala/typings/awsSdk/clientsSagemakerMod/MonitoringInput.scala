@@ -23,7 +23,8 @@ object MonitoringInput {
     __obj.asInstanceOf[MonitoringInput]
   }
   
-  extension [Self <: MonitoringInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MonitoringInput] (val x: Self) extends AnyVal {
     
     inline def setBatchTransformInput(value: BatchTransformInput): Self = StObject.set(x, "BatchTransformInput", value.asInstanceOf[js.Any])
     

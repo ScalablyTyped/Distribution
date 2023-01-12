@@ -23,7 +23,8 @@ object RegionalPriceMigrationConfig {
     __obj.asInstanceOf[RegionalPriceMigrationConfig]
   }
   
-  extension [Self <: RegionalPriceMigrationConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RegionalPriceMigrationConfig] (val x: Self) extends AnyVal {
     
     inline def setOldestAllowedPriceVersionTime(value: String): Self = StObject.set(x, "oldestAllowedPriceVersionTime", value.asInstanceOf[js.Any])
     

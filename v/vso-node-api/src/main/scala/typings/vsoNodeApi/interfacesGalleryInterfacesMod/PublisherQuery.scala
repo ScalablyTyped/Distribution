@@ -23,7 +23,8 @@ object PublisherQuery {
     __obj.asInstanceOf[PublisherQuery]
   }
   
-  extension [Self <: PublisherQuery](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PublisherQuery] (val x: Self) extends AnyVal {
     
     inline def setFilters(value: js.Array[QueryFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
     

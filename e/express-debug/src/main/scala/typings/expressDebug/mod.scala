@@ -92,7 +92,8 @@ object mod {
       __obj.asInstanceOf[CustomPanel]
     }
     
-    extension [Self <: CustomPanel](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CustomPanel] (val x: Self) extends AnyVal {
       
       inline def setFinalize_(
         value: /* req */ Request_[

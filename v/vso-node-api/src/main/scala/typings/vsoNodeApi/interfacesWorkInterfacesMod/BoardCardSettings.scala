@@ -16,7 +16,8 @@ object BoardCardSettings {
     __obj.asInstanceOf[BoardCardSettings]
   }
   
-  extension [Self <: BoardCardSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BoardCardSettings] (val x: Self) extends AnyVal {
     
     inline def setCards(value: StringDictionary[js.Array[FieldSetting]]): Self = StObject.set(x, "cards", value.asInstanceOf[js.Any])
   }

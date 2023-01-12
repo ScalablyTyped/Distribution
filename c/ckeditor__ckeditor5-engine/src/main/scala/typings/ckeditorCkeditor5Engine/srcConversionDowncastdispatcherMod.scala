@@ -50,7 +50,8 @@ object srcConversionDowncastdispatcherMod {
       __obj.asInstanceOf[DowncastConversionApi[T]]
     }
     
-    extension [Self <: DowncastConversionApi[?], T](x: Self & DowncastConversionApi[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DowncastConversionApi[?], T] (val x: Self & DowncastConversionApi[T]) extends AnyVal {
       
       inline def setConsumable(value: typings.ckeditorCkeditor5Engine.srcConversionModelconsumableMod.default): Self = StObject.set(x, "consumable", value.asInstanceOf[js.Any])
       
@@ -217,7 +218,8 @@ object srcConversionDowncastdispatcherMod {
       __obj.asInstanceOf[DowncastEventDataTypes]
     }
     
-    extension [Self <: DowncastEventDataTypes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DowncastEventDataTypes] (val x: Self) extends AnyVal {
       
       inline def setAddMarker(value: MarkerRange): Self = StObject.set(x, "addMarker", value.asInstanceOf[js.Any])
       

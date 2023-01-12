@@ -23,7 +23,8 @@ object JobBookmarksEncryption {
     __obj.asInstanceOf[JobBookmarksEncryption]
   }
   
-  extension [Self <: JobBookmarksEncryption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JobBookmarksEncryption] (val x: Self) extends AnyVal {
     
     inline def setJobBookmarksEncryptionMode(value: JobBookmarksEncryptionMode): Self = StObject.set(x, "JobBookmarksEncryptionMode", value.asInstanceOf[js.Any])
     

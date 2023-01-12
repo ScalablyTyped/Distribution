@@ -28,7 +28,8 @@ object PostgreSqlParameters {
     __obj.asInstanceOf[PostgreSqlParameters]
   }
   
-  extension [Self <: PostgreSqlParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PostgreSqlParameters] (val x: Self) extends AnyVal {
     
     inline def setDatabase(value: Database): Self = StObject.set(x, "Database", value.asInstanceOf[js.Any])
     

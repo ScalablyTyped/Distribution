@@ -26,7 +26,8 @@ object PurchasesResource {
     __obj.asInstanceOf[PurchasesResource]
   }
   
-  extension [Self <: PurchasesResource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PurchasesResource] (val x: Self) extends AnyVal {
     
     inline def setProducts(value: ProductsResource): Self = StObject.set(x, "products", value.asInstanceOf[js.Any])
     

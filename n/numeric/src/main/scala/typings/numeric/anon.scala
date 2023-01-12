@@ -25,7 +25,8 @@ object anon {
       __obj.asInstanceOf[A]
     }
     
-    extension [Self <: A](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: A] (val x: Self) extends AnyVal {
       
       inline def setA(value: Matrix): Self = StObject.set(x, "A", value.asInstanceOf[js.Any])
       
@@ -54,7 +55,8 @@ object anon {
       __obj.asInstanceOf[B]
     }
     
-    extension [Self <: B](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: B] (val x: Self) extends AnyVal {
       
       inline def setB(value: Matrix): Self = StObject.set(x, "B", value.asInstanceOf[js.Any])
       
@@ -79,7 +81,8 @@ object anon {
       __obj.asInstanceOf[E]
     }
     
-    extension [Self <: E](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: E] (val x: Self) extends AnyVal {
       
       inline def setE(value: Tensor): Self = StObject.set(x, "E", value.asInstanceOf[js.Any])
       
@@ -115,7 +118,8 @@ object anon {
       __obj.asInstanceOf[F]
     }
     
-    extension [Self <: F](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: F] (val x: Self) extends AnyVal {
       
       inline def setF(value: Scalar): Self = StObject.set(x, "f", value.asInstanceOf[js.Any])
       
@@ -150,7 +154,8 @@ object anon {
       __obj.asInstanceOf[H]
     }
     
-    extension [Self <: H](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: H] (val x: Self) extends AnyVal {
       
       inline def setH(value: Matrix): Self = StObject.set(x, "H", value.asInstanceOf[js.Any])
       
@@ -173,7 +178,8 @@ object anon {
       __obj.asInstanceOf[Hinv]
     }
     
-    extension [Self <: Hinv](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Hinv] (val x: Self) extends AnyVal {
       
       inline def setHinv(value: Matrix): Self = StObject.set(x, "Hinv", value.asInstanceOf[js.Any])
       
@@ -209,7 +215,8 @@ object anon {
       __obj.asInstanceOf[Iact]
     }
     
-    extension [Self <: Iact](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Iact] (val x: Self) extends AnyVal {
       
       inline def setIact(value: Vector): Self = StObject.set(x, "iact", value.asInstanceOf[js.Any])
       
@@ -250,7 +257,8 @@ object anon {
       __obj.asInstanceOf[Iterations]
     }
     
-    extension [Self <: Iterations](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Iterations] (val x: Self) extends AnyVal {
       
       inline def setIterations(value: Double): Self = StObject.set(x, "iterations", value.asInstanceOf[js.Any])
       
@@ -275,7 +283,8 @@ object anon {
       __obj.asInstanceOf[LU]
     }
     
-    extension [Self <: LU](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LU] (val x: Self) extends AnyVal {
       
       inline def setLU(value: Matrix): Self = StObject.set(x, "LU", value.asInstanceOf[js.Any])
       
@@ -313,7 +322,8 @@ object anon {
       __obj.asInstanceOf[S]
     }
     
-    extension [Self <: S](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: S] (val x: Self) extends AnyVal {
       
       inline def setS(value: Vector): Self = StObject.set(x, "S", value.asInstanceOf[js.Any])
       

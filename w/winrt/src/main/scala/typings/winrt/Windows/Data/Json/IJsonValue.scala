@@ -35,7 +35,8 @@ object IJsonValue {
     __obj.asInstanceOf[IJsonValue]
   }
   
-  extension [Self <: IJsonValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IJsonValue] (val x: Self) extends AnyVal {
     
     inline def setGetArray(value: () => JsonArray): Self = StObject.set(x, "getArray", js.Any.fromFunction0(value))
     

@@ -31,7 +31,8 @@ object srcComponentsTaglibTransformHelperGetComponentFilesMod {
       __obj.asInstanceOf[ComponentFiles]
     }
     
-    extension [Self <: ComponentFiles](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ComponentFiles] (val x: Self) extends AnyVal {
       
       inline def setBrowserFile(value: String): Self = StObject.set(x, "browserFile", value.asInstanceOf[js.Any])
       

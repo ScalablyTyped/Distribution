@@ -30,7 +30,8 @@ object Groupedimports {
     __obj.asInstanceOf[Groupedimports]
   }
   
-  extension [Self <: Groupedimports](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Groupedimports] (val x: Self) extends AnyVal {
     
     inline def `setGrouped-imports`(value: Boolean): Self = StObject.set(x, "grouped-imports", value.asInstanceOf[js.Any])
     

@@ -25,7 +25,8 @@ object TaskRequester {
     __obj.asInstanceOf[TaskRequester]
   }
   
-  extension [Self <: TaskRequester](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TaskRequester] (val x: Self) extends AnyVal {
     
     inline def setAgent(value: Reference): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
     

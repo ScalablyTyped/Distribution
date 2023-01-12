@@ -66,7 +66,8 @@ object distButtonSrcUseButtonMod {
       __obj.asInstanceOf[UseButtonProps]
     }
     
-    extension [Self <: UseButtonProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UseButtonProps] (val x: Self) extends AnyVal {
       
       inline def setAs(value: ElementType[Any]): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
@@ -138,7 +139,8 @@ object distButtonSrcUseButtonMod {
       __obj.asInstanceOf[UseButtonReturn]
     }
     
-    extension [Self <: UseButtonReturn](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UseButtonReturn] (val x: Self) extends AnyVal {
       
       inline def `setAria-busy`(value: Boolean): Self = StObject.set(x, "aria-busy", value.asInstanceOf[js.Any])
       

@@ -18,7 +18,8 @@ object AssociatePackageResponse {
     __obj.asInstanceOf[AssociatePackageResponse]
   }
   
-  extension [Self <: AssociatePackageResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssociatePackageResponse] (val x: Self) extends AnyVal {
     
     inline def setDomainPackageDetails(value: DomainPackageDetails): Self = StObject.set(x, "DomainPackageDetails", value.asInstanceOf[js.Any])
     

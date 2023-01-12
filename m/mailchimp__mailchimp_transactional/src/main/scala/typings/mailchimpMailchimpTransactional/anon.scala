@@ -21,7 +21,8 @@ object anon {
       __obj.asInstanceOf[MessageMetadatauseridnumb]
     }
     
-    extension [Self <: MessageMetadatauseridnumb](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MessageMetadatauseridnumb] (val x: Self) extends AnyVal {
       
       inline def setUser_id(value: Double): Self = StObject.set(x, "user_id", value.asInstanceOf[js.Any])
     }
@@ -41,7 +42,8 @@ object anon {
       __obj.asInstanceOf[MessageMetadatawebsitestr]
     }
     
-    extension [Self <: MessageMetadatawebsitestr](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MessageMetadatawebsitestr] (val x: Self) extends AnyVal {
       
       inline def setWebsite(value: String): Self = StObject.set(x, "website", value.asInstanceOf[js.Any])
     }

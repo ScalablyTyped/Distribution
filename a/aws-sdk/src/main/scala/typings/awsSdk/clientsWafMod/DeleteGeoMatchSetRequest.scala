@@ -23,7 +23,8 @@ object DeleteGeoMatchSetRequest {
     __obj.asInstanceOf[DeleteGeoMatchSetRequest]
   }
   
-  extension [Self <: DeleteGeoMatchSetRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteGeoMatchSetRequest] (val x: Self) extends AnyVal {
     
     inline def setChangeToken(value: ChangeToken): Self = StObject.set(x, "ChangeToken", value.asInstanceOf[js.Any])
     

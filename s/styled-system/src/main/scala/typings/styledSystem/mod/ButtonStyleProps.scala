@@ -15,7 +15,8 @@ object ButtonStyleProps {
     __obj.asInstanceOf[ButtonStyleProps[ThemeType]]
   }
   
-  extension [Self <: ButtonStyleProps[?], ThemeType /* <: Theme[TLengthStyledSystem] */](x: Self & ButtonStyleProps[ThemeType]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ButtonStyleProps[?], ThemeType /* <: Theme[TLengthStyledSystem] */] (val x: Self & ButtonStyleProps[ThemeType]) extends AnyVal {
     
     inline def setVariant(value: ResponsiveValue[String, ThemeType]): Self = StObject.set(x, "variant", value.asInstanceOf[js.Any])
     

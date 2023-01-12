@@ -22,7 +22,8 @@ object LivePlayerContextPauseOption {
     __obj.asInstanceOf[LivePlayerContextPauseOption]
   }
   
-  extension [Self <: LivePlayerContextPauseOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LivePlayerContextPauseOption] (val x: Self) extends AnyVal {
     
     inline def setComplete(value: /* res */ GeneralCallbackResult => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
     

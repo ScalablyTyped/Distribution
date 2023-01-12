@@ -43,7 +43,8 @@ object TextStructureFindStructureRequest {
     __obj.asInstanceOf[TextStructureFindStructureRequest[TJsonDocument]]
   }
   
-  extension [Self <: TextStructureFindStructureRequest[?], TJsonDocument](x: Self & TextStructureFindStructureRequest[TJsonDocument]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextStructureFindStructureRequest[?], TJsonDocument] (val x: Self & TextStructureFindStructureRequest[TJsonDocument]) extends AnyVal {
     
     inline def setCharset(value: String): Self = StObject.set(x, "charset", value.asInstanceOf[js.Any])
     

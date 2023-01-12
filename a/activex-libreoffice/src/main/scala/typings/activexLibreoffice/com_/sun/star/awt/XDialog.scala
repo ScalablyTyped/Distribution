@@ -42,7 +42,8 @@ object XDialog {
     __obj.asInstanceOf[XDialog]
   }
   
-  extension [Self <: XDialog](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XDialog] (val x: Self) extends AnyVal {
     
     inline def setEndExecute(value: () => Unit): Self = StObject.set(x, "endExecute", js.Any.fromFunction0(value))
     

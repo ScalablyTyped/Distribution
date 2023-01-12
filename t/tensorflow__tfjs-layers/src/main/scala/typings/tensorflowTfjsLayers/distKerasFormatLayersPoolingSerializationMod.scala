@@ -47,7 +47,8 @@ object distKerasFormatLayersPoolingSerializationMod {
       __obj.asInstanceOf[GlobalPooling2DLayerConfig]
     }
     
-    extension [Self <: GlobalPooling2DLayerConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GlobalPooling2DLayerConfig] (val x: Self) extends AnyVal {
       
       inline def setData_format(value: DataFormatSerialization): Self = StObject.set(x, "data_format", value.asInstanceOf[js.Any])
       
@@ -76,7 +77,8 @@ object distKerasFormatLayersPoolingSerializationMod {
       __obj.asInstanceOf[Pooling1DLayerConfig]
     }
     
-    extension [Self <: Pooling1DLayerConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Pooling1DLayerConfig] (val x: Self) extends AnyVal {
       
       inline def setPadding(value: PaddingMode): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
       
@@ -115,7 +117,8 @@ object distKerasFormatLayersPoolingSerializationMod {
       __obj.asInstanceOf[Pooling2DLayerConfig]
     }
     
-    extension [Self <: Pooling2DLayerConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Pooling2DLayerConfig] (val x: Self) extends AnyVal {
       
       inline def setData_format(value: DataFormatSerialization): Self = StObject.set(x, "data_format", value.asInstanceOf[js.Any])
       

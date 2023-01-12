@@ -22,7 +22,8 @@ object Basetree {
     __obj.asInstanceOf[Basetree]
   }
   
-  extension [Self <: Basetree](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Basetree] (val x: Self) extends AnyVal {
     
     inline def setBase_tree(value: String): Self = StObject.set(x, "base_tree", value.asInstanceOf[js.Any])
     

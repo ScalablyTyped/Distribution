@@ -39,7 +39,8 @@ object XOfficeDatabaseDocument {
     __obj.asInstanceOf[XOfficeDatabaseDocument]
   }
   
-  extension [Self <: XOfficeDatabaseDocument](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XOfficeDatabaseDocument] (val x: Self) extends AnyVal {
     
     inline def setDataSource(value: XDataSource): Self = StObject.set(x, "DataSource", value.asInstanceOf[js.Any])
   }

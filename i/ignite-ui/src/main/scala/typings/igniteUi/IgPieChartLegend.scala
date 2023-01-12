@@ -43,7 +43,8 @@ object IgPieChartLegend {
     __obj.asInstanceOf[IgPieChartLegend]
   }
   
-  extension [Self <: IgPieChartLegend](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgPieChartLegend] (val x: Self) extends AnyVal {
     
     inline def setElement(value: String): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     

@@ -53,7 +53,8 @@ object mod {
       __obj.asInstanceOf[AsyncIterator[T]]
     }
     
-    extension [Self <: AsyncIterator[?], T](x: Self & AsyncIterator[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AsyncIterator[?], T] (val x: Self & AsyncIterator[T]) extends AnyVal {
       
       inline def setNext(value: () => js.Promise[IteratorResult[T, Any]]): Self = StObject.set(x, "next", js.Any.fromFunction0(value))
       

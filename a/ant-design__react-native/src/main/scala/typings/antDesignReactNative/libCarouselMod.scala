@@ -112,7 +112,8 @@ object libCarouselMod {
       __obj.asInstanceOf[CarouselProps]
     }
     
-    extension [Self <: CarouselProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CarouselProps] (val x: Self) extends AnyVal {
       
       inline def setAfterChange(value: /* index */ Double => Unit): Self = StObject.set(x, "afterChange", js.Any.fromFunction1(value))
       
@@ -162,7 +163,8 @@ object libCarouselMod {
       __obj.asInstanceOf[CarouselPropsType]
     }
     
-    extension [Self <: CarouselPropsType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CarouselPropsType] (val x: Self) extends AnyVal {
       
       inline def setAutoplay(value: Boolean): Self = StObject.set(x, "autoplay", value.asInstanceOf[js.Any])
       
@@ -222,7 +224,8 @@ object libCarouselMod {
       __obj.asInstanceOf[CarouselState]
     }
     
-    extension [Self <: CarouselState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CarouselState] (val x: Self) extends AnyVal {
       
       inline def setAfterSelectedIndex(value: Double): Self = StObject.set(x, "afterSelectedIndex", value.asInstanceOf[js.Any])
       
@@ -251,7 +254,8 @@ object libCarouselMod {
       __obj.asInstanceOf[NativeScrollPoint]
     }
     
-    extension [Self <: NativeScrollPoint](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NativeScrollPoint] (val x: Self) extends AnyVal {
       
       inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
@@ -280,7 +284,8 @@ object libCarouselMod {
       __obj.asInstanceOf[PaginationProps]
     }
     
-    extension [Self <: PaginationProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PaginationProps] (val x: Self) extends AnyVal {
       
       inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       
@@ -317,7 +322,8 @@ object libCarouselMod {
       __obj.asInstanceOf[TargetedEvent]
     }
     
-    extension [Self <: TargetedEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TargetedEvent] (val x: Self) extends AnyVal {
       
       inline def setTarget(value: Double): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     }

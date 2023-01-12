@@ -26,7 +26,8 @@ object CreateLocalTracksOptions {
     __obj.asInstanceOf[CreateLocalTracksOptions]
   }
   
-  extension [Self <: CreateLocalTracksOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateLocalTracksOptions] (val x: Self) extends AnyVal {
     
     inline def setAudio(value: Boolean | CreateLocalTrackOptions | CreateLocalAudioTrackOptions): Self = StObject.set(x, "audio", value.asInstanceOf[js.Any])
     

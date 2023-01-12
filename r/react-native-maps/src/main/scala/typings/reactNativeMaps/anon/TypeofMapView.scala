@@ -23,7 +23,8 @@ object TypeofMapView {
     __obj.asInstanceOf[TypeofMapView]
   }
   
-  extension [Self <: TypeofMapView](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofMapView] (val x: Self) extends AnyVal {
     
     inline def setAnimated(
       value: AnimatedComponent[

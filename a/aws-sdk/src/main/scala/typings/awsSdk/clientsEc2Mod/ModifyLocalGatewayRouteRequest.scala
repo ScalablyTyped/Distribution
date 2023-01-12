@@ -38,7 +38,8 @@ object ModifyLocalGatewayRouteRequest {
     __obj.asInstanceOf[ModifyLocalGatewayRouteRequest]
   }
   
-  extension [Self <: ModifyLocalGatewayRouteRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModifyLocalGatewayRouteRequest] (val x: Self) extends AnyVal {
     
     inline def setDestinationCidrBlock(value: String): Self = StObject.set(x, "DestinationCidrBlock", value.asInstanceOf[js.Any])
     

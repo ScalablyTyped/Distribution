@@ -67,7 +67,8 @@ object libUtilRelayFeatureFlagsMod {
       __obj.asInstanceOf[FeatureFlags]
     }
     
-    extension [Self <: FeatureFlags](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FeatureFlags] (val x: Self) extends AnyVal {
       
       inline def setBATCH_ASYNC_MODULE_UPDATES_FN(value: /* arg */ js.Function0[Unit] => Disposable): Self = StObject.set(x, "BATCH_ASYNC_MODULE_UPDATES_FN", js.Any.fromFunction1(value))
       

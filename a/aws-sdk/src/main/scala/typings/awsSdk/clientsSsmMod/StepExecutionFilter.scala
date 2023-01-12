@@ -23,7 +23,8 @@ object StepExecutionFilter {
     __obj.asInstanceOf[StepExecutionFilter]
   }
   
-  extension [Self <: StepExecutionFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StepExecutionFilter] (val x: Self) extends AnyVal {
     
     inline def setKey(value: StepExecutionFilterKey): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
     

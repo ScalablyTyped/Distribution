@@ -16,7 +16,8 @@ object SasPortalGenerateSecretResponse {
     __obj.asInstanceOf[SasPortalGenerateSecretResponse]
   }
   
-  extension [Self <: SasPortalGenerateSecretResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SasPortalGenerateSecretResponse] (val x: Self) extends AnyVal {
     
     inline def setSecret(value: String): Self = StObject.set(x, "secret", value.asInstanceOf[js.Any])
     

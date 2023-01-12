@@ -28,7 +28,8 @@ object UpdateShardCountInput {
     __obj.asInstanceOf[UpdateShardCountInput]
   }
   
-  extension [Self <: UpdateShardCountInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateShardCountInput] (val x: Self) extends AnyVal {
     
     inline def setScalingType(value: ScalingType): Self = StObject.set(x, "ScalingType", value.asInstanceOf[js.Any])
     

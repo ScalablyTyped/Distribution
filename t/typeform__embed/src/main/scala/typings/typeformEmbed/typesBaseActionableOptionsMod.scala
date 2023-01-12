@@ -56,7 +56,8 @@ object typesBaseActionableOptionsMod {
       __obj.asInstanceOf[ActionableOptions]
     }
     
-    extension [Self <: ActionableOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ActionableOptions] (val x: Self) extends AnyVal {
       
       inline def setOnClose(value: () => Unit): Self = StObject.set(x, "onClose", js.Any.fromFunction0(value))
       

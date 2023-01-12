@@ -126,7 +126,8 @@ object TransactionListWithProof {
       __obj.asInstanceOf[AsObject]
     }
     
-    extension [Self <: AsObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AsObject] (val x: Self) extends AnyVal {
       
       inline def setEventsForVersions(value: typings.libraCore.`lib@GeneratedEventsPbMod`.EventsForVersions.AsObject): Self = StObject.set(x, "eventsForVersions", value.asInstanceOf[js.Any])
       

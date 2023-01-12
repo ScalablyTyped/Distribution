@@ -21,7 +21,8 @@ object MlUpdateFilterRequest {
     __obj.asInstanceOf[MlUpdateFilterRequest]
   }
   
-  extension [Self <: MlUpdateFilterRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlUpdateFilterRequest] (val x: Self) extends AnyVal {
     
     inline def setBody(value: Additems): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

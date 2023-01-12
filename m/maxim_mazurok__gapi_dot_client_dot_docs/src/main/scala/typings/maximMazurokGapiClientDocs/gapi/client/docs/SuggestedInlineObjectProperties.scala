@@ -22,7 +22,8 @@ object SuggestedInlineObjectProperties {
     __obj.asInstanceOf[SuggestedInlineObjectProperties]
   }
   
-  extension [Self <: SuggestedInlineObjectProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SuggestedInlineObjectProperties] (val x: Self) extends AnyVal {
     
     inline def setInlineObjectProperties(value: InlineObjectProperties): Self = StObject.set(x, "inlineObjectProperties", value.asInstanceOf[js.Any])
     

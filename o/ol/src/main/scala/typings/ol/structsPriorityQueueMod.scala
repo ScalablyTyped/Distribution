@@ -100,7 +100,8 @@ object structsPriorityQueueMod {
       __obj.asInstanceOf[PriorityQueue[T]]
     }
     
-    extension [Self <: PriorityQueue[?], T](x: Self & PriorityQueue[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PriorityQueue[?], T] (val x: Self & PriorityQueue[T]) extends AnyVal {
       
       inline def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
       

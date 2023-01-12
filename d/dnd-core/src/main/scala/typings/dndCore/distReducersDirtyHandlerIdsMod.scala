@@ -27,7 +27,8 @@ object distReducersDirtyHandlerIdsMod {
       __obj.asInstanceOf[DirtyHandlerIdPayload]
     }
     
-    extension [Self <: DirtyHandlerIdPayload](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DirtyHandlerIdPayload] (val x: Self) extends AnyVal {
       
       inline def setPrevTargetIds(value: js.Array[String]): Self = StObject.set(x, "prevTargetIds", value.asInstanceOf[js.Any])
       

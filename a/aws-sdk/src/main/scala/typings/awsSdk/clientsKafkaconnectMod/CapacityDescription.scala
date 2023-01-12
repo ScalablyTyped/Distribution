@@ -23,7 +23,8 @@ object CapacityDescription {
     __obj.asInstanceOf[CapacityDescription]
   }
   
-  extension [Self <: CapacityDescription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CapacityDescription] (val x: Self) extends AnyVal {
     
     inline def setAutoScaling(value: AutoScalingDescription): Self = StObject.set(x, "autoScaling", value.asInstanceOf[js.Any])
     

@@ -140,7 +140,8 @@ object libPoolBaseConnectionPoolMod {
       __obj.asInstanceOf[ConnectionPoolOptions]
     }
     
-    extension [Self <: ConnectionPoolOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConnectionPoolOptions] (val x: Self) extends AnyVal {
       
       inline def setAgent(value: HttpAgentOptions | UndiciAgentOptions | agentFn | `false`): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
       
@@ -201,7 +202,8 @@ object libPoolBaseConnectionPoolMod {
       __obj.asInstanceOf[GetConnectionOptions]
     }
     
-    extension [Self <: GetConnectionOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetConnectionOptions] (val x: Self) extends AnyVal {
       
       inline def setContext(value: Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       

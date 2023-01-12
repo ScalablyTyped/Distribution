@@ -63,7 +63,8 @@ object KinesisSettings {
     __obj.asInstanceOf[KinesisSettings]
   }
   
-  extension [Self <: KinesisSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KinesisSettings] (val x: Self) extends AnyVal {
     
     inline def setIncludeControlDetails(value: BooleanOptional): Self = StObject.set(x, "IncludeControlDetails", value.asInstanceOf[js.Any])
     

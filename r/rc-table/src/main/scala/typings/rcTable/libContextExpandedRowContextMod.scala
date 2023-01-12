@@ -29,7 +29,8 @@ object libContextExpandedRowContextMod extends Shortcut {
       __obj.asInstanceOf[ExpandedRowProps]
     }
     
-    extension [Self <: ExpandedRowProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExpandedRowProps] (val x: Self) extends AnyVal {
       
       inline def setComponentWidth(value: Double): Self = StObject.set(x, "componentWidth", value.asInstanceOf[js.Any])
       

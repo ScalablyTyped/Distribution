@@ -18,7 +18,8 @@ object HostVolumeProperties {
     __obj.asInstanceOf[HostVolumeProperties]
   }
   
-  extension [Self <: HostVolumeProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HostVolumeProperties] (val x: Self) extends AnyVal {
     
     inline def setSourcePath(value: String): Self = StObject.set(x, "sourcePath", value.asInstanceOf[js.Any])
     

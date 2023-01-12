@@ -44,7 +44,8 @@ object IgWidgetMethods {
     __obj.asInstanceOf[IgWidgetMethods]
   }
   
-  extension [Self <: IgWidgetMethods](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgWidgetMethods] (val x: Self) extends AnyVal {
     
     inline def setChangeGlobalLanguage(value: () => Unit): Self = StObject.set(x, "changeGlobalLanguage", js.Any.fromFunction0(value))
     

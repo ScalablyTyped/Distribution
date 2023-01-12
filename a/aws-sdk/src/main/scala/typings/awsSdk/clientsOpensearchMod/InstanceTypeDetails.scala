@@ -48,7 +48,8 @@ object InstanceTypeDetails {
     __obj.asInstanceOf[InstanceTypeDetails]
   }
   
-  extension [Self <: InstanceTypeDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InstanceTypeDetails] (val x: Self) extends AnyVal {
     
     inline def setAdvancedSecurityEnabled(value: Boolean): Self = StObject.set(x, "AdvancedSecurityEnabled", value.asInstanceOf[js.Any])
     

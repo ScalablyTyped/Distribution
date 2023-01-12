@@ -18,7 +18,8 @@ object SetIgnoreCertificateErrorsRequest {
     __obj.asInstanceOf[SetIgnoreCertificateErrorsRequest]
   }
   
-  extension [Self <: SetIgnoreCertificateErrorsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetIgnoreCertificateErrorsRequest] (val x: Self) extends AnyVal {
     
     inline def setIgnore(value: Boolean): Self = StObject.set(x, "ignore", value.asInstanceOf[js.Any])
   }

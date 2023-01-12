@@ -228,7 +228,8 @@ object GeoJSONLayerProperties {
     __obj.asInstanceOf[GeoJSONLayerProperties]
   }
   
-  extension [Self <: GeoJSONLayerProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GeoJSONLayerProperties] (val x: Self) extends AnyVal {
     
     inline def setCopyright(value: String): Self = StObject.set(x, "copyright", value.asInstanceOf[js.Any])
     

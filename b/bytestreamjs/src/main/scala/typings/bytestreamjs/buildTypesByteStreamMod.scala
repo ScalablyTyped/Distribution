@@ -493,7 +493,8 @@ object buildTypesByteStreamMod {
       __obj.asInstanceOf[ByteStreamBufferParameters]
     }
     
-    extension [Self <: ByteStreamBufferParameters](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ByteStreamBufferParameters] (val x: Self) extends AnyVal {
       
       inline def setBuffer(value: js.typedarray.ArrayBuffer): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
     }
@@ -516,7 +517,8 @@ object buildTypesByteStreamMod {
       __obj.asInstanceOf[ByteStreamHexParameters]
     }
     
-    extension [Self <: ByteStreamHexParameters](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ByteStreamHexParameters] (val x: Self) extends AnyVal {
       
       inline def setHexstring(value: String): Self = StObject.set(x, "hexstring", value.asInstanceOf[js.Any])
     }
@@ -537,7 +539,8 @@ object buildTypesByteStreamMod {
       __obj.asInstanceOf[ByteStreamLengthParameters]
     }
     
-    extension [Self <: ByteStreamLengthParameters](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ByteStreamLengthParameters] (val x: Self) extends AnyVal {
       
       inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
       
@@ -597,7 +600,8 @@ object buildTypesByteStreamMod {
       __obj.asInstanceOf[ByteStreamStringParameters]
     }
     
-    extension [Self <: ByteStreamStringParameters](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ByteStreamStringParameters] (val x: Self) extends AnyVal {
       
       inline def setString(value: String): Self = StObject.set(x, "string", value.asInstanceOf[js.Any])
     }
@@ -616,7 +620,8 @@ object buildTypesByteStreamMod {
       __obj.asInstanceOf[ByteStreamViewParameters]
     }
     
-    extension [Self <: ByteStreamViewParameters](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ByteStreamViewParameters] (val x: Self) extends AnyVal {
       
       inline def setView(value: js.typedarray.Uint8Array): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     }
@@ -643,7 +648,8 @@ object buildTypesByteStreamMod {
       __obj.asInstanceOf[FindFirstInResult]
     }
     
-    extension [Self <: FindFirstInResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FindFirstInResult] (val x: Self) extends AnyVal {
       
       inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -668,7 +674,8 @@ object buildTypesByteStreamMod {
       __obj.asInstanceOf[FindFirstNotInResult]
     }
     
-    extension [Self <: FindFirstNotInResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FindFirstNotInResult] (val x: Self) extends AnyVal {
       
       inline def setLeft(value: FindResult): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
       
@@ -691,7 +698,8 @@ object buildTypesByteStreamMod {
       __obj.asInstanceOf[FindFirstSequenceResult]
     }
     
-    extension [Self <: FindFirstSequenceResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FindFirstSequenceResult] (val x: Self) extends AnyVal {
       
       inline def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       
@@ -712,7 +720,8 @@ object buildTypesByteStreamMod {
       __obj.asInstanceOf[FindPairedArraysResult]
     }
     
-    extension [Self <: FindPairedArraysResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FindPairedArraysResult] (val x: Self) extends AnyVal {
       
       inline def setLeft(value: FindResult): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
       
@@ -733,7 +742,8 @@ object buildTypesByteStreamMod {
       __obj.asInstanceOf[FindPairedPatternsResult]
     }
     
-    extension [Self <: FindPairedPatternsResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FindPairedPatternsResult] (val x: Self) extends AnyVal {
       
       inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
       
@@ -756,7 +766,8 @@ object buildTypesByteStreamMod {
       __obj.asInstanceOf[FindResult]
     }
     
-    extension [Self <: FindResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FindResult] (val x: Self) extends AnyVal {
       
       inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -787,7 +798,8 @@ object buildTypesByteStreamMod {
       __obj.asInstanceOf[ReplacePatternResult]
     }
     
-    extension [Self <: ReplacePatternResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReplacePatternResult] (val x: Self) extends AnyVal {
       
       inline def setReplacePatternPositions(value: js.Array[Double]): Self = StObject.set(x, "replacePatternPositions", value.asInstanceOf[js.Any])
       

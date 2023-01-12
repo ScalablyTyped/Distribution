@@ -112,7 +112,8 @@ object esmSharedMod {
       __obj.asInstanceOf[BaseListboxInputProps[TDataItem, TValue]]
     }
     
-    extension [Self <: BaseListboxInputProps[?, ?], TDataItem, TValue](x: Self & (BaseListboxInputProps[TDataItem, TValue])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseListboxInputProps[?, ?], TDataItem, TValue] (val x: Self & (BaseListboxInputProps[TDataItem, TValue])) extends AnyVal {
       
       inline def setBusy(value: Boolean): Self = StObject.set(x, "busy", value.asInstanceOf[js.Any])
       
@@ -227,7 +228,8 @@ object esmSharedMod {
       __obj.asInstanceOf[DateLocalizationProps[TLocalizer]]
     }
     
-    extension [Self <: DateLocalizationProps[?], TLocalizer](x: Self & DateLocalizationProps[TLocalizer]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DateLocalizationProps[?], TLocalizer] (val x: Self & DateLocalizationProps[TLocalizer]) extends AnyVal {
       
       inline def setFormats(value: DateFormats[InferFormat[TLocalizer]]): Self = StObject.set(x, "formats", value.asInstanceOf[js.Any])
       
@@ -250,7 +252,8 @@ object esmSharedMod {
       __obj.asInstanceOf[Filterable[TDataItem]]
     }
     
-    extension [Self <: Filterable[?], TDataItem](x: Self & Filterable[TDataItem]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Filterable[?], TDataItem] (val x: Self & Filterable[TDataItem]) extends AnyVal {
       
       inline def setAllowCreate(value: AllowCreate): Self = StObject.set(x, "allowCreate", value.asInstanceOf[js.Any])
       
@@ -297,7 +300,8 @@ object esmSharedMod {
       __obj.asInstanceOf[NumberLocalizationProps[TLocalizer]]
     }
     
-    extension [Self <: NumberLocalizationProps[?], TLocalizer](x: Self & NumberLocalizationProps[TLocalizer]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NumberLocalizationProps[?], TLocalizer] (val x: Self & NumberLocalizationProps[TLocalizer]) extends AnyVal {
       
       inline def setFormats(value: DateFormats[InferFormat[TLocalizer]]): Self = StObject.set(x, "formats", value.asInstanceOf[js.Any])
       
@@ -336,7 +340,8 @@ object esmSharedMod {
       __obj.asInstanceOf[PopupWidgetProps]
     }
     
-    extension [Self <: PopupWidgetProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PopupWidgetProps] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -401,7 +406,8 @@ object esmSharedMod {
       __obj.asInstanceOf[Searchable]
     }
     
-    extension [Self <: Searchable](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Searchable] (val x: Self) extends AnyVal {
       
       inline def setDefaultSearchTerm(value: String): Self = StObject.set(x, "defaultSearchTerm", value.asInstanceOf[js.Any])
       
@@ -628,7 +634,8 @@ object esmSharedMod {
       __obj.asInstanceOf[WidgetHTMLProps[T]]
     }
     
-    extension [Self <: WidgetHTMLProps[?], T](x: Self & WidgetHTMLProps[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WidgetHTMLProps[?], T] (val x: Self & WidgetHTMLProps[T]) extends AnyVal {
       
       inline def setAccessKey(value: String): Self = StObject.set(x, "accessKey", value.asInstanceOf[js.Any])
       
@@ -1047,7 +1054,8 @@ object esmSharedMod {
       __obj.asInstanceOf[WidgetProps]
     }
     
-    extension [Self <: WidgetProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WidgetProps] (val x: Self) extends AnyVal {
       
       inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
       

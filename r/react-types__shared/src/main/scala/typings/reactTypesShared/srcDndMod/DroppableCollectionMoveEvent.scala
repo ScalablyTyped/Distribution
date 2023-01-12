@@ -19,7 +19,8 @@ object DroppableCollectionMoveEvent {
     __obj.asInstanceOf[DroppableCollectionMoveEvent]
   }
   
-  extension [Self <: DroppableCollectionMoveEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DroppableCollectionMoveEvent] (val x: Self) extends AnyVal {
     
     inline def setTarget(value: DropTarget): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
   }

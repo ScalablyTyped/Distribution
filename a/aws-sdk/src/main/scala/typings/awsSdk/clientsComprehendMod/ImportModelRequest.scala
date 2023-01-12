@@ -43,7 +43,8 @@ object ImportModelRequest {
     __obj.asInstanceOf[ImportModelRequest]
   }
   
-  extension [Self <: ImportModelRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImportModelRequest] (val x: Self) extends AnyVal {
     
     inline def setDataAccessRoleArn(value: IamRoleArn): Self = StObject.set(x, "DataAccessRoleArn", value.asInstanceOf[js.Any])
     

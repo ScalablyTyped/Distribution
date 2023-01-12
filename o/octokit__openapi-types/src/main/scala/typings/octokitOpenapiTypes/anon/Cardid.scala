@@ -18,7 +18,8 @@ object Cardid {
     __obj.asInstanceOf[Cardid]
   }
   
-  extension [Self <: Cardid](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Cardid] (val x: Self) extends AnyVal {
     
     inline def setCard_id(
       value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['card-id'] */ js.Any

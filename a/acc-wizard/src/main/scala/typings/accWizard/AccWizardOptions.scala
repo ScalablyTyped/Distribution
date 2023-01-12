@@ -116,7 +116,8 @@ object AccWizardOptions {
     __obj.asInstanceOf[AccWizardOptions]
   }
   
-  extension [Self <: AccWizardOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccWizardOptions] (val x: Self) extends AnyVal {
     
     inline def setActiveClass(value: String): Self = StObject.set(x, "activeClass", value.asInstanceOf[js.Any])
     

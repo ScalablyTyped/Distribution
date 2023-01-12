@@ -85,7 +85,8 @@ object DayProps {
     __obj.asInstanceOf[DayProps[T]]
   }
   
-  extension [Self <: DayProps[?], T](x: Self & DayProps[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DayProps[?], T] (val x: Self & DayProps[T]) extends AnyVal {
     
     inline def setAdapter(value: DateIOAdapter[T]): Self = StObject.set(x, "adapter", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object SliderThumbClickEvent {
     __obj.asInstanceOf[SliderThumbClickEvent]
   }
   
-  extension [Self <: SliderThumbClickEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SliderThumbClickEvent] (val x: Self) extends AnyVal {
     
     inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     

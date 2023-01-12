@@ -75,7 +75,8 @@ object distApiInterfacesUserMod {
       __obj.asInstanceOf[Organization]
     }
     
-    extension [Self <: Organization](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Organization] (val x: Self) extends AnyVal {
       
       inline def setBlog(value: String): Self = StObject.set(x, "blog", value.asInstanceOf[js.Any])
       
@@ -144,7 +145,8 @@ object distApiInterfacesUserMod {
       __obj.asInstanceOf[OrganizationSummary]
     }
     
-    extension [Self <: OrganizationSummary](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OrganizationSummary] (val x: Self) extends AnyVal {
       
       inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
@@ -228,7 +230,8 @@ object distApiInterfacesUserMod {
       __obj.asInstanceOf[PrivateOrganization]
     }
     
-    extension [Self <: PrivateOrganization](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PrivateOrganization] (val x: Self) extends AnyVal {
       
       inline def setBilling_email(value: String): Self = StObject.set(x, "billing_email", value.asInstanceOf[js.Any])
       
@@ -316,7 +319,8 @@ object distApiInterfacesUserMod {
       __obj.asInstanceOf[PrivateUser]
     }
     
-    extension [Self <: PrivateUser](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PrivateUser] (val x: Self) extends AnyVal {
       
       inline def setCollaborators(value: Double): Self = StObject.set(x, "collaborators", value.asInstanceOf[js.Any])
       
@@ -383,7 +387,8 @@ object distApiInterfacesUserMod {
       __obj.asInstanceOf[PrivateUserOrOrg]
     }
     
-    extension [Self <: PrivateUserOrOrg](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PrivateUserOrOrg] (val x: Self) extends AnyVal {
       
       inline def setCollaborators(value: Double): Self = StObject.set(x, "collaborators", value.asInstanceOf[js.Any])
       
@@ -469,7 +474,8 @@ object distApiInterfacesUserMod {
       __obj.asInstanceOf[User]
     }
     
-    extension [Self <: User](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: User] (val x: Self) extends AnyVal {
       
       inline def setBio(value: String): Self = StObject.set(x, "bio", value.asInstanceOf[js.Any])
       
@@ -552,7 +558,8 @@ object distApiInterfacesUserMod {
       __obj.asInstanceOf[UserOrOrg]
     }
     
-    extension [Self <: UserOrOrg](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UserOrOrg] (val x: Self) extends AnyVal {
       
       inline def setBlog(value: String): Self = StObject.set(x, "blog", value.asInstanceOf[js.Any])
       
@@ -610,7 +617,8 @@ object distApiInterfacesUserMod {
       __obj.asInstanceOf[UserOrOrgSummary]
     }
     
-    extension [Self <: UserOrOrgSummary](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UserOrOrgSummary] (val x: Self) extends AnyVal {
       
       inline def setAvatar_url(value: String): Self = StObject.set(x, "avatar_url", value.asInstanceOf[js.Any])
       
@@ -682,7 +690,8 @@ object distApiInterfacesUserMod {
       __obj.asInstanceOf[UserSummary]
     }
     
-    extension [Self <: UserSummary](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UserSummary] (val x: Self) extends AnyVal {
       
       inline def setFollowers_url(value: String): Self = StObject.set(x, "followers_url", value.asInstanceOf[js.Any])
       

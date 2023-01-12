@@ -36,7 +36,8 @@ object Member {
     __obj.asInstanceOf[Member]
   }
   
-  extension [Self <: Member](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Member] (val x: Self) extends AnyVal {
     
     inline def setLeft(value: Node): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object Listid {
     __obj.asInstanceOf[Listid]
   }
   
-  extension [Self <: Listid](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Listid] (val x: Self) extends AnyVal {
     
     inline def setList_id(value: String): Self = StObject.set(x, "list_id", value.asInstanceOf[js.Any])
   }

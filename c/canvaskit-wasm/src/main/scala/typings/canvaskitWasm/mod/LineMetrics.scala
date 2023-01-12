@@ -66,7 +66,8 @@ object LineMetrics {
     __obj.asInstanceOf[LineMetrics]
   }
   
-  extension [Self <: LineMetrics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LineMetrics] (val x: Self) extends AnyVal {
     
     inline def setAscent(value: Double): Self = StObject.set(x, "ascent", value.asInstanceOf[js.Any])
     

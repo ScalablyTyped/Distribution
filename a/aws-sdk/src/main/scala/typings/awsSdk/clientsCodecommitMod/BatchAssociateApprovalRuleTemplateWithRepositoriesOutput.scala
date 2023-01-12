@@ -26,7 +26,8 @@ object BatchAssociateApprovalRuleTemplateWithRepositoriesOutput {
     __obj.asInstanceOf[BatchAssociateApprovalRuleTemplateWithRepositoriesOutput]
   }
   
-  extension [Self <: BatchAssociateApprovalRuleTemplateWithRepositoriesOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchAssociateApprovalRuleTemplateWithRepositoriesOutput] (val x: Self) extends AnyVal {
     
     inline def setAssociatedRepositoryNames(value: RepositoryNameList): Self = StObject.set(x, "associatedRepositoryNames", value.asInstanceOf[js.Any])
     

@@ -25,7 +25,8 @@ object Stripereport {
     __obj.asInstanceOf[Stripereport]
   }
   
-  extension [Self <: Stripereport](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Stripereport] (val x: Self) extends AnyVal {
     
     inline def setStripe_report(value: fraudulent): Self = StObject.set(x, "stripe_report", value.asInstanceOf[js.Any])
     

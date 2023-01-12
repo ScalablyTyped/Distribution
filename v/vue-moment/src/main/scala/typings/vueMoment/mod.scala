@@ -35,7 +35,8 @@ object mod extends Shortcut {
         __obj.asInstanceOf[Options]
       }
       
-      extension [Self <: Options](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
         
         inline def setMoment(value: Moment): Self = StObject.set(x, "moment", value.asInstanceOf[js.Any])
         
@@ -139,7 +140,8 @@ object mod extends Shortcut {
         __obj.asInstanceOf[Vue]
       }
       
-      extension [Self <: Vue](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Vue] (val x: Self) extends AnyVal {
         
         inline def set$moment(value: VueStatic): Self = StObject.set(x, "$moment", value.asInstanceOf[js.Any])
       }

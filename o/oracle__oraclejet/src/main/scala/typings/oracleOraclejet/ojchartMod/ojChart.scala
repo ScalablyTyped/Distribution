@@ -1257,7 +1257,8 @@ object ojChart {
       __obj.asInstanceOf[AxisTitleContext]
     }
     
-    extension [Self <: AxisTitleContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AxisTitleContext] (val x: Self) extends AnyVal {
       
       inline def setAxis(value: xAxis | yAxis | y2Axis): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
       
@@ -1332,7 +1333,8 @@ object ojChart {
       __obj.asInstanceOf[DataLabelContext]
     }
     
-    extension [Self <: DataLabelContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DataLabelContext] (val x: Self) extends AnyVal {
       
       inline def setClose(value: Double): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
       
@@ -1400,7 +1402,8 @@ object ojChart {
       __obj.asInstanceOf[GroupContext]
     }
     
-    extension [Self <: GroupContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GroupContext] (val x: Self) extends AnyVal {
       
       inline def setIndexPath(value: js.Array[Any]): Self = StObject.set(x, "indexPath", value.asInstanceOf[js.Any])
       
@@ -1426,7 +1429,8 @@ object ojChart {
       __obj.asInstanceOf[ItemContext]
     }
     
-    extension [Self <: ItemContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ItemContext] (val x: Self) extends AnyVal {
       
       inline def setItemIndex(value: Double): Self = StObject.set(x, "itemIndex", value.asInstanceOf[js.Any])
       
@@ -1452,7 +1456,8 @@ object ojChart {
       __obj.asInstanceOf[LegendItemContext]
     }
     
-    extension [Self <: LegendItemContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LegendItemContext] (val x: Self) extends AnyVal {
       
       inline def setItemIndex(value: Double): Self = StObject.set(x, "itemIndex", value.asInstanceOf[js.Any])
       
@@ -1482,7 +1487,8 @@ object ojChart {
       __obj.asInstanceOf[PieCenterContext]
     }
     
-    extension [Self <: PieCenterContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PieCenterContext] (val x: Self) extends AnyVal {
       
       inline def setComponentElement(value: Element): Self = StObject.set(x, "componentElement", value.asInstanceOf[js.Any])
       
@@ -1506,7 +1512,8 @@ object ojChart {
       __obj.asInstanceOf[PieCenterLabelContext]
     }
     
-    extension [Self <: PieCenterLabelContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PieCenterLabelContext] (val x: Self) extends AnyVal {
       
       inline def setSubId(value: String): Self = StObject.set(x, "subId", value.asInstanceOf[js.Any])
     }
@@ -1528,7 +1535,8 @@ object ojChart {
       __obj.asInstanceOf[ReferenceObject]
     }
     
-    extension [Self <: ReferenceObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReferenceObject] (val x: Self) extends AnyVal {
       
       inline def setAxis(value: xAxis | yAxis | y2Axis): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
       
@@ -1552,7 +1560,8 @@ object ojChart {
       __obj.asInstanceOf[SeriesContext]
     }
     
-    extension [Self <: SeriesContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SeriesContext] (val x: Self) extends AnyVal {
       
       inline def setItemIndex(value: Double): Self = StObject.set(x, "itemIndex", value.asInstanceOf[js.Any])
       
@@ -1630,7 +1639,8 @@ object ojChart {
       __obj.asInstanceOf[TooltipContext]
     }
     
-    extension [Self <: TooltipContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TooltipContext] (val x: Self) extends AnyVal {
       
       inline def setClose(value: Double): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
       

@@ -33,7 +33,8 @@ object DeleteCommentRequest {
     __obj.asInstanceOf[DeleteCommentRequest]
   }
   
-  extension [Self <: DeleteCommentRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteCommentRequest] (val x: Self) extends AnyVal {
     
     inline def setAuthenticationToken(value: AuthenticationHeaderType): Self = StObject.set(x, "AuthenticationToken", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object Services {
     __obj.asInstanceOf[Services]
   }
   
-  extension [Self <: Services](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Services] (val x: Self) extends AnyVal {
     
     inline def setServices(value: js.Array[IsPrimary]): Self = StObject.set(x, "services", value.asInstanceOf[js.Any])
     

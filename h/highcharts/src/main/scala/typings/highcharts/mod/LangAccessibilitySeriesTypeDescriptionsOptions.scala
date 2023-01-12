@@ -31,7 +31,8 @@ object LangAccessibilitySeriesTypeDescriptionsOptions {
     __obj.asInstanceOf[LangAccessibilitySeriesTypeDescriptionsOptions]
   }
   
-  extension [Self <: LangAccessibilitySeriesTypeDescriptionsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LangAccessibilitySeriesTypeDescriptionsOptions] (val x: Self) extends AnyVal {
     
     inline def setArearange(value: String): Self = StObject.set(x, "arearange", value.asInstanceOf[js.Any])
     

@@ -58,7 +58,8 @@ object UpdateEncryption {
     __obj.asInstanceOf[UpdateEncryption]
   }
   
-  extension [Self <: UpdateEncryption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateEncryption] (val x: Self) extends AnyVal {
     
     inline def setAlgorithm(value: Algorithm): Self = StObject.set(x, "Algorithm", value.asInstanceOf[js.Any])
     

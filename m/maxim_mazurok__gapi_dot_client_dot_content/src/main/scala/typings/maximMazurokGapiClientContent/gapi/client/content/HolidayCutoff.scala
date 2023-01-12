@@ -31,7 +31,8 @@ object HolidayCutoff {
     __obj.asInstanceOf[HolidayCutoff]
   }
   
-  extension [Self <: HolidayCutoff](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HolidayCutoff] (val x: Self) extends AnyVal {
     
     inline def setDeadlineDate(value: String): Self = StObject.set(x, "deadlineDate", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object HMRJavascriptParserHooks {
     __obj.asInstanceOf[HMRJavascriptParserHooks]
   }
   
-  extension [Self <: HMRJavascriptParserHooks](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HMRJavascriptParserHooks] (val x: Self) extends AnyVal {
     
     inline def setHotAcceptCallback(value: SyncBailHook[js.Tuple2[Any, js.Array[String]], Unit, UnsetAdditionalOptions]): Self = StObject.set(x, "hotAcceptCallback", value.asInstanceOf[js.Any])
     

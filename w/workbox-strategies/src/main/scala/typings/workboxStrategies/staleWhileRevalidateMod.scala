@@ -50,7 +50,8 @@ object staleWhileRevalidateMod {
       __obj.asInstanceOf[StaleWhileRevalidateOptions]
     }
     
-    extension [Self <: StaleWhileRevalidateOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StaleWhileRevalidateOptions] (val x: Self) extends AnyVal {
       
       inline def setCacheName(value: String): Self = StObject.set(x, "cacheName", value.asInstanceOf[js.Any])
       

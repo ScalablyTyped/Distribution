@@ -19,7 +19,8 @@ object BaseMenuItemProps {
     __obj.asInstanceOf[BaseMenuItemProps]
   }
   
-  extension [Self <: BaseMenuItemProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BaseMenuItemProps] (val x: Self) extends AnyVal {
     
     inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     

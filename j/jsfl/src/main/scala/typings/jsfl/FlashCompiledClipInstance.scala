@@ -35,7 +35,8 @@ object FlashCompiledClipInstance {
     __obj.asInstanceOf[FlashCompiledClipInstance]
   }
   
-  extension [Self <: FlashCompiledClipInstance](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FlashCompiledClipInstance] (val x: Self) extends AnyVal {
     
     inline def setAccName(value: String): Self = StObject.set(x, "accName", value.asInstanceOf[js.Any])
     

@@ -36,7 +36,8 @@ object UserSharedItem {
     __obj.asInstanceOf[UserSharedItem]
   }
   
-  extension [Self <: UserSharedItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UserSharedItem] (val x: Self) extends AnyVal {
     
     inline def setErrorDetails(
       value: /* This object describes errors that occur. It is only valid for responses and ignored in requests. */ ErrorDetails

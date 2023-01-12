@@ -18,7 +18,8 @@ object GetFindingStatisticsResponse {
     __obj.asInstanceOf[GetFindingStatisticsResponse]
   }
   
-  extension [Self <: GetFindingStatisticsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetFindingStatisticsResponse] (val x: Self) extends AnyVal {
     
     inline def setCountsByGroup(value: listOfGroupCount): Self = StObject.set(x, "countsByGroup", value.asInstanceOf[js.Any])
     

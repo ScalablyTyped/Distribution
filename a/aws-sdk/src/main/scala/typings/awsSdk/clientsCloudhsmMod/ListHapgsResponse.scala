@@ -23,7 +23,8 @@ object ListHapgsResponse {
     __obj.asInstanceOf[ListHapgsResponse]
   }
   
-  extension [Self <: ListHapgsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListHapgsResponse] (val x: Self) extends AnyVal {
     
     inline def setHapgList(value: HapgList): Self = StObject.set(x, "HapgList", value.asInstanceOf[js.Any])
     

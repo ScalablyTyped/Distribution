@@ -31,7 +31,8 @@ object lifecycle {
     __obj.asInstanceOf[lifecycle]
   }
   
-  extension [Self <: lifecycle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: lifecycle] (val x: Self) extends AnyVal {
     
     inline def setBEACON(value: beacon): Self = StObject.set(x, "BEACON", value.asInstanceOf[js.Any])
     

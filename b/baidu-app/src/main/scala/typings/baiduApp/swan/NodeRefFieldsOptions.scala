@@ -36,7 +36,8 @@ object NodeRefFieldsOptions {
     __obj.asInstanceOf[NodeRefFieldsOptions]
   }
   
-  extension [Self <: NodeRefFieldsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodeRefFieldsOptions] (val x: Self) extends AnyVal {
     
     inline def setComputedStyle(value: js.Array[String]): Self = StObject.set(x, "computedStyle", value.asInstanceOf[js.Any])
     

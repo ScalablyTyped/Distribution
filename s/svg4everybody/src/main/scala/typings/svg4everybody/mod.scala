@@ -38,7 +38,8 @@ object mod {
       __obj.asInstanceOf[Svg4everybodyOpts]
     }
     
-    extension [Self <: Svg4everybodyOpts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Svg4everybodyOpts] (val x: Self) extends AnyVal {
       
       inline def setAttributeName(value: String): Self = StObject.set(x, "attributeName", value.asInstanceOf[js.Any])
       

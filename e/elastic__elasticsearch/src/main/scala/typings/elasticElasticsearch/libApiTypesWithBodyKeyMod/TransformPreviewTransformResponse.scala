@@ -17,7 +17,8 @@ object TransformPreviewTransformResponse {
     __obj.asInstanceOf[TransformPreviewTransformResponse[TTransform]]
   }
   
-  extension [Self <: TransformPreviewTransformResponse[?], TTransform](x: Self & TransformPreviewTransformResponse[TTransform]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransformPreviewTransformResponse[?], TTransform] (val x: Self & TransformPreviewTransformResponse[TTransform]) extends AnyVal {
     
     inline def setGenerated_dest_index(value: IndicesIndexState): Self = StObject.set(x, "generated_dest_index", value.asInstanceOf[js.Any])
     

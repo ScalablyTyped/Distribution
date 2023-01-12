@@ -28,7 +28,8 @@ object DisconnectRequest {
     __obj.asInstanceOf[DisconnectRequest]
   }
   
-  extension [Self <: DisconnectRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisconnectRequest] (val x: Self) extends AnyVal {
     
     inline def setArguments(value: DisconnectArguments): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
     

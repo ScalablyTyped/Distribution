@@ -23,7 +23,8 @@ object DescribeCoipPoolsResult {
     __obj.asInstanceOf[DescribeCoipPoolsResult]
   }
   
-  extension [Self <: DescribeCoipPoolsResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeCoipPoolsResult] (val x: Self) extends AnyVal {
     
     inline def setCoipPools(value: CoipPoolSet): Self = StObject.set(x, "CoipPools", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object RequestVertexNormals {
     __obj.asInstanceOf[RequestVertexNormals]
   }
   
-  extension [Self <: RequestVertexNormals](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RequestVertexNormals] (val x: Self) extends AnyVal {
     
     inline def setRequestVertexNormals(value: Boolean): Self = StObject.set(x, "requestVertexNormals", value.asInstanceOf[js.Any])
     

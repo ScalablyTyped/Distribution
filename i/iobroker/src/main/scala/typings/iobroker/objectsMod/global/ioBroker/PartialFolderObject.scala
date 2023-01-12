@@ -37,7 +37,8 @@ object PartialFolderObject {
     __obj.asInstanceOf[PartialFolderObject]
   }
   
-  extension [Self <: PartialFolderObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialFolderObject] (val x: Self) extends AnyVal {
     
     inline def setAcl(value: ObjectACL): Self = StObject.set(x, "acl", value.asInstanceOf[js.Any])
     

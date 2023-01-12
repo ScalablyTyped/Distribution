@@ -23,7 +23,8 @@ object DescribeMovingAddressesResult {
     __obj.asInstanceOf[DescribeMovingAddressesResult]
   }
   
-  extension [Self <: DescribeMovingAddressesResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeMovingAddressesResult] (val x: Self) extends AnyVal {
     
     inline def setMovingAddressStatuses(value: MovingAddressStatusSet): Self = StObject.set(x, "MovingAddressStatuses", value.asInstanceOf[js.Any])
     

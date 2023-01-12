@@ -105,7 +105,8 @@ object CoreOptions {
   ]]
   }
   
-  extension [Self <: CoreOptions[?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?], Message, Schema /* <: Datetime */, Locales /* <: DatetimeFormats | String */, MessagesLocales, DateTimeFormatsLocales, NumberFormatsLocales, MessageSchema, DateTimeSchema, NumberSchema, _Messages /* <: LocaleMessages[MessageSchema, MessagesLocales, Message] */, _DateTimeFormats /* <: DateTimeFormats[DateTimeSchema, DateTimeFormatsLocales] */, _NumberFormats /* <: NumberFormats[NumberSchema, NumberFormatsLocales] */](x: Self & (CoreOptions[
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CoreOptions[?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?], Message, Schema /* <: Datetime */, Locales /* <: DatetimeFormats | String */, MessagesLocales, DateTimeFormatsLocales, NumberFormatsLocales, MessageSchema, DateTimeSchema, NumberSchema, _Messages /* <: LocaleMessages[MessageSchema, MessagesLocales, Message] */, _DateTimeFormats /* <: DateTimeFormats[DateTimeSchema, DateTimeFormatsLocales] */, _NumberFormats /* <: NumberFormats[NumberSchema, NumberFormatsLocales] */] (val x: Self & (CoreOptions[
         Message, 
         Schema, 
         Locales, 
@@ -118,7 +119,7 @@ object CoreOptions {
         _Messages, 
         _DateTimeFormats, 
         _NumberFormats
-      ])) {
+      ])) extends AnyVal {
     
     inline def setDatetimeFormats(
       value: /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof _DateTimeFormats ]: DateTimeSchema} */ js.Any

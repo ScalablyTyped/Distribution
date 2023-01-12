@@ -21,7 +21,8 @@ object OutputBindingSymbol {
     __obj.asInstanceOf[OutputBindingSymbol]
   }
   
-  extension [Self <: OutputBindingSymbol](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OutputBindingSymbol] (val x: Self) extends AnyVal {
     
     inline def setBindings(value: js.Array[BindingSymbol]): Self = StObject.set(x, "bindings", value.asInstanceOf[js.Any])
     

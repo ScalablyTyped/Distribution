@@ -26,7 +26,8 @@ object ApplePayPaymentAuthorizationResult {
     __obj.asInstanceOf[ApplePayPaymentAuthorizationResult]
   }
   
-  extension [Self <: ApplePayPaymentAuthorizationResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApplePayPaymentAuthorizationResult] (val x: Self) extends AnyVal {
     
     inline def setErrors(value: js.Array[ApplePayError]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
     

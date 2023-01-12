@@ -90,7 +90,8 @@ object TimeRangeDayProps {
     __obj.asInstanceOf[TimeRangeDayProps]
   }
   
-  extension [Self <: TimeRangeDayProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimeRangeDayProps] (val x: Self) extends AnyVal {
     
     inline def setBorderColor(value: String): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
     

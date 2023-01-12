@@ -253,7 +253,8 @@ object buildModulesEventlistenersMod {
       __obj.asInstanceOf[On]
     }
     
-    extension [Self <: On](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: On] (val x: Self) extends AnyVal {
       
       inline def setAbort(value: Listener[UIEvent] | js.Array[Listener[UIEvent]]): Self = StObject.set(x, "abort", value.asInstanceOf[js.Any])
       

@@ -38,7 +38,8 @@ object FormatLabelEventUIParam {
     __obj.asInstanceOf[FormatLabelEventUIParam]
   }
   
-  extension [Self <: FormatLabelEventUIParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FormatLabelEventUIParam] (val x: Self) extends AnyVal {
     
     inline def setActualMaximumValue(value: Any): Self = StObject.set(x, "actualMaximumValue", value.asInstanceOf[js.Any])
     

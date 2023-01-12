@@ -151,7 +151,8 @@ object ActionsRender {
     __obj.asInstanceOf[ActionsRender]
   }
   
-  extension [Self <: ActionsRender](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ActionsRender] (val x: Self) extends AnyVal {
     
     inline def setActionsRender(value: WithFalse[js.Function1[/* props */ HeaderViewProps, js.Array[ReactNode]]]): Self = StObject.set(x, "actionsRender", value.asInstanceOf[js.Any])
     

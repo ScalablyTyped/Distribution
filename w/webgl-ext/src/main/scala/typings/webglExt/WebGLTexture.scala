@@ -15,7 +15,8 @@ object WebGLTexture {
     __obj.asInstanceOf[WebGLTexture]
   }
   
-  extension [Self <: WebGLTexture](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebGLTexture] (val x: Self) extends AnyVal {
     
     inline def set__WebGLTexture(value: Unit): Self = StObject.set(x, "__WebGLTexture", value.asInstanceOf[js.Any])
   }

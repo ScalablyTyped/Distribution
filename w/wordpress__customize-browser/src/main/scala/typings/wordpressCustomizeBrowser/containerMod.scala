@@ -119,7 +119,8 @@ object containerMod {
       __obj.asInstanceOf[ContainerArguments]
     }
     
-    extension [Self <: ContainerArguments](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContainerArguments] (val x: Self) extends AnyVal {
       
       inline def setCompleteCallback(value: () => Unit): Self = StObject.set(x, "completeCallback", js.Any.fromFunction0(value))
       
@@ -146,7 +147,8 @@ object containerMod {
       __obj.asInstanceOf[ContainerDeferred]
     }
     
-    extension [Self <: ContainerDeferred](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContainerDeferred] (val x: Self) extends AnyVal {
       
       inline def setEmbedded(value: Deferred[Any, Any, Any]): Self = StObject.set(x, "embedded", value.asInstanceOf[js.Any])
     }
@@ -177,7 +179,8 @@ object containerMod {
       __obj.asInstanceOf[ContainerParams]
     }
     
-    extension [Self <: ContainerParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContainerParams] (val x: Self) extends AnyVal {
       
       inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       

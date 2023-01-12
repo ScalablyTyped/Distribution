@@ -229,7 +229,8 @@ object mod extends Shortcut {
         __obj.asInstanceOf[HashPassOptions]
       }
       
-      extension [Self <: HashPassOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: HashPassOptions] (val x: Self) extends AnyVal {
         
         inline def setPasswordField(value: String): Self = StObject.set(x, "passwordField", value.asInstanceOf[js.Any])
       }
@@ -300,7 +301,8 @@ object mod extends Shortcut {
         __obj.asInstanceOf[RestrictOptions]
       }
       
-      extension [Self <: RestrictOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: RestrictOptions] (val x: Self) extends AnyVal {
         
         inline def setIdField(value: String): Self = StObject.set(x, "idField", value.asInstanceOf[js.Any])
         
@@ -334,7 +336,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[FeathersAuthenticationOptions]
     }
     
-    extension [Self <: FeathersAuthenticationOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FeathersAuthenticationOptions] (val x: Self) extends AnyVal {
       
       inline def setCookie(value: Enabled): Self = StObject.set(x, "cookie", value.asInstanceOf[js.Any])
       

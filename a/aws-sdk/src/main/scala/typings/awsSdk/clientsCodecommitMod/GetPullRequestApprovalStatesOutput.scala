@@ -18,7 +18,8 @@ object GetPullRequestApprovalStatesOutput {
     __obj.asInstanceOf[GetPullRequestApprovalStatesOutput]
   }
   
-  extension [Self <: GetPullRequestApprovalStatesOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetPullRequestApprovalStatesOutput] (val x: Self) extends AnyVal {
     
     inline def setApprovals(value: ApprovalList): Self = StObject.set(x, "approvals", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object EnhancedTextBackgroundCfg {
     __obj.asInstanceOf[EnhancedTextBackgroundCfg]
   }
   
-  extension [Self <: EnhancedTextBackgroundCfg](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnhancedTextBackgroundCfg] (val x: Self) extends AnyVal {
     
     inline def setPadding(value: Double | js.Array[Double]): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
     

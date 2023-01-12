@@ -54,7 +54,8 @@ object SelectMultiple {
     __obj.asInstanceOf[SelectMultiple]
   }
   
-  extension [Self <: SelectMultiple](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SelectMultiple] (val x: Self) extends AnyVal {
     
     inline def setAddOption(value: OptionBuilder => SelectMultiple): Self = StObject.set(x, "addOption", js.Any.fromFunction1(value))
     

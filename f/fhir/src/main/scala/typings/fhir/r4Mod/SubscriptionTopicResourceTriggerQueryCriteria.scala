@@ -52,7 +52,8 @@ object SubscriptionTopicResourceTriggerQueryCriteria {
     __obj.asInstanceOf[SubscriptionTopicResourceTriggerQueryCriteria]
   }
   
-  extension [Self <: SubscriptionTopicResourceTriggerQueryCriteria](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubscriptionTopicResourceTriggerQueryCriteria] (val x: Self) extends AnyVal {
     
     inline def setCurrent(value: String): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
     

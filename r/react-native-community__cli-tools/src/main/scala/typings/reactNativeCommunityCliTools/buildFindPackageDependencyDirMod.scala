@@ -46,7 +46,8 @@ object buildFindPackageDependencyDirMod {
       __obj.asInstanceOf[FindPackageDependencyOptions]
     }
     
-    extension [Self <: FindPackageDependencyOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FindPackageDependencyOptions] (val x: Self) extends AnyVal {
       
       inline def setAllowSymlinks(value: Boolean): Self = StObject.set(x, "allowSymlinks", value.asInstanceOf[js.Any])
       
@@ -75,7 +76,8 @@ object buildFindPackageDependencyDirMod {
       __obj.asInstanceOf[PackageRef]
     }
     
-    extension [Self <: PackageRef](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PackageRef] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       

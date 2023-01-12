@@ -21,7 +21,8 @@ object userIdnumberundefinedBase {
     __obj.asInstanceOf[userIdnumberundefinedBase]
   }
   
-  extension [Self <: userIdnumberundefinedBase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: userIdnumberundefinedBase] (val x: Self) extends AnyVal {
     
     inline def setSudo(value: String | Double): Self = StObject.set(x, "sudo", value.asInstanceOf[js.Any])
     

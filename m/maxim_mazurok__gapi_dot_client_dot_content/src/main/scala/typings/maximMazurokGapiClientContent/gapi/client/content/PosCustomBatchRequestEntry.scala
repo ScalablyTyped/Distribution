@@ -37,7 +37,8 @@ object PosCustomBatchRequestEntry {
     __obj.asInstanceOf[PosCustomBatchRequestEntry]
   }
   
-  extension [Self <: PosCustomBatchRequestEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PosCustomBatchRequestEntry] (val x: Self) extends AnyVal {
     
     inline def setBatchId(value: Double): Self = StObject.set(x, "batchId", value.asInstanceOf[js.Any])
     

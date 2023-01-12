@@ -41,7 +41,8 @@ object NavigationTree {
     __obj.asInstanceOf[NavigationTree]
   }
   
-  extension [Self <: NavigationTree](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NavigationTree] (val x: Self) extends AnyVal {
     
     inline def setChildItems(value: js.Array[NavigationTree]): Self = StObject.set(x, "childItems", value.asInstanceOf[js.Any])
     

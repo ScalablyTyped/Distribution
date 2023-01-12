@@ -83,7 +83,8 @@ object examplesJsmObjectsReflectorForSSRPassMod {
       __obj.asInstanceOf[ReflectorForSSRPassOptions]
     }
     
-    extension [Self <: ReflectorForSSRPassOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReflectorForSSRPassOptions] (val x: Self) extends AnyVal {
       
       inline def setClipBias(value: Double): Self = StObject.set(x, "clipBias", value.asInstanceOf[js.Any])
       
@@ -133,7 +134,8 @@ object examplesJsmObjectsReflectorForSSRPassMod {
       __obj.asInstanceOf[ReflectorShader]
     }
     
-    extension [Self <: ReflectorShader](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReflectorShader] (val x: Self) extends AnyVal {
       
       inline def setDefines(value: DISTANCEATTENUATION): Self = StObject.set(x, "defines", value.asInstanceOf[js.Any])
       

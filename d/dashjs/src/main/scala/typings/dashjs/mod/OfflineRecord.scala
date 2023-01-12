@@ -23,7 +23,8 @@ object OfflineRecord {
     __obj.asInstanceOf[OfflineRecord]
   }
   
-  extension [Self <: OfflineRecord](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OfflineRecord] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

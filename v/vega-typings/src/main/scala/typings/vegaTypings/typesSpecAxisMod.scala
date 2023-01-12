@@ -104,7 +104,8 @@ object typesSpecAxisMod {
       __obj.asInstanceOf[Axis]
     }
     
-    extension [Self <: Axis](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Axis] (val x: Self) extends AnyVal {
       
       inline def setEncode(value: AxisEncode): Self = StObject.set(x, "encode", value.asInstanceOf[js.Any])
       
@@ -195,7 +196,8 @@ object typesSpecAxisMod {
       __obj.asInstanceOf[AxisEncode]
     }
     
-    extension [Self <: AxisEncode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AxisEncode] (val x: Self) extends AnyVal {
       
       inline def setAxis(value: GuideEncodeEntry[GroupEncodeEntry]): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
       
@@ -665,7 +667,8 @@ object typesSpecAxisMod {
       __obj.asInstanceOf[BaseAxis]
     }
     
-    extension [Self <: BaseAxis](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseAxis] (val x: Self) extends AnyVal {
       
       inline def setAria(value: Boolean): Self = StObject.set(x, "aria", value.asInstanceOf[js.Any])
       
@@ -1014,7 +1017,8 @@ object typesSpecAxisMod {
       __obj.asInstanceOf[TimeFormatSpecifier]
     }
     
-    extension [Self <: TimeFormatSpecifier](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TimeFormatSpecifier] (val x: Self) extends AnyVal {
       
       inline def setDate(value: String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
       

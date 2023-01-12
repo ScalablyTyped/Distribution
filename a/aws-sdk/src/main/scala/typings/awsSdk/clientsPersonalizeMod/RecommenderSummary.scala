@@ -53,7 +53,8 @@ object RecommenderSummary {
     __obj.asInstanceOf[RecommenderSummary]
   }
   
-  extension [Self <: RecommenderSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecommenderSummary] (val x: Self) extends AnyVal {
     
     inline def setCreationDateTime(value: js.Date): Self = StObject.set(x, "creationDateTime", value.asInstanceOf[js.Any])
     

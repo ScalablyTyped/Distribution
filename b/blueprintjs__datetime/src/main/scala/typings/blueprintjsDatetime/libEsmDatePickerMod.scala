@@ -163,7 +163,8 @@ object libEsmDatePickerMod {
       __obj.asInstanceOf[IDatePickerProps]
     }
     
-    extension [Self <: IDatePickerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDatePickerProps] (val x: Self) extends AnyVal {
       
       inline def setCanClearSelection(value: Boolean): Self = StObject.set(x, "canClearSelection", value.asInstanceOf[js.Any])
       
@@ -230,7 +231,8 @@ object libEsmDatePickerMod {
       __obj.asInstanceOf[IDatePickerState]
     }
     
-    extension [Self <: IDatePickerState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDatePickerState] (val x: Self) extends AnyVal {
       
       inline def setDisplayMonth(value: Double): Self = StObject.set(x, "displayMonth", value.asInstanceOf[js.Any])
       

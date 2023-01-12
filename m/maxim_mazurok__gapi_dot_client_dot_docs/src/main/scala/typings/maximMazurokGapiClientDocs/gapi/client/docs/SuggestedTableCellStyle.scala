@@ -22,7 +22,8 @@ object SuggestedTableCellStyle {
     __obj.asInstanceOf[SuggestedTableCellStyle]
   }
   
-  extension [Self <: SuggestedTableCellStyle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SuggestedTableCellStyle] (val x: Self) extends AnyVal {
     
     inline def setTableCellStyle(value: TableCellStyle): Self = StObject.set(x, "tableCellStyle", value.asInstanceOf[js.Any])
     

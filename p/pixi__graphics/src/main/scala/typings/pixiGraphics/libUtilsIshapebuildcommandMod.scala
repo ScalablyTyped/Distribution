@@ -21,7 +21,8 @@ object libUtilsIshapebuildcommandMod {
       __obj.asInstanceOf[IShapeBuildCommand]
     }
     
-    extension [Self <: IShapeBuildCommand](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IShapeBuildCommand] (val x: Self) extends AnyVal {
       
       inline def setBuild(value: GraphicsData => Unit): Self = StObject.set(x, "build", js.Any.fromFunction1(value))
       

@@ -38,7 +38,8 @@ object StartSchemaExtensionRequest {
     __obj.asInstanceOf[StartSchemaExtensionRequest]
   }
   
-  extension [Self <: StartSchemaExtensionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartSchemaExtensionRequest] (val x: Self) extends AnyVal {
     
     inline def setCreateSnapshotBeforeSchemaExtension(value: CreateSnapshotBeforeSchemaExtension): Self = StObject.set(x, "CreateSnapshotBeforeSchemaExtension", value.asInstanceOf[js.Any])
     

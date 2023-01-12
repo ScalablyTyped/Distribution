@@ -31,7 +31,8 @@ object AppMemoryReport {
     __obj.asInstanceOf[AppMemoryReport]
   }
   
-  extension [Self <: AppMemoryReport](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppMemoryReport] (val x: Self) extends AnyVal {
     
     inline def setPeakPrivateCommitUsage(value: Double): Self = StObject.set(x, "peakPrivateCommitUsage", value.asInstanceOf[js.Any])
     

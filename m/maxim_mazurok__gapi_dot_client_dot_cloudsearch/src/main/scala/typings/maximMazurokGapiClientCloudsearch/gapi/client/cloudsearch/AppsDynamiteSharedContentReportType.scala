@@ -16,7 +16,8 @@ object AppsDynamiteSharedContentReportType {
     __obj.asInstanceOf[AppsDynamiteSharedContentReportType]
   }
   
-  extension [Self <: AppsDynamiteSharedContentReportType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppsDynamiteSharedContentReportType] (val x: Self) extends AnyVal {
     
     inline def setSystemViolation(value: String): Self = StObject.set(x, "systemViolation", value.asInstanceOf[js.Any])
     

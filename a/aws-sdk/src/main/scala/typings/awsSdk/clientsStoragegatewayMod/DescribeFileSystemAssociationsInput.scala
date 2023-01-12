@@ -18,7 +18,8 @@ object DescribeFileSystemAssociationsInput {
     __obj.asInstanceOf[DescribeFileSystemAssociationsInput]
   }
   
-  extension [Self <: DescribeFileSystemAssociationsInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeFileSystemAssociationsInput] (val x: Self) extends AnyVal {
     
     inline def setFileSystemAssociationARNList(value: FileSystemAssociationARNList): Self = StObject.set(x, "FileSystemAssociationARNList", value.asInstanceOf[js.Any])
     

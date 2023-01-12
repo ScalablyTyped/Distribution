@@ -41,7 +41,8 @@ object telemetry {
       __obj.asInstanceOf[EventData]
     }
     
-    extension [Self <: EventData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EventData] (val x: Self) extends AnyVal {
       
       inline def setExpired(value: Boolean): Self = StObject.set(x, "expired", value.asInstanceOf[js.Any])
       
@@ -88,7 +89,8 @@ object telemetry {
       __obj.asInstanceOf[ScalarData]
     }
     
-    extension [Self <: ScalarData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScalarData] (val x: Self) extends AnyVal {
       
       inline def setExpired(value: Boolean): Self = StObject.set(x, "expired", value.asInstanceOf[js.Any])
       
@@ -141,7 +143,8 @@ object telemetry {
       __obj.asInstanceOf[SubmitEncryptedPingOptions]
     }
     
-    extension [Self <: SubmitEncryptedPingOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SubmitEncryptedPingOptions] (val x: Self) extends AnyVal {
       
       inline def setSchemaName(value: String): Self = StObject.set(x, "schemaName", value.asInstanceOf[js.Any])
       
@@ -171,7 +174,8 @@ object telemetry {
       __obj.asInstanceOf[SubmitPingOptions]
     }
     
-    extension [Self <: SubmitPingOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SubmitPingOptions] (val x: Self) extends AnyVal {
       
       inline def setAddClientId(value: Boolean): Self = StObject.set(x, "addClientId", value.asInstanceOf[js.Any])
       

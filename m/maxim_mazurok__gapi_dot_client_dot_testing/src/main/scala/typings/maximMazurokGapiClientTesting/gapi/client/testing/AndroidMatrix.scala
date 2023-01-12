@@ -25,7 +25,8 @@ object AndroidMatrix {
     __obj.asInstanceOf[AndroidMatrix]
   }
   
-  extension [Self <: AndroidMatrix](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AndroidMatrix] (val x: Self) extends AnyVal {
     
     inline def setAndroidModelIds(value: js.Array[String]): Self = StObject.set(x, "androidModelIds", value.asInstanceOf[js.Any])
     

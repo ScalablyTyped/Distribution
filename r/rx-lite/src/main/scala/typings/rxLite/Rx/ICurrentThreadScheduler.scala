@@ -37,7 +37,8 @@ object ICurrentThreadScheduler {
     __obj.asInstanceOf[ICurrentThreadScheduler]
   }
   
-  extension [Self <: ICurrentThreadScheduler](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICurrentThreadScheduler] (val x: Self) extends AnyVal {
     
     inline def setScheduleRequired(value: () => Boolean): Self = StObject.set(x, "scheduleRequired", js.Any.fromFunction0(value))
   }

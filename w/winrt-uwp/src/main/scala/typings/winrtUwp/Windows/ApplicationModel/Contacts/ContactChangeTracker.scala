@@ -26,7 +26,8 @@ object ContactChangeTracker {
     __obj.asInstanceOf[ContactChangeTracker]
   }
   
-  extension [Self <: ContactChangeTracker](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContactChangeTracker] (val x: Self) extends AnyVal {
     
     inline def setEnable(value: () => Unit): Self = StObject.set(x, "enable", js.Any.fromFunction0(value))
     

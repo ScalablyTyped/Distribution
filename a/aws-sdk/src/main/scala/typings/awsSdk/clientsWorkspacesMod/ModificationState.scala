@@ -23,7 +23,8 @@ object ModificationState {
     __obj.asInstanceOf[ModificationState]
   }
   
-  extension [Self <: ModificationState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModificationState] (val x: Self) extends AnyVal {
     
     inline def setResource(value: ModificationResourceEnum): Self = StObject.set(x, "Resource", value.asInstanceOf[js.Any])
     

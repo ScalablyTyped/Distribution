@@ -51,7 +51,8 @@ object DirectionLineProperties {
     __obj.asInstanceOf[DirectionLineProperties]
   }
   
-  extension [Self <: DirectionLineProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DirectionLineProperties] (val x: Self) extends AnyVal {
     
     inline def setDirectionLineType(
       value: unknown | segment | `maneuver-segment` | `restriction-violation` | `scaled-cost-barrier` | `heavy-traffic` | `slow-traffic` | `moderate-traffic`

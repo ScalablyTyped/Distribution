@@ -20,7 +20,8 @@ object anon {
       __obj.asInstanceOf[Maxage]
     }
     
-    extension [Self <: Maxage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Maxage] (val x: Self) extends AnyVal {
       
       inline def setMaxage(value: Double): Self = StObject.set(x, "maxage", value.asInstanceOf[js.Any])
       

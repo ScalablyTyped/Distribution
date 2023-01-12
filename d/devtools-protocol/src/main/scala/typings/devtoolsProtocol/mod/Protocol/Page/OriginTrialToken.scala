@@ -33,7 +33,8 @@ object OriginTrialToken {
     __obj.asInstanceOf[OriginTrialToken]
   }
   
-  extension [Self <: OriginTrialToken](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OriginTrialToken] (val x: Self) extends AnyVal {
     
     inline def setExpiryTime(value: TimeSinceEpoch): Self = StObject.set(x, "expiryTime", value.asInstanceOf[js.Any])
     

@@ -67,7 +67,8 @@ object ASPxClientUploadControlUploadingProgressChangedEventArgs {
     __obj.asInstanceOf[ASPxClientUploadControlUploadingProgressChangedEventArgs]
   }
   
-  extension [Self <: ASPxClientUploadControlUploadingProgressChangedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientUploadControlUploadingProgressChangedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setCurrentFileContentLength(value: Double): Self = StObject.set(x, "currentFileContentLength", value.asInstanceOf[js.Any])
     

@@ -43,7 +43,8 @@ object distKerasFormatLayersConvolutionalDepthwiseSerializationMod {
       __obj.asInstanceOf[DepthwiseConv2DLayerConfig]
     }
     
-    extension [Self <: DepthwiseConv2DLayerConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DepthwiseConv2DLayerConfig] (val x: Self) extends AnyVal {
       
       inline def setDepth_multiplier(value: Double): Self = StObject.set(x, "depth_multiplier", value.asInstanceOf[js.Any])
       

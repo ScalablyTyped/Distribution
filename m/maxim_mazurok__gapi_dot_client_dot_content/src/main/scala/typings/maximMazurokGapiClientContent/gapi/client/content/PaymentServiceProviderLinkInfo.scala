@@ -19,7 +19,8 @@ object PaymentServiceProviderLinkInfo {
     __obj.asInstanceOf[PaymentServiceProviderLinkInfo]
   }
   
-  extension [Self <: PaymentServiceProviderLinkInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PaymentServiceProviderLinkInfo] (val x: Self) extends AnyVal {
     
     inline def setExternalAccountBusinessCountry(value: String): Self = StObject.set(x, "externalAccountBusinessCountry", value.asInstanceOf[js.Any])
     

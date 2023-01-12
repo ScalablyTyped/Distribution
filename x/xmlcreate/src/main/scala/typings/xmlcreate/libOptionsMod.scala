@@ -59,7 +59,8 @@ object libOptionsMod {
       __obj.asInstanceOf[IStringOptions]
     }
     
-    extension [Self <: IStringOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IStringOptions] (val x: Self) extends AnyVal {
       
       inline def setDoubleQuotes(value: Boolean): Self = StObject.set(x, "doubleQuotes", value.asInstanceOf[js.Any])
       

@@ -18,7 +18,8 @@ object GetDecoderManifestRequest {
     __obj.asInstanceOf[GetDecoderManifestRequest]
   }
   
-  extension [Self <: GetDecoderManifestRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetDecoderManifestRequest] (val x: Self) extends AnyVal {
     
     inline def setName(value: resourceName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }

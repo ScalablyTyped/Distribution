@@ -21,7 +21,8 @@ object HintSpecimenProps {
     __obj.asInstanceOf[HintSpecimenProps]
   }
   
-  extension [Self <: HintSpecimenProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HintSpecimenProps] (val x: Self) extends AnyVal {
     
     inline def setDirective(value: Boolean): Self = StObject.set(x, "directive", value.asInstanceOf[js.Any])
     

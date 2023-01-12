@@ -15,7 +15,8 @@ object MtermvectorsResponse {
     __obj.asInstanceOf[MtermvectorsResponse]
   }
   
-  extension [Self <: MtermvectorsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MtermvectorsResponse] (val x: Self) extends AnyVal {
     
     inline def setDocs(value: js.Array[MtermvectorsTermVectorsResult]): Self = StObject.set(x, "docs", value.asInstanceOf[js.Any])
     

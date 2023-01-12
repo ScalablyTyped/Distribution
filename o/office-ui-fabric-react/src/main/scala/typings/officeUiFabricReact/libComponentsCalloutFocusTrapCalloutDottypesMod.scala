@@ -24,7 +24,8 @@ object libComponentsCalloutFocusTrapCalloutDottypesMod {
       __obj.asInstanceOf[IFocusTrapCalloutProps]
     }
     
-    extension [Self <: IFocusTrapCalloutProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IFocusTrapCalloutProps] (val x: Self) extends AnyVal {
       
       inline def setFocusTrapProps(value: IFocusTrapZoneProps): Self = StObject.set(x, "focusTrapProps", value.asInstanceOf[js.Any])
       

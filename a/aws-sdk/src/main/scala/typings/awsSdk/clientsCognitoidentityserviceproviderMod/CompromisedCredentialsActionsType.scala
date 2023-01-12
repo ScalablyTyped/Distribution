@@ -18,7 +18,8 @@ object CompromisedCredentialsActionsType {
     __obj.asInstanceOf[CompromisedCredentialsActionsType]
   }
   
-  extension [Self <: CompromisedCredentialsActionsType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CompromisedCredentialsActionsType] (val x: Self) extends AnyVal {
     
     inline def setEventAction(value: CompromisedCredentialsEventActionType): Self = StObject.set(x, "EventAction", value.asInstanceOf[js.Any])
   }

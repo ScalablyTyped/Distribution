@@ -426,7 +426,8 @@ object Paragraph {
     __obj.asInstanceOf[Paragraph]
   }
   
-  extension [Self <: Paragraph](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Paragraph] (val x: Self) extends AnyVal {
     
     inline def setBackColor(value: Color): Self = StObject.set(x, "BackColor", value.asInstanceOf[js.Any])
     

@@ -36,7 +36,8 @@ object ScaleBinParams {
     __obj.asInstanceOf[ScaleBinParams]
   }
   
-  extension [Self <: ScaleBinParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScaleBinParams] (val x: Self) extends AnyVal {
     
     inline def setStart(value: Double | SignalRef): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     

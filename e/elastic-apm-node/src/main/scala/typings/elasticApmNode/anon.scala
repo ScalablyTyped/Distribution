@@ -18,7 +18,8 @@ object anon {
       __obj.asInstanceOf[Connect]
     }
     
-    extension [Self <: Connect](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Connect] (val x: Self) extends AnyVal {
       
       inline def setConnect(value: () => ErrorHandleFunction): Self = StObject.set(x, "connect", js.Any.fromFunction0(value))
     }
@@ -39,7 +40,8 @@ object anon {
       __obj.asInstanceOf[Name]
     }
     
-    extension [Self <: Name](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Name] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -73,7 +75,8 @@ object anon {
       __obj.asInstanceOf[Spanid]
     }
     
-    extension [Self <: Spanid](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Spanid] (val x: Self) extends AnyVal {
       
       inline def setSpanDotid(value: String): Self = StObject.set(x, "span.id", value.asInstanceOf[js.Any])
       
@@ -106,7 +109,8 @@ object anon {
       __obj.asInstanceOf[SpanidTraceid]
     }
     
-    extension [Self <: SpanidTraceid](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SpanidTraceid] (val x: Self) extends AnyVal {
       
       inline def setSpanDotid(value: String): Self = StObject.set(x, "span.id", value.asInstanceOf[js.Any])
       
@@ -131,7 +135,8 @@ object anon {
       __obj.asInstanceOf[Traceid]
     }
     
-    extension [Self <: Traceid](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Traceid] (val x: Self) extends AnyVal {
       
       inline def setTraceDotid(value: String): Self = StObject.set(x, "trace.id", value.asInstanceOf[js.Any])
       

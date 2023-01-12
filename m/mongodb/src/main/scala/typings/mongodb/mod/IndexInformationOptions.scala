@@ -19,7 +19,8 @@ object IndexInformationOptions {
     __obj.asInstanceOf[IndexInformationOptions]
   }
   
-  extension [Self <: IndexInformationOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndexInformationOptions] (val x: Self) extends AnyVal {
     
     inline def setFull(value: Boolean): Self = StObject.set(x, "full", value.asInstanceOf[js.Any])
     

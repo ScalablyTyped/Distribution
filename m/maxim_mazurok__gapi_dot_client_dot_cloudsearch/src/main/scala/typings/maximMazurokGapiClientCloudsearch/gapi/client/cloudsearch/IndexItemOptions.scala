@@ -16,7 +16,8 @@ object IndexItemOptions {
     __obj.asInstanceOf[IndexItemOptions]
   }
   
-  extension [Self <: IndexItemOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndexItemOptions] (val x: Self) extends AnyVal {
     
     inline def setAllowUnknownGsuitePrincipals(value: Boolean): Self = StObject.set(x, "allowUnknownGsuitePrincipals", value.asInstanceOf[js.Any])
     

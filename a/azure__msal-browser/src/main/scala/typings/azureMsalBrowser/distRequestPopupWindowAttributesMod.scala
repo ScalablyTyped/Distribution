@@ -19,7 +19,8 @@ object distRequestPopupWindowAttributesMod {
       __obj.asInstanceOf[PopupPosition]
     }
     
-    extension [Self <: PopupPosition](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PopupPosition] (val x: Self) extends AnyVal {
       
       inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
       
@@ -40,7 +41,8 @@ object distRequestPopupWindowAttributesMod {
       __obj.asInstanceOf[PopupSize]
     }
     
-    extension [Self <: PopupSize](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PopupSize] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -61,7 +63,8 @@ object distRequestPopupWindowAttributesMod {
       __obj.asInstanceOf[PopupWindowAttributes]
     }
     
-    extension [Self <: PopupWindowAttributes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PopupWindowAttributes] (val x: Self) extends AnyVal {
       
       inline def setPopupPosition(value: PopupPosition): Self = StObject.set(x, "popupPosition", value.asInstanceOf[js.Any])
       

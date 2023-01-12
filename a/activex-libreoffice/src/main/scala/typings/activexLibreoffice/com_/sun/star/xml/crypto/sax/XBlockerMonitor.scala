@@ -33,7 +33,8 @@ object XBlockerMonitor {
     __obj.asInstanceOf[XBlockerMonitor]
   }
   
-  extension [Self <: XBlockerMonitor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XBlockerMonitor] (val x: Self) extends AnyVal {
     
     inline def setSetBlockerId(value: Double => Unit): Self = StObject.set(x, "setBlockerId", js.Any.fromFunction1(value))
   }

@@ -24,7 +24,8 @@ object CompiledResultFunctions {
     __obj.asInstanceOf[CompiledResultFunctions]
   }
   
-  extension [Self <: CompiledResultFunctions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CompiledResultFunctions] (val x: Self) extends AnyVal {
     
     inline def setRender(value: () => VNode[RendererNode, RendererElement, StringDictionary[Any]]): Self = StObject.set(x, "render", js.Any.fromFunction0(value))
     

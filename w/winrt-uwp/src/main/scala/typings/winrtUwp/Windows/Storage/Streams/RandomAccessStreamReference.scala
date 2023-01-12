@@ -21,7 +21,8 @@ object RandomAccessStreamReference {
     __obj.asInstanceOf[RandomAccessStreamReference]
   }
   
-  extension [Self <: RandomAccessStreamReference](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RandomAccessStreamReference] (val x: Self) extends AnyVal {
     
     inline def setOpenReadAsync(value: () => IPromiseWithIAsyncOperation[IRandomAccessStreamWithContentType]): Self = StObject.set(x, "openReadAsync", js.Any.fromFunction0(value))
   }

@@ -22,7 +22,8 @@ object AttrsConv2DBackpropFilterAttrs {
     __obj.asInstanceOf[AttrsConv2DBackpropFilterAttrs]
   }
   
-  extension [Self <: AttrsConv2DBackpropFilterAttrs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AttrsConv2DBackpropFilterAttrs] (val x: Self) extends AnyVal {
     
     inline def setAttrs(value: Conv2DBackpropFilterAttrs): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
     

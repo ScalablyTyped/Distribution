@@ -19,7 +19,8 @@ object SocialColor {
     __obj.asInstanceOf[SocialColor]
   }
   
-  extension [Self <: SocialColor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SocialColor] (val x: Self) extends AnyVal {
     
     inline def setFacebook(value: String): Self = StObject.set(x, "facebook", value.asInstanceOf[js.Any])
     

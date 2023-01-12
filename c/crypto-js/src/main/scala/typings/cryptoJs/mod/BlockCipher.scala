@@ -21,7 +21,8 @@ object BlockCipher {
     __obj.asInstanceOf[BlockCipher]
   }
   
-  extension [Self <: BlockCipher](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BlockCipher] (val x: Self) extends AnyVal {
     
     inline def setBlockSize(value: Double): Self = StObject.set(x, "blockSize", value.asInstanceOf[js.Any])
   }

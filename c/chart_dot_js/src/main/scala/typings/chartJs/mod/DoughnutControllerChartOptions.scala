@@ -62,7 +62,8 @@ object DoughnutControllerChartOptions {
     __obj.asInstanceOf[DoughnutControllerChartOptions]
   }
   
-  extension [Self <: DoughnutControllerChartOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DoughnutControllerChartOptions] (val x: Self) extends AnyVal {
     
     inline def setAnimation(value: `false` | DoughnutAnimationOptions): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     

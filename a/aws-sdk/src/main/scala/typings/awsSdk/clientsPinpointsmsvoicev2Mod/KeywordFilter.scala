@@ -23,7 +23,8 @@ object KeywordFilter {
     __obj.asInstanceOf[KeywordFilter]
   }
   
-  extension [Self <: KeywordFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KeywordFilter] (val x: Self) extends AnyVal {
     
     inline def setName(value: KeywordFilterName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     

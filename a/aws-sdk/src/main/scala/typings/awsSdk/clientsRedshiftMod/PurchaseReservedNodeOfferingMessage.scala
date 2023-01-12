@@ -23,7 +23,8 @@ object PurchaseReservedNodeOfferingMessage {
     __obj.asInstanceOf[PurchaseReservedNodeOfferingMessage]
   }
   
-  extension [Self <: PurchaseReservedNodeOfferingMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PurchaseReservedNodeOfferingMessage] (val x: Self) extends AnyVal {
     
     inline def setNodeCount(value: IntegerOptional): Self = StObject.set(x, "NodeCount", value.asInstanceOf[js.Any])
     

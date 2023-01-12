@@ -49,7 +49,8 @@ object TransformUpdateTransformResponse {
     __obj.asInstanceOf[TransformUpdateTransformResponse]
   }
   
-  extension [Self <: TransformUpdateTransformResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransformUpdateTransformResponse] (val x: Self) extends AnyVal {
     
     inline def setAuthorization(value: MlTransformAuthorization): Self = StObject.set(x, "authorization", value.asInstanceOf[js.Any])
     

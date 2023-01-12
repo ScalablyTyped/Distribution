@@ -49,7 +49,8 @@ object PivotTable {
     __obj.asInstanceOf[PivotTable]
   }
   
-  extension [Self <: PivotTable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PivotTable] (val x: Self) extends AnyVal {
     
     inline def setColumns(value: js.Array[PivotGroup]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     

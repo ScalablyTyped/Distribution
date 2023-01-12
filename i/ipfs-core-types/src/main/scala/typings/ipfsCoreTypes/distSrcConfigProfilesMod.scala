@@ -40,7 +40,8 @@ object distSrcConfigProfilesMod {
       __obj.asInstanceOf[Profile]
     }
     
-    extension [Self <: Profile](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Profile] (val x: Self) extends AnyVal {
       
       inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
@@ -61,7 +62,8 @@ object distSrcConfigProfilesMod {
       __obj.asInstanceOf[ProfilesApplyOptions]
     }
     
-    extension [Self <: ProfilesApplyOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProfilesApplyOptions] (val x: Self) extends AnyVal {
       
       inline def setDryRun(value: Boolean): Self = StObject.set(x, "dryRun", value.asInstanceOf[js.Any])
       
@@ -82,7 +84,8 @@ object distSrcConfigProfilesMod {
       __obj.asInstanceOf[ProfilesApplyResult]
     }
     
-    extension [Self <: ProfilesApplyResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProfilesApplyResult] (val x: Self) extends AnyVal {
       
       inline def setOriginal(value: Config): Self = StObject.set(x, "original", value.asInstanceOf[js.Any])
       

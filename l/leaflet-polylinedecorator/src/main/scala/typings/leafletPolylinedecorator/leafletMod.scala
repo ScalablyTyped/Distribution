@@ -135,7 +135,8 @@ object leafletMod {
         __obj.asInstanceOf[ArrowHeadOptions]
       }
       
-      extension [Self <: ArrowHeadOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ArrowHeadOptions] (val x: Self) extends AnyVal {
         
         inline def setHeadAngle(value: Double): Self = StObject.set(x, "headAngle", value.asInstanceOf[js.Any])
         
@@ -168,7 +169,8 @@ object leafletMod {
         __obj.asInstanceOf[DashOptions]
       }
       
-      extension [Self <: DashOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: DashOptions] (val x: Self) extends AnyVal {
         
         inline def setPathOptions(value: PathOptions): Self = StObject.set(x, "pathOptions", value.asInstanceOf[js.Any])
         
@@ -193,7 +195,8 @@ object leafletMod {
         __obj.asInstanceOf[MarkerOptions]
       }
       
-      extension [Self <: MarkerOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: MarkerOptions] (val x: Self) extends AnyVal {
         
         inline def setMarkerOptions(value: typings.leaflet.mod.MarkerOptions): Self = StObject.set(x, "markerOptions", value.asInstanceOf[js.Any])
         
@@ -232,7 +235,8 @@ object leafletMod {
       __obj.asInstanceOf[Pattern]
     }
     
-    extension [Self <: Pattern](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Pattern] (val x: Self) extends AnyVal {
       
       inline def setEndOffset(value: Double | String): Self = StObject.set(x, "endOffset", value.asInstanceOf[js.Any])
       
@@ -259,7 +263,8 @@ object leafletMod {
       __obj.asInstanceOf[PolylineDecoratorOptions]
     }
     
-    extension [Self <: PolylineDecoratorOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PolylineDecoratorOptions] (val x: Self) extends AnyVal {
       
       inline def setPatterns(value: js.Array[Pattern]): Self = StObject.set(x, "patterns", value.asInstanceOf[js.Any])
       

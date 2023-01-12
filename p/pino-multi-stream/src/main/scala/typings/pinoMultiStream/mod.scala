@@ -73,7 +73,8 @@ object mod {
       __obj.asInstanceOf[LoggerOptions]
     }
     
-    extension [Self <: LoggerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LoggerOptions] (val x: Self) extends AnyVal {
       
       inline def setStreams(value: Streams): Self = StObject.set(x, "streams", value.asInstanceOf[js.Any])
       
@@ -94,7 +95,8 @@ object mod {
       __obj.asInstanceOf[MultiStreamOptions]
     }
     
-    extension [Self <: MultiStreamOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MultiStreamOptions] (val x: Self) extends AnyVal {
       
       inline def setDedupe(value: Boolean): Self = StObject.set(x, "dedupe", value.asInstanceOf[js.Any])
       
@@ -122,7 +124,8 @@ object mod {
       __obj.asInstanceOf[PrettyStreamOptions]
     }
     
-    extension [Self <: PrettyStreamOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PrettyStreamOptions] (val x: Self) extends AnyVal {
       
       inline def setDest(value: DestinationStream | WritableStream): Self = StObject.set(x, "dest", value.asInstanceOf[js.Any])
       

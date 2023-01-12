@@ -18,7 +18,8 @@ object GetQueryLoggingConfigRequest {
     __obj.asInstanceOf[GetQueryLoggingConfigRequest]
   }
   
-  extension [Self <: GetQueryLoggingConfigRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetQueryLoggingConfigRequest] (val x: Self) extends AnyVal {
     
     inline def setId(value: QueryLoggingConfigId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
   }

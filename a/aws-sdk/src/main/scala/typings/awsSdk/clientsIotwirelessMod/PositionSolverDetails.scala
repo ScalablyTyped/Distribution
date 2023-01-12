@@ -18,7 +18,8 @@ object PositionSolverDetails {
     __obj.asInstanceOf[PositionSolverDetails]
   }
   
-  extension [Self <: PositionSolverDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PositionSolverDetails] (val x: Self) extends AnyVal {
     
     inline def setSemtechGnss(value: SemtechGnssDetail): Self = StObject.set(x, "SemtechGnss", value.asInstanceOf[js.Any])
     

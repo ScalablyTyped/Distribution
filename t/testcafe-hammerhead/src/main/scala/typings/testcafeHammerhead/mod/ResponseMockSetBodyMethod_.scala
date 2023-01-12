@@ -17,7 +17,8 @@ object ResponseMockSetBodyMethod_ {
     __obj.asInstanceOf[ResponseMockSetBodyMethod_]
   }
   
-  extension [Self <: ResponseMockSetBodyMethod_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResponseMockSetBodyMethod_] (val x: Self) extends AnyVal {
     
     inline def setAdd(value: IncomingMessageLikeInitOptions => Unit): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
     

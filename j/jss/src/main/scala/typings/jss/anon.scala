@@ -34,7 +34,8 @@ object anon {
       __obj.asInstanceOf[Next[T]]
     }
     
-    extension [Self <: Next[?], T](x: Self & Next[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Next[?], T] (val x: Self & Next[T]) extends AnyVal {
       
       inline def setNext(value: T => Unit): Self = StObject.set(x, "next", js.Any.fromFunction1(value))
     }
@@ -60,7 +61,8 @@ object anon {
       __obj.asInstanceOf[PartialJssOptions]
     }
     
-    extension [Self <: PartialJssOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialJssOptions] (val x: Self) extends AnyVal {
       
       inline def setCreateGenerateId(value: /* options */ js.UndefOr[CreateGenerateIdOptions] => GenerateId): Self = StObject.set(x, "createGenerateId", js.Any.fromFunction1(value))
       
@@ -114,7 +116,8 @@ object anon {
       __obj.asInstanceOf[PartialRuleOptions]
     }
     
-    extension [Self <: PartialRuleOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialRuleOptions] (val x: Self) extends AnyVal {
       
       inline def setClasses(value: Classes[String]): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
       
@@ -161,7 +164,8 @@ object anon {
       __obj.asInstanceOf[Unsubscribe]
     }
     
-    extension [Self <: Unsubscribe](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Unsubscribe] (val x: Self) extends AnyVal {
       
       inline def setUnsubscribe(value: () => Unit): Self = StObject.set(x, "unsubscribe", js.Any.fromFunction0(value))
     }

@@ -20,7 +20,8 @@ object websceneApplicationPropertiesProperties {
     __obj.asInstanceOf[websceneApplicationPropertiesProperties]
   }
   
-  extension [Self <: websceneApplicationPropertiesProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: websceneApplicationPropertiesProperties] (val x: Self) extends AnyVal {
     
     inline def setViewing(value: ViewingProperties): Self = StObject.set(x, "viewing", value.asInstanceOf[js.Any])
     

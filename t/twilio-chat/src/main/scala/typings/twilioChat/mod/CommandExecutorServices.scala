@@ -16,7 +16,8 @@ object CommandExecutorServices {
     __obj.asInstanceOf[CommandExecutorServices]
   }
   
-  extension [Self <: CommandExecutorServices](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CommandExecutorServices] (val x: Self) extends AnyVal {
     
     inline def setTransport(value: Transport): Self = StObject.set(x, "transport", value.asInstanceOf[js.Any])
   }

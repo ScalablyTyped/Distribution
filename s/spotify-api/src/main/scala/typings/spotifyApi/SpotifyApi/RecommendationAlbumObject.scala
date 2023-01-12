@@ -75,7 +75,8 @@ object RecommendationAlbumObject {
     __obj.asInstanceOf[RecommendationAlbumObject]
   }
   
-  extension [Self <: RecommendationAlbumObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecommendationAlbumObject] (val x: Self) extends AnyVal {
     
     inline def setAlbum_group(value: album_ | single_ | compilation_ | appears_on): Self = StObject.set(x, "album_group", value.asInstanceOf[js.Any])
     

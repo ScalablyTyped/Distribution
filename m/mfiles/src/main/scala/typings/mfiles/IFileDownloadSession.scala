@@ -19,7 +19,8 @@ object IFileDownloadSession {
     __obj.asInstanceOf[IFileDownloadSession]
   }
   
-  extension [Self <: IFileDownloadSession](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IFileDownloadSession] (val x: Self) extends AnyVal {
     
     inline def setDownloadID(value: Double): Self = StObject.set(x, "DownloadID", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object IRateLimiterRedisOptions {
     __obj.asInstanceOf[IRateLimiterRedisOptions]
   }
   
-  extension [Self <: IRateLimiterRedisOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IRateLimiterRedisOptions] (val x: Self) extends AnyVal {
     
     inline def setRejectIfRedisNotReady(value: Boolean): Self = StObject.set(x, "rejectIfRedisNotReady", value.asInstanceOf[js.Any])
     

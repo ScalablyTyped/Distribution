@@ -18,7 +18,8 @@ object StartEngagementResult {
     __obj.asInstanceOf[StartEngagementResult]
   }
   
-  extension [Self <: StartEngagementResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartEngagementResult] (val x: Self) extends AnyVal {
     
     inline def setEngagementArn(value: SsmContactsArn): Self = StObject.set(x, "EngagementArn", value.asInstanceOf[js.Any])
   }

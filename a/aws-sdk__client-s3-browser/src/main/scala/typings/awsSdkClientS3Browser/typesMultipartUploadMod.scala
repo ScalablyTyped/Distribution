@@ -53,7 +53,8 @@ object typesMultipartUploadMod {
       __obj.asInstanceOf[MultipartUpload]
     }
     
-    extension [Self <: MultipartUpload](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MultipartUpload] (val x: Self) extends AnyVal {
       
       inline def setInitiated(value: js.Date | String | Double): Self = StObject.set(x, "Initiated", value.asInstanceOf[js.Any])
       
@@ -110,7 +111,8 @@ object typesMultipartUploadMod {
       __obj.asInstanceOf[UnmarshalledMultipartUpload]
     }
     
-    extension [Self <: UnmarshalledMultipartUpload](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnmarshalledMultipartUpload] (val x: Self) extends AnyVal {
       
       inline def setInitiated(value: js.Date): Self = StObject.set(x, "Initiated", value.asInstanceOf[js.Any])
       

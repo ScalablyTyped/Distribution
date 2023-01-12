@@ -43,7 +43,8 @@ object sliderSliderMod extends Shortcut {
       __obj.asInstanceOf[Mark]
     }
     
-    extension [Self <: Mark](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Mark] (val x: Self) extends AnyVal {
       
       inline def setLabel(value: ReactNode): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
@@ -136,7 +137,8 @@ object sliderSliderMod extends Shortcut {
       __obj.asInstanceOf[SliderTypeMap[P, D]]
     }
     
-    extension [Self <: SliderTypeMap[?, ?], P, D /* <: ElementType[Any] */](x: Self & (SliderTypeMap[P, D])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SliderTypeMap[?, ?], P, D /* <: ElementType[Any] */] (val x: Self & (SliderTypeMap[P, D])) extends AnyVal {
       
       inline def setClassKey(value: SliderClassKey): Self = StObject.set(x, "classKey", value.asInstanceOf[js.Any])
       
@@ -164,7 +166,8 @@ object sliderSliderMod extends Shortcut {
       __obj.asInstanceOf[ValueLabelProps]
     }
     
-    extension [Self <: ValueLabelProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ValueLabelProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactElement): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

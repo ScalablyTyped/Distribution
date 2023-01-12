@@ -77,7 +77,8 @@ object distLibCommandsZrangestoreMod {
       __obj.asInstanceOf[ZRangeStoreOptions]
     }
     
-    extension [Self <: ZRangeStoreOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ZRangeStoreOptions] (val x: Self) extends AnyVal {
       
       inline def setBY(value: SCORE | LEX): Self = StObject.set(x, "BY", value.asInstanceOf[js.Any])
       

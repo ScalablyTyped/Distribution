@@ -46,7 +46,8 @@ object distTransformsSelectionMod {
       __obj.asInstanceOf[SelectionCollapseOptions]
     }
     
-    extension [Self <: SelectionCollapseOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SelectionCollapseOptions] (val x: Self) extends AnyVal {
       
       inline def setEdge(value: SelectionEdge): Self = StObject.set(x, "edge", value.asInstanceOf[js.Any])
       
@@ -71,7 +72,8 @@ object distTransformsSelectionMod {
       __obj.asInstanceOf[SelectionMoveOptions]
     }
     
-    extension [Self <: SelectionMoveOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SelectionMoveOptions] (val x: Self) extends AnyVal {
       
       inline def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
       
@@ -102,7 +104,8 @@ object distTransformsSelectionMod {
       __obj.asInstanceOf[SelectionSetPointOptions]
     }
     
-    extension [Self <: SelectionSetPointOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SelectionSetPointOptions] (val x: Self) extends AnyVal {
       
       inline def setEdge(value: SelectionEdge): Self = StObject.set(x, "edge", value.asInstanceOf[js.Any])
       

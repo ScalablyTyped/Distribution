@@ -17,7 +17,8 @@ object XboxLiveInboundEndpointPairCreatedEventArgs {
     __obj.asInstanceOf[XboxLiveInboundEndpointPairCreatedEventArgs]
   }
   
-  extension [Self <: XboxLiveInboundEndpointPairCreatedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XboxLiveInboundEndpointPairCreatedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setEndpointPair(value: XboxLiveEndpointPair): Self = StObject.set(x, "endpointPair", value.asInstanceOf[js.Any])
   }

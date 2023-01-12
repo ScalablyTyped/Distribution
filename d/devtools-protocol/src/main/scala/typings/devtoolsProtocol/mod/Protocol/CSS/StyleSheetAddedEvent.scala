@@ -18,7 +18,8 @@ object StyleSheetAddedEvent {
     __obj.asInstanceOf[StyleSheetAddedEvent]
   }
   
-  extension [Self <: StyleSheetAddedEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StyleSheetAddedEvent] (val x: Self) extends AnyVal {
     
     inline def setHeader(value: CSSStyleSheetHeader): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
   }

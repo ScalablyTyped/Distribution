@@ -55,7 +55,8 @@ object SodaMetadata {
     __obj.asInstanceOf[SodaMetadata]
   }
   
-  extension [Self <: SodaMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SodaMetadata] (val x: Self) extends AnyVal {
     
     inline def setContentColumn(value: Cache): Self = StObject.set(x, "contentColumn", value.asInstanceOf[js.Any])
     

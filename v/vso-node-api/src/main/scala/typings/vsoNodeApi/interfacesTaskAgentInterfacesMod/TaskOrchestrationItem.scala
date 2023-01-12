@@ -15,7 +15,8 @@ object TaskOrchestrationItem {
     __obj.asInstanceOf[TaskOrchestrationItem]
   }
   
-  extension [Self <: TaskOrchestrationItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TaskOrchestrationItem] (val x: Self) extends AnyVal {
     
     inline def setItemType(value: TaskOrchestrationItemType): Self = StObject.set(x, "itemType", value.asInstanceOf[js.Any])
   }

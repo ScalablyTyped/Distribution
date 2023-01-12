@@ -22,7 +22,8 @@ object FocusOptions {
     __obj.asInstanceOf[FocusOptions]
   }
   
-  extension [Self <: FocusOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FocusOptions] (val x: Self) extends AnyVal {
     
     inline def setLocked(value: Boolean): Self = StObject.set(x, "locked", value.asInstanceOf[js.Any])
     

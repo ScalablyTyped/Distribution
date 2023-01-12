@@ -154,7 +154,8 @@ object mod {
       __obj.asInstanceOf[DataRegistry]
     }
     
-    extension [Self <: DataRegistry](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DataRegistry] (val x: Self) extends AnyVal {
       
       inline def setDispatch(value: /* storeNameOrDescriptor */ String | StoreDescriptor => DispatcherMap): Self = StObject.set(x, "dispatch", js.Any.fromFunction1(value))
       
@@ -204,7 +205,8 @@ object mod {
       __obj.asInstanceOf[GenericStoreConfig]
     }
     
-    extension [Self <: GenericStoreConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GenericStoreConfig] (val x: Self) extends AnyVal {
       
       inline def setGetActions(value: () => DispatcherMap): Self = StObject.set(x, "getActions", js.Any.fromFunction0(value))
       
@@ -239,7 +241,8 @@ object mod {
       __obj.asInstanceOf[Store[S, A]]
     }
     
-    extension [Self <: Store[?, ?], S, A /* <: AnyAction */](x: Self & (Store[S, A])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Store[?, ?], S, A /* <: AnyAction */] (val x: Self & (Store[S, A])) extends AnyVal {
       
       inline def setDispatch(value: A => A): Self = StObject.set(x, "dispatch", js.Any.fromFunction1(value))
       
@@ -292,7 +295,8 @@ object mod {
       __obj.asInstanceOf[StoreConfig[S]]
     }
     
-    extension [Self <: StoreConfig[?], S](x: Self & StoreConfig[S]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StoreConfig[?], S] (val x: Self & StoreConfig[S]) extends AnyVal {
       
       inline def setActions(value: StringDictionary[js.Function1[/* repeated */ Any, AnyAction | (Generator[Any, Any, Any])]]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
       
@@ -337,7 +341,8 @@ object mod {
       __obj.asInstanceOf[StoreDescriptor]
     }
     
-    extension [Self <: StoreDescriptor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StoreDescriptor] (val x: Self) extends AnyVal {
       
       inline def setInstantiate(value: DataRegistry => GenericStoreConfig): Self = StObject.set(x, "instantiate", js.Any.fromFunction1(value))
       

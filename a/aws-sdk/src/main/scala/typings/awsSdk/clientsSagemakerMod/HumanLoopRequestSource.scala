@@ -18,7 +18,8 @@ object HumanLoopRequestSource {
     __obj.asInstanceOf[HumanLoopRequestSource]
   }
   
-  extension [Self <: HumanLoopRequestSource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HumanLoopRequestSource] (val x: Self) extends AnyVal {
     
     inline def setAwsManagedHumanLoopRequestSource(value: AwsManagedHumanLoopRequestSource): Self = StObject.set(x, "AwsManagedHumanLoopRequestSource", value.asInstanceOf[js.Any])
   }

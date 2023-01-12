@@ -18,7 +18,8 @@ object DescribeTableReplicaAutoScalingInput {
     __obj.asInstanceOf[DescribeTableReplicaAutoScalingInput]
   }
   
-  extension [Self <: DescribeTableReplicaAutoScalingInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeTableReplicaAutoScalingInput] (val x: Self) extends AnyVal {
     
     inline def setTableName(value: TableName): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
   }

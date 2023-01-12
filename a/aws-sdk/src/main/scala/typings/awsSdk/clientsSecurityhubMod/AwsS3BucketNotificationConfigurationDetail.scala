@@ -33,7 +33,8 @@ object AwsS3BucketNotificationConfigurationDetail {
     __obj.asInstanceOf[AwsS3BucketNotificationConfigurationDetail]
   }
   
-  extension [Self <: AwsS3BucketNotificationConfigurationDetail](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsS3BucketNotificationConfigurationDetail] (val x: Self) extends AnyVal {
     
     inline def setDestination(value: NonEmptyString): Self = StObject.set(x, "Destination", value.asInstanceOf[js.Any])
     

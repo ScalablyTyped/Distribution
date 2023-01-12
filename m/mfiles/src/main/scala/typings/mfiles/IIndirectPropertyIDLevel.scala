@@ -27,7 +27,8 @@ object IIndirectPropertyIDLevel {
     __obj.asInstanceOf[IIndirectPropertyIDLevel]
   }
   
-  extension [Self <: IIndirectPropertyIDLevel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IIndirectPropertyIDLevel] (val x: Self) extends AnyVal {
     
     inline def setClone(value: () => IIndirectPropertyIDLevel): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     

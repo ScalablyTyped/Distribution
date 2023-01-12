@@ -15,7 +15,8 @@ object WorkerVersionUpdatedEvent {
     __obj.asInstanceOf[WorkerVersionUpdatedEvent]
   }
   
-  extension [Self <: WorkerVersionUpdatedEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkerVersionUpdatedEvent] (val x: Self) extends AnyVal {
     
     inline def setVersions(value: js.Array[ServiceWorkerVersion]): Self = StObject.set(x, "versions", value.asInstanceOf[js.Any])
     

@@ -142,7 +142,8 @@ object typesQueryInputMod {
       __obj.asInstanceOf[QueryInput]
     }
     
-    extension [Self <: QueryInput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QueryInput] (val x: Self) extends AnyVal {
       
       inline def set$abortSignal(value: AbortSignal): Self = StObject.set(x, "$abortSignal", value.asInstanceOf[js.Any])
       

@@ -29,7 +29,8 @@ object AllSelectedAttributes {
     __obj.asInstanceOf[AllSelectedAttributes]
   }
   
-  extension [Self <: AllSelectedAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AllSelectedAttributes] (val x: Self) extends AnyVal {
     
     inline def setAllSelectedAttributes(value: js.Object): Self = StObject.set(x, "allSelectedAttributes", value.asInstanceOf[js.Any])
     

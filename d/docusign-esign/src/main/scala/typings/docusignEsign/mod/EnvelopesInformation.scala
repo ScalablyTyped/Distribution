@@ -58,7 +58,8 @@ object EnvelopesInformation {
     __obj.asInstanceOf[EnvelopesInformation]
   }
   
-  extension [Self <: EnvelopesInformation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnvelopesInformation] (val x: Self) extends AnyVal {
     
     inline def setContinuationToken(value: String): Self = StObject.set(x, "continuationToken", value.asInstanceOf[js.Any])
     

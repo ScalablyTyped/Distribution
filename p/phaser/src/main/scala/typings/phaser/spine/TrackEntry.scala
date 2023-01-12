@@ -119,7 +119,8 @@ object TrackEntry {
     __obj.asInstanceOf[TrackEntry]
   }
   
-  extension [Self <: TrackEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TrackEntry] (val x: Self) extends AnyVal {
     
     inline def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
     

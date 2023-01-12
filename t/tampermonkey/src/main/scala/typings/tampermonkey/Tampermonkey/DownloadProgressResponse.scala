@@ -26,7 +26,8 @@ object DownloadProgressResponse {
     __obj.asInstanceOf[DownloadProgressResponse]
   }
   
-  extension [Self <: DownloadProgressResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DownloadProgressResponse] (val x: Self) extends AnyVal {
     
     inline def setFinalUrl(value: String): Self = StObject.set(x, "finalUrl", value.asInstanceOf[js.Any])
   }

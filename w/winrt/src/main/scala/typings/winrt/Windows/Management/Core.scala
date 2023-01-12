@@ -22,7 +22,8 @@ object Core {
       __obj.asInstanceOf[IApplicationDataManagerStatics]
     }
     
-    extension [Self <: IApplicationDataManagerStatics](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IApplicationDataManagerStatics] (val x: Self) extends AnyVal {
       
       inline def setCreateForPackageFamily(value: String => ApplicationData): Self = StObject.set(x, "createForPackageFamily", js.Any.fromFunction1(value))
     }

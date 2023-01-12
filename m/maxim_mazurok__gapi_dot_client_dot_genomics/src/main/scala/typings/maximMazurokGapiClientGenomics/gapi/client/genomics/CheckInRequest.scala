@@ -33,7 +33,8 @@ object CheckInRequest {
     __obj.asInstanceOf[CheckInRequest]
   }
   
-  extension [Self <: CheckInRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CheckInRequest] (val x: Self) extends AnyVal {
     
     inline def setDeadlineExpired(value: Any): Self = StObject.set(x, "deadlineExpired", value.asInstanceOf[js.Any])
     

@@ -48,7 +48,8 @@ object DescribeDBClustersMessage {
     __obj.asInstanceOf[DescribeDBClustersMessage]
   }
   
-  extension [Self <: DescribeDBClustersMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeDBClustersMessage] (val x: Self) extends AnyVal {
     
     inline def set$waiter(value: WaiterConfiguration): Self = StObject.set(x, "$waiter", value.asInstanceOf[js.Any])
     

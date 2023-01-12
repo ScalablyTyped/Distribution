@@ -23,7 +23,8 @@ object GetNetworkResourceCountsResponse {
     __obj.asInstanceOf[GetNetworkResourceCountsResponse]
   }
   
-  extension [Self <: GetNetworkResourceCountsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetNetworkResourceCountsResponse] (val x: Self) extends AnyVal {
     
     inline def setNetworkResourceCounts(value: NetworkResourceCountList): Self = StObject.set(x, "NetworkResourceCounts", value.asInstanceOf[js.Any])
     

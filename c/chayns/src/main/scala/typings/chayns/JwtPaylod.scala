@@ -45,7 +45,8 @@ object JwtPaylod {
     __obj.asInstanceOf[JwtPaylod]
   }
   
-  extension [Self <: JwtPaylod](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JwtPaylod] (val x: Self) extends AnyVal {
     
     inline def setFacebookUserID(value: String): Self = StObject.set(x, "FacebookUserID", value.asInstanceOf[js.Any])
     

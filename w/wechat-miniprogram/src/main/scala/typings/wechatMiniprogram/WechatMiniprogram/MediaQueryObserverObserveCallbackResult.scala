@@ -16,7 +16,8 @@ object MediaQueryObserverObserveCallbackResult {
     __obj.asInstanceOf[MediaQueryObserverObserveCallbackResult]
   }
   
-  extension [Self <: MediaQueryObserverObserveCallbackResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MediaQueryObserverObserveCallbackResult] (val x: Self) extends AnyVal {
     
     inline def setMatches(value: Boolean): Self = StObject.set(x, "matches", value.asInstanceOf[js.Any])
   }

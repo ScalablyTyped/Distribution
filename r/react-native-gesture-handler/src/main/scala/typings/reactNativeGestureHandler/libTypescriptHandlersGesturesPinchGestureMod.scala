@@ -28,7 +28,8 @@ object libTypescriptHandlersGesturesPinchGestureMod {
       __obj.asInstanceOf[PinchGestureChangeEventPayload]
     }
     
-    extension [Self <: PinchGestureChangeEventPayload](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PinchGestureChangeEventPayload] (val x: Self) extends AnyVal {
       
       inline def setScaleChange(value: Double): Self = StObject.set(x, "scaleChange", value.asInstanceOf[js.Any])
     }

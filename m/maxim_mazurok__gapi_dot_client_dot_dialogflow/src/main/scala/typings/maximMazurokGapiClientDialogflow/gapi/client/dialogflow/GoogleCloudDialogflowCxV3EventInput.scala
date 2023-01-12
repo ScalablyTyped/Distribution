@@ -16,7 +16,8 @@ object GoogleCloudDialogflowCxV3EventInput {
     __obj.asInstanceOf[GoogleCloudDialogflowCxV3EventInput]
   }
   
-  extension [Self <: GoogleCloudDialogflowCxV3EventInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDialogflowCxV3EventInput] (val x: Self) extends AnyVal {
     
     inline def setEvent(value: String): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     

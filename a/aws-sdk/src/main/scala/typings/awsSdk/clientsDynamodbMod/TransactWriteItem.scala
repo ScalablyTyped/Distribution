@@ -33,7 +33,8 @@ object TransactWriteItem {
     __obj.asInstanceOf[TransactWriteItem]
   }
   
-  extension [Self <: TransactWriteItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransactWriteItem] (val x: Self) extends AnyVal {
     
     inline def setConditionCheck(value: ConditionCheck): Self = StObject.set(x, "ConditionCheck", value.asInstanceOf[js.Any])
     

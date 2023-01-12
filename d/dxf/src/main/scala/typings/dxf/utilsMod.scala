@@ -24,7 +24,8 @@ object utilsMod {
       __obj.asInstanceOf[Box]
     }
     
-    extension [Self <: Box](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Box] (val x: Self) extends AnyVal {
       
       inline def setExpandByPoint(value: UtilVertex => Unit): Self = StObject.set(x, "expandByPoint", js.Any.fromFunction1(value))
       
@@ -47,7 +48,8 @@ object utilsMod {
       __obj.asInstanceOf[ParsedContent]
     }
     
-    extension [Self <: ParsedContent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParsedContent] (val x: Self) extends AnyVal {
       
       inline def setBox2(value: Box): Self = StObject.set(x, "box2", value.asInstanceOf[js.Any])
     }

@@ -18,7 +18,8 @@ object FindOpts {
     __obj.asInstanceOf[FindOpts]
   }
   
-  extension [Self <: FindOpts](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FindOpts] (val x: Self) extends AnyVal {
     
     inline def setRemote(value: Boolean): Self = StObject.set(x, "remote", value.asInstanceOf[js.Any])
     

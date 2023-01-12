@@ -18,7 +18,8 @@ object ConnectAttachmentOptions {
     __obj.asInstanceOf[ConnectAttachmentOptions]
   }
   
-  extension [Self <: ConnectAttachmentOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConnectAttachmentOptions] (val x: Self) extends AnyVal {
     
     inline def setProtocol(value: TunnelProtocol): Self = StObject.set(x, "Protocol", value.asInstanceOf[js.Any])
     

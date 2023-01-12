@@ -29,7 +29,8 @@ object ValidatorOptions {
     __obj.asInstanceOf[ValidatorOptions]
   }
   
-  extension [Self <: ValidatorOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ValidatorOptions] (val x: Self) extends AnyVal {
     
     inline def setErrorTemplate(value: String): Self = StObject.set(x, "errorTemplate", value.asInstanceOf[js.Any])
     

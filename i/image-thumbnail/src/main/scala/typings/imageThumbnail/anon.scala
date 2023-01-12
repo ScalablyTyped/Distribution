@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[Uri]
     }
     
-    extension [Self <: Uri](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Uri] (val x: Self) extends AnyVal {
       
       inline def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
     }
@@ -43,7 +44,8 @@ object anon {
       __obj.asInstanceOf[responseTypebase64Options]
     }
     
-    extension [Self <: responseTypebase64Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: responseTypebase64Options] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -79,7 +81,8 @@ object anon {
       __obj.asInstanceOf[responseTypebufferOptions]
     }
     
-    extension [Self <: responseTypebufferOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: responseTypebufferOptions] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       

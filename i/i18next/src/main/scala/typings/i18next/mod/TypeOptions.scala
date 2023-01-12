@@ -36,7 +36,8 @@ object TypeOptions {
     __obj.asInstanceOf[TypeOptions]
   }
   
-  extension [Self <: TypeOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeOptions] (val x: Self) extends AnyVal {
     
     inline def setAllowObjectInHTMLChildren(value: `false`): Self = StObject.set(x, "allowObjectInHTMLChildren", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object DeleteAgreementRequest {
     __obj.asInstanceOf[DeleteAgreementRequest]
   }
   
-  extension [Self <: DeleteAgreementRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteAgreementRequest] (val x: Self) extends AnyVal {
     
     inline def setAgreementId(value: AgreementId): Self = StObject.set(x, "AgreementId", value.asInstanceOf[js.Any])
     

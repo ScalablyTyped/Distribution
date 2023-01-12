@@ -96,7 +96,8 @@ object IgGridUpdatingColumnSetting {
     __obj.asInstanceOf[IgGridUpdatingColumnSetting]
   }
   
-  extension [Self <: IgGridUpdatingColumnSetting](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgGridUpdatingColumnSetting] (val x: Self) extends AnyVal {
     
     inline def setColumnKey(value: String): Self = StObject.set(x, "columnKey", value.asInstanceOf[js.Any])
     

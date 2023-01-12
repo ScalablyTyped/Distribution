@@ -521,7 +521,8 @@ object distLayersPoolingMod {
       __obj.asInstanceOf[GlobalPooling2DLayerArgs]
     }
     
-    extension [Self <: GlobalPooling2DLayerArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GlobalPooling2DLayerArgs] (val x: Self) extends AnyVal {
       
       inline def setDataFormat(value: DataFormat): Self = StObject.set(x, "dataFormat", value.asInstanceOf[js.Any])
       
@@ -555,7 +556,8 @@ object distLayersPoolingMod {
       __obj.asInstanceOf[Pooling1DLayerArgs]
     }
     
-    extension [Self <: Pooling1DLayerArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Pooling1DLayerArgs] (val x: Self) extends AnyVal {
       
       inline def setPadding(value: PaddingMode): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
       
@@ -611,7 +613,8 @@ object distLayersPoolingMod {
       __obj.asInstanceOf[Pooling2DLayerArgs]
     }
     
-    extension [Self <: Pooling2DLayerArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Pooling2DLayerArgs] (val x: Self) extends AnyVal {
       
       inline def setDataFormat(value: DataFormat): Self = StObject.set(x, "dataFormat", value.asInstanceOf[js.Any])
       
@@ -667,7 +670,8 @@ object distLayersPoolingMod {
       __obj.asInstanceOf[Pooling3DLayerArgs]
     }
     
-    extension [Self <: Pooling3DLayerArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Pooling3DLayerArgs] (val x: Self) extends AnyVal {
       
       inline def setDataFormat(value: DataFormat): Self = StObject.set(x, "dataFormat", value.asInstanceOf[js.Any])
       

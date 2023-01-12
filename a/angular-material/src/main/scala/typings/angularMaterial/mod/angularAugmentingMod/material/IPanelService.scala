@@ -51,7 +51,8 @@ object IPanelService {
     __obj.asInstanceOf[IPanelService]
   }
   
-  extension [Self <: IPanelService](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPanelService] (val x: Self) extends AnyVal {
     
     inline def setAbsPosition(value: BOTTOM): Self = StObject.set(x, "absPosition", value.asInstanceOf[js.Any])
     

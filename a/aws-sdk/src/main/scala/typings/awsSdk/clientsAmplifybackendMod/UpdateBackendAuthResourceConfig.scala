@@ -33,7 +33,8 @@ object UpdateBackendAuthResourceConfig {
     __obj.asInstanceOf[UpdateBackendAuthResourceConfig]
   }
   
-  extension [Self <: UpdateBackendAuthResourceConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateBackendAuthResourceConfig] (val x: Self) extends AnyVal {
     
     inline def setAuthResources(value: AuthResources): Self = StObject.set(x, "AuthResources", value.asInstanceOf[js.Any])
     

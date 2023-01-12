@@ -23,7 +23,8 @@ object IngestInferenceConfigClassification {
     __obj.asInstanceOf[IngestInferenceConfigClassification]
   }
   
-  extension [Self <: IngestInferenceConfigClassification](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IngestInferenceConfigClassification] (val x: Self) extends AnyVal {
     
     inline def setNum_top_classes(value: integer): Self = StObject.set(x, "num_top_classes", value.asInstanceOf[js.Any])
     

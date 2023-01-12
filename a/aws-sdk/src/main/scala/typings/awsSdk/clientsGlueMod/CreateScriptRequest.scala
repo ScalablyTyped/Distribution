@@ -28,7 +28,8 @@ object CreateScriptRequest {
     __obj.asInstanceOf[CreateScriptRequest]
   }
   
-  extension [Self <: CreateScriptRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateScriptRequest] (val x: Self) extends AnyVal {
     
     inline def setDagEdges(value: DagEdges): Self = StObject.set(x, "DagEdges", value.asInstanceOf[js.Any])
     

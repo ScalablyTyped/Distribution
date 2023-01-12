@@ -26,7 +26,8 @@ object CPUUsage {
     __obj.asInstanceOf[CPUUsage]
   }
   
-  extension [Self <: CPUUsage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CPUUsage] (val x: Self) extends AnyVal {
     
     inline def setPercpu_usage(value: js.Array[Double]): Self = StObject.set(x, "percpu_usage", value.asInstanceOf[js.Any])
     

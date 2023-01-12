@@ -105,7 +105,8 @@ object TestSession {
     __obj.asInstanceOf[TestSession]
   }
   
-  extension [Self <: TestSession](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TestSession] (val x: Self) extends AnyVal {
     
     inline def setArea(value: ShallowReference): Self = StObject.set(x, "area", value.asInstanceOf[js.Any])
     

@@ -43,7 +43,8 @@ object OnErrorEventUIParam {
     __obj.asInstanceOf[OnErrorEventUIParam]
   }
   
-  extension [Self <: OnErrorEventUIParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnErrorEventUIParam] (val x: Self) extends AnyVal {
     
     inline def setErrorCode(value: Double): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object StoredScript {
     __obj.asInstanceOf[StoredScript]
   }
   
-  extension [Self <: StoredScript](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StoredScript] (val x: Self) extends AnyVal {
     
     inline def setLang(value: ScriptLanguage): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
     

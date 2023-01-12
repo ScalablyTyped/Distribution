@@ -98,7 +98,8 @@ object SelectFieldProps {
     __obj.asInstanceOf[SelectFieldProps]
   }
   
-  extension [Self <: SelectFieldProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SelectFieldProps] (val x: Self) extends AnyVal {
     
     inline def setAutoWidth(value: Boolean): Self = StObject.set(x, "autoWidth", value.asInstanceOf[js.Any])
     

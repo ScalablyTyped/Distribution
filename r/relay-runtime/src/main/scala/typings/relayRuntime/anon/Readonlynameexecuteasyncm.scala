@@ -26,7 +26,8 @@ object Readonlynameexecuteasyncm {
     __obj.asInstanceOf[Readonlynameexecuteasyncm]
   }
   
-  extension [Self <: Readonlynameexecuteasyncm](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Readonlynameexecuteasyncm] (val x: Self) extends AnyVal {
     
     inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     

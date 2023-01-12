@@ -36,7 +36,8 @@ object OnKeyDown {
     __obj.asInstanceOf[OnKeyDown]
   }
   
-  extension [Self <: OnKeyDown](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnKeyDown] (val x: Self) extends AnyVal {
     
     inline def setOnBlur(value: FocusEvent[Element, Element] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
     

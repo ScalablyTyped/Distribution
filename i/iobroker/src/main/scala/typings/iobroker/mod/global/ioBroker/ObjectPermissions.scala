@@ -31,7 +31,8 @@ object ObjectPermissions {
     __obj.asInstanceOf[ObjectPermissions]
   }
   
-  extension [Self <: ObjectPermissions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ObjectPermissions] (val x: Self) extends AnyVal {
     
     inline def setFile(value: ObjectOperationPermissions): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
     

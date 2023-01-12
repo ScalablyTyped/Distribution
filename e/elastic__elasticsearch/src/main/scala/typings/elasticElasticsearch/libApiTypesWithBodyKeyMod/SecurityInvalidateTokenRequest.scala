@@ -19,7 +19,8 @@ object SecurityInvalidateTokenRequest {
     __obj.asInstanceOf[SecurityInvalidateTokenRequest]
   }
   
-  extension [Self <: SecurityInvalidateTokenRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SecurityInvalidateTokenRequest] (val x: Self) extends AnyVal {
     
     inline def setBody(value: Realmname): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

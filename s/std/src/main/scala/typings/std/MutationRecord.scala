@@ -51,7 +51,8 @@ object MutationRecord {
     __obj.asInstanceOf[MutationRecord]
   }
   
-  extension [Self <: MutationRecord](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MutationRecord] (val x: Self) extends AnyVal {
     
     inline def setAddedNodes(value: NodeList): Self = StObject.set(x, "addedNodes", value.asInstanceOf[js.Any])
     

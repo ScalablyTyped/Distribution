@@ -31,7 +31,8 @@ object ShortcutTags {
     __obj.asInstanceOf[ShortcutTags]
   }
   
-  extension [Self <: ShortcutTags](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShortcutTags] (val x: Self) extends AnyVal {
     
     inline def setAlbum(value: String): Self = StObject.set(x, "album", value.asInstanceOf[js.Any])
     

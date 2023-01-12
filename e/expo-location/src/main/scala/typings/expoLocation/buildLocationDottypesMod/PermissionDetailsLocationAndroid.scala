@@ -26,7 +26,8 @@ object PermissionDetailsLocationAndroid {
     __obj.asInstanceOf[PermissionDetailsLocationAndroid]
   }
   
-  extension [Self <: PermissionDetailsLocationAndroid](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PermissionDetailsLocationAndroid] (val x: Self) extends AnyVal {
     
     inline def setAccuracy(value: fine | coarse | none): Self = StObject.set(x, "accuracy", value.asInstanceOf[js.Any])
     

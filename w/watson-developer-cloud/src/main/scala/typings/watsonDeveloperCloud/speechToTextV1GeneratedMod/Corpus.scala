@@ -29,7 +29,8 @@ object Corpus {
     __obj.asInstanceOf[Corpus]
   }
   
-  extension [Self <: Corpus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Corpus] (val x: Self) extends AnyVal {
     
     inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     

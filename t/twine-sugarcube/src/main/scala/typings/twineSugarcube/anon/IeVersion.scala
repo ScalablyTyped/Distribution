@@ -36,7 +36,8 @@ object IeVersion {
     __obj.asInstanceOf[IeVersion]
   }
   
-  extension [Self <: IeVersion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IeVersion] (val x: Self) extends AnyVal {
     
     inline def setIeVersion(value: Double): Self = StObject.set(x, "ieVersion", value.asInstanceOf[js.Any])
     

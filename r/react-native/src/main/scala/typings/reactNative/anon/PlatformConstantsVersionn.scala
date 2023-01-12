@@ -53,7 +53,8 @@ object PlatformConstantsVersionn {
     __obj.asInstanceOf[PlatformConstantsVersionn]
   }
   
-  extension [Self <: PlatformConstantsVersionn](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlatformConstantsVersionn] (val x: Self) extends AnyVal {
     
     inline def setBrand(value: String): Self = StObject.set(x, "Brand", value.asInstanceOf[js.Any])
     

@@ -45,7 +45,8 @@ object libQpMod {
       __obj.asInstanceOf[EncoderOptions]
     }
     
-    extension [Self <: EncoderOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EncoderOptions] (val x: Self) extends AnyVal {
       
       inline def setLineLength(value: Double | `false`): Self = StObject.set(x, "lineLength", value.asInstanceOf[js.Any])
       

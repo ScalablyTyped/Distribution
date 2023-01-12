@@ -43,7 +43,8 @@ object ImageWMSOptions {
     __obj.asInstanceOf[ImageWMSOptions]
   }
   
-  extension [Self <: ImageWMSOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImageWMSOptions] (val x: Self) extends AnyVal {
     
     inline def setAttributions(value: AttributionLike): Self = StObject.set(x, "attributions", value.asInstanceOf[js.Any])
     

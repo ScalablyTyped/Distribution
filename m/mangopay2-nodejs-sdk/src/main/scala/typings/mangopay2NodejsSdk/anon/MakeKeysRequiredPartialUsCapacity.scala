@@ -69,7 +69,8 @@ object MakeKeysRequiredPartialUsCapacity {
     __obj.asInstanceOf[MakeKeysRequiredPartialUsCapacity]
   }
   
-  extension [Self <: MakeKeysRequiredPartialUsCapacity](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MakeKeysRequiredPartialUsCapacity] (val x: Self) extends AnyVal {
     
     inline def setAddress(value: String | AddressData): Self = StObject.set(x, "Address", value.asInstanceOf[js.Any])
     

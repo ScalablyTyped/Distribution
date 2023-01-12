@@ -74,7 +74,8 @@ object buildReportersMod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setLogFile(value: String): Self = StObject.set(x, "logFile", value.asInstanceOf[js.Any])
       
@@ -115,7 +116,8 @@ object buildReportersMod {
       __obj.asInstanceOf[OutputFileFormatOptions]
     }
     
-    extension [Self <: OutputFileFormatOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OutputFileFormatOptions] (val x: Self) extends AnyVal {
       
       inline def setCapabilities(value: RemoteCapability): Self = StObject.set(x, "capabilities", value.asInstanceOf[js.Any])
       

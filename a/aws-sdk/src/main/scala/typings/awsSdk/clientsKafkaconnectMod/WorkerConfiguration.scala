@@ -23,7 +23,8 @@ object WorkerConfiguration {
     __obj.asInstanceOf[WorkerConfiguration]
   }
   
-  extension [Self <: WorkerConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkerConfiguration] (val x: Self) extends AnyVal {
     
     inline def setRevision(value: longMin1): Self = StObject.set(x, "revision", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object ErrorNext {
     __obj.asInstanceOf[ErrorNext[T]]
   }
   
-  extension [Self <: ErrorNext[?], T](x: Self & ErrorNext[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ErrorNext[?], T] (val x: Self & ErrorNext[T]) extends AnyVal {
     
     inline def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
     

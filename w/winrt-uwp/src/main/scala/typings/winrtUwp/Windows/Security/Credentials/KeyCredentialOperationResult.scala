@@ -21,7 +21,8 @@ object KeyCredentialOperationResult {
     __obj.asInstanceOf[KeyCredentialOperationResult]
   }
   
-  extension [Self <: KeyCredentialOperationResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KeyCredentialOperationResult] (val x: Self) extends AnyVal {
     
     inline def setResult(value: IBuffer): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     

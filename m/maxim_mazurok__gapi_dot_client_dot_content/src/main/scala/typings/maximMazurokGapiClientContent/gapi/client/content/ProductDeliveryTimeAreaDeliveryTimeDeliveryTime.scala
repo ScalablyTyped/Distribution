@@ -25,7 +25,8 @@ object ProductDeliveryTimeAreaDeliveryTimeDeliveryTime {
     __obj.asInstanceOf[ProductDeliveryTimeAreaDeliveryTimeDeliveryTime]
   }
   
-  extension [Self <: ProductDeliveryTimeAreaDeliveryTimeDeliveryTime](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProductDeliveryTimeAreaDeliveryTimeDeliveryTime] (val x: Self) extends AnyVal {
     
     inline def setMaxHandlingTimeDays(value: Double): Self = StObject.set(x, "maxHandlingTimeDays", value.asInstanceOf[js.Any])
     

@@ -36,7 +36,8 @@ object mod {
       __obj.asInstanceOf[DeviceOptions]
     }
     
-    extension [Self <: DeviceOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeviceOptions] (val x: Self) extends AnyVal {
       
       inline def setDirection(value: Direction): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       
@@ -125,7 +126,8 @@ object mod {
       __obj.asInstanceOf[InstanceOptions]
     }
     
-    extension [Self <: InstanceOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InstanceOptions] (val x: Self) extends AnyVal {
       
       inline def setClass(value: String): Self = StObject.set(x, "class", value.asInstanceOf[js.Any])
       
@@ -286,7 +288,8 @@ object mod {
       __obj.asInstanceOf[OnScrollEvent]
     }
     
-    extension [Self <: OnScrollEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OnScrollEvent] (val x: Self) extends AnyVal {
       
       inline def setCurrentElements(value: Record[String, ScrollElement]): Self = StObject.set(x, "currentElements", value.asInstanceOf[js.Any])
       
@@ -313,7 +316,8 @@ object mod {
       __obj.asInstanceOf[Position]
     }
     
-    extension [Self <: Position](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Position] (val x: Self) extends AnyVal {
       
       inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
@@ -388,7 +392,8 @@ object mod {
       __obj.asInstanceOf[ScrollElement]
     }
     
-    extension [Self <: ScrollElement](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScrollElement] (val x: Self) extends AnyVal {
       
       inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       
@@ -459,7 +464,8 @@ object mod {
       __obj.asInstanceOf[ScrollToOptions]
     }
     
-    extension [Self <: ScrollToOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScrollToOptions] (val x: Self) extends AnyVal {
       
       inline def setCallback(value: () => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction0(value))
       

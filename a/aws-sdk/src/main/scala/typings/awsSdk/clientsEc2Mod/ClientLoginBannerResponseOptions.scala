@@ -23,7 +23,8 @@ object ClientLoginBannerResponseOptions {
     __obj.asInstanceOf[ClientLoginBannerResponseOptions]
   }
   
-  extension [Self <: ClientLoginBannerResponseOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClientLoginBannerResponseOptions] (val x: Self) extends AnyVal {
     
     inline def setBannerText(value: String): Self = StObject.set(x, "BannerText", value.asInstanceOf[js.Any])
     

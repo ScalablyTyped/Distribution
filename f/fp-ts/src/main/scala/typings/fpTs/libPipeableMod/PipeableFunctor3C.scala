@@ -23,7 +23,8 @@ object PipeableFunctor3C {
     __obj.asInstanceOf[PipeableFunctor3C[F, E]]
   }
   
-  extension [Self <: PipeableFunctor3C[?, ?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */, E](x: Self & (PipeableFunctor3C[F, E])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PipeableFunctor3C[?, ?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */, E] (val x: Self & (PipeableFunctor3C[F, E])) extends AnyVal {
     
     inline def setMap(
       value: js.Function1[Any, Any] => js.Function1[

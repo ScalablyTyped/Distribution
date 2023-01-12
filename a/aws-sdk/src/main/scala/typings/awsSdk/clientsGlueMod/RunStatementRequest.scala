@@ -28,7 +28,8 @@ object RunStatementRequest {
     __obj.asInstanceOf[RunStatementRequest]
   }
   
-  extension [Self <: RunStatementRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RunStatementRequest] (val x: Self) extends AnyVal {
     
     inline def setCode(value: OrchestrationStatementCodeString): Self = StObject.set(x, "Code", value.asInstanceOf[js.Any])
     

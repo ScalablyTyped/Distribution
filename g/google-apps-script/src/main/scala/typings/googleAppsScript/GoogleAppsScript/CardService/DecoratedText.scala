@@ -68,7 +68,8 @@ object DecoratedText {
     __obj.asInstanceOf[DecoratedText]
   }
   
-  extension [Self <: DecoratedText](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DecoratedText] (val x: Self) extends AnyVal {
     
     inline def setSetAuthorizationAction(value: AuthorizationAction => DecoratedText): Self = StObject.set(x, "setAuthorizationAction", js.Any.fromFunction1(value))
     

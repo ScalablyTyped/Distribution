@@ -209,7 +209,8 @@ object FileResource {
     __obj.asInstanceOf[FileResource]
   }
   
-  extension [Self <: FileResource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FileResource] (val x: Self) extends AnyVal {
     
     inline def setAlternateLink(value: String): Self = StObject.set(x, "alternateLink", value.asInstanceOf[js.Any])
     

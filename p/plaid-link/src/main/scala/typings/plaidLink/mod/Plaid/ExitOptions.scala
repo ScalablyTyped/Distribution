@@ -15,7 +15,8 @@ object ExitOptions {
     __obj.asInstanceOf[ExitOptions]
   }
   
-  extension [Self <: ExitOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExitOptions] (val x: Self) extends AnyVal {
     
     inline def setForce(value: Boolean): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
   }

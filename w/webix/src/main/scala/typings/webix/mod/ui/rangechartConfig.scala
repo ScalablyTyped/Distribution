@@ -164,7 +164,8 @@ object rangechartConfig {
     __obj.asInstanceOf[rangechartConfig]
   }
   
-  extension [Self <: rangechartConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: rangechartConfig] (val x: Self) extends AnyVal {
     
     inline def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
     

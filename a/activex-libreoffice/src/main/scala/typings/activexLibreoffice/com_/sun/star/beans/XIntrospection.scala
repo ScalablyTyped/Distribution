@@ -60,7 +60,8 @@ object XIntrospection {
     __obj.asInstanceOf[XIntrospection]
   }
   
-  extension [Self <: XIntrospection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XIntrospection] (val x: Self) extends AnyVal {
     
     inline def setInspect(value: Any => XIntrospectionAccess): Self = StObject.set(x, "inspect", js.Any.fromFunction1(value))
   }

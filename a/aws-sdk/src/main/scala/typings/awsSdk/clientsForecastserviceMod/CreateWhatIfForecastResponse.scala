@@ -18,7 +18,8 @@ object CreateWhatIfForecastResponse {
     __obj.asInstanceOf[CreateWhatIfForecastResponse]
   }
   
-  extension [Self <: CreateWhatIfForecastResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateWhatIfForecastResponse] (val x: Self) extends AnyVal {
     
     inline def setWhatIfForecastArn(value: LongArn): Self = StObject.set(x, "WhatIfForecastArn", value.asInstanceOf[js.Any])
     

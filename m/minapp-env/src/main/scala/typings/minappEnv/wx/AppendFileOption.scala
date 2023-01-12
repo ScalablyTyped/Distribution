@@ -50,7 +50,8 @@ object AppendFileOption {
     __obj.asInstanceOf[AppendFileOption]
   }
   
-  extension [Self <: AppendFileOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppendFileOption] (val x: Self) extends AnyVal {
     
     inline def setComplete(value: /* res */ GeneralCallbackResult => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
     

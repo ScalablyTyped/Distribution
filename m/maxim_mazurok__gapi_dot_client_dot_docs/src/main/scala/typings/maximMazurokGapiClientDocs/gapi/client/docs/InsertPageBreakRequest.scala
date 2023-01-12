@@ -26,7 +26,8 @@ object InsertPageBreakRequest {
     __obj.asInstanceOf[InsertPageBreakRequest]
   }
   
-  extension [Self <: InsertPageBreakRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InsertPageBreakRequest] (val x: Self) extends AnyVal {
     
     inline def setEndOfSegmentLocation(value: EndOfSegmentLocation): Self = StObject.set(x, "endOfSegmentLocation", value.asInstanceOf[js.Any])
     

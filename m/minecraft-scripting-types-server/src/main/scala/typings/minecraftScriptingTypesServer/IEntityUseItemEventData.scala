@@ -33,7 +33,8 @@ object IEntityUseItemEventData {
     __obj.asInstanceOf[IEntityUseItemEventData]
   }
   
-  extension [Self <: IEntityUseItemEventData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IEntityUseItemEventData] (val x: Self) extends AnyVal {
     
     inline def setEntity(value: IEntity): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
     

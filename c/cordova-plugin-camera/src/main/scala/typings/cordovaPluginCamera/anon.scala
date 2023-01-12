@@ -21,7 +21,8 @@ object anon {
       __obj.asInstanceOf[ALLMEDIA]
     }
     
-    extension [Self <: ALLMEDIA](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ALLMEDIA] (val x: Self) extends AnyVal {
       
       inline def setALLMEDIA(value: Double): Self = StObject.set(x, "ALLMEDIA", value.asInstanceOf[js.Any])
       
@@ -50,7 +51,8 @@ object anon {
       __obj.asInstanceOf[ARROWANY]
     }
     
-    extension [Self <: ARROWANY](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ARROWANY] (val x: Self) extends AnyVal {
       
       inline def setARROW_ANY(value: Double): Self = StObject.set(x, "ARROW_ANY", value.asInstanceOf[js.Any])
       
@@ -77,7 +79,8 @@ object anon {
       __obj.asInstanceOf[BACK]
     }
     
-    extension [Self <: BACK](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BACK] (val x: Self) extends AnyVal {
       
       inline def setBACK(value: Double): Self = StObject.set(x, "BACK", value.asInstanceOf[js.Any])
       
@@ -100,7 +103,8 @@ object anon {
       __obj.asInstanceOf[CAMERA]
     }
     
-    extension [Self <: CAMERA](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CAMERA] (val x: Self) extends AnyVal {
       
       inline def setCAMERA(value: Double): Self = StObject.set(x, "CAMERA", value.asInstanceOf[js.Any])
       
@@ -123,7 +127,8 @@ object anon {
       __obj.asInstanceOf[DATAURL]
     }
     
-    extension [Self <: DATAURL](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DATAURL] (val x: Self) extends AnyVal {
       
       inline def setDATA_URL(value: Double): Self = StObject.set(x, "DATA_URL", value.asInstanceOf[js.Any])
       
@@ -144,7 +149,8 @@ object anon {
       __obj.asInstanceOf[JPEG]
     }
     
-    extension [Self <: JPEG](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JPEG] (val x: Self) extends AnyVal {
       
       inline def setJPEG(value: Double): Self = StObject.set(x, "JPEG", value.asInstanceOf[js.Any])
       

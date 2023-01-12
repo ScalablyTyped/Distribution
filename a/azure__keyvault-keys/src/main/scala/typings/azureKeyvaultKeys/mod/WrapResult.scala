@@ -28,7 +28,8 @@ object WrapResult {
     __obj.asInstanceOf[WrapResult]
   }
   
-  extension [Self <: WrapResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WrapResult] (val x: Self) extends AnyVal {
     
     inline def setAlgorithm(value: KeyWrapAlgorithm): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
     

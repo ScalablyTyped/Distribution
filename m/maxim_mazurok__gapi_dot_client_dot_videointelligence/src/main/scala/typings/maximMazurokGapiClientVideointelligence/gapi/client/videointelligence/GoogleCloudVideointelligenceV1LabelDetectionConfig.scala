@@ -39,7 +39,8 @@ object GoogleCloudVideointelligenceV1LabelDetectionConfig {
     __obj.asInstanceOf[GoogleCloudVideointelligenceV1LabelDetectionConfig]
   }
   
-  extension [Self <: GoogleCloudVideointelligenceV1LabelDetectionConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudVideointelligenceV1LabelDetectionConfig] (val x: Self) extends AnyVal {
     
     inline def setFrameConfidenceThreshold(value: Double): Self = StObject.set(x, "frameConfidenceThreshold", value.asInstanceOf[js.Any])
     

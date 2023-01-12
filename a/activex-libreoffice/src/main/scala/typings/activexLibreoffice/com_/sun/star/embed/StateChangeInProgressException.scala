@@ -25,7 +25,8 @@ object StateChangeInProgressException {
     __obj.asInstanceOf[StateChangeInProgressException]
   }
   
-  extension [Self <: StateChangeInProgressException](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StateChangeInProgressException] (val x: Self) extends AnyVal {
     
     inline def setTargetState(value: Double): Self = StObject.set(x, "TargetState", value.asInstanceOf[js.Any])
   }

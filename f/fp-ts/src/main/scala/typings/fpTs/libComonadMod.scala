@@ -36,7 +36,8 @@ object libComonadMod {
       __obj.asInstanceOf[Comonad[W]]
     }
     
-    extension [Self <: Comonad[?], W](x: Self & Comonad[W]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Comonad[?], W] (val x: Self & Comonad[W]) extends AnyVal {
       
       inline def setExtract(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<W, A> */ Any => Any
@@ -67,7 +68,8 @@ object libComonadMod {
       __obj.asInstanceOf[Comonad1[W]]
     }
     
-    extension [Self <: Comonad1[?], W /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ Any */](x: Self & Comonad1[W]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Comonad1[?], W /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ Any */] (val x: Self & Comonad1[W]) extends AnyVal {
       
       inline def setExtract(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<W, A> */ Any => Any
@@ -98,7 +100,8 @@ object libComonadMod {
       __obj.asInstanceOf[Comonad2[W]]
     }
     
-    extension [Self <: Comonad2[?], W /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */](x: Self & Comonad2[W]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Comonad2[?], W /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */] (val x: Self & Comonad2[W]) extends AnyVal {
       
       inline def setExtract(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<W, E, A> */ Any => Any
@@ -130,7 +133,8 @@ object libComonadMod {
       __obj.asInstanceOf[Comonad2C[W, E]]
     }
     
-    extension [Self <: Comonad2C[?, ?], W /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */, E](x: Self & (Comonad2C[W, E])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Comonad2C[?, ?], W /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */, E] (val x: Self & (Comonad2C[W, E])) extends AnyVal {
       
       inline def setExtract(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<W, E, A> */ Any => Any
@@ -161,7 +165,8 @@ object libComonadMod {
       __obj.asInstanceOf[Comonad3[W]]
     }
     
-    extension [Self <: Comonad3[?], W /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */](x: Self & Comonad3[W]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Comonad3[?], W /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */] (val x: Self & Comonad3[W]) extends AnyVal {
       
       inline def setExtract(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<W, R, E, A> */ Any => Any
@@ -193,7 +198,8 @@ object libComonadMod {
       __obj.asInstanceOf[Comonad3C[W, E]]
     }
     
-    extension [Self <: Comonad3C[?, ?], W /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */, E](x: Self & (Comonad3C[W, E])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Comonad3C[?, ?], W /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */, E] (val x: Self & (Comonad3C[W, E])) extends AnyVal {
       
       inline def setExtract(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<W, R, E, A> */ Any => Any
@@ -224,7 +230,8 @@ object libComonadMod {
       __obj.asInstanceOf[Comonad4[W]]
     }
     
-    extension [Self <: Comonad4[?], W /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS4 */ Any */](x: Self & Comonad4[W]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Comonad4[?], W /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS4 */ Any */] (val x: Self & Comonad4[W]) extends AnyVal {
       
       inline def setExtract(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind4<W, S, R, E, A> */ Any => Any

@@ -18,7 +18,8 @@ object CreateInsightResponse {
     __obj.asInstanceOf[CreateInsightResponse]
   }
   
-  extension [Self <: CreateInsightResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateInsightResponse] (val x: Self) extends AnyVal {
     
     inline def setInsightArn(value: NonEmptyString): Self = StObject.set(x, "InsightArn", value.asInstanceOf[js.Any])
   }

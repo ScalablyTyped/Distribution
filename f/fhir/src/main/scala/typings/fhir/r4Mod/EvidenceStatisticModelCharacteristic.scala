@@ -35,7 +35,8 @@ object EvidenceStatisticModelCharacteristic {
     __obj.asInstanceOf[EvidenceStatisticModelCharacteristic]
   }
   
-  extension [Self <: EvidenceStatisticModelCharacteristic](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EvidenceStatisticModelCharacteristic] (val x: Self) extends AnyVal {
     
     inline def setAttributeEstimate(value: js.Array[EvidenceStatisticAttributeEstimate]): Self = StObject.set(x, "attributeEstimate", value.asInstanceOf[js.Any])
     

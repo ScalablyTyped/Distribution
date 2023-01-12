@@ -21,7 +21,8 @@ object ClassKey {
     __obj.asInstanceOf[ClassKey[P, D]]
   }
   
-  extension [Self <: ClassKey[?, ?], P, D /* <: ElementType[Any] */](x: Self & (ClassKey[P, D])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClassKey[?, ?], P, D /* <: ElementType[Any] */] (val x: Self & (ClassKey[P, D])) extends AnyVal {
     
     inline def setClassKey(value: ToggleButtonClassKey): Self = StObject.set(x, "classKey", value.asInstanceOf[js.Any])
     

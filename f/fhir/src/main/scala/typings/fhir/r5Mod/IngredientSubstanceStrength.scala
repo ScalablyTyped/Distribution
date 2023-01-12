@@ -91,7 +91,8 @@ object IngredientSubstanceStrength {
     __obj.asInstanceOf[IngredientSubstanceStrength]
   }
   
-  extension [Self <: IngredientSubstanceStrength](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IngredientSubstanceStrength] (val x: Self) extends AnyVal {
     
     inline def setBasis(value: CodeableConcept): Self = StObject.set(x, "basis", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object DropTargetDelegate {
     __obj.asInstanceOf[DropTargetDelegate]
   }
   
-  extension [Self <: DropTargetDelegate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DropTargetDelegate] (val x: Self) extends AnyVal {
     
     inline def setGetDropTargetFromPoint(value: (Double, Double, js.Function1[/* target */ DropTarget, Boolean]) => DropTarget | Null): Self = StObject.set(x, "getDropTargetFromPoint", js.Any.fromFunction3(value))
   }

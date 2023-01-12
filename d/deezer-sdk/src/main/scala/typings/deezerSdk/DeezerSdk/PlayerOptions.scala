@@ -106,7 +106,8 @@ object PlayerOptions {
     __obj.asInstanceOf[PlayerOptions]
   }
   
-  extension [Self <: PlayerOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlayerOptions] (val x: Self) extends AnyVal {
     
     inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

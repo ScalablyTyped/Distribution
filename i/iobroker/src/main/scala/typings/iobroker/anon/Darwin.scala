@@ -22,7 +22,8 @@ object Darwin {
     __obj.asInstanceOf[Darwin]
   }
   
-  extension [Self <: Darwin](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Darwin] (val x: Self) extends AnyVal {
     
     inline def setDarwin(value: js.Array[String]): Self = StObject.set(x, "darwin", value.asInstanceOf[js.Any])
     

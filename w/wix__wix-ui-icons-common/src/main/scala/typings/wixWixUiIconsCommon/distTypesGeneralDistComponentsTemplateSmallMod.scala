@@ -27,7 +27,8 @@ object distTypesGeneralDistComponentsTemplateSmallMod extends Shortcut {
       __obj.asInstanceOf[TemplateSmallProps]
     }
     
-    extension [Self <: TemplateSmallProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TemplateSmallProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

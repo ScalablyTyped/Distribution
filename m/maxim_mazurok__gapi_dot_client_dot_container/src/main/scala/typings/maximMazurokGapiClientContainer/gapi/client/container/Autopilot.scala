@@ -16,7 +16,8 @@ object Autopilot {
     __obj.asInstanceOf[Autopilot]
   }
   
-  extension [Self <: Autopilot](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Autopilot] (val x: Self) extends AnyVal {
     
     inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     

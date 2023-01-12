@@ -23,7 +23,8 @@ object SigningPlatformOverrides {
     __obj.asInstanceOf[SigningPlatformOverrides]
   }
   
-  extension [Self <: SigningPlatformOverrides](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SigningPlatformOverrides] (val x: Self) extends AnyVal {
     
     inline def setSigningConfiguration(value: SigningConfigurationOverrides): Self = StObject.set(x, "signingConfiguration", value.asInstanceOf[js.Any])
     

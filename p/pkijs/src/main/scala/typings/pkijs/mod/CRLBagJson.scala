@@ -19,7 +19,8 @@ object CRLBagJson {
     __obj.asInstanceOf[CRLBagJson]
   }
   
-  extension [Self <: CRLBagJson](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CRLBagJson] (val x: Self) extends AnyVal {
     
     inline def setCrlId(value: String): Self = StObject.set(x, "crlId", value.asInstanceOf[js.Any])
     

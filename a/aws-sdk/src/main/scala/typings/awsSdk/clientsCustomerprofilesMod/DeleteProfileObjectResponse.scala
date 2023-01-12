@@ -18,7 +18,8 @@ object DeleteProfileObjectResponse {
     __obj.asInstanceOf[DeleteProfileObjectResponse]
   }
   
-  extension [Self <: DeleteProfileObjectResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteProfileObjectResponse] (val x: Self) extends AnyVal {
     
     inline def setMessage(value: message): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
     

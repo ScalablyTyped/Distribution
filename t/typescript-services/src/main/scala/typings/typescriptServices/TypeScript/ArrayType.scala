@@ -42,7 +42,8 @@ object ArrayType {
     __obj.asInstanceOf[ArrayType]
   }
   
-  extension [Self <: ArrayType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ArrayType] (val x: Self) extends AnyVal {
     
     inline def setStructuralEquals(value: (ArrayType, Boolean) => Boolean): Self = StObject.set(x, "structuralEquals", js.Any.fromFunction2(value))
     

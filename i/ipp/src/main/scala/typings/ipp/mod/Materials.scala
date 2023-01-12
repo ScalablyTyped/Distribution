@@ -45,7 +45,8 @@ object Materials {
     __obj.asInstanceOf[Materials]
   }
   
-  extension [Self <: Materials](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Materials] (val x: Self) extends AnyVal {
     
     inline def `setMaterial-amount`(value: Double): Self = StObject.set(x, "material-amount", value.asInstanceOf[js.Any])
     

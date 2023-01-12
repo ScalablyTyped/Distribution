@@ -48,7 +48,8 @@ object LogEvent {
     __obj.asInstanceOf[LogEvent]
   }
   
-  extension [Self <: LogEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LogEvent] (val x: Self) extends AnyVal {
     
     inline def setBindings(value: js.Array[Bindings]): Self = StObject.set(x, "bindings", value.asInstanceOf[js.Any])
     

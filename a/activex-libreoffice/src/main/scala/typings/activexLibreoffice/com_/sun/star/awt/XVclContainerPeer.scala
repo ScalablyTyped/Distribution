@@ -38,7 +38,8 @@ object XVclContainerPeer {
     __obj.asInstanceOf[XVclContainerPeer]
   }
   
-  extension [Self <: XVclContainerPeer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XVclContainerPeer] (val x: Self) extends AnyVal {
     
     inline def setEnableDialogControl(value: Boolean => Unit): Self = StObject.set(x, "enableDialogControl", js.Any.fromFunction1(value))
     

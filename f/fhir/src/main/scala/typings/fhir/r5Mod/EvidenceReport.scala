@@ -127,7 +127,8 @@ object EvidenceReport {
     __obj.asInstanceOf[EvidenceReport]
   }
   
-  extension [Self <: EvidenceReport](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EvidenceReport] (val x: Self) extends AnyVal {
     
     inline def setAuthor(value: js.Array[ContactDetail]): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
     

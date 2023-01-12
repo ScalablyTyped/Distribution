@@ -18,7 +18,8 @@ object Bitlocker {
     __obj.asInstanceOf[Bitlocker]
   }
   
-  extension [Self <: Bitlocker](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Bitlocker] (val x: Self) extends AnyVal {
     
     inline def setRecoveryKeys(value: NullableOption[js.Array[BitlockerRecoveryKey]]): Self = StObject.set(x, "recoveryKeys", value.asInstanceOf[js.Any])
     

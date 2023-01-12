@@ -21,7 +21,8 @@ object anon {
       __obj.asInstanceOf[PartialRecognizeOptions]
     }
     
-    extension [Self <: PartialRecognizeOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialRecognizeOptions] (val x: Self) extends AnyVal {
       
       inline def setRectangle(value: Rectangle): Self = StObject.set(x, "rectangle", value.asInstanceOf[js.Any])
       
@@ -59,7 +60,8 @@ object anon {
       __obj.asInstanceOf[PartialWorkerOptions]
     }
     
-    extension [Self <: PartialWorkerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialWorkerOptions] (val x: Self) extends AnyVal {
       
       inline def setCacheMethod(value: String): Self = StObject.set(x, "cacheMethod", value.asInstanceOf[js.Any])
       
@@ -133,7 +135,8 @@ object anon {
       __obj.asInstanceOf[PartialWorkerParams]
     }
     
-    extension [Self <: PartialWorkerParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialWorkerParams] (val x: Self) extends AnyVal {
       
       inline def setPreserve_interword_spaces(value: String): Self = StObject.set(x, "preserve_interword_spaces", value.asInstanceOf[js.Any])
       

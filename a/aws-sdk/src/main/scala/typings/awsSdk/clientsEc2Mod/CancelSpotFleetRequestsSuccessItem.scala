@@ -28,7 +28,8 @@ object CancelSpotFleetRequestsSuccessItem {
     __obj.asInstanceOf[CancelSpotFleetRequestsSuccessItem]
   }
   
-  extension [Self <: CancelSpotFleetRequestsSuccessItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CancelSpotFleetRequestsSuccessItem] (val x: Self) extends AnyVal {
     
     inline def setCurrentSpotFleetRequestState(value: BatchState): Self = StObject.set(x, "CurrentSpotFleetRequestState", value.asInstanceOf[js.Any])
     

@@ -137,7 +137,8 @@ object createjs {
       __obj.asInstanceOf[TimelineProps]
     }
     
-    extension [Self <: TimelineProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TimelineProps] (val x: Self) extends AnyVal {
       
       inline def setBounce(value: Boolean): Self = StObject.set(x, "bounce", value.asInstanceOf[js.Any])
       
@@ -249,7 +250,8 @@ object createjs {
       __obj.asInstanceOf[TweenAction]
     }
     
-    extension [Self <: TweenAction](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TweenAction] (val x: Self) extends AnyVal {
       
       inline def setD(value: Double): Self = StObject.set(x, "d", value.asInstanceOf[js.Any])
       
@@ -304,7 +306,8 @@ object createjs {
       __obj.asInstanceOf[TweenProps]
     }
     
-    extension [Self <: TweenProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TweenProps] (val x: Self) extends AnyVal {
       
       inline def setBounce(value: Boolean): Self = StObject.set(x, "bounce", value.asInstanceOf[js.Any])
       
@@ -390,7 +393,8 @@ object createjs {
       __obj.asInstanceOf[TweenStep]
     }
     
-    extension [Self <: TweenStep](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TweenStep] (val x: Self) extends AnyVal {
       
       inline def setD(value: Double): Self = StObject.set(x, "d", value.asInstanceOf[js.Any])
       

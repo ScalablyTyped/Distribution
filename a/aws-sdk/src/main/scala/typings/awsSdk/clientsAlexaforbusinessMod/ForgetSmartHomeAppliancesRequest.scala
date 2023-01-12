@@ -18,7 +18,8 @@ object ForgetSmartHomeAppliancesRequest {
     __obj.asInstanceOf[ForgetSmartHomeAppliancesRequest]
   }
   
-  extension [Self <: ForgetSmartHomeAppliancesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ForgetSmartHomeAppliancesRequest] (val x: Self) extends AnyVal {
     
     inline def setRoomArn(value: Arn): Self = StObject.set(x, "RoomArn", value.asInstanceOf[js.Any])
   }

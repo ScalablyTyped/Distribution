@@ -616,7 +616,8 @@ object mod {
       __obj.asInstanceOf[FollowOptions[Options]]
     }
     
-    extension [Self <: FollowOptions[?], Options](x: Self & FollowOptions[Options]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FollowOptions[?], Options] (val x: Self & FollowOptions[Options]) extends AnyVal {
       
       inline def setAgents(value: Http): Self = StObject.set(x, "agents", value.asInstanceOf[js.Any])
       
@@ -659,7 +660,8 @@ object mod {
       __obj.asInstanceOf[FollowResponse]
     }
     
-    extension [Self <: FollowResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FollowResponse] (val x: Self) extends AnyVal {
       
       inline def setRedirects(value: js.Array[Redirect]): Self = StObject.set(x, "redirects", value.asInstanceOf[js.Any])
       
@@ -686,7 +688,8 @@ object mod {
       __obj.asInstanceOf[Redirect]
     }
     
-    extension [Self <: Redirect](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Redirect] (val x: Self) extends AnyVal {
       
       inline def setHeaders(value: IncomingHttpHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
@@ -875,7 +878,8 @@ object mod {
       __obj.asInstanceOf[ResponseDetails]
     }
     
-    extension [Self <: ResponseDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResponseDetails] (val x: Self) extends AnyVal {
       
       inline def setHeaders(value: IncomingHttpHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     }
@@ -913,7 +917,8 @@ object mod {
       __obj.asInstanceOf[WrappableRequest]
     }
     
-    extension [Self <: WrappableRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WrappableRequest] (val x: Self) extends AnyVal {
       
       inline def setAbort(value: /* repeated */ Any => Any): Self = StObject.set(x, "abort", js.Any.fromFunction1(value))
       
@@ -960,7 +965,8 @@ object mod {
       __obj.asInstanceOf[WrappableResponse]
     }
     
-    extension [Self <: WrappableResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WrappableResponse] (val x: Self) extends AnyVal {
       
       inline def setDestroy(value: () => Any): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
       

@@ -17,7 +17,8 @@ object MeasureObject {
     __obj.asInstanceOf[MeasureObject]
   }
   
-  extension [Self <: MeasureObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MeasureObject] (val x: Self) extends AnyVal {
     
     inline def setAggregation(value: String): Self = StObject.set(x, "aggregation", value.asInstanceOf[js.Any])
     

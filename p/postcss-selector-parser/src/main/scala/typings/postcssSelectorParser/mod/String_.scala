@@ -36,7 +36,8 @@ object String_ {
     __obj.asInstanceOf[String_]
   }
   
-  extension [Self <: String_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: String_] (val x: Self) extends AnyVal {
     
     inline def setType(value: typings.postcssSelectorParser.postcssSelectorParserStrings.string): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

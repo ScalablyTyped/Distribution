@@ -53,7 +53,8 @@ object IdentityNotificationAttributes {
     __obj.asInstanceOf[IdentityNotificationAttributes]
   }
   
-  extension [Self <: IdentityNotificationAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IdentityNotificationAttributes] (val x: Self) extends AnyVal {
     
     inline def setBounceTopic(value: NotificationTopic): Self = StObject.set(x, "BounceTopic", value.asInstanceOf[js.Any])
     

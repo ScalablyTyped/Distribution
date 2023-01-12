@@ -150,7 +150,8 @@ object colorpickerColorpickerMod {
       __obj.asInstanceOf[ColorPickerChangeParams]
     }
     
-    extension [Self <: ColorPickerChangeParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColorPickerChangeParams] (val x: Self) extends AnyVal {
       
       inline def setPreventDefault(value: () => Unit): Self = StObject.set(x, "preventDefault", js.Any.fromFunction0(value))
       
@@ -179,7 +180,8 @@ object colorpickerColorpickerMod {
       __obj.asInstanceOf[ColorPickerChangeTargetOptions]
     }
     
-    extension [Self <: ColorPickerChangeTargetOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColorPickerChangeTargetOptions] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -223,7 +225,8 @@ object colorpickerColorpickerMod {
       __obj.asInstanceOf[ColorPickerHSBType]
     }
     
-    extension [Self <: ColorPickerHSBType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColorPickerHSBType] (val x: Self) extends AnyVal {
       
       inline def setB(value: Double): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
       
@@ -685,7 +688,8 @@ object colorpickerColorpickerMod {
       __obj.asInstanceOf[ColorPickerProps]
     }
     
-    extension [Self <: ColorPickerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColorPickerProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       
@@ -1596,7 +1600,8 @@ object colorpickerColorpickerMod {
       __obj.asInstanceOf[ColorPickerRGBType]
     }
     
-    extension [Self <: ColorPickerRGBType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColorPickerRGBType] (val x: Self) extends AnyVal {
       
       inline def setB(value: Double): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
       

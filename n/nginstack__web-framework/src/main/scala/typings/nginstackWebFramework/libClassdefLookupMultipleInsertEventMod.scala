@@ -33,7 +33,8 @@ object libClassdefLookupMultipleInsertEventMod {
       __obj.asInstanceOf[LookupMultipleInsertEvent]
     }
     
-    extension [Self <: LookupMultipleInsertEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LookupMultipleInsertEvent] (val x: Self) extends AnyVal {
       
       inline def setLookupGrid(value: Process): Self = StObject.set(x, "lookupGrid", value.asInstanceOf[js.Any])
     }

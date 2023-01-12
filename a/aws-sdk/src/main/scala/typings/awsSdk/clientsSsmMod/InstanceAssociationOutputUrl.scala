@@ -18,7 +18,8 @@ object InstanceAssociationOutputUrl {
     __obj.asInstanceOf[InstanceAssociationOutputUrl]
   }
   
-  extension [Self <: InstanceAssociationOutputUrl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InstanceAssociationOutputUrl] (val x: Self) extends AnyVal {
     
     inline def setS3OutputUrl(value: S3OutputUrl): Self = StObject.set(x, "S3OutputUrl", value.asInstanceOf[js.Any])
     

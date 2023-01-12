@@ -15,7 +15,8 @@ object QDownloadInfo {
     __obj.asInstanceOf[QDownloadInfo]
   }
   
-  extension [Self <: QDownloadInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QDownloadInfo] (val x: Self) extends AnyVal {
     
     inline def setQDownloadInfo(value: Any): Self = StObject.set(x, "qDownloadInfo", value.asInstanceOf[js.Any])
   }

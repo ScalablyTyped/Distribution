@@ -53,7 +53,8 @@ object libLayoutLayoutMod extends Shortcut {
       __obj.asInstanceOf[BasicProps]
     }
     
-    extension [Self <: BasicProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BasicProps] (val x: Self) extends AnyVal {
       
       inline def setHasSider(value: Boolean): Self = StObject.set(x, "hasSider", value.asInstanceOf[js.Any])
       
@@ -80,7 +81,8 @@ object libLayoutLayoutMod extends Shortcut {
       __obj.asInstanceOf[GeneratorProps]
     }
     
-    extension [Self <: GeneratorProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GeneratorProps] (val x: Self) extends AnyVal {
       
       inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
       
@@ -101,7 +103,8 @@ object libLayoutLayoutMod extends Shortcut {
       __obj.asInstanceOf[LayoutContextProps]
     }
     
-    extension [Self <: LayoutContextProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LayoutContextProps] (val x: Self) extends AnyVal {
       
       inline def setSiderHook(value: AddSider): Self = StObject.set(x, "siderHook", value.asInstanceOf[js.Any])
     }

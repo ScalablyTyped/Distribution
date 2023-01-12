@@ -36,7 +36,8 @@ object karmaMod {
       __obj.asInstanceOf[ClientOptions]
     }
     
-    extension [Self <: ClientOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClientOptions] (val x: Self) extends AnyVal {
       
       inline def setJasmine(value: ConfigurationtimeoutInter): Self = StObject.set(x, "jasmine", value.asInstanceOf[js.Any])
       

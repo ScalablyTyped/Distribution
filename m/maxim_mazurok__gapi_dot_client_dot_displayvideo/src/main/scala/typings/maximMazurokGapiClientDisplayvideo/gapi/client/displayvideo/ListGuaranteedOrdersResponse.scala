@@ -19,7 +19,8 @@ object ListGuaranteedOrdersResponse {
     __obj.asInstanceOf[ListGuaranteedOrdersResponse]
   }
   
-  extension [Self <: ListGuaranteedOrdersResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListGuaranteedOrdersResponse] (val x: Self) extends AnyVal {
     
     inline def setGuaranteedOrders(value: js.Array[GuaranteedOrder]): Self = StObject.set(x, "guaranteedOrders", value.asInstanceOf[js.Any])
     

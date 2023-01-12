@@ -243,7 +243,8 @@ object libRestTwilioMod {
       __obj.asInstanceOf[RequestOptions]
     }
     
-    extension [Self <: RequestOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequestOptions] (val x: Self) extends AnyVal {
       
       inline def setAllowRedirects(value: Boolean): Self = StObject.set(x, "allowRedirects", value.asInstanceOf[js.Any])
       
@@ -488,7 +489,8 @@ object libRestTwilioMod {
       __obj.asInstanceOf[Twilio]
     }
     
-    extension [Self <: Twilio](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Twilio] (val x: Self) extends AnyVal {
       
       inline def setAccounts(value: typings.twilio.libRestAccountsMod.^): Self = StObject.set(x, "accounts", value.asInstanceOf[js.Any])
       
@@ -689,7 +691,8 @@ object libRestTwilioMod {
       __obj.asInstanceOf[TwilioClientOptions]
     }
     
-    extension [Self <: TwilioClientOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TwilioClientOptions] (val x: Self) extends AnyVal {
       
       inline def setAccountSid(value: String): Self = StObject.set(x, "accountSid", value.asInstanceOf[js.Any])
       

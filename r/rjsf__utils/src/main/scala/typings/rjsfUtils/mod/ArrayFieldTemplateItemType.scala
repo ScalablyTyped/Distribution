@@ -75,7 +75,8 @@ object ArrayFieldTemplateItemType {
     __obj.asInstanceOf[ArrayFieldTemplateItemType[T, F]]
   }
   
-  extension [Self <: ArrayFieldTemplateItemType[?, ?], T, F](x: Self & (ArrayFieldTemplateItemType[T, F])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ArrayFieldTemplateItemType[?, ?], T, F] (val x: Self & (ArrayFieldTemplateItemType[T, F])) extends AnyVal {
     
     inline def setChildren(value: ReactElement): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

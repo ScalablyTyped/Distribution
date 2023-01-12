@@ -30,7 +30,8 @@ object NonMarkTitleProperties {
     __obj.asInstanceOf[NonMarkTitleProperties]
   }
   
-  extension [Self <: NonMarkTitleProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NonMarkTitleProperties] (val x: Self) extends AnyVal {
     
     inline def setNonMarkTitleProperties(value: BaseTitleNoValueRefs[SignalRef]): Self = StObject.set(x, "nonMarkTitleProperties", value.asInstanceOf[js.Any])
     

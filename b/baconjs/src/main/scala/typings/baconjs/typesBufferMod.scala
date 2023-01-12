@@ -74,7 +74,8 @@ object typesBufferMod {
       __obj.asInstanceOf[Buffer_[V]]
     }
     
-    extension [Self <: Buffer_[?], V](x: Self & Buffer_[V]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Buffer_[?], V] (val x: Self & Buffer_[V]) extends AnyVal {
       
       inline def setDelay(value: /* f */ VoidFunction => Any): Self = StObject.set(x, "delay", js.Any.fromFunction1(value))
       

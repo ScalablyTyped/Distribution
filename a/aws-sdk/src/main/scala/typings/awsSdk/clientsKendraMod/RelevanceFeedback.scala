@@ -23,7 +23,8 @@ object RelevanceFeedback {
     __obj.asInstanceOf[RelevanceFeedback]
   }
   
-  extension [Self <: RelevanceFeedback](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RelevanceFeedback] (val x: Self) extends AnyVal {
     
     inline def setRelevanceValue(value: RelevanceType): Self = StObject.set(x, "RelevanceValue", value.asInstanceOf[js.Any])
     

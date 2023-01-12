@@ -57,7 +57,8 @@ object DicomStoreId {
     __obj.asInstanceOf[DicomStoreId]
   }
   
-  extension [Self <: DicomStoreId](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DicomStoreId] (val x: Self) extends AnyVal {
     
     inline def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
     

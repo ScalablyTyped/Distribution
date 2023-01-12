@@ -143,7 +143,8 @@ object milkcocoa {
       __obj.asInstanceOf[DataStoreCallbackData]
     }
     
-    extension [Self <: DataStoreCallbackData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DataStoreCallbackData] (val x: Self) extends AnyVal {
       
       inline def setErr(value: String): Self = StObject.set(x, "err", value.asInstanceOf[js.Any])
       
@@ -178,7 +179,8 @@ object milkcocoa {
       __obj.asInstanceOf[Query]
     }
     
-    extension [Self <: Query](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Query] (val x: Self) extends AnyVal {
       
       inline def setDone(value: js.Function1[/* data */ Any, Unit] => Unit): Self = StObject.set(x, "done", js.Any.fromFunction1(value))
       
@@ -203,7 +205,8 @@ object milkcocoa {
       __obj.asInstanceOf[User]
     }
     
-    extension [Self <: User](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: User] (val x: Self) extends AnyVal {
       
       inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
       

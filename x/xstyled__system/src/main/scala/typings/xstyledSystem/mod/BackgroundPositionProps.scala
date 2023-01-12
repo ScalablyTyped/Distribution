@@ -16,7 +16,8 @@ object BackgroundPositionProps {
     __obj.asInstanceOf[BackgroundPositionProps[TLength]]
   }
   
-  extension [Self <: BackgroundPositionProps[?], TLength](x: Self & BackgroundPositionProps[TLength]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BackgroundPositionProps[?], TLength] (val x: Self & BackgroundPositionProps[TLength]) extends AnyVal {
     
     inline def setBackgroundPosition(value: ResponsiveValue[BackgroundPosition[TLength]]): Self = StObject.set(x, "backgroundPosition", value.asInstanceOf[js.Any])
     

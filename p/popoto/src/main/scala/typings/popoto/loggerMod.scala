@@ -31,7 +31,8 @@ object loggerMod {
       __obj.asInstanceOf[LogLevels]
     }
     
-    extension [Self <: LogLevels](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LogLevels] (val x: Self) extends AnyVal {
       
       inline def setDEBUG(value: `0`): Self = StObject.set(x, "DEBUG", value.asInstanceOf[js.Any])
       
@@ -102,7 +103,8 @@ object loggerMod {
       __obj.asInstanceOf[Logger]
     }
     
-    extension [Self <: Logger](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Logger] (val x: Self) extends AnyVal {
       
       inline def setDebug(value: String => Unit): Self = StObject.set(x, "debug", js.Any.fromFunction1(value))
       

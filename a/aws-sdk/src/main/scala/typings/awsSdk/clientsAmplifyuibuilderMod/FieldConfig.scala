@@ -38,7 +38,8 @@ object FieldConfig {
     __obj.asInstanceOf[FieldConfig]
   }
   
-  extension [Self <: FieldConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FieldConfig] (val x: Self) extends AnyVal {
     
     inline def setExcluded(value: Boolean): Self = StObject.set(x, "excluded", value.asInstanceOf[js.Any])
     

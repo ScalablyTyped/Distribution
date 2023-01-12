@@ -21,7 +21,8 @@ object OSSubscriptionState {
     __obj.asInstanceOf[OSSubscriptionState]
   }
   
-  extension [Self <: OSSubscriptionState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OSSubscriptionState] (val x: Self) extends AnyVal {
     
     inline def setPushToken(value: String): Self = StObject.set(x, "pushToken", value.asInstanceOf[js.Any])
     

@@ -26,7 +26,8 @@ object mod {
       __obj.asInstanceOf[ApplyDevToolsOptions]
     }
     
-    extension [Self <: ApplyDevToolsOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ApplyDevToolsOptions] (val x: Self) extends AnyVal {
       
       inline def setDiffWorker(value: Worker): Self = StObject.set(x, "diffWorker", value.asInstanceOf[js.Any])
       

@@ -43,7 +43,8 @@ object SetHeaders {
     __obj.asInstanceOf[SetHeaders[V]]
   }
   
-  extension [Self <: SetHeaders[?], V](x: Self & SetHeaders[V]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetHeaders[?], V] (val x: Self & SetHeaders[V]) extends AnyVal {
     
     inline def setBody(value: V): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

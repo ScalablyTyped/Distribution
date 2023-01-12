@@ -26,7 +26,8 @@ object leafletMod {
       __obj.asInstanceOf[Marker]
     }
     
-    extension [Self <: Marker](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Marker] (val x: Self) extends AnyVal {
       
       inline def setSetRotationAngle(value: Double => Marker): Self = StObject.set(x, "setRotationAngle", js.Any.fromFunction1(value))
       
@@ -48,7 +49,8 @@ object leafletMod {
       __obj.asInstanceOf[MarkerOptions]
     }
     
-    extension [Self <: MarkerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MarkerOptions] (val x: Self) extends AnyVal {
       
       inline def setRotationAngle(value: Double): Self = StObject.set(x, "rotationAngle", value.asInstanceOf[js.Any])
       

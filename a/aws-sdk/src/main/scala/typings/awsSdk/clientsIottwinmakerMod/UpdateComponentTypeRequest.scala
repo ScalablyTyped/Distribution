@@ -48,7 +48,8 @@ object UpdateComponentTypeRequest {
     __obj.asInstanceOf[UpdateComponentTypeRequest]
   }
   
-  extension [Self <: UpdateComponentTypeRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateComponentTypeRequest] (val x: Self) extends AnyVal {
     
     inline def setComponentTypeId(value: ComponentTypeId): Self = StObject.set(x, "componentTypeId", value.asInstanceOf[js.Any])
     

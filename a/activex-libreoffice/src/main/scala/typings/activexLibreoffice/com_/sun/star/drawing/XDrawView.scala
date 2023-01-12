@@ -43,7 +43,8 @@ object XDrawView {
     __obj.asInstanceOf[XDrawView]
   }
   
-  extension [Self <: XDrawView](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XDrawView] (val x: Self) extends AnyVal {
     
     inline def setCurrentPage(value: XDrawPage): Self = StObject.set(x, "CurrentPage", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object ConversionsBatchInsertRequest {
     __obj.asInstanceOf[ConversionsBatchInsertRequest]
   }
   
-  extension [Self <: ConversionsBatchInsertRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConversionsBatchInsertRequest] (val x: Self) extends AnyVal {
     
     inline def setConversions(value: js.Array[Conversion]): Self = StObject.set(x, "conversions", value.asInstanceOf[js.Any])
     

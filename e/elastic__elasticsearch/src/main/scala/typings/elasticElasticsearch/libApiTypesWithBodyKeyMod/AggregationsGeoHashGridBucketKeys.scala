@@ -17,7 +17,8 @@ object AggregationsGeoHashGridBucketKeys {
     __obj.asInstanceOf[AggregationsGeoHashGridBucketKeys]
   }
   
-  extension [Self <: AggregationsGeoHashGridBucketKeys](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AggregationsGeoHashGridBucketKeys] (val x: Self) extends AnyVal {
     
     inline def setKey(value: GeoHash): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
   }

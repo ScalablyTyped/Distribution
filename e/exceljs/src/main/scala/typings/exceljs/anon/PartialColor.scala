@@ -18,7 +18,8 @@ object PartialColor {
     __obj.asInstanceOf[PartialColor]
   }
   
-  extension [Self <: PartialColor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialColor] (val x: Self) extends AnyVal {
     
     inline def setArgb(value: String): Self = StObject.set(x, "argb", value.asInstanceOf[js.Any])
     

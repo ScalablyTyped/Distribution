@@ -21,7 +21,8 @@ object IFlowAnnotation {
     __obj.asInstanceOf[IFlowAnnotation]
   }
   
-  extension [Self <: IFlowAnnotation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IFlowAnnotation] (val x: Self) extends AnyVal {
     
     inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
   }

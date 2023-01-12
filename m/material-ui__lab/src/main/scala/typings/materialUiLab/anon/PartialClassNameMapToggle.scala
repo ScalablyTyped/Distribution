@@ -24,7 +24,8 @@ object PartialClassNameMapToggle {
     __obj.asInstanceOf[PartialClassNameMapToggle]
   }
   
-  extension [Self <: PartialClassNameMapToggle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialClassNameMapToggle] (val x: Self) extends AnyVal {
     
     inline def setGrouped(value: String): Self = StObject.set(x, "grouped", value.asInstanceOf[js.Any])
     

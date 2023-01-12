@@ -23,7 +23,8 @@ object EJSONableCustomType {
     __obj.asInstanceOf[EJSONableCustomType]
   }
   
-  extension [Self <: EJSONableCustomType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EJSONableCustomType] (val x: Self) extends AnyVal {
     
     inline def setClone_(value: () => EJSONableCustomType): Self = StObject.set(x, "clone", js.Any.fromFunction0(value))
     

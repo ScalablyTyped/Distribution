@@ -34,7 +34,8 @@ object XmlaStoreOptions {
     __obj.asInstanceOf[XmlaStoreOptions]
   }
   
-  extension [Self <: XmlaStoreOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XmlaStoreOptions] (val x: Self) extends AnyVal {
     
     inline def setBeforeSend(value: /* options */ DataType => Unit): Self = StObject.set(x, "beforeSend", js.Any.fromFunction1(value))
     

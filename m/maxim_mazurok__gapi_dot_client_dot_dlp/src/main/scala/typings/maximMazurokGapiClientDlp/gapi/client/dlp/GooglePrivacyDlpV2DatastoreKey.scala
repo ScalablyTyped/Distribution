@@ -16,7 +16,8 @@ object GooglePrivacyDlpV2DatastoreKey {
     __obj.asInstanceOf[GooglePrivacyDlpV2DatastoreKey]
   }
   
-  extension [Self <: GooglePrivacyDlpV2DatastoreKey](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GooglePrivacyDlpV2DatastoreKey] (val x: Self) extends AnyVal {
     
     inline def setEntityKey(value: GooglePrivacyDlpV2Key): Self = StObject.set(x, "entityKey", value.asInstanceOf[js.Any])
     

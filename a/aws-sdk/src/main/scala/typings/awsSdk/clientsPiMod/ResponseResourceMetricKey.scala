@@ -23,7 +23,8 @@ object ResponseResourceMetricKey {
     __obj.asInstanceOf[ResponseResourceMetricKey]
   }
   
-  extension [Self <: ResponseResourceMetricKey](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResponseResourceMetricKey] (val x: Self) extends AnyVal {
     
     inline def setDimensions(value: DimensionMap): Self = StObject.set(x, "Dimensions", value.asInstanceOf[js.Any])
     

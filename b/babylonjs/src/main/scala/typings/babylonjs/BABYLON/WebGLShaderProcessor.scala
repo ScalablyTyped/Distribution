@@ -27,7 +27,8 @@ object WebGLShaderProcessor {
     __obj.asInstanceOf[WebGLShaderProcessor]
   }
   
-  extension [Self <: WebGLShaderProcessor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebGLShaderProcessor] (val x: Self) extends AnyVal {
     
     inline def setPostProcessor(
       value: (String, js.Array[String], Boolean, Nullable[ShaderProcessingContext], ThinEngine) => String

@@ -114,7 +114,8 @@ object libModalModalMod extends Shortcut {
       __obj.asInstanceOf[ModalFuncProps]
     }
     
-    extension [Self <: ModalFuncProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ModalFuncProps] (val x: Self) extends AnyVal {
       
       inline def setAfterClose(value: () => Unit): Self = StObject.set(x, "afterClose", js.Any.fromFunction0(value))
       
@@ -281,7 +282,8 @@ object libModalModalMod extends Shortcut {
       __obj.asInstanceOf[ModalLocale]
     }
     
-    extension [Self <: ModalLocale](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ModalLocale] (val x: Self) extends AnyVal {
       
       inline def setCancelText(value: String): Self = StObject.set(x, "cancelText", value.asInstanceOf[js.Any])
       
@@ -390,7 +392,8 @@ object libModalModalMod extends Shortcut {
       __obj.asInstanceOf[ModalProps]
     }
     
-    extension [Self <: ModalProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ModalProps] (val x: Self) extends AnyVal {
       
       inline def setAfterClose(value: () => Unit): Self = StObject.set(x, "afterClose", js.Any.fromFunction0(value))
       

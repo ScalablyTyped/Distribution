@@ -19,7 +19,8 @@ object WorkbookSessionInfo {
     __obj.asInstanceOf[WorkbookSessionInfo]
   }
   
-  extension [Self <: WorkbookSessionInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkbookSessionInfo] (val x: Self) extends AnyVal {
     
     inline def setId(value: NullableOption[String]): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

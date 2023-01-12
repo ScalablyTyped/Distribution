@@ -22,7 +22,8 @@ object RectBinSpacingMixins {
     __obj.asInstanceOf[RectBinSpacingMixins]
   }
   
-  extension [Self <: RectBinSpacingMixins](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RectBinSpacingMixins] (val x: Self) extends AnyVal {
     
     inline def setBinSpacing(value: Double): Self = StObject.set(x, "binSpacing", value.asInstanceOf[js.Any])
     

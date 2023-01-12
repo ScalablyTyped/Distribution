@@ -15,7 +15,8 @@ object CancelMulticastGroupSessionRequest {
     __obj.asInstanceOf[CancelMulticastGroupSessionRequest]
   }
   
-  extension [Self <: CancelMulticastGroupSessionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CancelMulticastGroupSessionRequest] (val x: Self) extends AnyVal {
     
     inline def setId(value: MulticastGroupId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
   }

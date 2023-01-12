@@ -44,7 +44,8 @@ object mod {
       __obj.asInstanceOf[DropDownData]
     }
     
-    extension [Self <: DropDownData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DropDownData] (val x: Self) extends AnyVal {
       
       inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
@@ -79,7 +80,8 @@ object mod {
       __obj.asInstanceOf[DropDownInsets]
     }
     
-    extension [Self <: DropDownInsets](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DropDownInsets] (val x: Self) extends AnyVal {
       
       inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       
@@ -106,7 +108,8 @@ object mod {
       __obj.asInstanceOf[DropDownMargins]
     }
     
-    extension [Self <: DropDownMargins](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DropDownMargins] (val x: Self) extends AnyVal {
       
       inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
       
@@ -129,7 +132,8 @@ object mod {
       __obj.asInstanceOf[DropDownOffset]
     }
     
-    extension [Self <: DropDownOffset](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DropDownOffset] (val x: Self) extends AnyVal {
       
       inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
       
@@ -276,7 +280,8 @@ object mod {
       __obj.asInstanceOf[DropDownProps]
     }
     
-    extension [Self <: DropDownProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DropDownProps] (val x: Self) extends AnyVal {
       
       inline def setAbsoluteRTLLayout(value: Boolean): Self = StObject.set(x, "absoluteRTLLayout", value.asInstanceOf[js.Any])
       
@@ -472,7 +477,8 @@ object mod {
       __obj.asInstanceOf[RenderBaseProps]
     }
     
-    extension [Self <: RenderBaseProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RenderBaseProps] (val x: Self) extends AnyVal {
       
       inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     }

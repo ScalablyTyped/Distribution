@@ -17,7 +17,8 @@ object OptionsForHtmlFileAsValidationTarget {
     __obj.asInstanceOf[OptionsForHtmlFileAsValidationTarget]
   }
   
-  extension [Self <: OptionsForHtmlFileAsValidationTarget](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OptionsForHtmlFileAsValidationTarget] (val x: Self) extends AnyVal {
     
     inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
   }

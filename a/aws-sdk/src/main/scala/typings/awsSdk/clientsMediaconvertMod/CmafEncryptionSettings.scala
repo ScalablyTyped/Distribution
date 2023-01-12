@@ -43,7 +43,8 @@ object CmafEncryptionSettings {
     __obj.asInstanceOf[CmafEncryptionSettings]
   }
   
-  extension [Self <: CmafEncryptionSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CmafEncryptionSettings] (val x: Self) extends AnyVal {
     
     inline def setConstantInitializationVector(value: stringMin32Max32Pattern09aFAF32): Self = StObject.set(x, "ConstantInitializationVector", value.asInstanceOf[js.Any])
     

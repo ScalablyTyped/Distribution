@@ -25,7 +25,8 @@ object ChatRoomMember {
     __obj.asInstanceOf[ChatRoomMember]
   }
   
-  extension [Self <: ChatRoomMember](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChatRoomMember] (val x: Self) extends AnyVal {
     
     inline def setRank(value: EChatRoomGroupRank): Self = StObject.set(x, "rank", value.asInstanceOf[js.Any])
     

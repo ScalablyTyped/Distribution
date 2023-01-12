@@ -24,7 +24,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[FnProps[R]]
     }
     
-    extension [Self <: FnProps[?], R](x: Self & FnProps[R]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FnProps[?], R] (val x: Self & FnProps[R]) extends AnyVal {
       
       inline def setCalled(value: Boolean): Self = StObject.set(x, "called", value.asInstanceOf[js.Any])
       

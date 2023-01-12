@@ -36,7 +36,8 @@ object BankingCreditCardAccount {
     __obj.asInstanceOf[BankingCreditCardAccount]
   }
   
-  extension [Self <: BankingCreditCardAccount](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BankingCreditCardAccount] (val x: Self) extends AnyVal {
     
     inline def setMinPaymentAmount(value: String): Self = StObject.set(x, "minPaymentAmount", value.asInstanceOf[js.Any])
     

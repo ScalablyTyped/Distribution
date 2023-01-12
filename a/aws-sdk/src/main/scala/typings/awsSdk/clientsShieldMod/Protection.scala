@@ -43,7 +43,8 @@ object Protection {
     __obj.asInstanceOf[Protection]
   }
   
-  extension [Self <: Protection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Protection] (val x: Self) extends AnyVal {
     
     inline def setApplicationLayerAutomaticResponseConfiguration(value: ApplicationLayerAutomaticResponseConfiguration): Self = StObject.set(x, "ApplicationLayerAutomaticResponseConfiguration", value.asInstanceOf[js.Any])
     

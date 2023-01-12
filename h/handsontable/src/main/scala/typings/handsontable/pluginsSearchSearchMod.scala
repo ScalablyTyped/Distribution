@@ -50,7 +50,8 @@ object pluginsSearchSearchMod {
       __obj.asInstanceOf[DetailedSettings]
     }
     
-    extension [Self <: DetailedSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DetailedSettings] (val x: Self) extends AnyVal {
       
       inline def setCallback(
         value: (/* instance */ default, /* row */ Double, /* column */ Double, /* value */ CellValue, /* result */ Boolean) => Unit

@@ -18,7 +18,8 @@ object DescribeFileSystemPolicyRequest {
     __obj.asInstanceOf[DescribeFileSystemPolicyRequest]
   }
   
-  extension [Self <: DescribeFileSystemPolicyRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeFileSystemPolicyRequest] (val x: Self) extends AnyVal {
     
     inline def setFileSystemId(value: FileSystemId): Self = StObject.set(x, "FileSystemId", value.asInstanceOf[js.Any])
   }

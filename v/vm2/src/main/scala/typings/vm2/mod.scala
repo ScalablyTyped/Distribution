@@ -233,7 +233,8 @@ object mod {
       __obj.asInstanceOf[NodeVMOptions]
     }
     
-    extension [Self <: NodeVMOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NodeVMOptions] (val x: Self) extends AnyVal {
       
       inline def setArgv(value: js.Array[String]): Self = StObject.set(x, "argv", value.asInstanceOf[js.Any])
       
@@ -319,7 +320,8 @@ object mod {
       __obj.asInstanceOf[VMOptions]
     }
     
-    extension [Self <: VMOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VMOptions] (val x: Self) extends AnyVal {
       
       inline def setAllowAsync(value: Boolean): Self = StObject.set(x, "allowAsync", value.asInstanceOf[js.Any])
       
@@ -395,7 +397,8 @@ object mod {
       __obj.asInstanceOf[VMRequire]
     }
     
-    extension [Self <: VMRequire](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VMRequire] (val x: Self) extends AnyVal {
       
       inline def setBuiltin(value: js.Array[String]): Self = StObject.set(x, "builtin", value.asInstanceOf[js.Any])
       

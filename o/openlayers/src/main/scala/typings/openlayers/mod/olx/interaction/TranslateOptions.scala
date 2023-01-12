@@ -20,7 +20,8 @@ object TranslateOptions {
     __obj.asInstanceOf[TranslateOptions]
   }
   
-  extension [Self <: TranslateOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TranslateOptions] (val x: Self) extends AnyVal {
     
     inline def setFeatures(value: Collection[Feature]): Self = StObject.set(x, "features", value.asInstanceOf[js.Any])
     

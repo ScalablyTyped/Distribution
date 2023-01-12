@@ -17,7 +17,8 @@ object NluEnrichmentRelations {
     __obj.asInstanceOf[NluEnrichmentRelations]
   }
   
-  extension [Self <: NluEnrichmentRelations](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NluEnrichmentRelations] (val x: Self) extends AnyVal {
     
     inline def setModel(value: String): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
     

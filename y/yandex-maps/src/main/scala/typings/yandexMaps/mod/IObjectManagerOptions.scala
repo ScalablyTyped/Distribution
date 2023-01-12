@@ -22,7 +22,8 @@ object IObjectManagerOptions {
     __obj.asInstanceOf[IObjectManagerOptions]
   }
   
-  extension [Self <: IObjectManagerOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IObjectManagerOptions] (val x: Self) extends AnyVal {
     
     inline def setClusterize(value: Boolean): Self = StObject.set(x, "clusterize", value.asInstanceOf[js.Any])
     

@@ -35,7 +35,8 @@ object anon {
       __obj.asInstanceOf[PartialOptions]
     }
     
-    extension [Self <: PartialOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialOptions] (val x: Self) extends AnyVal {
       
       inline def setAddMarginBottom(value: Boolean): Self = StObject.set(x, "addMarginBottom", value.asInstanceOf[js.Any])
       
@@ -79,7 +80,8 @@ object anon {
       __obj.asInstanceOf[PickRhythmPropertiesExclu]
     }
     
-    extension [Self <: PickRhythmPropertiesExclu](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PickRhythmPropertiesExclu] (val x: Self) extends AnyVal {
       
       inline def setFontSize(value: String): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
       

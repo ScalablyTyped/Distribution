@@ -21,7 +21,8 @@ object OrganizationTaskContainer {
     __obj.asInstanceOf[OrganizationTaskContainer]
   }
   
-  extension [Self <: OrganizationTaskContainer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OrganizationTaskContainer] (val x: Self) extends AnyVal {
     
     inline def setOrganization(value: String): Self = StObject.set(x, "organization", value.asInstanceOf[js.Any])
     

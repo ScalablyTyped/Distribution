@@ -27,7 +27,8 @@ object DescribeConfigurationRevisionRequest {
     __obj.asInstanceOf[DescribeConfigurationRevisionRequest]
   }
   
-  extension [Self <: DescribeConfigurationRevisionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeConfigurationRevisionRequest] (val x: Self) extends AnyVal {
     
     inline def setArn(value: string): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     

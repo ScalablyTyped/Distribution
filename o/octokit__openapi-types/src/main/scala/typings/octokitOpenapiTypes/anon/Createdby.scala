@@ -57,7 +57,8 @@ object Createdby {
     __obj.asInstanceOf[Createdby]
   }
   
-  extension [Self <: Createdby](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Createdby] (val x: Self) extends AnyVal {
     
     inline def setAliases(value: js.Array[Topicrelation]): Self = StObject.set(x, "aliases", value.asInstanceOf[js.Any])
     

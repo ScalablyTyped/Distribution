@@ -16,7 +16,8 @@ object NotOutdoorsFailureDetails {
     __obj.asInstanceOf[NotOutdoorsFailureDetails]
   }
   
-  extension [Self <: NotOutdoorsFailureDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NotOutdoorsFailureDetails] (val x: Self) extends AnyVal {
     
     inline def setStartTime(value: String): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     

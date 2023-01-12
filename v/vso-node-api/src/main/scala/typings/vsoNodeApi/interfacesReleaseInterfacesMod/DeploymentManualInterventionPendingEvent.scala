@@ -33,7 +33,8 @@ object DeploymentManualInterventionPendingEvent {
     __obj.asInstanceOf[DeploymentManualInterventionPendingEvent]
   }
   
-  extension [Self <: DeploymentManualInterventionPendingEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeploymentManualInterventionPendingEvent] (val x: Self) extends AnyVal {
     
     inline def setDeployment(value: Deployment): Self = StObject.set(x, "deployment", value.asInstanceOf[js.Any])
     

@@ -99,7 +99,8 @@ object libDatastaxGraphMod {
         __obj.asInstanceOf[Edge]
       }
       
-      extension [Self <: Edge](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Edge] (val x: Self) extends AnyVal {
         
         inline def setInV(value: Vertex): Self = StObject.set(x, "inV", value.asInstanceOf[js.Any])
         
@@ -136,7 +137,8 @@ object libDatastaxGraphMod {
         __obj.asInstanceOf[Element]
       }
       
-      extension [Self <: Element](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Element] (val x: Self) extends AnyVal {
         
         inline def setId(value: Any): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
         
@@ -159,7 +161,8 @@ object libDatastaxGraphMod {
         __obj.asInstanceOf[Path]
       }
       
-      extension [Self <: Path](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Path] (val x: Self) extends AnyVal {
         
         inline def setLabels(value: js.Array[Any]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
         
@@ -184,7 +187,8 @@ object libDatastaxGraphMod {
         __obj.asInstanceOf[Property]
       }
       
-      extension [Self <: Property](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Property] (val x: Self) extends AnyVal {
         
         inline def setKey(value: Any): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
         
@@ -205,7 +209,8 @@ object libDatastaxGraphMod {
         __obj.asInstanceOf[Vertex]
       }
       
-      extension [Self <: Vertex](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Vertex] (val x: Self) extends AnyVal {
         
         inline def setProperties(value: StringDictionary[js.Array[Any]]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
         
@@ -230,7 +235,8 @@ object libDatastaxGraphMod {
         __obj.asInstanceOf[VertexProperty]
       }
       
-      extension [Self <: VertexProperty](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: VertexProperty] (val x: Self) extends AnyVal {
         
         inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
         

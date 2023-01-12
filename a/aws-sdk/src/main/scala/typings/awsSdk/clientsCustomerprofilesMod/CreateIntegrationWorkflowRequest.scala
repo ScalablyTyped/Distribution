@@ -49,7 +49,8 @@ object CreateIntegrationWorkflowRequest {
     __obj.asInstanceOf[CreateIntegrationWorkflowRequest]
   }
   
-  extension [Self <: CreateIntegrationWorkflowRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateIntegrationWorkflowRequest] (val x: Self) extends AnyVal {
     
     inline def setDomainName(value: name): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
     

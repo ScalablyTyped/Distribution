@@ -23,7 +23,8 @@ object ContainerDependency {
     __obj.asInstanceOf[ContainerDependency]
   }
   
-  extension [Self <: ContainerDependency](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContainerDependency] (val x: Self) extends AnyVal {
     
     inline def setCondition(value: ContainerCondition): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
     

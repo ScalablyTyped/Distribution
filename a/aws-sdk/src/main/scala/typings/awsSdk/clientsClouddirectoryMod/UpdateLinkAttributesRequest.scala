@@ -32,7 +32,8 @@ object UpdateLinkAttributesRequest {
     __obj.asInstanceOf[UpdateLinkAttributesRequest]
   }
   
-  extension [Self <: UpdateLinkAttributesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateLinkAttributesRequest] (val x: Self) extends AnyVal {
     
     inline def setAttributeUpdates(value: LinkAttributeUpdateList): Self = StObject.set(x, "AttributeUpdates", value.asInstanceOf[js.Any])
     

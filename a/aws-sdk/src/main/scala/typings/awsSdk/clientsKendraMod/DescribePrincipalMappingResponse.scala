@@ -33,7 +33,8 @@ object DescribePrincipalMappingResponse {
     __obj.asInstanceOf[DescribePrincipalMappingResponse]
   }
   
-  extension [Self <: DescribePrincipalMappingResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribePrincipalMappingResponse] (val x: Self) extends AnyVal {
     
     inline def setDataSourceId(value: DataSourceId): Self = StObject.set(x, "DataSourceId", value.asInstanceOf[js.Any])
     

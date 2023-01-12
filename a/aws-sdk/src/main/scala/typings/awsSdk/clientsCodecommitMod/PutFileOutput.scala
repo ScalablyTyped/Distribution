@@ -28,7 +28,8 @@ object PutFileOutput {
     __obj.asInstanceOf[PutFileOutput]
   }
   
-  extension [Self <: PutFileOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutFileOutput] (val x: Self) extends AnyVal {
     
     inline def setBlobId(value: ObjectId): Self = StObject.set(x, "blobId", value.asInstanceOf[js.Any])
     

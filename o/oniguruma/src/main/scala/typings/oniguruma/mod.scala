@@ -175,7 +175,8 @@ object mod {
       __obj.asInstanceOf[CaptureIndex]
     }
     
-    extension [Self <: CaptureIndex](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CaptureIndex] (val x: Self) extends AnyVal {
       
       inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
@@ -202,7 +203,8 @@ object mod {
       __obj.asInstanceOf[Match]
     }
     
-    extension [Self <: Match](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Match] (val x: Self) extends AnyVal {
       
       inline def setCaptureIndices(value: js.Array[CaptureIndex]): Self = StObject.set(x, "captureIndices", value.asInstanceOf[js.Any])
       

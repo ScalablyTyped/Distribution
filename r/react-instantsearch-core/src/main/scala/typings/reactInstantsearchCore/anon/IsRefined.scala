@@ -21,7 +21,8 @@ object IsRefined {
     __obj.asInstanceOf[IsRefined]
   }
   
-  extension [Self <: IsRefined](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IsRefined] (val x: Self) extends AnyVal {
     
     inline def setIsRefined(value: Boolean): Self = StObject.set(x, "isRefined", value.asInstanceOf[js.Any])
     

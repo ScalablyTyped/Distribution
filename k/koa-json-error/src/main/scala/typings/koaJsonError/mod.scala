@@ -33,7 +33,8 @@ object mod {
       __obj.asInstanceOf[JSONError]
     }
     
-    extension [Self <: JSONError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JSONError] (val x: Self) extends AnyVal {
       
       inline def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     }
@@ -63,7 +64,8 @@ object mod {
       __obj.asInstanceOf[JSONErrorOptions]
     }
     
-    extension [Self <: JSONErrorOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JSONErrorOptions] (val x: Self) extends AnyVal {
       
       inline def setFormat(value: (/* err */ JSONError, /* obj */ Any) => Any): Self = StObject.set(x, "format", js.Any.fromFunction2(value))
       

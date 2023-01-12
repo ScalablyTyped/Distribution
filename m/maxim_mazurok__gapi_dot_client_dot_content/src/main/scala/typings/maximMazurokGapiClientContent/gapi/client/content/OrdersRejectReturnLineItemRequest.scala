@@ -31,7 +31,8 @@ object OrdersRejectReturnLineItemRequest {
     __obj.asInstanceOf[OrdersRejectReturnLineItemRequest]
   }
   
-  extension [Self <: OrdersRejectReturnLineItemRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OrdersRejectReturnLineItemRequest] (val x: Self) extends AnyVal {
     
     inline def setLineItemId(value: String): Self = StObject.set(x, "lineItemId", value.asInstanceOf[js.Any])
     

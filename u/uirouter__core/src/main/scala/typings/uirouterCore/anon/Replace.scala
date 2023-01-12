@@ -15,7 +15,8 @@ object Replace {
     __obj.asInstanceOf[Replace]
   }
   
-  extension [Self <: Replace](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Replace] (val x: Self) extends AnyVal {
     
     inline def setReplace(value: String | Boolean): Self = StObject.set(x, "replace", value.asInstanceOf[js.Any])
     

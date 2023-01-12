@@ -23,7 +23,8 @@ object DescribeLocalGatewayRouteTableVirtualInterfaceGroupAssociationsResult {
     __obj.asInstanceOf[DescribeLocalGatewayRouteTableVirtualInterfaceGroupAssociationsResult]
   }
   
-  extension [Self <: DescribeLocalGatewayRouteTableVirtualInterfaceGroupAssociationsResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeLocalGatewayRouteTableVirtualInterfaceGroupAssociationsResult] (val x: Self) extends AnyVal {
     
     inline def setLocalGatewayRouteTableVirtualInterfaceGroupAssociations(value: LocalGatewayRouteTableVirtualInterfaceGroupAssociationSet): Self = StObject.set(x, "LocalGatewayRouteTableVirtualInterfaceGroupAssociations", value.asInstanceOf[js.Any])
     

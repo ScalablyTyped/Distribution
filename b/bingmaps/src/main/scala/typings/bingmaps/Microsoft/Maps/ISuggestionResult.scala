@@ -53,7 +53,8 @@ object ISuggestionResult {
     __obj.asInstanceOf[ISuggestionResult]
   }
   
-  extension [Self <: ISuggestionResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISuggestionResult] (val x: Self) extends AnyVal {
     
     inline def setAddress(value: IAddress): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     

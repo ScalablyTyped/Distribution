@@ -23,7 +23,8 @@ object triggerCloudfrontRequestMod {
       __obj.asInstanceOf[CloudFrontRequestEvent]
     }
     
-    extension [Self <: CloudFrontRequestEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CloudFrontRequestEvent] (val x: Self) extends AnyVal {
       
       inline def setRecords(value: js.Array[CloudFrontRequestEventRecord]): Self = StObject.set(x, "Records", value.asInstanceOf[js.Any])
       
@@ -42,7 +43,8 @@ object triggerCloudfrontRequestMod {
       __obj.asInstanceOf[CloudFrontRequestEventRecord]
     }
     
-    extension [Self <: CloudFrontRequestEventRecord](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CloudFrontRequestEventRecord] (val x: Self) extends AnyVal {
       
       inline def setCf(value: CloudFrontEventrequestClo): Self = StObject.set(x, "cf", value.asInstanceOf[js.Any])
     }

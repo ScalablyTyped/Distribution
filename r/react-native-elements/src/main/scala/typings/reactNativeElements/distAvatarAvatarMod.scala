@@ -100,7 +100,8 @@ object distAvatarAvatarMod extends Shortcut {
       __obj.asInstanceOf[AvatarProps]
     }
     
-    extension [Self <: AvatarProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AvatarProps] (val x: Self) extends AnyVal {
       
       inline def setActiveOpacity(value: Double): Self = StObject.set(x, "activeOpacity", value.asInstanceOf[js.Any])
       

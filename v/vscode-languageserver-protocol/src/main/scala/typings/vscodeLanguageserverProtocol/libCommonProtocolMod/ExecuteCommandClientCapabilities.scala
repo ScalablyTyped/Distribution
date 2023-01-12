@@ -18,7 +18,8 @@ object ExecuteCommandClientCapabilities {
     __obj.asInstanceOf[ExecuteCommandClientCapabilities]
   }
   
-  extension [Self <: ExecuteCommandClientCapabilities](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExecuteCommandClientCapabilities] (val x: Self) extends AnyVal {
     
     inline def setDynamicRegistration(value: Boolean): Self = StObject.set(x, "dynamicRegistration", value.asInstanceOf[js.Any])
     

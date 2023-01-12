@@ -42,7 +42,8 @@ object mod {
       __obj.asInstanceOf[FileObject]
     }
     
-    extension [Self <: FileObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileObject] (val x: Self) extends AnyVal {
       
       inline def setBasename(value: String): Self = StObject.set(x, "basename", value.asInstanceOf[js.Any])
       
@@ -89,7 +90,8 @@ object mod {
       __obj.asInstanceOf[ParsedFileObject]
     }
     
-    extension [Self <: ParsedFileObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParsedFileObject] (val x: Self) extends AnyVal {
       
       inline def setBasename(value: String): Self = StObject.set(x, "basename", value.asInstanceOf[js.Any])
       
@@ -120,7 +122,8 @@ object mod {
       __obj.asInstanceOf[Specification]
     }
     
-    extension [Self <: Specification](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Specification] (val x: Self) extends AnyVal {
       
       inline def setBasename(value: String): Self = StObject.set(x, "basename", value.asInstanceOf[js.Any])
       

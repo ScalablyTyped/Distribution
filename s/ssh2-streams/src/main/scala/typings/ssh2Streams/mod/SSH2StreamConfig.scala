@@ -56,7 +56,8 @@ object SSH2StreamConfig {
     __obj.asInstanceOf[SSH2StreamConfig]
   }
   
-  extension [Self <: SSH2StreamConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SSH2StreamConfig] (val x: Self) extends AnyVal {
     
     inline def setAlgorithms(value: Algorithms): Self = StObject.set(x, "algorithms", value.asInstanceOf[js.Any])
     

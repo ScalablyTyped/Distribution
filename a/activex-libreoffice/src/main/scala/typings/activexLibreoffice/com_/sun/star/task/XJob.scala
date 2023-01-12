@@ -40,7 +40,8 @@ object XJob {
     __obj.asInstanceOf[XJob]
   }
   
-  extension [Self <: XJob](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XJob] (val x: Self) extends AnyVal {
     
     inline def setExecute(value: SeqEquiv[NamedValue] => Any): Self = StObject.set(x, "execute", js.Any.fromFunction1(value))
   }

@@ -32,7 +32,8 @@ object IMetadataCardAction {
     __obj.asInstanceOf[IMetadataCardAction]
   }
   
-  extension [Self <: IMetadataCardAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IMetadataCardAction] (val x: Self) extends AnyVal {
     
     inline def setActivate(value: () => Unit): Self = StObject.set(x, "Activate", js.Any.fromFunction0(value))
     

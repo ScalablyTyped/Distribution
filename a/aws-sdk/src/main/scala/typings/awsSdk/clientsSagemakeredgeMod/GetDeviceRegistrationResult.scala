@@ -23,7 +23,8 @@ object GetDeviceRegistrationResult {
     __obj.asInstanceOf[GetDeviceRegistrationResult]
   }
   
-  extension [Self <: GetDeviceRegistrationResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetDeviceRegistrationResult] (val x: Self) extends AnyVal {
     
     inline def setCacheTTL(value: CacheTTLSeconds): Self = StObject.set(x, "CacheTTL", value.asInstanceOf[js.Any])
     

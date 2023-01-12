@@ -66,7 +66,8 @@ object SearchForItemParameterObject {
     __obj.asInstanceOf[SearchForItemParameterObject]
   }
   
-  extension [Self <: SearchForItemParameterObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchForItemParameterObject] (val x: Self) extends AnyVal {
     
     inline def setInclude_external(value: String): Self = StObject.set(x, "include_external", value.asInstanceOf[js.Any])
     

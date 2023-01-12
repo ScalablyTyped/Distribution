@@ -37,7 +37,8 @@ object IMouseTargetViewZone {
     __obj.asInstanceOf[IMouseTargetViewZone]
   }
   
-  extension [Self <: IMouseTargetViewZone](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IMouseTargetViewZone] (val x: Self) extends AnyVal {
     
     inline def setDetail(value: IMouseTargetViewZoneData): Self = StObject.set(x, "detail", value.asInstanceOf[js.Any])
     

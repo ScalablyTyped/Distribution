@@ -28,7 +28,8 @@ object DescribeVpcClassicLinkDnsSupportRequest {
     __obj.asInstanceOf[DescribeVpcClassicLinkDnsSupportRequest]
   }
   
-  extension [Self <: DescribeVpcClassicLinkDnsSupportRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeVpcClassicLinkDnsSupportRequest] (val x: Self) extends AnyVal {
     
     inline def setMaxResults(value: DescribeVpcClassicLinkDnsSupportMaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     

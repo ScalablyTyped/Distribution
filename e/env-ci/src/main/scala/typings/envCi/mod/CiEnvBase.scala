@@ -16,7 +16,8 @@ object CiEnvBase {
     __obj.asInstanceOf[CiEnvBase]
   }
   
-  extension [Self <: CiEnvBase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CiEnvBase] (val x: Self) extends AnyVal {
     
     inline def setIsCi(value: `true`): Self = StObject.set(x, "isCi", value.asInstanceOf[js.Any])
   }

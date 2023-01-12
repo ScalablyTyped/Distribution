@@ -53,7 +53,8 @@ object AuthorizedCertificate {
     __obj.asInstanceOf[AuthorizedCertificate]
   }
   
-  extension [Self <: AuthorizedCertificate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AuthorizedCertificate] (val x: Self) extends AnyVal {
     
     inline def setCertificateRawData(value: CertificateRawData): Self = StObject.set(x, "certificateRawData", value.asInstanceOf[js.Any])
     

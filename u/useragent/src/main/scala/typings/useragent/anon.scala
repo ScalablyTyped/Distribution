@@ -27,7 +27,8 @@ object anon {
       __obj.asInstanceOf[Device]
     }
     
-    extension [Self <: Device](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Device] (val x: Self) extends AnyVal {
       
       inline def setDevice(value: String): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
       
@@ -60,7 +61,8 @@ object anon {
       __obj.asInstanceOf[Family]
     }
     
-    extension [Self <: Family](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Family] (val x: Self) extends AnyVal {
       
       inline def setFamily(value: String): Self = StObject.set(x, "family", value.asInstanceOf[js.Any])
       
@@ -99,7 +101,8 @@ object anon {
       __obj.asInstanceOf[Major]
     }
     
-    extension [Self <: Major](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Major] (val x: Self) extends AnyVal {
       
       inline def setDevice(value: String): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
       

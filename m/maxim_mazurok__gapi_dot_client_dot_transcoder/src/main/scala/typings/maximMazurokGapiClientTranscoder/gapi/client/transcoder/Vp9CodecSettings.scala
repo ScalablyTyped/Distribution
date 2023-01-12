@@ -64,7 +64,8 @@ object Vp9CodecSettings {
     __obj.asInstanceOf[Vp9CodecSettings]
   }
   
-  extension [Self <: Vp9CodecSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Vp9CodecSettings] (val x: Self) extends AnyVal {
     
     inline def setBitrateBps(value: Double): Self = StObject.set(x, "bitrateBps", value.asInstanceOf[js.Any])
     

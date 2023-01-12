@@ -35,7 +35,8 @@ object NotificationSubscriber {
     __obj.asInstanceOf[NotificationSubscriber]
   }
   
-  extension [Self <: NotificationSubscriber](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NotificationSubscriber] (val x: Self) extends AnyVal {
     
     inline def setDeliveryPreference(value: NotificationSubscriberDeliveryPreference): Self = StObject.set(x, "deliveryPreference", value.asInstanceOf[js.Any])
     

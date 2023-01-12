@@ -19,7 +19,8 @@ object InvalidateAction {
     __obj.asInstanceOf[InvalidateAction]
   }
   
-  extension [Self <: InvalidateAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InvalidateAction] (val x: Self) extends AnyVal {
     
     inline def setType(value: invalidate): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

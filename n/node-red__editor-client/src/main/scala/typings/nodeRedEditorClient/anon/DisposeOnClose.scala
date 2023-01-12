@@ -22,7 +22,8 @@ object DisposeOnClose {
     __obj.asInstanceOf[DisposeOnClose]
   }
   
-  extension [Self <: DisposeOnClose](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisposeOnClose] (val x: Self) extends AnyVal {
     
     inline def setDisposeOnClose(value: Boolean): Self = StObject.set(x, "disposeOnClose", value.asInstanceOf[js.Any])
     

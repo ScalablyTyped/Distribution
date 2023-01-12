@@ -39,7 +39,8 @@ object RadioGroupProps {
     __obj.asInstanceOf[RadioGroupProps]
   }
   
-  extension [Self <: RadioGroupProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RadioGroupProps] (val x: Self) extends AnyVal {
     
     inline def setAccentColor(value: String): Self = StObject.set(x, "accentColor", value.asInstanceOf[js.Any])
     

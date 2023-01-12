@@ -28,7 +28,8 @@ object DeleteApplicationCloudWatchLoggingOptionResponse {
     __obj.asInstanceOf[DeleteApplicationCloudWatchLoggingOptionResponse]
   }
   
-  extension [Self <: DeleteApplicationCloudWatchLoggingOptionResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteApplicationCloudWatchLoggingOptionResponse] (val x: Self) extends AnyVal {
     
     inline def setApplicationARN(value: ResourceARN): Self = StObject.set(x, "ApplicationARN", value.asInstanceOf[js.Any])
     

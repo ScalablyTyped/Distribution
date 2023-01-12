@@ -21,7 +21,8 @@ object Totalcommitcomments {
     __obj.asInstanceOf[Totalcommitcomments]
   }
   
-  extension [Self <: Totalcommitcomments](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Totalcommitcomments] (val x: Self) extends AnyVal {
     
     inline def setTotal_commit_comments(value: Double): Self = StObject.set(x, "total_commit_comments", value.asInstanceOf[js.Any])
     

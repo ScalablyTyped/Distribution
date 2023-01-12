@@ -90,7 +90,8 @@ object RouterOptions {
     __obj.asInstanceOf[RouterOptions]
   }
   
-  extension [Self <: RouterOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RouterOptions] (val x: Self) extends AnyVal {
     
     inline def setHistory(value: RouterHistory): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
     

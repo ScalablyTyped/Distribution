@@ -23,7 +23,8 @@ object CollectionScheme {
     __obj.asInstanceOf[CollectionScheme]
   }
   
-  extension [Self <: CollectionScheme](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CollectionScheme] (val x: Self) extends AnyVal {
     
     inline def setConditionBasedCollectionScheme(value: ConditionBasedCollectionScheme): Self = StObject.set(x, "conditionBasedCollectionScheme", value.asInstanceOf[js.Any])
     

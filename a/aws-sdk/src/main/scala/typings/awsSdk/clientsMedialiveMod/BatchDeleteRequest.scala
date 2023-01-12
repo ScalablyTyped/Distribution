@@ -33,7 +33,8 @@ object BatchDeleteRequest {
     __obj.asInstanceOf[BatchDeleteRequest]
   }
   
-  extension [Self <: BatchDeleteRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchDeleteRequest] (val x: Self) extends AnyVal {
     
     inline def setChannelIds(value: listOfString): Self = StObject.set(x, "ChannelIds", value.asInstanceOf[js.Any])
     

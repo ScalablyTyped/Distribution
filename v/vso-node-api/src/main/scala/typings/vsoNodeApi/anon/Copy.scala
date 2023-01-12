@@ -32,7 +32,8 @@ object Copy {
     __obj.asInstanceOf[Copy]
   }
   
-  extension [Self <: Copy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Copy] (val x: Self) extends AnyVal {
     
     inline def setAdd(value: scala.Double): Self = StObject.set(x, "add", value.asInstanceOf[js.Any])
     

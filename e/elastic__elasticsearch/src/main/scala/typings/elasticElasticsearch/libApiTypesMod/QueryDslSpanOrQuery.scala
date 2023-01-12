@@ -17,7 +17,8 @@ object QueryDslSpanOrQuery {
     __obj.asInstanceOf[QueryDslSpanOrQuery]
   }
   
-  extension [Self <: QueryDslSpanOrQuery](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryDslSpanOrQuery] (val x: Self) extends AnyVal {
     
     inline def setClauses(value: js.Array[QueryDslSpanQuery]): Self = StObject.set(x, "clauses", value.asInstanceOf[js.Any])
     

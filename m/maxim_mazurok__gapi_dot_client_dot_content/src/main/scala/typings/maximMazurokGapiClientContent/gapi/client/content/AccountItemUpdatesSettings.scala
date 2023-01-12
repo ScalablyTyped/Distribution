@@ -32,7 +32,8 @@ object AccountItemUpdatesSettings {
     __obj.asInstanceOf[AccountItemUpdatesSettings]
   }
   
-  extension [Self <: AccountItemUpdatesSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccountItemUpdatesSettings] (val x: Self) extends AnyVal {
     
     inline def setAllowAvailabilityUpdates(value: Boolean): Self = StObject.set(x, "allowAvailabilityUpdates", value.asInstanceOf[js.Any])
     

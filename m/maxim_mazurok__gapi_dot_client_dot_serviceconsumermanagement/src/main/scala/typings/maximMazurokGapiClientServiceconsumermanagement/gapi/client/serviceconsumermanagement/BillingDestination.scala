@@ -19,7 +19,8 @@ object BillingDestination {
     __obj.asInstanceOf[BillingDestination]
   }
   
-  extension [Self <: BillingDestination](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BillingDestination] (val x: Self) extends AnyVal {
     
     inline def setMetrics(value: js.Array[String]): Self = StObject.set(x, "metrics", value.asInstanceOf[js.Any])
     

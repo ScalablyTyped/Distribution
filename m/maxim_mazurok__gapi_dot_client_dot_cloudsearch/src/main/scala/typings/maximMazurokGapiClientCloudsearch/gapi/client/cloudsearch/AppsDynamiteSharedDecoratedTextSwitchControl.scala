@@ -28,7 +28,8 @@ object AppsDynamiteSharedDecoratedTextSwitchControl {
     __obj.asInstanceOf[AppsDynamiteSharedDecoratedTextSwitchControl]
   }
   
-  extension [Self <: AppsDynamiteSharedDecoratedTextSwitchControl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppsDynamiteSharedDecoratedTextSwitchControl] (val x: Self) extends AnyVal {
     
     inline def setControlType(value: String): Self = StObject.set(x, "controlType", value.asInstanceOf[js.Any])
     

@@ -16,7 +16,8 @@ object SslPolicyReference {
     __obj.asInstanceOf[SslPolicyReference]
   }
   
-  extension [Self <: SslPolicyReference](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SslPolicyReference] (val x: Self) extends AnyVal {
     
     inline def setSslPolicy(value: String): Self = StObject.set(x, "sslPolicy", value.asInstanceOf[js.Any])
     

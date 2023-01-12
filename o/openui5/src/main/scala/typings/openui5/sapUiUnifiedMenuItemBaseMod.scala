@@ -437,7 +437,8 @@ object sapUiUnifiedMenuItemBaseMod {
       __obj.asInstanceOf[MenuItemBaseSettings]
     }
     
-    extension [Self <: MenuItemBaseSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MenuItemBaseSettings] (val x: Self) extends AnyVal {
       
       inline def setEnabled(value: Boolean | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       

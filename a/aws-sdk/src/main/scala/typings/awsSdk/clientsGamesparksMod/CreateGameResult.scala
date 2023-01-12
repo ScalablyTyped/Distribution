@@ -18,7 +18,8 @@ object CreateGameResult {
     __obj.asInstanceOf[CreateGameResult]
   }
   
-  extension [Self <: CreateGameResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateGameResult] (val x: Self) extends AnyVal {
     
     inline def setGame(value: GameDetails): Self = StObject.set(x, "Game", value.asInstanceOf[js.Any])
     

@@ -38,7 +38,8 @@ object Calendar {
     __obj.asInstanceOf[Calendar]
   }
   
-  extension [Self <: Calendar](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Calendar] (val x: Self) extends AnyVal {
     
     inline def setAlgorithmType(value: Double): Self = StObject.set(x, "AlgorithmType", value.asInstanceOf[js.Any])
     

@@ -57,7 +57,8 @@ object libInputGroupMod {
       __obj.asInstanceOf[InputGroupProps]
     }
     
-    extension [Self <: InputGroupProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InputGroupProps] (val x: Self) extends AnyVal {
       
       inline def setBsClass(value: String): Self = StObject.set(x, "bsClass", value.asInstanceOf[js.Any])
       

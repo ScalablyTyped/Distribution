@@ -16,7 +16,8 @@ object UnpackInputs {
     __obj.asInstanceOf[UnpackInputs]
   }
   
-  extension [Self <: UnpackInputs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UnpackInputs] (val x: Self) extends AnyVal {
     
     inline def setValue(value: scala.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     

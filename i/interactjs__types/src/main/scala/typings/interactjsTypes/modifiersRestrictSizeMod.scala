@@ -88,7 +88,8 @@ object modifiersRestrictSizeMod {
       __obj.asInstanceOf[RestrictSizeOptions]
     }
     
-    extension [Self <: RestrictSizeOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RestrictSizeOptions] (val x: Self) extends AnyVal {
       
       inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       
@@ -141,7 +142,8 @@ object modifiersRestrictSizeMod {
       __obj.asInstanceOf[RestrictSizeState]
     }
     
-    extension [Self <: RestrictSizeState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RestrictSizeState] (val x: Self) extends AnyVal {
       
       inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       

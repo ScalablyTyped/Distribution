@@ -19,7 +19,8 @@ object ProofPrint {
     __obj.asInstanceOf[ProofPrint]
   }
   
-  extension [Self <: ProofPrint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProofPrint] (val x: Self) extends AnyVal {
     
     inline def setMedia(value: Media): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])
     

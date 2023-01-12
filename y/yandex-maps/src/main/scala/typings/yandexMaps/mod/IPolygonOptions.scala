@@ -75,7 +75,8 @@ object IPolygonOptions {
     __obj.asInstanceOf[IPolygonOptions]
   }
   
-  extension [Self <: IPolygonOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPolygonOptions] (val x: Self) extends AnyVal {
     
     inline def setCursor(value: String): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
     

@@ -29,7 +29,8 @@ object concatenateToResponseMod {
       __obj.asInstanceOf[ConcatenateToResponseReturn]
     }
     
-    extension [Self <: ConcatenateToResponseReturn](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConcatenateToResponseReturn] (val x: Self) extends AnyVal {
       
       inline def setDone(value: js.Promise[Unit]): Self = StObject.set(x, "done", value.asInstanceOf[js.Any])
       

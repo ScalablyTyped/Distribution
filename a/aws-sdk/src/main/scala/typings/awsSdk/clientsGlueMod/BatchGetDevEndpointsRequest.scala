@@ -18,7 +18,8 @@ object BatchGetDevEndpointsRequest {
     __obj.asInstanceOf[BatchGetDevEndpointsRequest]
   }
   
-  extension [Self <: BatchGetDevEndpointsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchGetDevEndpointsRequest] (val x: Self) extends AnyVal {
     
     inline def setDevEndpointNames(value: DevEndpointNames): Self = StObject.set(x, "DevEndpointNames", value.asInstanceOf[js.Any])
     

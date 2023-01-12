@@ -38,7 +38,8 @@ object AwsEcsClusterConfigurationExecuteCommandConfigurationLogConfigurationDeta
     __obj.asInstanceOf[AwsEcsClusterConfigurationExecuteCommandConfigurationLogConfigurationDetails]
   }
   
-  extension [Self <: AwsEcsClusterConfigurationExecuteCommandConfigurationLogConfigurationDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsEcsClusterConfigurationExecuteCommandConfigurationLogConfigurationDetails] (val x: Self) extends AnyVal {
     
     inline def setCloudWatchEncryptionEnabled(value: Boolean): Self = StObject.set(x, "CloudWatchEncryptionEnabled", value.asInstanceOf[js.Any])
     

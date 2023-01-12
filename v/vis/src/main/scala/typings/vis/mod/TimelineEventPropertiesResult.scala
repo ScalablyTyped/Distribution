@@ -72,7 +72,8 @@ object TimelineEventPropertiesResult {
     __obj.asInstanceOf[TimelineEventPropertiesResult]
   }
   
-  extension [Self <: TimelineEventPropertiesResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimelineEventPropertiesResult] (val x: Self) extends AnyVal {
     
     inline def setEvent(value: Event): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     

@@ -27,7 +27,8 @@ object anon {
       __obj.asInstanceOf[Declaration]
     }
     
-    extension [Self <: Declaration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Declaration] (val x: Self) extends AnyVal {
       
       inline def setDeclaration(value: Boolean): Self = StObject.set(x, "declaration", value.asInstanceOf[js.Any])
       
@@ -54,7 +55,8 @@ object anon {
       __obj.asInstanceOf[ExternalId]
     }
     
-    extension [Self <: ExternalId](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExternalId] (val x: Self) extends AnyVal {
       
       inline def setExternalId(value: String): Self = StObject.set(x, "externalId", value.asInstanceOf[js.Any])
       

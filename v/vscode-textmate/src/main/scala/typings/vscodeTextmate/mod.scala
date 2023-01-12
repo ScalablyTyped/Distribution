@@ -167,7 +167,8 @@ object mod {
       __obj.asInstanceOf[IGrammarConfiguration]
     }
     
-    extension [Self <: IGrammarConfiguration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IGrammarConfiguration] (val x: Self) extends AnyVal {
       
       inline def setBalancedBracketSelectors(value: js.Array[String]): Self = StObject.set(x, "balancedBracketSelectors", value.asInstanceOf[js.Any])
       
@@ -204,7 +205,8 @@ object mod {
       __obj.asInstanceOf[IRawTheme]
     }
     
-    extension [Self <: IRawTheme](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IRawTheme] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -231,7 +233,8 @@ object mod {
       __obj.asInstanceOf[IRawThemeSetting]
     }
     
-    extension [Self <: IRawThemeSetting](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IRawThemeSetting] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -262,7 +265,8 @@ object mod {
       __obj.asInstanceOf[IToken]
     }
     
-    extension [Self <: IToken](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IToken] (val x: Self) extends AnyVal {
       
       inline def setEndIndex(value: Double): Self = StObject.set(x, "endIndex", value.asInstanceOf[js.Any])
       
@@ -297,7 +301,8 @@ object mod {
       __obj.asInstanceOf[ITokenizeLineResult]
     }
     
-    extension [Self <: ITokenizeLineResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITokenizeLineResult] (val x: Self) extends AnyVal {
       
       inline def setRuleStack(value: StackElement): Self = StObject.set(x, "ruleStack", value.asInstanceOf[js.Any])
       
@@ -336,7 +341,8 @@ object mod {
       __obj.asInstanceOf[ITokenizeLineResult2]
     }
     
-    extension [Self <: ITokenizeLineResult2](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITokenizeLineResult2] (val x: Self) extends AnyVal {
       
       inline def setRuleStack(value: StackElement): Self = StObject.set(x, "ruleStack", value.asInstanceOf[js.Any])
       
@@ -407,7 +413,8 @@ object mod {
       __obj.asInstanceOf[RegistryOptions]
     }
     
-    extension [Self <: RegistryOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RegistryOptions] (val x: Self) extends AnyVal {
       
       inline def setColorMap(value: js.Array[String]): Self = StObject.set(x, "colorMap", value.asInstanceOf[js.Any])
       
@@ -445,7 +452,8 @@ object mod {
       __obj.asInstanceOf[StackElement]
     }
     
-    extension [Self <: StackElement](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StackElement] (val x: Self) extends AnyVal {
       
       inline def setDepth(value: Double): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
       

@@ -17,7 +17,8 @@ object SignUpOptions {
     __obj.asInstanceOf[SignUpOptions]
   }
   
-  extension [Self <: SignUpOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SignUpOptions] (val x: Self) extends AnyVal {
     
     inline def setInstallationId(value: String): Self = StObject.set(x, "installationId", value.asInstanceOf[js.Any])
     

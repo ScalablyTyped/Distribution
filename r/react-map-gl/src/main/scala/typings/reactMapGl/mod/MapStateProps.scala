@@ -57,7 +57,8 @@ object MapStateProps {
     __obj.asInstanceOf[MapStateProps]
   }
   
-  extension [Self <: MapStateProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MapStateProps] (val x: Self) extends AnyVal {
     
     inline def setAltitude(value: Double): Self = StObject.set(x, "altitude", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object AsyncDescriptionHandler {
     __obj.asInstanceOf[AsyncDescriptionHandler]
   }
   
-  extension [Self <: AsyncDescriptionHandler](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AsyncDescriptionHandler] (val x: Self) extends AnyVal {
     
     inline def setAsyncDescriptionHandler(value: js.Function): Self = StObject.set(x, "asyncDescriptionHandler", value.asInstanceOf[js.Any])
     

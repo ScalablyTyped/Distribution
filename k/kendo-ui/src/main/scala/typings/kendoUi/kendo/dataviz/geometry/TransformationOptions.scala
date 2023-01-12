@@ -15,7 +15,8 @@ object TransformationOptions {
     __obj.asInstanceOf[TransformationOptions]
   }
   
-  extension [Self <: TransformationOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransformationOptions] (val x: Self) extends AnyVal {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

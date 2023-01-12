@@ -83,7 +83,8 @@ object XBackendEntities {
     __obj.asInstanceOf[XBackendEntities]
   }
   
-  extension [Self <: XBackendEntities](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XBackendEntities] (val x: Self) extends AnyVal {
     
     inline def setAdminEntity(value: String): Self = StObject.set(x, "AdminEntity", value.asInstanceOf[js.Any])
     

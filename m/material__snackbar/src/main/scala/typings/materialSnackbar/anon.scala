@@ -49,7 +49,8 @@ object anon {
       __obj.asInstanceOf[ACTIONSELECTOR]
     }
     
-    extension [Self <: ACTIONSELECTOR](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ACTIONSELECTOR] (val x: Self) extends AnyVal {
       
       inline def setACTION_SELECTOR(value: String): Self = StObject.set(x, "ACTION_SELECTOR", value.asInstanceOf[js.Any])
       
@@ -106,7 +107,8 @@ object anon {
       __obj.asInstanceOf[ARIALIVEDELAYMS]
     }
     
-    extension [Self <: ARIALIVEDELAYMS](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ARIALIVEDELAYMS] (val x: Self) extends AnyVal {
       
       inline def setARIA_LIVE_DELAY_MS(value: Double): Self = StObject.set(x, "ARIA_LIVE_DELAY_MS", value.asInstanceOf[js.Any])
       
@@ -139,7 +141,8 @@ object anon {
       __obj.asInstanceOf[CLOSING]
     }
     
-    extension [Self <: CLOSING](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CLOSING] (val x: Self) extends AnyVal {
       
       inline def setCLOSING(value: String): Self = StObject.set(x, "CLOSING", value.asInstanceOf[js.Any])
       
@@ -173,7 +176,8 @@ object anon {
       __obj.asInstanceOf[PartialMDCSnackbarAdapter]
     }
     
-    extension [Self <: PartialMDCSnackbarAdapter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialMDCSnackbarAdapter] (val x: Self) extends AnyVal {
       
       inline def setAddClass(value: /* className */ String => Unit): Self = StObject.set(x, "addClass", js.Any.fromFunction1(value))
       

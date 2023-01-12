@@ -211,7 +211,8 @@ object sapUiCommonsToolbarSeparatorMod {
       __obj.asInstanceOf[ToolbarSeparatorSettings]
     }
     
-    extension [Self <: ToolbarSeparatorSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ToolbarSeparatorSettings] (val x: Self) extends AnyVal {
       
       inline def setDesign(
         value: ToolbarSeparatorDesign | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ToolbarSeparatorDesign * / any */ String) | PropertyBindingInfo

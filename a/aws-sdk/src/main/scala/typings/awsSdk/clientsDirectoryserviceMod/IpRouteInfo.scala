@@ -43,7 +43,8 @@ object IpRouteInfo {
     __obj.asInstanceOf[IpRouteInfo]
   }
   
-  extension [Self <: IpRouteInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IpRouteInfo] (val x: Self) extends AnyVal {
     
     inline def setAddedDateTime(value: js.Date): Self = StObject.set(x, "AddedDateTime", value.asInstanceOf[js.Any])
     

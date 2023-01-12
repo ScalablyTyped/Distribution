@@ -33,7 +33,8 @@ object Statement {
     __obj.asInstanceOf[Statement]
   }
   
-  extension [Self <: Statement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Statement] (val x: Self) extends AnyVal {
     
     inline def setEndPosition(value: Position): Self = StObject.set(x, "EndPosition", value.asInstanceOf[js.Any])
     

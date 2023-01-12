@@ -27,7 +27,8 @@ object ResourceScalarsAnnotations {
     __obj.asInstanceOf[ResourceScalarsAnnotations]
   }
   
-  extension [Self <: ResourceScalarsAnnotations](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResourceScalarsAnnotations] (val x: Self) extends AnyVal {
     
     inline def setDisplayName(value: () => js.Array[AnnotationRef]): Self = StObject.set(x, "displayName", js.Any.fromFunction0(value))
   }

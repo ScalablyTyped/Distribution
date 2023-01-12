@@ -36,7 +36,8 @@ object sapUiIntegrationDesigntimeBaseEditorValidatorIsStringListMod extends Shor
       __obj.asInstanceOf[IsStringList]
     }
     
-    extension [Self <: IsStringList](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IsStringList] (val x: Self) extends AnyVal {
       
       inline def setValidate(value: js.Array[String] => Boolean): Self = StObject.set(x, "validate", js.Any.fromFunction1(value))
     }

@@ -15,7 +15,8 @@ object FilterTypeDescriptor {
     __obj.asInstanceOf[FilterTypeDescriptor]
   }
   
-  extension [Self <: FilterTypeDescriptor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FilterTypeDescriptor] (val x: Self) extends AnyVal {
     
     inline def setSelfFilter(value: Boolean): Self = StObject.set(x, "selfFilter", value.asInstanceOf[js.Any])
     

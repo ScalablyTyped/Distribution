@@ -77,7 +77,8 @@ object HelloSign {
     __obj.asInstanceOf[HelloSign]
   }
   
-  extension [Self <: HelloSign](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HelloSign] (val x: Self) extends AnyVal {
     
     inline def setAccount(value: AccountModule): Self = StObject.set(x, "account", value.asInstanceOf[js.Any])
     

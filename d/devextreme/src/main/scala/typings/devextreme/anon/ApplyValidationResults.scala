@@ -43,7 +43,8 @@ object ApplyValidationResults {
     __obj.asInstanceOf[ApplyValidationResults]
   }
   
-  extension [Self <: ApplyValidationResults](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApplyValidationResults] (val x: Self) extends AnyVal {
     
     inline def setApplyValidationResults(value: js.Function): Self = StObject.set(x, "applyValidationResults", value.asInstanceOf[js.Any])
     

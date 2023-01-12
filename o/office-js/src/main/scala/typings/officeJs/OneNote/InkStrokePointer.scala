@@ -35,7 +35,8 @@ object InkStrokePointer {
     __obj.asInstanceOf[InkStrokePointer]
   }
   
-  extension [Self <: InkStrokePointer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InkStrokePointer] (val x: Self) extends AnyVal {
     
     inline def setContentId(value: String): Self = StObject.set(x, "contentId", value.asInstanceOf[js.Any])
     

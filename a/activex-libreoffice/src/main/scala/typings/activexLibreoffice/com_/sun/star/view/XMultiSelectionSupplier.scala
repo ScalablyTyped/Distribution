@@ -72,7 +72,8 @@ object XMultiSelectionSupplier {
     __obj.asInstanceOf[XMultiSelectionSupplier]
   }
   
-  extension [Self <: XMultiSelectionSupplier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XMultiSelectionSupplier] (val x: Self) extends AnyVal {
     
     inline def setAddSelection(value: Any => Boolean): Self = StObject.set(x, "addSelection", js.Any.fromFunction1(value))
     

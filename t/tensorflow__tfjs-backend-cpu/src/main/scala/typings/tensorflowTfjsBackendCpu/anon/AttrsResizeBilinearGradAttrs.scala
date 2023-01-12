@@ -22,7 +22,8 @@ object AttrsResizeBilinearGradAttrs {
     __obj.asInstanceOf[AttrsResizeBilinearGradAttrs]
   }
   
-  extension [Self <: AttrsResizeBilinearGradAttrs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AttrsResizeBilinearGradAttrs] (val x: Self) extends AnyVal {
     
     inline def setAttrs(value: ResizeBilinearGradAttrs): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
     

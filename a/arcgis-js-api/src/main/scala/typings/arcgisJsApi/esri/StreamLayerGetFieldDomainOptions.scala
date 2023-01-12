@@ -20,7 +20,8 @@ object StreamLayerGetFieldDomainOptions {
     __obj.asInstanceOf[StreamLayerGetFieldDomainOptions]
   }
   
-  extension [Self <: StreamLayerGetFieldDomainOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StreamLayerGetFieldDomainOptions] (val x: Self) extends AnyVal {
     
     inline def setFeature(value: Graphic): Self = StObject.set(x, "feature", value.asInstanceOf[js.Any])
   }

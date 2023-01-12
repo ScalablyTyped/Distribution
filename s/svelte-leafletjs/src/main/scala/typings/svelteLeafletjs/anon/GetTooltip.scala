@@ -31,7 +31,8 @@ object GetTooltip {
     __obj.asInstanceOf[GetTooltip]
   }
   
-  extension [Self <: GetTooltip](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetTooltip] (val x: Self) extends AnyVal {
     
     inline def setEvents(value: PathEventKeys): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     

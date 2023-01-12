@@ -80,7 +80,8 @@ object DocumentHtmlDefinition {
     __obj.asInstanceOf[DocumentHtmlDefinition]
   }
   
-  extension [Self <: DocumentHtmlDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DocumentHtmlDefinition] (val x: Self) extends AnyVal {
     
     inline def setDisplayAnchorPrefix(value: String): Self = StObject.set(x, "displayAnchorPrefix", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object IRecipientInfo {
     __obj.asInstanceOf[IRecipientInfo]
   }
   
-  extension [Self <: IRecipientInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IRecipientInfo] (val x: Self) extends AnyVal {
     
     inline def setValue(value: RecipientInfoValue): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     

@@ -33,7 +33,8 @@ object PartialTriggerOptionsObje {
     __obj.asInstanceOf[PartialTriggerOptionsObje]
   }
   
-  extension [Self <: PartialTriggerOptionsObje](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialTriggerOptionsObje] (val x: Self) extends AnyVal {
     
     inline def setAnimationDistanceThreshold(value: Double): Self = StObject.set(x, "animationDistanceThreshold", value.asInstanceOf[js.Any])
     

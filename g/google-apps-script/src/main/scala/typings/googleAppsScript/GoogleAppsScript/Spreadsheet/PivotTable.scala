@@ -57,7 +57,8 @@ object PivotTable {
     __obj.asInstanceOf[PivotTable]
   }
   
-  extension [Self <: PivotTable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PivotTable] (val x: Self) extends AnyVal {
     
     inline def setAddCalculatedPivotValue(value: (String, String) => PivotValue): Self = StObject.set(x, "addCalculatedPivotValue", js.Any.fromFunction2(value))
     

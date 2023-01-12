@@ -22,7 +22,8 @@ object ListAndroidAppsResponse {
     __obj.asInstanceOf[ListAndroidAppsResponse]
   }
   
-  extension [Self <: ListAndroidAppsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListAndroidAppsResponse] (val x: Self) extends AnyVal {
     
     inline def setApps(value: js.Array[AndroidApp]): Self = StObject.set(x, "apps", value.asInstanceOf[js.Any])
     

@@ -34,7 +34,8 @@ object SceneServiceVersion {
     __obj.asInstanceOf[SceneServiceVersion]
   }
   
-  extension [Self <: SceneServiceVersion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SceneServiceVersion] (val x: Self) extends AnyVal {
     
     inline def setMajor(value: Double): Self = StObject.set(x, "major", value.asInstanceOf[js.Any])
     

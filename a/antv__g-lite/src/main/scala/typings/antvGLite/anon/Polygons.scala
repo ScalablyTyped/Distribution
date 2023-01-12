@@ -20,7 +20,8 @@ object Polygons {
     __obj.asInstanceOf[Polygons]
   }
   
-  extension [Self <: Polygons](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Polygons] (val x: Self) extends AnyVal {
     
     inline def setPolygons(value: js.Array[js.Array[js.Tuple2[Double, Double]]]): Self = StObject.set(x, "polygons", value.asInstanceOf[js.Any])
     

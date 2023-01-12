@@ -203,7 +203,8 @@ object ojDateTimePickerEventMap {
     __obj.asInstanceOf[ojDateTimePickerEventMap]
   }
   
-  extension [Self <: ojDateTimePickerEventMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ojDateTimePickerEventMap] (val x: Self) extends AnyVal {
     
     inline def setOjAnimateEnd(value: ojAnimateEnd): Self = StObject.set(x, "ojAnimateEnd", value.asInstanceOf[js.Any])
     

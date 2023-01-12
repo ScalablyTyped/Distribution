@@ -404,7 +404,8 @@ object Object {
       __obj.asInstanceOf[ObjectMergeOptions[T]]
     }
     
-    extension [Self <: ObjectMergeOptions[?], T](x: Self & ObjectMergeOptions[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ObjectMergeOptions[?], T] (val x: Self & ObjectMergeOptions[T]) extends AnyVal {
       
       inline def setDeep(value: Boolean): Self = StObject.set(x, "deep", value.asInstanceOf[js.Any])
       
@@ -445,7 +446,8 @@ object Object {
       __obj.asInstanceOf[QueryStringOptions[T, U]]
     }
     
-    extension [Self <: QueryStringOptions[?, ?], T, U](x: Self & (QueryStringOptions[T, U])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QueryStringOptions[?, ?], T, U] (val x: Self & (QueryStringOptions[T, U])) extends AnyVal {
       
       inline def setDeep(value: Boolean): Self = StObject.set(x, "deep", value.asInstanceOf[js.Any])
       
@@ -482,7 +484,8 @@ object Object {
       __obj.asInstanceOf[QueryStringParseOptions[T, U]]
     }
     
-    extension [Self <: QueryStringParseOptions[?, ?], T, U](x: Self & (QueryStringParseOptions[T, U])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QueryStringParseOptions[?, ?], T, U] (val x: Self & (QueryStringParseOptions[T, U])) extends AnyVal {
       
       inline def setAuto(value: Boolean): Self = StObject.set(x, "auto", value.asInstanceOf[js.Any])
       

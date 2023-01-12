@@ -24,7 +24,8 @@ object Rule {
     __obj.asInstanceOf[Rule]
   }
   
-  extension [Self <: Rule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Rule] (val x: Self) extends AnyVal {
     
     inline def setBlock(value: Block): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
     

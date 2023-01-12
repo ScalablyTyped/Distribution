@@ -34,7 +34,8 @@ object TilemapJSONFileConfig {
     __obj.asInstanceOf[TilemapJSONFileConfig]
   }
   
-  extension [Self <: TilemapJSONFileConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TilemapJSONFileConfig] (val x: Self) extends AnyVal {
     
     inline def setExtension(value: String): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
     

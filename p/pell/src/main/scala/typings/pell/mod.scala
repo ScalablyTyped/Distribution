@@ -28,7 +28,8 @@ object mod {
       __obj.asInstanceOf[PellElement]
     }
     
-    extension [Self <: PellElement](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PellElement] (val x: Self) extends AnyVal {
       
       inline def setContent(value: HTMLDivElement): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     }
@@ -60,7 +61,8 @@ object mod {
       __obj.asInstanceOf[pellActionConfig]
     }
     
-    extension [Self <: pellActionConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: pellActionConfig] (val x: Self) extends AnyVal {
       
       inline def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
       
@@ -143,7 +145,8 @@ object mod {
       __obj.asInstanceOf[pellClasses]
     }
     
-    extension [Self <: pellClasses](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: pellClasses] (val x: Self) extends AnyVal {
       
       inline def setActionbar(value: String): Self = StObject.set(x, "actionbar", value.asInstanceOf[js.Any])
       
@@ -184,7 +187,8 @@ object mod {
       __obj.asInstanceOf[pellConfig[T]]
     }
     
-    extension [Self <: pellConfig[?], T /* <: HTMLElement */](x: Self & pellConfig[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: pellConfig[?], T /* <: HTMLElement */] (val x: Self & pellConfig[T]) extends AnyVal {
       
       inline def setActions(value: js.Array[pellAction]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
       
@@ -227,7 +231,8 @@ object mod {
       __obj.asInstanceOf[pellCustomActionConfig]
     }
     
-    extension [Self <: pellCustomActionConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: pellCustomActionConfig] (val x: Self) extends AnyVal {
       
       inline def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
       

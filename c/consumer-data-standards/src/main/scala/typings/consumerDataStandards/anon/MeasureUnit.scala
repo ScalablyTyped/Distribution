@@ -39,7 +39,8 @@ object MeasureUnit {
     __obj.asInstanceOf[MeasureUnit]
   }
   
-  extension [Self <: MeasureUnit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MeasureUnit] (val x: Self) extends AnyVal {
     
     inline def setMeasureUnit(value: KWH | KVA | KVAR | KVARH | KW | DAYS | METER | MONTH): Self = StObject.set(x, "measureUnit", value.asInstanceOf[js.Any])
     

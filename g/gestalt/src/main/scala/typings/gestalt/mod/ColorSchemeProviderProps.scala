@@ -20,7 +20,8 @@ object ColorSchemeProviderProps {
     __obj.asInstanceOf[ColorSchemeProviderProps]
   }
   
-  extension [Self <: ColorSchemeProviderProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ColorSchemeProviderProps] (val x: Self) extends AnyVal {
     
     inline def setColorScheme(value: light | dark | userPreference): Self = StObject.set(x, "colorScheme", value.asInstanceOf[js.Any])
     

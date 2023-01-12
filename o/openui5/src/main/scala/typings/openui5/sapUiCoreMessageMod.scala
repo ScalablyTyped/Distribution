@@ -357,7 +357,8 @@ object sapUiCoreMessageMod {
       __obj.asInstanceOf[MessageSettings]
     }
     
-    extension [Self <: MessageSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MessageSettings] (val x: Self) extends AnyVal {
       
       inline def setIcon(value: URI | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
       

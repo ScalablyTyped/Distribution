@@ -17,7 +17,8 @@ object SliderStyle {
     __obj.asInstanceOf[SliderStyle]
   }
   
-  extension [Self <: SliderStyle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SliderStyle] (val x: Self) extends AnyVal {
     
     inline def setLowerTrackColor(value: String): Self = StObject.set(x, "lowerTrackColor", value.asInstanceOf[js.Any])
     

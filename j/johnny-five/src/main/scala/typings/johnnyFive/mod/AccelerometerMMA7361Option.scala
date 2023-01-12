@@ -17,7 +17,8 @@ object AccelerometerMMA7361Option {
     __obj.asInstanceOf[AccelerometerMMA7361Option]
   }
   
-  extension [Self <: AccelerometerMMA7361Option](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccelerometerMMA7361Option] (val x: Self) extends AnyVal {
     
     inline def setSleepPin(value: Double | String): Self = StObject.set(x, "sleepPin", value.asInstanceOf[js.Any])
     

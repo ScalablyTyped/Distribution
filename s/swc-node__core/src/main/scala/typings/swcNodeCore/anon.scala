@@ -34,7 +34,8 @@ object anon {
       __obj.asInstanceOf[PartialReactConfig]
     }
     
-    extension [Self <: PartialReactConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialReactConfig] (val x: Self) extends AnyVal {
       
       inline def setDevelopment(value: Boolean): Self = StObject.set(x, "development", value.asInstanceOf[js.Any])
       

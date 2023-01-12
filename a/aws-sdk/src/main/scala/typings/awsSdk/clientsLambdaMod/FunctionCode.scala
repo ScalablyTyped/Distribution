@@ -38,7 +38,8 @@ object FunctionCode {
     __obj.asInstanceOf[FunctionCode]
   }
   
-  extension [Self <: FunctionCode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FunctionCode] (val x: Self) extends AnyVal {
     
     inline def setImageUri(value: String): Self = StObject.set(x, "ImageUri", value.asInstanceOf[js.Any])
     

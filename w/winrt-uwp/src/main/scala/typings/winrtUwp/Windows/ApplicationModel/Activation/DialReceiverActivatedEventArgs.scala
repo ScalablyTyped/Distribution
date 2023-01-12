@@ -48,7 +48,8 @@ object DialReceiverActivatedEventArgs {
     __obj.asInstanceOf[DialReceiverActivatedEventArgs]
   }
   
-  extension [Self <: DialReceiverActivatedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DialReceiverActivatedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setAppName(value: String): Self = StObject.set(x, "appName", value.asInstanceOf[js.Any])
     

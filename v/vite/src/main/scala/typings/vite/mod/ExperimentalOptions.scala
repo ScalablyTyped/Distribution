@@ -38,7 +38,8 @@ object ExperimentalOptions {
     __obj.asInstanceOf[ExperimentalOptions]
   }
   
-  extension [Self <: ExperimentalOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExperimentalOptions] (val x: Self) extends AnyVal {
     
     inline def setHmrPartialAccept(value: Boolean): Self = StObject.set(x, "hmrPartialAccept", value.asInstanceOf[js.Any])
     

@@ -27,7 +27,8 @@ object ViewPropsIOS {
     __obj.asInstanceOf[ViewPropsIOS]
   }
   
-  extension [Self <: ViewPropsIOS](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ViewPropsIOS] (val x: Self) extends AnyVal {
     
     inline def setShouldRasterizeIOS(value: Boolean): Self = StObject.set(x, "shouldRasterizeIOS", value.asInstanceOf[js.Any])
     

@@ -42,7 +42,8 @@ object mod {
         __obj.asInstanceOf[SpecConfig]
       }
       
-      extension [Self <: SpecConfig](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SpecConfig] (val x: Self) extends AnyVal {
         
         inline def setBasePath(value: String): Self = StObject.set(x, "basePath", value.asInstanceOf[js.Any])
         
@@ -67,7 +68,8 @@ object mod {
         __obj.asInstanceOf[SpecOptions]
       }
       
-      extension [Self <: SpecOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SpecOptions] (val x: Self) extends AnyVal {
         
         inline def setDefaultResponses(value: js.Object): Self = StObject.set(x, "defaultResponses", value.asInstanceOf[js.Any])
         

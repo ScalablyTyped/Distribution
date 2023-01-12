@@ -28,7 +28,8 @@ object GradeCategory {
     __obj.asInstanceOf[GradeCategory]
   }
   
-  extension [Self <: GradeCategory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GradeCategory] (val x: Self) extends AnyVal {
     
     inline def setDefaultGradeDenominator(value: Double): Self = StObject.set(x, "defaultGradeDenominator", value.asInstanceOf[js.Any])
     

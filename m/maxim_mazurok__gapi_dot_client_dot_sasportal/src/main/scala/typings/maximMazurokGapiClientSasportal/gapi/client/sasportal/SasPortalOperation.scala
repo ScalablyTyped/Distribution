@@ -42,7 +42,8 @@ object SasPortalOperation {
     __obj.asInstanceOf[SasPortalOperation]
   }
   
-  extension [Self <: SasPortalOperation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SasPortalOperation] (val x: Self) extends AnyVal {
     
     inline def setDone(value: Boolean): Self = StObject.set(x, "done", value.asInstanceOf[js.Any])
     

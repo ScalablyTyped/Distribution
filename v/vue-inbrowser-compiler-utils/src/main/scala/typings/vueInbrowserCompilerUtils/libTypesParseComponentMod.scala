@@ -25,7 +25,8 @@ object libTypesParseComponentMod {
       __obj.asInstanceOf[VsgSFCDescriptor]
     }
     
-    extension [Self <: VsgSFCDescriptor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VsgSFCDescriptor] (val x: Self) extends AnyVal {
       
       inline def setStyles(value: js.Array[String]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       
@@ -48,7 +49,8 @@ object libTypesParseComponentMod {
       __obj.asInstanceOf[VsgSFCDescriptorSimple]
     }
     
-    extension [Self <: VsgSFCDescriptorSimple](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VsgSFCDescriptorSimple] (val x: Self) extends AnyVal {
       
       inline def setScript(value: String): Self = StObject.set(x, "script", value.asInstanceOf[js.Any])
       

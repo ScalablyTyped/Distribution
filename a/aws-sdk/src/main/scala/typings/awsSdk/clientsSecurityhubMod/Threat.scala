@@ -33,7 +33,8 @@ object Threat {
     __obj.asInstanceOf[Threat]
   }
   
-  extension [Self <: Threat](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Threat] (val x: Self) extends AnyVal {
     
     inline def setFilePaths(value: FilePathList): Self = StObject.set(x, "FilePaths", value.asInstanceOf[js.Any])
     

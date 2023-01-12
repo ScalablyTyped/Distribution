@@ -41,7 +41,8 @@ object libEsmDatePickerNavbarMod {
       __obj.asInstanceOf[IDatePickerNavbarProps]
     }
     
-    extension [Self <: IDatePickerNavbarProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDatePickerNavbarProps] (val x: Self) extends AnyVal {
       
       inline def setHideLeftNavButton(value: Boolean): Self = StObject.set(x, "hideLeftNavButton", value.asInstanceOf[js.Any])
       

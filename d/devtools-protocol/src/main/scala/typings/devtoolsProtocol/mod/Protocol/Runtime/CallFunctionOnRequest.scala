@@ -81,7 +81,8 @@ object CallFunctionOnRequest {
     __obj.asInstanceOf[CallFunctionOnRequest]
   }
   
-  extension [Self <: CallFunctionOnRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CallFunctionOnRequest] (val x: Self) extends AnyVal {
     
     inline def setArguments(value: js.Array[CallArgument]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
     

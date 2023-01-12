@@ -90,7 +90,8 @@ object XEngine {
     __obj.asInstanceOf[XEngine]
   }
   
-  extension [Self <: XEngine](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XEngine] (val x: Self) extends AnyVal {
     
     inline def setAddEngineListener(value: XEngineListener => Unit): Self = StObject.set(x, "addEngineListener", js.Any.fromFunction1(value))
     

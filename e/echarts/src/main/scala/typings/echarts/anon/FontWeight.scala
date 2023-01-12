@@ -348,7 +348,8 @@ object FontWeight {
     __obj.asInstanceOf[FontWeight]
   }
   
-  extension [Self <: FontWeight](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FontWeight] (val x: Self) extends AnyVal {
     
     inline def setAlign(value: String): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     

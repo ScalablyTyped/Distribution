@@ -58,7 +58,8 @@ object CreateDistributionRequest {
     __obj.asInstanceOf[CreateDistributionRequest]
   }
   
-  extension [Self <: CreateDistributionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateDistributionRequest] (val x: Self) extends AnyVal {
     
     inline def setBundleId(value: String): Self = StObject.set(x, "bundleId", value.asInstanceOf[js.Any])
     

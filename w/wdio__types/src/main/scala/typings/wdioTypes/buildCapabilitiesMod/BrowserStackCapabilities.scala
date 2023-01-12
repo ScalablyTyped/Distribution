@@ -226,7 +226,8 @@ object BrowserStackCapabilities {
     __obj.asInstanceOf[BrowserStackCapabilities]
   }
   
-  extension [Self <: BrowserStackCapabilities](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BrowserStackCapabilities] (val x: Self) extends AnyVal {
     
     inline def setAcceptSslCerts(value: Boolean): Self = StObject.set(x, "acceptSslCerts", value.asInstanceOf[js.Any])
     

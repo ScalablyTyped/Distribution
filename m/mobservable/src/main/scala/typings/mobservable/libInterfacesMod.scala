@@ -26,7 +26,8 @@ object libInterfacesMod {
       __obj.asInstanceOf[IArrayChange[T]]
     }
     
-    extension [Self <: IArrayChange[?], T](x: Self & IArrayChange[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IArrayChange[?], T] (val x: Self & IArrayChange[T]) extends AnyVal {
       
       inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
@@ -65,7 +66,8 @@ object libInterfacesMod {
       __obj.asInstanceOf[IArraySplice[T]]
     }
     
-    extension [Self <: IArraySplice[?], T](x: Self & IArraySplice[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IArraySplice[?], T] (val x: Self & IArraySplice[T]) extends AnyVal {
       
       inline def setAddedCount(value: Double): Self = StObject.set(x, "addedCount", value.asInstanceOf[js.Any])
       
@@ -97,7 +99,8 @@ object libInterfacesMod {
       __obj.asInstanceOf[IContextInfoStruct]
     }
     
-    extension [Self <: IContextInfoStruct](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IContextInfoStruct] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -122,7 +125,8 @@ object libInterfacesMod {
       __obj.asInstanceOf[IDependencyTree]
     }
     
-    extension [Self <: IDependencyTree](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDependencyTree] (val x: Self) extends AnyVal {
       
       inline def setContext(value: Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
@@ -157,7 +161,8 @@ object libInterfacesMod {
       __obj.asInstanceOf[IObjectChange[T, R]]
     }
     
-    extension [Self <: IObjectChange[?, ?], T, R](x: Self & (IObjectChange[T, R])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IObjectChange[?, ?], T, R] (val x: Self & (IObjectChange[T, R])) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -240,7 +245,8 @@ object libInterfacesMod {
       __obj.asInstanceOf[IObserverTree]
     }
     
-    extension [Self <: IObserverTree](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IObserverTree] (val x: Self) extends AnyVal {
       
       inline def setContext(value: Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
@@ -281,7 +287,8 @@ object libInterfacesMod {
       __obj.asInstanceOf[ITransitionEvent]
     }
     
-    extension [Self <: ITransitionEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITransitionEvent] (val x: Self) extends AnyVal {
       
       inline def setChanged(value: Boolean): Self = StObject.set(x, "changed", value.asInstanceOf[js.Any])
       

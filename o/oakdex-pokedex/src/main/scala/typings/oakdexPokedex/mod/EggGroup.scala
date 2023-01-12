@@ -15,7 +15,8 @@ object EggGroup {
     __obj.asInstanceOf[EggGroup]
   }
   
-  extension [Self <: EggGroup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EggGroup] (val x: Self) extends AnyVal {
     
     inline def setNames(value: Translations): Self = StObject.set(x, "names", value.asInstanceOf[js.Any])
   }

@@ -24,7 +24,8 @@ object GoogleCloudSaasacceleratorManagementProvidersV1PerSliSloEligibility {
     __obj.asInstanceOf[GoogleCloudSaasacceleratorManagementProvidersV1PerSliSloEligibility]
   }
   
-  extension [Self <: GoogleCloudSaasacceleratorManagementProvidersV1PerSliSloEligibility](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudSaasacceleratorManagementProvidersV1PerSliSloEligibility] (val x: Self) extends AnyVal {
     
     inline def setEligibilities(
       value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.managedidentities.gapi.client.managedidentities.GoogleCloudSaasacceleratorManagementProvidersV1SloEligibility} */ js.Any

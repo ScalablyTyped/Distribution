@@ -19,7 +19,8 @@ object QueryDslIntervalsWildcard {
     __obj.asInstanceOf[QueryDslIntervalsWildcard]
   }
   
-  extension [Self <: QueryDslIntervalsWildcard](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryDslIntervalsWildcard] (val x: Self) extends AnyVal {
     
     inline def setAnalyzer(value: String): Self = StObject.set(x, "analyzer", value.asInstanceOf[js.Any])
     

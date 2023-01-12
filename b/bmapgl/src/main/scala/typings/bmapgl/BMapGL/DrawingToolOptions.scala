@@ -28,7 +28,8 @@ object DrawingToolOptions {
     __obj.asInstanceOf[DrawingToolOptions]
   }
   
-  extension [Self <: DrawingToolOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DrawingToolOptions] (val x: Self) extends AnyVal {
     
     inline def setAnchor(value: ControlAnchor): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
     

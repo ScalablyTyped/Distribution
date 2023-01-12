@@ -52,7 +52,8 @@ object PartialIKeytipProps {
     __obj.asInstanceOf[PartialIKeytipProps]
   }
   
-  extension [Self <: PartialIKeytipProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialIKeytipProps] (val x: Self) extends AnyVal {
     
     inline def setCalloutProps(value: ICalloutProps): Self = StObject.set(x, "calloutProps", value.asInstanceOf[js.Any])
     

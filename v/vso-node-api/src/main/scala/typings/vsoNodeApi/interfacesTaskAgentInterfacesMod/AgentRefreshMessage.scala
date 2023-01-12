@@ -19,7 +19,8 @@ object AgentRefreshMessage {
     __obj.asInstanceOf[AgentRefreshMessage]
   }
   
-  extension [Self <: AgentRefreshMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AgentRefreshMessage] (val x: Self) extends AnyVal {
     
     inline def setAgentId(value: Double): Self = StObject.set(x, "agentId", value.asInstanceOf[js.Any])
     

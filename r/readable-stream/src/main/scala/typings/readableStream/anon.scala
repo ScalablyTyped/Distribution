@@ -34,7 +34,8 @@ object anon {
       __obj.asInstanceOf[AfterTransform]
     }
     
-    extension [Self <: AfterTransform](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AfterTransform] (val x: Self) extends AnyVal {
       
       inline def setAfterTransform(value: (Any, Any) => Unit | Boolean): Self = StObject.set(x, "afterTransform", js.Any.fromFunction2(value))
       
@@ -67,7 +68,8 @@ object anon {
       __obj.asInstanceOf[Chunk]
     }
     
-    extension [Self <: Chunk](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Chunk] (val x: Self) extends AnyVal {
       
       inline def setChunk(value: Any): Self = StObject.set(x, "chunk", value.asInstanceOf[js.Any])
       
@@ -88,7 +90,8 @@ object anon {
       __obj.asInstanceOf[ChunkEncoding]
     }
     
-    extension [Self <: ChunkEncoding](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChunkEncoding] (val x: Self) extends AnyVal {
       
       inline def setChunk(value: Any): Self = StObject.set(x, "chunk", value.asInstanceOf[js.Any])
       
@@ -109,7 +112,8 @@ object anon {
       __obj.asInstanceOf[Encoding]
     }
     
-    extension [Self <: Encoding](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Encoding] (val x: Self) extends AnyVal {
       
       inline def setChunk(value: Any): Self = StObject.set(x, "chunk", value.asInstanceOf[js.Any])
       
@@ -128,7 +132,8 @@ object anon {
       __obj.asInstanceOf[End]
     }
     
-    extension [Self <: End](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: End] (val x: Self) extends AnyVal {
       
       inline def setEnd(value: Boolean): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       

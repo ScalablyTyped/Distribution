@@ -32,7 +32,8 @@ object BootstrapMenuEventMap {
     __obj.asInstanceOf[BootstrapMenuEventMap]
   }
   
-  extension [Self <: BootstrapMenuEventMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BootstrapMenuEventMap] (val x: Self) extends AnyVal {
     
     inline def setCloseUp(value: MenuItemEventArgs): Self = StObject.set(x, "closeUp", value.asInstanceOf[js.Any])
     

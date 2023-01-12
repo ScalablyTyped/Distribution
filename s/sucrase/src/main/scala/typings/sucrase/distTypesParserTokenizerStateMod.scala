@@ -204,7 +204,8 @@ object distTypesParserTokenizerStateMod {
       __obj.asInstanceOf[State]
     }
     
-    extension [Self <: State](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: State] (val x: Self) extends AnyVal {
       
       inline def setContextualKeyword(value: ContextualKeyword): Self = StObject.set(x, "contextualKeyword", value.asInstanceOf[js.Any])
       

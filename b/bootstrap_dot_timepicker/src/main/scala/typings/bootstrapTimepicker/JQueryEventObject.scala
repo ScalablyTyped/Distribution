@@ -15,7 +15,8 @@ object JQueryEventObject {
     __obj.asInstanceOf[JQueryEventObject]
   }
   
-  extension [Self <: JQueryEventObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JQueryEventObject] (val x: Self) extends AnyVal {
     
     inline def setTime(value: TimepickerTime): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
     

@@ -24,7 +24,8 @@ object CssImportAST {
     __obj.asInstanceOf[CssImportAST]
   }
   
-  extension [Self <: CssImportAST](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CssImportAST] (val x: Self) extends AnyVal {
     
     inline def setImport(value: String): Self = StObject.set(x, "import", value.asInstanceOf[js.Any])
     

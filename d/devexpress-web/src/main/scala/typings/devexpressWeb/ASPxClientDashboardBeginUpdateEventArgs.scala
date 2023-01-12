@@ -23,7 +23,8 @@ object ASPxClientDashboardBeginUpdateEventArgs {
     __obj.asInstanceOf[ASPxClientDashboardBeginUpdateEventArgs]
   }
   
-  extension [Self <: ASPxClientDashboardBeginUpdateEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientDashboardBeginUpdateEventArgs] (val x: Self) extends AnyVal {
     
     inline def setDashboardId(value: String): Self = StObject.set(x, "DashboardId", value.asInstanceOf[js.Any])
   }

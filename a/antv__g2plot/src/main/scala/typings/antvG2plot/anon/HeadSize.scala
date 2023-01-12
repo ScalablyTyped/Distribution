@@ -20,7 +20,8 @@ object HeadSize {
     __obj.asInstanceOf[HeadSize]
   }
   
-  extension [Self <: HeadSize](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HeadSize] (val x: Self) extends AnyVal {
     
     inline def setHeadSize(value: Double): Self = StObject.set(x, "headSize", value.asInstanceOf[js.Any])
     

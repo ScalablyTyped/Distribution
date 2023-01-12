@@ -21,7 +21,8 @@ object MerchantBusinessResponse {
     __obj.asInstanceOf[MerchantBusinessResponse]
   }
   
-  extension [Self <: MerchantBusinessResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MerchantBusinessResponse] (val x: Self) extends AnyVal {
     
     inline def setAddressDetails(value: MerchantAddressDetails): Self = StObject.set(x, "addressDetails", value.asInstanceOf[js.Any])
     

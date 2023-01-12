@@ -46,7 +46,8 @@ object Idletimeoutminutes {
     __obj.asInstanceOf[Idletimeoutminutes]
   }
   
-  extension [Self <: Idletimeoutminutes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Idletimeoutminutes] (val x: Self) extends AnyVal {
     
     inline def setClient_ip(value: String): Self = StObject.set(x, "client_ip", value.asInstanceOf[js.Any])
     

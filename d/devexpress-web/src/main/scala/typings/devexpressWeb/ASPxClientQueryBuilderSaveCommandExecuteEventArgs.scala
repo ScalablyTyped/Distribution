@@ -23,7 +23,8 @@ object ASPxClientQueryBuilderSaveCommandExecuteEventArgs {
     __obj.asInstanceOf[ASPxClientQueryBuilderSaveCommandExecuteEventArgs]
   }
   
-  extension [Self <: ASPxClientQueryBuilderSaveCommandExecuteEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientQueryBuilderSaveCommandExecuteEventArgs] (val x: Self) extends AnyVal {
     
     inline def setHandled(value: Boolean): Self = StObject.set(x, "handled", value.asInstanceOf[js.Any])
   }

@@ -33,7 +33,8 @@ object affix {
       __obj.asInstanceOf[IAffix]
     }
     
-    extension [Self <: IAffix](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IAffix] (val x: Self) extends AnyVal {
       
       inline def setCheckPosition(value: () => Unit): Self = StObject.set(x, "checkPosition", js.Any.fromFunction0(value))
       
@@ -62,7 +63,8 @@ object affix {
       __obj.asInstanceOf[IAffixOptions]
     }
     
-    extension [Self <: IAffixOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IAffixOptions] (val x: Self) extends AnyVal {
       
       inline def setOffsetBottom(value: Double): Self = StObject.set(x, "offsetBottom", value.asInstanceOf[js.Any])
       
@@ -93,7 +95,8 @@ object affix {
       __obj.asInstanceOf[IAffixProvider]
     }
     
-    extension [Self <: IAffixProvider](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IAffixProvider] (val x: Self) extends AnyVal {
       
       inline def setDefaults(value: IAffixOptions): Self = StObject.set(x, "defaults", value.asInstanceOf[js.Any])
     }

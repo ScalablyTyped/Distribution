@@ -31,7 +31,8 @@ object XSQLErrorListener {
     __obj.asInstanceOf[XSQLErrorListener]
   }
   
-  extension [Self <: XSQLErrorListener](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XSQLErrorListener] (val x: Self) extends AnyVal {
     
     inline def setErrorOccured(value: SQLErrorEvent => Unit): Self = StObject.set(x, "errorOccured", js.Any.fromFunction1(value))
   }

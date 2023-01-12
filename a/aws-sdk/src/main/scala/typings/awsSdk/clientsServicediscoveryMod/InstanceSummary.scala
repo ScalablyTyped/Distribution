@@ -23,7 +23,8 @@ object InstanceSummary {
     __obj.asInstanceOf[InstanceSummary]
   }
   
-  extension [Self <: InstanceSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InstanceSummary] (val x: Self) extends AnyVal {
     
     inline def setAttributes(value: Attributes): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
     

@@ -30,7 +30,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[AddressOutput]
     }
     
-    extension [Self <: AddressOutput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AddressOutput] (val x: Self) extends AnyVal {
       
       inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
@@ -55,7 +56,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[FullerNameOutput]
     }
     
-    extension [Self <: FullerNameOutput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FullerNameOutput] (val x: Self) extends AnyVal {
       
       inline def setFullName(value: String): Self = StObject.set(x, "fullName", value.asInstanceOf[js.Any])
     }
@@ -93,7 +95,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[NameOutput]
     }
     
-    extension [Self <: NameOutput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NameOutput] (val x: Self) extends AnyVal {
       
       inline def setFirstName(value: String): Self = StObject.set(x, "firstName", value.asInstanceOf[js.Any])
       

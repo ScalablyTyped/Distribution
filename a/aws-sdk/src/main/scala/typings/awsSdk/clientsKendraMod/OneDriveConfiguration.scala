@@ -48,7 +48,8 @@ object OneDriveConfiguration {
     __obj.asInstanceOf[OneDriveConfiguration]
   }
   
-  extension [Self <: OneDriveConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OneDriveConfiguration] (val x: Self) extends AnyVal {
     
     inline def setDisableLocalGroups(value: Boolean): Self = StObject.set(x, "DisableLocalGroups", value.asInstanceOf[js.Any])
     

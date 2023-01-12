@@ -58,7 +58,8 @@ object StudioComponentSummary {
     __obj.asInstanceOf[StudioComponentSummary]
   }
   
-  extension [Self <: StudioComponentSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StudioComponentSummary] (val x: Self) extends AnyVal {
     
     inline def setCreatedAt(value: js.Date): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
     

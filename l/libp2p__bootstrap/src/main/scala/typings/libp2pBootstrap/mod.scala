@@ -25,7 +25,8 @@ object mod {
       __obj.asInstanceOf[BootstrapComponents]
     }
     
-    extension [Self <: BootstrapComponents](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BootstrapComponents] (val x: Self) extends AnyVal {
       
       inline def setPeerStore(value: PeerStore): Self = StObject.set(x, "peerStore", value.asInstanceOf[js.Any])
     }
@@ -65,7 +66,8 @@ object mod {
       __obj.asInstanceOf[BootstrapInit]
     }
     
-    extension [Self <: BootstrapInit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BootstrapInit] (val x: Self) extends AnyVal {
       
       inline def setList(value: js.Array[String]): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
       

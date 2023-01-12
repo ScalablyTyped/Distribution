@@ -30,7 +30,8 @@ object Json {
       __obj.asInstanceOf[StringifyArguments]
     }
     
-    extension [Self <: StringifyArguments](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StringifyArguments] (val x: Self) extends AnyVal {
       
       inline def setEscape(value: Boolean): Self = StObject.set(x, "escape", value.asInstanceOf[js.Any])
       

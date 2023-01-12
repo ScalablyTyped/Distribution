@@ -31,7 +31,8 @@ object RunQueryRequest {
     __obj.asInstanceOf[RunQueryRequest]
   }
   
-  extension [Self <: RunQueryRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RunQueryRequest] (val x: Self) extends AnyVal {
     
     inline def setDatabaseId(value: String): Self = StObject.set(x, "databaseId", value.asInstanceOf[js.Any])
     

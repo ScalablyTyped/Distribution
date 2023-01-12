@@ -21,7 +21,8 @@ object ICountResult {
     __obj.asInstanceOf[ICountResult]
   }
   
-  extension [Self <: ICountResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICountResult] (val x: Self) extends AnyVal {
     
     inline def set$promise(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.IPromise<any> */ Any

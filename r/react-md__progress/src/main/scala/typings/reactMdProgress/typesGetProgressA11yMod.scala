@@ -28,7 +28,8 @@ object typesGetProgressA11yMod {
       __obj.asInstanceOf[ProgressA11y]
     }
     
-    extension [Self <: ProgressA11y](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProgressA11y] (val x: Self) extends AnyVal {
       
       inline def `setAria-busy`(value: `true`): Self = StObject.set(x, "aria-busy", value.asInstanceOf[js.Any])
       

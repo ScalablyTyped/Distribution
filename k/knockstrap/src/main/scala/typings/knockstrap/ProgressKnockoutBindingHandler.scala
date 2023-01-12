@@ -27,7 +27,8 @@ object ProgressKnockoutBindingHandler {
     __obj.asInstanceOf[ProgressKnockoutBindingHandler]
   }
   
-  extension [Self <: ProgressKnockoutBindingHandler](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProgressKnockoutBindingHandler] (val x: Self) extends AnyVal {
     
     inline def setDefaults(value: KnockstrapProgressDefaults): Self = StObject.set(x, "defaults", value.asInstanceOf[js.Any])
     

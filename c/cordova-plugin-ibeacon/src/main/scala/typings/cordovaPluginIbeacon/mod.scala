@@ -48,7 +48,8 @@ object mod {
           __obj.asInstanceOf[Beacon]
         }
         
-        extension [Self <: Beacon](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: Beacon] (val x: Self) extends AnyVal {
           
           inline def setAccuracy(value: Double): Self = StObject.set(x, "accuracy", value.asInstanceOf[js.Any])
           
@@ -153,7 +154,8 @@ object mod {
           __obj.asInstanceOf[Delegate]
         }
         
-        extension [Self <: Delegate](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: Delegate] (val x: Self) extends AnyVal {
           
           inline def setDidChangeAuthorizationStatus(value: String => Unit): Self = StObject.set(x, "didChangeAuthorizationStatus", js.Any.fromFunction1(value))
           
@@ -269,7 +271,8 @@ object mod {
           __obj.asInstanceOf[LocationManager]
         }
         
-        extension [Self <: LocationManager](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: LocationManager] (val x: Self) extends AnyVal {
           
           inline def setAppendToDeviceLog(value: String => Promise[String]): Self = StObject.set(x, "appendToDeviceLog", js.Any.fromFunction1(value))
           
@@ -357,7 +360,8 @@ object mod {
           __obj.asInstanceOf[PluginResult]
         }
         
-        extension [Self <: PluginResult](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: PluginResult] (val x: Self) extends AnyVal {
           
           inline def setAuthorizationStatus(value: String): Self = StObject.set(x, "authorizationStatus", value.asInstanceOf[js.Any])
           
@@ -395,7 +399,8 @@ object mod {
         __obj.asInstanceOf[CordovaPlugins]
       }
       
-      extension [Self <: CordovaPlugins](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CordovaPlugins] (val x: Self) extends AnyVal {
         
         inline def setLocationManager(value: LocationManager): Self = StObject.set(x, "locationManager", value.asInstanceOf[js.Any])
       }

@@ -32,7 +32,8 @@ object IMacAlgorithmNamesStatics {
     __obj.asInstanceOf[IMacAlgorithmNamesStatics]
   }
   
-  extension [Self <: IMacAlgorithmNamesStatics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IMacAlgorithmNamesStatics] (val x: Self) extends AnyVal {
     
     inline def setAesCmac(value: String): Self = StObject.set(x, "aesCmac", value.asInstanceOf[js.Any])
     

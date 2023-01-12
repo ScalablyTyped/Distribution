@@ -103,7 +103,8 @@ object libFromTheseMod {
       __obj.asInstanceOf[FromThese[F]]
     }
     
-    extension [Self <: FromThese[?], F](x: Self & FromThese[F]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FromThese[?], F] (val x: Self & FromThese[F]) extends AnyVal {
       
       inline def setFromThese(value: These_[Any, Any] => Any): Self = StObject.set(x, "fromThese", js.Any.fromFunction1(value))
       
@@ -124,7 +125,8 @@ object libFromTheseMod {
       __obj.asInstanceOf[FromThese2[F]]
     }
     
-    extension [Self <: FromThese2[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */](x: Self & FromThese2[F]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FromThese2[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */] (val x: Self & FromThese2[F]) extends AnyVal {
       
       inline def setFromThese(value: These_[Any, Any] => Any): Self = StObject.set(x, "fromThese", js.Any.fromFunction1(value))
       
@@ -147,7 +149,8 @@ object libFromTheseMod {
       __obj.asInstanceOf[FromThese2C[F, E]]
     }
     
-    extension [Self <: FromThese2C[?, ?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */, E](x: Self & (FromThese2C[F, E])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FromThese2C[?, ?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */, E] (val x: Self & (FromThese2C[F, E])) extends AnyVal {
       
       inline def setFromThese(value: These_[E, Any] => Any): Self = StObject.set(x, "fromThese", js.Any.fromFunction1(value))
       
@@ -170,7 +173,8 @@ object libFromTheseMod {
       __obj.asInstanceOf[FromThese3[F]]
     }
     
-    extension [Self <: FromThese3[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */](x: Self & FromThese3[F]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FromThese3[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */] (val x: Self & FromThese3[F]) extends AnyVal {
       
       inline def setFromThese(value: These_[Any, Any] => Any): Self = StObject.set(x, "fromThese", js.Any.fromFunction1(value))
       
@@ -193,7 +197,8 @@ object libFromTheseMod {
       __obj.asInstanceOf[FromThese3C[F, E]]
     }
     
-    extension [Self <: FromThese3C[?, ?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */, E](x: Self & (FromThese3C[F, E])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FromThese3C[?, ?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */, E] (val x: Self & (FromThese3C[F, E])) extends AnyVal {
       
       inline def setFromThese(value: These_[E, Any] => Any): Self = StObject.set(x, "fromThese", js.Any.fromFunction1(value))
       
@@ -216,7 +221,8 @@ object libFromTheseMod {
       __obj.asInstanceOf[FromThese4[F]]
     }
     
-    extension [Self <: FromThese4[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS4 */ Any */](x: Self & FromThese4[F]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FromThese4[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS4 */ Any */] (val x: Self & FromThese4[F]) extends AnyVal {
       
       inline def setFromThese(value: These_[Any, Any] => Any): Self = StObject.set(x, "fromThese", js.Any.fromFunction1(value))
       

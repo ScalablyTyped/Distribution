@@ -89,7 +89,8 @@ object Control {
     __obj.asInstanceOf[Control]
   }
   
-  extension [Self <: Control](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Control] (val x: Self) extends AnyVal {
     
     inline def setContribution(value: WitContribution): Self = StObject.set(x, "contribution", value.asInstanceOf[js.Any])
     

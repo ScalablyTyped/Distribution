@@ -41,7 +41,8 @@ object libParsersFeatureParserMod {
       __obj.asInstanceOf[FeatureExport]
     }
     
-    extension [Self <: FeatureExport](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FeatureExport] (val x: Self) extends AnyVal {
       
       inline def setAnnotations(value: AnnotationsExport): Self = StObject.set(x, "annotations", value.asInstanceOf[js.Any])
       
@@ -77,7 +78,8 @@ object libParsersFeatureParserMod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setLanguage(value: typings.yadda.libLocalisationLanguageMod.^[Library]): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
       
@@ -106,7 +108,8 @@ object libParsersFeatureParserMod {
       __obj.asInstanceOf[ScenarioExport]
     }
     
-    extension [Self <: ScenarioExport](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScenarioExport] (val x: Self) extends AnyVal {
       
       inline def setAnnotations(value: AnnotationsExport): Self = StObject.set(x, "annotations", value.asInstanceOf[js.Any])
       

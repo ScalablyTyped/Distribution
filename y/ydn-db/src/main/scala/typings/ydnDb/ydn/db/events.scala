@@ -20,7 +20,8 @@ object events {
       __obj.asInstanceOf[Event]
     }
     
-    extension [Self <: Event](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Event] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -52,7 +53,8 @@ object events {
       __obj.asInstanceOf[RecordEvent]
     }
     
-    extension [Self <: RecordEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RecordEvent] (val x: Self) extends AnyVal {
       
       inline def setGetKey(value: () => Any): Self = StObject.set(x, "getKey", js.Any.fromFunction0(value))
       
@@ -86,7 +88,8 @@ object events {
       __obj.asInstanceOf[StorageEvent]
     }
     
-    extension [Self <: StorageEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StorageEvent] (val x: Self) extends AnyVal {
       
       inline def setGetError(value: () => js.Error): Self = StObject.set(x, "getError", js.Any.fromFunction0(value))
       
@@ -120,7 +123,8 @@ object events {
       __obj.asInstanceOf[StoreEvent]
     }
     
-    extension [Self <: StoreEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StoreEvent] (val x: Self) extends AnyVal {
       
       inline def setGetKeys(value: () => js.Array[Any]): Self = StObject.set(x, "getKeys", js.Any.fromFunction0(value))
       

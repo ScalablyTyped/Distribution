@@ -20,7 +20,8 @@ object TransactionCollections {
     __obj.asInstanceOf[TransactionCollections]
   }
   
-  extension [Self <: TransactionCollections](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransactionCollections] (val x: Self) extends AnyVal {
     
     inline def setAllowImplicit(value: Boolean): Self = StObject.set(x, "allowImplicit", value.asInstanceOf[js.Any])
     

@@ -73,7 +73,8 @@ object XVisualObject {
     __obj.asInstanceOf[XVisualObject]
   }
   
-  extension [Self <: XVisualObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XVisualObject] (val x: Self) extends AnyVal {
     
     inline def setGetMapUnit(value: Double => Double): Self = StObject.set(x, "getMapUnit", js.Any.fromFunction1(value))
     

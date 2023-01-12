@@ -18,7 +18,8 @@ object MemoryInfo {
     __obj.asInstanceOf[MemoryInfo]
   }
   
-  extension [Self <: MemoryInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MemoryInfo] (val x: Self) extends AnyVal {
     
     inline def setSizeInMiB(value: Integer): Self = StObject.set(x, "sizeInMiB", value.asInstanceOf[js.Any])
     

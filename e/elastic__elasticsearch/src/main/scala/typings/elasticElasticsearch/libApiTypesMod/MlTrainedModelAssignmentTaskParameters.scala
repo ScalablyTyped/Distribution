@@ -32,7 +32,8 @@ object MlTrainedModelAssignmentTaskParameters {
     __obj.asInstanceOf[MlTrainedModelAssignmentTaskParameters]
   }
   
-  extension [Self <: MlTrainedModelAssignmentTaskParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlTrainedModelAssignmentTaskParameters] (val x: Self) extends AnyVal {
     
     inline def setCache_size(value: ByteSize): Self = StObject.set(x, "cache_size", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object PutDashboardInput {
     __obj.asInstanceOf[PutDashboardInput]
   }
   
-  extension [Self <: PutDashboardInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutDashboardInput] (val x: Self) extends AnyVal {
     
     inline def setDashboardBody(value: DashboardBody): Self = StObject.set(x, "DashboardBody", value.asInstanceOf[js.Any])
     

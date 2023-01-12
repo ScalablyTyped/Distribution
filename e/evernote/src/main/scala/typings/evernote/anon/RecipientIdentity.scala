@@ -29,7 +29,8 @@ object RecipientIdentity {
     __obj.asInstanceOf[RecipientIdentity]
   }
   
-  extension [Self <: RecipientIdentity](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecipientIdentity] (val x: Self) extends AnyVal {
     
     inline def setPrivilege(value: SharedNotePrivilegeLevel): Self = StObject.set(x, "privilege", value.asInstanceOf[js.Any])
     

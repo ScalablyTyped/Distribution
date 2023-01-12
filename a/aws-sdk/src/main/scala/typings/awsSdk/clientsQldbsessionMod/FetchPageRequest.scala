@@ -23,7 +23,8 @@ object FetchPageRequest {
     __obj.asInstanceOf[FetchPageRequest]
   }
   
-  extension [Self <: FetchPageRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FetchPageRequest] (val x: Self) extends AnyVal {
     
     inline def setNextPageToken(value: PageToken): Self = StObject.set(x, "NextPageToken", value.asInstanceOf[js.Any])
     

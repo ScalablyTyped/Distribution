@@ -19,7 +19,8 @@ object TeardownTag {
     __obj.asInstanceOf[TeardownTag]
   }
   
-  extension [Self <: TeardownTag](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TeardownTag] (val x: Self) extends AnyVal {
     
     inline def setStopTeardownOnFailure(value: Boolean): Self = StObject.set(x, "stopTeardownOnFailure", value.asInstanceOf[js.Any])
     

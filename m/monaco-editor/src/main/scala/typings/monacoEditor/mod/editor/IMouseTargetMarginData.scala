@@ -29,7 +29,8 @@ object IMouseTargetMarginData {
     __obj.asInstanceOf[IMouseTargetMarginData]
   }
   
-  extension [Self <: IMouseTargetMarginData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IMouseTargetMarginData] (val x: Self) extends AnyVal {
     
     inline def setGlyphMarginLeft(value: Double): Self = StObject.set(x, "glyphMarginLeft", value.asInstanceOf[js.Any])
     

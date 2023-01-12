@@ -34,7 +34,8 @@ object tinyTestMod {
       __obj.asInstanceOf[typings.meteor.tinyTestMod.ILengthAble]
     }
     
-    extension [Self <: typings.meteor.tinyTestMod.ILengthAble](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.meteor.tinyTestMod.ILengthAble] (val x: Self) extends AnyVal {
       
       inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     }

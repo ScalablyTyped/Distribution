@@ -102,7 +102,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[KoaHelmetContentSecurityPolicyConfiguration]
     }
     
-    extension [Self <: KoaHelmetContentSecurityPolicyConfiguration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KoaHelmetContentSecurityPolicyConfiguration] (val x: Self) extends AnyVal {
       
       inline def setDirectives(value: KoaHelmetContentSecurityPolicyDirectives): Self = StObject.set(x, "directives", value.asInstanceOf[js.Any])
       
@@ -161,7 +162,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[KoaHelmetContentSecurityPolicyDirectives]
     }
     
-    extension [Self <: KoaHelmetContentSecurityPolicyDirectives](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KoaHelmetContentSecurityPolicyDirectives] (val x: Self) extends AnyVal {
       
       inline def setBaseUri(value: js.Array[KoaHelmetCspDirectiveValue]): Self = StObject.set(x, "baseUri", value.asInstanceOf[js.Any])
       

@@ -45,7 +45,8 @@ object libComponentsDataTableTableBatchActionsMod extends Shortcut {
       __obj.asInstanceOf[TableBatchActionsProps]
     }
     
-    extension [Self <: TableBatchActionsProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TableBatchActionsProps] (val x: Self) extends AnyVal {
       
       inline def setOnCancel(value: MouseEvent[HTMLButtonElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onCancel", js.Any.fromFunction1(value))
       
@@ -68,7 +69,8 @@ object libComponentsDataTableTableBatchActionsMod extends Shortcut {
       __obj.asInstanceOf[TableBatchActionsTranslationArgs]
     }
     
-    extension [Self <: TableBatchActionsTranslationArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TableBatchActionsTranslationArgs] (val x: Self) extends AnyVal {
       
       inline def setTotalSelected(value: Double): Self = StObject.set(x, "totalSelected", value.asInstanceOf[js.Any])
       

@@ -17,7 +17,8 @@ object Labels {
     __obj.asInstanceOf[Labels]
   }
   
-  extension [Self <: Labels](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Labels] (val x: Self) extends AnyVal {
     
     inline def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     

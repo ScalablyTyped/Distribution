@@ -19,7 +19,8 @@ object ListDicomStoresResponse {
     __obj.asInstanceOf[ListDicomStoresResponse]
   }
   
-  extension [Self <: ListDicomStoresResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListDicomStoresResponse] (val x: Self) extends AnyVal {
     
     inline def setDicomStores(value: js.Array[DicomStore]): Self = StObject.set(x, "dicomStores", value.asInstanceOf[js.Any])
     

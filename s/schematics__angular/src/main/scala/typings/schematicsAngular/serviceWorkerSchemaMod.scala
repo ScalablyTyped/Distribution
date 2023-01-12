@@ -25,7 +25,8 @@ object serviceWorkerSchemaMod {
       __obj.asInstanceOf[Schema]
     }
     
-    extension [Self <: Schema](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Schema] (val x: Self) extends AnyVal {
       
       inline def setProject(value: String): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
       

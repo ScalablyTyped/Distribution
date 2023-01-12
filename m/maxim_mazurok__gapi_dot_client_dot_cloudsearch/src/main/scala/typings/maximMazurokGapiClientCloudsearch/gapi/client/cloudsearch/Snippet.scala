@@ -19,7 +19,8 @@ object Snippet {
     __obj.asInstanceOf[Snippet]
   }
   
-  extension [Self <: Snippet](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Snippet] (val x: Self) extends AnyVal {
     
     inline def setMatchRanges(value: js.Array[MatchRange]): Self = StObject.set(x, "matchRanges", value.asInstanceOf[js.Any])
     

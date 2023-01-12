@@ -16,7 +16,8 @@ object ManagedConfigurationsSettingsListResponse {
     __obj.asInstanceOf[ManagedConfigurationsSettingsListResponse]
   }
   
-  extension [Self <: ManagedConfigurationsSettingsListResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ManagedConfigurationsSettingsListResponse] (val x: Self) extends AnyVal {
     
     inline def setManagedConfigurationsSettings(value: js.Array[ManagedConfigurationsSettings]): Self = StObject.set(x, "managedConfigurationsSettings", value.asInstanceOf[js.Any])
     

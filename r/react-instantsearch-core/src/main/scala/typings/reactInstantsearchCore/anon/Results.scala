@@ -17,7 +17,8 @@ object Results {
     __obj.asInstanceOf[Results]
   }
   
-  extension [Self <: Results](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Results] (val x: Self) extends AnyVal {
     
     inline def setResults(value: SearchResults[BasicDoc]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
   }

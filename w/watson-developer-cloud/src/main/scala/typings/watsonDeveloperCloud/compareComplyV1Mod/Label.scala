@@ -20,7 +20,8 @@ object Label {
     __obj.asInstanceOf[Label]
   }
   
-  extension [Self <: Label](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Label] (val x: Self) extends AnyVal {
     
     inline def setNature(value: String): Self = StObject.set(x, "nature", value.asInstanceOf[js.Any])
     

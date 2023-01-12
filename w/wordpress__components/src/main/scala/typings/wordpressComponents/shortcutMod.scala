@@ -36,7 +36,8 @@ object shortcutMod {
         __obj.asInstanceOf[Props]
       }
       
-      extension [Self <: Props](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
         
         inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
         
@@ -67,7 +68,8 @@ object shortcutMod {
         __obj.asInstanceOf[ShortcutObj]
       }
       
-      extension [Self <: ShortcutObj](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ShortcutObj] (val x: Self) extends AnyVal {
         
         inline def setAriaLabel(value: String): Self = StObject.set(x, "ariaLabel", value.asInstanceOf[js.Any])
         

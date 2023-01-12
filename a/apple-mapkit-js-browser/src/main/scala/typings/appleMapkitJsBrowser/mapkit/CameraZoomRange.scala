@@ -26,7 +26,8 @@ object CameraZoomRange {
     __obj.asInstanceOf[CameraZoomRange]
   }
   
-  extension [Self <: CameraZoomRange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CameraZoomRange] (val x: Self) extends AnyVal {
     
     inline def setMaxCameraDistance(value: Double): Self = StObject.set(x, "maxCameraDistance", value.asInstanceOf[js.Any])
     

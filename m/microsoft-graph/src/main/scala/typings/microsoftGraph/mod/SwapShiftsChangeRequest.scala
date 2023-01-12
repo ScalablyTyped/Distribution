@@ -18,7 +18,8 @@ object SwapShiftsChangeRequest {
     __obj.asInstanceOf[SwapShiftsChangeRequest]
   }
   
-  extension [Self <: SwapShiftsChangeRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SwapShiftsChangeRequest] (val x: Self) extends AnyVal {
     
     inline def setRecipientShiftId(value: NullableOption[String]): Self = StObject.set(x, "recipientShiftId", value.asInstanceOf[js.Any])
     

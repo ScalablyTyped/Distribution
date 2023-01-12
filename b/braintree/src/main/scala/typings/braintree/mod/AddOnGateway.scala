@@ -18,7 +18,8 @@ object AddOnGateway {
     __obj.asInstanceOf[AddOnGateway]
   }
   
-  extension [Self <: AddOnGateway](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AddOnGateway] (val x: Self) extends AnyVal {
     
     inline def setAll(value: () => js.Promise[js.Array[AddOn]]): Self = StObject.set(x, "all", js.Any.fromFunction0(value))
   }

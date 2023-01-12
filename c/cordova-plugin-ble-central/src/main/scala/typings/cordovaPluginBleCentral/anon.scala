@@ -17,7 +17,8 @@ object anon {
       __obj.asInstanceOf[EmitOnRegistered]
     }
     
-    extension [Self <: EmitOnRegistered](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EmitOnRegistered] (val x: Self) extends AnyVal {
       
       inline def setEmitOnRegistered(value: Boolean): Self = StObject.set(x, "emitOnRegistered", value.asInstanceOf[js.Any])
     }

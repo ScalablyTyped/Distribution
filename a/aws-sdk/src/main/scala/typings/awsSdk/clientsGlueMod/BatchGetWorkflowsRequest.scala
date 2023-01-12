@@ -23,7 +23,8 @@ object BatchGetWorkflowsRequest {
     __obj.asInstanceOf[BatchGetWorkflowsRequest]
   }
   
-  extension [Self <: BatchGetWorkflowsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchGetWorkflowsRequest] (val x: Self) extends AnyVal {
     
     inline def setIncludeGraph(value: NullableBoolean): Self = StObject.set(x, "IncludeGraph", value.asInstanceOf[js.Any])
     

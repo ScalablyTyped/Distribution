@@ -15,7 +15,8 @@ object ProofServiceViewLink {
     __obj.asInstanceOf[ProofServiceViewLink]
   }
   
-  extension [Self <: ProofServiceViewLink](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProofServiceViewLink] (val x: Self) extends AnyVal {
     
     inline def setViewLink(value: String): Self = StObject.set(x, "ViewLink", value.asInstanceOf[js.Any])
     

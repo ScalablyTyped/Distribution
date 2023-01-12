@@ -286,7 +286,8 @@ object anon {
       __obj.asInstanceOf[TypeofSimulate]
     }
     
-    extension [Self <: TypeofSimulate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypeofSimulate] (val x: Self) extends AnyVal {
       
       inline def setAbort(
         value: (/* element */ Element | (Component[Any, js.Object, Any]), /* eventData */ js.UndefOr[SyntheticEventData]) => Unit

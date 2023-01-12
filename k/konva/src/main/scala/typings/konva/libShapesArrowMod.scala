@@ -61,7 +61,8 @@ object libShapesArrowMod {
       __obj.asInstanceOf[ArrowConfig]
     }
     
-    extension [Self <: ArrowConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ArrowConfig] (val x: Self) extends AnyVal {
       
       inline def setPointerAtBeginning(value: Boolean): Self = StObject.set(x, "pointerAtBeginning", value.asInstanceOf[js.Any])
       

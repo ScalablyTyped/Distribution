@@ -24,7 +24,8 @@ object RainbowColorsLayer {
     __obj.asInstanceOf[RainbowColorsLayer]
   }
   
-  extension [Self <: RainbowColorsLayer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RainbowColorsLayer] (val x: Self) extends AnyVal {
     
     inline def setType(value: `rainbow-colors`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

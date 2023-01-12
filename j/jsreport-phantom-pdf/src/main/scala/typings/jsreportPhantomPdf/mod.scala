@@ -40,7 +40,8 @@ object mod {
       __obj.asInstanceOf[Margin]
     }
     
-    extension [Self <: Margin](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Margin] (val x: Self) extends AnyVal {
       
       inline def setBottom(value: Double | String): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       
@@ -79,7 +80,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setAllowLocalFilesAccess(value: Boolean): Self = StObject.set(x, "allowLocalFilesAccess", value.asInstanceOf[js.Any])
       
@@ -146,7 +148,8 @@ object mod {
       __obj.asInstanceOf[Phantom]
     }
     
-    extension [Self <: Phantom](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Phantom] (val x: Self) extends AnyVal {
       
       inline def setBlockJavaScript(value: Boolean): Self = StObject.set(x, "blockJavaScript", value.asInstanceOf[js.Any])
       
@@ -199,7 +202,8 @@ object mod {
       __obj.asInstanceOf[PhantomPDFTemplate]
     }
     
-    extension [Self <: PhantomPDFTemplate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PhantomPDFTemplate] (val x: Self) extends AnyVal {
       
       inline def setPhantom(value: PartialPhantom): Self = StObject.set(x, "phantom", value.asInstanceOf[js.Any])
       
@@ -223,7 +227,8 @@ object mod {
         __obj.asInstanceOf[TemplateRegistry]
       }
       
-      extension [Self <: TemplateRegistry](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: TemplateRegistry] (val x: Self) extends AnyVal {
         
         inline def setPhantomPDFTemplate(value: PhantomPDFTemplate): Self = StObject.set(x, "PhantomPDFTemplate", value.asInstanceOf[js.Any])
       }

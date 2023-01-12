@@ -15,7 +15,8 @@ object GuidOptions {
     __obj.asInstanceOf[GuidOptions]
   }
   
-  extension [Self <: GuidOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GuidOptions] (val x: Self) extends AnyVal {
     
     inline def setVersion(value: js.Array[GuidVersions] | GuidVersions): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     

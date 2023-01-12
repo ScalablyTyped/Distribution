@@ -19,7 +19,8 @@ object ZeptoAnimateSettings {
     __obj.asInstanceOf[ZeptoAnimateSettings]
   }
   
-  extension [Self <: ZeptoAnimateSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ZeptoAnimateSettings] (val x: Self) extends AnyVal {
     
     inline def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
     

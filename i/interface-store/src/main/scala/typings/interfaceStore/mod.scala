@@ -45,7 +45,8 @@ object mod {
       __obj.asInstanceOf[KeyQuery[Key]]
     }
     
-    extension [Self <: KeyQuery[?], Key](x: Self & KeyQuery[Key]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KeyQuery[?], Key] (val x: Self & KeyQuery[Key]) extends AnyVal {
       
       inline def setFilters(value: js.Array[KeyQueryFilter[Key]]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
       
@@ -88,7 +89,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
       
@@ -109,7 +111,8 @@ object mod {
       __obj.asInstanceOf[Pair[Key, Value]]
     }
     
-    extension [Self <: Pair[?, ?], Key, Value](x: Self & (Pair[Key, Value])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Pair[?, ?], Key, Value] (val x: Self & (Pair[Key, Value])) extends AnyVal {
       
       inline def setKey(value: Key): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
@@ -136,7 +139,8 @@ object mod {
       __obj.asInstanceOf[Query[Key, Value]]
     }
     
-    extension [Self <: Query[?, ?], Key, Value](x: Self & (Query[Key, Value])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Query[?, ?], Key, Value] (val x: Self & (Query[Key, Value])) extends AnyVal {
       
       inline def setFilters(value: js.Array[QueryFilter[Key, Value]]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
       

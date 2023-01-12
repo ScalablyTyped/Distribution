@@ -96,7 +96,8 @@ object libDistSrcAdaptersTouchablePreviewMod {
       __obj.asInstanceOf[NativeTouchEventWithForce]
     }
     
-    extension [Self <: NativeTouchEventWithForce](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NativeTouchEventWithForce] (val x: Self) extends AnyVal {
       
       inline def setForce(value: Double): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
     }
@@ -125,7 +126,8 @@ object libDistSrcAdaptersTouchablePreviewMod {
       __obj.asInstanceOf[Props]
     }
     
-    extension [Self <: Props](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

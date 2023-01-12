@@ -16,7 +16,8 @@ object MinHeightProps {
     __obj.asInstanceOf[MinHeightProps[TLength]]
   }
   
-  extension [Self <: MinHeightProps[?], TLength](x: Self & MinHeightProps[TLength]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MinHeightProps[?], TLength] (val x: Self & MinHeightProps[TLength]) extends AnyVal {
     
     inline def setMinHeight(value: ResponsiveValue[MinHeight[TLength]]): Self = StObject.set(x, "minHeight", value.asInstanceOf[js.Any])
     

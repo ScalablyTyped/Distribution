@@ -19,7 +19,8 @@ object MlDeleteModelSnapshotRequest {
     __obj.asInstanceOf[MlDeleteModelSnapshotRequest]
   }
   
-  extension [Self <: MlDeleteModelSnapshotRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlDeleteModelSnapshotRequest] (val x: Self) extends AnyVal {
     
     inline def setJob_id(value: Id): Self = StObject.set(x, "job_id", value.asInstanceOf[js.Any])
     

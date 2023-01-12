@@ -16,7 +16,8 @@ object ClipboardItemOptions {
     __obj.asInstanceOf[ClipboardItemOptions]
   }
   
-  extension [Self <: ClipboardItemOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClipboardItemOptions] (val x: Self) extends AnyVal {
     
     inline def setPresentationStyle(value: PresentationStyle): Self = StObject.set(x, "presentationStyle", value.asInstanceOf[js.Any])
     

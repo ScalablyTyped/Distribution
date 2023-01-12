@@ -24,7 +24,8 @@ object Codespaces {
     __obj.asInstanceOf[Codespaces]
   }
   
-  extension [Self <: Codespaces](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Codespaces] (val x: Self) extends AnyVal {
     
     inline def setCodespaces(
       value: js.Array[

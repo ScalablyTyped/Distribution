@@ -29,7 +29,8 @@ object TSImportType_ {
     __obj.asInstanceOf[TSImportType_]
   }
   
-  extension [Self <: TSImportType_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TSImportType_] (val x: Self) extends AnyVal {
     
     inline def setArgument(value: StringLiteral_): Self = StObject.set(x, "argument", value.asInstanceOf[js.Any])
     

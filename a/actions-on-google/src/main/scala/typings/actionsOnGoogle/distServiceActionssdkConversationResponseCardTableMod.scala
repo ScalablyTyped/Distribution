@@ -41,7 +41,8 @@ object distServiceActionssdkConversationResponseCardTableMod {
       __obj.asInstanceOf[TableColumn]
     }
     
-    extension [Self <: TableColumn](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TableColumn] (val x: Self) extends AnyVal {
       
       inline def setAlign(value: GoogleActionsV2UiElementsTableCardColumnPropertiesHorizontalAlignment): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       
@@ -126,7 +127,8 @@ object distServiceActionssdkConversationResponseCardTableMod {
       __obj.asInstanceOf[TableOptions]
     }
     
-    extension [Self <: TableOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TableOptions] (val x: Self) extends AnyVal {
       
       inline def setButtons(value: GoogleActionsV2UiElementsButton | js.Array[GoogleActionsV2UiElementsButton]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
       
@@ -195,7 +197,8 @@ object distServiceActionssdkConversationResponseCardTableMod {
       __obj.asInstanceOf[TableRow]
     }
     
-    extension [Self <: TableRow](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TableRow] (val x: Self) extends AnyVal {
       
       inline def setCells(value: js.Array[GoogleActionsV2UiElementsTableCardCell | String]): Self = StObject.set(x, "cells", value.asInstanceOf[js.Any])
       

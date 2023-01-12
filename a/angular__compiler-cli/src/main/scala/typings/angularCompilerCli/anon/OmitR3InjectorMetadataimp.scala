@@ -25,7 +25,8 @@ object OmitR3InjectorMetadataimp {
     __obj.asInstanceOf[OmitR3InjectorMetadataimp]
   }
   
-  extension [Self <: OmitR3InjectorMetadataimp](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OmitR3InjectorMetadataimp] (val x: Self) extends AnyVal {
     
     inline def setInternalType(value: Expression): Self = StObject.set(x, "internalType", value.asInstanceOf[js.Any])
     

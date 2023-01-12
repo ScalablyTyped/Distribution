@@ -19,7 +19,8 @@ object MlCategorizationAnalyzerDefinition {
     __obj.asInstanceOf[MlCategorizationAnalyzerDefinition]
   }
   
-  extension [Self <: MlCategorizationAnalyzerDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlCategorizationAnalyzerDefinition] (val x: Self) extends AnyVal {
     
     inline def setChar_filter(value: js.Array[AnalysisCharFilter]): Self = StObject.set(x, "char_filter", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object KHO2 {
     __obj.asInstanceOf[KHO2]
   }
   
-  extension [Self <: KHO2](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KHO2] (val x: Self) extends AnyVal {
     
     inline def setKHO2(value: RangedMassAttack): Self = StObject.set(x, "KHO2", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object Unknown0 {
     __obj.asInstanceOf[Unknown0]
   }
   
-  extension [Self <: Unknown0](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Unknown0] (val x: Self) extends AnyVal {
     
     inline def setInput(value: TensorShape): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
     

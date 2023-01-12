@@ -108,7 +108,8 @@ object xRFeaturesWebXRImageTrackingMod {
       __obj.asInstanceOf[IWebXRImageTrackingOptions]
     }
     
-    extension [Self <: IWebXRImageTrackingOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IWebXRImageTrackingOptions] (val x: Self) extends AnyVal {
       
       inline def setImages(value: js.Array[EstimatedRealWorldWidth]): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
       
@@ -160,7 +161,8 @@ object xRFeaturesWebXRImageTrackingMod {
       __obj.asInstanceOf[IWebXRTrackedImage]
     }
     
-    extension [Self <: IWebXRTrackedImage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IWebXRTrackedImage] (val x: Self) extends AnyVal {
       
       inline def setEmulated(value: Boolean): Self = StObject.set(x, "emulated", value.asInstanceOf[js.Any])
       

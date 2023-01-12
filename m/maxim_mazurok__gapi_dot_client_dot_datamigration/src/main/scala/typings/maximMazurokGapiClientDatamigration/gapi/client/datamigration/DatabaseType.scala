@@ -19,7 +19,8 @@ object DatabaseType {
     __obj.asInstanceOf[DatabaseType]
   }
   
-  extension [Self <: DatabaseType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DatabaseType] (val x: Self) extends AnyVal {
     
     inline def setEngine(value: String): Self = StObject.set(x, "engine", value.asInstanceOf[js.Any])
     

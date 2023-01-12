@@ -103,7 +103,8 @@ object DocumentClassifierProperties {
     __obj.asInstanceOf[DocumentClassifierProperties]
   }
   
-  extension [Self <: DocumentClassifierProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DocumentClassifierProperties] (val x: Self) extends AnyVal {
     
     inline def setClassifierMetadata(value: ClassifierMetadata): Self = StObject.set(x, "ClassifierMetadata", value.asInstanceOf[js.Any])
     

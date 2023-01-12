@@ -38,7 +38,8 @@ object SetRiskConfigurationRequest {
     __obj.asInstanceOf[SetRiskConfigurationRequest]
   }
   
-  extension [Self <: SetRiskConfigurationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetRiskConfigurationRequest] (val x: Self) extends AnyVal {
     
     inline def setAccountTakeoverRiskConfiguration(value: AccountTakeoverRiskConfigurationType): Self = StObject.set(x, "AccountTakeoverRiskConfiguration", value.asInstanceOf[js.Any])
     

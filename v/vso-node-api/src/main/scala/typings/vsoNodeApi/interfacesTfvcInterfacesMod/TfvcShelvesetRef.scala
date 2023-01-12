@@ -39,7 +39,8 @@ object TfvcShelvesetRef {
     __obj.asInstanceOf[TfvcShelvesetRef]
   }
   
-  extension [Self <: TfvcShelvesetRef](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TfvcShelvesetRef] (val x: Self) extends AnyVal {
     
     inline def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
     

@@ -81,7 +81,8 @@ object buildSrcFormatterOptionsMod {
       __obj.asInstanceOf[FormatterOptionsArgs[I, O]]
     }
     
-    extension [Self <: FormatterOptionsArgs[?, ?], I /* <: Row */, O /* <: Row */](x: Self & (FormatterOptionsArgs[I, O])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FormatterOptionsArgs[?, ?], I /* <: Row */, O /* <: Row */] (val x: Self & (FormatterOptionsArgs[I, O])) extends AnyVal {
       
       inline def setAlwaysWriteHeaders(value: Boolean): Self = StObject.set(x, "alwaysWriteHeaders", value.asInstanceOf[js.Any])
       

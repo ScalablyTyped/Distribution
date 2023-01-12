@@ -144,7 +144,8 @@ object RequestItem {
       __obj.asInstanceOf[AsObject]
     }
     
-    extension [Self <: AsObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AsObject] (val x: Self) extends AnyVal {
       
       inline def setGetAccountStateRequest(value: typings.libraCore.`lib@GeneratedGetWithProofPbMod`.GetAccountStateRequest.AsObject): Self = StObject.set(x, "getAccountStateRequest", value.asInstanceOf[js.Any])
       

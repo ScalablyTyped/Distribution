@@ -23,7 +23,8 @@ object UploadControlFileUploadCompleteEventArgs {
     __obj.asInstanceOf[UploadControlFileUploadCompleteEventArgs]
   }
   
-  extension [Self <: UploadControlFileUploadCompleteEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UploadControlFileUploadCompleteEventArgs] (val x: Self) extends AnyVal {
     
     inline def setCallbackData(value: String): Self = StObject.set(x, "callbackData", value.asInstanceOf[js.Any])
     

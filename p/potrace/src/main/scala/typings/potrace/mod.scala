@@ -149,7 +149,8 @@ object mod {
       __obj.asInstanceOf[PosterizerOptions]
     }
     
-    extension [Self <: PosterizerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PosterizerOptions] (val x: Self) extends AnyVal {
       
       inline def setFillStrategy(value: String | dominant): Self = StObject.set(x, "fillStrategy", value.asInstanceOf[js.Any])
       
@@ -219,7 +220,8 @@ object mod {
       __obj.asInstanceOf[PotraceOptions]
     }
     
-    extension [Self <: PotraceOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PotraceOptions] (val x: Self) extends AnyVal {
       
       inline def setAlphaMax(value: Double): Self = StObject.set(x, "alphaMax", value.asInstanceOf[js.Any])
       

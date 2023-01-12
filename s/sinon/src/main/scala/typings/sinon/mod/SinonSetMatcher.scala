@@ -31,7 +31,8 @@ object SinonSetMatcher {
     __obj.asInstanceOf[SinonSetMatcher]
   }
   
-  extension [Self <: SinonSetMatcher](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SinonSetMatcher] (val x: Self) extends AnyVal {
     
     inline def setContains(value: SimplifiedSet => SinonMatcher): Self = StObject.set(x, "contains", js.Any.fromFunction1(value))
     

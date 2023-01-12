@@ -23,7 +23,8 @@ object BatchStopJobRunRequest {
     __obj.asInstanceOf[BatchStopJobRunRequest]
   }
   
-  extension [Self <: BatchStopJobRunRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchStopJobRunRequest] (val x: Self) extends AnyVal {
     
     inline def setJobName(value: NameString): Self = StObject.set(x, "JobName", value.asInstanceOf[js.Any])
     

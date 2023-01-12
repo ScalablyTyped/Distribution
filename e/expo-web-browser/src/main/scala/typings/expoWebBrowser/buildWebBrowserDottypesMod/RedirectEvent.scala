@@ -15,7 +15,8 @@ object RedirectEvent {
     __obj.asInstanceOf[RedirectEvent]
   }
   
-  extension [Self <: RedirectEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RedirectEvent] (val x: Self) extends AnyVal {
     
     inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }

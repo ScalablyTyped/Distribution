@@ -17,7 +17,8 @@ object SendVenueOptions {
     __obj.asInstanceOf[SendVenueOptions]
   }
   
-  extension [Self <: SendVenueOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SendVenueOptions] (val x: Self) extends AnyVal {
     
     inline def setFoursquare_id(value: String): Self = StObject.set(x, "foursquare_id", value.asInstanceOf[js.Any])
     

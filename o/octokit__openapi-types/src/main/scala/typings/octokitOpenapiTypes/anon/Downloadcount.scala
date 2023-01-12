@@ -66,7 +66,8 @@ object Downloadcount {
     __obj.asInstanceOf[Downloadcount]
   }
   
-  extension [Self <: Downloadcount](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Downloadcount] (val x: Self) extends AnyVal {
     
     inline def setBrowser_download_url(value: String): Self = StObject.set(x, "browser_download_url", value.asInstanceOf[js.Any])
     

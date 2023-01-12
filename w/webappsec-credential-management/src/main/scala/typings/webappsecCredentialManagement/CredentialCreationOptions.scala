@@ -37,7 +37,8 @@ object CredentialCreationOptions {
     __obj.asInstanceOf[CredentialCreationOptions]
   }
   
-  extension [Self <: CredentialCreationOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CredentialCreationOptions] (val x: Self) extends AnyVal {
     
     inline def setFederated(value: FederatedCredentialInit): Self = StObject.set(x, "federated", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object SpinEvent {
     __obj.asInstanceOf[SpinEvent]
   }
   
-  extension [Self <: SpinEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpinEvent] (val x: Self) extends AnyVal {
     
     inline def setDummy1(value: Double): Self = StObject.set(x, "dummy1", value.asInstanceOf[js.Any])
   }

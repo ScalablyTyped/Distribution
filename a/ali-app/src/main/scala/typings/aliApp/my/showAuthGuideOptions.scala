@@ -47,7 +47,8 @@ object showAuthGuideOptions {
     __obj.asInstanceOf[showAuthGuideOptions]
   }
   
-  extension [Self <: showAuthGuideOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: showAuthGuideOptions] (val x: Self) extends AnyVal {
     
     inline def setAuthType(
       value: BACKGROUNDER | SHORTCUT | MICROPHONE | ADDRESSBOOK | CAMERA | PHOTO | NOTIFICATION | SELFSTARTING | LBSSERVICE | LBS

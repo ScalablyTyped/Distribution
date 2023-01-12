@@ -31,7 +31,8 @@ object ParsedSearch {
     __obj.asInstanceOf[ParsedSearch]
   }
   
-  extension [Self <: ParsedSearch](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParsedSearch] (val x: Self) extends AnyVal {
     
     inline def setBlacklist(value: js.Array[FieldFilter]): Self = StObject.set(x, "blacklist", value.asInstanceOf[js.Any])
     

@@ -33,7 +33,8 @@ object PivotFilter {
     __obj.asInstanceOf[PivotFilter]
   }
   
-  extension [Self <: PivotFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PivotFilter] (val x: Self) extends AnyVal {
     
     inline def setGetFilterCriteria(value: () => FilterCriteria): Self = StObject.set(x, "getFilterCriteria", js.Any.fromFunction0(value))
     

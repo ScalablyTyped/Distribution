@@ -18,7 +18,8 @@ object anon {
       __obj.asInstanceOf[Expires]
     }
     
-    extension [Self <: Expires](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Expires] (val x: Self) extends AnyVal {
       
       inline def setExpires(value: Double): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
       
@@ -39,7 +40,8 @@ object anon {
       __obj.asInstanceOf[Flags]
     }
     
-    extension [Self <: Flags](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Flags] (val x: Self) extends AnyVal {
       
       inline def setFlags(value: Buffer): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
       
@@ -60,7 +62,8 @@ object anon {
       __obj.asInstanceOf[Initial]
     }
     
-    extension [Self <: Initial](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Initial] (val x: Self) extends AnyVal {
       
       inline def setExpires(value: Double): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
       
@@ -83,7 +86,8 @@ object anon {
       __obj.asInstanceOf[Log]
     }
     
-    extension [Self <: Log](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Log] (val x: Self) extends AnyVal {
       
       inline def setLog(value: /* repeated */ Any => Unit): Self = StObject.set(x, "log", js.Any.fromFunction1(value))
     }
@@ -102,7 +106,8 @@ object anon {
       __obj.asInstanceOf[Success]
     }
     
-    extension [Self <: Success](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Success] (val x: Self) extends AnyVal {
       
       inline def setSuccess(value: Boolean): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
       

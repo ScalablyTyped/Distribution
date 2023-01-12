@@ -33,7 +33,8 @@ object CreateVpcConnectorRequest {
     __obj.asInstanceOf[CreateVpcConnectorRequest]
   }
   
-  extension [Self <: CreateVpcConnectorRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateVpcConnectorRequest] (val x: Self) extends AnyVal {
     
     inline def setSecurityGroups(value: StringList): Self = StObject.set(x, "SecurityGroups", value.asInstanceOf[js.Any])
     

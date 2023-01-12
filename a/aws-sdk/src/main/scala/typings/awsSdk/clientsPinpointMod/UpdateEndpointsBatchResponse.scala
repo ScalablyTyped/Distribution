@@ -15,7 +15,8 @@ object UpdateEndpointsBatchResponse {
     __obj.asInstanceOf[UpdateEndpointsBatchResponse]
   }
   
-  extension [Self <: UpdateEndpointsBatchResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateEndpointsBatchResponse] (val x: Self) extends AnyVal {
     
     inline def setMessageBody(value: MessageBody): Self = StObject.set(x, "MessageBody", value.asInstanceOf[js.Any])
   }

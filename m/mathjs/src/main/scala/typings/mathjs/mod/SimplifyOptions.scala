@@ -35,7 +35,8 @@ object SimplifyOptions {
     __obj.asInstanceOf[SimplifyOptions]
   }
   
-  extension [Self <: SimplifyOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SimplifyOptions] (val x: Self) extends AnyVal {
     
     inline def setConsoleDebug(value: Boolean): Self = StObject.set(x, "consoleDebug", value.asInstanceOf[js.Any])
     

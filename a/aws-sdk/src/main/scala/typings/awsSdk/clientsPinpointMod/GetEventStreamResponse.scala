@@ -15,7 +15,8 @@ object GetEventStreamResponse {
     __obj.asInstanceOf[GetEventStreamResponse]
   }
   
-  extension [Self <: GetEventStreamResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetEventStreamResponse] (val x: Self) extends AnyVal {
     
     inline def setEventStream(value: EventStream): Self = StObject.set(x, "EventStream", value.asInstanceOf[js.Any])
   }

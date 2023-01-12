@@ -112,7 +112,8 @@ object Control_ {
       __obj.asInstanceOf[AttributionOptions]
     }
     
-    extension [Self <: AttributionOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AttributionOptions] (val x: Self) extends AnyVal {
       
       inline def setPrefix(value: String | Boolean): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
       
@@ -154,7 +155,8 @@ object Control_ {
       __obj.asInstanceOf[LayersOptions]
     }
     
-    extension [Self <: LayersOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LayersOptions] (val x: Self) extends AnyVal {
       
       inline def setAutoZIndex(value: Boolean): Self = StObject.set(x, "autoZIndex", value.asInstanceOf[js.Any])
       
@@ -197,7 +199,8 @@ object Control_ {
       __obj.asInstanceOf[ScaleOptions]
     }
     
-    extension [Self <: ScaleOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScaleOptions] (val x: Self) extends AnyVal {
       
       inline def setImperial(value: Boolean): Self = StObject.set(x, "imperial", value.asInstanceOf[js.Any])
       
@@ -236,7 +239,8 @@ object Control_ {
       __obj.asInstanceOf[typings.leaflet.mod.Control_.ZoomOptions]
     }
     
-    extension [Self <: typings.leaflet.mod.Control_.ZoomOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.leaflet.mod.Control_.ZoomOptions] (val x: Self) extends AnyVal {
       
       inline def setZoomInText(value: String): Self = StObject.set(x, "zoomInText", value.asInstanceOf[js.Any])
       

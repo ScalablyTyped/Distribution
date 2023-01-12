@@ -25,7 +25,8 @@ object ExtraState {
     __obj.asInstanceOf[ExtraState]
   }
   
-  extension [Self <: ExtraState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExtraState] (val x: Self) extends AnyVal {
     
     inline def setInTransition(value: Boolean): Self = StObject.set(x, "inTransition", value.asInstanceOf[js.Any])
     

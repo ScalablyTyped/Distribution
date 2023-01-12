@@ -20,7 +20,8 @@ object CommitmentsScopedList {
     __obj.asInstanceOf[CommitmentsScopedList]
   }
   
-  extension [Self <: CommitmentsScopedList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CommitmentsScopedList] (val x: Self) extends AnyVal {
     
     inline def setCommitments(value: js.Array[Commitment]): Self = StObject.set(x, "commitments", value.asInstanceOf[js.Any])
     

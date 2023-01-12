@@ -509,7 +509,8 @@ object libComponentsComposedModalComposedModalMod {
       __obj.asInstanceOf[ComposedModalProps]
     }
     
-    extension [Self <: ComposedModalProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ComposedModalProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       
@@ -1279,7 +1280,8 @@ object libComponentsComposedModalComposedModalMod {
       __obj.asInstanceOf[ModalBodyProps]
     }
     
-    extension [Self <: ModalBodyProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ModalBodyProps] (val x: Self) extends AnyVal {
       
       inline def setHasForm(value: Boolean): Self = StObject.set(x, "hasForm", value.asInstanceOf[js.Any])
       
@@ -1325,7 +1327,8 @@ object libComponentsComposedModalComposedModalMod {
       __obj.asInstanceOf[ModalFooterProps]
     }
     
-    extension [Self <: ModalFooterProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ModalFooterProps] (val x: Self) extends AnyVal {
       
       inline def setCloseModal(value: MouseEvent[HTMLButtonElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "closeModal", js.Any.fromFunction1(value))
       
@@ -1388,7 +1391,8 @@ object libComponentsComposedModalComposedModalMod {
       __obj.asInstanceOf[ModalFooterSecondaryButtonConfig]
     }
     
-    extension [Self <: ModalFooterSecondaryButtonConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ModalFooterSecondaryButtonConfig] (val x: Self) extends AnyVal {
       
       inline def setButtonText(value: NonNullable[ReactNode]): Self = StObject.set(x, "buttonText", value.asInstanceOf[js.Any])
       
@@ -1778,7 +1782,8 @@ object libComponentsComposedModalComposedModalMod {
       __obj.asInstanceOf[ModalHeaderProps]
     }
     
-    extension [Self <: ModalHeaderProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ModalHeaderProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       

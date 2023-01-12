@@ -19,7 +19,8 @@ object IColor3Like {
     __obj.asInstanceOf[IColor3Like]
   }
   
-  extension [Self <: IColor3Like](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IColor3Like] (val x: Self) extends AnyVal {
     
     inline def setB(value: float): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
     

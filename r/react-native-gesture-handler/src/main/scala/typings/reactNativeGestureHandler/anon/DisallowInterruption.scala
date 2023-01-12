@@ -30,7 +30,8 @@ object DisallowInterruption {
     __obj.asInstanceOf[DisallowInterruption]
   }
   
-  extension [Self <: DisallowInterruption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisallowInterruption] (val x: Self) extends AnyVal {
     
     inline def setDisallowInterruption(value: Boolean): Self = StObject.set(x, "disallowInterruption", value.asInstanceOf[js.Any])
     

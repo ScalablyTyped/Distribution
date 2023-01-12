@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[AudioBitsPerSecond]
     }
     
-    extension [Self <: AudioBitsPerSecond](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AudioBitsPerSecond] (val x: Self) extends AnyVal {
       
       inline def setAudioBitsPerSecond(value: Double): Self = StObject.set(x, "audioBitsPerSecond", value.asInstanceOf[js.Any])
       

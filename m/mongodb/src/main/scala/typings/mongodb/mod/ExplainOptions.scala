@@ -16,7 +16,8 @@ object ExplainOptions {
     __obj.asInstanceOf[ExplainOptions]
   }
   
-  extension [Self <: ExplainOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExplainOptions] (val x: Self) extends AnyVal {
     
     inline def setExplain(value: ExplainVerbosityLike): Self = StObject.set(x, "explain", value.asInstanceOf[js.Any])
     

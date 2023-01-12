@@ -53,7 +53,8 @@ object DataWriterStoreOperation {
     __obj.asInstanceOf[DataWriterStoreOperation]
   }
   
-  extension [Self <: DataWriterStoreOperation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataWriterStoreOperation] (val x: Self) extends AnyVal {
     
     inline def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
     

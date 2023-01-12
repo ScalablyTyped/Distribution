@@ -28,7 +28,8 @@ object ListAssociatedAttributeGroupsRequest {
     __obj.asInstanceOf[ListAssociatedAttributeGroupsRequest]
   }
   
-  extension [Self <: ListAssociatedAttributeGroupsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListAssociatedAttributeGroupsRequest] (val x: Self) extends AnyVal {
     
     inline def setApplication(value: ApplicationSpecifier): Self = StObject.set(x, "application", value.asInstanceOf[js.Any])
     

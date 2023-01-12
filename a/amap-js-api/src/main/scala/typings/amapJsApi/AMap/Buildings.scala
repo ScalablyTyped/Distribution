@@ -37,7 +37,8 @@ object Buildings {
       __obj.asInstanceOf[AreaStyle]
     }
     
-    extension [Self <: AreaStyle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AreaStyle] (val x: Self) extends AnyVal {
       
       inline def setColor1(value: String): Self = StObject.set(x, "color1", value.asInstanceOf[js.Any])
       
@@ -100,7 +101,8 @@ object Buildings {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setHeightFactor(value: Double): Self = StObject.set(x, "heightFactor", value.asInstanceOf[js.Any])
       
@@ -145,7 +147,8 @@ object Buildings {
       __obj.asInstanceOf[Style]
     }
     
-    extension [Self <: Style](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Style] (val x: Self) extends AnyVal {
       
       inline def setAreas(value: js.Array[AreaStyle]): Self = StObject.set(x, "areas", value.asInstanceOf[js.Any])
       

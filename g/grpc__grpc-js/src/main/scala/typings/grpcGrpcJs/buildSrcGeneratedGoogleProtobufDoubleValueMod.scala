@@ -17,7 +17,8 @@ object buildSrcGeneratedGoogleProtobufDoubleValueMod {
       __obj.asInstanceOf[DoubleValue]
     }
     
-    extension [Self <: DoubleValue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DoubleValue] (val x: Self) extends AnyVal {
       
       inline def setValue(value: Double | String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
@@ -36,7 +37,8 @@ object buildSrcGeneratedGoogleProtobufDoubleValueMod {
       __obj.asInstanceOf[DoubleValueOutput]
     }
     
-    extension [Self <: DoubleValueOutput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DoubleValueOutput] (val x: Self) extends AnyVal {
       
       inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }

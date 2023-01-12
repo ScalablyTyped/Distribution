@@ -42,7 +42,8 @@ object HasTouchedEndDate {
     __obj.asInstanceOf[HasTouchedEndDate]
   }
   
-  extension [Self <: HasTouchedEndDate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HasTouchedEndDate] (val x: Self) extends AnyVal {
     
     inline def set$hasTouchedEndDate(value: Boolean): Self = StObject.set(x, "$hasTouchedEndDate", value.asInstanceOf[js.Any])
     

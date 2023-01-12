@@ -46,7 +46,8 @@ object BankAccountData {
     __obj.asInstanceOf[BankAccountData]
   }
   
-  extension [Self <: BankAccountData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BankAccountData] (val x: Self) extends AnyVal {
     
     inline def setBIC(value: String): Self = StObject.set(x, "BIC", value.asInstanceOf[js.Any])
     

@@ -26,7 +26,8 @@ object distSchemaEventsInstantEventMod {
       __obj.asInstanceOf[GlobalInstantEvent]
     }
     
-    extension [Self <: GlobalInstantEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GlobalInstantEvent] (val x: Self) extends AnyVal {
       
       inline def setS(value: g): Self = StObject.set(x, "s", value.asInstanceOf[js.Any])
     }
@@ -58,7 +59,8 @@ object distSchemaEventsInstantEventMod {
       __obj.asInstanceOf[InstantEvent]
     }
     
-    extension [Self <: InstantEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InstantEvent] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -85,7 +87,8 @@ object distSchemaEventsInstantEventMod {
       __obj.asInstanceOf[ProcessInstantEvent]
     }
     
-    extension [Self <: ProcessInstantEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProcessInstantEvent] (val x: Self) extends AnyVal {
       
       inline def setS(value: p): Self = StObject.set(x, "s", value.asInstanceOf[js.Any])
     }
@@ -106,7 +109,8 @@ object distSchemaEventsInstantEventMod {
       __obj.asInstanceOf[ThreadInstantEvent]
     }
     
-    extension [Self <: ThreadInstantEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ThreadInstantEvent] (val x: Self) extends AnyVal {
       
       inline def setS(value: t): Self = StObject.set(x, "s", value.asInstanceOf[js.Any])
       

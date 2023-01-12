@@ -26,7 +26,8 @@ object TypeofSetupIntentConfirmP {
     __obj.asInstanceOf[TypeofSetupIntentConfirmP]
   }
   
-  extension [Self <: TypeofSetupIntentConfirmP](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofSetupIntentConfirmP] (val x: Self) extends AnyVal {
     
     inline def setMandateData1(value: TypeofMandateData1): Self = StObject.set(x, "MandateData1", value.asInstanceOf[js.Any])
     

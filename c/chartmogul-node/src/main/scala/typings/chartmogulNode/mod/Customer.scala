@@ -51,7 +51,8 @@ object Customer {
       __obj.asInstanceOf[Attributes_]
     }
     
-    extension [Self <: Attributes_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Attributes_] (val x: Self) extends AnyVal {
       
       inline def setClearbit(value: Map): Self = StObject.set(x, "clearbit", value.asInstanceOf[js.Any])
       
@@ -134,7 +135,8 @@ object Customer {
       __obj.asInstanceOf[typings.chartmogulNode.mod.Customer.Customer]
     }
     
-    extension [Self <: typings.chartmogulNode.mod.Customer.Customer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.chartmogulNode.mod.Customer.Customer] (val x: Self) extends AnyVal {
       
       inline def setAddress(value: Addresszip): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
@@ -265,7 +267,8 @@ object Customer {
       __obj.asInstanceOf[ListCustomersParams]
     }
     
-    extension [Self <: ListCustomersParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListCustomersParams] (val x: Self) extends AnyVal {
       
       inline def setData_source_uuid(value: String): Self = StObject.set(x, "data_source_uuid", value.asInstanceOf[js.Any])
       
@@ -298,7 +301,8 @@ object Customer {
       __obj.asInstanceOf[MergeCustomersParams]
     }
     
-    extension [Self <: MergeCustomersParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MergeCustomersParams] (val x: Self) extends AnyVal {
       
       inline def setFrom(value: MergeID): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       
@@ -319,7 +323,8 @@ object Customer {
       __obj.asInstanceOf[MergeID]
     }
     
-    extension [Self <: MergeID](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MergeID] (val x: Self) extends AnyVal {
       
       inline def setCustomer_uuid(value: String): Self = StObject.set(x, "customer_uuid", value.asInstanceOf[js.Any])
       
@@ -344,7 +349,8 @@ object Customer {
       __obj.asInstanceOf[NewAttributes]
     }
     
-    extension [Self <: NewAttributes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NewAttributes] (val x: Self) extends AnyVal {
       
       inline def setCustom(value: js.Array[NewCustomAttributes]): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
       
@@ -377,7 +383,8 @@ object Customer {
       __obj.asInstanceOf[NewCustomAttributes]
     }
     
-    extension [Self <: NewCustomAttributes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NewCustomAttributes] (val x: Self) extends AnyVal {
       
       inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
@@ -426,7 +433,8 @@ object Customer {
       __obj.asInstanceOf[NewCustomer]
     }
     
-    extension [Self <: NewCustomer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NewCustomer] (val x: Self) extends AnyVal {
       
       inline def setAttributes(value: NewAttributes): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
@@ -485,7 +493,8 @@ object Customer {
       __obj.asInstanceOf[SearchCustomersParams]
     }
     
-    extension [Self <: SearchCustomersParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SearchCustomersParams] (val x: Self) extends AnyVal {
       
       inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     }
@@ -520,7 +529,8 @@ object Customer {
       __obj.asInstanceOf[UpdateCustomer]
     }
     
-    extension [Self <: UpdateCustomer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UpdateCustomer] (val x: Self) extends AnyVal {
       
       inline def setAttributes(value: NewAttributes): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       

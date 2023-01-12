@@ -29,7 +29,8 @@ object AdditionalPolicyConfig {
     __obj.asInstanceOf[AdditionalPolicyConfig]
   }
   
-  extension [Self <: AdditionalPolicyConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AdditionalPolicyConfig] (val x: Self) extends AnyVal {
     
     inline def setPolicy(value: PipelinePolicy): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
     

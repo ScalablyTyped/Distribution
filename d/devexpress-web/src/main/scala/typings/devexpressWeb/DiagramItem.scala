@@ -26,7 +26,8 @@ object DiagramItem {
     __obj.asInstanceOf[DiagramItem]
   }
   
-  extension [Self <: DiagramItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DiagramItem] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

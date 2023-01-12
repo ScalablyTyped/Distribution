@@ -35,7 +35,8 @@ object LoadNetworkResourcePageResult {
     __obj.asInstanceOf[LoadNetworkResourcePageResult]
   }
   
-  extension [Self <: LoadNetworkResourcePageResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LoadNetworkResourcePageResult] (val x: Self) extends AnyVal {
     
     inline def setHeaders(value: Headers): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     

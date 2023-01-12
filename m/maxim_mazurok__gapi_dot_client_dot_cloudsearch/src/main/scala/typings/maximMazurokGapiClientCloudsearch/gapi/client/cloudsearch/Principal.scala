@@ -22,7 +22,8 @@ object Principal {
     __obj.asInstanceOf[Principal]
   }
   
-  extension [Self <: Principal](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Principal] (val x: Self) extends AnyVal {
     
     inline def setGroupResourceName(value: String): Self = StObject.set(x, "groupResourceName", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object ListDevelopmentSchemaArnsRequest {
     __obj.asInstanceOf[ListDevelopmentSchemaArnsRequest]
   }
   
-  extension [Self <: ListDevelopmentSchemaArnsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListDevelopmentSchemaArnsRequest] (val x: Self) extends AnyVal {
     
     inline def setMaxResults(value: NumberResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     

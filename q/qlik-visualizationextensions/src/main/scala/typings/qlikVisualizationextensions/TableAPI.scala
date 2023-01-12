@@ -40,7 +40,8 @@ object TableAPI {
       __obj.asInstanceOf[IQDimensionCell]
     }
     
-    extension [Self <: IQDimensionCell](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IQDimensionCell] (val x: Self) extends AnyVal {
       
       inline def setQElemNumber(value: Double): Self = StObject.set(x, "qElemNumber", value.asInstanceOf[js.Any])
       
@@ -173,7 +174,8 @@ object TableAPI {
       __obj.asInstanceOf[IQMeasureCell]
     }
     
-    extension [Self <: IQMeasureCell](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IQMeasureCell] (val x: Self) extends AnyVal {
       
       inline def setGetPercent(value: () => Double): Self = StObject.set(x, "getPercent", js.Any.fromFunction0(value))
       
@@ -211,7 +213,8 @@ object TableAPI {
       __obj.asInstanceOf[IQRow]
     }
     
-    extension [Self <: IQRow](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IQRow] (val x: Self) extends AnyVal {
       
       inline def setCells(value: js.Array[Any]): Self = StObject.set(x, "cells", value.asInstanceOf[js.Any])
       

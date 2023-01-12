@@ -45,7 +45,8 @@ object mod {
       __obj.asInstanceOf[CacheDumpData]
     }
     
-    extension [Self <: CacheDumpData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CacheDumpData] (val x: Self) extends AnyVal {
       
       inline def setB(value: Double): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
       
@@ -94,7 +95,8 @@ object mod {
       __obj.asInstanceOf[CommandData]
     }
     
-    extension [Self <: CommandData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommandData] (val x: Self) extends AnyVal {
       
       inline def setCallback(value: /* repeated */ Any => Any): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
       
@@ -189,7 +191,8 @@ object mod {
       __obj.asInstanceOf[IssueData]
     }
     
-    extension [Self <: IssueData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IssueData] (val x: Self) extends AnyVal {
       
       inline def setFailures(value: Double): Self = StObject.set(x, "failures", value.asInstanceOf[js.Any])
       
@@ -437,7 +440,8 @@ object mod {
       __obj.asInstanceOf[StatusData]
     }
     
-    extension [Self <: StatusData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StatusData] (val x: Self) extends AnyVal {
       
       inline def setServer(value: String): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
       
@@ -464,7 +468,8 @@ object mod {
       __obj.asInstanceOf[VersionData]
     }
     
-    extension [Self <: VersionData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VersionData] (val x: Self) extends AnyVal {
       
       inline def setBugfix(value: String): Self = StObject.set(x, "bugfix", value.asInstanceOf[js.Any])
       
@@ -560,7 +565,8 @@ object mod {
       __obj.asInstanceOf[options]
     }
     
-    extension [Self <: options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: options] (val x: Self) extends AnyVal {
       
       inline def setAlgorithm(value: String): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
       

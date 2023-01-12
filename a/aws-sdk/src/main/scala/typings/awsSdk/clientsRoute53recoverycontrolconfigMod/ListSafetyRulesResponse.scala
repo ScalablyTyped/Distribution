@@ -23,7 +23,8 @@ object ListSafetyRulesResponse {
     __obj.asInstanceOf[ListSafetyRulesResponse]
   }
   
-  extension [Self <: ListSafetyRulesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListSafetyRulesResponse] (val x: Self) extends AnyVal {
     
     inline def setNextToken(value: stringMin1Max8096PatternS): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

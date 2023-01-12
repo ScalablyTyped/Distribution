@@ -26,7 +26,8 @@ object ClearSelection {
     __obj.asInstanceOf[ClearSelection]
   }
   
-  extension [Self <: ClearSelection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClearSelection] (val x: Self) extends AnyVal {
     
     inline def setClearSelection(value: () => Any): Self = StObject.set(x, "clearSelection", js.Any.fromFunction0(value))
     

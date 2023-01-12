@@ -145,7 +145,8 @@ object typingsModelsClientMod {
         __obj.asInstanceOf[ClientData]
       }
       
-      extension [Self <: ClientData](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ClientData] (val x: Self) extends AnyVal {
         
         inline def setAdminEmails(value: js.Array[String]): Self = StObject.set(x, "AdminEmails", value.asInstanceOf[js.Any])
         
@@ -204,7 +205,8 @@ object typingsModelsClientMod {
         __obj.asInstanceOf[PlatformCategorization]
       }
       
-      extension [Self <: PlatformCategorization](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: PlatformCategorization] (val x: Self) extends AnyVal {
         
         inline def setBusinessType(value: BusinessType): Self = StObject.set(x, "BusinessType", value.asInstanceOf[js.Any])
         
@@ -364,7 +366,8 @@ object typingsModelsClientMod {
         __obj.asInstanceOf[UpdateClient]
       }
       
-      extension [Self <: UpdateClient](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: UpdateClient] (val x: Self) extends AnyVal {
         
         inline def setAdminEmails(value: js.Array[String]): Self = StObject.set(x, "AdminEmails", value.asInstanceOf[js.Any])
         
@@ -434,7 +437,8 @@ object typingsModelsClientMod {
         __obj.asInstanceOf[UpdateClientLogo]
       }
       
-      extension [Self <: UpdateClientLogo](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: UpdateClientLogo] (val x: Self) extends AnyVal {
         
         inline def setFile(value: String): Self = StObject.set(x, "File", value.asInstanceOf[js.Any])
       }

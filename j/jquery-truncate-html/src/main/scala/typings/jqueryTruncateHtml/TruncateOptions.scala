@@ -23,7 +23,8 @@ object TruncateOptions {
     __obj.asInstanceOf[TruncateOptions]
   }
   
-  extension [Self <: TruncateOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TruncateOptions] (val x: Self) extends AnyVal {
     
     inline def setEllipsis(value: String): Self = StObject.set(x, "ellipsis", value.asInstanceOf[js.Any])
     

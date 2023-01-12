@@ -29,7 +29,8 @@ object MlDataframeAnalyticsStatsHyperparameters {
     __obj.asInstanceOf[MlDataframeAnalyticsStatsHyperparameters]
   }
   
-  extension [Self <: MlDataframeAnalyticsStatsHyperparameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlDataframeAnalyticsStatsHyperparameters] (val x: Self) extends AnyVal {
     
     inline def setHyperparameters(value: MlHyperparameters): Self = StObject.set(x, "hyperparameters", value.asInstanceOf[js.Any])
     

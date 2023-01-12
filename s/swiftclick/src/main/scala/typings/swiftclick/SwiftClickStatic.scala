@@ -16,7 +16,8 @@ object SwiftClickStatic {
     __obj.asInstanceOf[SwiftClickStatic]
   }
   
-  extension [Self <: SwiftClickStatic](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SwiftClickStatic] (val x: Self) extends AnyVal {
     
     inline def setAttach(value: Element => SwiftClickObject): Self = StObject.set(x, "attach", js.Any.fromFunction1(value))
   }

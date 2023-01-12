@@ -59,7 +59,8 @@ object libComponentsCoordinateMod {
       __obj.asInstanceOf[ICoordinateProps]
     }
     
-    extension [Self <: ICoordinateProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICoordinateProps] (val x: Self) extends AnyVal {
       
       inline def setActions(value: js.Array[CoordinateActions]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
       

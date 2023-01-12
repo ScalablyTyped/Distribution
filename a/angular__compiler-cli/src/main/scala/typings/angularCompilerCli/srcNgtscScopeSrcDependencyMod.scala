@@ -49,7 +49,8 @@ object srcNgtscScopeSrcDependencyMod {
       __obj.asInstanceOf[DtsModuleScopeResolver]
     }
     
-    extension [Self <: DtsModuleScopeResolver](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DtsModuleScopeResolver] (val x: Self) extends AnyVal {
       
       inline def setResolve(value: Reference[ClassDeclaration[DeclarationNode]] => ExportScope | Null): Self = StObject.set(x, "resolve", js.Any.fromFunction1(value))
     }

@@ -92,7 +92,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setFilterElements(value: /* el */ HTMLElement => Boolean): Self = StObject.set(x, "filterElements", js.Any.fromFunction1(value))
       
@@ -169,7 +170,8 @@ object mod {
       __obj.asInstanceOf[Portion]
     }
     
-    extension [Self <: Portion](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Portion] (val x: Self) extends AnyVal {
       
       inline def setEndIndexInNode(value: Double): Self = StObject.set(x, "endIndexInNode", value.asInstanceOf[js.Any])
       
@@ -201,7 +203,8 @@ object mod {
       __obj.asInstanceOf[Return]
     }
     
-    extension [Self <: Return](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Return] (val x: Self) extends AnyVal {
       
       inline def setRevert(value: () => Return): Self = StObject.set(x, "revert", js.Any.fromFunction0(value))
     }

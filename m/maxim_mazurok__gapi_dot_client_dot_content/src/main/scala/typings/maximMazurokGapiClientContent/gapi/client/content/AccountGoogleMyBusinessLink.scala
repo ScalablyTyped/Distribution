@@ -25,7 +25,8 @@ object AccountGoogleMyBusinessLink {
     __obj.asInstanceOf[AccountGoogleMyBusinessLink]
   }
   
-  extension [Self <: AccountGoogleMyBusinessLink](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccountGoogleMyBusinessLink] (val x: Self) extends AnyVal {
     
     inline def setGmbAccountId(value: String): Self = StObject.set(x, "gmbAccountId", value.asInstanceOf[js.Any])
     

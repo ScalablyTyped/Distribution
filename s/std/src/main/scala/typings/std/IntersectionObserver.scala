@@ -42,7 +42,8 @@ object IntersectionObserver {
     __obj.asInstanceOf[IntersectionObserver]
   }
   
-  extension [Self <: IntersectionObserver](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IntersectionObserver] (val x: Self) extends AnyVal {
     
     inline def setDisconnect(value: () => Unit): Self = StObject.set(x, "disconnect", js.Any.fromFunction0(value))
     

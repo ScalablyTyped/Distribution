@@ -23,7 +23,8 @@ object InstanceRefreshWarmPoolProgress {
     __obj.asInstanceOf[InstanceRefreshWarmPoolProgress]
   }
   
-  extension [Self <: InstanceRefreshWarmPoolProgress](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InstanceRefreshWarmPoolProgress] (val x: Self) extends AnyVal {
     
     inline def setInstancesToUpdate(value: InstancesToUpdate): Self = StObject.set(x, "InstancesToUpdate", value.asInstanceOf[js.Any])
     

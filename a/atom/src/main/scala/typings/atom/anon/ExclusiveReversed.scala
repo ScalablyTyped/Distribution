@@ -17,7 +17,8 @@ object ExclusiveReversed {
     __obj.asInstanceOf[ExclusiveReversed]
   }
   
-  extension [Self <: ExclusiveReversed](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExclusiveReversed] (val x: Self) extends AnyVal {
     
     inline def setExclusive(value: Boolean): Self = StObject.set(x, "exclusive", value.asInstanceOf[js.Any])
     

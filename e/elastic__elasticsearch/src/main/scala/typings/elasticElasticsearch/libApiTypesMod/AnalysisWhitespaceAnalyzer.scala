@@ -21,7 +21,8 @@ object AnalysisWhitespaceAnalyzer {
     __obj.asInstanceOf[AnalysisWhitespaceAnalyzer]
   }
   
-  extension [Self <: AnalysisWhitespaceAnalyzer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnalysisWhitespaceAnalyzer] (val x: Self) extends AnyVal {
     
     inline def setType(value: whitespace_): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object GeneralSubtreeJson {
     __obj.asInstanceOf[GeneralSubtreeJson]
   }
   
-  extension [Self <: GeneralSubtreeJson](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GeneralSubtreeJson] (val x: Self) extends AnyVal {
     
     inline def setBase(value: GeneralNameJson): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
     

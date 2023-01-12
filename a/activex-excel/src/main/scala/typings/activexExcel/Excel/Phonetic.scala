@@ -43,7 +43,8 @@ object Phonetic {
     __obj.asInstanceOf[Phonetic]
   }
   
-  extension [Self <: Phonetic](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Phonetic] (val x: Self) extends AnyVal {
     
     inline def setAlignment(value: Double): Self = StObject.set(x, "Alignment", value.asInstanceOf[js.Any])
     

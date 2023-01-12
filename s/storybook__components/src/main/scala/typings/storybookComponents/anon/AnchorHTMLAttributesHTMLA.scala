@@ -643,7 +643,8 @@ object AnchorHTMLAttributesHTMLA {
     __obj.asInstanceOf[AnchorHTMLAttributesHTMLA]
   }
   
-  extension [Self <: AnchorHTMLAttributesHTMLA](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnchorHTMLAttributesHTMLA] (val x: Self) extends AnyVal {
     
     inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
     

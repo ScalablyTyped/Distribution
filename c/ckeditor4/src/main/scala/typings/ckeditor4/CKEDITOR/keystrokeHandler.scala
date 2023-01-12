@@ -25,7 +25,8 @@ object keystrokeHandler {
     __obj.asInstanceOf[keystrokeHandler]
   }
   
-  extension [Self <: keystrokeHandler](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: keystrokeHandler] (val x: Self) extends AnyVal {
     
     inline def setAttach(value: domObject => Unit): Self = StObject.set(x, "attach", js.Any.fromFunction1(value))
     

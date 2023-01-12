@@ -21,7 +21,8 @@ object OnenoteResource {
     __obj.asInstanceOf[OnenoteResource]
   }
   
-  extension [Self <: OnenoteResource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnenoteResource] (val x: Self) extends AnyVal {
     
     inline def setContent(value: NullableOption[Any]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     

@@ -32,7 +32,8 @@ object gapi {
           __obj.asInstanceOf[DeliveryError]
         }
         
-        extension [Self <: DeliveryError](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: DeliveryError] (val x: Self) extends AnyVal {
           
           inline def setErrorClass(value: String): Self = StObject.set(x, "errorClass", value.asInstanceOf[js.Any])
           
@@ -66,7 +67,8 @@ object gapi {
           __obj.asInstanceOf[Domain]
         }
         
-        extension [Self <: Domain](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: Domain] (val x: Self) extends AnyVal {
           
           inline def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
           
@@ -114,7 +116,8 @@ object gapi {
           __obj.asInstanceOf[FeedbackLoop]
         }
         
-        extension [Self <: FeedbackLoop](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: FeedbackLoop] (val x: Self) extends AnyVal {
           
           inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
           
@@ -144,7 +147,8 @@ object gapi {
           __obj.asInstanceOf[IpReputation]
         }
         
-        extension [Self <: IpReputation](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: IpReputation] (val x: Self) extends AnyVal {
           
           inline def setIpCount(value: String): Self = StObject.set(x, "ipCount", value.asInstanceOf[js.Any])
           
@@ -177,7 +181,8 @@ object gapi {
           __obj.asInstanceOf[ListDomainsResponse]
         }
         
-        extension [Self <: ListDomainsResponse](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: ListDomainsResponse] (val x: Self) extends AnyVal {
           
           inline def setDomains(value: js.Array[Domain]): Self = StObject.set(x, "domains", value.asInstanceOf[js.Any])
           
@@ -206,7 +211,8 @@ object gapi {
           __obj.asInstanceOf[ListTrafficStatsResponse]
         }
         
-        extension [Self <: ListTrafficStatsResponse](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: ListTrafficStatsResponse] (val x: Self) extends AnyVal {
           
           inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
           
@@ -278,7 +284,8 @@ object gapi {
           __obj.asInstanceOf[TrafficStats]
         }
         
-        extension [Self <: TrafficStats](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: TrafficStats] (val x: Self) extends AnyVal {
           
           inline def setDeliveryErrors(value: js.Array[DeliveryError]): Self = StObject.set(x, "deliveryErrors", value.asInstanceOf[js.Any])
           

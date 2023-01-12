@@ -33,7 +33,8 @@ object CreateRuleGroupsNamespaceResponse {
     __obj.asInstanceOf[CreateRuleGroupsNamespaceResponse]
   }
   
-  extension [Self <: CreateRuleGroupsNamespaceResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateRuleGroupsNamespaceResponse] (val x: Self) extends AnyVal {
     
     inline def setArn(value: RuleGroupsNamespaceArn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     

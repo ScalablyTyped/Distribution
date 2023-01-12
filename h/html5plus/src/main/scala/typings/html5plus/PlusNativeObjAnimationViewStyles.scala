@@ -49,7 +49,8 @@ object PlusNativeObjAnimationViewStyles {
     __obj.asInstanceOf[PlusNativeObjAnimationViewStyles]
   }
   
-  extension [Self <: PlusNativeObjAnimationViewStyles](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlusNativeObjAnimationViewStyles] (val x: Self) extends AnyVal {
     
     inline def setBitmap(value: PlusNativeObjBitmap): Self = StObject.set(x, "bitmap", value.asInstanceOf[js.Any])
     

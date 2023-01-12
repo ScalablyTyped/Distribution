@@ -21,7 +21,8 @@ object HeightProps {
     __obj.asInstanceOf[HeightProps[ThemeType, TVal]]
   }
   
-  extension [Self <: HeightProps[?, ?], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal](x: Self & (HeightProps[ThemeType, TVal])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HeightProps[?, ?], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] (val x: Self & (HeightProps[ThemeType, TVal])) extends AnyVal {
     
     inline def setHeight(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     

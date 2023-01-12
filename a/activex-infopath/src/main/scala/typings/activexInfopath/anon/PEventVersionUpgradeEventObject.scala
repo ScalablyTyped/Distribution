@@ -16,7 +16,8 @@ object PEventVersionUpgradeEventObject {
     __obj.asInstanceOf[PEventVersionUpgradeEventObject]
   }
   
-  extension [Self <: PEventVersionUpgradeEventObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PEventVersionUpgradeEventObject] (val x: Self) extends AnyVal {
     
     inline def setPEvent(value: VersionUpgradeEventObject): Self = StObject.set(x, "pEvent", value.asInstanceOf[js.Any])
   }

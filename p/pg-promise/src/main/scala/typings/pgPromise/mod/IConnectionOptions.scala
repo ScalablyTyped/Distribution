@@ -18,7 +18,8 @@ object IConnectionOptions {
     __obj.asInstanceOf[IConnectionOptions[C]]
   }
   
-  extension [Self <: IConnectionOptions[?], C /* <: IClient */](x: Self & IConnectionOptions[C]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IConnectionOptions[?], C /* <: IClient */] (val x: Self & IConnectionOptions[C]) extends AnyVal {
     
     inline def setDirect(value: Boolean): Self = StObject.set(x, "direct", value.asInstanceOf[js.Any])
     

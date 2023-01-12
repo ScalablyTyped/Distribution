@@ -70,7 +70,8 @@ object mod {
       __obj.asInstanceOf[BoxModel]
     }
     
-    extension [Self <: BoxModel](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BoxModel] (val x: Self) extends AnyVal {
       
       inline def setBorder(value: Spacing): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
       
@@ -105,7 +106,8 @@ object mod {
       __obj.asInstanceOf[CreateBoxArgs]
     }
     
-    extension [Self <: CreateBoxArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateBoxArgs] (val x: Self) extends AnyVal {
       
       inline def setBorder(value: Spacing): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
       
@@ -136,7 +138,8 @@ object mod {
       __obj.asInstanceOf[Position]
     }
     
-    extension [Self <: Position](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Position] (val x: Self) extends AnyVal {
       
       inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
@@ -183,7 +186,8 @@ object mod {
       __obj.asInstanceOf[Rect]
     }
     
-    extension [Self <: Rect](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Rect] (val x: Self) extends AnyVal {
       
       inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       
@@ -224,7 +228,8 @@ object mod {
       __obj.asInstanceOf[Spacing]
     }
     
-    extension [Self <: Spacing](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Spacing] (val x: Self) extends AnyVal {
       
       inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       

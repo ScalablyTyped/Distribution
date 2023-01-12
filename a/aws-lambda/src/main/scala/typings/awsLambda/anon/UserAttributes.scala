@@ -18,7 +18,8 @@ object UserAttributes {
     __obj.asInstanceOf[UserAttributes]
   }
   
-  extension [Self <: UserAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UserAttributes] (val x: Self) extends AnyVal {
     
     inline def setClientMetadata(value: StringMap): Self = StObject.set(x, "clientMetadata", value.asInstanceOf[js.Any])
     

@@ -41,7 +41,8 @@ object XHierarchicalStorageAccess2 {
     __obj.asInstanceOf[XHierarchicalStorageAccess2]
   }
   
-  extension [Self <: XHierarchicalStorageAccess2](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XHierarchicalStorageAccess2] (val x: Self) extends AnyVal {
     
     inline def setOpenEncryptedStreamByHierarchicalName(value: (String, Double, SeqEquiv[NamedValue]) => XExtendedStorageStream): Self = StObject.set(x, "openEncryptedStreamByHierarchicalName", js.Any.fromFunction3(value))
   }

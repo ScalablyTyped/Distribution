@@ -86,7 +86,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setAllEntries(value: Boolean): Self = StObject.set(x, "allEntries", value.asInstanceOf[js.Any])
       
@@ -168,7 +169,8 @@ object mod {
       __obj.asInstanceOf[WebpackHotHost]
     }
     
-    extension [Self <: WebpackHotHost](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WebpackHotHost] (val x: Self) extends AnyVal {
       
       inline def setClient(value: String): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
       

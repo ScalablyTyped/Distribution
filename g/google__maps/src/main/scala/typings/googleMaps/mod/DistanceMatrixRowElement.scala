@@ -53,7 +53,8 @@ object DistanceMatrixRowElement {
     __obj.asInstanceOf[DistanceMatrixRowElement]
   }
   
-  extension [Self <: DistanceMatrixRowElement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DistanceMatrixRowElement] (val x: Self) extends AnyVal {
     
     inline def setDistance(value: Distance): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
     

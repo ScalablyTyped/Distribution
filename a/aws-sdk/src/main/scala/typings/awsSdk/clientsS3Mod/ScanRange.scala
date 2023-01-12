@@ -23,7 +23,8 @@ object ScanRange {
     __obj.asInstanceOf[ScanRange]
   }
   
-  extension [Self <: ScanRange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScanRange] (val x: Self) extends AnyVal {
     
     inline def setEnd(value: End): Self = StObject.set(x, "End", value.asInstanceOf[js.Any])
     

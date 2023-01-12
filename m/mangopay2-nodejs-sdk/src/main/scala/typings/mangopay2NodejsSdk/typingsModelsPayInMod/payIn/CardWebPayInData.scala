@@ -93,7 +93,8 @@ object CardWebPayInData {
     __obj.asInstanceOf[CardWebPayInData]
   }
   
-  extension [Self <: CardWebPayInData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CardWebPayInData] (val x: Self) extends AnyVal {
     
     inline def setCardType(value: CardType): Self = StObject.set(x, "CardType", value.asInstanceOf[js.Any])
     

@@ -31,7 +31,8 @@ object DragToElementOptions {
     __obj.asInstanceOf[DragToElementOptions]
   }
   
-  extension [Self <: DragToElementOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DragToElementOptions] (val x: Self) extends AnyVal {
     
     inline def setDestinationOffsetX(value: Double): Self = StObject.set(x, "destinationOffsetX", value.asInstanceOf[js.Any])
     

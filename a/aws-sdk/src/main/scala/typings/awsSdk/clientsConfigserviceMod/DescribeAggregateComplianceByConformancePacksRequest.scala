@@ -33,7 +33,8 @@ object DescribeAggregateComplianceByConformancePacksRequest {
     __obj.asInstanceOf[DescribeAggregateComplianceByConformancePacksRequest]
   }
   
-  extension [Self <: DescribeAggregateComplianceByConformancePacksRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeAggregateComplianceByConformancePacksRequest] (val x: Self) extends AnyVal {
     
     inline def setConfigurationAggregatorName(value: ConfigurationAggregatorName): Self = StObject.set(x, "ConfigurationAggregatorName", value.asInstanceOf[js.Any])
     

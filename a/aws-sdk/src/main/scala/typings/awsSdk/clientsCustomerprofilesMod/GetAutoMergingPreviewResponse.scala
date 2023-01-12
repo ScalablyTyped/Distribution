@@ -33,7 +33,8 @@ object GetAutoMergingPreviewResponse {
     __obj.asInstanceOf[GetAutoMergingPreviewResponse]
   }
   
-  extension [Self <: GetAutoMergingPreviewResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetAutoMergingPreviewResponse] (val x: Self) extends AnyVal {
     
     inline def setDomainName(value: name): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
     

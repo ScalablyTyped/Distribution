@@ -111,7 +111,8 @@ object ClearIndicator {
     __obj.asInstanceOf[ClearIndicator]
   }
   
-  extension [Self <: ClearIndicator](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClearIndicator] (val x: Self) extends AnyVal {
     
     inline def setClearIndicator(value: ClearIndicatorProps[Any, Any, Any] => Element): Self = StObject.set(x, "ClearIndicator", js.Any.fromFunction1(value))
     

@@ -53,7 +53,8 @@ object UpdateContentRequest {
     __obj.asInstanceOf[UpdateContentRequest]
   }
   
-  extension [Self <: UpdateContentRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateContentRequest] (val x: Self) extends AnyVal {
     
     inline def setContentId(value: UuidOrArn): Self = StObject.set(x, "contentId", value.asInstanceOf[js.Any])
     

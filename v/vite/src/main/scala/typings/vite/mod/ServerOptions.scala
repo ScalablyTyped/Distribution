@@ -65,7 +65,8 @@ object ServerOptions {
     __obj.asInstanceOf[ServerOptions]
   }
   
-  extension [Self <: ServerOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServerOptions] (val x: Self) extends AnyVal {
     
     inline def setBase(value: String): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
     

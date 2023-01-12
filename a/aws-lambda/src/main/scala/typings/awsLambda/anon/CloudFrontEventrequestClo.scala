@@ -19,7 +19,8 @@ object CloudFrontEventrequestClo {
     __obj.asInstanceOf[CloudFrontEventrequestClo]
   }
   
-  extension [Self <: CloudFrontEventrequestClo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CloudFrontEventrequestClo] (val x: Self) extends AnyVal {
     
     inline def setConfig(value: DistributionDomainName): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     

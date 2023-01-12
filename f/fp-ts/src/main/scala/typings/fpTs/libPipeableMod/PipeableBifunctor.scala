@@ -32,7 +32,8 @@ object PipeableBifunctor {
     __obj.asInstanceOf[PipeableBifunctor[F]]
   }
   
-  extension [Self <: PipeableBifunctor[?], F](x: Self & PipeableBifunctor[F]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PipeableBifunctor[?], F] (val x: Self & PipeableBifunctor[F]) extends AnyVal {
     
     inline def setBimap(
       value: (js.Function1[Any, Any], js.Function1[Any, Any]) => js.Function1[

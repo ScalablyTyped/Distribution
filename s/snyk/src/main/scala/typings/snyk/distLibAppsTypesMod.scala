@@ -28,7 +28,8 @@ object distLibAppsTypesMod {
       __obj.asInstanceOf[ICreateAppOptions]
     }
     
-    extension [Self <: ICreateAppOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICreateAppOptions] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -70,7 +71,8 @@ object distLibAppsTypesMod {
       __obj.asInstanceOf[ICreateAppRequest]
     }
     
-    extension [Self <: ICreateAppRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICreateAppRequest] (val x: Self) extends AnyVal {
       
       inline def setOrgId(value: String): Self = StObject.set(x, "orgId", value.asInstanceOf[js.Any])
       
@@ -99,7 +101,8 @@ object distLibAppsTypesMod {
       __obj.asInstanceOf[ICreateAppResponse]
     }
     
-    extension [Self <: ICreateAppResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICreateAppResponse] (val x: Self) extends AnyVal {
       
       inline def setData(value: Id): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -118,7 +121,8 @@ object distLibAppsTypesMod {
       __obj.asInstanceOf[IGenerateAppsOptions]
     }
     
-    extension [Self <: IGenerateAppsOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IGenerateAppsOptions] (val x: Self) extends AnyVal {
       
       inline def setInteractive(value: Boolean): Self = StObject.set(x, "interactive", value.asInstanceOf[js.Any])
       
@@ -139,7 +143,8 @@ object distLibAppsTypesMod {
       __obj.asInstanceOf[IGetAppsURLOpts]
     }
     
-    extension [Self <: IGetAppsURLOpts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IGetAppsURLOpts] (val x: Self) extends AnyVal {
       
       inline def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
       
@@ -162,7 +167,8 @@ object distLibAppsTypesMod {
       __obj.asInstanceOf[IJSONApi]
     }
     
-    extension [Self <: IJSONApi](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IJSONApi] (val x: Self) extends AnyVal {
       
       inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     }
@@ -181,7 +187,8 @@ object distLibAppsTypesMod {
       __obj.asInstanceOf[IRestErrorResponse]
     }
     
-    extension [Self <: IRestErrorResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IRestErrorResponse] (val x: Self) extends AnyVal {
       
       inline def setErrors(value: js.Array[Detail]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
       

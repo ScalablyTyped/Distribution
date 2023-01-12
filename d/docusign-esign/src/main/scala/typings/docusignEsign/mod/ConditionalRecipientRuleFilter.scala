@@ -42,7 +42,8 @@ object ConditionalRecipientRuleFilter {
     __obj.asInstanceOf[ConditionalRecipientRuleFilter]
   }
   
-  extension [Self <: ConditionalRecipientRuleFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConditionalRecipientRuleFilter] (val x: Self) extends AnyVal {
     
     inline def setOperator(value: String): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
     

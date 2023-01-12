@@ -15,7 +15,8 @@ object ISyndicationNodeFactory {
     __obj.asInstanceOf[ISyndicationNodeFactory]
   }
   
-  extension [Self <: ISyndicationNodeFactory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISyndicationNodeFactory] (val x: Self) extends AnyVal {
     
     inline def setCreateSyndicationNode(value: (String, String, String) => SyndicationNode): Self = StObject.set(x, "createSyndicationNode", js.Any.fromFunction3(value))
   }

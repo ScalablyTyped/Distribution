@@ -77,7 +77,8 @@ object SeriesVbpOptions {
     __obj.asInstanceOf[SeriesVbpOptions]
   }
   
-  extension [Self <: SeriesVbpOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SeriesVbpOptions] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

@@ -30,7 +30,8 @@ object ZoneCustomHostNames {
     __obj.asInstanceOf[ZoneCustomHostNames]
   }
   
-  extension [Self <: ZoneCustomHostNames](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ZoneCustomHostNames] (val x: Self) extends AnyVal {
     
     inline def setAdd(value: (String, Hostname) => js.Promise[js.Object]): Self = StObject.set(x, "add", js.Any.fromFunction2(value))
     

@@ -74,7 +74,8 @@ object Dialog {
     __obj.asInstanceOf[Dialog]
   }
   
-  extension [Self <: Dialog](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Dialog] (val x: Self) extends AnyVal {
     
     inline def setAddButton(value: (Widget, Any) => Unit): Self = StObject.set(x, "addButton", js.Any.fromFunction2(value))
     

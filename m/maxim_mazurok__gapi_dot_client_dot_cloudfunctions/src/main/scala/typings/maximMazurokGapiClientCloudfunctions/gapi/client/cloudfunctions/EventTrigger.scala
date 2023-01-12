@@ -49,7 +49,8 @@ object EventTrigger {
     __obj.asInstanceOf[EventTrigger]
   }
   
-  extension [Self <: EventTrigger](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventTrigger] (val x: Self) extends AnyVal {
     
     inline def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
     

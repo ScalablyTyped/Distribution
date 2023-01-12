@@ -15,7 +15,8 @@ object Ratio {
     __obj.asInstanceOf[Ratio]
   }
   
-  extension [Self <: Ratio](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Ratio] (val x: Self) extends AnyVal {
     
     inline def setRatio(value: Double): Self = StObject.set(x, "ratio", value.asInstanceOf[js.Any])
   }

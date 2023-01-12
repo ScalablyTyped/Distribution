@@ -245,7 +245,8 @@ object ReflectionHost {
     __obj.asInstanceOf[ReflectionHost]
   }
   
-  extension [Self <: ReflectionHost](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReflectionHost] (val x: Self) extends AnyVal {
     
     inline def setGetAdjacentNameOfClass(value: ClassDeclaration[DeclarationNode] => Identifier): Self = StObject.set(x, "getAdjacentNameOfClass", js.Any.fromFunction1(value))
     

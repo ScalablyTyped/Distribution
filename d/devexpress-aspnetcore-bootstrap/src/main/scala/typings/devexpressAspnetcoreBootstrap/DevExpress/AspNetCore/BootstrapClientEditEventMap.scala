@@ -29,7 +29,8 @@ object BootstrapClientEditEventMap {
     __obj.asInstanceOf[BootstrapClientEditEventMap]
   }
   
-  extension [Self <: BootstrapClientEditEventMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BootstrapClientEditEventMap] (val x: Self) extends AnyVal {
     
     inline def setGotFocus(value: EventArgs): Self = StObject.set(x, "gotFocus", value.asInstanceOf[js.Any])
     

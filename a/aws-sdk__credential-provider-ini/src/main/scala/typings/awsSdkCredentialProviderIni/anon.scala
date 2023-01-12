@@ -26,7 +26,8 @@ object anon {
       __obj.asInstanceOf[PartialSsoProfile]
     }
     
-    extension [Self <: PartialSsoProfile](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialSsoProfile] (val x: Self) extends AnyVal {
       
       inline def setSso_account_id(value: String): Self = StObject.set(x, "sso_account_id", value.asInstanceOf[js.Any])
       

@@ -27,7 +27,8 @@ object libSwitchPropsTypeMod {
       __obj.asInstanceOf[SwitchPropsType]
     }
     
-    extension [Self <: SwitchPropsType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SwitchPropsType] (val x: Self) extends AnyVal {
       
       inline def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
       

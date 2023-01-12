@@ -55,7 +55,8 @@ object PoseControlled {
     __obj.asInstanceOf[PoseControlled]
   }
   
-  extension [Self <: PoseControlled](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PoseControlled] (val x: Self) extends AnyVal {
     
     inline def setDevicePosition(value: Vector3): Self = StObject.set(x, "devicePosition", value.asInstanceOf[js.Any])
     

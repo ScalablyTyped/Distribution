@@ -17,7 +17,8 @@ object GraphData {
     __obj.asInstanceOf[GraphData]
   }
   
-  extension [Self <: GraphData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GraphData] (val x: Self) extends AnyVal {
     
     inline def setEdges(value: js.Array[Edge]): Self = StObject.set(x, "edges", value.asInstanceOf[js.Any])
     

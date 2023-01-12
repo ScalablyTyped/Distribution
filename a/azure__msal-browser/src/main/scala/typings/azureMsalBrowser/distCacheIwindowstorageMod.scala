@@ -51,7 +51,8 @@ object distCacheIwindowstorageMod {
       __obj.asInstanceOf[IWindowStorage[T]]
     }
     
-    extension [Self <: IWindowStorage[?], T](x: Self & IWindowStorage[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IWindowStorage[?], T] (val x: Self & IWindowStorage[T]) extends AnyVal {
       
       inline def setContainsKey(value: String => Boolean): Self = StObject.set(x, "containsKey", js.Any.fromFunction1(value))
       

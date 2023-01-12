@@ -15,7 +15,8 @@ object IPlayToSourceDeferral {
     __obj.asInstanceOf[IPlayToSourceDeferral]
   }
   
-  extension [Self <: IPlayToSourceDeferral](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPlayToSourceDeferral] (val x: Self) extends AnyVal {
     
     inline def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
   }

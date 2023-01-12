@@ -19,7 +19,8 @@ object GoogleIdentityAccesscontextmanagerV1IngressPolicy {
     __obj.asInstanceOf[GoogleIdentityAccesscontextmanagerV1IngressPolicy]
   }
   
-  extension [Self <: GoogleIdentityAccesscontextmanagerV1IngressPolicy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleIdentityAccesscontextmanagerV1IngressPolicy] (val x: Self) extends AnyVal {
     
     inline def setIngressFrom(value: GoogleIdentityAccesscontextmanagerV1IngressFrom): Self = StObject.set(x, "ingressFrom", value.asInstanceOf[js.Any])
     

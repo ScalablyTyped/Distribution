@@ -23,7 +23,8 @@ object ExecutionSucceededEventDetails {
     __obj.asInstanceOf[ExecutionSucceededEventDetails]
   }
   
-  extension [Self <: ExecutionSucceededEventDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExecutionSucceededEventDetails] (val x: Self) extends AnyVal {
     
     inline def setOutput(value: SensitiveData): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
     

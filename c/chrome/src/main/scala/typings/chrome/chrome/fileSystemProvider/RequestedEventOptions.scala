@@ -19,7 +19,8 @@ object RequestedEventOptions {
     __obj.asInstanceOf[RequestedEventOptions]
   }
   
-  extension [Self <: RequestedEventOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RequestedEventOptions] (val x: Self) extends AnyVal {
     
     inline def setFileSystemId(value: String): Self = StObject.set(x, "fileSystemId", value.asInstanceOf[js.Any])
     

@@ -33,7 +33,8 @@ object IGroundOverlayOptions {
     __obj.asInstanceOf[IGroundOverlayOptions]
   }
   
-  extension [Self <: IGroundOverlayOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IGroundOverlayOptions] (val x: Self) extends AnyVal {
     
     inline def setBackgroundColor(value: String | Color): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     

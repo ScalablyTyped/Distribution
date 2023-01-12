@@ -21,7 +21,8 @@ object anon {
       __obj.asInstanceOf[LastModel]
     }
     
-    extension [Self <: LastModel](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LastModel] (val x: Self) extends AnyVal {
       
       inline def setLastModel(value: IOutputModel): Self = StObject.set(x, "lastModel", value.asInstanceOf[js.Any])
       

@@ -80,7 +80,8 @@ object cookies {
       __obj.asInstanceOf[Cookie]
     }
     
-    extension [Self <: Cookie](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Cookie] (val x: Self) extends AnyVal {
       
       inline def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
       
@@ -135,7 +136,8 @@ object cookies {
       __obj.asInstanceOf[CookieStore]
     }
     
-    extension [Self <: CookieStore](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CookieStore] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -190,7 +192,8 @@ object cookies {
       __obj.asInstanceOf[GetAllDetails]
     }
     
-    extension [Self <: GetAllDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetAllDetails] (val x: Self) extends AnyVal {
       
       inline def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
       
@@ -263,7 +266,8 @@ object cookies {
       __obj.asInstanceOf[GetDetails]
     }
     
-    extension [Self <: GetDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetDetails] (val x: Self) extends AnyVal {
       
       inline def setFirstPartyDomain(value: String): Self = StObject.set(x, "firstPartyDomain", value.asInstanceOf[js.Any])
       
@@ -325,7 +329,8 @@ object cookies {
       __obj.asInstanceOf[OnChangedChangeInfo]
     }
     
-    extension [Self <: OnChangedChangeInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OnChangedChangeInfo] (val x: Self) extends AnyVal {
       
       inline def setCause(value: OnChangedCause): Self = StObject.set(x, "cause", value.asInstanceOf[js.Any])
       
@@ -350,7 +355,8 @@ object cookies {
       __obj.asInstanceOf[PartitionKey]
     }
     
-    extension [Self <: PartitionKey](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartitionKey] (val x: Self) extends AnyVal {
       
       inline def setTopLevelSite(value: String): Self = StObject.set(x, "topLevelSite", value.asInstanceOf[js.Any])
       
@@ -391,7 +397,8 @@ object cookies {
       __obj.asInstanceOf[RemoveDetails]
     }
     
-    extension [Self <: RemoveDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RemoveDetails] (val x: Self) extends AnyVal {
       
       inline def setFirstPartyDomain(value: String): Self = StObject.set(x, "firstPartyDomain", value.asInstanceOf[js.Any])
       
@@ -438,7 +445,8 @@ object cookies {
       __obj.asInstanceOf[RemoveReturnDetails]
     }
     
-    extension [Self <: RemoveReturnDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RemoveReturnDetails] (val x: Self) extends AnyVal {
       
       inline def setFirstPartyDomain(value: String): Self = StObject.set(x, "firstPartyDomain", value.asInstanceOf[js.Any])
       
@@ -529,7 +537,8 @@ object cookies {
       __obj.asInstanceOf[SetDetails]
     }
     
-    extension [Self <: SetDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SetDetails] (val x: Self) extends AnyVal {
       
       inline def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
       

@@ -23,7 +23,8 @@ object NodesConnectedEvent {
     __obj.asInstanceOf[NodesConnectedEvent]
   }
   
-  extension [Self <: NodesConnectedEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodesConnectedEvent] (val x: Self) extends AnyVal {
     
     inline def setContextId(value: GraphObjectId): Self = StObject.set(x, "contextId", value.asInstanceOf[js.Any])
     

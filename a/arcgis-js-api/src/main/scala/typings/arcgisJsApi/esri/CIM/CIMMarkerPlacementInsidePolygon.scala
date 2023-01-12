@@ -74,7 +74,8 @@ object CIMMarkerPlacementInsidePolygon {
     __obj.asInstanceOf[CIMMarkerPlacementInsidePolygon]
   }
   
-  extension [Self <: CIMMarkerPlacementInsidePolygon](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CIMMarkerPlacementInsidePolygon] (val x: Self) extends AnyVal {
     
     inline def setClipping(
       value: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof PlacementClip * / any */ String

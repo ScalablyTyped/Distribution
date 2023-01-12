@@ -18,7 +18,8 @@ object GatherNdInputs {
     __obj.asInstanceOf[GatherNdInputs]
   }
   
-  extension [Self <: GatherNdInputs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GatherNdInputs] (val x: Self) extends AnyVal {
     
     inline def setIndices(value: scala.Any): Self = StObject.set(x, "indices", value.asInstanceOf[js.Any])
     

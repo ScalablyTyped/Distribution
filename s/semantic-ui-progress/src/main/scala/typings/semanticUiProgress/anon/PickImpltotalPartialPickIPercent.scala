@@ -23,7 +23,8 @@ object PickImpltotalPartialPickIPercent {
     __obj.asInstanceOf[PickImpltotalPartialPickIPercent]
   }
   
-  extension [Self <: PickImpltotalPartialPickIPercent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickImpltotalPartialPickIPercent] (val x: Self) extends AnyVal {
     
     inline def setPercent(value: String): Self = StObject.set(x, "percent", value.asInstanceOf[js.Any])
     

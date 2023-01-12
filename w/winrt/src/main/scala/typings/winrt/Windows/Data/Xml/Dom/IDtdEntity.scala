@@ -52,7 +52,8 @@ object IDtdEntity {
     __obj.asInstanceOf[IDtdEntity]
   }
   
-  extension [Self <: IDtdEntity](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IDtdEntity] (val x: Self) extends AnyVal {
     
     inline def setNotationName(value: Any): Self = StObject.set(x, "notationName", value.asInstanceOf[js.Any])
     

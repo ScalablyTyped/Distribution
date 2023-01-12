@@ -22,7 +22,8 @@ object GanttAssignments {
     __obj.asInstanceOf[GanttAssignments]
   }
   
-  extension [Self <: GanttAssignments](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GanttAssignments] (val x: Self) extends AnyVal {
     
     inline def setDataResourceIdField(value: String): Self = StObject.set(x, "dataResourceIdField", value.asInstanceOf[js.Any])
     

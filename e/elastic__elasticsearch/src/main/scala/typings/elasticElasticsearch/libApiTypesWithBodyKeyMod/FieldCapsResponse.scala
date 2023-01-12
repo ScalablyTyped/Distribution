@@ -18,7 +18,8 @@ object FieldCapsResponse {
     __obj.asInstanceOf[FieldCapsResponse]
   }
   
-  extension [Self <: FieldCapsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FieldCapsResponse] (val x: Self) extends AnyVal {
     
     inline def setFields(value: Record[Field, Record[String, FieldCapsFieldCapability]]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     

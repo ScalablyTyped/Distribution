@@ -29,7 +29,8 @@ object OptionsTopBarScrollEdgeAppearance {
     __obj.asInstanceOf[OptionsTopBarScrollEdgeAppearance]
   }
   
-  extension [Self <: OptionsTopBarScrollEdgeAppearance](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OptionsTopBarScrollEdgeAppearance] (val x: Self) extends AnyVal {
     
     inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     

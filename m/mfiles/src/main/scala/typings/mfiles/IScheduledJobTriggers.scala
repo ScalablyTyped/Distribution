@@ -29,7 +29,8 @@ object IScheduledJobTriggers {
     __obj.asInstanceOf[IScheduledJobTriggers]
   }
   
-  extension [Self <: IScheduledJobTriggers](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IScheduledJobTriggers] (val x: Self) extends AnyVal {
     
     inline def setAdd(value: (Double, IScheduledJobTrigger) => Unit): Self = StObject.set(x, "Add", js.Any.fromFunction2(value))
     

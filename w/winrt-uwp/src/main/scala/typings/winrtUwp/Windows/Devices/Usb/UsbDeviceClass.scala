@@ -23,7 +23,8 @@ object UsbDeviceClass {
     __obj.asInstanceOf[UsbDeviceClass]
   }
   
-  extension [Self <: UsbDeviceClass](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UsbDeviceClass] (val x: Self) extends AnyVal {
     
     inline def setClassCode(value: Double): Self = StObject.set(x, "classCode", value.asInstanceOf[js.Any])
     

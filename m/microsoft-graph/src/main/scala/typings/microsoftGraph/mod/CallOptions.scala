@@ -15,7 +15,8 @@ object CallOptions {
     __obj.asInstanceOf[CallOptions]
   }
   
-  extension [Self <: CallOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CallOptions] (val x: Self) extends AnyVal {
     
     inline def setHideBotAfterEscalation(value: NullableOption[Boolean]): Self = StObject.set(x, "hideBotAfterEscalation", value.asInstanceOf[js.Any])
     

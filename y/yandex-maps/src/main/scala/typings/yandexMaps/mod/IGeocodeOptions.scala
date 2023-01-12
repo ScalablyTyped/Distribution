@@ -62,7 +62,8 @@ object IGeocodeOptions {
     __obj.asInstanceOf[IGeocodeOptions]
   }
   
-  extension [Self <: IGeocodeOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IGeocodeOptions] (val x: Self) extends AnyVal {
     
     inline def setBoundedBy(value: js.Array[js.Array[Double]]): Self = StObject.set(x, "boundedBy", value.asInstanceOf[js.Any])
     

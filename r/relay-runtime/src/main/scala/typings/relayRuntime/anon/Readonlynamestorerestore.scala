@@ -20,7 +20,8 @@ object Readonlynamestorerestore {
     __obj.asInstanceOf[Readonlynamestorerestore]
   }
   
-  extension [Self <: Readonlynamestorerestore](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Readonlynamestorerestore] (val x: Self) extends AnyVal {
     
     inline def setName(value: storeDotrestore): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }

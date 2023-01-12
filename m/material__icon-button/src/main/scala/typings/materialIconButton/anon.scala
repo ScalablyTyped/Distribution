@@ -32,7 +32,8 @@ object anon {
       __obj.asInstanceOf[ARIALABEL]
     }
     
-    extension [Self <: ARIALABEL](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ARIALABEL] (val x: Self) extends AnyVal {
       
       inline def setARIA_LABEL(value: String): Self = StObject.set(x, "ARIA_LABEL", value.asInstanceOf[js.Any])
       
@@ -59,7 +60,8 @@ object anon {
       __obj.asInstanceOf[ICONBUTTONON]
     }
     
-    extension [Self <: ICONBUTTONON](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICONBUTTONON] (val x: Self) extends AnyVal {
       
       inline def setICON_BUTTON_ON(value: String): Self = StObject.set(x, "ICON_BUTTON_ON", value.asInstanceOf[js.Any])
       
@@ -89,7 +91,8 @@ object anon {
       __obj.asInstanceOf[PartialMDCIconButtonToggl]
     }
     
-    extension [Self <: PartialMDCIconButtonToggl](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialMDCIconButtonToggl] (val x: Self) extends AnyVal {
       
       inline def setAddClass(value: /* className */ String => Unit): Self = StObject.set(x, "addClass", js.Any.fromFunction1(value))
       

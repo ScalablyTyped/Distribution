@@ -28,7 +28,8 @@ object ASPxClientCardViewCardClickEventArgs {
     __obj.asInstanceOf[ASPxClientCardViewCardClickEventArgs]
   }
   
-  extension [Self <: ASPxClientCardViewCardClickEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientCardViewCardClickEventArgs] (val x: Self) extends AnyVal {
     
     inline def setHtmlEvent(value: Any): Self = StObject.set(x, "htmlEvent", value.asInstanceOf[js.Any])
     

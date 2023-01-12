@@ -37,7 +37,8 @@ object IManifestInfo {
     __obj.asInstanceOf[IManifestInfo]
   }
   
-  extension [Self <: IManifestInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IManifestInfo] (val x: Self) extends AnyVal {
     
     inline def setAvailableFrom(value: js.Date): Self = StObject.set(x, "availableFrom", value.asInstanceOf[js.Any])
     

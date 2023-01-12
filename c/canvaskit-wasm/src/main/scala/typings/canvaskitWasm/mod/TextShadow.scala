@@ -22,7 +22,8 @@ object TextShadow {
     __obj.asInstanceOf[TextShadow]
   }
   
-  extension [Self <: TextShadow](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextShadow] (val x: Self) extends AnyVal {
     
     inline def setBlurRadius(value: Double): Self = StObject.set(x, "blurRadius", value.asInstanceOf[js.Any])
     

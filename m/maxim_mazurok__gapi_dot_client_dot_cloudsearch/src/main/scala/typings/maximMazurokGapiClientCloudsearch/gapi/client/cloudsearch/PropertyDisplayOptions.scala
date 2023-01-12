@@ -21,7 +21,8 @@ object PropertyDisplayOptions {
     __obj.asInstanceOf[PropertyDisplayOptions]
   }
   
-  extension [Self <: PropertyDisplayOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PropertyDisplayOptions] (val x: Self) extends AnyVal {
     
     inline def setDisplayLabel(value: String): Self = StObject.set(x, "displayLabel", value.asInstanceOf[js.Any])
     

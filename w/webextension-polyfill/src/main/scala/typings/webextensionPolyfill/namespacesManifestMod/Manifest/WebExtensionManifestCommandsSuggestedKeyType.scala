@@ -48,7 +48,8 @@ object WebExtensionManifestCommandsSuggestedKeyType {
     __obj.asInstanceOf[WebExtensionManifestCommandsSuggestedKeyType]
   }
   
-  extension [Self <: WebExtensionManifestCommandsSuggestedKeyType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebExtensionManifestCommandsSuggestedKeyType] (val x: Self) extends AnyVal {
     
     inline def setAndroid(value: String): Self = StObject.set(x, "android", value.asInstanceOf[js.Any])
     

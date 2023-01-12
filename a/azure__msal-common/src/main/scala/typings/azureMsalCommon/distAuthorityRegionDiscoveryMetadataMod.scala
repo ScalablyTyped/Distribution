@@ -23,7 +23,8 @@ object distAuthorityRegionDiscoveryMetadataMod {
       __obj.asInstanceOf[RegionDiscoveryMetadata]
     }
     
-    extension [Self <: RegionDiscoveryMetadata](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RegionDiscoveryMetadata] (val x: Self) extends AnyVal {
       
       inline def setRegion_outcome(value: RegionDiscoveryOutcomes): Self = StObject.set(x, "region_outcome", value.asInstanceOf[js.Any])
       

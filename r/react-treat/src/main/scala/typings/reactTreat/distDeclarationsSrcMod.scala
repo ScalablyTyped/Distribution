@@ -37,7 +37,8 @@ object distDeclarationsSrcMod {
       __obj.asInstanceOf[TreatProviderProps]
     }
     
-    extension [Self <: TreatProviderProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TreatProviderProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

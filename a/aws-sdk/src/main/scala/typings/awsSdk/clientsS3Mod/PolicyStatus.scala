@@ -18,7 +18,8 @@ object PolicyStatus {
     __obj.asInstanceOf[PolicyStatus]
   }
   
-  extension [Self <: PolicyStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PolicyStatus] (val x: Self) extends AnyVal {
     
     inline def setIsPublic(value: IsPublic): Self = StObject.set(x, "IsPublic", value.asInstanceOf[js.Any])
     

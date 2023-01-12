@@ -18,7 +18,8 @@ object XRSystemEventMap {
     __obj.asInstanceOf[XRSystemEventMap]
   }
   
-  extension [Self <: XRSystemEventMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XRSystemEventMap] (val x: Self) extends AnyVal {
     
     inline def setDevicechange(value: XRSystemDeviceChangeEvent): Self = StObject.set(x, "devicechange", value.asInstanceOf[js.Any])
     

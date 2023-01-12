@@ -113,7 +113,8 @@ object GridsterOptions {
     __obj.asInstanceOf[GridsterOptions]
   }
   
-  extension [Self <: GridsterOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GridsterOptions] (val x: Self) extends AnyVal {
     
     inline def setAutogenerate_stylesheet(value: Boolean): Self = StObject.set(x, "autogenerate_stylesheet", value.asInstanceOf[js.Any])
     

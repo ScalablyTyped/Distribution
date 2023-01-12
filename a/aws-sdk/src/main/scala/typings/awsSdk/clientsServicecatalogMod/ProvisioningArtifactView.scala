@@ -23,7 +23,8 @@ object ProvisioningArtifactView {
     __obj.asInstanceOf[ProvisioningArtifactView]
   }
   
-  extension [Self <: ProvisioningArtifactView](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProvisioningArtifactView] (val x: Self) extends AnyVal {
     
     inline def setProductViewSummary(value: ProductViewSummary): Self = StObject.set(x, "ProductViewSummary", value.asInstanceOf[js.Any])
     

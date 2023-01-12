@@ -63,7 +63,8 @@ object ASN1Object {
     __obj.asInstanceOf[ASN1Object]
   }
   
-  extension [Self <: ASN1Object](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASN1Object] (val x: Self) extends AnyVal {
     
     inline def setGetEncodedHex(value: () => String): Self = StObject.set(x, "getEncodedHex", js.Any.fromFunction0(value))
     

@@ -96,7 +96,8 @@ object DeclarationReflection {
     __obj.asInstanceOf[DeclarationReflection]
   }
   
-  extension [Self <: DeclarationReflection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeclarationReflection] (val x: Self) extends AnyVal {
     
     inline def setCategories(
       value: ToSerialized[

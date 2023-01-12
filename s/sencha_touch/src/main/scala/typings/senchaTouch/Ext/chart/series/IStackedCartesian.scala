@@ -39,7 +39,8 @@ object IStackedCartesian {
     __obj.asInstanceOf[IStackedCartesian]
   }
   
-  extension [Self <: IStackedCartesian](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IStackedCartesian] (val x: Self) extends AnyVal {
     
     inline def setGetStacked(value: () => Boolean): Self = StObject.set(x, "getStacked", js.Any.fromFunction0(value))
     

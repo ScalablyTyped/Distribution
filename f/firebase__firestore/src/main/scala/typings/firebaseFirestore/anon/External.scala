@@ -33,7 +33,8 @@ object External {
     __obj.asInstanceOf[External]
   }
   
-  extension [Self <: External](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: External] (val x: Self) extends AnyVal {
     
     inline def setExternal(value: Any => Boolean): Self = StObject.set(x, "external", js.Any.fromFunction1(value))
     

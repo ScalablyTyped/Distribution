@@ -67,7 +67,8 @@ object servicesTilesetsMod {
       __obj.asInstanceOf[Tileset]
     }
     
-    extension [Self <: Tileset](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Tileset] (val x: Self) extends AnyVal {
       
       inline def setCenter(value: js.Array[Double]): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
       
@@ -154,7 +155,8 @@ object servicesTilesetsMod {
       __obj.asInstanceOf[TilesetsService]
     }
     
-    extension [Self <: TilesetsService](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TilesetsService] (val x: Self) extends AnyVal {
       
       inline def setCreateTileset(value: Private => MapiRequest[Any]): Self = StObject.set(x, "createTileset", js.Any.fromFunction1(value))
       

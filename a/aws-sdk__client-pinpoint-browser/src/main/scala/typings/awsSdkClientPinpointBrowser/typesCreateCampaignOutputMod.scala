@@ -31,7 +31,8 @@ object typesCreateCampaignOutputMod {
       __obj.asInstanceOf[CreateCampaignOutput]
     }
     
-    extension [Self <: CreateCampaignOutput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateCampaignOutput] (val x: Self) extends AnyVal {
       
       inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
       

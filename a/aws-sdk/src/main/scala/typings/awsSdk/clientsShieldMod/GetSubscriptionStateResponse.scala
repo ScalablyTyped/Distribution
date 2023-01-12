@@ -18,7 +18,8 @@ object GetSubscriptionStateResponse {
     __obj.asInstanceOf[GetSubscriptionStateResponse]
   }
   
-  extension [Self <: GetSubscriptionStateResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetSubscriptionStateResponse] (val x: Self) extends AnyVal {
     
     inline def setSubscriptionState(value: SubscriptionState): Self = StObject.set(x, "SubscriptionState", value.asInstanceOf[js.Any])
   }

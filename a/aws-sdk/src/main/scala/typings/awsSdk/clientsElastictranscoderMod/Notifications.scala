@@ -33,7 +33,8 @@ object Notifications {
     __obj.asInstanceOf[Notifications]
   }
   
-  extension [Self <: Notifications](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Notifications] (val x: Self) extends AnyVal {
     
     inline def setCompleted(value: SnsTopic): Self = StObject.set(x, "Completed", value.asInstanceOf[js.Any])
     

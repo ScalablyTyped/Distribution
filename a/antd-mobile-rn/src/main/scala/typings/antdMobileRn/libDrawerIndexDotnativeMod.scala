@@ -56,7 +56,8 @@ object libDrawerIndexDotnativeMod {
       __obj.asInstanceOf[DrawerNativeProps]
     }
     
-    extension [Self <: DrawerNativeProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DrawerNativeProps] (val x: Self) extends AnyVal {
       
       inline def setDrawerBackgroundColor(value: String): Self = StObject.set(x, "drawerBackgroundColor", value.asInstanceOf[js.Any])
       

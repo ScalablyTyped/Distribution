@@ -32,7 +32,8 @@ object ClaimMissingTeeth {
     __obj.asInstanceOf[ClaimMissingTeeth]
   }
   
-  extension [Self <: ClaimMissingTeeth](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClaimMissingTeeth] (val x: Self) extends AnyVal {
     
     inline def setExtractionDate(value: String): Self = StObject.set(x, "extractionDate", value.asInstanceOf[js.Any])
     

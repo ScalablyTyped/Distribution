@@ -15,7 +15,8 @@ object LabelNone {
     __obj.asInstanceOf[LabelNone]
   }
   
-  extension [Self <: LabelNone](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LabelNone] (val x: Self) extends AnyVal {
     
     inline def setLabelNone(value: String): Self = StObject.set(x, "labelNone", value.asInstanceOf[js.Any])
     

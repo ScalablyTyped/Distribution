@@ -23,7 +23,8 @@ object StopTimecode {
     __obj.asInstanceOf[StopTimecode]
   }
   
-  extension [Self <: StopTimecode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StopTimecode] (val x: Self) extends AnyVal {
     
     inline def setLastFrameClippingBehavior(value: LastFrameClippingBehavior): Self = StObject.set(x, "LastFrameClippingBehavior", value.asInstanceOf[js.Any])
     

@@ -27,7 +27,8 @@ object predominantCategories {
     __obj.asInstanceOf[predominantCategories]
   }
   
-  extension [Self <: predominantCategories](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: predominantCategories] (val x: Self) extends AnyVal {
     
     inline def setPredominantCategories(value: predominantCategoriesPredominantCategoriesParams => js.Promise[PredominantCategoriesResult]): Self = StObject.set(x, "predominantCategories", js.Any.fromFunction1(value))
   }

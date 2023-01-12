@@ -27,7 +27,8 @@ object RebootBrokerResponse {
     __obj.asInstanceOf[RebootBrokerResponse]
   }
   
-  extension [Self <: RebootBrokerResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RebootBrokerResponse] (val x: Self) extends AnyVal {
     
     inline def setClusterArn(value: string): Self = StObject.set(x, "ClusterArn", value.asInstanceOf[js.Any])
     

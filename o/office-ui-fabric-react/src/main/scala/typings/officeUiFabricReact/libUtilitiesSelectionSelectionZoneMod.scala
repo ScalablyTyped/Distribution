@@ -166,7 +166,8 @@ object libUtilitiesSelectionSelectionZoneMod {
       __obj.asInstanceOf[ISelectionZone]
     }
     
-    extension [Self <: ISelectionZone](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISelectionZone] (val x: Self) extends AnyVal {
       
       inline def setIgnoreNextFocus(value: () => Unit): Self = StObject.set(x, "ignoreNextFocus", js.Any.fromFunction0(value))
     }
@@ -291,7 +292,8 @@ object libUtilitiesSelectionSelectionZoneMod {
       __obj.asInstanceOf[ISelectionZoneProps]
     }
     
-    extension [Self <: ISelectionZoneProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISelectionZoneProps] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -368,7 +370,8 @@ object libUtilitiesSelectionSelectionZoneMod {
       __obj.asInstanceOf[ISelectionZoneState]
     }
     
-    extension [Self <: ISelectionZoneState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISelectionZoneState] (val x: Self) extends AnyVal {
       
       inline def setIsModal(value: Boolean): Self = StObject.set(x, "isModal", value.asInstanceOf[js.Any])
       

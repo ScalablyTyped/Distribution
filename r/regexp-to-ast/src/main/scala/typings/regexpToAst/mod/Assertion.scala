@@ -32,7 +32,8 @@ object Assertion {
     __obj.asInstanceOf[Assertion]
   }
   
-  extension [Self <: Assertion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Assertion] (val x: Self) extends AnyVal {
     
     inline def setType(value: StartAnchor | EndAnchor | WordBoundary | NonWordBoundary | Lookahead | NegativeLookahead): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

@@ -48,7 +48,8 @@ object esmMultiselectTagMod {
       __obj.asInstanceOf[MultiselectTagProps]
     }
     
-    extension [Self <: MultiselectTagProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MultiselectTagProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

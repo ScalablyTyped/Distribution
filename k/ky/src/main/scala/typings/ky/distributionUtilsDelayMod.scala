@@ -24,7 +24,8 @@ object distributionUtilsDelayMod {
       __obj.asInstanceOf[DelayOptions]
     }
     
-    extension [Self <: DelayOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DelayOptions] (val x: Self) extends AnyVal {
       
       inline def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
       

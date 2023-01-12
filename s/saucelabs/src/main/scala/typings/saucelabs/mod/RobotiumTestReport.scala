@@ -97,7 +97,8 @@ object RobotiumTestReport {
     __obj.asInstanceOf[RobotiumTestReport]
   }
   
-  extension [Self <: RobotiumTestReport](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RobotiumTestReport] (val x: Self) extends AnyVal {
     
     inline def setAppVersionId(value: Double): Self = StObject.set(x, "appVersionId", value.asInstanceOf[js.Any])
     

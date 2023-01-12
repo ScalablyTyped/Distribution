@@ -57,7 +57,8 @@ object libProcessorMod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setPersist(value: Boolean): Self = StObject.set(x, "persist", value.asInstanceOf[js.Any])
       
@@ -90,7 +91,8 @@ object libProcessorMod {
       __obj.asInstanceOf[Processor]
     }
     
-    extension [Self <: Processor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Processor] (val x: Self) extends AnyVal {
       
       inline def setPersistent(value: Boolean): Self = StObject.set(x, "persistent", value.asInstanceOf[js.Any])
       

@@ -47,7 +47,8 @@ object BaseSupportOption {
     __obj.asInstanceOf[BaseSupportOption[Type]]
   }
   
-  extension [Self <: BaseSupportOption[?], Type /* <: SupportOptionType */](x: Self & BaseSupportOption[Type]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BaseSupportOption[?], Type /* <: SupportOptionType */] (val x: Self & BaseSupportOption[Type]) extends AnyVal {
     
     inline def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     

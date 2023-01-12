@@ -60,7 +60,8 @@ object pluploadSettings {
     __obj.asInstanceOf[pluploadSettings]
   }
   
-  extension [Self <: pluploadSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: pluploadSettings] (val x: Self) extends AnyVal {
     
     inline def setBrowse_button(value: Any): Self = StObject.set(x, "browse_button", value.asInstanceOf[js.Any])
     

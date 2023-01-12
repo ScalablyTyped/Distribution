@@ -166,7 +166,8 @@ object Analyticsreporting {
         __obj.asInstanceOf[ReportsCollection]
       }
       
-      extension [Self <: ReportsCollection](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ReportsCollection] (val x: Self) extends AnyVal {
         
         inline def setBatchGet(value: GetReportsRequest => GetReportsResponse): Self = StObject.set(x, "batchGet", js.Any.fromFunction1(value))
       }
@@ -184,14 +185,16 @@ object Analyticsreporting {
         __obj.asInstanceOf[UserActivityCollection]
       }
       
-      extension [Self <: UserActivityCollection](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: UserActivityCollection] (val x: Self) extends AnyVal {
         
         inline def setSearch(value: SearchUserActivityRequest => SearchUserActivityResponse): Self = StObject.set(x, "search", js.Any.fromFunction1(value))
       }
     }
   }
   
-  extension [Self <: Analyticsreporting](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Analyticsreporting] (val x: Self) extends AnyVal {
     
     inline def setNewCohort(value: () => Cohort): Self = StObject.set(x, "newCohort", js.Any.fromFunction0(value))
     
@@ -295,7 +298,8 @@ object Analyticsreporting {
         __obj.asInstanceOf[Activity]
       }
       
-      extension [Self <: Activity](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Activity] (val x: Self) extends AnyVal {
         
         inline def setActivityTime(value: String): Self = StObject.set(x, "activityTime", value.asInstanceOf[js.Any])
         
@@ -376,7 +380,8 @@ object Analyticsreporting {
         __obj.asInstanceOf[Cohort]
       }
       
-      extension [Self <: Cohort](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Cohort] (val x: Self) extends AnyVal {
         
         inline def setDateRange(value: DateRange): Self = StObject.set(x, "dateRange", value.asInstanceOf[js.Any])
         
@@ -405,7 +410,8 @@ object Analyticsreporting {
         __obj.asInstanceOf[CohortGroup]
       }
       
-      extension [Self <: CohortGroup](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CohortGroup] (val x: Self) extends AnyVal {
         
         inline def setCohorts(value: js.Array[Cohort]): Self = StObject.set(x, "cohorts", value.asInstanceOf[js.Any])
         
@@ -432,7 +438,8 @@ object Analyticsreporting {
         __obj.asInstanceOf[ColumnHeader]
       }
       
-      extension [Self <: ColumnHeader](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ColumnHeader] (val x: Self) extends AnyVal {
         
         inline def setDimensions(value: js.Array[String]): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
         
@@ -459,7 +466,8 @@ object Analyticsreporting {
         __obj.asInstanceOf[CustomDimension]
       }
       
-      extension [Self <: CustomDimension](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CustomDimension] (val x: Self) extends AnyVal {
         
         inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
         
@@ -484,7 +492,8 @@ object Analyticsreporting {
         __obj.asInstanceOf[DateRange]
       }
       
-      extension [Self <: DateRange](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: DateRange] (val x: Self) extends AnyVal {
         
         inline def setEndDate(value: String): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
         
@@ -509,7 +518,8 @@ object Analyticsreporting {
         __obj.asInstanceOf[DateRangeValues]
       }
       
-      extension [Self <: DateRangeValues](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: DateRangeValues] (val x: Self) extends AnyVal {
         
         inline def setPivotValueRegions(value: js.Array[PivotValueRegion]): Self = StObject.set(x, "pivotValueRegions", value.asInstanceOf[js.Any])
         
@@ -538,7 +548,8 @@ object Analyticsreporting {
         __obj.asInstanceOf[Dimension]
       }
       
-      extension [Self <: Dimension](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Dimension] (val x: Self) extends AnyVal {
         
         inline def setHistogramBuckets(value: js.Array[String]): Self = StObject.set(x, "histogramBuckets", value.asInstanceOf[js.Any])
         
@@ -571,7 +582,8 @@ object Analyticsreporting {
         __obj.asInstanceOf[DimensionFilter]
       }
       
-      extension [Self <: DimensionFilter](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: DimensionFilter] (val x: Self) extends AnyVal {
         
         inline def setCaseSensitive(value: Boolean): Self = StObject.set(x, "caseSensitive", value.asInstanceOf[js.Any])
         
@@ -610,7 +622,8 @@ object Analyticsreporting {
         __obj.asInstanceOf[DimensionFilterClause]
       }
       
-      extension [Self <: DimensionFilterClause](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: DimensionFilterClause] (val x: Self) extends AnyVal {
         
         inline def setFilters(value: js.Array[DimensionFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
         
@@ -639,7 +652,8 @@ object Analyticsreporting {
         __obj.asInstanceOf[DynamicSegment]
       }
       
-      extension [Self <: DynamicSegment](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: DynamicSegment] (val x: Self) extends AnyVal {
         
         inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
@@ -672,7 +686,8 @@ object Analyticsreporting {
         __obj.asInstanceOf[EcommerceData]
       }
       
-      extension [Self <: EcommerceData](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: EcommerceData] (val x: Self) extends AnyVal {
         
         inline def setActionType(value: String): Self = StObject.set(x, "actionType", value.asInstanceOf[js.Any])
         
@@ -713,7 +728,8 @@ object Analyticsreporting {
         __obj.asInstanceOf[EventData]
       }
       
-      extension [Self <: EventData](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: EventData] (val x: Self) extends AnyVal {
         
         inline def setEventAction(value: String): Self = StObject.set(x, "eventAction", value.asInstanceOf[js.Any])
         
@@ -750,7 +766,8 @@ object Analyticsreporting {
         __obj.asInstanceOf[GetReportsRequest]
       }
       
-      extension [Self <: GetReportsRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: GetReportsRequest] (val x: Self) extends AnyVal {
         
         inline def setReportRequests(value: js.Array[ReportRequest]): Self = StObject.set(x, "reportRequests", value.asInstanceOf[js.Any])
         
@@ -779,7 +796,8 @@ object Analyticsreporting {
         __obj.asInstanceOf[GetReportsResponse]
       }
       
-      extension [Self <: GetReportsResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: GetReportsResponse] (val x: Self) extends AnyVal {
         
         inline def setQueryCost(value: Double): Self = StObject.set(x, "queryCost", value.asInstanceOf[js.Any])
         
@@ -822,7 +840,8 @@ object Analyticsreporting {
         __obj.asInstanceOf[GoalData]
       }
       
-      extension [Self <: GoalData](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: GoalData] (val x: Self) extends AnyVal {
         
         inline def setGoalCompletionLocation(value: String): Self = StObject.set(x, "goalCompletionLocation", value.asInstanceOf[js.Any])
         
@@ -869,7 +888,8 @@ object Analyticsreporting {
         __obj.asInstanceOf[GoalSetData]
       }
       
-      extension [Self <: GoalSetData](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: GoalSetData] (val x: Self) extends AnyVal {
         
         inline def setGoals(value: js.Array[GoalData]): Self = StObject.set(x, "goals", value.asInstanceOf[js.Any])
         
@@ -894,7 +914,8 @@ object Analyticsreporting {
         __obj.asInstanceOf[Metric]
       }
       
-      extension [Self <: Metric](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Metric] (val x: Self) extends AnyVal {
         
         inline def setAlias(value: String): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
         
@@ -927,7 +948,8 @@ object Analyticsreporting {
         __obj.asInstanceOf[MetricFilter]
       }
       
-      extension [Self <: MetricFilter](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: MetricFilter] (val x: Self) extends AnyVal {
         
         inline def setComparisonValue(value: String): Self = StObject.set(x, "comparisonValue", value.asInstanceOf[js.Any])
         
@@ -960,7 +982,8 @@ object Analyticsreporting {
         __obj.asInstanceOf[MetricFilterClause]
       }
       
-      extension [Self <: MetricFilterClause](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: MetricFilterClause] (val x: Self) extends AnyVal {
         
         inline def setFilters(value: js.Array[MetricFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
         
@@ -987,7 +1010,8 @@ object Analyticsreporting {
         __obj.asInstanceOf[MetricHeader]
       }
       
-      extension [Self <: MetricHeader](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: MetricHeader] (val x: Self) extends AnyVal {
         
         inline def setMetricHeaderEntries(value: js.Array[MetricHeaderEntry]): Self = StObject.set(x, "metricHeaderEntries", value.asInstanceOf[js.Any])
         
@@ -1016,7 +1040,8 @@ object Analyticsreporting {
         __obj.asInstanceOf[MetricHeaderEntry]
       }
       
-      extension [Self <: MetricHeaderEntry](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: MetricHeaderEntry] (val x: Self) extends AnyVal {
         
         inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
@@ -1039,7 +1064,8 @@ object Analyticsreporting {
         __obj.asInstanceOf[OrFiltersForSegment]
       }
       
-      extension [Self <: OrFiltersForSegment](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: OrFiltersForSegment] (val x: Self) extends AnyVal {
         
         inline def setSegmentFilterClauses(value: js.Array[SegmentFilterClause]): Self = StObject.set(x, "segmentFilterClauses", value.asInstanceOf[js.Any])
         
@@ -1064,7 +1090,8 @@ object Analyticsreporting {
         __obj.asInstanceOf[OrderBy]
       }
       
-      extension [Self <: OrderBy](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: OrderBy] (val x: Self) extends AnyVal {
         
         inline def setFieldName(value: String): Self = StObject.set(x, "fieldName", value.asInstanceOf[js.Any])
         
@@ -1093,7 +1120,8 @@ object Analyticsreporting {
         __obj.asInstanceOf[PageviewData]
       }
       
-      extension [Self <: PageviewData](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: PageviewData] (val x: Self) extends AnyVal {
         
         inline def setPagePath(value: String): Self = StObject.set(x, "pagePath", value.asInstanceOf[js.Any])
         
@@ -1124,7 +1152,8 @@ object Analyticsreporting {
         __obj.asInstanceOf[Pivot]
       }
       
-      extension [Self <: Pivot](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Pivot] (val x: Self) extends AnyVal {
         
         inline def setDimensionFilterClauses(value: js.Array[DimensionFilterClause]): Self = StObject.set(x, "dimensionFilterClauses", value.asInstanceOf[js.Any])
         
@@ -1167,7 +1196,8 @@ object Analyticsreporting {
         __obj.asInstanceOf[PivotHeader]
       }
       
-      extension [Self <: PivotHeader](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: PivotHeader] (val x: Self) extends AnyVal {
         
         inline def setPivotHeaderEntries(value: js.Array[PivotHeaderEntry]): Self = StObject.set(x, "pivotHeaderEntries", value.asInstanceOf[js.Any])
         
@@ -1196,7 +1226,8 @@ object Analyticsreporting {
         __obj.asInstanceOf[PivotHeaderEntry]
       }
       
-      extension [Self <: PivotHeaderEntry](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: PivotHeaderEntry] (val x: Self) extends AnyVal {
         
         inline def setDimensionNames(value: js.Array[String]): Self = StObject.set(x, "dimensionNames", value.asInstanceOf[js.Any])
         
@@ -1227,7 +1258,8 @@ object Analyticsreporting {
         __obj.asInstanceOf[PivotValueRegion]
       }
       
-      extension [Self <: PivotValueRegion](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: PivotValueRegion] (val x: Self) extends AnyVal {
         
         inline def setValues(value: js.Array[String]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
         
@@ -1254,7 +1286,8 @@ object Analyticsreporting {
         __obj.asInstanceOf[ProductData]
       }
       
-      extension [Self <: ProductData](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ProductData] (val x: Self) extends AnyVal {
         
         inline def setItemRevenue(value: Double): Self = StObject.set(x, "itemRevenue", value.asInstanceOf[js.Any])
         
@@ -1289,7 +1322,8 @@ object Analyticsreporting {
         __obj.asInstanceOf[Report]
       }
       
-      extension [Self <: Report](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Report] (val x: Self) extends AnyVal {
         
         inline def setColumnHeader(value: ColumnHeader): Self = StObject.set(x, "columnHeader", value.asInstanceOf[js.Any])
         
@@ -1332,7 +1366,8 @@ object Analyticsreporting {
         __obj.asInstanceOf[ReportData]
       }
       
-      extension [Self <: ReportData](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ReportData] (val x: Self) extends AnyVal {
         
         inline def setDataLastRefreshed(value: String): Self = StObject.set(x, "dataLastRefreshed", value.asInstanceOf[js.Any])
         
@@ -1427,7 +1462,8 @@ object Analyticsreporting {
         __obj.asInstanceOf[ReportRequest]
       }
       
-      extension [Self <: ReportRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ReportRequest] (val x: Self) extends AnyVal {
         
         inline def setCohortGroup(value: CohortGroup): Self = StObject.set(x, "cohortGroup", value.asInstanceOf[js.Any])
         
@@ -1528,7 +1564,8 @@ object Analyticsreporting {
         __obj.asInstanceOf[ReportRow]
       }
       
-      extension [Self <: ReportRow](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ReportRow] (val x: Self) extends AnyVal {
         
         inline def setDimensions(value: js.Array[String]): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
         
@@ -1557,7 +1594,8 @@ object Analyticsreporting {
         __obj.asInstanceOf[ResourceQuotasRemaining]
       }
       
-      extension [Self <: ResourceQuotasRemaining](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ResourceQuotasRemaining] (val x: Self) extends AnyVal {
         
         inline def setDailyQuotaTokensRemaining(value: Double): Self = StObject.set(x, "dailyQuotaTokensRemaining", value.asInstanceOf[js.Any])
         
@@ -1586,7 +1624,8 @@ object Analyticsreporting {
         __obj.asInstanceOf[ScreenviewData]
       }
       
-      extension [Self <: ScreenviewData](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ScreenviewData] (val x: Self) extends AnyVal {
         
         inline def setAppName(value: String): Self = StObject.set(x, "appName", value.asInstanceOf[js.Any])
         
@@ -1627,7 +1666,8 @@ object Analyticsreporting {
         __obj.asInstanceOf[SearchUserActivityRequest]
       }
       
-      extension [Self <: SearchUserActivityRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SearchUserActivityRequest] (val x: Self) extends AnyVal {
         
         inline def setActivityTypes(value: js.Array[String]): Self = StObject.set(x, "activityTypes", value.asInstanceOf[js.Any])
         
@@ -1674,7 +1714,8 @@ object Analyticsreporting {
         __obj.asInstanceOf[SearchUserActivityResponse]
       }
       
-      extension [Self <: SearchUserActivityResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SearchUserActivityResponse] (val x: Self) extends AnyVal {
         
         inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
         
@@ -1709,7 +1750,8 @@ object Analyticsreporting {
         __obj.asInstanceOf[Segment]
       }
       
-      extension [Self <: Segment](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Segment] (val x: Self) extends AnyVal {
         
         inline def setDynamicSegment(value: DynamicSegment): Self = StObject.set(x, "dynamicSegment", value.asInstanceOf[js.Any])
         
@@ -1732,7 +1774,8 @@ object Analyticsreporting {
         __obj.asInstanceOf[SegmentDefinition]
       }
       
-      extension [Self <: SegmentDefinition](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SegmentDefinition] (val x: Self) extends AnyVal {
         
         inline def setSegmentFilters(value: js.Array[SegmentFilter]): Self = StObject.set(x, "segmentFilters", value.asInstanceOf[js.Any])
         
@@ -1763,7 +1806,8 @@ object Analyticsreporting {
         __obj.asInstanceOf[SegmentDimensionFilter]
       }
       
-      extension [Self <: SegmentDimensionFilter](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SegmentDimensionFilter] (val x: Self) extends AnyVal {
         
         inline def setCaseSensitive(value: Boolean): Self = StObject.set(x, "caseSensitive", value.asInstanceOf[js.Any])
         
@@ -1808,7 +1852,8 @@ object Analyticsreporting {
         __obj.asInstanceOf[SegmentFilter]
       }
       
-      extension [Self <: SegmentFilter](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SegmentFilter] (val x: Self) extends AnyVal {
         
         inline def setNot(value: Boolean): Self = StObject.set(x, "not", value.asInstanceOf[js.Any])
         
@@ -1839,7 +1884,8 @@ object Analyticsreporting {
         __obj.asInstanceOf[SegmentFilterClause]
       }
       
-      extension [Self <: SegmentFilterClause](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SegmentFilterClause] (val x: Self) extends AnyVal {
         
         inline def setDimensionFilter(value: SegmentDimensionFilter): Self = StObject.set(x, "dimensionFilter", value.asInstanceOf[js.Any])
         
@@ -1874,7 +1920,8 @@ object Analyticsreporting {
         __obj.asInstanceOf[SegmentMetricFilter]
       }
       
-      extension [Self <: SegmentMetricFilter](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SegmentMetricFilter] (val x: Self) extends AnyVal {
         
         inline def setComparisonValue(value: String): Self = StObject.set(x, "comparisonValue", value.asInstanceOf[js.Any])
         
@@ -1911,7 +1958,8 @@ object Analyticsreporting {
         __obj.asInstanceOf[SegmentSequenceStep]
       }
       
-      extension [Self <: SegmentSequenceStep](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SegmentSequenceStep] (val x: Self) extends AnyVal {
         
         inline def setMatchType(value: String): Self = StObject.set(x, "matchType", value.asInstanceOf[js.Any])
         
@@ -1938,7 +1986,8 @@ object Analyticsreporting {
         __obj.asInstanceOf[SequenceSegment]
       }
       
-      extension [Self <: SequenceSegment](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SequenceSegment] (val x: Self) extends AnyVal {
         
         inline def setFirstStepShouldMatchFirstHit(value: Boolean): Self = StObject.set(x, "firstStepShouldMatchFirstHit", value.asInstanceOf[js.Any])
         
@@ -1963,7 +2012,8 @@ object Analyticsreporting {
         __obj.asInstanceOf[SimpleSegment]
       }
       
-      extension [Self <: SimpleSegment](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SimpleSegment] (val x: Self) extends AnyVal {
         
         inline def setOrFiltersForSegment(value: js.Array[OrFiltersForSegment]): Self = StObject.set(x, "orFiltersForSegment", value.asInstanceOf[js.Any])
         
@@ -1990,7 +2040,8 @@ object Analyticsreporting {
         __obj.asInstanceOf[TransactionData]
       }
       
-      extension [Self <: TransactionData](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: TransactionData] (val x: Self) extends AnyVal {
         
         inline def setTransactionId(value: String): Self = StObject.set(x, "transactionId", value.asInstanceOf[js.Any])
         
@@ -2023,7 +2074,8 @@ object Analyticsreporting {
         __obj.asInstanceOf[User]
       }
       
-      extension [Self <: User](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: User] (val x: Self) extends AnyVal {
         
         inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
         
@@ -2056,7 +2108,8 @@ object Analyticsreporting {
         __obj.asInstanceOf[UserActivitySession]
       }
       
-      extension [Self <: UserActivitySession](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: UserActivitySession] (val x: Self) extends AnyVal {
         
         inline def setActivities(value: js.Array[Activity]): Self = StObject.set(x, "activities", value.asInstanceOf[js.Any])
         

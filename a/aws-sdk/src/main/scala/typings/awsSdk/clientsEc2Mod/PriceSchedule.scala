@@ -33,7 +33,8 @@ object PriceSchedule {
     __obj.asInstanceOf[PriceSchedule]
   }
   
-  extension [Self <: PriceSchedule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PriceSchedule] (val x: Self) extends AnyVal {
     
     inline def setActive(value: Boolean): Self = StObject.set(x, "Active", value.asInstanceOf[js.Any])
     

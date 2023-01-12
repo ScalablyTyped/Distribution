@@ -119,7 +119,8 @@ object distSrcChromeLauncherMod {
       __obj.asInstanceOf[LaunchedChrome]
     }
     
-    extension [Self <: LaunchedChrome](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LaunchedChrome] (val x: Self) extends AnyVal {
       
       inline def setKill(value: () => js.Promise[js.Object]): Self = StObject.set(x, "kill", js.Any.fromFunction0(value))
       
@@ -146,7 +147,8 @@ object distSrcChromeLauncherMod {
       __obj.asInstanceOf[ModuleOverrides]
     }
     
-    extension [Self <: ModuleOverrides](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ModuleOverrides] (val x: Self) extends AnyVal {
       
       inline def setFs(value: Typeoffs): Self = StObject.set(x, "fs", value.asInstanceOf[js.Any])
       
@@ -193,7 +195,8 @@ object distSrcChromeLauncherMod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setChromeFlags(value: js.Array[String]): Self = StObject.set(x, "chromeFlags", value.asInstanceOf[js.Any])
       

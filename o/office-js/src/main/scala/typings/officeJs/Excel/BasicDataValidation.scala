@@ -59,7 +59,8 @@ object BasicDataValidation {
     __obj.asInstanceOf[BasicDataValidation]
   }
   
-  extension [Self <: BasicDataValidation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BasicDataValidation] (val x: Self) extends AnyVal {
     
     inline def setFormula1(value: String | Double | Range): Self = StObject.set(x, "formula1", value.asInstanceOf[js.Any])
     

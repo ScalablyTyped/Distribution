@@ -18,7 +18,8 @@ object AssociateConnectionAliasResult {
     __obj.asInstanceOf[AssociateConnectionAliasResult]
   }
   
-  extension [Self <: AssociateConnectionAliasResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssociateConnectionAliasResult] (val x: Self) extends AnyVal {
     
     inline def setConnectionIdentifier(value: ConnectionIdentifier): Self = StObject.set(x, "ConnectionIdentifier", value.asInstanceOf[js.Any])
     

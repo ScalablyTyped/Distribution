@@ -18,7 +18,8 @@ object LibraryScalarsAnnotations {
     __obj.asInstanceOf[LibraryScalarsAnnotations]
   }
   
-  extension [Self <: LibraryScalarsAnnotations](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LibraryScalarsAnnotations] (val x: Self) extends AnyVal {
     
     inline def setUsage(value: () => js.Array[AnnotationRef]): Self = StObject.set(x, "usage", js.Any.fromFunction0(value))
   }

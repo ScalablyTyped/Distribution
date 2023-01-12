@@ -15,7 +15,8 @@ object HandleDialogClose {
     __obj.asInstanceOf[HandleDialogClose]
   }
   
-  extension [Self <: HandleDialogClose](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HandleDialogClose] (val x: Self) extends AnyVal {
     
     inline def setHandleDialogClose(value: () => Unit): Self = StObject.set(x, "handleDialogClose", js.Any.fromFunction0(value))
   }

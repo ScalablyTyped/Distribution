@@ -28,7 +28,8 @@ object AdminRemoveUserFromGroupRequest {
     __obj.asInstanceOf[AdminRemoveUserFromGroupRequest]
   }
   
-  extension [Self <: AdminRemoveUserFromGroupRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AdminRemoveUserFromGroupRequest] (val x: Self) extends AnyVal {
     
     inline def setGroupName(value: GroupNameType): Self = StObject.set(x, "GroupName", value.asInstanceOf[js.Any])
     

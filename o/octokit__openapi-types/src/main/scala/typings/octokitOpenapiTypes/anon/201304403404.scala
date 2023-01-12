@@ -35,7 +35,8 @@ object `201304403404` {
     __obj.asInstanceOf[`201304403404`]
   }
   
-  extension [Self <: `201304403404`](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: `201304403404`] (val x: Self) extends AnyVal {
     
     inline def set201(value: ContentApplicationjsonGitpullurl): Self = StObject.set(x, "201", value.asInstanceOf[js.Any])
     

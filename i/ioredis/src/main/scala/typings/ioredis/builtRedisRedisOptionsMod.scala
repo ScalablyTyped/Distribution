@@ -218,7 +218,8 @@ object builtRedisRedisOptionsMod {
       __obj.asInstanceOf[CommonRedisOptions]
     }
     
-    extension [Self <: CommonRedisOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommonRedisOptions] (val x: Self) extends AnyVal {
       
       inline def setAutoPipeliningIgnoredCommands(value: js.Array[String]): Self = StObject.set(x, "autoPipeliningIgnoredCommands", value.asInstanceOf[js.Any])
       
@@ -601,7 +602,8 @@ object builtRedisRedisOptionsMod {
       __obj.asInstanceOf[RedisOptions]
     }
     
-    extension [Self <: RedisOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RedisOptions] (val x: Self) extends AnyVal {
       
       inline def setAllowHalfOpen(value: Boolean): Self = StObject.set(x, "allowHalfOpen", value.asInstanceOf[js.Any])
       

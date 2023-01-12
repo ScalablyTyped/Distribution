@@ -102,7 +102,8 @@ object mod {
           __obj.asInstanceOf[ElementArrayFinder]
         }
         
-        extension [Self <: ElementArrayFinder](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: ElementArrayFinder] (val x: Self) extends AnyVal {
           
           inline def setDollarDollardata(value: String => ElementArrayFinder): Self = StObject.set(x, "$$data", js.Any.fromFunction1(value))
           
@@ -122,7 +123,8 @@ object mod {
           __obj.asInstanceOf[ElementFinder]
         }
         
-        extension [Self <: ElementFinder](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: ElementFinder] (val x: Self) extends AnyVal {
           
           inline def set$data(value: String => ElementFinder): Self = StObject.set(x, "$data", js.Any.fromFunction1(value))
         }

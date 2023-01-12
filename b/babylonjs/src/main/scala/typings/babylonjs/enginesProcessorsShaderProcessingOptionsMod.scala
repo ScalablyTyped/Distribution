@@ -60,7 +60,8 @@ object enginesProcessorsShaderProcessingOptionsMod {
       __obj.asInstanceOf[ProcessingOptions]
     }
     
-    extension [Self <: ProcessingOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProcessingOptions] (val x: Self) extends AnyVal {
       
       inline def setDefines(value: js.Array[String]): Self = StObject.set(x, "defines", value.asInstanceOf[js.Any])
       

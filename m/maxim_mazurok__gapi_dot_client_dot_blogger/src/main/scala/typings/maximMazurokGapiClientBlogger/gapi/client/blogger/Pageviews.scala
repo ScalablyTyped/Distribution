@@ -23,7 +23,8 @@ object Pageviews {
     __obj.asInstanceOf[Pageviews]
   }
   
-  extension [Self <: Pageviews](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Pageviews] (val x: Self) extends AnyVal {
     
     inline def setBlogId(value: String): Self = StObject.set(x, "blogId", value.asInstanceOf[js.Any])
     

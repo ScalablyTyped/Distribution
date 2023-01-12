@@ -70,7 +70,8 @@ object sizeVisualVariableResult {
     __obj.asInstanceOf[sizeVisualVariableResult]
   }
   
-  extension [Self <: sizeVisualVariableResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: sizeVisualVariableResult] (val x: Self) extends AnyVal {
     
     inline def setAuthoringInfo(value: AuthoringInfo): Self = StObject.set(x, "authoringInfo", value.asInstanceOf[js.Any])
     

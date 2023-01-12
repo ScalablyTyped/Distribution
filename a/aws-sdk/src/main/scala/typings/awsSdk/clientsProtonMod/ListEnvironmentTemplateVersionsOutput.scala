@@ -23,7 +23,8 @@ object ListEnvironmentTemplateVersionsOutput {
     __obj.asInstanceOf[ListEnvironmentTemplateVersionsOutput]
   }
   
-  extension [Self <: ListEnvironmentTemplateVersionsOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListEnvironmentTemplateVersionsOutput] (val x: Self) extends AnyVal {
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     

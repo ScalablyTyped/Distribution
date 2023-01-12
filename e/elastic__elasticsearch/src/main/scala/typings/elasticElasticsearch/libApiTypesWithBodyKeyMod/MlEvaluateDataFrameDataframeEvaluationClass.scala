@@ -17,7 +17,8 @@ object MlEvaluateDataFrameDataframeEvaluationClass {
     __obj.asInstanceOf[MlEvaluateDataFrameDataframeEvaluationClass]
   }
   
-  extension [Self <: MlEvaluateDataFrameDataframeEvaluationClass](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlEvaluateDataFrameDataframeEvaluationClass] (val x: Self) extends AnyVal {
     
     inline def setClass_name(value: Name): Self = StObject.set(x, "class_name", value.asInstanceOf[js.Any])
   }

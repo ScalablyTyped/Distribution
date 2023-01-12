@@ -16,7 +16,8 @@ object MeanInputs {
     __obj.asInstanceOf[MeanInputs]
   }
   
-  extension [Self <: MeanInputs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MeanInputs] (val x: Self) extends AnyVal {
     
     inline def setX(value: scala.Any): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     

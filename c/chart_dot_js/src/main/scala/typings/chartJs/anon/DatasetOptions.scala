@@ -38,7 +38,8 @@ object DatasetOptions {
     __obj.asInstanceOf[DatasetOptions]
   }
   
-  extension [Self <: DatasetOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DatasetOptions] (val x: Self) extends AnyVal {
     
     inline def setChartOptions(value: LineControllerChartOptions): Self = StObject.set(x, "chartOptions", value.asInstanceOf[js.Any])
     

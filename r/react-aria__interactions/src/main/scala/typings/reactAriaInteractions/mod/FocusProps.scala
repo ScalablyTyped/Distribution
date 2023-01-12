@@ -19,7 +19,8 @@ object FocusProps {
     __obj.asInstanceOf[FocusProps]
   }
   
-  extension [Self <: FocusProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FocusProps] (val x: Self) extends AnyVal {
     
     inline def setIsDisabled(value: Boolean): Self = StObject.set(x, "isDisabled", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object anon {
       __obj.asInstanceOf[typings.cropperjs.anon.Cropper]
     }
     
-    extension [Self <: typings.cropperjs.anon.Cropper](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.cropperjs.anon.Cropper] (val x: Self) extends AnyVal {
       
       inline def setCropper(value: typings.cropperjs.Cropper): Self = StObject.set(x, "cropper", value.asInstanceOf[js.Any])
     }
@@ -36,7 +37,8 @@ object anon {
       __obj.asInstanceOf[X]
     }
     
-    extension [Self <: X](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: X] (val x: Self) extends AnyVal {
       
       inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       

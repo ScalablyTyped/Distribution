@@ -56,7 +56,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setCheckBody(value: Boolean): Self = StObject.set(x, "checkBody", value.asInstanceOf[js.Any])
       

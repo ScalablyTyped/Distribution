@@ -35,7 +35,8 @@ object IPathIntersection {
     __obj.asInstanceOf[IPathIntersection]
   }
   
-  extension [Self <: IPathIntersection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPathIntersection] (val x: Self) extends AnyVal {
     
     inline def setIntersectionPoints(value: js.Array[IPoint]): Self = StObject.set(x, "intersectionPoints", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object StarredatString {
     __obj.asInstanceOf[StarredatString]
   }
   
-  extension [Self <: StarredatString](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StarredatString] (val x: Self) extends AnyVal {
     
     inline def setRepo(
       value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['repository'] */ js.Any

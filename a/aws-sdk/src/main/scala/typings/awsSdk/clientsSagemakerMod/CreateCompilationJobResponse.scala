@@ -18,7 +18,8 @@ object CreateCompilationJobResponse {
     __obj.asInstanceOf[CreateCompilationJobResponse]
   }
   
-  extension [Self <: CreateCompilationJobResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateCompilationJobResponse] (val x: Self) extends AnyVal {
     
     inline def setCompilationJobArn(value: CompilationJobArn): Self = StObject.set(x, "CompilationJobArn", value.asInstanceOf[js.Any])
   }

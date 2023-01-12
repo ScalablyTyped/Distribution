@@ -18,7 +18,8 @@ object WindowHandle {
     __obj.asInstanceOf[WindowHandle]
   }
   
-  extension [Self <: WindowHandle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WindowHandle] (val x: Self) extends AnyVal {
     
     inline def setHandle(value: String): Self = StObject.set(x, "handle", value.asInstanceOf[js.Any])
     

@@ -45,7 +45,8 @@ object libContextTableContextMod extends Shortcut {
       __obj.asInstanceOf[TableContextProps]
     }
     
-    extension [Self <: TableContextProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TableContextProps] (val x: Self) extends AnyVal {
       
       inline def setDirection(value: ltr | rtl): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       

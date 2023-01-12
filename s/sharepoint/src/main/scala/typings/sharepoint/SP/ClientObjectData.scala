@@ -23,7 +23,8 @@ object ClientObjectData {
     __obj.asInstanceOf[ClientObjectData]
   }
   
-  extension [Self <: ClientObjectData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClientObjectData] (val x: Self) extends AnyVal {
     
     inline def setGet_clientObjectProperties(value: () => Any): Self = StObject.set(x, "get_clientObjectProperties", js.Any.fromFunction0(value))
     

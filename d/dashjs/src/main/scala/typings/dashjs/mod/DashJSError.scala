@@ -19,7 +19,8 @@ object DashJSError {
     __obj.asInstanceOf[DashJSError]
   }
   
-  extension [Self <: DashJSError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DashJSError] (val x: Self) extends AnyVal {
     
     inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     

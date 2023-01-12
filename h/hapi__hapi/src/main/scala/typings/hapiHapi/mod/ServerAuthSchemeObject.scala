@@ -81,7 +81,8 @@ object ServerAuthSchemeObject {
     __obj.asInstanceOf[ServerAuthSchemeObject[Refs]]
   }
   
-  extension [Self <: ServerAuthSchemeObject[?], Refs /* <: ReqRef */](x: Self & ServerAuthSchemeObject[Refs]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServerAuthSchemeObject[?], Refs /* <: ReqRef */] (val x: Self & ServerAuthSchemeObject[Refs]) extends AnyVal {
     
     inline def setApi(
       value: /* import warning: importer.ImportType#apply Failed type conversion: @hapi/hapi.@hapi/hapi.MergeRefs<Refs>['AuthApi'] */ js.Any

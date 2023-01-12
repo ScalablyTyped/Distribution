@@ -20,7 +20,8 @@ object RepositoryAnalysis {
     __obj.asInstanceOf[RepositoryAnalysis]
   }
   
-  extension [Self <: RepositoryAnalysis](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RepositoryAnalysis] (val x: Self) extends AnyVal {
     
     inline def setRepositoryHead(value: RepositoryHeadSourceCodeType): Self = StObject.set(x, "RepositoryHead", value.asInstanceOf[js.Any])
     

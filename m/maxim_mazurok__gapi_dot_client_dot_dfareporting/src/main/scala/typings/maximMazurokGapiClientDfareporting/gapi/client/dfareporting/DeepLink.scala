@@ -28,7 +28,8 @@ object DeepLink {
     __obj.asInstanceOf[DeepLink]
   }
   
-  extension [Self <: DeepLink](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeepLink] (val x: Self) extends AnyVal {
     
     inline def setAppUrl(value: String): Self = StObject.set(x, "appUrl", value.asInstanceOf[js.Any])
     

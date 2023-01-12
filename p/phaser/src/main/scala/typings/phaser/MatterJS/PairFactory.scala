@@ -54,7 +54,8 @@ object PairFactory {
     __obj.asInstanceOf[PairFactory]
   }
   
-  extension [Self <: PairFactory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PairFactory] (val x: Self) extends AnyVal {
     
     inline def setCreate(value: (ICollisionData, Double) => IPair): Self = StObject.set(x, "create", js.Any.fromFunction2(value))
     

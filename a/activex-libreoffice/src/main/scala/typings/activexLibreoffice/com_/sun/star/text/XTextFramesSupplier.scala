@@ -31,7 +31,8 @@ object XTextFramesSupplier {
     __obj.asInstanceOf[XTextFramesSupplier]
   }
   
-  extension [Self <: XTextFramesSupplier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XTextFramesSupplier] (val x: Self) extends AnyVal {
     
     inline def setGetTextFrames(value: () => XNameAccess): Self = StObject.set(x, "getTextFrames", js.Any.fromFunction0(value))
     

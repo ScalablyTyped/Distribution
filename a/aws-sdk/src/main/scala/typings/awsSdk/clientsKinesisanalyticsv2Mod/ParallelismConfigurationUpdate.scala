@@ -33,7 +33,8 @@ object ParallelismConfigurationUpdate {
     __obj.asInstanceOf[ParallelismConfigurationUpdate]
   }
   
-  extension [Self <: ParallelismConfigurationUpdate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParallelismConfigurationUpdate] (val x: Self) extends AnyVal {
     
     inline def setAutoScalingEnabledUpdate(value: BooleanObject): Self = StObject.set(x, "AutoScalingEnabledUpdate", value.asInstanceOf[js.Any])
     

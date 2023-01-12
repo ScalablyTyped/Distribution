@@ -19,7 +19,8 @@ object Bookshelves {
     __obj.asInstanceOf[Bookshelves]
   }
   
-  extension [Self <: Bookshelves](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Bookshelves] (val x: Self) extends AnyVal {
     
     inline def setItems(value: js.Array[Bookshelf]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     

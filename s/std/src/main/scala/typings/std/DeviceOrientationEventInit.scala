@@ -27,7 +27,8 @@ object DeviceOrientationEventInit {
     __obj.asInstanceOf[DeviceOrientationEventInit]
   }
   
-  extension [Self <: DeviceOrientationEventInit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeviceOrientationEventInit] (val x: Self) extends AnyVal {
     
     inline def setAbsolute(value: scala.Boolean): Self = StObject.set(x, "absolute", value.asInstanceOf[js.Any])
     

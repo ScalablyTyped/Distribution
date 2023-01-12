@@ -31,7 +31,8 @@ object TargetingValue {
     __obj.asInstanceOf[TargetingValue]
   }
   
-  extension [Self <: TargetingValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TargetingValue] (val x: Self) extends AnyVal {
     
     inline def setCreativeSizeValue(value: TargetingValueCreativeSize): Self = StObject.set(x, "creativeSizeValue", value.asInstanceOf[js.Any])
     

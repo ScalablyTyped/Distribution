@@ -20,7 +20,8 @@ object Values {
     __obj.asInstanceOf[Values[T]]
   }
   
-  extension [Self <: Values[?], T /* <: ParseArgsConfig */](x: Self & Values[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Values[?], T /* <: ParseArgsConfig */] (val x: Self & Values[T]) extends AnyVal {
     
     inline def setPositionals(value: ParsedPositionals[T]): Self = StObject.set(x, "positionals", value.asInstanceOf[js.Any])
     

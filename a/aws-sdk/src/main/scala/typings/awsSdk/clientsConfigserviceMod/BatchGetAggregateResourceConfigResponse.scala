@@ -23,7 +23,8 @@ object BatchGetAggregateResourceConfigResponse {
     __obj.asInstanceOf[BatchGetAggregateResourceConfigResponse]
   }
   
-  extension [Self <: BatchGetAggregateResourceConfigResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchGetAggregateResourceConfigResponse] (val x: Self) extends AnyVal {
     
     inline def setBaseConfigurationItems(value: BaseConfigurationItems): Self = StObject.set(x, "BaseConfigurationItems", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object PropertiesQuery {
     __obj.asInstanceOf[PropertiesQuery]
   }
   
-  extension [Self <: PropertiesQuery](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PropertiesQuery] (val x: Self) extends AnyVal {
     
     inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
     

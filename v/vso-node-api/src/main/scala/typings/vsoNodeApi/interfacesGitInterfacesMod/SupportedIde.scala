@@ -44,7 +44,8 @@ object SupportedIde {
     __obj.asInstanceOf[SupportedIde]
   }
   
-  extension [Self <: SupportedIde](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SupportedIde] (val x: Self) extends AnyVal {
     
     inline def setDownloadUrl(value: String): Self = StObject.set(x, "downloadUrl", value.asInstanceOf[js.Any])
     

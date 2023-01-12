@@ -49,7 +49,8 @@ object IgPivotDataSelectorDataSourceOptions {
     __obj.asInstanceOf[IgPivotDataSelectorDataSourceOptions]
   }
   
-  extension [Self <: IgPivotDataSelectorDataSourceOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgPivotDataSelectorDataSourceOptions] (val x: Self) extends AnyVal {
     
     inline def setColumns(value: String): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     

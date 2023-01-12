@@ -26,7 +26,8 @@ object IOrAlt {
     __obj.asInstanceOf[IOrAlt[T]]
   }
   
-  extension [Self <: IOrAlt[?], T](x: Self & IOrAlt[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IOrAlt[?], T] (val x: Self & IOrAlt[T]) extends AnyVal {
     
     inline def setALT(value: () => T): Self = StObject.set(x, "ALT", js.Any.fromFunction0(value))
     

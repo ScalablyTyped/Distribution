@@ -38,7 +38,8 @@ object SourceFlowConfig {
     __obj.asInstanceOf[SourceFlowConfig]
   }
   
-  extension [Self <: SourceFlowConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SourceFlowConfig] (val x: Self) extends AnyVal {
     
     inline def setApiVersion(value: ApiVersion_): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
     

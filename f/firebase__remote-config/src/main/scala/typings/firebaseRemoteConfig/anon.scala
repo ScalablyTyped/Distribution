@@ -17,7 +17,8 @@ object anon {
       __obj.asInstanceOf[HttpStatus]
     }
     
-    extension [Self <: HttpStatus](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HttpStatus] (val x: Self) extends AnyVal {
       
       inline def setHttpStatus(value: Double): Self = StObject.set(x, "httpStatus", value.asInstanceOf[js.Any])
     }
@@ -34,7 +35,8 @@ object anon {
       __obj.asInstanceOf[OriginalErrorMessage]
     }
     
-    extension [Self <: OriginalErrorMessage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OriginalErrorMessage] (val x: Self) extends AnyVal {
       
       inline def setOriginalErrorMessage(value: String): Self = StObject.set(x, "originalErrorMessage", value.asInstanceOf[js.Any])
       
@@ -53,7 +55,8 @@ object anon {
       __obj.asInstanceOf[OriginalErrorMessageString]
     }
     
-    extension [Self <: OriginalErrorMessageString](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OriginalErrorMessageString] (val x: Self) extends AnyVal {
       
       inline def setOriginalErrorMessage(value: String): Self = StObject.set(x, "originalErrorMessage", value.asInstanceOf[js.Any])
     }
@@ -70,7 +73,8 @@ object anon {
       __obj.asInstanceOf[ThrottleEndTimeMillis]
     }
     
-    extension [Self <: ThrottleEndTimeMillis](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ThrottleEndTimeMillis] (val x: Self) extends AnyVal {
       
       inline def setThrottleEndTimeMillis(value: Double): Self = StObject.set(x, "throttleEndTimeMillis", value.asInstanceOf[js.Any])
     }

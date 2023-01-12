@@ -17,7 +17,8 @@ object ExtensionStatistic {
     __obj.asInstanceOf[ExtensionStatistic]
   }
   
-  extension [Self <: ExtensionStatistic](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExtensionStatistic] (val x: Self) extends AnyVal {
     
     inline def setStatisticName(value: String): Self = StObject.set(x, "statisticName", value.asInstanceOf[js.Any])
     

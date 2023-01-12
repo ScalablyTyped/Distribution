@@ -38,7 +38,8 @@ object ESInstanceDetails {
     __obj.asInstanceOf[ESInstanceDetails]
   }
   
-  extension [Self <: ESInstanceDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ESInstanceDetails] (val x: Self) extends AnyVal {
     
     inline def setCurrentGeneration(value: GenericBoolean): Self = StObject.set(x, "CurrentGeneration", value.asInstanceOf[js.Any])
     

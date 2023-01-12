@@ -73,7 +73,8 @@ object mod {
       __obj.asInstanceOf[GenerateOptions]
     }
     
-    extension [Self <: GenerateOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GenerateOptions] (val x: Self) extends AnyVal {
       
       inline def setExclude(value: String): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
       

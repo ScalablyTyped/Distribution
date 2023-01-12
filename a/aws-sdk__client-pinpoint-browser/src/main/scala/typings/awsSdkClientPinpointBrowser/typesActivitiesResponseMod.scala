@@ -27,7 +27,8 @@ object typesActivitiesResponseMod {
       __obj.asInstanceOf[ActivitiesResponse]
     }
     
-    extension [Self <: ActivitiesResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ActivitiesResponse] (val x: Self) extends AnyVal {
       
       inline def setItem(value: js.Array[ActivityResponse] | js.Iterable[ActivityResponse]): Self = StObject.set(x, "Item", value.asInstanceOf[js.Any])
       
@@ -58,7 +59,8 @@ object typesActivitiesResponseMod {
       __obj.asInstanceOf[UnmarshalledActivitiesResponse]
     }
     
-    extension [Self <: UnmarshalledActivitiesResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnmarshalledActivitiesResponse] (val x: Self) extends AnyVal {
       
       inline def setItem(value: js.Array[UnmarshalledActivityResponse]): Self = StObject.set(x, "Item", value.asInstanceOf[js.Any])
       

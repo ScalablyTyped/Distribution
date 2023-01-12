@@ -23,7 +23,8 @@ object UpdateThingRuntimeConfigurationRequest {
     __obj.asInstanceOf[UpdateThingRuntimeConfigurationRequest]
   }
   
-  extension [Self <: UpdateThingRuntimeConfigurationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateThingRuntimeConfigurationRequest] (val x: Self) extends AnyVal {
     
     inline def setTelemetryConfiguration(value: TelemetryConfigurationUpdate): Self = StObject.set(x, "TelemetryConfiguration", value.asInstanceOf[js.Any])
     

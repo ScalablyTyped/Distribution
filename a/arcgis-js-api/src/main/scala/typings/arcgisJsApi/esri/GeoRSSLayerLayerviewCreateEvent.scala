@@ -17,7 +17,8 @@ object GeoRSSLayerLayerviewCreateEvent {
     __obj.asInstanceOf[GeoRSSLayerLayerviewCreateEvent]
   }
   
-  extension [Self <: GeoRSSLayerLayerviewCreateEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GeoRSSLayerLayerviewCreateEvent] (val x: Self) extends AnyVal {
     
     inline def setLayerView(value: LayerView): Self = StObject.set(x, "layerView", value.asInstanceOf[js.Any])
     

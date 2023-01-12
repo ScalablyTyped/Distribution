@@ -18,7 +18,8 @@ object GetDefaultViewOutput {
     __obj.asInstanceOf[GetDefaultViewOutput]
   }
   
-  extension [Self <: GetDefaultViewOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetDefaultViewOutput] (val x: Self) extends AnyVal {
     
     inline def setViewArn(value: String): Self = StObject.set(x, "ViewArn", value.asInstanceOf[js.Any])
     

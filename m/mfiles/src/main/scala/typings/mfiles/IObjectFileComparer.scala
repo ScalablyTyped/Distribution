@@ -15,7 +15,8 @@ object IObjectFileComparer {
     __obj.asInstanceOf[IObjectFileComparer]
   }
   
-  extension [Self <: IObjectFileComparer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IObjectFileComparer] (val x: Self) extends AnyVal {
     
     inline def setCompare(value: (IObjectFile, IObjectFile) => Double): Self = StObject.set(x, "Compare", js.Any.fromFunction2(value))
   }

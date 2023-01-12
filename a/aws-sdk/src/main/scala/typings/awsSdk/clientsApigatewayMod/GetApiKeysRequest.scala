@@ -38,7 +38,8 @@ object GetApiKeysRequest {
     __obj.asInstanceOf[GetApiKeysRequest]
   }
   
-  extension [Self <: GetApiKeysRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetApiKeysRequest] (val x: Self) extends AnyVal {
     
     inline def setCustomerId(value: String): Self = StObject.set(x, "customerId", value.asInstanceOf[js.Any])
     

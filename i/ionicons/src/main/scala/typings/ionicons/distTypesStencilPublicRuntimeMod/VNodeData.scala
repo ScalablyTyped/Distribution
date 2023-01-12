@@ -20,7 +20,8 @@ object VNodeData {
     __obj.asInstanceOf[VNodeData]
   }
   
-  extension [Self <: VNodeData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VNodeData] (val x: Self) extends AnyVal {
     
     inline def setClass(value: StringDictionary[Boolean]): Self = StObject.set(x, "class", value.asInstanceOf[js.Any])
     

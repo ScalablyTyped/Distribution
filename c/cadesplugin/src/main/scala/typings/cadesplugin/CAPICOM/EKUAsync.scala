@@ -25,7 +25,8 @@ object EKUAsync {
     __obj.asInstanceOf[EKUAsync]
   }
   
-  extension [Self <: EKUAsync](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EKUAsync] (val x: Self) extends AnyVal {
     
     inline def setName(
       value: /* import warning: importer.ImportType#apply Failed type conversion: string extends std.Function ? cadesplugin.CADES_Common.PromisifiedFunction<string> : // tslint:disable-line ban-types

@@ -19,7 +19,8 @@ object IMemoryBufferReference {
     __obj.asInstanceOf[IMemoryBufferReference]
   }
   
-  extension [Self <: IMemoryBufferReference](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IMemoryBufferReference] (val x: Self) extends AnyVal {
     
     inline def setCapacity(value: Double): Self = StObject.set(x, "capacity", value.asInstanceOf[js.Any])
   }

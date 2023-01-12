@@ -43,7 +43,8 @@ object ActivatedRule {
     __obj.asInstanceOf[ActivatedRule]
   }
   
-  extension [Self <: ActivatedRule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ActivatedRule] (val x: Self) extends AnyVal {
     
     inline def setAction(value: WafAction): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
     

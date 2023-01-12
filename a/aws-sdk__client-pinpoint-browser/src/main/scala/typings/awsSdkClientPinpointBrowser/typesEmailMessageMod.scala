@@ -57,7 +57,8 @@ object typesEmailMessageMod {
       __obj.asInstanceOf[EmailMessage]
     }
     
-    extension [Self <: EmailMessage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EmailMessage] (val x: Self) extends AnyVal {
       
       inline def setBody(value: String): Self = StObject.set(x, "Body", value.asInstanceOf[js.Any])
       
@@ -128,7 +129,8 @@ object typesEmailMessageMod {
       __obj.asInstanceOf[UnmarshalledEmailMessage]
     }
     
-    extension [Self <: UnmarshalledEmailMessage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnmarshalledEmailMessage] (val x: Self) extends AnyVal {
       
       inline def setRawEmail(value: UnmarshalledRawEmail): Self = StObject.set(x, "RawEmail", value.asInstanceOf[js.Any])
       

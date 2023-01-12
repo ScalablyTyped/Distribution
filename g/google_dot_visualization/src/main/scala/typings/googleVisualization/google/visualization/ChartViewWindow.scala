@@ -17,7 +17,8 @@ object ChartViewWindow {
     __obj.asInstanceOf[ChartViewWindow]
   }
   
-  extension [Self <: ChartViewWindow](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChartViewWindow] (val x: Self) extends AnyVal {
     
     inline def setMax(value: Double | js.Date | js.Array[Double]): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     

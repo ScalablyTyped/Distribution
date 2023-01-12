@@ -28,7 +28,8 @@ object UpsolverDestinationProperties {
     __obj.asInstanceOf[UpsolverDestinationProperties]
   }
   
-  extension [Self <: UpsolverDestinationProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpsolverDestinationProperties] (val x: Self) extends AnyVal {
     
     inline def setBucketName(value: UpsolverBucketName): Self = StObject.set(x, "bucketName", value.asInstanceOf[js.Any])
     

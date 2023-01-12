@@ -18,7 +18,8 @@ object DescribePackageRequest {
     __obj.asInstanceOf[DescribePackageRequest]
   }
   
-  extension [Self <: DescribePackageRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribePackageRequest] (val x: Self) extends AnyVal {
     
     inline def setPackageId(value: NodePackageId): Self = StObject.set(x, "PackageId", value.asInstanceOf[js.Any])
   }

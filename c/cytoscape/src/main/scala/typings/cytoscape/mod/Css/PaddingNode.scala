@@ -28,7 +28,8 @@ object PaddingNode {
     __obj.asInstanceOf[PaddingNode]
   }
   
-  extension [Self <: PaddingNode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PaddingNode] (val x: Self) extends AnyVal {
     
     inline def `setPadding-bottom`(value: PropertyValueNode[String]): Self = StObject.set(x, "padding-bottom", value.asInstanceOf[js.Any])
     

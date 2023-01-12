@@ -46,7 +46,8 @@ object KmlLabelStyle {
     __obj.asInstanceOf[KmlLabelStyle]
   }
   
-  extension [Self <: KmlLabelStyle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KmlLabelStyle] (val x: Self) extends AnyVal {
     
     inline def setGetScale(value: () => Double): Self = StObject.set(x, "getScale", js.Any.fromFunction0(value))
     

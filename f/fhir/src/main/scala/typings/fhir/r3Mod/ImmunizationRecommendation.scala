@@ -35,7 +35,8 @@ object ImmunizationRecommendation {
     __obj.asInstanceOf[ImmunizationRecommendation]
   }
   
-  extension [Self <: ImmunizationRecommendation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImmunizationRecommendation] (val x: Self) extends AnyVal {
     
     inline def setIdentifier(value: js.Array[Identifier]): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
     

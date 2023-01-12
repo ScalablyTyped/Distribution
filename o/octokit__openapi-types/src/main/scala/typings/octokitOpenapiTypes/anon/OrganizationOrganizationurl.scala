@@ -57,7 +57,8 @@ object OrganizationOrganizationurl {
     __obj.asInstanceOf[OrganizationOrganizationurl]
   }
   
-  extension [Self <: OrganizationOrganizationurl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OrganizationOrganizationurl] (val x: Self) extends AnyVal {
     
     inline def setOrganization(
       value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['organization-simple'] */ js.Any

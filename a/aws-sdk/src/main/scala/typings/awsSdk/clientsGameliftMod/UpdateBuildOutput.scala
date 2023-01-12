@@ -18,7 +18,8 @@ object UpdateBuildOutput {
     __obj.asInstanceOf[UpdateBuildOutput]
   }
   
-  extension [Self <: UpdateBuildOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateBuildOutput] (val x: Self) extends AnyVal {
     
     inline def setBuild(value: Build): Self = StObject.set(x, "Build", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object SimpleAssertion {
     __obj.asInstanceOf[SimpleAssertion]
   }
   
-  extension [Self <: SimpleAssertion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SimpleAssertion] (val x: Self) extends AnyVal {
     
     inline def setKind(value: ^ | $ | (/* \b */ String)): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
   }

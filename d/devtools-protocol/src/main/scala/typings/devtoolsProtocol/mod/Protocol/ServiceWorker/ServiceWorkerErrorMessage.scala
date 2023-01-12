@@ -33,7 +33,8 @@ object ServiceWorkerErrorMessage {
     __obj.asInstanceOf[ServiceWorkerErrorMessage]
   }
   
-  extension [Self <: ServiceWorkerErrorMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServiceWorkerErrorMessage] (val x: Self) extends AnyVal {
     
     inline def setColumnNumber(value: integer): Self = StObject.set(x, "columnNumber", value.asInstanceOf[js.Any])
     

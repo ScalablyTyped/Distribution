@@ -21,7 +21,8 @@ object IHTMLTableCaption {
     __obj.asInstanceOf[IHTMLTableCaption]
   }
   
-  extension [Self <: IHTMLTableCaption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IHTMLTableCaption] (val x: Self) extends AnyVal {
     
     inline def setAlign(value: String): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     

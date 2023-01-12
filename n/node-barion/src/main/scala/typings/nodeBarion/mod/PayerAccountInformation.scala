@@ -59,7 +59,8 @@ object PayerAccountInformation {
     __obj.asInstanceOf[PayerAccountInformation]
   }
   
-  extension [Self <: PayerAccountInformation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PayerAccountInformation] (val x: Self) extends AnyVal {
     
     inline def setAccountChangeIndicator(value: ChangedDuringThisTransaction | LessThan30Days | Between30And60Days | MoreThan60Days): Self = StObject.set(x, "AccountChangeIndicator", value.asInstanceOf[js.Any])
     

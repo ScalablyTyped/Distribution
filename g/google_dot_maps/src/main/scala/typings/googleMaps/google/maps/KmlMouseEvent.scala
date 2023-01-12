@@ -32,7 +32,8 @@ object KmlMouseEvent {
     __obj.asInstanceOf[KmlMouseEvent]
   }
   
-  extension [Self <: KmlMouseEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KmlMouseEvent] (val x: Self) extends AnyVal {
     
     inline def setFeatureData(value: KmlFeatureData): Self = StObject.set(x, "featureData", value.asInstanceOf[js.Any])
     

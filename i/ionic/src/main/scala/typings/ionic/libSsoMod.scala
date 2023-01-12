@@ -85,7 +85,8 @@ object libSsoMod {
       __obj.asInstanceOf[Auth0OAuth2FlowOptions]
     }
     
-    extension [Self <: Auth0OAuth2FlowOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Auth0OAuth2FlowOptions] (val x: Self) extends AnyVal {
       
       inline def setAudience(value: String): Self = StObject.set(x, "audience", value.asInstanceOf[js.Any])
       
@@ -130,7 +131,8 @@ object libSsoMod {
       __obj.asInstanceOf[OAuth2FlowDeps]
     }
     
-    extension [Self <: OAuth2FlowDeps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OAuth2FlowDeps] (val x: Self) extends AnyVal {
       
       inline def setClient(value: IClient): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
     }
@@ -155,7 +157,8 @@ object libSsoMod {
       __obj.asInstanceOf[OAuth2FlowOptions]
     }
     
-    extension [Self <: OAuth2FlowOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OAuth2FlowOptions] (val x: Self) extends AnyVal {
       
       inline def setAuthorizationUrl(value: String): Self = StObject.set(x, "authorizationUrl", value.asInstanceOf[js.Any])
       

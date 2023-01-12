@@ -23,7 +23,8 @@ object SubresourceWebBundleMetadataErrorEvent {
     __obj.asInstanceOf[SubresourceWebBundleMetadataErrorEvent]
   }
   
-  extension [Self <: SubresourceWebBundleMetadataErrorEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubresourceWebBundleMetadataErrorEvent] (val x: Self) extends AnyVal {
     
     inline def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
     

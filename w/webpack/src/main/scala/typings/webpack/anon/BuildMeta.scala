@@ -30,7 +30,8 @@ object BuildMeta {
     __obj.asInstanceOf[BuildMeta]
   }
   
-  extension [Self <: BuildMeta](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BuildMeta] (val x: Self) extends AnyVal {
     
     inline def setBuildMeta(value: StringDictionary[Any]): Self = StObject.set(x, "buildMeta", value.asInstanceOf[js.Any])
     

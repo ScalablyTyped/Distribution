@@ -26,7 +26,8 @@ object AttrsStringToHashBucketFastAttrs {
     __obj.asInstanceOf[AttrsStringToHashBucketFastAttrs]
   }
   
-  extension [Self <: AttrsStringToHashBucketFastAttrs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AttrsStringToHashBucketFastAttrs] (val x: Self) extends AnyVal {
     
     inline def setAttrs(value: StringToHashBucketFastAttrs): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
     

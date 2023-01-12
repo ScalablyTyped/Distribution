@@ -35,7 +35,8 @@ object NetworkList {
     __obj.asInstanceOf[NetworkList]
   }
   
-  extension [Self <: NetworkList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NetworkList] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

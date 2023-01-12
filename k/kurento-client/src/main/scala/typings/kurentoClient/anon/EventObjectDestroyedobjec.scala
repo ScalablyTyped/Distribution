@@ -29,7 +29,8 @@ object EventObjectDestroyedobjec {
     __obj.asInstanceOf[EventObjectDestroyedobjec]
   }
   
-  extension [Self <: EventObjectDestroyedobjec](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventObjectDestroyedobjec] (val x: Self) extends AnyVal {
     
     inline def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
     

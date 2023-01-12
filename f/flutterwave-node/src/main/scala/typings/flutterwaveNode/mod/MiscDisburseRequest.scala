@@ -21,7 +21,8 @@ object MiscDisburseRequest {
     __obj.asInstanceOf[MiscDisburseRequest]
   }
   
-  extension [Self <: MiscDisburseRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MiscDisburseRequest] (val x: Self) extends AnyVal {
     
     inline def setAccount_number(value: String): Self = StObject.set(x, "account_number", value.asInstanceOf[js.Any])
     

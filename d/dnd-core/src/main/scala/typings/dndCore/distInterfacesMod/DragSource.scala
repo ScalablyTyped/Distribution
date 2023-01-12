@@ -26,7 +26,8 @@ object DragSource {
     __obj.asInstanceOf[DragSource]
   }
   
-  extension [Self <: DragSource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DragSource] (val x: Self) extends AnyVal {
     
     inline def setBeginDrag(value: (DragDropMonitor, Identifier) => Unit): Self = StObject.set(x, "beginDrag", js.Any.fromFunction2(value))
     

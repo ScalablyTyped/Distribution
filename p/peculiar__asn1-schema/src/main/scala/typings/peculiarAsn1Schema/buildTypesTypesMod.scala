@@ -35,7 +35,8 @@ object buildTypesTypesMod {
       __obj.asInstanceOf[IAsnConverter[T, AsnType]]
     }
     
-    extension [Self <: IAsnConverter[?, ?], T, AsnType](x: Self & (IAsnConverter[T, AsnType])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IAsnConverter[?, ?], T, AsnType] (val x: Self & (IAsnConverter[T, AsnType])) extends AnyVal {
       
       inline def setFromASN(value: AsnType => T): Self = StObject.set(x, "fromASN", js.Any.fromFunction1(value))
       
@@ -62,7 +63,8 @@ object buildTypesTypesMod {
       __obj.asInstanceOf[IAsnConvertible[T]]
     }
     
-    extension [Self <: IAsnConvertible[?], T](x: Self & IAsnConvertible[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IAsnConvertible[?], T] (val x: Self & IAsnConvertible[T]) extends AnyVal {
       
       inline def setFromASN(value: T => IAsnConvertible[T]): Self = StObject.set(x, "fromASN", js.Any.fromFunction1(value))
       

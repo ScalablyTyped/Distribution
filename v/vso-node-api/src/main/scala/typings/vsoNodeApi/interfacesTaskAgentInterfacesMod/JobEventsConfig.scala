@@ -19,7 +19,8 @@ object JobEventsConfig {
     __obj.asInstanceOf[JobEventsConfig]
   }
   
-  extension [Self <: JobEventsConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JobEventsConfig] (val x: Self) extends AnyVal {
     
     inline def setJobAssigned(value: JobEventConfig): Self = StObject.set(x, "jobAssigned", value.asInstanceOf[js.Any])
     

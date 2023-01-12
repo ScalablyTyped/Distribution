@@ -48,7 +48,8 @@ object pluginsLchMod extends Shortcut {
         __obj.asInstanceOf[Colord]
       }
       
-      extension [Self <: Colord](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Colord] (val x: Self) extends AnyVal {
         
         inline def setToLch(value: () => LchaColor): Self = StObject.set(x, "toLch", js.Any.fromFunction0(value))
         

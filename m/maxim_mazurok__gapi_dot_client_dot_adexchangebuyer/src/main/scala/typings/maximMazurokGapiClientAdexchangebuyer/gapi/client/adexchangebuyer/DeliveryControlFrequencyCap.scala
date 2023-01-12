@@ -19,7 +19,8 @@ object DeliveryControlFrequencyCap {
     __obj.asInstanceOf[DeliveryControlFrequencyCap]
   }
   
-  extension [Self <: DeliveryControlFrequencyCap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeliveryControlFrequencyCap] (val x: Self) extends AnyVal {
     
     inline def setMaxImpressions(value: Double): Self = StObject.set(x, "maxImpressions", value.asInstanceOf[js.Any])
     

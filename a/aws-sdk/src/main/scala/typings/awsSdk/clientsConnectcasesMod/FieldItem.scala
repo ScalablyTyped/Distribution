@@ -18,7 +18,8 @@ object FieldItem {
     __obj.asInstanceOf[FieldItem]
   }
   
-  extension [Self <: FieldItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FieldItem] (val x: Self) extends AnyVal {
     
     inline def setId(value: FieldId): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
   }

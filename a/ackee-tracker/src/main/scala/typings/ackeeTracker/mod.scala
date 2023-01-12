@@ -53,7 +53,8 @@ object mod {
       __obj.asInstanceOf[AckeeTrackingReturn]
     }
     
-    extension [Self <: AckeeTrackingReturn](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AckeeTrackingReturn] (val x: Self) extends AnyVal {
       
       inline def setStop(value: () => Unit): Self = StObject.set(x, "stop", js.Any.fromFunction0(value))
     }
@@ -78,7 +79,8 @@ object mod {
       __obj.asInstanceOf[ActionAttributes]
     }
     
-    extension [Self <: ActionAttributes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ActionAttributes] (val x: Self) extends AnyVal {
       
       inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
@@ -101,7 +103,8 @@ object mod {
       __obj.asInstanceOf[DefaultData]
     }
     
-    extension [Self <: DefaultData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DefaultData] (val x: Self) extends AnyVal {
       
       inline def setSiteLocation(value: String): Self = StObject.set(x, "siteLocation", value.asInstanceOf[js.Any])
       
@@ -149,7 +152,8 @@ object mod {
       __obj.asInstanceOf[DetailedData]
     }
     
-    extension [Self <: DetailedData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DetailedData] (val x: Self) extends AnyVal {
       
       inline def setBrowserHeight(value: Double): Self = StObject.set(x, "browserHeight", value.asInstanceOf[js.Any])
       
@@ -213,7 +217,8 @@ object mod {
       __obj.asInstanceOf[TrackingOptions]
     }
     
-    extension [Self <: TrackingOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TrackingOptions] (val x: Self) extends AnyVal {
       
       inline def setDetailed(value: Boolean): Self = StObject.set(x, "detailed", value.asInstanceOf[js.Any])
       

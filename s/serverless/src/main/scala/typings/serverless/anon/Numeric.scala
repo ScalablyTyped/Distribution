@@ -19,7 +19,8 @@ object Numeric {
     __obj.asInstanceOf[Numeric]
   }
   
-  extension [Self <: Numeric](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Numeric] (val x: Self) extends AnyVal {
     
     inline def setNumeric(value: NumericFilter): Self = StObject.set(x, "numeric", value.asInstanceOf[js.Any])
   }

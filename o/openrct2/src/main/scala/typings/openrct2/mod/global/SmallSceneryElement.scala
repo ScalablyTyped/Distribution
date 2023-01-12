@@ -44,7 +44,8 @@ object SmallSceneryElement {
     __obj.asInstanceOf[SmallSceneryElement]
   }
   
-  extension [Self <: SmallSceneryElement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SmallSceneryElement] (val x: Self) extends AnyVal {
     
     inline def setAge(value: Double): Self = StObject.set(x, "age", value.asInstanceOf[js.Any])
     

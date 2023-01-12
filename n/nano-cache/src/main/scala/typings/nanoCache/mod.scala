@@ -39,7 +39,8 @@ object mod {
     @js.native
     val ^ : SIZE = js.native
     
-    extension [Self <: SIZE](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SIZE] (val x: Self) extends AnyVal {
       
       inline def setGB(value: Double): Self = StObject.set(x, "GB", value.asInstanceOf[js.Any])
       
@@ -76,7 +77,8 @@ object mod {
       __obj.asInstanceOf[Defaults]
     }
     
-    extension [Self <: Defaults](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Defaults] (val x: Self) extends AnyVal {
       
       inline def setBytes(value: Double): Self = StObject.set(x, "bytes", value.asInstanceOf[js.Any])
       
@@ -139,7 +141,8 @@ object mod {
       __obj.asInstanceOf[Info]
     }
     
-    extension [Self <: Info](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Info] (val x: Self) extends AnyVal {
       
       inline def setAccessed(value: Double): Self = StObject.set(x, "accessed", value.asInstanceOf[js.Any])
       
@@ -209,7 +212,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setBytes(value: Double): Self = StObject.set(x, "bytes", value.asInstanceOf[js.Any])
       
@@ -258,7 +262,8 @@ object mod {
       __obj.asInstanceOf[Stats]
     }
     
-    extension [Self <: Stats](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Stats] (val x: Self) extends AnyVal {
       
       inline def setAge(value: Double): Self = StObject.set(x, "age", value.asInstanceOf[js.Any])
       

@@ -25,7 +25,8 @@ object stretch {
     __obj.asInstanceOf[stretch]
   }
   
-  extension [Self <: stretch](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: stretch] (val x: Self) extends AnyVal {
     
     inline def setCreateRenderer(value: stretchCreateRendererParams => js.Promise[RasterStretchColorrampResult]): Self = StObject.set(x, "createRenderer", js.Any.fromFunction1(value))
   }

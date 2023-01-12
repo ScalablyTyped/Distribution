@@ -18,7 +18,8 @@ object ApplicationMaintenanceConfigurationUpdate {
     __obj.asInstanceOf[ApplicationMaintenanceConfigurationUpdate]
   }
   
-  extension [Self <: ApplicationMaintenanceConfigurationUpdate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApplicationMaintenanceConfigurationUpdate] (val x: Self) extends AnyVal {
     
     inline def setApplicationMaintenanceWindowStartTimeUpdate(value: ApplicationMaintenanceWindowStartTime): Self = StObject.set(x, "ApplicationMaintenanceWindowStartTimeUpdate", value.asInstanceOf[js.Any])
   }

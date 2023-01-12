@@ -25,7 +25,8 @@ object MediaContentRatingUnitedStates {
     __obj.asInstanceOf[MediaContentRatingUnitedStates]
   }
   
-  extension [Self <: MediaContentRatingUnitedStates](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MediaContentRatingUnitedStates] (val x: Self) extends AnyVal {
     
     inline def setMovieRating(value: RatingUnitedStatesMoviesType): Self = StObject.set(x, "movieRating", value.asInstanceOf[js.Any])
     

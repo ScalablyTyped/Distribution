@@ -128,7 +128,8 @@ object Answered {
     __obj.asInstanceOf[Answered]
   }
   
-  extension [Self <: Answered](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Answered] (val x: Self) extends AnyVal {
     
     inline def setAnswered(value: String): Self = StObject.set(x, "answered", value.asInstanceOf[js.Any])
     

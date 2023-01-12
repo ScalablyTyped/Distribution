@@ -53,7 +53,8 @@ object tabListTabListMod extends Shortcut {
       __obj.asInstanceOf[TabListTypeMap[P, D]]
     }
     
-    extension [Self <: TabListTypeMap[?, ?], P, D /* <: ElementType[Any] */](x: Self & (TabListTypeMap[P, D])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TabListTypeMap[?, ?], P, D /* <: ElementType[Any] */] (val x: Self & (TabListTypeMap[P, D])) extends AnyVal {
       
       inline def setClassKey(value: TabListClassKey): Self = StObject.set(x, "classKey", value.asInstanceOf[js.Any])
       

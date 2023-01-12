@@ -327,7 +327,8 @@ object libRestPreviewUnderstandAssistantFieldTypeFieldValueMod {
       __obj.asInstanceOf[FieldValueListInstanceCreateOptions]
     }
     
-    extension [Self <: FieldValueListInstanceCreateOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FieldValueListInstanceCreateOptions] (val x: Self) extends AnyVal {
       
       inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
       
@@ -383,7 +384,8 @@ object libRestPreviewUnderstandAssistantFieldTypeFieldValueMod {
       __obj.asInstanceOf[FieldValueListInstanceEachOptions]
     }
     
-    extension [Self <: FieldValueListInstanceEachOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FieldValueListInstanceEachOptions] (val x: Self) extends AnyVal {
       
       inline def setCallback(
         value: (/* item */ FieldValueInstance, /* done */ js.Function1[/* err */ js.UndefOr[js.Error], Unit]) => Unit
@@ -439,7 +441,8 @@ object libRestPreviewUnderstandAssistantFieldTypeFieldValueMod {
       __obj.asInstanceOf[FieldValueListInstanceOptions]
     }
     
-    extension [Self <: FieldValueListInstanceOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FieldValueListInstanceOptions] (val x: Self) extends AnyVal {
       
       inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
       
@@ -480,7 +483,8 @@ object libRestPreviewUnderstandAssistantFieldTypeFieldValueMod {
       __obj.asInstanceOf[FieldValueListInstancePageOptions]
     }
     
-    extension [Self <: FieldValueListInstancePageOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FieldValueListInstancePageOptions] (val x: Self) extends AnyVal {
       
       inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
       
@@ -569,7 +573,8 @@ object libRestPreviewUnderstandAssistantFieldTypeFieldValueMod {
       __obj.asInstanceOf[FieldValueResource]
     }
     
-    extension [Self <: FieldValueResource](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FieldValueResource] (val x: Self) extends AnyVal {
       
       inline def setAccount_sid(value: String): Self = StObject.set(x, "account_sid", value.asInstanceOf[js.Any])
       
@@ -606,7 +611,8 @@ object libRestPreviewUnderstandAssistantFieldTypeFieldValueMod {
       __obj.asInstanceOf[FieldValueSolution]
     }
     
-    extension [Self <: FieldValueSolution](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FieldValueSolution] (val x: Self) extends AnyVal {
       
       inline def setAssistantSid(value: String): Self = StObject.set(x, "assistantSid", value.asInstanceOf[js.Any])
       

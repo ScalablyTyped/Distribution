@@ -87,7 +87,8 @@ object mod {
       __obj.asInstanceOf[EventCreateResponse]
     }
     
-    extension [Self <: EventCreateResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EventCreateResponse] (val x: Self) extends AnyVal {
       
       inline def setEvent(value: Datehappened): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
       

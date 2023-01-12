@@ -31,7 +31,8 @@ object RollupDynamicImportVarsOptions {
     __obj.asInstanceOf[RollupDynamicImportVarsOptions]
   }
   
-  extension [Self <: RollupDynamicImportVarsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RollupDynamicImportVarsOptions] (val x: Self) extends AnyVal {
     
     inline def setExclude(value: String | js.RegExp | (js.Array[String | js.RegExp])): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
     

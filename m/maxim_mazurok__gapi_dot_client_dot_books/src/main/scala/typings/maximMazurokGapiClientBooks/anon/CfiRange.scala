@@ -29,7 +29,8 @@ object CfiRange {
     __obj.asInstanceOf[CfiRange]
   }
   
-  extension [Self <: CfiRange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CfiRange] (val x: Self) extends AnyVal {
     
     inline def setCfiRange(value: BooksAnnotationsRange): Self = StObject.set(x, "cfiRange", value.asInstanceOf[js.Any])
     

@@ -54,7 +54,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[ScrollOptions]
     }
     
-    extension [Self <: ScrollOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScrollOptions] (val x: Self) extends AnyVal {
       
       inline def setCancelable(value: Boolean): Self = StObject.set(x, "cancelable", value.asInstanceOf[js.Any])
       
@@ -160,7 +161,8 @@ object mod extends Shortcut {
         __obj.asInstanceOf[Vue]
       }
       
-      extension [Self <: Vue](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Vue] (val x: Self) extends AnyVal {
         
         inline def set$scrollTo(value: ScrollToFunction): Self = StObject.set(x, "$scrollTo", value.asInstanceOf[js.Any])
       }

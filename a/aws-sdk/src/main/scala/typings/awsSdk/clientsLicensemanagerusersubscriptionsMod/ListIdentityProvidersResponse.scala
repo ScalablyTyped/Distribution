@@ -23,7 +23,8 @@ object ListIdentityProvidersResponse {
     __obj.asInstanceOf[ListIdentityProvidersResponse]
   }
   
-  extension [Self <: ListIdentityProvidersResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListIdentityProvidersResponse] (val x: Self) extends AnyVal {
     
     inline def setIdentityProviderSummaries(value: IdentityProviderSummaryList): Self = StObject.set(x, "IdentityProviderSummaries", value.asInstanceOf[js.Any])
     

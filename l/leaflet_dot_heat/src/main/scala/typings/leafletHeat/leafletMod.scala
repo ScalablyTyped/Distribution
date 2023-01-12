@@ -52,7 +52,8 @@ object leafletMod {
       __obj.asInstanceOf[HeatMapOptions]
     }
     
-    extension [Self <: HeatMapOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HeatMapOptions] (val x: Self) extends AnyVal {
       
       inline def setBlur(value: Double): Self = StObject.set(x, "blur", value.asInstanceOf[js.Any])
       

@@ -19,7 +19,8 @@ object StartRecordTimeoutCallbackResult {
     __obj.asInstanceOf[StartRecordTimeoutCallbackResult]
   }
   
-  extension [Self <: StartRecordTimeoutCallbackResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartRecordTimeoutCallbackResult] (val x: Self) extends AnyVal {
     
     inline def setTempThumbPath(value: String): Self = StObject.set(x, "tempThumbPath", value.asInstanceOf[js.Any])
     

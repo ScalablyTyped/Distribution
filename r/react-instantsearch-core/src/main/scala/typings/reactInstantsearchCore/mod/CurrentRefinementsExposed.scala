@@ -22,7 +22,8 @@ object CurrentRefinementsExposed {
     __obj.asInstanceOf[CurrentRefinementsExposed]
   }
   
-  extension [Self <: CurrentRefinementsExposed](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CurrentRefinementsExposed] (val x: Self) extends AnyVal {
     
     inline def setClearsQuery(value: Boolean): Self = StObject.set(x, "clearsQuery", value.asInstanceOf[js.Any])
     

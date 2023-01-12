@@ -33,7 +33,8 @@ object PersistenceLoadingOnInfo {
     __obj.asInstanceOf[PersistenceLoadingOnInfo]
   }
   
-  extension [Self <: PersistenceLoadingOnInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PersistenceLoadingOnInfo] (val x: Self) extends AnyVal {
     
     inline def setLoading(value: ON): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
     

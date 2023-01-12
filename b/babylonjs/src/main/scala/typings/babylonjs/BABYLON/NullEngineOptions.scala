@@ -51,7 +51,8 @@ object NullEngineOptions {
     __obj.asInstanceOf[NullEngineOptions]
   }
   
-  extension [Self <: NullEngineOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NullEngineOptions] (val x: Self) extends AnyVal {
     
     inline def setDeterministicLockstep(value: Boolean): Self = StObject.set(x, "deterministicLockstep", value.asInstanceOf[js.Any])
     

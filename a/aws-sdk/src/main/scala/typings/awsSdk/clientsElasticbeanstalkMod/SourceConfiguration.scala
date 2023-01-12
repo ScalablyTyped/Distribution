@@ -23,7 +23,8 @@ object SourceConfiguration {
     __obj.asInstanceOf[SourceConfiguration]
   }
   
-  extension [Self <: SourceConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SourceConfiguration] (val x: Self) extends AnyVal {
     
     inline def setApplicationName(value: ApplicationName): Self = StObject.set(x, "ApplicationName", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object IOneofDescriptorProto {
     __obj.asInstanceOf[IOneofDescriptorProto]
   }
   
-  extension [Self <: IOneofDescriptorProto](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IOneofDescriptorProto] (val x: Self) extends AnyVal {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

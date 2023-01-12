@@ -51,7 +51,8 @@ object CellValueAttributionAttributes {
     __obj.asInstanceOf[CellValueAttributionAttributes]
   }
   
-  extension [Self <: CellValueAttributionAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CellValueAttributionAttributes] (val x: Self) extends AnyVal {
     
     inline def setLicenseAddress(value: String): Self = StObject.set(x, "licenseAddress", value.asInstanceOf[js.Any])
     

@@ -636,7 +636,8 @@ object Addchart {
     __obj.asInstanceOf[Addchart]
   }
   
-  extension [Self <: Addchart](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Addchart] (val x: Self) extends AnyVal {
     
     inline def `setAdd-chart`(value: String): Self = StObject.set(x, "add-chart", value.asInstanceOf[js.Any])
     

@@ -93,7 +93,8 @@ object UIColorPalette {
     __obj.asInstanceOf[UIColorPalette]
   }
   
-  extension [Self <: UIColorPalette](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UIColorPalette] (val x: Self) extends AnyVal {
     
     inline def setAccent(value: HexColor): Self = StObject.set(x, "Accent", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object ojChartGroupSettablePropertiesLenient {
     __obj.asInstanceOf[ojChartGroupSettablePropertiesLenient]
   }
   
-  extension [Self <: ojChartGroupSettablePropertiesLenient](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ojChartGroupSettablePropertiesLenient] (val x: Self) extends AnyVal {
     
     inline def setDrilling(value: on | off | inherit): Self = StObject.set(x, "drilling", value.asInstanceOf[js.Any])
     

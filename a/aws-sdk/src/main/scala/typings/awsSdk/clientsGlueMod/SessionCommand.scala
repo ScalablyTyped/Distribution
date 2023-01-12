@@ -23,7 +23,8 @@ object SessionCommand {
     __obj.asInstanceOf[SessionCommand]
   }
   
-  extension [Self <: SessionCommand](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SessionCommand] (val x: Self) extends AnyVal {
     
     inline def setName(value: NameString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     

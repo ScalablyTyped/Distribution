@@ -20,7 +20,8 @@ object CrosshairLineCfg {
     __obj.asInstanceOf[CrosshairLineCfg]
   }
   
-  extension [Self <: CrosshairLineCfg](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CrosshairLineCfg] (val x: Self) extends AnyVal {
     
     inline def setStyle(value: ShapeAttrs): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     

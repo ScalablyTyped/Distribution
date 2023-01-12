@@ -19,7 +19,8 @@ object CreateParagraphBulletsRequest {
     __obj.asInstanceOf[CreateParagraphBulletsRequest]
   }
   
-  extension [Self <: CreateParagraphBulletsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateParagraphBulletsRequest] (val x: Self) extends AnyVal {
     
     inline def setBulletPreset(value: String): Self = StObject.set(x, "bulletPreset", value.asInstanceOf[js.Any])
     

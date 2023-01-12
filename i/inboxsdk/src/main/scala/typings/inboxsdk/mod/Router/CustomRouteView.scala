@@ -29,7 +29,8 @@ object CustomRouteView {
     __obj.asInstanceOf[CustomRouteView]
   }
   
-  extension [Self <: CustomRouteView](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomRouteView] (val x: Self) extends AnyVal {
     
     inline def setGetElement(value: () => HTMLElement): Self = StObject.set(x, "getElement", js.Any.fromFunction0(value))
     

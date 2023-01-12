@@ -64,7 +64,8 @@ object ChartErrorBarsData {
     __obj.asInstanceOf[ChartErrorBarsData]
   }
   
-  extension [Self <: ChartErrorBarsData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChartErrorBarsData] (val x: Self) extends AnyVal {
     
     inline def setEndStyleCap(value: Boolean): Self = StObject.set(x, "endStyleCap", value.asInstanceOf[js.Any])
     

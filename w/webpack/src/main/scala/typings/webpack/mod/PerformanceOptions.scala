@@ -39,7 +39,8 @@ object PerformanceOptions {
     __obj.asInstanceOf[PerformanceOptions]
   }
   
-  extension [Self <: PerformanceOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PerformanceOptions] (val x: Self) extends AnyVal {
     
     inline def setAssetFilter(value: js.Function): Self = StObject.set(x, "assetFilter", value.asInstanceOf[js.Any])
     

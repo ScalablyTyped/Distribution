@@ -23,7 +23,8 @@ object LaunchRequestArguments {
     __obj.asInstanceOf[LaunchRequestArguments]
   }
   
-  extension [Self <: LaunchRequestArguments](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LaunchRequestArguments] (val x: Self) extends AnyVal {
     
     inline def setNoDebug(value: Boolean): Self = StObject.set(x, "noDebug", value.asInstanceOf[js.Any])
     

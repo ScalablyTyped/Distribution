@@ -28,7 +28,8 @@ object MapContextGetCenterLocationOptions {
     __obj.asInstanceOf[MapContextGetCenterLocationOptions]
   }
   
-  extension [Self <: MapContextGetCenterLocationOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MapContextGetCenterLocationOptions] (val x: Self) extends AnyVal {
     
     inline def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
     

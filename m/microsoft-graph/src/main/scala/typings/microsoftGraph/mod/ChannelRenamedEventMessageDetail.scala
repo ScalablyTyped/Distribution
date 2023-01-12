@@ -24,7 +24,8 @@ object ChannelRenamedEventMessageDetail {
     __obj.asInstanceOf[ChannelRenamedEventMessageDetail]
   }
   
-  extension [Self <: ChannelRenamedEventMessageDetail](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChannelRenamedEventMessageDetail] (val x: Self) extends AnyVal {
     
     inline def setChannelDisplayName(value: NullableOption[String]): Self = StObject.set(x, "channelDisplayName", value.asInstanceOf[js.Any])
     

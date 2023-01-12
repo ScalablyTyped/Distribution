@@ -17,7 +17,8 @@ object SaslAuthenticateArgs {
     __obj.asInstanceOf[SaslAuthenticateArgs[ParseResult]]
   }
   
-  extension [Self <: SaslAuthenticateArgs[?], ParseResult](x: Self & SaslAuthenticateArgs[ParseResult]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SaslAuthenticateArgs[?], ParseResult] (val x: Self & SaslAuthenticateArgs[ParseResult]) extends AnyVal {
     
     inline def setRequest(value: SaslAuthenticationRequest): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     

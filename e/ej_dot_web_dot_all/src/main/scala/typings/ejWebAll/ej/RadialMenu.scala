@@ -132,7 +132,8 @@ object RadialMenu {
       __obj.asInstanceOf[ClickEventArgs]
     }
     
-    extension [Self <: ClickEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClickEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -177,7 +178,8 @@ object RadialMenu {
       __obj.asInstanceOf[CloseEventArgs]
     }
     
-    extension [Self <: CloseEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CloseEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -238,7 +240,8 @@ object RadialMenu {
       __obj.asInstanceOf[Item]
     }
     
-    extension [Self <: Item](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Item] (val x: Self) extends AnyVal {
       
       inline def setBadge(value: ItemsBadge): Self = StObject.set(x, "badge", value.asInstanceOf[js.Any])
       
@@ -297,7 +300,8 @@ object RadialMenu {
       __obj.asInstanceOf[ItemsBadge]
     }
     
-    extension [Self <: ItemsBadge](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ItemsBadge] (val x: Self) extends AnyVal {
       
       inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       
@@ -330,7 +334,8 @@ object RadialMenu {
       __obj.asInstanceOf[ItemsSliderSettings]
     }
     
-    extension [Self <: ItemsSliderSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ItemsSliderSettings] (val x: Self) extends AnyVal {
       
       inline def setLabelSpace(value: Double): Self = StObject.set(x, "labelSpace", value.asInstanceOf[js.Any])
       
@@ -406,7 +411,8 @@ object RadialMenu {
       __obj.asInstanceOf[typings.ejWebAll.ej.RadialMenu.Model]
     }
     
-    extension [Self <: typings.ejWebAll.ej.RadialMenu.Model](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.ejWebAll.ej.RadialMenu.Model] (val x: Self) extends AnyVal {
       
       inline def setAutoOpen(value: Boolean): Self = StObject.set(x, "autoOpen", value.asInstanceOf[js.Any])
       
@@ -481,7 +487,8 @@ object RadialMenu {
       __obj.asInstanceOf[OpenEventArgs]
     }
     
-    extension [Self <: OpenEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OpenEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       

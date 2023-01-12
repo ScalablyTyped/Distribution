@@ -19,7 +19,8 @@ object InitialState {
     __obj.asInstanceOf[InitialState]
   }
   
-  extension [Self <: InitialState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InitialState] (val x: Self) extends AnyVal {
     
     inline def setActivedescendantId(value: String): Self = StObject.set(x, "activedescendantId", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object MultipleTracksResponse {
     __obj.asInstanceOf[MultipleTracksResponse]
   }
   
-  extension [Self <: MultipleTracksResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MultipleTracksResponse] (val x: Self) extends AnyVal {
     
     inline def setTracks(value: js.Array[TrackObjectFull]): Self = StObject.set(x, "tracks", value.asInstanceOf[js.Any])
     

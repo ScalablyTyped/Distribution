@@ -158,7 +158,8 @@ object ImplementationGuide {
     __obj.asInstanceOf[ImplementationGuide]
   }
   
-  extension [Self <: ImplementationGuide](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImplementationGuide] (val x: Self) extends AnyVal {
     
     inline def setContact(value: js.Array[ContactDetail]): Self = StObject.set(x, "contact", value.asInstanceOf[js.Any])
     

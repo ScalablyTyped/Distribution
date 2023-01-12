@@ -18,7 +18,8 @@ object DateBefore {
     __obj.asInstanceOf[DateBefore]
   }
   
-  extension [Self <: DateBefore](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DateBefore] (val x: Self) extends AnyVal {
     
     inline def setBefore(value: js.Date): Self = StObject.set(x, "before", value.asInstanceOf[js.Any])
   }

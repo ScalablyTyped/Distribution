@@ -92,7 +92,8 @@ object typesSamplingRuleMod {
       __obj.asInstanceOf[SamplingRule]
     }
     
-    extension [Self <: SamplingRule](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SamplingRule] (val x: Self) extends AnyVal {
       
       inline def setAttributes(value: StringDictionary[String] | (js.Iterable[js.Tuple2[String, String]])): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
       
@@ -156,7 +157,8 @@ object typesSamplingRuleMod {
       __obj.asInstanceOf[UnmarshalledSamplingRule]
     }
     
-    extension [Self <: UnmarshalledSamplingRule](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnmarshalledSamplingRule] (val x: Self) extends AnyVal {
       
       inline def setAttributes(value: StringDictionary[String]): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
       

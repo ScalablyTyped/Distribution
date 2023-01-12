@@ -23,7 +23,8 @@ object TrialComponentStatus {
     __obj.asInstanceOf[TrialComponentStatus]
   }
   
-  extension [Self <: TrialComponentStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TrialComponentStatus] (val x: Self) extends AnyVal {
     
     inline def setMessage(value: TrialComponentStatusMessage): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
     

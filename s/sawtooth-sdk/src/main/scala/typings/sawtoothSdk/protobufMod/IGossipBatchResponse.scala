@@ -16,7 +16,8 @@ object IGossipBatchResponse {
     __obj.asInstanceOf[IGossipBatchResponse]
   }
   
-  extension [Self <: IGossipBatchResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IGossipBatchResponse] (val x: Self) extends AnyVal {
     
     inline def setContent(value: js.typedarray.Uint8Array): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     

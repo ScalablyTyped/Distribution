@@ -28,7 +28,8 @@ object PtrUpdateStatus {
     __obj.asInstanceOf[PtrUpdateStatus]
   }
   
-  extension [Self <: PtrUpdateStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PtrUpdateStatus] (val x: Self) extends AnyVal {
     
     inline def setReason(value: String): Self = StObject.set(x, "Reason", value.asInstanceOf[js.Any])
     

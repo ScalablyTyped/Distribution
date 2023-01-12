@@ -33,7 +33,8 @@ object UpdateParallelDataResponse {
     __obj.asInstanceOf[UpdateParallelDataResponse]
   }
   
-  extension [Self <: UpdateParallelDataResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateParallelDataResponse] (val x: Self) extends AnyVal {
     
     inline def setLatestUpdateAttemptAt(value: js.Date): Self = StObject.set(x, "LatestUpdateAttemptAt", value.asInstanceOf[js.Any])
     

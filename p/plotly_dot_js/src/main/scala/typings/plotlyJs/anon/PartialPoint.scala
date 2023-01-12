@@ -20,7 +20,8 @@ object PartialPoint {
     __obj.asInstanceOf[PartialPoint]
   }
   
-  extension [Self <: PartialPoint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialPoint] (val x: Self) extends AnyVal {
     
     inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     

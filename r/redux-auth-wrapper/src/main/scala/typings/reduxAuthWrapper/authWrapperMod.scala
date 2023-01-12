@@ -28,7 +28,8 @@ object authWrapperMod {
       __obj.asInstanceOf[AuthWrapperConfig]
     }
     
-    extension [Self <: AuthWrapperConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AuthWrapperConfig] (val x: Self) extends AnyVal {
       
       inline def setFailureComponent(value: ElementType[Any]): Self = StObject.set(x, "FailureComponent", value.asInstanceOf[js.Any])
       
@@ -49,7 +50,8 @@ object authWrapperMod {
       __obj.asInstanceOf[InjectedAuthProps]
     }
     
-    extension [Self <: InjectedAuthProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InjectedAuthProps] (val x: Self) extends AnyVal {
       
       inline def setIsAuthenticated(value: Boolean): Self = StObject.set(x, "isAuthenticated", value.asInstanceOf[js.Any])
       

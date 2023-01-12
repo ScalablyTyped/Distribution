@@ -81,7 +81,8 @@ object mod {
       __obj.asInstanceOf[MessageOptions]
     }
     
-    extension [Self <: MessageOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MessageOptions] (val x: Self) extends AnyVal {
       
       inline def setAppName(value: String): Self = StObject.set(x, "appName", value.asInstanceOf[js.Any])
       
@@ -154,7 +155,8 @@ object mod {
       __obj.asInstanceOf[ProduceOptions]
     }
     
-    extension [Self <: ProduceOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProduceOptions] (val x: Self) extends AnyVal {
       
       inline def setAppName(value: String): Self = StObject.set(x, "appName", value.asInstanceOf[js.Any])
       
@@ -216,7 +218,8 @@ object mod {
       __obj.asInstanceOf[SyslogMessage]
     }
     
-    extension [Self <: SyslogMessage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SyslogMessage] (val x: Self) extends AnyVal {
       
       inline def setAppName(value: String): Self = StObject.set(x, "appName", value.asInstanceOf[js.Any])
       

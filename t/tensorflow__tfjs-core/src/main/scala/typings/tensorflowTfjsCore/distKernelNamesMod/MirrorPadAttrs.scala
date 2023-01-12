@@ -19,7 +19,8 @@ object MirrorPadAttrs {
     __obj.asInstanceOf[MirrorPadAttrs]
   }
   
-  extension [Self <: MirrorPadAttrs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MirrorPadAttrs] (val x: Self) extends AnyVal {
     
     inline def setMode(value: reflect | symmetric): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     

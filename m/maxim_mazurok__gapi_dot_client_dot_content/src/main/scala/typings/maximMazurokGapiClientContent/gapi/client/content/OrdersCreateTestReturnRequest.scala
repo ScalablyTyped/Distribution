@@ -16,7 +16,8 @@ object OrdersCreateTestReturnRequest {
     __obj.asInstanceOf[OrdersCreateTestReturnRequest]
   }
   
-  extension [Self <: OrdersCreateTestReturnRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OrdersCreateTestReturnRequest] (val x: Self) extends AnyVal {
     
     inline def setItems(value: js.Array[OrdersCustomBatchRequestEntryCreateTestReturnReturnItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     

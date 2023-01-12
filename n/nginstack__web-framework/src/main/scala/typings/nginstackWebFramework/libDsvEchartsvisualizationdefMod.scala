@@ -69,7 +69,8 @@ object libDsvEchartsvisualizationdefMod {
       __obj.asInstanceOf[EChartsVisualizationDef]
     }
     
-    extension [Self <: EChartsVisualizationDef](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EChartsVisualizationDef] (val x: Self) extends AnyVal {
       
       inline def setCanExport(value: Boolean): Self = StObject.set(x, "canExport", value.asInstanceOf[js.Any])
       

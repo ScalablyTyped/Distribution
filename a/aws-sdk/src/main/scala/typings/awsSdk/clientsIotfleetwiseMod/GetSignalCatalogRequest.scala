@@ -18,7 +18,8 @@ object GetSignalCatalogRequest {
     __obj.asInstanceOf[GetSignalCatalogRequest]
   }
   
-  extension [Self <: GetSignalCatalogRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetSignalCatalogRequest] (val x: Self) extends AnyVal {
     
     inline def setName(value: resourceName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }

@@ -833,7 +833,8 @@ object sapUiWebcMainStepInputMod {
       __obj.asInstanceOf[StepInputSettings]
     }
     
-    extension [Self <: StepInputSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StepInputSettings] (val x: Self) extends AnyVal {
       
       inline def setAccessibleName(value: String | PropertyBindingInfo): Self = StObject.set(x, "accessibleName", value.asInstanceOf[js.Any])
       

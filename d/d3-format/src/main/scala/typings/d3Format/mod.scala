@@ -205,7 +205,8 @@ object mod {
       __obj.asInstanceOf[FormatLocaleDefinition]
     }
     
-    extension [Self <: FormatLocaleDefinition](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FormatLocaleDefinition] (val x: Self) extends AnyVal {
       
       inline def setCurrency(value: js.Tuple2[String, String]): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
       
@@ -270,7 +271,8 @@ object mod {
       __obj.asInstanceOf[FormatLocaleObject]
     }
     
-    extension [Self <: FormatLocaleObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FormatLocaleObject] (val x: Self) extends AnyVal {
       
       inline def setFormat(value: String => js.Function1[/* n */ Double | ValueOf, String]): Self = StObject.set(x, "format", js.Any.fromFunction1(value))
       
@@ -377,7 +379,8 @@ object mod {
       __obj.asInstanceOf[FormatSpecifierObject]
     }
     
-    extension [Self <: FormatSpecifierObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FormatSpecifierObject] (val x: Self) extends AnyVal {
       
       inline def setAlign(value: String): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       

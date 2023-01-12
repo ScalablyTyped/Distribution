@@ -17,7 +17,8 @@ object WindowTabDesc {
     __obj.asInstanceOf[WindowTabDesc]
   }
   
-  extension [Self <: WindowTabDesc](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WindowTabDesc] (val x: Self) extends AnyVal {
     
     inline def setImage(value: Double | ImageAnimation): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     

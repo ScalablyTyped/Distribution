@@ -38,7 +38,8 @@ object PainterOptions {
     __obj.asInstanceOf[PainterOptions]
   }
   
-  extension [Self <: PainterOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PainterOptions] (val x: Self) extends AnyVal {
     
     inline def setFadeDuration(value: Double): Self = StObject.set(x, "fadeDuration", value.asInstanceOf[js.Any])
     

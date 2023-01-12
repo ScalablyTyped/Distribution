@@ -16,7 +16,8 @@ object DeleteDeveloperMetadataResponse {
     __obj.asInstanceOf[DeleteDeveloperMetadataResponse]
   }
   
-  extension [Self <: DeleteDeveloperMetadataResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteDeveloperMetadataResponse] (val x: Self) extends AnyVal {
     
     inline def setDeletedDeveloperMetadata(value: js.Array[DeveloperMetadata]): Self = StObject.set(x, "deletedDeveloperMetadata", value.asInstanceOf[js.Any])
     

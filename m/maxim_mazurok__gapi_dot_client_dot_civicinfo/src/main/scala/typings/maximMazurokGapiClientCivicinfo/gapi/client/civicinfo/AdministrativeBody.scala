@@ -58,7 +58,8 @@ object AdministrativeBody {
     __obj.asInstanceOf[AdministrativeBody]
   }
   
-  extension [Self <: AdministrativeBody](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AdministrativeBody] (val x: Self) extends AnyVal {
     
     inline def setAbsenteeVotingInfoUrl(value: String): Self = StObject.set(x, "absenteeVotingInfoUrl", value.asInstanceOf[js.Any])
     

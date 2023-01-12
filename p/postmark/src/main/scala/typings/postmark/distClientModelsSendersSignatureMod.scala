@@ -103,7 +103,8 @@ object distClientModelsSendersSignatureMod {
       __obj.asInstanceOf[Signature]
     }
     
-    extension [Self <: Signature](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Signature] (val x: Self) extends AnyVal {
       
       inline def setConfirmed(value: Boolean): Self = StObject.set(x, "Confirmed", value.asInstanceOf[js.Any])
       
@@ -164,7 +165,8 @@ object distClientModelsSendersSignatureMod {
       __obj.asInstanceOf[SignatureDetails]
     }
     
-    extension [Self <: SignatureDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SignatureDetails] (val x: Self) extends AnyVal {
       
       inline def setConfirmationPersonalNote(value: String): Self = StObject.set(x, "ConfirmationPersonalNote", value.asInstanceOf[js.Any])
       
@@ -191,7 +193,8 @@ object distClientModelsSendersSignatureMod {
       __obj.asInstanceOf[Signatures]
     }
     
-    extension [Self <: Signatures](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Signatures] (val x: Self) extends AnyVal {
       
       inline def setSenderSignatures(value: js.Array[Signature]): Self = StObject.set(x, "SenderSignatures", value.asInstanceOf[js.Any])
       

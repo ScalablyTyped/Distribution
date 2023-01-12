@@ -16,7 +16,8 @@ object OptionsRadialLinearScaleOptions {
     __obj.asInstanceOf[OptionsRadialLinearScaleOptions]
   }
   
-  extension [Self <: OptionsRadialLinearScaleOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OptionsRadialLinearScaleOptions] (val x: Self) extends AnyVal {
     
     inline def setOptions(value: RadialLinearScaleOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
   }

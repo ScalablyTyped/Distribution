@@ -67,7 +67,8 @@ object IEditorDecorationsCollection {
     __obj.asInstanceOf[IEditorDecorationsCollection]
   }
   
-  extension [Self <: IEditorDecorationsCollection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IEditorDecorationsCollection] (val x: Self) extends AnyVal {
     
     inline def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
     

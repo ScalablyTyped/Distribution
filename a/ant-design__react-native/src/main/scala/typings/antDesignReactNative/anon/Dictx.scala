@@ -18,7 +18,8 @@ object Dictx {
     __obj.asInstanceOf[Dictx]
   }
   
-  extension [Self <: Dictx](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Dictx] (val x: Self) extends AnyVal {
     
     inline def setRef(value: Any => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
   }

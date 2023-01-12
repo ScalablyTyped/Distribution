@@ -17,7 +17,8 @@ object FetchByKeysCapability {
     __obj.asInstanceOf[FetchByKeysCapability[D]]
   }
   
-  extension [Self <: FetchByKeysCapability[?], D](x: Self & FetchByKeysCapability[D]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FetchByKeysCapability[?], D] (val x: Self & FetchByKeysCapability[D]) extends AnyVal {
     
     inline def setImplementation(value: iteration | lookup): Self = StObject.set(x, "implementation", value.asInstanceOf[js.Any])
   }

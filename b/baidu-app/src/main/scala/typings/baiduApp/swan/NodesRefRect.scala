@@ -30,7 +30,8 @@ object NodesRefRect {
     __obj.asInstanceOf[NodesRefRect]
   }
   
-  extension [Self <: NodesRefRect](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodesRefRect] (val x: Self) extends AnyVal {
     
     inline def setDataset(value: Any): Self = StObject.set(x, "dataset", value.asInstanceOf[js.Any])
     

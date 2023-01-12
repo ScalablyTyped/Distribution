@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "node-hook"
-version := "1.0-dt-20211202Z-d717f9"
+version := "1.0-dt-20211202Z-cd960e"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

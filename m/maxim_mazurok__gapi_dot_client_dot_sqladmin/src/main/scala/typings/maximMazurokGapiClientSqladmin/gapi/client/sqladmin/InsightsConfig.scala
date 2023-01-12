@@ -31,7 +31,8 @@ object InsightsConfig {
     __obj.asInstanceOf[InsightsConfig]
   }
   
-  extension [Self <: InsightsConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InsightsConfig] (val x: Self) extends AnyVal {
     
     inline def setQueryInsightsEnabled(value: Boolean): Self = StObject.set(x, "queryInsightsEnabled", value.asInstanceOf[js.Any])
     

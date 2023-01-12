@@ -20,7 +20,8 @@ object Typeofrouter {
     __obj.asInstanceOf[Typeofrouter]
   }
   
-  extension [Self <: Typeofrouter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Typeofrouter] (val x: Self) extends AnyVal {
     
     inline def setEditor(value: Instantiable0[Editor]): Self = StObject.set(x, "Editor", value.asInstanceOf[js.Any])
     

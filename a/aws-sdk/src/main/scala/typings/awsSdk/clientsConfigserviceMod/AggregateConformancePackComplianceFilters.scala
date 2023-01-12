@@ -33,7 +33,8 @@ object AggregateConformancePackComplianceFilters {
     __obj.asInstanceOf[AggregateConformancePackComplianceFilters]
   }
   
-  extension [Self <: AggregateConformancePackComplianceFilters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AggregateConformancePackComplianceFilters] (val x: Self) extends AnyVal {
     
     inline def setAccountId(value: AccountId): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
     

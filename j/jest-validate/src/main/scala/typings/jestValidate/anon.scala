@@ -18,7 +18,8 @@ object anon {
       __obj.asInstanceOf[DeprecationEntries]
     }
     
-    extension [Self <: DeprecationEntries](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeprecationEntries] (val x: Self) extends AnyVal {
       
       inline def setDeprecationEntries(value: DeprecatedOptions): Self = StObject.set(x, "deprecationEntries", value.asInstanceOf[js.Any])
       
@@ -39,7 +40,8 @@ object anon {
       __obj.asInstanceOf[HasDeprecationWarnings]
     }
     
-    extension [Self <: HasDeprecationWarnings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HasDeprecationWarnings] (val x: Self) extends AnyVal {
       
       inline def setHasDeprecationWarnings(value: Boolean): Self = StObject.set(x, "hasDeprecationWarnings", value.asInstanceOf[js.Any])
       

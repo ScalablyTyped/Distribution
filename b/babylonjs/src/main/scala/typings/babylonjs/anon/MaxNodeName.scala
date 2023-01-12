@@ -19,7 +19,8 @@ object MaxNodeName {
     __obj.asInstanceOf[MaxNodeName]
   }
   
-  extension [Self <: MaxNodeName](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MaxNodeName] (val x: Self) extends AnyVal {
     
     inline def setMaxNodeName(value: String): Self = StObject.set(x, "maxNodeName", value.asInstanceOf[js.Any])
     

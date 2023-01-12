@@ -73,7 +73,8 @@ object DescribeMailboxExportJobResponse {
     __obj.asInstanceOf[DescribeMailboxExportJobResponse]
   }
   
-  extension [Self <: DescribeMailboxExportJobResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeMailboxExportJobResponse] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: Description): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     

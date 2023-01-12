@@ -30,7 +30,8 @@ object OptionsScaling {
     __obj.asInstanceOf[OptionsScaling]
   }
   
-  extension [Self <: OptionsScaling](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OptionsScaling] (val x: Self) extends AnyVal {
     
     inline def setCustomScalingFunction(
       value: (/* min */ js.UndefOr[Double], /* max */ js.UndefOr[Double], /* total */ js.UndefOr[Double], /* value */ js.UndefOr[Double]) => Double

@@ -108,7 +108,8 @@ object VpnTunnel {
     __obj.asInstanceOf[VpnTunnel]
   }
   
-  extension [Self <: VpnTunnel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VpnTunnel] (val x: Self) extends AnyVal {
     
     inline def setCreationTimestamp(value: String): Self = StObject.set(x, "creationTimestamp", value.asInstanceOf[js.Any])
     

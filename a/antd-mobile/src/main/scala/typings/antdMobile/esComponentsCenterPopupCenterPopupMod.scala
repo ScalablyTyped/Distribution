@@ -355,7 +355,8 @@ object esComponentsCenterPopupCenterPopupMod {
       __obj.asInstanceOf[CenterPopupProps]
     }
     
-    extension [Self <: CenterPopupProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CenterPopupProps] (val x: Self) extends AnyVal {
       
       inline def setAfterClose(value: () => Unit): Self = StObject.set(x, "afterClose", js.Any.fromFunction0(value))
       

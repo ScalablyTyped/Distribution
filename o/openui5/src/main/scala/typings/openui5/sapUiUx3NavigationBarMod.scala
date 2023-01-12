@@ -517,7 +517,8 @@ object sapUiUx3NavigationBarMod {
       __obj.asInstanceOf[NavigationBarSettings]
     }
     
-    extension [Self <: NavigationBarSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NavigationBarSettings] (val x: Self) extends AnyVal {
       
       inline def setAssociatedItems(value: js.Array[typings.openui5.sapUiUx3NavigationItemMod.default | String]): Self = StObject.set(x, "associatedItems", value.asInstanceOf[js.Any])
       

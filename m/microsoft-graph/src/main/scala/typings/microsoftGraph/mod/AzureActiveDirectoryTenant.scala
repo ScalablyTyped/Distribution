@@ -21,7 +21,8 @@ object AzureActiveDirectoryTenant {
     __obj.asInstanceOf[AzureActiveDirectoryTenant]
   }
   
-  extension [Self <: AzureActiveDirectoryTenant](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AzureActiveDirectoryTenant] (val x: Self) extends AnyVal {
     
     inline def setDisplayName(value: NullableOption[String]): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     

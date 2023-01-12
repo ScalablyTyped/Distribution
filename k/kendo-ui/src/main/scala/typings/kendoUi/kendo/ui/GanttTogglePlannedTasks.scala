@@ -17,7 +17,8 @@ object GanttTogglePlannedTasks {
     __obj.asInstanceOf[GanttTogglePlannedTasks]
   }
   
-  extension [Self <: GanttTogglePlannedTasks](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GanttTogglePlannedTasks] (val x: Self) extends AnyVal {
     
     inline def setShowPlannedTasks(value: Boolean): Self = StObject.set(x, "showPlannedTasks", value.asInstanceOf[js.Any])
     

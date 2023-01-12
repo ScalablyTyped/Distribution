@@ -38,7 +38,8 @@ object MavenArtifact {
     __obj.asInstanceOf[MavenArtifact]
   }
   
-  extension [Self <: MavenArtifact](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MavenArtifact] (val x: Self) extends AnyVal {
     
     inline def setArtifactId(value: String): Self = StObject.set(x, "artifactId", value.asInstanceOf[js.Any])
     

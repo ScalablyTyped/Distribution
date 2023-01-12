@@ -34,7 +34,8 @@ object Pacing {
     __obj.asInstanceOf[Pacing]
   }
   
-  extension [Self <: Pacing](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Pacing] (val x: Self) extends AnyVal {
     
     inline def setDailyMaxImpressions(value: String): Self = StObject.set(x, "dailyMaxImpressions", value.asInstanceOf[js.Any])
     

@@ -146,7 +146,8 @@ object cascadeselectCascadeselectMod {
       __obj.asInstanceOf[CascadeSelectChangeParams]
     }
     
-    extension [Self <: CascadeSelectChangeParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CascadeSelectChangeParams] (val x: Self) extends AnyVal {
       
       inline def setOriginalEvent(value: SyntheticEvent[Element, Event]): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
       
@@ -624,7 +625,8 @@ object cascadeselectCascadeselectMod {
       __obj.asInstanceOf[CascadeSelectProps]
     }
     
-    extension [Self <: CascadeSelectProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CascadeSelectProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       

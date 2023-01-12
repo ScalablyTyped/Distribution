@@ -23,7 +23,8 @@ object CloudFrontOriginAccessIdentityConfig {
     __obj.asInstanceOf[CloudFrontOriginAccessIdentityConfig]
   }
   
-  extension [Self <: CloudFrontOriginAccessIdentityConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CloudFrontOriginAccessIdentityConfig] (val x: Self) extends AnyVal {
     
     inline def setCallerReference(value: String): Self = StObject.set(x, "CallerReference", value.asInstanceOf[js.Any])
     

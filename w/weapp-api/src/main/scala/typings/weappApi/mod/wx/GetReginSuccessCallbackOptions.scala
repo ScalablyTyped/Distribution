@@ -19,7 +19,8 @@ object GetReginSuccessCallbackOptions {
     __obj.asInstanceOf[GetReginSuccessCallbackOptions]
   }
   
-  extension [Self <: GetReginSuccessCallbackOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetReginSuccessCallbackOptions] (val x: Self) extends AnyVal {
     
     inline def setNortheast(value: Double): Self = StObject.set(x, "northeast", value.asInstanceOf[js.Any])
     

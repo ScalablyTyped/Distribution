@@ -23,7 +23,8 @@ object KnowledgeBaseAssociationData {
     __obj.asInstanceOf[KnowledgeBaseAssociationData]
   }
   
-  extension [Self <: KnowledgeBaseAssociationData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KnowledgeBaseAssociationData] (val x: Self) extends AnyVal {
     
     inline def setKnowledgeBaseArn(value: Arn): Self = StObject.set(x, "knowledgeBaseArn", value.asInstanceOf[js.Any])
     

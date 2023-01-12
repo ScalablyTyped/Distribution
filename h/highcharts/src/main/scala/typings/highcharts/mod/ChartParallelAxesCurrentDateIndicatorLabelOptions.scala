@@ -83,7 +83,8 @@ object ChartParallelAxesCurrentDateIndicatorLabelOptions {
     __obj.asInstanceOf[ChartParallelAxesCurrentDateIndicatorLabelOptions]
   }
   
-  extension [Self <: ChartParallelAxesCurrentDateIndicatorLabelOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChartParallelAxesCurrentDateIndicatorLabelOptions] (val x: Self) extends AnyVal {
     
     inline def setAlign(value: AlignValue): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     

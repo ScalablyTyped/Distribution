@@ -15,7 +15,8 @@ object ORIGINSCOPED {
     __obj.asInstanceOf[ORIGINSCOPED]
   }
   
-  extension [Self <: ORIGINSCOPED](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ORIGINSCOPED] (val x: Self) extends AnyVal {
     
     inline def setORIGIN_SCOPED(value: Boolean): Self = StObject.set(x, "ORIGIN_SCOPED", value.asInstanceOf[js.Any])
   }

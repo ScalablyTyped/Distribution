@@ -44,7 +44,8 @@ object rednumbergreennumberbluen {
     __obj.asInstanceOf[rednumbergreennumberbluen]
   }
   
-  extension [Self <: rednumbergreennumberbluen](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: rednumbergreennumberbluen] (val x: Self) extends AnyVal {
     
     inline def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
     

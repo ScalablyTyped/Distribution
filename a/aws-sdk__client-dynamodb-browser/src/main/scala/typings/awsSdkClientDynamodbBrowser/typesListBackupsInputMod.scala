@@ -74,7 +74,8 @@ object typesListBackupsInputMod {
       __obj.asInstanceOf[ListBackupsInput]
     }
     
-    extension [Self <: ListBackupsInput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListBackupsInput] (val x: Self) extends AnyVal {
       
       inline def set$abortSignal(value: AbortSignal): Self = StObject.set(x, "$abortSignal", value.asInstanceOf[js.Any])
       

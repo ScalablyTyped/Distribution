@@ -91,7 +91,8 @@ object libUtilWaveMod {
       __obj.asInstanceOf[WaveProps]
     }
     
-    extension [Self <: WaveProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WaveProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

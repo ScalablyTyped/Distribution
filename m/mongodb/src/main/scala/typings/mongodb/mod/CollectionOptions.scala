@@ -28,7 +28,8 @@ object CollectionOptions {
     __obj.asInstanceOf[CollectionOptions]
   }
   
-  extension [Self <: CollectionOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CollectionOptions] (val x: Self) extends AnyVal {
     
     inline def setReadConcern(value: ReadConcernLike): Self = StObject.set(x, "readConcern", value.asInstanceOf[js.Any])
     

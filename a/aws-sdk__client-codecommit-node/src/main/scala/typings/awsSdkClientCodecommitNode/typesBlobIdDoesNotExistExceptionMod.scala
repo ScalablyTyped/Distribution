@@ -21,7 +21,8 @@ object typesBlobIdDoesNotExistExceptionMod {
       __obj.asInstanceOf[BlobIdDoesNotExistException]
     }
     
-    extension [Self <: BlobIdDoesNotExistException](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BlobIdDoesNotExistException] (val x: Self) extends AnyVal {
       
       inline def setName(
         value: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.BlobIdDoesNotExistException

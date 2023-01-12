@@ -15,7 +15,8 @@ object EditInitializeFiltering {
     __obj.asInstanceOf[EditInitializeFiltering]
   }
   
-  extension [Self <: EditInitializeFiltering](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EditInitializeFiltering] (val x: Self) extends AnyVal {
     
     inline def setLimitResults(value: Double): Self = StObject.set(x, "LimitResults", value.asInstanceOf[js.Any])
     

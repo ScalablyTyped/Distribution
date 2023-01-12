@@ -20,7 +20,8 @@ object AppflowIntegration {
     __obj.asInstanceOf[AppflowIntegration]
   }
   
-  extension [Self <: AppflowIntegration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppflowIntegration] (val x: Self) extends AnyVal {
     
     inline def setBatches(value: Batches): Self = StObject.set(x, "Batches", value.asInstanceOf[js.Any])
     

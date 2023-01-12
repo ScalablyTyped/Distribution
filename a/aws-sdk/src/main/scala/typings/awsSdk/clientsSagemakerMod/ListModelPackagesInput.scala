@@ -63,7 +63,8 @@ object ListModelPackagesInput {
     __obj.asInstanceOf[ListModelPackagesInput]
   }
   
-  extension [Self <: ListModelPackagesInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListModelPackagesInput] (val x: Self) extends AnyVal {
     
     inline def setCreationTimeAfter(value: js.Date): Self = StObject.set(x, "CreationTimeAfter", value.asInstanceOf[js.Any])
     

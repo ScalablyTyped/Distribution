@@ -55,7 +55,8 @@ object WebhookResponse {
     __obj.asInstanceOf[WebhookResponse]
   }
   
-  extension [Self <: WebhookResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebhookResponse] (val x: Self) extends AnyVal {
     
     inline def setAuth_key(value: String): Self = StObject.set(x, "auth_key", value.asInstanceOf[js.Any])
     

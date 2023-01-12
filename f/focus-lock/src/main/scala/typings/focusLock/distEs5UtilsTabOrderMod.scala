@@ -31,7 +31,8 @@ object distEs5UtilsTabOrderMod {
       __obj.asInstanceOf[NodeIndex]
     }
     
-    extension [Self <: NodeIndex](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NodeIndex] (val x: Self) extends AnyVal {
       
       inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       

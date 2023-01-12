@@ -19,7 +19,8 @@ object ButtonGroupOption {
     __obj.asInstanceOf[ButtonGroupOption]
   }
   
-  extension [Self <: ButtonGroupOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ButtonGroupOption] (val x: Self) extends AnyVal {
     
     inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object DeleteComputeEnvironmentRequest {
     __obj.asInstanceOf[DeleteComputeEnvironmentRequest]
   }
   
-  extension [Self <: DeleteComputeEnvironmentRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteComputeEnvironmentRequest] (val x: Self) extends AnyVal {
     
     inline def setComputeEnvironment(value: String): Self = StObject.set(x, "computeEnvironment", value.asInstanceOf[js.Any])
   }

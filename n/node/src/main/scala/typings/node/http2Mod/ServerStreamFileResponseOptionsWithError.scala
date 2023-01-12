@@ -18,7 +18,8 @@ object ServerStreamFileResponseOptionsWithError {
     __obj.asInstanceOf[ServerStreamFileResponseOptionsWithError]
   }
   
-  extension [Self <: ServerStreamFileResponseOptionsWithError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServerStreamFileResponseOptionsWithError] (val x: Self) extends AnyVal {
     
     inline def setOnError(value: /* err */ ErrnoException => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
     

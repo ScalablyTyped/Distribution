@@ -72,7 +72,8 @@ object MergeBranchesBySquashInput {
     __obj.asInstanceOf[MergeBranchesBySquashInput]
   }
   
-  extension [Self <: MergeBranchesBySquashInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MergeBranchesBySquashInput] (val x: Self) extends AnyVal {
     
     inline def setAuthorName(value: Name): Self = StObject.set(x, "authorName", value.asInstanceOf[js.Any])
     

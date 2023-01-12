@@ -23,7 +23,8 @@ object Initiator {
     __obj.asInstanceOf[Initiator]
   }
   
-  extension [Self <: Initiator](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Initiator] (val x: Self) extends AnyVal {
     
     inline def setDisplayName(value: DisplayName): Self = StObject.set(x, "DisplayName", value.asInstanceOf[js.Any])
     

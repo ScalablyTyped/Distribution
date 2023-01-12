@@ -15,7 +15,8 @@ object EnumValuesAfnStrip {
     __obj.asInstanceOf[EnumValuesAfnStrip]
   }
   
-  extension [Self <: EnumValuesAfnStrip](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnumValuesAfnStrip] (val x: Self) extends AnyVal {
     
     inline def setEnumValues(value: AfnStrip): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
   }

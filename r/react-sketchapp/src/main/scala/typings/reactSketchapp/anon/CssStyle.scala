@@ -27,7 +27,8 @@ object CssStyle {
     __obj.asInstanceOf[CssStyle]
   }
   
-  extension [Self <: CssStyle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CssStyle] (val x: Self) extends AnyVal {
     
     inline def setCssStyle(value: TextStyle): Self = StObject.set(x, "cssStyle", value.asInstanceOf[js.Any])
     

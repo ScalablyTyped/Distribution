@@ -80,7 +80,8 @@ object PlotSmaAccessibilityPointOptions {
     __obj.asInstanceOf[PlotSmaAccessibilityPointOptions]
   }
   
-  extension [Self <: PlotSmaAccessibilityPointOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotSmaAccessibilityPointOptions] (val x: Self) extends AnyVal {
     
     inline def setDateFormat(value: String): Self = StObject.set(x, "dateFormat", value.asInstanceOf[js.Any])
     

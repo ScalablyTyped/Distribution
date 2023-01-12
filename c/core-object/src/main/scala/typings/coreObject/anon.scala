@@ -17,7 +17,8 @@ object anon {
       __obj.asInstanceOf[Super[Base]]
     }
     
-    extension [Self <: Super[?], Base](x: Self & Super[Base]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Super[?], Base] (val x: Self & Super[Base]) extends AnyVal {
       
       inline def set_super(value: typings.coreObject.privateUtilsMod.Super[Base]): Self = StObject.set(x, "_super", value.asInstanceOf[js.Any])
     }

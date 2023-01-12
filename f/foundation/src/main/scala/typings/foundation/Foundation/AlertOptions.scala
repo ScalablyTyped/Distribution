@@ -16,7 +16,8 @@ object AlertOptions {
     __obj.asInstanceOf[AlertOptions]
   }
   
-  extension [Self <: AlertOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AlertOptions] (val x: Self) extends AnyVal {
     
     inline def setCallback(value: () => Any): Self = StObject.set(x, "callback", js.Any.fromFunction0(value))
     

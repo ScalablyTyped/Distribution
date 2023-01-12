@@ -15,7 +15,8 @@ object MlRevertModelSnapshotResponse {
     __obj.asInstanceOf[MlRevertModelSnapshotResponse]
   }
   
-  extension [Self <: MlRevertModelSnapshotResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlRevertModelSnapshotResponse] (val x: Self) extends AnyVal {
     
     inline def setModel(value: MlModelSnapshot): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
   }

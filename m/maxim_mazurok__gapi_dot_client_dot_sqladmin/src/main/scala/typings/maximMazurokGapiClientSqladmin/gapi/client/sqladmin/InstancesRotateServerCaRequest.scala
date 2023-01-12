@@ -16,7 +16,8 @@ object InstancesRotateServerCaRequest {
     __obj.asInstanceOf[InstancesRotateServerCaRequest]
   }
   
-  extension [Self <: InstancesRotateServerCaRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InstancesRotateServerCaRequest] (val x: Self) extends AnyVal {
     
     inline def setRotateServerCaContext(value: RotateServerCaContext): Self = StObject.set(x, "rotateServerCaContext", value.asInstanceOf[js.Any])
     

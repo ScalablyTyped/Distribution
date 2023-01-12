@@ -26,7 +26,8 @@ object anon {
       __obj.asInstanceOf[PartialMRAIDExpandPropert]
     }
     
-    extension [Self <: PartialMRAIDExpandPropert](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialMRAIDExpandPropert] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -60,7 +61,8 @@ object anon {
       __obj.asInstanceOf[PartialMRAIDOrientationPr]
     }
     
-    extension [Self <: PartialMRAIDOrientationPr](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialMRAIDOrientationPr] (val x: Self) extends AnyVal {
       
       inline def setAllowOrientationChange(value: Boolean): Self = StObject.set(x, "allowOrientationChange", value.asInstanceOf[js.Any])
       

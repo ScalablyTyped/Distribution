@@ -69,7 +69,8 @@ object NotificationEventType {
     __obj.asInstanceOf[NotificationEventType]
   }
   
-  extension [Self <: NotificationEventType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NotificationEventType] (val x: Self) extends AnyVal {
     
     inline def setCategory(value: NotificationEventTypeCategory): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     

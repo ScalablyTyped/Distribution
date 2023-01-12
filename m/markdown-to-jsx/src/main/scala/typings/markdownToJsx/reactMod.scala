@@ -19,7 +19,8 @@ object reactMod {
       __obj.asInstanceOf[Attributes]
     }
     
-    extension [Self <: Attributes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Attributes] (val x: Self) extends AnyVal {
       
       inline def setCss(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSSProp */ Any

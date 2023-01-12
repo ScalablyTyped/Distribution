@@ -78,7 +78,8 @@ object TypeofTwoColorTimeline {
     __obj.asInstanceOf[TypeofTwoColorTimeline]
   }
   
-  extension [Self <: TypeofTwoColorTimeline](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofTwoColorTimeline] (val x: Self) extends AnyVal {
     
     inline def setA(value: Double): Self = StObject.set(x, "A", value.asInstanceOf[js.Any])
     

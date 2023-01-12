@@ -28,7 +28,8 @@ object TaskAgentAuthorization {
     __obj.asInstanceOf[TaskAgentAuthorization]
   }
   
-  extension [Self <: TaskAgentAuthorization](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TaskAgentAuthorization] (val x: Self) extends AnyVal {
     
     inline def setAuthorizationUrl(value: String): Self = StObject.set(x, "authorizationUrl", value.asInstanceOf[js.Any])
     

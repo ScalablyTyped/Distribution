@@ -17,7 +17,8 @@ object anon {
       __obj.asInstanceOf[Authorization]
     }
     
-    extension [Self <: Authorization](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Authorization] (val x: Self) extends AnyVal {
       
       inline def setAuthorization(value: String): Self = StObject.set(x, "Authorization", value.asInstanceOf[js.Any])
     }
@@ -36,7 +37,8 @@ object anon {
       __obj.asInstanceOf[Password]
     }
     
-    extension [Self <: Password](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Password] (val x: Self) extends AnyVal {
       
       inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
       

@@ -64,7 +64,8 @@ object buildPermissionsHooksMod {
       __obj.asInstanceOf[PermissionsOptions]
     }
     
-    extension [Self <: PermissionsOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PermissionsOptions] (val x: Self) extends AnyVal {
       
       inline def setAsk(value: Boolean): Self = StObject.set(x, "ask", value.asInstanceOf[js.Any])
       

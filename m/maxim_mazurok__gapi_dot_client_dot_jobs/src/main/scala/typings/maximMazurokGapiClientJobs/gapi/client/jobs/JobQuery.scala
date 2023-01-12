@@ -99,7 +99,8 @@ object JobQuery {
     __obj.asInstanceOf[JobQuery]
   }
   
-  extension [Self <: JobQuery](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JobQuery] (val x: Self) extends AnyVal {
     
     inline def setCommuteFilter(value: CommuteFilter): Self = StObject.set(x, "commuteFilter", value.asInstanceOf[js.Any])
     

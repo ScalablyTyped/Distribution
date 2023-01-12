@@ -100,7 +100,8 @@ object mod {
       __obj.asInstanceOf[CertManagerOptions]
     }
     
-    extension [Self <: CertManagerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CertManagerOptions] (val x: Self) extends AnyVal {
       
       inline def setDefaultCertAttrs(value: js.Array[CertificateAttribute]): Self = StObject.set(x, "defaultCertAttrs", value.asInstanceOf[js.Any])
       
@@ -147,7 +148,8 @@ object mod {
       __obj.asInstanceOf[CertificateAttributeName]
     }
     
-    extension [Self <: CertificateAttributeName](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CertificateAttributeName] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -170,7 +172,8 @@ object mod {
       __obj.asInstanceOf[CertificateAttributeShortName]
     }
     
-    extension [Self <: CertificateAttributeShortName](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CertificateAttributeShortName] (val x: Self) extends AnyVal {
       
       inline def setShortName(value: String): Self = StObject.set(x, "shortName", value.asInstanceOf[js.Any])
       
@@ -203,7 +206,8 @@ object mod {
       __obj.asInstanceOf[GenerateConfig]
     }
     
-    extension [Self <: GenerateConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GenerateConfig] (val x: Self) extends AnyVal {
       
       inline def setCommonName(value: String): Self = StObject.set(x, "commonName", value.asInstanceOf[js.Any])
       

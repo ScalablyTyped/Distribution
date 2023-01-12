@@ -17,7 +17,8 @@ object OriType {
     __obj.asInstanceOf[OriType]
   }
   
-  extension [Self <: OriType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OriType] (val x: Self) extends AnyVal {
     
     inline def setOriType(value: String): Self = StObject.set(x, "oriType", value.asInstanceOf[js.Any])
     

@@ -38,7 +38,8 @@ object ListAnomaliesForInsightRequest {
     __obj.asInstanceOf[ListAnomaliesForInsightRequest]
   }
   
-  extension [Self <: ListAnomaliesForInsightRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListAnomaliesForInsightRequest] (val x: Self) extends AnyVal {
     
     inline def setAccountId(value: AwsAccountId): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
     

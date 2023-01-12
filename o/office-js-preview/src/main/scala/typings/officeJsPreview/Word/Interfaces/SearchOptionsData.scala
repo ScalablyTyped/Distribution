@@ -70,7 +70,8 @@ object SearchOptionsData {
     __obj.asInstanceOf[SearchOptionsData]
   }
   
-  extension [Self <: SearchOptionsData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchOptionsData] (val x: Self) extends AnyVal {
     
     inline def setIgnorePunct(value: Boolean): Self = StObject.set(x, "ignorePunct", value.asInstanceOf[js.Any])
     

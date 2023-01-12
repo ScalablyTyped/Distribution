@@ -50,7 +50,8 @@ object CollectionWidgetItem {
     __obj.asInstanceOf[CollectionWidgetItem]
   }
   
-  extension [Self <: CollectionWidgetItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CollectionWidgetItem] (val x: Self) extends AnyVal {
     
     inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     

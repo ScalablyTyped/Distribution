@@ -30,7 +30,8 @@ object Modal {
     __obj.asInstanceOf[Modal]
   }
   
-  extension [Self <: Modal](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Modal] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
   }

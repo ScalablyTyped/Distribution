@@ -31,7 +31,8 @@ object LowPassFilterOptions {
     __obj.asInstanceOf[LowPassFilterOptions]
   }
   
-  extension [Self <: LowPassFilterOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LowPassFilterOptions] (val x: Self) extends AnyVal {
     
     inline def setFrequency(value: Double): Self = StObject.set(x, "frequency", value.asInstanceOf[js.Any])
     

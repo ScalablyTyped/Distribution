@@ -84,7 +84,8 @@ object ContentIndex {
     __obj.asInstanceOf[ContentIndex]
   }
   
-  extension [Self <: ContentIndex](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContentIndex] (val x: Self) extends AnyVal {
     
     inline def setCreateFromMarks(value: Boolean): Self = StObject.set(x, "CreateFromMarks", value.asInstanceOf[js.Any])
     

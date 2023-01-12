@@ -17,7 +17,8 @@ object TransceiveSuccessCallbackResult {
     __obj.asInstanceOf[TransceiveSuccessCallbackResult]
   }
   
-  extension [Self <: TransceiveSuccessCallbackResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransceiveSuccessCallbackResult] (val x: Self) extends AnyVal {
     
     inline def setData(value: js.typedarray.ArrayBuffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object PercentPair {
     __obj.asInstanceOf[PercentPair]
   }
   
-  extension [Self <: PercentPair](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PercentPair] (val x: Self) extends AnyVal {
     
     inline def setPercent(value: Percent): Self = StObject.set(x, "percent", value.asInstanceOf[js.Any])
     

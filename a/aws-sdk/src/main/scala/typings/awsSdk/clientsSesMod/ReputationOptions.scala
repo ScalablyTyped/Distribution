@@ -28,7 +28,8 @@ object ReputationOptions {
     __obj.asInstanceOf[ReputationOptions]
   }
   
-  extension [Self <: ReputationOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReputationOptions] (val x: Self) extends AnyVal {
     
     inline def setLastFreshStart(value: js.Date): Self = StObject.set(x, "LastFreshStart", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object ExpectedStatusesObject {
     __obj.asInstanceOf[ExpectedStatusesObject]
   }
   
-  extension [Self <: ExpectedStatusesObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExpectedStatusesObject] (val x: Self) extends AnyVal {
     
     inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     

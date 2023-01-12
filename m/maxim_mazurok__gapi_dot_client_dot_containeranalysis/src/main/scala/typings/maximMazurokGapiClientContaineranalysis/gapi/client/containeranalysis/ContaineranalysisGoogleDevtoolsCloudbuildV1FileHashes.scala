@@ -16,7 +16,8 @@ object ContaineranalysisGoogleDevtoolsCloudbuildV1FileHashes {
     __obj.asInstanceOf[ContaineranalysisGoogleDevtoolsCloudbuildV1FileHashes]
   }
   
-  extension [Self <: ContaineranalysisGoogleDevtoolsCloudbuildV1FileHashes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContaineranalysisGoogleDevtoolsCloudbuildV1FileHashes] (val x: Self) extends AnyVal {
     
     inline def setFileHash(value: js.Array[ContaineranalysisGoogleDevtoolsCloudbuildV1Hash]): Self = StObject.set(x, "fileHash", value.asInstanceOf[js.Any])
     

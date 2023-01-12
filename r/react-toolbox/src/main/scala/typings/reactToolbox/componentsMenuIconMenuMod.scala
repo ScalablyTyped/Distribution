@@ -121,7 +121,8 @@ object componentsMenuIconMenuMod {
       __obj.asInstanceOf[IconMenuProps]
     }
     
-    extension [Self <: IconMenuProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IconMenuProps] (val x: Self) extends AnyVal {
       
       inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
@@ -196,7 +197,8 @@ object componentsMenuIconMenuMod {
       __obj.asInstanceOf[IconMenuTheme]
     }
     
-    extension [Self <: IconMenuTheme](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IconMenuTheme] (val x: Self) extends AnyVal {
       
       inline def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
       

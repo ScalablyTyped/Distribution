@@ -29,7 +29,8 @@ object TaskAgentPoolReference {
     __obj.asInstanceOf[TaskAgentPoolReference]
   }
   
-  extension [Self <: TaskAgentPoolReference](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TaskAgentPoolReference] (val x: Self) extends AnyVal {
     
     inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

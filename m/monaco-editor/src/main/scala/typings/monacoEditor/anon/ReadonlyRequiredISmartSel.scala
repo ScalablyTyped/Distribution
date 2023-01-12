@@ -16,7 +16,8 @@ object ReadonlyRequiredISmartSel {
     __obj.asInstanceOf[ReadonlyRequiredISmartSel]
   }
   
-  extension [Self <: ReadonlyRequiredISmartSel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadonlyRequiredISmartSel] (val x: Self) extends AnyVal {
     
     inline def setSelectLeadingAndTrailingWhitespace(value: Boolean): Self = StObject.set(x, "selectLeadingAndTrailingWhitespace", value.asInstanceOf[js.Any])
   }

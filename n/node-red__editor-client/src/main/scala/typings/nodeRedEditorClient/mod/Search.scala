@@ -21,7 +21,8 @@ object Search {
     __obj.asInstanceOf[Search]
   }
   
-  extension [Self <: Search](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Search] (val x: Self) extends AnyVal {
     
     inline def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
     

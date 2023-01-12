@@ -26,7 +26,8 @@ object anon {
       __obj.asInstanceOf[Attachment]
     }
     
-    extension [Self <: Attachment](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Attachment] (val x: Self) extends AnyVal {
       
       inline def setAttachment(value: Attachement): Self = StObject.set(x, "attachment", value.asInstanceOf[js.Any])
       
@@ -53,7 +54,8 @@ object anon {
       __obj.asInstanceOf[Code]
     }
     
-    extension [Self <: Code](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Code] (val x: Self) extends AnyVal {
       
       inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
@@ -75,7 +77,8 @@ object anon {
       __obj.asInstanceOf[Coordinates]
     }
     
-    extension [Self <: Coordinates](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Coordinates] (val x: Self) extends AnyVal {
       
       inline def setCoordinates(value: js.Array[Double]): Self = StObject.set(x, "coordinates", value.asInstanceOf[js.Any])
       
@@ -96,7 +99,8 @@ object anon {
       __obj.asInstanceOf[CoordinatesCoordinates]
     }
     
-    extension [Self <: CoordinatesCoordinates](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CoordinatesCoordinates] (val x: Self) extends AnyVal {
       
       inline def setCoordinates(value: Coordinates): Self = StObject.set(x, "coordinates", value.asInstanceOf[js.Any])
     }
@@ -115,7 +119,8 @@ object anon {
       __obj.asInstanceOf[Id]
     }
     
-    extension [Self <: Id](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Id] (val x: Self) extends AnyVal {
       
       inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -134,7 +139,8 @@ object anon {
       __obj.asInstanceOf[IdString]
     }
     
-    extension [Self <: IdString](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IdString] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     }
@@ -151,7 +157,8 @@ object anon {
       __obj.asInstanceOf[Media]
     }
     
-    extension [Self <: Media](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Media] (val x: Self) extends AnyVal {
       
       inline def setMedia(value: js.Array[MediaEntity]): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])
       
@@ -172,7 +179,8 @@ object anon {
       __obj.asInstanceOf[Messagedata]
     }
     
-    extension [Self <: Messagedata](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Messagedata] (val x: Self) extends AnyVal {
       
       inline def setMessage_data(value: Attachment): Self = StObject.set(x, "message_data", value.asInstanceOf[js.Any])
       
@@ -191,7 +199,8 @@ object anon {
       __obj.asInstanceOf[Recipientid]
     }
     
-    extension [Self <: Recipientid](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Recipientid] (val x: Self) extends AnyVal {
       
       inline def setRecipient_id(value: String): Self = StObject.set(x, "recipient_id", value.asInstanceOf[js.Any])
     }
@@ -211,7 +220,8 @@ object anon {
       __obj.asInstanceOf[Sharedcoordinate]
     }
     
-    extension [Self <: Sharedcoordinate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Sharedcoordinate] (val x: Self) extends AnyVal {
       
       inline def setShared_coordinate(value: CoordinatesCoordinates): Self = StObject.set(x, "shared_coordinate", value.asInstanceOf[js.Any])
       
@@ -230,7 +240,8 @@ object anon {
       __obj.asInstanceOf[Text]
     }
     
-    extension [Self <: Text](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Text] (val x: Self) extends AnyVal {
       
       inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       

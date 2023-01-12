@@ -33,7 +33,8 @@ object AdInstance {
     __obj.asInstanceOf[AdInstance]
   }
   
-  extension [Self <: AdInstance](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AdInstance] (val x: Self) extends AnyVal {
     
     inline def setInstance(value: Any): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
     

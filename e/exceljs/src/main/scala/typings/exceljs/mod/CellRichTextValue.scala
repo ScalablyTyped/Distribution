@@ -17,7 +17,8 @@ object CellRichTextValue {
     __obj.asInstanceOf[CellRichTextValue]
   }
   
-  extension [Self <: CellRichTextValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CellRichTextValue] (val x: Self) extends AnyVal {
     
     inline def setRichText(value: js.Array[RichText]): Self = StObject.set(x, "richText", value.asInstanceOf[js.Any])
     

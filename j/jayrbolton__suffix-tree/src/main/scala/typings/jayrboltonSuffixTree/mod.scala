@@ -45,7 +45,8 @@ object mod {
       __obj.asInstanceOf[SNode]
     }
     
-    extension [Self <: SNode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SNode] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: StringDictionary[SNode]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -94,7 +95,8 @@ object mod {
       __obj.asInstanceOf[STree]
     }
     
-    extension [Self <: STree](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: STree] (val x: Self) extends AnyVal {
       
       inline def setActiveNode(value: SNode): Self = StObject.set(x, "activeNode", value.asInstanceOf[js.Any])
       

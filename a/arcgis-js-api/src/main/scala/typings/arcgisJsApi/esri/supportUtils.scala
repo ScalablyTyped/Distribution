@@ -43,7 +43,8 @@ object supportUtils {
     __obj.asInstanceOf[supportUtils]
   }
   
-  extension [Self <: supportUtils](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: supportUtils] (val x: Self) extends AnyVal {
     
     inline def setFormatDateLabel(value: Double => String): Self = StObject.set(x, "formatDateLabel", js.Any.fromFunction1(value))
     

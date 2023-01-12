@@ -22,7 +22,8 @@ object libIssueIssueOptionsMod {
       __obj.asInstanceOf[IssueOptions]
     }
     
-    extension [Self <: IssueOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IssueOptions] (val x: Self) extends AnyVal {
       
       inline def setExclude(value: IssuePredicateOption): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
       

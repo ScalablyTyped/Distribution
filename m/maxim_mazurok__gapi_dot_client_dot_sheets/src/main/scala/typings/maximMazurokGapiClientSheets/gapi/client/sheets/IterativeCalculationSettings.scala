@@ -19,7 +19,8 @@ object IterativeCalculationSettings {
     __obj.asInstanceOf[IterativeCalculationSettings]
   }
   
-  extension [Self <: IterativeCalculationSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IterativeCalculationSettings] (val x: Self) extends AnyVal {
     
     inline def setConvergenceThreshold(value: Double): Self = StObject.set(x, "convergenceThreshold", value.asInstanceOf[js.Any])
     

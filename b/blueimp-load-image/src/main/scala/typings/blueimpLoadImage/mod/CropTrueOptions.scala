@@ -22,7 +22,8 @@ object CropTrueOptions {
     __obj.asInstanceOf[CropTrueOptions]
   }
   
-  extension [Self <: CropTrueOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CropTrueOptions] (val x: Self) extends AnyVal {
     
     inline def setAspectRatio(value: AspectRatio): Self = StObject.set(x, "aspectRatio", value.asInstanceOf[js.Any])
     

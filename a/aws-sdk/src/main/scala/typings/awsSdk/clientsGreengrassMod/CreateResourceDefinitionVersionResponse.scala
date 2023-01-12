@@ -33,7 +33,8 @@ object CreateResourceDefinitionVersionResponse {
     __obj.asInstanceOf[CreateResourceDefinitionVersionResponse]
   }
   
-  extension [Self <: CreateResourceDefinitionVersionResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateResourceDefinitionVersionResponse] (val x: Self) extends AnyVal {
     
     inline def setArn(value: string): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     

@@ -24,7 +24,8 @@ object NonTextNode {
     __obj.asInstanceOf[NonTextNode]
   }
   
-  extension [Self <: NonTextNode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NonTextNode] (val x: Self) extends AnyVal {
     
     inline def set_attrs(value: ContentType): Self = StObject.set(x, "_attrs", value.asInstanceOf[js.Any])
     

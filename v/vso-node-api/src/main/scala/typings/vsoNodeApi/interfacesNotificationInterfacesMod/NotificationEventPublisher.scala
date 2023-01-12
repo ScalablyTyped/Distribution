@@ -19,7 +19,8 @@ object NotificationEventPublisher {
     __obj.asInstanceOf[NotificationEventPublisher]
   }
   
-  extension [Self <: NotificationEventPublisher](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NotificationEventPublisher] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

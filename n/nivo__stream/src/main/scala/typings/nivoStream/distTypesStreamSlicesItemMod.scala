@@ -31,7 +31,8 @@ object distTypesStreamSlicesItemMod {
       __obj.asInstanceOf[StreamSlicesItemProps[RawDatum]]
     }
     
-    extension [Self <: StreamSlicesItemProps[?], RawDatum /* <: StreamDatum */](x: Self & StreamSlicesItemProps[RawDatum]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StreamSlicesItemProps[?], RawDatum /* <: StreamDatum */] (val x: Self & StreamSlicesItemProps[RawDatum]) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       

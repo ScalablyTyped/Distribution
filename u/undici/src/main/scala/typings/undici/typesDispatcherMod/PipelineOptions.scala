@@ -18,7 +18,8 @@ object PipelineOptions {
     __obj.asInstanceOf[PipelineOptions]
   }
   
-  extension [Self <: PipelineOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PipelineOptions] (val x: Self) extends AnyVal {
     
     inline def setObjectMode(value: Boolean): Self = StObject.set(x, "objectMode", value.asInstanceOf[js.Any])
     

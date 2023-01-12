@@ -147,7 +147,8 @@ object inputswitchInputswitchMod {
       __obj.asInstanceOf[InputSwitchChangeParams]
     }
     
-    extension [Self <: InputSwitchChangeParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InputSwitchChangeParams] (val x: Self) extends AnyVal {
       
       inline def setOriginalEvent(value: SyntheticEvent[Element, Event]): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
       
@@ -176,7 +177,8 @@ object inputswitchInputswitchMod {
       __obj.asInstanceOf[InputSwitchChangeTargetOptions]
     }
     
-    extension [Self <: InputSwitchChangeTargetOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InputSwitchChangeTargetOptions] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -626,7 +628,8 @@ object inputswitchInputswitchMod {
       __obj.asInstanceOf[InputSwitchProps]
     }
     
-    extension [Self <: InputSwitchProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InputSwitchProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       

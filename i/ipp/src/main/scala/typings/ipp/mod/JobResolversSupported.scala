@@ -15,7 +15,8 @@ object JobResolversSupported {
     __obj.asInstanceOf[JobResolversSupported]
   }
   
-  extension [Self <: JobResolversSupported](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JobResolversSupported] (val x: Self) extends AnyVal {
     
     inline def `setResolver-name`(value: String): Self = StObject.set(x, "resolver-name", value.asInstanceOf[js.Any])
     

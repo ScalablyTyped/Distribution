@@ -41,7 +41,8 @@ object ValueSetCodeSystem {
     __obj.asInstanceOf[ValueSetCodeSystem]
   }
   
-  extension [Self <: ValueSetCodeSystem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ValueSetCodeSystem] (val x: Self) extends AnyVal {
     
     inline def setCaseSensitive(value: Boolean): Self = StObject.set(x, "caseSensitive", value.asInstanceOf[js.Any])
     

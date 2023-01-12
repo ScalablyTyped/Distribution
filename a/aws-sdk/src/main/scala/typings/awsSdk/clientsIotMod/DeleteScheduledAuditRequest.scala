@@ -18,7 +18,8 @@ object DeleteScheduledAuditRequest {
     __obj.asInstanceOf[DeleteScheduledAuditRequest]
   }
   
-  extension [Self <: DeleteScheduledAuditRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteScheduledAuditRequest] (val x: Self) extends AnyVal {
     
     inline def setScheduledAuditName(value: ScheduledAuditName): Self = StObject.set(x, "scheduledAuditName", value.asInstanceOf[js.Any])
   }

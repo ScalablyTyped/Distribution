@@ -29,7 +29,8 @@ object FailureDetails {
     __obj.asInstanceOf[FailureDetails]
   }
   
-  extension [Self <: FailureDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FailureDetails] (val x: Self) extends AnyVal {
     
     inline def setExternalExecutionId(value: ExecutionId): Self = StObject.set(x, "externalExecutionId", value.asInstanceOf[js.Any])
     

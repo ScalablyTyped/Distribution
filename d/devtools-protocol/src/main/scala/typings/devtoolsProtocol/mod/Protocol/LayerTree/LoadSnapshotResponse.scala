@@ -18,7 +18,8 @@ object LoadSnapshotResponse {
     __obj.asInstanceOf[LoadSnapshotResponse]
   }
   
-  extension [Self <: LoadSnapshotResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LoadSnapshotResponse] (val x: Self) extends AnyVal {
     
     inline def setSnapshotId(value: SnapshotId): Self = StObject.set(x, "snapshotId", value.asInstanceOf[js.Any])
   }

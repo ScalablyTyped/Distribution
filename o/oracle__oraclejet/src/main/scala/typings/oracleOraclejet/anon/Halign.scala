@@ -37,7 +37,8 @@ object Halign {
     __obj.asInstanceOf[Halign]
   }
   
-  extension [Self <: Halign](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Halign] (val x: Self) extends AnyVal {
     
     inline def setHalign(value: start | end | center): Self = StObject.set(x, "halign", value.asInstanceOf[js.Any])
     

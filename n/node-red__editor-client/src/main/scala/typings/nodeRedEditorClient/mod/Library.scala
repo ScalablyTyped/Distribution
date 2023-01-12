@@ -33,7 +33,8 @@ object Library {
     __obj.asInstanceOf[Library]
   }
   
-  extension [Self <: Library](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Library] (val x: Self) extends AnyVal {
     
     inline def setCreate(value: typings.nodeRedEditorClient.anon.Editor => Unit): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
     

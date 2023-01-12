@@ -72,7 +72,8 @@ object srcPaymentsMod {
       __obj.asInstanceOf[Payment]
     }
     
-    extension [Self <: Payment](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Payment] (val x: Self) extends AnyVal {
       
       inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
@@ -161,7 +162,8 @@ object srcPaymentsMod {
       __obj.asInstanceOf[PaymentOpts]
     }
     
-    extension [Self <: PaymentOpts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PaymentOpts] (val x: Self) extends AnyVal {
       
       inline def setAllowIncomplete(value: Boolean): Self = StObject.set(x, "allowIncomplete", value.asInstanceOf[js.Any])
       

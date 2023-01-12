@@ -18,7 +18,8 @@ object GetTableVersionResponse {
     __obj.asInstanceOf[GetTableVersionResponse]
   }
   
-  extension [Self <: GetTableVersionResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetTableVersionResponse] (val x: Self) extends AnyVal {
     
     inline def setTableVersion(value: TableVersion): Self = StObject.set(x, "TableVersion", value.asInstanceOf[js.Any])
     

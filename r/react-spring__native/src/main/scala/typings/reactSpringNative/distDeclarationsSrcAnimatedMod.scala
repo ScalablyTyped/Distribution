@@ -70,7 +70,8 @@ object distDeclarationsSrcAnimatedMod {
       __obj.asInstanceOf[AnimatedPrimitives]
     }
     
-    extension [Self <: AnimatedPrimitives](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AnimatedPrimitives] (val x: Self) extends AnyVal {
       
       inline def setImage(value: AnimatedComponent[ComponentClass[ImageProps, Any]]): Self = StObject.set(x, "Image", value.asInstanceOf[js.Any])
       
@@ -141,7 +142,8 @@ object distDeclarationsSrcAnimatedMod {
       __obj.asInstanceOf[Primitives]
     }
     
-    extension [Self <: Primitives](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Primitives] (val x: Self) extends AnyVal {
       
       inline def setImage(value: ComponentClass[ImageProps, Any]): Self = StObject.set(x, "Image", value.asInstanceOf[js.Any])
       

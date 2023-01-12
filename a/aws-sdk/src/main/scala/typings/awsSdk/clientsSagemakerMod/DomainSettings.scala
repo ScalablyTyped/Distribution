@@ -28,7 +28,8 @@ object DomainSettings {
     __obj.asInstanceOf[DomainSettings]
   }
   
-  extension [Self <: DomainSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DomainSettings] (val x: Self) extends AnyVal {
     
     inline def setExecutionRoleIdentityConfig(value: ExecutionRoleIdentityConfig): Self = StObject.set(x, "ExecutionRoleIdentityConfig", value.asInstanceOf[js.Any])
     

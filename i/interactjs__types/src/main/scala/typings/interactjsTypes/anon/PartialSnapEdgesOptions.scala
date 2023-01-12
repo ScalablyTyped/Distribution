@@ -31,7 +31,8 @@ object PartialSnapEdgesOptions {
     __obj.asInstanceOf[PartialSnapEdgesOptions]
   }
   
-  extension [Self <: PartialSnapEdgesOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialSnapEdgesOptions] (val x: Self) extends AnyVal {
     
     inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     

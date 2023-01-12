@@ -23,7 +23,8 @@ object ConnectionError {
     __obj.asInstanceOf[ConnectionError]
   }
   
-  extension [Self <: ConnectionError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConnectionError] (val x: Self) extends AnyVal {
     
     inline def setBytesParsed(value: Double): Self = StObject.set(x, "bytesParsed", value.asInstanceOf[js.Any])
     

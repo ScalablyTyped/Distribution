@@ -43,7 +43,8 @@ object GetDestinationResponse {
     __obj.asInstanceOf[GetDestinationResponse]
   }
   
-  extension [Self <: GetDestinationResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetDestinationResponse] (val x: Self) extends AnyVal {
     
     inline def setArn(value: DestinationArn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     

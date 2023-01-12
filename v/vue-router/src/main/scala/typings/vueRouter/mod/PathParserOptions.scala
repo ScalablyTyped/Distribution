@@ -20,7 +20,8 @@ object PathParserOptions {
     __obj.asInstanceOf[PathParserOptions]
   }
   
-  extension [Self <: PathParserOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PathParserOptions] (val x: Self) extends AnyVal {
     
     inline def setEnd(value: Boolean): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     

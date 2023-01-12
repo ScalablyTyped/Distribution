@@ -22,7 +22,8 @@ object BillingRateTieredRate {
     __obj.asInstanceOf[BillingRateTieredRate]
   }
   
-  extension [Self <: BillingRateTieredRate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BillingRateTieredRate] (val x: Self) extends AnyVal {
     
     inline def setHighValue(value: String): Self = StObject.set(x, "highValue", value.asInstanceOf[js.Any])
     

@@ -58,7 +58,8 @@ object ConfirmForgotPasswordRequest {
     __obj.asInstanceOf[ConfirmForgotPasswordRequest]
   }
   
-  extension [Self <: ConfirmForgotPasswordRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConfirmForgotPasswordRequest] (val x: Self) extends AnyVal {
     
     inline def setAnalyticsMetadata(value: AnalyticsMetadataType): Self = StObject.set(x, "AnalyticsMetadata", value.asInstanceOf[js.Any])
     

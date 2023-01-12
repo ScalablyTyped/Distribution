@@ -71,7 +71,8 @@ object utilControlFlowMod {
       __obj.asInstanceOf[ControlFlowEnd]
     }
     
-    extension [Self <: ControlFlowEnd](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ControlFlowEnd] (val x: Self) extends AnyVal {
       
       inline def setEnd(value: Boolean): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       

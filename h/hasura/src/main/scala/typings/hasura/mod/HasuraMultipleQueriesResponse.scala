@@ -18,7 +18,8 @@ object HasuraMultipleQueriesResponse {
     __obj.asInstanceOf[HasuraMultipleQueriesResponse[T]]
   }
   
-  extension [Self <: HasuraMultipleQueriesResponse[?], T /* <: Record[String, Any] */](x: Self & HasuraMultipleQueriesResponse[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HasuraMultipleQueriesResponse[?], T /* <: Record[String, Any] */] (val x: Self & HasuraMultipleQueriesResponse[T]) extends AnyVal {
     
     inline def setData(
       value: /* import warning: importer.ImportType#apply Failed type conversion: {[ key in keyof T ]: hasura.hasura.Equals<T[key], hasura.hasura.Aggregate<T[key]>> extends true? hasura.hasura.HasuraAggregateResult<T[key]> : std.Array<T[key]>} */ js.Any

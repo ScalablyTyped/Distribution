@@ -18,7 +18,8 @@ object DeleteAlgorithmInput {
     __obj.asInstanceOf[DeleteAlgorithmInput]
   }
   
-  extension [Self <: DeleteAlgorithmInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteAlgorithmInput] (val x: Self) extends AnyVal {
     
     inline def setAlgorithmName(value: EntityName): Self = StObject.set(x, "AlgorithmName", value.asInstanceOf[js.Any])
   }

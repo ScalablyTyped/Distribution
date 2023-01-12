@@ -23,7 +23,8 @@ object JobCounts {
     __obj.asInstanceOf[JobCounts]
   }
   
-  extension [Self <: JobCounts](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JobCounts] (val x: Self) extends AnyVal {
     
     inline def setActive(value: Double): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     

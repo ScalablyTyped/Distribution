@@ -588,7 +588,8 @@ object Active01 {
     __obj.asInstanceOf[Active01]
   }
   
-  extension [Self <: Active01](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Active01] (val x: Self) extends AnyVal {
     
     inline def setActive01(value: Numbersignc6c6c6): Self = StObject.set(x, "active01", value.asInstanceOf[js.Any])
     

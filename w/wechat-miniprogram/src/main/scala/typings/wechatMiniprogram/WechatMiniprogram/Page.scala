@@ -37,7 +37,8 @@ object Page {
       __obj.asInstanceOf[Data[D]]
     }
     
-    extension [Self <: Data[?], D /* <: DataOption */](x: Self & Data[D]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Data[?], D /* <: DataOption */] (val x: Self & Data[D]) extends AnyVal {
       
       inline def setData(value: D): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     }
@@ -65,7 +66,8 @@ object Page {
       __obj.asInstanceOf[IAddToFavoritesContent]
     }
     
-    extension [Self <: IAddToFavoritesContent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IAddToFavoritesContent] (val x: Self) extends AnyVal {
       
       inline def setImageUrl(value: String): Self = StObject.set(x, "imageUrl", value.asInstanceOf[js.Any])
       
@@ -93,7 +95,8 @@ object Page {
       __obj.asInstanceOf[IAddToFavoritesOption]
     }
     
-    extension [Self <: IAddToFavoritesOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IAddToFavoritesOption] (val x: Self) extends AnyVal {
       
       inline def setWebviewUrl(value: String): Self = StObject.set(x, "webviewUrl", value.asInstanceOf[js.Any])
       
@@ -119,7 +122,8 @@ object Page {
       __obj.asInstanceOf[ICustomShareContent]
     }
     
-    extension [Self <: ICustomShareContent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICustomShareContent] (val x: Self) extends AnyVal {
       
       inline def setImageUrl(value: String): Self = StObject.set(x, "imageUrl", value.asInstanceOf[js.Any])
       
@@ -153,7 +157,8 @@ object Page {
       __obj.asInstanceOf[ICustomTimelineContent]
     }
     
-    extension [Self <: ICustomTimelineContent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICustomTimelineContent] (val x: Self) extends AnyVal {
       
       inline def setImageUrl(value: String): Self = StObject.set(x, "imageUrl", value.asInstanceOf[js.Any])
       
@@ -283,7 +288,8 @@ object Page {
       __obj.asInstanceOf[ILifetime]
     }
     
-    extension [Self <: ILifetime](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ILifetime] (val x: Self) extends AnyVal {
       
       inline def setOnAddToFavorites(value: IAddToFavoritesOption => IAddToFavoritesContent): Self = StObject.set(x, "onAddToFavorites", js.Any.fromFunction1(value))
       
@@ -325,7 +331,8 @@ object Page {
       __obj.asInstanceOf[IPageScrollOption]
     }
     
-    extension [Self <: IPageScrollOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPageScrollOption] (val x: Self) extends AnyVal {
       
       inline def setScrollTop(value: Double): Self = StObject.set(x, "scrollTop", value.asInstanceOf[js.Any])
     }
@@ -342,7 +349,8 @@ object Page {
       __obj.asInstanceOf[IResizeOption]
     }
     
-    extension [Self <: IResizeOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IResizeOption] (val x: Self) extends AnyVal {
       
       inline def setSize(value: WindowHeight): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     }
@@ -378,7 +386,8 @@ object Page {
       __obj.asInstanceOf[IShareAppMessageOption]
     }
     
-    extension [Self <: IShareAppMessageOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IShareAppMessageOption] (val x: Self) extends AnyVal {
       
       inline def setFrom(value: button | menu | String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       
@@ -408,7 +417,8 @@ object Page {
       __obj.asInstanceOf[ITabItemTapOption]
     }
     
-    extension [Self <: ITabItemTapOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITabItemTapOption] (val x: Self) extends AnyVal {
       
       inline def setIndex(value: String): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
@@ -440,7 +450,8 @@ object Page {
       __obj.asInstanceOf[InstanceProperties]
     }
     
-    extension [Self <: InstanceProperties](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InstanceProperties] (val x: Self) extends AnyVal {
       
       inline def setIs(value: String): Self = StObject.set(x, "is", value.asInstanceOf[js.Any])
       

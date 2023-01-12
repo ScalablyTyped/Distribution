@@ -67,7 +67,8 @@ object AnimationSpecdoughnutonPr {
     __obj.asInstanceOf[AnimationSpecdoughnutonPr]
   }
   
-  extension [Self <: AnimationSpecdoughnutonPr](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnimationSpecdoughnutonPr] (val x: Self) extends AnyVal {
     
     inline def setDelay(value: Scriptable[Double, ScriptableContext[doughnut]]): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
     

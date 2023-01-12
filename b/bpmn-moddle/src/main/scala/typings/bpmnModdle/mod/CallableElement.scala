@@ -31,7 +31,8 @@ object CallableElement {
     __obj.asInstanceOf[CallableElement]
   }
   
-  extension [Self <: CallableElement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CallableElement] (val x: Self) extends AnyVal {
     
     inline def setIoBinding(value: InputOutputBinding): Self = StObject.set(x, "ioBinding", value.asInstanceOf[js.Any])
     

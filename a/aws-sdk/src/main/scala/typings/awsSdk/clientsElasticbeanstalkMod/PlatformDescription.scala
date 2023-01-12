@@ -118,7 +118,8 @@ object PlatformDescription {
     __obj.asInstanceOf[PlatformDescription]
   }
   
-  extension [Self <: PlatformDescription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlatformDescription] (val x: Self) extends AnyVal {
     
     inline def setCustomAmiList(value: CustomAmiList): Self = StObject.set(x, "CustomAmiList", value.asInstanceOf[js.Any])
     

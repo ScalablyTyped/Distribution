@@ -15,7 +15,8 @@ object GoogleOAuth2Client {
     __obj.asInstanceOf[GoogleOAuth2Client]
   }
   
-  extension [Self <: GoogleOAuth2Client](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleOAuth2Client] (val x: Self) extends AnyVal {
     
     inline def setGetRequestMetadata(value: (String, js.Function2[/* err */ js.Error, /* headers */ Any, Unit]) => Unit): Self = StObject.set(x, "getRequestMetadata", js.Any.fromFunction2(value))
   }

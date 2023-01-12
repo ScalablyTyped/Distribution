@@ -18,7 +18,8 @@ object BasicReporterOptions {
     __obj.asInstanceOf[BasicReporterOptions]
   }
   
-  extension [Self <: BasicReporterOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BasicReporterOptions] (val x: Self) extends AnyVal {
     
     inline def setDateFormat(value: String): Self = StObject.set(x, "dateFormat", value.asInstanceOf[js.Any])
     

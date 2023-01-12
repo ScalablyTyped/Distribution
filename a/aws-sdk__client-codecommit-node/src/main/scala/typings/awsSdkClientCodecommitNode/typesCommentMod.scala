@@ -55,7 +55,8 @@ object typesCommentMod {
       __obj.asInstanceOf[Comment]
     }
     
-    extension [Self <: Comment](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Comment] (val x: Self) extends AnyVal {
       
       inline def setAuthorArn(value: String): Self = StObject.set(x, "authorArn", value.asInstanceOf[js.Any])
       
@@ -114,7 +115,8 @@ object typesCommentMod {
       __obj.asInstanceOf[UnmarshalledComment]
     }
     
-    extension [Self <: UnmarshalledComment](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnmarshalledComment] (val x: Self) extends AnyVal {
       
       inline def setCreationDate(value: js.Date): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
       

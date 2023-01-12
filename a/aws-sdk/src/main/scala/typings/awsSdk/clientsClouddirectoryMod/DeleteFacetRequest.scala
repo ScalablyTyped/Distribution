@@ -23,7 +23,8 @@ object DeleteFacetRequest {
     __obj.asInstanceOf[DeleteFacetRequest]
   }
   
-  extension [Self <: DeleteFacetRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteFacetRequest] (val x: Self) extends AnyVal {
     
     inline def setName(value: FacetName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     

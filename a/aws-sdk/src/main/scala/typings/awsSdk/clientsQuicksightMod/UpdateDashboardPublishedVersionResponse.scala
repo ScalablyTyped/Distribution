@@ -33,7 +33,8 @@ object UpdateDashboardPublishedVersionResponse {
     __obj.asInstanceOf[UpdateDashboardPublishedVersionResponse]
   }
   
-  extension [Self <: UpdateDashboardPublishedVersionResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateDashboardPublishedVersionResponse] (val x: Self) extends AnyVal {
     
     inline def setDashboardArn(value: Arn): Self = StObject.set(x, "DashboardArn", value.asInstanceOf[js.Any])
     

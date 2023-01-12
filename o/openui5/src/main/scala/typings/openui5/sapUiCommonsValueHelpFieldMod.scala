@@ -345,7 +345,8 @@ object sapUiCommonsValueHelpFieldMod {
       __obj.asInstanceOf[ValueHelpFieldSettings]
     }
     
-    extension [Self <: ValueHelpFieldSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ValueHelpFieldSettings] (val x: Self) extends AnyVal {
       
       inline def setIconDisabledURL(value: URI | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "iconDisabledURL", value.asInstanceOf[js.Any])
       

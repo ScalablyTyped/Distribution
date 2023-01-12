@@ -28,7 +28,8 @@ object HostedZoneSummary {
     __obj.asInstanceOf[HostedZoneSummary]
   }
   
-  extension [Self <: HostedZoneSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HostedZoneSummary] (val x: Self) extends AnyVal {
     
     inline def setHostedZoneId(value: ResourceId): Self = StObject.set(x, "HostedZoneId", value.asInstanceOf[js.Any])
     

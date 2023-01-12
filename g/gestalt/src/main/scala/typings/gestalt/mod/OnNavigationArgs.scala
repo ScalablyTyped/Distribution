@@ -19,7 +19,8 @@ object OnNavigationArgs {
     __obj.asInstanceOf[OnNavigationArgs]
   }
   
-  extension [Self <: OnNavigationArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnNavigationArgs] (val x: Self) extends AnyVal {
     
     inline def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
     

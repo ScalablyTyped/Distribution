@@ -61,7 +61,8 @@ object blake2Mod {
       __obj.asInstanceOf[BlakeOpts]
     }
     
-    extension [Self <: BlakeOpts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BlakeOpts] (val x: Self) extends AnyVal {
       
       inline def setDkLen(value: Double): Self = StObject.set(x, "dkLen", value.asInstanceOf[js.Any])
       

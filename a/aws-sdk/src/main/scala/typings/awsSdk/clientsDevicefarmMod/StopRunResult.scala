@@ -18,7 +18,8 @@ object StopRunResult {
     __obj.asInstanceOf[StopRunResult]
   }
   
-  extension [Self <: StopRunResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StopRunResult] (val x: Self) extends AnyVal {
     
     inline def setRun(value: Run): Self = StObject.set(x, "run", value.asInstanceOf[js.Any])
     

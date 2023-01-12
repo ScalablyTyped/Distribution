@@ -25,7 +25,8 @@ object BackEase {
     __obj.asInstanceOf[BackEase]
   }
   
-  extension [Self <: BackEase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BackEase] (val x: Self) extends AnyVal {
     
     inline def setAmplitude(value: Double): Self = StObject.set(x, "amplitude", value.asInstanceOf[js.Any])
   }

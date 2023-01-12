@@ -20,7 +20,8 @@ object IsCoordinate {
     __obj.asInstanceOf[IsCoordinate]
   }
   
-  extension [Self <: IsCoordinate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IsCoordinate] (val x: Self) extends AnyVal {
     
     inline def setIsCoordinate(value: String => Boolean): Self = StObject.set(x, "isCoordinate", js.Any.fromFunction1(value))
     

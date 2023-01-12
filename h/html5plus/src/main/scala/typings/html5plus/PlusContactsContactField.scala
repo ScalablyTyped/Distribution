@@ -40,7 +40,8 @@ object PlusContactsContactField {
     __obj.asInstanceOf[PlusContactsContactField]
   }
   
-  extension [Self <: PlusContactsContactField](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlusContactsContactField] (val x: Self) extends AnyVal {
     
     inline def setPreferred(value: Boolean): Self = StObject.set(x, "preferred", value.asInstanceOf[js.Any])
     

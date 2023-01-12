@@ -23,7 +23,8 @@ object ComponentPropsOptionsArrayValue {
     __obj.asInstanceOf[ComponentPropsOptionsArrayValue]
   }
   
-  extension [Self <: ComponentPropsOptionsArrayValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ComponentPropsOptionsArrayValue] (val x: Self) extends AnyVal {
     
     inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     

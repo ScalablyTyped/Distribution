@@ -28,7 +28,8 @@ object CircuitBreakers {
     __obj.asInstanceOf[CircuitBreakers]
   }
   
-  extension [Self <: CircuitBreakers](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CircuitBreakers] (val x: Self) extends AnyVal {
     
     inline def setMaxConnections(value: Double): Self = StObject.set(x, "maxConnections", value.asInstanceOf[js.Any])
     

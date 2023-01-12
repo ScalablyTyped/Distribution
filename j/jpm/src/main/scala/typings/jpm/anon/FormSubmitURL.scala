@@ -33,7 +33,8 @@ object FormSubmitURL {
     __obj.asInstanceOf[FormSubmitURL]
   }
   
-  extension [Self <: FormSubmitURL](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FormSubmitURL] (val x: Self) extends AnyVal {
     
     inline def setFormSubmitURL(value: String): Self = StObject.set(x, "formSubmitURL", value.asInstanceOf[js.Any])
     

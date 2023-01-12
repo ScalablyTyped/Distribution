@@ -135,7 +135,8 @@ object DescribeModelPackageOutput {
     __obj.asInstanceOf[DescribeModelPackageOutput]
   }
   
-  extension [Self <: DescribeModelPackageOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeModelPackageOutput] (val x: Self) extends AnyVal {
     
     inline def setAdditionalInferenceSpecifications(value: AdditionalInferenceSpecifications): Self = StObject.set(x, "AdditionalInferenceSpecifications", value.asInstanceOf[js.Any])
     

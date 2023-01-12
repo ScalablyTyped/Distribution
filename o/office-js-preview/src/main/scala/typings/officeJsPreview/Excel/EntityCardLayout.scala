@@ -30,7 +30,8 @@ object EntityCardLayout {
     __obj.asInstanceOf[EntityCardLayout]
   }
   
-  extension [Self <: EntityCardLayout](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EntityCardLayout] (val x: Self) extends AnyVal {
     
     inline def setLayout(value: Entity): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
     

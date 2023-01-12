@@ -28,7 +28,8 @@ object DeleteResolverRequest {
     __obj.asInstanceOf[DeleteResolverRequest]
   }
   
-  extension [Self <: DeleteResolverRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteResolverRequest] (val x: Self) extends AnyVal {
     
     inline def setApiId(value: String): Self = StObject.set(x, "apiId", value.asInstanceOf[js.Any])
     

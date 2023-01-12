@@ -17,7 +17,8 @@ object ConditionalEventDefinition {
     __obj.asInstanceOf[ConditionalEventDefinition]
   }
   
-  extension [Self <: ConditionalEventDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConditionalEventDefinition] (val x: Self) extends AnyVal {
     
     inline def setCondition(value: Expression): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
   }

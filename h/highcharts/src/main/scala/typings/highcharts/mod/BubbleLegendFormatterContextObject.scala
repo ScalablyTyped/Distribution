@@ -28,7 +28,8 @@ object BubbleLegendFormatterContextObject {
     __obj.asInstanceOf[BubbleLegendFormatterContextObject]
   }
   
-  extension [Self <: BubbleLegendFormatterContextObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BubbleLegendFormatterContextObject] (val x: Self) extends AnyVal {
     
     inline def setCenter(value: Double): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
     

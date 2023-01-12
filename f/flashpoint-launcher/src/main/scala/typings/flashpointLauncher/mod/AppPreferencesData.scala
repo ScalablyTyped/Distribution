@@ -199,7 +199,8 @@ object AppPreferencesData {
     __obj.asInstanceOf[AppPreferencesData]
   }
   
-  extension [Self <: AppPreferencesData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppPreferencesData] (val x: Self) extends AnyVal {
     
     inline def setAppPathOverrides(value: js.Array[AppPathOverride]): Self = StObject.set(x, "appPathOverrides", value.asInstanceOf[js.Any])
     

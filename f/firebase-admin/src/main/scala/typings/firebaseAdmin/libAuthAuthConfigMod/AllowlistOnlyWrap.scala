@@ -24,7 +24,8 @@ object AllowlistOnlyWrap {
     __obj.asInstanceOf[AllowlistOnlyWrap]
   }
   
-  extension [Self <: AllowlistOnlyWrap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AllowlistOnlyWrap] (val x: Self) extends AnyVal {
     
     inline def setAllowlistOnly(value: AllowlistOnly): Self = StObject.set(x, "allowlistOnly", value.asInstanceOf[js.Any])
   }

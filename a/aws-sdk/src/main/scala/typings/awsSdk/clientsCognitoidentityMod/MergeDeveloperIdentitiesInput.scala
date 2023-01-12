@@ -38,7 +38,8 @@ object MergeDeveloperIdentitiesInput {
     __obj.asInstanceOf[MergeDeveloperIdentitiesInput]
   }
   
-  extension [Self <: MergeDeveloperIdentitiesInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MergeDeveloperIdentitiesInput] (val x: Self) extends AnyVal {
     
     inline def setDestinationUserIdentifier(value: DeveloperUserIdentifier): Self = StObject.set(x, "DestinationUserIdentifier", value.asInstanceOf[js.Any])
     

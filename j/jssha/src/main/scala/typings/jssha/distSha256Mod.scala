@@ -344,7 +344,8 @@ object distSha256Mod {
       __obj.asInstanceOf[packedValue]
     }
     
-    extension [Self <: packedValue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: packedValue] (val x: Self) extends AnyVal {
       
       inline def setBinLen(value: Double): Self = StObject.set(x, "binLen", value.asInstanceOf[js.Any])
       

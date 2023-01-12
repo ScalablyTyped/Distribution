@@ -18,7 +18,8 @@ object KeyParseOptions {
     __obj.asInstanceOf[KeyParseOptions]
   }
   
-  extension [Self <: KeyParseOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KeyParseOptions] (val x: Self) extends AnyVal {
     
     inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
     

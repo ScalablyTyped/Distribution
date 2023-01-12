@@ -27,7 +27,8 @@ object BreakStatement_ {
     __obj.asInstanceOf[BreakStatement_]
   }
   
-  extension [Self <: BreakStatement_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BreakStatement_] (val x: Self) extends AnyVal {
     
     inline def setLabel(value: Identifier_): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object Prefix {
     __obj.asInstanceOf[Prefix]
   }
   
-  extension [Self <: Prefix](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Prefix] (val x: Self) extends AnyVal {
     
     inline def setInfix(value: Notation): Self = StObject.set(x, "infix", value.asInstanceOf[js.Any])
     

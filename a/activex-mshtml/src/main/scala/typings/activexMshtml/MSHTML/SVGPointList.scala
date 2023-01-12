@@ -43,7 +43,8 @@ object SVGPointList {
     __obj.asInstanceOf[SVGPointList]
   }
   
-  extension [Self <: SVGPointList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SVGPointList] (val x: Self) extends AnyVal {
     
     inline def setAppendItem(value: SVGPoint => SVGPoint): Self = StObject.set(x, "appendItem", js.Any.fromFunction1(value))
     

@@ -80,7 +80,8 @@ object mod {
       __obj.asInstanceOf[FS]
     }
     
-    extension [Self <: FS](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FS] (val x: Self) extends AnyVal {
       
       inline def setReadFile(value: TypeoffsReadFile): Self = StObject.set(x, "readFile", value.asInstanceOf[js.Any])
       

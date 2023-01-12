@@ -37,7 +37,8 @@ object FileExportConverter {
     __obj.asInstanceOf[FileExportConverter]
   }
   
-  extension [Self <: FileExportConverter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FileExportConverter] (val x: Self) extends AnyVal {
     
     inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     

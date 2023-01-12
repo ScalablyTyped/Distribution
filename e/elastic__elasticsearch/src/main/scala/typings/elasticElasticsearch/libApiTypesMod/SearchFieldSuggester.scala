@@ -25,7 +25,8 @@ object SearchFieldSuggester {
     __obj.asInstanceOf[SearchFieldSuggester]
   }
   
-  extension [Self <: SearchFieldSuggester](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchFieldSuggester] (val x: Self) extends AnyVal {
     
     inline def setCompletion(value: SearchCompletionSuggester): Self = StObject.set(x, "completion", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object libMeetSemilatticeMod {
       __obj.asInstanceOf[MeetSemilattice[A]]
     }
     
-    extension [Self <: MeetSemilattice[?], A](x: Self & MeetSemilattice[A]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MeetSemilattice[?], A] (val x: Self & MeetSemilattice[A]) extends AnyVal {
       
       inline def setMeet(value: (A, A) => A): Self = StObject.set(x, "meet", js.Any.fromFunction2(value))
     }

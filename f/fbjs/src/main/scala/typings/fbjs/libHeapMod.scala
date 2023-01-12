@@ -74,7 +74,8 @@ object libHeapMod {
       __obj.asInstanceOf[Heap]
     }
     
-    extension [Self <: Heap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Heap] (val x: Self) extends AnyVal {
       
       inline def setEmpty(value: () => Boolean): Self = StObject.set(x, "empty", js.Any.fromFunction0(value))
       

@@ -48,7 +48,8 @@ object distTypesScalesOrdinalColorScaleMod {
       __obj.asInstanceOf[OrdinalColorScaleConfigDatumProperty]
     }
     
-    extension [Self <: OrdinalColorScaleConfigDatumProperty](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OrdinalColorScaleConfigDatumProperty] (val x: Self) extends AnyVal {
       
       inline def setDatum(value: String): Self = StObject.set(x, "datum", value.asInstanceOf[js.Any])
     }
@@ -69,7 +70,8 @@ object distTypesScalesOrdinalColorScaleMod {
       __obj.asInstanceOf[OrdinalColorScaleConfigScheme]
     }
     
-    extension [Self <: OrdinalColorScaleConfigScheme](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OrdinalColorScaleConfigScheme] (val x: Self) extends AnyVal {
       
       inline def setScheme(value: ColorSchemeId): Self = StObject.set(x, "scheme", value.asInstanceOf[js.Any])
       

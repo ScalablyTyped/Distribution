@@ -19,7 +19,8 @@ object ResolveMixins {
     __obj.asInstanceOf[ResolveMixins]
   }
   
-  extension [Self <: ResolveMixins](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResolveMixins] (val x: Self) extends AnyVal {
     
     inline def setResolve(value: Resolve): Self = StObject.set(x, "resolve", value.asInstanceOf[js.Any])
     

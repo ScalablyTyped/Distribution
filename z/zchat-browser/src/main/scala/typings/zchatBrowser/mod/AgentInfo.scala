@@ -21,7 +21,8 @@ object AgentInfo {
     __obj.asInstanceOf[AgentInfo]
   }
   
-  extension [Self <: AgentInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AgentInfo] (val x: Self) extends AnyVal {
     
     inline def setAvatar_path(value: String): Self = StObject.set(x, "avatar_path", value.asInstanceOf[js.Any])
     

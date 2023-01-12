@@ -115,7 +115,8 @@ object IUser {
     __obj.asInstanceOf[IUser]
   }
   
-  extension [Self <: IUser](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IUser] (val x: Self) extends AnyVal {
     
     inline def setAddresses(value: Personal): Self = StObject.set(x, "addresses", value.asInstanceOf[js.Any])
     

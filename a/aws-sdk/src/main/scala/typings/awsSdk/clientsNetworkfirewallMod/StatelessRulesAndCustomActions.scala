@@ -23,7 +23,8 @@ object StatelessRulesAndCustomActions {
     __obj.asInstanceOf[StatelessRulesAndCustomActions]
   }
   
-  extension [Self <: StatelessRulesAndCustomActions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StatelessRulesAndCustomActions] (val x: Self) extends AnyVal {
     
     inline def setCustomActions(value: CustomActions): Self = StObject.set(x, "CustomActions", value.asInstanceOf[js.Any])
     

@@ -48,7 +48,8 @@ object UpdateDiscovererResponse {
     __obj.asInstanceOf[UpdateDiscovererResponse]
   }
   
-  extension [Self <: UpdateDiscovererResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateDiscovererResponse] (val x: Self) extends AnyVal {
     
     inline def setCrossAccount(value: boolean): Self = StObject.set(x, "CrossAccount", value.asInstanceOf[js.Any])
     

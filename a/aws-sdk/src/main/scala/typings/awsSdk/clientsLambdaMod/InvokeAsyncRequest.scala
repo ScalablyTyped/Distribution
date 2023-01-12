@@ -23,7 +23,8 @@ object InvokeAsyncRequest {
     __obj.asInstanceOf[InvokeAsyncRequest]
   }
   
-  extension [Self <: InvokeAsyncRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InvokeAsyncRequest] (val x: Self) extends AnyVal {
     
     inline def setFunctionName(value: NamespacedFunctionName): Self = StObject.set(x, "FunctionName", value.asInstanceOf[js.Any])
     

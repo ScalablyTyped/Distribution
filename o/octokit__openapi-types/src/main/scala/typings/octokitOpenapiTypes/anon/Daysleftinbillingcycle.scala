@@ -26,7 +26,8 @@ object Daysleftinbillingcycle {
     __obj.asInstanceOf[Daysleftinbillingcycle]
   }
   
-  extension [Self <: Daysleftinbillingcycle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Daysleftinbillingcycle] (val x: Self) extends AnyVal {
     
     inline def setDays_left_in_billing_cycle(value: Double): Self = StObject.set(x, "days_left_in_billing_cycle", value.asInstanceOf[js.Any])
     

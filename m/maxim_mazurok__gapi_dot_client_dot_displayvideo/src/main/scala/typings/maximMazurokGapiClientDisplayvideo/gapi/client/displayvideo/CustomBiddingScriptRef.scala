@@ -19,7 +19,8 @@ object CustomBiddingScriptRef {
     __obj.asInstanceOf[CustomBiddingScriptRef]
   }
   
-  extension [Self <: CustomBiddingScriptRef](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomBiddingScriptRef] (val x: Self) extends AnyVal {
     
     inline def setResourceName(value: String): Self = StObject.set(x, "resourceName", value.asInstanceOf[js.Any])
     

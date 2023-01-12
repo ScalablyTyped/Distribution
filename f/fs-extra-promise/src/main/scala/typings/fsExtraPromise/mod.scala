@@ -3261,7 +3261,8 @@ object mod {
       __obj.asInstanceOf[MkdirOptions]
     }
     
-    extension [Self <: MkdirOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MkdirOptions] (val x: Self) extends AnyVal {
       
       inline def setFs(value: Any): Self = StObject.set(x, "fs", value.asInstanceOf[js.Any])
       

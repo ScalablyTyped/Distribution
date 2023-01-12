@@ -27,7 +27,8 @@ object IndicesRolloverParams {
     __obj.asInstanceOf[IndicesRolloverParams]
   }
   
-  extension [Self <: IndicesRolloverParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndicesRolloverParams] (val x: Self) extends AnyVal {
     
     inline def setAlias(value: String): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
     

@@ -186,7 +186,8 @@ object componentsBreadcrumbBreadcrumbMod {
       __obj.asInstanceOf[BreadcrumbModifierProps]
     }
     
-    extension [Self <: BreadcrumbModifierProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BreadcrumbModifierProps] (val x: Self) extends AnyVal {
       
       inline def setAlign(value: centered | right): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       
@@ -292,7 +293,8 @@ object componentsBreadcrumbBreadcrumbMod {
       __obj.asInstanceOf[BreadcrumbProps]
     }
     
-    extension [Self <: BreadcrumbProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BreadcrumbProps] (val x: Self) extends AnyVal {
       
       inline def setAlign(value: centered | right): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       
@@ -464,7 +466,8 @@ object componentsBreadcrumbBreadcrumbMod {
       __obj.asInstanceOf[BreadcrumbVariables]
     }
     
-    extension [Self <: BreadcrumbVariables](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BreadcrumbVariables] (val x: Self) extends AnyVal {
       
       inline def setAlignments(value: centered | right): Self = StObject.set(x, "alignments", value.asInstanceOf[js.Any])
       
@@ -493,7 +496,8 @@ object componentsBreadcrumbBreadcrumbMod {
       __obj.asInstanceOf[BreadcrumbVariablesDefaults]
     }
     
-    extension [Self <: BreadcrumbVariablesDefaults](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BreadcrumbVariablesDefaults] (val x: Self) extends AnyVal {
       
       inline def setAlignments(value: centered | right): Self = StObject.set(x, "alignments", value.asInstanceOf[js.Any])
       

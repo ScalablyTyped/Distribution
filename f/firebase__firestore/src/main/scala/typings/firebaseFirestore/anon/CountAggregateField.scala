@@ -16,7 +16,8 @@ object CountAggregateField {
     __obj.asInstanceOf[CountAggregateField]
   }
   
-  extension [Self <: CountAggregateField](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CountAggregateField] (val x: Self) extends AnyVal {
     
     inline def setCount(value: AggregateField[Double]): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
   }

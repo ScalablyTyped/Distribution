@@ -15,7 +15,8 @@ object FileList {
     __obj.asInstanceOf[FileList]
   }
   
-  extension [Self <: FileList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FileList] (val x: Self) extends AnyVal {
     
     inline def setFileList(value: js.Array[String]): Self = StObject.set(x, "fileList", value.asInstanceOf[js.Any])
     

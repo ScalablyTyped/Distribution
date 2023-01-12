@@ -21,7 +21,8 @@ object DeploymentMachineGroupReference {
     __obj.asInstanceOf[DeploymentMachineGroupReference]
   }
   
-  extension [Self <: DeploymentMachineGroupReference](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeploymentMachineGroupReference] (val x: Self) extends AnyVal {
     
     inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

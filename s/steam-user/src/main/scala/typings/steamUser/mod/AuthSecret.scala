@@ -18,7 +18,8 @@ object AuthSecret {
     __obj.asInstanceOf[AuthSecret]
   }
   
-  extension [Self <: AuthSecret](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AuthSecret] (val x: Self) extends AnyVal {
     
     inline def setKey(value: Buffer): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     

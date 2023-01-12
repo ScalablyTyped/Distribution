@@ -25,7 +25,8 @@ object ThreeDSecure {
     __obj.asInstanceOf[ThreeDSecure]
   }
   
-  extension [Self <: ThreeDSecure](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ThreeDSecure] (val x: Self) extends AnyVal {
     
     inline def setThreeDSecure(value: /* riskOptions */ RiskOptions => ThreeDSecureEmitter): Self = StObject.set(x, "ThreeDSecure", js.Any.fromFunction1(value))
   }

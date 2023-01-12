@@ -50,7 +50,8 @@ object ProtocolActivatedEventArgs {
     __obj.asInstanceOf[ProtocolActivatedEventArgs]
   }
   
-  extension [Self <: ProtocolActivatedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProtocolActivatedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setCallerPackageFamilyName(value: String): Self = StObject.set(x, "callerPackageFamilyName", value.asInstanceOf[js.Any])
     

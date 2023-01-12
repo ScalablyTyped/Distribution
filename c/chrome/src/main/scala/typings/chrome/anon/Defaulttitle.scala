@@ -19,7 +19,8 @@ object Defaulttitle {
     __obj.asInstanceOf[Defaulttitle]
   }
   
-  extension [Self <: Defaulttitle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Defaulttitle] (val x: Self) extends AnyVal {
     
     inline def setDefault_title(value: String): Self = StObject.set(x, "default_title", value.asInstanceOf[js.Any])
     

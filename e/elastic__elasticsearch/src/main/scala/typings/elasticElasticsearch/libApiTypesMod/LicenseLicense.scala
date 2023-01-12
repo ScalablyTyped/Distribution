@@ -42,7 +42,8 @@ object LicenseLicense {
     __obj.asInstanceOf[LicenseLicense]
   }
   
-  extension [Self <: LicenseLicense](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LicenseLicense] (val x: Self) extends AnyVal {
     
     inline def setExpiry_date_in_millis(value: EpochTime[UnitMillis]): Self = StObject.set(x, "expiry_date_in_millis", value.asInstanceOf[js.Any])
     

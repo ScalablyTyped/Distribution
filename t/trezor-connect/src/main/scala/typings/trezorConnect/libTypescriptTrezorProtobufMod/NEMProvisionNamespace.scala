@@ -21,7 +21,8 @@ object NEMProvisionNamespace {
     __obj.asInstanceOf[NEMProvisionNamespace]
   }
   
-  extension [Self <: NEMProvisionNamespace](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NEMProvisionNamespace] (val x: Self) extends AnyVal {
     
     inline def setFee(value: UintType): Self = StObject.set(x, "fee", value.asInstanceOf[js.Any])
     

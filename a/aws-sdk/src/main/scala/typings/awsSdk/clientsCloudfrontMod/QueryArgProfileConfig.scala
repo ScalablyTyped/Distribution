@@ -23,7 +23,8 @@ object QueryArgProfileConfig {
     __obj.asInstanceOf[QueryArgProfileConfig]
   }
   
-  extension [Self <: QueryArgProfileConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryArgProfileConfig] (val x: Self) extends AnyVal {
     
     inline def setForwardWhenQueryArgProfileIsUnknown(value: Boolean): Self = StObject.set(x, "ForwardWhenQueryArgProfileIsUnknown", value.asInstanceOf[js.Any])
     

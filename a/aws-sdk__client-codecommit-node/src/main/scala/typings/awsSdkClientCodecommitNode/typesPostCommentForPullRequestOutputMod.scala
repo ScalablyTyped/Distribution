@@ -67,7 +67,8 @@ object typesPostCommentForPullRequestOutputMod {
       __obj.asInstanceOf[PostCommentForPullRequestOutput]
     }
     
-    extension [Self <: PostCommentForPullRequestOutput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PostCommentForPullRequestOutput] (val x: Self) extends AnyVal {
       
       inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
       

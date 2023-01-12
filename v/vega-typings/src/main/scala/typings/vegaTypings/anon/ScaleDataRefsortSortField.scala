@@ -25,7 +25,8 @@ object ScaleDataRefsortSortField {
     __obj.asInstanceOf[ScaleDataRefsortSortField]
   }
   
-  extension [Self <: ScaleDataRefsortSortField](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScaleDataRefsortSortField] (val x: Self) extends AnyVal {
     
     inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

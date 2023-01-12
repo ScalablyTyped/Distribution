@@ -36,7 +36,8 @@ object distKerasFormatLayersMergeSerializationMod {
       __obj.asInstanceOf[ConcatenateLayerConfig]
     }
     
-    extension [Self <: ConcatenateLayerConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConcatenateLayerConfig] (val x: Self) extends AnyVal {
       
       inline def setAxis(value: Double): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
       
@@ -61,7 +62,8 @@ object distKerasFormatLayersMergeSerializationMod {
       __obj.asInstanceOf[DotLayerConfig]
     }
     
-    extension [Self <: DotLayerConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DotLayerConfig] (val x: Self) extends AnyVal {
       
       inline def setAxes(value: Double | (js.Tuple2[Double, Double])): Self = StObject.set(x, "axes", value.asInstanceOf[js.Any])
       

@@ -38,7 +38,8 @@ object TextureAtlasPage {
     __obj.asInstanceOf[TextureAtlasPage]
   }
   
-  extension [Self <: TextureAtlasPage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextureAtlasPage] (val x: Self) extends AnyVal {
     
     inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     

@@ -42,7 +42,8 @@ object DataPilotTableResultData {
     __obj.asInstanceOf[DataPilotTableResultData]
   }
   
-  extension [Self <: DataPilotTableResultData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataPilotTableResultData] (val x: Self) extends AnyVal {
     
     inline def setDataFieldIndex(value: Double): Self = StObject.set(x, "DataFieldIndex", value.asInstanceOf[js.Any])
     

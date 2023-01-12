@@ -33,7 +33,8 @@ object CreateWorkspaceResponse {
     __obj.asInstanceOf[CreateWorkspaceResponse]
   }
   
-  extension [Self <: CreateWorkspaceResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateWorkspaceResponse] (val x: Self) extends AnyVal {
     
     inline def setArn(value: WorkspaceArn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     

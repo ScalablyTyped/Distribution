@@ -25,7 +25,8 @@ object DocumentManifestContent {
     __obj.asInstanceOf[DocumentManifestContent]
   }
   
-  extension [Self <: DocumentManifestContent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DocumentManifestContent] (val x: Self) extends AnyVal {
     
     inline def setPAttachment(value: Attachment): Self = StObject.set(x, "pAttachment", value.asInstanceOf[js.Any])
     

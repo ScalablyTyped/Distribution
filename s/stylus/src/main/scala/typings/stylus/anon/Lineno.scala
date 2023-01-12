@@ -24,7 +24,8 @@ object Lineno {
     __obj.asInstanceOf[Lineno]
   }
   
-  extension [Self <: Lineno](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Lineno] (val x: Self) extends AnyVal {
     
     inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
     

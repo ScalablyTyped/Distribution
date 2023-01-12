@@ -40,7 +40,8 @@ object mod {
       __obj.asInstanceOf[BindOptions]
     }
     
-    extension [Self <: BindOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BindOptions] (val x: Self) extends AnyVal {
       
       inline def setCallback(value: /* instance */ LaddaButton => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
       
@@ -83,7 +84,8 @@ object mod {
       __obj.asInstanceOf[LaddaButton]
     }
     
-    extension [Self <: LaddaButton](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LaddaButton] (val x: Self) extends AnyVal {
       
       inline def setIsLoading(value: () => Boolean): Self = StObject.set(x, "isLoading", js.Any.fromFunction0(value))
       

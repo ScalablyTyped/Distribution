@@ -33,7 +33,8 @@ object GetDeployablePatchSnapshotForInstanceResult {
     __obj.asInstanceOf[GetDeployablePatchSnapshotForInstanceResult]
   }
   
-  extension [Self <: GetDeployablePatchSnapshotForInstanceResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetDeployablePatchSnapshotForInstanceResult] (val x: Self) extends AnyVal {
     
     inline def setInstanceId(value: InstanceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
     

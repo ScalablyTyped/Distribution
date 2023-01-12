@@ -35,7 +35,8 @@ object SoftwareInfo {
     __obj.asInstanceOf[SoftwareInfo]
   }
   
-  extension [Self <: SoftwareInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SoftwareInfo] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

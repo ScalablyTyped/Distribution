@@ -100,7 +100,8 @@ object autocompletePlusMod {
       __obj.asInstanceOf[AutocompleteProvider]
     }
     
-    extension [Self <: AutocompleteProvider](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AutocompleteProvider] (val x: Self) extends AnyVal {
       
       inline def setDisableForSelector(value: String): Self = StObject.set(x, "disableForSelector", value.asInstanceOf[js.Any])
       
@@ -158,7 +159,8 @@ object autocompletePlusMod {
       __obj.asInstanceOf[SnippetSuggestion]
     }
     
-    extension [Self <: SnippetSuggestion](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SnippetSuggestion] (val x: Self) extends AnyVal {
       
       inline def setSnippet(value: String): Self = StObject.set(x, "snippet", value.asInstanceOf[js.Any])
     }
@@ -238,7 +240,8 @@ object autocompletePlusMod {
       __obj.asInstanceOf[SuggestionBase]
     }
     
-    extension [Self <: SuggestionBase](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SuggestionBase] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -305,7 +308,8 @@ object autocompletePlusMod {
       __obj.asInstanceOf[SuggestionInsertedEvent]
     }
     
-    extension [Self <: SuggestionInsertedEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SuggestionInsertedEvent] (val x: Self) extends AnyVal {
       
       inline def setEditor(value: TextEditor): Self = StObject.set(x, "editor", value.asInstanceOf[js.Any])
       
@@ -347,7 +351,8 @@ object autocompletePlusMod {
       __obj.asInstanceOf[SuggestionsRequestedEvent]
     }
     
-    extension [Self <: SuggestionsRequestedEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SuggestionsRequestedEvent] (val x: Self) extends AnyVal {
       
       inline def setActivatedManually(value: Boolean): Self = StObject.set(x, "activatedManually", value.asInstanceOf[js.Any])
       
@@ -376,7 +381,8 @@ object autocompletePlusMod {
       __obj.asInstanceOf[TextSuggestion]
     }
     
-    extension [Self <: TextSuggestion](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TextSuggestion] (val x: Self) extends AnyVal {
       
       inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     }

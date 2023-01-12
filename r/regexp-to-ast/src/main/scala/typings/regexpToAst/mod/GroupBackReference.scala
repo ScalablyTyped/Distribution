@@ -25,7 +25,8 @@ object GroupBackReference {
     __obj.asInstanceOf[GroupBackReference]
   }
   
-  extension [Self <: GroupBackReference](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GroupBackReference] (val x: Self) extends AnyVal {
     
     inline def setQuantifier(value: Quantifier): Self = StObject.set(x, "quantifier", value.asInstanceOf[js.Any])
     

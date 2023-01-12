@@ -17,7 +17,8 @@ object MlPage {
     __obj.asInstanceOf[MlPage]
   }
   
-  extension [Self <: MlPage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlPage] (val x: Self) extends AnyVal {
     
     inline def setFrom(value: integer): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     

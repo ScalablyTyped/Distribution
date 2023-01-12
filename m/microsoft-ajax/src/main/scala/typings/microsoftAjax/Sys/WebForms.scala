@@ -57,7 +57,8 @@ object WebForms {
       __obj.asInstanceOf[BeginRequestEventArgs]
     }
     
-    extension [Self <: BeginRequestEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BeginRequestEventArgs] (val x: Self) extends AnyVal {
       
       inline def setGet_postBackElement(value: () => HTMLElement): Self = StObject.set(x, "get_postBackElement", js.Any.fromFunction0(value))
       
@@ -125,7 +126,8 @@ object WebForms {
       __obj.asInstanceOf[EndRequestEventArgs]
     }
     
-    extension [Self <: EndRequestEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EndRequestEventArgs] (val x: Self) extends AnyVal {
       
       inline def setGet_dataItems(value: () => Any): Self = StObject.set(x, "get_dataItems", js.Any.fromFunction0(value))
       
@@ -181,7 +183,8 @@ object WebForms {
       __obj.asInstanceOf[InitializeRequestEventArgs]
     }
     
-    extension [Self <: InitializeRequestEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InitializeRequestEventArgs] (val x: Self) extends AnyVal {
       
       inline def setGet_postBackElement(value: () => HTMLElement): Self = StObject.set(x, "get_postBackElement", js.Any.fromFunction0(value))
       
@@ -239,7 +242,8 @@ object WebForms {
       __obj.asInstanceOf[PageLoadedEventArgs]
     }
     
-    extension [Self <: PageLoadedEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PageLoadedEventArgs] (val x: Self) extends AnyVal {
       
       inline def setGet_dataItems(value: () => Any): Self = StObject.set(x, "get_dataItems", js.Any.fromFunction0(value))
       
@@ -297,7 +301,8 @@ object WebForms {
       __obj.asInstanceOf[PageLoadingEventArgs]
     }
     
-    extension [Self <: PageLoadingEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PageLoadingEventArgs] (val x: Self) extends AnyVal {
       
       inline def setGet_dataItems(value: () => Any): Self = StObject.set(x, "get_dataItems", js.Any.fromFunction0(value))
       

@@ -26,7 +26,8 @@ object anon {
       __obj.asInstanceOf[RelativeTimeOptionsreturn]
     }
     
-    extension [Self <: RelativeTimeOptionsreturn](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RelativeTimeOptionsreturn] (val x: Self) extends AnyVal {
       
       inline def setAllUnits(value: Boolean): Self = StObject.set(x, "allUnits", value.asInstanceOf[js.Any])
       
@@ -70,7 +71,8 @@ object anon {
       __obj.asInstanceOf[RelativeTimeOptionsreturnAllUnits]
     }
     
-    extension [Self <: RelativeTimeOptionsreturnAllUnits](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RelativeTimeOptionsreturnAllUnits] (val x: Self) extends AnyVal {
       
       inline def setAllUnits(value: Boolean): Self = StObject.set(x, "allUnits", value.asInstanceOf[js.Any])
       

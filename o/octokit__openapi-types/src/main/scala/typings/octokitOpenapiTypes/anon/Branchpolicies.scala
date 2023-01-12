@@ -28,7 +28,8 @@ object Branchpolicies {
     __obj.asInstanceOf[Branchpolicies]
   }
   
-  extension [Self <: Branchpolicies](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Branchpolicies] (val x: Self) extends AnyVal {
     
     inline def setBranch_policies(
       value: js.Array[

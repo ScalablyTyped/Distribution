@@ -43,7 +43,8 @@ object AugmentedManifestsListItem {
     __obj.asInstanceOf[AugmentedManifestsListItem]
   }
   
-  extension [Self <: AugmentedManifestsListItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AugmentedManifestsListItem] (val x: Self) extends AnyVal {
     
     inline def setAnnotationDataS3Uri(value: S3Uri): Self = StObject.set(x, "AnnotationDataS3Uri", value.asInstanceOf[js.Any])
     

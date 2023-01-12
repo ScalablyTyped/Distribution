@@ -17,7 +17,8 @@ object ResetOnQuery {
     __obj.asInstanceOf[ResetOnQuery]
   }
   
-  extension [Self <: ResetOnQuery](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResetOnQuery] (val x: Self) extends AnyVal {
     
     inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     

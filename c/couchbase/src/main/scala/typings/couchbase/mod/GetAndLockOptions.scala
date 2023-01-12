@@ -15,7 +15,8 @@ object GetAndLockOptions {
     __obj.asInstanceOf[GetAndLockOptions]
   }
   
-  extension [Self <: GetAndLockOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetAndLockOptions] (val x: Self) extends AnyVal {
     
     inline def setLockTime(value: Double): Self = StObject.set(x, "lockTime", value.asInstanceOf[js.Any])
     

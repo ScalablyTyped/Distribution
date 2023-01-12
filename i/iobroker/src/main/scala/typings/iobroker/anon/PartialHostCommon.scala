@@ -43,7 +43,8 @@ object PartialHostCommon {
     __obj.asInstanceOf[PartialHostCommon]
   }
   
-  extension [Self <: PartialHostCommon](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialHostCommon] (val x: Self) extends AnyVal {
     
     inline def setAddress(value: js.Array[String]): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     

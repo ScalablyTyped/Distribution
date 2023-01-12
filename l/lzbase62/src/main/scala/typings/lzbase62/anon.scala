@@ -20,7 +20,8 @@ object anon {
       __obj.asInstanceOf[PartialOptions]
     }
     
-    extension [Self <: PartialOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialOptions] (val x: Self) extends AnyVal {
       
       inline def setOnData(value: /* data */ String => Unit): Self = StObject.set(x, "onData", js.Any.fromFunction1(value))
       

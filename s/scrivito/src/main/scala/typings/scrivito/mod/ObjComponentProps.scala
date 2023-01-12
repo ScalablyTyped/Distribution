@@ -18,7 +18,8 @@ object ObjComponentProps {
     __obj.asInstanceOf[ObjComponentProps]
   }
   
-  extension [Self <: ObjComponentProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ObjComponentProps] (val x: Self) extends AnyVal {
     
     inline def setPage(value: Obj): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
   }

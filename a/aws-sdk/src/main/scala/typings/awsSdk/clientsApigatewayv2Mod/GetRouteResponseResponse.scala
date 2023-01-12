@@ -38,7 +38,8 @@ object GetRouteResponseResponse {
     __obj.asInstanceOf[GetRouteResponseResponse]
   }
   
-  extension [Self <: GetRouteResponseResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetRouteResponseResponse] (val x: Self) extends AnyVal {
     
     inline def setModelSelectionExpression(value: SelectionExpression): Self = StObject.set(x, "ModelSelectionExpression", value.asInstanceOf[js.Any])
     

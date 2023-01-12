@@ -19,7 +19,8 @@ object TableBorderCell {
     __obj.asInstanceOf[TableBorderCell]
   }
   
-  extension [Self <: TableBorderCell](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TableBorderCell] (val x: Self) extends AnyVal {
     
     inline def setLocation(value: TableCellLocation): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     

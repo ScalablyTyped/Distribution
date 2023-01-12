@@ -33,7 +33,8 @@ object GetMLTransformsRequest {
     __obj.asInstanceOf[GetMLTransformsRequest]
   }
   
-  extension [Self <: GetMLTransformsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetMLTransformsRequest] (val x: Self) extends AnyVal {
     
     inline def setFilter(value: TransformFilterCriteria): Self = StObject.set(x, "Filter", value.asInstanceOf[js.Any])
     

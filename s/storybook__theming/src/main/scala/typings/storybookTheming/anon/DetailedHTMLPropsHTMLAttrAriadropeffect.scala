@@ -634,7 +634,8 @@ object DetailedHTMLPropsHTMLAttrAriadropeffect {
     __obj.asInstanceOf[DetailedHTMLPropsHTMLAttrAriadropeffect]
   }
   
-  extension [Self <: DetailedHTMLPropsHTMLAttrAriadropeffect](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DetailedHTMLPropsHTMLAttrAriadropeffect] (val x: Self) extends AnyVal {
     
     inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
     

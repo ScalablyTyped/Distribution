@@ -19,7 +19,8 @@ object FetchStrategySymbol {
     __obj.asInstanceOf[FetchStrategySymbol]
   }
   
-  extension [Self <: FetchStrategySymbol](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FetchStrategySymbol] (val x: Self) extends AnyVal {
     
     inline def setFoo(value: Any): Self = StObject.set(x, "foo", value.asInstanceOf[js.Any])
   }

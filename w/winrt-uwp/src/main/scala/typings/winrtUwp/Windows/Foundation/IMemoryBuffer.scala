@@ -22,7 +22,8 @@ object IMemoryBuffer {
     __obj.asInstanceOf[IMemoryBuffer]
   }
   
-  extension [Self <: IMemoryBuffer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IMemoryBuffer] (val x: Self) extends AnyVal {
     
     inline def setCreateReference(value: () => IMemoryBufferReference): Self = StObject.set(x, "createReference", js.Any.fromFunction0(value))
   }

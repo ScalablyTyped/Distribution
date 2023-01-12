@@ -20,7 +20,8 @@ object MRAIDExpandProperties {
     __obj.asInstanceOf[MRAIDExpandProperties]
   }
   
-  extension [Self <: MRAIDExpandProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MRAIDExpandProperties] (val x: Self) extends AnyVal {
     
     inline def setIsModal(value: Boolean): Self = StObject.set(x, "isModal", value.asInstanceOf[js.Any])
     

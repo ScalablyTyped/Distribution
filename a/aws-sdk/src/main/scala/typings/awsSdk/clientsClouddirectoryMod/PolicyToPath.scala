@@ -23,7 +23,8 @@ object PolicyToPath {
     __obj.asInstanceOf[PolicyToPath]
   }
   
-  extension [Self <: PolicyToPath](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PolicyToPath] (val x: Self) extends AnyVal {
     
     inline def setPath(value: PathString): Self = StObject.set(x, "Path", value.asInstanceOf[js.Any])
     

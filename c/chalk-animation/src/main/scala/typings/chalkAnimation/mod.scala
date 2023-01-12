@@ -70,7 +70,8 @@ object mod {
       __obj.asInstanceOf[Animation]
     }
     
-    extension [Self <: Animation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Animation] (val x: Self) extends AnyVal {
       
       inline def setF(value: Double): Self = StObject.set(x, "f", value.asInstanceOf[js.Any])
       

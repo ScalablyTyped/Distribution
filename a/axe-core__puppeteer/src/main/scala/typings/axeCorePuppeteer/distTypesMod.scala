@@ -22,7 +22,8 @@ object distTypesMod {
       __obj.asInstanceOf[IPageOptions]
     }
     
-    extension [Self <: IPageOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPageOptions] (val x: Self) extends AnyVal {
       
       inline def setOpts(value: Any): Self = StObject.set(x, "opts", value.asInstanceOf[js.Any])
       

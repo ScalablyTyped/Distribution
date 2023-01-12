@@ -27,7 +27,8 @@ object PolygonDrawActionProperties {
     __obj.asInstanceOf[PolygonDrawActionProperties]
   }
   
-  extension [Self <: PolygonDrawActionProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PolygonDrawActionProperties] (val x: Self) extends AnyVal {
     
     inline def setMode(value: hybrid | freehand | click): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     

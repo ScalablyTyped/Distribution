@@ -26,7 +26,8 @@ object DocumentFormattingEditProvider {
     __obj.asInstanceOf[DocumentFormattingEditProvider]
   }
   
-  extension [Self <: DocumentFormattingEditProvider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DocumentFormattingEditProvider] (val x: Self) extends AnyVal {
     
     inline def setProvideDocumentFormattingEdits(value: (TextDocument, FormattingOptions, CancellationToken) => ProviderResult[js.Array[TextEdit]]): Self = StObject.set(x, "provideDocumentFormattingEdits", js.Any.fromFunction3(value))
   }

@@ -18,7 +18,8 @@ object ThirdPartyPrincipal {
     __obj.asInstanceOf[ThirdPartyPrincipal]
   }
   
-  extension [Self <: ThirdPartyPrincipal](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ThirdPartyPrincipal] (val x: Self) extends AnyVal {
     
     inline def setThirdPartyClaims(
       value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any

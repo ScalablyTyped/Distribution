@@ -32,7 +32,8 @@ object distEsmLoaderPuffMod extends Shortcut {
       __obj.asInstanceOf[PuffProps]
     }
     
-    extension [Self <: PuffProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PuffProps] (val x: Self) extends AnyVal {
       
       inline def setRadius(value: String | Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
       

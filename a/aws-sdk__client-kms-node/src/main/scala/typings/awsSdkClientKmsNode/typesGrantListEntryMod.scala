@@ -77,7 +77,8 @@ object typesGrantListEntryMod {
       __obj.asInstanceOf[GrantListEntry]
     }
     
-    extension [Self <: GrantListEntry](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GrantListEntry] (val x: Self) extends AnyVal {
       
       inline def setConstraints(value: GrantConstraints): Self = StObject.set(x, "Constraints", value.asInstanceOf[js.Any])
       
@@ -160,7 +161,8 @@ object typesGrantListEntryMod {
       __obj.asInstanceOf[UnmarshalledGrantListEntry]
     }
     
-    extension [Self <: UnmarshalledGrantListEntry](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnmarshalledGrantListEntry] (val x: Self) extends AnyVal {
       
       inline def setConstraints(value: UnmarshalledGrantConstraints): Self = StObject.set(x, "Constraints", value.asInstanceOf[js.Any])
       

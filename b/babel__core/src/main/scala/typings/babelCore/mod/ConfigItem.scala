@@ -41,7 +41,8 @@ object ConfigItem {
     __obj.asInstanceOf[ConfigItem]
   }
   
-  extension [Self <: ConfigItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConfigItem] (val x: Self) extends AnyVal {
     
     inline def setDirname(value: String): Self = StObject.set(x, "dirname", value.asInstanceOf[js.Any])
     

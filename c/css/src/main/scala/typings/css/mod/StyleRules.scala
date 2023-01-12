@@ -19,7 +19,8 @@ object StyleRules {
     __obj.asInstanceOf[StyleRules]
   }
   
-  extension [Self <: StyleRules](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StyleRules] (val x: Self) extends AnyVal {
     
     inline def setParsingErrors(value: js.Array[ParserError]): Self = StObject.set(x, "parsingErrors", value.asInstanceOf[js.Any])
     

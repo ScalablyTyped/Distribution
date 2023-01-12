@@ -25,7 +25,8 @@ object IJscadCsgOptions {
     __obj.asInstanceOf[IJscadCsgOptions]
   }
   
-  extension [Self <: IJscadCsgOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IJscadCsgOptions] (val x: Self) extends AnyVal {
     
     inline def setLayerOptions(value: StringDictionary[IJscadExtrudeOptions]): Self = StObject.set(x, "layerOptions", value.asInstanceOf[js.Any])
     

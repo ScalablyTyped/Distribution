@@ -21,7 +21,8 @@ object ActionMetaLocation {
     __obj.asInstanceOf[ActionMetaLocation]
   }
   
-  extension [Self <: ActionMetaLocation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ActionMetaLocation] (val x: Self) extends AnyVal {
     
     inline def setCurrent(value: Location): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
     

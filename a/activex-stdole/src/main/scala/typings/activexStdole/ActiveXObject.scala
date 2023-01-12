@@ -25,7 +25,8 @@ object ActiveXObject {
     __obj.asInstanceOf[ActiveXObject]
   }
   
-  extension [Self <: ActiveXObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ActiveXObject] (val x: Self) extends AnyVal {
     
     inline def setOn(
       value: (StdFont, FontChanged, js.Array[PropertyName], js.ThisFunction1[/* this */ StdFont, /* parameter */ typings.activexStdole.anon.PropertyName, Unit]) => Unit

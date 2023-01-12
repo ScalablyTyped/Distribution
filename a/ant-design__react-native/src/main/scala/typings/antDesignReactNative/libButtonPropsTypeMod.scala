@@ -28,7 +28,8 @@ object libButtonPropsTypeMod {
       __obj.asInstanceOf[ButtonPropsType]
     }
     
-    extension [Self <: ButtonPropsType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ButtonPropsType] (val x: Self) extends AnyVal {
       
       inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       

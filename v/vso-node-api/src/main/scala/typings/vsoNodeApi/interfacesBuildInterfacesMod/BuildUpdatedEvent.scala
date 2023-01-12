@@ -17,7 +17,8 @@ object BuildUpdatedEvent {
     __obj.asInstanceOf[BuildUpdatedEvent]
   }
   
-  extension [Self <: BuildUpdatedEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BuildUpdatedEvent] (val x: Self) extends AnyVal {
     
     inline def setBuild(value: Build): Self = StObject.set(x, "build", value.asInstanceOf[js.Any])
   }

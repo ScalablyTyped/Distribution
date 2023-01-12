@@ -84,7 +84,8 @@ object typesActivityResponseMod {
       __obj.asInstanceOf[ActivityResponse]
     }
     
-    extension [Self <: ActivityResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ActivityResponse] (val x: Self) extends AnyVal {
       
       inline def setApplicationId(value: String): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
       

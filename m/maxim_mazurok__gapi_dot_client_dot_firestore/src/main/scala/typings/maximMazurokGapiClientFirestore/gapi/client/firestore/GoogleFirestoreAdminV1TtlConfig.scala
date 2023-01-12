@@ -16,7 +16,8 @@ object GoogleFirestoreAdminV1TtlConfig {
     __obj.asInstanceOf[GoogleFirestoreAdminV1TtlConfig]
   }
   
-  extension [Self <: GoogleFirestoreAdminV1TtlConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleFirestoreAdminV1TtlConfig] (val x: Self) extends AnyVal {
     
     inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     

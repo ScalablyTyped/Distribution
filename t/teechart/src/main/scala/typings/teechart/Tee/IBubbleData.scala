@@ -17,7 +17,8 @@ object IBubbleData {
     __obj.asInstanceOf[IBubbleData]
   }
   
-  extension [Self <: IBubbleData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IBubbleData] (val x: Self) extends AnyVal {
     
     inline def setRadius(value: js.Array[Double]): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
     

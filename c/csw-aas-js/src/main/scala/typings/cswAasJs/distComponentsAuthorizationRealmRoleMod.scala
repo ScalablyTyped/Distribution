@@ -29,7 +29,8 @@ object distComponentsAuthorizationRealmRoleMod {
       __obj.asInstanceOf[RealmRoleProps]
     }
     
-    extension [Self <: RealmRoleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RealmRoleProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

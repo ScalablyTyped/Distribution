@@ -37,7 +37,8 @@ object BucketAggregationDefinition {
     __obj.asInstanceOf[BucketAggregationDefinition]
   }
   
-  extension [Self <: BucketAggregationDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BucketAggregationDefinition] (val x: Self) extends AnyVal {
     
     inline def setIsDescending(value: NullableOption[Boolean]): Self = StObject.set(x, "isDescending", value.asInstanceOf[js.Any])
     

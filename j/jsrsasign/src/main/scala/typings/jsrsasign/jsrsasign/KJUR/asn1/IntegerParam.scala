@@ -15,7 +15,8 @@ object IntegerParam {
     __obj.asInstanceOf[IntegerParam]
   }
   
-  extension [Self <: IntegerParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IntegerParam] (val x: Self) extends AnyVal {
     
     inline def setInt(value: Double): Self = StObject.set(x, "int", value.asInstanceOf[js.Any])
   }

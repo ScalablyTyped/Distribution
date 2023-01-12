@@ -55,7 +55,8 @@ object mod {
     @js.native
     val ^ : TypeofPacket & Instantiable0[Packet] = js.native
     
-    extension [Self <: Packet](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Packet] (val x: Self) extends AnyVal {
       
       inline def setToBuffer(value: () => Buffer): Self = StObject.set(x, "toBuffer", js.Any.fromFunction0(value))
     }
@@ -157,7 +158,8 @@ object mod {
       __obj.asInstanceOf[DnsAnswer]
     }
     
-    extension [Self <: DnsAnswer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DnsAnswer] (val x: Self) extends AnyVal {
       
       inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
@@ -195,7 +197,8 @@ object mod {
       __obj.asInstanceOf[DnsQuestion]
     }
     
-    extension [Self <: DnsQuestion](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DnsQuestion] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
@@ -214,7 +217,8 @@ object mod {
       __obj.asInstanceOf[DnsRequest]
     }
     
-    extension [Self <: DnsRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DnsRequest] (val x: Self) extends AnyVal {
       
       inline def setHeader(value: Id): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
       
@@ -235,7 +239,8 @@ object mod {
       __obj.asInstanceOf[DnsResponse]
     }
     
-    extension [Self <: DnsResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DnsResponse] (val x: Self) extends AnyVal {
       
       inline def setAnswers(value: js.Array[DnsAnswer]): Self = StObject.set(x, "answers", value.asInstanceOf[js.Any])
       

@@ -62,7 +62,8 @@ object DistanceMeasurement2DViewModelProperties {
     __obj.asInstanceOf[DistanceMeasurement2DViewModelProperties]
   }
   
-  extension [Self <: DistanceMeasurement2DViewModelProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DistanceMeasurement2DViewModelProperties] (val x: Self) extends AnyVal {
     
     inline def setGeodesicDistanceThreshold(value: Double): Self = StObject.set(x, "geodesicDistanceThreshold", value.asInstanceOf[js.Any])
     

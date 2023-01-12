@@ -27,7 +27,8 @@ object EditorTool {
     __obj.asInstanceOf[EditorTool]
   }
   
-  extension [Self <: EditorTool](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EditorTool] (val x: Self) extends AnyVal {
     
     inline def setColumns(value: Double): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     

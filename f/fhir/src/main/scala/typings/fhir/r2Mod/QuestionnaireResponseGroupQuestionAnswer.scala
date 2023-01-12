@@ -99,7 +99,8 @@ object QuestionnaireResponseGroupQuestionAnswer {
     __obj.asInstanceOf[QuestionnaireResponseGroupQuestionAnswer]
   }
   
-  extension [Self <: QuestionnaireResponseGroupQuestionAnswer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QuestionnaireResponseGroupQuestionAnswer] (val x: Self) extends AnyVal {
     
     inline def setGroup(value: js.Array[QuestionnaireResponseGroup]): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
     

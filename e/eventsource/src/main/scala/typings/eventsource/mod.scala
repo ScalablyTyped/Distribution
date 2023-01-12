@@ -146,7 +146,8 @@ object mod {
       __obj.asInstanceOf[EventSource]
     }
     
-    extension [Self <: EventSource](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EventSource] (val x: Self) extends AnyVal {
       
       inline def setAddEventListener(value: (String, js.Function1[/* evt */ MessageEvent[Any], Unit]) => Unit): Self = StObject.set(x, "addEventListener", js.Any.fromFunction2(value))
       
@@ -195,7 +196,8 @@ object mod {
       __obj.asInstanceOf[EventSourceInitDict]
     }
     
-    extension [Self <: EventSourceInitDict](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EventSourceInitDict] (val x: Self) extends AnyVal {
       
       inline def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       

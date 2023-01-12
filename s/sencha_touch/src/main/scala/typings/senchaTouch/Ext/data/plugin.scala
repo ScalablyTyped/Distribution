@@ -104,7 +104,8 @@ object plugin {
       __obj.asInstanceOf[IBuffered]
     }
     
-    extension [Self <: IBuffered](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IBuffered] (val x: Self) extends AnyVal {
       
       inline def setGetBufferedCollection(value: () => Any): Self = StObject.set(x, "getBufferedCollection", js.Any.fromFunction0(value))
       

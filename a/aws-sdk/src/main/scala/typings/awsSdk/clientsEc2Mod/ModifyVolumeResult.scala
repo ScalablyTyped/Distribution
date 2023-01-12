@@ -18,7 +18,8 @@ object ModifyVolumeResult {
     __obj.asInstanceOf[ModifyVolumeResult]
   }
   
-  extension [Self <: ModifyVolumeResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModifyVolumeResult] (val x: Self) extends AnyVal {
     
     inline def setVolumeModification(value: VolumeModification): Self = StObject.set(x, "VolumeModification", value.asInstanceOf[js.Any])
     

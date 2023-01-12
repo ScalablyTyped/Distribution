@@ -75,7 +75,8 @@ object distComponentsTypesColorMod {
       __obj.asInstanceOf[ColorTypeState]
     }
     
-    extension [Self <: ColorTypeState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColorTypeState] (val x: Self) extends AnyVal {
       
       inline def setDisplayColorPicker(value: Boolean): Self = StObject.set(x, "displayColorPicker", value.asInstanceOf[js.Any])
     }

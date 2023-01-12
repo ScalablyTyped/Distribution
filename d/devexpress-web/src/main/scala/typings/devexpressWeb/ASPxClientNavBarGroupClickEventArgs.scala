@@ -34,7 +34,8 @@ object ASPxClientNavBarGroupClickEventArgs {
     __obj.asInstanceOf[ASPxClientNavBarGroupClickEventArgs]
   }
   
-  extension [Self <: ASPxClientNavBarGroupClickEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientNavBarGroupClickEventArgs] (val x: Self) extends AnyVal {
     
     inline def setHtmlElement(value: Any): Self = StObject.set(x, "htmlElement", value.asInstanceOf[js.Any])
     

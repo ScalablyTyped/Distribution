@@ -39,7 +39,8 @@ object ImageArcGISRestOptions {
     __obj.asInstanceOf[ImageArcGISRestOptions]
   }
   
-  extension [Self <: ImageArcGISRestOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImageArcGISRestOptions] (val x: Self) extends AnyVal {
     
     inline def setAttributions(value: js.Array[Attribution]): Self = StObject.set(x, "attributions", value.asInstanceOf[js.Any])
     

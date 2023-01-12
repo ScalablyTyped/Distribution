@@ -35,7 +35,8 @@ object UpdateDatabaseDdlMetadata {
     __obj.asInstanceOf[UpdateDatabaseDdlMetadata]
   }
   
-  extension [Self <: UpdateDatabaseDdlMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateDatabaseDdlMetadata] (val x: Self) extends AnyVal {
     
     inline def setCommitTimestamps(value: js.Array[String]): Self = StObject.set(x, "commitTimestamps", value.asInstanceOf[js.Any])
     

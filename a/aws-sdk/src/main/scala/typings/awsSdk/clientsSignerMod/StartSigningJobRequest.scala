@@ -43,7 +43,8 @@ object StartSigningJobRequest {
     __obj.asInstanceOf[StartSigningJobRequest]
   }
   
-  extension [Self <: StartSigningJobRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartSigningJobRequest] (val x: Self) extends AnyVal {
     
     inline def setClientRequestToken(value: ClientRequestToken): Self = StObject.set(x, "clientRequestToken", value.asInstanceOf[js.Any])
     

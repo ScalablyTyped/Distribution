@@ -22,7 +22,8 @@ object CreateWorkerPoolOperationMetadata {
     __obj.asInstanceOf[CreateWorkerPoolOperationMetadata]
   }
   
-  extension [Self <: CreateWorkerPoolOperationMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateWorkerPoolOperationMetadata] (val x: Self) extends AnyVal {
     
     inline def setCompleteTime(value: String): Self = StObject.set(x, "completeTime", value.asInstanceOf[js.Any])
     

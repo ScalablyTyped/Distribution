@@ -18,7 +18,8 @@ object LoggerOptions {
     __obj.asInstanceOf[LoggerOptions]
   }
   
-  extension [Self <: LoggerOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LoggerOptions] (val x: Self) extends AnyVal {
     
     inline def setUseIcons(value: Boolean): Self = StObject.set(x, "useIcons", value.asInstanceOf[js.Any])
   }

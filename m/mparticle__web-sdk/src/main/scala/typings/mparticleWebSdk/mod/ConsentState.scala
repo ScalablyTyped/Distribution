@@ -35,7 +35,8 @@ object ConsentState {
     __obj.asInstanceOf[ConsentState]
   }
   
-  extension [Self <: ConsentState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConsentState] (val x: Self) extends AnyVal {
     
     inline def setAddGDPRConsentState(value: (String, PrivacyConsentState) => ConsentState): Self = StObject.set(x, "addGDPRConsentState", js.Any.fromFunction2(value))
     

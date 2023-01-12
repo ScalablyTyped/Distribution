@@ -34,7 +34,8 @@ object WebExtensionLangpackManifest {
     __obj.asInstanceOf[WebExtensionLangpackManifest]
   }
   
-  extension [Self <: WebExtensionLangpackManifest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebExtensionLangpackManifest] (val x: Self) extends AnyVal {
     
     inline def setLangpack_id(value: String): Self = StObject.set(x, "langpack_id", value.asInstanceOf[js.Any])
     

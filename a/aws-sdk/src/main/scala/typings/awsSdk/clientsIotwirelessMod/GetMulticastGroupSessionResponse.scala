@@ -15,7 +15,8 @@ object GetMulticastGroupSessionResponse {
     __obj.asInstanceOf[GetMulticastGroupSessionResponse]
   }
   
-  extension [Self <: GetMulticastGroupSessionResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetMulticastGroupSessionResponse] (val x: Self) extends AnyVal {
     
     inline def setLoRaWAN(value: LoRaWANMulticastSession): Self = StObject.set(x, "LoRaWAN", value.asInstanceOf[js.Any])
     

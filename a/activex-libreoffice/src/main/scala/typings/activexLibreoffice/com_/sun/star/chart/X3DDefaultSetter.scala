@@ -40,7 +40,8 @@ object X3DDefaultSetter {
     __obj.asInstanceOf[X3DDefaultSetter]
   }
   
-  extension [Self <: X3DDefaultSetter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: X3DDefaultSetter] (val x: Self) extends AnyVal {
     
     inline def setSet3DSettingsToDefault(value: () => Unit): Self = StObject.set(x, "set3DSettingsToDefault", js.Any.fromFunction0(value))
     

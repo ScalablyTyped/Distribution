@@ -21,7 +21,8 @@ object typesEnvironmentMod {
       __obj.asInstanceOf[Environment]
     }
     
-    extension [Self <: Environment](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Environment] (val x: Self) extends AnyVal {
       
       inline def setVariables(value: StringDictionary[String] | (js.Iterable[js.Tuple2[String, String]])): Self = StObject.set(x, "Variables", value.asInstanceOf[js.Any])
       
@@ -46,7 +47,8 @@ object typesEnvironmentMod {
       __obj.asInstanceOf[UnmarshalledEnvironment]
     }
     
-    extension [Self <: UnmarshalledEnvironment](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnmarshalledEnvironment] (val x: Self) extends AnyVal {
       
       inline def setVariables(value: StringDictionary[String]): Self = StObject.set(x, "Variables", value.asInstanceOf[js.Any])
       

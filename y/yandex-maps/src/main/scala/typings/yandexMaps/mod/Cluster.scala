@@ -22,7 +22,8 @@ object Cluster {
     __obj.asInstanceOf[Cluster]
   }
   
-  extension [Self <: Cluster](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Cluster] (val x: Self) extends AnyVal {
     
     inline def setGeometry(value: IGeometry): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object OriginRequestPolicyCookiesConfig {
     __obj.asInstanceOf[OriginRequestPolicyCookiesConfig]
   }
   
-  extension [Self <: OriginRequestPolicyCookiesConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OriginRequestPolicyCookiesConfig] (val x: Self) extends AnyVal {
     
     inline def setCookieBehavior(value: OriginRequestPolicyCookieBehavior): Self = StObject.set(x, "CookieBehavior", value.asInstanceOf[js.Any])
     

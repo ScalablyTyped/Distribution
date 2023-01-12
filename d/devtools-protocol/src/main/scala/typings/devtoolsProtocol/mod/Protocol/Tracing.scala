@@ -41,7 +41,8 @@ object Tracing {
       __obj.asInstanceOf[BufferUsageEvent]
     }
     
-    extension [Self <: BufferUsageEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BufferUsageEvent] (val x: Self) extends AnyVal {
       
       inline def setEventCount(value: Double): Self = StObject.set(x, "eventCount", value.asInstanceOf[js.Any])
       
@@ -68,7 +69,8 @@ object Tracing {
       __obj.asInstanceOf[DataCollectedEvent]
     }
     
-    extension [Self <: DataCollectedEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DataCollectedEvent] (val x: Self) extends AnyVal {
       
       inline def setValue(value: js.Array[Any]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
@@ -90,7 +92,8 @@ object Tracing {
       __obj.asInstanceOf[GetCategoriesResponse]
     }
     
-    extension [Self <: GetCategoriesResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetCategoriesResponse] (val x: Self) extends AnyVal {
       
       inline def setCategories(value: js.Array[String]): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
       
@@ -129,7 +132,8 @@ object Tracing {
       __obj.asInstanceOf[RecordClockSyncMarkerRequest]
     }
     
-    extension [Self <: RecordClockSyncMarkerRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RecordClockSyncMarkerRequest] (val x: Self) extends AnyVal {
       
       inline def setSyncId(value: String): Self = StObject.set(x, "syncId", value.asInstanceOf[js.Any])
     }
@@ -154,7 +158,8 @@ object Tracing {
       __obj.asInstanceOf[RequestMemoryDumpRequest]
     }
     
-    extension [Self <: RequestMemoryDumpRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequestMemoryDumpRequest] (val x: Self) extends AnyVal {
       
       inline def setDeterministic(value: Boolean): Self = StObject.set(x, "deterministic", value.asInstanceOf[js.Any])
       
@@ -185,7 +190,8 @@ object Tracing {
       __obj.asInstanceOf[RequestMemoryDumpResponse]
     }
     
-    extension [Self <: RequestMemoryDumpResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequestMemoryDumpResponse] (val x: Self) extends AnyVal {
       
       inline def setDumpGuid(value: String): Self = StObject.set(x, "dumpGuid", value.asInstanceOf[js.Any])
       
@@ -249,7 +255,8 @@ object Tracing {
       __obj.asInstanceOf[StartRequest]
     }
     
-    extension [Self <: StartRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StartRequest] (val x: Self) extends AnyVal {
       
       inline def setBufferUsageReportingInterval(value: Double): Self = StObject.set(x, "bufferUsageReportingInterval", value.asInstanceOf[js.Any])
       
@@ -380,7 +387,8 @@ object Tracing {
       __obj.asInstanceOf[TraceConfig]
     }
     
-    extension [Self <: TraceConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TraceConfig] (val x: Self) extends AnyVal {
       
       inline def setEnableArgumentFilter(value: Boolean): Self = StObject.set(x, "enableArgumentFilter", value.asInstanceOf[js.Any])
       
@@ -489,7 +497,8 @@ object Tracing {
       __obj.asInstanceOf[TracingCompleteEvent]
     }
     
-    extension [Self <: TracingCompleteEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TracingCompleteEvent] (val x: Self) extends AnyVal {
       
       inline def setDataLossOccurred(value: Boolean): Self = StObject.set(x, "dataLossOccurred", value.asInstanceOf[js.Any])
       

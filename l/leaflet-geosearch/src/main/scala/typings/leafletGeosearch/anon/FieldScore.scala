@@ -17,7 +17,8 @@ object FieldScore {
     __obj.asInstanceOf[FieldScore]
   }
   
-  extension [Self <: FieldScore](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FieldScore] (val x: Self) extends AnyVal {
     
     inline def setFieldScore(value: PlaceName): Self = StObject.set(x, "fieldScore", value.asInstanceOf[js.Any])
     

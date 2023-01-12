@@ -207,7 +207,8 @@ object mod {
       __obj.asInstanceOf[RedomComponent]
     }
     
-    extension [Self <: RedomComponent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RedomComponent] (val x: Self) extends AnyVal {
       
       inline def setEl(value: HTMLElement | SVGElement | RedomComponent): Self = StObject.set(x, "el", value.asInstanceOf[js.Any])
       

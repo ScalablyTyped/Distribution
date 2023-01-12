@@ -17,7 +17,8 @@ object LatestWkid {
     __obj.asInstanceOf[LatestWkid]
   }
   
-  extension [Self <: LatestWkid](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LatestWkid] (val x: Self) extends AnyVal {
     
     inline def setLatestWkid(value: Double): Self = StObject.set(x, "latestWkid", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object DeleteIntentVersionRequest {
     __obj.asInstanceOf[DeleteIntentVersionRequest]
   }
   
-  extension [Self <: DeleteIntentVersionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteIntentVersionRequest] (val x: Self) extends AnyVal {
     
     inline def setName(value: IntentName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

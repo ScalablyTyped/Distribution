@@ -24,7 +24,8 @@ object libNonEmptyStringMod {
       __obj.asInstanceOf[NonEmptyStringBrand]
     }
     
-    extension [Self <: NonEmptyStringBrand](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NonEmptyStringBrand] (val x: Self) extends AnyVal {
       
       inline def setNonEmptyString(value: js.Symbol): Self = StObject.set(x, "NonEmptyString", value.asInstanceOf[js.Any])
     }

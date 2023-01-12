@@ -15,7 +15,8 @@ object SetStyleTextsRequest {
     __obj.asInstanceOf[SetStyleTextsRequest]
   }
   
-  extension [Self <: SetStyleTextsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetStyleTextsRequest] (val x: Self) extends AnyVal {
     
     inline def setEdits(value: js.Array[StyleDeclarationEdit]): Self = StObject.set(x, "edits", value.asInstanceOf[js.Any])
     

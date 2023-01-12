@@ -25,7 +25,8 @@ object PullInstantiationHelpers {
       __obj.asInstanceOf[MutableTypeArgumentMap]
     }
     
-    extension [Self <: MutableTypeArgumentMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MutableTypeArgumentMap] (val x: Self) extends AnyVal {
       
       inline def setCreatedDuplicateTypeArgumentMap(value: Boolean): Self = StObject.set(x, "createdDuplicateTypeArgumentMap", value.asInstanceOf[js.Any])
       

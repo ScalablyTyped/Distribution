@@ -28,7 +28,8 @@ object RuntimeConfiguration {
     __obj.asInstanceOf[RuntimeConfiguration]
   }
   
-  extension [Self <: RuntimeConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RuntimeConfiguration] (val x: Self) extends AnyVal {
     
     inline def setGameSessionActivationTimeoutSeconds(value: GameSessionActivationTimeoutSeconds): Self = StObject.set(x, "GameSessionActivationTimeoutSeconds", value.asInstanceOf[js.Any])
     

@@ -90,7 +90,8 @@ object mod {
       __obj.asInstanceOf[AdditionalOptions]
     }
     
-    extension [Self <: AdditionalOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AdditionalOptions] (val x: Self) extends AnyVal {
       
       inline def setEnabled(value: Boolean | (js.Function1[/* htmlPluginData */ HtmlPluginData, Boolean])): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       
@@ -124,7 +125,8 @@ object mod {
       __obj.asInstanceOf[CspHtmlWebpackPlugin]
     }
     
-    extension [Self <: CspHtmlWebpackPlugin](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CspHtmlWebpackPlugin] (val x: Self) extends AnyVal {
       
       inline def setApply(value: Compiler => Unit): Self = StObject.set(x, "apply", js.Any.fromFunction1(value))
     }
@@ -155,7 +157,8 @@ object mod {
       __obj.asInstanceOf[HtmlPluginDataHookV3[T]]
     }
     
-    extension [Self <: HtmlPluginDataHookV3[?], T](x: Self & HtmlPluginDataHookV3[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HtmlPluginDataHookV3[?], T] (val x: Self & HtmlPluginDataHookV3[T]) extends AnyVal {
       
       inline def setHtmlWebpackPluginAfterHtmlProcessing(value: AsyncSeriesWaterfallHook[T, UnsetAdditionalOptions]): Self = StObject.set(x, "htmlWebpackPluginAfterHtmlProcessing", value.asInstanceOf[js.Any])
     }
@@ -172,7 +175,8 @@ object mod {
       __obj.asInstanceOf[HtmlPluginDataHookV4[T]]
     }
     
-    extension [Self <: HtmlPluginDataHookV4[?], T](x: Self & HtmlPluginDataHookV4[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HtmlPluginDataHookV4[?], T] (val x: Self & HtmlPluginDataHookV4[T]) extends AnyVal {
       
       inline def setBeforeEmit(value: AsyncSeriesWaterfallHook[T, UnsetAdditionalOptions]): Self = StObject.set(x, "beforeEmit", value.asInstanceOf[js.Any])
     }
@@ -209,7 +213,8 @@ object mod {
         __obj.asInstanceOf[Options]
       }
       
-      extension [Self <: Options](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
         
         inline def setCspPlugin(value: AdditionalOptionspolicyPo): Self = StObject.set(x, "cspPlugin", value.asInstanceOf[js.Any])
         

@@ -23,7 +23,8 @@ object ImageState {
     __obj.asInstanceOf[ImageState]
   }
   
-  extension [Self <: ImageState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImageState] (val x: Self) extends AnyVal {
     
     inline def setReason(value: NonEmptyString): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     

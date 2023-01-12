@@ -15,7 +15,8 @@ object Numrcpterrors {
     __obj.asInstanceOf[Numrcpterrors]
   }
   
-  extension [Self <: Numrcpterrors](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Numrcpterrors] (val x: Self) extends AnyVal {
     
     inline def setNum_rcpt_errors(value: Double): Self = StObject.set(x, "num_rcpt_errors", value.asInstanceOf[js.Any])
     

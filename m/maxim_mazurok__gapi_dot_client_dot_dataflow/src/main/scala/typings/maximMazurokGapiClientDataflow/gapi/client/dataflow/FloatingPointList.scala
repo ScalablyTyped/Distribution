@@ -16,7 +16,8 @@ object FloatingPointList {
     __obj.asInstanceOf[FloatingPointList]
   }
   
-  extension [Self <: FloatingPointList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FloatingPointList] (val x: Self) extends AnyVal {
     
     inline def setElements(value: js.Array[Double]): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
     

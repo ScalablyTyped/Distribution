@@ -17,7 +17,8 @@ object ICalculation {
     __obj.asInstanceOf[ICalculation]
   }
   
-  extension [Self <: ICalculation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICalculation] (val x: Self) extends AnyVal {
     
     inline def setCalculate(value: js.Function): Self = StObject.set(x, "calculate", value.asInstanceOf[js.Any])
     

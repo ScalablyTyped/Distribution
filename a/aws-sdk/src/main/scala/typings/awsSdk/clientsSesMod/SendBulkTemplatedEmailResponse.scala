@@ -18,7 +18,8 @@ object SendBulkTemplatedEmailResponse {
     __obj.asInstanceOf[SendBulkTemplatedEmailResponse]
   }
   
-  extension [Self <: SendBulkTemplatedEmailResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SendBulkTemplatedEmailResponse] (val x: Self) extends AnyVal {
     
     inline def setStatus(value: BulkEmailDestinationStatusList): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     

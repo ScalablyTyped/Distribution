@@ -20,7 +20,8 @@ object anon {
       __obj.asInstanceOf[BinaryType]
     }
     
-    extension [Self <: BinaryType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BinaryType] (val x: Self) extends AnyVal {
       
       inline def setBinaryType(value: arraybuffer | blob): Self = StObject.set(x, "binaryType", value.asInstanceOf[js.Any])
       
@@ -58,7 +59,8 @@ object anon {
       __obj.asInstanceOf[ChunkFileNames]
     }
     
-    extension [Self <: ChunkFileNames](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChunkFileNames] (val x: Self) extends AnyVal {
       
       inline def setChunkFileNames(value: Unit): Self = StObject.set(x, "chunkFileNames", value.asInstanceOf[js.Any])
       
@@ -102,7 +104,8 @@ object anon {
       __obj.asInstanceOf[Dir]
     }
     
-    extension [Self <: Dir](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Dir] (val x: Self) extends AnyVal {
       
       inline def setChunkFileNames(value: String): Self = StObject.set(x, "chunkFileNames", value.asInstanceOf[js.Any])
       
@@ -135,7 +138,8 @@ object anon {
       __obj.asInstanceOf[External]
     }
     
-    extension [Self <: External](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: External] (val x: Self) extends AnyVal {
       
       inline def setExternal(value: Unit): Self = StObject.set(x, "external", value.asInstanceOf[js.Any])
       
@@ -164,7 +168,8 @@ object anon {
       __obj.asInstanceOf[Index]
     }
     
-    extension [Self <: Index](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Index] (val x: Self) extends AnyVal {
       
       inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
@@ -191,7 +196,8 @@ object anon {
       __obj.asInstanceOf[Input]
     }
     
-    extension [Self <: Input](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Input] (val x: Self) extends AnyVal {
       
       inline def setExternal(value: js.Array[String]): Self = StObject.set(x, "external", value.asInstanceOf[js.Any])
       
@@ -222,7 +228,8 @@ object anon {
       __obj.asInstanceOf[Key]
     }
     
-    extension [Self <: Key](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Key] (val x: Self) extends AnyVal {
       
       inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
@@ -245,7 +252,8 @@ object anon {
       __obj.asInstanceOf[N]
     }
     
-    extension [Self <: N](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: N] (val x: Self) extends AnyVal {
       
       inline def setN(value: Double): Self = StObject.set(x, "n", value.asInstanceOf[js.Any])
       
@@ -270,7 +278,8 @@ object anon {
       __obj.asInstanceOf[Output]
     }
     
-    extension [Self <: Output](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Output] (val x: Self) extends AnyVal {
       
       inline def setExternal(value: js.Array[String]): Self = StObject.set(x, "external", value.asInstanceOf[js.Any])
       
@@ -299,7 +308,8 @@ object anon {
       __obj.asInstanceOf[_empty]
     }
     
-    extension [Self <: _empty](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: _empty] (val x: Self) extends AnyVal {
       
       inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
       

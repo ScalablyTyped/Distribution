@@ -34,7 +34,8 @@ object distCommandsSuggetWITHPAYLOADSMod {
       __obj.asInstanceOf[SuggestionWithPayload]
     }
     
-    extension [Self <: SuggestionWithPayload](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SuggestionWithPayload] (val x: Self) extends AnyVal {
       
       inline def setPayload(value: String): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
       

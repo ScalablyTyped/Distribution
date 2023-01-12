@@ -19,7 +19,8 @@ object SwapCommand {
     __obj.asInstanceOf[SwapCommand]
   }
   
-  extension [Self <: SwapCommand](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SwapCommand] (val x: Self) extends AnyVal {
     
     inline def set$swap(value: From): Self = StObject.set(x, "$swap", value.asInstanceOf[js.Any])
   }

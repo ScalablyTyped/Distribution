@@ -35,7 +35,8 @@ object anon {
       __obj.asInstanceOf[AddDisposeCallback]
     }
     
-    extension [Self <: AddDisposeCallback](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AddDisposeCallback] (val x: Self) extends AnyVal {
       
       inline def setAddDisposeCallback(value: (typings.std.Element, js.Function) => Unit): Self = StObject.set(x, "addDisposeCallback", js.Any.fromFunction2(value))
       
@@ -66,7 +67,8 @@ object anon {
       __obj.asInstanceOf[AddTemplate]
     }
     
-    extension [Self <: AddTemplate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AddTemplate] (val x: Self) extends AnyVal {
       
       inline def setAddTemplate(value: (String, String) => Unit): Self = StObject.set(x, "addTemplate", js.Any.fromFunction2(value))
       
@@ -100,7 +102,8 @@ object anon {
       __obj.asInstanceOf[BindingRewriteValidators]
     }
     
-    extension [Self <: BindingRewriteValidators](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BindingRewriteValidators] (val x: Self) extends AnyVal {
       
       inline def setBindingRewriteValidators(value: Any): Self = StObject.set(x, "bindingRewriteValidators", value.asInstanceOf[js.Any])
       
@@ -130,7 +133,8 @@ object anon {
       __obj.asInstanceOf[Clear]
     }
     
-    extension [Self <: Clear](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Clear] (val x: Self) extends AnyVal {
       
       inline def setClear(value: typings.std.Element => Boolean): Self = StObject.set(x, "clear", js.Any.fromFunction1(value))
       
@@ -153,7 +157,8 @@ object anon {
       __obj.asInstanceOf[ControlsDescendantBindings]
     }
     
-    extension [Self <: ControlsDescendantBindings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ControlsDescendantBindings] (val x: Self) extends AnyVal {
       
       inline def setControlsDescendantBindings(value: Boolean): Self = StObject.set(x, "controlsDescendantBindings", value.asInstanceOf[js.Any])
     }
@@ -172,7 +177,8 @@ object anon {
       __obj.asInstanceOf[Dictindex]
     }
     
-    extension [Self <: Dictindex](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Dictindex] (val x: Self) extends AnyVal {
       
       inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     }
@@ -191,7 +197,8 @@ object anon {
       __obj.asInstanceOf[Dictname]
     }
     
-    extension [Self <: Dictname](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Dictname] (val x: Self) extends AnyVal {
       
       inline def setSliding(value: KnockoutSlidingPageGenerator): Self = StObject.set(x, "sliding", value.asInstanceOf[js.Any])
     }
@@ -208,7 +215,8 @@ object anon {
       __obj.asInstanceOf[Element]
     }
     
-    extension [Self <: Element](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Element] (val x: Self) extends AnyVal {
       
       inline def setElement(value: Node): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     }
@@ -258,7 +266,8 @@ object anon {
       __obj.asInstanceOf[Method]
     }
     
-    extension [Self <: Method](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Method] (val x: Self) extends AnyVal {
       
       inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
@@ -279,7 +288,8 @@ object anon {
       __obj.asInstanceOf[Paged]
     }
     
-    extension [Self <: Paged](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Paged] (val x: Self) extends AnyVal {
       
       inline def setPaged(value: Any): Self = StObject.set(x, "paged", value.asInstanceOf[js.Any])
     }
@@ -298,7 +308,8 @@ object anon {
       __obj.asInstanceOf[ReadValue]
     }
     
-    extension [Self <: ReadValue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadValue] (val x: Self) extends AnyVal {
       
       inline def setReadValue(value: HTMLElement => Any): Self = StObject.set(x, "readValue", js.Any.fromFunction1(value))
       

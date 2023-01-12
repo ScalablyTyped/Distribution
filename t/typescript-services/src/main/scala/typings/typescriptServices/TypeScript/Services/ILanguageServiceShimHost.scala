@@ -59,7 +59,8 @@ object ILanguageServiceShimHost {
     __obj.asInstanceOf[ILanguageServiceShimHost]
   }
   
-  extension [Self <: ILanguageServiceShimHost](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ILanguageServiceShimHost] (val x: Self) extends AnyVal {
     
     inline def setDirectoryExists(value: String => Boolean): Self = StObject.set(x, "directoryExists", js.Any.fromFunction1(value))
     

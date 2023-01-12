@@ -23,7 +23,8 @@ object DeleteFileSystemLustreConfiguration {
     __obj.asInstanceOf[DeleteFileSystemLustreConfiguration]
   }
   
-  extension [Self <: DeleteFileSystemLustreConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteFileSystemLustreConfiguration] (val x: Self) extends AnyVal {
     
     inline def setFinalBackupTags(value: Tags): Self = StObject.set(x, "FinalBackupTags", value.asInstanceOf[js.Any])
     

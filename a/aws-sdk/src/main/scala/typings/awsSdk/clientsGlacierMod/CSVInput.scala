@@ -43,7 +43,8 @@ object CSVInput {
     __obj.asInstanceOf[CSVInput]
   }
   
-  extension [Self <: CSVInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CSVInput] (val x: Self) extends AnyVal {
     
     inline def setComments(value: String): Self = StObject.set(x, "Comments", value.asInstanceOf[js.Any])
     

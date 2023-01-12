@@ -25,7 +25,8 @@ object SVGAnimatedNumberList {
     __obj.asInstanceOf[SVGAnimatedNumberList]
   }
   
-  extension [Self <: SVGAnimatedNumberList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SVGAnimatedNumberList] (val x: Self) extends AnyVal {
     
     inline def setAnimVal(value: SVGNumberList): Self = StObject.set(x, "animVal", value.asInstanceOf[js.Any])
     

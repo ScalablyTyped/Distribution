@@ -79,7 +79,8 @@ object MathMenu {
     __obj.asInstanceOf[MathMenu]
   }
   
-  extension [Self <: MathMenu](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MathMenu] (val x: Self) extends AnyVal {
     
     inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
     

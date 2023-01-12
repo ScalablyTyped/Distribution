@@ -50,7 +50,8 @@ object TypeofTreasury {
     __obj.asInstanceOf[TypeofTreasury]
   }
   
-  extension [Self <: TypeofTreasury](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofTreasury] (val x: Self) extends AnyVal {
     
     inline def setInboundTransferFailParams(value: TypeofInboundTransferFail): Self = StObject.set(x, "InboundTransferFailParams", value.asInstanceOf[js.Any])
     

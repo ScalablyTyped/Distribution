@@ -48,7 +48,8 @@ object ModelQualityAppSpecification {
     __obj.asInstanceOf[ModelQualityAppSpecification]
   }
   
-  extension [Self <: ModelQualityAppSpecification](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModelQualityAppSpecification] (val x: Self) extends AnyVal {
     
     inline def setContainerArguments(value: MonitoringContainerArguments): Self = StObject.set(x, "ContainerArguments", value.asInstanceOf[js.Any])
     

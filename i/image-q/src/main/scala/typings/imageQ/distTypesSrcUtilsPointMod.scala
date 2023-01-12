@@ -69,7 +69,8 @@ object distTypesSrcUtilsPointMod {
       __obj.asInstanceOf[PointRGBA]
     }
     
-    extension [Self <: PointRGBA](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PointRGBA] (val x: Self) extends AnyVal {
       
       inline def setA(value: Double): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
       

@@ -28,7 +28,8 @@ object CreateProductOutput {
     __obj.asInstanceOf[CreateProductOutput]
   }
   
-  extension [Self <: CreateProductOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateProductOutput] (val x: Self) extends AnyVal {
     
     inline def setProductViewDetail(value: ProductViewDetail): Self = StObject.set(x, "ProductViewDetail", value.asInstanceOf[js.Any])
     

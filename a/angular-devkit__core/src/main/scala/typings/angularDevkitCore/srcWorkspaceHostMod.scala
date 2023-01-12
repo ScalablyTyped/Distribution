@@ -35,7 +35,8 @@ object srcWorkspaceHostMod {
       __obj.asInstanceOf[WorkspaceHost]
     }
     
-    extension [Self <: WorkspaceHost](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WorkspaceHost] (val x: Self) extends AnyVal {
       
       inline def setIsDirectory(value: String => js.Promise[Boolean]): Self = StObject.set(x, "isDirectory", js.Any.fromFunction1(value))
       

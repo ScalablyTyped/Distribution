@@ -44,7 +44,8 @@ object anon {
       __obj.asInstanceOf[BlueprintNamespace]
     }
     
-    extension [Self <: BlueprintNamespace](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BlueprintNamespace] (val x: Self) extends AnyVal {
       
       inline def setBlueprintNamespace(value: String): Self = StObject.set(x, "blueprintNamespace", value.asInstanceOf[js.Any])
       
@@ -73,7 +74,8 @@ object anon {
       __obj.asInstanceOf[Bottom]
     }
     
-    extension [Self <: Bottom](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Bottom] (val x: Self) extends AnyVal {
       
       inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       
@@ -102,7 +104,8 @@ object anon {
       __obj.asInstanceOf[ClassName]
     }
     
-    extension [Self <: ClassName](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClassName] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -133,7 +136,8 @@ object anon {
       __obj.asInstanceOf[Icon]
     }
     
-    extension [Self <: Icon](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Icon] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -164,7 +168,8 @@ object anon {
       __obj.asInstanceOf[MinimumPaneSizePercentage]
     }
     
-    extension [Self <: MinimumPaneSizePercentage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MinimumPaneSizePercentage] (val x: Self) extends AnyVal {
       
       inline def setMinimumPaneSizePercentage(value: Double): Self = StObject.set(x, "minimumPaneSizePercentage", value.asInstanceOf[js.Any])
       
@@ -224,7 +229,8 @@ object anon {
       __obj.asInstanceOf[PartialInternalMosaicWind]
     }
     
-    extension [Self <: PartialInternalMosaicWind](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialInternalMosaicWind] (val x: Self) extends AnyVal {
       
       inline def setAdditionalControlButtonText(value: String): Self = StObject.set(x, "additionalControlButtonText", value.asInstanceOf[js.Any])
       
@@ -330,7 +336,8 @@ object anon {
       __obj.asInstanceOf[PartialMosaicStateMosaicK]
     }
     
-    extension [Self <: PartialMosaicStateMosaicK](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialMosaicStateMosaicK] (val x: Self) extends AnyVal {
       
       inline def setCurrentNode(value: MosaicNode[MosaicKey]): Self = StObject.set(x, "currentNode", value.asInstanceOf[js.Any])
       
@@ -2614,7 +2621,8 @@ object anon {
   }
   object TypeofIconNames {
     
-    extension [Self <: TypeofIconNames](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypeofIconNames] (val x: Self) extends AnyVal {
       
       inline def setADD(value: BlueprintIcons16Id): Self = StObject.set(x, "ADD", value.asInstanceOf[js.Any])
       

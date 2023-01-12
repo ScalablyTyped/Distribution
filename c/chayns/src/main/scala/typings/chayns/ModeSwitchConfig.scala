@@ -27,7 +27,8 @@ object ModeSwitchConfig {
     __obj.asInstanceOf[ModeSwitchConfig]
   }
   
-  extension [Self <: ModeSwitchConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModeSwitchConfig] (val x: Self) extends AnyVal {
     
     inline def setCallback(value: ModeSwitchItem => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
     

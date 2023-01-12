@@ -25,7 +25,8 @@ object AssetParserOptions {
     __obj.asInstanceOf[AssetParserOptions]
   }
   
-  extension [Self <: AssetParserOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssetParserOptions] (val x: Self) extends AnyVal {
     
     inline def setDataUrlCondition(
       value: AssetParserDataUrlOptions | (js.Function2[/* source */ String | Buffer, /* context */ Filename, Boolean])

@@ -70,7 +70,8 @@ object LockScreen {
       __obj.asInstanceOf[LockScreenBadge]
     }
     
-    extension [Self <: LockScreenBadge](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LockScreenBadge] (val x: Self) extends AnyVal {
       
       inline def setAutomationName(value: String): Self = StObject.set(x, "automationName", value.asInstanceOf[js.Any])
       
@@ -158,7 +159,8 @@ object LockScreen {
       __obj.asInstanceOf[LockScreenUnlockingDeferral]
     }
     
-    extension [Self <: LockScreenUnlockingDeferral](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LockScreenUnlockingDeferral] (val x: Self) extends AnyVal {
       
       inline def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
     }
@@ -183,7 +185,8 @@ object LockScreen {
       __obj.asInstanceOf[LockScreenUnlockingEventArgs]
     }
     
-    extension [Self <: LockScreenUnlockingEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LockScreenUnlockingEventArgs] (val x: Self) extends AnyVal {
       
       inline def setDeadline(value: js.Date): Self = StObject.set(x, "deadline", value.asInstanceOf[js.Any])
       

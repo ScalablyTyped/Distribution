@@ -22,7 +22,8 @@ object Website {
     __obj.asInstanceOf[Website]
   }
   
-  extension [Self <: Website](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Website] (val x: Self) extends AnyVal {
     
     inline def setAddress(value: NullableOption[String]): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     

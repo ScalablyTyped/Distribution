@@ -21,7 +21,8 @@ object WiFiNetworkReport {
     __obj.asInstanceOf[WiFiNetworkReport]
   }
   
-  extension [Self <: WiFiNetworkReport](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WiFiNetworkReport] (val x: Self) extends AnyVal {
     
     inline def setAvailableNetworks(value: IVectorView[WiFiAvailableNetwork]): Self = StObject.set(x, "availableNetworks", value.asInstanceOf[js.Any])
     

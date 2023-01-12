@@ -15,7 +15,8 @@ object SearchContactsResponse {
     __obj.asInstanceOf[SearchContactsResponse]
   }
   
-  extension [Self <: SearchContactsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchContactsResponse] (val x: Self) extends AnyVal {
     
     inline def setResults(value: js.Array[SearchContactsResult]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
     

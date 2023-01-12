@@ -35,7 +35,8 @@ object SkyPaint {
     __obj.asInstanceOf[SkyPaint]
   }
   
-  extension [Self <: SkyPaint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SkyPaint] (val x: Self) extends AnyVal {
     
     inline def `setSky-atmosphere-color`(value: String | Expression): Self = StObject.set(x, "sky-atmosphere-color", value.asInstanceOf[js.Any])
     

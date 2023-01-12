@@ -96,7 +96,8 @@ object mod {
       __obj.asInstanceOf[IFrameMessageData]
     }
     
-    extension [Self <: IFrameMessageData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IFrameMessageData] (val x: Self) extends AnyVal {
       
       inline def setIframe(value: IFrameComponent): Self = StObject.set(x, "iframe", value.asInstanceOf[js.Any])
       
@@ -266,7 +267,8 @@ object mod {
       __obj.asInstanceOf[IFrameOptions]
     }
     
-    extension [Self <: IFrameOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IFrameOptions] (val x: Self) extends AnyVal {
       
       inline def setAutoResize(value: Boolean): Self = StObject.set(x, "autoResize", value.asInstanceOf[js.Any])
       
@@ -482,7 +484,8 @@ object mod {
       __obj.asInstanceOf[IFramePageOptions]
     }
     
-    extension [Self <: IFramePageOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IFramePageOptions] (val x: Self) extends AnyVal {
       
       inline def setHeightCalculationMethod(value: HeightCalculationMethod | js.Function0[Double]): Self = StObject.set(x, "heightCalculationMethod", value.asInstanceOf[js.Any])
       
@@ -529,7 +532,8 @@ object mod {
       __obj.asInstanceOf[IFrameResizedData]
     }
     
-    extension [Self <: IFrameResizedData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IFrameResizedData] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -555,7 +559,8 @@ object mod {
       __obj.asInstanceOf[IFrameScrollData]
     }
     
-    extension [Self <: IFrameScrollData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IFrameScrollData] (val x: Self) extends AnyVal {
       
       inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
@@ -621,7 +626,8 @@ object mod {
       __obj.asInstanceOf[PageInfo]
     }
     
-    extension [Self <: PageInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PageInfo] (val x: Self) extends AnyVal {
       
       inline def setClientHeight(value: Double): Self = StObject.set(x, "clientHeight", value.asInstanceOf[js.Any])
       

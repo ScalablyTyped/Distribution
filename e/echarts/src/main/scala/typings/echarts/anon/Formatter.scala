@@ -84,7 +84,8 @@ object Formatter {
     __obj.asInstanceOf[Formatter]
   }
   
-  extension [Self <: Formatter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Formatter] (val x: Self) extends AnyVal {
     
     inline def setFormatter(value: js.Function | String): Self = StObject.set(x, "formatter", value.asInstanceOf[js.Any])
     

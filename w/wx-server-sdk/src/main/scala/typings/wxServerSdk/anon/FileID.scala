@@ -15,7 +15,8 @@ object FileID {
     __obj.asInstanceOf[FileID]
   }
   
-  extension [Self <: FileID](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FileID] (val x: Self) extends AnyVal {
     
     inline def setFileID(value: String): Self = StObject.set(x, "fileID", value.asInstanceOf[js.Any])
   }

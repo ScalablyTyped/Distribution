@@ -25,7 +25,8 @@ object libContravariantMod {
       __obj.asInstanceOf[Contravariant[F]]
     }
     
-    extension [Self <: Contravariant[?], F](x: Self & Contravariant[F]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Contravariant[?], F] (val x: Self & Contravariant[F]) extends AnyVal {
       
       inline def setContramap(
         value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, A> */ Any, js.Function1[Any, Any]) => Any
@@ -54,7 +55,8 @@ object libContravariantMod {
       __obj.asInstanceOf[Contravariant1[F]]
     }
     
-    extension [Self <: Contravariant1[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ Any */](x: Self & Contravariant1[F]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Contravariant1[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ Any */] (val x: Self & Contravariant1[F]) extends AnyVal {
       
       inline def setContramap(
         value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<F, A> */ Any, js.Function1[Any, Any]) => Any
@@ -83,7 +85,8 @@ object libContravariantMod {
       __obj.asInstanceOf[Contravariant2[F]]
     }
     
-    extension [Self <: Contravariant2[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */](x: Self & Contravariant2[F]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Contravariant2[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */] (val x: Self & Contravariant2[F]) extends AnyVal {
       
       inline def setContramap(
         value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, A> */ Any, js.Function1[Any, Any]) => Any
@@ -115,7 +118,8 @@ object libContravariantMod {
       __obj.asInstanceOf[Contravariant2C[F, E]]
     }
     
-    extension [Self <: Contravariant2C[?, ?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */, E](x: Self & (Contravariant2C[F, E])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Contravariant2C[?, ?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */, E] (val x: Self & (Contravariant2C[F, E])) extends AnyVal {
       
       inline def setContramap(
         value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, A> */ Any, js.Function1[Any, Any]) => Any
@@ -146,7 +150,8 @@ object libContravariantMod {
       __obj.asInstanceOf[Contravariant3[F]]
     }
     
-    extension [Self <: Contravariant3[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */](x: Self & Contravariant3[F]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Contravariant3[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */] (val x: Self & Contravariant3[F]) extends AnyVal {
       
       inline def setContramap(
         value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, A> */ Any, js.Function1[Any, Any]) => Any
@@ -178,7 +183,8 @@ object libContravariantMod {
       __obj.asInstanceOf[Contravariant3C[F, E]]
     }
     
-    extension [Self <: Contravariant3C[?, ?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */, E](x: Self & (Contravariant3C[F, E])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Contravariant3C[?, ?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */, E] (val x: Self & (Contravariant3C[F, E])) extends AnyVal {
       
       inline def setContramap(
         value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, A> */ Any, js.Function1[Any, Any]) => Any
@@ -209,7 +215,8 @@ object libContravariantMod {
       __obj.asInstanceOf[Contravariant4[F]]
     }
     
-    extension [Self <: Contravariant4[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS4 */ Any */](x: Self & Contravariant4[F]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Contravariant4[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS4 */ Any */] (val x: Self & Contravariant4[F]) extends AnyVal {
       
       inline def setContramap(
         value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind4<F, S, R, E, A> */ Any, js.Function1[Any, Any]) => Any

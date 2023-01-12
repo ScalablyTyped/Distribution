@@ -28,7 +28,8 @@ object AttachPolicyRequest {
     __obj.asInstanceOf[AttachPolicyRequest]
   }
   
-  extension [Self <: AttachPolicyRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AttachPolicyRequest] (val x: Self) extends AnyVal {
     
     inline def setDirectoryArn(value: Arn): Self = StObject.set(x, "DirectoryArn", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object CustomOverlayOptions {
     __obj.asInstanceOf[CustomOverlayOptions]
   }
   
-  extension [Self <: CustomOverlayOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomOverlayOptions] (val x: Self) extends AnyVal {
     
     inline def setClickable(value: Boolean): Self = StObject.set(x, "clickable", value.asInstanceOf[js.Any])
     

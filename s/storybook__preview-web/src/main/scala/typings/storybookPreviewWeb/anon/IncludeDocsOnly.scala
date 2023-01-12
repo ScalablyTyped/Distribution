@@ -15,7 +15,8 @@ object IncludeDocsOnly {
     __obj.asInstanceOf[IncludeDocsOnly]
   }
   
-  extension [Self <: IncludeDocsOnly](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IncludeDocsOnly] (val x: Self) extends AnyVal {
     
     inline def setIncludeDocsOnly(value: Boolean): Self = StObject.set(x, "includeDocsOnly", value.asInstanceOf[js.Any])
   }

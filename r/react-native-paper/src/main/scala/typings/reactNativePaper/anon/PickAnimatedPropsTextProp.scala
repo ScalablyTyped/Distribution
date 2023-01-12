@@ -196,7 +196,8 @@ object PickAnimatedPropsTextProp {
     __obj.asInstanceOf[PickAnimatedPropsTextProp]
   }
   
-  extension [Self <: PickAnimatedPropsTextProp](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickAnimatedPropsTextProp] (val x: Self) extends AnyVal {
     
     inline def setAccessibilityActions(
       value: /* import warning: importer.ImportType#apply Failed type conversion: 'accessibilityActions' extends react-native.react-native.Animated.NonAnimatedProps ? 'accessibilityActions' extends 'ref' ? react-native.react-native.Animated.TAugmentRef<std.ReadonlyArray<react-native.react-native.AccessibilityActionInfo> | undefined> : std.ReadonlyArray<react-native.react-native.AccessibilityActionInfo> | undefined : react-native.react-native.Animated.WithAnimatedValue<std.ReadonlyArray<react-native.react-native.AccessibilityActionInfo> | undefined> */ js.Any

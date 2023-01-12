@@ -42,7 +42,8 @@ object Order {
     __obj.asInstanceOf[Order]
   }
   
-  extension [Self <: Order](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Order] (val x: Self) extends AnyVal {
     
     inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     

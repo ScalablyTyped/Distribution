@@ -35,7 +35,8 @@ object typesLibPopoverHeaderMod {
       __obj.asInstanceOf[PopoverHeaderProps]
     }
     
-    extension [Self <: PopoverHeaderProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PopoverHeaderProps] (val x: Self) extends AnyVal {
       
       inline def setCssModule(value: CSSModule): Self = StObject.set(x, "cssModule", value.asInstanceOf[js.Any])
       

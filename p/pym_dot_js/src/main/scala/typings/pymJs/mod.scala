@@ -93,7 +93,8 @@ object mod {
       __obj.asInstanceOf[ChildOptions]
     }
     
-    extension [Self <: ChildOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChildOptions] (val x: Self) extends AnyVal {
       
       inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -181,7 +182,8 @@ object mod {
       __obj.asInstanceOf[ParentOptions]
     }
     
-    extension [Self <: ParentOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParentOptions] (val x: Self) extends AnyVal {
       
       inline def setAllowfullscreen(value: Boolean): Self = StObject.set(x, "allowfullscreen", value.asInstanceOf[js.Any])
       

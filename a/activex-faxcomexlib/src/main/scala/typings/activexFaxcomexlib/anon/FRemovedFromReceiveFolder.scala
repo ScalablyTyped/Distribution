@@ -20,7 +20,8 @@ object FRemovedFromReceiveFolder {
     __obj.asInstanceOf[FRemovedFromReceiveFolder]
   }
   
-  extension [Self <: FRemovedFromReceiveFolder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FRemovedFromReceiveFolder] (val x: Self) extends AnyVal {
     
     inline def setBstrMessageId(value: String): Self = StObject.set(x, "bstrMessageId", value.asInstanceOf[js.Any])
     

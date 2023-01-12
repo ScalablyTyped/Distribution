@@ -50,7 +50,8 @@ object Allowstdin {
     __obj.asInstanceOf[Allowstdin]
   }
   
-  extension [Self <: Allowstdin](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Allowstdin] (val x: Self) extends AnyVal {
     
     inline def setAllow_stdin(value: Boolean): Self = StObject.set(x, "allow_stdin", value.asInstanceOf[js.Any])
     

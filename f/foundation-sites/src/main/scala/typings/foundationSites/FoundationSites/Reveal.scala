@@ -20,7 +20,8 @@ object Reveal {
     __obj.asInstanceOf[Reveal]
   }
   
-  extension [Self <: Reveal](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Reveal] (val x: Self) extends AnyVal {
     
     inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
     

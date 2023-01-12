@@ -16,7 +16,8 @@ object SeedOnlyInitializerArgs {
     __obj.asInstanceOf[SeedOnlyInitializerArgs]
   }
   
-  extension [Self <: SeedOnlyInitializerArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SeedOnlyInitializerArgs] (val x: Self) extends AnyVal {
     
     inline def setSeed(value: Double): Self = StObject.set(x, "seed", value.asInstanceOf[js.Any])
     

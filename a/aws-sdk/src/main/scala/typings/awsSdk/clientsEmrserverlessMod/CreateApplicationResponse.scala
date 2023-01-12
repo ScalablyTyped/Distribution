@@ -28,7 +28,8 @@ object CreateApplicationResponse {
     __obj.asInstanceOf[CreateApplicationResponse]
   }
   
-  extension [Self <: CreateApplicationResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateApplicationResponse] (val x: Self) extends AnyVal {
     
     inline def setApplicationId(value: ApplicationId): Self = StObject.set(x, "applicationId", value.asInstanceOf[js.Any])
     

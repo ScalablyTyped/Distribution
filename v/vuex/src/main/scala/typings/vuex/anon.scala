@@ -29,7 +29,8 @@ object anon {
       __obj.asInstanceOf[Actions[S]]
     }
     
-    extension [Self <: Actions[?], S](x: Self & Actions[S]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Actions[?], S] (val x: Self & Actions[S]) extends AnyVal {
       
       inline def setActions(value: ActionTree[S, S]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
       

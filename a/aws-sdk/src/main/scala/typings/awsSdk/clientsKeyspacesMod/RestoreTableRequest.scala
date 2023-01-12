@@ -63,7 +63,8 @@ object RestoreTableRequest {
     __obj.asInstanceOf[RestoreTableRequest]
   }
   
-  extension [Self <: RestoreTableRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RestoreTableRequest] (val x: Self) extends AnyVal {
     
     inline def setCapacitySpecificationOverride(value: CapacitySpecification): Self = StObject.set(x, "capacitySpecificationOverride", value.asInstanceOf[js.Any])
     

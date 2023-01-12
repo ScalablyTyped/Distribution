@@ -81,7 +81,8 @@ object CreateJobRequest {
     __obj.asInstanceOf[CreateJobRequest]
   }
   
-  extension [Self <: CreateJobRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateJobRequest] (val x: Self) extends AnyVal {
     
     inline def setAlgorithmSpecification(value: AlgorithmSpecification): Self = StObject.set(x, "algorithmSpecification", value.asInstanceOf[js.Any])
     

@@ -29,7 +29,8 @@ object VoiceMediaInfo {
     __obj.asInstanceOf[VoiceMediaInfo]
   }
   
-  extension [Self <: VoiceMediaInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VoiceMediaInfo] (val x: Self) extends AnyVal {
     
     inline def setAutoAccept(value: Boolean): Self = StObject.set(x, "autoAccept", value.asInstanceOf[js.Any])
     

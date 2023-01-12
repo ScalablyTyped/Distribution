@@ -72,7 +72,8 @@ object ActionOnFailedPrimaryWorkers {
     __obj.asInstanceOf[ActionOnFailedPrimaryWorkers]
   }
   
-  extension [Self <: ActionOnFailedPrimaryWorkers](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ActionOnFailedPrimaryWorkers] (val x: Self) extends AnyVal {
     
     inline def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
     

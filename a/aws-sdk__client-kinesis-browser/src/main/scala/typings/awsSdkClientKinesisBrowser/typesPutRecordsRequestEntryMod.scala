@@ -30,7 +30,8 @@ object typesPutRecordsRequestEntryMod {
       __obj.asInstanceOf[PutRecordsRequestEntry]
     }
     
-    extension [Self <: PutRecordsRequestEntry](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PutRecordsRequestEntry] (val x: Self) extends AnyVal {
       
       inline def setData(value: js.typedarray.ArrayBuffer | js.typedarray.ArrayBufferView | String): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
       
@@ -59,7 +60,8 @@ object typesPutRecordsRequestEntryMod {
       __obj.asInstanceOf[UnmarshalledPutRecordsRequestEntry]
     }
     
-    extension [Self <: UnmarshalledPutRecordsRequestEntry](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnmarshalledPutRecordsRequestEntry] (val x: Self) extends AnyVal {
       
       inline def setData(value: js.typedarray.Uint8Array): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
     }

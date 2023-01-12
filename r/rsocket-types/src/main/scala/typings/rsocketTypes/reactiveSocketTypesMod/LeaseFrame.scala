@@ -32,7 +32,8 @@ object LeaseFrame {
     __obj.asInstanceOf[LeaseFrame]
   }
   
-  extension [Self <: LeaseFrame](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LeaseFrame] (val x: Self) extends AnyVal {
     
     inline def setFlags(value: Double): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object MultiplexProgramServiceDescriptor {
     __obj.asInstanceOf[MultiplexProgramServiceDescriptor]
   }
   
-  extension [Self <: MultiplexProgramServiceDescriptor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MultiplexProgramServiceDescriptor] (val x: Self) extends AnyVal {
     
     inline def setProviderName(value: stringMax256): Self = StObject.set(x, "ProviderName", value.asInstanceOf[js.Any])
     

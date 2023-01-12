@@ -42,7 +42,8 @@ object AdGroupExtensions {
     __obj.asInstanceOf[AdGroupExtensions]
   }
   
-  extension [Self <: AdGroupExtensions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AdGroupExtensions] (val x: Self) extends AnyVal {
     
     inline def setCallouts(value: () => AdGroupCalloutSelector): Self = StObject.set(x, "callouts", js.Any.fromFunction0(value))
     

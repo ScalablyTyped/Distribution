@@ -31,7 +31,8 @@ object libUseThemeMod {
       __obj.asInstanceOf[UseTheme]
     }
     
-    extension [Self <: UseTheme](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UseTheme] (val x: Self) extends AnyVal {
       
       inline def setIsDark(value: Boolean): Self = StObject.set(x, "isDark", value.asInstanceOf[js.Any])
       

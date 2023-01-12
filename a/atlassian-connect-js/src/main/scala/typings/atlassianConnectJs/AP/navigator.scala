@@ -137,7 +137,8 @@ object navigator {
       __obj.asInstanceOf[NavigatorContext]
     }
     
-    extension [Self <: NavigatorContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NavigatorContext] (val x: Self) extends AnyVal {
       
       inline def setAbsoluteUrl(value: String): Self = StObject.set(x, "absoluteUrl", value.asInstanceOf[js.Any])
       

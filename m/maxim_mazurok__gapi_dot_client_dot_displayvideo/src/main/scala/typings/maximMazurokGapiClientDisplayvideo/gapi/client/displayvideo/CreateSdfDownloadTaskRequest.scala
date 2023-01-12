@@ -37,7 +37,8 @@ object CreateSdfDownloadTaskRequest {
     __obj.asInstanceOf[CreateSdfDownloadTaskRequest]
   }
   
-  extension [Self <: CreateSdfDownloadTaskRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateSdfDownloadTaskRequest] (val x: Self) extends AnyVal {
     
     inline def setAdvertiserId(value: String): Self = StObject.set(x, "advertiserId", value.asInstanceOf[js.Any])
     

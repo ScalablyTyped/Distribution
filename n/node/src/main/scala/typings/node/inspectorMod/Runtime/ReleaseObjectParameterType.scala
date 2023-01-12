@@ -18,7 +18,8 @@ object ReleaseObjectParameterType {
     __obj.asInstanceOf[ReleaseObjectParameterType]
   }
   
-  extension [Self <: ReleaseObjectParameterType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReleaseObjectParameterType] (val x: Self) extends AnyVal {
     
     inline def setObjectId(value: RemoteObjectId): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
   }

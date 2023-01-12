@@ -118,7 +118,8 @@ object BorderWidth {
     __obj.asInstanceOf[BorderWidth]
   }
   
-  extension [Self <: BorderWidth](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BorderWidth] (val x: Self) extends AnyVal {
     
     inline def setBorderColor(value: typings.echarts.echarts.EChartOption.Color): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
     

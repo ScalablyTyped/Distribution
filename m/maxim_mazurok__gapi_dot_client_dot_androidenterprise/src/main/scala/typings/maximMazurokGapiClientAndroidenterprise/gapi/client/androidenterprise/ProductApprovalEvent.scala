@@ -19,7 +19,8 @@ object ProductApprovalEvent {
     __obj.asInstanceOf[ProductApprovalEvent]
   }
   
-  extension [Self <: ProductApprovalEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProductApprovalEvent] (val x: Self) extends AnyVal {
     
     inline def setApproved(value: String): Self = StObject.set(x, "approved", value.asInstanceOf[js.Any])
     

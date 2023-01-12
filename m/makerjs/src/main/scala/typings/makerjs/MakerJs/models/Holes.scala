@@ -20,7 +20,8 @@ object Holes {
     __obj.asInstanceOf[Holes]
   }
   
-  extension [Self <: Holes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Holes] (val x: Self) extends AnyVal {
     
     inline def setPaths(value: IPathMap): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
   }

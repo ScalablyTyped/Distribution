@@ -19,7 +19,8 @@ object DidCloseTextDocumentParams {
     __obj.asInstanceOf[DidCloseTextDocumentParams]
   }
   
-  extension [Self <: DidCloseTextDocumentParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DidCloseTextDocumentParams] (val x: Self) extends AnyVal {
     
     inline def setTextDocument(value: TextDocumentIdentifier): Self = StObject.set(x, "textDocument", value.asInstanceOf[js.Any])
   }

@@ -147,7 +147,8 @@ object distTypesCrtSignerV4Mod {
       __obj.asInstanceOf[CrtSignerV4Init]
     }
     
-    extension [Self <: CrtSignerV4Init](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CrtSignerV4Init] (val x: Self) extends AnyVal {
       
       inline def setSigningAlgorithm(value: AwsSigningAlgorithm): Self = StObject.set(x, "signingAlgorithm", value.asInstanceOf[js.Any])
       

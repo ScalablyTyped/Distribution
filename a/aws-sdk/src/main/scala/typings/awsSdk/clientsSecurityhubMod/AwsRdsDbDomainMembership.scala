@@ -33,7 +33,8 @@ object AwsRdsDbDomainMembership {
     __obj.asInstanceOf[AwsRdsDbDomainMembership]
   }
   
-  extension [Self <: AwsRdsDbDomainMembership](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsRdsDbDomainMembership] (val x: Self) extends AnyVal {
     
     inline def setDomain(value: NonEmptyString): Self = StObject.set(x, "Domain", value.asInstanceOf[js.Any])
     

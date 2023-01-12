@@ -561,7 +561,8 @@ object distDeclarationsSrcAnimatedMod {
   }
   object AnimatedPrimitives {
     
-    extension [Self <: AnimatedPrimitives](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AnimatedPrimitives] (val x: Self) extends AnyVal {
       
       inline def setA(value: AnimatedComponent[a]): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
       
@@ -6616,7 +6617,8 @@ object distDeclarationsSrcAnimatedMod {
       __obj.asInstanceOf[StyleProps]
     }
     
-    extension [Self <: StyleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StyleProps] (val x: Self) extends AnyVal {
       
       inline def setAccentColor(
         value: /* import warning: importer.ImportType#apply Failed type conversion: 'accentColor' extends keyof @react-spring/web.@react-spring/web/dist/declarations/src/animated.TransformProps ? any | undefined : csstype.csstype.Property.AccentColor | undefined */ js.Any
@@ -11529,7 +11531,8 @@ object distDeclarationsSrcAnimatedMod {
       __obj.asInstanceOf[TransformProps]
     }
     
-    extension [Self <: TransformProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TransformProps] (val x: Self) extends AnyVal {
       
       inline def setMatrix(value: js.Tuple6[Double, Double, Double, Double, Double, Double]): Self = StObject.set(x, "matrix", value.asInstanceOf[js.Any])
       

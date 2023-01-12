@@ -22,7 +22,8 @@ object MappingConstantKeywordProperty {
     __obj.asInstanceOf[MappingConstantKeywordProperty]
   }
   
-  extension [Self <: MappingConstantKeywordProperty](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MappingConstantKeywordProperty] (val x: Self) extends AnyVal {
     
     inline def setType(value: constant_keyword): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object ParticipantKickedOutEvent {
     __obj.asInstanceOf[ParticipantKickedOutEvent]
   }
   
-  extension [Self <: ParticipantKickedOutEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParticipantKickedOutEvent] (val x: Self) extends AnyVal {
     
     inline def setKicked(value: Local): Self = StObject.set(x, "kicked", value.asInstanceOf[js.Any])
     

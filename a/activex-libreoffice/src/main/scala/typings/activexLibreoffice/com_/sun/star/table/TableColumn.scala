@@ -62,7 +62,8 @@ object TableColumn {
     __obj.asInstanceOf[TableColumn]
   }
   
-  extension [Self <: TableColumn](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TableColumn] (val x: Self) extends AnyVal {
     
     inline def setIsStartOfNewPage(value: Boolean): Self = StObject.set(x, "IsStartOfNewPage", value.asInstanceOf[js.Any])
     

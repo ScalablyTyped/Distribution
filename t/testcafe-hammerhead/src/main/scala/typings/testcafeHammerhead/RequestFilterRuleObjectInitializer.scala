@@ -19,7 +19,8 @@ object RequestFilterRuleObjectInitializer {
     __obj.asInstanceOf[RequestFilterRuleObjectInitializer]
   }
   
-  extension [Self <: RequestFilterRuleObjectInitializer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RequestFilterRuleObjectInitializer] (val x: Self) extends AnyVal {
     
     inline def setIsAjax(value: Boolean): Self = StObject.set(x, "isAjax", value.asInstanceOf[js.Any])
     

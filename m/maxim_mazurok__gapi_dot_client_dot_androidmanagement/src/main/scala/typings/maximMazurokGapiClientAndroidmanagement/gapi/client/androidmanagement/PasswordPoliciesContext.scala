@@ -16,7 +16,8 @@ object PasswordPoliciesContext {
     __obj.asInstanceOf[PasswordPoliciesContext]
   }
   
-  extension [Self <: PasswordPoliciesContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PasswordPoliciesContext] (val x: Self) extends AnyVal {
     
     inline def setPasswordPolicyScope(value: String): Self = StObject.set(x, "passwordPolicyScope", value.asInstanceOf[js.Any])
     

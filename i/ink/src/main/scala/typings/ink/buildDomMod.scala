@@ -68,7 +68,8 @@ object buildDomMod {
       __obj.asInstanceOf[DOMElement]
     }
     
-    extension [Self <: DOMElement](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DOMElement] (val x: Self) extends AnyVal {
       
       inline def setAttributes(value: StringDictionary[DOMNodeAttribute]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
@@ -146,7 +147,8 @@ object buildDomMod {
       __obj.asInstanceOf[InkNode]
     }
     
-    extension [Self <: InkNode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InkNode] (val x: Self) extends AnyVal {
       
       inline def setInternal_static(value: Boolean): Self = StObject.set(x, "internal_static", value.asInstanceOf[js.Any])
       
@@ -183,7 +185,8 @@ object buildDomMod {
       __obj.asInstanceOf[TextNode]
     }
     
-    extension [Self <: TextNode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TextNode] (val x: Self) extends AnyVal {
       
       inline def setNodeName(value: TextName): Self = StObject.set(x, "nodeName", value.asInstanceOf[js.Any])
       

@@ -40,7 +40,8 @@ object IMediaTypeResource {
     __obj.asInstanceOf[IMediaTypeResource]
   }
   
-  extension [Self <: IMediaTypeResource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IMediaTypeResource] (val x: Self) extends AnyVal {
     
     inline def setGetAllowedTypes(value: Double => IPromise[IResourcePromise]): Self = StObject.set(x, "getAllowedTypes", js.Any.fromFunction1(value))
   }

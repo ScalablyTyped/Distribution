@@ -86,7 +86,8 @@ object srcNgtscTypecheckApiCompletionMod {
       __obj.asInstanceOf[GlobalCompletion]
     }
     
-    extension [Self <: GlobalCompletion](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GlobalCompletion] (val x: Self) extends AnyVal {
       
       inline def setComponentContext(value: TcbLocation): Self = StObject.set(x, "componentContext", value.asInstanceOf[js.Any])
       
@@ -116,7 +117,8 @@ object srcNgtscTypecheckApiCompletionMod {
       __obj.asInstanceOf[ReferenceCompletion]
     }
     
-    extension [Self <: ReferenceCompletion](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReferenceCompletion] (val x: Self) extends AnyVal {
       
       inline def setKind(value: Reference): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
       
@@ -142,7 +144,8 @@ object srcNgtscTypecheckApiCompletionMod {
       __obj.asInstanceOf[VariableCompletion]
     }
     
-    extension [Self <: VariableCompletion](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VariableCompletion] (val x: Self) extends AnyVal {
       
       inline def setKind(value: Variable): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
       

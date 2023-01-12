@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "media-typer"
-version := "1.1-dt-20211202Z-9d1249"
+version := "1.1-dt-20211202Z-86ca23"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

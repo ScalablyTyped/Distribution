@@ -49,7 +49,8 @@ object typesFormThemeProviderMod {
       __obj.asInstanceOf[FormThemeContext]
     }
     
-    extension [Self <: FormThemeContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FormThemeContext] (val x: Self) extends AnyVal {
       
       inline def setTheme(value: FormTheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       
@@ -76,7 +77,8 @@ object typesFormThemeProviderMod {
       __obj.asInstanceOf[FormThemeOptions]
     }
     
-    extension [Self <: FormThemeOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FormThemeOptions] (val x: Self) extends AnyVal {
       
       inline def setTheme(value: FormTheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       
@@ -101,7 +103,8 @@ object typesFormThemeProviderMod {
       __obj.asInstanceOf[FormThemeProviderProps]
     }
     
-    extension [Self <: FormThemeProviderProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FormThemeProviderProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

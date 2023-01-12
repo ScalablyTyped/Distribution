@@ -25,7 +25,8 @@ object anon {
       __obj.asInstanceOf[`0`[T]]
     }
     
-    extension [Self <: `0`[?], T](x: Self & `0`[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: `0`[?], T] (val x: Self & `0`[T]) extends AnyVal {
       
       inline def setResults(value: js.Array[Doc[T]]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
       
@@ -49,7 +50,8 @@ object anon {
       __obj.asInstanceOf[Data]
     }
     
-    extension [Self <: Data](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Data] (val x: Self) extends AnyVal {
       
       inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -94,7 +96,8 @@ object anon {
       __obj.asInstanceOf[Db]
     }
     
-    extension [Self <: Db](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Db] (val x: Self) extends AnyVal {
       
       inline def setDb(value: Any): Self = StObject.set(x, "db", value.asInstanceOf[js.Any])
       
@@ -157,7 +160,8 @@ object anon {
       __obj.asInstanceOf[IsServer]
     }
     
-    extension [Self <: IsServer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IsServer] (val x: Self) extends AnyVal {
       
       inline def setIsServer(value: Boolean): Self = StObject.set(x, "isServer", value.asInstanceOf[js.Any])
       
@@ -176,7 +180,8 @@ object anon {
       __obj.asInstanceOf[Metadata]
     }
     
-    extension [Self <: Metadata](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Metadata] (val x: Self) extends AnyVal {
       
       inline def setMetadata(value: Boolean): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
       
@@ -195,7 +200,8 @@ object anon {
       __obj.asInstanceOf[Results]
     }
     
-    extension [Self <: Results](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Results] (val x: Self) extends AnyVal {
       
       inline def setResults(value: js.Array[Query[Any]]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
       
@@ -216,7 +222,8 @@ object anon {
       __obj.asInstanceOf[Source]
     }
     
-    extension [Self <: Source](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Source] (val x: Self) extends AnyVal {
       
       inline def setSource(value: Any): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       

@@ -57,7 +57,8 @@ object libSchemaDatabaseSchemaMod {
       __obj.asInstanceOf[ColumnDef]
     }
     
-    extension [Self <: ColumnDef](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColumnDef] (val x: Self) extends AnyVal {
       
       inline def setCharLength(value: Double): Self = StObject.set(x, "charLength", value.asInstanceOf[js.Any])
       
@@ -120,7 +121,8 @@ object libSchemaDatabaseSchemaMod {
       __obj.asInstanceOf[ColumnInfo]
     }
     
-    extension [Self <: ColumnInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColumnInfo] (val x: Self) extends AnyVal {
       
       inline def setCharLength(value: Double): Self = StObject.set(x, "charLength", value.asInstanceOf[js.Any])
       
@@ -279,7 +281,8 @@ object libSchemaDatabaseSchemaMod {
       __obj.asInstanceOf[IndexDef]
     }
     
-    extension [Self <: IndexDef](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IndexDef] (val x: Self) extends AnyVal {
       
       inline def setColumns(value: js.Array[String]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
       
@@ -348,7 +351,8 @@ object libSchemaDatabaseSchemaMod {
       __obj.asInstanceOf[IndexInfo]
     }
     
-    extension [Self <: IndexInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IndexInfo] (val x: Self) extends AnyVal {
       
       inline def setColumns(value: js.Array[String]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
       
@@ -389,7 +393,8 @@ object libSchemaDatabaseSchemaMod {
       __obj.asInstanceOf[TableInfo]
     }
     
-    extension [Self <: TableInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TableInfo] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -432,7 +437,8 @@ object libSchemaDatabaseSchemaMod {
       __obj.asInstanceOf[TriggerInfo]
     }
     
-    extension [Self <: TriggerInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TriggerInfo] (val x: Self) extends AnyVal {
       
       inline def setActionCondition(value: String): Self = StObject.set(x, "actionCondition", value.asInstanceOf[js.Any])
       
@@ -465,7 +471,8 @@ object libSchemaDatabaseSchemaMod {
       __obj.asInstanceOf[ViewInfo]
     }
     
-    extension [Self <: ViewInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ViewInfo] (val x: Self) extends AnyVal {
       
       inline def setDefinition(value: String): Self = StObject.set(x, "definition", value.asInstanceOf[js.Any])
       

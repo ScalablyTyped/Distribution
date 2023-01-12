@@ -29,7 +29,8 @@ object WatchRequest {
     __obj.asInstanceOf[WatchRequest]
   }
   
-  extension [Self <: WatchRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WatchRequest] (val x: Self) extends AnyVal {
     
     inline def setLabelFilterAction(value: String): Self = StObject.set(x, "labelFilterAction", value.asInstanceOf[js.Any])
     

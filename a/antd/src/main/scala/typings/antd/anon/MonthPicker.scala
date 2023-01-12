@@ -66,7 +66,8 @@ object MonthPicker {
     __obj.asInstanceOf[MonthPicker[DateType]]
   }
   
-  extension [Self <: MonthPicker[?], DateType](x: Self & MonthPicker[DateType]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MonthPicker[?], DateType] (val x: Self & MonthPicker[DateType]) extends AnyVal {
     
     inline def setMonthPicker(value: PickerComponentClass[Omit[PickerProps[DateType] & PopupClassName, picker], Any]): Self = StObject.set(x, "MonthPicker", value.asInstanceOf[js.Any])
     

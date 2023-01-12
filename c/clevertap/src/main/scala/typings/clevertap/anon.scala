@@ -26,7 +26,8 @@ object anon {
       __obj.asInstanceOf[Body]
     }
     
-    extension [Self <: Body](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Body] (val x: Self) extends AnyVal {
       
       inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
@@ -59,7 +60,8 @@ object anon {
       __obj.asInstanceOf[Commonprofileproperties]
     }
     
-    extension [Self <: Commonprofileproperties](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Commonprofileproperties] (val x: Self) extends AnyVal {
       
       inline def setCommon_profile_properties(value: Profilefields): Self = StObject.set(x, "common_profile_properties", value.asInstanceOf[js.Any])
       
@@ -90,7 +92,8 @@ object anon {
       __obj.asInstanceOf[Debug]
     }
     
-    extension [Self <: Debug](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Debug] (val x: Self) extends AnyVal {
       
       inline def setDebug(value: Double): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
       
@@ -113,7 +116,8 @@ object anon {
       __obj.asInstanceOf[Email]
     }
     
-    extension [Self <: Email](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Email] (val x: Self) extends AnyVal {
       
       inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
       
@@ -147,7 +151,8 @@ object anon {
       __obj.asInstanceOf[EvtData]
     }
     
-    extension [Self <: EvtData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EvtData] (val x: Self) extends AnyVal {
       
       inline def setEvtData(value: Record[String, Any]): Self = StObject.set(x, "evtData", value.asInstanceOf[js.Any])
       
@@ -178,7 +183,8 @@ object anon {
       __obj.asInstanceOf[FBID]
     }
     
-    extension [Self <: FBID](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FBID] (val x: Self) extends AnyVal {
       
       inline def setFBID(value: String): Self = StObject.set(x, "FBID", value.asInstanceOf[js.Any])
       
@@ -211,7 +217,8 @@ object anon {
       __obj.asInstanceOf[From]
     }
     
-    extension [Self <: From](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: From] (val x: Self) extends AnyVal {
       
       inline def setFrom(value: Double): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       
@@ -234,7 +241,8 @@ object anon {
       __obj.asInstanceOf[Id]
     }
     
-    extension [Self <: Id](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Id] (val x: Self) extends AnyVal {
       
       inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     }
@@ -256,7 +264,8 @@ object anon {
       __obj.asInstanceOf[ProfileData]
     }
     
-    extension [Self <: ProfileData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProfileData] (val x: Self) extends AnyVal {
       
       inline def setProfileData(value: Record[String, Any]): Self = StObject.set(x, "profileData", value.asInstanceOf[js.Any])
       
@@ -279,7 +288,8 @@ object anon {
       __obj.asInstanceOf[Profilefields]
     }
     
-    extension [Self <: Profilefields](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Profilefields] (val x: Self) extends AnyVal {
       
       inline def setProfile_fields(value: js.Array[Record[String, Any]]): Self = StObject.set(x, "profile_fields", value.asInstanceOf[js.Any])
       

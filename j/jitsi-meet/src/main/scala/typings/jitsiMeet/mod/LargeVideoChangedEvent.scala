@@ -15,7 +15,8 @@ object LargeVideoChangedEvent {
     __obj.asInstanceOf[LargeVideoChangedEvent]
   }
   
-  extension [Self <: LargeVideoChangedEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LargeVideoChangedEvent] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
   }

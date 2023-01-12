@@ -17,7 +17,8 @@ object ChartData {
     __obj.asInstanceOf[ChartData[TType, TData, TLabel]]
   }
   
-  extension [Self <: ChartData[?, ?, ?], TType /* <: ChartType */, TData, TLabel](x: Self & (ChartData[TType, TData, TLabel])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChartData[?, ?, ?], TType /* <: ChartType */, TData, TLabel] (val x: Self & (ChartData[TType, TData, TLabel])) extends AnyVal {
     
     inline def setDatasets(value: js.Array[ChartDataset[TType, TData]]): Self = StObject.set(x, "datasets", value.asInstanceOf[js.Any])
     

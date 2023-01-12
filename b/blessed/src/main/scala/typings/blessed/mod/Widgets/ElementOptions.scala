@@ -146,7 +146,8 @@ object ElementOptions {
     __obj.asInstanceOf[ElementOptions]
   }
   
-  extension [Self <: ElementOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ElementOptions] (val x: Self) extends AnyVal {
     
     inline def setAlign(value: left | center | right): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     

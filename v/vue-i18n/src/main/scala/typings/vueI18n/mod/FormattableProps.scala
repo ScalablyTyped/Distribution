@@ -29,7 +29,8 @@ object FormattableProps {
     __obj.asInstanceOf[FormattableProps[Value, Format]]
   }
   
-  extension [Self <: FormattableProps[?, ?], Value, Format](x: Self & (FormattableProps[Value, Format])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FormattableProps[?, ?], Value, Format] (val x: Self & (FormattableProps[Value, Format])) extends AnyVal {
     
     inline def setFormat(value: String | Format): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     

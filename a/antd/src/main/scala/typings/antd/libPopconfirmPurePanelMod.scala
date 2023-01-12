@@ -53,7 +53,8 @@ object libPopconfirmPurePanelMod {
       __obj.asInstanceOf[OverlayProps]
     }
     
-    extension [Self <: OverlayProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OverlayProps] (val x: Self) extends AnyVal {
       
       inline def setCancelButtonProps(value: ButtonProps): Self = StObject.set(x, "cancelButtonProps", value.asInstanceOf[js.Any])
       
@@ -118,7 +119,8 @@ object libPopconfirmPurePanelMod {
       __obj.asInstanceOf[PopconfirmLocale]
     }
     
-    extension [Self <: PopconfirmLocale](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PopconfirmLocale] (val x: Self) extends AnyVal {
       
       inline def setCancelText(value: String): Self = StObject.set(x, "cancelText", value.asInstanceOf[js.Any])
       

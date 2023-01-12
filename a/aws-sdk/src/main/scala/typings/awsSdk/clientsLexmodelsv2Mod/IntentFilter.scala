@@ -28,7 +28,8 @@ object IntentFilter {
     __obj.asInstanceOf[IntentFilter]
   }
   
-  extension [Self <: IntentFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IntentFilter] (val x: Self) extends AnyVal {
     
     inline def setName(value: IntentFilterName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

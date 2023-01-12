@@ -25,7 +25,8 @@ object EqlEqlSearchResponseBase {
     __obj.asInstanceOf[EqlEqlSearchResponseBase[TEvent]]
   }
   
-  extension [Self <: EqlEqlSearchResponseBase[?], TEvent](x: Self & EqlEqlSearchResponseBase[TEvent]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EqlEqlSearchResponseBase[?], TEvent] (val x: Self & EqlEqlSearchResponseBase[TEvent]) extends AnyVal {
     
     inline def setHits(value: EqlEqlHits[TEvent]): Self = StObject.set(x, "hits", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object DaylightTimeZoneOffset {
     __obj.asInstanceOf[DaylightTimeZoneOffset]
   }
   
-  extension [Self <: DaylightTimeZoneOffset](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DaylightTimeZoneOffset] (val x: Self) extends AnyVal {
     
     inline def setDaylightBias(value: NullableOption[Double]): Self = StObject.set(x, "daylightBias", value.asInstanceOf[js.Any])
     

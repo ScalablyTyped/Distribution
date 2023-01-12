@@ -49,7 +49,8 @@ object distEsmMultiBackendImplMod {
       __obj.asInstanceOf[MultiBackendOptions]
     }
     
-    extension [Self <: MultiBackendOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MultiBackendOptions] (val x: Self) extends AnyVal {
       
       inline def setBackends(value: MultiBackendPipeline): Self = StObject.set(x, "backends", value.asInstanceOf[js.Any])
       
@@ -88,7 +89,8 @@ object distEsmMultiBackendImplMod {
       __obj.asInstanceOf[MultiBackendPipelineStep]
     }
     
-    extension [Self <: MultiBackendPipelineStep](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MultiBackendPipelineStep] (val x: Self) extends AnyVal {
       
       inline def setBackend(
         value: (/* manager */ DragDropManager, /* globalContext */ js.UndefOr[Any], /* configuration */ js.UndefOr[Any]) => Backend

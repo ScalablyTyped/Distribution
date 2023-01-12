@@ -19,7 +19,8 @@ object SVGAnimatedPoints {
     __obj.asInstanceOf[SVGAnimatedPoints]
   }
   
-  extension [Self <: SVGAnimatedPoints](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SVGAnimatedPoints] (val x: Self) extends AnyVal {
     
     inline def setAnimatedPoints(value: SVGPointList): Self = StObject.set(x, "animatedPoints", value.asInstanceOf[js.Any])
     

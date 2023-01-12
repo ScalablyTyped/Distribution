@@ -18,7 +18,8 @@ object ExpressionParsingError {
     __obj.asInstanceOf[ExpressionParsingError]
   }
   
-  extension [Self <: ExpressionParsingError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExpressionParsingError] (val x: Self) extends AnyVal {
     
     inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
   }

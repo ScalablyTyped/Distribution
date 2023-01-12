@@ -15,7 +15,8 @@ object StockChartSeriesDefaultsStack {
     __obj.asInstanceOf[StockChartSeriesDefaultsStack]
   }
   
-  extension [Self <: StockChartSeriesDefaultsStack](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StockChartSeriesDefaultsStack] (val x: Self) extends AnyVal {
     
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

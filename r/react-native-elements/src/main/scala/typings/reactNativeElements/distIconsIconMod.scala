@@ -53,7 +53,8 @@ object distIconsIconMod extends Shortcut {
       __obj.asInstanceOf[IconObject]
     }
     
-    extension [Self <: IconObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IconObject] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -115,7 +116,8 @@ object distIconsIconMod extends Shortcut {
       __obj.asInstanceOf[IconProps]
     }
     
-    extension [Self <: IconProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IconProps] (val x: Self) extends AnyVal {
       
       inline def setBrand(value: Boolean): Self = StObject.set(x, "brand", value.asInstanceOf[js.Any])
       

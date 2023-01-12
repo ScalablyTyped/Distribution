@@ -38,7 +38,8 @@ object SchemaSummary {
     __obj.asInstanceOf[SchemaSummary]
   }
   
-  extension [Self <: SchemaSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SchemaSummary] (val x: Self) extends AnyVal {
     
     inline def setLastModified(value: js.Date): Self = StObject.set(x, "LastModified", value.asInstanceOf[js.Any])
     

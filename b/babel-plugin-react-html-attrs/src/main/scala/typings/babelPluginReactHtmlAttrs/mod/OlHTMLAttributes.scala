@@ -26,7 +26,8 @@ object OlHTMLAttributes {
     __obj.asInstanceOf[OlHTMLAttributes[T]]
   }
   
-  extension [Self <: OlHTMLAttributes[?], T](x: Self & OlHTMLAttributes[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OlHTMLAttributes[?], T] (val x: Self & OlHTMLAttributes[T]) extends AnyVal {
     
     inline def setReversed(value: Boolean | String): Self = StObject.set(x, "reversed", value.asInstanceOf[js.Any])
     

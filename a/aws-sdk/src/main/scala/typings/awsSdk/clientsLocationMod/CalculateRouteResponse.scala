@@ -23,7 +23,8 @@ object CalculateRouteResponse {
     __obj.asInstanceOf[CalculateRouteResponse]
   }
   
-  extension [Self <: CalculateRouteResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CalculateRouteResponse] (val x: Self) extends AnyVal {
     
     inline def setLegs(value: LegList): Self = StObject.set(x, "Legs", value.asInstanceOf[js.Any])
     

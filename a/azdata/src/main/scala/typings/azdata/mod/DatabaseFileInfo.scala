@@ -19,7 +19,8 @@ object DatabaseFileInfo {
     __obj.asInstanceOf[DatabaseFileInfo]
   }
   
-  extension [Self <: DatabaseFileInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DatabaseFileInfo] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

@@ -31,7 +31,8 @@ object ChunkConfig {
     __obj.asInstanceOf[ChunkConfig]
   }
   
-  extension [Self <: ChunkConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChunkConfig] (val x: Self) extends AnyVal {
     
     inline def setContent(
       value: /* contentProps */ ChunkContentCallbackArgs => /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify VNode */ Any

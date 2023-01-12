@@ -32,7 +32,8 @@ object IsDistanceAttenuation {
     __obj.asInstanceOf[IsDistanceAttenuation]
   }
   
-  extension [Self <: IsDistanceAttenuation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IsDistanceAttenuation] (val x: Self) extends AnyVal {
     
     inline def setIsDistanceAttenuation(value: Boolean): Self = StObject.set(x, "isDistanceAttenuation", value.asInstanceOf[js.Any])
     

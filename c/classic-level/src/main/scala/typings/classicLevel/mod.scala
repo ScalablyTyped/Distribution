@@ -58,7 +58,8 @@ object mod {
       __obj.asInstanceOf[AdditionalIteratorOptions]
     }
     
-    extension [Self <: AdditionalIteratorOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AdditionalIteratorOptions] (val x: Self) extends AnyVal {
       
       inline def setFillCache(value: Boolean): Self = StObject.set(x, "fillCache", value.asInstanceOf[js.Any])
       
@@ -229,7 +230,8 @@ object mod {
       __obj.asInstanceOf[DatabaseOptions[K, V]]
     }
     
-    extension [Self <: DatabaseOptions[?, ?], K, V](x: Self & (DatabaseOptions[K, V])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DatabaseOptions[?, ?], K, V] (val x: Self & (DatabaseOptions[K, V])) extends AnyVal {
       
       inline def setBlockRestartInterval(value: Double): Self = StObject.set(x, "blockRestartInterval", value.asInstanceOf[js.Any])
       
@@ -433,7 +435,8 @@ object mod {
       __obj.asInstanceOf[OpenOptions]
     }
     
-    extension [Self <: OpenOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OpenOptions] (val x: Self) extends AnyVal {
       
       inline def setBlockRestartInterval(value: Double): Self = StObject.set(x, "blockRestartInterval", value.asInstanceOf[js.Any])
       
@@ -499,7 +502,8 @@ object mod {
       __obj.asInstanceOf[ReadOptions]
     }
     
-    extension [Self <: ReadOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadOptions] (val x: Self) extends AnyVal {
       
       inline def setFillCache(value: Boolean): Self = StObject.set(x, "fillCache", value.asInstanceOf[js.Any])
       
@@ -521,7 +525,8 @@ object mod {
       __obj.asInstanceOf[StartEndOptions[K]]
     }
     
-    extension [Self <: StartEndOptions[?], K](x: Self & StartEndOptions[K]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StartEndOptions[?], K] (val x: Self & StartEndOptions[K]) extends AnyVal {
       
       inline def setKeyEncoding(value: String | PartialEncoder[K]): Self = StObject.set(x, "keyEncoding", value.asInstanceOf[js.Any])
       
@@ -570,7 +575,8 @@ object mod {
       __obj.asInstanceOf[WriteOptions]
     }
     
-    extension [Self <: WriteOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WriteOptions] (val x: Self) extends AnyVal {
       
       inline def setSync(value: Boolean): Self = StObject.set(x, "sync", value.asInstanceOf[js.Any])
       

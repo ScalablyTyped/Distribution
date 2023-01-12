@@ -19,7 +19,8 @@ object QualityConstraints {
     __obj.asInstanceOf[QualityConstraints]
   }
   
-  extension [Self <: QualityConstraints](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QualityConstraints] (val x: Self) extends AnyVal {
     
     inline def setIdeal(value: Double): Self = StObject.set(x, "ideal", value.asInstanceOf[js.Any])
     

@@ -39,7 +39,8 @@ object interactjsCoreInteractableAugmentingMod {
       __obj.asInstanceOf[Interactable]
     }
     
-    extension [Self <: Interactable](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Interactable] (val x: Self) extends AnyVal {
       
       inline def setDropCheck(
         value: (InteractEvent[scala.Nothing, EventPhase], PointerEventType, Interactable, Element, Element, Any) => Boolean

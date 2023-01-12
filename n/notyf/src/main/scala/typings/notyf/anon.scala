@@ -164,7 +164,8 @@ object anon {
       __obj.asInstanceOf[DeepPartialINotyfNotifica]
     }
     
-    extension [Self <: DeepPartialINotyfNotifica](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeepPartialINotyfNotifica] (val x: Self) extends AnyVal {
       
       inline def setBackground(value: DeepPartial[String]): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
       
@@ -222,7 +223,8 @@ object anon {
       __obj.asInstanceOf[DeepPartialINotyfPosition]
     }
     
-    extension [Self <: DeepPartialINotyfPosition](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeepPartialINotyfPosition] (val x: Self) extends AnyVal {
       
       inline def setX(value: DeepPartial[NotyfHorizontalPosition]): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
@@ -868,7 +870,8 @@ object anon {
       __obj.asInstanceOf[ElementTagNameMap]
     }
     
-    extension [Self <: ElementTagNameMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ElementTagNameMap] (val x: Self) extends AnyVal {
       
       inline def setA(value: HTMLAnchorElement): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
       
@@ -1242,7 +1245,8 @@ object anon {
       __obj.asInstanceOf[PartialINotyfNotification]
     }
     
-    extension [Self <: PartialINotyfNotification](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialINotyfNotification] (val x: Self) extends AnyVal {
       
       inline def setBackground(value: String): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
       
@@ -1306,7 +1310,8 @@ object anon {
       __obj.asInstanceOf[PartialINotyfOptions]
     }
     
-    extension [Self <: PartialINotyfOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialINotyfOptions] (val x: Self) extends AnyVal {
       
       inline def setDismissible(value: Boolean): Self = StObject.set(x, "dismissible", value.asInstanceOf[js.Any])
       

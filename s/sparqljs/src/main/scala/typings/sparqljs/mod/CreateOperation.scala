@@ -23,7 +23,8 @@ object CreateOperation {
     __obj.asInstanceOf[CreateOperation]
   }
   
-  extension [Self <: CreateOperation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateOperation] (val x: Self) extends AnyVal {
     
     inline def setGraph(value: IriTerm): Self = StObject.set(x, "graph", value.asInstanceOf[js.Any])
     

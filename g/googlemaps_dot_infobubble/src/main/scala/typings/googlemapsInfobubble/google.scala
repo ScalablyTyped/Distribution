@@ -71,7 +71,8 @@ object google {
           __obj.asInstanceOf[InfoBubble]
         }
         
-        extension [Self <: InfoBubble](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: InfoBubble] (val x: Self) extends AnyVal {
           
           inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
           
@@ -131,7 +132,8 @@ object google {
           __obj.asInstanceOf[InfoBubbleOptions]
         }
         
-        extension [Self <: InfoBubbleOptions](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: InfoBubbleOptions] (val x: Self) extends AnyVal {
           
           inline def setArrowPosition(value: Double): Self = StObject.set(x, "arrowPosition", value.asInstanceOf[js.Any])
           

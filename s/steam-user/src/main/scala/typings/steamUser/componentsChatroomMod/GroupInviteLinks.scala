@@ -23,7 +23,8 @@ object GroupInviteLinks {
     __obj.asInstanceOf[GroupInviteLinks]
   }
   
-  extension [Self <: GroupInviteLinks](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GroupInviteLinks] (val x: Self) extends AnyVal {
     
     inline def setChat_id(value: String): Self = StObject.set(x, "chat_id", value.asInstanceOf[js.Any])
     

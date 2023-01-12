@@ -17,7 +17,8 @@ object MatcherLocationAsPath {
     __obj.asInstanceOf[MatcherLocationAsPath]
   }
   
-  extension [Self <: MatcherLocationAsPath](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MatcherLocationAsPath] (val x: Self) extends AnyVal {
     
     inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
   }

@@ -19,7 +19,8 @@ object SetOverrideCertificateErrorsRequest {
     __obj.asInstanceOf[SetOverrideCertificateErrorsRequest]
   }
   
-  extension [Self <: SetOverrideCertificateErrorsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetOverrideCertificateErrorsRequest] (val x: Self) extends AnyVal {
     
     inline def setOverride(value: Boolean): Self = StObject.set(x, "override", value.asInstanceOf[js.Any])
   }

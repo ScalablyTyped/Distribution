@@ -18,7 +18,8 @@ object anon {
       __obj.asInstanceOf[Plugins]
     }
     
-    extension [Self <: Plugins](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Plugins] (val x: Self) extends AnyVal {
       
       inline def setPlugins(value: js.Array[PluginObject | String]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
       

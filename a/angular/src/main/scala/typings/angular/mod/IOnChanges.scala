@@ -26,7 +26,8 @@ object IOnChanges {
     __obj.asInstanceOf[IOnChanges]
   }
   
-  extension [Self <: IOnChanges](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IOnChanges] (val x: Self) extends AnyVal {
     
     inline def set$onChanges(value: IOnChangesObject => Unit): Self = StObject.set(x, "$onChanges", js.Any.fromFunction1(value))
   }

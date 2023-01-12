@@ -20,7 +20,8 @@ object PreProcessorExtraInfo {
     __obj.asInstanceOf[PreProcessorExtraInfo]
   }
   
-  extension [Self <: PreProcessorExtraInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PreProcessorExtraInfo] (val x: Self) extends AnyVal {
     
     inline def setContext(value: typings.less.anon.PluginManager): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     

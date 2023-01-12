@@ -46,7 +46,8 @@ object XBatchExecution {
     __obj.asInstanceOf[XBatchExecution]
   }
   
-  extension [Self <: XBatchExecution](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XBatchExecution] (val x: Self) extends AnyVal {
     
     inline def setAddBatch(value: String => Unit): Self = StObject.set(x, "addBatch", js.Any.fromFunction1(value))
     

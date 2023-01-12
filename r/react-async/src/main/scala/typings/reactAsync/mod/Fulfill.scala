@@ -24,7 +24,8 @@ object Fulfill {
     __obj.asInstanceOf[Fulfill[T]]
   }
   
-  extension [Self <: Fulfill[?], T](x: Self & Fulfill[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Fulfill[?], T] (val x: Self & Fulfill[T]) extends AnyVal {
     
     inline def setPayload(value: T): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     

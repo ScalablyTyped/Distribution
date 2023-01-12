@@ -23,7 +23,8 @@ object anon {
       __obj.asInstanceOf[ImageUrl]
     }
     
-    extension [Self <: ImageUrl](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ImageUrl] (val x: Self) extends AnyVal {
       
       inline def setImageUrl(value: String): Self = StObject.set(x, "imageUrl", value.asInstanceOf[js.Any])
       
@@ -46,7 +47,8 @@ object anon {
       __obj.asInstanceOf[Lifespan]
     }
     
-    extension [Self <: Lifespan](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Lifespan] (val x: Self) extends AnyVal {
       
       inline def setLifespan(value: Double): Self = StObject.set(x, "lifespan", value.asInstanceOf[js.Any])
       
@@ -69,7 +71,8 @@ object anon {
       __obj.asInstanceOf[RawPayload]
     }
     
-    extension [Self <: RawPayload](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RawPayload] (val x: Self) extends AnyVal {
       
       inline def setRawPayload(value: Boolean): Self = StObject.set(x, "rawPayload", value.asInstanceOf[js.Any])
       
@@ -109,7 +112,8 @@ object anon {
       __obj.asInstanceOf[Request]
     }
     
-    extension [Self <: Request](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Request] (val x: Self) extends AnyVal {
       
       inline def setRequest(
         value: Request_[
@@ -138,7 +142,8 @@ object anon {
       __obj.asInstanceOf[Text]
     }
     
-    extension [Self <: Text](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Text] (val x: Self) extends AnyVal {
       
       inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       

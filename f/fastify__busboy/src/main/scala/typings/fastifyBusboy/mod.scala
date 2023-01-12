@@ -142,7 +142,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[BusboyConfig]
     }
     
-    extension [Self <: BusboyConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BusboyConfig] (val x: Self) extends AnyVal {
       
       inline def setDefCharset(value: String): Self = StObject.set(x, "defCharset", value.asInstanceOf[js.Any])
       
@@ -252,7 +253,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[BusboyEvents]
     }
     
-    extension [Self <: BusboyEvents](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BusboyEvents] (val x: Self) extends AnyVal {
       
       inline def setError(value: Any => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
       
@@ -296,7 +298,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[BusboyHeaders]
     }
     
-    extension [Self <: BusboyHeaders](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BusboyHeaders] (val x: Self) extends AnyVal {
       
       inline def `setContent-type`(value: String): Self = StObject.set(x, "content-type", value.asInstanceOf[js.Any])
     }

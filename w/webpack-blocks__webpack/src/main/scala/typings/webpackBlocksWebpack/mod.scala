@@ -84,7 +84,8 @@ object mod {
       __obj.asInstanceOf[OptimizationOptions]
     }
     
-    extension [Self <: OptimizationOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OptimizationOptions] (val x: Self) extends AnyVal {
       
       inline def setMinimize(value: Boolean): Self = StObject.set(x, "minimize", value.asInstanceOf[js.Any])
       

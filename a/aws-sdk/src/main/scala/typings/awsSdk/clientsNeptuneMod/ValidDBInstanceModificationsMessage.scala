@@ -18,7 +18,8 @@ object ValidDBInstanceModificationsMessage {
     __obj.asInstanceOf[ValidDBInstanceModificationsMessage]
   }
   
-  extension [Self <: ValidDBInstanceModificationsMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ValidDBInstanceModificationsMessage] (val x: Self) extends AnyVal {
     
     inline def setStorage(value: ValidStorageOptionsList): Self = StObject.set(x, "Storage", value.asInstanceOf[js.Any])
     

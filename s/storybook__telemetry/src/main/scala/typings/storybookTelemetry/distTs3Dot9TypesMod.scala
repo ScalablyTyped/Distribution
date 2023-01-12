@@ -27,7 +27,8 @@ object distTs3Dot9TypesMod {
       __obj.asInstanceOf[Dependency]
     }
     
-    extension [Self <: Dependency](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Dependency] (val x: Self) extends AnyVal {
       
       inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     }
@@ -77,7 +78,8 @@ object distTs3Dot9TypesMod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setConfigDir(value: String): Self = StObject.set(x, "configDir", value.asInstanceOf[js.Any])
       
@@ -108,7 +110,8 @@ object distTs3Dot9TypesMod {
       __obj.asInstanceOf[StorybookAddon]
     }
     
-    extension [Self <: StorybookAddon](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StorybookAddon] (val x: Self) extends AnyVal {
       
       inline def setOptions(value: Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     }
@@ -161,7 +164,8 @@ object distTs3Dot9TypesMod {
       __obj.asInstanceOf[StorybookMetadata]
     }
     
-    extension [Self <: StorybookMetadata](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StorybookMetadata] (val x: Self) extends AnyVal {
       
       inline def setAddons(value: Record[String, StorybookAddon]): Self = StObject.set(x, "addons", value.asInstanceOf[js.Any])
       
@@ -242,7 +246,8 @@ object distTs3Dot9TypesMod {
       __obj.asInstanceOf[TelemetryData]
     }
     
-    extension [Self <: TelemetryData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TelemetryData] (val x: Self) extends AnyVal {
       
       inline def setEventType(value: EventType): Self = StObject.set(x, "eventType", value.asInstanceOf[js.Any])
       

@@ -18,7 +18,8 @@ object ToolchainSource {
     __obj.asInstanceOf[ToolchainSource]
   }
   
-  extension [Self <: ToolchainSource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ToolchainSource] (val x: Self) extends AnyVal {
     
     inline def setS3(value: S3Location): Self = StObject.set(x, "s3", value.asInstanceOf[js.Any])
   }

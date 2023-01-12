@@ -45,7 +45,8 @@ object functions {
       __obj.asInstanceOf[Functions]
     }
     
-    extension [Self <: Functions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Functions] (val x: Self) extends AnyVal {
       
       inline def setHttpsCallable(value: String => HttpsCallable[Any, Any]): Self = StObject.set(x, "httpsCallable", js.Any.fromFunction1(value))
       
@@ -199,7 +200,8 @@ object functions {
       __obj.asInstanceOf[HttpsCallableResult[R]]
     }
     
-    extension [Self <: HttpsCallableResult[?], R](x: Self & HttpsCallableResult[R]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HttpsCallableResult[?], R] (val x: Self & HttpsCallableResult[R]) extends AnyVal {
       
       inline def setData(value: R): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     }
@@ -227,7 +229,8 @@ object functions {
       __obj.asInstanceOf[HttpsError]
     }
     
-    extension [Self <: HttpsError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HttpsError] (val x: Self) extends AnyVal {
       
       inline def setCode(value: FunctionsErrorCode): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       

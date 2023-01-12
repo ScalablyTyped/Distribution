@@ -1638,7 +1638,8 @@ object sapMSelectMod {
       __obj.asInstanceOf[SelectSettings]
     }
     
-    extension [Self <: SelectSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SelectSettings] (val x: Self) extends AnyVal {
       
       inline def setAriaLabelledBy(value: js.Array[typings.openui5.sapUiCoreControlMod.default | String]): Self = StObject.set(x, "ariaLabelledBy", value.asInstanceOf[js.Any])
       

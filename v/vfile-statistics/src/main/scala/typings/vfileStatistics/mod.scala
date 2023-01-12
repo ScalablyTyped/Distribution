@@ -49,7 +49,8 @@ object mod {
       __obj.asInstanceOf[Statistics_]
     }
     
-    extension [Self <: Statistics_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Statistics_] (val x: Self) extends AnyVal {
       
       inline def setFatal(value: Double): Self = StObject.set(x, "fatal", value.asInstanceOf[js.Any])
       

@@ -78,7 +78,8 @@ object srcMaterialsSpriteMaterialMod {
       __obj.asInstanceOf[SpriteMaterialParameters]
     }
     
-    extension [Self <: SpriteMaterialParameters](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SpriteMaterialParameters] (val x: Self) extends AnyVal {
       
       inline def setAlphaMap(value: Texture): Self = StObject.set(x, "alphaMap", value.asInstanceOf[js.Any])
       

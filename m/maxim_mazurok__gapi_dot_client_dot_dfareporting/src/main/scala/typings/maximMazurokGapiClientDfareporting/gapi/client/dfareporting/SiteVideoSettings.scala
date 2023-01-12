@@ -40,7 +40,8 @@ object SiteVideoSettings {
     __obj.asInstanceOf[SiteVideoSettings]
   }
   
-  extension [Self <: SiteVideoSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SiteVideoSettings] (val x: Self) extends AnyVal {
     
     inline def setCompanionSettings(value: SiteCompanionSetting): Self = StObject.set(x, "companionSettings", value.asInstanceOf[js.Any])
     

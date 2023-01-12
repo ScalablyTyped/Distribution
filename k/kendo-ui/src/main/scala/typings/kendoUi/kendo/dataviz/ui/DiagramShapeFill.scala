@@ -19,7 +19,8 @@ object DiagramShapeFill {
     __obj.asInstanceOf[DiagramShapeFill]
   }
   
-  extension [Self <: DiagramShapeFill](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DiagramShapeFill] (val x: Self) extends AnyVal {
     
     inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

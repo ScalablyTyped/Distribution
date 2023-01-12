@@ -54,7 +54,8 @@ object ISearchPage {
     __obj.asInstanceOf[ISearchPage]
   }
   
-  extension [Self <: ISearchPage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISearchPage] (val x: Self) extends AnyVal {
     
     inline def setQCount(value: Double): Self = StObject.set(x, "qCount", value.asInstanceOf[js.Any])
     

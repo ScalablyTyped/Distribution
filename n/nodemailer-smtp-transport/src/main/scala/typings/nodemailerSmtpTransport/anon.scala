@@ -40,7 +40,8 @@ object anon {
       __obj.asInstanceOf[MaxConnections]
     }
     
-    extension [Self <: MaxConnections](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MaxConnections] (val x: Self) extends AnyVal {
       
       inline def setMaxConnections(value: Boolean): Self = StObject.set(x, "maxConnections", value.asInstanceOf[js.Any])
       

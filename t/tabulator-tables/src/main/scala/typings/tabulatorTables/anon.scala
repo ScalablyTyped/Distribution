@@ -334,7 +334,8 @@ object anon {
       __obj.asInstanceOf[PartialColumnDefinition]
     }
     
-    extension [Self <: PartialColumnDefinition](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialColumnDefinition] (val x: Self) extends AnyVal {
       
       inline def setAccessor(
         value: (/* value */ Any, /* data */ Any, /* type */ data | download | clipboard, /* AccessorParams */ Any, /* column */ js.UndefOr[ColumnComponent], /* row */ js.UndefOr[RowComponent]) => Any
@@ -1012,7 +1013,8 @@ object anon {
       __obj.asInstanceOf[PickFilterfieldvalue]
     }
     
-    extension [Self <: PickFilterfieldvalue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PickFilterfieldvalue] (val x: Self) extends AnyVal {
       
       inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
       

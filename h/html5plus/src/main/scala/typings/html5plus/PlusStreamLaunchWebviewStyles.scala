@@ -54,7 +54,8 @@ object PlusStreamLaunchWebviewStyles {
     __obj.asInstanceOf[PlusStreamLaunchWebviewStyles]
   }
   
-  extension [Self <: PlusStreamLaunchWebviewStyles](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlusStreamLaunchWebviewStyles] (val x: Self) extends AnyVal {
     
     inline def setBlockNetworkImage(value: Boolean): Self = StObject.set(x, "blockNetworkImage", value.asInstanceOf[js.Any])
     

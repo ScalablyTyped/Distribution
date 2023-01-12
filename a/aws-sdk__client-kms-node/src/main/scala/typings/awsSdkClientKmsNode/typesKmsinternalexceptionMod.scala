@@ -89,7 +89,8 @@ object typesKmsinternalexceptionMod {
       __obj.asInstanceOf[KMSInternalException]
     }
     
-    extension [Self <: KMSInternalException](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KMSInternalException] (val x: Self) extends AnyVal {
       
       inline def setName(value: typings.awsSdkClientKmsNode.awsSdkClientKmsNodeStrings.KMSInternalException): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
@@ -109,7 +110,8 @@ object typesKmsinternalexceptionMod {
       __obj.asInstanceOf[KMSInternalExceptionDetails]
     }
     
-    extension [Self <: KMSInternalExceptionDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KMSInternalExceptionDetails] (val x: Self) extends AnyVal {
       
       inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       

@@ -22,7 +22,8 @@ object RemoteLockEvent {
     __obj.asInstanceOf[RemoteLockEvent]
   }
   
-  extension [Self <: RemoteLockEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RemoteLockEvent] (val x: Self) extends AnyVal {
     
     inline def setAdminPackageName(value: String): Self = StObject.set(x, "adminPackageName", value.asInstanceOf[js.Any])
     

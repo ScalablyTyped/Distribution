@@ -83,7 +83,8 @@ object TerminologyProperties {
     __obj.asInstanceOf[TerminologyProperties]
   }
   
-  extension [Self <: TerminologyProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TerminologyProperties] (val x: Self) extends AnyVal {
     
     inline def setArn(value: TerminologyArn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object INDSendResult {
     __obj.asInstanceOf[INDSendResult]
   }
   
-  extension [Self <: INDSendResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: INDSendResult] (val x: Self) extends AnyVal {
     
     inline def setResponse(value: Double): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }

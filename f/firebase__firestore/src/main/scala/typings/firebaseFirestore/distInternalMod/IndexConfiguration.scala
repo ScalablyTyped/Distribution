@@ -19,7 +19,8 @@ object IndexConfiguration {
     __obj.asInstanceOf[IndexConfiguration]
   }
   
-  extension [Self <: IndexConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndexConfiguration] (val x: Self) extends AnyVal {
     
     inline def setIndexes(value: js.Array[Index]): Self = StObject.set(x, "indexes", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object AuthenticationSummary {
     __obj.asInstanceOf[AuthenticationSummary]
   }
   
-  extension [Self <: AuthenticationSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AuthenticationSummary] (val x: Self) extends AnyVal {
     
     inline def setProviders(value: AuthenticationProviders): Self = StObject.set(x, "providers", value.asInstanceOf[js.Any])
     

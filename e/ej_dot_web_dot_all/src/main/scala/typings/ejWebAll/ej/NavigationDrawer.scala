@@ -65,7 +65,8 @@ object NavigationDrawer {
       __obj.asInstanceOf[AjaxCompleteEventArgs]
     }
     
-    extension [Self <: AjaxCompleteEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AjaxCompleteEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -126,7 +127,8 @@ object NavigationDrawer {
       __obj.asInstanceOf[AjaxErrorEventArgs]
     }
     
-    extension [Self <: AjaxErrorEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AjaxErrorEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -191,7 +193,8 @@ object NavigationDrawer {
       __obj.asInstanceOf[typings.ejWebAll.ej.NavigationDrawer.AjaxSettings]
     }
     
-    extension [Self <: typings.ejWebAll.ej.NavigationDrawer.AjaxSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.ejWebAll.ej.NavigationDrawer.AjaxSettings] (val x: Self) extends AnyVal {
       
       inline def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
       
@@ -248,7 +251,8 @@ object NavigationDrawer {
       __obj.asInstanceOf[AjaxSuccessEventArgs]
     }
     
-    extension [Self <: AjaxSuccessEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AjaxSuccessEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -293,7 +297,8 @@ object NavigationDrawer {
       __obj.asInstanceOf[BeforeCloseEventArgs]
     }
     
-    extension [Self <: BeforeCloseEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BeforeCloseEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -400,7 +405,8 @@ object NavigationDrawer {
       __obj.asInstanceOf[typings.ejWebAll.ej.NavigationDrawer.Model]
     }
     
-    extension [Self <: typings.ejWebAll.ej.NavigationDrawer.Model](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.ejWebAll.ej.NavigationDrawer.Model] (val x: Self) extends AnyVal {
       
       inline def setAjaxComplete(value: /* e */ AjaxCompleteEventArgs => Unit): Self = StObject.set(x, "ajaxComplete", js.Any.fromFunction1(value))
       
@@ -499,7 +505,8 @@ object NavigationDrawer {
       __obj.asInstanceOf[OpenEventArgs]
     }
     
-    extension [Self <: OpenEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OpenEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -536,7 +543,8 @@ object NavigationDrawer {
       __obj.asInstanceOf[SwipeEventArgs]
     }
     
-    extension [Self <: SwipeEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SwipeEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       

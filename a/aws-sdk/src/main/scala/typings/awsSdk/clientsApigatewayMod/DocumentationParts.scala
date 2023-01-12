@@ -20,7 +20,8 @@ object DocumentationParts {
     __obj.asInstanceOf[DocumentationParts]
   }
   
-  extension [Self <: DocumentationParts](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DocumentationParts] (val x: Self) extends AnyVal {
     
     inline def setItems(value: ListOfDocumentationPart): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     

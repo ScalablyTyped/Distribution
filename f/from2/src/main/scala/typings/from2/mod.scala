@@ -50,7 +50,8 @@ object mod {
       __obj.asInstanceOf[ObjectModeOptions]
     }
     
-    extension [Self <: ObjectModeOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ObjectModeOptions] (val x: Self) extends AnyVal {
       
       inline def setObjectMode(value: `true`): Self = StObject.set(x, "objectMode", value.asInstanceOf[js.Any])
     }
@@ -70,7 +71,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setObjectMode(value: `false`): Self = StObject.set(x, "objectMode", value.asInstanceOf[js.Any])
       

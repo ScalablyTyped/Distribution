@@ -28,7 +28,8 @@ object ListCoreNetworkPolicyVersionsRequest {
     __obj.asInstanceOf[ListCoreNetworkPolicyVersionsRequest]
   }
   
-  extension [Self <: ListCoreNetworkPolicyVersionsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListCoreNetworkPolicyVersionsRequest] (val x: Self) extends AnyVal {
     
     inline def setCoreNetworkId(value: CoreNetworkId): Self = StObject.set(x, "CoreNetworkId", value.asInstanceOf[js.Any])
     

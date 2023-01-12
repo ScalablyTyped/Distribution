@@ -48,7 +48,8 @@ object jsPDFOptions {
     __obj.asInstanceOf[jsPDFOptions]
   }
   
-  extension [Self <: jsPDFOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: jsPDFOptions] (val x: Self) extends AnyVal {
     
     inline def setCompress(value: Boolean): Self = StObject.set(x, "compress", value.asInstanceOf[js.Any])
     

@@ -16,7 +16,8 @@ object ResponseOptions {
     __obj.asInstanceOf[ResponseOptions]
   }
   
-  extension [Self <: ResponseOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResponseOptions] (val x: Self) extends AnyVal {
     
     inline def setRequest(value: Double): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     

@@ -16,7 +16,8 @@ object PFaxServer {
     __obj.asInstanceOf[PFaxServer]
   }
   
-  extension [Self <: PFaxServer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PFaxServer] (val x: Self) extends AnyVal {
     
     inline def setPFaxServer(value: FaxServer): Self = StObject.set(x, "pFaxServer", value.asInstanceOf[js.Any])
   }

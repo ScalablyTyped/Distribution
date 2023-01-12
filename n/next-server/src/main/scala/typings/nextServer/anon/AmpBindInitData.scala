@@ -42,7 +42,8 @@ object AmpBindInitData {
     __obj.asInstanceOf[AmpBindInitData]
   }
   
-  extension [Self <: AmpBindInitData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AmpBindInitData] (val x: Self) extends AnyVal {
     
     inline def setAmpBindInitData(value: Boolean): Self = StObject.set(x, "ampBindInitData", value.asInstanceOf[js.Any])
     

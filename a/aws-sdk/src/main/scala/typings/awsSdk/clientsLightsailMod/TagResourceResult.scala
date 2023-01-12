@@ -18,7 +18,8 @@ object TagResourceResult {
     __obj.asInstanceOf[TagResourceResult]
   }
   
-  extension [Self <: TagResourceResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TagResourceResult] (val x: Self) extends AnyVal {
     
     inline def setOperations(value: OperationList): Self = StObject.set(x, "operations", value.asInstanceOf[js.Any])
     

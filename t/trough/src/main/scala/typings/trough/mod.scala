@@ -45,7 +45,8 @@ object mod {
       __obj.asInstanceOf[Pipeline]
     }
     
-    extension [Self <: Pipeline](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Pipeline] (val x: Self) extends AnyVal {
       
       inline def setRun(value: Run): Self = StObject.set(x, "run", value.asInstanceOf[js.Any])
       

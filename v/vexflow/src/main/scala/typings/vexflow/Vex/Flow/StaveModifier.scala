@@ -94,7 +94,8 @@ object StaveModifier {
          with Position
   }
   
-  extension [Self <: StaveModifier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StaveModifier] (val x: Self) extends AnyVal {
     
     inline def setAddEndModifier(value: () => Unit): Self = StObject.set(x, "addEndModifier", js.Any.fromFunction0(value))
     

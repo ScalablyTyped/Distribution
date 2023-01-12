@@ -27,7 +27,8 @@ object OptionalChainingExpression {
     __obj.asInstanceOf[OptionalChainingExpression]
   }
   
-  extension [Self <: OptionalChainingExpression](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OptionalChainingExpression] (val x: Self) extends AnyVal {
     
     inline def setBase(value: MemberExpression | OptionalChainingCall): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
     

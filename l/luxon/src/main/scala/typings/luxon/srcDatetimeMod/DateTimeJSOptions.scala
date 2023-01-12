@@ -25,7 +25,8 @@ object DateTimeJSOptions {
     __obj.asInstanceOf[DateTimeJSOptions]
   }
   
-  extension [Self <: DateTimeJSOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DateTimeJSOptions] (val x: Self) extends AnyVal {
     
     inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object SelectorPlaygroundDefaultsOptions {
     __obj.asInstanceOf[SelectorPlaygroundDefaultsOptions]
   }
   
-  extension [Self <: SelectorPlaygroundDefaultsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SelectorPlaygroundDefaultsOptions] (val x: Self) extends AnyVal {
     
     inline def setOnElement(value: JQuery[HTMLElement] => js.UndefOr[String | Null]): Self = StObject.set(x, "onElement", js.Any.fromFunction1(value))
     

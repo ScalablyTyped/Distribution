@@ -32,7 +32,8 @@ object BorderRadius {
     __obj.asInstanceOf[BorderRadius]
   }
   
-  extension [Self <: BorderRadius](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BorderRadius] (val x: Self) extends AnyVal {
     
     inline def setAlignItems(value: String): Self = StObject.set(x, "alignItems", value.asInstanceOf[js.Any])
     

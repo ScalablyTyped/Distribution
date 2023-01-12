@@ -19,7 +19,8 @@ object PickAndroidversionCoderun {
     __obj.asInstanceOf[PickAndroidversionCoderun]
   }
   
-  extension [Self <: PickAndroidversionCoderun](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickAndroidversionCoderun] (val x: Self) extends AnyVal {
     
     inline def setRuntimeVersion(value: String | Policy): Self = StObject.set(x, "runtimeVersion", value.asInstanceOf[js.Any])
     

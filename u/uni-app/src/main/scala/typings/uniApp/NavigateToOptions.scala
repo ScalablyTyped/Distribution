@@ -65,7 +65,8 @@ object NavigateToOptions {
     __obj.asInstanceOf[NavigateToOptions]
   }
   
-  extension [Self <: NavigateToOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NavigateToOptions] (val x: Self) extends AnyVal {
     
     inline def setAnimationDuration(value: Double): Self = StObject.set(x, "animationDuration", value.asInstanceOf[js.Any])
     

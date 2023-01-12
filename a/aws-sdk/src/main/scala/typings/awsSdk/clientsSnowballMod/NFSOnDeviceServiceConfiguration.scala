@@ -23,7 +23,8 @@ object NFSOnDeviceServiceConfiguration {
     __obj.asInstanceOf[NFSOnDeviceServiceConfiguration]
   }
   
-  extension [Self <: NFSOnDeviceServiceConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NFSOnDeviceServiceConfiguration] (val x: Self) extends AnyVal {
     
     inline def setStorageLimit(value: StorageLimit): Self = StObject.set(x, "StorageLimit", value.asInstanceOf[js.Any])
     

@@ -217,7 +217,8 @@ object IgTreeGridHiding {
     __obj.asInstanceOf[IgTreeGridHiding]
   }
   
-  extension [Self <: IgTreeGridHiding](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgTreeGridHiding] (val x: Self) extends AnyVal {
     
     inline def setColumnChooserAnimationDuration(value: Double): Self = StObject.set(x, "columnChooserAnimationDuration", value.asInstanceOf[js.Any])
     

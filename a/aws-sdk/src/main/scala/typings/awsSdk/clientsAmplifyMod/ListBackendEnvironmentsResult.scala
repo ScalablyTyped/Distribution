@@ -23,7 +23,8 @@ object ListBackendEnvironmentsResult {
     __obj.asInstanceOf[ListBackendEnvironmentsResult]
   }
   
-  extension [Self <: ListBackendEnvironmentsResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListBackendEnvironmentsResult] (val x: Self) extends AnyVal {
     
     inline def setBackendEnvironments(value: BackendEnvironments): Self = StObject.set(x, "backendEnvironments", value.asInstanceOf[js.Any])
     

@@ -31,7 +31,8 @@ object AdvertiserCreativeConfig {
     __obj.asInstanceOf[AdvertiserCreativeConfig]
   }
   
-  extension [Self <: AdvertiserCreativeConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AdvertiserCreativeConfig] (val x: Self) extends AnyVal {
     
     inline def setDynamicCreativeEnabled(value: Boolean): Self = StObject.set(x, "dynamicCreativeEnabled", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object GeoJSONLayerViewQueryExtentOptions {
     __obj.asInstanceOf[GeoJSONLayerViewQueryExtentOptions]
   }
   
-  extension [Self <: GeoJSONLayerViewQueryExtentOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GeoJSONLayerViewQueryExtentOptions] (val x: Self) extends AnyVal {
     
     inline def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
     

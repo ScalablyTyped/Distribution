@@ -29,7 +29,8 @@ object TextCallNode {
     __obj.asInstanceOf[TextCallNode]
   }
   
-  extension [Self <: TextCallNode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextCallNode] (val x: Self) extends AnyVal {
     
     inline def setCodegenNode(value: CallExpression | SimpleExpressionNode): Self = StObject.set(x, "codegenNode", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object AppointmentStoreChangedEventArgs {
     __obj.asInstanceOf[AppointmentStoreChangedEventArgs]
   }
   
-  extension [Self <: AppointmentStoreChangedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppointmentStoreChangedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setGetDeferral(value: () => AppointmentStoreChangedDeferral): Self = StObject.set(x, "getDeferral", js.Any.fromFunction0(value))
   }

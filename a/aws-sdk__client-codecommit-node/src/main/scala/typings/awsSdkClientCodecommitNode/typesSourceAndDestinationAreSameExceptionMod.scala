@@ -21,7 +21,8 @@ object typesSourceAndDestinationAreSameExceptionMod {
       __obj.asInstanceOf[SourceAndDestinationAreSameException]
     }
     
-    extension [Self <: SourceAndDestinationAreSameException](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SourceAndDestinationAreSameException] (val x: Self) extends AnyVal {
       
       inline def setName(
         value: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.SourceAndDestinationAreSameException

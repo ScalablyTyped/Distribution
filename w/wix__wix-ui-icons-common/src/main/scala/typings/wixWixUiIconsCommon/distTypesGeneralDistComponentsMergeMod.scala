@@ -27,7 +27,8 @@ object distTypesGeneralDistComponentsMergeMod extends Shortcut {
       __obj.asInstanceOf[MergeProps]
     }
     
-    extension [Self <: MergeProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MergeProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

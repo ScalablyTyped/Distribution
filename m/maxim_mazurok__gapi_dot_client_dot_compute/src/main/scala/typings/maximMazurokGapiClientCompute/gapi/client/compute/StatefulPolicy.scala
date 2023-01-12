@@ -15,7 +15,8 @@ object StatefulPolicy {
     __obj.asInstanceOf[StatefulPolicy]
   }
   
-  extension [Self <: StatefulPolicy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StatefulPolicy] (val x: Self) extends AnyVal {
     
     inline def setPreservedState(value: StatefulPolicyPreservedState): Self = StObject.set(x, "preservedState", value.asInstanceOf[js.Any])
     

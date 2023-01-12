@@ -83,7 +83,8 @@ object sourceReadonlyDeepMod {
       __obj.asInstanceOf[ReadonlyMapDeep[KeyType, ValueType]]
     }
     
-    extension [Self <: ReadonlyMapDeep[?, ?], KeyType, ValueType](x: Self & (ReadonlyMapDeep[KeyType, ValueType])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadonlyMapDeep[?, ?], KeyType, ValueType] (val x: Self & (ReadonlyMapDeep[KeyType, ValueType])) extends AnyVal {
       
       inline def setEntries(value: () => IterableIterator[js.Tuple2[ReadonlyDeep[KeyType], ReadonlyDeep[ValueType]]]): Self = StObject.set(x, "entries", js.Any.fromFunction0(value))
       
@@ -165,7 +166,8 @@ object sourceReadonlyDeepMod {
       __obj.asInstanceOf[ReadonlySetDeep[ItemType]]
     }
     
-    extension [Self <: ReadonlySetDeep[?], ItemType](x: Self & ReadonlySetDeep[ItemType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadonlySetDeep[?], ItemType] (val x: Self & ReadonlySetDeep[ItemType]) extends AnyVal {
       
       inline def setEntries(value: () => IterableIterator[js.Tuple2[ReadonlyDeep[ItemType], ReadonlyDeep[ItemType]]]): Self = StObject.set(x, "entries", js.Any.fromFunction0(value))
       

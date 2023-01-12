@@ -33,7 +33,8 @@ object IncreaseReplicaCountMessage {
     __obj.asInstanceOf[IncreaseReplicaCountMessage]
   }
   
-  extension [Self <: IncreaseReplicaCountMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IncreaseReplicaCountMessage] (val x: Self) extends AnyVal {
     
     inline def setApplyImmediately(value: Boolean): Self = StObject.set(x, "ApplyImmediately", value.asInstanceOf[js.Any])
     

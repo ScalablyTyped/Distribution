@@ -36,7 +36,8 @@ object TSParameterProperty__ {
     __obj.asInstanceOf[TSParameterProperty__]
   }
   
-  extension [Self <: TSParameterProperty__](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TSParameterProperty__] (val x: Self) extends AnyVal {
     
     inline def setAccessibility(value: public | private_ | `protected`): Self = StObject.set(x, "accessibility", value.asInstanceOf[js.Any])
     

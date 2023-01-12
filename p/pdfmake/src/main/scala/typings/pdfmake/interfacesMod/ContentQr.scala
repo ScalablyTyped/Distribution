@@ -402,7 +402,8 @@ object ContentQr {
     __obj.asInstanceOf[ContentQr]
   }
   
-  extension [Self <: ContentQr](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContentQr] (val x: Self) extends AnyVal {
     
     inline def setAbsolutePosition(value: Position): Self = StObject.set(x, "absolutePosition", value.asInstanceOf[js.Any])
     

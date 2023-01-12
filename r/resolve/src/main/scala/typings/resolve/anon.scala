@@ -92,7 +92,8 @@ object anon {
       __obj.asInstanceOf[readFileSyncfilestringStr]
     }
     
-    extension [Self <: readFileSyncfilestringStr](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: readFileSyncfilestringStr] (val x: Self) extends AnyVal {
       
       inline def setBasedir(value: String): Self = StObject.set(x, "basedir", value.asInstanceOf[js.Any])
       
@@ -242,7 +243,8 @@ object anon {
       __obj.asInstanceOf[readFileSyncneverundefine]
     }
     
-    extension [Self <: readFileSyncneverundefine](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: readFileSyncneverundefine] (val x: Self) extends AnyVal {
       
       inline def setBasedir(value: String): Self = StObject.set(x, "basedir", value.asInstanceOf[js.Any])
       
@@ -388,7 +390,8 @@ object anon {
       __obj.asInstanceOf[readFilefilestringcbreadF]
     }
     
-    extension [Self <: readFilefilestringcbreadF](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: readFilefilestringcbreadF] (val x: Self) extends AnyVal {
       
       inline def setBasedir(value: String): Self = StObject.set(x, "basedir", value.asInstanceOf[js.Any])
       
@@ -539,7 +542,8 @@ object anon {
       __obj.asInstanceOf[readFileneverundefinedrea]
     }
     
-    extension [Self <: readFileneverundefinedrea](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: readFileneverundefinedrea] (val x: Self) extends AnyVal {
       
       inline def setBasedir(value: String): Self = StObject.set(x, "basedir", value.asInstanceOf[js.Any])
       

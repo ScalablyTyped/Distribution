@@ -36,7 +36,8 @@ object InfoResponse {
     __obj.asInstanceOf[InfoResponse]
   }
   
-  extension [Self <: InfoResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InfoResponse] (val x: Self) extends AnyVal {
     
     inline def setCouchdb(value: String): Self = StObject.set(x, "couchdb", value.asInstanceOf[js.Any])
     

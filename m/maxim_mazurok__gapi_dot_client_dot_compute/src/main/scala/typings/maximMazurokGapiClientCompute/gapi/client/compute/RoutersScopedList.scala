@@ -20,7 +20,8 @@ object RoutersScopedList {
     __obj.asInstanceOf[RoutersScopedList]
   }
   
-  extension [Self <: RoutersScopedList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RoutersScopedList] (val x: Self) extends AnyVal {
     
     inline def setRouters(value: js.Array[Router]): Self = StObject.set(x, "routers", value.asInstanceOf[js.Any])
     

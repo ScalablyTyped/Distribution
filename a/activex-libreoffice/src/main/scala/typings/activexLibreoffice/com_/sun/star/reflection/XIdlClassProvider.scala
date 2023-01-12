@@ -32,7 +32,8 @@ object XIdlClassProvider {
     __obj.asInstanceOf[XIdlClassProvider]
   }
   
-  extension [Self <: XIdlClassProvider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XIdlClassProvider] (val x: Self) extends AnyVal {
     
     inline def setGetIdlClasses(value: () => SafeArray[XIdlClass[Any]]): Self = StObject.set(x, "getIdlClasses", js.Any.fromFunction0(value))
     

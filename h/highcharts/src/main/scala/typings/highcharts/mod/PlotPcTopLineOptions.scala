@@ -15,7 +15,8 @@ object PlotPcTopLineOptions {
     __obj.asInstanceOf[PlotPcTopLineOptions]
   }
   
-  extension [Self <: PlotPcTopLineOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotPcTopLineOptions] (val x: Self) extends AnyVal {
     
     inline def setStyles(value: PlotPcTopLineStylesOptions): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
     

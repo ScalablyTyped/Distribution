@@ -58,7 +58,8 @@ object libComponentsDocumentCardDocumentCardDottypesMod {
       __obj.asInstanceOf[IDocumentCard]
     }
     
-    extension [Self <: IDocumentCard](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDocumentCard] (val x: Self) extends AnyVal {
       
       inline def setFocus(value: () => Unit): Self = StObject.set(x, "focus", js.Any.fromFunction0(value))
     }
@@ -127,7 +128,8 @@ object libComponentsDocumentCardDocumentCardDottypesMod {
       __obj.asInstanceOf[IDocumentCardProps]
     }
     
-    extension [Self <: IDocumentCardProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDocumentCardProps] (val x: Self) extends AnyVal {
       
       inline def setAccentColor(value: String): Self = StObject.set(x, "accentColor", value.asInstanceOf[js.Any])
       
@@ -194,7 +196,8 @@ object libComponentsDocumentCardDocumentCardDottypesMod {
       __obj.asInstanceOf[IDocumentCardStyleProps]
     }
     
-    extension [Self <: IDocumentCardStyleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDocumentCardStyleProps] (val x: Self) extends AnyVal {
       
       inline def setActionable(value: Boolean): Self = StObject.set(x, "actionable", value.asInstanceOf[js.Any])
       
@@ -223,7 +226,8 @@ object libComponentsDocumentCardDocumentCardDottypesMod {
       __obj.asInstanceOf[IDocumentCardStyles]
     }
     
-    extension [Self <: IDocumentCardStyles](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDocumentCardStyles] (val x: Self) extends AnyVal {
       
       inline def setRoot(value: IStyle): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
       

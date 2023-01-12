@@ -41,7 +41,8 @@ object StartSamplingRequest {
     __obj.asInstanceOf[StartSamplingRequest]
   }
   
-  extension [Self <: StartSamplingRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartSamplingRequest] (val x: Self) extends AnyVal {
     
     inline def setIncludeObjectsCollectedByMajorGC(value: Boolean): Self = StObject.set(x, "includeObjectsCollectedByMajorGC", value.asInstanceOf[js.Any])
     

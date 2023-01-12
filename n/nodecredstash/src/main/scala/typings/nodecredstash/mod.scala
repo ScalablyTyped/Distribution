@@ -71,7 +71,8 @@ object mod {
       __obj.asInstanceOf[CredstashConfig]
     }
     
-    extension [Self <: CredstashConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CredstashConfig] (val x: Self) extends AnyVal {
       
       inline def setAwsOpts(value: ClientConfiguration): Self = StObject.set(x, "awsOpts", value.asInstanceOf[js.Any])
       
@@ -116,7 +117,8 @@ object mod {
       __obj.asInstanceOf[PutSecretOptions]
     }
     
-    extension [Self <: PutSecretOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PutSecretOptions] (val x: Self) extends AnyVal {
       
       inline def setContext(value: CredstashContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       

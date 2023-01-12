@@ -19,7 +19,8 @@ object SetAutoDarkModeOverrideRequest {
     __obj.asInstanceOf[SetAutoDarkModeOverrideRequest]
   }
   
-  extension [Self <: SetAutoDarkModeOverrideRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetAutoDarkModeOverrideRequest] (val x: Self) extends AnyVal {
     
     inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     

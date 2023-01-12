@@ -19,7 +19,8 @@ object LocationSubscription {
     __obj.asInstanceOf[LocationSubscription]
   }
   
-  extension [Self <: LocationSubscription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LocationSubscription] (val x: Self) extends AnyVal {
     
     inline def setRemove(value: () => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction0(value))
   }

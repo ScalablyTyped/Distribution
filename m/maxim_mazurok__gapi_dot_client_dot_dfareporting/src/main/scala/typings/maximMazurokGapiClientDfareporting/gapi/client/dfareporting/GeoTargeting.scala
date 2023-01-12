@@ -46,7 +46,8 @@ object GeoTargeting {
     __obj.asInstanceOf[GeoTargeting]
   }
   
-  extension [Self <: GeoTargeting](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GeoTargeting] (val x: Self) extends AnyVal {
     
     inline def setCities(value: js.Array[City]): Self = StObject.set(x, "cities", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object triggerSnsMod {
       __obj.asInstanceOf[SNSEvent]
     }
     
-    extension [Self <: SNSEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SNSEvent] (val x: Self) extends AnyVal {
       
       inline def setRecords(value: js.Array[SNSEventRecord]): Self = StObject.set(x, "Records", value.asInstanceOf[js.Any])
       
@@ -44,7 +45,8 @@ object triggerSnsMod {
       __obj.asInstanceOf[SNSEventRecord]
     }
     
-    extension [Self <: SNSEventRecord](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SNSEventRecord] (val x: Self) extends AnyVal {
       
       inline def setEventSource(value: String): Self = StObject.set(x, "EventSource", value.asInstanceOf[js.Any])
       
@@ -103,7 +105,8 @@ object triggerSnsMod {
       __obj.asInstanceOf[SNSMessage]
     }
     
-    extension [Self <: SNSMessage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SNSMessage] (val x: Self) extends AnyVal {
       
       inline def setMessage(value: String): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
       
@@ -146,7 +149,8 @@ object triggerSnsMod {
       __obj.asInstanceOf[SNSMessageAttribute]
     }
     
-    extension [Self <: SNSMessageAttribute](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SNSMessageAttribute] (val x: Self) extends AnyVal {
       
       inline def setType(value: String): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
       

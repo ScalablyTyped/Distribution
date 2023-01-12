@@ -32,7 +32,8 @@ object examplesJsmPostprocessingLutpassMod {
       __obj.asInstanceOf[LUTPassParameters]
     }
     
-    extension [Self <: LUTPassParameters](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LUTPassParameters] (val x: Self) extends AnyVal {
       
       inline def setIntensity(value: Double): Self = StObject.set(x, "intensity", value.asInstanceOf[js.Any])
       

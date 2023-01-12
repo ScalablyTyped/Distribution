@@ -31,7 +31,8 @@ object anon {
       __obj.asInstanceOf[Exif]
     }
     
-    extension [Self <: Exif](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Exif] (val x: Self) extends AnyVal {
       
       inline def setExif(value: Record[String, Any]): Self = StObject.set(x, "exif", value.asInstanceOf[js.Any])
       

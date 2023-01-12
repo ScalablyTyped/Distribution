@@ -97,7 +97,8 @@ object Blobs {
       __obj.asInstanceOf[BlobClientParamters]
     }
     
-    extension [Self <: BlobClientParamters](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BlobClientParamters] (val x: Self) extends AnyVal {
       
       inline def setLogger(value: GmeLogger): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
     }
@@ -122,7 +123,8 @@ object Blobs {
       __obj.asInstanceOf[BlobMetadata]
     }
     
-    extension [Self <: BlobMetadata](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BlobMetadata] (val x: Self) extends AnyVal {
       
       inline def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
       

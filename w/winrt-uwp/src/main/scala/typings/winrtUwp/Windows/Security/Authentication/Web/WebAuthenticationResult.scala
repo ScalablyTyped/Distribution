@@ -23,7 +23,8 @@ object WebAuthenticationResult {
     __obj.asInstanceOf[WebAuthenticationResult]
   }
   
-  extension [Self <: WebAuthenticationResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebAuthenticationResult] (val x: Self) extends AnyVal {
     
     inline def setResponseData(value: String): Self = StObject.set(x, "responseData", value.asInstanceOf[js.Any])
     

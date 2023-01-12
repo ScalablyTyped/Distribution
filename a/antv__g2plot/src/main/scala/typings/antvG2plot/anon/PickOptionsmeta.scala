@@ -18,7 +18,8 @@ object PickOptionsmeta {
     __obj.asInstanceOf[PickOptionsmeta]
   }
   
-  extension [Self <: PickOptionsmeta](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickOptionsmeta] (val x: Self) extends AnyVal {
     
     inline def setMeta(value: Record[String, Meta]): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
     

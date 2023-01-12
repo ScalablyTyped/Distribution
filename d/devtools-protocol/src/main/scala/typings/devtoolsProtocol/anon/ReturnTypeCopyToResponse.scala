@@ -19,7 +19,8 @@ object ReturnTypeCopyToResponse {
     __obj.asInstanceOf[ReturnTypeCopyToResponse]
   }
   
-  extension [Self <: ReturnTypeCopyToResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReturnTypeCopyToResponse] (val x: Self) extends AnyVal {
     
     inline def setParamsType(value: js.Array[CopyToRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     

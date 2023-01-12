@@ -18,7 +18,8 @@ object TakePreciseCoverageReturnType {
     __obj.asInstanceOf[TakePreciseCoverageReturnType]
   }
   
-  extension [Self <: TakePreciseCoverageReturnType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TakePreciseCoverageReturnType] (val x: Self) extends AnyVal {
     
     inline def setResult(value: js.Array[ScriptCoverage]): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     

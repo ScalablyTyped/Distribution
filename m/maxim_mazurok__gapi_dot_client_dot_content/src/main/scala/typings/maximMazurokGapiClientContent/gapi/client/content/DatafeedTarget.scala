@@ -28,7 +28,8 @@ object DatafeedTarget {
     __obj.asInstanceOf[DatafeedTarget]
   }
   
-  extension [Self <: DatafeedTarget](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DatafeedTarget] (val x: Self) extends AnyVal {
     
     inline def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
     

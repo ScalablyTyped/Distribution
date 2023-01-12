@@ -15,7 +15,8 @@ object DisableDefaultTimestamp {
     __obj.asInstanceOf[DisableDefaultTimestamp]
   }
   
-  extension [Self <: DisableDefaultTimestamp](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisableDefaultTimestamp] (val x: Self) extends AnyVal {
     
     inline def setDisableDefaultTimestamp(value: Boolean): Self = StObject.set(x, "disableDefaultTimestamp", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[Peek[TPeek, TRewind]]
     }
     
-    extension [Self <: Peek[?, ?], TPeek, TRewind](x: Self & (Peek[TPeek, TRewind])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Peek[?, ?], TPeek, TRewind] (val x: Self & (Peek[TPeek, TRewind])) extends AnyVal {
       
       inline def setPeek(value: () => TPeek): Self = StObject.set(x, "peek", js.Any.fromFunction0(value))
       

@@ -33,7 +33,8 @@ object SearchOutput {
     __obj.asInstanceOf[SearchOutput]
   }
   
-  extension [Self <: SearchOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchOutput] (val x: Self) extends AnyVal {
     
     inline def setCount(value: ResourceCount): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     

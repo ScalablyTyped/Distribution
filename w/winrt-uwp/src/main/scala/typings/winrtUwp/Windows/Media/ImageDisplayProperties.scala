@@ -20,7 +20,8 @@ object ImageDisplayProperties {
     __obj.asInstanceOf[ImageDisplayProperties]
   }
   
-  extension [Self <: ImageDisplayProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImageDisplayProperties] (val x: Self) extends AnyVal {
     
     inline def setSubtitle(value: String): Self = StObject.set(x, "subtitle", value.asInstanceOf[js.Any])
     

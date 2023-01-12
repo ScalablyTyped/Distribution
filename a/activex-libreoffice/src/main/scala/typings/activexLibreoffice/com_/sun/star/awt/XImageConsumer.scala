@@ -89,7 +89,8 @@ object XImageConsumer {
     __obj.asInstanceOf[XImageConsumer]
   }
   
-  extension [Self <: XImageConsumer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XImageConsumer] (val x: Self) extends AnyVal {
     
     inline def setComplete(value: (Double, XImageProducer) => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction2(value))
     

@@ -15,7 +15,8 @@ object PreProcessor {
     __obj.asInstanceOf[PreProcessor]
   }
   
-  extension [Self <: PreProcessor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PreProcessor] (val x: Self) extends AnyVal {
     
     inline def setProcess(value: (String, PreProcessorExtraInfo) => String): Self = StObject.set(x, "process", js.Any.fromFunction2(value))
   }

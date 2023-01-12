@@ -29,7 +29,8 @@ object EgressTo {
     __obj.asInstanceOf[EgressTo]
   }
   
-  extension [Self <: EgressTo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EgressTo] (val x: Self) extends AnyVal {
     
     inline def setExternalResources(value: js.Array[String]): Self = StObject.set(x, "externalResources", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object GetProposalInput {
     __obj.asInstanceOf[GetProposalInput]
   }
   
-  extension [Self <: GetProposalInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetProposalInput] (val x: Self) extends AnyVal {
     
     inline def setNetworkId(value: ResourceIdString): Self = StObject.set(x, "NetworkId", value.asInstanceOf[js.Any])
     

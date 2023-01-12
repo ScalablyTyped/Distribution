@@ -20,7 +20,8 @@ object TestScriptSetup {
     __obj.asInstanceOf[TestScriptSetup]
   }
   
-  extension [Self <: TestScriptSetup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TestScriptSetup] (val x: Self) extends AnyVal {
     
     inline def setAction(value: js.Array[TestScriptSetupAction]): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     

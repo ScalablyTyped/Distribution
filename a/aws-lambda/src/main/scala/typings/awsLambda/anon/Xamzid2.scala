@@ -19,7 +19,8 @@ object Xamzid2 {
     __obj.asInstanceOf[Xamzid2]
   }
   
-  extension [Self <: Xamzid2](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Xamzid2] (val x: Self) extends AnyVal {
     
     inline def `setX-amz-id-2`(value: String): Self = StObject.set(x, "x-amz-id-2", value.asInstanceOf[js.Any])
     

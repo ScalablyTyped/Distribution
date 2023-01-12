@@ -23,7 +23,8 @@ object CreateUsageReportSubscriptionResult {
     __obj.asInstanceOf[CreateUsageReportSubscriptionResult]
   }
   
-  extension [Self <: CreateUsageReportSubscriptionResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateUsageReportSubscriptionResult] (val x: Self) extends AnyVal {
     
     inline def setS3BucketName(value: String): Self = StObject.set(x, "S3BucketName", value.asInstanceOf[js.Any])
     

@@ -32,7 +32,8 @@ object ListShareInvitationsInput {
     __obj.asInstanceOf[ListShareInvitationsInput]
   }
   
-  extension [Self <: ListShareInvitationsInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListShareInvitationsInput] (val x: Self) extends AnyVal {
     
     inline def setLensNamePrefix(value: LensNamePrefix): Self = StObject.set(x, "LensNamePrefix", value.asInstanceOf[js.Any])
     

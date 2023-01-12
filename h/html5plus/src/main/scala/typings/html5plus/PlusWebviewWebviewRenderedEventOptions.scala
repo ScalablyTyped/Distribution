@@ -39,7 +39,8 @@ object PlusWebviewWebviewRenderedEventOptions {
     __obj.asInstanceOf[PlusWebviewWebviewRenderedEventOptions]
   }
   
-  extension [Self <: PlusWebviewWebviewRenderedEventOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlusWebviewWebviewRenderedEventOptions] (val x: Self) extends AnyVal {
     
     inline def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
     

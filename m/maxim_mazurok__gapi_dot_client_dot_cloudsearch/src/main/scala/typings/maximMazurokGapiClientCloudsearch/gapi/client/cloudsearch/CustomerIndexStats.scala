@@ -19,7 +19,8 @@ object CustomerIndexStats {
     __obj.asInstanceOf[CustomerIndexStats]
   }
   
-  extension [Self <: CustomerIndexStats](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomerIndexStats] (val x: Self) extends AnyVal {
     
     inline def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     

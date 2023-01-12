@@ -17,7 +17,8 @@ object Mag {
     __obj.asInstanceOf[Mag]
   }
   
-  extension [Self <: Mag](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Mag] (val x: Self) extends AnyVal {
     
     inline def setMag(value: Double): Self = StObject.set(x, "mag", value.asInstanceOf[js.Any])
     

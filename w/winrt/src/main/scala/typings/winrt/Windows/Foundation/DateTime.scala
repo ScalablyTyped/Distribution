@@ -15,7 +15,8 @@ object DateTime {
     __obj.asInstanceOf[DateTime]
   }
   
-  extension [Self <: DateTime](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DateTime] (val x: Self) extends AnyVal {
     
     inline def setUniversalTime(value: Double): Self = StObject.set(x, "universalTime", value.asInstanceOf[js.Any])
   }

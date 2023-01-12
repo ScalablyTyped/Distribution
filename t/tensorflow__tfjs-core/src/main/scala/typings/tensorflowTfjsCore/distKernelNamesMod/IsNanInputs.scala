@@ -16,7 +16,8 @@ object IsNanInputs {
     __obj.asInstanceOf[IsNanInputs]
   }
   
-  extension [Self <: IsNanInputs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IsNanInputs] (val x: Self) extends AnyVal {
     
     inline def setX(value: scala.Any): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     

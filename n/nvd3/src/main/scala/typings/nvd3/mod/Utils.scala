@@ -36,7 +36,8 @@ object Utils {
     __obj.asInstanceOf[Utils]
   }
   
-  extension [Self <: Utils](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Utils] (val x: Self) extends AnyVal {
     
     inline def setDefaultColor(value: () => js.Array[String]): Self = StObject.set(x, "defaultColor", js.Any.fromFunction0(value))
     

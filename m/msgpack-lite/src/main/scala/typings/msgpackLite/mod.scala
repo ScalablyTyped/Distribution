@@ -141,7 +141,8 @@ object mod {
       __obj.asInstanceOf[CodecOptions]
     }
     
-    extension [Self <: CodecOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CodecOptions] (val x: Self) extends AnyVal {
       
       inline def setBinarraybuffer(value: Boolean): Self = StObject.set(x, "binarraybuffer", value.asInstanceOf[js.Any])
       
@@ -206,7 +207,8 @@ object mod {
       __obj.asInstanceOf[Codec_]
     }
     
-    extension [Self <: Codec_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Codec_] (val x: Self) extends AnyVal {
       
       inline def setAddExtPacker(
         value: (Double, Instantiable1[/* args (repeated) */ Any, Any], js.Function1[Any, Buffer | js.typedarray.Uint8Array]) => Unit
@@ -233,7 +235,8 @@ object mod {
       __obj.asInstanceOf[DecoderOptions]
     }
     
-    extension [Self <: DecoderOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DecoderOptions] (val x: Self) extends AnyVal {
       
       inline def setCodec(value: Codec_): Self = StObject.set(x, "codec", value.asInstanceOf[js.Any])
       
@@ -302,7 +305,8 @@ object mod {
       __obj.asInstanceOf[Encoder]
     }
     
-    extension [Self <: Encoder](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Encoder] (val x: Self) extends AnyVal {
       
       inline def setBufferish(value: Any): Self = StObject.set(x, "bufferish", value.asInstanceOf[js.Any])
       
@@ -347,7 +351,8 @@ object mod {
       __obj.asInstanceOf[EncoderOptions]
     }
     
-    extension [Self <: EncoderOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EncoderOptions] (val x: Self) extends AnyVal {
       
       inline def setCodec(value: Codec_): Self = StObject.set(x, "codec", value.asInstanceOf[js.Any])
       

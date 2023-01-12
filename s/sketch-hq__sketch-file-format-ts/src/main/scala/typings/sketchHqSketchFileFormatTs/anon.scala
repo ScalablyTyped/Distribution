@@ -66,7 +66,8 @@ object anon {
       __obj.asInstanceOf[App]
     }
     
-    extension [Self <: App](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: App] (val x: Self) extends AnyVal {
       
       inline def setApp(value: BundleId): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
       
@@ -101,7 +102,8 @@ object anon {
       __obj.asInstanceOf[Artboards]
     }
     
-    extension [Self <: Artboards](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Artboards] (val x: Self) extends AnyVal {
       
       inline def setArtboards(value: StringDictionary[NameString]): Self = StObject.set(x, "artboards", value.asInstanceOf[js.Any])
       
@@ -163,7 +165,8 @@ object anon {
       __obj.asInstanceOf[Assets]
     }
     
-    extension [Self <: Assets](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Assets] (val x: Self) extends AnyVal {
       
       inline def setAssets(value: AssetCollection): Self = StObject.set(x, "assets", value.asInstanceOf[js.Any])
       
@@ -236,7 +239,8 @@ object anon {
       __obj.asInstanceOf[Data]
     }
     
-    extension [Self <: Data](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Data] (val x: Self) extends AnyVal {
       
       inline def set_data(value: String): Self = StObject.set(x, "_data", value.asInstanceOf[js.Any])
     }
@@ -261,7 +265,8 @@ object anon {
       __obj.asInstanceOf[ExpandedSymbolPathsInSidebar]
     }
     
-    extension [Self <: ExpandedSymbolPathsInSidebar](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExpandedSymbolPathsInSidebar] (val x: Self) extends AnyVal {
       
       inline def setExpandedSymbolPathsInSidebar(value: js.Array[Any]): Self = StObject.set(x, "expandedSymbolPathsInSidebar", value.asInstanceOf[js.Any])
       
@@ -310,7 +315,8 @@ object anon {
       __obj.asInstanceOf[Kerning]
     }
     
-    extension [Self <: Kerning](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Kerning] (val x: Self) extends AnyVal {
       
       inline def setKerning(value: Double): Self = StObject.set(x, "kerning", value.asInstanceOf[js.Any])
       
@@ -363,7 +369,8 @@ object anon {
       __obj.asInstanceOf[MSAttributedStringColorAttribute]
     }
     
-    extension [Self <: MSAttributedStringColorAttribute](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MSAttributedStringColorAttribute] (val x: Self) extends AnyVal {
       
       inline def setKerning(value: Double): Self = StObject.set(x, "kerning", value.asInstanceOf[js.Any])
       
@@ -400,7 +407,8 @@ object anon {
       __obj.asInstanceOf[Name]
     }
     
-    extension [Self <: Name](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Name] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -423,7 +431,8 @@ object anon {
       __obj.asInstanceOf[NameString]
     }
     
-    extension [Self <: NameString](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NameString] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }

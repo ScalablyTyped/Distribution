@@ -20,7 +20,8 @@ object AnalysisRemoveDuplicatesTokenFilter {
     __obj.asInstanceOf[AnalysisRemoveDuplicatesTokenFilter]
   }
   
-  extension [Self <: AnalysisRemoveDuplicatesTokenFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnalysisRemoveDuplicatesTokenFilter] (val x: Self) extends AnyVal {
     
     inline def setType(value: remove_duplicates): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

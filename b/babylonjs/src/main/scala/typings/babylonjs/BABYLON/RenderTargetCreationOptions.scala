@@ -24,7 +24,8 @@ object RenderTargetCreationOptions {
     __obj.asInstanceOf[RenderTargetCreationOptions]
   }
   
-  extension [Self <: RenderTargetCreationOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RenderTargetCreationOptions] (val x: Self) extends AnyVal {
     
     inline def setGenerateDepthBuffer(value: Boolean): Self = StObject.set(x, "generateDepthBuffer", value.asInstanceOf[js.Any])
     

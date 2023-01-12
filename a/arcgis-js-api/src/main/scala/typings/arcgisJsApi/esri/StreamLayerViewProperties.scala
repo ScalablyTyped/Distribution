@@ -29,7 +29,8 @@ object StreamLayerViewProperties {
     __obj.asInstanceOf[StreamLayerViewProperties]
   }
   
-  extension [Self <: StreamLayerViewProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StreamLayerViewProperties] (val x: Self) extends AnyVal {
     
     inline def setFeatureEffect(value: FeatureEffectProperties): Self = StObject.set(x, "featureEffect", value.asInstanceOf[js.Any])
     

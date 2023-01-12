@@ -27,7 +27,8 @@ object ShapeLayer {
     __obj.asInstanceOf[ShapeLayer]
   }
   
-  extension [Self <: ShapeLayer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShapeLayer] (val x: Self) extends AnyVal {
     
     inline def setOptions(value: ShapeLayerOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     

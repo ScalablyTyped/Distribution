@@ -38,7 +38,8 @@ object AwsEcsTaskDefinitionVolumesDockerVolumeConfigurationDetails {
     __obj.asInstanceOf[AwsEcsTaskDefinitionVolumesDockerVolumeConfigurationDetails]
   }
   
-  extension [Self <: AwsEcsTaskDefinitionVolumesDockerVolumeConfigurationDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsEcsTaskDefinitionVolumesDockerVolumeConfigurationDetails] (val x: Self) extends AnyVal {
     
     inline def setAutoprovision(value: Boolean): Self = StObject.set(x, "Autoprovision", value.asInstanceOf[js.Any])
     

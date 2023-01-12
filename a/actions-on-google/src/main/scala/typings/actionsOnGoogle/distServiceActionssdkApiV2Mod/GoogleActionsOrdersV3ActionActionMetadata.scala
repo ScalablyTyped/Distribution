@@ -18,7 +18,8 @@ object GoogleActionsOrdersV3ActionActionMetadata {
     __obj.asInstanceOf[GoogleActionsOrdersV3ActionActionMetadata]
   }
   
-  extension [Self <: GoogleActionsOrdersV3ActionActionMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleActionsOrdersV3ActionActionMetadata] (val x: Self) extends AnyVal {
     
     inline def setExpireTime(value: String): Self = StObject.set(x, "expireTime", value.asInstanceOf[js.Any])
     

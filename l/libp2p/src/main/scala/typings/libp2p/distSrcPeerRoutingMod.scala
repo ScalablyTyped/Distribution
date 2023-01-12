@@ -68,7 +68,8 @@ object distSrcPeerRoutingMod {
       __obj.asInstanceOf[DefaultPeerRoutingComponents]
     }
     
-    extension [Self <: DefaultPeerRoutingComponents](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DefaultPeerRoutingComponents] (val x: Self) extends AnyVal {
       
       inline def setPeerId(value: PeerId): Self = StObject.set(x, "peerId", value.asInstanceOf[js.Any])
       
@@ -89,7 +90,8 @@ object distSrcPeerRoutingMod {
       __obj.asInstanceOf[PeerRoutingInit]
     }
     
-    extension [Self <: PeerRoutingInit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PeerRoutingInit] (val x: Self) extends AnyVal {
       
       inline def setRefreshManager(value: RefreshManagerInit): Self = StObject.set(x, "refreshManager", value.asInstanceOf[js.Any])
       
@@ -130,7 +132,8 @@ object distSrcPeerRoutingMod {
       __obj.asInstanceOf[RefreshManagerInit]
     }
     
-    extension [Self <: RefreshManagerInit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RefreshManagerInit] (val x: Self) extends AnyVal {
       
       inline def setBootDelay(value: Double): Self = StObject.set(x, "bootDelay", value.asInstanceOf[js.Any])
       

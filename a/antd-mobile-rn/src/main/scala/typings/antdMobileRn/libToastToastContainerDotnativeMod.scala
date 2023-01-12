@@ -63,7 +63,8 @@ object libToastToastContainerDotnativeMod {
       __obj.asInstanceOf[ToastProps]
     }
     
-    extension [Self <: ToastProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ToastProps] (val x: Self) extends AnyVal {
       
       inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       

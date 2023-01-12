@@ -24,7 +24,8 @@ object BootstrapRadioButtonEventMap {
     __obj.asInstanceOf[BootstrapRadioButtonEventMap]
   }
   
-  extension [Self <: BootstrapRadioButtonEventMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BootstrapRadioButtonEventMap] (val x: Self) extends AnyVal {
     
     inline def setCheckedChanged(value: ProcessingModeEventArgs): Self = StObject.set(x, "checkedChanged", value.asInstanceOf[js.Any])
   }

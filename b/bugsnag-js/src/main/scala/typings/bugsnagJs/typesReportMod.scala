@@ -56,7 +56,8 @@ object typesReportMod {
       __obj.asInstanceOf[IHandledState]
     }
     
-    extension [Self <: IHandledState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IHandledState] (val x: Self) extends AnyVal {
       
       inline def setSeverity(value: String): Self = StObject.set(x, "severity", value.asInstanceOf[js.Any])
       
@@ -87,7 +88,8 @@ object typesReportMod {
       __obj.asInstanceOf[IStackframe]
     }
     
-    extension [Self <: IStackframe](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IStackframe] (val x: Self) extends AnyVal {
       
       inline def setCode(value: js.Object): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       

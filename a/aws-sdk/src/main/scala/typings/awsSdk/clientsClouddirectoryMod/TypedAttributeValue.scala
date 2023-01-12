@@ -38,7 +38,8 @@ object TypedAttributeValue {
     __obj.asInstanceOf[TypedAttributeValue]
   }
   
-  extension [Self <: TypedAttributeValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypedAttributeValue] (val x: Self) extends AnyVal {
     
     inline def setBinaryValue(value: BinaryAttributeValue): Self = StObject.set(x, "BinaryValue", value.asInstanceOf[js.Any])
     

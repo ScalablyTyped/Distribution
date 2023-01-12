@@ -57,7 +57,8 @@ object DiagnosticPullOptions_ {
     __obj.asInstanceOf[DiagnosticPullOptions_]
   }
   
-  extension [Self <: DiagnosticPullOptions_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DiagnosticPullOptions_] (val x: Self) extends AnyVal {
     
     inline def setFilter(value: (/* document */ TextDocument, /* mode */ DiagnosticPullMode) => Boolean): Self = StObject.set(x, "filter", js.Any.fromFunction2(value))
     

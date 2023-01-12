@@ -28,7 +28,8 @@ object RegisterDomainRequest {
     __obj.asInstanceOf[RegisterDomainRequest]
   }
   
-  extension [Self <: RegisterDomainRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RegisterDomainRequest] (val x: Self) extends AnyVal {
     
     inline def setContactNotices(value: js.Array[String]): Self = StObject.set(x, "contactNotices", value.asInstanceOf[js.Any])
     

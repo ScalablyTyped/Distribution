@@ -19,7 +19,8 @@ object GmeUtil {
       __obj.asInstanceOf[Canon]
     }
     
-    extension [Self <: Canon](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Canon] (val x: Self) extends AnyVal {
       
       inline def setParse(value: Any => String): Self = StObject.set(x, "parse", js.Any.fromFunction1(value))
       

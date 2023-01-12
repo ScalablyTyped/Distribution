@@ -21,7 +21,8 @@ object RendererConfig {
     __obj.asInstanceOf[RendererConfig]
   }
   
-  extension [Self <: RendererConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RendererConfig] (val x: Self) extends AnyVal {
     
     inline def setMaxZoomLevel(value: Double): Self = StObject.set(x, "maxZoomLevel", value.asInstanceOf[js.Any])
     

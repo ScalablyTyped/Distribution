@@ -28,7 +28,8 @@ object ConvertRecoveryPointToSnapshotRequest {
     __obj.asInstanceOf[ConvertRecoveryPointToSnapshotRequest]
   }
   
-  extension [Self <: ConvertRecoveryPointToSnapshotRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConvertRecoveryPointToSnapshotRequest] (val x: Self) extends AnyVal {
     
     inline def setRecoveryPointId(value: String): Self = StObject.set(x, "recoveryPointId", value.asInstanceOf[js.Any])
     

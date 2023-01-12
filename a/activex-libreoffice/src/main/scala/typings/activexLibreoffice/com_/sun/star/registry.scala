@@ -276,7 +276,8 @@ object registry {
       __obj.asInstanceOf[XImplementationRegistration]
     }
     
-    extension [Self <: XImplementationRegistration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XImplementationRegistration] (val x: Self) extends AnyVal {
       
       inline def setCheckInstantiation(value: String => SafeArray[String]): Self = StObject.set(x, "checkInstantiation", js.Any.fromFunction1(value))
       
@@ -327,7 +328,8 @@ object registry {
       __obj.asInstanceOf[XImplementationRegistration2]
     }
     
-    extension [Self <: XImplementationRegistration2](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XImplementationRegistration2] (val x: Self) extends AnyVal {
       
       inline def setRegisterImplementationWithLocation(value: (String, String, String, XSimpleRegistry) => Unit): Self = StObject.set(x, "registerImplementationWithLocation", js.Any.fromFunction4(value))
     }
@@ -666,7 +668,8 @@ object registry {
       __obj.asInstanceOf[XRegistryKey]
     }
     
-    extension [Self <: XRegistryKey](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XRegistryKey] (val x: Self) extends AnyVal {
       
       inline def setAsciiListValue(value: SafeArray[String]): Self = StObject.set(x, "AsciiListValue", value.asInstanceOf[js.Any])
       
@@ -837,7 +840,8 @@ object registry {
       __obj.asInstanceOf[XSimpleRegistry]
     }
     
-    extension [Self <: XSimpleRegistry](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XSimpleRegistry] (val x: Self) extends AnyVal {
       
       inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
       

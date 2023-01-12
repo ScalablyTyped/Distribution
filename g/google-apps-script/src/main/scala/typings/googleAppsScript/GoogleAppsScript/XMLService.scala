@@ -98,7 +98,8 @@ object XMLService {
       __obj.asInstanceOf[Attribute]
     }
     
-    extension [Self <: Attribute](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Attribute] (val x: Self) extends AnyVal {
       
       inline def setGetName(value: () => String): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
       
@@ -159,7 +160,8 @@ object XMLService {
       __obj.asInstanceOf[Cdata]
     }
     
-    extension [Self <: Cdata](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Cdata] (val x: Self) extends AnyVal {
       
       inline def setAppend(value: String => Text): Self = StObject.set(x, "append", js.Any.fromFunction1(value))
       
@@ -201,7 +203,8 @@ object XMLService {
       __obj.asInstanceOf[Comment]
     }
     
-    extension [Self <: Comment](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Comment] (val x: Self) extends AnyVal {
       
       inline def setGetText(value: () => String): Self = StObject.set(x, "getText", js.Any.fromFunction0(value))
       
@@ -272,7 +275,8 @@ object XMLService {
       __obj.asInstanceOf[typings.googleAppsScript.GoogleAppsScript.XMLService.Content]
     }
     
-    extension [Self <: typings.googleAppsScript.GoogleAppsScript.XMLService.Content](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.googleAppsScript.GoogleAppsScript.XMLService.Content] (val x: Self) extends AnyVal {
       
       inline def setAsCdata(value: () => Cdata): Self = StObject.set(x, "asCdata", js.Any.fromFunction0(value))
       
@@ -348,7 +352,8 @@ object XMLService {
       __obj.asInstanceOf[DocType]
     }
     
-    extension [Self <: DocType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DocType] (val x: Self) extends AnyVal {
       
       inline def setGetElementName(value: () => String): Self = StObject.set(x, "getElementName", js.Any.fromFunction0(value))
       
@@ -536,7 +541,8 @@ object XMLService {
       __obj.asInstanceOf[EntityRef]
     }
     
-    extension [Self <: EntityRef](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EntityRef] (val x: Self) extends AnyVal {
       
       inline def setGetName(value: () => String): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
       
@@ -599,7 +605,8 @@ object XMLService {
       __obj.asInstanceOf[Namespace]
     }
     
-    extension [Self <: Namespace](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Namespace] (val x: Self) extends AnyVal {
       
       inline def setGetPrefix(value: () => String): Self = StObject.set(x, "getPrefix", js.Any.fromFunction0(value))
       
@@ -639,7 +646,8 @@ object XMLService {
       __obj.asInstanceOf[ProcessingInstruction]
     }
     
-    extension [Self <: ProcessingInstruction](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProcessingInstruction] (val x: Self) extends AnyVal {
       
       inline def setGetData(value: () => String): Self = StObject.set(x, "getData", js.Any.fromFunction0(value))
       
@@ -682,7 +690,8 @@ object XMLService {
       __obj.asInstanceOf[Text]
     }
     
-    extension [Self <: Text](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Text] (val x: Self) extends AnyVal {
       
       inline def setAppend(value: String => Text): Self = StObject.set(x, "append", js.Any.fromFunction1(value))
       

@@ -85,7 +85,8 @@ object ControlsComponent {
     __obj.asInstanceOf[ControlsComponent]
   }
   
-  extension [Self <: ControlsComponent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ControlsComponent] (val x: Self) extends AnyVal {
     
     inline def setAddBindings(value: () => Unit): Self = StObject.set(x, "addBindings", js.Any.fromFunction0(value))
     

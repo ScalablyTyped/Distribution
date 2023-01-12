@@ -25,7 +25,8 @@ object Resolutioncomment {
     __obj.asInstanceOf[Resolutioncomment]
   }
   
-  extension [Self <: Resolutioncomment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Resolutioncomment] (val x: Self) extends AnyVal {
     
     inline def setResolution(
       value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['secret-scanning-alert-resolution'] */ js.Any

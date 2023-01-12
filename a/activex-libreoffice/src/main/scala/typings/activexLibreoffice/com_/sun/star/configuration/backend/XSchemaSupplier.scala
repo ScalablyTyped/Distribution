@@ -35,7 +35,8 @@ object XSchemaSupplier {
     __obj.asInstanceOf[XSchemaSupplier]
   }
   
-  extension [Self <: XSchemaSupplier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XSchemaSupplier] (val x: Self) extends AnyVal {
     
     inline def setGetComponentSchema(value: String => XSchema): Self = StObject.set(x, "getComponentSchema", js.Any.fromFunction1(value))
   }

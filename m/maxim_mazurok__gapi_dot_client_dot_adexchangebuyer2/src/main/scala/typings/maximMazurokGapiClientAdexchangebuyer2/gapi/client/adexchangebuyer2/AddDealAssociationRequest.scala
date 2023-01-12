@@ -16,7 +16,8 @@ object AddDealAssociationRequest {
     __obj.asInstanceOf[AddDealAssociationRequest]
   }
   
-  extension [Self <: AddDealAssociationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AddDealAssociationRequest] (val x: Self) extends AnyVal {
     
     inline def setAssociation(value: CreativeDealAssociation): Self = StObject.set(x, "association", value.asInstanceOf[js.Any])
     

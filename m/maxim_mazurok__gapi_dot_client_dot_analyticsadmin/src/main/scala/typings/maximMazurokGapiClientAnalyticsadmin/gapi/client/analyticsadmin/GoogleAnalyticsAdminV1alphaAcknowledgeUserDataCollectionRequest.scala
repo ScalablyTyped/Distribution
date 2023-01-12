@@ -20,7 +20,8 @@ object GoogleAnalyticsAdminV1alphaAcknowledgeUserDataCollectionRequest {
     __obj.asInstanceOf[GoogleAnalyticsAdminV1alphaAcknowledgeUserDataCollectionRequest]
   }
   
-  extension [Self <: GoogleAnalyticsAdminV1alphaAcknowledgeUserDataCollectionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleAnalyticsAdminV1alphaAcknowledgeUserDataCollectionRequest] (val x: Self) extends AnyVal {
     
     inline def setAcknowledgement(value: String): Self = StObject.set(x, "acknowledgement", value.asInstanceOf[js.Any])
     

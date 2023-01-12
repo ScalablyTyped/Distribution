@@ -19,7 +19,8 @@ object Rule {
     __obj.asInstanceOf[Rule]
   }
   
-  extension [Self <: Rule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Rule] (val x: Self) extends AnyVal {
     
     inline def setDisjunctiveMatchStatements(value: js.Array[DisjunctiveMatchStatement]): Self = StObject.set(x, "disjunctiveMatchStatements", value.asInstanceOf[js.Any])
     

@@ -82,7 +82,8 @@ object libTestingHttpMockResponseMod {
       __obj.asInstanceOf[MockResponse]
     }
     
-    extension [Self <: MockResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MockResponse] (val x: Self) extends AnyVal {
       
       inline def setContentType_(value: String): Self = StObject.set(x, "contentType_", value.asInstanceOf[js.Any])
       

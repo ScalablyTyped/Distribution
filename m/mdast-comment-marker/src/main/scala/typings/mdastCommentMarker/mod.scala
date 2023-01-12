@@ -45,7 +45,8 @@ object mod {
       __obj.asInstanceOf[Marker]
     }
     
-    extension [Self <: Marker](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Marker] (val x: Self) extends AnyVal {
       
       inline def setAttributes(value: String): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
@@ -77,7 +78,8 @@ object mod {
       __obj.asInstanceOf[Mdx1CommentNode]
     }
     
-    extension [Self <: Mdx1CommentNode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Mdx1CommentNode] (val x: Self) extends AnyVal {
       
       inline def setType(value: comment): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       

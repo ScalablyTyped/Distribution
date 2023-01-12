@@ -28,7 +28,8 @@ object InspectorServiceAttributes {
     __obj.asInstanceOf[InspectorServiceAttributes]
   }
   
-  extension [Self <: InspectorServiceAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InspectorServiceAttributes] (val x: Self) extends AnyVal {
     
     inline def setAssessmentRunArn(value: Arn): Self = StObject.set(x, "assessmentRunArn", value.asInstanceOf[js.Any])
     

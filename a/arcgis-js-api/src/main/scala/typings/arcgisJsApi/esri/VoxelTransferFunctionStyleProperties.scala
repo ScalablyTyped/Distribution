@@ -41,7 +41,8 @@ object VoxelTransferFunctionStyleProperties {
     __obj.asInstanceOf[VoxelTransferFunctionStyleProperties]
   }
   
-  extension [Self <: VoxelTransferFunctionStyleProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VoxelTransferFunctionStyleProperties] (val x: Self) extends AnyVal {
     
     inline def setColorStops(value: CollectionProperties[VoxelColorStop]): Self = StObject.set(x, "colorStops", value.asInstanceOf[js.Any])
     

@@ -57,7 +57,8 @@ object TrackObjectFull {
     __obj.asInstanceOf[TrackObjectFull]
   }
   
-  extension [Self <: TrackObjectFull](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TrackObjectFull] (val x: Self) extends AnyVal {
     
     inline def setAlbum(value: AlbumObjectSimplified): Self = StObject.set(x, "album", value.asInstanceOf[js.Any])
     

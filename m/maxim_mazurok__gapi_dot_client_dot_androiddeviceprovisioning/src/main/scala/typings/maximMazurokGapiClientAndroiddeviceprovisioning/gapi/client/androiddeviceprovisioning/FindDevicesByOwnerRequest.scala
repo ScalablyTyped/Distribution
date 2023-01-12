@@ -25,7 +25,8 @@ object FindDevicesByOwnerRequest {
     __obj.asInstanceOf[FindDevicesByOwnerRequest]
   }
   
-  extension [Self <: FindDevicesByOwnerRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FindDevicesByOwnerRequest] (val x: Self) extends AnyVal {
     
     inline def setCustomerId(value: js.Array[String]): Self = StObject.set(x, "customerId", value.asInstanceOf[js.Any])
     

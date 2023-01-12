@@ -16,7 +16,8 @@ object DocumentTaskChangeCollectionUpdateData {
     __obj.asInstanceOf[DocumentTaskChangeCollectionUpdateData]
   }
   
-  extension [Self <: DocumentTaskChangeCollectionUpdateData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DocumentTaskChangeCollectionUpdateData] (val x: Self) extends AnyVal {
     
     inline def setItems(value: js.Array[DocumentTaskChangeData]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     

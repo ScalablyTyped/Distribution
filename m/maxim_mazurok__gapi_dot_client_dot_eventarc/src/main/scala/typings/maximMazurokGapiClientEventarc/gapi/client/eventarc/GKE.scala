@@ -34,7 +34,8 @@ object GKE {
     __obj.asInstanceOf[GKE]
   }
   
-  extension [Self <: GKE](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GKE] (val x: Self) extends AnyVal {
     
     inline def setCluster(value: String): Self = StObject.set(x, "cluster", value.asInstanceOf[js.Any])
     

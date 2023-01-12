@@ -20,7 +20,8 @@ object FilterMessages {
     __obj.asInstanceOf[FilterMessages]
   }
   
-  extension [Self <: FilterMessages](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FilterMessages] (val x: Self) extends AnyVal {
     
     inline def setAnd(value: String): Self = StObject.set(x, "and", value.asInstanceOf[js.Any])
     

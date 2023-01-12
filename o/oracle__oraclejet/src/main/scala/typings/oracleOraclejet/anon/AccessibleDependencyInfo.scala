@@ -99,7 +99,8 @@ object AccessibleDependencyInfo {
     __obj.asInstanceOf[AccessibleDependencyInfo]
   }
   
-  extension [Self <: AccessibleDependencyInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccessibleDependencyInfo] (val x: Self) extends AnyVal {
     
     inline def setAccessibleDependencyInfo(value: String): Self = StObject.set(x, "accessibleDependencyInfo", value.asInstanceOf[js.Any])
     

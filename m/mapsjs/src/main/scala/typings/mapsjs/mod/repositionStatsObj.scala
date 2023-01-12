@@ -21,7 +21,8 @@ object repositionStatsObj {
     __obj.asInstanceOf[repositionStatsObj]
   }
   
-  extension [Self <: repositionStatsObj](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: repositionStatsObj] (val x: Self) extends AnyVal {
     
     inline def setCenterX(value: Double): Self = StObject.set(x, "centerX", value.asInstanceOf[js.Any])
     

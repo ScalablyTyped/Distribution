@@ -46,7 +46,8 @@ object UIMoveComponent {
     __obj.asInstanceOf[UIMoveComponent]
   }
   
-  extension [Self <: UIMoveComponent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UIMoveComponent] (val x: Self) extends AnyVal {
     
     inline def setComponent(value: Widget_ | HTMLElement | String): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
     

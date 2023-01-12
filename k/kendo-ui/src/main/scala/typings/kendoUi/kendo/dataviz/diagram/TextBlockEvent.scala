@@ -19,7 +19,8 @@ object TextBlockEvent {
     __obj.asInstanceOf[TextBlockEvent]
   }
   
-  extension [Self <: TextBlockEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextBlockEvent] (val x: Self) extends AnyVal {
     
     inline def setIsDefaultPrevented(value: () => Boolean): Self = StObject.set(x, "isDefaultPrevented", js.Any.fromFunction0(value))
     

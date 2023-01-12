@@ -54,7 +54,8 @@ object mod {
       __obj.asInstanceOf[BadWordsFilter]
     }
     
-    extension [Self <: BadWordsFilter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BadWordsFilter] (val x: Self) extends AnyVal {
       
       inline def setAddWords(value: /* repeated */ String => Unit): Self = StObject.set(x, "addWords", js.Any.fromFunction1(value))
       
@@ -91,7 +92,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setEmptyList(value: Boolean): Self = StObject.set(x, "emptyList", value.asInstanceOf[js.Any])
       

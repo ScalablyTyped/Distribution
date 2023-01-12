@@ -168,7 +168,8 @@ object mod {
       __obj.asInstanceOf[ToBufferOptions]
     }
     
-    extension [Self <: ToBufferOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ToBufferOptions] (val x: Self) extends AnyVal {
       
       inline def setAddontextfont(value: String): Self = StObject.set(x, "addontextfont", value.asInstanceOf[js.Any])
       

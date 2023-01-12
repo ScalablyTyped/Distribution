@@ -26,7 +26,8 @@ object ProgressLogEvent {
     __obj.asInstanceOf[ProgressLogEvent]
   }
   
-  extension [Self <: ProgressLogEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProgressLogEvent] (val x: Self) extends AnyVal {
     
     inline def setLevel(value: progress): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     

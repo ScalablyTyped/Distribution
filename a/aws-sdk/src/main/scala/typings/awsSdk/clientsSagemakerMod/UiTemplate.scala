@@ -18,7 +18,8 @@ object UiTemplate {
     __obj.asInstanceOf[UiTemplate]
   }
   
-  extension [Self <: UiTemplate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UiTemplate] (val x: Self) extends AnyVal {
     
     inline def setContent(value: TemplateContent): Self = StObject.set(x, "Content", value.asInstanceOf[js.Any])
   }

@@ -20,7 +20,8 @@ object TypeofRotator {
     __obj.asInstanceOf[TypeofRotator]
   }
   
-  extension [Self <: TypeofRotator](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofRotator] (val x: Self) extends AnyVal {
     
     inline def setFn(value: Rotator): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object UpdateClusterSettingsResponse {
     __obj.asInstanceOf[UpdateClusterSettingsResponse]
   }
   
-  extension [Self <: UpdateClusterSettingsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateClusterSettingsResponse] (val x: Self) extends AnyVal {
     
     inline def setCluster(value: Cluster): Self = StObject.set(x, "cluster", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object ServiceNameAndResourceType {
     __obj.asInstanceOf[ServiceNameAndResourceType]
   }
   
-  extension [Self <: ServiceNameAndResourceType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServiceNameAndResourceType] (val x: Self) extends AnyVal {
     
     inline def setResourceRegionScope(value: ResourceRegionScope): Self = StObject.set(x, "resourceRegionScope", value.asInstanceOf[js.Any])
     

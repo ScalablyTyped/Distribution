@@ -202,7 +202,8 @@ object Administration {
     __obj.asInstanceOf[Administration]
   }
   
-  extension [Self <: Administration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Administration] (val x: Self) extends AnyVal {
     
     inline def setActions(value: read | write): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     

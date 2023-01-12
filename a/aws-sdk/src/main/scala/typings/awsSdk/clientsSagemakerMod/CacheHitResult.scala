@@ -18,7 +18,8 @@ object CacheHitResult {
     __obj.asInstanceOf[CacheHitResult]
   }
   
-  extension [Self <: CacheHitResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CacheHitResult] (val x: Self) extends AnyVal {
     
     inline def setSourcePipelineExecutionArn(value: PipelineExecutionArn): Self = StObject.set(x, "SourcePipelineExecutionArn", value.asInstanceOf[js.Any])
     

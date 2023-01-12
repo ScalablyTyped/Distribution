@@ -23,7 +23,8 @@ object CustomerStorageMessage {
     __obj.asInstanceOf[CustomerStorageMessage]
   }
   
-  extension [Self <: CustomerStorageMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomerStorageMessage] (val x: Self) extends AnyVal {
     
     inline def setTotalBackupSizeInMegaBytes(value: Double): Self = StObject.set(x, "TotalBackupSizeInMegaBytes", value.asInstanceOf[js.Any])
     

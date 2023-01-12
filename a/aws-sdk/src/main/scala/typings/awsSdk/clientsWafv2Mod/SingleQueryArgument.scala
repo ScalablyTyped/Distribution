@@ -18,7 +18,8 @@ object SingleQueryArgument {
     __obj.asInstanceOf[SingleQueryArgument]
   }
   
-  extension [Self <: SingleQueryArgument](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SingleQueryArgument] (val x: Self) extends AnyVal {
     
     inline def setName(value: FieldToMatchData): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }

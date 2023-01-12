@@ -29,7 +29,8 @@ object GoogleCloudRecommendationengineV1beta1FeatureMap {
     __obj.asInstanceOf[GoogleCloudRecommendationengineV1beta1FeatureMap]
   }
   
-  extension [Self <: GoogleCloudRecommendationengineV1beta1FeatureMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudRecommendationengineV1beta1FeatureMap] (val x: Self) extends AnyVal {
     
     inline def setCategoricalFeatures(
       value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.recommendationengine.gapi.client.recommendationengine.GoogleCloudRecommendationengineV1beta1FeatureMapStringList} */ js.Any

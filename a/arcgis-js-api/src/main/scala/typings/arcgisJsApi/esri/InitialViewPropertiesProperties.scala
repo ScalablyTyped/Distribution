@@ -36,7 +36,8 @@ object InitialViewPropertiesProperties {
     __obj.asInstanceOf[InitialViewPropertiesProperties]
   }
   
-  extension [Self <: InitialViewPropertiesProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InitialViewPropertiesProperties] (val x: Self) extends AnyVal {
     
     inline def setBackground(value: ColorBackgroundProperties): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     

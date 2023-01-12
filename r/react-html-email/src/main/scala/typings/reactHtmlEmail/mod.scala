@@ -70,7 +70,8 @@ object mod {
       __obj.asInstanceOf[AProps]
     }
     
-    extension [Self <: AProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -125,7 +126,8 @@ object mod {
       __obj.asInstanceOf[BoxProps]
     }
     
-    extension [Self <: BoxProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BoxProps] (val x: Self) extends AnyVal {
       
       inline def setAlign(value: left | center | right): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       
@@ -202,7 +204,8 @@ object mod {
       __obj.asInstanceOf[EmailProps]
     }
     
-    extension [Self <: EmailProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EmailProps] (val x: Self) extends AnyVal {
       
       inline def setAlign(value: left | center | right): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       
@@ -271,7 +274,8 @@ object mod {
       __obj.asInstanceOf[ImageProps]
     }
     
-    extension [Self <: ImageProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ImageProps] (val x: Self) extends AnyVal {
       
       inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
       
@@ -308,7 +312,8 @@ object mod {
       __obj.asInstanceOf[ItemProps]
     }
     
-    extension [Self <: ItemProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ItemProps] (val x: Self) extends AnyVal {
       
       inline def setAlign(value: left | center | right): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       
@@ -359,7 +364,8 @@ object mod {
       __obj.asInstanceOf[SpanProps]
     }
     
-    extension [Self <: SpanProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SpanProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

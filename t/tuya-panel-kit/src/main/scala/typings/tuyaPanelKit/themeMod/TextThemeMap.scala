@@ -20,7 +20,8 @@ object TextThemeMap {
     __obj.asInstanceOf[TextThemeMap]
   }
   
-  extension [Self <: TextThemeMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextThemeMap] (val x: Self) extends AnyVal {
     
     inline def setLarge(value: Any => FontSize): Self = StObject.set(x, "large", js.Any.fromFunction1(value))
     

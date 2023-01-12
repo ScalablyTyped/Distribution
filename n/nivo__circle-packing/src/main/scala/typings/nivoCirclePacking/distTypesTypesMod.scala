@@ -132,7 +132,8 @@ object distTypesTypesMod {
       __obj.asInstanceOf[CirclePackingCanvasProps[RawDatum]]
     }
     
-    extension [Self <: CirclePackingCanvasProps[?], RawDatum](x: Self & CirclePackingCanvasProps[RawDatum]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CirclePackingCanvasProps[?], RawDatum] (val x: Self & CirclePackingCanvasProps[RawDatum]) extends AnyVal {
       
       inline def setAnimate(value: Boolean): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
       
@@ -340,7 +341,8 @@ object distTypesTypesMod {
       __obj.asInstanceOf[CirclePackingCommonProps[RawDatum]]
     }
     
-    extension [Self <: CirclePackingCommonProps[?], RawDatum](x: Self & CirclePackingCommonProps[RawDatum]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CirclePackingCommonProps[?], RawDatum] (val x: Self & CirclePackingCommonProps[RawDatum]) extends AnyVal {
       
       inline def setAnimate(value: Boolean): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
       
@@ -449,7 +451,8 @@ object distTypesTypesMod {
       __obj.asInstanceOf[CirclePackingCustomLayerProps[RawDatum]]
     }
     
-    extension [Self <: CirclePackingCustomLayerProps[?], RawDatum](x: Self & CirclePackingCustomLayerProps[RawDatum]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CirclePackingCustomLayerProps[?], RawDatum] (val x: Self & CirclePackingCustomLayerProps[RawDatum]) extends AnyVal {
       
       inline def setNodes(value: js.Array[ComputedDatum[RawDatum]]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
       
@@ -561,7 +564,8 @@ object distTypesTypesMod {
       __obj.asInstanceOf[CircleProps[RawDatum]]
     }
     
-    extension [Self <: CircleProps[?], RawDatum](x: Self & CircleProps[RawDatum]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CircleProps[?], RawDatum] (val x: Self & CircleProps[RawDatum]) extends AnyVal {
       
       inline def setNode(value: ComputedDatum[RawDatum]): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
       
@@ -619,7 +623,8 @@ object distTypesTypesMod {
       __obj.asInstanceOf[ComputedDatum[RawDatum]]
     }
     
-    extension [Self <: ComputedDatum[?], RawDatum](x: Self & ComputedDatum[RawDatum]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ComputedDatum[?], RawDatum] (val x: Self & ComputedDatum[RawDatum]) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -672,7 +677,8 @@ object distTypesTypesMod {
       __obj.asInstanceOf[ComputedLabel[RawDatum]]
     }
     
-    extension [Self <: ComputedLabel[?], RawDatum](x: Self & ComputedLabel[RawDatum]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ComputedLabel[?], RawDatum] (val x: Self & ComputedLabel[RawDatum]) extends AnyVal {
       
       inline def setLabel(value: String | Double): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
@@ -699,7 +705,8 @@ object distTypesTypesMod {
       __obj.asInstanceOf[LabelProps[RawDatum]]
     }
     
-    extension [Self <: LabelProps[?], RawDatum](x: Self & LabelProps[RawDatum]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LabelProps[?], RawDatum] (val x: Self & LabelProps[RawDatum]) extends AnyVal {
       
       inline def setLabel(value: String | Double): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
@@ -732,7 +739,8 @@ object distTypesTypesMod {
       __obj.asInstanceOf[MouseHandlers[RawDatum]]
     }
     
-    extension [Self <: MouseHandlers[?], RawDatum](x: Self & MouseHandlers[RawDatum]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MouseHandlers[?], RawDatum] (val x: Self & MouseHandlers[RawDatum]) extends AnyVal {
       
       inline def setOnClick(
         value: (/* datum */ ComputedDatum[RawDatum], /* event */ MouseEvent[typings.std.Element, NativeMouseEvent]) => Unit

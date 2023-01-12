@@ -28,7 +28,8 @@ object anon {
       __obj.asInstanceOf[PartialCaseFunctions]
     }
     
-    extension [Self <: PartialCaseFunctions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialCaseFunctions] (val x: Self) extends AnyVal {
       
       inline def setCamel(value: (/* input */ String, /* options */ js.UndefOr[Options]) => String): Self = StObject.set(x, "camel", js.Any.fromFunction2(value))
       
@@ -59,7 +60,8 @@ object anon {
       __obj.asInstanceOf[RequestInterceptor]
     }
     
-    extension [Self <: RequestInterceptor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequestInterceptor] (val x: Self) extends AnyVal {
       
       inline def setRequestInterceptor(value: /* config */ AxiosRequestConfig[Any] => AxiosRequestConfig[Any]): Self = StObject.set(x, "requestInterceptor", js.Any.fromFunction1(value))
       

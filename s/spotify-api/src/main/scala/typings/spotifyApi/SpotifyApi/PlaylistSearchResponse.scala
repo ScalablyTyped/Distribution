@@ -21,7 +21,8 @@ object PlaylistSearchResponse {
     __obj.asInstanceOf[PlaylistSearchResponse]
   }
   
-  extension [Self <: PlaylistSearchResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlaylistSearchResponse] (val x: Self) extends AnyVal {
     
     inline def setPlaylists(value: PagingObject[PlaylistObjectSimplified]): Self = StObject.set(x, "playlists", value.asInstanceOf[js.Any])
   }

@@ -26,7 +26,8 @@ object LookupFilterOptions {
     __obj.asInstanceOf[LookupFilterOptions]
   }
   
-  extension [Self <: LookupFilterOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LookupFilterOptions] (val x: Self) extends AnyVal {
     
     inline def setEntityLogicalName(value: String): Self = StObject.set(x, "entityLogicalName", value.asInstanceOf[js.Any])
     

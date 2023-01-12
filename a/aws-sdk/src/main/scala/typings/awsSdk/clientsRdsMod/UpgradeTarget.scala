@@ -58,7 +58,8 @@ object UpgradeTarget {
     __obj.asInstanceOf[UpgradeTarget]
   }
   
-  extension [Self <: UpgradeTarget](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpgradeTarget] (val x: Self) extends AnyVal {
     
     inline def setAutoUpgrade(value: Boolean): Self = StObject.set(x, "AutoUpgrade", value.asInstanceOf[js.Any])
     

@@ -25,7 +25,8 @@ object TeamFunSettings {
     __obj.asInstanceOf[TeamFunSettings]
   }
   
-  extension [Self <: TeamFunSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TeamFunSettings] (val x: Self) extends AnyVal {
     
     inline def setAllowCustomMemes(value: NullableOption[Boolean]): Self = StObject.set(x, "allowCustomMemes", value.asInstanceOf[js.Any])
     

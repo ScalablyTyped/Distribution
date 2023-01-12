@@ -41,7 +41,8 @@ object flowTheme {
     __obj.asInstanceOf[flowTheme]
   }
   
-  extension [Self <: flowTheme](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: flowTheme] (val x: Self) extends AnyVal {
     
     inline def setBasemaps(value: js.Array[String]): Self = StObject.set(x, "basemaps", value.asInstanceOf[js.Any])
     

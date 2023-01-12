@@ -16,7 +16,8 @@ object KebabKeysZGCheckbox {
     __obj.asInstanceOf[KebabKeysZGCheckbox]
   }
   
-  extension [Self <: KebabKeysZGCheckbox](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KebabKeysZGCheckbox] (val x: Self) extends AnyVal {
     
     inline def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
     

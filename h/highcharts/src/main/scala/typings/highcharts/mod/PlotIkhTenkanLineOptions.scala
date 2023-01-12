@@ -15,7 +15,8 @@ object PlotIkhTenkanLineOptions {
     __obj.asInstanceOf[PlotIkhTenkanLineOptions]
   }
   
-  extension [Self <: PlotIkhTenkanLineOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotIkhTenkanLineOptions] (val x: Self) extends AnyVal {
     
     inline def setStyles(value: PlotIkhTenkanLineStylesOptions): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
     

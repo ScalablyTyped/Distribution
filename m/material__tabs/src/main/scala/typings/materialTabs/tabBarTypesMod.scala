@@ -26,7 +26,8 @@ object tabBarTypesMod {
       __obj.asInstanceOf[MDCTabBarChangeEventDetail]
     }
     
-    extension [Self <: MDCTabBarChangeEventDetail](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MDCTabBarChangeEventDetail] (val x: Self) extends AnyVal {
       
       inline def setActiveTabIndex(value: Double): Self = StObject.set(x, "activeTabIndex", value.asInstanceOf[js.Any])
     }

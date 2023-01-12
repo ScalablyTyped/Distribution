@@ -173,7 +173,8 @@ object libChoiceMod {
       __obj.asInstanceOf[Choice[F]]
     }
     
-    extension [Self <: Choice[?], F](x: Self & Choice[F]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Choice[?], F] (val x: Self & Choice[F]) extends AnyVal {
       
       inline def setLeft(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT2<F, A, B> */ Any => Any
@@ -210,7 +211,8 @@ object libChoiceMod {
       __obj.asInstanceOf[Choice2[F]]
     }
     
-    extension [Self <: Choice2[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */](x: Self & Choice2[F]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Choice2[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */] (val x: Self & Choice2[F]) extends AnyVal {
       
       inline def setLeft(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, A, B> */ Any => Any
@@ -247,7 +249,8 @@ object libChoiceMod {
       __obj.asInstanceOf[Choice3[F]]
     }
     
-    extension [Self <: Choice3[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */](x: Self & Choice3[F]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Choice3[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */] (val x: Self & Choice3[F]) extends AnyVal {
       
       inline def setLeft(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, A, B> */ Any => Any
@@ -284,7 +287,8 @@ object libChoiceMod {
       __obj.asInstanceOf[Choice4[F]]
     }
     
-    extension [Self <: Choice4[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS4 */ Any */](x: Self & Choice4[F]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Choice4[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS4 */ Any */] (val x: Self & Choice4[F]) extends AnyVal {
       
       inline def setLeft(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind4<F, S, R, A, B> */ Any => Any

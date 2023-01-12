@@ -49,7 +49,8 @@ object libPricingCheckoutMod {
       __obj.asInstanceOf[CheckoutPrice]
     }
     
-    extension [Self <: CheckoutPrice](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CheckoutPrice] (val x: Self) extends AnyVal {
       
       inline def setCurrency(value: Code): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
       
@@ -112,7 +113,8 @@ object libPricingCheckoutMod {
       __obj.asInstanceOf[CheckoutPricingMethods]
     }
     
-    extension [Self <: CheckoutPricingMethods](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CheckoutPricingMethods] (val x: Self) extends AnyVal {
       
       inline def setAddress(value: Address => CheckoutPricingPromise): Self = StObject.set(x, "address", js.Any.fromFunction1(value))
       
@@ -149,7 +151,8 @@ object libPricingCheckoutMod {
       __obj.asInstanceOf[CheckoutPricingState]
     }
     
-    extension [Self <: CheckoutPricingState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CheckoutPricingState] (val x: Self) extends AnyVal {
       
       inline def setPrice(value: CheckoutPrice): Self = StObject.set(x, "price", value.asInstanceOf[js.Any])
     }
@@ -170,7 +173,8 @@ object libPricingCheckoutMod {
       __obj.asInstanceOf[CheckoutPricingStateTax]
     }
     
-    extension [Self <: CheckoutPricingStateTax](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CheckoutPricingStateTax] (val x: Self) extends AnyVal {
       
       inline def setRate(value: String): Self = StObject.set(x, "rate", value.asInstanceOf[js.Any])
       
@@ -202,7 +206,8 @@ object libPricingCheckoutMod {
       __obj.asInstanceOf[Item]
     }
     
-    extension [Self <: Item](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Item] (val x: Self) extends AnyVal {
       
       inline def setAddons(value: String): Self = StObject.set(x, "addons", value.asInstanceOf[js.Any])
       
@@ -250,7 +255,8 @@ object libPricingCheckoutMod {
       __obj.asInstanceOf[ItemAdjustment]
     }
     
-    extension [Self <: ItemAdjustment](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ItemAdjustment] (val x: Self) extends AnyVal {
       
       inline def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
       
@@ -307,7 +313,8 @@ object libPricingCheckoutMod {
       __obj.asInstanceOf[NonItemAdjustment]
     }
     
-    extension [Self <: NonItemAdjustment](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NonItemAdjustment] (val x: Self) extends AnyVal {
       
       inline def setAmount(value: Double): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
       

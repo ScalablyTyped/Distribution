@@ -39,7 +39,8 @@ object Holographic {
       __obj.asInstanceOf[HolographicCamera]
     }
     
-    extension [Self <: HolographicCamera](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HolographicCamera] (val x: Self) extends AnyVal {
       
       inline def setId(value: Any): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -96,7 +97,8 @@ object Holographic {
       __obj.asInstanceOf[HolographicCameraPose]
     }
     
-    extension [Self <: HolographicCameraPose](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HolographicCameraPose] (val x: Self) extends AnyVal {
       
       inline def setFarPlaneDistance(value: Any): Self = StObject.set(x, "farPlaneDistance", value.asInstanceOf[js.Any])
       
@@ -133,7 +135,8 @@ object Holographic {
       __obj.asInstanceOf[HolographicCameraRenderingParameters]
     }
     
-    extension [Self <: HolographicCameraRenderingParameters](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HolographicCameraRenderingParameters] (val x: Self) extends AnyVal {
       
       inline def setDirect3D11BackBuffer(value: Any): Self = StObject.set(x, "direct3D11BackBuffer", value.asInstanceOf[js.Any])
       
@@ -184,7 +187,8 @@ object Holographic {
       __obj.asInstanceOf[HolographicFrame]
     }
     
-    extension [Self <: HolographicFrame](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HolographicFrame] (val x: Self) extends AnyVal {
       
       inline def setAddedCameras(value: Any): Self = StObject.set(x, "addedCameras", value.asInstanceOf[js.Any])
       
@@ -218,7 +222,8 @@ object Holographic {
       __obj.asInstanceOf[HolographicFramePrediction]
     }
     
-    extension [Self <: HolographicFramePrediction](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HolographicFramePrediction] (val x: Self) extends AnyVal {
       
       inline def setCameraPoses(value: Any): Self = StObject.set(x, "cameraPoses", value.asInstanceOf[js.Any])
       
@@ -264,7 +269,8 @@ object Holographic {
       __obj.asInstanceOf[HolographicSpace]
     }
     
-    extension [Self <: HolographicSpace](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HolographicSpace] (val x: Self) extends AnyVal {
       
       inline def setAddEventListener(value: Any): Self = StObject.set(x, "addEventListener", value.asInstanceOf[js.Any])
       
@@ -296,7 +302,8 @@ object Holographic {
       __obj.asInstanceOf[HolographicSpaceCameraAddedEventArgs]
     }
     
-    extension [Self <: HolographicSpaceCameraAddedEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HolographicSpaceCameraAddedEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCamera(value: Any): Self = StObject.set(x, "camera", value.asInstanceOf[js.Any])
       
@@ -315,7 +322,8 @@ object Holographic {
       __obj.asInstanceOf[HolographicSpaceCameraRemovedEventArgs]
     }
     
-    extension [Self <: HolographicSpaceCameraRemovedEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HolographicSpaceCameraRemovedEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCamera(value: Any): Self = StObject.set(x, "camera", value.asInstanceOf[js.Any])
     }

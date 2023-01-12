@@ -38,7 +38,8 @@ object CpsAchievementClass {
     __obj.asInstanceOf[CpsAchievementClass]
   }
   
-  extension [Self <: CpsAchievementClass](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CpsAchievementClass] (val x: Self) extends AnyVal {
     
     inline def setTreshold(value: Double): Self = StObject.set(x, "treshold", value.asInstanceOf[js.Any])
   }

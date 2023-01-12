@@ -19,7 +19,8 @@ object ParentFieldRef {
     __obj.asInstanceOf[ParentFieldRef]
   }
   
-  extension [Self <: ParentFieldRef](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParentFieldRef] (val x: Self) extends AnyVal {
     
     inline def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     

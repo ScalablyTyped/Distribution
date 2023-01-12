@@ -18,7 +18,8 @@ object DisableVpcClassicLinkResult {
     __obj.asInstanceOf[DisableVpcClassicLinkResult]
   }
   
-  extension [Self <: DisableVpcClassicLinkResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisableVpcClassicLinkResult] (val x: Self) extends AnyVal {
     
     inline def setReturn(value: Boolean): Self = StObject.set(x, "Return", value.asInstanceOf[js.Any])
     

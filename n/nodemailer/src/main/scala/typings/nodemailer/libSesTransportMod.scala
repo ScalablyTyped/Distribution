@@ -50,7 +50,8 @@ object libSesTransportMod {
       __obj.asInstanceOf[MailOptions]
     }
     
-    extension [Self <: MailOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MailOptions] (val x: Self) extends AnyVal {
       
       inline def setSes(value: MailSesOptions): Self = StObject.set(x, "ses", value.asInstanceOf[js.Any])
       
@@ -107,7 +108,8 @@ object libSesTransportMod {
       __obj.asInstanceOf[MailSesOptions]
     }
     
-    extension [Self <: MailSesOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MailSesOptions] (val x: Self) extends AnyVal {
       
       inline def setConfigurationSetName(value: String): Self = StObject.set(x, "ConfigurationSetName", value.asInstanceOf[js.Any])
       
@@ -169,7 +171,8 @@ object libSesTransportMod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setMaxConnections(value: Double): Self = StObject.set(x, "maxConnections", value.asInstanceOf[js.Any])
       
@@ -274,7 +277,8 @@ object libSesTransportMod {
       __obj.asInstanceOf[SentMessageInfo]
     }
     
-    extension [Self <: SentMessageInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SentMessageInfo] (val x: Self) extends AnyVal {
       
       inline def setAccepted(value: js.Array[String | Address]): Self = StObject.set(x, "accepted", value.asInstanceOf[js.Any])
       

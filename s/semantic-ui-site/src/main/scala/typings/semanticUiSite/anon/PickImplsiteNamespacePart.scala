@@ -36,7 +36,8 @@ object PickImplsiteNamespacePart {
     __obj.asInstanceOf[PickImplsiteNamespacePart]
   }
   
-  extension [Self <: PickImplsiteNamespacePart](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickImplsiteNamespacePart] (val x: Self) extends AnyVal {
     
     inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
     

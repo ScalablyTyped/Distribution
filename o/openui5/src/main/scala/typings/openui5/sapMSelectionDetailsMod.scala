@@ -911,7 +911,8 @@ object sapMSelectionDetailsMod {
       __obj.asInstanceOf[SelectionDetailsSettings]
     }
     
-    extension [Self <: SelectionDetailsSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SelectionDetailsSettings] (val x: Self) extends AnyVal {
       
       inline def setActionGroups(
         value: js.Array[typings.openui5.sapUiCoreItemMod.default] | typings.openui5.sapUiCoreItemMod.default | AggregationBindingInfo | (/* template literal string: {${string}} */ String)

@@ -23,7 +23,8 @@ object ExportComponentsResponse {
     __obj.asInstanceOf[ExportComponentsResponse]
   }
   
-  extension [Self <: ExportComponentsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExportComponentsResponse] (val x: Self) extends AnyVal {
     
     inline def setEntities(value: ComponentList): Self = StObject.set(x, "entities", value.asInstanceOf[js.Any])
     

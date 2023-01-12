@@ -18,7 +18,8 @@ object SelfManageResources {
     __obj.asInstanceOf[SelfManageResources]
   }
   
-  extension [Self <: SelfManageResources](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SelfManageResources] (val x: Self) extends AnyVal {
     
     inline def setTargetDestination(value: SelfManageTargetDestinations): Self = StObject.set(x, "targetDestination", value.asInstanceOf[js.Any])
     

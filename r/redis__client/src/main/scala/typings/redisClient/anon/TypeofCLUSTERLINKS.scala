@@ -22,7 +22,8 @@ object TypeofCLUSTERLINKS {
     __obj.asInstanceOf[TypeofCLUSTERLINKS]
   }
   
-  extension [Self <: TypeofCLUSTERLINKS](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofCLUSTERLINKS] (val x: Self) extends AnyVal {
     
     inline def setTransformArguments(value: () => js.Array[String]): Self = StObject.set(x, "transformArguments", js.Any.fromFunction0(value))
     

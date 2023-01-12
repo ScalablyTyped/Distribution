@@ -26,7 +26,8 @@ object Bridge {
     __obj.asInstanceOf[Bridge]
   }
   
-  extension [Self <: Bridge](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Bridge] (val x: Self) extends AnyVal {
     
     inline def setCallNative(value: (String, String, /* repeated */ Any) => Unit): Self = StObject.set(x, "callNative", js.Any.fromFunction3(value))
     

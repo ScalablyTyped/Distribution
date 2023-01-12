@@ -55,7 +55,8 @@ object GoogleCloudVisionV1p3beta1AnnotateImageResponse {
     __obj.asInstanceOf[GoogleCloudVisionV1p3beta1AnnotateImageResponse]
   }
   
-  extension [Self <: GoogleCloudVisionV1p3beta1AnnotateImageResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudVisionV1p3beta1AnnotateImageResponse] (val x: Self) extends AnyVal {
     
     inline def setContext(value: GoogleCloudVisionV1p3beta1ImageAnnotationContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     

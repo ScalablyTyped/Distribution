@@ -36,7 +36,8 @@ object AssetPrefix {
     __obj.asInstanceOf[AssetPrefix]
   }
   
-  extension [Self <: AssetPrefix](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssetPrefix] (val x: Self) extends AnyVal {
     
     inline def setAssetPrefix(value: String): Self = StObject.set(x, "assetPrefix", value.asInstanceOf[js.Any])
     

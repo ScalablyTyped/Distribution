@@ -54,7 +54,8 @@ object distTypesMod {
       __obj.asInstanceOf[GetCollapsePropsInput]
     }
     
-    extension [Self <: GetCollapsePropsInput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetCollapsePropsInput] (val x: Self) extends AnyVal {
       
       inline def setOnTransitionEnd(value: /* e */ TransitionEvent[Element] => Unit): Self = StObject.set(x, "onTransitionEnd", js.Any.fromFunction1(value))
       
@@ -97,7 +98,8 @@ object distTypesMod {
       __obj.asInstanceOf[GetCollapsePropsOutput]
     }
     
-    extension [Self <: GetCollapsePropsOutput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetCollapsePropsOutput] (val x: Self) extends AnyVal {
       
       inline def `setAria-hidden`(value: AriaBoolean): Self = StObject.set(x, "aria-hidden", value.asInstanceOf[js.Any])
       
@@ -124,7 +126,8 @@ object distTypesMod {
       __obj.asInstanceOf[GetTogglePropsInput]
     }
     
-    extension [Self <: GetTogglePropsInput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetTogglePropsInput] (val x: Self) extends AnyVal {
       
       inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
@@ -173,7 +176,8 @@ object distTypesMod {
       __obj.asInstanceOf[GetTogglePropsOutput]
     }
     
-    extension [Self <: GetTogglePropsOutput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetTogglePropsOutput] (val x: Self) extends AnyVal {
       
       inline def `setAria-controls`(value: String): Self = StObject.set(x, "aria-controls", value.asInstanceOf[js.Any])
       
@@ -226,7 +230,8 @@ object distTypesMod {
       __obj.asInstanceOf[UseCollapseInput]
     }
     
-    extension [Self <: UseCollapseInput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UseCollapseInput] (val x: Self) extends AnyVal {
       
       inline def setCollapseStyles(value: js.Object): Self = StObject.set(x, "collapseStyles", value.asInstanceOf[js.Any])
       

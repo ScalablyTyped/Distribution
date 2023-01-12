@@ -86,7 +86,8 @@ object IDragTracker {
     __obj.asInstanceOf[IDragTracker]
   }
   
-  extension [Self <: IDragTracker](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IDragTracker] (val x: Self) extends AnyVal {
     
     inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     

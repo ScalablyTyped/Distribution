@@ -34,7 +34,8 @@ object RotateTimeline {
     __obj.asInstanceOf[RotateTimeline]
   }
   
-  extension [Self <: RotateTimeline](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RotateTimeline] (val x: Self) extends AnyVal {
     
     inline def setBoneIndex(value: Double): Self = StObject.set(x, "boneIndex", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object JustifySelfProps {
     __obj.asInstanceOf[JustifySelfProps[ThemeType]]
   }
   
-  extension [Self <: JustifySelfProps[?], ThemeType /* <: Theme[TLengthStyledSystem] */](x: Self & JustifySelfProps[ThemeType]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JustifySelfProps[?], ThemeType /* <: Theme[TLengthStyledSystem] */] (val x: Self & JustifySelfProps[ThemeType]) extends AnyVal {
     
     inline def setJustifySelf(value: ResponsiveValue[JustifySelf, ThemeType]): Self = StObject.set(x, "justifySelf", value.asInstanceOf[js.Any])
     

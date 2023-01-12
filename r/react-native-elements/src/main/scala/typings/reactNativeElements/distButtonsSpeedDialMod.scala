@@ -224,7 +224,8 @@ object distButtonsSpeedDialMod extends Shortcut {
       __obj.asInstanceOf[SpeedDialActionProps]
     }
     
-    extension [Self <: SpeedDialActionProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SpeedDialActionProps] (val x: Self) extends AnyVal {
       
       inline def setAccessibilityActions(value: js.Array[AccessibilityActionInfo]): Self = StObject.set(x, "accessibilityActions", value.asInstanceOf[js.Any])
       
@@ -894,7 +895,8 @@ object distButtonsSpeedDialMod extends Shortcut {
       __obj.asInstanceOf[SpeedDialProps]
     }
     
-    extension [Self <: SpeedDialProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SpeedDialProps] (val x: Self) extends AnyVal {
       
       inline def setAccessibilityActions(value: js.Array[AccessibilityActionInfo]): Self = StObject.set(x, "accessibilityActions", value.asInstanceOf[js.Any])
       

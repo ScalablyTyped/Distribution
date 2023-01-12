@@ -22,7 +22,8 @@ object ListenersConfigDump {
     __obj.asInstanceOf[ListenersConfigDump]
   }
   
-  extension [Self <: ListenersConfigDump](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListenersConfigDump] (val x: Self) extends AnyVal {
     
     inline def setDynamicListeners(value: js.Array[DynamicListener]): Self = StObject.set(x, "dynamicListeners", value.asInstanceOf[js.Any])
     

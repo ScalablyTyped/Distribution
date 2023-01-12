@@ -52,7 +52,8 @@ object XInteractionPassword2 {
     __obj.asInstanceOf[XInteractionPassword2]
   }
   
-  extension [Self <: XInteractionPassword2](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XInteractionPassword2] (val x: Self) extends AnyVal {
     
     inline def setGetPasswordToModify(value: () => String): Self = StObject.set(x, "getPasswordToModify", js.Any.fromFunction0(value))
     

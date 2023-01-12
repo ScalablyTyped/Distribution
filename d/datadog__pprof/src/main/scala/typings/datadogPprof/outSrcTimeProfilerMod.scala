@@ -161,7 +161,8 @@ object outSrcTimeProfilerMod {
       __obj.asInstanceOf[TimeProfilerOptions]
     }
     
-    extension [Self <: TimeProfilerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TimeProfilerOptions] (val x: Self) extends AnyVal {
       
       inline def setDurationMillis(value: Milliseconds): Self = StObject.set(x, "durationMillis", value.asInstanceOf[js.Any])
       

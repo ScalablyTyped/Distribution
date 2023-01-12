@@ -24,7 +24,8 @@ object OAuthFlows {
     __obj.asInstanceOf[OAuthFlows]
   }
   
-  extension [Self <: OAuthFlows](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OAuthFlows] (val x: Self) extends AnyVal {
     
     inline def setAuthorizationCode(value: OAuthFlow): Self = StObject.set(x, "authorizationCode", value.asInstanceOf[js.Any])
     

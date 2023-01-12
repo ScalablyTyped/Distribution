@@ -18,7 +18,8 @@ object InsightSelector {
     __obj.asInstanceOf[InsightSelector]
   }
   
-  extension [Self <: InsightSelector](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InsightSelector] (val x: Self) extends AnyVal {
     
     inline def setInsightType(value: InsightType): Self = StObject.set(x, "InsightType", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object QueryExecuteResultSetNotificationParams {
     __obj.asInstanceOf[QueryExecuteResultSetNotificationParams]
   }
   
-  extension [Self <: QueryExecuteResultSetNotificationParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryExecuteResultSetNotificationParams] (val x: Self) extends AnyVal {
     
     inline def setOwnerUri(value: String): Self = StObject.set(x, "ownerUri", value.asInstanceOf[js.Any])
     

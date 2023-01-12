@@ -16,7 +16,8 @@ object AddProductToProductSetRequest {
     __obj.asInstanceOf[AddProductToProductSetRequest]
   }
   
-  extension [Self <: AddProductToProductSetRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AddProductToProductSetRequest] (val x: Self) extends AnyVal {
     
     inline def setProduct(value: String): Self = StObject.set(x, "product", value.asInstanceOf[js.Any])
     

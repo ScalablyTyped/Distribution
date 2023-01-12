@@ -17,7 +17,8 @@ object Dst {
     __obj.asInstanceOf[Dst]
   }
   
-  extension [Self <: Dst](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Dst] (val x: Self) extends AnyVal {
     
     inline def setDst(value: Terminal | ScreenBuffer): Self = StObject.set(x, "dst", value.asInstanceOf[js.Any])
   }

@@ -55,7 +55,8 @@ object ValueChange {
     __obj.asInstanceOf[ValueChange]
   }
   
-  extension [Self <: ValueChange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ValueChange] (val x: Self) extends AnyVal {
     
     inline def setAllocationMethod(value: XlAllocationMethod): Self = StObject.set(x, "AllocationMethod", value.asInstanceOf[js.Any])
     

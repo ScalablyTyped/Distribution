@@ -162,7 +162,8 @@ object distSrcMetricsMod {
       __obj.asInstanceOf[MetricsInit]
     }
     
-    extension [Self <: MetricsInit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MetricsInit] (val x: Self) extends AnyVal {
       
       inline def setComputeThrottleMaxQueueSize(value: Double): Self = StObject.set(x, "computeThrottleMaxQueueSize", value.asInstanceOf[js.Any])
       
@@ -195,7 +196,8 @@ object distSrcMetricsMod {
       __obj.asInstanceOf[OnMessageOptions]
     }
     
-    extension [Self <: OnMessageOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OnMessageOptions] (val x: Self) extends AnyVal {
       
       inline def setDataLength(value: Double): Self = StObject.set(x, "dataLength", value.asInstanceOf[js.Any])
       

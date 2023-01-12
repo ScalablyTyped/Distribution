@@ -31,7 +31,8 @@ object libTagPropsTypeMod {
       __obj.asInstanceOf[TagPropsType]
     }
     
-    extension [Self <: TagPropsType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TagPropsType] (val x: Self) extends AnyVal {
       
       inline def setAfterClose(value: () => Unit): Self = StObject.set(x, "afterClose", js.Any.fromFunction0(value))
       

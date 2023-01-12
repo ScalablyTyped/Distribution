@@ -23,7 +23,8 @@ object SieveFilterOptions {
     __obj.asInstanceOf[SieveFilterOptions]
   }
   
-  extension [Self <: SieveFilterOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SieveFilterOptions] (val x: Self) extends AnyVal {
     
     inline def setConnectedness(value: Double): Self = StObject.set(x, "connectedness", value.asInstanceOf[js.Any])
     

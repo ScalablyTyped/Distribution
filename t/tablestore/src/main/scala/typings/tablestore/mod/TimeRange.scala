@@ -20,7 +20,8 @@ object TimeRange {
     __obj.asInstanceOf[TimeRange]
   }
   
-  extension [Self <: TimeRange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimeRange] (val x: Self) extends AnyVal {
     
     inline def setEndTime(value: Double): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     

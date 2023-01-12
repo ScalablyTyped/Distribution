@@ -24,7 +24,8 @@ object NavigationNavigatorProps {
     __obj.asInstanceOf[NavigationNavigatorProps[Options, State, ScreenProps]]
   }
   
-  extension [Self <: NavigationNavigatorProps[?, ?, ?], Options, State, ScreenProps](x: Self & (NavigationNavigatorProps[Options, State, ScreenProps])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NavigationNavigatorProps[?, ?, ?], Options, State, ScreenProps] (val x: Self & (NavigationNavigatorProps[Options, State, ScreenProps])) extends AnyVal {
     
     inline def setDetached(value: Boolean): Self = StObject.set(x, "detached", value.asInstanceOf[js.Any])
     

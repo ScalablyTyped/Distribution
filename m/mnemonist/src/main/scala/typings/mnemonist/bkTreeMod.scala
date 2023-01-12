@@ -85,7 +85,8 @@ object bkTreeMod {
       __obj.asInstanceOf[BKTree[T]]
     }
     
-    extension [Self <: BKTree[?], T](x: Self & BKTree[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BKTree[?], T] (val x: Self & BKTree[T]) extends AnyVal {
       
       inline def setAdd(value: T => BKTree[T]): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
       

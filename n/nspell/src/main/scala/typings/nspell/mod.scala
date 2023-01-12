@@ -50,7 +50,8 @@ object mod {
       __obj.asInstanceOf[Dictionary]
     }
     
-    extension [Self <: Dictionary](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Dictionary] (val x: Self) extends AnyVal {
       
       inline def setAff(value: Buffer | String): Self = StObject.set(x, "aff", value.asInstanceOf[js.Any])
       
@@ -142,7 +143,8 @@ object mod {
       __obj.asInstanceOf[SpellCheck]
     }
     
-    extension [Self <: SpellCheck](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SpellCheck] (val x: Self) extends AnyVal {
       
       inline def setCorrect(value: Boolean): Self = StObject.set(x, "correct", value.asInstanceOf[js.Any])
       

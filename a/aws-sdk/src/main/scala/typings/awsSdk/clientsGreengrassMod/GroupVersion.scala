@@ -48,7 +48,8 @@ object GroupVersion {
     __obj.asInstanceOf[GroupVersion]
   }
   
-  extension [Self <: GroupVersion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GroupVersion] (val x: Self) extends AnyVal {
     
     inline def setConnectorDefinitionVersionArn(value: string): Self = StObject.set(x, "ConnectorDefinitionVersionArn", value.asInstanceOf[js.Any])
     

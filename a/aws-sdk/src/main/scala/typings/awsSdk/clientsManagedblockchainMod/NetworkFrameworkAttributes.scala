@@ -23,7 +23,8 @@ object NetworkFrameworkAttributes {
     __obj.asInstanceOf[NetworkFrameworkAttributes]
   }
   
-  extension [Self <: NetworkFrameworkAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NetworkFrameworkAttributes] (val x: Self) extends AnyVal {
     
     inline def setEthereum(value: NetworkEthereumAttributes): Self = StObject.set(x, "Ethereum", value.asInstanceOf[js.Any])
     

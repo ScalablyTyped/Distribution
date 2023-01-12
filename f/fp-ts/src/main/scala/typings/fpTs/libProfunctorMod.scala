@@ -37,7 +37,8 @@ object libProfunctorMod {
       __obj.asInstanceOf[Profunctor[F]]
     }
     
-    extension [Self <: Profunctor[?], F](x: Self & Profunctor[F]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Profunctor[?], F] (val x: Self & Profunctor[F]) extends AnyVal {
       
       inline def setMap(
         value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT2<F, E, A> */ Any, js.Function1[Any, Any]) => Any
@@ -72,7 +73,8 @@ object libProfunctorMod {
       __obj.asInstanceOf[Profunctor2[F]]
     }
     
-    extension [Self <: Profunctor2[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */](x: Self & Profunctor2[F]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Profunctor2[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */] (val x: Self & Profunctor2[F]) extends AnyVal {
       
       inline def setPromap(
         value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, A> */ Any, js.Function1[Any, Any], js.Function1[Any, Any]) => Any
@@ -102,7 +104,8 @@ object libProfunctorMod {
       __obj.asInstanceOf[Profunctor2C[F, E]]
     }
     
-    extension [Self <: Profunctor2C[?, ?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */, E](x: Self & (Profunctor2C[F, E])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Profunctor2C[?, ?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */, E] (val x: Self & (Profunctor2C[F, E])) extends AnyVal {
       
       inline def setPromap(
         value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, A> */ Any, js.Function1[Any, E], js.Function1[Any, Any]) => Any
@@ -131,7 +134,8 @@ object libProfunctorMod {
       __obj.asInstanceOf[Profunctor3[F]]
     }
     
-    extension [Self <: Profunctor3[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */](x: Self & Profunctor3[F]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Profunctor3[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */] (val x: Self & Profunctor3[F]) extends AnyVal {
       
       inline def setPromap(
         value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, A> */ Any, js.Function1[Any, Any], js.Function1[Any, Any]) => Any
@@ -161,7 +165,8 @@ object libProfunctorMod {
       __obj.asInstanceOf[Profunctor3C[F, E]]
     }
     
-    extension [Self <: Profunctor3C[?, ?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */, E](x: Self & (Profunctor3C[F, E])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Profunctor3C[?, ?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */, E] (val x: Self & (Profunctor3C[F, E])) extends AnyVal {
       
       inline def setPromap(
         value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, A> */ Any, js.Function1[Any, E], js.Function1[Any, Any]) => Any
@@ -190,7 +195,8 @@ object libProfunctorMod {
       __obj.asInstanceOf[Profunctor4[F]]
     }
     
-    extension [Self <: Profunctor4[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS4 */ Any */](x: Self & Profunctor4[F]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Profunctor4[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS4 */ Any */] (val x: Self & Profunctor4[F]) extends AnyVal {
       
       inline def setPromap(
         value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind4<F, S, R, E, A> */ Any, js.Function1[Any, Any], js.Function1[Any, Any]) => Any

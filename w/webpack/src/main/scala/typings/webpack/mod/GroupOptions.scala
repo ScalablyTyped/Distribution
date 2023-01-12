@@ -19,7 +19,8 @@ object GroupOptions {
     __obj.asInstanceOf[GroupOptions]
   }
   
-  extension [Self <: GroupOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GroupOptions] (val x: Self) extends AnyVal {
     
     inline def setForce(value: Boolean): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
     

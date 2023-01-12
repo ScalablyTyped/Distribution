@@ -21,7 +21,8 @@ object GoogleCloudDialogflowV2IntentMessageBrowseCarouselCard {
     __obj.asInstanceOf[GoogleCloudDialogflowV2IntentMessageBrowseCarouselCard]
   }
   
-  extension [Self <: GoogleCloudDialogflowV2IntentMessageBrowseCarouselCard](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDialogflowV2IntentMessageBrowseCarouselCard] (val x: Self) extends AnyVal {
     
     inline def setImageDisplayOptions(value: String): Self = StObject.set(x, "imageDisplayOptions", value.asInstanceOf[js.Any])
     

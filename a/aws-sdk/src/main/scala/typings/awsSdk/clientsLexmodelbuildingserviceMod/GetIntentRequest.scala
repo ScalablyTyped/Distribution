@@ -23,7 +23,8 @@ object GetIntentRequest {
     __obj.asInstanceOf[GetIntentRequest]
   }
   
-  extension [Self <: GetIntentRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetIntentRequest] (val x: Self) extends AnyVal {
     
     inline def setName(value: IntentName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

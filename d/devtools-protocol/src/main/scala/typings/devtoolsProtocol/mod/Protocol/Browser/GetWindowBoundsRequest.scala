@@ -18,7 +18,8 @@ object GetWindowBoundsRequest {
     __obj.asInstanceOf[GetWindowBoundsRequest]
   }
   
-  extension [Self <: GetWindowBoundsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetWindowBoundsRequest] (val x: Self) extends AnyVal {
     
     inline def setWindowId(value: WindowID): Self = StObject.set(x, "windowId", value.asInstanceOf[js.Any])
   }

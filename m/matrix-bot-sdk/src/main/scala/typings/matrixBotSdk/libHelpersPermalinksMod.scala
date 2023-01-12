@@ -84,7 +84,8 @@ object libHelpersPermalinksMod {
       __obj.asInstanceOf[PermalinkParts]
     }
     
-    extension [Self <: PermalinkParts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PermalinkParts] (val x: Self) extends AnyVal {
       
       inline def setEventId(value: String): Self = StObject.set(x, "eventId", value.asInstanceOf[js.Any])
       

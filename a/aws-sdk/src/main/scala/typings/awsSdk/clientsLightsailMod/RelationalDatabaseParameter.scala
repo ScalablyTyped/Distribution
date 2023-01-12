@@ -53,7 +53,8 @@ object RelationalDatabaseParameter {
     __obj.asInstanceOf[RelationalDatabaseParameter]
   }
   
-  extension [Self <: RelationalDatabaseParameter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RelationalDatabaseParameter] (val x: Self) extends AnyVal {
     
     inline def setAllowedValues(value: String): Self = StObject.set(x, "allowedValues", value.asInstanceOf[js.Any])
     

@@ -43,7 +43,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[ReadOptions]
     }
     
-    extension [Self <: ReadOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadOptions] (val x: Self) extends AnyVal {
       
       inline def setGunzip(value: Boolean | force): Self = StObject.set(x, "gunzip", value.asInstanceOf[js.Any])
       
@@ -118,7 +119,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[RequestOptions]
     }
     
-    extension [Self <: RequestOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequestOptions] (val x: Self) extends AnyVal {
       
       inline def setAgent(value: Http | `false`): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
       
@@ -201,7 +203,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[RequestResponse]
     }
     
-    extension [Self <: RequestResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequestResponse] (val x: Self) extends AnyVal {
       
       inline def setPayload(value: Any): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
       

@@ -23,7 +23,8 @@ object GroupOptions {
     __obj.asInstanceOf[GroupOptions]
   }
   
-  extension [Self <: GroupOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GroupOptions] (val x: Self) extends AnyVal {
     
     inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     

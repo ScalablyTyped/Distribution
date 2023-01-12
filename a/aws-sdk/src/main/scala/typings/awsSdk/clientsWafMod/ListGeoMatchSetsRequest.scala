@@ -23,7 +23,8 @@ object ListGeoMatchSetsRequest {
     __obj.asInstanceOf[ListGeoMatchSetsRequest]
   }
   
-  extension [Self <: ListGeoMatchSetsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListGeoMatchSetsRequest] (val x: Self) extends AnyVal {
     
     inline def setLimit(value: PaginationLimit): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
     

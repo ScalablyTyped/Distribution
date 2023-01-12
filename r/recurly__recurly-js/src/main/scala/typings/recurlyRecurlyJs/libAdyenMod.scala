@@ -61,7 +61,8 @@ object libAdyenMod {
       __obj.asInstanceOf[AdyenOptions]
     }
     
-    extension [Self <: AdyenOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AdyenOptions] (val x: Self) extends AnyVal {
       
       inline def setCountryCode(value: String): Self = StObject.set(x, "countryCode", value.asInstanceOf[js.Any])
       

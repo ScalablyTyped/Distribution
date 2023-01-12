@@ -86,7 +86,8 @@ object WindowEventHandlersEventMap {
     __obj.asInstanceOf[WindowEventHandlersEventMap]
   }
   
-  extension [Self <: WindowEventHandlersEventMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WindowEventHandlersEventMap] (val x: Self) extends AnyVal {
     
     inline def setAfterprint(value: Event): Self = StObject.set(x, "afterprint", value.asInstanceOf[js.Any])
     

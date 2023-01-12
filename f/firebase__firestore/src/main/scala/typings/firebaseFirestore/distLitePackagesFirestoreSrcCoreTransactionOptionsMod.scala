@@ -28,7 +28,8 @@ object distLitePackagesFirestoreSrcCoreTransactionOptionsMod {
       __obj.asInstanceOf[TransactionOptions]
     }
     
-    extension [Self <: TransactionOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TransactionOptions] (val x: Self) extends AnyVal {
       
       inline def setMaxAttempts(value: Double): Self = StObject.set(x, "maxAttempts", value.asInstanceOf[js.Any])
     }

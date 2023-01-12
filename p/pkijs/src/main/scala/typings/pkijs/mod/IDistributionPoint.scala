@@ -20,7 +20,8 @@ object IDistributionPoint {
     __obj.asInstanceOf[IDistributionPoint]
   }
   
-  extension [Self <: IDistributionPoint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IDistributionPoint] (val x: Self) extends AnyVal {
     
     inline def setCRLIssuer(value: js.Array[GeneralName]): Self = StObject.set(x, "cRLIssuer", value.asInstanceOf[js.Any])
     

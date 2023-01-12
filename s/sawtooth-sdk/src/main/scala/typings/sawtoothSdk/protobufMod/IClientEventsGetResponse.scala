@@ -20,7 +20,8 @@ object IClientEventsGetResponse {
     __obj.asInstanceOf[IClientEventsGetResponse]
   }
   
-  extension [Self <: IClientEventsGetResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IClientEventsGetResponse] (val x: Self) extends AnyVal {
     
     inline def setEvents(value: js.Array[IEvent]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     

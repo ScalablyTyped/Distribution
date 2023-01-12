@@ -33,7 +33,8 @@ object mod {
       __obj.asInstanceOf[PrivateKeyProvider]
     }
     
-    extension [Self <: PrivateKeyProvider](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PrivateKeyProvider] (val x: Self) extends AnyVal {
       
       inline def setSend(value: /* repeated */ Any => Any): Self = StObject.set(x, "send", js.Any.fromFunction1(value))
       

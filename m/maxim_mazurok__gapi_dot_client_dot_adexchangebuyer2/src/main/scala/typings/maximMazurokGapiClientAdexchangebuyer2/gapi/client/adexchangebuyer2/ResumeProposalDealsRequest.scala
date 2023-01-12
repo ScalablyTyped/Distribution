@@ -16,7 +16,8 @@ object ResumeProposalDealsRequest {
     __obj.asInstanceOf[ResumeProposalDealsRequest]
   }
   
-  extension [Self <: ResumeProposalDealsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResumeProposalDealsRequest] (val x: Self) extends AnyVal {
     
     inline def setExternalDealIds(value: js.Array[String]): Self = StObject.set(x, "externalDealIds", value.asInstanceOf[js.Any])
     

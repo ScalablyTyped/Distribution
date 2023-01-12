@@ -24,7 +24,8 @@ object PublicKeyAuthMethodData {
     __obj.asInstanceOf[PublicKeyAuthMethodData]
   }
   
-  extension [Self <: PublicKeyAuthMethodData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PublicKeyAuthMethodData] (val x: Self) extends AnyVal {
     
     inline def setBlob(value: Buffer): Self = StObject.set(x, "blob", value.asInstanceOf[js.Any])
     

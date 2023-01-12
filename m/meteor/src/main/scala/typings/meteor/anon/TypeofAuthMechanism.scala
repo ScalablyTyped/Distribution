@@ -37,7 +37,8 @@ object TypeofAuthMechanism {
     __obj.asInstanceOf[TypeofAuthMechanism]
   }
   
-  extension [Self <: TypeofAuthMechanism](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofAuthMechanism] (val x: Self) extends AnyVal {
     
     inline def setMONGODB_AWS(value: `MONGODB-AWS`): Self = StObject.set(x, "MONGODB_AWS", value.asInstanceOf[js.Any])
     

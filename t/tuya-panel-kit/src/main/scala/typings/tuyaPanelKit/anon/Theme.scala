@@ -15,7 +15,8 @@ object Theme {
     __obj.asInstanceOf[Theme[T]]
   }
   
-  extension [Self <: Theme[?], T](x: Self & Theme[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Theme[?], T] (val x: Self & Theme[T]) extends AnyVal {
     
     inline def setTheme(value: T): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     

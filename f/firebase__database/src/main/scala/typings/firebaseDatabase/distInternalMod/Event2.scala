@@ -23,7 +23,8 @@ object Event2 {
     __obj.asInstanceOf[Event2]
   }
   
-  extension [Self <: Event2](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Event2] (val x: Self) extends AnyVal {
     
     inline def setGetEventRunner(value: () => js.Function0[Unit]): Self = StObject.set(x, "getEventRunner", js.Any.fromFunction0(value))
     

@@ -23,7 +23,8 @@ object Term {
     __obj.asInstanceOf[Term]
   }
   
-  extension [Self <: Term](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Term] (val x: Self) extends AnyVal {
     
     inline def setSourceText(value: String): Self = StObject.set(x, "SourceText", value.asInstanceOf[js.Any])
     

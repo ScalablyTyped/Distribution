@@ -107,7 +107,8 @@ object SeriesCandlestickOptions {
     __obj.asInstanceOf[SeriesCandlestickOptions]
   }
   
-  extension [Self <: SeriesCandlestickOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SeriesCandlestickOptions] (val x: Self) extends AnyVal {
     
     inline def setData(
       value: js.Array[

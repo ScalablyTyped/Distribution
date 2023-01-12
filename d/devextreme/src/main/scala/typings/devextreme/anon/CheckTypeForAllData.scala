@@ -28,7 +28,8 @@ object CheckTypeForAllData {
     __obj.asInstanceOf[CheckTypeForAllData]
   }
   
-  extension [Self <: CheckTypeForAllData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CheckTypeForAllData] (val x: Self) extends AnyVal {
     
     inline def setCheckTypeForAllData(value: Boolean): Self = StObject.set(x, "checkTypeForAllData", value.asInstanceOf[js.Any])
     

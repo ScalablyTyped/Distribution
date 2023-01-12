@@ -44,7 +44,8 @@ object ObjectType {
     __obj.asInstanceOf[ObjectType]
   }
   
-  extension [Self <: ObjectType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ObjectType] (val x: Self) extends AnyVal {
     
     inline def setObjectFlags(value: ObjectFlags): Self = StObject.set(x, "objectFlags", value.asInstanceOf[js.Any])
   }

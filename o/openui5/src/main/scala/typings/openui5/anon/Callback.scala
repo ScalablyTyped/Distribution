@@ -31,7 +31,8 @@ object Callback {
     __obj.asInstanceOf[Callback]
   }
   
-  extension [Self <: Callback](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Callback] (val x: Self) extends AnyVal {
     
     inline def setCallback(value: js.Function): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
     

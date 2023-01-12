@@ -89,7 +89,8 @@ object Canary {
     __obj.asInstanceOf[Canary]
   }
   
-  extension [Self <: Canary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Canary] (val x: Self) extends AnyVal {
     
     inline def setArtifactConfig(value: ArtifactConfigOutput): Self = StObject.set(x, "ArtifactConfig", value.asInstanceOf[js.Any])
     

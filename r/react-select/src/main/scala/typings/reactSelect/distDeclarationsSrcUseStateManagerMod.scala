@@ -70,7 +70,8 @@ object distDeclarationsSrcUseStateManagerMod {
       __obj.asInstanceOf[StateManagerAdditionalProps[Option]]
     }
     
-    extension [Self <: StateManagerAdditionalProps[?], Option](x: Self & StateManagerAdditionalProps[Option]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StateManagerAdditionalProps[?], Option] (val x: Self & StateManagerAdditionalProps[Option]) extends AnyVal {
       
       inline def setDefaultInputValue(value: String): Self = StObject.set(x, "defaultInputValue", value.asInstanceOf[js.Any])
       

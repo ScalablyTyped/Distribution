@@ -28,7 +28,8 @@ object DatabaseChangesResultItem {
     __obj.asInstanceOf[DatabaseChangesResultItem]
   }
   
-  extension [Self <: DatabaseChangesResultItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DatabaseChangesResultItem] (val x: Self) extends AnyVal {
     
     inline def setChanges(value: js.Array[Rev]): Self = StObject.set(x, "changes", value.asInstanceOf[js.Any])
     

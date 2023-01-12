@@ -97,7 +97,8 @@ object OutputPlugin {
     __obj.asInstanceOf[OutputPlugin]
   }
   
-  extension [Self <: OutputPlugin](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OutputPlugin] (val x: Self) extends AnyVal {
     
     inline def setAugmentChunkHash(
       value: ObjectHook[

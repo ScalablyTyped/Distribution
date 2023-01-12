@@ -21,7 +21,8 @@ object IModalProvider {
     __obj.asInstanceOf[IModalProvider]
   }
   
-  extension [Self <: IModalProvider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IModalProvider] (val x: Self) extends AnyVal {
     
     inline def setOptions(value: IModalSettings): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
   }

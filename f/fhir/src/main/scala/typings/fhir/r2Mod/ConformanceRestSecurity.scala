@@ -39,7 +39,8 @@ object ConformanceRestSecurity {
     __obj.asInstanceOf[ConformanceRestSecurity]
   }
   
-  extension [Self <: ConformanceRestSecurity](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConformanceRestSecurity] (val x: Self) extends AnyVal {
     
     inline def setCertificate(value: js.Array[ConformanceRestSecurityCertificate]): Self = StObject.set(x, "certificate", value.asInstanceOf[js.Any])
     

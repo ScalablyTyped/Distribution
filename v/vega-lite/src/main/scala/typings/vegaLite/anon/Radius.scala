@@ -21,7 +21,8 @@ object Radius {
     __obj.asInstanceOf[Radius]
   }
   
-  extension [Self <: Radius](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Radius] (val x: Self) extends AnyVal {
     
     inline def setRadius(value: typings.vegaLite.vegaLiteInts.`1`): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
     

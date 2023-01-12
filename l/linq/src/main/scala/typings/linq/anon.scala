@@ -21,7 +21,8 @@ object anon {
       __obj.asInstanceOf[Dictx[T]]
     }
     
-    extension [Self <: Dictx[?], T](x: Self & Dictx[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Dictx[?], T] (val x: Self & Dictx[T]) extends AnyVal {
       
       inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     }
@@ -40,7 +41,8 @@ object anon {
       __obj.asInstanceOf[DictxLength[TCollection]]
     }
     
-    extension [Self <: DictxLength[?], TCollection](x: Self & DictxLength[TCollection]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DictxLength[?], TCollection] (val x: Self & DictxLength[TCollection]) extends AnyVal {
       
       inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     }
@@ -59,7 +61,8 @@ object anon {
       __obj.asInstanceOf[DictxNumberTInner[TInner]]
     }
     
-    extension [Self <: DictxNumberTInner[?], TInner](x: Self & DictxNumberTInner[TInner]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DictxNumberTInner[?], TInner] (val x: Self & DictxNumberTInner[TInner]) extends AnyVal {
       
       inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     }
@@ -78,7 +81,8 @@ object anon {
       __obj.asInstanceOf[DictxNumberTResult[TResult]]
     }
     
-    extension [Self <: DictxNumberTResult[?], TResult](x: Self & DictxNumberTResult[TResult]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DictxNumberTResult[?], TResult] (val x: Self & DictxNumberTResult[TResult]) extends AnyVal {
       
       inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     }
@@ -97,7 +101,8 @@ object anon {
       __obj.asInstanceOf[DictxNumberU[U]]
     }
     
-    extension [Self <: DictxNumberU[?], U](x: Self & DictxNumberU[U]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DictxNumberU[?], U] (val x: Self & DictxNumberU[U]) extends AnyVal {
       
       inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     }
@@ -116,7 +121,8 @@ object anon {
       __obj.asInstanceOf[Key[K, T]]
     }
     
-    extension [Self <: Key[?, ?], K /* <: PropertyKey */, T](x: Self & (Key[K, T])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Key[?, ?], K /* <: PropertyKey */, T] (val x: Self & (Key[K, T])) extends AnyVal {
       
       inline def setKey(value: K): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
@@ -137,7 +143,8 @@ object anon {
       __obj.asInstanceOf[Length[TOther]]
     }
     
-    extension [Self <: Length[?], TOther](x: Self & Length[TOther]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Length[?], TOther] (val x: Self & Length[TOther]) extends AnyVal {
       
       inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     }
@@ -156,7 +163,8 @@ object anon {
       __obj.asInstanceOf[Value[TKey, TValue]]
     }
     
-    extension [Self <: Value[?, ?], TKey, TValue](x: Self & (Value[TKey, TValue])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Value[?, ?], TKey, TValue] (val x: Self & (Value[TKey, TValue])) extends AnyVal {
       
       inline def setKey(value: TKey): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       

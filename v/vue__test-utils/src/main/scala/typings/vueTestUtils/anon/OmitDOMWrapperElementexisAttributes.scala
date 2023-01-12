@@ -178,7 +178,8 @@ object OmitDOMWrapperElementexisAttributes {
     __obj.asInstanceOf[OmitDOMWrapperElementexisAttributes]
   }
   
-  extension [Self <: OmitDOMWrapperElementexisAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OmitDOMWrapperElementexisAttributes] (val x: Self) extends AnyVal {
     
     inline def setAttributes(value: () => StringDictionary[String]): Self = StObject.set(x, "attributes", js.Any.fromFunction0(value))
     

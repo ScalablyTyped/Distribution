@@ -23,7 +23,8 @@ object BatchGetDevicePositionResponse {
     __obj.asInstanceOf[BatchGetDevicePositionResponse]
   }
   
-  extension [Self <: BatchGetDevicePositionResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchGetDevicePositionResponse] (val x: Self) extends AnyVal {
     
     inline def setDevicePositions(value: DevicePositionList): Self = StObject.set(x, "DevicePositions", value.asInstanceOf[js.Any])
     

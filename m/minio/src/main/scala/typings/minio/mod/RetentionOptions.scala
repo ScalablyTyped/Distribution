@@ -21,7 +21,8 @@ object RetentionOptions {
     __obj.asInstanceOf[RetentionOptions]
   }
   
-  extension [Self <: RetentionOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RetentionOptions] (val x: Self) extends AnyVal {
     
     inline def setGovernanceBypass(value: Boolean): Self = StObject.set(x, "governanceBypass", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object StopStreamingSessionRequest {
     __obj.asInstanceOf[StopStreamingSessionRequest]
   }
   
-  extension [Self <: StopStreamingSessionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StopStreamingSessionRequest] (val x: Self) extends AnyVal {
     
     inline def setClientToken(value: ClientToken): Self = StObject.set(x, "clientToken", value.asInstanceOf[js.Any])
     

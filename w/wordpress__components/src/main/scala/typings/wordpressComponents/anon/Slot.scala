@@ -36,7 +36,8 @@ object Slot {
     __obj.asInstanceOf[Slot]
   }
   
-  extension [Self <: Slot](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Slot] (val x: Self) extends AnyVal {
     
     inline def setSlot(value: () => ReactElement): Self = StObject.set(x, "Slot", js.Any.fromFunction0(value))
   }

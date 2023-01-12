@@ -31,7 +31,8 @@ object Console {
       __obj.asInstanceOf[typings.freedom.freedom.Console.Console]
     }
     
-    extension [Self <: typings.freedom.freedom.Console.Console](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.freedom.freedom.Console.Console] (val x: Self) extends AnyVal {
       
       inline def setDebug(value: (String, String) => js.Promise[Unit]): Self = StObject.set(x, "debug", js.Any.fromFunction2(value))
       

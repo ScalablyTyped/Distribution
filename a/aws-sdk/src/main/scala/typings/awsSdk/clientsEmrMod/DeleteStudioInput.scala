@@ -18,7 +18,8 @@ object DeleteStudioInput {
     __obj.asInstanceOf[DeleteStudioInput]
   }
   
-  extension [Self <: DeleteStudioInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteStudioInput] (val x: Self) extends AnyVal {
     
     inline def setStudioId(value: XmlStringMaxLen256): Self = StObject.set(x, "StudioId", value.asInstanceOf[js.Any])
   }

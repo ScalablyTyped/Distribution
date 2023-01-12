@@ -23,7 +23,8 @@ object ListServiceInstanceProvisionedResourcesOutput {
     __obj.asInstanceOf[ListServiceInstanceProvisionedResourcesOutput]
   }
   
-  extension [Self <: ListServiceInstanceProvisionedResourcesOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListServiceInstanceProvisionedResourcesOutput] (val x: Self) extends AnyVal {
     
     inline def setNextToken(value: EmptyNextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     

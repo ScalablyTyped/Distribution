@@ -40,7 +40,8 @@ object mod {
       __obj.asInstanceOf[TabfilterProps]
     }
     
-    extension [Self <: TabfilterProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TabfilterProps] (val x: Self) extends AnyVal {
       
       inline def setInitialFilters(value: String | js.Array[String] | StringDictionary[Boolean]): Self = StObject.set(x, "initialFilters", value.asInstanceOf[js.Any])
       

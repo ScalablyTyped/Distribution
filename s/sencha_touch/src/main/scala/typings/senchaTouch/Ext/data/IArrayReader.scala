@@ -28,7 +28,8 @@ object IArrayReader {
     __obj.asInstanceOf[IArrayReader]
   }
   
-  extension [Self <: IArrayReader](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IArrayReader] (val x: Self) extends AnyVal {
     
     inline def setSetSuccessProperty(value: /* successProperty */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setSuccessProperty", js.Any.fromFunction1(value))
     

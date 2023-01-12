@@ -20,7 +20,8 @@ object JsonLogicSum {
     __obj.asInstanceOf[JsonLogicSum[AddOps]]
   }
   
-  extension [Self <: JsonLogicSum[?], AddOps /* <: AdditionalOperation */](x: Self & JsonLogicSum[AddOps]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JsonLogicSum[?], AddOps /* <: AdditionalOperation */] (val x: Self & JsonLogicSum[AddOps]) extends AnyVal {
     
     inline def setPlussign(value: js.Array[RulesLogic[AddOps]] | RulesLogic[AddOps]): Self = StObject.set(x, "+", value.asInstanceOf[js.Any])
     

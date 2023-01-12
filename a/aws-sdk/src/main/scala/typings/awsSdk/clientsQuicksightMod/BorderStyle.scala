@@ -18,7 +18,8 @@ object BorderStyle {
     __obj.asInstanceOf[BorderStyle]
   }
   
-  extension [Self <: BorderStyle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BorderStyle] (val x: Self) extends AnyVal {
     
     inline def setShow(value: scala.Boolean): Self = StObject.set(x, "Show", value.asInstanceOf[js.Any])
     

@@ -545,7 +545,8 @@ object mod {
       __obj.asInstanceOf[GossipOptions]
     }
     
-    extension [Self <: GossipOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GossipOptions] (val x: Self) extends AnyVal {
       
       inline def setScoreParams(value: PeerScoreParams): Self = StObject.set(x, "scoreParams", value.asInstanceOf[js.Any])
       
@@ -570,7 +571,8 @@ object mod {
       __obj.asInstanceOf[GossipSubComponents]
     }
     
-    extension [Self <: GossipSubComponents](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GossipSubComponents] (val x: Self) extends AnyVal {
       
       inline def setConnectionManager(value: ConnectionManager): Self = StObject.set(x, "connectionManager", value.asInstanceOf[js.Any])
       
@@ -607,7 +609,8 @@ object mod {
       __obj.asInstanceOf[GossipsubEvents]
     }
     
-    extension [Self <: GossipsubEvents](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GossipsubEvents] (val x: Self) extends AnyVal {
       
       inline def setGossipsubColonheartbeat(value: CustomEvent[Any]): Self = StObject.set(x, "gossipsub:heartbeat", value.asInstanceOf[js.Any])
       
@@ -630,7 +633,8 @@ object mod {
       __obj.asInstanceOf[GossipsubMessage]
     }
     
-    extension [Self <: GossipsubMessage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GossipsubMessage] (val x: Self) extends AnyVal {
       
       inline def setMsg(value: Message): Self = StObject.set(x, "msg", value.asInstanceOf[js.Any])
       
@@ -775,7 +779,8 @@ object mod {
       __obj.asInstanceOf[GossipsubOpts]
     }
     
-    extension [Self <: GossipsubOpts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GossipsubOpts] (val x: Self) extends AnyVal {
       
       inline def setAllowPublishToZeroPeers(value: Boolean): Self = StObject.set(x, "allowPublishToZeroPeers", value.asInstanceOf[js.Any])
       

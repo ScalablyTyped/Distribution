@@ -15,7 +15,8 @@ object MinimalEventObject {
     __obj.asInstanceOf[MinimalEventObject[T]]
   }
   
-  extension [Self <: MinimalEventObject[?], T /* <: js.Object */](x: Self & MinimalEventObject[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MinimalEventObject[?], T /* <: js.Object */] (val x: Self & MinimalEventObject[T]) extends AnyVal {
     
     inline def setTarget(value: T): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
   }

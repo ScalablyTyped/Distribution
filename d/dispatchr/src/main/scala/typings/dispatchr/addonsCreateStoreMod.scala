@@ -49,7 +49,8 @@ object addonsCreateStoreMod {
       __obj.asInstanceOf[StoreOptions]
     }
     
-    extension [Self <: StoreOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StoreOptions] (val x: Self) extends AnyVal {
       
       inline def setDehydrate(value: () => Any): Self = StObject.set(x, "dehydrate", js.Any.fromFunction0(value))
       

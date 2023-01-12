@@ -23,7 +23,8 @@ object BatchDetectDominantLanguageResponse {
     __obj.asInstanceOf[BatchDetectDominantLanguageResponse]
   }
   
-  extension [Self <: BatchDetectDominantLanguageResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchDetectDominantLanguageResponse] (val x: Self) extends AnyVal {
     
     inline def setErrorList(value: BatchItemErrorList): Self = StObject.set(x, "ErrorList", value.asInstanceOf[js.Any])
     

@@ -142,7 +142,8 @@ object mod {
       __obj.asInstanceOf[NumeralJSFormat]
     }
     
-    extension [Self <: NumeralJSFormat](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NumeralJSFormat] (val x: Self) extends AnyVal {
       
       inline def setFormat(value: (Any, String, RoundingFunction) => String): Self = StObject.set(x, "format", js.Any.fromFunction3(value))
       
@@ -172,7 +173,8 @@ object mod {
       __obj.asInstanceOf[NumeralJSLocale]
     }
     
-    extension [Self <: NumeralJSLocale](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NumeralJSLocale] (val x: Self) extends AnyVal {
       
       inline def setAbbreviations(value: Billion): Self = StObject.set(x, "abbreviations", value.asInstanceOf[js.Any])
       
@@ -211,7 +213,8 @@ object mod {
       __obj.asInstanceOf[NumeralJSOptions]
     }
     
-    extension [Self <: NumeralJSOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NumeralJSOptions] (val x: Self) extends AnyVal {
       
       inline def setCurrentLocale(value: String): Self = StObject.set(x, "currentLocale", value.asInstanceOf[js.Any])
       

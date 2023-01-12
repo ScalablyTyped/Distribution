@@ -19,7 +19,8 @@ object International {
     __obj.asInstanceOf[International]
   }
   
-  extension [Self <: International](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: International] (val x: Self) extends AnyVal {
     
     inline def setInternational(value: international_): Self = StObject.set(x, "International", value.asInstanceOf[js.Any])
     

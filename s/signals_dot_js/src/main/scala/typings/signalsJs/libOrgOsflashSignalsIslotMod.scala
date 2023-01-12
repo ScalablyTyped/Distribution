@@ -73,7 +73,8 @@ object libOrgOsflashSignalsIslotMod {
     @js.native
     val ^ : js.Symbol = js.native
     
-    extension [Self <: ISlot](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISlot] (val x: Self) extends AnyVal {
       
       inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       

@@ -23,7 +23,8 @@ object Fd {
     __obj.asInstanceOf[Fd]
   }
   
-  extension [Self <: Fd](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Fd] (val x: Self) extends AnyVal {
     
     inline def setBufferSize(value: Double): Self = StObject.set(x, "bufferSize", value.asInstanceOf[js.Any])
     

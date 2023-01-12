@@ -17,7 +17,8 @@ object BinanceGetPublicKey {
     __obj.asInstanceOf[BinanceGetPublicKey]
   }
   
-  extension [Self <: BinanceGetPublicKey](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BinanceGetPublicKey] (val x: Self) extends AnyVal {
     
     inline def setAddress_n(value: js.Array[Double]): Self = StObject.set(x, "address_n", value.asInstanceOf[js.Any])
     

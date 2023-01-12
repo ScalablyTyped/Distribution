@@ -24,7 +24,8 @@ object LanguageOptions {
     __obj.asInstanceOf[LanguageOptions]
   }
   
-  extension [Self <: LanguageOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LanguageOptions] (val x: Self) extends AnyVal {
     
     inline def setFilter(value: `false` | String | FilterArray | FilterFunction): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     

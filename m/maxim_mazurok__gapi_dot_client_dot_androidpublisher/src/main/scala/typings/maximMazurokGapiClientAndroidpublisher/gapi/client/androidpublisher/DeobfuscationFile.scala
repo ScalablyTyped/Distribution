@@ -16,7 +16,8 @@ object DeobfuscationFile {
     __obj.asInstanceOf[DeobfuscationFile]
   }
   
-  extension [Self <: DeobfuscationFile](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeobfuscationFile] (val x: Self) extends AnyVal {
     
     inline def setSymbolType(value: String): Self = StObject.set(x, "symbolType", value.asInstanceOf[js.Any])
     

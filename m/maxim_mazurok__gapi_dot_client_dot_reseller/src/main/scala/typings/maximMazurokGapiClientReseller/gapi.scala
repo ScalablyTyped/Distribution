@@ -70,7 +70,8 @@ object gapi {
           __obj.asInstanceOf[Address]
         }
         
-        extension [Self <: Address](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: Address] (val x: Self) extends AnyVal {
           
           inline def setAddressLine1(value: String): Self = StObject.set(x, "addressLine1", value.asInstanceOf[js.Any])
           
@@ -149,7 +150,8 @@ object gapi {
           __obj.asInstanceOf[ChangePlanRequest]
         }
         
-        extension [Self <: ChangePlanRequest](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: ChangePlanRequest] (val x: Self) extends AnyVal {
           
           inline def setDealCode(value: String): Self = StObject.set(x, "dealCode", value.asInstanceOf[js.Any])
           
@@ -228,7 +230,8 @@ object gapi {
           __obj.asInstanceOf[Customer]
         }
         
-        extension [Self <: Customer](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: Customer] (val x: Self) extends AnyVal {
           
           inline def setAlternateEmail(value: String): Self = StObject.set(x, "alternateEmail", value.asInstanceOf[js.Any])
           
@@ -325,7 +328,8 @@ object gapi {
           __obj.asInstanceOf[PrimaryAdmin]
         }
         
-        extension [Self <: PrimaryAdmin](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: PrimaryAdmin] (val x: Self) extends AnyVal {
           
           inline def setPrimaryEmail(value: String): Self = StObject.set(x, "primaryEmail", value.asInstanceOf[js.Any])
           
@@ -351,7 +355,8 @@ object gapi {
           __obj.asInstanceOf[RenewalSettings]
         }
         
-        extension [Self <: RenewalSettings](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: RenewalSettings] (val x: Self) extends AnyVal {
           
           inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
           
@@ -378,7 +383,8 @@ object gapi {
           __obj.asInstanceOf[ResellernotifyGetwatchdetailsResponse]
         }
         
-        extension [Self <: ResellernotifyGetwatchdetailsResponse](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: ResellernotifyGetwatchdetailsResponse] (val x: Self) extends AnyVal {
           
           inline def setServiceAccountEmailAddresses(value: js.Array[String]): Self = StObject.set(x, "serviceAccountEmailAddresses", value.asInstanceOf[js.Any])
           
@@ -443,7 +449,8 @@ object gapi {
           __obj.asInstanceOf[Seats]
         }
         
-        extension [Self <: Seats](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: Seats] (val x: Self) extends AnyVal {
           
           inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
           
@@ -556,7 +563,8 @@ object gapi {
           __obj.asInstanceOf[Subscription]
         }
         
-        extension [Self <: Subscription](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: Subscription] (val x: Self) extends AnyVal {
           
           inline def setBillingMethod(value: String): Self = StObject.set(x, "billingMethod", value.asInstanceOf[js.Any])
           
@@ -652,7 +660,8 @@ object gapi {
           __obj.asInstanceOf[Subscriptions]
         }
         
-        extension [Self <: Subscriptions](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: Subscriptions] (val x: Self) extends AnyVal {
           
           inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
           

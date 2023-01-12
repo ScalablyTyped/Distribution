@@ -31,7 +31,8 @@ object BoardBg {
     __obj.asInstanceOf[BoardBg]
   }
   
-  extension [Self <: BoardBg](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BoardBg] (val x: Self) extends AnyVal {
     
     inline def setBoardBg(value: String): Self = StObject.set(x, "boardBg", value.asInstanceOf[js.Any])
     

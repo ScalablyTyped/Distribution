@@ -22,7 +22,8 @@ object BitbucketServerRepositoryId {
     __obj.asInstanceOf[BitbucketServerRepositoryId]
   }
   
-  extension [Self <: BitbucketServerRepositoryId](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BitbucketServerRepositoryId] (val x: Self) extends AnyVal {
     
     inline def setProjectKey(value: String): Self = StObject.set(x, "projectKey", value.asInstanceOf[js.Any])
     

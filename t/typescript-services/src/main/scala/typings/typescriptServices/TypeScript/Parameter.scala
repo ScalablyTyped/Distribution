@@ -54,7 +54,8 @@ object Parameter {
     __obj.asInstanceOf[Parameter]
   }
   
-  extension [Self <: Parameter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Parameter] (val x: Self) extends AnyVal {
     
     inline def setDotDotDotToken(value: ASTSpan): Self = StObject.set(x, "dotDotDotToken", value.asInstanceOf[js.Any])
     

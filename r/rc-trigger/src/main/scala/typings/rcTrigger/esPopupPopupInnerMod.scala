@@ -86,7 +86,8 @@ object esPopupPopupInnerMod extends Shortcut {
       __obj.asInstanceOf[PopupInnerProps]
     }
     
-    extension [Self <: PopupInnerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PopupInnerProps] (val x: Self) extends AnyVal {
       
       inline def setAlign(value: AlignType): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       
@@ -183,7 +184,8 @@ object esPopupPopupInnerMod extends Shortcut {
       __obj.asInstanceOf[PopupInnerRef]
     }
     
-    extension [Self <: PopupInnerRef](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PopupInnerRef] (val x: Self) extends AnyVal {
       
       inline def setForceAlign(value: () => Unit): Self = StObject.set(x, "forceAlign", js.Any.fromFunction0(value))
       

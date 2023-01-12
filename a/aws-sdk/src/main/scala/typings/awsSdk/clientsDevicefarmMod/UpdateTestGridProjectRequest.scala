@@ -33,7 +33,8 @@ object UpdateTestGridProjectRequest {
     __obj.asInstanceOf[UpdateTestGridProjectRequest]
   }
   
-  extension [Self <: UpdateTestGridProjectRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateTestGridProjectRequest] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: ResourceDescription): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

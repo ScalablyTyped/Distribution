@@ -38,7 +38,8 @@ object ListDomainDeliverabilityCampaignsRequest {
     __obj.asInstanceOf[ListDomainDeliverabilityCampaignsRequest]
   }
   
-  extension [Self <: ListDomainDeliverabilityCampaignsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListDomainDeliverabilityCampaignsRequest] (val x: Self) extends AnyVal {
     
     inline def setEndDate(value: js.Date): Self = StObject.set(x, "EndDate", value.asInstanceOf[js.Any])
     

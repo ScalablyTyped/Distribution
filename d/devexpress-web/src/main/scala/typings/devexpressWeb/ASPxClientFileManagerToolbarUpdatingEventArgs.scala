@@ -23,7 +23,8 @@ object ASPxClientFileManagerToolbarUpdatingEventArgs {
     __obj.asInstanceOf[ASPxClientFileManagerToolbarUpdatingEventArgs]
   }
   
-  extension [Self <: ASPxClientFileManagerToolbarUpdatingEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientFileManagerToolbarUpdatingEventArgs] (val x: Self) extends AnyVal {
     
     inline def setActiveAreaName(value: String): Self = StObject.set(x, "activeAreaName", value.asInstanceOf[js.Any])
   }

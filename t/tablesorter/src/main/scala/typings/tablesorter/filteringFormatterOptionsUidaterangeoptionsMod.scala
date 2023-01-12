@@ -40,7 +40,8 @@ object filteringFormatterOptionsUidaterangeoptionsMod {
       __obj.asInstanceOf[UIDateRangeOptions]
     }
     
-    extension [Self <: UIDateRangeOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UIDateRangeOptions] (val x: Self) extends AnyVal {
       
       inline def setFrom(value: js.Date): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       

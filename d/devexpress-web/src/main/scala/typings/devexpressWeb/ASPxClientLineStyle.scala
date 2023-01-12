@@ -33,7 +33,8 @@ object ASPxClientLineStyle {
     __obj.asInstanceOf[ASPxClientLineStyle]
   }
   
-  extension [Self <: ASPxClientLineStyle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientLineStyle] (val x: Self) extends AnyVal {
     
     inline def setDashStyle(value: String): Self = StObject.set(x, "dashStyle", value.asInstanceOf[js.Any])
     

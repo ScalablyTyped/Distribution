@@ -15,7 +15,8 @@ object DropOptions {
     __obj.asInstanceOf[DropOptions]
   }
   
-  extension [Self <: DropOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DropOptions] (val x: Self) extends AnyVal {
     
     inline def setHoverClass(value: String): Self = StObject.set(x, "hoverClass", value.asInstanceOf[js.Any])
   }

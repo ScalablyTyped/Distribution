@@ -37,7 +37,8 @@ object LeaderboardPlayer {
     __obj.asInstanceOf[LeaderboardPlayer]
   }
   
-  extension [Self <: LeaderboardPlayer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LeaderboardPlayer] (val x: Self) extends AnyVal {
     
     inline def setGetID(value: () => String | Null): Self = StObject.set(x, "getID", js.Any.fromFunction0(value))
     

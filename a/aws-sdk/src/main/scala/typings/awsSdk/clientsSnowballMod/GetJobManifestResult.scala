@@ -18,7 +18,8 @@ object GetJobManifestResult {
     __obj.asInstanceOf[GetJobManifestResult]
   }
   
-  extension [Self <: GetJobManifestResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetJobManifestResult] (val x: Self) extends AnyVal {
     
     inline def setManifestURI(value: String): Self = StObject.set(x, "ManifestURI", value.asInstanceOf[js.Any])
     

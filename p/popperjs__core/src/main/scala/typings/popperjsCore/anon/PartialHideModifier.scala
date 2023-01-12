@@ -40,7 +40,8 @@ object PartialHideModifier {
     __obj.asInstanceOf[PartialHideModifier]
   }
   
-  extension [Self <: PartialHideModifier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialHideModifier] (val x: Self) extends AnyVal {
     
     inline def setData(value: Obj): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

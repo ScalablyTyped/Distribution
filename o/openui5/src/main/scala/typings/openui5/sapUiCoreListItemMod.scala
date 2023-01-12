@@ -191,7 +191,8 @@ object sapUiCoreListItemMod {
       __obj.asInstanceOf[ListItemSettings]
     }
     
-    extension [Self <: ListItemSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListItemSettings] (val x: Self) extends AnyVal {
       
       inline def setAdditionalText(value: String | PropertyBindingInfo): Self = StObject.set(x, "additionalText", value.asInstanceOf[js.Any])
       

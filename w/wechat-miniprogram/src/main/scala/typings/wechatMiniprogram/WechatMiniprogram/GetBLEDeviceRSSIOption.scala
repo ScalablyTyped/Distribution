@@ -25,7 +25,8 @@ object GetBLEDeviceRSSIOption {
     __obj.asInstanceOf[GetBLEDeviceRSSIOption]
   }
   
-  extension [Self <: GetBLEDeviceRSSIOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetBLEDeviceRSSIOption] (val x: Self) extends AnyVal {
     
     inline def setComplete(value: /* res */ GeneralCallbackResult => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
     

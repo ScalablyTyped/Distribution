@@ -69,7 +69,8 @@ object EnvelopesFilters {
     __obj.asInstanceOf[EnvelopesFilters]
   }
   
-  extension [Self <: EnvelopesFilters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnvelopesFilters] (val x: Self) extends AnyVal {
     
     inline def setAcStatus(value: String): Self = StObject.set(x, "acStatus", value.asInstanceOf[js.Any])
     

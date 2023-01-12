@@ -18,7 +18,8 @@ object DescribeBackupInput {
     __obj.asInstanceOf[DescribeBackupInput]
   }
   
-  extension [Self <: DescribeBackupInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeBackupInput] (val x: Self) extends AnyVal {
     
     inline def setBackupArn(value: BackupArn): Self = StObject.set(x, "BackupArn", value.asInstanceOf[js.Any])
   }

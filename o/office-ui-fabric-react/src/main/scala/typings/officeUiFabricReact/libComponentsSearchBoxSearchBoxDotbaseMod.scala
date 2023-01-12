@@ -77,7 +77,8 @@ object libComponentsSearchBoxSearchBoxDotbaseMod {
       __obj.asInstanceOf[ISearchBoxState]
     }
     
-    extension [Self <: ISearchBoxState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISearchBoxState] (val x: Self) extends AnyVal {
       
       inline def setHasFocus(value: Boolean): Self = StObject.set(x, "hasFocus", value.asInstanceOf[js.Any])
       

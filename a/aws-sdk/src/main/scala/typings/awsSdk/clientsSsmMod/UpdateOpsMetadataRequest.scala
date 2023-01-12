@@ -28,7 +28,8 @@ object UpdateOpsMetadataRequest {
     __obj.asInstanceOf[UpdateOpsMetadataRequest]
   }
   
-  extension [Self <: UpdateOpsMetadataRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateOpsMetadataRequest] (val x: Self) extends AnyVal {
     
     inline def setKeysToDelete(value: MetadataKeysToDeleteList): Self = StObject.set(x, "KeysToDelete", value.asInstanceOf[js.Any])
     

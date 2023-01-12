@@ -94,7 +94,8 @@ object BulkAccess {
       __obj.asInstanceOf[IFileInformationFactoryFactory]
     }
     
-    extension [Self <: IFileInformationFactoryFactory](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IFileInformationFactoryFactory] (val x: Self) extends AnyVal {
       
       inline def setCreateWithMode(value: (IStorageQueryResultBase, ThumbnailMode) => FileInformationFactory): Self = StObject.set(x, "createWithMode", js.Any.fromFunction2(value))
       
@@ -144,7 +145,8 @@ object BulkAccess {
       __obj.asInstanceOf[IStorageItemInformation]
     }
     
-    extension [Self <: IStorageItemInformation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IStorageItemInformation] (val x: Self) extends AnyVal {
       
       inline def setBasicProperties(value: BasicProperties): Self = StObject.set(x, "basicProperties", value.asInstanceOf[js.Any])
       

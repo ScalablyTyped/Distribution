@@ -62,7 +62,8 @@ object Mostrecentinstance {
     __obj.asInstanceOf[Mostrecentinstance]
   }
   
-  extension [Self <: Mostrecentinstance](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Mostrecentinstance] (val x: Self) extends AnyVal {
     
     inline def setCreated_at(
       value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['alert-created-at'] */ js.Any

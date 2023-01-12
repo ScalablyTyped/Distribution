@@ -23,7 +23,8 @@ object AllowOptionalDependencies {
     __obj.asInstanceOf[AllowOptionalDependencies]
   }
   
-  extension [Self <: AllowOptionalDependencies](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AllowOptionalDependencies] (val x: Self) extends AnyVal {
     
     inline def setAllowOptionalDependencies(value: Boolean): Self = StObject.set(x, "allowOptionalDependencies", value.asInstanceOf[js.Any])
     

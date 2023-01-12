@@ -53,7 +53,8 @@ object actionsDragPluginMod extends Shortcut {
       __obj.asInstanceOf[DraggableOptions]
     }
     
-    extension [Self <: DraggableOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DraggableOptions] (val x: Self) extends AnyVal {
       
       inline def setLockAxis(value: typings.interactjsTypes.interactjsTypesStrings.x | y | xy | start): Self = StObject.set(x, "lockAxis", value.asInstanceOf[js.Any])
       
@@ -112,7 +113,8 @@ object actionsDragPluginMod extends Shortcut {
         __obj.asInstanceOf[Interactable]
       }
       
-      extension [Self <: Interactable](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Interactable] (val x: Self) extends AnyVal {
         
         inline def setDraggable(value: DraggableMethod): Self = StObject.set(x, "draggable", value.asInstanceOf[js.Any])
       }
@@ -133,7 +135,8 @@ object actionsDragPluginMod extends Shortcut {
         __obj.asInstanceOf[ActionDefaults]
       }
       
-      extension [Self <: ActionDefaults](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ActionDefaults] (val x: Self) extends AnyVal {
         
         inline def setDrag(value: DraggableOptions): Self = StObject.set(x, "drag", value.asInstanceOf[js.Any])
       }
@@ -154,7 +157,8 @@ object actionsDragPluginMod extends Shortcut {
         __obj.asInstanceOf[ActionMap]
       }
       
-      extension [Self <: ActionMap](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ActionMap] (val x: Self) extends AnyVal {
         
         inline def setDrag(value: Plugin): Self = StObject.set(x, "drag", value.asInstanceOf[js.Any])
         

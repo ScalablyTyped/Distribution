@@ -37,7 +37,8 @@ object TitleBarOverlay {
     __obj.asInstanceOf[TitleBarOverlay]
   }
   
-  extension [Self <: TitleBarOverlay](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TitleBarOverlay] (val x: Self) extends AnyVal {
     
     inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

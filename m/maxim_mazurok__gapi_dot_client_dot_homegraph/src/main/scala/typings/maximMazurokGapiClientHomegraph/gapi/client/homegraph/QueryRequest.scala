@@ -22,7 +22,8 @@ object QueryRequest {
     __obj.asInstanceOf[QueryRequest]
   }
   
-  extension [Self <: QueryRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryRequest] (val x: Self) extends AnyVal {
     
     inline def setAgentUserId(value: String): Self = StObject.set(x, "agentUserId", value.asInstanceOf[js.Any])
     

@@ -61,7 +61,8 @@ object XExtendedDocumentHandler {
     __obj.asInstanceOf[XExtendedDocumentHandler]
   }
   
-  extension [Self <: XExtendedDocumentHandler](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XExtendedDocumentHandler] (val x: Self) extends AnyVal {
     
     inline def setAllowLineBreak(value: () => Unit): Self = StObject.set(x, "allowLineBreak", js.Any.fromFunction0(value))
     

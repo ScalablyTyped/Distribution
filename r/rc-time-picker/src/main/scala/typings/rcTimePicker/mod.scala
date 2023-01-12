@@ -111,7 +111,8 @@ object mod {
       __obj.asInstanceOf[TimePickerProps]
     }
     
-    extension [Self <: TimePickerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TimePickerProps] (val x: Self) extends AnyVal {
       
       inline def setAddon(value: /* instance */ Instantiable0[Panel] => ReactNode): Self = StObject.set(x, "addon", js.Any.fromFunction1(value))
       

@@ -19,7 +19,8 @@ object DownloadCSV {
     __obj.asInstanceOf[DownloadCSV]
   }
   
-  extension [Self <: DownloadCSV](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DownloadCSV] (val x: Self) extends AnyVal {
     
     inline def setBom(value: Boolean): Self = StObject.set(x, "bom", value.asInstanceOf[js.Any])
     

@@ -41,7 +41,8 @@ object anon {
       __obj.asInstanceOf[Email]
     }
     
-    extension [Self <: Email](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Email] (val x: Self) extends AnyVal {
       
       inline def setEmail(value: () => String): Self = StObject.set(x, "email", js.Any.fromFunction0(value))
       
@@ -68,7 +69,8 @@ object anon {
       __obj.asInstanceOf[ExportOption]
     }
     
-    extension [Self <: ExportOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExportOption] (val x: Self) extends AnyVal {
       
       inline def setExportOption(value: Boolean | js.Object): Self = StObject.set(x, "exportOption", value.asInstanceOf[js.Any])
       
@@ -144,7 +146,8 @@ object anon {
       __obj.asInstanceOf[Git]
     }
     
-    extension [Self <: Git](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Git] (val x: Self) extends AnyVal {
       
       inline def setGit(value: Email): Self = StObject.set(x, "git", value.asInstanceOf[js.Any])
       
@@ -166,7 +169,8 @@ object anon {
       __obj.asInstanceOf[Store]
     }
     
-    extension [Self <: Store](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Store] (val x: Self) extends AnyVal {
       
       inline def setStore(value: Boolean): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
       
@@ -190,7 +194,8 @@ object anon {
       __obj.asInstanceOf[Username]
     }
     
-    extension [Self <: Username](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Username] (val x: Self) extends AnyVal {
       
       inline def setUsername(value: () => js.Promise[String]): Self = StObject.set(x, "username", js.Any.fromFunction0(value))
     }

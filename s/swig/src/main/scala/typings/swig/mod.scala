@@ -605,7 +605,8 @@ object mod {
       __obj.asInstanceOf[SwigOptions]
     }
     
-    extension [Self <: SwigOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SwigOptions] (val x: Self) extends AnyVal {
       
       inline def setAutoescape(value: Boolean): Self = StObject.set(x, "autoescape", value.asInstanceOf[js.Any])
       
@@ -673,7 +674,8 @@ object mod {
         __obj.asInstanceOf[ParseReturn]
       }
       
-      extension [Self <: ParseReturn](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ParseReturn] (val x: Self) extends AnyVal {
         
         inline def setBlocks(value: Any): Self = StObject.set(x, "blocks", value.asInstanceOf[js.Any])
         

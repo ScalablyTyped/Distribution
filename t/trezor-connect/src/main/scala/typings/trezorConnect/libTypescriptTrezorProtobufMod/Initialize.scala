@@ -19,7 +19,8 @@ object Initialize {
     __obj.asInstanceOf[Initialize]
   }
   
-  extension [Self <: Initialize](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Initialize] (val x: Self) extends AnyVal {
     
     inline def setDerive_cardano(value: Boolean): Self = StObject.set(x, "derive_cardano", value.asInstanceOf[js.Any])
     

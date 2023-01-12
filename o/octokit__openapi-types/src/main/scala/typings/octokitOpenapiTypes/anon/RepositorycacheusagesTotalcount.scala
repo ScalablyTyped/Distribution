@@ -17,7 +17,8 @@ object RepositorycacheusagesTotalcount {
     __obj.asInstanceOf[RepositorycacheusagesTotalcount]
   }
   
-  extension [Self <: RepositorycacheusagesTotalcount](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RepositorycacheusagesTotalcount] (val x: Self) extends AnyVal {
     
     inline def setRepository_cache_usages(value: js.Array[Activecachescount]): Self = StObject.set(x, "repository_cache_usages", value.asInstanceOf[js.Any])
     

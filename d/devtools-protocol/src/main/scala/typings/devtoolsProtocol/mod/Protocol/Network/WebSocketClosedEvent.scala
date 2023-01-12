@@ -23,7 +23,8 @@ object WebSocketClosedEvent {
     __obj.asInstanceOf[WebSocketClosedEvent]
   }
   
-  extension [Self <: WebSocketClosedEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebSocketClosedEvent] (val x: Self) extends AnyVal {
     
     inline def setRequestId(value: RequestId): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
     

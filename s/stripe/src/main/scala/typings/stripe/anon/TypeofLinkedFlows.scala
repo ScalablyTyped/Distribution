@@ -15,7 +15,8 @@ object TypeofLinkedFlows {
     __obj.asInstanceOf[TypeofLinkedFlows]
   }
   
-  extension [Self <: TypeofLinkedFlows](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofLinkedFlows] (val x: Self) extends AnyVal {
     
     inline def setSourceFlowDetails(value: Any): Self = StObject.set(x, "SourceFlowDetails", value.asInstanceOf[js.Any])
   }

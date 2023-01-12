@@ -42,7 +42,8 @@ object mod {
         __obj.asInstanceOf[IncomingMessage]
       }
       
-      extension [Self <: IncomingMessage](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IncomingMessage] (val x: Self) extends AnyVal {
         
         inline def setId(value: ReqId): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
         
@@ -64,7 +65,8 @@ object mod {
         __obj.asInstanceOf[ServerResponse]
       }
       
-      extension [Self <: ServerResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ServerResponse] (val x: Self) extends AnyVal {
         
         inline def setErr(value: js.Error): Self = StObject.set(x, "err", value.asInstanceOf[js.Any])
         

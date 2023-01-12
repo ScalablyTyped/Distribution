@@ -17,7 +17,8 @@ object SubscriptionLike {
     __obj.asInstanceOf[SubscriptionLike]
   }
   
-  extension [Self <: SubscriptionLike](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubscriptionLike] (val x: Self) extends AnyVal {
     
     inline def setClosed(value: Boolean): Self = StObject.set(x, "closed", value.asInstanceOf[js.Any])
   }

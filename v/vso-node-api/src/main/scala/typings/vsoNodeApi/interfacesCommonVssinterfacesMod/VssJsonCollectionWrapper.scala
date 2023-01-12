@@ -17,7 +17,8 @@ object VssJsonCollectionWrapper {
     __obj.asInstanceOf[VssJsonCollectionWrapper]
   }
   
-  extension [Self <: VssJsonCollectionWrapper](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VssJsonCollectionWrapper] (val x: Self) extends AnyVal {
     
     inline def setValue(value: js.Array[Any]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     

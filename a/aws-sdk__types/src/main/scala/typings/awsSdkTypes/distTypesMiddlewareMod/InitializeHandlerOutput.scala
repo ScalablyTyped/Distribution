@@ -18,7 +18,8 @@ object InitializeHandlerOutput {
     __obj.asInstanceOf[InitializeHandlerOutput[Output]]
   }
   
-  extension [Self <: InitializeHandlerOutput[?], Output /* <: js.Object */](x: Self & InitializeHandlerOutput[Output]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InitializeHandlerOutput[?], Output /* <: js.Object */] (val x: Self & InitializeHandlerOutput[Output]) extends AnyVal {
     
     inline def setOutput(value: Output): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
   }

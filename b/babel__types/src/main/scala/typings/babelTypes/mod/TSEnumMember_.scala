@@ -26,7 +26,8 @@ object TSEnumMember_ {
     __obj.asInstanceOf[TSEnumMember_]
   }
   
-  extension [Self <: TSEnumMember_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TSEnumMember_] (val x: Self) extends AnyVal {
     
     inline def setId(value: Identifier_ | StringLiteral_): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

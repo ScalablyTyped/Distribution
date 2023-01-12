@@ -19,7 +19,8 @@ object ManagedProperty {
     __obj.asInstanceOf[ManagedProperty[T]]
   }
   
-  extension [Self <: ManagedProperty[?], T](x: Self & ManagedProperty[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ManagedProperty[?], T] (val x: Self & ManagedProperty[T]) extends AnyVal {
     
     inline def setCanBeChanged(value: Boolean): Self = StObject.set(x, "CanBeChanged", value.asInstanceOf[js.Any])
     

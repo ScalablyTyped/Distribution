@@ -43,7 +43,8 @@ object SipMediaApplication {
     __obj.asInstanceOf[SipMediaApplication]
   }
   
-  extension [Self <: SipMediaApplication](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SipMediaApplication] (val x: Self) extends AnyVal {
     
     inline def setAwsRegion(value: String): Self = StObject.set(x, "AwsRegion", value.asInstanceOf[js.Any])
     

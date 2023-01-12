@@ -239,7 +239,8 @@ object distSrcLayoutMod {
       __obj.asInstanceOf[Event]
     }
     
-    extension [Self <: Event](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Event] (val x: Self) extends AnyVal {
       
       inline def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
       
@@ -272,7 +273,8 @@ object distSrcLayoutMod {
       __obj.asInstanceOf[Group]
     }
     
-    extension [Self <: Group](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Group] (val x: Self) extends AnyVal {
       
       inline def setBounds(value: Rectangle): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
       
@@ -315,7 +317,8 @@ object distSrcLayoutMod {
       __obj.asInstanceOf[InputNode]
     }
     
-    extension [Self <: InputNode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InputNode] (val x: Self) extends AnyVal {
       
       inline def setFixed(value: Double): Self = StObject.set(x, "fixed", value.asInstanceOf[js.Any])
       
@@ -360,7 +363,8 @@ object distSrcLayoutMod {
       __obj.asInstanceOf[Link[NodeRefType]]
     }
     
-    extension [Self <: Link[?], NodeRefType](x: Self & Link[NodeRefType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Link[?], NodeRefType] (val x: Self & Link[NodeRefType]) extends AnyVal {
       
       inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
       
@@ -396,7 +400,8 @@ object distSrcLayoutMod {
       __obj.asInstanceOf[LinkLengthTypeAccessor]
     }
     
-    extension [Self <: LinkLengthTypeAccessor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LinkLengthTypeAccessor] (val x: Self) extends AnyVal {
       
       inline def setGetType(value: /* t */ Link[Node | Double] => Double): Self = StObject.set(x, "getType", js.Any.fromFunction1(value))
     }
@@ -421,7 +426,8 @@ object distSrcLayoutMod {
       __obj.asInstanceOf[Node]
     }
     
-    extension [Self <: Node](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Node] (val x: Self) extends AnyVal {
       
       inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       

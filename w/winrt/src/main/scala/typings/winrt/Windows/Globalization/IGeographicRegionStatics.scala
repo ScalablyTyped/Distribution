@@ -15,7 +15,8 @@ object IGeographicRegionStatics {
     __obj.asInstanceOf[IGeographicRegionStatics]
   }
   
-  extension [Self <: IGeographicRegionStatics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IGeographicRegionStatics] (val x: Self) extends AnyVal {
     
     inline def setIsSupported(value: String => Boolean): Self = StObject.set(x, "isSupported", js.Any.fromFunction1(value))
   }

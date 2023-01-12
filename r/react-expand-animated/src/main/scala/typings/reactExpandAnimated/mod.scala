@@ -68,7 +68,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[ExpandProps]
     }
     
-    extension [Self <: ExpandProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExpandProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

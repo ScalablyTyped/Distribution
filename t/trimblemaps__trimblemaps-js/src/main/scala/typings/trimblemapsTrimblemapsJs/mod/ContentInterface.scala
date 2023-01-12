@@ -45,7 +45,8 @@ object ContentInterface {
     __obj.asInstanceOf[ContentInterface]
   }
   
-  extension [Self <: ContentInterface](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContentInterface] (val x: Self) extends AnyVal {
     
     inline def setAddTo(value: Map => ContentInterface): Self = StObject.set(x, "addTo", js.Any.fromFunction1(value))
     

@@ -17,7 +17,8 @@ object Truncated {
     __obj.asInstanceOf[Truncated]
   }
   
-  extension [Self <: Truncated](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Truncated] (val x: Self) extends AnyVal {
     
     inline def setTruncated(value: Boolean): Self = StObject.set(x, "truncated", value.asInstanceOf[js.Any])
     

@@ -43,7 +43,8 @@ object S3ReportExportConfig {
     __obj.asInstanceOf[S3ReportExportConfig]
   }
   
-  extension [Self <: S3ReportExportConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: S3ReportExportConfig] (val x: Self) extends AnyVal {
     
     inline def setBucket(value: NonEmptyString): Self = StObject.set(x, "bucket", value.asInstanceOf[js.Any])
     

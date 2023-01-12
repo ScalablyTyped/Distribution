@@ -58,7 +58,8 @@ object translatable {
       __obj.asInstanceOf[IAbstract]
     }
     
-    extension [Self <: IAbstract](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IAbstract] (val x: Self) extends AnyVal {
       
       inline def setGetEasing(value: () => Any): Self = StObject.set(x, "getEasing", js.Any.fromFunction0(value))
       
@@ -137,7 +138,8 @@ object translatable {
       __obj.asInstanceOf[IDom]
     }
     
-    extension [Self <: IDom](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDom] (val x: Self) extends AnyVal {
       
       inline def setGetElement(value: () => Any): Self = StObject.set(x, "getElement", js.Any.fromFunction0(value))
       
@@ -172,7 +174,8 @@ object translatable {
       __obj.asInstanceOf[IScrollPosition]
     }
     
-    extension [Self <: IScrollPosition](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IScrollPosition] (val x: Self) extends AnyVal {
       
       inline def setGetUseWrapper(value: () => Boolean): Self = StObject.set(x, "getUseWrapper", js.Any.fromFunction0(value))
       

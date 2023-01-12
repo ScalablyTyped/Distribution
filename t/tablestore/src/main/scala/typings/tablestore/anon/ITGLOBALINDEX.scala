@@ -19,7 +19,8 @@ object ITGLOBALINDEX {
     __obj.asInstanceOf[ITGLOBALINDEX]
   }
   
-  extension [Self <: ITGLOBALINDEX](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ITGLOBALINDEX] (val x: Self) extends AnyVal {
     
     inline def setIT_GLOBAL_INDEX(value: `0`): Self = StObject.set(x, "IT_GLOBAL_INDEX", value.asInstanceOf[js.Any])
     

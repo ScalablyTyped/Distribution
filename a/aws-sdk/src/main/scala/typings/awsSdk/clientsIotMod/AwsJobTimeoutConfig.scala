@@ -18,7 +18,8 @@ object AwsJobTimeoutConfig {
     __obj.asInstanceOf[AwsJobTimeoutConfig]
   }
   
-  extension [Self <: AwsJobTimeoutConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsJobTimeoutConfig] (val x: Self) extends AnyVal {
     
     inline def setInProgressTimeoutInMinutes(value: AwsJobTimeoutInProgressTimeoutInMinutes): Self = StObject.set(x, "inProgressTimeoutInMinutes", value.asInstanceOf[js.Any])
     

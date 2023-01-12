@@ -17,7 +17,8 @@ object anon {
       __obj.asInstanceOf[Brand[A]]
     }
     
-    extension [Self <: Brand[?], A /* <: js.Object */](x: Self & Brand[A]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Brand[?], A /* <: js.Object */] (val x: Self & Brand[A]) extends AnyVal {
       
       inline def set__brand(value: /* keyof A */ String): Self = StObject.set(x, "__brand", value.asInstanceOf[js.Any])
     }
@@ -34,7 +35,8 @@ object anon {
       __obj.asInstanceOf[BrandU[U]]
     }
     
-    extension [Self <: BrandU[?], U](x: Self & BrandU[U]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BrandU[?], U] (val x: Self & BrandU[U]) extends AnyVal {
       
       inline def set__brand(value: U): Self = StObject.set(x, "__brand", value.asInstanceOf[js.Any])
     }

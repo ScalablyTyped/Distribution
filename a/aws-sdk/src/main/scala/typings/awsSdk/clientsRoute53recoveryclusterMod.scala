@@ -40,7 +40,8 @@ object clientsRoute53recoveryclusterMod {
       __obj.asInstanceOf[ClientApiVersions]
     }
     
-    extension [Self <: ClientApiVersions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClientApiVersions] (val x: Self) extends AnyVal {
       
       inline def setApiVersion(value: apiVersion): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
       
@@ -69,7 +70,8 @@ object clientsRoute53recoveryclusterMod {
       __obj.asInstanceOf[GetRoutingControlStateRequest]
     }
     
-    extension [Self <: GetRoutingControlStateRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetRoutingControlStateRequest] (val x: Self) extends AnyVal {
       
       inline def setRoutingControlArn(value: Arn): Self = StObject.set(x, "RoutingControlArn", value.asInstanceOf[js.Any])
     }
@@ -99,7 +101,8 @@ object clientsRoute53recoveryclusterMod {
       __obj.asInstanceOf[GetRoutingControlStateResponse]
     }
     
-    extension [Self <: GetRoutingControlStateResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetRoutingControlStateResponse] (val x: Self) extends AnyVal {
       
       inline def setRoutingControlArn(value: Arn): Self = StObject.set(x, "RoutingControlArn", value.asInstanceOf[js.Any])
       
@@ -135,7 +138,8 @@ object clientsRoute53recoveryclusterMod {
       __obj.asInstanceOf[ListRoutingControlsRequest]
     }
     
-    extension [Self <: ListRoutingControlsRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListRoutingControlsRequest] (val x: Self) extends AnyVal {
       
       inline def setControlPanelArn(value: Arn): Self = StObject.set(x, "ControlPanelArn", value.asInstanceOf[js.Any])
       
@@ -170,7 +174,8 @@ object clientsRoute53recoveryclusterMod {
       __obj.asInstanceOf[ListRoutingControlsResponse]
     }
     
-    extension [Self <: ListRoutingControlsResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListRoutingControlsResponse] (val x: Self) extends AnyVal {
       
       inline def setNextToken(value: PageToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
       
@@ -283,7 +288,8 @@ object clientsRoute53recoveryclusterMod {
       __obj.asInstanceOf[RoutingControl]
     }
     
-    extension [Self <: RoutingControl](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RoutingControl] (val x: Self) extends AnyVal {
       
       inline def setControlPanelArn(value: Arn): Self = StObject.set(x, "ControlPanelArn", value.asInstanceOf[js.Any])
       
@@ -339,7 +345,8 @@ object clientsRoute53recoveryclusterMod {
       __obj.asInstanceOf[UpdateRoutingControlStateEntry]
     }
     
-    extension [Self <: UpdateRoutingControlStateEntry](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UpdateRoutingControlStateEntry] (val x: Self) extends AnyVal {
       
       inline def setRoutingControlArn(value: Arn): Self = StObject.set(x, "RoutingControlArn", value.asInstanceOf[js.Any])
       
@@ -371,7 +378,8 @@ object clientsRoute53recoveryclusterMod {
       __obj.asInstanceOf[UpdateRoutingControlStateRequest]
     }
     
-    extension [Self <: UpdateRoutingControlStateRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UpdateRoutingControlStateRequest] (val x: Self) extends AnyVal {
       
       inline def setRoutingControlArn(value: Arn): Self = StObject.set(x, "RoutingControlArn", value.asInstanceOf[js.Any])
       
@@ -406,7 +414,8 @@ object clientsRoute53recoveryclusterMod {
       __obj.asInstanceOf[UpdateRoutingControlStatesRequest]
     }
     
-    extension [Self <: UpdateRoutingControlStatesRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UpdateRoutingControlStatesRequest] (val x: Self) extends AnyVal {
       
       inline def setSafetyRulesToOverride(value: Arns): Self = StObject.set(x, "SafetyRulesToOverride", value.asInstanceOf[js.Any])
       

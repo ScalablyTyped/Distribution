@@ -16,7 +16,8 @@ object FlexGrowProps {
     __obj.asInstanceOf[FlexGrowProps]
   }
   
-  extension [Self <: FlexGrowProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FlexGrowProps] (val x: Self) extends AnyVal {
     
     inline def setFlexGrow(value: ResponsiveValue[FlexGrow]): Self = StObject.set(x, "flexGrow", value.asInstanceOf[js.Any])
     

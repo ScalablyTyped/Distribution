@@ -56,7 +56,8 @@ object mod {
       __obj.asInstanceOf[Account]
     }
     
-    extension [Self <: Account](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Account] (val x: Self) extends AnyVal {
       
       inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
       
@@ -85,7 +86,8 @@ object mod {
       __obj.asInstanceOf[Achievement]
     }
     
-    extension [Self <: Achievement](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Achievement] (val x: Self) extends AnyVal {
       
       inline def setAchieved(value: Boolean): Self = StObject.set(x, "achieved", value.asInstanceOf[js.Any])
       
@@ -124,7 +126,8 @@ object mod {
       __obj.asInstanceOf[CallerOptions]
     }
     
-    extension [Self <: CallerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CallerOptions] (val x: Self) extends AnyVal {
       
       inline def setDefaultPlatform(value: String): Self = StObject.set(x, "defaultPlatform", value.asInstanceOf[js.Any])
       
@@ -157,7 +160,8 @@ object mod {
       __obj.asInstanceOf[CompetitiveRank]
     }
     
-    extension [Self <: CompetitiveRank](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CompetitiveRank] (val x: Self) extends AnyVal {
       
       inline def setDamage(value: Double): Self = StObject.set(x, "damage", value.asInstanceOf[js.Any])
       
@@ -213,7 +217,8 @@ object mod {
       __obj.asInstanceOf[Game]
     }
     
-    extension [Self <: Game](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Game] (val x: Self) extends AnyVal {
       
       inline def setGamesLost(value: Double): Self = StObject.set(x, "gamesLost", value.asInstanceOf[js.Any])
       
@@ -272,7 +277,8 @@ object mod {
       __obj.asInstanceOf[Hero]
     }
     
-    extension [Self <: Hero](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Hero] (val x: Self) extends AnyVal {
       
       inline def setAssists(value: Statistic): Self = StObject.set(x, "assists", value.asInstanceOf[js.Any])
       
@@ -331,7 +337,8 @@ object mod {
       __obj.asInstanceOf[Player]
     }
     
-    extension [Self <: Player](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Player] (val x: Self) extends AnyVal {
       
       inline def setAccounts(value: js.Array[Account]): Self = StObject.set(x, "accounts", value.asInstanceOf[js.Any])
       
@@ -368,7 +375,8 @@ object mod {
       __obj.asInstanceOf[PlayerStats]
     }
     
-    extension [Self <: PlayerStats](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PlayerStats] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -403,7 +411,8 @@ object mod {
       __obj.asInstanceOf[RequestOptions]
     }
     
-    extension [Self <: RequestOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequestOptions] (val x: Self) extends AnyVal {
       
       inline def setBaseURL(value: String): Self = StObject.set(x, "baseURL", value.asInstanceOf[js.Any])
       
@@ -450,7 +459,8 @@ object mod {
       __obj.asInstanceOf[Stats]
     }
     
-    extension [Self <: Stats](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Stats] (val x: Self) extends AnyVal {
       
       inline def setAchievements(value: js.Array[Achievement]): Self = StObject.set(x, "achievements", value.asInstanceOf[js.Any])
       

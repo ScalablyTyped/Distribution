@@ -66,7 +66,8 @@ object TableCellProperties {
     __obj.asInstanceOf[TableCellProperties]
   }
   
-  extension [Self <: TableCellProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TableCellProperties] (val x: Self) extends AnyVal {
     
     inline def setBorder(value: js.Tuple4[Boolean, Boolean, Boolean, Boolean]): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
     

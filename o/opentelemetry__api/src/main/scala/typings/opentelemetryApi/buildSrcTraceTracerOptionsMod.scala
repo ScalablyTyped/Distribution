@@ -20,7 +20,8 @@ object buildSrcTraceTracerOptionsMod {
       __obj.asInstanceOf[TracerOptions]
     }
     
-    extension [Self <: TracerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TracerOptions] (val x: Self) extends AnyVal {
       
       inline def setSchemaUrl(value: String): Self = StObject.set(x, "schemaUrl", value.asInstanceOf[js.Any])
       

@@ -126,7 +126,8 @@ object libDataTransferMod {
       __obj.asInstanceOf[DataTransfer]
     }
     
-    extension [Self <: DataTransfer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DataTransfer] (val x: Self) extends AnyVal {
       
       inline def setGetCount(value: () => Double | Null): Self = StObject.set(x, "getCount", js.Any.fromFunction0(value))
       

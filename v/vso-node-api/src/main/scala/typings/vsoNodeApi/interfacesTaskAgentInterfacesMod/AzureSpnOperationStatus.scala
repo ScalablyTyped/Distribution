@@ -17,7 +17,8 @@ object AzureSpnOperationStatus {
     __obj.asInstanceOf[AzureSpnOperationStatus]
   }
   
-  extension [Self <: AzureSpnOperationStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AzureSpnOperationStatus] (val x: Self) extends AnyVal {
     
     inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     

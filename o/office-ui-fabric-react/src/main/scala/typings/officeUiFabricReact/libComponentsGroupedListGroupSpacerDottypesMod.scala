@@ -42,7 +42,8 @@ object libComponentsGroupedListGroupSpacerDottypesMod {
       __obj.asInstanceOf[IGroupSpacerProps]
     }
     
-    extension [Self <: IGroupSpacerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IGroupSpacerProps] (val x: Self) extends AnyVal {
       
       inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       
@@ -80,7 +81,8 @@ object libComponentsGroupedListGroupSpacerDottypesMod {
       __obj.asInstanceOf[IGroupSpacerStyleProps]
     }
     
-    extension [Self <: IGroupSpacerStyleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IGroupSpacerStyleProps] (val x: Self) extends AnyVal {
       
       inline def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       
@@ -101,7 +103,8 @@ object libComponentsGroupedListGroupSpacerDottypesMod {
       __obj.asInstanceOf[IGroupSpacerStyles]
     }
     
-    extension [Self <: IGroupSpacerStyles](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IGroupSpacerStyles] (val x: Self) extends AnyVal {
       
       inline def setRoot(value: IStyle): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
       

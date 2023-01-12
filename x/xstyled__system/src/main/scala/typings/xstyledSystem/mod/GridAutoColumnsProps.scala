@@ -16,7 +16,8 @@ object GridAutoColumnsProps {
     __obj.asInstanceOf[GridAutoColumnsProps[TLength]]
   }
   
-  extension [Self <: GridAutoColumnsProps[?], TLength](x: Self & GridAutoColumnsProps[TLength]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GridAutoColumnsProps[?], TLength] (val x: Self & GridAutoColumnsProps[TLength]) extends AnyVal {
     
     inline def setGridAutoColumns(value: ResponsiveValue[GridAutoColumns[TLength]]): Self = StObject.set(x, "gridAutoColumns", value.asInstanceOf[js.Any])
     

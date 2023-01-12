@@ -50,7 +50,8 @@ object typesUseKeyboardClickPolyfillMod {
       __obj.asInstanceOf[Options[E]]
     }
     
-    extension [Self <: Options[?], E /* <: HTMLElement */](x: Self & Options[E]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options[?], E /* <: HTMLElement */] (val x: Self & Options[E]) extends AnyVal {
       
       inline def setDisableEnterClick(value: Boolean): Self = StObject.set(x, "disableEnterClick", value.asInstanceOf[js.Any])
       

@@ -20,7 +20,8 @@ object ReasonExclude {
     __obj.asInstanceOf[ReasonExclude]
   }
   
-  extension [Self <: ReasonExclude](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReasonExclude] (val x: Self) extends AnyVal {
     
     inline def setReason(value: Exclude[RejectReason, typings.chainsafeLibp2pGossipsub.distSrcTypesMod.RejectReason.Error]): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
   }

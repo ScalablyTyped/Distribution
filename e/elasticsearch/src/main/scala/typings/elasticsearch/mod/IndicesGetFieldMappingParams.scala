@@ -33,7 +33,8 @@ object IndicesGetFieldMappingParams {
     __obj.asInstanceOf[IndicesGetFieldMappingParams]
   }
   
-  extension [Self <: IndicesGetFieldMappingParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndicesGetFieldMappingParams] (val x: Self) extends AnyVal {
     
     inline def setAllowNoIndices(value: Boolean): Self = StObject.set(x, "allowNoIndices", value.asInstanceOf[js.Any])
     

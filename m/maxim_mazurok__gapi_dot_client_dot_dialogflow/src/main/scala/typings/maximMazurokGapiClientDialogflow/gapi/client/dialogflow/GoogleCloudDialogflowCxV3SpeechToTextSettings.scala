@@ -16,7 +16,8 @@ object GoogleCloudDialogflowCxV3SpeechToTextSettings {
     __obj.asInstanceOf[GoogleCloudDialogflowCxV3SpeechToTextSettings]
   }
   
-  extension [Self <: GoogleCloudDialogflowCxV3SpeechToTextSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDialogflowCxV3SpeechToTextSettings] (val x: Self) extends AnyVal {
     
     inline def setEnableSpeechAdaptation(value: Boolean): Self = StObject.set(x, "enableSpeechAdaptation", value.asInstanceOf[js.Any])
     

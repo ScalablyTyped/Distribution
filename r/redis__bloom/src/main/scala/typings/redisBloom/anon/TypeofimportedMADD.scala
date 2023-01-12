@@ -23,7 +23,8 @@ object TypeofimportedMADD {
     __obj.asInstanceOf[TypeofimportedMADD]
   }
   
-  extension [Self <: TypeofimportedMADD](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofimportedMADD] (val x: Self) extends AnyVal {
     
     inline def setFIRST_KEY_INDEX(value: /* 1 */ Double): Self = StObject.set(x, "FIRST_KEY_INDEX", value.asInstanceOf[js.Any])
     

@@ -16,7 +16,8 @@ object ZerosLikeInputs {
     __obj.asInstanceOf[ZerosLikeInputs]
   }
   
-  extension [Self <: ZerosLikeInputs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ZerosLikeInputs] (val x: Self) extends AnyVal {
     
     inline def setX(value: scala.Any): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     

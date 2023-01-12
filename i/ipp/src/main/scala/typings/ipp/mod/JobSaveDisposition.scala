@@ -17,7 +17,8 @@ object JobSaveDisposition {
     __obj.asInstanceOf[JobSaveDisposition]
   }
   
-  extension [Self <: JobSaveDisposition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JobSaveDisposition] (val x: Self) extends AnyVal {
     
     inline def `setSave-disposition`(value: SaveDisposition): Self = StObject.set(x, "save-disposition", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object anon {
       __obj.asInstanceOf[Additions]
     }
     
-    extension [Self <: Additions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Additions] (val x: Self) extends AnyVal {
       
       inline def setAdditions(value: Double): Self = StObject.set(x, "additions", value.asInstanceOf[js.Any])
       
@@ -48,7 +49,8 @@ object anon {
       __obj.asInstanceOf[Admin]
     }
     
-    extension [Self <: Admin](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Admin] (val x: Self) extends AnyVal {
       
       inline def setAdmin(value: Boolean): Self = StObject.set(x, "admin", value.asInstanceOf[js.Any])
       
@@ -91,7 +93,8 @@ object anon {
       __obj.asInstanceOf[Bloburl]
     }
     
-    extension [Self <: Bloburl](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Bloburl] (val x: Self) extends AnyVal {
       
       inline def setAdditions(value: Double): Self = StObject.set(x, "additions", value.asInstanceOf[js.Any])
       
@@ -124,7 +127,8 @@ object anon {
       __obj.asInstanceOf[Body]
     }
     
-    extension [Self <: Body](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Body] (val x: Self) extends AnyVal {
       
       inline def setBody(value: From): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
@@ -149,7 +153,8 @@ object anon {
       __obj.asInstanceOf[Collaborators]
     }
     
-    extension [Self <: Collaborators](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Collaborators] (val x: Self) extends AnyVal {
       
       inline def setCollaborators(value: Double): Self = StObject.set(x, "collaborators", value.asInstanceOf[js.Any])
       
@@ -172,7 +177,8 @@ object anon {
       __obj.asInstanceOf[From]
     }
     
-    extension [Self <: From](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: From] (val x: Self) extends AnyVal {
       
       inline def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     }
@@ -191,7 +197,8 @@ object anon {
       __obj.asInstanceOf[Html]
     }
     
-    extension [Self <: Html](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Html] (val x: Self) extends AnyVal {
       
       inline def setHtml(value: String): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
       
@@ -216,7 +223,8 @@ object anon {
       __obj.asInstanceOf[Name]
     }
     
-    extension [Self <: Name](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Name] (val x: Self) extends AnyVal {
       
       inline def setCollaborators(value: Double): Self = StObject.set(x, "collaborators", value.asInstanceOf[js.Any])
       
@@ -245,7 +253,8 @@ object anon {
       __obj.asInstanceOf[Payload]
     }
     
-    extension [Self <: Payload](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Payload] (val x: Self) extends AnyVal {
       
       inline def setPayload(value: String): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
       

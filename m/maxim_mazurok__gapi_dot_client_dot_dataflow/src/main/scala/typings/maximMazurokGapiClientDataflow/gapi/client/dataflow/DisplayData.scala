@@ -55,7 +55,8 @@ object DisplayData {
     __obj.asInstanceOf[DisplayData]
   }
   
-  extension [Self <: DisplayData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisplayData] (val x: Self) extends AnyVal {
     
     inline def setBoolValue(value: Boolean): Self = StObject.set(x, "boolValue", value.asInstanceOf[js.Any])
     

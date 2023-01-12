@@ -96,7 +96,8 @@ object distWatchServiceMod {
       __obj.asInstanceOf[INodeWatchServiceOptions]
     }
     
-    extension [Self <: INodeWatchServiceOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: INodeWatchServiceOptions] (val x: Self) extends AnyVal {
       
       inline def setDebounceWait(value: Double): Self = StObject.set(x, "debounceWait", value.asInstanceOf[js.Any])
       

@@ -18,7 +18,8 @@ object DeleteSipRuleRequest {
     __obj.asInstanceOf[DeleteSipRuleRequest]
   }
   
-  extension [Self <: DeleteSipRuleRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteSipRuleRequest] (val x: Self) extends AnyVal {
     
     inline def setSipRuleId(value: NonEmptyString): Self = StObject.set(x, "SipRuleId", value.asInstanceOf[js.Any])
   }

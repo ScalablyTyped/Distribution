@@ -172,7 +172,8 @@ object libSessionSessionMod {
       __obj.asInstanceOf[IModel]
     }
     
-    extension [Self <: IModel](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IModel] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -431,7 +432,8 @@ object libSessionSessionMod {
         __obj.asInstanceOf[IOptions]
       }
       
-      extension [Self <: IOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
         
         inline def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
         
@@ -457,7 +459,8 @@ object libSessionSessionMod {
       }
     }
     
-    extension [Self <: ISessionConnection](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISessionConnection] (val x: Self) extends AnyVal {
       
       inline def setAnyMessage(value: ISignal[ISessionConnection, IAnyMessageArgs]): Self = StObject.set(x, "anyMessage", value.asInstanceOf[js.Any])
       
@@ -527,7 +530,8 @@ object libSessionSessionMod {
       __obj.asInstanceOf[ISessionOptions]
     }
     
-    extension [Self <: ISessionOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISessionOptions] (val x: Self) extends AnyVal {
       
       inline def setKernel(value: PartialPickIModelname): Self = StObject.set(x, "kernel", value.asInstanceOf[js.Any])
       

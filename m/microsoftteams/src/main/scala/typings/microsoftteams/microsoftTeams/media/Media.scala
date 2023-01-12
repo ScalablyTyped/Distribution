@@ -45,7 +45,8 @@ object Media {
     __obj.asInstanceOf[Media]
   }
   
-  extension [Self <: Media](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Media] (val x: Self) extends AnyVal {
     
     inline def setGetMedia(value: js.Function2[/* error */ SdkError, /* blob */ Blob, Unit] => Unit): Self = StObject.set(x, "getMedia", js.Any.fromFunction1(value))
     

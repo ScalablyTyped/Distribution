@@ -28,7 +28,8 @@ object GetV2LoggingOptionsResponse {
     __obj.asInstanceOf[GetV2LoggingOptionsResponse]
   }
   
-  extension [Self <: GetV2LoggingOptionsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetV2LoggingOptionsResponse] (val x: Self) extends AnyVal {
     
     inline def setDefaultLogLevel(value: LogLevel): Self = StObject.set(x, "defaultLogLevel", value.asInstanceOf[js.Any])
     

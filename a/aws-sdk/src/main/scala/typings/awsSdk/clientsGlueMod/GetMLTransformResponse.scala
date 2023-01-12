@@ -108,7 +108,8 @@ object GetMLTransformResponse {
     __obj.asInstanceOf[GetMLTransformResponse]
   }
   
-  extension [Self <: GetMLTransformResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetMLTransformResponse] (val x: Self) extends AnyVal {
     
     inline def setCreatedOn(value: js.Date): Self = StObject.set(x, "CreatedOn", value.asInstanceOf[js.Any])
     

@@ -55,7 +55,8 @@ object Nfcrwerror {
     __obj.asInstanceOf[Nfcrwerror]
   }
   
-  extension [Self <: Nfcrwerror](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Nfcrwerror] (val x: Self) extends AnyVal {
     
     inline def setErrCode(value: Double): Self = StObject.set(x, "errCode", value.asInstanceOf[js.Any])
     

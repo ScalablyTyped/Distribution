@@ -21,7 +21,8 @@ object QueryDslParentIdQuery {
     __obj.asInstanceOf[QueryDslParentIdQuery]
   }
   
-  extension [Self <: QueryDslParentIdQuery](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryDslParentIdQuery] (val x: Self) extends AnyVal {
     
     inline def setId(value: Id): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

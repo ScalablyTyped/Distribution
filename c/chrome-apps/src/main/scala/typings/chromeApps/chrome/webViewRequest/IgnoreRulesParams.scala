@@ -30,7 +30,8 @@ object IgnoreRulesParams {
     __obj.asInstanceOf[IgnoreRulesParams]
   }
   
-  extension [Self <: IgnoreRulesParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgnoreRulesParams] (val x: Self) extends AnyVal {
     
     inline def setHasTag(value: String): Self = StObject.set(x, "hasTag", value.asInstanceOf[js.Any])
     

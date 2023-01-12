@@ -15,7 +15,8 @@ object ISideNavigationItem {
     __obj.asInstanceOf[ISideNavigationItem]
   }
   
-  extension [Self <: ISideNavigationItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISideNavigationItem] (val x: Self) extends AnyVal {
     
     inline def set__implements__sap_ui_webc_fiori_ISideNavigationItem(value: Boolean): Self = StObject.set(x, "__implements__sap_ui_webc_fiori_ISideNavigationItem", value.asInstanceOf[js.Any])
   }

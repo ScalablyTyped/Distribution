@@ -759,7 +759,8 @@ object AnnotationArcBorderColor {
     __obj.asInstanceOf[AnnotationArcBorderColor]
   }
   
-  extension [Self <: AnnotationArcBorderColor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnnotationArcBorderColor] (val x: Self) extends AnyVal {
     
     inline def setAnnotationArcBorder(value: Double): Self = StObject.set(x, "annotationArcBorder", value.asInstanceOf[js.Any])
     

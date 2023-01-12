@@ -48,7 +48,8 @@ object TransitGatewayRouteTable {
     __obj.asInstanceOf[TransitGatewayRouteTable]
   }
   
-  extension [Self <: TransitGatewayRouteTable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransitGatewayRouteTable] (val x: Self) extends AnyVal {
     
     inline def setCreationTime(value: js.Date): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     

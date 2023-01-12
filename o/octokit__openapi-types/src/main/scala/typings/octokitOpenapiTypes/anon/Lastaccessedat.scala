@@ -40,7 +40,8 @@ object Lastaccessedat {
     __obj.asInstanceOf[Lastaccessedat]
   }
   
-  extension [Self <: Lastaccessedat](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Lastaccessedat] (val x: Self) extends AnyVal {
     
     inline def setCreated_at(value: String): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object MVCxClientSchedulerToolTipDisplayingEventArgs {
     __obj.asInstanceOf[MVCxClientSchedulerToolTipDisplayingEventArgs]
   }
   
-  extension [Self <: MVCxClientSchedulerToolTipDisplayingEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MVCxClientSchedulerToolTipDisplayingEventArgs] (val x: Self) extends AnyVal {
     
     inline def setData(value: ASPxClientSchedulerToolTipData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

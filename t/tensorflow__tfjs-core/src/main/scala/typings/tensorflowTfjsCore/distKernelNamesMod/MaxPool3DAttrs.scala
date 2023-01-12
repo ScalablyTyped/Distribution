@@ -35,7 +35,8 @@ object MaxPool3DAttrs {
     __obj.asInstanceOf[MaxPool3DAttrs]
   }
   
-  extension [Self <: MaxPool3DAttrs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MaxPool3DAttrs] (val x: Self) extends AnyVal {
     
     inline def setDataFormat(value: NDHWC | NCDHW): Self = StObject.set(x, "dataFormat", value.asInstanceOf[js.Any])
     

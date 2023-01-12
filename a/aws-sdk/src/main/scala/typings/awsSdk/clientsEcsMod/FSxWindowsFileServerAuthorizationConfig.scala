@@ -23,7 +23,8 @@ object FSxWindowsFileServerAuthorizationConfig {
     __obj.asInstanceOf[FSxWindowsFileServerAuthorizationConfig]
   }
   
-  extension [Self <: FSxWindowsFileServerAuthorizationConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FSxWindowsFileServerAuthorizationConfig] (val x: Self) extends AnyVal {
     
     inline def setCredentialsParameter(value: String): Self = StObject.set(x, "credentialsParameter", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object LambdaExecutorConfiguration {
     __obj.asInstanceOf[LambdaExecutorConfiguration]
   }
   
-  extension [Self <: LambdaExecutorConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LambdaExecutorConfiguration] (val x: Self) extends AnyVal {
     
     inline def setLambdaFunctionArn(value: LambdaFunctionArn): Self = StObject.set(x, "lambdaFunctionArn", value.asInstanceOf[js.Any])
   }

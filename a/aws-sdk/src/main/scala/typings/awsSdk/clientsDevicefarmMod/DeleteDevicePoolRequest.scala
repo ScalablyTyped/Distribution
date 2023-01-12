@@ -18,7 +18,8 @@ object DeleteDevicePoolRequest {
     __obj.asInstanceOf[DeleteDevicePoolRequest]
   }
   
-  extension [Self <: DeleteDevicePoolRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteDevicePoolRequest] (val x: Self) extends AnyVal {
     
     inline def setArn(value: AmazonResourceName): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
   }

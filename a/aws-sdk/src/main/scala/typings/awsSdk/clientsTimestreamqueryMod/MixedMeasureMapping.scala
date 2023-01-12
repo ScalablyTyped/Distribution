@@ -38,7 +38,8 @@ object MixedMeasureMapping {
     __obj.asInstanceOf[MixedMeasureMapping]
   }
   
-  extension [Self <: MixedMeasureMapping](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MixedMeasureMapping] (val x: Self) extends AnyVal {
     
     inline def setMeasureName(value: SchemaName): Self = StObject.set(x, "MeasureName", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object Operators {
     __obj.asInstanceOf[Operators]
   }
   
-  extension [Self <: Operators](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Operators] (val x: Self) extends AnyVal {
     
     inline def setConvert(value: String => Any): Self = StObject.set(x, "convert", js.Any.fromFunction1(value))
     

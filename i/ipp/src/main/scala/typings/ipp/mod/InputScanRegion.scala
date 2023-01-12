@@ -21,7 +21,8 @@ object InputScanRegion {
     __obj.asInstanceOf[InputScanRegion]
   }
   
-  extension [Self <: InputScanRegion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InputScanRegion] (val x: Self) extends AnyVal {
     
     inline def `setX-dimension`(value: String): Self = StObject.set(x, "x-dimension", value.asInstanceOf[js.Any])
     

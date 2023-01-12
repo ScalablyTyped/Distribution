@@ -23,7 +23,8 @@ object SetIdleOverrideRequest {
     __obj.asInstanceOf[SetIdleOverrideRequest]
   }
   
-  extension [Self <: SetIdleOverrideRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetIdleOverrideRequest] (val x: Self) extends AnyVal {
     
     inline def setIsScreenUnlocked(value: Boolean): Self = StObject.set(x, "isScreenUnlocked", value.asInstanceOf[js.Any])
     

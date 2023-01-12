@@ -25,7 +25,8 @@ object TestScriptRuleset {
     __obj.asInstanceOf[TestScriptRuleset]
   }
   
-  extension [Self <: TestScriptRuleset](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TestScriptRuleset] (val x: Self) extends AnyVal {
     
     inline def setResource(value: Reference): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     

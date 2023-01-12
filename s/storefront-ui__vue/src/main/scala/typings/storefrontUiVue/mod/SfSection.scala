@@ -25,7 +25,8 @@ object SfSection extends Shortcut {
       __obj.asInstanceOf[Constructor]
     }
     
-    extension [Self <: Constructor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Constructor] (val x: Self) extends AnyVal {
       
       inline def setData(value: () => Data): Self = StObject.set(x, "data", js.Any.fromFunction0(value))
       
@@ -44,7 +45,8 @@ object SfSection extends Shortcut {
       __obj.asInstanceOf[Data]
     }
     
-    extension [Self <: Data](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Data] (val x: Self) extends AnyVal {
       
       inline def setHasUnderlinedModifier(value: Boolean): Self = StObject.set(x, "hasUnderlinedModifier", value.asInstanceOf[js.Any])
     }
@@ -65,7 +67,8 @@ object SfSection extends Shortcut {
       __obj.asInstanceOf[Props]
     }
     
-    extension [Self <: Props](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
       
       inline def setLevelHeading(value: Double): Self = StObject.set(x, "levelHeading", value.asInstanceOf[js.Any])
       

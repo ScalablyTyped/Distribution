@@ -22,7 +22,8 @@ object AuthenticationExtensionsClientInputs {
     __obj.asInstanceOf[AuthenticationExtensionsClientInputs]
   }
   
-  extension [Self <: AuthenticationExtensionsClientInputs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AuthenticationExtensionsClientInputs] (val x: Self) extends AnyVal {
     
     inline def setAppid(value: java.lang.String): Self = StObject.set(x, "appid", value.asInstanceOf[js.Any])
     

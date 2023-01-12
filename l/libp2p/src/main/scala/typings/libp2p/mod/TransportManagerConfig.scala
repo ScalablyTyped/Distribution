@@ -16,7 +16,8 @@ object TransportManagerConfig {
     __obj.asInstanceOf[TransportManagerConfig]
   }
   
-  extension [Self <: TransportManagerConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransportManagerConfig] (val x: Self) extends AnyVal {
     
     inline def setFaultTolerance(value: FaultTolerance): Self = StObject.set(x, "faultTolerance", value.asInstanceOf[js.Any])
     

@@ -341,7 +341,8 @@ object AliasesCSSProperties {
     __obj.asInstanceOf[AliasesCSSProperties]
   }
   
-  extension [Self <: AliasesCSSProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AliasesCSSProperties] (val x: Self) extends AnyVal {
     
     inline def setBg(value: BackgroundColor | js.Array[NonNullable[js.UndefOr[BackgroundColor]]]): Self = StObject.set(x, "bg", value.asInstanceOf[js.Any])
     

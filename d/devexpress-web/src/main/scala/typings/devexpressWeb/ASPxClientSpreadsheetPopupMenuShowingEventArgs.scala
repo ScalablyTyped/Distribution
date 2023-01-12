@@ -32,7 +32,8 @@ object ASPxClientSpreadsheetPopupMenuShowingEventArgs {
     __obj.asInstanceOf[ASPxClientSpreadsheetPopupMenuShowingEventArgs]
   }
   
-  extension [Self <: ASPxClientSpreadsheetPopupMenuShowingEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientSpreadsheetPopupMenuShowingEventArgs] (val x: Self) extends AnyVal {
     
     inline def setMenuItems(value: ASPxClientSpreadsheetPopupMenuItemCollection): Self = StObject.set(x, "menuItems", value.asInstanceOf[js.Any])
     

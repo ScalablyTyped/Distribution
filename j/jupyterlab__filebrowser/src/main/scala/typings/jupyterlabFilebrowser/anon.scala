@@ -20,7 +20,8 @@ object anon {
       __obj.asInstanceOf[PartialIScore]
     }
     
-    extension [Self <: PartialIScore](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialIScore] (val x: Self) extends AnyVal {
       
       inline def setIndices(value: js.Array[Double]): Self = StObject.set(x, "indices", value.asInstanceOf[js.Any])
       

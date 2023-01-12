@@ -20,7 +20,8 @@ object ParserBlock {
     __obj.asInstanceOf[ParserBlock]
   }
   
-  extension [Self <: ParserBlock](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParserBlock] (val x: Self) extends AnyVal {
     
     inline def setParse(value: (String, Options, Env, js.Array[Token]) => Unit): Self = StObject.set(x, "parse", js.Any.fromFunction4(value))
     

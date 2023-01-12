@@ -23,7 +23,8 @@ object PivotGroupSortValueBucket {
     __obj.asInstanceOf[PivotGroupSortValueBucket]
   }
   
-  extension [Self <: PivotGroupSortValueBucket](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PivotGroupSortValueBucket] (val x: Self) extends AnyVal {
     
     inline def setBuckets(value: js.Array[ExtendedValue]): Self = StObject.set(x, "buckets", value.asInstanceOf[js.Any])
     

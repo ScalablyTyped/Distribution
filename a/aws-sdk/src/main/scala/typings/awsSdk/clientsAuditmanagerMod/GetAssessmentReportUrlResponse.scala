@@ -15,7 +15,8 @@ object GetAssessmentReportUrlResponse {
     __obj.asInstanceOf[GetAssessmentReportUrlResponse]
   }
   
-  extension [Self <: GetAssessmentReportUrlResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetAssessmentReportUrlResponse] (val x: Self) extends AnyVal {
     
     inline def setPreSignedUrl(value: URL): Self = StObject.set(x, "preSignedUrl", value.asInstanceOf[js.Any])
     

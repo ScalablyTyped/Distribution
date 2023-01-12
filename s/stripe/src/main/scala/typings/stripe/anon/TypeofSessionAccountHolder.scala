@@ -15,7 +15,8 @@ object TypeofSessionAccountHolder {
     __obj.asInstanceOf[TypeofSessionAccountHolder]
   }
   
-  extension [Self <: TypeofSessionAccountHolder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofSessionAccountHolder] (val x: Self) extends AnyVal {
     
     inline def setAccountHolder(value: Any): Self = StObject.set(x, "AccountHolder", value.asInstanceOf[js.Any])
   }

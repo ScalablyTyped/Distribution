@@ -23,7 +23,8 @@ object ASPxClientPopupWindowPinnedChangedEventArgs {
     __obj.asInstanceOf[ASPxClientPopupWindowPinnedChangedEventArgs]
   }
   
-  extension [Self <: ASPxClientPopupWindowPinnedChangedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientPopupWindowPinnedChangedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setPinned(value: Boolean): Self = StObject.set(x, "pinned", value.asInstanceOf[js.Any])
   }

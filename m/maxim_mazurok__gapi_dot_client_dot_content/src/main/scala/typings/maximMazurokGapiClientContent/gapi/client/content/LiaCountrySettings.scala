@@ -34,7 +34,8 @@ object LiaCountrySettings {
     __obj.asInstanceOf[LiaCountrySettings]
   }
   
-  extension [Self <: LiaCountrySettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LiaCountrySettings] (val x: Self) extends AnyVal {
     
     inline def setAbout(value: LiaAboutPageSettings): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
     

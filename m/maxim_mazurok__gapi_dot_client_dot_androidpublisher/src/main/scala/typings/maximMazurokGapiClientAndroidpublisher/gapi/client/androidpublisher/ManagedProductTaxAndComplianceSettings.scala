@@ -24,7 +24,8 @@ object ManagedProductTaxAndComplianceSettings {
     __obj.asInstanceOf[ManagedProductTaxAndComplianceSettings]
   }
   
-  extension [Self <: ManagedProductTaxAndComplianceSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ManagedProductTaxAndComplianceSettings] (val x: Self) extends AnyVal {
     
     inline def setEeaWithdrawalRightType(value: String): Self = StObject.set(x, "eeaWithdrawalRightType", value.asInstanceOf[js.Any])
     

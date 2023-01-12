@@ -21,7 +21,8 @@ object PostResponseDataTo {
     __obj.asInstanceOf[PostResponseDataTo]
   }
   
-  extension [Self <: PostResponseDataTo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PostResponseDataTo] (val x: Self) extends AnyVal {
     
     inline def setEmail(value: String): Self = StObject.set(x, "Email", value.asInstanceOf[js.Any])
     

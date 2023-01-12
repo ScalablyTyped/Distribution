@@ -36,7 +36,8 @@ object CacheStorage {
       __obj.asInstanceOf[Cache]
     }
     
-    extension [Self <: Cache](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Cache] (val x: Self) extends AnyVal {
       
       inline def setCacheId(value: CacheId): Self = StObject.set(x, "cacheId", value.asInstanceOf[js.Any])
       
@@ -64,7 +65,8 @@ object CacheStorage {
       __obj.asInstanceOf[CachedResponse]
     }
     
-    extension [Self <: CachedResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CachedResponse] (val x: Self) extends AnyVal {
       
       inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     }
@@ -152,7 +154,8 @@ object CacheStorage {
       __obj.asInstanceOf[DataEntry]
     }
     
-    extension [Self <: DataEntry](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DataEntry] (val x: Self) extends AnyVal {
       
       inline def setRequestHeaders(value: js.Array[Header]): Self = StObject.set(x, "requestHeaders", value.asInstanceOf[js.Any])
       
@@ -190,7 +193,8 @@ object CacheStorage {
       __obj.asInstanceOf[DeleteCacheRequest]
     }
     
-    extension [Self <: DeleteCacheRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeleteCacheRequest] (val x: Self) extends AnyVal {
       
       inline def setCacheId(value: CacheId): Self = StObject.set(x, "cacheId", value.asInstanceOf[js.Any])
     }
@@ -215,7 +219,8 @@ object CacheStorage {
       __obj.asInstanceOf[DeleteEntryRequest]
     }
     
-    extension [Self <: DeleteEntryRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeleteEntryRequest] (val x: Self) extends AnyVal {
       
       inline def setCacheId(value: CacheId): Self = StObject.set(x, "cacheId", value.asInstanceOf[js.Any])
       
@@ -236,7 +241,8 @@ object CacheStorage {
       __obj.asInstanceOf[Header]
     }
     
-    extension [Self <: Header](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Header] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -258,7 +264,8 @@ object CacheStorage {
       __obj.asInstanceOf[RequestCacheNamesRequest]
     }
     
-    extension [Self <: RequestCacheNamesRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequestCacheNamesRequest] (val x: Self) extends AnyVal {
       
       inline def setSecurityOrigin(value: String): Self = StObject.set(x, "securityOrigin", value.asInstanceOf[js.Any])
     }
@@ -278,7 +285,8 @@ object CacheStorage {
       __obj.asInstanceOf[RequestCacheNamesResponse]
     }
     
-    extension [Self <: RequestCacheNamesResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequestCacheNamesResponse] (val x: Self) extends AnyVal {
       
       inline def setCaches(value: js.Array[Cache]): Self = StObject.set(x, "caches", value.asInstanceOf[js.Any])
       
@@ -310,7 +318,8 @@ object CacheStorage {
       __obj.asInstanceOf[RequestCachedResponseRequest]
     }
     
-    extension [Self <: RequestCachedResponseRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequestCachedResponseRequest] (val x: Self) extends AnyVal {
       
       inline def setCacheId(value: CacheId): Self = StObject.set(x, "cacheId", value.asInstanceOf[js.Any])
       
@@ -336,7 +345,8 @@ object CacheStorage {
       __obj.asInstanceOf[RequestCachedResponseResponse]
     }
     
-    extension [Self <: RequestCachedResponseResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequestCachedResponseResponse] (val x: Self) extends AnyVal {
       
       inline def setResponse(value: CachedResponse): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
     }
@@ -371,7 +381,8 @@ object CacheStorage {
       __obj.asInstanceOf[RequestEntriesRequest]
     }
     
-    extension [Self <: RequestEntriesRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequestEntriesRequest] (val x: Self) extends AnyVal {
       
       inline def setCacheId(value: CacheId): Self = StObject.set(x, "cacheId", value.asInstanceOf[js.Any])
       
@@ -409,7 +420,8 @@ object CacheStorage {
       __obj.asInstanceOf[RequestEntriesResponse]
     }
     
-    extension [Self <: RequestEntriesResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequestEntriesResponse] (val x: Self) extends AnyVal {
       
       inline def setCacheDataEntries(value: js.Array[DataEntry]): Self = StObject.set(x, "cacheDataEntries", value.asInstanceOf[js.Any])
       

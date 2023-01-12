@@ -23,7 +23,8 @@ object GetActivityTaskOutput {
     __obj.asInstanceOf[GetActivityTaskOutput]
   }
   
-  extension [Self <: GetActivityTaskOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetActivityTaskOutput] (val x: Self) extends AnyVal {
     
     inline def setInput(value: SensitiveDataJobInput): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
     

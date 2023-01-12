@@ -90,7 +90,8 @@ object MeasureProperties {
     __obj.asInstanceOf[MeasureProperties]
   }
   
-  extension [Self <: MeasureProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MeasureProperties] (val x: Self) extends AnyVal {
     
     inline def setMeasureBelowReferenceEdge(value: Boolean): Self = StObject.set(x, "MeasureBelowReferenceEdge", value.asInstanceOf[js.Any])
     

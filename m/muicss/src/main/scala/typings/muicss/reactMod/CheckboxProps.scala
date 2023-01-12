@@ -34,7 +34,8 @@ object CheckboxProps {
     __obj.asInstanceOf[CheckboxProps]
   }
   
-  extension [Self <: CheckboxProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CheckboxProps] (val x: Self) extends AnyVal {
     
     inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
     

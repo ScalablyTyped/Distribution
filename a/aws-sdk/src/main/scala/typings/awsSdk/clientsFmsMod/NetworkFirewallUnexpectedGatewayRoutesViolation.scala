@@ -33,7 +33,8 @@ object NetworkFirewallUnexpectedGatewayRoutesViolation {
     __obj.asInstanceOf[NetworkFirewallUnexpectedGatewayRoutesViolation]
   }
   
-  extension [Self <: NetworkFirewallUnexpectedGatewayRoutesViolation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NetworkFirewallUnexpectedGatewayRoutesViolation] (val x: Self) extends AnyVal {
     
     inline def setGatewayId(value: ResourceId): Self = StObject.set(x, "GatewayId", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object Bezier {
     __obj.asInstanceOf[Bezier]
   }
   
-  extension [Self <: Bezier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Bezier] (val x: Self) extends AnyVal {
     
     inline def setBezier(value: js.Array[Double]): Self = StObject.set(x, "bezier", value.asInstanceOf[js.Any])
     

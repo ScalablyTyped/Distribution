@@ -42,7 +42,8 @@ object CIMPictureStroke {
     __obj.asInstanceOf[CIMPictureStroke]
   }
   
-  extension [Self <: CIMPictureStroke](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CIMPictureStroke] (val x: Self) extends AnyVal {
     
     inline def setColorSubstitutions(value: js.Array[CIMColorSubstitution]): Self = StObject.set(x, "colorSubstitutions", value.asInstanceOf[js.Any])
     

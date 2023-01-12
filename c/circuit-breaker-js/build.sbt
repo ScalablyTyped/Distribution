@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "circuit-breaker-js"
-version := "0.0-dt-20211202Z-d3e0ec"
+version := "0.0-dt-20211202Z-989b60"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

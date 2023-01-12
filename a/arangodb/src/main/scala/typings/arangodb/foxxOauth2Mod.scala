@@ -47,7 +47,8 @@ object foxxOauth2Mod {
       __obj.asInstanceOf[OAuth2Options]
     }
     
-    extension [Self <: OAuth2Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OAuth2Options] (val x: Self) extends AnyVal {
       
       inline def setActiveUserEndpoint(value: String): Self = StObject.set(x, "activeUserEndpoint", value.asInstanceOf[js.Any])
       

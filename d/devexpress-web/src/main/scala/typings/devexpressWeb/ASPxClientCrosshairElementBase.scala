@@ -47,7 +47,8 @@ object ASPxClientCrosshairElementBase {
     __obj.asInstanceOf[ASPxClientCrosshairElementBase]
   }
   
-  extension [Self <: ASPxClientCrosshairElementBase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientCrosshairElementBase] (val x: Self) extends AnyVal {
     
     inline def setAxisLabelElement(value: ASPxClientCrosshairAxisLabelElement): Self = StObject.set(x, "AxisLabelElement", value.asInstanceOf[js.Any])
     

@@ -58,7 +58,8 @@ object BuffParameter {
     __obj.asInstanceOf[BuffParameter]
   }
   
-  extension [Self <: BuffParameter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BuffParameter] (val x: Self) extends AnyVal {
     
     inline def setAdd(value: Boolean): Self = StObject.set(x, "add", value.asInstanceOf[js.Any])
     

@@ -33,7 +33,8 @@ object IosLobApp {
     __obj.asInstanceOf[IosLobApp]
   }
   
-  extension [Self <: IosLobApp](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IosLobApp] (val x: Self) extends AnyVal {
     
     inline def setApplicableDeviceType(value: IosDeviceType): Self = StObject.set(x, "applicableDeviceType", value.asInstanceOf[js.Any])
     

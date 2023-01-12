@@ -36,7 +36,8 @@ object CurrentDragComponentInfo {
     __obj.asInstanceOf[CurrentDragComponentInfo]
   }
   
-  extension [Self <: CurrentDragComponentInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CurrentDragComponentInfo] (val x: Self) extends AnyVal {
     
     inline def setComboInfo(value: Source): Self = StObject.set(x, "comboInfo", value.asInstanceOf[js.Any])
     

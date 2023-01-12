@@ -69,7 +69,8 @@ object ContactEquation {
     __obj.asInstanceOf[ContactEquation]
   }
   
-  extension [Self <: ContactEquation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContactEquation] (val x: Self) extends AnyVal {
     
     inline def setBiInvInertiaTimesRixn(value: Vec3): Self = StObject.set(x, "biInvInertiaTimesRixn", value.asInstanceOf[js.Any])
     

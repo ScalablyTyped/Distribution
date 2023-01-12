@@ -36,7 +36,8 @@ object ApplicationUpdateData {
     __obj.asInstanceOf[ApplicationUpdateData]
   }
   
-  extension [Self <: ApplicationUpdateData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApplicationUpdateData] (val x: Self) extends AnyVal {
     
     inline def setCalculationMode(value: CalculationMode | Automatic | AutomaticExceptTables | Manual): Self = StObject.set(x, "calculationMode", value.asInstanceOf[js.Any])
     

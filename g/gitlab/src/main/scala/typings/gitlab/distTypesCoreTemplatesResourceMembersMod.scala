@@ -55,7 +55,8 @@ object distTypesCoreTemplatesResourceMembersMod {
       __obj.asInstanceOf[IncludeInherited]
     }
     
-    extension [Self <: IncludeInherited](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IncludeInherited] (val x: Self) extends AnyVal {
       
       inline def setIncludeInherited(value: Boolean): Self = StObject.set(x, "includeInherited", value.asInstanceOf[js.Any])
       

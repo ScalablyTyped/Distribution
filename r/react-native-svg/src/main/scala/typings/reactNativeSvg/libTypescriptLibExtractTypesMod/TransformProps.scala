@@ -62,7 +62,8 @@ object TransformProps {
     __obj.asInstanceOf[TransformProps]
   }
   
-  extension [Self <: TransformProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransformProps] (val x: Self) extends AnyVal {
     
     inline def setOrigin(value: NumberArray): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
     

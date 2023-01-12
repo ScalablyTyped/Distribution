@@ -75,7 +75,8 @@ object OneOtherZero {
     __obj.asInstanceOf[OneOtherZero]
   }
   
-  extension [Self <: OneOtherZero](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OneOtherZero] (val x: Self) extends AnyVal {
     
     inline def setOne(value: js.Tuple4[typings.makePlural.makePluralStrings.`1`, `0Dot1`, `1Dot0`, `1Dot6`]): Self = StObject.set(x, "one", value.asInstanceOf[js.Any])
     

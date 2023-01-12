@@ -43,7 +43,8 @@ object typesSrcCoreTransportsTransportMod {
       __obj.asInstanceOf[Transport]
     }
     
-    extension [Self <: Transport](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Transport] (val x: Self) extends AnyVal {
       
       inline def setCreateConnection(
         value: (String, Double, String, Any) => typings.pusherJs.typesSrcCoreTransportsTransportConnectionMod.default

@@ -30,7 +30,8 @@ object MapProperties {
     __obj.asInstanceOf[MapProperties]
   }
   
-  extension [Self <: MapProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MapProperties] (val x: Self) extends AnyVal {
     
     inline def setBasemap(value: BasemapProperties | String): Self = StObject.set(x, "basemap", value.asInstanceOf[js.Any])
     

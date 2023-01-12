@@ -64,7 +64,8 @@ object BezierEdges {
     __obj.asInstanceOf[BezierEdges]
   }
   
-  extension [Self <: BezierEdges](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BezierEdges] (val x: Self) extends AnyVal {
     
     inline def `setControl-point-distance`(value: PropertyValueEdge[Double]): Self = StObject.set(x, "control-point-distance", value.asInstanceOf[js.Any])
     

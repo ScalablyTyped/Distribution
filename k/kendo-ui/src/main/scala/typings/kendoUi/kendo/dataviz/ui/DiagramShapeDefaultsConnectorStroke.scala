@@ -19,7 +19,8 @@ object DiagramShapeDefaultsConnectorStroke {
     __obj.asInstanceOf[DiagramShapeDefaultsConnectorStroke]
   }
   
-  extension [Self <: DiagramShapeDefaultsConnectorStroke](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DiagramShapeDefaultsConnectorStroke] (val x: Self) extends AnyVal {
     
     inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

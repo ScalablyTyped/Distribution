@@ -58,7 +58,8 @@ object distGlobalizeRelativeTimeMod extends Shortcut {
         __obj.asInstanceOf[RelativeTimeFormatterOptions]
       }
       
-      extension [Self <: RelativeTimeFormatterOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: RelativeTimeFormatterOptions] (val x: Self) extends AnyVal {
         
         inline def setForm(value: short | narrow): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
         

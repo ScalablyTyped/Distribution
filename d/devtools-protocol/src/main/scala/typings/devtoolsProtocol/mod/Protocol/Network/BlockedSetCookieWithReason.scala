@@ -31,7 +31,8 @@ object BlockedSetCookieWithReason {
     __obj.asInstanceOf[BlockedSetCookieWithReason]
   }
   
-  extension [Self <: BlockedSetCookieWithReason](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BlockedSetCookieWithReason] (val x: Self) extends AnyVal {
     
     inline def setBlockedReasons(value: js.Array[SetCookieBlockedReason]): Self = StObject.set(x, "blockedReasons", value.asInstanceOf[js.Any])
     

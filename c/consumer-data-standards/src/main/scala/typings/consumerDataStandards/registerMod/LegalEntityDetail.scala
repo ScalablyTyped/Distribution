@@ -81,7 +81,8 @@ object LegalEntityDetail {
     __obj.asInstanceOf[LegalEntityDetail]
   }
   
-  extension [Self <: LegalEntityDetail](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LegalEntityDetail] (val x: Self) extends AnyVal {
     
     inline def setAbn(value: String): Self = StObject.set(x, "abn", value.asInstanceOf[js.Any])
     

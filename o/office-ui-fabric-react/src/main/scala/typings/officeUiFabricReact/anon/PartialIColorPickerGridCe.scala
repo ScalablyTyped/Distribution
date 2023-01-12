@@ -74,7 +74,8 @@ object PartialIColorPickerGridCe {
     __obj.asInstanceOf[PartialIColorPickerGridCe]
   }
   
-  extension [Self <: PartialIColorPickerGridCe](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialIColorPickerGridCe] (val x: Self) extends AnyVal {
     
     inline def setBorderWidth(value: Double): Self = StObject.set(x, "borderWidth", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object DeletePackagingConfigurationRequest {
     __obj.asInstanceOf[DeletePackagingConfigurationRequest]
   }
   
-  extension [Self <: DeletePackagingConfigurationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeletePackagingConfigurationRequest] (val x: Self) extends AnyVal {
     
     inline def setId(value: string): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
   }

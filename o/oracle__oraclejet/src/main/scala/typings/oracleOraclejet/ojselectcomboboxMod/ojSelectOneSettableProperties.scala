@@ -75,7 +75,8 @@ object ojSelectOneSettableProperties {
     __obj.asInstanceOf[ojSelectOneSettableProperties[K, D]]
   }
   
-  extension [Self <: ojSelectOneSettableProperties[?, ?], K, D](x: Self & (ojSelectOneSettableProperties[K, D])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ojSelectOneSettableProperties[?, ?], K, D] (val x: Self & (ojSelectOneSettableProperties[K, D])) extends AnyVal {
     
     inline def setMinimumResultsForSearch(value: Double): Self = StObject.set(x, "minimumResultsForSearch", value.asInstanceOf[js.Any])
     

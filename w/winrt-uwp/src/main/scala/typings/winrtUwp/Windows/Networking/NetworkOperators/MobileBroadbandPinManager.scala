@@ -28,7 +28,8 @@ object MobileBroadbandPinManager {
     __obj.asInstanceOf[MobileBroadbandPinManager]
   }
   
-  extension [Self <: MobileBroadbandPinManager](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MobileBroadbandPinManager] (val x: Self) extends AnyVal {
     
     inline def setGetPin(value: MobileBroadbandPinType => MobileBroadbandPin): Self = StObject.set(x, "getPin", js.Any.fromFunction1(value))
     

@@ -81,7 +81,8 @@ object libComponentsAppServiceBotMod {
       __obj.asInstanceOf[RoomInfo]
     }
     
-    extension [Self <: RoomInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RoomInfo] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       

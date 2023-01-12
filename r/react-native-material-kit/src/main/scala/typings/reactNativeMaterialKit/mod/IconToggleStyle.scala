@@ -19,7 +19,8 @@ object IconToggleStyle {
     __obj.asInstanceOf[IconToggleStyle]
   }
   
-  extension [Self <: IconToggleStyle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IconToggleStyle] (val x: Self) extends AnyVal {
     
     inline def setOffColor(value: String): Self = StObject.set(x, "offColor", value.asInstanceOf[js.Any])
     

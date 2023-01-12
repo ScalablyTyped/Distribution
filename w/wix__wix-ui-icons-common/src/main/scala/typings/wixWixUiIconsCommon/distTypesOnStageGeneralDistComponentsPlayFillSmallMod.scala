@@ -27,7 +27,8 @@ object distTypesOnStageGeneralDistComponentsPlayFillSmallMod extends Shortcut {
       __obj.asInstanceOf[PlayFillSmallProps]
     }
     
-    extension [Self <: PlayFillSmallProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PlayFillSmallProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

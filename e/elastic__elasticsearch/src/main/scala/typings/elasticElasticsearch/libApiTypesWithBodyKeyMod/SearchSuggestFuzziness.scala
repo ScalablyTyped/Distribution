@@ -23,7 +23,8 @@ object SearchSuggestFuzziness {
     __obj.asInstanceOf[SearchSuggestFuzziness]
   }
   
-  extension [Self <: SearchSuggestFuzziness](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchSuggestFuzziness] (val x: Self) extends AnyVal {
     
     inline def setFuzziness(value: Fuzziness): Self = StObject.set(x, "fuzziness", value.asInstanceOf[js.Any])
     

@@ -35,7 +35,8 @@ object Tfvcproject {
     __obj.asInstanceOf[Tfvcproject]
   }
   
-  extension [Self <: Tfvcproject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Tfvcproject] (val x: Self) extends AnyVal {
     
     inline def setTfvc_project(value: String): Self = StObject.set(x, "tfvc_project", value.asInstanceOf[js.Any])
     

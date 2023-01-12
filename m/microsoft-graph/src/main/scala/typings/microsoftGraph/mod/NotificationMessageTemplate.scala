@@ -33,7 +33,8 @@ object NotificationMessageTemplate {
     __obj.asInstanceOf[NotificationMessageTemplate]
   }
   
-  extension [Self <: NotificationMessageTemplate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NotificationMessageTemplate] (val x: Self) extends AnyVal {
     
     inline def setBrandingOptions(value: NotificationTemplateBrandingOptions): Self = StObject.set(x, "brandingOptions", value.asInstanceOf[js.Any])
     

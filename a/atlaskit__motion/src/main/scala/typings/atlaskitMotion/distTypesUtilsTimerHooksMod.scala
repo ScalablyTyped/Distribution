@@ -30,7 +30,8 @@ object distTypesUtilsTimerHooksMod {
       __obj.asInstanceOf[Opts]
     }
     
-    extension [Self <: Opts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Opts] (val x: Self) extends AnyVal {
       
       inline def setCleanup(value: `next-effect` | unmount): Self = StObject.set(x, "cleanup", value.asInstanceOf[js.Any])
     }

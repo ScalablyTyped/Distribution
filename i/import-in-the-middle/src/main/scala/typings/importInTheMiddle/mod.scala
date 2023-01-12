@@ -60,7 +60,8 @@ object mod {
       __obj.asInstanceOf[Hook]
     }
     
-    extension [Self <: Hook](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Hook] (val x: Self) extends AnyVal {
       
       inline def setUnhook(value: () => Unit): Self = StObject.set(x, "unhook", js.Any.fromFunction0(value))
     }
@@ -83,7 +84,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setInternals(value: Boolean): Self = StObject.set(x, "internals", value.asInstanceOf[js.Any])
       

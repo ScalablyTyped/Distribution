@@ -27,7 +27,8 @@ object distTypesClassicEditorGeneralDistComponentsVerticalLineBoldMod extends Sh
       __obj.asInstanceOf[VerticalLineBoldProps]
     }
     
-    extension [Self <: VerticalLineBoldProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VerticalLineBoldProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

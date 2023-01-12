@@ -205,7 +205,8 @@ object mod {
       __obj.asInstanceOf[Body]
     }
     
-    extension [Self <: Body](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Body] (val x: Self) extends AnyVal {
       
       inline def setArrayBuffer(value: () => js.Promise[js.typedarray.ArrayBuffer]): Self = StObject.set(x, "arrayBuffer", js.Any.fromFunction0(value))
       
@@ -275,7 +276,8 @@ object mod {
       __obj.asInstanceOf[RequestInit]
     }
     
-    extension [Self <: RequestInit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequestInit] (val x: Self) extends AnyVal {
       
       inline def setAgent(value: Agent): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
       

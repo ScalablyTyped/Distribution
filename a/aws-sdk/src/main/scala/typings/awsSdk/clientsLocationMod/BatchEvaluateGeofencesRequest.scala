@@ -26,7 +26,8 @@ object BatchEvaluateGeofencesRequest {
     __obj.asInstanceOf[BatchEvaluateGeofencesRequest]
   }
   
-  extension [Self <: BatchEvaluateGeofencesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchEvaluateGeofencesRequest] (val x: Self) extends AnyVal {
     
     inline def setCollectionName(value: ResourceName): Self = StObject.set(x, "CollectionName", value.asInstanceOf[js.Any])
     

@@ -26,7 +26,8 @@ object IStatesAdmin {
     __obj.asInstanceOf[IStatesAdmin]
   }
   
-  extension [Self <: IStatesAdmin](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IStatesAdmin] (val x: Self) extends AnyVal {
     
     inline def setAdd(value: (Double, IStateAdmin) => Unit): Self = StObject.set(x, "Add", js.Any.fromFunction2(value))
     

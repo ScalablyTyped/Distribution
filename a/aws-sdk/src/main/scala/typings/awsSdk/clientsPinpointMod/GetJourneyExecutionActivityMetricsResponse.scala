@@ -15,7 +15,8 @@ object GetJourneyExecutionActivityMetricsResponse {
     __obj.asInstanceOf[GetJourneyExecutionActivityMetricsResponse]
   }
   
-  extension [Self <: GetJourneyExecutionActivityMetricsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetJourneyExecutionActivityMetricsResponse] (val x: Self) extends AnyVal {
     
     inline def setJourneyExecutionActivityMetricsResponse(value: JourneyExecutionActivityMetricsResponse): Self = StObject.set(x, "JourneyExecutionActivityMetricsResponse", value.asInstanceOf[js.Any])
   }

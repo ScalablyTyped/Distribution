@@ -219,7 +219,8 @@ object Appsettingcontentwidth {
     __obj.asInstanceOf[Appsettingcontentwidth]
   }
   
-  extension [Self <: Appsettingcontentwidth](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Appsettingcontentwidth] (val x: Self) extends AnyVal {
     
     inline def `setAppDotsettingDotcontent-width`(value: String): Self = StObject.set(x, "app.setting.content-width", value.asInstanceOf[js.Any])
     

@@ -81,7 +81,8 @@ object mod {
       __obj.asInstanceOf[TerminalRendererOptions]
     }
     
-    extension [Self <: TerminalRendererOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TerminalRendererOptions] (val x: Self) extends AnyVal {
       
       inline def setBlockquote(value: Chalk | (js.Function1[/* s */ String, String])): Self = StObject.set(x, "blockquote", value.asInstanceOf[js.Any])
       

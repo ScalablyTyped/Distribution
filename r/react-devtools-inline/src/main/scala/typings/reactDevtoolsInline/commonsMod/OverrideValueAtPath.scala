@@ -24,7 +24,8 @@ object OverrideValueAtPath {
     __obj.asInstanceOf[OverrideValueAtPath]
   }
   
-  extension [Self <: OverrideValueAtPath](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OverrideValueAtPath] (val x: Self) extends AnyVal {
     
     inline def setHookID(value: Double): Self = StObject.set(x, "hookID", value.asInstanceOf[js.Any])
     

@@ -40,7 +40,8 @@ object anon {
       __obj.asInstanceOf[StrongPasswordOptionsretu]
     }
     
-    extension [Self <: StrongPasswordOptionsretu](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StrongPasswordOptionsretu] (val x: Self) extends AnyVal {
       
       inline def setMinLength(value: Double): Self = StObject.set(x, "minLength", value.asInstanceOf[js.Any])
       
@@ -126,7 +127,8 @@ object anon {
       __obj.asInstanceOf[StrongPasswordOptionsretuMinLength]
     }
     
-    extension [Self <: StrongPasswordOptionsretuMinLength](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StrongPasswordOptionsretuMinLength] (val x: Self) extends AnyVal {
       
       inline def setMinLength(value: Double): Self = StObject.set(x, "minLength", value.asInstanceOf[js.Any])
       

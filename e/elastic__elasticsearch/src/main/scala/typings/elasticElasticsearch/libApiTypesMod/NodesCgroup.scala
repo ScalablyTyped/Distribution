@@ -19,7 +19,8 @@ object NodesCgroup {
     __obj.asInstanceOf[NodesCgroup]
   }
   
-  extension [Self <: NodesCgroup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodesCgroup] (val x: Self) extends AnyVal {
     
     inline def setCpu(value: NodesCgroupCpu): Self = StObject.set(x, "cpu", value.asInstanceOf[js.Any])
     

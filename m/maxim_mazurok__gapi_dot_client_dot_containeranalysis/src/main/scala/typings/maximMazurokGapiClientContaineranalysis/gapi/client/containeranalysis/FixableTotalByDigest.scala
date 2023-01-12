@@ -25,7 +25,8 @@ object FixableTotalByDigest {
     __obj.asInstanceOf[FixableTotalByDigest]
   }
   
-  extension [Self <: FixableTotalByDigest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FixableTotalByDigest] (val x: Self) extends AnyVal {
     
     inline def setFixableCount(value: String): Self = StObject.set(x, "fixableCount", value.asInstanceOf[js.Any])
     

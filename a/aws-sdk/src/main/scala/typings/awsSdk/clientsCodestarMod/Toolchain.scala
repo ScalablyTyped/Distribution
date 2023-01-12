@@ -28,7 +28,8 @@ object Toolchain {
     __obj.asInstanceOf[Toolchain]
   }
   
-  extension [Self <: Toolchain](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Toolchain] (val x: Self) extends AnyVal {
     
     inline def setRoleArn(value: RoleArn): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
     

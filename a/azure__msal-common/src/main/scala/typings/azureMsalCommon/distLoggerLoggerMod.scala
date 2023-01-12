@@ -168,7 +168,8 @@ object distLoggerLoggerMod {
       __obj.asInstanceOf[LoggerMessageOptions]
     }
     
-    extension [Self <: LoggerMessageOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LoggerMessageOptions] (val x: Self) extends AnyVal {
       
       inline def setContainsPii(value: Boolean): Self = StObject.set(x, "containsPii", value.asInstanceOf[js.Any])
       

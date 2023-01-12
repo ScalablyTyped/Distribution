@@ -39,7 +39,8 @@ object R3DeclareFactoryMetadata {
     __obj.asInstanceOf[R3DeclareFactoryMetadata]
   }
   
-  extension [Self <: R3DeclareFactoryMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: R3DeclareFactoryMetadata] (val x: Self) extends AnyVal {
     
     inline def setDeps(value: js.Array[R3DeclareDependencyMetadata] | invalid): Self = StObject.set(x, "deps", value.asInstanceOf[js.Any])
     

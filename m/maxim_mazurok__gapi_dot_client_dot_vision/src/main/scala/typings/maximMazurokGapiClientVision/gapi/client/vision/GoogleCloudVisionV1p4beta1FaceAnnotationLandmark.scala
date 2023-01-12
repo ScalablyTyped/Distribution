@@ -19,7 +19,8 @@ object GoogleCloudVisionV1p4beta1FaceAnnotationLandmark {
     __obj.asInstanceOf[GoogleCloudVisionV1p4beta1FaceAnnotationLandmark]
   }
   
-  extension [Self <: GoogleCloudVisionV1p4beta1FaceAnnotationLandmark](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudVisionV1p4beta1FaceAnnotationLandmark] (val x: Self) extends AnyVal {
     
     inline def setPosition(value: GoogleCloudVisionV1p4beta1Position): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     

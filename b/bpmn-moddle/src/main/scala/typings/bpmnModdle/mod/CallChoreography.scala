@@ -35,7 +35,8 @@ object CallChoreography {
     __obj.asInstanceOf[CallChoreography]
   }
   
-  extension [Self <: CallChoreography](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CallChoreography] (val x: Self) extends AnyVal {
     
     inline def setCalledChoreographyRef(value: Choreography): Self = StObject.set(x, "calledChoreographyRef", value.asInstanceOf[js.Any])
     

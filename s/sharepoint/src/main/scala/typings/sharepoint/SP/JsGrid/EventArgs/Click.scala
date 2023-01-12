@@ -26,7 +26,8 @@ object Click {
     __obj.asInstanceOf[Click]
   }
   
-  extension [Self <: Click](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Click] (val x: Self) extends AnyVal {
     
     inline def setContext(value: ClickContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     

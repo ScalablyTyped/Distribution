@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[AllowLocal]
     }
     
-    extension [Self <: AllowLocal](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AllowLocal] (val x: Self) extends AnyVal {
       
       inline def setAllowLocal(value: Boolean): Self = StObject.set(x, "allowLocal", value.asInstanceOf[js.Any])
       
@@ -38,7 +39,8 @@ object anon {
       __obj.asInstanceOf[AllowLocalBoolean]
     }
     
-    extension [Self <: AllowLocalBoolean](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AllowLocalBoolean] (val x: Self) extends AnyVal {
       
       inline def setAllowLocal(value: Boolean): Self = StObject.set(x, "allowLocal", value.asInstanceOf[js.Any])
     }

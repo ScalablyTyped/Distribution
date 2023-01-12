@@ -35,7 +35,8 @@ object IXMLHTTPRequest2Callback {
     __obj.asInstanceOf[IXMLHTTPRequest2Callback]
   }
   
-  extension [Self <: IXMLHTTPRequest2Callback](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IXMLHTTPRequest2Callback] (val x: Self) extends AnyVal {
     
     inline def setMSXML2DotIXMLHTTPRequest2Callback_typekey(value: IXMLHTTPRequest2Callback): Self = StObject.set(x, "MSXML2.IXMLHTTPRequest2Callback_typekey", value.asInstanceOf[js.Any])
     

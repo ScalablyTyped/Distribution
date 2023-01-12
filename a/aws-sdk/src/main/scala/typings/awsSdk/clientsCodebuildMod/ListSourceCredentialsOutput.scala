@@ -18,7 +18,8 @@ object ListSourceCredentialsOutput {
     __obj.asInstanceOf[ListSourceCredentialsOutput]
   }
   
-  extension [Self <: ListSourceCredentialsOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListSourceCredentialsOutput] (val x: Self) extends AnyVal {
     
     inline def setSourceCredentialsInfos(value: SourceCredentialsInfos): Self = StObject.set(x, "sourceCredentialsInfos", value.asInstanceOf[js.Any])
     

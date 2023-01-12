@@ -20,7 +20,8 @@ object BreadcrumbMap {
     __obj.asInstanceOf[BreadcrumbMap]
   }
   
-  extension [Self <: BreadcrumbMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BreadcrumbMap] (val x: Self) extends AnyVal {
     
     inline def setBreadcrumbMap(value: Map[String, MenuDataItem]): Self = StObject.set(x, "breadcrumbMap", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object UrlAssignedTargetingOptionDetails {
     __obj.asInstanceOf[UrlAssignedTargetingOptionDetails]
   }
   
-  extension [Self <: UrlAssignedTargetingOptionDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UrlAssignedTargetingOptionDetails] (val x: Self) extends AnyVal {
     
     inline def setNegative(value: Boolean): Self = StObject.set(x, "negative", value.asInstanceOf[js.Any])
     

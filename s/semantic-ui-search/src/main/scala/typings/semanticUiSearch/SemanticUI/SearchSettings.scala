@@ -265,7 +265,8 @@ object SearchSettings {
       __obj.asInstanceOf[Impl]
     }
     
-    extension [Self <: Impl](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Impl] (val x: Self) extends AnyVal {
       
       inline def setApiSettings(value: ApiSettings): Self = StObject.set(x, "apiSettings", value.asInstanceOf[js.Any])
       

@@ -16,7 +16,8 @@ object MobileFriendlyIssue {
     __obj.asInstanceOf[MobileFriendlyIssue]
   }
   
-  extension [Self <: MobileFriendlyIssue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MobileFriendlyIssue] (val x: Self) extends AnyVal {
     
     inline def setRule(value: String): Self = StObject.set(x, "rule", value.asInstanceOf[js.Any])
     

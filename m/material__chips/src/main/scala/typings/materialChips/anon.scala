@@ -120,7 +120,8 @@ object anon {
       __obj.asInstanceOf[ADDEDANNOUNCEMENTATTRIBUTE]
     }
     
-    extension [Self <: ADDEDANNOUNCEMENTATTRIBUTE](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ADDEDANNOUNCEMENTATTRIBUTE] (val x: Self) extends AnyVal {
       
       inline def setADDED_ANNOUNCEMENT_ATTRIBUTE(value: String): Self = StObject.set(x, "ADDED_ANNOUNCEMENT_ATTRIBUTE", value.asInstanceOf[js.Any])
       
@@ -201,7 +202,8 @@ object anon {
       __obj.asInstanceOf[ARIAHIDDEN]
     }
     
-    extension [Self <: ARIAHIDDEN](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ARIAHIDDEN] (val x: Self) extends AnyVal {
       
       inline def setARIA_HIDDEN(value: String): Self = StObject.set(x, "ARIA_HIDDEN", value.asInstanceOf[js.Any])
       
@@ -262,7 +264,8 @@ object anon {
       __obj.asInstanceOf[CHECKMARK]
     }
     
-    extension [Self <: CHECKMARK](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CHECKMARK] (val x: Self) extends AnyVal {
       
       inline def setCHECKMARK(value: String): Self = StObject.set(x, "CHECKMARK", value.asInstanceOf[js.Any])
       
@@ -303,7 +306,8 @@ object anon {
       __obj.asInstanceOf[CHIPSELECTOR]
     }
     
-    extension [Self <: CHIPSELECTOR](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CHIPSELECTOR] (val x: Self) extends AnyVal {
       
       inline def setCHIP_SELECTOR(value: String): Self = StObject.set(x, "CHIP_SELECTOR", value.asInstanceOf[js.Any])
     }
@@ -322,7 +326,8 @@ object anon {
       __obj.asInstanceOf[CHOICE]
     }
     
-    extension [Self <: CHOICE](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CHOICE] (val x: Self) extends AnyVal {
       
       inline def setCHOICE(value: String): Self = StObject.set(x, "CHOICE", value.asInstanceOf[js.Any])
       
@@ -352,7 +357,8 @@ object anon {
       __obj.asInstanceOf[PartialMDCChipActionAdapt]
     }
     
-    extension [Self <: PartialMDCChipActionAdapt](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialMDCChipActionAdapt] (val x: Self) extends AnyVal {
       
       inline def setEmitEvent(value: (/* name */ MDCChipActionEvents, /* detail */ js.Object) => Unit): Self = StObject.set(x, "emitEvent", js.Any.fromFunction2(value))
       
@@ -426,7 +432,8 @@ object anon {
       __obj.asInstanceOf[PartialMDCChipAdapter]
     }
     
-    extension [Self <: PartialMDCChipAdapter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialMDCChipAdapter] (val x: Self) extends AnyVal {
       
       inline def setAddClass(value: /* className */ MDCChipCssClasses => Unit): Self = StObject.set(x, "addClass", js.Any.fromFunction1(value))
       
@@ -558,7 +565,8 @@ object anon {
       __obj.asInstanceOf[PartialMDCChipAdapterAddClass]
     }
     
-    extension [Self <: PartialMDCChipAdapterAddClass](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialMDCChipAdapterAddClass] (val x: Self) extends AnyVal {
       
       inline def setAddClass(value: /* className */ String => Unit): Self = StObject.set(x, "addClass", js.Any.fromFunction1(value))
       
@@ -711,7 +719,8 @@ object anon {
       __obj.asInstanceOf[PartialMDCChipSetAdapter]
     }
     
-    extension [Self <: PartialMDCChipSetAdapter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialMDCChipSetAdapter] (val x: Self) extends AnyVal {
       
       inline def setAnnounceMessage(value: /* message */ String => Unit): Self = StObject.set(x, "announceMessage", js.Any.fromFunction1(value))
       
@@ -805,7 +814,8 @@ object anon {
       __obj.asInstanceOf[PartialMDCChipSetAdapterAnnounceMessage]
     }
     
-    extension [Self <: PartialMDCChipSetAdapterAnnounceMessage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialMDCChipSetAdapterAnnounceMessage] (val x: Self) extends AnyVal {
       
       inline def setAnnounceMessage(value: /* message */ String => Unit): Self = StObject.set(x, "announceMessage", js.Any.fromFunction1(value))
       
@@ -869,7 +879,8 @@ object anon {
       __obj.asInstanceOf[PartialMDCChipTrailingAct]
     }
     
-    extension [Self <: PartialMDCChipTrailingAct](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialMDCChipTrailingAct] (val x: Self) extends AnyVal {
       
       inline def setFocus(value: () => Unit): Self = StObject.set(x, "focus", js.Any.fromFunction0(value))
       

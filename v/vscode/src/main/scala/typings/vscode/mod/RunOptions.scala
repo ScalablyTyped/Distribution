@@ -18,7 +18,8 @@ object RunOptions {
     __obj.asInstanceOf[RunOptions]
   }
   
-  extension [Self <: RunOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RunOptions] (val x: Self) extends AnyVal {
     
     inline def setReevaluateOnRerun(value: Boolean): Self = StObject.set(x, "reevaluateOnRerun", value.asInstanceOf[js.Any])
     

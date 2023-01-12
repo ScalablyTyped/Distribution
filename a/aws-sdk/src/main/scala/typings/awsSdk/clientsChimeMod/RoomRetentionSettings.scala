@@ -18,7 +18,8 @@ object RoomRetentionSettings {
     __obj.asInstanceOf[RoomRetentionSettings]
   }
   
-  extension [Self <: RoomRetentionSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RoomRetentionSettings] (val x: Self) extends AnyVal {
     
     inline def setRetentionDays(value: RetentionDays): Self = StObject.set(x, "RetentionDays", value.asInstanceOf[js.Any])
     

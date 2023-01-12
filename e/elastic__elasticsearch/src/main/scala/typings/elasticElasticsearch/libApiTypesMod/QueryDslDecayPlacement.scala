@@ -21,7 +21,8 @@ object QueryDslDecayPlacement {
     __obj.asInstanceOf[QueryDslDecayPlacement[TOrigin, TScale]]
   }
   
-  extension [Self <: QueryDslDecayPlacement[?, ?], TOrigin, TScale](x: Self & (QueryDslDecayPlacement[TOrigin, TScale])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryDslDecayPlacement[?, ?], TOrigin, TScale] (val x: Self & (QueryDslDecayPlacement[TOrigin, TScale])) extends AnyVal {
     
     inline def setDecay(value: double): Self = StObject.set(x, "decay", value.asInstanceOf[js.Any])
     

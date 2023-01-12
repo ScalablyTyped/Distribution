@@ -22,7 +22,8 @@ object BroadcastAccess {
     __obj.asInstanceOf[BroadcastAccess]
   }
   
-  extension [Self <: BroadcastAccess](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BroadcastAccess] (val x: Self) extends AnyVal {
     
     inline def setAccessPolicy(value: String): Self = StObject.set(x, "accessPolicy", value.asInstanceOf[js.Any])
     

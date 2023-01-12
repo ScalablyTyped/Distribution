@@ -64,7 +64,8 @@ object libComponentsMapMod {
       __obj.asInstanceOf[MapData]
     }
     
-    extension [Self <: MapData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MapData] (val x: Self) extends AnyVal {
       
       inline def setLocationLink(value: Any): Self = StObject.set(x, "locationLink", value.asInstanceOf[js.Any])
       
@@ -85,7 +86,8 @@ object libComponentsMapMod {
       __obj.asInstanceOf[MapObject]
     }
     
-    extension [Self <: MapObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MapObject] (val x: Self) extends AnyVal {
       
       inline def setData(value: MapData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -142,7 +144,8 @@ object libComponentsMapMod {
       __obj.asInstanceOf[MapProps]
     }
     
-    extension [Self <: MapProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MapProps] (val x: Self) extends AnyVal {
       
       inline def setAddressLine1(value: String): Self = StObject.set(x, "addressLine1", value.asInstanceOf[js.Any])
       

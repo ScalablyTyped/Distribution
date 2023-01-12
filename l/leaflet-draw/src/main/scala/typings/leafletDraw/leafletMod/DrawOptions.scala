@@ -84,7 +84,8 @@ object DrawOptions {
       __obj.asInstanceOf[CircleMarkerOptions]
     }
     
-    extension [Self <: CircleMarkerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CircleMarkerOptions] (val x: Self) extends AnyVal {
       
       inline def setClickable(value: Boolean): Self = StObject.set(x, "clickable", value.asInstanceOf[js.Any])
       
@@ -170,7 +171,8 @@ object DrawOptions {
       __obj.asInstanceOf[CircleOptions]
     }
     
-    extension [Self <: CircleOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CircleOptions] (val x: Self) extends AnyVal {
       
       inline def setFeet(value: Boolean): Self = StObject.set(x, "feet", value.asInstanceOf[js.Any])
       
@@ -209,7 +211,8 @@ object DrawOptions {
       __obj.asInstanceOf[DrawErrorOptions]
     }
     
-    extension [Self <: DrawErrorOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DrawErrorOptions] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -242,7 +245,8 @@ object DrawOptions {
       __obj.asInstanceOf[EditHandlerOptions]
     }
     
-    extension [Self <: EditHandlerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EditHandlerOptions] (val x: Self) extends AnyVal {
       
       inline def setSelectedPathOptions(value: PathOptions): Self = StObject.set(x, "selectedPathOptions", value.asInstanceOf[js.Any])
       
@@ -293,7 +297,8 @@ object DrawOptions {
       __obj.asInstanceOf[EditPolyOptions]
     }
     
-    extension [Self <: EditPolyOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EditPolyOptions] (val x: Self) extends AnyVal {
       
       inline def setAllowIntersection(value: Boolean): Self = StObject.set(x, "allowIntersection", value.asInstanceOf[js.Any])
       
@@ -337,7 +342,8 @@ object DrawOptions {
       __obj.asInstanceOf[MarkerOptions]
     }
     
-    extension [Self <: MarkerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MarkerOptions] (val x: Self) extends AnyVal {
       
       inline def setIcon(value: Icon_[IconOptions] | DivIcon_): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
       
@@ -379,7 +385,8 @@ object DrawOptions {
       __obj.asInstanceOf[PolygonOptions]
     }
     
-    extension [Self <: PolygonOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PolygonOptions] (val x: Self) extends AnyVal {
       
       inline def setPrecision(value: PrecisionOptions): Self = StObject.set(x, "precision", value.asInstanceOf[js.Any])
       
@@ -490,7 +497,8 @@ object DrawOptions {
       __obj.asInstanceOf[PolylineOptions]
     }
     
-    extension [Self <: PolylineOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PolylineOptions] (val x: Self) extends AnyVal {
       
       inline def setAllowIntersection(value: Boolean): Self = StObject.set(x, "allowIntersection", value.asInstanceOf[js.Any])
       
@@ -575,7 +583,8 @@ object DrawOptions {
       __obj.asInstanceOf[RectangleOptions]
     }
     
-    extension [Self <: RectangleOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RectangleOptions] (val x: Self) extends AnyVal {
       
       inline def setMetric(value: Boolean): Self = StObject.set(x, "metric", value.asInstanceOf[js.Any])
       
@@ -603,7 +612,8 @@ object DrawOptions {
       __obj.asInstanceOf[SimpleShapeOptions]
     }
     
-    extension [Self <: SimpleShapeOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SimpleShapeOptions] (val x: Self) extends AnyVal {
       
       inline def setRepeatMode(value: Boolean): Self = StObject.set(x, "repeatMode", value.asInstanceOf[js.Any])
       

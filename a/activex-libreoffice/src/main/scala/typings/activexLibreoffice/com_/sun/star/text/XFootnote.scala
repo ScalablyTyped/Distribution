@@ -49,7 +49,8 @@ object XFootnote {
     __obj.asInstanceOf[XFootnote]
   }
   
-  extension [Self <: XFootnote](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XFootnote] (val x: Self) extends AnyVal {
     
     inline def setGetLabel(value: () => String): Self = StObject.set(x, "getLabel", js.Any.fromFunction0(value))
     

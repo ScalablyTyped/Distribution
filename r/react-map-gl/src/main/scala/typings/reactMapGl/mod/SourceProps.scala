@@ -71,7 +71,8 @@ object SourceProps {
     __obj.asInstanceOf[SourceProps]
   }
   
-  extension [Self <: SourceProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SourceProps] (val x: Self) extends AnyVal {
     
     inline def setAttribution(value: String): Self = StObject.set(x, "attribution", value.asInstanceOf[js.Any])
     

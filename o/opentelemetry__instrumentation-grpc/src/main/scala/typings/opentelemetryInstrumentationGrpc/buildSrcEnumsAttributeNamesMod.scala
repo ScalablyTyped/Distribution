@@ -31,7 +31,8 @@ object buildSrcEnumsAttributeNamesMod {
       __obj.asInstanceOf[AttributesType]
     }
     
-    extension [Self <: AttributesType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AttributesType] (val x: Self) extends AnyVal {
       
       inline def setGRPC_ERROR_MESSAGE(value: String): Self = StObject.set(x, "GRPC_ERROR_MESSAGE", value.asInstanceOf[js.Any])
       

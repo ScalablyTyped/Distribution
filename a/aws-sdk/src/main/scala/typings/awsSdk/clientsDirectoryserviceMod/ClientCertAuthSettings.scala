@@ -18,7 +18,8 @@ object ClientCertAuthSettings {
     __obj.asInstanceOf[ClientCertAuthSettings]
   }
   
-  extension [Self <: ClientCertAuthSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClientCertAuthSettings] (val x: Self) extends AnyVal {
     
     inline def setOCSPUrl(value: OCSPUrl): Self = StObject.set(x, "OCSPUrl", value.asInstanceOf[js.Any])
     

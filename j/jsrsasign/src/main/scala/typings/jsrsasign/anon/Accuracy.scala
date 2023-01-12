@@ -34,7 +34,8 @@ object Accuracy {
     __obj.asInstanceOf[Accuracy]
   }
   
-  extension [Self <: Accuracy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Accuracy] (val x: Self) extends AnyVal {
     
     inline def setAccuracy(value: Micros): Self = StObject.set(x, "accuracy", value.asInstanceOf[js.Any])
     

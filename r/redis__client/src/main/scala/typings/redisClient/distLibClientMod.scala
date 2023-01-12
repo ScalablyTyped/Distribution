@@ -72,7 +72,8 @@ object distLibClientMod {
       __obj.asInstanceOf[ClientCommandOptions]
     }
     
-    extension [Self <: ClientCommandOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClientCommandOptions] (val x: Self) extends AnyVal {
       
       inline def setIsolated(value: Boolean): Self = StObject.set(x, "isolated", value.asInstanceOf[js.Any])
       
@@ -562,7 +563,8 @@ object distLibClientMod {
       __obj.asInstanceOf[RedisClientOptions[M, F, S]]
     }
     
-    extension [Self <: RedisClientOptions[?, ?, ?], M /* <: RedisModules */, F /* <: RedisFunctions */, S /* <: RedisScripts */](x: Self & (RedisClientOptions[M, F, S])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RedisClientOptions[?, ?, ?], M /* <: RedisModules */, F /* <: RedisFunctions */, S /* <: RedisScripts */] (val x: Self & (RedisClientOptions[M, F, S])) extends AnyVal {
       
       inline def setCommandsQueueMaxLength(value: Double): Self = StObject.set(x, "commandsQueueMaxLength", value.asInstanceOf[js.Any])
       
@@ -22742,7 +22744,8 @@ object distLibClientMod {
   }
   object WithCommands {
     
-    extension [Self <: WithCommands](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WithCommands] (val x: Self) extends AnyVal {
       
       inline def setACL_CAT(
         value: /* args */ (Parameters[

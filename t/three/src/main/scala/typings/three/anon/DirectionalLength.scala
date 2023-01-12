@@ -38,7 +38,8 @@ object DirectionalLength {
     __obj.asInstanceOf[DirectionalLength]
   }
   
-  extension [Self <: DirectionalLength](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DirectionalLength] (val x: Self) extends AnyVal {
     
     inline def setDirectionalLength(value: Double): Self = StObject.set(x, "directionalLength", value.asInstanceOf[js.Any])
     

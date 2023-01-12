@@ -100,7 +100,8 @@ object dxFilterBuilderField {
     __obj.asInstanceOf[dxFilterBuilderField]
   }
   
-  extension [Self <: dxFilterBuilderField](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxFilterBuilderField] (val x: Self) extends AnyVal {
     
     inline def setCalculateFilterExpression(
       value: (/* filterValue */ Any, /* selectedFilterOperation */ String) => String | js.Array[Any] | js.Function

@@ -26,7 +26,8 @@ object IAccessControlListComponentContainer {
     __obj.asInstanceOf[IAccessControlListComponentContainer]
   }
   
-  extension [Self <: IAccessControlListComponentContainer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IAccessControlListComponentContainer] (val x: Self) extends AnyVal {
     
     inline def setAt(value: IAccessControlListComponentKey => IAccessControlListComponent): Self = StObject.set(x, "At", js.Any.fromFunction1(value))
     

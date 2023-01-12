@@ -22,7 +22,8 @@ object RegionInstanceGroupManagersListInstancesResponse {
     __obj.asInstanceOf[RegionInstanceGroupManagersListInstancesResponse]
   }
   
-  extension [Self <: RegionInstanceGroupManagersListInstancesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RegionInstanceGroupManagersListInstancesResponse] (val x: Self) extends AnyVal {
     
     inline def setManagedInstances(value: js.Array[ManagedInstance]): Self = StObject.set(x, "managedInstances", value.asInstanceOf[js.Any])
     

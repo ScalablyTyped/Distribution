@@ -15,7 +15,8 @@ object ILockConstraintOptions {
     __obj.asInstanceOf[ILockConstraintOptions]
   }
   
-  extension [Self <: ILockConstraintOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ILockConstraintOptions] (val x: Self) extends AnyVal {
     
     inline def setMaxForce(value: Double): Self = StObject.set(x, "maxForce", value.asInstanceOf[js.Any])
     

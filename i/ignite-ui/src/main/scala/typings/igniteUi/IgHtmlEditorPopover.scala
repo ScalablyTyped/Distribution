@@ -53,7 +53,8 @@ object IgHtmlEditorPopover {
     __obj.asInstanceOf[IgHtmlEditorPopover]
   }
   
-  extension [Self <: IgHtmlEditorPopover](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgHtmlEditorPopover] (val x: Self) extends AnyVal {
     
     inline def setApply(value: (/* event */ Event, /* ui */ ApplyEventUIParam) => Unit): Self = StObject.set(x, "apply", js.Any.fromFunction2(value))
     

@@ -21,7 +21,8 @@ object InputPreviousStageTexture {
     __obj.asInstanceOf[InputPreviousStageTexture]
   }
   
-  extension [Self <: InputPreviousStageTexture](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InputPreviousStageTexture] (val x: Self) extends AnyVal {
     
     inline def setInputPreviousStageTexture(value: Boolean): Self = StObject.set(x, "inputPreviousStageTexture", value.asInstanceOf[js.Any])
     

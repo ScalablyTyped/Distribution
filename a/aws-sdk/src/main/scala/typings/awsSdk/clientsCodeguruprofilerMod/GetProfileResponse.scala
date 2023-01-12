@@ -28,7 +28,8 @@ object GetProfileResponse {
     __obj.asInstanceOf[GetProfileResponse]
   }
   
-  extension [Self <: GetProfileResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetProfileResponse] (val x: Self) extends AnyVal {
     
     inline def setContentEncoding(value: String): Self = StObject.set(x, "contentEncoding", value.asInstanceOf[js.Any])
     

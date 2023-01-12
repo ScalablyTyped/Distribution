@@ -33,7 +33,8 @@ object LivePlayerContextRequestFullScreenOption {
     __obj.asInstanceOf[LivePlayerContextRequestFullScreenOption]
   }
   
-  extension [Self <: LivePlayerContextRequestFullScreenOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LivePlayerContextRequestFullScreenOption] (val x: Self) extends AnyVal {
     
     inline def setComplete(value: /* res */ GeneralCallbackResult => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
     

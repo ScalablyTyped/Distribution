@@ -18,7 +18,8 @@ object StepOverRequest {
     __obj.asInstanceOf[StepOverRequest]
   }
   
-  extension [Self <: StepOverRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StepOverRequest] (val x: Self) extends AnyVal {
     
     inline def setSkipList(value: js.Array[LocationRange]): Self = StObject.set(x, "skipList", value.asInstanceOf[js.Any])
     

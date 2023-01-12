@@ -28,7 +28,8 @@ object StartInstancesRequest {
     __obj.asInstanceOf[StartInstancesRequest]
   }
   
-  extension [Self <: StartInstancesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartInstancesRequest] (val x: Self) extends AnyVal {
     
     inline def setAdditionalInfo(value: String): Self = StObject.set(x, "AdditionalInfo", value.asInstanceOf[js.Any])
     

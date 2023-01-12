@@ -63,7 +63,8 @@ object RegisterActivityTypeInput {
     __obj.asInstanceOf[RegisterActivityTypeInput]
   }
   
-  extension [Self <: RegisterActivityTypeInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RegisterActivityTypeInput] (val x: Self) extends AnyVal {
     
     inline def setDefaultTaskHeartbeatTimeout(value: DurationInSecondsOptional): Self = StObject.set(x, "defaultTaskHeartbeatTimeout", value.asInstanceOf[js.Any])
     

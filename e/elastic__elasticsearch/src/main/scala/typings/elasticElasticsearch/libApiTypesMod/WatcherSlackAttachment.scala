@@ -43,7 +43,8 @@ object WatcherSlackAttachment {
     __obj.asInstanceOf[WatcherSlackAttachment]
   }
   
-  extension [Self <: WatcherSlackAttachment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WatcherSlackAttachment] (val x: Self) extends AnyVal {
     
     inline def setAuthor_icon(value: String): Self = StObject.set(x, "author_icon", value.asInstanceOf[js.Any])
     

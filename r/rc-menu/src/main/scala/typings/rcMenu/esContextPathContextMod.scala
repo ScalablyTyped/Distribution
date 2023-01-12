@@ -44,7 +44,8 @@ object esContextPathContextMod {
       __obj.asInstanceOf[PathRegisterContextProps]
     }
     
-    extension [Self <: PathRegisterContextProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PathRegisterContextProps] (val x: Self) extends AnyVal {
       
       inline def setRegisterPath(value: (String, js.Array[String]) => Unit): Self = StObject.set(x, "registerPath", js.Any.fromFunction2(value))
       
@@ -63,7 +64,8 @@ object esContextPathContextMod {
       __obj.asInstanceOf[PathUserContextProps]
     }
     
-    extension [Self <: PathUserContextProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PathUserContextProps] (val x: Self) extends AnyVal {
       
       inline def setIsSubPathKey(value: (js.Array[String], String) => Boolean): Self = StObject.set(x, "isSubPathKey", js.Any.fromFunction2(value))
     }

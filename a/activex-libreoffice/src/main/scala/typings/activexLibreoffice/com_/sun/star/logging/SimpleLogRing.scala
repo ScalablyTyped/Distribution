@@ -35,7 +35,8 @@ object SimpleLogRing {
     __obj.asInstanceOf[SimpleLogRing]
   }
   
-  extension [Self <: SimpleLogRing](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SimpleLogRing] (val x: Self) extends AnyVal {
     
     inline def setCreate(value: () => Unit): Self = StObject.set(x, "create", js.Any.fromFunction0(value))
     

@@ -21,7 +21,8 @@ object PersistenceSettings {
     __obj.asInstanceOf[PersistenceSettings]
   }
   
-  extension [Self <: PersistenceSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PersistenceSettings] (val x: Self) extends AnyVal {
     
     inline def setForceOwnership(value: Boolean): Self = StObject.set(x, "forceOwnership", value.asInstanceOf[js.Any])
     

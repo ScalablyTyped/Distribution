@@ -19,7 +19,8 @@ object ReturnTypeGetUsageAndQuotaResponse {
     __obj.asInstanceOf[ReturnTypeGetUsageAndQuotaResponse]
   }
   
-  extension [Self <: ReturnTypeGetUsageAndQuotaResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReturnTypeGetUsageAndQuotaResponse] (val x: Self) extends AnyVal {
     
     inline def setParamsType(value: js.Array[GetUsageAndQuotaRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     

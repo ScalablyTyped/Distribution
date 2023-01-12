@@ -18,7 +18,8 @@ object DeleteJobTemplateRequest {
     __obj.asInstanceOf[DeleteJobTemplateRequest]
   }
   
-  extension [Self <: DeleteJobTemplateRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteJobTemplateRequest] (val x: Self) extends AnyVal {
     
     inline def setName(value: string): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }

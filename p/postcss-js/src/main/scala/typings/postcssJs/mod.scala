@@ -44,7 +44,8 @@ object mod {
         __obj.asInstanceOf[Processor]
       }
       
-      extension [Self <: Processor](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Processor] (val x: Self) extends AnyVal {
         
         inline def setProcess(value: (CssInJs, OmitProcessOptionsparserp) => LazyResult | default): Self = StObject.set(x, "process", js.Any.fromFunction2(value))
       }

@@ -18,7 +18,8 @@ object EndpointAuthorization {
     __obj.asInstanceOf[EndpointAuthorization]
   }
   
-  extension [Self <: EndpointAuthorization](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EndpointAuthorization] (val x: Self) extends AnyVal {
     
     inline def setParameters(value: StringDictionary[String]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     

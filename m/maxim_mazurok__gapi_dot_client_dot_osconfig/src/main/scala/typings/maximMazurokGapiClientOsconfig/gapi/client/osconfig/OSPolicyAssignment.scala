@@ -58,7 +58,8 @@ object OSPolicyAssignment {
     __obj.asInstanceOf[OSPolicyAssignment]
   }
   
-  extension [Self <: OSPolicyAssignment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OSPolicyAssignment] (val x: Self) extends AnyVal {
     
     inline def setBaseline(value: Boolean): Self = StObject.set(x, "baseline", value.asInstanceOf[js.Any])
     

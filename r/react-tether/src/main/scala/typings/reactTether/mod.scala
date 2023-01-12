@@ -108,7 +108,8 @@ object mod {
       __obj.asInstanceOf[ReactTetherProps]
     }
     
-    extension [Self <: ReactTetherProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReactTetherProps] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       

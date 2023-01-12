@@ -39,7 +39,8 @@ object PickCardStyleheaderConten {
     __obj.asInstanceOf[PickCardStyleheaderConten]
   }
   
-  extension [Self <: PickCardStyleheaderConten](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickCardStyleheaderConten] (val x: Self) extends AnyVal {
     
     inline def setHeaderContent(value: TextStyle): Self = StObject.set(x, "headerContent", value.asInstanceOf[js.Any])
     

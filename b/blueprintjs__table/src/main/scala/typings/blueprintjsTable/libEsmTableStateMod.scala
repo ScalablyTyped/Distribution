@@ -24,7 +24,8 @@ object libEsmTableStateMod {
       __obj.asInstanceOf[TableSnapshot]
     }
     
-    extension [Self <: TableSnapshot](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TableSnapshot] (val x: Self) extends AnyVal {
       
       inline def setNextScrollLeft(value: Double): Self = StObject.set(x, "nextScrollLeft", value.asInstanceOf[js.Any])
       
@@ -132,7 +133,8 @@ object libEsmTableStateMod {
       __obj.asInstanceOf[TableState]
     }
     
-    extension [Self <: TableState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TableState] (val x: Self) extends AnyVal {
       
       inline def setChildrenArray(value: js.Array[ReactElement]): Self = StObject.set(x, "childrenArray", value.asInstanceOf[js.Any])
       

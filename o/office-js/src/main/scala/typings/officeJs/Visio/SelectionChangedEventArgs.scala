@@ -35,7 +35,8 @@ object SelectionChangedEventArgs {
     __obj.asInstanceOf[SelectionChangedEventArgs]
   }
   
-  extension [Self <: SelectionChangedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SelectionChangedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setPageName(value: String): Self = StObject.set(x, "pageName", value.asInstanceOf[js.Any])
     

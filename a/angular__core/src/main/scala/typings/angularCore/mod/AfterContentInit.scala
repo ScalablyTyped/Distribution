@@ -21,7 +21,8 @@ object AfterContentInit {
     __obj.asInstanceOf[AfterContentInit]
   }
   
-  extension [Self <: AfterContentInit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AfterContentInit] (val x: Self) extends AnyVal {
     
     inline def setNgAfterContentInit(value: () => Unit): Self = StObject.set(x, "ngAfterContentInit", js.Any.fromFunction0(value))
   }

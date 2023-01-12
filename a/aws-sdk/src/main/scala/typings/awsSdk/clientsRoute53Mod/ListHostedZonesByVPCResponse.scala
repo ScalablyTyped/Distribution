@@ -28,7 +28,8 @@ object ListHostedZonesByVPCResponse {
     __obj.asInstanceOf[ListHostedZonesByVPCResponse]
   }
   
-  extension [Self <: ListHostedZonesByVPCResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListHostedZonesByVPCResponse] (val x: Self) extends AnyVal {
     
     inline def setHostedZoneSummaries(value: HostedZoneSummaries): Self = StObject.set(x, "HostedZoneSummaries", value.asInstanceOf[js.Any])
     

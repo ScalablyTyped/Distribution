@@ -93,7 +93,8 @@ object KnownStatsModule {
     __obj.asInstanceOf[KnownStatsModule]
   }
   
-  extension [Self <: KnownStatsModule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KnownStatsModule] (val x: Self) extends AnyVal {
     
     inline def setAssets(value: js.Array[String | Double]): Self = StObject.set(x, "assets", value.asInstanceOf[js.Any])
     

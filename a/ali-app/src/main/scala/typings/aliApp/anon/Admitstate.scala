@@ -57,7 +57,8 @@ object Admitstate {
     __obj.asInstanceOf[Admitstate]
   }
   
-  extension [Self <: Admitstate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Admitstate] (val x: Self) extends AnyVal {
     
     inline def setAdmit_state(value: Y | N | String): Self = StObject.set(x, "admit_state", value.asInstanceOf[js.Any])
     

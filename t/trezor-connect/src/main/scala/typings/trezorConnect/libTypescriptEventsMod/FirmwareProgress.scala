@@ -21,7 +21,8 @@ object FirmwareProgress {
     __obj.asInstanceOf[FirmwareProgress]
   }
   
-  extension [Self <: FirmwareProgress](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FirmwareProgress] (val x: Self) extends AnyVal {
     
     inline def setPayload(value: DeviceProgress): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object TildeNode {
     __obj.asInstanceOf[TildeNode]
   }
   
-  extension [Self <: TildeNode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TildeNode] (val x: Self) extends AnyVal {
     
     inline def setContents(value: js.Array[FragmentNode]): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
     

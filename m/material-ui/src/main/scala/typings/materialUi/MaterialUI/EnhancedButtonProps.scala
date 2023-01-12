@@ -53,7 +53,8 @@ object EnhancedButtonProps {
     __obj.asInstanceOf[EnhancedButtonProps]
   }
   
-  extension [Self <: EnhancedButtonProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnhancedButtonProps] (val x: Self) extends AnyVal {
     
     inline def setCenterRipple(value: Boolean): Self = StObject.set(x, "centerRipple", value.asInstanceOf[js.Any])
     

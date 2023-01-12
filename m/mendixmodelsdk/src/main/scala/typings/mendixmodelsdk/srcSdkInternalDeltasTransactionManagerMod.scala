@@ -83,7 +83,8 @@ object srcSdkInternalDeltasTransactionManagerMod {
       __obj.asInstanceOf[ITransactionOptions]
     }
     
-    extension [Self <: ITransactionOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITransactionOptions] (val x: Self) extends AnyVal {
       
       inline def setCommitCurrentImplicitTransaction(value: Boolean): Self = StObject.set(x, "commitCurrentImplicitTransaction", value.asInstanceOf[js.Any])
     }

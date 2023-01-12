@@ -23,7 +23,8 @@ object TabsProps {
     __obj.asInstanceOf[TabsProps]
   }
   
-  extension [Self <: TabsProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TabsProps] (val x: Self) extends AnyVal {
     
     inline def setDefaultSelectedIndex(value: Double): Self = StObject.set(x, "defaultSelectedIndex", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object WatcherSlackDynamicAttachment {
     __obj.asInstanceOf[WatcherSlackDynamicAttachment]
   }
   
-  extension [Self <: WatcherSlackDynamicAttachment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WatcherSlackDynamicAttachment] (val x: Self) extends AnyVal {
     
     inline def setAttachment_template(value: WatcherSlackAttachment): Self = StObject.set(x, "attachment_template", value.asInstanceOf[js.Any])
     

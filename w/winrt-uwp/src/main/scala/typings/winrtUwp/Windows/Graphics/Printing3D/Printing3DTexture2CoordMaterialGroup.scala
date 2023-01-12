@@ -28,7 +28,8 @@ object Printing3DTexture2CoordMaterialGroup {
     __obj.asInstanceOf[Printing3DTexture2CoordMaterialGroup]
   }
   
-  extension [Self <: Printing3DTexture2CoordMaterialGroup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Printing3DTexture2CoordMaterialGroup] (val x: Self) extends AnyVal {
     
     inline def setMaterialGroupId(value: Double): Self = StObject.set(x, "materialGroupId", value.asInstanceOf[js.Any])
     

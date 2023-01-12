@@ -16,7 +16,8 @@ object Refund {
     __obj.asInstanceOf[Refund]
   }
   
-  extension [Self <: Refund](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Refund] (val x: Self) extends AnyVal {
     
     inline def setRefund(value: RefundRefundRequest => js.Promise[AxiosResponse[RefundRefundResponse, Any]]): Self = StObject.set(x, "refund", js.Any.fromFunction1(value))
   }

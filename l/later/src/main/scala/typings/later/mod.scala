@@ -102,7 +102,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[DateProvider]
     }
     
-    extension [Self <: DateProvider](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DateProvider] (val x: Self) extends AnyVal {
       
       inline def setLocalTime(value: () => Unit): Self = StObject.set(x, "localTime", js.Any.fromFunction0(value))
       
@@ -177,7 +178,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[ModifierStatic]
     }
     
-    extension [Self <: ModifierStatic](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ModifierStatic] (val x: Self) extends AnyVal {
       
       inline def setAfter(value: Modifier): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
       
@@ -337,7 +339,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Recurrence]
     }
     
-    extension [Self <: Recurrence](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Recurrence] (val x: Self) extends AnyVal {
       
       inline def setD(value: js.Array[Double]): Self = StObject.set(x, "D", value.asInstanceOf[js.Any])
       
@@ -779,7 +782,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[ScheduleData]
     }
     
-    extension [Self <: ScheduleData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScheduleData] (val x: Self) extends AnyVal {
       
       inline def setError(value: Double): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
@@ -926,7 +930,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Static]
     }
     
-    extension [Self <: Static](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Static] (val x: Self) extends AnyVal {
       
       inline def setDate(value: DateProvider): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
       
@@ -1053,7 +1058,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Timer]
     }
     
-    extension [Self <: Timer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Timer] (val x: Self) extends AnyVal {
       
       inline def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
     }

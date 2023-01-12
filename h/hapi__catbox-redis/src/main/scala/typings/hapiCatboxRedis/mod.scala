@@ -78,7 +78,8 @@ object mod {
       __obj.asInstanceOf[CatboxRedisOptions]
     }
     
-    extension [Self <: CatboxRedisOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CatboxRedisOptions] (val x: Self) extends AnyVal {
       
       inline def setClient(value: Redis | Cluster): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
       

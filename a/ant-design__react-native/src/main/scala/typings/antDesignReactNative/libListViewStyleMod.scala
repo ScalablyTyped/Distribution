@@ -77,7 +77,8 @@ object libListViewStyleMod {
       __obj.asInstanceOf[ListStyle]
     }
     
-    extension [Self <: ListStyle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListStyle] (val x: Self) extends AnyVal {
       
       inline def setArrow(value: ViewStyle): Self = StObject.set(x, "Arrow", value.asInstanceOf[js.Any])
       

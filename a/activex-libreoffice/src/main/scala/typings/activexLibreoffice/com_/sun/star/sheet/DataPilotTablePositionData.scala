@@ -43,7 +43,8 @@ object DataPilotTablePositionData {
     __obj.asInstanceOf[DataPilotTablePositionData]
   }
   
-  extension [Self <: DataPilotTablePositionData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataPilotTablePositionData] (val x: Self) extends AnyVal {
     
     inline def setPositionData(value: Any): Self = StObject.set(x, "PositionData", value.asInstanceOf[js.Any])
     

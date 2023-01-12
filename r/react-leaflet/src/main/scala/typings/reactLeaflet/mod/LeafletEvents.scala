@@ -36,7 +36,8 @@ object LeafletEvents {
     __obj.asInstanceOf[LeafletEvents]
   }
   
-  extension [Self <: LeafletEvents](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LeafletEvents] (val x: Self) extends AnyVal {
     
     inline def setOnadd(value: /* event */ LeafletEvent => Unit): Self = StObject.set(x, "onadd", js.Any.fromFunction1(value))
     

@@ -142,7 +142,8 @@ object IgSplitter {
     __obj.asInstanceOf[IgSplitter]
   }
   
-  extension [Self <: IgSplitter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgSplitter] (val x: Self) extends AnyVal {
     
     inline def setCollapsed(value: (/* event */ Event, /* ui */ CollapsedEventUIParam) => Unit): Self = StObject.set(x, "collapsed", js.Any.fromFunction2(value))
     

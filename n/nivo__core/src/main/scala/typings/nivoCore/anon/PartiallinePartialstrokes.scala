@@ -16,7 +16,8 @@ object PartiallinePartialstrokes {
     __obj.asInstanceOf[PartiallinePartialstrokes]
   }
   
-  extension [Self <: PartiallinePartialstrokes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartiallinePartialstrokes] (val x: Self) extends AnyVal {
     
     inline def setLine(value: Partialstrokestringstroke): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
     

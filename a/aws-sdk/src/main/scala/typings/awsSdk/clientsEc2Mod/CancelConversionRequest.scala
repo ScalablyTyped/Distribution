@@ -28,7 +28,8 @@ object CancelConversionRequest {
     __obj.asInstanceOf[CancelConversionRequest]
   }
   
-  extension [Self <: CancelConversionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CancelConversionRequest] (val x: Self) extends AnyVal {
     
     inline def setConversionTaskId(value: ConversionTaskId): Self = StObject.set(x, "ConversionTaskId", value.asInstanceOf[js.Any])
     

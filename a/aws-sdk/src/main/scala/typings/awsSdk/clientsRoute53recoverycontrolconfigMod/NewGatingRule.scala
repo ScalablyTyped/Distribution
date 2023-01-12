@@ -50,7 +50,8 @@ object NewGatingRule {
     __obj.asInstanceOf[NewGatingRule]
   }
   
-  extension [Self <: NewGatingRule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NewGatingRule] (val x: Self) extends AnyVal {
     
     inline def setControlPanelArn(value: stringMin1Max256PatternAZaZ09): Self = StObject.set(x, "ControlPanelArn", value.asInstanceOf[js.Any])
     

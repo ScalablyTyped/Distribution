@@ -17,7 +17,8 @@ object AuthorizationCodeGrantOptions {
     __obj.asInstanceOf[AuthorizationCodeGrantOptions]
   }
   
-  extension [Self <: AuthorizationCodeGrantOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AuthorizationCodeGrantOptions] (val x: Self) extends AnyVal {
     
     inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     

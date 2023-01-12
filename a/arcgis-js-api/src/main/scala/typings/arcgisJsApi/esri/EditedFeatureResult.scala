@@ -27,7 +27,8 @@ object EditedFeatureResult {
     __obj.asInstanceOf[EditedFeatureResult]
   }
   
-  extension [Self <: EditedFeatureResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EditedFeatureResult] (val x: Self) extends AnyVal {
     
     inline def setEditedFeatures(value: EditedFeatureResultEditedFeatures): Self = StObject.set(x, "editedFeatures", value.asInstanceOf[js.Any])
     

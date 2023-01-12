@@ -30,7 +30,8 @@ object mod {
       __obj.asInstanceOf[ImageZoomDefaultStyles]
     }
     
-    extension [Self <: ImageZoomDefaultStyles](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ImageZoomDefaultStyles] (val x: Self) extends AnyVal {
       
       inline def setImage(value: js.Object): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
       
@@ -67,7 +68,8 @@ object mod {
       __obj.asInstanceOf[ImageZoomImage]
     }
     
-    extension [Self <: ImageZoomImage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ImageZoomImage] (val x: Self) extends AnyVal {
       
       inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
       
@@ -114,7 +116,8 @@ object mod {
       __obj.asInstanceOf[ImageZoomProps]
     }
     
-    extension [Self <: ImageZoomProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ImageZoomProps] (val x: Self) extends AnyVal {
       
       inline def setDefaultStyles(value: ImageZoomDefaultStyles): Self = StObject.set(x, "defaultStyles", value.asInstanceOf[js.Any])
       
@@ -173,7 +176,8 @@ object mod {
       __obj.asInstanceOf[ImageZoomZoomImage]
     }
     
-    extension [Self <: ImageZoomZoomImage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ImageZoomZoomImage] (val x: Self) extends AnyVal {
       
       inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
       

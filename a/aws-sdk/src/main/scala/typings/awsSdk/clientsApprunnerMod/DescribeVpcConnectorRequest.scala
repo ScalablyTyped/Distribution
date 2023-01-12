@@ -18,7 +18,8 @@ object DescribeVpcConnectorRequest {
     __obj.asInstanceOf[DescribeVpcConnectorRequest]
   }
   
-  extension [Self <: DescribeVpcConnectorRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeVpcConnectorRequest] (val x: Self) extends AnyVal {
     
     inline def setVpcConnectorArn(value: AppRunnerResourceArn): Self = StObject.set(x, "VpcConnectorArn", value.asInstanceOf[js.Any])
   }

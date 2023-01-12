@@ -19,7 +19,8 @@ object GetResponses200Content365 {
     __obj.asInstanceOf[GetResponses200Content365]
   }
   
-  extension [Self <: GetResponses200Content365](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetResponses200Content365] (val x: Self) extends AnyVal {
     
     inline def setGet(value: Responses200Content365): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
     

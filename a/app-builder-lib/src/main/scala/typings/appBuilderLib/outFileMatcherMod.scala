@@ -37,7 +37,8 @@ object outFileMatcherMod {
       __obj.asInstanceOf[GetFileMatchersOptions]
     }
     
-    extension [Self <: GetFileMatchersOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetFileMatchersOptions] (val x: Self) extends AnyVal {
       
       inline def setCustomBuildOptions(value: PlatformSpecificBuildOptions): Self = StObject.set(x, "customBuildOptions", value.asInstanceOf[js.Any])
       

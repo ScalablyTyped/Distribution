@@ -70,7 +70,8 @@ object FeatureSummary {
     __obj.asInstanceOf[FeatureSummary]
   }
   
-  extension [Self <: FeatureSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FeatureSummary] (val x: Self) extends AnyVal {
     
     inline def setArn(value: Arn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     

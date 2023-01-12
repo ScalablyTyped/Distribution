@@ -28,7 +28,8 @@ object anon {
       __obj.asInstanceOf[Error]
     }
     
-    extension [Self <: Error](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Error] (val x: Self) extends AnyVal {
       
       inline def setError(value: Null): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
@@ -56,7 +57,8 @@ object anon {
       __obj.asInstanceOf[PartialClearOptOutInOutOp]
     }
     
-    extension [Self <: PartialClearOptOutInOutOp](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialClearOptOutInOutOp] (val x: Self) extends AnyVal {
       
       inline def setCookie_expiration(value: Double): Self = StObject.set(x, "cookie_expiration", value.asInstanceOf[js.Any])
       
@@ -170,7 +172,8 @@ object anon {
       __obj.asInstanceOf[PartialConfig]
     }
     
-    extension [Self <: PartialConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialConfig] (val x: Self) extends AnyVal {
       
       inline def setApi_host(value: String): Self = StObject.set(x, "api_host", value.asInstanceOf[js.Any])
       
@@ -426,7 +429,8 @@ object anon {
       __obj.asInstanceOf[PartialConfigApihost]
     }
     
-    extension [Self <: PartialConfigApihost](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialConfigApihost] (val x: Self) extends AnyVal {
       
       inline def setApi_host(value: String): Self = StObject.set(x, "api_host", value.asInstanceOf[js.Any])
       
@@ -606,7 +610,8 @@ object anon {
       __obj.asInstanceOf[PartialHasOptedInOutOptio]
     }
     
-    extension [Self <: PartialHasOptedInOutOptio](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialHasOptedInOutOptio] (val x: Self) extends AnyVal {
       
       inline def setCookie_prefix(value: String): Self = StObject.set(x, "cookie_prefix", value.asInstanceOf[js.Any])
       
@@ -644,7 +649,8 @@ object anon {
       __obj.asInstanceOf[PartialInTrackingOptions]
     }
     
-    extension [Self <: PartialInTrackingOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialInTrackingOptions] (val x: Self) extends AnyVal {
       
       inline def setCookie_expiration(value: Double): Self = StObject.set(x, "cookie_expiration", value.asInstanceOf[js.Any])
       
@@ -702,7 +708,8 @@ object anon {
       __obj.asInstanceOf[PartialOutTrackingOptions]
     }
     
-    extension [Self <: PartialOutTrackingOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialOutTrackingOptions] (val x: Self) extends AnyVal {
       
       inline def setCookie_expiration(value: Double): Self = StObject.set(x, "cookie_expiration", value.asInstanceOf[js.Any])
       
@@ -745,7 +752,8 @@ object anon {
       __obj.asInstanceOf[Status]
     }
     
-    extension [Self <: Status](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Status] (val x: Self) extends AnyVal {
       
       inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       

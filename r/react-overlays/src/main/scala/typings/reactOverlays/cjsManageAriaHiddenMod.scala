@@ -31,7 +31,8 @@ object cjsManageAriaHiddenMod {
       __obj.asInstanceOf[SiblingExclusions]
     }
     
-    extension [Self <: SiblingExclusions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SiblingExclusions] (val x: Self) extends AnyVal {
       
       inline def setBackdrop(value: Element): Self = StObject.set(x, "backdrop", value.asInstanceOf[js.Any])
       

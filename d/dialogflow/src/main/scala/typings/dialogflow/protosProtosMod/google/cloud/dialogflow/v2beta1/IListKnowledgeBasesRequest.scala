@@ -23,7 +23,8 @@ object IListKnowledgeBasesRequest {
     __obj.asInstanceOf[IListKnowledgeBasesRequest]
   }
   
-  extension [Self <: IListKnowledgeBasesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IListKnowledgeBasesRequest] (val x: Self) extends AnyVal {
     
     inline def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
     

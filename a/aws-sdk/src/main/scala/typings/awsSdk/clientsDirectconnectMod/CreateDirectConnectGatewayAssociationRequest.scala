@@ -33,7 +33,8 @@ object CreateDirectConnectGatewayAssociationRequest {
     __obj.asInstanceOf[CreateDirectConnectGatewayAssociationRequest]
   }
   
-  extension [Self <: CreateDirectConnectGatewayAssociationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateDirectConnectGatewayAssociationRequest] (val x: Self) extends AnyVal {
     
     inline def setAddAllowedPrefixesToDirectConnectGateway(value: RouteFilterPrefixList): Self = StObject.set(x, "addAllowedPrefixesToDirectConnectGateway", value.asInstanceOf[js.Any])
     

@@ -50,7 +50,8 @@ object XDrawPages {
     __obj.asInstanceOf[XDrawPages]
   }
   
-  extension [Self <: XDrawPages](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XDrawPages] (val x: Self) extends AnyVal {
     
     inline def setInsertNewByIndex(value: Double => XDrawPage): Self = StObject.set(x, "insertNewByIndex", js.Any.fromFunction1(value))
     

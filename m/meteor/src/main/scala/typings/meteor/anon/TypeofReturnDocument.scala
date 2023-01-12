@@ -19,7 +19,8 @@ object TypeofReturnDocument {
     __obj.asInstanceOf[TypeofReturnDocument]
   }
   
-  extension [Self <: TypeofReturnDocument](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofReturnDocument] (val x: Self) extends AnyVal {
     
     inline def setAFTER(value: after): Self = StObject.set(x, "AFTER", value.asInstanceOf[js.Any])
     

@@ -31,7 +31,8 @@ object Ssn4InformationInput {
     __obj.asInstanceOf[Ssn4InformationInput]
   }
   
-  extension [Self <: Ssn4InformationInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Ssn4InformationInput] (val x: Self) extends AnyVal {
     
     inline def setDisplayLevelCode(value: String): Self = StObject.set(x, "displayLevelCode", value.asInstanceOf[js.Any])
     

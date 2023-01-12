@@ -47,7 +47,8 @@ object TestConfigurationInEnvironmentParams {
     __obj.asInstanceOf[TestConfigurationInEnvironmentParams]
   }
   
-  extension [Self <: TestConfigurationInEnvironmentParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TestConfigurationInEnvironmentParams] (val x: Self) extends AnyVal {
     
     inline def setConfiguration(value: String): Self = StObject.set(x, "configuration", value.asInstanceOf[js.Any])
     

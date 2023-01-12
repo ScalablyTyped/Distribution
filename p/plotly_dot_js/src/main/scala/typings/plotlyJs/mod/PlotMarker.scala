@@ -71,7 +71,8 @@ object PlotMarker {
     __obj.asInstanceOf[PlotMarker]
   }
   
-  extension [Self <: PlotMarker](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotMarker] (val x: Self) extends AnyVal {
     
     inline def setAutocolorscale(value: Boolean): Self = StObject.set(x, "autocolorscale", value.asInstanceOf[js.Any])
     

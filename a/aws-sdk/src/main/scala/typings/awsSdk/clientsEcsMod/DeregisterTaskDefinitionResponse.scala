@@ -18,7 +18,8 @@ object DeregisterTaskDefinitionResponse {
     __obj.asInstanceOf[DeregisterTaskDefinitionResponse]
   }
   
-  extension [Self <: DeregisterTaskDefinitionResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeregisterTaskDefinitionResponse] (val x: Self) extends AnyVal {
     
     inline def setTaskDefinition(value: TaskDefinition): Self = StObject.set(x, "taskDefinition", value.asInstanceOf[js.Any])
     

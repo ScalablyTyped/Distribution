@@ -324,7 +324,8 @@ object mod {
       __obj.asInstanceOf[TinderHistory]
     }
     
-    extension [Self <: TinderHistory](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TinderHistory] (val x: Self) extends AnyVal {
       
       inline def setBlocks(value: js.Array[String]): Self = StObject.set(x, "blocks", value.asInstanceOf[js.Any])
       
@@ -373,7 +374,8 @@ object mod {
       __obj.asInstanceOf[TinderLikedMessage]
     }
     
-    extension [Self <: TinderLikedMessage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TinderLikedMessage] (val x: Self) extends AnyVal {
       
       inline def setIs_liked(value: Boolean): Self = StObject.set(x, "is_liked", value.asInstanceOf[js.Any])
       
@@ -448,7 +450,8 @@ object mod {
       __obj.asInstanceOf[TinderMatch]
     }
     
-    extension [Self <: TinderMatch](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TinderMatch] (val x: Self) extends AnyVal {
       
       inline def setClosed(value: Boolean): Self = StObject.set(x, "closed", value.asInstanceOf[js.Any])
       
@@ -524,7 +527,8 @@ object mod {
       __obj.asInstanceOf[TinderMessage]
     }
     
-    extension [Self <: TinderMessage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TinderMessage] (val x: Self) extends AnyVal {
       
       inline def setCreated_date(value: String): Self = StObject.set(x, "created_date", value.asInstanceOf[js.Any])
       
@@ -581,7 +585,8 @@ object mod {
       __obj.asInstanceOf[TinderPerson]
     }
     
-    extension [Self <: TinderPerson](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TinderPerson] (val x: Self) extends AnyVal {
       
       inline def setBadges(value: js.Array[Any]): Self = StObject.set(x, "badges", value.asInstanceOf[js.Any])
       
@@ -648,7 +653,8 @@ object mod {
       __obj.asInstanceOf[TinderPhoto]
     }
     
-    extension [Self <: TinderPhoto](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TinderPhoto] (val x: Self) extends AnyVal {
       
       inline def setExtension(value: String): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
       
@@ -689,7 +695,8 @@ object mod {
       __obj.asInstanceOf[TinderPhotoProcessedFile]
     }
     
-    extension [Self <: TinderPhotoProcessedFile](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TinderPhotoProcessedFile] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -772,7 +779,8 @@ object mod {
       __obj.asInstanceOf[TinderRecommendation]
     }
     
-    extension [Self <: TinderRecommendation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TinderRecommendation] (val x: Self) extends AnyVal {
       
       inline def setBadges(value: js.Array[Any]): Self = StObject.set(x, "badges", value.asInstanceOf[js.Any])
       
@@ -849,7 +857,8 @@ object mod {
       __obj.asInstanceOf[TinderRecommendationsResult]
     }
     
-    extension [Self <: TinderRecommendationsResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TinderRecommendationsResult] (val x: Self) extends AnyVal {
       
       inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
@@ -897,7 +906,8 @@ object mod {
       __obj.asInstanceOf[TinderUpdates]
     }
     
-    extension [Self <: TinderUpdates](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TinderUpdates] (val x: Self) extends AnyVal {
       
       inline def setBlocks(value: js.Array[Any]): Self = StObject.set(x, "blocks", value.asInstanceOf[js.Any])
       

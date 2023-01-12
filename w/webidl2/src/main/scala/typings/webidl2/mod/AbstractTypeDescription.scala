@@ -27,7 +27,8 @@ object AbstractTypeDescription {
     __obj.asInstanceOf[AbstractTypeDescription]
   }
   
-  extension [Self <: AbstractTypeDescription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AbstractTypeDescription] (val x: Self) extends AnyVal {
     
     inline def setNullable(value: Boolean): Self = StObject.set(x, "nullable", value.asInstanceOf[js.Any])
     

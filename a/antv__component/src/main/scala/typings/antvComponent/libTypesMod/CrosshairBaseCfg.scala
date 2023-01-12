@@ -34,7 +34,8 @@ object CrosshairBaseCfg {
     __obj.asInstanceOf[CrosshairBaseCfg]
   }
   
-  extension [Self <: CrosshairBaseCfg](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CrosshairBaseCfg] (val x: Self) extends AnyVal {
     
     inline def setLine(value: CrosshairLineCfg): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
     

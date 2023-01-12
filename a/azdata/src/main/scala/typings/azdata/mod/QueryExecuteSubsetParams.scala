@@ -29,7 +29,8 @@ object QueryExecuteSubsetParams {
     __obj.asInstanceOf[QueryExecuteSubsetParams]
   }
   
-  extension [Self <: QueryExecuteSubsetParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryExecuteSubsetParams] (val x: Self) extends AnyVal {
     
     inline def setBatchIndex(value: Double): Self = StObject.set(x, "batchIndex", value.asInstanceOf[js.Any])
     

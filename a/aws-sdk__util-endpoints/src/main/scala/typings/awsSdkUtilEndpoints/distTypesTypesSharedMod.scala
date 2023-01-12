@@ -22,7 +22,8 @@ object distTypesTypesSharedMod {
       __obj.asInstanceOf[ConditionObject]
     }
     
-    extension [Self <: ConditionObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConditionObject] (val x: Self) extends AnyVal {
       
       inline def setAssign(value: String): Self = StObject.set(x, "assign", value.asInstanceOf[js.Any])
       
@@ -45,7 +46,8 @@ object distTypesTypesSharedMod {
       __obj.asInstanceOf[EndpointResolverOptions]
     }
     
-    extension [Self <: EndpointResolverOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EndpointResolverOptions] (val x: Self) extends AnyVal {
       
       inline def setEndpointParams(value: EndpointParams): Self = StObject.set(x, "endpointParams", value.asInstanceOf[js.Any])
       
@@ -68,7 +70,8 @@ object distTypesTypesSharedMod {
       __obj.asInstanceOf[EvaluateOptions]
     }
     
-    extension [Self <: EvaluateOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EvaluateOptions] (val x: Self) extends AnyVal {
       
       inline def setReferenceRecord(value: ReferenceRecord): Self = StObject.set(x, "referenceRecord", value.asInstanceOf[js.Any])
     }
@@ -98,7 +101,8 @@ object distTypesTypesSharedMod {
       __obj.asInstanceOf[FunctionObject]
     }
     
-    extension [Self <: FunctionObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FunctionObject] (val x: Self) extends AnyVal {
       
       inline def setArgv(value: FunctionArgv): Self = StObject.set(x, "argv", value.asInstanceOf[js.Any])
       
@@ -131,7 +135,8 @@ object distTypesTypesSharedMod {
       __obj.asInstanceOf[ReferenceObject]
     }
     
-    extension [Self <: ReferenceObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReferenceObject] (val x: Self) extends AnyVal {
       
       inline def setRef(value: String): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
     }

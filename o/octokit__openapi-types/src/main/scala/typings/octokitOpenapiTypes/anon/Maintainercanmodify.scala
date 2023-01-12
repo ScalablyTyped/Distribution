@@ -33,7 +33,8 @@ object Maintainercanmodify {
     __obj.asInstanceOf[Maintainercanmodify]
   }
   
-  extension [Self <: Maintainercanmodify](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Maintainercanmodify] (val x: Self) extends AnyVal {
     
     inline def setBase(value: String): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
     

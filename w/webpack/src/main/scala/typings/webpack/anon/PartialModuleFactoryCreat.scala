@@ -20,7 +20,8 @@ object PartialModuleFactoryCreat {
     __obj.asInstanceOf[PartialModuleFactoryCreat]
   }
   
-  extension [Self <: PartialModuleFactoryCreat](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialModuleFactoryCreat] (val x: Self) extends AnyVal {
     
     inline def setCompiler(value: String): Self = StObject.set(x, "compiler", value.asInstanceOf[js.Any])
     

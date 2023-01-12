@@ -24,7 +24,8 @@ object JobPlacement {
     __obj.asInstanceOf[JobPlacement]
   }
   
-  extension [Self <: JobPlacement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JobPlacement] (val x: Self) extends AnyVal {
     
     inline def setClusterLabels(
       value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any

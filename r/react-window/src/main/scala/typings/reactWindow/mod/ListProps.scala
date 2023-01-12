@@ -111,7 +111,8 @@ object ListProps {
     __obj.asInstanceOf[ListProps[T]]
   }
   
-  extension [Self <: ListProps[?], T](x: Self & ListProps[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListProps[?], T] (val x: Self & ListProps[T]) extends AnyVal {
     
     inline def setChildren(value: ComponentType[ListChildComponentProps[T]]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

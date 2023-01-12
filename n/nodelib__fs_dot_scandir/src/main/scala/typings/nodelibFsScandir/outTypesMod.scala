@@ -40,7 +40,8 @@ object outTypesMod {
       __obj.asInstanceOf[Dirent]
     }
     
-    extension [Self <: Dirent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Dirent] (val x: Self) extends AnyVal {
       
       inline def setIsBlockDevice(value: () => Boolean): Self = StObject.set(x, "isBlockDevice", js.Any.fromFunction0(value))
       
@@ -77,7 +78,8 @@ object outTypesMod {
       __obj.asInstanceOf[Entry]
     }
     
-    extension [Self <: Entry](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Entry] (val x: Self) extends AnyVal {
       
       inline def setDirent(value: Dirent): Self = StObject.set(x, "dirent", value.asInstanceOf[js.Any])
       

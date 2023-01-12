@@ -42,7 +42,8 @@ object libCommandpaletteMod {
     @js.native
     val ^ : Token[ICommandPalette] = js.native
     
-    extension [Self <: ICommandPalette](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICommandPalette] (val x: Self) extends AnyVal {
       
       inline def setActivate(value: () => Unit): Self = StObject.set(x, "activate", js.Any.fromFunction0(value))
       
@@ -104,7 +105,8 @@ object libCommandpaletteMod {
         __obj.asInstanceOf[IOptions]
       }
       
-      extension [Self <: IOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
         
         inline def setCommandPalette(value: CommandPalette): Self = StObject.set(x, "commandPalette", value.asInstanceOf[js.Any])
       }

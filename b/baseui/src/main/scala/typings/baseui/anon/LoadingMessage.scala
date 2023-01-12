@@ -17,7 +17,8 @@ object LoadingMessage {
     __obj.asInstanceOf[LoadingMessage]
   }
   
-  extension [Self <: LoadingMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LoadingMessage] (val x: Self) extends AnyVal {
     
     inline def setData(value: js.Array[Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

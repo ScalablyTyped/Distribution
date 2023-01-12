@@ -83,7 +83,8 @@ object mod {
       __obj.asInstanceOf[RedisServerOptions]
     }
     
-    extension [Self <: RedisServerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RedisServerOptions] (val x: Self) extends AnyVal {
       
       inline def setBin(value: String): Self = StObject.set(x, "bin", value.asInstanceOf[js.Any])
       

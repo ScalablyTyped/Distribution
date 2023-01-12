@@ -26,7 +26,8 @@ object ReadonlyInputAccessoryVie {
     __obj.asInstanceOf[ReadonlyInputAccessoryVie]
   }
   
-  extension [Self <: ReadonlyInputAccessoryVie](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadonlyInputAccessoryVie] (val x: Self) extends AnyVal {
     
     inline def setBackgroundColor(value: ColorValue): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     

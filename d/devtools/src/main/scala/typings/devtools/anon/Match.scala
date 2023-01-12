@@ -30,7 +30,8 @@ object Match {
     __obj.asInstanceOf[Match]
   }
   
-  extension [Self <: Match](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Match] (val x: Self) extends AnyVal {
     
     inline def setDefault(value: WebDriverLogTypes): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     

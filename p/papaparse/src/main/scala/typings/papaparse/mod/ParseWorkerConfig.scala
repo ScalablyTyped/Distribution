@@ -30,7 +30,8 @@ object ParseWorkerConfig {
     __obj.asInstanceOf[ParseWorkerConfig[T]]
   }
   
-  extension [Self <: ParseWorkerConfig[?], T](x: Self & ParseWorkerConfig[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParseWorkerConfig[?], T] (val x: Self & ParseWorkerConfig[T]) extends AnyVal {
     
     inline def setComplete(value: ParseResult[T] => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
     

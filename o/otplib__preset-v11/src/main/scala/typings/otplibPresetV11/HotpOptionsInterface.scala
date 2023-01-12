@@ -22,7 +22,8 @@ object HotpOptionsInterface {
     __obj.asInstanceOf[HotpOptionsInterface]
   }
   
-  extension [Self <: HotpOptionsInterface](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HotpOptionsInterface] (val x: Self) extends AnyVal {
     
     inline def setCreateHmacSecret(value: (/* secret */ String, /* options */ HmacOptions) => Buffer): Self = StObject.set(x, "createHmacSecret", js.Any.fromFunction2(value))
     

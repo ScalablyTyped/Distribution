@@ -26,7 +26,8 @@ object KeyPollerOptions {
     __obj.asInstanceOf[KeyPollerOptions]
   }
   
-  extension [Self <: KeyPollerOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KeyPollerOptions] (val x: Self) extends AnyVal {
     
     inline def setIntervalInMs(value: Double): Self = StObject.set(x, "intervalInMs", value.asInstanceOf[js.Any])
     

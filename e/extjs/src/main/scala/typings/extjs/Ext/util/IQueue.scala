@@ -30,7 +30,8 @@ object IQueue {
     __obj.asInstanceOf[IQueue]
   }
   
-  extension [Self <: IQueue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IQueue] (val x: Self) extends AnyVal {
     
     inline def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
     

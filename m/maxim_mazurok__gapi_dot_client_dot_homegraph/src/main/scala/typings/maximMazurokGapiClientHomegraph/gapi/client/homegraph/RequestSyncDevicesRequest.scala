@@ -22,7 +22,8 @@ object RequestSyncDevicesRequest {
     __obj.asInstanceOf[RequestSyncDevicesRequest]
   }
   
-  extension [Self <: RequestSyncDevicesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RequestSyncDevicesRequest] (val x: Self) extends AnyVal {
     
     inline def setAgentUserId(value: String): Self = StObject.set(x, "agentUserId", value.asInstanceOf[js.Any])
     

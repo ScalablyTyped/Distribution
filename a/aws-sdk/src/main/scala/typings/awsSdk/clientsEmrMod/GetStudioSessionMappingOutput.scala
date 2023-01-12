@@ -18,7 +18,8 @@ object GetStudioSessionMappingOutput {
     __obj.asInstanceOf[GetStudioSessionMappingOutput]
   }
   
-  extension [Self <: GetStudioSessionMappingOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetStudioSessionMappingOutput] (val x: Self) extends AnyVal {
     
     inline def setSessionMapping(value: SessionMappingDetail): Self = StObject.set(x, "SessionMapping", value.asInstanceOf[js.Any])
     

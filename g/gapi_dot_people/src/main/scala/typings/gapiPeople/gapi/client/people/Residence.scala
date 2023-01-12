@@ -19,7 +19,8 @@ object Residence {
     __obj.asInstanceOf[Residence]
   }
   
-  extension [Self <: Residence](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Residence] (val x: Self) extends AnyVal {
     
     inline def setCurrent(value: Boolean): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
     

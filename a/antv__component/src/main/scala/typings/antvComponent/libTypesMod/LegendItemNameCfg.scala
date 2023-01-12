@@ -32,7 +32,8 @@ object LegendItemNameCfg {
     __obj.asInstanceOf[LegendItemNameCfg]
   }
   
-  extension [Self <: LegendItemNameCfg](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LegendItemNameCfg] (val x: Self) extends AnyVal {
     
     inline def setFormatter(value: (/* text */ String, /* item */ ListItem, /* index */ Double) => Any): Self = StObject.set(x, "formatter", js.Any.fromFunction3(value))
     

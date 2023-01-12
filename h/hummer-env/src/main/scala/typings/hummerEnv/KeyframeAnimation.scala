@@ -56,7 +56,8 @@ object KeyframeAnimation {
     __obj.asInstanceOf[KeyframeAnimation[V]]
   }
   
-  extension [Self <: KeyframeAnimation[?], V](x: Self & KeyframeAnimation[V]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KeyframeAnimation[?], V] (val x: Self & KeyframeAnimation[V]) extends AnyVal {
     
     inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
     

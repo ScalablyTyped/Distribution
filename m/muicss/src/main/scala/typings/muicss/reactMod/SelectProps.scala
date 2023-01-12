@@ -24,7 +24,8 @@ object SelectProps {
     __obj.asInstanceOf[SelectProps]
   }
   
-  extension [Self <: SelectProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SelectProps] (val x: Self) extends AnyVal {
     
     inline def setLabel(value: ReactNode): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     

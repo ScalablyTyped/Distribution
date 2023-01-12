@@ -16,7 +16,8 @@ object DataSourceRefreshDailySchedule {
     __obj.asInstanceOf[DataSourceRefreshDailySchedule]
   }
   
-  extension [Self <: DataSourceRefreshDailySchedule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataSourceRefreshDailySchedule] (val x: Self) extends AnyVal {
     
     inline def setStartTime(value: TimeOfDay): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     

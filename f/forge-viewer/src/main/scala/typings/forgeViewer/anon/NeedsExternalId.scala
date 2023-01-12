@@ -19,7 +19,8 @@ object NeedsExternalId {
     __obj.asInstanceOf[NeedsExternalId]
   }
   
-  extension [Self <: NeedsExternalId](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NeedsExternalId] (val x: Self) extends AnyVal {
     
     inline def setIgnoreHidden(value: Boolean): Self = StObject.set(x, "ignoreHidden", value.asInstanceOf[js.Any])
     

@@ -33,7 +33,8 @@ object ContainerDatasetAction {
     __obj.asInstanceOf[ContainerDatasetAction]
   }
   
-  extension [Self <: ContainerDatasetAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContainerDatasetAction] (val x: Self) extends AnyVal {
     
     inline def setExecutionRoleArn(value: RoleArn): Self = StObject.set(x, "executionRoleArn", value.asInstanceOf[js.Any])
     

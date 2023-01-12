@@ -27,7 +27,8 @@ object RowRangeAst {
     __obj.asInstanceOf[RowRangeAst]
   }
   
-  extension [Self <: RowRangeAst](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RowRangeAst] (val x: Self) extends AnyVal {
     
     inline def setEnd(value: RowAddress): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     

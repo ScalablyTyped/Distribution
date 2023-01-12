@@ -194,7 +194,8 @@ object typesClientPjaxMod {
       __obj.asInstanceOf[RoadsPjax]
     }
     
-    extension [Self <: RoadsPjax](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RoadsPjax] (val x: Self) extends AnyVal {
       
       inline def setAddTitleMiddleware(value: String => RoadsPjax): Self = StObject.set(x, "addTitleMiddleware", js.Any.fromFunction1(value))
       

@@ -18,7 +18,8 @@ object OnVisibilityToggleData {
     __obj.asInstanceOf[OnVisibilityToggleData[T]]
   }
   
-  extension [Self <: OnVisibilityToggleData[?], T](x: Self & OnVisibilityToggleData[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnVisibilityToggleData[?], T] (val x: Self & OnVisibilityToggleData[T]) extends AnyVal {
     
     inline def setExpanded(value: Boolean): Self = StObject.set(x, "expanded", value.asInstanceOf[js.Any])
   }

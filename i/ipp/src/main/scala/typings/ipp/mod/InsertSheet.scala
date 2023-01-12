@@ -21,7 +21,8 @@ object InsertSheet {
     __obj.asInstanceOf[InsertSheet]
   }
   
-  extension [Self <: InsertSheet](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InsertSheet] (val x: Self) extends AnyVal {
     
     inline def `setInsert-after-page-number`(value: Double): Self = StObject.set(x, "insert-after-page-number", value.asInstanceOf[js.Any])
     

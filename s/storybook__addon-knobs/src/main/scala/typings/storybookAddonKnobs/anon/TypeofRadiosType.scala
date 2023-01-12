@@ -32,7 +32,8 @@ object TypeofRadiosType {
     __obj.asInstanceOf[TypeofRadiosType]
   }
   
-  extension [Self <: TypeofRadiosType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofRadiosType] (val x: Self) extends AnyVal {
     
     inline def setDefaultProps(value: RadiosTypeProps): Self = StObject.set(x, "defaultProps", value.asInstanceOf[js.Any])
     

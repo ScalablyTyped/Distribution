@@ -18,7 +18,8 @@ object FileReplacements {
     __obj.asInstanceOf[FileReplacements]
   }
   
-  extension [Self <: FileReplacements](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FileReplacements] (val x: Self) extends AnyVal {
     
     inline def setReplace(value: String): Self = StObject.set(x, "replace", value.asInstanceOf[js.Any])
     

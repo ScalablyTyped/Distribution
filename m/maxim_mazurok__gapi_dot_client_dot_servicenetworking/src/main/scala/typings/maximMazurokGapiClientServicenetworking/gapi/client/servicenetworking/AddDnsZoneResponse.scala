@@ -19,7 +19,8 @@ object AddDnsZoneResponse {
     __obj.asInstanceOf[AddDnsZoneResponse]
   }
   
-  extension [Self <: AddDnsZoneResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AddDnsZoneResponse] (val x: Self) extends AnyVal {
     
     inline def setConsumerPeeringZone(value: DnsZone): Self = StObject.set(x, "consumerPeeringZone", value.asInstanceOf[js.Any])
     

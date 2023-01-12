@@ -23,7 +23,8 @@ object CacheSubnetGroupMessage {
     __obj.asInstanceOf[CacheSubnetGroupMessage]
   }
   
-  extension [Self <: CacheSubnetGroupMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CacheSubnetGroupMessage] (val x: Self) extends AnyVal {
     
     inline def setCacheSubnetGroups(value: CacheSubnetGroups): Self = StObject.set(x, "CacheSubnetGroups", value.asInstanceOf[js.Any])
     

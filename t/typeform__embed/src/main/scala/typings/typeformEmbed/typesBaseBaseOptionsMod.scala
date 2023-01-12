@@ -36,7 +36,8 @@ object typesBaseBaseOptionsMod {
       __obj.asInstanceOf[BaseOptions]
     }
     
-    extension [Self <: BaseOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseOptions] (val x: Self) extends AnyVal {
       
       inline def setChat(value: Boolean): Self = StObject.set(x, "chat", value.asInstanceOf[js.Any])
       

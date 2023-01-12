@@ -24,7 +24,8 @@ object libOrgOsflashSignalsEventsIbubbleeventhandlerMod {
       __obj.asInstanceOf[IBubbleEventHandler]
     }
     
-    extension [Self <: IBubbleEventHandler](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IBubbleEventHandler] (val x: Self) extends AnyVal {
       
       inline def setOnEventBubbled(value: IEvent => Boolean): Self = StObject.set(x, "onEventBubbled", js.Any.fromFunction1(value))
     }

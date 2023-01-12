@@ -52,7 +52,8 @@ object Input {
       __obj.asInstanceOf[KeyboardCapabilities]
     }
     
-    extension [Self <: KeyboardCapabilities](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KeyboardCapabilities] (val x: Self) extends AnyVal {
       
       inline def setKeyboardPresent(value: Double): Self = StObject.set(x, "keyboardPresent", value.asInstanceOf[js.Any])
     }
@@ -89,7 +90,8 @@ object Input {
       __obj.asInstanceOf[MouseCapabilities]
     }
     
-    extension [Self <: MouseCapabilities](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MouseCapabilities] (val x: Self) extends AnyVal {
       
       inline def setHorizontalWheelPresent(value: Double): Self = StObject.set(x, "horizontalWheelPresent", value.asInstanceOf[js.Any])
       
@@ -119,7 +121,8 @@ object Input {
       __obj.asInstanceOf[MouseDelta]
     }
     
-    extension [Self <: MouseDelta](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MouseDelta] (val x: Self) extends AnyVal {
       
       inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
@@ -159,7 +162,8 @@ object Input {
       __obj.asInstanceOf[MouseEventArgs]
     }
     
-    extension [Self <: MouseEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MouseEventArgs] (val x: Self) extends AnyVal {
       
       inline def setMouseDelta(value: MouseDelta): Self = StObject.set(x, "mouseDelta", value.asInstanceOf[js.Any])
     }
@@ -204,7 +208,8 @@ object Input {
       __obj.asInstanceOf[PointerDevice]
     }
     
-    extension [Self <: PointerDevice](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PointerDevice] (val x: Self) extends AnyVal {
       
       inline def setIsIntegrated(value: Boolean): Self = StObject.set(x, "isIntegrated", value.asInstanceOf[js.Any])
       
@@ -265,7 +270,8 @@ object Input {
       __obj.asInstanceOf[PointerDeviceUsage]
     }
     
-    extension [Self <: PointerDeviceUsage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PointerDeviceUsage] (val x: Self) extends AnyVal {
       
       inline def setMaxLogical(value: Double): Self = StObject.set(x, "maxLogical", value.asInstanceOf[js.Any])
       
@@ -301,7 +307,8 @@ object Input {
       __obj.asInstanceOf[TouchCapabilities]
     }
     
-    extension [Self <: TouchCapabilities](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TouchCapabilities] (val x: Self) extends AnyVal {
       
       inline def setContacts(value: Double): Self = StObject.set(x, "contacts", value.asInstanceOf[js.Any])
       

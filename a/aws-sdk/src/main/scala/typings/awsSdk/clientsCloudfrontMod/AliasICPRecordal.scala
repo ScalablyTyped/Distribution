@@ -23,7 +23,8 @@ object AliasICPRecordal {
     __obj.asInstanceOf[AliasICPRecordal]
   }
   
-  extension [Self <: AliasICPRecordal](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AliasICPRecordal] (val x: Self) extends AnyVal {
     
     inline def setCNAME(value: String): Self = StObject.set(x, "CNAME", value.asInstanceOf[js.Any])
     

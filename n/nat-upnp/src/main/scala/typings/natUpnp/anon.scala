@@ -21,7 +21,8 @@ object anon {
       __obj.asInstanceOf[`0`]
     }
     
-    extension [Self <: `0`](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: `0`] (val x: Self) extends AnyVal {
       
       inline def setDevice(value: RawDevice): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
       
@@ -44,7 +45,8 @@ object anon {
       __obj.asInstanceOf[ControlURL]
     }
     
-    extension [Self <: ControlURL](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ControlURL] (val x: Self) extends AnyVal {
       
       inline def setControlURL(value: String): Self = StObject.set(x, "controlURL", value.asInstanceOf[js.Any])
       
@@ -65,7 +67,8 @@ object anon {
       __obj.asInstanceOf[Device]
     }
     
-    extension [Self <: Device](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Device] (val x: Self) extends AnyVal {
       
       inline def setDevice(value: RawDevice | js.Array[RawDevice]): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
       
@@ -86,7 +89,8 @@ object anon {
       __obj.asInstanceOf[Devices]
     }
     
-    extension [Self <: Devices](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Devices] (val x: Self) extends AnyVal {
       
       inline def setDevices(value: js.Array[RawDevice]): Self = StObject.set(x, "devices", value.asInstanceOf[js.Any])
       
@@ -112,7 +116,8 @@ object anon {
       __obj.asInstanceOf[Dictkey]
     }
     
-    extension [Self <: Dictkey](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Dictkey] (val x: Self) extends AnyVal {
       
       inline def `set@`(value: Xmlnsu): Self = StObject.set(x, "@", value.asInstanceOf[js.Any])
     }
@@ -131,7 +136,8 @@ object anon {
       __obj.asInstanceOf[Host]
     }
     
-    extension [Self <: Host](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Host] (val x: Self) extends AnyVal {
       
       inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       
@@ -156,7 +162,8 @@ object anon {
       __obj.asInstanceOf[Port]
     }
     
-    extension [Self <: Port](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Port] (val x: Self) extends AnyVal {
       
       inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       
@@ -175,7 +182,8 @@ object anon {
       __obj.asInstanceOf[Service]
     }
     
-    extension [Self <: Service](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Service] (val x: Self) extends AnyVal {
       
       inline def setService(value: RawService | js.Array[RawService]): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
       
@@ -196,7 +204,8 @@ object anon {
       __obj.asInstanceOf[Xmlnsu]
     }
     
-    extension [Self <: Xmlnsu](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Xmlnsu] (val x: Self) extends AnyVal {
       
       inline def setXmlnsColonu(value: String): Self = StObject.set(x, "xmlns:u", value.asInstanceOf[js.Any])
     }
@@ -213,7 +222,8 @@ object anon {
       __obj.asInstanceOf[_empty]
     }
     
-    extension [Self <: _empty](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: _empty] (val x: Self) extends AnyVal {
       
       inline def `set@`(value: Record[String, String]): Self = StObject.set(x, "@", value.asInstanceOf[js.Any])
       

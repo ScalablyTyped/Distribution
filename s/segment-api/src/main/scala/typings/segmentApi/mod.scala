@@ -140,7 +140,8 @@ object mod {
       __obj.asInstanceOf[Address]
     }
     
-    extension [Self <: Address](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Address] (val x: Self) extends AnyVal {
       
       inline def setCity(value: String): Self = StObject.set(x, "city", value.asInstanceOf[js.Any])
       
@@ -185,7 +186,8 @@ object mod {
       __obj.asInstanceOf[Company]
     }
     
-    extension [Self <: Company](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Company] (val x: Self) extends AnyVal {
       
       inline def setEmployee_count(value: Double): Self = StObject.set(x, "employee_count", value.asInstanceOf[js.Any])
       
@@ -264,7 +266,8 @@ object mod {
       __obj.asInstanceOf[Traits]
     }
     
-    extension [Self <: Traits](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Traits] (val x: Self) extends AnyVal {
       
       inline def setAddress(value: Address): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       

@@ -17,7 +17,8 @@ object StartAngle {
     __obj.asInstanceOf[StartAngle]
   }
   
-  extension [Self <: StartAngle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartAngle] (val x: Self) extends AnyVal {
     
     inline def setEndAngle(value: Any): Self = StObject.set(x, "endAngle", value.asInstanceOf[js.Any])
     

@@ -27,7 +27,8 @@ object LoadedSourcesRequest {
     __obj.asInstanceOf[LoadedSourcesRequest]
   }
   
-  extension [Self <: LoadedSourcesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LoadedSourcesRequest] (val x: Self) extends AnyVal {
     
     inline def setArguments(value: LoadedSourcesArguments): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
     

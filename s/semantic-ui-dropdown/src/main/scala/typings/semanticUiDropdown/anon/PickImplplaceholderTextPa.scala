@@ -27,7 +27,8 @@ object PickImplplaceholderTextPa {
     __obj.asInstanceOf[PickImplplaceholderTextPa]
   }
   
-  extension [Self <: PickImplplaceholderTextPa](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickImplplaceholderTextPa] (val x: Self) extends AnyVal {
     
     inline def setDefaultText(value: String): Self = StObject.set(x, "defaultText", value.asInstanceOf[js.Any])
     

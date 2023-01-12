@@ -63,7 +63,8 @@ object ITextureCreationOptions {
     __obj.asInstanceOf[ITextureCreationOptions]
   }
   
-  extension [Self <: ITextureCreationOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ITextureCreationOptions] (val x: Self) extends AnyVal {
     
     inline def setBuffer(
       value: Nullable[

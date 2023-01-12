@@ -191,7 +191,8 @@ object libComponentsTileTileMod {
       __obj.asInstanceOf[ClickableTileProps]
     }
     
-    extension [Self <: ClickableTileProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClickableTileProps] (val x: Self) extends AnyVal {
       
       inline def setHandleClick(value: MouseEvent[HTMLAnchorElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "handleClick", js.Any.fromFunction1(value))
       
@@ -241,7 +242,8 @@ object libComponentsTileTileMod {
       __obj.asInstanceOf[ExpandableTileProps]
     }
     
-    extension [Self <: ExpandableTileProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExpandableTileProps] (val x: Self) extends AnyVal {
       
       inline def setExpanded(value: Boolean): Self = StObject.set(x, "expanded", value.asInstanceOf[js.Any])
       
@@ -679,7 +681,8 @@ object libComponentsTileTileMod {
       __obj.asInstanceOf[SelectableTileProps]
     }
     
-    extension [Self <: SelectableTileProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SelectableTileProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       
@@ -1434,7 +1437,8 @@ object libComponentsTileTileMod {
       __obj.asInstanceOf[TileAboveTheFoldContentProps]
     }
     
-    extension [Self <: TileAboveTheFoldContentProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TileAboveTheFoldContentProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -1453,7 +1457,8 @@ object libComponentsTileTileMod {
       __obj.asInstanceOf[TileBelowTheFoldContentProps]
     }
     
-    extension [Self <: TileBelowTheFoldContentProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TileBelowTheFoldContentProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -1474,7 +1479,8 @@ object libComponentsTileTileMod {
       __obj.asInstanceOf[TileProps]
     }
     
-    extension [Self <: TileProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TileProps] (val x: Self) extends AnyVal {
       
       inline def setLight(value: Boolean): Self = StObject.set(x, "light", value.asInstanceOf[js.Any])
       

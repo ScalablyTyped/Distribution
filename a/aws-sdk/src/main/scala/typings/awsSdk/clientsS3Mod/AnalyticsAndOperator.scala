@@ -23,7 +23,8 @@ object AnalyticsAndOperator {
     __obj.asInstanceOf[AnalyticsAndOperator]
   }
   
-  extension [Self <: AnalyticsAndOperator](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnalyticsAndOperator] (val x: Self) extends AnyVal {
     
     inline def setPrefix(value: Prefix): Self = StObject.set(x, "Prefix", value.asInstanceOf[js.Any])
     

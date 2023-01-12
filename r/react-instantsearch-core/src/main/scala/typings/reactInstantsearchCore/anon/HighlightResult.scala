@@ -23,7 +23,8 @@ object HighlightResult {
     __obj.asInstanceOf[HighlightResult[TDoc]]
   }
   
-  extension [Self <: HighlightResult[?], TDoc](x: Self & HighlightResult[TDoc]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HighlightResult[?], TDoc] (val x: Self & HighlightResult[TDoc]) extends AnyVal {
     
     inline def setObjectID(value: String): Self = StObject.set(x, "objectID", value.asInstanceOf[js.Any])
     

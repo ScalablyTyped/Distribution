@@ -19,7 +19,8 @@ object TermsAndConditions {
     __obj.asInstanceOf[TermsAndConditions]
   }
   
-  extension [Self <: TermsAndConditions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TermsAndConditions] (val x: Self) extends AnyVal {
     
     inline def setContent(value: UserFacingMessage): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     

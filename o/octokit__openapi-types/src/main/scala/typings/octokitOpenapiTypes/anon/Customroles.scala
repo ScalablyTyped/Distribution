@@ -25,7 +25,8 @@ object Customroles {
     __obj.asInstanceOf[Customroles]
   }
   
-  extension [Self <: Customroles](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Customroles] (val x: Self) extends AnyVal {
     
     inline def setCustom_roles(
       value: js.Array[

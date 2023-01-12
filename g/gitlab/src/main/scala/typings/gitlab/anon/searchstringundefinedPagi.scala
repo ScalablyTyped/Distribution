@@ -29,7 +29,8 @@ object searchstringundefinedPagi {
     __obj.asInstanceOf[searchstringundefinedPagi]
   }
   
-  extension [Self <: searchstringundefinedPagi](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: searchstringundefinedPagi] (val x: Self) extends AnyVal {
     
     inline def setMaxPages(value: Double): Self = StObject.set(x, "maxPages", value.asInstanceOf[js.Any])
     

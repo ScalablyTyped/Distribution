@@ -18,7 +18,8 @@ object StockToolsGuiDefinitionsLinesHorizontalLineOptions {
     __obj.asInstanceOf[StockToolsGuiDefinitionsLinesHorizontalLineOptions]
   }
   
-  extension [Self <: StockToolsGuiDefinitionsLinesHorizontalLineOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StockToolsGuiDefinitionsLinesHorizontalLineOptions] (val x: Self) extends AnyVal {
     
     inline def setSymbol(value: String): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object libSrcTypesMockOptionsMod {
       __obj.asInstanceOf[MockOptions]
     }
     
-    extension [Self <: MockOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MockOptions] (val x: Self) extends AnyVal {
       
       inline def setTimes(value: Double): Self = StObject.set(x, "times", value.asInstanceOf[js.Any])
       

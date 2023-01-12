@@ -35,7 +35,8 @@ object IOptimizeVaultJob {
     __obj.asInstanceOf[IOptimizeVaultJob]
   }
   
-  extension [Self <: IOptimizeVaultJob](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IOptimizeVaultJob] (val x: Self) extends AnyVal {
     
     inline def setGarbageCollectFiles(value: Boolean): Self = StObject.set(x, "GarbageCollectFiles", value.asInstanceOf[js.Any])
     

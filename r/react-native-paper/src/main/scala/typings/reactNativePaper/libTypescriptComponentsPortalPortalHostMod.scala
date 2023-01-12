@@ -66,7 +66,8 @@ object libTypescriptComponentsPortalPortalHostMod {
       __obj.asInstanceOf[PortalMethods]
     }
     
-    extension [Self <: PortalMethods](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PortalMethods] (val x: Self) extends AnyVal {
       
       inline def setMount(value: ReactNode => Double): Self = StObject.set(x, "mount", js.Any.fromFunction1(value))
       
@@ -87,7 +88,8 @@ object libTypescriptComponentsPortalPortalHostMod {
       __obj.asInstanceOf[Props]
     }
     
-    extension [Self <: Props](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

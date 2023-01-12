@@ -25,7 +25,8 @@ object CategoryValue {
     __obj.asInstanceOf[CategoryValue]
   }
   
-  extension [Self <: CategoryValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CategoryValue] (val x: Self) extends AnyVal {
     
     inline def setCategorizedFlowElements(value: js.Array[FlowElement]): Self = StObject.set(x, "categorizedFlowElements", value.asInstanceOf[js.Any])
     

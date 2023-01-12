@@ -254,7 +254,8 @@ object sapUiTestMatchersI18NTextMod {
       __obj.asInstanceOf[I18NTextSettings]
     }
     
-    extension [Self <: I18NTextSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: I18NTextSettings] (val x: Self) extends AnyVal {
       
       inline def setKey(value: String | PropertyBindingInfo): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       

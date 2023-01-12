@@ -38,7 +38,8 @@ object OrganizationSummary {
     __obj.asInstanceOf[OrganizationSummary]
   }
   
-  extension [Self <: OrganizationSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OrganizationSummary] (val x: Self) extends AnyVal {
     
     inline def setAlias(value: OrganizationName): Self = StObject.set(x, "Alias", value.asInstanceOf[js.Any])
     

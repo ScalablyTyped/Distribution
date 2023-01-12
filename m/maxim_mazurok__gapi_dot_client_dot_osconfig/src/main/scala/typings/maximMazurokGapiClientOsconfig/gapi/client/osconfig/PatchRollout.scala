@@ -28,7 +28,8 @@ object PatchRollout {
     __obj.asInstanceOf[PatchRollout]
   }
   
-  extension [Self <: PatchRollout](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PatchRollout] (val x: Self) extends AnyVal {
     
     inline def setDisruptionBudget(value: FixedOrPercent): Self = StObject.set(x, "disruptionBudget", value.asInstanceOf[js.Any])
     

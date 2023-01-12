@@ -30,7 +30,8 @@ object XAllListenerAdapterService {
     __obj.asInstanceOf[XAllListenerAdapterService]
   }
   
-  extension [Self <: XAllListenerAdapterService](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XAllListenerAdapterService] (val x: Self) extends AnyVal {
     
     inline def setCreateAllListerAdapter(value: (`type`, XAllListener, Any) => XInterface): Self = StObject.set(x, "createAllListerAdapter", js.Any.fromFunction3(value))
   }

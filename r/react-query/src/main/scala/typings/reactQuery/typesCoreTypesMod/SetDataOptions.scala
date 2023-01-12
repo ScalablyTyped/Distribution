@@ -15,7 +15,8 @@ object SetDataOptions {
     __obj.asInstanceOf[SetDataOptions]
   }
   
-  extension [Self <: SetDataOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetDataOptions] (val x: Self) extends AnyVal {
     
     inline def setUpdatedAt(value: Double): Self = StObject.set(x, "updatedAt", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object ExternalReferenceSpatialReference {
     __obj.asInstanceOf[ExternalReferenceSpatialReference]
   }
   
-  extension [Self <: ExternalReferenceSpatialReference](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExternalReferenceSpatialReference] (val x: Self) extends AnyVal {
     
     inline def setLatestVcsWkid(value: Double): Self = StObject.set(x, "latestVcsWkid", value.asInstanceOf[js.Any])
     

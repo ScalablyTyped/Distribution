@@ -16,7 +16,8 @@ object AudioWorkletNodeEventMap {
     __obj.asInstanceOf[AudioWorkletNodeEventMap]
   }
   
-  extension [Self <: AudioWorkletNodeEventMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AudioWorkletNodeEventMap] (val x: Self) extends AnyVal {
     
     inline def setProcessorerror(value: Event): Self = StObject.set(x, "processorerror", value.asInstanceOf[js.Any])
   }

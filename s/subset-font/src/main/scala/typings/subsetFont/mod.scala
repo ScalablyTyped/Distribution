@@ -47,7 +47,8 @@ object mod {
       __obj.asInstanceOf[SubsetFontOptions]
     }
     
-    extension [Self <: SubsetFontOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SubsetFontOptions] (val x: Self) extends AnyVal {
       
       inline def setPreserveNameIds(value: js.Array[Double]): Self = StObject.set(x, "preserveNameIds", value.asInstanceOf[js.Any])
       

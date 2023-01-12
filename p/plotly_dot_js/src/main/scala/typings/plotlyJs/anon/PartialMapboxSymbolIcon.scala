@@ -38,7 +38,8 @@ object PartialMapboxSymbolIcon {
     __obj.asInstanceOf[PartialMapboxSymbolIcon]
   }
   
-  extension [Self <: PartialMapboxSymbolIcon](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialMapboxSymbolIcon] (val x: Self) extends AnyVal {
     
     inline def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object ListViewMessages {
     __obj.asInstanceOf[ListViewMessages]
   }
   
-  extension [Self <: ListViewMessages](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListViewMessages] (val x: Self) extends AnyVal {
     
     inline def setLoadMoreText(value: String): Self = StObject.set(x, "loadMoreText", value.asInstanceOf[js.Any])
     

@@ -177,7 +177,8 @@ object PartialAxis {
     __obj.asInstanceOf[PartialAxis]
   }
   
-  extension [Self <: PartialAxis](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialAxis] (val x: Self) extends AnyVal {
     
     inline def setAutorange(value: `true` | `false` | reversed): Self = StObject.set(x, "autorange", value.asInstanceOf[js.Any])
     

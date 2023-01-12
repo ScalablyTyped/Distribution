@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[Recid]
     }
     
-    extension [Self <: Recid](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Recid] (val x: Self) extends AnyVal {
       
       inline def setRecid(value: Double): Self = StObject.set(x, "recid", value.asInstanceOf[js.Any])
       

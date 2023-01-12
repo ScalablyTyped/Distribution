@@ -77,7 +77,8 @@ object buildCommandsBundleBundleCommandLineArgsMod extends Shortcut {
       __obj.asInstanceOf[CommandLineArgs]
     }
     
-    extension [Self <: CommandLineArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommandLineArgs] (val x: Self) extends AnyVal {
       
       inline def setAssetCatalogDest(value: String): Self = StObject.set(x, "assetCatalogDest", value.asInstanceOf[js.Any])
       

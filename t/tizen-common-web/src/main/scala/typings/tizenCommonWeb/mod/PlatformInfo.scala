@@ -68,7 +68,8 @@ object PlatformInfo {
     __obj.asInstanceOf[PlatformInfo]
   }
   
-  extension [Self <: PlatformInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlatformInfo] (val x: Self) extends AnyVal {
     
     inline def setFirmwareVersion(value: String): Self = StObject.set(x, "firmwareVersion", value.asInstanceOf[js.Any])
     

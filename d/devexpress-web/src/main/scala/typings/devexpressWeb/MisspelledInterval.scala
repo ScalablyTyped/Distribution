@@ -53,7 +53,8 @@ object MisspelledInterval {
     __obj.asInstanceOf[MisspelledInterval]
   }
   
-  extension [Self <: MisspelledInterval](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MisspelledInterval] (val x: Self) extends AnyVal {
     
     inline def setErrorType(value: SpellingErrorType): Self = StObject.set(x, "errorType", value.asInstanceOf[js.Any])
     

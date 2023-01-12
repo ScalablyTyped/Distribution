@@ -22,7 +22,8 @@ object GooglePrivacyDlpV2QuasiIdentifierField {
     __obj.asInstanceOf[GooglePrivacyDlpV2QuasiIdentifierField]
   }
   
-  extension [Self <: GooglePrivacyDlpV2QuasiIdentifierField](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GooglePrivacyDlpV2QuasiIdentifierField] (val x: Self) extends AnyVal {
     
     inline def setCustomTag(value: String): Self = StObject.set(x, "customTag", value.asInstanceOf[js.Any])
     

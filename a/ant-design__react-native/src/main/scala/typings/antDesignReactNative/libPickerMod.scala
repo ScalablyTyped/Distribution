@@ -112,7 +112,8 @@ object libPickerMod {
       __obj.asInstanceOf[PickerProps]
     }
     
-    extension [Self <: PickerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PickerProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

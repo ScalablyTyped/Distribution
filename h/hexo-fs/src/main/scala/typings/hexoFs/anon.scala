@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[`0`]
     }
     
-    extension [Self <: `0`](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: `0`] (val x: Self) extends AnyVal {
       
       inline def setEncoding(value: buffer): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
     }
@@ -36,7 +37,8 @@ object anon {
       __obj.asInstanceOf[`1`]
     }
     
-    extension [Self <: `1`](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: `1`] (val x: Self) extends AnyVal {
       
       inline def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       
@@ -57,7 +59,8 @@ object anon {
       __obj.asInstanceOf[`2`]
     }
     
-    extension [Self <: `2`](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: `2`] (val x: Self) extends AnyVal {
       
       inline def setEncoding(value: BufferEncoding): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       
@@ -88,7 +91,8 @@ object anon {
       __obj.asInstanceOf[AutoClose]
     }
     
-    extension [Self <: AutoClose](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AutoClose] (val x: Self) extends AnyVal {
       
       inline def setAutoClose(value: Boolean): Self = StObject.set(x, "autoClose", value.asInstanceOf[js.Any])
       
@@ -129,7 +133,8 @@ object anon {
       __obj.asInstanceOf[Buffer]
     }
     
-    extension [Self <: Buffer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Buffer] (val x: Self) extends AnyVal {
       
       inline def setBuffer(value: typings.node.bufferMod.global.Buffer): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
       
@@ -150,7 +155,8 @@ object anon {
       __obj.asInstanceOf[BufferBytesWritten]
     }
     
-    extension [Self <: BufferBytesWritten](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BufferBytesWritten] (val x: Self) extends AnyVal {
       
       inline def setBuffer(value: String): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
       
@@ -171,7 +177,8 @@ object anon {
       __obj.asInstanceOf[BytesRead]
     }
     
-    extension [Self <: BytesRead](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BytesRead] (val x: Self) extends AnyVal {
       
       inline def setBuffer(value: js.typedarray.Uint8Array): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
       
@@ -192,7 +199,8 @@ object anon {
       __obj.asInstanceOf[BytesWritten[TBuffer]]
     }
     
-    extension [Self <: BytesWritten[?], TBuffer /* <: typings.node.bufferMod.global.Buffer | js.typedarray.Uint8Array */](x: Self & BytesWritten[TBuffer]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BytesWritten[?], TBuffer /* <: typings.node.bufferMod.global.Buffer | js.typedarray.Uint8Array */] (val x: Self & BytesWritten[TBuffer]) extends AnyVal {
       
       inline def setBuffer(value: TBuffer): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
       
@@ -216,7 +224,8 @@ object anon {
       __obj.asInstanceOf[DirectoryOptionsexcludeAr]
     }
     
-    extension [Self <: DirectoryOptionsexcludeAr](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DirectoryOptionsexcludeAr] (val x: Self) extends AnyVal {
       
       inline def setExclude(value: js.Array[String]): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
       
@@ -245,7 +254,8 @@ object anon {
       __obj.asInstanceOf[Encoding]
     }
     
-    extension [Self <: Encoding](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Encoding] (val x: Self) extends AnyVal {
       
       inline def setEncoding(value: BufferEncoding): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       
@@ -268,7 +278,8 @@ object anon {
       __obj.asInstanceOf[Escape]
     }
     
-    extension [Self <: Escape](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Escape] (val x: Self) extends AnyVal {
       
       inline def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       
@@ -299,7 +310,8 @@ object anon {
       __obj.asInstanceOf[Flag]
     }
     
-    extension [Self <: Flag](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Flag] (val x: Self) extends AnyVal {
       
       inline def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       

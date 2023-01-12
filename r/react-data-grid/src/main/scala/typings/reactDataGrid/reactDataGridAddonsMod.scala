@@ -21,7 +21,8 @@ object reactDataGridAddonsMod {
         __obj.asInstanceOf[Window]
       }
       
-      extension [Self <: Window](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Window] (val x: Self) extends AnyVal {
         
         inline def setReactDataGridPlugins(value: Data): Self = StObject.set(x, "ReactDataGridPlugins", value.asInstanceOf[js.Any])
       }

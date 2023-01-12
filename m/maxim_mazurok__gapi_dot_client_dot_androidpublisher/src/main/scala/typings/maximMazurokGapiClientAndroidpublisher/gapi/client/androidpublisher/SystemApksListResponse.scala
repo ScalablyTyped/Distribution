@@ -16,7 +16,8 @@ object SystemApksListResponse {
     __obj.asInstanceOf[SystemApksListResponse]
   }
   
-  extension [Self <: SystemApksListResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SystemApksListResponse] (val x: Self) extends AnyVal {
     
     inline def setVariants(value: js.Array[Variant]): Self = StObject.set(x, "variants", value.asInstanceOf[js.Any])
     

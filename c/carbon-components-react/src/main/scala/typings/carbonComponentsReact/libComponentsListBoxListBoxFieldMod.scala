@@ -464,7 +464,8 @@ object libComponentsListBoxListBoxFieldMod extends Shortcut {
       __obj.asInstanceOf[ListBoxFieldProps]
     }
     
-    extension [Self <: ListBoxFieldProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListBoxFieldProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       

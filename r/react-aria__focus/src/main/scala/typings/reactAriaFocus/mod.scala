@@ -70,7 +70,8 @@ object mod {
       __obj.asInstanceOf[AriaFocusRingProps]
     }
     
-    extension [Self <: AriaFocusRingProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AriaFocusRingProps] (val x: Self) extends AnyVal {
       
       inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
       
@@ -127,7 +128,8 @@ object mod {
       __obj.asInstanceOf[FocusManagerOptions]
     }
     
-    extension [Self <: FocusManagerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FocusManagerOptions] (val x: Self) extends AnyVal {
       
       inline def setAccept(value: /* node */ typings.std.Element => Boolean): Self = StObject.set(x, "accept", js.Any.fromFunction1(value))
       
@@ -165,7 +167,8 @@ object mod {
       __obj.asInstanceOf[FocusRingAria]
     }
     
-    extension [Self <: FocusRingAria](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FocusRingAria] (val x: Self) extends AnyVal {
       
       inline def setFocusProps(value: DOMAttributes[FocusableElement]): Self = StObject.set(x, "focusProps", value.asInstanceOf[js.Any])
       
@@ -207,7 +210,8 @@ object mod {
       __obj.asInstanceOf[FocusRingProps]
     }
     
-    extension [Self <: FocusRingProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FocusRingProps] (val x: Self) extends AnyVal {
       
       inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
       
@@ -260,7 +264,8 @@ object mod {
       __obj.asInstanceOf[FocusScopeProps]
     }
     
-    extension [Self <: FocusScopeProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FocusScopeProps] (val x: Self) extends AnyVal {
       
       inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
       
@@ -292,7 +297,8 @@ object mod {
       __obj.asInstanceOf[FocusableAria]
     }
     
-    extension [Self <: FocusableAria](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FocusableAria] (val x: Self) extends AnyVal {
       
       inline def setFocusableProps(value: DOMAttributes[FocusableElement]): Self = StObject.set(x, "focusableProps", value.asInstanceOf[js.Any])
     }
@@ -313,7 +319,8 @@ object mod {
       __obj.asInstanceOf[FocusableOptions]
     }
     
-    extension [Self <: FocusableOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FocusableOptions] (val x: Self) extends AnyVal {
       
       inline def setIsDisabled(value: Boolean): Self = StObject.set(x, "isDisabled", value.asInstanceOf[js.Any])
       

@@ -18,7 +18,8 @@ object CreateFleetResponse {
     __obj.asInstanceOf[CreateFleetResponse]
   }
   
-  extension [Self <: CreateFleetResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateFleetResponse] (val x: Self) extends AnyVal {
     
     inline def setFleetArn(value: FleetArn): Self = StObject.set(x, "FleetArn", value.asInstanceOf[js.Any])
     

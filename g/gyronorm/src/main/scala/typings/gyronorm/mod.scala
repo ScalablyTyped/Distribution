@@ -73,7 +73,8 @@ object mod {
       __obj.asInstanceOf[LoggerData]
     }
     
-    extension [Self <: LoggerData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LoggerData] (val x: Self) extends AnyVal {
       
       inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
@@ -95,7 +96,8 @@ object mod {
       __obj.asInstanceOf[MotionAndOrientationPayload]
     }
     
-    extension [Self <: MotionAndOrientationPayload](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MotionAndOrientationPayload] (val x: Self) extends AnyVal {
       
       inline def setDm(value: Alpha): Self = StObject.set(x, "dm", value.asInstanceOf[js.Any])
       
@@ -145,7 +147,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setDecimalCount(value: Double): Self = StObject.set(x, "decimalCount", value.asInstanceOf[js.Any])
       

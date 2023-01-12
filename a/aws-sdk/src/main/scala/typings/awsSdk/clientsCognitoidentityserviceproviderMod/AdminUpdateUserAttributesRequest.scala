@@ -33,7 +33,8 @@ object AdminUpdateUserAttributesRequest {
     __obj.asInstanceOf[AdminUpdateUserAttributesRequest]
   }
   
-  extension [Self <: AdminUpdateUserAttributesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AdminUpdateUserAttributesRequest] (val x: Self) extends AnyVal {
     
     inline def setClientMetadata(value: ClientMetadataType): Self = StObject.set(x, "ClientMetadata", value.asInstanceOf[js.Any])
     

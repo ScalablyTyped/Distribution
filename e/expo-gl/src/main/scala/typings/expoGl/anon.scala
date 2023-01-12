@@ -41,7 +41,8 @@ object anon {
       __obj.asInstanceOf[ExglCtxId]
     }
     
-    extension [Self <: ExglCtxId](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExglCtxId] (val x: Self) extends AnyVal {
       
       inline def setExglCtxId(value: Double): Self = StObject.set(x, "exglCtxId", value.asInstanceOf[js.Any])
     }
@@ -64,7 +65,8 @@ object anon {
       __obj.asInstanceOf[Height]
     }
     
-    extension [Self <: Height](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Height] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -87,7 +89,8 @@ object anon {
       __obj.asInstanceOf[MsaaSamples]
     }
     
-    extension [Self <: MsaaSamples](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MsaaSamples] (val x: Self) extends AnyVal {
       
       inline def setMsaaSamples(value: Double): Self = StObject.set(x, "msaaSamples", value.asInstanceOf[js.Any])
     }
@@ -507,7 +510,8 @@ object anon {
       __obj.asInstanceOf[ViewPropscanvasRefRefHTML]
     }
     
-    extension [Self <: ViewPropscanvasRefRefHTML](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ViewPropscanvasRefRefHTML] (val x: Self) extends AnyVal {
       
       inline def setAccessibilityActions(value: js.Array[AccessibilityActionInfo]): Self = StObject.set(x, "accessibilityActions", value.asInstanceOf[js.Any])
       

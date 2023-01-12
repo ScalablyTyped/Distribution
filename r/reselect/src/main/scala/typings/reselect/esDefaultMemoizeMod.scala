@@ -46,7 +46,8 @@ object esDefaultMemoizeMod {
       __obj.asInstanceOf[DefaultMemoizeOptions]
     }
     
-    extension [Self <: DefaultMemoizeOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DefaultMemoizeOptions] (val x: Self) extends AnyVal {
       
       inline def setEqualityCheck(value: (/* a */ Any, /* b */ Any) => Boolean): Self = StObject.set(x, "equalityCheck", js.Any.fromFunction2(value))
       

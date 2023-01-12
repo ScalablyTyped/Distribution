@@ -67,7 +67,8 @@ object MockJaxSettings {
     __obj.asInstanceOf[MockJaxSettings]
   }
   
-  extension [Self <: MockJaxSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MockJaxSettings] (val x: Self) extends AnyVal {
     
     inline def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
     

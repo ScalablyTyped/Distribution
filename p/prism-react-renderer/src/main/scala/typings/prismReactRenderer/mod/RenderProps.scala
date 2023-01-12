@@ -29,7 +29,8 @@ object RenderProps {
     __obj.asInstanceOf[RenderProps]
   }
   
-  extension [Self <: RenderProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RenderProps] (val x: Self) extends AnyVal {
     
     inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     

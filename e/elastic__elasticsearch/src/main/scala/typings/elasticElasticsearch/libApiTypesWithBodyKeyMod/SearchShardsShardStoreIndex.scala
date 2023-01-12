@@ -17,7 +17,8 @@ object SearchShardsShardStoreIndex {
     __obj.asInstanceOf[SearchShardsShardStoreIndex]
   }
   
-  extension [Self <: SearchShardsShardStoreIndex](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchShardsShardStoreIndex] (val x: Self) extends AnyVal {
     
     inline def setAliases(value: js.Array[Name]): Self = StObject.set(x, "aliases", value.asInstanceOf[js.Any])
     

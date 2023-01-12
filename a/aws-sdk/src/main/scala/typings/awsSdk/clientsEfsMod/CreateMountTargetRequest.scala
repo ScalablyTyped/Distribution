@@ -33,7 +33,8 @@ object CreateMountTargetRequest {
     __obj.asInstanceOf[CreateMountTargetRequest]
   }
   
-  extension [Self <: CreateMountTargetRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateMountTargetRequest] (val x: Self) extends AnyVal {
     
     inline def setFileSystemId(value: FileSystemId): Self = StObject.set(x, "FileSystemId", value.asInstanceOf[js.Any])
     

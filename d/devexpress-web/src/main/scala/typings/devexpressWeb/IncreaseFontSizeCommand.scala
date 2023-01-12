@@ -23,7 +23,8 @@ object IncreaseFontSizeCommand {
     __obj.asInstanceOf[IncreaseFontSizeCommand]
   }
   
-  extension [Self <: IncreaseFontSizeCommand](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IncreaseFontSizeCommand] (val x: Self) extends AnyVal {
     
     inline def setExecute(value: () => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction0(value))
   }

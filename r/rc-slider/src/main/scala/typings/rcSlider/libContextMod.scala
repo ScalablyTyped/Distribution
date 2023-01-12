@@ -58,7 +58,8 @@ object libContextMod extends Shortcut {
       __obj.asInstanceOf[SliderContextProps]
     }
     
-    extension [Self <: SliderContextProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SliderContextProps] (val x: Self) extends AnyVal {
       
       inline def setAriaLabelForHandle(value: String | js.Array[String]): Self = StObject.set(x, "ariaLabelForHandle", value.asInstanceOf[js.Any])
       

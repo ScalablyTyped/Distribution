@@ -18,7 +18,8 @@ object SystemsManagerAgent {
     __obj.asInstanceOf[SystemsManagerAgent]
   }
   
-  extension [Self <: SystemsManagerAgent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SystemsManagerAgent] (val x: Self) extends AnyVal {
     
     inline def setUninstallAfterBuild(value: NullableBoolean): Self = StObject.set(x, "uninstallAfterBuild", value.asInstanceOf[js.Any])
     

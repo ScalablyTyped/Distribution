@@ -49,7 +49,8 @@ object anon {
       __obj.asInstanceOf[ACTIVATED]
     }
     
-    extension [Self <: ACTIVATED](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ACTIVATED] (val x: Self) extends AnyVal {
       
       inline def setACTIVATED(value: String): Self = StObject.set(x, "ACTIVATED", value.asInstanceOf[js.Any])
       
@@ -120,7 +121,8 @@ object anon {
       __obj.asInstanceOf[ARIACONTROLS]
     }
     
-    extension [Self <: ARIACONTROLS](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ARIACONTROLS] (val x: Self) extends AnyVal {
       
       inline def setARIA_CONTROLS(value: String): Self = StObject.set(x, "ARIA_CONTROLS", value.asInstanceOf[js.Any])
       
@@ -163,7 +165,8 @@ object anon {
       __obj.asInstanceOf[ARIAHIDDEN]
     }
     
-    extension [Self <: ARIAHIDDEN](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ARIAHIDDEN] (val x: Self) extends AnyVal {
       
       inline def setARIA_HIDDEN(value: String): Self = StObject.set(x, "ARIA_HIDDEN", value.asInstanceOf[js.Any])
       
@@ -186,7 +189,8 @@ object anon {
       __obj.asInstanceOf[CLICKDEBOUNCETIMEOUTMS]
     }
     
-    extension [Self <: CLICKDEBOUNCETIMEOUTMS](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CLICKDEBOUNCETIMEOUTMS] (val x: Self) extends AnyVal {
       
       inline def setCLICK_DEBOUNCE_TIMEOUT_MS(value: Double): Self = StObject.set(x, "CLICK_DEBOUNCE_TIMEOUT_MS", value.asInstanceOf[js.Any])
       
@@ -209,7 +213,8 @@ object anon {
       __obj.asInstanceOf[HELPERTEXTVALIDATIONMSG]
     }
     
-    extension [Self <: HELPERTEXTVALIDATIONMSG](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HELPERTEXTVALIDATIONMSG] (val x: Self) extends AnyVal {
       
       inline def setHELPER_TEXT_VALIDATION_MSG(value: String): Self = StObject.set(x, "HELPER_TEXT_VALIDATION_MSG", value.asInstanceOf[js.Any])
       
@@ -230,7 +235,8 @@ object anon {
       __obj.asInstanceOf[ICONEVENT]
     }
     
-    extension [Self <: ICONEVENT](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICONEVENT] (val x: Self) extends AnyVal {
       
       inline def setICON_EVENT(value: String): Self = StObject.set(x, "ICON_EVENT", value.asInstanceOf[js.Any])
       
@@ -318,7 +324,8 @@ object anon {
       __obj.asInstanceOf[PartialMDCSelectAdapter]
     }
     
-    extension [Self <: PartialMDCSelectAdapter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialMDCSelectAdapter] (val x: Self) extends AnyVal {
       
       inline def setActivateBottomLine(value: () => Unit): Self = StObject.set(x, "activateBottomLine", js.Any.fromFunction0(value))
       
@@ -476,7 +483,8 @@ object anon {
       __obj.asInstanceOf[PartialMDCSelectFoundatio]
     }
     
-    extension [Self <: PartialMDCSelectFoundatio](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialMDCSelectFoundatio] (val x: Self) extends AnyVal {
       
       inline def setHelperText(value: MDCSelectHelperTextFoundation): Self = StObject.set(x, "helperText", value.asInstanceOf[js.Any])
       
@@ -512,7 +520,8 @@ object anon {
       __obj.asInstanceOf[PartialMDCSelectHelperTex]
     }
     
-    extension [Self <: PartialMDCSelectHelperTex](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialMDCSelectHelperTex] (val x: Self) extends AnyVal {
       
       inline def setAddClass(value: /* className */ String => Unit): Self = StObject.set(x, "addClass", js.Any.fromFunction1(value))
       
@@ -572,7 +581,8 @@ object anon {
       __obj.asInstanceOf[PartialMDCSelectIconAdapt]
     }
     
-    extension [Self <: PartialMDCSelectIconAdapt](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialMDCSelectIconAdapt] (val x: Self) extends AnyVal {
       
       inline def setDeregisterInteractionHandler(value: (/* evtType */ EventType, /* handler */ SpecificEventListener[EventType]) => Unit): Self = StObject.set(x, "deregisterInteractionHandler", js.Any.fromFunction2(value))
       

@@ -23,7 +23,8 @@ object Month {
     __obj.asInstanceOf[Month]
   }
   
-  extension [Self <: Month](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Month] (val x: Self) extends AnyVal {
     
     inline def setBbox(value: BBox): Self = StObject.set(x, "bbox", value.asInstanceOf[js.Any])
     

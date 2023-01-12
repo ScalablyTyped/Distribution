@@ -57,7 +57,8 @@ object StatisticDefinitionProperties {
     __obj.asInstanceOf[StatisticDefinitionProperties]
   }
   
-  extension [Self <: StatisticDefinitionProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StatisticDefinitionProperties] (val x: Self) extends AnyVal {
     
     inline def setOnStatisticField(value: String): Self = StObject.set(x, "onStatisticField", value.asInstanceOf[js.Any])
     

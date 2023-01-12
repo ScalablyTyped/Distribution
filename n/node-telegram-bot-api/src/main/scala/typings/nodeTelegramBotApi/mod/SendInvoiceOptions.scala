@@ -35,7 +35,8 @@ object SendInvoiceOptions {
     __obj.asInstanceOf[SendInvoiceOptions]
   }
   
-  extension [Self <: SendInvoiceOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SendInvoiceOptions] (val x: Self) extends AnyVal {
     
     inline def setIs_flexible(value: Boolean): Self = StObject.set(x, "is_flexible", value.asInstanceOf[js.Any])
     

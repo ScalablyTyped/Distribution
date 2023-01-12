@@ -149,7 +149,8 @@ object GridLayout {
     __obj.asInstanceOf[GridLayout]
   }
   
-  extension [Self <: GridLayout](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GridLayout] (val x: Self) extends AnyVal {
     
     inline def setBackdropColor(value: String): Self = StObject.set(x, "backdropColor", value.asInstanceOf[js.Any])
     

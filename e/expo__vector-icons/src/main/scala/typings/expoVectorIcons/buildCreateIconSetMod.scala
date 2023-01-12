@@ -231,7 +231,8 @@ object buildCreateIconSetMod {
       __obj.asInstanceOf[IconButtonProps[GLYPHS]]
     }
     
-    extension [Self <: IconButtonProps[?], GLYPHS /* <: String */](x: Self & IconButtonProps[GLYPHS]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IconButtonProps[?], GLYPHS /* <: String */] (val x: Self & IconButtonProps[GLYPHS]) extends AnyVal {
       
       inline def setActiveOpacity(value: Double): Self = StObject.set(x, "activeOpacity", value.asInstanceOf[js.Any])
       
@@ -336,7 +337,8 @@ object buildCreateIconSetMod {
       __obj.asInstanceOf[IconProps[GLYPHS]]
     }
     
-    extension [Self <: IconProps[?], GLYPHS /* <: String */](x: Self & IconProps[GLYPHS]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IconProps[?], GLYPHS /* <: String */] (val x: Self & IconProps[GLYPHS]) extends AnyVal {
       
       inline def setColor(value: String | OpaqueColorValue): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       

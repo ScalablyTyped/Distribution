@@ -65,7 +65,8 @@ object distComponentsFileIconFileIconSetV2Mod {
       __obj.asInstanceOf[IconPropsV2]
     }
     
-    extension [Self <: IconPropsV2](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IconPropsV2] (val x: Self) extends AnyVal {
       
       inline def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
       

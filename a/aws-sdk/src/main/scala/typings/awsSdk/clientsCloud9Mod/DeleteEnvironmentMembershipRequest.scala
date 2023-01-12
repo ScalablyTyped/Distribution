@@ -23,7 +23,8 @@ object DeleteEnvironmentMembershipRequest {
     __obj.asInstanceOf[DeleteEnvironmentMembershipRequest]
   }
   
-  extension [Self <: DeleteEnvironmentMembershipRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteEnvironmentMembershipRequest] (val x: Self) extends AnyVal {
     
     inline def setEnvironmentId(value: EnvironmentId): Self = StObject.set(x, "environmentId", value.asInstanceOf[js.Any])
     

@@ -47,7 +47,8 @@ object mod {
       __obj.asInstanceOf[DropCursorOptions]
     }
     
-    extension [Self <: DropCursorOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DropCursorOptions] (val x: Self) extends AnyVal {
       
       inline def setClass(value: String): Self = StObject.set(x, "class", value.asInstanceOf[js.Any])
       

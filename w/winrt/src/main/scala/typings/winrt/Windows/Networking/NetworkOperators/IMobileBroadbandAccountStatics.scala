@@ -21,7 +21,8 @@ object IMobileBroadbandAccountStatics {
     __obj.asInstanceOf[IMobileBroadbandAccountStatics]
   }
   
-  extension [Self <: IMobileBroadbandAccountStatics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IMobileBroadbandAccountStatics] (val x: Self) extends AnyVal {
     
     inline def setAvailableNetworkAccountIds(value: IVectorView[String]): Self = StObject.set(x, "availableNetworkAccountIds", value.asInstanceOf[js.Any])
     

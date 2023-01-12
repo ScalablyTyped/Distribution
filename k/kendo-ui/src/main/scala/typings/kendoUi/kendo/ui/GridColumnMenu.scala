@@ -23,7 +23,8 @@ object GridColumnMenu {
     __obj.asInstanceOf[GridColumnMenu]
   }
   
-  extension [Self <: GridColumnMenu](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GridColumnMenu] (val x: Self) extends AnyVal {
     
     inline def setColumns(value: Boolean | GridColumnMenuColumns): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     

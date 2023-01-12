@@ -15,7 +15,8 @@ object SqliteOpenOptions {
     __obj.asInstanceOf[SqliteOpenOptions]
   }
   
-  extension [Self <: SqliteOpenOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SqliteOpenOptions] (val x: Self) extends AnyVal {
     
     inline def setFlags(value: js.Array[SqliteOpenFlag]): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
     

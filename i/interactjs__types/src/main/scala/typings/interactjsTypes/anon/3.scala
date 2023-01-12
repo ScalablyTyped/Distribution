@@ -18,7 +18,8 @@ object `3` {
     __obj.asInstanceOf[`3`[T]]
   }
   
-  extension [Self <: `3`[?], T /* <: ActionName | Null */](x: Self & `3`[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: `3`[?], T /* <: ActionName | Null */] (val x: Self & `3`[T]) extends AnyVal {
     
     inline def setIEvent(value: InteractEvent[T, inertiastart]): Self = StObject.set(x, "iEvent", value.asInstanceOf[js.Any])
     

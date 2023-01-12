@@ -15,7 +15,8 @@ object IndicesQueries {
     __obj.asInstanceOf[IndicesQueries]
   }
   
-  extension [Self <: IndicesQueries](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndicesQueries] (val x: Self) extends AnyVal {
     
     inline def setCache(value: IndicesCacheQueries): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
     

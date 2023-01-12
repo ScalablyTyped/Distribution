@@ -18,7 +18,8 @@ object DiagnosticChangeEvent {
     __obj.asInstanceOf[DiagnosticChangeEvent]
   }
   
-  extension [Self <: DiagnosticChangeEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DiagnosticChangeEvent] (val x: Self) extends AnyVal {
     
     inline def setUris(value: js.Array[Uri]): Self = StObject.set(x, "uris", value.asInstanceOf[js.Any])
     

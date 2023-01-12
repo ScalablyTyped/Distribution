@@ -21,7 +21,8 @@ object Next {
     __obj.asInstanceOf[Next[T]]
   }
   
-  extension [Self <: Next[?], T](x: Self & Next[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Next[?], T] (val x: Self & Next[T]) extends AnyVal {
     
     inline def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
     

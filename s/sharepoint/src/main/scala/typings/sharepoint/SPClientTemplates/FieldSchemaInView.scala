@@ -81,7 +81,8 @@ object FieldSchemaInView {
     __obj.asInstanceOf[FieldSchemaInView]
   }
   
-  extension [Self <: FieldSchemaInView](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FieldSchemaInView] (val x: Self) extends AnyVal {
     
     inline def setCalloutMenu(value: String): Self = StObject.set(x, "CalloutMenu", value.asInstanceOf[js.Any])
     

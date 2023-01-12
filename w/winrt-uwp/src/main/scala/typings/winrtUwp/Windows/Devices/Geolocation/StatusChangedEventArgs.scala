@@ -17,7 +17,8 @@ object StatusChangedEventArgs {
     __obj.asInstanceOf[StatusChangedEventArgs]
   }
   
-  extension [Self <: StatusChangedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StatusChangedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setStatus(value: PositionStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }

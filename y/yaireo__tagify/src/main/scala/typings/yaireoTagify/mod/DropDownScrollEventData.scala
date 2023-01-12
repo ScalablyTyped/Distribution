@@ -21,7 +21,8 @@ object DropDownScrollEventData {
     __obj.asInstanceOf[DropDownScrollEventData[T]]
   }
   
-  extension [Self <: DropDownScrollEventData[?], T /* <: BaseTagData */](x: Self & DropDownScrollEventData[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DropDownScrollEventData[?], T /* <: BaseTagData */] (val x: Self & DropDownScrollEventData[T]) extends AnyVal {
     
     inline def setPercentage(value: Double): Self = StObject.set(x, "percentage", value.asInstanceOf[js.Any])
   }

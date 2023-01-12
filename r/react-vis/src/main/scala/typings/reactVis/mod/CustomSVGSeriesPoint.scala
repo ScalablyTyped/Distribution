@@ -19,7 +19,8 @@ object CustomSVGSeriesPoint {
     __obj.asInstanceOf[CustomSVGSeriesPoint]
   }
   
-  extension [Self <: CustomSVGSeriesPoint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomSVGSeriesPoint] (val x: Self) extends AnyVal {
     
     inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     

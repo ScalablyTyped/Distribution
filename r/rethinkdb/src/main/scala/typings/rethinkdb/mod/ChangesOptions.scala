@@ -57,7 +57,8 @@ object ChangesOptions {
     __obj.asInstanceOf[ChangesOptions]
   }
   
-  extension [Self <: ChangesOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChangesOptions] (val x: Self) extends AnyVal {
     
     inline def setChangefeedQueueSize(value: Double): Self = StObject.set(x, "changefeedQueueSize", value.asInstanceOf[js.Any])
     

@@ -24,7 +24,8 @@ object QuizInfo {
     __obj.asInstanceOf[QuizInfo]
   }
   
-  extension [Self <: QuizInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QuizInfo] (val x: Self) extends AnyVal {
     
     inline def setCurrentQuestion(value: QuestionReady): Self = StObject.set(x, "currentQuestion", value.asInstanceOf[js.Any])
   }

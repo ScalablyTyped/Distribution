@@ -17,7 +17,8 @@ object ConfigDropbox {
     __obj.asInstanceOf[ConfigDropbox]
   }
   
-  extension [Self <: ConfigDropbox](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConfigDropbox] (val x: Self) extends AnyVal {
     
     inline def setAppKey(value: String): Self = StObject.set(x, "appKey", value.asInstanceOf[js.Any])
     

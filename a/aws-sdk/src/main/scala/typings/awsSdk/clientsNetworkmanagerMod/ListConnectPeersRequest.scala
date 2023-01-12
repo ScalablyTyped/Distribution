@@ -33,7 +33,8 @@ object ListConnectPeersRequest {
     __obj.asInstanceOf[ListConnectPeersRequest]
   }
   
-  extension [Self <: ListConnectPeersRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListConnectPeersRequest] (val x: Self) extends AnyVal {
     
     inline def setConnectAttachmentId(value: AttachmentId): Self = StObject.set(x, "ConnectAttachmentId", value.asInstanceOf[js.Any])
     

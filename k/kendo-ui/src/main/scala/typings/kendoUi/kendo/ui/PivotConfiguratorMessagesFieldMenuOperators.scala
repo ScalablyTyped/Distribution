@@ -26,7 +26,8 @@ object PivotConfiguratorMessagesFieldMenuOperators {
     __obj.asInstanceOf[PivotConfiguratorMessagesFieldMenuOperators]
   }
   
-  extension [Self <: PivotConfiguratorMessagesFieldMenuOperators](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PivotConfiguratorMessagesFieldMenuOperators] (val x: Self) extends AnyVal {
     
     inline def setContains(value: String): Self = StObject.set(x, "contains", value.asInstanceOf[js.Any])
     

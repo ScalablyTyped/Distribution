@@ -23,7 +23,8 @@ object QRCodeToFileStreamOptions {
     __obj.asInstanceOf[QRCodeToFileStreamOptions]
   }
   
-  extension [Self <: QRCodeToFileStreamOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QRCodeToFileStreamOptions] (val x: Self) extends AnyVal {
     
     inline def setRendererOpts(value: DeflateLevel): Self = StObject.set(x, "rendererOpts", value.asInstanceOf[js.Any])
     

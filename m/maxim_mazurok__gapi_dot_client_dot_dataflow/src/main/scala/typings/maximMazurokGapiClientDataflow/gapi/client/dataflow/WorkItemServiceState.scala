@@ -54,7 +54,8 @@ object WorkItemServiceState {
     __obj.asInstanceOf[WorkItemServiceState]
   }
   
-  extension [Self <: WorkItemServiceState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkItemServiceState] (val x: Self) extends AnyVal {
     
     inline def setCompleteWorkStatus(value: Status): Self = StObject.set(x, "completeWorkStatus", value.asInstanceOf[js.Any])
     

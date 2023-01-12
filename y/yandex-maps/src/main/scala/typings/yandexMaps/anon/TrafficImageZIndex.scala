@@ -19,7 +19,8 @@ object TrafficImageZIndex {
     __obj.asInstanceOf[TrafficImageZIndex]
   }
   
-  extension [Self <: TrafficImageZIndex](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TrafficImageZIndex] (val x: Self) extends AnyVal {
     
     inline def setTrafficImageZIndex(value: Double): Self = StObject.set(x, "trafficImageZIndex", value.asInstanceOf[js.Any])
     

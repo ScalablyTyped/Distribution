@@ -25,7 +25,8 @@ object Guardian {
     __obj.asInstanceOf[Guardian]
   }
   
-  extension [Self <: Guardian](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Guardian] (val x: Self) extends AnyVal {
     
     inline def setGuardianId(value: String): Self = StObject.set(x, "guardianId", value.asInstanceOf[js.Any])
     

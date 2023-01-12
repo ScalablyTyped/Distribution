@@ -21,7 +21,8 @@ object ChartXAxisItemLabelsPadding {
     __obj.asInstanceOf[ChartXAxisItemLabelsPadding]
   }
   
-  extension [Self <: ChartXAxisItemLabelsPadding](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChartXAxisItemLabelsPadding] (val x: Self) extends AnyVal {
     
     inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
     

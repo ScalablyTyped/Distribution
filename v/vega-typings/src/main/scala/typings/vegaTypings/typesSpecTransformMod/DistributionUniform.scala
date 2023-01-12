@@ -23,7 +23,8 @@ object DistributionUniform {
     __obj.asInstanceOf[DistributionUniform]
   }
   
-  extension [Self <: DistributionUniform](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DistributionUniform] (val x: Self) extends AnyVal {
     
     inline def setFunction(value: uniform): Self = StObject.set(x, "function", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object SimpleDialog {
       __obj.asInstanceOf[Button]
     }
     
-    extension [Self <: Button](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Button] (val x: Self) extends AnyVal {
       
       inline def setHandler(value: js.Function): Self = StObject.set(x, "handler", value.asInstanceOf[js.Any])
       
@@ -42,7 +43,8 @@ object SimpleDialog {
       __obj.asInstanceOf[typings.ibmMobilefirst.WL.SimpleDialog.Options]
     }
     
-    extension [Self <: typings.ibmMobilefirst.WL.SimpleDialog.Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.ibmMobilefirst.WL.SimpleDialog.Options] (val x: Self) extends AnyVal {
       
       inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       

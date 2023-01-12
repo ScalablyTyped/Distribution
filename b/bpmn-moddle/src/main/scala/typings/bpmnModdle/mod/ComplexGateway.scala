@@ -32,7 +32,8 @@ object ComplexGateway {
     __obj.asInstanceOf[ComplexGateway]
   }
   
-  extension [Self <: ComplexGateway](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ComplexGateway] (val x: Self) extends AnyVal {
     
     inline def setActivationCondition(value: Expression): Self = StObject.set(x, "activationCondition", value.asInstanceOf[js.Any])
     

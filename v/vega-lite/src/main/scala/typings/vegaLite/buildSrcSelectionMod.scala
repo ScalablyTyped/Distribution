@@ -98,7 +98,8 @@ object buildSrcSelectionMod {
       __obj.asInstanceOf[BaseSelectionConfig[T]]
     }
     
-    extension [Self <: BaseSelectionConfig[?], T /* <: SelectionType */](x: Self & BaseSelectionConfig[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseSelectionConfig[?], T /* <: SelectionType */] (val x: Self & BaseSelectionConfig[T]) extends AnyVal {
       
       inline def setClear(value: Stream | String | Boolean): Self = StObject.set(x, "clear", value.asInstanceOf[js.Any])
       
@@ -178,7 +179,8 @@ object buildSrcSelectionMod {
       __obj.asInstanceOf[BrushConfig]
     }
     
-    extension [Self <: BrushConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BrushConfig] (val x: Self) extends AnyVal {
       
       inline def setCursor(value: Cursor): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
       
@@ -265,7 +267,8 @@ object buildSrcSelectionMod {
       __obj.asInstanceOf[IntervalSelectionConfig]
     }
     
-    extension [Self <: IntervalSelectionConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IntervalSelectionConfig] (val x: Self) extends AnyVal {
       
       inline def setMark(value: BrushConfig): Self = StObject.set(x, "mark", value.asInstanceOf[js.Any])
       
@@ -305,7 +308,8 @@ object buildSrcSelectionMod {
       __obj.asInstanceOf[IntervalSelectionConfigWithoutType]
     }
     
-    extension [Self <: IntervalSelectionConfigWithoutType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IntervalSelectionConfigWithoutType] (val x: Self) extends AnyVal {
       
       inline def setClear(value: Stream | String | Boolean): Self = StObject.set(x, "clear", value.asInstanceOf[js.Any])
       
@@ -358,7 +362,8 @@ object buildSrcSelectionMod {
       __obj.asInstanceOf[LegendStreamBinding]
     }
     
-    extension [Self <: LegendStreamBinding](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LegendStreamBinding] (val x: Self) extends AnyVal {
       
       inline def setLegend(value: String | Stream): Self = StObject.set(x, "legend", value.asInstanceOf[js.Any])
     }
@@ -430,7 +435,8 @@ object buildSrcSelectionMod {
       __obj.asInstanceOf[PointSelectionConfig]
     }
     
-    extension [Self <: PointSelectionConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PointSelectionConfig] (val x: Self) extends AnyVal {
       
       inline def setFields(value: js.Array[FieldName]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
       
@@ -472,7 +478,8 @@ object buildSrcSelectionMod {
       __obj.asInstanceOf[PointSelectionConfigWithoutType]
     }
     
-    extension [Self <: PointSelectionConfigWithoutType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PointSelectionConfigWithoutType] (val x: Self) extends AnyVal {
       
       inline def setClear(value: Stream | String | Boolean): Self = StObject.set(x, "clear", value.asInstanceOf[js.Any])
       
@@ -534,7 +541,8 @@ object buildSrcSelectionMod {
       __obj.asInstanceOf[SelectionConfig]
     }
     
-    extension [Self <: SelectionConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SelectionConfig] (val x: Self) extends AnyVal {
       
       inline def setInterval(value: IntervalSelectionConfigWithoutType): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
       
@@ -604,7 +612,8 @@ object buildSrcSelectionMod {
       __obj.asInstanceOf[SelectionParameter[T]]
     }
     
-    extension [Self <: SelectionParameter[?], T /* <: SelectionType */](x: Self & SelectionParameter[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SelectionParameter[?], T /* <: SelectionType */] (val x: Self & SelectionParameter[T]) extends AnyVal {
       
       inline def setBind(
         value: /* import warning: importer.ImportType#apply Failed type conversion: T extends 'point' ? vega-typings.vega-typings/types/spec/bind.Binding | std.Record<string, vega-typings.vega-typings/types/spec/bind.Binding> | vega-lite.vega-lite/build/src/selection.LegendBinding : T extends 'interval' ? 'scales' : never */ js.Any
@@ -674,7 +683,8 @@ object buildSrcSelectionMod {
       __obj.asInstanceOf[TopLevelSelectionParameter]
     }
     
-    extension [Self <: TopLevelSelectionParameter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TopLevelSelectionParameter] (val x: Self) extends AnyVal {
       
       inline def setViews(value: js.Array[String | js.Array[String]]): Self = StObject.set(x, "views", value.asInstanceOf[js.Any])
       

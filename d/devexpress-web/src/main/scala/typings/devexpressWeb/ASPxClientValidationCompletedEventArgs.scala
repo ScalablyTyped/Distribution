@@ -55,7 +55,8 @@ object ASPxClientValidationCompletedEventArgs {
     __obj.asInstanceOf[ASPxClientValidationCompletedEventArgs]
   }
   
-  extension [Self <: ASPxClientValidationCompletedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientValidationCompletedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setContainer(value: Any): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     

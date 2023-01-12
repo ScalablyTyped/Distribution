@@ -17,7 +17,8 @@ object TabControlTabEventArgs {
     __obj.asInstanceOf[TabControlTabEventArgs]
   }
   
-  extension [Self <: TabControlTabEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TabControlTabEventArgs] (val x: Self) extends AnyVal {
     
     inline def setTab(value: BootstrapTab): Self = StObject.set(x, "tab", value.asInstanceOf[js.Any])
   }

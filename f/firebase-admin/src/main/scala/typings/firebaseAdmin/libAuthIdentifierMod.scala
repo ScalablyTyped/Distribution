@@ -31,7 +31,8 @@ object libAuthIdentifierMod {
       __obj.asInstanceOf[EmailIdentifier]
     }
     
-    extension [Self <: EmailIdentifier](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EmailIdentifier] (val x: Self) extends AnyVal {
       
       inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     }
@@ -50,7 +51,8 @@ object libAuthIdentifierMod {
       __obj.asInstanceOf[PhoneIdentifier]
     }
     
-    extension [Self <: PhoneIdentifier](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PhoneIdentifier] (val x: Self) extends AnyVal {
       
       inline def setPhoneNumber(value: String): Self = StObject.set(x, "phoneNumber", value.asInstanceOf[js.Any])
     }
@@ -71,7 +73,8 @@ object libAuthIdentifierMod {
       __obj.asInstanceOf[ProviderIdentifier]
     }
     
-    extension [Self <: ProviderIdentifier](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProviderIdentifier] (val x: Self) extends AnyVal {
       
       inline def setProviderId(value: String): Self = StObject.set(x, "providerId", value.asInstanceOf[js.Any])
       
@@ -92,7 +95,8 @@ object libAuthIdentifierMod {
       __obj.asInstanceOf[UidIdentifier]
     }
     
-    extension [Self <: UidIdentifier](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UidIdentifier] (val x: Self) extends AnyVal {
       
       inline def setUid(value: String): Self = StObject.set(x, "uid", value.asInstanceOf[js.Any])
     }

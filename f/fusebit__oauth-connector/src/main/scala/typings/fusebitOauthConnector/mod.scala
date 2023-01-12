@@ -157,7 +157,8 @@ object mod {
       __obj.asInstanceOf[AuthorizeParams]
     }
     
-    extension [Self <: AuthorizeParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AuthorizeParams] (val x: Self) extends AnyVal {
       
       inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
@@ -192,7 +193,8 @@ object mod {
       __obj.asInstanceOf[OAuthTokenResponse]
     }
     
-    extension [Self <: OAuthTokenResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OAuthTokenResponse] (val x: Self) extends AnyVal {
       
       inline def setAccess_token(value: String): Self = StObject.set(x, "access_token", value.asInstanceOf[js.Any])
       
@@ -236,7 +238,8 @@ object mod {
       __obj.asInstanceOf[UserContext[TVendorUserProfile]]
     }
     
-    extension [Self <: UserContext[?], TVendorUserProfile](x: Self & UserContext[TVendorUserProfile]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UserContext[?], TVendorUserProfile] (val x: Self & UserContext[TVendorUserProfile]) extends AnyVal {
       
       inline def setForeignOAuthIdentities(value: StringDictionary[ConnectorBaseUrl]): Self = StObject.set(x, "foreignOAuthIdentities", value.asInstanceOf[js.Any])
       

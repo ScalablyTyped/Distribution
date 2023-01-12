@@ -70,7 +70,8 @@ object MMORoom {
     __obj.asInstanceOf[MMORoom]
   }
   
-  extension [Self <: MMORoom](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MMORoom] (val x: Self) extends AnyVal {
     
     inline def setDefaultAOI(value: Vec3D): Self = StObject.set(x, "defaultAOI", value.asInstanceOf[js.Any])
     

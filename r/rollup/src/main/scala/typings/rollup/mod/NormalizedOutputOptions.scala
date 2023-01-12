@@ -166,7 +166,8 @@ object NormalizedOutputOptions {
     __obj.asInstanceOf[NormalizedOutputOptions]
   }
   
-  extension [Self <: NormalizedOutputOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NormalizedOutputOptions] (val x: Self) extends AnyVal {
     
     inline def setAmd(value: NormalizedAmdOptions): Self = StObject.set(x, "amd", value.asInstanceOf[js.Any])
     

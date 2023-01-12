@@ -42,7 +42,8 @@ object XRInputSource {
     __obj.asInstanceOf[XRInputSource]
   }
   
-  extension [Self <: XRInputSource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XRInputSource] (val x: Self) extends AnyVal {
     
     inline def setGamepad(value: Gamepad): Self = StObject.set(x, "gamepad", value.asInstanceOf[js.Any])
     

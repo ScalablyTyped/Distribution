@@ -23,7 +23,8 @@ object MlPutTrainedModelRequest {
     __obj.asInstanceOf[MlPutTrainedModelRequest]
   }
   
-  extension [Self <: MlPutTrainedModelRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlPutTrainedModelRequest] (val x: Self) extends AnyVal {
     
     inline def setBody(value: Compresseddefinition): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

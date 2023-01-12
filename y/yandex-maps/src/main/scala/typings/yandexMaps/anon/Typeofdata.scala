@@ -17,7 +17,8 @@ object Typeofdata {
     __obj.asInstanceOf[Typeofdata]
   }
   
-  extension [Self <: Typeofdata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Typeofdata] (val x: Self) extends AnyVal {
     
     inline def setManager(value: Instantiable1[/* data */ js.UndefOr[js.Object], Manager]): Self = StObject.set(x, "Manager", value.asInstanceOf[js.Any])
   }

@@ -32,7 +32,8 @@ object XConditionEntry {
     __obj.asInstanceOf[XConditionEntry]
   }
   
-  extension [Self <: XConditionEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XConditionEntry] (val x: Self) extends AnyVal {
     
     inline def setGetType(value: () => Double): Self = StObject.set(x, "getType", js.Any.fromFunction0(value))
     

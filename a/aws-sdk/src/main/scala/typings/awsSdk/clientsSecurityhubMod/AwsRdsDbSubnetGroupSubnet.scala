@@ -28,7 +28,8 @@ object AwsRdsDbSubnetGroupSubnet {
     __obj.asInstanceOf[AwsRdsDbSubnetGroupSubnet]
   }
   
-  extension [Self <: AwsRdsDbSubnetGroupSubnet](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsRdsDbSubnetGroupSubnet] (val x: Self) extends AnyVal {
     
     inline def setSubnetAvailabilityZone(value: AwsRdsDbSubnetGroupSubnetAvailabilityZone): Self = StObject.set(x, "SubnetAvailabilityZone", value.asInstanceOf[js.Any])
     

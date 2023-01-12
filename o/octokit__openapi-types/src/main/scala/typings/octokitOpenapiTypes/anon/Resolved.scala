@@ -33,7 +33,8 @@ object Resolved {
     __obj.asInstanceOf[Resolved]
   }
   
-  extension [Self <: Resolved](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Resolved] (val x: Self) extends AnyVal {
     
     inline def setFile(value: Sourcelocation): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
     

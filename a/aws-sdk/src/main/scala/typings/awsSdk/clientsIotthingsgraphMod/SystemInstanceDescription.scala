@@ -42,7 +42,8 @@ object SystemInstanceDescription {
     __obj.asInstanceOf[SystemInstanceDescription]
   }
   
-  extension [Self <: SystemInstanceDescription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SystemInstanceDescription] (val x: Self) extends AnyVal {
     
     inline def setDefinition(value: DefinitionDocument): Self = StObject.set(x, "definition", value.asInstanceOf[js.Any])
     

@@ -83,7 +83,8 @@ object Proposal {
     __obj.asInstanceOf[Proposal]
   }
   
-  extension [Self <: Proposal](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Proposal] (val x: Self) extends AnyVal {
     
     inline def setActions(value: ProposalActions): Self = StObject.set(x, "Actions", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object ModelConstructorOptions {
     __obj.asInstanceOf[ModelConstructorOptions[TModel]]
   }
   
-  extension [Self <: ModelConstructorOptions[?], TModel /* <: Model[Any, ModelSetOptions, Any] */](x: Self & ModelConstructorOptions[TModel]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModelConstructorOptions[?], TModel /* <: Model[Any, ModelSetOptions, Any] */] (val x: Self & ModelConstructorOptions[TModel]) extends AnyVal {
     
     inline def setCollection(value: Collection[TModel]): Self = StObject.set(x, "collection", value.asInstanceOf[js.Any])
     

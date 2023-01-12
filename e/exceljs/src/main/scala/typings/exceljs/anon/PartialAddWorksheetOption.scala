@@ -27,7 +27,8 @@ object PartialAddWorksheetOption {
     __obj.asInstanceOf[PartialAddWorksheetOption]
   }
   
-  extension [Self <: PartialAddWorksheetOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialAddWorksheetOption] (val x: Self) extends AnyVal {
     
     inline def setHeaderFooter(value: PartialHeaderFooter): Self = StObject.set(x, "headerFooter", value.asInstanceOf[js.Any])
     

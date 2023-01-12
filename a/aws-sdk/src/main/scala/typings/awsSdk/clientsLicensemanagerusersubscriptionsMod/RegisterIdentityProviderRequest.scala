@@ -23,7 +23,8 @@ object RegisterIdentityProviderRequest {
     __obj.asInstanceOf[RegisterIdentityProviderRequest]
   }
   
-  extension [Self <: RegisterIdentityProviderRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RegisterIdentityProviderRequest] (val x: Self) extends AnyVal {
     
     inline def setIdentityProvider(value: IdentityProvider): Self = StObject.set(x, "IdentityProvider", value.asInstanceOf[js.Any])
     

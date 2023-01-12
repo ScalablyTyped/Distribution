@@ -18,7 +18,8 @@ object StartInputDeviceMaintenanceWindowRequest {
     __obj.asInstanceOf[StartInputDeviceMaintenanceWindowRequest]
   }
   
-  extension [Self <: StartInputDeviceMaintenanceWindowRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartInputDeviceMaintenanceWindowRequest] (val x: Self) extends AnyVal {
     
     inline def setInputDeviceId(value: string): Self = StObject.set(x, "InputDeviceId", value.asInstanceOf[js.Any])
   }

@@ -41,7 +41,8 @@ object typesCustomerMod {
       __obj.asInstanceOf[Customer]
     }
     
-    extension [Self <: Customer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Customer] (val x: Self) extends AnyVal {
       
       inline def setCreated(value: Double): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
       

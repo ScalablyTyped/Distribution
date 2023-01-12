@@ -31,7 +31,8 @@ object QualifiedTypeIdentifier_ {
     __obj.asInstanceOf[QualifiedTypeIdentifier_]
   }
   
-  extension [Self <: QualifiedTypeIdentifier_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QualifiedTypeIdentifier_] (val x: Self) extends AnyVal {
     
     inline def setId(value: Identifier_): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

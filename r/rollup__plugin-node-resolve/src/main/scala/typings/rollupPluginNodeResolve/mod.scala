@@ -143,7 +143,8 @@ object mod {
       __obj.asInstanceOf[RollupNodeResolveOptions]
     }
     
-    extension [Self <: RollupNodeResolveOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RollupNodeResolveOptions] (val x: Self) extends AnyVal {
       
       inline def setBrowser(value: Boolean): Self = StObject.set(x, "browser", value.asInstanceOf[js.Any])
       

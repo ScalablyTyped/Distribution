@@ -45,7 +45,8 @@ object FontFaceFallback {
     __obj.asInstanceOf[FontFaceFallback[TLength, TTime]]
   }
   
-  extension [Self <: FontFaceFallback[?, ?], TLength, TTime](x: Self & (FontFaceFallback[TLength, TTime])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FontFaceFallback[?, ?], TLength, TTime] (val x: Self & (FontFaceFallback[TLength, TTime])) extends AnyVal {
     
     inline def setAscentOverride(value: AscentOverride | js.Array[NonNullable[js.UndefOr[AscentOverride]]]): Self = StObject.set(x, "ascentOverride", value.asInstanceOf[js.Any])
     

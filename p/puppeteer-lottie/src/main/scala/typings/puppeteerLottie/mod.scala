@@ -63,7 +63,8 @@ object mod {
       __obj.asInstanceOf[FFmpegOptions]
     }
     
-    extension [Self <: FFmpegOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FFmpegOptions] (val x: Self) extends AnyVal {
       
       inline def setCrf(value: Double): Self = StObject.set(x, "crf", value.asInstanceOf[js.Any])
       
@@ -115,7 +116,8 @@ object mod {
       __obj.asInstanceOf[GifskiOptions]
     }
     
-    extension [Self <: GifskiOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GifskiOptions] (val x: Self) extends AnyVal {
       
       inline def setFast(value: Boolean): Self = StObject.set(x, "fast", value.asInstanceOf[js.Any])
       
@@ -163,7 +165,8 @@ object mod {
       __obj.asInstanceOf[Inject]
     }
     
-    extension [Self <: Inject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Inject] (val x: Self) extends AnyVal {
       
       inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
@@ -275,7 +278,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setAnimationData(value: js.Object): Self = StObject.set(x, "animationData", value.asInstanceOf[js.Any])
       

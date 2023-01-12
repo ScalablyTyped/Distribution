@@ -20,7 +20,8 @@ object Printing3DBufferDescription {
     __obj.asInstanceOf[Printing3DBufferDescription]
   }
   
-  extension [Self <: Printing3DBufferDescription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Printing3DBufferDescription] (val x: Self) extends AnyVal {
     
     inline def setFormat(value: Printing3DBufferFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     

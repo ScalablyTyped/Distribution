@@ -26,7 +26,8 @@ object GkeNodePoolConfig {
     __obj.asInstanceOf[GkeNodePoolConfig]
   }
   
-  extension [Self <: GkeNodePoolConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GkeNodePoolConfig] (val x: Self) extends AnyVal {
     
     inline def setAutoscaling(value: GkeNodePoolAutoscalingConfig): Self = StObject.set(x, "autoscaling", value.asInstanceOf[js.Any])
     

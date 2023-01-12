@@ -26,7 +26,8 @@ object TokenDictRule {
     __obj.asInstanceOf[TokenDictRule]
   }
   
-  extension [Self <: TokenDictRule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TokenDictRule] (val x: Self) extends AnyVal {
     
     inline def setPart_of_speech(value: String): Self = StObject.set(x, "part_of_speech", value.asInstanceOf[js.Any])
     

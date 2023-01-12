@@ -25,7 +25,8 @@ object MaintenanceSchedule {
     __obj.asInstanceOf[MaintenanceSchedule]
   }
   
-  extension [Self <: MaintenanceSchedule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MaintenanceSchedule] (val x: Self) extends AnyVal {
     
     inline def setCanReschedule(value: Boolean): Self = StObject.set(x, "canReschedule", value.asInstanceOf[js.Any])
     

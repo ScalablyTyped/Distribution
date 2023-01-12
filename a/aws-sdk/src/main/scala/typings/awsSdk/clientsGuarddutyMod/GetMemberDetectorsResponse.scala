@@ -26,7 +26,8 @@ object GetMemberDetectorsResponse {
     __obj.asInstanceOf[GetMemberDetectorsResponse]
   }
   
-  extension [Self <: GetMemberDetectorsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetMemberDetectorsResponse] (val x: Self) extends AnyVal {
     
     inline def setMemberDataSourceConfigurations(value: MemberDataSourceConfigurations): Self = StObject.set(x, "MemberDataSourceConfigurations", value.asInstanceOf[js.Any])
     

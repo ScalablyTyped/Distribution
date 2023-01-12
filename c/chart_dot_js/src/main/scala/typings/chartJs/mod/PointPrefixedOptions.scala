@@ -57,7 +57,8 @@ object PointPrefixedOptions {
     __obj.asInstanceOf[PointPrefixedOptions]
   }
   
-  extension [Self <: PointPrefixedOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PointPrefixedOptions] (val x: Self) extends AnyVal {
     
     inline def setPointBackgroundColor(value: Color): Self = StObject.set(x, "pointBackgroundColor", value.asInstanceOf[js.Any])
     

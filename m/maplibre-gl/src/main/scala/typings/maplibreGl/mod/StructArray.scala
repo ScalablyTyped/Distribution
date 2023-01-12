@@ -76,7 +76,8 @@ object StructArray {
     __obj.asInstanceOf[StructArray]
   }
   
-  extension [Self <: StructArray](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StructArray] (val x: Self) extends AnyVal {
     
     inline def setArrayBuffer(value: js.typedarray.ArrayBuffer): Self = StObject.set(x, "arrayBuffer", value.asInstanceOf[js.Any])
     

@@ -5110,7 +5110,8 @@ object anon {
       __obj.asInstanceOf[KinkeyofStandardCSSProper]
     }
     
-    extension [Self <: KinkeyofStandardCSSProper](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KinkeyofStandardCSSProper] (val x: Self) extends AnyVal {
       
       inline def setAccentColor(value: ThemeValue[js.UndefOr[AccentColor | js.Array[NonNullable[js.UndefOr[AccentColor]]]]]): Self = StObject.set(x, "accentColor", value.asInstanceOf[js.Any])
       
@@ -13604,7 +13605,8 @@ object anon {
       __obj.asInstanceOf[PartialScaleThemeProperti]
     }
     
-    extension [Self <: PartialScaleThemeProperti](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialScaleThemeProperti] (val x: Self) extends AnyVal {
       
       inline def setBorderStyles(value: ThemeValue[BorderStyle]): Self = StObject.set(x, "borderStyles", value.asInstanceOf[js.Any])
       
@@ -13703,7 +13705,8 @@ object anon {
       __obj.asInstanceOf[Theme]
     }
     
-    extension [Self <: Theme](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Theme] (val x: Self) extends AnyVal {
       
       inline def setTheme(value: typings.styledSystemCss.mod.Theme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     }

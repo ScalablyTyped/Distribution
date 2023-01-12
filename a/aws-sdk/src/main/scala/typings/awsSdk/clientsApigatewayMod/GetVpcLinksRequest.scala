@@ -23,7 +23,8 @@ object GetVpcLinksRequest {
     __obj.asInstanceOf[GetVpcLinksRequest]
   }
   
-  extension [Self <: GetVpcLinksRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetVpcLinksRequest] (val x: Self) extends AnyVal {
     
     inline def setLimit(value: NullableInteger): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     

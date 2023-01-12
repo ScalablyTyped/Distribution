@@ -111,7 +111,8 @@ object BubbleControllerDatasetOptions {
     __obj.asInstanceOf[BubbleControllerDatasetOptions]
   }
   
-  extension [Self <: BubbleControllerDatasetOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BubbleControllerDatasetOptions] (val x: Self) extends AnyVal {
     
     inline def setBackgroundColor(value: ScriptableAndArray[Color, ScriptableContext[bubble]]): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     

@@ -29,7 +29,8 @@ object ServiceResolver {
     __obj.asInstanceOf[ServiceResolver]
   }
   
-  extension [Self <: ServiceResolver](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServiceResolver] (val x: Self) extends AnyVal {
     
     inline def setEndpointFilter(value: String): Self = StObject.set(x, "endpointFilter", value.asInstanceOf[js.Any])
     

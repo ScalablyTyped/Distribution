@@ -71,7 +71,8 @@ object PartialPageSetup {
     __obj.asInstanceOf[PartialPageSetup]
   }
   
-  extension [Self <: PartialPageSetup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialPageSetup] (val x: Self) extends AnyVal {
     
     inline def setBlackAndWhite(value: Boolean): Self = StObject.set(x, "blackAndWhite", value.asInstanceOf[js.Any])
     

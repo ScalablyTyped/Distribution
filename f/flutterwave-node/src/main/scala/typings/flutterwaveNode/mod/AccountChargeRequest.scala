@@ -62,7 +62,8 @@ object AccountChargeRequest {
     __obj.asInstanceOf[AccountChargeRequest]
   }
   
-  extension [Self <: AccountChargeRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccountChargeRequest] (val x: Self) extends AnyVal {
     
     inline def setAccountbank(value: String): Self = StObject.set(x, "accountbank", value.asInstanceOf[js.Any])
     

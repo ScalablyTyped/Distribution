@@ -158,7 +158,8 @@ object panelPanelMod {
       __obj.asInstanceOf[PanelHeaderTemplateOptions]
     }
     
-    extension [Self <: PanelHeaderTemplateOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PanelHeaderTemplateOptions] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -582,7 +583,8 @@ object panelPanelMod {
       __obj.asInstanceOf[PanelProps]
     }
     
-    extension [Self <: PanelProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PanelProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       
@@ -1363,7 +1365,8 @@ object panelPanelMod {
       __obj.asInstanceOf[PanelToggleParams]
     }
     
-    extension [Self <: PanelToggleParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PanelToggleParams] (val x: Self) extends AnyVal {
       
       inline def setOriginalEvent(value: MouseEvent[HTMLElement, NativeMouseEvent]): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
       

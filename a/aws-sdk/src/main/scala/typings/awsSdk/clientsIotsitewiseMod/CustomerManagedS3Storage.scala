@@ -23,7 +23,8 @@ object CustomerManagedS3Storage {
     __obj.asInstanceOf[CustomerManagedS3Storage]
   }
   
-  extension [Self <: CustomerManagedS3Storage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomerManagedS3Storage] (val x: Self) extends AnyVal {
     
     inline def setRoleArn(value: ARN): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
     

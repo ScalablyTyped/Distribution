@@ -28,7 +28,8 @@ object PlatformFilter {
     __obj.asInstanceOf[PlatformFilter]
   }
   
-  extension [Self <: PlatformFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlatformFilter] (val x: Self) extends AnyVal {
     
     inline def setOperator(value: PlatformFilterOperator): Self = StObject.set(x, "Operator", value.asInstanceOf[js.Any])
     

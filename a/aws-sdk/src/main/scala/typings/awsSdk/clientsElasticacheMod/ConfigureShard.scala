@@ -33,7 +33,8 @@ object ConfigureShard {
     __obj.asInstanceOf[ConfigureShard]
   }
   
-  extension [Self <: ConfigureShard](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConfigureShard] (val x: Self) extends AnyVal {
     
     inline def setNewReplicaCount(value: Integer): Self = StObject.set(x, "NewReplicaCount", value.asInstanceOf[js.Any])
     

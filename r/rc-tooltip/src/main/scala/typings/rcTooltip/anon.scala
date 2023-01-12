@@ -17,7 +17,8 @@ object anon {
       __obj.asInstanceOf[KeepParent]
     }
     
-    extension [Self <: KeepParent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KeepParent] (val x: Self) extends AnyVal {
       
       inline def setKeepParent(value: Boolean): Self = StObject.set(x, "keepParent", value.asInstanceOf[js.Any])
       

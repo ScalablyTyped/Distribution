@@ -86,7 +86,8 @@ object typingsFormatParserMod {
       __obj.asInstanceOf[FormatExpression]
     }
     
-    extension [Self <: FormatExpression](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FormatExpression] (val x: Self) extends AnyVal {
       
       inline def setTokens(value: js.Array[FormatToken_]): Self = StObject.set(x, "tokens", value.asInstanceOf[js.Any])
       
@@ -110,7 +111,8 @@ object typingsFormatParserMod {
       __obj.asInstanceOf[FormatToken_]
     }
     
-    extension [Self <: FormatToken_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FormatToken_] (val x: Self) extends AnyVal {
       
       inline def setType(value: TokenType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       

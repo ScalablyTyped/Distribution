@@ -20,7 +20,8 @@ object OnComplete {
     __obj.asInstanceOf[OnComplete[TQuery]]
   }
   
-  extension [Self <: OnComplete[?], TQuery /* <: OperationType */](x: Self & OnComplete[TQuery]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnComplete[?], TQuery /* <: OperationType */] (val x: Self & OnComplete[TQuery]) extends AnyVal {
     
     inline def setOnComplete(value: /* arg */ js.Error | Null => Unit): Self = StObject.set(x, "onComplete", js.Any.fromFunction1(value))
     

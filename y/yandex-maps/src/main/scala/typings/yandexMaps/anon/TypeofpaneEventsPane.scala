@@ -32,7 +32,8 @@ object TypeofpaneEventsPane {
     __obj.asInstanceOf[TypeofpaneEventsPane]
   }
   
-  extension [Self <: TypeofpaneEventsPane](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofpaneEventsPane] (val x: Self) extends AnyVal {
     
     inline def setEventsPane(value: Instantiable2[/* map */ Map_, /* params */ CheckContextMenu, EventsPane]): Self = StObject.set(x, "EventsPane", value.asInstanceOf[js.Any])
     

@@ -26,7 +26,8 @@ object IPreProcessedFileInfo {
     __obj.asInstanceOf[IPreProcessedFileInfo]
   }
   
-  extension [Self <: IPreProcessedFileInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPreProcessedFileInfo] (val x: Self) extends AnyVal {
     
     inline def setDiagnostics(value: js.Array[Diagnostic]): Self = StObject.set(x, "diagnostics", value.asInstanceOf[js.Any])
     

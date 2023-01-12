@@ -52,7 +52,8 @@ object mod {
       __obj.asInstanceOf[QuadtreeLeaf[T]]
     }
     
-    extension [Self <: QuadtreeLeaf[?], T](x: Self & QuadtreeLeaf[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QuadtreeLeaf[?], T] (val x: Self & QuadtreeLeaf[T]) extends AnyVal {
       
       inline def setData(value: T): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       

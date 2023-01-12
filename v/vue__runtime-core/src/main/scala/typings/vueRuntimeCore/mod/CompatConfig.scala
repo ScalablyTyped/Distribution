@@ -108,7 +108,8 @@ object CompatConfig {
     __obj.asInstanceOf[CompatConfig]
   }
   
-  extension [Self <: CompatConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CompatConfig] (val x: Self) extends AnyVal {
     
     inline def setATTR_ENUMERATED_COERCION(value: Boolean | `suppress-warning`): Self = StObject.set(x, "ATTR_ENUMERATED_COERCION", value.asInstanceOf[js.Any])
     

@@ -36,7 +36,8 @@ object FaxAccount {
     __obj.asInstanceOf[FaxAccount]
   }
   
-  extension [Self <: FaxAccount](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FaxAccount] (val x: Self) extends AnyVal {
     
     inline def setAccountName(value: String): Self = StObject.set(x, "AccountName", value.asInstanceOf[js.Any])
     

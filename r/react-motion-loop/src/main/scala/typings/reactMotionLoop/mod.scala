@@ -44,7 +44,8 @@ object mod {
       __obj.asInstanceOf[ReactMotionLoopProps]
     }
     
-    extension [Self <: ReactMotionLoopProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReactMotionLoopProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: /* interpolatedStyle */ PlainStyle => ReactElement): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
       

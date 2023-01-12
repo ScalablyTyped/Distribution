@@ -18,7 +18,8 @@ object WatchIndexesOptions {
     __obj.asInstanceOf[WatchIndexesOptions]
   }
   
-  extension [Self <: WatchIndexesOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WatchIndexesOptions] (val x: Self) extends AnyVal {
     
     inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     

@@ -102,7 +102,8 @@ object protocolEntityIentityMod {
     
     inline def toXML(entity: IEntity, prohibited_names: String*): XML = ^.asInstanceOf[js.Dynamic].applyDynamic("toXML")(scala.List(entity.asInstanceOf[js.Any]).`++`(prohibited_names.asInstanceOf[Seq[js.Any]])*).asInstanceOf[XML]
     
-    extension [Self <: IEntity](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IEntity] (val x: Self) extends AnyVal {
       
       inline def setConstruct(value: XML => Unit): Self = StObject.set(x, "construct", js.Any.fromFunction1(value))
       

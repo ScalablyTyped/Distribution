@@ -41,7 +41,8 @@ object libTypesButtonMod {
       __obj.asInstanceOf[ButtonCfg]
     }
     
-    extension [Self <: ButtonCfg](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ButtonCfg] (val x: Self) extends AnyVal {
       
       inline def setButtonStyle(value: Active): Self = StObject.set(x, "buttonStyle", value.asInstanceOf[js.Any])
       

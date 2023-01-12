@@ -20,7 +20,8 @@ object TypeofImageEditor {
     __obj.asInstanceOf[TypeofImageEditor]
   }
   
-  extension [Self <: TypeofImageEditor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofImageEditor] (val x: Self) extends AnyVal {
     
     inline def setExtend(value: js.Object => ImageEditor): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
     

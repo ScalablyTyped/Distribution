@@ -29,7 +29,8 @@ object clientstringversionstring {
     __obj.asInstanceOf[clientstringversionstring]
   }
   
-  extension [Self <: clientstringversionstring](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: clientstringversionstring] (val x: Self) extends AnyVal {
     
     inline def setClient(value: String): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
     

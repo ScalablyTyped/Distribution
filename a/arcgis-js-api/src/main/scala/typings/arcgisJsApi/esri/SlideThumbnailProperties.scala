@@ -20,7 +20,8 @@ object SlideThumbnailProperties {
     __obj.asInstanceOf[SlideThumbnailProperties]
   }
   
-  extension [Self <: SlideThumbnailProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SlideThumbnailProperties] (val x: Self) extends AnyVal {
     
     inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     

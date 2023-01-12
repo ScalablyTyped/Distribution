@@ -31,7 +31,8 @@ object RainyWeatherProperties {
     __obj.asInstanceOf[RainyWeatherProperties]
   }
   
-  extension [Self <: RainyWeatherProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RainyWeatherProperties] (val x: Self) extends AnyVal {
     
     inline def setCloudCover(value: Double): Self = StObject.set(x, "cloudCover", value.asInstanceOf[js.Any])
     

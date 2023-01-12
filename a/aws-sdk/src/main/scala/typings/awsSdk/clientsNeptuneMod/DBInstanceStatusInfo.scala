@@ -33,7 +33,8 @@ object DBInstanceStatusInfo {
     __obj.asInstanceOf[DBInstanceStatusInfo]
   }
   
-  extension [Self <: DBInstanceStatusInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DBInstanceStatusInfo] (val x: Self) extends AnyVal {
     
     inline def setMessage(value: String): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
     

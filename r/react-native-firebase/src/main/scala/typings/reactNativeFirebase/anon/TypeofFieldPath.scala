@@ -17,7 +17,8 @@ object TypeofFieldPath {
     __obj.asInstanceOf[TypeofFieldPath]
   }
   
-  extension [Self <: TypeofFieldPath](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofFieldPath] (val x: Self) extends AnyVal {
     
     inline def setDocumentId(value: () => FieldPath): Self = StObject.set(x, "documentId", js.Any.fromFunction0(value))
   }

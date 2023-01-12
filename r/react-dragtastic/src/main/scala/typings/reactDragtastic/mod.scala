@@ -83,7 +83,8 @@ object mod {
       __obj.asInstanceOf[DragComponentProps]
     }
     
-    extension [Self <: DragComponentProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DragComponentProps] (val x: Self) extends AnyVal {
       
       inline def setAlwaysRender(value: Boolean): Self = StObject.set(x, "alwaysRender", value.asInstanceOf[js.Any])
       
@@ -126,7 +127,8 @@ object mod {
       __obj.asInstanceOf[DragStateProps]
     }
     
-    extension [Self <: DragStateProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DragStateProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: State => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
       
@@ -178,7 +180,8 @@ object mod {
       __obj.asInstanceOf[DraggableProps]
     }
     
-    extension [Self <: DraggableProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DraggableProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: StateisActivebooleanevent => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
       
@@ -258,7 +261,8 @@ object mod {
       __obj.asInstanceOf[DroppableProps]
     }
     
-    extension [Self <: DroppableProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DroppableProps] (val x: Self) extends AnyVal {
       
       inline def setAccepts(value: Accepts): Self = StObject.set(x, "accepts", value.asInstanceOf[js.Any])
       
@@ -335,7 +339,8 @@ object mod {
       __obj.asInstanceOf[State]
     }
     
-    extension [Self <: State](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: State] (val x: Self) extends AnyVal {
       
       inline def setCurrentlyDraggingId(value: Id): Self = StObject.set(x, "currentlyDraggingId", value.asInstanceOf[js.Any])
       

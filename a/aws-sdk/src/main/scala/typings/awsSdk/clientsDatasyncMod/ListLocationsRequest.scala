@@ -28,7 +28,8 @@ object ListLocationsRequest {
     __obj.asInstanceOf[ListLocationsRequest]
   }
   
-  extension [Self <: ListLocationsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListLocationsRequest] (val x: Self) extends AnyVal {
     
     inline def setFilters(value: LocationFilters): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
     

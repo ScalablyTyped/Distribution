@@ -216,7 +216,8 @@ object esComponentsDialogAlertMod {
       __obj.asInstanceOf[DialogAlertProps]
     }
     
-    extension [Self <: DialogAlertProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DialogAlertProps] (val x: Self) extends AnyVal {
       
       inline def setAfterClose(value: () => Unit): Self = StObject.set(x, "afterClose", js.Any.fromFunction0(value))
       

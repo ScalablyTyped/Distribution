@@ -24,7 +24,8 @@ object OvalArc {
     __obj.asInstanceOf[OvalArc]
   }
   
-  extension [Self <: OvalArc](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OvalArc] (val x: Self) extends AnyVal {
     
     inline def setModels(value: IModelMap): Self = StObject.set(x, "models", value.asInstanceOf[js.Any])
     

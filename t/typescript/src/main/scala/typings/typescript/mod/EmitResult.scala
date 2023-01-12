@@ -20,7 +20,8 @@ object EmitResult {
     __obj.asInstanceOf[EmitResult]
   }
   
-  extension [Self <: EmitResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EmitResult] (val x: Self) extends AnyVal {
     
     inline def setDiagnostics(value: js.Array[Diagnostic]): Self = StObject.set(x, "diagnostics", value.asInstanceOf[js.Any])
     

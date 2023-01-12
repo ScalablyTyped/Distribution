@@ -21,7 +21,8 @@ object BoundingBox12 {
     __obj.asInstanceOf[BoundingBox12]
   }
   
-  extension [Self <: BoundingBox12](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BoundingBox12] (val x: Self) extends AnyVal {
     
     inline def setX1(value: Double): Self = StObject.set(x, "x1", value.asInstanceOf[js.Any])
     

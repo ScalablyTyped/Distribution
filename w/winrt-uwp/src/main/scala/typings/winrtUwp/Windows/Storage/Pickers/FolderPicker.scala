@@ -54,7 +54,8 @@ object FolderPicker {
     __obj.asInstanceOf[FolderPicker]
   }
   
-  extension [Self <: FolderPicker](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FolderPicker] (val x: Self) extends AnyVal {
     
     inline def setCommitButtonText(value: String): Self = StObject.set(x, "commitButtonText", value.asInstanceOf[js.Any])
     

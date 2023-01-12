@@ -56,7 +56,8 @@ object MaterialManager {
     __obj.asInstanceOf[MaterialManager]
   }
   
-  extension [Self <: MaterialManager](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MaterialManager] (val x: Self) extends AnyVal {
     
     inline def setAddCompactLayoutSupport(value: Material => Material): Self = StObject.set(x, "addCompactLayoutSupport", js.Any.fromFunction1(value))
     

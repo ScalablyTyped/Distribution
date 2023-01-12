@@ -31,7 +31,8 @@ object XboxLiveEndpointPairCreationResult {
     __obj.asInstanceOf[XboxLiveEndpointPairCreationResult]
   }
   
-  extension [Self <: XboxLiveEndpointPairCreationResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XboxLiveEndpointPairCreationResult] (val x: Self) extends AnyVal {
     
     inline def setDeviceAddress(value: XboxLiveDeviceAddress): Self = StObject.set(x, "deviceAddress", value.asInstanceOf[js.Any])
     

@@ -44,7 +44,8 @@ object SaveDialogOptions {
     __obj.asInstanceOf[SaveDialogOptions]
   }
   
-  extension [Self <: SaveDialogOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SaveDialogOptions] (val x: Self) extends AnyVal {
     
     inline def setDefaultUri(value: Uri): Self = StObject.set(x, "defaultUri", value.asInstanceOf[js.Any])
     

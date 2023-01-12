@@ -15,7 +15,8 @@ object EnumValuesIncludeRemoteServices {
     __obj.asInstanceOf[EnumValuesIncludeRemoteServices]
   }
   
-  extension [Self <: EnumValuesIncludeRemoteServices](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnumValuesIncludeRemoteServices] (val x: Self) extends AnyVal {
     
     inline def setEnumValues(value: IncludeRemoteServices): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
   }

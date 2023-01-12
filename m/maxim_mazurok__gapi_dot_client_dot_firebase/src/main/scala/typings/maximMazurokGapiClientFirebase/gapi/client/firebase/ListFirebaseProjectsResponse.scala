@@ -22,7 +22,8 @@ object ListFirebaseProjectsResponse {
     __obj.asInstanceOf[ListFirebaseProjectsResponse]
   }
   
-  extension [Self <: ListFirebaseProjectsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListFirebaseProjectsResponse] (val x: Self) extends AnyVal {
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     

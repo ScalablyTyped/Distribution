@@ -32,7 +32,8 @@ object FindCallbackResults {
     __obj.asInstanceOf[FindCallbackResults]
   }
   
-  extension [Self <: FindCallbackResults](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FindCallbackResults] (val x: Self) extends AnyVal {
     
     inline def setActiveMatchOrdinal(value: integer): Self = StObject.set(x, "activeMatchOrdinal", value.asInstanceOf[js.Any])
     

@@ -16,7 +16,8 @@ object ReleaseChannel {
     __obj.asInstanceOf[ReleaseChannel]
   }
   
-  extension [Self <: ReleaseChannel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReleaseChannel] (val x: Self) extends AnyVal {
     
     inline def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
     

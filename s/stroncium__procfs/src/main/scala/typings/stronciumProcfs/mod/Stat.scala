@@ -47,7 +47,8 @@ object Stat {
     __obj.asInstanceOf[Stat]
   }
   
-  extension [Self <: Stat](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Stat] (val x: Self) extends AnyVal {
     
     inline def setBootTime(value: js.Date): Self = StObject.set(x, "bootTime", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object TransferProgressEvent {
     __obj.asInstanceOf[TransferProgressEvent]
   }
   
-  extension [Self <: TransferProgressEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransferProgressEvent] (val x: Self) extends AnyVal {
     
     inline def setLoadedBytes(value: Double): Self = StObject.set(x, "loadedBytes", value.asInstanceOf[js.Any])
   }

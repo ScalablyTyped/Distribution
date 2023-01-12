@@ -19,7 +19,8 @@ object CenterOffset {
     __obj.asInstanceOf[CenterOffset]
   }
   
-  extension [Self <: CenterOffset](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CenterOffset] (val x: Self) extends AnyVal {
     
     inline def setCenterOffset(value: Double): Self = StObject.set(x, "centerOffset", value.asInstanceOf[js.Any])
     

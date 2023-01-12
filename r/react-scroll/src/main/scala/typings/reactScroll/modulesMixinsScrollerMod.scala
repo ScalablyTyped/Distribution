@@ -55,7 +55,8 @@ object modulesMixinsScrollerMod {
       __obj.asInstanceOf[Scroller]
     }
     
-    extension [Self <: Scroller](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Scroller] (val x: Self) extends AnyVal {
       
       inline def setGet(value: /* name */ String => Any): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
       

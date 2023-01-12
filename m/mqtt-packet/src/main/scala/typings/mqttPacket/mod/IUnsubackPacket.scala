@@ -24,7 +24,8 @@ object IUnsubackPacket {
     __obj.asInstanceOf[IUnsubackPacket]
   }
   
-  extension [Self <: IUnsubackPacket](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IUnsubackPacket] (val x: Self) extends AnyVal {
     
     inline def setCmd(value: unsuback): Self = StObject.set(x, "cmd", value.asInstanceOf[js.Any])
     

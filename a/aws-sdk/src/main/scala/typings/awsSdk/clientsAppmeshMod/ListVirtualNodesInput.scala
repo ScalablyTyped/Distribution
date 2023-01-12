@@ -33,7 +33,8 @@ object ListVirtualNodesInput {
     __obj.asInstanceOf[ListVirtualNodesInput]
   }
   
-  extension [Self <: ListVirtualNodesInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListVirtualNodesInput] (val x: Self) extends AnyVal {
     
     inline def setLimit(value: ListVirtualNodesLimit): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     

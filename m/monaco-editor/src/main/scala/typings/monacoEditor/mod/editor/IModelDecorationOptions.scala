@@ -116,7 +116,8 @@ object IModelDecorationOptions {
     __obj.asInstanceOf[IModelDecorationOptions]
   }
   
-  extension [Self <: IModelDecorationOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IModelDecorationOptions] (val x: Self) extends AnyVal {
     
     inline def setAfter(value: InjectedTextOptions): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
     

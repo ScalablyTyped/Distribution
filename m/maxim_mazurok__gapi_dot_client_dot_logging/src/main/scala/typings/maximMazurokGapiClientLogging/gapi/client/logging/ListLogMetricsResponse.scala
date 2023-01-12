@@ -22,7 +22,8 @@ object ListLogMetricsResponse {
     __obj.asInstanceOf[ListLogMetricsResponse]
   }
   
-  extension [Self <: ListLogMetricsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListLogMetricsResponse] (val x: Self) extends AnyVal {
     
     inline def setMetrics(value: js.Array[LogMetric]): Self = StObject.set(x, "metrics", value.asInstanceOf[js.Any])
     

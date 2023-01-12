@@ -88,7 +88,8 @@ object NodeAPI {
     __obj.asInstanceOf[NodeAPI[TSets]]
   }
   
-  extension [Self <: NodeAPI[?], TSets /* <: NodeAPISettingsWithData */](x: Self & NodeAPI[TSets]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodeAPI[?], TSets /* <: NodeAPISettingsWithData */] (val x: Self & NodeAPI[TSets]) extends AnyVal {
     
     inline def setAuth(value: NodeAPIAuth): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     

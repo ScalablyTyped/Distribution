@@ -27,7 +27,8 @@ object MedicationRequestSubstitution {
     __obj.asInstanceOf[MedicationRequestSubstitution]
   }
   
-  extension [Self <: MedicationRequestSubstitution](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MedicationRequestSubstitution] (val x: Self) extends AnyVal {
     
     inline def setAllowed(value: Boolean): Self = StObject.set(x, "allowed", value.asInstanceOf[js.Any])
     

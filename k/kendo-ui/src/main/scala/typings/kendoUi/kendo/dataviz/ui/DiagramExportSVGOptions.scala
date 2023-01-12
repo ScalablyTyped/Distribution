@@ -15,7 +15,8 @@ object DiagramExportSVGOptions {
     __obj.asInstanceOf[DiagramExportSVGOptions]
   }
   
-  extension [Self <: DiagramExportSVGOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DiagramExportSVGOptions] (val x: Self) extends AnyVal {
     
     inline def setRaw(value: Boolean): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
     

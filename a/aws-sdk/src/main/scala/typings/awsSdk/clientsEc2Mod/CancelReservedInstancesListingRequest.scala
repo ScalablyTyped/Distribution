@@ -18,7 +18,8 @@ object CancelReservedInstancesListingRequest {
     __obj.asInstanceOf[CancelReservedInstancesListingRequest]
   }
   
-  extension [Self <: CancelReservedInstancesListingRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CancelReservedInstancesListingRequest] (val x: Self) extends AnyVal {
     
     inline def setReservedInstancesListingId(value: ReservedInstancesListingId): Self = StObject.set(x, "ReservedInstancesListingId", value.asInstanceOf[js.Any])
   }

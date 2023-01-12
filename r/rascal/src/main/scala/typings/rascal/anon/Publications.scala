@@ -21,7 +21,8 @@ object Publications {
     __obj.asInstanceOf[Publications]
   }
   
-  extension [Self <: Publications](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Publications] (val x: Self) extends AnyVal {
     
     inline def setPublications(value: Confirm): Self = StObject.set(x, "publications", value.asInstanceOf[js.Any])
     

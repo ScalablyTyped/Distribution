@@ -31,7 +31,8 @@ object CustomOptimization {
     __obj.asInstanceOf[CustomOptimization]
   }
   
-  extension [Self <: CustomOptimization](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomOptimization] (val x: Self) extends AnyVal {
     
     inline def setOnApply(value: (Scene, SceneOptimizer) => Boolean): Self = StObject.set(x, "onApply", js.Any.fromFunction2(value))
     

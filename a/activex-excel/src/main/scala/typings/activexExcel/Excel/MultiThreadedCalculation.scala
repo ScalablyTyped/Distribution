@@ -37,7 +37,8 @@ object MultiThreadedCalculation {
     __obj.asInstanceOf[MultiThreadedCalculation]
   }
   
-  extension [Self <: MultiThreadedCalculation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MultiThreadedCalculation] (val x: Self) extends AnyVal {
     
     inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     

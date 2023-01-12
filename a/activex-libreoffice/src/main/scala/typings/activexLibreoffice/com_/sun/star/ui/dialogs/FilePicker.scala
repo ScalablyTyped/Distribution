@@ -79,7 +79,8 @@ object FilePicker {
     __obj.asInstanceOf[FilePicker]
   }
   
-  extension [Self <: FilePicker](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FilePicker] (val x: Self) extends AnyVal {
     
     inline def setCreateWithMode(value: Double => Unit): Self = StObject.set(x, "createWithMode", js.Any.fromFunction1(value))
   }

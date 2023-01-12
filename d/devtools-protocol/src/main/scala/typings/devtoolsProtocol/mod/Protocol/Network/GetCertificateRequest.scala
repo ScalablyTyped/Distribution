@@ -18,7 +18,8 @@ object GetCertificateRequest {
     __obj.asInstanceOf[GetCertificateRequest]
   }
   
-  extension [Self <: GetCertificateRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetCertificateRequest] (val x: Self) extends AnyVal {
     
     inline def setOrigin(value: String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
   }

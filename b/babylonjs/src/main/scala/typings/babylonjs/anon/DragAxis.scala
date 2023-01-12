@@ -18,7 +18,8 @@ object DragAxis {
     __obj.asInstanceOf[DragAxis]
   }
   
-  extension [Self <: DragAxis](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DragAxis] (val x: Self) extends AnyVal {
     
     inline def setDragAxis(value: Vector3): Self = StObject.set(x, "dragAxis", value.asInstanceOf[js.Any])
     

@@ -42,7 +42,8 @@ object mod {
       __obj.asInstanceOf[MathJaxContextValue]
     }
     
-    extension [Self <: MathJaxContextValue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MathJaxContextValue] (val x: Self) extends AnyVal {
       
       inline def setMathJax(value: js.Object): Self = StObject.set(x, "MathJax", value.asInstanceOf[js.Any])
       

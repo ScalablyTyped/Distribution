@@ -115,7 +115,8 @@ object Trainer {
       __obj.asInstanceOf[DSROptions]
     }
     
-    extension [Self <: DSROptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DSROptions] (val x: Self) extends AnyVal {
       
       inline def setCost(value: (/* targetValues */ js.Array[Double], /* outputValues */ js.Array[Double]) => Double): Self = StObject.set(x, "cost", js.Any.fromFunction2(value))
       
@@ -182,7 +183,8 @@ object Trainer {
       __obj.asInstanceOf[DSRTrainingResult]
     }
     
-    extension [Self <: DSRTrainingResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DSRTrainingResult] (val x: Self) extends AnyVal {
       
       inline def setError(value: Double): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
@@ -213,7 +215,8 @@ object Trainer {
       __obj.asInstanceOf[ERGOptions]
     }
     
-    extension [Self <: ERGOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ERGOptions] (val x: Self) extends AnyVal {
       
       inline def setCost(value: (/* targetValues */ js.Array[Double], /* outputValues */ js.Array[Double]) => Double): Self = StObject.set(x, "cost", js.Any.fromFunction2(value))
       
@@ -256,7 +259,8 @@ object Trainer {
       __obj.asInstanceOf[ERGTrainingResult]
     }
     
-    extension [Self <: ERGTrainingResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ERGTrainingResult] (val x: Self) extends AnyVal {
       
       inline def setError(value: Double): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
@@ -316,7 +320,8 @@ object Trainer {
       __obj.asInstanceOf[TrainingOptions]
     }
     
-    extension [Self <: TrainingOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TrainingOptions] (val x: Self) extends AnyVal {
       
       inline def setCost(value: (/* targetValues */ js.Array[Double], /* outputValues */ js.Array[Double]) => Double): Self = StObject.set(x, "cost", js.Any.fromFunction2(value))
       
@@ -367,7 +372,8 @@ object Trainer {
       __obj.asInstanceOf[TrainingPair]
     }
     
-    extension [Self <: TrainingPair](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TrainingPair] (val x: Self) extends AnyVal {
       
       inline def setInput(value: js.Array[Double]): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
       
@@ -394,7 +400,8 @@ object Trainer {
       __obj.asInstanceOf[TrainingResult]
     }
     
-    extension [Self <: TrainingResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TrainingResult] (val x: Self) extends AnyVal {
       
       inline def setError(value: Double): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
@@ -422,7 +429,8 @@ object Trainer {
       __obj.asInstanceOf[TrainingScheduleDoData]
     }
     
-    extension [Self <: TrainingScheduleDoData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TrainingScheduleDoData] (val x: Self) extends AnyVal {
       
       inline def setError(value: Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
@@ -446,7 +454,8 @@ object Trainer {
       __obj.asInstanceOf[TrainingScheduleOptions]
     }
     
-    extension [Self <: TrainingScheduleOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TrainingScheduleOptions] (val x: Self) extends AnyVal {
       
       inline def setDo(value: TrainingScheduleDoData => Boolean | Unit): Self = StObject.set(x, "do", js.Any.fromFunction1(value))
       
@@ -473,7 +482,8 @@ object Trainer {
       __obj.asInstanceOf[XOROptions]
     }
     
-    extension [Self <: XOROptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XOROptions] (val x: Self) extends AnyVal {
       
       inline def setCost(value: (/* targetValues */ js.Array[Double], /* outputValues */ js.Array[Double]) => Double): Self = StObject.set(x, "cost", js.Any.fromFunction2(value))
       

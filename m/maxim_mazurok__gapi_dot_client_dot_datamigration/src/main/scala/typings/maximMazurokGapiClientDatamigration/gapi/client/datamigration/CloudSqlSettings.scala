@@ -77,7 +77,8 @@ object CloudSqlSettings {
     __obj.asInstanceOf[CloudSqlSettings]
   }
   
-  extension [Self <: CloudSqlSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CloudSqlSettings] (val x: Self) extends AnyVal {
     
     inline def setActivationPolicy(value: String): Self = StObject.set(x, "activationPolicy", value.asInstanceOf[js.Any])
     

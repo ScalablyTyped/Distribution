@@ -40,7 +40,8 @@ object TableColumn {
     __obj.asInstanceOf[TableColumn]
   }
   
-  extension [Self <: TableColumn](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TableColumn] (val x: Self) extends AnyVal {
     
     inline def setFilterButton(value: Boolean): Self = StObject.set(x, "filterButton", value.asInstanceOf[js.Any])
     

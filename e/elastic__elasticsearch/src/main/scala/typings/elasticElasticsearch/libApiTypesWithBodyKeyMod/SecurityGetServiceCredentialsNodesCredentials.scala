@@ -21,7 +21,8 @@ object SecurityGetServiceCredentialsNodesCredentials {
     __obj.asInstanceOf[SecurityGetServiceCredentialsNodesCredentials]
   }
   
-  extension [Self <: SecurityGetServiceCredentialsNodesCredentials](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SecurityGetServiceCredentialsNodesCredentials] (val x: Self) extends AnyVal {
     
     inline def setFile_tokens(value: Record[String, SecurityGetServiceCredentialsNodesCredentialsFileToken]): Self = StObject.set(x, "file_tokens", value.asInstanceOf[js.Any])
     

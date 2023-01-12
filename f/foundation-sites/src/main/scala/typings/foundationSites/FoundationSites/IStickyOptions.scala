@@ -37,7 +37,8 @@ object IStickyOptions {
     __obj.asInstanceOf[IStickyOptions]
   }
   
-  extension [Self <: IStickyOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IStickyOptions] (val x: Self) extends AnyVal {
     
     inline def setAnchor(value: String): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
     

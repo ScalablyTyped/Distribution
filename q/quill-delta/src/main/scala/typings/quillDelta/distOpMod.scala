@@ -34,7 +34,8 @@ object distOpMod {
       __obj.asInstanceOf[Op]
     }
     
-    extension [Self <: Op](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Op] (val x: Self) extends AnyVal {
       
       inline def setAttributes(value: AttributeMap): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       

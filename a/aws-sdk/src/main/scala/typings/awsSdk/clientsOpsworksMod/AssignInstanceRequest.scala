@@ -23,7 +23,8 @@ object AssignInstanceRequest {
     __obj.asInstanceOf[AssignInstanceRequest]
   }
   
-  extension [Self <: AssignInstanceRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssignInstanceRequest] (val x: Self) extends AnyVal {
     
     inline def setInstanceId(value: String): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
     

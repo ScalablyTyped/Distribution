@@ -96,7 +96,8 @@ object libMod {
       __obj.asInstanceOf[VictoryVoronoiContainerProps]
     }
     
-    extension [Self <: VictoryVoronoiContainerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VictoryVoronoiContainerProps] (val x: Self) extends AnyVal {
       
       inline def setActivateData(value: Boolean): Self = StObject.set(x, "activateData", value.asInstanceOf[js.Any])
       

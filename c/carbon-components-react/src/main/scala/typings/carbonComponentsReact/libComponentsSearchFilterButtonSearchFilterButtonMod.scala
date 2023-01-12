@@ -32,7 +32,8 @@ object libComponentsSearchFilterButtonSearchFilterButtonMod extends Shortcut {
       __obj.asInstanceOf[SearchFilterButtonProps]
     }
     
-    extension [Self <: SearchFilterButtonProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SearchFilterButtonProps] (val x: Self) extends AnyVal {
       
       inline def setIconDescription(value: String): Self = StObject.set(x, "iconDescription", value.asInstanceOf[js.Any])
       

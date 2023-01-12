@@ -33,7 +33,8 @@ object Receipt {
     __obj.asInstanceOf[Receipt]
   }
   
-  extension [Self <: Receipt](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Receipt] (val x: Self) extends AnyVal {
     
     inline def setContactChannelArn(value: SsmContactsArn): Self = StObject.set(x, "ContactChannelArn", value.asInstanceOf[js.Any])
     

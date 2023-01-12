@@ -25,7 +25,8 @@ object libCheckboxPropsTypeMod {
       __obj.asInstanceOf[CheckboxItemPropsType]
     }
     
-    extension [Self <: CheckboxItemPropsType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CheckboxItemPropsType] (val x: Self) extends AnyVal {
       
       inline def setExtra(value: ReactNode): Self = StObject.set(x, "extra", value.asInstanceOf[js.Any])
       
@@ -58,7 +59,8 @@ object libCheckboxPropsTypeMod {
       __obj.asInstanceOf[CheckboxPropsType]
     }
     
-    extension [Self <: CheckboxPropsType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CheckboxPropsType] (val x: Self) extends AnyVal {
       
       inline def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
       
@@ -89,7 +91,8 @@ object libCheckboxPropsTypeMod {
       __obj.asInstanceOf[OnChangeParams]
     }
     
-    extension [Self <: OnChangeParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OnChangeParams] (val x: Self) extends AnyVal {
       
       inline def setTarget(value: Checked): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     }

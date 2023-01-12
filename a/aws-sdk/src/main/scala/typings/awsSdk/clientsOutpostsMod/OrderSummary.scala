@@ -48,7 +48,8 @@ object OrderSummary {
     __obj.asInstanceOf[OrderSummary]
   }
   
-  extension [Self <: OrderSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OrderSummary] (val x: Self) extends AnyVal {
     
     inline def setLineItemCountsByStatus(value: LineItemStatusCounts): Self = StObject.set(x, "LineItemCountsByStatus", value.asInstanceOf[js.Any])
     

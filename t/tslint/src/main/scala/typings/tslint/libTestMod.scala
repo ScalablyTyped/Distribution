@@ -40,7 +40,8 @@ object libTestMod {
       __obj.asInstanceOf[SkippedTest]
     }
     
-    extension [Self <: SkippedTest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SkippedTest] (val x: Self) extends AnyVal {
       
       inline def setRequirement(value: String): Self = StObject.set(x, "requirement", value.asInstanceOf[js.Any])
       
@@ -78,7 +79,8 @@ object libTestMod {
       __obj.asInstanceOf[TestOutput]
     }
     
-    extension [Self <: TestOutput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TestOutput] (val x: Self) extends AnyVal {
       
       inline def setErrorsFromLinter(value: js.Array[LintError]): Self = StObject.set(x, "errorsFromLinter", value.asInstanceOf[js.Any])
       
@@ -113,7 +115,8 @@ object libTestMod {
       __obj.asInstanceOf[TestResult]
     }
     
-    extension [Self <: TestResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TestResult] (val x: Self) extends AnyVal {
       
       inline def setDirectory(value: String): Self = StObject.set(x, "directory", value.asInstanceOf[js.Any])
       

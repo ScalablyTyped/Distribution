@@ -33,7 +33,8 @@ object MonitoringQueryLanguageCondition {
     __obj.asInstanceOf[MonitoringQueryLanguageCondition]
   }
   
-  extension [Self <: MonitoringQueryLanguageCondition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MonitoringQueryLanguageCondition] (val x: Self) extends AnyVal {
     
     inline def setDuration(value: String): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object ErrorResponseBase {
     __obj.asInstanceOf[ErrorResponseBase]
   }
   
-  extension [Self <: ErrorResponseBase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ErrorResponseBase] (val x: Self) extends AnyVal {
     
     inline def setError(value: ErrorCause): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     

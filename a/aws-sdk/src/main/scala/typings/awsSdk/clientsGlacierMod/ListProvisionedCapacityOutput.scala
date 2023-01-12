@@ -18,7 +18,8 @@ object ListProvisionedCapacityOutput {
     __obj.asInstanceOf[ListProvisionedCapacityOutput]
   }
   
-  extension [Self <: ListProvisionedCapacityOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListProvisionedCapacityOutput] (val x: Self) extends AnyVal {
     
     inline def setProvisionedCapacityList(value: ProvisionedCapacityList): Self = StObject.set(x, "ProvisionedCapacityList", value.asInstanceOf[js.Any])
     

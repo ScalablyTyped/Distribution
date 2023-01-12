@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[ClockMode]
     }
     
-    extension [Self <: ClockMode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClockMode] (val x: Self) extends AnyVal {
       
       inline def setClockMode(value: Double): Self = StObject.set(x, "clockMode", value.asInstanceOf[js.Any])
       
@@ -42,7 +43,8 @@ object anon {
       __obj.asInstanceOf[NewValue]
     }
     
-    extension [Self <: NewValue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NewValue] (val x: Self) extends AnyVal {
       
       inline def setClockMode(value: Double): Self = StObject.set(x, "clockMode", value.asInstanceOf[js.Any])
       
@@ -65,7 +67,8 @@ object anon {
       __obj.asInstanceOf[Time]
     }
     
-    extension [Self <: Time](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Time] (val x: Self) extends AnyVal {
       
       inline def setTime(value: String): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
       

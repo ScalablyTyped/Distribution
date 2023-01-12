@@ -497,7 +497,8 @@ object esListMod {
       __obj.asInstanceOf[ListProps[T]]
     }
     
-    extension [Self <: ListProps[?], T](x: Self & ListProps[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListProps[?], T] (val x: Self & ListProps[T]) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       
@@ -1250,7 +1251,8 @@ object esListMod {
       __obj.asInstanceOf[ListRef]
     }
     
-    extension [Self <: ListRef](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListRef] (val x: Self) extends AnyVal {
       
       inline def setScrollTo(value: /* arg */ Double | ScrollConfig => Unit): Self = StObject.set(x, "scrollTo", js.Any.fromFunction1(value))
     }

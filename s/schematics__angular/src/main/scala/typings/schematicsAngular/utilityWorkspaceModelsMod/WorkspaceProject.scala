@@ -36,7 +36,8 @@ object WorkspaceProject {
     __obj.asInstanceOf[WorkspaceProject[TProjectType]]
   }
   
-  extension [Self <: WorkspaceProject[?], TProjectType /* <: ProjectType */](x: Self & WorkspaceProject[TProjectType]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkspaceProject[?], TProjectType /* <: ProjectType */] (val x: Self & WorkspaceProject[TProjectType]) extends AnyVal {
     
     inline def setArchitect(value: WorkspaceTargets[TProjectType]): Self = StObject.set(x, "architect", value.asInstanceOf[js.Any])
     

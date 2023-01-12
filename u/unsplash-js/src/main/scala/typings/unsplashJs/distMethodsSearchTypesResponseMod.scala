@@ -27,7 +27,8 @@ object distMethodsSearchTypesResponseMod {
       __obj.asInstanceOf[Response[A]]
     }
     
-    extension [Self <: Response[?], A](x: Self & Response[A]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Response[?], A] (val x: Self & Response[A]) extends AnyVal {
       
       inline def setResults(value: js.Array[A]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
       

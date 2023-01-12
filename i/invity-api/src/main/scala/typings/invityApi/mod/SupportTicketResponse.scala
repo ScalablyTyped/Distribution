@@ -17,7 +17,8 @@ object SupportTicketResponse {
     __obj.asInstanceOf[SupportTicketResponse]
   }
   
-  extension [Self <: SupportTicketResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SupportTicketResponse] (val x: Self) extends AnyVal {
     
     inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     

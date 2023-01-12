@@ -70,7 +70,8 @@ object SubstanceDefinitionRelationship {
     __obj.asInstanceOf[SubstanceDefinitionRelationship]
   }
   
-  extension [Self <: SubstanceDefinitionRelationship](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubstanceDefinitionRelationship] (val x: Self) extends AnyVal {
     
     inline def setAmountQuantity(value: Quantity): Self = StObject.set(x, "amountQuantity", value.asInstanceOf[js.Any])
     

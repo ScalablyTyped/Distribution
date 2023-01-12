@@ -52,7 +52,8 @@ object GlobalOffensiveEvents {
     __obj.asInstanceOf[GlobalOffensiveEvents]
   }
   
-  extension [Self <: GlobalOffensiveEvents](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GlobalOffensiveEvents] (val x: Self) extends AnyVal {
     
     inline def setAccountData(value: js.Array[/* accountData */ AccountData]): Self = StObject.set(x, "accountData", value.asInstanceOf[js.Any])
     

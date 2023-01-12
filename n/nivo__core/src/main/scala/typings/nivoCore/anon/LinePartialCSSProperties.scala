@@ -15,7 +15,8 @@ object LinePartialCSSProperties {
     __obj.asInstanceOf[LinePartialCSSProperties]
   }
   
-  extension [Self <: LinePartialCSSProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LinePartialCSSProperties] (val x: Self) extends AnyVal {
     
     inline def setLine(value: PartialCSSProperties): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
   }

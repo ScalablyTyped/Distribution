@@ -23,7 +23,8 @@ object SearchNone {
     __obj.asInstanceOf[SearchNone]
   }
   
-  extension [Self <: SearchNone](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchNone] (val x: Self) extends AnyVal {
     
     inline def setNone(value: String): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
     

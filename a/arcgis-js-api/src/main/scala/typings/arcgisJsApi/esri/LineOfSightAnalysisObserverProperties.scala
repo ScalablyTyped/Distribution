@@ -34,7 +34,8 @@ object LineOfSightAnalysisObserverProperties {
     __obj.asInstanceOf[LineOfSightAnalysisObserverProperties]
   }
   
-  extension [Self <: LineOfSightAnalysisObserverProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LineOfSightAnalysisObserverProperties] (val x: Self) extends AnyVal {
     
     inline def setElevationInfo(value: LineOfSightAnalysisObserverElevationInfo): Self = StObject.set(x, "elevationInfo", value.asInstanceOf[js.Any])
     

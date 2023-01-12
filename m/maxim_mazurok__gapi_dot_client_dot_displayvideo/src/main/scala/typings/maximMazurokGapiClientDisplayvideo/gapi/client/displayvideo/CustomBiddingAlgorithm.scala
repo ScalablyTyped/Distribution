@@ -51,7 +51,8 @@ object CustomBiddingAlgorithm {
     __obj.asInstanceOf[CustomBiddingAlgorithm]
   }
   
-  extension [Self <: CustomBiddingAlgorithm](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomBiddingAlgorithm] (val x: Self) extends AnyVal {
     
     inline def setAdvertiserId(value: String): Self = StObject.set(x, "advertiserId", value.asInstanceOf[js.Any])
     

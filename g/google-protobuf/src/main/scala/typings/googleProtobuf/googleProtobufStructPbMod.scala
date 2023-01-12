@@ -71,7 +71,8 @@ object googleProtobufStructPbMod {
         __obj.asInstanceOf[AsObject]
       }
       
-      extension [Self <: AsObject](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AsObject] (val x: Self) extends AnyVal {
         
         inline def setValuesList(value: js.Array[typings.googleProtobuf.googleProtobufStructPbMod.Value.AsObject]): Self = StObject.set(x, "valuesList", value.asInstanceOf[js.Any])
         
@@ -151,7 +152,8 @@ object googleProtobufStructPbMod {
         __obj.asInstanceOf[AsObject]
       }
       
-      extension [Self <: AsObject](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AsObject] (val x: Self) extends AnyVal {
         
         inline def setFieldsMap(
           value: js.Array[
@@ -323,7 +325,8 @@ object googleProtobufStructPbMod {
         __obj.asInstanceOf[AsObject]
       }
       
-      extension [Self <: AsObject](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AsObject] (val x: Self) extends AnyVal {
         
         inline def setBoolValue(value: Boolean): Self = StObject.set(x, "boolValue", value.asInstanceOf[js.Any])
         

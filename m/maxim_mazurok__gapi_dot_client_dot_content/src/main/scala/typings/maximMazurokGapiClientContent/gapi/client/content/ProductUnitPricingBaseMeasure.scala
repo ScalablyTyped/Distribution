@@ -19,7 +19,8 @@ object ProductUnitPricingBaseMeasure {
     __obj.asInstanceOf[ProductUnitPricingBaseMeasure]
   }
   
-  extension [Self <: ProductUnitPricingBaseMeasure](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProductUnitPricingBaseMeasure] (val x: Self) extends AnyVal {
     
     inline def setUnit(value: String): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
     

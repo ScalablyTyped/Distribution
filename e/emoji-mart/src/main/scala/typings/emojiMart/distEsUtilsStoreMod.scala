@@ -38,7 +38,8 @@ object distEsUtilsStoreMod {
       __obj.asInstanceOf[StoreHandlers]
     }
     
-    extension [Self <: StoreHandlers](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StoreHandlers] (val x: Self) extends AnyVal {
       
       inline def setGetter(value: /* key */ String => Any): Self = StObject.set(x, "getter", js.Any.fromFunction1(value))
       

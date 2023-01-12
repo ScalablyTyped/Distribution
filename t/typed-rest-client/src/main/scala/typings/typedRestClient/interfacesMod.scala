@@ -25,7 +25,8 @@ object interfacesMod {
       __obj.asInstanceOf[IBasicCredentials]
     }
     
-    extension [Self <: IBasicCredentials](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IBasicCredentials] (val x: Self) extends AnyVal {
       
       inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
       
@@ -50,7 +51,8 @@ object interfacesMod {
       __obj.asInstanceOf[ICertConfiguration]
     }
     
-    extension [Self <: ICertConfiguration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICertConfiguration] (val x: Self) extends AnyVal {
       
       inline def setCaFile(value: String): Self = StObject.set(x, "caFile", value.asInstanceOf[js.Any])
       
@@ -127,7 +129,8 @@ object interfacesMod {
       __obj.asInstanceOf[IHttpClientResponse]
     }
     
-    extension [Self <: IHttpClientResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IHttpClientResponse] (val x: Self) extends AnyVal {
       
       inline def setMessage(value: IncomingMessage): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
@@ -152,7 +155,8 @@ object interfacesMod {
       __obj.asInstanceOf[IProxyConfiguration]
     }
     
-    extension [Self <: IProxyConfiguration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IProxyConfiguration] (val x: Self) extends AnyVal {
       
       inline def setProxyBypassHosts(value: js.Array[String]): Self = StObject.set(x, "proxyBypassHosts", value.asInstanceOf[js.Any])
       
@@ -191,7 +195,8 @@ object interfacesMod {
       __obj.asInstanceOf[IRequestHandler]
     }
     
-    extension [Self <: IRequestHandler](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IRequestHandler] (val x: Self) extends AnyVal {
       
       inline def setCanHandleAuthentication(value: IHttpClientResponse => Boolean): Self = StObject.set(x, "canHandleAuthentication", js.Any.fromFunction1(value))
       
@@ -216,7 +221,8 @@ object interfacesMod {
       __obj.asInstanceOf[IRequestInfo]
     }
     
-    extension [Self <: IRequestInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IRequestInfo] (val x: Self) extends AnyVal {
       
       inline def setHttpModule(value: Any): Self = StObject.set(x, "httpModule", value.asInstanceOf[js.Any])
       
@@ -261,7 +267,8 @@ object interfacesMod {
       __obj.asInstanceOf[IRequestOptions]
     }
     
-    extension [Self <: IRequestOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IRequestOptions] (val x: Self) extends AnyVal {
       
       inline def setAllowRedirectDowngrade(value: Boolean): Self = StObject.set(x, "allowRedirectDowngrade", value.asInstanceOf[js.Any])
       
@@ -332,7 +339,8 @@ object interfacesMod {
       __obj.asInstanceOf[IRequestQueryParams]
     }
     
-    extension [Self <: IRequestQueryParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IRequestQueryParams] (val x: Self) extends AnyVal {
       
       inline def setOptions(value: ArrayFormat): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       

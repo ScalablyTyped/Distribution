@@ -77,7 +77,8 @@ object PartialCandlestickData {
     __obj.asInstanceOf[PartialCandlestickData]
   }
   
-  extension [Self <: PartialCandlestickData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialCandlestickData] (val x: Self) extends AnyVal {
     
     inline def setClose(value: js.Array[Double]): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
     

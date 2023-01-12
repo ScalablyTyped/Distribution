@@ -29,7 +29,8 @@ object srcAxiosTypesMod {
       __obj.asInstanceOf[AxiosInstance]
     }
     
-    extension [Self <: AxiosInstance](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AxiosInstance] (val x: Self) extends AnyVal {
       
       inline def setRequest(value: AxiosRequestConfig => AxiosPromise[Any]): Self = StObject.set(x, "request", js.Any.fromFunction1(value))
     }
@@ -62,7 +63,8 @@ object srcAxiosTypesMod {
       __obj.asInstanceOf[AxiosRequestConfig]
     }
     
-    extension [Self <: AxiosRequestConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AxiosRequestConfig] (val x: Self) extends AnyVal {
       
       inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -107,7 +109,8 @@ object srcAxiosTypesMod {
       __obj.asInstanceOf[AxiosResponse[T]]
     }
     
-    extension [Self <: AxiosResponse[?], T](x: Self & AxiosResponse[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AxiosResponse[?], T] (val x: Self & AxiosResponse[T]) extends AnyVal {
       
       inline def setConfig(value: AxiosRequestConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       

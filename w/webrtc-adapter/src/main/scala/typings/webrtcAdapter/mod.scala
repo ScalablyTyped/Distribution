@@ -40,7 +40,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[IAdapter]
     }
     
-    extension [Self <: IAdapter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IAdapter] (val x: Self) extends AnyVal {
       
       inline def setBrowserDetails(value: IBrowserDetails): Self = StObject.set(x, "browserDetails", value.asInstanceOf[js.Any])
       
@@ -73,7 +74,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[IBrowserDetails]
     }
     
-    extension [Self <: IBrowserDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IBrowserDetails] (val x: Self) extends AnyVal {
       
       inline def setBrowser(value: String): Self = StObject.set(x, "browser", value.asInstanceOf[js.Any])
       
@@ -124,7 +126,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[IChromeShim]
     }
     
-    extension [Self <: IChromeShim](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IChromeShim] (val x: Self) extends AnyVal {
       
       inline def setFixNegotiationNeeded(value: Window => Unit): Self = StObject.set(x, "fixNegotiationNeeded", js.Any.fromFunction1(value))
       
@@ -171,7 +174,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[ICommonShim]
     }
     
-    extension [Self <: ICommonShim](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICommonShim] (val x: Self) extends AnyVal {
       
       inline def setRemoveAllowExtmapMixed(value: Window => Unit): Self = StObject.set(x, "removeAllowExtmapMixed", js.Any.fromFunction1(value))
       
@@ -213,7 +217,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[IFirefoxShim]
     }
     
-    extension [Self <: IFirefoxShim](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IFirefoxShim] (val x: Self) extends AnyVal {
       
       inline def setShimOnTrack(value: Window => Unit): Self = StObject.set(x, "shimOnTrack", js.Any.fromFunction1(value))
       
@@ -263,7 +268,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[ISafariShim]
     }
     
-    extension [Self <: ISafariShim](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISafariShim] (val x: Self) extends AnyVal {
       
       inline def setShimCallbacksAPI(value: Window => Unit): Self = StObject.set(x, "shimCallbacksAPI", js.Any.fromFunction1(value))
       

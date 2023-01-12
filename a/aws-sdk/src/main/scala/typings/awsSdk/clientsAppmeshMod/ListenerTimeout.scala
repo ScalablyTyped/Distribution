@@ -33,7 +33,8 @@ object ListenerTimeout {
     __obj.asInstanceOf[ListenerTimeout]
   }
   
-  extension [Self <: ListenerTimeout](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListenerTimeout] (val x: Self) extends AnyVal {
     
     inline def setGrpc(value: GrpcTimeout): Self = StObject.set(x, "grpc", value.asInstanceOf[js.Any])
     

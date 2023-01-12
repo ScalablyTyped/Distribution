@@ -103,7 +103,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setAny(value: (Node, js.Array[ChildNode]) => js.Function1[/* markup */ Any, Unit]): Self = StObject.set(x, "any", js.Any.fromFunction2(value))
       
@@ -144,7 +145,8 @@ object mod {
       __obj.asInstanceOf[SVGOptions]
     }
     
-    extension [Self <: SVGOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SVGOptions] (val x: Self) extends AnyVal {
       
       inline def setType(value: svg): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }

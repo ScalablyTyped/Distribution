@@ -36,7 +36,8 @@ object TypeofRedis {
     __obj.asInstanceOf[TypeofRedis]
   }
   
-  extension [Self <: TypeofRedis](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofRedis] (val x: Self) extends AnyVal {
     
     inline def setCreateClient(
       value: ConstructorParameters[

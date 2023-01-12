@@ -26,7 +26,8 @@ object DataCell {
     __obj.asInstanceOf[DataCell[RawDatum]]
   }
   
-  extension [Self <: DataCell[?], RawDatum /* <: Datum */](x: Self & DataCell[RawDatum]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataCell[?], RawDatum /* <: Datum */] (val x: Self & DataCell[RawDatum]) extends AnyVal {
     
     inline def setData(value: ComputedDatum[RawDatum]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
   }

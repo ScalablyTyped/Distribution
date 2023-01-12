@@ -63,7 +63,8 @@ object ScheduleActivityTaskDecisionAttributes {
     __obj.asInstanceOf[ScheduleActivityTaskDecisionAttributes]
   }
   
-  extension [Self <: ScheduleActivityTaskDecisionAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScheduleActivityTaskDecisionAttributes] (val x: Self) extends AnyVal {
     
     inline def setActivityId(value: ActivityId): Self = StObject.set(x, "activityId", value.asInstanceOf[js.Any])
     

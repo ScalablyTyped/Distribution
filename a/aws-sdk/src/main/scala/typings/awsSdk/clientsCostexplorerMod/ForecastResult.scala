@@ -33,7 +33,8 @@ object ForecastResult {
     __obj.asInstanceOf[ForecastResult]
   }
   
-  extension [Self <: ForecastResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ForecastResult] (val x: Self) extends AnyVal {
     
     inline def setMeanValue(value: GenericString): Self = StObject.set(x, "MeanValue", value.asInstanceOf[js.Any])
     

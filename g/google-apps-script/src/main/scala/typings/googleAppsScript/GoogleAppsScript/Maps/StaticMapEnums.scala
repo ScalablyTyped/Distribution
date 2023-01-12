@@ -29,7 +29,8 @@ object StaticMapEnums {
     __obj.asInstanceOf[StaticMapEnums]
   }
   
-  extension [Self <: StaticMapEnums](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StaticMapEnums] (val x: Self) extends AnyVal {
     
     inline def setColor(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Color */ Any): Self = StObject.set(x, "Color", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object anon {
       __obj.asInstanceOf[Enumerable[Actions]]
     }
     
-    extension [Self <: Enumerable[?], Actions /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Action */ Any */](x: Self & Enumerable[Actions]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Enumerable[?], Actions /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Action */ Any */] (val x: Self & Enumerable[Actions]) extends AnyVal {
       
       inline def setEnumerable(value: `true`): Self = StObject.set(x, "enumerable", value.asInstanceOf[js.Any])
       

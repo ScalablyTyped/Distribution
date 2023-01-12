@@ -30,7 +30,8 @@ object GitPullRequestChange {
     __obj.asInstanceOf[GitPullRequestChange]
   }
   
-  extension [Self <: GitPullRequestChange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GitPullRequestChange] (val x: Self) extends AnyVal {
     
     inline def setChangeTrackingId(value: Double): Self = StObject.set(x, "changeTrackingId", value.asInstanceOf[js.Any])
   }

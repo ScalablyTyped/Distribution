@@ -48,7 +48,8 @@ object NestedResults {
     __obj.asInstanceOf[NestedResults]
   }
   
-  extension [Self <: NestedResults](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NestedResults] (val x: Self) extends AnyVal {
     
     inline def setAddResult(value: Result => Unit): Self = StObject.set(x, "addResult", js.Any.fromFunction1(value))
     

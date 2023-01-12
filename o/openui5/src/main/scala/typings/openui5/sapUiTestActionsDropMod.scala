@@ -237,7 +237,8 @@ object sapUiTestActionsDropMod {
       __obj.asInstanceOf[DropSettings]
     }
     
-    extension [Self <: DropSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DropSettings] (val x: Self) extends AnyVal {
       
       inline def setAfter(value: Boolean | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
       

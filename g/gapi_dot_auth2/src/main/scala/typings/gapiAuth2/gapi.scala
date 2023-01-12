@@ -48,7 +48,8 @@ object gapi {
         __obj.asInstanceOf[AuthResponse]
       }
       
-      extension [Self <: AuthResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AuthResponse] (val x: Self) extends AnyVal {
         
         inline def setAccess_token(value: String): Self = StObject.set(x, "access_token", value.asInstanceOf[js.Any])
         
@@ -98,7 +99,8 @@ object gapi {
         __obj.asInstanceOf[AuthorizeConfig]
       }
       
-      extension [Self <: AuthorizeConfig](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AuthorizeConfig] (val x: Self) extends AnyVal {
         
         inline def setApp_package_name(value: String): Self = StObject.set(x, "app_package_name", value.asInstanceOf[js.Any])
         
@@ -178,7 +180,8 @@ object gapi {
         __obj.asInstanceOf[AuthorizeResponse]
       }
       
-      extension [Self <: AuthorizeResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AuthorizeResponse] (val x: Self) extends AnyVal {
         
         inline def setAccess_token(value: String): Self = StObject.set(x, "access_token", value.asInstanceOf[js.Any])
         
@@ -228,7 +231,8 @@ object gapi {
         __obj.asInstanceOf[BasicProfile]
       }
       
-      extension [Self <: BasicProfile](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: BasicProfile] (val x: Self) extends AnyVal {
         
         inline def setGetEmail(value: () => String): Self = StObject.set(x, "getEmail", js.Any.fromFunction0(value))
         
@@ -303,7 +307,8 @@ object gapi {
         __obj.asInstanceOf[ClientConfig]
       }
       
-      extension [Self <: ClientConfig](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ClientConfig] (val x: Self) extends AnyVal {
         
         inline def setClient_id(value: String): Self = StObject.set(x, "client_id", value.asInstanceOf[js.Any])
         
@@ -360,7 +365,8 @@ object gapi {
         __obj.asInstanceOf[CurrentUser]
       }
       
-      extension [Self <: CurrentUser](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CurrentUser] (val x: Self) extends AnyVal {
         
         inline def setGet(value: () => GoogleUser): Self = StObject.set(x, "get", js.Any.fromFunction0(value))
         
@@ -518,7 +524,8 @@ object gapi {
         __obj.asInstanceOf[IsSignedIn]
       }
       
-      extension [Self <: IsSignedIn](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IsSignedIn] (val x: Self) extends AnyVal {
         
         inline def setGet(value: () => Boolean): Self = StObject.set(x, "get", js.Any.fromFunction0(value))
         
@@ -546,7 +553,8 @@ object gapi {
         __obj.asInstanceOf[OfflineAccessOptions]
       }
       
-      extension [Self <: OfflineAccessOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: OfflineAccessOptions] (val x: Self) extends AnyVal {
         
         inline def setApp_package_name(value: String): Self = StObject.set(x, "app_package_name", value.asInstanceOf[js.Any])
         
@@ -619,7 +627,8 @@ object gapi {
         __obj.asInstanceOf[SigninOptions]
       }
       
-      extension [Self <: SigninOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SigninOptions] (val x: Self) extends AnyVal {
         
         inline def setApp_package_name(value: String): Self = StObject.set(x, "app_package_name", value.asInstanceOf[js.Any])
         
@@ -676,7 +685,8 @@ object gapi {
         __obj.asInstanceOf[SigninOptionsBuilder]
       }
       
-      extension [Self <: SigninOptionsBuilder](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SigninOptionsBuilder] (val x: Self) extends AnyVal {
         
         inline def setSetAppPackageName(value: String => Any): Self = StObject.set(x, "setAppPackageName", js.Any.fromFunction1(value))
         

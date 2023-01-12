@@ -23,7 +23,8 @@ object ListContentsResponse {
     __obj.asInstanceOf[ListContentsResponse]
   }
   
-  extension [Self <: ListContentsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListContentsResponse] (val x: Self) extends AnyVal {
     
     inline def setContentSummaries(value: ContentSummaryList): Self = StObject.set(x, "contentSummaries", value.asInstanceOf[js.Any])
     

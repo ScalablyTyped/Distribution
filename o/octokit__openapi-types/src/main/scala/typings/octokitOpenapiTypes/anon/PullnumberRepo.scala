@@ -22,7 +22,8 @@ object PullnumberRepo {
     __obj.asInstanceOf[PullnumberRepo]
   }
   
-  extension [Self <: PullnumberRepo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PullnumberRepo] (val x: Self) extends AnyVal {
     
     inline def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     

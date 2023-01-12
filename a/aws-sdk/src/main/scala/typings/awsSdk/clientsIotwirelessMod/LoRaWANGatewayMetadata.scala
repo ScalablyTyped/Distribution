@@ -28,7 +28,8 @@ object LoRaWANGatewayMetadata {
     __obj.asInstanceOf[LoRaWANGatewayMetadata]
   }
   
-  extension [Self <: LoRaWANGatewayMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LoRaWANGatewayMetadata] (val x: Self) extends AnyVal {
     
     inline def setGatewayEui(value: GatewayEui): Self = StObject.set(x, "GatewayEui", value.asInstanceOf[js.Any])
     

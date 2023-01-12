@@ -143,7 +143,8 @@ object NavigationAnnotationsFibonacciTimeZonesLabelOptions {
     __obj.asInstanceOf[NavigationAnnotationsFibonacciTimeZonesLabelOptions]
   }
   
-  extension [Self <: NavigationAnnotationsFibonacciTimeZonesLabelOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NavigationAnnotationsFibonacciTimeZonesLabelOptions] (val x: Self) extends AnyVal {
     
     inline def setAccessibility(value: AnnotationLabelAccessibilityOptionsObject): Self = StObject.set(x, "accessibility", value.asInstanceOf[js.Any])
     

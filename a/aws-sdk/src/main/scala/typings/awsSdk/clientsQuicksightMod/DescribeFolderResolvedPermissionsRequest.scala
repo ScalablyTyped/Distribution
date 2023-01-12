@@ -23,7 +23,8 @@ object DescribeFolderResolvedPermissionsRequest {
     __obj.asInstanceOf[DescribeFolderResolvedPermissionsRequest]
   }
   
-  extension [Self <: DescribeFolderResolvedPermissionsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeFolderResolvedPermissionsRequest] (val x: Self) extends AnyVal {
     
     inline def setAwsAccountId(value: AwsAccountId): Self = StObject.set(x, "AwsAccountId", value.asInstanceOf[js.Any])
     

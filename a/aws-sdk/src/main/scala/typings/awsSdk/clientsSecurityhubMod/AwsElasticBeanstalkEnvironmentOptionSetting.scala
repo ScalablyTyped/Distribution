@@ -33,7 +33,8 @@ object AwsElasticBeanstalkEnvironmentOptionSetting {
     __obj.asInstanceOf[AwsElasticBeanstalkEnvironmentOptionSetting]
   }
   
-  extension [Self <: AwsElasticBeanstalkEnvironmentOptionSetting](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsElasticBeanstalkEnvironmentOptionSetting] (val x: Self) extends AnyVal {
     
     inline def setNamespace(value: NonEmptyString): Self = StObject.set(x, "Namespace", value.asInstanceOf[js.Any])
     

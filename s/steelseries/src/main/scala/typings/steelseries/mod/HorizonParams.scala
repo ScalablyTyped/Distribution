@@ -26,7 +26,8 @@ object HorizonParams {
     __obj.asInstanceOf[HorizonParams]
   }
   
-  extension [Self <: HorizonParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HorizonParams] (val x: Self) extends AnyVal {
     
     inline def setForegroundType(value: ForegroundType): Self = StObject.set(x, "foregroundType", value.asInstanceOf[js.Any])
     

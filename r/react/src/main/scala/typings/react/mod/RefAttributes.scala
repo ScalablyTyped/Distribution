@@ -17,7 +17,8 @@ object RefAttributes {
     __obj.asInstanceOf[RefAttributes[T]]
   }
   
-  extension [Self <: RefAttributes[?], T](x: Self & RefAttributes[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RefAttributes[?], T] (val x: Self & RefAttributes[T]) extends AnyVal {
     
     inline def setRef(value: Ref[T]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object EncodeParam {
     __obj.asInstanceOf[EncodeParam]
   }
   
-  extension [Self <: EncodeParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EncodeParam] (val x: Self) extends AnyVal {
     
     inline def set$encode(value: Record[String, EncodeValue]): Self = StObject.set(x, "$encode", value.asInstanceOf[js.Any])
   }

@@ -47,7 +47,8 @@ object mod {
       __obj.asInstanceOf[MethodTypes]
     }
     
-    extension [Self <: MethodTypes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MethodTypes] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
       

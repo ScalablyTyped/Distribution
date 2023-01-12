@@ -17,7 +17,8 @@ object SjclKeyPair {
     __obj.asInstanceOf[SjclKeyPair[P, S]]
   }
   
-  extension [Self <: SjclKeyPair[?, ?], P /* <: SjclECCPublicKey */, S /* <: SjclECCSecretKey */](x: Self & (SjclKeyPair[P, S])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SjclKeyPair[?, ?], P /* <: SjclECCPublicKey */, S /* <: SjclECCSecretKey */] (val x: Self & (SjclKeyPair[P, S])) extends AnyVal {
     
     inline def setPub(value: P): Self = StObject.set(x, "pub", value.asInstanceOf[js.Any])
     

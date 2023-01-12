@@ -15,7 +15,8 @@ object UIkitNotificationElement {
     __obj.asInstanceOf[UIkitNotificationElement]
   }
   
-  extension [Self <: UIkitNotificationElement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UIkitNotificationElement] (val x: Self) extends AnyVal {
     
     inline def setClose(value: Boolean => Unit): Self = StObject.set(x, "close", js.Any.fromFunction1(value))
   }

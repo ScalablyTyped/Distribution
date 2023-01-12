@@ -23,7 +23,8 @@ object IStageGLOptions {
     __obj.asInstanceOf[IStageGLOptions]
   }
   
-  extension [Self <: IStageGLOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IStageGLOptions] (val x: Self) extends AnyVal {
     
     inline def setAntialias(value: Boolean): Self = StObject.set(x, "antialias", value.asInstanceOf[js.Any])
     

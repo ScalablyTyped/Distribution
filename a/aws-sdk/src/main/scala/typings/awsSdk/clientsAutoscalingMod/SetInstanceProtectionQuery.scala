@@ -32,7 +32,8 @@ object SetInstanceProtectionQuery {
     __obj.asInstanceOf[SetInstanceProtectionQuery]
   }
   
-  extension [Self <: SetInstanceProtectionQuery](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetInstanceProtectionQuery] (val x: Self) extends AnyVal {
     
     inline def setAutoScalingGroupName(value: XmlStringMaxLen255): Self = StObject.set(x, "AutoScalingGroupName", value.asInstanceOf[js.Any])
     

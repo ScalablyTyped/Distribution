@@ -23,7 +23,8 @@ object StreamingImageEncryptionConfiguration {
     __obj.asInstanceOf[StreamingImageEncryptionConfiguration]
   }
   
-  extension [Self <: StreamingImageEncryptionConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StreamingImageEncryptionConfiguration] (val x: Self) extends AnyVal {
     
     inline def setKeyArn(value: StreamingImageEncryptionConfigurationKeyArn): Self = StObject.set(x, "keyArn", value.asInstanceOf[js.Any])
     

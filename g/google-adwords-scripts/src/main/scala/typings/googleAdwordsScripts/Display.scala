@@ -26,7 +26,8 @@ object Display {
     __obj.asInstanceOf[Display]
   }
   
-  extension [Self <: Display](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Display] (val x: Self) extends AnyVal {
     
     inline def setAudiences(value: () => AdWordsSelector[Audience]): Self = StObject.set(x, "audiences", js.Any.fromFunction0(value))
     

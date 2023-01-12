@@ -23,7 +23,8 @@ object DeleteIdentityProviderRequest {
     __obj.asInstanceOf[DeleteIdentityProviderRequest]
   }
   
-  extension [Self <: DeleteIdentityProviderRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteIdentityProviderRequest] (val x: Self) extends AnyVal {
     
     inline def setProviderName(value: ProviderNameType): Self = StObject.set(x, "ProviderName", value.asInstanceOf[js.Any])
     

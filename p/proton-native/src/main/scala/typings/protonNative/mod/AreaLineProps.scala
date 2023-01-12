@@ -35,7 +35,8 @@ object AreaLineProps {
     __obj.asInstanceOf[AreaLineProps]
   }
   
-  extension [Self <: AreaLineProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AreaLineProps] (val x: Self) extends AnyVal {
     
     inline def setX1(value: Double | String): Self = StObject.set(x, "x1", value.asInstanceOf[js.Any])
     

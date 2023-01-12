@@ -60,7 +60,8 @@ object DraggingState {
     __obj.asInstanceOf[DraggingState]
   }
   
-  extension [Self <: DraggingState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DraggingState] (val x: Self) extends AnyVal {
     
     inline def setAfterCritical(value: LiftEffect): Self = StObject.set(x, "afterCritical", value.asInstanceOf[js.Any])
     

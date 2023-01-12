@@ -22,7 +22,8 @@ object ApplicationPermission {
     __obj.asInstanceOf[ApplicationPermission]
   }
   
-  extension [Self <: ApplicationPermission](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApplicationPermission] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

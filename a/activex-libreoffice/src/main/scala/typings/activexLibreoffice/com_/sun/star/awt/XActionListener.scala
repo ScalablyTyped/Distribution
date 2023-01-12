@@ -28,7 +28,8 @@ object XActionListener {
     __obj.asInstanceOf[XActionListener]
   }
   
-  extension [Self <: XActionListener](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XActionListener] (val x: Self) extends AnyVal {
     
     inline def setActionPerformed(value: ActionEvent => Unit): Self = StObject.set(x, "actionPerformed", js.Any.fromFunction1(value))
   }

@@ -48,7 +48,8 @@ object Statement {
     __obj.asInstanceOf[Statement]
   }
   
-  extension [Self <: Statement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Statement] (val x: Self) extends AnyVal {
     
     inline def setCode(value: GenericString): Self = StObject.set(x, "Code", value.asInstanceOf[js.Any])
     

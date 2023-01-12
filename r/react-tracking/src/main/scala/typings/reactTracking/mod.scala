@@ -74,7 +74,8 @@ object mod {
       __obj.asInstanceOf[DecoratorOptions[T]]
     }
     
-    extension [Self <: DecoratorOptions[?], T](x: Self & DecoratorOptions[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DecoratorOptions[?], T] (val x: Self & DecoratorOptions[T]) extends AnyVal {
       
       inline def setForwardRef(value: Boolean): Self = StObject.set(x, "forwardRef", value.asInstanceOf[js.Any])
       
@@ -137,7 +138,8 @@ object mod {
       __obj.asInstanceOf[Options[T]]
     }
     
-    extension [Self <: Options[?], T](x: Self & Options[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options[?], T] (val x: Self & Options[T]) extends AnyVal {
       
       inline def setDispatch(value: /* data */ T => Any): Self = StObject.set(x, "dispatch", js.Any.fromFunction1(value))
       
@@ -181,7 +183,8 @@ object mod {
       __obj.asInstanceOf[TrackingHook[P]]
     }
     
-    extension [Self <: TrackingHook[?], P](x: Self & TrackingHook[P]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TrackingHook[?], P] (val x: Self & TrackingHook[P]) extends AnyVal {
       
       inline def setTrack(value: TrackingComponent[P]): Self = StObject.set(x, "Track", value.asInstanceOf[js.Any])
     }
@@ -214,7 +217,8 @@ object mod {
       __obj.asInstanceOf[TrackingProp[P]]
     }
     
-    extension [Self <: TrackingProp[?], P](x: Self & TrackingProp[P]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TrackingProp[?], P] (val x: Self & TrackingProp[P]) extends AnyVal {
       
       inline def setGetTrackingData(value: () => js.Object): Self = StObject.set(x, "getTrackingData", js.Any.fromFunction0(value))
       

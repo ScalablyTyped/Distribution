@@ -48,7 +48,8 @@ object typesRuntimeRendererMod {
       __obj.asInstanceOf[RenderModule_]
     }
     
-    extension [Self <: RenderModule_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RenderModule_] (val x: Self) extends AnyVal {
       
       inline def setHandler(value: Handler): Self = StObject.set(x, "handler", value.asInstanceOf[js.Any])
       

@@ -42,7 +42,8 @@ object OperationRequestInfo {
     __obj.asInstanceOf[OperationRequestInfo]
   }
   
-  extension [Self <: OperationRequestInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OperationRequestInfo] (val x: Self) extends AnyVal {
     
     inline def setOperationArguments(value: OperationArguments): Self = StObject.set(x, "operationArguments", value.asInstanceOf[js.Any])
     

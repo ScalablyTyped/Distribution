@@ -56,7 +56,8 @@ object libComponentsToggleToggleDotbaseMod {
       __obj.asInstanceOf[IToggleState]
     }
     
-    extension [Self <: IToggleState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IToggleState] (val x: Self) extends AnyVal {
       
       inline def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
     }

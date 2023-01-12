@@ -23,7 +23,8 @@ object MtlsEndpointAliases {
     __obj.asInstanceOf[MtlsEndpointAliases]
   }
   
-  extension [Self <: MtlsEndpointAliases](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MtlsEndpointAliases] (val x: Self) extends AnyVal {
     
     inline def setDevice_authorization_endpoint(value: String): Self = StObject.set(x, "device_authorization_endpoint", value.asInstanceOf[js.Any])
     

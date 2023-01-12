@@ -84,7 +84,8 @@ object ngccSrcRenderingRenderingFormatterMod {
       __obj.asInstanceOf[RenderingFormatter]
     }
     
-    extension [Self <: RenderingFormatter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RenderingFormatter] (val x: Self) extends AnyVal {
       
       inline def setAddAdjacentStatements(value: (default, CompiledClass, String) => Unit): Self = StObject.set(x, "addAdjacentStatements", js.Any.fromFunction3(value))
       

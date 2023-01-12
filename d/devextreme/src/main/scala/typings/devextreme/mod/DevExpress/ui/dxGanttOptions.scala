@@ -370,7 +370,8 @@ object dxGanttOptions {
     __obj.asInstanceOf[dxGanttOptions]
   }
   
-  extension [Self <: dxGanttOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxGanttOptions] (val x: Self) extends AnyVal {
     
     inline def setAllowSelection(value: Boolean): Self = StObject.set(x, "allowSelection", value.asInstanceOf[js.Any])
     

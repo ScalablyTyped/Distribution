@@ -27,7 +27,8 @@ object X11ChannelInfo {
     __obj.asInstanceOf[X11ChannelInfo]
   }
   
-  extension [Self <: X11ChannelInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: X11ChannelInfo] (val x: Self) extends AnyVal {
     
     inline def setData(value: X11ChannelData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

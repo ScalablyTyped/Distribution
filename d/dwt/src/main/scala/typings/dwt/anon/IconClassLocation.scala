@@ -26,7 +26,8 @@ object IconClassLocation {
     __obj.asInstanceOf[IconClassLocation]
   }
   
-  extension [Self <: IconClassLocation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IconClassLocation] (val x: Self) extends AnyVal {
     
     inline def setIconClass(value: String): Self = StObject.set(x, "iconClass", value.asInstanceOf[js.Any])
     

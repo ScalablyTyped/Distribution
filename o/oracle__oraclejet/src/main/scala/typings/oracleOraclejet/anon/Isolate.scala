@@ -26,7 +26,8 @@ object Isolate {
     __obj.asInstanceOf[Isolate]
   }
   
-  extension [Self <: Isolate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Isolate] (val x: Self) extends AnyVal {
     
     inline def setIsolate(value: off | on): Self = StObject.set(x, "isolate", value.asInstanceOf[js.Any])
     

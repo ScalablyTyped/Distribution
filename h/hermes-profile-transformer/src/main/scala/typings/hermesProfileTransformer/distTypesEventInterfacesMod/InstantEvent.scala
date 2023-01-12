@@ -22,7 +22,8 @@ object InstantEvent {
     __obj.asInstanceOf[InstantEvent]
   }
   
-  extension [Self <: InstantEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InstantEvent] (val x: Self) extends AnyVal {
     
     inline def setPh(value: INSTANT_EVENTS): Self = StObject.set(x, "ph", value.asInstanceOf[js.Any])
     

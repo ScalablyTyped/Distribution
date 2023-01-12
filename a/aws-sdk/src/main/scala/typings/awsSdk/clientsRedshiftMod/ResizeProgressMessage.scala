@@ -93,7 +93,8 @@ object ResizeProgressMessage {
     __obj.asInstanceOf[ResizeProgressMessage]
   }
   
-  extension [Self <: ResizeProgressMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResizeProgressMessage] (val x: Self) extends AnyVal {
     
     inline def setAvgResizeRateInMegaBytesPerSecond(value: DoubleOptional): Self = StObject.set(x, "AvgResizeRateInMegaBytesPerSecond", value.asInstanceOf[js.Any])
     

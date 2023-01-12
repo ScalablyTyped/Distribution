@@ -15,7 +15,8 @@ object ActiveVideoResponse {
     __obj.asInstanceOf[ActiveVideoResponse]
   }
   
-  extension [Self <: ActiveVideoResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ActiveVideoResponse] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
   }

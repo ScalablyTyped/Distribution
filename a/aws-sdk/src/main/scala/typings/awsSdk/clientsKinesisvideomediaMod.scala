@@ -38,7 +38,8 @@ object clientsKinesisvideomediaMod {
       __obj.asInstanceOf[ClientApiVersions]
     }
     
-    extension [Self <: ClientApiVersions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClientApiVersions] (val x: Self) extends AnyVal {
       
       inline def setApiVersion(value: apiVersion): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
       
@@ -81,7 +82,8 @@ object clientsKinesisvideomediaMod {
       __obj.asInstanceOf[GetMediaInput]
     }
     
-    extension [Self <: GetMediaInput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetMediaInput] (val x: Self) extends AnyVal {
       
       inline def setStartSelector(value: StartSelector): Self = StObject.set(x, "StartSelector", value.asInstanceOf[js.Any])
       
@@ -114,7 +116,8 @@ object clientsKinesisvideomediaMod {
       __obj.asInstanceOf[GetMediaOutput]
     }
     
-    extension [Self <: GetMediaOutput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetMediaOutput] (val x: Self) extends AnyVal {
       
       inline def setContentType(value: ContentType): Self = StObject.set(x, "ContentType", value.asInstanceOf[js.Any])
       
@@ -177,7 +180,8 @@ object clientsKinesisvideomediaMod {
       __obj.asInstanceOf[StartSelector]
     }
     
-    extension [Self <: StartSelector](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StartSelector] (val x: Self) extends AnyVal {
       
       inline def setAfterFragmentNumber(value: FragmentNumberString): Self = StObject.set(x, "AfterFragmentNumber", value.asInstanceOf[js.Any])
       

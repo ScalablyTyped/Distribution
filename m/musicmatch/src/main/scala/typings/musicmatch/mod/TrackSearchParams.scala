@@ -35,7 +35,8 @@ object TrackSearchParams {
     __obj.asInstanceOf[TrackSearchParams]
   }
   
-  extension [Self <: TrackSearchParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TrackSearchParams] (val x: Self) extends AnyVal {
     
     inline def setF_artist_id(value: Double): Self = StObject.set(x, "f_artist_id", value.asInstanceOf[js.Any])
     

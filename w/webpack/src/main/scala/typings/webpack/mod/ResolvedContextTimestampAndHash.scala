@@ -19,7 +19,8 @@ object ResolvedContextTimestampAndHash {
     __obj.asInstanceOf[ResolvedContextTimestampAndHash]
   }
   
-  extension [Self <: ResolvedContextTimestampAndHash](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResolvedContextTimestampAndHash] (val x: Self) extends AnyVal {
     
     inline def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
     

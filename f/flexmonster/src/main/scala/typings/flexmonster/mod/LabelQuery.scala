@@ -41,7 +41,8 @@ object LabelQuery {
     __obj.asInstanceOf[LabelQuery]
   }
   
-  extension [Self <: LabelQuery](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LabelQuery] (val x: Self) extends AnyVal {
     
     inline def setBegin(value: String): Self = StObject.set(x, "begin", value.asInstanceOf[js.Any])
     

@@ -29,7 +29,8 @@ object settingsMod {
       __obj.asInstanceOf[ListDefinition[T]]
     }
     
-    extension [Self <: ListDefinition[?], T](x: Self & ListDefinition[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListDefinition[?], T] (val x: Self & ListDefinition[T]) extends AnyVal {
       
       inline def setDefault(value: T): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
       
@@ -70,7 +71,8 @@ object settingsMod {
       __obj.asInstanceOf[RangeDefinition]
     }
     
-    extension [Self <: RangeDefinition](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RangeDefinition] (val x: Self) extends AnyVal {
       
       inline def setDefault(value: Double): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
       
@@ -113,7 +115,8 @@ object settingsMod {
       __obj.asInstanceOf[SettingDefinition]
     }
     
-    extension [Self <: SettingDefinition](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SettingDefinition] (val x: Self) extends AnyVal {
       
       inline def setDesc(value: String): Self = StObject.set(x, "desc", value.asInstanceOf[js.Any])
       
@@ -296,7 +299,8 @@ object settingsMod {
       __obj.asInstanceOf[ToggleDefinition]
     }
     
-    extension [Self <: ToggleDefinition](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ToggleDefinition] (val x: Self) extends AnyVal {
       
       inline def setDefault(value: Boolean): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
       

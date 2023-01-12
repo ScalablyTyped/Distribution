@@ -190,7 +190,8 @@ object FeatureLayerCapabilitiesQuery {
     __obj.asInstanceOf[FeatureLayerCapabilitiesQuery]
   }
   
-  extension [Self <: FeatureLayerCapabilitiesQuery](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FeatureLayerCapabilitiesQuery] (val x: Self) extends AnyVal {
     
     inline def setMaxRecordCount(value: Double): Self = StObject.set(x, "maxRecordCount", value.asInstanceOf[js.Any])
     

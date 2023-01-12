@@ -37,7 +37,8 @@ object XGroupsSupplier {
     __obj.asInstanceOf[XGroupsSupplier]
   }
   
-  extension [Self <: XGroupsSupplier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XGroupsSupplier] (val x: Self) extends AnyVal {
     
     inline def setGetGroups(value: () => XNameAccess): Self = StObject.set(x, "getGroups", js.Any.fromFunction0(value))
     

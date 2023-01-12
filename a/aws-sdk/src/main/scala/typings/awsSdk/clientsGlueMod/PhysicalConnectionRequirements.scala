@@ -28,7 +28,8 @@ object PhysicalConnectionRequirements {
     __obj.asInstanceOf[PhysicalConnectionRequirements]
   }
   
-  extension [Self <: PhysicalConnectionRequirements](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PhysicalConnectionRequirements] (val x: Self) extends AnyVal {
     
     inline def setAvailabilityZone(value: NameString): Self = StObject.set(x, "AvailabilityZone", value.asInstanceOf[js.Any])
     

@@ -469,7 +469,8 @@ object Agent {
     __obj.asInstanceOf[Agent]
   }
   
-  extension [Self <: Agent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Agent] (val x: Self) extends AnyVal {
     
     inline def setAccessCode(value: String): Self = StObject.set(x, "accessCode", value.asInstanceOf[js.Any])
     

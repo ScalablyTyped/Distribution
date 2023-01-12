@@ -56,7 +56,8 @@ object TableProperties {
     __obj.asInstanceOf[TableProperties]
   }
   
-  extension [Self <: TableProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TableProperties] (val x: Self) extends AnyVal {
     
     inline def setColumns(value: js.Array[TableColumnProperties]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     

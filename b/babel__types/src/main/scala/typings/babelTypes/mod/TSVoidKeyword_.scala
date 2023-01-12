@@ -24,7 +24,8 @@ object TSVoidKeyword_ {
     __obj.asInstanceOf[TSVoidKeyword_]
   }
   
-  extension [Self <: TSVoidKeyword_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TSVoidKeyword_] (val x: Self) extends AnyVal {
     
     inline def setType(value: TSVoidKeyword): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

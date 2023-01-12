@@ -32,7 +32,8 @@ object MochaPhantomJsWindowOptions {
     __obj.asInstanceOf[MochaPhantomJsWindowOptions]
   }
   
-  extension [Self <: MochaPhantomJsWindowOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MochaPhantomJsWindowOptions] (val x: Self) extends AnyVal {
     
     inline def setEnded(value: Boolean): Self = StObject.set(x, "ended", value.asInstanceOf[js.Any])
     

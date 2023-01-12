@@ -53,7 +53,8 @@ object libTypesMod {
       __obj.asInstanceOf[AssignmentCommutativeReducerContainer]
     }
     
-    extension [Self <: AssignmentCommutativeReducerContainer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AssignmentCommutativeReducerContainer] (val x: Self) extends AnyVal {
       
       inline def setAssignmentCommutative(value: `true`): Self = StObject.set(x, "assignmentCommutative", value.asInstanceOf[js.Any])
       
@@ -82,7 +83,8 @@ object libTypesMod {
       __obj.asInstanceOf[NonAssignmentCommutativeReducerContainer]
     }
     
-    extension [Self <: NonAssignmentCommutativeReducerContainer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NonAssignmentCommutativeReducerContainer] (val x: Self) extends AnyVal {
       
       inline def setAssignmentCommutative(value: `false`): Self = StObject.set(x, "assignmentCommutative", value.asInstanceOf[js.Any])
       
@@ -148,7 +150,8 @@ object libTypesMod {
       __obj.asInstanceOf[Styletron]
     }
     
-    extension [Self <: Styletron](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Styletron] (val x: Self) extends AnyVal {
       
       inline def setBase(value: Any): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
       
@@ -215,7 +218,8 @@ object libTypesMod {
       __obj.asInstanceOf[StyletronProps[Props]]
     }
     
-    extension [Self <: StyletronProps[?], Props](x: Self & StyletronProps[Props]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StyletronProps[?], Props] (val x: Self & StyletronProps[Props]) extends AnyVal {
       
       inline def set$as(
         value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177, starting with typings.react.mod.ComponentType[scala.Any], typings.styletronReact.styletronReactStrings.a, typings.styletronReact.styletronReactStrings.abbr */ Any

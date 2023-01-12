@@ -19,7 +19,8 @@ object BulkUpdateOperation {
     __obj.asInstanceOf[BulkUpdateOperation]
   }
   
-  extension [Self <: BulkUpdateOperation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BulkUpdateOperation] (val x: Self) extends AnyVal {
     
     inline def setRequire_alias(value: Boolean): Self = StObject.set(x, "require_alias", value.asInstanceOf[js.Any])
     

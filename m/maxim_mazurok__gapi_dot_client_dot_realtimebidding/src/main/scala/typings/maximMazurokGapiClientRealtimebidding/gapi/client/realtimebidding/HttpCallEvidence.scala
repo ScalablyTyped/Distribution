@@ -16,7 +16,8 @@ object HttpCallEvidence {
     __obj.asInstanceOf[HttpCallEvidence]
   }
   
-  extension [Self <: HttpCallEvidence](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HttpCallEvidence] (val x: Self) extends AnyVal {
     
     inline def setUrls(value: js.Array[String]): Self = StObject.set(x, "urls", value.asInstanceOf[js.Any])
     

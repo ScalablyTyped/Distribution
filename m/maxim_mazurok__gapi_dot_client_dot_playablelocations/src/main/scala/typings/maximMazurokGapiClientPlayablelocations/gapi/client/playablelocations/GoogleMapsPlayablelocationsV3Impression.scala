@@ -26,7 +26,8 @@ object GoogleMapsPlayablelocationsV3Impression {
     __obj.asInstanceOf[GoogleMapsPlayablelocationsV3Impression]
   }
   
-  extension [Self <: GoogleMapsPlayablelocationsV3Impression](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleMapsPlayablelocationsV3Impression] (val x: Self) extends AnyVal {
     
     inline def setGameObjectType(value: Double): Self = StObject.set(x, "gameObjectType", value.asInstanceOf[js.Any])
     

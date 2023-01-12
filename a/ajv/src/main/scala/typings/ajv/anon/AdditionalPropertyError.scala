@@ -18,7 +18,8 @@ object AdditionalPropertyError {
     __obj.asInstanceOf[AdditionalPropertyError]
   }
   
-  extension [Self <: AdditionalPropertyError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AdditionalPropertyError] (val x: Self) extends AnyVal {
     
     inline def setAdditionalProperty(value: String): Self = StObject.set(x, "additionalProperty", value.asInstanceOf[js.Any])
     

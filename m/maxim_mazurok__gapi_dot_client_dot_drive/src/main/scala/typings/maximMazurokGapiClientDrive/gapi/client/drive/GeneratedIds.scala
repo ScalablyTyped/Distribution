@@ -22,7 +22,8 @@ object GeneratedIds {
     __obj.asInstanceOf[GeneratedIds]
   }
   
-  extension [Self <: GeneratedIds](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GeneratedIds] (val x: Self) extends AnyVal {
     
     inline def setIds(value: js.Array[String]): Self = StObject.set(x, "ids", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object mod {
       __obj.asInstanceOf[DefaultHost]
     }
     
-    extension [Self <: DefaultHost](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DefaultHost] (val x: Self) extends AnyVal {
       
       inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       
@@ -71,7 +72,8 @@ object mod {
       __obj.asInstanceOf[ParsedUri]
     }
     
-    extension [Self <: ParsedUri](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParsedUri] (val x: Self) extends AnyVal {
       
       inline def setAuth(value: Pass): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
       
@@ -100,7 +102,8 @@ object mod {
       __obj.asInstanceOf[SocketHost]
     }
     
-    extension [Self <: SocketHost](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SocketHost] (val x: Self) extends AnyVal {
       
       inline def setIpc(value: String): Self = StObject.set(x, "ipc", value.asInstanceOf[js.Any])
     }

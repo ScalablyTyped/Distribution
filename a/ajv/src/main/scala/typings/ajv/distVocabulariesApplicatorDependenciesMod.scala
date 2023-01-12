@@ -56,7 +56,8 @@ object distVocabulariesApplicatorDependenciesMod {
       __obj.asInstanceOf[DependenciesErrorParams]
     }
     
-    extension [Self <: DependenciesErrorParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DependenciesErrorParams] (val x: Self) extends AnyVal {
       
       inline def setDeps(value: String): Self = StObject.set(x, "deps", value.asInstanceOf[js.Any])
       

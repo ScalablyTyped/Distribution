@@ -23,7 +23,8 @@ object ISupport {
     __obj.asInstanceOf[ISupport]
   }
   
-  extension [Self <: ISupport](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISupport] (val x: Self) extends AnyVal {
     
     inline def setCanTakeSnapshot(value: Boolean): Self = StObject.set(x, "canTakeSnapshot", value.asInstanceOf[js.Any])
     

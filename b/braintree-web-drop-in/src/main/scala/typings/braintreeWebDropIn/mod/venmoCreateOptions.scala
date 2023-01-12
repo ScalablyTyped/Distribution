@@ -15,7 +15,8 @@ object venmoCreateOptions {
     __obj.asInstanceOf[venmoCreateOptions]
   }
   
-  extension [Self <: venmoCreateOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: venmoCreateOptions] (val x: Self) extends AnyVal {
     
     inline def setAllowNewBrowserTab(value: Boolean): Self = StObject.set(x, "allowNewBrowserTab", value.asInstanceOf[js.Any])
     

@@ -34,7 +34,8 @@ object OmitDoAnyPhaseArgiEventst {
     __obj.asInstanceOf[OmitDoAnyPhaseArgiEventst]
   }
   
-  extension [Self <: OmitDoAnyPhaseArgiEventst](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OmitDoAnyPhaseArgiEventst] (val x: Self) extends AnyVal {
     
     inline def setEvent(value: PointerEventType): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     

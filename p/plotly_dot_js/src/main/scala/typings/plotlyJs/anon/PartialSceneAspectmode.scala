@@ -54,7 +54,8 @@ object PartialSceneAspectmode {
     __obj.asInstanceOf[PartialSceneAspectmode]
   }
   
-  extension [Self <: PartialSceneAspectmode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialSceneAspectmode] (val x: Self) extends AnyVal {
     
     inline def setAnnotations(value: Partial[Annotations] | js.Array[Partial[Annotations]]): Self = StObject.set(x, "annotations", value.asInstanceOf[js.Any])
     

@@ -48,7 +48,8 @@ object Onfreetrial {
     __obj.asInstanceOf[Onfreetrial]
   }
   
-  extension [Self <: Onfreetrial](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Onfreetrial] (val x: Self) extends AnyVal {
     
     inline def setAccount(
       value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['marketplace-account'] */ js.Any

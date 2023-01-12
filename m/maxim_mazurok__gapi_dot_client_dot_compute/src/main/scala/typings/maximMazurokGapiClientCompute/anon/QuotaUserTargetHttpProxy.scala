@@ -56,7 +56,8 @@ object QuotaUserTargetHttpProxy {
     __obj.asInstanceOf[QuotaUserTargetHttpProxy]
   }
   
-  extension [Self <: QuotaUserTargetHttpProxy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QuotaUserTargetHttpProxy] (val x: Self) extends AnyVal {
     
     inline def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object ComponentItem {
     __obj.asInstanceOf[ComponentItem]
   }
   
-  extension [Self <: ComponentItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ComponentItem] (val x: Self) extends AnyVal {
     
     inline def setInstance(value: Ractive[Any]): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
     

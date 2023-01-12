@@ -25,7 +25,8 @@ object typesDeleteFunctionConcurrencyOutputMod {
       __obj.asInstanceOf[DeleteFunctionConcurrencyOutput]
     }
     
-    extension [Self <: DeleteFunctionConcurrencyOutput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeleteFunctionConcurrencyOutput] (val x: Self) extends AnyVal {
       
       inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
     }

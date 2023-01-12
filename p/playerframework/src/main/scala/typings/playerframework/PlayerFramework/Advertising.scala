@@ -17,7 +17,8 @@ object Advertising {
       __obj.asInstanceOf[AdvertisementBase]
     }
     
-    extension [Self <: AdvertisementBase](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AdvertisementBase] (val x: Self) extends AnyVal {
       
       inline def setSource(value: Any): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     }
@@ -38,7 +39,8 @@ object Advertising {
       __obj.asInstanceOf[MidrollAdvertisement]
     }
     
-    extension [Self <: MidrollAdvertisement](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MidrollAdvertisement] (val x: Self) extends AnyVal {
       
       inline def setTime(value: Double): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
       

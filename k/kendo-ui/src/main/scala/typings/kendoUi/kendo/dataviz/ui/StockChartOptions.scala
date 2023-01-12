@@ -109,7 +109,8 @@ object StockChartOptions {
     __obj.asInstanceOf[StockChartOptions]
   }
   
-  extension [Self <: StockChartOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StockChartOptions] (val x: Self) extends AnyVal {
     
     inline def setAutoBind(value: Boolean): Self = StObject.set(x, "autoBind", value.asInstanceOf[js.Any])
     

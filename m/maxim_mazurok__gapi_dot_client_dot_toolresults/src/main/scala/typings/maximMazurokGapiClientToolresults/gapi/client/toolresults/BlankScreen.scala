@@ -16,7 +16,8 @@ object BlankScreen {
     __obj.asInstanceOf[BlankScreen]
   }
   
-  extension [Self <: BlankScreen](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BlankScreen] (val x: Self) extends AnyVal {
     
     inline def setScreenId(value: String): Self = StObject.set(x, "screenId", value.asInstanceOf[js.Any])
     

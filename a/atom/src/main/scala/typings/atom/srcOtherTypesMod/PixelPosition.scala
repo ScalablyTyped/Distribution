@@ -17,7 +17,8 @@ object PixelPosition {
     __obj.asInstanceOf[PixelPosition]
   }
   
-  extension [Self <: PixelPosition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PixelPosition] (val x: Self) extends AnyVal {
     
     inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
     

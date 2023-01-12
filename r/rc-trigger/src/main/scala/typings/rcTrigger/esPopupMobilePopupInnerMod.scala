@@ -37,7 +37,8 @@ object esPopupMobilePopupInnerMod extends Shortcut {
       __obj.asInstanceOf[MobilePopupInnerProps]
     }
     
-    extension [Self <: MobilePopupInnerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MobilePopupInnerProps] (val x: Self) extends AnyVal {
       
       inline def setMobile(value: MobileConfig): Self = StObject.set(x, "mobile", value.asInstanceOf[js.Any])
       

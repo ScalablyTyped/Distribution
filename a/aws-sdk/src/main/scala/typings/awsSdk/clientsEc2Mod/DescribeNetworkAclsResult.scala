@@ -23,7 +23,8 @@ object DescribeNetworkAclsResult {
     __obj.asInstanceOf[DescribeNetworkAclsResult]
   }
   
-  extension [Self <: DescribeNetworkAclsResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeNetworkAclsResult] (val x: Self) extends AnyVal {
     
     inline def setNetworkAcls(value: NetworkAclList): Self = StObject.set(x, "NetworkAcls", value.asInstanceOf[js.Any])
     

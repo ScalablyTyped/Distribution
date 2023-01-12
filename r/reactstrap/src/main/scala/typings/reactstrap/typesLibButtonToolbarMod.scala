@@ -35,7 +35,8 @@ object typesLibButtonToolbarMod {
       __obj.asInstanceOf[ButtonToolbarProps]
     }
     
-    extension [Self <: ButtonToolbarProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ButtonToolbarProps] (val x: Self) extends AnyVal {
       
       inline def setCssModule(value: CSSModule): Self = StObject.set(x, "cssModule", value.asInstanceOf[js.Any])
       

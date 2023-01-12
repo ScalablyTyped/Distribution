@@ -64,7 +64,8 @@ object localeTypesMod {
       __obj.asInstanceOf[Locale]
     }
     
-    extension [Self <: Locale](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Locale] (val x: Self) extends AnyVal {
       
       inline def setAccordion(value: AccordionLocale): Self = StObject.set(x, "accordion", value.asInstanceOf[js.Any])
       

@@ -22,7 +22,8 @@ object ComponentCreated {
     __obj.asInstanceOf[ComponentCreated]
   }
   
-  extension [Self <: ComponentCreated](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ComponentCreated] (val x: Self) extends AnyVal {
     
     inline def setCreated(value: (View_, View_) => Unit): Self = StObject.set(x, "created", js.Any.fromFunction2(value))
   }

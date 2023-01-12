@@ -40,7 +40,8 @@ object CardSection {
     __obj.asInstanceOf[CardSection]
   }
   
-  extension [Self <: CardSection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CardSection] (val x: Self) extends AnyVal {
     
     inline def setAddWidget(value: Widget => CardSection): Self = StObject.set(x, "addWidget", js.Any.fromFunction1(value))
     

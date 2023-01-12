@@ -32,7 +32,8 @@ object IBItemtypecomappleInterfa {
     __obj.asInstanceOf[IBItemtypecomappleInterfa]
   }
   
-  extension [Self <: IBItemtypecomappleInterfa](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IBItemtypecomappleInterfa] (val x: Self) extends AnyVal {
     
     inline def set$(value: ColorMatched): Self = StObject.set(x, "$", value.asInstanceOf[js.Any])
     

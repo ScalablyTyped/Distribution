@@ -26,7 +26,8 @@ object DistanceScales {
     __obj.asInstanceOf[DistanceScales]
   }
   
-  extension [Self <: DistanceScales](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DistanceScales] (val x: Self) extends AnyVal {
     
     inline def setDegreesPerPixel(value: js.Tuple3[Double, Double, Double]): Self = StObject.set(x, "degreesPerPixel", value.asInstanceOf[js.Any])
     

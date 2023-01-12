@@ -36,7 +36,8 @@ object NativeScrollEvent {
     __obj.asInstanceOf[NativeScrollEvent]
   }
   
-  extension [Self <: NativeScrollEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NativeScrollEvent] (val x: Self) extends AnyVal {
     
     inline def setContentInset(value: NativeScrollRectangle): Self = StObject.set(x, "contentInset", value.asInstanceOf[js.Any])
     

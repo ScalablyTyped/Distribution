@@ -249,7 +249,8 @@ object srcSdkInternalVersionChecksMod {
       __obj.asInstanceOf[ILifeCycle]
     }
     
-    extension [Self <: ILifeCycle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ILifeCycle] (val x: Self) extends AnyVal {
       
       inline def setDeleted(value: String): Self = StObject.set(x, "deleted", value.asInstanceOf[js.Any])
       
@@ -291,7 +292,8 @@ object srcSdkInternalVersionChecksMod {
       __obj.asInstanceOf[IModifierValueHistory]
     }
     
-    extension [Self <: IModifierValueHistory](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IModifierValueHistory] (val x: Self) extends AnyVal {
       
       inline def setChangedIn(value: js.Array[String]): Self = StObject.set(x, "changedIn", value.asInstanceOf[js.Any])
       
@@ -318,7 +320,8 @@ object srcSdkInternalVersionChecksMod {
       __obj.asInstanceOf[IPropertyVersionInfo]
     }
     
-    extension [Self <: IPropertyVersionInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPropertyVersionInfo] (val x: Self) extends AnyVal {
       
       inline def setPublic(value: IModifierValueHistory): Self = StObject.set(x, "public", value.asInstanceOf[js.Any])
       
@@ -347,7 +350,8 @@ object srcSdkInternalVersionChecksMod {
       __obj.asInstanceOf[IStructureVersionInfo]
     }
     
-    extension [Self <: IStructureVersionInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IStructureVersionInfo] (val x: Self) extends AnyVal {
       
       inline def setExperimental(value: IModifierValueHistory): Self = StObject.set(x, "experimental", value.asInstanceOf[js.Any])
       
@@ -376,7 +380,8 @@ object srcSdkInternalVersionChecksMod {
       __obj.asInstanceOf[IVersionRange]
     }
     
-    extension [Self <: IVersionRange](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IVersionRange] (val x: Self) extends AnyVal {
       
       inline def setEnd(value: String): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       

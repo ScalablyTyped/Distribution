@@ -27,7 +27,8 @@ object clustersGetTemplatesParams {
     __obj.asInstanceOf[clustersGetTemplatesParams]
   }
   
-  extension [Self <: clustersGetTemplatesParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: clustersGetTemplatesParams] (val x: Self) extends AnyVal {
     
     inline def setLayer(value: FeatureLayer | CSVLayer | GeoJSONLayer | WFSLayer | OGCFeatureLayer): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
     

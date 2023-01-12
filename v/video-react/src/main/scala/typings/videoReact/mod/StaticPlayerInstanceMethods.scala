@@ -80,7 +80,8 @@ object StaticPlayerInstanceMethods {
     __obj.asInstanceOf[StaticPlayerInstanceMethods]
   }
   
-  extension [Self <: StaticPlayerInstanceMethods](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StaticPlayerInstanceMethods] (val x: Self) extends AnyVal {
     
     inline def setAddTextTrack(value: () => Unit): Self = StObject.set(x, "addTextTrack", js.Any.fromFunction0(value))
     

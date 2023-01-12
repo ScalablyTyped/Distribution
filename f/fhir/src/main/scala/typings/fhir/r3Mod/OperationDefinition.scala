@@ -185,7 +185,8 @@ object OperationDefinition {
     __obj.asInstanceOf[OperationDefinition]
   }
   
-  extension [Self <: OperationDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OperationDefinition] (val x: Self) extends AnyVal {
     
     inline def setBase(value: Reference): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
     

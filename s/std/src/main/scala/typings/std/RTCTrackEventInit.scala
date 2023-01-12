@@ -27,7 +27,8 @@ object RTCTrackEventInit {
     __obj.asInstanceOf[RTCTrackEventInit]
   }
   
-  extension [Self <: RTCTrackEventInit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RTCTrackEventInit] (val x: Self) extends AnyVal {
     
     inline def setReceiver(value: RTCRtpReceiver): Self = StObject.set(x, "receiver", value.asInstanceOf[js.Any])
     

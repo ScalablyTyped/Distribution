@@ -18,7 +18,8 @@ object PartialMacOptions {
     __obj.asInstanceOf[PartialMacOptions]
   }
   
-  extension [Self <: PartialMacOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialMacOptions] (val x: Self) extends AnyVal {
     
     inline def setNetworkVersion(value: Boolean): Self = StObject.set(x, "networkVersion", value.asInstanceOf[js.Any])
     

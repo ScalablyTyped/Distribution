@@ -22,7 +22,8 @@ object GoogleCloudRecommendationengineV1beta1Image {
     __obj.asInstanceOf[GoogleCloudRecommendationengineV1beta1Image]
   }
   
-  extension [Self <: GoogleCloudRecommendationengineV1beta1Image](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudRecommendationengineV1beta1Image] (val x: Self) extends AnyVal {
     
     inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     

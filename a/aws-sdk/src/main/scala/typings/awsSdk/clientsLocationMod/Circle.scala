@@ -23,7 +23,8 @@ object Circle {
     __obj.asInstanceOf[Circle]
   }
   
-  extension [Self <: Circle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Circle] (val x: Self) extends AnyVal {
     
     inline def setCenter(value: Position): Self = StObject.set(x, "Center", value.asInstanceOf[js.Any])
     

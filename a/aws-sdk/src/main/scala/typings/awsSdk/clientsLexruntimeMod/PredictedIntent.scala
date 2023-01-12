@@ -28,7 +28,8 @@ object PredictedIntent {
     __obj.asInstanceOf[PredictedIntent]
   }
   
-  extension [Self <: PredictedIntent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PredictedIntent] (val x: Self) extends AnyVal {
     
     inline def setIntentName(value: IntentName): Self = StObject.set(x, "intentName", value.asInstanceOf[js.Any])
     

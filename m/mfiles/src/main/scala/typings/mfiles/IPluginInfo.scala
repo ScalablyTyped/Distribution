@@ -44,7 +44,8 @@ object IPluginInfo {
     __obj.asInstanceOf[IPluginInfo]
   }
   
-  extension [Self <: IPluginInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPluginInfo] (val x: Self) extends AnyVal {
     
     inline def setAssemblyName(value: String): Self = StObject.set(x, "AssemblyName", value.asInstanceOf[js.Any])
     

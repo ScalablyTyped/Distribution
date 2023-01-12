@@ -31,7 +31,8 @@ object triggerCognitoUserPoolTriggerPreAuthenticationMod {
       __obj.asInstanceOf[PreAuthenticationTriggerEvent]
     }
     
-    extension [Self <: PreAuthenticationTriggerEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PreAuthenticationTriggerEvent] (val x: Self) extends AnyVal {
       
       inline def setRequest(value: UserNotFound): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     }

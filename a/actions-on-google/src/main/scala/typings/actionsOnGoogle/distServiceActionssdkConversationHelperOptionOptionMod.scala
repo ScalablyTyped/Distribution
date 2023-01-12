@@ -52,7 +52,8 @@ object distServiceActionssdkConversationHelperOptionOptionMod {
       __obj.asInstanceOf[OptionItem]
     }
     
-    extension [Self <: OptionItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OptionItem] (val x: Self) extends AnyVal {
       
       inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       

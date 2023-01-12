@@ -27,7 +27,8 @@ object InvalidProtocolChangeException {
     __obj.asInstanceOf[InvalidProtocolChangeException]
   }
   
-  extension [Self <: InvalidProtocolChangeException](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InvalidProtocolChangeException] (val x: Self) extends AnyVal {
     
     inline def setInvalidProperty(value: ProtocolProperty): Self = StObject.set(x, "invalidProperty", value.asInstanceOf[js.Any])
     

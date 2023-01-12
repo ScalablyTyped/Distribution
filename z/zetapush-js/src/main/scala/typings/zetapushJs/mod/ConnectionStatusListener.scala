@@ -44,7 +44,8 @@ object ConnectionStatusListener {
     __obj.asInstanceOf[ConnectionStatusListener]
   }
   
-  extension [Self <: ConnectionStatusListener](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConnectionStatusListener] (val x: Self) extends AnyVal {
     
     inline def setOnConnectionBroken(value: () => Unit): Self = StObject.set(x, "onConnectionBroken", js.Any.fromFunction0(value))
     

@@ -209,7 +209,8 @@ object libTypescriptComponentsDrawerLayoutMod {
       __obj.asInstanceOf[DrawerLayoutProps]
     }
     
-    extension [Self <: DrawerLayoutProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DrawerLayoutProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(
         value: ReactNode | (js.Function1[/* openValue */ js.UndefOr[AnimatedInterpolation[Double | String]], ReactNode])
@@ -339,7 +340,8 @@ object libTypescriptComponentsDrawerLayoutMod {
       __obj.asInstanceOf[DrawerLayoutState]
     }
     
-    extension [Self <: DrawerLayoutState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DrawerLayoutState] (val x: Self) extends AnyVal {
       
       inline def setContainerWidth(value: Double): Self = StObject.set(x, "containerWidth", value.asInstanceOf[js.Any])
       
@@ -383,7 +385,8 @@ object libTypescriptComponentsDrawerLayoutMod {
       __obj.asInstanceOf[DrawerMovementOption]
     }
     
-    extension [Self <: DrawerMovementOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DrawerMovementOption] (val x: Self) extends AnyVal {
       
       inline def setSpeed(value: Double): Self = StObject.set(x, "speed", value.asInstanceOf[js.Any])
       

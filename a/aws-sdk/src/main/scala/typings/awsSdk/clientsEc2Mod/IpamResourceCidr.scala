@@ -88,7 +88,8 @@ object IpamResourceCidr {
     __obj.asInstanceOf[IpamResourceCidr]
   }
   
-  extension [Self <: IpamResourceCidr](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IpamResourceCidr] (val x: Self) extends AnyVal {
     
     inline def setComplianceStatus(value: IpamComplianceStatus): Self = StObject.set(x, "ComplianceStatus", value.asInstanceOf[js.Any])
     

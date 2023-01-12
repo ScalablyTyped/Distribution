@@ -60,7 +60,8 @@ object IConnectionOptions {
     __obj.asInstanceOf[IConnectionOptions]
   }
   
-  extension [Self <: IConnectionOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IConnectionOptions] (val x: Self) extends AnyVal {
     
     inline def setAuthextra(value: js.Object): Self = StObject.set(x, "authextra", value.asInstanceOf[js.Any])
     

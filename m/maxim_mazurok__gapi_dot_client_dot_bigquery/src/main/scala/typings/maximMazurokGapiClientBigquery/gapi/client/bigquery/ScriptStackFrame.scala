@@ -31,7 +31,8 @@ object ScriptStackFrame {
     __obj.asInstanceOf[ScriptStackFrame]
   }
   
-  extension [Self <: ScriptStackFrame](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScriptStackFrame] (val x: Self) extends AnyVal {
     
     inline def setEndColumn(value: Double): Self = StObject.set(x, "endColumn", value.asInstanceOf[js.Any])
     

@@ -24,7 +24,8 @@ object PartialClassNameMapCollap {
     __obj.asInstanceOf[PartialClassNameMapCollap]
   }
   
-  extension [Self <: PartialClassNameMapCollap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialClassNameMapCollap] (val x: Self) extends AnyVal {
     
     inline def setEntered(value: String): Self = StObject.set(x, "entered", value.asInstanceOf[js.Any])
     

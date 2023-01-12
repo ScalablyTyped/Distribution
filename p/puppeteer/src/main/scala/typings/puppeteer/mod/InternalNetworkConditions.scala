@@ -17,7 +17,8 @@ object InternalNetworkConditions {
     __obj.asInstanceOf[InternalNetworkConditions]
   }
   
-  extension [Self <: InternalNetworkConditions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InternalNetworkConditions] (val x: Self) extends AnyVal {
     
     inline def setOffline(value: Boolean): Self = StObject.set(x, "offline", value.asInstanceOf[js.Any])
   }

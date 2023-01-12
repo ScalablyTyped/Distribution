@@ -39,7 +39,8 @@ object buildSrcPublisherPubsubMessageMod {
       __obj.asInstanceOf[PubsubMessage]
     }
     
-    extension [Self <: PubsubMessage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PubsubMessage] (val x: Self) extends AnyVal {
       
       inline def setCalculatedSize(value: Double): Self = StObject.set(x, "calculatedSize", value.asInstanceOf[js.Any])
       

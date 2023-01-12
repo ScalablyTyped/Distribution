@@ -26,7 +26,8 @@ object EnumMapperType {
     __obj.asInstanceOf[EnumMapperType]
   }
   
-  extension [Self <: EnumMapperType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnumMapperType] (val x: Self) extends AnyVal {
     
     inline def setAllowedValues(value: js.Array[Any]): Self = StObject.set(x, "allowedValues", value.asInstanceOf[js.Any])
     

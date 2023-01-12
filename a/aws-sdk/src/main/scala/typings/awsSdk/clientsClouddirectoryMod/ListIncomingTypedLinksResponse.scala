@@ -23,7 +23,8 @@ object ListIncomingTypedLinksResponse {
     __obj.asInstanceOf[ListIncomingTypedLinksResponse]
   }
   
-  extension [Self <: ListIncomingTypedLinksResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListIncomingTypedLinksResponse] (val x: Self) extends AnyVal {
     
     inline def setLinkSpecifiers(value: TypedLinkSpecifierList): Self = StObject.set(x, "LinkSpecifiers", value.asInstanceOf[js.Any])
     

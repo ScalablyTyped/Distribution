@@ -26,7 +26,8 @@ object Checked {
     __obj.asInstanceOf[Checked]
   }
   
-  extension [Self <: Checked](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Checked] (val x: Self) extends AnyVal {
     
     inline def setBadge(value: String | Double): Self = StObject.set(x, "badge", value.asInstanceOf[js.Any])
     

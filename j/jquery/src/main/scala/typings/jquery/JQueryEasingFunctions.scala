@@ -27,7 +27,8 @@ object JQueryEasingFunctions {
     __obj.asInstanceOf[JQueryEasingFunctions]
   }
   
-  extension [Self <: JQueryEasingFunctions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JQueryEasingFunctions] (val x: Self) extends AnyVal {
     
     inline def setLinear(value: /* percent */ Double => Double): Self = StObject.set(x, "linear", js.Any.fromFunction1(value))
     

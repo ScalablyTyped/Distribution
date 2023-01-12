@@ -54,7 +54,8 @@ object DERAbstractString {
     __obj.asInstanceOf[DERAbstractString]
   }
   
-  extension [Self <: DERAbstractString](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DERAbstractString] (val x: Self) extends AnyVal {
     
     inline def setGetFreshValueHex(value: () => String): Self = StObject.set(x, "getFreshValueHex", js.Any.fromFunction0(value))
     

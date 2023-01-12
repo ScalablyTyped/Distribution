@@ -48,7 +48,8 @@ object SharedStorageAccessedEvent {
     __obj.asInstanceOf[SharedStorageAccessedEvent]
   }
   
-  extension [Self <: SharedStorageAccessedEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SharedStorageAccessedEvent] (val x: Self) extends AnyVal {
     
     inline def setAccessTime(value: TimeSinceEpoch): Self = StObject.set(x, "accessTime", value.asInstanceOf[js.Any])
     

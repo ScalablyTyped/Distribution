@@ -32,7 +32,8 @@ object ServiceContext {
     __obj.asInstanceOf[ServiceContext]
   }
   
-  extension [Self <: ServiceContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServiceContext] (val x: Self) extends AnyVal {
     
     inline def setResourceType(value: String): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
     

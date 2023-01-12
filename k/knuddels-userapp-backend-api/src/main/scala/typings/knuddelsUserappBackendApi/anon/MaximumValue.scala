@@ -23,7 +23,8 @@ object MaximumValue {
     __obj.asInstanceOf[MaximumValue]
   }
   
-  extension [Self <: MaximumValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MaximumValue] (val x: Self) extends AnyVal {
     
     inline def setAscending(value: Boolean): Self = StObject.set(x, "ascending", value.asInstanceOf[js.Any])
     

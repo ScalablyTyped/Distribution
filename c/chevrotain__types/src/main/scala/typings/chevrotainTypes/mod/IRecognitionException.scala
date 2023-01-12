@@ -37,7 +37,8 @@ object IRecognitionException {
     __obj.asInstanceOf[IRecognitionException]
   }
   
-  extension [Self <: IRecognitionException](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IRecognitionException] (val x: Self) extends AnyVal {
     
     inline def setContext(value: IRecognizerContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     

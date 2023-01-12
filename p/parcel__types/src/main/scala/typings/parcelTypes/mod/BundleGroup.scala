@@ -19,7 +19,8 @@ object BundleGroup {
     __obj.asInstanceOf[BundleGroup]
   }
   
-  extension [Self <: BundleGroup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BundleGroup] (val x: Self) extends AnyVal {
     
     inline def setEntryAssetId(value: String): Self = StObject.set(x, "entryAssetId", value.asInstanceOf[js.Any])
     

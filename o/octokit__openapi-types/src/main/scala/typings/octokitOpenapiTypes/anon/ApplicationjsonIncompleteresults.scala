@@ -17,7 +17,8 @@ object ApplicationjsonIncompleteresults {
     __obj.asInstanceOf[ApplicationjsonIncompleteresults]
   }
   
-  extension [Self <: ApplicationjsonIncompleteresults](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApplicationjsonIncompleteresults] (val x: Self) extends AnyVal {
     
     inline def setApplicationSlashjson(value: Incompleteresults): Self = StObject.set(x, "application/json", value.asInstanceOf[js.Any])
   }

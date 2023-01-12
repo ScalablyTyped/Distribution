@@ -57,7 +57,8 @@ object LabelAccSelectionAffordanceBottom {
     __obj.asInstanceOf[LabelAccSelectionAffordanceBottom]
   }
   
-  extension [Self <: LabelAccSelectionAffordanceBottom](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LabelAccSelectionAffordanceBottom] (val x: Self) extends AnyVal {
     
     inline def setLabelAccSelectionAffordanceBottom(value: String): Self = StObject.set(x, "labelAccSelectionAffordanceBottom", value.asInstanceOf[js.Any])
     

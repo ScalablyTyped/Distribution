@@ -90,7 +90,8 @@ object distTypesSrcBlockMod {
       __obj.asInstanceOf[RequiredCreateOptions]
     }
     
-    extension [Self <: RequiredCreateOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequiredCreateOptions] (val x: Self) extends AnyVal {
       
       inline def setCid(value: CID[Any, Double, Double, Version]): Self = StObject.set(x, "cid", value.asInstanceOf[js.Any])
     }

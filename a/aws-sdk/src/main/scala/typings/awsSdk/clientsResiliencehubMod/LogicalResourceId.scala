@@ -33,7 +33,8 @@ object LogicalResourceId {
     __obj.asInstanceOf[LogicalResourceId]
   }
   
-  extension [Self <: LogicalResourceId](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LogicalResourceId] (val x: Self) extends AnyVal {
     
     inline def setIdentifier(value: String255): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
     

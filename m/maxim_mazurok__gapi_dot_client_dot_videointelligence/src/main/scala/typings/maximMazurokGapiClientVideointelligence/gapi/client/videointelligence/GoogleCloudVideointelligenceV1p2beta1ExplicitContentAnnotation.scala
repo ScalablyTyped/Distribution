@@ -19,7 +19,8 @@ object GoogleCloudVideointelligenceV1p2beta1ExplicitContentAnnotation {
     __obj.asInstanceOf[GoogleCloudVideointelligenceV1p2beta1ExplicitContentAnnotation]
   }
   
-  extension [Self <: GoogleCloudVideointelligenceV1p2beta1ExplicitContentAnnotation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudVideointelligenceV1p2beta1ExplicitContentAnnotation] (val x: Self) extends AnyVal {
     
     inline def setFrames(value: js.Array[GoogleCloudVideointelligenceV1p2beta1ExplicitContentFrame]): Self = StObject.set(x, "frames", value.asInstanceOf[js.Any])
     

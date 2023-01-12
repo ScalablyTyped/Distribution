@@ -21,7 +21,8 @@ object PressResult {
     __obj.asInstanceOf[PressResult]
   }
   
-  extension [Self <: PressResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PressResult] (val x: Self) extends AnyVal {
     
     inline def setIsPressed(value: Boolean): Self = StObject.set(x, "isPressed", value.asInstanceOf[js.Any])
     

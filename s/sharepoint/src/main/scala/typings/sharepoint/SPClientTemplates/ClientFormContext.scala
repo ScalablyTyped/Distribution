@@ -60,7 +60,8 @@ object ClientFormContext {
     __obj.asInstanceOf[ClientFormContext]
   }
   
-  extension [Self <: ClientFormContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClientFormContext] (val x: Self) extends AnyVal {
     
     inline def setControlMode(value: Double): Self = StObject.set(x, "controlMode", value.asInstanceOf[js.Any])
     

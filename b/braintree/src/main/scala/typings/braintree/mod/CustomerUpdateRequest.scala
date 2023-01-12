@@ -39,7 +39,8 @@ object CustomerUpdateRequest {
     __obj.asInstanceOf[CustomerUpdateRequest]
   }
   
-  extension [Self <: CustomerUpdateRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomerUpdateRequest] (val x: Self) extends AnyVal {
     
     inline def setCompany(value: String): Self = StObject.set(x, "company", value.asInstanceOf[js.Any])
     

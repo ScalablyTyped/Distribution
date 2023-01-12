@@ -21,7 +21,8 @@ object PointModeEnumValues {
     __obj.asInstanceOf[PointModeEnumValues]
   }
   
-  extension [Self <: PointModeEnumValues](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PointModeEnumValues] (val x: Self) extends AnyVal {
     
     inline def setLines(value: PointMode): Self = StObject.set(x, "Lines", value.asInstanceOf[js.Any])
     

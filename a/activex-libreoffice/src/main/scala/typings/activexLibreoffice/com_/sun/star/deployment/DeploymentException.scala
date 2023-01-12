@@ -24,7 +24,8 @@ object DeploymentException {
     __obj.asInstanceOf[DeploymentException]
   }
   
-  extension [Self <: DeploymentException](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeploymentException] (val x: Self) extends AnyVal {
     
     inline def setCause(value: Any): Self = StObject.set(x, "Cause", value.asInstanceOf[js.Any])
   }

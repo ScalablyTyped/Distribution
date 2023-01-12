@@ -55,7 +55,8 @@ object IContainer {
     __obj.asInstanceOf[IContainer]
   }
   
-  extension [Self <: IContainer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IContainer] (val x: Self) extends AnyVal {
     
     inline def setAddComponent(value: Component => Unit): Self = StObject.set(x, "addComponent", js.Any.fromFunction1(value))
     

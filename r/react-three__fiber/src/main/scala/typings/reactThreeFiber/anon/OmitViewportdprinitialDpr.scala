@@ -38,7 +38,8 @@ object OmitViewportdprinitialDpr {
     __obj.asInstanceOf[OmitViewportdprinitialDpr]
   }
   
-  extension [Self <: OmitViewportdprinitialDpr](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OmitViewportdprinitialDpr] (val x: Self) extends AnyVal {
     
     inline def setAspect(value: Double): Self = StObject.set(x, "aspect", value.asInstanceOf[js.Any])
     

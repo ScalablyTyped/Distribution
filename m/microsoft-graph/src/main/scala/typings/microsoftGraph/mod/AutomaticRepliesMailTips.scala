@@ -25,7 +25,8 @@ object AutomaticRepliesMailTips {
     __obj.asInstanceOf[AutomaticRepliesMailTips]
   }
   
-  extension [Self <: AutomaticRepliesMailTips](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AutomaticRepliesMailTips] (val x: Self) extends AnyVal {
     
     inline def setMessage(value: NullableOption[String]): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     

@@ -27,7 +27,8 @@ object distTypesResponsiveEditorGeneralDistComponentsBookMod extends Shortcut {
       __obj.asInstanceOf[BookProps]
     }
     
-    extension [Self <: BookProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BookProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

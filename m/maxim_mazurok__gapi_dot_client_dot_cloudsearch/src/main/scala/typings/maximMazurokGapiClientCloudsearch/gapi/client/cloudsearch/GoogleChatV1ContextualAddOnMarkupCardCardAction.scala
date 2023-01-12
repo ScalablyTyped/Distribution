@@ -19,7 +19,8 @@ object GoogleChatV1ContextualAddOnMarkupCardCardAction {
     __obj.asInstanceOf[GoogleChatV1ContextualAddOnMarkupCardCardAction]
   }
   
-  extension [Self <: GoogleChatV1ContextualAddOnMarkupCardCardAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleChatV1ContextualAddOnMarkupCardCardAction] (val x: Self) extends AnyVal {
     
     inline def setActionLabel(value: String): Self = StObject.set(x, "actionLabel", value.asInstanceOf[js.Any])
     

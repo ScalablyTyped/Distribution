@@ -23,7 +23,8 @@ object DashboardError {
     __obj.asInstanceOf[DashboardError]
   }
   
-  extension [Self <: DashboardError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DashboardError] (val x: Self) extends AnyVal {
     
     inline def setMessage(value: NonEmptyString): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
     

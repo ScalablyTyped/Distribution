@@ -23,7 +23,8 @@ object PredictiveScalingPredefinedScalingMetric {
     __obj.asInstanceOf[PredictiveScalingPredefinedScalingMetric]
   }
   
-  extension [Self <: PredictiveScalingPredefinedScalingMetric](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PredictiveScalingPredefinedScalingMetric] (val x: Self) extends AnyVal {
     
     inline def setPredefinedMetricType(value: PredefinedScalingMetricType): Self = StObject.set(x, "PredefinedMetricType", value.asInstanceOf[js.Any])
     

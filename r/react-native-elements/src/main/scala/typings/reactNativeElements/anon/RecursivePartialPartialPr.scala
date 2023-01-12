@@ -42,7 +42,8 @@ object RecursivePartialPartialPr {
     __obj.asInstanceOf[RecursivePartialPartialPr]
   }
   
-  extension [Self <: RecursivePartialPartialPr](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecursivePartialPartialPr] (val x: Self) extends AnyVal {
     
     inline def setButton(value: RecursivePartial[js.UndefOr[ButtonProps | ButtonInformation]]): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
     

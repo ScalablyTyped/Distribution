@@ -31,7 +31,8 @@ object TfvcHistoryEntry {
     __obj.asInstanceOf[TfvcHistoryEntry]
   }
   
-  extension [Self <: TfvcHistoryEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TfvcHistoryEntry] (val x: Self) extends AnyVal {
     
     inline def setEncoding(value: Double): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
     

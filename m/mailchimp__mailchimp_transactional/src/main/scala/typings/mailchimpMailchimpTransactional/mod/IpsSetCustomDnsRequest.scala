@@ -21,7 +21,8 @@ object IpsSetCustomDnsRequest {
     __obj.asInstanceOf[IpsSetCustomDnsRequest]
   }
   
-  extension [Self <: IpsSetCustomDnsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IpsSetCustomDnsRequest] (val x: Self) extends AnyVal {
     
     inline def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
     

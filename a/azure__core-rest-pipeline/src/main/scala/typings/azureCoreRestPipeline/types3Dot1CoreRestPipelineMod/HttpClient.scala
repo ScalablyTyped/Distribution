@@ -23,7 +23,8 @@ object HttpClient {
     __obj.asInstanceOf[HttpClient]
   }
   
-  extension [Self <: HttpClient](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HttpClient] (val x: Self) extends AnyVal {
     
     inline def setSendRequest(value: /* request */ PipelineRequest => js.Promise[PipelineResponse]): Self = StObject.set(x, "sendRequest", js.Any.fromFunction1(value))
   }

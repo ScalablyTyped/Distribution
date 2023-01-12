@@ -386,7 +386,8 @@ object AsyncValidationMcacheHit {
     __obj.asInstanceOf[AsyncValidationMcacheHit]
   }
   
-  extension [Self <: AsyncValidationMcacheHit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AsyncValidationMcacheHit] (val x: Self) extends AnyVal {
     
     inline def setAsyncValidationMcacheHit(value: Gauge[Hit]): Self = StObject.set(x, "asyncValidationMcacheHit", value.asInstanceOf[js.Any])
     

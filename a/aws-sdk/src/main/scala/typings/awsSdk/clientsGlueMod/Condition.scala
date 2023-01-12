@@ -38,7 +38,8 @@ object Condition {
     __obj.asInstanceOf[Condition]
   }
   
-  extension [Self <: Condition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Condition] (val x: Self) extends AnyVal {
     
     inline def setCrawlState(value: CrawlState): Self = StObject.set(x, "CrawlState", value.asInstanceOf[js.Any])
     

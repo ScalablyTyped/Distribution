@@ -24,7 +24,8 @@ object IDateColumn {
     __obj.asInstanceOf[IDateColumn]
   }
   
-  extension [Self <: IDateColumn](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IDateColumn] (val x: Self) extends AnyVal {
     
     inline def setDefaultRenderer(value: /* value */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "defaultRenderer", js.Any.fromFunction1(value))
     

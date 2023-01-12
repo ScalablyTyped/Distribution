@@ -32,7 +32,8 @@ object UpdateParagraphStyleRequest {
     __obj.asInstanceOf[UpdateParagraphStyleRequest]
   }
   
-  extension [Self <: UpdateParagraphStyleRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateParagraphStyleRequest] (val x: Self) extends AnyVal {
     
     inline def setCellLocation(value: TableCellLocation): Self = StObject.set(x, "cellLocation", value.asInstanceOf[js.Any])
     

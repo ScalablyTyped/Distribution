@@ -43,7 +43,8 @@ object CreateOrganizationRequest {
     __obj.asInstanceOf[CreateOrganizationRequest]
   }
   
-  extension [Self <: CreateOrganizationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateOrganizationRequest] (val x: Self) extends AnyVal {
     
     inline def setAlias(value: OrganizationName): Self = StObject.set(x, "Alias", value.asInstanceOf[js.Any])
     

@@ -38,7 +38,8 @@ object ListNetworksInput {
     __obj.asInstanceOf[ListNetworksInput]
   }
   
-  extension [Self <: ListNetworksInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListNetworksInput] (val x: Self) extends AnyVal {
     
     inline def setFramework(value: Framework): Self = StObject.set(x, "Framework", value.asInstanceOf[js.Any])
     

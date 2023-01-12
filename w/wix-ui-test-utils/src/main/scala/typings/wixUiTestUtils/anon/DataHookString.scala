@@ -15,7 +15,8 @@ object DataHookString {
     __obj.asInstanceOf[DataHookString]
   }
   
-  extension [Self <: DataHookString](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataHookString] (val x: Self) extends AnyVal {
     
     inline def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
   }

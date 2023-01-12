@@ -19,7 +19,8 @@ object SecuritySamlInvalidateResponse {
     __obj.asInstanceOf[SecuritySamlInvalidateResponse]
   }
   
-  extension [Self <: SecuritySamlInvalidateResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SecuritySamlInvalidateResponse] (val x: Self) extends AnyVal {
     
     inline def setInvalidated(value: integer): Self = StObject.set(x, "invalidated", value.asInstanceOf[js.Any])
     

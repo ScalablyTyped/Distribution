@@ -66,7 +66,8 @@ object INDMessenger {
     __obj.asInstanceOf[INDMessenger]
   }
   
-  extension [Self <: INDMessenger](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: INDMessenger] (val x: Self) extends AnyVal {
     
     inline def setSendLicenseFetchRequestAsync(value: (js.Array[Double], js.Array[Double]) => IPromiseWithIAsyncOperation[INDSendResult]): Self = StObject.set(x, "sendLicenseFetchRequestAsync", js.Any.fromFunction2(value))
     

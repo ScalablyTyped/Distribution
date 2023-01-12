@@ -19,7 +19,8 @@ object SVGNumber {
     __obj.asInstanceOf[SVGNumber]
   }
   
-  extension [Self <: SVGNumber](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SVGNumber] (val x: Self) extends AnyVal {
     
     inline def setMSHTMLDotSVGNumber_typekey(value: SVGNumber): Self = StObject.set(x, "MSHTML.SVGNumber_typekey", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object ProvisionFromXmlDocumentResults {
     __obj.asInstanceOf[ProvisionFromXmlDocumentResults]
   }
   
-  extension [Self <: ProvisionFromXmlDocumentResults](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProvisionFromXmlDocumentResults] (val x: Self) extends AnyVal {
     
     inline def setAllElementsProvisioned(value: Boolean): Self = StObject.set(x, "allElementsProvisioned", value.asInstanceOf[js.Any])
     

@@ -43,7 +43,8 @@ object CreateEnvironmentTemplateVersionInput {
     __obj.asInstanceOf[CreateEnvironmentTemplateVersionInput]
   }
   
-  extension [Self <: CreateEnvironmentTemplateVersionInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateEnvironmentTemplateVersionInput] (val x: Self) extends AnyVal {
     
     inline def setClientToken(value: ClientToken): Self = StObject.set(x, "clientToken", value.asInstanceOf[js.Any])
     

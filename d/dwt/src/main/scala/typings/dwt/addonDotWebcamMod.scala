@@ -29,7 +29,8 @@ object addonDotWebcamMod {
       __obj.asInstanceOf[CameraControlProperty]
     }
     
-    extension [Self <: CameraControlProperty](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CameraControlProperty] (val x: Self) extends AnyVal {
       
       inline def setGetIfAuto(value: () => Boolean): Self = StObject.set(x, "GetIfAuto", js.Any.fromFunction0(value))
       
@@ -77,7 +78,8 @@ object addonDotWebcamMod {
       __obj.asInstanceOf[CameraControlPropertyExtra]
     }
     
-    extension [Self <: CameraControlPropertyExtra](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CameraControlPropertyExtra] (val x: Self) extends AnyVal {
       
       inline def setGetDefaultValue(value: () => Double): Self = StObject.set(x, "GetDefaultValue", js.Any.fromFunction0(value))
       
@@ -115,7 +117,8 @@ object addonDotWebcamMod {
       __obj.asInstanceOf[FrameRate]
     }
     
-    extension [Self <: FrameRate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FrameRate] (val x: Self) extends AnyVal {
       
       inline def setGet(value: Double => Double): Self = StObject.set(x, "Get", js.Any.fromFunction1(value))
       
@@ -154,7 +157,8 @@ object addonDotWebcamMod {
       __obj.asInstanceOf[MediaType]
     }
     
-    extension [Self <: MediaType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MediaType] (val x: Self) extends AnyVal {
       
       inline def setGet(value: Double => String): Self = StObject.set(x, "Get", js.Any.fromFunction1(value))
       
@@ -190,7 +194,8 @@ object addonDotWebcamMod {
       __obj.asInstanceOf[Resolution]
     }
     
-    extension [Self <: Resolution](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Resolution] (val x: Self) extends AnyVal {
       
       inline def setGet(value: Double => String): Self = StObject.set(x, "Get", js.Any.fromFunction1(value))
       
@@ -219,7 +224,8 @@ object addonDotWebcamMod {
       __obj.asInstanceOf[VideoControlProperty]
     }
     
-    extension [Self <: VideoControlProperty](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VideoControlProperty] (val x: Self) extends AnyVal {
       
       inline def setGetIfAuto(value: () => Boolean): Self = StObject.set(x, "GetIfAuto", js.Any.fromFunction0(value))
       
@@ -267,7 +273,8 @@ object addonDotWebcamMod {
       __obj.asInstanceOf[VideoControlPropertyExtra]
     }
     
-    extension [Self <: VideoControlPropertyExtra](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VideoControlPropertyExtra] (val x: Self) extends AnyVal {
       
       inline def setGetDefaultValue(value: () => Double): Self = StObject.set(x, "GetDefaultValue", js.Any.fromFunction0(value))
       

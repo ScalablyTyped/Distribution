@@ -16,7 +16,8 @@ object AccountImageImprovementsSettings {
     __obj.asInstanceOf[AccountImageImprovementsSettings]
   }
   
-  extension [Self <: AccountImageImprovementsSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccountImageImprovementsSettings] (val x: Self) extends AnyVal {
     
     inline def setAllowAutomaticImageImprovements(value: Boolean): Self = StObject.set(x, "allowAutomaticImageImprovements", value.asInstanceOf[js.Any])
     

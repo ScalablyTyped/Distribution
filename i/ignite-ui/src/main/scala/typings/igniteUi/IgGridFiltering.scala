@@ -441,7 +441,8 @@ object IgGridFiltering {
     __obj.asInstanceOf[IgGridFiltering]
   }
   
-  extension [Self <: IgGridFiltering](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgGridFiltering] (val x: Self) extends AnyVal {
     
     inline def setAdvancedModeEditorsVisible(value: Boolean): Self = StObject.set(x, "advancedModeEditorsVisible", value.asInstanceOf[js.Any])
     

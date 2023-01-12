@@ -81,7 +81,8 @@ object KmlOrientation {
     __obj.asInstanceOf[KmlOrientation]
   }
   
-  extension [Self <: KmlOrientation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KmlOrientation] (val x: Self) extends AnyVal {
     
     inline def setGetHeading(value: () => Double): Self = StObject.set(x, "getHeading", js.Any.fromFunction0(value))
     

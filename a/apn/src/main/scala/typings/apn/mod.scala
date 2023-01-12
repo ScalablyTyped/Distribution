@@ -145,7 +145,8 @@ object mod {
       __obj.asInstanceOf[Aps]
     }
     
-    extension [Self <: Aps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Aps] (val x: Self) extends AnyVal {
       
       inline def setAlert(value: String | ApsAlert): Self = StObject.set(x, "alert", value.asInstanceOf[js.Any])
       
@@ -208,7 +209,8 @@ object mod {
       __obj.asInstanceOf[ApsAlert]
     }
     
-    extension [Self <: ApsAlert](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ApsAlert] (val x: Self) extends AnyVal {
       
       inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
@@ -275,7 +277,8 @@ object mod {
       __obj.asInstanceOf[NotificationAlertOptions]
     }
     
-    extension [Self <: NotificationAlertOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NotificationAlertOptions] (val x: Self) extends AnyVal {
       
       inline def `setAction-loc-key`(value: String): Self = StObject.set(x, "action-loc-key", value.asInstanceOf[js.Any])
       
@@ -371,7 +374,8 @@ object mod {
       __obj.asInstanceOf[ProviderOptions]
     }
     
-    extension [Self <: ProviderOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProviderOptions] (val x: Self) extends AnyVal {
       
       inline def setCa(value: js.Array[String | Buffer]): Self = StObject.set(x, "ca", value.asInstanceOf[js.Any])
       
@@ -437,7 +441,8 @@ object mod {
       __obj.asInstanceOf[ProviderToken]
     }
     
-    extension [Self <: ProviderToken](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProviderToken] (val x: Self) extends AnyVal {
       
       inline def setKey(value: Buffer | String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
@@ -464,7 +469,8 @@ object mod {
       __obj.asInstanceOf[ResponseFailure]
     }
     
-    extension [Self <: ResponseFailure](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResponseFailure] (val x: Self) extends AnyVal {
       
       inline def setDevice(value: String): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
       
@@ -493,7 +499,8 @@ object mod {
       __obj.asInstanceOf[ResponseSent]
     }
     
-    extension [Self <: ResponseSent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResponseSent] (val x: Self) extends AnyVal {
       
       inline def setDevice(value: String): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
     }
@@ -512,7 +519,8 @@ object mod {
       __obj.asInstanceOf[Responses]
     }
     
-    extension [Self <: Responses](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Responses] (val x: Self) extends AnyVal {
       
       inline def setFailed(value: js.Array[ResponseFailure]): Self = StObject.set(x, "failed", value.asInstanceOf[js.Any])
       

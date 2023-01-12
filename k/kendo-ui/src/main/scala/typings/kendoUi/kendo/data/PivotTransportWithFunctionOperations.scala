@@ -21,7 +21,8 @@ object PivotTransportWithFunctionOperations {
     __obj.asInstanceOf[PivotTransportWithFunctionOperations]
   }
   
-  extension [Self <: PivotTransportWithFunctionOperations](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PivotTransportWithFunctionOperations] (val x: Self) extends AnyVal {
     
     inline def setDiscover(value: /* options */ DataSourceTransportOptions => Unit): Self = StObject.set(x, "discover", js.Any.fromFunction1(value))
     

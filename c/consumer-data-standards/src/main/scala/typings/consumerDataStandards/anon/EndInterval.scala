@@ -33,7 +33,8 @@ object EndInterval {
     __obj.asInstanceOf[EndInterval]
   }
   
-  extension [Self <: EndInterval](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EndInterval] (val x: Self) extends AnyVal {
     
     inline def setEndInterval(value: Double): Self = StObject.set(x, "endInterval", value.asInstanceOf[js.Any])
     

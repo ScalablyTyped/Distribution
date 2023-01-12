@@ -33,7 +33,8 @@ object RtmpOutputSettings {
     __obj.asInstanceOf[RtmpOutputSettings]
   }
   
-  extension [Self <: RtmpOutputSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RtmpOutputSettings] (val x: Self) extends AnyVal {
     
     inline def setCertificateMode(value: RtmpOutputCertificateMode): Self = StObject.set(x, "CertificateMode", value.asInstanceOf[js.Any])
     

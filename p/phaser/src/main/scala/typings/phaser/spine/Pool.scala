@@ -32,7 +32,8 @@ object Pool {
     __obj.asInstanceOf[Pool[T]]
   }
   
-  extension [Self <: Pool[?], T](x: Self & Pool[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Pool[?], T] (val x: Self & Pool[T]) extends AnyVal {
     
     inline def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
     

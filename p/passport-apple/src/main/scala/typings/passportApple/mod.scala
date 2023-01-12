@@ -41,7 +41,8 @@ object mod {
       __obj.asInstanceOf[AppleAuthorizationParams]
     }
     
-    extension [Self <: AppleAuthorizationParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AppleAuthorizationParams] (val x: Self) extends AnyVal {
       
       inline def setResponse_mode(value: form_post): Self = StObject.set(x, "response_mode", value.asInstanceOf[js.Any])
       
@@ -77,7 +78,8 @@ object mod {
       __obj.asInstanceOf[AuthenticateOptions]
     }
     
-    extension [Self <: AuthenticateOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AuthenticateOptions] (val x: Self) extends AnyVal {
       
       inline def setPassReqToCallback(value: `false`): Self = StObject.set(x, "passReqToCallback", value.asInstanceOf[js.Any])
       
@@ -131,7 +133,8 @@ object mod {
       __obj.asInstanceOf[AuthenticateOptionsBase]
     }
     
-    extension [Self <: AuthenticateOptionsBase](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AuthenticateOptionsBase] (val x: Self) extends AnyVal {
       
       inline def setAuthorizationURL(value: String): Self = StObject.set(x, "authorizationURL", value.asInstanceOf[js.Any])
       
@@ -216,7 +219,8 @@ object mod {
       __obj.asInstanceOf[AuthenticateOptionsWithRequest]
     }
     
-    extension [Self <: AuthenticateOptionsWithRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AuthenticateOptionsWithRequest] (val x: Self) extends AnyVal {
       
       inline def setPassReqToCallback(value: `true`): Self = StObject.set(x, "passReqToCallback", value.asInstanceOf[js.Any])
     }
@@ -235,7 +239,8 @@ object mod {
       __obj.asInstanceOf[DecodedIdToken]
     }
     
-    extension [Self <: DecodedIdToken](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DecodedIdToken] (val x: Self) extends AnyVal {
       
       inline def setSub(value: String): Self = StObject.set(x, "sub", value.asInstanceOf[js.Any])
     }

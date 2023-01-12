@@ -48,7 +48,8 @@ object EventDestination {
     __obj.asInstanceOf[EventDestination]
   }
   
-  extension [Self <: EventDestination](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventDestination] (val x: Self) extends AnyVal {
     
     inline def setCloudWatchDestination(value: CloudWatchDestination): Self = StObject.set(x, "CloudWatchDestination", value.asInstanceOf[js.Any])
     

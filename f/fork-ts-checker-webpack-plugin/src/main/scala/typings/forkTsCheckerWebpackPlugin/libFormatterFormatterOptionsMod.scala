@@ -23,7 +23,8 @@ object libFormatterFormatterOptionsMod {
       __obj.asInstanceOf[BasicFormatterOptions]
     }
     
-    extension [Self <: BasicFormatterOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BasicFormatterOptions] (val x: Self) extends AnyVal {
       
       inline def setType(value: basic): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
@@ -47,7 +48,8 @@ object libFormatterFormatterOptionsMod {
       __obj.asInstanceOf[CodeframeFormatterOptions]
     }
     
-    extension [Self <: CodeframeFormatterOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CodeframeFormatterOptions] (val x: Self) extends AnyVal {
       
       inline def setOptions(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BabelCodeFrameOptions */ Any

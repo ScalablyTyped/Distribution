@@ -44,7 +44,8 @@ object IFont {
     __obj.asInstanceOf[IFont]
   }
   
-  extension [Self <: IFont](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IFont] (val x: Self) extends AnyVal {
     
     inline def setBaseLine(value: String): Self = StObject.set(x, "baseLine", value.asInstanceOf[js.Any])
     

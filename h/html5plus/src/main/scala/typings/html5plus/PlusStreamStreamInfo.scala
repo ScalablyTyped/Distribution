@@ -44,7 +44,8 @@ object PlusStreamStreamInfo {
     __obj.asInstanceOf[PlusStreamStreamInfo]
   }
   
-  extension [Self <: PlusStreamStreamInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlusStreamStreamInfo] (val x: Self) extends AnyVal {
     
     inline def setComplete(value: Boolean): Self = StObject.set(x, "complete", value.asInstanceOf[js.Any])
     

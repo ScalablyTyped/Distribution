@@ -50,7 +50,8 @@ object BuildkiteEnv {
     __obj.asInstanceOf[BuildkiteEnv]
   }
   
-  extension [Self <: BuildkiteEnv](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BuildkiteEnv] (val x: Self) extends AnyVal {
     
     inline def setBranch(value: String): Self = StObject.set(x, "branch", value.asInstanceOf[js.Any])
     

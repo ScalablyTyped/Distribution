@@ -60,7 +60,8 @@ object Time {
       __obj.asInstanceOf[TimerEventConfig]
     }
     
-    extension [Self <: TimerEventConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TimerEventConfig] (val x: Self) extends AnyVal {
       
       inline def setArgs(value: js.Array[Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       

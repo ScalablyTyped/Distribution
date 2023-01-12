@@ -21,7 +21,8 @@ object PivotGridMessages {
     __obj.asInstanceOf[PivotGridMessages]
   }
   
-  extension [Self <: PivotGridMessages](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PivotGridMessages] (val x: Self) extends AnyVal {
     
     inline def setColumnFields(value: String): Self = StObject.set(x, "columnFields", value.asInstanceOf[js.Any])
     

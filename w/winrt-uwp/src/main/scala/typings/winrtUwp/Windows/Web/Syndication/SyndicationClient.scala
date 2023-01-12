@@ -54,7 +54,8 @@ object SyndicationClient {
     __obj.asInstanceOf[SyndicationClient]
   }
   
-  extension [Self <: SyndicationClient](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SyndicationClient] (val x: Self) extends AnyVal {
     
     inline def setBypassCacheOnRetrieve(value: Boolean): Self = StObject.set(x, "bypassCacheOnRetrieve", value.asInstanceOf[js.Any])
     

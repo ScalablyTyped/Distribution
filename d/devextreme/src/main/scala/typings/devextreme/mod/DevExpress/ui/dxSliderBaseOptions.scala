@@ -46,7 +46,8 @@ object dxSliderBaseOptions {
     __obj.asInstanceOf[dxSliderBaseOptions[TComponent]]
   }
   
-  extension [Self <: dxSliderBaseOptions[?], TComponent](x: Self & dxSliderBaseOptions[TComponent]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxSliderBaseOptions[?], TComponent] (val x: Self & dxSliderBaseOptions[TComponent]) extends AnyVal {
     
     inline def setKeyStep(value: Double): Self = StObject.set(x, "keyStep", value.asInstanceOf[js.Any])
     

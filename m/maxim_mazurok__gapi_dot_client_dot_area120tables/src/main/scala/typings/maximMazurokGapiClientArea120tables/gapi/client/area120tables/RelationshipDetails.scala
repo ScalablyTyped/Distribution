@@ -16,7 +16,8 @@ object RelationshipDetails {
     __obj.asInstanceOf[RelationshipDetails]
   }
   
-  extension [Self <: RelationshipDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RelationshipDetails] (val x: Self) extends AnyVal {
     
     inline def setLinkedTable(value: String): Self = StObject.set(x, "linkedTable", value.asInstanceOf[js.Any])
     

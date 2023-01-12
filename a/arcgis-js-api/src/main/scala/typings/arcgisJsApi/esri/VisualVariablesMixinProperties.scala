@@ -20,7 +20,8 @@ object VisualVariablesMixinProperties {
     __obj.asInstanceOf[VisualVariablesMixinProperties]
   }
   
-  extension [Self <: VisualVariablesMixinProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VisualVariablesMixinProperties] (val x: Self) extends AnyVal {
     
     inline def setVisualVariables(value: js.Array[VisualVariableProperties]): Self = StObject.set(x, "visualVariables", value.asInstanceOf[js.Any])
     

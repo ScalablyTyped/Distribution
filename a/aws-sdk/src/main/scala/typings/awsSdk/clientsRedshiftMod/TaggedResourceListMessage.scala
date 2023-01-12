@@ -23,7 +23,8 @@ object TaggedResourceListMessage {
     __obj.asInstanceOf[TaggedResourceListMessage]
   }
   
-  extension [Self <: TaggedResourceListMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TaggedResourceListMessage] (val x: Self) extends AnyVal {
     
     inline def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     

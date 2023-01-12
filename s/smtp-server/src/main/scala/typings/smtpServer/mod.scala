@@ -198,7 +198,8 @@ object mod {
       __obj.asInstanceOf[SMTPServerAddress]
     }
     
-    extension [Self <: SMTPServerAddress](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SMTPServerAddress] (val x: Self) extends AnyVal {
       
       inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
@@ -241,7 +242,8 @@ object mod {
       __obj.asInstanceOf[SMTPServerAuthentication]
     }
     
-    extension [Self <: SMTPServerAuthentication](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SMTPServerAuthentication] (val x: Self) extends AnyVal {
       
       inline def setAccessToken(value: String): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
       
@@ -283,7 +285,8 @@ object mod {
       __obj.asInstanceOf[SMTPServerAuthenticationResponse]
     }
     
-    extension [Self <: SMTPServerAuthenticationResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SMTPServerAuthenticationResponse] (val x: Self) extends AnyVal {
       
       inline def setData(value: js.Object): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -330,7 +333,8 @@ object mod {
       __obj.asInstanceOf[SMTPServerEnvelope]
     }
     
-    extension [Self <: SMTPServerEnvelope](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SMTPServerEnvelope] (val x: Self) extends AnyVal {
       
       inline def setMailFrom(value: SMTPServerAddress | `false`): Self = StObject.set(x, "mailFrom", value.asInstanceOf[js.Any])
       
@@ -570,7 +574,8 @@ object mod {
       __obj.asInstanceOf[SMTPServerOptions]
     }
     
-    extension [Self <: SMTPServerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SMTPServerOptions] (val x: Self) extends AnyVal {
       
       inline def setAllowInsecureAuth(value: Boolean): Self = StObject.set(x, "allowInsecureAuth", value.asInstanceOf[js.Any])
       
@@ -795,7 +800,8 @@ object mod {
       __obj.asInstanceOf[SMTPServerSession]
     }
     
-    extension [Self <: SMTPServerSession](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SMTPServerSession] (val x: Self) extends AnyVal {
       
       inline def setClientHostname(value: String): Self = StObject.set(x, "clientHostname", value.asInstanceOf[js.Any])
       

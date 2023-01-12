@@ -149,7 +149,8 @@ object MediaItem {
     __obj.asInstanceOf[MediaItem]
   }
   
-  extension [Self <: MediaItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MediaItem] (val x: Self) extends AnyVal {
     
     inline def setAlbumInfo(value: String): Self = StObject.set(x, "albumInfo", value.asInstanceOf[js.Any])
     

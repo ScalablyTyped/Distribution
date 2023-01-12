@@ -66,7 +66,8 @@ object WindowsAutopilotDeviceIdentity {
     __obj.asInstanceOf[WindowsAutopilotDeviceIdentity]
   }
   
-  extension [Self <: WindowsAutopilotDeviceIdentity](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WindowsAutopilotDeviceIdentity] (val x: Self) extends AnyVal {
     
     inline def setAddressableUserName(value: NullableOption[String]): Self = StObject.set(x, "addressableUserName", value.asInstanceOf[js.Any])
     

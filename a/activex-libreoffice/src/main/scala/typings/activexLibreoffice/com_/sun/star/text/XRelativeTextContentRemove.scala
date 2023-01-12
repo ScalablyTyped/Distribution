@@ -41,7 +41,8 @@ object XRelativeTextContentRemove {
     __obj.asInstanceOf[XRelativeTextContentRemove]
   }
   
-  extension [Self <: XRelativeTextContentRemove](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XRelativeTextContentRemove] (val x: Self) extends AnyVal {
     
     inline def setRemoveTextContentAfter(value: XTextContent => Unit): Self = StObject.set(x, "removeTextContentAfter", js.Any.fromFunction1(value))
     

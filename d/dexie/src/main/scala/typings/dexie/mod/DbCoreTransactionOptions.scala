@@ -15,7 +15,8 @@ object DbCoreTransactionOptions {
     __obj.asInstanceOf[DbCoreTransactionOptions]
   }
   
-  extension [Self <: DbCoreTransactionOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DbCoreTransactionOptions] (val x: Self) extends AnyVal {
     
     inline def setDurability(value: ChromeTransactionDurability): Self = StObject.set(x, "durability", value.asInstanceOf[js.Any])
   }

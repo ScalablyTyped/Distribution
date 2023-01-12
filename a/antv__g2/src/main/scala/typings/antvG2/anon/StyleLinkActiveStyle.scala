@@ -18,7 +18,8 @@ object StyleLinkActiveStyle {
     __obj.asInstanceOf[StyleLinkActiveStyle]
   }
   
-  extension [Self <: StyleLinkActiveStyle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StyleLinkActiveStyle] (val x: Self) extends AnyVal {
     
     inline def setStyle(value: LinkActiveStyle): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     

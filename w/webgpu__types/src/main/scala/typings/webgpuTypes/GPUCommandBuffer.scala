@@ -22,7 +22,8 @@ object GPUCommandBuffer {
     __obj.asInstanceOf[GPUCommandBuffer]
   }
   
-  extension [Self <: GPUCommandBuffer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GPUCommandBuffer] (val x: Self) extends AnyVal {
     
     inline def set__brand(value: typings.webgpuTypes.webgpuTypesStrings.GPUCommandBuffer): Self = StObject.set(x, "__brand", value.asInstanceOf[js.Any])
   }

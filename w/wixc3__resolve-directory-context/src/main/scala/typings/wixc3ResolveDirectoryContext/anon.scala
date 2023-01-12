@@ -22,7 +22,8 @@ object anon {
       __obj.asInstanceOf[IsDirectory]
     }
     
-    extension [Self <: IsDirectory](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IsDirectory] (val x: Self) extends AnyVal {
       
       inline def setIsDirectory(value: () => Boolean): Self = StObject.set(x, "isDirectory", js.Any.fromFunction0(value))
       
@@ -43,7 +44,8 @@ object anon {
       __obj.asInstanceOf[IsFile]
     }
     
-    extension [Self <: IsFile](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IsFile] (val x: Self) extends AnyVal {
       
       inline def setIsFile(value: () => Boolean): Self = StObject.set(x, "isFile", js.Any.fromFunction0(value))
     }
@@ -60,7 +62,8 @@ object anon {
       __obj.asInstanceOf[WithFileTypes]
     }
     
-    extension [Self <: WithFileTypes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WithFileTypes] (val x: Self) extends AnyVal {
       
       inline def setWithFileTypes(value: `true`): Self = StObject.set(x, "withFileTypes", value.asInstanceOf[js.Any])
     }

@@ -49,7 +49,8 @@ object TouchableProps {
     __obj.asInstanceOf[TouchableProps]
   }
   
-  extension [Self <: TouchableProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TouchableProps] (val x: Self) extends AnyVal {
     
     inline def setOnTouchCancel(value: /* evt */ TouchEvent => Unit): Self = StObject.set(x, "onTouchCancel", js.Any.fromFunction1(value))
     

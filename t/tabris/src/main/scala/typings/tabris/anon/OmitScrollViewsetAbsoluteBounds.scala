@@ -785,7 +785,8 @@ object OmitScrollViewsetAbsoluteBounds {
     __obj.asInstanceOf[OmitScrollViewsetAbsoluteBounds]
   }
   
-  extension [Self <: OmitScrollViewsetAbsoluteBounds](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OmitScrollViewsetAbsoluteBounds] (val x: Self) extends AnyVal {
     
     inline def set$children(value: js.Array[Widget[Any]]): Self = StObject.set(x, "$children", value.asInstanceOf[js.Any])
     

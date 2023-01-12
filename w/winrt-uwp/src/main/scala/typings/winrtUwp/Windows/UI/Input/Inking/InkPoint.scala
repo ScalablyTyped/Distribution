@@ -19,7 +19,8 @@ object InkPoint {
     __obj.asInstanceOf[InkPoint]
   }
   
-  extension [Self <: InkPoint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InkPoint] (val x: Self) extends AnyVal {
     
     inline def setPosition(value: Point): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     

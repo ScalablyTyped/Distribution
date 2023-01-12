@@ -16,7 +16,8 @@ object GlossaryTermsSet {
     __obj.asInstanceOf[GlossaryTermsSet]
   }
   
-  extension [Self <: GlossaryTermsSet](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GlossaryTermsSet] (val x: Self) extends AnyVal {
     
     inline def setTerms(value: js.Array[GlossaryTerm]): Self = StObject.set(x, "terms", value.asInstanceOf[js.Any])
     

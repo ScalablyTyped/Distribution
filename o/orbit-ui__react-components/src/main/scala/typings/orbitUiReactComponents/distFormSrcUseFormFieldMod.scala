@@ -26,7 +26,8 @@ object distFormSrcUseFormFieldMod {
       __obj.asInstanceOf[FormFieldProps]
     }
     
-    extension [Self <: FormFieldProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FormFieldProps] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       

@@ -26,7 +26,8 @@ object gapi {
       __obj.asInstanceOf[LoadOptions]
     }
     
-    extension [Self <: LoadOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LoadOptions] (val x: Self) extends AnyVal {
       
       inline def setCallback(value: () => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction0(value))
       
@@ -85,7 +86,8 @@ object gapi {
         __obj.asInstanceOf[Message]
       }
       
-      extension [Self <: Message](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Message] (val x: Self) extends AnyVal {
         
         inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       }

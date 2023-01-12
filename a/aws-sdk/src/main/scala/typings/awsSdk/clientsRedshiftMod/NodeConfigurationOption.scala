@@ -33,7 +33,8 @@ object NodeConfigurationOption {
     __obj.asInstanceOf[NodeConfigurationOption]
   }
   
-  extension [Self <: NodeConfigurationOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodeConfigurationOption] (val x: Self) extends AnyVal {
     
     inline def setEstimatedDiskUtilizationPercent(value: DoubleOptional): Self = StObject.set(x, "EstimatedDiskUtilizationPercent", value.asInstanceOf[js.Any])
     

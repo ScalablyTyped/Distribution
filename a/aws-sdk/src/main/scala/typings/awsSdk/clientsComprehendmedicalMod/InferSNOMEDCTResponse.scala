@@ -38,7 +38,8 @@ object InferSNOMEDCTResponse {
     __obj.asInstanceOf[InferSNOMEDCTResponse]
   }
   
-  extension [Self <: InferSNOMEDCTResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InferSNOMEDCTResponse] (val x: Self) extends AnyVal {
     
     inline def setCharacters(value: Characters): Self = StObject.set(x, "Characters", value.asInstanceOf[js.Any])
     

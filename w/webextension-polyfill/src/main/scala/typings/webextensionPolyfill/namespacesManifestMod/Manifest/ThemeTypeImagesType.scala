@@ -23,7 +23,8 @@ object ThemeTypeImagesType {
     __obj.asInstanceOf[ThemeTypeImagesType]
   }
   
-  extension [Self <: ThemeTypeImagesType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ThemeTypeImagesType] (val x: Self) extends AnyVal {
     
     inline def setAdditional_backgrounds(value: js.Array[ImageDataOrExtensionURL]): Self = StObject.set(x, "additional_backgrounds", value.asInstanceOf[js.Any])
     

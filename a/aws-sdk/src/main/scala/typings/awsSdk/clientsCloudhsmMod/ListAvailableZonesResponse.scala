@@ -18,7 +18,8 @@ object ListAvailableZonesResponse {
     __obj.asInstanceOf[ListAvailableZonesResponse]
   }
   
-  extension [Self <: ListAvailableZonesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListAvailableZonesResponse] (val x: Self) extends AnyVal {
     
     inline def setAZList(value: AZList): Self = StObject.set(x, "AZList", value.asInstanceOf[js.Any])
     

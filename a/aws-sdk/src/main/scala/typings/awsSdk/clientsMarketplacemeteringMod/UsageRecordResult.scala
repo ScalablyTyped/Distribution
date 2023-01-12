@@ -28,7 +28,8 @@ object UsageRecordResult {
     __obj.asInstanceOf[UsageRecordResult]
   }
   
-  extension [Self <: UsageRecordResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UsageRecordResult] (val x: Self) extends AnyVal {
     
     inline def setMeteringRecordId(value: String): Self = StObject.set(x, "MeteringRecordId", value.asInstanceOf[js.Any])
     

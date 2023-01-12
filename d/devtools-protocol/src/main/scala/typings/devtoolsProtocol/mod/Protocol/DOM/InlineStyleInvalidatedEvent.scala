@@ -18,7 +18,8 @@ object InlineStyleInvalidatedEvent {
     __obj.asInstanceOf[InlineStyleInvalidatedEvent]
   }
   
-  extension [Self <: InlineStyleInvalidatedEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InlineStyleInvalidatedEvent] (val x: Self) extends AnyVal {
     
     inline def setNodeIds(value: js.Array[NodeId]): Self = StObject.set(x, "nodeIds", value.asInstanceOf[js.Any])
     

@@ -58,7 +58,8 @@ object RingModulator {
   def speed: Double = js.native
   inline def speed_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("speed")(x.asInstanceOf[js.Any])
   
-  extension [Self <: RingModulator](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RingModulator] (val x: Self) extends AnyVal {
     
     inline def setConnect(value: AudioNode => RingModulator): Self = StObject.set(x, "connect", js.Any.fromFunction1(value))
     

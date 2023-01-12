@@ -30,7 +30,8 @@ object IHttpInterceptor {
     __obj.asInstanceOf[IHttpInterceptor]
   }
   
-  extension [Self <: IHttpInterceptor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IHttpInterceptor] (val x: Self) extends AnyVal {
     
     inline def setRequest(value: /* config */ IRequestConfig => IRequestConfig | IPromise[IRequestConfig]): Self = StObject.set(x, "request", js.Any.fromFunction1(value))
     

@@ -38,7 +38,8 @@ object GlideSchedule {
     __obj.asInstanceOf[GlideSchedule]
   }
   
-  extension [Self <: GlideSchedule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GlideSchedule] (val x: Self) extends AnyVal {
     
     inline def setAdd(value: (GlideDateTime, GlideDuration) => GlideDateTime): Self = StObject.set(x, "add", js.Any.fromFunction2(value))
     

@@ -18,7 +18,8 @@ object CancelFindingsReportResponse {
     __obj.asInstanceOf[CancelFindingsReportResponse]
   }
   
-  extension [Self <: CancelFindingsReportResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CancelFindingsReportResponse] (val x: Self) extends AnyVal {
     
     inline def setReportId(value: ReportId): Self = StObject.set(x, "reportId", value.asInstanceOf[js.Any])
   }

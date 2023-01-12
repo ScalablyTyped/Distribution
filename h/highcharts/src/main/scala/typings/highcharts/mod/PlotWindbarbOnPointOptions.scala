@@ -35,7 +35,8 @@ object PlotWindbarbOnPointOptions {
     __obj.asInstanceOf[PlotWindbarbOnPointOptions]
   }
   
-  extension [Self <: PlotWindbarbOnPointOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotWindbarbOnPointOptions] (val x: Self) extends AnyVal {
     
     inline def setConnectorOptions(value: PlotWindbarbOnPointConnectorOptions | SVGAttributes): Self = StObject.set(x, "connectorOptions", value.asInstanceOf[js.Any])
     

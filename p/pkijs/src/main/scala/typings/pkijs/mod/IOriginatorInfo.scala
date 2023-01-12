@@ -25,7 +25,8 @@ object IOriginatorInfo {
     __obj.asInstanceOf[IOriginatorInfo]
   }
   
-  extension [Self <: IOriginatorInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IOriginatorInfo] (val x: Self) extends AnyVal {
     
     inline def setCerts(value: CertificateSet): Self = StObject.set(x, "certs", value.asInstanceOf[js.Any])
     

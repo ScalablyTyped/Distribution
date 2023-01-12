@@ -43,7 +43,8 @@ object Bookshelf {
     __obj.asInstanceOf[Bookshelf]
   }
   
-  extension [Self <: Bookshelf](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Bookshelf] (val x: Self) extends AnyVal {
     
     inline def setAccess(value: String): Self = StObject.set(x, "access", value.asInstanceOf[js.Any])
     

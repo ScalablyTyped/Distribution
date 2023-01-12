@@ -33,7 +33,8 @@ object mod {
       __obj.asInstanceOf[KmsJson]
     }
     
-    extension [Self <: KmsJson](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KmsJson] (val x: Self) extends AnyVal {
       
       inline def setDecrypt(value: String => js.Object): Self = StObject.set(x, "decrypt", js.Any.fromFunction1(value))
       
@@ -56,7 +57,8 @@ object mod {
       __obj.asInstanceOf[KmsJsonOptions]
     }
     
-    extension [Self <: KmsJsonOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KmsJsonOptions] (val x: Self) extends AnyVal {
       
       inline def setAwsKmsSettings(value: js.Object): Self = StObject.set(x, "awsKmsSettings", value.asInstanceOf[js.Any])
       

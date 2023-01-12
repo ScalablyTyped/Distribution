@@ -22,7 +22,8 @@ object Buckets {
     __obj.asInstanceOf[Buckets]
   }
   
-  extension [Self <: Buckets](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Buckets] (val x: Self) extends AnyVal {
     
     inline def setItems(value: js.Array[Bucket]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     

@@ -41,7 +41,8 @@ object libBadgeScrollNumberMod extends Shortcut {
       __obj.asInstanceOf[ScrollNumberProps]
     }
     
-    extension [Self <: ScrollNumberProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScrollNumberProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactElement): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -96,7 +97,8 @@ object libBadgeScrollNumberMod extends Shortcut {
       __obj.asInstanceOf[ScrollNumberState]
     }
     
-    extension [Self <: ScrollNumberState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScrollNumberState] (val x: Self) extends AnyVal {
       
       inline def setAnimateStarted(value: Boolean): Self = StObject.set(x, "animateStarted", value.asInstanceOf[js.Any])
       

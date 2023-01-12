@@ -23,7 +23,8 @@ object TumblingWindow {
     __obj.asInstanceOf[TumblingWindow]
   }
   
-  extension [Self <: TumblingWindow](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TumblingWindow] (val x: Self) extends AnyVal {
     
     inline def setInterval(value: Interval): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object TrustedSigners {
     __obj.asInstanceOf[TrustedSigners]
   }
   
-  extension [Self <: TrustedSigners](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TrustedSigners] (val x: Self) extends AnyVal {
     
     inline def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     

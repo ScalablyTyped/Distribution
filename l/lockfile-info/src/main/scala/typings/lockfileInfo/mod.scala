@@ -45,7 +45,8 @@ object mod {
       __obj.asInstanceOf[LockfileInfo]
     }
     
-    extension [Self <: LockfileInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LockfileInfo] (val x: Self) extends AnyVal {
       
       inline def setHasLockfile(value: Boolean): Self = StObject.set(x, "hasLockfile", value.asInstanceOf[js.Any])
       

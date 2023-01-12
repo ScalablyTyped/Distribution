@@ -394,7 +394,8 @@ object sapUiCommonsApplicationHeaderMod {
       __obj.asInstanceOf[ApplicationHeaderSettings]
     }
     
-    extension [Self <: ApplicationHeaderSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ApplicationHeaderSettings] (val x: Self) extends AnyVal {
       
       inline def setDisplayLogoff(value: Boolean | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "displayLogoff", value.asInstanceOf[js.Any])
       

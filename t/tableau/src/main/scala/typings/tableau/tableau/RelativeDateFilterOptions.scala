@@ -25,7 +25,8 @@ object RelativeDateFilterOptions {
     __obj.asInstanceOf[RelativeDateFilterOptions]
   }
   
-  extension [Self <: RelativeDateFilterOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RelativeDateFilterOptions] (val x: Self) extends AnyVal {
     
     inline def setAnchorDate(value: js.Date): Self = StObject.set(x, "anchorDate", value.asInstanceOf[js.Any])
     

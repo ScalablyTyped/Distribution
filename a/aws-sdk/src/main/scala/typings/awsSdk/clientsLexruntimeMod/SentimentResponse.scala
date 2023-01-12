@@ -23,7 +23,8 @@ object SentimentResponse {
     __obj.asInstanceOf[SentimentResponse]
   }
   
-  extension [Self <: SentimentResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SentimentResponse] (val x: Self) extends AnyVal {
     
     inline def setSentimentLabel(value: SentimentLabel): Self = StObject.set(x, "sentimentLabel", value.asInstanceOf[js.Any])
     

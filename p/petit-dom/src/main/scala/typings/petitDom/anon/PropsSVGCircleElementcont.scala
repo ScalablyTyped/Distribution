@@ -666,7 +666,8 @@ object PropsSVGCircleElementcont {
     __obj.asInstanceOf[PropsSVGCircleElementcont]
   }
   
-  extension [Self <: PropsSVGCircleElementcont](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PropsSVGCircleElementcont] (val x: Self) extends AnyVal {
     
     inline def setATTRIBUTE_NODE(value: Double): Self = StObject.set(x, "ATTRIBUTE_NODE", value.asInstanceOf[js.Any])
     

@@ -26,7 +26,8 @@ object ArrayFunction {
     __obj.asInstanceOf[ArrayFunction]
   }
   
-  extension [Self <: ArrayFunction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ArrayFunction] (val x: Self) extends AnyVal {
     
     inline def setArrayFunction(value: Boolean): Self = StObject.set(x, "arrayFunction", value.asInstanceOf[js.Any])
     

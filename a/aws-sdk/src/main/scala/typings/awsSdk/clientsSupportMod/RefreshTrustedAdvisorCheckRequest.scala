@@ -18,7 +18,8 @@ object RefreshTrustedAdvisorCheckRequest {
     __obj.asInstanceOf[RefreshTrustedAdvisorCheckRequest]
   }
   
-  extension [Self <: RefreshTrustedAdvisorCheckRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RefreshTrustedAdvisorCheckRequest] (val x: Self) extends AnyVal {
     
     inline def setCheckId(value: String): Self = StObject.set(x, "checkId", value.asInstanceOf[js.Any])
   }

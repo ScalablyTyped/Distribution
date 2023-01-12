@@ -24,7 +24,8 @@ object Require {
     __obj.asInstanceOf[Require]
   }
   
-  extension [Self <: Require](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Require] (val x: Self) extends AnyVal {
     
     inline def setRequire(
       value: (js.Function1[/* module */ String, Any]) | (js.Function3[

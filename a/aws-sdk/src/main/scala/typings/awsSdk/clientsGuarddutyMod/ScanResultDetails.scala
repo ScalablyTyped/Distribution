@@ -18,7 +18,8 @@ object ScanResultDetails {
     __obj.asInstanceOf[ScanResultDetails]
   }
   
-  extension [Self <: ScanResultDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScanResultDetails] (val x: Self) extends AnyVal {
     
     inline def setScanResult(value: ScanResult): Self = StObject.set(x, "ScanResult", value.asInstanceOf[js.Any])
     

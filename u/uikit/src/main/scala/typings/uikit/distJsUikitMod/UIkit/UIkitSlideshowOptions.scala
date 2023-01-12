@@ -37,7 +37,8 @@ object UIkitSlideshowOptions {
     __obj.asInstanceOf[UIkitSlideshowOptions]
   }
   
-  extension [Self <: UIkitSlideshowOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UIkitSlideshowOptions] (val x: Self) extends AnyVal {
     
     inline def setAnimation(value: String): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     

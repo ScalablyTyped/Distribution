@@ -28,7 +28,8 @@ object GoogleApiYouTubePageInfo {
     __obj.asInstanceOf[GoogleApiYouTubePageInfo[T]]
   }
   
-  extension [Self <: GoogleApiYouTubePageInfo[?], T](x: Self & GoogleApiYouTubePageInfo[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleApiYouTubePageInfo[?], T] (val x: Self & GoogleApiYouTubePageInfo[T]) extends AnyVal {
     
     inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     

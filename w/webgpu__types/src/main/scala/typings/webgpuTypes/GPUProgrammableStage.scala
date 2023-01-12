@@ -20,7 +20,8 @@ object GPUProgrammableStage {
     __obj.asInstanceOf[GPUProgrammableStage]
   }
   
-  extension [Self <: GPUProgrammableStage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GPUProgrammableStage] (val x: Self) extends AnyVal {
     
     inline def setConstants(value: Record[String, GPUPipelineConstantValue]): Self = StObject.set(x, "constants", value.asInstanceOf[js.Any])
     

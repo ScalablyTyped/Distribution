@@ -53,7 +53,8 @@ object DeploymentOperationProperties {
     __obj.asInstanceOf[DeploymentOperationProperties]
   }
   
-  extension [Self <: DeploymentOperationProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeploymentOperationProperties] (val x: Self) extends AnyVal {
     
     inline def setProvisioningState(value: String): Self = StObject.set(x, "provisioningState", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object DescribeImageAttributeRequest {
     __obj.asInstanceOf[DescribeImageAttributeRequest]
   }
   
-  extension [Self <: DescribeImageAttributeRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeImageAttributeRequest] (val x: Self) extends AnyVal {
     
     inline def setAttribute(value: ImageAttributeName): Self = StObject.set(x, "Attribute", value.asInstanceOf[js.Any])
     

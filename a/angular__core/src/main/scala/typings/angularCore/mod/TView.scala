@@ -279,7 +279,8 @@ object TView {
     __obj.asInstanceOf[TView]
   }
   
-  extension [Self <: TView](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TView] (val x: Self) extends AnyVal {
     
     inline def setBindingStartIndex(value: Double): Self = StObject.set(x, "bindingStartIndex", value.asInstanceOf[js.Any])
     

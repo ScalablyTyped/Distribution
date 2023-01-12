@@ -18,7 +18,8 @@ object anon {
       __obj.asInstanceOf[Linkify]
     }
     
-    extension [Self <: Linkify](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Linkify] (val x: Self) extends AnyVal {
       
       inline def setLinkify(value: Boolean): Self = StObject.set(x, "linkify", value.asInstanceOf[js.Any])
     }
@@ -42,7 +43,8 @@ object anon {
       __obj.asInstanceOf[PartialOmitTagTypechildre]
     }
     
-    extension [Self <: PartialOmitTagTypechildre](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialOmitTagTypechildre] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       

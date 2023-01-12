@@ -41,7 +41,8 @@ object IPagerConfig {
     __obj.asInstanceOf[IPagerConfig]
   }
   
-  extension [Self <: IPagerConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPagerConfig] (val x: Self) extends AnyVal {
     
     inline def setAlign(value: Boolean): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     

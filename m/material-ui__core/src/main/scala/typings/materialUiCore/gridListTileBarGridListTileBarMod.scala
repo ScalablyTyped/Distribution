@@ -111,7 +111,8 @@ object gridListTileBarGridListTileBarMod {
       __obj.asInstanceOf[GridListTileBarProps]
     }
     
-    extension [Self <: GridListTileBarProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GridListTileBarProps] (val x: Self) extends AnyVal {
       
       inline def setActionIcon(value: ReactNode): Self = StObject.set(x, "actionIcon", value.asInstanceOf[js.Any])
       

@@ -18,7 +18,8 @@ object DescribeBundleTasksResult {
     __obj.asInstanceOf[DescribeBundleTasksResult]
   }
   
-  extension [Self <: DescribeBundleTasksResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeBundleTasksResult] (val x: Self) extends AnyVal {
     
     inline def setBundleTasks(value: BundleTaskList): Self = StObject.set(x, "BundleTasks", value.asInstanceOf[js.Any])
     

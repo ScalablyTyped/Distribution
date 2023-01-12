@@ -33,7 +33,8 @@ object IgLoaderSettings {
     __obj.asInstanceOf[IgLoaderSettings]
   }
   
-  extension [Self <: IgLoaderSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgLoaderSettings] (val x: Self) extends AnyVal {
     
     inline def setAutoDetectLocale(value: Boolean): Self = StObject.set(x, "autoDetectLocale", value.asInstanceOf[js.Any])
     

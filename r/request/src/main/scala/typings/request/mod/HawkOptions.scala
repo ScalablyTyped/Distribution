@@ -15,7 +15,8 @@ object HawkOptions {
     __obj.asInstanceOf[HawkOptions]
   }
   
-  extension [Self <: HawkOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HawkOptions] (val x: Self) extends AnyVal {
     
     inline def setCredentials(value: Any): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
   }

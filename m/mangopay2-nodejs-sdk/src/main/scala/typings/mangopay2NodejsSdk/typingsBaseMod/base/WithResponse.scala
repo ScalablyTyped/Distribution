@@ -19,7 +19,8 @@ object WithResponse {
     __obj.asInstanceOf[WithResponse[T]]
   }
   
-  extension [Self <: WithResponse[?], T](x: Self & WithResponse[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WithResponse[?], T] (val x: Self & WithResponse[T]) extends AnyVal {
     
     inline def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

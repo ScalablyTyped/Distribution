@@ -104,7 +104,8 @@ object mod {
       __obj.asInstanceOf[BaseOptions]
     }
     
-    extension [Self <: BaseOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseOptions] (val x: Self) extends AnyVal {
       
       inline def setFill(value: Boolean): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
       
@@ -187,7 +188,8 @@ object mod {
       __obj.asInstanceOf[Metadata]
     }
     
-    extension [Self <: Metadata](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Metadata] (val x: Self) extends AnyVal {
       
       inline def setAlpha(value: Boolean): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
       
@@ -270,7 +272,8 @@ object mod {
       __obj.asInstanceOf[PackerOptions]
     }
     
-    extension [Self <: PackerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PackerOptions] (val x: Self) extends AnyVal {
       
       inline def setBgColor(value: Blue): Self = StObject.set(x, "bgColor", value.asInstanceOf[js.Any])
       
@@ -329,7 +332,8 @@ object mod {
       __obj.asInstanceOf[ParserOptions]
     }
     
-    extension [Self <: ParserOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParserOptions] (val x: Self) extends AnyVal {
       
       inline def setCheckCRC(value: Boolean): Self = StObject.set(x, "checkCRC", value.asInstanceOf[js.Any])
       

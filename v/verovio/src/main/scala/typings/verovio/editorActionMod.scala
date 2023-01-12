@@ -33,7 +33,8 @@ object editorActionMod {
       __obj.asInstanceOf[ChainAction]
     }
     
-    extension [Self <: ChainAction](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChainAction] (val x: Self) extends AnyVal {
       
       inline def setAction(value: chain): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
@@ -56,7 +57,8 @@ object editorActionMod {
       __obj.asInstanceOf[CommitAction]
     }
     
-    extension [Self <: CommitAction](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommitAction] (val x: Self) extends AnyVal {
       
       inline def setAction(value: commit): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     }
@@ -77,7 +79,8 @@ object editorActionMod {
       __obj.asInstanceOf[DeleteAction]
     }
     
-    extension [Self <: DeleteAction](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeleteAction] (val x: Self) extends AnyVal {
       
       inline def setAction(value: delete): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
@@ -100,7 +103,8 @@ object editorActionMod {
       __obj.asInstanceOf[DragAction]
     }
     
-    extension [Self <: DragAction](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DragAction] (val x: Self) extends AnyVal {
       
       inline def setAction(value: drag): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
@@ -171,7 +175,8 @@ object editorActionMod {
       __obj.asInstanceOf[InsertAction]
     }
     
-    extension [Self <: InsertAction](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InsertAction] (val x: Self) extends AnyVal {
       
       inline def setAction(value: insert): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
@@ -194,7 +199,8 @@ object editorActionMod {
       __obj.asInstanceOf[KeyDownAction]
     }
     
-    extension [Self <: KeyDownAction](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KeyDownAction] (val x: Self) extends AnyVal {
       
       inline def setAction(value: keyDown): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
@@ -217,7 +223,8 @@ object editorActionMod {
       __obj.asInstanceOf[SetAction]
     }
     
-    extension [Self <: SetAction](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SetAction] (val x: Self) extends AnyVal {
       
       inline def setAction(value: set): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       

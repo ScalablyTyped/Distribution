@@ -23,7 +23,8 @@ object anon {
       __obj.asInstanceOf[EqualityFn[T]]
     }
     
-    extension [Self <: EqualityFn[?], T](x: Self & EqualityFn[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EqualityFn[?], T] (val x: Self & EqualityFn[T]) extends AnyVal {
       
       inline def setEqualityFn(value: (/* left */ T, /* right */ T) => Boolean): Self = StObject.set(x, "equalityFn", js.Any.fromFunction2(value))
       

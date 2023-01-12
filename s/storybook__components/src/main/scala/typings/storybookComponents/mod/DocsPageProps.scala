@@ -17,7 +17,8 @@ object DocsPageProps {
     __obj.asInstanceOf[DocsPageProps]
   }
   
-  extension [Self <: DocsPageProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DocsPageProps] (val x: Self) extends AnyVal {
     
     inline def setSubtitle(value: String): Self = StObject.set(x, "subtitle", value.asInstanceOf[js.Any])
     

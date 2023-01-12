@@ -91,7 +91,8 @@ object modifiersSnapEdgesMod {
       __obj.asInstanceOf[SnapEdgesOptions]
     }
     
-    extension [Self <: SnapEdgesOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SnapEdgesOptions] (val x: Self) extends AnyVal {
       
       inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       

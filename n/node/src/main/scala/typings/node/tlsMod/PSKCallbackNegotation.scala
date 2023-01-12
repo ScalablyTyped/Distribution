@@ -18,7 +18,8 @@ object PSKCallbackNegotation {
     __obj.asInstanceOf[PSKCallbackNegotation]
   }
   
-  extension [Self <: PSKCallbackNegotation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PSKCallbackNegotation] (val x: Self) extends AnyVal {
     
     inline def setIdentity(value: String): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
     

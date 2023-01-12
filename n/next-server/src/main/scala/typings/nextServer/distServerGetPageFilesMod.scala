@@ -26,7 +26,8 @@ object distServerGetPageFilesMod {
       __obj.asInstanceOf[BuildManifest]
     }
     
-    extension [Self <: BuildManifest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BuildManifest] (val x: Self) extends AnyVal {
       
       inline def setDevFiles(value: js.Array[String]): Self = StObject.set(x, "devFiles", value.asInstanceOf[js.Any])
       

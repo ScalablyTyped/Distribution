@@ -25,7 +25,8 @@ object CreatedEvent {
     __obj.asInstanceOf[CreatedEvent[TOptions]]
   }
   
-  extension [Self <: CreatedEvent[?], TOptions](x: Self & CreatedEvent[TOptions]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreatedEvent[?], TOptions] (val x: Self & CreatedEvent[TOptions]) extends AnyVal {
     
     inline def setAxisX(value: Axis): Self = StObject.set(x, "axisX", value.asInstanceOf[js.Any])
     

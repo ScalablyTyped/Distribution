@@ -158,7 +158,8 @@ object mod {
         __obj.asInstanceOf[IRetryOptions]
       }
       
-      extension [Self <: IRetryOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IRetryOptions] (val x: Self) extends AnyVal {
         
         inline def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
         

@@ -84,7 +84,8 @@ object mod {
       __obj.asInstanceOf[PublishContext]
     }
     
-    extension [Self <: PublishContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PublishContext] (val x: Self) extends AnyVal {
       
       inline def setCancellationToken(value: CancellationToken): Self = StObject.set(x, "cancellationToken", value.asInstanceOf[js.Any])
       
@@ -105,7 +106,8 @@ object mod {
       __obj.asInstanceOf[PublishOptions]
     }
     
-    extension [Self <: PublishOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PublishOptions] (val x: Self) extends AnyVal {
       
       inline def setPublish(value: PublishPolicy): Self = StObject.set(x, "publish", value.asInstanceOf[js.Any])
       
@@ -152,7 +154,8 @@ object mod {
       __obj.asInstanceOf[UploadTask]
     }
     
-    extension [Self <: UploadTask](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UploadTask] (val x: Self) extends AnyVal {
       
       inline def setArch(value: Arch): Self = StObject.set(x, "arch", value.asInstanceOf[js.Any])
       

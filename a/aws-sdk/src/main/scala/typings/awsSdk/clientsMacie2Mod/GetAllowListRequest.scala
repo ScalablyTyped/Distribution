@@ -18,7 +18,8 @@ object GetAllowListRequest {
     __obj.asInstanceOf[GetAllowListRequest]
   }
   
-  extension [Self <: GetAllowListRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetAllowListRequest] (val x: Self) extends AnyVal {
     
     inline def setId(value: string): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
   }

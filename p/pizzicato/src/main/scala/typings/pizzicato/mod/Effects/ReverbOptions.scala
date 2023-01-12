@@ -41,7 +41,8 @@ object ReverbOptions {
     __obj.asInstanceOf[ReverbOptions]
   }
   
-  extension [Self <: ReverbOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReverbOptions] (val x: Self) extends AnyVal {
     
     inline def setDecay(value: Double): Self = StObject.set(x, "decay", value.asInstanceOf[js.Any])
     

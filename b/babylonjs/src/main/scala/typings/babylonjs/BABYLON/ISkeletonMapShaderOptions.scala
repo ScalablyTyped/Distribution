@@ -19,7 +19,8 @@ object ISkeletonMapShaderOptions {
     __obj.asInstanceOf[ISkeletonMapShaderOptions]
   }
   
-  extension [Self <: ISkeletonMapShaderOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISkeletonMapShaderOptions] (val x: Self) extends AnyVal {
     
     inline def setColorMap(value: js.Array[ISkeletonMapShaderColorMapKnot]): Self = StObject.set(x, "colorMap", value.asInstanceOf[js.Any])
     

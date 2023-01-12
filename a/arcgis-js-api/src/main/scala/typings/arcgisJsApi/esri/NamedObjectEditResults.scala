@@ -27,7 +27,8 @@ object NamedObjectEditResults {
     __obj.asInstanceOf[NamedObjectEditResults]
   }
   
-  extension [Self <: NamedObjectEditResults](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NamedObjectEditResults] (val x: Self) extends AnyVal {
     
     inline def setError(value: NamedObjectEditResultsError): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     

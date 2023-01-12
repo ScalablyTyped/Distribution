@@ -27,7 +27,8 @@ object VariableDeclaration {
     __obj.asInstanceOf[VariableDeclaration]
   }
   
-  extension [Self <: VariableDeclaration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VariableDeclaration] (val x: Self) extends AnyVal {
     
     inline def setDeclarations(value: js.Array[VariableDeclarator]): Self = StObject.set(x, "declarations", value.asInstanceOf[js.Any])
     

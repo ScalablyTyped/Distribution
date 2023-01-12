@@ -110,7 +110,8 @@ object libForeignMod {
         __obj.asInstanceOf[IOptions]
       }
       
-      extension [Self <: IOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
         
         inline def setParent(value: IReceiver): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
         
@@ -155,7 +156,8 @@ object libForeignMod {
         __obj.asInstanceOf[IReceiver]
       }
       
-      extension [Self <: IReceiver](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IReceiver] (val x: Self) extends AnyVal {
         
         inline def setAddCell(value: (CodeCell, String) => Unit): Self = StObject.set(x, "addCell", js.Any.fromFunction2(value))
         

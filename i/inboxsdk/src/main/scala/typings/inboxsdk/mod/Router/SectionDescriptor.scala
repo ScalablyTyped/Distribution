@@ -34,7 +34,8 @@ object SectionDescriptor {
     __obj.asInstanceOf[SectionDescriptor]
   }
   
-  extension [Self <: SectionDescriptor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SectionDescriptor] (val x: Self) extends AnyVal {
     
     inline def setContentElement(value: HTMLElement): Self = StObject.set(x, "contentElement", value.asInstanceOf[js.Any])
     

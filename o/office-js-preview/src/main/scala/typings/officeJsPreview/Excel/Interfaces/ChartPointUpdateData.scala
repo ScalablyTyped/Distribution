@@ -86,7 +86,8 @@ object ChartPointUpdateData {
     __obj.asInstanceOf[ChartPointUpdateData]
   }
   
-  extension [Self <: ChartPointUpdateData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChartPointUpdateData] (val x: Self) extends AnyVal {
     
     inline def setDataLabel(value: ChartDataLabelUpdateData): Self = StObject.set(x, "dataLabel", value.asInstanceOf[js.Any])
     

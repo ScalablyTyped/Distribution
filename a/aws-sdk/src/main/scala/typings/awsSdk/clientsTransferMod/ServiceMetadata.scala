@@ -18,7 +18,8 @@ object ServiceMetadata {
     __obj.asInstanceOf[ServiceMetadata]
   }
   
-  extension [Self <: ServiceMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServiceMetadata] (val x: Self) extends AnyVal {
     
     inline def setUserDetails(value: UserDetails): Self = StObject.set(x, "UserDetails", value.asInstanceOf[js.Any])
   }

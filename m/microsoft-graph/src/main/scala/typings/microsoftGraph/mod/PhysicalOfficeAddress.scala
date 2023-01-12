@@ -31,7 +31,8 @@ object PhysicalOfficeAddress {
     __obj.asInstanceOf[PhysicalOfficeAddress]
   }
   
-  extension [Self <: PhysicalOfficeAddress](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PhysicalOfficeAddress] (val x: Self) extends AnyVal {
     
     inline def setCity(value: NullableOption[String]): Self = StObject.set(x, "city", value.asInstanceOf[js.Any])
     

@@ -112,7 +112,8 @@ object DOM {
       __obj.asInstanceOf[RequestAnimationFrame]
     }
     
-    extension [Self <: RequestAnimationFrame](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequestAnimationFrame] (val x: Self) extends AnyVal {
       
       inline def setCallback(value: /* time */ DOMHighResTimeStamp => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
       

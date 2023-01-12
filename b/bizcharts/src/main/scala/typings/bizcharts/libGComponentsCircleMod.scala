@@ -29,7 +29,8 @@ object libGComponentsCircleMod extends Shortcut {
       __obj.asInstanceOf[ICircleProps]
     }
     
-    extension [Self <: ICircleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICircleProps] (val x: Self) extends AnyVal {
       
       inline def setAttrs(value: Dictkey): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
     }

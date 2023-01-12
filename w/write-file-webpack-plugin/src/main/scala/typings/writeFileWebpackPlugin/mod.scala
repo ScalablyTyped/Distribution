@@ -59,7 +59,8 @@ object mod {
       __obj.asInstanceOf[UserOptionsType]
     }
     
-    extension [Self <: UserOptionsType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UserOptionsType] (val x: Self) extends AnyVal {
       
       inline def setAtomicReplace(value: Boolean): Self = StObject.set(x, "atomicReplace", value.asInstanceOf[js.Any])
       

@@ -167,7 +167,8 @@ object distSrcModulesUiControlsFullScreenFullScreenMod {
       __obj.asInstanceOf[FullScreenControl]
     }
     
-    extension [Self <: FullScreenControl](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FullScreenControl] (val x: Self) extends AnyVal {
       
       inline def setIsHidden(value: Boolean): Self = StObject.set(x, "isHidden", value.asInstanceOf[js.Any])
       

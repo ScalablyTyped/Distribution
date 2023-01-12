@@ -35,7 +35,8 @@ object mod {
       __obj.asInstanceOf[BaseSignOptions]
     }
     
-    extension [Self <: BaseSignOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseSignOptions] (val x: Self) extends AnyVal {
       
       inline def setApp(value: String): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
       
@@ -72,7 +73,8 @@ object mod {
       __obj.asInstanceOf[FlatOptions]
     }
     
-    extension [Self <: FlatOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FlatOptions] (val x: Self) extends AnyVal {
       
       inline def `setIdentity-validation`(value: Boolean): Self = StObject.set(x, "identity-validation", value.asInstanceOf[js.Any])
       
@@ -139,7 +141,8 @@ object mod {
       __obj.asInstanceOf[SignOptions]
     }
     
-    extension [Self <: SignOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SignOptions] (val x: Self) extends AnyVal {
       
       inline def setBinaries(value: js.Array[String]): Self = StObject.set(x, "binaries", value.asInstanceOf[js.Any])
       

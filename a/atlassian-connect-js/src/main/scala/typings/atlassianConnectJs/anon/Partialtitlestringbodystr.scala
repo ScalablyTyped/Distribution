@@ -31,7 +31,8 @@ object Partialtitlestringbodystr {
     __obj.asInstanceOf[Partialtitlestringbodystr]
   }
   
-  extension [Self <: Partialtitlestringbodystr](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Partialtitlestringbodystr] (val x: Self) extends AnyVal {
     
     inline def setActions(value: StringDictionary[String]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     

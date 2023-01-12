@@ -28,7 +28,8 @@ object BlacklistEntry {
     __obj.asInstanceOf[BlacklistEntry]
   }
   
-  extension [Self <: BlacklistEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BlacklistEntry] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: BlacklistingDescription): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     

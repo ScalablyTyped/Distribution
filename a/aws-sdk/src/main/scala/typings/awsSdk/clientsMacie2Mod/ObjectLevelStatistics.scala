@@ -28,7 +28,8 @@ object ObjectLevelStatistics {
     __obj.asInstanceOf[ObjectLevelStatistics]
   }
   
-  extension [Self <: ObjectLevelStatistics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ObjectLevelStatistics] (val x: Self) extends AnyVal {
     
     inline def setFileType(value: long): Self = StObject.set(x, "fileType", value.asInstanceOf[js.Any])
     

@@ -24,7 +24,8 @@ object Bundler {
     __obj.asInstanceOf[Bundler[ConfigType]]
   }
   
-  extension [Self <: Bundler[?], ConfigType](x: Self & Bundler[ConfigType]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Bundler[?], ConfigType] (val x: Self & Bundler[ConfigType]) extends AnyVal {
     
     inline def setBundle(value: typings.parcelTypes.anon.BundleGraph[ConfigType] => Async[Unit]): Self = StObject.set(x, "bundle", js.Any.fromFunction1(value))
     

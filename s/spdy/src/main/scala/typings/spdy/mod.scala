@@ -51,7 +51,8 @@ object mod {
         __obj.asInstanceOf[typings.spdy.mod.agent.AgentOptions]
       }
       
-      extension [Self <: typings.spdy.mod.agent.AgentOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.spdy.mod.agent.AgentOptions] (val x: Self) extends AnyVal {
         
         inline def setSpdy(value: Plain): Self = StObject.set(x, "spdy", value.asInstanceOf[js.Any])
         
@@ -203,7 +204,8 @@ object mod {
         __obj.asInstanceOf[PushOptions]
       }
       
-      extension [Self <: PushOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: PushOptions] (val x: Self) extends AnyVal {
         
         inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
         
@@ -250,7 +252,8 @@ object mod {
         __obj.asInstanceOf[typings.spdy.mod.server.ServerOptions]
       }
       
-      extension [Self <: typings.spdy.mod.server.ServerOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.spdy.mod.server.ServerOptions] (val x: Self) extends AnyVal {
         
         inline def setSpdy(value: Connection): Self = StObject.set(x, "spdy", value.asInstanceOf[js.Any])
         

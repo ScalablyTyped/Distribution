@@ -25,7 +25,8 @@ object ManualProxySettings {
     __obj.asInstanceOf[ManualProxySettings[M, P]]
   }
   
-  extension [Self <: ManualProxySettings[?, ?], M, P](x: Self & (ManualProxySettings[M, P])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ManualProxySettings[?, ?], M, P] (val x: Self & (ManualProxySettings[M, P])) extends AnyVal {
     
     inline def setFTPProxy(value: P): Self = StObject.set(x, "FTPProxy", value.asInstanceOf[js.Any])
     

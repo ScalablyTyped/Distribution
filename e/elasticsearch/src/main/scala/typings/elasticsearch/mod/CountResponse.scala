@@ -17,7 +17,8 @@ object CountResponse {
     __obj.asInstanceOf[CountResponse]
   }
   
-  extension [Self <: CountResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CountResponse] (val x: Self) extends AnyVal {
     
     inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     

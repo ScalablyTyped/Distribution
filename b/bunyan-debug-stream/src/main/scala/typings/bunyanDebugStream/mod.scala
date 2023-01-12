@@ -106,7 +106,8 @@ object mod {
       __obj.asInstanceOf[BunyanDebugStreamOptions]
     }
     
-    extension [Self <: BunyanDebugStreamOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BunyanDebugStreamOptions] (val x: Self) extends AnyVal {
       
       inline def setBasepath(value: String): Self = StObject.set(x, "basepath", value.asInstanceOf[js.Any])
       

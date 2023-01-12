@@ -52,7 +52,8 @@ object VerificationResultPrimarySource {
     __obj.asInstanceOf[VerificationResultPrimarySource]
   }
   
-  extension [Self <: VerificationResultPrimarySource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VerificationResultPrimarySource] (val x: Self) extends AnyVal {
     
     inline def setCanPushUpdates(value: CodeableConcept): Self = StObject.set(x, "canPushUpdates", value.asInstanceOf[js.Any])
     

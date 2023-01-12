@@ -22,7 +22,8 @@ object MlTrainedModelConfigMetadata {
     __obj.asInstanceOf[MlTrainedModelConfigMetadata]
   }
   
-  extension [Self <: MlTrainedModelConfigMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlTrainedModelConfigMetadata] (val x: Self) extends AnyVal {
     
     inline def setFeature_importance_baseline(value: Record[String, String]): Self = StObject.set(x, "feature_importance_baseline", value.asInstanceOf[js.Any])
     

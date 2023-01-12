@@ -52,7 +52,8 @@ object libOptionsMod {
       __obj.asInstanceOf[BaseOptions]
     }
     
-    extension [Self <: BaseOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseOptions] (val x: Self) extends AnyVal {
       
       inline def setAgent(value: Boolean): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
       
@@ -131,7 +132,8 @@ object libOptionsMod {
       __obj.asInstanceOf[MessageOptions]
     }
     
-    extension [Self <: MessageOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MessageOptions] (val x: Self) extends AnyVal {
       
       inline def setForm(value: js.Array[FormDataEntry]): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
       
@@ -154,7 +156,8 @@ object libOptionsMod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setForm(value: FormData): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
       

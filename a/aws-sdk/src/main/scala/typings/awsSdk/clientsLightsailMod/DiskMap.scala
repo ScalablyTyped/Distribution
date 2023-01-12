@@ -23,7 +23,8 @@ object DiskMap {
     __obj.asInstanceOf[DiskMap]
   }
   
-  extension [Self <: DiskMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DiskMap] (val x: Self) extends AnyVal {
     
     inline def setNewDiskName(value: ResourceName): Self = StObject.set(x, "newDiskName", value.asInstanceOf[js.Any])
     

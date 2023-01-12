@@ -111,7 +111,8 @@ object typesUseContextMenuMod {
       __obj.asInstanceOf[ContextMenuHookOptions]
     }
     
-    extension [Self <: ContextMenuHookOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContextMenuHookOptions] (val x: Self) extends AnyVal {
       
       inline def setAnchor(value: PositionAnchor): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
       
@@ -239,7 +240,8 @@ object typesUseContextMenuMod {
       __obj.asInstanceOf[ContextMenuHookReturnValue]
     }
     
-    extension [Self <: ContextMenuHookReturnValue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContextMenuHookReturnValue] (val x: Self) extends AnyVal {
       
       inline def setOnContextMenu(value: MouseEvent[Any, NativeMouseEvent] => Unit): Self = StObject.set(x, "onContextMenu", js.Any.fromFunction1(value))
       

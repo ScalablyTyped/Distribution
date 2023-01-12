@@ -28,7 +28,8 @@ object ClusterParameterStatus {
     __obj.asInstanceOf[ClusterParameterStatus]
   }
   
-  extension [Self <: ClusterParameterStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClusterParameterStatus] (val x: Self) extends AnyVal {
     
     inline def setParameterApplyErrorDescription(value: String): Self = StObject.set(x, "ParameterApplyErrorDescription", value.asInstanceOf[js.Any])
     

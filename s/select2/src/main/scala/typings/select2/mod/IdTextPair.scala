@@ -21,7 +21,8 @@ object IdTextPair {
     __obj.asInstanceOf[IdTextPair]
   }
   
-  extension [Self <: IdTextPair](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IdTextPair] (val x: Self) extends AnyVal {
     
     inline def setElement(value: Unit): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     

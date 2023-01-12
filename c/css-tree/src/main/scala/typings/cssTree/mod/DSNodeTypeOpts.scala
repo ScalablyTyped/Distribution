@@ -21,7 +21,8 @@ object DSNodeTypeOpts {
     __obj.asInstanceOf[DSNodeTypeOpts]
   }
   
-  extension [Self <: DSNodeTypeOpts](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DSNodeTypeOpts] (val x: Self) extends AnyVal {
     
     inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     

@@ -79,7 +79,8 @@ object srcBrowserSpriteDotconfigMod extends Shortcut {
       __obj.asInstanceOf[BrowserSpriteConfig]
     }
     
-    extension [Self <: BrowserSpriteConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BrowserSpriteConfig] (val x: Self) extends AnyVal {
       
       inline def setAutoConfigure(value: Boolean): Self = StObject.set(x, "autoConfigure", value.asInstanceOf[js.Any])
       

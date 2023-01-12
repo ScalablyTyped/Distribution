@@ -31,7 +31,8 @@ object XFootnotesSettingsSupplier {
     __obj.asInstanceOf[XFootnotesSettingsSupplier]
   }
   
-  extension [Self <: XFootnotesSettingsSupplier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XFootnotesSettingsSupplier] (val x: Self) extends AnyVal {
     
     inline def setFootnotesSettings(value: XPropertySet): Self = StObject.set(x, "FootnotesSettings", value.asInstanceOf[js.Any])
     

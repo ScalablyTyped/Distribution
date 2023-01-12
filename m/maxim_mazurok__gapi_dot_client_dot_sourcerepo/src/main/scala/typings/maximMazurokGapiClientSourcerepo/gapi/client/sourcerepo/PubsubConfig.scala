@@ -25,7 +25,8 @@ object PubsubConfig {
     __obj.asInstanceOf[PubsubConfig]
   }
   
-  extension [Self <: PubsubConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PubsubConfig] (val x: Self) extends AnyVal {
     
     inline def setMessageFormat(value: String): Self = StObject.set(x, "messageFormat", value.asInstanceOf[js.Any])
     

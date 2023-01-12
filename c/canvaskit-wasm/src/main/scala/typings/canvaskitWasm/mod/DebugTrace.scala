@@ -23,7 +23,8 @@ object DebugTrace {
     __obj.asInstanceOf[DebugTrace]
   }
   
-  extension [Self <: DebugTrace](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DebugTrace] (val x: Self) extends AnyVal {
     
     inline def setWriteTrace(value: () => String): Self = StObject.set(x, "writeTrace", js.Any.fromFunction0(value))
   }

@@ -1359,7 +1359,8 @@ object StyleSheet {
     __obj.asInstanceOf[StyleSheet]
   }
   
-  extension [Self <: StyleSheet](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StyleSheet] (val x: Self) extends AnyVal {
     
     inline def setAnnotationArcBorder(value: Double): Self = StObject.set(x, "annotationArcBorder", value.asInstanceOf[js.Any])
     

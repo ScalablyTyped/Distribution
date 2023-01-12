@@ -20,7 +20,8 @@ object TypeofCLIENTCACHING {
     __obj.asInstanceOf[TypeofCLIENTCACHING]
   }
   
-  extension [Self <: TypeofCLIENTCACHING](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofCLIENTCACHING] (val x: Self) extends AnyVal {
     
     inline def setTransformArguments(value: Boolean => RedisCommandArguments): Self = StObject.set(x, "transformArguments", js.Any.fromFunction1(value))
     

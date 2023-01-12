@@ -58,7 +58,8 @@ object AccessApprovalSettings {
     __obj.asInstanceOf[AccessApprovalSettings]
   }
   
-  extension [Self <: AccessApprovalSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccessApprovalSettings] (val x: Self) extends AnyVal {
     
     inline def setActiveKeyVersion(value: String): Self = StObject.set(x, "activeKeyVersion", value.asInstanceOf[js.Any])
     

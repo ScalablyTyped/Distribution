@@ -69,7 +69,8 @@ object anon {
       __obj.asInstanceOf[AriaLive]
     }
     
-    extension [Self <: AriaLive](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AriaLive] (val x: Self) extends AnyVal {
       
       inline def setAriaLive(value: off | assertive | polite): Self = StObject.set(x, "ariaLive", value.asInstanceOf[js.Any])
       
@@ -92,7 +93,8 @@ object anon {
       __obj.asInstanceOf[Count]
     }
     
-    extension [Self <: Count](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Count] (val x: Self) extends AnyVal {
       
       inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       
@@ -133,7 +135,8 @@ object anon {
       __obj.asInstanceOf[IsAnimating]
     }
     
-    extension [Self <: IsAnimating](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IsAnimating] (val x: Self) extends AnyVal {
       
       inline def setIsAnimating(value: Boolean): Self = StObject.set(x, "isAnimating", value.asInstanceOf[js.Any])
       
@@ -159,7 +162,8 @@ object anon {
       __obj.asInstanceOf[PickControlPropscellAlign]
     }
     
-    extension [Self <: PickControlPropscellAlign](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PickControlPropscellAlign] (val x: Self) extends AnyVal {
       
       inline def setCellAlign(value: CellAlign): Self = StObject.set(x, "cellAlign", value.asInstanceOf[js.Any])
       
@@ -197,7 +201,8 @@ object anon {
       __obj.asInstanceOf[PickControlPropscellAlignCellAlign]
     }
     
-    extension [Self <: PickControlPropscellAlignCellAlign](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PickControlPropscellAlignCellAlign] (val x: Self) extends AnyVal {
       
       inline def setCellAlign(value: CellAlign): Self = StObject.set(x, "cellAlign", value.asInstanceOf[js.Any])
       

@@ -22,7 +22,8 @@ object Scheduler {
     __obj.asInstanceOf[Scheduler]
   }
   
-  extension [Self <: Scheduler](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Scheduler] (val x: Self) extends AnyVal {
     
     inline def setStart(value: () => Unit): Self = StObject.set(x, "start", js.Any.fromFunction0(value))
     

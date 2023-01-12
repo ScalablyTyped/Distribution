@@ -35,7 +35,8 @@ object ChatMediaInfo {
     __obj.asInstanceOf[ChatMediaInfo]
   }
   
-  extension [Self <: ChatMediaInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChatMediaInfo] (val x: Self) extends AnyVal {
     
     inline def setContactId(value: String): Self = StObject.set(x, "contactId", value.asInstanceOf[js.Any])
     

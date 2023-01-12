@@ -43,7 +43,8 @@ object MallocObj {
     __obj.asInstanceOf[MallocObj]
   }
   
-  extension [Self <: MallocObj](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MallocObj] (val x: Self) extends AnyVal {
     
     inline def setByteOffset(value: Double): Self = StObject.set(x, "byteOffset", value.asInstanceOf[js.Any])
     

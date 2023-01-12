@@ -69,7 +69,8 @@ object ViewCreationInformation {
     __obj.asInstanceOf[ViewCreationInformation]
   }
   
-  extension [Self <: ViewCreationInformation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ViewCreationInformation] (val x: Self) extends AnyVal {
     
     inline def setGet_paged(value: () => Boolean): Self = StObject.set(x, "get_paged", js.Any.fromFunction0(value))
     

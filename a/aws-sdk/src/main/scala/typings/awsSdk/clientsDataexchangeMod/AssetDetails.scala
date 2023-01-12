@@ -28,7 +28,8 @@ object AssetDetails {
     __obj.asInstanceOf[AssetDetails]
   }
   
-  extension [Self <: AssetDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssetDetails] (val x: Self) extends AnyVal {
     
     inline def setApiGatewayApiAsset(value: ApiGatewayApiAsset): Self = StObject.set(x, "ApiGatewayApiAsset", value.asInstanceOf[js.Any])
     

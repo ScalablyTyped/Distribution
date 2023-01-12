@@ -19,7 +19,8 @@ object AchDebitResponse {
     __obj.asInstanceOf[AchDebitResponse]
   }
   
-  extension [Self <: AchDebitResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AchDebitResponse] (val x: Self) extends AnyVal {
     
     inline def setAccount_holder_name(value: String): Self = StObject.set(x, "account_holder_name", value.asInstanceOf[js.Any])
     

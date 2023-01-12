@@ -18,7 +18,8 @@ object PutEvaluationsResponse {
     __obj.asInstanceOf[PutEvaluationsResponse]
   }
   
-  extension [Self <: PutEvaluationsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutEvaluationsResponse] (val x: Self) extends AnyVal {
     
     inline def setFailedEvaluations(value: Evaluations): Self = StObject.set(x, "FailedEvaluations", value.asInstanceOf[js.Any])
     

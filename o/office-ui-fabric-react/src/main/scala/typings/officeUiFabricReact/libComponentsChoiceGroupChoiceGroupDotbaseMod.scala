@@ -67,7 +67,8 @@ object libComponentsChoiceGroupChoiceGroupDotbaseMod {
       __obj.asInstanceOf[IChoiceGroupState]
     }
     
-    extension [Self <: IChoiceGroupState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IChoiceGroupState] (val x: Self) extends AnyVal {
       
       inline def setKeyChecked(value: String | Double): Self = StObject.set(x, "keyChecked", value.asInstanceOf[js.Any])
       

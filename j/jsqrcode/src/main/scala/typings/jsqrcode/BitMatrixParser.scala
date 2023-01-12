@@ -35,7 +35,8 @@ object BitMatrixParser {
     __obj.asInstanceOf[BitMatrixParser]
   }
   
-  extension [Self <: BitMatrixParser](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BitMatrixParser] (val x: Self) extends AnyVal {
     
     inline def setBitMatrix(value: BitMatrix): Self = StObject.set(x, "bitMatrix", value.asInstanceOf[js.Any])
     

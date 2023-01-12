@@ -18,7 +18,8 @@ object TransformInputs {
     __obj.asInstanceOf[TransformInputs]
   }
   
-  extension [Self <: TransformInputs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransformInputs] (val x: Self) extends AnyVal {
     
     inline def setImage(value: scala.Any): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     

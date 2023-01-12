@@ -23,7 +23,8 @@ object ICommandActionComplete {
     __obj.asInstanceOf[ICommandActionComplete]
   }
   
-  extension [Self <: ICommandActionComplete](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICommandActionComplete] (val x: Self) extends AnyVal {
     
     inline def setCompletedId(value: String): Self = StObject.set(x, "completedId", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object ProgressId {
     __obj.asInstanceOf[ProgressId]
   }
   
-  extension [Self <: ProgressId](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProgressId] (val x: Self) extends AnyVal {
     
     inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     

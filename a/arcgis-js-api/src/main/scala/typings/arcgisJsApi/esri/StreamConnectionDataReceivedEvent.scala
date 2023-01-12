@@ -17,7 +17,8 @@ object StreamConnectionDataReceivedEvent {
     __obj.asInstanceOf[StreamConnectionDataReceivedEvent]
   }
   
-  extension [Self <: StreamConnectionDataReceivedEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StreamConnectionDataReceivedEvent] (val x: Self) extends AnyVal {
     
     inline def setAttributes(value: Any): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     

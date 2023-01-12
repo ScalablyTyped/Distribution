@@ -24,7 +24,8 @@ object ASPxClientDiagramAddShapeFromToolboxEventArgs {
     __obj.asInstanceOf[ASPxClientDiagramAddShapeFromToolboxEventArgs]
   }
   
-  extension [Self <: ASPxClientDiagramAddShapeFromToolboxEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientDiagramAddShapeFromToolboxEventArgs] (val x: Self) extends AnyVal {
     
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

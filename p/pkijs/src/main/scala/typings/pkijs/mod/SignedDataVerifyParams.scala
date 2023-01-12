@@ -31,7 +31,8 @@ object SignedDataVerifyParams {
     __obj.asInstanceOf[SignedDataVerifyParams]
   }
   
-  extension [Self <: SignedDataVerifyParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SignedDataVerifyParams] (val x: Self) extends AnyVal {
     
     inline def setCheckChain(value: Boolean): Self = StObject.set(x, "checkChain", value.asInstanceOf[js.Any])
     

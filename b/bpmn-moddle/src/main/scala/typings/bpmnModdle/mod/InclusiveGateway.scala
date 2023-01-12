@@ -29,7 +29,8 @@ object InclusiveGateway {
     __obj.asInstanceOf[InclusiveGateway]
   }
   
-  extension [Self <: InclusiveGateway](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InclusiveGateway] (val x: Self) extends AnyVal {
     
     inline def setDefault(value: SequenceFlow): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
   }

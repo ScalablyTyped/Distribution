@@ -23,7 +23,8 @@ object GetObjectRequest {
     __obj.asInstanceOf[GetObjectRequest]
   }
   
-  extension [Self <: GetObjectRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetObjectRequest] (val x: Self) extends AnyVal {
     
     inline def setPath(value: PathNaming): Self = StObject.set(x, "Path", value.asInstanceOf[js.Any])
     

@@ -156,7 +156,8 @@ object dxDropDownButtonOptions {
     __obj.asInstanceOf[dxDropDownButtonOptions]
   }
   
-  extension [Self <: dxDropDownButtonOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxDropDownButtonOptions] (val x: Self) extends AnyVal {
     
     inline def setDataSource(value: DataSourceLike[Item | Any, Any]): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
     

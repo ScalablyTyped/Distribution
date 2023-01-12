@@ -17,7 +17,8 @@ object Deliveryid {
     __obj.asInstanceOf[Deliveryid]
   }
   
-  extension [Self <: Deliveryid](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Deliveryid] (val x: Self) extends AnyVal {
     
     inline def setDelivery_id(
       value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['delivery-id'] */ js.Any

@@ -43,7 +43,8 @@ object AggregateResourceIdentifier {
     __obj.asInstanceOf[AggregateResourceIdentifier]
   }
   
-  extension [Self <: AggregateResourceIdentifier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AggregateResourceIdentifier] (val x: Self) extends AnyVal {
     
     inline def setResourceId(value: ResourceId): Self = StObject.set(x, "ResourceId", value.asInstanceOf[js.Any])
     

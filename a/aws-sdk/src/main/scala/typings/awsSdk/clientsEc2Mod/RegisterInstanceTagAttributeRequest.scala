@@ -23,7 +23,8 @@ object RegisterInstanceTagAttributeRequest {
     __obj.asInstanceOf[RegisterInstanceTagAttributeRequest]
   }
   
-  extension [Self <: RegisterInstanceTagAttributeRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RegisterInstanceTagAttributeRequest] (val x: Self) extends AnyVal {
     
     inline def setIncludeAllTagsOfInstance(value: Boolean): Self = StObject.set(x, "IncludeAllTagsOfInstance", value.asInstanceOf[js.Any])
     

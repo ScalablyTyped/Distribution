@@ -24,7 +24,8 @@ object ApiTestV2 {
     __obj.asInstanceOf[ApiTestV2]
   }
   
-  extension [Self <: ApiTestV2](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApiTestV2] (val x: Self) extends AnyVal {
     
     inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     

@@ -56,7 +56,8 @@ object TeXInputProcessor {
     __obj.asInstanceOf[TeXInputProcessor]
   }
   
-  extension [Self <: TeXInputProcessor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TeXInputProcessor] (val x: Self) extends AnyVal {
     
     inline def setEquationNumbers(value: EquationNumbers): Self = StObject.set(x, "equationNumbers", value.asInstanceOf[js.Any])
     

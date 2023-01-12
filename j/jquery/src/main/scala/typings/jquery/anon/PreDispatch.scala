@@ -20,7 +20,8 @@ object PreDispatch {
     __obj.asInstanceOf[PreDispatch[TTarget]]
   }
   
-  extension [Self <: PreDispatch[?], TTarget](x: Self & PreDispatch[TTarget]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PreDispatch[?], TTarget] (val x: Self & PreDispatch[TTarget]) extends AnyVal {
     
     inline def setPreDispatch(value: Event => `false` | Unit): Self = StObject.set(x, "preDispatch", js.Any.fromFunction1(value))
   }

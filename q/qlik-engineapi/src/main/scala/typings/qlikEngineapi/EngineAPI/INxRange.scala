@@ -26,7 +26,8 @@ object INxRange {
     __obj.asInstanceOf[INxRange]
   }
   
-  extension [Self <: INxRange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: INxRange] (val x: Self) extends AnyVal {
     
     inline def setQCount(value: Double): Self = StObject.set(x, "qCount", value.asInstanceOf[js.Any])
     

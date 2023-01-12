@@ -95,7 +95,8 @@ object CUMIPMT {
     __obj.asInstanceOf[CUMIPMT]
   }
   
-  extension [Self <: CUMIPMT](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CUMIPMT] (val x: Self) extends AnyVal {
     
     inline def setCUMIPMT(value: ReturnNumberTypeNumberType): Self = StObject.set(x, "CUMIPMT", value.asInstanceOf[js.Any])
     

@@ -173,7 +173,8 @@ object distCoreUihandlerMod {
       __obj.asInstanceOf[UIHandlerEventMap]
     }
     
-    extension [Self <: UIHandlerEventMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UIHandlerEventMap] (val x: Self) extends AnyVal {
       
       inline def setInteraction(value: InteractionEvent): Self = StObject.set(x, "interaction", value.asInstanceOf[js.Any])
     }

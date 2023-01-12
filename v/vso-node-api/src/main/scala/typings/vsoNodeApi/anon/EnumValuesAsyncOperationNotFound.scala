@@ -15,7 +15,8 @@ object EnumValuesAsyncOperationNotFound {
     __obj.asInstanceOf[EnumValuesAsyncOperationNotFound]
   }
   
-  extension [Self <: EnumValuesAsyncOperationNotFound](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnumValuesAsyncOperationNotFound] (val x: Self) extends AnyVal {
     
     inline def setEnumValues(value: AsyncOperationNotFound): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
   }

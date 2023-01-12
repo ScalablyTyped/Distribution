@@ -32,7 +32,8 @@ object IFunction {
     __obj.asInstanceOf[IFunction]
   }
   
-  extension [Self <: IFunction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IFunction] (val x: Self) extends AnyVal {
     
     inline def setQGroup(value: FunctionGroupType): Self = StObject.set(x, "qGroup", value.asInstanceOf[js.Any])
     

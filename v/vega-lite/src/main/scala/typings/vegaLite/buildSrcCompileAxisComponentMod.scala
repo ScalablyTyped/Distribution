@@ -84,7 +84,8 @@ object buildSrcCompileAxisComponentMod {
       __obj.asInstanceOf[AxisComponentIndex]
     }
     
-    extension [Self <: AxisComponentIndex](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AxisComponentIndex] (val x: Self) extends AnyVal {
       
       inline def setX(value: js.Array[AxisComponent]): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
@@ -320,7 +321,8 @@ object buildSrcCompileAxisComponentMod {
       __obj.asInstanceOf[AxisComponentProps]
     }
     
-    extension [Self <: AxisComponentProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AxisComponentProps] (val x: Self) extends AnyVal {
       
       inline def setAria(value: Boolean): Self = StObject.set(x, "aria", value.asInstanceOf[js.Any])
       
@@ -705,7 +707,8 @@ object buildSrcCompileAxisComponentMod {
       __obj.asInstanceOf[AxisInternalIndex]
     }
     
-    extension [Self <: AxisInternalIndex](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AxisInternalIndex] (val x: Self) extends AnyVal {
       
       inline def setX(value: AxisInternal): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       

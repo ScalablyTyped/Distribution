@@ -23,7 +23,8 @@ object MediaStreamTrackGeneratorInit {
     __obj.asInstanceOf[MediaStreamTrackGeneratorInit]
   }
   
-  extension [Self <: MediaStreamTrackGeneratorInit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MediaStreamTrackGeneratorInit] (val x: Self) extends AnyVal {
     
     inline def setKind(value: MediaStreamTrackGeneratorKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

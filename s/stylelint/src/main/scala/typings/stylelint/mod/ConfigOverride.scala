@@ -52,7 +52,8 @@ object ConfigOverride {
     __obj.asInstanceOf[ConfigOverride]
   }
   
-  extension [Self <: ConfigOverride](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConfigOverride] (val x: Self) extends AnyVal {
     
     inline def setCodeProcessors(value: js.Array[CodeProcessor]): Self = StObject.set(x, "codeProcessors", value.asInstanceOf[js.Any])
     

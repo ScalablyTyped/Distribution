@@ -17,7 +17,8 @@ object DSWalkOptions {
     __obj.asInstanceOf[DSWalkOptions]
   }
   
-  extension [Self <: DSWalkOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DSWalkOptions] (val x: Self) extends AnyVal {
     
     inline def setEnter(value: /* node */ DSNode => Unit): Self = StObject.set(x, "enter", js.Any.fromFunction1(value))
     

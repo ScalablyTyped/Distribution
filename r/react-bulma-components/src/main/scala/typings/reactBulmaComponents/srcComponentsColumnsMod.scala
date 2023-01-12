@@ -41,7 +41,8 @@ object srcComponentsColumnsMod extends Shortcut {
       __obj.asInstanceOf[ColumnBreakpointConfiguration]
     }
     
-    extension [Self <: ColumnBreakpointConfiguration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColumnBreakpointConfiguration] (val x: Self) extends AnyVal {
       
       inline def setNarrow(value: Boolean): Self = StObject.set(x, "narrow", value.asInstanceOf[js.Any])
       
@@ -86,7 +87,8 @@ object srcComponentsColumnsMod extends Shortcut {
       __obj.asInstanceOf[ColumnGroupProps]
     }
     
-    extension [Self <: ColumnGroupProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColumnGroupProps] (val x: Self) extends AnyVal {
       
       inline def setBreakpoint(value: Breakpoint): Self = StObject.set(x, "breakpoint", value.asInstanceOf[js.Any])
       
@@ -157,7 +159,8 @@ object srcComponentsColumnsMod extends Shortcut {
       __obj.asInstanceOf[ColumnProps]
     }
     
-    extension [Self <: ColumnProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColumnProps] (val x: Self) extends AnyVal {
       
       inline def setDesktop(value: ColumnBreakpointConfiguration & ResponsiveModifiers): Self = StObject.set(x, "desktop", value.asInstanceOf[js.Any])
       
@@ -280,7 +283,8 @@ object srcComponentsColumnsMod extends Shortcut {
       __obj.asInstanceOf[GapProps]
     }
     
-    extension [Self <: GapProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GapProps] (val x: Self) extends AnyVal {
       
       inline def setGap(value: `0` | `1` | `2` | `3` | `4` | `5` | `6` | `7` | `8` | String | Number): Self = StObject.set(x, "gap", value.asInstanceOf[js.Any])
       

@@ -21,7 +21,8 @@ object Fps {
     __obj.asInstanceOf[Fps]
   }
   
-  extension [Self <: Fps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Fps] (val x: Self) extends AnyVal {
     
     inline def setFps(value: Double): Self = StObject.set(x, "fps", value.asInstanceOf[js.Any])
     

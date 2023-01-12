@@ -92,7 +92,8 @@ object PlotPackedbubbleClusterLayoutAlgorithmOptions {
     __obj.asInstanceOf[PlotPackedbubbleClusterLayoutAlgorithmOptions]
   }
   
-  extension [Self <: PlotPackedbubbleClusterLayoutAlgorithmOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotPackedbubbleClusterLayoutAlgorithmOptions] (val x: Self) extends AnyVal {
     
     inline def setDistance(value: Double | String): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
     

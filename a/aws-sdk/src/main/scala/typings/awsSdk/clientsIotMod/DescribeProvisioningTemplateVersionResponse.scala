@@ -33,7 +33,8 @@ object DescribeProvisioningTemplateVersionResponse {
     __obj.asInstanceOf[DescribeProvisioningTemplateVersionResponse]
   }
   
-  extension [Self <: DescribeProvisioningTemplateVersionResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeProvisioningTemplateVersionResponse] (val x: Self) extends AnyVal {
     
     inline def setCreationDate(value: js.Date): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
     

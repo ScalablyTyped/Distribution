@@ -19,7 +19,8 @@ object WhitelistsAddResponse {
     __obj.asInstanceOf[WhitelistsAddResponse]
   }
   
-  extension [Self <: WhitelistsAddResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WhitelistsAddResponse] (val x: Self) extends AnyVal {
     
     inline def setAdded(value: Boolean): Self = StObject.set(x, "added", value.asInstanceOf[js.Any])
     

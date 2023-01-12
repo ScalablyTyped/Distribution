@@ -174,7 +174,8 @@ object CheckboxProps {
     __obj.asInstanceOf[CheckboxProps]
   }
   
-  extension [Self <: CheckboxProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CheckboxProps] (val x: Self) extends AnyVal {
     
     inline def setAccessibilityLabel(value: String): Self = StObject.set(x, "accessibilityLabel", value.asInstanceOf[js.Any])
     

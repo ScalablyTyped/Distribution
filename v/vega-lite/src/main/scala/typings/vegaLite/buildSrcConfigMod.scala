@@ -306,7 +306,8 @@ object buildSrcConfigMod {
       __obj.asInstanceOf[Config[ES]]
     }
     
-    extension [Self <: Config[?], ES /* <: ExprRef | SignalRef */](x: Self & Config[ES]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Config[?], ES /* <: ExprRef | SignalRef */] (val x: Self & Config[ES]) extends AnyVal {
       
       inline def setAria(value: Boolean): Self = StObject.set(x, "aria", value.asInstanceOf[js.Any])
       
@@ -467,7 +468,8 @@ object buildSrcConfigMod {
       __obj.asInstanceOf[VLOnlyConfig[ES]]
     }
     
-    extension [Self <: VLOnlyConfig[?], ES /* <: ExprRef | SignalRef */](x: Self & VLOnlyConfig[ES]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VLOnlyConfig[?], ES /* <: ExprRef | SignalRef */] (val x: Self & VLOnlyConfig[ES]) extends AnyVal {
       
       inline def setColor(value: Boolean | ColorConfig): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -582,7 +584,8 @@ object buildSrcConfigMod {
       __obj.asInstanceOf[ViewConfig[ES]]
     }
     
-    extension [Self <: ViewConfig[?], ES /* <: ExprRef | SignalRef */](x: Self & ViewConfig[ES]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ViewConfig[?], ES /* <: ExprRef | SignalRef */] (val x: Self & ViewConfig[ES]) extends AnyVal {
       
       inline def setClip(value: Boolean): Self = StObject.set(x, "clip", value.asInstanceOf[js.Any])
       

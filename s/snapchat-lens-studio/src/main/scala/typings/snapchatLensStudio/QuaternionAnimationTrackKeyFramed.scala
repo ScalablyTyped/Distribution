@@ -31,7 +31,8 @@ object QuaternionAnimationTrackKeyFramed {
     __obj.asInstanceOf[QuaternionAnimationTrackKeyFramed]
   }
   
-  extension [Self <: QuaternionAnimationTrackKeyFramed](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QuaternionAnimationTrackKeyFramed] (val x: Self) extends AnyVal {
     
     inline def setAddKey(value: (Double, quat) => Unit): Self = StObject.set(x, "addKey", js.Any.fromFunction2(value))
     

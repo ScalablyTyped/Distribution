@@ -28,7 +28,8 @@ object GetComponentResponse {
     __obj.asInstanceOf[GetComponentResponse]
   }
   
-  extension [Self <: GetComponentResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetComponentResponse] (val x: Self) extends AnyVal {
     
     inline def setRecipe(value: RecipeBlob): Self = StObject.set(x, "recipe", value.asInstanceOf[js.Any])
     

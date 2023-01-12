@@ -28,7 +28,8 @@ object FormValidatedEventUIParam {
     __obj.asInstanceOf[FormValidatedEventUIParam]
   }
   
-  extension [Self <: FormValidatedEventUIParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FormValidatedEventUIParam] (val x: Self) extends AnyVal {
     
     inline def setOwner(value: Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     

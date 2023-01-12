@@ -122,7 +122,8 @@ object UnoControlProgressBarModel {
     __obj.asInstanceOf[UnoControlProgressBarModel]
   }
   
-  extension [Self <: UnoControlProgressBarModel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UnoControlProgressBarModel] (val x: Self) extends AnyVal {
     
     inline def setBackgroundColor(value: Color): Self = StObject.set(x, "BackgroundColor", value.asInstanceOf[js.Any])
     

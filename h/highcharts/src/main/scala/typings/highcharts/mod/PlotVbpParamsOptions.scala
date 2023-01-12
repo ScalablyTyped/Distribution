@@ -39,7 +39,8 @@ object PlotVbpParamsOptions {
     __obj.asInstanceOf[PlotVbpParamsOptions]
   }
   
-  extension [Self <: PlotVbpParamsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotVbpParamsOptions] (val x: Self) extends AnyVal {
     
     inline def setIndex(value: String): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     

@@ -31,7 +31,8 @@ object BasicToolBarFactory {
     __obj.asInstanceOf[BasicToolBarFactory]
   }
   
-  extension [Self <: BasicToolBarFactory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BasicToolBarFactory] (val x: Self) extends AnyVal {
     
     inline def setCreate(value: XController => Unit): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
   }

@@ -37,7 +37,8 @@ object ASPxClientHintWindow {
     __obj.asInstanceOf[ASPxClientHintWindow]
   }
   
-  extension [Self <: ASPxClientHintWindow](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientHintWindow] (val x: Self) extends AnyVal {
     
     inline def setSetContent(value: (Any, ASPxClientHintOptions) => Unit): Self = StObject.set(x, "SetContent", js.Any.fromFunction2(value))
     

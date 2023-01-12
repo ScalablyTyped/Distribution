@@ -29,7 +29,8 @@ object LineAxisCfg {
     __obj.asInstanceOf[LineAxisCfg]
   }
   
-  extension [Self <: LineAxisCfg](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LineAxisCfg] (val x: Self) extends AnyVal {
     
     inline def setEnd(value: Point): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     

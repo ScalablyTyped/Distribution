@@ -37,7 +37,8 @@ object libPlotsScatterUtilMod {
       __obj.asInstanceOf[RenderOptions]
     }
     
-    extension [Self <: RenderOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RenderOptions] (val x: Self) extends AnyVal {
       
       inline def setOptions(value: ScatterOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       

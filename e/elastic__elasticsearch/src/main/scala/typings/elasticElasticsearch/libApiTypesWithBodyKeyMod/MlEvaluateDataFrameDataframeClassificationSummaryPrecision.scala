@@ -17,7 +17,8 @@ object MlEvaluateDataFrameDataframeClassificationSummaryPrecision {
     __obj.asInstanceOf[MlEvaluateDataFrameDataframeClassificationSummaryPrecision]
   }
   
-  extension [Self <: MlEvaluateDataFrameDataframeClassificationSummaryPrecision](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlEvaluateDataFrameDataframeClassificationSummaryPrecision] (val x: Self) extends AnyVal {
     
     inline def setAvg_precision(value: double): Self = StObject.set(x, "avg_precision", value.asInstanceOf[js.Any])
     

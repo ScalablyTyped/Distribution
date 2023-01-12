@@ -37,7 +37,8 @@ object EntityState {
     __obj.asInstanceOf[EntityState]
   }
   
-  extension [Self <: EntityState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EntityState] (val x: Self) extends AnyVal {
     
     inline def setAdded(value: EntityStateSymbol): Self = StObject.set(x, "Added", value.asInstanceOf[js.Any])
     

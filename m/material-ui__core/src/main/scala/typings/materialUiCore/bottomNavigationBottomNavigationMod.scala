@@ -46,7 +46,8 @@ object bottomNavigationBottomNavigationMod extends Shortcut {
       __obj.asInstanceOf[BottomNavigationTypeMap[P, D]]
     }
     
-    extension [Self <: BottomNavigationTypeMap[?, ?], P, D /* <: ElementType[Any] */](x: Self & (BottomNavigationTypeMap[P, D])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BottomNavigationTypeMap[?, ?], P, D /* <: ElementType[Any] */] (val x: Self & (BottomNavigationTypeMap[P, D])) extends AnyVal {
       
       inline def setClassKey(value: BottomNavigationClassKey): Self = StObject.set(x, "classKey", value.asInstanceOf[js.Any])
       

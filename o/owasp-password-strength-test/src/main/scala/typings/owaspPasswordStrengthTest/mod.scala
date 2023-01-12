@@ -99,7 +99,8 @@ object mod {
       __obj.asInstanceOf[TestConfig]
     }
     
-    extension [Self <: TestConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TestConfig] (val x: Self) extends AnyVal {
       
       inline def setAllowPassphrases(value: Boolean): Self = StObject.set(x, "allowPassphrases", value.asInstanceOf[js.Any])
       
@@ -159,7 +160,8 @@ object mod {
       __obj.asInstanceOf[TestResult]
     }
     
-    extension [Self <: TestResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TestResult] (val x: Self) extends AnyVal {
       
       inline def setErrors(value: js.Array[String]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
       

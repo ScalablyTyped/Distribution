@@ -19,7 +19,8 @@ object TextButton {
     __obj.asInstanceOf[TextButton]
   }
   
-  extension [Self <: TextButton](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextButton] (val x: Self) extends AnyVal {
     
     inline def setOnClick(value: OnClick): Self = StObject.set(x, "onClick", value.asInstanceOf[js.Any])
     

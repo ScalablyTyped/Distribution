@@ -49,7 +49,8 @@ object typesOrderLineItemMod {
       __obj.asInstanceOf[OrderLineItem]
     }
     
-    extension [Self <: OrderLineItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OrderLineItem] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       

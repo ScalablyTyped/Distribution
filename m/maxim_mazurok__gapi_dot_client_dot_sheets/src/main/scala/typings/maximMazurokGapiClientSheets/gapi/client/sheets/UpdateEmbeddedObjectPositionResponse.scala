@@ -16,7 +16,8 @@ object UpdateEmbeddedObjectPositionResponse {
     __obj.asInstanceOf[UpdateEmbeddedObjectPositionResponse]
   }
   
-  extension [Self <: UpdateEmbeddedObjectPositionResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateEmbeddedObjectPositionResponse] (val x: Self) extends AnyVal {
     
     inline def setPosition(value: EmbeddedObjectPosition): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     

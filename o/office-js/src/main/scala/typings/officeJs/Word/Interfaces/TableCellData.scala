@@ -97,7 +97,8 @@ object TableCellData {
     __obj.asInstanceOf[TableCellData]
   }
   
-  extension [Self <: TableCellData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TableCellData] (val x: Self) extends AnyVal {
     
     inline def setBody(value: BodyData): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

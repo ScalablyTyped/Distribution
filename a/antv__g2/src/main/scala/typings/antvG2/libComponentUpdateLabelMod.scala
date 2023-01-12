@@ -32,7 +32,8 @@ object libComponentUpdateLabelMod {
       __obj.asInstanceOf[Cfg]
     }
     
-    extension [Self <: Cfg](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Cfg] (val x: Self) extends AnyVal {
       
       inline def setAnimateCfg(value: Any): Self = StObject.set(x, "animateCfg", value.asInstanceOf[js.Any])
       

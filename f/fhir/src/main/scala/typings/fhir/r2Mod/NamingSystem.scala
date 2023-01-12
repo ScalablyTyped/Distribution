@@ -113,7 +113,8 @@ object NamingSystem {
     __obj.asInstanceOf[NamingSystem]
   }
   
-  extension [Self <: NamingSystem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NamingSystem] (val x: Self) extends AnyVal {
     
     inline def setContact(value: js.Array[NamingSystemContact]): Self = StObject.set(x, "contact", value.asInstanceOf[js.Any])
     

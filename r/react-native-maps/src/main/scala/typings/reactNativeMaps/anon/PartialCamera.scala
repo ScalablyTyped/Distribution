@@ -25,7 +25,8 @@ object PartialCamera {
     __obj.asInstanceOf[PartialCamera]
   }
   
-  extension [Self <: PartialCamera](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialCamera] (val x: Self) extends AnyVal {
     
     inline def setAltitude(value: Double): Self = StObject.set(x, "altitude", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object DeleteLoadBalancerTlsCertificateRequest {
     __obj.asInstanceOf[DeleteLoadBalancerTlsCertificateRequest]
   }
   
-  extension [Self <: DeleteLoadBalancerTlsCertificateRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteLoadBalancerTlsCertificateRequest] (val x: Self) extends AnyVal {
     
     inline def setCertificateName(value: ResourceName): Self = StObject.set(x, "certificateName", value.asInstanceOf[js.Any])
     

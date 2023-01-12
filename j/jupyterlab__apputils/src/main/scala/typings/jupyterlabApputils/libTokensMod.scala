@@ -65,7 +65,8 @@ object libTokensMod {
         __obj.asInstanceOf[IOptions]
       }
       
-      extension [Self <: IOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
         
         inline def setAllowedAttributes(value: StringDictionary[js.Array[String]]): Self = StObject.set(x, "allowedAttributes", value.asInstanceOf[js.Any])
         
@@ -217,7 +218,8 @@ object libTokensMod {
         __obj.asInstanceOf[ITheme]
       }
       
-      extension [Self <: ITheme](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ITheme] (val x: Self) extends AnyVal {
         
         inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
         
@@ -237,7 +239,8 @@ object libTokensMod {
       }
     }
     
-    extension [Self <: IThemeManager](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IThemeManager] (val x: Self) extends AnyVal {
       
       inline def setGetDisplayName(value: String => String): Self = StObject.set(x, "getDisplayName", js.Any.fromFunction1(value))
       
@@ -301,7 +304,8 @@ object libTokensMod {
     @js.native
     val ^ : Token[IToolbarWidgetRegistry] = js.native
     
-    extension [Self <: IToolbarWidgetRegistry](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IToolbarWidgetRegistry] (val x: Self) extends AnyVal {
       
       inline def setCreateWidget(value: (String, Widget, IWidget) => Widget): Self = StObject.set(x, "createWidget", js.Any.fromFunction3(value))
       
@@ -336,7 +340,8 @@ object libTokensMod {
         __obj.asInstanceOf[typings.jupyterlabApputils.libTokensMod.ToolbarRegistry.IOptions]
       }
       
-      extension [Self <: typings.jupyterlabApputils.libTokensMod.ToolbarRegistry.IOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.jupyterlabApputils.libTokensMod.ToolbarRegistry.IOptions] (val x: Self) extends AnyVal {
         
         inline def setDefaultFactory(value: (String, Widget, IWidget) => Widget): Self = StObject.set(x, "defaultFactory", js.Any.fromFunction3(value))
       }
@@ -364,7 +369,8 @@ object libTokensMod {
         __obj.asInstanceOf[IToolbarItem]
       }
       
-      extension [Self <: IToolbarItem](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IToolbarItem] (val x: Self) extends AnyVal {
         
         inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         

@@ -23,7 +23,8 @@ object ReorderAction {
     __obj.asInstanceOf[ReorderAction]
   }
   
-  extension [Self <: ReorderAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReorderAction] (val x: Self) extends AnyVal {
     
     inline def setActionId(value: Double): Self = StObject.set(x, "actionId", value.asInstanceOf[js.Any])
     

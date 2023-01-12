@@ -23,7 +23,8 @@ object DiscoveredResource {
     __obj.asInstanceOf[DiscoveredResource]
   }
   
-  extension [Self <: DiscoveredResource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DiscoveredResource] (val x: Self) extends AnyVal {
     
     inline def setConfigurationId(value: ConfigurationId): Self = StObject.set(x, "ConfigurationId", value.asInstanceOf[js.Any])
     

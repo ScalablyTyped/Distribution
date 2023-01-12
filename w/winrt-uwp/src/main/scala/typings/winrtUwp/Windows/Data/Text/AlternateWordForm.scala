@@ -27,7 +27,8 @@ object AlternateWordForm {
     __obj.asInstanceOf[AlternateWordForm]
   }
   
-  extension [Self <: AlternateWordForm](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AlternateWordForm] (val x: Self) extends AnyVal {
     
     inline def setAlternateText(value: String): Self = StObject.set(x, "alternateText", value.asInstanceOf[js.Any])
     

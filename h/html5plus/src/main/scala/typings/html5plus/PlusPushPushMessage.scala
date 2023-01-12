@@ -47,7 +47,8 @@ object PlusPushPushMessage {
     __obj.asInstanceOf[PlusPushPushMessage]
   }
   
-  extension [Self <: PlusPushPushMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlusPushPushMessage] (val x: Self) extends AnyVal {
     
     inline def setAps(value: Any): Self = StObject.set(x, "aps", value.asInstanceOf[js.Any])
     

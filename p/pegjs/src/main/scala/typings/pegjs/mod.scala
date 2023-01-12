@@ -71,7 +71,8 @@ object mod {
       __obj.asInstanceOf[BuildOptionsBase]
     }
     
-    extension [Self <: BuildOptionsBase](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BuildOptionsBase] (val x: Self) extends AnyVal {
       
       inline def setAllowedStartRules(value: js.Array[String]): Self = StObject.set(x, "allowedStartRules", value.asInstanceOf[js.Any])
       
@@ -115,7 +116,8 @@ object mod {
       __obj.asInstanceOf[ExpectedItem]
     }
     
-    extension [Self <: ExpectedItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExpectedItem] (val x: Self) extends AnyVal {
       
       inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
@@ -151,7 +153,8 @@ object mod {
       __obj.asInstanceOf[OutputFormatAmdCommonjs]
     }
     
-    extension [Self <: OutputFormatAmdCommonjs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OutputFormatAmdCommonjs] (val x: Self) extends AnyVal {
       
       inline def setDependencies(value: Any): Self = StObject.set(x, "dependencies", value.asInstanceOf[js.Any])
       
@@ -180,7 +183,8 @@ object mod {
       __obj.asInstanceOf[OutputFormatBare]
     }
     
-    extension [Self <: OutputFormatBare](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OutputFormatBare] (val x: Self) extends AnyVal {
       
       inline def setFormat(value: bare): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
@@ -210,7 +214,8 @@ object mod {
       __obj.asInstanceOf[OutputFormatGlobals]
     }
     
-    extension [Self <: OutputFormatGlobals](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OutputFormatGlobals] (val x: Self) extends AnyVal {
       
       inline def setExportVar(value: Any): Self = StObject.set(x, "exportVar", value.asInstanceOf[js.Any])
       
@@ -245,7 +250,8 @@ object mod {
       __obj.asInstanceOf[OutputFormatUmd]
     }
     
-    extension [Self <: OutputFormatUmd](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OutputFormatUmd] (val x: Self) extends AnyVal {
       
       inline def setDependencies(value: Any): Self = StObject.set(x, "dependencies", value.asInstanceOf[js.Any])
       
@@ -278,7 +284,8 @@ object mod {
         __obj.asInstanceOf[typings.pegjs.mod.PEG.Location]
       }
       
-      extension [Self <: typings.pegjs.mod.PEG.Location](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.pegjs.mod.PEG.Location] (val x: Self) extends AnyVal {
         
         inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
         
@@ -301,7 +308,8 @@ object mod {
         __obj.asInstanceOf[typings.pegjs.mod.PEG.LocationRange]
       }
       
-      extension [Self <: typings.pegjs.mod.PEG.LocationRange](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.pegjs.mod.PEG.LocationRange] (val x: Self) extends AnyVal {
         
         inline def setEnd(value: typings.pegjs.mod.PEG.Location): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
         
@@ -343,7 +351,8 @@ object mod {
         __obj.asInstanceOf[SyntaxError]
       }
       
-      extension [Self <: SyntaxError](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SyntaxError] (val x: Self) extends AnyVal {
         
         inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
         
@@ -380,7 +389,8 @@ object mod {
       __obj.asInstanceOf[ParserBuildOptions]
     }
     
-    extension [Self <: ParserBuildOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParserBuildOptions] (val x: Self) extends AnyVal {
       
       inline def setOutput(value: parser): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
       
@@ -403,7 +413,8 @@ object mod {
       __obj.asInstanceOf[ParserOptions]
     }
     
-    extension [Self <: ParserOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParserOptions] (val x: Self) extends AnyVal {
       
       inline def setStartRule(value: String): Self = StObject.set(x, "startRule", value.asInstanceOf[js.Any])
       
@@ -444,7 +455,8 @@ object mod {
       __obj.asInstanceOf[PegjsError]
     }
     
-    extension [Self <: PegjsError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PegjsError] (val x: Self) extends AnyVal {
       
       inline def setExpected(value: js.Array[ExpectedItem]): Self = StObject.set(x, "expected", value.asInstanceOf[js.Any])
       

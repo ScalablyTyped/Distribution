@@ -19,7 +19,8 @@ object MonitoringDestination {
     __obj.asInstanceOf[MonitoringDestination]
   }
   
-  extension [Self <: MonitoringDestination](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MonitoringDestination] (val x: Self) extends AnyVal {
     
     inline def setMetrics(value: js.Array[String]): Self = StObject.set(x, "metrics", value.asInstanceOf[js.Any])
     

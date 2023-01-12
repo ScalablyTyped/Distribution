@@ -90,7 +90,8 @@ object libComponentsMenuMod {
         __obj.asInstanceOf[typings.jupyterlabUiComponents.libComponentsMenuMod.IRankedMenu.IItemOptions]
       }
       
-      extension [Self <: typings.jupyterlabUiComponents.libComponentsMenuMod.IRankedMenu.IItemOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.jupyterlabUiComponents.libComponentsMenuMod.IRankedMenu.IItemOptions] (val x: Self) extends AnyVal {
         
         inline def setRank(value: Double): Self = StObject.set(x, "rank", value.asInstanceOf[js.Any])
         
@@ -125,7 +126,8 @@ object libComponentsMenuMod {
         __obj.asInstanceOf[IOptions]
       }
       
-      extension [Self <: IOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
         
         inline def setIncludeSeparators(value: Boolean): Self = StObject.set(x, "includeSeparators", value.asInstanceOf[js.Any])
         

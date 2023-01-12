@@ -157,7 +157,8 @@ object CoreOptions {
     __obj.asInstanceOf[CoreOptions]
   }
   
-  extension [Self <: CoreOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CoreOptions] (val x: Self) extends AnyVal {
     
     inline def setAutoUpload(value: Boolean): Self = StObject.set(x, "autoUpload", value.asInstanceOf[js.Any])
     

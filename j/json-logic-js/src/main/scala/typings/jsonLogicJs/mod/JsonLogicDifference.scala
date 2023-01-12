@@ -20,7 +20,8 @@ object JsonLogicDifference {
     __obj.asInstanceOf[JsonLogicDifference[AddOps]]
   }
   
-  extension [Self <: JsonLogicDifference[?], AddOps /* <: AdditionalOperation */](x: Self & JsonLogicDifference[AddOps]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JsonLogicDifference[?], AddOps /* <: AdditionalOperation */] (val x: Self & JsonLogicDifference[AddOps]) extends AnyVal {
     
     inline def set_dash(value: js.Array[RulesLogic[AddOps]] | RulesLogic[AddOps]): Self = StObject.set(x, "-", value.asInstanceOf[js.Any])
     

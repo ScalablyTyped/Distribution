@@ -146,7 +146,8 @@ object HistoryEvent {
     __obj.asInstanceOf[HistoryEvent]
   }
   
-  extension [Self <: HistoryEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HistoryEvent] (val x: Self) extends AnyVal {
     
     inline def setActivityFailedEventDetails(value: ActivityFailedEventDetails): Self = StObject.set(x, "activityFailedEventDetails", value.asInstanceOf[js.Any])
     

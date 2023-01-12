@@ -46,7 +46,8 @@ object distTypesCellsSvgMod {
       __obj.asInstanceOf[CellsSvgProps[RawDatum]]
     }
     
-    extension [Self <: CellsSvgProps[?], RawDatum /* <: Datum */](x: Self & CellsSvgProps[RawDatum]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CellsSvgProps[?], RawDatum /* <: Datum */] (val x: Self & CellsSvgProps[RawDatum]) extends AnyVal {
       
       inline def setBorderWidth(value: Double): Self = StObject.set(x, "borderWidth", value.asInstanceOf[js.Any])
       

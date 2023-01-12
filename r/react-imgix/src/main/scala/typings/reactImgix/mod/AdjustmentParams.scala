@@ -39,7 +39,8 @@ object AdjustmentParams {
     __obj.asInstanceOf[AdjustmentParams]
   }
   
-  extension [Self <: AdjustmentParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AdjustmentParams] (val x: Self) extends AnyVal {
     
     inline def setBri(value: ImgixParamType): Self = StObject.set(x, "bri", value.asInstanceOf[js.Any])
     

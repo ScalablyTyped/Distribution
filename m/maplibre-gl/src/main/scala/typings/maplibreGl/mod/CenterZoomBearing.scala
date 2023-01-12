@@ -19,7 +19,8 @@ object CenterZoomBearing {
     __obj.asInstanceOf[CenterZoomBearing]
   }
   
-  extension [Self <: CenterZoomBearing](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CenterZoomBearing] (val x: Self) extends AnyVal {
     
     inline def setBearing(value: Double): Self = StObject.set(x, "bearing", value.asInstanceOf[js.Any])
     

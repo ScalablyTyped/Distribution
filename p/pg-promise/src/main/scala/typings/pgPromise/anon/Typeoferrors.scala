@@ -39,7 +39,8 @@ object Typeoferrors {
     __obj.asInstanceOf[Typeoferrors]
   }
   
-  extension [Self <: Typeoferrors](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Typeoferrors] (val x: Self) extends AnyVal {
     
     inline def setParameterizedQueryError(value: Instantiable0[ParameterizedQueryError]): Self = StObject.set(x, "ParameterizedQueryError", value.asInstanceOf[js.Any])
     

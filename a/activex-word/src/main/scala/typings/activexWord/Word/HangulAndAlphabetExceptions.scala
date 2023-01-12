@@ -37,7 +37,8 @@ object HangulAndAlphabetExceptions {
     __obj.asInstanceOf[HangulAndAlphabetExceptions]
   }
   
-  extension [Self <: HangulAndAlphabetExceptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HangulAndAlphabetExceptions] (val x: Self) extends AnyVal {
     
     inline def setAdd(value: String => HangulAndAlphabetException): Self = StObject.set(x, "Add", js.Any.fromFunction1(value))
     

@@ -19,7 +19,8 @@ object ListEnrollmentTokensResponse {
     __obj.asInstanceOf[ListEnrollmentTokensResponse]
   }
   
-  extension [Self <: ListEnrollmentTokensResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListEnrollmentTokensResponse] (val x: Self) extends AnyVal {
     
     inline def setEnrollmentTokens(value: js.Array[EnrollmentToken]): Self = StObject.set(x, "enrollmentTokens", value.asInstanceOf[js.Any])
     

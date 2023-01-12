@@ -23,7 +23,8 @@ object TaskExecutionListEntry {
     __obj.asInstanceOf[TaskExecutionListEntry]
   }
   
-  extension [Self <: TaskExecutionListEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TaskExecutionListEntry] (val x: Self) extends AnyVal {
     
     inline def setStatus(value: TaskExecutionStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     

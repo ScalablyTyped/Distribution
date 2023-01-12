@@ -369,7 +369,8 @@ object optionsArrayCascaderOptioActiveIcon {
     __obj.asInstanceOf[optionsArrayCascaderOptioActiveIcon]
   }
   
-  extension [Self <: optionsArrayCascaderOptioActiveIcon](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: optionsArrayCascaderOptioActiveIcon] (val x: Self) extends AnyVal {
     
     inline def setActiveIcon(value: ReactNode): Self = StObject.set(x, "activeIcon", value.asInstanceOf[js.Any])
     

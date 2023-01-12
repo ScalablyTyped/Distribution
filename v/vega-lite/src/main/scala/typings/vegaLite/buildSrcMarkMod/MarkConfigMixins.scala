@@ -60,7 +60,8 @@ object MarkConfigMixins {
     __obj.asInstanceOf[MarkConfigMixins[ES]]
   }
   
-  extension [Self <: MarkConfigMixins[?], ES /* <: ExprRef | SignalRef */](x: Self & MarkConfigMixins[ES]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MarkConfigMixins[?], ES /* <: ExprRef | SignalRef */] (val x: Self & MarkConfigMixins[ES]) extends AnyVal {
     
     inline def setArc(value: RectConfig[ES]): Self = StObject.set(x, "arc", value.asInstanceOf[js.Any])
     

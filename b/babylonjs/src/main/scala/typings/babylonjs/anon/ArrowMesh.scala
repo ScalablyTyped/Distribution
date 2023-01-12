@@ -17,7 +17,8 @@ object ArrowMesh {
     __obj.asInstanceOf[ArrowMesh]
   }
   
-  extension [Self <: ArrowMesh](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ArrowMesh] (val x: Self) extends AnyVal {
     
     inline def setArrowMesh(value: typings.babylonjs.meshesMeshMod.Mesh): Self = StObject.set(x, "arrowMesh", value.asInstanceOf[js.Any])
     

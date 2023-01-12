@@ -26,7 +26,8 @@ object QueryEvidenceEntity {
     __obj.asInstanceOf[QueryEvidenceEntity]
   }
   
-  extension [Self <: QueryEvidenceEntity](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryEvidenceEntity] (val x: Self) extends AnyVal {
     
     inline def setEnd_offset(value: Double): Self = StObject.set(x, "end_offset", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object jsf {
         __obj.asInstanceOf[RequestData]
       }
       
-      extension [Self <: RequestData](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: RequestData] (val x: Self) extends AnyVal {
         
         inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
         
@@ -71,7 +72,8 @@ object jsf {
         __obj.asInstanceOf[RequestOptions]
       }
       
-      extension [Self <: RequestOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: RequestOptions] (val x: Self) extends AnyVal {
         
         inline def setExecute(value: String): Self = StObject.set(x, "execute", value.asInstanceOf[js.Any])
         

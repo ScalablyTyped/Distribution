@@ -62,7 +62,8 @@ object mod {
       __obj.asInstanceOf[StrategyOption]
     }
     
-    extension [Self <: StrategyOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StrategyOption] (val x: Self) extends AnyVal {
       
       inline def setCookie(value: CookieOptions): Self = StObject.set(x, "cookie", value.asInstanceOf[js.Any])
       

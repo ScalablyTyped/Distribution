@@ -15,7 +15,8 @@ object Where {
     __obj.asInstanceOf[Where]
   }
   
-  extension [Self <: Where](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Where] (val x: Self) extends AnyVal {
     
     inline def setWhere(value: Any): Self = StObject.set(x, "where", value.asInstanceOf[js.Any])
   }

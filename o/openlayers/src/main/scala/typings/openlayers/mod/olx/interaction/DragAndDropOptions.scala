@@ -26,7 +26,8 @@ object DragAndDropOptions {
     __obj.asInstanceOf[DragAndDropOptions]
   }
   
-  extension [Self <: DragAndDropOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DragAndDropOptions] (val x: Self) extends AnyVal {
     
     inline def setFormatConstructors(value: js.Array[Instantiable0[Feature]]): Self = StObject.set(x, "formatConstructors", value.asInstanceOf[js.Any])
     

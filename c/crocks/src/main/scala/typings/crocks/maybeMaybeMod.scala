@@ -125,7 +125,8 @@ object maybeMaybeMod {
       __obj.asInstanceOf[Maybe]
     }
     
-    extension [Self <: Maybe](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Maybe] (val x: Self) extends AnyVal {
       
       inline def setAlt(value: Maybe => Maybe): Self = StObject.set(x, "alt", js.Any.fromFunction1(value))
       

@@ -17,7 +17,8 @@ object BusyIndicator {
     __obj.asInstanceOf[BusyIndicator]
   }
   
-  extension [Self <: BusyIndicator](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BusyIndicator] (val x: Self) extends AnyVal {
     
     inline def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
     

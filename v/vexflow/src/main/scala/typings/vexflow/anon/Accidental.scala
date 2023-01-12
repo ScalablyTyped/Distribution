@@ -41,7 +41,8 @@ object Accidental {
     __obj.asInstanceOf[Accidental]
   }
   
-  extension [Self <: Accidental](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Accidental] (val x: Self) extends AnyVal {
     
     inline def setAccidental(value: String): Self = StObject.set(x, "accidental", value.asInstanceOf[js.Any])
     

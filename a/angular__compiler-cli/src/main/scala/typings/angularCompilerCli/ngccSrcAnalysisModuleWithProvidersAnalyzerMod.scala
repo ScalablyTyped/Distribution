@@ -110,7 +110,8 @@ object ngccSrcAnalysisModuleWithProvidersAnalyzerMod {
       __obj.asInstanceOf[ModuleWithProvidersInfo]
     }
     
-    extension [Self <: ModuleWithProvidersInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ModuleWithProvidersInfo] (val x: Self) extends AnyVal {
       
       inline def setContainer(value: DeclarationNode): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
       

@@ -39,7 +39,8 @@ object mod {
       __obj.asInstanceOf[GetMoonIlluminationResult]
     }
     
-    extension [Self <: GetMoonIlluminationResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetMoonIlluminationResult] (val x: Self) extends AnyVal {
       
       inline def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
       
@@ -66,7 +67,8 @@ object mod {
       __obj.asInstanceOf[GetMoonPositionResult]
     }
     
-    extension [Self <: GetMoonPositionResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetMoonPositionResult] (val x: Self) extends AnyVal {
       
       inline def setAltitude(value: Double): Self = StObject.set(x, "altitude", value.asInstanceOf[js.Any])
       
@@ -95,7 +97,8 @@ object mod {
       __obj.asInstanceOf[GetMoonTimes_]
     }
     
-    extension [Self <: GetMoonTimes_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetMoonTimes_] (val x: Self) extends AnyVal {
       
       inline def setAlwaysDown(value: `true`): Self = StObject.set(x, "alwaysDown", value.asInstanceOf[js.Any])
       
@@ -124,7 +127,8 @@ object mod {
       __obj.asInstanceOf[GetSunPositionResult]
     }
     
-    extension [Self <: GetSunPositionResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetSunPositionResult] (val x: Self) extends AnyVal {
       
       inline def setAltitude(value: Double): Self = StObject.set(x, "altitude", value.asInstanceOf[js.Any])
       
@@ -184,7 +188,8 @@ object mod {
       __obj.asInstanceOf[GetTimesResult]
     }
     
-    extension [Self <: GetTimesResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetTimesResult] (val x: Self) extends AnyVal {
       
       inline def setDawn(value: js.Date): Self = StObject.set(x, "dawn", value.asInstanceOf[js.Any])
       

@@ -15,7 +15,8 @@ object AnnotationsPitchforkControlPointOptions {
     __obj.asInstanceOf[AnnotationsPitchforkControlPointOptions]
   }
   
-  extension [Self <: AnnotationsPitchforkControlPointOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnnotationsPitchforkControlPointOptions] (val x: Self) extends AnyVal {
     
     inline def setEvents(value: Any): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     

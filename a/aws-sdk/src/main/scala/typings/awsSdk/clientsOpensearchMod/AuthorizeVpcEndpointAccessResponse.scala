@@ -18,7 +18,8 @@ object AuthorizeVpcEndpointAccessResponse {
     __obj.asInstanceOf[AuthorizeVpcEndpointAccessResponse]
   }
   
-  extension [Self <: AuthorizeVpcEndpointAccessResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AuthorizeVpcEndpointAccessResponse] (val x: Self) extends AnyVal {
     
     inline def setAuthorizedPrincipal(value: AuthorizedPrincipal): Self = StObject.set(x, "AuthorizedPrincipal", value.asInstanceOf[js.Any])
   }

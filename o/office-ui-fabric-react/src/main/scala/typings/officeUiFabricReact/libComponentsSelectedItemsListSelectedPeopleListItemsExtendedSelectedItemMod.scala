@@ -31,7 +31,8 @@ object libComponentsSelectedItemsListSelectedPeopleListItemsExtendedSelectedItem
       __obj.asInstanceOf[IPeoplePickerItemState]
     }
     
-    extension [Self <: IPeoplePickerItemState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPeoplePickerItemState] (val x: Self) extends AnyVal {
       
       inline def setContextualMenuVisible(value: Boolean): Self = StObject.set(x, "contextualMenuVisible", value.asInstanceOf[js.Any])
     }

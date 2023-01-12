@@ -17,7 +17,8 @@ object JSONFormatterOptions {
     __obj.asInstanceOf[JSONFormatterOptions]
   }
   
-  extension [Self <: JSONFormatterOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JSONFormatterOptions] (val x: Self) extends AnyVal {
     
     inline def setChange(value: () => Unit): Self = StObject.set(x, "change", js.Any.fromFunction0(value))
     

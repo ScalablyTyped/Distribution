@@ -32,7 +32,8 @@ object ISharedFileInfo {
     __obj.asInstanceOf[ISharedFileInfo]
   }
   
-  extension [Self <: ISharedFileInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISharedFileInfo] (val x: Self) extends AnyVal {
     
     inline def setChangeTimeUtc(value: js.Date): Self = StObject.set(x, "ChangeTimeUtc", value.asInstanceOf[js.Any])
     

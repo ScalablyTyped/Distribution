@@ -44,7 +44,8 @@ object DragItem {
   @js.native
   val ^ : DragItem = js.native
   
-  extension [Self <: DragItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DragItem] (val x: Self) extends AnyVal {
     
     inline def set$drag(value: (HTMLElement, Event, String) => String): Self = StObject.set(x, "$drag", js.Any.fromFunction3(value))
     

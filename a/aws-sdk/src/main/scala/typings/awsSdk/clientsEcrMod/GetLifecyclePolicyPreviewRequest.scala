@@ -43,7 +43,8 @@ object GetLifecyclePolicyPreviewRequest {
     __obj.asInstanceOf[GetLifecyclePolicyPreviewRequest]
   }
   
-  extension [Self <: GetLifecyclePolicyPreviewRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetLifecyclePolicyPreviewRequest] (val x: Self) extends AnyVal {
     
     inline def setFilter(value: LifecyclePolicyPreviewFilter): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     

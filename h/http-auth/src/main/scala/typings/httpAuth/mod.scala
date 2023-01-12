@@ -131,7 +131,8 @@ object mod {
       __obj.asInstanceOf[BasicOptions]
     }
     
-    extension [Self <: BasicOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BasicOptions] (val x: Self) extends AnyVal {
       
       inline def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
       
@@ -176,7 +177,8 @@ object mod {
       __obj.asInstanceOf[BasicResult[T]]
     }
     
-    extension [Self <: BasicResult[?], T /* <: Boolean */](x: Self & BasicResult[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BasicResult[?], T /* <: Boolean */] (val x: Self & BasicResult[T]) extends AnyVal {
       
       inline def setPass(value: T): Self = StObject.set(x, "pass", value.asInstanceOf[js.Any])
       
@@ -230,7 +232,8 @@ object mod {
       __obj.asInstanceOf[ClientOptions]
     }
     
-    extension [Self <: ClientOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClientOptions] (val x: Self) extends AnyVal {
       
       inline def setAlgorithm(value: Algorithm): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
       
@@ -290,7 +293,8 @@ object mod {
       __obj.asInstanceOf[DigestOptions]
     }
     
-    extension [Self <: DigestOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DigestOptions] (val x: Self) extends AnyVal {
       
       inline def setAlgorithm(value: Algorithm): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
       
@@ -315,7 +319,8 @@ object mod {
       __obj.asInstanceOf[DigestResult[T]]
     }
     
-    extension [Self <: DigestResult[?], T /* <: Boolean */](x: Self & DigestResult[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DigestResult[?], T /* <: Boolean */] (val x: Self & DigestResult[T]) extends AnyVal {
       
       inline def setStale(value: `true`): Self = StObject.set(x, "stale", value.asInstanceOf[js.Any])
       

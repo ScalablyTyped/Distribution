@@ -28,7 +28,8 @@ object GetIntrospectionSchemaRequest {
     __obj.asInstanceOf[GetIntrospectionSchemaRequest]
   }
   
-  extension [Self <: GetIntrospectionSchemaRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetIntrospectionSchemaRequest] (val x: Self) extends AnyVal {
     
     inline def setApiId(value: String): Self = StObject.set(x, "apiId", value.asInstanceOf[js.Any])
     

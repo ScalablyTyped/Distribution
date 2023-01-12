@@ -25,7 +25,8 @@ object MedicationKnowledgePackaging {
     __obj.asInstanceOf[MedicationKnowledgePackaging]
   }
   
-  extension [Self <: MedicationKnowledgePackaging](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MedicationKnowledgePackaging] (val x: Self) extends AnyVal {
     
     inline def setCost(value: js.Array[MedicationKnowledgeCost]): Self = StObject.set(x, "cost", value.asInstanceOf[js.Any])
     

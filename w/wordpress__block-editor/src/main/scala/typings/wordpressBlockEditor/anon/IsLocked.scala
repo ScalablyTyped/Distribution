@@ -17,7 +17,8 @@ object IsLocked {
     __obj.asInstanceOf[IsLocked]
   }
   
-  extension [Self <: IsLocked](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IsLocked] (val x: Self) extends AnyVal {
     
     inline def setIsLocked(value: Boolean): Self = StObject.set(x, "isLocked", value.asInstanceOf[js.Any])
     

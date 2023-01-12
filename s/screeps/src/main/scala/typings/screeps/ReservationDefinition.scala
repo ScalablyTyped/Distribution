@@ -17,7 +17,8 @@ object ReservationDefinition {
     __obj.asInstanceOf[ReservationDefinition]
   }
   
-  extension [Self <: ReservationDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReservationDefinition] (val x: Self) extends AnyVal {
     
     inline def setTicksToEnd(value: Double): Self = StObject.set(x, "ticksToEnd", value.asInstanceOf[js.Any])
     

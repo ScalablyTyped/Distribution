@@ -18,7 +18,8 @@ object anon {
       __obj.asInstanceOf[`0`]
     }
     
-    extension [Self <: `0`](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: `0`] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: js.Array[BaseNode]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -39,7 +40,8 @@ object anon {
       __obj.asInstanceOf[`1`]
     }
     
-    extension [Self <: `1`](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: `1`] (val x: Self) extends AnyVal {
       
       inline def setChild(value: BaseNode): Self = StObject.set(x, "child", value.asInstanceOf[js.Any])
       
@@ -66,7 +68,8 @@ object anon {
       __obj.asInstanceOf[Category]
     }
     
-    extension [Self <: Category](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Category] (val x: Self) extends AnyVal {
       
       inline def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
       
@@ -107,7 +110,8 @@ object anon {
       __obj.asInstanceOf[Child]
     }
     
-    extension [Self <: Child](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Child] (val x: Self) extends AnyVal {
       
       inline def setChild(value: BaseNode): Self = StObject.set(x, "child", value.asInstanceOf[js.Any])
       
@@ -140,7 +144,8 @@ object anon {
       __obj.asInstanceOf[ChildMaxLoop]
     }
     
-    extension [Self <: ChildMaxLoop](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChildMaxLoop] (val x: Self) extends AnyVal {
       
       inline def setChild(value: BaseNode): Self = StObject.set(x, "child", value.asInstanceOf[js.Any])
       
@@ -169,7 +174,8 @@ object anon {
       __obj.asInstanceOf[Children]
     }
     
-    extension [Self <: Children](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Children] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: js.Array[BaseNode]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -204,7 +210,8 @@ object anon {
       __obj.asInstanceOf[MaxLoop]
     }
     
-    extension [Self <: MaxLoop](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MaxLoop] (val x: Self) extends AnyVal {
       
       inline def setChild(value: BaseNode): Self = StObject.set(x, "child", value.asInstanceOf[js.Any])
       
@@ -229,7 +236,8 @@ object anon {
       __obj.asInstanceOf[MaxTime]
     }
     
-    extension [Self <: MaxTime](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MaxTime] (val x: Self) extends AnyVal {
       
       inline def setChild(value: BaseNode): Self = StObject.set(x, "child", value.asInstanceOf[js.Any])
       
@@ -252,7 +260,8 @@ object anon {
       __obj.asInstanceOf[Milliseconds]
     }
     
-    extension [Self <: Milliseconds](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Milliseconds] (val x: Self) extends AnyVal {
       
       inline def setMilliseconds(value: Double): Self = StObject.set(x, "milliseconds", value.asInstanceOf[js.Any])
       
@@ -275,7 +284,8 @@ object anon {
       __obj.asInstanceOf[Name]
     }
     
-    extension [Self <: Name](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Name] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       

@@ -28,7 +28,8 @@ object SavingsTradeErrorResponse {
     __obj.asInstanceOf[SavingsTradeErrorResponse]
   }
   
-  extension [Self <: SavingsTradeErrorResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SavingsTradeErrorResponse] (val x: Self) extends AnyVal {
     
     inline def setCode(
       value: AppIDRequired | ExchangeNotFound | SavingsTradeCountryRequired | SavingsTransactionNotFound | SavingsTransactionExists | GetUserInfoFailed | FlowStepDisabled | UnknownStatus

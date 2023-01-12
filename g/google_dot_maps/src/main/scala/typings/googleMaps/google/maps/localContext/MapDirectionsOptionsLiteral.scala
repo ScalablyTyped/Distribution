@@ -28,7 +28,8 @@ object MapDirectionsOptionsLiteral {
     __obj.asInstanceOf[MapDirectionsOptionsLiteral]
   }
   
-  extension [Self <: MapDirectionsOptionsLiteral](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MapDirectionsOptionsLiteral] (val x: Self) extends AnyVal {
     
     inline def setOrigin(value: LatLng | LatLngLiteral): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
   }

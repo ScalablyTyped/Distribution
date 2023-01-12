@@ -307,7 +307,8 @@ object libFromIOMod {
       __obj.asInstanceOf[FromIO[F]]
     }
     
-    extension [Self <: FromIO[?], F](x: Self & FromIO[F]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FromIO[?], F] (val x: Self & FromIO[F]) extends AnyVal {
       
       inline def setFromIO(value: IO_[Any] => Any): Self = StObject.set(x, "fromIO", js.Any.fromFunction1(value))
       
@@ -328,7 +329,8 @@ object libFromIOMod {
       __obj.asInstanceOf[FromIO1[F]]
     }
     
-    extension [Self <: FromIO1[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ Any */](x: Self & FromIO1[F]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FromIO1[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ Any */] (val x: Self & FromIO1[F]) extends AnyVal {
       
       inline def setFromIO(value: IO_[Any] => Any): Self = StObject.set(x, "fromIO", js.Any.fromFunction1(value))
       
@@ -349,7 +351,8 @@ object libFromIOMod {
       __obj.asInstanceOf[FromIO2[F]]
     }
     
-    extension [Self <: FromIO2[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */](x: Self & FromIO2[F]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FromIO2[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */] (val x: Self & FromIO2[F]) extends AnyVal {
       
       inline def setFromIO(value: IO_[Any] => Any): Self = StObject.set(x, "fromIO", js.Any.fromFunction1(value))
       
@@ -372,7 +375,8 @@ object libFromIOMod {
       __obj.asInstanceOf[FromIO2C[F, E]]
     }
     
-    extension [Self <: FromIO2C[?, ?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */, E](x: Self & (FromIO2C[F, E])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FromIO2C[?, ?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */, E] (val x: Self & (FromIO2C[F, E])) extends AnyVal {
       
       inline def setFromIO(value: IO_[Any] => Any): Self = StObject.set(x, "fromIO", js.Any.fromFunction1(value))
       
@@ -395,7 +399,8 @@ object libFromIOMod {
       __obj.asInstanceOf[FromIO3[F]]
     }
     
-    extension [Self <: FromIO3[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */](x: Self & FromIO3[F]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FromIO3[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */] (val x: Self & FromIO3[F]) extends AnyVal {
       
       inline def setFromIO(value: IO_[Any] => Any): Self = StObject.set(x, "fromIO", js.Any.fromFunction1(value))
       
@@ -418,7 +423,8 @@ object libFromIOMod {
       __obj.asInstanceOf[FromIO3C[F, E]]
     }
     
-    extension [Self <: FromIO3C[?, ?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */, E](x: Self & (FromIO3C[F, E])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FromIO3C[?, ?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */, E] (val x: Self & (FromIO3C[F, E])) extends AnyVal {
       
       inline def setFromIO(value: IO_[Any] => Any): Self = StObject.set(x, "fromIO", js.Any.fromFunction1(value))
       
@@ -441,7 +447,8 @@ object libFromIOMod {
       __obj.asInstanceOf[FromIO4[F]]
     }
     
-    extension [Self <: FromIO4[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS4 */ Any */](x: Self & FromIO4[F]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FromIO4[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS4 */ Any */] (val x: Self & FromIO4[F]) extends AnyVal {
       
       inline def setFromIO(value: IO_[Any] => Any): Self = StObject.set(x, "fromIO", js.Any.fromFunction1(value))
       

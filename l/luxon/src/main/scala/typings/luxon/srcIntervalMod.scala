@@ -353,7 +353,8 @@ object srcIntervalMod {
       __obj.asInstanceOf[IntervalObject]
     }
     
-    extension [Self <: IntervalObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IntervalObject] (val x: Self) extends AnyVal {
       
       inline def setEnd(value: DateTime): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       

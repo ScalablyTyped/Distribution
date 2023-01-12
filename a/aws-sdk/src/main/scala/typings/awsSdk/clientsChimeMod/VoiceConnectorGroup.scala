@@ -43,7 +43,8 @@ object VoiceConnectorGroup {
     __obj.asInstanceOf[VoiceConnectorGroup]
   }
   
-  extension [Self <: VoiceConnectorGroup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VoiceConnectorGroup] (val x: Self) extends AnyVal {
     
     inline def setCreatedTimestamp(value: js.Date): Self = StObject.set(x, "CreatedTimestamp", value.asInstanceOf[js.Any])
     

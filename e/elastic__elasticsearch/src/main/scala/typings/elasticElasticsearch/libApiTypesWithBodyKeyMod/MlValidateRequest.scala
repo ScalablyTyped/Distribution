@@ -19,7 +19,8 @@ object MlValidateRequest {
     __obj.asInstanceOf[MlValidateRequest]
   }
   
-  extension [Self <: MlValidateRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlValidateRequest] (val x: Self) extends AnyVal {
     
     inline def setBody(value: Datadescription): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

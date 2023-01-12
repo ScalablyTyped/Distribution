@@ -46,7 +46,8 @@ object ProfileNode {
     __obj.asInstanceOf[ProfileNode]
   }
   
-  extension [Self <: ProfileNode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProfileNode] (val x: Self) extends AnyVal {
     
     inline def setCallFrame(value: CallFrame): Self = StObject.set(x, "callFrame", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object BaseGroupDescriptor {
     __obj.asInstanceOf[BaseGroupDescriptor[T]]
   }
   
-  extension [Self <: BaseGroupDescriptor[?], T](x: Self & BaseGroupDescriptor[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BaseGroupDescriptor[?], T] (val x: Self & BaseGroupDescriptor[T]) extends AnyVal {
     
     inline def setSelector(value: KeySelector[T]): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
     

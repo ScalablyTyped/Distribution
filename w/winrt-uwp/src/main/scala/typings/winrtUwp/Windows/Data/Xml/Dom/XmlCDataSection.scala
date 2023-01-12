@@ -226,7 +226,8 @@ object XmlCDataSection {
     __obj.asInstanceOf[XmlCDataSection]
   }
   
-  extension [Self <: XmlCDataSection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XmlCDataSection] (val x: Self) extends AnyVal {
     
     inline def setAppendChild(value: IXmlNode => IXmlNode): Self = StObject.set(x, "appendChild", js.Any.fromFunction1(value))
     

@@ -153,7 +153,8 @@ object libEsmTableBodyMod {
       __obj.asInstanceOf[ITableBodyProps]
     }
     
-    extension [Self <: ITableBodyProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITableBodyProps] (val x: Self) extends AnyVal {
       
       inline def setBodyContextMenuRenderer(value: /* context */ IMenuContext => Element): Self = StObject.set(x, "bodyContextMenuRenderer", js.Any.fromFunction1(value))
       

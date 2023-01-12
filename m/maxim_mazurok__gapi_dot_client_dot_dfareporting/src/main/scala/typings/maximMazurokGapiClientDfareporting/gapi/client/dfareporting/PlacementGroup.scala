@@ -104,7 +104,8 @@ object PlacementGroup {
     __obj.asInstanceOf[PlacementGroup]
   }
   
-  extension [Self <: PlacementGroup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlacementGroup] (val x: Self) extends AnyVal {
     
     inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     

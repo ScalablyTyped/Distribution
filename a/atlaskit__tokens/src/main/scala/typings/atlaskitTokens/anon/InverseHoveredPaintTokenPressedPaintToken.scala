@@ -15,7 +15,8 @@ object InverseHoveredPaintTokenPressedPaintToken {
     __obj.asInstanceOf[InverseHoveredPaintTokenPressedPaintToken]
   }
   
-  extension [Self <: InverseHoveredPaintTokenPressedPaintToken](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InverseHoveredPaintTokenPressedPaintToken] (val x: Self) extends AnyVal {
     
     inline def setInverse(value: HoveredPaintTokenPressedPaintToken): Self = StObject.set(x, "inverse", value.asInstanceOf[js.Any])
   }

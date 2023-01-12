@@ -67,7 +67,8 @@ object mod {
       __obj.asInstanceOf[DebounceOptions]
     }
     
-    extension [Self <: DebounceOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DebounceOptions] (val x: Self) extends AnyVal {
       
       inline def setAccumulate(value: Boolean): Self = StObject.set(x, "accumulate", value.asInstanceOf[js.Any])
       

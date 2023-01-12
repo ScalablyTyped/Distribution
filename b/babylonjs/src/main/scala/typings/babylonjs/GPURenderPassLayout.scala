@@ -21,7 +21,8 @@ object GPURenderPassLayout {
     __obj.asInstanceOf[GPURenderPassLayout]
   }
   
-  extension [Self <: GPURenderPassLayout](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GPURenderPassLayout] (val x: Self) extends AnyVal {
     
     inline def setColorFormats(value: js.Array[GPUTextureFormat | Null]): Self = StObject.set(x, "colorFormats", value.asInstanceOf[js.Any])
     

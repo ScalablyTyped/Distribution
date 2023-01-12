@@ -19,7 +19,8 @@ object ProcessSignature {
     __obj.asInstanceOf[ProcessSignature]
   }
   
-  extension [Self <: ProcessSignature](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProcessSignature] (val x: Self) extends AnyVal {
     
     inline def setMemoryHashSignature(value: MemoryHashSignature): Self = StObject.set(x, "memoryHashSignature", value.asInstanceOf[js.Any])
     

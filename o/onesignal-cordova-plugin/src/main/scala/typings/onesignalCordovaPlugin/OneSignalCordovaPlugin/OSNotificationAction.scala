@@ -20,7 +20,8 @@ object OSNotificationAction {
     __obj.asInstanceOf[OSNotificationAction]
   }
   
-  extension [Self <: OSNotificationAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OSNotificationAction] (val x: Self) extends AnyVal {
     
     inline def setActionID(value: String): Self = StObject.set(x, "actionID", value.asInstanceOf[js.Any])
     

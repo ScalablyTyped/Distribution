@@ -20,7 +20,8 @@ object QueryFilterType {
     __obj.asInstanceOf[QueryFilterType]
   }
   
-  extension [Self <: QueryFilterType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryFilterType] (val x: Self) extends AnyVal {
     
     inline def setExclude(value: js.Array[String]): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
     

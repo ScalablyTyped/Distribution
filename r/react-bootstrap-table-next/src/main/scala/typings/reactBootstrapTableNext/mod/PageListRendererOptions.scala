@@ -24,7 +24,8 @@ object PageListRendererOptions {
     __obj.asInstanceOf[PageListRendererOptions]
   }
   
-  extension [Self <: PageListRendererOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PageListRendererOptions] (val x: Self) extends AnyVal {
     
     inline def setOnPageChange(value: (Double, Double) => Unit): Self = StObject.set(x, "onPageChange", js.Any.fromFunction2(value))
     

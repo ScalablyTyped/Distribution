@@ -42,7 +42,8 @@ object PrimitiveOverride {
     __obj.asInstanceOf[PrimitiveOverride]
   }
   
-  extension [Self <: PrimitiveOverride](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PrimitiveOverride] (val x: Self) extends AnyVal {
     
     inline def setPrimitiveName(value: String): Self = StObject.set(x, "primitiveName", value.asInstanceOf[js.Any])
     

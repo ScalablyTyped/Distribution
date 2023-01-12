@@ -22,7 +22,8 @@ object anon {
       __obj.asInstanceOf[Children[T, C]]
     }
     
-    extension [Self <: Children[?, ?], T /* <: String */, C /* <: js.Array[Node[Data]] */](x: Self & (Children[T, C])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Children[?, ?], T /* <: String */, C /* <: js.Array[Node[Data]] */] (val x: Self & (Children[T, C])) extends AnyVal {
       
       inline def setChildren(value: C): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -44,7 +45,8 @@ object anon {
       __obj.asInstanceOf[Type[T]]
     }
     
-    extension [Self <: Type[?], T /* <: String */](x: Self & Type[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Type[?], T /* <: String */] (val x: Self & Type[T]) extends AnyVal {
       
       inline def setType(value: T): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
@@ -64,7 +66,8 @@ object anon {
       __obj.asInstanceOf[TypeT[T]]
     }
     
-    extension [Self <: TypeT[?], T /* <: String */](x: Self & TypeT[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypeT[?], T /* <: String */] (val x: Self & TypeT[T]) extends AnyVal {
       
       inline def setType(value: T): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }

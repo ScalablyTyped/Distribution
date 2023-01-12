@@ -23,7 +23,8 @@ object VisualReferenceInput {
     __obj.asInstanceOf[VisualReferenceInput]
   }
   
-  extension [Self <: VisualReferenceInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VisualReferenceInput] (val x: Self) extends AnyVal {
     
     inline def setBaseCanaryRunId(value: String): Self = StObject.set(x, "BaseCanaryRunId", value.asInstanceOf[js.Any])
     

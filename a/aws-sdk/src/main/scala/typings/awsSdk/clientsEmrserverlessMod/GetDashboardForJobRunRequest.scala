@@ -23,7 +23,8 @@ object GetDashboardForJobRunRequest {
     __obj.asInstanceOf[GetDashboardForJobRunRequest]
   }
   
-  extension [Self <: GetDashboardForJobRunRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetDashboardForJobRunRequest] (val x: Self) extends AnyVal {
     
     inline def setApplicationId(value: ApplicationId): Self = StObject.set(x, "applicationId", value.asInstanceOf[js.Any])
     

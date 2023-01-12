@@ -28,7 +28,8 @@ object DataProviderExceptionDetails {
     __obj.asInstanceOf[DataProviderExceptionDetails]
   }
   
-  extension [Self <: DataProviderExceptionDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataProviderExceptionDetails] (val x: Self) extends AnyVal {
     
     inline def setExceptionType(value: String): Self = StObject.set(x, "exceptionType", value.asInstanceOf[js.Any])
     

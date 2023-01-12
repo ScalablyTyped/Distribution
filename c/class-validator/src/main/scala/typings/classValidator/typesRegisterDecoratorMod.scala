@@ -58,7 +58,8 @@ object typesRegisterDecoratorMod {
       __obj.asInstanceOf[ValidationDecoratorOptions]
     }
     
-    extension [Self <: ValidationDecoratorOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ValidationDecoratorOptions] (val x: Self) extends AnyVal {
       
       inline def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
       

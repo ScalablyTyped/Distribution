@@ -270,7 +270,8 @@ object sapUiLayoutBlockLayoutCellDataMod {
       __obj.asInstanceOf[BlockLayoutCellDataSettings]
     }
     
-    extension [Self <: BlockLayoutCellDataSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BlockLayoutCellDataSettings] (val x: Self) extends AnyVal {
       
       inline def setLSize(value: int | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "lSize", value.asInstanceOf[js.Any])
       

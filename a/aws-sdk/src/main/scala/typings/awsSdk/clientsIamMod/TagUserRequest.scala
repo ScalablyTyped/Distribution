@@ -23,7 +23,8 @@ object TagUserRequest {
     __obj.asInstanceOf[TagUserRequest]
   }
   
-  extension [Self <: TagUserRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TagUserRequest] (val x: Self) extends AnyVal {
     
     inline def setTags(value: tagListType): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     

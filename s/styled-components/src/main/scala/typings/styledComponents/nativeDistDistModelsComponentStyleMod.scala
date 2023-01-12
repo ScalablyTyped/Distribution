@@ -73,7 +73,8 @@ object nativeDistDistModelsComponentStyleMod {
       __obj.asInstanceOf[ComponentStyle]
     }
     
-    extension [Self <: ComponentStyle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ComponentStyle] (val x: Self) extends AnyVal {
       
       inline def setBaseHash(value: Double): Self = StObject.set(x, "baseHash", value.asInstanceOf[js.Any])
       

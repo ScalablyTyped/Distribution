@@ -29,7 +29,8 @@ object ModalViewOptions {
     __obj.asInstanceOf[ModalViewOptions]
   }
   
-  extension [Self <: ModalViewOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModalViewOptions] (val x: Self) extends AnyVal {
     
     inline def setBeforeOpen(value: /* e */ ModalViewBeforeOpenEvent => Unit): Self = StObject.set(x, "beforeOpen", js.Any.fromFunction1(value))
     

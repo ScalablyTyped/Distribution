@@ -27,7 +27,8 @@ object distDeclarationsSrcAnimatedStyleMod {
       __obj.asInstanceOf[Style]
     }
     
-    extension [Self <: Style](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Style] (val x: Self) extends AnyVal {
       
       inline def setTransform(value: Any): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
       

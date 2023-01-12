@@ -25,7 +25,8 @@ object ListReviewableHITsResponse {
     __obj.asInstanceOf[ListReviewableHITsResponse]
   }
   
-  extension [Self <: ListReviewableHITsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListReviewableHITsResponse] (val x: Self) extends AnyVal {
     
     inline def setHITs(value: HITList): Self = StObject.set(x, "HITs", value.asInstanceOf[js.Any])
     

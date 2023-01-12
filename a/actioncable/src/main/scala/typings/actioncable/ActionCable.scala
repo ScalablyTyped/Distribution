@@ -33,7 +33,8 @@ object ActionCable {
       __obj.asInstanceOf[Cable]
     }
     
-    extension [Self <: Cable](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Cable] (val x: Self) extends AnyVal {
       
       inline def setConnect(value: () => Unit): Self = StObject.set(x, "connect", js.Any.fromFunction0(value))
       
@@ -62,7 +63,8 @@ object ActionCable {
       __obj.asInstanceOf[Channel]
     }
     
-    extension [Self <: Channel](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Channel] (val x: Self) extends AnyVal {
       
       inline def setPerform(value: (String, js.Object) => Unit): Self = StObject.set(x, "perform", js.Any.fromFunction2(value))
       
@@ -85,7 +87,8 @@ object ActionCable {
       __obj.asInstanceOf[ChannelNameWithParams]
     }
     
-    extension [Self <: ChannelNameWithParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChannelNameWithParams] (val x: Self) extends AnyVal {
       
       inline def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
     }
@@ -108,7 +111,8 @@ object ActionCable {
       __obj.asInstanceOf[CreateMixin]
     }
     
-    extension [Self <: CreateMixin](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateMixin] (val x: Self) extends AnyVal {
       
       inline def setConnected(value: () => Unit): Self = StObject.set(x, "connected", js.Any.fromFunction0(value))
       

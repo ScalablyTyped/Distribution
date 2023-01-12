@@ -38,7 +38,8 @@ object anon {
       __obj.asInstanceOf[Author]
     }
     
-    extension [Self <: Author](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Author] (val x: Self) extends AnyVal {
       
       inline def setAuthor(value: Name): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
       
@@ -75,7 +76,8 @@ object anon {
       __obj.asInstanceOf[Body]
     }
     
-    extension [Self <: Body](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Body] (val x: Self) extends AnyVal {
       
       inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
@@ -108,7 +110,8 @@ object anon {
       __obj.asInstanceOf[Code]
     }
     
-    extension [Self <: Code](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Code] (val x: Self) extends AnyVal {
       
       inline def setCode(value: String): Self = StObject.set(x, "Code", value.asInstanceOf[js.Any])
       
@@ -127,7 +130,8 @@ object anon {
       __obj.asInstanceOf[ContentRootElement]
     }
     
-    extension [Self <: ContentRootElement](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContentRootElement] (val x: Self) extends AnyVal {
       
       inline def setContentRootElement(value: String): Self = StObject.set(x, "ContentRootElement", value.asInstanceOf[js.Any])
     }
@@ -144,7 +148,8 @@ object anon {
       __obj.asInstanceOf[Error]
     }
     
-    extension [Self <: Error](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Error] (val x: Self) extends AnyVal {
       
       inline def setError(value: Code): Self = StObject.set(x, "Error", value.asInstanceOf[js.Any])
     }
@@ -161,7 +166,8 @@ object anon {
       __obj.asInstanceOf[Etag]
     }
     
-    extension [Self <: Etag](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Etag] (val x: Self) extends AnyVal {
       
       inline def setEtag(value: Any): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     }
@@ -178,7 +184,8 @@ object anon {
       __obj.asInstanceOf[Headers]
     }
     
-    extension [Self <: Headers](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Headers] (val x: Self) extends AnyVal {
       
       inline def setHeaders(value: Dictionary[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     }
@@ -195,7 +202,8 @@ object anon {
       __obj.asInstanceOf[HeadersObject]
     }
     
-    extension [Self <: HeadersObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HeadersObject] (val x: Self) extends AnyVal {
       
       inline def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     }
@@ -212,7 +220,8 @@ object anon {
       __obj.asInstanceOf[Id]
     }
     
-    extension [Self <: Id](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Id] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     }
@@ -229,7 +238,8 @@ object anon {
       __obj.asInstanceOf[Name]
     }
     
-    extension [Self <: Name](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Name] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
@@ -250,7 +260,8 @@ object anon {
       __obj.asInstanceOf[PushChannel]
     }
     
-    extension [Self <: PushChannel](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PushChannel] (val x: Self) extends AnyVal {
       
       inline def setPushChannel(value: String): Self = StObject.set(x, "pushChannel", value.asInstanceOf[js.Any])
       
@@ -277,7 +288,8 @@ object anon {
       __obj.asInstanceOf[SignRequest]
     }
     
-    extension [Self <: SignRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SignRequest] (val x: Self) extends AnyVal {
       
       inline def setSignRequest(value: (Any, js.Function0[Unit]) => Unit): Self = StObject.set(x, "signRequest", js.Any.fromFunction2(value))
     }
@@ -296,7 +308,8 @@ object anon {
       __obj.asInstanceOf[_empty]
     }
     
-    extension [Self <: _empty](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: _empty] (val x: Self) extends AnyVal {
       
       inline def set_underscore(value: Id): Self = StObject.set(x, "_", value.asInstanceOf[js.Any])
     }

@@ -21,7 +21,8 @@ object GetDataInput {
     __obj.asInstanceOf[GetDataInput]
   }
   
-  extension [Self <: GetDataInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetDataInput] (val x: Self) extends AnyVal {
     
     inline def setFinish(value: String): Self = StObject.set(x, "finish", value.asInstanceOf[js.Any])
     

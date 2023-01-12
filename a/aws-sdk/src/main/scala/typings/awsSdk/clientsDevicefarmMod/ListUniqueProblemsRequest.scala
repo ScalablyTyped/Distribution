@@ -23,7 +23,8 @@ object ListUniqueProblemsRequest {
     __obj.asInstanceOf[ListUniqueProblemsRequest]
   }
   
-  extension [Self <: ListUniqueProblemsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListUniqueProblemsRequest] (val x: Self) extends AnyVal {
     
     inline def setArn(value: AmazonResourceName): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     

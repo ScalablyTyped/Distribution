@@ -22,7 +22,8 @@ object UploadVoiceConfig {
     __obj.asInstanceOf[UploadVoiceConfig]
   }
   
-  extension [Self <: UploadVoiceConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UploadVoiceConfig] (val x: Self) extends AnyVal {
     
     inline def setIsShowProgressTips(value: Double): Self = StObject.set(x, "isShowProgressTips", value.asInstanceOf[js.Any])
     

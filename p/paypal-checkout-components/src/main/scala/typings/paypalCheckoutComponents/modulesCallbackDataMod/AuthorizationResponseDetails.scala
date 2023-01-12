@@ -40,7 +40,8 @@ object AuthorizationResponseDetails {
     __obj.asInstanceOf[AuthorizationResponseDetails]
   }
   
-  extension [Self <: AuthorizationResponseDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AuthorizationResponseDetails] (val x: Self) extends AnyVal {
     
     inline def setBillingAddress(value: Address): Self = StObject.set(x, "billingAddress", value.asInstanceOf[js.Any])
     

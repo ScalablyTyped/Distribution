@@ -17,7 +17,8 @@ object EosActionSellRam {
     __obj.asInstanceOf[EosActionSellRam]
   }
   
-  extension [Self <: EosActionSellRam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EosActionSellRam] (val x: Self) extends AnyVal {
     
     inline def setAccount(value: String): Self = StObject.set(x, "account", value.asInstanceOf[js.Any])
     

@@ -32,7 +32,8 @@ object status {
       __obj.asInstanceOf[ClipboardFormats]
     }
     
-    extension [Self <: ClipboardFormats](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClipboardFormats] (val x: Self) extends AnyVal {
       
       inline def setIdentifiers(value: SafeArray[Double]): Self = StObject.set(x, "Identifiers", value.asInstanceOf[js.Any])
       
@@ -64,7 +65,8 @@ object status {
       __obj.asInstanceOf[FontHeight]
     }
     
-    extension [Self <: FontHeight](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FontHeight] (val x: Self) extends AnyVal {
       
       inline def setDiff(value: Double): Self = StObject.set(x, "Diff", value.asInstanceOf[js.Any])
       
@@ -123,7 +125,8 @@ object status {
       __obj.asInstanceOf[ItemStatus]
     }
     
-    extension [Self <: ItemStatus](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ItemStatus] (val x: Self) extends AnyVal {
       
       inline def setAStateData(value: Any): Self = StObject.set(x, "aStateData", value.asInstanceOf[js.Any])
       
@@ -150,7 +153,8 @@ object status {
       __obj.asInstanceOf[LeftRightMargin]
     }
     
-    extension [Self <: LeftRightMargin](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LeftRightMargin] (val x: Self) extends AnyVal {
       
       inline def setLeft(value: Double): Self = StObject.set(x, "Left", value.asInstanceOf[js.Any])
       
@@ -204,7 +208,8 @@ object status {
       __obj.asInstanceOf[LeftRightMarginScale]
     }
     
-    extension [Self <: LeftRightMarginScale](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LeftRightMarginScale] (val x: Self) extends AnyVal {
       
       inline def setAutoFirstLine(value: Boolean): Self = StObject.set(x, "AutoFirstLine", value.asInstanceOf[js.Any])
       
@@ -243,7 +248,8 @@ object status {
       __obj.asInstanceOf[Template]
     }
     
-    extension [Self <: Template](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Template] (val x: Self) extends AnyVal {
       
       inline def setStyleName(value: String): Self = StObject.set(x, "StyleName", value.asInstanceOf[js.Any])
       
@@ -270,7 +276,8 @@ object status {
       __obj.asInstanceOf[UpperLowerMargin]
     }
     
-    extension [Self <: UpperLowerMargin](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UpperLowerMargin] (val x: Self) extends AnyVal {
       
       inline def setLower(value: Double): Self = StObject.set(x, "Lower", value.asInstanceOf[js.Any])
       
@@ -303,7 +310,8 @@ object status {
       __obj.asInstanceOf[UpperLowerMarginScale]
     }
     
-    extension [Self <: UpperLowerMarginScale](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UpperLowerMarginScale] (val x: Self) extends AnyVal {
       
       inline def setLower(value: Double): Self = StObject.set(x, "Lower", value.asInstanceOf[js.Any])
       
@@ -342,7 +350,8 @@ object status {
       __obj.asInstanceOf[Verb]
     }
     
-    extension [Self <: Verb](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Verb] (val x: Self) extends AnyVal {
       
       inline def setVerbId(value: Double): Self = StObject.set(x, "VerbId", value.asInstanceOf[js.Any])
       
@@ -370,7 +379,8 @@ object status {
       __obj.asInstanceOf[Visibility]
     }
     
-    extension [Self <: Visibility](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Visibility] (val x: Self) extends AnyVal {
       
       inline def setBVisible(value: Boolean): Self = StObject.set(x, "bVisible", value.asInstanceOf[js.Any])
     }

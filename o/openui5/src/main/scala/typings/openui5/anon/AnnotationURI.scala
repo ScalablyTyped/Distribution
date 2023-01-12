@@ -105,7 +105,8 @@ object AnnotationURI {
     __obj.asInstanceOf[AnnotationURI]
   }
   
-  extension [Self <: AnnotationURI](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnnotationURI] (val x: Self) extends AnyVal {
     
     inline def setAnnotationURI(value: String | js.Array[String]): Self = StObject.set(x, "annotationURI", value.asInstanceOf[js.Any])
     

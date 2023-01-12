@@ -99,7 +99,8 @@ object mod {
       __obj.asInstanceOf[BaseTestRunner]
     }
     
-    extension [Self <: BaseTestRunner](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseTestRunner] (val x: Self) extends AnyVal {
       
       inline def setIsSerial(value: Boolean): Self = StObject.set(x, "isSerial", value.asInstanceOf[js.Any])
       
@@ -137,7 +138,8 @@ object mod {
       __obj.asInstanceOf[CallbackTestRunnerInterface]
     }
     
-    extension [Self <: CallbackTestRunnerInterface](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CallbackTestRunnerInterface] (val x: Self) extends AnyVal {
       
       inline def setIsSerial(value: Boolean): Self = StObject.set(x, "isSerial", value.asInstanceOf[js.Any])
       
@@ -215,7 +217,8 @@ object mod {
       __obj.asInstanceOf[TestRunnerContext]
     }
     
-    extension [Self <: TestRunnerContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TestRunnerContext] (val x: Self) extends AnyVal {
       
       inline def setChangedFiles(value: Set[String]): Self = StObject.set(x, "changedFiles", value.asInstanceOf[js.Any])
       
@@ -238,7 +241,8 @@ object mod {
       __obj.asInstanceOf[TestRunnerOptions]
     }
     
-    extension [Self <: TestRunnerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TestRunnerOptions] (val x: Self) extends AnyVal {
       
       inline def setSerial(value: Boolean): Self = StObject.set(x, "serial", value.asInstanceOf[js.Any])
     }

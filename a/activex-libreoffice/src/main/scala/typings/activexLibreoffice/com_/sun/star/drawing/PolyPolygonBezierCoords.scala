@@ -18,7 +18,8 @@ object PolyPolygonBezierCoords {
     __obj.asInstanceOf[PolyPolygonBezierCoords]
   }
   
-  extension [Self <: PolyPolygonBezierCoords](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PolyPolygonBezierCoords] (val x: Self) extends AnyVal {
     
     inline def setCoordinates(value: PointSequenceSequence): Self = StObject.set(x, "Coordinates", value.asInstanceOf[js.Any])
     

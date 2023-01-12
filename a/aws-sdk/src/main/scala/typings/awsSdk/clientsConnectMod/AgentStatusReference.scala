@@ -23,7 +23,8 @@ object AgentStatusReference {
     __obj.asInstanceOf[AgentStatusReference]
   }
   
-  extension [Self <: AgentStatusReference](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AgentStatusReference] (val x: Self) extends AnyVal {
     
     inline def setStatusArn(value: ARN): Self = StObject.set(x, "StatusArn", value.asInstanceOf[js.Any])
     

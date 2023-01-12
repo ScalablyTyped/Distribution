@@ -17592,7 +17592,8 @@ object mod {
       __obj.asInstanceOf[ComputedSlideSize]
     }
     
-    extension [Self <: ComputedSlideSize](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ComputedSlideSize] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -17624,7 +17625,8 @@ object mod {
       __obj.asInstanceOf[HighlightConfig]
     }
     
-    extension [Self <: HighlightConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HighlightConfig] (val x: Self) extends AnyVal {
       
       inline def setBeforeHighlight(value: /* args */ Any => Any): Self = StObject.set(x, "beforeHighlight", js.Any.fromFunction1(value))
       
@@ -17663,7 +17665,8 @@ object mod {
       __obj.asInstanceOf[KatexConfig]
     }
     
-    extension [Self <: KatexConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KatexConfig] (val x: Self) extends AnyVal {
       
       inline def setDelimiters(value: js.Array[Display]): Self = StObject.set(x, "delimiters", value.asInstanceOf[js.Any])
       
@@ -17740,7 +17743,8 @@ object mod {
       __obj.asInstanceOf[MarkdownConfig]
     }
     
-    extension [Self <: MarkdownConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MarkdownConfig] (val x: Self) extends AnyVal {
       
       inline def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
       
@@ -17841,7 +17845,8 @@ object mod {
       __obj.asInstanceOf[Mathjax2Config]
     }
     
-    extension [Self <: Mathjax2Config](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Mathjax2Config] (val x: Self) extends AnyVal {
       
       inline def setConfig(value: String): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
@@ -17878,7 +17883,8 @@ object mod {
       __obj.asInstanceOf[Mathjax3Config]
     }
     
-    extension [Self <: Mathjax3Config](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Mathjax3Config] (val x: Self) extends AnyVal {
       
       inline def setMathjax(value: String): Self = StObject.set(x, "mathjax", value.asInstanceOf[js.Any])
       
@@ -17917,7 +17923,8 @@ object mod {
       __obj.asInstanceOf[MultiplexConfig]
     }
     
-    extension [Self <: MultiplexConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MultiplexConfig] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -18576,7 +18583,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setAutoAnimate(value: Boolean): Self = StObject.set(x, "autoAnimate", value.asInstanceOf[js.Any])
       
@@ -18925,7 +18933,8 @@ object mod {
       __obj.asInstanceOf[Plugin]
     }
     
-    extension [Self <: Plugin](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Plugin] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -18957,7 +18966,8 @@ object mod {
       __obj.asInstanceOf[RevealDependency]
     }
     
-    extension [Self <: RevealDependency](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RevealDependency] (val x: Self) extends AnyVal {
       
       inline def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
       

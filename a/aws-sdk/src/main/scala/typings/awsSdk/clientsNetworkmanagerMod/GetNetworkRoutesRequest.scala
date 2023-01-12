@@ -63,7 +63,8 @@ object GetNetworkRoutesRequest {
     __obj.asInstanceOf[GetNetworkRoutesRequest]
   }
   
-  extension [Self <: GetNetworkRoutesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetNetworkRoutesRequest] (val x: Self) extends AnyVal {
     
     inline def setDestinationFilters(value: FilterMap): Self = StObject.set(x, "DestinationFilters", value.asInstanceOf[js.Any])
     

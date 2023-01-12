@@ -143,7 +143,8 @@ object mod {
       __obj.asInstanceOf[Minilog]
     }
     
-    extension [Self <: Minilog](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Minilog] (val x: Self) extends AnyVal {
       
       inline def setDebug(value: /* repeated */ Any => Minilog): Self = StObject.set(x, "debug", js.Any.fromFunction1(value))
       
@@ -176,7 +177,8 @@ object mod {
       __obj.asInstanceOf[MinilogBackends]
     }
     
-    extension [Self <: MinilogBackends](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MinilogBackends] (val x: Self) extends AnyVal {
       
       inline def setArray(value: Any): Self = StObject.set(x, "array", value.asInstanceOf[js.Any])
       

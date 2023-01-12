@@ -39,7 +39,8 @@ object KeyManagerAlias {
     __obj.asInstanceOf[KeyManagerAlias]
   }
   
-  extension [Self <: KeyManagerAlias](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KeyManagerAlias] (val x: Self) extends AnyVal {
     
     inline def setIsProtected(value: Boolean): Self = StObject.set(x, "isProtected", value.asInstanceOf[js.Any])
     

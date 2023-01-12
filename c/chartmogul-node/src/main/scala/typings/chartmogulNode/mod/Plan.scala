@@ -40,7 +40,8 @@ object Plan {
       __obj.asInstanceOf[ListPlansParams]
     }
     
-    extension [Self <: ListPlansParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListPlansParams] (val x: Self) extends AnyVal {
       
       inline def setData_source_uuid(value: String): Self = StObject.set(x, "data_source_uuid", value.asInstanceOf[js.Any])
       
@@ -77,7 +78,8 @@ object Plan {
       __obj.asInstanceOf[typings.chartmogulNode.mod.Plan.Plan]
     }
     
-    extension [Self <: typings.chartmogulNode.mod.Plan.Plan](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.chartmogulNode.mod.Plan.Plan] (val x: Self) extends AnyVal {
       
       inline def setData_source_uuid(value: String): Self = StObject.set(x, "data_source_uuid", value.asInstanceOf[js.Any])
       
@@ -118,7 +120,8 @@ object Plan {
       __obj.asInstanceOf[Plans]
     }
     
-    extension [Self <: Plans](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Plans] (val x: Self) extends AnyVal {
       
       inline def setPlans(value: js.Array[typings.chartmogulNode.mod.Plan.Plan]): Self = StObject.set(x, "plans", value.asInstanceOf[js.Any])
       

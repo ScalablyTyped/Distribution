@@ -34,7 +34,8 @@ object PipeSymbol {
     __obj.asInstanceOf[PipeSymbol]
   }
   
-  extension [Self <: PipeSymbol](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PipeSymbol] (val x: Self) extends AnyVal {
     
     inline def setClassSymbol(value: ClassSymbol): Self = StObject.set(x, "classSymbol", value.asInstanceOf[js.Any])
     

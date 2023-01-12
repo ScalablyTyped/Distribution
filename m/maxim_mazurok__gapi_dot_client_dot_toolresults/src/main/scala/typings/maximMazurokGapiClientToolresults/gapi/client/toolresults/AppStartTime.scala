@@ -22,7 +22,8 @@ object AppStartTime {
     __obj.asInstanceOf[AppStartTime]
   }
   
-  extension [Self <: AppStartTime](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppStartTime] (val x: Self) extends AnyVal {
     
     inline def setFullyDrawnTime(value: Duration): Self = StObject.set(x, "fullyDrawnTime", value.asInstanceOf[js.Any])
     

@@ -56,7 +56,8 @@ object PatientContact {
     __obj.asInstanceOf[PatientContact]
   }
   
-  extension [Self <: PatientContact](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PatientContact] (val x: Self) extends AnyVal {
     
     inline def setAddress(value: Address): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     

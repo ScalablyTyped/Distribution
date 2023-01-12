@@ -49,7 +49,8 @@ object NetworkReportSpec {
     __obj.asInstanceOf[NetworkReportSpec]
   }
   
-  extension [Self <: NetworkReportSpec](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NetworkReportSpec] (val x: Self) extends AnyVal {
     
     inline def setDateRange(value: DateRange): Self = StObject.set(x, "dateRange", value.asInstanceOf[js.Any])
     

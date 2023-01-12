@@ -17,7 +17,8 @@ object LogAttrs {
     __obj.asInstanceOf[LogAttrs]
   }
   
-  extension [Self <: LogAttrs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LogAttrs] (val x: Self) extends AnyVal {
     
     inline def setConsoleProps(value: ObjectLike): Self = StObject.set(x, "consoleProps", value.asInstanceOf[js.Any])
     

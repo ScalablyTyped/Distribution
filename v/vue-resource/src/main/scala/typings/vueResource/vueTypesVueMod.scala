@@ -32,7 +32,8 @@ object vueTypesVueMod {
       __obj.asInstanceOf[Vue]
     }
     
-    extension [Self <: Vue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Vue] (val x: Self) extends AnyVal {
       
       inline def set$http(value: Call): Self = StObject.set(x, "$http", value.asInstanceOf[js.Any])
       

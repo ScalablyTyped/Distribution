@@ -56,7 +56,8 @@ object anon {
       __obj.asInstanceOf[Byeaster]
     }
     
-    extension [Self <: Byeaster](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Byeaster] (val x: Self) extends AnyVal {
       
       inline def setByeaster(value: Double): Self = StObject.set(x, "byeaster", value.asInstanceOf[js.Any])
       
@@ -171,7 +172,8 @@ object anon {
       __obj.asInstanceOf[Div]
     }
     
-    extension [Self <: Div](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Div] (val x: Self) extends AnyVal {
       
       inline def setDiv(value: Double): Self = StObject.set(x, "div", value.asInstanceOf[js.Any])
       
@@ -207,7 +209,8 @@ object anon {
       __obj.asInstanceOf[Dtstart]
     }
     
-    extension [Self <: Dtstart](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Dtstart] (val x: Self) extends AnyVal {
       
       inline def setDtstart(value: js.Date): Self = StObject.set(x, "dtstart", value.asInstanceOf[js.Any])
       
@@ -242,7 +245,8 @@ object anon {
       __obj.asInstanceOf[ParsedOptions]
     }
     
-    extension [Self <: ParsedOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParsedOptions] (val x: Self) extends AnyVal {
       
       inline def setParsedOptions(value: typings.rrule.distEsmTypesMod.ParsedOptions): Self = StObject.set(x, "parsedOptions", value.asInstanceOf[js.Any])
     }
@@ -268,7 +272,8 @@ object anon {
       __obj.asInstanceOf[PartialIterArgs]
     }
     
-    extension [Self <: PartialIterArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialIterArgs] (val x: Self) extends AnyVal {
       
       inline def setAfter(value: js.Date): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
       
@@ -344,7 +349,8 @@ object anon {
       __obj.asInstanceOf[PartialOptions]
     }
     
-    extension [Self <: PartialOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialOptions] (val x: Self) extends AnyVal {
       
       inline def setByeaster(value: Double): Self = StObject.set(x, "byeaster", value.asInstanceOf[js.Any])
       
@@ -502,7 +508,8 @@ object anon {
       __obj.asInstanceOf[PartialRRuleStrOptions]
     }
     
-    extension [Self <: PartialRRuleStrOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialRRuleStrOptions] (val x: Self) extends AnyVal {
       
       inline def setCache(value: Boolean): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
       

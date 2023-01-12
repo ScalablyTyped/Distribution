@@ -23,7 +23,8 @@ object NeedLoadMoreData {
     __obj.asInstanceOf[NeedLoadMoreData]
   }
   
-  extension [Self <: NeedLoadMoreData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NeedLoadMoreData] (val x: Self) extends AnyVal {
     
     inline def setNeedLoadMoreData(value: js.Function): Self = StObject.set(x, "needLoadMoreData", value.asInstanceOf[js.Any])
     

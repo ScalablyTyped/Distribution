@@ -23,7 +23,8 @@ object ListIncidentRecordsOutput {
     __obj.asInstanceOf[ListIncidentRecordsOutput]
   }
   
-  extension [Self <: ListIncidentRecordsOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListIncidentRecordsOutput] (val x: Self) extends AnyVal {
     
     inline def setIncidentRecordSummaries(value: IncidentRecordSummaryList): Self = StObject.set(x, "incidentRecordSummaries", value.asInstanceOf[js.Any])
     

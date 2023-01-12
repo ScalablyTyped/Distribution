@@ -28,7 +28,8 @@ object BorderRangeleftBorderOpti {
     __obj.asInstanceOf[BorderRangeleftBorderOpti]
   }
   
-  extension [Self <: BorderRangeleftBorderOpti](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BorderRangeleftBorderOpti] (val x: Self) extends AnyVal {
     
     inline def setBottom(value: BorderOptions | String): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
     

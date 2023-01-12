@@ -66,7 +66,8 @@ object anon {
       __obj.asInstanceOf[CreateGcpApiConfig]
     }
     
-    extension [Self <: CreateGcpApiConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateGcpApiConfig] (val x: Self) extends AnyVal {
       
       inline def setCreateGcpApiConfig(value: js.Object => ApiConfig): Self = StObject.set(x, "createGcpApiConfig", js.Any.fromFunction1(value))
       
@@ -239,7 +240,8 @@ object anon {
       __obj.asInstanceOf[Typeofcredentials]
     }
     
-    extension [Self <: Typeofcredentials](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Typeofcredentials] (val x: Self) extends AnyVal {
       
       inline def setCombineCallCredentials(
         value: (typings.grpcGrpcJs.buildSrcCallCredentialsMod.CallCredentials, /* repeated */ typings.grpcGrpcJs.buildSrcCallCredentialsMod.CallCredentials) => typings.grpcGrpcJs.buildSrcCallCredentialsMod.CallCredentials

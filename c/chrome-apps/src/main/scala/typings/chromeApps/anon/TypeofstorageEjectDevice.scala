@@ -77,7 +77,8 @@ object TypeofstorageEjectDevice {
     __obj.asInstanceOf[TypeofstorageEjectDevice]
   }
   
-  extension [Self <: TypeofstorageEjectDevice](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofstorageEjectDevice] (val x: Self) extends AnyVal {
     
     inline def setEjectDevice(
       value: (String, js.Function1[

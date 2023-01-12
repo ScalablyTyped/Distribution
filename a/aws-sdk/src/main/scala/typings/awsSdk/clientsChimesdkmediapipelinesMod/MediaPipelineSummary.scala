@@ -23,7 +23,8 @@ object MediaPipelineSummary {
     __obj.asInstanceOf[MediaPipelineSummary]
   }
   
-  extension [Self <: MediaPipelineSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MediaPipelineSummary] (val x: Self) extends AnyVal {
     
     inline def setMediaPipelineArn(value: AmazonResourceName): Self = StObject.set(x, "MediaPipelineArn", value.asInstanceOf[js.Any])
     

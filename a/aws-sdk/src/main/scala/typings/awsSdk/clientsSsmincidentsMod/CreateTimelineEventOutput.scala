@@ -23,7 +23,8 @@ object CreateTimelineEventOutput {
     __obj.asInstanceOf[CreateTimelineEventOutput]
   }
   
-  extension [Self <: CreateTimelineEventOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateTimelineEventOutput] (val x: Self) extends AnyVal {
     
     inline def setEventId(value: UUID): Self = StObject.set(x, "eventId", value.asInstanceOf[js.Any])
     

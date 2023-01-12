@@ -15,7 +15,8 @@ object InteractableInteractableBackCompatOption {
     __obj.asInstanceOf[InteractableInteractableBackCompatOption]
   }
   
-  extension [Self <: InteractableInteractableBackCompatOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InteractableInteractableBackCompatOption] (val x: Self) extends AnyVal {
     
     inline def setInteractable(value: InteractableBackCompatOption): Self = StObject.set(x, "interactable", value.asInstanceOf[js.Any])
   }

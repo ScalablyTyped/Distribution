@@ -43,7 +43,8 @@ object CommonEventObject {
     __obj.asInstanceOf[CommonEventObject]
   }
   
-  extension [Self <: CommonEventObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CommonEventObject] (val x: Self) extends AnyVal {
     
     inline def setFormInputs(
       value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.chat.gapi.client.chat.Inputs} */ js.Any

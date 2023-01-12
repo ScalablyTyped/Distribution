@@ -41,7 +41,8 @@ object tabsTabsMod extends Shortcut {
       __obj.asInstanceOf[TabsActions]
     }
     
-    extension [Self <: TabsActions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TabsActions] (val x: Self) extends AnyVal {
       
       inline def setUpdateIndicator(value: () => Unit): Self = StObject.set(x, "updateIndicator", js.Any.fromFunction0(value))
       
@@ -99,7 +100,8 @@ object tabsTabsMod extends Shortcut {
       __obj.asInstanceOf[TabsTypeMap[P, D]]
     }
     
-    extension [Self <: TabsTypeMap[?, ?], P, D /* <: ElementType[Any] */](x: Self & (TabsTypeMap[P, D])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TabsTypeMap[?, ?], P, D /* <: ElementType[Any] */] (val x: Self & (TabsTypeMap[P, D])) extends AnyVal {
       
       inline def setClassKey(value: TabsClassKey): Self = StObject.set(x, "classKey", value.asInstanceOf[js.Any])
       

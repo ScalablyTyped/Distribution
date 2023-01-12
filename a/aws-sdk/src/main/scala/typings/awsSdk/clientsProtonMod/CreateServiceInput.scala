@@ -68,7 +68,8 @@ object CreateServiceInput {
     __obj.asInstanceOf[CreateServiceInput]
   }
   
-  extension [Self <: CreateServiceInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateServiceInput] (val x: Self) extends AnyVal {
     
     inline def setBranchName(value: GitBranchName): Self = StObject.set(x, "branchName", value.asInstanceOf[js.Any])
     

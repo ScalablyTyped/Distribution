@@ -52,7 +52,8 @@ object GriddleProps {
     __obj.asInstanceOf[GriddleProps[T]]
   }
   
-  extension [Self <: GriddleProps[?], T](x: Self & GriddleProps[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GriddleProps[?], T] (val x: Self & GriddleProps[T]) extends AnyVal {
     
     inline def setCore(value: GriddlePlugin): Self = StObject.set(x, "core", value.asInstanceOf[js.Any])
     

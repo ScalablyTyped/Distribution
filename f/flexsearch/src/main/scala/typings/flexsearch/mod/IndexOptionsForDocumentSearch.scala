@@ -20,7 +20,8 @@ object IndexOptionsForDocumentSearch {
     __obj.asInstanceOf[IndexOptionsForDocumentSearch[T, Store]]
   }
   
-  extension [Self <: IndexOptionsForDocumentSearch[?, ?], T, Store /* <: StoreOption */](x: Self & (IndexOptionsForDocumentSearch[T, Store])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndexOptionsForDocumentSearch[?, ?], T, Store /* <: StoreOption */] (val x: Self & (IndexOptionsForDocumentSearch[T, Store])) extends AnyVal {
     
     inline def setDocument(value: (DocumentOptions[T, Store]) | (Descriptor[T, Store])): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
     

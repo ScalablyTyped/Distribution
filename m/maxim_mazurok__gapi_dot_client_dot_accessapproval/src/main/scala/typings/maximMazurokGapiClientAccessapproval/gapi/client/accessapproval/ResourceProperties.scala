@@ -16,7 +16,8 @@ object ResourceProperties {
     __obj.asInstanceOf[ResourceProperties]
   }
   
-  extension [Self <: ResourceProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResourceProperties] (val x: Self) extends AnyVal {
     
     inline def setExcludesDescendants(value: Boolean): Self = StObject.set(x, "excludesDescendants", value.asInstanceOf[js.Any])
     

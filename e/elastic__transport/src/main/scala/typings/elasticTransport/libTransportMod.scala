@@ -64,7 +64,8 @@ object libTransportMod {
       __obj.asInstanceOf[GetConnectionOptions]
     }
     
-    extension [Self <: GetConnectionOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetConnectionOptions] (val x: Self) extends AnyVal {
       
       inline def setContext(value: Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
@@ -87,7 +88,8 @@ object libTransportMod {
       __obj.asInstanceOf[SniffOptions]
     }
     
-    extension [Self <: SniffOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SniffOptions] (val x: Self) extends AnyVal {
       
       inline def setContext(value: Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
@@ -178,7 +180,8 @@ object libTransportMod {
       __obj.asInstanceOf[TransportOptions]
     }
     
-    extension [Self <: TransportOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TransportOptions] (val x: Self) extends AnyVal {
       
       inline def setCompression(value: Boolean): Self = StObject.set(x, "compression", value.asInstanceOf[js.Any])
       
@@ -325,7 +328,8 @@ object libTransportMod {
       __obj.asInstanceOf[TransportRequestOptions]
     }
     
-    extension [Self <: TransportRequestOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TransportRequestOptions] (val x: Self) extends AnyVal {
       
       inline def setAsStream(value: Boolean): Self = StObject.set(x, "asStream", value.asInstanceOf[js.Any])
       
@@ -409,7 +413,8 @@ object libTransportMod {
       __obj.asInstanceOf[TransportRequestOptionsWithMeta]
     }
     
-    extension [Self <: TransportRequestOptionsWithMeta](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TransportRequestOptionsWithMeta] (val x: Self) extends AnyVal {
       
       inline def setMeta(value: `true`): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
     }
@@ -429,7 +434,8 @@ object libTransportMod {
       __obj.asInstanceOf[TransportRequestOptionsWithOutMeta]
     }
     
-    extension [Self <: TransportRequestOptionsWithOutMeta](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TransportRequestOptionsWithOutMeta] (val x: Self) extends AnyVal {
       
       inline def setMeta(value: `false`): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
     }
@@ -454,7 +460,8 @@ object libTransportMod {
       __obj.asInstanceOf[TransportRequestParams]
     }
     
-    extension [Self <: TransportRequestParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TransportRequestParams] (val x: Self) extends AnyVal {
       
       inline def setBody(value: RequestBody[Record[String, Any]]): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       

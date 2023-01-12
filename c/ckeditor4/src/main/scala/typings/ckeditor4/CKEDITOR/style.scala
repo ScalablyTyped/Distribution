@@ -63,7 +63,8 @@ object style {
       __obj.asInstanceOf[customHandler]
     }
     
-    extension [Self <: customHandler](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: customHandler] (val x: Self) extends AnyVal {
       
       inline def setAssignedTo(value: Double): Self = StObject.set(x, "assignedTo", value.asInstanceOf[js.Any])
       
@@ -117,7 +118,8 @@ object style {
       __obj.asInstanceOf[definition]
     }
     
-    extension [Self <: definition](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: definition] (val x: Self) extends AnyVal {
       
       inline def setAttributes(value: StringDictionary[String]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       

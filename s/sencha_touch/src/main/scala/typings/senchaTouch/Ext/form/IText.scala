@@ -124,7 +124,8 @@ object IText {
     __obj.asInstanceOf[IText]
   }
   
-  extension [Self <: IText](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IText] (val x: Self) extends AnyVal {
     
     inline def setAutoCapitalize(value: Boolean): Self = StObject.set(x, "autoCapitalize", value.asInstanceOf[js.Any])
     

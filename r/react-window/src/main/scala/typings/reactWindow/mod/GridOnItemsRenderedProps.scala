@@ -38,7 +38,8 @@ object GridOnItemsRenderedProps {
     __obj.asInstanceOf[GridOnItemsRenderedProps]
   }
   
-  extension [Self <: GridOnItemsRenderedProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GridOnItemsRenderedProps] (val x: Self) extends AnyVal {
     
     inline def setOverscanColumnStartIndex(value: Double): Self = StObject.set(x, "overscanColumnStartIndex", value.asInstanceOf[js.Any])
     

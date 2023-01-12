@@ -71,7 +71,8 @@ object libEsmComponentsDialogDialogStepButtonMod {
       __obj.asInstanceOf[DialogStepButtonProps]
     }
     
-    extension [Self <: DialogStepButtonProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DialogStepButtonProps] (val x: Self) extends AnyVal {
       
       inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       

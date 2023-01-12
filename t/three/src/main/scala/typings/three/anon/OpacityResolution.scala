@@ -22,7 +22,8 @@ object OpacityResolution {
     __obj.asInstanceOf[OpacityResolution]
   }
   
-  extension [Self <: OpacityResolution](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OpacityResolution] (val x: Self) extends AnyVal {
     
     inline def setOpacity(value: IUniform[Double]): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
     

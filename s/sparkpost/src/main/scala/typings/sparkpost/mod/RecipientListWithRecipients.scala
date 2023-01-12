@@ -25,7 +25,8 @@ object RecipientListWithRecipients {
     __obj.asInstanceOf[RecipientListWithRecipients]
   }
   
-  extension [Self <: RecipientListWithRecipients](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecipientListWithRecipients] (val x: Self) extends AnyVal {
     
     inline def setRecipients(value: js.Array[Recipient]): Self = StObject.set(x, "recipients", value.asInstanceOf[js.Any])
     

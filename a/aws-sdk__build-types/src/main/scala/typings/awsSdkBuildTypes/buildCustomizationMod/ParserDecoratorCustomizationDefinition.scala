@@ -43,7 +43,8 @@ object ParserDecoratorCustomizationDefinition {
     __obj.asInstanceOf[ParserDecoratorCustomizationDefinition]
   }
   
-  extension [Self <: ParserDecoratorCustomizationDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParserDecoratorCustomizationDefinition] (val x: Self) extends AnyVal {
     
     inline def setConfiguration(value: ConfigurationDefinition): Self = StObject.set(x, "configuration", value.asInstanceOf[js.Any])
     

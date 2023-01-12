@@ -29,7 +29,8 @@ object Gradient {
     __obj.asInstanceOf[Gradient]
   }
   
-  extension [Self <: Gradient](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Gradient] (val x: Self) extends AnyVal {
     
     inline def `setLine-gradient-stop-colors`(value: js.Array[PropertyValueEdge[Colour]]): Self = StObject.set(x, "line-gradient-stop-colors", value.asInstanceOf[js.Any])
     

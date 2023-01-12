@@ -28,7 +28,8 @@ object SNSConfiguration {
     __obj.asInstanceOf[SNSConfiguration]
   }
   
-  extension [Self <: SNSConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SNSConfiguration] (val x: Self) extends AnyVal {
     
     inline def setRoleArn(value: Arn): Self = StObject.set(x, "RoleArn", value.asInstanceOf[js.Any])
     

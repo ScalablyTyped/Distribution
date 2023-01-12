@@ -27,7 +27,8 @@ object srcCompilerTaglibLookupTaglibLookupMod {
       __obj.asInstanceOf[Element]
     }
     
-    extension [Self <: Element](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Element] (val x: Self) extends AnyVal {
       
       inline def setTagName(value: String): Self = StObject.set(x, "tagName", value.asInstanceOf[js.Any])
     }

@@ -18,7 +18,8 @@ object Overlay {
     __obj.asInstanceOf[Overlay]
   }
   
-  extension [Self <: Overlay](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Overlay] (val x: Self) extends AnyVal {
     
     inline def setMenu(value: Unit): Self = StObject.set(x, "menu", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object ListCoreDefinitionVersionsRequest {
     __obj.asInstanceOf[ListCoreDefinitionVersionsRequest]
   }
   
-  extension [Self <: ListCoreDefinitionVersionsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListCoreDefinitionVersionsRequest] (val x: Self) extends AnyVal {
     
     inline def setCoreDefinitionId(value: string): Self = StObject.set(x, "CoreDefinitionId", value.asInstanceOf[js.Any])
     

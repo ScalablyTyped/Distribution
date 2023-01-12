@@ -22,7 +22,8 @@ object GoogleIamV1AuditConfig {
     __obj.asInstanceOf[GoogleIamV1AuditConfig]
   }
   
-  extension [Self <: GoogleIamV1AuditConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleIamV1AuditConfig] (val x: Self) extends AnyVal {
     
     inline def setAuditLogConfigs(value: js.Array[GoogleIamV1AuditLogConfig]): Self = StObject.set(x, "auditLogConfigs", value.asInstanceOf[js.Any])
     

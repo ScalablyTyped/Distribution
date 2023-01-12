@@ -64,7 +64,8 @@ object KeywordBuilder {
     __obj.asInstanceOf[KeywordBuilder]
   }
   
-  extension [Self <: KeywordBuilder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KeywordBuilder] (val x: Self) extends AnyVal {
     
     inline def setWithCpc(value: Double => KeywordBuilder): Self = StObject.set(x, "withCpc", js.Any.fromFunction1(value))
     

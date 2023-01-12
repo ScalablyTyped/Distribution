@@ -22,7 +22,8 @@ object FeeLimit {
     __obj.asInstanceOf[FeeLimit]
   }
   
-  extension [Self <: FeeLimit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FeeLimit] (val x: Self) extends AnyVal {
     
     inline def setFeeLimit(value: String): Self = StObject.set(x, "feeLimit", value.asInstanceOf[js.Any])
     

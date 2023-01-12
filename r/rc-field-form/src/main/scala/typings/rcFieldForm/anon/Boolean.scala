@@ -54,7 +54,8 @@ object Boolean {
     __obj.asInstanceOf[Boolean]
   }
   
-  extension [Self <: Boolean](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Boolean] (val x: Self) extends AnyVal {
     
     inline def setArray(value: String): Self = StObject.set(x, "array", value.asInstanceOf[js.Any])
     

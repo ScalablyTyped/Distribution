@@ -28,7 +28,8 @@ object UpdateTarget {
     __obj.asInstanceOf[UpdateTarget]
   }
   
-  extension [Self <: UpdateTarget](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateTarget] (val x: Self) extends AnyVal {
     
     inline def setDatabaseVersion(value: String): Self = StObject.set(x, "DatabaseVersion", value.asInstanceOf[js.Any])
     

@@ -386,7 +386,8 @@ object srcSelectionMod {
       __obj.asInstanceOf[SelectionChangedEvent]
     }
     
-    extension [Self <: SelectionChangedEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SelectionChangedEvent] (val x: Self) extends AnyVal {
       
       inline def setNewBufferRange(value: Range): Self = StObject.set(x, "newBufferRange", value.asInstanceOf[js.Any])
       

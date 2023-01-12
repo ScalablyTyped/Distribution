@@ -25,7 +25,8 @@ object LineToOptions {
     __obj.asInstanceOf[LineToOptions]
   }
   
-  extension [Self <: LineToOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LineToOptions] (val x: Self) extends AnyVal {
     
     inline def setColor(value: String | js.Array[Double]): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

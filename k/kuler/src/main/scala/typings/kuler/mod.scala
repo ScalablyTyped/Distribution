@@ -52,7 +52,8 @@ object mod {
       __obj.asInstanceOf[KulerInstance]
     }
     
-    extension [Self <: KulerInstance](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KulerInstance] (val x: Self) extends AnyVal {
       
       inline def setAnsi(value: (Double, Double, Double) => String): Self = StObject.set(x, "ansi", js.Any.fromFunction3(value))
       

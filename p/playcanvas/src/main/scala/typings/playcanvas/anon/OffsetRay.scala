@@ -22,7 +22,8 @@ object OffsetRay {
     __obj.asInstanceOf[OffsetRay]
   }
   
-  extension [Self <: OffsetRay](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OffsetRay] (val x: Self) extends AnyVal {
     
     inline def setCallback(value: (/* err */ js.Error | Null, /* hitTestSource */ XrHitTestSource | Null) => Any): Self = StObject.set(x, "callback", js.Any.fromFunction2(value))
     

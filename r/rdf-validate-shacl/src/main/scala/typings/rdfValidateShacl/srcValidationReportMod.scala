@@ -68,7 +68,8 @@ object srcValidationReportMod {
       __obj.asInstanceOf[Options[F]]
     }
     
-    extension [Self <: Options[?], F /* <: Factory[Quad, Quad, DatasetCore[Quad, Quad]] */](x: Self & Options[F]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options[?], F /* <: Factory[Quad, Quad, DatasetCore[Quad, Quad]] */] (val x: Self & Options[F]) extends AnyVal {
       
       inline def setFactory(value: F): Self = StObject.set(x, "factory", value.asInstanceOf[js.Any])
     }
@@ -99,7 +100,8 @@ object srcValidationReportMod {
       __obj.asInstanceOf[ValidationReport[F]]
     }
     
-    extension [Self <: ValidationReport[?], F /* <: Factory[Quad, Quad, DatasetCore[Quad, Quad]] */](x: Self & ValidationReport[F]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ValidationReport[?], F /* <: Factory[Quad, Quad, DatasetCore[Quad, Quad]] */] (val x: Self & ValidationReport[F]) extends AnyVal {
       
       inline def setConforms(value: Boolean): Self = StObject.set(x, "conforms", value.asInstanceOf[js.Any])
       
@@ -150,7 +152,8 @@ object srcValidationReportMod {
       __obj.asInstanceOf[ValidationResult[F]]
     }
     
-    extension [Self <: ValidationResult[?], F /* <: Factory[Quad, Quad, DatasetCore[Quad, Quad]] */](x: Self & ValidationResult[F]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ValidationResult[?], F /* <: Factory[Quad, Quad, DatasetCore[Quad, Quad]] */] (val x: Self & ValidationResult[F]) extends AnyVal {
       
       inline def setDataset(value: DatasetOf[F]): Self = StObject.set(x, "dataset", value.asInstanceOf[js.Any])
       

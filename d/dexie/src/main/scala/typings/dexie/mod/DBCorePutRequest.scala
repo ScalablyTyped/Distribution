@@ -38,7 +38,8 @@ object DBCorePutRequest {
     __obj.asInstanceOf[DBCorePutRequest]
   }
   
-  extension [Self <: DBCorePutRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DBCorePutRequest] (val x: Self) extends AnyVal {
     
     inline def setChangeSpec(value: StringDictionary[Any]): Self = StObject.set(x, "changeSpec", value.asInstanceOf[js.Any])
     

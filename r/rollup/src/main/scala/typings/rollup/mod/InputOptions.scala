@@ -67,7 +67,8 @@ object InputOptions {
     __obj.asInstanceOf[InputOptions]
   }
   
-  extension [Self <: InputOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InputOptions] (val x: Self) extends AnyVal {
     
     inline def setAcorn(value: Record[String, Any]): Self = StObject.set(x, "acorn", value.asInstanceOf[js.Any])
     

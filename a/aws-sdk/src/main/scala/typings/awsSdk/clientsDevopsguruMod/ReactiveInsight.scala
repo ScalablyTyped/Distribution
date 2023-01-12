@@ -47,7 +47,8 @@ object ReactiveInsight {
     __obj.asInstanceOf[ReactiveInsight]
   }
   
-  extension [Self <: ReactiveInsight](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReactiveInsight] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: InsightDescription): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     

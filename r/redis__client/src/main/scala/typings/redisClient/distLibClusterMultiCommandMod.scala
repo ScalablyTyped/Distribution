@@ -6013,7 +6013,8 @@ object distLibClusterMultiCommandMod {
   }
   object WithCommands {
     
-    extension [Self <: WithCommands[?, ?, ?], M /* <: RedisModules */, F /* <: RedisFunctions */, S /* <: RedisScripts */](x: Self & (WithCommands[M, F, S])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WithCommands[?, ?, ?], M /* <: RedisModules */, F /* <: RedisFunctions */, S /* <: RedisScripts */] (val x: Self & (WithCommands[M, F, S])) extends AnyVal {
       
       inline def setAPPEND(
         value: /* args */ Parameters[

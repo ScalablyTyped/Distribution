@@ -27,7 +27,8 @@ object ImageMediaInfoValueProperties {
     __obj.asInstanceOf[ImageMediaInfoValueProperties]
   }
   
-  extension [Self <: ImageMediaInfoValueProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImageMediaInfoValueProperties] (val x: Self) extends AnyVal {
     
     inline def setLinkURL(value: String): Self = StObject.set(x, "linkURL", value.asInstanceOf[js.Any])
     

@@ -39,7 +39,8 @@ object anon {
       __obj.asInstanceOf[`0`[RawDatum]]
     }
     
-    extension [Self <: `0`[?], RawDatum /* <: StreamDatum */](x: Self & `0`[RawDatum]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: `0`[?], RawDatum /* <: StreamDatum */] (val x: Self & `0`[RawDatum]) extends AnyVal {
       
       inline def set0(value: Double): Self = StObject.set(x, "0", value.asInstanceOf[js.Any])
       
@@ -93,7 +94,8 @@ object anon {
       __obj.asInstanceOf[BorderColor[RawDatum]]
     }
     
-    extension [Self <: BorderColor[?], RawDatum /* <: StreamDatum */](x: Self & BorderColor[RawDatum]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BorderColor[?], RawDatum /* <: StreamDatum */] (val x: Self & BorderColor[RawDatum]) extends AnyVal {
       
       inline def setBorderColor(value: InheritedColorConfig[StreamLayerData]): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
       
@@ -194,7 +196,8 @@ object anon {
       __obj.asInstanceOf[BorderWidth]
     }
     
-    extension [Self <: BorderWidth](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BorderWidth] (val x: Self) extends AnyVal {
       
       inline def setBorderColor(value: String): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
       
@@ -223,7 +226,8 @@ object anon {
       __obj.asInstanceOf[From]
     }
     
-    extension [Self <: From](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: From] (val x: Self) extends AnyVal {
       
       inline def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     }
@@ -269,7 +273,8 @@ object anon {
       __obj.asInstanceOf[GetBorderColor]
     }
     
-    extension [Self <: GetBorderColor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetBorderColor] (val x: Self) extends AnyVal {
       
       inline def setGetBorderColor(
         value: InheritedColorConfigCustomFunction[StreamLayerData] | (js.Function1[/* d */ StreamLayerData, Any])
@@ -325,7 +330,8 @@ object anon {
       __obj.asInstanceOf[OmitStreamLayerDatalabelc]
     }
     
-    extension [Self <: OmitStreamLayerDatalabelc](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OmitStreamLayerDatalabelc] (val x: Self) extends AnyVal {
       
       inline def setFill(value: String): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
       

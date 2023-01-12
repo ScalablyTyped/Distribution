@@ -33,7 +33,8 @@ object Xsl {
       __obj.asInstanceOf[XsltProcessor]
     }
     
-    extension [Self <: XsltProcessor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XsltProcessor] (val x: Self) extends AnyVal {
       
       inline def setTransformToDocument(value: IXmlNode => XmlDocument): Self = StObject.set(x, "transformToDocument", js.Any.fromFunction1(value))
       

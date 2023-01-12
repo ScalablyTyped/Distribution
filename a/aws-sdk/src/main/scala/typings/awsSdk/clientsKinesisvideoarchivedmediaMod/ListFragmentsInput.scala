@@ -38,7 +38,8 @@ object ListFragmentsInput {
     __obj.asInstanceOf[ListFragmentsInput]
   }
   
-  extension [Self <: ListFragmentsInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListFragmentsInput] (val x: Self) extends AnyVal {
     
     inline def setFragmentSelector(value: FragmentSelector): Self = StObject.set(x, "FragmentSelector", value.asInstanceOf[js.Any])
     

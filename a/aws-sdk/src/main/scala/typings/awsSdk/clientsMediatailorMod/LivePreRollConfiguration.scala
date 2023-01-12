@@ -23,7 +23,8 @@ object LivePreRollConfiguration {
     __obj.asInstanceOf[LivePreRollConfiguration]
   }
   
-  extension [Self <: LivePreRollConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LivePreRollConfiguration] (val x: Self) extends AnyVal {
     
     inline def setAdDecisionServerUrl(value: _String): Self = StObject.set(x, "AdDecisionServerUrl", value.asInstanceOf[js.Any])
     

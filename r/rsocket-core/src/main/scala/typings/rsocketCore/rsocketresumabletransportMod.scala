@@ -93,7 +93,8 @@ object rsocketresumabletransportMod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setBufferSize(value: Double): Self = StObject.set(x, "bufferSize", value.asInstanceOf[js.Any])
       
@@ -123,7 +124,8 @@ object rsocketresumabletransportMod {
       __obj.asInstanceOf[RSocketResumableTransport]
     }
     
-    extension [Self <: RSocketResumableTransport](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RSocketResumableTransport] (val x: Self) extends AnyVal {
       
       inline def setSend(value: Flowable[Frame] => Unit): Self = StObject.set(x, "send", js.Any.fromFunction1(value))
     }

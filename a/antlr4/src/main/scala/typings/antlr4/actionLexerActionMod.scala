@@ -50,7 +50,8 @@ object actionLexerActionMod {
       __obj.asInstanceOf[LexerAction]
     }
     
-    extension [Self <: LexerAction](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LexerAction] (val x: Self) extends AnyVal {
       
       inline def setActionType(value: LexerActionType): Self = StObject.set(x, "actionType", value.asInstanceOf[js.Any])
       

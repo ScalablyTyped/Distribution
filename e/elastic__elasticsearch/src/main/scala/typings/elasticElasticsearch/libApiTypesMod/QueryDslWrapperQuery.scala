@@ -17,7 +17,8 @@ object QueryDslWrapperQuery {
     __obj.asInstanceOf[QueryDslWrapperQuery]
   }
   
-  extension [Self <: QueryDslWrapperQuery](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryDslWrapperQuery] (val x: Self) extends AnyVal {
     
     inline def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
   }

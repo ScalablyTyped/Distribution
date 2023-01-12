@@ -59,7 +59,8 @@ object distCheckpointDbMod {
       __obj.asInstanceOf[Checkpoint]
     }
     
-    extension [Self <: Checkpoint](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Checkpoint] (val x: Self) extends AnyVal {
       
       inline def setKeyValueMap(value: Map[String, Buffer | Null]): Self = StObject.set(x, "keyValueMap", value.asInstanceOf[js.Any])
       

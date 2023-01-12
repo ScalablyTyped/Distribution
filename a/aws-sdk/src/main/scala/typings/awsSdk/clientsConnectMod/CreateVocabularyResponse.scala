@@ -28,7 +28,8 @@ object CreateVocabularyResponse {
     __obj.asInstanceOf[CreateVocabularyResponse]
   }
   
-  extension [Self <: CreateVocabularyResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateVocabularyResponse] (val x: Self) extends AnyVal {
     
     inline def setState(value: VocabularyState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     

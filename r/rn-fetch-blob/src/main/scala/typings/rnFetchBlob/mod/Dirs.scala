@@ -41,7 +41,8 @@ object Dirs {
     __obj.asInstanceOf[Dirs]
   }
   
-  extension [Self <: Dirs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Dirs] (val x: Self) extends AnyVal {
     
     inline def setCacheDir(value: String): Self = StObject.set(x, "CacheDir", value.asInstanceOf[js.Any])
     

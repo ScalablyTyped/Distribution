@@ -18,7 +18,8 @@ object GetDataProtectionPolicyResponse {
     __obj.asInstanceOf[GetDataProtectionPolicyResponse]
   }
   
-  extension [Self <: GetDataProtectionPolicyResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetDataProtectionPolicyResponse] (val x: Self) extends AnyVal {
     
     inline def setDataProtectionPolicy(value: attributeValue): Self = StObject.set(x, "DataProtectionPolicy", value.asInstanceOf[js.Any])
     

@@ -59,7 +59,8 @@ object ButtonComponentData {
     __obj.asInstanceOf[ButtonComponentData]
   }
   
-  extension [Self <: ButtonComponentData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ButtonComponentData] (val x: Self) extends AnyVal {
     
     inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     

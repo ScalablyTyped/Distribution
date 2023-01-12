@@ -27,7 +27,8 @@ object HostId {
     __obj.asInstanceOf[HostId]
   }
   
-  extension [Self <: HostId](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HostId] (val x: Self) extends AnyVal {
     
     inline def setHostId(value: String): Self = StObject.set(x, "hostId", value.asInstanceOf[js.Any])
     

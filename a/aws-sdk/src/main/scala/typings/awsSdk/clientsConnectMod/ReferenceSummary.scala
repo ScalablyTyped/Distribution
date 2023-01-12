@@ -43,7 +43,8 @@ object ReferenceSummary {
     __obj.asInstanceOf[ReferenceSummary]
   }
   
-  extension [Self <: ReferenceSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReferenceSummary] (val x: Self) extends AnyVal {
     
     inline def setAttachment(value: AttachmentReference): Self = StObject.set(x, "Attachment", value.asInstanceOf[js.Any])
     

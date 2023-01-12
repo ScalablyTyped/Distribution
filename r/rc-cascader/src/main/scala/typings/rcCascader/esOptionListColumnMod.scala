@@ -67,7 +67,8 @@ object esOptionListColumnMod {
       __obj.asInstanceOf[ColumnProps]
     }
     
-    extension [Self <: ColumnProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColumnProps] (val x: Self) extends AnyVal {
       
       inline def setActiveValue(value: Key): Self = StObject.set(x, "activeValue", value.asInstanceOf[js.Any])
       

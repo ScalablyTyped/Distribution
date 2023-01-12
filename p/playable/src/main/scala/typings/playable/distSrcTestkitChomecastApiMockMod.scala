@@ -188,7 +188,8 @@ object distSrcTestkitChomecastApiMockMod {
       __obj.asInstanceOf[Publisher]
     }
     
-    extension [Self <: Publisher](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Publisher] (val x: Self) extends AnyVal {
       
       inline def setAddEventListener(value: (eventType, js.Function) => Unit): Self = StObject.set(x, "addEventListener", js.Any.fromFunction2(value))
       
@@ -209,7 +210,8 @@ object distSrcTestkitChomecastApiMockMod {
       __obj.asInstanceOf[RemotePlayer]
     }
     
-    extension [Self <: RemotePlayer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RemotePlayer] (val x: Self) extends AnyVal {
       
       inline def setCurrentTime(value: Double): Self = StObject.set(x, "currentTime", value.asInstanceOf[js.Any])
     }
@@ -239,7 +241,8 @@ object distSrcTestkitChomecastApiMockMod {
       __obj.asInstanceOf[RemotePlayerController]
     }
     
-    extension [Self <: RemotePlayerController](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RemotePlayerController] (val x: Self) extends AnyVal {
       
       inline def setPlayer(value: RemotePlayer): Self = StObject.set(x, "player", value.asInstanceOf[js.Any])
       

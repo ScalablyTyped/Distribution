@@ -33,7 +33,8 @@ object ListPrefetchSchedulesRequest {
     __obj.asInstanceOf[ListPrefetchSchedulesRequest]
   }
   
-  extension [Self <: ListPrefetchSchedulesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListPrefetchSchedulesRequest] (val x: Self) extends AnyVal {
     
     inline def setMaxResults(value: integerMin1Max100): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     

@@ -203,7 +203,8 @@ object libGridTreeViewMod {
       __obj.asInstanceOf[AbstractTree]
     }
     
-    extension [Self <: AbstractTree](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AbstractTree] (val x: Self) extends AnyVal {
       
       inline def setAddChild(value: (Any, Any, Any, Any) => Any): Self = StObject.set(x, "addChild", js.Any.fromFunction4(value))
       
@@ -277,7 +278,8 @@ object libGridTreeViewMod {
       __obj.asInstanceOf[TreeChild]
     }
     
-    extension [Self <: TreeChild](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TreeChild] (val x: Self) extends AnyVal {
       
       inline def setCss(value: Any): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
       
@@ -308,7 +310,8 @@ object libGridTreeViewMod {
       __obj.asInstanceOf[TreeView]
     }
     
-    extension [Self <: TreeView](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TreeView] (val x: Self) extends AnyVal {
       
       inline def setField(value: Any): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
       

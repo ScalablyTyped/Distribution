@@ -92,7 +92,8 @@ object mod {
       __obj.asInstanceOf[JsonOptions]
     }
     
-    extension [Self <: JsonOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JsonOptions] (val x: Self) extends AnyVal {
       
       inline def setAlternateTextNode(value: Boolean | String): Self = StObject.set(x, "alternateTextNode", value.asInstanceOf[js.Any])
       
@@ -153,7 +154,8 @@ object mod {
       __obj.asInstanceOf[XmlOptions]
     }
     
-    extension [Self <: XmlOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XmlOptions] (val x: Self) extends AnyVal {
       
       inline def setIgnoreNull(value: Boolean): Self = StObject.set(x, "ignoreNull", value.asInstanceOf[js.Any])
       

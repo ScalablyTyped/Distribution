@@ -17,7 +17,8 @@ object CompassOptions {
     __obj.asInstanceOf[CompassOptions]
   }
   
-  extension [Self <: CompassOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CompassOptions] (val x: Self) extends AnyVal {
     
     inline def setFilter(value: Double): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     

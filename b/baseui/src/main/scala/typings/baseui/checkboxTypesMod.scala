@@ -35,7 +35,8 @@ object checkboxTypesMod {
       __obj.asInstanceOf[CheckboxOverrides]
     }
     
-    extension [Self <: CheckboxOverrides](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CheckboxOverrides] (val x: Self) extends AnyVal {
       
       inline def setCheckmark(value: Override[Any]): Self = StObject.set(x, "Checkmark", value.asInstanceOf[js.Any])
       
@@ -155,7 +156,8 @@ object checkboxTypesMod {
       __obj.asInstanceOf[CheckboxProps]
     }
     
-    extension [Self <: CheckboxProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CheckboxProps] (val x: Self) extends AnyVal {
       
       inline def `setAria-describedby`(value: String): Self = StObject.set(x, "aria-describedby", value.asInstanceOf[js.Any])
       
@@ -282,7 +284,8 @@ object checkboxTypesMod {
       __obj.asInstanceOf[CheckboxReducerState]
     }
     
-    extension [Self <: CheckboxReducerState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CheckboxReducerState] (val x: Self) extends AnyVal {
       
       inline def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
       
@@ -311,7 +314,8 @@ object checkboxTypesMod {
       __obj.asInstanceOf[CheckboxState]
     }
     
-    extension [Self <: CheckboxState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CheckboxState] (val x: Self) extends AnyVal {
       
       inline def setIsActive(value: Boolean): Self = StObject.set(x, "isActive", value.asInstanceOf[js.Any])
       
@@ -385,7 +389,8 @@ object checkboxTypesMod {
       __obj.asInstanceOf[DefaultProps]
     }
     
-    extension [Self <: DefaultProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DefaultProps] (val x: Self) extends AnyVal {
       
       inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
       
@@ -464,7 +469,8 @@ object checkboxTypesMod {
       __obj.asInstanceOf[DefaultStatefulProps]
     }
     
-    extension [Self <: DefaultStatefulProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DefaultStatefulProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: /* a */ StatefulContainerChildProps => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
       
@@ -560,7 +566,8 @@ object checkboxTypesMod {
       __obj.asInstanceOf[SharedStyleProps]
     }
     
-    extension [Self <: SharedStyleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SharedStyleProps] (val x: Self) extends AnyVal {
       
       inline def set$checked(value: Boolean): Self = StObject.set(x, "$checked", value.asInstanceOf[js.Any])
       
@@ -659,7 +666,8 @@ object checkboxTypesMod {
       __obj.asInstanceOf[StatefulCheckboxProps]
     }
     
-    extension [Self <: StatefulCheckboxProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StatefulCheckboxProps] (val x: Self) extends AnyVal {
       
       inline def `setAria-describedby`(value: String): Self = StObject.set(x, "aria-describedby", value.asInstanceOf[js.Any])
       
@@ -804,7 +812,8 @@ object checkboxTypesMod {
       __obj.asInstanceOf[StatefulContainerChildProps]
     }
     
-    extension [Self <: StatefulContainerChildProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StatefulContainerChildProps] (val x: Self) extends AnyVal {
       
       inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
       
@@ -876,7 +885,8 @@ object checkboxTypesMod {
       __obj.asInstanceOf[StatefulContainerProps]
     }
     
-    extension [Self <: StatefulContainerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StatefulContainerProps] (val x: Self) extends AnyVal {
       
       inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
       

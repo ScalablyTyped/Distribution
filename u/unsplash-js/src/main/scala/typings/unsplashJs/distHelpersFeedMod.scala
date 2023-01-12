@@ -26,7 +26,8 @@ object distHelpersFeedMod {
       __obj.asInstanceOf[FeedResponse[T]]
     }
     
-    extension [Self <: FeedResponse[?], T](x: Self & FeedResponse[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FeedResponse[?], T] (val x: Self & FeedResponse[T]) extends AnyVal {
       
       inline def setResults(value: js.Array[T]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
       

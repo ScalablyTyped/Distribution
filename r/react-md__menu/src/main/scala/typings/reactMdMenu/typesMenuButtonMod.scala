@@ -32,7 +32,8 @@ object typesMenuButtonMod {
       __obj.asInstanceOf[MenuButtonProps]
     }
     
-    extension [Self <: MenuButtonProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MenuButtonProps] (val x: Self) extends AnyVal {
       
       inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     }

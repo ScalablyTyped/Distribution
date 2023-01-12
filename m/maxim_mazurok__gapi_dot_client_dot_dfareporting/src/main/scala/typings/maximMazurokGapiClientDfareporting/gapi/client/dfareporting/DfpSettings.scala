@@ -28,7 +28,8 @@ object DfpSettings {
     __obj.asInstanceOf[DfpSettings]
   }
   
-  extension [Self <: DfpSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DfpSettings] (val x: Self) extends AnyVal {
     
     inline def setDfpNetworkCode(value: String): Self = StObject.set(x, "dfpNetworkCode", value.asInstanceOf[js.Any])
     

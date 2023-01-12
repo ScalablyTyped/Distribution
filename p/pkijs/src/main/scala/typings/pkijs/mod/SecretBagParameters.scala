@@ -20,7 +20,8 @@ object SecretBagParameters {
     __obj.asInstanceOf[SecretBagParameters]
   }
   
-  extension [Self <: SecretBagParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SecretBagParameters] (val x: Self) extends AnyVal {
     
     inline def setSchema(value: SchemaType): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
     

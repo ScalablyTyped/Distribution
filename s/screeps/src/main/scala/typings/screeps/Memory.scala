@@ -30,7 +30,8 @@ object Memory {
     __obj.asInstanceOf[Memory]
   }
   
-  extension [Self <: Memory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Memory] (val x: Self) extends AnyVal {
     
     inline def setCreeps(value: StringDictionary[CreepMemory]): Self = StObject.set(x, "creeps", value.asInstanceOf[js.Any])
     

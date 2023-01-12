@@ -42,7 +42,8 @@ object IRouteSummary {
     __obj.asInstanceOf[IRouteSummary]
   }
   
-  extension [Self <: IRouteSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IRouteSummary] (val x: Self) extends AnyVal {
     
     inline def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
     

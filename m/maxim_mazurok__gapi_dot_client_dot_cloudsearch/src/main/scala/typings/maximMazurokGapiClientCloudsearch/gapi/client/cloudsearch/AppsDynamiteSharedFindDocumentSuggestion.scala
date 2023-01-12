@@ -19,7 +19,8 @@ object AppsDynamiteSharedFindDocumentSuggestion {
     __obj.asInstanceOf[AppsDynamiteSharedFindDocumentSuggestion]
   }
   
-  extension [Self <: AppsDynamiteSharedFindDocumentSuggestion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppsDynamiteSharedFindDocumentSuggestion] (val x: Self) extends AnyVal {
     
     inline def setDocumentSuggestions(value: js.Array[AppsDynamiteSharedDocument]): Self = StObject.set(x, "documentSuggestions", value.asInstanceOf[js.Any])
     

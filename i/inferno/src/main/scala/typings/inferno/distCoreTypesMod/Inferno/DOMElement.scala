@@ -26,7 +26,8 @@ object DOMElement {
     __obj.asInstanceOf[DOMElement[P, T]]
   }
   
-  extension [Self <: DOMElement[?, ?], P /* <: HTMLAttributes[T] | SVGAttributes[T] */, T /* <: Element */](x: Self & (DOMElement[P, T])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DOMElement[?, ?], P /* <: HTMLAttributes[T] | SVGAttributes[T] */, T /* <: Element */] (val x: Self & (DOMElement[P, T])) extends AnyVal {
     
     inline def setRef(value: /* instance */ T | Null => Any): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
     

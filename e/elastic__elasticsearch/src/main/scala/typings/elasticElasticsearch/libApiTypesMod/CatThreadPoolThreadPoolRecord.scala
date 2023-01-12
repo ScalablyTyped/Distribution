@@ -93,7 +93,8 @@ object CatThreadPoolThreadPoolRecord {
     __obj.asInstanceOf[CatThreadPoolThreadPoolRecord]
   }
   
-  extension [Self <: CatThreadPoolThreadPoolRecord](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CatThreadPoolThreadPoolRecord] (val x: Self) extends AnyVal {
     
     inline def setA(value: String): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
     

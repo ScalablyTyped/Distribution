@@ -89,7 +89,8 @@ object mod extends Shortcut {
         __obj.asInstanceOf[SalesTaxAmountResult]
       }
       
-      extension [Self <: SalesTaxAmountResult](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SalesTaxAmountResult] (val x: Self) extends AnyVal {
         
         inline def setPrice(value: Double): Self = StObject.set(x, "price", value.asInstanceOf[js.Any])
         
@@ -126,7 +127,8 @@ object mod extends Shortcut {
         __obj.asInstanceOf[SalesTaxResult]
       }
       
-      extension [Self <: SalesTaxResult](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SalesTaxResult] (val x: Self) extends AnyVal {
         
         inline def setArea(value: worldwide | national | regional): Self = StObject.set(x, "area", value.asInstanceOf[js.Any])
         
@@ -159,7 +161,8 @@ object mod extends Shortcut {
         __obj.asInstanceOf[TaxExchangeStatus]
       }
       
-      extension [Self <: TaxExchangeStatus](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: TaxExchangeStatus] (val x: Self) extends AnyVal {
         
         inline def setArea(value: worldwide | national | regional): Self = StObject.set(x, "area", value.asInstanceOf[js.Any])
         

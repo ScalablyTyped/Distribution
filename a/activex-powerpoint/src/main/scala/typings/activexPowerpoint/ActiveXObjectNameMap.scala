@@ -18,7 +18,8 @@ object ActiveXObjectNameMap {
     __obj.asInstanceOf[ActiveXObjectNameMap]
   }
   
-  extension [Self <: ActiveXObjectNameMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ActiveXObjectNameMap] (val x: Self) extends AnyVal {
     
     inline def setPowerPointDotApplication(value: Application): Self = StObject.set(x, "PowerPoint.Application", value.asInstanceOf[js.Any])
   }

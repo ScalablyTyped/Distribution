@@ -17,7 +17,8 @@ object ScalePointSpec {
     __obj.asInstanceOf[ScalePointSpec]
   }
   
-  extension [Self <: ScalePointSpec](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScalePointSpec] (val x: Self) extends AnyVal {
     
     inline def setType(value: point): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

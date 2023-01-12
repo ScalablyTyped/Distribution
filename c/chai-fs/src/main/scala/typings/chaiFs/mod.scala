@@ -25,7 +25,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Object]
     }
     
-    extension [Self <: Object](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Object] (val x: Self) extends AnyVal {
       
       inline def setShould(value: Assertion): Self = StObject.set(x, "should", value.asInstanceOf[js.Any])
     }
@@ -458,7 +459,8 @@ object mod extends Shortcut {
           __obj.asInstanceOf[LanguageChains]
         }
         
-        extension [Self <: LanguageChains](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: LanguageChains] (val x: Self) extends AnyVal {
           
           inline def setJson(value: Assertion): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
           

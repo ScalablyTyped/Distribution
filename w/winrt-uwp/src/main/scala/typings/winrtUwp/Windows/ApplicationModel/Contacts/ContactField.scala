@@ -27,7 +27,8 @@ object ContactField {
     __obj.asInstanceOf[ContactField]
   }
   
-  extension [Self <: ContactField](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContactField] (val x: Self) extends AnyVal {
     
     inline def setCategory(value: ContactFieldCategory): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     

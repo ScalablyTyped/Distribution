@@ -373,7 +373,8 @@ object sapUiWebcMainMenuMod {
       __obj.asInstanceOf[MenuSettings]
     }
     
-    extension [Self <: MenuSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MenuSettings] (val x: Self) extends AnyVal {
       
       inline def setHeaderText(value: String | PropertyBindingInfo): Self = StObject.set(x, "headerText", value.asInstanceOf[js.Any])
       

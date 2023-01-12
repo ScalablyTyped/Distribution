@@ -33,7 +33,8 @@ object EnhancedMouseEvent {
     __obj.asInstanceOf[EnhancedMouseEvent]
   }
   
-  extension [Self <: EnhancedMouseEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnhancedMouseEvent] (val x: Self) extends AnyVal {
     
     inline def setTarget(value: XInterface): Self = StObject.set(x, "Target", value.asInstanceOf[js.Any])
   }

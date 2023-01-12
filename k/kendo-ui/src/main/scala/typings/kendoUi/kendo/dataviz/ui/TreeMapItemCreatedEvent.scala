@@ -19,7 +19,8 @@ object TreeMapItemCreatedEvent {
     __obj.asInstanceOf[TreeMapItemCreatedEvent]
   }
   
-  extension [Self <: TreeMapItemCreatedEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TreeMapItemCreatedEvent] (val x: Self) extends AnyVal {
     
     inline def setElement(value: JQuery | Element): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     

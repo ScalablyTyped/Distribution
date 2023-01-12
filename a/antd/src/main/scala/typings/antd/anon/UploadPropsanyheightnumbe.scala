@@ -144,7 +144,8 @@ object UploadPropsanyheightnumbe {
     __obj.asInstanceOf[UploadPropsanyheightnumbe]
   }
   
-  extension [Self <: UploadPropsanyheightnumbe](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UploadPropsanyheightnumbe] (val x: Self) extends AnyVal {
     
     inline def setAccept(value: String): Self = StObject.set(x, "accept", value.asInstanceOf[js.Any])
     

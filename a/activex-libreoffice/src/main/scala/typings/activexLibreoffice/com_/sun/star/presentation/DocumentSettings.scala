@@ -108,7 +108,8 @@ object DocumentSettings {
     __obj.asInstanceOf[DocumentSettings]
   }
   
-  extension [Self <: DocumentSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DocumentSettings] (val x: Self) extends AnyVal {
     
     inline def setIsPrintDrawing(value: Boolean): Self = StObject.set(x, "IsPrintDrawing", value.asInstanceOf[js.Any])
     

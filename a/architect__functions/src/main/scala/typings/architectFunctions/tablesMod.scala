@@ -22,7 +22,8 @@ object tablesMod {
       __obj.asInstanceOf[ArcData]
     }
     
-    extension [Self <: ArcData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ArcData] (val x: Self) extends AnyVal {
       
       inline def setName(value: String => js.UndefOr[String]): Self = StObject.set(x, "name", js.Any.fromFunction1(value))
       

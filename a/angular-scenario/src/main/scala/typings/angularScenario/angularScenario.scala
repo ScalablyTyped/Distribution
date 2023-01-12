@@ -121,7 +121,8 @@ object angularScenario {
       __obj.asInstanceOf[Expect]
     }
     
-    extension [Self <: Expect](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Expect] (val x: Self) extends AnyVal {
       
       inline def setNot(value: () => CustomMatchers): Self = StObject.set(x, "not", js.Any.fromFunction0(value))
     }
@@ -147,7 +148,8 @@ object angularScenario {
       __obj.asInstanceOf[Input]
     }
     
-    extension [Self <: Input](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Input] (val x: Self) extends AnyVal {
       
       inline def setCheck(value: () => Any): Self = StObject.set(x, "check", js.Any.fromFunction0(value))
       
@@ -199,7 +201,8 @@ object angularScenario {
       __obj.asInstanceOf[Matchers]
     }
     
-    extension [Self <: Matchers](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Matchers] (val x: Self) extends AnyVal {
       
       inline def setToBe(value: Any => Unit): Self = StObject.set(x, "toBe", js.Any.fromFunction1(value))
       
@@ -240,7 +243,8 @@ object angularScenario {
       __obj.asInstanceOf[Repeater]
     }
     
-    extension [Self <: Repeater](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Repeater] (val x: Self) extends AnyVal {
       
       inline def setColumn(value: String => Future): Self = StObject.set(x, "column", js.Any.fromFunction1(value))
       
@@ -282,7 +286,8 @@ object angularScenario {
       __obj.asInstanceOf[testLocation]
     }
     
-    extension [Self <: testLocation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: testLocation] (val x: Self) extends AnyVal {
       
       inline def setHash(value: () => Future): Self = StObject.set(x, "hash", js.Any.fromFunction0(value))
       
@@ -311,7 +316,8 @@ object angularScenario {
       __obj.asInstanceOf[testWindow]
     }
     
-    extension [Self <: testWindow](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: testWindow] (val x: Self) extends AnyVal {
       
       inline def setHash(value: () => Future): Self = StObject.set(x, "hash", js.Any.fromFunction0(value))
       

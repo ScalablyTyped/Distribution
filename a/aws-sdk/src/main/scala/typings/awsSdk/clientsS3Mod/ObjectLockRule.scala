@@ -18,7 +18,8 @@ object ObjectLockRule {
     __obj.asInstanceOf[ObjectLockRule]
   }
   
-  extension [Self <: ObjectLockRule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ObjectLockRule] (val x: Self) extends AnyVal {
     
     inline def setDefaultRetention(value: DefaultRetention): Self = StObject.set(x, "DefaultRetention", value.asInstanceOf[js.Any])
     

@@ -47,7 +47,8 @@ object mod {
       __obj.asInstanceOf[Match]
     }
     
-    extension [Self <: Match](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Match] (val x: Self) extends AnyVal {
       
       inline def setGroups(value: js.Array[String]): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
       
@@ -79,7 +80,8 @@ object mod {
       __obj.asInstanceOf[MatchesOptions]
     }
     
-    extension [Self <: MatchesOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MatchesOptions] (val x: Self) extends AnyVal {
       
       inline def setMatchTimeout(value: Double): Self = StObject.set(x, "matchTimeout", value.asInstanceOf[js.Any])
       

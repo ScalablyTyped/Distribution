@@ -34,7 +34,8 @@ object BrokerSoftwareInfo {
     __obj.asInstanceOf[BrokerSoftwareInfo]
   }
   
-  extension [Self <: BrokerSoftwareInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BrokerSoftwareInfo] (val x: Self) extends AnyVal {
     
     inline def setConfigurationArn(value: string): Self = StObject.set(x, "ConfigurationArn", value.asInstanceOf[js.Any])
     

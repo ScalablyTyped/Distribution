@@ -19,7 +19,8 @@ object OutlineItem {
     __obj.asInstanceOf[OutlineItem]
   }
   
-  extension [Self <: OutlineItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OutlineItem] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: js.Array[Any]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

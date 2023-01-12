@@ -19,7 +19,8 @@ object SurfaceOptions {
     __obj.asInstanceOf[SurfaceOptions]
   }
   
-  extension [Self <: SurfaceOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SurfaceOptions] (val x: Self) extends AnyVal {
     
     inline def setEnhanceWithNativeAR(value: Boolean): Self = StObject.set(x, "enhanceWithNativeAR", value.asInstanceOf[js.Any])
   }

@@ -61,7 +61,8 @@ object ImageUrl {
     __obj.asInstanceOf[ImageUrl]
   }
   
-  extension [Self <: ImageUrl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImageUrl] (val x: Self) extends AnyVal {
     
     inline def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
     

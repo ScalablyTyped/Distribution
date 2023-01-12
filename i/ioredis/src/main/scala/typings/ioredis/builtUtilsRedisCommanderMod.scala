@@ -242,7 +242,8 @@ object builtUtilsRedisCommanderMod {
       __obj.asInstanceOf[ClientContext]
     }
     
-    extension [Self <: ClientContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClientContext] (val x: Self) extends AnyVal {
       
       inline def setType(
         value: /* keyof ioredis.ioredis/built/utils/RedisCommander.ResultTypes<unknown, unknown> */ default | pipeline
@@ -31203,7 +31204,8 @@ object builtUtilsRedisCommanderMod {
       __obj.asInstanceOf[ResultTypes[Result, Context]]
     }
     
-    extension [Self <: ResultTypes[?, ?], Result, Context](x: Self & (ResultTypes[Result, Context])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResultTypes[?, ?], Result, Context] (val x: Self & (ResultTypes[Result, Context])) extends AnyVal {
       
       inline def setDefault(value: js.Promise[Result]): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
       

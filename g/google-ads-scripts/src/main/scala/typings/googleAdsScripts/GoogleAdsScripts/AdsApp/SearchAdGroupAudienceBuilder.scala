@@ -46,7 +46,8 @@ object SearchAdGroupAudienceBuilder {
     __obj.asInstanceOf[SearchAdGroupAudienceBuilder]
   }
   
-  extension [Self <: SearchAdGroupAudienceBuilder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchAdGroupAudienceBuilder] (val x: Self) extends AnyVal {
     
     inline def setExclude(value: () => SearchAdGroupExcludedAudienceOperation): Self = StObject.set(x, "exclude", js.Any.fromFunction0(value))
     

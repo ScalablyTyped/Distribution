@@ -113,7 +113,8 @@ object srcTreeActionMod {
       __obj.asInstanceOf[ActionBase]
     }
     
-    extension [Self <: ActionBase](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ActionBase] (val x: Self) extends AnyVal {
       
       inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -139,7 +140,8 @@ object srcTreeActionMod {
       __obj.asInstanceOf[CreateFileAction]
     }
     
-    extension [Self <: CreateFileAction](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateFileAction] (val x: Self) extends AnyVal {
       
       inline def setContent(value: Buffer): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
@@ -161,7 +163,8 @@ object srcTreeActionMod {
       __obj.asInstanceOf[DeleteFileAction]
     }
     
-    extension [Self <: DeleteFileAction](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeleteFileAction] (val x: Self) extends AnyVal {
       
       inline def setKind(value: d): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     }
@@ -183,7 +186,8 @@ object srcTreeActionMod {
       __obj.asInstanceOf[OverwriteFileAction]
     }
     
-    extension [Self <: OverwriteFileAction](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OverwriteFileAction] (val x: Self) extends AnyVal {
       
       inline def setContent(value: Buffer): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
@@ -207,7 +211,8 @@ object srcTreeActionMod {
       __obj.asInstanceOf[RenameFileAction]
     }
     
-    extension [Self <: RenameFileAction](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RenameFileAction] (val x: Self) extends AnyVal {
       
       inline def setKind(value: r): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
       

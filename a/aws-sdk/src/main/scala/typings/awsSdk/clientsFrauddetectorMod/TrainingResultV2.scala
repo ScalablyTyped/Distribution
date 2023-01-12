@@ -27,7 +27,8 @@ object TrainingResultV2 {
     __obj.asInstanceOf[TrainingResultV2]
   }
   
-  extension [Self <: TrainingResultV2](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TrainingResultV2] (val x: Self) extends AnyVal {
     
     inline def setAggregatedVariablesImportanceMetrics(value: AggregatedVariablesImportanceMetrics): Self = StObject.set(x, "aggregatedVariablesImportanceMetrics", value.asInstanceOf[js.Any])
     

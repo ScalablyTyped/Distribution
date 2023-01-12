@@ -40,7 +40,8 @@ object esPopupMod {
       __obj.asInstanceOf[ContentProps]
     }
     
-    extension [Self <: ContentProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContentProps] (val x: Self) extends AnyVal {
       
       inline def setArrowContent(value: ReactNode): Self = StObject.set(x, "arrowContent", value.asInstanceOf[js.Any])
       

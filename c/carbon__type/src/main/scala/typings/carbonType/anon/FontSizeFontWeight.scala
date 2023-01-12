@@ -49,7 +49,8 @@ object FontSizeFontWeight {
     __obj.asInstanceOf[FontSizeFontWeight]
   }
   
-  extension [Self <: FontSizeFontWeight](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FontSizeFontWeight] (val x: Self) extends AnyVal {
     
     inline def `set@media Leftparenthesismin-widthColon 42remRightparenthesis`(value: FontFamily): Self = StObject.set(x, "@media (min-width: 42rem)", value.asInstanceOf[js.Any])
     

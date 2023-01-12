@@ -22,7 +22,8 @@ object GoogleChatV1WidgetMarkupFormAction {
     __obj.asInstanceOf[GoogleChatV1WidgetMarkupFormAction]
   }
   
-  extension [Self <: GoogleChatV1WidgetMarkupFormAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleChatV1WidgetMarkupFormAction] (val x: Self) extends AnyVal {
     
     inline def setActionMethodName(value: String): Self = StObject.set(x, "actionMethodName", value.asInstanceOf[js.Any])
     

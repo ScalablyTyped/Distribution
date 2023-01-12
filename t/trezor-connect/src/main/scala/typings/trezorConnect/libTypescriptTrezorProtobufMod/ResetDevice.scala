@@ -33,7 +33,8 @@ object ResetDevice {
     __obj.asInstanceOf[ResetDevice]
   }
   
-  extension [Self <: ResetDevice](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResetDevice] (val x: Self) extends AnyVal {
     
     inline def setBackup_type(value: String | Double): Self = StObject.set(x, "backup_type", value.asInstanceOf[js.Any])
     

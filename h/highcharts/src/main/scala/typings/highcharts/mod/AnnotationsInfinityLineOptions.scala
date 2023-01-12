@@ -34,7 +34,8 @@ object AnnotationsInfinityLineOptions {
     __obj.asInstanceOf[AnnotationsInfinityLineOptions]
   }
   
-  extension [Self <: AnnotationsInfinityLineOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnnotationsInfinityLineOptions] (val x: Self) extends AnyVal {
     
     inline def setControlPointOptions(value: AnnotationsInfinityLineControlPointOptions): Self = StObject.set(x, "controlPointOptions", value.asInstanceOf[js.Any])
     

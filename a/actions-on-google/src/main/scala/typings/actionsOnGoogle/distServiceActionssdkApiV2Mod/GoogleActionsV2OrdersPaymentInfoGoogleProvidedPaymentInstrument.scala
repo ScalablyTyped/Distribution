@@ -24,7 +24,8 @@ object GoogleActionsV2OrdersPaymentInfoGoogleProvidedPaymentInstrument {
     __obj.asInstanceOf[GoogleActionsV2OrdersPaymentInfoGoogleProvidedPaymentInstrument]
   }
   
-  extension [Self <: GoogleActionsV2OrdersPaymentInfoGoogleProvidedPaymentInstrument](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleActionsV2OrdersPaymentInfoGoogleProvidedPaymentInstrument] (val x: Self) extends AnyVal {
     
     inline def setBillingAddress(value: GoogleTypePostalAddress): Self = StObject.set(x, "billingAddress", value.asInstanceOf[js.Any])
     

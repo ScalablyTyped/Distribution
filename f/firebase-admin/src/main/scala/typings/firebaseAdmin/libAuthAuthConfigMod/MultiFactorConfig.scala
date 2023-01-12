@@ -24,7 +24,8 @@ object MultiFactorConfig {
     __obj.asInstanceOf[MultiFactorConfig]
   }
   
-  extension [Self <: MultiFactorConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MultiFactorConfig] (val x: Self) extends AnyVal {
     
     inline def setFactorIds(value: js.Array[AuthFactorType]): Self = StObject.set(x, "factorIds", value.asInstanceOf[js.Any])
     

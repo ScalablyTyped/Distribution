@@ -19,7 +19,8 @@ object FetchOffset {
     __obj.asInstanceOf[FetchOffset]
   }
   
-  extension [Self <: FetchOffset](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FetchOffset] (val x: Self) extends AnyVal {
     
     inline def setFetchOffset(value: String): Self = StObject.set(x, "fetchOffset", value.asInstanceOf[js.Any])
     

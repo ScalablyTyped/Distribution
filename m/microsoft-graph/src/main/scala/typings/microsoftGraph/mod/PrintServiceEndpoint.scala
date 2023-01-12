@@ -21,7 +21,8 @@ object PrintServiceEndpoint {
     __obj.asInstanceOf[PrintServiceEndpoint]
   }
   
-  extension [Self <: PrintServiceEndpoint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PrintServiceEndpoint] (val x: Self) extends AnyVal {
     
     inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object AppsDynamiteSharedJustification {
     __obj.asInstanceOf[AppsDynamiteSharedJustification]
   }
   
-  extension [Self <: AppsDynamiteSharedJustification](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppsDynamiteSharedJustification] (val x: Self) extends AnyVal {
     
     inline def setActionTime(value: String): Self = StObject.set(x, "actionTime", value.asInstanceOf[js.Any])
     

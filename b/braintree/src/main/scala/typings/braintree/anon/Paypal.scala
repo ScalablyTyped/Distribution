@@ -21,7 +21,8 @@ object Paypal {
     __obj.asInstanceOf[Paypal]
   }
   
-  extension [Self <: Paypal](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Paypal] (val x: Self) extends AnyVal {
     
     inline def setPaypal(value: Description): Self = StObject.set(x, "paypal", value.asInstanceOf[js.Any])
     

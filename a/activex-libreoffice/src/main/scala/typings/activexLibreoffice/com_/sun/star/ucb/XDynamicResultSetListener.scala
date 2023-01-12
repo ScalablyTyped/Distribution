@@ -43,7 +43,8 @@ object XDynamicResultSetListener {
     __obj.asInstanceOf[XDynamicResultSetListener]
   }
   
-  extension [Self <: XDynamicResultSetListener](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XDynamicResultSetListener] (val x: Self) extends AnyVal {
     
     inline def setNotify_(value: ListEvent => Unit): Self = StObject.set(x, "notify", js.Any.fromFunction1(value))
   }

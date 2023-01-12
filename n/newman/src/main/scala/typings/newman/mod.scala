@@ -47,7 +47,8 @@ object mod {
       __obj.asInstanceOf[ConsoleEvent]
     }
     
-    extension [Self <: ConsoleEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConsoleEvent] (val x: Self) extends AnyVal {
       
       inline def setCursor(value: Cursor): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
       
@@ -111,7 +112,8 @@ object mod {
       __obj.asInstanceOf[Cursor]
     }
     
-    extension [Self <: Cursor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Cursor] (val x: Self) extends AnyVal {
       
       inline def setBof(value: Boolean): Self = StObject.set(x, "bof", value.asInstanceOf[js.Any])
       
@@ -156,7 +158,8 @@ object mod {
       __obj.asInstanceOf[NewmanRun]
     }
     
-    extension [Self <: NewmanRun](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NewmanRun] (val x: Self) extends AnyVal {
       
       inline def setExecutions(value: js.Array[NewmanRunExecution]): Self = StObject.set(x, "executions", value.asInstanceOf[js.Any])
       
@@ -183,7 +186,8 @@ object mod {
       __obj.asInstanceOf[NewmanRunExecution]
     }
     
-    extension [Self <: NewmanRunExecution](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NewmanRunExecution] (val x: Self) extends AnyVal {
       
       inline def setAssertions(value: js.Array[NewmanRunExecutionAssertion]): Self = StObject.set(x, "assertions", value.asInstanceOf[js.Any])
       
@@ -206,7 +210,8 @@ object mod {
       __obj.asInstanceOf[NewmanRunExecutionAssertion]
     }
     
-    extension [Self <: NewmanRunExecutionAssertion](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NewmanRunExecutionAssertion] (val x: Self) extends AnyVal {
       
       inline def setAssertion(value: String): Self = StObject.set(x, "assertion", value.asInstanceOf[js.Any])
       
@@ -233,7 +238,8 @@ object mod {
       __obj.asInstanceOf[NewmanRunExecutionAssertionError]
     }
     
-    extension [Self <: NewmanRunExecutionAssertionError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NewmanRunExecutionAssertionError] (val x: Self) extends AnyVal {
       
       inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
@@ -258,7 +264,8 @@ object mod {
       __obj.asInstanceOf[NewmanRunExecutionItem]
     }
     
-    extension [Self <: NewmanRunExecutionItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NewmanRunExecutionItem] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
@@ -284,7 +291,8 @@ object mod {
       __obj.asInstanceOf[NewmanRunFailure]
     }
     
-    extension [Self <: NewmanRunFailure](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NewmanRunFailure] (val x: Self) extends AnyVal {
       
       inline def setAt(value: String): Self = StObject.set(x, "at", value.asInstanceOf[js.Any])
       
@@ -486,7 +494,8 @@ object mod {
       __obj.asInstanceOf[NewmanRunOptions]
     }
     
-    extension [Self <: NewmanRunOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NewmanRunOptions] (val x: Self) extends AnyVal {
       
       inline def setBail(value: Boolean | (js.Array[folder | failure])): Self = StObject.set(x, "bail", value.asInstanceOf[js.Any])
       
@@ -639,7 +648,8 @@ object mod {
       __obj.asInstanceOf[NewmanRunStat]
     }
     
-    extension [Self <: NewmanRunStat](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NewmanRunStat] (val x: Self) extends AnyVal {
       
       inline def setFailed(value: Double): Self = StObject.set(x, "failed", value.asInstanceOf[js.Any])
       
@@ -674,7 +684,8 @@ object mod {
       __obj.asInstanceOf[NewmanRunSummary]
     }
     
-    extension [Self <: NewmanRunSummary](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NewmanRunSummary] (val x: Self) extends AnyVal {
       
       inline def setCollection(value: Any): Self = StObject.set(x, "collection", value.asInstanceOf[js.Any])
       

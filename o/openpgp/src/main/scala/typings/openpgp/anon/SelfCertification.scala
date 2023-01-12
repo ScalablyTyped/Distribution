@@ -18,7 +18,8 @@ object SelfCertification {
     __obj.asInstanceOf[SelfCertification]
   }
   
-  extension [Self <: SelfCertification](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SelfCertification] (val x: Self) extends AnyVal {
     
     inline def setSelfCertification(value: typings.openpgp.mod.packet.Signature): Self = StObject.set(x, "selfCertification", value.asInstanceOf[js.Any])
     

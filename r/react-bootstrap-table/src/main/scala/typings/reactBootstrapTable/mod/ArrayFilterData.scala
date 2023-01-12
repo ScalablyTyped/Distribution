@@ -21,7 +21,8 @@ object ArrayFilterData {
     __obj.asInstanceOf[ArrayFilterData]
   }
   
-  extension [Self <: ArrayFilterData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ArrayFilterData] (val x: Self) extends AnyVal {
     
     inline def setType(value: ArrayFilter): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

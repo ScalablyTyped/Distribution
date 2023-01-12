@@ -27,7 +27,8 @@ object ObjectOptions {
     __obj.asInstanceOf[ObjectOptions]
   }
   
-  extension [Self <: ObjectOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ObjectOptions] (val x: Self) extends AnyVal {
     
     inline def setDisplayOptions(value: ObjectDisplayOptions): Self = StObject.set(x, "displayOptions", value.asInstanceOf[js.Any])
     

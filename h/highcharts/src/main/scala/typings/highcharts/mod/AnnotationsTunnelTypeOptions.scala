@@ -48,7 +48,8 @@ object AnnotationsTunnelTypeOptions {
     __obj.asInstanceOf[AnnotationsTunnelTypeOptions]
   }
   
-  extension [Self <: AnnotationsTunnelTypeOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnnotationsTunnelTypeOptions] (val x: Self) extends AnyVal {
     
     inline def setBackground(value: js.Object | AnnotationsTunnelTypeBackgroundOptions): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     

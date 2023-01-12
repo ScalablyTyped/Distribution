@@ -28,7 +28,8 @@ object RegionLocationCfg {
     __obj.asInstanceOf[RegionLocationCfg]
   }
   
-  extension [Self <: RegionLocationCfg](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RegionLocationCfg] (val x: Self) extends AnyVal {
     
     inline def setEnd(value: Point): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     

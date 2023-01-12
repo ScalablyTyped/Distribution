@@ -21,7 +21,8 @@ object typesKmsnotfoundexceptionMod {
       __obj.asInstanceOf[KMSNotFoundException]
     }
     
-    extension [Self <: KMSNotFoundException](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KMSNotFoundException] (val x: Self) extends AnyVal {
       
       inline def setName(value: typings.awsSdkClientLambdaNode.awsSdkClientLambdaNodeStrings.KMSNotFoundException): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
@@ -46,7 +47,8 @@ object typesKmsnotfoundexceptionMod {
       __obj.asInstanceOf[KMSNotFoundExceptionDetails]
     }
     
-    extension [Self <: KMSNotFoundExceptionDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KMSNotFoundExceptionDetails] (val x: Self) extends AnyVal {
       
       inline def setMessage(value: String): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
       

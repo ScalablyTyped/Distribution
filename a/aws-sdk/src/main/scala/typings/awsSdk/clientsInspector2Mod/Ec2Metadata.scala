@@ -28,7 +28,8 @@ object Ec2Metadata {
     __obj.asInstanceOf[Ec2Metadata]
   }
   
-  extension [Self <: Ec2Metadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Ec2Metadata] (val x: Self) extends AnyVal {
     
     inline def setAmiId(value: AmiId): Self = StObject.set(x, "amiId", value.asInstanceOf[js.Any])
     

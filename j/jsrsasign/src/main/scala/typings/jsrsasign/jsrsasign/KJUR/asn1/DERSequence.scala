@@ -33,7 +33,8 @@ object DERSequence {
     __obj.asInstanceOf[DERSequence]
   }
   
-  extension [Self <: DERSequence](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DERSequence] (val x: Self) extends AnyVal {
     
     inline def setGetFreshValueHex(value: () => String): Self = StObject.set(x, "getFreshValueHex", js.Any.fromFunction0(value))
   }

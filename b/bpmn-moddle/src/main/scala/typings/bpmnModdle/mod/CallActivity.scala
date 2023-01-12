@@ -39,7 +39,8 @@ object CallActivity {
     __obj.asInstanceOf[CallActivity]
   }
   
-  extension [Self <: CallActivity](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CallActivity] (val x: Self) extends AnyVal {
     
     inline def setCalledElement(value: String): Self = StObject.set(x, "calledElement", value.asInstanceOf[js.Any])
   }

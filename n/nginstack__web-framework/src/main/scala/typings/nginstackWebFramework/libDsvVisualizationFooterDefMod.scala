@@ -42,7 +42,8 @@ object libDsvVisualizationFooterDefMod {
       __obj.asInstanceOf[VisualizationFooterDef]
     }
     
-    extension [Self <: VisualizationFooterDef](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VisualizationFooterDef] (val x: Self) extends AnyVal {
       
       inline def setComplement(value: String): Self = StObject.set(x, "complement", value.asInstanceOf[js.Any])
       

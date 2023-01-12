@@ -15,7 +15,8 @@ object TypeofQuoteCreateParams {
     __obj.asInstanceOf[TypeofQuoteCreateParams]
   }
   
-  extension [Self <: TypeofQuoteCreateParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofQuoteCreateParams] (val x: Self) extends AnyVal {
     
     inline def setLineItem(value: TypeofLineItem): Self = StObject.set(x, "LineItem", value.asInstanceOf[js.Any])
   }

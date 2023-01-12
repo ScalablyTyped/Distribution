@@ -31,7 +31,8 @@ object anon {
       __obj.asInstanceOf[ACTIONITEMSELECTOR]
     }
     
-    extension [Self <: ACTIONITEMSELECTOR](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ACTIONITEMSELECTOR] (val x: Self) extends AnyVal {
       
       inline def setACTION_ITEM_SELECTOR(value: String): Self = StObject.set(x, "ACTION_ITEM_SELECTOR", value.asInstanceOf[js.Any])
       
@@ -58,7 +59,8 @@ object anon {
       __obj.asInstanceOf[DEBOUNCETHROTTLERESIZETIMEMS]
     }
     
-    extension [Self <: DEBOUNCETHROTTLERESIZETIMEMS](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DEBOUNCETHROTTLERESIZETIMEMS] (val x: Self) extends AnyVal {
       
       inline def setDEBOUNCE_THROTTLE_RESIZE_TIME_MS(value: Double): Self = StObject.set(x, "DEBOUNCE_THROTTLE_RESIZE_TIME_MS", value.asInstanceOf[js.Any])
       
@@ -91,7 +93,8 @@ object anon {
       __obj.asInstanceOf[FIXEDCLASS]
     }
     
-    extension [Self <: FIXEDCLASS](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FIXEDCLASS] (val x: Self) extends AnyVal {
       
       inline def setFIXED_CLASS(value: String): Self = StObject.set(x, "FIXED_CLASS", value.asInstanceOf[js.Any])
       
@@ -131,7 +134,8 @@ object anon {
       __obj.asInstanceOf[PartialMDCTopAppBarAdapte]
     }
     
-    extension [Self <: PartialMDCTopAppBarAdapte](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialMDCTopAppBarAdapte] (val x: Self) extends AnyVal {
       
       inline def setAddClass(value: /* className */ String => Unit): Self = StObject.set(x, "addClass", js.Any.fromFunction1(value))
       

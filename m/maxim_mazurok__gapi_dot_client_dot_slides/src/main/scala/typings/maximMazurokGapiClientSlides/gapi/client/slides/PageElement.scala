@@ -56,7 +56,8 @@ object PageElement {
     __obj.asInstanceOf[PageElement]
   }
   
-  extension [Self <: PageElement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PageElement] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

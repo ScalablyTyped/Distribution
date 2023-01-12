@@ -29,7 +29,8 @@ object Meta {
     __obj.asInstanceOf[Meta]
   }
   
-  extension [Self <: Meta](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Meta] (val x: Self) extends AnyVal {
     
     inline def setErrors(value: js.Array[String]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object RecordpreventbooleanArray {
     __obj.asInstanceOf[RecordpreventbooleanArray]
   }
   
-  extension [Self <: RecordpreventbooleanArray](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecordpreventbooleanArray] (val x: Self) extends AnyVal {
     
     inline def setPrevent(value: Boolean | js.Array[EventType]): Self = StObject.set(x, "prevent", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object PruneVolumesInfo {
     __obj.asInstanceOf[PruneVolumesInfo]
   }
   
-  extension [Self <: PruneVolumesInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PruneVolumesInfo] (val x: Self) extends AnyVal {
     
     inline def setSpaceReclaimed(value: Double): Self = StObject.set(x, "SpaceReclaimed", value.asInstanceOf[js.Any])
     

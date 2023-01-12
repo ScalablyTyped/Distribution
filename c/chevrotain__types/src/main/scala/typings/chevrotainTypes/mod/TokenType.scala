@@ -44,7 +44,8 @@ object TokenType {
     __obj.asInstanceOf[TokenType]
   }
   
-  extension [Self <: TokenType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TokenType] (val x: Self) extends AnyVal {
     
     inline def setCATEGORIES(value: js.Array[TokenType]): Self = StObject.set(x, "CATEGORIES", value.asInstanceOf[js.Any])
     

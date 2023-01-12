@@ -764,7 +764,8 @@ object anon {
       __obj.asInstanceOf[ElementTagNameMap]
     }
     
-    extension [Self <: ElementTagNameMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ElementTagNameMap] (val x: Self) extends AnyVal {
       
       inline def setA(value: HTMLAnchorElement): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
       
@@ -1121,7 +1122,8 @@ object anon {
       __obj.asInstanceOf[TagName]
     }
     
-    extension [Self <: TagName](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TagName] (val x: Self) extends AnyVal {
       
       inline def setTagName(value: div): Self = StObject.set(x, "tagName", value.asInstanceOf[js.Any])
       

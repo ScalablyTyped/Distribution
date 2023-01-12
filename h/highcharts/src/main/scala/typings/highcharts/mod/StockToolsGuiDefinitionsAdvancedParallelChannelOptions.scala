@@ -18,7 +18,8 @@ object StockToolsGuiDefinitionsAdvancedParallelChannelOptions {
     __obj.asInstanceOf[StockToolsGuiDefinitionsAdvancedParallelChannelOptions]
   }
   
-  extension [Self <: StockToolsGuiDefinitionsAdvancedParallelChannelOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StockToolsGuiDefinitionsAdvancedParallelChannelOptions] (val x: Self) extends AnyVal {
     
     inline def setSymbol(value: String): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
     

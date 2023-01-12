@@ -23,7 +23,8 @@ object PartialRecordBulkOperatioCreate {
     __obj.asInstanceOf[PartialRecordBulkOperatioCreate]
   }
   
-  extension [Self <: PartialRecordBulkOperatioCreate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialRecordBulkOperatioCreate] (val x: Self) extends AnyVal {
     
     inline def setCreate(value: BulkResponseItem): Self = StObject.set(x, "create", value.asInstanceOf[js.Any])
     

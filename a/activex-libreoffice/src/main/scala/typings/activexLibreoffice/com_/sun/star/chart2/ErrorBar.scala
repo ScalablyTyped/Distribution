@@ -73,7 +73,8 @@ object ErrorBar {
     __obj.asInstanceOf[ErrorBar]
   }
   
-  extension [Self <: ErrorBar](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ErrorBar] (val x: Self) extends AnyVal {
     
     inline def setErrorBarStyle(value: Double): Self = StObject.set(x, "ErrorBarStyle", value.asInstanceOf[js.Any])
     

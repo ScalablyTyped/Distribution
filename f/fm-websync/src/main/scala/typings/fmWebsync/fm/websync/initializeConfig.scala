@@ -124,7 +124,8 @@ object initializeConfig {
     __obj.asInstanceOf[initializeConfig]
   }
   
-  extension [Self <: initializeConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: initializeConfig] (val x: Self) extends AnyVal {
     
     inline def setAutoDisconnect(value: Boolean): Self = StObject.set(x, "autoDisconnect", value.asInstanceOf[js.Any])
     

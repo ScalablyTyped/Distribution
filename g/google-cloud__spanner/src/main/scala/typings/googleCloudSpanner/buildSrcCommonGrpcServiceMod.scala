@@ -432,7 +432,8 @@ object buildSrcCommonGrpcServiceMod {
       __obj.asInstanceOf[GrpcServiceConfig]
     }
     
-    extension [Self <: GrpcServiceConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GrpcServiceConfig] (val x: Self) extends AnyVal {
       
       inline def setCustomEndpoint(value: Boolean): Self = StObject.set(x, "customEndpoint", value.asInstanceOf[js.Any])
       
@@ -465,7 +466,8 @@ object buildSrcCommonGrpcServiceMod {
       __obj.asInstanceOf[ObjectToStructConverterConfig]
     }
     
-    extension [Self <: ObjectToStructConverterConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ObjectToStructConverterConfig] (val x: Self) extends AnyVal {
       
       inline def setRemoveCircular(value: Boolean): Self = StObject.set(x, "removeCircular", value.asInstanceOf[js.Any])
       
@@ -496,7 +498,8 @@ object buildSrcCommonGrpcServiceMod {
       __obj.asInstanceOf[ProtoOpts]
     }
     
-    extension [Self <: ProtoOpts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProtoOpts] (val x: Self) extends AnyVal {
       
       inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
@@ -537,7 +540,8 @@ object buildSrcCommonGrpcServiceMod {
       __obj.asInstanceOf[RetryOptions]
     }
     
-    extension [Self <: RetryOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RetryOptions] (val x: Self) extends AnyVal {
       
       inline def setCurrentRetryAttempt(value: Double): Self = StObject.set(x, "currentRetryAttempt", value.asInstanceOf[js.Any])
       

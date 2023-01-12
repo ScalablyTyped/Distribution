@@ -67,7 +67,8 @@ object jasmine {
       __obj.asInstanceOf[JQueryEventSpy]
     }
     
-    extension [Self <: JQueryEventSpy](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JQueryEventSpy] (val x: Self) extends AnyVal {
       
       inline def setEventName(value: String): Self = StObject.set(x, "eventName", value.asInstanceOf[js.Any])
       
@@ -110,7 +111,8 @@ object jasmine {
       __obj.asInstanceOf[JSONFixtures]
     }
     
-    extension [Self <: JSONFixtures](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JSONFixtures] (val x: Self) extends AnyVal {
       
       inline def setClearCache(value: () => Unit): Self = StObject.set(x, "clearCache", js.Any.fromFunction0(value))
       
@@ -150,7 +152,8 @@ object jasmine {
       __obj.asInstanceOf[JasmineJQuery]
     }
     
-    extension [Self <: JasmineJQuery](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JasmineJQuery] (val x: Self) extends AnyVal {
       
       inline def setBrowserTagCaseIndependentHtml(value: String => String): Self = StObject.set(x, "browserTagCaseIndependentHtml", js.Any.fromFunction1(value))
       
@@ -193,7 +196,8 @@ object jasmine {
       __obj.asInstanceOf[JasmineJQueryEvents]
     }
     
-    extension [Self <: JasmineJQueryEvents](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JasmineJQueryEvents] (val x: Self) extends AnyVal {
       
       inline def setArgs(value: (String, String) => Any): Self = StObject.set(x, "args", js.Any.fromFunction2(value))
       
@@ -549,7 +553,8 @@ object jasmine {
       __obj.asInstanceOf[StyleFixtures]
     }
     
-    extension [Self <: StyleFixtures](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StyleFixtures] (val x: Self) extends AnyVal {
       
       inline def setAppendLoad(value: /* repeated */ String => Unit): Self = StObject.set(x, "appendLoad", js.Any.fromFunction1(value))
       

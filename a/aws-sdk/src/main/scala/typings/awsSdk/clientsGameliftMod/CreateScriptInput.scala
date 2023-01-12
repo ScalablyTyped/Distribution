@@ -38,7 +38,8 @@ object CreateScriptInput {
     __obj.asInstanceOf[CreateScriptInput]
   }
   
-  extension [Self <: CreateScriptInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateScriptInput] (val x: Self) extends AnyVal {
     
     inline def setName(value: NonZeroAndMaxString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     

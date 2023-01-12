@@ -23,7 +23,8 @@ object LedOption {
     __obj.asInstanceOf[LedOption]
   }
   
-  extension [Self <: LedOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LedOption] (val x: Self) extends AnyVal {
     
     inline def setAddress(value: Double): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     

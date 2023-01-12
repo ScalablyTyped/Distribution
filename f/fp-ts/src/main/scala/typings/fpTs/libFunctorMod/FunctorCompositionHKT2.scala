@@ -20,7 +20,8 @@ object FunctorCompositionHKT2 {
     __obj.asInstanceOf[FunctorCompositionHKT2[F, G]]
   }
   
-  extension [Self <: FunctorCompositionHKT2[?, ?], F, G /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */](x: Self & (FunctorCompositionHKT2[F, G])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FunctorCompositionHKT2[?, ?], F, G /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */] (val x: Self & (FunctorCompositionHKT2[F, G])) extends AnyVal {
     
     inline def setMap(
       value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, Kind2<G, E, A>> */ Any, js.Function1[Any, Any]) => Any

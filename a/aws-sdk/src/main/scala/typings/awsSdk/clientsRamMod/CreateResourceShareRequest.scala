@@ -48,7 +48,8 @@ object CreateResourceShareRequest {
     __obj.asInstanceOf[CreateResourceShareRequest]
   }
   
-  extension [Self <: CreateResourceShareRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateResourceShareRequest] (val x: Self) extends AnyVal {
     
     inline def setAllowExternalPrincipals(value: Boolean): Self = StObject.set(x, "allowExternalPrincipals", value.asInstanceOf[js.Any])
     

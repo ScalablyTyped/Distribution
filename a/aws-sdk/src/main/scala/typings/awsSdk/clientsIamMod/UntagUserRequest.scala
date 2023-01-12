@@ -23,7 +23,8 @@ object UntagUserRequest {
     __obj.asInstanceOf[UntagUserRequest]
   }
   
-  extension [Self <: UntagUserRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UntagUserRequest] (val x: Self) extends AnyVal {
     
     inline def setTagKeys(value: tagKeyListType): Self = StObject.set(x, "TagKeys", value.asInstanceOf[js.Any])
     

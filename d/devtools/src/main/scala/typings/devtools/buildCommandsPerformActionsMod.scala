@@ -38,7 +38,8 @@ object buildCommandsPerformActionsMod {
       __obj.asInstanceOf[Action]
     }
     
-    extension [Self <: Action](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Action] (val x: Self) extends AnyVal {
       
       inline def setButton(value: Double): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
       
@@ -83,7 +84,8 @@ object buildCommandsPerformActionsMod {
       __obj.asInstanceOf[ActionsParameter]
     }
     
-    extension [Self <: ActionsParameter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ActionsParameter] (val x: Self) extends AnyVal {
       
       inline def setActions(value: js.Array[Action]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
       

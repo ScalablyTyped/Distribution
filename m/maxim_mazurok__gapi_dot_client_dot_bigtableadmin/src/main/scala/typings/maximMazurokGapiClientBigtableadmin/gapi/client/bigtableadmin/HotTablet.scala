@@ -37,7 +37,8 @@ object HotTablet {
     __obj.asInstanceOf[HotTablet]
   }
   
-  extension [Self <: HotTablet](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HotTablet] (val x: Self) extends AnyVal {
     
     inline def setEndKey(value: String): Self = StObject.set(x, "endKey", value.asInstanceOf[js.Any])
     

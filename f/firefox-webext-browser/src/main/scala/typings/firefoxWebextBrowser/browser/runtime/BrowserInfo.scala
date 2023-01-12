@@ -26,7 +26,8 @@ object BrowserInfo {
     __obj.asInstanceOf[BrowserInfo]
   }
   
-  extension [Self <: BrowserInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BrowserInfo] (val x: Self) extends AnyVal {
     
     inline def setBuildID(value: String): Self = StObject.set(x, "buildID", value.asInstanceOf[js.Any])
     

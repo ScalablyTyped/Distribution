@@ -81,7 +81,8 @@ object TableAutoFormat {
     __obj.asInstanceOf[TableAutoFormat]
   }
   
-  extension [Self <: TableAutoFormat](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TableAutoFormat] (val x: Self) extends AnyVal {
     
     inline def setIncludeBackground(value: Boolean): Self = StObject.set(x, "IncludeBackground", value.asInstanceOf[js.Any])
     

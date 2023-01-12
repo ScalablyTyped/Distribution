@@ -34,7 +34,8 @@ object XMain {
     __obj.asInstanceOf[XMain]
   }
   
-  extension [Self <: XMain](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XMain] (val x: Self) extends AnyVal {
     
     inline def setRun(value: SeqEquiv[String] => Double): Self = StObject.set(x, "run", js.Any.fromFunction1(value))
   }

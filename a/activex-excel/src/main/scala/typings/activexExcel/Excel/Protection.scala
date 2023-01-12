@@ -58,7 +58,8 @@ object Protection {
     __obj.asInstanceOf[Protection]
   }
   
-  extension [Self <: Protection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Protection] (val x: Self) extends AnyVal {
     
     inline def setAllowDeletingColumns(value: Boolean): Self = StObject.set(x, "AllowDeletingColumns", value.asInstanceOf[js.Any])
     

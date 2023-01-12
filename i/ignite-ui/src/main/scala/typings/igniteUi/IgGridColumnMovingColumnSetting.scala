@@ -37,7 +37,8 @@ object IgGridColumnMovingColumnSetting {
     __obj.asInstanceOf[IgGridColumnMovingColumnSetting]
   }
   
-  extension [Self <: IgGridColumnMovingColumnSetting](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgGridColumnMovingColumnSetting] (val x: Self) extends AnyVal {
     
     inline def setAllowMoving(value: Boolean): Self = StObject.set(x, "allowMoving", value.asInstanceOf[js.Any])
     

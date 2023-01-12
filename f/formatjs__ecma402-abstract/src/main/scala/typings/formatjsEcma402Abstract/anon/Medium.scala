@@ -21,7 +21,8 @@ object Medium {
     __obj.asInstanceOf[Medium]
   }
   
-  extension [Self <: Medium](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Medium] (val x: Self) extends AnyVal {
     
     inline def setFull(value: String): Self = StObject.set(x, "full", value.asInstanceOf[js.Any])
     

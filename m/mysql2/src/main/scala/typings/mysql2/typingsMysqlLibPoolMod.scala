@@ -144,7 +144,8 @@ object typingsMysqlLibPoolMod {
       __obj.asInstanceOf[PoolOptions]
     }
     
-    extension [Self <: PoolOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PoolOptions] (val x: Self) extends AnyVal {
       
       inline def setAcquireTimeout(value: Double): Self = StObject.set(x, "acquireTimeout", value.asInstanceOf[js.Any])
       

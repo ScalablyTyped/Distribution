@@ -66,7 +66,8 @@ object mod {
       __obj.asInstanceOf[Calendar]
     }
     
-    extension [Self <: Calendar](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Calendar] (val x: Self) extends AnyVal {
       
       inline def setCalendar(value: Month): Self = StObject.set(x, "calendar", value.asInstanceOf[js.Any])
       
@@ -260,7 +261,8 @@ object mod {
       __obj.asInstanceOf[Locale]
     }
     
-    extension [Self <: Locale](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Locale] (val x: Self) extends AnyVal {
       
       inline def setApplyLabel(value: String): Self = StObject.set(x, "applyLabel", value.asInstanceOf[js.Any])
       
@@ -490,7 +492,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setAlwaysShowCalendars(value: Boolean): Self = StObject.set(x, "alwaysShowCalendars", value.asInstanceOf[js.Any])
       
@@ -644,7 +647,8 @@ object mod {
       __obj.asInstanceOf[typings.daterangepicker.mod.daterangepicker]
     }
     
-    extension [Self <: typings.daterangepicker.mod.daterangepicker](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.daterangepicker.mod.daterangepicker] (val x: Self) extends AnyVal {
       
       inline def setContainer(value: JQuery): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
       
@@ -698,7 +702,8 @@ object mod {
         __obj.asInstanceOf[JQuery]
       }
       
-      extension [Self <: JQuery](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: JQuery] (val x: Self) extends AnyVal {
         
         inline def setData(
           value: typings.daterangepicker.daterangepickerStrings.daterangepicker => js.UndefOr[typings.daterangepicker.mod.daterangepicker]

@@ -19,7 +19,8 @@ object RevokeRefreshTokenOptions {
     __obj.asInstanceOf[RevokeRefreshTokenOptions]
   }
   
-  extension [Self <: RevokeRefreshTokenOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RevokeRefreshTokenOptions] (val x: Self) extends AnyVal {
     
     inline def setClient_id(value: String): Self = StObject.set(x, "client_id", value.asInstanceOf[js.Any])
     

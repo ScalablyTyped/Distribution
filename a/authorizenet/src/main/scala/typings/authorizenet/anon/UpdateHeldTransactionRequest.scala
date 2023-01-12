@@ -15,7 +15,8 @@ object UpdateHeldTransactionRequest {
     __obj.asInstanceOf[UpdateHeldTransactionRequest]
   }
   
-  extension [Self <: UpdateHeldTransactionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateHeldTransactionRequest] (val x: Self) extends AnyVal {
     
     inline def setUpdateHeldTransactionRequest(value: typings.authorizenet.mod.APIContracts.UpdateHeldTransactionRequest): Self = StObject.set(x, "updateHeldTransactionRequest", value.asInstanceOf[js.Any])
   }

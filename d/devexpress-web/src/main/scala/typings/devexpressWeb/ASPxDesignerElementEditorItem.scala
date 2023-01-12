@@ -17,7 +17,8 @@ object ASPxDesignerElementEditorItem {
     __obj.asInstanceOf[ASPxDesignerElementEditorItem]
   }
   
-  extension [Self <: ASPxDesignerElementEditorItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxDesignerElementEditorItem] (val x: Self) extends AnyVal {
     
     inline def setDisplayValue(value: String): Self = StObject.set(x, "displayValue", value.asInstanceOf[js.Any])
     

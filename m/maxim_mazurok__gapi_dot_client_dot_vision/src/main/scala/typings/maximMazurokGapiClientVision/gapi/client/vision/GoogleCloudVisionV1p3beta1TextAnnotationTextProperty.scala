@@ -19,7 +19,8 @@ object GoogleCloudVisionV1p3beta1TextAnnotationTextProperty {
     __obj.asInstanceOf[GoogleCloudVisionV1p3beta1TextAnnotationTextProperty]
   }
   
-  extension [Self <: GoogleCloudVisionV1p3beta1TextAnnotationTextProperty](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudVisionV1p3beta1TextAnnotationTextProperty] (val x: Self) extends AnyVal {
     
     inline def setDetectedBreak(value: GoogleCloudVisionV1p3beta1TextAnnotationDetectedBreak): Self = StObject.set(x, "detectedBreak", value.asInstanceOf[js.Any])
     

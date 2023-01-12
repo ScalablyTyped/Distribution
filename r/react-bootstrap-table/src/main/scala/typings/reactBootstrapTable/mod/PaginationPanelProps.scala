@@ -66,7 +66,8 @@ object PaginationPanelProps {
     __obj.asInstanceOf[PaginationPanelProps]
   }
   
-  extension [Self <: PaginationPanelProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PaginationPanelProps] (val x: Self) extends AnyVal {
     
     inline def setChangePage(value: Double => Unit): Self = StObject.set(x, "changePage", js.Any.fromFunction1(value))
     

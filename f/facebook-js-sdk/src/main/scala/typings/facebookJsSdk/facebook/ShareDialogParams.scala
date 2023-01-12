@@ -26,7 +26,8 @@ object ShareDialogParams {
     __obj.asInstanceOf[ShareDialogParams]
   }
   
-  extension [Self <: ShareDialogParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShareDialogParams] (val x: Self) extends AnyVal {
     
     inline def setHashtag(value: String): Self = StObject.set(x, "hashtag", value.asInstanceOf[js.Any])
     

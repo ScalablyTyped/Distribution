@@ -62,7 +62,8 @@ object srcHtmlInitMod {
       __obj.asInstanceOf[Init]
     }
     
-    extension [Self <: Init](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Init] (val x: Self) extends AnyVal {
       
       inline def setContainers(value: NodeList): Self = StObject.set(x, "containers", value.asInstanceOf[js.Any])
       
@@ -103,7 +104,8 @@ object srcHtmlInitMod {
       __obj.asInstanceOf[InitParams]
     }
     
-    extension [Self <: InitParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InitParams] (val x: Self) extends AnyVal {
       
       inline def setContainers(value: String | NodeList): Self = StObject.set(x, "containers", value.asInstanceOf[js.Any])
       

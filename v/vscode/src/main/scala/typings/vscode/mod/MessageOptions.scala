@@ -24,7 +24,8 @@ object MessageOptions {
     __obj.asInstanceOf[MessageOptions]
   }
   
-  extension [Self <: MessageOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MessageOptions] (val x: Self) extends AnyVal {
     
     inline def setDetail(value: String): Self = StObject.set(x, "detail", value.asInstanceOf[js.Any])
     

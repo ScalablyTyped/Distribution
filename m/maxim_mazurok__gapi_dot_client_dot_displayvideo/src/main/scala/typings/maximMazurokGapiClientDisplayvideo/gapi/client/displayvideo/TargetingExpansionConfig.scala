@@ -22,7 +22,8 @@ object TargetingExpansionConfig {
     __obj.asInstanceOf[TargetingExpansionConfig]
   }
   
-  extension [Self <: TargetingExpansionConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TargetingExpansionConfig] (val x: Self) extends AnyVal {
     
     inline def setExcludeFirstPartyAudience(value: Boolean): Self = StObject.set(x, "excludeFirstPartyAudience", value.asInstanceOf[js.Any])
     

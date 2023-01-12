@@ -18,7 +18,8 @@ object GetEndpointAttributesInput {
     __obj.asInstanceOf[GetEndpointAttributesInput]
   }
   
-  extension [Self <: GetEndpointAttributesInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetEndpointAttributesInput] (val x: Self) extends AnyVal {
     
     inline def setEndpointArn(value: String): Self = StObject.set(x, "EndpointArn", value.asInstanceOf[js.Any])
   }

@@ -38,7 +38,8 @@ object DescribeDimensionKeysResponse {
     __obj.asInstanceOf[DescribeDimensionKeysResponse]
   }
   
-  extension [Self <: DescribeDimensionKeysResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeDimensionKeysResponse] (val x: Self) extends AnyVal {
     
     inline def setAlignedEndTime(value: js.Date): Self = StObject.set(x, "AlignedEndTime", value.asInstanceOf[js.Any])
     

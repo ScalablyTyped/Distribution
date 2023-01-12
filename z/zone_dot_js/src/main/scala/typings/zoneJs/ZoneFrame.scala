@@ -20,7 +20,8 @@ object ZoneFrame {
     __obj.asInstanceOf[ZoneFrame]
   }
   
-  extension [Self <: ZoneFrame](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ZoneFrame] (val x: Self) extends AnyVal {
     
     inline def setParent(value: ZoneFrame): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     

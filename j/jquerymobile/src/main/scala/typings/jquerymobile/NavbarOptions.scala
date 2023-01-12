@@ -15,7 +15,8 @@ object NavbarOptions {
     __obj.asInstanceOf[NavbarOptions]
   }
   
-  extension [Self <: NavbarOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NavbarOptions] (val x: Self) extends AnyVal {
     
     inline def setIconpos(value: String): Self = StObject.set(x, "iconpos", value.asInstanceOf[js.Any])
   }

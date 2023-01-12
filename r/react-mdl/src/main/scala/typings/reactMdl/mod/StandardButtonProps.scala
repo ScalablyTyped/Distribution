@@ -17,7 +17,8 @@ object StandardButtonProps {
     __obj.asInstanceOf[StandardButtonProps]
   }
   
-  extension [Self <: StandardButtonProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StandardButtonProps] (val x: Self) extends AnyVal {
     
     inline def setRaised(value: Boolean): Self = StObject.set(x, "raised", value.asInstanceOf[js.Any])
     

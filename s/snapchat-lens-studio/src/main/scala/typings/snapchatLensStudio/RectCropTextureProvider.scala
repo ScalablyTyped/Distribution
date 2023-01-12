@@ -35,7 +35,8 @@ object RectCropTextureProvider {
     __obj.asInstanceOf[RectCropTextureProvider]
   }
   
-  extension [Self <: RectCropTextureProvider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RectCropTextureProvider] (val x: Self) extends AnyVal {
     
     inline def setCropRect(value: Rect): Self = StObject.set(x, "cropRect", value.asInstanceOf[js.Any])
     

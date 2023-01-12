@@ -54,7 +54,8 @@ object libSelectorSingleSelectorMod extends Shortcut {
       __obj.asInstanceOf[SelectorProps]
     }
     
-    extension [Self <: SelectorProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SelectorProps] (val x: Self) extends AnyVal {
       
       inline def setActiveValue(value: String): Self = StObject.set(x, "activeValue", value.asInstanceOf[js.Any])
       

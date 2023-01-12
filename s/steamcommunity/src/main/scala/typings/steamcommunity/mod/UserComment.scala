@@ -28,7 +28,8 @@ object UserComment {
     __obj.asInstanceOf[UserComment]
   }
   
-  extension [Self <: UserComment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UserComment] (val x: Self) extends AnyVal {
     
     inline def setAuthor(value: Avatar): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
     

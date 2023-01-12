@@ -42,7 +42,8 @@ object distAccountCcsCredentialMod {
       __obj.asInstanceOf[CcsCredential]
     }
     
-    extension [Self <: CcsCredential](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CcsCredential] (val x: Self) extends AnyVal {
       
       inline def setCredential(value: String): Self = StObject.set(x, "credential", value.asInstanceOf[js.Any])
       

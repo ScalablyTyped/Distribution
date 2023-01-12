@@ -18,7 +18,8 @@ object GetDigestRequest {
     __obj.asInstanceOf[GetDigestRequest]
   }
   
-  extension [Self <: GetDigestRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetDigestRequest] (val x: Self) extends AnyVal {
     
     inline def setName(value: LedgerName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }

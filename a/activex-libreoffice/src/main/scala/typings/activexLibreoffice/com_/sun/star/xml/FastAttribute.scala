@@ -20,7 +20,8 @@ object FastAttribute {
     __obj.asInstanceOf[FastAttribute]
   }
   
-  extension [Self <: FastAttribute](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FastAttribute] (val x: Self) extends AnyVal {
     
     inline def setToken(value: Double): Self = StObject.set(x, "Token", value.asInstanceOf[js.Any])
     

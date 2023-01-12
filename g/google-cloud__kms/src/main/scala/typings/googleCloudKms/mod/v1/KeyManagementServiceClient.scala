@@ -100,7 +100,8 @@ object KeyManagementServiceClient {
       __obj.asInstanceOf[AsymmetricSignRequest]
     }
     
-    extension [Self <: AsymmetricSignRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AsymmetricSignRequest] (val x: Self) extends AnyVal {
       
       inline def setDigest(value: Digest): Self = StObject.set(x, "digest", value.asInstanceOf[js.Any])
       
@@ -119,7 +120,8 @@ object KeyManagementServiceClient {
       __obj.asInstanceOf[AsymmetricSignResponse]
     }
     
-    extension [Self <: AsymmetricSignResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AsymmetricSignResponse] (val x: Self) extends AnyVal {
       
       inline def setSignature(value: Buffer): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
     }
@@ -148,7 +150,8 @@ object KeyManagementServiceClient {
       __obj.asInstanceOf[ConfigurationObject]
     }
     
-    extension [Self <: ConfigurationObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConfigurationObject] (val x: Self) extends AnyVal {
       
       inline def setCredentials(value: Clientemail): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
       
@@ -199,7 +202,8 @@ object KeyManagementServiceClient {
       __obj.asInstanceOf[CreateCryptoKeyRequest]
     }
     
-    extension [Self <: CreateCryptoKeyRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateCryptoKeyRequest] (val x: Self) extends AnyVal {
       
       inline def setCryptoKey(value: PartialOmitCryptoKeypurpo): Self = StObject.set(x, "cryptoKey", value.asInstanceOf[js.Any])
       
@@ -230,7 +234,8 @@ object KeyManagementServiceClient {
       __obj.asInstanceOf[CreateKeyRingRequest]
     }
     
-    extension [Self <: CreateKeyRingRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateKeyRingRequest] (val x: Self) extends AnyVal {
       
       inline def setKeyRing(value: PartialKeyRing): Self = StObject.set(x, "keyRing", value.asInstanceOf[js.Any])
       
@@ -263,7 +268,8 @@ object KeyManagementServiceClient {
       __obj.asInstanceOf[DecryptRequest]
     }
     
-    extension [Self <: DecryptRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DecryptRequest] (val x: Self) extends AnyVal {
       
       inline def setAdditionalAuthenticatedData(value: String): Self = StObject.set(x, "additionalAuthenticatedData", value.asInstanceOf[js.Any])
       
@@ -286,7 +292,8 @@ object KeyManagementServiceClient {
       __obj.asInstanceOf[DecryptResponse]
     }
     
-    extension [Self <: DecryptResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DecryptResponse] (val x: Self) extends AnyVal {
       
       inline def setPlaintext(value: Buffer): Self = StObject.set(x, "plaintext", value.asInstanceOf[js.Any])
     }
@@ -313,7 +320,8 @@ object KeyManagementServiceClient {
       __obj.asInstanceOf[EncryptRequest]
     }
     
-    extension [Self <: EncryptRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EncryptRequest] (val x: Self) extends AnyVal {
       
       inline def setAdditionalAuthenticatedData(value: String): Self = StObject.set(x, "additionalAuthenticatedData", value.asInstanceOf[js.Any])
       
@@ -338,7 +346,8 @@ object KeyManagementServiceClient {
       __obj.asInstanceOf[EncryptResponse]
     }
     
-    extension [Self <: EncryptResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EncryptResponse] (val x: Self) extends AnyVal {
       
       inline def setCiphertext(value: Buffer): Self = StObject.set(x, "ciphertext", value.asInstanceOf[js.Any])
       
@@ -367,7 +376,8 @@ object KeyManagementServiceClient {
       __obj.asInstanceOf[ListCryptoKeysRequest]
     }
     
-    extension [Self <: ListCryptoKeysRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListCryptoKeysRequest] (val x: Self) extends AnyVal {
       
       inline def setPage_size(value: Double): Self = StObject.set(x, "page_size", value.asInstanceOf[js.Any])
       
@@ -402,7 +412,8 @@ object KeyManagementServiceClient {
       __obj.asInstanceOf[ListKeyRingsRequest]
     }
     
-    extension [Self <: ListKeyRingsRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListKeyRingsRequest] (val x: Self) extends AnyVal {
       
       inline def setPage_size(value: Double): Self = StObject.set(x, "page_size", value.asInstanceOf[js.Any])
       

@@ -33,7 +33,8 @@ object EngineDefaults {
     __obj.asInstanceOf[EngineDefaults]
   }
   
-  extension [Self <: EngineDefaults](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EngineDefaults] (val x: Self) extends AnyVal {
     
     inline def setCacheNodeTypeSpecificParameters(value: CacheNodeTypeSpecificParametersList): Self = StObject.set(x, "CacheNodeTypeSpecificParameters", value.asInstanceOf[js.Any])
     

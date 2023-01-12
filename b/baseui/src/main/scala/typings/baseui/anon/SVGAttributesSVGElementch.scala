@@ -1081,7 +1081,8 @@ object SVGAttributesSVGElementch {
     __obj.asInstanceOf[SVGAttributesSVGElementch]
   }
   
-  extension [Self <: SVGAttributesSVGElementch](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SVGAttributesSVGElementch] (val x: Self) extends AnyVal {
     
     inline def set$color(value: typings.baseui.iconTypesMod.Color): Self = StObject.set(x, "$color", value.asInstanceOf[js.Any])
     

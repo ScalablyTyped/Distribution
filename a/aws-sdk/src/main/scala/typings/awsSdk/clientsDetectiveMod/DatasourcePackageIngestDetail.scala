@@ -23,7 +23,8 @@ object DatasourcePackageIngestDetail {
     __obj.asInstanceOf[DatasourcePackageIngestDetail]
   }
   
-  extension [Self <: DatasourcePackageIngestDetail](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DatasourcePackageIngestDetail] (val x: Self) extends AnyVal {
     
     inline def setDatasourcePackageIngestState(value: DatasourcePackageIngestState): Self = StObject.set(x, "DatasourcePackageIngestState", value.asInstanceOf[js.Any])
     

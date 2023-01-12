@@ -31,7 +31,8 @@ object Touch {
     __obj.asInstanceOf[Touch[Detail, T, Mark, CurrentTargetDataset, TargetDataset]]
   }
   
-  extension [Self <: Touch[?, ?, ?, ?, ?], Detail /* <: IAnyObject */, T /* <: TouchDetail | TouchCanvasDetail */, Mark /* <: IAnyObject */, CurrentTargetDataset /* <: IAnyObject */, TargetDataset /* <: IAnyObject */](x: Self & (Touch[Detail, T, Mark, CurrentTargetDataset, TargetDataset])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Touch[?, ?, ?, ?, ?], Detail /* <: IAnyObject */, T /* <: TouchDetail | TouchCanvasDetail */, Mark /* <: IAnyObject */, CurrentTargetDataset /* <: IAnyObject */, TargetDataset /* <: IAnyObject */] (val x: Self & (Touch[Detail, T, Mark, CurrentTargetDataset, TargetDataset])) extends AnyVal {
     
     inline def setChangedTouches(value: js.Array[T]): Self = StObject.set(x, "changedTouches", value.asInstanceOf[js.Any])
     

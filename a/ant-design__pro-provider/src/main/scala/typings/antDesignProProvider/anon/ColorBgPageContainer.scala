@@ -52,7 +52,8 @@ object ColorBgPageContainer {
     __obj.asInstanceOf[ColorBgPageContainer]
   }
   
-  extension [Self <: ColorBgPageContainer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ColorBgPageContainer] (val x: Self) extends AnyVal {
     
     inline def setColorBgPageContainer(value: String): Self = StObject.set(x, "colorBgPageContainer", value.asInstanceOf[js.Any])
     

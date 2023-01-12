@@ -18,7 +18,8 @@ object Characters {
     __obj.asInstanceOf[Characters]
   }
   
-  extension [Self <: Characters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Characters] (val x: Self) extends AnyVal {
     
     inline def setOriginalTextCharacters(value: Integer): Self = StObject.set(x, "OriginalTextCharacters", value.asInstanceOf[js.Any])
     

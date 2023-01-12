@@ -18,7 +18,8 @@ object SetLocalFontsEnabledRequest {
     __obj.asInstanceOf[SetLocalFontsEnabledRequest]
   }
   
-  extension [Self <: SetLocalFontsEnabledRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetLocalFontsEnabledRequest] (val x: Self) extends AnyVal {
     
     inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
   }

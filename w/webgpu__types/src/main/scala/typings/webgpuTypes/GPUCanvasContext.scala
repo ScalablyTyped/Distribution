@@ -57,7 +57,8 @@ object GPUCanvasContext {
     __obj.asInstanceOf[GPUCanvasContext]
   }
   
-  extension [Self <: GPUCanvasContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GPUCanvasContext] (val x: Self) extends AnyVal {
     
     inline def setCanvas(value: HTMLCanvasElement | OffscreenCanvas): Self = StObject.set(x, "canvas", value.asInstanceOf[js.Any])
     

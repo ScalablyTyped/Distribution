@@ -300,7 +300,8 @@ object sapFProductSwitchItemMod {
       __obj.asInstanceOf[ProductSwitchItemSettings]
     }
     
-    extension [Self <: ProductSwitchItemSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProductSwitchItemSettings] (val x: Self) extends AnyVal {
       
       inline def setSrc(value: URI | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
       

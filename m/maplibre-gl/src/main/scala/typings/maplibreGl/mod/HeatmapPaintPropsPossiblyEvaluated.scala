@@ -34,7 +34,8 @@ object HeatmapPaintPropsPossiblyEvaluated {
     __obj.asInstanceOf[HeatmapPaintPropsPossiblyEvaluated]
   }
   
-  extension [Self <: HeatmapPaintPropsPossiblyEvaluated](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HeatmapPaintPropsPossiblyEvaluated] (val x: Self) extends AnyVal {
     
     inline def `setHeatmap-color`(value: ColorRampProperty): Self = StObject.set(x, "heatmap-color", value.asInstanceOf[js.Any])
     

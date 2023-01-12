@@ -24,7 +24,8 @@ object TabsEvents {
     __obj.asInstanceOf[TabsEvents]
   }
   
-  extension [Self <: TabsEvents](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TabsEvents] (val x: Self) extends AnyVal {
     
     inline def setActivate(value: (/* event */ JQueryEventObject, TabsActivationUIParams) => Unit): Self = StObject.set(x, "activate", js.Any.fromFunction2(value))
     

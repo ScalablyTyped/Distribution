@@ -23,7 +23,8 @@ object DeleteProfileRequest {
     __obj.asInstanceOf[DeleteProfileRequest]
   }
   
-  extension [Self <: DeleteProfileRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteProfileRequest] (val x: Self) extends AnyVal {
     
     inline def setDomainName(value: name): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
     

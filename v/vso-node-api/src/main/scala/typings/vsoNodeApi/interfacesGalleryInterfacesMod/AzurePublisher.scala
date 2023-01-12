@@ -17,7 +17,8 @@ object AzurePublisher {
     __obj.asInstanceOf[AzurePublisher]
   }
   
-  extension [Self <: AzurePublisher](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AzurePublisher] (val x: Self) extends AnyVal {
     
     inline def setAzurePublisherId(value: String): Self = StObject.set(x, "azurePublisherId", value.asInstanceOf[js.Any])
     

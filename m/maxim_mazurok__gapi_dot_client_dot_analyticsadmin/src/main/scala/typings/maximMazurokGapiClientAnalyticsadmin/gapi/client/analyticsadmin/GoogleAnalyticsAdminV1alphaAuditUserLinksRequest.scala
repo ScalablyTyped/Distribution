@@ -25,7 +25,8 @@ object GoogleAnalyticsAdminV1alphaAuditUserLinksRequest {
     __obj.asInstanceOf[GoogleAnalyticsAdminV1alphaAuditUserLinksRequest]
   }
   
-  extension [Self <: GoogleAnalyticsAdminV1alphaAuditUserLinksRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleAnalyticsAdminV1alphaAuditUserLinksRequest] (val x: Self) extends AnyVal {
     
     inline def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object ExportDicomDataRequest {
     __obj.asInstanceOf[ExportDicomDataRequest]
   }
   
-  extension [Self <: ExportDicomDataRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExportDicomDataRequest] (val x: Self) extends AnyVal {
     
     inline def setBigqueryDestination(value: GoogleCloudHealthcareV1DicomBigQueryDestination): Self = StObject.set(x, "bigqueryDestination", value.asInstanceOf[js.Any])
     

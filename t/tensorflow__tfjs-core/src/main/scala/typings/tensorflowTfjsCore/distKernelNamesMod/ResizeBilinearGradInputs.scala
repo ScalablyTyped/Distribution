@@ -18,7 +18,8 @@ object ResizeBilinearGradInputs {
     __obj.asInstanceOf[ResizeBilinearGradInputs]
   }
   
-  extension [Self <: ResizeBilinearGradInputs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResizeBilinearGradInputs] (val x: Self) extends AnyVal {
     
     inline def setDy(value: scala.Any): Self = StObject.set(x, "dy", value.asInstanceOf[js.Any])
     

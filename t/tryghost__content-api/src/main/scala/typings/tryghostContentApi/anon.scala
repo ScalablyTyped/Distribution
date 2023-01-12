@@ -47,7 +47,8 @@ object anon {
       __obj.asInstanceOf[Browse]
     }
     
-    extension [Self <: Browse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Browse] (val x: Self) extends AnyVal {
       
       inline def setBrowse(
         value: (/* options */ js.UndefOr[Params], /* memberToken */ js.UndefOr[Nullable[String]]) => js.Promise[PostsOrPages]
@@ -77,7 +78,8 @@ object anon {
       __obj.asInstanceOf[BrowseBrowseFunction]
     }
     
-    extension [Self <: BrowseBrowseFunction](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BrowseBrowseFunction] (val x: Self) extends AnyVal {
       
       inline def setBrowse(
         value: (/* options */ js.UndefOr[Params], /* memberToken */ js.UndefOr[Nullable[String]]) => js.Promise[SettingsResponse]
@@ -115,7 +117,8 @@ object anon {
       __obj.asInstanceOf[BrowseRead]
     }
     
-    extension [Self <: BrowseRead](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BrowseRead] (val x: Self) extends AnyVal {
       
       inline def setBrowse(
         value: (/* options */ js.UndefOr[Params], /* memberToken */ js.UndefOr[Nullable[String]]) => js.Promise[Tags]
@@ -140,7 +143,8 @@ object anon {
       __obj.asInstanceOf[ErrorType]
     }
     
-    extension [Self <: ErrorType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ErrorType] (val x: Self) extends AnyVal {
       
       inline def setErrorType(value: String): Self = StObject.set(x, "errorType", value.asInstanceOf[js.Any])
       
@@ -159,7 +163,8 @@ object anon {
       __obj.asInstanceOf[Id]
     }
     
-    extension [Self <: Id](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Id] (val x: Self) extends AnyVal {
       
       inline def setId(value: Nullable[String]): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -180,7 +185,8 @@ object anon {
       __obj.asInstanceOf[Label]
     }
     
-    extension [Self <: Label](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Label] (val x: Self) extends AnyVal {
       
       inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
@@ -199,7 +205,8 @@ object anon {
       __obj.asInstanceOf[Pagination]
     }
     
-    extension [Self <: Pagination](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Pagination] (val x: Self) extends AnyVal {
       
       inline def setPagination(value: typings.tryghostContentApi.mod.Pagination): Self = StObject.set(x, "pagination", value.asInstanceOf[js.Any])
     }
@@ -216,7 +223,8 @@ object anon {
       __obj.asInstanceOf[Posts]
     }
     
-    extension [Self <: Posts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Posts] (val x: Self) extends AnyVal {
       
       inline def setPosts(value: Double): Self = StObject.set(x, "posts", value.asInstanceOf[js.Any])
     }
@@ -252,7 +260,8 @@ object anon {
       __obj.asInstanceOf[Read]
     }
     
-    extension [Self <: Read](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Read] (val x: Self) extends AnyVal {
       
       inline def setBrowse(
         value: (/* options */ js.UndefOr[Params], /* memberToken */ js.UndefOr[Nullable[String]]) => js.Promise[Authors]
@@ -275,7 +284,8 @@ object anon {
       __obj.asInstanceOf[Slug]
     }
     
-    extension [Self <: Slug](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Slug] (val x: Self) extends AnyVal {
       
       inline def setSlug(value: Nullable[String]): Self = StObject.set(x, "slug", value.asInstanceOf[js.Any])
       

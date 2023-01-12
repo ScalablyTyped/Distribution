@@ -24,7 +24,8 @@ object CreateMergeFieldCommand {
     __obj.asInstanceOf[CreateMergeFieldCommand]
   }
   
-  extension [Self <: CreateMergeFieldCommand](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateMergeFieldCommand] (val x: Self) extends AnyVal {
     
     inline def setExecute(value: String => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction1(value))
   }

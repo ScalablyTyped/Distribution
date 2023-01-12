@@ -41,7 +41,8 @@ object ________COOKIECLICKER_TYPES_HACK_DOESNT_EXIST {
         __obj.asInstanceOf[Track]
       }
       
-      extension [Self <: Track](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Track] (val x: Self) extends AnyVal {
         
         inline def setAudio(value: HTMLAudioElement): Self = StObject.set(x, "audio", value.asInstanceOf[js.Any])
         
@@ -97,7 +98,8 @@ object ________COOKIECLICKER_TYPES_HACK_DOESNT_EXIST {
         __obj.asInstanceOf[Mod]
       }
       
-      extension [Self <: Mod](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Mod] (val x: Self) extends AnyVal {
         
         inline def setDependencies(value: js.Array[String]): Self = StObject.set(x, "dependencies", value.asInstanceOf[js.Any])
         
@@ -161,7 +163,8 @@ object ________COOKIECLICKER_TYPES_HACK_DOESNT_EXIST {
         __obj.asInstanceOf[ModInfo]
       }
       
-      extension [Self <: ModInfo](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ModInfo] (val x: Self) extends AnyVal {
         
         inline def setAllowSteamAchievs(value: PseudoBoolean): Self = StObject.set(x, "AllowSteamAchievs", value.asInstanceOf[js.Any])
         

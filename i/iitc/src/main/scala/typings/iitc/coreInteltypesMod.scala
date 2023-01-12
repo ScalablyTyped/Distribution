@@ -24,7 +24,8 @@ object coreInteltypesMod {
         __obj.asInstanceOf[ChatCallback]
       }
       
-      extension [Self <: ChatCallback](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ChatCallback] (val x: Self) extends AnyVal {
         
         inline def setResult(value: js.Array[ChatLine]): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
         
@@ -53,7 +54,8 @@ object coreInteltypesMod {
         __obj.asInstanceOf[MarkUpPlayerType]
       }
       
-      extension [Self <: MarkUpPlayerType](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: MarkUpPlayerType] (val x: Self) extends AnyVal {
         
         inline def setPlain(value: String): Self = StObject.set(x, "plain", value.asInstanceOf[js.Any])
         
@@ -84,7 +86,8 @@ object coreInteltypesMod {
         __obj.asInstanceOf[MarkUpPortalType]
       }
       
-      extension [Self <: MarkUpPortalType](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: MarkUpPortalType] (val x: Self) extends AnyVal {
         
         inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
         
@@ -113,7 +116,8 @@ object coreInteltypesMod {
         __obj.asInstanceOf[MarkUpTextType]
       }
       
-      extension [Self <: MarkUpTextType](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: MarkUpTextType] (val x: Self) extends AnyVal {
         
         inline def setPlain(value: String): Self = StObject.set(x, "plain", value.asInstanceOf[js.Any])
       }
@@ -163,7 +167,8 @@ object coreInteltypesMod {
         __obj.asInstanceOf[PlayerInfo]
       }
       
-      extension [Self <: PlayerInfo](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: PlayerInfo] (val x: Self) extends AnyVal {
         
         inline def setAp(value: String): Self = StObject.set(x, "ap", value.asInstanceOf[js.Any])
         
@@ -200,7 +205,8 @@ object coreInteltypesMod {
         __obj.asInstanceOf[PlextContainer]
       }
       
-      extension [Self <: PlextContainer](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: PlextContainer] (val x: Self) extends AnyVal {
         
         inline def setPlext(value: Markup): Self = StObject.set(x, "plext", value.asInstanceOf[js.Any])
       }

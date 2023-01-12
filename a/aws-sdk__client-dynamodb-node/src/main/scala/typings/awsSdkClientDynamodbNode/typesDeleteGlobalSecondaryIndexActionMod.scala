@@ -20,7 +20,8 @@ object typesDeleteGlobalSecondaryIndexActionMod {
       __obj.asInstanceOf[DeleteGlobalSecondaryIndexAction]
     }
     
-    extension [Self <: DeleteGlobalSecondaryIndexAction](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeleteGlobalSecondaryIndexAction] (val x: Self) extends AnyVal {
       
       inline def setIndexName(value: String): Self = StObject.set(x, "IndexName", value.asInstanceOf[js.Any])
     }

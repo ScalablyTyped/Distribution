@@ -31,7 +31,8 @@ object FeaturePath {
     __obj.asInstanceOf[FeaturePath]
   }
   
-  extension [Self <: FeaturePath](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FeaturePath] (val x: Self) extends AnyVal {
     
     inline def setFeaturePath(value: String): Self = StObject.set(x, "featurePath", value.asInstanceOf[js.Any])
     

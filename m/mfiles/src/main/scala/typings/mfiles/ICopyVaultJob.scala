@@ -80,7 +80,8 @@ object ICopyVaultJob {
     __obj.asInstanceOf[ICopyVaultJob]
   }
   
-  extension [Self <: ICopyVaultJob](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICopyVaultJob] (val x: Self) extends AnyVal {
     
     inline def setClone(value: () => ICopyVaultJob): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     

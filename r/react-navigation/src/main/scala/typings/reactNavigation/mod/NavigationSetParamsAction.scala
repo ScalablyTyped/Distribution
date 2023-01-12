@@ -20,7 +20,8 @@ object NavigationSetParamsAction {
     __obj.asInstanceOf[NavigationSetParamsAction]
   }
   
-  extension [Self <: NavigationSetParamsAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NavigationSetParamsAction] (val x: Self) extends AnyVal {
     
     inline def setType(value: NavigationSlashSET_PARAMS): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

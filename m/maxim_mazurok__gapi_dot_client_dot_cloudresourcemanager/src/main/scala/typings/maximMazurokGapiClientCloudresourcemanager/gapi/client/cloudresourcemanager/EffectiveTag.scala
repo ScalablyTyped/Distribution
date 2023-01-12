@@ -34,7 +34,8 @@ object EffectiveTag {
     __obj.asInstanceOf[EffectiveTag]
   }
   
-  extension [Self <: EffectiveTag](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EffectiveTag] (val x: Self) extends AnyVal {
     
     inline def setInherited(value: Boolean): Self = StObject.set(x, "inherited", value.asInstanceOf[js.Any])
     

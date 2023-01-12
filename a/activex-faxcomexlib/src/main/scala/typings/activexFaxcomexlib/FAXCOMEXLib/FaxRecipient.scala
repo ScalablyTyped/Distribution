@@ -24,7 +24,8 @@ object FaxRecipient {
     __obj.asInstanceOf[FaxRecipient]
   }
   
-  extension [Self <: FaxRecipient](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FaxRecipient] (val x: Self) extends AnyVal {
     
     inline def setFAXCOMEXLibDotFaxRecipient_typekey(value: FaxRecipient): Self = StObject.set(x, "FAXCOMEXLib.FaxRecipient_typekey", value.asInstanceOf[js.Any])
     

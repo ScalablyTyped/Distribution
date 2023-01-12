@@ -47,7 +47,8 @@ object HttpUriOptions {
     __obj.asInstanceOf[HttpUriOptions]
   }
   
-  extension [Self <: HttpUriOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HttpUriOptions] (val x: Self) extends AnyVal {
     
     inline def setAllowedUris(value: js.Array[String | js.RegExp | (js.Function1[/* uri */ String, Boolean])]): Self = StObject.set(x, "allowedUris", value.asInstanceOf[js.Any])
     

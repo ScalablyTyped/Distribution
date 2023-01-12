@@ -17,7 +17,8 @@ object ScrollGridChunkConfig {
     __obj.asInstanceOf[ScrollGridChunkConfig]
   }
   
-  extension [Self <: ScrollGridChunkConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScrollGridChunkConfig] (val x: Self) extends AnyVal {
     
     inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
   }

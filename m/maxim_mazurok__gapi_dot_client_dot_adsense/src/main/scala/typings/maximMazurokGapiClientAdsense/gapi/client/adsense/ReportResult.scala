@@ -37,7 +37,8 @@ object ReportResult {
     __obj.asInstanceOf[ReportResult]
   }
   
-  extension [Self <: ReportResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReportResult] (val x: Self) extends AnyVal {
     
     inline def setAverages(value: Row): Self = StObject.set(x, "averages", value.asInstanceOf[js.Any])
     

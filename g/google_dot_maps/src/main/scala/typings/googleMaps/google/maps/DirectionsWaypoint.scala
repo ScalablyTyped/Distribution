@@ -34,7 +34,8 @@ object DirectionsWaypoint {
     __obj.asInstanceOf[DirectionsWaypoint]
   }
   
-  extension [Self <: DirectionsWaypoint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DirectionsWaypoint] (val x: Self) extends AnyVal {
     
     inline def setLocation(value: String | LatLng | LatLngLiteral | Place): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     

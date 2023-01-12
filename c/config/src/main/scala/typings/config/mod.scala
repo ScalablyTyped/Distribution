@@ -26,7 +26,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[IConfig]
     }
     
-    extension [Self <: IConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IConfig] (val x: Self) extends AnyVal {
       
       inline def setGet(value: String => Any): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
       
@@ -51,7 +52,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[IConfigSource]
     }
     
-    extension [Self <: IConfigSource](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IConfigSource] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       

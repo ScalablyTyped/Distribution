@@ -22,7 +22,8 @@ object ShieldedInstanceIdentity {
     __obj.asInstanceOf[ShieldedInstanceIdentity]
   }
   
-  extension [Self <: ShieldedInstanceIdentity](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShieldedInstanceIdentity] (val x: Self) extends AnyVal {
     
     inline def setEncryptionKey(value: ShieldedInstanceIdentityEntry): Self = StObject.set(x, "encryptionKey", value.asInstanceOf[js.Any])
     

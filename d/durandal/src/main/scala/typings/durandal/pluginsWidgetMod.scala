@@ -55,7 +55,8 @@ object pluginsWidgetMod {
       __obj.asInstanceOf[WidgetSettings]
     }
     
-    extension [Self <: WidgetSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WidgetSettings] (val x: Self) extends AnyVal {
       
       inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
       

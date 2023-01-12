@@ -32,7 +32,8 @@ object XAppend {
     __obj.asInstanceOf[XAppend]
   }
   
-  extension [Self <: XAppend](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XAppend] (val x: Self) extends AnyVal {
     
     inline def setAppendByDescriptor(value: XPropertySet => Unit): Self = StObject.set(x, "appendByDescriptor", js.Any.fromFunction1(value))
   }

@@ -38,7 +38,8 @@ object distKerasFormatInputConfigMod {
       __obj.asInstanceOf[InputLayerConfig]
     }
     
-    extension [Self <: InputLayerConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InputLayerConfig] (val x: Self) extends AnyVal {
       
       inline def setBatch_input_shape(value: Shape): Self = StObject.set(x, "batch_input_shape", value.asInstanceOf[js.Any])
       

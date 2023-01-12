@@ -56,7 +56,8 @@ object AutomaticScaling {
     __obj.asInstanceOf[AutomaticScaling]
   }
   
-  extension [Self <: AutomaticScaling](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AutomaticScaling] (val x: Self) extends AnyVal {
     
     inline def setCoolDownPeriod(value: String): Self = StObject.set(x, "coolDownPeriod", value.asInstanceOf[js.Any])
     

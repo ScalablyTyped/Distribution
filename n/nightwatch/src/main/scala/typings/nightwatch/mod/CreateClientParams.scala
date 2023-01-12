@@ -41,7 +41,8 @@ object CreateClientParams {
     __obj.asInstanceOf[CreateClientParams]
   }
   
-  extension [Self <: CreateClientParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateClientParams] (val x: Self) extends AnyVal {
     
     inline def setBrowserName(value: String): Self = StObject.set(x, "browserName", value.asInstanceOf[js.Any])
     

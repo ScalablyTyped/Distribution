@@ -34,7 +34,8 @@ object mod {
       __obj.asInstanceOf[Memoized[F]]
     }
     
-    extension [Self <: Memoized[?], F](x: Self & Memoized[F]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Memoized[?], F] (val x: Self & Memoized[F]) extends AnyVal {
       
       inline def setClear(value: F & js.Function0[Unit]): Self = StObject.set(x, "clear", value.asInstanceOf[js.Any])
       
@@ -73,7 +74,8 @@ object mod {
       __obj.asInstanceOf[Options[F]]
     }
     
-    extension [Self <: Options[?], F /* <: js.Function1[/* repeated */ Any, Any] */](x: Self & Options[F]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options[?], F /* <: js.Function1[/* repeated */ Any, Any] */] (val x: Self & Options[F]) extends AnyVal {
       
       inline def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
       

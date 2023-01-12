@@ -19,7 +19,8 @@ object Content {
     __obj.asInstanceOf[Content[BaseToken]]
   }
   
-  extension [Self <: Content[?], BaseToken](x: Self & Content[BaseToken]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Content[?], BaseToken] (val x: Self & Content[BaseToken]) extends AnyVal {
     
     inline def setComponent(value: `24`[BaseToken]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
     

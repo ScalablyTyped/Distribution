@@ -24,7 +24,8 @@ object TimelineGroupBase {
     __obj.asInstanceOf[TimelineGroupBase]
   }
   
-  extension [Self <: TimelineGroupBase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimelineGroupBase] (val x: Self) extends AnyVal {
     
     inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     

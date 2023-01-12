@@ -27,7 +27,8 @@ object CompatibleKafkaVersion {
     __obj.asInstanceOf[CompatibleKafkaVersion]
   }
   
-  extension [Self <: CompatibleKafkaVersion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CompatibleKafkaVersion] (val x: Self) extends AnyVal {
     
     inline def setSourceVersion(value: string): Self = StObject.set(x, "SourceVersion", value.asInstanceOf[js.Any])
     

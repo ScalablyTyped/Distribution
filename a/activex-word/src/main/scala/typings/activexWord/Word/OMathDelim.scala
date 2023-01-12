@@ -52,7 +52,8 @@ object OMathDelim {
     __obj.asInstanceOf[OMathDelim]
   }
   
-  extension [Self <: OMathDelim](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OMathDelim] (val x: Self) extends AnyVal {
     
     inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     

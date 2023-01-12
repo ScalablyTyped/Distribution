@@ -15,7 +15,8 @@ object DidChangeConfigurationRegistrationOptions {
     __obj.asInstanceOf[DidChangeConfigurationRegistrationOptions]
   }
   
-  extension [Self <: DidChangeConfigurationRegistrationOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DidChangeConfigurationRegistrationOptions] (val x: Self) extends AnyVal {
     
     inline def setSection(value: String | js.Array[String]): Self = StObject.set(x, "section", value.asInstanceOf[js.Any])
     

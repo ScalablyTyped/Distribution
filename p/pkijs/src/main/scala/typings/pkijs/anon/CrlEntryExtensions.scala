@@ -19,7 +19,8 @@ object CrlEntryExtensions {
     __obj.asInstanceOf[CrlEntryExtensions]
   }
   
-  extension [Self <: CrlEntryExtensions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CrlEntryExtensions] (val x: Self) extends AnyVal {
     
     inline def setCrlEntryExtensions(value: String): Self = StObject.set(x, "crlEntryExtensions", value.asInstanceOf[js.Any])
     

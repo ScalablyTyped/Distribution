@@ -505,7 +505,8 @@ object ShellReturnValue {
     __obj.asInstanceOf[ShellReturnValue]
   }
   
-  extension [Self <: ShellReturnValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShellReturnValue] (val x: Self) extends AnyVal {
     
     inline def setCat(value: CatFunction): Self = StObject.set(x, "cat", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object Endorsement {
     __obj.asInstanceOf[Endorsement]
   }
   
-  extension [Self <: Endorsement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Endorsement] (val x: Self) extends AnyVal {
     
     inline def setRate(value: Double): Self = StObject.set(x, "rate", value.asInstanceOf[js.Any])
     

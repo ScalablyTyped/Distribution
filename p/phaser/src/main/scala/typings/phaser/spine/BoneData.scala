@@ -56,7 +56,8 @@ object BoneData {
     __obj.asInstanceOf[BoneData]
   }
   
-  extension [Self <: BoneData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BoneData] (val x: Self) extends AnyVal {
     
     inline def setColor(value: Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object SortingRule {
     __obj.asInstanceOf[SortingRule[D]]
   }
   
-  extension [Self <: SortingRule[?], D](x: Self & SortingRule[D]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SortingRule[?], D] (val x: Self & SortingRule[D]) extends AnyVal {
     
     inline def setDesc(value: Boolean): Self = StObject.set(x, "desc", value.asInstanceOf[js.Any])
     

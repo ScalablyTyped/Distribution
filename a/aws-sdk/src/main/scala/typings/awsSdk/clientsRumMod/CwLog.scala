@@ -23,7 +23,8 @@ object CwLog {
     __obj.asInstanceOf[CwLog]
   }
   
-  extension [Self <: CwLog](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CwLog] (val x: Self) extends AnyVal {
     
     inline def setCwLogEnabled(value: Boolean): Self = StObject.set(x, "CwLogEnabled", value.asInstanceOf[js.Any])
     

@@ -27,7 +27,8 @@ object distTypesClassicEditorGeneralDistComponentsHorizontalLineMod extends Shor
       __obj.asInstanceOf[HorizontalLineProps]
     }
     
-    extension [Self <: HorizontalLineProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HorizontalLineProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

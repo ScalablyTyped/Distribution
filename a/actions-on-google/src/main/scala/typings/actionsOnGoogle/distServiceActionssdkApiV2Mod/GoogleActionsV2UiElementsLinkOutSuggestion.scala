@@ -30,7 +30,8 @@ object GoogleActionsV2UiElementsLinkOutSuggestion {
     __obj.asInstanceOf[GoogleActionsV2UiElementsLinkOutSuggestion]
   }
   
-  extension [Self <: GoogleActionsV2UiElementsLinkOutSuggestion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleActionsV2UiElementsLinkOutSuggestion] (val x: Self) extends AnyVal {
     
     inline def setDestinationName(value: String): Self = StObject.set(x, "destinationName", value.asInstanceOf[js.Any])
     

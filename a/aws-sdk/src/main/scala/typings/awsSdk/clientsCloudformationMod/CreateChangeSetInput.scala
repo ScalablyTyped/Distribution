@@ -98,7 +98,8 @@ object CreateChangeSetInput {
     __obj.asInstanceOf[CreateChangeSetInput]
   }
   
-  extension [Self <: CreateChangeSetInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateChangeSetInput] (val x: Self) extends AnyVal {
     
     inline def setCapabilities(value: Capabilities): Self = StObject.set(x, "Capabilities", value.asInstanceOf[js.Any])
     

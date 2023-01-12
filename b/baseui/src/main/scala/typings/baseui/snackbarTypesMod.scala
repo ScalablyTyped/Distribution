@@ -63,7 +63,8 @@ object snackbarTypesMod {
       __obj.asInstanceOf[SnackbarElementOverrides]
     }
     
-    extension [Self <: SnackbarElementOverrides](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SnackbarElementOverrides] (val x: Self) extends AnyVal {
       
       inline def setActionButtonContainer(value: Override[Any]): Self = StObject.set(x, "ActionButtonContainer", value.asInstanceOf[js.Any])
       
@@ -118,7 +119,8 @@ object snackbarTypesMod {
       __obj.asInstanceOf[SnackbarElementProps]
     }
     
-    extension [Self <: SnackbarElementProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SnackbarElementProps] (val x: Self) extends AnyVal {
       
       inline def setActionMessage(value: String): Self = StObject.set(x, "actionMessage", value.asInstanceOf[js.Any])
       
@@ -167,7 +169,8 @@ object snackbarTypesMod {
       __obj.asInstanceOf[SnackbarProviderProps]
     }
     
-    extension [Self <: SnackbarProviderProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SnackbarProviderProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

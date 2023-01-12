@@ -28,7 +28,8 @@ object AwsCodeBuildProjectLogsConfigS3LogsDetails {
     __obj.asInstanceOf[AwsCodeBuildProjectLogsConfigS3LogsDetails]
   }
   
-  extension [Self <: AwsCodeBuildProjectLogsConfigS3LogsDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsCodeBuildProjectLogsConfigS3LogsDetails] (val x: Self) extends AnyVal {
     
     inline def setEncryptionDisabled(value: Boolean): Self = StObject.set(x, "EncryptionDisabled", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object FuncRegSymbolSymbol {
     __obj.asInstanceOf[FuncRegSymbolSymbol]
   }
   
-  extension [Self <: FuncRegSymbolSymbol](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FuncRegSymbolSymbol] (val x: Self) extends AnyVal {
     
     inline def setFunc(value: NotationPrecedenceRightToLeft): Self = StObject.set(x, "func", value.asInstanceOf[js.Any])
     

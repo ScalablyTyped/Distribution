@@ -18,7 +18,8 @@ object Lookup {
     __obj.asInstanceOf[Lookup]
   }
   
-  extension [Self <: Lookup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Lookup] (val x: Self) extends AnyVal {
     
     inline def setData(value: js.Array[DataIndex]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

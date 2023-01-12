@@ -78,7 +78,8 @@ object componentsTableTableCellMod {
       __obj.asInstanceOf[TableCellProps]
     }
     
-    extension [Self <: TableCellProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TableCellProps] (val x: Self) extends AnyVal {
       
       inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
@@ -150,7 +151,8 @@ object componentsTableTableCellMod {
       __obj.asInstanceOf[TableCellTheme]
     }
     
-    extension [Self <: TableCellTheme](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TableCellTheme] (val x: Self) extends AnyVal {
       
       inline def setAsc(value: String): Self = StObject.set(x, "asc", value.asInstanceOf[js.Any])
       

@@ -35,7 +35,8 @@ object anon {
       __obj.asInstanceOf[Blackberry]
     }
     
-    extension [Self <: Blackberry](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Blackberry] (val x: Self) extends AnyVal {
       
       inline def setBlackberry(value: Boolean): Self = StObject.set(x, "blackberry", value.asInstanceOf[js.Any])
       
@@ -70,7 +71,8 @@ object anon {
       __obj.asInstanceOf[Device]
     }
     
-    extension [Self <: Device](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Device] (val x: Self) extends AnyVal {
       
       inline def setDevice(value: Boolean): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
       
@@ -99,7 +101,8 @@ object anon {
       __obj.asInstanceOf[Phone]
     }
     
-    extension [Self <: Phone](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Phone] (val x: Self) extends AnyVal {
       
       inline def setDevice(value: Boolean): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
       
@@ -122,7 +125,8 @@ object anon {
       __obj.asInstanceOf[Quality]
     }
     
-    extension [Self <: Quality](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Quality] (val x: Self) extends AnyVal {
       
       inline def setQuality(value: Double): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
       
@@ -1286,7 +1290,8 @@ object anon {
       __obj.asInstanceOf[TypeofWebGLRenderingConte]
     }
     
-    extension [Self <: TypeofWebGLRenderingConte](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypeofWebGLRenderingConte] (val x: Self) extends AnyVal {
       
       inline def setACTIVE_ATTRIBUTES(value: GLenum): Self = StObject.set(x, "ACTIVE_ATTRIBUTES", value.asInstanceOf[js.Any])
       
@@ -1893,7 +1898,8 @@ object anon {
       __obj.asInstanceOf[UserAgent]
     }
     
-    extension [Self <: UserAgent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UserAgent] (val x: Self) extends AnyVal {
       
       inline def setUserAgent(value: String): Self = StObject.set(x, "userAgent", value.asInstanceOf[js.Any])
     }

@@ -20,7 +20,8 @@ object PostParametersPathOwnerPullnumber {
     __obj.asInstanceOf[PostParametersPathOwnerPullnumber]
   }
   
-  extension [Self <: PostParametersPathOwnerPullnumber](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PostParametersPathOwnerPullnumber] (val x: Self) extends AnyVal {
     
     inline def setPost(value: ParametersPathOwnerPullnumber): Self = StObject.set(x, "post", value.asInstanceOf[js.Any])
   }

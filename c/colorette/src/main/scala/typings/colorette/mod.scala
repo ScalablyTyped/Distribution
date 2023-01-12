@@ -456,7 +456,8 @@ object mod {
       __obj.asInstanceOf[Colorette]
     }
     
-    extension [Self <: Colorette](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Colorette] (val x: Self) extends AnyVal {
       
       inline def setBgBlack(value: /* text */ String | Double => String): Self = StObject.set(x, "bgBlack", js.Any.fromFunction1(value))
       

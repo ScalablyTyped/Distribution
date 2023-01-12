@@ -17,7 +17,8 @@ object AutoscrollToTopThreshold {
     __obj.asInstanceOf[AutoscrollToTopThreshold]
   }
   
-  extension [Self <: AutoscrollToTopThreshold](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AutoscrollToTopThreshold] (val x: Self) extends AnyVal {
     
     inline def setAutoscrollToTopThreshold(value: Double): Self = StObject.set(x, "autoscrollToTopThreshold", value.asInstanceOf[js.Any])
     

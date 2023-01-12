@@ -48,7 +48,8 @@ object KeyPairInfo {
     __obj.asInstanceOf[KeyPairInfo]
   }
   
-  extension [Self <: KeyPairInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KeyPairInfo] (val x: Self) extends AnyVal {
     
     inline def setCreateTime(value: js.Date): Self = StObject.set(x, "CreateTime", value.asInstanceOf[js.Any])
     

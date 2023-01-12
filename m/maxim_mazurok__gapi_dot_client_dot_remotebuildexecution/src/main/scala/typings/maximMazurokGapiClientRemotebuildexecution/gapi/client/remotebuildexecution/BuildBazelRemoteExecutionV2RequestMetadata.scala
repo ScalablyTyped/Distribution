@@ -40,7 +40,8 @@ object BuildBazelRemoteExecutionV2RequestMetadata {
     __obj.asInstanceOf[BuildBazelRemoteExecutionV2RequestMetadata]
   }
   
-  extension [Self <: BuildBazelRemoteExecutionV2RequestMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BuildBazelRemoteExecutionV2RequestMetadata] (val x: Self) extends AnyVal {
     
     inline def setActionId(value: String): Self = StObject.set(x, "actionId", value.asInstanceOf[js.Any])
     

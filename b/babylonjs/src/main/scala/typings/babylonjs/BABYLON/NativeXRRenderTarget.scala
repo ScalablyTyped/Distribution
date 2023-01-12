@@ -25,7 +25,8 @@ object NativeXRRenderTarget {
     __obj.asInstanceOf[NativeXRRenderTarget]
   }
   
-  extension [Self <: NativeXRRenderTarget](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NativeXRRenderTarget] (val x: Self) extends AnyVal {
     
     inline def set_nativeRenderTarget(value: Any): Self = StObject.set(x, "_nativeRenderTarget", value.asInstanceOf[js.Any])
   }

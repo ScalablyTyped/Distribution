@@ -19,7 +19,8 @@ object TouchType {
     __obj.asInstanceOf[TouchType]
   }
   
-  extension [Self <: TouchType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TouchType] (val x: Self) extends AnyVal {
     
     inline def setActiveSplitter(value: Double): Self = StObject.set(x, "activeSplitter", value.asInstanceOf[js.Any])
     

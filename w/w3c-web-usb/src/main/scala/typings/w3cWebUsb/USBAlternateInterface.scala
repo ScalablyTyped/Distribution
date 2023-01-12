@@ -31,7 +31,8 @@ object USBAlternateInterface {
     __obj.asInstanceOf[USBAlternateInterface]
   }
   
-  extension [Self <: USBAlternateInterface](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: USBAlternateInterface] (val x: Self) extends AnyVal {
     
     inline def setAlternateSetting(value: Double): Self = StObject.set(x, "alternateSetting", value.asInstanceOf[js.Any])
     

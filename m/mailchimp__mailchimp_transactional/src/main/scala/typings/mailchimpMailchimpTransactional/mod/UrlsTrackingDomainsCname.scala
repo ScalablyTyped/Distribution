@@ -27,7 +27,8 @@ object UrlsTrackingDomainsCname {
     __obj.asInstanceOf[UrlsTrackingDomainsCname]
   }
   
-  extension [Self <: UrlsTrackingDomainsCname](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UrlsTrackingDomainsCname] (val x: Self) extends AnyVal {
     
     inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     

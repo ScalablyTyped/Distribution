@@ -30,7 +30,8 @@ object InstallTypes {
     __obj.asInstanceOf[InstallTypes]
   }
   
-  extension [Self <: InstallTypes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InstallTypes] (val x: Self) extends AnyVal {
     
     inline def setEventId(value: Double): Self = StObject.set(x, "eventId", value.asInstanceOf[js.Any])
     

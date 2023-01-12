@@ -15,7 +15,8 @@ object QueryDslDecayFunctionBase {
     __obj.asInstanceOf[QueryDslDecayFunctionBase]
   }
   
-  extension [Self <: QueryDslDecayFunctionBase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryDslDecayFunctionBase] (val x: Self) extends AnyVal {
     
     inline def setMulti_value_mode(value: QueryDslMultiValueMode): Self = StObject.set(x, "multi_value_mode", value.asInstanceOf[js.Any])
     

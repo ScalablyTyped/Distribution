@@ -33,7 +33,8 @@ object DeleteDocumentRequest {
     __obj.asInstanceOf[DeleteDocumentRequest]
   }
   
-  extension [Self <: DeleteDocumentRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteDocumentRequest] (val x: Self) extends AnyVal {
     
     inline def setDocumentVersion(value: DocumentVersion): Self = StObject.set(x, "DocumentVersion", value.asInstanceOf[js.Any])
     

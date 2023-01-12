@@ -133,7 +133,8 @@ object libExecutorMod {
       __obj.asInstanceOf[BaseExecutorDeps[C, N, M, I, O]]
     }
     
-    extension [Self <: BaseExecutorDeps[?, ?, ?, ?, ?], C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, M, I, O] */, M /* <: CommandMetadata[I, O] */, I /* <: CommandMetadataInput */, O /* <: CommandMetadataOption */](x: Self & (BaseExecutorDeps[C, N, M, I, O])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseExecutorDeps[?, ?, ?, ?, ?], C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, M, I, O] */, M /* <: CommandMetadata[I, O] */, I /* <: CommandMetadataInput */, O /* <: CommandMetadataOption */] (val x: Self & (BaseExecutorDeps[C, N, M, I, O])) extends AnyVal {
       
       inline def setColors(value: Colors): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
       
@@ -162,7 +163,8 @@ object libExecutorMod {
       __obj.asInstanceOf[BaseExecutorFormatHelpOptions]
     }
     
-    extension [Self <: BaseExecutorFormatHelpOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseExecutorFormatHelpOptions] (val x: Self) extends AnyVal {
       
       inline def setFormat(value: terminal | json): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
@@ -181,7 +183,8 @@ object libExecutorMod {
       __obj.asInstanceOf[ExecutorOperations]
     }
     
-    extension [Self <: ExecutorOperations](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExecutorOperations] (val x: Self) extends AnyVal {
       
       inline def setRPC(value: String): Self = StObject.set(x, "RPC", value.asInstanceOf[js.Any])
     }

@@ -18,7 +18,8 @@ object GetDataLakeSettingsRequest {
     __obj.asInstanceOf[GetDataLakeSettingsRequest]
   }
   
-  extension [Self <: GetDataLakeSettingsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetDataLakeSettingsRequest] (val x: Self) extends AnyVal {
     
     inline def setCatalogId(value: CatalogIdString): Self = StObject.set(x, "CatalogId", value.asInstanceOf[js.Any])
     

@@ -61,7 +61,8 @@ object OutputField {
     /* 0 */ val SKIP: typings.rockset.distCodegenApiMod.OutputField.OnErrorEnum.SKIP & Double = js.native
   }
   
-  extension [Self <: OutputField](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OutputField] (val x: Self) extends AnyVal {
     
     inline def setField_name(value: String): Self = StObject.set(x, "field_name", value.asInstanceOf[js.Any])
     

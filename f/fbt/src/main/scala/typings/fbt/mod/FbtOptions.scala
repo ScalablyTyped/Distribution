@@ -46,7 +46,8 @@ object FbtOptions {
     __obj.asInstanceOf[FbtOptions]
   }
   
-  extension [Self <: FbtOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FbtOptions] (val x: Self) extends AnyVal {
     
     inline def setAuthor(value: String): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
     

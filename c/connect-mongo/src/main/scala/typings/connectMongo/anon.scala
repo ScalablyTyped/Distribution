@@ -51,7 +51,8 @@ object anon {
       __obj.asInstanceOf[All]
     }
     
-    extension [Self <: All](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: All] (val x: Self) extends AnyVal {
       
       inline def setAll(value: () => js.Promise[js.UndefOr[js.Array[SessionData] | StringDictionary[SessionData] | Null]]): Self = StObject.set(x, "all", js.Any.fromFunction0(value))
       
@@ -88,7 +89,8 @@ object anon {
       __obj.asInstanceOf[Baz]
     }
     
-    extension [Self <: Baz](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Baz] (val x: Self) extends AnyVal {
       
       inline def setBaz(value: Chicken): Self = StObject.set(x, "baz", value.asInstanceOf[js.Any])
       
@@ -113,7 +115,8 @@ object anon {
       __obj.asInstanceOf[Chicken]
     }
     
-    extension [Self <: Chicken](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Chicken] (val x: Self) extends AnyVal {
       
       inline def setChicken(value: String): Self = StObject.set(x, "chicken", value.asInstanceOf[js.Any])
       
@@ -136,7 +139,8 @@ object anon {
       __obj.asInstanceOf[Cow]
     }
     
-    extension [Self <: Cow](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Cow] (val x: Self) extends AnyVal {
       
       inline def setCow(value: String): Self = StObject.set(x, "cow", value.asInstanceOf[js.Any])
       
@@ -161,7 +165,8 @@ object anon {
       __obj.asInstanceOf[Foo]
     }
     
-    extension [Self <: Foo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Foo] (val x: Self) extends AnyVal {
       
       inline def setBaz(value: Cow): Self = StObject.set(x, "baz", value.asInstanceOf[js.Any])
       
@@ -215,7 +220,8 @@ object anon {
       __obj.asInstanceOf[PartialConnectMongoOption]
     }
     
-    extension [Self <: PartialConnectMongoOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialConnectMongoOption] (val x: Self) extends AnyVal {
       
       inline def setAutoRemove(value: native | interval | disabled): Self = StObject.set(x, "autoRemove", value.asInstanceOf[js.Any])
       
@@ -301,7 +307,8 @@ object anon {
       __obj.asInstanceOf[SessionDatalastModifiedDa]
     }
     
-    extension [Self <: SessionDatalastModifiedDa](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SessionDatalastModifiedDa] (val x: Self) extends AnyVal {
       
       inline def setCookie(value: Cookie): Self = StObject.set(x, "cookie", value.asInstanceOf[js.Any])
       
@@ -324,7 +331,8 @@ object anon {
       __obj.asInstanceOf[Store]
     }
     
-    extension [Self <: Store](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Store] (val x: Self) extends AnyVal {
       
       inline def setStore(value: default): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
       

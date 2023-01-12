@@ -81,7 +81,8 @@ object SubscriptionStatus {
     __obj.asInstanceOf[SubscriptionStatus]
   }
   
-  extension [Self <: SubscriptionStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubscriptionStatus] (val x: Self) extends AnyVal {
     
     inline def setError(value: js.Array[CodeableConcept]): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     

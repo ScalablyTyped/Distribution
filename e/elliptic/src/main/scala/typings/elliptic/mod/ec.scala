@@ -181,7 +181,8 @@ object ec {
       __obj.asInstanceOf[GenKeyPairOptions]
     }
     
-    extension [Self <: GenKeyPairOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GenKeyPairOptions] (val x: Self) extends AnyVal {
       
       inline def setEntropy(value: Any): Self = StObject.set(x, "entropy", value.asInstanceOf[js.Any])
       
@@ -216,7 +217,8 @@ object ec {
       __obj.asInstanceOf[KeyPairOptions]
     }
     
-    extension [Self <: KeyPairOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KeyPairOptions] (val x: Self) extends AnyVal {
       
       inline def setPriv(value: Buffer): Self = StObject.set(x, "priv", value.asInstanceOf[js.Any])
       
@@ -255,7 +257,8 @@ object ec {
       __obj.asInstanceOf[SignOptions]
     }
     
-    extension [Self <: SignOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SignOptions] (val x: Self) extends AnyVal {
       
       inline def setCanonical(value: Boolean): Self = StObject.set(x, "canonical", value.asInstanceOf[js.Any])
       
@@ -310,7 +313,8 @@ object ec {
       __obj.asInstanceOf[SignatureOptions]
     }
     
-    extension [Self <: SignatureOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SignatureOptions] (val x: Self) extends AnyVal {
       
       inline def setR(value: BNInput): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
       

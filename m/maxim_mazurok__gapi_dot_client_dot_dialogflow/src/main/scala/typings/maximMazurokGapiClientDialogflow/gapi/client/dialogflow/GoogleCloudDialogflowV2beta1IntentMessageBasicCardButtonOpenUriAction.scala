@@ -16,7 +16,8 @@ object GoogleCloudDialogflowV2beta1IntentMessageBasicCardButtonOpenUriAction {
     __obj.asInstanceOf[GoogleCloudDialogflowV2beta1IntentMessageBasicCardButtonOpenUriAction]
   }
   
-  extension [Self <: GoogleCloudDialogflowV2beta1IntentMessageBasicCardButtonOpenUriAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDialogflowV2beta1IntentMessageBasicCardButtonOpenUriAction] (val x: Self) extends AnyVal {
     
     inline def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
     

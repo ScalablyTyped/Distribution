@@ -36,7 +36,8 @@ object mod {
       __obj.asInstanceOf[CacheMap[K, V]]
     }
     
-    extension [Self <: CacheMap[?, ?], K, V](x: Self & (CacheMap[K, V])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CacheMap[?, ?], K, V] (val x: Self & (CacheMap[K, V])) extends AnyVal {
       
       inline def setClear(value: () => Any): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
       
@@ -140,7 +141,8 @@ object mod {
       __obj.asInstanceOf[Options[K, V, C]]
     }
     
-    extension [Self <: Options[?, ?, ?], K, V, C](x: Self & (Options[K, V, C])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options[?, ?, ?], K, V, C] (val x: Self & (Options[K, V, C])) extends AnyVal {
       
       inline def setBatch(value: Boolean): Self = StObject.set(x, "batch", value.asInstanceOf[js.Any])
       

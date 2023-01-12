@@ -32,7 +32,8 @@ object AggregateFunction {
     __obj.asInstanceOf[AggregateFunction]
   }
   
-  extension [Self <: AggregateFunction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AggregateFunction] (val x: Self) extends AnyVal {
     
     inline def setAggregateFunction(value: (/* srcRow */ Any, /* cmpRow */ Any, /* aggRow */ Any) => Unit): Self = StObject.set(x, "aggregateFunction", js.Any.fromFunction3(value))
     

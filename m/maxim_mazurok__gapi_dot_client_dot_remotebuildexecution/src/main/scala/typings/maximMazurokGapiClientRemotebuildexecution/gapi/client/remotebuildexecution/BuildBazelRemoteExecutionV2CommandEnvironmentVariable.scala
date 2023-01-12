@@ -19,7 +19,8 @@ object BuildBazelRemoteExecutionV2CommandEnvironmentVariable {
     __obj.asInstanceOf[BuildBazelRemoteExecutionV2CommandEnvironmentVariable]
   }
   
-  extension [Self <: BuildBazelRemoteExecutionV2CommandEnvironmentVariable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BuildBazelRemoteExecutionV2CommandEnvironmentVariable] (val x: Self) extends AnyVal {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

@@ -34,7 +34,8 @@ object Gradient {
     __obj.asInstanceOf[Gradient]
   }
   
-  extension [Self <: Gradient](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Gradient] (val x: Self) extends AnyVal {
     
     inline def setElipseLength(value: Double): Self = StObject.set(x, "elipseLength", value.asInstanceOf[js.Any])
     

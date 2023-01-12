@@ -118,7 +118,8 @@ object distTypesMod {
       __obj.asInstanceOf[TransformableToArray]
     }
     
-    extension [Self <: TransformableToArray](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TransformableToArray] (val x: Self) extends AnyVal {
       
       inline def setToArray(value: () => js.typedarray.Uint8Array): Self = StObject.set(x, "toArray", js.Any.fromFunction0(value))
       
@@ -144,7 +145,8 @@ object distTypesMod {
       __obj.asInstanceOf[TransformableToBuffer]
     }
     
-    extension [Self <: TransformableToBuffer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TransformableToBuffer] (val x: Self) extends AnyVal {
       
       inline def setToArray(value: () => js.typedarray.Uint8Array): Self = StObject.set(x, "toArray", js.Any.fromFunction0(value))
       

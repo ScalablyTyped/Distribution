@@ -84,7 +84,8 @@ object AxisOptions {
     __obj.asInstanceOf[AxisOptions]
   }
   
-  extension [Self <: AxisOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AxisOptions] (val x: Self) extends AnyVal {
     
     inline def setDivisor(value: Double): Self = StObject.set(x, "divisor", value.asInstanceOf[js.Any])
     

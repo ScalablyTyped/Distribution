@@ -23,7 +23,8 @@ object DynamoDBv2Action {
     __obj.asInstanceOf[DynamoDBv2Action]
   }
   
-  extension [Self <: DynamoDBv2Action](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DynamoDBv2Action] (val x: Self) extends AnyVal {
     
     inline def setPutItem(value: PutItemInput): Self = StObject.set(x, "putItem", value.asInstanceOf[js.Any])
     

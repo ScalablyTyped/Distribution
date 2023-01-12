@@ -19,7 +19,8 @@ object TypeofTerminalReaderPresentPaymentMethodParams {
     __obj.asInstanceOf[TypeofTerminalReaderPresentPaymentMethodParams]
   }
   
-  extension [Self <: TypeofTerminalReaderPresentPaymentMethodParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofTerminalReaderPresentPaymentMethodParams] (val x: Self) extends AnyVal {
     
     inline def setReaderPresentPaymentMethodParams(value: Any): Self = StObject.set(x, "ReaderPresentPaymentMethodParams", value.asInstanceOf[js.Any])
     

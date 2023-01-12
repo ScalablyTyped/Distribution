@@ -660,7 +660,8 @@ object mod {
       __obj.asInstanceOf[AccessTuple]
     }
     
-    extension [Self <: AccessTuple](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AccessTuple] (val x: Self) extends AnyVal {
       
       inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
@@ -703,7 +704,8 @@ object mod {
       __obj.asInstanceOf[Block]
     }
     
-    extension [Self <: Block](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Block] (val x: Self) extends AnyVal {
       
       inline def setTransactions(value: js.Array[String | Transaction]): Self = StObject.set(x, "transactions", value.asInstanceOf[js.Any])
       
@@ -765,7 +767,8 @@ object mod {
       __obj.asInstanceOf[BlockHeader]
     }
     
-    extension [Self <: BlockHeader](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BlockHeader] (val x: Self) extends AnyVal {
       
       inline def setBaseFeePerGas(value: Double): Self = StObject.set(x, "baseFeePerGas", value.asInstanceOf[js.Any])
       
@@ -839,7 +842,8 @@ object mod {
       __obj.asInstanceOf[BlockTransactionBase]
     }
     
-    extension [Self <: BlockTransactionBase](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BlockTransactionBase] (val x: Self) extends AnyVal {
       
       inline def setDifficulty(value: Double): Self = StObject.set(x, "difficulty", value.asInstanceOf[js.Any])
       
@@ -886,7 +890,8 @@ object mod {
       __obj.asInstanceOf[BlockTransactionObject]
     }
     
-    extension [Self <: BlockTransactionObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BlockTransactionObject] (val x: Self) extends AnyVal {
       
       inline def setTransactions(value: js.Array[Transaction]): Self = StObject.set(x, "transactions", value.asInstanceOf[js.Any])
       
@@ -927,7 +932,8 @@ object mod {
       __obj.asInstanceOf[BlockTransactionString]
     }
     
-    extension [Self <: BlockTransactionString](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BlockTransactionString] (val x: Self) extends AnyVal {
       
       inline def setTransactions(value: js.Array[String]): Self = StObject.set(x, "transactions", value.asInstanceOf[js.Any])
       
@@ -950,7 +956,8 @@ object mod {
       __obj.asInstanceOf[CreateAccessList]
     }
     
-    extension [Self <: CreateAccessList](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateAccessList] (val x: Self) extends AnyVal {
       
       inline def setAccessList(value: js.Array[AccessTuple]): Self = StObject.set(x, "accessList", value.asInstanceOf[js.Any])
       
@@ -986,7 +993,8 @@ object mod {
       __obj.asInstanceOf[FeeHistoryResult]
     }
     
-    extension [Self <: FeeHistoryResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FeeHistoryResult] (val x: Self) extends AnyVal {
       
       inline def setBaseFeePerGas(value: js.Array[String]): Self = StObject.set(x, "baseFeePerGas", value.asInstanceOf[js.Any])
       
@@ -1035,7 +1043,8 @@ object mod {
       __obj.asInstanceOf[GetProof]
     }
     
-    extension [Self <: GetProof](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetProof] (val x: Self) extends AnyVal {
       
       inline def setAccountProof(value: js.Array[String]): Self = StObject.set(x, "accountProof", value.asInstanceOf[js.Any])
       
@@ -1072,7 +1081,8 @@ object mod {
       __obj.asInstanceOf[StorageProof]
     }
     
-    extension [Self <: StorageProof](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StorageProof] (val x: Self) extends AnyVal {
       
       inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
@@ -1109,7 +1119,8 @@ object mod {
       __obj.asInstanceOf[Syncing]
     }
     
-    extension [Self <: Syncing](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Syncing] (val x: Self) extends AnyVal {
       
       inline def setCurrentBlock(value: Double): Self = StObject.set(x, "CurrentBlock", value.asInstanceOf[js.Any])
       

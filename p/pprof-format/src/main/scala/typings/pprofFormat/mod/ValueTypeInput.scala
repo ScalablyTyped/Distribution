@@ -17,7 +17,8 @@ object ValueTypeInput {
     __obj.asInstanceOf[ValueTypeInput]
   }
   
-  extension [Self <: ValueTypeInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ValueTypeInput] (val x: Self) extends AnyVal {
     
     inline def setType(value: Numeric): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

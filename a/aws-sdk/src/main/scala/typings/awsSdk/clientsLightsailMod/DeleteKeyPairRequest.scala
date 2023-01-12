@@ -23,7 +23,8 @@ object DeleteKeyPairRequest {
     __obj.asInstanceOf[DeleteKeyPairRequest]
   }
   
-  extension [Self <: DeleteKeyPairRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteKeyPairRequest] (val x: Self) extends AnyVal {
     
     inline def setExpectedFingerprint(value: String): Self = StObject.set(x, "expectedFingerprint", value.asInstanceOf[js.Any])
     

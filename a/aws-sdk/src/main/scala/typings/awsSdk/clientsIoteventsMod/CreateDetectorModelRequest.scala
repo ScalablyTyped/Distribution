@@ -52,7 +52,8 @@ object CreateDetectorModelRequest {
     __obj.asInstanceOf[CreateDetectorModelRequest]
   }
   
-  extension [Self <: CreateDetectorModelRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateDetectorModelRequest] (val x: Self) extends AnyVal {
     
     inline def setDetectorModelDefinition(value: DetectorModelDefinition): Self = StObject.set(x, "detectorModelDefinition", value.asInstanceOf[js.Any])
     

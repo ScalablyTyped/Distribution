@@ -18,7 +18,8 @@ object DescribeSentimentDetectionJobRequest {
     __obj.asInstanceOf[DescribeSentimentDetectionJobRequest]
   }
   
-  extension [Self <: DescribeSentimentDetectionJobRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeSentimentDetectionJobRequest] (val x: Self) extends AnyVal {
     
     inline def setJobId(value: JobId): Self = StObject.set(x, "JobId", value.asInstanceOf[js.Any])
   }

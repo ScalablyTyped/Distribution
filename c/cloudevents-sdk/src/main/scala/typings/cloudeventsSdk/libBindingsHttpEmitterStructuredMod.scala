@@ -42,7 +42,8 @@ object libBindingsHttpEmitterStructuredMod {
       __obj.asInstanceOf[CloudEvent]
     }
     
-    extension [Self <: CloudEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CloudEvent] (val x: Self) extends AnyVal {
       
       inline def setCloudEvent(value: Instantiable1[/* event */ CE, typings.cloudeventsSdk.libCloudeventMod.CloudEvent]): Self = StObject.set(x, "CloudEvent", value.asInstanceOf[js.Any])
     }
@@ -71,7 +72,8 @@ object libBindingsHttpEmitterStructuredMod {
       __obj.asInstanceOf[StructuredHTTPEmitter]
     }
     
-    extension [Self <: StructuredHTTPEmitter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StructuredHTTPEmitter] (val x: Self) extends AnyVal {
       
       inline def setEmit(value: (UrlURL, CloudEvent) => js.Promise[Any]): Self = StObject.set(x, "emit", js.Any.fromFunction2(value))
     }

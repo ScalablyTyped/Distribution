@@ -18,7 +18,8 @@ object SetPageScaleFactorRequest {
     __obj.asInstanceOf[SetPageScaleFactorRequest]
   }
   
-  extension [Self <: SetPageScaleFactorRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetPageScaleFactorRequest] (val x: Self) extends AnyVal {
     
     inline def setPageScaleFactor(value: Double): Self = StObject.set(x, "pageScaleFactor", value.asInstanceOf[js.Any])
   }

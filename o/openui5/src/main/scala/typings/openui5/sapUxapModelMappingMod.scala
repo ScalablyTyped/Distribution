@@ -224,7 +224,8 @@ object sapUxapModelMappingMod {
       __obj.asInstanceOf[ModelMappingSettings]
     }
     
-    extension [Self <: ModelMappingSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ModelMappingSettings] (val x: Self) extends AnyVal {
       
       inline def setExternalModelName(value: String | PropertyBindingInfo): Self = StObject.set(x, "externalModelName", value.asInstanceOf[js.Any])
       

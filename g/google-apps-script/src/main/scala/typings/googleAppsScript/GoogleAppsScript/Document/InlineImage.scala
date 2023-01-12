@@ -93,7 +93,8 @@ object InlineImage {
     __obj.asInstanceOf[InlineImage]
   }
   
-  extension [Self <: InlineImage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InlineImage] (val x: Self) extends AnyVal {
     
     inline def setGetAltDescription(value: () => String): Self = StObject.set(x, "getAltDescription", js.Any.fromFunction0(value))
     

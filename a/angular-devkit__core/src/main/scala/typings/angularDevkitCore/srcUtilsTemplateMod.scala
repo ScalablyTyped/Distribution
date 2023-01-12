@@ -37,7 +37,8 @@ object srcUtilsTemplateMod {
       __obj.asInstanceOf[TemplateAst]
     }
     
-    extension [Self <: TemplateAst](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TemplateAst] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: js.Array[TemplateAstNode]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -62,7 +63,8 @@ object srcUtilsTemplateMod {
       __obj.asInstanceOf[TemplateAstBase]
     }
     
-    extension [Self <: TemplateAstBase](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TemplateAstBase] (val x: Self) extends AnyVal {
       
       inline def setEnd(value: Position): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
@@ -86,7 +88,8 @@ object srcUtilsTemplateMod {
       __obj.asInstanceOf[TemplateAstComment]
     }
     
-    extension [Self <: TemplateAstComment](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TemplateAstComment] (val x: Self) extends AnyVal {
       
       inline def setKind(value: comment): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
       
@@ -110,7 +113,8 @@ object srcUtilsTemplateMod {
       __obj.asInstanceOf[TemplateAstContent]
     }
     
-    extension [Self <: TemplateAstContent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TemplateAstContent] (val x: Self) extends AnyVal {
       
       inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
@@ -134,7 +138,8 @@ object srcUtilsTemplateMod {
       __obj.asInstanceOf[TemplateAstEscape]
     }
     
-    extension [Self <: TemplateAstEscape](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TemplateAstEscape] (val x: Self) extends AnyVal {
       
       inline def setExpression(value: String): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
       
@@ -158,7 +163,8 @@ object srcUtilsTemplateMod {
       __obj.asInstanceOf[TemplateAstEvaluate]
     }
     
-    extension [Self <: TemplateAstEvaluate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TemplateAstEvaluate] (val x: Self) extends AnyVal {
       
       inline def setExpression(value: String): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
       
@@ -182,7 +188,8 @@ object srcUtilsTemplateMod {
       __obj.asInstanceOf[TemplateAstInterpolate]
     }
     
-    extension [Self <: TemplateAstInterpolate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TemplateAstInterpolate] (val x: Self) extends AnyVal {
       
       inline def setExpression(value: String): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
       
@@ -245,7 +252,8 @@ object srcUtilsTemplateMod {
       __obj.asInstanceOf[TemplateOptions]
     }
     
-    extension [Self <: TemplateOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TemplateOptions] (val x: Self) extends AnyVal {
       
       inline def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
       

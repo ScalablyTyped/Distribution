@@ -19,7 +19,8 @@ object IdBoolean {
     __obj.asInstanceOf[IdBoolean]
   }
   
-  extension [Self <: IdBoolean](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IdBoolean] (val x: Self) extends AnyVal {
     
     inline def setId(value: Boolean): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

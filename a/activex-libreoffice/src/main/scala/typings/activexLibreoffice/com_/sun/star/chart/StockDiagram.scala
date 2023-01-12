@@ -160,7 +160,8 @@ object StockDiagram {
     __obj.asInstanceOf[StockDiagram]
   }
   
-  extension [Self <: StockDiagram](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StockDiagram] (val x: Self) extends AnyVal {
     
     inline def setUpDown(value: Boolean): Self = StObject.set(x, "UpDown", value.asInstanceOf[js.Any])
     

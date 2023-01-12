@@ -42,7 +42,8 @@ object CommandEventArgs {
     __obj.asInstanceOf[CommandEventArgs]
   }
   
-  extension [Self <: CommandEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CommandEventArgs] (val x: Self) extends AnyVal {
     
     inline def setGet_commandArgument(value: () => Any): Self = StObject.set(x, "get_commandArgument", js.Any.fromFunction0(value))
     

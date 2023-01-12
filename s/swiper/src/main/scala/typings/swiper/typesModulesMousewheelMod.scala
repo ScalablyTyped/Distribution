@@ -26,7 +26,8 @@ object typesModulesMousewheelMod {
       __obj.asInstanceOf[MousewheelEvents]
     }
     
-    extension [Self <: MousewheelEvents](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MousewheelEvents] (val x: Self) extends AnyVal {
       
       inline def setScroll(value: (default, WheelEvent) => Unit): Self = StObject.set(x, "scroll", js.Any.fromFunction2(value))
     }
@@ -56,7 +57,8 @@ object typesModulesMousewheelMod {
       __obj.asInstanceOf[MousewheelMethods]
     }
     
-    extension [Self <: MousewheelMethods](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MousewheelMethods] (val x: Self) extends AnyVal {
       
       inline def setDisable(value: () => Unit): Self = StObject.set(x, "disable", js.Any.fromFunction0(value))
       
@@ -124,7 +126,8 @@ object typesModulesMousewheelMod {
       __obj.asInstanceOf[MousewheelOptions]
     }
     
-    extension [Self <: MousewheelOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MousewheelOptions] (val x: Self) extends AnyVal {
       
       inline def setEventsTarget(value: container | wrapper | CSSSelector | HTMLElement): Self = StObject.set(x, "eventsTarget", value.asInstanceOf[js.Any])
       

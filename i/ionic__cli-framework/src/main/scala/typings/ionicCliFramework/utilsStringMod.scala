@@ -46,7 +46,8 @@ object utilsStringMod {
       __obj.asInstanceOf[SlugifyOptions]
     }
     
-    extension [Self <: SlugifyOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SlugifyOptions] (val x: Self) extends AnyVal {
       
       inline def setSeparator(value: String): Self = StObject.set(x, "separator", value.asInstanceOf[js.Any])
       

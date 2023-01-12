@@ -18,7 +18,8 @@ object IAppWindow {
     __obj.asInstanceOf[IAppWindow]
   }
   
-  extension [Self <: IAppWindow](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IAppWindow] (val x: Self) extends AnyVal {
     
     inline def setAddEventListener(value: (String, js.Function0[Unit]) => Unit): Self = StObject.set(x, "addEventListener", js.Any.fromFunction2(value))
     

@@ -44,7 +44,8 @@ object XEngineListener {
     __obj.asInstanceOf[XEngineListener]
   }
   
-  extension [Self <: XEngineListener](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XEngineListener] (val x: Self) extends AnyVal {
     
     inline def setFinished(value: FinishEngineEvent => Unit): Self = StObject.set(x, "finished", js.Any.fromFunction1(value))
     

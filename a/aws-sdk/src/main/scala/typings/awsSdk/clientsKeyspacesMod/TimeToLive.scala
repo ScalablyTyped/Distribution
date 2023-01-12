@@ -18,7 +18,8 @@ object TimeToLive {
     __obj.asInstanceOf[TimeToLive]
   }
   
-  extension [Self <: TimeToLive](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimeToLive] (val x: Self) extends AnyVal {
     
     inline def setStatus(value: TimeToLiveStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }

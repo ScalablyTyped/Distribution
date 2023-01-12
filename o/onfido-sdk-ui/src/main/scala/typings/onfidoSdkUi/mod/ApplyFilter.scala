@@ -15,7 +15,8 @@ object ApplyFilter {
     __obj.asInstanceOf[ApplyFilter]
   }
   
-  extension [Self <: ApplyFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApplyFilter] (val x: Self) extends AnyVal {
     
     inline def setDoc_type(value: String): Self = StObject.set(x, "doc_type", value.asInstanceOf[js.Any])
     

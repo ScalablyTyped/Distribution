@@ -83,7 +83,8 @@ object mod {
         __obj.asInstanceOf[CacheOptions]
       }
       
-      extension [Self <: CacheOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CacheOptions] (val x: Self) extends AnyVal {
         
         inline def setDefaultTtl(value: Double): Self = StObject.set(x, "defaultTtl", value.asInstanceOf[js.Any])
         
@@ -141,7 +142,8 @@ object mod {
         __obj.asInstanceOf[QuotaServiceApplyCallbackData]
       }
       
-      extension [Self <: QuotaServiceApplyCallbackData](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: QuotaServiceApplyCallbackData] (val x: Self) extends AnyVal {
         
         inline def setAllowed(value: Double): Self = StObject.set(x, "allowed", value.asInstanceOf[js.Any])
         
@@ -174,7 +176,8 @@ object mod {
         __obj.asInstanceOf[QuotaServiceApplyOptions]
       }
       
-      extension [Self <: QuotaServiceApplyOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: QuotaServiceApplyOptions] (val x: Self) extends AnyVal {
         
         inline def setAllow(value: Double): Self = StObject.set(x, "allow", value.asInstanceOf[js.Any])
         
@@ -208,7 +211,8 @@ object mod {
         __obj.asInstanceOf[SecureVault]
       }
       
-      extension [Self <: SecureVault](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SecureVault] (val x: Self) extends AnyVal {
         
         inline def setGet(value: (String, js.Function2[/* err */ Any, /* data */ Any, Unit]) => Unit): Self = StObject.set(x, "get", js.Any.fromFunction2(value))
         

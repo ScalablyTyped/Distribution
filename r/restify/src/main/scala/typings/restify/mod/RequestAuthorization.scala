@@ -20,7 +20,8 @@ object RequestAuthorization {
     __obj.asInstanceOf[RequestAuthorization]
   }
   
-  extension [Self <: RequestAuthorization](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RequestAuthorization] (val x: Self) extends AnyVal {
     
     inline def setBasic(value: Password): Self = StObject.set(x, "basic", value.asInstanceOf[js.Any])
     

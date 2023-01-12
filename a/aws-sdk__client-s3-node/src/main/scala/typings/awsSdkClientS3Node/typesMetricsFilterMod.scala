@@ -34,7 +34,8 @@ object typesMetricsFilterMod {
       __obj.asInstanceOf[MetricsFilter]
     }
     
-    extension [Self <: MetricsFilter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MetricsFilter] (val x: Self) extends AnyVal {
       
       inline def setAnd(value: MetricsAndOperator): Self = StObject.set(x, "And", value.asInstanceOf[js.Any])
       
@@ -73,7 +74,8 @@ object typesMetricsFilterMod {
       __obj.asInstanceOf[UnmarshalledMetricsFilter]
     }
     
-    extension [Self <: UnmarshalledMetricsFilter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnmarshalledMetricsFilter] (val x: Self) extends AnyVal {
       
       inline def setAnd(value: UnmarshalledMetricsAndOperator): Self = StObject.set(x, "And", value.asInstanceOf[js.Any])
       

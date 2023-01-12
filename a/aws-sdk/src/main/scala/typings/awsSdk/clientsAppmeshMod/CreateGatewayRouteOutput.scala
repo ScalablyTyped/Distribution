@@ -18,7 +18,8 @@ object CreateGatewayRouteOutput {
     __obj.asInstanceOf[CreateGatewayRouteOutput]
   }
   
-  extension [Self <: CreateGatewayRouteOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateGatewayRouteOutput] (val x: Self) extends AnyVal {
     
     inline def setGatewayRoute(value: GatewayRouteData): Self = StObject.set(x, "gatewayRoute", value.asInstanceOf[js.Any])
   }

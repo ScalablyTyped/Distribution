@@ -22,7 +22,8 @@ object ReaderRefetchMetadata {
     __obj.asInstanceOf[ReaderRefetchMetadata]
   }
   
-  extension [Self <: ReaderRefetchMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReaderRefetchMetadata] (val x: Self) extends AnyVal {
     
     inline def setConnection(value: ReaderPaginationMetadata): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
     

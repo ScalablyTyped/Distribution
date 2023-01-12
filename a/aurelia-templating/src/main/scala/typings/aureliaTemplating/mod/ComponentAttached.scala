@@ -18,7 +18,8 @@ object ComponentAttached {
     __obj.asInstanceOf[ComponentAttached]
   }
   
-  extension [Self <: ComponentAttached](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ComponentAttached] (val x: Self) extends AnyVal {
     
     inline def setAttached(value: () => Unit): Self = StObject.set(x, "attached", js.Any.fromFunction0(value))
   }

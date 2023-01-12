@@ -21,7 +21,8 @@ object typesInsufficientCapacityExceptionMod {
       __obj.asInstanceOf[InsufficientCapacityException]
     }
     
-    extension [Self <: InsufficientCapacityException](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InsufficientCapacityException] (val x: Self) extends AnyVal {
       
       inline def setName(
         value: typings.awsSdkClientGlacierNode.awsSdkClientGlacierNodeStrings.InsufficientCapacityException
@@ -53,7 +54,8 @@ object typesInsufficientCapacityExceptionMod {
       __obj.asInstanceOf[InsufficientCapacityExceptionDetails]
     }
     
-    extension [Self <: InsufficientCapacityExceptionDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InsufficientCapacityExceptionDetails] (val x: Self) extends AnyVal {
       
       inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       

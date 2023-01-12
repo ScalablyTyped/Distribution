@@ -23,7 +23,8 @@ object ListDomainsRequest {
     __obj.asInstanceOf[ListDomainsRequest]
   }
   
-  extension [Self <: ListDomainsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListDomainsRequest] (val x: Self) extends AnyVal {
     
     inline def setMaxResults(value: maxSize100): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     

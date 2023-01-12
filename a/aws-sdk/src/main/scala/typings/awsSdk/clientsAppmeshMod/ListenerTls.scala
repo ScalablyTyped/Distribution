@@ -28,7 +28,8 @@ object ListenerTls {
     __obj.asInstanceOf[ListenerTls]
   }
   
-  extension [Self <: ListenerTls](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListenerTls] (val x: Self) extends AnyVal {
     
     inline def setCertificate(value: ListenerTlsCertificate): Self = StObject.set(x, "certificate", value.asInstanceOf[js.Any])
     

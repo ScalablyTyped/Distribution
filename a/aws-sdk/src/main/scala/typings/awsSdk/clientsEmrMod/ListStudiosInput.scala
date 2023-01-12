@@ -18,7 +18,8 @@ object ListStudiosInput {
     __obj.asInstanceOf[ListStudiosInput]
   }
   
-  extension [Self <: ListStudiosInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListStudiosInput] (val x: Self) extends AnyVal {
     
     inline def setMarker(value: Marker): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     

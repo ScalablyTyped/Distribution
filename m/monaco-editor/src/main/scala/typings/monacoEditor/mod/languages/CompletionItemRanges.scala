@@ -18,7 +18,8 @@ object CompletionItemRanges {
     __obj.asInstanceOf[CompletionItemRanges]
   }
   
-  extension [Self <: CompletionItemRanges](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CompletionItemRanges] (val x: Self) extends AnyVal {
     
     inline def setInsert(value: IRange): Self = StObject.set(x, "insert", value.asInstanceOf[js.Any])
     

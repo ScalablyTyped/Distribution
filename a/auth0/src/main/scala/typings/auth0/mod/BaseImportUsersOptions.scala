@@ -21,7 +21,8 @@ object BaseImportUsersOptions {
     __obj.asInstanceOf[BaseImportUsersOptions]
   }
   
-  extension [Self <: BaseImportUsersOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BaseImportUsersOptions] (val x: Self) extends AnyVal {
     
     inline def setConnection_id(value: String): Self = StObject.set(x, "connection_id", value.asInstanceOf[js.Any])
     

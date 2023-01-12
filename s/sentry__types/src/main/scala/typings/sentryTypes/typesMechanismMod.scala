@@ -43,7 +43,8 @@ object typesMechanismMod {
       __obj.asInstanceOf[Mechanism]
     }
     
-    extension [Self <: Mechanism](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Mechanism] (val x: Self) extends AnyVal {
       
       inline def setData(value: StringDictionary[String | Boolean]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       

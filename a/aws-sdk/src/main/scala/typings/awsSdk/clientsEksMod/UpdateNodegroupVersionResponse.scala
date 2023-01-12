@@ -15,7 +15,8 @@ object UpdateNodegroupVersionResponse {
     __obj.asInstanceOf[UpdateNodegroupVersionResponse]
   }
   
-  extension [Self <: UpdateNodegroupVersionResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateNodegroupVersionResponse] (val x: Self) extends AnyVal {
     
     inline def setUpdate(value: Update): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
     

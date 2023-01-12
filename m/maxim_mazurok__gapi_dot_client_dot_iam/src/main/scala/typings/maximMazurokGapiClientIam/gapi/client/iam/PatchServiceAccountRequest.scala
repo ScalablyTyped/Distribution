@@ -17,7 +17,8 @@ object PatchServiceAccountRequest {
     __obj.asInstanceOf[PatchServiceAccountRequest]
   }
   
-  extension [Self <: PatchServiceAccountRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PatchServiceAccountRequest] (val x: Self) extends AnyVal {
     
     inline def setServiceAccount(value: ServiceAccount): Self = StObject.set(x, "serviceAccount", value.asInstanceOf[js.Any])
     

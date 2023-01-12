@@ -76,7 +76,8 @@ object libStepMod {
       __obj.asInstanceOf[StepProps]
     }
     
-    extension [Self <: StepProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StepProps] (val x: Self) extends AnyVal {
       
       inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       

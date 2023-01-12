@@ -18,7 +18,8 @@ object StartShotDetectionFilter {
     __obj.asInstanceOf[StartShotDetectionFilter]
   }
   
-  extension [Self <: StartShotDetectionFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartShotDetectionFilter] (val x: Self) extends AnyVal {
     
     inline def setMinSegmentConfidence(value: SegmentConfidence): Self = StObject.set(x, "MinSegmentConfidence", value.asInstanceOf[js.Any])
     

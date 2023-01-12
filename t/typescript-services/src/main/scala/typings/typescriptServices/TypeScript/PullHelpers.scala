@@ -26,7 +26,8 @@ object PullHelpers {
       __obj.asInstanceOf[OtherPullDeclsWalker]
     }
     
-    extension [Self <: OtherPullDeclsWalker](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OtherPullDeclsWalker] (val x: Self) extends AnyVal {
       
       inline def setCurrentlyWalkingOtherDecls(value: Any): Self = StObject.set(x, "currentlyWalkingOtherDecls", value.asInstanceOf[js.Any])
       
@@ -62,7 +63,8 @@ object PullHelpers {
       __obj.asInstanceOf[PullTypeSymbolStructureWalker]
     }
     
-    extension [Self <: PullTypeSymbolStructureWalker](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PullTypeSymbolStructureWalker] (val x: Self) extends AnyVal {
       
       inline def setCallSignatureWalk(value: PullSignatureSymbol => Boolean): Self = StObject.set(x, "callSignatureWalk", js.Any.fromFunction1(value))
       
@@ -91,7 +93,8 @@ object PullHelpers {
       __obj.asInstanceOf[SignatureInfoForFuncDecl]
     }
     
-    extension [Self <: SignatureInfoForFuncDecl](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SignatureInfoForFuncDecl] (val x: Self) extends AnyVal {
       
       inline def setAllSignatures(value: js.Array[PullSignatureSymbol]): Self = StObject.set(x, "allSignatures", value.asInstanceOf[js.Any])
       

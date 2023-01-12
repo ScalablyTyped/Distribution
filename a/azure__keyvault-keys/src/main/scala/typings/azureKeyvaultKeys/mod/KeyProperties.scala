@@ -106,7 +106,8 @@ object KeyProperties {
     __obj.asInstanceOf[KeyProperties]
   }
   
-  extension [Self <: KeyProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KeyProperties] (val x: Self) extends AnyVal {
     
     inline def setCreatedOn(value: js.Date): Self = StObject.set(x, "createdOn", value.asInstanceOf[js.Any])
     

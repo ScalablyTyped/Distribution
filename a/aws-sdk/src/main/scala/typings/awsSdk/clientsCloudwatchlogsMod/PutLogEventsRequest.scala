@@ -33,7 +33,8 @@ object PutLogEventsRequest {
     __obj.asInstanceOf[PutLogEventsRequest]
   }
   
-  extension [Self <: PutLogEventsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutLogEventsRequest] (val x: Self) extends AnyVal {
     
     inline def setLogEvents(value: InputLogEvents): Self = StObject.set(x, "logEvents", value.asInstanceOf[js.Any])
     

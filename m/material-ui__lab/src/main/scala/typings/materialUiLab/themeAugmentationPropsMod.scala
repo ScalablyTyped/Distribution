@@ -94,7 +94,8 @@ object themeAugmentationPropsMod {
       __obj.asInstanceOf[LabComponentsPropsList]
     }
     
-    extension [Self <: LabComponentsPropsList](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LabComponentsPropsList] (val x: Self) extends AnyVal {
       
       inline def setMuiAlert(value: AlertProps): Self = StObject.set(x, "MuiAlert", value.asInstanceOf[js.Any])
       

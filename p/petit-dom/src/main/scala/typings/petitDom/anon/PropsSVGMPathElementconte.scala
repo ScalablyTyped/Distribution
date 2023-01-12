@@ -635,7 +635,8 @@ object PropsSVGMPathElementconte {
     __obj.asInstanceOf[PropsSVGMPathElementconte]
   }
   
-  extension [Self <: PropsSVGMPathElementconte](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PropsSVGMPathElementconte] (val x: Self) extends AnyVal {
     
     inline def setATTRIBUTE_NODE(value: Double): Self = StObject.set(x, "ATTRIBUTE_NODE", value.asInstanceOf[js.Any])
     

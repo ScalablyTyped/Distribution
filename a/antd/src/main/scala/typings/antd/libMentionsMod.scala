@@ -60,7 +60,8 @@ object libMentionsMod extends Shortcut {
       __obj.asInstanceOf[MentionProps]
     }
     
-    extension [Self <: MentionProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MentionProps] (val x: Self) extends AnyVal {
       
       inline def setLoading(value: Boolean): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
       
@@ -83,7 +84,8 @@ object libMentionsMod extends Shortcut {
       __obj.asInstanceOf[MentionState]
     }
     
-    extension [Self <: MentionState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MentionState] (val x: Self) extends AnyVal {
       
       inline def setFocused(value: Boolean): Self = StObject.set(x, "focused", value.asInstanceOf[js.Any])
     }
@@ -102,7 +104,8 @@ object libMentionsMod extends Shortcut {
       __obj.asInstanceOf[MentionsConfig]
     }
     
-    extension [Self <: MentionsConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MentionsConfig] (val x: Self) extends AnyVal {
       
       inline def setPrefix(value: String | js.Array[String]): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
       
@@ -129,7 +132,8 @@ object libMentionsMod extends Shortcut {
       __obj.asInstanceOf[MentionsEntity]
     }
     
-    extension [Self <: MentionsEntity](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MentionsEntity] (val x: Self) extends AnyVal {
       
       inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
       
@@ -154,7 +158,8 @@ object libMentionsMod extends Shortcut {
       __obj.asInstanceOf[OptionProps]
     }
     
-    extension [Self <: OptionProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OptionProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

@@ -60,7 +60,8 @@ object IDialogOptions {
     __obj.asInstanceOf[IDialogOptions]
   }
   
-  extension [Self <: IDialogOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IDialogOptions] (val x: Self) extends AnyVal {
     
     inline def setAllowMaximize(value: Boolean): Self = StObject.set(x, "allowMaximize", value.asInstanceOf[js.Any])
     

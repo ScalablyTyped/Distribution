@@ -120,7 +120,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Specification]
     }
     
-    extension [Self <: Specification](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Specification] (val x: Self) extends AnyVal {
       
       inline def setCountryCode(value: String): Self = StObject.set(x, "countryCode", value.asInstanceOf[js.Any])
       

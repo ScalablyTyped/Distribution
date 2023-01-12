@@ -24,7 +24,8 @@ object RepositoriesArray {
     __obj.asInstanceOf[RepositoriesArray]
   }
   
-  extension [Self <: RepositoriesArray](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RepositoriesArray] (val x: Self) extends AnyVal {
     
     inline def setRepositories(
       value: js.Array[

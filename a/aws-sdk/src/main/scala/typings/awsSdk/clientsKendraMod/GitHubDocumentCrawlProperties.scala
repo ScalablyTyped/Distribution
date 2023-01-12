@@ -48,7 +48,8 @@ object GitHubDocumentCrawlProperties {
     __obj.asInstanceOf[GitHubDocumentCrawlProperties]
   }
   
-  extension [Self <: GitHubDocumentCrawlProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GitHubDocumentCrawlProperties] (val x: Self) extends AnyVal {
     
     inline def setCrawlIssue(value: Boolean): Self = StObject.set(x, "CrawlIssue", value.asInstanceOf[js.Any])
     

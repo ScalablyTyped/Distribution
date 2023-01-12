@@ -28,7 +28,8 @@ object ChunkedUploadRequest {
     __obj.asInstanceOf[ChunkedUploadRequest]
   }
   
-  extension [Self <: ChunkedUploadRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChunkedUploadRequest] (val x: Self) extends AnyVal {
     
     inline def setChunkedUploadId(value: String): Self = StObject.set(x, "chunkedUploadId", value.asInstanceOf[js.Any])
     

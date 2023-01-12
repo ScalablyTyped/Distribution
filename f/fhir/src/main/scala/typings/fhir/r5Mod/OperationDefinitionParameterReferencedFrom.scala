@@ -29,7 +29,8 @@ object OperationDefinitionParameterReferencedFrom {
     __obj.asInstanceOf[OperationDefinitionParameterReferencedFrom]
   }
   
-  extension [Self <: OperationDefinitionParameterReferencedFrom](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OperationDefinitionParameterReferencedFrom] (val x: Self) extends AnyVal {
     
     inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     

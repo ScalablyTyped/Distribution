@@ -481,7 +481,8 @@ object salesforceObjectMod {
       __obj.asInstanceOf[ApprovalLayoutInfo]
     }
     
-    extension [Self <: ApprovalLayoutInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ApprovalLayoutInfo] (val x: Self) extends AnyVal {
       
       inline def setApprovalLayouts(value: js.Array[js.Object]): Self = StObject.set(x, "approvalLayouts", value.asInstanceOf[js.Any])
       
@@ -508,7 +509,8 @@ object salesforceObjectMod {
       __obj.asInstanceOf[CompactLayoutInfo]
     }
     
-    extension [Self <: CompactLayoutInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CompactLayoutInfo] (val x: Self) extends AnyVal {
       
       inline def setCompactLayouts(value: js.Array[js.Object]): Self = StObject.set(x, "compactLayouts", value.asInstanceOf[js.Any])
       
@@ -535,7 +537,8 @@ object salesforceObjectMod {
       __obj.asInstanceOf[DeletedRecord]
     }
     
-    extension [Self <: DeletedRecord](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeletedRecord] (val x: Self) extends AnyVal {
       
       inline def setDeletedDate(value: String): Self = StObject.set(x, "deletedDate", value.asInstanceOf[js.Any])
       
@@ -558,7 +561,8 @@ object salesforceObjectMod {
       __obj.asInstanceOf[DeletedRecordsInfo]
     }
     
-    extension [Self <: DeletedRecordsInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeletedRecordsInfo] (val x: Self) extends AnyVal {
       
       inline def setDeletedRecords(value: js.Array[DeletedRecord]): Self = StObject.set(x, "deletedRecords", value.asInstanceOf[js.Any])
       
@@ -585,7 +589,8 @@ object salesforceObjectMod {
       __obj.asInstanceOf[FindOptions]
     }
     
-    extension [Self <: FindOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FindOptions] (val x: Self) extends AnyVal {
       
       inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
       
@@ -614,7 +619,8 @@ object salesforceObjectMod {
       __obj.asInstanceOf[LayoutInfo]
     }
     
-    extension [Self <: LayoutInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LayoutInfo] (val x: Self) extends AnyVal {
       
       inline def setLayouts(value: js.Array[js.Object]): Self = StObject.set(x, "layouts", value.asInstanceOf[js.Any])
       
@@ -639,7 +645,8 @@ object salesforceObjectMod {
       __obj.asInstanceOf[UpdatedRecordsInfo]
     }
     
-    extension [Self <: UpdatedRecordsInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UpdatedRecordsInfo] (val x: Self) extends AnyVal {
       
       inline def setIds(value: js.Array[String]): Self = StObject.set(x, "ids", value.asInstanceOf[js.Any])
       

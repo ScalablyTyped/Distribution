@@ -21,7 +21,8 @@ object anon {
       __obj.asInstanceOf[Data]
     }
     
-    extension [Self <: Data](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Data] (val x: Self) extends AnyVal {
       
       inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -46,7 +47,8 @@ object anon {
       __obj.asInstanceOf[DisplayMessage_]
     }
     
-    extension [Self <: DisplayMessage_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DisplayMessage_] (val x: Self) extends AnyVal {
       
       inline def setDisplayMessage(value: String): Self = StObject.set(x, "displayMessage", value.asInstanceOf[js.Any])
       
@@ -77,7 +79,8 @@ object anon {
       __obj.asInstanceOf[Displaymessage]
     }
     
-    extension [Self <: Displaymessage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Displaymessage] (val x: Self) extends AnyVal {
       
       inline def setDisplay_message(value: String): Self = StObject.set(x, "display_message", value.asInstanceOf[js.Any])
       
@@ -106,7 +109,8 @@ object anon {
       __obj.asInstanceOf[Event]
     }
     
-    extension [Self <: Event](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Event] (val x: Self) extends AnyVal {
       
       inline def setEvent(value: EVENT): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
       

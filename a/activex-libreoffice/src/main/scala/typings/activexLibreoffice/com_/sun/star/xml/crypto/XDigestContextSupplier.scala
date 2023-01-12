@@ -36,7 +36,8 @@ object XDigestContextSupplier {
     __obj.asInstanceOf[XDigestContextSupplier]
   }
   
-  extension [Self <: XDigestContextSupplier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XDigestContextSupplier] (val x: Self) extends AnyVal {
     
     inline def setGetDigestContext(value: (Double, SeqEquiv[NamedValue]) => XDigestContext): Self = StObject.set(x, "getDigestContext", js.Any.fromFunction2(value))
   }

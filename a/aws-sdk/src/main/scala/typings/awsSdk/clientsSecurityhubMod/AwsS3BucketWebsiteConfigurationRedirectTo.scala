@@ -23,7 +23,8 @@ object AwsS3BucketWebsiteConfigurationRedirectTo {
     __obj.asInstanceOf[AwsS3BucketWebsiteConfigurationRedirectTo]
   }
   
-  extension [Self <: AwsS3BucketWebsiteConfigurationRedirectTo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsS3BucketWebsiteConfigurationRedirectTo] (val x: Self) extends AnyVal {
     
     inline def setHostname(value: NonEmptyString): Self = StObject.set(x, "Hostname", value.asInstanceOf[js.Any])
     

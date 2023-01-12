@@ -23,7 +23,8 @@ object DescribeReservedElasticsearchInstancesResponse {
     __obj.asInstanceOf[DescribeReservedElasticsearchInstancesResponse]
   }
   
-  extension [Self <: DescribeReservedElasticsearchInstancesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeReservedElasticsearchInstancesResponse] (val x: Self) extends AnyVal {
     
     inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

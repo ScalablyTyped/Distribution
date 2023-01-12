@@ -19,7 +19,8 @@ object ShellTask {
     __obj.asInstanceOf[ShellTask]
   }
   
-  extension [Self <: ShellTask](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShellTask] (val x: Self) extends AnyVal {
     
     inline def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object PDispWindow {
     __obj.asInstanceOf[PDispWindow]
   }
   
-  extension [Self <: PDispWindow](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PDispWindow] (val x: Self) extends AnyVal {
     
     inline def setPDispWindow(value: Any): Self = StObject.set(x, "pDispWindow", value.asInstanceOf[js.Any])
   }

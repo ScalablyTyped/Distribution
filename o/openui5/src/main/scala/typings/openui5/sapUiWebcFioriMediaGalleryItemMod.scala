@@ -323,7 +323,8 @@ object sapUiWebcFioriMediaGalleryItemMod {
       __obj.asInstanceOf[MediaGalleryItemSettings]
     }
     
-    extension [Self <: MediaGalleryItemSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MediaGalleryItemSettings] (val x: Self) extends AnyVal {
       
       inline def setContent(value: typings.openui5.sapUiCoreControlMod.default): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       

@@ -21,7 +21,8 @@ object CoverageThresholdValue {
     __obj.asInstanceOf[CoverageThresholdValue]
   }
   
-  extension [Self <: CoverageThresholdValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CoverageThresholdValue] (val x: Self) extends AnyVal {
     
     inline def setBranches(value: Double): Self = StObject.set(x, "branches", value.asInstanceOf[js.Any])
     

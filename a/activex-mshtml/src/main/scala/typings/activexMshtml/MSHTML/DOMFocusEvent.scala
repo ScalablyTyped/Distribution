@@ -89,7 +89,8 @@ object DOMFocusEvent {
     __obj.asInstanceOf[DOMFocusEvent]
   }
   
-  extension [Self <: DOMFocusEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DOMFocusEvent] (val x: Self) extends AnyVal {
     
     inline def setBubbles(value: Boolean): Self = StObject.set(x, "bubbles", value.asInstanceOf[js.Any])
     

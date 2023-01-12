@@ -20,7 +20,8 @@ object CommonJsConfig {
     __obj.asInstanceOf[CommonJsConfig]
   }
   
-  extension [Self <: CommonJsConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CommonJsConfig] (val x: Self) extends AnyVal {
     
     inline def setType(value: commonjs): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

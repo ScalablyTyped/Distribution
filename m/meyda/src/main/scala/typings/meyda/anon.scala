@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[Imag]
     }
     
-    extension [Self <: Imag](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Imag] (val x: Self) extends AnyVal {
       
       inline def setImag(value: js.Array[Double]): Self = StObject.set(x, "imag", value.asInstanceOf[js.Any])
       
@@ -79,7 +80,8 @@ object anon {
       __obj.asInstanceOf[PartialMeydaFeaturesObjec]
     }
     
-    extension [Self <: PartialMeydaFeaturesObjec](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialMeydaFeaturesObjec] (val x: Self) extends AnyVal {
       
       inline def setAmplitudeSpectrum(value: js.typedarray.Float32Array): Self = StObject.set(x, "amplitudeSpectrum", value.asInstanceOf[js.Any])
       
@@ -178,7 +180,8 @@ object anon {
       __obj.asInstanceOf[Specific]
     }
     
-    extension [Self <: Specific](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Specific] (val x: Self) extends AnyVal {
       
       inline def setSpecific(value: js.typedarray.Float32Array): Self = StObject.set(x, "specific", value.asInstanceOf[js.Any])
       

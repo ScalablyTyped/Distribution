@@ -27,7 +27,8 @@ object feature {
     __obj.asInstanceOf[feature]
   }
   
-  extension [Self <: feature](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: feature] (val x: Self) extends AnyVal {
     
     inline def setAllowedContent(value: allowedContentRules): Self = StObject.set(x, "allowedContent", value.asInstanceOf[js.Any])
     

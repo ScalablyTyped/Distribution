@@ -17,7 +17,8 @@ object PivotSchemaAxes {
     __obj.asInstanceOf[PivotSchemaAxes]
   }
   
-  extension [Self <: PivotSchemaAxes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PivotSchemaAxes] (val x: Self) extends AnyVal {
     
     inline def setColumns(value: PivotSchemaColumnAxis): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     

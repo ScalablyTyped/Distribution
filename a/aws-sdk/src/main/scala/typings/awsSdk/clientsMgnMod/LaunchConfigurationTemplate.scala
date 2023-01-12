@@ -33,7 +33,8 @@ object LaunchConfigurationTemplate {
     __obj.asInstanceOf[LaunchConfigurationTemplate]
   }
   
-  extension [Self <: LaunchConfigurationTemplate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LaunchConfigurationTemplate] (val x: Self) extends AnyVal {
     
     inline def setArn(value: ARN): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     

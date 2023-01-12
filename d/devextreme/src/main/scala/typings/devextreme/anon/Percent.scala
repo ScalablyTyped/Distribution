@@ -23,7 +23,8 @@ object Percent {
     __obj.asInstanceOf[Percent]
   }
   
-  extension [Self <: Percent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Percent] (val x: Self) extends AnyVal {
     
     inline def setItem(value: typings.devextreme.mod.DevExpress.viz.dxFunnel.Item): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     

@@ -25,7 +25,8 @@ object StalkerParseOptions {
     __obj.asInstanceOf[StalkerParseOptions]
   }
   
-  extension [Self <: StalkerParseOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StalkerParseOptions] (val x: Self) extends AnyVal {
     
     inline def setAnnotate(value: Boolean): Self = StObject.set(x, "annotate", value.asInstanceOf[js.Any])
     

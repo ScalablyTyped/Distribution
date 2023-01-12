@@ -28,7 +28,8 @@ object ImportApiKeysRequest {
     __obj.asInstanceOf[ImportApiKeysRequest]
   }
   
-  extension [Self <: ImportApiKeysRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImportApiKeysRequest] (val x: Self) extends AnyVal {
     
     inline def setBody(value: _Blob): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

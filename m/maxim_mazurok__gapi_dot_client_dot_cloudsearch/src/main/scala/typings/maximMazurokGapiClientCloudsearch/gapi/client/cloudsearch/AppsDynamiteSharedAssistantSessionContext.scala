@@ -19,7 +19,8 @@ object AppsDynamiteSharedAssistantSessionContext {
     __obj.asInstanceOf[AppsDynamiteSharedAssistantSessionContext]
   }
   
-  extension [Self <: AppsDynamiteSharedAssistantSessionContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppsDynamiteSharedAssistantSessionContext] (val x: Self) extends AnyVal {
     
     inline def setContextualSessionId(value: String): Self = StObject.set(x, "contextualSessionId", value.asInstanceOf[js.Any])
     

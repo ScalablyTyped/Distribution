@@ -142,7 +142,8 @@ object distCommonjsCollectionsTableTableMod extends Shortcut {
       __obj.asInstanceOf[StrictTableProps]
     }
     
-    extension [Self <: StrictTableProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StrictTableProps] (val x: Self) extends AnyVal {
       
       inline def setAs(value: Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       

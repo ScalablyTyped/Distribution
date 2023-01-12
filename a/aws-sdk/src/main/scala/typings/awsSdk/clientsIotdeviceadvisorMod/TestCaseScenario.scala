@@ -38,7 +38,8 @@ object TestCaseScenario {
     __obj.asInstanceOf[TestCaseScenario]
   }
   
-  extension [Self <: TestCaseScenario](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TestCaseScenario] (val x: Self) extends AnyVal {
     
     inline def setFailure(value: Failure): Self = StObject.set(x, "failure", value.asInstanceOf[js.Any])
     

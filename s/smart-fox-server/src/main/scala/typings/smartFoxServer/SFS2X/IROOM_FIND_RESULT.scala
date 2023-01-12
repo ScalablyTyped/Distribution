@@ -16,7 +16,8 @@ object IROOM_FIND_RESULT {
     __obj.asInstanceOf[IROOM_FIND_RESULT]
   }
   
-  extension [Self <: IROOM_FIND_RESULT](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IROOM_FIND_RESULT] (val x: Self) extends AnyVal {
     
     inline def setRooms(value: js.Array[SFSRoom]): Self = StObject.set(x, "rooms", value.asInstanceOf[js.Any])
     

@@ -32,7 +32,8 @@ object CidrCollectionChange {
     __obj.asInstanceOf[CidrCollectionChange]
   }
   
-  extension [Self <: CidrCollectionChange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CidrCollectionChange] (val x: Self) extends AnyVal {
     
     inline def setAction(value: CidrCollectionChangeAction): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
     

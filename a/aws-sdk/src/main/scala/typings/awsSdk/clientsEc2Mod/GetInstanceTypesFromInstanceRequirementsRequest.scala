@@ -47,7 +47,8 @@ object GetInstanceTypesFromInstanceRequirementsRequest {
     __obj.asInstanceOf[GetInstanceTypesFromInstanceRequirementsRequest]
   }
   
-  extension [Self <: GetInstanceTypesFromInstanceRequirementsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetInstanceTypesFromInstanceRequirementsRequest] (val x: Self) extends AnyVal {
     
     inline def setArchitectureTypes(value: ArchitectureTypeSet): Self = StObject.set(x, "ArchitectureTypes", value.asInstanceOf[js.Any])
     

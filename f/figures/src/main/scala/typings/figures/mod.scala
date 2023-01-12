@@ -1629,7 +1629,8 @@ object mod {
       __obj.asInstanceOf[FigureSet]
     }
     
-    extension [Self <: FigureSet](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FigureSet] (val x: Self) extends AnyVal {
       
       inline def setAlmostEqual(value: String): Self = StObject.set(x, "almostEqual", value.asInstanceOf[js.Any])
       

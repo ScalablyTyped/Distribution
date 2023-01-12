@@ -63,7 +63,8 @@ object AwsEc2EipDetails {
     __obj.asInstanceOf[AwsEc2EipDetails]
   }
   
-  extension [Self <: AwsEc2EipDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsEc2EipDetails] (val x: Self) extends AnyVal {
     
     inline def setAllocationId(value: NonEmptyString): Self = StObject.set(x, "AllocationId", value.asInstanceOf[js.Any])
     

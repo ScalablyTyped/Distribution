@@ -30,7 +30,8 @@ object ScanOptions {
     __obj.asInstanceOf[ScanOptions]
   }
   
-  extension [Self <: ScanOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScanOptions] (val x: Self) extends AnyVal {
     
     inline def setHideAlbum(value: Boolean): Self = StObject.set(x, "hideAlbum", value.asInstanceOf[js.Any])
     

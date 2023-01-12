@@ -23,7 +23,8 @@ object Vhost {
     __obj.asInstanceOf[Vhost]
   }
   
-  extension [Self <: Vhost](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Vhost] (val x: Self) extends AnyVal {
     
     inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
     

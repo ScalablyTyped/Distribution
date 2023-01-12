@@ -34,7 +34,8 @@ object SimpleFillSymbolProperties {
     __obj.asInstanceOf[SimpleFillSymbolProperties]
   }
   
-  extension [Self <: SimpleFillSymbolProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SimpleFillSymbolProperties] (val x: Self) extends AnyVal {
     
     inline def setStyle(
       value: `backward-diagonal` | cross | `diagonal-cross` | `forward-diagonal` | horizontal | none_ | solid | vertical

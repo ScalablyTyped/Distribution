@@ -104,7 +104,8 @@ object BlendModeEnumValues {
     __obj.asInstanceOf[BlendModeEnumValues]
   }
   
-  extension [Self <: BlendModeEnumValues](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BlendModeEnumValues] (val x: Self) extends AnyVal {
     
     inline def setClear(value: BlendMode): Self = StObject.set(x, "Clear", value.asInstanceOf[js.Any])
     

@@ -16,7 +16,8 @@ object QueryCollectionData {
     __obj.asInstanceOf[QueryCollectionData]
   }
   
-  extension [Self <: QueryCollectionData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryCollectionData] (val x: Self) extends AnyVal {
     
     inline def setItems(value: js.Array[QueryData]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     

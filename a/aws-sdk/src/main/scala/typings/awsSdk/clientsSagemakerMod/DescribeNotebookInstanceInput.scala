@@ -18,7 +18,8 @@ object DescribeNotebookInstanceInput {
     __obj.asInstanceOf[DescribeNotebookInstanceInput]
   }
   
-  extension [Self <: DescribeNotebookInstanceInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeNotebookInstanceInput] (val x: Self) extends AnyVal {
     
     inline def setNotebookInstanceName(value: NotebookInstanceName): Self = StObject.set(x, "NotebookInstanceName", value.asInstanceOf[js.Any])
   }

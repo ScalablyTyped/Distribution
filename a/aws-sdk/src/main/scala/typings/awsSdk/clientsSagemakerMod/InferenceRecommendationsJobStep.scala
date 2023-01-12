@@ -33,7 +33,8 @@ object InferenceRecommendationsJobStep {
     __obj.asInstanceOf[InferenceRecommendationsJobStep]
   }
   
-  extension [Self <: InferenceRecommendationsJobStep](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InferenceRecommendationsJobStep] (val x: Self) extends AnyVal {
     
     inline def setInferenceBenchmark(value: RecommendationJobInferenceBenchmark): Self = StObject.set(x, "InferenceBenchmark", value.asInstanceOf[js.Any])
     

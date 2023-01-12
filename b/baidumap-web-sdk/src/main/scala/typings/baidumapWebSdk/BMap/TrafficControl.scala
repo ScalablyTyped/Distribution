@@ -19,7 +19,8 @@ object TrafficControl {
     __obj.asInstanceOf[TrafficControl]
   }
   
-  extension [Self <: TrafficControl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TrafficControl] (val x: Self) extends AnyVal {
     
     inline def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
     

@@ -28,7 +28,8 @@ object DOMContainerConfig {
     __obj.asInstanceOf[DOMContainerConfig]
   }
   
-  extension [Self <: DOMContainerConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DOMContainerConfig] (val x: Self) extends AnyVal {
     
     inline def setBehindCanvas(value: Boolean): Self = StObject.set(x, "behindCanvas", value.asInstanceOf[js.Any])
     

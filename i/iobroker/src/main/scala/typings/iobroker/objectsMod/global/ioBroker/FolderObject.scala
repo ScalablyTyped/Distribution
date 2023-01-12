@@ -27,7 +27,8 @@ object FolderObject {
     __obj.asInstanceOf[FolderObject]
   }
   
-  extension [Self <: FolderObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FolderObject] (val x: Self) extends AnyVal {
     
     inline def setCommon(value: OtherCommon): Self = StObject.set(x, "common", value.asInstanceOf[js.Any])
     

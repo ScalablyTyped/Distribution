@@ -265,7 +265,8 @@ object mod {
       __obj.asInstanceOf[BoundsStatic]
     }
     
-    extension [Self <: BoundsStatic](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BoundsStatic] (val x: Self) extends AnyVal {
       
       inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       
@@ -324,7 +325,8 @@ object mod {
       __obj.asInstanceOf[DeltaOperation]
     }
     
-    extension [Self <: DeltaOperation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeltaOperation] (val x: Self) extends AnyVal {
       
       inline def setDelete(value: Double): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
       
@@ -394,7 +396,8 @@ object mod {
       __obj.asInstanceOf[Key]
     }
     
-    extension [Self <: Key](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Key] (val x: Self) extends AnyVal {
       
       inline def setAltKey(value: Boolean): Self = StObject.set(x, "altKey", value.asInstanceOf[js.Any])
       
@@ -448,7 +451,8 @@ object mod {
       __obj.asInstanceOf[OptionalAttributes]
     }
     
-    extension [Self <: OptionalAttributes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OptionalAttributes] (val x: Self) extends AnyVal {
       
       inline def setAttributes(value: StringMap): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
@@ -483,7 +487,8 @@ object mod {
       __obj.asInstanceOf[QuillOptionsStatic]
     }
     
-    extension [Self <: QuillOptionsStatic](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QuillOptionsStatic] (val x: Self) extends AnyVal {
       
       inline def setBounds(value: HTMLElement | String): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
       
@@ -542,7 +547,8 @@ object mod {
       __obj.asInstanceOf[SourceMap]
     }
     
-    extension [Self <: SourceMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SourceMap] (val x: Self) extends AnyVal {
       
       inline def setAPI(value: api): Self = StObject.set(x, "API", value.asInstanceOf[js.Any])
       

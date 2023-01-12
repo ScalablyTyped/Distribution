@@ -92,7 +92,8 @@ object FindingSummary {
     __obj.asInstanceOf[FindingSummary]
   }
   
-  extension [Self <: FindingSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FindingSummary] (val x: Self) extends AnyVal {
     
     inline def setAction(value: ActionList): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     

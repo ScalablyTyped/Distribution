@@ -23,7 +23,8 @@ object DescribeNetworkInterfacesResult {
     __obj.asInstanceOf[DescribeNetworkInterfacesResult]
   }
   
-  extension [Self <: DescribeNetworkInterfacesResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeNetworkInterfacesResult] (val x: Self) extends AnyVal {
     
     inline def setNetworkInterfaces(value: NetworkInterfaceList): Self = StObject.set(x, "NetworkInterfaces", value.asInstanceOf[js.Any])
     

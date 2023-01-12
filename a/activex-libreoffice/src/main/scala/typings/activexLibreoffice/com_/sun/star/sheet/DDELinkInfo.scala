@@ -34,7 +34,8 @@ object DDELinkInfo {
     __obj.asInstanceOf[DDELinkInfo]
   }
   
-  extension [Self <: DDELinkInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DDELinkInfo] (val x: Self) extends AnyVal {
     
     inline def setItems(value: SafeArray[DDEItemInfo]): Self = StObject.set(x, "Items", value.asInstanceOf[js.Any])
     

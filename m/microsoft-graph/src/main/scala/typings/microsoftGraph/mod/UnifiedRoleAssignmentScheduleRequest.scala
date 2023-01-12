@@ -97,7 +97,8 @@ object UnifiedRoleAssignmentScheduleRequest {
     __obj.asInstanceOf[UnifiedRoleAssignmentScheduleRequest]
   }
   
-  extension [Self <: UnifiedRoleAssignmentScheduleRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UnifiedRoleAssignmentScheduleRequest] (val x: Self) extends AnyVal {
     
     inline def setAction(value: NullableOption[UnifiedRoleScheduleRequestActions]): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     

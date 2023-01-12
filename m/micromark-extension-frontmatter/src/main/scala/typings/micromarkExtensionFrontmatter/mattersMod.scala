@@ -33,7 +33,8 @@ object mattersMod {
       __obj.asInstanceOf[FenceProps]
     }
     
-    extension [Self <: FenceProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FenceProps] (val x: Self) extends AnyVal {
       
       inline def setFence(value: String | Info): Self = StObject.set(x, "fence", value.asInstanceOf[js.Any])
       
@@ -54,7 +55,8 @@ object mattersMod {
       __obj.asInstanceOf[Info]
     }
     
-    extension [Self <: Info](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Info] (val x: Self) extends AnyVal {
       
       inline def setClose(value: String): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
       
@@ -82,7 +84,8 @@ object mattersMod {
       __obj.asInstanceOf[MarkerProps]
     }
     
-    extension [Self <: MarkerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MarkerProps] (val x: Self) extends AnyVal {
       
       inline def setFence(value: Unit): Self = StObject.set(x, "fence", value.asInstanceOf[js.Any])
       
@@ -114,7 +117,8 @@ object mattersMod {
       __obj.asInstanceOf[MatterProps]
     }
     
-    extension [Self <: MatterProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MatterProps] (val x: Self) extends AnyVal {
       
       inline def setAnywhere(value: Boolean): Self = StObject.set(x, "anywhere", value.asInstanceOf[js.Any])
       

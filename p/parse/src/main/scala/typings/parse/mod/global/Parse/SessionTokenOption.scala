@@ -15,7 +15,8 @@ object SessionTokenOption {
     __obj.asInstanceOf[SessionTokenOption]
   }
   
-  extension [Self <: SessionTokenOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SessionTokenOption] (val x: Self) extends AnyVal {
     
     inline def setSessionToken(value: String): Self = StObject.set(x, "sessionToken", value.asInstanceOf[js.Any])
     

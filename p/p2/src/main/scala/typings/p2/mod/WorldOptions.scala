@@ -21,7 +21,8 @@ object WorldOptions {
     __obj.asInstanceOf[WorldOptions]
   }
   
-  extension [Self <: WorldOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorldOptions] (val x: Self) extends AnyVal {
     
     inline def setBroadphase(value: Broadphase): Self = StObject.set(x, "broadphase", value.asInstanceOf[js.Any])
     

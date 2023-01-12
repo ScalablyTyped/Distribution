@@ -32,7 +32,8 @@ object AudioListing {
     __obj.asInstanceOf[AudioListing]
   }
   
-  extension [Self <: AudioListing](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AudioListing] (val x: Self) extends AnyVal {
     
     inline def setAudio(value: js.Array[AudioResource]): Self = StObject.set(x, "audio", value.asInstanceOf[js.Any])
     

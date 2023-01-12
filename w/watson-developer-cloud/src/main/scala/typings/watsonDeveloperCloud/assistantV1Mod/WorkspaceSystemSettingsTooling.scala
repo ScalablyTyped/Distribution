@@ -17,7 +17,8 @@ object WorkspaceSystemSettingsTooling {
     __obj.asInstanceOf[WorkspaceSystemSettingsTooling]
   }
   
-  extension [Self <: WorkspaceSystemSettingsTooling](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkspaceSystemSettingsTooling] (val x: Self) extends AnyVal {
     
     inline def setStore_generic_responses(value: Boolean): Self = StObject.set(x, "store_generic_responses", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object GetAccessPointConfigurationForObjectLambdaResult {
     __obj.asInstanceOf[GetAccessPointConfigurationForObjectLambdaResult]
   }
   
-  extension [Self <: GetAccessPointConfigurationForObjectLambdaResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetAccessPointConfigurationForObjectLambdaResult] (val x: Self) extends AnyVal {
     
     inline def setConfiguration(value: ObjectLambdaConfiguration): Self = StObject.set(x, "Configuration", value.asInstanceOf[js.Any])
     

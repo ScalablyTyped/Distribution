@@ -38,7 +38,8 @@ object SetTypings {
     __obj.asInstanceOf[SetTypings]
   }
   
-  extension [Self <: SetTypings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetTypings] (val x: Self) extends AnyVal {
     
     inline def setCompilerOptions(value: CompilerOptions): Self = StObject.set(x, "compilerOptions", value.asInstanceOf[js.Any])
     

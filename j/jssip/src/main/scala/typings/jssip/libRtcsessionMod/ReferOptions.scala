@@ -19,7 +19,8 @@ object ReferOptions {
     __obj.asInstanceOf[ReferOptions]
   }
   
-  extension [Self <: ReferOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReferOptions] (val x: Self) extends AnyVal {
     
     inline def setEventHandlers(value: Any): Self = StObject.set(x, "eventHandlers", value.asInstanceOf[js.Any])
     

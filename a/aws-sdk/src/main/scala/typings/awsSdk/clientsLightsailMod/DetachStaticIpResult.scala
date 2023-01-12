@@ -18,7 +18,8 @@ object DetachStaticIpResult {
     __obj.asInstanceOf[DetachStaticIpResult]
   }
   
-  extension [Self <: DetachStaticIpResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DetachStaticIpResult] (val x: Self) extends AnyVal {
     
     inline def setOperations(value: OperationList): Self = StObject.set(x, "operations", value.asInstanceOf[js.Any])
     

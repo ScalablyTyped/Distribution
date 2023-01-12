@@ -15,7 +15,8 @@ object FullPageJSGlobalOptions {
     __obj.asInstanceOf[FullPageJSGlobalOptions]
   }
   
-  extension [Self <: FullPageJSGlobalOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FullPageJSGlobalOptions] (val x: Self) extends AnyVal {
     
     inline def setOptions(value: FullPageJsOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
   }

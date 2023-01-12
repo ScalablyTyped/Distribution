@@ -45,7 +45,8 @@ object CreateWorkspaceBundleRequest {
     __obj.asInstanceOf[CreateWorkspaceBundleRequest]
   }
   
-  extension [Self <: CreateWorkspaceBundleRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateWorkspaceBundleRequest] (val x: Self) extends AnyVal {
     
     inline def setBundleDescription(value: WorkspaceBundleDescription): Self = StObject.set(x, "BundleDescription", value.asInstanceOf[js.Any])
     

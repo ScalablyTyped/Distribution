@@ -75,7 +75,8 @@ object anon {
       __obj.asInstanceOf[AccessToken]
     }
     
-    extension [Self <: AccessToken](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AccessToken] (val x: Self) extends AnyVal {
       
       inline def setAccessToken(value: () => Unit): Self = StObject.set(x, "accessToken", js.Any.fromFunction0(value))
       
@@ -198,7 +199,8 @@ object anon {
       __obj.asInstanceOf[Allowed]
     }
     
-    extension [Self <: Allowed](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Allowed] (val x: Self) extends AnyVal {
       
       inline def setAllowed(value: js.Array[FundingOption]): Self = StObject.set(x, "allowed", value.asInstanceOf[js.Any])
       
@@ -235,7 +237,8 @@ object anon {
       __obj.asInstanceOf[CreateBillingAgreement]
     }
     
-    extension [Self <: CreateBillingAgreement](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateBillingAgreement] (val x: Self) extends AnyVal {
       
       inline def setCreateBillingAgreement(value: () => js.Promise[String]): Self = StObject.set(x, "createBillingAgreement", js.Any.fromFunction0(value))
       

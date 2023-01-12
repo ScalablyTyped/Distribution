@@ -23,7 +23,8 @@ object IConeTwistConstraintOptions {
     __obj.asInstanceOf[IConeTwistConstraintOptions]
   }
   
-  extension [Self <: IConeTwistConstraintOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IConeTwistConstraintOptions] (val x: Self) extends AnyVal {
     
     inline def setAxisA(value: Vec3): Self = StObject.set(x, "axisA", value.asInstanceOf[js.Any])
     

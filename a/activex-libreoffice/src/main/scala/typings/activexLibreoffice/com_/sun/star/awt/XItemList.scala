@@ -151,7 +151,8 @@ object XItemList {
     __obj.asInstanceOf[XItemList]
   }
   
-  extension [Self <: XItemList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XItemList] (val x: Self) extends AnyVal {
     
     inline def setAddItemListListener(value: XItemListListener => Unit): Self = StObject.set(x, "addItemListListener", js.Any.fromFunction1(value))
     

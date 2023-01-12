@@ -62,7 +62,8 @@ object WidgetOptions {
     __obj.asInstanceOf[WidgetOptions[TComponent]]
   }
   
-  extension [Self <: WidgetOptions[?], TComponent](x: Self & WidgetOptions[TComponent]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WidgetOptions[?], TComponent] (val x: Self & WidgetOptions[TComponent]) extends AnyVal {
     
     inline def setAccessKey(value: String): Self = StObject.set(x, "accessKey", value.asInstanceOf[js.Any])
     

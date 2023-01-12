@@ -22,7 +22,8 @@ object HasGetRectoptionsPerActio {
     __obj.asInstanceOf[HasGetRectoptionsPerActio]
   }
   
-  extension [Self <: HasGetRectoptionsPerActio](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HasGetRectoptionsPerActio] (val x: Self) extends AnyVal {
     
     inline def setGetRect(value: typings.interactjsTypes.coreTypesMod.Element => typings.interactjsTypes.coreTypesMod.Rect): Self = StObject.set(x, "getRect", js.Any.fromFunction1(value))
     

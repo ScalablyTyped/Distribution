@@ -21,7 +21,8 @@ object ScrollBoundaryContainerProps {
     __obj.asInstanceOf[ScrollBoundaryContainerProps]
   }
   
-  extension [Self <: ScrollBoundaryContainerProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScrollBoundaryContainerProps] (val x: Self) extends AnyVal {
     
     inline def setHeight(value: Double | String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     

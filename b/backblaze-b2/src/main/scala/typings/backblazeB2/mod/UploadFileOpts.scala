@@ -53,7 +53,8 @@ object UploadFileOpts {
     __obj.asInstanceOf[UploadFileOpts]
   }
   
-  extension [Self <: UploadFileOpts](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UploadFileOpts] (val x: Self) extends AnyVal {
     
     inline def setContentLength(value: Double): Self = StObject.set(x, "contentLength", value.asInstanceOf[js.Any])
     

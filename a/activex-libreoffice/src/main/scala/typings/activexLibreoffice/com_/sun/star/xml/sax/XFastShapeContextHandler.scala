@@ -62,7 +62,8 @@ object XFastShapeContextHandler {
     __obj.asInstanceOf[XFastShapeContextHandler]
   }
   
-  extension [Self <: XFastShapeContextHandler](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XFastShapeContextHandler] (val x: Self) extends AnyVal {
     
     inline def setDocumentProperties(value: XDocumentProperties): Self = StObject.set(x, "DocumentProperties", value.asInstanceOf[js.Any])
     

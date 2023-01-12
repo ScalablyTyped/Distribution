@@ -19,7 +19,8 @@ object RTCIceCandidatePair {
     __obj.asInstanceOf[RTCIceCandidatePair]
   }
   
-  extension [Self <: RTCIceCandidatePair](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RTCIceCandidatePair] (val x: Self) extends AnyVal {
     
     inline def setLocal(value: RTCIceCandidate): Self = StObject.set(x, "local", value.asInstanceOf[js.Any])
     

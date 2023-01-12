@@ -56,7 +56,8 @@ object IDocumentWidgetFactoryOptions {
     __obj.asInstanceOf[IDocumentWidgetFactoryOptions]
   }
   
-  extension [Self <: IDocumentWidgetFactoryOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IDocumentWidgetFactoryOptions] (val x: Self) extends AnyVal {
     
     inline def setDefaultFor(value: js.Array[String]): Self = StObject.set(x, "defaultFor", value.asInstanceOf[js.Any])
     

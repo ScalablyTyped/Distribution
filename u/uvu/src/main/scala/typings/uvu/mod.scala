@@ -47,7 +47,8 @@ object mod {
         __obj.asInstanceOf[Crumbs]
       }
       
-      extension [Self <: Crumbs](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Crumbs] (val x: Self) extends AnyVal {
         
         inline def set__suite__(value: String): Self = StObject.set(x, "__suite__", value.asInstanceOf[js.Any])
         

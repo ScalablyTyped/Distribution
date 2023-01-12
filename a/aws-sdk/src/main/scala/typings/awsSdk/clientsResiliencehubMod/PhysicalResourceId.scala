@@ -34,7 +34,8 @@ object PhysicalResourceId {
     __obj.asInstanceOf[PhysicalResourceId]
   }
   
-  extension [Self <: PhysicalResourceId](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PhysicalResourceId] (val x: Self) extends AnyVal {
     
     inline def setAwsAccountId(value: CustomerId): Self = StObject.set(x, "awsAccountId", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object BufferingHints {
     __obj.asInstanceOf[BufferingHints]
   }
   
-  extension [Self <: BufferingHints](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BufferingHints] (val x: Self) extends AnyVal {
     
     inline def setIntervalInSeconds(value: IntervalInSeconds): Self = StObject.set(x, "IntervalInSeconds", value.asInstanceOf[js.Any])
     

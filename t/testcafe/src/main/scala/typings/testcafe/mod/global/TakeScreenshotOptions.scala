@@ -23,7 +23,8 @@ object TakeScreenshotOptions {
     __obj.asInstanceOf[TakeScreenshotOptions]
   }
   
-  extension [Self <: TakeScreenshotOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TakeScreenshotOptions] (val x: Self) extends AnyVal {
     
     inline def setFullPage(value: Boolean): Self = StObject.set(x, "fullPage", value.asInstanceOf[js.Any])
     

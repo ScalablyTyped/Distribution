@@ -31,7 +31,8 @@ object releaseTypesMod {
       __obj.asInstanceOf[TsConfig]
     }
     
-    extension [Self <: TsConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TsConfig] (val x: Self) extends AnyVal {
       
       inline def setCompilerOptions(value: Any): Self = StObject.set(x, "compilerOptions", value.asInstanceOf[js.Any])
       
@@ -92,7 +93,8 @@ object releaseTypesMod {
       __obj.asInstanceOf[VinylFile]
     }
     
-    extension [Self <: VinylFile](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VinylFile] (val x: Self) extends AnyVal {
       
       inline def setBase(value: String): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
       

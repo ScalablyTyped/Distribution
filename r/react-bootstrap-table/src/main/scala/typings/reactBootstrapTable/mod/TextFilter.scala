@@ -47,7 +47,8 @@ object TextFilter {
     __obj.asInstanceOf[TextFilter]
   }
   
-  extension [Self <: TextFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextFilter] (val x: Self) extends AnyVal {
     
     inline def setCondition(value: FilterCondition): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
     

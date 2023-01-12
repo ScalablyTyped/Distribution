@@ -108,7 +108,8 @@ object PostgreSQLSettings {
     __obj.asInstanceOf[PostgreSQLSettings]
   }
   
-  extension [Self <: PostgreSQLSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PostgreSQLSettings] (val x: Self) extends AnyVal {
     
     inline def setAfterConnectScript(value: String): Self = StObject.set(x, "AfterConnectScript", value.asInstanceOf[js.Any])
     

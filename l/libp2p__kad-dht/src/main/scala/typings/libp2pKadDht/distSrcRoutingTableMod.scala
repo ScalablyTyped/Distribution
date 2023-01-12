@@ -162,7 +162,8 @@ object distSrcRoutingTableMod {
       __obj.asInstanceOf[KBucket]
     }
     
-    extension [Self <: KBucket](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KBucket] (val x: Self) extends AnyVal {
       
       inline def setContacts(value: js.Array[KBucketPeer]): Self = StObject.set(x, "contacts", value.asInstanceOf[js.Any])
       
@@ -191,7 +192,8 @@ object distSrcRoutingTableMod {
       __obj.asInstanceOf[KBucketPeer]
     }
     
-    extension [Self <: KBucketPeer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KBucketPeer] (val x: Self) extends AnyVal {
       
       inline def setId(value: js.typedarray.Uint8Array): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -242,7 +244,8 @@ object distSrcRoutingTableMod {
       __obj.asInstanceOf[KBucketTree]
     }
     
-    extension [Self <: KBucketTree](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KBucketTree] (val x: Self) extends AnyVal {
       
       inline def setAdd(value: KBucketPeer => Unit): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
       
@@ -287,7 +290,8 @@ object distSrcRoutingTableMod {
       __obj.asInstanceOf[KBucketTreeEvents]
     }
     
-    extension [Self <: KBucketTreeEvents](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KBucketTreeEvents] (val x: Self) extends AnyVal {
       
       inline def setAdded(value: KBucketPeer => Unit): Self = StObject.set(x, "added", js.Any.fromFunction1(value))
       
@@ -314,7 +318,8 @@ object distSrcRoutingTableMod {
       __obj.asInstanceOf[RoutingTableComponents]
     }
     
-    extension [Self <: RoutingTableComponents](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RoutingTableComponents] (val x: Self) extends AnyVal {
       
       inline def setConnectionManager(value: ConnectionManager): Self = StObject.set(x, "connectionManager", value.asInstanceOf[js.Any])
       
@@ -351,7 +356,8 @@ object distSrcRoutingTableMod {
       __obj.asInstanceOf[RoutingTableInit]
     }
     
-    extension [Self <: RoutingTableInit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RoutingTableInit] (val x: Self) extends AnyVal {
       
       inline def setKBucketSize(value: Double): Self = StObject.set(x, "kBucketSize", value.asInstanceOf[js.Any])
       

@@ -18,7 +18,8 @@ object PersistentBrowserSessionControl {
     __obj.asInstanceOf[PersistentBrowserSessionControl]
   }
   
-  extension [Self <: PersistentBrowserSessionControl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PersistentBrowserSessionControl] (val x: Self) extends AnyVal {
     
     inline def setMode(value: NullableOption[PersistentBrowserSessionMode]): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     

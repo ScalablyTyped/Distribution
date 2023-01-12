@@ -37,7 +37,8 @@ object IUninterpretedOption {
     __obj.asInstanceOf[IUninterpretedOption]
   }
   
-  extension [Self <: IUninterpretedOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IUninterpretedOption] (val x: Self) extends AnyVal {
     
     inline def setAggregateValue(value: String): Self = StObject.set(x, "aggregateValue", value.asInstanceOf[js.Any])
     

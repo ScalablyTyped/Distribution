@@ -25,7 +25,8 @@ object SourceSourceOptions {
     __obj.asInstanceOf[SourceSourceOptions]
   }
   
-  extension [Self <: SourceSourceOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SourceSourceOptions] (val x: Self) extends AnyVal {
     
     inline def setAttributions(value: AttributionLike): Self = StObject.set(x, "attributions", value.asInstanceOf[js.Any])
     

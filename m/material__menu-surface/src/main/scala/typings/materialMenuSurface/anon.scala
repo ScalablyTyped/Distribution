@@ -42,7 +42,8 @@ object anon {
       __obj.asInstanceOf[ANCHOR]
     }
     
-    extension [Self <: ANCHOR](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ANCHOR] (val x: Self) extends AnyVal {
       
       inline def setANCHOR(value: String): Self = StObject.set(x, "ANCHOR", value.asInstanceOf[js.Any])
       
@@ -85,7 +86,8 @@ object anon {
       __obj.asInstanceOf[ANCHORTOMENUSURFACEWIDTHRATIO]
     }
     
-    extension [Self <: ANCHORTOMENUSURFACEWIDTHRATIO](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ANCHORTOMENUSURFACEWIDTHRATIO] (val x: Self) extends AnyVal {
       
       inline def setANCHOR_TO_MENU_SURFACE_WIDTH_RATIO(value: Double): Self = StObject.set(x, "ANCHOR_TO_MENU_SURFACE_WIDTH_RATIO", value.asInstanceOf[js.Any])
       
@@ -124,7 +126,8 @@ object anon {
       __obj.asInstanceOf[CLOSEDEVENT]
     }
     
-    extension [Self <: CLOSEDEVENT](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CLOSEDEVENT] (val x: Self) extends AnyVal {
       
       inline def setCLOSED_EVENT(value: String): Self = StObject.set(x, "CLOSED_EVENT", value.asInstanceOf[js.Any])
       
@@ -156,7 +159,8 @@ object anon {
       __obj.asInstanceOf[PartialMDCMenuDistance]
     }
     
-    extension [Self <: PartialMDCMenuDistance](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialMDCMenuDistance] (val x: Self) extends AnyVal {
       
       inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       
@@ -230,7 +234,8 @@ object anon {
       __obj.asInstanceOf[PartialMDCMenuSurfaceAdap]
     }
     
-    extension [Self <: PartialMDCMenuSurfaceAdap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialMDCMenuSurfaceAdap] (val x: Self) extends AnyVal {
       
       inline def setAddClass(value: /* className */ String => Unit): Self = StObject.set(x, "addClass", js.Any.fromFunction1(value))
       

@@ -20,7 +20,8 @@ object SliderUIParams {
     __obj.asInstanceOf[SliderUIParams]
   }
   
-  extension [Self <: SliderUIParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SliderUIParams] (val x: Self) extends AnyVal {
     
     inline def setHandle(value: JQuery): Self = StObject.set(x, "handle", value.asInstanceOf[js.Any])
     

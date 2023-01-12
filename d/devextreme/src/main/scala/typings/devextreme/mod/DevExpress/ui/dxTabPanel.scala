@@ -71,7 +71,8 @@ object dxTabPanel {
       __obj.asInstanceOf[ExplicitTypes[TItem, TKey]]
     }
     
-    extension [Self <: ExplicitTypes[?, ?], TItem /* <: ItemLike */, TKey](x: Self & (ExplicitTypes[TItem, TKey])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExplicitTypes[?, ?], TItem /* <: ItemLike */, TKey] (val x: Self & (ExplicitTypes[TItem, TKey])) extends AnyVal {
       
       inline def setContentReadyEvent(value: ContentReadyEvent[TItem, TKey]): Self = StObject.set(x, "ContentReadyEvent", value.asInstanceOf[js.Any])
       
@@ -230,7 +231,8 @@ object dxTabPanel {
       __obj.asInstanceOf[TabPanelItemInfo[TItem]]
     }
     
-    extension [Self <: TabPanelItemInfo[?], TItem /* <: ItemLike */](x: Self & TabPanelItemInfo[TItem]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TabPanelItemInfo[?], TItem /* <: ItemLike */] (val x: Self & TabPanelItemInfo[TItem]) extends AnyVal {
       
       inline def setItemData(value: TItem): Self = StObject.set(x, "itemData", value.asInstanceOf[js.Any])
       

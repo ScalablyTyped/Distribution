@@ -31,7 +31,8 @@ object GoogleIdentityAccesscontextmanagerV1DevicePolicy {
     __obj.asInstanceOf[GoogleIdentityAccesscontextmanagerV1DevicePolicy]
   }
   
-  extension [Self <: GoogleIdentityAccesscontextmanagerV1DevicePolicy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleIdentityAccesscontextmanagerV1DevicePolicy] (val x: Self) extends AnyVal {
     
     inline def setAllowedDeviceManagementLevels(value: js.Array[String]): Self = StObject.set(x, "allowedDeviceManagementLevels", value.asInstanceOf[js.Any])
     

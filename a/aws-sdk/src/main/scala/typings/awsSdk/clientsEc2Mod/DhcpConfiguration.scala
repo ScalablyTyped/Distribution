@@ -23,7 +23,8 @@ object DhcpConfiguration {
     __obj.asInstanceOf[DhcpConfiguration]
   }
   
-  extension [Self <: DhcpConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DhcpConfiguration] (val x: Self) extends AnyVal {
     
     inline def setKey(value: String): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
     

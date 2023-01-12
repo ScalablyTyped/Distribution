@@ -19,7 +19,8 @@ object List {
     __obj.asInstanceOf[typings.interactjsTypes.anon.List]
   }
   
-  extension [Self <: typings.interactjsTypes.anon.List](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: typings.interactjsTypes.anon.List] (val x: Self) extends AnyVal {
     
     inline def setList(value: js.Array[Plugin]): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
     

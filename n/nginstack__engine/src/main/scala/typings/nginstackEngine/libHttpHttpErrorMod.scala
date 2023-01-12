@@ -77,7 +77,8 @@ object libHttpHttpErrorMod {
       __obj.asInstanceOf[HttpError]
     }
     
-    extension [Self <: HttpError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HttpError] (val x: Self) extends AnyVal {
       
       inline def set_name(value: Any): Self = StObject.set(x, "_name", value.asInstanceOf[js.Any])
     }

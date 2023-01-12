@@ -58,7 +58,8 @@ object GetLicenseConversionTaskResponse {
     __obj.asInstanceOf[GetLicenseConversionTaskResponse]
   }
   
-  extension [Self <: GetLicenseConversionTaskResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetLicenseConversionTaskResponse] (val x: Self) extends AnyVal {
     
     inline def setDestinationLicenseContext(value: LicenseConversionContext): Self = StObject.set(x, "DestinationLicenseContext", value.asInstanceOf[js.Any])
     

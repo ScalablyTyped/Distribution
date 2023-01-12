@@ -82,7 +82,8 @@ object TabInstance {
     __obj.asInstanceOf[TabInstance]
   }
   
-  extension [Self <: TabInstance](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TabInstance] (val x: Self) extends AnyVal {
     
     inline def setChannelId(value: String): Self = StObject.set(x, "channelId", value.asInstanceOf[js.Any])
     

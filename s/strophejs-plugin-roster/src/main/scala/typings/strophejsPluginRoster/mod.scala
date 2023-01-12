@@ -61,7 +61,8 @@ object mod {
       __obj.asInstanceOf[RosterItem]
     }
     
-    extension [Self <: RosterItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RosterItem] (val x: Self) extends AnyVal {
       
       inline def setAsk(value: String): Self = StObject.set(x, "ask", value.asInstanceOf[js.Any])
       
@@ -94,7 +95,8 @@ object mod {
       __obj.asInstanceOf[RosterResource]
     }
     
-    extension [Self <: RosterResource](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RosterResource] (val x: Self) extends AnyVal {
       
       inline def setPriority(value: String): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
       
@@ -195,7 +197,8 @@ object mod {
           __obj.asInstanceOf[Connection]
         }
         
-        extension [Self <: Connection](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: Connection] (val x: Self) extends AnyVal {
           
           inline def setRoster(value: StropheRosterPlugin): Self = StObject.set(x, "roster", value.asInstanceOf[js.Any])
         }
@@ -220,7 +223,8 @@ object mod {
           __obj.asInstanceOf[Connection]
         }
         
-        extension [Self <: Connection](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: Connection] (val x: Self) extends AnyVal {
           
           inline def setRoster(value: StropheRosterPlugin): Self = StObject.set(x, "roster", value.asInstanceOf[js.Any])
         }

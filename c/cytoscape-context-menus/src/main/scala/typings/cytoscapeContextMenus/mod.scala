@@ -180,7 +180,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[MenuItem]
     }
     
-    extension [Self <: MenuItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MenuItem] (val x: Self) extends AnyVal {
       
       inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
@@ -262,7 +263,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[MenuOptions]
     }
     
-    extension [Self <: MenuOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MenuOptions] (val x: Self) extends AnyVal {
       
       inline def setContextMenuClasses(value: js.Array[String]): Self = StObject.set(x, "contextMenuClasses", value.asInstanceOf[js.Any])
       

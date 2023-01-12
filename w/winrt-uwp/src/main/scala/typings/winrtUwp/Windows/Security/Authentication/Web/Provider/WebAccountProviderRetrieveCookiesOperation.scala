@@ -50,7 +50,8 @@ object WebAccountProviderRetrieveCookiesOperation {
     __obj.asInstanceOf[WebAccountProviderRetrieveCookiesOperation]
   }
   
-  extension [Self <: WebAccountProviderRetrieveCookiesOperation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebAccountProviderRetrieveCookiesOperation] (val x: Self) extends AnyVal {
     
     inline def setApplicationCallbackUri(value: Uri): Self = StObject.set(x, "applicationCallbackUri", value.asInstanceOf[js.Any])
     

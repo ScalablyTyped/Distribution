@@ -24,7 +24,8 @@ object distCordovaSrcCoreUtilProvidersMod {
       __obj.asInstanceOf[ProviderAssociatedObject]
     }
     
-    extension [Self <: ProviderAssociatedObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProviderAssociatedObject] (val x: Self) extends AnyVal {
       
       inline def setProviderId(value: String): Self = StObject.set(x, "providerId", value.asInstanceOf[js.Any])
       

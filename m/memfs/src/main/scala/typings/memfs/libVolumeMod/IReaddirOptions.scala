@@ -17,7 +17,8 @@ object IReaddirOptions {
     __obj.asInstanceOf[IReaddirOptions]
   }
   
-  extension [Self <: IReaddirOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IReaddirOptions] (val x: Self) extends AnyVal {
     
     inline def setWithFileTypes(value: Boolean): Self = StObject.set(x, "withFileTypes", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object SerializationContext {
     __obj.asInstanceOf[SerializationContext]
   }
   
-  extension [Self <: SerializationContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SerializationContext] (val x: Self) extends AnyVal {
     
     inline def setAddClientObject(value: ClientObject => Unit): Self = StObject.set(x, "addClientObject", js.Any.fromFunction1(value))
     

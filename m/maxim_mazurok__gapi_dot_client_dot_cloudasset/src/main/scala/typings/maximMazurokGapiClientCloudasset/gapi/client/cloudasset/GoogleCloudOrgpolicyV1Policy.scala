@@ -45,7 +45,8 @@ object GoogleCloudOrgpolicyV1Policy {
     __obj.asInstanceOf[GoogleCloudOrgpolicyV1Policy]
   }
   
-  extension [Self <: GoogleCloudOrgpolicyV1Policy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudOrgpolicyV1Policy] (val x: Self) extends AnyVal {
     
     inline def setBooleanPolicy(value: GoogleCloudOrgpolicyV1BooleanPolicy): Self = StObject.set(x, "booleanPolicy", value.asInstanceOf[js.Any])
     

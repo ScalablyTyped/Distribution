@@ -18,7 +18,8 @@ object ProtectionGroupArbitraryPatternLimits {
     __obj.asInstanceOf[ProtectionGroupArbitraryPatternLimits]
   }
   
-  extension [Self <: ProtectionGroupArbitraryPatternLimits](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProtectionGroupArbitraryPatternLimits] (val x: Self) extends AnyVal {
     
     inline def setMaxMembers(value: Long): Self = StObject.set(x, "MaxMembers", value.asInstanceOf[js.Any])
   }

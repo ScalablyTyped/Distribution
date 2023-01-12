@@ -23,7 +23,8 @@ object AttachThingPrincipalRequest {
     __obj.asInstanceOf[AttachThingPrincipalRequest]
   }
   
-  extension [Self <: AttachThingPrincipalRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AttachThingPrincipalRequest] (val x: Self) extends AnyVal {
     
     inline def setPrincipal(value: Principal): Self = StObject.set(x, "principal", value.asInstanceOf[js.Any])
     

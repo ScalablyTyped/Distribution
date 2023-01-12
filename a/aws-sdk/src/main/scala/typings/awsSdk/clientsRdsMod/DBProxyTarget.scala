@@ -53,7 +53,8 @@ object DBProxyTarget {
     __obj.asInstanceOf[DBProxyTarget]
   }
   
-  extension [Self <: DBProxyTarget](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DBProxyTarget] (val x: Self) extends AnyVal {
     
     inline def setEndpoint(value: String): Self = StObject.set(x, "Endpoint", value.asInstanceOf[js.Any])
     

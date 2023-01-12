@@ -21,7 +21,8 @@ object CommitStats {
     __obj.asInstanceOf[CommitStats]
   }
   
-  extension [Self <: CommitStats](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CommitStats] (val x: Self) extends AnyVal {
     
     inline def setMutationCount(value: String): Self = StObject.set(x, "mutationCount", value.asInstanceOf[js.Any])
     

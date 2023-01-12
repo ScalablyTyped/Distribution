@@ -41,7 +41,8 @@ object ConnectSalesforceField {
     __obj.asInstanceOf[ConnectSalesforceField]
   }
   
-  extension [Self <: ConnectSalesforceField](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConnectSalesforceField] (val x: Self) extends AnyVal {
     
     inline def setDsAttribute(value: String): Self = StObject.set(x, "dsAttribute", value.asInstanceOf[js.Any])
     

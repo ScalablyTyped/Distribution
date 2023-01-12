@@ -76,7 +76,8 @@ object PictureFillSymbolProperties {
     __obj.asInstanceOf[PictureFillSymbolProperties]
   }
   
-  extension [Self <: PictureFillSymbolProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PictureFillSymbolProperties] (val x: Self) extends AnyVal {
     
     inline def setHeight(value: Double | String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     

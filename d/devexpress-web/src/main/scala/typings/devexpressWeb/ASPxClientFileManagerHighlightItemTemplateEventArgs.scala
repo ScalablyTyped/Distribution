@@ -38,7 +38,8 @@ object ASPxClientFileManagerHighlightItemTemplateEventArgs {
     __obj.asInstanceOf[ASPxClientFileManagerHighlightItemTemplateEventArgs]
   }
   
-  extension [Self <: ASPxClientFileManagerHighlightItemTemplateEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientFileManagerHighlightItemTemplateEventArgs] (val x: Self) extends AnyVal {
     
     inline def setFilterValue(value: String): Self = StObject.set(x, "filterValue", value.asInstanceOf[js.Any])
     

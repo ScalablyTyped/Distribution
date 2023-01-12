@@ -87,7 +87,8 @@ object buildTypesDecoratorsMod {
       __obj.asInstanceOf[IJsonPropOptions]
     }
     
-    extension [Self <: IJsonPropOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IJsonPropOptions] (val x: Self) extends AnyVal {
       
       inline def setConverter(value: IJsonConverter[Any, Any]): Self = StObject.set(x, "converter", value.asInstanceOf[js.Any])
       

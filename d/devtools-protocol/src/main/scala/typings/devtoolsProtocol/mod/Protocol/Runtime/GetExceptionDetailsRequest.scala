@@ -18,7 +18,8 @@ object GetExceptionDetailsRequest {
     __obj.asInstanceOf[GetExceptionDetailsRequest]
   }
   
-  extension [Self <: GetExceptionDetailsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetExceptionDetailsRequest] (val x: Self) extends AnyVal {
     
     inline def setErrorObjectId(value: RemoteObjectId): Self = StObject.set(x, "errorObjectId", value.asInstanceOf[js.Any])
   }

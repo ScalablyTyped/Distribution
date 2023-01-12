@@ -26,7 +26,8 @@ object OpenUrlConfig {
     __obj.asInstanceOf[OpenUrlConfig]
   }
   
-  extension [Self <: OpenUrlConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OpenUrlConfig] (val x: Self) extends AnyVal {
     
     inline def setDarkenBackground(value: Boolean): Self = StObject.set(x, "darkenBackground", value.asInstanceOf[js.Any])
     

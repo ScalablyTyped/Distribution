@@ -491,7 +491,8 @@ object AccountRoleSettings {
     __obj.asInstanceOf[AccountRoleSettings]
   }
   
-  extension [Self <: AccountRoleSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccountRoleSettings] (val x: Self) extends AnyVal {
     
     inline def setAllowAccountManagement(value: String): Self = StObject.set(x, "allowAccountManagement", value.asInstanceOf[js.Any])
     

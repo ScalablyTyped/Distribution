@@ -226,7 +226,8 @@ object Particle {
     __obj.asInstanceOf[Particle]
   }
   
-  extension [Self <: Particle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Particle] (val x: Self) extends AnyVal {
     
     inline def setAge(value: Double): Self = StObject.set(x, "age", value.asInstanceOf[js.Any])
     

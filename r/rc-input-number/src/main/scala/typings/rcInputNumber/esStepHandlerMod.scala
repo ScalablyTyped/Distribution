@@ -35,7 +35,8 @@ object esStepHandlerMod {
       __obj.asInstanceOf[StepHandlerProps]
     }
     
-    extension [Self <: StepHandlerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StepHandlerProps] (val x: Self) extends AnyVal {
       
       inline def setDownDisabled(value: Boolean): Self = StObject.set(x, "downDisabled", value.asInstanceOf[js.Any])
       

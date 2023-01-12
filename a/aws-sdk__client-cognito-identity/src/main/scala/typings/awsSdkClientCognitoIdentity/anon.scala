@@ -328,7 +328,8 @@ object anon {
       __obj.asInstanceOf[DefaultSigningName]
     }
     
-    extension [Self <: DefaultSigningName](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DefaultSigningName] (val x: Self) extends AnyVal {
       
       inline def setDefaultSigningName(value: String): Self = StObject.set(x, "defaultSigningName", value.asInstanceOf[js.Any])
     }
@@ -377,7 +378,8 @@ object anon {
       __obj.asInstanceOf[ExceptionOptionTypeConcur]
     }
     
-    extension [Self <: ExceptionOptionTypeConcur](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExceptionOptionTypeConcur] (val x: Self) extends AnyVal {
       
       inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
       
@@ -400,7 +402,8 @@ object anon {
       __obj.asInstanceOf[ExceptionOptionTypeDevelo]
     }
     
-    extension [Self <: ExceptionOptionTypeDevelo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExceptionOptionTypeDevelo] (val x: Self) extends AnyVal {
       
       inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
       
@@ -423,7 +426,8 @@ object anon {
       __obj.asInstanceOf[ExceptionOptionTypeExtern]
     }
     
-    extension [Self <: ExceptionOptionTypeExtern](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExceptionOptionTypeExtern] (val x: Self) extends AnyVal {
       
       inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
       
@@ -446,7 +450,8 @@ object anon {
       __obj.asInstanceOf[ExceptionOptionTypeIntern]
     }
     
-    extension [Self <: ExceptionOptionTypeIntern](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExceptionOptionTypeIntern] (val x: Self) extends AnyVal {
       
       inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
       
@@ -469,7 +474,8 @@ object anon {
       __obj.asInstanceOf[ExceptionOptionTypeInvali]
     }
     
-    extension [Self <: ExceptionOptionTypeInvali](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExceptionOptionTypeInvali] (val x: Self) extends AnyVal {
       
       inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
       
@@ -492,7 +498,8 @@ object anon {
       __obj.asInstanceOf[ExceptionOptionTypeLimitE]
     }
     
-    extension [Self <: ExceptionOptionTypeLimitE](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExceptionOptionTypeLimitE] (val x: Self) extends AnyVal {
       
       inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
       
@@ -515,7 +522,8 @@ object anon {
       __obj.asInstanceOf[ExceptionOptionTypeNotAut]
     }
     
-    extension [Self <: ExceptionOptionTypeNotAut](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExceptionOptionTypeNotAut] (val x: Self) extends AnyVal {
       
       inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
       
@@ -538,7 +546,8 @@ object anon {
       __obj.asInstanceOf[ExceptionOptionTypeResour]
     }
     
-    extension [Self <: ExceptionOptionTypeResour](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExceptionOptionTypeResour] (val x: Self) extends AnyVal {
       
       inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
       
@@ -561,7 +570,8 @@ object anon {
       __obj.asInstanceOf[ExceptionOptionTypeTooMan]
     }
     
-    extension [Self <: ExceptionOptionTypeTooMan](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExceptionOptionTypeTooMan] (val x: Self) extends AnyVal {
       
       inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
       
@@ -580,7 +590,8 @@ object anon {
       __obj.asInstanceOf[Logger]
     }
     
-    extension [Self <: Logger](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Logger] (val x: Self) extends AnyVal {
       
       inline def setLogger(value: typings.awsSdkTypes.distTypesLoggerMod.Logger): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
       

@@ -22,7 +22,8 @@ object MKSpinnerProperties {
     __obj.asInstanceOf[MKSpinnerProperties]
   }
   
-  extension [Self <: MKSpinnerProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MKSpinnerProperties] (val x: Self) extends AnyVal {
     
     inline def setSpinnerAniDuration(value: Double): Self = StObject.set(x, "spinnerAniDuration", value.asInstanceOf[js.Any])
     

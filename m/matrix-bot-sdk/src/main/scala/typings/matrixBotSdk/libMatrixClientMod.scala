@@ -1004,7 +1004,8 @@ object libMatrixClientMod {
       __obj.asInstanceOf[RoomDirectoryLookupResponse]
     }
     
-    extension [Self <: RoomDirectoryLookupResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RoomDirectoryLookupResponse] (val x: Self) extends AnyVal {
       
       inline def setResidentServers(value: js.Array[String]): Self = StObject.set(x, "residentServers", value.asInstanceOf[js.Any])
       
@@ -1040,7 +1041,8 @@ object libMatrixClientMod {
       __obj.asInstanceOf[RoomReference]
     }
     
-    extension [Self <: RoomReference](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RoomReference] (val x: Self) extends AnyVal {
       
       inline def setRefEventId(value: String): Self = StObject.set(x, "refEventId", value.asInstanceOf[js.Any])
       

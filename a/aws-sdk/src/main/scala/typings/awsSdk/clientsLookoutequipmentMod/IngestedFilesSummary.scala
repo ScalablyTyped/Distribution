@@ -28,7 +28,8 @@ object IngestedFilesSummary {
     __obj.asInstanceOf[IngestedFilesSummary]
   }
   
-  extension [Self <: IngestedFilesSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IngestedFilesSummary] (val x: Self) extends AnyVal {
     
     inline def setDiscardedFiles(value: ListOfDiscardedFiles): Self = StObject.set(x, "DiscardedFiles", value.asInstanceOf[js.Any])
     

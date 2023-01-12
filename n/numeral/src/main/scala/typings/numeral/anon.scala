@@ -23,7 +23,8 @@ object anon {
       __obj.asInstanceOf[Billion]
     }
     
-    extension [Self <: Billion](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Billion] (val x: Self) extends AnyVal {
       
       inline def setBillion(value: String): Self = StObject.set(x, "billion", value.asInstanceOf[js.Any])
       
@@ -48,7 +49,8 @@ object anon {
       __obj.asInstanceOf[Decimal]
     }
     
-    extension [Self <: Decimal](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Decimal] (val x: Self) extends AnyVal {
       
       inline def setDecimal(value: String): Self = StObject.set(x, "decimal", value.asInstanceOf[js.Any])
       
@@ -69,7 +71,8 @@ object anon {
       __obj.asInstanceOf[Format]
     }
     
-    extension [Self <: Format](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Format] (val x: Self) extends AnyVal {
       
       inline def setFormat(value: js.RegExp): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
@@ -88,7 +91,8 @@ object anon {
       __obj.asInstanceOf[Symbol]
     }
     
-    extension [Self <: Symbol](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Symbol] (val x: Self) extends AnyVal {
       
       inline def setSymbol(value: String): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
     }

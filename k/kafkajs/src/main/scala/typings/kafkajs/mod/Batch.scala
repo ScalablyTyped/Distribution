@@ -41,7 +41,8 @@ object Batch {
     __obj.asInstanceOf[Batch]
   }
   
-  extension [Self <: Batch](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Batch] (val x: Self) extends AnyVal {
     
     inline def setFirstOffset(value: () => String | Null): Self = StObject.set(x, "firstOffset", js.Any.fromFunction0(value))
     

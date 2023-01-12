@@ -33,7 +33,8 @@ object DecorateRequestOptions {
     __obj.asInstanceOf[DecorateRequestOptions]
   }
   
-  extension [Self <: DecorateRequestOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DecorateRequestOptions] (val x: Self) extends AnyVal {
     
     inline def setAutoPaginate(value: Boolean): Self = StObject.set(x, "autoPaginate", value.asInstanceOf[js.Any])
     

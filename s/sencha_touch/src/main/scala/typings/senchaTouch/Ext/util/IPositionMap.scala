@@ -26,7 +26,8 @@ object IPositionMap {
     __obj.asInstanceOf[IPositionMap]
   }
   
-  extension [Self <: IPositionMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPositionMap] (val x: Self) extends AnyVal {
     
     inline def setGetMinimumHeight(value: () => Double): Self = StObject.set(x, "getMinimumHeight", js.Any.fromFunction0(value))
     

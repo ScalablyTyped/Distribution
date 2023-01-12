@@ -378,7 +378,8 @@ object SearchBox {
     __obj.asInstanceOf[SearchBox]
   }
   
-  extension [Self <: SearchBox](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchBox] (val x: Self) extends AnyVal {
     
     inline def setActivate(value: (String, String, String, String, String, String, String, String, String) => Unit): Self = StObject.set(x, "activate", js.Any.fromFunction9(value))
     

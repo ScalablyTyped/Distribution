@@ -34,7 +34,8 @@ object distTypesTypesMod {
       __obj.asInstanceOf[RateLimiter]
     }
     
-    extension [Self <: RateLimiter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RateLimiter] (val x: Self) extends AnyVal {
       
       inline def setGetSendToken(value: () => js.Promise[Unit]): Self = StObject.set(x, "getSendToken", js.Any.fromFunction0(value))
       

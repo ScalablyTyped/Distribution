@@ -32,7 +32,8 @@ object BatchAddFacetToObject {
     __obj.asInstanceOf[BatchAddFacetToObject]
   }
   
-  extension [Self <: BatchAddFacetToObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchAddFacetToObject] (val x: Self) extends AnyVal {
     
     inline def setObjectAttributeList(value: AttributeKeyAndValueList): Self = StObject.set(x, "ObjectAttributeList", value.asInstanceOf[js.Any])
     

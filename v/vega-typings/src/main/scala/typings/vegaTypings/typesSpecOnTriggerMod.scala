@@ -22,7 +22,8 @@ object typesSpecOnTriggerMod {
       __obj.asInstanceOf[OnMarkTrigger]
     }
     
-    extension [Self <: OnMarkTrigger](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OnMarkTrigger] (val x: Self) extends AnyVal {
       
       inline def setModify(value: Expr): Self = StObject.set(x, "modify", value.asInstanceOf[js.Any])
       
@@ -57,7 +58,8 @@ object typesSpecOnTriggerMod {
       __obj.asInstanceOf[OnTrigger]
     }
     
-    extension [Self <: OnTrigger](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OnTrigger] (val x: Self) extends AnyVal {
       
       inline def setInsert(value: Expr): Self = StObject.set(x, "insert", value.asInstanceOf[js.Any])
       

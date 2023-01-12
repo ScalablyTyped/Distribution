@@ -52,7 +52,8 @@ object typesUpdateEmailChannelInputMod {
       __obj.asInstanceOf[UpdateEmailChannelInput]
     }
     
-    extension [Self <: UpdateEmailChannelInput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UpdateEmailChannelInput] (val x: Self) extends AnyVal {
       
       inline def set$abortSignal(value: AbortSignal): Self = StObject.set(x, "$abortSignal", value.asInstanceOf[js.Any])
       

@@ -45,7 +45,8 @@ object layerMapboxVectorMod {
       __obj.asInstanceOf[LayerObject]
     }
     
-    extension [Self <: LayerObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LayerObject] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -126,7 +127,8 @@ object layerMapboxVectorMod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setAccessToken(value: String): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
       
@@ -230,7 +232,8 @@ object layerMapboxVectorMod {
       __obj.asInstanceOf[SourceObject]
     }
     
-    extension [Self <: SourceObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SourceObject] (val x: Self) extends AnyVal {
       
       inline def setType(value: SourceType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
@@ -260,7 +263,8 @@ object layerMapboxVectorMod {
       __obj.asInstanceOf[StyleObject]
     }
     
-    extension [Self <: StyleObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StyleObject] (val x: Self) extends AnyVal {
       
       inline def setGlyphs(value: String): Self = StObject.set(x, "glyphs", value.asInstanceOf[js.Any])
       

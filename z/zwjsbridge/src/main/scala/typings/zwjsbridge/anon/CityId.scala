@@ -23,7 +23,8 @@ object CityId {
     __obj.asInstanceOf[CityId]
   }
   
-  extension [Self <: CityId](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CityId] (val x: Self) extends AnyVal {
     
     inline def setCityId(value: String): Self = StObject.set(x, "cityId", value.asInstanceOf[js.Any])
     

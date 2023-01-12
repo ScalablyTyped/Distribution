@@ -47,7 +47,8 @@ object build2XhrFileReaderMod {
       __obj.asInstanceOf[ContentRangeType]
     }
     
-    extension [Self <: ContentRangeType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContentRangeType] (val x: Self) extends AnyVal {
       
       inline def setFirstBytePosition(value: Double): Self = StObject.set(x, "firstBytePosition", value.asInstanceOf[js.Any])
       

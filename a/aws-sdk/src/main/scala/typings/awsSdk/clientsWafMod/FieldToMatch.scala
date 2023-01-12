@@ -23,7 +23,8 @@ object FieldToMatch {
     __obj.asInstanceOf[FieldToMatch]
   }
   
-  extension [Self <: FieldToMatch](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FieldToMatch] (val x: Self) extends AnyVal {
     
     inline def setData(value: MatchFieldData): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
     

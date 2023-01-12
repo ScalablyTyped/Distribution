@@ -36,7 +36,8 @@ object OutputChunk {
     __obj.asInstanceOf[OutputChunk]
   }
   
-  extension [Self <: OutputChunk](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OutputChunk] (val x: Self) extends AnyVal {
     
     inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     

@@ -127,7 +127,8 @@ object libTypescriptComponentsToggleButtonToggleButtonGroupMod {
       __obj.asInstanceOf[Props]
     }
     
-    extension [Self <: Props](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -154,7 +155,8 @@ object libTypescriptComponentsToggleButtonToggleButtonGroupMod {
       __obj.asInstanceOf[ToggleButtonContextType]
     }
     
-    extension [Self <: ToggleButtonContextType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ToggleButtonContextType] (val x: Self) extends AnyVal {
       
       inline def setOnValueChange(value: String => Unit | Null): Self = StObject.set(x, "onValueChange", js.Any.fromFunction1(value))
       

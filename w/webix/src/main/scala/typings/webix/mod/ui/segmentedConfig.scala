@@ -107,7 +107,8 @@ object segmentedConfig {
     __obj.asInstanceOf[segmentedConfig]
   }
   
-  extension [Self <: segmentedConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: segmentedConfig] (val x: Self) extends AnyVal {
     
     inline def setAlign(value: String): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     

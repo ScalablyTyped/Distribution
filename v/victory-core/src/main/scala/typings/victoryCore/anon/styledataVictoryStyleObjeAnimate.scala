@@ -71,7 +71,8 @@ object styledataVictoryStyleObjeAnimate {
     __obj.asInstanceOf[styledataVictoryStyleObjeAnimate]
   }
   
-  extension [Self <: styledataVictoryStyleObjeAnimate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: styledataVictoryStyleObjeAnimate] (val x: Self) extends AnyVal {
     
     inline def setAnimate(value: Boolean | AnimatePropTypeInterface): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     

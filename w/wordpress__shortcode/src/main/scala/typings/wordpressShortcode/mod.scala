@@ -168,7 +168,8 @@ object mod {
       __obj.asInstanceOf[ShortcodeAttrs]
     }
     
-    extension [Self <: ShortcodeAttrs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ShortcodeAttrs] (val x: Self) extends AnyVal {
       
       inline def setNamed(value: Record[String, js.UndefOr[String]]): Self = StObject.set(x, "named", value.asInstanceOf[js.Any])
       
@@ -193,7 +194,8 @@ object mod {
       __obj.asInstanceOf[ShortcodeMatch]
     }
     
-    extension [Self <: ShortcodeMatch](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ShortcodeMatch] (val x: Self) extends AnyVal {
       
       inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
@@ -220,7 +222,8 @@ object mod {
       __obj.asInstanceOf[ShortcodeOptions]
     }
     
-    extension [Self <: ShortcodeOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ShortcodeOptions] (val x: Self) extends AnyVal {
       
       inline def setAttrs(value: PartialShortcodeAttrs | String): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
       

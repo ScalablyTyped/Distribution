@@ -23,7 +23,8 @@ object ConnectorConfigRequest {
     __obj.asInstanceOf[ConnectorConfigRequest]
   }
   
-  extension [Self <: ConnectorConfigRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConnectorConfigRequest] (val x: Self) extends AnyVal {
     
     inline def setProvider(value: ConnectorConfigProvider): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
     

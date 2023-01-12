@@ -37,7 +37,8 @@ object style {
       __obj.asInstanceOf[AtlasManagerOptions]
     }
     
-    extension [Self <: AtlasManagerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AtlasManagerOptions] (val x: Self) extends AnyVal {
       
       inline def setInitialSize(value: Double): Self = StObject.set(x, "initialSize", value.asInstanceOf[js.Any])
       
@@ -72,7 +73,8 @@ object style {
       __obj.asInstanceOf[CircleOptions]
     }
     
-    extension [Self <: CircleOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CircleOptions] (val x: Self) extends AnyVal {
       
       inline def setAtlasManager(value: AtlasManager): Self = StObject.set(x, "atlasManager", value.asInstanceOf[js.Any])
       
@@ -105,7 +107,8 @@ object style {
       __obj.asInstanceOf[FillOptions]
     }
     
-    extension [Self <: FillOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FillOptions] (val x: Self) extends AnyVal {
       
       inline def setColor(value: Color_ | ColorLike_): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -156,7 +159,8 @@ object style {
       __obj.asInstanceOf[IconOptions]
     }
     
-    extension [Self <: IconOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IconOptions] (val x: Self) extends AnyVal {
       
       inline def setAnchor(value: js.Array[Double]): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
       
@@ -262,7 +266,8 @@ object style {
       __obj.asInstanceOf[RegularShapeOptions]
     }
     
-    extension [Self <: RegularShapeOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RegularShapeOptions] (val x: Self) extends AnyVal {
       
       inline def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
       
@@ -323,7 +328,8 @@ object style {
       __obj.asInstanceOf[StrokeOptions]
     }
     
-    extension [Self <: StrokeOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StrokeOptions] (val x: Self) extends AnyVal {
       
       inline def setColor(value: Color_ | String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -378,7 +384,8 @@ object style {
       __obj.asInstanceOf[StyleOptions]
     }
     
-    extension [Self <: StyleOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StyleOptions] (val x: Self) extends AnyVal {
       
       inline def setFill(value: Fill): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
       
@@ -453,7 +460,8 @@ object style {
       __obj.asInstanceOf[TextOptions]
     }
     
-    extension [Self <: TextOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TextOptions] (val x: Self) extends AnyVal {
       
       inline def setBackgroundFill(value: Fill): Self = StObject.set(x, "backgroundFill", value.asInstanceOf[js.Any])
       

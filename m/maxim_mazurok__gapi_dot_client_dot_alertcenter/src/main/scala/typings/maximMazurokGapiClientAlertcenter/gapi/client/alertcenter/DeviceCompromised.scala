@@ -19,7 +19,8 @@ object DeviceCompromised {
     __obj.asInstanceOf[DeviceCompromised]
   }
   
-  extension [Self <: DeviceCompromised](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeviceCompromised] (val x: Self) extends AnyVal {
     
     inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     

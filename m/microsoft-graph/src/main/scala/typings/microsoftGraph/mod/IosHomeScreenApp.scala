@@ -18,7 +18,8 @@ object IosHomeScreenApp {
     __obj.asInstanceOf[IosHomeScreenApp]
   }
   
-  extension [Self <: IosHomeScreenApp](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IosHomeScreenApp] (val x: Self) extends AnyVal {
     
     inline def setBundleID(value: String): Self = StObject.set(x, "bundleID", value.asInstanceOf[js.Any])
     

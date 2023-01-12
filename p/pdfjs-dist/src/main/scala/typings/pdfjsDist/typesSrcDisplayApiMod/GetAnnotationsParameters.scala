@@ -20,7 +20,8 @@ object GetAnnotationsParameters {
     __obj.asInstanceOf[GetAnnotationsParameters]
   }
   
-  extension [Self <: GetAnnotationsParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetAnnotationsParameters] (val x: Self) extends AnyVal {
     
     inline def setIntent(value: String): Self = StObject.set(x, "intent", value.asInstanceOf[js.Any])
     

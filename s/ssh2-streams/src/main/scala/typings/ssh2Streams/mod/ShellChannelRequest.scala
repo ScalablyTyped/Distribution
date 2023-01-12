@@ -22,7 +22,8 @@ object ShellChannelRequest {
     __obj.asInstanceOf[ShellChannelRequest]
   }
   
-  extension [Self <: ShellChannelRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShellChannelRequest] (val x: Self) extends AnyVal {
     
     inline def setRecipient(value: Double): Self = StObject.set(x, "recipient", value.asInstanceOf[js.Any])
     

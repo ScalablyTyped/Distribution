@@ -38,7 +38,8 @@ object ReplyFormData {
     __obj.asInstanceOf[ReplyFormData]
   }
   
-  extension [Self <: ReplyFormData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReplyFormData] (val x: Self) extends AnyVal {
     
     inline def setAttachments(value: js.Array[ReplyFormAttachment]): Self = StObject.set(x, "attachments", value.asInstanceOf[js.Any])
     

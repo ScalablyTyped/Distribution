@@ -30,7 +30,8 @@ object leafletMod {
       __obj.asInstanceOf[AreaSelectOptions]
     }
     
-    extension [Self <: AreaSelectOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AreaSelectOptions] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -68,7 +69,8 @@ object leafletMod {
       __obj.asInstanceOf[AreaSelect_]
     }
     
-    extension [Self <: AreaSelect_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AreaSelect_] (val x: Self) extends AnyVal {
       
       inline def setAddTo(value: Map_ => Map_): Self = StObject.set(x, "addTo", js.Any.fromFunction1(value))
       
@@ -93,7 +95,8 @@ object leafletMod {
       __obj.asInstanceOf[Dimension]
     }
     
-    extension [Self <: Dimension](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Dimension] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       

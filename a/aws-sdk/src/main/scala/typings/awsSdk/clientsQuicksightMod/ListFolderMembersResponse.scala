@@ -33,7 +33,8 @@ object ListFolderMembersResponse {
     __obj.asInstanceOf[ListFolderMembersResponse]
   }
   
-  extension [Self <: ListFolderMembersResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListFolderMembersResponse] (val x: Self) extends AnyVal {
     
     inline def setFolderMemberList(value: FolderMemberList): Self = StObject.set(x, "FolderMemberList", value.asInstanceOf[js.Any])
     

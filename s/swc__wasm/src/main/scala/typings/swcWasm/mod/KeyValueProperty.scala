@@ -22,7 +22,8 @@ object KeyValueProperty {
     __obj.asInstanceOf[KeyValueProperty]
   }
   
-  extension [Self <: KeyValueProperty](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KeyValueProperty] (val x: Self) extends AnyVal {
     
     inline def setType(value: typings.swcWasm.swcWasmStrings.KeyValueProperty): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

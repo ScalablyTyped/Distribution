@@ -19,7 +19,8 @@ object PaginationParams {
     __obj.asInstanceOf[PaginationParams]
   }
   
-  extension [Self <: PaginationParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PaginationParams] (val x: Self) extends AnyVal {
     
     inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     

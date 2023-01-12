@@ -22,7 +22,8 @@ object InterconnectLocationRegionInfo {
     __obj.asInstanceOf[InterconnectLocationRegionInfo]
   }
   
-  extension [Self <: InterconnectLocationRegionInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InterconnectLocationRegionInfo] (val x: Self) extends AnyVal {
     
     inline def setExpectedRttMs(value: String): Self = StObject.set(x, "expectedRttMs", value.asInstanceOf[js.Any])
     

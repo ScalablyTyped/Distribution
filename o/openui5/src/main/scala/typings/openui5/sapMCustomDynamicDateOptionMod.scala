@@ -475,7 +475,8 @@ object sapMCustomDynamicDateOptionMod {
       __obj.asInstanceOf[CustomDynamicDateOptionSettings]
     }
     
-    extension [Self <: CustomDynamicDateOptionSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CustomDynamicDateOptionSettings] (val x: Self) extends AnyVal {
       
       inline def setCreateValueHelpUI(value: js.Function | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "createValueHelpUI", value.asInstanceOf[js.Any])
       

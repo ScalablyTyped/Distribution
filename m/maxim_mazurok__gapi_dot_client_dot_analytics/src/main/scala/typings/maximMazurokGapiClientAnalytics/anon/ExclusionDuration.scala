@@ -19,7 +19,8 @@ object ExclusionDuration {
     __obj.asInstanceOf[ExclusionDuration]
   }
   
-  extension [Self <: ExclusionDuration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExclusionDuration] (val x: Self) extends AnyVal {
     
     inline def setExclusionDuration(value: String): Self = StObject.set(x, "exclusionDuration", value.asInstanceOf[js.Any])
     

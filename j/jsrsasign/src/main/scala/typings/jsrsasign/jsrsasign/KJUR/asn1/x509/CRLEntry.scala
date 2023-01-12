@@ -58,7 +58,8 @@ object CRLEntry {
     __obj.asInstanceOf[CRLEntry]
   }
   
-  extension [Self <: CRLEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CRLEntry] (val x: Self) extends AnyVal {
     
     inline def setSetCertSerial(value: IntegerParam => Unit): Self = StObject.set(x, "setCertSerial", js.Any.fromFunction1(value))
     

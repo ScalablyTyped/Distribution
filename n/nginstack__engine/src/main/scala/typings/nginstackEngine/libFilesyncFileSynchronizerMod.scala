@@ -79,7 +79,8 @@ object libFilesyncFileSynchronizerMod {
       __obj.asInstanceOf[FileSynchronizer]
     }
     
-    extension [Self <: FileSynchronizer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileSynchronizer] (val x: Self) extends AnyVal {
       
       inline def setDeletedFileCount(value: Double): Self = StObject.set(x, "deletedFileCount", value.asInstanceOf[js.Any])
       

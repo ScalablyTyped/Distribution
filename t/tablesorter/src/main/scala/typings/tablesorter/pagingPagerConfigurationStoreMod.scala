@@ -194,7 +194,8 @@ object pagingPagerConfigurationStoreMod {
       __obj.asInstanceOf[PagerConfigurationStore[TElement]]
     }
     
-    extension [Self <: PagerConfigurationStore[?], TElement](x: Self & PagerConfigurationStore[TElement]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PagerConfigurationStore[?], TElement] (val x: Self & PagerConfigurationStore[TElement]) extends AnyVal {
       
       inline def set$container(value: JQuery[HTMLElement]): Self = StObject.set(x, "$container", value.asInstanceOf[js.Any])
       

@@ -28,7 +28,8 @@ object ListDatasourcePackagesRequest {
     __obj.asInstanceOf[ListDatasourcePackagesRequest]
   }
   
-  extension [Self <: ListDatasourcePackagesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListDatasourcePackagesRequest] (val x: Self) extends AnyVal {
     
     inline def setGraphArn(value: GraphArn): Self = StObject.set(x, "GraphArn", value.asInstanceOf[js.Any])
     

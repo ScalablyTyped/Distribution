@@ -43,7 +43,8 @@ object TransitGatewayRoute {
     __obj.asInstanceOf[TransitGatewayRoute]
   }
   
-  extension [Self <: TransitGatewayRoute](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransitGatewayRoute] (val x: Self) extends AnyVal {
     
     inline def setDestinationCidrBlock(value: String): Self = StObject.set(x, "DestinationCidrBlock", value.asInstanceOf[js.Any])
     

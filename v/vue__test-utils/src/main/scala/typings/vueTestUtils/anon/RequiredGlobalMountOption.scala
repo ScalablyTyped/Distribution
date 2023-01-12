@@ -55,7 +55,8 @@ object RequiredGlobalMountOption {
     __obj.asInstanceOf[RequiredGlobalMountOption]
   }
   
-  extension [Self <: RequiredGlobalMountOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RequiredGlobalMountOption] (val x: Self) extends AnyVal {
     
     inline def setComponents(
       value: Record[

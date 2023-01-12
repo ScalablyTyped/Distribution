@@ -51,7 +51,8 @@ object libGameResolverMod {
       __obj.asInstanceOf[GameResolver]
     }
     
-    extension [Self <: GameResolver](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GameResolver] (val x: Self) extends AnyVal {
       
       inline def setGames(value: js.Array[Extra]): Self = StObject.set(x, "games", value.asInstanceOf[js.Any])
       

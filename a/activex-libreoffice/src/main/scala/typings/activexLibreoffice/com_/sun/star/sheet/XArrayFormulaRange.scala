@@ -37,7 +37,8 @@ object XArrayFormulaRange {
     __obj.asInstanceOf[XArrayFormulaRange]
   }
   
-  extension [Self <: XArrayFormulaRange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XArrayFormulaRange] (val x: Self) extends AnyVal {
     
     inline def setArrayFormula(value: String): Self = StObject.set(x, "ArrayFormula", value.asInstanceOf[js.Any])
     

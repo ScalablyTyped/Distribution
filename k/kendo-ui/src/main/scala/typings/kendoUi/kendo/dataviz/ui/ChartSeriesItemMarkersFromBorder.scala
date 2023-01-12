@@ -17,7 +17,8 @@ object ChartSeriesItemMarkersFromBorder {
     __obj.asInstanceOf[ChartSeriesItemMarkersFromBorder]
   }
   
-  extension [Self <: ChartSeriesItemMarkersFromBorder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChartSeriesItemMarkersFromBorder] (val x: Self) extends AnyVal {
     
     inline def setColor(value: String | js.Function): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

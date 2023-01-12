@@ -17,7 +17,8 @@ object ICommandRunBeforeTestRunHooks {
     __obj.asInstanceOf[ICommandRunBeforeTestRunHooks]
   }
   
-  extension [Self <: ICommandRunBeforeTestRunHooks](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICommandRunBeforeTestRunHooks] (val x: Self) extends AnyVal {
     
     inline def setActionId(value: String): Self = StObject.set(x, "actionId", value.asInstanceOf[js.Any])
     

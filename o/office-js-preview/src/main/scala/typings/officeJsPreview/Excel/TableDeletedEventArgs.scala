@@ -63,7 +63,8 @@ object TableDeletedEventArgs {
     __obj.asInstanceOf[TableDeletedEventArgs]
   }
   
-  extension [Self <: TableDeletedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TableDeletedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setSource(value: EventSource | Local | Remote): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     

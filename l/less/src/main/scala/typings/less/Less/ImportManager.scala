@@ -16,7 +16,8 @@ object ImportManager {
     __obj.asInstanceOf[ImportManager]
   }
   
-  extension [Self <: ImportManager](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImportManager] (val x: Self) extends AnyVal {
     
     inline def setContents(value: StringDictionary[String]): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
   }

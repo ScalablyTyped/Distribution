@@ -34,7 +34,8 @@ object permissions {
       __obj.asInstanceOf[Permissions]
     }
     
-    extension [Self <: Permissions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Permissions] (val x: Self) extends AnyVal {
       
       inline def setOrigins(value: js.Array[String]): Self = StObject.set(x, "origins", value.asInstanceOf[js.Any])
       
@@ -66,7 +67,8 @@ object permissions {
       __obj.asInstanceOf[PermissionsAddedEvent]
     }
     
-    extension [Self <: PermissionsAddedEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PermissionsAddedEvent] (val x: Self) extends AnyVal {
       
       inline def setAddListener(value: js.Function1[/* permissions */ Permissions, Unit] => Unit): Self = StObject.set(x, "addListener", js.Any.fromFunction1(value))
     }
@@ -88,7 +90,8 @@ object permissions {
       __obj.asInstanceOf[PermissionsRemovedEvent]
     }
     
-    extension [Self <: PermissionsRemovedEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PermissionsRemovedEvent] (val x: Self) extends AnyVal {
       
       inline def setAddListener(value: js.Function1[/* permissions */ Permissions, Unit] => Unit): Self = StObject.set(x, "addListener", js.Any.fromFunction1(value))
     }

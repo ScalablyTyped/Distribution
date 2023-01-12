@@ -1464,7 +1464,8 @@ object libFillMod {
       __obj.asInstanceOf[IconFillProps]
     }
     
-    extension [Self <: IconFillProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IconFillProps] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       

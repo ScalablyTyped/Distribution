@@ -22,7 +22,8 @@ object GenerateUploadUrlResponse {
     __obj.asInstanceOf[GenerateUploadUrlResponse]
   }
   
-  extension [Self <: GenerateUploadUrlResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GenerateUploadUrlResponse] (val x: Self) extends AnyVal {
     
     inline def setStorageSource(value: StorageSource): Self = StObject.set(x, "storageSource", value.asInstanceOf[js.Any])
     

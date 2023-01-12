@@ -32,7 +32,8 @@ object NotApplicable {
     __obj.asInstanceOf[NotApplicable]
   }
   
-  extension [Self <: NotApplicable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NotApplicable] (val x: Self) extends AnyVal {
     
     inline def setError(value: scala.Double): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     

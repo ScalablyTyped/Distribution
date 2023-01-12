@@ -15,7 +15,8 @@ object LastNameOptions {
     __obj.asInstanceOf[LastNameOptions]
   }
   
-  extension [Self <: LastNameOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LastNameOptions] (val x: Self) extends AnyVal {
     
     inline def setNationality(value: LastNameNationalities): Self = StObject.set(x, "nationality", value.asInstanceOf[js.Any])
   }

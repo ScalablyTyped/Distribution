@@ -35,7 +35,8 @@ object Options_ {
     __obj.asInstanceOf[Options_]
   }
   
-  extension [Self <: Options_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Options_] (val x: Self) extends AnyVal {
     
     inline def setDebounceRendering(value: /* cb */ js.Function0[Unit] => Unit): Self = StObject.set(x, "debounceRendering", js.Any.fromFunction1(value))
     

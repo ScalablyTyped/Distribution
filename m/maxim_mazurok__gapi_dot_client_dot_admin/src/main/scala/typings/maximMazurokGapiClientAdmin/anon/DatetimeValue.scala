@@ -35,7 +35,8 @@ object DatetimeValue {
     __obj.asInstanceOf[DatetimeValue]
   }
   
-  extension [Self <: DatetimeValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DatetimeValue] (val x: Self) extends AnyVal {
     
     inline def setBoolValue(value: Boolean): Self = StObject.set(x, "boolValue", value.asInstanceOf[js.Any])
     

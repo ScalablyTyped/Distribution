@@ -19,7 +19,8 @@ object RankEvalDocumentRating {
     __obj.asInstanceOf[RankEvalDocumentRating]
   }
   
-  extension [Self <: RankEvalDocumentRating](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RankEvalDocumentRating] (val x: Self) extends AnyVal {
     
     inline def setRating(value: integer): Self = StObject.set(x, "rating", value.asInstanceOf[js.Any])
     

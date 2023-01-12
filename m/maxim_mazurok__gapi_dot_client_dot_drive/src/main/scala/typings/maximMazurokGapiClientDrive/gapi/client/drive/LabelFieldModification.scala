@@ -37,7 +37,8 @@ object LabelFieldModification {
     __obj.asInstanceOf[LabelFieldModification]
   }
   
-  extension [Self <: LabelFieldModification](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LabelFieldModification] (val x: Self) extends AnyVal {
     
     inline def setFieldId(value: String): Self = StObject.set(x, "fieldId", value.asInstanceOf[js.Any])
     

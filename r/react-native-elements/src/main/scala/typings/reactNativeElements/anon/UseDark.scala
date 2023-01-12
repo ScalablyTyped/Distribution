@@ -15,7 +15,8 @@ object UseDark {
     __obj.asInstanceOf[UseDark]
   }
   
-  extension [Self <: UseDark](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UseDark] (val x: Self) extends AnyVal {
     
     inline def setUseDark(value: Boolean): Self = StObject.set(x, "useDark", value.asInstanceOf[js.Any])
   }

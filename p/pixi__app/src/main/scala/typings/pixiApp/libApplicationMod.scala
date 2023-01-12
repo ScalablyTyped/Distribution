@@ -147,7 +147,8 @@ object libApplicationMod {
       __obj.asInstanceOf[IApplicationPlugin]
     }
     
-    extension [Self <: IApplicationPlugin](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IApplicationPlugin] (val x: Self) extends AnyVal {
       
       inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
       

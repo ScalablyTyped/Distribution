@@ -47,7 +47,8 @@ object DirectionsLastRoute {
     __obj.asInstanceOf[DirectionsLastRoute]
   }
   
-  extension [Self <: DirectionsLastRoute](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DirectionsLastRoute] (val x: Self) extends AnyVal {
     
     inline def setPointBarriers(value: Collection[PointBarrier]): Self = StObject.set(x, "pointBarriers", value.asInstanceOf[js.Any])
     

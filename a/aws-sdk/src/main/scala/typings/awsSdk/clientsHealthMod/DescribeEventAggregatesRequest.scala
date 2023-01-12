@@ -33,7 +33,8 @@ object DescribeEventAggregatesRequest {
     __obj.asInstanceOf[DescribeEventAggregatesRequest]
   }
   
-  extension [Self <: DescribeEventAggregatesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeEventAggregatesRequest] (val x: Self) extends AnyVal {
     
     inline def setAggregateField(value: eventAggregateField): Self = StObject.set(x, "aggregateField", value.asInstanceOf[js.Any])
     

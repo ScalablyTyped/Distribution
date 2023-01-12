@@ -68,7 +68,8 @@ object PlayReadyIndividualizationServiceRequest {
     __obj.asInstanceOf[PlayReadyIndividualizationServiceRequest]
   }
   
-  extension [Self <: PlayReadyIndividualizationServiceRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlayReadyIndividualizationServiceRequest] (val x: Self) extends AnyVal {
     
     inline def setBeginServiceRequest(value: () => IAsyncAction): Self = StObject.set(x, "beginServiceRequest", js.Any.fromFunction0(value))
     

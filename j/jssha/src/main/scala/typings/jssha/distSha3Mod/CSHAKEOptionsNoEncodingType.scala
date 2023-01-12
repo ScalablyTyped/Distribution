@@ -17,7 +17,8 @@ object CSHAKEOptionsNoEncodingType {
     __obj.asInstanceOf[CSHAKEOptionsNoEncodingType]
   }
   
-  extension [Self <: CSHAKEOptionsNoEncodingType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CSHAKEOptionsNoEncodingType] (val x: Self) extends AnyVal {
     
     inline def setCustomization(value: GenericInputType): Self = StObject.set(x, "customization", value.asInstanceOf[js.Any])
     

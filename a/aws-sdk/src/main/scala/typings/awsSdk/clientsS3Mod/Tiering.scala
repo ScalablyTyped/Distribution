@@ -23,7 +23,8 @@ object Tiering {
     __obj.asInstanceOf[Tiering]
   }
   
-  extension [Self <: Tiering](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Tiering] (val x: Self) extends AnyVal {
     
     inline def setAccessTier(value: IntelligentTieringAccessTier): Self = StObject.set(x, "AccessTier", value.asInstanceOf[js.Any])
     

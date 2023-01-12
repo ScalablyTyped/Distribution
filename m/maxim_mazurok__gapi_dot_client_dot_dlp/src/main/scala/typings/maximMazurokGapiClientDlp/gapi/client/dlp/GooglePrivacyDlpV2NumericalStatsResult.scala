@@ -22,7 +22,8 @@ object GooglePrivacyDlpV2NumericalStatsResult {
     __obj.asInstanceOf[GooglePrivacyDlpV2NumericalStatsResult]
   }
   
-  extension [Self <: GooglePrivacyDlpV2NumericalStatsResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GooglePrivacyDlpV2NumericalStatsResult] (val x: Self) extends AnyVal {
     
     inline def setMaxValue(value: GooglePrivacyDlpV2Value): Self = StObject.set(x, "maxValue", value.asInstanceOf[js.Any])
     

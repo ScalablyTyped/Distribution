@@ -18,7 +18,8 @@ object HmacKeyResourceResponse {
     __obj.asInstanceOf[HmacKeyResourceResponse]
   }
   
-  extension [Self <: HmacKeyResourceResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HmacKeyResourceResponse] (val x: Self) extends AnyVal {
     
     inline def setMetadata(value: HmacKeyMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     

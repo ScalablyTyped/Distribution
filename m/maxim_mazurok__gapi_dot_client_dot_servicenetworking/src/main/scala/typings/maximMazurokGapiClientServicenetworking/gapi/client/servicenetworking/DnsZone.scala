@@ -22,7 +22,8 @@ object DnsZone {
     __obj.asInstanceOf[DnsZone]
   }
   
-  extension [Self <: DnsZone](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DnsZone] (val x: Self) extends AnyVal {
     
     inline def setDnsSuffix(value: String): Self = StObject.set(x, "dnsSuffix", value.asInstanceOf[js.Any])
     

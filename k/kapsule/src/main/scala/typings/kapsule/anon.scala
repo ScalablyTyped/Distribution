@@ -20,7 +20,8 @@ object anon {
       __obj.asInstanceOf[PartialState]
     }
     
-    extension [Self <: PartialState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialState] (val x: Self) extends AnyVal {
       
       inline def setInitialised(value: Boolean): Self = StObject.set(x, "initialised", value.asInstanceOf[js.Any])
       

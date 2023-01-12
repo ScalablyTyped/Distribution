@@ -17,7 +17,8 @@ object PolylineEndCapFill {
     __obj.asInstanceOf[PolylineEndCapFill]
   }
   
-  extension [Self <: PolylineEndCapFill](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PolylineEndCapFill] (val x: Self) extends AnyVal {
     
     inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

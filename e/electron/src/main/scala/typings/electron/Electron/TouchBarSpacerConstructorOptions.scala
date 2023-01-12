@@ -21,7 +21,8 @@ object TouchBarSpacerConstructorOptions {
     __obj.asInstanceOf[TouchBarSpacerConstructorOptions]
   }
   
-  extension [Self <: TouchBarSpacerConstructorOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TouchBarSpacerConstructorOptions] (val x: Self) extends AnyVal {
     
     inline def setSize(value: small | large | flexible): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     

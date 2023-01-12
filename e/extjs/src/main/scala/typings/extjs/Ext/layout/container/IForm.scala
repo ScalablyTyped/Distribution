@@ -87,7 +87,8 @@ object IForm {
     __obj.asInstanceOf[IForm]
   }
   
-  extension [Self <: IForm](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IForm] (val x: Self) extends AnyVal {
     
     inline def setCalculate(value: /* ownerContext */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "calculate", js.Any.fromFunction1(value))
     

@@ -52,7 +52,8 @@ object OmitDateRangePickerPropsi {
     __obj.asInstanceOf[OmitDateRangePickerPropsi]
   }
   
-  extension [Self <: OmitDateRangePickerPropsi](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OmitDateRangePickerPropsi] (val x: Self) extends AnyVal {
     
     inline def setEnableGridSwitch(value: Boolean): Self = StObject.set(x, "enableGridSwitch", value.asInstanceOf[js.Any])
     

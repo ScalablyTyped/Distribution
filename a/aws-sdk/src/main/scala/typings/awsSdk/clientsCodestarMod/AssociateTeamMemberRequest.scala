@@ -38,7 +38,8 @@ object AssociateTeamMemberRequest {
     __obj.asInstanceOf[AssociateTeamMemberRequest]
   }
   
-  extension [Self <: AssociateTeamMemberRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssociateTeamMemberRequest] (val x: Self) extends AnyVal {
     
     inline def setClientRequestToken(value: ClientRequestToken): Self = StObject.set(x, "clientRequestToken", value.asInstanceOf[js.Any])
     

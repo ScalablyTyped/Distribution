@@ -23,7 +23,8 @@ object HttpProviderOptions {
     __obj.asInstanceOf[HttpProviderOptions]
   }
   
-  extension [Self <: HttpProviderOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HttpProviderOptions] (val x: Self) extends AnyVal {
     
     inline def setAgent(value: HttpAgent): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
     

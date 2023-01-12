@@ -42,7 +42,8 @@ object appMod {
       __obj.asInstanceOf[AppConfig]
     }
     
-    extension [Self <: AppConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AppConfig] (val x: Self) extends AnyVal {
       
       inline def setAppEvents(value: js.Array[String]): Self = StObject.set(x, "appEvents", value.asInstanceOf[js.Any])
       

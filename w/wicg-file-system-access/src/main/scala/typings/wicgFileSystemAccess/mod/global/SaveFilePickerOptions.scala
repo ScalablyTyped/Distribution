@@ -17,7 +17,8 @@ object SaveFilePickerOptions {
     __obj.asInstanceOf[SaveFilePickerOptions]
   }
   
-  extension [Self <: SaveFilePickerOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SaveFilePickerOptions] (val x: Self) extends AnyVal {
     
     inline def setSuggestedName(value: String): Self = StObject.set(x, "suggestedName", value.asInstanceOf[js.Any])
     

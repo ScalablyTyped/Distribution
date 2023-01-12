@@ -24,7 +24,8 @@ object GetComponent {
     __obj.asInstanceOf[GetComponent[ParamList, RouteName]]
   }
   
-  extension [Self <: GetComponent[?, ?], ParamList /* <: ParamListBase */, RouteName /* <: /* keyof ParamList */ String */](x: Self & (GetComponent[ParamList, RouteName])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetComponent[?, ?], ParamList /* <: ParamListBase */, RouteName /* <: /* keyof ParamList */ String */] (val x: Self & (GetComponent[ParamList, RouteName])) extends AnyVal {
     
     inline def setChildren(value: Route[ParamList, RouteName] => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
   }

@@ -22,7 +22,8 @@ object anon {
       __obj.asInstanceOf[Input]
     }
     
-    extension [Self <: Input](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Input] (val x: Self) extends AnyVal {
       
       inline def setInput(value: Any): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
       
@@ -45,7 +46,8 @@ object anon {
       __obj.asInstanceOf[Key]
     }
     
-    extension [Self <: Key](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Key] (val x: Self) extends AnyVal {
       
       inline def setKey(value: Any): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
@@ -69,7 +71,8 @@ object anon {
       __obj.asInstanceOf[Regex]
     }
     
-    extension [Self <: Regex](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Regex] (val x: Self) extends AnyVal {
       
       inline def setInput(value: String): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
       
@@ -93,7 +96,8 @@ object anon {
       __obj.asInstanceOf[Type]
     }
     
-    extension [Self <: Type](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Type] (val x: Self) extends AnyVal {
       
       inline def setType(value: Any): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       

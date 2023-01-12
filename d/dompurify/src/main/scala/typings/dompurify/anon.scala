@@ -22,7 +22,8 @@ object anon {
       __obj.asInstanceOf[AllowCustomizedBuiltInElements]
     }
     
-    extension [Self <: AllowCustomizedBuiltInElements](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AllowCustomizedBuiltInElements] (val x: Self) extends AnyVal {
       
       inline def setAllowCustomizedBuiltInElements(value: Boolean): Self = StObject.set(x, "allowCustomizedBuiltInElements", value.asInstanceOf[js.Any])
       
@@ -123,7 +124,8 @@ object anon {
       __obj.asInstanceOf[ConfigRETURNDOMFRAGMENTfa]
     }
     
-    extension [Self <: ConfigRETURNDOMFRAGMENTfa](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConfigRETURNDOMFRAGMENTfa] (val x: Self) extends AnyVal {
       
       inline def setADD_ATTR(value: js.Array[String]): Self = StObject.set(x, "ADD_ATTR", value.asInstanceOf[js.Any])
       
@@ -340,7 +342,8 @@ object anon {
       __obj.asInstanceOf[ConfigRETURNDOMFRAGMENTtr]
     }
     
-    extension [Self <: ConfigRETURNDOMFRAGMENTtr](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConfigRETURNDOMFRAGMENTtr] (val x: Self) extends AnyVal {
       
       inline def setADD_ATTR(value: js.Array[String]): Self = StObject.set(x, "ADD_ATTR", value.asInstanceOf[js.Any])
       
@@ -557,7 +560,8 @@ object anon {
       __obj.asInstanceOf[ConfigRETURNDOMtrue]
     }
     
-    extension [Self <: ConfigRETURNDOMtrue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConfigRETURNDOMtrue] (val x: Self) extends AnyVal {
       
       inline def setADD_ATTR(value: js.Array[String]): Self = StObject.set(x, "ADD_ATTR", value.asInstanceOf[js.Any])
       
@@ -774,7 +778,8 @@ object anon {
       __obj.asInstanceOf[ConfigRETURNTRUSTEDTYPEtr]
     }
     
-    extension [Self <: ConfigRETURNTRUSTEDTYPEtr](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConfigRETURNTRUSTEDTYPEtr] (val x: Self) extends AnyVal {
       
       inline def setADD_ATTR(value: js.Array[String]): Self = StObject.set(x, "ADD_ATTR", value.asInstanceOf[js.Any])
       
@@ -931,7 +936,8 @@ object anon {
       __obj.asInstanceOf[Html]
     }
     
-    extension [Self <: Html](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Html] (val x: Self) extends AnyVal {
       
       inline def setHtml(value: Boolean): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
       

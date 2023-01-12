@@ -27,7 +27,8 @@ object distTypesClassicEditorGeneralDistComponentsBrowserBoldMod extends Shortcu
       __obj.asInstanceOf[BrowserBoldProps]
     }
     
-    extension [Self <: BrowserBoldProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BrowserBoldProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

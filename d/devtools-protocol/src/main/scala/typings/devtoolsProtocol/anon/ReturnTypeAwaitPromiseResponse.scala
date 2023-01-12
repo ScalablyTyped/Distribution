@@ -19,7 +19,8 @@ object ReturnTypeAwaitPromiseResponse {
     __obj.asInstanceOf[ReturnTypeAwaitPromiseResponse]
   }
   
-  extension [Self <: ReturnTypeAwaitPromiseResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReturnTypeAwaitPromiseResponse] (val x: Self) extends AnyVal {
     
     inline def setParamsType(value: js.Array[AwaitPromiseRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     

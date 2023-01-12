@@ -20,7 +20,8 @@ object TypeofPivotGridV2 {
     __obj.asInstanceOf[TypeofPivotGridV2]
   }
   
-  extension [Self <: TypeofPivotGridV2](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofPivotGridV2] (val x: Self) extends AnyVal {
     
     inline def setExtend(value: js.Object => PivotGridV2): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
     

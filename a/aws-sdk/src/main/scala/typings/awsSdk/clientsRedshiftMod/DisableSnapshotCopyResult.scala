@@ -15,7 +15,8 @@ object DisableSnapshotCopyResult {
     __obj.asInstanceOf[DisableSnapshotCopyResult]
   }
   
-  extension [Self <: DisableSnapshotCopyResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisableSnapshotCopyResult] (val x: Self) extends AnyVal {
     
     inline def setCluster(value: Cluster): Self = StObject.set(x, "Cluster", value.asInstanceOf[js.Any])
     

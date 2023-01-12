@@ -32,7 +32,8 @@ object ItemModel {
     __obj.asInstanceOf[ItemModel]
   }
   
-  extension [Self <: ItemModel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ItemModel] (val x: Self) extends AnyVal {
     
     inline def setContentMetadata(value: FileContentMetadata): Self = StObject.set(x, "contentMetadata", value.asInstanceOf[js.Any])
     

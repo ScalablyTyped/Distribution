@@ -106,7 +106,8 @@ object distTypesCoreServicesGroupsMod {
       __obj.asInstanceOf[GroupDetailSchema]
     }
     
-    extension [Self <: GroupDetailSchema](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GroupDetailSchema] (val x: Self) extends AnyVal {
       
       inline def setProjects(value: js.Array[ProjectSchema]): Self = StObject.set(x, "projects", value.asInstanceOf[js.Any])
       
@@ -184,7 +185,8 @@ object distTypesCoreServicesGroupsMod {
       __obj.asInstanceOf[GroupSchema]
     }
     
-    extension [Self <: GroupSchema](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GroupSchema] (val x: Self) extends AnyVal {
       
       inline def setAuto_devops_enabled(value: Boolean): Self = StObject.set(x, "auto_devops_enabled", value.asInstanceOf[js.Any])
       

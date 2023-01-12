@@ -22,7 +22,8 @@ object AdvertiserSdfConfig {
     __obj.asInstanceOf[AdvertiserSdfConfig]
   }
   
-  extension [Self <: AdvertiserSdfConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AdvertiserSdfConfig] (val x: Self) extends AnyVal {
     
     inline def setOverridePartnerSdfConfig(value: Boolean): Self = StObject.set(x, "overridePartnerSdfConfig", value.asInstanceOf[js.Any])
     

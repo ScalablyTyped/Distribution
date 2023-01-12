@@ -232,7 +232,8 @@ object ExportingOptions {
     __obj.asInstanceOf[ExportingOptions]
   }
   
-  extension [Self <: ExportingOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExportingOptions] (val x: Self) extends AnyVal {
     
     inline def setAccessibility(value: ExportingAccessibilityOptions): Self = StObject.set(x, "accessibility", value.asInstanceOf[js.Any])
     

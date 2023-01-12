@@ -23,7 +23,8 @@ object RemediationParameterValue {
     __obj.asInstanceOf[RemediationParameterValue]
   }
   
-  extension [Self <: RemediationParameterValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RemediationParameterValue] (val x: Self) extends AnyVal {
     
     inline def setResourceValue(value: ResourceValue): Self = StObject.set(x, "ResourceValue", value.asInstanceOf[js.Any])
     

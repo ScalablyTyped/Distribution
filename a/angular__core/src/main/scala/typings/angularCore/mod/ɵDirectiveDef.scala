@@ -142,7 +142,8 @@ object ɵDirectiveDef {
     __obj.asInstanceOf[ɵDirectiveDef[T]]
   }
   
-  extension [Self <: ɵDirectiveDef[?], T](x: Self & ɵDirectiveDef[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ɵDirectiveDef[?], T] (val x: Self & ɵDirectiveDef[T]) extends AnyVal {
     
     inline def setContentQueries(value: (/* rf */ ɵRenderFlags, T, /* directiveIndex */ Double) => Unit): Self = StObject.set(x, "contentQueries", js.Any.fromFunction3(value))
     

@@ -991,7 +991,8 @@ object Chai {
       __obj.asInstanceOf[PromisedDeep]
     }
     
-    extension [Self <: PromisedDeep](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PromisedDeep] (val x: Self) extends AnyVal {
       
       inline def setEq_(value: (/* value */ Any, /* message */ js.UndefOr[String]) => PromisedAssertion): Self = StObject.set(x, "eq", js.Any.fromFunction2(value))
       
@@ -1060,7 +1061,8 @@ object Chai {
       __obj.asInstanceOf[PromisedKeyFilter]
     }
     
-    extension [Self <: PromisedKeyFilter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PromisedKeyFilter] (val x: Self) extends AnyVal {
       
       inline def setKeys(value: PromisedKeys): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
     }
@@ -1183,7 +1185,8 @@ object Chai {
       __obj.asInstanceOf[PromisedLanguageChains]
     }
     
-    extension [Self <: PromisedLanguageChains](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PromisedLanguageChains] (val x: Self) extends AnyVal {
       
       inline def setAnd(value: PromisedAssertion): Self = StObject.set(x, "and", value.asInstanceOf[js.Any])
       
@@ -1271,7 +1274,8 @@ object Chai {
       __obj.asInstanceOf[PromisedNested]
     }
     
-    extension [Self <: PromisedNested](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PromisedNested] (val x: Self) extends AnyVal {
       
       inline def setInclude(value: PromisedInclude): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
       
@@ -1356,7 +1360,8 @@ object Chai {
       __obj.asInstanceOf[PromisedOrdered]
     }
     
-    extension [Self <: PromisedOrdered](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PromisedOrdered] (val x: Self) extends AnyVal {
       
       inline def setMembers(value: (/* set */ js.Array[Any], /* message */ js.UndefOr[String]) => PromisedAssertion): Self = StObject.set(x, "members", js.Any.fromFunction2(value))
     }

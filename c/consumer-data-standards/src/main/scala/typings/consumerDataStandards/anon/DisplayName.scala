@@ -31,7 +31,8 @@ object DisplayName {
     __obj.asInstanceOf[DisplayName]
   }
   
-  extension [Self <: DisplayName](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisplayName] (val x: Self) extends AnyVal {
     
     inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     

@@ -180,7 +180,8 @@ object mod {
       __obj.asInstanceOf[ApplyData]
     }
     
-    extension [Self <: ApplyData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ApplyData] (val x: Self) extends AnyVal {
       
       inline def setArgs(value: js.Array[Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
@@ -309,7 +310,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setDetails(value: Boolean | js.Array[String]): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
       

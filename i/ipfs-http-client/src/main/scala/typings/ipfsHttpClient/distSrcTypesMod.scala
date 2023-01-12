@@ -34,7 +34,8 @@ object distSrcTypesMod {
       __obj.asInstanceOf[EndpointConfig]
     }
     
-    extension [Self <: EndpointConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EndpointConfig] (val x: Self) extends AnyVal {
       
       inline def `setApi-path`(value: String): Self = StObject.set(x, "api-path", value.asInstanceOf[js.Any])
       
@@ -61,7 +62,8 @@ object distSrcTypesMod {
       __obj.asInstanceOf[HTTPClientExtraOptions]
     }
     
-    extension [Self <: HTTPClientExtraOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HTTPClientExtraOptions] (val x: Self) extends AnyVal {
       
       inline def setHeaders(value: Record[String, String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
@@ -148,7 +150,8 @@ object distSrcTypesMod {
       __obj.asInstanceOf[IPLDOptions]
     }
     
-    extension [Self <: IPLDOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPLDOptions] (val x: Self) extends AnyVal {
       
       inline def setBases(
         value: js.Array[
@@ -248,7 +251,8 @@ object distSrcTypesMod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setAgent(value: Agent | typings.node.httpsMod.Agent): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
       

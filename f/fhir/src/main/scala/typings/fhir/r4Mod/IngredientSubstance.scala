@@ -25,7 +25,8 @@ object IngredientSubstance {
     __obj.asInstanceOf[IngredientSubstance]
   }
   
-  extension [Self <: IngredientSubstance](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IngredientSubstance] (val x: Self) extends AnyVal {
     
     inline def setCode(value: CodeableReference): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     

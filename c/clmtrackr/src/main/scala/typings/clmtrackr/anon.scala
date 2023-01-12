@@ -18,7 +18,8 @@ object anon {
       __obj.asInstanceOf[UseWebWorkers]
     }
     
-    extension [Self <: UseWebWorkers](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UseWebWorkers] (val x: Self) extends AnyVal {
       
       inline def setUseWebWorkers(value: Boolean): Self = StObject.set(x, "useWebWorkers", value.asInstanceOf[js.Any])
       

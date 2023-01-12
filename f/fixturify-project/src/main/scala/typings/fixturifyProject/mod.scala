@@ -334,7 +334,8 @@ object mod {
       __obj.asInstanceOf[ProjectArgs]
     }
     
-    extension [Self <: ProjectArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProjectArgs] (val x: Self) extends AnyVal {
       
       inline def setFiles(value: DirJSON): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
       
@@ -369,7 +370,8 @@ object mod {
       __obj.asInstanceOf[ReadDirOpts]
     }
     
-    extension [Self <: ReadDirOpts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadDirOpts] (val x: Self) extends AnyVal {
       
       inline def setLinkDeps(value: Boolean): Self = StObject.set(x, "linkDeps", value.asInstanceOf[js.Any])
       

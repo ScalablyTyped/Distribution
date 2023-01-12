@@ -26,7 +26,8 @@ object middlewareReduxMod {
       __obj.asInstanceOf[Action]
     }
     
-    extension [Self <: Action](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Action] (val x: Self) extends AnyVal {
       
       inline def setType(value: Any): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
@@ -43,7 +44,8 @@ object middlewareReduxMod {
       __obj.asInstanceOf[ReduxState[A]]
     }
     
-    extension [Self <: ReduxState[?], A](x: Self & ReduxState[A]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReduxState[?], A] (val x: Self & ReduxState[A]) extends AnyVal {
       
       inline def setDispatch(value: /* a */ A => A): Self = StObject.set(x, "dispatch", js.Any.fromFunction1(value))
     }
@@ -73,7 +75,8 @@ object middlewareReduxMod {
       __obj.asInstanceOf[StoreRedux[A]]
     }
     
-    extension [Self <: StoreRedux[?], A](x: Self & StoreRedux[A]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StoreRedux[?], A] (val x: Self & StoreRedux[A]) extends AnyVal {
       
       inline def setDispatch(value: A => A): Self = StObject.set(x, "dispatch", js.Any.fromFunction1(value))
       
@@ -101,7 +104,8 @@ object middlewareReduxMod {
         __obj.asInstanceOf[StoreMutators[S, A]]
       }
       
-      extension [Self <: StoreMutators[?, ?], S, A](x: Self & (StoreMutators[S, A])) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: StoreMutators[?, ?], S, A] (val x: Self & (StoreMutators[S, A])) extends AnyVal {
         
         inline def setZustandSlashredux(value: WithRedux[S, A]): Self = StObject.set(x, "zustand/redux", value.asInstanceOf[js.Any])
       }

@@ -19,7 +19,8 @@ object LangModule {
     __obj.asInstanceOf[LangModule]
   }
   
-  extension [Self <: LangModule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LangModule] (val x: Self) extends AnyVal {
     
     inline def setLang(value: String): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object GetAccountBalanceResponse {
     __obj.asInstanceOf[GetAccountBalanceResponse]
   }
   
-  extension [Self <: GetAccountBalanceResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetAccountBalanceResponse] (val x: Self) extends AnyVal {
     
     inline def setAvailableBalance(value: CurrencyAmount): Self = StObject.set(x, "AvailableBalance", value.asInstanceOf[js.Any])
     

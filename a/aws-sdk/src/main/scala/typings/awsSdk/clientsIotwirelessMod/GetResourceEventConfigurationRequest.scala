@@ -28,7 +28,8 @@ object GetResourceEventConfigurationRequest {
     __obj.asInstanceOf[GetResourceEventConfigurationRequest]
   }
   
-  extension [Self <: GetResourceEventConfigurationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetResourceEventConfigurationRequest] (val x: Self) extends AnyVal {
     
     inline def setIdentifier(value: Identifier): Self = StObject.set(x, "Identifier", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object GeoFenceID {
     __obj.asInstanceOf[GeoFenceID]
   }
   
-  extension [Self <: GeoFenceID](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GeoFenceID] (val x: Self) extends AnyVal {
     
     inline def setGeoFenceID(value: String): Self = StObject.set(x, "geoFenceID", value.asInstanceOf[js.Any])
   }

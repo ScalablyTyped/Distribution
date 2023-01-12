@@ -34,7 +34,8 @@ object babylonjsCamerasArcRotateCameraInputsManagerAugmentingMod {
       __obj.asInstanceOf[typings.babylonjs.mod.babylonjsCamerasArcRotateCameraInputsManagerAugmentingMod.ArcRotateCameraInputsManager]
     }
     
-    extension [Self <: typings.babylonjs.mod.babylonjsCamerasArcRotateCameraInputsManagerAugmentingMod.ArcRotateCameraInputsManager](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.babylonjs.mod.babylonjsCamerasArcRotateCameraInputsManagerAugmentingMod.ArcRotateCameraInputsManager] (val x: Self) extends AnyVal {
       
       inline def setAddGamepad(
         value: () => typings.babylonjs.gamepadsGamepadSceneComponentMod.babylonjsCamerasArcRotateCameraInputsManagerAugmentingMod.ArcRotateCameraInputsManager

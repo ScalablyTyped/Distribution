@@ -26,7 +26,8 @@ object ContinentRecord {
     __obj.asInstanceOf[ContinentRecord]
   }
   
-  extension [Self <: ContinentRecord](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContinentRecord] (val x: Self) extends AnyVal {
     
     inline def setCode(value: AF | AN | AS | EU | NA | OC | SA): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     

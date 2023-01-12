@@ -44,7 +44,8 @@ object mod {
       __obj.asInstanceOf[ResizeImgOptions]
     }
     
-    extension [Self <: ResizeImgOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResizeImgOptions] (val x: Self) extends AnyVal {
       
       inline def setFormat(value: Formats): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       

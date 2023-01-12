@@ -22,7 +22,8 @@ object PayloadTransportInfo {
     __obj.asInstanceOf[PayloadTransportInfo]
   }
   
-  extension [Self <: PayloadTransportInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PayloadTransportInfo] (val x: Self) extends AnyVal {
     
     inline def setPayload(value: TransportInfo): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     

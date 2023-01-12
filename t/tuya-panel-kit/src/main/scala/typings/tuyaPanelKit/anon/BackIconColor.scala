@@ -57,7 +57,8 @@ object BackIconColor {
     __obj.asInstanceOf[BackIconColor]
   }
   
-  extension [Self <: BackIconColor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BackIconColor] (val x: Self) extends AnyVal {
     
     inline def setBackIconColor(value: String): Self = StObject.set(x, "backIconColor", value.asInstanceOf[js.Any])
     

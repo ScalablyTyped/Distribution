@@ -28,7 +28,8 @@ object CrosshairTextCfg {
     __obj.asInstanceOf[CrosshairTextCfg]
   }
   
-  extension [Self <: CrosshairTextCfg](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CrosshairTextCfg] (val x: Self) extends AnyVal {
     
     inline def setAutoRotate(value: Boolean): Self = StObject.set(x, "autoRotate", value.asInstanceOf[js.Any])
     

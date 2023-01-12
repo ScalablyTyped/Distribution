@@ -23,7 +23,8 @@ object TempThumbPath {
     __obj.asInstanceOf[TempThumbPath]
   }
   
-  extension [Self <: TempThumbPath](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TempThumbPath] (val x: Self) extends AnyVal {
     
     inline def setTempThumbPath(value: String): Self = StObject.set(x, "tempThumbPath", value.asInstanceOf[js.Any])
     

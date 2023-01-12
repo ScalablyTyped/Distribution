@@ -37,7 +37,8 @@ object TableColumnSeparator {
     __obj.asInstanceOf[TableColumnSeparator]
   }
   
-  extension [Self <: TableColumnSeparator](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TableColumnSeparator] (val x: Self) extends AnyVal {
     
     inline def setIsVisible(value: Boolean): Self = StObject.set(x, "IsVisible", value.asInstanceOf[js.Any])
     

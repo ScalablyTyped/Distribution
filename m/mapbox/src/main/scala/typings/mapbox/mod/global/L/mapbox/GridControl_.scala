@@ -28,7 +28,8 @@ object GridControl_ {
     __obj.asInstanceOf[GridControl_]
   }
   
-  extension [Self <: GridControl_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GridControl_] (val x: Self) extends AnyVal {
     
     inline def setHide(value: () => Any): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
     

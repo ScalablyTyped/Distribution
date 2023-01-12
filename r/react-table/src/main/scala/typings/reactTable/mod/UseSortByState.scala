@@ -15,7 +15,8 @@ object UseSortByState {
     __obj.asInstanceOf[UseSortByState[D]]
   }
   
-  extension [Self <: UseSortByState[?], D /* <: js.Object */](x: Self & UseSortByState[D]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UseSortByState[?], D /* <: js.Object */] (val x: Self & UseSortByState[D]) extends AnyVal {
     
     inline def setSortBy(value: js.Array[SortingRule[D]]): Self = StObject.set(x, "sortBy", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object ResolveNodeResponse {
     __obj.asInstanceOf[ResolveNodeResponse]
   }
   
-  extension [Self <: ResolveNodeResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResolveNodeResponse] (val x: Self) extends AnyVal {
     
     inline def setObject(value: RemoteObject): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
   }

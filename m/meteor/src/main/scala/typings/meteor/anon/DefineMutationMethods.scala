@@ -37,7 +37,8 @@ object DefineMutationMethods {
     __obj.asInstanceOf[DefineMutationMethods[T, U]]
   }
   
-  extension [Self <: DefineMutationMethods[?, ?], T /* <: Document */, U](x: Self & (DefineMutationMethods[T, U])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DefineMutationMethods[?, ?], T /* <: Document */, U] (val x: Self & (DefineMutationMethods[T, U])) extends AnyVal {
     
     inline def setConnection(value: js.Object): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
     

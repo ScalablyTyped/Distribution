@@ -64,7 +64,8 @@ object CardanoSignTxInit {
     __obj.asInstanceOf[CardanoSignTxInit]
   }
   
-  extension [Self <: CardanoSignTxInit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CardanoSignTxInit] (val x: Self) extends AnyVal {
     
     inline def setCertificates_count(value: Double): Self = StObject.set(x, "certificates_count", value.asInstanceOf[js.Any])
     

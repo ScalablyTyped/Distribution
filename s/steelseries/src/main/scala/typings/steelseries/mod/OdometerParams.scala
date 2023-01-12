@@ -36,7 +36,8 @@ object OdometerParams {
     __obj.asInstanceOf[OdometerParams]
   }
   
-  extension [Self <: OdometerParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OdometerParams] (val x: Self) extends AnyVal {
     
     inline def setDecimalBackColor(value: String): Self = StObject.set(x, "decimalBackColor", value.asInstanceOf[js.Any])
     

@@ -62,7 +62,8 @@ object FieldSchemaInForm {
     __obj.asInstanceOf[FieldSchemaInForm]
   }
   
-  extension [Self <: FieldSchemaInForm](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FieldSchemaInForm] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     

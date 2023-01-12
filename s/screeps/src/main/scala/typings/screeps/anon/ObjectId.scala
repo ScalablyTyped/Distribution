@@ -27,7 +27,8 @@ object ObjectId {
     __obj.asInstanceOf[ObjectId]
   }
   
-  extension [Self <: ObjectId](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ObjectId] (val x: Self) extends AnyVal {
     
     inline def setData(
       value: /* import warning: importer.ImportType#apply Failed type conversion: screeps.EventData[screeps.EVENT_ATTACK_CONTROLLER] */ js.Any

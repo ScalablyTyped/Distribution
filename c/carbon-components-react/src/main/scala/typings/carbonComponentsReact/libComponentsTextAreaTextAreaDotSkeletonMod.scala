@@ -27,7 +27,8 @@ object libComponentsTextAreaTextAreaDotSkeletonMod extends Shortcut {
       __obj.asInstanceOf[TextAreaSkeletonProps]
     }
     
-    extension [Self <: TextAreaSkeletonProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TextAreaSkeletonProps] (val x: Self) extends AnyVal {
       
       inline def setHideLabel(value: Boolean): Self = StObject.set(x, "hideLabel", value.asInstanceOf[js.Any])
       

@@ -16,7 +16,8 @@ object ShareControl_ {
     __obj.asInstanceOf[ShareControl_]
   }
   
-  extension [Self <: ShareControl_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShareControl_] (val x: Self) extends AnyVal {
     
     inline def setOnAdd(value: Map_ => Any): Self = StObject.set(x, "onAdd", js.Any.fromFunction1(value))
   }

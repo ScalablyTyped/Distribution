@@ -44,7 +44,8 @@ object libComponentsBreadcrumbBreadcrumbDottypesMod {
       __obj.asInstanceOf[IBreadcrumb]
     }
     
-    extension [Self <: IBreadcrumb](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IBreadcrumb] (val x: Self) extends AnyVal {
       
       inline def setFocus(value: () => Unit): Self = StObject.set(x, "focus", js.Any.fromFunction0(value))
     }
@@ -69,7 +70,8 @@ object libComponentsBreadcrumbBreadcrumbDottypesMod {
       __obj.asInstanceOf[IBreadcrumbData]
     }
     
-    extension [Self <: IBreadcrumbData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IBreadcrumbData] (val x: Self) extends AnyVal {
       
       inline def setProps(value: IBreadcrumbProps): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
       
@@ -148,7 +150,8 @@ object libComponentsBreadcrumbBreadcrumbDottypesMod {
       __obj.asInstanceOf[IBreadcrumbItem]
     }
     
-    extension [Self <: IBreadcrumbItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IBreadcrumbItem] (val x: Self) extends AnyVal {
       
       inline def setAs(value: h1 | h2 | h3 | h4 | h5 | h6 | a): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
@@ -278,7 +281,8 @@ object libComponentsBreadcrumbBreadcrumbDottypesMod {
       __obj.asInstanceOf[IBreadcrumbProps]
     }
     
-    extension [Self <: IBreadcrumbProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IBreadcrumbProps] (val x: Self) extends AnyVal {
       
       inline def setAriaLabel(value: String): Self = StObject.set(x, "ariaLabel", value.asInstanceOf[js.Any])
       
@@ -373,7 +377,8 @@ object libComponentsBreadcrumbBreadcrumbDottypesMod {
       __obj.asInstanceOf[IBreadcrumbStyleProps]
     }
     
-    extension [Self <: IBreadcrumbStyleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IBreadcrumbStyleProps] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -408,7 +413,8 @@ object libComponentsBreadcrumbBreadcrumbDottypesMod {
       __obj.asInstanceOf[IBreadcrumbStyles]
     }
     
-    extension [Self <: IBreadcrumbStyles](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IBreadcrumbStyles] (val x: Self) extends AnyVal {
       
       inline def setChevron(value: IStyle): Self = StObject.set(x, "chevron", value.asInstanceOf[js.Any])
       
@@ -477,7 +483,8 @@ object libComponentsBreadcrumbBreadcrumbDottypesMod {
       __obj.asInstanceOf[IDividerAsProps]
     }
     
-    extension [Self <: IDividerAsProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDividerAsProps] (val x: Self) extends AnyVal {
       
       inline def setItem(value: IBreadcrumbItem): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
       

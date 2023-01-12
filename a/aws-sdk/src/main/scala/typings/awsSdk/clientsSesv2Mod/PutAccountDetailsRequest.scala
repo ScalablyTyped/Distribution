@@ -43,7 +43,8 @@ object PutAccountDetailsRequest {
     __obj.asInstanceOf[PutAccountDetailsRequest]
   }
   
-  extension [Self <: PutAccountDetailsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutAccountDetailsRequest] (val x: Self) extends AnyVal {
     
     inline def setAdditionalContactEmailAddresses(value: AdditionalContactEmailAddresses): Self = StObject.set(x, "AdditionalContactEmailAddresses", value.asInstanceOf[js.Any])
     

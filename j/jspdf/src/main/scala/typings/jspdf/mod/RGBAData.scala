@@ -19,7 +19,8 @@ object RGBAData {
     __obj.asInstanceOf[RGBAData]
   }
   
-  extension [Self <: RGBAData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RGBAData] (val x: Self) extends AnyVal {
     
     inline def setData(value: js.typedarray.Uint8ClampedArray): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

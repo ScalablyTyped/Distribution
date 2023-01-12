@@ -33,7 +33,8 @@ object DateTimeTypeDeclarationScalarsAnnotations {
     __obj.asInstanceOf[DateTimeTypeDeclarationScalarsAnnotations]
   }
   
-  extension [Self <: DateTimeTypeDeclarationScalarsAnnotations](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DateTimeTypeDeclarationScalarsAnnotations] (val x: Self) extends AnyVal {
     
     inline def setFormat(value: () => js.Array[AnnotationRef]): Self = StObject.set(x, "format", js.Any.fromFunction0(value))
   }

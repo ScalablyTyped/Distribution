@@ -19,7 +19,8 @@ object ReturnTypeResolveAnimationResponse {
     __obj.asInstanceOf[ReturnTypeResolveAnimationResponse]
   }
   
-  extension [Self <: ReturnTypeResolveAnimationResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReturnTypeResolveAnimationResponse] (val x: Self) extends AnyVal {
     
     inline def setParamsType(value: js.Array[ResolveAnimationRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     

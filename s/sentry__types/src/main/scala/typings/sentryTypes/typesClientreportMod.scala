@@ -20,7 +20,8 @@ object typesClientreportMod {
       __obj.asInstanceOf[ClientReport]
     }
     
-    extension [Self <: ClientReport](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClientReport] (val x: Self) extends AnyVal {
       
       inline def setDiscarded_events(value: js.Array[Outcome]): Self = StObject.set(x, "discarded_events", value.asInstanceOf[js.Any])
       
@@ -69,7 +70,8 @@ object typesClientreportMod {
       __obj.asInstanceOf[Outcome]
     }
     
-    extension [Self <: Outcome](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Outcome] (val x: Self) extends AnyVal {
       
       inline def setCategory(value: DataCategory): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
       

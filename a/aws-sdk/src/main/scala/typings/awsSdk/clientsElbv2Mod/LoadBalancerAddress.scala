@@ -33,7 +33,8 @@ object LoadBalancerAddress {
     __obj.asInstanceOf[LoadBalancerAddress]
   }
   
-  extension [Self <: LoadBalancerAddress](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LoadBalancerAddress] (val x: Self) extends AnyVal {
     
     inline def setAllocationId(value: AllocationId): Self = StObject.set(x, "AllocationId", value.asInstanceOf[js.Any])
     

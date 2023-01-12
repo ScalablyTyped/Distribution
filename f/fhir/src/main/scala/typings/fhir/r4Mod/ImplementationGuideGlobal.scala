@@ -30,7 +30,8 @@ object ImplementationGuideGlobal {
     __obj.asInstanceOf[ImplementationGuideGlobal]
   }
   
-  extension [Self <: ImplementationGuideGlobal](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImplementationGuideGlobal] (val x: Self) extends AnyVal {
     
     inline def setProfile(value: String): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
     

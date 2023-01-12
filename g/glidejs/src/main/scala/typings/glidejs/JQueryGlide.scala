@@ -76,7 +76,8 @@ object JQueryGlide {
       __obj.asInstanceOf[IGlideApi]
     }
     
-    extension [Self <: IGlideApi](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IGlideApi] (val x: Self) extends AnyVal {
       
       inline def setArrows(value: String => Unit): Self = StObject.set(x, "arrows", js.Any.fromFunction1(value))
       
@@ -252,7 +253,8 @@ object JQueryGlide {
       __obj.asInstanceOf[IGlideOptions]
     }
     
-    extension [Self <: IGlideOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IGlideOptions] (val x: Self) extends AnyVal {
       
       inline def setAfterInit(value: js.Function): Self = StObject.set(x, "afterInit", value.asInstanceOf[js.Any])
       

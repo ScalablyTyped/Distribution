@@ -19,7 +19,8 @@ object ProjectsResource {
     __obj.asInstanceOf[ProjectsResource]
   }
   
-  extension [Self <: ProjectsResource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProjectsResource] (val x: Self) extends AnyVal {
     
     inline def setAggregated(value: AggregatedResource): Self = StObject.set(x, "aggregated", value.asInstanceOf[js.Any])
     

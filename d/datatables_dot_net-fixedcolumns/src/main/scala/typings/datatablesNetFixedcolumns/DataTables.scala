@@ -27,7 +27,8 @@ object DataTables {
       __obj.asInstanceOf[Api]
     }
     
-    extension [Self <: Api](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Api] (val x: Self) extends AnyVal {
       
       inline def setFixedColumns(value: () => FixedColumnsMethods): Self = StObject.set(x, "fixedColumns", js.Any.fromFunction0(value))
     }
@@ -48,7 +49,8 @@ object DataTables {
       __obj.asInstanceOf[CellMethods]
     }
     
-    extension [Self <: CellMethods](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CellMethods] (val x: Self) extends AnyVal {
       
       inline def setFixedNode(value: () => Node): Self = StObject.set(x, "fixedNode", js.Any.fromFunction0(value))
     }
@@ -70,7 +72,8 @@ object DataTables {
       __obj.asInstanceOf[CellsMethods]
     }
     
-    extension [Self <: CellsMethods](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CellsMethods] (val x: Self) extends AnyVal {
       
       inline def setFixedNodes(value: () => Api): Self = StObject.set(x, "fixedNodes", js.Any.fromFunction0(value))
     }
@@ -142,7 +145,8 @@ object DataTables {
       __obj.asInstanceOf[FixedColumnsSettings]
     }
     
-    extension [Self <: FixedColumnsSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FixedColumnsSettings] (val x: Self) extends AnyVal {
       
       inline def setHeightMatch(value: none | semiauto | auto): Self = StObject.set(x, "heightMatch", value.asInstanceOf[js.Any])
       
@@ -173,7 +177,8 @@ object DataTables {
       __obj.asInstanceOf[RowsMethods]
     }
     
-    extension [Self <: RowsMethods](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RowsMethods] (val x: Self) extends AnyVal {
       
       inline def setRecalcHeight(value: () => Api): Self = StObject.set(x, "recalcHeight", js.Any.fromFunction0(value))
     }
@@ -194,7 +199,8 @@ object DataTables {
       __obj.asInstanceOf[Settings]
     }
     
-    extension [Self <: Settings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Settings] (val x: Self) extends AnyVal {
       
       inline def setFixedColumns(value: Boolean | FixedColumnsSettings): Self = StObject.set(x, "fixedColumns", value.asInstanceOf[js.Any])
       

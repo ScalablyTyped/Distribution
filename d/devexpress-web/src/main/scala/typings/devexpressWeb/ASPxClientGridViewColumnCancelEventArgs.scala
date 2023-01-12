@@ -23,7 +23,8 @@ object ASPxClientGridViewColumnCancelEventArgs {
     __obj.asInstanceOf[ASPxClientGridViewColumnCancelEventArgs]
   }
   
-  extension [Self <: ASPxClientGridViewColumnCancelEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientGridViewColumnCancelEventArgs] (val x: Self) extends AnyVal {
     
     inline def setColumn(value: ASPxClientGridViewColumn): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
   }

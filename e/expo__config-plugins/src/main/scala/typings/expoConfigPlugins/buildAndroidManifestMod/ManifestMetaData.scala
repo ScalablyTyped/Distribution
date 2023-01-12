@@ -16,7 +16,8 @@ object ManifestMetaData {
     __obj.asInstanceOf[ManifestMetaData]
   }
   
-  extension [Self <: ManifestMetaData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ManifestMetaData] (val x: Self) extends AnyVal {
     
     inline def set$(value: ManifestMetaDataAttributes): Self = StObject.set(x, "$", value.asInstanceOf[js.Any])
   }

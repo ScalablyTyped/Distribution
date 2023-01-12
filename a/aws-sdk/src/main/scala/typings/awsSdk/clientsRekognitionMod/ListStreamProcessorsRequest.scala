@@ -23,7 +23,8 @@ object ListStreamProcessorsRequest {
     __obj.asInstanceOf[ListStreamProcessorsRequest]
   }
   
-  extension [Self <: ListStreamProcessorsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListStreamProcessorsRequest] (val x: Self) extends AnyVal {
     
     inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     

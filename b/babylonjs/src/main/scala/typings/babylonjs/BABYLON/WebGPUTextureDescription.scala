@@ -24,7 +24,8 @@ object WebGPUTextureDescription {
     __obj.asInstanceOf[WebGPUTextureDescription]
   }
   
-  extension [Self <: WebGPUTextureDescription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebGPUTextureDescription] (val x: Self) extends AnyVal {
     
     inline def setAutoBindSampler(value: Boolean): Self = StObject.set(x, "autoBindSampler", value.asInstanceOf[js.Any])
     

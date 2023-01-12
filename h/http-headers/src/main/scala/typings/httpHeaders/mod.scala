@@ -78,7 +78,8 @@ object mod {
       __obj.asInstanceOf[HttpVersion]
     }
     
-    extension [Self <: HttpVersion](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HttpVersion] (val x: Self) extends AnyVal {
       
       inline def setMajor(value: Double): Self = StObject.set(x, "major", value.asInstanceOf[js.Any])
       
@@ -103,7 +104,8 @@ object mod {
       __obj.asInstanceOf[RequestData]
     }
     
-    extension [Self <: RequestData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequestData] (val x: Self) extends AnyVal {
       
       inline def setHeaders(value: Headers): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
@@ -132,7 +134,8 @@ object mod {
       __obj.asInstanceOf[ResponseData]
     }
     
-    extension [Self <: ResponseData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResponseData] (val x: Self) extends AnyVal {
       
       inline def setHeaders(value: Headers): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       

@@ -20,7 +20,8 @@ object GridExcelExportEvent {
     __obj.asInstanceOf[GridExcelExportEvent]
   }
   
-  extension [Self <: GridExcelExportEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GridExcelExportEvent] (val x: Self) extends AnyVal {
     
     inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

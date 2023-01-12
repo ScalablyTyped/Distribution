@@ -33,7 +33,8 @@ object GPUCompilationMessage {
     __obj.asInstanceOf[GPUCompilationMessage]
   }
   
-  extension [Self <: GPUCompilationMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GPUCompilationMessage] (val x: Self) extends AnyVal {
     
     inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     

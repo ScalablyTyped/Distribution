@@ -112,7 +112,8 @@ object InputApi {
     __obj.asInstanceOf[InputApi]
   }
   
-  extension [Self <: InputApi](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InputApi] (val x: Self) extends AnyVal {
     
     inline def setDispatchDragEvent(value: DispatchDragEventRequest => js.Promise[Unit]): Self = StObject.set(x, "dispatchDragEvent", js.Any.fromFunction1(value))
     

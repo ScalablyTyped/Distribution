@@ -23,7 +23,8 @@ object TimeInNanos {
     __obj.asInstanceOf[TimeInNanos]
   }
   
-  extension [Self <: TimeInNanos](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimeInNanos] (val x: Self) extends AnyVal {
     
     inline def setOffsetInNanos(value: OffsetInNanos): Self = StObject.set(x, "offsetInNanos", value.asInstanceOf[js.Any])
     

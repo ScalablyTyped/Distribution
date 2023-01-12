@@ -20,7 +20,8 @@ object sharedPayerIdentificationMod {
       __obj.asInstanceOf[Identification]
     }
     
-    extension [Self <: Identification](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Identification] (val x: Self) extends AnyVal {
       
       inline def setNumber(value: String): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
       

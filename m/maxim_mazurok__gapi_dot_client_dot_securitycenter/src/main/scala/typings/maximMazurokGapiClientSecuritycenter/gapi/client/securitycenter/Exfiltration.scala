@@ -19,7 +19,8 @@ object Exfiltration {
     __obj.asInstanceOf[Exfiltration]
   }
   
-  extension [Self <: Exfiltration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Exfiltration] (val x: Self) extends AnyVal {
     
     inline def setSources(value: js.Array[ExfilResource]): Self = StObject.set(x, "sources", value.asInstanceOf[js.Any])
     

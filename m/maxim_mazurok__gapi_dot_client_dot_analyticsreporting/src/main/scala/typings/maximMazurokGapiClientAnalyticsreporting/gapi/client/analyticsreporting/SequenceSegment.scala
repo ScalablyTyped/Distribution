@@ -19,7 +19,8 @@ object SequenceSegment {
     __obj.asInstanceOf[SequenceSegment]
   }
   
-  extension [Self <: SequenceSegment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SequenceSegment] (val x: Self) extends AnyVal {
     
     inline def setFirstStepShouldMatchFirstHit(value: Boolean): Self = StObject.set(x, "firstStepShouldMatchFirstHit", value.asInstanceOf[js.Any])
     

@@ -131,7 +131,8 @@ object Core {
     __obj.asInstanceOf[Core]
   }
   
-  extension [Self <: Core](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Core] (val x: Self) extends AnyVal {
     
     inline def setGetFrameMediaDevices(value: Number => js.Promise[js.Array[Any]]): Self = StObject.set(x, "getFrameMediaDevices", js.Any.fromFunction1(value))
     

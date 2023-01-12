@@ -22,7 +22,8 @@ object ClientGetNameFromUid {
     __obj.asInstanceOf[ClientGetNameFromUid]
   }
   
-  extension [Self <: ClientGetNameFromUid](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClientGetNameFromUid] (val x: Self) extends AnyVal {
     
     inline def setCldbid(value: String): Self = StObject.set(x, "cldbid", value.asInstanceOf[js.Any])
     

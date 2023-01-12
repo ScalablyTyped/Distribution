@@ -174,7 +174,8 @@ object tweenMod {
       __obj.asInstanceOf[Tween[T]]
     }
     
-    extension [Self <: Tween[?], T /* <: js.Object */](x: Self & Tween[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Tween[?], T /* <: js.Object */] (val x: Self & Tween[T]) extends AnyVal {
       
       inline def setEaseIn(value: (Partial[T], Double) => js.Promise[Unit]): Self = StObject.set(x, "easeIn", js.Any.fromFunction2(value))
       

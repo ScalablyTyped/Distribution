@@ -38,7 +38,8 @@ object mod {
       __obj.asInstanceOf[RequestData]
     }
     
-    extension [Self <: RequestData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequestData] (val x: Self) extends AnyVal {
       
       inline def setReq(value: Request): Self = StObject.set(x, "req", value.asInstanceOf[js.Any])
     }
@@ -61,7 +62,8 @@ object mod {
       __obj.asInstanceOf[RequestIdContextOptions]
     }
     
-    extension [Self <: RequestIdContextOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequestIdContextOptions] (val x: Self) extends AnyVal {
       
       inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
       
@@ -106,7 +108,8 @@ object mod {
       __obj.asInstanceOf[RequestLoggerOptions]
     }
     
-    extension [Self <: RequestLoggerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequestLoggerOptions] (val x: Self) extends AnyVal {
       
       inline def setDurationField(value: String): Self = StObject.set(x, "durationField", value.asInstanceOf[js.Any])
       
@@ -157,7 +160,8 @@ object mod {
       __obj.asInstanceOf[ResponseData]
     }
     
-    extension [Self <: ResponseData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResponseData] (val x: Self) extends AnyVal {
       
       inline def setReq(value: Request): Self = StObject.set(x, "req", value.asInstanceOf[js.Any])
       
@@ -178,7 +182,8 @@ object mod {
       __obj.asInstanceOf[TimeContextOptions]
     }
     
-    extension [Self <: TimeContextOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TimeContextOptions] (val x: Self) extends AnyVal {
       
       inline def setLogLevel(value: String): Self = StObject.set(x, "logLevel", value.asInstanceOf[js.Any])
       
@@ -205,7 +210,8 @@ object mod {
         __obj.asInstanceOf[BaseContext]
       }
       
-      extension [Self <: BaseContext](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: BaseContext] (val x: Self) extends AnyVal {
         
         inline def setLog(value: typings.bunyan.mod.^): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
       }

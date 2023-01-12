@@ -17,7 +17,8 @@ object ActiveDocument {
     __obj.asInstanceOf[ActiveDocument]
   }
   
-  extension [Self <: ActiveDocument](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ActiveDocument] (val x: Self) extends AnyVal {
     
     inline def setActiveDocument(value: Boolean): Self = StObject.set(x, "ActiveDocument", value.asInstanceOf[js.Any])
     

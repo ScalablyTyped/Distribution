@@ -51,7 +51,8 @@ object ChangeList {
     __obj.asInstanceOf[ChangeList[T]]
   }
   
-  extension [Self <: ChangeList[?], T](x: Self & ChangeList[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChangeList[?], T] (val x: Self & ChangeList[T]) extends AnyVal {
     
     inline def setAllChangesIncluded(value: Boolean): Self = StObject.set(x, "allChangesIncluded", value.asInstanceOf[js.Any])
     

@@ -52,7 +52,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setOrder(value: Double): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
       
@@ -130,7 +131,8 @@ object mod {
       __obj.asInstanceOf[Result]
     }
     
-    extension [Self <: Result](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Result] (val x: Self) extends AnyVal {
       
       inline def setEquation(value: js.Array[Double]): Self = StObject.set(x, "equation", value.asInstanceOf[js.Any])
       

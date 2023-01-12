@@ -18,7 +18,8 @@ object GetAccessTokenResponse {
     __obj.asInstanceOf[GetAccessTokenResponse]
   }
   
-  extension [Self <: GetAccessTokenResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetAccessTokenResponse] (val x: Self) extends AnyVal {
     
     inline def setAccessToken(value: TokenString): Self = StObject.set(x, "AccessToken", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object DescribeLoggingOptionsResponse {
     __obj.asInstanceOf[DescribeLoggingOptionsResponse]
   }
   
-  extension [Self <: DescribeLoggingOptionsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeLoggingOptionsResponse] (val x: Self) extends AnyVal {
     
     inline def setLoggingOptions(value: LoggingOptions): Self = StObject.set(x, "loggingOptions", value.asInstanceOf[js.Any])
     

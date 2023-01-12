@@ -38,7 +38,8 @@ object distSrcMysqlDotpubMod {
       __obj.asInstanceOf[IMysqlData]
     }
     
-    extension [Self <: IMysqlData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IMysqlData] (val x: Self) extends AnyVal {
       
       inline def setCallbackArgs(value: IArguments): Self = StObject.set(x, "callbackArgs", value.asInstanceOf[js.Any])
       

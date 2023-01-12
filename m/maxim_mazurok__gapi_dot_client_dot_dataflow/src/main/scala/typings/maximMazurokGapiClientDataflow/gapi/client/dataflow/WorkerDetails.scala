@@ -19,7 +19,8 @@ object WorkerDetails {
     __obj.asInstanceOf[WorkerDetails]
   }
   
-  extension [Self <: WorkerDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkerDetails] (val x: Self) extends AnyVal {
     
     inline def setWorkItems(value: js.Array[WorkItemDetails]): Self = StObject.set(x, "workItems", value.asInstanceOf[js.Any])
     

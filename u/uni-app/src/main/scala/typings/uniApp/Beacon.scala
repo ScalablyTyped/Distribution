@@ -43,7 +43,8 @@ object Beacon {
     __obj.asInstanceOf[Beacon]
   }
   
-  extension [Self <: Beacon](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Beacon] (val x: Self) extends AnyVal {
     
     inline def setAccuracy(value: Double): Self = StObject.set(x, "accuracy", value.asInstanceOf[js.Any])
     

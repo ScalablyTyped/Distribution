@@ -32,7 +32,8 @@ object TypeofglobalXpub {
     __obj.asInstanceOf[TypeofglobalXpub]
   }
   
-  extension [Self <: TypeofglobalXpub](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofglobalXpub] (val x: Self) extends AnyVal {
     
     inline def setCanAddToArray(value: (js.Array[GlobalXpub], GlobalXpub, Set[String]) => Boolean): Self = StObject.set(x, "canAddToArray", js.Any.fromFunction3(value))
     

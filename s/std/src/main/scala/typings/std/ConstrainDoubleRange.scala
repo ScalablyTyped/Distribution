@@ -21,7 +21,8 @@ object ConstrainDoubleRange {
     __obj.asInstanceOf[ConstrainDoubleRange]
   }
   
-  extension [Self <: ConstrainDoubleRange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConstrainDoubleRange] (val x: Self) extends AnyVal {
     
     inline def setExact(value: Double): Self = StObject.set(x, "exact", value.asInstanceOf[js.Any])
     

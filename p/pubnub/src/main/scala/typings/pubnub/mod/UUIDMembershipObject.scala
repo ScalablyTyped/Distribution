@@ -24,7 +24,8 @@ object UUIDMembershipObject {
     __obj.asInstanceOf[UUIDMembershipObject[MembershipCustom, UUIDCustom]]
   }
   
-  extension [Self <: UUIDMembershipObject[?, ?], MembershipCustom /* <: ObjectCustom */, UUIDCustom /* <: ObjectCustom */](x: Self & (UUIDMembershipObject[MembershipCustom, UUIDCustom])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UUIDMembershipObject[?, ?], MembershipCustom /* <: ObjectCustom */, UUIDCustom /* <: ObjectCustom */] (val x: Self & (UUIDMembershipObject[MembershipCustom, UUIDCustom])) extends AnyVal {
     
     inline def setCustom(value: MembershipCustom): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
     

@@ -33,7 +33,8 @@ object UserSearchCriteria {
     __obj.asInstanceOf[UserSearchCriteria]
   }
   
-  extension [Self <: UserSearchCriteria](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UserSearchCriteria] (val x: Self) extends AnyVal {
     
     inline def setAndConditions(value: UserSearchConditionList): Self = StObject.set(x, "AndConditions", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object GPUOrigin3DDict {
     __obj.asInstanceOf[GPUOrigin3DDict]
   }
   
-  extension [Self <: GPUOrigin3DDict](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GPUOrigin3DDict] (val x: Self) extends AnyVal {
     
     inline def setX(value: GPUIntegerCoordinate): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object AwsEc2NetworkInterfacePrivateIpAddressDetail {
     __obj.asInstanceOf[AwsEc2NetworkInterfacePrivateIpAddressDetail]
   }
   
-  extension [Self <: AwsEc2NetworkInterfacePrivateIpAddressDetail](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsEc2NetworkInterfacePrivateIpAddressDetail] (val x: Self) extends AnyVal {
     
     inline def setPrivateDnsName(value: NonEmptyString): Self = StObject.set(x, "PrivateDnsName", value.asInstanceOf[js.Any])
     

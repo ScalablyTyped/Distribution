@@ -18,7 +18,8 @@ object DescribeResizeMessage {
     __obj.asInstanceOf[DescribeResizeMessage]
   }
   
-  extension [Self <: DescribeResizeMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeResizeMessage] (val x: Self) extends AnyVal {
     
     inline def setClusterIdentifier(value: String): Self = StObject.set(x, "ClusterIdentifier", value.asInstanceOf[js.Any])
   }

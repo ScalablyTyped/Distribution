@@ -28,7 +28,8 @@ object anon {
       __obj.asInstanceOf[Existed]
     }
     
-    extension [Self <: Existed](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Existed] (val x: Self) extends AnyVal {
       
       inline def setExisted(value: Boolean): Self = StObject.set(x, "existed", value.asInstanceOf[js.Any])
       
@@ -49,7 +50,8 @@ object anon {
       __obj.asInstanceOf[HullPoints]
     }
     
-    extension [Self <: HullPoints](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HullPoints] (val x: Self) extends AnyVal {
       
       inline def setHullPoints(value: js.Array[IPoint]): Self = StObject.set(x, "hullPoints", value.asInstanceOf[js.Any])
       
@@ -90,7 +92,8 @@ object anon {
       __obj.asInstanceOf[ICaptionlayerstringundefi]
     }
     
-    extension [Self <: ICaptionlayerstringundefi](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICaptionlayerstringundefi] (val x: Self) extends AnyVal {
       
       inline def setAnchor(value: IPathLine): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
       
@@ -115,7 +118,8 @@ object anon {
       __obj.asInstanceOf[Left]
     }
     
-    extension [Self <: Left](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Left] (val x: Self) extends AnyVal {
       
       inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
       
@@ -140,7 +144,8 @@ object anon {
       __obj.asInstanceOf[Offset]
     }
     
-    extension [Self <: Offset](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Offset] (val x: Self) extends AnyVal {
       
       inline def setOffset(value: IPoint): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
       
@@ -159,7 +164,8 @@ object anon {
       __obj.asInstanceOf[Progress]
     }
     
-    extension [Self <: Progress](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Progress] (val x: Self) extends AnyVal {
       
       inline def setProgress(value: Double): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
       
@@ -180,7 +186,8 @@ object anon {
       __obj.asInstanceOf[ScaleConversion]
     }
     
-    extension [Self <: ScaleConversion](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScaleConversion] (val x: Self) extends AnyVal {
       
       inline def setScaleConversion(value: Double): Self = StObject.set(x, "scaleConversion", value.asInstanceOf[js.Any])
       

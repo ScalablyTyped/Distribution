@@ -31,7 +31,8 @@ object distTypesTypesBaseResponseMod {
       __obj.asInstanceOf[FetchResponse]
     }
     
-    extension [Self <: FetchResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FetchResponse] (val x: Self) extends AnyVal {
       
       inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       
@@ -79,7 +80,8 @@ object distTypesTypesBaseResponseMod {
       __obj.asInstanceOf[PutManyResponse]
     }
     
-    extension [Self <: PutManyResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PutManyResponse] (val x: Self) extends AnyVal {
       
       inline def setProcessed(value: Items): Self = StObject.set(x, "processed", value.asInstanceOf[js.Any])
     }

@@ -17,7 +17,8 @@ object Typeofmemory {
     __obj.asInstanceOf[Typeofmemory]
   }
   
-  extension [Self <: Typeofmemory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Typeofmemory] (val x: Self) extends AnyVal {
     
     inline def setGetInfo(value: js.Function1[/* info */ MemoryInfo, Unit] => Unit): Self = StObject.set(x, "getInfo", js.Any.fromFunction1(value))
   }

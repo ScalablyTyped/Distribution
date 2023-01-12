@@ -23,7 +23,8 @@ object ShTarget {
     __obj.asInstanceOf[ShTarget]
   }
   
-  extension [Self <: ShTarget](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShTarget] (val x: Self) extends AnyVal {
     
     inline def setSh(value: Worksheet): Self = StObject.set(x, "Sh", value.asInstanceOf[js.Any])
     

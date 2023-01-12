@@ -32,7 +32,8 @@ object UpdateManyModel {
     __obj.asInstanceOf[UpdateManyModel[TSchema]]
   }
   
-  extension [Self <: UpdateManyModel[?], TSchema /* <: Document */](x: Self & UpdateManyModel[TSchema]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateManyModel[?], TSchema /* <: Document */] (val x: Self & UpdateManyModel[TSchema]) extends AnyVal {
     
     inline def setArrayFilters(value: js.Array[Document]): Self = StObject.set(x, "arrayFilters", value.asInstanceOf[js.Any])
     

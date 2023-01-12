@@ -61,7 +61,8 @@ object valdr {
         __obj.asInstanceOf[ValdrMessage]
       }
       
-      extension [Self <: ValdrMessage](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ValdrMessage] (val x: Self) extends AnyVal {
         
         inline def setAddMessages(value: StringDictionary[String] => Unit): Self = StObject.set(x, "addMessages", js.Any.fromFunction1(value))
         
@@ -118,7 +119,8 @@ object valdr {
         __obj.asInstanceOf[ValdrMessageProvider]
       }
       
-      extension [Self <: ValdrMessageProvider](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ValdrMessageProvider] (val x: Self) extends AnyVal {
         
         inline def setAddMessages(value: StringDictionary[String] => Unit): Self = StObject.set(x, "addMessages", js.Any.fromFunction1(value))
         

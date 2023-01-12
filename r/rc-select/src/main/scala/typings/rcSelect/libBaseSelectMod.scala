@@ -140,7 +140,8 @@ object libBaseSelectMod {
       __obj.asInstanceOf[BaseSelectPrivateProps]
     }
     
-    extension [Self <: BaseSelectPrivateProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseSelectPrivateProps] (val x: Self) extends AnyVal {
       
       inline def setActiveDescendantId(value: String): Self = StObject.set(x, "activeDescendantId", value.asInstanceOf[js.Any])
       
@@ -309,7 +310,8 @@ object libBaseSelectMod {
       __obj.asInstanceOf[BaseSelectProps]
     }
     
-    extension [Self <: BaseSelectProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseSelectProps] (val x: Self) extends AnyVal {
       
       inline def setAllowClear(value: Boolean): Self = StObject.set(x, "allowClear", value.asInstanceOf[js.Any])
       
@@ -729,7 +731,8 @@ object libBaseSelectMod {
       __obj.asInstanceOf[BaseSelectPropsWithoutPrivate]
     }
     
-    extension [Self <: BaseSelectPropsWithoutPrivate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseSelectPropsWithoutPrivate] (val x: Self) extends AnyVal {
       
       inline def setAllowClear(value: Boolean): Self = StObject.set(x, "allowClear", value.asInstanceOf[js.Any])
       
@@ -1150,7 +1153,8 @@ object libBaseSelectMod {
       __obj.asInstanceOf[BaseSelectRef]
     }
     
-    extension [Self <: BaseSelectRef](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseSelectRef] (val x: Self) extends AnyVal {
       
       inline def setBlur(value: () => Unit): Self = StObject.set(x, "blur", js.Any.fromFunction0(value))
       
@@ -1196,7 +1200,8 @@ object libBaseSelectMod {
       __obj.asInstanceOf[DisplayValueType]
     }
     
-    extension [Self <: DisplayValueType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DisplayValueType] (val x: Self) extends AnyVal {
       
       inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
@@ -1273,7 +1278,8 @@ object libBaseSelectMod {
       __obj.asInstanceOf[RefOptionListProps]
     }
     
-    extension [Self <: RefOptionListProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RefOptionListProps] (val x: Self) extends AnyVal {
       
       inline def setOnKeyDown(value: KeyboardEvent[typings.std.Element] => Unit): Self = StObject.set(x, "onKeyDown", js.Any.fromFunction1(value))
       

@@ -15,7 +15,8 @@ object CardanoSignedTxChunk {
     __obj.asInstanceOf[CardanoSignedTxChunk]
   }
   
-  extension [Self <: CardanoSignedTxChunk](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CardanoSignedTxChunk] (val x: Self) extends AnyVal {
     
     inline def setSigned_tx_chunk(value: String): Self = StObject.set(x, "signed_tx_chunk", value.asInstanceOf[js.Any])
   }

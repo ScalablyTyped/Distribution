@@ -23,7 +23,8 @@ object FailoverConfig {
     __obj.asInstanceOf[FailoverConfig]
   }
   
-  extension [Self <: FailoverConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FailoverConfig] (val x: Self) extends AnyVal {
     
     inline def setPrimary(value: Primary): Self = StObject.set(x, "Primary", value.asInstanceOf[js.Any])
     

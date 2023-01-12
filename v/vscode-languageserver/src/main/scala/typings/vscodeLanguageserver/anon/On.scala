@@ -70,7 +70,8 @@ object On {
     __obj.asInstanceOf[On]
   }
   
-  extension [Self <: On](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: On] (val x: Self) extends AnyVal {
     
     inline def setOn(
       value: ServerRequestHandler[

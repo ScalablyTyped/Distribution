@@ -33,7 +33,8 @@ object SendWorkflowStepStateRequest {
     __obj.asInstanceOf[SendWorkflowStepStateRequest]
   }
   
-  extension [Self <: SendWorkflowStepStateRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SendWorkflowStepStateRequest] (val x: Self) extends AnyVal {
     
     inline def setExecutionId(value: ExecutionId): Self = StObject.set(x, "ExecutionId", value.asInstanceOf[js.Any])
     

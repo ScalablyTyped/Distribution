@@ -18,7 +18,8 @@ object RequiredMenuOffsetData {
     __obj.asInstanceOf[RequiredMenuOffsetData]
   }
   
-  extension [Self <: RequiredMenuOffsetData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RequiredMenuOffsetData] (val x: Self) extends AnyVal {
     
     inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
     

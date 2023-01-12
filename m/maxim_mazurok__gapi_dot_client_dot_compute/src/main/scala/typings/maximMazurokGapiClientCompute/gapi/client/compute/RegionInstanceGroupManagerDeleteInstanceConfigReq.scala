@@ -16,7 +16,8 @@ object RegionInstanceGroupManagerDeleteInstanceConfigReq {
     __obj.asInstanceOf[RegionInstanceGroupManagerDeleteInstanceConfigReq]
   }
   
-  extension [Self <: RegionInstanceGroupManagerDeleteInstanceConfigReq](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RegionInstanceGroupManagerDeleteInstanceConfigReq] (val x: Self) extends AnyVal {
     
     inline def setNames(value: js.Array[String]): Self = StObject.set(x, "names", value.asInstanceOf[js.Any])
     

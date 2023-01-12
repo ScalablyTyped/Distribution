@@ -20,7 +20,8 @@ object IDeleteKnowledgeBaseRequest {
     __obj.asInstanceOf[IDeleteKnowledgeBaseRequest]
   }
   
-  extension [Self <: IDeleteKnowledgeBaseRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IDeleteKnowledgeBaseRequest] (val x: Self) extends AnyVal {
     
     inline def setForce(value: Boolean): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
     

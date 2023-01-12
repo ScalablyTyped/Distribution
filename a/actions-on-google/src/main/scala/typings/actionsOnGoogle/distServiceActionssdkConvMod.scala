@@ -73,7 +73,8 @@ object distServiceActionssdkConvMod {
       __obj.asInstanceOf[ActionsSdkConversationOptions[TConvData, TUserStorage]]
     }
     
-    extension [Self <: ActionsSdkConversationOptions[?, ?], TConvData, TUserStorage](x: Self & (ActionsSdkConversationOptions[TConvData, TUserStorage])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ActionsSdkConversationOptions[?, ?], TConvData, TUserStorage] (val x: Self & (ActionsSdkConversationOptions[TConvData, TUserStorage])) extends AnyVal {
       
       inline def setBody(value: GoogleActionsV2AppRequest): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       

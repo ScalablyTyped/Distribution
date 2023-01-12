@@ -87,7 +87,8 @@ object ExtentProperties {
     __obj.asInstanceOf[ExtentProperties]
   }
   
-  extension [Self <: ExtentProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExtentProperties] (val x: Self) extends AnyVal {
     
     inline def setMmax(value: Double): Self = StObject.set(x, "mmax", value.asInstanceOf[js.Any])
     

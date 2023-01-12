@@ -138,7 +138,8 @@ object utilityChangeMod {
       __obj.asInstanceOf[Change]
     }
     
-    extension [Self <: Change](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Change] (val x: Self) extends AnyVal {
       
       inline def setApply(value: Host => js.Promise[Unit]): Self = StObject.set(x, "apply", js.Any.fromFunction1(value))
       
@@ -165,7 +166,8 @@ object utilityChangeMod {
       __obj.asInstanceOf[Host]
     }
     
-    extension [Self <: Host](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Host] (val x: Self) extends AnyVal {
       
       inline def setRead(value: String => js.Promise[String]): Self = StObject.set(x, "read", js.Any.fromFunction1(value))
       

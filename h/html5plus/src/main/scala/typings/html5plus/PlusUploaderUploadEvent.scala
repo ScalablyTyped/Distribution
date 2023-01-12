@@ -26,7 +26,8 @@ object PlusUploaderUploadEvent {
     __obj.asInstanceOf[PlusUploaderUploadEvent]
   }
   
-  extension [Self <: PlusUploaderUploadEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlusUploaderUploadEvent] (val x: Self) extends AnyVal {
     
     inline def setStatechanged(value: String): Self = StObject.set(x, "statechanged", value.asInstanceOf[js.Any])
     

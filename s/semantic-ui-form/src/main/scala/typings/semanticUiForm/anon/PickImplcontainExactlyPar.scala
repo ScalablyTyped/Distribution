@@ -69,7 +69,8 @@ object PickImplcontainExactlyPar {
     __obj.asInstanceOf[PickImplcontainExactlyPar]
   }
   
-  extension [Self <: PickImplcontainExactlyPar](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickImplcontainExactlyPar] (val x: Self) extends AnyVal {
     
     inline def setChecked(value: String): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
     

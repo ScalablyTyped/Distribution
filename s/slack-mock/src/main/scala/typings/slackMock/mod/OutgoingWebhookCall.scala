@@ -21,7 +21,8 @@ object OutgoingWebhookCall {
     __obj.asInstanceOf[OutgoingWebhookCall[T]]
   }
   
-  extension [Self <: OutgoingWebhookCall[?], T](x: Self & OutgoingWebhookCall[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OutgoingWebhookCall[?], T] (val x: Self & OutgoingWebhookCall[T]) extends AnyVal {
     
     inline def setHeaders(value: OutgoingWebhookHttpHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     

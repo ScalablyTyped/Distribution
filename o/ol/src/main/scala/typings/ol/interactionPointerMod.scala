@@ -42,7 +42,8 @@ object interactionPointerMod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setHandleDownEvent(value: /* p0 */ typings.ol.mapBrowserEventMod.default[UIEvent] => Boolean): Self = StObject.set(x, "handleDownEvent", js.Any.fromFunction1(value))
       

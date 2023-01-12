@@ -33,7 +33,8 @@ object GetCardinalityRequest {
     __obj.asInstanceOf[GetCardinalityRequest]
   }
   
-  extension [Self <: GetCardinalityRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetCardinalityRequest] (val x: Self) extends AnyVal {
     
     inline def setAggregationField(value: AggregationField): Self = StObject.set(x, "aggregationField", value.asInstanceOf[js.Any])
     

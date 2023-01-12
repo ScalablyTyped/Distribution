@@ -37,7 +37,8 @@ object namespacesCommandsMod {
         __obj.asInstanceOf[Command]
       }
       
-      extension [Self <: Command](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Command] (val x: Self) extends AnyVal {
         
         inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
         
@@ -96,7 +97,8 @@ object namespacesCommandsMod {
         __obj.asInstanceOf[Static]
       }
       
-      extension [Self <: Static](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Static] (val x: Self) extends AnyVal {
         
         inline def setGetAll(value: () => js.Promise[js.Array[Command]]): Self = StObject.set(x, "getAll", js.Any.fromFunction0(value))
         
@@ -136,7 +138,8 @@ object namespacesCommandsMod {
         __obj.asInstanceOf[UpdateDetailType]
       }
       
-      extension [Self <: UpdateDetailType](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: UpdateDetailType] (val x: Self) extends AnyVal {
         
         inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
         

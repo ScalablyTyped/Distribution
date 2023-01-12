@@ -17,7 +17,8 @@ object PatchStatusParams {
     __obj.asInstanceOf[PatchStatusParams]
   }
   
-  extension [Self <: PatchStatusParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PatchStatusParams] (val x: Self) extends AnyVal {
     
     inline def setColor(value: ProjectStatusColor): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

@@ -114,7 +114,8 @@ object NightwatchDesiredCapabilities {
     __obj.asInstanceOf[NightwatchDesiredCapabilities]
   }
   
-  extension [Self <: NightwatchDesiredCapabilities](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NightwatchDesiredCapabilities] (val x: Self) extends AnyVal {
     
     inline def setAcceptSslCerts(value: Boolean): Self = StObject.set(x, "acceptSslCerts", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object DescribeDBLogFilesResponse {
     __obj.asInstanceOf[DescribeDBLogFilesResponse]
   }
   
-  extension [Self <: DescribeDBLogFilesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeDBLogFilesResponse] (val x: Self) extends AnyVal {
     
     inline def setDescribeDBLogFiles(value: DescribeDBLogFilesList): Self = StObject.set(x, "DescribeDBLogFiles", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object APNS2Configuration {
     __obj.asInstanceOf[APNS2Configuration]
   }
   
-  extension [Self <: APNS2Configuration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: APNS2Configuration] (val x: Self) extends AnyVal {
     
     inline def setCollapseId(value: String): Self = StObject.set(x, "collapseId", value.asInstanceOf[js.Any])
     

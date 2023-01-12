@@ -153,7 +153,8 @@ object distConstraintsMod {
       __obj.asInstanceOf[MaxNormArgs]
     }
     
-    extension [Self <: MaxNormArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MaxNormArgs] (val x: Self) extends AnyVal {
       
       inline def setAxis(value: Double): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
       
@@ -209,7 +210,8 @@ object distConstraintsMod {
       __obj.asInstanceOf[MinMaxNormArgs]
     }
     
-    extension [Self <: MinMaxNormArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MinMaxNormArgs] (val x: Self) extends AnyVal {
       
       inline def setAxis(value: Double): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
       
@@ -254,7 +256,8 @@ object distConstraintsMod {
       __obj.asInstanceOf[UnitNormArgs]
     }
     
-    extension [Self <: UnitNormArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnitNormArgs] (val x: Self) extends AnyVal {
       
       inline def setAxis(value: Double): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
       

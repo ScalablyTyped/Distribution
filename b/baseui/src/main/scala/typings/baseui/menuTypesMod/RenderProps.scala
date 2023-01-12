@@ -24,7 +24,8 @@ object RenderProps {
     __obj.asInstanceOf[RenderProps]
   }
   
-  extension [Self <: RenderProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RenderProps] (val x: Self) extends AnyVal {
     
     inline def setGetRequiredItemProps(value: (/* item */ Item, /* index */ Double) => RenderItemProps): Self = StObject.set(x, "getRequiredItemProps", js.Any.fromFunction2(value))
     

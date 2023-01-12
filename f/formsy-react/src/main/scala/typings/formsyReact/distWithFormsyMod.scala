@@ -163,7 +163,8 @@ object distWithFormsyMod {
       __obj.asInstanceOf[WrapperProps[V]]
     }
     
-    extension [Self <: WrapperProps[?], V](x: Self & WrapperProps[V]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WrapperProps[?], V] (val x: Self & WrapperProps[V]) extends AnyVal {
       
       inline def setInnerRef(value: /* ref */ Ref[Any] => Unit): Self = StObject.set(x, "innerRef", js.Any.fromFunction1(value))
       
@@ -226,7 +227,8 @@ object distWithFormsyMod {
       __obj.asInstanceOf[WrapperState[V]]
     }
     
-    extension [Self <: WrapperState[?], V](x: Self & WrapperState[V]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WrapperState[?], V] (val x: Self & WrapperState[V]) extends AnyVal {
       
       inline def setFormSubmitted(value: Boolean): Self = StObject.set(x, "formSubmitted", value.asInstanceOf[js.Any])
       

@@ -82,7 +82,8 @@ object IgGridGroupByColumnSettings {
     __obj.asInstanceOf[IgGridGroupByColumnSettings]
   }
   
-  extension [Self <: IgGridGroupByColumnSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgGridGroupByColumnSettings] (val x: Self) extends AnyVal {
     
     inline def setAllowGrouping(value: Boolean): Self = StObject.set(x, "allowGrouping", value.asInstanceOf[js.Any])
     

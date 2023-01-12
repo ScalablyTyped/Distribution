@@ -28,7 +28,8 @@ object PackageVersionOutputConfig {
     __obj.asInstanceOf[PackageVersionOutputConfig]
   }
   
-  extension [Self <: PackageVersionOutputConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PackageVersionOutputConfig] (val x: Self) extends AnyVal {
     
     inline def setMarkLatest(value: MarkLatestPatch): Self = StObject.set(x, "MarkLatest", value.asInstanceOf[js.Any])
     

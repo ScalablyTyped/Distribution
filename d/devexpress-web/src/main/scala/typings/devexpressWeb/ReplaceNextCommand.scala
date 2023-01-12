@@ -26,7 +26,8 @@ object ReplaceNextCommand {
     __obj.asInstanceOf[ReplaceNextCommand]
   }
   
-  extension [Self <: ReplaceNextCommand](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReplaceNextCommand] (val x: Self) extends AnyVal {
     
     inline def setExecute(value: (String, String, Boolean) => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction3(value))
   }

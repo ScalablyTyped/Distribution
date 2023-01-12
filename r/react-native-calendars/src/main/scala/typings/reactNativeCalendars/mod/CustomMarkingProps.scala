@@ -21,7 +21,8 @@ object CustomMarkingProps {
     __obj.asInstanceOf[CustomMarkingProps]
   }
   
-  extension [Self <: CustomMarkingProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomMarkingProps] (val x: Self) extends AnyVal {
     
     inline def setMarkedDates(value: StringDictionary[CustomMarking]): Self = StObject.set(x, "markedDates", value.asInstanceOf[js.Any])
     

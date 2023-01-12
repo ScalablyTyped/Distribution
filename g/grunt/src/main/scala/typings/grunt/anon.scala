@@ -25,7 +25,8 @@ object anon {
       __obj.asInstanceOf[Custom]
     }
     
-    extension [Self <: Custom](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Custom] (val x: Self) extends AnyVal {
       
       inline def setCustom(value: Any): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
       
@@ -60,7 +61,8 @@ object anon {
       __obj.asInstanceOf[Force]
     }
     
-    extension [Self <: Force](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Force] (val x: Self) extends AnyVal {
       
       inline def setForce(value: Boolean): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
       

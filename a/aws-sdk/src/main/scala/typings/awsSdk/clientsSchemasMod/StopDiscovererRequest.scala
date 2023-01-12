@@ -18,7 +18,8 @@ object StopDiscovererRequest {
     __obj.asInstanceOf[StopDiscovererRequest]
   }
   
-  extension [Self <: StopDiscovererRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StopDiscovererRequest] (val x: Self) extends AnyVal {
     
     inline def setDiscovererId(value: string): Self = StObject.set(x, "DiscovererId", value.asInstanceOf[js.Any])
   }

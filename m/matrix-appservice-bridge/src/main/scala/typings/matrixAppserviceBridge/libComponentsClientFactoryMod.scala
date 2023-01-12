@@ -105,7 +105,8 @@ object libComponentsClientFactoryMod {
       __obj.asInstanceOf[ClientFactoryOpts]
     }
     
-    extension [Self <: ClientFactoryOpts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClientFactoryOpts] (val x: Self) extends AnyVal {
       
       inline def setAppServiceUserId(value: String): Self = StObject.set(x, "appServiceUserId", value.asInstanceOf[js.Any])
       

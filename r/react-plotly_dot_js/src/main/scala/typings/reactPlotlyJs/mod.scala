@@ -47,7 +47,8 @@ object mod {
       __obj.asInstanceOf[Figure]
     }
     
-    extension [Self <: Figure](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Figure] (val x: Self) extends AnyVal {
       
       inline def setData(value: js.Array[Data]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -201,7 +202,8 @@ object mod {
       __obj.asInstanceOf[PlotParams]
     }
     
-    extension [Self <: PlotParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PlotParams] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       

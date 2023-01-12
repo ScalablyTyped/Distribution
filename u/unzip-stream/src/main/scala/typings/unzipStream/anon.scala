@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[`0`]
     }
     
-    extension [Self <: `0`](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: `0`] (val x: Self) extends AnyVal {
       
       inline def setDecodeString(value: /* buffer */ Buffer => String): Self = StObject.set(x, "decodeString", js.Any.fromFunction1(value))
       
@@ -41,7 +42,8 @@ object anon {
       __obj.asInstanceOf[DecodeString]
     }
     
-    extension [Self <: DecodeString](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DecodeString] (val x: Self) extends AnyVal {
       
       inline def setDecodeString(value: /* buffer */ Buffer => String): Self = StObject.set(x, "decodeString", js.Any.fromFunction1(value))
       

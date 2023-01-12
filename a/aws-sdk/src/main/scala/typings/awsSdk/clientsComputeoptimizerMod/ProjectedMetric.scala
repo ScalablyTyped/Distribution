@@ -28,7 +28,8 @@ object ProjectedMetric {
     __obj.asInstanceOf[ProjectedMetric]
   }
   
-  extension [Self <: ProjectedMetric](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProjectedMetric] (val x: Self) extends AnyVal {
     
     inline def setName(value: MetricName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

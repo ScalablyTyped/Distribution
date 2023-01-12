@@ -18,7 +18,8 @@ object VirtualGatewayTlsValidationContextAcmTrust {
     __obj.asInstanceOf[VirtualGatewayTlsValidationContextAcmTrust]
   }
   
-  extension [Self <: VirtualGatewayTlsValidationContextAcmTrust](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VirtualGatewayTlsValidationContextAcmTrust] (val x: Self) extends AnyVal {
     
     inline def setCertificateAuthorityArns(value: VirtualGatewayCertificateAuthorityArns): Self = StObject.set(x, "certificateAuthorityArns", value.asInstanceOf[js.Any])
     

@@ -168,7 +168,8 @@ object QueryHierarchyItem {
     __obj.asInstanceOf[QueryHierarchyItem]
   }
   
-  extension [Self <: QueryHierarchyItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryHierarchyItem] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: js.Array[QueryHierarchyItem]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

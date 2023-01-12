@@ -43,7 +43,8 @@ object events {
     __obj.asInstanceOf[events]
   }
   
-  extension [Self <: events](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: events] (val x: Self) extends AnyVal {
     
     inline def setBEACON(value: beacon): Self = StObject.set(x, "BEACON", value.asInstanceOf[js.Any])
     

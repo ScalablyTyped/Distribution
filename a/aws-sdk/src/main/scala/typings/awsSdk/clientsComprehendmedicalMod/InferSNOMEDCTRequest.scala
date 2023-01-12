@@ -18,7 +18,8 @@ object InferSNOMEDCTRequest {
     __obj.asInstanceOf[InferSNOMEDCTRequest]
   }
   
-  extension [Self <: InferSNOMEDCTRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InferSNOMEDCTRequest] (val x: Self) extends AnyVal {
     
     inline def setText(value: OntologyLinkingBoundedLengthString): Self = StObject.set(x, "Text", value.asInstanceOf[js.Any])
   }

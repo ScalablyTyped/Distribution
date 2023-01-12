@@ -19,7 +19,8 @@ object DrawCalls {
     __obj.asInstanceOf[DrawCalls]
   }
   
-  extension [Self <: DrawCalls](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DrawCalls] (val x: Self) extends AnyVal {
     
     inline def setDrawCalls(value: js.Array[Any]): Self = StObject.set(x, "drawCalls", value.asInstanceOf[js.Any])
     

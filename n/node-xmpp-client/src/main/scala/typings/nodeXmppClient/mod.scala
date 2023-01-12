@@ -46,7 +46,8 @@ object mod {
       __obj.asInstanceOf[Bosh]
     }
     
-    extension [Self <: Bosh](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Bosh] (val x: Self) extends AnyVal {
       
       inline def setPrebind(value: (/* error */ Any, /* data */ Any) => Unit): Self = StObject.set(x, "prebind", js.Any.fromFunction2(value))
       
@@ -151,7 +152,8 @@ object mod {
       __obj.asInstanceOf[XmppOptions]
     }
     
-    extension [Self <: XmppOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XmppOptions] (val x: Self) extends AnyVal {
       
       inline def setActAs(value: String): Self = StObject.set(x, "actAs", value.asInstanceOf[js.Any])
       

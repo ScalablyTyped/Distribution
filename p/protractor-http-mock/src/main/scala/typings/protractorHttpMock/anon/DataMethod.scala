@@ -22,7 +22,8 @@ object DataMethod {
     __obj.asInstanceOf[DataMethod[TPayload]]
   }
   
-  extension [Self <: DataMethod[?], TPayload](x: Self & DataMethod[TPayload]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataMethod[?], TPayload] (val x: Self & DataMethod[TPayload]) extends AnyVal {
     
     inline def setData(value: TPayload): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

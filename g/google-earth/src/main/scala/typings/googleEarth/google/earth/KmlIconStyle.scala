@@ -80,7 +80,8 @@ object KmlIconStyle {
     __obj.asInstanceOf[KmlIconStyle]
   }
   
-  extension [Self <: KmlIconStyle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KmlIconStyle] (val x: Self) extends AnyVal {
     
     inline def setGetHeading(value: () => Double): Self = StObject.set(x, "getHeading", js.Any.fromFunction0(value))
     

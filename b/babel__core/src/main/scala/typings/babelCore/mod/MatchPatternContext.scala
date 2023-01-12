@@ -19,7 +19,8 @@ object MatchPatternContext {
     __obj.asInstanceOf[MatchPatternContext]
   }
   
-  extension [Self <: MatchPatternContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MatchPatternContext] (val x: Self) extends AnyVal {
     
     inline def setCaller(value: TransformCaller): Self = StObject.set(x, "caller", value.asInstanceOf[js.Any])
     

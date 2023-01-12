@@ -19,7 +19,8 @@ object StoreGalleryRequest {
     __obj.asInstanceOf[StoreGalleryRequest]
   }
   
-  extension [Self <: StoreGalleryRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StoreGalleryRequest] (val x: Self) extends AnyVal {
     
     inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     

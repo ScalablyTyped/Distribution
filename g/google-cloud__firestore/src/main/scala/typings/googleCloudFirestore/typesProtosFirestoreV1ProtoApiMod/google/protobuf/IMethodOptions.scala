@@ -34,7 +34,8 @@ object IMethodOptions {
     __obj.asInstanceOf[IMethodOptions]
   }
   
-  extension [Self <: IMethodOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IMethodOptions] (val x: Self) extends AnyVal {
     
     inline def setDeprecated(value: Boolean): Self = StObject.set(x, "deprecated", value.asInstanceOf[js.Any])
     

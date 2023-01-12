@@ -109,7 +109,8 @@ object rsocketleaseMod {
       __obj.asInstanceOf[Disposable]
     }
     
-    extension [Self <: Disposable](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Disposable] (val x: Self) extends AnyVal {
       
       inline def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
       
@@ -145,7 +146,8 @@ object rsocketleaseMod {
       __obj.asInstanceOf[LeaseHandler]
     }
     
-    extension [Self <: LeaseHandler](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LeaseHandler] (val x: Self) extends AnyVal {
       
       inline def setErrorMessage(value: () => String): Self = StObject.set(x, "errorMessage", js.Any.fromFunction0(value))
       
@@ -164,7 +166,8 @@ object rsocketleaseMod {
       __obj.asInstanceOf[LeaseStats]
     }
     
-    extension [Self <: LeaseStats](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LeaseStats] (val x: Self) extends AnyVal {
       
       inline def setOnEvent(value: EventType => Unit): Self = StObject.set(x, "onEvent", js.Any.fromFunction1(value))
     }

@@ -17,7 +17,8 @@ object PinSettings {
     __obj.asInstanceOf[PinSettings]
   }
   
-  extension [Self <: PinSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PinSettings] (val x: Self) extends AnyVal {
     
     inline def setPushFollowers(value: Boolean): Self = StObject.set(x, "pushFollowers", value.asInstanceOf[js.Any])
     

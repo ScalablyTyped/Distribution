@@ -112,7 +112,8 @@ object RecursivePartialFullThemeAvatar {
     __obj.asInstanceOf[RecursivePartialFullThemeAvatar]
   }
   
-  extension [Self <: RecursivePartialFullThemeAvatar](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecursivePartialFullThemeAvatar] (val x: Self) extends AnyVal {
     
     inline def setAirbnbRating(value: RecursivePartialPartialSw): Self = StObject.set(x, "AirbnbRating", value.asInstanceOf[js.Any])
     

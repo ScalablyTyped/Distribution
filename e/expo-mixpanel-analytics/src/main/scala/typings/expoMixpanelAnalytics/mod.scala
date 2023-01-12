@@ -91,7 +91,8 @@ object mod {
       __obj.asInstanceOf[ExpoMixpanelAnalytics]
     }
     
-    extension [Self <: ExpoMixpanelAnalytics](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExpoMixpanelAnalytics] (val x: Self) extends AnyVal {
       
       inline def setIdentify(value: String => Unit): Self = StObject.set(x, "identify", js.Any.fromFunction1(value))
       

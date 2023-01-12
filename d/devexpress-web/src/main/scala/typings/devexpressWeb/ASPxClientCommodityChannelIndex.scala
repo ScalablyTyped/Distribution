@@ -30,7 +30,8 @@ object ASPxClientCommodityChannelIndex {
     __obj.asInstanceOf[ASPxClientCommodityChannelIndex]
   }
   
-  extension [Self <: ASPxClientCommodityChannelIndex](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientCommodityChannelIndex] (val x: Self) extends AnyVal {
     
     inline def setPointsCount(value: Double): Self = StObject.set(x, "pointsCount", value.asInstanceOf[js.Any])
   }

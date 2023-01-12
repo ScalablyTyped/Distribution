@@ -17,7 +17,8 @@ object JsMemoryEstimate {
     __obj.asInstanceOf[JsMemoryEstimate]
   }
   
-  extension [Self <: JsMemoryEstimate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JsMemoryEstimate] (val x: Self) extends AnyVal {
     
     inline def setJsMemoryEstimate(value: Double): Self = StObject.set(x, "jsMemoryEstimate", value.asInstanceOf[js.Any])
     

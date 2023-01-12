@@ -38,7 +38,8 @@ object CreateBrowserSettingsRequest {
     __obj.asInstanceOf[CreateBrowserSettingsRequest]
   }
   
-  extension [Self <: CreateBrowserSettingsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateBrowserSettingsRequest] (val x: Self) extends AnyVal {
     
     inline def setAdditionalEncryptionContext(value: EncryptionContextMap): Self = StObject.set(x, "additionalEncryptionContext", value.asInstanceOf[js.Any])
     

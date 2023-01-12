@@ -262,7 +262,8 @@ object mod {
       __obj.asInstanceOf[DomHandlerOptions]
     }
     
-    extension [Self <: DomHandlerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DomHandlerOptions] (val x: Self) extends AnyVal {
       
       inline def setWithEndIndices(value: Boolean): Self = StObject.set(x, "withEndIndices", value.asInstanceOf[js.Any])
       
@@ -293,7 +294,8 @@ object mod {
       __obj.asInstanceOf[ParserInterface]
     }
     
-    extension [Self <: ParserInterface](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParserInterface] (val x: Self) extends AnyVal {
       
       inline def setEndIndex(value: Double): Self = StObject.set(x, "endIndex", value.asInstanceOf[js.Any])
       

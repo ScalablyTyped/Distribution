@@ -45,7 +45,8 @@ object mod {
       __obj.asInstanceOf[PositionOptions]
     }
     
-    extension [Self <: PositionOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PositionOptions] (val x: Self) extends AnyVal {
       
       inline def setEnableHighAccuracy(value: Boolean): Self = StObject.set(x, "enableHighAccuracy", value.asInstanceOf[js.Any])
       

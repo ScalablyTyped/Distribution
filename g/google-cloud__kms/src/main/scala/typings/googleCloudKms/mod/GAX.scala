@@ -36,7 +36,8 @@ object GAX {
       __obj.asInstanceOf[BackoffSettings]
     }
     
-    extension [Self <: BackoffSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BackoffSettings] (val x: Self) extends AnyVal {
       
       inline def setInitialRetryDelayMillis(value: Double): Self = StObject.set(x, "initialRetryDelayMillis", value.asInstanceOf[js.Any])
       
@@ -76,7 +77,8 @@ object GAX {
       __obj.asInstanceOf[CallOptions]
     }
     
-    extension [Self <: CallOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CallOptions] (val x: Self) extends AnyVal {
       
       inline def setAutoPaginate(value: Boolean): Self = StObject.set(x, "autoPaginate", value.asInstanceOf[js.Any])
       
@@ -122,7 +124,8 @@ object GAX {
       __obj.asInstanceOf[RetryOptions]
     }
     
-    extension [Self <: RetryOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RetryOptions] (val x: Self) extends AnyVal {
       
       inline def setBackoffSettings(value: BackoffSettings): Self = StObject.set(x, "backoffSettings", value.asInstanceOf[js.Any])
       

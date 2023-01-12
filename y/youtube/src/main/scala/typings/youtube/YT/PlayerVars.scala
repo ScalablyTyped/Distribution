@@ -130,7 +130,8 @@ object PlayerVars {
     __obj.asInstanceOf[PlayerVars]
   }
   
-  extension [Self <: PlayerVars](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlayerVars] (val x: Self) extends AnyVal {
     
     inline def setAutohide(value: AutoHide): Self = StObject.set(x, "autohide", value.asInstanceOf[js.Any])
     

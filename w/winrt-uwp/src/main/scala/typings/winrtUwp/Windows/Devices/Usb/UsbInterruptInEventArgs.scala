@@ -18,7 +18,8 @@ object UsbInterruptInEventArgs {
     __obj.asInstanceOf[UsbInterruptInEventArgs]
   }
   
-  extension [Self <: UsbInterruptInEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UsbInterruptInEventArgs] (val x: Self) extends AnyVal {
     
     inline def setInterruptData(value: IBuffer): Self = StObject.set(x, "interruptData", value.asInstanceOf[js.Any])
   }

@@ -28,7 +28,8 @@ object anon {
       __obj.asInstanceOf[PerformScript]
     }
     
-    extension [Self <: PerformScript](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PerformScript] (val x: Self) extends AnyVal {
       
       inline def setPerformScript(value: (String, String) => Unit): Self = StObject.set(x, "PerformScript", js.Any.fromFunction2(value))
       

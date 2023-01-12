@@ -23,7 +23,8 @@ object PreconnectOptions {
     __obj.asInstanceOf[PreconnectOptions]
   }
   
-  extension [Self <: PreconnectOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PreconnectOptions] (val x: Self) extends AnyVal {
     
     inline def setNumSockets(value: Double): Self = StObject.set(x, "numSockets", value.asInstanceOf[js.Any])
     

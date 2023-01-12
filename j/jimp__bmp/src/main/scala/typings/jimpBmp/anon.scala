@@ -26,7 +26,8 @@ object anon {
       __obj.asInstanceOf[Imagebmp]
     }
     
-    extension [Self <: Imagebmp](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Imagebmp] (val x: Self) extends AnyVal {
       
       inline def setImageSlashbmp(value: js.Array[String]): Self = StObject.set(x, "image/bmp", value.asInstanceOf[js.Any])
       
@@ -55,7 +56,8 @@ object anon {
       __obj.asInstanceOf[ImagebmpImagexmsbmp]
     }
     
-    extension [Self <: ImagebmpImagexmsbmp](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ImagebmpImagexmsbmp] (val x: Self) extends AnyVal {
       
       inline def setImageSlashbmp(value: Image => Buffer): Self = StObject.set(x, "image/bmp", js.Any.fromFunction1(value))
       
@@ -84,7 +86,8 @@ object anon {
       __obj.asInstanceOf[Imagexmsbmp]
     }
     
-    extension [Self <: Imagexmsbmp](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Imagexmsbmp] (val x: Self) extends AnyVal {
       
       inline def setImageSlashbmp(value: /* data */ Buffer => Bitmap): Self = StObject.set(x, "image/bmp", js.Any.fromFunction1(value))
       
@@ -105,7 +108,8 @@ object anon {
       __obj.asInstanceOf[MIMEBMP]
     }
     
-    extension [Self <: MIMEBMP](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MIMEBMP] (val x: Self) extends AnyVal {
       
       inline def setMIME_BMP(value: imageSlashbmp): Self = StObject.set(x, "MIME_BMP", value.asInstanceOf[js.Any])
       

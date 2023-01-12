@@ -34,7 +34,8 @@ object Env {
     __obj.asInstanceOf[Env]
   }
   
-  extension [Self <: Env](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Env] (val x: Self) extends AnyVal {
     
     inline def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
     

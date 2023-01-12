@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[Authedmine]
     }
     
-    extension [Self <: Authedmine](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Authedmine] (val x: Self) extends AnyVal {
       
       inline def setAuthedmine(value: String): Self = StObject.set(x, "authedmine", value.asInstanceOf[js.Any])
       

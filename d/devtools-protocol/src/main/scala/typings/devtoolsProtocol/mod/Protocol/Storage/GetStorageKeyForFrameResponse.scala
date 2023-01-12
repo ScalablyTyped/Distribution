@@ -15,7 +15,8 @@ object GetStorageKeyForFrameResponse {
     __obj.asInstanceOf[GetStorageKeyForFrameResponse]
   }
   
-  extension [Self <: GetStorageKeyForFrameResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetStorageKeyForFrameResponse] (val x: Self) extends AnyVal {
     
     inline def setStorageKey(value: SerializedStorageKey): Self = StObject.set(x, "storageKey", value.asInstanceOf[js.Any])
   }

@@ -262,7 +262,8 @@ object sapMSinglePlanningCalendarViewMod {
       __obj.asInstanceOf[SinglePlanningCalendarViewSettings]
     }
     
-    extension [Self <: SinglePlanningCalendarViewSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SinglePlanningCalendarViewSettings] (val x: Self) extends AnyVal {
       
       inline def setFirstDayOfWeek(value: int | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "firstDayOfWeek", value.asInstanceOf[js.Any])
       

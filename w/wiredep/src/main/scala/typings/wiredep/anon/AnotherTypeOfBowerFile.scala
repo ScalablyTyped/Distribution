@@ -24,7 +24,8 @@ object AnotherTypeOfBowerFile {
     __obj.asInstanceOf[AnotherTypeOfBowerFile]
   }
   
-  extension [Self <: AnotherTypeOfBowerFile](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnotherTypeOfBowerFile] (val x: Self) extends AnyVal {
     
     inline def setAnotherTypeOfBowerFile(value: String => String): Self = StObject.set(x, "anotherTypeOfBowerFile", js.Any.fromFunction1(value))
     

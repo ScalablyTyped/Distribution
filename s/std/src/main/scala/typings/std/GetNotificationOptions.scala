@@ -16,7 +16,8 @@ object GetNotificationOptions {
     __obj.asInstanceOf[GetNotificationOptions]
   }
   
-  extension [Self <: GetNotificationOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetNotificationOptions] (val x: Self) extends AnyVal {
     
     inline def setTag(value: java.lang.String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
     

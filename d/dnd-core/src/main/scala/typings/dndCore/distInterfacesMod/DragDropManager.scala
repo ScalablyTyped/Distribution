@@ -29,7 +29,8 @@ object DragDropManager {
     __obj.asInstanceOf[DragDropManager]
   }
   
-  extension [Self <: DragDropManager](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DragDropManager] (val x: Self) extends AnyVal {
     
     inline def setDispatch(value: Any => Unit): Self = StObject.set(x, "dispatch", js.Any.fromFunction1(value))
     

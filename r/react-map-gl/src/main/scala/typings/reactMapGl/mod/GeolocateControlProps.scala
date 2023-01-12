@@ -39,7 +39,8 @@ object GeolocateControlProps {
     __obj.asInstanceOf[GeolocateControlProps]
   }
   
-  extension [Self <: GeolocateControlProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GeolocateControlProps] (val x: Self) extends AnyVal {
     
     inline def setAuto(value: Boolean): Self = StObject.set(x, "auto", value.asInstanceOf[js.Any])
     

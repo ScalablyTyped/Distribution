@@ -19,7 +19,8 @@ object ProductWeight {
     __obj.asInstanceOf[ProductWeight]
   }
   
-  extension [Self <: ProductWeight](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProductWeight] (val x: Self) extends AnyVal {
     
     inline def setUnit(value: String): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
     

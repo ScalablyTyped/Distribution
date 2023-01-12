@@ -33,7 +33,8 @@ object SlicedProps {
     __obj.asInstanceOf[SlicedProps[SegType]]
   }
   
-  extension [Self <: SlicedProps[?], SegType /* <: Seg */](x: Self & SlicedProps[SegType]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SlicedProps[?], SegType /* <: Seg */] (val x: Self & SlicedProps[SegType]) extends AnyVal {
     
     inline def setBgEventSegs(value: js.Array[SegType]): Self = StObject.set(x, "bgEventSegs", value.asInstanceOf[js.Any])
     

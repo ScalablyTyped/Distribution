@@ -26,7 +26,8 @@ object Firstindices {
     __obj.asInstanceOf[Firstindices]
   }
   
-  extension [Self <: Firstindices](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Firstindices] (val x: Self) extends AnyVal {
     
     inline def setFirst_indices(value: js.Array[Double]): Self = StObject.set(x, "first_indices", value.asInstanceOf[js.Any])
     

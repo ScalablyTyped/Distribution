@@ -28,7 +28,8 @@ object GetExtensionVersionRequest {
     __obj.asInstanceOf[GetExtensionVersionRequest]
   }
   
-  extension [Self <: GetExtensionVersionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetExtensionVersionRequest] (val x: Self) extends AnyVal {
     
     inline def setExtensionVersion(value: ExtensionVersion): Self = StObject.set(x, "ExtensionVersion", value.asInstanceOf[js.Any])
     

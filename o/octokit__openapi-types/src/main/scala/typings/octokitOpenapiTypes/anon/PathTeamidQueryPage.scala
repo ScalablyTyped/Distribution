@@ -17,7 +17,8 @@ object PathTeamidQueryPage {
     __obj.asInstanceOf[PathTeamidQueryPage]
   }
   
-  extension [Self <: PathTeamidQueryPage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PathTeamidQueryPage] (val x: Self) extends AnyVal {
     
     inline def setPath(value: Teamid): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     

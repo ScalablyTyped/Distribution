@@ -93,7 +93,8 @@ object DaylightViewModelProperties {
     __obj.asInstanceOf[DaylightViewModelProperties]
   }
   
-  extension [Self <: DaylightViewModelProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DaylightViewModelProperties] (val x: Self) extends AnyVal {
     
     inline def setCurrentSeason(value: spring | summer | fall | winter): Self = StObject.set(x, "currentSeason", value.asInstanceOf[js.Any])
     

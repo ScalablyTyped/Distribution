@@ -151,7 +151,8 @@ object buildSrcLeaseManagerMod {
       __obj.asInstanceOf[FlowControlOptions]
     }
     
-    extension [Self <: FlowControlOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FlowControlOptions] (val x: Self) extends AnyVal {
       
       inline def setAllowExcessMessages(value: Boolean): Self = StObject.set(x, "allowExcessMessages", value.asInstanceOf[js.Any])
       

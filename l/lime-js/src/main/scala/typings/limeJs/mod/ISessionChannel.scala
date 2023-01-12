@@ -17,7 +17,8 @@ object ISessionChannel {
     __obj.asInstanceOf[ISessionChannel]
   }
   
-  extension [Self <: ISessionChannel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISessionChannel] (val x: Self) extends AnyVal {
     
     inline def setOnSession(value: Session => Any): Self = StObject.set(x, "onSession", js.Any.fromFunction1(value))
     

@@ -18,7 +18,8 @@ object DescribeFHIRDatastoreResponse {
     __obj.asInstanceOf[DescribeFHIRDatastoreResponse]
   }
   
-  extension [Self <: DescribeFHIRDatastoreResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeFHIRDatastoreResponse] (val x: Self) extends AnyVal {
     
     inline def setDatastoreProperties(value: DatastoreProperties): Self = StObject.set(x, "DatastoreProperties", value.asInstanceOf[js.Any])
   }

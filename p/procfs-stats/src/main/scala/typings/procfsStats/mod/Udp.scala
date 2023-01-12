@@ -61,7 +61,8 @@ object Udp {
     __obj.asInstanceOf[Udp]
   }
   
-  extension [Self <: Udp](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Udp] (val x: Self) extends AnyVal {
     
     inline def setDrops(value: String): Self = StObject.set(x, "drops", value.asInstanceOf[js.Any])
     

@@ -16,7 +16,8 @@ object InventorySourceDisplayCreativeConfig {
     __obj.asInstanceOf[InventorySourceDisplayCreativeConfig]
   }
   
-  extension [Self <: InventorySourceDisplayCreativeConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InventorySourceDisplayCreativeConfig] (val x: Self) extends AnyVal {
     
     inline def setCreativeSize(value: Dimensions): Self = StObject.set(x, "creativeSize", value.asInstanceOf[js.Any])
     

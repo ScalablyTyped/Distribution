@@ -22,7 +22,8 @@ object Typeofclusterer {
     __obj.asInstanceOf[Typeofclusterer]
   }
   
-  extension [Self <: Typeofclusterer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Typeofclusterer] (val x: Self) extends AnyVal {
     
     inline def setBalloon(value: Instantiable1[/* clusterer */ Clusterer_, typings.yandexMaps.mod.clusterer.Balloon]): Self = StObject.set(x, "Balloon", value.asInstanceOf[js.Any])
     

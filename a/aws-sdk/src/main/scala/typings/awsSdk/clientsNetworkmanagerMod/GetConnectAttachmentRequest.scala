@@ -18,7 +18,8 @@ object GetConnectAttachmentRequest {
     __obj.asInstanceOf[GetConnectAttachmentRequest]
   }
   
-  extension [Self <: GetConnectAttachmentRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetConnectAttachmentRequest] (val x: Self) extends AnyVal {
     
     inline def setAttachmentId(value: AttachmentId): Self = StObject.set(x, "AttachmentId", value.asInstanceOf[js.Any])
   }

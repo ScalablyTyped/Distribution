@@ -20,7 +20,8 @@ object PushAction {
     __obj.asInstanceOf[PushAction]
   }
   
-  extension [Self <: PushAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PushAction] (val x: Self) extends AnyVal {
     
     inline def setPayload(value: Location): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     

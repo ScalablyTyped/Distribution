@@ -25,7 +25,8 @@ object ClickTag {
     __obj.asInstanceOf[ClickTag]
   }
   
-  extension [Self <: ClickTag](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClickTag] (val x: Self) extends AnyVal {
     
     inline def setClickThroughUrl(value: CreativeClickThroughUrl): Self = StObject.set(x, "clickThroughUrl", value.asInstanceOf[js.Any])
     

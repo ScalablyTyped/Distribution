@@ -17,7 +17,8 @@ object XpackUsageSsl {
     __obj.asInstanceOf[XpackUsageSsl]
   }
   
-  extension [Self <: XpackUsageSsl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XpackUsageSsl] (val x: Self) extends AnyVal {
     
     inline def setHttp(value: XpackUsageFeatureToggle): Self = StObject.set(x, "http", value.asInstanceOf[js.Any])
     

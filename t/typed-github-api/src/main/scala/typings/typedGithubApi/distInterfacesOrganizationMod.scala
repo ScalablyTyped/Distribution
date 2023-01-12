@@ -46,7 +46,8 @@ object distInterfacesOrganizationMod {
       __obj.asInstanceOf[MyOrganization]
     }
     
-    extension [Self <: MyOrganization](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MyOrganization] (val x: Self) extends AnyVal {
       
       inline def setBillingEmail(value: String): Self = StObject.set(x, "billingEmail", value.asInstanceOf[js.Any])
       

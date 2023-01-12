@@ -15,7 +15,8 @@ object IndicesGetDataStreamResponse {
     __obj.asInstanceOf[IndicesGetDataStreamResponse]
   }
   
-  extension [Self <: IndicesGetDataStreamResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndicesGetDataStreamResponse] (val x: Self) extends AnyVal {
     
     inline def setData_streams(value: js.Array[IndicesDataStream]): Self = StObject.set(x, "data_streams", value.asInstanceOf[js.Any])
     

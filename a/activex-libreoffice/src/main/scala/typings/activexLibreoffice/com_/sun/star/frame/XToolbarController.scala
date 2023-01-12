@@ -61,7 +61,8 @@ object XToolbarController {
     __obj.asInstanceOf[XToolbarController]
   }
   
-  extension [Self <: XToolbarController](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XToolbarController] (val x: Self) extends AnyVal {
     
     inline def setClick(value: () => Unit): Self = StObject.set(x, "click", js.Any.fromFunction0(value))
     

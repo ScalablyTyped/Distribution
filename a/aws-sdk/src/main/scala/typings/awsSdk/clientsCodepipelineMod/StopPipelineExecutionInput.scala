@@ -33,7 +33,8 @@ object StopPipelineExecutionInput {
     __obj.asInstanceOf[StopPipelineExecutionInput]
   }
   
-  extension [Self <: StopPipelineExecutionInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StopPipelineExecutionInput] (val x: Self) extends AnyVal {
     
     inline def setAbandon(value: Boolean): Self = StObject.set(x, "abandon", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object Socialprofiles {
     __obj.asInstanceOf[Socialprofiles]
   }
   
-  extension [Self <: Socialprofiles](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Socialprofiles] (val x: Self) extends AnyVal {
     
     inline def setSocial_profiles(value: js.Array[SocialProfile]): Self = StObject.set(x, "social_profiles", value.asInstanceOf[js.Any])
     

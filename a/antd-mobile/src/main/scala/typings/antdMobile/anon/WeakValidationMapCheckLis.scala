@@ -259,7 +259,8 @@ object WeakValidationMapCheckLis {
     __obj.asInstanceOf[WeakValidationMapCheckLis]
   }
   
-  extension [Self <: WeakValidationMapCheckLis](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WeakValidationMapCheckLis] (val x: Self) extends AnyVal {
     
     inline def setActiveIcon(
       value: /* import warning: importer.ImportType#apply Failed type conversion: null extends react.react.ReactNode | undefined ? react.react.Validator<react.react.ReactNode | undefined | null | undefined> : undefined extends react.react.ReactNode | undefined ? react.react.Validator<react.react.ReactNode | undefined | null | undefined> : react.react.Validator<react.react.ReactNode | undefined> */ js.Any

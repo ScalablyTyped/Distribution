@@ -89,7 +89,8 @@ object libElementsMod {
       __obj.asInstanceOf[CardElementOptions]
     }
     
-    extension [Self <: CardElementOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CardElementOptions] (val x: Self) extends AnyVal {
       
       inline def setDisplayIcon(value: Boolean): Self = StObject.set(x, "displayIcon", value.asInstanceOf[js.Any])
       
@@ -203,7 +204,8 @@ object libElementsMod {
       __obj.asInstanceOf[CommonElementStyle]
     }
     
-    extension [Self <: CommonElementStyle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommonElementStyle] (val x: Self) extends AnyVal {
       
       inline def setFontColor(value: String): Self = StObject.set(x, "fontColor", value.asInstanceOf[js.Any])
       
@@ -387,7 +389,8 @@ object libElementsMod {
       __obj.asInstanceOf[IndividualElementOptions]
     }
     
-    extension [Self <: IndividualElementOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IndividualElementOptions] (val x: Self) extends AnyVal {
       
       inline def setFormat(value: Boolean): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       

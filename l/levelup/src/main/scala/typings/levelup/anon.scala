@@ -44,7 +44,8 @@ object anon {
       __obj.asInstanceOf[EncodingError]
     }
     
-    extension [Self <: EncodingError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EncodingError] (val x: Self) extends AnyVal {
       
       inline def setEncodingError(value: Instantiable0[typings.levelErrors.mod.EncodingError]): Self = StObject.set(x, "EncodingError", value.asInstanceOf[js.Any])
       

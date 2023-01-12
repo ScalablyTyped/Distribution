@@ -440,7 +440,8 @@ object srcConfigSchemaMod {
         __obj.asInstanceOf[typings.atom.srcConfigSchemaMod.atomAugmentingMod.ConfigValues]
       }
       
-      extension [Self <: typings.atom.srcConfigSchemaMod.atomAugmentingMod.ConfigValues](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.atom.srcConfigSchemaMod.atomAugmentingMod.ConfigValues] (val x: Self) extends AnyVal {
         
         inline def setCoreDotallowPendingPaneItems(value: Boolean): Self = StObject.set(x, "core.allowPendingPaneItems", value.asInstanceOf[js.Any])
         

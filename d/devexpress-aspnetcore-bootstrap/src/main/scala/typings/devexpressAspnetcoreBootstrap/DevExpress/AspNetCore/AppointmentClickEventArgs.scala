@@ -21,7 +21,8 @@ object AppointmentClickEventArgs {
     __obj.asInstanceOf[AppointmentClickEventArgs]
   }
   
-  extension [Self <: AppointmentClickEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppointmentClickEventArgs] (val x: Self) extends AnyVal {
     
     inline def setAppointmentId(value: String): Self = StObject.set(x, "appointmentId", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object Exists {
     __obj.asInstanceOf[Exists]
   }
   
-  extension [Self <: Exists](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Exists] (val x: Self) extends AnyVal {
     
     inline def setExists(value: Boolean): Self = StObject.set(x, "exists", value.asInstanceOf[js.Any])
   }

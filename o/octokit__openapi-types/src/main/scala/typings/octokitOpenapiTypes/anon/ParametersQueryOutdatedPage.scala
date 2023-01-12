@@ -17,7 +17,8 @@ object ParametersQueryOutdatedPage {
     __obj.asInstanceOf[ParametersQueryOutdatedPage]
   }
   
-  extension [Self <: ParametersQueryOutdatedPage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParametersQueryOutdatedPage] (val x: Self) extends AnyVal {
     
     inline def setParameters(value: QueryOutdatedPage): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     

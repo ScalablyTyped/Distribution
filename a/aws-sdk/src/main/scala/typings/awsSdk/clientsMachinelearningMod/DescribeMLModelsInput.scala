@@ -68,7 +68,8 @@ object DescribeMLModelsInput {
     __obj.asInstanceOf[DescribeMLModelsInput]
   }
   
-  extension [Self <: DescribeMLModelsInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeMLModelsInput] (val x: Self) extends AnyVal {
     
     inline def setEQ(value: ComparatorValue): Self = StObject.set(x, "EQ", value.asInstanceOf[js.Any])
     

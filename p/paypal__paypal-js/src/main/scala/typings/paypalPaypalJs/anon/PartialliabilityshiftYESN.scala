@@ -22,7 +22,8 @@ object PartialliabilityshiftYESN {
     __obj.asInstanceOf[PartialliabilityshiftYESN]
   }
   
-  extension [Self <: PartialliabilityshiftYESN](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialliabilityshiftYESN] (val x: Self) extends AnyVal {
     
     inline def setLiability_shift(value: YES | NO | POSSIBLE | UNKNOWN): Self = StObject.set(x, "liability_shift", value.asInstanceOf[js.Any])
     

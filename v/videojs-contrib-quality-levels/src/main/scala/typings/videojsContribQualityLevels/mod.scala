@@ -65,7 +65,8 @@ object mod {
         __obj.asInstanceOf[VideoJsPlayer]
       }
       
-      extension [Self <: VideoJsPlayer](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: VideoJsPlayer] (val x: Self) extends AnyVal {
         
         inline def setQualityLevels(value: Call): Self = StObject.set(x, "qualityLevels", value.asInstanceOf[js.Any])
       }

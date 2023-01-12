@@ -35,7 +35,8 @@ object IFieldValue {
     __obj.asInstanceOf[IFieldValue]
   }
   
-  extension [Self <: IFieldValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IFieldValue] (val x: Self) extends AnyVal {
     
     inline def setQIsNumeric(value: Boolean): Self = StObject.set(x, "qIsNumeric", value.asInstanceOf[js.Any])
     

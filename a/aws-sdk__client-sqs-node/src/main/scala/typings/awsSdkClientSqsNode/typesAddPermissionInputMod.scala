@@ -66,7 +66,8 @@ object typesAddPermissionInputMod {
       __obj.asInstanceOf[AddPermissionInput]
     }
     
-    extension [Self <: AddPermissionInput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AddPermissionInput] (val x: Self) extends AnyVal {
       
       inline def set$abortSignal(value: AbortSignal): Self = StObject.set(x, "$abortSignal", value.asInstanceOf[js.Any])
       

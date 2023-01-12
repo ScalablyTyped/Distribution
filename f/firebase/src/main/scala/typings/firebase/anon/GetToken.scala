@@ -16,7 +16,8 @@ object GetToken {
     __obj.asInstanceOf[GetToken]
   }
   
-  extension [Self <: GetToken](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetToken] (val x: Self) extends AnyVal {
     
     inline def setGetToken(value: () => AppCheckToken): Self = StObject.set(x, "getToken", js.Any.fromFunction0(value))
   }

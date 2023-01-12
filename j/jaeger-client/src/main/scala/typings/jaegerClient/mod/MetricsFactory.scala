@@ -23,7 +23,8 @@ object MetricsFactory {
     __obj.asInstanceOf[MetricsFactory]
   }
   
-  extension [Self <: MetricsFactory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MetricsFactory] (val x: Self) extends AnyVal {
     
     inline def setCreateCounter(value: (String, Any) => Counter): Self = StObject.set(x, "createCounter", js.Any.fromFunction2(value))
     

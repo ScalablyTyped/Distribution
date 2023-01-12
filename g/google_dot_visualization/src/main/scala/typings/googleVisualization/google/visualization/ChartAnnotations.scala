@@ -27,7 +27,8 @@ object ChartAnnotations {
     __obj.asInstanceOf[ChartAnnotations]
   }
   
-  extension [Self <: ChartAnnotations](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChartAnnotations] (val x: Self) extends AnyVal {
     
     inline def setBoxStyle(value: ChartBoxStyle): Self = StObject.set(x, "boxStyle", value.asInstanceOf[js.Any])
     

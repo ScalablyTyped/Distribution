@@ -113,7 +113,8 @@ object StudioComponent {
     __obj.asInstanceOf[StudioComponent]
   }
   
-  extension [Self <: StudioComponent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StudioComponent] (val x: Self) extends AnyVal {
     
     inline def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     

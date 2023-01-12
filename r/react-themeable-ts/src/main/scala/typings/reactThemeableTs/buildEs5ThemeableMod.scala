@@ -34,7 +34,8 @@ object buildEs5ThemeableMod {
       __obj.asInstanceOf[IStaticFnOptionalReturn]
     }
     
-    extension [Self <: IStaticFnOptionalReturn](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IStaticFnOptionalReturn] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       

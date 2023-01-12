@@ -25,7 +25,8 @@ object AssemblyCall {
     __obj.asInstanceOf[AssemblyCall]
   }
   
-  extension [Self <: AssemblyCall](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssemblyCall] (val x: Self) extends AnyVal {
     
     inline def setArguments(value: js.Array[AssemblyExpression]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
     

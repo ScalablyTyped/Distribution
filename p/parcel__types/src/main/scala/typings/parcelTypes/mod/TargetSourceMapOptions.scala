@@ -19,7 +19,8 @@ object TargetSourceMapOptions {
     __obj.asInstanceOf[TargetSourceMapOptions]
   }
   
-  extension [Self <: TargetSourceMapOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TargetSourceMapOptions] (val x: Self) extends AnyVal {
     
     inline def setInline(value: Boolean): Self = StObject.set(x, "inline", value.asInstanceOf[js.Any])
     

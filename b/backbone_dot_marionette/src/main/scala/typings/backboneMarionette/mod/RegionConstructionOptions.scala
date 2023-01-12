@@ -37,7 +37,8 @@ object RegionConstructionOptions {
     __obj.asInstanceOf[RegionConstructionOptions]
   }
   
-  extension [Self <: RegionConstructionOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RegionConstructionOptions] (val x: Self) extends AnyVal {
     
     inline def setAllowMissingEl(value: Boolean): Self = StObject.set(x, "allowMissingEl", value.asInstanceOf[js.Any])
     

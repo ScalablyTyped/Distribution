@@ -1735,7 +1735,8 @@ object ColoraccentboldBlue {
     __obj.asInstanceOf[ColoraccentboldBlue]
   }
   
-  extension [Self <: ColoraccentboldBlue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ColoraccentboldBlue] (val x: Self) extends AnyVal {
     
     inline def setColorDotaccentDotboldBlue(value: `--ds-accent-boldBlue`): Self = StObject.set(x, "color.accent.boldBlue", value.asInstanceOf[js.Any])
     

@@ -55,7 +55,8 @@ object NavigationContainerProps {
     __obj.asInstanceOf[NavigationContainerProps[State, Options, ScreenProps]]
   }
   
-  extension [Self <: NavigationContainerProps[?, ?, ?], State, Options, ScreenProps](x: Self & (NavigationContainerProps[State, Options, ScreenProps])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NavigationContainerProps[?, ?, ?], State, Options, ScreenProps] (val x: Self & (NavigationContainerProps[State, Options, ScreenProps])) extends AnyVal {
     
     inline def setEnableURLHandling(value: Boolean): Self = StObject.set(x, "enableURLHandling", value.asInstanceOf[js.Any])
     

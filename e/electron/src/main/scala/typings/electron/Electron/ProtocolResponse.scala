@@ -89,7 +89,8 @@ object ProtocolResponse {
     __obj.asInstanceOf[ProtocolResponse]
   }
   
-  extension [Self <: ProtocolResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProtocolResponse] (val x: Self) extends AnyVal {
     
     inline def setCharset(value: String): Self = StObject.set(x, "charset", value.asInstanceOf[js.Any])
     

@@ -68,7 +68,8 @@ object CacheGroupSource {
     __obj.asInstanceOf[CacheGroupSource]
   }
   
-  extension [Self <: CacheGroupSource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CacheGroupSource] (val x: Self) extends AnyVal {
     
     inline def setAutomaticNameDelimiter(value: String): Self = StObject.set(x, "automaticNameDelimiter", value.asInstanceOf[js.Any])
     

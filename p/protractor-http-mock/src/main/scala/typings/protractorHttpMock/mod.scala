@@ -143,7 +143,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[ReceivedRequest]
     }
     
-    extension [Self <: ReceivedRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReceivedRequest] (val x: Self) extends AnyVal {
       
       inline def setMethod(value: Method): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
@@ -179,7 +180,8 @@ object mod extends Shortcut {
         __obj.asInstanceOf[Delete[TResponse]]
       }
       
-      extension [Self <: Delete[?], TResponse](x: Self & Delete[TResponse]) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Delete[?], TResponse] (val x: Self & Delete[TResponse]) extends AnyVal {
         
         inline def setRequest(value: MethodPath): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
         
@@ -203,7 +205,8 @@ object mod extends Shortcut {
         __obj.asInstanceOf[Get[TResponse]]
       }
       
-      extension [Self <: Get[?], TResponse](x: Self & Get[TResponse]) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Get[?], TResponse] (val x: Self & Get[TResponse]) extends AnyVal {
         
         inline def setRequest(value: typings.protractorHttpMock.anon.Headers): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
         
@@ -227,7 +230,8 @@ object mod extends Shortcut {
         __obj.asInstanceOf[Head[TResponse]]
       }
       
-      extension [Self <: Head[?], TResponse](x: Self & Head[TResponse]) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Head[?], TResponse] (val x: Self & Head[TResponse]) extends AnyVal {
         
         inline def setRequest(value: Regex): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
         
@@ -253,7 +257,8 @@ object mod extends Shortcut {
         __obj.asInstanceOf[Jsonp[TResponse]]
       }
       
-      extension [Self <: Jsonp[?], TResponse](x: Self & Jsonp[TResponse]) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Jsonp[?], TResponse] (val x: Self & Jsonp[TResponse]) extends AnyVal {
         
         inline def setRequest(value: PathString): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
         
@@ -307,7 +312,8 @@ object mod extends Shortcut {
         __obj.asInstanceOf[Patch[TResponse]]
       }
       
-      extension [Self <: Patch[?], TResponse](x: Self & Patch[TResponse]) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Patch[?], TResponse] (val x: Self & Patch[TResponse]) extends AnyVal {
         
         inline def setRequest(value: MethodPathRegex): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
         
@@ -331,7 +337,8 @@ object mod extends Shortcut {
         __obj.asInstanceOf[Post[TResponse]]
       }
       
-      extension [Self <: Post[?], TResponse](x: Self & Post[TResponse]) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Post[?], TResponse] (val x: Self & Post[TResponse]) extends AnyVal {
         
         inline def setRequest(value: Path): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
         
@@ -355,7 +362,8 @@ object mod extends Shortcut {
         __obj.asInstanceOf[PostData[TResponse, TPayload]]
       }
       
-      extension [Self <: PostData[?, ?], TResponse, TPayload](x: Self & (PostData[TResponse, TPayload])) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: PostData[?, ?], TResponse, TPayload] (val x: Self & (PostData[TResponse, TPayload])) extends AnyVal {
         
         inline def setRequest(value: typings.protractorHttpMock.anon.Method[TPayload]): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
         
@@ -379,7 +387,8 @@ object mod extends Shortcut {
         __obj.asInstanceOf[Put[TResponse]]
       }
       
-      extension [Self <: Put[?], TResponse](x: Self & Put[TResponse]) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Put[?], TResponse] (val x: Self & Put[TResponse]) extends AnyVal {
         
         inline def setRequest(value: PathRegex): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
         
@@ -403,7 +412,8 @@ object mod extends Shortcut {
         __obj.asInstanceOf[PutData[TResponse, TPayload]]
       }
       
-      extension [Self <: PutData[?, ?], TResponse, TPayload](x: Self & (PutData[TResponse, TPayload])) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: PutData[?, ?], TResponse, TPayload] (val x: Self & (PutData[TResponse, TPayload])) extends AnyVal {
         
         inline def setRequest(value: DataMethod[TPayload]): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
         

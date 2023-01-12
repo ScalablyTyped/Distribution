@@ -28,7 +28,8 @@ object SynthesizeSpeechOutput {
     __obj.asInstanceOf[SynthesizeSpeechOutput]
   }
   
-  extension [Self <: SynthesizeSpeechOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SynthesizeSpeechOutput] (val x: Self) extends AnyVal {
     
     inline def setAudioStream(value: AudioStream): Self = StObject.set(x, "AudioStream", value.asInstanceOf[js.Any])
     

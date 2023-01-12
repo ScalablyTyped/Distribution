@@ -185,7 +185,8 @@ object ForwardingRule {
     __obj.asInstanceOf[ForwardingRule]
   }
   
-  extension [Self <: ForwardingRule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ForwardingRule] (val x: Self) extends AnyVal {
     
     inline def setAllPorts(value: Boolean): Self = StObject.set(x, "allPorts", value.asInstanceOf[js.Any])
     

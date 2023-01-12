@@ -17,7 +17,8 @@ object IValidationPath {
     __obj.asInstanceOf[IValidationPath]
   }
   
-  extension [Self <: IValidationPath](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IValidationPath] (val x: Self) extends AnyVal {
     
     inline def setChild(value: IValidationPath): Self = StObject.set(x, "child", value.asInstanceOf[js.Any])
     

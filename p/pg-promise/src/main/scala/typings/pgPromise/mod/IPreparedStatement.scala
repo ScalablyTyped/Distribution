@@ -28,7 +28,8 @@ object IPreparedStatement {
     __obj.asInstanceOf[IPreparedStatement]
   }
   
-  extension [Self <: IPreparedStatement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPreparedStatement] (val x: Self) extends AnyVal {
     
     inline def setBinary(value: Boolean): Self = StObject.set(x, "binary", value.asInstanceOf[js.Any])
     

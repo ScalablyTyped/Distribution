@@ -22,7 +22,8 @@ object AttrsCropAndResizeAttrs {
     __obj.asInstanceOf[AttrsCropAndResizeAttrs]
   }
   
-  extension [Self <: AttrsCropAndResizeAttrs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AttrsCropAndResizeAttrs] (val x: Self) extends AnyVal {
     
     inline def setAttrs(value: CropAndResizeAttrs): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
     

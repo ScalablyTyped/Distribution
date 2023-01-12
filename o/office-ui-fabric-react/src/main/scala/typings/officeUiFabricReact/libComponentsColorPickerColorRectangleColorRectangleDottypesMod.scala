@@ -28,7 +28,8 @@ object libComponentsColorPickerColorRectangleColorRectangleDottypesMod {
       __obj.asInstanceOf[IColorRectangle]
     }
     
-    extension [Self <: IColorRectangle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IColorRectangle] (val x: Self) extends AnyVal {
       
       inline def setColor(value: IColor): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     }
@@ -105,7 +106,8 @@ object libComponentsColorPickerColorRectangleColorRectangleDottypesMod {
       __obj.asInstanceOf[IColorRectangleProps]
     }
     
-    extension [Self <: IColorRectangleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IColorRectangleProps] (val x: Self) extends AnyVal {
       
       inline def setAriaDescription(value: String): Self = StObject.set(x, "ariaDescription", value.asInstanceOf[js.Any])
       
@@ -177,7 +179,8 @@ object libComponentsColorPickerColorRectangleColorRectangleDottypesMod {
       __obj.asInstanceOf[IColorRectangleStyleProps]
     }
     
-    extension [Self <: IColorRectangleStyleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IColorRectangleStyleProps] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -225,7 +228,8 @@ object libComponentsColorPickerColorRectangleColorRectangleDottypesMod {
       __obj.asInstanceOf[IColorRectangleStyles]
     }
     
-    extension [Self <: IColorRectangleStyles](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IColorRectangleStyles] (val x: Self) extends AnyVal {
       
       inline def setDark(value: IStyle): Self = StObject.set(x, "dark", value.asInstanceOf[js.Any])
       

@@ -18,7 +18,8 @@ object MsSmoothEncryptionSettings {
     __obj.asInstanceOf[MsSmoothEncryptionSettings]
   }
   
-  extension [Self <: MsSmoothEncryptionSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MsSmoothEncryptionSettings] (val x: Self) extends AnyVal {
     
     inline def setSpekeKeyProvider(value: SpekeKeyProvider): Self = StObject.set(x, "SpekeKeyProvider", value.asInstanceOf[js.Any])
     

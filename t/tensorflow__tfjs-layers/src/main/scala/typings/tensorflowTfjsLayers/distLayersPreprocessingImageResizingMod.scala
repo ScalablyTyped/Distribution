@@ -60,7 +60,8 @@ object distLayersPreprocessingImageResizingMod {
       __obj.asInstanceOf[ResizingArgs]
     }
     
-    extension [Self <: ResizingArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResizingArgs] (val x: Self) extends AnyVal {
       
       inline def setCropToAspectRatio(value: Boolean): Self = StObject.set(x, "cropToAspectRatio", value.asInstanceOf[js.Any])
       

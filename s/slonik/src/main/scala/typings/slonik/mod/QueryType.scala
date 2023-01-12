@@ -17,7 +17,8 @@ object QueryType {
     __obj.asInstanceOf[QueryType]
   }
   
-  extension [Self <: QueryType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryType] (val x: Self) extends AnyVal {
     
     inline def setSql(value: String): Self = StObject.set(x, "sql", value.asInstanceOf[js.Any])
     

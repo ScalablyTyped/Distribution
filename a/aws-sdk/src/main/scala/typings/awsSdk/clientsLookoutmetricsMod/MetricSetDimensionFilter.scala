@@ -23,7 +23,8 @@ object MetricSetDimensionFilter {
     __obj.asInstanceOf[MetricSetDimensionFilter]
   }
   
-  extension [Self <: MetricSetDimensionFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MetricSetDimensionFilter] (val x: Self) extends AnyVal {
     
     inline def setFilterList(value: FilterList): Self = StObject.set(x, "FilterList", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object MlGetDataFrameAnalyticsResponse {
     __obj.asInstanceOf[MlGetDataFrameAnalyticsResponse]
   }
   
-  extension [Self <: MlGetDataFrameAnalyticsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlGetDataFrameAnalyticsResponse] (val x: Self) extends AnyVal {
     
     inline def setCount(value: integer): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     

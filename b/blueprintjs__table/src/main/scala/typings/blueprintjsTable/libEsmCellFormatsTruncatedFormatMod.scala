@@ -141,7 +141,8 @@ object libEsmCellFormatsTruncatedFormatMod {
       __obj.asInstanceOf[ITrucatedFormateMeasureByApproximateOptions]
     }
     
-    extension [Self <: ITrucatedFormateMeasureByApproximateOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITrucatedFormateMeasureByApproximateOptions] (val x: Self) extends AnyVal {
       
       inline def setApproximateCharWidth(value: Double): Self = StObject.set(x, "approximateCharWidth", value.asInstanceOf[js.Any])
       
@@ -231,7 +232,8 @@ object libEsmCellFormatsTruncatedFormatMod {
       __obj.asInstanceOf[ITruncatedFormatProps]
     }
     
-    extension [Self <: ITruncatedFormatProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITruncatedFormatProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: String): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -284,7 +286,8 @@ object libEsmCellFormatsTruncatedFormatMod {
       __obj.asInstanceOf[ITruncatedFormatState]
     }
     
-    extension [Self <: ITruncatedFormatState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITruncatedFormatState] (val x: Self) extends AnyVal {
       
       inline def setIsPopoverOpen(value: Boolean): Self = StObject.set(x, "isPopoverOpen", value.asInstanceOf[js.Any])
       

@@ -86,7 +86,8 @@ object RunUpdateModel {
     __obj.asInstanceOf[RunUpdateModel]
   }
   
-  extension [Self <: RunUpdateModel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RunUpdateModel] (val x: Self) extends AnyVal {
     
     inline def setBuild(value: ShallowReference): Self = StObject.set(x, "build", value.asInstanceOf[js.Any])
     

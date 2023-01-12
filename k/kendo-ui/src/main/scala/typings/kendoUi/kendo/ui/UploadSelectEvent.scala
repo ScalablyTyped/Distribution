@@ -19,7 +19,8 @@ object UploadSelectEvent {
     __obj.asInstanceOf[UploadSelectEvent]
   }
   
-  extension [Self <: UploadSelectEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UploadSelectEvent] (val x: Self) extends AnyVal {
     
     inline def setE(value: Any): Self = StObject.set(x, "e", value.asInstanceOf[js.Any])
     

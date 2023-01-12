@@ -63,7 +63,8 @@ object JobParameters {
     __obj.asInstanceOf[JobParameters]
   }
   
-  extension [Self <: JobParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JobParameters] (val x: Self) extends AnyVal {
     
     inline def setArchiveId(value: String): Self = StObject.set(x, "ArchiveId", value.asInstanceOf[js.Any])
     

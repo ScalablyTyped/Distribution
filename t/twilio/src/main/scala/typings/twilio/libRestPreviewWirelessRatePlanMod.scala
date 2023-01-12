@@ -209,7 +209,8 @@ object libRestPreviewWirelessRatePlanMod {
       __obj.asInstanceOf[RatePlanInstanceUpdateOptions]
     }
     
-    extension [Self <: RatePlanInstanceUpdateOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RatePlanInstanceUpdateOptions] (val x: Self) extends AnyVal {
       
       inline def setFriendlyName(value: String): Self = StObject.set(x, "friendlyName", value.asInstanceOf[js.Any])
       
@@ -400,7 +401,8 @@ object libRestPreviewWirelessRatePlanMod {
       __obj.asInstanceOf[RatePlanListInstanceCreateOptions]
     }
     
-    extension [Self <: RatePlanListInstanceCreateOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RatePlanListInstanceCreateOptions] (val x: Self) extends AnyVal {
       
       inline def setCommandsEnabled(value: Boolean): Self = StObject.set(x, "commandsEnabled", value.asInstanceOf[js.Any])
       
@@ -487,7 +489,8 @@ object libRestPreviewWirelessRatePlanMod {
       __obj.asInstanceOf[RatePlanListInstanceEachOptions]
     }
     
-    extension [Self <: RatePlanListInstanceEachOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RatePlanListInstanceEachOptions] (val x: Self) extends AnyVal {
       
       inline def setCallback(
         value: (/* item */ RatePlanInstance, /* done */ js.Function1[/* err */ js.UndefOr[js.Error], Unit]) => Unit
@@ -536,7 +539,8 @@ object libRestPreviewWirelessRatePlanMod {
       __obj.asInstanceOf[RatePlanListInstanceOptions]
     }
     
-    extension [Self <: RatePlanListInstanceOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RatePlanListInstanceOptions] (val x: Self) extends AnyVal {
       
       inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
       
@@ -570,7 +574,8 @@ object libRestPreviewWirelessRatePlanMod {
       __obj.asInstanceOf[RatePlanListInstancePageOptions]
     }
     
-    extension [Self <: RatePlanListInstancePageOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RatePlanListInstancePageOptions] (val x: Self) extends AnyVal {
       
       inline def setPageNumber(value: Double): Self = StObject.set(x, "pageNumber", value.asInstanceOf[js.Any])
       
@@ -671,7 +676,8 @@ object libRestPreviewWirelessRatePlanMod {
       __obj.asInstanceOf[RatePlanResource]
     }
     
-    extension [Self <: RatePlanResource](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RatePlanResource] (val x: Self) extends AnyVal {
       
       inline def setAccount_sid(value: String): Self = StObject.set(x, "account_sid", value.asInstanceOf[js.Any])
       

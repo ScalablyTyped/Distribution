@@ -19,7 +19,8 @@ object Draft {
     __obj.asInstanceOf[Draft]
   }
   
-  extension [Self <: Draft](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Draft] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

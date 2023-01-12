@@ -23,7 +23,8 @@ object MediaStreamAttributes {
     __obj.asInstanceOf[MediaStreamAttributes]
   }
   
-  extension [Self <: MediaStreamAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MediaStreamAttributes] (val x: Self) extends AnyVal {
     
     inline def setFmtp(value: Fmtp): Self = StObject.set(x, "Fmtp", value.asInstanceOf[js.Any])
     

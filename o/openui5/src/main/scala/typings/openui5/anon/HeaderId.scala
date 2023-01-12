@@ -27,7 +27,8 @@ object HeaderId {
     __obj.asInstanceOf[HeaderId]
   }
   
-  extension [Self <: HeaderId](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HeaderId] (val x: Self) extends AnyVal {
     
     inline def setHeaderId(value: String): Self = StObject.set(x, "headerId", value.asInstanceOf[js.Any])
     

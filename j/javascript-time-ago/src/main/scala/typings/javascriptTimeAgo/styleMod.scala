@@ -30,7 +30,8 @@ object styleMod {
       __obj.asInstanceOf[CustomFormatterOptions]
     }
     
-    extension [Self <: CustomFormatterOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CustomFormatterOptions] (val x: Self) extends AnyVal {
       
       inline def setDate(value: js.Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
       
@@ -86,7 +87,8 @@ object styleMod {
       __obj.asInstanceOf[FormatStyle]
     }
     
-    extension [Self <: FormatStyle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FormatStyle] (val x: Self) extends AnyVal {
       
       inline def setCustom(value: /* options */ CustomFormatterOptions => js.UndefOr[String]): Self = StObject.set(x, "custom", js.Any.fromFunction1(value))
       

@@ -18,7 +18,8 @@ object PutMaintenanceStartTimeOutput {
     __obj.asInstanceOf[PutMaintenanceStartTimeOutput]
   }
   
-  extension [Self <: PutMaintenanceStartTimeOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutMaintenanceStartTimeOutput] (val x: Self) extends AnyVal {
     
     inline def setGatewayArn(value: GatewayArn): Self = StObject.set(x, "GatewayArn", value.asInstanceOf[js.Any])
     

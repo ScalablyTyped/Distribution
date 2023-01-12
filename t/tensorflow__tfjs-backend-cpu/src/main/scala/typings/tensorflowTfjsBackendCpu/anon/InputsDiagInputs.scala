@@ -19,7 +19,8 @@ object InputsDiagInputs {
     __obj.asInstanceOf[InputsDiagInputs]
   }
   
-  extension [Self <: InputsDiagInputs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InputsDiagInputs] (val x: Self) extends AnyVal {
     
     inline def setBackend(value: MathBackendCPU): Self = StObject.set(x, "backend", value.asInstanceOf[js.Any])
     

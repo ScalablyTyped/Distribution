@@ -79,7 +79,8 @@ object distTagSrcTagListMod {
       __obj.asInstanceOf[InnerTagListProps]
     }
     
-    extension [Self <: InnerTagListProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InnerTagListProps] (val x: Self) extends AnyVal {
       
       inline def setAs(value: ElementType[Any]): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
@@ -131,7 +132,8 @@ object distTagSrcTagListMod {
       __obj.asInstanceOf[TagItemProps]
     }
     
-    extension [Self <: TagItemProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TagItemProps] (val x: Self) extends AnyVal {
       
       inline def setItem(value: CollectionItem): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
       

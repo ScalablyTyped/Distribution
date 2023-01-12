@@ -29,7 +29,8 @@ object Cflags {
     __obj.asInstanceOf[Cflags]
   }
   
-  extension [Self <: Cflags](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Cflags] (val x: Self) extends AnyVal {
     
     inline def setCflags(value: js.Array[Any]): Self = StObject.set(x, "cflags", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object Unauthenticated {
     __obj.asInstanceOf[Unauthenticated]
   }
   
-  extension [Self <: Unauthenticated](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Unauthenticated] (val x: Self) extends AnyVal {
     
     inline def setEnabled(value: boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     

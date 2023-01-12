@@ -72,7 +72,8 @@ object mod {
       __obj.asInstanceOf[DeprecatedOptions]
     }
     
-    extension [Self <: DeprecatedOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeprecatedOptions] (val x: Self) extends AnyVal {
       
       inline def setAlternative(value: String): Self = StObject.set(x, "alternative", value.asInstanceOf[js.Any])
       

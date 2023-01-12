@@ -80,7 +80,8 @@ object mod {
       __obj.asInstanceOf[PixelmatchOptions]
     }
     
-    extension [Self <: PixelmatchOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PixelmatchOptions] (val x: Self) extends AnyVal {
       
       inline def setAaColor(value: RGBTuple): Self = StObject.set(x, "aaColor", value.asInstanceOf[js.Any])
       

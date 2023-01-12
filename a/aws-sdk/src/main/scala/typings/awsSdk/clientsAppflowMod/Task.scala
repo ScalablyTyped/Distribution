@@ -38,7 +38,8 @@ object Task {
     __obj.asInstanceOf[Task]
   }
   
-  extension [Self <: Task](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Task] (val x: Self) extends AnyVal {
     
     inline def setConnectorOperator(value: ConnectorOperator): Self = StObject.set(x, "connectorOperator", value.asInstanceOf[js.Any])
     

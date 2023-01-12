@@ -19,7 +19,8 @@ object ListDebuggeesResponse {
     __obj.asInstanceOf[ListDebuggeesResponse]
   }
   
-  extension [Self <: ListDebuggeesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListDebuggeesResponse] (val x: Self) extends AnyVal {
     
     inline def setDebuggees(value: js.Array[Debuggee]): Self = StObject.set(x, "debuggees", value.asInstanceOf[js.Any])
     

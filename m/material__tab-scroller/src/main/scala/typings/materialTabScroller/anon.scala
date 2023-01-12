@@ -23,7 +23,8 @@ object anon {
       __obj.asInstanceOf[ANIMATING]
     }
     
-    extension [Self <: ANIMATING](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ANIMATING] (val x: Self) extends AnyVal {
       
       inline def setANIMATING(value: String): Self = StObject.set(x, "ANIMATING", value.asInstanceOf[js.Any])
       
@@ -46,7 +47,8 @@ object anon {
       __obj.asInstanceOf[AREASELECTOR]
     }
     
-    extension [Self <: AREASELECTOR](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AREASELECTOR] (val x: Self) extends AnyVal {
       
       inline def setAREA_SELECTOR(value: String): Self = StObject.set(x, "AREA_SELECTOR", value.asInstanceOf[js.Any])
       
@@ -92,7 +94,8 @@ object anon {
       __obj.asInstanceOf[PartialMDCTabScrollerAdap]
     }
     
-    extension [Self <: PartialMDCTabScrollerAdap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialMDCTabScrollerAdap] (val x: Self) extends AnyVal {
       
       inline def setAddClass(value: /* className */ String => Unit): Self = StObject.set(x, "addClass", js.Any.fromFunction1(value))
       

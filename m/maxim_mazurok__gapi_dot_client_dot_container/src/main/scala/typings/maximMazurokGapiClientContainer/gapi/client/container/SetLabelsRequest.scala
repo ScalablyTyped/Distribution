@@ -43,7 +43,8 @@ object SetLabelsRequest {
     __obj.asInstanceOf[SetLabelsRequest]
   }
   
-  extension [Self <: SetLabelsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetLabelsRequest] (val x: Self) extends AnyVal {
     
     inline def setClusterId(value: String): Self = StObject.set(x, "clusterId", value.asInstanceOf[js.Any])
     

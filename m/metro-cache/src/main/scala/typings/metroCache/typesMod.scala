@@ -26,7 +26,8 @@ object typesMod {
       __obj.asInstanceOf[CacheStore[T]]
     }
     
-    extension [Self <: CacheStore[?], T](x: Self & CacheStore[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CacheStore[?], T] (val x: Self & CacheStore[T]) extends AnyVal {
       
       inline def setClear(value: () => Unit | js.Promise[Unit]): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
       

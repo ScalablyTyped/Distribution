@@ -16,7 +16,8 @@ object PickIOSbuildNumber {
     __obj.asInstanceOf[PickIOSbuildNumber]
   }
   
-  extension [Self <: PickIOSbuildNumber](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickIOSbuildNumber] (val x: Self) extends AnyVal {
     
     inline def setBuildNumber(value: String): Self = StObject.set(x, "buildNumber", value.asInstanceOf[js.Any])
     

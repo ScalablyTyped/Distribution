@@ -30,7 +30,8 @@ object mod {
       __obj.asInstanceOf[HookResponse[T]]
     }
     
-    extension [Self <: HookResponse[?], T /* <: Element */](x: Self & HookResponse[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HookResponse[?], T /* <: Element */] (val x: Self & HookResponse[T]) extends AnyVal {
       
       inline def setRef(value: /* instance */ T | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
     }
@@ -49,7 +50,8 @@ object mod {
       __obj.asInstanceOf[ObservedSize]
     }
     
-    extension [Self <: ObservedSize](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ObservedSize] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -93,7 +95,8 @@ object mod {
         __obj.asInstanceOf[ResizeObserverEntry]
       }
       
-      extension [Self <: ResizeObserverEntry](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ResizeObserverEntry] (val x: Self) extends AnyVal {
         
         inline def setDevicePixelContentBoxSize(value: js.Array[ResizeObserverSize]): Self = StObject.set(x, "devicePixelContentBoxSize", value.asInstanceOf[js.Any])
         

@@ -23,7 +23,8 @@ object GroupSummary {
     __obj.asInstanceOf[GroupSummary]
   }
   
-  extension [Self <: GroupSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GroupSummary] (val x: Self) extends AnyVal {
     
     inline def setGroupId(value: GroupId): Self = StObject.set(x, "GroupId", value.asInstanceOf[js.Any])
     

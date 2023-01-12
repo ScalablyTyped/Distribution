@@ -40,7 +40,8 @@ object CalendarPermission {
     __obj.asInstanceOf[CalendarPermission]
   }
   
-  extension [Self <: CalendarPermission](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CalendarPermission] (val x: Self) extends AnyVal {
     
     inline def setAllowedRoles(value: NullableOption[js.Array[CalendarRoleType]]): Self = StObject.set(x, "allowedRoles", value.asInstanceOf[js.Any])
     

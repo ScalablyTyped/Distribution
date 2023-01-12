@@ -18,7 +18,8 @@ object GetAdmChannelRequest {
     __obj.asInstanceOf[GetAdmChannelRequest]
   }
   
-  extension [Self <: GetAdmChannelRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetAdmChannelRequest] (val x: Self) extends AnyVal {
     
     inline def setApplicationId(value: string): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
   }

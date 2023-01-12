@@ -16,7 +16,8 @@ object InstanceGroupManagerStatusStatefulPerInstanceConfigs {
     __obj.asInstanceOf[InstanceGroupManagerStatusStatefulPerInstanceConfigs]
   }
   
-  extension [Self <: InstanceGroupManagerStatusStatefulPerInstanceConfigs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InstanceGroupManagerStatusStatefulPerInstanceConfigs] (val x: Self) extends AnyVal {
     
     inline def setAllEffective(value: Boolean): Self = StObject.set(x, "allEffective", value.asInstanceOf[js.Any])
     

@@ -46,7 +46,8 @@ object XGeneratedResultSet {
     __obj.asInstanceOf[XGeneratedResultSet]
   }
   
-  extension [Self <: XGeneratedResultSet](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XGeneratedResultSet] (val x: Self) extends AnyVal {
     
     inline def setGeneratedValues(value: XResultSet): Self = StObject.set(x, "GeneratedValues", value.asInstanceOf[js.Any])
     

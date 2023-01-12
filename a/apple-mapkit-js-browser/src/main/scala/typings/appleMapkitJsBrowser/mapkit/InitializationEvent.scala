@@ -19,7 +19,8 @@ object InitializationEvent {
     __obj.asInstanceOf[InitializationEvent]
   }
   
-  extension [Self <: InitializationEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InitializationEvent] (val x: Self) extends AnyVal {
     
     inline def setStatus(value: Initialized | Refreshed | Unauthorized | (`Too Many Requests`)): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }

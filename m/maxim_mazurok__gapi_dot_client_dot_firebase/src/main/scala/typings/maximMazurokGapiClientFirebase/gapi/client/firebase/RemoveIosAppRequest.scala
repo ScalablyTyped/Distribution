@@ -22,7 +22,8 @@ object RemoveIosAppRequest {
     __obj.asInstanceOf[RemoveIosAppRequest]
   }
   
-  extension [Self <: RemoveIosAppRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RemoveIosAppRequest] (val x: Self) extends AnyVal {
     
     inline def setAllowMissing(value: Boolean): Self = StObject.set(x, "allowMissing", value.asInstanceOf[js.Any])
     

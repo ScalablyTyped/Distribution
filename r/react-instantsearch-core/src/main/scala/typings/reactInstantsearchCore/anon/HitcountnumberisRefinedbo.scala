@@ -39,7 +39,8 @@ object HitcountnumberisRefinedbo {
     __obj.asInstanceOf[HitcountnumberisRefinedbo]
   }
   
-  extension [Self <: HitcountnumberisRefinedbo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HitcountnumberisRefinedbo] (val x: Self) extends AnyVal {
     
     inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     

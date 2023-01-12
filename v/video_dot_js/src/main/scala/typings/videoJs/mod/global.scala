@@ -22,7 +22,8 @@ object global {
       __obj.asInstanceOf[Window]
     }
     
-    extension [Self <: Window](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Window] (val x: Self) extends AnyVal {
       
       inline def setHELP_IMPROVE_VIDEOJS(value: Boolean): Self = StObject.set(x, "HELP_IMPROVE_VIDEOJS", value.asInstanceOf[js.Any])
       

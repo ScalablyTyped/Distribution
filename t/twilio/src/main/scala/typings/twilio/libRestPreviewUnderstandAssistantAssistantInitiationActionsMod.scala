@@ -182,7 +182,8 @@ object libRestPreviewUnderstandAssistantAssistantInitiationActionsMod {
       __obj.asInstanceOf[AssistantInitiationActionsInstanceUpdateOptions]
     }
     
-    extension [Self <: AssistantInitiationActionsInstanceUpdateOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AssistantInitiationActionsInstanceUpdateOptions] (val x: Self) extends AnyVal {
       
       inline def setInitiationActions(value: js.Object): Self = StObject.set(x, "initiationActions", value.asInstanceOf[js.Any])
       
@@ -249,7 +250,8 @@ object libRestPreviewUnderstandAssistantAssistantInitiationActionsMod {
       __obj.asInstanceOf[AssistantInitiationActionsResource]
     }
     
-    extension [Self <: AssistantInitiationActionsResource](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AssistantInitiationActionsResource] (val x: Self) extends AnyVal {
       
       inline def setAccount_sid(value: String): Self = StObject.set(x, "account_sid", value.asInstanceOf[js.Any])
       
@@ -272,7 +274,8 @@ object libRestPreviewUnderstandAssistantAssistantInitiationActionsMod {
       __obj.asInstanceOf[AssistantInitiationActionsSolution]
     }
     
-    extension [Self <: AssistantInitiationActionsSolution](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AssistantInitiationActionsSolution] (val x: Self) extends AnyVal {
       
       inline def setAssistantSid(value: String): Self = StObject.set(x, "assistantSid", value.asInstanceOf[js.Any])
       

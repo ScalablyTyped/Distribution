@@ -17,7 +17,8 @@ object LoadSubPackageOptions {
     __obj.asInstanceOf[LoadSubPackageOptions]
   }
   
-  extension [Self <: LoadSubPackageOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LoadSubPackageOptions] (val x: Self) extends AnyVal {
     
     inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
   }

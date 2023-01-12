@@ -24,7 +24,8 @@ object PlotKlingerSignalLineStylesOptions {
     __obj.asInstanceOf[PlotKlingerSignalLineStylesOptions]
   }
   
-  extension [Self <: PlotKlingerSignalLineStylesOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotKlingerSignalLineStylesOptions] (val x: Self) extends AnyVal {
     
     inline def setLineColor(value: ColorString): Self = StObject.set(x, "lineColor", value.asInstanceOf[js.Any])
     

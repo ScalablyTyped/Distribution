@@ -29,7 +29,8 @@ object ChangeSectionEqualColumnCountCommand {
     __obj.asInstanceOf[ChangeSectionEqualColumnCountCommand]
   }
   
-  extension [Self <: ChangeSectionEqualColumnCountCommand](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChangeSectionEqualColumnCountCommand] (val x: Self) extends AnyVal {
     
     inline def setExecute(value: Double => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction1(value))
     

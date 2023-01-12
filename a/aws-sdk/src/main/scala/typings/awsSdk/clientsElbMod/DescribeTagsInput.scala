@@ -18,7 +18,8 @@ object DescribeTagsInput {
     __obj.asInstanceOf[DescribeTagsInput]
   }
   
-  extension [Self <: DescribeTagsInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeTagsInput] (val x: Self) extends AnyVal {
     
     inline def setLoadBalancerNames(value: LoadBalancerNamesMax20): Self = StObject.set(x, "LoadBalancerNames", value.asInstanceOf[js.Any])
     

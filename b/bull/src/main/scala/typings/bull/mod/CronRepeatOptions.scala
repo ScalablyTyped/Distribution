@@ -25,7 +25,8 @@ object CronRepeatOptions {
     __obj.asInstanceOf[CronRepeatOptions]
   }
   
-  extension [Self <: CronRepeatOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CronRepeatOptions] (val x: Self) extends AnyVal {
     
     inline def setCron(value: String): Self = StObject.set(x, "cron", value.asInstanceOf[js.Any])
     

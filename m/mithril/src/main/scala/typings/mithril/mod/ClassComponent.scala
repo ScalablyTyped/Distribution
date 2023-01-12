@@ -41,7 +41,8 @@ object ClassComponent {
     __obj.asInstanceOf[ClassComponent[A]]
   }
   
-  extension [Self <: ClassComponent[?], A](x: Self & ClassComponent[A]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClassComponent[?], A] (val x: Self & ClassComponent[A]) extends AnyVal {
     
     inline def setOnbeforeremove(value: /* vnode */ VnodeDOM[A, ClassComponent[A]] => js.Promise[Any] | Unit): Self = StObject.set(x, "onbeforeremove", js.Any.fromFunction1(value))
     

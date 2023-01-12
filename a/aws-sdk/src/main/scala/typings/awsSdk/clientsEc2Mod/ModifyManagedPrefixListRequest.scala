@@ -48,7 +48,8 @@ object ModifyManagedPrefixListRequest {
     __obj.asInstanceOf[ModifyManagedPrefixListRequest]
   }
   
-  extension [Self <: ModifyManagedPrefixListRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModifyManagedPrefixListRequest] (val x: Self) extends AnyVal {
     
     inline def setAddEntries(value: AddPrefixListEntries): Self = StObject.set(x, "AddEntries", value.asInstanceOf[js.Any])
     

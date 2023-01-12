@@ -18,7 +18,8 @@ object ElasticsearchRetryOptions {
     __obj.asInstanceOf[ElasticsearchRetryOptions]
   }
   
-  extension [Self <: ElasticsearchRetryOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ElasticsearchRetryOptions] (val x: Self) extends AnyVal {
     
     inline def setDurationInSeconds(value: ElasticsearchRetryDurationInSeconds): Self = StObject.set(x, "DurationInSeconds", value.asInstanceOf[js.Any])
     

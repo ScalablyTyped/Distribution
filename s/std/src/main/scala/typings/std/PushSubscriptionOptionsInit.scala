@@ -19,7 +19,8 @@ object PushSubscriptionOptionsInit {
     __obj.asInstanceOf[PushSubscriptionOptionsInit]
   }
   
-  extension [Self <: PushSubscriptionOptionsInit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PushSubscriptionOptionsInit] (val x: Self) extends AnyVal {
     
     inline def setApplicationServerKey(value: BufferSource | java.lang.String): Self = StObject.set(x, "applicationServerKey", value.asInstanceOf[js.Any])
     

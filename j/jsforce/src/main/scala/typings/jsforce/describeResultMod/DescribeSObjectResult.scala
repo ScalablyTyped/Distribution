@@ -115,7 +115,8 @@ object DescribeSObjectResult {
     __obj.asInstanceOf[DescribeSObjectResult]
   }
   
-  extension [Self <: DescribeSObjectResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeSObjectResult] (val x: Self) extends AnyVal {
     
     inline def setActionOverrides(value: maybe[js.Array[ActionOverride]]): Self = StObject.set(x, "actionOverrides", value.asInstanceOf[js.Any])
     

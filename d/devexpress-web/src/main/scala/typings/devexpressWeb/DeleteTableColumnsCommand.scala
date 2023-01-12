@@ -23,7 +23,8 @@ object DeleteTableColumnsCommand {
     __obj.asInstanceOf[DeleteTableColumnsCommand]
   }
   
-  extension [Self <: DeleteTableColumnsCommand](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteTableColumnsCommand] (val x: Self) extends AnyVal {
     
     inline def setExecute(value: () => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction0(value))
   }

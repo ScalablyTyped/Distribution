@@ -28,7 +28,8 @@ object JdbcTarget {
     __obj.asInstanceOf[JdbcTarget]
   }
   
-  extension [Self <: JdbcTarget](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JdbcTarget] (val x: Self) extends AnyVal {
     
     inline def setConnectionName(value: ConnectionName): Self = StObject.set(x, "ConnectionName", value.asInstanceOf[js.Any])
     

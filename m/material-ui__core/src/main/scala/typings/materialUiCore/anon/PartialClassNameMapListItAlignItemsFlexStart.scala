@@ -18,7 +18,8 @@ object PartialClassNameMapListItAlignItemsFlexStart {
     __obj.asInstanceOf[PartialClassNameMapListItAlignItemsFlexStart]
   }
   
-  extension [Self <: PartialClassNameMapListItAlignItemsFlexStart](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialClassNameMapListItAlignItemsFlexStart] (val x: Self) extends AnyVal {
     
     inline def setAlignItemsFlexStart(value: String): Self = StObject.set(x, "alignItemsFlexStart", value.asInstanceOf[js.Any])
     

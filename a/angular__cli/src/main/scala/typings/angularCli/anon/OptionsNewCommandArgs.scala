@@ -25,7 +25,8 @@ object OptionsNewCommandArgs {
     __obj.asInstanceOf[OptionsNewCommandArgs]
   }
   
-  extension [Self <: OptionsNewCommandArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OptionsNewCommandArgs] (val x: Self) extends AnyVal {
     
     inline def setCollection(value: String): Self = StObject.set(x, "collection", value.asInstanceOf[js.Any])
     

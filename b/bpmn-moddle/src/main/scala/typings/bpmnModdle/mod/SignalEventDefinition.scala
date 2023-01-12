@@ -17,7 +17,8 @@ object SignalEventDefinition {
     __obj.asInstanceOf[SignalEventDefinition]
   }
   
-  extension [Self <: SignalEventDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SignalEventDefinition] (val x: Self) extends AnyVal {
     
     inline def setSignalRef(value: Signal): Self = StObject.set(x, "signalRef", value.asInstanceOf[js.Any])
   }

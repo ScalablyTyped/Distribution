@@ -20,7 +20,8 @@ object CreateBLEPeripheralServerSuccessCallbackResult {
     __obj.asInstanceOf[CreateBLEPeripheralServerSuccessCallbackResult]
   }
   
-  extension [Self <: CreateBLEPeripheralServerSuccessCallbackResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateBLEPeripheralServerSuccessCallbackResult] (val x: Self) extends AnyVal {
     
     inline def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
     

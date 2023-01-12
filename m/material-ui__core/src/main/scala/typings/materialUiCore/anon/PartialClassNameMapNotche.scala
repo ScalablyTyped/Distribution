@@ -24,7 +24,8 @@ object PartialClassNameMapNotche {
     __obj.asInstanceOf[PartialClassNameMapNotche]
   }
   
-  extension [Self <: PartialClassNameMapNotche](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialClassNameMapNotche] (val x: Self) extends AnyVal {
     
     inline def setDisabled(value: String): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     

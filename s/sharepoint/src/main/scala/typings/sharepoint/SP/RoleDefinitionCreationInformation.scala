@@ -45,7 +45,8 @@ object RoleDefinitionCreationInformation {
     __obj.asInstanceOf[RoleDefinitionCreationInformation]
   }
   
-  extension [Self <: RoleDefinitionCreationInformation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RoleDefinitionCreationInformation] (val x: Self) extends AnyVal {
     
     inline def setGet_basePermissions(value: () => BasePermissions): Self = StObject.set(x, "get_basePermissions", js.Any.fromFunction0(value))
     

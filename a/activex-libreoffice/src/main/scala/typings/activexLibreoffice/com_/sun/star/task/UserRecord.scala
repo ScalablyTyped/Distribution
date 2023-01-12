@@ -18,7 +18,8 @@ object UserRecord {
     __obj.asInstanceOf[UserRecord]
   }
   
-  extension [Self <: UserRecord](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UserRecord] (val x: Self) extends AnyVal {
     
     inline def setPasswords(value: SafeArray[String]): Self = StObject.set(x, "Passwords", value.asInstanceOf[js.Any])
     

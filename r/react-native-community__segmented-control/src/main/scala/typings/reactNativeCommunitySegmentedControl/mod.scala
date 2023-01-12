@@ -58,7 +58,8 @@ object mod {
       __obj.asInstanceOf[FontStyle]
     }
     
-    extension [Self <: FontStyle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FontStyle] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -93,7 +94,8 @@ object mod {
       __obj.asInstanceOf[NativeSegmentedControlIOSChangeEvent]
     }
     
-    extension [Self <: NativeSegmentedControlIOSChangeEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NativeSegmentedControlIOSChangeEvent] (val x: Self) extends AnyVal {
       
       inline def setSelectedSegmentIndex(value: Double): Self = StObject.set(x, "selectedSegmentIndex", value.asInstanceOf[js.Any])
       
@@ -200,7 +202,8 @@ object mod {
       __obj.asInstanceOf[SegmentedControlProps]
     }
     
-    extension [Self <: SegmentedControlProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SegmentedControlProps] (val x: Self) extends AnyVal {
       
       inline def setActiveFontStyle(value: FontStyle): Self = StObject.set(x, "activeFontStyle", value.asInstanceOf[js.Any])
       

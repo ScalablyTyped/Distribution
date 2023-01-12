@@ -18,7 +18,8 @@ object DataPrivacy {
     __obj.asInstanceOf[DataPrivacy]
   }
   
-  extension [Self <: DataPrivacy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataPrivacy] (val x: Self) extends AnyVal {
     
     inline def setChildDirected(value: ChildDirected): Self = StObject.set(x, "childDirected", value.asInstanceOf[js.Any])
   }

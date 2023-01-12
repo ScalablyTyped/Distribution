@@ -33,7 +33,8 @@ object buildSharpDottypesMod {
       __obj.asInstanceOf[FlattenOptions]
     }
     
-    extension [Self <: FlattenOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FlattenOptions] (val x: Self) extends AnyVal {
       
       inline def setBackground(value: String): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
       
@@ -122,7 +123,8 @@ object buildSharpDottypesMod {
       __obj.asInstanceOf[RemoveAlphaOptions]
     }
     
-    extension [Self <: RemoveAlphaOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RemoveAlphaOptions] (val x: Self) extends AnyVal {
       
       inline def setOperation(value: removeAlpha): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
     }
@@ -157,7 +159,8 @@ object buildSharpDottypesMod {
       __obj.asInstanceOf[ResizeOptions]
     }
     
-    extension [Self <: ResizeOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResizeOptions] (val x: Self) extends AnyVal {
       
       inline def setBackground(value: String): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
       
@@ -244,7 +247,8 @@ object buildSharpDottypesMod {
       __obj.asInstanceOf[SharpGlobalOptions]
     }
     
-    extension [Self <: SharpGlobalOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SharpGlobalOptions] (val x: Self) extends AnyVal {
       
       inline def setCompressionLevel(value: _empty): Self = StObject.set(x, "compressionLevel", value.asInstanceOf[js.Any])
       

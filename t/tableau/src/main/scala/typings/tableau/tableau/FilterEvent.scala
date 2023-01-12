@@ -30,7 +30,8 @@ object FilterEvent {
     __obj.asInstanceOf[FilterEvent]
   }
   
-  extension [Self <: FilterEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FilterEvent] (val x: Self) extends AnyVal {
     
     inline def setGetFieldName(value: () => String): Self = StObject.set(x, "getFieldName", js.Any.fromFunction0(value))
     

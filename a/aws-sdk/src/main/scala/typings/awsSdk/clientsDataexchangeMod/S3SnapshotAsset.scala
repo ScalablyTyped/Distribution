@@ -18,7 +18,8 @@ object S3SnapshotAsset {
     __obj.asInstanceOf[S3SnapshotAsset]
   }
   
-  extension [Self <: S3SnapshotAsset](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: S3SnapshotAsset] (val x: Self) extends AnyVal {
     
     inline def setSize(value: doubleMin0): Self = StObject.set(x, "Size", value.asInstanceOf[js.Any])
   }

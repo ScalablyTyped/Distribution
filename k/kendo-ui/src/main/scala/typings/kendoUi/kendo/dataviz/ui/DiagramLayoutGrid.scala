@@ -23,7 +23,8 @@ object DiagramLayoutGrid {
     __obj.asInstanceOf[DiagramLayoutGrid]
   }
   
-  extension [Self <: DiagramLayoutGrid](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DiagramLayoutGrid] (val x: Self) extends AnyVal {
     
     inline def setComponentSpacingX(value: Double): Self = StObject.set(x, "componentSpacingX", value.asInstanceOf[js.Any])
     

@@ -33,7 +33,8 @@ object NonDirectionalSuspenseListProps {
     __obj.asInstanceOf[NonDirectionalSuspenseListProps]
   }
   
-  extension [Self <: NonDirectionalSuspenseListProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NonDirectionalSuspenseListProps] (val x: Self) extends AnyVal {
     
     inline def setRevealOrder(
       value: Exclude[

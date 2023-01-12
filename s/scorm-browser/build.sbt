@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "scorm-browser"
-version := "1.0-dt-20211202Z-15e793"
+version := "1.0-dt-20211202Z-59fdc0"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

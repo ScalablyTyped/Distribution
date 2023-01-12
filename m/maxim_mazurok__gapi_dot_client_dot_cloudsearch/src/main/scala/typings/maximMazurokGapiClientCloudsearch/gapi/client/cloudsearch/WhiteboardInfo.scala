@@ -25,7 +25,8 @@ object WhiteboardInfo {
     __obj.asInstanceOf[WhiteboardInfo]
   }
   
-  extension [Self <: WhiteboardInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WhiteboardInfo] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

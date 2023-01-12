@@ -19,7 +19,8 @@ object Win32LobAppReturnCode {
     __obj.asInstanceOf[Win32LobAppReturnCode]
   }
   
-  extension [Self <: Win32LobAppReturnCode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Win32LobAppReturnCode] (val x: Self) extends AnyVal {
     
     inline def setReturnCode(value: Double): Self = StObject.set(x, "returnCode", value.asInstanceOf[js.Any])
     

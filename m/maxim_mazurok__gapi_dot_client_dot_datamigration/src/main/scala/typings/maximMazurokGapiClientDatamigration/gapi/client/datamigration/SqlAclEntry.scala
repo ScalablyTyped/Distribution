@@ -25,7 +25,8 @@ object SqlAclEntry {
     __obj.asInstanceOf[SqlAclEntry]
   }
   
-  extension [Self <: SqlAclEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SqlAclEntry] (val x: Self) extends AnyVal {
     
     inline def setExpireTime(value: String): Self = StObject.set(x, "expireTime", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object TapBip32Derivation {
     __obj.asInstanceOf[TapBip32Derivation]
   }
   
-  extension [Self <: TapBip32Derivation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TapBip32Derivation] (val x: Self) extends AnyVal {
     
     inline def setLeafHashes(value: js.Array[Buffer]): Self = StObject.set(x, "leafHashes", value.asInstanceOf[js.Any])
     

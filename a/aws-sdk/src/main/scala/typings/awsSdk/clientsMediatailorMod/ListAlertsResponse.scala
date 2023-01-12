@@ -23,7 +23,8 @@ object ListAlertsResponse {
     __obj.asInstanceOf[ListAlertsResponse]
   }
   
-  extension [Self <: ListAlertsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListAlertsResponse] (val x: Self) extends AnyVal {
     
     inline def setItems(value: listOfAlert): Self = StObject.set(x, "Items", value.asInstanceOf[js.Any])
     

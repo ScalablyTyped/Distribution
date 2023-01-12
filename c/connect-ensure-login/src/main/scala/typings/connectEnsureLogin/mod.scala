@@ -111,7 +111,8 @@ object mod {
       __obj.asInstanceOf[LoggedInOptions]
     }
     
-    extension [Self <: LoggedInOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LoggedInOptions] (val x: Self) extends AnyVal {
       
       inline def setRedirectTo(value: String): Self = StObject.set(x, "redirectTo", value.asInstanceOf[js.Any])
       
@@ -137,7 +138,8 @@ object mod {
       __obj.asInstanceOf[LoggedOutOptions]
     }
     
-    extension [Self <: LoggedOutOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LoggedOutOptions] (val x: Self) extends AnyVal {
       
       inline def setRedirectTo(value: String): Self = StObject.set(x, "redirectTo", value.asInstanceOf[js.Any])
       

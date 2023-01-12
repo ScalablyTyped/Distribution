@@ -23,7 +23,8 @@ object GenerateChangeSetRequest {
     __obj.asInstanceOf[GenerateChangeSetRequest]
   }
   
-  extension [Self <: GenerateChangeSetRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GenerateChangeSetRequest] (val x: Self) extends AnyVal {
     
     inline def setAppId(value: AppId): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object DisableImportFindingsForProductRequest {
     __obj.asInstanceOf[DisableImportFindingsForProductRequest]
   }
   
-  extension [Self <: DisableImportFindingsForProductRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisableImportFindingsForProductRequest] (val x: Self) extends AnyVal {
     
     inline def setProductSubscriptionArn(value: NonEmptyString): Self = StObject.set(x, "ProductSubscriptionArn", value.asInstanceOf[js.Any])
   }

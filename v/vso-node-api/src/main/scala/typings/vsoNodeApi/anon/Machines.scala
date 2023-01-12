@@ -17,7 +17,8 @@ object Machines {
     __obj.asInstanceOf[Machines]
   }
   
-  extension [Self <: Machines](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Machines] (val x: Self) extends AnyVal {
     
     inline def setMachines(value: scala.Double): Self = StObject.set(x, "machines", value.asInstanceOf[js.Any])
     

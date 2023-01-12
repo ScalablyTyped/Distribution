@@ -18,7 +18,8 @@ object HystrixSSEStream_ {
     __obj.asInstanceOf[HystrixSSEStream_]
   }
   
-  extension [Self <: HystrixSSEStream_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HystrixSSEStream_] (val x: Self) extends AnyVal {
     
     inline def setToCommandJson(value: Any => String): Self = StObject.set(x, "toCommandJson", js.Any.fromFunction1(value))
     

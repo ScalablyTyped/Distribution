@@ -24,7 +24,8 @@ object anon {
       __obj.asInstanceOf[Attributes]
     }
     
-    extension [Self <: Attributes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Attributes] (val x: Self) extends AnyVal {
       
       inline def setAttributes(value: js.Array[Parameter]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
@@ -61,7 +62,8 @@ object anon {
       __obj.asInstanceOf[Fragment]
     }
     
-    extension [Self <: Fragment](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Fragment] (val x: Self) extends AnyVal {
       
       inline def setAttributes(value: js.Array[Parameter]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       

@@ -26,7 +26,8 @@ object InlineQueryResultCachedAudio {
     __obj.asInstanceOf[InlineQueryResultCachedAudio]
   }
   
-  extension [Self <: InlineQueryResultCachedAudio](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InlineQueryResultCachedAudio] (val x: Self) extends AnyVal {
     
     inline def setAudio_file_id(value: String): Self = StObject.set(x, "audio_file_id", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object DialogflowV1MessageSuggestions {
     __obj.asInstanceOf[DialogflowV1MessageSuggestions]
   }
   
-  extension [Self <: DialogflowV1MessageSuggestions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DialogflowV1MessageSuggestions] (val x: Self) extends AnyVal {
     
     inline def setSuggestions(value: js.Array[DialogflowV1MessageSuggestion]): Self = StObject.set(x, "suggestions", value.asInstanceOf[js.Any])
     

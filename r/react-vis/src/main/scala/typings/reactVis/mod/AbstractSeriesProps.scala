@@ -211,7 +211,8 @@ object AbstractSeriesProps {
     __obj.asInstanceOf[AbstractSeriesProps[T]]
   }
   
-  extension [Self <: AbstractSeriesProps[?], T /* <: AbstractSeriesPoint */](x: Self & AbstractSeriesProps[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AbstractSeriesProps[?], T /* <: AbstractSeriesPoint */] (val x: Self & AbstractSeriesProps[T]) extends AnyVal {
     
     inline def setAnimation(value: String | AnimationParam | Boolean): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     

@@ -35,7 +35,8 @@ object SjclEllipticalPoint {
     __obj.asInstanceOf[SjclEllipticalPoint]
   }
   
-  extension [Self <: SjclEllipticalPoint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SjclEllipticalPoint] (val x: Self) extends AnyVal {
     
     inline def setIsValid(value: () => Boolean): Self = StObject.set(x, "isValid", js.Any.fromFunction0(value))
     

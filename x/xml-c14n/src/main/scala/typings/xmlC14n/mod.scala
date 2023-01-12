@@ -28,7 +28,8 @@ object mod {
       __obj.asInstanceOf[Canonicalize]
     }
     
-    extension [Self <: Canonicalize](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Canonicalize] (val x: Self) extends AnyVal {
       
       inline def setCanonicalise(value: (Node, canonicaliseCb) => Unit): Self = StObject.set(x, "canonicalise", js.Any.fromFunction2(value))
       
@@ -62,7 +63,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setIncludeComments(value: Boolean): Self = StObject.set(x, "includeComments", value.asInstanceOf[js.Any])
       

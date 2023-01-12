@@ -118,7 +118,8 @@ object FieldSourceProfileIds {
     __obj.asInstanceOf[FieldSourceProfileIds]
   }
   
-  extension [Self <: FieldSourceProfileIds](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FieldSourceProfileIds] (val x: Self) extends AnyVal {
     
     inline def setAccountNumber(value: uuid): Self = StObject.set(x, "AccountNumber", value.asInstanceOf[js.Any])
     

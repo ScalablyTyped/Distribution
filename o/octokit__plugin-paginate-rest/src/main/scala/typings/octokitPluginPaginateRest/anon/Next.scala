@@ -15,7 +15,8 @@ object Next {
     __obj.asInstanceOf[Next]
   }
   
-  extension [Self <: Next](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Next] (val x: Self) extends AnyVal {
     
     inline def setNext(value: () => js.Promise[Done | Value | DoneValue]): Self = StObject.set(x, "next", js.Any.fromFunction0(value))
   }

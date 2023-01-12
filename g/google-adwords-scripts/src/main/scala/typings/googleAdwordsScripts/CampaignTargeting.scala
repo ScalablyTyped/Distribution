@@ -48,7 +48,8 @@ object CampaignTargeting {
     __obj.asInstanceOf[CampaignTargeting[SearchCampaignAudience, SearchCampaignExcludedAudience]]
   }
   
-  extension [Self <: CampaignTargeting[?, ?], SearchCampaignAudience, SearchCampaignExcludedAudience](x: Self & (CampaignTargeting[SearchCampaignAudience, SearchCampaignExcludedAudience])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CampaignTargeting[?, ?], SearchCampaignAudience, SearchCampaignExcludedAudience] (val x: Self & (CampaignTargeting[SearchCampaignAudience, SearchCampaignExcludedAudience])) extends AnyVal {
     
     inline def setAdSchedules(value: () => AdWordsSelector[AdSchedule]): Self = StObject.set(x, "adSchedules", js.Any.fromFunction0(value))
     

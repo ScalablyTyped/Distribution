@@ -23,7 +23,8 @@ object ASPxClientTextAnnotation {
     __obj.asInstanceOf[ASPxClientTextAnnotation]
   }
   
-  extension [Self <: ASPxClientTextAnnotation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientTextAnnotation] (val x: Self) extends AnyVal {
     
     inline def setLines(value: js.Array[String]): Self = StObject.set(x, "lines", value.asInstanceOf[js.Any])
     

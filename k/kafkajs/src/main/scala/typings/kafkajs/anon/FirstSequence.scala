@@ -20,7 +20,8 @@ object FirstSequence {
     __obj.asInstanceOf[FirstSequence]
   }
   
-  extension [Self <: FirstSequence](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FirstSequence] (val x: Self) extends AnyVal {
     
     inline def setFirstSequence(value: Double): Self = StObject.set(x, "firstSequence", value.asInstanceOf[js.Any])
     

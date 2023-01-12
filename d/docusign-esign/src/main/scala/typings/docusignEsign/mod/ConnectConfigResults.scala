@@ -23,7 +23,8 @@ object ConnectConfigResults {
     __obj.asInstanceOf[ConnectConfigResults]
   }
   
-  extension [Self <: ConnectConfigResults](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConnectConfigResults] (val x: Self) extends AnyVal {
     
     inline def setConfigurations(value: js.Array[ConnectCustomConfiguration]): Self = StObject.set(x, "configurations", value.asInstanceOf[js.Any])
     

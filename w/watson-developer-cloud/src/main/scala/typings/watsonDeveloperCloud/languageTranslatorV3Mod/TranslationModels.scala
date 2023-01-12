@@ -17,7 +17,8 @@ object TranslationModels {
     __obj.asInstanceOf[TranslationModels]
   }
   
-  extension [Self <: TranslationModels](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TranslationModels] (val x: Self) extends AnyVal {
     
     inline def setModels(value: js.Array[TranslationModel]): Self = StObject.set(x, "models", value.asInstanceOf[js.Any])
     

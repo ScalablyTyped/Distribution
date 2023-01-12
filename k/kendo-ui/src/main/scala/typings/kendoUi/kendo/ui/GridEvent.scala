@@ -19,7 +19,8 @@ object GridEvent {
     __obj.asInstanceOf[GridEvent]
   }
   
-  extension [Self <: GridEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GridEvent] (val x: Self) extends AnyVal {
     
     inline def setIsDefaultPrevented(value: () => Boolean): Self = StObject.set(x, "isDefaultPrevented", js.Any.fromFunction0(value))
     

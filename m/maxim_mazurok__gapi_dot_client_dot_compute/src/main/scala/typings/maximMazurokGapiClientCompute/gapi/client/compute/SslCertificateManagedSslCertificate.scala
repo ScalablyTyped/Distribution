@@ -27,7 +27,8 @@ object SslCertificateManagedSslCertificate {
     __obj.asInstanceOf[SslCertificateManagedSslCertificate]
   }
   
-  extension [Self <: SslCertificateManagedSslCertificate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SslCertificateManagedSslCertificate] (val x: Self) extends AnyVal {
     
     inline def setDomainStatus(
       value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any

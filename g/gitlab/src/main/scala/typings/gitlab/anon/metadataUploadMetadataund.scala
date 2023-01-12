@@ -19,7 +19,8 @@ object metadataUploadMetadataund {
     __obj.asInstanceOf[metadataUploadMetadataund]
   }
   
-  extension [Self <: metadataUploadMetadataund](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: metadataUploadMetadataund] (val x: Self) extends AnyVal {
     
     inline def setMetadata(value: UploadMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     

@@ -52,7 +52,8 @@ object ModuleOptionsNormalized {
     __obj.asInstanceOf[ModuleOptionsNormalized]
   }
   
-  extension [Self <: ModuleOptionsNormalized](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModuleOptionsNormalized] (val x: Self) extends AnyVal {
     
     inline def setDefaultRules(value: js.Array[RuleSetRule | DotDotDot]): Self = StObject.set(x, "defaultRules", value.asInstanceOf[js.Any])
     

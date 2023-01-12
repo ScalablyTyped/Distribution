@@ -18,7 +18,8 @@ object StartCrawlerScheduleRequest {
     __obj.asInstanceOf[StartCrawlerScheduleRequest]
   }
   
-  extension [Self <: StartCrawlerScheduleRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartCrawlerScheduleRequest] (val x: Self) extends AnyVal {
     
     inline def setCrawlerName(value: NameString): Self = StObject.set(x, "CrawlerName", value.asInstanceOf[js.Any])
   }

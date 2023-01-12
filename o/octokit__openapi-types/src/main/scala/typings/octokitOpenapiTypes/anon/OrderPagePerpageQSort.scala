@@ -34,7 +34,8 @@ object OrderPagePerpageQSort {
     __obj.asInstanceOf[OrderPagePerpageQSort]
   }
   
-  extension [Self <: OrderPagePerpageQSort](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OrderPagePerpageQSort] (val x: Self) extends AnyVal {
     
     inline def setOrder(value: desc | asc): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
     

@@ -25,7 +25,8 @@ object ClientCertificatePEMCertificatePath {
     __obj.asInstanceOf[ClientCertificatePEMCertificatePath]
   }
   
-  extension [Self <: ClientCertificatePEMCertificatePath](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClientCertificatePEMCertificatePath] (val x: Self) extends AnyVal {
     
     inline def setCertificatePassword(value: String): Self = StObject.set(x, "certificatePassword", value.asInstanceOf[js.Any])
     

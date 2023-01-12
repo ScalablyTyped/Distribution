@@ -27,7 +27,8 @@ object SecurityQueryApiKeysRequest {
     __obj.asInstanceOf[SecurityQueryApiKeysRequest]
   }
   
-  extension [Self <: SecurityQueryApiKeysRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SecurityQueryApiKeysRequest] (val x: Self) extends AnyVal {
     
     inline def setFrom(value: integer): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     

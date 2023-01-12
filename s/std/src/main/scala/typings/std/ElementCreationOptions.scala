@@ -16,7 +16,8 @@ object ElementCreationOptions {
     __obj.asInstanceOf[ElementCreationOptions]
   }
   
-  extension [Self <: ElementCreationOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ElementCreationOptions] (val x: Self) extends AnyVal {
     
     inline def setIs(value: java.lang.String): Self = StObject.set(x, "is", value.asInstanceOf[js.Any])
     

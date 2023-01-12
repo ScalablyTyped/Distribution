@@ -133,7 +133,8 @@ object PartialRecordVgEncodeChan {
     __obj.asInstanceOf[PartialRecordVgEncodeChan]
   }
   
-  extension [Self <: PartialRecordVgEncodeChan](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialRecordVgEncodeChan] (val x: Self) extends AnyVal {
     
     inline def setAlign(value: VgValueRef | js.Array[VgValueRefteststringundef]): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     

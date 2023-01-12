@@ -45,7 +45,8 @@ object libHttpRequestBodyMod {
       __obj.asInstanceOf[RequestBody]
     }
     
-    extension [Self <: RequestBody](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequestBody] (val x: Self) extends AnyVal {
       
       inline def setAsJson(value: () => Any): Self = StObject.set(x, "asJson", js.Any.fromFunction0(value))
       

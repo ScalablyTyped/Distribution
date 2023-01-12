@@ -134,7 +134,8 @@ object mod {
       __obj.asInstanceOf[LogData]
     }
     
-    extension [Self <: LogData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LogData] (val x: Self) extends AnyVal {
       
       inline def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
       

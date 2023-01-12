@@ -26,7 +26,8 @@ object MetricStreamStatisticsConfiguration {
     __obj.asInstanceOf[MetricStreamStatisticsConfiguration]
   }
   
-  extension [Self <: MetricStreamStatisticsConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MetricStreamStatisticsConfiguration] (val x: Self) extends AnyVal {
     
     inline def setAdditionalStatistics(value: MetricStreamStatisticsAdditionalStatistics): Self = StObject.set(x, "AdditionalStatistics", value.asInstanceOf[js.Any])
     

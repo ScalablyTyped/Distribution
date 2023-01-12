@@ -17,7 +17,8 @@ object WhiskerSeriesProps {
     __obj.asInstanceOf[WhiskerSeriesProps]
   }
   
-  extension [Self <: WhiskerSeriesProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WhiskerSeriesProps] (val x: Self) extends AnyVal {
     
     inline def setStrokeWidth(value: Double): Self = StObject.set(x, "strokeWidth", value.asInstanceOf[js.Any])
     

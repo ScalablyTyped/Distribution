@@ -17,7 +17,8 @@ object AgentJobSchedulesResult {
     __obj.asInstanceOf[AgentJobSchedulesResult]
   }
   
-  extension [Self <: AgentJobSchedulesResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AgentJobSchedulesResult] (val x: Self) extends AnyVal {
     
     inline def setSchedules(value: js.Array[AgentJobScheduleInfo]): Self = StObject.set(x, "schedules", value.asInstanceOf[js.Any])
     

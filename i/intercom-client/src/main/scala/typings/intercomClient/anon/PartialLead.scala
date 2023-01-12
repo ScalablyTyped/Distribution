@@ -62,7 +62,8 @@ object PartialLead {
     __obj.asInstanceOf[PartialLead]
   }
   
-  extension [Self <: PartialLead](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialLead] (val x: Self) extends AnyVal {
     
     inline def setAvatar(value: Avatar): Self = StObject.set(x, "avatar", value.asInstanceOf[js.Any])
     

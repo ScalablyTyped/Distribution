@@ -18,7 +18,8 @@ object Settings {
     __obj.asInstanceOf[Settings]
   }
   
-  extension [Self <: Settings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Settings] (val x: Self) extends AnyVal {
     
     inline def setButtons(value: Boolean | (js.Array[ButtonSettings | String]) | ButtonsSettings): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
     

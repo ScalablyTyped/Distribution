@@ -31,7 +31,8 @@ object IgNotifierHeaderTemplate {
     __obj.asInstanceOf[IgNotifierHeaderTemplate]
   }
   
-  extension [Self <: IgNotifierHeaderTemplate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgNotifierHeaderTemplate] (val x: Self) extends AnyVal {
     
     inline def setCloseButton(value: Boolean): Self = StObject.set(x, "closeButton", value.asInstanceOf[js.Any])
     

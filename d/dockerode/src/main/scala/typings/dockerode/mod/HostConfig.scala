@@ -148,7 +148,8 @@ object HostConfig {
     __obj.asInstanceOf[HostConfig]
   }
   
-  extension [Self <: HostConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HostConfig] (val x: Self) extends AnyVal {
     
     inline def setAutoRemove(value: Boolean): Self = StObject.set(x, "AutoRemove", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object ReplayDestination {
     __obj.asInstanceOf[ReplayDestination]
   }
   
-  extension [Self <: ReplayDestination](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReplayDestination] (val x: Self) extends AnyVal {
     
     inline def setArn(value: Arn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     

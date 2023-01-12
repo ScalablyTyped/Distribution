@@ -29,7 +29,8 @@ object ClearButtonPressedItemsBinding {
     __obj.asInstanceOf[ClearButtonPressedItemsBinding]
   }
   
-  extension [Self <: ClearButtonPressedItemsBinding](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClearButtonPressedItemsBinding] (val x: Self) extends AnyVal {
     
     inline def setClearButtonPressed(value: Boolean): Self = StObject.set(x, "clearButtonPressed", value.asInstanceOf[js.Any])
     

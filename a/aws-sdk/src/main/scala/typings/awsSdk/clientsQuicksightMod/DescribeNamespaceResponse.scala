@@ -28,7 +28,8 @@ object DescribeNamespaceResponse {
     __obj.asInstanceOf[DescribeNamespaceResponse]
   }
   
-  extension [Self <: DescribeNamespaceResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeNamespaceResponse] (val x: Self) extends AnyVal {
     
     inline def setNamespace(value: NamespaceInfoV2): Self = StObject.set(x, "Namespace", value.asInstanceOf[js.Any])
     

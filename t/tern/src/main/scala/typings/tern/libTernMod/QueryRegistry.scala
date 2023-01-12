@@ -46,7 +46,8 @@ object QueryRegistry {
     __obj.asInstanceOf[QueryRegistry]
   }
   
-  extension [Self <: QueryRegistry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryRegistry] (val x: Self) extends AnyVal {
     
     inline def setCompletions(value: Result): Self = StObject.set(x, "completions", value.asInstanceOf[js.Any])
     

@@ -16,7 +16,8 @@ object Vault {
     __obj.asInstanceOf[Vault]
   }
   
-  extension [Self <: Vault](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Vault] (val x: Self) extends AnyVal {
     
     inline def setVault(value: PartialidstringstatusCREA): Self = StObject.set(x, "vault", value.asInstanceOf[js.Any])
     

@@ -38,7 +38,8 @@ object PredictiveScalingConfiguration {
     __obj.asInstanceOf[PredictiveScalingConfiguration]
   }
   
-  extension [Self <: PredictiveScalingConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PredictiveScalingConfiguration] (val x: Self) extends AnyVal {
     
     inline def setMaxCapacityBreachBehavior(value: PredictiveScalingMaxCapacityBreachBehavior): Self = StObject.set(x, "MaxCapacityBreachBehavior", value.asInstanceOf[js.Any])
     

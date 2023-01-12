@@ -31,7 +31,8 @@ object BatchDocumentOutputConfig {
     __obj.asInstanceOf[BatchDocumentOutputConfig]
   }
   
-  extension [Self <: BatchDocumentOutputConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchDocumentOutputConfig] (val x: Self) extends AnyVal {
     
     inline def setGcsDestination(value: GcsDestination): Self = StObject.set(x, "gcsDestination", value.asInstanceOf[js.Any])
     

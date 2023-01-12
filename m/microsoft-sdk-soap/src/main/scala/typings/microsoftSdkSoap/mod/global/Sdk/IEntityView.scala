@@ -29,7 +29,8 @@ object IEntityView {
     __obj.asInstanceOf[IEntityView]
   }
   
-  extension [Self <: IEntityView](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IEntityView] (val x: Self) extends AnyVal {
     
     inline def setAttributes(value: AttributeCollection): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     

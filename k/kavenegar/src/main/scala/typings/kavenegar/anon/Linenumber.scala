@@ -23,7 +23,8 @@ object Linenumber {
     __obj.asInstanceOf[Linenumber]
   }
   
-  extension [Self <: Linenumber](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Linenumber] (val x: Self) extends AnyVal {
     
     inline def setEnddate(value: Double): Self = StObject.set(x, "enddate", value.asInstanceOf[js.Any])
     

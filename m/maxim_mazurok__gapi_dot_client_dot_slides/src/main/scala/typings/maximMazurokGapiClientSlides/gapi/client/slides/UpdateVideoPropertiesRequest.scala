@@ -26,7 +26,8 @@ object UpdateVideoPropertiesRequest {
     __obj.asInstanceOf[UpdateVideoPropertiesRequest]
   }
   
-  extension [Self <: UpdateVideoPropertiesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateVideoPropertiesRequest] (val x: Self) extends AnyVal {
     
     inline def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     

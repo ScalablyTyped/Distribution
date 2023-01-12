@@ -25,7 +25,8 @@ object UIkitFilterOptions {
     __obj.asInstanceOf[UIkitFilterOptions]
   }
   
-  extension [Self <: UIkitFilterOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UIkitFilterOptions] (val x: Self) extends AnyVal {
     
     inline def setAnimation(value: slide | fade | `delayed-fade` | `false`): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     

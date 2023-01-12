@@ -35,7 +35,8 @@ object libListGroupMod {
       __obj.asInstanceOf[ListGroupProps]
     }
     
-    extension [Self <: ListGroupProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListGroupProps] (val x: Self) extends AnyVal {
       
       inline def setBsClass(value: String): Self = StObject.set(x, "bsClass", value.asInstanceOf[js.Any])
       

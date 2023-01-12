@@ -57,7 +57,8 @@ object offsetPluginMod {
         __obj.asInstanceOf[typings.interactjsTypes.offsetPluginMod.interactjsCoreInteractionAugmentingMod.Interaction]
       }
       
-      extension [Self <: typings.interactjsTypes.offsetPluginMod.interactjsCoreInteractionAugmentingMod.Interaction](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.interactjsTypes.offsetPluginMod.interactjsCoreInteractionAugmentingMod.Interaction] (val x: Self) extends AnyVal {
         
         inline def setOffset(value: Pending): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
         

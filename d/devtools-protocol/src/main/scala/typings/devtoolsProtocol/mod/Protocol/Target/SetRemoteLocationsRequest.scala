@@ -18,7 +18,8 @@ object SetRemoteLocationsRequest {
     __obj.asInstanceOf[SetRemoteLocationsRequest]
   }
   
-  extension [Self <: SetRemoteLocationsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetRemoteLocationsRequest] (val x: Self) extends AnyVal {
     
     inline def setLocations(value: js.Array[RemoteLocation]): Self = StObject.set(x, "locations", value.asInstanceOf[js.Any])
     

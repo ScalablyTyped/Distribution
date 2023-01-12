@@ -22,7 +22,8 @@ object PartialOptionsTypePropsan {
     __obj.asInstanceOf[PartialOptionsTypePropsan]
   }
   
-  extension [Self <: PartialOptionsTypePropsan](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialOptionsTypePropsan] (val x: Self) extends AnyVal {
     
     inline def setDisplay(value: OptionsKnobOptionsDisplay): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
     

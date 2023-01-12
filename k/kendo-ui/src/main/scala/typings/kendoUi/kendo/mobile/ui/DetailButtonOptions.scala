@@ -17,7 +17,8 @@ object DetailButtonOptions {
     __obj.asInstanceOf[DetailButtonOptions]
   }
   
-  extension [Self <: DetailButtonOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DetailButtonOptions] (val x: Self) extends AnyVal {
     
     inline def setClick(value: /* e */ DetailButtonClickEvent => Unit): Self = StObject.set(x, "click", js.Any.fromFunction1(value))
     

@@ -41,7 +41,8 @@ object typesSrcCoreAuthDeprecatedChannelAuthorizerMod {
       __obj.asInstanceOf[DeprecatedAuthOptions]
     }
     
-    extension [Self <: DeprecatedAuthOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeprecatedAuthOptions] (val x: Self) extends AnyVal {
       
       inline def setHeaders(value: Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
@@ -68,7 +69,8 @@ object typesSrcCoreAuthDeprecatedChannelAuthorizerMod {
       __obj.asInstanceOf[DeprecatedAuthorizerOptions]
     }
     
-    extension [Self <: DeprecatedAuthorizerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeprecatedAuthorizerOptions] (val x: Self) extends AnyVal {
       
       inline def setAuth(value: DeprecatedAuthOptions): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
       
@@ -91,7 +93,8 @@ object typesSrcCoreAuthDeprecatedChannelAuthorizerMod {
       __obj.asInstanceOf[DeprecatedChannelAuthorizer]
     }
     
-    extension [Self <: DeprecatedChannelAuthorizer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeprecatedChannelAuthorizer] (val x: Self) extends AnyVal {
       
       inline def setAuthorize(value: (String, ChannelAuthorizationCallback) => Unit): Self = StObject.set(x, "authorize", js.Any.fromFunction2(value))
     }

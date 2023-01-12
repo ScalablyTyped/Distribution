@@ -39,7 +39,8 @@ object XSpreadsheetDocument {
     __obj.asInstanceOf[XSpreadsheetDocument]
   }
   
-  extension [Self <: XSpreadsheetDocument](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XSpreadsheetDocument] (val x: Self) extends AnyVal {
     
     inline def setGetSheets(value: () => XSpreadsheets): Self = StObject.set(x, "getSheets", js.Any.fromFunction0(value))
     

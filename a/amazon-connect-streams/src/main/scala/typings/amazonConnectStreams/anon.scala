@@ -22,7 +22,8 @@ object anon {
       __obj.asInstanceOf[ChatAutoAccept]
     }
     
-    extension [Self <: ChatAutoAccept](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChatAutoAccept] (val x: Self) extends AnyVal {
       
       inline def setChatAutoAccept(value: Boolean): Self = StObject.set(x, "chatAutoAccept", value.asInstanceOf[js.Any])
       
@@ -47,7 +48,8 @@ object anon {
       __obj.asInstanceOf[Expiry]
     }
     
-    extension [Self <: Expiry](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Expiry] (val x: Self) extends AnyVal {
       
       inline def setExpiry(value: String): Self = StObject.set(x, "expiry", value.asInstanceOf[js.Any])
       
@@ -68,7 +70,8 @@ object anon {
       __obj.asInstanceOf[Name]
     }
     
-    extension [Self <: Name](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Name] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -90,7 +93,8 @@ object anon {
       __obj.asInstanceOf[Type]
     }
     
-    extension [Self <: Type](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Type] (val x: Self) extends AnyVal {
       
       inline def setType(value: ReferenceType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       

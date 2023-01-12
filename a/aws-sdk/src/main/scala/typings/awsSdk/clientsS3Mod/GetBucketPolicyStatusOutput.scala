@@ -18,7 +18,8 @@ object GetBucketPolicyStatusOutput {
     __obj.asInstanceOf[GetBucketPolicyStatusOutput]
   }
   
-  extension [Self <: GetBucketPolicyStatusOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetBucketPolicyStatusOutput] (val x: Self) extends AnyVal {
     
     inline def setPolicyStatus(value: PolicyStatus): Self = StObject.set(x, "PolicyStatus", value.asInstanceOf[js.Any])
     

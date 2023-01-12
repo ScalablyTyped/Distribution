@@ -44,7 +44,8 @@ object libTypesReanimated2JsReanimatedMod {
       __obj.asInstanceOf[JSReanimatedComponent]
     }
     
-    extension [Self <: JSReanimatedComponent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JSReanimatedComponent] (val x: Self) extends AnyVal {
       
       inline def setPreviousStyle(value: StyleProps): Self = StObject.set(x, "previousStyle", value.asInstanceOf[js.Any])
       

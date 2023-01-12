@@ -28,7 +28,8 @@ object DialogflowV1WebhookResponse {
     __obj.asInstanceOf[DialogflowV1WebhookResponse]
   }
   
-  extension [Self <: DialogflowV1WebhookResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DialogflowV1WebhookResponse] (val x: Self) extends AnyVal {
     
     inline def setContextOut(value: js.Array[DialogflowV1Context]): Self = StObject.set(x, "contextOut", value.asInstanceOf[js.Any])
     

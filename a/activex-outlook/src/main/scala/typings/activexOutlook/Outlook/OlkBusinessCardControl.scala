@@ -26,7 +26,8 @@ object OlkBusinessCardControl {
     __obj.asInstanceOf[OlkBusinessCardControl]
   }
   
-  extension [Self <: OlkBusinessCardControl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OlkBusinessCardControl] (val x: Self) extends AnyVal {
     
     inline def setMouseIcon(value: StdPicture): Self = StObject.set(x, "MouseIcon", value.asInstanceOf[js.Any])
     

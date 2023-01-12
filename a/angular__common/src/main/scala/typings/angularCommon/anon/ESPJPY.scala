@@ -44,7 +44,8 @@ object ESPJPY {
     __obj.asInstanceOf[ESPJPY]
   }
   
-  extension [Self <: ESPJPY](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ESPJPY] (val x: Self) extends AnyVal {
     
     inline def setBYN(value: js.Array[js.UndefOr[String]]): Self = StObject.set(x, "BYN", value.asInstanceOf[js.Any])
     

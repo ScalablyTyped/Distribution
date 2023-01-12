@@ -23,7 +23,8 @@ object GetIPSetResponse {
     __obj.asInstanceOf[GetIPSetResponse]
   }
   
-  extension [Self <: GetIPSetResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetIPSetResponse] (val x: Self) extends AnyVal {
     
     inline def setIPSet(value: IPSet): Self = StObject.set(x, "IPSet", value.asInstanceOf[js.Any])
     

@@ -95,7 +95,8 @@ object Cameras {
     __obj.asInstanceOf[Cameras]
   }
   
-  extension [Self <: Cameras](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Cameras] (val x: Self) extends AnyVal {
     
     inline def setCameras(value: Double): Self = StObject.set(x, "cameras", value.asInstanceOf[js.Any])
     

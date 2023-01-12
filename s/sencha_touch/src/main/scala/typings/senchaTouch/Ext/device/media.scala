@@ -38,7 +38,8 @@ object media {
       __obj.asInstanceOf[IAbstract]
     }
     
-    extension [Self <: IAbstract](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IAbstract] (val x: Self) extends AnyVal {
       
       inline def setGetSrc(value: () => Any): Self = StObject.set(x, "getSrc", js.Any.fromFunction0(value))
       
@@ -68,7 +69,8 @@ object media {
       __obj.asInstanceOf[ICordova]
     }
     
-    extension [Self <: ICordova](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICordova] (val x: Self) extends AnyVal {
       
       inline def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
       
@@ -90,7 +92,8 @@ object media {
       __obj.asInstanceOf[IPhoneGap]
     }
     
-    extension [Self <: IPhoneGap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPhoneGap] (val x: Self) extends AnyVal {
       
       inline def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
       

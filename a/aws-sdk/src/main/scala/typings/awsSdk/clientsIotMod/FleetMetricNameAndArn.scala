@@ -23,7 +23,8 @@ object FleetMetricNameAndArn {
     __obj.asInstanceOf[FleetMetricNameAndArn]
   }
   
-  extension [Self <: FleetMetricNameAndArn](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FleetMetricNameAndArn] (val x: Self) extends AnyVal {
     
     inline def setMetricArn(value: FleetMetricArn): Self = StObject.set(x, "metricArn", value.asInstanceOf[js.Any])
     

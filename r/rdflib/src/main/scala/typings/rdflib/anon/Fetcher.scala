@@ -16,7 +16,8 @@ object Fetcher {
     __obj.asInstanceOf[Fetcher]
   }
   
-  extension [Self <: Fetcher](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Fetcher] (val x: Self) extends AnyVal {
     
     inline def setFetcher(value: default): Self = StObject.set(x, "fetcher", value.asInstanceOf[js.Any])
   }

@@ -23,7 +23,8 @@ object RegisterOrganizationAdminAccountResponse {
     __obj.asInstanceOf[RegisterOrganizationAdminAccountResponse]
   }
   
-  extension [Self <: RegisterOrganizationAdminAccountResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RegisterOrganizationAdminAccountResponse] (val x: Self) extends AnyVal {
     
     inline def setAdminAccountId(value: AccountId): Self = StObject.set(x, "adminAccountId", value.asInstanceOf[js.Any])
     

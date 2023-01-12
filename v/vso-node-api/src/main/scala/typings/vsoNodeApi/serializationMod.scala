@@ -52,7 +52,8 @@ object serializationMod {
       __obj.asInstanceOf[ContractEnumMetadata]
     }
     
-    extension [Self <: ContractEnumMetadata](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContractEnumMetadata] (val x: Self) extends AnyVal {
       
       inline def setEnumValues(value: StringDictionary[Double]): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
       
@@ -91,7 +92,8 @@ object serializationMod {
       __obj.asInstanceOf[ContractFieldMetadata]
     }
     
-    extension [Self <: ContractFieldMetadata](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContractFieldMetadata] (val x: Self) extends AnyVal {
       
       inline def setDictionaryKeyEnumType(value: ContractEnumMetadata): Self = StObject.set(x, "dictionaryKeyEnumType", value.asInstanceOf[js.Any])
       
@@ -150,7 +152,8 @@ object serializationMod {
       __obj.asInstanceOf[ContractMetadata]
     }
     
-    extension [Self <: ContractMetadata](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContractMetadata] (val x: Self) extends AnyVal {
       
       inline def setFields(value: StringDictionary[ContractFieldMetadata]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
       
@@ -171,7 +174,8 @@ object serializationMod {
       __obj.asInstanceOf[IWebApiArrayResult]
     }
     
-    extension [Self <: IWebApiArrayResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IWebApiArrayResult] (val x: Self) extends AnyVal {
       
       inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       
@@ -196,7 +200,8 @@ object serializationMod {
       __obj.asInstanceOf[SerializationData]
     }
     
-    extension [Self <: SerializationData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SerializationData] (val x: Self) extends AnyVal {
       
       inline def setRequestTypeMetadata(value: ContractMetadata): Self = StObject.set(x, "requestTypeMetadata", value.asInstanceOf[js.Any])
       

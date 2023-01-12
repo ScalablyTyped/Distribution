@@ -23,7 +23,8 @@ object LambdaFunctionStartFailedEventDetails {
     __obj.asInstanceOf[LambdaFunctionStartFailedEventDetails]
   }
   
-  extension [Self <: LambdaFunctionStartFailedEventDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LambdaFunctionStartFailedEventDetails] (val x: Self) extends AnyVal {
     
     inline def setCause(value: SensitiveCause): Self = StObject.set(x, "cause", value.asInstanceOf[js.Any])
     

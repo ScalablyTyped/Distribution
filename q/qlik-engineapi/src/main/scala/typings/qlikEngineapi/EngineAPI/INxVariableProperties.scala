@@ -51,7 +51,8 @@ object INxVariableProperties {
     __obj.asInstanceOf[INxVariableProperties]
   }
   
-  extension [Self <: INxVariableProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: INxVariableProperties] (val x: Self) extends AnyVal {
     
     inline def setQIncludeInBookmark(value: Boolean): Self = StObject.set(x, "qIncludeInBookmark", value.asInstanceOf[js.Any])
     

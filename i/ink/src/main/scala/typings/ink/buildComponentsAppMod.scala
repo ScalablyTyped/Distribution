@@ -93,7 +93,8 @@ object buildComponentsAppMod {
       __obj.asInstanceOf[Focusable]
     }
     
-    extension [Self <: Focusable](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Focusable] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -139,7 +140,8 @@ object buildComponentsAppMod {
       __obj.asInstanceOf[State]
     }
     
-    extension [Self <: State](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: State] (val x: Self) extends AnyVal {
       
       inline def setActiveFocusId(value: String): Self = StObject.set(x, "activeFocusId", value.asInstanceOf[js.Any])
       

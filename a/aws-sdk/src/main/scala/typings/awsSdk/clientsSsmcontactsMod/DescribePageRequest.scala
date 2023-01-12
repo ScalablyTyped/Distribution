@@ -18,7 +18,8 @@ object DescribePageRequest {
     __obj.asInstanceOf[DescribePageRequest]
   }
   
-  extension [Self <: DescribePageRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribePageRequest] (val x: Self) extends AnyVal {
     
     inline def setPageId(value: SsmContactsArn): Self = StObject.set(x, "PageId", value.asInstanceOf[js.Any])
   }

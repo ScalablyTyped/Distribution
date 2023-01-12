@@ -96,7 +96,8 @@ object mod {
       __obj.asInstanceOf[Lookup_]
     }
     
-    extension [Self <: Lookup_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Lookup_] (val x: Self) extends AnyVal {
       
       inline def setArea(value: Double): Self = StObject.set(x, "area", value.asInstanceOf[js.Any])
       

@@ -18,7 +18,8 @@ object GetDefaultPatchBaselineRequest {
     __obj.asInstanceOf[GetDefaultPatchBaselineRequest]
   }
   
-  extension [Self <: GetDefaultPatchBaselineRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetDefaultPatchBaselineRequest] (val x: Self) extends AnyVal {
     
     inline def setOperatingSystem(value: OperatingSystem): Self = StObject.set(x, "OperatingSystem", value.asInstanceOf[js.Any])
     

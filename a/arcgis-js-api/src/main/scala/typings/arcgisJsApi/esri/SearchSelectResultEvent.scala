@@ -19,7 +19,8 @@ object SearchSelectResultEvent {
     __obj.asInstanceOf[SearchSelectResultEvent]
   }
   
-  extension [Self <: SearchSelectResultEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchSelectResultEvent] (val x: Self) extends AnyVal {
     
     inline def setResult(value: SearchSelectResultEventResult): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     

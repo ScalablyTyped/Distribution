@@ -18,7 +18,8 @@ object EmbedHtml {
     __obj.asInstanceOf[EmbedHtml]
   }
   
-  extension [Self <: EmbedHtml](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EmbedHtml] (val x: Self) extends AnyVal {
     
     inline def setEmbedHtml(value: String): Self = StObject.set(x, "embedHtml", value.asInstanceOf[js.Any])
   }

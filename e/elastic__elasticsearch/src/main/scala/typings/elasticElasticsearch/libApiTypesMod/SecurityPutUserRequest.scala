@@ -33,7 +33,8 @@ object SecurityPutUserRequest {
     __obj.asInstanceOf[SecurityPutUserRequest]
   }
   
-  extension [Self <: SecurityPutUserRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SecurityPutUserRequest] (val x: Self) extends AnyVal {
     
     inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     

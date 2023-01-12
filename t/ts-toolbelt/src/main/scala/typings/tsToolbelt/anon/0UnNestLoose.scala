@@ -25,7 +25,8 @@ object `0UnNestLoose` {
     __obj.asInstanceOf[`0UnNestLoose`[L]]
   }
   
-  extension [Self <: `0UnNestLoose`[?], L /* <: typings.tsToolbelt.outListListMod.List[Any] */](x: Self & `0UnNestLoose`[L]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: `0UnNestLoose`[?], L /* <: typings.tsToolbelt.outListListMod.List[Any] */] (val x: Self & `0UnNestLoose`[L]) extends AnyVal {
     
     inline def set0(value: UnNestLoose[L]): Self = StObject.set(x, "0", value.asInstanceOf[js.Any])
     

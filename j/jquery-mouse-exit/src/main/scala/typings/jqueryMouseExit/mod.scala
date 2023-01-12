@@ -23,7 +23,8 @@ object mod {
       __obj.asInstanceOf[FocusElements]
     }
     
-    extension [Self <: FocusElements](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FocusElements] (val x: Self) extends AnyVal {
       
       inline def setGainedFocus(value: HTMLElement): Self = StObject.set(x, "gainedFocus", value.asInstanceOf[js.Any])
       
@@ -47,7 +48,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
       

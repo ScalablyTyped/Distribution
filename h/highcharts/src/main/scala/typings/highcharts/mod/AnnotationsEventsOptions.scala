@@ -37,7 +37,8 @@ object AnnotationsEventsOptions {
     __obj.asInstanceOf[AnnotationsEventsOptions]
   }
   
-  extension [Self <: AnnotationsEventsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnnotationsEventsOptions] (val x: Self) extends AnyVal {
     
     inline def setAdd(value: EventCallbackFunction[Annotation]): Self = StObject.set(x, "add", value.asInstanceOf[js.Any])
     

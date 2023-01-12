@@ -21,7 +21,8 @@ object JsonrpcMethod {
     __obj.asInstanceOf[JsonrpcMethod]
   }
   
-  extension [Self <: JsonrpcMethod](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JsonrpcMethod] (val x: Self) extends AnyVal {
     
     inline def setId(value: Unit): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

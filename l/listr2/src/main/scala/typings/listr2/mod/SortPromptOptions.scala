@@ -21,7 +21,8 @@ object SortPromptOptions {
     __obj.asInstanceOf[SortPromptOptions]
   }
   
-  extension [Self <: SortPromptOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SortPromptOptions] (val x: Self) extends AnyVal {
     
     inline def setDrag(value: Boolean): Self = StObject.set(x, "drag", value.asInstanceOf[js.Any])
     

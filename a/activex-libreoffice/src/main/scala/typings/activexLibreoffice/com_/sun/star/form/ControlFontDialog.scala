@@ -28,7 +28,8 @@ object ControlFontDialog {
     __obj.asInstanceOf[ControlFontDialog]
   }
   
-  extension [Self <: ControlFontDialog](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ControlFontDialog] (val x: Self) extends AnyVal {
     
     inline def setCreateWithGridModel(value: XPropertySet => Unit): Self = StObject.set(x, "createWithGridModel", js.Any.fromFunction1(value))
   }

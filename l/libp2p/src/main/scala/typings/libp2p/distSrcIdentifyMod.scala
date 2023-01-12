@@ -143,7 +143,8 @@ object distSrcIdentifyMod {
       __obj.asInstanceOf[HostProperties]
     }
     
-    extension [Self <: HostProperties](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HostProperties] (val x: Self) extends AnyVal {
       
       inline def setAgentVersion(value: String): Self = StObject.set(x, "agentVersion", value.asInstanceOf[js.Any])
     }
@@ -174,7 +175,8 @@ object distSrcIdentifyMod {
       __obj.asInstanceOf[IdentifyServiceComponents]
     }
     
-    extension [Self <: IdentifyServiceComponents](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IdentifyServiceComponents] (val x: Self) extends AnyVal {
       
       inline def setAddressManager(value: AddressManager): Self = StObject.set(x, "addressManager", value.asInstanceOf[js.Any])
       
@@ -233,7 +235,8 @@ object distSrcIdentifyMod {
       __obj.asInstanceOf[IdentifyServiceInit]
     }
     
-    extension [Self <: IdentifyServiceInit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IdentifyServiceInit] (val x: Self) extends AnyVal {
       
       inline def setHost(value: HostProperties): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       

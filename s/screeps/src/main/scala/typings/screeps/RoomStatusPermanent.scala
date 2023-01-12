@@ -21,7 +21,8 @@ object RoomStatusPermanent {
     __obj.asInstanceOf[RoomStatusPermanent]
   }
   
-  extension [Self <: RoomStatusPermanent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RoomStatusPermanent] (val x: Self) extends AnyVal {
     
     inline def setStatus(value: normal | closed): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     

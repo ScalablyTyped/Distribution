@@ -71,7 +71,8 @@ object anon {
       __obj.asInstanceOf[CellDate[DateType]]
     }
     
-    extension [Self <: CellDate[?], DateType](x: Self & CellDate[DateType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CellDate[?], DateType] (val x: Self & CellDate[DateType]) extends AnyVal {
       
       inline def setCellDate(value: DateType): Self = StObject.set(x, "cellDate", value.asInstanceOf[js.Any])
       
@@ -118,7 +119,8 @@ object anon {
       __obj.asInstanceOf[CellPrefixCls[DateType]]
     }
     
-    extension [Self <: CellPrefixCls[?], DateType](x: Self & CellPrefixCls[DateType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CellPrefixCls[?], DateType] (val x: Self & CellPrefixCls[DateType]) extends AnyVal {
       
       inline def setCellPrefixCls(value: String): Self = StObject.set(x, "cellPrefixCls", value.asInstanceOf[js.Any])
       
@@ -173,7 +175,8 @@ object anon {
       __obj.asInstanceOf[DefaultDates[DateType]]
     }
     
-    extension [Self <: DefaultDates[?], DateType](x: Self & DefaultDates[DateType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DefaultDates[?], DateType] (val x: Self & DefaultDates[DateType]) extends AnyVal {
       
       inline def setDefaultDates(value: RangeValue[DateType]): Self = StObject.set(x, "defaultDates", value.asInstanceOf[js.Any])
       
@@ -217,7 +220,8 @@ object anon {
       __obj.asInstanceOf[Disabled[DateType]]
     }
     
-    extension [Self <: Disabled[?], DateType](x: Self & Disabled[DateType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Disabled[?], DateType] (val x: Self & Disabled[DateType]) extends AnyVal {
       
       inline def setDisabled(value: js.Tuple2[Boolean, Boolean]): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
@@ -250,7 +254,8 @@ object anon {
       __obj.asInstanceOf[Focused]
     }
     
-    extension [Self <: Focused](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Focused] (val x: Self) extends AnyVal {
       
       inline def setFocused(value: Boolean): Self = StObject.set(x, "focused", value.asInstanceOf[js.Any])
       
@@ -290,7 +295,8 @@ object anon {
       __obj.asInstanceOf[Format[DateType]]
     }
     
-    extension [Self <: Format[?], DateType](x: Self & Format[DateType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Format[?], DateType] (val x: Self & Format[DateType]) extends AnyVal {
       
       inline def setFormat(value: (String, DateType, String) => String): Self = StObject.set(x, "format", js.Any.fromFunction3(value))
       
@@ -331,7 +337,8 @@ object anon {
       __obj.asInstanceOf[FormatList[DateType]]
     }
     
-    extension [Self <: FormatList[?], DateType](x: Self & FormatList[DateType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FormatList[?], DateType] (val x: Self & FormatList[DateType]) extends AnyVal {
       
       inline def setFormatList(value: js.Array[String | CustomFormat[DateType]]): Self = StObject.set(x, "formatList", value.asInstanceOf[js.Any])
       
@@ -362,7 +369,8 @@ object anon {
       __obj.asInstanceOf[GenerateConfig[DateType]]
     }
     
-    extension [Self <: GenerateConfig[?], DateType](x: Self & GenerateConfig[DateType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GenerateConfig[?], DateType] (val x: Self & GenerateConfig[DateType]) extends AnyVal {
       
       inline def setFormat(value: String | CustomFormat[DateType]): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
@@ -391,7 +399,8 @@ object anon {
       __obj.asInstanceOf[Label]
     }
     
-    extension [Self <: Label](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Label] (val x: Self) extends AnyVal {
       
       inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
@@ -417,7 +426,8 @@ object anon {
       __obj.asInstanceOf[OnTextChange]
     }
     
-    extension [Self <: OnTextChange](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OnTextChange] (val x: Self) extends AnyVal {
       
       inline def setOnTextChange(value: String => Unit): Self = StObject.set(x, "onTextChange", js.Any.fromFunction1(value))
       

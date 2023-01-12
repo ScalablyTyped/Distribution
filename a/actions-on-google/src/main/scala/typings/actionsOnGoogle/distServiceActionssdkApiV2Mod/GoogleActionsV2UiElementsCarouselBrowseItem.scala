@@ -46,7 +46,8 @@ object GoogleActionsV2UiElementsCarouselBrowseItem {
     __obj.asInstanceOf[GoogleActionsV2UiElementsCarouselBrowseItem]
   }
   
-  extension [Self <: GoogleActionsV2UiElementsCarouselBrowseItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleActionsV2UiElementsCarouselBrowseItem] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

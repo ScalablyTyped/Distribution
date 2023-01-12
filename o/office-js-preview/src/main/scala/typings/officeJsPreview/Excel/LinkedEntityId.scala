@@ -51,7 +51,8 @@ object LinkedEntityId {
     __obj.asInstanceOf[LinkedEntityId]
   }
   
-  extension [Self <: LinkedEntityId](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LinkedEntityId] (val x: Self) extends AnyVal {
     
     inline def setCulture(value: String): Self = StObject.set(x, "culture", value.asInstanceOf[js.Any])
     

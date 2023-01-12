@@ -81,7 +81,8 @@ object INxVariableListItem {
     __obj.asInstanceOf[INxVariableListItem]
   }
   
-  extension [Self <: INxVariableListItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: INxVariableListItem] (val x: Self) extends AnyVal {
     
     inline def setQData(value: Any): Self = StObject.set(x, "qData", value.asInstanceOf[js.Any])
     

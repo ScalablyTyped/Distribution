@@ -53,7 +53,8 @@ object PartialStyleRulesSvgIconC {
     __obj.asInstanceOf[PartialStyleRulesSvgIconC]
   }
   
-  extension [Self <: PartialStyleRulesSvgIconC](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialStyleRulesSvgIconC] (val x: Self) extends AnyVal {
     
     inline def setColorAction(
       value: CSSProperties | CreateCSSProperties[js.Object] | (PropsFunc[js.Object, CreateCSSProperties[js.Object]])

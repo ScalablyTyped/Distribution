@@ -120,7 +120,8 @@ object GoogleCloudDatacatalogV1Entry {
     __obj.asInstanceOf[GoogleCloudDatacatalogV1Entry]
   }
   
-  extension [Self <: GoogleCloudDatacatalogV1Entry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDatacatalogV1Entry] (val x: Self) extends AnyVal {
     
     inline def setBigqueryDateShardedSpec(value: GoogleCloudDatacatalogV1BigQueryDateShardedSpec): Self = StObject.set(x, "bigqueryDateShardedSpec", value.asInstanceOf[js.Any])
     

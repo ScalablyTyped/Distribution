@@ -56,7 +56,8 @@ object libStreamObjectMod {
       __obj.asInstanceOf[Context]
     }
     
-    extension [Self <: Context](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Context] (val x: Self) extends AnyVal {
       
       inline def setLogger(value: Logger): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
       
@@ -106,7 +107,8 @@ object libStreamObjectMod {
       __obj.asInstanceOf[StreamObject]
     }
     
-    extension [Self <: StreamObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StreamObject] (val x: Self) extends AnyVal {
       
       inline def setBasePath(value: String): Self = StObject.set(x, "basePath", value.asInstanceOf[js.Any])
       

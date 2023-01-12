@@ -19,7 +19,8 @@ object CompositionConfigMixins {
     __obj.asInstanceOf[CompositionConfigMixins]
   }
   
-  extension [Self <: CompositionConfigMixins](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CompositionConfigMixins] (val x: Self) extends AnyVal {
     
     inline def setConcat(value: CompositionConfig): Self = StObject.set(x, "concat", value.asInstanceOf[js.Any])
     

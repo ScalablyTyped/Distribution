@@ -17,7 +17,8 @@ object anon {
       __obj.asInstanceOf[Cancelable]
     }
     
-    extension [Self <: Cancelable](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Cancelable] (val x: Self) extends AnyVal {
       
       inline def setCancelable(value: Boolean): Self = StObject.set(x, "cancelable", value.asInstanceOf[js.Any])
     }
@@ -36,7 +37,8 @@ object anon {
       __obj.asInstanceOf[Port]
     }
     
-    extension [Self <: Port](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Port] (val x: Self) extends AnyVal {
       
       inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
       
@@ -59,7 +61,8 @@ object anon {
       __obj.asInstanceOf[ReceiverPath]
     }
     
-    extension [Self <: ReceiverPath](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReceiverPath] (val x: Self) extends AnyVal {
       
       inline def setReceiverPath(value: String): Self = StObject.set(x, "receiverPath", value.asInstanceOf[js.Any])
       
@@ -84,7 +87,8 @@ object anon {
       __obj.asInstanceOf[RedirectFile]
     }
     
-    extension [Self <: RedirectFile](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RedirectFile] (val x: Self) extends AnyVal {
       
       inline def setRedirectFile(value: String): Self = StObject.set(x, "redirectFile", value.asInstanceOf[js.Any])
       
@@ -109,7 +113,8 @@ object anon {
       __obj.asInstanceOf[RememberUser]
     }
     
-    extension [Self <: RememberUser](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RememberUser] (val x: Self) extends AnyVal {
       
       inline def setRememberUser(value: Boolean): Self = StObject.set(x, "rememberUser", value.asInstanceOf[js.Any])
       
@@ -128,7 +133,8 @@ object anon {
       __obj.asInstanceOf[Scope]
     }
     
-    extension [Self <: Scope](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Scope] (val x: Self) extends AnyVal {
       
       inline def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     }

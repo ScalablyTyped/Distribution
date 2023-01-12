@@ -23,7 +23,8 @@ object DialogSuggestion {
     __obj.asInstanceOf[DialogSuggestion]
   }
   
-  extension [Self <: DialogSuggestion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DialogSuggestion] (val x: Self) extends AnyVal {
     
     inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     

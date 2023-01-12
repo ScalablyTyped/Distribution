@@ -19,7 +19,8 @@ object JsonLogicVar {
     __obj.asInstanceOf[JsonLogicVar[AddOps]]
   }
   
-  extension [Self <: JsonLogicVar[?], AddOps /* <: AdditionalOperation */](x: Self & JsonLogicVar[AddOps]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JsonLogicVar[?], AddOps /* <: AdditionalOperation */] (val x: Self & JsonLogicVar[AddOps]) extends AnyVal {
     
     inline def setVar(value: RulesLogic[AddOps] | js.Array[RulesLogic[AddOps]] | (js.Tuple2[RulesLogic[AddOps], Any])): Self = StObject.set(x, "var", value.asInstanceOf[js.Any])
     

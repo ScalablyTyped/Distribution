@@ -133,7 +133,8 @@ object coreSearchMod {
         __obj.asInstanceOf[SearchResultBase]
       }
       
-      extension [Self <: SearchResultBase](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SearchResultBase] (val x: Self) extends AnyVal {
         
         inline def setDescription(value: JQuery | js.Array[Any] | Element | Text | String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
         
@@ -177,7 +178,8 @@ object coreSearchMod {
         __obj.asInstanceOf[SearchResultBounds]
       }
       
-      extension [Self <: SearchResultBounds](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SearchResultBounds] (val x: Self) extends AnyVal {
         
         inline def setBounds(value: LatLngBoundsExpression): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
         
@@ -203,7 +205,8 @@ object coreSearchMod {
         __obj.asInstanceOf[SearchResultPosition]
       }
       
-      extension [Self <: SearchResultPosition](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SearchResultPosition] (val x: Self) extends AnyVal {
         
         inline def setPosition(value: LatLngExpression): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       }

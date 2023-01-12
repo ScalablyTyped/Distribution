@@ -130,7 +130,8 @@ object libMailMailMessagePartMod {
       __obj.asInstanceOf[MailMessagePart]
     }
     
-    extension [Self <: MailMessagePart](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MailMessagePart] (val x: Self) extends AnyVal {
       
       inline def setBoundary(value: String): Self = StObject.set(x, "boundary", value.asInstanceOf[js.Any])
       

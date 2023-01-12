@@ -50,7 +50,8 @@ object AttributeMemberType {
     __obj.asInstanceOf[AttributeMemberType]
   }
   
-  extension [Self <: AttributeMemberType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AttributeMemberType] (val x: Self) extends AnyVal {
     
     inline def setIdlType(value: IDLTypeDescription): Self = StObject.set(x, "idlType", value.asInstanceOf[js.Any])
     

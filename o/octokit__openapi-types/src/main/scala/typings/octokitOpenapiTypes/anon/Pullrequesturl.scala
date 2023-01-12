@@ -83,7 +83,8 @@ object Pullrequesturl {
     __obj.asInstanceOf[Pullrequesturl]
   }
   
-  extension [Self <: Pullrequesturl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Pullrequesturl] (val x: Self) extends AnyVal {
     
     inline def setAuthor_association(
       value: COLLABORATOR | CONTRIBUTOR | FIRST_TIMER | FIRST_TIME_CONTRIBUTOR | MANNEQUIN | MEMBER | NONE | OWNER

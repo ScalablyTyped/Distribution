@@ -26,7 +26,8 @@ object TestFailuresAnalysis {
     __obj.asInstanceOf[TestFailuresAnalysis]
   }
   
-  extension [Self <: TestFailuresAnalysis](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TestFailuresAnalysis] (val x: Self) extends AnyVal {
     
     inline def setExistingFailures(value: TestFailureDetails): Self = StObject.set(x, "existingFailures", value.asInstanceOf[js.Any])
     

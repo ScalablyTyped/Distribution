@@ -19,7 +19,8 @@ object SettlementFetchRequest {
     __obj.asInstanceOf[SettlementFetchRequest]
   }
   
-  extension [Self <: SettlementFetchRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SettlementFetchRequest] (val x: Self) extends AnyVal {
     
     inline def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     

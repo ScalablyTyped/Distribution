@@ -135,7 +135,8 @@ object typesLinterMod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setAllowEmptyInput(value: Boolean): Self = StObject.set(x, "allowEmptyInput", value.asInstanceOf[js.Any])
       
@@ -310,7 +311,8 @@ object typesLinterMod {
       __obj.asInstanceOf[Report]
     }
     
-    extension [Self <: Report](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Report] (val x: Self) extends AnyVal {
       
       inline def setErrors(value: typings.stylelintWebpackPlugin.typesStylelintErrorMod.^): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
       

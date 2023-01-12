@@ -18,7 +18,8 @@ object TaskBoardSelectEvent {
     __obj.asInstanceOf[TaskBoardSelectEvent]
   }
   
-  extension [Self <: TaskBoardSelectEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TaskBoardSelectEvent] (val x: Self) extends AnyVal {
     
     inline def setCard(value: JQuery): Self = StObject.set(x, "card", value.asInstanceOf[js.Any])
     

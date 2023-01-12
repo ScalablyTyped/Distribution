@@ -25,7 +25,8 @@ object authPermissionRequiredMod extends Shortcut {
       __obj.asInstanceOf[PermissionRequiredProps]
     }
     
-    extension [Self <: PermissionRequiredProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PermissionRequiredProps] (val x: Self) extends AnyVal {
       
       inline def setAllMustMatch(value: Boolean): Self = StObject.set(x, "allMustMatch", value.asInstanceOf[js.Any])
       

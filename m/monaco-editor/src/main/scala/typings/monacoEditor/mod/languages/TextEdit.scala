@@ -21,7 +21,8 @@ object TextEdit {
     __obj.asInstanceOf[TextEdit]
   }
   
-  extension [Self <: TextEdit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextEdit] (val x: Self) extends AnyVal {
     
     inline def setEol(value: EndOfLineSequence): Self = StObject.set(x, "eol", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object UpdateSecretVersionStageResponse {
     __obj.asInstanceOf[UpdateSecretVersionStageResponse]
   }
   
-  extension [Self <: UpdateSecretVersionStageResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateSecretVersionStageResponse] (val x: Self) extends AnyVal {
     
     inline def setARN(value: SecretARNType): Self = StObject.set(x, "ARN", value.asInstanceOf[js.Any])
     

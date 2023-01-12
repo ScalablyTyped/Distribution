@@ -18,7 +18,8 @@ object GetFileOptions {
     __obj.asInstanceOf[GetFileOptions]
   }
   
-  extension [Self <: GetFileOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetFileOptions] (val x: Self) extends AnyVal {
     
     inline def setUserProject(value: String): Self = StObject.set(x, "userProject", value.asInstanceOf[js.Any])
     

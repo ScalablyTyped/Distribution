@@ -16,7 +16,8 @@ object CheckValidCredsResponse {
     __obj.asInstanceOf[CheckValidCredsResponse]
   }
   
-  extension [Self <: CheckValidCredsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CheckValidCredsResponse] (val x: Self) extends AnyVal {
     
     inline def setHasValidCreds(value: Boolean): Self = StObject.set(x, "hasValidCreds", value.asInstanceOf[js.Any])
     

@@ -44,7 +44,8 @@ object NodeAPISettings {
     __obj.asInstanceOf[NodeAPISettings]
   }
   
-  extension [Self <: NodeAPISettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodeAPISettings] (val x: Self) extends AnyVal {
     
     inline def setAvailable(value: () => Boolean): Self = StObject.set(x, "available", js.Any.fromFunction0(value))
     

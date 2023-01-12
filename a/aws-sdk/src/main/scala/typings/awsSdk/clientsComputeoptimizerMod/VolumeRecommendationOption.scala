@@ -33,7 +33,8 @@ object VolumeRecommendationOption {
     __obj.asInstanceOf[VolumeRecommendationOption]
   }
   
-  extension [Self <: VolumeRecommendationOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VolumeRecommendationOption] (val x: Self) extends AnyVal {
     
     inline def setConfiguration(value: VolumeConfiguration): Self = StObject.set(x, "configuration", value.asInstanceOf[js.Any])
     

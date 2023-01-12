@@ -20,7 +20,8 @@ object SpreadsheetExcelExportEvent {
     __obj.asInstanceOf[SpreadsheetExcelExportEvent]
   }
   
-  extension [Self <: SpreadsheetExcelExportEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpreadsheetExcelExportEvent] (val x: Self) extends AnyVal {
     
     inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

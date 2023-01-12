@@ -23,7 +23,8 @@ object BehaviorReplaceModel {
     __obj.asInstanceOf[BehaviorReplaceModel]
   }
   
-  extension [Self <: BehaviorReplaceModel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BehaviorReplaceModel] (val x: Self) extends AnyVal {
     
     inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

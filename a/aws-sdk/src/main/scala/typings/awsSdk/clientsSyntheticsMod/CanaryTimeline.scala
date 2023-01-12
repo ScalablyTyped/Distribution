@@ -33,7 +33,8 @@ object CanaryTimeline {
     __obj.asInstanceOf[CanaryTimeline]
   }
   
-  extension [Self <: CanaryTimeline](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CanaryTimeline] (val x: Self) extends AnyVal {
     
     inline def setCreated(value: js.Date): Self = StObject.set(x, "Created", value.asInstanceOf[js.Any])
     

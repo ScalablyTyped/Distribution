@@ -27,7 +27,8 @@ object predominanceCreateRendererParamsLegendOptions {
     __obj.asInstanceOf[predominanceCreateRendererParamsLegendOptions]
   }
   
-  extension [Self <: predominanceCreateRendererParamsLegendOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: predominanceCreateRendererParamsLegendOptions] (val x: Self) extends AnyVal {
     
     inline def setShowLegend(value: Boolean): Self = StObject.set(x, "showLegend", value.asInstanceOf[js.Any])
     

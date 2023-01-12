@@ -89,7 +89,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[FirebaseConfig]
     }
     
-    extension [Self <: FirebaseConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FirebaseConfig] (val x: Self) extends AnyVal {
       
       inline def setAuth(value: String): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
       
@@ -111,7 +112,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[PushResponse]
     }
     
-    extension [Self <: PushResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PushResponse] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }

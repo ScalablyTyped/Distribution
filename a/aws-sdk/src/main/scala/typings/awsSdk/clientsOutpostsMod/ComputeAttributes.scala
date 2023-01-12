@@ -23,7 +23,8 @@ object ComputeAttributes {
     __obj.asInstanceOf[ComputeAttributes]
   }
   
-  extension [Self <: ComputeAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ComputeAttributes] (val x: Self) extends AnyVal {
     
     inline def setHostId(value: HostId): Self = StObject.set(x, "HostId", value.asInstanceOf[js.Any])
     

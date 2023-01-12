@@ -16,7 +16,8 @@ object StoreOpenModePlugin {
     __obj.asInstanceOf[StoreOpenModePlugin]
   }
   
-  extension [Self <: StoreOpenModePlugin](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StoreOpenModePlugin] (val x: Self) extends AnyVal {
     
     inline def setCAPICOM_STORE_OPEN_MAXIMUM_ALLOWED(value: `2`): Self = StObject.set(x, "CAPICOM_STORE_OPEN_MAXIMUM_ALLOWED", value.asInstanceOf[js.Any])
   }

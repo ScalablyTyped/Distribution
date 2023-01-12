@@ -17,7 +17,8 @@ object PhotoImportItemImportedEventArgs {
     __obj.asInstanceOf[PhotoImportItemImportedEventArgs]
   }
   
-  extension [Self <: PhotoImportItemImportedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PhotoImportItemImportedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setImportedItem(value: PhotoImportItem): Self = StObject.set(x, "importedItem", value.asInstanceOf[js.Any])
   }

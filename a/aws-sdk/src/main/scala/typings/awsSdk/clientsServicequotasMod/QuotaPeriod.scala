@@ -23,7 +23,8 @@ object QuotaPeriod {
     __obj.asInstanceOf[QuotaPeriod]
   }
   
-  extension [Self <: QuotaPeriod](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QuotaPeriod] (val x: Self) extends AnyVal {
     
     inline def setPeriodUnit(value: PeriodUnit): Self = StObject.set(x, "PeriodUnit", value.asInstanceOf[js.Any])
     

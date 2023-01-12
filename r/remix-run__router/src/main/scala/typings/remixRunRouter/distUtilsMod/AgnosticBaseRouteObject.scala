@@ -34,7 +34,8 @@ object AgnosticBaseRouteObject {
     __obj.asInstanceOf[AgnosticBaseRouteObject]
   }
   
-  extension [Self <: AgnosticBaseRouteObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AgnosticBaseRouteObject] (val x: Self) extends AnyVal {
     
     inline def setAction(value: /* args */ ActionFunctionArgs => (js.Promise[Any | Response]) | Response | Any): Self = StObject.set(x, "action", js.Any.fromFunction1(value))
     

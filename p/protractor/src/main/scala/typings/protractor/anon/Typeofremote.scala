@@ -34,7 +34,8 @@ object Typeofremote {
     __obj.asInstanceOf[Typeofremote]
   }
   
-  extension [Self <: Typeofremote](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Typeofremote] (val x: Self) extends AnyVal {
     
     inline def setDriverService(value: Instantiable2[/* executable */ String, /* options */ ServiceOptions, DriverService]): Self = StObject.set(x, "DriverService", value.asInstanceOf[js.Any])
     

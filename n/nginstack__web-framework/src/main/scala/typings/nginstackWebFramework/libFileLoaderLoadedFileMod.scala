@@ -71,7 +71,8 @@ object libFileLoaderLoadedFileMod {
       __obj.asInstanceOf[LoadedFile]
     }
     
-    extension [Self <: LoadedFile](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LoadedFile] (val x: Self) extends AnyVal {
       
       inline def setContentFileName_(value: Any): Self = StObject.set(x, "contentFileName_", value.asInstanceOf[js.Any])
       

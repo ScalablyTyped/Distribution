@@ -118,7 +118,8 @@ object PositionTrackingWalker {
     __obj.asInstanceOf[PositionTrackingWalker]
   }
   
-  extension [Self <: PositionTrackingWalker](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PositionTrackingWalker] (val x: Self) extends AnyVal {
     
     inline def setPosition(value: () => Double): Self = StObject.set(x, "position", js.Any.fromFunction0(value))
     

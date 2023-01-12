@@ -18,7 +18,8 @@ object Optgroups {
     __obj.asInstanceOf[Optgroups]
   }
   
-  extension [Self <: Optgroups](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Optgroups] (val x: Self) extends AnyVal {
     
     inline def set__ungrouped(value: Value): Self = StObject.set(x, "__ungrouped", value.asInstanceOf[js.Any])
     

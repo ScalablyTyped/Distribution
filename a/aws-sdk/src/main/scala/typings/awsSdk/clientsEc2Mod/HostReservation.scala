@@ -83,7 +83,8 @@ object HostReservation {
     __obj.asInstanceOf[HostReservation]
   }
   
-  extension [Self <: HostReservation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HostReservation] (val x: Self) extends AnyVal {
     
     inline def setCount(value: Integer): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     

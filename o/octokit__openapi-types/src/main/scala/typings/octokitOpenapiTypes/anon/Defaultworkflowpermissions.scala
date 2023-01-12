@@ -19,7 +19,8 @@ object Defaultworkflowpermissions {
     __obj.asInstanceOf[Defaultworkflowpermissions]
   }
   
-  extension [Self <: Defaultworkflowpermissions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Defaultworkflowpermissions] (val x: Self) extends AnyVal {
     
     inline def setCan_approve_pull_request_reviews(value: Boolean): Self = StObject.set(x, "can_approve_pull_request_reviews", value.asInstanceOf[js.Any])
     

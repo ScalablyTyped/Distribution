@@ -18,7 +18,8 @@ object ReadOptions {
     __obj.asInstanceOf[ReadOptions]
   }
   
-  extension [Self <: ReadOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadOptions] (val x: Self) extends AnyVal {
     
     inline def setDataProjection(value: ProjectionLike): Self = StObject.set(x, "dataProjection", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object JsxSlotElementProps {
     __obj.asInstanceOf[JsxSlotElementProps]
   }
   
-  extension [Self <: JsxSlotElementProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JsxSlotElementProps] (val x: Self) extends AnyVal {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

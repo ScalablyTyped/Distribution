@@ -15,7 +15,8 @@ object ReactTag {
     __obj.asInstanceOf[ReactTag]
   }
   
-  extension [Self <: ReactTag](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReactTag] (val x: Self) extends AnyVal {
     
     inline def setReactTag(value: Double): Self = StObject.set(x, "reactTag", value.asInstanceOf[js.Any])
     

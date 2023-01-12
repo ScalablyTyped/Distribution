@@ -17,7 +17,8 @@ object SlotHTMLAttributes {
     __obj.asInstanceOf[SlotHTMLAttributes[T]]
   }
   
-  extension [Self <: SlotHTMLAttributes[?], T](x: Self & SlotHTMLAttributes[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SlotHTMLAttributes[?], T] (val x: Self & SlotHTMLAttributes[T]) extends AnyVal {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

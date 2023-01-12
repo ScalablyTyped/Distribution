@@ -19,7 +19,8 @@ object KnownStatsLogging {
     __obj.asInstanceOf[KnownStatsLogging]
   }
   
-  extension [Self <: KnownStatsLogging](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KnownStatsLogging] (val x: Self) extends AnyVal {
     
     inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
     

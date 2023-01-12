@@ -38,7 +38,8 @@ object ArrayVariable {
     __obj.asInstanceOf[ArrayVariable]
   }
   
-  extension [Self <: ArrayVariable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ArrayVariable] (val x: Self) extends AnyVal {
     
     inline def setElementType(value: ArrayElementType): Self = StObject.set(x, "elementType", value.asInstanceOf[js.Any])
     

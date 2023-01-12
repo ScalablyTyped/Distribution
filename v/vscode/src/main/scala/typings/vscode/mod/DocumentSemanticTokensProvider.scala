@@ -117,7 +117,8 @@ object DocumentSemanticTokensProvider {
     __obj.asInstanceOf[DocumentSemanticTokensProvider]
   }
   
-  extension [Self <: DocumentSemanticTokensProvider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DocumentSemanticTokensProvider] (val x: Self) extends AnyVal {
     
     inline def setOnDidChangeSemanticTokens(
       value: (/* listener */ js.Function1[Unit, Any], /* thisArgs */ js.UndefOr[Any], /* disposables */ js.UndefOr[js.Array[Disposable]]) => Disposable

@@ -44,7 +44,8 @@ object LocationFilter {
     __obj.asInstanceOf[LocationFilter]
   }
   
-  extension [Self <: LocationFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LocationFilter] (val x: Self) extends AnyVal {
     
     inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     

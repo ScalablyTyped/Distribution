@@ -18,7 +18,8 @@ object MessageDescriptorText {
     __obj.asInstanceOf[MessageDescriptorText]
   }
   
-  extension [Self <: MessageDescriptorText](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MessageDescriptorText] (val x: Self) extends AnyVal {
     
     inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
   }

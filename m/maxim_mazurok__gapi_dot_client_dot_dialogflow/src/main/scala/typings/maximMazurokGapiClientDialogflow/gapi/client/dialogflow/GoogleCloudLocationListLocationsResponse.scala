@@ -19,7 +19,8 @@ object GoogleCloudLocationListLocationsResponse {
     __obj.asInstanceOf[GoogleCloudLocationListLocationsResponse]
   }
   
-  extension [Self <: GoogleCloudLocationListLocationsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudLocationListLocationsResponse] (val x: Self) extends AnyVal {
     
     inline def setLocations(value: js.Array[GoogleCloudLocationLocation]): Self = StObject.set(x, "locations", value.asInstanceOf[js.Any])
     

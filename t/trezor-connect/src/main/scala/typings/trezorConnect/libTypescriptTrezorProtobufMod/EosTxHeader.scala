@@ -32,7 +32,8 @@ object EosTxHeader {
     __obj.asInstanceOf[EosTxHeader]
   }
   
-  extension [Self <: EosTxHeader](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EosTxHeader] (val x: Self) extends AnyVal {
     
     inline def setDelay_sec(value: Double): Self = StObject.set(x, "delay_sec", value.asInstanceOf[js.Any])
     

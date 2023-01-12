@@ -21,7 +21,8 @@ object CsvDataFormat {
     __obj.asInstanceOf[CsvDataFormat]
   }
   
-  extension [Self <: CsvDataFormat](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CsvDataFormat] (val x: Self) extends AnyVal {
     
     inline def setType(value: csv | tsv): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

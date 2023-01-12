@@ -18,7 +18,8 @@ object CompletedMultipartUpload {
     __obj.asInstanceOf[CompletedMultipartUpload]
   }
   
-  extension [Self <: CompletedMultipartUpload](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CompletedMultipartUpload] (val x: Self) extends AnyVal {
     
     inline def setParts(value: CompletedPartList): Self = StObject.set(x, "Parts", value.asInstanceOf[js.Any])
     

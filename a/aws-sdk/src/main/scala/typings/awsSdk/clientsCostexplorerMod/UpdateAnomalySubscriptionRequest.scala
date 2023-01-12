@@ -43,7 +43,8 @@ object UpdateAnomalySubscriptionRequest {
     __obj.asInstanceOf[UpdateAnomalySubscriptionRequest]
   }
   
-  extension [Self <: UpdateAnomalySubscriptionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateAnomalySubscriptionRequest] (val x: Self) extends AnyVal {
     
     inline def setFrequency(value: AnomalySubscriptionFrequency): Self = StObject.set(x, "Frequency", value.asInstanceOf[js.Any])
     

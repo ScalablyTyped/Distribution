@@ -145,7 +145,8 @@ object ASPxClientMenuItem {
     __obj.asInstanceOf[ASPxClientMenuItem]
   }
   
-  extension [Self <: ASPxClientMenuItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientMenuItem] (val x: Self) extends AnyVal {
     
     inline def setGetChecked(value: () => Boolean): Self = StObject.set(x, "GetChecked", js.Any.fromFunction0(value))
     

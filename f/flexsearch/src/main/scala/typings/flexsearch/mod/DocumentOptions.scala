@@ -23,7 +23,8 @@ object DocumentOptions {
     __obj.asInstanceOf[DocumentOptions[T, Store]]
   }
   
-  extension [Self <: DocumentOptions[?, ?], T, Store /* <: StoreOption */](x: Self & (DocumentOptions[T, Store])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DocumentOptions[?, ?], T, Store /* <: StoreOption */] (val x: Self & (DocumentOptions[T, Store])) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

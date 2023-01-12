@@ -54,7 +54,8 @@ object IFile {
     __obj.asInstanceOf[IFile]
   }
   
-  extension [Self <: IFile](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IFile] (val x: Self) extends AnyVal {
     
     inline def setAccept(value: String): Self = StObject.set(x, "accept", value.asInstanceOf[js.Any])
     

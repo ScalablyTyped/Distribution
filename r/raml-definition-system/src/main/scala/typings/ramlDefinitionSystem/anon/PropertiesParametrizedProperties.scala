@@ -17,7 +17,8 @@ object PropertiesParametrizedProperties {
     __obj.asInstanceOf[PropertiesParametrizedProperties]
   }
   
-  extension [Self <: PropertiesParametrizedProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PropertiesParametrizedProperties] (val x: Self) extends AnyVal {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

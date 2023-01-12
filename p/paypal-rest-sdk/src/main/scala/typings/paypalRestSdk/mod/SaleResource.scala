@@ -29,7 +29,8 @@ object SaleResource {
     __obj.asInstanceOf[SaleResource]
   }
   
-  extension [Self <: SaleResource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SaleResource] (val x: Self) extends AnyVal {
     
     inline def setBilling_agreement_id(value: String): Self = StObject.set(x, "billing_agreement_id", value.asInstanceOf[js.Any])
     

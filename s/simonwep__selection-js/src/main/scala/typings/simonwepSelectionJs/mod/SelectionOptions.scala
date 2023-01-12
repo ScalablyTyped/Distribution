@@ -53,7 +53,8 @@ object SelectionOptions {
     __obj.asInstanceOf[SelectionOptions]
   }
   
-  extension [Self <: SelectionOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SelectionOptions] (val x: Self) extends AnyVal {
     
     inline def setAllowTouch(value: Boolean): Self = StObject.set(x, "allowTouch", value.asInstanceOf[js.Any])
     

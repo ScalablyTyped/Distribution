@@ -23,7 +23,8 @@ object ApplyAttributesUntypedSetter {
     __obj.asInstanceOf[ApplyAttributesUntypedSetter]
   }
   
-  extension [Self <: ApplyAttributesUntypedSetter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApplyAttributesUntypedSetter] (val x: Self) extends AnyVal {
     
     inline def setAttr(value: Attributes[Widget[Any], Any]): Self = StObject.set(x, "attr", value.asInstanceOf[js.Any])
     

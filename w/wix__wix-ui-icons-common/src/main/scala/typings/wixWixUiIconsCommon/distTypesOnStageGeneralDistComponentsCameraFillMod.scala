@@ -27,7 +27,8 @@ object distTypesOnStageGeneralDistComponentsCameraFillMod extends Shortcut {
       __obj.asInstanceOf[CameraFillProps]
     }
     
-    extension [Self <: CameraFillProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CameraFillProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

@@ -41,7 +41,8 @@ object PlannerPlan {
     __obj.asInstanceOf[PlannerPlan]
   }
   
-  extension [Self <: PlannerPlan](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlannerPlan] (val x: Self) extends AnyVal {
     
     inline def setBuckets(value: NullableOption[js.Array[PlannerBucket]]): Self = StObject.set(x, "buckets", value.asInstanceOf[js.Any])
     

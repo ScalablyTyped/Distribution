@@ -63,7 +63,8 @@ object distTypesEnteringKeyframesMotionMod extends Shortcut {
       __obj.asInstanceOf[InternalKeyframesMotionProps]
     }
     
-    extension [Self <: InternalKeyframesMotionProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InternalKeyframesMotionProps] (val x: Self) extends AnyVal {
       
       inline def setAnimationTimingFunction(value: Transition => String): Self = StObject.set(x, "animationTimingFunction", js.Any.fromFunction1(value))
       
@@ -97,7 +98,8 @@ object distTypesEnteringKeyframesMotionMod extends Shortcut {
       __obj.asInstanceOf[KeyframesMotionProps]
     }
     
-    extension [Self <: KeyframesMotionProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KeyframesMotionProps] (val x: Self) extends AnyVal {
       
       inline def setIsPaused(value: Boolean): Self = StObject.set(x, "isPaused", value.asInstanceOf[js.Any])
       

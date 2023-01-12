@@ -18,7 +18,8 @@ object SiteMapsConfiguration {
     __obj.asInstanceOf[SiteMapsConfiguration]
   }
   
-  extension [Self <: SiteMapsConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SiteMapsConfiguration] (val x: Self) extends AnyVal {
     
     inline def setSiteMaps(value: SiteMapsList): Self = StObject.set(x, "SiteMaps", value.asInstanceOf[js.Any])
     

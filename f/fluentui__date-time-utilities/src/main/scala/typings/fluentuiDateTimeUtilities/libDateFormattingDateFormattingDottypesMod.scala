@@ -96,7 +96,8 @@ object libDateFormattingDateFormattingDottypesMod {
       __obj.asInstanceOf[ICalendarStrings]
     }
     
-    extension [Self <: ICalendarStrings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICalendarStrings] (val x: Self) extends AnyVal {
       
       inline def setCloseButtonAriaLabel(value: String): Self = StObject.set(x, "closeButtonAriaLabel", value.asInstanceOf[js.Any])
       
@@ -194,7 +195,8 @@ object libDateFormattingDateFormattingDottypesMod {
       __obj.asInstanceOf[IDateFormatting]
     }
     
-    extension [Self <: IDateFormatting](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDateFormatting] (val x: Self) extends AnyVal {
       
       inline def setFormatDay(value: js.Date => String): Self = StObject.set(x, "formatDay", js.Any.fromFunction1(value))
       
@@ -246,7 +248,8 @@ object libDateFormattingDateFormattingDottypesMod {
       __obj.asInstanceOf[IDateGridStrings]
     }
     
-    extension [Self <: IDateGridStrings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDateGridStrings] (val x: Self) extends AnyVal {
       
       inline def setDays(value: js.Array[String]): Self = StObject.set(x, "days", value.asInstanceOf[js.Any])
       

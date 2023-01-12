@@ -23,7 +23,8 @@ object FsxStorageConfiguration {
     __obj.asInstanceOf[FsxStorageConfiguration]
   }
   
-  extension [Self <: FsxStorageConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FsxStorageConfiguration] (val x: Self) extends AnyVal {
     
     inline def setFileSystemId(value: String200): Self = StObject.set(x, "fileSystemId", value.asInstanceOf[js.Any])
     

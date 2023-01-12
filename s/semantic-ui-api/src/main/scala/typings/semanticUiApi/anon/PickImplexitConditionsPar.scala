@@ -43,7 +43,8 @@ object PickImplexitConditionsPar {
     __obj.asInstanceOf[PickImplexitConditionsPar]
   }
   
-  extension [Self <: PickImplexitConditionsPar](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickImplexitConditionsPar] (val x: Self) extends AnyVal {
     
     inline def setBeforeSend(value: String): Self = StObject.set(x, "beforeSend", value.asInstanceOf[js.Any])
     

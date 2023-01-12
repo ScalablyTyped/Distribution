@@ -38,7 +38,8 @@ object PutBucketRequestPaymentRequest {
     __obj.asInstanceOf[PutBucketRequestPaymentRequest]
   }
   
-  extension [Self <: PutBucketRequestPaymentRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutBucketRequestPaymentRequest] (val x: Self) extends AnyVal {
     
     inline def setBucket(value: BucketName): Self = StObject.set(x, "Bucket", value.asInstanceOf[js.Any])
     

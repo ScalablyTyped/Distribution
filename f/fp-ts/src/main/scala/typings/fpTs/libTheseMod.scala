@@ -221,7 +221,8 @@ object libTheseMod {
       __obj.asInstanceOf[Both_[E, A]]
     }
     
-    extension [Self <: Both_[?, ?], E, A](x: Self & (Both_[E, A])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Both_[?, ?], E, A] (val x: Self & (Both_[E, A])) extends AnyVal {
       
       inline def setLeft(value: E): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
       

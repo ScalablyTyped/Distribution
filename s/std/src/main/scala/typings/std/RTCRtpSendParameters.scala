@@ -30,7 +30,8 @@ object RTCRtpSendParameters {
     __obj.asInstanceOf[RTCRtpSendParameters]
   }
   
-  extension [Self <: RTCRtpSendParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RTCRtpSendParameters] (val x: Self) extends AnyVal {
     
     inline def setDegradationPreference(value: RTCDegradationPreference): Self = StObject.set(x, "degradationPreference", value.asInstanceOf[js.Any])
     

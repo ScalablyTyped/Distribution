@@ -102,7 +102,8 @@ object dxBarGauge {
       __obj.asInstanceOf[TooltipInfo]
     }
     
-    extension [Self <: TooltipInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TooltipInfo] (val x: Self) extends AnyVal {
       
       inline def setTarget(value: Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       

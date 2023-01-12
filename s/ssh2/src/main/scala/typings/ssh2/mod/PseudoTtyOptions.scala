@@ -31,7 +31,8 @@ object PseudoTtyOptions {
     __obj.asInstanceOf[PseudoTtyOptions]
   }
   
-  extension [Self <: PseudoTtyOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PseudoTtyOptions] (val x: Self) extends AnyVal {
     
     inline def setCols(value: Double): Self = StObject.set(x, "cols", value.asInstanceOf[js.Any])
     

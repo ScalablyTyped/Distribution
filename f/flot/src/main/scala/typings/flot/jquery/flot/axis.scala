@@ -21,7 +21,8 @@ object axis {
     __obj.asInstanceOf[axis]
   }
   
-  extension [Self <: axis](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: axis] (val x: Self) extends AnyVal {
     
     inline def setC2p(value: canvasPoint => point): Self = StObject.set(x, "c2p", js.Any.fromFunction1(value))
     

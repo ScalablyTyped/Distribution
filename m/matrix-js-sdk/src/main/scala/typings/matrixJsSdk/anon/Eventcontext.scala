@@ -29,7 +29,8 @@ object Eventcontext {
     __obj.asInstanceOf[Eventcontext]
   }
   
-  extension [Self <: Eventcontext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Eventcontext] (val x: Self) extends AnyVal {
     
     inline def setEvent_context(value: IncludeEventContext): Self = StObject.set(x, "event_context", value.asInstanceOf[js.Any])
     

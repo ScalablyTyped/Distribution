@@ -75,7 +75,8 @@ object FeatureTemplatesProperties {
     __obj.asInstanceOf[FeatureTemplatesProperties]
   }
   
-  extension [Self <: FeatureTemplatesProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FeatureTemplatesProperties] (val x: Self) extends AnyVal {
     
     inline def setEnableListScroll(value: scala.Unit): Self = StObject.set(x, "enableListScroll", value.asInstanceOf[js.Any])
     

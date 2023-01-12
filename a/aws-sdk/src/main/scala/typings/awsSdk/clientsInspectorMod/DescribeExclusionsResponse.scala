@@ -23,7 +23,8 @@ object DescribeExclusionsResponse {
     __obj.asInstanceOf[DescribeExclusionsResponse]
   }
   
-  extension [Self <: DescribeExclusionsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeExclusionsResponse] (val x: Self) extends AnyVal {
     
     inline def setExclusions(value: ExclusionMap): Self = StObject.set(x, "exclusions", value.asInstanceOf[js.Any])
     

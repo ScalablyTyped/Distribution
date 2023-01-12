@@ -25,7 +25,8 @@ object MouseTracker {
     __obj.asInstanceOf[MouseTracker]
   }
   
-  extension [Self <: MouseTracker](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MouseTracker] (val x: Self) extends AnyVal {
     
     inline def setEndTrack(value: (Double, Double) => Unit): Self = StObject.set(x, "EndTrack", js.Any.fromFunction2(value))
     

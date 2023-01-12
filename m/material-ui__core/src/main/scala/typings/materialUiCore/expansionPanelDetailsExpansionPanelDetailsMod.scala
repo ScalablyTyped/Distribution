@@ -481,7 +481,8 @@ object expansionPanelDetailsExpansionPanelDetailsMod {
       __obj.asInstanceOf[ExpansionPanelDetailsProps]
     }
     
-    extension [Self <: ExpansionPanelDetailsProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExpansionPanelDetailsProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       

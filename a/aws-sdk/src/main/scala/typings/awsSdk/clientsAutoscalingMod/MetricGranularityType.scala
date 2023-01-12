@@ -18,7 +18,8 @@ object MetricGranularityType {
     __obj.asInstanceOf[MetricGranularityType]
   }
   
-  extension [Self <: MetricGranularityType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MetricGranularityType] (val x: Self) extends AnyVal {
     
     inline def setGranularity(value: XmlStringMaxLen255): Self = StObject.set(x, "Granularity", value.asInstanceOf[js.Any])
     

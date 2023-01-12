@@ -518,7 +518,8 @@ object sapFAvatarGroupMod {
       __obj.asInstanceOf[AvatarGroupSettings]
     }
     
-    extension [Self <: AvatarGroupSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AvatarGroupSettings] (val x: Self) extends AnyVal {
       
       inline def setAvatarCustomDisplaySize(value: AbsoluteCSSSize | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "avatarCustomDisplaySize", value.asInstanceOf[js.Any])
       

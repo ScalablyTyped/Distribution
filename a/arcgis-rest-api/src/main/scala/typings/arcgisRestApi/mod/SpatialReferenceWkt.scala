@@ -19,7 +19,8 @@ object SpatialReferenceWkt {
     __obj.asInstanceOf[SpatialReferenceWkt]
   }
   
-  extension [Self <: SpatialReferenceWkt](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpatialReferenceWkt] (val x: Self) extends AnyVal {
     
     inline def setLatestWkt(value: String): Self = StObject.set(x, "latestWkt", value.asInstanceOf[js.Any])
     

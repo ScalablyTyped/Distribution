@@ -17,7 +17,8 @@ object LCDGeneralOption {
     __obj.asInstanceOf[LCDGeneralOption]
   }
   
-  extension [Self <: LCDGeneralOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LCDGeneralOption] (val x: Self) extends AnyVal {
     
     inline def setCols(value: Double): Self = StObject.set(x, "cols", value.asInstanceOf[js.Any])
     

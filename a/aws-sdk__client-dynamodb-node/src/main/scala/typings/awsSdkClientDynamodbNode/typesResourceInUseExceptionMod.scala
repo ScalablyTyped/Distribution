@@ -33,7 +33,8 @@ object typesResourceInUseExceptionMod {
       __obj.asInstanceOf[ResourceInUseException]
     }
     
-    extension [Self <: ResourceInUseException](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResourceInUseException] (val x: Self) extends AnyVal {
       
       inline def setName(value: typings.awsSdkClientDynamodbNode.awsSdkClientDynamodbNodeStrings.ResourceInUseException): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
@@ -53,7 +54,8 @@ object typesResourceInUseExceptionMod {
       __obj.asInstanceOf[ResourceInUseExceptionDetails]
     }
     
-    extension [Self <: ResourceInUseExceptionDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResourceInUseExceptionDetails] (val x: Self) extends AnyVal {
       
       inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       

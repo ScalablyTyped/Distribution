@@ -19,7 +19,8 @@ object RubricQualitySelectedColumnModel {
     __obj.asInstanceOf[RubricQualitySelectedColumnModel]
   }
   
-  extension [Self <: RubricQualitySelectedColumnModel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RubricQualitySelectedColumnModel] (val x: Self) extends AnyVal {
     
     inline def setColumnId(value: NullableOption[String]): Self = StObject.set(x, "columnId", value.asInstanceOf[js.Any])
     

@@ -26,7 +26,8 @@ object Eval {
     __obj.asInstanceOf[Eval]
   }
   
-  extension [Self <: Eval](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Eval] (val x: Self) extends AnyVal {
     
     inline def setEval(value: /* repeated */ Any => Any): Self = StObject.set(x, "eval", js.Any.fromFunction1(value))
     

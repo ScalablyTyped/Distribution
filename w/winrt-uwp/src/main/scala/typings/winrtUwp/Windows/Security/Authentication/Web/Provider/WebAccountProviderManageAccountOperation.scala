@@ -24,7 +24,8 @@ object WebAccountProviderManageAccountOperation {
     __obj.asInstanceOf[WebAccountProviderManageAccountOperation]
   }
   
-  extension [Self <: WebAccountProviderManageAccountOperation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebAccountProviderManageAccountOperation] (val x: Self) extends AnyVal {
     
     inline def setKind(value: WebAccountProviderOperationKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

@@ -542,7 +542,8 @@ object mod extends Shortcut {
         __obj.asInstanceOf[ConstructorOptions]
       }
       
-      extension [Self <: ConstructorOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ConstructorOptions] (val x: Self) extends AnyVal {
         
         inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
         
@@ -592,7 +593,8 @@ object mod extends Shortcut {
         __obj.asInstanceOf[CryptoKeyPair]
       }
       
-      extension [Self <: CryptoKeyPair](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CryptoKeyPair] (val x: Self) extends AnyVal {
         
         inline def setEpriv(value: String): Self = StObject.set(x, "epriv", value.asInstanceOf[js.Any])
         

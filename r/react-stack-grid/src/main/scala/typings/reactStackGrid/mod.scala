@@ -33,7 +33,8 @@ object mod {
       __obj.asInstanceOf[Grid]
     }
     
-    extension [Self <: Grid](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Grid] (val x: Self) extends AnyVal {
       
       inline def setUpdateLayout(value: () => Unit): Self = StObject.set(x, "updateLayout", js.Any.fromFunction0(value))
     }
@@ -100,7 +101,8 @@ object mod {
       __obj.asInstanceOf[StackGridProps]
     }
     
-    extension [Self <: StackGridProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StackGridProps] (val x: Self) extends AnyVal {
       
       inline def setAppear(value: () => Unit): Self = StObject.set(x, "appear", js.Any.fromFunction0(value))
       
@@ -215,7 +217,8 @@ object mod {
       __obj.asInstanceOf[Units]
     }
     
-    extension [Self <: Units](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Units] (val x: Self) extends AnyVal {
       
       inline def setAngle(value: String): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
       
@@ -317,7 +320,8 @@ object mod {
       __obj.asInstanceOf[easingProps]
     }
     
-    extension [Self <: easingProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: easingProps] (val x: Self) extends AnyVal {
       
       inline def setBackIn(value: String): Self = StObject.set(x, "backIn", value.asInstanceOf[js.Any])
       
@@ -408,7 +412,8 @@ object mod {
       __obj.asInstanceOf[transitionsProps]
     }
     
-    extension [Self <: transitionsProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: transitionsProps] (val x: Self) extends AnyVal {
       
       inline def setFade(value: Appear): Self = StObject.set(x, "fade", value.asInstanceOf[js.Any])
       

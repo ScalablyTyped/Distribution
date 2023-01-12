@@ -18,7 +18,8 @@ object StopReplicationToReplicaRequest {
     __obj.asInstanceOf[StopReplicationToReplicaRequest]
   }
   
-  extension [Self <: StopReplicationToReplicaRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StopReplicationToReplicaRequest] (val x: Self) extends AnyVal {
     
     inline def setSecretId(value: SecretIdType): Self = StObject.set(x, "SecretId", value.asInstanceOf[js.Any])
   }

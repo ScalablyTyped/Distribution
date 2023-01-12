@@ -15,7 +15,8 @@ object TypeofMandateAcceptance {
     __obj.asInstanceOf[TypeofMandateAcceptance]
   }
   
-  extension [Self <: TypeofMandateAcceptance](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofMandateAcceptance] (val x: Self) extends AnyVal {
     
     inline def setAcceptance(value: Any): Self = StObject.set(x, "Acceptance", value.asInstanceOf[js.Any])
   }

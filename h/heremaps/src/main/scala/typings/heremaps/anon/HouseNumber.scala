@@ -19,7 +19,8 @@ object HouseNumber {
     __obj.asInstanceOf[HouseNumber]
   }
   
-  extension [Self <: HouseNumber](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HouseNumber] (val x: Self) extends AnyVal {
     
     inline def setCity(value: Double): Self = StObject.set(x, "City", value.asInstanceOf[js.Any])
     

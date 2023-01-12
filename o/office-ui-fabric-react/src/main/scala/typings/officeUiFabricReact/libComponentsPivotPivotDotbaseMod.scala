@@ -85,7 +85,8 @@ object libComponentsPivotPivotDotbaseMod {
       __obj.asInstanceOf[IPivotState]
     }
     
-    extension [Self <: IPivotState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPivotState] (val x: Self) extends AnyVal {
       
       inline def setSelectedKey(value: String): Self = StObject.set(x, "selectedKey", value.asInstanceOf[js.Any])
       

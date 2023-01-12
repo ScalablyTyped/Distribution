@@ -25,7 +25,8 @@ object IncomingContext {
     __obj.asInstanceOf[IncomingContext]
   }
   
-  extension [Self <: IncomingContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IncomingContext] (val x: Self) extends AnyVal {
     
     inline def setObservedParticipantId(value: NullableOption[String]): Self = StObject.set(x, "observedParticipantId", value.asInstanceOf[js.Any])
     

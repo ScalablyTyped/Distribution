@@ -25,7 +25,8 @@ object HeaderButton {
     __obj.asInstanceOf[HeaderButton]
   }
   
-  extension [Self <: HeaderButton](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HeaderButton] (val x: Self) extends AnyVal {
     
     inline def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
     

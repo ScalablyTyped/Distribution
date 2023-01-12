@@ -157,7 +157,8 @@ object mod {
       __obj.asInstanceOf[DecoderReservedEvents]
     }
     
-    extension [Self <: DecoderReservedEvents](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DecoderReservedEvents] (val x: Self) extends AnyVal {
       
       inline def setDecoded(value: Packet => Unit): Self = StObject.set(x, "decoded", js.Any.fromFunction1(value))
     }
@@ -183,7 +184,8 @@ object mod {
       __obj.asInstanceOf[Packet]
     }
     
-    extension [Self <: Packet](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Packet] (val x: Self) extends AnyVal {
       
       inline def setAttachments(value: Double): Self = StObject.set(x, "attachments", value.asInstanceOf[js.Any])
       

@@ -335,7 +335,8 @@ object mod {
       __obj.asInstanceOf[Preset]
     }
     
-    extension [Self <: Preset](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Preset] (val x: Self) extends AnyVal {
       
       inline def setPlugins(value: PluggableList): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
       

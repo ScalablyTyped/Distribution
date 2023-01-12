@@ -25,7 +25,8 @@ object FindObjectOptions {
     __obj.asInstanceOf[FindObjectOptions]
   }
   
-  extension [Self <: FindObjectOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FindObjectOptions] (val x: Self) extends AnyVal {
     
     inline def setPaginate(value: Boolean): Self = StObject.set(x, "paginate", value.asInstanceOf[js.Any])
     

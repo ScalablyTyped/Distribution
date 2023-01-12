@@ -31,7 +31,8 @@ object FindAccount {
     __obj.asInstanceOf[FindAccount]
   }
   
-  extension [Self <: FindAccount](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FindAccount] (val x: Self) extends AnyVal {
     
     inline def setFindAccount(
       value: (/* ctx */ KoaContextWithOIDC, /* sub */ String, /* token */ js.UndefOr[

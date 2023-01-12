@@ -18,7 +18,8 @@ object PostExport {
     __obj.asInstanceOf[PostExport]
   }
   
-  extension [Self <: PostExport](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PostExport] (val x: Self) extends AnyVal {
     
     inline def setPostExport(value: js.Array[PublishHook]): Self = StObject.set(x, "postExport", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object ColHTMLAttributes {
     __obj.asInstanceOf[ColHTMLAttributes]
   }
   
-  extension [Self <: ColHTMLAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ColHTMLAttributes] (val x: Self) extends AnyVal {
     
     inline def setSpan(value: Double): Self = StObject.set(x, "span", value.asInstanceOf[js.Any])
     

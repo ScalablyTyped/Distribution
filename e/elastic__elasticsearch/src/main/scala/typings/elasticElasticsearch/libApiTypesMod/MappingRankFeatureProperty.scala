@@ -22,7 +22,8 @@ object MappingRankFeatureProperty {
     __obj.asInstanceOf[MappingRankFeatureProperty]
   }
   
-  extension [Self <: MappingRankFeatureProperty](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MappingRankFeatureProperty] (val x: Self) extends AnyVal {
     
     inline def setPositive_score_impact(value: Boolean): Self = StObject.set(x, "positive_score_impact", value.asInstanceOf[js.Any])
     

@@ -31,7 +31,8 @@ object libModalConfirmDialogMod {
       __obj.asInstanceOf[ConfirmDialogProps]
     }
     
-    extension [Self <: ConfirmDialogProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConfirmDialogProps] (val x: Self) extends AnyVal {
       
       inline def setClose(value: /* repeated */ Any => Unit): Self = StObject.set(x, "close", js.Any.fromFunction1(value))
       

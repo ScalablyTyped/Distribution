@@ -56,7 +56,8 @@ object IPieSeries {
     __obj.asInstanceOf[IPieSeries]
   }
   
-  extension [Self <: IPieSeries](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPieSeries] (val x: Self) extends AnyVal {
     
     inline def setAngleField(value: String): Self = StObject.set(x, "angleField", value.asInstanceOf[js.Any])
     

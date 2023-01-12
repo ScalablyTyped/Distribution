@@ -18,7 +18,8 @@ object WorkloadDiscoveryConfig {
     __obj.asInstanceOf[WorkloadDiscoveryConfig]
   }
   
-  extension [Self <: WorkloadDiscoveryConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkloadDiscoveryConfig] (val x: Self) extends AnyVal {
     
     inline def setTrustedAdvisorIntegrationStatus(value: TrustedAdvisorIntegrationStatus): Self = StObject.set(x, "TrustedAdvisorIntegrationStatus", value.asInstanceOf[js.Any])
     

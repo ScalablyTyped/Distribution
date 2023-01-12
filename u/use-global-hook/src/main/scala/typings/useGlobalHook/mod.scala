@@ -31,7 +31,8 @@ object mod {
       __obj.asInstanceOf[Options[S, A]]
     }
     
-    extension [Self <: Options[?, ?], S, A](x: Self & (Options[S, A])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options[?, ?], S, A] (val x: Self & (Options[S, A])) extends AnyVal {
       
       inline def setImmer(value: IProduce): Self = StObject.set(x, "Immer", value.asInstanceOf[js.Any])
       
@@ -63,7 +64,8 @@ object mod {
       __obj.asInstanceOf[ReactInterface]
     }
     
-    extension [Self <: ReactInterface](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReactInterface] (val x: Self) extends AnyVal {
       
       inline def setUseEffect(value: /* repeated */ Any => Any): Self = StObject.set(x, "useEffect", js.Any.fromFunction1(value))
       

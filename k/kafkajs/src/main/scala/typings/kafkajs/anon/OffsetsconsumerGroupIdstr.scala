@@ -19,7 +19,8 @@ object OffsetsconsumerGroupIdstr {
     __obj.asInstanceOf[OffsetsconsumerGroupIdstr]
   }
   
-  extension [Self <: OffsetsconsumerGroupIdstr](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OffsetsconsumerGroupIdstr] (val x: Self) extends AnyVal {
     
     inline def setConsumerGroupId(value: String): Self = StObject.set(x, "consumerGroupId", value.asInstanceOf[js.Any])
     

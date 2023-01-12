@@ -63,7 +63,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Box]
     }
     
-    extension [Self <: Box](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Box] (val x: Self) extends AnyVal {
       
       inline def setOptions(value: Fullscreen): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
@@ -136,7 +137,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Marks]
     }
     
-    extension [Self <: Marks](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Marks] (val x: Self) extends AnyVal {
       
       inline def setB(value: String): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
       
@@ -214,7 +216,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setFullscreen(value: Boolean): Self = StObject.set(x, "fullscreen", value.asInstanceOf[js.Any])
       
@@ -265,7 +268,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Text]
     }
     
-    extension [Self <: Text](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Text] (val x: Self) extends AnyVal {
       
       inline def setAutoEOL(value: Boolean): Self = StObject.set(x, "autoEOL", value.asInstanceOf[js.Any])
       

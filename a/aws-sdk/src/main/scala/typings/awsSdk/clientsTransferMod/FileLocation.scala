@@ -23,7 +23,8 @@ object FileLocation {
     __obj.asInstanceOf[FileLocation]
   }
   
-  extension [Self <: FileLocation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FileLocation] (val x: Self) extends AnyVal {
     
     inline def setEfsFileLocation(value: EfsFileLocation): Self = StObject.set(x, "EfsFileLocation", value.asInstanceOf[js.Any])
     

@@ -78,7 +78,8 @@ object mod {
       __obj.asInstanceOf[CreateUltimatePaginationOptions]
     }
     
-    extension [Self <: CreateUltimatePaginationOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateUltimatePaginationOptions] (val x: Self) extends AnyVal {
       
       inline def setItemTypeToComponent(value: ItemTypeToComponent): Self = StObject.set(x, "itemTypeToComponent", value.asInstanceOf[js.Any])
       
@@ -134,7 +135,8 @@ object mod {
       __obj.asInstanceOf[ItemTypeToComponent]
     }
     
-    extension [Self <: ItemTypeToComponent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ItemTypeToComponent] (val x: Self) extends AnyVal {
       
       inline def setELLIPSIS(value: ComponentType[PaginationComponentProps]): Self = StObject.set(x, "ELLIPSIS", value.asInstanceOf[js.Any])
       
@@ -179,7 +181,8 @@ object mod {
       __obj.asInstanceOf[PaginationComponentProps]
     }
     
-    extension [Self <: PaginationComponentProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PaginationComponentProps] (val x: Self) extends AnyVal {
       
       inline def setIsActive(value: Boolean): Self = StObject.set(x, "isActive", value.asInstanceOf[js.Any])
       
@@ -245,7 +248,8 @@ object mod {
       __obj.asInstanceOf[UltimatePaginationProps]
     }
     
-    extension [Self <: UltimatePaginationProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UltimatePaginationProps] (val x: Self) extends AnyVal {
       
       inline def setBoundaryPagesRange(value: Double): Self = StObject.set(x, "boundaryPagesRange", value.asInstanceOf[js.Any])
       

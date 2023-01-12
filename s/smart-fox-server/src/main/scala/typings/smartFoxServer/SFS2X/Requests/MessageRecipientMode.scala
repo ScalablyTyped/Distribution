@@ -19,7 +19,8 @@ object MessageRecipientMode {
     __obj.asInstanceOf[MessageRecipientMode]
   }
   
-  extension [Self <: MessageRecipientMode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MessageRecipientMode] (val x: Self) extends AnyVal {
     
     inline def setMode(value: Double): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     

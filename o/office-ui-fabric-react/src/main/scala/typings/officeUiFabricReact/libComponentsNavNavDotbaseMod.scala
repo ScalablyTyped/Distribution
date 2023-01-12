@@ -83,7 +83,8 @@ object libComponentsNavNavDotbaseMod {
       __obj.asInstanceOf[INavState]
     }
     
-    extension [Self <: INavState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: INavState] (val x: Self) extends AnyVal {
       
       inline def setIsGroupCollapsed(value: StringDictionary[Boolean]): Self = StObject.set(x, "isGroupCollapsed", value.asInstanceOf[js.Any])
       

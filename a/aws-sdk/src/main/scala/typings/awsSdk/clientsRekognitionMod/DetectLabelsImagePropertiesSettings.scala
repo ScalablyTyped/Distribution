@@ -18,7 +18,8 @@ object DetectLabelsImagePropertiesSettings {
     __obj.asInstanceOf[DetectLabelsImagePropertiesSettings]
   }
   
-  extension [Self <: DetectLabelsImagePropertiesSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DetectLabelsImagePropertiesSettings] (val x: Self) extends AnyVal {
     
     inline def setMaxDominantColors(value: DetectLabelsMaxDominantColors): Self = StObject.set(x, "MaxDominantColors", value.asInstanceOf[js.Any])
     

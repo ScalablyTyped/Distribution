@@ -18,7 +18,8 @@ object ProtectionLimits {
     __obj.asInstanceOf[ProtectionLimits]
   }
   
-  extension [Self <: ProtectionLimits](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProtectionLimits] (val x: Self) extends AnyVal {
     
     inline def setProtectedResourceTypeLimits(value: Limits): Self = StObject.set(x, "ProtectedResourceTypeLimits", value.asInstanceOf[js.Any])
     

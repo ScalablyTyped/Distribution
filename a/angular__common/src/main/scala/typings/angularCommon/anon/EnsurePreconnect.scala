@@ -15,7 +15,8 @@ object EnsurePreconnect {
     __obj.asInstanceOf[EnsurePreconnect]
   }
   
-  extension [Self <: EnsurePreconnect](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnsurePreconnect] (val x: Self) extends AnyVal {
     
     inline def setEnsurePreconnect(value: Boolean): Self = StObject.set(x, "ensurePreconnect", value.asInstanceOf[js.Any])
     

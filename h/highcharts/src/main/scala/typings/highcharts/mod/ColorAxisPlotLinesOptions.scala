@@ -70,7 +70,8 @@ object ColorAxisPlotLinesOptions {
     __obj.asInstanceOf[ColorAxisPlotLinesOptions]
   }
   
-  extension [Self <: ColorAxisPlotLinesOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ColorAxisPlotLinesOptions] (val x: Self) extends AnyVal {
     
     inline def setAcrossPanes(value: Boolean): Self = StObject.set(x, "acrossPanes", value.asInstanceOf[js.Any])
     

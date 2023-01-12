@@ -91,7 +91,8 @@ object mod {
       __obj.asInstanceOf[Change]
     }
     
-    extension [Self <: Change](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Change] (val x: Self) extends AnyVal {
       
       inline def setModification(value: StringDictionary[Any]): Self = StObject.set(x, "modification", value.asInstanceOf[js.Any])
       
@@ -114,7 +115,8 @@ object mod {
       __obj.asInstanceOf[ClientOptions]
     }
     
-    extension [Self <: ClientOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClientOptions] (val x: Self) extends AnyVal {
       
       inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
@@ -198,7 +200,8 @@ object mod {
       __obj.asInstanceOf[LdapClient]
     }
     
-    extension [Self <: LdapClient](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LdapClient] (val x: Self) extends AnyVal {
       
       inline def setAdd(value: (String, js.Object) => js.Promise[Any]): Self = StObject.set(x, "add", js.Any.fromFunction2(value))
       
@@ -239,7 +242,8 @@ object mod {
       __obj.asInstanceOf[SearchOptions]
     }
     
-    extension [Self <: SearchOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SearchOptions] (val x: Self) extends AnyVal {
       
       inline def setAttributes(value: js.Array[String]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       

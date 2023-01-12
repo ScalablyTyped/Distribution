@@ -16,7 +16,8 @@ object BatchUpdatePhotosRequest {
     __obj.asInstanceOf[BatchUpdatePhotosRequest]
   }
   
-  extension [Self <: BatchUpdatePhotosRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchUpdatePhotosRequest] (val x: Self) extends AnyVal {
     
     inline def setUpdatePhotoRequests(value: js.Array[UpdatePhotoRequest]): Self = StObject.set(x, "updatePhotoRequests", value.asInstanceOf[js.Any])
     

@@ -119,7 +119,8 @@ object buildSrcAuthDownscopedclientMod {
       __obj.asInstanceOf[AccessBoundaryRule]
     }
     
-    extension [Self <: AccessBoundaryRule](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AccessBoundaryRule] (val x: Self) extends AnyVal {
       
       inline def setAvailabilityCondition(value: AvailabilityCondition): Self = StObject.set(x, "availabilityCondition", value.asInstanceOf[js.Any])
       
@@ -152,7 +153,8 @@ object buildSrcAuthDownscopedclientMod {
       __obj.asInstanceOf[AvailabilityCondition]
     }
     
-    extension [Self <: AvailabilityCondition](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AvailabilityCondition] (val x: Self) extends AnyVal {
       
       inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
@@ -177,7 +179,8 @@ object buildSrcAuthDownscopedclientMod {
       __obj.asInstanceOf[CredentialAccessBoundary]
     }
     
-    extension [Self <: CredentialAccessBoundary](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CredentialAccessBoundary] (val x: Self) extends AnyVal {
       
       inline def setAccessBoundary(value: AccessBoundaryRules): Self = StObject.set(x, "accessBoundary", value.asInstanceOf[js.Any])
     }
@@ -199,7 +202,8 @@ object buildSrcAuthDownscopedclientMod {
       __obj.asInstanceOf[CredentialsWithResponse]
     }
     
-    extension [Self <: CredentialsWithResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CredentialsWithResponse] (val x: Self) extends AnyVal {
       
       inline def setRes(value: GaxiosResponse[Any]): Self = StObject.set(x, "res", value.asInstanceOf[js.Any])
       
@@ -226,7 +230,8 @@ object buildSrcAuthDownscopedclientMod {
       __obj.asInstanceOf[DownscopedAccessTokenResponse]
     }
     
-    extension [Self <: DownscopedAccessTokenResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DownscopedAccessTokenResponse] (val x: Self) extends AnyVal {
       
       inline def setExpirationTime(value: Double): Self = StObject.set(x, "expirationTime", value.asInstanceOf[js.Any])
       

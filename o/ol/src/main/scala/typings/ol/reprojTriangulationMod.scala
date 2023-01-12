@@ -45,7 +45,8 @@ object reprojTriangulationMod {
       __obj.asInstanceOf[Triangle]
     }
     
-    extension [Self <: Triangle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Triangle] (val x: Self) extends AnyVal {
       
       inline def setSource(value: js.Array[Coordinate]): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
@@ -73,7 +74,8 @@ object reprojTriangulationMod {
       __obj.asInstanceOf[Triangulation]
     }
     
-    extension [Self <: Triangulation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Triangulation] (val x: Self) extends AnyVal {
       
       inline def setCalculateSourceExtent(value: () => Extent): Self = StObject.set(x, "calculateSourceExtent", js.Any.fromFunction0(value))
       

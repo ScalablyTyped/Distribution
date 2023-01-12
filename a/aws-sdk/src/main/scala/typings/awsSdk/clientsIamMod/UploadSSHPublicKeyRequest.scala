@@ -23,7 +23,8 @@ object UploadSSHPublicKeyRequest {
     __obj.asInstanceOf[UploadSSHPublicKeyRequest]
   }
   
-  extension [Self <: UploadSSHPublicKeyRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UploadSSHPublicKeyRequest] (val x: Self) extends AnyVal {
     
     inline def setSSHPublicKeyBody(value: publicKeyMaterialType): Self = StObject.set(x, "SSHPublicKeyBody", value.asInstanceOf[js.Any])
     

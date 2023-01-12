@@ -29,7 +29,8 @@ object IScreenshotSize {
     __obj.asInstanceOf[IScreenshotSize]
   }
   
-  extension [Self <: IScreenshotSize](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IScreenshotSize] (val x: Self) extends AnyVal {
     
     inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     

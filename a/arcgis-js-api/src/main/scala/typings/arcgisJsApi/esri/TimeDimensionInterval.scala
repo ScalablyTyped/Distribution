@@ -34,7 +34,8 @@ object TimeDimensionInterval {
     __obj.asInstanceOf[TimeDimensionInterval]
   }
   
-  extension [Self <: TimeDimensionInterval](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimeDimensionInterval] (val x: Self) extends AnyVal {
     
     inline def setMax(value: js.Date): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     

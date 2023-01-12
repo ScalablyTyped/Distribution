@@ -23,7 +23,8 @@ object ParallelDataConfig {
     __obj.asInstanceOf[ParallelDataConfig]
   }
   
-  extension [Self <: ParallelDataConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParallelDataConfig] (val x: Self) extends AnyVal {
     
     inline def setFormat(value: ParallelDataFormat): Self = StObject.set(x, "Format", value.asInstanceOf[js.Any])
     

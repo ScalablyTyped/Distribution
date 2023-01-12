@@ -131,7 +131,8 @@ object mod {
       __obj.asInstanceOf[InteractiveOwnProps]
     }
     
-    extension [Self <: InteractiveOwnProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InteractiveOwnProps] (val x: Self) extends AnyVal {
       
       inline def setActiveClassName(value: String): Self = StObject.set(x, "activeClassName", value.asInstanceOf[js.Any])
       
@@ -252,7 +253,8 @@ object mod {
       __obj.asInstanceOf[InteractiveState]
     }
     
-    extension [Self <: InteractiveState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InteractiveState] (val x: Self) extends AnyVal {
       
       inline def setActive(value: ActiveState): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
@@ -275,7 +277,8 @@ object mod {
       __obj.asInstanceOf[InteractiveStateChange]
     }
     
-    extension [Self <: InteractiveStateChange](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InteractiveStateChange] (val x: Self) extends AnyVal {
       
       inline def setPrevState(value: InteractiveState): Self = StObject.set(x, "prevState", value.asInstanceOf[js.Any])
       
@@ -329,7 +332,8 @@ object mod {
       __obj.asInstanceOf[PolymorphicInteractive]
     }
     
-    extension [Self <: PolymorphicInteractive](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PolymorphicInteractive] (val x: Self) extends AnyVal {
       
       inline def setA(value: ForwardRefExoticComponent[InteractivePropsWithoutAs[a]]): Self = StObject.set(x, "A", value.asInstanceOf[js.Any])
       

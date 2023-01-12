@@ -23,7 +23,8 @@ object DisplayProps {
     __obj.asInstanceOf[DisplayProps[ThemeType]]
   }
   
-  extension [Self <: DisplayProps[?], ThemeType /* <: Theme[TLengthStyledSystem] */](x: Self & DisplayProps[ThemeType]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisplayProps[?], ThemeType /* <: Theme[TLengthStyledSystem] */] (val x: Self & DisplayProps[ThemeType]) extends AnyVal {
     
     inline def setDisplay(value: ResponsiveValue[Display, ThemeType]): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
     

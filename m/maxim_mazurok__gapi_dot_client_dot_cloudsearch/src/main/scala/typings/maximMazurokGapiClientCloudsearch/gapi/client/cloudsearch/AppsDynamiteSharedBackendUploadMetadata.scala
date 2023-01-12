@@ -62,7 +62,8 @@ object AppsDynamiteSharedBackendUploadMetadata {
     __obj.asInstanceOf[AppsDynamiteSharedBackendUploadMetadata]
   }
   
-  extension [Self <: AppsDynamiteSharedBackendUploadMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppsDynamiteSharedBackendUploadMetadata] (val x: Self) extends AnyVal {
     
     inline def setBlobPath(value: String): Self = StObject.set(x, "blobPath", value.asInstanceOf[js.Any])
     

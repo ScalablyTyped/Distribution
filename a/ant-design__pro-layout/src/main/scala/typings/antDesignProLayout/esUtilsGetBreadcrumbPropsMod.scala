@@ -52,7 +52,8 @@ object esUtilsGetBreadcrumbPropsMod {
       __obj.asInstanceOf[BreadcrumbListReturn]
     }
     
-    extension [Self <: BreadcrumbListReturn](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BreadcrumbListReturn] (val x: Self) extends AnyVal {
       
       inline def setItemRender(
         value: (/* route */ Route, /* params */ Any, /* routes */ js.Array[Route], /* paths */ js.Array[String]) => ReactNode
@@ -105,7 +106,8 @@ object esUtilsGetBreadcrumbPropsMod {
       __obj.asInstanceOf[BreadcrumbProps]
     }
     
-    extension [Self <: BreadcrumbProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BreadcrumbProps] (val x: Self) extends AnyVal {
       
       inline def setBreadcrumbList(value: js.Array[Href]): Self = StObject.set(x, "breadcrumbList", value.asInstanceOf[js.Any])
       

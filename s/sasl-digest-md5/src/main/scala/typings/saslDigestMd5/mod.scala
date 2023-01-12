@@ -110,7 +110,8 @@ object mod {
       __obj.asInstanceOf[Credentials]
     }
     
-    extension [Self <: Credentials](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Credentials] (val x: Self) extends AnyVal {
       
       inline def setAuthzid(value: String): Self = StObject.set(x, "authzid", value.asInstanceOf[js.Any])
       
@@ -152,7 +153,8 @@ object mod {
       __obj.asInstanceOf[DigestMd5Mechanism]
     }
     
-    extension [Self <: DigestMd5Mechanism](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DigestMd5Mechanism] (val x: Self) extends AnyVal {
       
       inline def setClientFirst(value: `false`): Self = StObject.set(x, "clientFirst", value.asInstanceOf[js.Any])
       
@@ -173,7 +175,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setGenNonce(value: () => Double): Self = StObject.set(x, "genNonce", js.Any.fromFunction0(value))
       

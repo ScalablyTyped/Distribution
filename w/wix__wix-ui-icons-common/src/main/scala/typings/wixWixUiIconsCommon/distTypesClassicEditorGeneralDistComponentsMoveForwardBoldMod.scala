@@ -27,7 +27,8 @@ object distTypesClassicEditorGeneralDistComponentsMoveForwardBoldMod extends Sho
       __obj.asInstanceOf[MoveForwardBoldProps]
     }
     
-    extension [Self <: MoveForwardBoldProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MoveForwardBoldProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

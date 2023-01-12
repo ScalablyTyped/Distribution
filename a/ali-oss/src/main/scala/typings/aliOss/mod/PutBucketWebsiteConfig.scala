@@ -19,7 +19,8 @@ object PutBucketWebsiteConfig {
     __obj.asInstanceOf[PutBucketWebsiteConfig]
   }
   
-  extension [Self <: PutBucketWebsiteConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutBucketWebsiteConfig] (val x: Self) extends AnyVal {
     
     inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     

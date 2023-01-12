@@ -100,7 +100,8 @@ object ConnectorProfileProperties {
     __obj.asInstanceOf[ConnectorProfileProperties]
   }
   
-  extension [Self <: ConnectorProfileProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConnectorProfileProperties] (val x: Self) extends AnyVal {
     
     inline def setAmplitude(value: AmplitudeConnectorProfileProperties): Self = StObject.set(x, "Amplitude", value.asInstanceOf[js.Any])
     

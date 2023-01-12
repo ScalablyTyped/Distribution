@@ -42,7 +42,8 @@ object ClusterOperationMetadata {
     __obj.asInstanceOf[ClusterOperationMetadata]
   }
   
-  extension [Self <: ClusterOperationMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClusterOperationMetadata] (val x: Self) extends AnyVal {
     
     inline def setChildOperationIds(value: js.Array[String]): Self = StObject.set(x, "childOperationIds", value.asInstanceOf[js.Any])
     

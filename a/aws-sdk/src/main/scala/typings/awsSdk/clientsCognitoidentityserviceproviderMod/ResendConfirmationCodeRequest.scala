@@ -43,7 +43,8 @@ object ResendConfirmationCodeRequest {
     __obj.asInstanceOf[ResendConfirmationCodeRequest]
   }
   
-  extension [Self <: ResendConfirmationCodeRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResendConfirmationCodeRequest] (val x: Self) extends AnyVal {
     
     inline def setAnalyticsMetadata(value: AnalyticsMetadataType): Self = StObject.set(x, "AnalyticsMetadata", value.asInstanceOf[js.Any])
     

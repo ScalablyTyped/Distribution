@@ -23,7 +23,8 @@ object Reusable {
     __obj.asInstanceOf[Reusable[Ext]]
   }
   
-  extension [Self <: Reusable[?], Ext](x: Self & Reusable[Ext]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Reusable[?], Ext] (val x: Self & Reusable[Ext]) extends AnyVal {
     
     inline def setCnd(value: Boolean | (js.Function1[/* t */ ITask[Ext] & Ext, Boolean])): Self = StObject.set(x, "cnd", value.asInstanceOf[js.Any])
     

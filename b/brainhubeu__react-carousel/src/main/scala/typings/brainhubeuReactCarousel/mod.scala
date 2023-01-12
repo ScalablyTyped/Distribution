@@ -99,7 +99,8 @@ object mod {
       __obj.asInstanceOf[CarouselPluginTypes]
     }
     
-    extension [Self <: CarouselPluginTypes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CarouselPluginTypes] (val x: Self) extends AnyVal {
       
       inline def setOptions(value: Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
@@ -140,7 +141,8 @@ object mod {
       __obj.asInstanceOf[CarouselProps]
     }
     
-    extension [Self <: CarouselProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CarouselProps] (val x: Self) extends AnyVal {
       
       inline def setAnimationSpeed(value: Double): Self = StObject.set(x, "animationSpeed", value.asInstanceOf[js.Any])
       
@@ -213,7 +215,8 @@ object mod {
       __obj.asInstanceOf[DotsProps]
     }
     
-    extension [Self <: DotsProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DotsProps] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       

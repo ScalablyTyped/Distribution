@@ -140,7 +140,8 @@ object mod {
       __obj.asInstanceOf[ImportValue]
     }
     
-    extension [Self <: ImportValue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ImportValue] (val x: Self) extends AnyVal {
       
       inline def setDefaultName(value: String): Self = StObject.set(x, "defaultName", value.asInstanceOf[js.Any])
       

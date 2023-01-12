@@ -50,7 +50,8 @@ object ASPxClientGridToolbarItemClickEventArgs {
     __obj.asInstanceOf[ASPxClientGridToolbarItemClickEventArgs]
   }
   
-  extension [Self <: ASPxClientGridToolbarItemClickEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientGridToolbarItemClickEventArgs] (val x: Self) extends AnyVal {
     
     inline def setHandled(value: Boolean): Self = StObject.set(x, "handled", value.asInstanceOf[js.Any])
     

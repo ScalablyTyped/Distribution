@@ -78,7 +78,8 @@ object mod {
       __obj.asInstanceOf[TextAreaProps]
     }
     
-    extension [Self <: TextAreaProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TextAreaProps] (val x: Self) extends AnyVal {
       
       inline def setAutoSize(value: Boolean | AutoSizeType): Self = StObject.set(x, "autoSize", value.asInstanceOf[js.Any])
       
@@ -109,7 +110,8 @@ object mod {
       __obj.asInstanceOf[TextAreaState]
     }
     
-    extension [Self <: TextAreaState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TextAreaState] (val x: Self) extends AnyVal {
       
       inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }

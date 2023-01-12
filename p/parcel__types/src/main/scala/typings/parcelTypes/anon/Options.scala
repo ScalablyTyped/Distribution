@@ -35,7 +35,8 @@ object Options {
     __obj.asInstanceOf[Options[ConfigType]]
   }
   
-  extension [Self <: Options[?], ConfigType](x: Self & Options[ConfigType]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Options[?], ConfigType] (val x: Self & Options[ConfigType]) extends AnyVal {
     
     inline def setAsset(value: typings.parcelTypes.mod.Asset): Self = StObject.set(x, "asset", value.asInstanceOf[js.Any])
     

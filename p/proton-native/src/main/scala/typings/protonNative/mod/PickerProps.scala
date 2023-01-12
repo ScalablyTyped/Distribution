@@ -52,7 +52,8 @@ object PickerProps {
     __obj.asInstanceOf[PickerProps]
   }
   
-  extension [Self <: PickerProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickerProps] (val x: Self) extends AnyVal {
     
     inline def setEditable(value: Boolean): Self = StObject.set(x, "editable", value.asInstanceOf[js.Any])
     

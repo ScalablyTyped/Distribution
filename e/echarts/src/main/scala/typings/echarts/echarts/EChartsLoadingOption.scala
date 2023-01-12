@@ -75,7 +75,8 @@ object EChartsLoadingOption {
     __obj.asInstanceOf[EChartsLoadingOption]
   }
   
-  extension [Self <: EChartsLoadingOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EChartsLoadingOption] (val x: Self) extends AnyVal {
     
     inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

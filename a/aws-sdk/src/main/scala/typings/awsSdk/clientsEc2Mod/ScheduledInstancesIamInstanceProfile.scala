@@ -23,7 +23,8 @@ object ScheduledInstancesIamInstanceProfile {
     __obj.asInstanceOf[ScheduledInstancesIamInstanceProfile]
   }
   
-  extension [Self <: ScheduledInstancesIamInstanceProfile](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScheduledInstancesIamInstanceProfile] (val x: Self) extends AnyVal {
     
     inline def setArn(value: String): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     

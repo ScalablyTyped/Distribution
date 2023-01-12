@@ -47,7 +47,8 @@ object DATEJson {
     __obj.asInstanceOf[DATEJson]
   }
   
-  extension [Self <: DATEJson](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DATEJson] (val x: Self) extends AnyVal {
     
     inline def setBlockLength(value: Double): Self = StObject.set(x, "blockLength", value.asInstanceOf[js.Any])
     

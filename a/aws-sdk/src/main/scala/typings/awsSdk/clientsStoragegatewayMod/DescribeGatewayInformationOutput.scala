@@ -115,7 +115,8 @@ object DescribeGatewayInformationOutput {
     __obj.asInstanceOf[DescribeGatewayInformationOutput]
   }
   
-  extension [Self <: DescribeGatewayInformationOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeGatewayInformationOutput] (val x: Self) extends AnyVal {
     
     inline def setCloudWatchLogGroupARN(value: CloudWatchLogGroupARN): Self = StObject.set(x, "CloudWatchLogGroupARN", value.asInstanceOf[js.Any])
     

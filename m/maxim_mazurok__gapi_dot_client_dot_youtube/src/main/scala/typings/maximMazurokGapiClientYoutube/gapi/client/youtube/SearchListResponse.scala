@@ -41,7 +41,8 @@ object SearchListResponse {
     __obj.asInstanceOf[SearchListResponse]
   }
   
-  extension [Self <: SearchListResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchListResponse] (val x: Self) extends AnyVal {
     
     inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     

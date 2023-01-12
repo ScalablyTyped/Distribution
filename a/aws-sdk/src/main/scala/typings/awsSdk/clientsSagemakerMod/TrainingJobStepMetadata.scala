@@ -18,7 +18,8 @@ object TrainingJobStepMetadata {
     __obj.asInstanceOf[TrainingJobStepMetadata]
   }
   
-  extension [Self <: TrainingJobStepMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TrainingJobStepMetadata] (val x: Self) extends AnyVal {
     
     inline def setArn(value: TrainingJobArn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     

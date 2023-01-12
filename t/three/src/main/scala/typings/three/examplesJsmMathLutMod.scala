@@ -69,7 +69,8 @@ object examplesJsmMathLutMod {
       __obj.asInstanceOf[ColorMapKeywords]
     }
     
-    extension [Self <: ColorMapKeywords](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColorMapKeywords] (val x: Self) extends AnyVal {
       
       inline def setBlackbody(value: js.Array[js.Array[Double]]): Self = StObject.set(x, "blackbody", value.asInstanceOf[js.Any])
       

@@ -89,7 +89,8 @@ object ObjectIndex {
     __obj.asInstanceOf[ObjectIndex]
   }
   
-  extension [Self <: ObjectIndex](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ObjectIndex] (val x: Self) extends AnyVal {
     
     inline def setCreateFromOtherEmbeddedObjects(value: Boolean): Self = StObject.set(x, "CreateFromOtherEmbeddedObjects", value.asInstanceOf[js.Any])
     

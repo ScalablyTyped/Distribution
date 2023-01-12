@@ -34,7 +34,8 @@ object CAPICOM_HASH_ALGORITHM {
     __obj.asInstanceOf[CAPICOM_HASH_ALGORITHM]
   }
   
-  extension [Self <: CAPICOM_HASH_ALGORITHM](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CAPICOM_HASH_ALGORITHM] (val x: Self) extends AnyVal {
     
     inline def setCAPICOM_HASH_ALGORITHM_MD2(value: `1`): Self = StObject.set(x, "CAPICOM_HASH_ALGORITHM_MD2", value.asInstanceOf[js.Any])
     

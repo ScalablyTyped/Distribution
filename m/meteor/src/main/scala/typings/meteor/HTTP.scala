@@ -35,7 +35,8 @@ object HTTP {
       __obj.asInstanceOf[HTTPRequest]
     }
     
-    extension [Self <: HTTPRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HTTPRequest] (val x: Self) extends AnyVal {
       
       inline def setAuth(value: String): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
       
@@ -88,7 +89,8 @@ object HTTP {
       __obj.asInstanceOf[HTTPResponse]
     }
     
-    extension [Self <: HTTPResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HTTPResponse] (val x: Self) extends AnyVal {
       
       inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       

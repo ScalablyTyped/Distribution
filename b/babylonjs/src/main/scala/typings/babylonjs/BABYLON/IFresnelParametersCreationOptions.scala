@@ -38,7 +38,8 @@ object IFresnelParametersCreationOptions {
     __obj.asInstanceOf[IFresnelParametersCreationOptions]
   }
   
-  extension [Self <: IFresnelParametersCreationOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IFresnelParametersCreationOptions] (val x: Self) extends AnyVal {
     
     inline def setBias(value: Double): Self = StObject.set(x, "bias", value.asInstanceOf[js.Any])
     

@@ -65,7 +65,8 @@ object typesLayoutGridCellMod {
       __obj.asInstanceOf[GridCSSProperties]
     }
     
-    extension [Self <: GridCSSProperties](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GridCSSProperties] (val x: Self) extends AnyVal {
       
       inline def setColEnd(value: Double | String): Self = StObject.set(x, "colEnd", value.asInstanceOf[js.Any])
       
@@ -136,7 +137,8 @@ object typesLayoutGridCellMod {
       __obj.asInstanceOf[GridCellProps]
     }
     
-    extension [Self <: GridCellProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GridCellProps] (val x: Self) extends AnyVal {
       
       inline def setClone_(value: Boolean): Self = StObject.set(x, "clone", value.asInstanceOf[js.Any])
       

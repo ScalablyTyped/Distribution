@@ -51,7 +51,8 @@ object Focused {
     __obj.asInstanceOf[Focused]
   }
   
-  extension [Self <: Focused](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Focused] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object DeleteSnapshotScheduleOutput {
     __obj.asInstanceOf[DeleteSnapshotScheduleOutput]
   }
   
-  extension [Self <: DeleteSnapshotScheduleOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteSnapshotScheduleOutput] (val x: Self) extends AnyVal {
     
     inline def setVolumeARN(value: VolumeARN): Self = StObject.set(x, "VolumeARN", value.asInstanceOf[js.Any])
     

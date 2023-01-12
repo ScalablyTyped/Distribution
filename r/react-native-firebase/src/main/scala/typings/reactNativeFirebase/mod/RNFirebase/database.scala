@@ -56,7 +56,8 @@ object database {
       __obj.asInstanceOf[DataSnapshot]
     }
     
-    extension [Self <: DataSnapshot](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DataSnapshot] (val x: Self) extends AnyVal {
       
       inline def setChild(value: String => DataSnapshot): Self = StObject.set(x, "child", js.Any.fromFunction1(value))
       
@@ -145,7 +146,8 @@ object database {
       __obj.asInstanceOf[DatabaseStatics]
     }
     
-    extension [Self <: DatabaseStatics](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DatabaseStatics] (val x: Self) extends AnyVal {
       
       inline def setServerValue(value: TIMESTAMP): Self = StObject.set(x, "ServerValue", value.asInstanceOf[js.Any])
     }

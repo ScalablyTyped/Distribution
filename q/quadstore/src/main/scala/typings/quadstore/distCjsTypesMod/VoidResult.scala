@@ -17,7 +17,8 @@ object VoidResult {
     __obj.asInstanceOf[VoidResult]
   }
   
-  extension [Self <: VoidResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VoidResult] (val x: Self) extends AnyVal {
     
     inline def setType(value: VOID): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

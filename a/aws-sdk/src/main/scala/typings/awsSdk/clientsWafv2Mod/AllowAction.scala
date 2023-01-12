@@ -18,7 +18,8 @@ object AllowAction {
     __obj.asInstanceOf[AllowAction]
   }
   
-  extension [Self <: AllowAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AllowAction] (val x: Self) extends AnyVal {
     
     inline def setCustomRequestHandling(value: CustomRequestHandling): Self = StObject.set(x, "CustomRequestHandling", value.asInstanceOf[js.Any])
     

@@ -43,7 +43,8 @@ object SolutionConfig {
     __obj.asInstanceOf[SolutionConfig]
   }
   
-  extension [Self <: SolutionConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SolutionConfig] (val x: Self) extends AnyVal {
     
     inline def setAlgorithmHyperParameters(value: HyperParameters): Self = StObject.set(x, "algorithmHyperParameters", value.asInstanceOf[js.Any])
     

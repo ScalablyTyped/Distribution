@@ -22,7 +22,8 @@ object AnimationEventMap {
     __obj.asInstanceOf[AnimationEventMap]
   }
   
-  extension [Self <: AnimationEventMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnimationEventMap] (val x: Self) extends AnyVal {
     
     inline def setCancel(value: AnimationPlaybackEvent): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
     

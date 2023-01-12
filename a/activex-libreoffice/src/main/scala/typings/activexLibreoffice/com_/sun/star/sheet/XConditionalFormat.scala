@@ -38,7 +38,8 @@ object XConditionalFormat {
     __obj.asInstanceOf[XConditionalFormat]
   }
   
-  extension [Self <: XConditionalFormat](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XConditionalFormat] (val x: Self) extends AnyVal {
     
     inline def setCreateEntry(value: (Double, Double) => Unit): Self = StObject.set(x, "createEntry", js.Any.fromFunction2(value))
     

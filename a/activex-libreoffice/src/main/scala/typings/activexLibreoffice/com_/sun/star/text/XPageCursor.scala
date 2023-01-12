@@ -67,7 +67,8 @@ object XPageCursor {
     __obj.asInstanceOf[XPageCursor]
   }
   
-  extension [Self <: XPageCursor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XPageCursor] (val x: Self) extends AnyVal {
     
     inline def setGetPage(value: () => Double): Self = StObject.set(x, "getPage", js.Any.fromFunction0(value))
     

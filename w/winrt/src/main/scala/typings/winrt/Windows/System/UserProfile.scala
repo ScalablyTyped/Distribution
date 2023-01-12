@@ -102,7 +102,8 @@ object UserProfile {
       __obj.asInstanceOf[IGlobalizationPreferencesStatics]
     }
     
-    extension [Self <: IGlobalizationPreferencesStatics](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IGlobalizationPreferencesStatics] (val x: Self) extends AnyVal {
       
       inline def setCalendars(value: IVectorView[String]): Self = StObject.set(x, "calendars", value.asInstanceOf[js.Any])
       
@@ -140,7 +141,8 @@ object UserProfile {
       __obj.asInstanceOf[ILockScreenStatics]
     }
     
-    extension [Self <: ILockScreenStatics](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ILockScreenStatics] (val x: Self) extends AnyVal {
       
       inline def setGetImageStream(value: () => IRandomAccessStream): Self = StObject.set(x, "getImageStream", js.Any.fromFunction0(value))
       
@@ -204,7 +206,8 @@ object UserProfile {
       __obj.asInstanceOf[IUserInformationStatics]
     }
     
-    extension [Self <: IUserInformationStatics](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IUserInformationStatics] (val x: Self) extends AnyVal {
       
       inline def setAccountPictureChangeEnabled(value: Boolean): Self = StObject.set(x, "accountPictureChangeEnabled", value.asInstanceOf[js.Any])
       

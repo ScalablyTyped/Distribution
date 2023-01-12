@@ -20,7 +20,8 @@ object DeleteCredentials {
     __obj.asInstanceOf[DeleteCredentials]
   }
   
-  extension [Self <: DeleteCredentials](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteCredentials] (val x: Self) extends AnyVal {
     
     inline def setCredential_id(value: String): Self = StObject.set(x, "credential_id", value.asInstanceOf[js.Any])
     

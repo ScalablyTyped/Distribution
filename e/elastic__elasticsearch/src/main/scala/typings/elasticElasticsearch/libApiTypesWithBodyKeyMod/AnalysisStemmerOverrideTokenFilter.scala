@@ -24,7 +24,8 @@ object AnalysisStemmerOverrideTokenFilter {
     __obj.asInstanceOf[AnalysisStemmerOverrideTokenFilter]
   }
   
-  extension [Self <: AnalysisStemmerOverrideTokenFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnalysisStemmerOverrideTokenFilter] (val x: Self) extends AnyVal {
     
     inline def setRules(value: js.Array[String]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
     

@@ -29,7 +29,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Dimensions]
     }
     
-    extension [Self <: Dimensions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Dimensions] (val x: Self) extends AnyVal {
       
       inline def setH(value: Double): Self = StObject.set(x, "h", value.asInstanceOf[js.Any])
       
@@ -72,7 +73,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Options[Type]]
     }
     
-    extension [Self <: Options[?], Type](x: Self & Options[Type]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options[?], Type] (val x: Self & Options[Type]) extends AnyVal {
       
       inline def setContent(value: () => js.UndefOr[HTMLElement]): Self = StObject.set(x, "content", js.Any.fromFunction0(value))
       
@@ -142,7 +144,8 @@ object mod extends Shortcut {
           __obj.asInstanceOf[Core]
         }
         
-        extension [Self <: Core](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: Core] (val x: Self) extends AnyVal {
           
           inline def setPopper(value: /* opts */ js.UndefOr[Options[Core]] => Instance): Self = StObject.set(x, "popper", js.Any.fromFunction1(value))
           
@@ -187,7 +190,8 @@ object mod extends Shortcut {
           __obj.asInstanceOf[SingularData]
         }
         
-        extension [Self <: SingularData](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: SingularData] (val x: Self) extends AnyVal {
           
           inline def setPopper(value: /* opts */ js.UndefOr[Options[SingularData]] => Instance): Self = StObject.set(x, "popper", js.Any.fromFunction1(value))
           

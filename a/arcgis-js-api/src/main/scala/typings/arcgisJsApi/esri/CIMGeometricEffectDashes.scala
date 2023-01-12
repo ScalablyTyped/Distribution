@@ -63,7 +63,8 @@ object CIMGeometricEffectDashes {
     __obj.asInstanceOf[CIMGeometricEffectDashes]
   }
   
-  extension [Self <: CIMGeometricEffectDashes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CIMGeometricEffectDashes] (val x: Self) extends AnyVal {
     
     inline def setCustomEndingOffset(value: Double): Self = StObject.set(x, "customEndingOffset", value.asInstanceOf[js.Any])
     

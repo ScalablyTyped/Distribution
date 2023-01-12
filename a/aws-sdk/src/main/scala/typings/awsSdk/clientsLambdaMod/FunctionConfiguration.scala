@@ -178,7 +178,8 @@ object FunctionConfiguration {
     __obj.asInstanceOf[FunctionConfiguration]
   }
   
-  extension [Self <: FunctionConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FunctionConfiguration] (val x: Self) extends AnyVal {
     
     inline def setArchitectures(value: ArchitecturesList): Self = StObject.set(x, "Architectures", value.asInstanceOf[js.Any])
     

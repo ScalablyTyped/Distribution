@@ -39,7 +39,8 @@ object servicesSqsserviceMod {
       __obj.asInstanceOf[QueueConfig]
     }
     
-    extension [Self <: QueueConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QueueConfig] (val x: Self) extends AnyVal {
       
       inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
@@ -64,7 +65,8 @@ object servicesSqsserviceMod {
       __obj.asInstanceOf[SQSService[TQueues]]
     }
     
-    extension [Self <: SQSService[?], TQueues /* <: Record[String, QueueConfig] */](x: Self & SQSService[TQueues]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SQSService[?], TQueues /* <: Record[String, QueueConfig] */] (val x: Self & SQSService[TQueues]) extends AnyVal {
       
       inline def setDispatch(value: (Any, /* keyof TQueues */ String) => js.Promise[SendMessageResult]): Self = StObject.set(x, "dispatch", js.Any.fromFunction2(value))
       
@@ -89,7 +91,8 @@ object servicesSqsserviceMod {
       __obj.asInstanceOf[SQSServiceParams]
     }
     
-    extension [Self <: SQSServiceParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SQSServiceParams] (val x: Self) extends AnyVal {
       
       inline def setAccessKeyId(value: String): Self = StObject.set(x, "accessKeyId", value.asInstanceOf[js.Any])
       

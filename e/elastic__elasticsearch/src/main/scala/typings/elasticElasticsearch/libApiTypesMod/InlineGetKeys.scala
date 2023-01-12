@@ -26,7 +26,8 @@ object InlineGetKeys {
     __obj.asInstanceOf[InlineGetKeys[TDocument]]
   }
   
-  extension [Self <: InlineGetKeys[?], TDocument](x: Self & InlineGetKeys[TDocument]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InlineGetKeys[?], TDocument] (val x: Self & InlineGetKeys[TDocument]) extends AnyVal {
     
     inline def setFields(value: Record[String, Any]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     

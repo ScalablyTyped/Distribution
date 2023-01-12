@@ -71,7 +71,8 @@ object libClassdefClassSourceGeneratorMod {
       __obj.asInstanceOf[ClassSourceGenerator]
     }
     
-    extension [Self <: ClassSourceGenerator](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClassSourceGenerator] (val x: Self) extends AnyVal {
       
       inline def setGetClassDefFunctionSource(value: Any => String): Self = StObject.set(x, "getClassDefFunctionSource", js.Any.fromFunction1(value))
       

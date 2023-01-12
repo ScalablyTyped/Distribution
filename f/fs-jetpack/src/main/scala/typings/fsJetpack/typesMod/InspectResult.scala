@@ -43,7 +43,8 @@ object InspectResult {
     __obj.asInstanceOf[InspectResult]
   }
   
-  extension [Self <: InspectResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InspectResult] (val x: Self) extends AnyVal {
     
     inline def setAbsolutePath(value: String): Self = StObject.set(x, "absolutePath", value.asInstanceOf[js.Any])
     

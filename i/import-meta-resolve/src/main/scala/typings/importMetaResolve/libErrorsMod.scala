@@ -262,7 +262,8 @@ object libErrorsMod {
       __obj.asInstanceOf[ErrnoExceptionFields]
     }
     
-    extension [Self <: ErrnoExceptionFields](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ErrnoExceptionFields] (val x: Self) extends AnyVal {
       
       inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       

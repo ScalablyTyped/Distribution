@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[Sync]
     }
     
-    extension [Self <: Sync](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Sync] (val x: Self) extends AnyVal {
       
       inline def setSync(value: () => String): Self = StObject.set(x, "sync", js.Any.fromFunction0(value))
     }

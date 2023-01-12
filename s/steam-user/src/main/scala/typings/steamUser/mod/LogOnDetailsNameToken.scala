@@ -21,7 +21,8 @@ object LogOnDetailsNameToken {
     __obj.asInstanceOf[LogOnDetailsNameToken]
   }
   
-  extension [Self <: LogOnDetailsNameToken](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LogOnDetailsNameToken] (val x: Self) extends AnyVal {
     
     inline def setAccountName(value: String): Self = StObject.set(x, "accountName", value.asInstanceOf[js.Any])
     

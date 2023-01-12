@@ -43,7 +43,8 @@ object MedicalTranscriptionSetting {
     __obj.asInstanceOf[MedicalTranscriptionSetting]
   }
   
-  extension [Self <: MedicalTranscriptionSetting](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MedicalTranscriptionSetting] (val x: Self) extends AnyVal {
     
     inline def setChannelIdentification(value: Boolean): Self = StObject.set(x, "ChannelIdentification", value.asInstanceOf[js.Any])
     

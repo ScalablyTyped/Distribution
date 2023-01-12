@@ -54,7 +54,8 @@ object GeocodingRequest {
     __obj.asInstanceOf[GeocodingRequest]
   }
   
-  extension [Self <: GeocodingRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GeocodingRequest] (val x: Self) extends AnyVal {
     
     inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     

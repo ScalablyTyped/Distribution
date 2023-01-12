@@ -93,7 +93,8 @@ object FontSize {
     __obj.asInstanceOf[FontSize]
   }
   
-  extension [Self <: FontSize](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FontSize] (val x: Self) extends AnyVal {
     
     inline def setAlign(value: center | left | right | SignalRef | FieldField | Scale | Band | Range | ValueAlign): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     

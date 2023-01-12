@@ -17,7 +17,8 @@ object KnockstrapModalDefaultsFooterData {
     __obj.asInstanceOf[KnockstrapModalDefaultsFooterData]
   }
   
-  extension [Self <: KnockstrapModalDefaultsFooterData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KnockstrapModalDefaultsFooterData] (val x: Self) extends AnyVal {
     
     inline def setCloseLabel(value: String): Self = StObject.set(x, "closeLabel", value.asInstanceOf[js.Any])
     

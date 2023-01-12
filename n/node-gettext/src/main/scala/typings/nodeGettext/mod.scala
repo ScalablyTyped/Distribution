@@ -150,7 +150,8 @@ object mod {
       __obj.asInstanceOf[GetText]
     }
     
-    extension [Self <: GetText](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetText] (val x: Self) extends AnyVal {
       
       inline def setAddTranslations(value: (String, String, js.Object) => Unit): Self = StObject.set(x, "addTranslations", js.Any.fromFunction3(value))
       

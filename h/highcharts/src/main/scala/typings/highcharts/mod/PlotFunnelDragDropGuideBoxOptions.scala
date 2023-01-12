@@ -18,7 +18,8 @@ object PlotFunnelDragDropGuideBoxOptions {
     __obj.asInstanceOf[PlotFunnelDragDropGuideBoxOptions]
   }
   
-  extension [Self <: PlotFunnelDragDropGuideBoxOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotFunnelDragDropGuideBoxOptions] (val x: Self) extends AnyVal {
     
     inline def setDefault(value: DragDropGuideBoxOptionsObject): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     

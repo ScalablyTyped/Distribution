@@ -57,7 +57,8 @@ object XStarBasicModuleInfo {
     __obj.asInstanceOf[XStarBasicModuleInfo]
   }
   
-  extension [Self <: XStarBasicModuleInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XStarBasicModuleInfo] (val x: Self) extends AnyVal {
     
     inline def setGetLanguage(value: () => String): Self = StObject.set(x, "getLanguage", js.Any.fromFunction0(value))
     

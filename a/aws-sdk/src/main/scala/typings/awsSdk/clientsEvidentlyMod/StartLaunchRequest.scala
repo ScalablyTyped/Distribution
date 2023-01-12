@@ -23,7 +23,8 @@ object StartLaunchRequest {
     __obj.asInstanceOf[StartLaunchRequest]
   }
   
-  extension [Self <: StartLaunchRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartLaunchRequest] (val x: Self) extends AnyVal {
     
     inline def setLaunch(value: LaunchName): Self = StObject.set(x, "launch", value.asInstanceOf[js.Any])
     

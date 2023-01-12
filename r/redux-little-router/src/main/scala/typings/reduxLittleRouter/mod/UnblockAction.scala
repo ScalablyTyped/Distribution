@@ -18,7 +18,8 @@ object UnblockAction {
     __obj.asInstanceOf[UnblockAction]
   }
   
-  extension [Self <: UnblockAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UnblockAction] (val x: Self) extends AnyVal {
     
     inline def setType(value: /* "ROUTER_UNBLOCK" */ String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

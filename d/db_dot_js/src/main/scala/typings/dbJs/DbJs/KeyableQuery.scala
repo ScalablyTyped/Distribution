@@ -15,7 +15,8 @@ object KeyableQuery {
     __obj.asInstanceOf[KeyableQuery[T]]
   }
   
-  extension [Self <: KeyableQuery[?], T](x: Self & KeyableQuery[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KeyableQuery[?], T] (val x: Self & KeyableQuery[T]) extends AnyVal {
     
     inline def setKeys(value: () => KeysQuery[T]): Self = StObject.set(x, "keys", js.Any.fromFunction0(value))
   }

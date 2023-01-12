@@ -29,7 +29,8 @@ object BytesPerSample {
     __obj.asInstanceOf[BytesPerSample]
   }
   
-  extension [Self <: BytesPerSample](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BytesPerSample] (val x: Self) extends AnyVal {
     
     inline def setBytesPerSample(value: String): Self = StObject.set(x, "bytesPerSample", value.asInstanceOf[js.Any])
     

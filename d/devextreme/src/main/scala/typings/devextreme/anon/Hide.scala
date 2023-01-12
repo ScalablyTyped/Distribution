@@ -24,7 +24,8 @@ object Hide {
     __obj.asInstanceOf[Hide]
   }
   
-  extension [Self <: Hide](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Hide] (val x: Self) extends AnyVal {
     
     inline def setHide(value: AnimationConfig): Self = StObject.set(x, "hide", value.asInstanceOf[js.Any])
     

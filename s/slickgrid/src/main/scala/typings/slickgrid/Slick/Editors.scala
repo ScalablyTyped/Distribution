@@ -57,7 +57,8 @@ object Editors {
       __obj.asInstanceOf[Date[T]]
     }
     
-    extension [Self <: Date[?], T /* <: SlickData */](x: Self & Date[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Date[?], T /* <: SlickData */] (val x: Self & Date[T]) extends AnyVal {
       
       inline def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
       
@@ -101,7 +102,8 @@ object Editors {
       __obj.asInstanceOf[Editor[T]]
     }
     
-    extension [Self <: Editor[?], T /* <: SlickData */](x: Self & Editor[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Editor[?], T /* <: SlickData */] (val x: Self & Editor[T]) extends AnyVal {
       
       inline def setApplyValue(value: (T, String) => Unit): Self = StObject.set(x, "applyValue", js.Any.fromFunction2(value))
       
@@ -146,7 +148,8 @@ object Editors {
       __obj.asInstanceOf[EditorOptions[T]]
     }
     
-    extension [Self <: EditorOptions[?], T /* <: SlickData */](x: Self & EditorOptions[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EditorOptions[?], T /* <: SlickData */] (val x: Self & EditorOptions[T]) extends AnyVal {
       
       inline def setCancelChanges(value: () => Unit): Self = StObject.set(x, "cancelChanges", js.Any.fromFunction0(value))
       
@@ -234,7 +237,8 @@ object Editors {
       __obj.asInstanceOf[LongText[T]]
     }
     
-    extension [Self <: LongText[?], T /* <: SlickData */](x: Self & LongText[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LongText[?], T /* <: SlickData */] (val x: Self & LongText[T]) extends AnyVal {
       
       inline def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
       
@@ -296,7 +300,8 @@ object Editors {
       __obj.asInstanceOf[Text[T]]
     }
     
-    extension [Self <: Text[?], T /* <: SlickData */](x: Self & Text[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Text[?], T /* <: SlickData */] (val x: Self & Text[T]) extends AnyVal {
       
       inline def setGetValue(value: () => String): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
       

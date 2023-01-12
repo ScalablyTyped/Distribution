@@ -20,7 +20,8 @@ object String {
     __obj.asInstanceOf[String]
   }
   
-  extension [Self <: String](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: String] (val x: Self) extends AnyVal {
     
     inline def setAt(value: Double => js.UndefOr[java.lang.String]): Self = StObject.set(x, "at", js.Any.fromFunction1(value))
   }

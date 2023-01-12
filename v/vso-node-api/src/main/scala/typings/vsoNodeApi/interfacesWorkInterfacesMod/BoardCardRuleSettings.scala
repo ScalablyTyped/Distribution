@@ -20,7 +20,8 @@ object BoardCardRuleSettings {
     __obj.asInstanceOf[BoardCardRuleSettings]
   }
   
-  extension [Self <: BoardCardRuleSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BoardCardRuleSettings] (val x: Self) extends AnyVal {
     
     inline def setRules(value: StringDictionary[js.Array[Rule]]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
     

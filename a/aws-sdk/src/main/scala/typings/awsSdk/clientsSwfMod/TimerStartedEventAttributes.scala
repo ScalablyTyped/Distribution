@@ -33,7 +33,8 @@ object TimerStartedEventAttributes {
     __obj.asInstanceOf[TimerStartedEventAttributes]
   }
   
-  extension [Self <: TimerStartedEventAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimerStartedEventAttributes] (val x: Self) extends AnyVal {
     
     inline def setControl(value: Data): Self = StObject.set(x, "control", value.asInstanceOf[js.Any])
     

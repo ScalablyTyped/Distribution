@@ -33,7 +33,8 @@ object X11ForwardingConfig {
     __obj.asInstanceOf[X11ForwardingConfig]
   }
   
-  extension [Self <: X11ForwardingConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: X11ForwardingConfig] (val x: Self) extends AnyVal {
     
     inline def setCookie(value: String): Self = StObject.set(x, "cookie", value.asInstanceOf[js.Any])
     

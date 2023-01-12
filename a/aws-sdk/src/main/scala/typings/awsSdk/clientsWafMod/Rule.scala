@@ -33,7 +33,8 @@ object Rule {
     __obj.asInstanceOf[Rule]
   }
   
-  extension [Self <: Rule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Rule] (val x: Self) extends AnyVal {
     
     inline def setMetricName(value: MetricName): Self = StObject.set(x, "MetricName", value.asInstanceOf[js.Any])
     

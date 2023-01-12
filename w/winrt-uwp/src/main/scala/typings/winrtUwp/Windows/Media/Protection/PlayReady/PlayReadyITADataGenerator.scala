@@ -30,7 +30,8 @@ object PlayReadyITADataGenerator {
     __obj.asInstanceOf[PlayReadyITADataGenerator]
   }
   
-  extension [Self <: PlayReadyITADataGenerator](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlayReadyITADataGenerator] (val x: Self) extends AnyVal {
     
     inline def setGenerateData(value: (String, Double, IPropertySet, PlayReadyITADataFormat) => js.Array[Double]): Self = StObject.set(x, "generateData", js.Any.fromFunction4(value))
   }

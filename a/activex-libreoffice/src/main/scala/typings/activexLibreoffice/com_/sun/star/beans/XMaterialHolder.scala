@@ -43,7 +43,8 @@ object XMaterialHolder {
     __obj.asInstanceOf[XMaterialHolder]
   }
   
-  extension [Self <: XMaterialHolder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XMaterialHolder] (val x: Self) extends AnyVal {
     
     inline def setGetMaterial(value: () => Any): Self = StObject.set(x, "getMaterial", js.Any.fromFunction0(value))
     

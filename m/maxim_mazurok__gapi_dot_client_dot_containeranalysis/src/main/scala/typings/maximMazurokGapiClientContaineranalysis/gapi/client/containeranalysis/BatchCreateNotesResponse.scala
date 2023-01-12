@@ -16,7 +16,8 @@ object BatchCreateNotesResponse {
     __obj.asInstanceOf[BatchCreateNotesResponse]
   }
   
-  extension [Self <: BatchCreateNotesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchCreateNotesResponse] (val x: Self) extends AnyVal {
     
     inline def setNotes(value: js.Array[Note]): Self = StObject.set(x, "notes", value.asInstanceOf[js.Any])
     

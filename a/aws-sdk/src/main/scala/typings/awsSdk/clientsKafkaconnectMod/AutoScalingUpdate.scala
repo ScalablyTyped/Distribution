@@ -44,7 +44,8 @@ object AutoScalingUpdate {
     __obj.asInstanceOf[AutoScalingUpdate]
   }
   
-  extension [Self <: AutoScalingUpdate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AutoScalingUpdate] (val x: Self) extends AnyVal {
     
     inline def setMaxWorkerCount(value: integerMin1Max10): Self = StObject.set(x, "maxWorkerCount", value.asInstanceOf[js.Any])
     

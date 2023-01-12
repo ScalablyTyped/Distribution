@@ -34,7 +34,8 @@ object XMergeable {
     __obj.asInstanceOf[XMergeable]
   }
   
-  extension [Self <: XMergeable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XMergeable] (val x: Self) extends AnyVal {
     
     inline def setGetIsMerged(value: () => Boolean): Self = StObject.set(x, "getIsMerged", js.Any.fromFunction0(value))
     

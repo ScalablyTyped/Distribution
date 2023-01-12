@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[PrivateKeyPEM]
     }
     
-    extension [Self <: PrivateKeyPEM](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PrivateKeyPEM] (val x: Self) extends AnyVal {
       
       inline def setPrivateKeyPEM(value: String): Self = StObject.set(x, "privateKeyPEM", value.asInstanceOf[js.Any])
       

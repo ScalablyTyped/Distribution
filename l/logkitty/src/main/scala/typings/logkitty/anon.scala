@@ -40,7 +40,8 @@ object anon {
       __obj.asInstanceOf[DEBUG]
     }
     
-    extension [Self <: DEBUG](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DEBUG] (val x: Self) extends AnyVal {
       
       inline def setDEBUG(value: Double): Self = StObject.set(x, "DEBUG", value.asInstanceOf[js.Any])
       
@@ -77,7 +78,8 @@ object anon {
       __obj.asInstanceOf[DEFAULT]
     }
     
-    extension [Self <: DEFAULT](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DEFAULT] (val x: Self) extends AnyVal {
       
       inline def setDEBUG(value: Double): Self = StObject.set(x, "DEBUG", value.asInstanceOf[js.Any])
       
@@ -100,7 +102,8 @@ object anon {
       __obj.asInstanceOf[FromName]
     }
     
-    extension [Self <: FromName](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FromName] (val x: Self) extends AnyVal {
       
       inline def setFromName(value: Any => Double): Self = StObject.set(x, "fromName", js.Any.fromFunction1(value))
     }

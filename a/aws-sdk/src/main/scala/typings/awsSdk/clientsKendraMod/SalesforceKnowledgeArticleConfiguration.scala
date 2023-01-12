@@ -28,7 +28,8 @@ object SalesforceKnowledgeArticleConfiguration {
     __obj.asInstanceOf[SalesforceKnowledgeArticleConfiguration]
   }
   
-  extension [Self <: SalesforceKnowledgeArticleConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SalesforceKnowledgeArticleConfiguration] (val x: Self) extends AnyVal {
     
     inline def setCustomKnowledgeArticleTypeConfigurations(value: SalesforceCustomKnowledgeArticleTypeConfigurationList): Self = StObject.set(x, "CustomKnowledgeArticleTypeConfigurations", value.asInstanceOf[js.Any])
     

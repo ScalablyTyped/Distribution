@@ -24,7 +24,8 @@ object GitRevert {
     __obj.asInstanceOf[GitRevert]
   }
   
-  extension [Self <: GitRevert](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GitRevert] (val x: Self) extends AnyVal {
     
     inline def setRevertId(value: Double): Self = StObject.set(x, "revertId", value.asInstanceOf[js.Any])
   }

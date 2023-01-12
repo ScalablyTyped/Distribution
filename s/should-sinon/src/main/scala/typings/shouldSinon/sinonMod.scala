@@ -121,7 +121,8 @@ object sinonMod {
       __obj.asInstanceOf[SinonSpyCallApi]
     }
     
-    extension [Self <: SinonSpyCallApi](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SinonSpyCallApi] (val x: Self) extends AnyVal {
       
       inline def setShould(value: ShouldSinonAssertion): Self = StObject.set(x, "should", value.asInstanceOf[js.Any])
     }

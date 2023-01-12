@@ -21,7 +21,8 @@ object FileChange {
     __obj.asInstanceOf[FileChange]
   }
   
-  extension [Self <: FileChange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FileChange] (val x: Self) extends AnyVal {
     
     inline def setContextChange(value: MapChange): Self = StObject.set(x, "contextChange", value.asInstanceOf[js.Any])
     

@@ -38,7 +38,8 @@ object GenericRevisionInfo {
     __obj.asInstanceOf[GenericRevisionInfo]
   }
   
-  extension [Self <: GenericRevisionInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GenericRevisionInfo] (val x: Self) extends AnyVal {
     
     inline def setDeploymentGroups(value: DeploymentGroupsList): Self = StObject.set(x, "deploymentGroups", value.asInstanceOf[js.Any])
     

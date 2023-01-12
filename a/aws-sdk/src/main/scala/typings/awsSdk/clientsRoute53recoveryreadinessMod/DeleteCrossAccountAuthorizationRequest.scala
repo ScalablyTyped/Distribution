@@ -18,7 +18,8 @@ object DeleteCrossAccountAuthorizationRequest {
     __obj.asInstanceOf[DeleteCrossAccountAuthorizationRequest]
   }
   
-  extension [Self <: DeleteCrossAccountAuthorizationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteCrossAccountAuthorizationRequest] (val x: Self) extends AnyVal {
     
     inline def setCrossAccountAuthorization(value: string): Self = StObject.set(x, "CrossAccountAuthorization", value.asInstanceOf[js.Any])
   }

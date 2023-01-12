@@ -110,7 +110,8 @@ object libTypescriptComponentsTextInputAdornmentTextInputIconMod {
       __obj.asInstanceOf[Props]
     }
     
-    extension [Self <: Props](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
       
       inline def setColor(value: (js.Function1[/* isTextInputFocused */ Boolean, js.UndefOr[String]]) | String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -159,7 +160,8 @@ object libTypescriptComponentsTextInputAdornmentTextInputIconMod {
       __obj.asInstanceOf[StyleContextType]
     }
     
-    extension [Self <: StyleContextType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StyleContextType] (val x: Self) extends AnyVal {
       
       inline def setForceFocus(value: () => Unit): Self = StObject.set(x, "forceFocus", js.Any.fromFunction0(value))
       

@@ -22,7 +22,8 @@ object DictpropNameDirection {
     __obj.asInstanceOf[DictpropNameDirection]
   }
   
-  extension [Self <: DictpropNameDirection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DictpropNameDirection] (val x: Self) extends AnyVal {
     
     inline def setDirection(value: ascending | descending): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     

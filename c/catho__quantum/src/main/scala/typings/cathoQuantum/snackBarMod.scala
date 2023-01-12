@@ -60,7 +60,8 @@ object snackBarMod {
       __obj.asInstanceOf[SnackBarProps]
     }
     
-    extension [Self <: SnackBarProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SnackBarProps] (val x: Self) extends AnyVal {
       
       inline def setActionTrigger(value: CallbackFn): Self = StObject.set(x, "actionTrigger", value.asInstanceOf[js.Any])
       

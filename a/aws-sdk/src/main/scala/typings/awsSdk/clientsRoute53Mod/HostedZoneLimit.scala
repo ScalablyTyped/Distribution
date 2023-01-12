@@ -23,7 +23,8 @@ object HostedZoneLimit {
     __obj.asInstanceOf[HostedZoneLimit]
   }
   
-  extension [Self <: HostedZoneLimit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HostedZoneLimit] (val x: Self) extends AnyVal {
     
     inline def setType(value: HostedZoneLimitType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     

@@ -43,7 +43,8 @@ object ASPxClientSpreadsheetHyperlinkClickEventArgs {
     __obj.asInstanceOf[ASPxClientSpreadsheetHyperlinkClickEventArgs]
   }
   
-  extension [Self <: ASPxClientSpreadsheetHyperlinkClickEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientSpreadsheetHyperlinkClickEventArgs] (val x: Self) extends AnyVal {
     
     inline def setHandled(value: Boolean): Self = StObject.set(x, "handled", value.asInstanceOf[js.Any])
     

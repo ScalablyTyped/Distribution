@@ -44,7 +44,8 @@ object FlashLayer {
     __obj.asInstanceOf[FlashLayer]
   }
   
-  extension [Self <: FlashLayer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FlashLayer] (val x: Self) extends AnyVal {
     
     inline def setColor(value: Any): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

@@ -44,7 +44,8 @@ object ArtyomProperties {
     __obj.asInstanceOf[ArtyomProperties]
   }
   
-  extension [Self <: ArtyomProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ArtyomProperties] (val x: Self) extends AnyVal {
     
     inline def setContinuous(value: Boolean): Self = StObject.set(x, "continuous", value.asInstanceOf[js.Any])
     

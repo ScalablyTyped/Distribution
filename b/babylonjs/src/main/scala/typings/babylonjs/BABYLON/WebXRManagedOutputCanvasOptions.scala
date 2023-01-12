@@ -31,7 +31,8 @@ object WebXRManagedOutputCanvasOptions {
     __obj.asInstanceOf[WebXRManagedOutputCanvasOptions]
   }
   
-  extension [Self <: WebXRManagedOutputCanvasOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebXRManagedOutputCanvasOptions] (val x: Self) extends AnyVal {
     
     inline def setCanvasElement(value: HTMLCanvasElement): Self = StObject.set(x, "canvasElement", value.asInstanceOf[js.Any])
     

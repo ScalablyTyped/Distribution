@@ -23,7 +23,8 @@ object ListResourcesForTagOptionOutput {
     __obj.asInstanceOf[ListResourcesForTagOptionOutput]
   }
   
-  extension [Self <: ListResourcesForTagOptionOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListResourcesForTagOptionOutput] (val x: Self) extends AnyVal {
     
     inline def setPageToken(value: PageToken): Self = StObject.set(x, "PageToken", value.asInstanceOf[js.Any])
     

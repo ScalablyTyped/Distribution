@@ -48,7 +48,8 @@ object DescribeVodSourceResponse {
     __obj.asInstanceOf[DescribeVodSourceResponse]
   }
   
-  extension [Self <: DescribeVodSourceResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeVodSourceResponse] (val x: Self) extends AnyVal {
     
     inline def setArn(value: _String): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     

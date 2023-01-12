@@ -25,7 +25,8 @@ object ChartYAxisItemMinorTicks {
     __obj.asInstanceOf[ChartYAxisItemMinorTicks]
   }
   
-  extension [Self <: ChartYAxisItemMinorTicks](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChartYAxisItemMinorTicks] (val x: Self) extends AnyVal {
     
     inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

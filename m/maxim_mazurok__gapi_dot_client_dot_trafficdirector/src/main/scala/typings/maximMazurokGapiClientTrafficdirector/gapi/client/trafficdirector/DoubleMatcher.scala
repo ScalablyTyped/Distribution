@@ -19,7 +19,8 @@ object DoubleMatcher {
     __obj.asInstanceOf[DoubleMatcher]
   }
   
-  extension [Self <: DoubleMatcher](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DoubleMatcher] (val x: Self) extends AnyVal {
     
     inline def setExact(value: Double): Self = StObject.set(x, "exact", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object GetServiceAccountOptions {
     __obj.asInstanceOf[GetServiceAccountOptions]
   }
   
-  extension [Self <: GetServiceAccountOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetServiceAccountOptions] (val x: Self) extends AnyVal {
     
     inline def setUserProject(value: String): Self = StObject.set(x, "userProject", value.asInstanceOf[js.Any])
     

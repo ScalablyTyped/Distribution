@@ -19,7 +19,8 @@ object SeriesPackedBubbleDataLabelsTextPathOptionsObject {
     __obj.asInstanceOf[SeriesPackedBubbleDataLabelsTextPathOptionsObject]
   }
   
-  extension [Self <: SeriesPackedBubbleDataLabelsTextPathOptionsObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SeriesPackedBubbleDataLabelsTextPathOptionsObject] (val x: Self) extends AnyVal {
     
     inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     

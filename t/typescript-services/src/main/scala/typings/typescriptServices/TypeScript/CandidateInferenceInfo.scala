@@ -32,7 +32,8 @@ object CandidateInferenceInfo {
     __obj.asInstanceOf[CandidateInferenceInfo]
   }
   
-  extension [Self <: CandidateInferenceInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CandidateInferenceInfo] (val x: Self) extends AnyVal {
     
     inline def setAddCandidate(value: PullTypeSymbol => Unit): Self = StObject.set(x, "addCandidate", js.Any.fromFunction1(value))
     

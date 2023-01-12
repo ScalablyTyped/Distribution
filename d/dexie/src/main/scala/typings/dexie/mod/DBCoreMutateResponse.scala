@@ -22,7 +22,8 @@ object DBCoreMutateResponse {
     __obj.asInstanceOf[DBCoreMutateResponse]
   }
   
-  extension [Self <: DBCoreMutateResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DBCoreMutateResponse] (val x: Self) extends AnyVal {
     
     inline def setFailures(value: NumberDictionary[js.Error]): Self = StObject.set(x, "failures", value.asInstanceOf[js.Any])
     

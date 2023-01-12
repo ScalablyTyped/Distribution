@@ -28,7 +28,8 @@ object NotebookCellStatusBarItemProvider {
     __obj.asInstanceOf[NotebookCellStatusBarItemProvider]
   }
   
-  extension [Self <: NotebookCellStatusBarItemProvider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NotebookCellStatusBarItemProvider] (val x: Self) extends AnyVal {
     
     inline def setOnDidChangeCellStatusBarItems(
       value: (/* listener */ js.Function1[Unit, Any], /* thisArgs */ js.UndefOr[Any], /* disposables */ js.UndefOr[js.Array[Disposable]]) => Disposable

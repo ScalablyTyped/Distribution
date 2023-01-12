@@ -15,7 +15,8 @@ object Seeded {
     __obj.asInstanceOf[Seeded]
   }
   
-  extension [Self <: Seeded](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Seeded] (val x: Self) extends AnyVal {
     
     inline def setSeed(value: Seed): Self = StObject.set(x, "seed", value.asInstanceOf[js.Any])
   }

@@ -23,7 +23,8 @@ object ModalDialogContentsRenderingEventUIParam {
     __obj.asInstanceOf[ModalDialogContentsRenderingEventUIParam]
   }
   
-  extension [Self <: ModalDialogContentsRenderingEventUIParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModalDialogContentsRenderingEventUIParam] (val x: Self) extends AnyVal {
     
     inline def setModalDialogElement(value: String): Self = StObject.set(x, "modalDialogElement", value.asInstanceOf[js.Any])
     

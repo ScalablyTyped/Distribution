@@ -19,7 +19,8 @@ object Undo {
     __obj.asInstanceOf[Undo]
   }
   
-  extension [Self <: Undo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Undo] (val x: Self) extends AnyVal {
     
     inline def setIgnoreUndo(value: WebixCallback => Unit): Self = StObject.set(x, "ignoreUndo", js.Any.fromFunction1(value))
     

@@ -17,7 +17,8 @@ object RadioCardSelectionChangedEvent {
     __obj.asInstanceOf[RadioCardSelectionChangedEvent]
   }
   
-  extension [Self <: RadioCardSelectionChangedEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RadioCardSelectionChangedEvent] (val x: Self) extends AnyVal {
     
     inline def setCard(value: RadioCard): Self = StObject.set(x, "card", value.asInstanceOf[js.Any])
     

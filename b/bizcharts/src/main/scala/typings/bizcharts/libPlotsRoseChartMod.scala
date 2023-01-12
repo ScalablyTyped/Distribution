@@ -36,7 +36,8 @@ object libPlotsRoseChartMod extends Shortcut {
       __obj.asInstanceOf[RoseOptions]
     }
     
-    extension [Self <: RoseOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RoseOptions] (val x: Self) extends AnyVal {
       
       inline def setCategoryField(value: String): Self = StObject.set(x, "categoryField", value.asInstanceOf[js.Any])
       

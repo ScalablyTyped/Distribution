@@ -39,7 +39,8 @@ object PartialMessageStripProps {
     __obj.asInstanceOf[PartialMessageStripProps]
   }
   
-  extension [Self <: PartialMessageStripProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialMessageStripProps] (val x: Self) extends AnyVal {
     
     inline def setButtonProps(value: Any): Self = StObject.set(x, "buttonProps", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object PortForwardingConfig {
     __obj.asInstanceOf[PortForwardingConfig]
   }
   
-  extension [Self <: PortForwardingConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PortForwardingConfig] (val x: Self) extends AnyVal {
     
     inline def setPortMappings(value: PortMappingList): Self = StObject.set(x, "portMappings", value.asInstanceOf[js.Any])
     

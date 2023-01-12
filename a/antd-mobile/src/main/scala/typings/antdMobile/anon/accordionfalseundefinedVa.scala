@@ -315,7 +315,8 @@ object accordionfalseundefinedVa {
     __obj.asInstanceOf[accordionfalseundefinedVa]
   }
   
-  extension [Self <: accordionfalseundefinedVa](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: accordionfalseundefinedVa] (val x: Self) extends AnyVal {
     
     inline def setAccordion(value: `false`): Self = StObject.set(x, "accordion", value.asInstanceOf[js.Any])
     

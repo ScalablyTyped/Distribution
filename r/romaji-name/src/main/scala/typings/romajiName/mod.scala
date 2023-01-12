@@ -59,7 +59,8 @@ object mod {
       __obj.asInstanceOf[ParseOptions]
     }
     
-    extension [Self <: ParseOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParseOptions] (val x: Self) extends AnyVal {
       
       inline def setFlipNonJa(value: Boolean): Self = StObject.set(x, "flipNonJa", value.asInstanceOf[js.Any])
       
@@ -195,7 +196,8 @@ object mod {
       __obj.asInstanceOf[ParseResults]
     }
     
-    extension [Self <: ParseResults](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParseResults] (val x: Self) extends AnyVal {
       
       inline def setAfter(value: Boolean): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
       

@@ -18,7 +18,8 @@ object DeleteInstanceRequest {
     __obj.asInstanceOf[DeleteInstanceRequest]
   }
   
-  extension [Self <: DeleteInstanceRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteInstanceRequest] (val x: Self) extends AnyVal {
     
     inline def setInstanceId(value: InstanceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
   }

@@ -666,7 +666,8 @@ object sapMP13nSortPanelMod_ {
       __obj.asInstanceOf[P13nSortPanelSettings]
     }
     
-    extension [Self <: P13nSortPanelSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: P13nSortPanelSettings] (val x: Self) extends AnyVal {
       
       inline def setAddSortItem(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "addSortItem", js.Any.fromFunction1(value))
       

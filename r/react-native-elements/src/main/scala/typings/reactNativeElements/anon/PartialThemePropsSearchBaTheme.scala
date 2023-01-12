@@ -21,7 +21,8 @@ object PartialThemePropsSearchBaTheme {
     __obj.asInstanceOf[PartialThemePropsSearchBaTheme]
   }
   
-  extension [Self <: PartialThemePropsSearchBaTheme](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialThemePropsSearchBaTheme] (val x: Self) extends AnyVal {
     
     inline def setReplaceTheme(value: /* updates */ RecursivePartialFullTheme => Unit): Self = StObject.set(x, "replaceTheme", js.Any.fromFunction1(value))
     

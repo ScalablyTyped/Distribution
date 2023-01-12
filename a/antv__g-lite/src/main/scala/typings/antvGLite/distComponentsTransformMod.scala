@@ -71,7 +71,8 @@ object distComponentsTransformMod {
       __obj.asInstanceOf[Transform]
     }
     
-    extension [Self <: Transform](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Transform] (val x: Self) extends AnyVal {
       
       inline def setDirtyFlag(value: Boolean): Self = StObject.set(x, "dirtyFlag", value.asInstanceOf[js.Any])
       

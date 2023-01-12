@@ -47,7 +47,8 @@ object MapType {
     __obj.asInstanceOf[MapType]
   }
   
-  extension [Self <: MapType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MapType] (val x: Self) extends AnyVal {
     
     inline def setBase(value: TileLayer): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
     

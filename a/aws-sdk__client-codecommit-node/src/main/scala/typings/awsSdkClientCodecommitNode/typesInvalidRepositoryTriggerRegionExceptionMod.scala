@@ -23,7 +23,8 @@ object typesInvalidRepositoryTriggerRegionExceptionMod {
       __obj.asInstanceOf[InvalidRepositoryTriggerRegionException]
     }
     
-    extension [Self <: InvalidRepositoryTriggerRegionException](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InvalidRepositoryTriggerRegionException] (val x: Self) extends AnyVal {
       
       inline def setName(
         value: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.InvalidRepositoryTriggerRegionException

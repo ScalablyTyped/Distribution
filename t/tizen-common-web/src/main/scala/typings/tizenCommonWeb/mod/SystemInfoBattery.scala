@@ -57,7 +57,8 @@ object SystemInfoBattery {
     __obj.asInstanceOf[SystemInfoBattery]
   }
   
-  extension [Self <: SystemInfoBattery](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SystemInfoBattery] (val x: Self) extends AnyVal {
     
     inline def setIsCharging(value: Boolean): Self = StObject.set(x, "isCharging", value.asInstanceOf[js.Any])
     

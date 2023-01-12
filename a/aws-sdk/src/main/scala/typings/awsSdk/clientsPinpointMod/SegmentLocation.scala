@@ -23,7 +23,8 @@ object SegmentLocation {
     __obj.asInstanceOf[SegmentLocation]
   }
   
-  extension [Self <: SegmentLocation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SegmentLocation] (val x: Self) extends AnyVal {
     
     inline def setCountry(value: SetDimension): Self = StObject.set(x, "Country", value.asInstanceOf[js.Any])
     

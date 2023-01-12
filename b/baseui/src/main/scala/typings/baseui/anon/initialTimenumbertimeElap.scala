@@ -56,7 +56,8 @@ object initialTimenumbertimeElap {
     __obj.asInstanceOf[initialTimenumbertimeElap]
   }
   
-  extension [Self <: initialTimenumbertimeElap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: initialTimenumbertimeElap] (val x: Self) extends AnyVal {
     
     inline def set$colors(value: CustomColors): Self = StObject.set(x, "$colors", value.asInstanceOf[js.Any])
     

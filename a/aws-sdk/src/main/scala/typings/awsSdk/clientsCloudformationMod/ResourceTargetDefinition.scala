@@ -28,7 +28,8 @@ object ResourceTargetDefinition {
     __obj.asInstanceOf[ResourceTargetDefinition]
   }
   
-  extension [Self <: ResourceTargetDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResourceTargetDefinition] (val x: Self) extends AnyVal {
     
     inline def setAttribute(value: ResourceAttribute): Self = StObject.set(x, "Attribute", value.asInstanceOf[js.Any])
     

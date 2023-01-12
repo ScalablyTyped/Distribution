@@ -19,7 +19,8 @@ object ProfileMetadata {
     __obj.asInstanceOf[ProfileMetadata]
   }
   
-  extension [Self <: ProfileMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProfileMetadata] (val x: Self) extends AnyVal {
     
     inline def setObjectType(value: String): Self = StObject.set(x, "objectType", value.asInstanceOf[js.Any])
     

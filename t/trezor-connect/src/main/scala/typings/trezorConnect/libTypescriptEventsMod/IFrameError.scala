@@ -19,7 +19,8 @@ object IFrameError {
     __obj.asInstanceOf[IFrameError]
   }
   
-  extension [Self <: IFrameError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IFrameError] (val x: Self) extends AnyVal {
     
     inline def setPayload(value: Code): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     

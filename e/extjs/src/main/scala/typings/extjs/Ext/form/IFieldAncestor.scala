@@ -42,7 +42,8 @@ object IFieldAncestor {
     __obj.asInstanceOf[IFieldAncestor]
   }
   
-  extension [Self <: IFieldAncestor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IFieldAncestor] (val x: Self) extends AnyVal {
     
     inline def setFieldDefaults(value: Any): Self = StObject.set(x, "fieldDefaults", value.asInstanceOf[js.Any])
     

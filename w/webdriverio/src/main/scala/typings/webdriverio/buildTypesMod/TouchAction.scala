@@ -23,7 +23,8 @@ object TouchAction {
     __obj.asInstanceOf[TouchAction]
   }
   
-  extension [Self <: TouchAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TouchAction] (val x: Self) extends AnyVal {
     
     inline def setAction(value: ActionTypes): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     

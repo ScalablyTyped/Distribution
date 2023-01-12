@@ -16,7 +16,8 @@ object PDataDOMEvent {
     __obj.asInstanceOf[PDataDOMEvent]
   }
   
-  extension [Self <: PDataDOMEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PDataDOMEvent] (val x: Self) extends AnyVal {
     
     inline def setPDataDOMEvent(value: DataDOMEventObject): Self = StObject.set(x, "pDataDOMEvent", value.asInstanceOf[js.Any])
   }

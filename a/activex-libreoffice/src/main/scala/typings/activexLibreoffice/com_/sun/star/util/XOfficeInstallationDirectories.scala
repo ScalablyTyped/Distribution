@@ -83,7 +83,8 @@ object XOfficeInstallationDirectories {
     __obj.asInstanceOf[XOfficeInstallationDirectories]
   }
   
-  extension [Self <: XOfficeInstallationDirectories](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XOfficeInstallationDirectories] (val x: Self) extends AnyVal {
     
     inline def setGetOfficeInstallationDirectoryURL(value: () => String): Self = StObject.set(x, "getOfficeInstallationDirectoryURL", js.Any.fromFunction0(value))
     

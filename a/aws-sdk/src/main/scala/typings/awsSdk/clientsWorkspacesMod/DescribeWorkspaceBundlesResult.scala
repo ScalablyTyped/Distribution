@@ -23,7 +23,8 @@ object DescribeWorkspaceBundlesResult {
     __obj.asInstanceOf[DescribeWorkspaceBundlesResult]
   }
   
-  extension [Self <: DescribeWorkspaceBundlesResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeWorkspaceBundlesResult] (val x: Self) extends AnyVal {
     
     inline def setBundles(value: BundleList): Self = StObject.set(x, "Bundles", value.asInstanceOf[js.Any])
     

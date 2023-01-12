@@ -16,7 +16,8 @@ object BatchDeletePhotosRequest {
     __obj.asInstanceOf[BatchDeletePhotosRequest]
   }
   
-  extension [Self <: BatchDeletePhotosRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchDeletePhotosRequest] (val x: Self) extends AnyVal {
     
     inline def setPhotoIds(value: js.Array[String]): Self = StObject.set(x, "photoIds", value.asInstanceOf[js.Any])
     

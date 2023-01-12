@@ -24,7 +24,8 @@ object Deploymentbranchpolicy {
     __obj.asInstanceOf[Deploymentbranchpolicy]
   }
   
-  extension [Self <: Deploymentbranchpolicy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Deploymentbranchpolicy] (val x: Self) extends AnyVal {
     
     inline def setDeployment_branch_policy(
       value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['deployment-branch-policy-settings'] */ js.Any

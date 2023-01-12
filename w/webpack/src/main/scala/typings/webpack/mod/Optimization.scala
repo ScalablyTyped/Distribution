@@ -148,7 +148,8 @@ object Optimization {
     __obj.asInstanceOf[Optimization]
   }
   
-  extension [Self <: Optimization](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Optimization] (val x: Self) extends AnyVal {
     
     inline def setCheckWasmTypes(value: Boolean): Self = StObject.set(x, "checkWasmTypes", value.asInstanceOf[js.Any])
     

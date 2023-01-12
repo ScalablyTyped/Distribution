@@ -17,7 +17,8 @@ object anon {
       __obj.asInstanceOf[CorrelationId]
     }
     
-    extension [Self <: CorrelationId](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CorrelationId] (val x: Self) extends AnyVal {
       
       inline def setCorrelationId(value: Double): Self = StObject.set(x, "correlationId", value.asInstanceOf[js.Any])
     }

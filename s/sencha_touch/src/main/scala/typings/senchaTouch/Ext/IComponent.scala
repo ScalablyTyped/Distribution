@@ -755,7 +755,8 @@ object IComponent {
     __obj.asInstanceOf[IComponent]
   }
   
-  extension [Self <: IComponent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IComponent] (val x: Self) extends AnyVal {
     
     inline def setAddCls(
       value: (/* cls */ js.UndefOr[java.lang.String], /* prefix */ js.UndefOr[java.lang.String], /* suffix */ js.UndefOr[java.lang.String]) => Unit

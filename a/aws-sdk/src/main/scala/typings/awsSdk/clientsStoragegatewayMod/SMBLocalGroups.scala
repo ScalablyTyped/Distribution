@@ -18,7 +18,8 @@ object SMBLocalGroups {
     __obj.asInstanceOf[SMBLocalGroups]
   }
   
-  extension [Self <: SMBLocalGroups](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SMBLocalGroups] (val x: Self) extends AnyVal {
     
     inline def setGatewayAdmins(value: UserList): Self = StObject.set(x, "GatewayAdmins", value.asInstanceOf[js.Any])
     

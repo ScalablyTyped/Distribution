@@ -18,7 +18,8 @@ object GetResponseBodyRequest {
     __obj.asInstanceOf[GetResponseBodyRequest]
   }
   
-  extension [Self <: GetResponseBodyRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetResponseBodyRequest] (val x: Self) extends AnyVal {
     
     inline def setRequestId(value: RequestId): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
   }

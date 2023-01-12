@@ -31,7 +31,8 @@ object distErrorMessageMod {
       __obj.asInstanceOf[ErrorMessageProps]
     }
     
-    extension [Self <: ErrorMessageProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ErrorMessageProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: /* errorMessage */ String => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
       

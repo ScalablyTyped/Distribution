@@ -19,7 +19,8 @@ object GetAuthCodeCallbackValue {
     __obj.asInstanceOf[GetAuthCodeCallbackValue]
   }
   
-  extension [Self <: GetAuthCodeCallbackValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetAuthCodeCallbackValue] (val x: Self) extends AnyVal {
     
     inline def setAuthCode(value: String): Self = StObject.set(x, "authCode", value.asInstanceOf[js.Any])
     

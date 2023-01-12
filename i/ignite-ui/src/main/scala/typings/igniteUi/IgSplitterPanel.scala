@@ -55,7 +55,8 @@ object IgSplitterPanel {
     __obj.asInstanceOf[IgSplitterPanel]
   }
   
-  extension [Self <: IgSplitterPanel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgSplitterPanel] (val x: Self) extends AnyVal {
     
     inline def setCollapsed(value: Boolean): Self = StObject.set(x, "collapsed", value.asInstanceOf[js.Any])
     

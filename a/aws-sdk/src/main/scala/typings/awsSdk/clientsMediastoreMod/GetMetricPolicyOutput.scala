@@ -18,7 +18,8 @@ object GetMetricPolicyOutput {
     __obj.asInstanceOf[GetMetricPolicyOutput]
   }
   
-  extension [Self <: GetMetricPolicyOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetMetricPolicyOutput] (val x: Self) extends AnyVal {
     
     inline def setMetricPolicy(value: MetricPolicy): Self = StObject.set(x, "MetricPolicy", value.asInstanceOf[js.Any])
   }

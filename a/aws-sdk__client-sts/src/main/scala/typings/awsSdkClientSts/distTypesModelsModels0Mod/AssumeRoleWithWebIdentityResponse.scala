@@ -86,7 +86,8 @@ object AssumeRoleWithWebIdentityResponse {
     __obj.asInstanceOf[AssumeRoleWithWebIdentityResponse]
   }
   
-  extension [Self <: AssumeRoleWithWebIdentityResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssumeRoleWithWebIdentityResponse] (val x: Self) extends AnyVal {
     
     inline def setAssumedRoleUser(value: AssumedRoleUser): Self = StObject.set(x, "AssumedRoleUser", value.asInstanceOf[js.Any])
     

@@ -35,7 +35,8 @@ object EventAttachment {
     __obj.asInstanceOf[EventAttachment]
   }
   
-  extension [Self <: EventAttachment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventAttachment] (val x: Self) extends AnyVal {
     
     inline def setFileId(value: String): Self = StObject.set(x, "fileId", value.asInstanceOf[js.Any])
     

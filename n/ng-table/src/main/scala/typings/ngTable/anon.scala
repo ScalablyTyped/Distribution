@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[Columns]
     }
     
-    extension [Self <: Columns](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Columns] (val x: Self) extends AnyVal {
       
       inline def setColumns(value: String): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
       
@@ -55,7 +56,8 @@ object anon {
       __obj.asInstanceOf[Controller]
     }
     
-    extension [Self <: Controller](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Controller] (val x: Self) extends AnyVal {
       
       inline def setController(value: String): Self = StObject.set(x, "controller", value.asInstanceOf[js.Any])
       
@@ -82,7 +84,8 @@ object anon {
       __obj.asInstanceOf[Disabled]
     }
     
-    extension [Self <: Disabled](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Disabled] (val x: Self) extends AnyVal {
       
       inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     }
@@ -101,7 +104,8 @@ object anon {
       __obj.asInstanceOf[Header]
     }
     
-    extension [Self <: Header](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Header] (val x: Self) extends AnyVal {
       
       inline def setHeader(value: String): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
       
@@ -120,7 +124,8 @@ object anon {
       __obj.asInstanceOf[Show]
     }
     
-    extension [Self <: Show](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Show] (val x: Self) extends AnyVal {
       
       inline def setShow(value: Boolean): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
     }

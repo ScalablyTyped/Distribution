@@ -28,7 +28,8 @@ object DynamoDBTarget {
     __obj.asInstanceOf[DynamoDBTarget]
   }
   
-  extension [Self <: DynamoDBTarget](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DynamoDBTarget] (val x: Self) extends AnyVal {
     
     inline def setPath(value: Path): Self = StObject.set(x, "Path", value.asInstanceOf[js.Any])
     

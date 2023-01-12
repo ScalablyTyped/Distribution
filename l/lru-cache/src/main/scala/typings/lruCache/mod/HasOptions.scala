@@ -19,7 +19,8 @@ object HasOptions {
     __obj.asInstanceOf[HasOptions]
   }
   
-  extension [Self <: HasOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HasOptions] (val x: Self) extends AnyVal {
     
     inline def setUpdateAgeOnHas(value: Boolean): Self = StObject.set(x, "updateAgeOnHas", value.asInstanceOf[js.Any])
     

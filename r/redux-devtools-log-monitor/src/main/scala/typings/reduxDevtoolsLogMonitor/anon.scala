@@ -109,7 +109,8 @@ object anon {
       __obj.asInstanceOf[Action]
     }
     
-    extension [Self <: Action](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Action] (val x: Self) extends AnyVal {
       
       inline def setAction(value: Validator[js.Object]): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
@@ -182,7 +183,8 @@ object anon {
       __obj.asInstanceOf[ActionsById]
     }
     
-    extension [Self <: ActionsById](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ActionsById] (val x: Self) extends AnyVal {
       
       inline def setActionsById(value: Requireable[js.Object]): Self = StObject.set(x, "actionsById", value.asInstanceOf[js.Any])
       
@@ -263,7 +265,8 @@ object anon {
       __obj.asInstanceOf[Dispatch]
     }
     
-    extension [Self <: Dispatch](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Dispatch] (val x: Self) extends AnyVal {
       
       inline def setDispatch(value: Requireable[js.Function1[/* repeated */ Any, Any]]): Self = StObject.set(x, "dispatch", value.asInstanceOf[js.Any])
       
@@ -284,7 +287,8 @@ object anon {
       __obj.asInstanceOf[Error[S]]
     }
     
-    extension [Self <: Error[?], S](x: Self & Error[S]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Error[?], S] (val x: Self & Error[S]) extends AnyVal {
       
       inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
@@ -353,7 +357,8 @@ object anon {
       __obj.asInstanceOf[PartialExternalPropsunkno]
     }
     
-    extension [Self <: PartialExternalPropsunkno](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialExternalPropsunkno] (val x: Self) extends AnyVal {
       
       inline def setDispatch(
         value: LogMonitorAction | (LiftedAction[Any, typings.redux.mod.Action[Any], LogMonitorState]) => LogMonitorAction | (LiftedAction[Any, typings.redux.mod.Action[Any], LogMonitorState])
@@ -407,7 +412,8 @@ object anon {
       __obj.asInstanceOf[PartialLogMonitorState]
     }
     
-    extension [Self <: PartialLogMonitorState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialLogMonitorState] (val x: Self) extends AnyVal {
       
       inline def setConsecutiveToggleStartId(value: Double): Self = StObject.set(x, "consecutiveToggleStartId", value.asInstanceOf[js.Any])
       
@@ -542,7 +548,8 @@ object anon {
       __obj.asInstanceOf[Typeofthemes]
     }
     
-    extension [Self <: Typeofthemes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Typeofthemes] (val x: Self) extends AnyVal {
       
       inline def setApathy(value: Base16Theme): Self = StObject.set(x, "apathy", value.asInstanceOf[js.Any])
       
@@ -662,7 +669,8 @@ object anon {
       __obj.asInstanceOf[WeakValidationMapExternal]
     }
     
-    extension [Self <: WeakValidationMapExternal](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WeakValidationMapExternal] (val x: Self) extends AnyVal {
       
       inline def setDispatch(
         value: /* import warning: importer.ImportType#apply Failed type conversion: null extends redux.redux.Dispatch<redux-devtools-log-monitor.redux-devtools-log-monitor/lib/actions.LogMonitorAction | redux-devtools-instrument.redux-devtools-instrument.LiftedAction<unknown, redux.redux.Action<unknown>, redux-devtools-log-monitor.redux-devtools-log-monitor/lib/reducers.LogMonitorState>> ? react.react.Validator<redux.redux.Dispatch<redux-devtools-log-monitor.redux-devtools-log-monitor/lib/actions.LogMonitorAction | redux-devtools-instrument.redux-devtools-instrument.LiftedAction<unknown, redux.redux.Action<unknown>, redux-devtools-log-monitor.redux-devtools-log-monitor/lib/reducers.LogMonitorState>> | null | undefined> : undefined extends redux.redux.Dispatch<redux-devtools-log-monitor.redux-devtools-log-monitor/lib/actions.LogMonitorAction | redux-devtools-instrument.redux-devtools-instrument.LiftedAction<unknown, redux.redux.Action<unknown>, redux-devtools-log-monitor.redux-devtools-log-monitor/lib/reducers.LogMonitorState>> ? react.react.Validator<redux.redux.Dispatch<redux-devtools-log-monitor.redux-devtools-log-monitor/lib/actions.LogMonitorAction | redux-devtools-instrument.redux-devtools-instrument.LiftedAction<unknown, redux.redux.Action<unknown>, redux-devtools-log-monitor.redux-devtools-log-monitor/lib/reducers.LogMonitorState>> | null | undefined> : react.react.Validator<redux.redux.Dispatch<redux-devtools-log-monitor.redux-devtools-log-monitor/lib/actions.LogMonitorAction | redux-devtools-instrument.redux-devtools-instrument.LiftedAction<unknown, redux.redux.Action<unknown>, redux-devtools-log-monitor.redux-devtools-log-monitor/lib/reducers.LogMonitorState>>> */ js.Any

@@ -70,7 +70,8 @@ object RequestPausedEvent {
     __obj.asInstanceOf[RequestPausedEvent]
   }
   
-  extension [Self <: RequestPausedEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RequestPausedEvent] (val x: Self) extends AnyVal {
     
     inline def setFrameId(value: FrameId): Self = StObject.set(x, "frameId", value.asInstanceOf[js.Any])
     

@@ -172,7 +172,8 @@ object srcInternalMod {
       __obj.asInstanceOf[DevSource]
     }
     
-    extension [Self <: DevSource](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DevSource] (val x: Self) extends AnyVal {
       
       inline def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
       
@@ -191,7 +192,8 @@ object srcInternalMod {
       __obj.asInstanceOf[ErrorInfo]
     }
     
-    extension [Self <: ErrorInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ErrorInfo] (val x: Self) extends AnyVal {
       
       inline def setComponentStack(value: String): Self = StObject.set(x, "componentStack", value.asInstanceOf[js.Any])
       
@@ -284,7 +286,8 @@ object srcInternalMod {
       __obj.asInstanceOf[PreactContext]
     }
     
-    extension [Self <: PreactContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PreactContext] (val x: Self) extends AnyVal {
       
       inline def set_defaultValue(value: Any): Self = StObject.set(x, "_defaultValue", value.asInstanceOf[js.Any])
       
@@ -355,7 +358,8 @@ object srcInternalMod {
       __obj.asInstanceOf[RefObject[T]]
     }
     
-    extension [Self <: RefObject[?], T](x: Self & RefObject[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RefObject[?], T] (val x: Self & RefObject[T]) extends AnyVal {
       
       inline def setCurrent(value: T): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
       
@@ -405,7 +409,8 @@ object srcInternalMod {
       __obj.asInstanceOf[VNode[P]]
     }
     
-    extension [Self <: VNode[?], P](x: Self & VNode[P]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VNode[?], P] (val x: Self & VNode[P]) extends AnyVal {
       
       inline def setConstructor(value: Unit): Self = StObject.set(x, "constructor", value.asInstanceOf[js.Any])
       

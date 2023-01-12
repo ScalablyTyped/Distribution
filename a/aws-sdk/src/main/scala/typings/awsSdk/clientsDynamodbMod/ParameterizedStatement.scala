@@ -23,7 +23,8 @@ object ParameterizedStatement {
     __obj.asInstanceOf[ParameterizedStatement]
   }
   
-  extension [Self <: ParameterizedStatement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParameterizedStatement] (val x: Self) extends AnyVal {
     
     inline def setParameters(value: PreparedStatementParameters): Self = StObject.set(x, "Parameters", value.asInstanceOf[js.Any])
     

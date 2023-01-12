@@ -30,7 +30,8 @@ object TemplateBase {
     __obj.asInstanceOf[TemplateBase]
   }
   
-  extension [Self <: TemplateBase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TemplateBase] (val x: Self) extends AnyVal {
     
     inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     

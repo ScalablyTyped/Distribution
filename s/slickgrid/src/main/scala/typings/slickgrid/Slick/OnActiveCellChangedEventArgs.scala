@@ -19,7 +19,8 @@ object OnActiveCellChangedEventArgs {
     __obj.asInstanceOf[OnActiveCellChangedEventArgs[T]]
   }
   
-  extension [Self <: OnActiveCellChangedEventArgs[?], T /* <: SlickData */](x: Self & OnActiveCellChangedEventArgs[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnActiveCellChangedEventArgs[?], T /* <: SlickData */] (val x: Self & OnActiveCellChangedEventArgs[T]) extends AnyVal {
     
     inline def setCell(value: Double): Self = StObject.set(x, "cell", value.asInstanceOf[js.Any])
     

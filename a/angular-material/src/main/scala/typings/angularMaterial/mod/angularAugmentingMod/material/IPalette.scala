@@ -51,7 +51,8 @@ object IPalette {
     __obj.asInstanceOf[IPalette]
   }
   
-  extension [Self <: IPalette](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPalette] (val x: Self) extends AnyVal {
     
     inline def set0(value: String): Self = StObject.set(x, "0", value.asInstanceOf[js.Any])
     

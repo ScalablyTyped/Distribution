@@ -38,7 +38,8 @@ object DecryptRequest {
     __obj.asInstanceOf[DecryptRequest]
   }
   
-  extension [Self <: DecryptRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DecryptRequest] (val x: Self) extends AnyVal {
     
     inline def setCiphertextBlob(value: CiphertextType): Self = StObject.set(x, "CiphertextBlob", value.asInstanceOf[js.Any])
     

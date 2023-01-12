@@ -15,7 +15,8 @@ object DanglingIndicesListDanglingIndicesResponse {
     __obj.asInstanceOf[DanglingIndicesListDanglingIndicesResponse]
   }
   
-  extension [Self <: DanglingIndicesListDanglingIndicesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DanglingIndicesListDanglingIndicesResponse] (val x: Self) extends AnyVal {
     
     inline def setDangling_indices(value: js.Array[DanglingIndicesListDanglingIndicesDanglingIndex]): Self = StObject.set(x, "dangling_indices", value.asInstanceOf[js.Any])
     

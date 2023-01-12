@@ -26,7 +26,8 @@ object DexieEvent {
     __obj.asInstanceOf[DexieEvent]
   }
   
-  extension [Self <: DexieEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DexieEvent] (val x: Self) extends AnyVal {
     
     inline def setFire(value: /* repeated */ Any => Any): Self = StObject.set(x, "fire", js.Any.fromFunction1(value))
     

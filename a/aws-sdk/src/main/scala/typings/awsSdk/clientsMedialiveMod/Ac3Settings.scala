@@ -48,7 +48,8 @@ object Ac3Settings {
     __obj.asInstanceOf[Ac3Settings]
   }
   
-  extension [Self <: Ac3Settings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Ac3Settings] (val x: Self) extends AnyVal {
     
     inline def setBitrate(value: double): Self = StObject.set(x, "Bitrate", value.asInstanceOf[js.Any])
     

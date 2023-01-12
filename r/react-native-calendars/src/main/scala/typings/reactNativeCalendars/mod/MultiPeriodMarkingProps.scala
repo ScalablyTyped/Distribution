@@ -21,7 +21,8 @@ object MultiPeriodMarkingProps {
     __obj.asInstanceOf[MultiPeriodMarkingProps]
   }
   
-  extension [Self <: MultiPeriodMarkingProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MultiPeriodMarkingProps] (val x: Self) extends AnyVal {
     
     inline def setMarkedDates(value: StringDictionary[MultiPeriodMarking]): Self = StObject.set(x, "markedDates", value.asInstanceOf[js.Any])
     

@@ -66,7 +66,8 @@ object PlusMapsSearchPoiResult {
     __obj.asInstanceOf[PlusMapsSearchPoiResult]
   }
   
-  extension [Self <: PlusMapsSearchPoiResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlusMapsSearchPoiResult] (val x: Self) extends AnyVal {
     
     inline def setCurrentNumber(value: Double): Self = StObject.set(x, "currentNumber", value.asInstanceOf[js.Any])
     

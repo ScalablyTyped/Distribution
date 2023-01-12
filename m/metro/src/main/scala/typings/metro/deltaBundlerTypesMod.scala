@@ -28,7 +28,8 @@ object deltaBundlerTypesMod {
       __obj.asInstanceOf[AllowOptionalDependenciesWithOptions]
     }
     
-    extension [Self <: AllowOptionalDependenciesWithOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AllowOptionalDependenciesWithOptions] (val x: Self) extends AnyVal {
       
       inline def setExclude(value: js.Array[String]): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
       
@@ -70,7 +71,8 @@ object deltaBundlerTypesMod {
       __obj.asInstanceOf[DeltaResult[T]]
     }
     
-    extension [Self <: DeltaResult[?], T](x: Self & DeltaResult[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeltaResult[?], T] (val x: Self & DeltaResult[T]) extends AnyVal {
       
       inline def setAdded(value: Map[String, Module[T]]): Self = StObject.set(x, "added", value.asInstanceOf[js.Any])
       
@@ -99,7 +101,8 @@ object deltaBundlerTypesMod {
       __obj.asInstanceOf[Dependency]
     }
     
-    extension [Self <: Dependency](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Dependency] (val x: Self) extends AnyVal {
       
       inline def setAbsolutePath(value: String): Self = StObject.set(x, "absolutePath", value.asInstanceOf[js.Any])
       
@@ -129,7 +132,8 @@ object deltaBundlerTypesMod {
       __obj.asInstanceOf[Graph[T]]
     }
     
-    extension [Self <: Graph[?], T](x: Self & Graph[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Graph[?], T] (val x: Self & Graph[T]) extends AnyVal {
       
       inline def setDependencies(value: Dependencies[T]): Self = StObject.set(x, "dependencies", value.asInstanceOf[js.Any])
       
@@ -157,7 +161,8 @@ object deltaBundlerTypesMod {
       __obj.asInstanceOf[MixedOutput]
     }
     
-    extension [Self <: MixedOutput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MixedOutput] (val x: Self) extends AnyVal {
       
       inline def setData(value: Code): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -190,7 +195,8 @@ object deltaBundlerTypesMod {
       __obj.asInstanceOf[Module[T]]
     }
     
-    extension [Self <: Module[?], T](x: Self & Module[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Module[?], T] (val x: Self & Module[T]) extends AnyVal {
       
       inline def setDependencies(value: Map[String, Dependency]): Self = StObject.set(x, "dependencies", value.asInstanceOf[js.Any])
       
@@ -274,7 +280,8 @@ object deltaBundlerTypesMod {
       __obj.asInstanceOf[TransformInputOptions]
     }
     
-    extension [Self <: TransformInputOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TransformInputOptions] (val x: Self) extends AnyVal {
       
       inline def setCustomTransformOptions(value: CustomTransformOptions): Self = StObject.set(x, "customTransformOptions", value.asInstanceOf[js.Any])
       
@@ -331,7 +338,8 @@ object deltaBundlerTypesMod {
       __obj.asInstanceOf[TransformResultDependency]
     }
     
-    extension [Self <: TransformResultDependency](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TransformResultDependency] (val x: Self) extends AnyVal {
       
       inline def setData(value: AsyncType): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       

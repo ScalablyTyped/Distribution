@@ -52,7 +52,8 @@ object FillSymbol3DLayerProperties {
     __obj.asInstanceOf[FillSymbol3DLayerProperties]
   }
   
-  extension [Self <: FillSymbol3DLayerProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FillSymbol3DLayerProperties] (val x: Self) extends AnyVal {
     
     inline def setCastShadows(value: Boolean): Self = StObject.set(x, "castShadows", value.asInstanceOf[js.Any])
     

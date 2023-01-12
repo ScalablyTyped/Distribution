@@ -26,7 +26,8 @@ object ProgressBarOptions {
     __obj.asInstanceOf[ProgressBarOptions]
   }
   
-  extension [Self <: ProgressBarOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProgressBarOptions] (val x: Self) extends AnyVal {
     
     inline def setMode(value: none | normal | indeterminate | error | paused): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
   }

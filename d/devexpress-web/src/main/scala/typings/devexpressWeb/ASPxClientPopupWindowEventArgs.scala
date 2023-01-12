@@ -23,7 +23,8 @@ object ASPxClientPopupWindowEventArgs {
     __obj.asInstanceOf[ASPxClientPopupWindowEventArgs]
   }
   
-  extension [Self <: ASPxClientPopupWindowEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientPopupWindowEventArgs] (val x: Self) extends AnyVal {
     
     inline def setWindow(value: ASPxClientPopupWindow): Self = StObject.set(x, "window", value.asInstanceOf[js.Any])
   }

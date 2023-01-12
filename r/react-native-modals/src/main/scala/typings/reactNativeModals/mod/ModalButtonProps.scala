@@ -32,7 +32,8 @@ object ModalButtonProps {
     __obj.asInstanceOf[ModalButtonProps]
   }
   
-  extension [Self <: ModalButtonProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModalButtonProps] (val x: Self) extends AnyVal {
     
     inline def setActiveOpacity(value: Double): Self = StObject.set(x, "activeOpacity", value.asInstanceOf[js.Any])
     

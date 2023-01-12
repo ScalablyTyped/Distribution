@@ -17,7 +17,8 @@ object IPLAYER_TO_SPECTATOR_ERROR {
     __obj.asInstanceOf[IPLAYER_TO_SPECTATOR_ERROR]
   }
   
-  extension [Self <: IPLAYER_TO_SPECTATOR_ERROR](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPLAYER_TO_SPECTATOR_ERROR] (val x: Self) extends AnyVal {
     
     inline def setErrorCode(value: Double): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
     

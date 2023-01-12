@@ -137,7 +137,8 @@ object PartialStyleRulesTypograp {
     __obj.asInstanceOf[PartialStyleRulesTypograp]
   }
   
-  extension [Self <: PartialStyleRulesTypograp](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialStyleRulesTypograp] (val x: Self) extends AnyVal {
     
     inline def setAlignCenter(
       value: CSSProperties | CreateCSSProperties[js.Object] | (PropsFunc[js.Object, CreateCSSProperties[js.Object]])

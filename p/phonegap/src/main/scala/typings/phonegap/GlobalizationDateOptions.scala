@@ -17,7 +17,8 @@ object GlobalizationDateOptions {
     __obj.asInstanceOf[GlobalizationDateOptions]
   }
   
-  extension [Self <: GlobalizationDateOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GlobalizationDateOptions] (val x: Self) extends AnyVal {
     
     inline def setFormatLength(value: String): Self = StObject.set(x, "formatLength", value.asInstanceOf[js.Any])
     

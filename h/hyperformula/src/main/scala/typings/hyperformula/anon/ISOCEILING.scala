@@ -19,7 +19,8 @@ object ISOCEILING {
     __obj.asInstanceOf[ISOCEILING]
   }
   
-  extension [Self <: ISOCEILING](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISOCEILING] (val x: Self) extends AnyVal {
     
     inline def setISODotCEILING(value: String): Self = StObject.set(x, "ISO.CEILING", value.asInstanceOf[js.Any])
     

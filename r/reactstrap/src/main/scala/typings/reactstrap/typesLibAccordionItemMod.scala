@@ -36,7 +36,8 @@ object typesLibAccordionItemMod {
       __obj.asInstanceOf[AccordionItemProps]
     }
     
-    extension [Self <: AccordionItemProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AccordionItemProps] (val x: Self) extends AnyVal {
       
       inline def setCssModule(value: CSSModule): Self = StObject.set(x, "cssModule", value.asInstanceOf[js.Any])
       

@@ -18,7 +18,8 @@ object TokenChargeCardResponse {
     __obj.asInstanceOf[TokenChargeCardResponse]
   }
   
-  extension [Self <: TokenChargeCardResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TokenChargeCardResponse] (val x: Self) extends AnyVal {
     
     inline def setData(value: Acctbearsfeeattransactiontime): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
   }

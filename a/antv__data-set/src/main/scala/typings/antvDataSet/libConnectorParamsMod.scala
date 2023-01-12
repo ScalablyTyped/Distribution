@@ -66,7 +66,8 @@ object libConnectorParamsMod {
       __obj.asInstanceOf[ConnectorParams]
     }
     
-    extension [Self <: ConnectorParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConnectorParams] (val x: Self) extends AnyVal {
       
       inline def setCsv(value: js.Tuple2[String, js.Object]): Self = StObject.set(x, "csv", value.asInstanceOf[js.Any])
       

@@ -23,7 +23,8 @@ object AttachedDisk {
     __obj.asInstanceOf[AttachedDisk]
   }
   
-  extension [Self <: AttachedDisk](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AttachedDisk] (val x: Self) extends AnyVal {
     
     inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     

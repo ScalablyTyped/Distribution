@@ -33,7 +33,8 @@ object ModifyDBSnapshotAttributeMessage {
     __obj.asInstanceOf[ModifyDBSnapshotAttributeMessage]
   }
   
-  extension [Self <: ModifyDBSnapshotAttributeMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModifyDBSnapshotAttributeMessage] (val x: Self) extends AnyVal {
     
     inline def setAttributeName(value: String): Self = StObject.set(x, "AttributeName", value.asInstanceOf[js.Any])
     

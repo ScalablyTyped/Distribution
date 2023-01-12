@@ -47,7 +47,8 @@ object ITextMetrics {
     __obj.asInstanceOf[ITextMetrics]
   }
   
-  extension [Self <: ITextMetrics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ITextMetrics] (val x: Self) extends AnyVal {
     
     inline def setBind(value: /* el */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "bind", js.Any.fromFunction1(value))
     

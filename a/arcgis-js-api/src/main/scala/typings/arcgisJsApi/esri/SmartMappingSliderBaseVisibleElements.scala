@@ -20,7 +20,8 @@ object SmartMappingSliderBaseVisibleElements {
     __obj.asInstanceOf[SmartMappingSliderBaseVisibleElements]
   }
   
-  extension [Self <: SmartMappingSliderBaseVisibleElements](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SmartMappingSliderBaseVisibleElements] (val x: Self) extends AnyVal {
     
     inline def setInteractiveTrack(value: Boolean): Self = StObject.set(x, "interactiveTrack", value.asInstanceOf[js.Any])
     

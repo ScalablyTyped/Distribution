@@ -40,7 +40,8 @@ object MangoExecutionStats {
     __obj.asInstanceOf[MangoExecutionStats]
   }
   
-  extension [Self <: MangoExecutionStats](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MangoExecutionStats] (val x: Self) extends AnyVal {
     
     inline def setExecution_time_ms(value: Double): Self = StObject.set(x, "execution_time_ms", value.asInstanceOf[js.Any])
     

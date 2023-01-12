@@ -18,7 +18,8 @@ object PartialclientIdstringapiT {
     __obj.asInstanceOf[PartialclientIdstringapiT]
   }
   
-  extension [Self <: PartialclientIdstringapiT](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialclientIdstringapiT] (val x: Self) extends AnyVal {
     
     inline def setApiToken(value: String): Self = StObject.set(x, "apiToken", value.asInstanceOf[js.Any])
     

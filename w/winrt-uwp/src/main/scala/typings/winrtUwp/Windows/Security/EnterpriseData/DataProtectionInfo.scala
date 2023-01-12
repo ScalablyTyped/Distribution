@@ -20,7 +20,8 @@ object DataProtectionInfo {
     __obj.asInstanceOf[DataProtectionInfo]
   }
   
-  extension [Self <: DataProtectionInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataProtectionInfo] (val x: Self) extends AnyVal {
     
     inline def setIdentity(value: String): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object GetEmailIdentityRequest {
     __obj.asInstanceOf[GetEmailIdentityRequest]
   }
   
-  extension [Self <: GetEmailIdentityRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetEmailIdentityRequest] (val x: Self) extends AnyVal {
     
     inline def setEmailIdentity(value: Identity): Self = StObject.set(x, "EmailIdentity", value.asInstanceOf[js.Any])
   }

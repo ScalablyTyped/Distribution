@@ -23,7 +23,8 @@ object QueryStringCacheKeys {
     __obj.asInstanceOf[QueryStringCacheKeys]
   }
   
-  extension [Self <: QueryStringCacheKeys](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryStringCacheKeys] (val x: Self) extends AnyVal {
     
     inline def setItems(value: QueryStringCacheKeysList): Self = StObject.set(x, "Items", value.asInstanceOf[js.Any])
     

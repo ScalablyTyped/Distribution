@@ -79,7 +79,8 @@ object ChipsOptions {
     __obj.asInstanceOf[ChipsOptions]
   }
   
-  extension [Self <: ChipsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChipsOptions] (val x: Self) extends AnyVal {
     
     inline def setAutocompleteOnly(value: Boolean): Self = StObject.set(x, "autocompleteOnly", value.asInstanceOf[js.Any])
     

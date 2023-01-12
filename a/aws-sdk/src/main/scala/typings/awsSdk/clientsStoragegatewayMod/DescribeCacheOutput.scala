@@ -45,7 +45,8 @@ object DescribeCacheOutput {
     __obj.asInstanceOf[DescribeCacheOutput]
   }
   
-  extension [Self <: DescribeCacheOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeCacheOutput] (val x: Self) extends AnyVal {
     
     inline def setCacheAllocatedInBytes(value: long): Self = StObject.set(x, "CacheAllocatedInBytes", value.asInstanceOf[js.Any])
     

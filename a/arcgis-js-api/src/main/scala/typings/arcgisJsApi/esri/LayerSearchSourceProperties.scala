@@ -73,7 +73,8 @@ object LayerSearchSourceProperties {
     __obj.asInstanceOf[LayerSearchSourceProperties]
   }
   
-  extension [Self <: LayerSearchSourceProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LayerSearchSourceProperties] (val x: Self) extends AnyVal {
     
     inline def setDisplayField(value: String): Self = StObject.set(x, "displayField", value.asInstanceOf[js.Any])
     

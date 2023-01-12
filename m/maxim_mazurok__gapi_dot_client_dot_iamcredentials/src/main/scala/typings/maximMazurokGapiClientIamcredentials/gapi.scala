@@ -47,7 +47,8 @@ object gapi {
           __obj.asInstanceOf[GenerateAccessTokenRequest]
         }
         
-        extension [Self <: GenerateAccessTokenRequest](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: GenerateAccessTokenRequest] (val x: Self) extends AnyVal {
           
           inline def setDelegates(value: js.Array[String]): Self = StObject.set(x, "delegates", value.asInstanceOf[js.Any])
           
@@ -82,7 +83,8 @@ object gapi {
           __obj.asInstanceOf[GenerateAccessTokenResponse]
         }
         
-        extension [Self <: GenerateAccessTokenResponse](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: GenerateAccessTokenResponse] (val x: Self) extends AnyVal {
           
           inline def setAccessToken(value: String): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
           
@@ -117,7 +119,8 @@ object gapi {
           __obj.asInstanceOf[GenerateIdTokenRequest]
         }
         
-        extension [Self <: GenerateIdTokenRequest](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: GenerateIdTokenRequest] (val x: Self) extends AnyVal {
           
           inline def setAudience(value: String): Self = StObject.set(x, "audience", value.asInstanceOf[js.Any])
           
@@ -147,7 +150,8 @@ object gapi {
           __obj.asInstanceOf[GenerateIdTokenResponse]
         }
         
-        extension [Self <: GenerateIdTokenResponse](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: GenerateIdTokenResponse] (val x: Self) extends AnyVal {
           
           inline def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
           
@@ -166,7 +170,8 @@ object gapi {
           __obj.asInstanceOf[ProjectsResource]
         }
         
-        extension [Self <: ProjectsResource](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: ProjectsResource] (val x: Self) extends AnyVal {
           
           inline def setServiceAccounts(value: ServiceAccountsResource): Self = StObject.set(x, "serviceAccounts", value.asInstanceOf[js.Any])
         }
@@ -212,7 +217,8 @@ object gapi {
           __obj.asInstanceOf[SignBlobRequest]
         }
         
-        extension [Self <: SignBlobRequest](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: SignBlobRequest] (val x: Self) extends AnyVal {
           
           inline def setDelegates(value: js.Array[String]): Self = StObject.set(x, "delegates", value.asInstanceOf[js.Any])
           
@@ -249,7 +255,8 @@ object gapi {
           __obj.asInstanceOf[SignBlobResponse]
         }
         
-        extension [Self <: SignBlobResponse](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: SignBlobResponse] (val x: Self) extends AnyVal {
           
           inline def setKeyId(value: String): Self = StObject.set(x, "keyId", value.asInstanceOf[js.Any])
           
@@ -284,7 +291,8 @@ object gapi {
           __obj.asInstanceOf[SignJwtRequest]
         }
         
-        extension [Self <: SignJwtRequest](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: SignJwtRequest] (val x: Self) extends AnyVal {
           
           inline def setDelegates(value: js.Array[String]): Self = StObject.set(x, "delegates", value.asInstanceOf[js.Any])
           
@@ -322,7 +330,8 @@ object gapi {
           __obj.asInstanceOf[SignJwtResponse]
         }
         
-        extension [Self <: SignJwtResponse](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: SignJwtResponse] (val x: Self) extends AnyVal {
           
           inline def setKeyId(value: String): Self = StObject.set(x, "keyId", value.asInstanceOf[js.Any])
           

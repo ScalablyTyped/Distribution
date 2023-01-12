@@ -15,7 +15,8 @@ object CalendarsDeleteParameters {
     __obj.asInstanceOf[CalendarsDeleteParameters]
   }
   
-  extension [Self <: CalendarsDeleteParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CalendarsDeleteParameters] (val x: Self) extends AnyVal {
     
     inline def setCalendarId(value: String): Self = StObject.set(x, "calendarId", value.asInstanceOf[js.Any])
   }

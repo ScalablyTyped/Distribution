@@ -73,7 +73,8 @@ object GetProfileObjectTypeResponse {
     __obj.asInstanceOf[GetProfileObjectTypeResponse]
   }
   
-  extension [Self <: GetProfileObjectTypeResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetProfileObjectTypeResponse] (val x: Self) extends AnyVal {
     
     inline def setAllowProfileCreation(value: Boolean): Self = StObject.set(x, "AllowProfileCreation", value.asInstanceOf[js.Any])
     

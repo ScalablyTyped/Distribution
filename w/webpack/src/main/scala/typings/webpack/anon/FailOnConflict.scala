@@ -43,7 +43,8 @@ object FailOnConflict {
     __obj.asInstanceOf[FailOnConflict]
   }
   
-  extension [Self <: FailOnConflict](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FailOnConflict] (val x: Self) extends AnyVal {
     
     inline def setContext(value: String): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     

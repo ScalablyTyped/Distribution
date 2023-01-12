@@ -215,7 +215,8 @@ object DBCluster {
     __obj.asInstanceOf[DBCluster]
   }
   
-  extension [Self <: DBCluster](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DBCluster] (val x: Self) extends AnyVal {
     
     inline def setAllocatedStorage(value: IntegerOptional): Self = StObject.set(x, "AllocatedStorage", value.asInstanceOf[js.Any])
     

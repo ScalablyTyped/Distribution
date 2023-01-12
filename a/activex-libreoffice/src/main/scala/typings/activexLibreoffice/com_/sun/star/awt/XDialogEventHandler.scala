@@ -51,7 +51,8 @@ object XDialogEventHandler {
     __obj.asInstanceOf[XDialogEventHandler]
   }
   
-  extension [Self <: XDialogEventHandler](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XDialogEventHandler] (val x: Self) extends AnyVal {
     
     inline def setCallHandlerMethod(value: (XDialog, Any, String) => Boolean): Self = StObject.set(x, "callHandlerMethod", js.Any.fromFunction3(value))
     

@@ -536,7 +536,8 @@ object toggleButtonGroupToggleButtonGroupMod {
       __obj.asInstanceOf[ToggleButtonGroupProps]
     }
     
-    extension [Self <: ToggleButtonGroupProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ToggleButtonGroupProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       

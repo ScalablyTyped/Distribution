@@ -19,7 +19,8 @@ object CellIndexReturn {
     __obj.asInstanceOf[CellIndexReturn]
   }
   
-  extension [Self <: CellIndexReturn](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CellIndexReturn] (val x: Self) extends AnyVal {
     
     inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
     

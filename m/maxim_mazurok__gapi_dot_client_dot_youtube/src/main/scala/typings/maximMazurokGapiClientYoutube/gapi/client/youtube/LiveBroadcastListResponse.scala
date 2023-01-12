@@ -39,7 +39,8 @@ object LiveBroadcastListResponse {
     __obj.asInstanceOf[LiveBroadcastListResponse]
   }
   
-  extension [Self <: LiveBroadcastListResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LiveBroadcastListResponse] (val x: Self) extends AnyVal {
     
     inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     

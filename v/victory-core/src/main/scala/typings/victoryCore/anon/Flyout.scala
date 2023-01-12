@@ -21,7 +21,8 @@ object Flyout {
     __obj.asInstanceOf[Flyout]
   }
   
-  extension [Self <: Flyout](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Flyout] (val x: Self) extends AnyVal {
     
     inline def setData(value: VictoryStyleObject): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

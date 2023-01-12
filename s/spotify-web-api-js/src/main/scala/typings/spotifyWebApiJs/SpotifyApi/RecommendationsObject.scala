@@ -21,7 +21,8 @@ object RecommendationsObject {
     __obj.asInstanceOf[RecommendationsObject]
   }
   
-  extension [Self <: RecommendationsObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecommendationsObject] (val x: Self) extends AnyVal {
     
     inline def setSeeds(value: js.Array[RecommendationsSeedObject]): Self = StObject.set(x, "seeds", value.asInstanceOf[js.Any])
     

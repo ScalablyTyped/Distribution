@@ -19,7 +19,8 @@ object GetWeRunDataSuccessCallbackResult {
     __obj.asInstanceOf[GetWeRunDataSuccessCallbackResult]
   }
   
-  extension [Self <: GetWeRunDataSuccessCallbackResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetWeRunDataSuccessCallbackResult] (val x: Self) extends AnyVal {
     
     inline def setEncryptedData(value: String): Self = StObject.set(x, "encryptedData", value.asInstanceOf[js.Any])
     

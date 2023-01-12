@@ -52,7 +52,8 @@ object GroupLabelDisplay {
     __obj.asInstanceOf[GroupLabelDisplay]
   }
   
-  extension [Self <: GroupLabelDisplay](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GroupLabelDisplay] (val x: Self) extends AnyVal {
     
     inline def setGroupLabelDisplay(value: node | off | header): Self = StObject.set(x, "groupLabelDisplay", value.asInstanceOf[js.Any])
     

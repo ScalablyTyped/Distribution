@@ -16,7 +16,8 @@ object Dialog {
     __obj.asInstanceOf[Dialog]
   }
   
-  extension [Self <: Dialog](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Dialog] (val x: Self) extends AnyVal {
     
     inline def setBody(value: GoogleAppsCardV1Card): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

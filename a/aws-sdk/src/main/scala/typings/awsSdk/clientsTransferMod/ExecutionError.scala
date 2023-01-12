@@ -23,7 +23,8 @@ object ExecutionError {
     __obj.asInstanceOf[ExecutionError]
   }
   
-  extension [Self <: ExecutionError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExecutionError] (val x: Self) extends AnyVal {
     
     inline def setMessage(value: ExecutionErrorMessage): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
     

@@ -53,7 +53,8 @@ object DartId {
     __obj.asInstanceOf[DartId]
   }
   
-  extension [Self <: DartId](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DartId] (val x: Self) extends AnyVal {
     
     inline def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
     

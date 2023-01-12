@@ -98,7 +98,8 @@ object libToastStyleIndexDotnativeMod {
       __obj.asInstanceOf[IToastStyle]
     }
     
-    extension [Self <: IToastStyle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IToastStyle] (val x: Self) extends AnyVal {
       
       inline def setCentering(value: ViewStyle): Self = StObject.set(x, "centering", value.asInstanceOf[js.Any])
       

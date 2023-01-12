@@ -16,7 +16,8 @@ object ContextBridge {
     __obj.asInstanceOf[ContextBridge]
   }
   
-  extension [Self <: ContextBridge](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContextBridge] (val x: Self) extends AnyVal {
     
     inline def setExposeInMainWorld(value: (String, Any) => Unit): Self = StObject.set(x, "exposeInMainWorld", js.Any.fromFunction2(value))
   }

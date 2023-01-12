@@ -18,7 +18,8 @@ object Classes {
     __obj.asInstanceOf[Classes[StylesOrClassKey]]
   }
   
-  extension [Self <: Classes[?], StylesOrClassKey /* <: String | (Styles[Any, Any, Any]) */](x: Self & Classes[StylesOrClassKey]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Classes[?], StylesOrClassKey /* <: String | (Styles[Any, Any, Any]) */] (val x: Self & Classes[StylesOrClassKey]) extends AnyVal {
     
     inline def setClasses(value: ClassNameMap[ClassKeyOfStyles[StylesOrClassKey]]): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
   }

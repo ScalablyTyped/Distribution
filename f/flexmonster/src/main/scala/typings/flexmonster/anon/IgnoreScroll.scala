@@ -19,7 +19,8 @@ object IgnoreScroll {
     __obj.asInstanceOf[IgnoreScroll]
   }
   
-  extension [Self <: IgnoreScroll](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgnoreScroll] (val x: Self) extends AnyVal {
     
     inline def setIgnoreScroll(value: Boolean): Self = StObject.set(x, "ignoreScroll", value.asInstanceOf[js.Any])
     

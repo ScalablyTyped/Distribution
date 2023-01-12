@@ -62,7 +62,8 @@ object hintConfig {
     __obj.asInstanceOf[hintConfig]
   }
   
-  extension [Self <: hintConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: hintConfig] (val x: Self) extends AnyVal {
     
     inline def setAnimate(value: Boolean | obj): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     

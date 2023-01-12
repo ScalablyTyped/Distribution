@@ -344,7 +344,8 @@ object mod {
       __obj.asInstanceOf[CookieOptions]
     }
     
-    extension [Self <: CookieOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CookieOptions] (val x: Self) extends AnyVal {
       
       inline def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
       
@@ -467,7 +468,8 @@ object mod {
       __obj.asInstanceOf[IRoute]
     }
     
-    extension [Self <: IRoute](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IRoute] (val x: Self) extends AnyVal {
       
       inline def setAll(value: IRouterHandler[IRoute]): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
       
@@ -612,7 +614,8 @@ object mod {
       __obj.asInstanceOf[MediaType]
     }
     
-    extension [Self <: MediaType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MediaType] (val x: Self) extends AnyVal {
       
       inline def setQuality(value: Double): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
       

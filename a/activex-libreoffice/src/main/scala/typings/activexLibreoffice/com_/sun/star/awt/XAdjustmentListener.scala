@@ -28,7 +28,8 @@ object XAdjustmentListener {
     __obj.asInstanceOf[XAdjustmentListener]
   }
   
-  extension [Self <: XAdjustmentListener](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XAdjustmentListener] (val x: Self) extends AnyVal {
     
     inline def setAdjustmentValueChanged(value: AdjustmentEvent => Unit): Self = StObject.set(x, "adjustmentValueChanged", js.Any.fromFunction1(value))
   }

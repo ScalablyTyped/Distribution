@@ -56,7 +56,8 @@ object MeshRef {
     __obj.asInstanceOf[MeshRef]
   }
   
-  extension [Self <: MeshRef](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MeshRef] (val x: Self) extends AnyVal {
     
     inline def setArn(value: Arn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     

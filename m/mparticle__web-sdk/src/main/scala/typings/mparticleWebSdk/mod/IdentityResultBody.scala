@@ -23,7 +23,8 @@ object IdentityResultBody {
     __obj.asInstanceOf[IdentityResultBody]
   }
   
-  extension [Self <: IdentityResultBody](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IdentityResultBody] (val x: Self) extends AnyVal {
     
     inline def setContext(value: String): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     

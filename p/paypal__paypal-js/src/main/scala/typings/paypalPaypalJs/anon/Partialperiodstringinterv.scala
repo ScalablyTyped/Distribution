@@ -22,7 +22,8 @@ object Partialperiodstringinterv {
     __obj.asInstanceOf[Partialperiodstringinterv]
   }
   
-  extension [Self <: Partialperiodstringinterv](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Partialperiodstringinterv] (val x: Self) extends AnyVal {
     
     inline def setInterval_duration(value: String): Self = StObject.set(x, "interval_duration", value.asInstanceOf[js.Any])
     

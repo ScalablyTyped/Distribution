@@ -56,7 +56,8 @@ object ApiScalarsAnnotations {
     __obj.asInstanceOf[ApiScalarsAnnotations]
   }
   
-  extension [Self <: ApiScalarsAnnotations](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApiScalarsAnnotations] (val x: Self) extends AnyVal {
     
     inline def setBaseUri(value: () => js.Array[AnnotationRef]): Self = StObject.set(x, "baseUri", js.Any.fromFunction0(value))
     

@@ -23,7 +23,8 @@ object AssetSourceEntry {
     __obj.asInstanceOf[AssetSourceEntry]
   }
   
-  extension [Self <: AssetSourceEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssetSourceEntry] (val x: Self) extends AnyVal {
     
     inline def setBucket(value: string): Self = StObject.set(x, "Bucket", value.asInstanceOf[js.Any])
     

@@ -131,7 +131,8 @@ object R3DirectiveMetadata {
     __obj.asInstanceOf[R3DirectiveMetadata]
   }
   
-  extension [Self <: R3DirectiveMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: R3DirectiveMetadata] (val x: Self) extends AnyVal {
     
     inline def setDeps(value: js.Array[R3DependencyMetadata] | invalid): Self = StObject.set(x, "deps", value.asInstanceOf[js.Any])
     

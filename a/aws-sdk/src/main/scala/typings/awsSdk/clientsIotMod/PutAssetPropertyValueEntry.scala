@@ -38,7 +38,8 @@ object PutAssetPropertyValueEntry {
     __obj.asInstanceOf[PutAssetPropertyValueEntry]
   }
   
-  extension [Self <: PutAssetPropertyValueEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutAssetPropertyValueEntry] (val x: Self) extends AnyVal {
     
     inline def setAssetId(value: AssetId): Self = StObject.set(x, "assetId", value.asInstanceOf[js.Any])
     

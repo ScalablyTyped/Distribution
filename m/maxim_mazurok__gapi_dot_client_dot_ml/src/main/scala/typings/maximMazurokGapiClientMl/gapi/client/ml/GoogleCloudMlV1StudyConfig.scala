@@ -25,7 +25,8 @@ object GoogleCloudMlV1StudyConfig {
     __obj.asInstanceOf[GoogleCloudMlV1StudyConfig]
   }
   
-  extension [Self <: GoogleCloudMlV1StudyConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudMlV1StudyConfig] (val x: Self) extends AnyVal {
     
     inline def setAlgorithm(value: String): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
     

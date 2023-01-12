@@ -22,7 +22,8 @@ object InputStreamOverStream {
     __obj.asInstanceOf[InputStreamOverStream]
   }
   
-  extension [Self <: InputStreamOverStream](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InputStreamOverStream] (val x: Self) extends AnyVal {
     
     inline def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
   }

@@ -56,7 +56,8 @@ object anon {
       __obj.asInstanceOf[AttemptsMade[T]]
     }
     
-    extension [Self <: AttemptsMade[?], T](x: Self & AttemptsMade[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AttemptsMade[?], T] (val x: Self & AttemptsMade[T]) extends AnyVal {
       
       inline def setAttemptsMade(value: Double): Self = StObject.set(x, "attemptsMade", value.asInstanceOf[js.Any])
       
@@ -107,7 +108,8 @@ object anon {
       __obj.asInstanceOf[Count]
     }
     
-    extension [Self <: Count](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Count] (val x: Self) extends AnyVal {
       
       inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       
@@ -154,7 +156,8 @@ object anon {
       __obj.asInstanceOf[CronRepeatOptionsjobIdJob]
     }
     
-    extension [Self <: CronRepeatOptionsjobIdJob](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CronRepeatOptionsjobIdJob] (val x: Self) extends AnyVal {
       
       inline def setCron(value: String): Self = StObject.set(x, "cron", value.asInstanceOf[js.Any])
       
@@ -195,7 +198,8 @@ object anon {
       __obj.asInstanceOf[Data[T]]
     }
     
-    extension [Self <: Data[?], T](x: Self & Data[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Data[?], T] (val x: Self & Data[T]) extends AnyVal {
       
       inline def setData(value: T): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -241,7 +245,8 @@ object anon {
       __obj.asInstanceOf[EveryRepeatOptionsjobIdJo]
     }
     
-    extension [Self <: EveryRepeatOptionsjobIdJo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EveryRepeatOptionsjobIdJo] (val x: Self) extends AnyVal {
       
       inline def setEndDate(value: js.Date | String | Double): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
       
@@ -274,7 +279,8 @@ object anon {
       __obj.asInstanceOf[Force]
     }
     
-    extension [Self <: Force](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Force] (val x: Self) extends AnyVal {
       
       inline def setForce(value: Boolean): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
     }
@@ -291,7 +297,8 @@ object anon {
       __obj.asInstanceOf[Message]
     }
     
-    extension [Self <: Message](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Message] (val x: Self) extends AnyVal {
       
       inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     }
@@ -329,7 +336,8 @@ object anon {
       __obj.asInstanceOf[OmitJobOptionsrepeat]
     }
     
-    extension [Self <: OmitJobOptionsrepeat](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OmitJobOptionsrepeat] (val x: Self) extends AnyVal {
       
       inline def setAttempts(value: Double): Self = StObject.set(x, "attempts", value.asInstanceOf[js.Any])
       

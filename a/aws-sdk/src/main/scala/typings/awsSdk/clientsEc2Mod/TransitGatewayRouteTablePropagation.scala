@@ -38,7 +38,8 @@ object TransitGatewayRouteTablePropagation {
     __obj.asInstanceOf[TransitGatewayRouteTablePropagation]
   }
   
-  extension [Self <: TransitGatewayRouteTablePropagation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransitGatewayRouteTablePropagation] (val x: Self) extends AnyVal {
     
     inline def setResourceId(value: String): Self = StObject.set(x, "ResourceId", value.asInstanceOf[js.Any])
     

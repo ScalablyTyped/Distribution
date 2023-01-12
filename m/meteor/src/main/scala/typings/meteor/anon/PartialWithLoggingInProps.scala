@@ -16,7 +16,8 @@ object PartialWithLoggingInProps {
     __obj.asInstanceOf[PartialWithLoggingInProps]
   }
   
-  extension [Self <: PartialWithLoggingInProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialWithLoggingInProps] (val x: Self) extends AnyVal {
     
     inline def setLoggingIn(value: Boolean): Self = StObject.set(x, "loggingIn", value.asInstanceOf[js.Any])
     

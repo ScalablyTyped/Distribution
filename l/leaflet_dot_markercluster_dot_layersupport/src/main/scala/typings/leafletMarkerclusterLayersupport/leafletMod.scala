@@ -39,7 +39,8 @@ object leafletMod {
       __obj.asInstanceOf[MarkerClusterGroupLayerSupportOptions]
     }
     
-    extension [Self <: MarkerClusterGroupLayerSupportOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MarkerClusterGroupLayerSupportOptions] (val x: Self) extends AnyVal {
       
       inline def setSingleAddRemoveBufferDuration(value: Double): Self = StObject.set(x, "singleAddRemoveBufferDuration", value.asInstanceOf[js.Any])
     }

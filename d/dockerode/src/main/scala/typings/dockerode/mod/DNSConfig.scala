@@ -19,7 +19,8 @@ object DNSConfig {
     __obj.asInstanceOf[DNSConfig]
   }
   
-  extension [Self <: DNSConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DNSConfig] (val x: Self) extends AnyVal {
     
     inline def setNameservers(value: js.Array[String]): Self = StObject.set(x, "Nameservers", value.asInstanceOf[js.Any])
     

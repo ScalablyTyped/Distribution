@@ -17,7 +17,8 @@ object anon {
       __obj.asInstanceOf[SearchPath]
     }
     
-    extension [Self <: SearchPath](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SearchPath] (val x: Self) extends AnyVal {
       
       inline def setSearchPath(value: String): Self = StObject.set(x, "searchPath", value.asInstanceOf[js.Any])
       

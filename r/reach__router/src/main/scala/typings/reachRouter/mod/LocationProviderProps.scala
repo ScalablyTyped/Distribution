@@ -18,7 +18,8 @@ object LocationProviderProps {
     __obj.asInstanceOf[LocationProviderProps]
   }
   
-  extension [Self <: LocationProviderProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LocationProviderProps] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: ReactNode | LocationProviderRenderFn): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

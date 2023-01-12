@@ -17,7 +17,8 @@ object AlignItemsFlexDirection {
     __obj.asInstanceOf[AlignItemsFlexDirection]
   }
   
-  extension [Self <: AlignItemsFlexDirection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AlignItemsFlexDirection] (val x: Self) extends AnyVal {
     
     inline def setAlignItems(value: String): Self = StObject.set(x, "alignItems", value.asInstanceOf[js.Any])
     

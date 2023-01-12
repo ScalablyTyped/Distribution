@@ -27,7 +27,8 @@ object distSrcGeneralDistComponentsAutomationsFilledMod extends Shortcut {
       __obj.asInstanceOf[AutomationsFilledProps]
     }
     
-    extension [Self <: AutomationsFilledProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AutomationsFilledProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

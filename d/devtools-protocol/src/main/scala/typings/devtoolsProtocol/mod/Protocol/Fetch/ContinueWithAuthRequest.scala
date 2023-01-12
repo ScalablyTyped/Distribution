@@ -23,7 +23,8 @@ object ContinueWithAuthRequest {
     __obj.asInstanceOf[ContinueWithAuthRequest]
   }
   
-  extension [Self <: ContinueWithAuthRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContinueWithAuthRequest] (val x: Self) extends AnyVal {
     
     inline def setAuthChallengeResponse(value: AuthChallengeResponse): Self = StObject.set(x, "authChallengeResponse", value.asInstanceOf[js.Any])
     

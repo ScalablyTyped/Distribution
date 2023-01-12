@@ -28,7 +28,8 @@ object PropertyFilter {
     __obj.asInstanceOf[PropertyFilter]
   }
   
-  extension [Self <: PropertyFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PropertyFilter] (val x: Self) extends AnyVal {
     
     inline def setOperator(value: String): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
     

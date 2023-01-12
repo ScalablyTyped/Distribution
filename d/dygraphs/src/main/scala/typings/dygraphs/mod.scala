@@ -738,7 +738,8 @@ object mod {
         __obj.asInstanceOf[Annotation]
       }
       
-      extension [Self <: Annotation](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Annotation] (val x: Self) extends AnyVal {
         
         inline def setAttachAtBottom(value: Boolean): Self = StObject.set(x, "attachAtBottom", value.asInstanceOf[js.Any])
         
@@ -847,7 +848,8 @@ object mod {
         __obj.asInstanceOf[Area]
       }
       
-      extension [Self <: Area](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Area] (val x: Self) extends AnyVal {
         
         inline def setH(value: Double): Self = StObject.set(x, "h", value.asInstanceOf[js.Any])
         
@@ -933,7 +935,8 @@ object mod {
         __obj.asInstanceOf[DataHandler]
       }
       
-      extension [Self <: DataHandler](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: DataHandler] (val x: Self) extends AnyVal {
         
         inline def setExtractSeries(value: (ReadonlyDygraph, Any, Any) => Any): Self = StObject.set(x, "extractSeries", js.Any.fromFunction3(value))
         
@@ -976,7 +979,8 @@ object mod {
         __obj.asInstanceOf[LegendData]
       }
       
-      extension [Self <: LegendData](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: LegendData] (val x: Self) extends AnyVal {
         
         inline def setDygraph(value: Dygraph): Self = StObject.set(x, "dygraph", value.asInstanceOf[js.Any])
         
@@ -1648,7 +1652,8 @@ object mod {
         __obj.asInstanceOf[Options]
       }
       
-      extension [Self <: Options](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
         
         inline def setAnimatedZooms(value: Boolean): Self = StObject.set(x, "animatedZooms", value.asInstanceOf[js.Any])
         
@@ -2382,7 +2387,8 @@ object mod {
         __obj.asInstanceOf[PerAxisOptions]
       }
       
-      extension [Self <: PerAxisOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: PerAxisOptions] (val x: Self) extends AnyVal {
         
         inline def setAxisLabelFontSize(value: Double): Self = StObject.set(x, "axisLabelFontSize", value.asInstanceOf[js.Any])
         
@@ -2634,7 +2640,8 @@ object mod {
         __obj.asInstanceOf[PerSeriesOptions]
       }
       
-      extension [Self <: PerSeriesOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: PerSeriesOptions] (val x: Self) extends AnyVal {
         
         inline def setAxis(value: y1 | y2 | _empty): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
         
@@ -2764,7 +2771,8 @@ object mod {
         __obj.asInstanceOf[Point]
       }
       
-      extension [Self <: Point](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Point] (val x: Self) extends AnyVal {
         
         inline def setAnnotation(value: Annotation): Self = StObject.set(x, "annotation", value.asInstanceOf[js.Any])
         
@@ -2874,7 +2882,8 @@ object mod {
         __obj.asInstanceOf[SeriesLegendData]
       }
       
-      extension [Self <: SeriesLegendData](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SeriesLegendData] (val x: Self) extends AnyVal {
         
         inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
         
@@ -2913,7 +2922,8 @@ object mod {
         __obj.asInstanceOf[SeriesProperties]
       }
       
-      extension [Self <: SeriesProperties](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SeriesProperties] (val x: Self) extends AnyVal {
         
         inline def setAxis(value: Double): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
         

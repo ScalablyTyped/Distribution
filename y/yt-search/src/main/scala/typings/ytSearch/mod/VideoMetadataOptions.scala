@@ -21,7 +21,8 @@ object VideoMetadataOptions {
     __obj.asInstanceOf[VideoMetadataOptions]
   }
   
-  extension [Self <: VideoMetadataOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VideoMetadataOptions] (val x: Self) extends AnyVal {
     
     inline def setGl(value: String): Self = StObject.set(x, "gl", value.asInstanceOf[js.Any])
     

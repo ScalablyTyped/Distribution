@@ -68,7 +68,8 @@ object ProductViewSummary {
     __obj.asInstanceOf[ProductViewSummary]
   }
   
-  extension [Self <: ProductViewSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProductViewSummary] (val x: Self) extends AnyVal {
     
     inline def setDistributor(value: ProductViewDistributor): Self = StObject.set(x, "Distributor", value.asInstanceOf[js.Any])
     

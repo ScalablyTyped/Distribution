@@ -30,7 +30,8 @@ object sdkUrlMod {
     @js.native
     def apply(uri: String): DataURL = js.native
     
-    extension [Self <: DataURL](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DataURL] (val x: Self) extends AnyVal {
       
       inline def setBase64(value: String): Self = StObject.set(x, "base64", value.asInstanceOf[js.Any])
       

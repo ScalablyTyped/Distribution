@@ -20,7 +20,8 @@ object GraphQLArgumentConfig {
     __obj.asInstanceOf[GraphQLArgumentConfig]
   }
   
-  extension [Self <: GraphQLArgumentConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GraphQLArgumentConfig] (val x: Self) extends AnyVal {
     
     inline def setDefaultValue(value: Any): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
     

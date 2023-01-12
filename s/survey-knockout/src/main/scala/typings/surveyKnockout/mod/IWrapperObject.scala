@@ -17,7 +17,8 @@ object IWrapperObject {
     __obj.asInstanceOf[IWrapperObject]
   }
   
-  extension [Self <: IWrapperObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IWrapperObject] (val x: Self) extends AnyVal {
     
     inline def setGetClassNameProperty(value: () => String): Self = StObject.set(x, "getClassNameProperty", js.Any.fromFunction0(value))
     

@@ -37,7 +37,8 @@ object mod {
       __obj.asInstanceOf[ChainOptions]
     }
     
-    extension [Self <: ChainOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChainOptions] (val x: Self) extends AnyVal {
       
       inline def setSkipEvents(value: Boolean): Self = StObject.set(x, "skipEvents", value.asInstanceOf[js.Any])
       

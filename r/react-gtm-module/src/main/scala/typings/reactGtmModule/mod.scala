@@ -36,7 +36,8 @@ object mod {
       __obj.asInstanceOf[DataLayerArgs]
     }
     
-    extension [Self <: DataLayerArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DataLayerArgs] (val x: Self) extends AnyVal {
       
       inline def setDataLayer(value: js.Object): Self = StObject.set(x, "dataLayer", value.asInstanceOf[js.Any])
       
@@ -79,7 +80,8 @@ object mod {
       __obj.asInstanceOf[TagManagerArgs]
     }
     
-    extension [Self <: TagManagerArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TagManagerArgs] (val x: Self) extends AnyVal {
       
       inline def setAuth(value: String): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
       

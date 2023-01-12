@@ -21,7 +21,8 @@ object TextRotation {
     __obj.asInstanceOf[TextRotation]
   }
   
-  extension [Self <: TextRotation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextRotation] (val x: Self) extends AnyVal {
     
     inline def setGetDegrees(value: () => Integer): Self = StObject.set(x, "getDegrees", js.Any.fromFunction0(value))
     

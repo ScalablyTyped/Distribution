@@ -97,7 +97,8 @@ object IAllFilters {
     __obj.asInstanceOf[IAllFilters]
   }
   
-  extension [Self <: IAllFilters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IAllFilters] (val x: Self) extends AnyVal {
     
     inline def setBaseFilter(value: Instantiable): Self = StObject.set(x, "BaseFilter", value.asInstanceOf[js.Any])
     

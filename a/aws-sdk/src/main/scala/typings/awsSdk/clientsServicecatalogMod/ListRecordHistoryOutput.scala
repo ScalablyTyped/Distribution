@@ -23,7 +23,8 @@ object ListRecordHistoryOutput {
     __obj.asInstanceOf[ListRecordHistoryOutput]
   }
   
-  extension [Self <: ListRecordHistoryOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListRecordHistoryOutput] (val x: Self) extends AnyVal {
     
     inline def setNextPageToken(value: PageToken): Self = StObject.set(x, "NextPageToken", value.asInstanceOf[js.Any])
     

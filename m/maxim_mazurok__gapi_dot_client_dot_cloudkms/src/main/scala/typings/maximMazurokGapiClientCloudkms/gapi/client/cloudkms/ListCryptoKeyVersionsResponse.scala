@@ -22,7 +22,8 @@ object ListCryptoKeyVersionsResponse {
     __obj.asInstanceOf[ListCryptoKeyVersionsResponse]
   }
   
-  extension [Self <: ListCryptoKeyVersionsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListCryptoKeyVersionsResponse] (val x: Self) extends AnyVal {
     
     inline def setCryptoKeyVersions(value: js.Array[CryptoKeyVersion]): Self = StObject.set(x, "cryptoKeyVersions", value.asInstanceOf[js.Any])
     

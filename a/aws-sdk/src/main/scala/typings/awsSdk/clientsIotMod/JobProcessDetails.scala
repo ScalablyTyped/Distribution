@@ -58,7 +58,8 @@ object JobProcessDetails {
     __obj.asInstanceOf[JobProcessDetails]
   }
   
-  extension [Self <: JobProcessDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JobProcessDetails] (val x: Self) extends AnyVal {
     
     inline def setNumberOfCanceledThings(value: CanceledThings): Self = StObject.set(x, "numberOfCanceledThings", value.asInstanceOf[js.Any])
     

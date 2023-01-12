@@ -23,7 +23,8 @@ object RouterNatLogConfig {
     __obj.asInstanceOf[RouterNatLogConfig]
   }
   
-  extension [Self <: RouterNatLogConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RouterNatLogConfig] (val x: Self) extends AnyVal {
     
     inline def setEnable(value: Boolean): Self = StObject.set(x, "enable", value.asInstanceOf[js.Any])
     

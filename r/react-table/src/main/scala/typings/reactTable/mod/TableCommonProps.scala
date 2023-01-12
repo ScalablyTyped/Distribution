@@ -20,7 +20,8 @@ object TableCommonProps {
     __obj.asInstanceOf[TableCommonProps]
   }
   
-  extension [Self <: TableCommonProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TableCommonProps] (val x: Self) extends AnyVal {
     
     inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     

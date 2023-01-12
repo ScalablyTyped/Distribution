@@ -31,7 +31,8 @@ object typesUpdateGcmChannelOutputMod {
       __obj.asInstanceOf[UpdateGcmChannelOutput]
     }
     
-    extension [Self <: UpdateGcmChannelOutput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UpdateGcmChannelOutput] (val x: Self) extends AnyVal {
       
       inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
       

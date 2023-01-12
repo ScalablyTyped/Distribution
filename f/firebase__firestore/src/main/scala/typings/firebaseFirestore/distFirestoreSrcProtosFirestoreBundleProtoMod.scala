@@ -30,7 +30,8 @@ object distFirestoreSrcProtosFirestoreBundleProtoMod {
       __obj.asInstanceOf[BundleElement]
     }
     
-    extension [Self <: BundleElement](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BundleElement] (val x: Self) extends AnyVal {
       
       inline def setDocument(value: Document): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
       
@@ -82,7 +83,8 @@ object distFirestoreSrcProtosFirestoreBundleProtoMod {
       __obj.asInstanceOf[BundleMetadata]
     }
     
-    extension [Self <: BundleMetadata](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BundleMetadata] (val x: Self) extends AnyVal {
       
       inline def setCreateTime(value: Timestamp): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
       
@@ -137,7 +139,8 @@ object distFirestoreSrcProtosFirestoreBundleProtoMod {
       __obj.asInstanceOf[BundledDocumentMetadata]
     }
     
-    extension [Self <: BundledDocumentMetadata](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BundledDocumentMetadata] (val x: Self) extends AnyVal {
       
       inline def setExists(value: Boolean): Self = StObject.set(x, "exists", value.asInstanceOf[js.Any])
       
@@ -183,7 +186,8 @@ object distFirestoreSrcProtosFirestoreBundleProtoMod {
       __obj.asInstanceOf[BundledQuery]
     }
     
-    extension [Self <: BundledQuery](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BundledQuery] (val x: Self) extends AnyVal {
       
       inline def setLimitType(value: LimitType): Self = StObject.set(x, "limitType", value.asInstanceOf[js.Any])
       
@@ -235,7 +239,8 @@ object distFirestoreSrcProtosFirestoreBundleProtoMod {
       __obj.asInstanceOf[NamedQuery]
     }
     
-    extension [Self <: NamedQuery](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NamedQuery] (val x: Self) extends AnyVal {
       
       inline def setBundledQuery(value: BundledQuery): Self = StObject.set(x, "bundledQuery", value.asInstanceOf[js.Any])
       

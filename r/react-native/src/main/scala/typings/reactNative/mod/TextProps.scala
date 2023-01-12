@@ -115,7 +115,8 @@ object TextProps {
     __obj.asInstanceOf[TextProps]
   }
   
-  extension [Self <: TextProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextProps] (val x: Self) extends AnyVal {
     
     inline def setAllowFontScaling(value: Boolean): Self = StObject.set(x, "allowFontScaling", value.asInstanceOf[js.Any])
     

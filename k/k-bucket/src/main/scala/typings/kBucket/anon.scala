@@ -30,7 +30,8 @@ object anon {
       __obj.asInstanceOf[Arbiter[T]]
     }
     
-    extension [Self <: Arbiter[?], T /* <: Contact */](x: Self & Arbiter[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Arbiter[?], T /* <: Contact */] (val x: Self & Arbiter[T]) extends AnyVal {
       
       inline def setArbiter(value: (T, T) => T): Self = StObject.set(x, "arbiter", js.Any.fromFunction2(value))
       

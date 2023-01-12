@@ -18,7 +18,8 @@ object distSrcCoreDependencyContainerTypesMod {
       __obj.asInstanceOf[IOptions]
     }
     
-    extension [Self <: IOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
       
       inline def setLifetime(value: Lifetime): Self = StObject.set(x, "lifetime", value.asInstanceOf[js.Any])
       

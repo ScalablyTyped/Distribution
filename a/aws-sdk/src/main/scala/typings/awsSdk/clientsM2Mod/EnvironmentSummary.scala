@@ -62,7 +62,8 @@ object EnvironmentSummary {
     __obj.asInstanceOf[EnvironmentSummary]
   }
   
-  extension [Self <: EnvironmentSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnvironmentSummary] (val x: Self) extends AnyVal {
     
     inline def setCreationTime(value: js.Date): Self = StObject.set(x, "creationTime", value.asInstanceOf[js.Any])
     

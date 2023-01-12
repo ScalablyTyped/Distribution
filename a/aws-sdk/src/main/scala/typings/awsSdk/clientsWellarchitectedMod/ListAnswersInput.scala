@@ -28,7 +28,8 @@ object ListAnswersInput {
     __obj.asInstanceOf[ListAnswersInput]
   }
   
-  extension [Self <: ListAnswersInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListAnswersInput] (val x: Self) extends AnyVal {
     
     inline def setLensAlias(value: LensAlias): Self = StObject.set(x, "LensAlias", value.asInstanceOf[js.Any])
     

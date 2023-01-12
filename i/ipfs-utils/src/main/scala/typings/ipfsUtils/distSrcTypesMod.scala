@@ -55,7 +55,8 @@ object distSrcTypesMod {
       __obj.asInstanceOf[ExtendedResponse]
     }
     
-    extension [Self <: ExtendedResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExtendedResponse] (val x: Self) extends AnyVal {
       
       inline def setIterator(value: () => AsyncGenerator[js.typedarray.Uint8Array, Unit, Unit]): Self = StObject.set(x, "iterator", js.Any.fromFunction0(value))
       
@@ -125,7 +126,8 @@ object distSrcTypesMod {
       __obj.asInstanceOf[FetchOptions]
     }
     
-    extension [Self <: FetchOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FetchOptions] (val x: Self) extends AnyVal {
       
       inline def setBody(value: BodyInit | Readable): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
@@ -241,7 +243,8 @@ object distSrcTypesMod {
       __obj.asInstanceOf[HTTPOptions]
     }
     
-    extension [Self <: HTTPOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HTTPOptions] (val x: Self) extends AnyVal {
       
       inline def setBase(value: String): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
       
@@ -288,7 +291,8 @@ object distSrcTypesMod {
       __obj.asInstanceOf[ProgressStatus]
     }
     
-    extension [Self <: ProgressStatus](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProgressStatus] (val x: Self) extends AnyVal {
       
       inline def setLengthComputable(value: Boolean): Self = StObject.set(x, "lengthComputable", value.asInstanceOf[js.Any])
       

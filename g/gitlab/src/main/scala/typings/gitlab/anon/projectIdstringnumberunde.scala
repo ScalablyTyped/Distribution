@@ -29,7 +29,8 @@ object projectIdstringnumberunde {
     __obj.asInstanceOf[projectIdstringnumberunde]
   }
   
-  extension [Self <: projectIdstringnumberunde](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: projectIdstringnumberunde] (val x: Self) extends AnyVal {
     
     inline def setMaxPages(value: Double): Self = StObject.set(x, "maxPages", value.asInstanceOf[js.Any])
     

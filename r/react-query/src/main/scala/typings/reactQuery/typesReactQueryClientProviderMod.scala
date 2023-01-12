@@ -33,7 +33,8 @@ object typesReactQueryClientProviderMod {
       __obj.asInstanceOf[QueryClientProviderProps]
     }
     
-    extension [Self <: QueryClientProviderProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QueryClientProviderProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -60,7 +61,8 @@ object typesReactQueryClientProviderMod {
         __obj.asInstanceOf[Window]
       }
       
-      extension [Self <: Window](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Window] (val x: Self) extends AnyVal {
         
         inline def setReactQueryClientContext(value: Context[js.UndefOr[QueryClient]]): Self = StObject.set(x, "ReactQueryClientContext", value.asInstanceOf[js.Any])
         

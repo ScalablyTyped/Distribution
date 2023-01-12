@@ -22,7 +22,8 @@ object LabelLayoutPath {
     __obj.asInstanceOf[LabelLayoutPath]
   }
   
-  extension [Self <: LabelLayoutPath](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LabelLayoutPath] (val x: Self) extends AnyVal {
     
     inline def setLabelLayout(
       value: (DvtDiagramLayoutContext, DvtDiagramLayoutContextLink) => typings.oracleOraclejet.ojdiagramUtilsMod.LabelLayout

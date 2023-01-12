@@ -28,7 +28,8 @@ object builtTypesMod {
       __obj.asInstanceOf[CommandItem]
     }
     
-    extension [Self <: CommandItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommandItem] (val x: Self) extends AnyVal {
       
       inline def setCommand(value: Respondable): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
       
@@ -70,7 +71,8 @@ object builtTypesMod {
       __obj.asInstanceOf[Respondable]
     }
     
-    extension [Self <: Respondable](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Respondable] (val x: Self) extends AnyVal {
       
       inline def setArgs(value: js.Array[CommandParameter]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
@@ -99,7 +101,8 @@ object builtTypesMod {
       __obj.asInstanceOf[ScanStreamOptions]
     }
     
-    extension [Self <: ScanStreamOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScanStreamOptions] (val x: Self) extends AnyVal {
       
       inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       

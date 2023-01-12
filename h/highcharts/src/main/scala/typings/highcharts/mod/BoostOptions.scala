@@ -88,7 +88,8 @@ object BoostOptions {
     __obj.asInstanceOf[BoostOptions]
   }
   
-  extension [Self <: BoostOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BoostOptions] (val x: Self) extends AnyVal {
     
     inline def setAllowForce(value: Boolean): Self = StObject.set(x, "allowForce", value.asInstanceOf[js.Any])
     

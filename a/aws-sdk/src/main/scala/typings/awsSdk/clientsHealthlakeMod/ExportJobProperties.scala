@@ -64,7 +64,8 @@ object ExportJobProperties {
     __obj.asInstanceOf[ExportJobProperties]
   }
   
-  extension [Self <: ExportJobProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExportJobProperties] (val x: Self) extends AnyVal {
     
     inline def setDataAccessRoleArn(value: IamRoleArn): Self = StObject.set(x, "DataAccessRoleArn", value.asInstanceOf[js.Any])
     

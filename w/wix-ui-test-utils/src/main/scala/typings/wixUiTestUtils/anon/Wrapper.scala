@@ -18,7 +18,8 @@ object Wrapper {
     __obj.asInstanceOf[Wrapper]
   }
   
-  extension [Self <: Wrapper](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Wrapper] (val x: Self) extends AnyVal {
     
     inline def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
     

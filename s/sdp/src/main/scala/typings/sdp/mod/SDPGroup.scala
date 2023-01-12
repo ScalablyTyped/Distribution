@@ -17,7 +17,8 @@ object SDPGroup {
     __obj.asInstanceOf[SDPGroup]
   }
   
-  extension [Self <: SDPGroup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SDPGroup] (val x: Self) extends AnyVal {
     
     inline def setMids(value: js.Array[String]): Self = StObject.set(x, "mids", value.asInstanceOf[js.Any])
     

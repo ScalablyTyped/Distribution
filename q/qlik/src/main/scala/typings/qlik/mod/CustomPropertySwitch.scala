@@ -28,7 +28,8 @@ object CustomPropertySwitch {
     __obj.asInstanceOf[CustomPropertySwitch]
   }
   
-  extension [Self <: CustomPropertySwitch](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomPropertySwitch] (val x: Self) extends AnyVal {
     
     inline def setComponent(value: switch): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
     

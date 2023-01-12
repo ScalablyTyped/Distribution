@@ -22,7 +22,8 @@ object LineConfig {
     __obj.asInstanceOf[LineConfig]
   }
   
-  extension [Self <: LineConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LineConfig] (val x: Self) extends AnyVal {
     
     inline def setDash(value: js.Array[Double]): Self = StObject.set(x, "dash", value.asInstanceOf[js.Any])
     

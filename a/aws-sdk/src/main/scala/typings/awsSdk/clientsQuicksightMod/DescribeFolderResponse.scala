@@ -28,7 +28,8 @@ object DescribeFolderResponse {
     __obj.asInstanceOf[DescribeFolderResponse]
   }
   
-  extension [Self <: DescribeFolderResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeFolderResponse] (val x: Self) extends AnyVal {
     
     inline def setFolder(value: Folder): Self = StObject.set(x, "Folder", value.asInstanceOf[js.Any])
     

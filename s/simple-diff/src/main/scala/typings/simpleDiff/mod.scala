@@ -44,7 +44,8 @@ object mod {
       __obj.asInstanceOf[AddEvent]
     }
     
-    extension [Self <: AddEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AddEvent] (val x: Self) extends AnyVal {
       
       inline def setNewPath(value: Path): Self = StObject.set(x, "newPath", value.asInstanceOf[js.Any])
       
@@ -88,7 +89,8 @@ object mod {
       __obj.asInstanceOf[AddItemEvent]
     }
     
-    extension [Self <: AddItemEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AddItemEvent] (val x: Self) extends AnyVal {
       
       inline def setCurIndex(value: `-1`): Self = StObject.set(x, "curIndex", value.asInstanceOf[js.Any])
       
@@ -132,7 +134,8 @@ object mod {
       __obj.asInstanceOf[ChangeEvent]
     }
     
-    extension [Self <: ChangeEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChangeEvent] (val x: Self) extends AnyVal {
       
       inline def setNewPath(value: Path): Self = StObject.set(x, "newPath", value.asInstanceOf[js.Any])
       
@@ -222,7 +225,8 @@ object mod {
       __obj.asInstanceOf[MoveItemEvent]
     }
     
-    extension [Self <: MoveItemEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MoveItemEvent] (val x: Self) extends AnyVal {
       
       inline def setCurIndex(value: Double): Self = StObject.set(x, "curIndex", value.asInstanceOf[js.Any])
       
@@ -282,7 +286,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setAddEvent(value: String): Self = StObject.set(x, "addEvent", value.asInstanceOf[js.Any])
       
@@ -368,7 +373,8 @@ object mod {
       __obj.asInstanceOf[RemoveEvent]
     }
     
-    extension [Self <: RemoveEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RemoveEvent] (val x: Self) extends AnyVal {
       
       inline def setNewPath(value: Path): Self = StObject.set(x, "newPath", value.asInstanceOf[js.Any])
       
@@ -412,7 +418,8 @@ object mod {
       __obj.asInstanceOf[RemoveItemEvent]
     }
     
-    extension [Self <: RemoveItemEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RemoveItemEvent] (val x: Self) extends AnyVal {
       
       inline def setCurIndex(value: Double): Self = StObject.set(x, "curIndex", value.asInstanceOf[js.Any])
       

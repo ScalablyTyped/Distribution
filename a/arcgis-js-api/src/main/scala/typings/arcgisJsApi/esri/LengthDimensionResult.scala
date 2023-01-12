@@ -32,7 +32,8 @@ object LengthDimensionResult {
     __obj.asInstanceOf[LengthDimensionResult]
   }
   
-  extension [Self <: LengthDimensionResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LengthDimensionResult] (val x: Self) extends AnyVal {
     
     inline def setDimension(value: LengthDimension): Self = StObject.set(x, "dimension", value.asInstanceOf[js.Any])
     

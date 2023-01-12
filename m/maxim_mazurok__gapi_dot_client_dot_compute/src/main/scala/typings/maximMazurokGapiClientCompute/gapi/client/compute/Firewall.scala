@@ -115,7 +115,8 @@ object Firewall {
     __obj.asInstanceOf[Firewall]
   }
   
-  extension [Self <: Firewall](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Firewall] (val x: Self) extends AnyVal {
     
     inline def setAllowed(value: js.Array[IPProtocol]): Self = StObject.set(x, "allowed", value.asInstanceOf[js.Any])
     

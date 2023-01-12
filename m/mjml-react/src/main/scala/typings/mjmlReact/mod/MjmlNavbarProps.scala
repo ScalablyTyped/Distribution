@@ -50,7 +50,8 @@ object MjmlNavbarProps {
     __obj.asInstanceOf[MjmlNavbarProps]
   }
   
-  extension [Self <: MjmlNavbarProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MjmlNavbarProps] (val x: Self) extends AnyVal {
     
     inline def setAlign(value: String): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     

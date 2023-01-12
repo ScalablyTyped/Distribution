@@ -30,7 +30,8 @@ object ParagraphUpdateData {
     __obj.asInstanceOf[ParagraphUpdateData]
   }
   
-  extension [Self <: ParagraphUpdateData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParagraphUpdateData] (val x: Self) extends AnyVal {
     
     inline def setImage(value: ImageUpdateData): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     

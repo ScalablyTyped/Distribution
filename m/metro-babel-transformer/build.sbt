@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "metro-babel-transformer"
-version := "0.66-dt-20211202Z-db5085"
+version := "0.66-dt-20211202Z-7a3f99"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

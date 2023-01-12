@@ -40,7 +40,8 @@ object libAlertMod {
       __obj.asInstanceOf[AlertProps]
     }
     
-    extension [Self <: AlertProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AlertProps] (val x: Self) extends AnyVal {
       
       inline def setBsClass(value: String): Self = StObject.set(x, "bsClass", value.asInstanceOf[js.Any])
       

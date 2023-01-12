@@ -55,7 +55,8 @@ object FindResultProperties {
     __obj.asInstanceOf[FindResultProperties]
   }
   
-  extension [Self <: FindResultProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FindResultProperties] (val x: Self) extends AnyVal {
     
     inline def setDisplayFieldName(value: String): Self = StObject.set(x, "displayFieldName", value.asInstanceOf[js.Any])
     

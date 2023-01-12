@@ -17,7 +17,8 @@ object BackButtonOptions {
     __obj.asInstanceOf[BackButtonOptions]
   }
   
-  extension [Self <: BackButtonOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BackButtonOptions] (val x: Self) extends AnyVal {
     
     inline def setClick(value: /* e */ BackButtonClickEvent => Unit): Self = StObject.set(x, "click", js.Any.fromFunction1(value))
     

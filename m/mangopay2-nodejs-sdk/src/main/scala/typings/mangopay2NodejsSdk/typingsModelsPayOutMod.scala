@@ -71,7 +71,8 @@ object typingsModelsPayOutMod {
         __obj.asInstanceOf[CheckPayOutEligibility]
       }
       
-      extension [Self <: CheckPayOutEligibility](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CheckPayOutEligibility] (val x: Self) extends AnyVal {
         
         inline def setAuthorId(value: String): Self = StObject.set(x, "AuthorId", value.asInstanceOf[js.Any])
         
@@ -106,7 +107,8 @@ object typingsModelsPayOutMod {
         __obj.asInstanceOf[CheckPayOutEligibilityData]
       }
       
-      extension [Self <: CheckPayOutEligibilityData](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CheckPayOutEligibilityData] (val x: Self) extends AnyVal {
         
         inline def setInstantPayout(value: InstantPayOutEligibilityData): Self = StObject.set(x, "InstantPayout", value.asInstanceOf[js.Any])
       }
@@ -170,7 +172,8 @@ object typingsModelsPayOutMod {
         __obj.asInstanceOf[CreatePayOut]
       }
       
-      extension [Self <: CreatePayOut](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CreatePayOut] (val x: Self) extends AnyVal {
         
         inline def setAuthorId(value: String): Self = StObject.set(x, "AuthorId", value.asInstanceOf[js.Any])
         
@@ -211,7 +214,8 @@ object typingsModelsPayOutMod {
         __obj.asInstanceOf[InstantPayOutEligibilityData]
       }
       
-      extension [Self <: InstantPayOutEligibilityData](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: InstantPayOutEligibilityData] (val x: Self) extends AnyVal {
         
         inline def setIsReachable(value: Boolean): Self = StObject.set(x, "IsReachable", value.asInstanceOf[js.Any])
         
@@ -296,7 +300,8 @@ object typingsModelsPayOutMod {
         __obj.asInstanceOf[PayOutData]
       }
       
-      extension [Self <: PayOutData](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: PayOutData] (val x: Self) extends AnyVal {
         
         inline def setAuthorId(value: String): Self = StObject.set(x, "AuthorId", value.asInstanceOf[js.Any])
         

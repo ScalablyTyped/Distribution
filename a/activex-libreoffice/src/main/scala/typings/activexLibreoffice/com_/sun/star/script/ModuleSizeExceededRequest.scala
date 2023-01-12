@@ -22,7 +22,8 @@ object ModuleSizeExceededRequest {
     __obj.asInstanceOf[ModuleSizeExceededRequest]
   }
   
-  extension [Self <: ModuleSizeExceededRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModuleSizeExceededRequest] (val x: Self) extends AnyVal {
     
     inline def setNames(value: SafeArray[String]): Self = StObject.set(x, "Names", value.asInstanceOf[js.Any])
   }

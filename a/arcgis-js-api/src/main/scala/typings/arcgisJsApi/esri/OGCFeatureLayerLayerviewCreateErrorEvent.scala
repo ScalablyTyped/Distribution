@@ -17,7 +17,8 @@ object OGCFeatureLayerLayerviewCreateErrorEvent {
     __obj.asInstanceOf[OGCFeatureLayerLayerviewCreateErrorEvent]
   }
   
-  extension [Self <: OGCFeatureLayerLayerviewCreateErrorEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OGCFeatureLayerLayerviewCreateErrorEvent] (val x: Self) extends AnyVal {
     
     inline def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     

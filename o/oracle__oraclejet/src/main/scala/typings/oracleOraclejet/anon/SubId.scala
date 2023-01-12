@@ -16,7 +16,8 @@ object SubId {
     __obj.asInstanceOf[SubId]
   }
   
-  extension [Self <: SubId](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubId] (val x: Self) extends AnyVal {
     
     inline def setSubId(value: `oj-datagrid-cell`): Self = StObject.set(x, "subId", value.asInstanceOf[js.Any])
   }

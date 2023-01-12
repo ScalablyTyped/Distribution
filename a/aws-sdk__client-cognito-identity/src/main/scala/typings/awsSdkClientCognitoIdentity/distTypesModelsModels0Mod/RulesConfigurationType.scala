@@ -19,7 +19,8 @@ object RulesConfigurationType {
     __obj.asInstanceOf[RulesConfigurationType]
   }
   
-  extension [Self <: RulesConfigurationType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RulesConfigurationType] (val x: Self) extends AnyVal {
     
     inline def setRules(value: js.Array[MappingRule]): Self = StObject.set(x, "Rules", value.asInstanceOf[js.Any])
     

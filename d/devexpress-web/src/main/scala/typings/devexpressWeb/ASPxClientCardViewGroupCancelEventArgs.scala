@@ -23,7 +23,8 @@ object ASPxClientCardViewGroupCancelEventArgs {
     __obj.asInstanceOf[ASPxClientCardViewGroupCancelEventArgs]
   }
   
-  extension [Self <: ASPxClientCardViewGroupCancelEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientCardViewGroupCancelEventArgs] (val x: Self) extends AnyVal {
     
     inline def setVisibleIndex(value: Double): Self = StObject.set(x, "visibleIndex", value.asInstanceOf[js.Any])
   }

@@ -15,7 +15,8 @@ object PreserveLeadingWhitespace {
     __obj.asInstanceOf[PreserveLeadingWhitespace]
   }
   
-  extension [Self <: PreserveLeadingWhitespace](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PreserveLeadingWhitespace] (val x: Self) extends AnyVal {
     
     inline def setPreserveLeadingWhitespace(value: Boolean): Self = StObject.set(x, "preserveLeadingWhitespace", value.asInstanceOf[js.Any])
     

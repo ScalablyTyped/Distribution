@@ -23,7 +23,8 @@ object Whisper {
     __obj.asInstanceOf[Whisper]
   }
   
-  extension [Self <: Whisper](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Whisper] (val x: Self) extends AnyVal {
     
     inline def setApp(value: String): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
     

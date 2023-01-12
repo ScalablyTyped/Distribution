@@ -165,7 +165,8 @@ object snackbarSnackbarMod {
       __obj.asInstanceOf[SnackbarOrigin]
     }
     
-    extension [Self <: SnackbarOrigin](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SnackbarOrigin] (val x: Self) extends AnyVal {
       
       inline def setHorizontal(value: left | center | right): Self = StObject.set(x, "horizontal", value.asInstanceOf[js.Any])
       
@@ -677,7 +678,8 @@ object snackbarSnackbarMod {
       __obj.asInstanceOf[SnackbarProps]
     }
     
-    extension [Self <: SnackbarProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SnackbarProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       

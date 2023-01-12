@@ -28,7 +28,8 @@ object MetricDestinationSummary {
     __obj.asInstanceOf[MetricDestinationSummary]
   }
   
-  extension [Self <: MetricDestinationSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MetricDestinationSummary] (val x: Self) extends AnyVal {
     
     inline def setDestination(value: MetricDestination): Self = StObject.set(x, "Destination", value.asInstanceOf[js.Any])
     

@@ -40,7 +40,8 @@ object CodeGenerationResults {
     __obj.asInstanceOf[CodeGenerationResults]
   }
   
-  extension [Self <: CodeGenerationResults](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CodeGenerationResults] (val x: Self) extends AnyVal {
     
     inline def setAdd(value: (Module, RuntimeSpec, CodeGenerationResult) => Unit): Self = StObject.set(x, "add", js.Any.fromFunction3(value))
     

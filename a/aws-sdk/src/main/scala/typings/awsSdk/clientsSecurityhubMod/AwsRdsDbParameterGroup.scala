@@ -23,7 +23,8 @@ object AwsRdsDbParameterGroup {
     __obj.asInstanceOf[AwsRdsDbParameterGroup]
   }
   
-  extension [Self <: AwsRdsDbParameterGroup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsRdsDbParameterGroup] (val x: Self) extends AnyVal {
     
     inline def setDbParameterGroupName(value: NonEmptyString): Self = StObject.set(x, "DbParameterGroupName", value.asInstanceOf[js.Any])
     

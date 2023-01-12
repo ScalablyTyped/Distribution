@@ -21,7 +21,8 @@ object anon {
       __obj.asInstanceOf[AutoCorrected]
     }
     
-    extension [Self <: AutoCorrected](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AutoCorrected] (val x: Self) extends AnyVal {
       
       inline def setAutoCorrected(value: Boolean): Self = StObject.set(x, "autoCorrected", value.asInstanceOf[js.Any])
       
@@ -44,7 +45,8 @@ object anon {
       __obj.asInstanceOf[DidYouMean]
     }
     
-    extension [Self <: DidYouMean](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DidYouMean] (val x: Self) extends AnyVal {
       
       inline def setDidYouMean(value: Boolean): Self = StObject.set(x, "didYouMean", value.asInstanceOf[js.Any])
       
@@ -65,7 +67,8 @@ object anon {
       __obj.asInstanceOf[Language]
     }
     
-    extension [Self <: Language](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Language] (val x: Self) extends AnyVal {
       
       inline def setLanguage(value: DidYouMean): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
       

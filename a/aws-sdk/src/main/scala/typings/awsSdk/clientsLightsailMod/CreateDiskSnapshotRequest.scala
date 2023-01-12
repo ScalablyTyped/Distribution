@@ -33,7 +33,8 @@ object CreateDiskSnapshotRequest {
     __obj.asInstanceOf[CreateDiskSnapshotRequest]
   }
   
-  extension [Self <: CreateDiskSnapshotRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateDiskSnapshotRequest] (val x: Self) extends AnyVal {
     
     inline def setDiskName(value: ResourceName): Self = StObject.set(x, "diskName", value.asInstanceOf[js.Any])
     

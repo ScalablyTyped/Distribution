@@ -15,7 +15,8 @@ object GetSmsChannelResponse {
     __obj.asInstanceOf[GetSmsChannelResponse]
   }
   
-  extension [Self <: GetSmsChannelResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetSmsChannelResponse] (val x: Self) extends AnyVal {
     
     inline def setSMSChannelResponse(value: SMSChannelResponse): Self = StObject.set(x, "SMSChannelResponse", value.asInstanceOf[js.Any])
   }

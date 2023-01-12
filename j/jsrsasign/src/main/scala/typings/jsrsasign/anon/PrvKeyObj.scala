@@ -19,7 +19,8 @@ object PrvKeyObj {
     __obj.asInstanceOf[PrvKeyObj]
   }
   
-  extension [Self <: PrvKeyObj](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PrvKeyObj] (val x: Self) extends AnyVal {
     
     inline def setPrvKeyObj(value: RSAKey | ECDSA): Self = StObject.set(x, "prvKeyObj", value.asInstanceOf[js.Any])
     

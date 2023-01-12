@@ -31,7 +31,8 @@ object NotificationStatistic {
     __obj.asInstanceOf[NotificationStatistic]
   }
   
-  extension [Self <: NotificationStatistic](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NotificationStatistic] (val x: Self) extends AnyVal {
     
     inline def setDate(value: js.Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     

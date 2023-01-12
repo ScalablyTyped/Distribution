@@ -25,7 +25,8 @@ object DiagramShapeFillGradient {
     __obj.asInstanceOf[DiagramShapeFillGradient]
   }
   
-  extension [Self <: DiagramShapeFillGradient](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DiagramShapeFillGradient] (val x: Self) extends AnyVal {
     
     inline def setCenter(value: Any): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
     

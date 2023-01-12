@@ -51,7 +51,8 @@ object I18nAdditionalOptions {
     __obj.asInstanceOf[I18nAdditionalOptions]
   }
   
-  extension [Self <: I18nAdditionalOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: I18nAdditionalOptions] (val x: Self) extends AnyVal {
     
     inline def setAllowComposition(value: Boolean): Self = StObject.set(x, "allowComposition", value.asInstanceOf[js.Any])
     

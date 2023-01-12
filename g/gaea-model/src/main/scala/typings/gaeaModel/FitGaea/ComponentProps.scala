@@ -77,7 +77,8 @@ object ComponentProps {
     __obj.asInstanceOf[ComponentProps]
   }
   
-  extension [Self <: ComponentProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ComponentProps] (val x: Self) extends AnyVal {
     
     inline def setCanDragIn(value: Boolean): Self = StObject.set(x, "canDragIn", value.asInstanceOf[js.Any])
     

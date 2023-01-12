@@ -75,7 +75,8 @@ object distTypesTypesMod {
       __obj.asInstanceOf[VoronoiCommonProps]
     }
     
-    extension [Self <: VoronoiCommonProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VoronoiCommonProps] (val x: Self) extends AnyVal {
       
       inline def setCellLineColor(value: String): Self = StObject.set(x, "cellLineColor", value.asInstanceOf[js.Any])
       
@@ -140,7 +141,8 @@ object distTypesTypesMod {
       __obj.asInstanceOf[VoronoiCustomLayerProps]
     }
     
-    extension [Self <: VoronoiCustomLayerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VoronoiCustomLayerProps] (val x: Self) extends AnyVal {
       
       inline def setDelaunay(value: Delaunay[Point]): Self = StObject.set(x, "delaunay", value.asInstanceOf[js.Any])
       
@@ -167,7 +169,8 @@ object distTypesTypesMod {
       __obj.asInstanceOf[VoronoiDatum]
     }
     
-    extension [Self <: VoronoiDatum](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VoronoiDatum] (val x: Self) extends AnyVal {
       
       inline def setId(value: String | Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       

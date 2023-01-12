@@ -18,7 +18,8 @@ object DeleteDirectoryConfigRequest {
     __obj.asInstanceOf[DeleteDirectoryConfigRequest]
   }
   
-  extension [Self <: DeleteDirectoryConfigRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteDirectoryConfigRequest] (val x: Self) extends AnyVal {
     
     inline def setDirectoryName(value: DirectoryName): Self = StObject.set(x, "DirectoryName", value.asInstanceOf[js.Any])
   }

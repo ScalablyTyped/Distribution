@@ -103,7 +103,8 @@ object XController {
     __obj.asInstanceOf[XController]
   }
   
-  extension [Self <: XController](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XController] (val x: Self) extends AnyVal {
     
     inline def setAttachFrame(value: XFrame => Unit): Self = StObject.set(x, "attachFrame", js.Any.fromFunction1(value))
     

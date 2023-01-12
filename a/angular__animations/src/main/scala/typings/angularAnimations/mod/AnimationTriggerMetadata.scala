@@ -34,7 +34,8 @@ object AnimationTriggerMetadata {
     __obj.asInstanceOf[AnimationTriggerMetadata]
   }
   
-  extension [Self <: AnimationTriggerMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnimationTriggerMetadata] (val x: Self) extends AnyVal {
     
     inline def setDefinitions(value: js.Array[AnimationMetadata]): Self = StObject.set(x, "definitions", value.asInstanceOf[js.Any])
     

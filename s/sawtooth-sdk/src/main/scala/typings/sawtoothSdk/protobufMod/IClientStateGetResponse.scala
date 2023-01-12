@@ -23,7 +23,8 @@ object IClientStateGetResponse {
     __obj.asInstanceOf[IClientStateGetResponse]
   }
   
-  extension [Self <: IClientStateGetResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IClientStateGetResponse] (val x: Self) extends AnyVal {
     
     inline def setStateRoot(value: String): Self = StObject.set(x, "stateRoot", value.asInstanceOf[js.Any])
     

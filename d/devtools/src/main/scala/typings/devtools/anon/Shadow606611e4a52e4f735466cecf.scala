@@ -16,7 +16,8 @@ object Shadow606611e4a52e4f735466cecf {
     __obj.asInstanceOf[Shadow606611e4a52e4f735466cecf]
   }
   
-  extension [Self <: Shadow606611e4a52e4f735466cecf](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Shadow606611e4a52e4f735466cecf] (val x: Self) extends AnyVal {
     
     inline def `setShadow-6066-11e4-a52e-4f735466cecf`(value: String): Self = StObject.set(x, "shadow-6066-11e4-a52e-4f735466cecf", value.asInstanceOf[js.Any])
   }

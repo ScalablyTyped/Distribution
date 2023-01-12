@@ -22,7 +22,8 @@ object LinuxNodeConfig {
     __obj.asInstanceOf[LinuxNodeConfig]
   }
   
-  extension [Self <: LinuxNodeConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LinuxNodeConfig] (val x: Self) extends AnyVal {
     
     inline def setSysctls(
       value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any

@@ -19,7 +19,8 @@ object WatchResponse {
     __obj.asInstanceOf[WatchResponse]
   }
   
-  extension [Self <: WatchResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WatchResponse] (val x: Self) extends AnyVal {
     
     inline def setExpiration(value: String): Self = StObject.set(x, "expiration", value.asInstanceOf[js.Any])
     

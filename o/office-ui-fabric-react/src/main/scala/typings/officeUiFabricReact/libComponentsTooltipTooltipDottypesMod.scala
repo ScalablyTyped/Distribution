@@ -123,7 +123,8 @@ object libComponentsTooltipTooltipDottypesMod {
       __obj.asInstanceOf[ITooltipProps]
     }
     
-    extension [Self <: ITooltipProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITooltipProps] (val x: Self) extends AnyVal {
       
       inline def setCalloutProps(value: ICalloutProps): Self = StObject.set(x, "calloutProps", value.asInstanceOf[js.Any])
       
@@ -217,7 +218,8 @@ object libComponentsTooltipTooltipDottypesMod {
       __obj.asInstanceOf[ITooltipStyleProps]
     }
     
-    extension [Self <: ITooltipStyleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITooltipStyleProps] (val x: Self) extends AnyVal {
       
       inline def setBeakWidth(value: Double): Self = StObject.set(x, "beakWidth", value.asInstanceOf[js.Any])
       
@@ -267,7 +269,8 @@ object libComponentsTooltipTooltipDottypesMod {
       __obj.asInstanceOf[ITooltipStyles]
     }
     
-    extension [Self <: ITooltipStyles](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITooltipStyles] (val x: Self) extends AnyVal {
       
       inline def setContent(value: IStyle): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       

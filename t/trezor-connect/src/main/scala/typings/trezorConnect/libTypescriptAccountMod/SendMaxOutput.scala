@@ -21,7 +21,8 @@ object SendMaxOutput {
     __obj.asInstanceOf[SendMaxOutput]
   }
   
-  extension [Self <: SendMaxOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SendMaxOutput] (val x: Self) extends AnyVal {
     
     inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     

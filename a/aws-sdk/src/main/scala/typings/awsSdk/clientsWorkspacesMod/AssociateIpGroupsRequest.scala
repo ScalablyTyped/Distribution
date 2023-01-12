@@ -23,7 +23,8 @@ object AssociateIpGroupsRequest {
     __obj.asInstanceOf[AssociateIpGroupsRequest]
   }
   
-  extension [Self <: AssociateIpGroupsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssociateIpGroupsRequest] (val x: Self) extends AnyVal {
     
     inline def setDirectoryId(value: DirectoryId): Self = StObject.set(x, "DirectoryId", value.asInstanceOf[js.Any])
     

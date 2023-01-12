@@ -57,7 +57,8 @@ object libHoganjsUtilsMod {
       __obj.asInstanceOf[HoganJsUtilsConfig]
     }
     
-    extension [Self <: HoganJsUtilsConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HoganJsUtilsConfig] (val x: Self) extends AnyVal {
       
       inline def setCompiledTemplates(value: CompiledTemplates): Self = StObject.set(x, "compiledTemplates", value.asInstanceOf[js.Any])
       

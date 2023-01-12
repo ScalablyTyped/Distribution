@@ -58,7 +58,8 @@ object PlusNativeObjViewAnimationOptions {
     __obj.asInstanceOf[PlusNativeObjViewAnimationOptions]
   }
   
-  extension [Self <: PlusNativeObjViewAnimationOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlusNativeObjViewAnimationOptions] (val x: Self) extends AnyVal {
     
     inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     

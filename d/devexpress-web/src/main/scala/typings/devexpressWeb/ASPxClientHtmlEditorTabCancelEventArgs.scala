@@ -23,7 +23,8 @@ object ASPxClientHtmlEditorTabCancelEventArgs {
     __obj.asInstanceOf[ASPxClientHtmlEditorTabCancelEventArgs]
   }
   
-  extension [Self <: ASPxClientHtmlEditorTabCancelEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientHtmlEditorTabCancelEventArgs] (val x: Self) extends AnyVal {
     
     inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
   }

@@ -43,7 +43,8 @@ object angularMod {
         __obj.asInstanceOf[IGlobalMessageOptions]
       }
       
-      extension [Self <: IGlobalMessageOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IGlobalMessageOptions] (val x: Self) extends AnyVal {
         
         inline def setCloseOnClick(value: Boolean): Self = StObject.set(x, "closeOnClick", value.asInstanceOf[js.Any])
         
@@ -122,7 +123,8 @@ object angularMod {
         __obj.asInstanceOf[IMessageOptions]
       }
       
-      extension [Self <: IMessageOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IMessageOptions] (val x: Self) extends AnyVal {
         
         inline def setCloseOnClick(value: Boolean): Self = StObject.set(x, "closeOnClick", value.asInstanceOf[js.Any])
         
@@ -173,7 +175,8 @@ object angularMod {
         __obj.asInstanceOf[INotificationProvider]
       }
       
-      extension [Self <: INotificationProvider](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: INotificationProvider] (val x: Self) extends AnyVal {
         
         inline def setSetOptions(value: IGlobalMessageOptions => Unit): Self = StObject.set(x, "setOptions", js.Any.fromFunction1(value))
       }
@@ -190,7 +193,8 @@ object angularMod {
         __obj.asInstanceOf[INotificationScope]
       }
       
-      extension [Self <: INotificationScope](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: INotificationScope] (val x: Self) extends AnyVal {
         
         inline def setKill(value: Boolean => Unit): Self = StObject.set(x, "kill", js.Any.fromFunction1(value))
       }

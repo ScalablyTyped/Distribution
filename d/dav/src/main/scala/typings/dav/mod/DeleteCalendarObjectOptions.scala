@@ -24,7 +24,8 @@ object DeleteCalendarObjectOptions {
     __obj.asInstanceOf[DeleteCalendarObjectOptions]
   }
   
-  extension [Self <: DeleteCalendarObjectOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteCalendarObjectOptions] (val x: Self) extends AnyVal {
     
     inline def setSandbox(value: Sandbox): Self = StObject.set(x, "sandbox", value.asInstanceOf[js.Any])
     

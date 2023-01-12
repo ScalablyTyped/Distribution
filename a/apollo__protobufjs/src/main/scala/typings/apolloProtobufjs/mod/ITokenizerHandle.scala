@@ -55,7 +55,8 @@ object ITokenizerHandle {
     __obj.asInstanceOf[ITokenizerHandle]
   }
   
-  extension [Self <: ITokenizerHandle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ITokenizerHandle] (val x: Self) extends AnyVal {
     
     inline def setCmnt(value: /* line */ js.UndefOr[Double] => String | Null): Self = StObject.set(x, "cmnt", js.Any.fromFunction1(value))
     

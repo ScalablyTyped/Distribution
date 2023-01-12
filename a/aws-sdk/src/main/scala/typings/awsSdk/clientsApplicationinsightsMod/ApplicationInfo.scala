@@ -53,7 +53,8 @@ object ApplicationInfo {
     __obj.asInstanceOf[ApplicationInfo]
   }
   
-  extension [Self <: ApplicationInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApplicationInfo] (val x: Self) extends AnyVal {
     
     inline def setAutoConfigEnabled(value: AutoConfigEnabled): Self = StObject.set(x, "AutoConfigEnabled", value.asInstanceOf[js.Any])
     

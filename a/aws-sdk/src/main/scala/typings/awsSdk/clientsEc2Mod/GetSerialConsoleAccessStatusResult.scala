@@ -18,7 +18,8 @@ object GetSerialConsoleAccessStatusResult {
     __obj.asInstanceOf[GetSerialConsoleAccessStatusResult]
   }
   
-  extension [Self <: GetSerialConsoleAccessStatusResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetSerialConsoleAccessStatusResult] (val x: Self) extends AnyVal {
     
     inline def setSerialConsoleAccessEnabled(value: Boolean): Self = StObject.set(x, "SerialConsoleAccessEnabled", value.asInstanceOf[js.Any])
     

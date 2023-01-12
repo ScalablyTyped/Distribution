@@ -26,7 +26,8 @@ object GetEntriesOptions {
     __obj.asInstanceOf[GetEntriesOptions]
   }
   
-  extension [Self <: GetEntriesOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetEntriesOptions] (val x: Self) extends AnyVal {
     
     inline def setCommentEncoding(value: String): Self = StObject.set(x, "commentEncoding", value.asInstanceOf[js.Any])
     

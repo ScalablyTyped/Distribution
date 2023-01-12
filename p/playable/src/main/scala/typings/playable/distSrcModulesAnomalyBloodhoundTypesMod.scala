@@ -22,7 +22,8 @@ object distSrcModulesAnomalyBloodhoundTypesMod {
       __obj.asInstanceOf[IReportType]
     }
     
-    extension [Self <: IReportType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IReportType] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       

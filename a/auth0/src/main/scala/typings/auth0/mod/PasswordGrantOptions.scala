@@ -23,7 +23,8 @@ object PasswordGrantOptions {
     __obj.asInstanceOf[PasswordGrantOptions]
   }
   
-  extension [Self <: PasswordGrantOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PasswordGrantOptions] (val x: Self) extends AnyVal {
     
     inline def setAudience(value: String): Self = StObject.set(x, "audience", value.asInstanceOf[js.Any])
     

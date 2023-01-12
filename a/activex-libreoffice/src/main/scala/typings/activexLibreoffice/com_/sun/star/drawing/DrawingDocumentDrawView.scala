@@ -153,7 +153,8 @@ object DrawingDocumentDrawView {
     __obj.asInstanceOf[DrawingDocumentDrawView]
   }
   
-  extension [Self <: DrawingDocumentDrawView](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DrawingDocumentDrawView] (val x: Self) extends AnyVal {
     
     inline def setIsLayerMode(value: Boolean): Self = StObject.set(x, "IsLayerMode", value.asInstanceOf[js.Any])
     

@@ -503,7 +503,8 @@ object sapUiUx3ExactMod {
       __obj.asInstanceOf[ExactSettings]
     }
     
-    extension [Self <: ExactSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExactSettings] (val x: Self) extends AnyVal {
       
       inline def setAttributes(
         value: js.Array[typings.openui5.sapUiUx3ExactAttributeMod.default] | typings.openui5.sapUiUx3ExactAttributeMod.default | AggregationBindingInfo | (/* template literal string: {${string}} */ String)

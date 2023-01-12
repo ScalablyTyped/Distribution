@@ -31,7 +31,8 @@ object ICodePage {
     __obj.asInstanceOf[ICodePage]
   }
   
-  extension [Self <: ICodePage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICodePage] (val x: Self) extends AnyVal {
     
     inline def setQDescription(value: String): Self = StObject.set(x, "qDescription", value.asInstanceOf[js.Any])
     

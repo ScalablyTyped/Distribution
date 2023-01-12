@@ -23,7 +23,8 @@ object IExplorerExtensibilityOption {
     __obj.asInstanceOf[IExplorerExtensibilityOption]
   }
   
-  extension [Self <: IExplorerExtensibilityOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IExplorerExtensibilityOption] (val x: Self) extends AnyVal {
     
     inline def setAction(value: Any => Unit): Self = StObject.set(x, "action", js.Any.fromFunction1(value))
     

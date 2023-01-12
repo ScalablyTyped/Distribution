@@ -20,7 +20,8 @@ object GitRepositoryCreateOptions {
     __obj.asInstanceOf[GitRepositoryCreateOptions]
   }
   
-  extension [Self <: GitRepositoryCreateOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GitRepositoryCreateOptions] (val x: Self) extends AnyVal {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

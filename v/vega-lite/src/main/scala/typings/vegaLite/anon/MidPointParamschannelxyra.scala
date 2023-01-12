@@ -53,7 +53,8 @@ object MidPointParamschannelxyra {
     __obj.asInstanceOf[MidPointParamschannelxyra]
   }
   
-  extension [Self <: MidPointParamschannelxyra](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MidPointParamschannelxyra] (val x: Self) extends AnyVal {
     
     inline def setBandPosition(value: Double | SignalRef): Self = StObject.set(x, "bandPosition", value.asInstanceOf[js.Any])
     

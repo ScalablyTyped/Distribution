@@ -100,7 +100,8 @@ object mod {
       __obj.asInstanceOf[DatabaseOptions[K, V]]
     }
     
-    extension [Self <: DatabaseOptions[?, ?], K, V](x: Self & (DatabaseOptions[K, V])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DatabaseOptions[?, ?], K, V] (val x: Self & (DatabaseOptions[K, V])) extends AnyVal {
       
       inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
       

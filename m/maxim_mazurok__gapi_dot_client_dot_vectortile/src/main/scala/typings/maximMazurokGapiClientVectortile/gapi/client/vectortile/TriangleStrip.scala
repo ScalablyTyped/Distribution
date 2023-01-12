@@ -16,7 +16,8 @@ object TriangleStrip {
     __obj.asInstanceOf[TriangleStrip]
   }
   
-  extension [Self <: TriangleStrip](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TriangleStrip] (val x: Self) extends AnyVal {
     
     inline def setVertexIndices(value: js.Array[Double]): Self = StObject.set(x, "vertexIndices", value.asInstanceOf[js.Any])
     

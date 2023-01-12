@@ -16,7 +16,8 @@ object InspectRequestedEventDataType {
     __obj.asInstanceOf[InspectRequestedEventDataType]
   }
   
-  extension [Self <: InspectRequestedEventDataType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InspectRequestedEventDataType] (val x: Self) extends AnyVal {
     
     inline def setObject(value: RemoteObject): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
   }

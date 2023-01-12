@@ -28,7 +28,8 @@ object PropertyPredicate {
     __obj.asInstanceOf[PropertyPredicate]
   }
   
-  extension [Self <: PropertyPredicate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PropertyPredicate] (val x: Self) extends AnyVal {
     
     inline def setComparator(value: Comparator): Self = StObject.set(x, "Comparator", value.asInstanceOf[js.Any])
     

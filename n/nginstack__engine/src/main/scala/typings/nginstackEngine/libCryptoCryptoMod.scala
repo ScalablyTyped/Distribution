@@ -478,7 +478,8 @@ object libCryptoCryptoMod {
       __obj.asInstanceOf[DecryptOptions]
     }
     
-    extension [Self <: DecryptOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DecryptOptions] (val x: Self) extends AnyVal {
       
       inline def setAad(value: js.typedarray.Uint8Array | js.typedarray.ArrayBuffer): Self = StObject.set(x, "aad", value.asInstanceOf[js.Any])
       
@@ -507,7 +508,8 @@ object libCryptoCryptoMod {
       __obj.asInstanceOf[EncryptOptions]
     }
     
-    extension [Self <: EncryptOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EncryptOptions] (val x: Self) extends AnyVal {
       
       inline def setAad(value: js.typedarray.Uint8Array | js.typedarray.ArrayBuffer): Self = StObject.set(x, "aad", value.asInstanceOf[js.Any])
       

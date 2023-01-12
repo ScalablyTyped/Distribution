@@ -51,7 +51,8 @@ object RecursivePartialRecursiveDisabled {
     __obj.asInstanceOf[RecursivePartialRecursiveDisabled]
   }
   
-  extension [Self <: RecursivePartialRecursiveDisabled](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecursivePartialRecursiveDisabled] (val x: Self) extends AnyVal {
     
     inline def setBlack(value: RecursivePartial[js.UndefOr[RecursivePartial[String]]]): Self = StObject.set(x, "black", value.asInstanceOf[js.Any])
     

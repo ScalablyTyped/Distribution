@@ -18,7 +18,8 @@ object CreateTableResponse {
     __obj.asInstanceOf[CreateTableResponse]
   }
   
-  extension [Self <: CreateTableResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateTableResponse] (val x: Self) extends AnyVal {
     
     inline def setTable(value: Table): Self = StObject.set(x, "Table", value.asInstanceOf[js.Any])
     

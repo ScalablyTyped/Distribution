@@ -664,7 +664,8 @@ object sapUiCommonsCheckBoxMod {
       __obj.asInstanceOf[CheckBoxSettings]
     }
     
-    extension [Self <: CheckBoxSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CheckBoxSettings] (val x: Self) extends AnyVal {
       
       inline def setAriaDescribedBy(value: js.Array[typings.openui5.sapUiCoreControlMod.default | String]): Self = StObject.set(x, "ariaDescribedBy", value.asInstanceOf[js.Any])
       

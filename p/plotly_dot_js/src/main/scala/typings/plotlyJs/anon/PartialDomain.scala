@@ -22,7 +22,8 @@ object PartialDomain {
     __obj.asInstanceOf[PartialDomain]
   }
   
-  extension [Self <: PartialDomain](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialDomain] (val x: Self) extends AnyVal {
     
     inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
     

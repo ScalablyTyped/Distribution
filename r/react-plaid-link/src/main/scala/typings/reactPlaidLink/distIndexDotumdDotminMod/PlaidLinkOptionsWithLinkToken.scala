@@ -24,7 +24,8 @@ object PlaidLinkOptionsWithLinkToken {
     __obj.asInstanceOf[PlaidLinkOptionsWithLinkToken]
   }
   
-  extension [Self <: PlaidLinkOptionsWithLinkToken](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlaidLinkOptionsWithLinkToken] (val x: Self) extends AnyVal {
     
     inline def setReceivedRedirectUri(value: String): Self = StObject.set(x, "receivedRedirectUri", value.asInstanceOf[js.Any])
     

@@ -70,7 +70,8 @@ object mod {
       __obj.asInstanceOf[DownloadOptions]
     }
     
-    extension [Self <: DownloadOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DownloadOptions] (val x: Self) extends AnyVal {
       
       inline def setExtract(value: Boolean): Self = StObject.set(x, "extract", value.asInstanceOf[js.Any])
       

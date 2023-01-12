@@ -23,7 +23,8 @@ object RegisterTransitGatewayRequest {
     __obj.asInstanceOf[RegisterTransitGatewayRequest]
   }
   
-  extension [Self <: RegisterTransitGatewayRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RegisterTransitGatewayRequest] (val x: Self) extends AnyVal {
     
     inline def setGlobalNetworkId(value: GlobalNetworkId): Self = StObject.set(x, "GlobalNetworkId", value.asInstanceOf[js.Any])
     

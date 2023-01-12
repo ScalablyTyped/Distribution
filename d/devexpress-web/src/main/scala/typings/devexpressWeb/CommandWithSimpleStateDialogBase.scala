@@ -21,7 +21,8 @@ object CommandWithSimpleStateDialogBase {
     __obj.asInstanceOf[CommandWithSimpleStateDialogBase]
   }
   
-  extension [Self <: CommandWithSimpleStateDialogBase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CommandWithSimpleStateDialogBase] (val x: Self) extends AnyVal {
     
     inline def setGetState(value: () => SimpleCommandState): Self = StObject.set(x, "getState", js.Any.fromFunction0(value))
   }

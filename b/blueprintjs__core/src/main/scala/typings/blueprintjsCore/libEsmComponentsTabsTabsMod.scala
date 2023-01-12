@@ -176,7 +176,8 @@ object libEsmComponentsTabsTabsMod {
       __obj.asInstanceOf[ITabsProps]
     }
     
-    extension [Self <: ITabsProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITabsProps] (val x: Self) extends AnyVal {
       
       inline def setAnimate(value: Boolean): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
       
@@ -229,7 +230,8 @@ object libEsmComponentsTabsTabsMod {
       __obj.asInstanceOf[ITabsState]
     }
     
-    extension [Self <: ITabsState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITabsState] (val x: Self) extends AnyVal {
       
       inline def setIndicatorWrapperStyle(value: CSSProperties): Self = StObject.set(x, "indicatorWrapperStyle", value.asInstanceOf[js.Any])
       

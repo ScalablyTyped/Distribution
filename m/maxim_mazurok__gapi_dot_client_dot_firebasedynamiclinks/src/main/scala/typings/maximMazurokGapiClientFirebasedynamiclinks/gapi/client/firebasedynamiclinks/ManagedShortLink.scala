@@ -31,7 +31,8 @@ object ManagedShortLink {
     __obj.asInstanceOf[ManagedShortLink]
   }
   
-  extension [Self <: ManagedShortLink](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ManagedShortLink] (val x: Self) extends AnyVal {
     
     inline def setCreationTime(value: String): Self = StObject.set(x, "creationTime", value.asInstanceOf[js.Any])
     

@@ -345,7 +345,8 @@ object libBatchBatchRendererMod {
       __obj.asInstanceOf[IBatchableElement]
     }
     
-    extension [Self <: IBatchableElement](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IBatchableElement] (val x: Self) extends AnyVal {
       
       inline def setBlendMode(value: BLEND_MODES): Self = StObject.set(x, "blendMode", value.asInstanceOf[js.Any])
       

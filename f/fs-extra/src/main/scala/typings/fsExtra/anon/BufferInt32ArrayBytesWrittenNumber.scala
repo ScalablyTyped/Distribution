@@ -17,7 +17,8 @@ object BufferInt32ArrayBytesWrittenNumber {
     __obj.asInstanceOf[BufferInt32ArrayBytesWrittenNumber]
   }
   
-  extension [Self <: BufferInt32ArrayBytesWrittenNumber](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BufferInt32ArrayBytesWrittenNumber] (val x: Self) extends AnyVal {
     
     inline def setBuffer(value: js.typedarray.Int32Array): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
     

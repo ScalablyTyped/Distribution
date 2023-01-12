@@ -65,7 +65,8 @@ object IAudioNode {
     __obj.asInstanceOf[IAudioNode]
   }
   
-  extension [Self <: IAudioNode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IAudioNode] (val x: Self) extends AnyVal {
     
     inline def setConsumeInput(value: Boolean): Self = StObject.set(x, "consumeInput", value.asInstanceOf[js.Any])
     

@@ -73,7 +73,8 @@ object CanChangeCopyRequiresWriterPermissionRestriction {
     __obj.asInstanceOf[CanChangeCopyRequiresWriterPermissionRestriction]
   }
   
-  extension [Self <: CanChangeCopyRequiresWriterPermissionRestriction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CanChangeCopyRequiresWriterPermissionRestriction] (val x: Self) extends AnyVal {
     
     inline def setCanAddChildren(value: Boolean): Self = StObject.set(x, "canAddChildren", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object Logger {
     __obj.asInstanceOf[Logger]
   }
   
-  extension [Self <: Logger](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Logger] (val x: Self) extends AnyVal {
     
     inline def setSetLevel(value: Double => Unit): Self = StObject.set(x, "setLevel", js.Any.fromFunction1(value))
   }

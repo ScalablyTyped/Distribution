@@ -51,7 +51,8 @@ object Diagnostics {
       __obj.asInstanceOf[IErrorReportingSettings]
     }
     
-    extension [Self <: IErrorReportingSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IErrorReportingSettings] (val x: Self) extends AnyVal {
       
       inline def setGetErrorOptions(value: () => ErrorOptions): Self = StObject.set(x, "getErrorOptions", js.Any.fromFunction0(value))
       

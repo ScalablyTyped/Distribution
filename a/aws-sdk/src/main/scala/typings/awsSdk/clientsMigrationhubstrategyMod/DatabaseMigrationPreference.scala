@@ -28,7 +28,8 @@ object DatabaseMigrationPreference {
     __obj.asInstanceOf[DatabaseMigrationPreference]
   }
   
-  extension [Self <: DatabaseMigrationPreference](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DatabaseMigrationPreference] (val x: Self) extends AnyVal {
     
     inline def setHeterogeneous(value: Heterogeneous): Self = StObject.set(x, "heterogeneous", value.asInstanceOf[js.Any])
     

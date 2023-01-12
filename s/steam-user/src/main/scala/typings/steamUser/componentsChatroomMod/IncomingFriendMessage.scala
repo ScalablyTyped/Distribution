@@ -46,7 +46,8 @@ object IncomingFriendMessage {
     __obj.asInstanceOf[IncomingFriendMessage]
   }
   
-  extension [Self <: IncomingFriendMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IncomingFriendMessage] (val x: Self) extends AnyVal {
     
     inline def setChat_entry_type(value: EChatEntryType): Self = StObject.set(x, "chat_entry_type", value.asInstanceOf[js.Any])
     

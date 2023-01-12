@@ -25,7 +25,8 @@ object ComponentRestrictions {
     __obj.asInstanceOf[ComponentRestrictions]
   }
   
-  extension [Self <: ComponentRestrictions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ComponentRestrictions] (val x: Self) extends AnyVal {
     
     inline def setCountry(value: String | js.Array[String]): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
     

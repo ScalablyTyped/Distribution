@@ -19,7 +19,8 @@ object DataMixins {
     __obj.asInstanceOf[DataMixins]
   }
   
-  extension [Self <: DataMixins](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataMixins] (val x: Self) extends AnyVal {
     
     inline def setData(value: Data): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
   }

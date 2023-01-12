@@ -33,7 +33,8 @@ object FormCTA {
     __obj.asInstanceOf[FormCTA]
   }
   
-  extension [Self <: FormCTA](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FormCTA] (val x: Self) extends AnyVal {
     
     inline def setCancel(value: FormButton): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
     

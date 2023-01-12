@@ -42,7 +42,8 @@ object mod {
       __obj.asInstanceOf[AbortOptions]
     }
     
-    extension [Self <: AbortOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AbortOptions] (val x: Self) extends AnyVal {
       
       inline def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
       
@@ -69,7 +70,8 @@ object mod {
       __obj.asInstanceOf[MultiaddrObject]
     }
     
-    extension [Self <: MultiaddrObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MultiaddrObject] (val x: Self) extends AnyVal {
       
       inline def setFamily(value: `4` | `6`): Self = StObject.set(x, "family", value.asInstanceOf[js.Any])
       
@@ -376,7 +378,8 @@ object mod {
       __obj.asInstanceOf[NodeAddress]
     }
     
-    extension [Self <: NodeAddress](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NodeAddress] (val x: Self) extends AnyVal {
       
       inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
@@ -405,7 +408,8 @@ object mod {
       __obj.asInstanceOf[Protocol]
     }
     
-    extension [Self <: Protocol](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Protocol] (val x: Self) extends AnyVal {
       
       inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       

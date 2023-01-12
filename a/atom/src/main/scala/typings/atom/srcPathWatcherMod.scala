@@ -43,7 +43,8 @@ object srcPathWatcherMod {
       __obj.asInstanceOf[PathWatcher]
     }
     
-    extension [Self <: PathWatcher](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PathWatcher] (val x: Self) extends AnyVal {
       
       inline def setGetStartPromise(value: () => js.Promise[Unit]): Self = StObject.set(x, "getStartPromise", js.Any.fromFunction0(value))
       

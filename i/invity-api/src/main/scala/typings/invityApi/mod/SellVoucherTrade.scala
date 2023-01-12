@@ -35,7 +35,8 @@ object SellVoucherTrade {
     __obj.asInstanceOf[SellVoucherTrade]
   }
   
-  extension [Self <: SellVoucherTrade](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SellVoucherTrade] (val x: Self) extends AnyVal {
     
     inline def setCryptoAmount(value: Double): Self = StObject.set(x, "cryptoAmount", value.asInstanceOf[js.Any])
     

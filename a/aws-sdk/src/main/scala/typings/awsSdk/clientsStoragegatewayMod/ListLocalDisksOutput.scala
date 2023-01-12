@@ -20,7 +20,8 @@ object ListLocalDisksOutput {
     __obj.asInstanceOf[ListLocalDisksOutput]
   }
   
-  extension [Self <: ListLocalDisksOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListLocalDisksOutput] (val x: Self) extends AnyVal {
     
     inline def setDisks(value: Disks): Self = StObject.set(x, "Disks", value.asInstanceOf[js.Any])
     

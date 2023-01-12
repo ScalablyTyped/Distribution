@@ -16,7 +16,8 @@ object EditorPointOptions {
     __obj.asInstanceOf[EditorPointOptions]
   }
   
-  extension [Self <: EditorPointOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EditorPointOptions] (val x: Self) extends AnyVal {
     
     inline def setEdge(value: LeafEdge): Self = StObject.set(x, "edge", value.asInstanceOf[js.Any])
     

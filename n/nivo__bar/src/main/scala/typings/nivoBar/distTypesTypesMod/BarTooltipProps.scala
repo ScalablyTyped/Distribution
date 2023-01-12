@@ -36,7 +36,8 @@ object BarTooltipProps {
     __obj.asInstanceOf[BarTooltipProps[RawDatum]]
   }
   
-  extension [Self <: BarTooltipProps[?], RawDatum](x: Self & BarTooltipProps[RawDatum]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BarTooltipProps[?], RawDatum] (val x: Self & BarTooltipProps[RawDatum]) extends AnyVal {
     
     inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

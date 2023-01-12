@@ -29,7 +29,8 @@ object PointOverlayMixins {
     __obj.asInstanceOf[PointOverlayMixins[ES]]
   }
   
-  extension [Self <: PointOverlayMixins[?], ES /* <: ExprRef | SignalRef */](x: Self & PointOverlayMixins[ES]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PointOverlayMixins[?], ES /* <: ExprRef | SignalRef */] (val x: Self & PointOverlayMixins[ES]) extends AnyVal {
     
     inline def setPoint(value: Boolean | OverlayMarkDef[ES] | transparent): Self = StObject.set(x, "point", value.asInstanceOf[js.Any])
     

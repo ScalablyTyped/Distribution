@@ -19,7 +19,8 @@ object UploadFileCallbackValue {
     __obj.asInstanceOf[UploadFileCallbackValue]
   }
   
-  extension [Self <: UploadFileCallbackValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UploadFileCallbackValue] (val x: Self) extends AnyVal {
     
     inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

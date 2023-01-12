@@ -22,7 +22,8 @@ object GdataDiffUploadRequest {
     __obj.asInstanceOf[GdataDiffUploadRequest]
   }
   
-  extension [Self <: GdataDiffUploadRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GdataDiffUploadRequest] (val x: Self) extends AnyVal {
     
     inline def setChecksumsInfo(value: GdataCompositeMedia): Self = StObject.set(x, "checksumsInfo", value.asInstanceOf[js.Any])
     

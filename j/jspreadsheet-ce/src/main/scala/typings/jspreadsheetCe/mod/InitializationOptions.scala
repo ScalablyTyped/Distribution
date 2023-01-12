@@ -189,7 +189,8 @@ object InitializationOptions {
     __obj.asInstanceOf[InitializationOptions]
   }
   
-  extension [Self <: InitializationOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InitializationOptions] (val x: Self) extends AnyVal {
     
     inline def setAllowComments(value: Boolean): Self = StObject.set(x, "allowComments", value.asInstanceOf[js.Any])
     

@@ -63,7 +63,8 @@ object OmitCompileContextsliceSe {
     __obj.asInstanceOf[OmitCompileContextsliceSe]
   }
   
-  extension [Self <: OmitCompileContextsliceSe](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OmitCompileContextsliceSe] (val x: Self) extends AnyVal {
     
     inline def setBuffer(value: () => Unit): Self = StObject.set(x, "buffer", js.Any.fromFunction0(value))
     

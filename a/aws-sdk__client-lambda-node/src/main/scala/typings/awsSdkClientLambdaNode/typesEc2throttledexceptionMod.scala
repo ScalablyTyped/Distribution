@@ -21,7 +21,8 @@ object typesEc2throttledexceptionMod {
       __obj.asInstanceOf[EC2ThrottledException]
     }
     
-    extension [Self <: EC2ThrottledException](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EC2ThrottledException] (val x: Self) extends AnyVal {
       
       inline def setName(value: typings.awsSdkClientLambdaNode.awsSdkClientLambdaNodeStrings.EC2ThrottledException): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
@@ -46,7 +47,8 @@ object typesEc2throttledexceptionMod {
       __obj.asInstanceOf[EC2ThrottledExceptionDetails]
     }
     
-    extension [Self <: EC2ThrottledExceptionDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EC2ThrottledExceptionDetails] (val x: Self) extends AnyVal {
       
       inline def setMessage(value: String): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
       

@@ -42,7 +42,8 @@ object WindowsUniversalAppX {
     __obj.asInstanceOf[WindowsUniversalAppX]
   }
   
-  extension [Self <: WindowsUniversalAppX](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WindowsUniversalAppX] (val x: Self) extends AnyVal {
     
     inline def setApplicableArchitectures(value: WindowsArchitecture): Self = StObject.set(x, "applicableArchitectures", value.asInstanceOf[js.Any])
     

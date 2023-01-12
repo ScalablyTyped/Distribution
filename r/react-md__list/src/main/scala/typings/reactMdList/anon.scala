@@ -543,7 +543,8 @@ object anon {
       __obj.asInstanceOf[PickListItemLinkWithCompo]
     }
     
-    extension [Self <: PickListItemLinkWithCompo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PickListItemLinkWithCompo] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       

@@ -21,7 +21,8 @@ object ParticipantTimelineData {
     __obj.asInstanceOf[ParticipantTimelineData]
   }
   
-  extension [Self <: ParticipantTimelineData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParticipantTimelineData] (val x: Self) extends AnyVal {
     
     inline def setTenToTwenty(value: Double): Self = StObject.set(x, "tenToTwenty", value.asInstanceOf[js.Any])
     

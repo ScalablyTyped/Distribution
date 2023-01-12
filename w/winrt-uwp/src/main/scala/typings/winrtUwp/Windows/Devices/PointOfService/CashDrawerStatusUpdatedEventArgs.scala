@@ -17,7 +17,8 @@ object CashDrawerStatusUpdatedEventArgs {
     __obj.asInstanceOf[CashDrawerStatusUpdatedEventArgs]
   }
   
-  extension [Self <: CashDrawerStatusUpdatedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CashDrawerStatusUpdatedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setStatus(value: CashDrawerStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }

@@ -40,7 +40,8 @@ object typesLibServersBaseServerMod {
       __obj.asInstanceOf[BaseServer]
     }
     
-    extension [Self <: BaseServer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseServer] (val x: Self) extends AnyVal {
       
       inline def setClients(value: js.Array[ClientConnection]): Self = StObject.set(x, "clients", value.asInstanceOf[js.Any])
       

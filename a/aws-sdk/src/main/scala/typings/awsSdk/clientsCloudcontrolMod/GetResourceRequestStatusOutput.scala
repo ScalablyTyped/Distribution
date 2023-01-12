@@ -18,7 +18,8 @@ object GetResourceRequestStatusOutput {
     __obj.asInstanceOf[GetResourceRequestStatusOutput]
   }
   
-  extension [Self <: GetResourceRequestStatusOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetResourceRequestStatusOutput] (val x: Self) extends AnyVal {
     
     inline def setProgressEvent(value: ProgressEvent): Self = StObject.set(x, "ProgressEvent", value.asInstanceOf[js.Any])
     

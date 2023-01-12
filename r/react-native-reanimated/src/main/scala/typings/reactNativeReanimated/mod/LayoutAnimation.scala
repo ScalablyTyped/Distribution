@@ -24,7 +24,8 @@ object LayoutAnimation {
     __obj.asInstanceOf[LayoutAnimation]
   }
   
-  extension [Self <: LayoutAnimation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LayoutAnimation] (val x: Self) extends AnyVal {
     
     inline def setAnimations(
       value: AnimateStyle[

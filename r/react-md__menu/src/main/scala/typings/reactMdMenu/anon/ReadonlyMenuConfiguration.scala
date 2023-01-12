@@ -35,7 +35,8 @@ object ReadonlyMenuConfiguration {
     __obj.asInstanceOf[ReadonlyMenuConfiguration]
   }
   
-  extension [Self <: ReadonlyMenuConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadonlyMenuConfiguration] (val x: Self) extends AnyVal {
     
     inline def setHorizontal(value: Boolean): Self = StObject.set(x, "horizontal", value.asInstanceOf[js.Any])
     

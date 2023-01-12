@@ -19,7 +19,8 @@ object DeploymentController {
     __obj.asInstanceOf[DeploymentController]
   }
   
-  extension [Self <: DeploymentController](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeploymentController] (val x: Self) extends AnyVal {
     
     inline def setType(value: DeploymentControllerType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

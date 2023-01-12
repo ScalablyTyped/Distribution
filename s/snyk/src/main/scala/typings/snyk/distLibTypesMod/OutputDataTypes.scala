@@ -21,7 +21,8 @@ object OutputDataTypes {
     __obj.asInstanceOf[OutputDataTypes]
   }
   
-  extension [Self <: OutputDataTypes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OutputDataTypes] (val x: Self) extends AnyVal {
     
     inline def setStdout(value: Any): Self = StObject.set(x, "stdout", value.asInstanceOf[js.Any])
     

@@ -37,7 +37,8 @@ object GPUStencilFaceState {
     __obj.asInstanceOf[GPUStencilFaceState]
   }
   
-  extension [Self <: GPUStencilFaceState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GPUStencilFaceState] (val x: Self) extends AnyVal {
     
     inline def setCompare(value: GPUCompareFunction): Self = StObject.set(x, "compare", value.asInstanceOf[js.Any])
     

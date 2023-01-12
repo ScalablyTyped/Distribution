@@ -23,7 +23,8 @@ object CheckPrimeOptions {
     __obj.asInstanceOf[CheckPrimeOptions]
   }
   
-  extension [Self <: CheckPrimeOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CheckPrimeOptions] (val x: Self) extends AnyVal {
     
     inline def setChecks(value: Double): Self = StObject.set(x, "checks", value.asInstanceOf[js.Any])
     

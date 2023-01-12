@@ -48,7 +48,8 @@ object anon {
       __obj.asInstanceOf[CaseSensitive]
     }
     
-    extension [Self <: CaseSensitive](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CaseSensitive] (val x: Self) extends AnyVal {
       
       inline def setCaseSensitive(value: Boolean): Self = StObject.set(x, "caseSensitive", value.asInstanceOf[js.Any])
       
@@ -117,7 +118,8 @@ object anon {
       __obj.asInstanceOf[Io]
     }
     
-    extension [Self <: Io](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Io] (val x: Self) extends AnyVal {
       
       inline def setIo(value: Double): Self = StObject.set(x, "io", value.asInstanceOf[js.Any])
       
@@ -154,7 +156,8 @@ object anon {
       __obj.asInstanceOf[Js]
     }
     
-    extension [Self <: Js](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Js] (val x: Self) extends AnyVal {
       
       inline def setJs_(value: Any): Self = StObject.set(x, "js", value.asInstanceOf[js.Any])
       

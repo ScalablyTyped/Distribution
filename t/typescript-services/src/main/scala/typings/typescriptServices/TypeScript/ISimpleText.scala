@@ -32,7 +32,8 @@ object ISimpleText {
     __obj.asInstanceOf[ISimpleText]
   }
   
-  extension [Self <: ISimpleText](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISimpleText] (val x: Self) extends AnyVal {
     
     inline def setCharCodeAt(value: Double => Double): Self = StObject.set(x, "charCodeAt", js.Any.fromFunction1(value))
     

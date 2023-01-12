@@ -18,7 +18,8 @@ object GenerateAccessLogsResult {
     __obj.asInstanceOf[GenerateAccessLogsResult]
   }
   
-  extension [Self <: GenerateAccessLogsResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GenerateAccessLogsResult] (val x: Self) extends AnyVal {
     
     inline def setLogUrl(value: LogUrl): Self = StObject.set(x, "logUrl", value.asInstanceOf[js.Any])
     

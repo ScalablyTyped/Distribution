@@ -22,7 +22,8 @@ object CollectionFeaturedProduct {
     __obj.asInstanceOf[CollectionFeaturedProduct]
   }
   
-  extension [Self <: CollectionFeaturedProduct](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CollectionFeaturedProduct] (val x: Self) extends AnyVal {
     
     inline def setOfferId(value: String): Self = StObject.set(x, "offerId", value.asInstanceOf[js.Any])
     

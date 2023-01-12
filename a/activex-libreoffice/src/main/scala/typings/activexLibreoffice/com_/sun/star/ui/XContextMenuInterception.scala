@@ -34,7 +34,8 @@ object XContextMenuInterception {
     __obj.asInstanceOf[XContextMenuInterception]
   }
   
-  extension [Self <: XContextMenuInterception](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XContextMenuInterception] (val x: Self) extends AnyVal {
     
     inline def setRegisterContextMenuInterceptor(value: XContextMenuInterceptor => Unit): Self = StObject.set(x, "registerContextMenuInterceptor", js.Any.fromFunction1(value))
     

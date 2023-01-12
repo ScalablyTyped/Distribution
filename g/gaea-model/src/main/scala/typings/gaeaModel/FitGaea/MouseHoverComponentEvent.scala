@@ -18,7 +18,8 @@ object MouseHoverComponentEvent {
     __obj.asInstanceOf[MouseHoverComponentEvent]
   }
   
-  extension [Self <: MouseHoverComponentEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MouseHoverComponentEvent] (val x: Self) extends AnyVal {
     
     inline def setMapUniqueKey(value: String): Self = StObject.set(x, "mapUniqueKey", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object ChannelMembershipForAppInstanceUserSummary {
     __obj.asInstanceOf[ChannelMembershipForAppInstanceUserSummary]
   }
   
-  extension [Self <: ChannelMembershipForAppInstanceUserSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChannelMembershipForAppInstanceUserSummary] (val x: Self) extends AnyVal {
     
     inline def setAppInstanceUserMembershipSummary(value: AppInstanceUserMembershipSummary): Self = StObject.set(x, "AppInstanceUserMembershipSummary", value.asInstanceOf[js.Any])
     

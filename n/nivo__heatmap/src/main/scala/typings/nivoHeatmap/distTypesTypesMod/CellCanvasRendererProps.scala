@@ -22,7 +22,8 @@ object CellCanvasRendererProps {
     __obj.asInstanceOf[CellCanvasRendererProps[Datum]]
   }
   
-  extension [Self <: CellCanvasRendererProps[?], Datum /* <: HeatMapDatum */](x: Self & CellCanvasRendererProps[Datum]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CellCanvasRendererProps[?], Datum /* <: HeatMapDatum */] (val x: Self & CellCanvasRendererProps[Datum]) extends AnyVal {
     
     inline def setBorderWidth(value: Double): Self = StObject.set(x, "borderWidth", value.asInstanceOf[js.Any])
     

@@ -25,7 +25,8 @@ object CancelAnimationFrame {
     __obj.asInstanceOf[CancelAnimationFrame]
   }
   
-  extension [Self <: CancelAnimationFrame](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CancelAnimationFrame] (val x: Self) extends AnyVal {
     
     inline def setCancelAnimationFrame(value: /* handle */ Double => Unit): Self = StObject.set(x, "cancelAnimationFrame", js.Any.fromFunction1(value))
     

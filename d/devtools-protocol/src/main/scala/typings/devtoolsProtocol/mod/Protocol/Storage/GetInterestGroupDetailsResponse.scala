@@ -15,7 +15,8 @@ object GetInterestGroupDetailsResponse {
     __obj.asInstanceOf[GetInterestGroupDetailsResponse]
   }
   
-  extension [Self <: GetInterestGroupDetailsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetInterestGroupDetailsResponse] (val x: Self) extends AnyVal {
     
     inline def setDetails(value: InterestGroupDetails): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
   }

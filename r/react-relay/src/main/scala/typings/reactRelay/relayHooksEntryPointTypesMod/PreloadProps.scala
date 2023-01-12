@@ -22,7 +22,8 @@ object PreloadProps {
     __obj.asInstanceOf[PreloadProps[TPreloadParams, TPreloadedQueries, TPreloadedEntryPoints, TExtraProps]]
   }
   
-  extension [Self <: PreloadProps[?, ?, ?, ?], TPreloadParams /* <: js.Object */, TPreloadedQueries /* <: Record[String, OperationType] */, TPreloadedEntryPoints /* <: Record[String, js.UndefOr[EntryPoint[Any, Any]]] */, TExtraProps /* <: js.Object | Null */](x: Self & (PreloadProps[TPreloadParams, TPreloadedQueries, TPreloadedEntryPoints, TExtraProps])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PreloadProps[?, ?, ?, ?], TPreloadParams /* <: js.Object */, TPreloadedQueries /* <: Record[String, OperationType] */, TPreloadedEntryPoints /* <: Record[String, js.UndefOr[EntryPoint[Any, Any]]] */, TExtraProps /* <: js.Object | Null */] (val x: Self & (PreloadProps[TPreloadParams, TPreloadedQueries, TPreloadedEntryPoints, TExtraProps])) extends AnyVal {
     
     inline def setEntryPoints(value: ThinNestedEntryPointParamsObject[TPreloadedEntryPoints]): Self = StObject.set(x, "entryPoints", value.asInstanceOf[js.Any])
     

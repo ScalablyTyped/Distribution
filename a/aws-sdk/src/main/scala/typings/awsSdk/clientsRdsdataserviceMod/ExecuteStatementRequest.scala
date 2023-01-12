@@ -68,7 +68,8 @@ object ExecuteStatementRequest {
     __obj.asInstanceOf[ExecuteStatementRequest]
   }
   
-  extension [Self <: ExecuteStatementRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExecuteStatementRequest] (val x: Self) extends AnyVal {
     
     inline def setContinueAfterTimeout(value: Boolean): Self = StObject.set(x, "continueAfterTimeout", value.asInstanceOf[js.Any])
     

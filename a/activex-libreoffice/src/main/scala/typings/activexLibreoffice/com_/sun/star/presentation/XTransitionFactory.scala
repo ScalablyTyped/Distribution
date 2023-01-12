@@ -51,7 +51,8 @@ object XTransitionFactory {
     __obj.asInstanceOf[XTransitionFactory]
   }
   
-  extension [Self <: XTransitionFactory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XTransitionFactory] (val x: Self) extends AnyVal {
     
     inline def setCreateTransition(value: (Double, Double, XSlideShowView, XBitmap, XBitmap) => XTransition): Self = StObject.set(x, "createTransition", js.Any.fromFunction5(value))
     

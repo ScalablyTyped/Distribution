@@ -36,7 +36,8 @@ object PickDocumentFragmentchild {
     __obj.asInstanceOf[PickDocumentFragmentchild]
   }
   
-  extension [Self <: PickDocumentFragmentchild](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickDocumentFragmentchild] (val x: Self) extends AnyVal {
     
     inline def setChildCount(value: Double): Self = StObject.set(x, "childCount", value.asInstanceOf[js.Any])
     

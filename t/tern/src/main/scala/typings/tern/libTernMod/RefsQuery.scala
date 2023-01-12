@@ -28,7 +28,8 @@ object RefsQuery {
     __obj.asInstanceOf[RefsQuery]
   }
   
-  extension [Self <: RefsQuery](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RefsQuery] (val x: Self) extends AnyVal {
     
     inline def setEnd(value: Double | Position): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     

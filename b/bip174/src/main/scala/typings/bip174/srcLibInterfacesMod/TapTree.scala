@@ -15,7 +15,8 @@ object TapTree {
     __obj.asInstanceOf[TapTree]
   }
   
-  extension [Self <: TapTree](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TapTree] (val x: Self) extends AnyVal {
     
     inline def setLeaves(value: js.Array[TapLeaf]): Self = StObject.set(x, "leaves", value.asInstanceOf[js.Any])
     

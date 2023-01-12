@@ -36,7 +36,8 @@ object XChartDataChangeEventListener {
     __obj.asInstanceOf[XChartDataChangeEventListener]
   }
   
-  extension [Self <: XChartDataChangeEventListener](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XChartDataChangeEventListener] (val x: Self) extends AnyVal {
     
     inline def setChartDataChanged(value: ChartDataChangeEvent => Unit): Self = StObject.set(x, "chartDataChanged", js.Any.fromFunction1(value))
   }

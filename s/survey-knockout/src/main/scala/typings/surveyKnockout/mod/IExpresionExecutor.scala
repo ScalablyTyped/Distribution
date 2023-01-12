@@ -18,7 +18,8 @@ object IExpresionExecutor {
     __obj.asInstanceOf[IExpresionExecutor]
   }
   
-  extension [Self <: IExpresionExecutor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IExpresionExecutor] (val x: Self) extends AnyVal {
     
     inline def setOnComplete(value: Any => Unit): Self = StObject.set(x, "onComplete", js.Any.fromFunction1(value))
   }

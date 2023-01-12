@@ -43,7 +43,8 @@ object AsyncOperation {
     __obj.asInstanceOf[AsyncOperation]
   }
   
-  extension [Self <: AsyncOperation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AsyncOperation] (val x: Self) extends AnyVal {
     
     inline def setCreationTime(value: js.Date): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     

@@ -40,7 +40,8 @@ object distInterfacesOperationMod {
       __obj.asInstanceOf[BaseInsertNodeOperation]
     }
     
-    extension [Self <: BaseInsertNodeOperation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseInsertNodeOperation] (val x: Self) extends AnyVal {
       
       inline def setNode(value: Node): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
       
@@ -70,7 +71,8 @@ object distInterfacesOperationMod {
       __obj.asInstanceOf[BaseInsertTextOperation]
     }
     
-    extension [Self <: BaseInsertTextOperation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseInsertTextOperation] (val x: Self) extends AnyVal {
       
       inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
       
@@ -102,7 +104,8 @@ object distInterfacesOperationMod {
       __obj.asInstanceOf[BaseMergeNodeOperation]
     }
     
-    extension [Self <: BaseMergeNodeOperation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseMergeNodeOperation] (val x: Self) extends AnyVal {
       
       inline def setPath(value: Path): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
@@ -132,7 +135,8 @@ object distInterfacesOperationMod {
       __obj.asInstanceOf[BaseMoveNodeOperation]
     }
     
-    extension [Self <: BaseMoveNodeOperation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseMoveNodeOperation] (val x: Self) extends AnyVal {
       
       inline def setNewPath(value: Path): Self = StObject.set(x, "newPath", value.asInstanceOf[js.Any])
       
@@ -164,7 +168,8 @@ object distInterfacesOperationMod {
       __obj.asInstanceOf[BaseRemoveNodeOperation]
     }
     
-    extension [Self <: BaseRemoveNodeOperation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseRemoveNodeOperation] (val x: Self) extends AnyVal {
       
       inline def setNode(value: Node): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
       
@@ -194,7 +199,8 @@ object distInterfacesOperationMod {
       __obj.asInstanceOf[BaseRemoveTextOperation]
     }
     
-    extension [Self <: BaseRemoveTextOperation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseRemoveTextOperation] (val x: Self) extends AnyVal {
       
       inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
       
@@ -226,7 +232,8 @@ object distInterfacesOperationMod {
       __obj.asInstanceOf[BaseSetNodeOperation]
     }
     
-    extension [Self <: BaseSetNodeOperation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseSetNodeOperation] (val x: Self) extends AnyVal {
       
       inline def setNewProperties(value: Partial[Node]): Self = StObject.set(x, "newProperties", value.asInstanceOf[js.Any])
       
@@ -285,7 +292,8 @@ object distInterfacesOperationMod {
       __obj.asInstanceOf[BaseSplitNodeOperation]
     }
     
-    extension [Self <: BaseSplitNodeOperation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseSplitNodeOperation] (val x: Self) extends AnyVal {
       
       inline def setPath(value: Path): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
@@ -337,7 +345,8 @@ object distInterfacesOperationMod {
       __obj.asInstanceOf[OperationInterface]
     }
     
-    extension [Self <: OperationInterface](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OperationInterface] (val x: Self) extends AnyVal {
       
       inline def setInverse(
         value: typings.slate.distInterfacesOperationMod.Operation => typings.slate.distInterfacesOperationMod.Operation

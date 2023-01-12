@@ -275,7 +275,8 @@ object PlotSlowstochasticDataLabelsOptions {
     __obj.asInstanceOf[PlotSlowstochasticDataLabelsOptions]
   }
   
-  extension [Self <: PlotSlowstochasticDataLabelsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotSlowstochasticDataLabelsOptions] (val x: Self) extends AnyVal {
     
     inline def setAlign(value: AlignValue): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     

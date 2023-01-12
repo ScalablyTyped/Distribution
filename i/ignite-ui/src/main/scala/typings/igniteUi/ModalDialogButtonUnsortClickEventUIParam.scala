@@ -28,7 +28,8 @@ object ModalDialogButtonUnsortClickEventUIParam {
     __obj.asInstanceOf[ModalDialogButtonUnsortClickEventUIParam]
   }
   
-  extension [Self <: ModalDialogButtonUnsortClickEventUIParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModalDialogButtonUnsortClickEventUIParam] (val x: Self) extends AnyVal {
     
     inline def setColumnKey(value: String): Self = StObject.set(x, "columnKey", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object PrimaryStep {
     __obj.asInstanceOf[PrimaryStep]
   }
   
-  extension [Self <: PrimaryStep](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PrimaryStep] (val x: Self) extends AnyVal {
     
     inline def setIndividualOutcome(value: js.Array[IndividualOutcome]): Self = StObject.set(x, "individualOutcome", value.asInstanceOf[js.Any])
     

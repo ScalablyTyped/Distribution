@@ -37,7 +37,8 @@ object S3ObjectTagsDeletedNotificationEventDetail {
     __obj.asInstanceOf[S3ObjectTagsDeletedNotificationEventDetail]
   }
   
-  extension [Self <: S3ObjectTagsDeletedNotificationEventDetail](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: S3ObjectTagsDeletedNotificationEventDetail] (val x: Self) extends AnyVal {
     
     inline def setBucket(value: NameString): Self = StObject.set(x, "bucket", value.asInstanceOf[js.Any])
     

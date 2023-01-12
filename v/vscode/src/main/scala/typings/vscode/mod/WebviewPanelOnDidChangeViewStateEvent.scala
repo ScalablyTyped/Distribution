@@ -18,7 +18,8 @@ object WebviewPanelOnDidChangeViewStateEvent {
     __obj.asInstanceOf[WebviewPanelOnDidChangeViewStateEvent]
   }
   
-  extension [Self <: WebviewPanelOnDidChangeViewStateEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebviewPanelOnDidChangeViewStateEvent] (val x: Self) extends AnyVal {
     
     inline def setWebviewPanel(value: WebviewPanel): Self = StObject.set(x, "webviewPanel", value.asInstanceOf[js.Any])
   }

@@ -43,7 +43,8 @@ object UpdateResourceInput {
     __obj.asInstanceOf[UpdateResourceInput]
   }
   
-  extension [Self <: UpdateResourceInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateResourceInput] (val x: Self) extends AnyVal {
     
     inline def setClientToken(value: ClientToken): Self = StObject.set(x, "ClientToken", value.asInstanceOf[js.Any])
     

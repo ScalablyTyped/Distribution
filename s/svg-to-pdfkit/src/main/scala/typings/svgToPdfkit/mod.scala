@@ -75,7 +75,8 @@ object mod {
       __obj.asInstanceOf[SVGtoPDFOptions]
     }
     
-    extension [Self <: SVGtoPDFOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SVGtoPDFOptions] (val x: Self) extends AnyVal {
       
       inline def setAssumePt(value: Boolean): Self = StObject.set(x, "assumePt", value.asInstanceOf[js.Any])
       

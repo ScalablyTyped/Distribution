@@ -23,7 +23,8 @@ object ValidationWarning {
     __obj.asInstanceOf[ValidationWarning]
   }
   
-  extension [Self <: ValidationWarning](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ValidationWarning] (val x: Self) extends AnyVal {
     
     inline def setId(value: id): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

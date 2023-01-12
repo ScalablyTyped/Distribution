@@ -35,7 +35,8 @@ object NodesAndEdges {
     __obj.asInstanceOf[NodesAndEdges[TContext, TEvent]]
   }
   
-  extension [Self <: NodesAndEdges[?, ?], TContext, TEvent /* <: EventObject */](x: Self & (NodesAndEdges[TContext, TEvent])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodesAndEdges[?, ?], TContext, TEvent /* <: EventObject */] (val x: Self & (NodesAndEdges[TContext, TEvent])) extends AnyVal {
     
     inline def setEdges(
       value: js.Array[

@@ -35,7 +35,8 @@ object PlotSolidgaugePivotOptions {
     __obj.asInstanceOf[PlotSolidgaugePivotOptions]
   }
   
-  extension [Self <: PlotSolidgaugePivotOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotSolidgaugePivotOptions] (val x: Self) extends AnyVal {
     
     inline def setBackgroundColor(value: ColorString | GradientColorObject | PatternObject): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     

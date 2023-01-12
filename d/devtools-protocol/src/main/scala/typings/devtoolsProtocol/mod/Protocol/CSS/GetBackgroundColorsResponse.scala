@@ -33,7 +33,8 @@ object GetBackgroundColorsResponse {
     __obj.asInstanceOf[GetBackgroundColorsResponse]
   }
   
-  extension [Self <: GetBackgroundColorsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetBackgroundColorsResponse] (val x: Self) extends AnyVal {
     
     inline def setBackgroundColors(value: js.Array[String]): Self = StObject.set(x, "backgroundColors", value.asInstanceOf[js.Any])
     

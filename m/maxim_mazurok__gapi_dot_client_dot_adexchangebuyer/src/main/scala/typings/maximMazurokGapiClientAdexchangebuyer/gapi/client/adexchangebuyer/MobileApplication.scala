@@ -17,7 +17,8 @@ object MobileApplication {
     __obj.asInstanceOf[MobileApplication]
   }
   
-  extension [Self <: MobileApplication](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MobileApplication] (val x: Self) extends AnyVal {
     
     inline def setAppStore(value: String): Self = StObject.set(x, "appStore", value.asInstanceOf[js.Any])
     

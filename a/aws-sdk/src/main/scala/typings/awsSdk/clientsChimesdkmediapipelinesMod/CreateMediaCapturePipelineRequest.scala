@@ -48,7 +48,8 @@ object CreateMediaCapturePipelineRequest {
     __obj.asInstanceOf[CreateMediaCapturePipelineRequest]
   }
   
-  extension [Self <: CreateMediaCapturePipelineRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateMediaCapturePipelineRequest] (val x: Self) extends AnyVal {
     
     inline def setChimeSdkMeetingConfiguration(value: ChimeSdkMeetingConfiguration): Self = StObject.set(x, "ChimeSdkMeetingConfiguration", value.asInstanceOf[js.Any])
     

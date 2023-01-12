@@ -23,7 +23,8 @@ object LocationTimestamp {
     __obj.asInstanceOf[LocationTimestamp]
   }
   
-  extension [Self <: LocationTimestamp](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LocationTimestamp] (val x: Self) extends AnyVal {
     
     inline def setUnit(value: String): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
     

@@ -123,7 +123,8 @@ object ICompositeElement {
     __obj.asInstanceOf[ICompositeElement]
   }
   
-  extension [Self <: ICompositeElement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICompositeElement] (val x: Self) extends AnyVal {
     
     inline def setAdd(
       value: (/* els */ js.UndefOr[Any], /* root */ js.UndefOr[Any]) => typings.senchaTouch.Ext.dom.ICompositeElementLite

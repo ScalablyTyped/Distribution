@@ -54,7 +54,8 @@ object distTypesConfigurationsMod {
       __obj.asInstanceOf[PreviouslyResolved]
     }
     
-    extension [Self <: PreviouslyResolved](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PreviouslyResolved] (val x: Self) extends AnyVal {
       
       inline def setRetryMode(value: String | Provider[String]): Self = StObject.set(x, "retryMode", value.asInstanceOf[js.Any])
       
@@ -81,7 +82,8 @@ object distTypesConfigurationsMod {
       __obj.asInstanceOf[RetryInputConfig]
     }
     
-    extension [Self <: RetryInputConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RetryInputConfig] (val x: Self) extends AnyVal {
       
       inline def setMaxAttempts(value: Double | Provider[Double]): Self = StObject.set(x, "maxAttempts", value.asInstanceOf[js.Any])
       
@@ -124,7 +126,8 @@ object distTypesConfigurationsMod {
       __obj.asInstanceOf[RetryResolvedConfig]
     }
     
-    extension [Self <: RetryResolvedConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RetryResolvedConfig] (val x: Self) extends AnyVal {
       
       inline def setMaxAttempts(value: () => js.Promise[Double]): Self = StObject.set(x, "maxAttempts", js.Any.fromFunction0(value))
       

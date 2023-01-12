@@ -32,7 +32,8 @@ object RowAccessPolicy {
     __obj.asInstanceOf[RowAccessPolicy]
   }
   
-  extension [Self <: RowAccessPolicy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RowAccessPolicy] (val x: Self) extends AnyVal {
     
     inline def setCreationTime(value: String): Self = StObject.set(x, "creationTime", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object anon {
       __obj.asInstanceOf[Cooked]
     }
     
-    extension [Self <: Cooked](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Cooked] (val x: Self) extends AnyVal {
       
       inline def setCooked(value: String): Self = StObject.set(x, "cooked", value.asInstanceOf[js.Any])
       
@@ -45,7 +46,8 @@ object anon {
       __obj.asInstanceOf[Flags]
     }
     
-    extension [Self <: Flags](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Flags] (val x: Self) extends AnyVal {
       
       inline def setFlags(value: String): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
       

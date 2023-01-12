@@ -18,7 +18,8 @@ object GetInlinePolicyForPermissionSetResponse {
     __obj.asInstanceOf[GetInlinePolicyForPermissionSetResponse]
   }
   
-  extension [Self <: GetInlinePolicyForPermissionSetResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetInlinePolicyForPermissionSetResponse] (val x: Self) extends AnyVal {
     
     inline def setInlinePolicy(value: PermissionSetPolicyDocument): Self = StObject.set(x, "InlinePolicy", value.asInstanceOf[js.Any])
     

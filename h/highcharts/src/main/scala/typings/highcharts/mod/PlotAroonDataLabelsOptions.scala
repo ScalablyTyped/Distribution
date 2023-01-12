@@ -273,7 +273,8 @@ object PlotAroonDataLabelsOptions {
     __obj.asInstanceOf[PlotAroonDataLabelsOptions]
   }
   
-  extension [Self <: PlotAroonDataLabelsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotAroonDataLabelsOptions] (val x: Self) extends AnyVal {
     
     inline def setAlign(value: AlignValue): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     

@@ -59,7 +59,8 @@ object distCoreMod {
       __obj.asInstanceOf[TokyOptions[T]]
     }
     
-    extension [Self <: TokyOptions[?], T /* <: Token[Any] */](x: Self & TokyOptions[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TokyOptions[?], T /* <: Token[Any] */] (val x: Self & TokyOptions[T]) extends AnyVal {
       
       inline def setCreateToken(
         value: (String, /* import warning: importer.ImportType#apply Failed type conversion: T['type'] */ js.Any, Double, Double) => T

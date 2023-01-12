@@ -81,7 +81,8 @@ object pagerConfig {
     __obj.asInstanceOf[pagerConfig]
   }
   
-  extension [Self <: pagerConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: pagerConfig] (val x: Self) extends AnyVal {
     
     inline def setAnimate(value: Boolean | obj): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object SelectionItem {
     __obj.asInstanceOf[SelectionItem]
   }
   
-  extension [Self <: SelectionItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SelectionItem] (val x: Self) extends AnyVal {
     
     inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     

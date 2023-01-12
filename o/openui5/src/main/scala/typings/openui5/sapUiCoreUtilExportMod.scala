@@ -418,7 +418,8 @@ object sapUiCoreUtilExportMod {
       __obj.asInstanceOf[ExportSettings]
     }
     
-    extension [Self <: ExportSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExportSettings] (val x: Self) extends AnyVal {
       
       inline def setColumns(
         value: js.Array[typings.openui5.sapUiCoreUtilExportColumnMod.default] | typings.openui5.sapUiCoreUtilExportColumnMod.default | AggregationBindingInfo | (/* template literal string: {${string}} */ String)

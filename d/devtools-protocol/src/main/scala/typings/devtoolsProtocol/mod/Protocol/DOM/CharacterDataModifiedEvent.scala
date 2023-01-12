@@ -23,7 +23,8 @@ object CharacterDataModifiedEvent {
     __obj.asInstanceOf[CharacterDataModifiedEvent]
   }
   
-  extension [Self <: CharacterDataModifiedEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CharacterDataModifiedEvent] (val x: Self) extends AnyVal {
     
     inline def setCharacterData(value: String): Self = StObject.set(x, "characterData", value.asInstanceOf[js.Any])
     

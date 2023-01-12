@@ -25,7 +25,8 @@ object NutritionIntakePerformer {
     __obj.asInstanceOf[NutritionIntakePerformer]
   }
   
-  extension [Self <: NutritionIntakePerformer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NutritionIntakePerformer] (val x: Self) extends AnyVal {
     
     inline def setActor(value: Reference): Self = StObject.set(x, "actor", value.asInstanceOf[js.Any])
     

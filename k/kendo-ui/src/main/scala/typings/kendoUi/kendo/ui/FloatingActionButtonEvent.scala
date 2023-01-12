@@ -19,7 +19,8 @@ object FloatingActionButtonEvent {
     __obj.asInstanceOf[FloatingActionButtonEvent]
   }
   
-  extension [Self <: FloatingActionButtonEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FloatingActionButtonEvent] (val x: Self) extends AnyVal {
     
     inline def setIsDefaultPrevented(value: () => Boolean): Self = StObject.set(x, "isDefaultPrevented", js.Any.fromFunction0(value))
     

@@ -68,7 +68,8 @@ object libDialogsFormDialogFieldMod {
       __obj.asInstanceOf[FormDialogField]
     }
     
-    extension [Self <: FormDialogField](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FormDialogField] (val x: Self) extends AnyVal {
       
       inline def setAssignListeners(value: () => Unit): Self = StObject.set(x, "assignListeners", js.Any.fromFunction0(value))
       

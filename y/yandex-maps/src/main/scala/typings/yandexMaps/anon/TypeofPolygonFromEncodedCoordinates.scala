@@ -20,7 +20,8 @@ object TypeofPolygonFromEncodedCoordinates {
     __obj.asInstanceOf[TypeofPolygonFromEncodedCoordinates]
   }
   
-  extension [Self <: TypeofPolygonFromEncodedCoordinates](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofPolygonFromEncodedCoordinates] (val x: Self) extends AnyVal {
     
     inline def setFromEncodedCoordinates(value: String => Polygon): Self = StObject.set(x, "fromEncodedCoordinates", js.Any.fromFunction1(value))
     

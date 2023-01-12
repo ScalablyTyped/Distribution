@@ -19,7 +19,8 @@ object IndicesSettingsSimilarityDfi {
     __obj.asInstanceOf[IndicesSettingsSimilarityDfi]
   }
   
-  extension [Self <: IndicesSettingsSimilarityDfi](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndicesSettingsSimilarityDfi] (val x: Self) extends AnyVal {
     
     inline def setIndependence_measure(value: DFIIndependenceMeasure): Self = StObject.set(x, "independence_measure", value.asInstanceOf[js.Any])
     

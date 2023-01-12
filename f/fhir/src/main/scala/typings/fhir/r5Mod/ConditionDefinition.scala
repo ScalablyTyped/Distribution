@@ -194,7 +194,8 @@ object ConditionDefinition {
     __obj.asInstanceOf[ConditionDefinition]
   }
   
-  extension [Self <: ConditionDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConditionDefinition] (val x: Self) extends AnyVal {
     
     inline def setBodySite(value: CodeableConcept): Self = StObject.set(x, "bodySite", value.asInstanceOf[js.Any])
     

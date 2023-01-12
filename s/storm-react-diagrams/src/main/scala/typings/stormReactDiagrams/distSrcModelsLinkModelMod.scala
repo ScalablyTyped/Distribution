@@ -92,7 +92,8 @@ object distSrcModelsLinkModelMod {
       __obj.asInstanceOf[LinkModelListener]
     }
     
-    extension [Self <: LinkModelListener](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LinkModelListener] (val x: Self) extends AnyVal {
       
       inline def setSourcePortChanged(value: /* event */ BaseEventLinkModelLinkMod => Unit): Self = StObject.set(x, "sourcePortChanged", js.Any.fromFunction1(value))
       

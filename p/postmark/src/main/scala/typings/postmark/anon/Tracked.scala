@@ -17,7 +17,8 @@ object Tracked {
     __obj.asInstanceOf[Tracked]
   }
   
-  extension [Self <: Tracked](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Tracked] (val x: Self) extends AnyVal {
     
     inline def setDate(value: String): Self = StObject.set(x, "Date", value.asInstanceOf[js.Any])
     

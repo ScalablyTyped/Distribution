@@ -41,7 +41,8 @@ object Register {
     __obj.asInstanceOf[Register]
   }
   
-  extension [Self <: Register](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Register] (val x: Self) extends AnyVal {
     
     inline def setLoadHook(value: (String, js.Function) => Unit): Self = StObject.set(x, "LoadHook", js.Any.fromFunction2(value))
     

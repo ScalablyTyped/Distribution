@@ -18,7 +18,8 @@ object StockToolsGuiDefinitionsTypeChangeTypeHeikinAshiOptions {
     __obj.asInstanceOf[StockToolsGuiDefinitionsTypeChangeTypeHeikinAshiOptions]
   }
   
-  extension [Self <: StockToolsGuiDefinitionsTypeChangeTypeHeikinAshiOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StockToolsGuiDefinitionsTypeChangeTypeHeikinAshiOptions] (val x: Self) extends AnyVal {
     
     inline def setSymbol(value: String): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
     

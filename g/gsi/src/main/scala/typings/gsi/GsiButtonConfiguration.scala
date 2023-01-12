@@ -55,7 +55,8 @@ object GsiButtonConfiguration {
     __obj.asInstanceOf[GsiButtonConfiguration]
   }
   
-  extension [Self <: GsiButtonConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GsiButtonConfiguration] (val x: Self) extends AnyVal {
     
     inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     

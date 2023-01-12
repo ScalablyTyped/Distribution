@@ -183,7 +183,8 @@ object MatterWorldConfig {
     __obj.asInstanceOf[MatterWorldConfig]
   }
   
-  extension [Self <: MatterWorldConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MatterWorldConfig] (val x: Self) extends AnyVal {
     
     inline def setAutoUpdate(value: Boolean): Self = StObject.set(x, "autoUpdate", value.asInstanceOf[js.Any])
     

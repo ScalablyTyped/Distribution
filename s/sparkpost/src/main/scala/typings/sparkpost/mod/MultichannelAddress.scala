@@ -31,7 +31,8 @@ object MultichannelAddress {
     __obj.asInstanceOf[MultichannelAddress]
   }
   
-  extension [Self <: MultichannelAddress](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MultichannelAddress] (val x: Self) extends AnyVal {
     
     inline def setApp_id(value: String): Self = StObject.set(x, "app_id", value.asInstanceOf[js.Any])
     

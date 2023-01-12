@@ -22,7 +22,8 @@ object typesNotificationConfigurationFilterMod {
       __obj.asInstanceOf[NotificationConfigurationFilter]
     }
     
-    extension [Self <: NotificationConfigurationFilter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NotificationConfigurationFilter] (val x: Self) extends AnyVal {
       
       inline def setKey(value: S3KeyFilter): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
       
@@ -47,7 +48,8 @@ object typesNotificationConfigurationFilterMod {
       __obj.asInstanceOf[UnmarshalledNotificationConfigurationFilter]
     }
     
-    extension [Self <: UnmarshalledNotificationConfigurationFilter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnmarshalledNotificationConfigurationFilter] (val x: Self) extends AnyVal {
       
       inline def setKey(value: UnmarshalledS3KeyFilter): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
       

@@ -51,7 +51,8 @@ object TokenOptions {
     __obj.asInstanceOf[TokenOptions]
   }
   
-  extension [Self <: TokenOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TokenOptions] (val x: Self) extends AnyVal {
     
     inline def setFlag(value: TokenFlag): Self = StObject.set(x, "flag", value.asInstanceOf[js.Any])
     

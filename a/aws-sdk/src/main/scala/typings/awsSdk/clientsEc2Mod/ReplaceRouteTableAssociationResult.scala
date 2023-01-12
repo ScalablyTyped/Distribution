@@ -23,7 +23,8 @@ object ReplaceRouteTableAssociationResult {
     __obj.asInstanceOf[ReplaceRouteTableAssociationResult]
   }
   
-  extension [Self <: ReplaceRouteTableAssociationResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReplaceRouteTableAssociationResult] (val x: Self) extends AnyVal {
     
     inline def setAssociationState(value: RouteTableAssociationState): Self = StObject.set(x, "AssociationState", value.asInstanceOf[js.Any])
     

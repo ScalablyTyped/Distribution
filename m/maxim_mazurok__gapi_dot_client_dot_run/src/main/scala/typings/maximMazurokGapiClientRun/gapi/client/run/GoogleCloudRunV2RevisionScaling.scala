@@ -19,7 +19,8 @@ object GoogleCloudRunV2RevisionScaling {
     __obj.asInstanceOf[GoogleCloudRunV2RevisionScaling]
   }
   
-  extension [Self <: GoogleCloudRunV2RevisionScaling](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudRunV2RevisionScaling] (val x: Self) extends AnyVal {
     
     inline def setMaxInstanceCount(value: Double): Self = StObject.set(x, "maxInstanceCount", value.asInstanceOf[js.Any])
     

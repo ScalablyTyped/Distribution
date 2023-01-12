@@ -15,7 +15,8 @@ object ValueUndefined {
     __obj.asInstanceOf[ValueUndefined]
   }
   
-  extension [Self <: ValueUndefined](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ValueUndefined] (val x: Self) extends AnyVal {
     
     inline def setValue(value: Unit): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }

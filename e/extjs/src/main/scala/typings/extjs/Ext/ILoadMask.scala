@@ -137,7 +137,8 @@ object ILoadMask {
     __obj.asInstanceOf[ILoadMask]
   }
   
-  extension [Self <: ILoadMask](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ILoadMask] (val x: Self) extends AnyVal {
     
     inline def setAfterShow(value: () => Unit): Self = StObject.set(x, "afterShow", js.Any.fromFunction0(value))
     

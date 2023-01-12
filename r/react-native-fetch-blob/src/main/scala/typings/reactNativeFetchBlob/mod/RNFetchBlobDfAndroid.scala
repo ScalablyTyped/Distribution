@@ -21,7 +21,8 @@ object RNFetchBlobDfAndroid {
     __obj.asInstanceOf[RNFetchBlobDfAndroid]
   }
   
-  extension [Self <: RNFetchBlobDfAndroid](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RNFetchBlobDfAndroid] (val x: Self) extends AnyVal {
     
     inline def setExternal_free(value: String): Self = StObject.set(x, "external_free", value.asInstanceOf[js.Any])
     

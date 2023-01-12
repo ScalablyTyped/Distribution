@@ -19,7 +19,8 @@ object JsonPathMatcher {
     __obj.asInstanceOf[JsonPathMatcher]
   }
   
-  extension [Self <: JsonPathMatcher](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JsonPathMatcher] (val x: Self) extends AnyVal {
     
     inline def setJsonMatcher(value: String): Self = StObject.set(x, "jsonMatcher", value.asInstanceOf[js.Any])
     

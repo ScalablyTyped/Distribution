@@ -22,7 +22,8 @@ object importer {
       __obj.asInstanceOf[IGridImporterApi]
     }
     
-    extension [Self <: IGridImporterApi](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IGridImporterApi] (val x: Self) extends AnyVal {
       
       inline def setImportFile(value: File => Unit): Self = StObject.set(x, "importFile", js.Any.fromFunction1(value))
     }
@@ -149,7 +150,8 @@ object importer {
       __obj.asInstanceOf[typings.uiGrid.mod.importer.IGridOptions[TEntity]]
     }
     
-    extension [Self <: typings.uiGrid.mod.importer.IGridOptions[?], TEntity](x: Self & typings.uiGrid.mod.importer.IGridOptions[TEntity]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.uiGrid.mod.importer.IGridOptions[?], TEntity] (val x: Self & typings.uiGrid.mod.importer.IGridOptions[TEntity]) extends AnyVal {
       
       inline def setEnableImporter(value: Boolean): Self = StObject.set(x, "enableImporter", value.asInstanceOf[js.Any])
       
@@ -200,7 +202,8 @@ object importer {
       __obj.asInstanceOf[IUiGridImporterConstants]
     }
     
-    extension [Self <: IUiGridImporterConstants](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IUiGridImporterConstants] (val x: Self) extends AnyVal {
       
       inline def setFeatureName(value: String): Self = StObject.set(x, "featureName", value.asInstanceOf[js.Any])
     }

@@ -56,7 +56,8 @@ object PatchDeploymentId {
     __obj.asInstanceOf[PatchDeploymentId]
   }
   
-  extension [Self <: PatchDeploymentId](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PatchDeploymentId] (val x: Self) extends AnyVal {
     
     inline def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
     

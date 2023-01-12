@@ -58,7 +58,8 @@ object libEsmCommonRefsMod {
       __obj.asInstanceOf[IRefObject[T]]
     }
     
-    extension [Self <: IRefObject[?], T](x: Self & IRefObject[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IRefObject[?], T] (val x: Self & IRefObject[T]) extends AnyVal {
       
       inline def setCurrent(value: T): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
       

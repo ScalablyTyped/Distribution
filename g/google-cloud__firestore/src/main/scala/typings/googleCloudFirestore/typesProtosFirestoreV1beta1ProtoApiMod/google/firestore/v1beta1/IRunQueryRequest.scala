@@ -30,7 +30,8 @@ object IRunQueryRequest {
     __obj.asInstanceOf[IRunQueryRequest]
   }
   
-  extension [Self <: IRunQueryRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IRunQueryRequest] (val x: Self) extends AnyVal {
     
     inline def setNewTransaction(value: ITransactionOptions): Self = StObject.set(x, "newTransaction", value.asInstanceOf[js.Any])
     

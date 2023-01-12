@@ -18,7 +18,8 @@ object Measurement {
     __obj.asInstanceOf[Measurement]
   }
   
-  extension [Self <: Measurement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Measurement] (val x: Self) extends AnyVal {
     
     inline def setProcessingConfig(value: MeasurementProcessingConfig): Self = StObject.set(x, "processingConfig", value.asInstanceOf[js.Any])
     

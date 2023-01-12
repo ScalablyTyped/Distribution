@@ -16,7 +16,8 @@ object VgChannel {
     __obj.asInstanceOf[VgChannel]
   }
   
-  extension [Self <: VgChannel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VgChannel] (val x: Self) extends AnyVal {
     
     inline def setVgChannel(value: VgEncodeChannel): Self = StObject.set(x, "vgChannel", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object OriginProtocolPolicy {
     __obj.asInstanceOf[OriginProtocolPolicy]
   }
   
-  extension [Self <: OriginProtocolPolicy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OriginProtocolPolicy] (val x: Self) extends AnyVal {
     
     inline def setOriginProtocolPolicy(value: String): Self = StObject.set(x, "OriginProtocolPolicy", value.asInstanceOf[js.Any])
   }

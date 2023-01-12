@@ -32,7 +32,8 @@ object mod {
       __obj.asInstanceOf[DockerEventsOptions]
     }
     
-    extension [Self <: DockerEventsOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DockerEventsOptions] (val x: Self) extends AnyVal {
       
       inline def setDocker(value: typings.dockerode.mod.^): Self = StObject.set(x, "docker", value.asInstanceOf[js.Any])
     }

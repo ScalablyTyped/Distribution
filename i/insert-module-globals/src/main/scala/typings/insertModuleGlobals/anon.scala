@@ -36,7 +36,8 @@ object anon {
       __obj.asInstanceOf[Buffer]
     }
     
-    extension [Self <: Buffer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Buffer] (val x: Self) extends AnyVal {
       
       inline def setBuffer(value: () => String): Self = StObject.set(x, "Buffer", js.Any.fromFunction0(value))
       

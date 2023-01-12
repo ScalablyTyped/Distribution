@@ -217,7 +217,8 @@ object anon {
       __obj.asInstanceOf[FileCoverage]
     }
     
-    extension [Self <: FileCoverage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileCoverage] (val x: Self) extends AnyVal {
       
       inline def setFileCoverage(value: typings.istanbulLibCoverage.mod.FileCoverage): Self = StObject.set(x, "fileCoverage", value.asInstanceOf[js.Any])
       
@@ -251,7 +252,8 @@ object anon {
       __obj.asInstanceOf[PartialInstrumenterOption]
     }
     
-    extension [Self <: PartialInstrumenterOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialInstrumenterOption] (val x: Self) extends AnyVal {
       
       inline def setAutoWrap(value: Boolean): Self = StObject.set(x, "autoWrap", value.asInstanceOf[js.Any])
       
@@ -301,7 +303,8 @@ object anon {
       __obj.asInstanceOf[PartialVisitorOptions]
     }
     
-    extension [Self <: PartialVisitorOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialVisitorOptions] (val x: Self) extends AnyVal {
       
       inline def setCoverageVariable(value: String): Self = StObject.set(x, "coverageVariable", value.asInstanceOf[js.Any])
       

@@ -18,7 +18,8 @@ object DescribeEntityAggregatesRequest {
     __obj.asInstanceOf[DescribeEntityAggregatesRequest]
   }
   
-  extension [Self <: DescribeEntityAggregatesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeEntityAggregatesRequest] (val x: Self) extends AnyVal {
     
     inline def setEventArns(value: EventArnsList): Self = StObject.set(x, "eventArns", value.asInstanceOf[js.Any])
     

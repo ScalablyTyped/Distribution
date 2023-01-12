@@ -28,7 +28,8 @@ object ListChannelFlowsRequest {
     __obj.asInstanceOf[ListChannelFlowsRequest]
   }
   
-  extension [Self <: ListChannelFlowsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListChannelFlowsRequest] (val x: Self) extends AnyVal {
     
     inline def setAppInstanceArn(value: ChimeArn): Self = StObject.set(x, "AppInstanceArn", value.asInstanceOf[js.Any])
     

@@ -39,7 +39,8 @@ object AudioAnalysisObject {
     __obj.asInstanceOf[AudioAnalysisObject]
   }
   
-  extension [Self <: AudioAnalysisObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AudioAnalysisObject] (val x: Self) extends AnyVal {
     
     inline def setBars(value: js.Array[AudioAnalysisIntervalObject]): Self = StObject.set(x, "bars", value.asInstanceOf[js.Any])
     

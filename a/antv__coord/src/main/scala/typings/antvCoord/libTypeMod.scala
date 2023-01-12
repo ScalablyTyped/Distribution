@@ -73,7 +73,8 @@ object libTypeMod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -136,7 +137,8 @@ object libTypeMod {
       __obj.asInstanceOf[Transformer]
     }
     
-    extension [Self <: Transformer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Transformer] (val x: Self) extends AnyVal {
       
       inline def setTransform(value: /* vector */ Vector2 | Vector => Vector2 | Vector): Self = StObject.set(x, "transform", js.Any.fromFunction1(value))
       

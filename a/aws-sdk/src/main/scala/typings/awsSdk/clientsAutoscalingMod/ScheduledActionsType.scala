@@ -23,7 +23,8 @@ object ScheduledActionsType {
     __obj.asInstanceOf[ScheduledActionsType]
   }
   
-  extension [Self <: ScheduledActionsType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScheduledActionsType] (val x: Self) extends AnyVal {
     
     inline def setNextToken(value: XmlString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

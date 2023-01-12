@@ -21,7 +21,8 @@ object libIrendercomponentMod {
       __obj.asInstanceOf[IRenderComponent[TProps]]
     }
     
-    extension [Self <: IRenderComponent[?], TProps](x: Self & IRenderComponent[TProps]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IRenderComponent[?], TProps] (val x: Self & IRenderComponent[TProps]) extends AnyVal {
       
       inline def setChildren(value: TProps => Element): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
     }

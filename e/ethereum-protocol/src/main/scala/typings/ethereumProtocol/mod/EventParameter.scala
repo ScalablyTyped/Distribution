@@ -18,7 +18,8 @@ object EventParameter {
     __obj.asInstanceOf[EventParameter]
   }
   
-  extension [Self <: EventParameter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventParameter] (val x: Self) extends AnyVal {
     
     inline def setIndexed(value: Boolean): Self = StObject.set(x, "indexed", value.asInstanceOf[js.Any])
   }

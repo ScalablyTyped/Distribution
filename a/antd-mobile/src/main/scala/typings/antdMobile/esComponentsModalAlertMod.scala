@@ -218,7 +218,8 @@ object esComponentsModalAlertMod {
       __obj.asInstanceOf[ModalAlertProps]
     }
     
-    extension [Self <: ModalAlertProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ModalAlertProps] (val x: Self) extends AnyVal {
       
       inline def setAfterClose(value: () => Unit): Self = StObject.set(x, "afterClose", js.Any.fromFunction0(value))
       

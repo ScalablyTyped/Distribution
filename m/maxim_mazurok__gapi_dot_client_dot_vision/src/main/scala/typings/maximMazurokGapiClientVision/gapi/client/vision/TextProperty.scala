@@ -19,7 +19,8 @@ object TextProperty {
     __obj.asInstanceOf[TextProperty]
   }
   
-  extension [Self <: TextProperty](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextProperty] (val x: Self) extends AnyVal {
     
     inline def setDetectedBreak(value: DetectedBreak): Self = StObject.set(x, "detectedBreak", value.asInstanceOf[js.Any])
     

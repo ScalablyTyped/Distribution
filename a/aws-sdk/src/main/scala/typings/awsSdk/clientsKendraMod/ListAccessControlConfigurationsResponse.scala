@@ -23,7 +23,8 @@ object ListAccessControlConfigurationsResponse {
     __obj.asInstanceOf[ListAccessControlConfigurationsResponse]
   }
   
-  extension [Self <: ListAccessControlConfigurationsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListAccessControlConfigurationsResponse] (val x: Self) extends AnyVal {
     
     inline def setAccessControlConfigurations(value: AccessControlConfigurationSummaryList): Self = StObject.set(x, "AccessControlConfigurations", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object DownloadAccesses {
     __obj.asInstanceOf[DownloadAccesses]
   }
   
-  extension [Self <: DownloadAccesses](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DownloadAccesses] (val x: Self) extends AnyVal {
     
     inline def setDownloadAccessList(value: js.Array[DownloadAccessRestriction]): Self = StObject.set(x, "downloadAccessList", value.asInstanceOf[js.Any])
     

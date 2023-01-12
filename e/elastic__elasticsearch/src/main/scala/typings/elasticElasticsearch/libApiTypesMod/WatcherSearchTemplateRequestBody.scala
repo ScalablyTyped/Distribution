@@ -24,7 +24,8 @@ object WatcherSearchTemplateRequestBody {
     __obj.asInstanceOf[WatcherSearchTemplateRequestBody]
   }
   
-  extension [Self <: WatcherSearchTemplateRequestBody](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WatcherSearchTemplateRequestBody] (val x: Self) extends AnyVal {
     
     inline def setExplain(value: Boolean): Self = StObject.set(x, "explain", value.asInstanceOf[js.Any])
     

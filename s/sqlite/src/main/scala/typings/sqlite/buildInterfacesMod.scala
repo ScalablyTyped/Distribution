@@ -27,7 +27,8 @@ object buildInterfacesMod {
         __obj.asInstanceOf[MigrationData]
       }
       
-      extension [Self <: MigrationData](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: MigrationData] (val x: Self) extends AnyVal {
         
         inline def setDown(value: String): Self = StObject.set(x, "down", value.asInstanceOf[js.Any])
         
@@ -54,7 +55,8 @@ object buildInterfacesMod {
         __obj.asInstanceOf[MigrationFile]
       }
       
-      extension [Self <: MigrationFile](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: MigrationFile] (val x: Self) extends AnyVal {
         
         inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
         
@@ -95,7 +97,8 @@ object buildInterfacesMod {
         __obj.asInstanceOf[MigrationParams]
       }
       
-      extension [Self <: MigrationParams](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: MigrationParams] (val x: Self) extends AnyVal {
         
         inline def setForce(value: Boolean): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
         
@@ -158,7 +161,8 @@ object buildInterfacesMod {
         __obj.asInstanceOf[Config]
       }
       
-      extension [Self <: Config](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
         
         inline def setDriver(value: Any): Self = StObject.set(x, "driver", value.asInstanceOf[js.Any])
         
@@ -219,7 +223,8 @@ object buildInterfacesMod {
         __obj.asInstanceOf[RunResult[Stmt]]
       }
       
-      extension [Self <: RunResult[?], Stmt /* <: Statement */](x: Self & RunResult[Stmt]) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: RunResult[?], Stmt /* <: Statement */] (val x: Self & RunResult[Stmt]) extends AnyVal {
         
         inline def setChanges(value: Double): Self = StObject.set(x, "changes", value.asInstanceOf[js.Any])
         
@@ -246,7 +251,8 @@ object buildInterfacesMod {
         __obj.asInstanceOf[SqlObj]
       }
       
-      extension [Self <: SqlObj](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SqlObj] (val x: Self) extends AnyVal {
         
         inline def setParams(value: js.Array[Any]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
         

@@ -56,7 +56,8 @@ object VoxelVariableRenderingFormat {
     __obj.asInstanceOf[VoxelVariableRenderingFormat]
   }
   
-  extension [Self <: VoxelVariableRenderingFormat](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VoxelVariableRenderingFormat] (val x: Self) extends AnyVal {
     
     inline def setContinuity(value: discrete | continuous): Self = StObject.set(x, "continuity", value.asInstanceOf[js.Any])
     

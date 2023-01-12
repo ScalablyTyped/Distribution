@@ -19,7 +19,8 @@ object GoogleCloudVideointelligenceV1beta2VideoSegment {
     __obj.asInstanceOf[GoogleCloudVideointelligenceV1beta2VideoSegment]
   }
   
-  extension [Self <: GoogleCloudVideointelligenceV1beta2VideoSegment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudVideointelligenceV1beta2VideoSegment] (val x: Self) extends AnyVal {
     
     inline def setEndTimeOffset(value: String): Self = StObject.set(x, "endTimeOffset", value.asInstanceOf[js.Any])
     

@@ -29,7 +29,8 @@ object PropertyValue {
     __obj.asInstanceOf[PropertyValue]
   }
   
-  extension [Self <: PropertyValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PropertyValue] (val x: Self) extends AnyVal {
     
     inline def setChangedItem(value: ViewSettingsItem): Self = StObject.set(x, "changedItem", value.asInstanceOf[js.Any])
     

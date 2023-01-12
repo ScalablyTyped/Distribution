@@ -28,7 +28,8 @@ object AddJobFlowStepsInput {
     __obj.asInstanceOf[AddJobFlowStepsInput]
   }
   
-  extension [Self <: AddJobFlowStepsInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AddJobFlowStepsInput] (val x: Self) extends AnyVal {
     
     inline def setExecutionRoleArn(value: ArnType): Self = StObject.set(x, "ExecutionRoleArn", value.asInstanceOf[js.Any])
     

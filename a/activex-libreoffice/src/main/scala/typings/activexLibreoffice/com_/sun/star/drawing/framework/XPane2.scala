@@ -50,7 +50,8 @@ object XPane2 {
     __obj.asInstanceOf[XPane2]
   }
   
-  extension [Self <: XPane2](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XPane2] (val x: Self) extends AnyVal {
     
     inline def setAccessible(value: XAccessible): Self = StObject.set(x, "Accessible", value.asInstanceOf[js.Any])
     

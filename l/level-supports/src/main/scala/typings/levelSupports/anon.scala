@@ -53,7 +53,8 @@ object anon {
       __obj.asInstanceOf[PartialIManifest]
     }
     
-    extension [Self <: PartialIManifest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialIManifest] (val x: Self) extends AnyVal {
       
       inline def setAdditionalMethods(value: Record[String, Boolean]): Self = StObject.set(x, "additionalMethods", value.asInstanceOf[js.Any])
       

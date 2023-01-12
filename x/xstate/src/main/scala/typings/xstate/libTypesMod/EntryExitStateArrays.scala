@@ -31,7 +31,8 @@ object EntryExitStateArrays {
     __obj.asInstanceOf[EntryExitStateArrays[TContext]]
   }
   
-  extension [Self <: EntryExitStateArrays[?], TContext](x: Self & EntryExitStateArrays[TContext]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EntryExitStateArrays[?], TContext] (val x: Self & EntryExitStateArrays[TContext]) extends AnyVal {
     
     inline def setEntry(
       value: js.Array[

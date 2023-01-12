@@ -16,7 +16,8 @@ object VisualizationOptions {
     __obj.asInstanceOf[VisualizationOptions]
   }
   
-  extension [Self <: VisualizationOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VisualizationOptions] (val x: Self) extends AnyVal {
     
     inline def setType(value: VisualizationType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

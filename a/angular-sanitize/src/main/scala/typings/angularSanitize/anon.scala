@@ -21,7 +21,8 @@ object anon {
       __obj.asInstanceOf[HtmlElements]
     }
     
-    extension [Self <: HtmlElements](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HtmlElements] (val x: Self) extends AnyVal {
       
       inline def setHtmlElements(value: js.Array[String]): Self = StObject.set(x, "htmlElements", value.asInstanceOf[js.Any])
       

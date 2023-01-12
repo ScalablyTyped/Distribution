@@ -19,7 +19,8 @@ object Baseref {
     __obj.asInstanceOf[Baseref]
   }
   
-  extension [Self <: Baseref](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Baseref] (val x: Self) extends AnyVal {
     
     inline def setBase_ref(value: String): Self = StObject.set(x, "base_ref", value.asInstanceOf[js.Any])
     

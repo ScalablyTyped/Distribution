@@ -168,13 +168,15 @@ object libAttachmentmodelMod {
         __obj.asInstanceOf[IOptions]
       }
       
-      extension [Self <: IOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
         
         inline def setValue(value: IMimeBundle): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       }
     }
     
-    extension [Self <: IAttachmentModel](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IAttachmentModel] (val x: Self) extends AnyVal {
       
       inline def setChanged(value: ISignal[IAttachmentModel, Unit]): Self = StObject.set(x, "changed", value.asInstanceOf[js.Any])
       

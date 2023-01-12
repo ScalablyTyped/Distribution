@@ -18,7 +18,8 @@ object DissociatePackageResponse {
     __obj.asInstanceOf[DissociatePackageResponse]
   }
   
-  extension [Self <: DissociatePackageResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DissociatePackageResponse] (val x: Self) extends AnyVal {
     
     inline def setDomainPackageDetails(value: DomainPackageDetails): Self = StObject.set(x, "DomainPackageDetails", value.asInstanceOf[js.Any])
     

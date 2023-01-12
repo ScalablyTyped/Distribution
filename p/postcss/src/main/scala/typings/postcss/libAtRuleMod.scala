@@ -88,7 +88,8 @@ object libAtRuleMod {
       __obj.asInstanceOf[AtRuleProps]
     }
     
-    extension [Self <: AtRuleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AtRuleProps] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -143,7 +144,8 @@ object libAtRuleMod {
       __obj.asInstanceOf[AtRuleRaws]
     }
     
-    extension [Self <: AtRuleRaws](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AtRuleRaws] (val x: Self) extends AnyVal {
       
       inline def setAfter(value: String): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
       

@@ -28,7 +28,8 @@ object CreateTokenResponse {
     __obj.asInstanceOf[CreateTokenResponse]
   }
   
-  extension [Self <: CreateTokenResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateTokenResponse] (val x: Self) extends AnyVal {
     
     inline def setToken(value: TokenString): Self = StObject.set(x, "Token", value.asInstanceOf[js.Any])
     

@@ -49,7 +49,8 @@ object anon {
       __obj.asInstanceOf[App]
     }
     
-    extension [Self <: App](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: App] (val x: Self) extends AnyVal {
       
       inline def setApp(value: String): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
       
@@ -121,7 +122,8 @@ object anon {
       __obj.asInstanceOf[AppSettings]
     }
     
-    extension [Self <: AppSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AppSettings] (val x: Self) extends AnyVal {
       
       inline def setAppSettings(value: String): Self = StObject.set(x, "appSettings", value.asInstanceOf[js.Any])
       
@@ -154,7 +156,8 @@ object anon {
       __obj.asInstanceOf[Browser]
     }
     
-    extension [Self <: Browser](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Browser] (val x: Self) extends AnyVal {
       
       inline def setBrowser(value: String): Self = StObject.set(x, "browser", value.asInstanceOf[js.Any])
       
@@ -175,7 +178,8 @@ object anon {
       __obj.asInstanceOf[Matches]
     }
     
-    extension [Self <: Matches](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Matches] (val x: Self) extends AnyVal {
       
       inline def setMatches(value: js.Array[String]): Self = StObject.set(x, "matches", value.asInstanceOf[js.Any])
       
@@ -199,7 +203,8 @@ object anon {
       __obj.asInstanceOf[PartialIConfig]
     }
     
-    extension [Self <: PartialIConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialIConfig] (val x: Self) extends AnyVal {
       
       inline def setHiddenMode(value: display | scale): Self = StObject.set(x, "hiddenMode", value.asInstanceOf[js.Any])
       
@@ -221,7 +226,8 @@ object anon {
       __obj.asInstanceOf[PartialIPaths]
     }
     
-    extension [Self <: PartialIPaths](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialIPaths] (val x: Self) extends AnyVal {
       
       inline def setDirectories(value: AppSettings): Self = StObject.set(x, "directories", value.asInstanceOf[js.Any])
       

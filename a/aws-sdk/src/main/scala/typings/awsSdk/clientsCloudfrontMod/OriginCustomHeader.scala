@@ -23,7 +23,8 @@ object OriginCustomHeader {
     __obj.asInstanceOf[OriginCustomHeader]
   }
   
-  extension [Self <: OriginCustomHeader](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OriginCustomHeader] (val x: Self) extends AnyVal {
     
     inline def setHeaderName(value: String): Self = StObject.set(x, "HeaderName", value.asInstanceOf[js.Any])
     

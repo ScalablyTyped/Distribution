@@ -37,7 +37,8 @@ object GetLensVersionDifferenceOutput {
     __obj.asInstanceOf[GetLensVersionDifferenceOutput]
   }
   
-  extension [Self <: GetLensVersionDifferenceOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetLensVersionDifferenceOutput] (val x: Self) extends AnyVal {
     
     inline def setBaseLensVersion(value: LensVersion): Self = StObject.set(x, "BaseLensVersion", value.asInstanceOf[js.Any])
     

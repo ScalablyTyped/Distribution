@@ -1555,7 +1555,8 @@ object sapUiWebcMainListMod {
       __obj.asInstanceOf[ListSettings]
     }
     
-    extension [Self <: ListSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListSettings] (val x: Self) extends AnyVal {
       
       inline def setAccessibleName(value: String | PropertyBindingInfo): Self = StObject.set(x, "accessibleName", value.asInstanceOf[js.Any])
       

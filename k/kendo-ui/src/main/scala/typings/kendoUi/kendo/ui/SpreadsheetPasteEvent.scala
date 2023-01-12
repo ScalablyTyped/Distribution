@@ -20,7 +20,8 @@ object SpreadsheetPasteEvent {
     __obj.asInstanceOf[SpreadsheetPasteEvent]
   }
   
-  extension [Self <: SpreadsheetPasteEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpreadsheetPasteEvent] (val x: Self) extends AnyVal {
     
     inline def setClipboardContent(value: Any): Self = StObject.set(x, "clipboardContent", value.asInstanceOf[js.Any])
     

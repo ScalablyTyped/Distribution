@@ -55,7 +55,8 @@ object Android {
     __obj.asInstanceOf[Android]
   }
   
-  extension [Self <: Android](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Android] (val x: Self) extends AnyVal {
     
     inline def setAndroid(
       value: ComponentType[PickRemoveChildrenComponeAccessibilityIgnoresInvertColors] & (NonReactStatics[

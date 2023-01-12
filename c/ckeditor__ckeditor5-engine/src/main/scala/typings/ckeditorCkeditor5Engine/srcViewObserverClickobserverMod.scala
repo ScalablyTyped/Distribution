@@ -36,7 +36,8 @@ object srcViewObserverClickobserverMod {
         __obj.asInstanceOf[Observers]
       }
       
-      extension [Self <: Observers](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Observers] (val x: Self) extends AnyVal {
         
         inline def setClickObserver(value: ClickObserver): Self = StObject.set(x, "ClickObserver", value.asInstanceOf[js.Any])
       }

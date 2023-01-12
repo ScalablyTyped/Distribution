@@ -25,7 +25,8 @@ object ClusterPutComponentTemplateRequest {
     __obj.asInstanceOf[ClusterPutComponentTemplateRequest]
   }
   
-  extension [Self <: ClusterPutComponentTemplateRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClusterPutComponentTemplateRequest] (val x: Self) extends AnyVal {
     
     inline def setBody(value: Aliases): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

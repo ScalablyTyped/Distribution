@@ -23,7 +23,8 @@ object ChangeStreamDocumentOperationDescription {
     __obj.asInstanceOf[ChangeStreamDocumentOperationDescription]
   }
   
-  extension [Self <: ChangeStreamDocumentOperationDescription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChangeStreamDocumentOperationDescription] (val x: Self) extends AnyVal {
     
     inline def setOperationDescription(value: Document): Self = StObject.set(x, "operationDescription", value.asInstanceOf[js.Any])
     

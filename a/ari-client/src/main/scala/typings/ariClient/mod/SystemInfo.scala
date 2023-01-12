@@ -23,7 +23,8 @@ object SystemInfo {
     __obj.asInstanceOf[SystemInfo]
   }
   
-  extension [Self <: SystemInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SystemInfo] (val x: Self) extends AnyVal {
     
     inline def setEntity_id(value: String): Self = StObject.set(x, "entity_id", value.asInstanceOf[js.Any])
     

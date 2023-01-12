@@ -33,7 +33,8 @@ object BreakpointLocationsResponse {
     __obj.asInstanceOf[BreakpointLocationsResponse]
   }
   
-  extension [Self <: BreakpointLocationsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BreakpointLocationsResponse] (val x: Self) extends AnyVal {
     
     inline def setBody(value: Breakpoints): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
   }

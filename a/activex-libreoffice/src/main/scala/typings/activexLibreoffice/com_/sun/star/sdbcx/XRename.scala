@@ -29,7 +29,8 @@ object XRename {
     __obj.asInstanceOf[XRename]
   }
   
-  extension [Self <: XRename](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XRename] (val x: Self) extends AnyVal {
     
     inline def setRename(value: String => Unit): Self = StObject.set(x, "rename", js.Any.fromFunction1(value))
   }

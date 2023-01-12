@@ -16,7 +16,8 @@ object DependencyTemplate {
     __obj.asInstanceOf[DependencyTemplate]
   }
   
-  extension [Self <: DependencyTemplate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DependencyTemplate] (val x: Self) extends AnyVal {
     
     inline def setApply(value: (Dependency, ReplaceSource, DependencyTemplateContext) => Unit): Self = StObject.set(x, "apply", js.Any.fromFunction3(value))
   }

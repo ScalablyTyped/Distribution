@@ -18,7 +18,8 @@ object SubmitAttachmentStateChangesResponse {
     __obj.asInstanceOf[SubmitAttachmentStateChangesResponse]
   }
   
-  extension [Self <: SubmitAttachmentStateChangesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubmitAttachmentStateChangesResponse] (val x: Self) extends AnyVal {
     
     inline def setAcknowledgment(value: String): Self = StObject.set(x, "acknowledgment", value.asInstanceOf[js.Any])
     

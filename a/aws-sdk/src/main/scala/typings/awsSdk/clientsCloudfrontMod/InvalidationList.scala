@@ -43,7 +43,8 @@ object InvalidationList {
     __obj.asInstanceOf[InvalidationList]
   }
   
-  extension [Self <: InvalidationList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InvalidationList] (val x: Self) extends AnyVal {
     
     inline def setIsTruncated(value: Boolean): Self = StObject.set(x, "IsTruncated", value.asInstanceOf[js.Any])
     

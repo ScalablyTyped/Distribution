@@ -16,7 +16,8 @@ object FileIODetails {
     __obj.asInstanceOf[FileIODetails]
   }
   
-  extension [Self <: FileIODetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FileIODetails] (val x: Self) extends AnyVal {
     
     inline def setFilePattern(value: String): Self = StObject.set(x, "filePattern", value.asInstanceOf[js.Any])
     

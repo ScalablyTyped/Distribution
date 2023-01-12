@@ -32,7 +32,8 @@ object GameClubButton {
     __obj.asInstanceOf[GameClubButton]
   }
   
-  extension [Self <: GameClubButton](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GameClubButton] (val x: Self) extends AnyVal {
     
     inline def setIcon(value: GameClubButtonIcon): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
   }

@@ -67,7 +67,8 @@ object ICandleStick {
     __obj.asInstanceOf[ICandleStick]
   }
   
-  extension [Self <: ICandleStick](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICandleStick] (val x: Self) extends AnyVal {
     
     inline def setCloseField(value: String): Self = StObject.set(x, "closeField", value.asInstanceOf[js.Any])
     

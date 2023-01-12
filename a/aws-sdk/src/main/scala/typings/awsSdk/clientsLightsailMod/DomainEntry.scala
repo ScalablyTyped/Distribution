@@ -43,7 +43,8 @@ object DomainEntry {
     __obj.asInstanceOf[DomainEntry]
   }
   
-  extension [Self <: DomainEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DomainEntry] (val x: Self) extends AnyVal {
     
     inline def setId(value: NonEmptyString): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object CodeDeliveryDetailsType {
     __obj.asInstanceOf[CodeDeliveryDetailsType]
   }
   
-  extension [Self <: CodeDeliveryDetailsType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CodeDeliveryDetailsType] (val x: Self) extends AnyVal {
     
     inline def setAttributeName(value: AttributeNameType): Self = StObject.set(x, "AttributeName", value.asInstanceOf[js.Any])
     

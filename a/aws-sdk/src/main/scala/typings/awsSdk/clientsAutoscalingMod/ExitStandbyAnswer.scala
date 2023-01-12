@@ -18,7 +18,8 @@ object ExitStandbyAnswer {
     __obj.asInstanceOf[ExitStandbyAnswer]
   }
   
-  extension [Self <: ExitStandbyAnswer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExitStandbyAnswer] (val x: Self) extends AnyVal {
     
     inline def setActivities(value: Activities): Self = StObject.set(x, "Activities", value.asInstanceOf[js.Any])
     

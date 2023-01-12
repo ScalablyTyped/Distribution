@@ -32,7 +32,8 @@ object IValue {
     __obj.asInstanceOf[IValue[T]]
   }
   
-  extension [Self <: IValue[?], T](x: Self & IValue[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IValue[?], T] (val x: Self & IValue[T]) extends AnyVal {
     
     inline def setCurrent(value: T): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
     

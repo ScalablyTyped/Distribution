@@ -22,7 +22,8 @@ object FirstTangent {
     __obj.asInstanceOf[FirstTangent]
   }
   
-  extension [Self <: FirstTangent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FirstTangent] (val x: Self) extends AnyVal {
     
     inline def setFirstTangent(value: Cartesian3): Self = StObject.set(x, "firstTangent", value.asInstanceOf[js.Any])
     

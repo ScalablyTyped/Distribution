@@ -18,7 +18,8 @@ object PointAssignment {
     __obj.asInstanceOf[PointAssignment]
   }
   
-  extension [Self <: PointAssignment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PointAssignment] (val x: Self) extends AnyVal {
     
     inline def setConfiguration(value: ShallowReference): Self = StObject.set(x, "configuration", value.asInstanceOf[js.Any])
     

@@ -58,7 +58,8 @@ object GlobalCluster {
     __obj.asInstanceOf[GlobalCluster]
   }
   
-  extension [Self <: GlobalCluster](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GlobalCluster] (val x: Self) extends AnyVal {
     
     inline def setDeletionProtection(value: BooleanOptional): Self = StObject.set(x, "DeletionProtection", value.asInstanceOf[js.Any])
     

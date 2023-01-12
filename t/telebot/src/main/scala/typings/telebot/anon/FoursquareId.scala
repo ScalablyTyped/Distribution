@@ -21,7 +21,8 @@ object FoursquareId {
     __obj.asInstanceOf[FoursquareId]
   }
   
-  extension [Self <: FoursquareId](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FoursquareId] (val x: Self) extends AnyVal {
     
     inline def setFoursquareId(value: String): Self = StObject.set(x, "foursquareId", value.asInstanceOf[js.Any])
     

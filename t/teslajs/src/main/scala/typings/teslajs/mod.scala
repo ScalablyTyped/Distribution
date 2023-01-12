@@ -386,7 +386,8 @@ object mod {
       __obj.asInstanceOf[Credentials]
     }
     
-    extension [Self <: Credentials](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Credentials] (val x: Self) extends AnyVal {
       
       inline def setMfaDeviceName(value: String): Self = StObject.set(x, "mfaDeviceName", value.asInstanceOf[js.Any])
       
@@ -415,7 +416,8 @@ object mod {
       __obj.asInstanceOf[Result]
     }
     
-    extension [Self <: Result](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Result] (val x: Self) extends AnyVal {
       
       inline def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
       
@@ -440,7 +442,8 @@ object mod {
       __obj.asInstanceOf[TokenResponse]
     }
     
-    extension [Self <: TokenResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TokenResponse] (val x: Self) extends AnyVal {
       
       inline def setAuthToken(value: String): Self = StObject.set(x, "authToken", value.asInstanceOf[js.Any])
       
@@ -467,7 +470,8 @@ object mod {
       __obj.asInstanceOf[Vehicle_]
     }
     
-    extension [Self <: Vehicle_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Vehicle_] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -492,7 +496,8 @@ object mod {
       __obj.asInstanceOf[optionsType]
     }
     
-    extension [Self <: optionsType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: optionsType] (val x: Self) extends AnyVal {
       
       inline def setAuthToken(value: String): Self = StObject.set(x, "authToken", value.asInstanceOf[js.Any])
       

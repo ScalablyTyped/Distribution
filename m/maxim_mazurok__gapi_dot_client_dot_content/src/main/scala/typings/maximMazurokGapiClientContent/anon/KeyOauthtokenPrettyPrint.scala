@@ -51,7 +51,8 @@ object KeyOauthtokenPrettyPrint {
     __obj.asInstanceOf[KeyOauthtokenPrettyPrint]
   }
   
-  extension [Self <: KeyOauthtokenPrettyPrint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KeyOauthtokenPrettyPrint] (val x: Self) extends AnyVal {
     
     inline def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object DescribeTargetGroupsOutput {
     __obj.asInstanceOf[DescribeTargetGroupsOutput]
   }
   
-  extension [Self <: DescribeTargetGroupsOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeTargetGroupsOutput] (val x: Self) extends AnyVal {
     
     inline def setNextMarker(value: Marker): Self = StObject.set(x, "NextMarker", value.asInstanceOf[js.Any])
     

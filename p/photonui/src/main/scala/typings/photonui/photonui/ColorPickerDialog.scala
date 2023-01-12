@@ -69,7 +69,8 @@ object ColorPickerDialog {
     __obj.asInstanceOf[ColorPickerDialog]
   }
   
-  extension [Self <: ColorPickerDialog](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ColorPickerDialog] (val x: Self) extends AnyVal {
     
     inline def setColor(value: Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
   }

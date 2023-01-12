@@ -92,7 +92,8 @@ object mod {
       __obj.asInstanceOf[ReadableStreamBufferOptions]
     }
     
-    extension [Self <: ReadableStreamBufferOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadableStreamBufferOptions] (val x: Self) extends AnyVal {
       
       inline def setAllocSize(value: Double): Self = StObject.set(x, "allocSize", value.asInstanceOf[js.Any])
       
@@ -123,7 +124,8 @@ object mod {
       __obj.asInstanceOf[WritableStreamBufferOptions]
     }
     
-    extension [Self <: WritableStreamBufferOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WritableStreamBufferOptions] (val x: Self) extends AnyVal {
       
       inline def setAllocSize(value: Double): Self = StObject.set(x, "allocSize", value.asInstanceOf[js.Any])
       

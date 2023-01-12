@@ -18,7 +18,8 @@ object TlsContext {
     __obj.asInstanceOf[TlsContext]
   }
   
-  extension [Self <: TlsContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TlsContext] (val x: Self) extends AnyVal {
     
     inline def setServerName(value: ServerName): Self = StObject.set(x, "serverName", value.asInstanceOf[js.Any])
     

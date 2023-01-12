@@ -16,7 +16,8 @@ object InspectionInferedType {
     __obj.asInstanceOf[InspectionInferedType]
   }
   
-  extension [Self <: InspectionInferedType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InspectionInferedType] (val x: Self) extends AnyVal {
     
     inline def setType(value: InspectionType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

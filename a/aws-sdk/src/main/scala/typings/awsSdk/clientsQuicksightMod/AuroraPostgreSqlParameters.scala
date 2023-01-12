@@ -28,7 +28,8 @@ object AuroraPostgreSqlParameters {
     __obj.asInstanceOf[AuroraPostgreSqlParameters]
   }
   
-  extension [Self <: AuroraPostgreSqlParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AuroraPostgreSqlParameters] (val x: Self) extends AnyVal {
     
     inline def setDatabase(value: Database): Self = StObject.set(x, "Database", value.asInstanceOf[js.Any])
     

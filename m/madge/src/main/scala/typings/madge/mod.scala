@@ -192,7 +192,8 @@ object mod {
       __obj.asInstanceOf[MadgeConfig]
     }
     
-    extension [Self <: MadgeConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MadgeConfig] (val x: Self) extends AnyVal {
       
       inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
       
@@ -389,7 +390,8 @@ object mod {
       __obj.asInstanceOf[MadgeWarnings]
     }
     
-    extension [Self <: MadgeWarnings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MadgeWarnings] (val x: Self) extends AnyVal {
       
       inline def setSkipped(value: js.Array[String]): Self = StObject.set(x, "skipped", value.asInstanceOf[js.Any])
       

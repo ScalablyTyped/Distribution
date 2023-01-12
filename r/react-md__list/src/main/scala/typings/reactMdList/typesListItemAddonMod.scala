@@ -82,7 +82,8 @@ object typesListItemAddonMod {
       __obj.asInstanceOf[ListItemAddonProps]
     }
     
-    extension [Self <: ListItemAddonProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListItemAddonProps] (val x: Self) extends AnyVal {
       
       inline def setAboveClassName(value: String): Self = StObject.set(x, "aboveClassName", value.asInstanceOf[js.Any])
       

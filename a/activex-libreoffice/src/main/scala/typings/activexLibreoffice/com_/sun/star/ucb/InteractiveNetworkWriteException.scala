@@ -27,7 +27,8 @@ object InteractiveNetworkWriteException {
     __obj.asInstanceOf[InteractiveNetworkWriteException]
   }
   
-  extension [Self <: InteractiveNetworkWriteException](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InteractiveNetworkWriteException] (val x: Self) extends AnyVal {
     
     inline def setDiagnostic(value: String): Self = StObject.set(x, "Diagnostic", value.asInstanceOf[js.Any])
   }

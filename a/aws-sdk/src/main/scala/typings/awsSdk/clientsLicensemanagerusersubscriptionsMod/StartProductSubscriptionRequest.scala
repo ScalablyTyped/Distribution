@@ -33,7 +33,8 @@ object StartProductSubscriptionRequest {
     __obj.asInstanceOf[StartProductSubscriptionRequest]
   }
   
-  extension [Self <: StartProductSubscriptionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartProductSubscriptionRequest] (val x: Self) extends AnyVal {
     
     inline def setDomain(value: String): Self = StObject.set(x, "Domain", value.asInstanceOf[js.Any])
     

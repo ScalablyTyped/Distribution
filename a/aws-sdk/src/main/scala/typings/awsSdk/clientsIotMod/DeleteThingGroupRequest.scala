@@ -23,7 +23,8 @@ object DeleteThingGroupRequest {
     __obj.asInstanceOf[DeleteThingGroupRequest]
   }
   
-  extension [Self <: DeleteThingGroupRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteThingGroupRequest] (val x: Self) extends AnyVal {
     
     inline def setExpectedVersion(value: OptionalVersion): Self = StObject.set(x, "expectedVersion", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object ITraditionalFolderContents {
     __obj.asInstanceOf[ITraditionalFolderContents]
   }
   
-  extension [Self <: ITraditionalFolderContents](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ITraditionalFolderContents] (val x: Self) extends AnyVal {
     
     inline def setID(value: Double): Self = StObject.set(x, "ID", value.asInstanceOf[js.Any])
     

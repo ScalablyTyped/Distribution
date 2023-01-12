@@ -34,7 +34,8 @@ object ATVScreenSaverPhoto {
     __obj.asInstanceOf[ATVScreenSaverPhoto]
   }
   
-  extension [Self <: ATVScreenSaverPhoto](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ATVScreenSaverPhoto] (val x: Self) extends AnyVal {
     
     inline def setAssets(value: js.Array[ATVScreenSaverPhotoAsset]): Self = StObject.set(x, "assets", value.asInstanceOf[js.Any])
     

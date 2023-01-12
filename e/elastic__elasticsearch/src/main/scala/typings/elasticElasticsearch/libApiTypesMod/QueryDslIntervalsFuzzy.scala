@@ -25,7 +25,8 @@ object QueryDslIntervalsFuzzy {
     __obj.asInstanceOf[QueryDslIntervalsFuzzy]
   }
   
-  extension [Self <: QueryDslIntervalsFuzzy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryDslIntervalsFuzzy] (val x: Self) extends AnyVal {
     
     inline def setAnalyzer(value: String): Self = StObject.set(x, "analyzer", value.asInstanceOf[js.Any])
     

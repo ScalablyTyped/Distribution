@@ -231,7 +231,8 @@ object mod {
       __obj.asInstanceOf[DatasourceOptions]
     }
     
-    extension [Self <: DatasourceOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DatasourceOptions] (val x: Self) extends AnyVal {
       
       inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
       
@@ -260,7 +261,8 @@ object mod {
       __obj.asInstanceOf[MapOptions]
     }
     
-    extension [Self <: MapOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MapOptions] (val x: Self) extends AnyVal {
       
       inline def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
     }

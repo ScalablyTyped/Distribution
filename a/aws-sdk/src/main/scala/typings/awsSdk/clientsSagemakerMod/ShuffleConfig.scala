@@ -18,7 +18,8 @@ object ShuffleConfig {
     __obj.asInstanceOf[ShuffleConfig]
   }
   
-  extension [Self <: ShuffleConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShuffleConfig] (val x: Self) extends AnyVal {
     
     inline def setSeed(value: Seed): Self = StObject.set(x, "Seed", value.asInstanceOf[js.Any])
   }

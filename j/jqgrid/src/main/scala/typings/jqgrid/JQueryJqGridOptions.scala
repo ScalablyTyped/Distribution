@@ -227,7 +227,8 @@ object JQueryJqGridOptions {
     __obj.asInstanceOf[JQueryJqGridOptions]
   }
   
-  extension [Self <: JQueryJqGridOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JQueryJqGridOptions] (val x: Self) extends AnyVal {
     
     inline def setAutoWidth(value: Boolean): Self = StObject.set(x, "autoWidth", value.asInstanceOf[js.Any])
     

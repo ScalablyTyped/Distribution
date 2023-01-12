@@ -98,7 +98,8 @@ object GetBatchPredictionOutput {
     __obj.asInstanceOf[GetBatchPredictionOutput]
   }
   
-  extension [Self <: GetBatchPredictionOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetBatchPredictionOutput] (val x: Self) extends AnyVal {
     
     inline def setBatchPredictionDataSourceId(value: EntityId): Self = StObject.set(x, "BatchPredictionDataSourceId", value.asInstanceOf[js.Any])
     

@@ -76,7 +76,8 @@ object DensityTransform {
     __obj.asInstanceOf[DensityTransform]
   }
   
-  extension [Self <: DensityTransform](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DensityTransform] (val x: Self) extends AnyVal {
     
     inline def setAs(value: js.Tuple2[FieldName, FieldName]): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
     

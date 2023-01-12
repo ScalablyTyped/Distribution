@@ -38,7 +38,8 @@ object IFindChainsOptions {
     __obj.asInstanceOf[IFindChainsOptions]
   }
   
-  extension [Self <: IFindChainsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IFindChainsOptions] (val x: Self) extends AnyVal {
     
     inline def setByLayers(value: Boolean): Self = StObject.set(x, "byLayers", value.asInstanceOf[js.Any])
     

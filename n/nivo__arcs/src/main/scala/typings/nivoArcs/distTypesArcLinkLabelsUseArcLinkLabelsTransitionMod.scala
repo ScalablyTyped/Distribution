@@ -58,7 +58,8 @@ object distTypesArcLinkLabelsUseArcLinkLabelsTransitionMod {
       __obj.asInstanceOf[AnimatedProps]
     }
     
-    extension [Self <: AnimatedProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AnimatedProps] (val x: Self) extends AnyVal {
       
       inline def setDiagonalLength(value: Double): Self = StObject.set(x, "diagonalLength", value.asInstanceOf[js.Any])
       

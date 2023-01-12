@@ -86,7 +86,8 @@ object CSVLayerCapabilitiesOperations {
     __obj.asInstanceOf[CSVLayerCapabilitiesOperations]
   }
   
-  extension [Self <: CSVLayerCapabilitiesOperations](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CSVLayerCapabilitiesOperations] (val x: Self) extends AnyVal {
     
     inline def setSupportsAdd(value: Boolean): Self = StObject.set(x, "supportsAdd", value.asInstanceOf[js.Any])
     

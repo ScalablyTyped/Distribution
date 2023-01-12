@@ -29,7 +29,8 @@ object SlideProperties {
     __obj.asInstanceOf[SlideProperties]
   }
   
-  extension [Self <: SlideProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SlideProperties] (val x: Self) extends AnyVal {
     
     inline def setIsSkipped(value: Boolean): Self = StObject.set(x, "isSkipped", value.asInstanceOf[js.Any])
     

@@ -35,7 +35,8 @@ object ICustomSlider {
     __obj.asInstanceOf[ICustomSlider]
   }
   
-  extension [Self <: ICustomSlider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICustomSlider] (val x: Self) extends AnyVal {
     
     inline def setComponent(value: slider): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
     

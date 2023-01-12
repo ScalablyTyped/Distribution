@@ -32,7 +32,8 @@ object SuiteUpdateModel {
     __obj.asInstanceOf[SuiteUpdateModel]
   }
   
-  extension [Self <: SuiteUpdateModel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SuiteUpdateModel] (val x: Self) extends AnyVal {
     
     inline def setDefaultConfigurations(value: js.Array[ShallowReference]): Self = StObject.set(x, "defaultConfigurations", value.asInstanceOf[js.Any])
     

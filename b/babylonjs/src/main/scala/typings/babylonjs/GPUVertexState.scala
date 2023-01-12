@@ -17,7 +17,8 @@ object GPUVertexState {
     __obj.asInstanceOf[GPUVertexState]
   }
   
-  extension [Self <: GPUVertexState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GPUVertexState] (val x: Self) extends AnyVal {
     
     inline def setBuffers(value: js.Array[GPUVertexBufferLayout]): Self = StObject.set(x, "buffers", value.asInstanceOf[js.Any])
     

@@ -25,7 +25,8 @@ object CommandList {
     __obj.asInstanceOf[CommandList]
   }
   
-  extension [Self <: CommandList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CommandList] (val x: Self) extends AnyVal {
     
     inline def setCommandList(
       value: js.Array[

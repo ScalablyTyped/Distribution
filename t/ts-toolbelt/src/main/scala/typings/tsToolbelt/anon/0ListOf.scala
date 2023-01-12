@@ -25,7 +25,8 @@ object `0ListOf` {
     __obj.asInstanceOf[`0ListOf`[O, K, I, LN]]
   }
   
-  extension [Self <: `0ListOf`[?, ?, ?, ?], O /* <: js.Object */, K, I /* <: Iteration */, LN /* <: typings.tsToolbelt.outListListMod.List[Any] */](x: Self & (`0ListOf`[O, K, I, LN])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: `0ListOf`[?, ?, ?, ?], O /* <: js.Object */, K, I /* <: Iteration */, LN /* <: typings.tsToolbelt.outListListMod.List[Any] */] (val x: Self & (`0ListOf`[O, K, I, LN])) extends AnyVal {
     
     inline def set0(value: ___ListOf[O, Exclude[K, Key[I]], AppendExists[O, LN, I], Next[I]]): Self = StObject.set(x, "0", value.asInstanceOf[js.Any])
     

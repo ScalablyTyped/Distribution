@@ -16,7 +16,8 @@ object BatchCreateJobsRequest {
     __obj.asInstanceOf[BatchCreateJobsRequest]
   }
   
-  extension [Self <: BatchCreateJobsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchCreateJobsRequest] (val x: Self) extends AnyVal {
     
     inline def setJobs(value: js.Array[Job]): Self = StObject.set(x, "jobs", value.asInstanceOf[js.Any])
     

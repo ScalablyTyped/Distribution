@@ -56,7 +56,8 @@ object distCommonjsCollectionsBreadcrumbBreadcrumbDividerMod extends Shortcut {
       __obj.asInstanceOf[StrictBreadcrumbDividerProps]
     }
     
-    extension [Self <: StrictBreadcrumbDividerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StrictBreadcrumbDividerProps] (val x: Self) extends AnyVal {
       
       inline def setAs(value: Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       

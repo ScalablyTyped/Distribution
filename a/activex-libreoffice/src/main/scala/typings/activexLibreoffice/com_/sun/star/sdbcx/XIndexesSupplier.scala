@@ -37,7 +37,8 @@ object XIndexesSupplier {
     __obj.asInstanceOf[XIndexesSupplier]
   }
   
-  extension [Self <: XIndexesSupplier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XIndexesSupplier] (val x: Self) extends AnyVal {
     
     inline def setGetIndexes(value: () => XNameAccess): Self = StObject.set(x, "getIndexes", js.Any.fromFunction0(value))
     

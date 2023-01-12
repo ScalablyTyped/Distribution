@@ -34,7 +34,8 @@ object ExportResourcesRequest {
     __obj.asInstanceOf[ExportResourcesRequest]
   }
   
-  extension [Self <: ExportResourcesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExportResourcesRequest] (val x: Self) extends AnyVal {
     
     inline def setBigqueryDestination(value: GoogleCloudHealthcareV1FhirBigQueryDestination): Self = StObject.set(x, "bigqueryDestination", value.asInstanceOf[js.Any])
     

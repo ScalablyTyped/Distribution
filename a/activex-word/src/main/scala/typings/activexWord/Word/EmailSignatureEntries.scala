@@ -37,7 +37,8 @@ object EmailSignatureEntries {
     __obj.asInstanceOf[EmailSignatureEntries]
   }
   
-  extension [Self <: EmailSignatureEntries](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EmailSignatureEntries] (val x: Self) extends AnyVal {
     
     inline def setAdd(value: (String, Range) => EmailSignatureEntry): Self = StObject.set(x, "Add", js.Any.fromFunction2(value))
     

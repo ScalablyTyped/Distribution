@@ -26,7 +26,8 @@ object ListEnumerator {
     __obj.asInstanceOf[ListEnumerator[T]]
   }
   
-  extension [Self <: ListEnumerator[?], T](x: Self & ListEnumerator[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListEnumerator[?], T] (val x: Self & ListEnumerator[T]) extends AnyVal {
     
     inline def setGet_current(value: () => T): Self = StObject.set(x, "get_current", js.Any.fromFunction0(value))
     

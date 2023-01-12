@@ -39,7 +39,8 @@ object ActionContext {
     __obj.asInstanceOf[ActionContext[S, R]]
   }
   
-  extension [Self <: ActionContext[?, ?], S, R](x: Self & (ActionContext[S, R])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ActionContext[?, ?], S, R] (val x: Self & (ActionContext[S, R])) extends AnyVal {
     
     inline def setCommit(value: Commit): Self = StObject.set(x, "commit", value.asInstanceOf[js.Any])
     

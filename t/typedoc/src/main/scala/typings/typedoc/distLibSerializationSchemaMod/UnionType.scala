@@ -23,7 +23,8 @@ object UnionType {
     __obj.asInstanceOf[UnionType]
   }
   
-  extension [Self <: UnionType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UnionType] (val x: Self) extends AnyVal {
     
     inline def setType(value: ToSerialized[/* "union" */ String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

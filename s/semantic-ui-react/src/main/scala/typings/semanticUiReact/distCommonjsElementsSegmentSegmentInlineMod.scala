@@ -50,7 +50,8 @@ object distCommonjsElementsSegmentSegmentInlineMod extends Shortcut {
       __obj.asInstanceOf[StrictSegmentInlineProps]
     }
     
-    extension [Self <: StrictSegmentInlineProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StrictSegmentInlineProps] (val x: Self) extends AnyVal {
       
       inline def setAs(value: Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       

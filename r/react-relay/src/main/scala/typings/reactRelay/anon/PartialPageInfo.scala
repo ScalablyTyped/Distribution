@@ -22,7 +22,8 @@ object PartialPageInfo {
     __obj.asInstanceOf[PartialPageInfo]
   }
   
-  extension [Self <: PartialPageInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialPageInfo] (val x: Self) extends AnyVal {
     
     inline def setEndCursor(value: String): Self = StObject.set(x, "endCursor", value.asInstanceOf[js.Any])
     

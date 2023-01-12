@@ -21,7 +21,8 @@ object PeriodicWaveOptions {
     __obj.asInstanceOf[PeriodicWaveOptions]
   }
   
-  extension [Self <: PeriodicWaveOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PeriodicWaveOptions] (val x: Self) extends AnyVal {
     
     inline def setImag(value: js.Array[Double] | js.typedarray.Float32Array): Self = StObject.set(x, "imag", value.asInstanceOf[js.Any])
     

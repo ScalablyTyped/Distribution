@@ -48,7 +48,8 @@ object ProvisionedConcurrencyConfigListItem {
     __obj.asInstanceOf[ProvisionedConcurrencyConfigListItem]
   }
   
-  extension [Self <: ProvisionedConcurrencyConfigListItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProvisionedConcurrencyConfigListItem] (val x: Self) extends AnyVal {
     
     inline def setAllocatedProvisionedConcurrentExecutions(value: NonNegativeInteger): Self = StObject.set(x, "AllocatedProvisionedConcurrentExecutions", value.asInstanceOf[js.Any])
     

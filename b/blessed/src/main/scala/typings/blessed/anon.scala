@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[Bg]
     }
     
-    extension [Self <: Bg](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Bg] (val x: Self) extends AnyVal {
       
       inline def setBg(value: String): Self = StObject.set(x, "bg", value.asInstanceOf[js.Any])
       
@@ -62,7 +63,8 @@ object anon {
       __obj.asInstanceOf[BoolCount]
     }
     
-    extension [Self <: BoolCount](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BoolCount] (val x: Self) extends AnyVal {
       
       inline def setBoolCount(value: Double): Self = StObject.set(x, "boolCount", value.asInstanceOf[js.Any])
       
@@ -111,7 +113,8 @@ object anon {
       __obj.asInstanceOf[Bools]
     }
     
-    extension [Self <: Bools](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Bools] (val x: Self) extends AnyVal {
       
       inline def setBools(value: Any): Self = StObject.set(x, "bools", value.asInstanceOf[js.Any])
       
@@ -146,7 +149,8 @@ object anon {
       __obj.asInstanceOf[Ch]
     }
     
-    extension [Self <: Ch](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Ch] (val x: Self) extends AnyVal {
       
       inline def setCh(value: String): Self = StObject.set(x, "ch", value.asInstanceOf[js.Any])
       
@@ -199,7 +203,8 @@ object anon {
       __obj.asInstanceOf[DataSize]
     }
     
-    extension [Self <: DataSize](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DataSize] (val x: Self) extends AnyVal {
       
       inline def setBoolCount(value: Double): Self = StObject.set(x, "boolCount", value.asInstanceOf[js.Any])
       
@@ -234,7 +239,8 @@ object anon {
       __obj.asInstanceOf[X]
     }
     
-    extension [Self <: X](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: X] (val x: Self) extends AnyVal {
       
       inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       

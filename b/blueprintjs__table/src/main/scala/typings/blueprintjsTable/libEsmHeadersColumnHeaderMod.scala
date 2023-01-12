@@ -120,7 +120,8 @@ object libEsmHeadersColumnHeaderMod {
       __obj.asInstanceOf[IColumnWidths]
     }
     
-    extension [Self <: IColumnWidths](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IColumnWidths] (val x: Self) extends AnyVal {
       
       inline def setDefaultColumnWidth(value: Double): Self = StObject.set(x, "defaultColumnWidth", value.asInstanceOf[js.Any])
       

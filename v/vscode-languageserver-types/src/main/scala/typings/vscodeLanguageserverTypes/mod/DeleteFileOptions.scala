@@ -23,7 +23,8 @@ object DeleteFileOptions {
     __obj.asInstanceOf[DeleteFileOptions]
   }
   
-  extension [Self <: DeleteFileOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteFileOptions] (val x: Self) extends AnyVal {
     
     inline def setIgnoreIfNotExists(value: Boolean): Self = StObject.set(x, "ignoreIfNotExists", value.asInstanceOf[js.Any])
     

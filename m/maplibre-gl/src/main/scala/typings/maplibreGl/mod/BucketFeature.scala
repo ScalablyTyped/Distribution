@@ -43,7 +43,8 @@ object BucketFeature {
     __obj.asInstanceOf[BucketFeature]
   }
   
-  extension [Self <: BucketFeature](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BucketFeature] (val x: Self) extends AnyVal {
     
     inline def setGeometry(value: js.Array[js.Array[^]]): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
     

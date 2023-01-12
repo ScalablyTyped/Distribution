@@ -42,7 +42,8 @@ object PngOptions {
     __obj.asInstanceOf[PngOptions]
   }
   
-  extension [Self <: PngOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PngOptions] (val x: Self) extends AnyVal {
     
     inline def setAdaptiveFiltering(value: Boolean): Self = StObject.set(x, "adaptiveFiltering", value.asInstanceOf[js.Any])
     

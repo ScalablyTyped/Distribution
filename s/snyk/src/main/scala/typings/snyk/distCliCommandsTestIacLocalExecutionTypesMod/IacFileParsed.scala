@@ -34,7 +34,8 @@ object IacFileParsed {
     __obj.asInstanceOf[IacFileParsed]
   }
   
-  extension [Self <: IacFileParsed](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IacFileParsed] (val x: Self) extends AnyVal {
     
     inline def setDocId(value: Double): Self = StObject.set(x, "docId", value.asInstanceOf[js.Any])
     

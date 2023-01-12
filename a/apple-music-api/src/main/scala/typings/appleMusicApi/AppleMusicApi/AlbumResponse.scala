@@ -16,7 +16,8 @@ object AlbumResponse {
     __obj.asInstanceOf[AlbumResponse]
   }
   
-  extension [Self <: AlbumResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AlbumResponse] (val x: Self) extends AnyVal {
     
     inline def setData(value: js.Array[Album]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

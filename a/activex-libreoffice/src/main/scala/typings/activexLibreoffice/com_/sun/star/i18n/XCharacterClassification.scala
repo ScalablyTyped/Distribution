@@ -106,7 +106,8 @@ object XCharacterClassification {
     __obj.asInstanceOf[XCharacterClassification]
   }
   
-  extension [Self <: XCharacterClassification](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XCharacterClassification] (val x: Self) extends AnyVal {
     
     inline def setGetCharacterDirection(value: (String, Double) => Double): Self = StObject.set(x, "getCharacterDirection", js.Any.fromFunction2(value))
     

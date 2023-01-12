@@ -39,7 +39,8 @@ object NestedHooks {
     __obj.asInstanceOf[NestedHooks]
   }
   
-  extension [Self <: NestedHooks](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NestedHooks] (val x: Self) extends AnyVal {
     
     inline def setAfter(value: js.Function1[/* assert */ Assert, Unit | js.Promise[Unit]] => Unit): Self = StObject.set(x, "after", js.Any.fromFunction1(value))
     

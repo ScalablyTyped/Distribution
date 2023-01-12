@@ -26,7 +26,8 @@ object LayoutAnimationProperties {
     __obj.asInstanceOf[LayoutAnimationProperties]
   }
   
-  extension [Self <: LayoutAnimationProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LayoutAnimationProperties] (val x: Self) extends AnyVal {
     
     inline def setOpacity(value: opacity): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
     

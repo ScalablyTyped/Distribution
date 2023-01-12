@@ -17,7 +17,8 @@ object VideoDecoderSupport {
     __obj.asInstanceOf[VideoDecoderSupport]
   }
   
-  extension [Self <: VideoDecoderSupport](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VideoDecoderSupport] (val x: Self) extends AnyVal {
     
     inline def setConfig(value: VideoDecoderConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     

@@ -35,7 +35,8 @@ object ScrollIntoViewIfNeededRequest {
     __obj.asInstanceOf[ScrollIntoViewIfNeededRequest]
   }
   
-  extension [Self <: ScrollIntoViewIfNeededRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScrollIntoViewIfNeededRequest] (val x: Self) extends AnyVal {
     
     inline def setBackendNodeId(value: BackendNodeId): Self = StObject.set(x, "backendNodeId", value.asInstanceOf[js.Any])
     

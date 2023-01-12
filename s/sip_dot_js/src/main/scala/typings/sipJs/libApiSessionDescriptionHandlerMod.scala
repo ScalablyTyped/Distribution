@@ -22,7 +22,8 @@ object libApiSessionDescriptionHandlerMod {
       __obj.asInstanceOf[BodyAndContentType]
     }
     
-    extension [Self <: BodyAndContentType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BodyAndContentType] (val x: Self) extends AnyVal {
       
       inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
@@ -108,7 +109,8 @@ object libApiSessionDescriptionHandlerMod {
       __obj.asInstanceOf[SessionDescriptionHandlerOptions]
     }
     
-    extension [Self <: SessionDescriptionHandlerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SessionDescriptionHandlerOptions] (val x: Self) extends AnyVal {
       
       inline def setConstraints(value: js.Object): Self = StObject.set(x, "constraints", value.asInstanceOf[js.Any])
       

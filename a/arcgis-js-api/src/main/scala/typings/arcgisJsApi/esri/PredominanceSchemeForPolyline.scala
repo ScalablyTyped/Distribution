@@ -72,7 +72,8 @@ object PredominanceSchemeForPolyline {
     __obj.asInstanceOf[PredominanceSchemeForPolyline]
   }
   
-  extension [Self <: PredominanceSchemeForPolyline](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PredominanceSchemeForPolyline] (val x: Self) extends AnyVal {
     
     inline def setColors(value: js.Array[Color_]): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
     

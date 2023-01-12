@@ -15,7 +15,8 @@ object TypeofDepositInsurance {
     __obj.asInstanceOf[TypeofDepositInsurance]
   }
   
-  extension [Self <: TypeofDepositInsurance](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofDepositInsurance] (val x: Self) extends AnyVal {
     
     inline def setStatusDetail(value: Any): Self = StObject.set(x, "StatusDetail", value.asInstanceOf[js.Any])
   }

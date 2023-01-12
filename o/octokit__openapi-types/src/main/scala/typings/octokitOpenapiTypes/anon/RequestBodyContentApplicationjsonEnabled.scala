@@ -17,7 +17,8 @@ object RequestBodyContentApplicationjsonEnabled {
     __obj.asInstanceOf[RequestBodyContentApplicationjsonEnabled]
   }
   
-  extension [Self <: RequestBodyContentApplicationjsonEnabled](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RequestBodyContentApplicationjsonEnabled] (val x: Self) extends AnyVal {
     
     inline def setParameters(value: `135`): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     

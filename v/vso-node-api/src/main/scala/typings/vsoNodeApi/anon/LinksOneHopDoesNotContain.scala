@@ -35,7 +35,8 @@ object LinksOneHopDoesNotContain {
     __obj.asInstanceOf[LinksOneHopDoesNotContain]
   }
   
-  extension [Self <: LinksOneHopDoesNotContain](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LinksOneHopDoesNotContain] (val x: Self) extends AnyVal {
     
     inline def setLinksOneHopDoesNotContain(value: scala.Double): Self = StObject.set(x, "linksOneHopDoesNotContain", value.asInstanceOf[js.Any])
     

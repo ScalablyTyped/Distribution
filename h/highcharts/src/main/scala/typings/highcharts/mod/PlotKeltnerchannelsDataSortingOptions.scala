@@ -31,7 +31,8 @@ object PlotKeltnerchannelsDataSortingOptions {
     __obj.asInstanceOf[PlotKeltnerchannelsDataSortingOptions]
   }
   
-  extension [Self <: PlotKeltnerchannelsDataSortingOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotKeltnerchannelsDataSortingOptions] (val x: Self) extends AnyVal {
     
     inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     

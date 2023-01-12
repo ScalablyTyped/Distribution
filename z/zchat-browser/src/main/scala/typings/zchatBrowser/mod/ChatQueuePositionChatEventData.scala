@@ -23,7 +23,8 @@ object ChatQueuePositionChatEventData {
     __obj.asInstanceOf[ChatQueuePositionChatEventData]
   }
   
-  extension [Self <: ChatQueuePositionChatEventData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChatQueuePositionChatEventData] (val x: Self) extends AnyVal {
     
     inline def setNick(value: String): Self = StObject.set(x, "nick", value.asInstanceOf[js.Any])
     

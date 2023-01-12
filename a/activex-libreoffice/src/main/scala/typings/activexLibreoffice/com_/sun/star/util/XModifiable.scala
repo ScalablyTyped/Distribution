@@ -35,7 +35,8 @@ object XModifiable {
     __obj.asInstanceOf[XModifiable]
   }
   
-  extension [Self <: XModifiable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XModifiable] (val x: Self) extends AnyVal {
     
     inline def setIsModified(value: () => Boolean): Self = StObject.set(x, "isModified", js.Any.fromFunction0(value))
     

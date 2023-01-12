@@ -76,7 +76,8 @@ object segmentsAisDotsegmentMod {
       __obj.asInstanceOf[AIS]
     }
     
-    extension [Self <: AIS](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AIS] (val x: Self) extends AnyVal {
       
       inline def setAISDot1(value: String): Self = StObject.set(x, "AIS.1", value.asInstanceOf[js.Any])
       

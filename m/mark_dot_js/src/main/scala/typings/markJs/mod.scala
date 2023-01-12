@@ -95,7 +95,8 @@ object mod {
       __obj.asInstanceOf[MarkAccuracyObject]
     }
     
-    extension [Self <: MarkAccuracyObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MarkAccuracyObject] (val x: Self) extends AnyVal {
       
       inline def setLimiters(value: js.Array[String]): Self = StObject.set(x, "limiters", value.asInstanceOf[js.Any])
       
@@ -164,7 +165,8 @@ object mod {
       __obj.asInstanceOf[MarkOptions]
     }
     
-    extension [Self <: MarkOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MarkOptions] (val x: Self) extends AnyVal {
       
       inline def setAccuracy(value: MarkAccuracy | MarkAccuracyObject): Self = StObject.set(x, "accuracy", value.asInstanceOf[js.Any])
       
@@ -293,7 +295,8 @@ object mod {
       __obj.asInstanceOf[MarkRangesOptions]
     }
     
-    extension [Self <: MarkRangesOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MarkRangesOptions] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -388,7 +391,8 @@ object mod {
       __obj.asInstanceOf[MarkRegExpOptions]
     }
     
-    extension [Self <: MarkRegExpOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MarkRegExpOptions] (val x: Self) extends AnyVal {
       
       inline def setAcrossElements(value: Boolean): Self = StObject.set(x, "acrossElements", value.asInstanceOf[js.Any])
       
@@ -461,7 +465,8 @@ object mod {
       __obj.asInstanceOf[Range]
     }
     
-    extension [Self <: Range](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Range] (val x: Self) extends AnyVal {
       
       inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
       
@@ -494,7 +499,8 @@ object mod {
       __obj.asInstanceOf[UnmarkOptions]
     }
     
-    extension [Self <: UnmarkOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnmarkOptions] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       

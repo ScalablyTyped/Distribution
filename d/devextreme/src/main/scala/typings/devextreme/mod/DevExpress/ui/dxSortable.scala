@@ -75,7 +75,8 @@ object dxSortable {
       __obj.asInstanceOf[AddEvent]
     }
     
-    extension [Self <: AddEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AddEvent] (val x: Self) extends AnyVal {
       
       inline def setComponent(value: dxSortable): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
       
@@ -145,7 +146,8 @@ object dxSortable {
       __obj.asInstanceOf[DragChangeEvent]
     }
     
-    extension [Self <: DragChangeEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DragChangeEvent] (val x: Self) extends AnyVal {
       
       inline def setDropInsideItem(value: Boolean): Self = StObject.set(x, "dropInsideItem", value.asInstanceOf[js.Any])
       
@@ -222,7 +224,8 @@ object dxSortable {
       __obj.asInstanceOf[DragEndEvent]
     }
     
-    extension [Self <: DragEndEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DragEndEvent] (val x: Self) extends AnyVal {
       
       inline def setDropInsideItem(value: Boolean): Self = StObject.set(x, "dropInsideItem", value.asInstanceOf[js.Any])
       
@@ -289,7 +292,8 @@ object dxSortable {
       __obj.asInstanceOf[DragMoveEvent]
     }
     
-    extension [Self <: DragMoveEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DragMoveEvent] (val x: Self) extends AnyVal {
       
       inline def setDropInsideItem(value: Boolean): Self = StObject.set(x, "dropInsideItem", value.asInstanceOf[js.Any])
       
@@ -342,7 +346,8 @@ object dxSortable {
       __obj.asInstanceOf[DragStartEvent]
     }
     
-    extension [Self <: DragStartEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DragStartEvent] (val x: Self) extends AnyVal {
       
       inline def setFromData(value: Any): Self = StObject.set(x, "fromData", value.asInstanceOf[js.Any])
       
@@ -373,7 +378,8 @@ object dxSortable {
       __obj.asInstanceOf[DragTemplateData]
     }
     
-    extension [Self <: DragTemplateData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DragTemplateData] (val x: Self) extends AnyVal {
       
       inline def setFromIndex(value: Double): Self = StObject.set(x, "fromIndex", value.asInstanceOf[js.Any])
       
@@ -436,7 +442,8 @@ object dxSortable {
       __obj.asInstanceOf[RemoveEvent]
     }
     
-    extension [Self <: RemoveEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RemoveEvent] (val x: Self) extends AnyVal {
       
       inline def setFromComponent(value: dxSortable | dxDraggable): Self = StObject.set(x, "fromComponent", value.asInstanceOf[js.Any])
       
@@ -502,7 +509,8 @@ object dxSortable {
       __obj.asInstanceOf[ReorderEvent]
     }
     
-    extension [Self <: ReorderEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReorderEvent] (val x: Self) extends AnyVal {
       
       inline def setDropInsideItem(value: Boolean): Self = StObject.set(x, "dropInsideItem", value.asInstanceOf[js.Any])
       

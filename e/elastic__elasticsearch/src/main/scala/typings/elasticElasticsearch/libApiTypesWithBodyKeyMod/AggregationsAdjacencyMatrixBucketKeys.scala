@@ -17,7 +17,8 @@ object AggregationsAdjacencyMatrixBucketKeys {
     __obj.asInstanceOf[AggregationsAdjacencyMatrixBucketKeys]
   }
   
-  extension [Self <: AggregationsAdjacencyMatrixBucketKeys](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AggregationsAdjacencyMatrixBucketKeys] (val x: Self) extends AnyVal {
     
     inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
   }

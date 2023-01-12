@@ -33,7 +33,8 @@ object CategoricalFilter {
     __obj.asInstanceOf[CategoricalFilter]
   }
   
-  extension [Self <: CategoricalFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CategoricalFilter] (val x: Self) extends AnyVal {
     
     inline def setGetAppliedValues(value: () => js.Array[DataValue]): Self = StObject.set(x, "getAppliedValues", js.Any.fromFunction0(value))
     

@@ -171,7 +171,8 @@ object buildSrcGuideMod {
       __obj.asInstanceOf[GuideEncodingEntry]
     }
     
-    extension [Self <: GuideEncodingEntry](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GuideEncodingEntry] (val x: Self) extends AnyVal {
       
       inline def setAlign(value: GuideEncodingConditionalValueDef): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       
@@ -433,7 +434,8 @@ object buildSrcGuideMod {
       __obj.asInstanceOf[TitleMixins]
     }
     
-    extension [Self <: TitleMixins](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TitleMixins] (val x: Self) extends AnyVal {
       
       inline def setTitle(value: Text | SignalRef): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       

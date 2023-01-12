@@ -17,7 +17,8 @@ object AuthenticationClientRefreshTokenOptions {
     __obj.asInstanceOf[AuthenticationClientRefreshTokenOptions]
   }
   
-  extension [Self <: AuthenticationClientRefreshTokenOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AuthenticationClientRefreshTokenOptions] (val x: Self) extends AnyVal {
     
     inline def setClient_id(value: String): Self = StObject.set(x, "client_id", value.asInstanceOf[js.Any])
     

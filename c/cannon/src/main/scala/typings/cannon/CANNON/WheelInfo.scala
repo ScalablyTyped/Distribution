@@ -119,7 +119,8 @@ object WheelInfo {
     __obj.asInstanceOf[WheelInfo]
   }
   
-  extension [Self <: WheelInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WheelInfo] (val x: Self) extends AnyVal {
     
     inline def setAxleLocal(value: Vec3): Self = StObject.set(x, "axleLocal", value.asInstanceOf[js.Any])
     

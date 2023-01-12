@@ -21,7 +21,8 @@ object DiagramDragEvent {
     __obj.asInstanceOf[DiagramDragEvent]
   }
   
-  extension [Self <: DiagramDragEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DiagramDragEvent] (val x: Self) extends AnyVal {
     
     inline def setConnectionHandle(value: String): Self = StObject.set(x, "connectionHandle", value.asInstanceOf[js.Any])
     

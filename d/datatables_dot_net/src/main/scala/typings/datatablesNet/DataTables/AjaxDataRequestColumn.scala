@@ -29,7 +29,8 @@ object AjaxDataRequestColumn {
     __obj.asInstanceOf[AjaxDataRequestColumn]
   }
   
-  extension [Self <: AjaxDataRequestColumn](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AjaxDataRequestColumn] (val x: Self) extends AnyVal {
     
     inline def setData(value: String | Double): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

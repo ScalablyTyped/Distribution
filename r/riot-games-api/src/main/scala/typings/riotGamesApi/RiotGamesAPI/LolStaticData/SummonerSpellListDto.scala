@@ -21,7 +21,8 @@ object SummonerSpellListDto {
     __obj.asInstanceOf[SummonerSpellListDto]
   }
   
-  extension [Self <: SummonerSpellListDto](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SummonerSpellListDto] (val x: Self) extends AnyVal {
     
     inline def setData(value: js.Array[StringDictionary[SummonerSpellDto]]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

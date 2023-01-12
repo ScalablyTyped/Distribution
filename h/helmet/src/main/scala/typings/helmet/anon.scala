@@ -49,7 +49,8 @@ object anon {
       __obj.asInstanceOf[ReadonlyContentSecurityPo]
     }
     
-    extension [Self <: ReadonlyContentSecurityPo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadonlyContentSecurityPo] (val x: Self) extends AnyVal {
       
       inline def setDirectives(value: Record[String, Null | js.Iterable[ContentSecurityPolicyDirectiveValue] | js.Symbol]): Self = StObject.set(x, "directives", value.asInstanceOf[js.Any])
       
@@ -77,7 +78,8 @@ object anon {
       __obj.asInstanceOf[ReadonlyCrossOriginEmbedd]
     }
     
-    extension [Self <: ReadonlyCrossOriginEmbedd](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadonlyCrossOriginEmbedd] (val x: Self) extends AnyVal {
       
       inline def setPolicy(value: `require-corp` | credentialless): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
       
@@ -97,7 +99,8 @@ object anon {
       __obj.asInstanceOf[ReadonlyCrossOriginOpener]
     }
     
-    extension [Self <: ReadonlyCrossOriginOpener](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadonlyCrossOriginOpener] (val x: Self) extends AnyVal {
       
       inline def setPolicy(value: `same-origin` | `same-origin-allow-popups` | `unsafe-none`): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
       
@@ -117,7 +120,8 @@ object anon {
       __obj.asInstanceOf[ReadonlyCrossOriginResour]
     }
     
-    extension [Self <: ReadonlyCrossOriginResour](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadonlyCrossOriginResour] (val x: Self) extends AnyVal {
       
       inline def setPolicy(value: `same-origin` | `same-site` | `cross-origin`): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
       
@@ -141,7 +145,8 @@ object anon {
       __obj.asInstanceOf[ReadonlyExpectCtOptions]
     }
     
-    extension [Self <: ReadonlyExpectCtOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadonlyExpectCtOptions] (val x: Self) extends AnyVal {
       
       inline def setEnforce(value: Boolean): Self = StObject.set(x, "enforce", value.asInstanceOf[js.Any])
       
@@ -197,7 +202,8 @@ object anon {
       __obj.asInstanceOf[ReadonlyHelmetOptions]
     }
     
-    extension [Self <: ReadonlyHelmetOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadonlyHelmetOptions] (val x: Self) extends AnyVal {
       
       inline def setContentSecurityPolicy(value: ContentSecurityPolicyOptions | Boolean): Self = StObject.set(x, "contentSecurityPolicy", value.asInstanceOf[js.Any])
       
@@ -273,7 +279,8 @@ object anon {
       __obj.asInstanceOf[ReadonlyReferrerPolicyOpt]
     }
     
-    extension [Self <: ReadonlyReferrerPolicyOpt](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadonlyReferrerPolicyOpt] (val x: Self) extends AnyVal {
       
       inline def setPolicy(value: ReferrerPolicyToken | js.Array[ReferrerPolicyToken]): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
       
@@ -299,7 +306,8 @@ object anon {
       __obj.asInstanceOf[ReadonlyStrictTransportSe]
     }
     
-    extension [Self <: ReadonlyStrictTransportSe](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadonlyStrictTransportSe] (val x: Self) extends AnyVal {
       
       inline def setIncludeSubDomains(value: Boolean): Self = StObject.set(x, "includeSubDomains", value.asInstanceOf[js.Any])
       
@@ -327,7 +335,8 @@ object anon {
       __obj.asInstanceOf[ReadonlyXDnsPrefetchContr]
     }
     
-    extension [Self <: ReadonlyXDnsPrefetchContr](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadonlyXDnsPrefetchContr] (val x: Self) extends AnyVal {
       
       inline def setAllow(value: Boolean): Self = StObject.set(x, "allow", value.asInstanceOf[js.Any])
       
@@ -347,7 +356,8 @@ object anon {
       __obj.asInstanceOf[ReadonlyXFrameOptionsOpti]
     }
     
-    extension [Self <: ReadonlyXFrameOptionsOpti](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadonlyXFrameOptionsOpti] (val x: Self) extends AnyVal {
       
       inline def setAction(value: deny | sameorigin): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
@@ -367,7 +377,8 @@ object anon {
       __obj.asInstanceOf[ReadonlyXPermittedCrossDo]
     }
     
-    extension [Self <: ReadonlyXPermittedCrossDo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadonlyXPermittedCrossDo] (val x: Self) extends AnyVal {
       
       inline def setPermittedPolicies(value: none | `master-only` | `by-content-type` | all): Self = StObject.set(x, "permittedPolicies", value.asInstanceOf[js.Any])
       

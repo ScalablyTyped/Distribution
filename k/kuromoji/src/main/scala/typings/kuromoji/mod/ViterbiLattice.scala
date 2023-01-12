@@ -17,7 +17,8 @@ object ViterbiLattice {
     __obj.asInstanceOf[ViterbiLattice]
   }
   
-  extension [Self <: ViterbiLattice](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ViterbiLattice] (val x: Self) extends AnyVal {
     
     inline def setAppend(value: ViterbiNode => Unit): Self = StObject.set(x, "append", js.Any.fromFunction1(value))
     

@@ -28,7 +28,8 @@ object VideoAbuseReport {
     __obj.asInstanceOf[VideoAbuseReport]
   }
   
-  extension [Self <: VideoAbuseReport](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VideoAbuseReport] (val x: Self) extends AnyVal {
     
     inline def setComments(value: String): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
     

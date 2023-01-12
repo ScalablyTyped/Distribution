@@ -21,7 +21,8 @@ object RTCOfferOptions {
     __obj.asInstanceOf[RTCOfferOptions]
   }
   
-  extension [Self <: RTCOfferOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RTCOfferOptions] (val x: Self) extends AnyVal {
     
     inline def setIceRestart(value: Boolean): Self = StObject.set(x, "iceRestart", value.asInstanceOf[js.Any])
     

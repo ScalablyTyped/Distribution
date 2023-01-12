@@ -16,7 +16,8 @@ object BatchClearValuesByDataFilterRequest {
     __obj.asInstanceOf[BatchClearValuesByDataFilterRequest]
   }
   
-  extension [Self <: BatchClearValuesByDataFilterRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchClearValuesByDataFilterRequest] (val x: Self) extends AnyVal {
     
     inline def setDataFilters(value: js.Array[DataFilter]): Self = StObject.set(x, "dataFilters", value.asInstanceOf[js.Any])
     

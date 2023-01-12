@@ -48,7 +48,8 @@ object EvaluationResult {
     __obj.asInstanceOf[EvaluationResult]
   }
   
-  extension [Self <: EvaluationResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EvaluationResult] (val x: Self) extends AnyVal {
     
     inline def setDetails(value: JsonValue): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
     

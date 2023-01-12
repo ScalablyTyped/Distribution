@@ -28,7 +28,8 @@ object RepositoryAggregation {
     __obj.asInstanceOf[RepositoryAggregation]
   }
   
-  extension [Self <: RepositoryAggregation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RepositoryAggregation] (val x: Self) extends AnyVal {
     
     inline def setRepositories(value: StringFilterList): Self = StObject.set(x, "repositories", value.asInstanceOf[js.Any])
     

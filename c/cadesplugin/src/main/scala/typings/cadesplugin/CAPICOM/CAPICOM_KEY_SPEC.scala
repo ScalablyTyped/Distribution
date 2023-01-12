@@ -19,7 +19,8 @@ object CAPICOM_KEY_SPEC {
     __obj.asInstanceOf[CAPICOM_KEY_SPEC]
   }
   
-  extension [Self <: CAPICOM_KEY_SPEC](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CAPICOM_KEY_SPEC] (val x: Self) extends AnyVal {
     
     inline def setCAPICOM_KEY_SPEC_KEYEXCHANGE(value: `1`): Self = StObject.set(x, "CAPICOM_KEY_SPEC_KEYEXCHANGE", value.asInstanceOf[js.Any])
     

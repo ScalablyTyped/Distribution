@@ -22,7 +22,8 @@ object TableKeyString_ {
     __obj.asInstanceOf[TableKeyString_]
   }
   
-  extension [Self <: TableKeyString_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TableKeyString_] (val x: Self) extends AnyVal {
     
     inline def setKey(value: Identifier_): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     

@@ -81,7 +81,8 @@ object PerformanceNavigationTiming {
     __obj.asInstanceOf[PerformanceNavigationTiming]
   }
   
-  extension [Self <: PerformanceNavigationTiming](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PerformanceNavigationTiming] (val x: Self) extends AnyVal {
     
     inline def setDomComplete(value: DOMHighResTimeStamp): Self = StObject.set(x, "domComplete", value.asInstanceOf[js.Any])
     

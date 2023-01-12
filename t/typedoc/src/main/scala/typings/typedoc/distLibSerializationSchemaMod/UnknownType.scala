@@ -20,7 +20,8 @@ object UnknownType {
     __obj.asInstanceOf[UnknownType]
   }
   
-  extension [Self <: UnknownType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UnknownType] (val x: Self) extends AnyVal {
     
     inline def setName(value: ToSerialized[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

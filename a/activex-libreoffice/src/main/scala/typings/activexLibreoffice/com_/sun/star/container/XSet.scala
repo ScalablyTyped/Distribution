@@ -40,7 +40,8 @@ object XSet {
     __obj.asInstanceOf[XSet]
   }
   
-  extension [Self <: XSet](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XSet] (val x: Self) extends AnyVal {
     
     inline def setHas(value: Any => Boolean): Self = StObject.set(x, "has", js.Any.fromFunction1(value))
     

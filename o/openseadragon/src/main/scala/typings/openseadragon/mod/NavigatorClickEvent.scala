@@ -29,7 +29,8 @@ object NavigatorClickEvent {
     __obj.asInstanceOf[NavigatorClickEvent]
   }
   
-  extension [Self <: NavigatorClickEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NavigatorClickEvent] (val x: Self) extends AnyVal {
     
     inline def setPreventDefaultAction(value: Boolean): Self = StObject.set(x, "preventDefaultAction", value.asInstanceOf[js.Any])
     

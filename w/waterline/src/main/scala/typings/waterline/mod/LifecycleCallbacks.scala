@@ -41,7 +41,8 @@ object LifecycleCallbacks {
     __obj.asInstanceOf[LifecycleCallbacks]
   }
   
-  extension [Self <: LifecycleCallbacks](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LifecycleCallbacks] (val x: Self) extends AnyVal {
     
     inline def setAfterCreate(
       value: (js.Array[js.Function2[/* newlyCreatedRecord */ Any, /* next */ js.Function, Unit]]) | (js.Function2[/* newlyCreatedRecord */ Any, /* next */ js.Function, Unit])

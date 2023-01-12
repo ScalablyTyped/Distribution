@@ -58,7 +58,8 @@ object QueryStage {
     __obj.asInstanceOf[QueryStage]
   }
   
-  extension [Self <: QueryStage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryStage] (val x: Self) extends AnyVal {
     
     inline def setExecutionTime(value: Long): Self = StObject.set(x, "ExecutionTime", value.asInstanceOf[js.Any])
     

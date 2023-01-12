@@ -17,7 +17,8 @@ object PathHookidOrgQueryCursorPerpage {
     __obj.asInstanceOf[PathHookidOrgQueryCursorPerpage]
   }
   
-  extension [Self <: PathHookidOrgQueryCursorPerpage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PathHookidOrgQueryCursorPerpage] (val x: Self) extends AnyVal {
     
     inline def setPath(value: HookidOrg): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     

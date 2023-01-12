@@ -42,7 +42,8 @@ object IShellFrameEvent {
     __obj.asInstanceOf[IShellFrameEvent]
   }
   
-  extension [Self <: IShellFrameEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IShellFrameEvent] (val x: Self) extends AnyVal {
     
     inline def setOnActiveListingChanged(value: (/* oldListing */ Null | IShellListing, /* newListing */ IShellListing) => Unit): Self = StObject.set(x, "OnActiveListingChanged", js.Any.fromFunction2(value))
     

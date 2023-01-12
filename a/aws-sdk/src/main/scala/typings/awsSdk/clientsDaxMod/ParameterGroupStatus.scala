@@ -28,7 +28,8 @@ object ParameterGroupStatus {
     __obj.asInstanceOf[ParameterGroupStatus]
   }
   
-  extension [Self <: ParameterGroupStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParameterGroupStatus] (val x: Self) extends AnyVal {
     
     inline def setNodeIdsToReboot(value: NodeIdentifierList): Self = StObject.set(x, "NodeIdsToReboot", value.asInstanceOf[js.Any])
     

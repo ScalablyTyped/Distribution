@@ -21,7 +21,8 @@ object EciObj {
     __obj.asInstanceOf[EciObj]
   }
   
-  extension [Self <: EciObj](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EciObj] (val x: Self) extends AnyVal {
     
     inline def setEciObj(value: EncapsulatedContentInfo): Self = StObject.set(x, "eciObj", value.asInstanceOf[js.Any])
     

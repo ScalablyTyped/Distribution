@@ -43,7 +43,8 @@ object JobSvfOutputPayloadAdvanced {
     __obj.asInstanceOf[JobSvfOutputPayloadAdvanced]
   }
   
-  extension [Self <: JobSvfOutputPayloadAdvanced](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JobSvfOutputPayloadAdvanced] (val x: Self) extends AnyVal {
     
     inline def setAutodeskMaterialProperties(value: Boolean): Self = StObject.set(x, "autodeskMaterialProperties", value.asInstanceOf[js.Any])
     

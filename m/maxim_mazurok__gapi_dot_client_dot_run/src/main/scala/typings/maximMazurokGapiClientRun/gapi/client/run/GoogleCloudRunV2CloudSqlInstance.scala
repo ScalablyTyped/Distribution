@@ -19,7 +19,8 @@ object GoogleCloudRunV2CloudSqlInstance {
     __obj.asInstanceOf[GoogleCloudRunV2CloudSqlInstance]
   }
   
-  extension [Self <: GoogleCloudRunV2CloudSqlInstance](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudRunV2CloudSqlInstance] (val x: Self) extends AnyVal {
     
     inline def setInstances(value: js.Array[String]): Self = StObject.set(x, "instances", value.asInstanceOf[js.Any])
     

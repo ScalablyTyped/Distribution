@@ -1047,7 +1047,8 @@ object distStylableDomUtilMod {
       __obj.asInstanceOf[PartialElement]
     }
     
-    extension [Self <: PartialElement](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialElement] (val x: Self) extends AnyVal {
       
       inline def setClassList(value: DOMTokenList): Self = StObject.set(x, "classList", value.asInstanceOf[js.Any])
       
@@ -1075,7 +1076,8 @@ object distStylableDomUtilMod {
       __obj.asInstanceOf[StylesheetHost]
     }
     
-    extension [Self <: StylesheetHost](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StylesheetHost] (val x: Self) extends AnyVal {
       
       inline def setClasses(
         value: /* import warning: importer.ImportType#apply Failed type conversion: / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify RuntimeStylesheet * / any['classes'] */ js.Any

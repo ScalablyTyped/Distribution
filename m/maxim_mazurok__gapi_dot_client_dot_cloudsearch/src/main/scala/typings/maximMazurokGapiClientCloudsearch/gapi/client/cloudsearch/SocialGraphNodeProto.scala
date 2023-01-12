@@ -18,7 +18,8 @@ object SocialGraphNodeProto {
     __obj.asInstanceOf[SocialGraphNodeProto]
   }
   
-  extension [Self <: SocialGraphNodeProto](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SocialGraphNodeProto] (val x: Self) extends AnyVal {
     
     inline def setSgnDomain(value: String): Self = StObject.set(x, "sgnDomain", value.asInstanceOf[js.Any])
     

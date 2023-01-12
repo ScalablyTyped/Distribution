@@ -19,7 +19,8 @@ object FormValidatable {
     __obj.asInstanceOf[FormValidatable]
   }
   
-  extension [Self <: FormValidatable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FormValidatable] (val x: Self) extends AnyVal {
     
     inline def setErrorTemplate(value: String | js.Function): Self = StObject.set(x, "errorTemplate", value.asInstanceOf[js.Any])
     

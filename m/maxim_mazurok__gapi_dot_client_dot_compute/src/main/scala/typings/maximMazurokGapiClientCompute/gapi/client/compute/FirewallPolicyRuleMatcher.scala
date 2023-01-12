@@ -22,7 +22,8 @@ object FirewallPolicyRuleMatcher {
     __obj.asInstanceOf[FirewallPolicyRuleMatcher]
   }
   
-  extension [Self <: FirewallPolicyRuleMatcher](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FirewallPolicyRuleMatcher] (val x: Self) extends AnyVal {
     
     inline def setDestIpRanges(value: js.Array[String]): Self = StObject.set(x, "destIpRanges", value.asInstanceOf[js.Any])
     

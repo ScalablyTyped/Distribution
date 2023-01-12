@@ -25,7 +25,8 @@ object CustomChannels {
     __obj.asInstanceOf[CustomChannels]
   }
   
-  extension [Self <: CustomChannels](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomChannels] (val x: Self) extends AnyVal {
     
     inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     

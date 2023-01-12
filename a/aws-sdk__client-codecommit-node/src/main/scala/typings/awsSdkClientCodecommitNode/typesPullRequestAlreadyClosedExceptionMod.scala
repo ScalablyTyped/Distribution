@@ -25,7 +25,8 @@ object typesPullRequestAlreadyClosedExceptionMod {
       __obj.asInstanceOf[PullRequestAlreadyClosedException]
     }
     
-    extension [Self <: PullRequestAlreadyClosedException](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PullRequestAlreadyClosedException] (val x: Self) extends AnyVal {
       
       inline def setName(
         value: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.PullRequestAlreadyClosedException

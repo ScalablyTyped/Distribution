@@ -38,7 +38,8 @@ object GetShardIteratorInput {
     __obj.asInstanceOf[GetShardIteratorInput]
   }
   
-  extension [Self <: GetShardIteratorInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetShardIteratorInput] (val x: Self) extends AnyVal {
     
     inline def setShardId(value: ShardId): Self = StObject.set(x, "ShardId", value.asInstanceOf[js.Any])
     

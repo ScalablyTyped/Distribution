@@ -35,7 +35,8 @@ object SecurityMarks {
     __obj.asInstanceOf[SecurityMarks]
   }
   
-  extension [Self <: SecurityMarks](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SecurityMarks] (val x: Self) extends AnyVal {
     
     inline def setCanonicalName(value: String): Self = StObject.set(x, "canonicalName", value.asInstanceOf[js.Any])
     

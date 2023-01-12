@@ -28,7 +28,8 @@ object TfvcLabel {
     __obj.asInstanceOf[TfvcLabel]
   }
   
-  extension [Self <: TfvcLabel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TfvcLabel] (val x: Self) extends AnyVal {
     
     inline def setItems(value: js.Array[TfvcItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     

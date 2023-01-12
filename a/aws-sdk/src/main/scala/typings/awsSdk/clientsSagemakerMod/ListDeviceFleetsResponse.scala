@@ -23,7 +23,8 @@ object ListDeviceFleetsResponse {
     __obj.asInstanceOf[ListDeviceFleetsResponse]
   }
   
-  extension [Self <: ListDeviceFleetsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListDeviceFleetsResponse] (val x: Self) extends AnyVal {
     
     inline def setDeviceFleetSummaries(value: DeviceFleetSummaries): Self = StObject.set(x, "DeviceFleetSummaries", value.asInstanceOf[js.Any])
     

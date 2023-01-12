@@ -19,7 +19,8 @@ object Persistent {
     __obj.asInstanceOf[Persistent]
   }
   
-  extension [Self <: Persistent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Persistent] (val x: Self) extends AnyVal {
     
     inline def setPersistent(value: PersistentBackgroundProperty): Self = StObject.set(x, "persistent", value.asInstanceOf[js.Any])
     

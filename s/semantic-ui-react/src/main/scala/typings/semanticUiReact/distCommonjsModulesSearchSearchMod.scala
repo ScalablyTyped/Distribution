@@ -98,7 +98,8 @@ object distCommonjsModulesSearchSearchMod {
       __obj.asInstanceOf[SearchResultData]
     }
     
-    extension [Self <: SearchResultData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SearchResultData] (val x: Self) extends AnyVal {
       
       inline def setResult(value: Any): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     }
@@ -281,7 +282,8 @@ object distCommonjsModulesSearchSearchMod {
       __obj.asInstanceOf[StrictSearchProps]
     }
     
-    extension [Self <: StrictSearchProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StrictSearchProps] (val x: Self) extends AnyVal {
       
       inline def setAligned(value: String): Self = StObject.set(x, "aligned", value.asInstanceOf[js.Any])
       

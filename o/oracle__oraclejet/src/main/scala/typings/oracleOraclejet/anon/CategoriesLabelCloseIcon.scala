@@ -17,7 +17,8 @@ object CategoriesLabelCloseIcon {
     __obj.asInstanceOf[CategoriesLabelCloseIcon]
   }
   
-  extension [Self <: CategoriesLabelCloseIcon](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CategoriesLabelCloseIcon] (val x: Self) extends AnyVal {
     
     inline def setCategories(value: Confirmation): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
     

@@ -32,7 +32,8 @@ object ApplyNative {
     __obj.asInstanceOf[ApplyNative[ElementType, PropName]]
   }
   
-  extension [Self <: ApplyNative[?, ?], ElementType /* <: Element */, PropName /* <: /* keyof ElementType */ String */](x: Self & (ApplyNative[ElementType, PropName])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApplyNative[?, ?], ElementType /* <: Element */, PropName /* <: /* keyof ElementType */ String */] (val x: Self & (ApplyNative[ElementType, PropName])) extends AnyVal {
     
     inline def setApplyNative(value: Boolean): Self = StObject.set(x, "applyNative", value.asInstanceOf[js.Any])
     

@@ -44,7 +44,8 @@ object mod {
       __obj.asInstanceOf[ParsedTimeStamp]
     }
     
-    extension [Self <: ParsedTimeStamp](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParsedTimeStamp] (val x: Self) extends AnyVal {
       
       inline def setDays(value: Double): Self = StObject.set(x, "days", value.asInstanceOf[js.Any])
       

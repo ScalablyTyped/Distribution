@@ -18,7 +18,8 @@ object CreateMonitorResponse {
     __obj.asInstanceOf[CreateMonitorResponse]
   }
   
-  extension [Self <: CreateMonitorResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateMonitorResponse] (val x: Self) extends AnyVal {
     
     inline def setMonitorArn(value: Arn): Self = StObject.set(x, "MonitorArn", value.asInstanceOf[js.Any])
     

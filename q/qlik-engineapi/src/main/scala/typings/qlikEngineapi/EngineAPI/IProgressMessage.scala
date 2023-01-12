@@ -26,7 +26,8 @@ object IProgressMessage {
     __obj.asInstanceOf[IProgressMessage]
   }
   
-  extension [Self <: IProgressMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IProgressMessage] (val x: Self) extends AnyVal {
     
     inline def setQMessageCode(value: Double): Self = StObject.set(x, "qMessageCode", value.asInstanceOf[js.Any])
     

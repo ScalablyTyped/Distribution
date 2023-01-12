@@ -20,7 +20,8 @@ object GetPatch {
     __obj.asInstanceOf[GetPatch]
   }
   
-  extension [Self <: GetPatch](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetPatch] (val x: Self) extends AnyVal {
     
     inline def setDelete(value: Responses304403404): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
     

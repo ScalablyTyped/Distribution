@@ -23,7 +23,8 @@ object DeleteTableRequest {
     __obj.asInstanceOf[DeleteTableRequest]
   }
   
-  extension [Self <: DeleteTableRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteTableRequest] (val x: Self) extends AnyVal {
     
     inline def setKeyspaceName(value: KeyspaceName): Self = StObject.set(x, "keyspaceName", value.asInstanceOf[js.Any])
     

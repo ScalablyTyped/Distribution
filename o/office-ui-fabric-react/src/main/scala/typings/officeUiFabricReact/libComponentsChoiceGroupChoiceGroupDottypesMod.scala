@@ -40,7 +40,8 @@ object libComponentsChoiceGroupChoiceGroupDottypesMod {
       __obj.asInstanceOf[IChoiceGroup]
     }
     
-    extension [Self <: IChoiceGroup](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IChoiceGroup] (val x: Self) extends AnyVal {
       
       inline def setCheckedOption(value: IChoiceGroupOption): Self = StObject.set(x, "checkedOption", value.asInstanceOf[js.Any])
       
@@ -123,7 +124,8 @@ object libComponentsChoiceGroupChoiceGroupDottypesMod {
       __obj.asInstanceOf[IChoiceGroupOption]
     }
     
-    extension [Self <: IChoiceGroupOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IChoiceGroupOption] (val x: Self) extends AnyVal {
       
       inline def setAriaLabel(value: String): Self = StObject.set(x, "ariaLabel", value.asInstanceOf[js.Any])
       
@@ -254,7 +256,8 @@ object libComponentsChoiceGroupChoiceGroupDottypesMod {
       __obj.asInstanceOf[IChoiceGroupProps]
     }
     
-    extension [Self <: IChoiceGroupProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IChoiceGroupProps] (val x: Self) extends AnyVal {
       
       inline def setAriaLabelledBy(value: String): Self = StObject.set(x, "ariaLabelledBy", value.asInstanceOf[js.Any])
       
@@ -323,7 +326,8 @@ object libComponentsChoiceGroupChoiceGroupDottypesMod {
       __obj.asInstanceOf[IChoiceGroupStyleProps]
     }
     
-    extension [Self <: IChoiceGroupStyleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IChoiceGroupStyleProps] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -362,7 +366,8 @@ object libComponentsChoiceGroupChoiceGroupDottypesMod {
       __obj.asInstanceOf[IChoiceGroupStyles]
     }
     
-    extension [Self <: IChoiceGroupStyles](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IChoiceGroupStyles] (val x: Self) extends AnyVal {
       
       inline def setApplicationRole(value: IStyle): Self = StObject.set(x, "applicationRole", value.asInstanceOf[js.Any])
       

@@ -974,7 +974,8 @@ object LinearGauge {
       __obj.asInstanceOf[DoubleClickEventArgs]
     }
     
-    extension [Self <: DoubleClickEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DoubleClickEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -1051,7 +1052,8 @@ object LinearGauge {
       __obj.asInstanceOf[DrawBarPointersEventArgs]
     }
     
-    extension [Self <: DrawBarPointersEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DrawBarPointersEventArgs] (val x: Self) extends AnyVal {
       
       inline def setBarElement(value: Any): Self = StObject.set(x, "barElement", value.asInstanceOf[js.Any])
       
@@ -1156,7 +1158,8 @@ object LinearGauge {
       __obj.asInstanceOf[DrawCustomLabelEventArgs]
     }
     
-    extension [Self <: DrawCustomLabelEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DrawCustomLabelEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -1257,7 +1260,8 @@ object LinearGauge {
       __obj.asInstanceOf[DrawIndicatorsEventArgs]
     }
     
-    extension [Self <: DrawIndicatorsEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DrawIndicatorsEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -1366,7 +1370,8 @@ object LinearGauge {
       __obj.asInstanceOf[DrawLabelsEventArgs]
     }
     
-    extension [Self <: DrawLabelsEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DrawLabelsEventArgs] (val x: Self) extends AnyVal {
       
       inline def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
       
@@ -1483,7 +1488,8 @@ object LinearGauge {
       __obj.asInstanceOf[DrawMarkerPointersEventArgs]
     }
     
-    extension [Self <: DrawMarkerPointersEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DrawMarkerPointersEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -1592,7 +1598,8 @@ object LinearGauge {
       __obj.asInstanceOf[DrawRangeEventArgs]
     }
     
-    extension [Self <: DrawRangeEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DrawRangeEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -1701,7 +1708,8 @@ object LinearGauge {
       __obj.asInstanceOf[DrawTicksEventArgs]
     }
     
-    extension [Self <: DrawTicksEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DrawTicksEventArgs] (val x: Self) extends AnyVal {
       
       inline def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
       
@@ -1785,7 +1793,8 @@ object LinearGauge {
       __obj.asInstanceOf[ExportSettings]
     }
     
-    extension [Self <: ExportSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExportSettings] (val x: Self) extends AnyVal {
       
       inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
@@ -1829,7 +1838,8 @@ object LinearGauge {
       __obj.asInstanceOf[Frame]
     }
     
-    extension [Self <: Frame](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Frame] (val x: Self) extends AnyVal {
       
       inline def setBackgroundImageUrl(value: String): Self = StObject.set(x, "backgroundImageUrl", value.asInstanceOf[js.Any])
       
@@ -1878,7 +1888,8 @@ object LinearGauge {
       __obj.asInstanceOf[InitEventArgs]
     }
     
-    extension [Self <: InitEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InitEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -1939,7 +1950,8 @@ object LinearGauge {
       __obj.asInstanceOf[LoadEventArgs]
     }
     
-    extension [Self <: LoadEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LoadEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -2165,7 +2177,8 @@ object LinearGauge {
       __obj.asInstanceOf[typings.ejWebAll.ej.datavisualization.LinearGauge.Model]
     }
     
-    extension [Self <: typings.ejWebAll.ej.datavisualization.LinearGauge.Model](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.ejWebAll.ej.datavisualization.LinearGauge.Model] (val x: Self) extends AnyVal {
       
       inline def setAnimationSpeed(value: Double): Self = StObject.set(x, "animationSpeed", value.asInstanceOf[js.Any])
       
@@ -2392,7 +2405,8 @@ object LinearGauge {
       __obj.asInstanceOf[MouseClickEventArgs]
     }
     
-    extension [Self <: MouseClickEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MouseClickEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -2501,7 +2515,8 @@ object LinearGauge {
       __obj.asInstanceOf[MouseClickMoveEventArgs]
     }
     
-    extension [Self <: MouseClickMoveEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MouseClickMoveEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -2610,7 +2625,8 @@ object LinearGauge {
       __obj.asInstanceOf[MouseClickUpEventArgs]
     }
     
-    extension [Self <: MouseClickUpEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MouseClickUpEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -2695,7 +2711,8 @@ object LinearGauge {
       __obj.asInstanceOf[RenderCompleteEventArgs]
     }
     
-    extension [Self <: RenderCompleteEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RenderCompleteEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -2749,7 +2766,8 @@ object LinearGauge {
       __obj.asInstanceOf[RightClickEventArgs]
     }
     
-    extension [Self <: RightClickEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RightClickEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -2913,7 +2931,8 @@ object LinearGauge {
       __obj.asInstanceOf[Scale]
     }
     
-    extension [Self <: Scale](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Scale] (val x: Self) extends AnyVal {
       
       inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
       
@@ -3083,7 +3102,8 @@ object LinearGauge {
       __obj.asInstanceOf[ScalesBarPointer]
     }
     
-    extension [Self <: ScalesBarPointer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScalesBarPointer] (val x: Self) extends AnyVal {
       
       inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
       
@@ -3134,7 +3154,8 @@ object LinearGauge {
       __obj.asInstanceOf[ScalesBarPointersBorder]
     }
     
-    extension [Self <: ScalesBarPointersBorder](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScalesBarPointersBorder] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -3165,7 +3186,8 @@ object LinearGauge {
       __obj.asInstanceOf[ScalesBorder]
     }
     
-    extension [Self <: ScalesBorder](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScalesBorder] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -3220,7 +3242,8 @@ object LinearGauge {
       __obj.asInstanceOf[ScalesCustomLabel]
     }
     
-    extension [Self <: ScalesCustomLabel](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScalesCustomLabel] (val x: Self) extends AnyVal {
       
       inline def setColor(value: Double): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -3276,7 +3299,8 @@ object LinearGauge {
       __obj.asInstanceOf[ScalesCustomLabelsFont]
     }
     
-    extension [Self <: ScalesCustomLabelsFont](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScalesCustomLabelsFont] (val x: Self) extends AnyVal {
       
       inline def setFontFamily(value: String): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
       
@@ -3311,7 +3335,8 @@ object LinearGauge {
       __obj.asInstanceOf[ScalesCustomLabelsPosition]
     }
     
-    extension [Self <: ScalesCustomLabelsPosition](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScalesCustomLabelsPosition] (val x: Self) extends AnyVal {
       
       inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
@@ -3382,7 +3407,8 @@ object LinearGauge {
       __obj.asInstanceOf[ScalesIndicator]
     }
     
-    extension [Self <: ScalesIndicator](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScalesIndicator] (val x: Self) extends AnyVal {
       
       inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
       
@@ -3447,7 +3473,8 @@ object LinearGauge {
       __obj.asInstanceOf[ScalesIndicatorsBorder]
     }
     
-    extension [Self <: ScalesIndicatorsBorder](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScalesIndicatorsBorder] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -3483,7 +3510,8 @@ object LinearGauge {
       __obj.asInstanceOf[ScalesIndicatorsFont]
     }
     
-    extension [Self <: ScalesIndicatorsFont](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScalesIndicatorsFont] (val x: Self) extends AnyVal {
       
       inline def setFontFamily(value: String): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
       
@@ -3518,7 +3546,8 @@ object LinearGauge {
       __obj.asInstanceOf[ScalesIndicatorsPosition]
     }
     
-    extension [Self <: ScalesIndicatorsPosition](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScalesIndicatorsPosition] (val x: Self) extends AnyVal {
       
       inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
@@ -3568,7 +3597,8 @@ object LinearGauge {
       __obj.asInstanceOf[ScalesIndicatorsStateRange]
     }
     
-    extension [Self <: ScalesIndicatorsStateRange](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScalesIndicatorsStateRange] (val x: Self) extends AnyVal {
       
       inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
       
@@ -3615,7 +3645,8 @@ object LinearGauge {
       __obj.asInstanceOf[ScalesIndicatorsTextLocation]
     }
     
-    extension [Self <: ScalesIndicatorsTextLocation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScalesIndicatorsTextLocation] (val x: Self) extends AnyVal {
       
       inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
@@ -3685,7 +3716,8 @@ object LinearGauge {
       __obj.asInstanceOf[ScalesLabel]
     }
     
-    extension [Self <: ScalesLabel](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScalesLabel] (val x: Self) extends AnyVal {
       
       inline def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
       
@@ -3748,7 +3780,8 @@ object LinearGauge {
       __obj.asInstanceOf[ScalesLabelsDistanceFromScale]
     }
     
-    extension [Self <: ScalesLabelsDistanceFromScale](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScalesLabelsDistanceFromScale] (val x: Self) extends AnyVal {
       
       inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
@@ -3784,7 +3817,8 @@ object LinearGauge {
       __obj.asInstanceOf[ScalesLabelsFont]
     }
     
-    extension [Self <: ScalesLabelsFont](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScalesLabelsFont] (val x: Self) extends AnyVal {
       
       inline def setFontFamily(value: String): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
       
@@ -3859,7 +3893,8 @@ object LinearGauge {
       __obj.asInstanceOf[ScalesMarkerPointer]
     }
     
-    extension [Self <: ScalesMarkerPointer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScalesMarkerPointer] (val x: Self) extends AnyVal {
       
       inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
       
@@ -3922,7 +3957,8 @@ object LinearGauge {
       __obj.asInstanceOf[ScalesMarkerPointersBorder]
     }
     
-    extension [Self <: ScalesMarkerPointersBorder](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScalesMarkerPointersBorder] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -3953,7 +3989,8 @@ object LinearGauge {
       __obj.asInstanceOf[ScalesPosition]
     }
     
-    extension [Self <: ScalesPosition](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScalesPosition] (val x: Self) extends AnyVal {
       
       inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
@@ -4024,7 +4061,8 @@ object LinearGauge {
       __obj.asInstanceOf[ScalesRange]
     }
     
-    extension [Self <: ScalesRange](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScalesRange] (val x: Self) extends AnyVal {
       
       inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
       
@@ -4087,7 +4125,8 @@ object LinearGauge {
       __obj.asInstanceOf[ScalesRangesBorder]
     }
     
-    extension [Self <: ScalesRangesBorder](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScalesRangesBorder] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -4148,7 +4187,8 @@ object LinearGauge {
       __obj.asInstanceOf[ScalesTick]
     }
     
-    extension [Self <: ScalesTick](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScalesTick] (val x: Self) extends AnyVal {
       
       inline def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
       
@@ -4203,7 +4243,8 @@ object LinearGauge {
       __obj.asInstanceOf[ScalesTicksDistanceFromScale]
     }
     
-    extension [Self <: ScalesTicksDistanceFromScale](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScalesTicksDistanceFromScale] (val x: Self) extends AnyVal {
       
       inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
@@ -4239,7 +4280,8 @@ object LinearGauge {
       __obj.asInstanceOf[Tooltip]
     }
     
-    extension [Self <: Tooltip](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Tooltip] (val x: Self) extends AnyVal {
       
       inline def setShowCustomLabelTooltip(value: Boolean): Self = StObject.set(x, "showCustomLabelTooltip", value.asInstanceOf[js.Any])
       

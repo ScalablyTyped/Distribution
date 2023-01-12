@@ -31,7 +31,8 @@ object PaneOptions {
     __obj.asInstanceOf[PaneOptions]
   }
   
-  extension [Self <: PaneOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PaneOptions] (val x: Self) extends AnyVal {
     
     inline def setCollapsible(value: Boolean): Self = StObject.set(x, "collapsible", value.asInstanceOf[js.Any])
     

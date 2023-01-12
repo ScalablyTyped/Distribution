@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "oauth-signature"
-version := "1.5-dt-20220212Z-c063f2"
+version := "1.5-dt-20220212Z-451126"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -32,7 +32,8 @@ object PerpageSinceSort {
     __obj.asInstanceOf[PerpageSinceSort]
   }
   
-  extension [Self <: PerpageSinceSort](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PerpageSinceSort] (val x: Self) extends AnyVal {
     
     inline def setDirection(value: asc | desc): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     

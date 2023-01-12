@@ -39,7 +39,8 @@ object GetHighlightObjectForTestRequest {
     __obj.asInstanceOf[GetHighlightObjectForTestRequest]
   }
   
-  extension [Self <: GetHighlightObjectForTestRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetHighlightObjectForTestRequest] (val x: Self) extends AnyVal {
     
     inline def setColorFormat(value: ColorFormat): Self = StObject.set(x, "colorFormat", value.asInstanceOf[js.Any])
     

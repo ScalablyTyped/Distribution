@@ -789,7 +789,8 @@ object mod {
       __obj.asInstanceOf[Compartment]
     }
     
-    extension [Self <: Compartment](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Compartment] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -832,7 +833,8 @@ object mod {
       __obj.asInstanceOf[SmartAuthMetadata]
     }
     
-    extension [Self <: SmartAuthMetadata](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SmartAuthMetadata] (val x: Self) extends AnyVal {
       
       inline def setAuthorizeUrl(value: String): Self = StObject.set(x, "authorizeUrl", value.asInstanceOf[js.Any])
       

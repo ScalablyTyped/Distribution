@@ -28,7 +28,8 @@ object IGenericHyperCubeLayout {
     __obj.asInstanceOf[IGenericHyperCubeLayout]
   }
   
-  extension [Self <: IGenericHyperCubeLayout](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IGenericHyperCubeLayout] (val x: Self) extends AnyVal {
     
     inline def setQHyperCube(value: IHyperCube): Self = StObject.set(x, "qHyperCube", value.asInstanceOf[js.Any])
   }

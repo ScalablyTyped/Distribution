@@ -23,7 +23,8 @@ object CancelSpotFleetRequestsResponse {
     __obj.asInstanceOf[CancelSpotFleetRequestsResponse]
   }
   
-  extension [Self <: CancelSpotFleetRequestsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CancelSpotFleetRequestsResponse] (val x: Self) extends AnyVal {
     
     inline def setSuccessfulFleetRequests(value: CancelSpotFleetRequestsSuccessSet): Self = StObject.set(x, "SuccessfulFleetRequests", value.asInstanceOf[js.Any])
     

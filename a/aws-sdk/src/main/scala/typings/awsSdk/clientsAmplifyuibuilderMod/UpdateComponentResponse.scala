@@ -18,7 +18,8 @@ object UpdateComponentResponse {
     __obj.asInstanceOf[UpdateComponentResponse]
   }
   
-  extension [Self <: UpdateComponentResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateComponentResponse] (val x: Self) extends AnyVal {
     
     inline def setEntity(value: Component): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
     

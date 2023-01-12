@@ -30,7 +30,8 @@ object Background {
       __obj.asInstanceOf[BluetoothLEAdvertisementPublisherTriggerDetails]
     }
     
-    extension [Self <: BluetoothLEAdvertisementPublisherTriggerDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BluetoothLEAdvertisementPublisherTriggerDetails] (val x: Self) extends AnyVal {
       
       inline def setError(value: BluetoothError): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
@@ -61,7 +62,8 @@ object Background {
       __obj.asInstanceOf[BluetoothLEAdvertisementWatcherTriggerDetails]
     }
     
-    extension [Self <: BluetoothLEAdvertisementWatcherTriggerDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BluetoothLEAdvertisementWatcherTriggerDetails] (val x: Self) extends AnyVal {
       
       inline def setAdvertisements(value: IVectorView[BluetoothLEAdvertisementReceivedEventArgs]): Self = StObject.set(x, "advertisements", value.asInstanceOf[js.Any])
       
@@ -87,7 +89,8 @@ object Background {
       __obj.asInstanceOf[GattCharacteristicNotificationTriggerDetails]
     }
     
-    extension [Self <: GattCharacteristicNotificationTriggerDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GattCharacteristicNotificationTriggerDetails] (val x: Self) extends AnyVal {
       
       inline def setCharacteristic(value: GattCharacteristic): Self = StObject.set(x, "characteristic", value.asInstanceOf[js.Any])
       
@@ -114,7 +117,8 @@ object Background {
       __obj.asInstanceOf[RfcommConnectionTriggerDetails]
     }
     
-    extension [Self <: RfcommConnectionTriggerDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RfcommConnectionTriggerDetails] (val x: Self) extends AnyVal {
       
       inline def setIncoming(value: Boolean): Self = StObject.set(x, "incoming", value.asInstanceOf[js.Any])
       
@@ -147,7 +151,8 @@ object Background {
       __obj.asInstanceOf[RfcommInboundConnectionInformation]
     }
     
-    extension [Self <: RfcommInboundConnectionInformation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RfcommInboundConnectionInformation] (val x: Self) extends AnyVal {
       
       inline def setLocalServiceId(value: RfcommServiceId): Self = StObject.set(x, "localServiceId", value.asInstanceOf[js.Any])
       
@@ -170,7 +175,8 @@ object Background {
       __obj.asInstanceOf[RfcommOutboundConnectionInformation]
     }
     
-    extension [Self <: RfcommOutboundConnectionInformation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RfcommOutboundConnectionInformation] (val x: Self) extends AnyVal {
       
       inline def setRemoteServiceId(value: RfcommServiceId): Self = StObject.set(x, "remoteServiceId", value.asInstanceOf[js.Any])
     }

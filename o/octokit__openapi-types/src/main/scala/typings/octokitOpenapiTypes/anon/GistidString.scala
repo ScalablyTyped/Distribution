@@ -16,7 +16,8 @@ object GistidString {
     __obj.asInstanceOf[GistidString]
   }
   
-  extension [Self <: GistidString](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GistidString] (val x: Self) extends AnyVal {
     
     inline def setGist_id(value: String): Self = StObject.set(x, "gist_id", value.asInstanceOf[js.Any])
   }

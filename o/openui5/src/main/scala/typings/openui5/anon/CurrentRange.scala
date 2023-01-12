@@ -19,7 +19,8 @@ object CurrentRange {
     __obj.asInstanceOf[CurrentRange]
   }
   
-  extension [Self <: CurrentRange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CurrentRange] (val x: Self) extends AnyVal {
     
     inline def setCurrentRange(value: default): Self = StObject.set(x, "currentRange", value.asInstanceOf[js.Any])
     

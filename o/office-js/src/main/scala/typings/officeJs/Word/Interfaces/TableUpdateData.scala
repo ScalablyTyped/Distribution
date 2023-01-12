@@ -147,7 +147,8 @@ object TableUpdateData {
     __obj.asInstanceOf[TableUpdateData]
   }
   
-  extension [Self <: TableUpdateData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TableUpdateData] (val x: Self) extends AnyVal {
     
     inline def setAlignment(value: Alignment | Mixed | Unknown_ | Left | Centered | Right | Justified): Self = StObject.set(x, "alignment", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object DomainEndpointOptionsStatus {
     __obj.asInstanceOf[DomainEndpointOptionsStatus]
   }
   
-  extension [Self <: DomainEndpointOptionsStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DomainEndpointOptionsStatus] (val x: Self) extends AnyVal {
     
     inline def setOptions(value: DomainEndpointOptions): Self = StObject.set(x, "Options", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object GetMilestoneOutput {
     __obj.asInstanceOf[GetMilestoneOutput]
   }
   
-  extension [Self <: GetMilestoneOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetMilestoneOutput] (val x: Self) extends AnyVal {
     
     inline def setMilestone(value: Milestone): Self = StObject.set(x, "Milestone", value.asInstanceOf[js.Any])
     

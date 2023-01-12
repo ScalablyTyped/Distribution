@@ -19,7 +19,8 @@ object DatastoreIODetails {
     __obj.asInstanceOf[DatastoreIODetails]
   }
   
-  extension [Self <: DatastoreIODetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DatastoreIODetails] (val x: Self) extends AnyVal {
     
     inline def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
     

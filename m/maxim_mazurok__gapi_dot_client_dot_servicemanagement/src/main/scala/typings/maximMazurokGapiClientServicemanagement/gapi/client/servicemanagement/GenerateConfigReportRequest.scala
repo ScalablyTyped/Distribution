@@ -29,7 +29,8 @@ object GenerateConfigReportRequest {
     __obj.asInstanceOf[GenerateConfigReportRequest]
   }
   
-  extension [Self <: GenerateConfigReportRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GenerateConfigReportRequest] (val x: Self) extends AnyVal {
     
     inline def setNewConfig(
       value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any

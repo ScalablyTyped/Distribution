@@ -18,7 +18,8 @@ object DomRef_ {
     __obj.asInstanceOf[DomRef_]
   }
   
-  extension [Self <: DomRef_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DomRef_] (val x: Self) extends AnyVal {
     
     inline def setDomRef(value: String): Self = StObject.set(x, "domRef", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object SnapshotDeleteRepositoryParams {
     __obj.asInstanceOf[SnapshotDeleteRepositoryParams]
   }
   
-  extension [Self <: SnapshotDeleteRepositoryParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SnapshotDeleteRepositoryParams] (val x: Self) extends AnyVal {
     
     inline def setMasterTimeout(value: TimeSpan): Self = StObject.set(x, "masterTimeout", value.asInstanceOf[js.Any])
     

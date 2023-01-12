@@ -28,7 +28,8 @@ object ListSafetyRulesRequest {
     __obj.asInstanceOf[ListSafetyRulesRequest]
   }
   
-  extension [Self <: ListSafetyRulesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListSafetyRulesRequest] (val x: Self) extends AnyVal {
     
     inline def setControlPanelArn(value: string): Self = StObject.set(x, "ControlPanelArn", value.asInstanceOf[js.Any])
     

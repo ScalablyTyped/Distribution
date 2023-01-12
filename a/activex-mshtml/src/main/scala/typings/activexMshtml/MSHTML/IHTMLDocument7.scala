@@ -214,7 +214,8 @@ object IHTMLDocument7 {
     __obj.asInstanceOf[IHTMLDocument7]
   }
   
-  extension [Self <: IHTMLDocument7](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IHTMLDocument7] (val x: Self) extends AnyVal {
     
     inline def setAdoptNode(value: IHTMLDOMNode => IHTMLDOMNode3): Self = StObject.set(x, "adoptNode", js.Any.fromFunction1(value))
     

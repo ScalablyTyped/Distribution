@@ -32,7 +32,8 @@ object distTs3Dot9ComponentsResultMod {
       __obj.asInstanceOf[ResultProps]
     }
     
-    extension [Self <: ResultProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResultProps] (val x: Self) extends AnyVal {
       
       inline def setFailureMessages(value: Any): Self = StObject.set(x, "failureMessages", value.asInstanceOf[js.Any])
       

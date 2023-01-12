@@ -41,7 +41,8 @@ object AppUser {
     __obj.asInstanceOf[AppUser]
   }
   
-  extension [Self <: AppUser](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppUser] (val x: Self) extends AnyVal {
     
     inline def setAllUsers(value: (QueryObj, CbCallback) => Unit): Self = StObject.set(x, "allUsers", js.Any.fromFunction2(value))
     

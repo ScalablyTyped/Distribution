@@ -22,7 +22,8 @@ object Stencil {
     __obj.asInstanceOf[Stencil]
   }
   
-  extension [Self <: Stencil](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Stencil] (val x: Self) extends AnyVal {
     
     inline def setColor(value: WebGLColorBuffer): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

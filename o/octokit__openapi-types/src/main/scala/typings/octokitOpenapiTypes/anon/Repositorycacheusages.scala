@@ -24,7 +24,8 @@ object Repositorycacheusages {
     __obj.asInstanceOf[Repositorycacheusages]
   }
   
-  extension [Self <: Repositorycacheusages](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Repositorycacheusages] (val x: Self) extends AnyVal {
     
     inline def setRepository_cache_usages(
       value: js.Array[

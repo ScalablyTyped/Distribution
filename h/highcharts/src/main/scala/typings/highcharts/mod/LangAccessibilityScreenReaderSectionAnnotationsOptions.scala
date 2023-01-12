@@ -21,7 +21,8 @@ object LangAccessibilityScreenReaderSectionAnnotationsOptions {
     __obj.asInstanceOf[LangAccessibilityScreenReaderSectionAnnotationsOptions]
   }
   
-  extension [Self <: LangAccessibilityScreenReaderSectionAnnotationsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LangAccessibilityScreenReaderSectionAnnotationsOptions] (val x: Self) extends AnyVal {
     
     inline def setDescriptionMultiplePoints(value: String): Self = StObject.set(x, "descriptionMultiplePoints", value.asInstanceOf[js.Any])
     

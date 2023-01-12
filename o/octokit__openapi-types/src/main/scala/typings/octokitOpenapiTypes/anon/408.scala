@@ -21,7 +21,8 @@ object `408` {
     __obj.asInstanceOf[`408`]
   }
   
-  extension [Self <: `408`](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: `408`] (val x: Self) extends AnyVal {
     
     inline def setCan_approve_pull_request_reviews(
       value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['actions-can-approve-pull-request-reviews'] */ js.Any

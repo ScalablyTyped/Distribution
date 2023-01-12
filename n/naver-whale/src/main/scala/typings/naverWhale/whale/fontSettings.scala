@@ -41,7 +41,8 @@ object fontSettings {
       __obj.asInstanceOf[DefaultFontSizeDetails]
     }
     
-    extension [Self <: DefaultFontSizeDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DefaultFontSizeDetails] (val x: Self) extends AnyVal {
       
       inline def setPixelSize(value: Double): Self = StObject.set(x, "pixelSize", value.asInstanceOf[js.Any])
     }
@@ -66,7 +67,8 @@ object fontSettings {
       __obj.asInstanceOf[FontDetails]
     }
     
-    extension [Self <: FontDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FontDetails] (val x: Self) extends AnyVal {
       
       inline def setGenericFamily(value: cursive | fantasy | fixed | sansserif | serif | standard): Self = StObject.set(x, "genericFamily", value.asInstanceOf[js.Any])
       
@@ -91,7 +93,8 @@ object fontSettings {
       __obj.asInstanceOf[FontDetailsResult]
     }
     
-    extension [Self <: FontDetailsResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FontDetailsResult] (val x: Self) extends AnyVal {
       
       inline def setFontId(value: String): Self = StObject.set(x, "fontId", value.asInstanceOf[js.Any])
       
@@ -114,7 +117,8 @@ object fontSettings {
       __obj.asInstanceOf[FontName]
     }
     
-    extension [Self <: FontName](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FontName] (val x: Self) extends AnyVal {
       
       inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
       
@@ -137,7 +141,8 @@ object fontSettings {
       __obj.asInstanceOf[FontSizeDetails]
     }
     
-    extension [Self <: FontSizeDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FontSizeDetails] (val x: Self) extends AnyVal {
       
       inline def setLevelOfControl(value: String): Self = StObject.set(x, "levelOfControl", value.asInstanceOf[js.Any])
       
@@ -166,7 +171,8 @@ object fontSettings {
       __obj.asInstanceOf[FullFontDetails]
     }
     
-    extension [Self <: FullFontDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FullFontDetails] (val x: Self) extends AnyVal {
       
       inline def setFontId(value: String): Self = StObject.set(x, "fontId", value.asInstanceOf[js.Any])
       
@@ -201,7 +207,8 @@ object fontSettings {
       __obj.asInstanceOf[SetFontDetails]
     }
     
-    extension [Self <: SetFontDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SetFontDetails] (val x: Self) extends AnyVal {
       
       inline def setFontId(value: String): Self = StObject.set(x, "fontId", value.asInstanceOf[js.Any])
     }
@@ -219,7 +226,8 @@ object fontSettings {
       __obj.asInstanceOf[SetFontSizeDetails]
     }
     
-    extension [Self <: SetFontSizeDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SetFontSizeDetails] (val x: Self) extends AnyVal {
       
       inline def setPixelSize(value: Double): Self = StObject.set(x, "pixelSize", value.asInstanceOf[js.Any])
     }

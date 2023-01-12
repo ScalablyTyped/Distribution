@@ -21,7 +21,8 @@ object mobileNumberstringSequenc {
     __obj.asInstanceOf[mobileNumberstringSequenc]
   }
   
-  extension [Self <: mobileNumberstringSequenc](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: mobileNumberstringSequenc] (val x: Self) extends AnyVal {
     
     inline def setMobileNumber(value: String): Self = StObject.set(x, "mobileNumber", value.asInstanceOf[js.Any])
     

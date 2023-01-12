@@ -20,7 +20,8 @@ object ResetResourceLogLevelRequest {
     __obj.asInstanceOf[ResetResourceLogLevelRequest]
   }
   
-  extension [Self <: ResetResourceLogLevelRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResetResourceLogLevelRequest] (val x: Self) extends AnyVal {
     
     inline def setResourceIdentifier(value: ResourceIdentifier): Self = StObject.set(x, "ResourceIdentifier", value.asInstanceOf[js.Any])
     

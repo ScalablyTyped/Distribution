@@ -18,7 +18,8 @@ object MaskHint {
     __obj.asInstanceOf[MaskHint]
   }
   
-  extension [Self <: MaskHint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MaskHint] (val x: Self) extends AnyVal {
     
     inline def setType(value: MaskType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

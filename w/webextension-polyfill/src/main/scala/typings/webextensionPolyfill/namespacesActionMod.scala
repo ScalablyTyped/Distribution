@@ -51,7 +51,8 @@ object namespacesActionMod {
         __obj.asInstanceOf[Details]
       }
       
-      extension [Self <: Details](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Details] (val x: Self) extends AnyVal {
         
         inline def setTabId(value: Double): Self = StObject.set(x, "tabId", value.asInstanceOf[js.Any])
         
@@ -106,7 +107,8 @@ object namespacesActionMod {
         __obj.asInstanceOf[OnClickData]
       }
       
-      extension [Self <: OnClickData](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: OnClickData] (val x: Self) extends AnyVal {
         
         inline def setButton(value: Double): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
         
@@ -152,7 +154,8 @@ object namespacesActionMod {
         __obj.asInstanceOf[SetBadgeBackgroundColorDetailsType]
       }
       
-      extension [Self <: SetBadgeBackgroundColorDetailsType](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SetBadgeBackgroundColorDetailsType] (val x: Self) extends AnyVal {
         
         inline def setColor(value: ColorValue): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
         
@@ -173,7 +176,8 @@ object namespacesActionMod {
         __obj.asInstanceOf[SetBadgeTextColorDetailsType]
       }
       
-      extension [Self <: SetBadgeTextColorDetailsType](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SetBadgeTextColorDetailsType] (val x: Self) extends AnyVal {
         
         inline def setColor(value: ColorValue): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
         
@@ -197,7 +201,8 @@ object namespacesActionMod {
         __obj.asInstanceOf[SetBadgeTextDetailsType]
       }
       
-      extension [Self <: SetBadgeTextDetailsType](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SetBadgeTextDetailsType] (val x: Self) extends AnyVal {
         
         inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
         
@@ -237,7 +242,8 @@ object namespacesActionMod {
         __obj.asInstanceOf[SetIconDetailsType]
       }
       
-      extension [Self <: SetIconDetailsType](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SetIconDetailsType] (val x: Self) extends AnyVal {
         
         inline def setImageData(value: ImageDataType | (Record[String, ImageDataType])): Self = StObject.set(x, "imageData", value.asInstanceOf[js.Any])
         
@@ -265,7 +271,8 @@ object namespacesActionMod {
         __obj.asInstanceOf[SetPopupDetailsType]
       }
       
-      extension [Self <: SetPopupDetailsType](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SetPopupDetailsType] (val x: Self) extends AnyVal {
         
         inline def setPopup(value: String): Self = StObject.set(x, "popup", value.asInstanceOf[js.Any])
         
@@ -289,7 +296,8 @@ object namespacesActionMod {
         __obj.asInstanceOf[SetTitleDetailsType]
       }
       
-      extension [Self <: SetTitleDetailsType](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SetTitleDetailsType] (val x: Self) extends AnyVal {
         
         inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
         

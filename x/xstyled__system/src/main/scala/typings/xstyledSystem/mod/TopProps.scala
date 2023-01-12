@@ -16,7 +16,8 @@ object TopProps {
     __obj.asInstanceOf[TopProps[TLength]]
   }
   
-  extension [Self <: TopProps[?], TLength](x: Self & TopProps[TLength]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TopProps[?], TLength] (val x: Self & TopProps[TLength]) extends AnyVal {
     
     inline def setTop(value: ResponsiveValue[Top[TLength]]): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
     

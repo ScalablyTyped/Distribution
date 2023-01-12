@@ -60,7 +60,8 @@ object CIMObjectMarker3D {
     __obj.asInstanceOf[CIMObjectMarker3D]
   }
   
-  extension [Self <: CIMObjectMarker3D](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CIMObjectMarker3D] (val x: Self) extends AnyVal {
     
     inline def setDepth(value: Double): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
     

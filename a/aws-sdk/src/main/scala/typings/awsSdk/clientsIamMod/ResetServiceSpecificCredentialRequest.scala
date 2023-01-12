@@ -23,7 +23,8 @@ object ResetServiceSpecificCredentialRequest {
     __obj.asInstanceOf[ResetServiceSpecificCredentialRequest]
   }
   
-  extension [Self <: ResetServiceSpecificCredentialRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResetServiceSpecificCredentialRequest] (val x: Self) extends AnyVal {
     
     inline def setServiceSpecificCredentialId(value: serviceSpecificCredentialId): Self = StObject.set(x, "ServiceSpecificCredentialId", value.asInstanceOf[js.Any])
     

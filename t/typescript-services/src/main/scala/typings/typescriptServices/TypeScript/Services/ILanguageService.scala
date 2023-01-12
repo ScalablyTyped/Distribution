@@ -96,7 +96,8 @@ object ILanguageService {
     __obj.asInstanceOf[ILanguageService]
   }
   
-  extension [Self <: ILanguageService](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ILanguageService] (val x: Self) extends AnyVal {
     
     inline def setCleanupSemanticCache(value: () => Unit): Self = StObject.set(x, "cleanupSemanticCache", js.Any.fromFunction0(value))
     

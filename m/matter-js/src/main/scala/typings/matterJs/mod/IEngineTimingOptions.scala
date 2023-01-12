@@ -56,7 +56,8 @@ object IEngineTimingOptions {
     __obj.asInstanceOf[IEngineTimingOptions]
   }
   
-  extension [Self <: IEngineTimingOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IEngineTimingOptions] (val x: Self) extends AnyVal {
     
     inline def setLastDelta(value: Double): Self = StObject.set(x, "lastDelta", value.asInstanceOf[js.Any])
     

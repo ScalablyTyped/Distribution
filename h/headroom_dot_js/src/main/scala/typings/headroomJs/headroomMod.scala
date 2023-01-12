@@ -151,7 +151,8 @@ object headroomMod {
         __obj.asInstanceOf[HeadroomOptions]
       }
       
-      extension [Self <: HeadroomOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: HeadroomOptions] (val x: Self) extends AnyVal {
         
         inline def setClasses(value: Bottom): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
         
@@ -195,7 +196,8 @@ object headroomMod {
       }
     }
     
-    extension [Self <: Headroom](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Headroom] (val x: Self) extends AnyVal {
       
       inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
       
@@ -225,7 +227,8 @@ object headroomMod {
         __obj.asInstanceOf[Offset]
       }
       
-      extension [Self <: Offset](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Offset] (val x: Self) extends AnyVal {
         
         inline def setDown(value: Double): Self = StObject.set(x, "down", value.asInstanceOf[js.Any])
         
@@ -252,7 +255,8 @@ object headroomMod {
         __obj.asInstanceOf[Tolerance]
       }
       
-      extension [Self <: Tolerance](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Tolerance] (val x: Self) extends AnyVal {
         
         inline def setDown(value: Double): Self = StObject.set(x, "down", value.asInstanceOf[js.Any])
         

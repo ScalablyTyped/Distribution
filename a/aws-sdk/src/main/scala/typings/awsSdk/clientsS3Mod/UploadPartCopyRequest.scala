@@ -111,7 +111,8 @@ object UploadPartCopyRequest {
     __obj.asInstanceOf[UploadPartCopyRequest]
   }
   
-  extension [Self <: UploadPartCopyRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UploadPartCopyRequest] (val x: Self) extends AnyVal {
     
     inline def setBucket(value: BucketName): Self = StObject.set(x, "Bucket", value.asInstanceOf[js.Any])
     

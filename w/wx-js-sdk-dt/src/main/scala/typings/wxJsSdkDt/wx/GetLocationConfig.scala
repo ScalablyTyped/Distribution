@@ -23,7 +23,8 @@ object GetLocationConfig {
     __obj.asInstanceOf[GetLocationConfig]
   }
   
-  extension [Self <: GetLocationConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetLocationConfig] (val x: Self) extends AnyVal {
     
     inline def setSuccess(value: Location => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
     

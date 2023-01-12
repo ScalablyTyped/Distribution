@@ -33,7 +33,8 @@ object PaintEvent {
     __obj.asInstanceOf[PaintEvent]
   }
   
-  extension [Self <: PaintEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PaintEvent] (val x: Self) extends AnyVal {
     
     inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object PortalItemFetchRelatedItemsOptions {
     __obj.asInstanceOf[PortalItemFetchRelatedItemsOptions]
   }
   
-  extension [Self <: PortalItemFetchRelatedItemsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PortalItemFetchRelatedItemsOptions] (val x: Self) extends AnyVal {
     
     inline def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
     

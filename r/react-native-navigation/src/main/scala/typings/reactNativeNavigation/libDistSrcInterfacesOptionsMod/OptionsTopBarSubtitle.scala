@@ -51,7 +51,8 @@ object OptionsTopBarSubtitle {
     __obj.asInstanceOf[OptionsTopBarSubtitle]
   }
   
-  extension [Self <: OptionsTopBarSubtitle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OptionsTopBarSubtitle] (val x: Self) extends AnyVal {
     
     inline def setAlignment(value: center): Self = StObject.set(x, "alignment", value.asInstanceOf[js.Any])
     

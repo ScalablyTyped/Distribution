@@ -18,7 +18,8 @@ object BannerClickEventUIParam {
     __obj.asInstanceOf[BannerClickEventUIParam]
   }
   
-  extension [Self <: BannerClickEventUIParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BannerClickEventUIParam] (val x: Self) extends AnyVal {
     
     inline def setBannerElement(value: Any): Self = StObject.set(x, "bannerElement", value.asInstanceOf[js.Any])
     

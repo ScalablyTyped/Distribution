@@ -569,7 +569,8 @@ object sapUiWebcFioriSideNavigationMod {
       __obj.asInstanceOf[SideNavigationSettings]
     }
     
-    extension [Self <: SideNavigationSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SideNavigationSettings] (val x: Self) extends AnyVal {
       
       inline def setCollapsed(value: Boolean | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "collapsed", value.asInstanceOf[js.Any])
       

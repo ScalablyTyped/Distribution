@@ -19,7 +19,8 @@ object ActiveElement {
     __obj.asInstanceOf[ActiveElement]
   }
   
-  extension [Self <: ActiveElement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ActiveElement] (val x: Self) extends AnyVal {
     
     inline def setElement(value: Element[AnyObject, AnyObject]): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
   }

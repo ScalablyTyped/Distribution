@@ -17,7 +17,8 @@ object DurandalNavigationOptions {
     __obj.asInstanceOf[DurandalNavigationOptions]
   }
   
-  extension [Self <: DurandalNavigationOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DurandalNavigationOptions] (val x: Self) extends AnyVal {
     
     inline def setReplace(value: Boolean): Self = StObject.set(x, "replace", value.asInstanceOf[js.Any])
     

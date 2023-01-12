@@ -43,7 +43,8 @@ object ChannelSpecification {
     __obj.asInstanceOf[ChannelSpecification]
   }
   
-  extension [Self <: ChannelSpecification](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChannelSpecification] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: EntityDescription): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     

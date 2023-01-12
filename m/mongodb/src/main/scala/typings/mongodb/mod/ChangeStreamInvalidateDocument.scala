@@ -20,7 +20,8 @@ object ChangeStreamInvalidateDocument {
     __obj.asInstanceOf[ChangeStreamInvalidateDocument]
   }
   
-  extension [Self <: ChangeStreamInvalidateDocument](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChangeStreamInvalidateDocument] (val x: Self) extends AnyVal {
     
     inline def setOperationType(value: invalidate): Self = StObject.set(x, "operationType", value.asInstanceOf[js.Any])
   }

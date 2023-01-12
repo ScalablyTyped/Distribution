@@ -93,7 +93,8 @@ object ResolvedBuildOptions {
     __obj.asInstanceOf[ResolvedBuildOptions]
   }
   
-  extension [Self <: ResolvedBuildOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResolvedBuildOptions] (val x: Self) extends AnyVal {
     
     inline def setAssetsDir(value: String): Self = StObject.set(x, "assetsDir", value.asInstanceOf[js.Any])
     

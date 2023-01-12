@@ -29,7 +29,8 @@ object KeyConditionExpression {
     __obj.asInstanceOf[KeyConditionExpression]
   }
   
-  extension [Self <: KeyConditionExpression](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KeyConditionExpression] (val x: Self) extends AnyVal {
     
     inline def setExpressionAttributeValues(value: ExpressionAttributeValueMap): Self = StObject.set(x, "ExpressionAttributeValues", value.asInstanceOf[js.Any])
     

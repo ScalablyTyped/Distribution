@@ -33,7 +33,8 @@ object TypeInfo {
     __obj.asInstanceOf[TypeInfo]
   }
   
-  extension [Self <: TypeInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeInfo] (val x: Self) extends AnyVal {
     
     inline def setDocComment(value: String): Self = StObject.set(x, "docComment", value.asInstanceOf[js.Any])
     

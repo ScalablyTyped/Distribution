@@ -76,7 +76,8 @@ object IMimeModel {
       __obj.asInstanceOf[ISetDataOptions]
     }
     
-    extension [Self <: ISetDataOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISetDataOptions] (val x: Self) extends AnyVal {
       
       inline def setData(value: ReadonlyPartialJSONObject): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -88,7 +89,8 @@ object IMimeModel {
     }
   }
   
-  extension [Self <: IMimeModel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IMimeModel] (val x: Self) extends AnyVal {
     
     inline def setData(value: ReadonlyPartialJSONObject): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object SendDiceOptions {
     __obj.asInstanceOf[SendDiceOptions]
   }
   
-  extension [Self <: SendDiceOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SendDiceOptions] (val x: Self) extends AnyVal {
     
     inline def setEmoji(value: String): Self = StObject.set(x, "emoji", value.asInstanceOf[js.Any])
     

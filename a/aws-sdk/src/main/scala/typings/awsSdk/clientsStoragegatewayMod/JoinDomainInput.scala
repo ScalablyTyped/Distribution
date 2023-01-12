@@ -53,7 +53,8 @@ object JoinDomainInput {
     __obj.asInstanceOf[JoinDomainInput]
   }
   
-  extension [Self <: JoinDomainInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JoinDomainInput] (val x: Self) extends AnyVal {
     
     inline def setDomainControllers(value: Hosts): Self = StObject.set(x, "DomainControllers", value.asInstanceOf[js.Any])
     

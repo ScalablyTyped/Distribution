@@ -26,7 +26,8 @@ object SearchedWords {
     __obj.asInstanceOf[SearchedWords]
   }
   
-  extension [Self <: SearchedWords](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchedWords] (val x: Self) extends AnyVal {
     
     inline def setNotes(value: js.Array[NoteMetadata]): Self = StObject.set(x, "notes", value.asInstanceOf[js.Any])
     

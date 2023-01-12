@@ -163,7 +163,8 @@ object BaseFrame {
     __obj.asInstanceOf[BaseFrame]
   }
   
-  extension [Self <: BaseFrame](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BaseFrame] (val x: Self) extends AnyVal {
     
     inline def setFrameStyleName(value: String): Self = StObject.set(x, "FrameStyleName", value.asInstanceOf[js.Any])
     

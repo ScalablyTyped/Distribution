@@ -42,7 +42,8 @@ object TemplateSettings {
     __obj.asInstanceOf[TemplateSettings]
   }
   
-  extension [Self <: TemplateSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TemplateSettings] (val x: Self) extends AnyVal {
     
     inline def setEscape(value: js.RegExp): Self = StObject.set(x, "escape", value.asInstanceOf[js.Any])
     

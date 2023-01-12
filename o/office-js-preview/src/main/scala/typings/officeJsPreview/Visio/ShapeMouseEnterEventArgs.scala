@@ -35,7 +35,8 @@ object ShapeMouseEnterEventArgs {
     __obj.asInstanceOf[ShapeMouseEnterEventArgs]
   }
   
-  extension [Self <: ShapeMouseEnterEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShapeMouseEnterEventArgs] (val x: Self) extends AnyVal {
     
     inline def setPageName(value: String): Self = StObject.set(x, "pageName", value.asInstanceOf[js.Any])
     

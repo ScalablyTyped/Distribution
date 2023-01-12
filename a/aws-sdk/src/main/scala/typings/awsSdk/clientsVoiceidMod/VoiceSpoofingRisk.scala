@@ -18,7 +18,8 @@ object VoiceSpoofingRisk {
     __obj.asInstanceOf[VoiceSpoofingRisk]
   }
   
-  extension [Self <: VoiceSpoofingRisk](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VoiceSpoofingRisk] (val x: Self) extends AnyVal {
     
     inline def setRiskScore(value: Score): Self = StObject.set(x, "RiskScore", value.asInstanceOf[js.Any])
   }

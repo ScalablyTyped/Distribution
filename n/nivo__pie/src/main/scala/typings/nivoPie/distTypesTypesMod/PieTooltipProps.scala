@@ -15,7 +15,8 @@ object PieTooltipProps {
     __obj.asInstanceOf[PieTooltipProps[RawDatum]]
   }
   
-  extension [Self <: PieTooltipProps[?], RawDatum](x: Self & PieTooltipProps[RawDatum]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PieTooltipProps[?], RawDatum] (val x: Self & PieTooltipProps[RawDatum]) extends AnyVal {
     
     inline def setDatum(value: ComputedDatum[RawDatum]): Self = StObject.set(x, "datum", value.asInstanceOf[js.Any])
   }

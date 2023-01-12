@@ -26,7 +26,8 @@ object GoogleCloudDialogflowV2SessionEntityType {
     __obj.asInstanceOf[GoogleCloudDialogflowV2SessionEntityType]
   }
   
-  extension [Self <: GoogleCloudDialogflowV2SessionEntityType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDialogflowV2SessionEntityType] (val x: Self) extends AnyVal {
     
     inline def setEntities(value: js.Array[GoogleCloudDialogflowV2EntityTypeEntity]): Self = StObject.set(x, "entities", value.asInstanceOf[js.Any])
     

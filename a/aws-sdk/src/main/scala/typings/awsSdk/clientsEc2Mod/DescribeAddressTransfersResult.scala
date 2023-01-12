@@ -23,7 +23,8 @@ object DescribeAddressTransfersResult {
     __obj.asInstanceOf[DescribeAddressTransfersResult]
   }
   
-  extension [Self <: DescribeAddressTransfersResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeAddressTransfersResult] (val x: Self) extends AnyVal {
     
     inline def setAddressTransfers(value: AddressTransferList): Self = StObject.set(x, "AddressTransfers", value.asInstanceOf[js.Any])
     

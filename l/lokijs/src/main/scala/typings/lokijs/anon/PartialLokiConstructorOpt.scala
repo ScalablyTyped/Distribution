@@ -58,7 +58,8 @@ object PartialLokiConstructorOpt {
     __obj.asInstanceOf[PartialLokiConstructorOpt]
   }
   
-  extension [Self <: PartialLokiConstructorOpt](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialLokiConstructorOpt] (val x: Self) extends AnyVal {
     
     inline def setAdapter(value: LokiPersistenceAdapter): Self = StObject.set(x, "adapter", value.asInstanceOf[js.Any])
     

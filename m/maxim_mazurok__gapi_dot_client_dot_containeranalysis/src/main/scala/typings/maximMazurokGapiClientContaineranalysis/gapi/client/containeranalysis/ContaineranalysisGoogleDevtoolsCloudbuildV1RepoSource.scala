@@ -42,7 +42,8 @@ object ContaineranalysisGoogleDevtoolsCloudbuildV1RepoSource {
     __obj.asInstanceOf[ContaineranalysisGoogleDevtoolsCloudbuildV1RepoSource]
   }
   
-  extension [Self <: ContaineranalysisGoogleDevtoolsCloudbuildV1RepoSource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContaineranalysisGoogleDevtoolsCloudbuildV1RepoSource] (val x: Self) extends AnyVal {
     
     inline def setBranchName(value: String): Self = StObject.set(x, "branchName", value.asInstanceOf[js.Any])
     

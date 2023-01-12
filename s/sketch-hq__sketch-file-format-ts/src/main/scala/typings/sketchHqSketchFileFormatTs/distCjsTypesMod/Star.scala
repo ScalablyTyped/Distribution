@@ -103,7 +103,8 @@ object Star {
     __obj.asInstanceOf[Star]
   }
   
-  extension [Self <: Star](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Star] (val x: Self) extends AnyVal {
     
     inline def setBooleanOperation(value: BooleanOperation): Self = StObject.set(x, "booleanOperation", value.asInstanceOf[js.Any])
     

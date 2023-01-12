@@ -123,7 +123,8 @@ object buildLazyLogMod {
       __obj.asInstanceOf[LazyLogProps]
     }
     
-    extension [Self <: LazyLogProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LazyLogProps] (val x: Self) extends AnyVal {
       
       inline def setCaseInsensitive(value: Boolean): Self = StObject.set(x, "caseInsensitive", value.asInstanceOf[js.Any])
       
@@ -248,7 +249,8 @@ object buildLazyLogMod {
       __obj.asInstanceOf[WebsocketOptions]
     }
     
-    extension [Self <: WebsocketOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WebsocketOptions] (val x: Self) extends AnyVal {
       
       inline def setFormatMessage(value: /* message */ Any => String): Self = StObject.set(x, "formatMessage", js.Any.fromFunction1(value))
       

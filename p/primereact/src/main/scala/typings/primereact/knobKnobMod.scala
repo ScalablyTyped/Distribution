@@ -129,7 +129,8 @@ object knobKnobMod {
       __obj.asInstanceOf[KnobChangeParams]
     }
     
-    extension [Self <: KnobChangeParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KnobChangeParams] (val x: Self) extends AnyVal {
       
       inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
@@ -575,7 +576,8 @@ object knobKnobMod {
       __obj.asInstanceOf[KnobProps]
     }
     
-    extension [Self <: KnobProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KnobProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       

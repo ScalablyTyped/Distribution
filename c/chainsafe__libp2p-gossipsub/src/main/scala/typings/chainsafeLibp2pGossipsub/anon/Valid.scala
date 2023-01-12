@@ -21,7 +21,8 @@ object Valid {
     __obj.asInstanceOf[Valid]
   }
   
-  extension [Self <: Valid](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Valid] (val x: Self) extends AnyVal {
     
     inline def setMessage(value: typings.libp2pInterfacePubsub.mod.Message): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     

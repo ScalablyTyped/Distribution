@@ -19,7 +19,8 @@ object PageviewData {
     __obj.asInstanceOf[PageviewData]
   }
   
-  extension [Self <: PageviewData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PageviewData] (val x: Self) extends AnyVal {
     
     inline def setPagePath(value: String): Self = StObject.set(x, "pagePath", value.asInstanceOf[js.Any])
     

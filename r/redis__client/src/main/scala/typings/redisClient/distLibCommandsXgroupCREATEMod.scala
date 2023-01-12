@@ -38,7 +38,8 @@ object distLibCommandsXgroupCREATEMod {
       __obj.asInstanceOf[XGroupCreateOptions]
     }
     
-    extension [Self <: XGroupCreateOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XGroupCreateOptions] (val x: Self) extends AnyVal {
       
       inline def setMKSTREAM(value: `true`): Self = StObject.set(x, "MKSTREAM", value.asInstanceOf[js.Any])
       

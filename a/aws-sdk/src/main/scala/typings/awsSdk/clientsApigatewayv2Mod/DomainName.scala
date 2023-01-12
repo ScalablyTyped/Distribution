@@ -38,7 +38,8 @@ object DomainName {
     __obj.asInstanceOf[DomainName]
   }
   
-  extension [Self <: DomainName](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DomainName] (val x: Self) extends AnyVal {
     
     inline def setApiMappingSelectionExpression(value: SelectionExpression): Self = StObject.set(x, "ApiMappingSelectionExpression", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object security {
     __obj.asInstanceOf[security]
   }
   
-  extension [Self <: security](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: security] (val x: Self) extends AnyVal {
     
     inline def setEncrypt(value: (String, String) => String): Self = StObject.set(x, "encrypt", js.Any.fromFunction2(value))
     

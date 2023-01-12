@@ -25,7 +25,8 @@ object Screen {
     __obj.asInstanceOf[Screen]
   }
   
-  extension [Self <: Screen](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Screen] (val x: Self) extends AnyVal {
     
     inline def setFileReference(value: String): Self = StObject.set(x, "fileReference", value.asInstanceOf[js.Any])
     

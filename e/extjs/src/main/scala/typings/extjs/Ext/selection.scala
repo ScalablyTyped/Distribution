@@ -66,7 +66,8 @@ object selection {
       __obj.asInstanceOf[ICellModel]
     }
     
-    extension [Self <: ICellModel](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICellModel] (val x: Self) extends AnyVal {
       
       inline def setDeselect(value: (/* record */ js.UndefOr[Any], /* suppressEvent */ js.UndefOr[Any]) => Unit): Self = StObject.set(x, "deselect", js.Any.fromFunction2(value))
       
@@ -162,7 +163,8 @@ object selection {
       __obj.asInstanceOf[ICheckboxModel]
     }
     
-    extension [Self <: ICheckboxModel](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICheckboxModel] (val x: Self) extends AnyVal {
       
       inline def setCheckOnly(value: Boolean): Self = StObject.set(x, "checkOnly", value.asInstanceOf[js.Any])
       
@@ -212,7 +214,8 @@ object selection {
       __obj.asInstanceOf[IDataViewModel]
     }
     
-    extension [Self <: IDataViewModel](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDataViewModel] (val x: Self) extends AnyVal {
       
       inline def setEnableKeyNav(value: Boolean): Self = StObject.set(x, "enableKeyNav", value.asInstanceOf[js.Any])
       
@@ -404,7 +407,8 @@ object selection {
       __obj.asInstanceOf[IModel]
     }
     
-    extension [Self <: IModel](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IModel] (val x: Self) extends AnyVal {
       
       inline def setAllowDeselect(value: Boolean): Self = StObject.set(x, "allowDeselect", value.asInstanceOf[js.Any])
       
@@ -588,7 +592,8 @@ object selection {
       __obj.asInstanceOf[IRowModel]
     }
     
-    extension [Self <: IRowModel](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IRowModel] (val x: Self) extends AnyVal {
       
       inline def setEnableKeyNav(value: Boolean): Self = StObject.set(x, "enableKeyNav", value.asInstanceOf[js.Any])
       
@@ -634,7 +639,8 @@ object selection {
       __obj.asInstanceOf[ITreeModel]
     }
     
-    extension [Self <: ITreeModel](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITreeModel] (val x: Self) extends AnyVal {
       
       inline def setBindStore(value: (/* store */ js.UndefOr[Any], /* initial */ js.UndefOr[Any]) => Unit): Self = StObject.set(x, "bindStore", js.Any.fromFunction2(value))
       

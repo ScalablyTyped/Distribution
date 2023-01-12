@@ -15,7 +15,8 @@ object HTMLElement {
     __obj.asInstanceOf[HTMLElement]
   }
   
-  extension [Self <: HTMLElement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HTMLElement] (val x: Self) extends AnyVal {
     
     inline def setSumo(value: Methods): Self = StObject.set(x, "sumo", value.asInstanceOf[js.Any])
   }

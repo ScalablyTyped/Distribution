@@ -58,7 +58,8 @@ object SalesforceConfiguration {
     __obj.asInstanceOf[SalesforceConfiguration]
   }
   
-  extension [Self <: SalesforceConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SalesforceConfiguration] (val x: Self) extends AnyVal {
     
     inline def setChatterFeedConfiguration(value: SalesforceChatterFeedConfiguration): Self = StObject.set(x, "ChatterFeedConfiguration", value.asInstanceOf[js.Any])
     

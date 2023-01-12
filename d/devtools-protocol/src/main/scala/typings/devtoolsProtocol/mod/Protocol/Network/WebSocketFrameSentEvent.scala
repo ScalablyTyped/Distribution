@@ -28,7 +28,8 @@ object WebSocketFrameSentEvent {
     __obj.asInstanceOf[WebSocketFrameSentEvent]
   }
   
-  extension [Self <: WebSocketFrameSentEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebSocketFrameSentEvent] (val x: Self) extends AnyVal {
     
     inline def setRequestId(value: RequestId): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
     

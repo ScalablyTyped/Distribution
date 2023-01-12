@@ -49,7 +49,8 @@ object classFontfaceMod {
       __obj.asInstanceOf[FontFaceOptions]
     }
     
-    extension [Self <: FontFaceOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FontFaceOptions] (val x: Self) extends AnyVal {
       
       inline def setAscent(value: String): Self = StObject.set(x, "ascent", value.asInstanceOf[js.Any])
       

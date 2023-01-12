@@ -50,7 +50,8 @@ object IObservableOptions {
     __obj.asInstanceOf[IObservableOptions]
   }
   
-  extension [Self <: IObservableOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IObservableOptions] (val x: Self) extends AnyVal {
     
     inline def setArgs(
       value: js.Array[

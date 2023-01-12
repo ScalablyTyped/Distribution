@@ -30,7 +30,8 @@ object TestDepGraphMeta {
     __obj.asInstanceOf[TestDepGraphMeta]
   }
   
-  extension [Self <: TestDepGraphMeta](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TestDepGraphMeta] (val x: Self) extends AnyVal {
     
     inline def setIgnoreSettings(value: IgnoreSettings): Self = StObject.set(x, "ignoreSettings", value.asInstanceOf[js.Any])
     

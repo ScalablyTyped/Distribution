@@ -123,7 +123,8 @@ object libClassdefGlobalActionMod {
       __obj.asInstanceOf[GlobalAction]
     }
     
-    extension [Self <: GlobalAction](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GlobalAction] (val x: Self) extends AnyVal {
       
       inline def setActivity(value: String): Self = StObject.set(x, "activity", value.asInstanceOf[js.Any])
       

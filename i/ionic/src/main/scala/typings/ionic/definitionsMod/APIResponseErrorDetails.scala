@@ -19,7 +19,8 @@ object APIResponseErrorDetails {
     __obj.asInstanceOf[APIResponseErrorDetails]
   }
   
-  extension [Self <: APIResponseErrorDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: APIResponseErrorDetails] (val x: Self) extends AnyVal {
     
     inline def setError_type(value: String): Self = StObject.set(x, "error_type", value.asInstanceOf[js.Any])
     

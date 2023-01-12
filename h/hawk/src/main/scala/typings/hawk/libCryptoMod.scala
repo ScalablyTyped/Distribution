@@ -63,7 +63,8 @@ object libCryptoMod {
       __obj.asInstanceOf[Artifacts]
     }
     
-    extension [Self <: Artifacts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Artifacts] (val x: Self) extends AnyVal {
       
       inline def setApp(value: String): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
       
@@ -108,7 +109,8 @@ object libCryptoMod {
       __obj.asInstanceOf[TimestampMessage_]
     }
     
-    extension [Self <: TimestampMessage_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TimestampMessage_] (val x: Self) extends AnyVal {
       
       inline def setTs(value: Double): Self = StObject.set(x, "ts", value.asInstanceOf[js.Any])
       

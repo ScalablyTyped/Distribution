@@ -44,7 +44,8 @@ object CellValueProviderAttributes {
     __obj.asInstanceOf[CellValueProviderAttributes]
   }
   
-  extension [Self <: CellValueProviderAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CellValueProviderAttributes] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

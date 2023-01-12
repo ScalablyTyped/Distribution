@@ -241,7 +241,8 @@ object MediaPlayerEvents {
     __obj.asInstanceOf[MediaPlayerEvents]
   }
   
-  extension [Self <: MediaPlayerEvents](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MediaPlayerEvents] (val x: Self) extends AnyVal {
     
     inline def setADAPTATION_SET_REMOVED_NO_CAPABILITIES(value: adaptationSetRemovedNoCapabilities): Self = StObject.set(x, "ADAPTATION_SET_REMOVED_NO_CAPABILITIES", value.asInstanceOf[js.Any])
     

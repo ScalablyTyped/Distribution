@@ -27,7 +27,8 @@ object typesGpspointdimensionMod {
       __obj.asInstanceOf[GPSPointDimension]
     }
     
-    extension [Self <: GPSPointDimension](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GPSPointDimension] (val x: Self) extends AnyVal {
       
       inline def setCoordinates(value: GPSCoordinates): Self = StObject.set(x, "Coordinates", value.asInstanceOf[js.Any])
       
@@ -56,7 +57,8 @@ object typesGpspointdimensionMod {
       __obj.asInstanceOf[UnmarshalledGPSPointDimension]
     }
     
-    extension [Self <: UnmarshalledGPSPointDimension](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnmarshalledGPSPointDimension] (val x: Self) extends AnyVal {
       
       inline def setCoordinates(value: UnmarshalledGPSCoordinates): Self = StObject.set(x, "Coordinates", value.asInstanceOf[js.Any])
       

@@ -26,7 +26,8 @@ object FunctionDeclaration {
     __obj.asInstanceOf[FunctionDeclaration]
   }
   
-  extension [Self <: FunctionDeclaration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FunctionDeclaration] (val x: Self) extends AnyVal {
     
     inline def setBody(value: js.Array[Statement]): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

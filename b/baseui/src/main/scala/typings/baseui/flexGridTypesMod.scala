@@ -27,7 +27,8 @@ object flexGridTypesMod {
       __obj.asInstanceOf[FlexGridItemProps[T]]
     }
     
-    extension [Self <: FlexGridItemProps[?], T /* <: ElementType[Any] */](x: Self & FlexGridItemProps[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FlexGridItemProps[?], T /* <: ElementType[Any] */] (val x: Self & FlexGridItemProps[T]) extends AnyVal {
       
       inline def setFlexGridItemCount(value: Double): Self = StObject.set(x, "flexGridItemCount", value.asInstanceOf[js.Any])
       
@@ -59,7 +60,8 @@ object flexGridTypesMod {
       __obj.asInstanceOf[FlexGridProps[T]]
     }
     
-    extension [Self <: FlexGridProps[?], T /* <: ElementType[Any] */](x: Self & FlexGridProps[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FlexGridProps[?], T /* <: ElementType[Any] */] (val x: Self & FlexGridProps[T]) extends AnyVal {
       
       inline def setFlexGridColumnCount(value: Responsive[Double]): Self = StObject.set(x, "flexGridColumnCount", value.asInstanceOf[js.Any])
       

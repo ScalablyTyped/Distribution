@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[Root]
     }
     
-    extension [Self <: Root](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Root] (val x: Self) extends AnyVal {
       
       inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
       
@@ -42,7 +43,8 @@ object anon {
       __obj.asInstanceOf[Send]
     }
     
-    extension [Self <: Send](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Send] (val x: Self) extends AnyVal {
       
       inline def setSend(value: (Any, Any) => Any): Self = StObject.set(x, "send", js.Any.fromFunction2(value))
     }

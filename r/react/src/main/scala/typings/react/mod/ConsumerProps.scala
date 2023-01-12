@@ -15,7 +15,8 @@ object ConsumerProps {
     __obj.asInstanceOf[ConsumerProps[T]]
   }
   
-  extension [Self <: ConsumerProps[?], T](x: Self & ConsumerProps[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConsumerProps[?], T] (val x: Self & ConsumerProps[T]) extends AnyVal {
     
     inline def setChildren(value: T => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
   }

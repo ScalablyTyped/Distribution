@@ -77,7 +77,8 @@ object GetAccountTransactionBySequenceNumberResponse {
       __obj.asInstanceOf[AsObject]
     }
     
-    extension [Self <: AsObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AsObject] (val x: Self) extends AnyVal {
       
       inline def setProofOfCurrentSequenceNumber(value: typings.libraCore.`lib@GeneratedAccountStateBlobPbMod`.AccountStateWithProof.AsObject): Self = StObject.set(x, "proofOfCurrentSequenceNumber", value.asInstanceOf[js.Any])
       

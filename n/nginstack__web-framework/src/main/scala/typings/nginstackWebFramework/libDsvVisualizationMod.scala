@@ -201,7 +201,8 @@ object libDsvVisualizationMod {
       __obj.asInstanceOf[Visualization]
     }
     
-    extension [Self <: Visualization](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Visualization] (val x: Self) extends AnyVal {
       
       inline def setAfterCreate_(value: () => Unit): Self = StObject.set(x, "afterCreate_", js.Any.fromFunction0(value))
       

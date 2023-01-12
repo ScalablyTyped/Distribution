@@ -52,7 +52,8 @@ object SubscriptionOffer {
     __obj.asInstanceOf[SubscriptionOffer]
   }
   
-  extension [Self <: SubscriptionOffer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubscriptionOffer] (val x: Self) extends AnyVal {
     
     inline def setBasePlanId(value: String): Self = StObject.set(x, "basePlanId", value.asInstanceOf[js.Any])
     

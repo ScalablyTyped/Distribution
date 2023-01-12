@@ -64,7 +64,8 @@ object libCommonCompletionMod {
       __obj.asInstanceOf[CompletionMiddleware]
     }
     
-    extension [Self <: CompletionMiddleware](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CompletionMiddleware] (val x: Self) extends AnyVal {
       
       inline def setProvideCompletionItem(
         value: js.ThisFunction5[

@@ -23,7 +23,8 @@ object Action {
     __obj.asInstanceOf[Action]
   }
   
-  extension [Self <: Action](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Action] (val x: Self) extends AnyVal {
     
     inline def setCrossRegionCopy(value: CrossRegionCopyActionList): Self = StObject.set(x, "CrossRegionCopy", value.asInstanceOf[js.Any])
     

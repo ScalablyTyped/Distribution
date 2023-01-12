@@ -38,7 +38,8 @@ object CreateRepositoryInput {
     __obj.asInstanceOf[CreateRepositoryInput]
   }
   
-  extension [Self <: CreateRepositoryInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateRepositoryInput] (val x: Self) extends AnyVal {
     
     inline def setConnectionArn(value: Arn): Self = StObject.set(x, "connectionArn", value.asInstanceOf[js.Any])
     

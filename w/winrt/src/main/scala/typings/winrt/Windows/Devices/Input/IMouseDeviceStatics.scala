@@ -15,7 +15,8 @@ object IMouseDeviceStatics {
     __obj.asInstanceOf[IMouseDeviceStatics]
   }
   
-  extension [Self <: IMouseDeviceStatics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IMouseDeviceStatics] (val x: Self) extends AnyVal {
     
     inline def setGetForCurrentView(value: () => MouseDevice): Self = StObject.set(x, "getForCurrentView", js.Any.fromFunction0(value))
   }

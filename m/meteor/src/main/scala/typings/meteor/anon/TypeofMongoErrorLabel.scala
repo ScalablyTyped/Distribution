@@ -34,7 +34,8 @@ object TypeofMongoErrorLabel {
     __obj.asInstanceOf[TypeofMongoErrorLabel]
   }
   
-  extension [Self <: TypeofMongoErrorLabel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofMongoErrorLabel] (val x: Self) extends AnyVal {
     
     inline def setHandshakeError(value: HandshakeError): Self = StObject.set(x, "HandshakeError", value.asInstanceOf[js.Any])
     

@@ -35,7 +35,8 @@ object colormapCreateRendererParams {
     __obj.asInstanceOf[colormapCreateRendererParams]
   }
   
-  extension [Self <: colormapCreateRendererParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: colormapCreateRendererParams] (val x: Self) extends AnyVal {
     
     inline def setLayer(value: ImageryLayer | ImageryTileLayer): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
     

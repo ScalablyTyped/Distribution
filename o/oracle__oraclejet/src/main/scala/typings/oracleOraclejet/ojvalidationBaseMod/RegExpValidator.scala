@@ -40,7 +40,8 @@ object RegExpValidator {
       __obj.asInstanceOf[ValidatorOptions]
     }
     
-    extension [Self <: ValidatorOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ValidatorOptions] (val x: Self) extends AnyVal {
       
       inline def setHint(value: String): Self = StObject.set(x, "hint", value.asInstanceOf[js.Any])
       

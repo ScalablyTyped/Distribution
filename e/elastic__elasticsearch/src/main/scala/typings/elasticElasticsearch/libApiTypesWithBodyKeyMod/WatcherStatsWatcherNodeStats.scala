@@ -30,7 +30,8 @@ object WatcherStatsWatcherNodeStats {
     __obj.asInstanceOf[WatcherStatsWatcherNodeStats]
   }
   
-  extension [Self <: WatcherStatsWatcherNodeStats](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WatcherStatsWatcherNodeStats] (val x: Self) extends AnyVal {
     
     inline def setCurrent_watches(value: js.Array[WatcherStatsWatchRecordStats]): Self = StObject.set(x, "current_watches", value.asInstanceOf[js.Any])
     

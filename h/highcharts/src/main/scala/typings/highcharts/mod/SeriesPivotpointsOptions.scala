@@ -77,7 +77,8 @@ object SeriesPivotpointsOptions {
     __obj.asInstanceOf[SeriesPivotpointsOptions]
   }
   
-  extension [Self <: SeriesPivotpointsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SeriesPivotpointsOptions] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

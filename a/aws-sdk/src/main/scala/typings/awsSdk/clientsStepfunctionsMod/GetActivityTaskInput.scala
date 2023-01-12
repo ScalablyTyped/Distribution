@@ -23,7 +23,8 @@ object GetActivityTaskInput {
     __obj.asInstanceOf[GetActivityTaskInput]
   }
   
-  extension [Self <: GetActivityTaskInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetActivityTaskInput] (val x: Self) extends AnyVal {
     
     inline def setActivityArn(value: Arn): Self = StObject.set(x, "activityArn", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object ReportTaskProgressOutput {
     __obj.asInstanceOf[ReportTaskProgressOutput]
   }
   
-  extension [Self <: ReportTaskProgressOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReportTaskProgressOutput] (val x: Self) extends AnyVal {
     
     inline def setCanceled(value: Boolean): Self = StObject.set(x, "canceled", value.asInstanceOf[js.Any])
   }

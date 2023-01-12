@@ -38,7 +38,8 @@ object TypeofPathConstraintMixTi {
     __obj.asInstanceOf[TypeofPathConstraintMixTi]
   }
   
-  extension [Self <: TypeofPathConstraintMixTi](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofPathConstraintMixTi] (val x: Self) extends AnyVal {
     
     inline def setENTRIES(value: Double): Self = StObject.set(x, "ENTRIES", value.asInstanceOf[js.Any])
     

@@ -51,7 +51,8 @@ object MailFolder {
     __obj.asInstanceOf[MailFolder]
   }
   
-  extension [Self <: MailFolder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MailFolder] (val x: Self) extends AnyVal {
     
     inline def setChildFolderCount(value: NullableOption[Double]): Self = StObject.set(x, "childFolderCount", value.asInstanceOf[js.Any])
     

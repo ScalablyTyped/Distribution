@@ -28,7 +28,8 @@ object DiskImageDetail {
     __obj.asInstanceOf[DiskImageDetail]
   }
   
-  extension [Self <: DiskImageDetail](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DiskImageDetail] (val x: Self) extends AnyVal {
     
     inline def setBytes(value: Long): Self = StObject.set(x, "Bytes", value.asInstanceOf[js.Any])
     

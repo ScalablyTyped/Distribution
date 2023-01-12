@@ -23,7 +23,8 @@ object PointerData {
     __obj.asInstanceOf[PointerData]
   }
   
-  extension [Self <: PointerData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PointerData] (val x: Self) extends AnyVal {
     
     inline def setAbsoluteX(value: Double): Self = StObject.set(x, "absoluteX", value.asInstanceOf[js.Any])
     

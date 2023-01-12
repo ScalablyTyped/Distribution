@@ -115,7 +115,8 @@ object esThemeThemeCacheMod {
       __obj.asInstanceOf[ThemeCache]
     }
     
-    extension [Self <: ThemeCache](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ThemeCache] (val x: Self) extends AnyVal {
       
       inline def setCache(value: Any): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
       

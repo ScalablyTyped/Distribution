@@ -23,7 +23,8 @@ object ListUsersInGroupResponse {
     __obj.asInstanceOf[ListUsersInGroupResponse]
   }
   
-  extension [Self <: ListUsersInGroupResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListUsersInGroupResponse] (val x: Self) extends AnyVal {
     
     inline def setNextToken(value: PaginationKey): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

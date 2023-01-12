@@ -28,7 +28,8 @@ object distParserAstDotcoreLinterApiMod {
       __obj.asInstanceOf[ErrorFactory[T]]
     }
     
-    extension [Self <: ErrorFactory[?], T](x: Self & ErrorFactory[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ErrorFactory[?], T] (val x: Self & ErrorFactory[T]) extends AnyVal {
       
       inline def setError(value: (T, String) => Any): Self = StObject.set(x, "error", js.Any.fromFunction2(value))
       
@@ -51,7 +52,8 @@ object distParserAstDotcoreLinterApiMod {
       __obj.asInstanceOf[Linter]
     }
     
-    extension [Self <: Linter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Linter] (val x: Self) extends AnyVal {
       
       inline def setRegisterRule(value: (String, LinterRule[Any]) => Any): Self = StObject.set(x, "registerRule", js.Any.fromFunction2(value))
     }

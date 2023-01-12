@@ -22,7 +22,8 @@ object ModalFooterProps {
     __obj.asInstanceOf[ModalFooterProps]
   }
   
-  extension [Self <: ModalFooterProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModalFooterProps] (val x: Self) extends AnyVal {
     
     inline def setBordered(value: Boolean): Self = StObject.set(x, "bordered", value.asInstanceOf[js.Any])
     

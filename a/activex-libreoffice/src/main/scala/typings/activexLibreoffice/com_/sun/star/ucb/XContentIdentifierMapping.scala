@@ -66,7 +66,8 @@ object XContentIdentifierMapping {
     __obj.asInstanceOf[XContentIdentifierMapping]
   }
   
-  extension [Self <: XContentIdentifierMapping](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XContentIdentifierMapping] (val x: Self) extends AnyVal {
     
     inline def setMapContent(value: XContent => XContent): Self = StObject.set(x, "mapContent", js.Any.fromFunction1(value))
     

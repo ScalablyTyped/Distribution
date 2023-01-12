@@ -54,7 +54,8 @@ object MultiAtlasFileConfig {
     __obj.asInstanceOf[MultiAtlasFileConfig]
   }
   
-  extension [Self <: MultiAtlasFileConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MultiAtlasFileConfig] (val x: Self) extends AnyVal {
     
     inline def setAtlasExtension(value: String): Self = StObject.set(x, "atlasExtension", value.asInstanceOf[js.Any])
     

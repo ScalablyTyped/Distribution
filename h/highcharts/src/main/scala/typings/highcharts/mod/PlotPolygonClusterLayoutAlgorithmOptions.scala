@@ -92,7 +92,8 @@ object PlotPolygonClusterLayoutAlgorithmOptions {
     __obj.asInstanceOf[PlotPolygonClusterLayoutAlgorithmOptions]
   }
   
-  extension [Self <: PlotPolygonClusterLayoutAlgorithmOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotPolygonClusterLayoutAlgorithmOptions] (val x: Self) extends AnyVal {
     
     inline def setDistance(value: Double | String): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
     

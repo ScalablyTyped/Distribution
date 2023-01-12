@@ -44,7 +44,8 @@ object DescribePublishingDestinationResponse {
     __obj.asInstanceOf[DescribePublishingDestinationResponse]
   }
   
-  extension [Self <: DescribePublishingDestinationResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribePublishingDestinationResponse] (val x: Self) extends AnyVal {
     
     inline def setDestinationId(value: String): Self = StObject.set(x, "DestinationId", value.asInstanceOf[js.Any])
     

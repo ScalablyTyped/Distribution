@@ -22,7 +22,8 @@ object CacheQueryOptions {
     __obj.asInstanceOf[CacheQueryOptions]
   }
   
-  extension [Self <: CacheQueryOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CacheQueryOptions] (val x: Self) extends AnyVal {
     
     inline def setIgnoreMethod(value: scala.Boolean): Self = StObject.set(x, "ignoreMethod", value.asInstanceOf[js.Any])
     

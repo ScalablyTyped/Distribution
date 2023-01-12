@@ -20,7 +20,8 @@ object ReaderStream {
     __obj.asInstanceOf[ReaderStream]
   }
   
-  extension [Self <: ReaderStream](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReaderStream] (val x: Self) extends AnyVal {
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

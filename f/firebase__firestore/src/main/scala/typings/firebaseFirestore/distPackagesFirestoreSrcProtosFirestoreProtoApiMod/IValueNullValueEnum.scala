@@ -17,7 +17,8 @@ object IValueNullValueEnum {
     __obj.asInstanceOf[IValueNullValueEnum]
   }
   
-  extension [Self <: IValueNullValueEnum](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IValueNullValueEnum] (val x: Self) extends AnyVal {
     
     inline def setNULL_VALUE(value: ValueNullValue): Self = StObject.set(x, "NULL_VALUE", value.asInstanceOf[js.Any])
     

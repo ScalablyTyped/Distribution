@@ -18,7 +18,8 @@ object ISetDocumentOptions {
     __obj.asInstanceOf[ISetDocumentOptions]
   }
   
-  extension [Self <: ISetDocumentOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISetDocumentOptions] (val x: Self) extends AnyVal {
     
     inline def setData(value: IUpdateCondition): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
   }

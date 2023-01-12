@@ -49,7 +49,8 @@ object Screen {
     __obj.asInstanceOf[Screen]
   }
   
-  extension [Self <: Screen](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Screen] (val x: Self) extends AnyVal {
     
     inline def setAccessDotScreen_typekey(value: Screen): Self = StObject.set(x, "Access.Screen_typekey", value.asInstanceOf[js.Any])
     

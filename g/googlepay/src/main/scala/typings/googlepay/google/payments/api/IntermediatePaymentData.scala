@@ -43,7 +43,8 @@ object IntermediatePaymentData {
     __obj.asInstanceOf[IntermediatePaymentData]
   }
   
-  extension [Self <: IntermediatePaymentData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IntermediatePaymentData] (val x: Self) extends AnyVal {
     
     inline def setCallbackTrigger(value: CallbackTrigger): Self = StObject.set(x, "callbackTrigger", value.asInstanceOf[js.Any])
     

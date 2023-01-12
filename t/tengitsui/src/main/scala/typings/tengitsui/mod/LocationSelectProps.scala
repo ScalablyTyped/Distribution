@@ -19,7 +19,8 @@ object LocationSelectProps {
     __obj.asInstanceOf[LocationSelectProps]
   }
   
-  extension [Self <: LocationSelectProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LocationSelectProps] (val x: Self) extends AnyVal {
     
     inline def setFields(value: Location): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     

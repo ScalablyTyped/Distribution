@@ -155,7 +155,8 @@ object ASPxClientHintOptions {
     __obj.asInstanceOf[ASPxClientHintOptions]
   }
   
-  extension [Self <: ASPxClientHintOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientHintOptions] (val x: Self) extends AnyVal {
     
     inline def setAllowFlip(value: Boolean): Self = StObject.set(x, "allowFlip", value.asInstanceOf[js.Any])
     

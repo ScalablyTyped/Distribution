@@ -34,7 +34,8 @@ object LoadingFinishedEvent {
     __obj.asInstanceOf[LoadingFinishedEvent]
   }
   
-  extension [Self <: LoadingFinishedEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LoadingFinishedEvent] (val x: Self) extends AnyVal {
     
     inline def setEncodedDataLength(value: Double): Self = StObject.set(x, "encodedDataLength", value.asInstanceOf[js.Any])
     

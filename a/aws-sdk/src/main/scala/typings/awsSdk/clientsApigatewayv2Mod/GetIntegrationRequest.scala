@@ -23,7 +23,8 @@ object GetIntegrationRequest {
     __obj.asInstanceOf[GetIntegrationRequest]
   }
   
-  extension [Self <: GetIntegrationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetIntegrationRequest] (val x: Self) extends AnyVal {
     
     inline def setApiId(value: string): Self = StObject.set(x, "ApiId", value.asInstanceOf[js.Any])
     

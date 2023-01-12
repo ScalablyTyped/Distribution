@@ -15,7 +15,8 @@ object RenderMode {
     __obj.asInstanceOf[RenderMode]
   }
   
-  extension [Self <: RenderMode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RenderMode] (val x: Self) extends AnyVal {
     
     inline def setRenderMode(value: typings.blueprintjsTable.libEsmCommonRenderModeMod.RenderMode): Self = StObject.set(x, "renderMode", value.asInstanceOf[js.Any])
   }

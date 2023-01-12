@@ -24,7 +24,8 @@ object ManagedZonePeeringConfigTargetNetwork {
     __obj.asInstanceOf[ManagedZonePeeringConfigTargetNetwork]
   }
   
-  extension [Self <: ManagedZonePeeringConfigTargetNetwork](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ManagedZonePeeringConfigTargetNetwork] (val x: Self) extends AnyVal {
     
     inline def setDeactivateTime(value: String): Self = StObject.set(x, "deactivateTime", value.asInstanceOf[js.Any])
     

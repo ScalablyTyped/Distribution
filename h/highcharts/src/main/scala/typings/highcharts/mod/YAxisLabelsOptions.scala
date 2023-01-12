@@ -234,7 +234,8 @@ object YAxisLabelsOptions {
     __obj.asInstanceOf[YAxisLabelsOptions]
   }
   
-  extension [Self <: YAxisLabelsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: YAxisLabelsOptions] (val x: Self) extends AnyVal {
     
     inline def setAlign(value: AlignValue): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     

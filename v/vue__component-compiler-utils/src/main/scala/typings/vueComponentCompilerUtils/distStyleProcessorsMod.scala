@@ -28,7 +28,8 @@ object distStyleProcessorsMod {
       __obj.asInstanceOf[StylePreprocessorResults]
     }
     
-    extension [Self <: StylePreprocessorResults](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StylePreprocessorResults] (val x: Self) extends AnyVal {
       
       inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       

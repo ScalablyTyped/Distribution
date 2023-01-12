@@ -28,7 +28,8 @@ object ListServicesRequest {
     __obj.asInstanceOf[ListServicesRequest]
   }
   
-  extension [Self <: ListServicesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListServicesRequest] (val x: Self) extends AnyVal {
     
     inline def setFilters(value: ServiceFilters): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
     

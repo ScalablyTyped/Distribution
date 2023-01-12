@@ -17,7 +17,8 @@ object MetaBase {
     __obj.asInstanceOf[MetaBase[D]]
   }
   
-  extension [Self <: MetaBase[?], D /* <: js.Object */](x: Self & MetaBase[D]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MetaBase[?], D /* <: js.Object */] (val x: Self & MetaBase[D]) extends AnyVal {
     
     inline def setInstance(value: TableInstance[D]): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
     

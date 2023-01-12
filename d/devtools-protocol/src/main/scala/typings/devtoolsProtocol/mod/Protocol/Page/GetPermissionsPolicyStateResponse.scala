@@ -15,7 +15,8 @@ object GetPermissionsPolicyStateResponse {
     __obj.asInstanceOf[GetPermissionsPolicyStateResponse]
   }
   
-  extension [Self <: GetPermissionsPolicyStateResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetPermissionsPolicyStateResponse] (val x: Self) extends AnyVal {
     
     inline def setStates(value: js.Array[PermissionsPolicyFeatureState]): Self = StObject.set(x, "states", value.asInstanceOf[js.Any])
     

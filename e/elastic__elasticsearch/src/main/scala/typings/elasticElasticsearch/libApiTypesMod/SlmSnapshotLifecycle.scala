@@ -39,7 +39,8 @@ object SlmSnapshotLifecycle {
     __obj.asInstanceOf[SlmSnapshotLifecycle]
   }
   
-  extension [Self <: SlmSnapshotLifecycle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SlmSnapshotLifecycle] (val x: Self) extends AnyVal {
     
     inline def setIn_progress(value: SlmInProgress): Self = StObject.set(x, "in_progress", value.asInstanceOf[js.Any])
     

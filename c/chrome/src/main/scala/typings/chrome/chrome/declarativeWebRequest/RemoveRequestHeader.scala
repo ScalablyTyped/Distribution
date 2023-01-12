@@ -15,7 +15,8 @@ object RemoveRequestHeader {
     __obj.asInstanceOf[RemoveRequestHeader]
   }
   
-  extension [Self <: RemoveRequestHeader](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RemoveRequestHeader] (val x: Self) extends AnyVal {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }

@@ -35,7 +35,8 @@ object distNodeEsmSrcCoreViewViewCacheMod {
       __obj.asInstanceOf[ViewCache]
     }
     
-    extension [Self <: ViewCache](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ViewCache] (val x: Self) extends AnyVal {
       
       inline def setEventCache(value: CacheNode): Self = StObject.set(x, "eventCache", value.asInstanceOf[js.Any])
       

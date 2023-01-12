@@ -173,7 +173,8 @@ object IgRating {
     __obj.asInstanceOf[IgRating]
   }
   
-  extension [Self <: IgRating](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgRating] (val x: Self) extends AnyVal {
     
     inline def setCssVotes(value: Any): Self = StObject.set(x, "cssVotes", value.asInstanceOf[js.Any])
     

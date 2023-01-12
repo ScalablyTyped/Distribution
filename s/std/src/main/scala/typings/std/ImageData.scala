@@ -37,7 +37,8 @@ object ImageData {
     __obj.asInstanceOf[ImageData]
   }
   
-  extension [Self <: ImageData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImageData] (val x: Self) extends AnyVal {
     
     inline def setColorSpace(value: PredefinedColorSpace): Self = StObject.set(x, "colorSpace", value.asInstanceOf[js.Any])
     

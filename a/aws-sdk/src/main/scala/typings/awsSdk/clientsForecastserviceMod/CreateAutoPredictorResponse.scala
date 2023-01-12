@@ -18,7 +18,8 @@ object CreateAutoPredictorResponse {
     __obj.asInstanceOf[CreateAutoPredictorResponse]
   }
   
-  extension [Self <: CreateAutoPredictorResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateAutoPredictorResponse] (val x: Self) extends AnyVal {
     
     inline def setPredictorArn(value: Arn): Self = StObject.set(x, "PredictorArn", value.asInstanceOf[js.Any])
     

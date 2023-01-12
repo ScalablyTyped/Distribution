@@ -40,7 +40,8 @@ object Conflicts {
     __obj.asInstanceOf[Conflicts]
   }
   
-  extension [Self <: Conflicts](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Conflicts] (val x: Self) extends AnyVal {
     
     inline def setAcceptAll(value: () => Unit): Self = StObject.set(x, "AcceptAll", js.Any.fromFunction0(value))
     

@@ -40,7 +40,8 @@ object XHatchWindow {
     __obj.asInstanceOf[XHatchWindow]
   }
   
-  extension [Self <: XHatchWindow](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XHatchWindow] (val x: Self) extends AnyVal {
     
     inline def setHatchBorderSize(value: Size): Self = StObject.set(x, "HatchBorderSize", value.asInstanceOf[js.Any])
     

@@ -27,7 +27,8 @@ object ListModelsParams {
     __obj.asInstanceOf[ListModelsParams]
   }
   
-  extension [Self <: ListModelsParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListModelsParams] (val x: Self) extends AnyVal {
     
     inline def setDefault_models(value: Boolean): Self = StObject.set(x, "default_models", value.asInstanceOf[js.Any])
     

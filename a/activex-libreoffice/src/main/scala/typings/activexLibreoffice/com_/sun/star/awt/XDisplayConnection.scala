@@ -67,7 +67,8 @@ object XDisplayConnection {
     __obj.asInstanceOf[XDisplayConnection]
   }
   
-  extension [Self <: XDisplayConnection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XDisplayConnection] (val x: Self) extends AnyVal {
     
     inline def setAddErrorHandler(value: XEventHandler => Unit): Self = StObject.set(x, "addErrorHandler", js.Any.fromFunction1(value))
     

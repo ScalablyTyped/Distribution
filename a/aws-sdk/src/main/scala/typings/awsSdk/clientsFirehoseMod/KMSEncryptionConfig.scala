@@ -18,7 +18,8 @@ object KMSEncryptionConfig {
     __obj.asInstanceOf[KMSEncryptionConfig]
   }
   
-  extension [Self <: KMSEncryptionConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KMSEncryptionConfig] (val x: Self) extends AnyVal {
     
     inline def setAWSKMSKeyARN(value: AWSKMSKeyARN): Self = StObject.set(x, "AWSKMSKeyARN", value.asInstanceOf[js.Any])
   }

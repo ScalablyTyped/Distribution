@@ -16,7 +16,8 @@ object SubscriptionPurchasesDeferResponse {
     __obj.asInstanceOf[SubscriptionPurchasesDeferResponse]
   }
   
-  extension [Self <: SubscriptionPurchasesDeferResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubscriptionPurchasesDeferResponse] (val x: Self) extends AnyVal {
     
     inline def setNewExpiryTimeMillis(value: String): Self = StObject.set(x, "newExpiryTimeMillis", value.asInstanceOf[js.Any])
     

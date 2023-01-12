@@ -179,7 +179,8 @@ object typetimeTimeScaleOptions {
     __obj.asInstanceOf[typetimeTimeScaleOptions]
   }
   
-  extension [Self <: typetimeTimeScaleOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: typetimeTimeScaleOptions] (val x: Self) extends AnyVal {
     
     inline def setAdapters(value: Date): Self = StObject.set(x, "adapters", value.asInstanceOf[js.Any])
     

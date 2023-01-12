@@ -75,7 +75,8 @@ object accordionitemConfig {
     __obj.asInstanceOf[accordionitemConfig]
   }
   
-  extension [Self <: accordionitemConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: accordionitemConfig] (val x: Self) extends AnyVal {
     
     inline def setAnimate(value: Boolean | obj): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     

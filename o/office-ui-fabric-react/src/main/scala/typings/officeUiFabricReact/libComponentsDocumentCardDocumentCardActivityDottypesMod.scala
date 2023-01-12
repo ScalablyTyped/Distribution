@@ -53,7 +53,8 @@ object libComponentsDocumentCardDocumentCardActivityDottypesMod {
       __obj.asInstanceOf[IDocumentCardActivityPerson]
     }
     
-    extension [Self <: IDocumentCardActivityPerson](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDocumentCardActivityPerson] (val x: Self) extends AnyVal {
       
       inline def setAllowPhoneInitials(value: Boolean): Self = StObject.set(x, "allowPhoneInitials", value.asInstanceOf[js.Any])
       
@@ -116,7 +117,8 @@ object libComponentsDocumentCardDocumentCardActivityDottypesMod {
       __obj.asInstanceOf[IDocumentCardActivityProps]
     }
     
-    extension [Self <: IDocumentCardActivityProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDocumentCardActivityProps] (val x: Self) extends AnyVal {
       
       inline def setActivity(value: String): Self = StObject.set(x, "activity", value.asInstanceOf[js.Any])
       
@@ -170,7 +172,8 @@ object libComponentsDocumentCardDocumentCardActivityDottypesMod {
       __obj.asInstanceOf[IDocumentCardActivityStyleProps]
     }
     
-    extension [Self <: IDocumentCardActivityStyleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDocumentCardActivityStyleProps] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -205,7 +208,8 @@ object libComponentsDocumentCardDocumentCardActivityDottypesMod {
       __obj.asInstanceOf[IDocumentCardActivityStyles]
     }
     
-    extension [Self <: IDocumentCardActivityStyles](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDocumentCardActivityStyles] (val x: Self) extends AnyVal {
       
       inline def setActivity(value: IStyle): Self = StObject.set(x, "activity", value.asInstanceOf[js.Any])
       

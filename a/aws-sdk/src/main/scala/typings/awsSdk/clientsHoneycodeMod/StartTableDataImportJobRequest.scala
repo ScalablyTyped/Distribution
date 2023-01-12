@@ -50,7 +50,8 @@ object StartTableDataImportJobRequest {
     __obj.asInstanceOf[StartTableDataImportJobRequest]
   }
   
-  extension [Self <: StartTableDataImportJobRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartTableDataImportJobRequest] (val x: Self) extends AnyVal {
     
     inline def setClientRequestToken(value: ClientRequestToken): Self = StObject.set(x, "clientRequestToken", value.asInstanceOf[js.Any])
     

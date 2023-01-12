@@ -18,7 +18,8 @@ object PromoteResourceShareCreatedFromPolicyRequest {
     __obj.asInstanceOf[PromoteResourceShareCreatedFromPolicyRequest]
   }
   
-  extension [Self <: PromoteResourceShareCreatedFromPolicyRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PromoteResourceShareCreatedFromPolicyRequest] (val x: Self) extends AnyVal {
     
     inline def setResourceShareArn(value: String): Self = StObject.set(x, "resourceShareArn", value.asInstanceOf[js.Any])
   }

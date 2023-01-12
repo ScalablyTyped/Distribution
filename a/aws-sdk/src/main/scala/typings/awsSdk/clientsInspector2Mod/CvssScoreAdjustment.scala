@@ -23,7 +23,8 @@ object CvssScoreAdjustment {
     __obj.asInstanceOf[CvssScoreAdjustment]
   }
   
-  extension [Self <: CvssScoreAdjustment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CvssScoreAdjustment] (val x: Self) extends AnyVal {
     
     inline def setMetric(value: NonEmptyString): Self = StObject.set(x, "metric", value.asInstanceOf[js.Any])
     

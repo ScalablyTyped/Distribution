@@ -38,7 +38,8 @@ object CalendarHeight {
     __obj.asInstanceOf[CalendarHeight]
   }
   
-  extension [Self <: CalendarHeight](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CalendarHeight] (val x: Self) extends AnyVal {
     
     inline def setCalendarHeight(value: Double): Self = StObject.set(x, "calendarHeight", value.asInstanceOf[js.Any])
     

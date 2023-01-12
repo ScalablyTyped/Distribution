@@ -257,7 +257,8 @@ object editorsMod {
       __obj.asInstanceOf[Editors]
     }
     
-    extension [Self <: Editors](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Editors] (val x: Self) extends AnyVal {
       
       inline def setAutocomplete(
         value: (Instantiable1[

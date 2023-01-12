@@ -162,7 +162,8 @@ object widgetsPagerOptionsMod {
       __obj.asInstanceOf[PagerOptions[TElement]]
     }
     
-    extension [Self <: PagerOptions[?], TElement](x: Self & PagerOptions[TElement]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PagerOptions[?], TElement] (val x: Self & PagerOptions[TElement]) extends AnyVal {
       
       inline def setPager_ajaxError(
         value: (/* config */ TablesorterConfigurationStore[TElement], /* request */ jqXHR[Any], /* ajaxSettings */ AjaxSettings[Any], /* thrownError */ String) => String

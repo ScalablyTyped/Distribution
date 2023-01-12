@@ -34,7 +34,8 @@ object ImagePropertiesSuggestionState {
     __obj.asInstanceOf[ImagePropertiesSuggestionState]
   }
   
-  extension [Self <: ImagePropertiesSuggestionState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImagePropertiesSuggestionState] (val x: Self) extends AnyVal {
     
     inline def setAngleSuggested(value: Boolean): Self = StObject.set(x, "angleSuggested", value.asInstanceOf[js.Any])
     

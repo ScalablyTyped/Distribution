@@ -57,7 +57,8 @@ object ListReservationsRequest {
     __obj.asInstanceOf[ListReservationsRequest]
   }
   
-  extension [Self <: ListReservationsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListReservationsRequest] (val x: Self) extends AnyVal {
     
     inline def setChannelClass(value: string): Self = StObject.set(x, "ChannelClass", value.asInstanceOf[js.Any])
     

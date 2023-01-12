@@ -17,7 +17,8 @@ object RejectUnauthorized {
     __obj.asInstanceOf[RejectUnauthorized]
   }
   
-  extension [Self <: RejectUnauthorized](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RejectUnauthorized] (val x: Self) extends AnyVal {
     
     inline def setRejectUnauthorized(value: Boolean): Self = StObject.set(x, "rejectUnauthorized", value.asInstanceOf[js.Any])
     

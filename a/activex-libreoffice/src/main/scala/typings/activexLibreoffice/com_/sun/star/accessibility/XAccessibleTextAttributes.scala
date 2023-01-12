@@ -45,7 +45,8 @@ object XAccessibleTextAttributes {
     __obj.asInstanceOf[XAccessibleTextAttributes]
   }
   
-  extension [Self <: XAccessibleTextAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XAccessibleTextAttributes] (val x: Self) extends AnyVal {
     
     inline def setGetDefaultAttributes(value: SeqEquiv[String] => SafeArray[PropertyValue]): Self = StObject.set(x, "getDefaultAttributes", js.Any.fromFunction1(value))
     

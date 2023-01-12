@@ -102,7 +102,8 @@ object anon {
       __obj.asInstanceOf[ApertureValue]
     }
     
-    extension [Self <: ApertureValue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ApertureValue] (val x: Self) extends AnyVal {
       
       inline def setApertureValue(value: Double): Self = StObject.set(x, "ApertureValue", value.asInstanceOf[js.Any])
       
@@ -190,7 +191,8 @@ object anon {
       __obj.asInstanceOf[Compression]
     }
     
-    extension [Self <: Compression](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Compression] (val x: Self) extends AnyVal {
       
       inline def setCompression(value: Double): Self = StObject.set(x, "Compression", value.asInstanceOf[js.Any])
       
@@ -234,7 +236,8 @@ object anon {
       __obj.asInstanceOf[Exif]
     }
     
-    extension [Self <: Exif](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Exif] (val x: Self) extends AnyVal {
       
       inline def setExif(value: ApertureValue): Self = StObject.set(x, "exif", value.asInstanceOf[js.Any])
       
@@ -293,7 +296,8 @@ object anon {
       __obj.asInstanceOf[ExifOffset]
     }
     
-    extension [Self <: ExifOffset](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExifOffset] (val x: Self) extends AnyVal {
       
       inline def setExifOffset(value: Double): Self = StObject.set(x, "ExifOffset", value.asInstanceOf[js.Any])
       
@@ -334,7 +338,8 @@ object anon {
       __obj.asInstanceOf[Expire]
     }
     
-    extension [Self <: Expire](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Expire] (val x: Self) extends AnyVal {
       
       inline def setExpire(value: Double): Self = StObject.set(x, "expire", value.asInstanceOf[js.Any])
       
@@ -355,7 +360,8 @@ object anon {
       __obj.asInstanceOf[GPSVersionID]
     }
     
-    extension [Self <: GPSVersionID](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GPSVersionID] (val x: Self) extends AnyVal {
       
       inline def setGPSVersionID(value: js.Array[Double]): Self = StObject.set(x, "GPSVersionID", value.asInstanceOf[js.Any])
       
@@ -376,7 +382,8 @@ object anon {
       __obj.asInstanceOf[InteropIndex]
     }
     
-    extension [Self <: InteropIndex](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InteropIndex] (val x: Self) extends AnyVal {
       
       inline def setInteropIndex(value: String): Self = StObject.set(x, "InteropIndex", value.asInstanceOf[js.Any])
       
@@ -401,7 +408,8 @@ object anon {
       __obj.asInstanceOf[PrivateKey]
     }
     
-    extension [Self <: PrivateKey](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PrivateKey] (val x: Self) extends AnyVal {
       
       inline def setPrivateKey(value: String): Self = StObject.set(x, "privateKey", value.asInstanceOf[js.Any])
       

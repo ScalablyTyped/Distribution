@@ -56,7 +56,8 @@ object ClassDeclaration {
     __obj.asInstanceOf[ClassDeclaration]
   }
   
-  extension [Self <: ClassDeclaration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClassDeclaration] (val x: Self) extends AnyVal {
     
     inline def setClassElements(value: ISyntaxList2): Self = StObject.set(x, "classElements", value.asInstanceOf[js.Any])
     

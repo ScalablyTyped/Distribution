@@ -28,7 +28,8 @@ object GetBasePathMappingsRequest {
     __obj.asInstanceOf[GetBasePathMappingsRequest]
   }
   
-  extension [Self <: GetBasePathMappingsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetBasePathMappingsRequest] (val x: Self) extends AnyVal {
     
     inline def setDomainName(value: String): Self = StObject.set(x, "domainName", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object AudioVoice {
     __obj.asInstanceOf[AudioVoice]
   }
   
-  extension [Self <: AudioVoice](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AudioVoice] (val x: Self) extends AnyVal {
     
     inline def setConnect(value: js.Object => Unit): Self = StObject.set(x, "connect", js.Any.fromFunction1(value))
     

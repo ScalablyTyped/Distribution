@@ -20,7 +20,8 @@ object IADMIN_MESSAGE {
     __obj.asInstanceOf[IADMIN_MESSAGE]
   }
   
-  extension [Self <: IADMIN_MESSAGE](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IADMIN_MESSAGE] (val x: Self) extends AnyVal {
     
     inline def setData(value: js.Object): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

@@ -59,7 +59,8 @@ object mod {
       __obj.asInstanceOf[charsetParam]
     }
     
-    extension [Self <: charsetParam](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: charsetParam] (val x: Self) extends AnyVal {
       
       inline def setCharset(value: String): Self = StObject.set(x, "charset", value.asInstanceOf[js.Any])
     }

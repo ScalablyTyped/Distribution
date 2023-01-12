@@ -25,7 +25,8 @@ object GoogleCloudDatacatalogV1EntryGroup {
     __obj.asInstanceOf[GoogleCloudDatacatalogV1EntryGroup]
   }
   
-  extension [Self <: GoogleCloudDatacatalogV1EntryGroup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDatacatalogV1EntryGroup] (val x: Self) extends AnyVal {
     
     inline def setDataCatalogTimestamps(value: GoogleCloudDatacatalogV1SystemTimestamps): Self = StObject.set(x, "dataCatalogTimestamps", value.asInstanceOf[js.Any])
     

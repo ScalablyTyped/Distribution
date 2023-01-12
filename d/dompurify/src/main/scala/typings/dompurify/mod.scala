@@ -103,7 +103,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Config]
     }
     
-    extension [Self <: Config](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
       
       inline def setADD_ATTR(value: js.Array[String]): Self = StObject.set(x, "ADD_ATTR", value.asInstanceOf[js.Any])
       
@@ -369,7 +370,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[SanitizeAttributeHookEvent]
     }
     
-    extension [Self <: SanitizeAttributeHookEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SanitizeAttributeHookEvent] (val x: Self) extends AnyVal {
       
       inline def setAllowedAttributes(value: StringDictionary[Boolean]): Self = StObject.set(x, "allowedAttributes", value.asInstanceOf[js.Any])
       
@@ -400,7 +402,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[SanitizeElementHookEvent]
     }
     
-    extension [Self <: SanitizeElementHookEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SanitizeElementHookEvent] (val x: Self) extends AnyVal {
       
       inline def setAllowedTags(value: StringDictionary[Boolean]): Self = StObject.set(x, "allowedTags", value.asInstanceOf[js.Any])
       

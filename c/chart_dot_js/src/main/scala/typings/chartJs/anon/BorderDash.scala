@@ -52,7 +52,8 @@ object BorderDash {
     __obj.asInstanceOf[BorderDash]
   }
   
-  extension [Self <: BorderDash](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BorderDash] (val x: Self) extends AnyVal {
     
     inline def setBorderDash(value: Scriptable[js.Array[Double], ScriptableScaleContext]): Self = StObject.set(x, "borderDash", value.asInstanceOf[js.Any])
     

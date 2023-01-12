@@ -28,7 +28,8 @@ object StartImportLabelsTaskRunRequest {
     __obj.asInstanceOf[StartImportLabelsTaskRunRequest]
   }
   
-  extension [Self <: StartImportLabelsTaskRunRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartImportLabelsTaskRunRequest] (val x: Self) extends AnyVal {
     
     inline def setInputS3Path(value: UriString): Self = StObject.set(x, "InputS3Path", value.asInstanceOf[js.Any])
     

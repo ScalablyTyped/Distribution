@@ -30,7 +30,8 @@ object initializeMod {
       __obj.asInstanceOf[InitializeOptions]
     }
     
-    extension [Self <: InitializeOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InitializeOptions] (val x: Self) extends AnyVal {
       
       inline def setCacheName(value: String): Self = StObject.set(x, "cacheName", value.asInstanceOf[js.Any])
       

@@ -18,7 +18,8 @@ object DeleteWhatIfForecastExportRequest {
     __obj.asInstanceOf[DeleteWhatIfForecastExportRequest]
   }
   
-  extension [Self <: DeleteWhatIfForecastExportRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteWhatIfForecastExportRequest] (val x: Self) extends AnyVal {
     
     inline def setWhatIfForecastExportArn(value: LongArn): Self = StObject.set(x, "WhatIfForecastExportArn", value.asInstanceOf[js.Any])
   }

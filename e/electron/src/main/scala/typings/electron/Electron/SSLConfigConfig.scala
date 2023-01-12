@@ -36,7 +36,8 @@ object SSLConfigConfig {
     __obj.asInstanceOf[SSLConfigConfig]
   }
   
-  extension [Self <: SSLConfigConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SSLConfigConfig] (val x: Self) extends AnyVal {
     
     inline def setDisabledCipherSuites(value: js.Array[Double]): Self = StObject.set(x, "disabledCipherSuites", value.asInstanceOf[js.Any])
     

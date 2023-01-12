@@ -73,7 +73,8 @@ object BodytextCommitid {
     __obj.asInstanceOf[BodytextCommitid]
   }
   
-  extension [Self <: BodytextCommitid](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BodytextCommitid] (val x: Self) extends AnyVal {
     
     inline def setAuthor_association(
       value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['author-association'] */ js.Any

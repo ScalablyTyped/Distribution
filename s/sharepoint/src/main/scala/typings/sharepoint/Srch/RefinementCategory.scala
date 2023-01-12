@@ -32,7 +32,8 @@ object RefinementCategory {
     __obj.asInstanceOf[RefinementCategory]
   }
   
-  extension [Self <: RefinementCategory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RefinementCategory] (val x: Self) extends AnyVal {
     
     inline def setK(value: Boolean): Self = StObject.set(x, "k", value.asInstanceOf[js.Any])
     

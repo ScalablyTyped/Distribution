@@ -37,7 +37,8 @@ object YAxisBreaksOptions {
     __obj.asInstanceOf[YAxisBreaksOptions]
   }
   
-  extension [Self <: YAxisBreaksOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: YAxisBreaksOptions] (val x: Self) extends AnyVal {
     
     inline def setBreakSize(value: Double): Self = StObject.set(x, "breakSize", value.asInstanceOf[js.Any])
     

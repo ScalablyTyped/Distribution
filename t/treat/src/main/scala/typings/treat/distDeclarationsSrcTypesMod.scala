@@ -43,7 +43,8 @@ object distDeclarationsSrcTypesMod {
       __obj.asInstanceOf[CSSProperties]
     }
     
-    extension [Self <: CSSProperties](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CSSProperties] (val x: Self) extends AnyVal {
       
       inline def `set@keyframes`(value: CSSKeyframes | String): Self = StObject.set(x, "@keyframes", value.asInstanceOf[js.Any])
       
@@ -66,7 +67,8 @@ object distDeclarationsSrcTypesMod {
       __obj.asInstanceOf[FeatureQueries[StyleType]]
     }
     
-    extension [Self <: FeatureQueries[?], StyleType](x: Self & FeatureQueries[StyleType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FeatureQueries[?], StyleType] (val x: Self & FeatureQueries[StyleType]) extends AnyVal {
       
       inline def `set@supports`(value: StringDictionary[StyleType]): Self = StObject.set(x, "@supports", value.asInstanceOf[js.Any])
       
@@ -87,7 +89,8 @@ object distDeclarationsSrcTypesMod {
       __obj.asInstanceOf[MediaQueries[StyleType]]
     }
     
-    extension [Self <: MediaQueries[?], StyleType](x: Self & MediaQueries[StyleType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MediaQueries[?], StyleType] (val x: Self & MediaQueries[StyleType]) extends AnyVal {
       
       inline def `set@media`(value: StringDictionary[StyleType]): Self = StObject.set(x, "@media", value.asInstanceOf[js.Any])
       
@@ -138,7 +141,8 @@ object distDeclarationsSrcTypesMod {
       __obj.asInstanceOf[StyleWithSelectors]
     }
     
-    extension [Self <: StyleWithSelectors](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StyleWithSelectors] (val x: Self) extends AnyVal {
       
       inline def setSelectors(value: SelectorMap): Self = StObject.set(x, "selectors", value.asInstanceOf[js.Any])
       
@@ -204,7 +208,8 @@ object distDeclarationsSrcTypesMod {
       __obj.asInstanceOf[TreatTheme[Tokens]]
     }
     
-    extension [Self <: TreatTheme[?], Tokens](x: Self & TreatTheme[Tokens]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TreatTheme[?], Tokens] (val x: Self & TreatTheme[Tokens]) extends AnyVal {
       
       inline def setThemeRef(value: ThemeRef): Self = StObject.set(x, "themeRef", value.asInstanceOf[js.Any])
       

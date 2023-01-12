@@ -53,7 +53,8 @@ object Typeofsystem {
     __obj.asInstanceOf[Typeofsystem]
   }
   
-  extension [Self <: Typeofsystem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Typeofsystem] (val x: Self) extends AnyVal {
     
     inline def setCpu(value: Typeofcpu): Self = StObject.set(x, "cpu", value.asInstanceOf[js.Any])
     

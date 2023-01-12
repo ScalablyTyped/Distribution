@@ -114,7 +114,8 @@ object CartesianScaleOptions {
     __obj.asInstanceOf[CartesianScaleOptions]
   }
   
-  extension [Self <: CartesianScaleOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CartesianScaleOptions] (val x: Self) extends AnyVal {
     
     inline def setAxis(value: typings.chartJs.chartJsStrings.x | y): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
     

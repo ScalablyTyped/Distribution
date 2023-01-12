@@ -41,7 +41,8 @@ object DbIndexEntry {
     __obj.asInstanceOf[DbIndexEntry]
   }
   
-  extension [Self <: DbIndexEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DbIndexEntry] (val x: Self) extends AnyVal {
     
     inline def setArrayValue(value: js.typedarray.Uint8Array): Self = StObject.set(x, "arrayValue", value.asInstanceOf[js.Any])
     

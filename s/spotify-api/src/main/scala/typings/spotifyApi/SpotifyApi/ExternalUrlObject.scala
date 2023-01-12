@@ -21,7 +21,8 @@ object ExternalUrlObject {
     __obj.asInstanceOf[ExternalUrlObject]
   }
   
-  extension [Self <: ExternalUrlObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExternalUrlObject] (val x: Self) extends AnyVal {
     
     inline def setSpotify(value: String): Self = StObject.set(x, "spotify", value.asInstanceOf[js.Any])
   }

@@ -22,7 +22,8 @@ object Animation {
     __obj.asInstanceOf[Animation]
   }
   
-  extension [Self <: Animation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Animation] (val x: Self) extends AnyVal {
     
     inline def setAnimationEnd(value: AnimationEnd): Self = StObject.set(x, "animationEnd", value.asInstanceOf[js.Any])
     

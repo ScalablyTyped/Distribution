@@ -29,7 +29,8 @@ object ClassProperty {
     __obj.asInstanceOf[ClassProperty]
   }
   
-  extension [Self <: ClassProperty](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClassProperty] (val x: Self) extends AnyVal {
     
     inline def setComputed(value: Boolean): Self = StObject.set(x, "computed", value.asInstanceOf[js.Any])
     

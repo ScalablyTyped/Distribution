@@ -33,7 +33,8 @@ object DomainDnsSrvRecord {
     __obj.asInstanceOf[DomainDnsSrvRecord]
   }
   
-  extension [Self <: DomainDnsSrvRecord](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DomainDnsSrvRecord] (val x: Self) extends AnyVal {
     
     inline def setNameTarget(value: NullableOption[String]): Self = StObject.set(x, "nameTarget", value.asInstanceOf[js.Any])
     

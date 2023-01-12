@@ -98,7 +98,8 @@ object distSrcModulesUiPreviewFullSizePreviewFullSizeMod {
       __obj.asInstanceOf[PreviewFullsize]
     }
     
-    extension [Self <: PreviewFullsize](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PreviewFullsize] (val x: Self) extends AnyVal {
       
       inline def setView(value: typings.playable.distSrcModulesUiPreviewFullSizePreviewFullSizeDotviewMod.default): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
       

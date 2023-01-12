@@ -23,7 +23,8 @@ object ListGeofenceCollectionsRequest {
     __obj.asInstanceOf[ListGeofenceCollectionsRequest]
   }
   
-  extension [Self <: ListGeofenceCollectionsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListGeofenceCollectionsRequest] (val x: Self) extends AnyVal {
     
     inline def setMaxResults(value: ListGeofenceCollectionsRequestMaxResultsInteger): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     

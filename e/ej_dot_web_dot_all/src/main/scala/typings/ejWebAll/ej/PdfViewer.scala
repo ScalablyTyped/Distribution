@@ -398,7 +398,8 @@ object PdfViewer {
       __obj.asInstanceOf[AfterPrintEventArgs]
     }
     
-    extension [Self <: AfterPrintEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AfterPrintEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -439,7 +440,8 @@ object PdfViewer {
       __obj.asInstanceOf[AjaxRequestFailureEventArgs]
     }
     
-    extension [Self <: AjaxRequestFailureEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AjaxRequestFailureEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -484,7 +486,8 @@ object PdfViewer {
       __obj.asInstanceOf[AjaxRequestSuccessEventArgs]
     }
     
-    extension [Self <: AjaxRequestSuccessEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AjaxRequestSuccessEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -545,7 +548,8 @@ object PdfViewer {
       __obj.asInstanceOf[AnnotationAddEventArgs]
     }
     
-    extension [Self <: AnnotationAddEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AnnotationAddEventArgs] (val x: Self) extends AnyVal {
       
       inline def setAnnotationBound(value: js.Array[Any]): Self = StObject.set(x, "annotationBound", value.asInstanceOf[js.Any])
       
@@ -608,7 +612,8 @@ object PdfViewer {
       __obj.asInstanceOf[AnnotationContextMenu]
     }
     
-    extension [Self <: AnnotationContextMenu](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AnnotationContextMenu] (val x: Self) extends AnyVal {
       
       inline def setIsDeleteEnable(value: Boolean): Self = StObject.set(x, "isDeleteEnable", value.asInstanceOf[js.Any])
       
@@ -669,7 +674,8 @@ object PdfViewer {
       __obj.asInstanceOf[AnnotationPropertiesChangeEventArgs]
     }
     
-    extension [Self <: AnnotationPropertiesChangeEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AnnotationPropertiesChangeEventArgs] (val x: Self) extends AnyVal {
       
       inline def setAnnotationID(value: Double): Self = StObject.set(x, "annotationID", value.asInstanceOf[js.Any])
       
@@ -738,7 +744,8 @@ object PdfViewer {
       __obj.asInstanceOf[AnnotationRemoveEventArgs]
     }
     
-    extension [Self <: AnnotationRemoveEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AnnotationRemoveEventArgs] (val x: Self) extends AnyVal {
       
       inline def setAnnotationID(value: Double): Self = StObject.set(x, "annotationID", value.asInstanceOf[js.Any])
       
@@ -787,7 +794,8 @@ object PdfViewer {
       __obj.asInstanceOf[BeforePrintEventArgs]
     }
     
-    extension [Self <: BeforePrintEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BeforePrintEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -828,7 +836,8 @@ object PdfViewer {
       __obj.asInstanceOf[BufferEndEventArgs]
     }
     
-    extension [Self <: BufferEndEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BufferEndEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -873,7 +882,8 @@ object PdfViewer {
       __obj.asInstanceOf[BufferStartEventArgs]
     }
     
-    extension [Self <: BufferStartEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BufferStartEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -914,7 +924,8 @@ object PdfViewer {
       __obj.asInstanceOf[DestroyEventArgs]
     }
     
-    extension [Self <: DestroyEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DestroyEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -955,7 +966,8 @@ object PdfViewer {
       __obj.asInstanceOf[DocumentLoadEventArgs]
     }
     
-    extension [Self <: DocumentLoadEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DocumentLoadEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -996,7 +1008,8 @@ object PdfViewer {
       __obj.asInstanceOf[DocumentUnloadEventArgs]
     }
     
-    extension [Self <: DocumentUnloadEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DocumentUnloadEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -1041,7 +1054,8 @@ object PdfViewer {
       __obj.asInstanceOf[DownloadEndEventArgs]
     }
     
-    extension [Self <: DownloadEndEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DownloadEndEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -1094,7 +1108,8 @@ object PdfViewer {
       __obj.asInstanceOf[DownloadStartEventArgs]
     }
     
-    extension [Self <: DownloadStartEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DownloadStartEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -1151,7 +1166,8 @@ object PdfViewer {
       __obj.asInstanceOf[HighlightSettings]
     }
     
-    extension [Self <: HighlightSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HighlightSettings] (val x: Self) extends AnyVal {
       
       inline def setAuthor(value: String): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
       
@@ -1204,7 +1220,8 @@ object PdfViewer {
       __obj.asInstanceOf[HyperlinkClickEventArgs]
     }
     
-    extension [Self <: HyperlinkClickEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HyperlinkClickEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -1441,7 +1458,8 @@ object PdfViewer {
       __obj.asInstanceOf[typings.ejWebAll.ej.PdfViewer.Model]
     }
     
-    extension [Self <: typings.ejWebAll.ej.PdfViewer.Model](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.ejWebAll.ej.PdfViewer.Model] (val x: Self) extends AnyVal {
       
       inline def setAfterPrint(value: /* e */ AfterPrintEventArgs => Unit): Self = StObject.set(x, "afterPrint", js.Any.fromFunction1(value))
       
@@ -1678,7 +1696,8 @@ object PdfViewer {
       __obj.asInstanceOf[PageChangeEventArgs]
     }
     
-    extension [Self <: PageChangeEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PageChangeEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -1727,7 +1746,8 @@ object PdfViewer {
       __obj.asInstanceOf[PageClickEventArgs]
     }
     
-    extension [Self <: PageClickEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PageClickEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -1776,7 +1796,8 @@ object PdfViewer {
       __obj.asInstanceOf[ServerActionSettings]
     }
     
-    extension [Self <: ServerActionSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ServerActionSettings] (val x: Self) extends AnyVal {
       
       inline def setDownload(value: String): Self = StObject.set(x, "download", value.asInstanceOf[js.Any])
       
@@ -1829,7 +1850,8 @@ object PdfViewer {
       __obj.asInstanceOf[SignatureAddEventArgs]
     }
     
-    extension [Self <: SignatureAddEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SignatureAddEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -1884,7 +1906,8 @@ object PdfViewer {
       __obj.asInstanceOf[SignatureDeleteEventArgs]
     }
     
-    extension [Self <: SignatureDeleteEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SignatureDeleteEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -1953,7 +1976,8 @@ object PdfViewer {
       __obj.asInstanceOf[SignaturePropertiesChangeEventArgs]
     }
     
-    extension [Self <: SignaturePropertiesChangeEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SignaturePropertiesChangeEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -2034,7 +2058,8 @@ object PdfViewer {
       __obj.asInstanceOf[SignatureResizeEventArgs]
     }
     
-    extension [Self <: SignatureResizeEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SignatureResizeEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -2087,7 +2112,8 @@ object PdfViewer {
       __obj.asInstanceOf[SignatureSettings]
     }
     
-    extension [Self <: SignatureSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SignatureSettings] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -2132,7 +2158,8 @@ object PdfViewer {
       __obj.asInstanceOf[StrikethroughSettings]
     }
     
-    extension [Self <: StrikethroughSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StrikethroughSettings] (val x: Self) extends AnyVal {
       
       inline def setAuthor(value: String): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
       
@@ -2189,7 +2216,8 @@ object PdfViewer {
       __obj.asInstanceOf[TextSelectionContextMenu]
     }
     
-    extension [Self <: TextSelectionContextMenu](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TextSelectionContextMenu] (val x: Self) extends AnyVal {
       
       inline def setIsCopyEnable(value: Boolean): Self = StObject.set(x, "isCopyEnable", value.asInstanceOf[js.Any])
       
@@ -2230,7 +2258,8 @@ object PdfViewer {
       __obj.asInstanceOf[ToolbarSettings]
     }
     
-    extension [Self <: ToolbarSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ToolbarSettings] (val x: Self) extends AnyVal {
       
       inline def setShowToolTip(value: Boolean): Self = StObject.set(x, "showToolTip", value.asInstanceOf[js.Any])
       
@@ -2275,7 +2304,8 @@ object PdfViewer {
       __obj.asInstanceOf[UnderlineSettings]
     }
     
-    extension [Self <: UnderlineSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnderlineSettings] (val x: Self) extends AnyVal {
       
       inline def setAuthor(value: String): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
       
@@ -2332,7 +2362,8 @@ object PdfViewer {
       __obj.asInstanceOf[ZoomChangeEventArgs]
     }
     
-    extension [Self <: ZoomChangeEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ZoomChangeEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       

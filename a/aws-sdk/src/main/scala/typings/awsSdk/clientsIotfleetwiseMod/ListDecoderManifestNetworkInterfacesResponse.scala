@@ -23,7 +23,8 @@ object ListDecoderManifestNetworkInterfacesResponse {
     __obj.asInstanceOf[ListDecoderManifestNetworkInterfacesResponse]
   }
   
-  extension [Self <: ListDecoderManifestNetworkInterfacesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListDecoderManifestNetworkInterfacesResponse] (val x: Self) extends AnyVal {
     
     inline def setNetworkInterfaces(value: NetworkInterfaces): Self = StObject.set(x, "networkInterfaces", value.asInstanceOf[js.Any])
     

@@ -611,7 +611,8 @@ object libComponentsFocusScopeMod {
       __obj.asInstanceOf[FocusScopeBaseIsolatedProps]
     }
     
-    extension [Self <: FocusScopeBaseIsolatedProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FocusScopeBaseIsolatedProps] (val x: Self) extends AnyVal {
       
       inline def setInitialFocusRef(value: MutableRefObject[FocusScopeFocusable]): Self = StObject.set(x, "initialFocusRef", value.asInstanceOf[js.Any])
       
@@ -632,7 +633,8 @@ object libComponentsFocusScopeMod {
       __obj.asInstanceOf[FocusScopeBaseProps]
     }
     
-    extension [Self <: FocusScopeBaseProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FocusScopeBaseProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -953,7 +955,8 @@ object libComponentsFocusScopeMod {
       __obj.asInstanceOf[FocusScopeDefaultProps]
     }
     
-    extension [Self <: FocusScopeDefaultProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FocusScopeDefaultProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       
@@ -1477,7 +1480,8 @@ object libComponentsFocusScopeMod {
       __obj.asInstanceOf[FocusScopeFocusable]
     }
     
-    extension [Self <: FocusScopeFocusable](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FocusScopeFocusable] (val x: Self) extends AnyVal {
       
       inline def setFocus(value: () => Unit): Self = StObject.set(x, "focus", js.Any.fromFunction0(value))
     }

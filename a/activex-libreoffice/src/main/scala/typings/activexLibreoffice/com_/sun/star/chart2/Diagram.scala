@@ -128,7 +128,8 @@ object Diagram {
     __obj.asInstanceOf[Diagram]
   }
   
-  extension [Self <: Diagram](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Diagram] (val x: Self) extends AnyVal {
     
     inline def setConnectBars(value: Boolean): Self = StObject.set(x, "ConnectBars", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object Typeofwallpaper {
     __obj.asInstanceOf[Typeofwallpaper]
   }
   
-  extension [Self <: Typeofwallpaper](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Typeofwallpaper] (val x: Self) extends AnyVal {
     
     inline def setSetWallpaper(value: (WallpaperDetails, js.Function1[/* thumbnail */ js.UndefOr[String], Unit]) => Unit): Self = StObject.set(x, "setWallpaper", js.Any.fromFunction2(value))
   }

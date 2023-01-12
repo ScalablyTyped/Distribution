@@ -15415,7 +15415,8 @@ object pluginHooksMod {
       __obj.asInstanceOf[Bucket]
     }
     
-    extension [Self <: Bucket](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Bucket] (val x: Self) extends AnyVal {
       
       inline def setAfterAddChild(
         value: js.Array[
@@ -19543,7 +19544,8 @@ object pluginHooksMod {
       __obj.asInstanceOf[Events]
     }
     
-    extension [Self <: Events](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Events] (val x: Self) extends AnyVal {
       
       inline def setAfterAddChild(
         value: (/* parent */ RowObject, /* element */ js.UndefOr[RowObject], /* index */ js.UndefOr[Double]) => Unit
@@ -20434,7 +20436,8 @@ object pluginHooksMod {
       __obj.asInstanceOf[HookHighlightColumnHeaderMeta]
     }
     
-    extension [Self <: HookHighlightColumnHeaderMeta](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HookHighlightColumnHeaderMeta] (val x: Self) extends AnyVal {
       
       inline def setClassNames(value: js.Array[String]): Self = StObject.set(x, "classNames", value.asInstanceOf[js.Any])
       
@@ -20465,7 +20468,8 @@ object pluginHooksMod {
       __obj.asInstanceOf[HookHighlightRowHeaderMeta]
     }
     
-    extension [Self <: HookHighlightRowHeaderMeta](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HookHighlightRowHeaderMeta] (val x: Self) extends AnyVal {
       
       inline def setClassNames(value: js.Array[String]): Self = StObject.set(x, "classNames", value.asInstanceOf[js.Any])
       

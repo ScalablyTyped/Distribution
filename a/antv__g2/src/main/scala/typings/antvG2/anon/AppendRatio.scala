@@ -20,7 +20,8 @@ object AppendRatio {
     __obj.asInstanceOf[AppendRatio]
   }
   
-  extension [Self <: AppendRatio](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppendRatio] (val x: Self) extends AnyVal {
     
     inline def setAppendRatio(value: Double): Self = StObject.set(x, "appendRatio", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object SplitViewOptions {
     __obj.asInstanceOf[SplitViewOptions]
   }
   
-  extension [Self <: SplitViewOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SplitViewOptions] (val x: Self) extends AnyVal {
     
     inline def setInit(value: /* e */ SplitViewInitEvent => Unit): Self = StObject.set(x, "init", js.Any.fromFunction1(value))
     

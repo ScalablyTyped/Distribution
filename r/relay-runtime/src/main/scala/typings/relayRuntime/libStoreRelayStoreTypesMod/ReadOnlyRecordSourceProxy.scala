@@ -18,7 +18,8 @@ object ReadOnlyRecordSourceProxy {
     __obj.asInstanceOf[ReadOnlyRecordSourceProxy]
   }
   
-  extension [Self <: ReadOnlyRecordSourceProxy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadOnlyRecordSourceProxy] (val x: Self) extends AnyVal {
     
     inline def setGet(value: DataID => js.UndefOr[ReadOnlyRecordProxy | Null]): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
     

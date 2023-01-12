@@ -38,7 +38,8 @@ object DNSTargetResource {
     __obj.asInstanceOf[DNSTargetResource]
   }
   
-  extension [Self <: DNSTargetResource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DNSTargetResource] (val x: Self) extends AnyVal {
     
     inline def setDomainName(value: string): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
     

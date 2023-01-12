@@ -56,7 +56,8 @@ object GenerateSecretOptions {
     __obj.asInstanceOf[GenerateSecretOptions]
   }
   
-  extension [Self <: GenerateSecretOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GenerateSecretOptions] (val x: Self) extends AnyVal {
     
     inline def setGoogle_auth_qr(value: Boolean): Self = StObject.set(x, "google_auth_qr", value.asInstanceOf[js.Any])
     

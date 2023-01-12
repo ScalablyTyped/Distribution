@@ -22,7 +22,8 @@ object TimingState {
     __obj.asInstanceOf[TimingState]
   }
   
-  extension [Self <: TimingState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimingState] (val x: Self) extends AnyVal {
     
     inline def setFrameTime(value: AnimatedValue[Double]): Self = StObject.set(x, "frameTime", value.asInstanceOf[js.Any])
   }

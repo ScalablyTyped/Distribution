@@ -25,7 +25,8 @@ object typesBaseBehavioralOptionsMod {
       __obj.asInstanceOf[BehavioralOptions]
     }
     
-    extension [Self <: BehavioralOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BehavioralOptions] (val x: Self) extends AnyVal {
       
       inline def setOpen(value: BehavioralType): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
       

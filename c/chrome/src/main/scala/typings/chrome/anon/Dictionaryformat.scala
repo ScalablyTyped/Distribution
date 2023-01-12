@@ -21,7 +21,8 @@ object Dictionaryformat {
     __obj.asInstanceOf[Dictionaryformat]
   }
   
-  extension [Self <: Dictionaryformat](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Dictionaryformat] (val x: Self) extends AnyVal {
     
     inline def setDictionary_format(value: String): Self = StObject.set(x, "dictionary_format", value.asInstanceOf[js.Any])
     

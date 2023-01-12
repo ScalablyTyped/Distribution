@@ -103,7 +103,8 @@ object typesQueryHelpersMod {
       __obj.asInstanceOf[SelectorMatcherOptions]
     }
     
-    extension [Self <: SelectorMatcherOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SelectorMatcherOptions] (val x: Self) extends AnyVal {
       
       inline def setIgnore(value: Boolean | String): Self = StObject.set(x, "ignore", value.asInstanceOf[js.Any])
       
@@ -126,7 +127,8 @@ object typesQueryHelpersMod {
       __obj.asInstanceOf[WithSuggest]
     }
     
-    extension [Self <: WithSuggest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WithSuggest] (val x: Self) extends AnyVal {
       
       inline def setSuggest(value: Boolean): Self = StObject.set(x, "suggest", value.asInstanceOf[js.Any])
       

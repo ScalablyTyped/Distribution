@@ -25,7 +25,8 @@ object ExternalIdObject {
     __obj.asInstanceOf[ExternalIdObject]
   }
   
-  extension [Self <: ExternalIdObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExternalIdObject] (val x: Self) extends AnyVal {
     
     inline def setEan(value: String): Self = StObject.set(x, "ean", value.asInstanceOf[js.Any])
     

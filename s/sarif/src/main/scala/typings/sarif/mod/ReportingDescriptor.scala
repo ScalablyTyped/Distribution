@@ -90,7 +90,8 @@ object ReportingDescriptor {
     __obj.asInstanceOf[ReportingDescriptor]
   }
   
-  extension [Self <: ReportingDescriptor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReportingDescriptor] (val x: Self) extends AnyVal {
     
     inline def setDefaultConfiguration(value: ReportingConfiguration): Self = StObject.set(x, "defaultConfiguration", value.asInstanceOf[js.Any])
     

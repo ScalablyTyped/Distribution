@@ -34,7 +34,8 @@ object GetGetResult {
     __obj.asInstanceOf[GetGetResult[TDocument]]
   }
   
-  extension [Self <: GetGetResult[?], TDocument](x: Self & GetGetResult[TDocument]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetGetResult[?], TDocument] (val x: Self & GetGetResult[TDocument]) extends AnyVal {
     
     inline def setFields(value: Record[String, Any]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     

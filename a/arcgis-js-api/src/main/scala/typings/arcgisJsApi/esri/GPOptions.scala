@@ -69,7 +69,8 @@ object GPOptions {
     __obj.asInstanceOf[GPOptions]
   }
   
-  extension [Self <: GPOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GPOptions] (val x: Self) extends AnyVal {
     
     inline def setOutSpatialReference(value: SpatialReference): Self = StObject.set(x, "outSpatialReference", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object Bucket {
     __obj.asInstanceOf[Bucket]
   }
   
-  extension [Self <: Bucket](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Bucket] (val x: Self) extends AnyVal {
     
     inline def setBucket(value: /* parentSchemas */ js.UndefOr[Any] => Add): Self = StObject.set(x, "bucket", js.Any.fromFunction1(value))
     

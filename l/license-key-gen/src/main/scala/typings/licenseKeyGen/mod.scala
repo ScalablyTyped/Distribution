@@ -31,7 +31,8 @@ object mod {
       __obj.asInstanceOf[licenseData]
     }
     
-    extension [Self <: licenseData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: licenseData] (val x: Self) extends AnyVal {
       
       inline def setAppVersion(value: String): Self = StObject.set(x, "appVersion", value.asInstanceOf[js.Any])
       
@@ -62,7 +63,8 @@ object mod {
       __obj.asInstanceOf[userInfo]
     }
     
-    extension [Self <: userInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: userInfo] (val x: Self) extends AnyVal {
       
       inline def setCity(value: String): Self = StObject.set(x, "city", value.asInstanceOf[js.Any])
       

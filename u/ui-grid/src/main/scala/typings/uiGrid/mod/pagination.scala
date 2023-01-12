@@ -64,7 +64,8 @@ object pagination {
       __obj.asInstanceOf[typings.uiGrid.mod.pagination.IGridOptions]
     }
     
-    extension [Self <: typings.uiGrid.mod.pagination.IGridOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.uiGrid.mod.pagination.IGridOptions] (val x: Self) extends AnyVal {
       
       inline def setEnablePagination(value: Boolean): Self = StObject.set(x, "enablePagination", value.asInstanceOf[js.Any])
       
@@ -150,7 +151,8 @@ object pagination {
       __obj.asInstanceOf[IGridPaginationApi]
     }
     
-    extension [Self <: IGridPaginationApi](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IGridPaginationApi] (val x: Self) extends AnyVal {
       
       inline def setGetPage(value: () => Double): Self = StObject.set(x, "getPage", js.Any.fromFunction0(value))
       

@@ -51,7 +51,8 @@ object mod {
       __obj.asInstanceOf[VinylFileOptions]
     }
     
-    extension [Self <: VinylFileOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VinylFileOptions] (val x: Self) extends AnyVal {
       
       inline def setBase(value: String): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
       

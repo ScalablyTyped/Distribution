@@ -58,7 +58,8 @@ object srcSdkInternalDeltasDeltaManagerMod {
       __obj.asInstanceOf[IDeltaChange]
     }
     
-    extension [Self <: IDeltaChange](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDeltaChange] (val x: Self) extends AnyVal {
       
       inline def setDelta(value: Delta): Self = StObject.set(x, "delta", value.asInstanceOf[js.Any])
       

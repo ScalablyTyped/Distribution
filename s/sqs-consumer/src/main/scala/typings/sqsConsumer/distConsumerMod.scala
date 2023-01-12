@@ -220,7 +220,8 @@ object distConsumerMod {
       __obj.asInstanceOf[ConsumerOptions]
     }
     
-    extension [Self <: ConsumerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConsumerOptions] (val x: Self) extends AnyVal {
       
       inline def setAttributeNames(value: js.Array[String]): Self = StObject.set(x, "attributeNames", value.asInstanceOf[js.Any])
       
@@ -330,7 +331,8 @@ object distConsumerMod {
       __obj.asInstanceOf[Events]
     }
     
-    extension [Self <: Events](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Events] (val x: Self) extends AnyVal {
       
       inline def setEmpty(value: js.Array[Any]): Self = StObject.set(x, "empty", value.asInstanceOf[js.Any])
       

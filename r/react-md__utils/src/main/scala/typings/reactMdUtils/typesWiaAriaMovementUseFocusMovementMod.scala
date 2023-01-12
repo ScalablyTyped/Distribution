@@ -39,7 +39,8 @@ object typesWiaAriaMovementUseFocusMovementMod {
       __obj.asInstanceOf[KeyboardFocusOptions[D, CE, IE]]
     }
     
-    extension [Self <: KeyboardFocusOptions[?, ?, ?], D, CE /* <: HTMLElement */, IE /* <: HTMLElement */](x: Self & (KeyboardFocusOptions[D, CE, IE])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KeyboardFocusOptions[?, ?, ?], D, CE /* <: HTMLElement */, IE /* <: HTMLElement */] (val x: Self & (KeyboardFocusOptions[D, CE, IE])) extends AnyVal {
       
       inline def setDefaultFocusedIndex(value: Double): Self = StObject.set(x, "defaultFocusedIndex", value.asInstanceOf[js.Any])
       

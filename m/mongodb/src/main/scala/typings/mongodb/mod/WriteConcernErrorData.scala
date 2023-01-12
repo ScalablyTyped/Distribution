@@ -20,7 +20,8 @@ object WriteConcernErrorData {
     __obj.asInstanceOf[WriteConcernErrorData]
   }
   
-  extension [Self <: WriteConcernErrorData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WriteConcernErrorData] (val x: Self) extends AnyVal {
     
     inline def setCode(value: scala.Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     

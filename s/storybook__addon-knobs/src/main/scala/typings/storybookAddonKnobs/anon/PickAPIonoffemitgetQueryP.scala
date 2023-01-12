@@ -32,7 +32,8 @@ object PickAPIonoffemitgetQueryP {
     __obj.asInstanceOf[PickAPIonoffemitgetQueryP]
   }
   
-  extension [Self <: PickAPIonoffemitgetQueryP](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickAPIonoffemitgetQueryP] (val x: Self) extends AnyVal {
     
     inline def setEmit(value: (/* type */ String, /* repeated */ Any) => Unit): Self = StObject.set(x, "emit", js.Any.fromFunction2(value))
     

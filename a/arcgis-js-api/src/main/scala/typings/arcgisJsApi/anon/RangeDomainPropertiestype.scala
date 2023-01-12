@@ -45,7 +45,8 @@ object RangeDomainPropertiestype {
     __obj.asInstanceOf[RangeDomainPropertiestype]
   }
   
-  extension [Self <: RangeDomainPropertiestype](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RangeDomainPropertiestype] (val x: Self) extends AnyVal {
     
     inline def setMaxValue(value: Double): Self = StObject.set(x, "maxValue", value.asInstanceOf[js.Any])
     

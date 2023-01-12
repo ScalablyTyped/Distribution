@@ -16,7 +16,8 @@ object InstancesSetMinCpuPlatformRequest {
     __obj.asInstanceOf[InstancesSetMinCpuPlatformRequest]
   }
   
-  extension [Self <: InstancesSetMinCpuPlatformRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InstancesSetMinCpuPlatformRequest] (val x: Self) extends AnyVal {
     
     inline def setMinCpuPlatform(value: String): Self = StObject.set(x, "minCpuPlatform", value.asInstanceOf[js.Any])
     

@@ -73,7 +73,8 @@ object distCryptoCryptoOpsMod {
       __obj.asInstanceOf[CachedKeyPair]
     }
     
-    extension [Self <: CachedKeyPair](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CachedKeyPair] (val x: Self) extends AnyVal {
       
       inline def setPrivateKey(value: CryptoKey): Self = StObject.set(x, "privateKey", value.asInstanceOf[js.Any])
       

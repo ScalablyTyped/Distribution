@@ -20,7 +20,8 @@ object JsonLogicQuotient {
     __obj.asInstanceOf[JsonLogicQuotient[AddOps]]
   }
   
-  extension [Self <: JsonLogicQuotient[?], AddOps /* <: AdditionalOperation */](x: Self & JsonLogicQuotient[AddOps]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JsonLogicQuotient[?], AddOps /* <: AdditionalOperation */] (val x: Self & JsonLogicQuotient[AddOps]) extends AnyVal {
     
     inline def setSlash(value: js.Array[RulesLogic[AddOps]] | RulesLogic[AddOps]): Self = StObject.set(x, "/", value.asInstanceOf[js.Any])
     

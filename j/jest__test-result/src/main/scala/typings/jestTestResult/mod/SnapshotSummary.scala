@@ -56,7 +56,8 @@ object SnapshotSummary {
     __obj.asInstanceOf[SnapshotSummary]
   }
   
-  extension [Self <: SnapshotSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SnapshotSummary] (val x: Self) extends AnyVal {
     
     inline def setAdded(value: Double): Self = StObject.set(x, "added", value.asInstanceOf[js.Any])
     

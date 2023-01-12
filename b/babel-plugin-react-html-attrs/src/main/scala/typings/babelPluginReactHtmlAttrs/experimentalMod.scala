@@ -59,7 +59,8 @@ object experimentalMod {
         __obj.asInstanceOf[DirectionalSuspenseListProps]
       }
       
-      extension [Self <: DirectionalSuspenseListProps](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: DirectionalSuspenseListProps] (val x: Self) extends AnyVal {
         
         inline def setRevealOrder(value: forwards | backwards): Self = StObject.set(x, "revealOrder", value.asInstanceOf[js.Any])
         
@@ -94,7 +95,8 @@ object experimentalMod {
         __obj.asInstanceOf[NonDirectionalSuspenseListProps]
       }
       
-      extension [Self <: NonDirectionalSuspenseListProps](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: NonDirectionalSuspenseListProps] (val x: Self) extends AnyVal {
         
         inline def setRevealOrder(value: Exclude[SuspenseListRevealOrder, forwards | backwards]): Self = StObject.set(x, "revealOrder", value.asInstanceOf[js.Any])
         
@@ -117,7 +119,8 @@ object experimentalMod {
         __obj.asInstanceOf[SuspenseConfig]
       }
       
-      extension [Self <: SuspenseConfig](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SuspenseConfig] (val x: Self) extends AnyVal {
         
         inline def setBusyDelayMs(value: Double): Self = StObject.set(x, "busyDelayMs", value.asInstanceOf[js.Any])
         
@@ -149,7 +152,8 @@ object experimentalMod {
         __obj.asInstanceOf[SuspenseListCommonProps]
       }
       
-      extension [Self <: SuspenseListCommonProps](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SuspenseListCommonProps] (val x: Self) extends AnyVal {
         
         inline def setChildren(
           value: (ReactElement[Any, String | JSXElementConstructor[Any]]) | (js.Iterable[ReactElement[Any, String | JSXElementConstructor[Any]]])
@@ -225,7 +229,8 @@ object experimentalMod {
         __obj.asInstanceOf[TimeoutConfig]
       }
       
-      extension [Self <: TimeoutConfig](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: TimeoutConfig] (val x: Self) extends AnyVal {
         
         inline def setTimeoutMs(value: Double): Self = StObject.set(x, "timeoutMs", value.asInstanceOf[js.Any])
       }

@@ -17,7 +17,8 @@ object CatHelpParams {
     __obj.asInstanceOf[CatHelpParams]
   }
   
-  extension [Self <: CatHelpParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CatHelpParams] (val x: Self) extends AnyVal {
     
     inline def setHelp(value: Boolean): Self = StObject.set(x, "help", value.asInstanceOf[js.Any])
     

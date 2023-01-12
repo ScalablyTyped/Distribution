@@ -37,7 +37,8 @@ object InitializeOptions {
     __obj.asInstanceOf[InitializeOptions]
   }
   
-  extension [Self <: InitializeOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InitializeOptions] (val x: Self) extends AnyVal {
     
     inline def setWasmModule(value: Module): Self = StObject.set(x, "wasmModule", value.asInstanceOf[js.Any])
     

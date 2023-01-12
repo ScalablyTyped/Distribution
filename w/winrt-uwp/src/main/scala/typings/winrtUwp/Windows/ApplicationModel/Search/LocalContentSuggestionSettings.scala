@@ -33,7 +33,8 @@ object LocalContentSuggestionSettings {
     __obj.asInstanceOf[LocalContentSuggestionSettings]
   }
   
-  extension [Self <: LocalContentSuggestionSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LocalContentSuggestionSettings] (val x: Self) extends AnyVal {
     
     inline def setAqsFilter(value: String): Self = StObject.set(x, "aqsFilter", value.asInstanceOf[js.Any])
     

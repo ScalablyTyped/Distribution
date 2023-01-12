@@ -41,7 +41,8 @@ object DataRequirementCodeFilter {
     __obj.asInstanceOf[DataRequirementCodeFilter]
   }
   
-  extension [Self <: DataRequirementCodeFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataRequirementCodeFilter] (val x: Self) extends AnyVal {
     
     inline def setCode(value: js.Array[Coding]): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     

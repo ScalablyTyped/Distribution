@@ -279,7 +279,8 @@ object mod {
       __obj.asInstanceOf[SocketOptions]
     }
     
-    extension [Self <: SocketOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SocketOptions] (val x: Self) extends AnyVal {
       
       inline def setAffinity(value: Double): Self = StObject.set(x, "affinity", value.asInstanceOf[js.Any])
       
@@ -368,7 +369,8 @@ object mod {
       __obj.asInstanceOf[SocketTypes]
     }
     
-    extension [Self <: SocketTypes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SocketTypes] (val x: Self) extends AnyVal {
       
       inline def setDealer(value: Double): Self = StObject.set(x, "dealer", value.asInstanceOf[js.Any])
       

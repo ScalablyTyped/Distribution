@@ -17,7 +17,8 @@ object Overrides {
     __obj.asInstanceOf[Overrides]
   }
   
-  extension [Self <: Overrides](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Overrides] (val x: Self) extends AnyVal {
     
     inline def setOverrides(value: js.Array[Minutes]): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
     

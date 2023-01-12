@@ -21,7 +21,8 @@ object JumpToStateAction {
     __obj.asInstanceOf[JumpToStateAction]
   }
   
-  extension [Self <: JumpToStateAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JumpToStateAction] (val x: Self) extends AnyVal {
     
     inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     

@@ -88,7 +88,8 @@ object libClassdefFieldNameListMod {
       __obj.asInstanceOf[FieldNameList]
     }
     
-    extension [Self <: FieldNameList](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FieldNameList] (val x: Self) extends AnyVal {
       
       inline def setAdd(value: String => Unit): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
       

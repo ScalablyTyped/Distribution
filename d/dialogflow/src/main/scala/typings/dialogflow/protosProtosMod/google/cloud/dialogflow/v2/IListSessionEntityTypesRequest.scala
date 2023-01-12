@@ -23,7 +23,8 @@ object IListSessionEntityTypesRequest {
     __obj.asInstanceOf[IListSessionEntityTypesRequest]
   }
   
-  extension [Self <: IListSessionEntityTypesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IListSessionEntityTypesRequest] (val x: Self) extends AnyVal {
     
     inline def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
     

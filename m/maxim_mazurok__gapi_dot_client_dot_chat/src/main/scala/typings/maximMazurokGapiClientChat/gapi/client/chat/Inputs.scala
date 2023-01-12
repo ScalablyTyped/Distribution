@@ -25,7 +25,8 @@ object Inputs {
     __obj.asInstanceOf[Inputs]
   }
   
-  extension [Self <: Inputs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Inputs] (val x: Self) extends AnyVal {
     
     inline def setDateInput(value: DateInput): Self = StObject.set(x, "dateInput", value.asInstanceOf[js.Any])
     

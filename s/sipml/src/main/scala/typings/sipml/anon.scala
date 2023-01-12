@@ -21,7 +21,8 @@ object anon {
       __obj.asInstanceOf[Audio]
     }
     
-    extension [Self <: Audio](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Audio] (val x: Self) extends AnyVal {
       
       inline def setAudio(value: Double): Self = StObject.set(x, "audio", value.asInstanceOf[js.Any])
       
@@ -42,7 +43,8 @@ object anon {
       __obj.asInstanceOf[Events]
     }
     
-    extension [Self <: Events](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Events] (val x: Self) extends AnyVal {
       
       inline def setEvents(value: EventSubscriptionType | js.Array[EventSubscriptionType]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
       
@@ -68,7 +70,8 @@ object anon {
       __obj.asInstanceOf[Listener]
     }
     
-    extension [Self <: Listener](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Listener] (val x: Self) extends AnyVal {
       
       inline def setEvents(
         value: typings.sipml.SIPml.Stack.EventSubscriptionType | js.Array[typings.sipml.SIPml.Stack.EventSubscriptionType]
@@ -97,7 +100,8 @@ object anon {
       __obj.asInstanceOf[MaxHeight]
     }
     
-    extension [Self <: MaxHeight](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MaxHeight] (val x: Self) extends AnyVal {
       
       inline def setMaxHeight(value: Double): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
       

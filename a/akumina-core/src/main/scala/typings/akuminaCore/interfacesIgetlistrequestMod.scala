@@ -66,7 +66,8 @@ object interfacesIgetlistrequestMod {
       __obj.asInstanceOf[IGetListRequest]
     }
     
-    extension [Self <: IGetListRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IGetListRequest] (val x: Self) extends AnyVal {
       
       inline def setAdditionalSelectFields(value: String): Self = StObject.set(x, "additionalSelectFields", value.asInstanceOf[js.Any])
       

@@ -33,7 +33,8 @@ object GetVocabularyFilterResponse {
     __obj.asInstanceOf[GetVocabularyFilterResponse]
   }
   
-  extension [Self <: GetVocabularyFilterResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetVocabularyFilterResponse] (val x: Self) extends AnyVal {
     
     inline def setDownloadUri(value: Uri): Self = StObject.set(x, "DownloadUri", value.asInstanceOf[js.Any])
     

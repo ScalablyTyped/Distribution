@@ -21,7 +21,8 @@ object PKIStatusInfoJson {
     __obj.asInstanceOf[PKIStatusInfoJson]
   }
   
-  extension [Self <: PKIStatusInfoJson](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PKIStatusInfoJson] (val x: Self) extends AnyVal {
     
     inline def setFailInfo(value: BitStringJson): Self = StObject.set(x, "failInfo", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object CreateLogSubscriptionRequest {
     __obj.asInstanceOf[CreateLogSubscriptionRequest]
   }
   
-  extension [Self <: CreateLogSubscriptionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateLogSubscriptionRequest] (val x: Self) extends AnyVal {
     
     inline def setDirectoryId(value: DirectoryId): Self = StObject.set(x, "DirectoryId", value.asInstanceOf[js.Any])
     

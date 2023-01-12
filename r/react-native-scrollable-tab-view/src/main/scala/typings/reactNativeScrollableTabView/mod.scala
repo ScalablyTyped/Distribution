@@ -71,7 +71,8 @@ object mod {
       __obj.asInstanceOf[ChangeTabProperties]
     }
     
-    extension [Self <: ChangeTabProperties](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChangeTabProperties] (val x: Self) extends AnyVal {
       
       inline def setFrom(value: Double): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       
@@ -106,7 +107,8 @@ object mod {
       __obj.asInstanceOf[DefaultTabBarProps]
     }
     
-    extension [Self <: DefaultTabBarProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DefaultTabBarProps] (val x: Self) extends AnyVal {
       
       inline def setActiveTextColor(value: String): Self = StObject.set(x, "activeTextColor", value.asInstanceOf[js.Any])
       
@@ -168,7 +170,8 @@ object mod {
       __obj.asInstanceOf[ScrollableTabBarProps]
     }
     
-    extension [Self <: ScrollableTabBarProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScrollableTabBarProps] (val x: Self) extends AnyVal {
       
       inline def setScrollOffset(value: Double): Self = StObject.set(x, "scrollOffset", value.asInstanceOf[js.Any])
       
@@ -289,7 +292,8 @@ object mod {
       __obj.asInstanceOf[ScrollableTabViewProperties]
     }
     
-    extension [Self <: ScrollableTabViewProperties](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScrollableTabViewProperties] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

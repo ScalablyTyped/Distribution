@@ -17,7 +17,8 @@ object IOCRZoneResults {
     __obj.asInstanceOf[IOCRZoneResults]
   }
   
-  extension [Self <: IOCRZoneResults](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IOCRZoneResults] (val x: Self) extends AnyVal {
     
     inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     

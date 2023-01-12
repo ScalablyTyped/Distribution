@@ -101,7 +101,8 @@ object Compression {
       __obj.asInstanceOf[Compressor]
     }
     
-    extension [Self <: Compressor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Compressor] (val x: Self) extends AnyVal {
       
       inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
       
@@ -147,7 +148,8 @@ object Compression {
       __obj.asInstanceOf[Decompressor]
     }
     
-    extension [Self <: Decompressor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Decompressor] (val x: Self) extends AnyVal {
       
       inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
       

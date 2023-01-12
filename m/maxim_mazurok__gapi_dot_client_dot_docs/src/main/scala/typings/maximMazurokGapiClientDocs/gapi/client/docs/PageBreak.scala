@@ -30,7 +30,8 @@ object PageBreak {
     __obj.asInstanceOf[PageBreak]
   }
   
-  extension [Self <: PageBreak](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PageBreak] (val x: Self) extends AnyVal {
     
     inline def setSuggestedDeletionIds(value: js.Array[String]): Self = StObject.set(x, "suggestedDeletionIds", value.asInstanceOf[js.Any])
     

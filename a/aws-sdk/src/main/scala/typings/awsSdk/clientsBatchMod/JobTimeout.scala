@@ -18,7 +18,8 @@ object JobTimeout {
     __obj.asInstanceOf[JobTimeout]
   }
   
-  extension [Self <: JobTimeout](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JobTimeout] (val x: Self) extends AnyVal {
     
     inline def setAttemptDurationSeconds(value: Integer): Self = StObject.set(x, "attemptDurationSeconds", value.asInstanceOf[js.Any])
     

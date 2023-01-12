@@ -45,7 +45,8 @@ object DockerImage {
     __obj.asInstanceOf[DockerImage]
   }
   
-  extension [Self <: DockerImage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DockerImage] (val x: Self) extends AnyVal {
     
     inline def setBuildTime(value: String): Self = StObject.set(x, "buildTime", value.asInstanceOf[js.Any])
     

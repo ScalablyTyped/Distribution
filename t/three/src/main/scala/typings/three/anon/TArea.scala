@@ -22,7 +22,8 @@ object TArea {
     __obj.asInstanceOf[TArea]
   }
   
-  extension [Self <: TArea](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TArea] (val x: Self) extends AnyVal {
     
     inline def setResolution(value: IUniform[Any]): Self = StObject.set(x, "resolution", value.asInstanceOf[js.Any])
     

@@ -30,7 +30,8 @@ object typesSegmentGroupListMod {
       __obj.asInstanceOf[SegmentGroupList]
     }
     
-    extension [Self <: SegmentGroupList](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SegmentGroupList] (val x: Self) extends AnyVal {
       
       inline def setGroups(value: js.Array[SegmentGroup] | js.Iterable[SegmentGroup]): Self = StObject.set(x, "Groups", value.asInstanceOf[js.Any])
       
@@ -61,7 +62,8 @@ object typesSegmentGroupListMod {
       __obj.asInstanceOf[UnmarshalledSegmentGroupList]
     }
     
-    extension [Self <: UnmarshalledSegmentGroupList](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnmarshalledSegmentGroupList] (val x: Self) extends AnyVal {
       
       inline def setGroups(value: js.Array[UnmarshalledSegmentGroup]): Self = StObject.set(x, "Groups", value.asInstanceOf[js.Any])
       

@@ -17,7 +17,8 @@ object BayesClassifierClassification {
     __obj.asInstanceOf[BayesClassifierClassification]
   }
   
-  extension [Self <: BayesClassifierClassification](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BayesClassifierClassification] (val x: Self) extends AnyVal {
     
     inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     

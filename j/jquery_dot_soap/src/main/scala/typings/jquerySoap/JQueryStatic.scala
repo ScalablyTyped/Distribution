@@ -21,7 +21,8 @@ object JQueryStatic {
     __obj.asInstanceOf[JQueryStatic]
   }
   
-  extension [Self <: JQueryStatic](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JQueryStatic] (val x: Self) extends AnyVal {
     
     inline def setSoap(value: /* options */ js.UndefOr[Options] => JQueryXHR): Self = StObject.set(x, "soap", js.Any.fromFunction1(value))
   }

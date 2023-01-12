@@ -21,7 +21,8 @@ object WordContentMap {
     __obj.asInstanceOf[WordContentMap]
   }
   
-  extension [Self <: WordContentMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WordContentMap] (val x: Self) extends AnyVal {
     
     inline def setPunctuation(value: Punctuation): Self = StObject.set(x, "punctuation", value.asInstanceOf[js.Any])
     

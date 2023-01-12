@@ -37,7 +37,8 @@ object IDOMDocumentType {
     __obj.asInstanceOf[IDOMDocumentType]
   }
   
-  extension [Self <: IDOMDocumentType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IDOMDocumentType] (val x: Self) extends AnyVal {
     
     inline def setEntities(value: Any): Self = StObject.set(x, "entities", value.asInstanceOf[js.Any])
     

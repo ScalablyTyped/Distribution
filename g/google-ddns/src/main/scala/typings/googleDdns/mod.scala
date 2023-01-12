@@ -138,7 +138,8 @@ object mod {
       __obj.asInstanceOf[DynamicDNSOptions]
     }
     
-    extension [Self <: DynamicDNSOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DynamicDNSOptions] (val x: Self) extends AnyVal {
       
       inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
       
@@ -213,7 +214,8 @@ object mod {
       __obj.asInstanceOf[ErrorResponse]
     }
     
-    extension [Self <: ErrorResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ErrorResponse] (val x: Self) extends AnyVal {
       
       inline def setIp(value: Unit): Self = StObject.set(x, "ip", value.asInstanceOf[js.Any])
       
@@ -264,7 +266,8 @@ object mod {
       __obj.asInstanceOf[ServiceOptions]
     }
     
-    extension [Self <: ServiceOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ServiceOptions] (val x: Self) extends AnyVal {
       
       inline def setCheckInterval(value: Double): Self = StObject.set(x, "checkInterval", value.asInstanceOf[js.Any])
       
@@ -317,7 +320,8 @@ object mod {
       __obj.asInstanceOf[SuccessResponse]
     }
     
-    extension [Self <: SuccessResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SuccessResponse] (val x: Self) extends AnyVal {
       
       inline def setIp(value: String): Self = StObject.set(x, "ip", value.asInstanceOf[js.Any])
       

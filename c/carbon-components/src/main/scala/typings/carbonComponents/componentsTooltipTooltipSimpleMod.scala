@@ -61,7 +61,8 @@ object componentsTooltipTooltipSimpleMod {
       __obj.asInstanceOf[TooltipSimple]
     }
     
-    extension [Self <: TooltipSimple](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TooltipSimple] (val x: Self) extends AnyVal {
       
       inline def setAllowTooltipVisibility(value: Visible => Unit): Self = StObject.set(x, "allowTooltipVisibility", js.Any.fromFunction1(value))
       
@@ -93,7 +94,8 @@ object componentsTooltipTooltipSimpleMod {
       __obj.asInstanceOf[TooltipSimpleOptions]
     }
     
-    extension [Self <: TooltipSimpleOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TooltipSimpleOptions] (val x: Self) extends AnyVal {
       
       inline def setClassTooltipHidden(value: String): Self = StObject.set(x, "classTooltipHidden", value.asInstanceOf[js.Any])
       

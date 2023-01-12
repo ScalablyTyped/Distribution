@@ -25,7 +25,8 @@ object PlaylistTrackObject {
     __obj.asInstanceOf[PlaylistTrackObject]
   }
   
-  extension [Self <: PlaylistTrackObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlaylistTrackObject] (val x: Self) extends AnyVal {
     
     inline def setAdded_at(value: String): Self = StObject.set(x, "added_at", value.asInstanceOf[js.Any])
     

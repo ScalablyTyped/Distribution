@@ -32,7 +32,8 @@ object GetWorkUnitResultsRequest {
     __obj.asInstanceOf[GetWorkUnitResultsRequest]
   }
   
-  extension [Self <: GetWorkUnitResultsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetWorkUnitResultsRequest] (val x: Self) extends AnyVal {
     
     inline def setQueryId(value: GetWorkUnitResultsRequestQueryIdString): Self = StObject.set(x, "QueryId", value.asInstanceOf[js.Any])
     

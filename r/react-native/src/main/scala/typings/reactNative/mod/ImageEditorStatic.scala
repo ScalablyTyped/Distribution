@@ -32,7 +32,8 @@ object ImageEditorStatic {
     __obj.asInstanceOf[ImageEditorStatic]
   }
   
-  extension [Self <: ImageEditorStatic](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImageEditorStatic] (val x: Self) extends AnyVal {
     
     inline def setCropImage(
       value: (String, ImageCropData, js.Function1[/* uri */ String, Unit], js.Function1[/* error */ js.Object, Unit]) => Unit

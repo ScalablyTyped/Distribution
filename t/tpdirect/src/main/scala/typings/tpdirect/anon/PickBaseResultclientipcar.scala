@@ -21,7 +21,8 @@ object PickBaseResultclientipcar {
     __obj.asInstanceOf[PickBaseResultclientipcar]
   }
   
-  extension [Self <: PickBaseResultclientipcar](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickBaseResultclientipcar] (val x: Self) extends AnyVal {
     
     inline def setCard_info(value: CardInfoV1): Self = StObject.set(x, "card_info", value.asInstanceOf[js.Any])
     

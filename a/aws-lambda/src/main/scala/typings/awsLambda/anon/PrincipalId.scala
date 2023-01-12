@@ -15,7 +15,8 @@ object PrincipalId {
     __obj.asInstanceOf[PrincipalId]
   }
   
-  extension [Self <: PrincipalId](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PrincipalId] (val x: Self) extends AnyVal {
     
     inline def setPrincipalId(value: String): Self = StObject.set(x, "principalId", value.asInstanceOf[js.Any])
   }

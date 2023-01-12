@@ -45,7 +45,8 @@ object distTypesMeshMod {
       __obj.asInstanceOf[MeshProps[Datum]]
     }
     
-    extension [Self <: MeshProps[?], Datum](x: Self & MeshProps[Datum]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MeshProps[?], Datum] (val x: Self & MeshProps[Datum]) extends AnyVal {
       
       inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
       

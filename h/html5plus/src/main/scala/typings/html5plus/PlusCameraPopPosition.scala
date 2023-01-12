@@ -50,7 +50,8 @@ object PlusCameraPopPosition {
     __obj.asInstanceOf[PlusCameraPopPosition]
   }
   
-  extension [Self <: PlusCameraPopPosition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlusCameraPopPosition] (val x: Self) extends AnyVal {
     
     inline def setHeight(value: String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     

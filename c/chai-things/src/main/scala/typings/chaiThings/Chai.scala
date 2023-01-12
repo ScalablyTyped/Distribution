@@ -40,7 +40,8 @@ object Chai {
       __obj.asInstanceOf[ArrayAssertion]
     }
     
-    extension [Self <: ArrayAssertion](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ArrayAssertion] (val x: Self) extends AnyVal {
       
       inline def setAll(value: Assertion): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
       
@@ -100,7 +101,8 @@ object Chai {
       __obj.asInstanceOf[Deep]
     }
     
-    extension [Self <: Deep](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Deep] (val x: Self) extends AnyVal {
       
       inline def setEquals_(value: (/* value */ Any, /* message */ js.UndefOr[String]) => Assertion): Self = StObject.set(x, "equals", js.Any.fromFunction2(value))
     }
@@ -155,7 +157,8 @@ object Chai {
       __obj.asInstanceOf[Item]
     }
     
-    extension [Self <: Item](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Item] (val x: Self) extends AnyVal {
       
       inline def setItem(value: Something): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
       

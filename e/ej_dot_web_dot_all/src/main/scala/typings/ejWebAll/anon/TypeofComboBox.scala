@@ -20,7 +20,8 @@ object TypeofComboBox {
     __obj.asInstanceOf[TypeofComboBox]
   }
   
-  extension [Self <: TypeofComboBox](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofComboBox] (val x: Self) extends AnyVal {
     
     inline def setFn(value: ComboBox): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
     

@@ -352,7 +352,8 @@ object sapMP13nBasePanelMod {
       __obj.asInstanceOf[BasePanelSettings]
     }
     
-    extension [Self <: BasePanelSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BasePanelSettings] (val x: Self) extends AnyVal {
       
       inline def setChange(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "change", js.Any.fromFunction1(value))
       
@@ -396,7 +397,8 @@ object sapMP13nBasePanelMod {
       __obj.asInstanceOf[Item]
     }
     
-    extension [Self <: Item](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Item] (val x: Self) extends AnyVal {
       
       inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       

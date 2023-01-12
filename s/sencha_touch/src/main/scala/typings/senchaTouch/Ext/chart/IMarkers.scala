@@ -69,7 +69,8 @@ object IMarkers {
     __obj.asInstanceOf[IMarkers]
   }
   
-  extension [Self <: IMarkers](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IMarkers] (val x: Self) extends AnyVal {
     
     inline def setClear(value: /* category */ js.UndefOr[String] => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction1(value))
     

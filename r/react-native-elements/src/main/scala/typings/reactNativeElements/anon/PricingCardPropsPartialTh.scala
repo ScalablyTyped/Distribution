@@ -47,7 +47,8 @@ object PricingCardPropsPartialTh {
     __obj.asInstanceOf[PricingCardPropsPartialTh]
   }
   
-  extension [Self <: PricingCardPropsPartialTh](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PricingCardPropsPartialTh] (val x: Self) extends AnyVal {
     
     inline def setButton(value: ButtonProps | ButtonInformation): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
     

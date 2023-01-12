@@ -15,7 +15,8 @@ object WatcherStatsWatchRecordQueuedStats {
     __obj.asInstanceOf[WatcherStatsWatchRecordQueuedStats]
   }
   
-  extension [Self <: WatcherStatsWatchRecordQueuedStats](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WatcherStatsWatchRecordQueuedStats] (val x: Self) extends AnyVal {
     
     inline def setExecution_time(value: DateTime): Self = StObject.set(x, "execution_time", value.asInstanceOf[js.Any])
   }

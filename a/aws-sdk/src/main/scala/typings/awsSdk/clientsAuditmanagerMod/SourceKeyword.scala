@@ -23,7 +23,8 @@ object SourceKeyword {
     __obj.asInstanceOf[SourceKeyword]
   }
   
-  extension [Self <: SourceKeyword](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SourceKeyword] (val x: Self) extends AnyVal {
     
     inline def setKeywordInputType(value: KeywordInputType): Self = StObject.set(x, "keywordInputType", value.asInstanceOf[js.Any])
     

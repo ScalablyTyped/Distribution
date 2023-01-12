@@ -650,7 +650,8 @@ object cjsTimeInputMod {
       __obj.asInstanceOf[TimeInputProps]
     }
     
-    extension [Self <: TimeInputProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TimeInputProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       

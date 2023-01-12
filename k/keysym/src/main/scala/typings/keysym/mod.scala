@@ -38,7 +38,8 @@ object mod {
       __obj.asInstanceOf[Record]
     }
     
-    extension [Self <: Record](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Record] (val x: Self) extends AnyVal {
       
       inline def setKeysym(value: Double): Self = StObject.set(x, "keysym", value.asInstanceOf[js.Any])
       

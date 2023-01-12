@@ -20,7 +20,8 @@ object GetRootAXNodeRequest {
     __obj.asInstanceOf[GetRootAXNodeRequest]
   }
   
-  extension [Self <: GetRootAXNodeRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetRootAXNodeRequest] (val x: Self) extends AnyVal {
     
     inline def setFrameId(value: FrameId): Self = StObject.set(x, "frameId", value.asInstanceOf[js.Any])
     

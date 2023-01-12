@@ -21,7 +21,8 @@ object IResumeState {
     __obj.asInstanceOf[IResumeState]
   }
   
-  extension [Self <: IResumeState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IResumeState] (val x: Self) extends AnyVal {
     
     inline def setDownloaded(value: Double): Self = StObject.set(x, "downloaded", value.asInstanceOf[js.Any])
     

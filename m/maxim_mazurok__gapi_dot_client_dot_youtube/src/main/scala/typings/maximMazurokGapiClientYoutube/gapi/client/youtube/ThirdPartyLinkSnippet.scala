@@ -19,7 +19,8 @@ object ThirdPartyLinkSnippet {
     __obj.asInstanceOf[ThirdPartyLinkSnippet]
   }
   
-  extension [Self <: ThirdPartyLinkSnippet](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ThirdPartyLinkSnippet] (val x: Self) extends AnyVal {
     
     inline def setChannelToStoreLink(value: ChannelToStoreLinkDetails): Self = StObject.set(x, "channelToStoreLink", value.asInstanceOf[js.Any])
     

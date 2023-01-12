@@ -18,7 +18,8 @@ object OSRelease {
     __obj.asInstanceOf[OSRelease]
   }
   
-  extension [Self <: OSRelease](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OSRelease] (val x: Self) extends AnyVal {
     
     inline def setLabel(value: String): Self = StObject.set(x, "Label", value.asInstanceOf[js.Any])
     

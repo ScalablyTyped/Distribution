@@ -24,7 +24,8 @@ object buildSrcSchemaMod {
       __obj.asInstanceOf[FragmentResponse]
     }
     
-    extension [Self <: FragmentResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FragmentResponse] (val x: Self) extends AnyVal {
       
       inline def setCodeFragment(value: StringDictionary[Fragment]): Self = StObject.set(x, "codeFragment", value.asInstanceOf[js.Any])
     }
@@ -132,7 +133,8 @@ object buildSrcSchemaMod {
       __obj.asInstanceOf[Schema]
     }
     
-    extension [Self <: Schema](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Schema] (val x: Self) extends AnyVal {
       
       inline def setAuth(value: Oauth2): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
       
@@ -214,7 +216,8 @@ object buildSrcSchemaMod {
       __obj.asInstanceOf[SchemaItem]
     }
     
-    extension [Self <: SchemaItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SchemaItem] (val x: Self) extends AnyVal {
       
       inline def set$ref(value: String): Self = StObject.set(x, "$ref", value.asInstanceOf[js.Any])
       
@@ -302,7 +305,8 @@ object buildSrcSchemaMod {
       __obj.asInstanceOf[SchemaMethod]
     }
     
-    extension [Self <: SchemaMethod](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SchemaMethod] (val x: Self) extends AnyVal {
       
       inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
@@ -380,7 +384,8 @@ object buildSrcSchemaMod {
       __obj.asInstanceOf[SchemaParameter]
     }
     
-    extension [Self <: SchemaParameter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SchemaParameter] (val x: Self) extends AnyVal {
       
       inline def setDefault(value: String): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
       
@@ -419,7 +424,8 @@ object buildSrcSchemaMod {
       __obj.asInstanceOf[SchemaResource]
     }
     
-    extension [Self <: SchemaResource](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SchemaResource] (val x: Self) extends AnyVal {
       
       inline def setMethods(value: SchemaMethods): Self = StObject.set(x, "methods", value.asInstanceOf[js.Any])
       
@@ -469,7 +475,8 @@ object buildSrcSchemaMod {
       __obj.asInstanceOf[Schemas]
     }
     
-    extension [Self <: Schemas](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Schemas] (val x: Self) extends AnyVal {
       
       inline def setDiscoveryVersion(value: String): Self = StObject.set(x, "discoveryVersion", value.asInstanceOf[js.Any])
       

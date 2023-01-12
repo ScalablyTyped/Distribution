@@ -114,7 +114,8 @@ object QueryDocumentKeys {
     __obj.asInstanceOf[QueryDocumentKeys]
   }
   
-  extension [Self <: QueryDocumentKeys](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryDocumentKeys] (val x: Self) extends AnyVal {
     
     inline def setArgument(value: js.Array[String]): Self = StObject.set(x, "Argument", value.asInstanceOf[js.Any])
     

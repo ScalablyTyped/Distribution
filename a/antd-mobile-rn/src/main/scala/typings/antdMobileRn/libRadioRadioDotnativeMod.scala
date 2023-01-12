@@ -59,7 +59,8 @@ object libRadioRadioDotnativeMod {
       __obj.asInstanceOf[RadioNativeProps]
     }
     
-    extension [Self <: RadioNativeProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RadioNativeProps] (val x: Self) extends AnyVal {
       
       inline def setStyle(value: StyleProp[ImageStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       

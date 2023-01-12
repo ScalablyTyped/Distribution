@@ -27,7 +27,8 @@ object distTypesResponsiveEditorSystemDistComponentsPanelCloseMod extends Shortc
       __obj.asInstanceOf[PanelCloseProps]
     }
     
-    extension [Self <: PanelCloseProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PanelCloseProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

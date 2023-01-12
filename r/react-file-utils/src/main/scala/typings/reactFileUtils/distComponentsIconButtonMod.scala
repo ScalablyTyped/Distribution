@@ -29,7 +29,8 @@ object distComponentsIconButtonMod {
       __obj.asInstanceOf[IconButtonProps]
     }
     
-    extension [Self <: IconButtonProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IconButtonProps] (val x: Self) extends AnyVal {
       
       inline def setOnClick(value: MouseEvent[HTMLButtonElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
       

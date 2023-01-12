@@ -46,7 +46,8 @@ object WebUIDeviceActivatedEventArgs {
     __obj.asInstanceOf[WebUIDeviceActivatedEventArgs]
   }
   
-  extension [Self <: WebUIDeviceActivatedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebUIDeviceActivatedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setActivatedOperation(value: ActivatedOperation): Self = StObject.set(x, "activatedOperation", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object ILabel {
     __obj.asInstanceOf[ILabel]
   }
   
-  extension [Self <: ILabel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ILabel] (val x: Self) extends AnyVal {
     
     inline def setHtml(value: java.lang.String): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
     

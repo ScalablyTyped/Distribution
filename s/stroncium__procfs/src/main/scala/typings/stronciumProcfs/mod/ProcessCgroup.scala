@@ -19,7 +19,8 @@ object ProcessCgroup {
     __obj.asInstanceOf[ProcessCgroup]
   }
   
-  extension [Self <: ProcessCgroup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProcessCgroup] (val x: Self) extends AnyVal {
     
     inline def setControllers(value: js.Array[String]): Self = StObject.set(x, "controllers", value.asInstanceOf[js.Any])
     

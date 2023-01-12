@@ -33,7 +33,8 @@ object DataflowEndpoint {
     __obj.asInstanceOf[DataflowEndpoint]
   }
   
-  extension [Self <: DataflowEndpoint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataflowEndpoint] (val x: Self) extends AnyVal {
     
     inline def setAddress(value: SocketAddress): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     

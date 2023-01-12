@@ -24,7 +24,8 @@ object ContaineranalysisGoogleDevtoolsCloudbuildV1Secret {
     __obj.asInstanceOf[ContaineranalysisGoogleDevtoolsCloudbuildV1Secret]
   }
   
-  extension [Self <: ContaineranalysisGoogleDevtoolsCloudbuildV1Secret](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContaineranalysisGoogleDevtoolsCloudbuildV1Secret] (val x: Self) extends AnyVal {
     
     inline def setKmsKeyName(value: String): Self = StObject.set(x, "kmsKeyName", value.asInstanceOf[js.Any])
     

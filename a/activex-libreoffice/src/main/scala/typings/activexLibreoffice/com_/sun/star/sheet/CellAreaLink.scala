@@ -79,7 +79,8 @@ object CellAreaLink {
     __obj.asInstanceOf[CellAreaLink]
   }
   
-  extension [Self <: CellAreaLink](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CellAreaLink] (val x: Self) extends AnyVal {
     
     inline def setFilter(value: String): Self = StObject.set(x, "Filter", value.asInstanceOf[js.Any])
     

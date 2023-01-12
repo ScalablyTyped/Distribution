@@ -24,7 +24,8 @@ object DeleteCorpusParams {
     __obj.asInstanceOf[DeleteCorpusParams]
   }
   
-  extension [Self <: DeleteCorpusParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteCorpusParams] (val x: Self) extends AnyVal {
     
     inline def setCorpus_name(value: String): Self = StObject.set(x, "corpus_name", value.asInstanceOf[js.Any])
     

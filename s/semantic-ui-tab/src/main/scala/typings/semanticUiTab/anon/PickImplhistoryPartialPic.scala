@@ -109,7 +109,8 @@ object PickImplhistoryPartialPic {
     __obj.asInstanceOf[PickImplhistoryPartialPic]
   }
   
-  extension [Self <: PickImplhistoryPartialPic](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickImplhistoryPartialPic] (val x: Self) extends AnyVal {
     
     inline def setAlwaysRefresh(value: Boolean): Self = StObject.set(x, "alwaysRefresh", value.asInstanceOf[js.Any])
     

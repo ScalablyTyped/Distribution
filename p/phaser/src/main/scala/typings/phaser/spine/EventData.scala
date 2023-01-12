@@ -35,7 +35,8 @@ object EventData {
     __obj.asInstanceOf[EventData]
   }
   
-  extension [Self <: EventData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventData] (val x: Self) extends AnyVal {
     
     inline def setAudioPath(value: String): Self = StObject.set(x, "audioPath", value.asInstanceOf[js.Any])
     

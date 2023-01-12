@@ -21,7 +21,8 @@ object libTypesMod {
       __obj.asInstanceOf[ErrorCallbackEvent]
     }
     
-    extension [Self <: ErrorCallbackEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ErrorCallbackEvent] (val x: Self) extends AnyVal {
       
       inline def setErr(value: js.Error): Self = StObject.set(x, "err", value.asInstanceOf[js.Any])
       
@@ -56,7 +57,8 @@ object libTypesMod {
       __obj.asInstanceOf[MockObject]
     }
     
-    extension [Self <: MockObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MockObject] (val x: Self) extends AnyVal {
       
       inline def setBody(value: Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       

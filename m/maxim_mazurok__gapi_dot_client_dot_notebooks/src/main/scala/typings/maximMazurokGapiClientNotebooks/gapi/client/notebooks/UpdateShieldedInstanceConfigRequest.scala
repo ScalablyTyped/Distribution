@@ -16,7 +16,8 @@ object UpdateShieldedInstanceConfigRequest {
     __obj.asInstanceOf[UpdateShieldedInstanceConfigRequest]
   }
   
-  extension [Self <: UpdateShieldedInstanceConfigRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateShieldedInstanceConfigRequest] (val x: Self) extends AnyVal {
     
     inline def setShieldedInstanceConfig(value: ShieldedInstanceConfig): Self = StObject.set(x, "shieldedInstanceConfig", value.asInstanceOf[js.Any])
     

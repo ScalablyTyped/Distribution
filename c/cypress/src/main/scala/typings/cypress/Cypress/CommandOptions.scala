@@ -15,7 +15,8 @@ object CommandOptions {
     __obj.asInstanceOf[CommandOptions]
   }
   
-  extension [Self <: CommandOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CommandOptions] (val x: Self) extends AnyVal {
     
     inline def setPrevSubject(value: Boolean | PrevSubject | js.Array[PrevSubject]): Self = StObject.set(x, "prevSubject", value.asInstanceOf[js.Any])
     

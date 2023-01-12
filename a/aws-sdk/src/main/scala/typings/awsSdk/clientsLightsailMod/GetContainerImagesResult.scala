@@ -18,7 +18,8 @@ object GetContainerImagesResult {
     __obj.asInstanceOf[GetContainerImagesResult]
   }
   
-  extension [Self <: GetContainerImagesResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetContainerImagesResult] (val x: Self) extends AnyVal {
     
     inline def setContainerImages(value: ContainerImageList): Self = StObject.set(x, "containerImages", value.asInstanceOf[js.Any])
     

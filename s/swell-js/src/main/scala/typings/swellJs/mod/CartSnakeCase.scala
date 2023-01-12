@@ -115,7 +115,8 @@ object CartSnakeCase {
     __obj.asInstanceOf[CartSnakeCase]
   }
   
-  extension [Self <: CartSnakeCase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CartSnakeCase] (val x: Self) extends AnyVal {
     
     inline def setAccount_logged_in(value: Any): Self = StObject.set(x, "account_logged_in", value.asInstanceOf[js.Any])
     

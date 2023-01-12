@@ -38,7 +38,8 @@ object CompressImageOptions {
     __obj.asInstanceOf[CompressImageOptions]
   }
   
-  extension [Self <: CompressImageOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CompressImageOptions] (val x: Self) extends AnyVal {
     
     inline def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
     

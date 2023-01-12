@@ -28,7 +28,8 @@ object CodeContentUpdate {
     __obj.asInstanceOf[CodeContentUpdate]
   }
   
-  extension [Self <: CodeContentUpdate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CodeContentUpdate] (val x: Self) extends AnyVal {
     
     inline def setS3ContentLocationUpdate(value: S3ContentLocationUpdate): Self = StObject.set(x, "S3ContentLocationUpdate", value.asInstanceOf[js.Any])
     

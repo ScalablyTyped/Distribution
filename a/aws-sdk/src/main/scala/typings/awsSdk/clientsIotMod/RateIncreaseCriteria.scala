@@ -23,7 +23,8 @@ object RateIncreaseCriteria {
     __obj.asInstanceOf[RateIncreaseCriteria]
   }
   
-  extension [Self <: RateIncreaseCriteria](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RateIncreaseCriteria] (val x: Self) extends AnyVal {
     
     inline def setNumberOfNotifiedThings(value: NumberOfThings): Self = StObject.set(x, "numberOfNotifiedThings", value.asInstanceOf[js.Any])
     

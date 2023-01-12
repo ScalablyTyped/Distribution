@@ -48,7 +48,8 @@ object UnityAtlasFile {
     __obj.asInstanceOf[UnityAtlasFile]
   }
   
-  extension [Self <: UnityAtlasFile](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UnityAtlasFile] (val x: Self) extends AnyVal {
     
     inline def setAddToCache(value: () => Unit): Self = StObject.set(x, "addToCache", js.Any.fromFunction0(value))
   }

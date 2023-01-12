@@ -336,7 +336,8 @@ object buildSrcAuthGoogleauthMod {
       __obj.asInstanceOf[ADCResponse]
     }
     
-    extension [Self <: ADCResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ADCResponse] (val x: Self) extends AnyVal {
       
       inline def setCredential(value: AuthClient): Self = StObject.set(x, "credential", value.asInstanceOf[js.Any])
       
@@ -395,7 +396,8 @@ object buildSrcAuthGoogleauthMod {
       __obj.asInstanceOf[GoogleAuthOptions[T]]
     }
     
-    extension [Self <: GoogleAuthOptions[?], T /* <: AuthClient */](x: Self & GoogleAuthOptions[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GoogleAuthOptions[?], T /* <: AuthClient */] (val x: Self & GoogleAuthOptions[T]) extends AnyVal {
       
       inline def setAuthClient(value: T): Self = StObject.set(x, "authClient", value.asInstanceOf[js.Any])
       
@@ -456,7 +458,8 @@ object buildSrcAuthGoogleauthMod {
       __obj.asInstanceOf[SignBlobResponse]
     }
     
-    extension [Self <: SignBlobResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SignBlobResponse] (val x: Self) extends AnyVal {
       
       inline def setKeyId(value: String): Self = StObject.set(x, "keyId", value.asInstanceOf[js.Any])
       

@@ -51,7 +51,8 @@ object IArchiveOldVersionsJob {
     __obj.asInstanceOf[IArchiveOldVersionsJob]
   }
   
-  extension [Self <: IArchiveOldVersionsJob](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IArchiveOldVersionsJob] (val x: Self) extends AnyVal {
     
     inline def setAtLeastNDaysOlder(value: Double): Self = StObject.set(x, "AtLeastNDaysOlder", value.asInstanceOf[js.Any])
     

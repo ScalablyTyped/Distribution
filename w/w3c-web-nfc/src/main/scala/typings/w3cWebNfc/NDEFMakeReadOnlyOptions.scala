@@ -16,7 +16,8 @@ object NDEFMakeReadOnlyOptions {
     __obj.asInstanceOf[NDEFMakeReadOnlyOptions]
   }
   
-  extension [Self <: NDEFMakeReadOnlyOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NDEFMakeReadOnlyOptions] (val x: Self) extends AnyVal {
     
     inline def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
     

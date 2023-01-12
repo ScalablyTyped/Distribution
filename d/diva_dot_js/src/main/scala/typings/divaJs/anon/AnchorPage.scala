@@ -18,7 +18,8 @@ object AnchorPage {
     __obj.asInstanceOf[AnchorPage]
   }
   
-  extension [Self <: AnchorPage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnchorPage] (val x: Self) extends AnyVal {
     
     inline def setAnchorPage(value: Double): Self = StObject.set(x, "anchorPage", value.asInstanceOf[js.Any])
     

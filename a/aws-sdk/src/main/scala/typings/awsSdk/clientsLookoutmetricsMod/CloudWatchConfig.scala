@@ -23,7 +23,8 @@ object CloudWatchConfig {
     __obj.asInstanceOf[CloudWatchConfig]
   }
   
-  extension [Self <: CloudWatchConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CloudWatchConfig] (val x: Self) extends AnyVal {
     
     inline def setBackTestConfiguration(value: BackTestConfiguration): Self = StObject.set(x, "BackTestConfiguration", value.asInstanceOf[js.Any])
     

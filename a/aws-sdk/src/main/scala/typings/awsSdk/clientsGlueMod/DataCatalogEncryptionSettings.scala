@@ -23,7 +23,8 @@ object DataCatalogEncryptionSettings {
     __obj.asInstanceOf[DataCatalogEncryptionSettings]
   }
   
-  extension [Self <: DataCatalogEncryptionSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataCatalogEncryptionSettings] (val x: Self) extends AnyVal {
     
     inline def setConnectionPasswordEncryption(value: ConnectionPasswordEncryption): Self = StObject.set(x, "ConnectionPasswordEncryption", value.asInstanceOf[js.Any])
     

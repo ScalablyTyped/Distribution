@@ -23,7 +23,8 @@ object RobotSoftwareSuite {
     __obj.asInstanceOf[RobotSoftwareSuite]
   }
   
-  extension [Self <: RobotSoftwareSuite](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RobotSoftwareSuite] (val x: Self) extends AnyVal {
     
     inline def setName(value: RobotSoftwareSuiteType): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

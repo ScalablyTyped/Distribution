@@ -17,7 +17,8 @@ object GoogleCloudMlV1AutomatedStoppingConfig {
     __obj.asInstanceOf[GoogleCloudMlV1AutomatedStoppingConfig]
   }
   
-  extension [Self <: GoogleCloudMlV1AutomatedStoppingConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudMlV1AutomatedStoppingConfig] (val x: Self) extends AnyVal {
     
     inline def setDecayCurveStoppingConfig(value: GoogleCloudMlV1AutomatedStoppingConfigDecayCurveAutomatedStoppingConfig): Self = StObject.set(x, "decayCurveStoppingConfig", value.asInstanceOf[js.Any])
     

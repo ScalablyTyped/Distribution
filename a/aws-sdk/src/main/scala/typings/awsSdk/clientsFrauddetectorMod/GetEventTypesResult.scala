@@ -23,7 +23,8 @@ object GetEventTypesResult {
     __obj.asInstanceOf[GetEventTypesResult]
   }
   
-  extension [Self <: GetEventTypesResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetEventTypesResult] (val x: Self) extends AnyVal {
     
     inline def setEventTypes(value: eventTypeList): Self = StObject.set(x, "eventTypes", value.asInstanceOf[js.Any])
     

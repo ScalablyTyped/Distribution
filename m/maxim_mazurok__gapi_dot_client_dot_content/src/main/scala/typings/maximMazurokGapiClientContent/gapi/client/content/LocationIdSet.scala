@@ -16,7 +16,8 @@ object LocationIdSet {
     __obj.asInstanceOf[LocationIdSet]
   }
   
-  extension [Self <: LocationIdSet](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LocationIdSet] (val x: Self) extends AnyVal {
     
     inline def setLocationIds(value: js.Array[String]): Self = StObject.set(x, "locationIds", value.asInstanceOf[js.Any])
     

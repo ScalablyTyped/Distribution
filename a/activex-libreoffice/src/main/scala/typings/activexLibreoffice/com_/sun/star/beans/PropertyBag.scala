@@ -48,7 +48,8 @@ object PropertyBag {
     __obj.asInstanceOf[PropertyBag]
   }
   
-  extension [Self <: PropertyBag](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PropertyBag] (val x: Self) extends AnyVal {
     
     inline def setCreateDefault(value: () => Unit): Self = StObject.set(x, "createDefault", js.Any.fromFunction0(value))
     

@@ -94,7 +94,8 @@ object libSearchBarPropsTypeMod {
       __obj.asInstanceOf[SearchBarPropsType]
     }
     
-    extension [Self <: SearchBarPropsType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SearchBarPropsType] (val x: Self) extends AnyVal {
       
       inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
       
@@ -173,7 +174,8 @@ object libSearchBarPropsTypeMod {
       __obj.asInstanceOf[SearchBarState]
     }
     
-    extension [Self <: SearchBarState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SearchBarState] (val x: Self) extends AnyVal {
       
       inline def setFocus(value: Boolean): Self = StObject.set(x, "focus", value.asInstanceOf[js.Any])
       

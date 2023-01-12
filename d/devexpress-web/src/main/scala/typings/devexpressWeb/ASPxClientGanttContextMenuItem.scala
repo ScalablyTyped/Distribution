@@ -103,7 +103,8 @@ object ASPxClientGanttContextMenuItem {
     __obj.asInstanceOf[ASPxClientGanttContextMenuItem]
   }
   
-  extension [Self <: ASPxClientGanttContextMenuItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientGanttContextMenuItem] (val x: Self) extends AnyVal {
     
     inline def setBeginGroup(value: Boolean): Self = StObject.set(x, "beginGroup", value.asInstanceOf[js.Any])
     

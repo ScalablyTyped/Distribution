@@ -23,7 +23,8 @@ object InfoOptions {
     __obj.asInstanceOf[InfoOptions]
   }
   
-  extension [Self <: InfoOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InfoOptions] (val x: Self) extends AnyVal {
     
     inline def setAuthor(value: String): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
     

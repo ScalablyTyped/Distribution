@@ -37,7 +37,8 @@ object Office {
     __obj.asInstanceOf[Office]
   }
   
-  extension [Self <: Office](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Office] (val x: Self) extends AnyVal {
     
     inline def setDivisionId(value: String): Self = StObject.set(x, "divisionId", value.asInstanceOf[js.Any])
     

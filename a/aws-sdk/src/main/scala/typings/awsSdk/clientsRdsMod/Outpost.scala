@@ -18,7 +18,8 @@ object Outpost {
     __obj.asInstanceOf[Outpost]
   }
   
-  extension [Self <: Outpost](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Outpost] (val x: Self) extends AnyVal {
     
     inline def setArn(value: String): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     

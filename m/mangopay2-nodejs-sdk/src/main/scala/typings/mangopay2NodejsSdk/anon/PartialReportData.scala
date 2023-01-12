@@ -48,7 +48,8 @@ object PartialReportData {
     __obj.asInstanceOf[PartialReportData]
   }
   
-  extension [Self <: PartialReportData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialReportData] (val x: Self) extends AnyVal {
     
     inline def setCallbackURL(value: String): Self = StObject.set(x, "CallbackURL", value.asInstanceOf[js.Any])
     

@@ -44,7 +44,8 @@ object JWTClaimVerificationOptions {
     __obj.asInstanceOf[JWTClaimVerificationOptions]
   }
   
-  extension [Self <: JWTClaimVerificationOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JWTClaimVerificationOptions] (val x: Self) extends AnyVal {
     
     inline def setAudience(value: String | js.Array[String]): Self = StObject.set(x, "audience", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object RevokedCertificateJson {
     __obj.asInstanceOf[RevokedCertificateJson]
   }
   
-  extension [Self <: RevokedCertificateJson](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RevokedCertificateJson] (val x: Self) extends AnyVal {
     
     inline def setCrlEntryExtensions(value: ExtensionsJson): Self = StObject.set(x, "crlEntryExtensions", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object GetClientGrantsOptionsPaged {
     __obj.asInstanceOf[GetClientGrantsOptionsPaged]
   }
   
-  extension [Self <: GetClientGrantsOptionsPaged](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetClientGrantsOptionsPaged] (val x: Self) extends AnyVal {
     
     inline def setInclude_totals(value: Boolean): Self = StObject.set(x, "include_totals", value.asInstanceOf[js.Any])
     

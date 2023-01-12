@@ -32,7 +32,8 @@ object DepthTextureProvider {
     __obj.asInstanceOf[DepthTextureProvider]
   }
   
-  extension [Self <: DepthTextureProvider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DepthTextureProvider] (val x: Self) extends AnyVal {
     
     inline def setGetDepth(value: vec2 => Double): Self = StObject.set(x, "getDepth", js.Any.fromFunction1(value))
   }

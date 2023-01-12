@@ -75,7 +75,8 @@ object RangeViewUpdateData {
     __obj.asInstanceOf[RangeViewUpdateData]
   }
   
-  extension [Self <: RangeViewUpdateData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RangeViewUpdateData] (val x: Self) extends AnyVal {
     
     inline def setFormulas(value: js.Array[js.Array[Any]]): Self = StObject.set(x, "formulas", value.asInstanceOf[js.Any])
     

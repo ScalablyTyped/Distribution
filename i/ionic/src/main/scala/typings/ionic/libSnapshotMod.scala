@@ -50,7 +50,8 @@ object libSnapshotMod {
       __obj.asInstanceOf[SnapshotClientDeps]
     }
     
-    extension [Self <: SnapshotClientDeps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SnapshotClientDeps] (val x: Self) extends AnyVal {
       
       inline def setApp(value: IdString): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
       

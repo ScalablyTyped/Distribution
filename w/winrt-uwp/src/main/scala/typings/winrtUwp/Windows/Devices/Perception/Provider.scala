@@ -57,7 +57,8 @@ object Provider {
       __obj.asInstanceOf[IPerceptionFrameProvider]
     }
     
-    extension [Self <: IPerceptionFrameProvider](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPerceptionFrameProvider] (val x: Self) extends AnyVal {
       
       inline def setAvailable(value: Boolean): Self = StObject.set(x, "available", value.asInstanceOf[js.Any])
       
@@ -92,7 +93,8 @@ object Provider {
       __obj.asInstanceOf[IPerceptionFrameProviderManager]
     }
     
-    extension [Self <: IPerceptionFrameProviderManager](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPerceptionFrameProviderManager] (val x: Self) extends AnyVal {
       
       inline def setGetFrameProvider(value: PerceptionFrameProviderInfo => IPerceptionFrameProvider): Self = StObject.set(x, "getFrameProvider", js.Any.fromFunction1(value))
     }
@@ -114,7 +116,8 @@ object Provider {
       __obj.asInstanceOf[PerceptionControlGroup]
     }
     
-    extension [Self <: PerceptionControlGroup](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PerceptionControlGroup] (val x: Self) extends AnyVal {
       
       inline def setFrameProviderIds(value: IVectorView[String]): Self = StObject.set(x, "frameProviderIds", value.asInstanceOf[js.Any])
     }
@@ -139,7 +142,8 @@ object Provider {
       __obj.asInstanceOf[PerceptionCorrelation]
     }
     
-    extension [Self <: PerceptionCorrelation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PerceptionCorrelation] (val x: Self) extends AnyVal {
       
       inline def setOrientation(value: Quaternion): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
       
@@ -162,7 +166,8 @@ object Provider {
       __obj.asInstanceOf[PerceptionCorrelationGroup]
     }
     
-    extension [Self <: PerceptionCorrelationGroup](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PerceptionCorrelationGroup] (val x: Self) extends AnyVal {
       
       inline def setRelativeLocations(value: IVectorView[PerceptionCorrelation]): Self = StObject.set(x, "relativeLocations", value.asInstanceOf[js.Any])
     }
@@ -181,7 +186,8 @@ object Provider {
       __obj.asInstanceOf[PerceptionFaceAuthenticationGroup]
     }
     
-    extension [Self <: PerceptionFaceAuthenticationGroup](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PerceptionFaceAuthenticationGroup] (val x: Self) extends AnyVal {
       
       inline def setFrameProviderIds(value: IVectorView[String]): Self = StObject.set(x, "frameProviderIds", value.asInstanceOf[js.Any])
     }
@@ -206,7 +212,8 @@ object Provider {
       __obj.asInstanceOf[PerceptionFrame]
     }
     
-    extension [Self <: PerceptionFrame](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PerceptionFrame] (val x: Self) extends AnyVal {
       
       inline def setFrameData(value: IMemoryBuffer): Self = StObject.set(x, "frameData", value.asInstanceOf[js.Any])
       
@@ -241,7 +248,8 @@ object Provider {
       __obj.asInstanceOf[PerceptionFrameProviderInfo]
     }
     
-    extension [Self <: PerceptionFrameProviderInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PerceptionFrameProviderInfo] (val x: Self) extends AnyVal {
       
       inline def setDeviceKind(value: String): Self = StObject.set(x, "deviceKind", value.asInstanceOf[js.Any])
       
@@ -288,7 +296,8 @@ object Provider {
       __obj.asInstanceOf[PerceptionPropertyChangeRequest]
     }
     
-    extension [Self <: PerceptionPropertyChangeRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PerceptionPropertyChangeRequest] (val x: Self) extends AnyVal {
       
       inline def setGetDeferral(value: () => Deferral): Self = StObject.set(x, "getDeferral", js.Any.fromFunction0(value))
       
@@ -336,7 +345,8 @@ object Provider {
       __obj.asInstanceOf[PerceptionVideoFrameAllocator]
     }
     
-    extension [Self <: PerceptionVideoFrameAllocator](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PerceptionVideoFrameAllocator] (val x: Self) extends AnyVal {
       
       inline def setAllocateFrame(value: () => PerceptionFrame): Self = StObject.set(x, "allocateFrame", js.Any.fromFunction0(value))
       

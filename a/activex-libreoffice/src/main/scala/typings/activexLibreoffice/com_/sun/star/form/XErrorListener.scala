@@ -36,7 +36,8 @@ object XErrorListener {
     __obj.asInstanceOf[XErrorListener]
   }
   
-  extension [Self <: XErrorListener](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XErrorListener] (val x: Self) extends AnyVal {
     
     inline def setErrorOccured(value: ErrorEvent => Unit): Self = StObject.set(x, "errorOccured", js.Any.fromFunction1(value))
   }

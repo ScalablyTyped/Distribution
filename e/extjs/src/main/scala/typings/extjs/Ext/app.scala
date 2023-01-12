@@ -68,7 +68,8 @@ object app {
       __obj.asInstanceOf[IApplication]
     }
     
-    extension [Self <: IApplication](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IApplication] (val x: Self) extends AnyVal {
       
       inline def setAppFolder(value: java.lang.String): Self = StObject.set(x, "appFolder", value.asInstanceOf[js.Any])
       
@@ -212,7 +213,8 @@ object app {
       __obj.asInstanceOf[IController]
     }
     
-    extension [Self <: IController](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IController] (val x: Self) extends AnyVal {
       
       inline def setAddRef(value: /* refs */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "addRef", js.Any.fromFunction1(value))
       
@@ -317,7 +319,8 @@ object app {
       __obj.asInstanceOf[IEventDomain]
     }
     
-    extension [Self <: IEventDomain](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IEventDomain] (val x: Self) extends AnyVal {
       
       inline def setIdProperty(value: java.lang.String): Self = StObject.set(x, "idProperty", value.asInstanceOf[js.Any])
       

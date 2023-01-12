@@ -87,7 +87,8 @@ object typesLibSimpleMod {
       __obj.asInstanceOf[Simple]
     }
     
-    extension [Self <: Simple](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Simple] (val x: Self) extends AnyVal {
       
       inline def setEncodeCBOR(value: js.Object => Boolean): Self = StObject.set(x, "encodeCBOR", js.Any.fromFunction1(value))
       

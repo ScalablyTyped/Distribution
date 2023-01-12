@@ -21,7 +21,8 @@ object FlatSeriesObjectValue {
     __obj.asInstanceOf[FlatSeriesObjectValue[T]]
   }
   
-  extension [Self <: FlatSeriesObjectValue[?], T](x: Self & FlatSeriesObjectValue[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FlatSeriesObjectValue[?], T] (val x: Self & FlatSeriesObjectValue[T]) extends AnyVal {
     
     inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object OwnsFilterObject {
     __obj.asInstanceOf[OwnsFilterObject]
   }
   
-  extension [Self <: OwnsFilterObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OwnsFilterObject] (val x: Self) extends AnyVal {
     
     inline def setExcludeExpiring(value: Boolean): Self = StObject.set(x, "excludeExpiring", value.asInstanceOf[js.Any])
     

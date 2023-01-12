@@ -23,7 +23,8 @@ object InstanceDefinition {
     __obj.asInstanceOf[InstanceDefinition]
   }
   
-  extension [Self <: InstanceDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InstanceDefinition] (val x: Self) extends AnyVal {
     
     inline def setInstanceType(value: GameServerGroupInstanceType): Self = StObject.set(x, "InstanceType", value.asInstanceOf[js.Any])
     

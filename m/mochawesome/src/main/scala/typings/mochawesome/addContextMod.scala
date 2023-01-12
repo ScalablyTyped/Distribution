@@ -51,7 +51,8 @@ object addContextMod {
       __obj.asInstanceOf[TestContextObject]
     }
     
-    extension [Self <: TestContextObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TestContextObject] (val x: Self) extends AnyVal {
       
       inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       

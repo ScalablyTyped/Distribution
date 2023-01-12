@@ -44,7 +44,8 @@ object anon {
       __obj.asInstanceOf[OmitAsymmetricMatchersany]
     }
     
-    extension [Self <: OmitAsymmetricMatchersany](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OmitAsymmetricMatchersany] (val x: Self) extends AnyVal {
       
       inline def setArrayContaining(value: /* sample */ js.Array[Any] => AsymmetricMatcher2): Self = StObject.set(x, "arrayContaining", js.Any.fromFunction1(value))
       

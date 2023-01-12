@@ -44,7 +44,8 @@ object ListPopulationTerm {
     __obj.asInstanceOf[ListPopulationTerm]
   }
   
-  extension [Self <: ListPopulationTerm](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListPopulationTerm] (val x: Self) extends AnyVal {
     
     inline def setContains(value: Boolean): Self = StObject.set(x, "contains", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object S3LogsConfiguration {
     __obj.asInstanceOf[S3LogsConfiguration]
   }
   
-  extension [Self <: S3LogsConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: S3LogsConfiguration] (val x: Self) extends AnyVal {
     
     inline def setEnable(value: Boolean): Self = StObject.set(x, "Enable", value.asInstanceOf[js.Any])
   }

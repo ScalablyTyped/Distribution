@@ -31,7 +31,8 @@ object PlotParetoDataSortingOptions {
     __obj.asInstanceOf[PlotParetoDataSortingOptions]
   }
   
-  extension [Self <: PlotParetoDataSortingOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotParetoDataSortingOptions] (val x: Self) extends AnyVal {
     
     inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     

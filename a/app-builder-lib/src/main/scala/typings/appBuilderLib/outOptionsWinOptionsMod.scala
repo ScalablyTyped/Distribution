@@ -140,7 +140,8 @@ object outOptionsWinOptionsMod {
       __obj.asInstanceOf[WindowsConfiguration]
     }
     
-    extension [Self <: WindowsConfiguration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WindowsConfiguration] (val x: Self) extends AnyVal {
       
       inline def setAdditionalCertificateFile(value: String): Self = StObject.set(x, "additionalCertificateFile", value.asInstanceOf[js.Any])
       

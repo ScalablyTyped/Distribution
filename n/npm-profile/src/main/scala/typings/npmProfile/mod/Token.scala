@@ -49,7 +49,8 @@ object Token {
     __obj.asInstanceOf[Token]
   }
   
-  extension [Self <: Token](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Token] (val x: Self) extends AnyVal {
     
     inline def setCidr_whitelist(value: js.Array[String]): Self = StObject.set(x, "cidr_whitelist", value.asInstanceOf[js.Any])
     

@@ -73,7 +73,8 @@ object UpdateCanaryRequest {
     __obj.asInstanceOf[UpdateCanaryRequest]
   }
   
-  extension [Self <: UpdateCanaryRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateCanaryRequest] (val x: Self) extends AnyVal {
     
     inline def setArtifactConfig(value: ArtifactConfigInput): Self = StObject.set(x, "ArtifactConfig", value.asInstanceOf[js.Any])
     

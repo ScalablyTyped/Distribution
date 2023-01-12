@@ -32,7 +32,8 @@ object ResourceUsage {
     __obj.asInstanceOf[ResourceUsage]
   }
   
-  extension [Self <: ResourceUsage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResourceUsage] (val x: Self) extends AnyVal {
     
     inline def setCssStyleSheets(value: MemoryUsageDetails): Self = StObject.set(x, "cssStyleSheets", value.asInstanceOf[js.Any])
     

@@ -46,7 +46,8 @@ object anon {
       __obj.asInstanceOf[`0`]
     }
     
-    extension [Self <: `0`](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: `0`] (val x: Self) extends AnyVal {
       
       inline def setUnit(value: AUTO): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
     }
@@ -66,7 +67,8 @@ object anon {
       __obj.asInstanceOf[`1`]
     }
     
-    extension [Self <: `1`](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: `1`] (val x: Self) extends AnyVal {
       
       inline def setType(value: ON_CLICK | ON_HOVER | ON_PRESS | ON_DRAG): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
@@ -86,7 +88,8 @@ object anon {
       __obj.asInstanceOf[`2`]
     }
     
-    extension [Self <: `2`](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: `2`] (val x: Self) extends AnyVal {
       
       inline def setType(value: NONE): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
@@ -108,7 +111,8 @@ object anon {
       __obj.asInstanceOf[Color]
     }
     
-    extension [Self <: Color](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Color] (val x: Self) extends AnyVal {
       
       inline def setColor(value: RGBA): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -132,7 +136,8 @@ object anon {
       __obj.asInstanceOf[Delay]
     }
     
-    extension [Self <: Delay](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Delay] (val x: Self) extends AnyVal {
       
       inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
       
@@ -166,7 +171,8 @@ object anon {
       __obj.asInstanceOf[DestinationId]
     }
     
-    extension [Self <: DestinationId](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DestinationId] (val x: Self) extends AnyVal {
       
       inline def setDestinationId(value: String): Self = StObject.set(x, "destinationId", value.asInstanceOf[js.Any])
       
@@ -203,7 +209,8 @@ object anon {
       __obj.asInstanceOf[End]
     }
     
-    extension [Self <: End](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: End] (val x: Self) extends AnyVal {
       
       inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
@@ -229,7 +236,8 @@ object anon {
       __obj.asInstanceOf[Timeout]
     }
     
-    extension [Self <: Timeout](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Timeout] (val x: Self) extends AnyVal {
       
       inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
@@ -251,7 +259,8 @@ object anon {
       __obj.asInstanceOf[Type]
     }
     
-    extension [Self <: Type](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Type] (val x: Self) extends AnyVal {
       
       inline def setType(value: BACK | CLOSE): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
@@ -272,7 +281,8 @@ object anon {
       __obj.asInstanceOf[Unit]
     }
     
-    extension [Self <: Unit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Unit] (val x: Self) extends AnyVal {
       
       inline def setUnit(value: PIXELS | PERCENT): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
       
@@ -296,7 +306,8 @@ object anon {
       __obj.asInstanceOf[Url]
     }
     
-    extension [Self <: Url](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Url] (val x: Self) extends AnyVal {
       
       inline def setType(value: URL): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       

@@ -26,7 +26,8 @@ object StartupRenderContext {
     __obj.asInstanceOf[StartupRenderContext]
   }
   
-  extension [Self <: StartupRenderContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartupRenderContext] (val x: Self) extends AnyVal {
     
     inline def setInlined(value: Boolean): Self = StObject.set(x, "inlined", value.asInstanceOf[js.Any])
   }

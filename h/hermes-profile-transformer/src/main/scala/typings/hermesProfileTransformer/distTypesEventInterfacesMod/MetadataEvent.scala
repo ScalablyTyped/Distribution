@@ -20,7 +20,8 @@ object MetadataEvent {
     __obj.asInstanceOf[MetadataEvent]
   }
   
-  extension [Self <: MetadataEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MetadataEvent] (val x: Self) extends AnyVal {
     
     inline def setPh(value: METADATA_EVENTS): Self = StObject.set(x, "ph", value.asInstanceOf[js.Any])
   }

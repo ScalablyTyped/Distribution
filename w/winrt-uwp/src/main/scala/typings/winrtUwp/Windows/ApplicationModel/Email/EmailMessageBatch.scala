@@ -21,7 +21,8 @@ object EmailMessageBatch {
     __obj.asInstanceOf[EmailMessageBatch]
   }
   
-  extension [Self <: EmailMessageBatch](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EmailMessageBatch] (val x: Self) extends AnyVal {
     
     inline def setMessages(value: IVectorView[EmailMessage]): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
     

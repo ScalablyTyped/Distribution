@@ -19,7 +19,8 @@ object ScoringConfig {
     __obj.asInstanceOf[ScoringConfig]
   }
   
-  extension [Self <: ScoringConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScoringConfig] (val x: Self) extends AnyVal {
     
     inline def setDisableFreshness(value: Boolean): Self = StObject.set(x, "disableFreshness", value.asInstanceOf[js.Any])
     

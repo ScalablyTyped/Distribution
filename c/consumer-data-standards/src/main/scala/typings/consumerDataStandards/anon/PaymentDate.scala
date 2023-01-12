@@ -21,7 +21,8 @@ object PaymentDate {
     __obj.asInstanceOf[PaymentDate]
   }
   
-  extension [Self <: PaymentDate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PaymentDate] (val x: Self) extends AnyVal {
     
     inline def setPaymentDate(value: String): Self = StObject.set(x, "paymentDate", value.asInstanceOf[js.Any])
   }

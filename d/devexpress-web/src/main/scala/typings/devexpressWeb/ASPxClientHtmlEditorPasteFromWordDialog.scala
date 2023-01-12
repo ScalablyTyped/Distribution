@@ -28,7 +28,8 @@ object ASPxClientHtmlEditorPasteFromWordDialog {
     __obj.asInstanceOf[ASPxClientHtmlEditorPasteFromWordDialog]
   }
   
-  extension [Self <: ASPxClientHtmlEditorPasteFromWordDialog](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientHtmlEditorPasteFromWordDialog] (val x: Self) extends AnyVal {
     
     inline def setGetRemoveFontFamilyCheckBox(value: () => ASPxClientCheckBox): Self = StObject.set(x, "GetRemoveFontFamilyCheckBox", js.Any.fromFunction0(value))
   }

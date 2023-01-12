@@ -83,7 +83,8 @@ object typesSpecLayoutMod {
       __obj.asInstanceOf[LayoutParams]
     }
     
-    extension [Self <: LayoutParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LayoutParams] (val x: Self) extends AnyVal {
       
       inline def setAlign(value: LayoutAlign | SignalRef | RowColumn[LayoutAlign]): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       
@@ -148,7 +149,8 @@ object typesSpecLayoutMod {
       __obj.asInstanceOf[RowColumn[T]]
     }
     
-    extension [Self <: RowColumn[?], T](x: Self & RowColumn[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RowColumn[?], T] (val x: Self & RowColumn[T]) extends AnyVal {
       
       inline def setColumn(value: T | SignalRef): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       

@@ -15,7 +15,8 @@ object LayoutSections {
     __obj.asInstanceOf[LayoutSections]
   }
   
-  extension [Self <: LayoutSections](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LayoutSections] (val x: Self) extends AnyVal {
     
     inline def setSections(value: SectionsList): Self = StObject.set(x, "sections", value.asInstanceOf[js.Any])
     

@@ -113,7 +113,8 @@ object TimePickerProps {
     __obj.asInstanceOf[TimePickerProps]
   }
   
-  extension [Self <: TimePickerProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimePickerProps] (val x: Self) extends AnyVal {
     
     inline def setAutoOk(value: Boolean): Self = StObject.set(x, "autoOk", value.asInstanceOf[js.Any])
     

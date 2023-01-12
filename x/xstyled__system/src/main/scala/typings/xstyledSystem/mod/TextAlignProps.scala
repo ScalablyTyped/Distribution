@@ -16,7 +16,8 @@ object TextAlignProps {
     __obj.asInstanceOf[TextAlignProps]
   }
   
-  extension [Self <: TextAlignProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextAlignProps] (val x: Self) extends AnyVal {
     
     inline def setTextAlign(value: ResponsiveValue[TextAlign]): Self = StObject.set(x, "textAlign", value.asInstanceOf[js.Any])
     

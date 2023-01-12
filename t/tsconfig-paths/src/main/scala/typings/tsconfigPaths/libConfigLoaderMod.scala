@@ -35,7 +35,8 @@ object libConfigLoaderMod {
       __obj.asInstanceOf[ConfigLoaderFailResult]
     }
     
-    extension [Self <: ConfigLoaderFailResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConfigLoaderFailResult] (val x: Self) extends AnyVal {
       
       inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
@@ -58,7 +59,8 @@ object libConfigLoaderMod {
       __obj.asInstanceOf[ConfigLoaderParams]
     }
     
-    extension [Self <: ConfigLoaderParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConfigLoaderParams] (val x: Self) extends AnyVal {
       
       inline def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
       
@@ -115,7 +117,8 @@ object libConfigLoaderMod {
       __obj.asInstanceOf[ConfigLoaderSuccessResult]
     }
     
-    extension [Self <: ConfigLoaderSuccessResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConfigLoaderSuccessResult] (val x: Self) extends AnyVal {
       
       inline def setAbsoluteBaseUrl(value: String): Self = StObject.set(x, "absoluteBaseUrl", value.asInstanceOf[js.Any])
       
@@ -158,7 +161,8 @@ object libConfigLoaderMod {
       __obj.asInstanceOf[ExplicitParams]
     }
     
-    extension [Self <: ExplicitParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExplicitParams] (val x: Self) extends AnyVal {
       
       inline def setAddMatchAll(value: Boolean): Self = StObject.set(x, "addMatchAll", value.asInstanceOf[js.Any])
       

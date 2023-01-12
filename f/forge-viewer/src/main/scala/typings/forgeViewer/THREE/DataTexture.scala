@@ -54,7 +54,8 @@ object DataTexture {
     __obj.asInstanceOf[DataTexture]
   }
   
-  extension [Self <: DataTexture](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataTexture] (val x: Self) extends AnyVal {
     
     inline def setCopy(value: DataTexture => DataTexture): Self = StObject.set(x, "copy", js.Any.fromFunction1(value))
     

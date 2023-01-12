@@ -61,7 +61,8 @@ object distCompileErrorsMod {
       __obj.asInstanceOf[ErrorPaths]
     }
     
-    extension [Self <: ErrorPaths](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ErrorPaths] (val x: Self) extends AnyVal {
       
       inline def setInstancePath(value: Code): Self = StObject.set(x, "instancePath", value.asInstanceOf[js.Any])
       

@@ -22,7 +22,8 @@ object FlattenedJWS {
     __obj.asInstanceOf[FlattenedJWS]
   }
   
-  extension [Self <: FlattenedJWS](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FlattenedJWS] (val x: Self) extends AnyVal {
     
     inline def setHeader(value: JWSHeaderParameters): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
     

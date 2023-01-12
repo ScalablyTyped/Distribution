@@ -48,7 +48,8 @@ object IPickle {
     __obj.asInstanceOf[IPickle]
   }
   
-  extension [Self <: IPickle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPickle] (val x: Self) extends AnyVal {
     
     inline def setAstNodeIds(value: js.Array[String]): Self = StObject.set(x, "astNodeIds", value.asInstanceOf[js.Any])
     

@@ -16,7 +16,8 @@ object EditorDirectedDeletionOptions {
     __obj.asInstanceOf[EditorDirectedDeletionOptions]
   }
   
-  extension [Self <: EditorDirectedDeletionOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EditorDirectedDeletionOptions] (val x: Self) extends AnyVal {
     
     inline def setUnit(value: TextUnit): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
     

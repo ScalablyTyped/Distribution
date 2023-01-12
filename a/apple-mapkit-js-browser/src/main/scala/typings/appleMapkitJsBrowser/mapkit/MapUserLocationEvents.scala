@@ -22,7 +22,8 @@ object MapUserLocationEvents {
     __obj.asInstanceOf[MapUserLocationEvents[T]]
   }
   
-  extension [Self <: MapUserLocationEvents[?], T](x: Self & MapUserLocationEvents[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MapUserLocationEvents[?], T] (val x: Self & MapUserLocationEvents[T]) extends AnyVal {
     
     inline def `setUser-location-change`(value: EventBase[T] & Timestamp): Self = StObject.set(x, "user-location-change", value.asInstanceOf[js.Any])
     

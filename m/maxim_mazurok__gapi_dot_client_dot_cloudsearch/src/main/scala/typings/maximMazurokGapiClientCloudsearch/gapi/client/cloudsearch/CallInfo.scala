@@ -113,7 +113,8 @@ object CallInfo {
     __obj.asInstanceOf[CallInfo]
   }
   
-  extension [Self <: CallInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CallInfo] (val x: Self) extends AnyVal {
     
     inline def setAbuseReportingConfig(value: AbuseReportingConfig): Self = StObject.set(x, "abuseReportingConfig", value.asInstanceOf[js.Any])
     

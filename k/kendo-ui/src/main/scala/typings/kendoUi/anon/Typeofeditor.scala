@@ -17,7 +17,8 @@ object Typeofeditor {
     __obj.asInstanceOf[Typeofeditor]
   }
   
-  extension [Self <: Typeofeditor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Typeofeditor] (val x: Self) extends AnyVal {
     
     inline def setToolbar(value: Instantiable0[Toolbar]): Self = StObject.set(x, "Toolbar", value.asInstanceOf[js.Any])
   }

@@ -28,7 +28,8 @@ object MonthLegend {
     __obj.asInstanceOf[MonthLegend]
   }
   
-  extension [Self <: MonthLegend](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MonthLegend] (val x: Self) extends AnyVal {
     
     inline def setBbox(value: BBox): Self = StObject.set(x, "bbox", value.asInstanceOf[js.Any])
     

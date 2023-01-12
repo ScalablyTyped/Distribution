@@ -43,7 +43,8 @@ object JobConfig {
     __obj.asInstanceOf[JobConfig]
   }
   
-  extension [Self <: JobConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JobConfig] (val x: Self) extends AnyVal {
     
     inline def setAdBreaks(value: js.Array[AdBreak]): Self = StObject.set(x, "adBreaks", value.asInstanceOf[js.Any])
     

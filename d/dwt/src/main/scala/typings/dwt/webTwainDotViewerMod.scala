@@ -40,7 +40,8 @@ object webTwainDotViewerMod {
       __obj.asInstanceOf[BasicViewerConfig]
     }
     
-    extension [Self <: BasicViewerConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BasicViewerConfig] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double | String): Self = StObject.set(x, "Height", value.asInstanceOf[js.Any])
       
@@ -70,7 +71,8 @@ object webTwainDotViewerMod {
       __obj.asInstanceOf[ContentView]
     }
     
-    extension [Self <: ContentView](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContentView] (val x: Self) extends AnyVal {
       
       inline def setBShow(value: Boolean): Self = StObject.set(x, "bShow", value.asInstanceOf[js.Any])
       
@@ -243,7 +245,8 @@ object webTwainDotViewerMod {
       __obj.asInstanceOf[ViewerConfig]
     }
     
-    extension [Self <: ViewerConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ViewerConfig] (val x: Self) extends AnyVal {
       
       inline def setButtonResize(value: IfResize): Self = StObject.set(x, "buttonResize", value.asInstanceOf[js.Any])
       

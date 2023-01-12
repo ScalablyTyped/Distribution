@@ -99,7 +99,8 @@ object List {
     __obj.asInstanceOf[typings.fhir.r3Mod.List]
   }
   
-  extension [Self <: typings.fhir.r3Mod.List](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: typings.fhir.r3Mod.List] (val x: Self) extends AnyVal {
     
     inline def setCode(value: CodeableConcept): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     

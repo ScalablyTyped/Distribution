@@ -53,7 +53,8 @@ object ChangeSetSummaryListItem {
     __obj.asInstanceOf[ChangeSetSummaryListItem]
   }
   
-  extension [Self <: ChangeSetSummaryListItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChangeSetSummaryListItem] (val x: Self) extends AnyVal {
     
     inline def setChangeSetArn(value: ARN): Self = StObject.set(x, "ChangeSetArn", value.asInstanceOf[js.Any])
     

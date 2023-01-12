@@ -43,7 +43,8 @@ object BuyerCreativeId {
     __obj.asInstanceOf[BuyerCreativeId]
   }
   
-  extension [Self <: BuyerCreativeId](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BuyerCreativeId] (val x: Self) extends AnyVal {
     
     inline def setAccountId(value: Double): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object NothingMatcher {
     __obj.asInstanceOf[NothingMatcher]
   }
   
-  extension [Self <: NothingMatcher](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NothingMatcher] (val x: Self) extends AnyVal {
     
     inline def setNothing(value: () => Unit): Self = StObject.set(x, "nothing", js.Any.fromFunction0(value))
   }

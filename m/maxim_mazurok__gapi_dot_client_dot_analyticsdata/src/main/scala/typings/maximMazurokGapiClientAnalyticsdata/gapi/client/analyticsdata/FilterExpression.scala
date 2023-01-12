@@ -25,7 +25,8 @@ object FilterExpression {
     __obj.asInstanceOf[FilterExpression]
   }
   
-  extension [Self <: FilterExpression](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FilterExpression] (val x: Self) extends AnyVal {
     
     inline def setAndGroup(value: FilterExpressionList): Self = StObject.set(x, "andGroup", value.asInstanceOf[js.Any])
     

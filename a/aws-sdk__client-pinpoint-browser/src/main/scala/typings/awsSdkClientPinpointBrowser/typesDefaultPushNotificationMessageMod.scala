@@ -56,7 +56,8 @@ object typesDefaultPushNotificationMessageMod {
       __obj.asInstanceOf[DefaultPushNotificationMessage]
     }
     
-    extension [Self <: DefaultPushNotificationMessage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DefaultPushNotificationMessage] (val x: Self) extends AnyVal {
       
       inline def setAction(value: OPEN_APP | DEEP_LINK | URL | String): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
       
@@ -113,7 +114,8 @@ object typesDefaultPushNotificationMessageMod {
       __obj.asInstanceOf[UnmarshalledDefaultPushNotificationMessage]
     }
     
-    extension [Self <: UnmarshalledDefaultPushNotificationMessage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnmarshalledDefaultPushNotificationMessage] (val x: Self) extends AnyVal {
       
       inline def setData(value: StringDictionary[String]): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
       

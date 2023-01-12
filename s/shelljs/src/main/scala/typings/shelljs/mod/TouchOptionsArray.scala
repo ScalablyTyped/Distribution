@@ -17,7 +17,8 @@ object TouchOptionsArray {
     __obj.asInstanceOf[TouchOptionsArray]
   }
   
-  extension [Self <: TouchOptionsArray](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TouchOptionsArray] (val x: Self) extends AnyVal {
     
     inline def `set-d`(value: String): Self = StObject.set(x, "-d", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object BatchDisassociateClientDeviceFromCoreDeviceResponse {
     __obj.asInstanceOf[BatchDisassociateClientDeviceFromCoreDeviceResponse]
   }
   
-  extension [Self <: BatchDisassociateClientDeviceFromCoreDeviceResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchDisassociateClientDeviceFromCoreDeviceResponse] (val x: Self) extends AnyVal {
     
     inline def setErrorEntries(value: DisassociateClientDeviceFromCoreDeviceErrorList): Self = StObject.set(x, "errorEntries", value.asInstanceOf[js.Any])
     

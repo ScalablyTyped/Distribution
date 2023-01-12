@@ -33,7 +33,8 @@ object ApplyAttributesTypedSetter {
     __obj.asInstanceOf[ApplyAttributesTypedSetter[WidgetConstructor]]
   }
   
-  extension [Self <: ApplyAttributesTypedSetter[?], WidgetConstructor /* <: BaseConstructor[Widget[Any]] */](x: Self & ApplyAttributesTypedSetter[WidgetConstructor]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApplyAttributesTypedSetter[?], WidgetConstructor /* <: BaseConstructor[Widget[Any]] */] (val x: Self & ApplyAttributesTypedSetter[WidgetConstructor]) extends AnyVal {
     
     inline def setAttr(
       value: Attributes[

@@ -32,7 +32,8 @@ object JssOptions {
     __obj.asInstanceOf[JssOptions]
   }
   
-  extension [Self <: JssOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JssOptions] (val x: Self) extends AnyVal {
     
     inline def setCreateGenerateId(value: /* options */ js.UndefOr[CreateGenerateIdOptions] => GenerateId): Self = StObject.set(x, "createGenerateId", js.Any.fromFunction1(value))
     

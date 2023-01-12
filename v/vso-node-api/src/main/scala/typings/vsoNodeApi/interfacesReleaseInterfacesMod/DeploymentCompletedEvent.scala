@@ -30,7 +30,8 @@ object DeploymentCompletedEvent {
     __obj.asInstanceOf[DeploymentCompletedEvent]
   }
   
-  extension [Self <: DeploymentCompletedEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeploymentCompletedEvent] (val x: Self) extends AnyVal {
     
     inline def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
     

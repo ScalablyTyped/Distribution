@@ -19,7 +19,8 @@ object DataTableHeader {
     __obj.asInstanceOf[DataTableHeader[K]]
   }
   
-  extension [Self <: DataTableHeader[?], K /* <: String */](x: Self & DataTableHeader[K]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataTableHeader[?], K /* <: String */] (val x: Self & DataTableHeader[K]) extends AnyVal {
     
     inline def setHeader(value: NonNullable[ReactNode]): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
     

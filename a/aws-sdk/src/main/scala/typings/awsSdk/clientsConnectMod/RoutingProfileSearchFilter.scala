@@ -15,7 +15,8 @@ object RoutingProfileSearchFilter {
     __obj.asInstanceOf[RoutingProfileSearchFilter]
   }
   
-  extension [Self <: RoutingProfileSearchFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RoutingProfileSearchFilter] (val x: Self) extends AnyVal {
     
     inline def setTagFilter(value: ControlPlaneTagFilter): Self = StObject.set(x, "TagFilter", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object ReturnNames {
     __obj.asInstanceOf[ReturnNames]
   }
   
-  extension [Self <: ReturnNames](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReturnNames] (val x: Self) extends AnyVal {
     
     inline def setReturnNames(value: js.Array[String]): Self = StObject.set(x, "returnNames", value.asInstanceOf[js.Any])
     

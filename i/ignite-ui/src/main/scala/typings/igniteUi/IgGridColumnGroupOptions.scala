@@ -43,7 +43,8 @@ object IgGridColumnGroupOptions {
     __obj.asInstanceOf[IgGridColumnGroupOptions]
   }
   
-  extension [Self <: IgGridColumnGroupOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgGridColumnGroupOptions] (val x: Self) extends AnyVal {
     
     inline def setAllowGroupCollapsing(value: Boolean): Self = StObject.set(x, "allowGroupCollapsing", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object FixedModeScheduleActionStartSettings {
     __obj.asInstanceOf[FixedModeScheduleActionStartSettings]
   }
   
-  extension [Self <: FixedModeScheduleActionStartSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FixedModeScheduleActionStartSettings] (val x: Self) extends AnyVal {
     
     inline def setTime(value: string): Self = StObject.set(x, "Time", value.asInstanceOf[js.Any])
   }

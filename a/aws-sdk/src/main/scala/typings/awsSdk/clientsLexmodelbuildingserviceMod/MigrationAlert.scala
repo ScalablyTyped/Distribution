@@ -33,7 +33,8 @@ object MigrationAlert {
     __obj.asInstanceOf[MigrationAlert]
   }
   
-  extension [Self <: MigrationAlert](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MigrationAlert] (val x: Self) extends AnyVal {
     
     inline def setDetails(value: MigrationAlertDetails): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object CalloutOpenOptions {
     __obj.asInstanceOf[CalloutOpenOptions]
   }
   
-  extension [Self <: CalloutOpenOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CalloutOpenOptions] (val x: Self) extends AnyVal {
     
     inline def setCloseCalloutOnBlur(value: Boolean): Self = StObject.set(x, "closeCalloutOnBlur", value.asInstanceOf[js.Any])
     

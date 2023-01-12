@@ -19,7 +19,8 @@ object WorldTrackingCapabilities {
     __obj.asInstanceOf[WorldTrackingCapabilities]
   }
   
-  extension [Self <: WorldTrackingCapabilities](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorldTrackingCapabilities] (val x: Self) extends AnyVal {
     
     inline def setSceneReconstructionSupported(value: Boolean): Self = StObject.set(x, "sceneReconstructionSupported", value.asInstanceOf[js.Any])
   }

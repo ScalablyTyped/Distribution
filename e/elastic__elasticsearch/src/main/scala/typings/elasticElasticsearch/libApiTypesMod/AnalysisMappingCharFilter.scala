@@ -24,7 +24,8 @@ object AnalysisMappingCharFilter {
     __obj.asInstanceOf[AnalysisMappingCharFilter]
   }
   
-  extension [Self <: AnalysisMappingCharFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnalysisMappingCharFilter] (val x: Self) extends AnyVal {
     
     inline def setMappings(value: js.Array[String]): Self = StObject.set(x, "mappings", value.asInstanceOf[js.Any])
     

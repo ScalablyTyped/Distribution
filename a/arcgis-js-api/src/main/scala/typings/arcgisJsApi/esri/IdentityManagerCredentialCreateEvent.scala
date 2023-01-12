@@ -15,7 +15,8 @@ object IdentityManagerCredentialCreateEvent {
     __obj.asInstanceOf[IdentityManagerCredentialCreateEvent]
   }
   
-  extension [Self <: IdentityManagerCredentialCreateEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IdentityManagerCredentialCreateEvent] (val x: Self) extends AnyVal {
     
     inline def setCredential(value: Credential): Self = StObject.set(x, "credential", value.asInstanceOf[js.Any])
   }

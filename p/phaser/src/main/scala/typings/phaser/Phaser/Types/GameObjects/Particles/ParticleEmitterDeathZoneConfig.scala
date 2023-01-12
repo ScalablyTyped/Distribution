@@ -23,7 +23,8 @@ object ParticleEmitterDeathZoneConfig {
     __obj.asInstanceOf[ParticleEmitterDeathZoneConfig]
   }
   
-  extension [Self <: ParticleEmitterDeathZoneConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParticleEmitterDeathZoneConfig] (val x: Self) extends AnyVal {
     
     inline def setSource(value: DeathZoneSource): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     

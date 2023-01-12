@@ -18,7 +18,8 @@ object ShapeEncodeEntry {
     __obj.asInstanceOf[ShapeEncodeEntry]
   }
   
-  extension [Self <: ShapeEncodeEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShapeEncodeEntry] (val x: Self) extends AnyVal {
     
     inline def setShape(value: ProductionRule[StringValueRef]): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
     

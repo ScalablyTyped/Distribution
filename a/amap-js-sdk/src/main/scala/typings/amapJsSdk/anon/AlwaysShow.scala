@@ -23,7 +23,8 @@ object AlwaysShow {
     __obj.asInstanceOf[AlwaysShow]
   }
   
-  extension [Self <: AlwaysShow](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AlwaysShow] (val x: Self) extends AnyVal {
     
     inline def setAlwaysShow(value: Boolean): Self = StObject.set(x, "alwaysShow", value.asInstanceOf[js.Any])
     

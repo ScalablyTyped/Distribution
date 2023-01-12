@@ -20,7 +20,8 @@ object DropDownListSelectEvent {
     __obj.asInstanceOf[DropDownListSelectEvent]
   }
   
-  extension [Self <: DropDownListSelectEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DropDownListSelectEvent] (val x: Self) extends AnyVal {
     
     inline def setDataItem(value: Any): Self = StObject.set(x, "dataItem", value.asInstanceOf[js.Any])
     

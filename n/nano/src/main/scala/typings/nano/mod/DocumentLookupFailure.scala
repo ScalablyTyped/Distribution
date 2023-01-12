@@ -18,7 +18,8 @@ object DocumentLookupFailure {
     __obj.asInstanceOf[DocumentLookupFailure]
   }
   
-  extension [Self <: DocumentLookupFailure](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DocumentLookupFailure] (val x: Self) extends AnyVal {
     
     inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     

@@ -69,7 +69,8 @@ object omnibox {
       __obj.asInstanceOf[SuggestResult]
     }
     
-    extension [Self <: SuggestResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SuggestResult] (val x: Self) extends AnyVal {
       
       inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
@@ -93,7 +94,8 @@ object omnibox {
       __obj.asInstanceOf[Suggestion]
     }
     
-    extension [Self <: Suggestion](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Suggestion] (val x: Self) extends AnyVal {
       
       inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     }

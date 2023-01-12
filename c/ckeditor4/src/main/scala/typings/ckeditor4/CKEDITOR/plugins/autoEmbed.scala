@@ -17,7 +17,8 @@ object autoEmbed {
     __obj.asInstanceOf[autoEmbed]
   }
   
-  extension [Self <: autoEmbed](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: autoEmbed] (val x: Self) extends AnyVal {
     
     inline def setGetWidgetDefinition(value: (editor, String) => definition): Self = StObject.set(x, "getWidgetDefinition", js.Any.fromFunction2(value))
   }

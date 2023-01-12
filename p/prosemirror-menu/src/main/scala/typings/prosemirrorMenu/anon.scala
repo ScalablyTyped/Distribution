@@ -47,7 +47,8 @@ object anon {
       __obj.asInstanceOf[Class]
     }
     
-    extension [Self <: Class](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Class] (val x: Self) extends AnyVal {
       
       inline def setClass(value: String): Self = StObject.set(x, "class", value.asInstanceOf[js.Any])
       
@@ -89,7 +90,8 @@ object anon {
       __obj.asInstanceOf[Content]
     }
     
-    extension [Self <: Content](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Content] (val x: Self) extends AnyVal {
       
       inline def setContent(value: js.Array[js.Array[MenuElement]]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
@@ -116,7 +118,8 @@ object anon {
       __obj.asInstanceOf[Css]
     }
     
-    extension [Self <: Css](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Css] (val x: Self) extends AnyVal {
       
       inline def setCss(value: String): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
       
@@ -139,7 +142,8 @@ object anon {
       __obj.asInstanceOf[Dom]
     }
     
-    extension [Self <: Dom](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Dom] (val x: Self) extends AnyVal {
       
       inline def setDom(value: HTMLElement): Self = StObject.set(x, "dom", value.asInstanceOf[js.Any])
       
@@ -160,7 +164,8 @@ object anon {
       __obj.asInstanceOf[DomNode]
     }
     
-    extension [Self <: DomNode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DomNode] (val x: Self) extends AnyVal {
       
       inline def setDom(value: Node): Self = StObject.set(x, "dom", value.asInstanceOf[js.Any])
     }
@@ -183,7 +188,8 @@ object anon {
       __obj.asInstanceOf[Height]
     }
     
-    extension [Self <: Height](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Height] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -207,7 +213,8 @@ object anon {
       __obj.asInstanceOf[Label]
     }
     
-    extension [Self <: Label](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Label] (val x: Self) extends AnyVal {
       
       inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
@@ -255,7 +262,8 @@ object anon {
       __obj.asInstanceOf[PartialMenuItemSpecattrsA]
     }
     
-    extension [Self <: PartialMenuItemSpecattrsA](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialMenuItemSpecattrsA] (val x: Self) extends AnyVal {
       
       inline def setActive(value: /* state */ EditorState => Boolean): Self = StObject.set(x, "active", js.Any.fromFunction1(value))
       
@@ -322,7 +330,8 @@ object anon {
       __obj.asInstanceOf[Update]
     }
     
-    extension [Self <: Update](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Update] (val x: Self) extends AnyVal {
       
       inline def setDom(value: DocumentFragment): Self = StObject.set(x, "dom", value.asInstanceOf[js.Any])
       

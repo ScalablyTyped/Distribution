@@ -82,7 +82,8 @@ object OtherZero {
     __obj.asInstanceOf[OtherZero]
   }
   
-  extension [Self <: OtherZero](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OtherZero] (val x: Self) extends AnyVal {
     
     inline def setOne(
       value: js.Tuple5[typings.makePlural.makePluralStrings.`1`, `1Dot0`, `1Dot00`, `1Dot000`, `1Dot0000`]

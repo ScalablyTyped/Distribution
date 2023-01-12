@@ -24,7 +24,8 @@ object CordovaAppVersionPlugin {
       __obj.asInstanceOf[typings.cordovaAppVersionPlugin.CordovaAppVersionPlugin.CordovaAppVersionPlugin]
     }
     
-    extension [Self <: typings.cordovaAppVersionPlugin.CordovaAppVersionPlugin.CordovaAppVersionPlugin](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.cordovaAppVersionPlugin.CordovaAppVersionPlugin.CordovaAppVersionPlugin] (val x: Self) extends AnyVal {
       
       inline def setGetAppVersion(value: () => String): Self = StObject.set(x, "getAppVersion", js.Any.fromFunction0(value))
     }

@@ -57,7 +57,8 @@ object VoxelSlice {
     __obj.asInstanceOf[VoxelSlice]
   }
   
-  extension [Self <: VoxelSlice](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VoxelSlice] (val x: Self) extends AnyVal {
     
     inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     

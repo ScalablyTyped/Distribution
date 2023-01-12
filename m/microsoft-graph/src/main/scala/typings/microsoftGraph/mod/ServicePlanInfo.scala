@@ -34,7 +34,8 @@ object ServicePlanInfo {
     __obj.asInstanceOf[ServicePlanInfo]
   }
   
-  extension [Self <: ServicePlanInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServicePlanInfo] (val x: Self) extends AnyVal {
     
     inline def setAppliesTo(value: NullableOption[String]): Self = StObject.set(x, "appliesTo", value.asInstanceOf[js.Any])
     

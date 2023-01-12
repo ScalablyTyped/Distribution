@@ -31,7 +31,8 @@ object anon {
       __obj.asInstanceOf[Dictkey]
     }
     
-    extension [Self <: Dictkey](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Dictkey] (val x: Self) extends AnyVal {
       
       inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
@@ -54,7 +55,8 @@ object anon {
       __obj.asInstanceOf[FamilyName]
     }
     
-    extension [Self <: FamilyName](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FamilyName] (val x: Self) extends AnyVal {
       
       inline def setFamilyName(value: String): Self = StObject.set(x, "familyName", value.asInstanceOf[js.Any])
       
@@ -82,7 +84,8 @@ object anon {
       __obj.asInstanceOf[KeepSessionInfo]
     }
     
-    extension [Self <: KeepSessionInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KeepSessionInfo] (val x: Self) extends AnyVal {
       
       inline def setKeepSessionInfo(value: Boolean): Self = StObject.set(x, "keepSessionInfo", value.asInstanceOf[js.Any])
       
@@ -101,7 +104,8 @@ object anon {
       __obj.asInstanceOf[PauseStream]
     }
     
-    extension [Self <: PauseStream](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PauseStream] (val x: Self) extends AnyVal {
       
       inline def setPauseStream(value: Boolean): Self = StObject.set(x, "pauseStream", value.asInstanceOf[js.Any])
     }
@@ -120,7 +124,8 @@ object anon {
       __obj.asInstanceOf[Type]
     }
     
-    extension [Self <: Type](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Type] (val x: Self) extends AnyVal {
       
       inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
@@ -141,7 +146,8 @@ object anon {
       __obj.asInstanceOf[UserProperty]
     }
     
-    extension [Self <: UserProperty](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UserProperty] (val x: Self) extends AnyVal {
       
       inline def setUserProperty(value: String): Self = StObject.set(x, "userProperty", value.asInstanceOf[js.Any])
     }
@@ -158,7 +164,8 @@ object anon {
       __obj.asInstanceOf[Value]
     }
     
-    extension [Self <: Value](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Value] (val x: Self) extends AnyVal {
       
       inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }

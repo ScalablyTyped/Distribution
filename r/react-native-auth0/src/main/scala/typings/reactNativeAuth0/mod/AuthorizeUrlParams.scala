@@ -19,7 +19,8 @@ object AuthorizeUrlParams {
     __obj.asInstanceOf[AuthorizeUrlParams]
   }
   
-  extension [Self <: AuthorizeUrlParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AuthorizeUrlParams] (val x: Self) extends AnyVal {
     
     inline def setRedirectUri(value: String): Self = StObject.set(x, "redirectUri", value.asInstanceOf[js.Any])
     

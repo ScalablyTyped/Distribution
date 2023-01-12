@@ -22,7 +22,8 @@ object CreateTemplateOptions {
     __obj.asInstanceOf[CreateTemplateOptions]
   }
   
-  extension [Self <: CreateTemplateOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateTemplateOptions] (val x: Self) extends AnyVal {
     
     inline def setClick_tracking(value: Boolean): Self = StObject.set(x, "click_tracking", value.asInstanceOf[js.Any])
     

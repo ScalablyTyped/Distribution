@@ -19,7 +19,8 @@ object WatcherSearchInput {
     __obj.asInstanceOf[WatcherSearchInput]
   }
   
-  extension [Self <: WatcherSearchInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WatcherSearchInput] (val x: Self) extends AnyVal {
     
     inline def setExtract(value: js.Array[String]): Self = StObject.set(x, "extract", value.asInstanceOf[js.Any])
     

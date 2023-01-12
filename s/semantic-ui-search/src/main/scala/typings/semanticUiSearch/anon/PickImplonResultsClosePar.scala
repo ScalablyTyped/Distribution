@@ -99,7 +99,8 @@ object PickImplonResultsClosePar {
     __obj.asInstanceOf[PickImplonResultsClosePar]
   }
   
-  extension [Self <: PickImplonResultsClosePar](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickImplonResultsClosePar] (val x: Self) extends AnyVal {
     
     inline def setApiSettings(value: ApiSettings): Self = StObject.set(x, "apiSettings", value.asInstanceOf[js.Any])
     

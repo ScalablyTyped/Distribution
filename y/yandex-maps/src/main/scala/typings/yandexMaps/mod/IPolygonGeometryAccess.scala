@@ -59,7 +59,8 @@ object IPolygonGeometryAccess {
     __obj.asInstanceOf[IPolygonGeometryAccess]
   }
   
-  extension [Self <: IPolygonGeometryAccess](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPolygonGeometryAccess] (val x: Self) extends AnyVal {
     
     inline def setContains(value: js.Array[Double] => Boolean): Self = StObject.set(x, "contains", js.Any.fromFunction1(value))
     

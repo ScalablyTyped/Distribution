@@ -17,7 +17,8 @@ object MeridiemAM {
     __obj.asInstanceOf[MeridiemAM]
   }
   
-  extension [Self <: MeridiemAM](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MeridiemAM] (val x: Self) extends AnyVal {
     
     inline def setMeridiemAM(value: String): Self = StObject.set(x, "meridiemAM", value.asInstanceOf[js.Any])
     

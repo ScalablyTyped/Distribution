@@ -49,7 +49,8 @@ object buildSrcEntryEntryEqualityMod {
       __obj.asInstanceOf[FileEquality]
     }
     
-    extension [Self <: FileEquality](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileEquality] (val x: Self) extends AnyVal {
       
       inline def setReason(value: Reason): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
       
@@ -102,7 +103,8 @@ object buildSrcEntryEntryEqualityMod {
       __obj.asInstanceOf[FileEqualityAsyncContext]
     }
     
-    extension [Self <: FileEqualityAsyncContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileEqualityAsyncContext] (val x: Self) extends AnyVal {
       
       inline def setAsyncDiffSet(value: AsyncDiffSet): Self = StObject.set(x, "asyncDiffSet", value.asInstanceOf[js.Any])
       
@@ -134,7 +136,8 @@ object buildSrcEntryEntryEqualityMod {
       __obj.asInstanceOf[FileEqualityAsyncError]
     }
     
-    extension [Self <: FileEqualityAsyncError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileEqualityAsyncError] (val x: Self) extends AnyVal {
       
       inline def setError(value: Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
@@ -173,7 +176,8 @@ object buildSrcEntryEntryEqualityMod {
       __obj.asInstanceOf[FileEqualityAsyncSuccess]
     }
     
-    extension [Self <: FileEqualityAsyncSuccess](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileEqualityAsyncSuccess] (val x: Self) extends AnyVal {
       
       inline def setContext(value: FileEqualityAsyncContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
@@ -223,7 +227,8 @@ object buildSrcEntryEntryEqualityMod {
       __obj.asInstanceOf[FileEqualityPromiseAsync]
     }
     
-    extension [Self <: FileEqualityPromiseAsync](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileEqualityPromiseAsync] (val x: Self) extends AnyVal {
       
       inline def setFileEqualityAsyncPromise(value: js.Promise[FileEqualityAsync]): Self = StObject.set(x, "fileEqualityAsyncPromise", value.asInstanceOf[js.Any])
       
@@ -258,7 +263,8 @@ object buildSrcEntryEntryEqualityMod {
       __obj.asInstanceOf[FileEqualityPromiseSync]
     }
     
-    extension [Self <: FileEqualityPromiseSync](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileEqualityPromiseSync] (val x: Self) extends AnyVal {
       
       inline def setIsSync(value: `true`): Self = StObject.set(x, "isSync", value.asInstanceOf[js.Any])
       

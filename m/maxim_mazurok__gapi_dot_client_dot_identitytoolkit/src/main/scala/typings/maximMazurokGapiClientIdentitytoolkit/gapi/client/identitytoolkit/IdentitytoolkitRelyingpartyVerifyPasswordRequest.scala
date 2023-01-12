@@ -46,7 +46,8 @@ object IdentitytoolkitRelyingpartyVerifyPasswordRequest {
     __obj.asInstanceOf[IdentitytoolkitRelyingpartyVerifyPasswordRequest]
   }
   
-  extension [Self <: IdentitytoolkitRelyingpartyVerifyPasswordRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IdentitytoolkitRelyingpartyVerifyPasswordRequest] (val x: Self) extends AnyVal {
     
     inline def setCaptchaChallenge(value: String): Self = StObject.set(x, "captchaChallenge", value.asInstanceOf[js.Any])
     

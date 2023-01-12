@@ -18,7 +18,8 @@ object PathMoveCommand {
     __obj.asInstanceOf[PathMoveCommand]
   }
   
-  extension [Self <: PathMoveCommand](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PathMoveCommand] (val x: Self) extends AnyVal {
     
     inline def setMove(value: VectorOptions): Self = StObject.set(x, "move", value.asInstanceOf[js.Any])
   }

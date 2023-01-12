@@ -18,7 +18,8 @@ object CreateAssessmentTargetResponse {
     __obj.asInstanceOf[CreateAssessmentTargetResponse]
   }
   
-  extension [Self <: CreateAssessmentTargetResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateAssessmentTargetResponse] (val x: Self) extends AnyVal {
     
     inline def setAssessmentTargetArn(value: Arn): Self = StObject.set(x, "assessmentTargetArn", value.asInstanceOf[js.Any])
   }

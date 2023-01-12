@@ -25,7 +25,8 @@ object GooglePrivacyDlpV2ImageRedactionConfig {
     __obj.asInstanceOf[GooglePrivacyDlpV2ImageRedactionConfig]
   }
   
-  extension [Self <: GooglePrivacyDlpV2ImageRedactionConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GooglePrivacyDlpV2ImageRedactionConfig] (val x: Self) extends AnyVal {
     
     inline def setInfoType(value: GooglePrivacyDlpV2InfoType): Self = StObject.set(x, "infoType", value.asInstanceOf[js.Any])
     

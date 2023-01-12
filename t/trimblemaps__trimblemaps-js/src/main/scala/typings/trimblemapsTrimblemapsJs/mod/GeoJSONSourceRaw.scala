@@ -22,7 +22,8 @@ object GeoJSONSourceRaw {
     __obj.asInstanceOf[GeoJSONSourceRaw]
   }
   
-  extension [Self <: GeoJSONSourceRaw](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GeoJSONSourceRaw] (val x: Self) extends AnyVal {
     
     inline def setType(value: geojson): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

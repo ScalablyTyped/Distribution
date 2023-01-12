@@ -24,7 +24,8 @@ object Sepadebit {
     __obj.asInstanceOf[Sepadebit]
   }
   
-  extension [Self <: Sepadebit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Sepadebit] (val x: Self) extends AnyVal {
     
     inline def setBilling_details(value: Email): Self = StObject.set(x, "billing_details", value.asInstanceOf[js.Any])
     

@@ -70,7 +70,8 @@ object observerMod {
       __obj.asInstanceOf[MDCObserver_]
     }
     
-    extension [Self <: MDCObserver_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MDCObserver_] (val x: Self) extends AnyVal {
       
       inline def setObserve(value: (Any, ObserverRecord[Any, MDCObserver_]) => js.Function0[Unit]): Self = StObject.set(x, "observe", js.Any.fromFunction2(value))
       

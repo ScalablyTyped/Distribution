@@ -22,7 +22,8 @@ object CustomSettingsInformation {
     __obj.asInstanceOf[CustomSettingsInformation]
   }
   
-  extension [Self <: CustomSettingsInformation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomSettingsInformation] (val x: Self) extends AnyVal {
     
     inline def setCustomSettings(
       value: js.Array[

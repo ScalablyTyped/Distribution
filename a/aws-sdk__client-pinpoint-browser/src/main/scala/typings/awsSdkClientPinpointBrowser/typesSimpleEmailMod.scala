@@ -32,7 +32,8 @@ object typesSimpleEmailMod {
       __obj.asInstanceOf[SimpleEmail]
     }
     
-    extension [Self <: SimpleEmail](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SimpleEmail] (val x: Self) extends AnyVal {
       
       inline def setHtmlPart(value: SimpleEmailPart): Self = StObject.set(x, "HtmlPart", value.asInstanceOf[js.Any])
       
@@ -77,7 +78,8 @@ object typesSimpleEmailMod {
       __obj.asInstanceOf[UnmarshalledSimpleEmail]
     }
     
-    extension [Self <: UnmarshalledSimpleEmail](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnmarshalledSimpleEmail] (val x: Self) extends AnyVal {
       
       inline def setHtmlPart(value: UnmarshalledSimpleEmailPart): Self = StObject.set(x, "HtmlPart", value.asInstanceOf[js.Any])
       

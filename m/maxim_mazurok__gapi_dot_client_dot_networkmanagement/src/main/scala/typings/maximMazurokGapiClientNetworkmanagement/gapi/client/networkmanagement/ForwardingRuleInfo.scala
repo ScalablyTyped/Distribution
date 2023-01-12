@@ -34,7 +34,8 @@ object ForwardingRuleInfo {
     __obj.asInstanceOf[ForwardingRuleInfo]
   }
   
-  extension [Self <: ForwardingRuleInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ForwardingRuleInfo] (val x: Self) extends AnyVal {
     
     inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     

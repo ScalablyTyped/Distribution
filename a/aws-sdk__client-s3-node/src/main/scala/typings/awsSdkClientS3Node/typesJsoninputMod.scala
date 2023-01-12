@@ -22,7 +22,8 @@ object typesJsoninputMod {
       __obj.asInstanceOf[JSONInput]
     }
     
-    extension [Self <: JSONInput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JSONInput] (val x: Self) extends AnyVal {
       
       inline def setType(value: DOCUMENT | LINES | String): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
       

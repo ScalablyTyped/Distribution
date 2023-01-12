@@ -21,7 +21,8 @@ object anon {
       __obj.asInstanceOf[CommonPrefix]
     }
     
-    extension [Self <: CommonPrefix](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommonPrefix] (val x: Self) extends AnyVal {
       
       inline def setCommonPrefix(value: Boolean): Self = StObject.set(x, "commonPrefix", value.asInstanceOf[js.Any])
       
@@ -52,7 +53,8 @@ object anon {
       __obj.asInstanceOf[Del[T, V]]
     }
     
-    extension [Self <: Del[?, ?], T, V /* <: HTTPVersion */](x: Self & (Del[T, V])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Del[?, ?], T, V /* <: HTTPVersion */] (val x: Self & (Del[T, V])) extends AnyVal {
       
       inline def setDel(value: /* value */ T => Unit): Self = StObject.set(x, "del", js.Any.fromFunction1(value))
       

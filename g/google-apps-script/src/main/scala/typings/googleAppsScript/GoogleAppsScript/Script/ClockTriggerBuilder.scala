@@ -59,7 +59,8 @@ object ClockTriggerBuilder {
     __obj.asInstanceOf[ClockTriggerBuilder]
   }
   
-  extension [Self <: ClockTriggerBuilder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClockTriggerBuilder] (val x: Self) extends AnyVal {
     
     inline def setAfter(value: Integer => ClockTriggerBuilder): Self = StObject.set(x, "after", js.Any.fromFunction1(value))
     

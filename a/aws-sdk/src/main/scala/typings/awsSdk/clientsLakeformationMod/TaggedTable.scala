@@ -33,7 +33,8 @@ object TaggedTable {
     __obj.asInstanceOf[TaggedTable]
   }
   
-  extension [Self <: TaggedTable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TaggedTable] (val x: Self) extends AnyVal {
     
     inline def setLFTagOnDatabase(value: LFTagsList): Self = StObject.set(x, "LFTagOnDatabase", value.asInstanceOf[js.Any])
     

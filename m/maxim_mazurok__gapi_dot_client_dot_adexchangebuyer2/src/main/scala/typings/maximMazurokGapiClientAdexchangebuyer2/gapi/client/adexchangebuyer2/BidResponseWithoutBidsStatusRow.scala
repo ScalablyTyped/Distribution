@@ -22,7 +22,8 @@ object BidResponseWithoutBidsStatusRow {
     __obj.asInstanceOf[BidResponseWithoutBidsStatusRow]
   }
   
-  extension [Self <: BidResponseWithoutBidsStatusRow](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BidResponseWithoutBidsStatusRow] (val x: Self) extends AnyVal {
     
     inline def setImpressionCount(value: MetricValue): Self = StObject.set(x, "impressionCount", value.asInstanceOf[js.Any])
     

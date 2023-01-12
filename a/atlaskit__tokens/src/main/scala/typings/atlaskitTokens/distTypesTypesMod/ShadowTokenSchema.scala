@@ -16,7 +16,8 @@ object ShadowTokenSchema {
     __obj.asInstanceOf[ShadowTokenSchema[BaseToken]]
   }
   
-  extension [Self <: ShadowTokenSchema[?], BaseToken](x: Self & ShadowTokenSchema[BaseToken]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShadowTokenSchema[?], BaseToken] (val x: Self & ShadowTokenSchema[BaseToken]) extends AnyVal {
     
     inline def setElevation(value: ShadowOverflowOverlay[BaseToken]): Self = StObject.set(x, "elevation", value.asInstanceOf[js.Any])
   }

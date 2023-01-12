@@ -15,7 +15,8 @@ object Typeofv1beta1 {
     __obj.asInstanceOf[Typeofv1beta1]
   }
   
-  extension [Self <: Typeofv1beta1](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Typeofv1beta1] (val x: Self) extends AnyVal {
     
     inline def setTextToSpeechClient(value: TypeofTextToSpeechClient): Self = StObject.set(x, "TextToSpeechClient", value.asInstanceOf[js.Any])
   }

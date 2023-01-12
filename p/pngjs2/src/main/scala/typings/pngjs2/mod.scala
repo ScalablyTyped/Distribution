@@ -108,7 +108,8 @@ object mod {
       __obj.asInstanceOf[PNGMetadata]
     }
     
-    extension [Self <: PNGMetadata](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PNGMetadata] (val x: Self) extends AnyVal {
       
       inline def setAlpha(value: Boolean): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
       
@@ -153,7 +154,8 @@ object mod {
       __obj.asInstanceOf[PNGOptions]
     }
     
-    extension [Self <: PNGOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PNGOptions] (val x: Self) extends AnyVal {
       
       inline def setCheckCRC(value: Boolean): Self = StObject.set(x, "checkCRC", value.asInstanceOf[js.Any])
       

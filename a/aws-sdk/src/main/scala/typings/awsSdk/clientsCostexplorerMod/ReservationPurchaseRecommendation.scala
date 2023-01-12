@@ -48,7 +48,8 @@ object ReservationPurchaseRecommendation {
     __obj.asInstanceOf[ReservationPurchaseRecommendation]
   }
   
-  extension [Self <: ReservationPurchaseRecommendation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReservationPurchaseRecommendation] (val x: Self) extends AnyVal {
     
     inline def setAccountScope(value: AccountScope): Self = StObject.set(x, "AccountScope", value.asInstanceOf[js.Any])
     

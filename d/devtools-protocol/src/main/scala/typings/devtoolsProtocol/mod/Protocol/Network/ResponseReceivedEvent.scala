@@ -58,7 +58,8 @@ object ResponseReceivedEvent {
     __obj.asInstanceOf[ResponseReceivedEvent]
   }
   
-  extension [Self <: ResponseReceivedEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResponseReceivedEvent] (val x: Self) extends AnyVal {
     
     inline def setFrameId(value: FrameId): Self = StObject.set(x, "frameId", value.asInstanceOf[js.Any])
     

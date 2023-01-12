@@ -23,7 +23,8 @@ object SystemTemplateFilter {
     __obj.asInstanceOf[SystemTemplateFilter]
   }
   
-  extension [Self <: SystemTemplateFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SystemTemplateFilter] (val x: Self) extends AnyVal {
     
     inline def setName(value: SystemTemplateFilterName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object GetPublicKeyConfigResult {
     __obj.asInstanceOf[GetPublicKeyConfigResult]
   }
   
-  extension [Self <: GetPublicKeyConfigResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetPublicKeyConfigResult] (val x: Self) extends AnyVal {
     
     inline def setETag(value: String): Self = StObject.set(x, "ETag", value.asInstanceOf[js.Any])
     

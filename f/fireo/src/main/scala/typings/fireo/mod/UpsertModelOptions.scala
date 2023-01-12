@@ -17,7 +17,8 @@ object UpsertModelOptions {
     __obj.asInstanceOf[UpsertModelOptions]
   }
   
-  extension [Self <: UpsertModelOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpsertModelOptions] (val x: Self) extends AnyVal {
     
     inline def setBatch(value: Any): Self = StObject.set(x, "batch", value.asInstanceOf[js.Any])
     

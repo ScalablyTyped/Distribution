@@ -48,7 +48,8 @@ object UsersResponse {
     __obj.asInstanceOf[UsersResponse]
   }
   
-  extension [Self <: UsersResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UsersResponse] (val x: Self) extends AnyVal {
     
     inline def setEndPosition(value: String): Self = StObject.set(x, "endPosition", value.asInstanceOf[js.Any])
     

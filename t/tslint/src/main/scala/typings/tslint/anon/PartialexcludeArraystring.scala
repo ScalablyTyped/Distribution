@@ -18,7 +18,8 @@ object PartialexcludeArraystring {
     __obj.asInstanceOf[PartialexcludeArraystring]
   }
   
-  extension [Self <: PartialexcludeArraystring](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialexcludeArraystring] (val x: Self) extends AnyVal {
     
     inline def setExclude(value: js.Array[String]): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
     

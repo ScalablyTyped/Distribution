@@ -28,7 +28,8 @@ object Codespacename {
     __obj.asInstanceOf[Codespacename]
   }
   
-  extension [Self <: Codespacename](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Codespacename] (val x: Self) extends AnyVal {
     
     inline def setCodespace_name(
       value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['codespace-name'] */ js.Any

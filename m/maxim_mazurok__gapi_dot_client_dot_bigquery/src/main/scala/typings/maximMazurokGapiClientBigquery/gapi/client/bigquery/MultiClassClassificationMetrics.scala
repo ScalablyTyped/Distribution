@@ -19,7 +19,8 @@ object MultiClassClassificationMetrics {
     __obj.asInstanceOf[MultiClassClassificationMetrics]
   }
   
-  extension [Self <: MultiClassClassificationMetrics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MultiClassClassificationMetrics] (val x: Self) extends AnyVal {
     
     inline def setAggregateClassificationMetrics(value: AggregateClassificationMetrics): Self = StObject.set(x, "aggregateClassificationMetrics", value.asInstanceOf[js.Any])
     

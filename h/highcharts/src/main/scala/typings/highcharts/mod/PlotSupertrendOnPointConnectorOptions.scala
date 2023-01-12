@@ -29,7 +29,8 @@ object PlotSupertrendOnPointConnectorOptions {
     __obj.asInstanceOf[PlotSupertrendOnPointConnectorOptions]
   }
   
-  extension [Self <: PlotSupertrendOnPointConnectorOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotSupertrendOnPointConnectorOptions] (val x: Self) extends AnyVal {
     
     inline def setDashstyle(value: String): Self = StObject.set(x, "dashstyle", value.asInstanceOf[js.Any])
     

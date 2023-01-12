@@ -19,7 +19,8 @@ object EmployeeOrgData {
     __obj.asInstanceOf[EmployeeOrgData]
   }
   
-  extension [Self <: EmployeeOrgData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EmployeeOrgData] (val x: Self) extends AnyVal {
     
     inline def setCostCenter(value: NullableOption[String]): Self = StObject.set(x, "costCenter", value.asInstanceOf[js.Any])
     

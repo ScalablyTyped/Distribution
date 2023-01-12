@@ -32,7 +32,8 @@ object Cols {
     __obj.asInstanceOf[Cols]
   }
   
-  extension [Self <: Cols](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Cols] (val x: Self) extends AnyVal {
     
     inline def setCascade(value: Boolean): Self = StObject.set(x, "cascade", value.asInstanceOf[js.Any])
     

@@ -40,7 +40,8 @@ object libMockURLMod {
       __obj.asInstanceOf[MockURL]
     }
     
-    extension [Self <: MockURL](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MockURL] (val x: Self) extends AnyVal {
       
       inline def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
       

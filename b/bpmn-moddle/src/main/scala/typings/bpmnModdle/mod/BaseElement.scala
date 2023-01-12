@@ -43,7 +43,8 @@ object BaseElement {
     __obj.asInstanceOf[BaseElement]
   }
   
-  extension [Self <: BaseElement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BaseElement] (val x: Self) extends AnyVal {
     
     inline def set$attrs(value: StringDictionary[Any]): Self = StObject.set(x, "$attrs", value.asInstanceOf[js.Any])
     

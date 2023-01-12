@@ -51,7 +51,8 @@ object distDeclarationsSrcFrameLoopMod {
       __obj.asInstanceOf[OpaqueAnimation]
     }
     
-    extension [Self <: OpaqueAnimation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OpaqueAnimation] (val x: Self) extends AnyVal {
       
       inline def setAdvance(value: Double => Unit): Self = StObject.set(x, "advance", js.Any.fromFunction1(value))
       

@@ -40,7 +40,8 @@ object MatchRecursiveValueNames {
     __obj.asInstanceOf[MatchRecursiveValueNames]
   }
   
-  extension [Self <: MatchRecursiveValueNames](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MatchRecursiveValueNames] (val x: Self) extends AnyVal {
     
     inline def set0(value: String): Self = StObject.set(x, "0", value.asInstanceOf[js.Any])
     

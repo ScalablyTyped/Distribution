@@ -19,7 +19,8 @@ object IArrayPropertyDecoratorOptions {
     __obj.asInstanceOf[IArrayPropertyDecoratorOptions]
   }
   
-  extension [Self <: IArrayPropertyDecoratorOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IArrayPropertyDecoratorOptions] (val x: Self) extends AnyVal {
     
     inline def setOnPush(value: Any): Self = StObject.set(x, "onPush", value.asInstanceOf[js.Any])
     

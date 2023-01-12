@@ -56,7 +56,8 @@ object ISpinner {
     __obj.asInstanceOf[ISpinner]
   }
   
-  extension [Self <: ISpinner](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISpinner] (val x: Self) extends AnyVal {
     
     inline def setKeyNavEnabled(value: Boolean): Self = StObject.set(x, "keyNavEnabled", value.asInstanceOf[js.Any])
     

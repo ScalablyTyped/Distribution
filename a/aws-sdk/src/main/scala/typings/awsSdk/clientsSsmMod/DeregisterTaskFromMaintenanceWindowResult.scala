@@ -23,7 +23,8 @@ object DeregisterTaskFromMaintenanceWindowResult {
     __obj.asInstanceOf[DeregisterTaskFromMaintenanceWindowResult]
   }
   
-  extension [Self <: DeregisterTaskFromMaintenanceWindowResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeregisterTaskFromMaintenanceWindowResult] (val x: Self) extends AnyVal {
     
     inline def setWindowId(value: MaintenanceWindowId): Self = StObject.set(x, "WindowId", value.asInstanceOf[js.Any])
     

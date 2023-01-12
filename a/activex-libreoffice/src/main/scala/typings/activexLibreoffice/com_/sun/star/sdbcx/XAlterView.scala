@@ -26,7 +26,8 @@ object XAlterView {
     __obj.asInstanceOf[XAlterView]
   }
   
-  extension [Self <: XAlterView](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XAlterView] (val x: Self) extends AnyVal {
     
     inline def setAlterCommand(value: String => Unit): Self = StObject.set(x, "alterCommand", js.Any.fromFunction1(value))
   }

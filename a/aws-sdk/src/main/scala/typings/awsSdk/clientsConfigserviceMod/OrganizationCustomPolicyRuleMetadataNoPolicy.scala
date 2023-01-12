@@ -63,7 +63,8 @@ object OrganizationCustomPolicyRuleMetadataNoPolicy {
     __obj.asInstanceOf[OrganizationCustomPolicyRuleMetadataNoPolicy]
   }
   
-  extension [Self <: OrganizationCustomPolicyRuleMetadataNoPolicy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OrganizationCustomPolicyRuleMetadataNoPolicy] (val x: Self) extends AnyVal {
     
     inline def setDebugLogDeliveryAccounts(value: DebugLogDeliveryAccounts): Self = StObject.set(x, "DebugLogDeliveryAccounts", value.asInstanceOf[js.Any])
     

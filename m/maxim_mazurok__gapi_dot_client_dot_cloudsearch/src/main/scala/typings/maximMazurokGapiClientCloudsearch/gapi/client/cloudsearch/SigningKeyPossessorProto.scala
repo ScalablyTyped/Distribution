@@ -25,7 +25,8 @@ object SigningKeyPossessorProto {
     __obj.asInstanceOf[SigningKeyPossessorProto]
   }
   
-  extension [Self <: SigningKeyPossessorProto](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SigningKeyPossessorProto] (val x: Self) extends AnyVal {
     
     inline def setKeymasterKeyType(value: Double): Self = StObject.set(x, "keymasterKeyType", value.asInstanceOf[js.Any])
     

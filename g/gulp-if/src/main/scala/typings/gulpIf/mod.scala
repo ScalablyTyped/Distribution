@@ -79,7 +79,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[StatFilterCondition]
     }
     
-    extension [Self <: StatFilterCondition](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StatFilterCondition] (val x: Self) extends AnyVal {
       
       inline def setIsDirectory(value: Boolean): Self = StObject.set(x, "isDirectory", value.asInstanceOf[js.Any])
       

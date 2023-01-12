@@ -28,7 +28,8 @@ object ContributionBase {
     __obj.asInstanceOf[ContributionBase]
   }
   
-  extension [Self <: ContributionBase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContributionBase] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

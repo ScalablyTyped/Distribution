@@ -25,7 +25,8 @@ object QueryDslSpanNotQuery {
     __obj.asInstanceOf[QueryDslSpanNotQuery]
   }
   
-  extension [Self <: QueryDslSpanNotQuery](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryDslSpanNotQuery] (val x: Self) extends AnyVal {
     
     inline def setDist(value: integer): Self = StObject.set(x, "dist", value.asInstanceOf[js.Any])
     

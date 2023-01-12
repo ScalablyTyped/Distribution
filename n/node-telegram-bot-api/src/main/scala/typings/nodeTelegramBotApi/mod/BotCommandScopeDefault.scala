@@ -19,7 +19,8 @@ object BotCommandScopeDefault {
     __obj.asInstanceOf[BotCommandScopeDefault]
   }
   
-  extension [Self <: BotCommandScopeDefault](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BotCommandScopeDefault] (val x: Self) extends AnyVal {
     
     inline def setType(value: default): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

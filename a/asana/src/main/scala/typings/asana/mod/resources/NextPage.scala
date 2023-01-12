@@ -19,7 +19,8 @@ object NextPage {
     __obj.asInstanceOf[NextPage]
   }
   
-  extension [Self <: NextPage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NextPage] (val x: Self) extends AnyVal {
     
     inline def setOffset(value: String): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     

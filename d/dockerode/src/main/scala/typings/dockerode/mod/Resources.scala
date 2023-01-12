@@ -19,7 +19,8 @@ object Resources {
     __obj.asInstanceOf[Resources]
   }
   
-  extension [Self <: Resources](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Resources] (val x: Self) extends AnyVal {
     
     inline def setGenericResources(value: js.Array[GenericResource]): Self = StObject.set(x, "GenericResources", value.asInstanceOf[js.Any])
     

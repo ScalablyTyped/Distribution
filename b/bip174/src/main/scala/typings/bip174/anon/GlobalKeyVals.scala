@@ -24,7 +24,8 @@ object GlobalKeyVals {
     __obj.asInstanceOf[GlobalKeyVals]
   }
   
-  extension [Self <: GlobalKeyVals](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GlobalKeyVals] (val x: Self) extends AnyVal {
     
     inline def setGlobalKeyVals(value: js.Array[KeyValue]): Self = StObject.set(x, "globalKeyVals", value.asInstanceOf[js.Any])
     

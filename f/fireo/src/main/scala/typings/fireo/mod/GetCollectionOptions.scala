@@ -19,7 +19,8 @@ object GetCollectionOptions {
     __obj.asInstanceOf[GetCollectionOptions]
   }
   
-  extension [Self <: GetCollectionOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetCollectionOptions] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

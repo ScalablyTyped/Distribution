@@ -136,7 +136,8 @@ object dxOverlayOptions {
     __obj.asInstanceOf[dxOverlayOptions[TComponent]]
   }
   
-  extension [Self <: dxOverlayOptions[?], TComponent](x: Self & dxOverlayOptions[TComponent]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxOverlayOptions[?], TComponent] (val x: Self & dxOverlayOptions[TComponent]) extends AnyVal {
     
     inline def setAnimation(value: dxOverlayAnimation): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     

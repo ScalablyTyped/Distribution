@@ -25,7 +25,8 @@ object FormatterOptions {
     __obj.asInstanceOf[FormatterOptions]
   }
   
-  extension [Self <: FormatterOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FormatterOptions] (val x: Self) extends AnyVal {
     
     inline def setDistanceTemplate(value: String): Self = StObject.set(x, "distanceTemplate", value.asInstanceOf[js.Any])
     

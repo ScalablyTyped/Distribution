@@ -39,7 +39,8 @@ object CIMGeometricEffectScale {
     __obj.asInstanceOf[CIMGeometricEffectScale]
   }
   
-  extension [Self <: CIMGeometricEffectScale](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CIMGeometricEffectScale] (val x: Self) extends AnyVal {
     
     inline def setPrimitiveName(value: String): Self = StObject.set(x, "primitiveName", value.asInstanceOf[js.Any])
     

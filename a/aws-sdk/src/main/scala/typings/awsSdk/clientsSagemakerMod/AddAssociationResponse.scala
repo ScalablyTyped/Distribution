@@ -23,7 +23,8 @@ object AddAssociationResponse {
     __obj.asInstanceOf[AddAssociationResponse]
   }
   
-  extension [Self <: AddAssociationResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AddAssociationResponse] (val x: Self) extends AnyVal {
     
     inline def setDestinationArn(value: AssociationEntityArn): Self = StObject.set(x, "DestinationArn", value.asInstanceOf[js.Any])
     

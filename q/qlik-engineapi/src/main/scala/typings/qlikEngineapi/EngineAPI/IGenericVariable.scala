@@ -94,7 +94,8 @@ object IGenericVariable {
     __obj.asInstanceOf[IGenericVariable]
   }
   
-  extension [Self <: IGenericVariable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IGenericVariable] (val x: Self) extends AnyVal {
     
     inline def setApplyPatches(value: js.Array[INxPatch] => js.Promise[Unit]): Self = StObject.set(x, "applyPatches", js.Any.fromFunction1(value))
     

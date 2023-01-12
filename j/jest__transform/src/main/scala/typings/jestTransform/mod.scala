@@ -86,7 +86,8 @@ object mod {
       __obj.asInstanceOf[AsyncTransformer[TransformerConfig]]
     }
     
-    extension [Self <: AsyncTransformer[?], TransformerConfig](x: Self & AsyncTransformer[TransformerConfig]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AsyncTransformer[?], TransformerConfig] (val x: Self & AsyncTransformer[TransformerConfig]) extends AnyVal {
       
       inline def setCanInstrument(value: Boolean): Self = StObject.set(x, "canInstrument", value.asInstanceOf[js.Any])
       
@@ -136,7 +137,8 @@ object mod {
       __obj.asInstanceOf[CallerTransformOptions]
     }
     
-    extension [Self <: CallerTransformOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CallerTransformOptions] (val x: Self) extends AnyVal {
       
       inline def setSupportsDynamicImport(value: Boolean): Self = StObject.set(x, "supportsDynamicImport", value.asInstanceOf[js.Any])
       
@@ -161,7 +163,8 @@ object mod {
       __obj.asInstanceOf[ErrorWithCodeFrame]
     }
     
-    extension [Self <: ErrorWithCodeFrame](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ErrorWithCodeFrame] (val x: Self) extends AnyVal {
       
       inline def setCodeFrame(value: String): Self = StObject.set(x, "codeFrame", value.asInstanceOf[js.Any])
       
@@ -193,7 +196,8 @@ object mod {
       __obj.asInstanceOf[FixedRawSourceMap]
     }
     
-    extension [Self <: FixedRawSourceMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FixedRawSourceMap] (val x: Self) extends AnyVal {
       
       inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
       
@@ -244,7 +248,8 @@ object mod {
       __obj.asInstanceOf[ReducedTransformOptions]
     }
     
-    extension [Self <: ReducedTransformOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReducedTransformOptions] (val x: Self) extends AnyVal {
       
       inline def setInstrument(value: Boolean): Self = StObject.set(x, "instrument", value.asInstanceOf[js.Any])
     }
@@ -270,7 +275,8 @@ object mod {
       __obj.asInstanceOf[RequireAndTranspileModuleOptions]
     }
     
-    extension [Self <: RequireAndTranspileModuleOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequireAndTranspileModuleOptions] (val x: Self) extends AnyVal {
       
       inline def setApplyInteropRequireDefault(value: Boolean): Self = StObject.set(x, "applyInteropRequireDefault", value.asInstanceOf[js.Any])
     }
@@ -365,7 +371,8 @@ object mod {
       __obj.asInstanceOf[ShouldInstrumentOptions]
     }
     
-    extension [Self <: ShouldInstrumentOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ShouldInstrumentOptions] (val x: Self) extends AnyVal {
       
       inline def setChangedFiles(value: Set[String]): Self = StObject.set(x, "changedFiles", value.asInstanceOf[js.Any])
       
@@ -435,7 +442,8 @@ object mod {
       __obj.asInstanceOf[SyncTransformer[TransformerConfig]]
     }
     
-    extension [Self <: SyncTransformer[?], TransformerConfig](x: Self & SyncTransformer[TransformerConfig]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SyncTransformer[?], TransformerConfig] (val x: Self & SyncTransformer[TransformerConfig]) extends AnyVal {
       
       inline def setCanInstrument(value: Boolean): Self = StObject.set(x, "canInstrument", value.asInstanceOf[js.Any])
       
@@ -496,7 +504,8 @@ object mod {
       __obj.asInstanceOf[TransformOptions[TransformerConfig]]
     }
     
-    extension [Self <: TransformOptions[?], TransformerConfig](x: Self & TransformOptions[TransformerConfig]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TransformOptions[?], TransformerConfig] (val x: Self & TransformOptions[TransformerConfig]) extends AnyVal {
       
       inline def setCacheFS(value: StringMap): Self = StObject.set(x, "cacheFS", value.asInstanceOf[js.Any])
       
@@ -532,7 +541,8 @@ object mod {
       __obj.asInstanceOf[TransformationOptions]
     }
     
-    extension [Self <: TransformationOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TransformationOptions] (val x: Self) extends AnyVal {
       
       inline def setIsInternalModule(value: Boolean): Self = StObject.set(x, "isInternalModule", value.asInstanceOf[js.Any])
       
@@ -553,7 +563,8 @@ object mod {
       __obj.asInstanceOf[TransformedSource]
     }
     
-    extension [Self <: TransformedSource](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TransformedSource] (val x: Self) extends AnyVal {
       
       inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
@@ -609,7 +620,8 @@ object mod {
       __obj.asInstanceOf[TransformerFactory[X]]
     }
     
-    extension [Self <: TransformerFactory[?], X /* <: Transformer2[Any] */](x: Self & TransformerFactory[X]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TransformerFactory[?], X /* <: Transformer2[Any] */] (val x: Self & TransformerFactory[X]) extends AnyVal {
       
       inline def setCreateTransformer(value: /* transformerConfig */ js.UndefOr[Any] => X): Self = StObject.set(x, "createTransformer", js.Any.fromFunction1(value))
     }

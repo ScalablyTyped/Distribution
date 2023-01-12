@@ -324,7 +324,8 @@ object enginesRenderTargetWrapperMod {
       __obj.asInstanceOf[IRenderTargetTexture]
     }
     
-    extension [Self <: IRenderTargetTexture](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IRenderTargetTexture] (val x: Self) extends AnyVal {
       
       inline def setRenderTarget(value: Nullable[RenderTargetWrapper]): Self = StObject.set(x, "renderTarget", value.asInstanceOf[js.Any])
       

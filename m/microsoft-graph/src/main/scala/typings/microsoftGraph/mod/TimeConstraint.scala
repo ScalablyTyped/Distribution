@@ -18,7 +18,8 @@ object TimeConstraint {
     __obj.asInstanceOf[TimeConstraint]
   }
   
-  extension [Self <: TimeConstraint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimeConstraint] (val x: Self) extends AnyVal {
     
     inline def setActivityDomain(value: NullableOption[ActivityDomain]): Self = StObject.set(x, "activityDomain", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object IConsensusFinalizeBlockResponse {
     __obj.asInstanceOf[IConsensusFinalizeBlockResponse]
   }
   
-  extension [Self <: IConsensusFinalizeBlockResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IConsensusFinalizeBlockResponse] (val x: Self) extends AnyVal {
     
     inline def setBlockId(value: js.typedarray.Uint8Array): Self = StObject.set(x, "blockId", value.asInstanceOf[js.Any])
     

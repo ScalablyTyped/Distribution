@@ -18,7 +18,8 @@ object StartFailbackLaunchResponse {
     __obj.asInstanceOf[StartFailbackLaunchResponse]
   }
   
-  extension [Self <: StartFailbackLaunchResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartFailbackLaunchResponse] (val x: Self) extends AnyVal {
     
     inline def setJob(value: Job): Self = StObject.set(x, "job", value.asInstanceOf[js.Any])
     

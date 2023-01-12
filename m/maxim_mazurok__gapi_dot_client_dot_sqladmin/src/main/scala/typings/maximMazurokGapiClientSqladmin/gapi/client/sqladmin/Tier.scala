@@ -28,7 +28,8 @@ object Tier {
     __obj.asInstanceOf[Tier]
   }
   
-  extension [Self <: Tier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Tier] (val x: Self) extends AnyVal {
     
     inline def setDiskQuota(value: String): Self = StObject.set(x, "DiskQuota", value.asInstanceOf[js.Any])
     

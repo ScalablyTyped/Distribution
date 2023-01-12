@@ -40,7 +40,8 @@ object IConnectionCompletionOptions {
     __obj.asInstanceOf[IConnectionCompletionOptions]
   }
   
-  extension [Self <: IConnectionCompletionOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IConnectionCompletionOptions] (val x: Self) extends AnyVal {
     
     inline def setSaveConnection(value: Boolean): Self = StObject.set(x, "saveConnection", value.asInstanceOf[js.Any])
     

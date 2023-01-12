@@ -71,7 +71,8 @@ object ResourceUploadTypeUploadprotocolUrlMap {
     __obj.asInstanceOf[ResourceUploadTypeUploadprotocolUrlMap]
   }
   
-  extension [Self <: ResourceUploadTypeUploadprotocolUrlMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResourceUploadTypeUploadprotocolUrlMap] (val x: Self) extends AnyVal {
     
     inline def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
     

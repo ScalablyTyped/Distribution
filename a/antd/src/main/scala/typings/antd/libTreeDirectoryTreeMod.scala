@@ -35,7 +35,8 @@ object libTreeDirectoryTreeMod extends Shortcut {
       __obj.asInstanceOf[DirectoryTreeProps[T]]
     }
     
-    extension [Self <: DirectoryTreeProps[?], T /* <: BasicDataNode */](x: Self & DirectoryTreeProps[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DirectoryTreeProps[?], T /* <: BasicDataNode */] (val x: Self & DirectoryTreeProps[T]) extends AnyVal {
       
       inline def setExpandAction(value: ExpandAction): Self = StObject.set(x, "expandAction", value.asInstanceOf[js.Any])
       
@@ -56,7 +57,8 @@ object libTreeDirectoryTreeMod extends Shortcut {
       __obj.asInstanceOf[DirectoryTreeState]
     }
     
-    extension [Self <: DirectoryTreeState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DirectoryTreeState] (val x: Self) extends AnyVal {
       
       inline def setExpandedKeys(value: js.Array[Key]): Self = StObject.set(x, "expandedKeys", value.asInstanceOf[js.Any])
       

@@ -28,7 +28,8 @@ object UpdateDetectorVersionMetadataRequest {
     __obj.asInstanceOf[UpdateDetectorVersionMetadataRequest]
   }
   
-  extension [Self <: UpdateDetectorVersionMetadataRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateDetectorVersionMetadataRequest] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: description): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

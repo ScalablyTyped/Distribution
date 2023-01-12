@@ -16,7 +16,8 @@ object PositionsArray {
     __obj.asInstanceOf[PositionsArray]
   }
   
-  extension [Self <: PositionsArray](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PositionsArray] (val x: Self) extends AnyVal {
     
     inline def setPositions(value: js.Array[Cartesian3]): Self = StObject.set(x, "positions", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object Description {
     __obj.asInstanceOf[Description[Value]]
   }
   
-  extension [Self <: Description[?], Value](x: Self & Description[Value]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Description[?], Value] (val x: Self & Description[Value]) extends AnyVal {
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object DeleteParameters {
     __obj.asInstanceOf[DeleteParameters]
   }
   
-  extension [Self <: DeleteParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteParameters] (val x: Self) extends AnyVal {
     
     inline def setFileId(value: String): Self = StObject.set(x, "fileId", value.asInstanceOf[js.Any])
     

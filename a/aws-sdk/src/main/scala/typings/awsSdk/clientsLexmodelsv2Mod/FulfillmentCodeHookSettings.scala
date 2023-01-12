@@ -33,7 +33,8 @@ object FulfillmentCodeHookSettings {
     __obj.asInstanceOf[FulfillmentCodeHookSettings]
   }
   
-  extension [Self <: FulfillmentCodeHookSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FulfillmentCodeHookSettings] (val x: Self) extends AnyVal {
     
     inline def setActive(value: BoxedBoolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     

@@ -64,7 +64,8 @@ object libImagePickerImageItemMod {
       __obj.asInstanceOf[ImageItemProps]
     }
     
-    extension [Self <: ImageItemProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ImageItemProps] (val x: Self) extends AnyVal {
       
       inline def setContainerWidth(value: Double): Self = StObject.set(x, "containerWidth", value.asInstanceOf[js.Any])
       

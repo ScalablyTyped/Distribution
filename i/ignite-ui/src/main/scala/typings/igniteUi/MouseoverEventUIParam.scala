@@ -33,7 +33,8 @@ object MouseoverEventUIParam {
     __obj.asInstanceOf[MouseoverEventUIParam]
   }
   
-  extension [Self <: MouseoverEventUIParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MouseoverEventUIParam] (val x: Self) extends AnyVal {
     
     inline def setEditorInput(value: Any): Self = StObject.set(x, "editorInput", value.asInstanceOf[js.Any])
     

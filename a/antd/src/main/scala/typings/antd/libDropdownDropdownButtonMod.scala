@@ -111,7 +111,8 @@ object libDropdownDropdownButtonMod extends Shortcut {
       __obj.asInstanceOf[DropdownButtonProps]
     }
     
-    extension [Self <: DropdownButtonProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DropdownButtonProps] (val x: Self) extends AnyVal {
       
       inline def setAlign(value: Align): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       

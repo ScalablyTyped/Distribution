@@ -29,7 +29,8 @@ object distSrcStreamToMaConnMod {
       __obj.asInstanceOf[StreamOptions]
     }
     
-    extension [Self <: StreamOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StreamOptions] (val x: Self) extends AnyVal {
       
       inline def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
       
@@ -56,7 +57,8 @@ object distSrcStreamToMaConnMod {
       __obj.asInstanceOf[StreamProperties]
     }
     
-    extension [Self <: StreamProperties](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StreamProperties] (val x: Self) extends AnyVal {
       
       inline def setLocalAddr(value: Multiaddr_): Self = StObject.set(x, "localAddr", value.asInstanceOf[js.Any])
       
@@ -90,7 +92,8 @@ object distSrcStreamToMaConnMod {
       __obj.asInstanceOf[Timeline]
     }
     
-    extension [Self <: Timeline](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Timeline] (val x: Self) extends AnyVal {
       
       inline def setClose(value: Double): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
       

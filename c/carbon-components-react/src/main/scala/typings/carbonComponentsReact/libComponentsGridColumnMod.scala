@@ -620,7 +620,8 @@ object libComponentsGridColumnMod {
       __obj.asInstanceOf[ColumnBaseIsolatedProps]
     }
     
-    extension [Self <: ColumnBaseIsolatedProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColumnBaseIsolatedProps] (val x: Self) extends AnyVal {
       
       inline def setLg(value: ColumnSpan): Self = StObject.set(x, "lg", value.asInstanceOf[js.Any])
       
@@ -659,7 +660,8 @@ object libComponentsGridColumnMod {
       __obj.asInstanceOf[ColumnBaseProps]
     }
     
-    extension [Self <: ColumnBaseProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColumnBaseProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -982,7 +984,8 @@ object libComponentsGridColumnMod {
       __obj.asInstanceOf[ColumnDefaultProps]
     }
     
-    extension [Self <: ColumnDefaultProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColumnDefaultProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       
@@ -1507,7 +1510,8 @@ object libComponentsGridColumnMod {
       __obj.asInstanceOf[ColumnSpanDetailed]
     }
     
-    extension [Self <: ColumnSpanDetailed](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColumnSpanDetailed] (val x: Self) extends AnyVal {
       
       inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
       

@@ -22,7 +22,8 @@ object SketchLabelOptionsProperties {
     __obj.asInstanceOf[SketchLabelOptionsProperties]
   }
   
-  extension [Self <: SketchLabelOptionsProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SketchLabelOptionsProperties] (val x: Self) extends AnyVal {
     
     inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     

@@ -1049,7 +1049,8 @@ object sapUiWebcMainComboBoxMod {
       __obj.asInstanceOf[ComboBoxSettings]
     }
     
-    extension [Self <: ComboBoxSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ComboBoxSettings] (val x: Self) extends AnyVal {
       
       inline def setAccessibleName(value: String | PropertyBindingInfo): Self = StObject.set(x, "accessibleName", value.asInstanceOf[js.Any])
       

@@ -34,7 +34,8 @@ object DocumentTemplate {
     __obj.asInstanceOf[DocumentTemplate]
   }
   
-  extension [Self <: DocumentTemplate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DocumentTemplate] (val x: Self) extends AnyVal {
     
     inline def setDocumentEndPage(value: String): Self = StObject.set(x, "documentEndPage", value.asInstanceOf[js.Any])
     

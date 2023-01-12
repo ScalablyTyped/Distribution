@@ -41,7 +41,8 @@ object distSrcUtilsBuildRawMessageMod {
       __obj.asInstanceOf[RawMessageAndMessage]
     }
     
-    extension [Self <: RawMessageAndMessage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RawMessageAndMessage] (val x: Self) extends AnyVal {
       
       inline def setMsg(value: Message): Self = StObject.set(x, "msg", value.asInstanceOf[js.Any])
       

@@ -113,7 +113,8 @@ object DescribeBackupJobOutput {
     __obj.asInstanceOf[DescribeBackupJobOutput]
   }
   
-  extension [Self <: DescribeBackupJobOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeBackupJobOutput] (val x: Self) extends AnyVal {
     
     inline def setAccountId(value: AccountId): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
     

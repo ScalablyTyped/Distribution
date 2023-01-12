@@ -28,7 +28,8 @@ object ToISOTimeOptions {
     __obj.asInstanceOf[ToISOTimeOptions]
   }
   
-  extension [Self <: ToISOTimeOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ToISOTimeOptions] (val x: Self) extends AnyVal {
     
     inline def setExtendedZone(value: Boolean): Self = StObject.set(x, "extendedZone", value.asInstanceOf[js.Any])
     

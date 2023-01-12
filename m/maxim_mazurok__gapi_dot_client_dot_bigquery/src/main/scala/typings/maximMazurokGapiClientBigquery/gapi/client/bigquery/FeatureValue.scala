@@ -22,7 +22,8 @@ object FeatureValue {
     __obj.asInstanceOf[FeatureValue]
   }
   
-  extension [Self <: FeatureValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FeatureValue] (val x: Self) extends AnyVal {
     
     inline def setCategoricalValue(value: CategoricalValue): Self = StObject.set(x, "categoricalValue", value.asInstanceOf[js.Any])
     

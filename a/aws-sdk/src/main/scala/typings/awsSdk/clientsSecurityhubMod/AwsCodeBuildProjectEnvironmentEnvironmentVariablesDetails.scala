@@ -28,7 +28,8 @@ object AwsCodeBuildProjectEnvironmentEnvironmentVariablesDetails {
     __obj.asInstanceOf[AwsCodeBuildProjectEnvironmentEnvironmentVariablesDetails]
   }
   
-  extension [Self <: AwsCodeBuildProjectEnvironmentEnvironmentVariablesDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsCodeBuildProjectEnvironmentEnvironmentVariablesDetails] (val x: Self) extends AnyVal {
     
     inline def setName(value: NonEmptyString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     

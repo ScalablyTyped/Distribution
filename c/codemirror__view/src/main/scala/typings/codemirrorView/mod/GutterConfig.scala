@@ -70,7 +70,8 @@ object GutterConfig {
     __obj.asInstanceOf[GutterConfig]
   }
   
-  extension [Self <: GutterConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GutterConfig] (val x: Self) extends AnyVal {
     
     inline def setClass(value: String): Self = StObject.set(x, "class", value.asInstanceOf[js.Any])
     

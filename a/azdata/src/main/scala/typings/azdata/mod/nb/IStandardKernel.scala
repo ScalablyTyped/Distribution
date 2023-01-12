@@ -19,7 +19,8 @@ object IStandardKernel {
     __obj.asInstanceOf[IStandardKernel]
   }
   
-  extension [Self <: IStandardKernel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IStandardKernel] (val x: Self) extends AnyVal {
     
     inline def setConnectionProviderIds(value: js.Array[String]): Self = StObject.set(x, "connectionProviderIds", value.asInstanceOf[js.Any])
     

@@ -88,7 +88,8 @@ object Lasteditedat {
     __obj.asInstanceOf[Lasteditedat]
   }
   
-  extension [Self <: Lasteditedat](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Lasteditedat] (val x: Self) extends AnyVal {
     
     inline def setAuthor(
       value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['nullable-simple-user'] */ js.Any

@@ -15,7 +15,8 @@ object Logout {
     __obj.asInstanceOf[Logout]
   }
   
-  extension [Self <: Logout](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Logout] (val x: Self) extends AnyVal {
     
     inline def setLogout(value: js.Object): Self = StObject.set(x, "logout", value.asInstanceOf[js.Any])
     

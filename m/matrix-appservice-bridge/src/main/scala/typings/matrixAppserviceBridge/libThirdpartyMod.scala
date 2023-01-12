@@ -26,7 +26,8 @@ object libThirdpartyMod {
       __obj.asInstanceOf[ProtocolInstance]
     }
     
-    extension [Self <: ProtocolInstance](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProtocolInstance] (val x: Self) extends AnyVal {
       
       inline def setDesc(value: String): Self = StObject.set(x, "desc", value.asInstanceOf[js.Any])
       
@@ -57,7 +58,8 @@ object libThirdpartyMod {
       __obj.asInstanceOf[ThirdpartyLocationResponse]
     }
     
-    extension [Self <: ThirdpartyLocationResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ThirdpartyLocationResponse] (val x: Self) extends AnyVal {
       
       inline def setAlias(value: String): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
       
@@ -92,7 +94,8 @@ object libThirdpartyMod {
       __obj.asInstanceOf[ThirdpartyProtocolResponse]
     }
     
-    extension [Self <: ThirdpartyProtocolResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ThirdpartyProtocolResponse] (val x: Self) extends AnyVal {
       
       inline def setField_types(value: StringDictionary[Placeholder]): Self = StObject.set(x, "field_types", value.asInstanceOf[js.Any])
       
@@ -127,7 +130,8 @@ object libThirdpartyMod {
       __obj.asInstanceOf[ThirdpartyUserResponse]
     }
     
-    extension [Self <: ThirdpartyUserResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ThirdpartyUserResponse] (val x: Self) extends AnyVal {
       
       inline def setFields(value: Record[String, Any]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
       

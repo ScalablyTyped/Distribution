@@ -22,7 +22,8 @@ object UnityTrackMetadata {
     __obj.asInstanceOf[UnityTrackMetadata]
   }
   
-  extension [Self <: UnityTrackMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UnityTrackMetadata] (val x: Self) extends AnyVal {
     
     inline def setAlbum(value: String): Self = StObject.set(x, "album", value.asInstanceOf[js.Any])
     

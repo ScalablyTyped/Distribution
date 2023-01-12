@@ -55,7 +55,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setCheckBidi(value: Boolean): Self = StObject.set(x, "checkBidi", value.asInstanceOf[js.Any])
       
@@ -109,7 +110,8 @@ object mod {
       __obj.asInstanceOf[ToASCIIOptions]
     }
     
-    extension [Self <: ToASCIIOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ToASCIIOptions] (val x: Self) extends AnyVal {
       
       inline def setProcessingOption(value: ProcessingOption): Self = StObject.set(x, "processingOption", value.asInstanceOf[js.Any])
       

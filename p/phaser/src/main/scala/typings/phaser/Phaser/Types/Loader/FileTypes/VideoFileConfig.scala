@@ -44,7 +44,8 @@ object VideoFileConfig {
     __obj.asInstanceOf[VideoFileConfig]
   }
   
-  extension [Self <: VideoFileConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VideoFileConfig] (val x: Self) extends AnyVal {
     
     inline def setAsBlob(value: Boolean): Self = StObject.set(x, "asBlob", value.asInstanceOf[js.Any])
     

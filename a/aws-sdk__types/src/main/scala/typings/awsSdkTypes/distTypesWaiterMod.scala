@@ -52,7 +52,8 @@ object distTypesWaiterMod {
       __obj.asInstanceOf[WaiterConfiguration[Client]]
     }
     
-    extension [Self <: WaiterConfiguration[?], Client](x: Self & WaiterConfiguration[Client]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WaiterConfiguration[?], Client] (val x: Self & WaiterConfiguration[Client]) extends AnyVal {
       
       inline def setAbortController(value: AbortController): Self = StObject.set(x, "abortController", value.asInstanceOf[js.Any])
       

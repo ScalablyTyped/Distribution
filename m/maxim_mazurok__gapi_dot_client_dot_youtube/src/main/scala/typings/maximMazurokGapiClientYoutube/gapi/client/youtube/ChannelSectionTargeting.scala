@@ -22,7 +22,8 @@ object ChannelSectionTargeting {
     __obj.asInstanceOf[ChannelSectionTargeting]
   }
   
-  extension [Self <: ChannelSectionTargeting](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChannelSectionTargeting] (val x: Self) extends AnyVal {
     
     inline def setCountries(value: js.Array[String]): Self = StObject.set(x, "countries", value.asInstanceOf[js.Any])
     

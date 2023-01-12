@@ -77,7 +77,8 @@ object StalkerOptions {
     __obj.asInstanceOf[StalkerOptions]
   }
   
-  extension [Self <: StalkerOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StalkerOptions] (val x: Self) extends AnyVal {
     
     inline def setData(value: NativePointerValue): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

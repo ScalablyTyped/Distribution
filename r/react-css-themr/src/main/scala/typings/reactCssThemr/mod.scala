@@ -135,7 +135,8 @@ object mod {
       __obj.asInstanceOf[IThemrOptions]
     }
     
-    extension [Self <: IThemrOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IThemrOptions] (val x: Self) extends AnyVal {
       
       inline def setComposeTheme(value: deeply | softly | `false`): Self = StObject.set(x, "composeTheme", value.asInstanceOf[js.Any])
       
@@ -182,7 +183,8 @@ object mod {
       __obj.asInstanceOf[ThemeProviderProps]
     }
     
-    extension [Self <: ThemeProviderProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ThemeProviderProps] (val x: Self) extends AnyVal {
       
       inline def setInnerRef(value: js.Function): Self = StObject.set(x, "innerRef", value.asInstanceOf[js.Any])
       

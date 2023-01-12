@@ -18,7 +18,8 @@ object MonitoringResources {
     __obj.asInstanceOf[MonitoringResources]
   }
   
-  extension [Self <: MonitoringResources](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MonitoringResources] (val x: Self) extends AnyVal {
     
     inline def setClusterConfig(value: MonitoringClusterConfig): Self = StObject.set(x, "ClusterConfig", value.asInstanceOf[js.Any])
   }

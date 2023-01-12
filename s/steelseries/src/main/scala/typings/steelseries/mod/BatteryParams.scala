@@ -17,7 +17,8 @@ object BatteryParams {
     __obj.asInstanceOf[BatteryParams]
   }
   
-  extension [Self <: BatteryParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatteryParams] (val x: Self) extends AnyVal {
     
     inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     

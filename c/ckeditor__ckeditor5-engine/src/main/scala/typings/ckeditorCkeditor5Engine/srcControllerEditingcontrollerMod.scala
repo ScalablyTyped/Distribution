@@ -93,7 +93,8 @@ object srcControllerEditingcontrollerMod {
       __obj.asInstanceOf[EditingController]
     }
     
-    extension [Self <: EditingController](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EditingController] (val x: Self) extends AnyVal {
       
       inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
       

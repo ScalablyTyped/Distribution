@@ -105,7 +105,8 @@ object Mesh {
     __obj.asInstanceOf[Mesh]
   }
   
-  extension [Self <: Mesh](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Mesh] (val x: Self) extends AnyVal {
     
     inline def setAttributes(value: Any): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     

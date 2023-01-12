@@ -33,7 +33,8 @@ object ShapePoint {
     __obj.asInstanceOf[ShapePoint]
   }
   
-  extension [Self <: ShapePoint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShapePoint] (val x: Self) extends AnyVal {
     
     inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     

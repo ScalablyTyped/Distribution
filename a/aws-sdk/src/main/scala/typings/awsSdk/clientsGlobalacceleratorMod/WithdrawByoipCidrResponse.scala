@@ -18,7 +18,8 @@ object WithdrawByoipCidrResponse {
     __obj.asInstanceOf[WithdrawByoipCidrResponse]
   }
   
-  extension [Self <: WithdrawByoipCidrResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WithdrawByoipCidrResponse] (val x: Self) extends AnyVal {
     
     inline def setByoipCidr(value: ByoipCidr): Self = StObject.set(x, "ByoipCidr", value.asInstanceOf[js.Any])
     

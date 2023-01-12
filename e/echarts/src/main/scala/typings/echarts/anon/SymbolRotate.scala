@@ -226,7 +226,8 @@ object SymbolRotate {
     __obj.asInstanceOf[SymbolRotate]
   }
   
-  extension [Self <: SymbolRotate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SymbolRotate] (val x: Self) extends AnyVal {
     
     inline def setCoord(value: js.Array[Any]): Self = StObject.set(x, "coord", value.asInstanceOf[js.Any])
     

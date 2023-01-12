@@ -22,7 +22,8 @@ object aspectRatioBoxTypesMod {
       __obj.asInstanceOf[AspectRatioBoxProps[T]]
     }
     
-    extension [Self <: AspectRatioBoxProps[?], T /* <: ElementType[Any] */](x: Self & AspectRatioBoxProps[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AspectRatioBoxProps[?], T /* <: ElementType[Any] */] (val x: Self & AspectRatioBoxProps[T]) extends AnyVal {
       
       inline def setAspectRatio(value: Double): Self = StObject.set(x, "aspectRatio", value.asInstanceOf[js.Any])
       

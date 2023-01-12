@@ -21,7 +21,8 @@ object Metadata {
     __obj.asInstanceOf[Metadata]
   }
   
-  extension [Self <: Metadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Metadata] (val x: Self) extends AnyVal {
     
     inline def setObject_created(value: String): Self = StObject.set(x, "object_created", value.asInstanceOf[js.Any])
     

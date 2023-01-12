@@ -18,7 +18,8 @@ object GamepadHapticActuator {
     __obj.asInstanceOf[GamepadHapticActuator]
   }
   
-  extension [Self <: GamepadHapticActuator](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GamepadHapticActuator] (val x: Self) extends AnyVal {
     
     inline def setType(value: GamepadHapticActuatorType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

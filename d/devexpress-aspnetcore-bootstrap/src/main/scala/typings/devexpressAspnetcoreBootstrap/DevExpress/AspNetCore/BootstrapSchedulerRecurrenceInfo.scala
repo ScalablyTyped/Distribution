@@ -83,7 +83,8 @@ object BootstrapSchedulerRecurrenceInfo {
     __obj.asInstanceOf[BootstrapSchedulerRecurrenceInfo]
   }
   
-  extension [Self <: BootstrapSchedulerRecurrenceInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BootstrapSchedulerRecurrenceInfo] (val x: Self) extends AnyVal {
     
     inline def setGetDayNumber(value: () => Double): Self = StObject.set(x, "getDayNumber", js.Any.fromFunction0(value))
     

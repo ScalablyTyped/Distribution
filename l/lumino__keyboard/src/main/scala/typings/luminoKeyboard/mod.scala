@@ -206,7 +206,8 @@ object mod {
       __obj.asInstanceOf[IKeyboardLayout]
     }
     
-    extension [Self <: IKeyboardLayout](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IKeyboardLayout] (val x: Self) extends AnyVal {
       
       inline def setIsModifierKey(value: String => Boolean): Self = StObject.set(x, "isModifierKey", js.Any.fromFunction1(value))
       

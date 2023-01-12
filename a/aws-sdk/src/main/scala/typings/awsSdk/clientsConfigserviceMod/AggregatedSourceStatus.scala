@@ -48,7 +48,8 @@ object AggregatedSourceStatus {
     __obj.asInstanceOf[AggregatedSourceStatus]
   }
   
-  extension [Self <: AggregatedSourceStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AggregatedSourceStatus] (val x: Self) extends AnyVal {
     
     inline def setAwsRegion(value: AwsRegion): Self = StObject.set(x, "AwsRegion", value.asInstanceOf[js.Any])
     

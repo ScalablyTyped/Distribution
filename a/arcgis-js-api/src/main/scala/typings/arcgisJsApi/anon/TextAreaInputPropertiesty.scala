@@ -32,7 +32,8 @@ object TextAreaInputPropertiesty {
     __obj.asInstanceOf[TextAreaInputPropertiesty]
   }
   
-  extension [Self <: TextAreaInputPropertiesty](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextAreaInputPropertiesty] (val x: Self) extends AnyVal {
     
     inline def setMaxLength(value: Double): Self = StObject.set(x, "maxLength", value.asInstanceOf[js.Any])
     

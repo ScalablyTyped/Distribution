@@ -33,7 +33,8 @@ object JvmArgs {
     __obj.asInstanceOf[JvmArgs]
   }
   
-  extension [Self <: JvmArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JvmArgs] (val x: Self) extends AnyVal {
     
     inline def setArgs(value: Any): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     

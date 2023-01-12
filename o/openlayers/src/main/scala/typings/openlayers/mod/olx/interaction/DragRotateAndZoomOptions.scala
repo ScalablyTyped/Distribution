@@ -19,7 +19,8 @@ object DragRotateAndZoomOptions {
     __obj.asInstanceOf[DragRotateAndZoomOptions]
   }
   
-  extension [Self <: DragRotateAndZoomOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DragRotateAndZoomOptions] (val x: Self) extends AnyVal {
     
     inline def setCondition(value: /* event */ MapBrowserEvent => Boolean): Self = StObject.set(x, "condition", js.Any.fromFunction1(value))
     

@@ -43,7 +43,8 @@ object distAccordionSrcUseAccordionItemsMod {
       __obj.asInstanceOf[AccordionBuilderHeader]
     }
     
-    extension [Self <: AccordionBuilderHeader](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AccordionBuilderHeader] (val x: Self) extends AnyVal {
       
       inline def setElementType(
         value: /* import warning: importer.ImportType#apply Failed type conversion: react.react.ReactElement['type'] */ js.Any
@@ -84,7 +85,8 @@ object distAccordionSrcUseAccordionItemsMod {
       __obj.asInstanceOf[AccordionBuilderItem]
     }
     
-    extension [Self <: AccordionBuilderItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AccordionBuilderItem] (val x: Self) extends AnyVal {
       
       inline def setHeader(value: AccordionBuilderHeader): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
       
@@ -116,7 +118,8 @@ object distAccordionSrcUseAccordionItemsMod {
       __obj.asInstanceOf[AccordionBuilderPanel]
     }
     
-    extension [Self <: AccordionBuilderPanel](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AccordionBuilderPanel] (val x: Self) extends AnyVal {
       
       inline def setElementType(
         value: /* import warning: importer.ImportType#apply Failed type conversion: react.react.ReactElement['type'] */ js.Any

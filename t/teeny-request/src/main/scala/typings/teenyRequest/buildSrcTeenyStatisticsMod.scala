@@ -147,7 +147,8 @@ object buildSrcTeenyStatisticsMod {
       __obj.asInstanceOf[TeenyStatisticsConfig]
     }
     
-    extension [Self <: TeenyStatisticsConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TeenyStatisticsConfig] (val x: Self) extends AnyVal {
       
       inline def setConcurrentRequests(value: Double): Self = StObject.set(x, "concurrentRequests", value.asInstanceOf[js.Any])
     }
@@ -164,7 +165,8 @@ object buildSrcTeenyStatisticsMod {
       __obj.asInstanceOf[TeenyStatisticsCounters]
     }
     
-    extension [Self <: TeenyStatisticsCounters](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TeenyStatisticsCounters] (val x: Self) extends AnyVal {
       
       inline def setConcurrentRequests(value: Double): Self = StObject.set(x, "concurrentRequests", value.asInstanceOf[js.Any])
     }
@@ -188,7 +190,8 @@ object buildSrcTeenyStatisticsMod {
       __obj.asInstanceOf[TeenyStatisticsOptions]
     }
     
-    extension [Self <: TeenyStatisticsOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TeenyStatisticsOptions] (val x: Self) extends AnyVal {
       
       inline def setConcurrentRequests(value: Double): Self = StObject.set(x, "concurrentRequests", value.asInstanceOf[js.Any])
       

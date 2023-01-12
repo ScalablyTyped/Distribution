@@ -57,7 +57,8 @@ object RegionId {
     __obj.asInstanceOf[RegionId]
   }
   
-  extension [Self <: RegionId](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RegionId] (val x: Self) extends AnyVal {
     
     inline def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
     

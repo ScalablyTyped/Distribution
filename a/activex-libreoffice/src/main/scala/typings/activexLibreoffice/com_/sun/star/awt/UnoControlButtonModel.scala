@@ -236,7 +236,8 @@ object UnoControlButtonModel {
     __obj.asInstanceOf[UnoControlButtonModel]
   }
   
-  extension [Self <: UnoControlButtonModel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UnoControlButtonModel] (val x: Self) extends AnyVal {
     
     inline def setAlign(value: Double): Self = StObject.set(x, "Align", value.asInstanceOf[js.Any])
     

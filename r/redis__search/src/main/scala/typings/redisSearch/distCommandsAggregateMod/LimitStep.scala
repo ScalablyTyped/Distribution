@@ -21,7 +21,8 @@ object LimitStep {
     __obj.asInstanceOf[LimitStep]
   }
   
-  extension [Self <: LimitStep](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LimitStep] (val x: Self) extends AnyVal {
     
     inline def setFrom(value: Double): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     

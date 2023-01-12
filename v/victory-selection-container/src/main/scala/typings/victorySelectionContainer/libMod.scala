@@ -65,7 +65,8 @@ object libMod {
       __obj.asInstanceOf[PointsInterface]
     }
     
-    extension [Self <: PointsInterface](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PointsInterface] (val x: Self) extends AnyVal {
       
       inline def setChildName(value: String | js.Array[String]): Self = StObject.set(x, "childName", value.asInstanceOf[js.Any])
       
@@ -118,7 +119,8 @@ object libMod {
       __obj.asInstanceOf[VictorySelectionContainerProps]
     }
     
-    extension [Self <: VictorySelectionContainerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VictorySelectionContainerProps] (val x: Self) extends AnyVal {
       
       inline def setActivateSelectedData(value: Boolean): Self = StObject.set(x, "activateSelectedData", value.asInstanceOf[js.Any])
       

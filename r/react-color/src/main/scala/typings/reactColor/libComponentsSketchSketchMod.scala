@@ -44,7 +44,8 @@ object libComponentsSketchSketchMod {
       __obj.asInstanceOf[SketchPickerProps]
     }
     
-    extension [Self <: SketchPickerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SketchPickerProps] (val x: Self) extends AnyVal {
       
       inline def setDisableAlpha(value: Boolean): Self = StObject.set(x, "disableAlpha", value.asInstanceOf[js.Any])
       
@@ -113,7 +114,8 @@ object libComponentsSketchSketchMod {
       __obj.asInstanceOf[SketchPickerStylesProps]
     }
     
-    extension [Self <: SketchPickerStylesProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SketchPickerStylesProps] (val x: Self) extends AnyVal {
       
       inline def setActiveColor(value: CSSProperties): Self = StObject.set(x, "activeColor", value.asInstanceOf[js.Any])
       

@@ -23,7 +23,8 @@ object IEditorAction {
     __obj.asInstanceOf[IEditorAction]
   }
   
-  extension [Self <: IEditorAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IEditorAction] (val x: Self) extends AnyVal {
     
     inline def setAlias(value: String): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
     

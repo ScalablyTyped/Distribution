@@ -37,7 +37,8 @@ object ListGallery {
     __obj.asInstanceOf[ListGallery]
   }
   
-  extension [Self <: ListGallery](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListGallery] (val x: Self) extends AnyVal {
     
     inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     

@@ -43,7 +43,8 @@ object PathFinderPath {
     __obj.asInstanceOf[PathFinderPath]
   }
   
-  extension [Self <: PathFinderPath](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PathFinderPath] (val x: Self) extends AnyVal {
     
     inline def setCost(value: Double): Self = StObject.set(x, "cost", value.asInstanceOf[js.Any])
     

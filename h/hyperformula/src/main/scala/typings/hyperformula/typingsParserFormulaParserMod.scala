@@ -274,7 +274,8 @@ object typingsParserFormulaParserMod {
       __obj.asInstanceOf[ExtendedToken]
     }
     
-    extension [Self <: ExtendedToken](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExtendedToken] (val x: Self) extends AnyVal {
       
       inline def setLeadingWhitespace(value: IToken): Self = StObject.set(x, "leadingWhitespace", value.asInstanceOf[js.Any])
       
@@ -295,7 +296,8 @@ object typingsParserFormulaParserMod {
       __obj.asInstanceOf[FormulaParserResult]
     }
     
-    extension [Self <: FormulaParserResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FormulaParserResult] (val x: Self) extends AnyVal {
       
       inline def setAst(value: Ast): Self = StObject.set(x, "ast", value.asInstanceOf[js.Any])
       

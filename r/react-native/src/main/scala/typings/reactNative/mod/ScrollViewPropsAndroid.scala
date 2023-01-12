@@ -65,7 +65,8 @@ object ScrollViewPropsAndroid {
     __obj.asInstanceOf[ScrollViewPropsAndroid]
   }
   
-  extension [Self <: ScrollViewPropsAndroid](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScrollViewPropsAndroid] (val x: Self) extends AnyVal {
     
     inline def setEndFillColor(value: ColorValue): Self = StObject.set(x, "endFillColor", value.asInstanceOf[js.Any])
     

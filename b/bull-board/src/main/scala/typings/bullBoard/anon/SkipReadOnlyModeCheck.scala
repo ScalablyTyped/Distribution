@@ -15,7 +15,8 @@ object SkipReadOnlyModeCheck {
     __obj.asInstanceOf[SkipReadOnlyModeCheck]
   }
   
-  extension [Self <: SkipReadOnlyModeCheck](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SkipReadOnlyModeCheck] (val x: Self) extends AnyVal {
     
     inline def setSkipReadOnlyModeCheck(value: Boolean): Self = StObject.set(x, "skipReadOnlyModeCheck", value.asInstanceOf[js.Any])
     

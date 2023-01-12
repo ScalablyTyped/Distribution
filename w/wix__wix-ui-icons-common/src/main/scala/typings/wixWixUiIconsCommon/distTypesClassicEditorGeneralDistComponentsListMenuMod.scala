@@ -27,7 +27,8 @@ object distTypesClassicEditorGeneralDistComponentsListMenuMod extends Shortcut {
       __obj.asInstanceOf[ListMenuProps]
     }
     
-    extension [Self <: ListMenuProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListMenuProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

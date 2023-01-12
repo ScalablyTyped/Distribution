@@ -93,7 +93,8 @@ object EsriErrorDetails {
     __obj.asInstanceOf[EsriErrorDetails]
   }
   
-  extension [Self <: EsriErrorDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EsriErrorDetails] (val x: Self) extends AnyVal {
     
     inline def setGetHeader(value: /* headerName */ String => String): Self = StObject.set(x, "getHeader", js.Any.fromFunction1(value))
     

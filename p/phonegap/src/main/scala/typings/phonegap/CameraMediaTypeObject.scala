@@ -19,7 +19,8 @@ object CameraMediaTypeObject {
     __obj.asInstanceOf[CameraMediaTypeObject]
   }
   
-  extension [Self <: CameraMediaTypeObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CameraMediaTypeObject] (val x: Self) extends AnyVal {
     
     inline def setALLMEDIA(value: Double): Self = StObject.set(x, "ALLMEDIA", value.asInstanceOf[js.Any])
     

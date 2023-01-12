@@ -25,7 +25,8 @@ object AssetInlineGeneratorOptions {
     __obj.asInstanceOf[AssetInlineGeneratorOptions]
   }
   
-  extension [Self <: AssetInlineGeneratorOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssetInlineGeneratorOptions] (val x: Self) extends AnyVal {
     
     inline def setDataUrl(
       value: AssetGeneratorDataUrlOptions | (js.Function2[/* source */ String | Buffer, /* context */ Filename, String])

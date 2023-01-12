@@ -99,7 +99,8 @@ object KnockoutBindingHandlers {
     __obj.asInstanceOf[KnockoutBindingHandlers]
   }
   
-  extension [Self <: KnockoutBindingHandlers](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KnockoutBindingHandlers] (val x: Self) extends AnyVal {
     
     inline def setAttr(value: KnockoutBindingHandler): Self = StObject.set(x, "attr", value.asInstanceOf[js.Any])
     

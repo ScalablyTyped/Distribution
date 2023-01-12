@@ -32,7 +32,8 @@ object InstancePatchStateFilter {
     __obj.asInstanceOf[InstancePatchStateFilter]
   }
   
-  extension [Self <: InstancePatchStateFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InstancePatchStateFilter] (val x: Self) extends AnyVal {
     
     inline def setKey(value: InstancePatchStateFilterKey): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
     

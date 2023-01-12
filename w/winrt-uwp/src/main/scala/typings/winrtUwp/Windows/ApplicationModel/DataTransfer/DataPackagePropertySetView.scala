@@ -104,7 +104,8 @@ object DataPackagePropertySetView {
     __obj.asInstanceOf[DataPackagePropertySetView]
   }
   
-  extension [Self <: DataPackagePropertySetView](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataPackagePropertySetView] (val x: Self) extends AnyVal {
     
     inline def setApplicationListingUri(value: Uri): Self = StObject.set(x, "applicationListingUri", value.asInstanceOf[js.Any])
     

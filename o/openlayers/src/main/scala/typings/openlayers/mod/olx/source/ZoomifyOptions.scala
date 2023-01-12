@@ -33,7 +33,8 @@ object ZoomifyOptions {
     __obj.asInstanceOf[ZoomifyOptions]
   }
   
-  extension [Self <: ZoomifyOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ZoomifyOptions] (val x: Self) extends AnyVal {
     
     inline def setAttributions(value: AttributionLike): Self = StObject.set(x, "attributions", value.asInstanceOf[js.Any])
     

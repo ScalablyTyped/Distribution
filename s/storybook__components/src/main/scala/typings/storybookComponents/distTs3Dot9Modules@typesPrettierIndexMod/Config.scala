@@ -18,7 +18,8 @@ object Config {
     __obj.asInstanceOf[Config]
   }
   
-  extension [Self <: Config](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
     
     inline def setOverrides(value: js.Array[ExcludeFiles]): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
     

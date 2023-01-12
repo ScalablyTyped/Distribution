@@ -19,7 +19,8 @@ object GMD {
     __obj.asInstanceOf[GMD]
   }
   
-  extension [Self <: GMD](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GMD] (val x: Self) extends AnyVal {
     
     inline def setGMD(value: js.Array[String]): Self = StObject.set(x, "GMD", value.asInstanceOf[js.Any])
     

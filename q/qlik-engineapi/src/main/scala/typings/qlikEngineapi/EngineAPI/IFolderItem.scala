@@ -26,7 +26,8 @@ object IFolderItem {
     __obj.asInstanceOf[IFolderItem]
   }
   
-  extension [Self <: IFolderItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IFolderItem] (val x: Self) extends AnyVal {
     
     inline def setQName(value: String): Self = StObject.set(x, "qName", value.asInstanceOf[js.Any])
     

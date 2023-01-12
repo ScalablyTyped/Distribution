@@ -28,7 +28,8 @@ object TasksParentTaskInfo {
     __obj.asInstanceOf[TasksParentTaskInfo]
   }
   
-  extension [Self <: TasksParentTaskInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TasksParentTaskInfo] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: js.Array[TasksTaskInfo]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

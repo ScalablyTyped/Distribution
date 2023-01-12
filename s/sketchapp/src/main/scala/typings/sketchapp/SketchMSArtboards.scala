@@ -17,7 +17,8 @@ object SketchMSArtboards {
     __obj.asInstanceOf[SketchMSArtboards]
   }
   
-  extension [Self <: SketchMSArtboards](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SketchMSArtboards] (val x: Self) extends AnyVal {
     
     inline def setArtboards(value: SketchMSArtboard): Self = StObject.set(x, "artboards", value.asInstanceOf[js.Any])
     

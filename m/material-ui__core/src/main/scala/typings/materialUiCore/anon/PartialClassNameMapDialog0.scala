@@ -16,7 +16,8 @@ object PartialClassNameMapDialog0 {
     __obj.asInstanceOf[PartialClassNameMapDialog0]
   }
   
-  extension [Self <: PartialClassNameMapDialog0](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialClassNameMapDialog0] (val x: Self) extends AnyVal {
     
     inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     

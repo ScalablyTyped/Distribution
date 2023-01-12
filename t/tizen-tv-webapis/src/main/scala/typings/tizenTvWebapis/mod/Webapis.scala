@@ -53,7 +53,8 @@ object Webapis {
     __obj.asInstanceOf[Webapis]
   }
   
-  extension [Self <: Webapis](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Webapis] (val x: Self) extends AnyVal {
     
     inline def setAdinfo(value: AdInfoManager): Self = StObject.set(x, "adinfo", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object NavBarEvent {
     __obj.asInstanceOf[NavBarEvent]
   }
   
-  extension [Self <: NavBarEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NavBarEvent] (val x: Self) extends AnyVal {
     
     inline def setIsDefaultPrevented(value: () => Boolean): Self = StObject.set(x, "isDefaultPrevented", js.Any.fromFunction0(value))
     

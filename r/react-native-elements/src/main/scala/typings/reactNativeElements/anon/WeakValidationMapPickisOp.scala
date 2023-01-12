@@ -286,7 +286,8 @@ object WeakValidationMapPickisOp {
     __obj.asInstanceOf[WeakValidationMapPickisOp]
   }
   
-  extension [Self <: WeakValidationMapPickisOp](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WeakValidationMapPickisOp] (val x: Self) extends AnyVal {
     
     inline def setAccessibilityActions(
       value: /* import warning: importer.ImportType#apply Failed type conversion: null extends std.ReadonlyArray<react-native.react-native.AccessibilityActionInfo> | undefined ? react.react.Validator<std.ReadonlyArray<react-native.react-native.AccessibilityActionInfo> | undefined | null | undefined> : undefined extends std.ReadonlyArray<react-native.react-native.AccessibilityActionInfo> | undefined ? react.react.Validator<std.ReadonlyArray<react-native.react-native.AccessibilityActionInfo> | undefined | null | undefined> : react.react.Validator<std.ReadonlyArray<react-native.react-native.AccessibilityActionInfo> | undefined> */ js.Any

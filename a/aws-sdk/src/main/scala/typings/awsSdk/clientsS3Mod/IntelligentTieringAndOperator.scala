@@ -23,7 +23,8 @@ object IntelligentTieringAndOperator {
     __obj.asInstanceOf[IntelligentTieringAndOperator]
   }
   
-  extension [Self <: IntelligentTieringAndOperator](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IntelligentTieringAndOperator] (val x: Self) extends AnyVal {
     
     inline def setPrefix(value: Prefix): Self = StObject.set(x, "Prefix", value.asInstanceOf[js.Any])
     

@@ -637,7 +637,8 @@ object distSrcNominalTypesMod {
       __obj.asInstanceOf[Injector]
     }
     
-    extension [Self <: Injector](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Injector] (val x: Self) extends AnyVal {
       
       inline def setInject(value: Adaptable => Unit): Self = StObject.set(x, "inject", js.Any.fromFunction1(value))
     }

@@ -17,7 +17,8 @@ object FilterChangeEvent {
     __obj.asInstanceOf[FilterChangeEvent]
   }
   
-  extension [Self <: FilterChangeEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FilterChangeEvent] (val x: Self) extends AnyVal {
     
     inline def setExpression(value: Any): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
     

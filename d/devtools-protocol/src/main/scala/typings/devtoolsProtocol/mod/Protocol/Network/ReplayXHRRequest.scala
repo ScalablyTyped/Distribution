@@ -18,7 +18,8 @@ object ReplayXHRRequest {
     __obj.asInstanceOf[ReplayXHRRequest]
   }
   
-  extension [Self <: ReplayXHRRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReplayXHRRequest] (val x: Self) extends AnyVal {
     
     inline def setRequestId(value: RequestId): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
   }

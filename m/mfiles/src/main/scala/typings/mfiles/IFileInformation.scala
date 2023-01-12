@@ -27,7 +27,8 @@ object IFileInformation {
     __obj.asInstanceOf[IFileInformation]
   }
   
-  extension [Self <: IFileInformation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IFileInformation] (val x: Self) extends AnyVal {
     
     inline def setClear(value: () => Unit): Self = StObject.set(x, "Clear", js.Any.fromFunction0(value))
     

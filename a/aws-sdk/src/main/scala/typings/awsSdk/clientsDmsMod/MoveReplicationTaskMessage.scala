@@ -23,7 +23,8 @@ object MoveReplicationTaskMessage {
     __obj.asInstanceOf[MoveReplicationTaskMessage]
   }
   
-  extension [Self <: MoveReplicationTaskMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MoveReplicationTaskMessage] (val x: Self) extends AnyVal {
     
     inline def setReplicationTaskArn(value: String): Self = StObject.set(x, "ReplicationTaskArn", value.asInstanceOf[js.Any])
     

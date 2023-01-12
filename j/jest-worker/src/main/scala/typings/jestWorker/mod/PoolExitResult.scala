@@ -15,7 +15,8 @@ object PoolExitResult {
     __obj.asInstanceOf[PoolExitResult]
   }
   
-  extension [Self <: PoolExitResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PoolExitResult] (val x: Self) extends AnyVal {
     
     inline def setForceExited(value: Boolean): Self = StObject.set(x, "forceExited", value.asInstanceOf[js.Any])
   }

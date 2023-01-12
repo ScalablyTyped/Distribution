@@ -89,7 +89,8 @@ object outOptionsAppXOptionsMod {
       __obj.asInstanceOf[AppXOptions]
     }
     
-    extension [Self <: AppXOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AppXOptions] (val x: Self) extends AnyVal {
       
       inline def setAddAutoLaunchExtension(value: Boolean): Self = StObject.set(x, "addAutoLaunchExtension", value.asInstanceOf[js.Any])
       

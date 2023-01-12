@@ -23,7 +23,8 @@ object QueryStringKeyValuePair {
     __obj.asInstanceOf[QueryStringKeyValuePair]
   }
   
-  extension [Self <: QueryStringKeyValuePair](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryStringKeyValuePair] (val x: Self) extends AnyVal {
     
     inline def setKey(value: StringValue): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
     

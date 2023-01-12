@@ -19,7 +19,8 @@ object ConsentList {
     __obj.asInstanceOf[ConsentList]
   }
   
-  extension [Self <: ConsentList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConsentList] (val x: Self) extends AnyVal {
     
     inline def setConsents(value: js.Array[String]): Self = StObject.set(x, "consents", value.asInstanceOf[js.Any])
     

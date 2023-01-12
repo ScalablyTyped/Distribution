@@ -25,7 +25,8 @@ object RaphaelRgbComponentInfo {
     __obj.asInstanceOf[RaphaelRgbComponentInfo]
   }
   
-  extension [Self <: RaphaelRgbComponentInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RaphaelRgbComponentInfo] (val x: Self) extends AnyVal {
     
     inline def setB(value: Double): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
     

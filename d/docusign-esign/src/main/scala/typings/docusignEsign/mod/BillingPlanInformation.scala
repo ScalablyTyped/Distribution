@@ -122,7 +122,8 @@ object BillingPlanInformation {
     __obj.asInstanceOf[BillingPlanInformation]
   }
   
-  extension [Self <: BillingPlanInformation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BillingPlanInformation] (val x: Self) extends AnyVal {
     
     inline def setAppStoreReceipt(value: /* Contains information about an APP store receipt. */ AppStoreReceipt): Self = StObject.set(x, "appStoreReceipt", value.asInstanceOf[js.Any])
     

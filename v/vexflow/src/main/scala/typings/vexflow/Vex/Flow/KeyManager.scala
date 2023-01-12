@@ -31,7 +31,8 @@ object KeyManager {
     __obj.asInstanceOf[KeyManager]
   }
   
-  extension [Self <: KeyManager](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KeyManager] (val x: Self) extends AnyVal {
     
     inline def setGetAccidental(value: String => AccidentalNote): Self = StObject.set(x, "getAccidental", js.Any.fromFunction1(value))
     

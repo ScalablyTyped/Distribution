@@ -71,7 +71,8 @@ object SelectorQuery {
     __obj.asInstanceOf[SelectorQuery]
   }
   
-  extension [Self <: SelectorQuery](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SelectorQuery] (val x: Self) extends AnyVal {
     
     inline def setBoundingClientRect(value: () => SelectorQuery): Self = StObject.set(x, "boundingClientRect", js.Any.fromFunction0(value))
     

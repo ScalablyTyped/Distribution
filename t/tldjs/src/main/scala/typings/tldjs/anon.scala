@@ -38,7 +38,8 @@ object anon {
       __obj.asInstanceOf[Domain]
     }
     
-    extension [Self <: Domain](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Domain] (val x: Self) extends AnyVal {
       
       inline def setDomain(value: ReturnType[js.Function1[/* host */ String, String | Null]]): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
       
@@ -71,7 +72,8 @@ object anon {
       __obj.asInstanceOf[ExtractHostname]
     }
     
-    extension [Self <: ExtractHostname](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExtractHostname] (val x: Self) extends AnyVal {
       
       inline def setExtractHostname(value: ReturnType[js.Function1[/* host */ String, String | Null]]): Self = StObject.set(x, "extractHostname", value.asInstanceOf[js.Any])
       
@@ -147,7 +149,8 @@ object anon {
       __obj.asInstanceOf[GetDomain]
     }
     
-    extension [Self <: GetDomain](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetDomain] (val x: Self) extends AnyVal {
       
       inline def setExtractHostname(value: /* host */ String => String | Null): Self = StObject.set(x, "extractHostname", js.Any.fromFunction1(value))
       
@@ -224,7 +227,8 @@ object anon {
       __obj.asInstanceOf[Hostname]
     }
     
-    extension [Self <: Hostname](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Hostname] (val x: Self) extends AnyVal {
       
       inline def setDomain(
         value: ReturnType[
@@ -285,7 +289,8 @@ object anon {
       __obj.asInstanceOf[Rules]
     }
     
-    extension [Self <: Rules](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Rules] (val x: Self) extends AnyVal {
       
       inline def setExtractHostname(
         value: ReturnType[

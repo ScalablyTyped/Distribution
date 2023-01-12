@@ -22,7 +22,8 @@ object ModifierArguments {
     __obj.asInstanceOf[ModifierArguments[Options]]
   }
   
-  extension [Self <: ModifierArguments[?], Options /* <: Obj */](x: Self & ModifierArguments[Options]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModifierArguments[?], Options /* <: Obj */] (val x: Self & ModifierArguments[Options]) extends AnyVal {
     
     inline def setInstance(value: Instance): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
     

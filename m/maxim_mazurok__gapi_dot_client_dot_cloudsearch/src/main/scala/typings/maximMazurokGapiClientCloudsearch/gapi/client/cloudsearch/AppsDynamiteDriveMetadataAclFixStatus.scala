@@ -27,7 +27,8 @@ object AppsDynamiteDriveMetadataAclFixStatus {
     __obj.asInstanceOf[AppsDynamiteDriveMetadataAclFixStatus]
   }
   
-  extension [Self <: AppsDynamiteDriveMetadataAclFixStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppsDynamiteDriveMetadataAclFixStatus] (val x: Self) extends AnyVal {
     
     inline def setFixability(value: String): Self = StObject.set(x, "fixability", value.asInstanceOf[js.Any])
     

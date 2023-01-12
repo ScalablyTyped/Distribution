@@ -81,7 +81,8 @@ object InventorySource {
     __obj.asInstanceOf[InventorySource]
   }
   
-  extension [Self <: InventorySource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InventorySource] (val x: Self) extends AnyVal {
     
     inline def setCommitment(value: String): Self = StObject.set(x, "commitment", value.asInstanceOf[js.Any])
     

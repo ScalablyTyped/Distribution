@@ -23,7 +23,8 @@ object CreateLaunchConfigurationTemplateRequest {
     __obj.asInstanceOf[CreateLaunchConfigurationTemplateRequest]
   }
   
-  extension [Self <: CreateLaunchConfigurationTemplateRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateLaunchConfigurationTemplateRequest] (val x: Self) extends AnyVal {
     
     inline def setPostLaunchActions(value: PostLaunchActions): Self = StObject.set(x, "postLaunchActions", value.asInstanceOf[js.Any])
     

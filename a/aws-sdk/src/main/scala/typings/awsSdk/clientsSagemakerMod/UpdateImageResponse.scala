@@ -18,7 +18,8 @@ object UpdateImageResponse {
     __obj.asInstanceOf[UpdateImageResponse]
   }
   
-  extension [Self <: UpdateImageResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateImageResponse] (val x: Self) extends AnyVal {
     
     inline def setImageArn(value: ImageArn): Self = StObject.set(x, "ImageArn", value.asInstanceOf[js.Any])
     

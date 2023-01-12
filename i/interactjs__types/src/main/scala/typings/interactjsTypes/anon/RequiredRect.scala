@@ -26,7 +26,8 @@ object RequiredRect {
     __obj.asInstanceOf[RequiredRect]
   }
   
-  extension [Self <: RequiredRect](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RequiredRect] (val x: Self) extends AnyVal {
     
     inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
     

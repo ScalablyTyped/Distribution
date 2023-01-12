@@ -53,7 +53,8 @@ object IScriptSyntaxError {
     __obj.asInstanceOf[IScriptSyntaxError]
   }
   
-  extension [Self <: IScriptSyntaxError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IScriptSyntaxError] (val x: Self) extends AnyVal {
     
     inline def setQColInLine(value: Double): Self = StObject.set(x, "qColInLine", value.asInstanceOf[js.Any])
     

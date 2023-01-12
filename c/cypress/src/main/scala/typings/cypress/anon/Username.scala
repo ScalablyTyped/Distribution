@@ -17,7 +17,8 @@ object Username {
     __obj.asInstanceOf[Username[S]]
   }
   
-  extension [Self <: Username[?], S](x: Self & Username[S]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Username[?], S] (val x: Self & Username[S]) extends AnyVal {
     
     inline def setPassword(value: S): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
     

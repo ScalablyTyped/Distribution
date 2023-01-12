@@ -23,7 +23,8 @@ object typesUpdateAttributesRequestMod {
       __obj.asInstanceOf[UnmarshalledUpdateAttributesRequest]
     }
     
-    extension [Self <: UnmarshalledUpdateAttributesRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnmarshalledUpdateAttributesRequest] (val x: Self) extends AnyVal {
       
       inline def setBlacklist(value: js.Array[String]): Self = StObject.set(x, "Blacklist", value.asInstanceOf[js.Any])
       
@@ -47,7 +48,8 @@ object typesUpdateAttributesRequestMod {
       __obj.asInstanceOf[UpdateAttributesRequest]
     }
     
-    extension [Self <: UpdateAttributesRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UpdateAttributesRequest] (val x: Self) extends AnyVal {
       
       inline def setBlacklist(value: js.Array[String] | js.Iterable[String]): Self = StObject.set(x, "Blacklist", value.asInstanceOf[js.Any])
       

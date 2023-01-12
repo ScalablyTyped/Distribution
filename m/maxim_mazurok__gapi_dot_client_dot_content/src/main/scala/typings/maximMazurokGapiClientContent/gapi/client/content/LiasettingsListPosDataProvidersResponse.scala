@@ -19,7 +19,8 @@ object LiasettingsListPosDataProvidersResponse {
     __obj.asInstanceOf[LiasettingsListPosDataProvidersResponse]
   }
   
-  extension [Self <: LiasettingsListPosDataProvidersResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LiasettingsListPosDataProvidersResponse] (val x: Self) extends AnyVal {
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

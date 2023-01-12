@@ -34,7 +34,8 @@ object XViewPanesSupplier {
     __obj.asInstanceOf[XViewPanesSupplier]
   }
   
-  extension [Self <: XViewPanesSupplier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XViewPanesSupplier] (val x: Self) extends AnyVal {
     
     inline def setGetViewPanes(value: () => XIndexAccess): Self = StObject.set(x, "getViewPanes", js.Any.fromFunction0(value))
     

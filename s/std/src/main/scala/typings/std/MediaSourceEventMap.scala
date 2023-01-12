@@ -22,7 +22,8 @@ object MediaSourceEventMap {
     __obj.asInstanceOf[MediaSourceEventMap]
   }
   
-  extension [Self <: MediaSourceEventMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MediaSourceEventMap] (val x: Self) extends AnyVal {
     
     inline def setSourceclose(value: Event): Self = StObject.set(x, "sourceclose", value.asInstanceOf[js.Any])
     

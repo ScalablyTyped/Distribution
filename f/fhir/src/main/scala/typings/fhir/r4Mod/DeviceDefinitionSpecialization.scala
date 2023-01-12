@@ -29,7 +29,8 @@ object DeviceDefinitionSpecialization {
     __obj.asInstanceOf[DeviceDefinitionSpecialization]
   }
   
-  extension [Self <: DeviceDefinitionSpecialization](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeviceDefinitionSpecialization] (val x: Self) extends AnyVal {
     
     inline def setSystemType(value: String): Self = StObject.set(x, "systemType", value.asInstanceOf[js.Any])
     

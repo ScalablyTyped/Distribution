@@ -40,7 +40,8 @@ object MediaBundleAssetBuilder {
     __obj.asInstanceOf[MediaBundleAssetBuilder]
   }
   
-  extension [Self <: MediaBundleAssetBuilder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MediaBundleAssetBuilder] (val x: Self) extends AnyVal {
     
     inline def setWithData(value: Blob => MediaBundleAssetBuilder): Self = StObject.set(x, "withData", js.Any.fromFunction1(value))
     

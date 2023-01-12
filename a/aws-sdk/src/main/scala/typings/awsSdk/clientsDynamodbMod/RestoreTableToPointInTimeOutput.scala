@@ -18,7 +18,8 @@ object RestoreTableToPointInTimeOutput {
     __obj.asInstanceOf[RestoreTableToPointInTimeOutput]
   }
   
-  extension [Self <: RestoreTableToPointInTimeOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RestoreTableToPointInTimeOutput] (val x: Self) extends AnyVal {
     
     inline def setTableDescription(value: TableDescription): Self = StObject.set(x, "TableDescription", value.asInstanceOf[js.Any])
     

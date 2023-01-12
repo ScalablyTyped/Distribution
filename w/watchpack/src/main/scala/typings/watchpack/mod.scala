@@ -37,7 +37,8 @@ object mod {
       __obj.asInstanceOf[Entry]
     }
     
-    extension [Self <: Entry](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Entry] (val x: Self) extends AnyVal {
       
       inline def setSafeTime(value: Double): Self = StObject.set(x, "safeTime", value.asInstanceOf[js.Any])
       
@@ -58,7 +59,8 @@ object mod {
       __obj.asInstanceOf[WatchOptions]
     }
     
-    extension [Self <: WatchOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WatchOptions] (val x: Self) extends AnyVal {
       
       inline def setAggregateTimeout(value: Double): Self = StObject.set(x, "aggregateTimeout", value.asInstanceOf[js.Any])
       
@@ -83,7 +85,8 @@ object mod {
       __obj.asInstanceOf[WatcherOptions]
     }
     
-    extension [Self <: WatcherOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WatcherOptions] (val x: Self) extends AnyVal {
       
       inline def setFollowSymlinks(value: Boolean): Self = StObject.set(x, "followSymlinks", value.asInstanceOf[js.Any])
       

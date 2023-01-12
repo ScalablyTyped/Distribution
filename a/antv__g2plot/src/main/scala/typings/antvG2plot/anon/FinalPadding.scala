@@ -17,7 +17,8 @@ object FinalPadding {
     __obj.asInstanceOf[FinalPadding]
   }
   
-  extension [Self <: FinalPadding](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FinalPadding] (val x: Self) extends AnyVal {
     
     inline def setFinalPadding(value: js.Array[Double]): Self = StObject.set(x, "finalPadding", value.asInstanceOf[js.Any])
     

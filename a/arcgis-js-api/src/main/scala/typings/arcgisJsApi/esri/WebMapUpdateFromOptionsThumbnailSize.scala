@@ -27,7 +27,8 @@ object WebMapUpdateFromOptionsThumbnailSize {
     __obj.asInstanceOf[WebMapUpdateFromOptionsThumbnailSize]
   }
   
-  extension [Self <: WebMapUpdateFromOptionsThumbnailSize](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebMapUpdateFromOptionsThumbnailSize] (val x: Self) extends AnyVal {
     
     inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     

@@ -32,7 +32,8 @@ object AdminSdkConfig {
     __obj.asInstanceOf[AdminSdkConfig]
   }
   
-  extension [Self <: AdminSdkConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AdminSdkConfig] (val x: Self) extends AnyVal {
     
     inline def setDatabaseURL(value: String): Self = StObject.set(x, "databaseURL", value.asInstanceOf[js.Any])
     

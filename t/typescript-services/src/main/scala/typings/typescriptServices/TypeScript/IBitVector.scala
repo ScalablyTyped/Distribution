@@ -19,7 +19,8 @@ object IBitVector {
     __obj.asInstanceOf[IBitVector]
   }
   
-  extension [Self <: IBitVector](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IBitVector] (val x: Self) extends AnyVal {
     
     inline def setRelease(value: () => Unit): Self = StObject.set(x, "release", js.Any.fromFunction0(value))
     

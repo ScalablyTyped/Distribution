@@ -50,7 +50,8 @@ object distFetchRetryErrorMod {
       __obj.asInstanceOf[FetchRetryError]
     }
     
-    extension [Self <: FetchRetryError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FetchRetryError] (val x: Self) extends AnyVal {
       
       inline def setRes(value: Response): Self = StObject.set(x, "res", value.asInstanceOf[js.Any])
       

@@ -97,7 +97,8 @@ object FieldLoadOptions {
     __obj.asInstanceOf[FieldLoadOptions]
   }
   
-  extension [Self <: FieldLoadOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FieldLoadOptions] (val x: Self) extends AnyVal {
     
     inline def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
     

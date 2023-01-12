@@ -20,7 +20,8 @@ object RouteLayerSaveAsOptions {
     __obj.asInstanceOf[RouteLayerSaveAsOptions]
   }
   
-  extension [Self <: RouteLayerSaveAsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RouteLayerSaveAsOptions] (val x: Self) extends AnyVal {
     
     inline def setFolder(value: PortalFolder): Self = StObject.set(x, "folder", value.asInstanceOf[js.Any])
     

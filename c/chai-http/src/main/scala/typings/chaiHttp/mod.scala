@@ -74,7 +74,8 @@ object mod {
           __obj.asInstanceOf[ChaiStatic]
         }
         
-        extension [Self <: ChaiStatic](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: ChaiStatic] (val x: Self) extends AnyVal {
           
           inline def setRequest(value: ChaiHttpRequest): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
         }
@@ -91,7 +92,8 @@ object mod {
           __obj.asInstanceOf[TypeComparison]
         }
         
-        extension [Self <: TypeComparison](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: TypeComparison] (val x: Self) extends AnyVal {
           
           inline def setIp(value: Assertion): Self = StObject.set(x, "ip", value.asInstanceOf[js.Any])
         }

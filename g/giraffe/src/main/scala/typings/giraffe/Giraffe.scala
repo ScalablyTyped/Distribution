@@ -41,7 +41,8 @@ object Giraffe {
       __obj.asInstanceOf[AttachmentOptions]
     }
     
-    extension [Self <: AttachmentOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AttachmentOptions] (val x: Self) extends AnyVal {
       
       inline def setForceRender(value: Boolean): Self = StObject.set(x, "forceRender", value.asInstanceOf[js.Any])
       
@@ -168,7 +169,8 @@ object Giraffe {
       __obj.asInstanceOf[DefaultOptions]
     }
     
-    extension [Self <: DefaultOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DefaultOptions] (val x: Self) extends AnyVal {
       
       inline def setAlwaysRender(value: Boolean): Self = StObject.set(x, "alwaysRender", value.asInstanceOf[js.Any])
       
@@ -217,7 +219,8 @@ object Giraffe {
       __obj.asInstanceOf[GiraffeObject]
     }
     
-    extension [Self <: GiraffeObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GiraffeObject] (val x: Self) extends AnyVal {
       
       inline def setAfterDispose(value: () => Any): Self = StObject.set(x, "afterDispose", js.Any.fromFunction0(value))
       

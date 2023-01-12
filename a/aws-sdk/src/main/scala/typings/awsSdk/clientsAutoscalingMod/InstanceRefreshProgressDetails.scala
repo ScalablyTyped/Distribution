@@ -23,7 +23,8 @@ object InstanceRefreshProgressDetails {
     __obj.asInstanceOf[InstanceRefreshProgressDetails]
   }
   
-  extension [Self <: InstanceRefreshProgressDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InstanceRefreshProgressDetails] (val x: Self) extends AnyVal {
     
     inline def setLivePoolProgress(value: InstanceRefreshLivePoolProgress): Self = StObject.set(x, "LivePoolProgress", value.asInstanceOf[js.Any])
     

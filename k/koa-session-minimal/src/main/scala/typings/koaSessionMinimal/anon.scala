@@ -32,7 +32,8 @@ object anon {
       __obj.asInstanceOf[Cookie]
     }
     
-    extension [Self <: Cookie](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Cookie] (val x: Self) extends AnyVal {
       
       inline def setCookie(value: IOptions | (js.Function1[/* ctx */ js.UndefOr[Context], IOptions])): Self = StObject.set(x, "cookie", value.asInstanceOf[js.Any])
       
@@ -61,7 +62,8 @@ object anon {
       __obj.asInstanceOf[RegenerateId]
     }
     
-    extension [Self <: RegenerateId](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RegenerateId] (val x: Self) extends AnyVal {
       
       inline def setRegenerateId(value: () => Unit): Self = StObject.set(x, "regenerateId", js.Any.fromFunction0(value))
     }

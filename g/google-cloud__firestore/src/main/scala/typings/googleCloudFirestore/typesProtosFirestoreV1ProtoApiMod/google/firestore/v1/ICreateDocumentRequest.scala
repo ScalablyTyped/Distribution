@@ -29,7 +29,8 @@ object ICreateDocumentRequest {
     __obj.asInstanceOf[ICreateDocumentRequest]
   }
   
-  extension [Self <: ICreateDocumentRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICreateDocumentRequest] (val x: Self) extends AnyVal {
     
     inline def setCollectionId(value: String): Self = StObject.set(x, "collectionId", value.asInstanceOf[js.Any])
     

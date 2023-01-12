@@ -20,7 +20,8 @@ object ModalState {
     __obj.asInstanceOf[ModalState]
   }
   
-  extension [Self <: ModalState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModalState] (val x: Self) extends AnyVal {
     
     inline def setModal(value: HTMLDivElement): Self = StObject.set(x, "modal", value.asInstanceOf[js.Any])
     

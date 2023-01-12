@@ -49,7 +49,8 @@ object libExceptionMod {
       __obj.asInstanceOf[ExceptionProps[L]]
     }
     
-    extension [Self <: ExceptionProps[?], L](x: Self & ExceptionProps[L]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExceptionProps[?], L] (val x: Self & ExceptionProps[L]) extends AnyVal {
       
       inline def setActions(value: ReactNode): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
       

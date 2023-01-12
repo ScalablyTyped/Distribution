@@ -33,7 +33,8 @@ object GetModelsRequest {
     __obj.asInstanceOf[GetModelsRequest]
   }
   
-  extension [Self <: GetModelsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetModelsRequest] (val x: Self) extends AnyVal {
     
     inline def setMaxResults(value: modelsMaxPageSize): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     

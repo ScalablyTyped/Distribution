@@ -26,7 +26,8 @@ object SAMLConfigServerRequest {
     __obj.asInstanceOf[SAMLConfigServerRequest]
   }
   
-  extension [Self <: SAMLConfigServerRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SAMLConfigServerRequest] (val x: Self) extends AnyVal {
     
     inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     

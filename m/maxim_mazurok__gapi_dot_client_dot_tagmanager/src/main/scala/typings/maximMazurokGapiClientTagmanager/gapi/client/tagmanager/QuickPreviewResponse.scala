@@ -22,7 +22,8 @@ object QuickPreviewResponse {
     __obj.asInstanceOf[QuickPreviewResponse]
   }
   
-  extension [Self <: QuickPreviewResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QuickPreviewResponse] (val x: Self) extends AnyVal {
     
     inline def setCompilerError(value: Boolean): Self = StObject.set(x, "compilerError", value.asInstanceOf[js.Any])
     

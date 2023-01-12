@@ -16,7 +16,8 @@ object SecurityPolicyRuleMatcherConfig {
     __obj.asInstanceOf[SecurityPolicyRuleMatcherConfig]
   }
   
-  extension [Self <: SecurityPolicyRuleMatcherConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SecurityPolicyRuleMatcherConfig] (val x: Self) extends AnyVal {
     
     inline def setSrcIpRanges(value: js.Array[String]): Self = StObject.set(x, "srcIpRanges", value.asInstanceOf[js.Any])
     

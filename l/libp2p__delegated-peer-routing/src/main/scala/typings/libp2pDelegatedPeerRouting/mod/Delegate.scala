@@ -19,7 +19,8 @@ object Delegate {
     __obj.asInstanceOf[Delegate]
   }
   
-  extension [Self <: Delegate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Delegate] (val x: Self) extends AnyVal {
     
     inline def setDht(value: FindPeer): Self = StObject.set(x, "dht", value.asInstanceOf[js.Any])
     

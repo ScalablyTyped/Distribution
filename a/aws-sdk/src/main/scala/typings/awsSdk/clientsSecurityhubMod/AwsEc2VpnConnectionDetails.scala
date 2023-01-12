@@ -68,7 +68,8 @@ object AwsEc2VpnConnectionDetails {
     __obj.asInstanceOf[AwsEc2VpnConnectionDetails]
   }
   
-  extension [Self <: AwsEc2VpnConnectionDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsEc2VpnConnectionDetails] (val x: Self) extends AnyVal {
     
     inline def setCategory(value: NonEmptyString): Self = StObject.set(x, "Category", value.asInstanceOf[js.Any])
     

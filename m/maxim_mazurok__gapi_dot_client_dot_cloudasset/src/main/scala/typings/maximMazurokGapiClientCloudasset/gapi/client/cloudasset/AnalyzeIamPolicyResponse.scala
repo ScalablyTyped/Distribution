@@ -22,7 +22,8 @@ object AnalyzeIamPolicyResponse {
     __obj.asInstanceOf[AnalyzeIamPolicyResponse]
   }
   
-  extension [Self <: AnalyzeIamPolicyResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnalyzeIamPolicyResponse] (val x: Self) extends AnyVal {
     
     inline def setFullyExplored(value: Boolean): Self = StObject.set(x, "fullyExplored", value.asInstanceOf[js.Any])
     

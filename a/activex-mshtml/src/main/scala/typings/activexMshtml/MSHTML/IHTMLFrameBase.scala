@@ -46,7 +46,8 @@ object IHTMLFrameBase {
     __obj.asInstanceOf[IHTMLFrameBase]
   }
   
-  extension [Self <: IHTMLFrameBase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IHTMLFrameBase] (val x: Self) extends AnyVal {
     
     inline def setBorder(value: Any): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
     

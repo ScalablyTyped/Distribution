@@ -25,7 +25,8 @@ object SchedulerResource {
     __obj.asInstanceOf[SchedulerResource]
   }
   
-  extension [Self <: SchedulerResource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SchedulerResource] (val x: Self) extends AnyVal {
     
     inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     

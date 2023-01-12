@@ -20,7 +20,8 @@ object TSUnionType {
   @js.native
   def apply(types: js.Array[TSType]): TSUnionType = js.native
   
-  extension [Self <: TSUnionType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TSUnionType] (val x: Self) extends AnyVal {
     
     inline def setType(value: typings.babelTypes.babelTypesStrings.TSUnionType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

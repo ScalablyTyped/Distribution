@@ -23,7 +23,8 @@ object EnhancedCustomShapeTextPath {
     __obj.asInstanceOf[EnhancedCustomShapeTextPath]
   }
   
-  extension [Self <: EnhancedCustomShapeTextPath](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnhancedCustomShapeTextPath] (val x: Self) extends AnyVal {
     
     inline def setScaleX(value: Boolean): Self = StObject.set(x, "ScaleX", value.asInstanceOf[js.Any])
     

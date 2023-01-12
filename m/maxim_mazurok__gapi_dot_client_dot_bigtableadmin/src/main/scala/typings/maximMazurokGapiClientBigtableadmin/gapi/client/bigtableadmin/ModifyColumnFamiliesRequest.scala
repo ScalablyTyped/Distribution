@@ -19,7 +19,8 @@ object ModifyColumnFamiliesRequest {
     __obj.asInstanceOf[ModifyColumnFamiliesRequest]
   }
   
-  extension [Self <: ModifyColumnFamiliesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModifyColumnFamiliesRequest] (val x: Self) extends AnyVal {
     
     inline def setModifications(value: js.Array[Modification]): Self = StObject.set(x, "modifications", value.asInstanceOf[js.Any])
     

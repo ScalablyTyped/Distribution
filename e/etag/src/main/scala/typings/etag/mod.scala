@@ -29,7 +29,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setWeak(value: Boolean): Self = StObject.set(x, "weak", value.asInstanceOf[js.Any])
       
@@ -54,7 +55,8 @@ object mod {
       __obj.asInstanceOf[StatsLike]
     }
     
-    extension [Self <: StatsLike](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StatsLike] (val x: Self) extends AnyVal {
       
       inline def setCtime(value: js.Date): Self = StObject.set(x, "ctime", value.asInstanceOf[js.Any])
       

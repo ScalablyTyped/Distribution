@@ -18,7 +18,8 @@ object RequestFullScreenOptions {
     __obj.asInstanceOf[RequestFullScreenOptions]
   }
   
-  extension [Self <: RequestFullScreenOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RequestFullScreenOptions] (val x: Self) extends AnyVal {
     
     inline def setDirection(value: Double): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
   }

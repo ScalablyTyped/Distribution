@@ -132,7 +132,8 @@ object libCommonMessageWriterMod {
       __obj.asInstanceOf[MessageWriterOptions]
     }
     
-    extension [Self <: MessageWriterOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MessageWriterOptions] (val x: Self) extends AnyVal {
       
       inline def setCharset(value: MessageBufferEncoding): Self = StObject.set(x, "charset", value.asInstanceOf[js.Any])
       

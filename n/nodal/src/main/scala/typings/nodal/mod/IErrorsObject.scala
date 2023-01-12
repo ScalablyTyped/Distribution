@@ -18,7 +18,8 @@ object IErrorsObject {
     __obj.asInstanceOf[IErrorsObject]
   }
   
-  extension [Self <: IErrorsObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IErrorsObject] (val x: Self) extends AnyVal {
     
     inline def set_query(value: Any): Self = StObject.set(x, "_query", value.asInstanceOf[js.Any])
     

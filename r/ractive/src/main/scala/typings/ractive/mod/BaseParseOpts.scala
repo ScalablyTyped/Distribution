@@ -43,7 +43,8 @@ object BaseParseOpts {
     __obj.asInstanceOf[BaseParseOpts]
   }
   
-  extension [Self <: BaseParseOpts](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BaseParseOpts] (val x: Self) extends AnyVal {
     
     inline def setContextLines(value: Double): Self = StObject.set(x, "contextLines", value.asInstanceOf[js.Any])
     

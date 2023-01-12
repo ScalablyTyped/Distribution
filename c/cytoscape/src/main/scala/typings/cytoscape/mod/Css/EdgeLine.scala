@@ -100,7 +100,8 @@ object EdgeLine {
     __obj.asInstanceOf[EdgeLine]
   }
   
-  extension [Self <: EdgeLine](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EdgeLine] (val x: Self) extends AnyVal {
     
     inline def `setCurve-style`(value: PropertyValueEdge[haystack | straight | bezier | `unbundled-bezier` | segments | taxi]): Self = StObject.set(x, "curve-style", value.asInstanceOf[js.Any])
     

@@ -32,7 +32,8 @@ object IBaseCell {
     __obj.asInstanceOf[IBaseCell]
   }
   
-  extension [Self <: IBaseCell](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IBaseCell] (val x: Self) extends AnyVal {
     
     inline def setCell_type(value: String): Self = StObject.set(x, "cell_type", value.asInstanceOf[js.Any])
     

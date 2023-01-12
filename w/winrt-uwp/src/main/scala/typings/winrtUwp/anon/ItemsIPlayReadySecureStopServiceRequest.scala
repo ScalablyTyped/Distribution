@@ -18,7 +18,8 @@ object ItemsIPlayReadySecureStopServiceRequest {
     __obj.asInstanceOf[ItemsIPlayReadySecureStopServiceRequest]
   }
   
-  extension [Self <: ItemsIPlayReadySecureStopServiceRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ItemsIPlayReadySecureStopServiceRequest] (val x: Self) extends AnyVal {
     
     inline def setItems(value: IPlayReadySecureStopServiceRequest): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     

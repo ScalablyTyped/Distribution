@@ -30,7 +30,8 @@ object libPlotsHeatmapChartMod extends Shortcut {
       __obj.asInstanceOf[HeatmapOptions]
     }
     
-    extension [Self <: HeatmapOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HeatmapOptions] (val x: Self) extends AnyVal {
       
       inline def setShapeType(value: Any): Self = StObject.set(x, "shapeType", value.asInstanceOf[js.Any])
       

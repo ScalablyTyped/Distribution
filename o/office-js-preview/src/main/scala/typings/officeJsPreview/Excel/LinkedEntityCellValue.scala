@@ -95,7 +95,8 @@ object LinkedEntityCellValue {
     __obj.asInstanceOf[LinkedEntityCellValue]
   }
   
-  extension [Self <: LinkedEntityCellValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LinkedEntityCellValue] (val x: Self) extends AnyVal {
     
     inline def setBasicType(value: error | Error): Self = StObject.set(x, "basicType", value.asInstanceOf[js.Any])
     

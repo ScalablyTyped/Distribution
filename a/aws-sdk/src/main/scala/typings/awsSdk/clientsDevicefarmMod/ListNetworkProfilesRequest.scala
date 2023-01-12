@@ -28,7 +28,8 @@ object ListNetworkProfilesRequest {
     __obj.asInstanceOf[ListNetworkProfilesRequest]
   }
   
-  extension [Self <: ListNetworkProfilesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListNetworkProfilesRequest] (val x: Self) extends AnyVal {
     
     inline def setArn(value: AmazonResourceName): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     

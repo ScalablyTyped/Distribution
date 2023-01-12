@@ -53,7 +53,8 @@ object InsightRuleMetricDatapoint {
     __obj.asInstanceOf[InsightRuleMetricDatapoint]
   }
   
-  extension [Self <: InsightRuleMetricDatapoint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InsightRuleMetricDatapoint] (val x: Self) extends AnyVal {
     
     inline def setAverage(value: InsightRuleUnboundDouble): Self = StObject.set(x, "Average", value.asInstanceOf[js.Any])
     

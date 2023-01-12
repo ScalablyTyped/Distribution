@@ -27,7 +27,8 @@ object distSrcClassicEditorGeneralDistComponentsCaptchaBoldMod extends Shortcut 
       __obj.asInstanceOf[CaptchaBoldProps]
     }
     
-    extension [Self <: CaptchaBoldProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CaptchaBoldProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

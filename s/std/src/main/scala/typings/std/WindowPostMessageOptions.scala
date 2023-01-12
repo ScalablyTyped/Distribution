@@ -18,7 +18,8 @@ object WindowPostMessageOptions {
     __obj.asInstanceOf[WindowPostMessageOptions]
   }
   
-  extension [Self <: WindowPostMessageOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WindowPostMessageOptions] (val x: Self) extends AnyVal {
     
     inline def setTargetOrigin(value: java.lang.String): Self = StObject.set(x, "targetOrigin", value.asInstanceOf[js.Any])
     

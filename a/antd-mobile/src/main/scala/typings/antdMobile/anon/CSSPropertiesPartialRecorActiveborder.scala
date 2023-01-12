@@ -9995,7 +9995,8 @@ object CSSPropertiesPartialRecorActiveborder {
     __obj.asInstanceOf[CSSPropertiesPartialRecorActiveborder]
   }
   
-  extension [Self <: CSSPropertiesPartialRecorActiveborder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CSSPropertiesPartialRecorActiveborder] (val x: Self) extends AnyVal {
     
     inline def `set--active-border`(value: String): Self = StObject.set(x, "--active-border", value.asInstanceOf[js.Any])
     

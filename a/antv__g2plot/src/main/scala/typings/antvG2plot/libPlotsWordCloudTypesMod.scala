@@ -94,7 +94,8 @@ object libPlotsWordCloudTypesMod {
       __obj.asInstanceOf[Tag]
     }
     
-    extension [Self <: Tag](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Tag] (val x: Self) extends AnyVal {
       
       inline def setFont(value: String): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
       
@@ -171,7 +172,8 @@ object libPlotsWordCloudTypesMod {
       __obj.asInstanceOf[Word]
     }
     
-    extension [Self <: Word](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Word] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String | Double): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -248,7 +250,8 @@ object libPlotsWordCloudTypesMod {
       __obj.asInstanceOf[WordCloudOptions]
     }
     
-    extension [Self <: WordCloudOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WordCloudOptions] (val x: Self) extends AnyVal {
       
       inline def setColorField(value: String): Self = StObject.set(x, "colorField", value.asInstanceOf[js.Any])
       
@@ -371,7 +374,8 @@ object libPlotsWordCloudTypesMod {
       __obj.asInstanceOf[WordStyle]
     }
     
-    extension [Self <: WordStyle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WordStyle] (val x: Self) extends AnyVal {
       
       inline def setFontFamily(
         value: String | (js.Function3[

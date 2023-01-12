@@ -20,7 +20,8 @@ object JmxExporterInfo {
     __obj.asInstanceOf[JmxExporterInfo]
   }
   
-  extension [Self <: JmxExporterInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JmxExporterInfo] (val x: Self) extends AnyVal {
     
     inline def setEnabledInBroker(value: boolean): Self = StObject.set(x, "EnabledInBroker", value.asInstanceOf[js.Any])
   }

@@ -20,7 +20,8 @@ object `2` {
     __obj.asInstanceOf[`2`]
   }
   
-  extension [Self <: `2`](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: `2`] (val x: Self) extends AnyVal {
     
     inline def setOperationType(
       value: /* import warning: importer.ImportType#apply Failed type conversion: @firebase/auth.anon.LINK[keyof @firebase/auth.anon.LINK] */ js.Any

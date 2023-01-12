@@ -23,7 +23,8 @@ object CanaryRunTimeline {
     __obj.asInstanceOf[CanaryRunTimeline]
   }
   
-  extension [Self <: CanaryRunTimeline](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CanaryRunTimeline] (val x: Self) extends AnyVal {
     
     inline def setCompleted(value: js.Date): Self = StObject.set(x, "Completed", value.asInstanceOf[js.Any])
     

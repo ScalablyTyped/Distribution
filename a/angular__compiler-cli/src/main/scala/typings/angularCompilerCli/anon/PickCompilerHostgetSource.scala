@@ -31,7 +31,8 @@ object PickCompilerHostgetSource {
     __obj.asInstanceOf[PickCompilerHostgetSource]
   }
   
-  extension [Self <: PickCompilerHostgetSource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickCompilerHostgetSource] (val x: Self) extends AnyVal {
     
     inline def setFileExists(value: /* fileName */ String => Boolean): Self = StObject.set(x, "fileExists", js.Any.fromFunction1(value))
     

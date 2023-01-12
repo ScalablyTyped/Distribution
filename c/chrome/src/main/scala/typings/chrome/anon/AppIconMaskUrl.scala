@@ -72,7 +72,8 @@ object AppIconMaskUrl {
     __obj.asInstanceOf[AppIconMaskUrl]
   }
   
-  extension [Self <: AppIconMaskUrl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppIconMaskUrl] (val x: Self) extends AnyVal {
     
     inline def setAppIconMaskUrl(value: String): Self = StObject.set(x, "appIconMaskUrl", value.asInstanceOf[js.Any])
     

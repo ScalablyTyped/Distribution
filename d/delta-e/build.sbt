@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "delta-e"
-version := "0.0-dt-20220624Z-1b757e"
+version := "0.0-dt-20220624Z-5a2dcc"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

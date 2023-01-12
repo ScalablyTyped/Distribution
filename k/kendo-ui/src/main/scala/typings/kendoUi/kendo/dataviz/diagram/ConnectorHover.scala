@@ -17,7 +17,8 @@ object ConnectorHover {
     __obj.asInstanceOf[ConnectorHover]
   }
   
-  extension [Self <: ConnectorHover](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConnectorHover] (val x: Self) extends AnyVal {
     
     inline def setFill(value: String | ConnectorHoverFill): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
     

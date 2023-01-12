@@ -45,7 +45,8 @@ object LogicTargetModel {
     __obj.asInstanceOf[LogicTargetModel]
   }
   
-  extension [Self <: LogicTargetModel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LogicTargetModel] (val x: Self) extends AnyVal {
     
     inline def setCoordinateSystems(value: SafeArray[XPropertySet]): Self = StObject.set(x, "CoordinateSystems", value.asInstanceOf[js.Any])
     

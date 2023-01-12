@@ -17,7 +17,8 @@ object PulsarProps {
     __obj.asInstanceOf[PulsarProps]
   }
   
-  extension [Self <: PulsarProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PulsarProps] (val x: Self) extends AnyVal {
     
     inline def setPaused(value: Boolean): Self = StObject.set(x, "paused", value.asInstanceOf[js.Any])
     

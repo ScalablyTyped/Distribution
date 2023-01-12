@@ -50,7 +50,8 @@ object XInteractionFilterOptions {
     __obj.asInstanceOf[XInteractionFilterOptions]
   }
   
-  extension [Self <: XInteractionFilterOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XInteractionFilterOptions] (val x: Self) extends AnyVal {
     
     inline def setFilterOptions(value: SafeArray[PropertyValue]): Self = StObject.set(x, "FilterOptions", value.asInstanceOf[js.Any])
     

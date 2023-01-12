@@ -88,7 +88,8 @@ object Column {
     __obj.asInstanceOf[Column]
   }
   
-  extension [Self <: Column](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Column] (val x: Self) extends AnyVal {
     
     inline def setDefaultValue(value: String): Self = StObject.set(x, "DefaultValue", value.asInstanceOf[js.Any])
     

@@ -78,7 +78,8 @@ object IModes {
     __obj.asInstanceOf[IModes]
   }
   
-  extension [Self <: IModes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IModes] (val x: Self) extends AnyVal {
     
     inline def setApplicationCursorKeysMode(value: Boolean): Self = StObject.set(x, "applicationCursorKeysMode", value.asInstanceOf[js.Any])
     

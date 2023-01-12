@@ -17,7 +17,8 @@ object Intensity {
     __obj.asInstanceOf[Intensity]
   }
   
-  extension [Self <: Intensity](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Intensity] (val x: Self) extends AnyVal {
     
     inline def setColor(value: typings.cesium.mod.Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

@@ -62,7 +62,8 @@ object GetBootstrapBrokersResponse {
     __obj.asInstanceOf[GetBootstrapBrokersResponse]
   }
   
-  extension [Self <: GetBootstrapBrokersResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetBootstrapBrokersResponse] (val x: Self) extends AnyVal {
     
     inline def setBootstrapBrokerString(value: string): Self = StObject.set(x, "BootstrapBrokerString", value.asInstanceOf[js.Any])
     

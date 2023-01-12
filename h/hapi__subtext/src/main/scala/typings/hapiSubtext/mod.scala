@@ -40,7 +40,8 @@ object mod {
       __obj.asInstanceOf[ContentDecoders]
     }
     
-    extension [Self <: ContentDecoders](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContentDecoders] (val x: Self) extends AnyVal {
       
       inline def setBr(value: /* options */ BrotliOptions | Null => Transform): Self = StObject.set(x, "br", js.Any.fromFunction1(value))
       
@@ -77,7 +78,8 @@ object mod {
       __obj.asInstanceOf[DecompressionOptions]
     }
     
-    extension [Self <: DecompressionOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DecompressionOptions] (val x: Self) extends AnyVal {
       
       inline def setBr(value: BrotliOptions): Self = StObject.set(x, "br", value.asInstanceOf[js.Any])
       
@@ -108,7 +110,8 @@ object mod {
       __obj.asInstanceOf[MultipartOptions]
     }
     
-    extension [Self <: MultipartOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MultipartOptions] (val x: Self) extends AnyVal {
       
       inline def setOutput(value: data | stream | file): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
     }
@@ -149,7 +152,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setAllow(value: js.Array[String]): Self = StObject.set(x, "allow", value.asInstanceOf[js.Any])
       
@@ -215,7 +219,8 @@ object mod {
       __obj.asInstanceOf[Result]
     }
     
-    extension [Self <: Result](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Result] (val x: Self) extends AnyVal {
       
       inline def setMime(value: String): Self = StObject.set(x, "mime", value.asInstanceOf[js.Any])
       

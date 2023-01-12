@@ -19,7 +19,8 @@ object FlexJustifyContent {
     __obj.asInstanceOf[FlexJustifyContent]
   }
   
-  extension [Self <: FlexJustifyContent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FlexJustifyContent] (val x: Self) extends AnyVal {
     
     inline def setAlignItems(value: String): Self = StObject.set(x, "alignItems", value.asInstanceOf[js.Any])
     

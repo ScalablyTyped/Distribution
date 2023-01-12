@@ -550,7 +550,8 @@ object formControlLabelFormControlLabelMod {
       __obj.asInstanceOf[FormControlLabelProps]
     }
     
-    extension [Self <: FormControlLabelProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FormControlLabelProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       

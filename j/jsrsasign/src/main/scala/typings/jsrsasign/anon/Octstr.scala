@@ -18,7 +18,8 @@ object Octstr {
     __obj.asInstanceOf[Octstr]
   }
   
-  extension [Self <: Octstr](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Octstr] (val x: Self) extends AnyVal {
     
     inline def setOctstr(value: Obj): Self = StObject.set(x, "octstr", value.asInstanceOf[js.Any])
   }

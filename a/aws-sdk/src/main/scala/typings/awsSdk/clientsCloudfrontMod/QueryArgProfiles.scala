@@ -23,7 +23,8 @@ object QueryArgProfiles {
     __obj.asInstanceOf[QueryArgProfiles]
   }
   
-  extension [Self <: QueryArgProfiles](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryArgProfiles] (val x: Self) extends AnyVal {
     
     inline def setItems(value: QueryArgProfileList): Self = StObject.set(x, "Items", value.asInstanceOf[js.Any])
     

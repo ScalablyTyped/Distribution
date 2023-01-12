@@ -21,7 +21,8 @@ object IAdditionalFolder {
     __obj.asInstanceOf[IAdditionalFolder]
   }
   
-  extension [Self <: IAdditionalFolder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IAdditionalFolder] (val x: Self) extends AnyVal {
     
     inline def setClone(value: () => IAdditionalFolder): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     

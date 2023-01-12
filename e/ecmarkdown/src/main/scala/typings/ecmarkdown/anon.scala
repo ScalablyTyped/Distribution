@@ -37,7 +37,8 @@ object anon {
       __obj.asInstanceOf[Contents]
     }
     
-    extension [Self <: Contents](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Contents] (val x: Self) extends AnyVal {
       
       inline def setContents(value: OrderedListNode): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
       
@@ -66,7 +67,8 @@ object anon {
       __obj.asInstanceOf[ContentsLocation]
     }
     
-    extension [Self <: ContentsLocation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContentsLocation] (val x: Self) extends AnyVal {
       
       inline def setContents(value: js.Array[TagNode | CommentNode | TextNode]): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
       
@@ -93,7 +95,8 @@ object anon {
       __obj.asInstanceOf[Key]
     }
     
-    extension [Self <: Key](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Key] (val x: Self) extends AnyVal {
       
       inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
@@ -114,7 +117,8 @@ object anon {
       __obj.asInstanceOf[Location]
     }
     
-    extension [Self <: Location](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Location] (val x: Self) extends AnyVal {
       
       inline def setLocation(value: LocationRange): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     }
@@ -135,7 +139,8 @@ object anon {
       __obj.asInstanceOf[Name]
     }
     
-    extension [Self <: Name](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Name] (val x: Self) extends AnyVal {
       
       inline def setContents(value: String): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
       
@@ -165,7 +170,8 @@ object anon {
       __obj.asInstanceOf[PickOrderedListNodeconten]
     }
     
-    extension [Self <: PickOrderedListNodeconten](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PickOrderedListNodeconten] (val x: Self) extends AnyVal {
       
       inline def setContents(value: js.Array[OrderedListItemNode]): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
       
@@ -203,7 +209,8 @@ object anon {
       __obj.asInstanceOf[PickPipeNodecontentsnamen]
     }
     
-    extension [Self <: PickPipeNodecontentsnamen](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PickPipeNodecontentsnamen] (val x: Self) extends AnyVal {
       
       inline def setContents(value: Null): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
       
@@ -237,7 +244,8 @@ object anon {
       __obj.asInstanceOf[PickUnorderedListNodecont]
     }
     
-    extension [Self <: PickUnorderedListNodecont](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PickUnorderedListNodecont] (val x: Self) extends AnyVal {
       
       inline def setContents(value: js.Array[UnorderedListItemNode]): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
       

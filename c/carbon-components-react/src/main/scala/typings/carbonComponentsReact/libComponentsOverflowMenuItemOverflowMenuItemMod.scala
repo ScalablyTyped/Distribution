@@ -544,7 +544,8 @@ object libComponentsOverflowMenuItemOverflowMenuItemMod {
       __obj.asInstanceOf[OverflowMenuItemAnchorProps]
     }
     
-    extension [Self <: OverflowMenuItemAnchorProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OverflowMenuItemAnchorProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       
@@ -1713,7 +1714,8 @@ object libComponentsOverflowMenuItemOverflowMenuItemMod {
       __obj.asInstanceOf[OverflowMenuItemButtonProps]
     }
     
-    extension [Self <: OverflowMenuItemButtonProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OverflowMenuItemButtonProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       
@@ -2514,7 +2516,8 @@ object libComponentsOverflowMenuItemOverflowMenuItemMod {
       __obj.asInstanceOf[SharedProps]
     }
     
-    extension [Self <: SharedProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SharedProps] (val x: Self) extends AnyVal {
       
       inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       

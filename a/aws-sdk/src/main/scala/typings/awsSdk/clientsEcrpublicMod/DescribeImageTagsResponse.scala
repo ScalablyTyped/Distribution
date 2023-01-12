@@ -23,7 +23,8 @@ object DescribeImageTagsResponse {
     __obj.asInstanceOf[DescribeImageTagsResponse]
   }
   
-  extension [Self <: DescribeImageTagsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeImageTagsResponse] (val x: Self) extends AnyVal {
     
     inline def setImageTagDetails(value: ImageTagDetailList): Self = StObject.set(x, "imageTagDetails", value.asInstanceOf[js.Any])
     

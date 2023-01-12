@@ -31,7 +31,8 @@ object distPreviewMod {
       __obj.asInstanceOf[AsyncStorage]
     }
     
-    extension [Self <: AsyncStorage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AsyncStorage] (val x: Self) extends AnyVal {
       
       inline def setGetItem(value: String => js.Promise[String | Null]): Self = StObject.set(x, "getItem", js.Any.fromFunction1(value))
       
@@ -93,7 +94,8 @@ object distPreviewMod {
       __obj.asInstanceOf[Params]
     }
     
-    extension [Self <: Params](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Params] (val x: Self) extends AnyVal {
       
       inline def setAsyncStorage(value: AsyncStorage): Self = StObject.set(x, "asyncStorage", value.asInstanceOf[js.Any])
       

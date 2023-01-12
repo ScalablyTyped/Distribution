@@ -21,7 +21,8 @@ object PropertyFallback {
     __obj.asInstanceOf[PropertyFallback[TLength, TTime]]
   }
   
-  extension [Self <: PropertyFallback[?, ?], TLength, TTime](x: Self & (PropertyFallback[TLength, TTime])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PropertyFallback[?, ?], TLength, TTime] (val x: Self & (PropertyFallback[TLength, TTime])) extends AnyVal {
     
     inline def setInherits(value: Inherits | js.Array[NonNullable[js.UndefOr[Inherits]]]): Self = StObject.set(x, "inherits", value.asInstanceOf[js.Any])
     

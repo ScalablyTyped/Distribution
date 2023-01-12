@@ -17,7 +17,8 @@ object AllOwner {
     __obj.asInstanceOf[AllOwner]
   }
   
-  extension [Self <: AllOwner](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AllOwner] (val x: Self) extends AnyVal {
     
     inline def setAll(value: js.Array[Double]): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
     

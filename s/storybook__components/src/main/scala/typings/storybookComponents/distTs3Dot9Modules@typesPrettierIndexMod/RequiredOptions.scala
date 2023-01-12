@@ -193,7 +193,8 @@ object RequiredOptions {
     __obj.asInstanceOf[RequiredOptions]
   }
   
-  extension [Self <: RequiredOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RequiredOptions] (val x: Self) extends AnyVal {
     
     inline def setArrowParens(value: avoid | always): Self = StObject.set(x, "arrowParens", value.asInstanceOf[js.Any])
     

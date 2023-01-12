@@ -56,7 +56,8 @@ object LazyCompilationDefaultBackendOptions {
     __obj.asInstanceOf[LazyCompilationDefaultBackendOptions]
   }
   
-  extension [Self <: LazyCompilationDefaultBackendOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LazyCompilationDefaultBackendOptions] (val x: Self) extends AnyVal {
     
     inline def setClient(value: String): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
     

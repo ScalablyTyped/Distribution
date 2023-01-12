@@ -19,7 +19,8 @@ object DateRangeValues {
     __obj.asInstanceOf[DateRangeValues]
   }
   
-  extension [Self <: DateRangeValues](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DateRangeValues] (val x: Self) extends AnyVal {
     
     inline def setPivotValueRegions(value: js.Array[PivotValueRegion]): Self = StObject.set(x, "pivotValueRegions", value.asInstanceOf[js.Any])
     

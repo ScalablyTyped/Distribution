@@ -59,7 +59,8 @@ object PurchaseInformation {
     __obj.asInstanceOf[PurchaseInformation]
   }
   
-  extension [Self <: PurchaseInformation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PurchaseInformation] (val x: Self) extends AnyVal {
     
     inline def setAvailabilityIndicator(value: MerchandiseAvailable | FutureAvailability): Self = StObject.set(x, "AvailabilityIndicator", value.asInstanceOf[js.Any])
     

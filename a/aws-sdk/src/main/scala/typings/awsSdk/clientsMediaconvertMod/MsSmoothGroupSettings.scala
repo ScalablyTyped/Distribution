@@ -53,7 +53,8 @@ object MsSmoothGroupSettings {
     __obj.asInstanceOf[MsSmoothGroupSettings]
   }
   
-  extension [Self <: MsSmoothGroupSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MsSmoothGroupSettings] (val x: Self) extends AnyVal {
     
     inline def setAdditionalManifests(value: listOfMsSmoothAdditionalManifest): Self = StObject.set(x, "AdditionalManifests", value.asInstanceOf[js.Any])
     

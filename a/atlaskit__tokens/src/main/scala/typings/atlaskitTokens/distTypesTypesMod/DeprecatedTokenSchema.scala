@@ -19,7 +19,8 @@ object DeprecatedTokenSchema {
     __obj.asInstanceOf[DeprecatedTokenSchema[BaseToken]]
   }
   
-  extension [Self <: DeprecatedTokenSchema[?], BaseToken](x: Self & DeprecatedTokenSchema[BaseToken]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeprecatedTokenSchema[?], BaseToken] (val x: Self & DeprecatedTokenSchema[BaseToken]) extends AnyVal {
     
     inline def setColor(value: BorderIconBorder[BaseToken]): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

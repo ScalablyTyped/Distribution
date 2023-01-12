@@ -102,7 +102,8 @@ object distUtilsEventMod {
       __obj.asInstanceOf[FormattedTouch]
     }
     
-    extension [Self <: FormattedTouch](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FormattedTouch] (val x: Self) extends AnyVal {
       
       inline def setButton(value: Double): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
       

@@ -21,7 +21,8 @@ object CoercionTypeOptions {
     __obj.asInstanceOf[CoercionTypeOptions]
   }
   
-  extension [Self <: CoercionTypeOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CoercionTypeOptions] (val x: Self) extends AnyVal {
     
     inline def setCoercionType(value: CoercionType | String): Self = StObject.set(x, "coercionType", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object CacheAttributes {
     __obj.asInstanceOf[CacheAttributes]
   }
   
-  extension [Self <: CacheAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CacheAttributes] (val x: Self) extends AnyVal {
     
     inline def setCacheStaleTimeoutInSeconds(value: CacheStaleTimeoutInSeconds): Self = StObject.set(x, "CacheStaleTimeoutInSeconds", value.asInstanceOf[js.Any])
     

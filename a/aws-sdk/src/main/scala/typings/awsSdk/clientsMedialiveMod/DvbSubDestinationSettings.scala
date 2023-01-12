@@ -98,7 +98,8 @@ object DvbSubDestinationSettings {
     __obj.asInstanceOf[DvbSubDestinationSettings]
   }
   
-  extension [Self <: DvbSubDestinationSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DvbSubDestinationSettings] (val x: Self) extends AnyVal {
     
     inline def setAlignment(value: DvbSubDestinationAlignment): Self = StObject.set(x, "Alignment", value.asInstanceOf[js.Any])
     

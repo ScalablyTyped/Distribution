@@ -35,7 +35,8 @@ object FormParameters {
     __obj.asInstanceOf[FormParameters]
   }
   
-  extension [Self <: FormParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FormParameters] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: Domain): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

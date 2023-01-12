@@ -138,7 +138,8 @@ object ASPxClientCheckBoxList {
     __obj.asInstanceOf[ASPxClientCheckBoxList]
   }
   
-  extension [Self <: ASPxClientCheckBoxList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientCheckBoxList] (val x: Self) extends AnyVal {
     
     inline def setGetSelectedIndices(value: () => js.Array[Double]): Self = StObject.set(x, "GetSelectedIndices", js.Any.fromFunction0(value))
     

@@ -38,7 +38,8 @@ object XServiceDisplayName {
     __obj.asInstanceOf[XServiceDisplayName]
   }
   
-  extension [Self <: XServiceDisplayName](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XServiceDisplayName] (val x: Self) extends AnyVal {
     
     inline def setGetServiceDisplayName(value: Locale => String): Self = StObject.set(x, "getServiceDisplayName", js.Any.fromFunction1(value))
   }

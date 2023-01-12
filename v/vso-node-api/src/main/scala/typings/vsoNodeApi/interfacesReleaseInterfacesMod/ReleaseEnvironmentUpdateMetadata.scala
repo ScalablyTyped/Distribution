@@ -28,7 +28,8 @@ object ReleaseEnvironmentUpdateMetadata {
     __obj.asInstanceOf[ReleaseEnvironmentUpdateMetadata]
   }
   
-  extension [Self <: ReleaseEnvironmentUpdateMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReleaseEnvironmentUpdateMetadata] (val x: Self) extends AnyVal {
     
     inline def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
     

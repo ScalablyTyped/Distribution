@@ -62,7 +62,8 @@ object consumerMod {
       __obj.asInstanceOf[ConsumerStats]
     }
     
-    extension [Self <: ConsumerStats](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConsumerStats] (val x: Self) extends AnyVal {
       
       inline def setBackpressure(value: Double): Self = StObject.set(x, "backpressure", value.asInstanceOf[js.Any])
       
@@ -87,7 +88,8 @@ object consumerMod {
       __obj.asInstanceOf[Node[T]]
     }
     
-    extension [Self <: Node[?], T](x: Self & Node[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Node[?], T] (val x: Self & Node[T]) extends AnyVal {
       
       inline def setData(value: Done[T]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       

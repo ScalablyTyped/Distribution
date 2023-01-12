@@ -81,7 +81,8 @@ object RouteOptionsAccess {
     __obj.asInstanceOf[RouteOptionsAccess]
   }
   
-  extension [Self <: RouteOptionsAccess](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RouteOptionsAccess] (val x: Self) extends AnyVal {
     
     inline def setAccess(value: RouteOptionsAccessObject | js.Array[RouteOptionsAccessObject]): Self = StObject.set(x, "access", value.asInstanceOf[js.Any])
     

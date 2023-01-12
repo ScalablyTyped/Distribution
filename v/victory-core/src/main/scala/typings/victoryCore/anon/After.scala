@@ -34,7 +34,8 @@ object After {
     __obj.asInstanceOf[After]
   }
   
-  extension [Self <: After](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: After] (val x: Self) extends AnyVal {
     
     inline def setAfter(
       value: (/* datum */ typings.victoryCore.libTypesPropTypesMod.Datum, /* index */ Double, /* data */ js.Array[typings.victoryCore.libTypesPropTypesMod.Datum]) => AnimationStyle

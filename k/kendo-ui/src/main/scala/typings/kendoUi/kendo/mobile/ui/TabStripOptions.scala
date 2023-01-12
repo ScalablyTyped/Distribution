@@ -19,7 +19,8 @@ object TabStripOptions {
     __obj.asInstanceOf[TabStripOptions]
   }
   
-  extension [Self <: TabStripOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TabStripOptions] (val x: Self) extends AnyVal {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

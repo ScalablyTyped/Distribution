@@ -23,7 +23,8 @@ object DictionaryEntriesResponse {
     __obj.asInstanceOf[DictionaryEntriesResponse]
   }
   
-  extension [Self <: DictionaryEntriesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DictionaryEntriesResponse] (val x: Self) extends AnyVal {
     
     inline def setTaskID(value: Double): Self = StObject.set(x, "taskID", value.asInstanceOf[js.Any])
     

@@ -175,7 +175,8 @@ object XFixedLine {
     __obj.asInstanceOf[XFixedLine]
   }
   
-  extension [Self <: XFixedLine](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XFixedLine] (val x: Self) extends AnyVal {
     
     inline def setLineColor(value: Color): Self = StObject.set(x, "LineColor", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object ReadonlyRELATION0VALUE1SE {
     __obj.asInstanceOf[ReadonlyRELATION0VALUE1SE]
   }
   
-  extension [Self <: ReadonlyRELATION0VALUE1SE](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadonlyRELATION0VALUE1SE] (val x: Self) extends AnyVal {
     
     inline def setRELATION(value: `0`): Self = StObject.set(x, "RELATION", value.asInstanceOf[js.Any])
     

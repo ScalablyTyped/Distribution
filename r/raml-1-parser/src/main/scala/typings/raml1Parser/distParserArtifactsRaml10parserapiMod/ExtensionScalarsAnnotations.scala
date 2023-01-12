@@ -36,7 +36,8 @@ object ExtensionScalarsAnnotations {
     __obj.asInstanceOf[ExtensionScalarsAnnotations]
   }
   
-  extension [Self <: ExtensionScalarsAnnotations](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExtensionScalarsAnnotations] (val x: Self) extends AnyVal {
     
     inline def setExtends(value: () => js.Array[AnnotationRef]): Self = StObject.set(x, "extends", js.Any.fromFunction0(value))
     

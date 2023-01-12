@@ -23,7 +23,8 @@ object GraphQuads {
     __obj.asInstanceOf[GraphQuads]
   }
   
-  extension [Self <: GraphQuads](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GraphQuads] (val x: Self) extends AnyVal {
     
     inline def setName(value: IriTerm): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

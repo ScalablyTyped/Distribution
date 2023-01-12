@@ -485,7 +485,8 @@ object TYFlatListProps {
     __obj.asInstanceOf[TYFlatListProps[ItemT]]
   }
   
-  extension [Self <: TYFlatListProps[?], ItemT /* <: TYFlatListData */](x: Self & TYFlatListProps[ItemT]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TYFlatListProps[?], ItemT /* <: TYFlatListData */] (val x: Self & TYFlatListProps[ItemT]) extends AnyVal {
     
     inline def setAccessibilityActions(value: js.Array[AccessibilityActionInfo]): Self = StObject.set(x, "accessibilityActions", value.asInstanceOf[js.Any])
     

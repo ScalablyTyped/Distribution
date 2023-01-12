@@ -17,7 +17,8 @@ object Service {
     __obj.asInstanceOf[Service]
   }
   
-  extension [Self <: Service](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Service] (val x: Self) extends AnyVal {
     
     inline def setService(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _grpc_channelz_v1_ChannelzDefinition */ scala.Any

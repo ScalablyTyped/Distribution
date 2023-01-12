@@ -21,7 +21,8 @@ object DSNodeToken {
     __obj.asInstanceOf[DSNodeToken]
   }
   
-  extension [Self <: DSNodeToken](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DSNodeToken] (val x: Self) extends AnyVal {
     
     inline def setType(value: Token): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

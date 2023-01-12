@@ -25,7 +25,8 @@ object BackupProvider {
     __obj.asInstanceOf[BackupProvider]
   }
   
-  extension [Self <: BackupProvider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BackupProvider] (val x: Self) extends AnyVal {
     
     inline def setBackup(value: (String, StringDictionary[Any], TaskExecutionMode) => Thenable[BackupResponse]): Self = StObject.set(x, "backup", js.Any.fromFunction3(value))
     

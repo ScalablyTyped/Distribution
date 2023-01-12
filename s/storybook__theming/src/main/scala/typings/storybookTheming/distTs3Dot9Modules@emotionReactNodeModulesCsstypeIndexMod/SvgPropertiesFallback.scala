@@ -207,7 +207,8 @@ object SvgPropertiesFallback {
     __obj.asInstanceOf[SvgPropertiesFallback[TLength, TTime]]
   }
   
-  extension [Self <: SvgPropertiesFallback[?, ?], TLength, TTime](x: Self & (SvgPropertiesFallback[TLength, TTime])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SvgPropertiesFallback[?, ?], TLength, TTime] (val x: Self & (SvgPropertiesFallback[TLength, TTime])) extends AnyVal {
     
     inline def setAlignmentBaseline(value: AlignmentBaseline | js.Array[NonNullable[js.UndefOr[AlignmentBaseline]]]): Self = StObject.set(x, "alignmentBaseline", value.asInstanceOf[js.Any])
     

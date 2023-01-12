@@ -50,7 +50,8 @@ object componentsSliderMod {
       __obj.asInstanceOf[SliderCommonProps]
     }
     
-    extension [Self <: SliderCommonProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SliderCommonProps] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -77,7 +78,8 @@ object componentsSliderMod {
       __obj.asInstanceOf[SliderFillProps]
     }
     
-    extension [Self <: SliderFillProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SliderFillProps] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -109,7 +111,8 @@ object componentsSliderMod {
       __obj.asInstanceOf[SliderProps]
     }
     
-    extension [Self <: SliderProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SliderProps] (val x: Self) extends AnyVal {
       
       inline def setFill(value: SliderFillProps): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
       
@@ -144,7 +147,8 @@ object componentsSliderMod {
       __obj.asInstanceOf[SliderState]
     }
     
-    extension [Self <: SliderState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SliderState] (val x: Self) extends AnyVal {
       
       inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
@@ -176,7 +180,8 @@ object componentsSliderMod {
       __obj.asInstanceOf[TwoHandleSliderProps]
     }
     
-    extension [Self <: TwoHandleSliderProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TwoHandleSliderProps] (val x: Self) extends AnyVal {
       
       inline def setFill(value: SliderFillProps): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
       
@@ -221,7 +226,8 @@ object componentsSliderMod {
       __obj.asInstanceOf[TwoHandleSliderState]
     }
     
-    extension [Self <: TwoHandleSliderState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TwoHandleSliderState] (val x: Self) extends AnyVal {
       
       inline def setMaxValue(value: Double): Self = StObject.set(x, "maxValue", value.asInstanceOf[js.Any])
       

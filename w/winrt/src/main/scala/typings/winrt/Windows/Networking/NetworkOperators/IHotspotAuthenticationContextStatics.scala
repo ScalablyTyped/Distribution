@@ -16,7 +16,8 @@ object IHotspotAuthenticationContextStatics {
     __obj.asInstanceOf[IHotspotAuthenticationContextStatics]
   }
   
-  extension [Self <: IHotspotAuthenticationContextStatics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IHotspotAuthenticationContextStatics] (val x: Self) extends AnyVal {
     
     inline def setTryGetAuthenticationContext(value: String => Context): Self = StObject.set(x, "tryGetAuthenticationContext", js.Any.fromFunction1(value))
   }

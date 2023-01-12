@@ -22,7 +22,8 @@ object ActionProps {
     __obj.asInstanceOf[ActionProps[T]]
   }
   
-  extension [Self <: ActionProps[?], T /* <: ActionName | Null */](x: Self & ActionProps[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ActionProps[?], T /* <: ActionName | Null */] (val x: Self & ActionProps[T]) extends AnyVal {
     
     inline def setAxis(value: typings.interactjsTypes.interactjsTypesStrings.x | y | xy): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
     

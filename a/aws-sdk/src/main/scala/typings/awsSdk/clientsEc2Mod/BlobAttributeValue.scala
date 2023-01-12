@@ -15,7 +15,8 @@ object BlobAttributeValue {
     __obj.asInstanceOf[BlobAttributeValue]
   }
   
-  extension [Self <: BlobAttributeValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BlobAttributeValue] (val x: Self) extends AnyVal {
     
     inline def setValue(value: _Blob): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
     

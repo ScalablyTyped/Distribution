@@ -18,7 +18,8 @@ object Condition {
     __obj.asInstanceOf[Condition]
   }
   
-  extension [Self <: Condition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Condition] (val x: Self) extends AnyVal {
     
     inline def setExpressionString(value: ConditionExpression): Self = StObject.set(x, "expressionString", value.asInstanceOf[js.Any])
   }

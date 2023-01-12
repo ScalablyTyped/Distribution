@@ -21,7 +21,8 @@ object Lowenergy {
     __obj.asInstanceOf[Lowenergy]
   }
   
-  extension [Self <: Lowenergy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Lowenergy] (val x: Self) extends AnyVal {
     
     inline def setLow_energy(value: Boolean): Self = StObject.set(x, "low_energy", value.asInstanceOf[js.Any])
     

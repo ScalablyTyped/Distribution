@@ -63,7 +63,8 @@ object ModifyIpamPoolRequest {
     __obj.asInstanceOf[ModifyIpamPoolRequest]
   }
   
-  extension [Self <: ModifyIpamPoolRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModifyIpamPoolRequest] (val x: Self) extends AnyVal {
     
     inline def setAddAllocationResourceTags(value: RequestIpamResourceTagList): Self = StObject.set(x, "AddAllocationResourceTags", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object FilePickerOptions {
     __obj.asInstanceOf[FilePickerOptions]
   }
   
-  extension [Self <: FilePickerOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FilePickerOptions] (val x: Self) extends AnyVal {
     
     inline def setExcludeAcceptAllOption(value: Boolean): Self = StObject.set(x, "excludeAcceptAllOption", value.asInstanceOf[js.Any])
     

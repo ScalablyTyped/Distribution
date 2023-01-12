@@ -17,7 +17,8 @@ object LineChartProps {
     __obj.asInstanceOf[LineChartProps]
   }
   
-  extension [Self <: LineChartProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LineChartProps] (val x: Self) extends AnyVal {
     
     inline def setData(value: LineData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
   }

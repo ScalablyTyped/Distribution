@@ -45,7 +45,8 @@ object DynamiteSpacesScoringInfo {
     __obj.asInstanceOf[DynamiteSpacesScoringInfo]
   }
   
-  extension [Self <: DynamiteSpacesScoringInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DynamiteSpacesScoringInfo] (val x: Self) extends AnyVal {
     
     inline def setAffinityScore(value: Double): Self = StObject.set(x, "affinityScore", value.asInstanceOf[js.Any])
     

@@ -108,7 +108,8 @@ object AdverseEvent {
     __obj.asInstanceOf[AdverseEvent]
   }
   
-  extension [Self <: AdverseEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AdverseEvent] (val x: Self) extends AnyVal {
     
     inline def setCategory(value: AE | PAE): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     

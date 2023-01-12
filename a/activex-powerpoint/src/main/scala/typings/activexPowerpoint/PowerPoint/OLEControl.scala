@@ -43,7 +43,8 @@ object OLEControl {
     __obj.asInstanceOf[OLEControl]
   }
   
-  extension [Self <: OLEControl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OLEControl] (val x: Self) extends AnyVal {
     
     inline def setAltHTML(value: String): Self = StObject.set(x, "AltHTML", value.asInstanceOf[js.Any])
     

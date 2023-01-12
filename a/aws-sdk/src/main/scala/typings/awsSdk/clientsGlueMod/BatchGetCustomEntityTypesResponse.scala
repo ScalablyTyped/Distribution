@@ -23,7 +23,8 @@ object BatchGetCustomEntityTypesResponse {
     __obj.asInstanceOf[BatchGetCustomEntityTypesResponse]
   }
   
-  extension [Self <: BatchGetCustomEntityTypesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchGetCustomEntityTypesResponse] (val x: Self) extends AnyVal {
     
     inline def setCustomEntityTypes(value: CustomEntityTypes): Self = StObject.set(x, "CustomEntityTypes", value.asInstanceOf[js.Any])
     

@@ -30,7 +30,8 @@ object CompassParams {
     __obj.asInstanceOf[CompassParams]
   }
   
-  extension [Self <: CompassParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CompassParams] (val x: Self) extends AnyVal {
     
     inline def setCustomLayer(value: Any): Self = StObject.set(x, "customLayer", value.asInstanceOf[js.Any])
     

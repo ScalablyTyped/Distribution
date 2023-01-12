@@ -314,7 +314,8 @@ object testingMod {
       __obj.asInstanceOf[MetadataOverride[T]]
     }
     
-    extension [Self <: MetadataOverride[?], T](x: Self & MetadataOverride[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MetadataOverride[?], T] (val x: Self & MetadataOverride[T]) extends AnyVal {
       
       inline def setAdd(value: Partial[T]): Self = StObject.set(x, "add", value.asInstanceOf[js.Any])
       
@@ -345,7 +346,8 @@ object testingMod {
       __obj.asInstanceOf[ModuleTeardownOptions]
     }
     
-    extension [Self <: ModuleTeardownOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ModuleTeardownOptions] (val x: Self) extends AnyVal {
       
       inline def setDestroyAfterEach(value: Boolean): Self = StObject.set(x, "destroyAfterEach", value.asInstanceOf[js.Any])
       
@@ -391,7 +393,8 @@ object testingMod {
       __obj.asInstanceOf[TestEnvironmentOptions]
     }
     
-    extension [Self <: TestEnvironmentOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TestEnvironmentOptions] (val x: Self) extends AnyVal {
       
       inline def setErrorOnUnknownElements(value: Boolean): Self = StObject.set(x, "errorOnUnknownElements", value.asInstanceOf[js.Any])
       
@@ -442,7 +445,8 @@ object testingMod {
       __obj.asInstanceOf[TestModuleMetadata]
     }
     
-    extension [Self <: TestModuleMetadata](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TestModuleMetadata] (val x: Self) extends AnyVal {
       
       inline def setDeclarations(value: js.Array[Any]): Self = StObject.set(x, "declarations", value.asInstanceOf[js.Any])
       

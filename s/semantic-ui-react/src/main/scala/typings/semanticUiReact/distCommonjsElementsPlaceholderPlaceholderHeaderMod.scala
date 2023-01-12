@@ -53,7 +53,8 @@ object distCommonjsElementsPlaceholderPlaceholderHeaderMod extends Shortcut {
       __obj.asInstanceOf[StrictPlaceholderHeaderProps]
     }
     
-    extension [Self <: StrictPlaceholderHeaderProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StrictPlaceholderHeaderProps] (val x: Self) extends AnyVal {
       
       inline def setAs(value: Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       

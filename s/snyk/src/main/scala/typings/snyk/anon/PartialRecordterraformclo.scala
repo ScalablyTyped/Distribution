@@ -22,7 +22,8 @@ object PartialRecordterraformclo {
     __obj.asInstanceOf[PartialRecordterraformclo]
   }
   
-  extension [Self <: PartialRecordterraformclo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialRecordterraformclo] (val x: Self) extends AnyVal {
     
     inline def setArm(value: String): Self = StObject.set(x, "arm", value.asInstanceOf[js.Any])
     

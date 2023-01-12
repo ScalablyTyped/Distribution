@@ -76,7 +76,8 @@ object XIntegerBitmap {
     __obj.asInstanceOf[XIntegerBitmap]
   }
   
-  extension [Self <: XIntegerBitmap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XIntegerBitmap] (val x: Self) extends AnyVal {
     
     inline def setSetData(value: (SeqEquiv[Double], IntegerBitmapLayout, IntegerRectangle2D) => Unit): Self = StObject.set(x, "setData", js.Any.fromFunction3(value))
     

@@ -243,7 +243,8 @@ object WeakValidationMapheaderRe {
     __obj.asInstanceOf[WeakValidationMapheaderRe]
   }
   
-  extension [Self <: WeakValidationMapheaderRe](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WeakValidationMapheaderRe] (val x: Self) extends AnyVal {
     
     inline def `setAria-activedescendant`(
       value: /* import warning: importer.ImportType#apply Failed type conversion: null extends string | undefined ? react.react.Validator<string | undefined | null | undefined> : undefined extends string | undefined ? react.react.Validator<string | undefined | null | undefined> : react.react.Validator<string | undefined> */ js.Any

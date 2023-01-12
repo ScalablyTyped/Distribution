@@ -28,7 +28,8 @@ object HealthStatusForNetworkEndpoint {
     __obj.asInstanceOf[HealthStatusForNetworkEndpoint]
   }
   
-  extension [Self <: HealthStatusForNetworkEndpoint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HealthStatusForNetworkEndpoint] (val x: Self) extends AnyVal {
     
     inline def setBackendService(value: BackendServiceReference): Self = StObject.set(x, "backendService", value.asInstanceOf[js.Any])
     

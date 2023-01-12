@@ -38,7 +38,8 @@ object EdgeStatistics {
     __obj.asInstanceOf[EdgeStatistics]
   }
   
-  extension [Self <: EdgeStatistics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EdgeStatistics] (val x: Self) extends AnyVal {
     
     inline def setErrorStatistics(value: ErrorStatistics): Self = StObject.set(x, "ErrorStatistics", value.asInstanceOf[js.Any])
     

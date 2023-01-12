@@ -22,7 +22,8 @@ object AttrsRaggedTensorToTensorAttrs {
     __obj.asInstanceOf[AttrsRaggedTensorToTensorAttrs]
   }
   
-  extension [Self <: AttrsRaggedTensorToTensorAttrs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AttrsRaggedTensorToTensorAttrs] (val x: Self) extends AnyVal {
     
     inline def setAttrs(value: RaggedTensorToTensorAttrs): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
     

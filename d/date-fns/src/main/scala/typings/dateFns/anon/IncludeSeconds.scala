@@ -19,7 +19,8 @@ object IncludeSeconds {
     __obj.asInstanceOf[IncludeSeconds]
   }
   
-  extension [Self <: IncludeSeconds](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IncludeSeconds] (val x: Self) extends AnyVal {
     
     inline def setAddSuffix(value: Boolean): Self = StObject.set(x, "addSuffix", value.asInstanceOf[js.Any])
     

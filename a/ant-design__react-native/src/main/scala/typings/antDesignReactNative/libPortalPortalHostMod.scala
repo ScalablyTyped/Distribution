@@ -76,7 +76,8 @@ object libPortalPortalHostMod {
       __obj.asInstanceOf[PortalGuard]
     }
     
-    extension [Self <: PortalGuard](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PortalGuard] (val x: Self) extends AnyVal {
       
       inline def setAdd(value: ReactNode => Double): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
       
@@ -128,7 +129,8 @@ object libPortalPortalHostMod {
       __obj.asInstanceOf[PortalHostProps]
     }
     
-    extension [Self <: PortalHostProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PortalHostProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -151,7 +153,8 @@ object libPortalPortalHostMod {
       __obj.asInstanceOf[PortalMethods]
     }
     
-    extension [Self <: PortalMethods](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PortalMethods] (val x: Self) extends AnyVal {
       
       inline def setMount(value: ReactNode => Double): Self = StObject.set(x, "mount", js.Any.fromFunction1(value))
       

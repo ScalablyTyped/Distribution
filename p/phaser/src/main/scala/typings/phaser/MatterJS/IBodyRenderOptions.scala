@@ -79,7 +79,8 @@ object IBodyRenderOptions {
     __obj.asInstanceOf[IBodyRenderOptions]
   }
   
-  extension [Self <: IBodyRenderOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IBodyRenderOptions] (val x: Self) extends AnyVal {
     
     inline def setFillColor(value: Double): Self = StObject.set(x, "fillColor", value.asInstanceOf[js.Any])
     

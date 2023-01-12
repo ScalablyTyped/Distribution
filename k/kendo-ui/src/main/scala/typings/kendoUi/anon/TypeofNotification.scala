@@ -20,7 +20,8 @@ object TypeofNotification {
     __obj.asInstanceOf[TypeofNotification]
   }
   
-  extension [Self <: TypeofNotification](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofNotification] (val x: Self) extends AnyVal {
     
     inline def setExtend(value: js.Object => Notification): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
     

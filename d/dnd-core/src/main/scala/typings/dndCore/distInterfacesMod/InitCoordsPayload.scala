@@ -17,7 +17,8 @@ object InitCoordsPayload {
     __obj.asInstanceOf[InitCoordsPayload]
   }
   
-  extension [Self <: InitCoordsPayload](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InitCoordsPayload] (val x: Self) extends AnyVal {
     
     inline def setClientOffset(value: XYCoord): Self = StObject.set(x, "clientOffset", value.asInstanceOf[js.Any])
     

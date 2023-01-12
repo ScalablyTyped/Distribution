@@ -28,7 +28,8 @@ object OrganizationalUnit {
     __obj.asInstanceOf[OrganizationalUnit]
   }
   
-  extension [Self <: OrganizationalUnit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OrganizationalUnit] (val x: Self) extends AnyVal {
     
     inline def setArn(value: OrganizationalUnitArn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     

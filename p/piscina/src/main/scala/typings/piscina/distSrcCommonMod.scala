@@ -72,7 +72,8 @@ object distSrcCommonMod {
       __obj.asInstanceOf[ReadyMessage]
     }
     
-    extension [Self <: ReadyMessage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadyMessage] (val x: Self) extends AnyVal {
       
       inline def setReady(value: `true`): Self = StObject.set(x, "ready", value.asInstanceOf[js.Any])
     }
@@ -95,7 +96,8 @@ object distSrcCommonMod {
       __obj.asInstanceOf[RequestMessage]
     }
     
-    extension [Self <: RequestMessage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequestMessage] (val x: Self) extends AnyVal {
       
       inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
       
@@ -122,7 +124,8 @@ object distSrcCommonMod {
       __obj.asInstanceOf[ResponseMessage]
     }
     
-    extension [Self <: ResponseMessage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResponseMessage] (val x: Self) extends AnyVal {
       
       inline def setError(value: js.Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
@@ -161,7 +164,8 @@ object distSrcCommonMod {
       __obj.asInstanceOf[StartupMessage]
     }
     
-    extension [Self <: StartupMessage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StartupMessage] (val x: Self) extends AnyVal {
       
       inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
       
@@ -199,7 +203,8 @@ object distSrcCommonMod {
       __obj.asInstanceOf[TaskQueue]
     }
     
-    extension [Self <: TaskQueue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TaskQueue] (val x: Self) extends AnyVal {
       
       inline def setPush(value: Task => Unit): Self = StObject.set(x, "push", js.Any.fromFunction1(value))
       

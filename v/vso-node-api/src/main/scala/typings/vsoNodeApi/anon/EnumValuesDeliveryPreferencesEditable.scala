@@ -15,7 +15,8 @@ object EnumValuesDeliveryPreferencesEditable {
     __obj.asInstanceOf[EnumValuesDeliveryPreferencesEditable]
   }
   
-  extension [Self <: EnumValuesDeliveryPreferencesEditable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnumValuesDeliveryPreferencesEditable] (val x: Self) extends AnyVal {
     
     inline def setEnumValues(value: DeliveryPreferencesEditable): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
   }

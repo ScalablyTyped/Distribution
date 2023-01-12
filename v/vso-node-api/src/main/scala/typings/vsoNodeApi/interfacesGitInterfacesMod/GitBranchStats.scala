@@ -44,7 +44,8 @@ object GitBranchStats {
     __obj.asInstanceOf[GitBranchStats]
   }
   
-  extension [Self <: GitBranchStats](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GitBranchStats] (val x: Self) extends AnyVal {
     
     inline def setAheadCount(value: Double): Self = StObject.set(x, "aheadCount", value.asInstanceOf[js.Any])
     

@@ -54,7 +54,8 @@ object NxPivotDimensioncell {
     __obj.asInstanceOf[NxPivotDimensioncell]
   }
   
-  extension [Self <: NxPivotDimensioncell](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NxPivotDimensioncell] (val x: Self) extends AnyVal {
     
     inline def setQAttrDims(value: js.Array[NxAttributeDimValues]): Self = StObject.set(x, "qAttrDims", value.asInstanceOf[js.Any])
     

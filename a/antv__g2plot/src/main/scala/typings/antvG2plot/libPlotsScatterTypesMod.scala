@@ -69,7 +69,8 @@ object libPlotsScatterTypesMod {
       __obj.asInstanceOf[Labels]
     }
     
-    extension [Self <: Labels](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Labels] (val x: Self) extends AnyVal {
       
       inline def setAnimate(value: Boolean): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
       
@@ -187,7 +188,8 @@ object libPlotsScatterTypesMod {
       __obj.asInstanceOf[QuadrantOptions]
     }
     
-    extension [Self <: QuadrantOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QuadrantOptions] (val x: Self) extends AnyVal {
       
       inline def setLabels(value: js.Array[Labels]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
       
@@ -248,7 +250,8 @@ object libPlotsScatterTypesMod {
       __obj.asInstanceOf[RegressionLineOptions]
     }
     
-    extension [Self <: RegressionLineOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RegressionLineOptions] (val x: Self) extends AnyVal {
       
       inline def setAlgorithm(
         value: (js.Array[js.Tuple2[Double, Double]]) | (js.Function1[/* data */ Any, js.Array[js.Tuple2[Double, Double]]])
@@ -356,7 +359,8 @@ object libPlotsScatterTypesMod {
       __obj.asInstanceOf[ScatterOptions]
     }
     
-    extension [Self <: ScatterOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScatterOptions] (val x: Self) extends AnyVal {
       
       inline def setBrush(value: BrushCfg): Self = StObject.set(x, "brush", value.asInstanceOf[js.Any])
       

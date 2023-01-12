@@ -129,7 +129,8 @@ object examplesJsmAnimationMmdanimationhelperMod {
       __obj.asInstanceOf[AudioManagerParameter]
     }
     
-    extension [Self <: AudioManagerParameter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AudioManagerParameter] (val x: Self) extends AnyVal {
       
       inline def setDelayTime(value: Double): Self = StObject.set(x, "delayTime", value.asInstanceOf[js.Any])
       
@@ -160,7 +161,8 @@ object examplesJsmAnimationMmdanimationhelperMod {
       __obj.asInstanceOf[MMDAnimationHelperAddParameter]
     }
     
-    extension [Self <: MMDAnimationHelperAddParameter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MMDAnimationHelperAddParameter] (val x: Self) extends AnyVal {
       
       inline def setAnimation(value: AnimationClip | js.Array[AnimationClip]): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
       
@@ -215,7 +217,8 @@ object examplesJsmAnimationMmdanimationhelperMod {
       __obj.asInstanceOf[MMDAnimationHelperMixer]
     }
     
-    extension [Self <: MMDAnimationHelperMixer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MMDAnimationHelperMixer] (val x: Self) extends AnyVal {
       
       inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
@@ -252,7 +255,8 @@ object examplesJsmAnimationMmdanimationhelperMod {
       __obj.asInstanceOf[MMDAnimationHelperParameter]
     }
     
-    extension [Self <: MMDAnimationHelperParameter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MMDAnimationHelperParameter] (val x: Self) extends AnyVal {
       
       inline def setAfterglow(value: Double): Self = StObject.set(x, "afterglow", value.asInstanceOf[js.Any])
       
@@ -283,7 +287,8 @@ object examplesJsmAnimationMmdanimationhelperMod {
       __obj.asInstanceOf[MMDAnimationHelperPoseParameter]
     }
     
-    extension [Self <: MMDAnimationHelperPoseParameter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MMDAnimationHelperPoseParameter] (val x: Self) extends AnyVal {
       
       inline def setGrant(value: Boolean): Self = StObject.set(x, "grant", value.asInstanceOf[js.Any])
       

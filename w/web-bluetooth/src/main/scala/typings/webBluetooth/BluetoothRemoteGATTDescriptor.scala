@@ -29,7 +29,8 @@ object BluetoothRemoteGATTDescriptor {
     __obj.asInstanceOf[BluetoothRemoteGATTDescriptor]
   }
   
-  extension [Self <: BluetoothRemoteGATTDescriptor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BluetoothRemoteGATTDescriptor] (val x: Self) extends AnyVal {
     
     inline def setCharacteristic(value: BluetoothRemoteGATTCharacteristic): Self = StObject.set(x, "characteristic", value.asInstanceOf[js.Any])
     

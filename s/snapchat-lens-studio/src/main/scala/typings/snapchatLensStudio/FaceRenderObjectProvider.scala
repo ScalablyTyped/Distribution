@@ -55,7 +55,8 @@ object FaceRenderObjectProvider {
     __obj.asInstanceOf[FaceRenderObjectProvider]
   }
   
-  extension [Self <: FaceRenderObjectProvider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FaceRenderObjectProvider] (val x: Self) extends AnyVal {
     
     inline def setEyeCornerGeometryEnabled(value: Boolean): Self = StObject.set(x, "eyeCornerGeometryEnabled", value.asInstanceOf[js.Any])
     

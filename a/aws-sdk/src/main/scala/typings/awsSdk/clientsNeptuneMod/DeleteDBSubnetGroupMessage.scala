@@ -18,7 +18,8 @@ object DeleteDBSubnetGroupMessage {
     __obj.asInstanceOf[DeleteDBSubnetGroupMessage]
   }
   
-  extension [Self <: DeleteDBSubnetGroupMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteDBSubnetGroupMessage] (val x: Self) extends AnyVal {
     
     inline def setDBSubnetGroupName(value: String): Self = StObject.set(x, "DBSubnetGroupName", value.asInstanceOf[js.Any])
   }

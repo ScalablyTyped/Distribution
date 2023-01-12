@@ -47,7 +47,8 @@ object CatchClause {
     __obj.asInstanceOf[CatchClause]
   }
   
-  extension [Self <: CatchClause](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CatchClause] (val x: Self) extends AnyVal {
     
     inline def setBlock(value: Block): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
     

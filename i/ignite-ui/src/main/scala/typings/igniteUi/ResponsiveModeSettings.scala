@@ -27,7 +27,8 @@ object ResponsiveModeSettings {
     __obj.asInstanceOf[ResponsiveModeSettings]
   }
   
-  extension [Self <: ResponsiveModeSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResponsiveModeSettings] (val x: Self) extends AnyVal {
     
     inline def setMaxHeight(value: Any): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
     

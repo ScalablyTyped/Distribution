@@ -40,7 +40,8 @@ object CustomDataSources {
     __obj.asInstanceOf[CustomDataSources]
   }
   
-  extension [Self <: CustomDataSources](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomDataSources] (val x: Self) extends AnyVal {
     
     inline def setItems(value: js.Array[CustomDataSource]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     

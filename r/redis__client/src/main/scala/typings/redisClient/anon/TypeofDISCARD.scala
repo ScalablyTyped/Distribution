@@ -18,7 +18,8 @@ object TypeofDISCARD {
     __obj.asInstanceOf[TypeofDISCARD]
   }
   
-  extension [Self <: TypeofDISCARD](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofDISCARD] (val x: Self) extends AnyVal {
     
     inline def setTransformArguments(value: () => js.Array[String]): Self = StObject.set(x, "transformArguments", js.Any.fromFunction0(value))
     

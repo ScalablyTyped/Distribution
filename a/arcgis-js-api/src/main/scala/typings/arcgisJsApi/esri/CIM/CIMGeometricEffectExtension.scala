@@ -37,7 +37,8 @@ object CIMGeometricEffectExtension {
     __obj.asInstanceOf[CIMGeometricEffectExtension]
   }
   
-  extension [Self <: CIMGeometricEffectExtension](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CIMGeometricEffectExtension] (val x: Self) extends AnyVal {
     
     inline def setDeflection(value: Double): Self = StObject.set(x, "deflection", value.asInstanceOf[js.Any])
     

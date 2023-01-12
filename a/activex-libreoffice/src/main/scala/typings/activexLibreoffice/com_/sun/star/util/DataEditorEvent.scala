@@ -21,7 +21,8 @@ object DataEditorEvent {
     __obj.asInstanceOf[DataEditorEvent]
   }
   
-  extension [Self <: DataEditorEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataEditorEvent] (val x: Self) extends AnyVal {
     
     inline def setType(value: DataEditorEventType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
   }

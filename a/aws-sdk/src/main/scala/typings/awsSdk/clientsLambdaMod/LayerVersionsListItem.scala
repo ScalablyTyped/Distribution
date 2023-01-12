@@ -48,7 +48,8 @@ object LayerVersionsListItem {
     __obj.asInstanceOf[LayerVersionsListItem]
   }
   
-  extension [Self <: LayerVersionsListItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LayerVersionsListItem] (val x: Self) extends AnyVal {
     
     inline def setCompatibleArchitectures(value: CompatibleArchitectures): Self = StObject.set(x, "CompatibleArchitectures", value.asInstanceOf[js.Any])
     

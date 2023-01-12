@@ -30,7 +30,8 @@ object distSrcProtoPayloadMod {
     
     inline def encode(obj: NoiseExtensions): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(obj.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
     
-    extension [Self <: NoiseExtensions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NoiseExtensions] (val x: Self) extends AnyVal {
       
       inline def setWebtransportCerthashes(value: js.Array[js.typedarray.Uint8Array]): Self = StObject.set(x, "webtransportCerthashes", value.asInstanceOf[js.Any])
       
@@ -64,7 +65,8 @@ object distSrcProtoPayloadMod {
     
     inline def encode(obj: NoiseHandshakePayload): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(obj.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
     
-    extension [Self <: NoiseHandshakePayload](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NoiseHandshakePayload] (val x: Self) extends AnyVal {
       
       inline def setExtensions(value: NoiseExtensions): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
       

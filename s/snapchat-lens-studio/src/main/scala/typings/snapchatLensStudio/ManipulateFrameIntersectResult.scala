@@ -40,7 +40,8 @@ object ManipulateFrameIntersectResult {
     __obj.asInstanceOf[ManipulateFrameIntersectResult]
   }
   
-  extension [Self <: ManipulateFrameIntersectResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ManipulateFrameIntersectResult] (val x: Self) extends AnyVal {
     
     inline def setGetIntersectionPoint(value: () => vec3): Self = StObject.set(x, "getIntersectionPoint", js.Any.fromFunction0(value))
     

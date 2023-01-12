@@ -41,7 +41,8 @@ object XLoadable {
     __obj.asInstanceOf[XLoadable]
   }
   
-  extension [Self <: XLoadable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XLoadable] (val x: Self) extends AnyVal {
     
     inline def setInitNew(value: () => Unit): Self = StObject.set(x, "initNew", js.Any.fromFunction0(value))
     

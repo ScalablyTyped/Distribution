@@ -21,7 +21,8 @@ object DeleteScriptRequest {
     __obj.asInstanceOf[DeleteScriptRequest]
   }
   
-  extension [Self <: DeleteScriptRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteScriptRequest] (val x: Self) extends AnyVal {
     
     inline def setId(value: Id): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

@@ -71,7 +71,8 @@ object DateKlassOptions {
     __obj.asInstanceOf[DateKlassOptions]
   }
   
-  extension [Self <: DateKlassOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DateKlassOptions] (val x: Self) extends AnyVal {
     
     inline def setButtonClose(value: String): Self = StObject.set(x, "buttonClose", value.asInstanceOf[js.Any])
     

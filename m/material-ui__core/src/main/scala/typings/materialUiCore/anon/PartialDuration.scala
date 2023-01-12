@@ -28,7 +28,8 @@ object PartialDuration {
     __obj.asInstanceOf[PartialDuration]
   }
   
-  extension [Self <: PartialDuration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialDuration] (val x: Self) extends AnyVal {
     
     inline def setComplex(value: Double): Self = StObject.set(x, "complex", value.asInstanceOf[js.Any])
     

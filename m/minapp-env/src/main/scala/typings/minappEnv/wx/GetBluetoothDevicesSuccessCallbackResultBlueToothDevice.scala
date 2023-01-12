@@ -45,7 +45,8 @@ object GetBluetoothDevicesSuccessCallbackResultBlueToothDevice {
     __obj.asInstanceOf[GetBluetoothDevicesSuccessCallbackResultBlueToothDevice]
   }
   
-  extension [Self <: GetBluetoothDevicesSuccessCallbackResultBlueToothDevice](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetBluetoothDevicesSuccessCallbackResultBlueToothDevice] (val x: Self) extends AnyVal {
     
     inline def setAdvertisData(value: ArrayBuffer): Self = StObject.set(x, "advertisData", value.asInstanceOf[js.Any])
     

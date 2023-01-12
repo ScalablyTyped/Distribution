@@ -23,7 +23,8 @@ object ChoiceContent {
     __obj.asInstanceOf[ChoiceContent]
   }
   
-  extension [Self <: ChoiceContent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChoiceContent] (val x: Self) extends AnyVal {
     
     inline def setDisplayText(value: ChoiceContentDisplayText): Self = StObject.set(x, "DisplayText", value.asInstanceOf[js.Any])
     

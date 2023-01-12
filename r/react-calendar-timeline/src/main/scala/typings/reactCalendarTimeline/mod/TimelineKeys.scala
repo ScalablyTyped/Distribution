@@ -41,7 +41,8 @@ object TimelineKeys {
     __obj.asInstanceOf[TimelineKeys]
   }
   
-  extension [Self <: TimelineKeys](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimelineKeys] (val x: Self) extends AnyVal {
     
     inline def setGroupIdKey(value: String): Self = StObject.set(x, "groupIdKey", value.asInstanceOf[js.Any])
     

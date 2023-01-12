@@ -25,7 +25,8 @@ object EllipseOptions {
     __obj.asInstanceOf[EllipseOptions]
   }
   
-  extension [Self <: EllipseOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EllipseOptions] (val x: Self) extends AnyVal {
     
     inline def setDiameter(value: Double): Self = StObject.set(x, "diameter", value.asInstanceOf[js.Any])
     

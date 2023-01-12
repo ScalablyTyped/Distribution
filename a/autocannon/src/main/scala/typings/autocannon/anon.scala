@@ -103,7 +103,8 @@ object anon {
       __obj.asInstanceOf[Histogramsentnumber]
     }
     
-    extension [Self <: Histogramsentnumber](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Histogramsentnumber] (val x: Self) extends AnyVal {
       
       inline def setAverage(value: Double): Self = StObject.set(x, "average", value.asInstanceOf[js.Any])
       

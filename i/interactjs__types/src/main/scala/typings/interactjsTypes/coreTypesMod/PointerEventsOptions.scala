@@ -21,7 +21,8 @@ object PointerEventsOptions {
     __obj.asInstanceOf[PointerEventsOptions]
   }
   
-  extension [Self <: PointerEventsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PointerEventsOptions] (val x: Self) extends AnyVal {
     
     inline def setAllowFrom(value: String): Self = StObject.set(x, "allowFrom", value.asInstanceOf[js.Any])
     

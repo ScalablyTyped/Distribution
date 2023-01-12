@@ -44,7 +44,8 @@ object libEventLegacyMethodMod {
       __obj.asInstanceOf[LegacyMethod]
     }
     
-    extension [Self <: LegacyMethod](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LegacyMethod] (val x: Self) extends AnyVal {
       
       inline def setCall(value: /* repeated */ Any => Any): Self = StObject.set(x, "call", js.Any.fromFunction1(value))
       

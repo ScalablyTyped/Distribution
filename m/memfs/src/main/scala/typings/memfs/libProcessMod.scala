@@ -42,7 +42,8 @@ object libProcessMod {
       __obj.asInstanceOf[IProcess]
     }
     
-    extension [Self <: IProcess](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IProcess] (val x: Self) extends AnyVal {
       
       inline def setCwd(value: () => String): Self = StObject.set(x, "cwd", js.Any.fromFunction0(value))
       

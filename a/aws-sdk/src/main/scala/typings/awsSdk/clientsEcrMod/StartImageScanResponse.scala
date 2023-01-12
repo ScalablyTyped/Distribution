@@ -30,7 +30,8 @@ object StartImageScanResponse {
     __obj.asInstanceOf[StartImageScanResponse]
   }
   
-  extension [Self <: StartImageScanResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartImageScanResponse] (val x: Self) extends AnyVal {
     
     inline def setImageId(value: ImageIdentifier): Self = StObject.set(x, "imageId", value.asInstanceOf[js.Any])
     

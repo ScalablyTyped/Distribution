@@ -42,7 +42,8 @@ object mod {
       __obj.asInstanceOf[ConnectionOpts]
     }
     
-    extension [Self <: ConnectionOpts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConnectionOpts] (val x: Self) extends AnyVal {
       
       inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
       
@@ -61,7 +62,8 @@ object mod {
       __obj.asInstanceOf[DeletionOpts]
     }
     
-    extension [Self <: DeletionOpts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeletionOpts] (val x: Self) extends AnyVal {
       
       inline def setSsid(value: String): Self = StObject.set(x, "ssid", value.asInstanceOf[js.Any])
     }
@@ -80,7 +82,8 @@ object mod {
       __obj.asInstanceOf[InitConfig]
     }
     
-    extension [Self <: InitConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InitConfig] (val x: Self) extends AnyVal {
       
       inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
       
@@ -137,7 +140,8 @@ object mod {
       __obj.asInstanceOf[WiFiNetwork]
     }
     
-    extension [Self <: WiFiNetwork](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WiFiNetwork] (val x: Self) extends AnyVal {
       
       inline def setBssid(value: String): Self = StObject.set(x, "bssid", value.asInstanceOf[js.Any])
       

@@ -74,7 +74,8 @@ object CreateModel {
     __obj.asInstanceOf[CreateModel]
   }
   
-  extension [Self <: CreateModel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateModel] (val x: Self) extends AnyVal {
     
     inline def setAssignee_id(value: ZendeskID): Self = StObject.set(x, "assignee_id", value.asInstanceOf[js.Any])
     

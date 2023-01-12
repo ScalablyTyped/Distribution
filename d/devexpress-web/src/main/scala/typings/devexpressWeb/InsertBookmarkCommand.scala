@@ -26,7 +26,8 @@ object InsertBookmarkCommand {
     __obj.asInstanceOf[InsertBookmarkCommand]
   }
   
-  extension [Self <: InsertBookmarkCommand](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InsertBookmarkCommand] (val x: Self) extends AnyVal {
     
     inline def setExecute(value: (String, Double, Double) => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction3(value))
   }

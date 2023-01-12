@@ -31,7 +31,8 @@ object SegmenterOptions {
     __obj.asInstanceOf[SegmenterOptions]
   }
   
-  extension [Self <: SegmenterOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SegmenterOptions] (val x: Self) extends AnyVal {
     
     inline def setGranularity(value: grapheme | word | sentence): Self = StObject.set(x, "granularity", value.asInstanceOf[js.Any])
     

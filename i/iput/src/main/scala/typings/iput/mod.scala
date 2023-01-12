@@ -44,7 +44,8 @@ object mod {
       __obj.asInstanceOf[IputProp]
     }
     
-    extension [Self <: IputProp](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IputProp] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -77,7 +78,8 @@ object mod {
       __obj.asInstanceOf[IputState]
     }
     
-    extension [Self <: IputState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IputState] (val x: Self) extends AnyVal {
       
       inline def setValue(value: js.Array[String]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       

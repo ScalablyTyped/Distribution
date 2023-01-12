@@ -22,7 +22,8 @@ object PerformanceUserMetricsView {
     __obj.asInstanceOf[PerformanceUserMetricsView]
   }
   
-  extension [Self <: PerformanceUserMetricsView](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PerformanceUserMetricsView] (val x: Self) extends AnyVal {
     
     inline def setItems(value: js.Array[PerformanceMetricsListViewItems]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     

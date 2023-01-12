@@ -39,7 +39,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[FsHashStoreConfig]
     }
     
-    extension [Self <: FsHashStoreConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FsHashStoreConfig] (val x: Self) extends AnyVal {
       
       inline def setOptions(value: FsHashStoreOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
@@ -60,7 +61,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[FsHashStoreConstructor]
     }
     
-    extension [Self <: FsHashStoreConstructor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FsHashStoreConstructor] (val x: Self) extends AnyVal {
       
       inline def setCreate(value: FsHashStoreConfig => Store): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
     }
@@ -85,7 +87,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[FsHashStoreOptions]
     }
     
-    extension [Self <: FsHashStoreOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FsHashStoreOptions] (val x: Self) extends AnyVal {
       
       inline def setMaxsize(value: Double): Self = StObject.set(x, "maxsize", value.asInstanceOf[js.Any])
       

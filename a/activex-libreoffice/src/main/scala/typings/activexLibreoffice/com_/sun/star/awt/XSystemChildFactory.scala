@@ -33,7 +33,8 @@ object XSystemChildFactory {
     __obj.asInstanceOf[XSystemChildFactory]
   }
   
-  extension [Self <: XSystemChildFactory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XSystemChildFactory] (val x: Self) extends AnyVal {
     
     inline def setCreateSystemChild(value: (Any, SeqEquiv[Double], Double) => XWindowPeer): Self = StObject.set(x, "createSystemChild", js.Any.fromFunction3(value))
   }

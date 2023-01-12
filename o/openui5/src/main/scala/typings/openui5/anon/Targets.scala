@@ -73,7 +73,8 @@ object Targets {
     __obj.asInstanceOf[Targets]
   }
   
-  extension [Self <: Targets](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Targets] (val x: Self) extends AnyVal {
     
     inline def setConfig(value: Async): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     

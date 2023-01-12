@@ -26,7 +26,8 @@ object anon {
       __obj.asInstanceOf[`0`]
     }
     
-    extension [Self <: `0`](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: `0`] (val x: Self) extends AnyVal {
       
       inline def set0(value: `1`): Self = StObject.set(x, "0", value.asInstanceOf[js.Any])
       
@@ -49,7 +50,8 @@ object anon {
       __obj.asInstanceOf[`111Obj0ObjObj0`]
     }
     
-    extension [Self <: `111Obj0ObjObj0`](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: `111Obj0ObjObj0`] (val x: Self) extends AnyVal {
       
       inline def set1(value: `11Obj0`): Self = StObject.set(x, "1", value.asInstanceOf[js.Any])
     }
@@ -70,7 +72,8 @@ object anon {
       __obj.asInstanceOf[`11Obj0`]
     }
     
-    extension [Self <: `11Obj0`](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: `11Obj0`] (val x: Self) extends AnyVal {
       
       inline def set1(value: `1`): Self = StObject.set(x, "1", value.asInstanceOf[js.Any])
     }
@@ -87,7 +90,8 @@ object anon {
       __obj.asInstanceOf[ClearCache]
     }
     
-    extension [Self <: ClearCache](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClearCache] (val x: Self) extends AnyVal {
       
       inline def setClearCache(value: () => Unit): Self = StObject.set(x, "clearCache", js.Any.fromFunction0(value))
     }
@@ -112,7 +116,8 @@ object anon {
       __obj.asInstanceOf[Length]
     }
     
-    extension [Self <: Length](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Length] (val x: Self) extends AnyVal {
       
       inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     }

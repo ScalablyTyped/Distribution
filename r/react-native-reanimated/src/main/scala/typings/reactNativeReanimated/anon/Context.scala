@@ -19,7 +19,8 @@ object Context {
     __obj.asInstanceOf[Context[TContext]]
   }
   
-  extension [Self <: Context[?], TContext /* <: typings.reactNativeReanimated.mod.Context */](x: Self & Context[TContext]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Context[?], TContext /* <: typings.reactNativeReanimated.mod.Context */] (val x: Self & Context[TContext]) extends AnyVal {
     
     inline def setContext(value: TContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     

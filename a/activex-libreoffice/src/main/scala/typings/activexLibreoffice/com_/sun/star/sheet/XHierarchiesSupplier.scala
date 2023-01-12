@@ -41,7 +41,8 @@ object XHierarchiesSupplier {
     __obj.asInstanceOf[XHierarchiesSupplier]
   }
   
-  extension [Self <: XHierarchiesSupplier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XHierarchiesSupplier] (val x: Self) extends AnyVal {
     
     inline def setGetHierarchies(value: () => XNameAccess): Self = StObject.set(x, "getHierarchies", js.Any.fromFunction0(value))
     

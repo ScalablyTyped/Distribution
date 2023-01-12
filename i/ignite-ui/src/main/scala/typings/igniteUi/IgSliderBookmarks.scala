@@ -39,7 +39,8 @@ object IgSliderBookmarks {
     __obj.asInstanceOf[IgSliderBookmarks]
   }
   
-  extension [Self <: IgSliderBookmarks](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgSliderBookmarks] (val x: Self) extends AnyVal {
     
     inline def setCss(value: String): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
     

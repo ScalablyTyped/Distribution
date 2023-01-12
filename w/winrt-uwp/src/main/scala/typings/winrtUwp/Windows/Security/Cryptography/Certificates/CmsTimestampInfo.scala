@@ -24,7 +24,8 @@ object CmsTimestampInfo {
     __obj.asInstanceOf[CmsTimestampInfo]
   }
   
-  extension [Self <: CmsTimestampInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CmsTimestampInfo] (val x: Self) extends AnyVal {
     
     inline def setCertificates(value: IVectorView[Certificate]): Self = StObject.set(x, "certificates", value.asInstanceOf[js.Any])
     

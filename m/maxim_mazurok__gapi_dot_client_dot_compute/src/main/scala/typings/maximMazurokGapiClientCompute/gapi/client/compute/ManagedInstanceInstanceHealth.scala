@@ -19,7 +19,8 @@ object ManagedInstanceInstanceHealth {
     __obj.asInstanceOf[ManagedInstanceInstanceHealth]
   }
   
-  extension [Self <: ManagedInstanceInstanceHealth](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ManagedInstanceInstanceHealth] (val x: Self) extends AnyVal {
     
     inline def setDetailedHealthState(value: String): Self = StObject.set(x, "detailedHealthState", value.asInstanceOf[js.Any])
     

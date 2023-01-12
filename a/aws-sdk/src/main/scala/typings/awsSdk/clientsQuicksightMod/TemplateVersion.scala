@@ -58,7 +58,8 @@ object TemplateVersion {
     __obj.asInstanceOf[TemplateVersion]
   }
   
-  extension [Self <: TemplateVersion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TemplateVersion] (val x: Self) extends AnyVal {
     
     inline def setCreatedTime(value: js.Date): Self = StObject.set(x, "CreatedTime", value.asInstanceOf[js.Any])
     

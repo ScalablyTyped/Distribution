@@ -23,7 +23,8 @@ object FieldGroup {
     __obj.asInstanceOf[FieldGroup]
   }
   
-  extension [Self <: FieldGroup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FieldGroup] (val x: Self) extends AnyVal {
     
     inline def setFields(value: FieldGroupFieldsList): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     

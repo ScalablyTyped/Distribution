@@ -27,7 +27,8 @@ object KnownStatsModuleTraceItem {
     __obj.asInstanceOf[KnownStatsModuleTraceItem]
   }
   
-  extension [Self <: KnownStatsModuleTraceItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KnownStatsModuleTraceItem] (val x: Self) extends AnyVal {
     
     inline def setDependencies(value: js.Array[StatsModuleTraceDependency]): Self = StObject.set(x, "dependencies", value.asInstanceOf[js.Any])
     

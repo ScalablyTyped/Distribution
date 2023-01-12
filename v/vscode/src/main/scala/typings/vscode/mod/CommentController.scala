@@ -66,7 +66,8 @@ object CommentController {
     __obj.asInstanceOf[CommentController]
   }
   
-  extension [Self <: CommentController](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CommentController] (val x: Self) extends AnyVal {
     
     inline def setCommentingRangeProvider(value: CommentingRangeProvider): Self = StObject.set(x, "commentingRangeProvider", value.asInstanceOf[js.Any])
     

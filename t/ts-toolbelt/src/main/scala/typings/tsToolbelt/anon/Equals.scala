@@ -49,7 +49,8 @@ object Equals {
     __obj.asInstanceOf[Equals[O, O1]]
   }
   
-  extension [Self <: Equals[?, ?], O /* <: js.Object */, O1 /* <: js.Object */](x: Self & (Equals[O, O1])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Equals[?, ?], O /* <: js.Object */, O1 /* <: js.Object */] (val x: Self & (Equals[O, O1])) extends AnyVal {
     
     inline def `setContains-Greaterthansign`(value: IntersectMatch[O, O1, `contains-Greaterthansign`]): Self = StObject.set(x, "contains->", value.asInstanceOf[js.Any])
     

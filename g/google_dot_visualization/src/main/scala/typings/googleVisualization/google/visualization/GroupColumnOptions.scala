@@ -24,7 +24,8 @@ object GroupColumnOptions {
     __obj.asInstanceOf[GroupColumnOptions]
   }
   
-  extension [Self <: GroupColumnOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GroupColumnOptions] (val x: Self) extends AnyVal {
     
     inline def setAggregation(value: js.Array[Any] => Any): Self = StObject.set(x, "aggregation", js.Any.fromFunction1(value))
     

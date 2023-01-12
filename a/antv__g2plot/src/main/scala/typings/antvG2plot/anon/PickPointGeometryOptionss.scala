@@ -16,7 +16,8 @@ object PickPointGeometryOptionss {
     __obj.asInstanceOf[PickPointGeometryOptionss]
   }
   
-  extension [Self <: PickPointGeometryOptionss](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickPointGeometryOptionss] (val x: Self) extends AnyVal {
     
     inline def setState(value: typings.antvG2plot.libTypesStateMod.State): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     

@@ -39,7 +39,8 @@ object ArtifactLocation {
     __obj.asInstanceOf[ArtifactLocation]
   }
   
-  extension [Self <: ArtifactLocation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ArtifactLocation] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: Message): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

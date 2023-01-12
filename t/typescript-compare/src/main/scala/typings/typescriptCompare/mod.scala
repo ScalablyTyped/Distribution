@@ -64,7 +64,8 @@ object mod {
           __obj.asInstanceOf[Default]
         }
         
-        extension [Self <: Default](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: Default] (val x: Self) extends AnyVal {
           
           inline def setBroaderLeft(value: broaderLeft): Self = StObject.set(x, "broaderLeft", value.asInstanceOf[js.Any])
           
@@ -76,7 +77,8 @@ object mod {
         }
       }
       
-      extension [Self <: Options](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
         
         inline def setBroaderLeft(value: scala.Any): Self = StObject.set(x, "broaderLeft", value.asInstanceOf[js.Any])
         

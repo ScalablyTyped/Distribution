@@ -105,7 +105,8 @@ object DeleteParametersQueryConfirmdelete {
     __obj.asInstanceOf[DeleteParametersQueryConfirmdelete]
   }
   
-  extension [Self <: DeleteParametersQueryConfirmdelete](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteParametersQueryConfirmdelete] (val x: Self) extends AnyVal {
     
     inline def setDelete(value: ParametersQueryConfirmdelete): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
     

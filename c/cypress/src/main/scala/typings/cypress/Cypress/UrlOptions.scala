@@ -26,7 +26,8 @@ object UrlOptions {
     __obj.asInstanceOf[UrlOptions]
   }
   
-  extension [Self <: UrlOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UrlOptions] (val x: Self) extends AnyVal {
     
     inline def setDecode(value: Boolean): Self = StObject.set(x, "decode", value.asInstanceOf[js.Any])
   }

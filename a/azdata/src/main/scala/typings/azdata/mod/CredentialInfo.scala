@@ -32,7 +32,8 @@ object CredentialInfo {
     __obj.asInstanceOf[CredentialInfo]
   }
   
-  extension [Self <: CredentialInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CredentialInfo] (val x: Self) extends AnyVal {
     
     inline def setCreateDate(value: String): Self = StObject.set(x, "createDate", value.asInstanceOf[js.Any])
     

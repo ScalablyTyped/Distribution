@@ -23,7 +23,8 @@ object IFileRequest {
     __obj.asInstanceOf[IFileRequest]
   }
   
-  extension [Self <: IFileRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IFileRequest] (val x: Self) extends AnyVal {
     
     inline def setAbort(value: () => Unit): Self = StObject.set(x, "abort", js.Any.fromFunction0(value))
     

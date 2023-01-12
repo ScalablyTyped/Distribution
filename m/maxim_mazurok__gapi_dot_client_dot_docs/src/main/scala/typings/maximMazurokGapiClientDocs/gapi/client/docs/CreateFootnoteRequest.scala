@@ -26,7 +26,8 @@ object CreateFootnoteRequest {
     __obj.asInstanceOf[CreateFootnoteRequest]
   }
   
-  extension [Self <: CreateFootnoteRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateFootnoteRequest] (val x: Self) extends AnyVal {
     
     inline def setEndOfSegmentLocation(value: EndOfSegmentLocation): Self = StObject.set(x, "endOfSegmentLocation", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object GkeNodePoolAutoscalingConfig {
     __obj.asInstanceOf[GkeNodePoolAutoscalingConfig]
   }
   
-  extension [Self <: GkeNodePoolAutoscalingConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GkeNodePoolAutoscalingConfig] (val x: Self) extends AnyVal {
     
     inline def setMaxNodeCount(value: Double): Self = StObject.set(x, "maxNodeCount", value.asInstanceOf[js.Any])
     

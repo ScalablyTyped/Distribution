@@ -15,7 +15,8 @@ object KeyOperationAttestation {
     __obj.asInstanceOf[KeyOperationAttestation]
   }
   
-  extension [Self <: KeyOperationAttestation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KeyOperationAttestation] (val x: Self) extends AnyVal {
     
     inline def setFormat(value: AttestationFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
   }

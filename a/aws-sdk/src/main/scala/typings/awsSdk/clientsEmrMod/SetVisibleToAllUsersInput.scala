@@ -23,7 +23,8 @@ object SetVisibleToAllUsersInput {
     __obj.asInstanceOf[SetVisibleToAllUsersInput]
   }
   
-  extension [Self <: SetVisibleToAllUsersInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetVisibleToAllUsersInput] (val x: Self) extends AnyVal {
     
     inline def setJobFlowIds(value: XmlStringList): Self = StObject.set(x, "JobFlowIds", value.asInstanceOf[js.Any])
     

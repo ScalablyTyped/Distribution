@@ -48,7 +48,8 @@ object AssessmentRunFilter {
     __obj.asInstanceOf[AssessmentRunFilter]
   }
   
-  extension [Self <: AssessmentRunFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssessmentRunFilter] (val x: Self) extends AnyVal {
     
     inline def setCompletionTimeRange(value: TimestampRange): Self = StObject.set(x, "completionTimeRange", value.asInstanceOf[js.Any])
     

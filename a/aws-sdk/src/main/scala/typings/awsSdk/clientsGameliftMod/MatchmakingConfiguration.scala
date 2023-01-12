@@ -98,7 +98,8 @@ object MatchmakingConfiguration {
     __obj.asInstanceOf[MatchmakingConfiguration]
   }
   
-  extension [Self <: MatchmakingConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MatchmakingConfiguration] (val x: Self) extends AnyVal {
     
     inline def setAcceptanceRequired(value: BooleanModel): Self = StObject.set(x, "AcceptanceRequired", value.asInstanceOf[js.Any])
     

@@ -69,7 +69,8 @@ object mod {
       __obj.asInstanceOf[Factory[T]]
     }
     
-    extension [Self <: Factory[?], T](x: Self & Factory[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Factory[?], T] (val x: Self & Factory[T]) extends AnyVal {
       
       inline def setCreate(value: () => js.Promise[T]): Self = StObject.set(x, "create", js.Any.fromFunction0(value))
       
@@ -116,7 +117,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setAcquireTimeoutMillis(value: Double): Self = StObject.set(x, "acquireTimeoutMillis", value.asInstanceOf[js.Any])
       

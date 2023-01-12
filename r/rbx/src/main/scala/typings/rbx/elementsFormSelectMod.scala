@@ -192,7 +192,8 @@ object elementsFormSelectMod {
       __obj.asInstanceOf[SelectContainerModifierProps]
     }
     
-    extension [Self <: SelectContainerModifierProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SelectContainerModifierProps] (val x: Self) extends AnyVal {
       
       inline def setColor(value: primary | success | info | warning | danger | light | dark | white | black | link): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -312,7 +313,8 @@ object elementsFormSelectMod {
       __obj.asInstanceOf[SelectContainerProps]
     }
     
-    extension [Self <: SelectContainerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SelectContainerProps] (val x: Self) extends AnyVal {
       
       inline def setBackgroundColor(
         value: primary | success | info | warning | danger | light | dark | white | black | link | `black-bis` | `black-ter` | `grey-darker` | `grey-dark` | grey | `grey-light` | `grey-lighter` | `white-ter` | `white-bis`
@@ -486,7 +488,8 @@ object elementsFormSelectMod {
       __obj.asInstanceOf[SelectContainerVariables]
     }
     
-    extension [Self <: SelectContainerVariables](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SelectContainerVariables] (val x: Self) extends AnyVal {
       
       inline def setSizes(value: small | medium | large): Self = StObject.set(x, "sizes", value.asInstanceOf[js.Any])
       
@@ -507,7 +510,8 @@ object elementsFormSelectMod {
       __obj.asInstanceOf[SelectContainerVariablesDefaults]
     }
     
-    extension [Self <: SelectContainerVariablesDefaults](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SelectContainerVariablesDefaults] (val x: Self) extends AnyVal {
       
       inline def setSizes(value: small | medium | large): Self = StObject.set(x, "sizes", value.asInstanceOf[js.Any])
       
@@ -601,7 +605,8 @@ object elementsFormSelectMod {
       __obj.asInstanceOf[SelectProps]
     }
     
-    extension [Self <: SelectProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SelectProps] (val x: Self) extends AnyVal {
       
       inline def setBackgroundColor(
         value: primary | success | info | warning | danger | light | dark | white | black | link | `black-bis` | `black-ter` | `grey-darker` | `grey-dark` | grey | `grey-light` | `grey-lighter` | `white-ter` | `white-bis`

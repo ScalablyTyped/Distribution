@@ -74,7 +74,8 @@ object ButtomSettingsCommon {
     __obj.asInstanceOf[ButtomSettingsCommon]
   }
   
-  extension [Self <: ButtomSettingsCommon](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ButtomSettingsCommon] (val x: Self) extends AnyVal {
     
     inline def setAction(value: (/* e */ Any, /* dt */ Api, /* node */ JQuery, /* config */ ButtonSettings) => Unit): Self = StObject.set(x, "action", js.Any.fromFunction4(value))
     

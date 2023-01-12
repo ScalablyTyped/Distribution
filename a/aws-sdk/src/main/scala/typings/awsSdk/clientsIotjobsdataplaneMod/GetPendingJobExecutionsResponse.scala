@@ -23,7 +23,8 @@ object GetPendingJobExecutionsResponse {
     __obj.asInstanceOf[GetPendingJobExecutionsResponse]
   }
   
-  extension [Self <: GetPendingJobExecutionsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetPendingJobExecutionsResponse] (val x: Self) extends AnyVal {
     
     inline def setInProgressJobs(value: JobExecutionSummaryList): Self = StObject.set(x, "inProgressJobs", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object QueryResult {
     __obj.asInstanceOf[QueryResult[T]]
   }
   
-  extension [Self <: QueryResult[?], T](x: Self & QueryResult[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryResult[?], T] (val x: Self & QueryResult[T]) extends AnyVal {
     
     inline def setKey(value: T): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     

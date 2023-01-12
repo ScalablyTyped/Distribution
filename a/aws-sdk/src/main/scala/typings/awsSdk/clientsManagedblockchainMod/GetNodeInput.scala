@@ -28,7 +28,8 @@ object GetNodeInput {
     __obj.asInstanceOf[GetNodeInput]
   }
   
-  extension [Self <: GetNodeInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetNodeInput] (val x: Self) extends AnyVal {
     
     inline def setMemberId(value: ResourceIdString): Self = StObject.set(x, "MemberId", value.asInstanceOf[js.Any])
     

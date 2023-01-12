@@ -27,7 +27,8 @@ object EventEVENTREPAIR {
     __obj.asInstanceOf[EventEVENTREPAIR]
   }
   
-  extension [Self <: EventEVENTREPAIR](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventEVENTREPAIR] (val x: Self) extends AnyVal {
     
     inline def setData(
       value: /* import warning: importer.ImportType#apply Failed type conversion: screeps.EventData[screeps.EVENT_REPAIR] */ js.Any

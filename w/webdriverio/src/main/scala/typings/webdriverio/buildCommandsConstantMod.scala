@@ -36,7 +36,8 @@ object buildCommandsConstantMod {
       __obj.asInstanceOf[FormattedActions]
     }
     
-    extension [Self <: FormattedActions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FormattedActions] (val x: Self) extends AnyVal {
       
       inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
@@ -66,7 +67,8 @@ object buildCommandsConstantMod {
       __obj.asInstanceOf[FormattedTouchAction]
     }
     
-    extension [Self <: FormattedTouchAction](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FormattedTouchAction] (val x: Self) extends AnyVal {
       
       inline def setAction(value: ActionTypes): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       

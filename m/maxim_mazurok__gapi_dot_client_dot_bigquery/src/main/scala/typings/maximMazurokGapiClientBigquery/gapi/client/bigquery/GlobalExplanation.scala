@@ -19,7 +19,8 @@ object GlobalExplanation {
     __obj.asInstanceOf[GlobalExplanation]
   }
   
-  extension [Self <: GlobalExplanation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GlobalExplanation] (val x: Self) extends AnyVal {
     
     inline def setClassLabel(value: String): Self = StObject.set(x, "classLabel", value.asInstanceOf[js.Any])
     

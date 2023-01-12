@@ -15,7 +15,8 @@ object TranslateXTransform {
     __obj.asInstanceOf[TranslateXTransform]
   }
   
-  extension [Self <: TranslateXTransform](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TranslateXTransform] (val x: Self) extends AnyVal {
     
     inline def setTranslateX(value: Double): Self = StObject.set(x, "translateX", value.asInstanceOf[js.Any])
   }

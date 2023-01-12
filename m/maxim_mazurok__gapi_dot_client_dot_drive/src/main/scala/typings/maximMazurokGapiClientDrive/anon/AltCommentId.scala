@@ -44,7 +44,8 @@ object AltCommentId {
     __obj.asInstanceOf[AltCommentId]
   }
   
-  extension [Self <: AltCommentId](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AltCommentId] (val x: Self) extends AnyVal {
     
     inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
     

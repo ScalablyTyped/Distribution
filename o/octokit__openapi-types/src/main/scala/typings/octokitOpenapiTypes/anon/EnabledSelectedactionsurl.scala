@@ -25,7 +25,8 @@ object EnabledSelectedactionsurl {
     __obj.asInstanceOf[EnabledSelectedactionsurl]
   }
   
-  extension [Self <: EnabledSelectedactionsurl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnabledSelectedactionsurl] (val x: Self) extends AnyVal {
     
     inline def setAllowed_actions(
       value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['allowed-actions'] */ js.Any

@@ -33,7 +33,8 @@ object UpdateFirewallDomainsResponse {
     __obj.asInstanceOf[UpdateFirewallDomainsResponse]
   }
   
-  extension [Self <: UpdateFirewallDomainsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateFirewallDomainsResponse] (val x: Self) extends AnyVal {
     
     inline def setId(value: ResourceId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     

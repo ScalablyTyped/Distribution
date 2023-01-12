@@ -15,7 +15,8 @@ object GroupWidth {
     __obj.asInstanceOf[GroupWidth]
   }
   
-  extension [Self <: GroupWidth](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GroupWidth] (val x: Self) extends AnyVal {
     
     inline def setGroupWidth(value: Any): Self = StObject.set(x, "groupWidth", value.asInstanceOf[js.Any])
   }

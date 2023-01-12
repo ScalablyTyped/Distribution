@@ -20,7 +20,8 @@ object GlowPower {
     __obj.asInstanceOf[GlowPower]
   }
   
-  extension [Self <: GlowPower](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GlowPower] (val x: Self) extends AnyVal {
     
     inline def setColor(value: Property | typings.cesium.mod.Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

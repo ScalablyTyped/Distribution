@@ -18,7 +18,8 @@ object NetworkFabricConfiguration {
     __obj.asInstanceOf[NetworkFabricConfiguration]
   }
   
-  extension [Self <: NetworkFabricConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NetworkFabricConfiguration] (val x: Self) extends AnyVal {
     
     inline def setEdition(value: Edition): Self = StObject.set(x, "Edition", value.asInstanceOf[js.Any])
   }

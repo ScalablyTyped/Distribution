@@ -33,7 +33,8 @@ object NetworkPathComponent {
     __obj.asInstanceOf[NetworkPathComponent]
   }
   
-  extension [Self <: NetworkPathComponent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NetworkPathComponent] (val x: Self) extends AnyVal {
     
     inline def setComponentId(value: NonEmptyString): Self = StObject.set(x, "ComponentId", value.asInstanceOf[js.Any])
     

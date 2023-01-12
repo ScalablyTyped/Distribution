@@ -27,7 +27,8 @@ object AudioStreamDescriptor {
     __obj.asInstanceOf[AudioStreamDescriptor]
   }
   
-  extension [Self <: AudioStreamDescriptor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AudioStreamDescriptor] (val x: Self) extends AnyVal {
     
     inline def setEncodingProperties(value: AudioEncodingProperties): Self = StObject.set(x, "encodingProperties", value.asInstanceOf[js.Any])
     

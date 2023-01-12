@@ -16,7 +16,8 @@ object LiveChatTextMessageDetails {
     __obj.asInstanceOf[LiveChatTextMessageDetails]
   }
   
-  extension [Self <: LiveChatTextMessageDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LiveChatTextMessageDetails] (val x: Self) extends AnyVal {
     
     inline def setMessageText(value: String): Self = StObject.set(x, "messageText", value.asInstanceOf[js.Any])
     

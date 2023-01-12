@@ -83,7 +83,8 @@ object XController2 {
     __obj.asInstanceOf[XController2]
   }
   
-  extension [Self <: XController2](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XController2] (val x: Self) extends AnyVal {
     
     inline def setComponentWindow(value: XWindow): Self = StObject.set(x, "ComponentWindow", value.asInstanceOf[js.Any])
     

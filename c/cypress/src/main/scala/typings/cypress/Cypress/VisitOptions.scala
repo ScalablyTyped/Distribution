@@ -113,7 +113,8 @@ object VisitOptions {
     __obj.asInstanceOf[VisitOptions]
   }
   
-  extension [Self <: VisitOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VisitOptions] (val x: Self) extends AnyVal {
     
     inline def setAuth(value: Auth): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     

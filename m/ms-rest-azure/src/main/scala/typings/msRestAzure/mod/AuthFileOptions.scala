@@ -25,7 +25,8 @@ object AuthFileOptions {
     __obj.asInstanceOf[AuthFileOptions]
   }
   
-  extension [Self <: AuthFileOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AuthFileOptions] (val x: Self) extends AnyVal {
     
     inline def setFilePath(value: String): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object DescribeAccountAttributesResult {
     __obj.asInstanceOf[DescribeAccountAttributesResult]
   }
   
-  extension [Self <: DescribeAccountAttributesResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeAccountAttributesResult] (val x: Self) extends AnyVal {
     
     inline def setAccountAttributes(value: AccountAttributeList): Self = StObject.set(x, "AccountAttributes", value.asInstanceOf[js.Any])
     

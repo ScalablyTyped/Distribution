@@ -19,7 +19,8 @@ object SetReturnValueParameterType {
     __obj.asInstanceOf[SetReturnValueParameterType]
   }
   
-  extension [Self <: SetReturnValueParameterType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetReturnValueParameterType] (val x: Self) extends AnyVal {
     
     inline def setNewValue(value: CallArgument): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
   }

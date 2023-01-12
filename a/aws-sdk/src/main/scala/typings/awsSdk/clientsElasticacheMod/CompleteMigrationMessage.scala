@@ -23,7 +23,8 @@ object CompleteMigrationMessage {
     __obj.asInstanceOf[CompleteMigrationMessage]
   }
   
-  extension [Self <: CompleteMigrationMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CompleteMigrationMessage] (val x: Self) extends AnyVal {
     
     inline def setForce(value: Boolean): Self = StObject.set(x, "Force", value.asInstanceOf[js.Any])
     

@@ -81,7 +81,8 @@ object ActionButtonPropertiestyp {
     __obj.asInstanceOf[ActionButtonPropertiestyp]
   }
   
-  extension [Self <: ActionButtonPropertiestyp](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ActionButtonPropertiestyp] (val x: Self) extends AnyVal {
     
     inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     

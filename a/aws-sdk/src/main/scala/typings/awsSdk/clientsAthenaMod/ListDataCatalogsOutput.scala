@@ -23,7 +23,8 @@ object ListDataCatalogsOutput {
     __obj.asInstanceOf[ListDataCatalogsOutput]
   }
   
-  extension [Self <: ListDataCatalogsOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListDataCatalogsOutput] (val x: Self) extends AnyVal {
     
     inline def setDataCatalogsSummary(value: DataCatalogSummaryList): Self = StObject.set(x, "DataCatalogsSummary", value.asInstanceOf[js.Any])
     

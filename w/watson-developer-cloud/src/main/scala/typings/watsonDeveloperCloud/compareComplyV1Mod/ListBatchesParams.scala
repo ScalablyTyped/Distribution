@@ -18,7 +18,8 @@ object ListBatchesParams {
     __obj.asInstanceOf[ListBatchesParams]
   }
   
-  extension [Self <: ListBatchesParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListBatchesParams] (val x: Self) extends AnyVal {
     
     inline def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     

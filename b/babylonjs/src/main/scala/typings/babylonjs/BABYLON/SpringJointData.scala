@@ -33,7 +33,8 @@ object SpringJointData {
     __obj.asInstanceOf[SpringJointData]
   }
   
-  extension [Self <: SpringJointData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpringJointData] (val x: Self) extends AnyVal {
     
     inline def setDamping(value: Double): Self = StObject.set(x, "damping", value.asInstanceOf[js.Any])
     

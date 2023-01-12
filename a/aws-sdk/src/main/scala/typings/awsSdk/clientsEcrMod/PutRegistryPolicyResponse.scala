@@ -23,7 +23,8 @@ object PutRegistryPolicyResponse {
     __obj.asInstanceOf[PutRegistryPolicyResponse]
   }
   
-  extension [Self <: PutRegistryPolicyResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutRegistryPolicyResponse] (val x: Self) extends AnyVal {
     
     inline def setPolicyText(value: RegistryPolicyText): Self = StObject.set(x, "policyText", value.asInstanceOf[js.Any])
     

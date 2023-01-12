@@ -180,7 +180,8 @@ object XEmbeddedObject {
     __obj.asInstanceOf[XEmbeddedObject]
   }
   
-  extension [Self <: XEmbeddedObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XEmbeddedObject] (val x: Self) extends AnyVal {
     
     inline def setChangeState(value: Double => Unit): Self = StObject.set(x, "changeState", js.Any.fromFunction1(value))
     

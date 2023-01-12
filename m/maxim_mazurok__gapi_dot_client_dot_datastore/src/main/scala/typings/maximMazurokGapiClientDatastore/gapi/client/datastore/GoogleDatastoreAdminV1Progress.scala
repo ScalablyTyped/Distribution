@@ -19,7 +19,8 @@ object GoogleDatastoreAdminV1Progress {
     __obj.asInstanceOf[GoogleDatastoreAdminV1Progress]
   }
   
-  extension [Self <: GoogleDatastoreAdminV1Progress](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleDatastoreAdminV1Progress] (val x: Self) extends AnyVal {
     
     inline def setWorkCompleted(value: String): Self = StObject.set(x, "workCompleted", value.asInstanceOf[js.Any])
     

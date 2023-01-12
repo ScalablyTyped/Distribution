@@ -20,7 +20,8 @@ object IntrospectionNonNullTypeRef {
     __obj.asInstanceOf[IntrospectionNonNullTypeRef]
   }
   
-  extension [Self <: IntrospectionNonNullTypeRef](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IntrospectionNonNullTypeRef] (val x: Self) extends AnyVal {
     
     inline def setKind(value: NON_NULL): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

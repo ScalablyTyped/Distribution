@@ -53,7 +53,8 @@ object MessageOptions {
     __obj.asInstanceOf[MessageOptions]
   }
   
-  extension [Self <: MessageOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MessageOptions] (val x: Self) extends AnyVal {
     
     inline def setHideAfter(value: Double): Self = StObject.set(x, "hideAfter", value.asInstanceOf[js.Any])
     

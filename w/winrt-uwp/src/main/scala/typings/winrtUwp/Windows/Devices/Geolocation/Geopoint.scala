@@ -31,7 +31,8 @@ object Geopoint {
     __obj.asInstanceOf[Geopoint]
   }
   
-  extension [Self <: Geopoint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Geopoint] (val x: Self) extends AnyVal {
     
     inline def setAltitudeReferenceSystem(value: AltitudeReferenceSystem): Self = StObject.set(x, "altitudeReferenceSystem", value.asInstanceOf[js.Any])
     

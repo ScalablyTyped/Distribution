@@ -51,7 +51,8 @@ object IEditControlCellContext {
     __obj.asInstanceOf[IEditControlCellContext]
   }
   
-  extension [Self <: IEditControlCellContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IEditControlCellContext] (val x: Self) extends AnyVal {
     
     inline def setCellHeight(value: Double): Self = StObject.set(x, "cellHeight", value.asInstanceOf[js.Any])
     

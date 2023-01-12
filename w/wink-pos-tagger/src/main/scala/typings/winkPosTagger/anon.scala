@@ -20,7 +20,8 @@ object anon {
       __obj.asInstanceOf[Lemma]
     }
     
-    extension [Self <: Lemma](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Lemma] (val x: Self) extends AnyVal {
       
       inline def setLemma(value: `true`): Self = StObject.set(x, "lemma", value.asInstanceOf[js.Any])
       

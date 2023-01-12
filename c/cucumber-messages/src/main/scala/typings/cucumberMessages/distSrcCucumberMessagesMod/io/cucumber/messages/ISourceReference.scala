@@ -20,7 +20,8 @@ object ISourceReference {
     __obj.asInstanceOf[ISourceReference]
   }
   
-  extension [Self <: ISourceReference](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISourceReference] (val x: Self) extends AnyVal {
     
     inline def setLocation(value: ILocation): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     

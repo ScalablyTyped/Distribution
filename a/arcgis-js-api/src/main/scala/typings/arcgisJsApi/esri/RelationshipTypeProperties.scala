@@ -43,7 +43,8 @@ object RelationshipTypeProperties {
     __obj.asInstanceOf[RelationshipTypeProperties]
   }
   
-  extension [Self <: RelationshipTypeProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RelationshipTypeProperties] (val x: Self) extends AnyVal {
     
     inline def setDestinationEntityTypes(value: js.Array[String]): Self = StObject.set(x, "destinationEntityTypes", value.asInstanceOf[js.Any])
     

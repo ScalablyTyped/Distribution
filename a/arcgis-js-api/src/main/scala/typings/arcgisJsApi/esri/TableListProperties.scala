@@ -75,7 +75,8 @@ object TableListProperties {
     __obj.asInstanceOf[TableListProperties]
   }
   
-  extension [Self <: TableListProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TableListProperties] (val x: Self) extends AnyVal {
     
     inline def setIconClass(value: String): Self = StObject.set(x, "iconClass", value.asInstanceOf[js.Any])
     

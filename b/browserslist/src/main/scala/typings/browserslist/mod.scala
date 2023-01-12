@@ -105,7 +105,8 @@ object mod {
       __obj.asInstanceOf[Config]
     }
     
-    extension [Self <: Config](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
       
       inline def setDefaults(value: js.Array[String]): Self = StObject.set(x, "defaults", value.asInstanceOf[js.Any])
       
@@ -128,7 +129,8 @@ object mod {
       __obj.asInstanceOf[LoadConfigOptions]
     }
     
-    extension [Self <: LoadConfigOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LoadConfigOptions] (val x: Self) extends AnyVal {
       
       inline def setConfig(value: String): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
@@ -195,7 +197,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setConfig(value: String): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
@@ -249,7 +252,8 @@ object mod {
       __obj.asInstanceOf[Query]
     }
     
-    extension [Self <: Query](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Query] (val x: Self) extends AnyVal {
       
       inline def setCompose(value: or | and): Self = StObject.set(x, "compose", value.asInstanceOf[js.Any])
       
@@ -308,7 +312,8 @@ object mod {
           __obj.asInstanceOf[ProcessEnv]
         }
         
-        extension [Self <: ProcessEnv](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: ProcessEnv] (val x: Self) extends AnyVal {
           
           inline def setBROWSERSLIST(value: String): Self = StObject.set(x, "BROWSERSLIST", value.asInstanceOf[js.Any])
           

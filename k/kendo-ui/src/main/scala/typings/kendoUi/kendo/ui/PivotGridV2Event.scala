@@ -19,7 +19,8 @@ object PivotGridV2Event {
     __obj.asInstanceOf[PivotGridV2Event]
   }
   
-  extension [Self <: PivotGridV2Event](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PivotGridV2Event] (val x: Self) extends AnyVal {
     
     inline def setIsDefaultPrevented(value: () => Boolean): Self = StObject.set(x, "isDefaultPrevented", js.Any.fromFunction0(value))
     

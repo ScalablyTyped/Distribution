@@ -38,7 +38,8 @@ object PutCoreNetworkPolicyRequest {
     __obj.asInstanceOf[PutCoreNetworkPolicyRequest]
   }
   
-  extension [Self <: PutCoreNetworkPolicyRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutCoreNetworkPolicyRequest] (val x: Self) extends AnyVal {
     
     inline def setClientToken(value: ClientToken): Self = StObject.set(x, "ClientToken", value.asInstanceOf[js.Any])
     

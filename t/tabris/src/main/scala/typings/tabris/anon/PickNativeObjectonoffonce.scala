@@ -67,7 +67,8 @@ object PickNativeObjectonoffonce {
     __obj.asInstanceOf[PickNativeObjectonoffonce]
   }
   
-  extension [Self <: PickNativeObjectonoffonce](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickNativeObjectonoffonce] (val x: Self) extends AnyVal {
     
     inline def setOff(
       value: (/* type */ String, /* listener */ js.Function1[/* event */ EventObject[NativeObject], Unit], /* context */ js.UndefOr[js.Object]) => PickNativeObjectonoffonce

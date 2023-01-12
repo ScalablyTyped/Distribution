@@ -69,7 +69,8 @@ object AddMenuToNesting {
     __obj.asInstanceOf[AddMenuToNesting]
   }
   
-  extension [Self <: AddMenuToNesting](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AddMenuToNesting] (val x: Self) extends AnyVal {
     
     inline def setAddMenuToNesting(value: () => Unit): Self = StObject.set(x, "addMenuToNesting", js.Any.fromFunction0(value))
     

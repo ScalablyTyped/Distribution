@@ -94,7 +94,8 @@ object GoogleCloudDialogflowCxV3QueryResult {
     __obj.asInstanceOf[GoogleCloudDialogflowCxV3QueryResult]
   }
   
-  extension [Self <: GoogleCloudDialogflowCxV3QueryResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDialogflowCxV3QueryResult] (val x: Self) extends AnyVal {
     
     inline def setCurrentPage(value: GoogleCloudDialogflowCxV3Page): Self = StObject.set(x, "currentPage", value.asInstanceOf[js.Any])
     

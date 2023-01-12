@@ -64,7 +64,8 @@ object Issue {
       __obj.asInstanceOf[GetIssueCommentsParams]
     }
     
-    extension [Self <: GetIssueCommentsParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetIssueCommentsParams] (val x: Self) extends AnyVal {
       
       inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       
@@ -151,7 +152,8 @@ object Issue {
       __obj.asInstanceOf[GetIssuesParams]
     }
     
-    extension [Self <: GetIssuesParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetIssuesParams] (val x: Self) extends AnyVal {
       
       inline def setAssigneeId(value: js.Array[Double]): Self = StObject.set(x, "assigneeId", value.asInstanceOf[js.Any])
       
@@ -302,7 +304,8 @@ object Issue {
       __obj.asInstanceOf[IssueCommentNotifications]
     }
     
-    extension [Self <: IssueCommentNotifications](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IssueCommentNotifications] (val x: Self) extends AnyVal {
       
       inline def setNotifiedUserId(value: js.Array[Double]): Self = StObject.set(x, "notifiedUserId", value.asInstanceOf[js.Any])
       
@@ -321,7 +324,8 @@ object Issue {
       __obj.asInstanceOf[LinkIssueSharedFilesParams]
     }
     
-    extension [Self <: LinkIssueSharedFilesParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LinkIssueSharedFilesParams] (val x: Self) extends AnyVal {
       
       inline def setFileId(value: js.Array[Double]): Self = StObject.set(x, "fileId", value.asInstanceOf[js.Any])
       
@@ -340,7 +344,8 @@ object Issue {
       __obj.asInstanceOf[PatchIssueCommentParams]
     }
     
-    extension [Self <: PatchIssueCommentParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PatchIssueCommentParams] (val x: Self) extends AnyVal {
       
       inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     }
@@ -393,7 +398,8 @@ object Issue {
       __obj.asInstanceOf[PatchIssueParams]
     }
     
-    extension [Self <: PatchIssueParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PatchIssueParams] (val x: Self) extends AnyVal {
       
       inline def setActualHours(value: Double): Self = StObject.set(x, "actualHours", value.asInstanceOf[js.Any])
       
@@ -494,7 +500,8 @@ object Issue {
       __obj.asInstanceOf[PostIssueCommentsParams]
     }
     
-    extension [Self <: PostIssueCommentsParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PostIssueCommentsParams] (val x: Self) extends AnyVal {
       
       inline def setAttachmentId(value: js.Array[Double]): Self = StObject.set(x, "attachmentId", value.asInstanceOf[js.Any])
       
@@ -555,7 +562,8 @@ object Issue {
       __obj.asInstanceOf[PostIssueParams]
     }
     
-    extension [Self <: PostIssueParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PostIssueParams] (val x: Self) extends AnyVal {
       
       inline def setActualHours(value: Double): Self = StObject.set(x, "actualHours", value.asInstanceOf[js.Any])
       

@@ -16,7 +16,8 @@ object UpdateByQueryRethrottleResponse {
     __obj.asInstanceOf[UpdateByQueryRethrottleResponse]
   }
   
-  extension [Self <: UpdateByQueryRethrottleResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateByQueryRethrottleResponse] (val x: Self) extends AnyVal {
     
     inline def setNodes(value: Record[String, UpdateByQueryRethrottleUpdateByQueryRethrottleNode]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
   }

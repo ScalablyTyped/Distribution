@@ -20,7 +20,8 @@ object PhoneCallOriginDataRequestTriggerDetails {
     __obj.asInstanceOf[PhoneCallOriginDataRequestTriggerDetails]
   }
   
-  extension [Self <: PhoneCallOriginDataRequestTriggerDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PhoneCallOriginDataRequestTriggerDetails] (val x: Self) extends AnyVal {
     
     inline def setPhoneNumber(value: String): Self = StObject.set(x, "phoneNumber", value.asInstanceOf[js.Any])
     

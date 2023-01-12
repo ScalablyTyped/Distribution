@@ -75,7 +75,8 @@ object CreateAutoPredictorRequest {
     __obj.asInstanceOf[CreateAutoPredictorRequest]
   }
   
-  extension [Self <: CreateAutoPredictorRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateAutoPredictorRequest] (val x: Self) extends AnyVal {
     
     inline def setDataConfig(value: DataConfig): Self = StObject.set(x, "DataConfig", value.asInstanceOf[js.Any])
     

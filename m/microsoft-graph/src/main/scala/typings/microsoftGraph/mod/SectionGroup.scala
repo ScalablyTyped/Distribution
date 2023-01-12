@@ -36,7 +36,8 @@ object SectionGroup {
     __obj.asInstanceOf[SectionGroup]
   }
   
-  extension [Self <: SectionGroup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SectionGroup] (val x: Self) extends AnyVal {
     
     inline def setParentNotebook(value: NullableOption[Notebook]): Self = StObject.set(x, "parentNotebook", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object OpenZFSNfsExport {
     __obj.asInstanceOf[OpenZFSNfsExport]
   }
   
-  extension [Self <: OpenZFSNfsExport](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OpenZFSNfsExport] (val x: Self) extends AnyVal {
     
     inline def setClientConfigurations(value: OpenZFSClientConfigurations): Self = StObject.set(x, "ClientConfigurations", value.asInstanceOf[js.Any])
     

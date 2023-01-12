@@ -107,7 +107,8 @@ object libEditorOptionsMod {
           __obj.asInstanceOf[Global]
         }
         
-        extension [Self <: Global](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: Global] (val x: Self) extends AnyVal {
           
           inline def setWindow(value: Any): Self = StObject.set(x, "window", value.asInstanceOf[js.Any])
         }

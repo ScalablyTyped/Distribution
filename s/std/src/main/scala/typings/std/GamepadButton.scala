@@ -26,7 +26,8 @@ object GamepadButton {
     __obj.asInstanceOf[GamepadButton]
   }
   
-  extension [Self <: GamepadButton](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GamepadButton] (val x: Self) extends AnyVal {
     
     inline def setPressed(value: scala.Boolean): Self = StObject.set(x, "pressed", value.asInstanceOf[js.Any])
     

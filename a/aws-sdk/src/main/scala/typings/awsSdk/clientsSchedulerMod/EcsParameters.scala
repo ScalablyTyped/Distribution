@@ -83,7 +83,8 @@ object EcsParameters {
     __obj.asInstanceOf[EcsParameters]
   }
   
-  extension [Self <: EcsParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EcsParameters] (val x: Self) extends AnyVal {
     
     inline def setCapacityProviderStrategy(value: CapacityProviderStrategy): Self = StObject.set(x, "CapacityProviderStrategy", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object TooltipLinkListProps {
     __obj.asInstanceOf[TooltipLinkListProps]
   }
   
-  extension [Self <: TooltipLinkListProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TooltipLinkListProps] (val x: Self) extends AnyVal {
     
     inline def setLinkWrapper(value: LinkWrapperType): Self = StObject.set(x, "LinkWrapper", value.asInstanceOf[js.Any])
     

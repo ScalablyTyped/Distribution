@@ -23,7 +23,8 @@ object DescribeInstancePatchStatesResult {
     __obj.asInstanceOf[DescribeInstancePatchStatesResult]
   }
   
-  extension [Self <: DescribeInstancePatchStatesResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeInstancePatchStatesResult] (val x: Self) extends AnyVal {
     
     inline def setInstancePatchStates(value: InstancePatchStateList): Self = StObject.set(x, "InstancePatchStates", value.asInstanceOf[js.Any])
     

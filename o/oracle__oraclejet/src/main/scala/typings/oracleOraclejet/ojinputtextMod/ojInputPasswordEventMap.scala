@@ -179,7 +179,8 @@ object ojInputPasswordEventMap {
     __obj.asInstanceOf[ojInputPasswordEventMap]
   }
   
-  extension [Self <: ojInputPasswordEventMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ojInputPasswordEventMap] (val x: Self) extends AnyVal {
     
     inline def setOjAnimateEnd(value: ojAnimateEnd): Self = StObject.set(x, "ojAnimateEnd", value.asInstanceOf[js.Any])
     

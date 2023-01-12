@@ -37,7 +37,8 @@ object NetworkCreateOptions {
     __obj.asInstanceOf[NetworkCreateOptions]
   }
   
-  extension [Self <: NetworkCreateOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NetworkCreateOptions] (val x: Self) extends AnyVal {
     
     inline def setAbortSignal(value: AbortSignal): Self = StObject.set(x, "abortSignal", value.asInstanceOf[js.Any])
     

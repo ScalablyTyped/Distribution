@@ -21,7 +21,8 @@ object Clones {
     __obj.asInstanceOf[Clones]
   }
   
-  extension [Self <: Clones](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Clones] (val x: Self) extends AnyVal {
     
     inline def setClones(value: js.Array[Count]): Self = StObject.set(x, "clones", value.asInstanceOf[js.Any])
     

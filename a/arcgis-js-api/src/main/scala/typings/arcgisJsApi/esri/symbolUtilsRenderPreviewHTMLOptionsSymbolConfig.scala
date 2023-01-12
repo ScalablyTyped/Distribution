@@ -27,7 +27,8 @@ object symbolUtilsRenderPreviewHTMLOptionsSymbolConfig {
     __obj.asInstanceOf[symbolUtilsRenderPreviewHTMLOptionsSymbolConfig]
   }
   
-  extension [Self <: symbolUtilsRenderPreviewHTMLOptionsSymbolConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: symbolUtilsRenderPreviewHTMLOptionsSymbolConfig] (val x: Self) extends AnyVal {
     
     inline def setIsSquareFill(value: Boolean): Self = StObject.set(x, "isSquareFill", value.asInstanceOf[js.Any])
     

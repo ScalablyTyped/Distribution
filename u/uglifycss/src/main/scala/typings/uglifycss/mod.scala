@@ -51,7 +51,8 @@ object mod {
       __obj.asInstanceOf[UglifyCSSOptions]
     }
     
-    extension [Self <: UglifyCSSOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UglifyCSSOptions] (val x: Self) extends AnyVal {
       
       inline def setCuteComments(value: Boolean): Self = StObject.set(x, "cuteComments", value.asInstanceOf[js.Any])
       

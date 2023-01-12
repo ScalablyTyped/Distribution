@@ -23,7 +23,8 @@ object PutAppReplicationConfigurationRequest {
     __obj.asInstanceOf[PutAppReplicationConfigurationRequest]
   }
   
-  extension [Self <: PutAppReplicationConfigurationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutAppReplicationConfigurationRequest] (val x: Self) extends AnyVal {
     
     inline def setAppId(value: AppId): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
     

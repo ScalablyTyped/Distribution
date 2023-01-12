@@ -34,7 +34,8 @@ object ComponentParameterDetail {
     __obj.asInstanceOf[ComponentParameterDetail]
   }
   
-  extension [Self <: ComponentParameterDetail](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ComponentParameterDetail] (val x: Self) extends AnyVal {
     
     inline def setDefaultValue(value: ComponentParameterValueList): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
     

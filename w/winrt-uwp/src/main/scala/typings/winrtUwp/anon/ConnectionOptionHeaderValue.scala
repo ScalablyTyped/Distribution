@@ -18,7 +18,8 @@ object ConnectionOptionHeaderValue {
     __obj.asInstanceOf[ConnectionOptionHeaderValue]
   }
   
-  extension [Self <: ConnectionOptionHeaderValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConnectionOptionHeaderValue] (val x: Self) extends AnyVal {
     
     inline def setConnectionOptionHeaderValue(value: HttpConnectionOptionHeaderValue): Self = StObject.set(x, "connectionOptionHeaderValue", value.asInstanceOf[js.Any])
     

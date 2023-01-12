@@ -17,7 +17,8 @@ object ReleaseFileSystemNfsV3LocksRequest {
     __obj.asInstanceOf[ReleaseFileSystemNfsV3LocksRequest]
   }
   
-  extension [Self <: ReleaseFileSystemNfsV3LocksRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReleaseFileSystemNfsV3LocksRequest] (val x: Self) extends AnyVal {
     
     inline def setClientRequestToken(value: ClientRequestToken): Self = StObject.set(x, "ClientRequestToken", value.asInstanceOf[js.Any])
     

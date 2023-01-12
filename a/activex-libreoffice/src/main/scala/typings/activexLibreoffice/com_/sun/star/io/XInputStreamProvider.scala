@@ -34,7 +34,8 @@ object XInputStreamProvider {
     __obj.asInstanceOf[XInputStreamProvider]
   }
   
-  extension [Self <: XInputStreamProvider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XInputStreamProvider] (val x: Self) extends AnyVal {
     
     inline def setCreateInputStream(value: () => XInputStream): Self = StObject.set(x, "createInputStream", js.Any.fromFunction0(value))
   }

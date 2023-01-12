@@ -121,7 +121,8 @@ object distSrcConcurrentlyMod {
       __obj.asInstanceOf[ConcurrentlyOptions]
     }
     
-    extension [Self <: ConcurrentlyOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConcurrentlyOptions] (val x: Self) extends AnyVal {
       
       inline def setAdditionalArguments(value: js.Array[String]): Self = StObject.set(x, "additionalArguments", value.asInstanceOf[js.Any])
       
@@ -195,7 +196,8 @@ object distSrcConcurrentlyMod {
       __obj.asInstanceOf[ConcurrentlyResult]
     }
     
-    extension [Self <: ConcurrentlyResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConcurrentlyResult] (val x: Self) extends AnyVal {
       
       inline def setCommands(value: js.Array[Command]): Self = StObject.set(x, "commands", value.asInstanceOf[js.Any])
       

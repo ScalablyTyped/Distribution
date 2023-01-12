@@ -28,7 +28,8 @@ object PersonDetail {
     __obj.asInstanceOf[PersonDetail]
   }
   
-  extension [Self <: PersonDetail](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PersonDetail] (val x: Self) extends AnyVal {
     
     inline def setBoundingBox(value: BoundingBox): Self = StObject.set(x, "BoundingBox", value.asInstanceOf[js.Any])
     

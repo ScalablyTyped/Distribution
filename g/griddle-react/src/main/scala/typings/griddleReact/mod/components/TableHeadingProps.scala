@@ -19,7 +19,8 @@ object TableHeadingProps {
     __obj.asInstanceOf[TableHeadingProps]
   }
   
-  extension [Self <: TableHeadingProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TableHeadingProps] (val x: Self) extends AnyVal {
     
     inline def setColumnIds(value: js.Array[Double]): Self = StObject.set(x, "columnIds", value.asInstanceOf[js.Any])
     

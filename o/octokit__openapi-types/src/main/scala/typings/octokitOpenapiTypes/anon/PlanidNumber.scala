@@ -16,7 +16,8 @@ object PlanidNumber {
     __obj.asInstanceOf[PlanidNumber]
   }
   
-  extension [Self <: PlanidNumber](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlanidNumber] (val x: Self) extends AnyVal {
     
     inline def setPlan_id(value: Double): Self = StObject.set(x, "plan_id", value.asInstanceOf[js.Any])
   }

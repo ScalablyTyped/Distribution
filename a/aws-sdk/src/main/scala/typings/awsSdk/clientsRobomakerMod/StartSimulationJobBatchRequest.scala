@@ -33,7 +33,8 @@ object StartSimulationJobBatchRequest {
     __obj.asInstanceOf[StartSimulationJobBatchRequest]
   }
   
-  extension [Self <: StartSimulationJobBatchRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartSimulationJobBatchRequest] (val x: Self) extends AnyVal {
     
     inline def setBatchPolicy(value: BatchPolicy): Self = StObject.set(x, "batchPolicy", value.asInstanceOf[js.Any])
     

@@ -37,7 +37,8 @@ object UserDataMapping {
     __obj.asInstanceOf[UserDataMapping]
   }
   
-  extension [Self <: UserDataMapping](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UserDataMapping] (val x: Self) extends AnyVal {
     
     inline def setArchiveTime(value: String): Self = StObject.set(x, "archiveTime", value.asInstanceOf[js.Any])
     

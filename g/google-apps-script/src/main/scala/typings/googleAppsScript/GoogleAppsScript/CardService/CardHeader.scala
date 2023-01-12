@@ -38,7 +38,8 @@ object CardHeader {
     __obj.asInstanceOf[CardHeader]
   }
   
-  extension [Self <: CardHeader](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CardHeader] (val x: Self) extends AnyVal {
     
     inline def setSetImageAltText(value: String => CardHeader): Self = StObject.set(x, "setImageAltText", js.Any.fromFunction1(value))
     

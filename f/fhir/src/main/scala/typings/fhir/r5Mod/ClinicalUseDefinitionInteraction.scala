@@ -40,7 +40,8 @@ object ClinicalUseDefinitionInteraction {
     __obj.asInstanceOf[ClinicalUseDefinitionInteraction]
   }
   
-  extension [Self <: ClinicalUseDefinitionInteraction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClinicalUseDefinitionInteraction] (val x: Self) extends AnyVal {
     
     inline def setEffect(value: CodeableReference): Self = StObject.set(x, "effect", value.asInstanceOf[js.Any])
     

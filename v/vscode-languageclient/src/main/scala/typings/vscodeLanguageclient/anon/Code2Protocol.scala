@@ -23,7 +23,8 @@ object Code2Protocol {
     __obj.asInstanceOf[Code2Protocol]
   }
   
-  extension [Self <: Code2Protocol](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Code2Protocol] (val x: Self) extends AnyVal {
     
     inline def setCode2Protocol(value: /* value */ Uri => String): Self = StObject.set(x, "code2Protocol", js.Any.fromFunction1(value))
     

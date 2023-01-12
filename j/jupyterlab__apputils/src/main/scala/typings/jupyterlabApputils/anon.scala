@@ -25,7 +25,8 @@ object anon {
       __obj.asInstanceOf[Above]
     }
     
-    extension [Self <: Above](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Above] (val x: Self) extends AnyVal {
       
       inline def setAbove(value: Double): Self = StObject.set(x, "above", value.asInstanceOf[js.Any])
       
@@ -54,7 +55,8 @@ object anon {
       __obj.asInstanceOf[Bottom]
     }
     
-    extension [Self <: Bottom](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Bottom] (val x: Self) extends AnyVal {
       
       inline def setBottom(value: OutOfViewDisplay): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       
@@ -87,7 +89,8 @@ object anon {
       __obj.asInstanceOf[Horizontal]
     }
     
-    extension [Self <: Horizontal](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Horizontal] (val x: Self) extends AnyVal {
       
       inline def setHorizontal(value: Double): Self = StObject.set(x, "horizontal", value.asInstanceOf[js.Any])
       
@@ -127,7 +130,8 @@ object anon {
       __obj.asInstanceOf[OmitITextOptionsselection]
     }
     
-    extension [Self <: OmitITextOptionsselection](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OmitITextOptionsselection] (val x: Self) extends AnyVal {
       
       inline def setCancelLabel(value: String): Self = StObject.set(x, "cancelLabel", value.asInstanceOf[js.Any])
       
@@ -193,7 +197,8 @@ object anon {
       __obj.asInstanceOf[PartialIButton]
     }
     
-    extension [Self <: PartialIButton](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialIButton] (val x: Self) extends AnyVal {
       
       inline def setAccept(value: Boolean): Self = StObject.set(x, "accept", value.asInstanceOf[js.Any])
       
@@ -249,7 +254,8 @@ object anon {
       __obj.asInstanceOf[PartialICheckbox]
     }
     
-    extension [Self <: PartialICheckbox](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialICheckbox] (val x: Self) extends AnyVal {
       
       inline def setCaption(value: String): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
       
@@ -293,7 +299,8 @@ object anon {
       __obj.asInstanceOf[PartialIModel]
     }
     
-    extension [Self <: PartialIModel](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialIModel] (val x: Self) extends AnyVal {
       
       inline def setConnections(value: Double): Self = StObject.set(x, "connections", value.asInstanceOf[js.Any])
       
@@ -339,7 +346,8 @@ object anon {
       __obj.asInstanceOf[PartialIScore]
     }
     
-    extension [Self <: PartialIScore](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialIScore] (val x: Self) extends AnyVal {
       
       inline def setIndices(value: js.Array[Double]): Self = StObject.set(x, "indices", value.asInstanceOf[js.Any])
       
@@ -390,7 +398,8 @@ object anon {
       __obj.asInstanceOf[ReadonlyIButton]
     }
     
-    extension [Self <: ReadonlyIButton](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadonlyIButton] (val x: Self) extends AnyVal {
       
       inline def setAccept(value: Boolean): Self = StObject.set(x, "accept", value.asInstanceOf[js.Any])
       
@@ -464,7 +473,8 @@ object anon {
       __obj.asInstanceOf[RecordKernelDisplayStatus]
     }
     
-    extension [Self <: RecordKernelDisplayStatus](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RecordKernelDisplayStatus] (val x: Self) extends AnyVal {
       
       inline def setAutorestarting(value: String): Self = StObject.set(x, "autorestarting", value.asInstanceOf[js.Any])
       

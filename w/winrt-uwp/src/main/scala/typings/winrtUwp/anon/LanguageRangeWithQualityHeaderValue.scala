@@ -18,7 +18,8 @@ object LanguageRangeWithQualityHeaderValue {
     __obj.asInstanceOf[LanguageRangeWithQualityHeaderValue]
   }
   
-  extension [Self <: LanguageRangeWithQualityHeaderValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LanguageRangeWithQualityHeaderValue] (val x: Self) extends AnyVal {
     
     inline def setLanguageRangeWithQualityHeaderValue(value: HttpLanguageRangeWithQualityHeaderValue): Self = StObject.set(x, "languageRangeWithQualityHeaderValue", value.asInstanceOf[js.Any])
     

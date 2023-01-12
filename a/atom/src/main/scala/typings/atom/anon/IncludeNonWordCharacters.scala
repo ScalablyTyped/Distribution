@@ -17,7 +17,8 @@ object IncludeNonWordCharacters {
     __obj.asInstanceOf[IncludeNonWordCharacters]
   }
   
-  extension [Self <: IncludeNonWordCharacters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IncludeNonWordCharacters] (val x: Self) extends AnyVal {
     
     inline def setIncludeNonWordCharacters(value: Boolean): Self = StObject.set(x, "includeNonWordCharacters", value.asInstanceOf[js.Any])
     

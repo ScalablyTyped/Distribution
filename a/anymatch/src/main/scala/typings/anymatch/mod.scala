@@ -46,7 +46,8 @@ object mod {
       __obj.asInstanceOf[PicomatchOptions]
     }
     
-    extension [Self <: PicomatchOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PicomatchOptions] (val x: Self) extends AnyVal {
       
       inline def setDot(value: Boolean): Self = StObject.set(x, "dot", value.asInstanceOf[js.Any])
     }

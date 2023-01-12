@@ -21,7 +21,8 @@ object Undelete {
     __obj.asInstanceOf[Undelete]
   }
   
-  extension [Self <: Undelete](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Undelete] (val x: Self) extends AnyVal {
     
     inline def setAdd(value: scala.Double): Self = StObject.set(x, "add", value.asInstanceOf[js.Any])
     

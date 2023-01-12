@@ -29,7 +29,8 @@ object TerminalState {
     __obj.asInstanceOf[TerminalState]
   }
   
-  extension [Self <: TerminalState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TerminalState] (val x: Self) extends AnyVal {
     
     inline def setIsInteractedWith(value: Boolean): Self = StObject.set(x, "isInteractedWith", value.asInstanceOf[js.Any])
   }

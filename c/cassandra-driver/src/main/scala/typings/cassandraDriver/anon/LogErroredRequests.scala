@@ -25,7 +25,8 @@ object LogErroredRequests {
     __obj.asInstanceOf[LogErroredRequests]
   }
   
-  extension [Self <: LogErroredRequests](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LogErroredRequests] (val x: Self) extends AnyVal {
     
     inline def setLogErroredRequests(value: Boolean): Self = StObject.set(x, "logErroredRequests", value.asInstanceOf[js.Any])
     

@@ -25,7 +25,8 @@ object anon {
       __obj.asInstanceOf[PartialDigestConfiguratio]
     }
     
-    extension [Self <: PartialDigestConfiguratio](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialDigestConfiguratio] (val x: Self) extends AnyVal {
       
       inline def setMode(value: disc | cont | auto): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       

@@ -15,7 +15,8 @@ object ShadowedComponent {
     __obj.asInstanceOf[ShadowedComponent]
   }
   
-  extension [Self <: ShadowedComponent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShadowedComponent] (val x: Self) extends AnyVal {
     
     inline def setShadow(value: Double): Self = StObject.set(x, "shadow", value.asInstanceOf[js.Any])
     

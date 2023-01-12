@@ -39,7 +39,8 @@ object ServerInjectResponse {
     __obj.asInstanceOf[ServerInjectResponse]
   }
   
-  extension [Self <: ServerInjectResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServerInjectResponse] (val x: Self) extends AnyVal {
     
     inline def setRequest(value: Request): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     

@@ -298,7 +298,8 @@ object mod {
       __obj.asInstanceOf[Animation_]
     }
     
-    extension [Self <: Animation_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Animation_] (val x: Self) extends AnyVal {
       
       inline def setAttr(value: StringDictionary[String | Double | Boolean | Any]): Self = StObject.set(x, "attr", value.asInstanceOf[js.Any])
       
@@ -369,7 +370,8 @@ object mod {
       __obj.asInstanceOf[BBox]
     }
     
-    extension [Self <: BBox](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BBox] (val x: Self) extends AnyVal {
       
       inline def setCx(value: Double): Self = StObject.set(x, "cx", value.asInstanceOf[js.Any])
       
@@ -770,7 +772,8 @@ object mod {
       __obj.asInstanceOf[ExplicitTransform]
     }
     
-    extension [Self <: ExplicitTransform](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExplicitTransform] (val x: Self) extends AnyVal {
       
       inline def setDx(value: Double): Self = StObject.set(x, "dx", value.asInstanceOf[js.Any])
       
@@ -851,7 +854,8 @@ object mod {
       __obj.asInstanceOf[HSB_]
     }
     
-    extension [Self <: HSB_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HSB_] (val x: Self) extends AnyVal {
       
       inline def setB(value: Double): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
       
@@ -876,7 +880,8 @@ object mod {
       __obj.asInstanceOf[HSL_]
     }
     
-    extension [Self <: HSL_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HSL_] (val x: Self) extends AnyVal {
       
       inline def setH(value: Double): Self = StObject.set(x, "h", value.asInstanceOf[js.Any])
       
@@ -920,7 +925,8 @@ object mod {
       __obj.asInstanceOf[IntersectionDot]
     }
     
-    extension [Self <: IntersectionDot](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IntersectionDot] (val x: Self) extends AnyVal {
       
       inline def setBez1(value: js.Array[Double]): Self = StObject.set(x, "bez1", value.asInstanceOf[js.Any])
       
@@ -1100,7 +1106,8 @@ object mod {
       __obj.asInstanceOf[RGBHSB]
     }
     
-    extension [Self <: RGBHSB](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RGBHSB] (val x: Self) extends AnyVal {
       
       inline def setB(value: Double): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
       
@@ -1139,7 +1146,8 @@ object mod {
       __obj.asInstanceOf[RGB_]
     }
     
-    extension [Self <: RGB_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RGB_] (val x: Self) extends AnyVal {
       
       inline def setB(value: Double): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
       
@@ -1242,7 +1250,8 @@ object mod {
       __obj.asInstanceOf[TransformationDescriptor]
     }
     
-    extension [Self <: TransformationDescriptor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TransformationDescriptor] (val x: Self) extends AnyVal {
       
       inline def setDiffMatrix(value: Matrix_): Self = StObject.set(x, "diffMatrix", value.asInstanceOf[js.Any])
       

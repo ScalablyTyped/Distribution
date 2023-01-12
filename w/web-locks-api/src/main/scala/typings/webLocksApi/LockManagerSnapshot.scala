@@ -17,7 +17,8 @@ object LockManagerSnapshot {
     __obj.asInstanceOf[LockManagerSnapshot]
   }
   
-  extension [Self <: LockManagerSnapshot](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LockManagerSnapshot] (val x: Self) extends AnyVal {
     
     inline def setHeld(value: js.Array[LockInfo]): Self = StObject.set(x, "held", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object ColumnHeaderOptions {
     __obj.asInstanceOf[ColumnHeaderOptions]
   }
   
-  extension [Self <: ColumnHeaderOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ColumnHeaderOptions] (val x: Self) extends AnyVal {
     
     inline def setProps(value: Any): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
   }

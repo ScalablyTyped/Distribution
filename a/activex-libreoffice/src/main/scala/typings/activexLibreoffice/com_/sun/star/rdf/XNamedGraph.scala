@@ -106,7 +106,8 @@ object XNamedGraph {
     __obj.asInstanceOf[XNamedGraph]
   }
   
-  extension [Self <: XNamedGraph](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XNamedGraph] (val x: Self) extends AnyVal {
     
     inline def setAddStatement(value: (XResource, XURI, XNode) => Unit): Self = StObject.set(x, "addStatement", js.Any.fromFunction3(value))
     

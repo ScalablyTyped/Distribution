@@ -56,7 +56,8 @@ object DataSelectionOptions {
     __obj.asInstanceOf[DataSelectionOptions[T]]
   }
   
-  extension [Self <: DataSelectionOptions[?], T](x: Self & DataSelectionOptions[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataSelectionOptions[?], T] (val x: Self & DataSelectionOptions[T]) extends AnyVal {
     
     inline def setFields(value: js.Array[String] | Any): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object DnsKeyDigest {
     __obj.asInstanceOf[DnsKeyDigest]
   }
   
-  extension [Self <: DnsKeyDigest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DnsKeyDigest] (val x: Self) extends AnyVal {
     
     inline def setDigest(value: String): Self = StObject.set(x, "digest", value.asInstanceOf[js.Any])
     

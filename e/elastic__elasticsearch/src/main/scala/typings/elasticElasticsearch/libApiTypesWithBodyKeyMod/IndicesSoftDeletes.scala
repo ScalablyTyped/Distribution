@@ -17,7 +17,8 @@ object IndicesSoftDeletes {
     __obj.asInstanceOf[IndicesSoftDeletes]
   }
   
-  extension [Self <: IndicesSoftDeletes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndicesSoftDeletes] (val x: Self) extends AnyVal {
     
     inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     

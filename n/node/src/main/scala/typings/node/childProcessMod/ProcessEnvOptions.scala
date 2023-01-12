@@ -23,7 +23,8 @@ object ProcessEnvOptions {
     __obj.asInstanceOf[ProcessEnvOptions]
   }
   
-  extension [Self <: ProcessEnvOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProcessEnvOptions] (val x: Self) extends AnyVal {
     
     inline def setCwd(value: String | URL): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
     

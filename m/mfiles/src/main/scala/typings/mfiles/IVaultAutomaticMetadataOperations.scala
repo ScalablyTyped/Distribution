@@ -23,7 +23,8 @@ object IVaultAutomaticMetadataOperations {
     __obj.asInstanceOf[IVaultAutomaticMetadataOperations]
   }
   
-  extension [Self <: IVaultAutomaticMetadataOperations](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IVaultAutomaticMetadataOperations] (val x: Self) extends AnyVal {
     
     inline def setGetAutomaticMetadataForObject(value: IObjVer => IAutomaticMetadataResult): Self = StObject.set(x, "GetAutomaticMetadataForObject", js.Any.fromFunction1(value))
     

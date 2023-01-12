@@ -20,7 +20,8 @@ object anon {
       __obj.asInstanceOf[Fields]
     }
     
-    extension [Self <: Fields](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Fields] (val x: Self) extends AnyVal {
       
       inline def setFields(value: js.Array[String] | (js.Function1[/* arg0 */ Field, Boolean])): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
       
@@ -45,7 +46,8 @@ object anon {
       __obj.asInstanceOf[Inserted]
     }
     
-    extension [Self <: Inserted](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Inserted] (val x: Self) extends AnyVal {
       
       inline def setInserted(value: js.Array[Double]): Self = StObject.set(x, "inserted", value.asInstanceOf[js.Any])
       
@@ -73,7 +75,8 @@ object anon {
       __obj.asInstanceOf[UserKey]
     }
     
-    extension [Self <: UserKey](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UserKey] (val x: Self) extends AnyVal {
       
       inline def setFields(
         value: js.Array[String] | (js.Function1[/* arg0 */ typings.nginstackOrm.libEntitySetMod.Field, Boolean])

@@ -159,7 +159,8 @@ object distCompileCodegenScopeMod {
       __obj.asInstanceOf[NameGroup]
     }
     
-    extension [Self <: NameGroup](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NameGroup] (val x: Self) extends AnyVal {
       
       inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
@@ -182,7 +183,8 @@ object distCompileCodegenScopeMod {
       __obj.asInstanceOf[NameValue]
     }
     
-    extension [Self <: NameValue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NameValue] (val x: Self) extends AnyVal {
       
       inline def setCode(value: Code): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
@@ -209,7 +211,8 @@ object distCompileCodegenScopeMod {
       __obj.asInstanceOf[ScopeOptions]
     }
     
-    extension [Self <: ScopeOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScopeOptions] (val x: Self) extends AnyVal {
       
       inline def setParent(value: Scope): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
       
@@ -234,7 +237,8 @@ object distCompileCodegenScopeMod {
       __obj.asInstanceOf[ScopePath]
     }
     
-    extension [Self <: ScopePath](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScopePath] (val x: Self) extends AnyVal {
       
       inline def setItemIndex(value: Double): Self = StObject.set(x, "itemIndex", value.asInstanceOf[js.Any])
       
@@ -287,7 +291,8 @@ object distCompileCodegenScopeMod {
       __obj.asInstanceOf[VSOptions]
     }
     
-    extension [Self <: VSOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VSOptions] (val x: Self) extends AnyVal {
       
       inline def set_n(value: Code): Self = StObject.set(x, "_n", value.asInstanceOf[js.Any])
     }
@@ -312,7 +317,8 @@ object distCompileCodegenScopeMod {
       __obj.asInstanceOf[ValueScopeOptions]
     }
     
-    extension [Self <: ValueScopeOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ValueScopeOptions] (val x: Self) extends AnyVal {
       
       inline def setEs5(value: Boolean): Self = StObject.set(x, "es5", value.asInstanceOf[js.Any])
       

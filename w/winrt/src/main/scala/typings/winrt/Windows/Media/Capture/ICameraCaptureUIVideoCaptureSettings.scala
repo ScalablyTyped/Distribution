@@ -26,7 +26,8 @@ object ICameraCaptureUIVideoCaptureSettings {
     __obj.asInstanceOf[ICameraCaptureUIVideoCaptureSettings]
   }
   
-  extension [Self <: ICameraCaptureUIVideoCaptureSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICameraCaptureUIVideoCaptureSettings] (val x: Self) extends AnyVal {
     
     inline def setAllowTrimming(value: Boolean): Self = StObject.set(x, "allowTrimming", value.asInstanceOf[js.Any])
     

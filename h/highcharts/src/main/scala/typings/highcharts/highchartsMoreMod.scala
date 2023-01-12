@@ -1262,7 +1262,8 @@ object highchartsMoreMod {
         __obj.asInstanceOf[Point]
       }
       
-      extension [Self <: Point](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Point] (val x: Self) extends AnyVal {
         
         inline def setHigh(value: Double): Self = StObject.set(x, "high", value.asInstanceOf[js.Any])
         

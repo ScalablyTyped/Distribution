@@ -43,7 +43,8 @@ object StreamingDistributionList {
     __obj.asInstanceOf[StreamingDistributionList]
   }
   
-  extension [Self <: StreamingDistributionList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StreamingDistributionList] (val x: Self) extends AnyVal {
     
     inline def setIsTruncated(value: Boolean): Self = StObject.set(x, "IsTruncated", value.asInstanceOf[js.Any])
     

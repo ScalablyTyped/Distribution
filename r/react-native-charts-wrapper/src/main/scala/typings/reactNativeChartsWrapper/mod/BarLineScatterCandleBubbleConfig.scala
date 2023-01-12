@@ -15,7 +15,8 @@ object BarLineScatterCandleBubbleConfig {
     __obj.asInstanceOf[BarLineScatterCandleBubbleConfig]
   }
   
-  extension [Self <: BarLineScatterCandleBubbleConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BarLineScatterCandleBubbleConfig] (val x: Self) extends AnyVal {
     
     inline def setHighlightColor(value: Color): Self = StObject.set(x, "highlightColor", value.asInstanceOf[js.Any])
     

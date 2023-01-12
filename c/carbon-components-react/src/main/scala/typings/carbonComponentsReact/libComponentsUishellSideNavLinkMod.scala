@@ -48,7 +48,8 @@ object libComponentsUishellSideNavLinkMod {
       __obj.asInstanceOf[SideNavLinkPropsBase]
     }
     
-    extension [Self <: SideNavLinkPropsBase](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SideNavLinkPropsBase] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       

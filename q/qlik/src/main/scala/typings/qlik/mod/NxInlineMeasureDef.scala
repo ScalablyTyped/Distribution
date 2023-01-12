@@ -17,7 +17,8 @@ object NxInlineMeasureDef {
     __obj.asInstanceOf[NxInlineMeasureDef]
   }
   
-  extension [Self <: NxInlineMeasureDef](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NxInlineMeasureDef] (val x: Self) extends AnyVal {
     
     inline def setQcx(value: Double): Self = StObject.set(x, "qcx", value.asInstanceOf[js.Any])
     

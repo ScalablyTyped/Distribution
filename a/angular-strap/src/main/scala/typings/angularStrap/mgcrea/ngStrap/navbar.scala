@@ -23,7 +23,8 @@ object navbar {
       __obj.asInstanceOf[INavbarOptions]
     }
     
-    extension [Self <: INavbarOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: INavbarOptions] (val x: Self) extends AnyVal {
       
       inline def setActiveClass(value: String): Self = StObject.set(x, "activeClass", value.asInstanceOf[js.Any])
       
@@ -46,7 +47,8 @@ object navbar {
       __obj.asInstanceOf[INavbarProvider]
     }
     
-    extension [Self <: INavbarProvider](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: INavbarProvider] (val x: Self) extends AnyVal {
       
       inline def setDefaults(value: INavbarOptions): Self = StObject.set(x, "defaults", value.asInstanceOf[js.Any])
     }
@@ -63,7 +65,8 @@ object navbar {
       __obj.asInstanceOf[INavbarService]
     }
     
-    extension [Self <: INavbarService](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: INavbarService] (val x: Self) extends AnyVal {
       
       inline def setDefaults(value: INavbarOptions): Self = StObject.set(x, "defaults", value.asInstanceOf[js.Any])
     }

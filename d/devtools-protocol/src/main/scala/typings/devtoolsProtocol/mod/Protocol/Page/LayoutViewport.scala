@@ -34,7 +34,8 @@ object LayoutViewport {
     __obj.asInstanceOf[LayoutViewport]
   }
   
-  extension [Self <: LayoutViewport](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LayoutViewport] (val x: Self) extends AnyVal {
     
     inline def setClientHeight(value: integer): Self = StObject.set(x, "clientHeight", value.asInstanceOf[js.Any])
     

@@ -424,7 +424,8 @@ object mod {
       __obj.asInstanceOf[ChordSheetParserProps]
     }
     
-    extension [Self <: ChordSheetParserProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChordSheetParserProps] (val x: Self) extends AnyVal {
       
       inline def setPreserveWhitespace(value: Boolean): Self = StObject.set(x, "preserveWhitespace", value.asInstanceOf[js.Any])
     }
@@ -443,7 +444,8 @@ object mod {
       __obj.asInstanceOf[SongHeader]
     }
     
-    extension [Self <: SongHeader](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SongHeader] (val x: Self) extends AnyVal {
       
       inline def setSubtitle(value: String): Self = StObject.set(x, "subtitle", value.asInstanceOf[js.Any])
       

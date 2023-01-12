@@ -23,7 +23,8 @@ object ServiceAdditionalInfo {
     __obj.asInstanceOf[ServiceAdditionalInfo]
   }
   
-  extension [Self <: ServiceAdditionalInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServiceAdditionalInfo] (val x: Self) extends AnyVal {
     
     inline def setType(value: String): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     

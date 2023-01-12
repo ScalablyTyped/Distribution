@@ -23,7 +23,8 @@ object ASPxClientDiagramDeleteShapeEventArgs {
     __obj.asInstanceOf[ASPxClientDiagramDeleteShapeEventArgs]
   }
   
-  extension [Self <: ASPxClientDiagramDeleteShapeEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientDiagramDeleteShapeEventArgs] (val x: Self) extends AnyVal {
     
     inline def setShape(value: DiagramShape): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
   }

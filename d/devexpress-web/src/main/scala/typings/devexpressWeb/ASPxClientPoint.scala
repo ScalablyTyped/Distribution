@@ -26,7 +26,8 @@ object ASPxClientPoint {
     __obj.asInstanceOf[ASPxClientPoint]
   }
   
-  extension [Self <: ASPxClientPoint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientPoint] (val x: Self) extends AnyVal {
     
     inline def setGetX(value: () => Double): Self = StObject.set(x, "GetX", js.Any.fromFunction0(value))
     

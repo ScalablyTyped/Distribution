@@ -23,7 +23,8 @@ object SubSlotTypeComposition {
     __obj.asInstanceOf[SubSlotTypeComposition]
   }
   
-  extension [Self <: SubSlotTypeComposition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubSlotTypeComposition] (val x: Self) extends AnyVal {
     
     inline def setName(value: Name): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

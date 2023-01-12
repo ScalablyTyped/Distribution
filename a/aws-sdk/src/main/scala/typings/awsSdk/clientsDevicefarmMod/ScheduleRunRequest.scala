@@ -53,7 +53,8 @@ object ScheduleRunRequest {
     __obj.asInstanceOf[ScheduleRunRequest]
   }
   
-  extension [Self <: ScheduleRunRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScheduleRunRequest] (val x: Self) extends AnyVal {
     
     inline def setAppArn(value: AmazonResourceName): Self = StObject.set(x, "appArn", value.asInstanceOf[js.Any])
     

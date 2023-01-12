@@ -23,7 +23,8 @@ object AdvancedEventSelector {
     __obj.asInstanceOf[AdvancedEventSelector]
   }
   
-  extension [Self <: AdvancedEventSelector](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AdvancedEventSelector] (val x: Self) extends AnyVal {
     
     inline def setFieldSelectors(value: AdvancedFieldSelectors): Self = StObject.set(x, "FieldSelectors", value.asInstanceOf[js.Any])
     

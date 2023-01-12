@@ -30,7 +30,8 @@ object SyncClientOptions {
     __obj.asInstanceOf[SyncClientOptions]
   }
   
-  extension [Self <: SyncClientOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SyncClientOptions] (val x: Self) extends AnyVal {
     
     inline def setLogLevel(value: silent | error | warn | info | debug | trace): Self = StObject.set(x, "logLevel", value.asInstanceOf[js.Any])
     

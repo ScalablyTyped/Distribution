@@ -53,7 +53,8 @@ object libComponentsPersonaPersonaCoinPersonaCoinDotbaseMod {
       __obj.asInstanceOf[IPersonaState]
     }
     
-    extension [Self <: IPersonaState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPersonaState] (val x: Self) extends AnyVal {
       
       inline def setIsImageError(value: Boolean): Self = StObject.set(x, "isImageError", value.asInstanceOf[js.Any])
       

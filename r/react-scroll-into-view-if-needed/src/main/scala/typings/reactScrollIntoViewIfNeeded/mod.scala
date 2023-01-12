@@ -36,7 +36,8 @@ object mod {
       __obj.asInstanceOf[ReactScrollIntoViewIfNeededProps]
     }
     
-    extension [Self <: ReactScrollIntoViewIfNeededProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReactScrollIntoViewIfNeededProps] (val x: Self) extends AnyVal {
       
       inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       

@@ -240,7 +240,8 @@ object libObservablestringMod {
         __obj.asInstanceOf[IChangedArgs]
       }
       
-      extension [Self <: IChangedArgs](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IChangedArgs] (val x: Self) extends AnyVal {
         
         inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
         
@@ -252,7 +253,8 @@ object libObservablestringMod {
       }
     }
     
-    extension [Self <: IObservableString](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IObservableString] (val x: Self) extends AnyVal {
       
       inline def setChanged(value: ISignal[IObservableString, IChangedArgs]): Self = StObject.set(x, "changed", value.asInstanceOf[js.Any])
       

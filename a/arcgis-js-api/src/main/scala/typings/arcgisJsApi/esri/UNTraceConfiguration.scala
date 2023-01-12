@@ -161,7 +161,8 @@ object UNTraceConfiguration {
     __obj.asInstanceOf[UNTraceConfiguration]
   }
   
-  extension [Self <: UNTraceConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UNTraceConfiguration] (val x: Self) extends AnyVal {
     
     inline def setDomainNetworkName(value: String): Self = StObject.set(x, "domainNetworkName", value.asInstanceOf[js.Any])
     

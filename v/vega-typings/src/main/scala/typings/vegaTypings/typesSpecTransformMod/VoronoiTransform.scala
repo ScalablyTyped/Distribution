@@ -31,7 +31,8 @@ object VoronoiTransform {
     __obj.asInstanceOf[VoronoiTransform]
   }
   
-  extension [Self <: VoronoiTransform](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VoronoiTransform] (val x: Self) extends AnyVal {
     
     inline def setAs(value: String | SignalRef): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object FollowModeScheduleActionStartSettings {
     __obj.asInstanceOf[FollowModeScheduleActionStartSettings]
   }
   
-  extension [Self <: FollowModeScheduleActionStartSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FollowModeScheduleActionStartSettings] (val x: Self) extends AnyVal {
     
     inline def setFollowPoint(value: FollowPoint): Self = StObject.set(x, "FollowPoint", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object buildSrcGeneratedGoogleProtobufBytesValueMod {
       __obj.asInstanceOf[BytesValue]
     }
     
-    extension [Self <: BytesValue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BytesValue] (val x: Self) extends AnyVal {
       
       inline def setValue(value: Buffer | js.typedarray.Uint8Array | String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
@@ -37,7 +38,8 @@ object buildSrcGeneratedGoogleProtobufBytesValueMod {
       __obj.asInstanceOf[BytesValueOutput]
     }
     
-    extension [Self <: BytesValueOutput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BytesValueOutput] (val x: Self) extends AnyVal {
       
       inline def setValue(value: Buffer): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }

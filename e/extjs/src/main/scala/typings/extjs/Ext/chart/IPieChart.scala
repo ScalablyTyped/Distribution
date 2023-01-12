@@ -56,7 +56,8 @@ object IPieChart {
     __obj.asInstanceOf[IPieChart]
   }
   
-  extension [Self <: IPieChart](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPieChart] (val x: Self) extends AnyVal {
     
     inline def setAngleField(value: String): Self = StObject.set(x, "angleField", value.asInstanceOf[js.Any])
     

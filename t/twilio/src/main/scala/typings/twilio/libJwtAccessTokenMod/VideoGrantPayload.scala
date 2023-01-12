@@ -15,7 +15,8 @@ object VideoGrantPayload {
     __obj.asInstanceOf[VideoGrantPayload]
   }
   
-  extension [Self <: VideoGrantPayload](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VideoGrantPayload] (val x: Self) extends AnyVal {
     
     inline def setRoom(value: String): Self = StObject.set(x, "room", value.asInstanceOf[js.Any])
     

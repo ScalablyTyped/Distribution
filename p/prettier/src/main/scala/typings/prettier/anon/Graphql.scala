@@ -16,7 +16,8 @@ object Graphql {
     __obj.asInstanceOf[Graphql]
   }
   
-  extension [Self <: Graphql](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Graphql] (val x: Self) extends AnyVal {
     
     inline def setGraphql(value: Parser[Any]): Self = StObject.set(x, "graphql", value.asInstanceOf[js.Any])
   }

@@ -22,7 +22,8 @@ object DescribeScheduleRequest {
     __obj.asInstanceOf[DescribeScheduleRequest]
   }
   
-  extension [Self <: DescribeScheduleRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeScheduleRequest] (val x: Self) extends AnyVal {
     
     inline def setChannelId(value: string): Self = StObject.set(x, "ChannelId", value.asInstanceOf[js.Any])
     

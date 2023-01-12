@@ -75,7 +75,8 @@ object libBitmapFontDataMod {
       __obj.asInstanceOf[IBitmapFontDataChar]
     }
     
-    extension [Self <: IBitmapFontDataChar](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IBitmapFontDataChar] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -109,7 +110,8 @@ object libBitmapFontDataMod {
       __obj.asInstanceOf[IBitmapFontDataCommon]
     }
     
-    extension [Self <: IBitmapFontDataCommon](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IBitmapFontDataCommon] (val x: Self) extends AnyVal {
       
       inline def setLineHeight(value: Double): Self = StObject.set(x, "lineHeight", value.asInstanceOf[js.Any])
     }
@@ -130,7 +132,8 @@ object libBitmapFontDataMod {
       __obj.asInstanceOf[IBitmapFontDataDistanceField]
     }
     
-    extension [Self <: IBitmapFontDataDistanceField](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IBitmapFontDataDistanceField] (val x: Self) extends AnyVal {
       
       inline def setDistanceRange(value: Double): Self = StObject.set(x, "distanceRange", value.asInstanceOf[js.Any])
       
@@ -153,7 +156,8 @@ object libBitmapFontDataMod {
       __obj.asInstanceOf[IBitmapFontDataInfo]
     }
     
-    extension [Self <: IBitmapFontDataInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IBitmapFontDataInfo] (val x: Self) extends AnyVal {
       
       inline def setFace(value: String): Self = StObject.set(x, "face", value.asInstanceOf[js.Any])
       
@@ -179,7 +183,8 @@ object libBitmapFontDataMod {
       __obj.asInstanceOf[IBitmapFontDataKerning]
     }
     
-    extension [Self <: IBitmapFontDataKerning](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IBitmapFontDataKerning] (val x: Self) extends AnyVal {
       
       inline def setAmount(value: Double): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
       
@@ -204,7 +209,8 @@ object libBitmapFontDataMod {
       __obj.asInstanceOf[IBitmapFontDataPage]
     }
     
-    extension [Self <: IBitmapFontDataPage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IBitmapFontDataPage] (val x: Self) extends AnyVal {
       
       inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
       

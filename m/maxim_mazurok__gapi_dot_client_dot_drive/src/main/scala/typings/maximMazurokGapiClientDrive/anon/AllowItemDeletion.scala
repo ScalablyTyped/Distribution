@@ -46,7 +46,8 @@ object AllowItemDeletion {
     __obj.asInstanceOf[AllowItemDeletion]
   }
   
-  extension [Self <: AllowItemDeletion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AllowItemDeletion] (val x: Self) extends AnyVal {
     
     inline def setAllowItemDeletion(value: Boolean): Self = StObject.set(x, "allowItemDeletion", value.asInstanceOf[js.Any])
     

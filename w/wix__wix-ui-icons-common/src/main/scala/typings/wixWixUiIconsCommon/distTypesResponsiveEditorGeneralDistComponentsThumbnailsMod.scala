@@ -27,7 +27,8 @@ object distTypesResponsiveEditorGeneralDistComponentsThumbnailsMod extends Short
       __obj.asInstanceOf[ThumbnailsProps]
     }
     
-    extension [Self <: ThumbnailsProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ThumbnailsProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

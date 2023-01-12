@@ -18,7 +18,8 @@ object CrossZoneLoadBalancing {
     __obj.asInstanceOf[CrossZoneLoadBalancing]
   }
   
-  extension [Self <: CrossZoneLoadBalancing](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CrossZoneLoadBalancing] (val x: Self) extends AnyVal {
     
     inline def setEnabled(value: CrossZoneLoadBalancingEnabled): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
   }

@@ -17,7 +17,8 @@ object InsertResult {
     __obj.asInstanceOf[InsertResult[T]]
   }
   
-  extension [Self <: InsertResult[?], T /* <: js.Object */](x: Self & InsertResult[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InsertResult[?], T /* <: js.Object */] (val x: Self & InsertResult[T]) extends AnyVal {
     
     inline def setNew(value: Document[T]): Self = StObject.set(x, "new", value.asInstanceOf[js.Any])
     

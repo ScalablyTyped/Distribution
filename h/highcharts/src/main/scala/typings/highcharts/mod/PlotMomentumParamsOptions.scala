@@ -27,7 +27,8 @@ object PlotMomentumParamsOptions {
     __obj.asInstanceOf[PlotMomentumParamsOptions]
   }
   
-  extension [Self <: PlotMomentumParamsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotMomentumParamsOptions] (val x: Self) extends AnyVal {
     
     inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     

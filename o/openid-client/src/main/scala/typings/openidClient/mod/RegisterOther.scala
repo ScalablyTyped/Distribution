@@ -18,7 +18,8 @@ object RegisterOther {
     __obj.asInstanceOf[RegisterOther]
   }
   
-  extension [Self <: RegisterOther](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RegisterOther] (val x: Self) extends AnyVal {
     
     inline def setInitialAccessToken(value: String): Self = StObject.set(x, "initialAccessToken", value.asInstanceOf[js.Any])
     

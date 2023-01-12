@@ -19,7 +19,8 @@ object NoAddressSendMaxOutput {
     __obj.asInstanceOf[NoAddressSendMaxOutput]
   }
   
-  extension [Self <: NoAddressSendMaxOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NoAddressSendMaxOutput] (val x: Self) extends AnyVal {
     
     inline def setType(value: `send-max-noaddress`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

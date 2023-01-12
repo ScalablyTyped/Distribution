@@ -44,7 +44,8 @@ object CredentialPersistenceOptions {
     __obj.asInstanceOf[CredentialPersistenceOptions]
   }
   
-  extension [Self <: CredentialPersistenceOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CredentialPersistenceOptions] (val x: Self) extends AnyVal {
     
     inline def setTokenCachePersistenceOptions(value: TokenCachePersistenceOptions): Self = StObject.set(x, "tokenCachePersistenceOptions", value.asInstanceOf[js.Any])
     

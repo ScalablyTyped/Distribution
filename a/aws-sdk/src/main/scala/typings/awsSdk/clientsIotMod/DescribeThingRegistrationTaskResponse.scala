@@ -73,7 +73,8 @@ object DescribeThingRegistrationTaskResponse {
     __obj.asInstanceOf[DescribeThingRegistrationTaskResponse]
   }
   
-  extension [Self <: DescribeThingRegistrationTaskResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeThingRegistrationTaskResponse] (val x: Self) extends AnyVal {
     
     inline def setCreationDate(value: js.Date): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
     

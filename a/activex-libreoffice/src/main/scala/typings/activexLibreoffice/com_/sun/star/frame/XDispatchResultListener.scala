@@ -35,7 +35,8 @@ object XDispatchResultListener {
     __obj.asInstanceOf[XDispatchResultListener]
   }
   
-  extension [Self <: XDispatchResultListener](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XDispatchResultListener] (val x: Self) extends AnyVal {
     
     inline def setDispatchFinished(value: DispatchResultEvent => Unit): Self = StObject.set(x, "dispatchFinished", js.Any.fromFunction1(value))
   }

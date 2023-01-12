@@ -17,7 +17,8 @@ object LinkDefaultPaintTokenPressedPaintToken {
     __obj.asInstanceOf[LinkDefaultPaintTokenPressedPaintToken[BaseToken]]
   }
   
-  extension [Self <: LinkDefaultPaintTokenPressedPaintToken[?], BaseToken](x: Self & LinkDefaultPaintTokenPressedPaintToken[BaseToken]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LinkDefaultPaintTokenPressedPaintToken[?], BaseToken] (val x: Self & LinkDefaultPaintTokenPressedPaintToken[BaseToken]) extends AnyVal {
     
     inline def setLink(value: DefaultPaintTokenPressedPaintToken[BaseToken]): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
     

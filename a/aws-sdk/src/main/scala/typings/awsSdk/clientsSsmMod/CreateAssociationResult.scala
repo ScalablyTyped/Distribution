@@ -18,7 +18,8 @@ object CreateAssociationResult {
     __obj.asInstanceOf[CreateAssociationResult]
   }
   
-  extension [Self <: CreateAssociationResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateAssociationResult] (val x: Self) extends AnyVal {
     
     inline def setAssociationDescription(value: AssociationDescription): Self = StObject.set(x, "AssociationDescription", value.asInstanceOf[js.Any])
     

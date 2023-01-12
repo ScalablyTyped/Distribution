@@ -51,7 +51,8 @@ object pluginsFiltersFiltersMod {
       __obj.asInstanceOf[CellLikeData]
     }
     
-    extension [Self <: CellLikeData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CellLikeData] (val x: Self) extends AnyVal {
       
       inline def setMeta(value: Col): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
       
@@ -74,7 +75,8 @@ object pluginsFiltersFiltersMod {
       __obj.asInstanceOf[ColumnConditions]
     }
     
-    extension [Self <: ColumnConditions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColumnConditions] (val x: Self) extends AnyVal {
       
       inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
@@ -101,7 +103,8 @@ object pluginsFiltersFiltersMod {
       __obj.asInstanceOf[ConditionId]
     }
     
-    extension [Self <: ConditionId](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConditionId] (val x: Self) extends AnyVal {
       
       inline def setArgs(value: js.Array[Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       

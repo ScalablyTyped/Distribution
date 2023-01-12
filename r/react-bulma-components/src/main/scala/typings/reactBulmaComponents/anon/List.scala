@@ -18,7 +18,8 @@ object List {
     __obj.asInstanceOf[typings.reactBulmaComponents.anon.List]
   }
   
-  extension [Self <: typings.reactBulmaComponents.anon.List](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: typings.reactBulmaComponents.anon.List] (val x: Self) extends AnyVal {
     
     inline def setList(value: (BulmaComponentWithoutRenderAs[MenuListComponentProps, ul]) & `1`): Self = StObject.set(x, "List", value.asInstanceOf[js.Any])
   }

@@ -63,7 +63,8 @@ object ChartAxis {
     __obj.asInstanceOf[ChartAxis]
   }
   
-  extension [Self <: ChartAxis](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChartAxis] (val x: Self) extends AnyVal {
     
     inline def setAllowContainerBoundaryTextCutoff(value: Boolean): Self = StObject.set(x, "allowContainerBoundaryTextCutoff", value.asInstanceOf[js.Any])
     

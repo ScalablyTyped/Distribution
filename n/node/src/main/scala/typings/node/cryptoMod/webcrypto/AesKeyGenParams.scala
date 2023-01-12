@@ -17,7 +17,8 @@ object AesKeyGenParams {
     __obj.asInstanceOf[AesKeyGenParams]
   }
   
-  extension [Self <: AesKeyGenParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AesKeyGenParams] (val x: Self) extends AnyVal {
     
     inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
   }

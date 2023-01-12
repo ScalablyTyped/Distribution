@@ -18,7 +18,8 @@ object Traversal {
     __obj.asInstanceOf[Traversal]
   }
   
-  extension [Self <: Traversal](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Traversal] (val x: Self) extends AnyVal {
     
     inline def setType(value: TraversalType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

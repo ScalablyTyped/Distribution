@@ -23,7 +23,8 @@ object GenerateDataKeyWithoutPlaintextResponse {
     __obj.asInstanceOf[GenerateDataKeyWithoutPlaintextResponse]
   }
   
-  extension [Self <: GenerateDataKeyWithoutPlaintextResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GenerateDataKeyWithoutPlaintextResponse] (val x: Self) extends AnyVal {
     
     inline def setCiphertextBlob(value: CiphertextType): Self = StObject.set(x, "CiphertextBlob", value.asInstanceOf[js.Any])
     

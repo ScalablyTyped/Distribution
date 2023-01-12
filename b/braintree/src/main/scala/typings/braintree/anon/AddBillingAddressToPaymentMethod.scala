@@ -37,7 +37,8 @@ object AddBillingAddressToPaymentMethod {
     __obj.asInstanceOf[AddBillingAddressToPaymentMethod]
   }
   
-  extension [Self <: AddBillingAddressToPaymentMethod](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AddBillingAddressToPaymentMethod] (val x: Self) extends AnyVal {
     
     inline def setAddBillingAddressToPaymentMethod(value: Boolean): Self = StObject.set(x, "addBillingAddressToPaymentMethod", value.asInstanceOf[js.Any])
     

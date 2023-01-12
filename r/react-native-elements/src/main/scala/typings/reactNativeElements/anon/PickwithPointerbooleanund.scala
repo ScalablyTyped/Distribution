@@ -64,7 +64,8 @@ object PickwithPointerbooleanund {
     __obj.asInstanceOf[PickwithPointerbooleanund]
   }
   
-  extension [Self <: PickwithPointerbooleanund](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickwithPointerbooleanund] (val x: Self) extends AnyVal {
     
     inline def setBackgroundColor(value: ColorValue): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     

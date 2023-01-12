@@ -20,7 +20,8 @@ object Sparklines {
   @js.native
   val ^ : Sparklines = js.native
   
-  extension [Self <: Sparklines](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Sparklines] (val x: Self) extends AnyVal {
     
     inline def setPaddingX(value: Double): Self = StObject.set(x, "paddingX", value.asInstanceOf[js.Any])
     

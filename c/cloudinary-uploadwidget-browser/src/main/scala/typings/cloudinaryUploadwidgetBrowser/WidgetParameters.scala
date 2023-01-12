@@ -26,7 +26,8 @@ object WidgetParameters {
     __obj.asInstanceOf[WidgetParameters]
   }
   
-  extension [Self <: WidgetParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WidgetParameters] (val x: Self) extends AnyVal {
     
     inline def setDefaultSource(value: Source): Self = StObject.set(x, "defaultSource", value.asInstanceOf[js.Any])
     

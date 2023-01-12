@@ -399,7 +399,8 @@ object sapUiTableTablePersoControllerMod {
       __obj.asInstanceOf[TablePersoControllerSettings]
     }
     
-    extension [Self <: TablePersoControllerSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TablePersoControllerSettings] (val x: Self) extends AnyVal {
       
       inline def setAutoSave(value: Boolean | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "autoSave", value.asInstanceOf[js.Any])
       

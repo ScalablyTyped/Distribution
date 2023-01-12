@@ -63,7 +63,8 @@ object mod {
       __obj.asInstanceOf[PseudoAudioParamEvent]
     }
     
-    extension [Self <: PseudoAudioParamEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PseudoAudioParamEvent] (val x: Self) extends AnyVal {
       
       inline def setTime(value: Double): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
       

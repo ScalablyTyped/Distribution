@@ -28,7 +28,8 @@ object ControlEventArgs {
     __obj.asInstanceOf[ControlEventArgs]
   }
   
-  extension [Self <: ControlEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ControlEventArgs] (val x: Self) extends AnyVal {
     
     inline def setACTIVE_BUTTON_CHANGED(value: RadioButtonGroupDotActiveButtonChanged): Self = StObject.set(x, "ACTIVE_BUTTON_CHANGED", value.asInstanceOf[js.Any])
     

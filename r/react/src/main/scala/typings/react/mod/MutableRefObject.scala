@@ -15,7 +15,8 @@ object MutableRefObject {
     __obj.asInstanceOf[MutableRefObject[T]]
   }
   
-  extension [Self <: MutableRefObject[?], T](x: Self & MutableRefObject[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MutableRefObject[?], T] (val x: Self & MutableRefObject[T]) extends AnyVal {
     
     inline def setCurrent(value: T): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
   }

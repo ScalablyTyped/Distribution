@@ -28,7 +28,8 @@ object GetConsoleOutputResult {
     __obj.asInstanceOf[GetConsoleOutputResult]
   }
   
-  extension [Self <: GetConsoleOutputResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetConsoleOutputResult] (val x: Self) extends AnyVal {
     
     inline def setInstanceId(value: String): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
     

@@ -25,7 +25,8 @@ object PipeableSemigroupoid3C {
     __obj.asInstanceOf[PipeableSemigroupoid3C[F, E]]
   }
   
-  extension [Self <: PipeableSemigroupoid3C[?, ?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */, E](x: Self & (PipeableSemigroupoid3C[F, E])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PipeableSemigroupoid3C[?, ?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */, E] (val x: Self & (PipeableSemigroupoid3C[F, E])) extends AnyVal {
     
     inline def setCompose(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, A> */ Any => js.Function1[

@@ -18,7 +18,8 @@ object EducationAssignmentIndividualRecipient {
     __obj.asInstanceOf[EducationAssignmentIndividualRecipient]
   }
   
-  extension [Self <: EducationAssignmentIndividualRecipient](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EducationAssignmentIndividualRecipient] (val x: Self) extends AnyVal {
     
     inline def setRecipients(value: NullableOption[js.Array[String]]): Self = StObject.set(x, "recipients", value.asInstanceOf[js.Any])
     

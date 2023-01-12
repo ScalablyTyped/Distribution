@@ -27,7 +27,8 @@ object distTypesGeneralDistComponentsMirrorHorizontalSmallMod extends Shortcut {
       __obj.asInstanceOf[MirrorHorizontalSmallProps]
     }
     
-    extension [Self <: MirrorHorizontalSmallProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MirrorHorizontalSmallProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

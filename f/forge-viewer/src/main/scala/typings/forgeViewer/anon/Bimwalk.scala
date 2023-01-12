@@ -23,7 +23,8 @@ object Bimwalk {
     __obj.asInstanceOf[Bimwalk]
   }
   
-  extension [Self <: Bimwalk](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Bimwalk] (val x: Self) extends AnyVal {
     
     inline def setBimwalk(value: Boolean): Self = StObject.set(x, "bimwalk", value.asInstanceOf[js.Any])
     

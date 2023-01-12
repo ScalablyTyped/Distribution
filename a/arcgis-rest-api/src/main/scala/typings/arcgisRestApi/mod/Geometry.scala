@@ -15,7 +15,8 @@ object Geometry {
     __obj.asInstanceOf[Geometry]
   }
   
-  extension [Self <: Geometry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Geometry] (val x: Self) extends AnyVal {
     
     inline def setSpatialReference(value: SpatialReference): Self = StObject.set(x, "spatialReference", value.asInstanceOf[js.Any])
     

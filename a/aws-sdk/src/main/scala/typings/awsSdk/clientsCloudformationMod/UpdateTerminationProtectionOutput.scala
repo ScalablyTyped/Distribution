@@ -18,7 +18,8 @@ object UpdateTerminationProtectionOutput {
     __obj.asInstanceOf[UpdateTerminationProtectionOutput]
   }
   
-  extension [Self <: UpdateTerminationProtectionOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateTerminationProtectionOutput] (val x: Self) extends AnyVal {
     
     inline def setStackId(value: StackId): Self = StObject.set(x, "StackId", value.asInstanceOf[js.Any])
     

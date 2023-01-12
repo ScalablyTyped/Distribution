@@ -28,7 +28,8 @@ object anon {
       __obj.asInstanceOf[Bottom]
     }
     
-    extension [Self <: Bottom](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Bottom] (val x: Self) extends AnyVal {
       
       inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       
@@ -51,7 +52,8 @@ object anon {
       __obj.asInstanceOf[Get]
     }
     
-    extension [Self <: Get](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Get] (val x: Self) extends AnyVal {
       
       inline def setGet(value: () => Any): Self = StObject.set(x, "get", js.Any.fromFunction0(value))
     }
@@ -77,7 +79,8 @@ object anon {
       __obj.asInstanceOf[PartialScrollIntoViewOpti]
     }
     
-    extension [Self <: PartialScrollIntoViewOpti](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialScrollIntoViewOpti] (val x: Self) extends AnyVal {
       
       inline def setAlignToTop(value: Boolean): Self = StObject.set(x, "alignToTop", value.asInstanceOf[js.Any])
       
@@ -115,7 +118,8 @@ object anon {
       __obj.asInstanceOf[PartialScrollToOptions]
     }
     
-    extension [Self <: PartialScrollToOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialScrollToOptions] (val x: Self) extends AnyVal {
       
       inline def setCallback(value: js.ThisFunction0[PartialScrollToOptions, Unit]): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
       
@@ -141,7 +145,8 @@ object anon {
       __obj.asInstanceOf[PartialScrollToOptionsCallback]
     }
     
-    extension [Self <: PartialScrollToOptionsCallback](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialScrollToOptionsCallback] (val x: Self) extends AnyVal {
       
       inline def setCallback(value: js.ThisFunction0[/* this */ Scrollbar, Unit]): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
       
@@ -179,7 +184,8 @@ object anon {
       __obj.asInstanceOf[PartialScrollbarOptions]
     }
     
-    extension [Self <: PartialScrollbarOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialScrollbarOptions] (val x: Self) extends AnyVal {
       
       inline def setAlwaysShowTracks(value: Boolean): Self = StObject.set(x, "alwaysShowTracks", value.asInstanceOf[js.Any])
       
@@ -231,7 +237,8 @@ object anon {
       __obj.asInstanceOf[PartialSetPositionOptions]
     }
     
-    extension [Self <: PartialSetPositionOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialSetPositionOptions] (val x: Self) extends AnyVal {
       
       inline def setWithoutCallbacks(value: Boolean): Self = StObject.set(x, "withoutCallbacks", value.asInstanceOf[js.Any])
       
@@ -267,7 +274,8 @@ object anon {
       __obj.asInstanceOf[X]
     }
     
-    extension [Self <: X](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: X] (val x: Self) extends AnyVal {
       
       inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
@@ -292,7 +300,8 @@ object anon {
       __obj.asInstanceOf[XY]
     }
     
-    extension [Self <: XY](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XY] (val x: Self) extends AnyVal {
       
       inline def setX(value: Any): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
@@ -313,7 +322,8 @@ object anon {
       __obj.asInstanceOf[Y]
     }
     
-    extension [Self <: Y](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Y] (val x: Self) extends AnyVal {
       
       inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       

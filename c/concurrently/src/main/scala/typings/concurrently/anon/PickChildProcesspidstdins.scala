@@ -22,7 +22,8 @@ object PickChildProcesspidstdins {
     __obj.asInstanceOf[PickChildProcesspidstdins]
   }
   
-  extension [Self <: PickChildProcesspidstdins](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickChildProcesspidstdins] (val x: Self) extends AnyVal {
     
     inline def setPid(value: Any): Self = StObject.set(x, "pid", value.asInstanceOf[js.Any])
     

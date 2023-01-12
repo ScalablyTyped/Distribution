@@ -26,7 +26,8 @@ object mod {
       __obj.asInstanceOf[CodeExcerpt]
     }
     
-    extension [Self <: CodeExcerpt](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CodeExcerpt] (val x: Self) extends AnyVal {
       
       inline def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
       
@@ -45,7 +46,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setAround(value: Double): Self = StObject.set(x, "around", value.asInstanceOf[js.Any])
       

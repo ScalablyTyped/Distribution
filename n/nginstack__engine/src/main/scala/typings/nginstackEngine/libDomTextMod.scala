@@ -32,7 +32,8 @@ object libDomTextMod {
       __obj.asInstanceOf[Text]
     }
     
-    extension [Self <: Text](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Text] (val x: Self) extends AnyVal {
       
       inline def setSplitText(value: () => Text): Self = StObject.set(x, "splitText", js.Any.fromFunction0(value))
     }

@@ -21,7 +21,8 @@ object DeclareModule {
     __obj.asInstanceOf[DeclareModule]
   }
   
-  extension [Self <: DeclareModule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeclareModule] (val x: Self) extends AnyVal {
     
     inline def setBody(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BlockStatement */ Any

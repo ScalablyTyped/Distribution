@@ -23,7 +23,8 @@ object DeleteSchemaVersionsInput {
     __obj.asInstanceOf[DeleteSchemaVersionsInput]
   }
   
-  extension [Self <: DeleteSchemaVersionsInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteSchemaVersionsInput] (val x: Self) extends AnyVal {
     
     inline def setSchemaId(value: SchemaId): Self = StObject.set(x, "SchemaId", value.asInstanceOf[js.Any])
     

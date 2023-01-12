@@ -110,7 +110,8 @@ object Pokemon {
     __obj.asInstanceOf[Pokemon]
   }
   
-  extension [Self <: Pokemon](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Pokemon] (val x: Self) extends AnyVal {
     
     inline def setAbilities(value: js.Array[PokemonAbility]): Self = StObject.set(x, "abilities", value.asInstanceOf[js.Any])
     

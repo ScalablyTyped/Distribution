@@ -25,7 +25,8 @@ object anon {
       __obj.asInstanceOf[From]
     }
     
-    extension [Self <: From](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: From] (val x: Self) extends AnyVal {
       
       inline def setFrom(value: Double): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       
@@ -46,7 +47,8 @@ object anon {
       __obj.asInstanceOf[FromTo]
     }
     
-    extension [Self <: FromTo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FromTo] (val x: Self) extends AnyVal {
       
       inline def setFrom(value: (String, Stack) => Double): Self = StObject.set(x, "from", js.Any.fromFunction2(value))
       
@@ -81,7 +83,8 @@ object anon {
       __obj.asInstanceOf[Hash[T]]
     }
     
-    extension [Self <: Hash[?], T](x: Self & Hash[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Hash[?], T] (val x: Self & Hash[T]) extends AnyVal {
       
       inline def setHash(value: /* context */ T => Double): Self = StObject.set(x, "hash", js.Any.fromFunction1(value))
       
@@ -125,7 +128,8 @@ object anon {
       __obj.asInstanceOf[To]
     }
     
-    extension [Self <: To](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: To] (val x: Self) extends AnyVal {
       
       inline def setFrom(value: ExternalTokenizer): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       

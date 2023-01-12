@@ -33,7 +33,8 @@ object CameraOptions {
     __obj.asInstanceOf[CameraOptions]
   }
   
-  extension [Self <: CameraOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CameraOptions] (val x: Self) extends AnyVal {
     
     inline def setButton(value: HTMLElement): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
     

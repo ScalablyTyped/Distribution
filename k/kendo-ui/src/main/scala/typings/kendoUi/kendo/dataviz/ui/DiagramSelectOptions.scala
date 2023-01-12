@@ -15,7 +15,8 @@ object DiagramSelectOptions {
     __obj.asInstanceOf[DiagramSelectOptions]
   }
   
-  extension [Self <: DiagramSelectOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DiagramSelectOptions] (val x: Self) extends AnyVal {
     
     inline def setAddToSelection(value: Boolean): Self = StObject.set(x, "addToSelection", value.asInstanceOf[js.Any])
     

@@ -32,7 +32,8 @@ object random {
       __obj.asInstanceOf[Random]
     }
     
-    extension [Self <: Random](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Random] (val x: Self) extends AnyVal {
       
       inline def setSeedFile(value: (Double, CB) => Unit): Self = StObject.set(x, "seedFile", js.Any.fromFunction2(value))
       

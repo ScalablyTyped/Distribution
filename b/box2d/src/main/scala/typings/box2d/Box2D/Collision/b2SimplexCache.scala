@@ -33,7 +33,8 @@ object b2SimplexCache {
     __obj.asInstanceOf[b2SimplexCache]
   }
   
-  extension [Self <: b2SimplexCache](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: b2SimplexCache] (val x: Self) extends AnyVal {
     
     inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     

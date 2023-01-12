@@ -28,7 +28,8 @@ object InstanceFleetModifyConfig {
     __obj.asInstanceOf[InstanceFleetModifyConfig]
   }
   
-  extension [Self <: InstanceFleetModifyConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InstanceFleetModifyConfig] (val x: Self) extends AnyVal {
     
     inline def setInstanceFleetId(value: InstanceFleetId): Self = StObject.set(x, "InstanceFleetId", value.asInstanceOf[js.Any])
     

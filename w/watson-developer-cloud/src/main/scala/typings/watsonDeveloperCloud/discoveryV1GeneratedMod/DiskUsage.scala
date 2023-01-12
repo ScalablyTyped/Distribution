@@ -20,7 +20,8 @@ object DiskUsage {
     __obj.asInstanceOf[DiskUsage]
   }
   
-  extension [Self <: DiskUsage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DiskUsage] (val x: Self) extends AnyVal {
     
     inline def setMaximum_allowed_bytes(value: Double): Self = StObject.set(x, "maximum_allowed_bytes", value.asInstanceOf[js.Any])
     

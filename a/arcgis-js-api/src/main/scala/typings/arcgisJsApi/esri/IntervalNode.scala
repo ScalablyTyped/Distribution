@@ -47,7 +47,8 @@ object IntervalNode {
     __obj.asInstanceOf[IntervalNode]
   }
   
-  extension [Self <: IntervalNode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IntervalNode] (val x: Self) extends AnyVal {
     
     inline def setOp(value: Plussign | `-_` | _empty): Self = StObject.set(x, "op", value.asInstanceOf[js.Any])
     

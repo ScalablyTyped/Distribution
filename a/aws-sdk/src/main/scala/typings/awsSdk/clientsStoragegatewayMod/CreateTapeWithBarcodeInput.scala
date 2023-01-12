@@ -53,7 +53,8 @@ object CreateTapeWithBarcodeInput {
     __obj.asInstanceOf[CreateTapeWithBarcodeInput]
   }
   
-  extension [Self <: CreateTapeWithBarcodeInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateTapeWithBarcodeInput] (val x: Self) extends AnyVal {
     
     inline def setGatewayARN(value: GatewayARN): Self = StObject.set(x, "GatewayARN", value.asInstanceOf[js.Any])
     

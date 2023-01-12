@@ -49,7 +49,8 @@ object mod {
       __obj.asInstanceOf[AppCheckProvider]
     }
     
-    extension [Self <: AppCheckProvider](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AppCheckProvider] (val x: Self) extends AnyVal {
       
       inline def setGetToken(value: () => js.Promise[AppCheckToken]): Self = StObject.set(x, "getToken", js.Any.fromFunction0(value))
     }
@@ -77,7 +78,8 @@ object mod {
       __obj.asInstanceOf[AppCheckToken]
     }
     
-    extension [Self <: AppCheckToken](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AppCheckToken] (val x: Self) extends AnyVal {
       
       inline def setExpireTimeMillis(value: Double): Self = StObject.set(x, "expireTimeMillis", value.asInstanceOf[js.Any])
       
@@ -102,7 +104,8 @@ object mod {
       __obj.asInstanceOf[AppCheckTokenResult]
     }
     
-    extension [Self <: AppCheckTokenResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AppCheckTokenResult] (val x: Self) extends AnyVal {
       
       inline def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
     }
@@ -123,7 +126,8 @@ object mod {
       __obj.asInstanceOf[CustomProviderOptions]
     }
     
-    extension [Self <: CustomProviderOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CustomProviderOptions] (val x: Self) extends AnyVal {
       
       inline def setGetToken(value: () => js.Promise[AppCheckToken]): Self = StObject.set(x, "getToken", js.Any.fromFunction0(value))
     }
@@ -220,7 +224,8 @@ object mod {
         __obj.asInstanceOf[NameServiceMapping]
       }
       
-      extension [Self <: NameServiceMapping](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: NameServiceMapping] (val x: Self) extends AnyVal {
         
         inline def `setAppCheck-compat`(value: FirebaseAppCheck): Self = StObject.set(x, "appCheck-compat", value.asInstanceOf[js.Any])
       }

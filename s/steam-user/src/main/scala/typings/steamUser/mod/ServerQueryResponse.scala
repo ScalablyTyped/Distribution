@@ -21,7 +21,8 @@ object ServerQueryResponse {
     __obj.asInstanceOf[ServerQueryResponse]
   }
   
-  extension [Self <: ServerQueryResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServerQueryResponse] (val x: Self) extends AnyVal {
     
     inline def setGameport(value: Double): Self = StObject.set(x, "gameport", value.asInstanceOf[js.Any])
     

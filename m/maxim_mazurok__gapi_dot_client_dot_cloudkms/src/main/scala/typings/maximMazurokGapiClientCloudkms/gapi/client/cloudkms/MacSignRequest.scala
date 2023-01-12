@@ -25,7 +25,8 @@ object MacSignRequest {
     __obj.asInstanceOf[MacSignRequest]
   }
   
-  extension [Self <: MacSignRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MacSignRequest] (val x: Self) extends AnyVal {
     
     inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

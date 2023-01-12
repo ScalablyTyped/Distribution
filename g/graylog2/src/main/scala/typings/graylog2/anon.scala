@@ -58,7 +58,8 @@ object anon {
       __obj.asInstanceOf[ReadonlyGraylogConfig]
     }
     
-    extension [Self <: ReadonlyGraylogConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadonlyGraylogConfig] (val x: Self) extends AnyVal {
       
       inline def setBufferSize(value: Double): Self = StObject.set(x, "bufferSize", value.asInstanceOf[js.Any])
       
@@ -96,7 +97,8 @@ object anon {
       __obj.asInstanceOf[Readonlyhoststringportnum]
     }
     
-    extension [Self <: Readonlyhoststringportnum](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Readonlyhoststringportnum] (val x: Self) extends AnyVal {
       
       inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       

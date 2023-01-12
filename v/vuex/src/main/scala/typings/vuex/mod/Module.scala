@@ -25,7 +25,8 @@ object Module {
     __obj.asInstanceOf[Module[S, R]]
   }
   
-  extension [Self <: Module[?, ?], S, R](x: Self & (Module[S, R])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Module[?, ?], S, R] (val x: Self & (Module[S, R])) extends AnyVal {
     
     inline def setActions(value: ActionTree[S, R]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     

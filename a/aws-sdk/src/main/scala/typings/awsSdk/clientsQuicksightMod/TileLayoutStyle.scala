@@ -23,7 +23,8 @@ object TileLayoutStyle {
     __obj.asInstanceOf[TileLayoutStyle]
   }
   
-  extension [Self <: TileLayoutStyle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TileLayoutStyle] (val x: Self) extends AnyVal {
     
     inline def setGutter(value: GutterStyle): Self = StObject.set(x, "Gutter", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object GeometryFieldName {
     __obj.asInstanceOf[GeometryFieldName]
   }
   
-  extension [Self <: GeometryFieldName](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GeometryFieldName] (val x: Self) extends AnyVal {
     
     inline def setBleedRatio(value: Double): Self = StObject.set(x, "bleedRatio", value.asInstanceOf[js.Any])
     

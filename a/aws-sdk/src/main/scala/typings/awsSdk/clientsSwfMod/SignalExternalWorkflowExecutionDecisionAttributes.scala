@@ -38,7 +38,8 @@ object SignalExternalWorkflowExecutionDecisionAttributes {
     __obj.asInstanceOf[SignalExternalWorkflowExecutionDecisionAttributes]
   }
   
-  extension [Self <: SignalExternalWorkflowExecutionDecisionAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SignalExternalWorkflowExecutionDecisionAttributes] (val x: Self) extends AnyVal {
     
     inline def setControl(value: Data): Self = StObject.set(x, "control", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object SafariContentExtension {
     __obj.asInstanceOf[SafariContentExtension]
   }
   
-  extension [Self <: SafariContentExtension](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SafariContentExtension] (val x: Self) extends AnyVal {
     
     inline def setBaseURI(value: String): Self = StObject.set(x, "baseURI", value.asInstanceOf[js.Any])
   }

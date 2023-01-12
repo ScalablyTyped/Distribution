@@ -52,7 +52,8 @@ object PartialViewCfg {
     __obj.asInstanceOf[PartialViewCfg]
   }
   
-  extension [Self <: PartialViewCfg](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialViewCfg] (val x: Self) extends AnyVal {
     
     inline def setAppendPadding(value: ViewAppendPadding): Self = StObject.set(x, "appendPadding", value.asInstanceOf[js.Any])
     

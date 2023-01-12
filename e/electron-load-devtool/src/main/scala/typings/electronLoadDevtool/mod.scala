@@ -51,7 +51,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[ElectronLoadDevtoolOptions]
     }
     
-    extension [Self <: ElectronLoadDevtoolOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ElectronLoadDevtoolOptions] (val x: Self) extends AnyVal {
       
       inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       

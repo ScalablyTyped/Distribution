@@ -27,7 +27,8 @@ object anon {
       __obj.asInstanceOf[Color]
     }
     
-    extension [Self <: Color](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Color] (val x: Self) extends AnyVal {
       
       inline def setColor(value: js.Array[Double]): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -64,7 +65,8 @@ object anon {
       __obj.asInstanceOf[Grayscale]
     }
     
-    extension [Self <: Grayscale](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Grayscale] (val x: Self) extends AnyVal {
       
       inline def setColor(value: Double): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       

@@ -23,7 +23,8 @@ object TrustStore {
     __obj.asInstanceOf[TrustStore]
   }
   
-  extension [Self <: TrustStore](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TrustStore] (val x: Self) extends AnyVal {
     
     inline def setAssociatedPortalArns(value: ArnList): Self = StObject.set(x, "associatedPortalArns", value.asInstanceOf[js.Any])
     

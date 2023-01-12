@@ -1193,7 +1193,8 @@ object sapFGridContainerMod {
       __obj.asInstanceOf[GridContainerSettings]
     }
     
-    extension [Self <: GridContainerSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GridContainerSettings] (val x: Self) extends AnyVal {
       
       inline def setAllowDenseFill(value: Boolean | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "allowDenseFill", value.asInstanceOf[js.Any])
       

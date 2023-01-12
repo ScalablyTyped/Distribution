@@ -24,7 +24,8 @@ object CAPICOM_STORE_NAME {
     __obj.asInstanceOf[CAPICOM_STORE_NAME]
   }
   
-  extension [Self <: CAPICOM_STORE_NAME](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CAPICOM_STORE_NAME] (val x: Self) extends AnyVal {
     
     inline def setCAPICOM_CA_STORE(value: Ca): Self = StObject.set(x, "CAPICOM_CA_STORE", value.asInstanceOf[js.Any])
     

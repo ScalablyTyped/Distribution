@@ -33,7 +33,8 @@ object Statereason {
     __obj.asInstanceOf[Statereason]
   }
   
-  extension [Self <: Statereason](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Statereason] (val x: Self) extends AnyVal {
     
     inline def setActor(value: Avatarurl): Self = StObject.set(x, "actor", value.asInstanceOf[js.Any])
     

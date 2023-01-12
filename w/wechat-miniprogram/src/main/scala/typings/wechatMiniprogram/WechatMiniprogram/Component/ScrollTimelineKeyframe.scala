@@ -26,7 +26,8 @@ object ScrollTimelineKeyframe {
     __obj.asInstanceOf[ScrollTimelineKeyframe]
   }
   
-  extension [Self <: ScrollTimelineKeyframe](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScrollTimelineKeyframe] (val x: Self) extends AnyVal {
     
     inline def setComposite(value: replace | add | accumulate | auto): Self = StObject.set(x, "composite", value.asInstanceOf[js.Any])
     

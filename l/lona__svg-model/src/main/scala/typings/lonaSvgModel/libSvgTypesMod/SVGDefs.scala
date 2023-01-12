@@ -24,7 +24,8 @@ object SVGDefs {
     __obj.asInstanceOf[SVGDefs]
   }
   
-  extension [Self <: SVGDefs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SVGDefs] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: js.Array[SVGChildNode]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

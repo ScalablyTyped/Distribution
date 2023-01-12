@@ -42,7 +42,8 @@ object libComponentsProgressBarMod {
         __obj.asInstanceOf[IProps]
       }
       
-      extension [Self <: IProps](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IProps] (val x: Self) extends AnyVal {
         
         inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
         

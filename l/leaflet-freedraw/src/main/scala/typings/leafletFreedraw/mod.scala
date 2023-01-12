@@ -181,7 +181,8 @@ object mod {
       __obj.asInstanceOf[FreeDrawOptions]
     }
     
-    extension [Self <: FreeDrawOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FreeDrawOptions] (val x: Self) extends AnyVal {
       
       inline def setConcavePolygon(value: Boolean): Self = StObject.set(x, "concavePolygon", value.asInstanceOf[js.Any])
       
@@ -301,7 +302,8 @@ object mod {
       __obj.asInstanceOf[MarkerEvent]
     }
     
-    extension [Self <: MarkerEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MarkerEvent] (val x: Self) extends AnyVal {
       
       inline def setLatLngs(value: js.Array[js.Array[LatLng_]]): Self = StObject.set(x, "latLngs", value.asInstanceOf[js.Any])
       
@@ -329,7 +331,8 @@ object mod {
         __obj.asInstanceOf[Window]
       }
       
-      extension [Self <: Window](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Window] (val x: Self) extends AnyVal {
         
         inline def setFreeDraw(value: TypeofFreeDraw & (Instantiable1[/* options */ js.UndefOr[FreeDrawOptions], FreeDraw_])): Self = StObject.set(x, "FreeDraw", value.asInstanceOf[js.Any])
       }

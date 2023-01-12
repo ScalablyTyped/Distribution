@@ -145,7 +145,8 @@ object Request {
     __obj.asInstanceOf[Request]
   }
   
-  extension [Self <: Request](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Request] (val x: Self) extends AnyVal {
     
     inline def setCreateImage(value: CreateImageRequest): Self = StObject.set(x, "createImage", value.asInstanceOf[js.Any])
     

@@ -53,7 +53,8 @@ object buildSrcFileCompareHandlerLinesLineBasedCompareContextMod {
       __obj.asInstanceOf[RestLines]
     }
     
-    extension [Self <: RestLines](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RestLines] (val x: Self) extends AnyVal {
       
       inline def setRestLines1(value: js.Array[String]): Self = StObject.set(x, "restLines1", value.asInstanceOf[js.Any])
       
@@ -78,7 +79,8 @@ object buildSrcFileCompareHandlerLinesLineBasedCompareContextMod {
       __obj.asInstanceOf[RestPair]
     }
     
-    extension [Self <: RestPair](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RestPair] (val x: Self) extends AnyVal {
       
       inline def setRest1(value: String): Self = StObject.set(x, "rest1", value.asInstanceOf[js.Any])
       

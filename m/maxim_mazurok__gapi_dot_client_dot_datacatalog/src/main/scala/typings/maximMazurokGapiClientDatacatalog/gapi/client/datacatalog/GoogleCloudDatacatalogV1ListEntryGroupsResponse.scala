@@ -19,7 +19,8 @@ object GoogleCloudDatacatalogV1ListEntryGroupsResponse {
     __obj.asInstanceOf[GoogleCloudDatacatalogV1ListEntryGroupsResponse]
   }
   
-  extension [Self <: GoogleCloudDatacatalogV1ListEntryGroupsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDatacatalogV1ListEntryGroupsResponse] (val x: Self) extends AnyVal {
     
     inline def setEntryGroups(value: js.Array[GoogleCloudDatacatalogV1EntryGroup]): Self = StObject.set(x, "entryGroups", value.asInstanceOf[js.Any])
     

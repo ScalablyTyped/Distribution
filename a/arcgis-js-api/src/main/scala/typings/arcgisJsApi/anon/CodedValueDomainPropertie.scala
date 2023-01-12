@@ -39,7 +39,8 @@ object CodedValueDomainPropertie {
     __obj.asInstanceOf[CodedValueDomainPropertie]
   }
   
-  extension [Self <: CodedValueDomainPropertie](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CodedValueDomainPropertie] (val x: Self) extends AnyVal {
     
     inline def setCodedValues(value: js.Array[CodedValue]): Self = StObject.set(x, "codedValues", value.asInstanceOf[js.Any])
     

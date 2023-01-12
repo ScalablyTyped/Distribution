@@ -9973,7 +9973,8 @@ object CSSPropertiesPartialRecorBackfaceVisibility {
     __obj.asInstanceOf[CSSPropertiesPartialRecorBackfaceVisibility]
   }
   
-  extension [Self <: CSSPropertiesPartialRecorBackfaceVisibility](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CSSPropertiesPartialRecorBackfaceVisibility] (val x: Self) extends AnyVal {
     
     inline def `set--border-bottom`(value: String): Self = StObject.set(x, "--border-bottom", value.asInstanceOf[js.Any])
     

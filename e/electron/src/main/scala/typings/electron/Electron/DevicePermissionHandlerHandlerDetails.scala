@@ -31,7 +31,8 @@ object DevicePermissionHandlerHandlerDetails {
     __obj.asInstanceOf[DevicePermissionHandlerHandlerDetails]
   }
   
-  extension [Self <: DevicePermissionHandlerHandlerDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DevicePermissionHandlerHandlerDetails] (val x: Self) extends AnyVal {
     
     inline def setDevice(value: HIDDevice | SerialPort): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
     

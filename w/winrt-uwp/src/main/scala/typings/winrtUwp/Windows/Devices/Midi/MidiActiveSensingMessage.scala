@@ -25,7 +25,8 @@ object MidiActiveSensingMessage {
     __obj.asInstanceOf[MidiActiveSensingMessage]
   }
   
-  extension [Self <: MidiActiveSensingMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MidiActiveSensingMessage] (val x: Self) extends AnyVal {
     
     inline def setRawData(value: IBuffer): Self = StObject.set(x, "rawData", value.asInstanceOf[js.Any])
     

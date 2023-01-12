@@ -23,7 +23,8 @@ object InsightsConfiguration {
     __obj.asInstanceOf[InsightsConfiguration]
   }
   
-  extension [Self <: InsightsConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InsightsConfiguration] (val x: Self) extends AnyVal {
     
     inline def setInsightsEnabled(value: NullableBoolean): Self = StObject.set(x, "InsightsEnabled", value.asInstanceOf[js.Any])
     

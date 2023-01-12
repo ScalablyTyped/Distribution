@@ -28,7 +28,8 @@ object ShardFilter {
     __obj.asInstanceOf[ShardFilter]
   }
   
-  extension [Self <: ShardFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShardFilter] (val x: Self) extends AnyVal {
     
     inline def setShardId(value: ShardId): Self = StObject.set(x, "ShardId", value.asInstanceOf[js.Any])
     

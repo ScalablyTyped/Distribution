@@ -206,7 +206,8 @@ object ParticleSystemComponentData {
     __obj.asInstanceOf[ParticleSystemComponentData]
   }
   
-  extension [Self <: ParticleSystemComponentData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParticleSystemComponentData] (val x: Self) extends AnyVal {
     
     inline def setAlignToMotion(value: Boolean): Self = StObject.set(x, "alignToMotion", value.asInstanceOf[js.Any])
     

@@ -25,7 +25,8 @@ object SlmPutLifecycleRequest {
     __obj.asInstanceOf[SlmPutLifecycleRequest]
   }
   
-  extension [Self <: SlmPutLifecycleRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SlmPutLifecycleRequest] (val x: Self) extends AnyVal {
     
     inline def setBody(value: Repository): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

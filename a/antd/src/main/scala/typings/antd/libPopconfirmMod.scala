@@ -82,7 +82,8 @@ object libPopconfirmMod extends Shortcut {
       __obj.asInstanceOf[PopconfirmProps]
     }
     
-    extension [Self <: PopconfirmProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PopconfirmProps] (val x: Self) extends AnyVal {
       
       inline def setCancelButtonProps(value: ButtonProps): Self = StObject.set(x, "cancelButtonProps", value.asInstanceOf[js.Any])
       
@@ -155,7 +156,8 @@ object libPopconfirmMod extends Shortcut {
       __obj.asInstanceOf[PopconfirmState]
     }
     
-    extension [Self <: PopconfirmState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PopconfirmState] (val x: Self) extends AnyVal {
       
       inline def setOpen(value: Boolean): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
       

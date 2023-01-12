@@ -16,7 +16,8 @@ object UpdateDeviceMetadataInBatchRequest {
     __obj.asInstanceOf[UpdateDeviceMetadataInBatchRequest]
   }
   
-  extension [Self <: UpdateDeviceMetadataInBatchRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateDeviceMetadataInBatchRequest] (val x: Self) extends AnyVal {
     
     inline def setUpdates(value: js.Array[UpdateMetadataArguments]): Self = StObject.set(x, "updates", value.asInstanceOf[js.Any])
     

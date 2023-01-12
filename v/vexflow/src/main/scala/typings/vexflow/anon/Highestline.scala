@@ -21,7 +21,8 @@ object Highestline {
     __obj.asInstanceOf[Highestline]
   }
   
-  extension [Self <: Highestline](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Highestline] (val x: Self) extends AnyVal {
     
     inline def setHighest_line(value: Double): Self = StObject.set(x, "highest_line", value.asInstanceOf[js.Any])
     

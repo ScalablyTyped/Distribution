@@ -43,7 +43,8 @@ object InitiateAuthRequest {
     __obj.asInstanceOf[InitiateAuthRequest]
   }
   
-  extension [Self <: InitiateAuthRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InitiateAuthRequest] (val x: Self) extends AnyVal {
     
     inline def setAnalyticsMetadata(value: AnalyticsMetadataType): Self = StObject.set(x, "AnalyticsMetadata", value.asInstanceOf[js.Any])
     

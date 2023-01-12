@@ -57,7 +57,8 @@ object StartDominantLanguageDetectionJobRequest {
     __obj.asInstanceOf[StartDominantLanguageDetectionJobRequest]
   }
   
-  extension [Self <: StartDominantLanguageDetectionJobRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartDominantLanguageDetectionJobRequest] (val x: Self) extends AnyVal {
     
     inline def setClientRequestToken(value: ClientRequestTokenString): Self = StObject.set(x, "ClientRequestToken", value.asInstanceOf[js.Any])
     

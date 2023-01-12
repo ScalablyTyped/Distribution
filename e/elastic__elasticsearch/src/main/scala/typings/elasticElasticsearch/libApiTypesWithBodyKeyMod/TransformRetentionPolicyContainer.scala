@@ -15,7 +15,8 @@ object TransformRetentionPolicyContainer {
     __obj.asInstanceOf[TransformRetentionPolicyContainer]
   }
   
-  extension [Self <: TransformRetentionPolicyContainer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransformRetentionPolicyContainer] (val x: Self) extends AnyVal {
     
     inline def setTime(value: TransformRetentionPolicy): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
     

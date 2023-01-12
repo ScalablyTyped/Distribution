@@ -18,7 +18,8 @@ object MultiplexOutputSettings {
     __obj.asInstanceOf[MultiplexOutputSettings]
   }
   
-  extension [Self <: MultiplexOutputSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MultiplexOutputSettings] (val x: Self) extends AnyVal {
     
     inline def setDestination(value: OutputLocationRef): Self = StObject.set(x, "Destination", value.asInstanceOf[js.Any])
   }

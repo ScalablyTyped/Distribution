@@ -43,7 +43,8 @@ object ListUserProfilesRequest {
     __obj.asInstanceOf[ListUserProfilesRequest]
   }
   
-  extension [Self <: ListUserProfilesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListUserProfilesRequest] (val x: Self) extends AnyVal {
     
     inline def setDomainIdEquals(value: DomainId): Self = StObject.set(x, "DomainIdEquals", value.asInstanceOf[js.Any])
     

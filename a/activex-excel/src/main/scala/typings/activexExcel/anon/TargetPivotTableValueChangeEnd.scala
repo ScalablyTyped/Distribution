@@ -20,7 +20,8 @@ object TargetPivotTableValueChangeEnd {
     __obj.asInstanceOf[TargetPivotTableValueChangeEnd]
   }
   
-  extension [Self <: TargetPivotTableValueChangeEnd](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TargetPivotTableValueChangeEnd] (val x: Self) extends AnyVal {
     
     inline def setTargetPivotTable(value: PivotTable): Self = StObject.set(x, "TargetPivotTable", value.asInstanceOf[js.Any])
     

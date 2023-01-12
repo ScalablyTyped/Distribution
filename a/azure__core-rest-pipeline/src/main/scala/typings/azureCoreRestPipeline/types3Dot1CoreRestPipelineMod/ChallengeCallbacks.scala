@@ -28,7 +28,8 @@ object ChallengeCallbacks {
     __obj.asInstanceOf[ChallengeCallbacks]
   }
   
-  extension [Self <: ChallengeCallbacks](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChallengeCallbacks] (val x: Self) extends AnyVal {
     
     inline def setAuthorizeRequest(value: /* options */ AuthorizeRequestOptions => js.Promise[Unit]): Self = StObject.set(x, "authorizeRequest", js.Any.fromFunction1(value))
     

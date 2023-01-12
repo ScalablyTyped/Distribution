@@ -50,7 +50,8 @@ object Effect {
     __obj.asInstanceOf[Effect]
   }
   
-  extension [Self <: Effect](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Effect] (val x: Self) extends AnyVal {
     
     inline def setClassName(value: operator): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     

@@ -125,7 +125,8 @@ object WebGLState {
     __obj.asInstanceOf[WebGLState]
   }
   
-  extension [Self <: WebGLState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebGLState] (val x: Self) extends AnyVal {
     
     inline def setActiveTexture(value: Any => Unit): Self = StObject.set(x, "activeTexture", js.Any.fromFunction1(value))
     

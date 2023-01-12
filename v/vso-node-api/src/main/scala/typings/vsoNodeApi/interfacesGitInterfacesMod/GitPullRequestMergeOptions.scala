@@ -18,7 +18,8 @@ object GitPullRequestMergeOptions {
     __obj.asInstanceOf[GitPullRequestMergeOptions]
   }
   
-  extension [Self <: GitPullRequestMergeOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GitPullRequestMergeOptions] (val x: Self) extends AnyVal {
     
     inline def setDisableRenames(value: Boolean): Self = StObject.set(x, "disableRenames", value.asInstanceOf[js.Any])
   }

@@ -20,7 +20,8 @@ object Band {
     __obj.asInstanceOf[Band]
   }
   
-  extension [Self <: Band](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Band] (val x: Self) extends AnyVal {
     
     inline def setBand(value: Boolean | Double): Self = StObject.set(x, "band", value.asInstanceOf[js.Any])
     

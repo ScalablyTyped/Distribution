@@ -23,7 +23,8 @@ object SingleEventData {
     __obj.asInstanceOf[SingleEventData[T, S]]
   }
   
-  extension [Self <: SingleEventData[?, ?], T /* <: BaseTagData */, S](x: Self & (SingleEventData[T, S])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SingleEventData[?, ?], T /* <: BaseTagData */, S] (val x: Self & (SingleEventData[T, S])) extends AnyVal {
     
     inline def setValue(value: S): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }

@@ -20,7 +20,8 @@ object Data {
       __obj.asInstanceOf[Column]
     }
     
-    extension [Self <: Column](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Column] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -62,7 +63,8 @@ object Data {
       __obj.asInstanceOf[Table]
     }
     
-    extension [Self <: Table](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Table] (val x: Self) extends AnyVal {
       
       inline def setDelete(value: (QueryJs, String) => Thenable[Any]): Self = StObject.set(x, "delete", js.Any.fromFunction2(value))
       

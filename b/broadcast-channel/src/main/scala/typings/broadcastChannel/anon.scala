@@ -21,7 +21,8 @@ object anon {
       __obj.asInstanceOf[FallbackInterval]
     }
     
-    extension [Self <: FallbackInterval](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FallbackInterval] (val x: Self) extends AnyVal {
       
       inline def setFallbackInterval(value: Double): Self = StObject.set(x, "fallbackInterval", value.asInstanceOf[js.Any])
       
@@ -57,7 +58,8 @@ object anon {
       __obj.asInstanceOf[MaxParallelWrites]
     }
     
-    extension [Self <: MaxParallelWrites](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MaxParallelWrites] (val x: Self) extends AnyVal {
       
       inline def setMaxParallelWrites(value: Double): Self = StObject.set(x, "maxParallelWrites", value.asInstanceOf[js.Any])
       

@@ -17,7 +17,8 @@ object BasemapLayerListTriggerActionEvent {
     __obj.asInstanceOf[BasemapLayerListTriggerActionEvent]
   }
   
-  extension [Self <: BasemapLayerListTriggerActionEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BasemapLayerListTriggerActionEvent] (val x: Self) extends AnyVal {
     
     inline def setAction(value: ActionButton | ActionToggle): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     

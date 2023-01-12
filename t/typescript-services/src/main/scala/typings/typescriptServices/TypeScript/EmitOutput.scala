@@ -17,7 +17,8 @@ object EmitOutput {
     __obj.asInstanceOf[EmitOutput]
   }
   
-  extension [Self <: EmitOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EmitOutput] (val x: Self) extends AnyVal {
     
     inline def setEmitOutputResult(value: EmitOutputResult): Self = StObject.set(x, "emitOutputResult", value.asInstanceOf[js.Any])
     

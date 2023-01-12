@@ -86,7 +86,8 @@ object libHttpRealmConfigMod {
       __obj.asInstanceOf[RealmConfig]
     }
     
-    extension [Self <: RealmConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RealmConfig] (val x: Self) extends AnyVal {
       
       inline def setApplication(value: typings.nginstackEngine.libDbkeyDbkeyMod.^ | Double): Self = StObject.set(x, "application", value.asInstanceOf[js.Any])
       

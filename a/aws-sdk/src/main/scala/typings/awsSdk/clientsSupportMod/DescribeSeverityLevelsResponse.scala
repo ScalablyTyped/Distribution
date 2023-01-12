@@ -18,7 +18,8 @@ object DescribeSeverityLevelsResponse {
     __obj.asInstanceOf[DescribeSeverityLevelsResponse]
   }
   
-  extension [Self <: DescribeSeverityLevelsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeSeverityLevelsResponse] (val x: Self) extends AnyVal {
     
     inline def setSeverityLevels(value: SeverityLevelsList): Self = StObject.set(x, "severityLevels", value.asInstanceOf[js.Any])
     

@@ -35,7 +35,8 @@ object KeycloakRegisterOptions {
     __obj.asInstanceOf[KeycloakRegisterOptions]
   }
   
-  extension [Self <: KeycloakRegisterOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KeycloakRegisterOptions] (val x: Self) extends AnyVal {
     
     inline def setAcr(value: Acr): Self = StObject.set(x, "acr", value.asInstanceOf[js.Any])
     

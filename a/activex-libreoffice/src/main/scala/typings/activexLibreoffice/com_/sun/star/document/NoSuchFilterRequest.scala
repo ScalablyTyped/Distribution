@@ -33,7 +33,8 @@ object NoSuchFilterRequest {
     __obj.asInstanceOf[NoSuchFilterRequest]
   }
   
-  extension [Self <: NoSuchFilterRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NoSuchFilterRequest] (val x: Self) extends AnyVal {
     
     inline def setURL(value: String): Self = StObject.set(x, "URL", value.asInstanceOf[js.Any])
   }

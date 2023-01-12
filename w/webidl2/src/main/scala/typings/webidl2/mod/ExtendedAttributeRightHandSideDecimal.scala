@@ -21,7 +21,8 @@ object ExtendedAttributeRightHandSideDecimal {
     __obj.asInstanceOf[ExtendedAttributeRightHandSideDecimal]
   }
   
-  extension [Self <: ExtendedAttributeRightHandSideDecimal](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExtendedAttributeRightHandSideDecimal] (val x: Self) extends AnyVal {
     
     inline def setType(value: decimal): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

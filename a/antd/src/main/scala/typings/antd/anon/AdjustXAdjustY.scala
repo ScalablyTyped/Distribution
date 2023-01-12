@@ -17,7 +17,8 @@ object AdjustXAdjustY {
     __obj.asInstanceOf[AdjustXAdjustY]
   }
   
-  extension [Self <: AdjustXAdjustY](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AdjustXAdjustY] (val x: Self) extends AnyVal {
     
     inline def setAdjustX(value: Boolean): Self = StObject.set(x, "adjustX", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object TypeofWizard {
     __obj.asInstanceOf[TypeofWizard]
   }
   
-  extension [Self <: TypeofWizard](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofWizard] (val x: Self) extends AnyVal {
     
     inline def setExtend(value: js.Object => Wizard): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
     

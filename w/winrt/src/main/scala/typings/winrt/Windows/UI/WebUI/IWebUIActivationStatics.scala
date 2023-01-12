@@ -21,7 +21,8 @@ object IWebUIActivationStatics {
     __obj.asInstanceOf[IWebUIActivationStatics]
   }
   
-  extension [Self <: IWebUIActivationStatics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IWebUIActivationStatics] (val x: Self) extends AnyVal {
     
     inline def setOnactivated(value: Any): Self = StObject.set(x, "onactivated", value.asInstanceOf[js.Any])
     

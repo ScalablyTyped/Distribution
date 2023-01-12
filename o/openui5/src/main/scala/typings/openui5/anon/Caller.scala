@@ -33,7 +33,8 @@ object Caller {
     __obj.asInstanceOf[Caller]
   }
   
-  extension [Self <: Caller](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Caller] (val x: Self) extends AnyVal {
     
     inline def setCaller(value: String): Self = StObject.set(x, "caller", value.asInstanceOf[js.Any])
     

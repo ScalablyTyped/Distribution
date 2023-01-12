@@ -31,7 +31,8 @@ object MessageFlow {
     __obj.asInstanceOf[MessageFlow]
   }
   
-  extension [Self <: MessageFlow](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MessageFlow] (val x: Self) extends AnyVal {
     
     inline def setMessageRef(value: Message): Self = StObject.set(x, "messageRef", value.asInstanceOf[js.Any])
     

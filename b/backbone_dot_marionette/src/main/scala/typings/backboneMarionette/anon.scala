@@ -26,7 +26,8 @@ object anon {
       __obj.asInstanceOf[Dictindex]
     }
     
-    extension [Self <: Dictindex](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Dictindex] (val x: Self) extends AnyVal {
       
       inline def setBehaviorClass(value: Instantiable1[/* options */ js.UndefOr[Any], Behavior]): Self = StObject.set(x, "behaviorClass", value.asInstanceOf[js.Any])
     }
@@ -53,7 +54,8 @@ object anon {
       __obj.asInstanceOf[PreventRender]
     }
     
-    extension [Self <: PreventRender](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PreventRender] (val x: Self) extends AnyVal {
       
       inline def setPreventRender(value: Boolean): Self = StObject.set(x, "preventRender", value.asInstanceOf[js.Any])
     }

@@ -18,7 +18,8 @@ object DeleteTrustStoreRequest {
     __obj.asInstanceOf[DeleteTrustStoreRequest]
   }
   
-  extension [Self <: DeleteTrustStoreRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteTrustStoreRequest] (val x: Self) extends AnyVal {
     
     inline def setTrustStoreArn(value: ARN): Self = StObject.set(x, "trustStoreArn", value.asInstanceOf[js.Any])
   }

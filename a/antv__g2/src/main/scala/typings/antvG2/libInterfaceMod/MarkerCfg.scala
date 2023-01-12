@@ -27,7 +27,8 @@ object MarkerCfg {
     __obj.asInstanceOf[MarkerCfg]
   }
   
-  extension [Self <: MarkerCfg](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MarkerCfg] (val x: Self) extends AnyVal {
     
     inline def setStyle(value: ShapeAttrs | (js.Function1[/* style */ ShapeAttrs, ShapeAttrs])): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     

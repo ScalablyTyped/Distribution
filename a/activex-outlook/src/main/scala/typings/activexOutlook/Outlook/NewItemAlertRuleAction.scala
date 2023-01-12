@@ -40,7 +40,8 @@ object NewItemAlertRuleAction {
     __obj.asInstanceOf[NewItemAlertRuleAction]
   }
   
-  extension [Self <: NewItemAlertRuleAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NewItemAlertRuleAction] (val x: Self) extends AnyVal {
     
     inline def setActionType(value: OlRuleActionType): Self = StObject.set(x, "ActionType", value.asInstanceOf[js.Any])
     

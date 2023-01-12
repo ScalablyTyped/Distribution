@@ -1128,7 +1128,8 @@ object modulesAccessibilityMod {
         __obj.asInstanceOf[Chart]
       }
       
-      extension [Self <: Chart](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Chart] (val x: Self) extends AnyVal {
         
         inline def setLangFormat(value: (String, Dictionary[Any]) => String): Self = StObject.set(x, "langFormat", js.Any.fromFunction2(value))
       }
@@ -1178,7 +1179,8 @@ object modulesAccessibilityMod {
         __obj.asInstanceOf[KeyboardNavigationHandlerOptionsObject]
       }
       
-      extension [Self <: KeyboardNavigationHandlerOptionsObject](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: KeyboardNavigationHandlerOptionsObject] (val x: Self) extends AnyVal {
         
         inline def setInit(value: js.Function): Self = StObject.set(x, "init", value.asInstanceOf[js.Any])
         
@@ -1215,7 +1217,8 @@ object modulesAccessibilityMod {
         __obj.asInstanceOf[PointAccessibilityOptionsObject]
       }
       
-      extension [Self <: PointAccessibilityOptionsObject](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: PointAccessibilityOptionsObject] (val x: Self) extends AnyVal {
         
         inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
         
@@ -1238,7 +1241,8 @@ object modulesAccessibilityMod {
         __obj.asInstanceOf[PointOptionsObject]
       }
       
-      extension [Self <: PointOptionsObject](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: PointOptionsObject] (val x: Self) extends AnyVal {
         
         inline def setAccessibility(value: PointAccessibilityOptionsObject): Self = StObject.set(x, "accessibility", value.asInstanceOf[js.Any])
         

@@ -18,7 +18,8 @@ object DescribeListenerRequest {
     __obj.asInstanceOf[DescribeListenerRequest]
   }
   
-  extension [Self <: DescribeListenerRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeListenerRequest] (val x: Self) extends AnyVal {
     
     inline def setListenerArn(value: GenericString): Self = StObject.set(x, "ListenerArn", value.asInstanceOf[js.Any])
   }

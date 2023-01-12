@@ -38,7 +38,8 @@ object TitleAggregation {
     __obj.asInstanceOf[TitleAggregation]
   }
   
-  extension [Self <: TitleAggregation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TitleAggregation] (val x: Self) extends AnyVal {
     
     inline def setResourceType(value: AggregationResourceType): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
     

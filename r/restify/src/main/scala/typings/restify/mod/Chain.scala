@@ -38,7 +38,8 @@ object Chain {
     __obj.asInstanceOf[Chain]
   }
   
-  extension [Self <: Chain](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Chain] (val x: Self) extends AnyVal {
     
     inline def setAdd(value: RequestHandler => Unit): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
     

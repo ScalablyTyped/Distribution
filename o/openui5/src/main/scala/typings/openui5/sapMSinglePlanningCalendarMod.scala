@@ -2133,7 +2133,8 @@ object sapMSinglePlanningCalendarMod {
       __obj.asInstanceOf[SinglePlanningCalendarSettings]
     }
     
-    extension [Self <: SinglePlanningCalendarSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SinglePlanningCalendarSettings] (val x: Self) extends AnyVal {
       
       inline def setActions(
         value: js.Array[typings.openui5.sapUiCoreControlMod.default] | typings.openui5.sapUiCoreControlMod.default | AggregationBindingInfo | (/* template literal string: {${string}} */ String)

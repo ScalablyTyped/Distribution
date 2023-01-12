@@ -19,7 +19,8 @@ object CommsConnection {
     __obj.asInstanceOf[CommsConnection]
   }
   
-  extension [Self <: CommsConnection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CommsConnection] (val x: Self) extends AnyVal {
     
     inline def setSend(value: () => Unit): Self = StObject.set(x, "send", js.Any.fromFunction0(value))
     

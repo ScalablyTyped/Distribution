@@ -15,7 +15,8 @@ object PhotoIdString {
     __obj.asInstanceOf[PhotoIdString]
   }
   
-  extension [Self <: PhotoIdString](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PhotoIdString] (val x: Self) extends AnyVal {
     
     inline def setPhotoId(value: String): Self = StObject.set(x, "photoId", value.asInstanceOf[js.Any])
   }

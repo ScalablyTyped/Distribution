@@ -17,7 +17,8 @@ object LogOptions {
     __obj.asInstanceOf[LogOptions]
   }
   
-  extension [Self <: LogOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LogOptions] (val x: Self) extends AnyVal {
     
     inline def setClear(value: Boolean): Self = StObject.set(x, "clear", value.asInstanceOf[js.Any])
     

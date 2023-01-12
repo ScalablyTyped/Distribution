@@ -55,7 +55,8 @@ object ViewFont {
     __obj.asInstanceOf[ViewFont]
   }
   
-  extension [Self <: ViewFont](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ViewFont] (val x: Self) extends AnyVal {
     
     inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     

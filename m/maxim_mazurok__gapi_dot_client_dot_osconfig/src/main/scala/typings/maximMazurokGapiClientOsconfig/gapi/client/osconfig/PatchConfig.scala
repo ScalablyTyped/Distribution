@@ -40,7 +40,8 @@ object PatchConfig {
     __obj.asInstanceOf[PatchConfig]
   }
   
-  extension [Self <: PatchConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PatchConfig] (val x: Self) extends AnyVal {
     
     inline def setApt(value: AptSettings): Self = StObject.set(x, "apt", value.asInstanceOf[js.Any])
     

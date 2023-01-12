@@ -19,7 +19,8 @@ object TimestampNode {
     __obj.asInstanceOf[TimestampNode]
   }
   
-  extension [Self <: TimestampNode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimestampNode] (val x: Self) extends AnyVal {
     
     inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     

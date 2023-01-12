@@ -18,7 +18,8 @@ object IComponentRenewalStatics {
     __obj.asInstanceOf[IComponentRenewalStatics]
   }
   
-  extension [Self <: IComponentRenewalStatics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IComponentRenewalStatics] (val x: Self) extends AnyVal {
     
     inline def setRenewSystemComponentsAsync(value: RevocationAndRenewalInformation => IAsyncOperationWithProgress[RenewalStatus, Double]): Self = StObject.set(x, "renewSystemComponentsAsync", js.Any.fromFunction1(value))
   }

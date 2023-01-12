@@ -20,7 +20,8 @@ object FunctionComponentElement {
     __obj.asInstanceOf[FunctionComponentElement[P]]
   }
   
-  extension [Self <: FunctionComponentElement[?], P](x: Self & FunctionComponentElement[P]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FunctionComponentElement[?], P] (val x: Self & FunctionComponentElement[P]) extends AnyVal {
     
     inline def setRef(
       value: /* import warning: importer.ImportType#apply Failed type conversion: 'ref' extends keyof P ? P extends {  ref :infer R | undefined} ? R : never : never | undefined */ js.Any

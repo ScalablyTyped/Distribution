@@ -179,7 +179,8 @@ object mod {
         __obj.asInstanceOf[Network]
       }
       
-      extension [Self <: Network](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Network] (val x: Self) extends AnyVal {
         
         inline def setAlias(value: String): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
         
@@ -592,7 +593,8 @@ object mod {
       __obj.asInstanceOf[Util]
     }
     
-    extension [Self <: Util](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Util] (val x: Self) extends AnyVal {
       
       inline def setBuffer(value: Reverse): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
     }

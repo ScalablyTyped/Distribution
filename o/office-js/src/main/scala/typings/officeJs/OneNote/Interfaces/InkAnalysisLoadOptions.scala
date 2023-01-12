@@ -41,7 +41,8 @@ object InkAnalysisLoadOptions {
     __obj.asInstanceOf[InkAnalysisLoadOptions]
   }
   
-  extension [Self <: InkAnalysisLoadOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InkAnalysisLoadOptions] (val x: Self) extends AnyVal {
     
     inline def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
     

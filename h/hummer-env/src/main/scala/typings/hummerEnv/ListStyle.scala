@@ -65,7 +65,8 @@ object ListStyle {
     __obj.asInstanceOf[ListStyle]
   }
   
-  extension [Self <: ListStyle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListStyle] (val x: Self) extends AnyVal {
     
     inline def setBottomSpacing(value: Double | String): Self = StObject.set(x, "bottomSpacing", value.asInstanceOf[js.Any])
     

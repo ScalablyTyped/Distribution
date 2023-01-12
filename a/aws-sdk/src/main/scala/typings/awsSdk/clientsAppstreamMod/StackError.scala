@@ -23,7 +23,8 @@ object StackError {
     __obj.asInstanceOf[StackError]
   }
   
-  extension [Self <: StackError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StackError] (val x: Self) extends AnyVal {
     
     inline def setErrorCode(value: StackErrorCode): Self = StObject.set(x, "ErrorCode", value.asInstanceOf[js.Any])
     

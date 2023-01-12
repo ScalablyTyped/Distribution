@@ -22,7 +22,8 @@ object AuthorizeScopeData {
     __obj.asInstanceOf[AuthorizeScopeData]
   }
   
-  extension [Self <: AuthorizeScopeData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AuthorizeScopeData] (val x: Self) extends AnyVal {
     
     inline def setPostal_code(value: Essential): Self = StObject.set(x, "postal_code", value.asInstanceOf[js.Any])
     

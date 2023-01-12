@@ -23,7 +23,8 @@ object ExportSchemaResponse {
     __obj.asInstanceOf[ExportSchemaResponse]
   }
   
-  extension [Self <: ExportSchemaResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExportSchemaResponse] (val x: Self) extends AnyVal {
     
     inline def setContent(value: string): Self = StObject.set(x, "Content", value.asInstanceOf[js.Any])
     

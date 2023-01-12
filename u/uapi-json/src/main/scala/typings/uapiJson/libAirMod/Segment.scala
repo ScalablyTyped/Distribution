@@ -47,7 +47,8 @@ object Segment {
     __obj.asInstanceOf[Segment]
   }
   
-  extension [Self <: Segment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Segment] (val x: Self) extends AnyVal {
     
     inline def setAirline(value: String): Self = StObject.set(x, "airline", value.asInstanceOf[js.Any])
     

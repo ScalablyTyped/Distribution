@@ -67,7 +67,8 @@ object Renderer {
          with LineEndType
   }
   
-  extension [Self <: Renderer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Renderer] (val x: Self) extends AnyVal {
     
     inline def setGetContext(value: () => IRenderContext): Self = StObject.set(x, "getContext", js.Any.fromFunction0(value))
     

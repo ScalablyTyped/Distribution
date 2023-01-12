@@ -55,7 +55,8 @@ object TrackElement {
     __obj.asInstanceOf[TrackElement]
   }
   
-  extension [Self <: TrackElement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TrackElement] (val x: Self) extends AnyVal {
     
     inline def setBrakeBoosterSpeed(value: Double): Self = StObject.set(x, "brakeBoosterSpeed", value.asInstanceOf[js.Any])
     

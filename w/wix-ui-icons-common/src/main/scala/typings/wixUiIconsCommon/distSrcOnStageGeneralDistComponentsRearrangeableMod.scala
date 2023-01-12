@@ -27,7 +27,8 @@ object distSrcOnStageGeneralDistComponentsRearrangeableMod extends Shortcut {
       __obj.asInstanceOf[RearrangeableProps]
     }
     
-    extension [Self <: RearrangeableProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RearrangeableProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

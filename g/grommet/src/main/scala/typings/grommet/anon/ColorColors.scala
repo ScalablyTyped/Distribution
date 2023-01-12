@@ -25,7 +25,8 @@ object ColorColors {
     __obj.asInstanceOf[ColorColors]
   }
   
-  extension [Self <: ColorColors](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ColorColors] (val x: Self) extends AnyVal {
     
     inline def setColor(value: ColorType): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

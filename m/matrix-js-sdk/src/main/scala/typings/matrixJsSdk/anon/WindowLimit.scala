@@ -15,7 +15,8 @@ object WindowLimit {
     __obj.asInstanceOf[WindowLimit]
   }
   
-  extension [Self <: WindowLimit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WindowLimit] (val x: Self) extends AnyVal {
     
     inline def setWindowLimit(value: Double): Self = StObject.set(x, "windowLimit", value.asInstanceOf[js.Any])
     

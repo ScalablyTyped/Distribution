@@ -17,7 +17,8 @@ object FontSizeNumberTextAlignString {
     __obj.asInstanceOf[FontSizeNumberTextAlignString]
   }
   
-  extension [Self <: FontSizeNumberTextAlignString](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FontSizeNumberTextAlignString] (val x: Self) extends AnyVal {
     
     inline def setFontSize(value: Double): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
     

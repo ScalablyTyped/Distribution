@@ -35,7 +35,8 @@ object ValidateConsumerConfigRequest {
     __obj.asInstanceOf[ValidateConsumerConfigRequest]
   }
   
-  extension [Self <: ValidateConsumerConfigRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ValidateConsumerConfigRequest] (val x: Self) extends AnyVal {
     
     inline def setCheckServiceNetworkingUsePermission(value: Boolean): Self = StObject.set(x, "checkServiceNetworkingUsePermission", value.asInstanceOf[js.Any])
     

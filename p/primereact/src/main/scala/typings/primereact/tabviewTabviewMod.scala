@@ -169,7 +169,8 @@ object tabviewTabviewMod {
       __obj.asInstanceOf[TabPanelHeaderTemplateOptions]
     }
     
-    extension [Self <: TabPanelHeaderTemplateOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TabPanelHeaderTemplateOptions] (val x: Self) extends AnyVal {
       
       inline def setAriaControls(value: String): Self = StObject.set(x, "ariaControls", value.asInstanceOf[js.Any])
       
@@ -234,7 +235,8 @@ object tabviewTabviewMod {
       __obj.asInstanceOf[TabPanelProps]
     }
     
-    extension [Self <: TabPanelProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TabPanelProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -674,7 +676,8 @@ object tabviewTabviewMod {
       __obj.asInstanceOf[TabViewProps]
     }
     
-    extension [Self <: TabViewProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TabViewProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       
@@ -1437,7 +1440,8 @@ object tabviewTabviewMod {
       __obj.asInstanceOf[TabViewTabChangeParams]
     }
     
-    extension [Self <: TabViewTabChangeParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TabViewTabChangeParams] (val x: Self) extends AnyVal {
       
       inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
@@ -1458,7 +1462,8 @@ object tabviewTabviewMod {
       __obj.asInstanceOf[TabViewTabCloseParams]
     }
     
-    extension [Self <: TabViewTabCloseParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TabViewTabCloseParams] (val x: Self) extends AnyVal {
       
       inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       

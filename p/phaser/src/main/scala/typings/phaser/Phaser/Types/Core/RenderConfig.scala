@@ -93,7 +93,8 @@ object RenderConfig {
     __obj.asInstanceOf[RenderConfig]
   }
   
-  extension [Self <: RenderConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RenderConfig] (val x: Self) extends AnyVal {
     
     inline def setAntialias(value: Boolean): Self = StObject.set(x, "antialias", value.asInstanceOf[js.Any])
     

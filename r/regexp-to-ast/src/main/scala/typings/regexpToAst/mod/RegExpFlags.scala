@@ -38,7 +38,8 @@ object RegExpFlags {
     __obj.asInstanceOf[RegExpFlags]
   }
   
-  extension [Self <: RegExpFlags](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RegExpFlags] (val x: Self) extends AnyVal {
     
     inline def setGlobal(value: Boolean): Self = StObject.set(x, "global", value.asInstanceOf[js.Any])
     

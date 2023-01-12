@@ -18,7 +18,8 @@ object GetOnPremisesInstanceInput {
     __obj.asInstanceOf[GetOnPremisesInstanceInput]
   }
   
-  extension [Self <: GetOnPremisesInstanceInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetOnPremisesInstanceInput] (val x: Self) extends AnyVal {
     
     inline def setInstanceName(value: InstanceName): Self = StObject.set(x, "instanceName", value.asInstanceOf[js.Any])
   }

@@ -225,7 +225,8 @@ object eventinkeyofSwiperEventsSActiveIndexChange {
     __obj.asInstanceOf[eventinkeyofSwiperEventsSActiveIndexChange]
   }
   
-  extension [Self <: eventinkeyofSwiperEventsSActiveIndexChange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: eventinkeyofSwiperEventsSActiveIndexChange] (val x: Self) extends AnyVal {
     
     inline def setActiveIndexChange(value: /* swiper */ default => Unit): Self = StObject.set(x, "activeIndexChange", js.Any.fromFunction1(value))
     

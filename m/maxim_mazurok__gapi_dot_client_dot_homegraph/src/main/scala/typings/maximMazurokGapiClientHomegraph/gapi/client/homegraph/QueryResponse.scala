@@ -19,7 +19,8 @@ object QueryResponse {
     __obj.asInstanceOf[QueryResponse]
   }
   
-  extension [Self <: QueryResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryResponse] (val x: Self) extends AnyVal {
     
     inline def setPayload(value: QueryResponsePayload): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     

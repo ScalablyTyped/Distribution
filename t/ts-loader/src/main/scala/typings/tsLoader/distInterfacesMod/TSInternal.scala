@@ -24,7 +24,8 @@ object TSInternal {
     __obj.asInstanceOf[TSInternal]
   }
   
-  extension [Self <: TSInternal](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TSInternal] (val x: Self) extends AnyVal {
     
     inline def setGetModeForFileReference(
       value: (/* ref */ FileReference | String, /* containingFileMode */ js.UndefOr[ESNext | CommonJS]) => js.UndefOr[ESNext | CommonJS]

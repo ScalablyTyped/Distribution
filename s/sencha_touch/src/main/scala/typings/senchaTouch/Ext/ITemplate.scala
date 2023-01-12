@@ -137,7 +137,8 @@ object ITemplate {
     __obj.asInstanceOf[ITemplate]
   }
   
-  extension [Self <: ITemplate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ITemplate] (val x: Self) extends AnyVal {
     
     inline def setAppend(
       value: (/* el */ js.UndefOr[Any], /* values */ js.UndefOr[Any], /* returnElement */ js.UndefOr[Boolean]) => Any

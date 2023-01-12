@@ -28,7 +28,8 @@ object RevokeSignatureRequest {
     __obj.asInstanceOf[RevokeSignatureRequest]
   }
   
-  extension [Self <: RevokeSignatureRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RevokeSignatureRequest] (val x: Self) extends AnyVal {
     
     inline def setJobId(value: JobId): Self = StObject.set(x, "jobId", value.asInstanceOf[js.Any])
     

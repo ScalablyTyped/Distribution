@@ -19,7 +19,8 @@ object RequestBodyContentApplicationjsonIgnored {
     __obj.asInstanceOf[RequestBodyContentApplicationjsonIgnored]
   }
   
-  extension [Self <: RequestBodyContentApplicationjsonIgnored](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RequestBodyContentApplicationjsonIgnored] (val x: Self) extends AnyVal {
     
     inline def setParameters(value: PathThreadid): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     

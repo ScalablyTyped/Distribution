@@ -27,7 +27,8 @@ object TextBox {
     __obj.asInstanceOf[TextBox]
   }
   
-  extension [Self <: TextBox](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextBox] (val x: Self) extends AnyVal {
     
     inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     

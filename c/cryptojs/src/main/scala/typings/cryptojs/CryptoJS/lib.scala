@@ -36,7 +36,8 @@ object lib {
       __obj.asInstanceOf[Base]
     }
     
-    extension [Self <: Base](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Base] (val x: Self) extends AnyVal {
       
       inline def setCreate(value: /* repeated */ Any => Base): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
       
@@ -90,7 +91,8 @@ object lib {
       __obj.asInstanceOf[BufferedBlockAlgorithm]
     }
     
-    extension [Self <: BufferedBlockAlgorithm](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BufferedBlockAlgorithm] (val x: Self) extends AnyVal {
       
       inline def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
     }
@@ -142,7 +144,8 @@ object lib {
       __obj.asInstanceOf[CipherParamsData]
     }
     
-    extension [Self <: CipherParamsData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CipherParamsData] (val x: Self) extends AnyVal {
       
       inline def setAlgorithm(value: Cipher): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
       
@@ -202,7 +205,8 @@ object lib {
       __obj.asInstanceOf[IBlockCipherCfg]
     }
     
-    extension [Self <: IBlockCipherCfg](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IBlockCipherCfg] (val x: Self) extends AnyVal {
       
       inline def setIv(value: WordArray): Self = StObject.set(x, "iv", value.asInstanceOf[js.Any])
       
@@ -363,7 +367,8 @@ object lib {
       __obj.asInstanceOf[IPasswordBasedCipherCfg]
     }
     
-    extension [Self <: IPasswordBasedCipherCfg](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPasswordBasedCipherCfg] (val x: Self) extends AnyVal {
       
       inline def setKdf(value: IKdfImpl): Self = StObject.set(x, "kdf", value.asInstanceOf[js.Any])
       
@@ -408,7 +413,8 @@ object lib {
       __obj.asInstanceOf[ISerializableCipherCfg]
     }
     
-    extension [Self <: ISerializableCipherCfg](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISerializableCipherCfg] (val x: Self) extends AnyVal {
       
       inline def setFormat(value: IFormatter): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
@@ -463,7 +469,8 @@ object lib {
       __obj.asInstanceOf[LibStatic]
     }
     
-    extension [Self <: LibStatic](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LibStatic] (val x: Self) extends AnyVal {
       
       inline def setBase(value: Base): Self = StObject.set(x, "Base", value.asInstanceOf[js.Any])
       

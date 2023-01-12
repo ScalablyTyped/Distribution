@@ -15,7 +15,8 @@ object LoRaWANStartFuotaTask {
     __obj.asInstanceOf[LoRaWANStartFuotaTask]
   }
   
-  extension [Self <: LoRaWANStartFuotaTask](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LoRaWANStartFuotaTask] (val x: Self) extends AnyVal {
     
     inline def setStartTime(value: js.Date): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
     

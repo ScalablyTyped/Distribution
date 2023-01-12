@@ -24,7 +24,8 @@ object PartialidnumbernodeidstriId {
     __obj.asInstanceOf[PartialidnumbernodeidstriId]
   }
   
-  extension [Self <: PartialidnumbernodeidstriId](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialidnumbernodeidstriId] (val x: Self) extends AnyVal {
     
     inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

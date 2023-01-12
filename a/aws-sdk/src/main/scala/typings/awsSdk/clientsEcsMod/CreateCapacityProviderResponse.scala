@@ -18,7 +18,8 @@ object CreateCapacityProviderResponse {
     __obj.asInstanceOf[CreateCapacityProviderResponse]
   }
   
-  extension [Self <: CreateCapacityProviderResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateCapacityProviderResponse] (val x: Self) extends AnyVal {
     
     inline def setCapacityProvider(value: CapacityProvider): Self = StObject.set(x, "capacityProvider", value.asInstanceOf[js.Any])
     

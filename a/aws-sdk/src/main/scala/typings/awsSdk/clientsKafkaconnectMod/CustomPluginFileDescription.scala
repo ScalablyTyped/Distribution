@@ -23,7 +23,8 @@ object CustomPluginFileDescription {
     __obj.asInstanceOf[CustomPluginFileDescription]
   }
   
-  extension [Self <: CustomPluginFileDescription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomPluginFileDescription] (val x: Self) extends AnyVal {
     
     inline def setFileMd5(value: string): Self = StObject.set(x, "fileMd5", value.asInstanceOf[js.Any])
     

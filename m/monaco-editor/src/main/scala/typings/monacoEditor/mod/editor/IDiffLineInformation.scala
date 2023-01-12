@@ -15,7 +15,8 @@ object IDiffLineInformation {
     __obj.asInstanceOf[IDiffLineInformation]
   }
   
-  extension [Self <: IDiffLineInformation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IDiffLineInformation] (val x: Self) extends AnyVal {
     
     inline def setEquivalentLineNumber(value: Double): Self = StObject.set(x, "equivalentLineNumber", value.asInstanceOf[js.Any])
   }

@@ -47,7 +47,8 @@ object anon {
       __obj.asInstanceOf[Dictkey]
     }
     
-    extension [Self <: Dictkey](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Dictkey] (val x: Self) extends AnyVal {
       
       inline def setTool(value: String): Self = StObject.set(x, "tool", value.asInstanceOf[js.Any])
       
@@ -292,7 +293,8 @@ object anon {
       __obj.asInstanceOf[ExpoConfighostUristringun]
     }
     
-    extension [Self <: ExpoConfighostUristringun](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExpoConfighostUristringun] (val x: Self) extends AnyVal {
       
       inline def setAndroid(value: Android): Self = StObject.set(x, "android", value.asInstanceOf[js.Any])
       
@@ -499,7 +501,8 @@ object anon {
       __obj.asInstanceOf[Scheme]
     }
     
-    extension [Self <: Scheme](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Scheme] (val x: Self) extends AnyVal {
       
       inline def setScheme(value: String): Self = StObject.set(x, "scheme", value.asInstanceOf[js.Any])
       

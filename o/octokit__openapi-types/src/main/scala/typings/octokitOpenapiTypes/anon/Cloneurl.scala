@@ -463,7 +463,8 @@ object Cloneurl {
     __obj.asInstanceOf[Cloneurl]
   }
   
-  extension [Self <: Cloneurl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Cloneurl] (val x: Self) extends AnyVal {
     
     inline def setAllow_auto_merge(value: Boolean): Self = StObject.set(x, "allow_auto_merge", value.asInstanceOf[js.Any])
     

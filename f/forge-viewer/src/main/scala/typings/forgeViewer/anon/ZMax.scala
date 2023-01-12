@@ -17,7 +17,8 @@ object ZMax {
     __obj.asInstanceOf[ZMax]
   }
   
-  extension [Self <: ZMax](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ZMax] (val x: Self) extends AnyVal {
     
     inline def setZMax(value: Double): Self = StObject.set(x, "zMax", value.asInstanceOf[js.Any])
     

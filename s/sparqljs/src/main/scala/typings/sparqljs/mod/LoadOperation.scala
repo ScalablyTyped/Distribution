@@ -26,7 +26,8 @@ object LoadOperation {
     __obj.asInstanceOf[LoadOperation]
   }
   
-  extension [Self <: LoadOperation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LoadOperation] (val x: Self) extends AnyVal {
     
     inline def setDestination(value: IriTerm | `false`): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
     

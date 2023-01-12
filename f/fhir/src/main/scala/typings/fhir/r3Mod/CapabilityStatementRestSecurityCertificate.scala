@@ -29,7 +29,8 @@ object CapabilityStatementRestSecurityCertificate {
     __obj.asInstanceOf[CapabilityStatementRestSecurityCertificate]
   }
   
-  extension [Self <: CapabilityStatementRestSecurityCertificate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CapabilityStatementRestSecurityCertificate] (val x: Self) extends AnyVal {
     
     inline def setBlob(value: String): Self = StObject.set(x, "blob", value.asInstanceOf[js.Any])
     

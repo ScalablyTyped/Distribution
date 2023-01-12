@@ -19,7 +19,8 @@ object PrivatePoolV1Config {
     __obj.asInstanceOf[PrivatePoolV1Config]
   }
   
-  extension [Self <: PrivatePoolV1Config](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PrivatePoolV1Config] (val x: Self) extends AnyVal {
     
     inline def setNetworkConfig(value: NetworkConfig): Self = StObject.set(x, "networkConfig", value.asInstanceOf[js.Any])
     

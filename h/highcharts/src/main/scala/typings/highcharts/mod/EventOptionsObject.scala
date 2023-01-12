@@ -26,7 +26,8 @@ object EventOptionsObject {
     __obj.asInstanceOf[EventOptionsObject]
   }
   
-  extension [Self <: EventOptionsObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventOptionsObject] (val x: Self) extends AnyVal {
     
     inline def setOrder(value: Double): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
     

@@ -77,7 +77,8 @@ object XGraphics2 {
     __obj.asInstanceOf[XGraphics2]
   }
   
-  extension [Self <: XGraphics2](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XGraphics2] (val x: Self) extends AnyVal {
     
     inline def setClear(value: Rectangle => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction1(value))
     

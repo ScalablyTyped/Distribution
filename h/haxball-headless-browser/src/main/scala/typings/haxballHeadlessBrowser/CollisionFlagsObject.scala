@@ -53,7 +53,8 @@ object CollisionFlagsObject {
     __obj.asInstanceOf[CollisionFlagsObject]
   }
   
-  extension [Self <: CollisionFlagsObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CollisionFlagsObject] (val x: Self) extends AnyVal {
     
     inline def setAll(value: Double): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
     

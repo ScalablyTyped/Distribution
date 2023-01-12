@@ -25,7 +25,8 @@ object TargetProperties {
     __obj.asInstanceOf[TargetProperties]
   }
   
-  extension [Self <: TargetProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TargetProperties] (val x: Self) extends AnyVal {
     
     inline def setProperties(value: SafeArray[NamedValue]): Self = StObject.set(x, "Properties", value.asInstanceOf[js.Any])
     

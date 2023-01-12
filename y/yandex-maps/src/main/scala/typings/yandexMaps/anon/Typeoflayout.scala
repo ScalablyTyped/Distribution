@@ -33,7 +33,8 @@ object Typeoflayout {
     __obj.asInstanceOf[Typeoflayout]
   }
   
-  extension [Self <: Typeoflayout](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Typeoflayout] (val x: Self) extends AnyVal {
     
     inline def setImage(value: Instantiable0[typings.yandexMaps.mod.layout.Image]): Self = StObject.set(x, "Image", value.asInstanceOf[js.Any])
     

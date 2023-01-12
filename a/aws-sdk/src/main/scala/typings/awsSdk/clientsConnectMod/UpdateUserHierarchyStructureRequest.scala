@@ -23,7 +23,8 @@ object UpdateUserHierarchyStructureRequest {
     __obj.asInstanceOf[UpdateUserHierarchyStructureRequest]
   }
   
-  extension [Self <: UpdateUserHierarchyStructureRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateUserHierarchyStructureRequest] (val x: Self) extends AnyVal {
     
     inline def setHierarchyStructure(value: HierarchyStructureUpdate): Self = StObject.set(x, "HierarchyStructure", value.asInstanceOf[js.Any])
     

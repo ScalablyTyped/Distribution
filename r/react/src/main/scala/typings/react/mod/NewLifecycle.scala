@@ -33,7 +33,8 @@ object NewLifecycle {
     __obj.asInstanceOf[NewLifecycle[P, S, SS]]
   }
   
-  extension [Self <: NewLifecycle[?, ?, ?], P, S, SS](x: Self & (NewLifecycle[P, S, SS])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NewLifecycle[?, ?, ?], P, S, SS] (val x: Self & (NewLifecycle[P, S, SS])) extends AnyVal {
     
     inline def setComponentDidUpdate(value: (/* prevProps */ P, /* prevState */ S, /* snapshot */ js.UndefOr[SS]) => Unit): Self = StObject.set(x, "componentDidUpdate", js.Any.fromFunction3(value))
     

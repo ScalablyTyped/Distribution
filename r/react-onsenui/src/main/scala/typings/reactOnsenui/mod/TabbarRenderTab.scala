@@ -18,7 +18,8 @@ object TabbarRenderTab {
     __obj.asInstanceOf[TabbarRenderTab]
   }
   
-  extension [Self <: TabbarRenderTab](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TabbarRenderTab] (val x: Self) extends AnyVal {
     
     inline def setContent(value: Element): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object LocalBaseBlockParams {
     __obj.asInstanceOf[LocalBaseBlockParams]
   }
   
-  extension [Self <: LocalBaseBlockParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LocalBaseBlockParams] (val x: Self) extends AnyVal {
     
     inline def setBlockLength(value: Double): Self = StObject.set(x, "blockLength", value.asInstanceOf[js.Any])
     

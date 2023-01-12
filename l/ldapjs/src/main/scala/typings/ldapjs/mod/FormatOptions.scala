@@ -31,7 +31,8 @@ object FormatOptions {
     __obj.asInstanceOf[FormatOptions]
   }
   
-  extension [Self <: FormatOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FormatOptions] (val x: Self) extends AnyVal {
     
     inline def setKeepCase(value: Boolean): Self = StObject.set(x, "keepCase", value.asInstanceOf[js.Any])
     

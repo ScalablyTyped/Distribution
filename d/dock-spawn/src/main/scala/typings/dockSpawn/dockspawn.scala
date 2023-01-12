@@ -59,7 +59,8 @@ object dockspawn {
       __obj.asInstanceOf[Dialog]
     }
     
-    extension [Self <: Dialog](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Dialog] (val x: Self) extends AnyVal {
       
       inline def setBringToFront(value: () => Unit): Self = StObject.set(x, "bringToFront", js.Any.fromFunction0(value))
       
@@ -164,7 +165,8 @@ object dockspawn {
       __obj.asInstanceOf[DockManager]
     }
     
-    extension [Self <: DockManager](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DockManager] (val x: Self) extends AnyVal {
       
       inline def setContext(value: DockManagerContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
@@ -225,7 +227,8 @@ object dockspawn {
       __obj.asInstanceOf[DockManagerContext]
     }
     
-    extension [Self <: DockManagerContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DockManagerContext] (val x: Self) extends AnyVal {
       
       inline def setDockManager(value: DockManager): Self = StObject.set(x, "dockManager", value.asInstanceOf[js.Any])
       
@@ -248,7 +251,8 @@ object dockspawn {
       __obj.asInstanceOf[DockModel]
     }
     
-    extension [Self <: DockModel](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DockModel] (val x: Self) extends AnyVal {
       
       inline def setDocumentManagerNode(value: DockNode): Self = StObject.set(x, "documentManagerNode", value.asInstanceOf[js.Any])
       
@@ -267,7 +271,8 @@ object dockspawn {
       __obj.asInstanceOf[DockNode]
     }
     
-    extension [Self <: DockNode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DockNode] (val x: Self) extends AnyVal {
       
       inline def setDetachFromParent(value: () => Unit): Self = StObject.set(x, "detachFromParent", js.Any.fromFunction0(value))
     }
@@ -303,7 +308,8 @@ object dockspawn {
       __obj.asInstanceOf[DocumentManagerContainer]
     }
     
-    extension [Self <: DocumentManagerContainer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DocumentManagerContainer] (val x: Self) extends AnyVal {
       
       inline def setSaveState(value: String => Unit): Self = StObject.set(x, "saveState", js.Any.fromFunction1(value))
       
@@ -342,7 +348,8 @@ object dockspawn {
       __obj.asInstanceOf[FillDockContainer]
     }
     
-    extension [Self <: FillDockContainer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FillDockContainer] (val x: Self) extends AnyVal {
       
       inline def setContainerType(value: String): Self = StObject.set(x, "containerType", value.asInstanceOf[js.Any])
       
@@ -377,7 +384,8 @@ object dockspawn {
       __obj.asInstanceOf[PanelContainer]
     }
     
-    extension [Self <: PanelContainer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PanelContainer] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -434,7 +442,8 @@ object dockspawn {
       __obj.asInstanceOf[TabHost]
     }
     
-    extension [Self <: TabHost](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TabHost] (val x: Self) extends AnyVal {
       
       inline def setContentElement(value: HTMLDivElement): Self = StObject.set(x, "contentElement", value.asInstanceOf[js.Any])
       

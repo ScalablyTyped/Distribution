@@ -23,7 +23,8 @@ object ReflectiveDependency {
     __obj.asInstanceOf[ReflectiveDependency]
   }
   
-  extension [Self <: ReflectiveDependency](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReflectiveDependency] (val x: Self) extends AnyVal {
     
     inline def setKey(value: ReflectiveKey): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     

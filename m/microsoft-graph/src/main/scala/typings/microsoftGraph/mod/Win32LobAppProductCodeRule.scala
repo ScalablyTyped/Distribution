@@ -27,7 +27,8 @@ object Win32LobAppProductCodeRule {
     __obj.asInstanceOf[Win32LobAppProductCodeRule]
   }
   
-  extension [Self <: Win32LobAppProductCodeRule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Win32LobAppProductCodeRule] (val x: Self) extends AnyVal {
     
     inline def setProductCode(value: NullableOption[String]): Self = StObject.set(x, "productCode", value.asInstanceOf[js.Any])
     

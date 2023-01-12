@@ -33,7 +33,8 @@ object ProfileConfiguration {
     __obj.asInstanceOf[ProfileConfiguration]
   }
   
-  extension [Self <: ProfileConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProfileConfiguration] (val x: Self) extends AnyVal {
     
     inline def setColumnStatisticsConfigurations(value: ColumnStatisticsConfigurationList): Self = StObject.set(x, "ColumnStatisticsConfigurations", value.asInstanceOf[js.Any])
     

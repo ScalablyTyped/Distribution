@@ -15,7 +15,8 @@ object SerializeOptions {
     __obj.asInstanceOf[SerializeOptions]
   }
   
-  extension [Self <: SerializeOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SerializeOptions] (val x: Self) extends AnyVal {
     
     inline def setAttached(value: String): Self = StObject.set(x, "attached", value.asInstanceOf[js.Any])
     

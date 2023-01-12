@@ -32,7 +32,8 @@ object IState {
     __obj.asInstanceOf[IState]
   }
   
-  extension [Self <: IState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IState] (val x: Self) extends AnyVal {
     
     inline def setGetAsLookup(value: () => ILookup): Self = StObject.set(x, "GetAsLookup", js.Any.fromFunction0(value))
     

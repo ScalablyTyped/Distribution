@@ -40,7 +40,8 @@ object notifications {
       __obj.asInstanceOf[ButtonOptions]
     }
     
-    extension [Self <: ButtonOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ButtonOptions] (val x: Self) extends AnyVal {
       
       inline def setIconUrl(value: String): Self = StObject.set(x, "iconUrl", value.asInstanceOf[js.Any])
       
@@ -65,7 +66,8 @@ object notifications {
       __obj.asInstanceOf[ItemOptions]
     }
     
-    extension [Self <: ItemOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ItemOptions] (val x: Self) extends AnyVal {
       
       inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
@@ -183,7 +185,8 @@ object notifications {
       __obj.asInstanceOf[NotificationOptions]
     }
     
-    extension [Self <: NotificationOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NotificationOptions] (val x: Self) extends AnyVal {
       
       inline def setAppIconMaskUrl(value: String): Self = StObject.set(x, "appIconMaskUrl", value.asInstanceOf[js.Any])
       

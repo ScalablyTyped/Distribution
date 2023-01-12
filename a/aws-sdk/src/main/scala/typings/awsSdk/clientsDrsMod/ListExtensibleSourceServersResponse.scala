@@ -23,7 +23,8 @@ object ListExtensibleSourceServersResponse {
     __obj.asInstanceOf[ListExtensibleSourceServersResponse]
   }
   
-  extension [Self <: ListExtensibleSourceServersResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListExtensibleSourceServersResponse] (val x: Self) extends AnyVal {
     
     inline def setItems(value: StagingSourceServersList): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     

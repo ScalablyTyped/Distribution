@@ -21,7 +21,8 @@ object SecondaryValue {
     __obj.asInstanceOf[SecondaryValue]
   }
   
-  extension [Self <: SecondaryValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SecondaryValue] (val x: Self) extends AnyVal {
     
     inline def setIndeterminate(value: Boolean): Self = StObject.set(x, "indeterminate", value.asInstanceOf[js.Any])
     

@@ -38,7 +38,8 @@ object ConfluenceSpaceConfiguration {
     __obj.asInstanceOf[ConfluenceSpaceConfiguration]
   }
   
-  extension [Self <: ConfluenceSpaceConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConfluenceSpaceConfiguration] (val x: Self) extends AnyVal {
     
     inline def setCrawlArchivedSpaces(value: Boolean): Self = StObject.set(x, "CrawlArchivedSpaces", value.asInstanceOf[js.Any])
     

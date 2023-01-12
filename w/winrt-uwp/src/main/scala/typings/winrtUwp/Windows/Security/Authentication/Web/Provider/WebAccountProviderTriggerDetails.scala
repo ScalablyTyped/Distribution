@@ -17,7 +17,8 @@ object WebAccountProviderTriggerDetails {
     __obj.asInstanceOf[WebAccountProviderTriggerDetails]
   }
   
-  extension [Self <: WebAccountProviderTriggerDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebAccountProviderTriggerDetails] (val x: Self) extends AnyVal {
     
     inline def setOperation(value: IWebAccountProviderOperation): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
   }

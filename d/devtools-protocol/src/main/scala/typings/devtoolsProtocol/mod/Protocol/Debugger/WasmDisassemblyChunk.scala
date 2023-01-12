@@ -24,7 +24,8 @@ object WasmDisassemblyChunk {
     __obj.asInstanceOf[WasmDisassemblyChunk]
   }
   
-  extension [Self <: WasmDisassemblyChunk](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WasmDisassemblyChunk] (val x: Self) extends AnyVal {
     
     inline def setBytecodeOffsets(value: js.Array[integer]): Self = StObject.set(x, "bytecodeOffsets", value.asInstanceOf[js.Any])
     

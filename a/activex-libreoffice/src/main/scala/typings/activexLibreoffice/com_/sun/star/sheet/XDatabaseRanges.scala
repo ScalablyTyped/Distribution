@@ -42,7 +42,8 @@ object XDatabaseRanges {
     __obj.asInstanceOf[XDatabaseRanges]
   }
   
-  extension [Self <: XDatabaseRanges](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XDatabaseRanges] (val x: Self) extends AnyVal {
     
     inline def setAddNewByName(value: (String, CellRangeAddress) => Unit): Self = StObject.set(x, "addNewByName", js.Any.fromFunction2(value))
     

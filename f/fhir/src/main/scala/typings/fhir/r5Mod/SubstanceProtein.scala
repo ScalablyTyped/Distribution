@@ -42,7 +42,8 @@ object SubstanceProtein {
     __obj.asInstanceOf[SubstanceProtein]
   }
   
-  extension [Self <: SubstanceProtein](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubstanceProtein] (val x: Self) extends AnyVal {
     
     inline def setDisulfideLinkage(value: js.Array[String]): Self = StObject.set(x, "disulfideLinkage", value.asInstanceOf[js.Any])
     

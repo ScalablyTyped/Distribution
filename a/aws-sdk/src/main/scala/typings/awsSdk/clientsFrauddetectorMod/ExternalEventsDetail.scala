@@ -23,7 +23,8 @@ object ExternalEventsDetail {
     __obj.asInstanceOf[ExternalEventsDetail]
   }
   
-  extension [Self <: ExternalEventsDetail](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExternalEventsDetail] (val x: Self) extends AnyVal {
     
     inline def setDataAccessRoleArn(value: iamRoleArn): Self = StObject.set(x, "dataAccessRoleArn", value.asInstanceOf[js.Any])
     

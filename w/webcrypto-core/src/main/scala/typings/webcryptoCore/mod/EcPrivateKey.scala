@@ -29,7 +29,8 @@ object EcPrivateKey {
     __obj.asInstanceOf[EcPrivateKey]
   }
   
-  extension [Self <: EcPrivateKey](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EcPrivateKey] (val x: Self) extends AnyVal {
     
     inline def setParameters(value: js.typedarray.ArrayBuffer): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     

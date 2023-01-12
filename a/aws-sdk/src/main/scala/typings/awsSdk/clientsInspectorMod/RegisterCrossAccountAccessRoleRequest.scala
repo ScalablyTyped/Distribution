@@ -18,7 +18,8 @@ object RegisterCrossAccountAccessRoleRequest {
     __obj.asInstanceOf[RegisterCrossAccountAccessRoleRequest]
   }
   
-  extension [Self <: RegisterCrossAccountAccessRoleRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RegisterCrossAccountAccessRoleRequest] (val x: Self) extends AnyVal {
     
     inline def setRoleArn(value: Arn): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
   }

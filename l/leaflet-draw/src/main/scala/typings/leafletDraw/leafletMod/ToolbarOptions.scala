@@ -30,7 +30,8 @@ object ToolbarOptions {
     __obj.asInstanceOf[ToolbarOptions]
   }
   
-  extension [Self <: ToolbarOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ToolbarOptions] (val x: Self) extends AnyVal {
     
     inline def setCircle(value: CircleOptions): Self = StObject.set(x, "circle", value.asInstanceOf[js.Any])
     

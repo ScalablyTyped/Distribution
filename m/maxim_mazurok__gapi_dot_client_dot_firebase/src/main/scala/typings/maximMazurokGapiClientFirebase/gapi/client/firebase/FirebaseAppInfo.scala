@@ -48,7 +48,8 @@ object FirebaseAppInfo {
     __obj.asInstanceOf[FirebaseAppInfo]
   }
   
-  extension [Self <: FirebaseAppInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FirebaseAppInfo] (val x: Self) extends AnyVal {
     
     inline def setApiKeyId(value: String): Self = StObject.set(x, "apiKeyId", value.asInstanceOf[js.Any])
     

@@ -131,7 +131,8 @@ object sliderSliderMod {
       __obj.asInstanceOf[SliderChangeParams]
     }
     
-    extension [Self <: SliderChangeParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SliderChangeParams] (val x: Self) extends AnyVal {
       
       inline def setOriginalEvent(value: SyntheticEvent[Element, Event]): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
       
@@ -587,7 +588,8 @@ object sliderSliderMod {
       __obj.asInstanceOf[SliderProps]
     }
     
-    extension [Self <: SliderProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SliderProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       

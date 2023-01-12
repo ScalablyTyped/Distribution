@@ -55,7 +55,8 @@ object PartialSwipeRatingProps {
     __obj.asInstanceOf[PartialSwipeRatingProps]
   }
   
-  extension [Self <: PartialSwipeRatingProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialSwipeRatingProps] (val x: Self) extends AnyVal {
     
     inline def setFractions(value: Any): Self = StObject.set(x, "fractions", value.asInstanceOf[js.Any])
     

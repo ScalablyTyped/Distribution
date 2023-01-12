@@ -55,7 +55,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[DetectiveResults]
     }
     
-    extension [Self <: DetectiveResults](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DetectiveResults] (val x: Self) extends AnyVal {
       
       inline def setExpressions(value: js.Array[String]): Self = StObject.set(x, "expressions", value.asInstanceOf[js.Any])
       
@@ -154,7 +155,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setAllowHashBang(value: Boolean): Self = StObject.set(x, "allowHashBang", value.asInstanceOf[js.Any])
       

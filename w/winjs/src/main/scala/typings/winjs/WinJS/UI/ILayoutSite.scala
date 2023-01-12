@@ -61,7 +61,8 @@ object ILayoutSite {
     __obj.asInstanceOf[ILayoutSite]
   }
   
-  extension [Self <: ILayoutSite](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ILayoutSite] (val x: Self) extends AnyVal {
     
     inline def setAnimationsDisabled(value: Boolean): Self = StObject.set(x, "animationsDisabled", value.asInstanceOf[js.Any])
     

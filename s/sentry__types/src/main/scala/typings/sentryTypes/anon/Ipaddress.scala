@@ -21,7 +21,8 @@ object Ipaddress {
     __obj.asInstanceOf[Ipaddress]
   }
   
-  extension [Self <: Ipaddress](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Ipaddress] (val x: Self) extends AnyVal {
     
     inline def setEnvironment(value: String): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
     

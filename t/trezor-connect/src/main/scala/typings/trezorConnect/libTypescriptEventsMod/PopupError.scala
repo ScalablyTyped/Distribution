@@ -19,7 +19,8 @@ object PopupError {
     __obj.asInstanceOf[PopupError]
   }
   
-  extension [Self <: PopupError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PopupError] (val x: Self) extends AnyVal {
     
     inline def setPayload(value: ErrorString): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     

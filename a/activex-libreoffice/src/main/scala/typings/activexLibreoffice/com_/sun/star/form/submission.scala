@@ -60,7 +60,8 @@ object submission {
       __obj.asInstanceOf[XSubmission]
     }
     
-    extension [Self <: XSubmission](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XSubmission] (val x: Self) extends AnyVal {
       
       inline def setAddSubmissionVetoListener(value: XSubmissionVetoListener => Unit): Self = StObject.set(x, "addSubmissionVetoListener", js.Any.fromFunction1(value))
       
@@ -90,7 +91,8 @@ object submission {
       __obj.asInstanceOf[XSubmissionSupplier]
     }
     
-    extension [Self <: XSubmissionSupplier](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XSubmissionSupplier] (val x: Self) extends AnyVal {
       
       inline def setSubmission(value: XSubmission): Self = StObject.set(x, "Submission", value.asInstanceOf[js.Any])
     }
@@ -124,7 +126,8 @@ object submission {
       __obj.asInstanceOf[XSubmissionVetoListener]
     }
     
-    extension [Self <: XSubmissionVetoListener](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XSubmissionVetoListener] (val x: Self) extends AnyVal {
       
       inline def setSubmitting(value: EventObject => Unit): Self = StObject.set(x, "submitting", js.Any.fromFunction1(value))
     }

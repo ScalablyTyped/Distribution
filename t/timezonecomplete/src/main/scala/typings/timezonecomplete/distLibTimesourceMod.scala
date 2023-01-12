@@ -35,7 +35,8 @@ object distLibTimesourceMod {
       __obj.asInstanceOf[TimeSource]
     }
     
-    extension [Self <: TimeSource](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TimeSource] (val x: Self) extends AnyVal {
       
       inline def setNow(value: () => js.Date): Self = StObject.set(x, "now", js.Any.fromFunction0(value))
     }

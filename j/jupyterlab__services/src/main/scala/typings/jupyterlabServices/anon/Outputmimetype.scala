@@ -15,7 +15,8 @@ object Outputmimetype {
     __obj.asInstanceOf[Outputmimetype]
   }
   
-  extension [Self <: Outputmimetype](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Outputmimetype] (val x: Self) extends AnyVal {
     
     inline def setOutput_mimetype(value: String): Self = StObject.set(x, "output_mimetype", value.asInstanceOf[js.Any])
   }

@@ -18,7 +18,8 @@ object RuntimeHints {
     __obj.asInstanceOf[RuntimeHints]
   }
   
-  extension [Self <: RuntimeHints](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RuntimeHints] (val x: Self) extends AnyVal {
     
     inline def setSlotHints(value: SlotHintsIntentMap): Self = StObject.set(x, "slotHints", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object PartialCopyButtonOptions {
     __obj.asInstanceOf[PartialCopyButtonOptions]
   }
   
-  extension [Self <: PartialCopyButtonOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialCopyButtonOptions] (val x: Self) extends AnyVal {
     
     inline def setClassAnimating(value: String): Self = StObject.set(x, "classAnimating", value.asInstanceOf[js.Any])
     

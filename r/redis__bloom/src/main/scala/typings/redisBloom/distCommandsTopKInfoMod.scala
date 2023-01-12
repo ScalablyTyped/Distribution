@@ -50,7 +50,8 @@ object distCommandsTopKInfoMod {
       __obj.asInstanceOf[InfoReply]
     }
     
-    extension [Self <: InfoReply](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InfoReply] (val x: Self) extends AnyVal {
       
       inline def setDecay(value: Double): Self = StObject.set(x, "decay", value.asInstanceOf[js.Any])
       

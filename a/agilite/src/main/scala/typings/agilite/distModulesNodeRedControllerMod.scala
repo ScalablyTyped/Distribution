@@ -98,7 +98,8 @@ object distModulesNodeRedControllerMod {
       __obj.asInstanceOf[NodeRED]
     }
     
-    extension [Self <: NodeRED](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NodeRED] (val x: Self) extends AnyVal {
       
       inline def setApiKey(value: String): Self = StObject.set(x, "apiKey", value.asInstanceOf[js.Any])
       

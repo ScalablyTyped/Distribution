@@ -274,7 +274,8 @@ object libOptionalMod {
       __obj.asInstanceOf[Optional_[S, A]]
     }
     
-    extension [Self <: Optional_[?, ?], S, A](x: Self & (Optional_[S, A])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Optional_[?, ?], S, A] (val x: Self & (Optional_[S, A])) extends AnyVal {
       
       inline def setGetOption(value: S => Option_[A]): Self = StObject.set(x, "getOption", js.Any.fromFunction1(value))
       

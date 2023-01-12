@@ -30,7 +30,8 @@ object ObjectOperationPermissions {
     __obj.asInstanceOf[ObjectOperationPermissions]
   }
   
-  extension [Self <: ObjectOperationPermissions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ObjectOperationPermissions] (val x: Self) extends AnyVal {
     
     inline def setCreate(value: Boolean): Self = StObject.set(x, "create", value.asInstanceOf[js.Any])
     

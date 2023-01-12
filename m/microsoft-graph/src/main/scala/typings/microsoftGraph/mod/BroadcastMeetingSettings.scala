@@ -28,7 +28,8 @@ object BroadcastMeetingSettings {
     __obj.asInstanceOf[BroadcastMeetingSettings]
   }
   
-  extension [Self <: BroadcastMeetingSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BroadcastMeetingSettings] (val x: Self) extends AnyVal {
     
     inline def setAllowedAudience(value: NullableOption[BroadcastMeetingAudience]): Self = StObject.set(x, "allowedAudience", value.asInstanceOf[js.Any])
     

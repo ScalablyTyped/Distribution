@@ -22,7 +22,8 @@ object PrivacyProfile {
     __obj.asInstanceOf[PrivacyProfile]
   }
   
-  extension [Self <: PrivacyProfile](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PrivacyProfile] (val x: Self) extends AnyVal {
     
     inline def setContactEmail(value: NullableOption[String]): Self = StObject.set(x, "contactEmail", value.asInstanceOf[js.Any])
     

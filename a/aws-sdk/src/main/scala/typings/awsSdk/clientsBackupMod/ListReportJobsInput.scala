@@ -43,7 +43,8 @@ object ListReportJobsInput {
     __obj.asInstanceOf[ListReportJobsInput]
   }
   
-  extension [Self <: ListReportJobsInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListReportJobsInput] (val x: Self) extends AnyVal {
     
     inline def setByCreationAfter(value: js.Date): Self = StObject.set(x, "ByCreationAfter", value.asInstanceOf[js.Any])
     

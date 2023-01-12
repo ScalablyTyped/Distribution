@@ -20,7 +20,8 @@ object anon {
       __obj.asInstanceOf[RelativeTo]
     }
     
-    extension [Self <: RelativeTo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RelativeTo] (val x: Self) extends AnyVal {
       
       inline def setRelativeTo(value: String): Self = StObject.set(x, "relativeTo", value.asInstanceOf[js.Any])
     }

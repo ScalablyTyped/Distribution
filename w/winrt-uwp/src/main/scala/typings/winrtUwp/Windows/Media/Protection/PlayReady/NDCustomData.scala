@@ -20,7 +20,8 @@ object NDCustomData {
     __obj.asInstanceOf[NDCustomData]
   }
   
-  extension [Self <: NDCustomData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NDCustomData] (val x: Self) extends AnyVal {
     
     inline def setCustomData(value: Double): Self = StObject.set(x, "customData", value.asInstanceOf[js.Any])
     

@@ -98,7 +98,8 @@ object SeriesTreemapOptions {
     __obj.asInstanceOf[SeriesTreemapOptions]
   }
   
-  extension [Self <: SeriesTreemapOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SeriesTreemapOptions] (val x: Self) extends AnyVal {
     
     inline def setData(value: js.Array[Double | Null | PointOptionsObject]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

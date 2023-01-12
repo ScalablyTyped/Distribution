@@ -35,7 +35,8 @@ object AggregationsStringStatsAggregate {
     __obj.asInstanceOf[AggregationsStringStatsAggregate]
   }
   
-  extension [Self <: AggregationsStringStatsAggregate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AggregationsStringStatsAggregate] (val x: Self) extends AnyVal {
     
     inline def setAvg_length(value: double): Self = StObject.set(x, "avg_length", value.asInstanceOf[js.Any])
     

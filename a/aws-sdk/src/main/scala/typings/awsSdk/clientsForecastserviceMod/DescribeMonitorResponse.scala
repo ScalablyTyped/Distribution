@@ -68,7 +68,8 @@ object DescribeMonitorResponse {
     __obj.asInstanceOf[DescribeMonitorResponse]
   }
   
-  extension [Self <: DescribeMonitorResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeMonitorResponse] (val x: Self) extends AnyVal {
     
     inline def setBaseline(value: Baseline): Self = StObject.set(x, "Baseline", value.asInstanceOf[js.Any])
     

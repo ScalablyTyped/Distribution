@@ -57,7 +57,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setCb(value: /* time */ Double => Unit): Self = StObject.set(x, "cb", js.Any.fromFunction1(value))
       
@@ -95,7 +96,8 @@ object mod {
       __obj.asInstanceOf[UserIDLEObserver]
     }
     
-    extension [Self <: UserIDLEObserver](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UserIDLEObserver] (val x: Self) extends AnyVal {
       
       inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
     }

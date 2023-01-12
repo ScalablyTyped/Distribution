@@ -27,7 +27,8 @@ object distTypesOnStageGeneralDistComponentsPodcastMod extends Shortcut {
       __obj.asInstanceOf[PodcastProps]
     }
     
-    extension [Self <: PodcastProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PodcastProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

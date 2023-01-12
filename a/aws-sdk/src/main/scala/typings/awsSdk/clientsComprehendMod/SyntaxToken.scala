@@ -38,7 +38,8 @@ object SyntaxToken {
     __obj.asInstanceOf[SyntaxToken]
   }
   
-  extension [Self <: SyntaxToken](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SyntaxToken] (val x: Self) extends AnyVal {
     
     inline def setBeginOffset(value: Integer): Self = StObject.set(x, "BeginOffset", value.asInstanceOf[js.Any])
     

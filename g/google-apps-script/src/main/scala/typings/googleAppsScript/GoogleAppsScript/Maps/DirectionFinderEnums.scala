@@ -23,7 +23,8 @@ object DirectionFinderEnums {
     __obj.asInstanceOf[DirectionFinderEnums]
   }
   
-  extension [Self <: DirectionFinderEnums](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DirectionFinderEnums] (val x: Self) extends AnyVal {
     
     inline def setAvoid(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Avoid */ Any): Self = StObject.set(x, "Avoid", value.asInstanceOf[js.Any])
     

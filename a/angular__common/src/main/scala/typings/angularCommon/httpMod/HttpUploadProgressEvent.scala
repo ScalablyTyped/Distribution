@@ -20,7 +20,8 @@ object HttpUploadProgressEvent {
     __obj.asInstanceOf[HttpUploadProgressEvent]
   }
   
-  extension [Self <: HttpUploadProgressEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HttpUploadProgressEvent] (val x: Self) extends AnyVal {
     
     inline def setType(value: UploadProgress): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

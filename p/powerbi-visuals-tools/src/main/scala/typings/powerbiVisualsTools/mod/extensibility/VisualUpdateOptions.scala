@@ -17,7 +17,8 @@ object VisualUpdateOptions {
     __obj.asInstanceOf[VisualUpdateOptions]
   }
   
-  extension [Self <: VisualUpdateOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VisualUpdateOptions] (val x: Self) extends AnyVal {
     
     inline def setType(value: VisualUpdateType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

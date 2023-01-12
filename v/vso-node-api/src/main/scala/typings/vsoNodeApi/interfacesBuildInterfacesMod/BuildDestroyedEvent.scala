@@ -17,7 +17,8 @@ object BuildDestroyedEvent {
     __obj.asInstanceOf[BuildDestroyedEvent]
   }
   
-  extension [Self <: BuildDestroyedEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BuildDestroyedEvent] (val x: Self) extends AnyVal {
     
     inline def setBuild(value: Build): Self = StObject.set(x, "build", value.asInstanceOf[js.Any])
   }

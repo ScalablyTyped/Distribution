@@ -17,7 +17,8 @@ object OutputAttributes {
     __obj.asInstanceOf[OutputAttributes]
   }
   
-  extension [Self <: OutputAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OutputAttributes] (val x: Self) extends AnyVal {
     
     inline def `setNoise-removal`(value: Double): Self = StObject.set(x, "noise-removal", value.asInstanceOf[js.Any])
     

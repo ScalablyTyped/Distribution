@@ -32,7 +32,8 @@ object XpackUsageDataTiers {
     __obj.asInstanceOf[XpackUsageDataTiers]
   }
   
-  extension [Self <: XpackUsageDataTiers](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XpackUsageDataTiers] (val x: Self) extends AnyVal {
     
     inline def setData_cold(value: XpackUsageDataTierPhaseStatistics): Self = StObject.set(x, "data_cold", value.asInstanceOf[js.Any])
     

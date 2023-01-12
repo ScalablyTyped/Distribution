@@ -27,7 +27,8 @@ object distSrcGeneralDistComponentsUndoMod extends Shortcut {
       __obj.asInstanceOf[UndoProps]
     }
     
-    extension [Self <: UndoProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UndoProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

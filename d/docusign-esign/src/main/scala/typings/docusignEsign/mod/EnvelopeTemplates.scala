@@ -18,7 +18,8 @@ object EnvelopeTemplates {
     __obj.asInstanceOf[EnvelopeTemplates]
   }
   
-  extension [Self <: EnvelopeTemplates](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnvelopeTemplates] (val x: Self) extends AnyVal {
     
     inline def setTemplates(value: js.Array[/* Summary of a template request. */ TemplateSummary]): Self = StObject.set(x, "templates", value.asInstanceOf[js.Any])
     

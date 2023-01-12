@@ -17,7 +17,8 @@ object SourceValueElement {
     __obj.asInstanceOf[SourceValueElement[T]]
   }
   
-  extension [Self <: SourceValueElement[?], T /* <: CellValue */](x: Self & SourceValueElement[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SourceValueElement[?], T /* <: CellValue */] (val x: Self & SourceValueElement[T]) extends AnyVal {
     
     inline def setId(value: T): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

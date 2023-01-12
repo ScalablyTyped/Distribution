@@ -21,7 +21,8 @@ object DisputeNotification {
     __obj.asInstanceOf[DisputeNotification]
   }
   
-  extension [Self <: DisputeNotification](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisputeNotification] (val x: Self) extends AnyVal {
     
     inline def setDispute(value: Dispute): Self = StObject.set(x, "dispute", value.asInstanceOf[js.Any])
     

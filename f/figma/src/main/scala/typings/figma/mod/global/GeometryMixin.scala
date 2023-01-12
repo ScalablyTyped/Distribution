@@ -50,7 +50,8 @@ object GeometryMixin {
     __obj.asInstanceOf[GeometryMixin]
   }
   
-  extension [Self <: GeometryMixin](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GeometryMixin] (val x: Self) extends AnyVal {
     
     inline def setDashPattern(value: js.Array[Double]): Self = StObject.set(x, "dashPattern", value.asInstanceOf[js.Any])
     

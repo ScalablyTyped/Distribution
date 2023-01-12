@@ -16,7 +16,8 @@ object LintPolicyResponse {
     __obj.asInstanceOf[LintPolicyResponse]
   }
   
-  extension [Self <: LintPolicyResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LintPolicyResponse] (val x: Self) extends AnyVal {
     
     inline def setLintResults(value: js.Array[LintResult]): Self = StObject.set(x, "lintResults", value.asInstanceOf[js.Any])
     

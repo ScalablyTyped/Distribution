@@ -22,7 +22,8 @@ object ArmBaseOperand {
     __obj.asInstanceOf[ArmBaseOperand]
   }
   
-  extension [Self <: ArmBaseOperand](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ArmBaseOperand] (val x: Self) extends AnyVal {
     
     inline def setAccess(value: OperandAccess): Self = StObject.set(x, "access", value.asInstanceOf[js.Any])
     

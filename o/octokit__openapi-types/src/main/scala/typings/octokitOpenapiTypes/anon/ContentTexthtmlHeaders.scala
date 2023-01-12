@@ -15,7 +15,8 @@ object ContentTexthtmlHeaders {
     __obj.asInstanceOf[ContentTexthtmlHeaders]
   }
   
-  extension [Self <: ContentTexthtmlHeaders](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContentTexthtmlHeaders] (val x: Self) extends AnyVal {
     
     inline def setContent(value: Texthtml): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
   }

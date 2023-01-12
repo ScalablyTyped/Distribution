@@ -21,7 +21,8 @@ object BulletListOpenToken {
     __obj.asInstanceOf[BulletListOpenToken]
   }
   
-  extension [Self <: BulletListOpenToken](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BulletListOpenToken] (val x: Self) extends AnyVal {
     
     inline def setType(value: bullet_list_open): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

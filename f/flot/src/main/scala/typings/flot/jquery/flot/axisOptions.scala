@@ -78,7 +78,8 @@ object axisOptions {
     __obj.asInstanceOf[axisOptions]
   }
   
-  extension [Self <: axisOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: axisOptions] (val x: Self) extends AnyVal {
     
     inline def setAlignTicksWithAxis(value: Double): Self = StObject.set(x, "alignTicksWithAxis", value.asInstanceOf[js.Any])
     

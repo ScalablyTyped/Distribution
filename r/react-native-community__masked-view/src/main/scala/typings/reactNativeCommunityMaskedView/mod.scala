@@ -36,7 +36,8 @@ object mod {
       __obj.asInstanceOf[MaskedViewProps]
     }
     
-    extension [Self <: MaskedViewProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MaskedViewProps] (val x: Self) extends AnyVal {
       
       inline def setMaskElement(value: ReactElement): Self = StObject.set(x, "maskElement", value.asInstanceOf[js.Any])
     }

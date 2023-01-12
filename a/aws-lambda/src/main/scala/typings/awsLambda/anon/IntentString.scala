@@ -15,7 +15,8 @@ object IntentString {
     __obj.asInstanceOf[IntentString]
   }
   
-  extension [Self <: IntentString](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IntentString] (val x: Self) extends AnyVal {
     
     inline def setIntent(value: String): Self = StObject.set(x, "intent", value.asInstanceOf[js.Any])
   }

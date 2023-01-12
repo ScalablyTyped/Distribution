@@ -17,7 +17,8 @@ object ValidationMapColumnIntera {
     __obj.asInstanceOf[ValidationMapColumnIntera]
   }
   
-  extension [Self <: ValidationMapColumnIntera](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ValidationMapColumnIntera] (val x: Self) extends AnyVal {
     
     inline def setEnableColumnInteractionBar(value: Validator[js.UndefOr[Boolean | Null]]): Self = StObject.set(x, "enableColumnInteractionBar", value.asInstanceOf[js.Any])
     

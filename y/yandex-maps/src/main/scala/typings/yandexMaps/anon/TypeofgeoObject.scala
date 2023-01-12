@@ -42,7 +42,8 @@ object TypeofgeoObject {
     __obj.asInstanceOf[TypeofgeoObject]
   }
   
-  extension [Self <: TypeofgeoObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofgeoObject] (val x: Self) extends AnyVal {
     
     inline def setBalloon(
       value: Instantiable1[

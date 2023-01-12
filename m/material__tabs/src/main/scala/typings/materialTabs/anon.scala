@@ -24,7 +24,8 @@ object anon {
       __obj.asInstanceOf[ACTIVE]
     }
     
-    extension [Self <: ACTIVE](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ACTIVE] (val x: Self) extends AnyVal {
       
       inline def setACTIVE(value: String): Self = StObject.set(x, "ACTIVE", value.asInstanceOf[js.Any])
     }
@@ -45,7 +46,8 @@ object anon {
       __obj.asInstanceOf[CHANGEEVENT]
     }
     
-    extension [Self <: CHANGEEVENT](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CHANGEEVENT] (val x: Self) extends AnyVal {
       
       inline def setCHANGE_EVENT(value: String): Self = StObject.set(x, "CHANGE_EVENT", value.asInstanceOf[js.Any])
       
@@ -80,7 +82,8 @@ object anon {
       __obj.asInstanceOf[FRAMESELECTOR]
     }
     
-    extension [Self <: FRAMESELECTOR](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FRAMESELECTOR] (val x: Self) extends AnyVal {
       
       inline def setFRAME_SELECTOR(value: String): Self = StObject.set(x, "FRAME_SELECTOR", value.asInstanceOf[js.Any])
       
@@ -111,7 +114,8 @@ object anon {
       __obj.asInstanceOf[INDICATORBACK]
     }
     
-    extension [Self <: INDICATORBACK](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: INDICATORBACK] (val x: Self) extends AnyVal {
       
       inline def setINDICATOR_BACK(value: String): Self = StObject.set(x, "INDICATOR_BACK", value.asInstanceOf[js.Any])
       
@@ -151,7 +155,8 @@ object anon {
       __obj.asInstanceOf[PartialMDCTabAdapter]
     }
     
-    extension [Self <: PartialMDCTabAdapter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialMDCTabAdapter] (val x: Self) extends AnyVal {
       
       inline def setAddClass(value: /* className */ String => Unit): Self = StObject.set(x, "addClass", js.Any.fromFunction1(value))
       
@@ -229,7 +234,8 @@ object anon {
       __obj.asInstanceOf[PartialMDCTabBarAdapter]
     }
     
-    extension [Self <: PartialMDCTabBarAdapter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialMDCTabBarAdapter] (val x: Self) extends AnyVal {
       
       inline def setAddClass(value: /* className */ String => Unit): Self = StObject.set(x, "addClass", js.Any.fromFunction1(value))
       
@@ -371,7 +377,8 @@ object anon {
       __obj.asInstanceOf[PartialMDCTabBarScrollerA]
     }
     
-    extension [Self <: PartialMDCTabBarScrollerA](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialMDCTabBarScrollerA] (val x: Self) extends AnyVal {
       
       inline def setAddClass(value: /* className */ String => Unit): Self = StObject.set(x, "addClass", js.Any.fromFunction1(value))
       
@@ -490,7 +497,8 @@ object anon {
       __obj.asInstanceOf[SELECTEDEVENT]
     }
     
-    extension [Self <: SELECTEDEVENT](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SELECTEDEVENT] (val x: Self) extends AnyVal {
       
       inline def setSELECTED_EVENT(value: String): Self = StObject.set(x, "SELECTED_EVENT", value.asInstanceOf[js.Any])
     }
@@ -507,7 +515,8 @@ object anon {
       __obj.asInstanceOf[UPGRADED]
     }
     
-    extension [Self <: UPGRADED](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UPGRADED] (val x: Self) extends AnyVal {
       
       inline def setUPGRADED(value: String): Self = StObject.set(x, "UPGRADED", value.asInstanceOf[js.Any])
     }

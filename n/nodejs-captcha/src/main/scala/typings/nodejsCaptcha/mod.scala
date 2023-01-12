@@ -68,7 +68,8 @@ object mod {
       __obj.asInstanceOf[Captcha]
     }
     
-    extension [Self <: Captcha](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Captcha] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -128,7 +129,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setCharset(value: js.Array[String]): Self = StObject.set(x, "charset", value.asInstanceOf[js.Any])
       

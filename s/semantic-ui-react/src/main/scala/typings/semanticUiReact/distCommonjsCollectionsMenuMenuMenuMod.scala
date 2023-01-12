@@ -53,7 +53,8 @@ object distCommonjsCollectionsMenuMenuMenuMod extends Shortcut {
       __obj.asInstanceOf[StrictMenuMenuProps]
     }
     
-    extension [Self <: StrictMenuMenuProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StrictMenuMenuProps] (val x: Self) extends AnyVal {
       
       inline def setAs(value: Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       

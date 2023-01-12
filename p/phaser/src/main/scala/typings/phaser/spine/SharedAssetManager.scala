@@ -60,7 +60,8 @@ object SharedAssetManager {
     __obj.asInstanceOf[SharedAssetManager]
   }
   
-  extension [Self <: SharedAssetManager](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SharedAssetManager] (val x: Self) extends AnyVal {
     
     inline def setClientAssets(value: Any): Self = StObject.set(x, "clientAssets", value.asInstanceOf[js.Any])
     

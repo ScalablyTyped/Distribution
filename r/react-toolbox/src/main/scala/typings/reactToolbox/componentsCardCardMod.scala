@@ -64,7 +64,8 @@ object componentsCardCardMod {
       __obj.asInstanceOf[CardProps]
     }
     
-    extension [Self <: CardProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CardProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -99,7 +100,8 @@ object componentsCardCardMod {
       __obj.asInstanceOf[CardTheme]
     }
     
-    extension [Self <: CardTheme](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CardTheme] (val x: Self) extends AnyVal {
       
       inline def setCard(value: String): Self = StObject.set(x, "card", value.asInstanceOf[js.Any])
       

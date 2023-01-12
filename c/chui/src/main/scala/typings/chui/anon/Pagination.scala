@@ -22,7 +22,8 @@ object Pagination {
     __obj.asInstanceOf[Pagination]
   }
   
-  extension [Self <: Pagination](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Pagination] (val x: Self) extends AnyVal {
     
     inline def setLoop(value: Boolean): Self = StObject.set(x, "loop", value.asInstanceOf[js.Any])
     

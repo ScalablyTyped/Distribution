@@ -161,7 +161,8 @@ object distDeclarationsSrcCoreUtilsMod {
       __obj.asInstanceOf[DiffSet]
     }
     
-    extension [Self <: DiffSet](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DiffSet] (val x: Self) extends AnyVal {
       
       inline def setChanges(
         value: js.Array[
@@ -192,7 +193,8 @@ object distDeclarationsSrcCoreUtilsMod {
       __obj.asInstanceOf[EquConfig]
     }
     
-    extension [Self <: EquConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EquConfig] (val x: Self) extends AnyVal {
       
       inline def setArrays(value: reference | shallow): Self = StObject.set(x, "arrays", value.asInstanceOf[js.Any])
       
@@ -221,7 +223,8 @@ object distDeclarationsSrcCoreUtilsMod {
       __obj.asInstanceOf[ObjectMap]
     }
     
-    extension [Self <: ObjectMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ObjectMap] (val x: Self) extends AnyVal {
       
       inline def setMaterials(value: StringDictionary[Material]): Self = StObject.set(x, "materials", value.asInstanceOf[js.Any])
       
@@ -244,7 +247,8 @@ object distDeclarationsSrcCoreUtilsMod {
       __obj.asInstanceOf[UnblockProps]
     }
     
-    extension [Self <: UnblockProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnblockProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

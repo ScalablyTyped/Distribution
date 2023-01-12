@@ -38,7 +38,8 @@ object mod {
         __obj.asInstanceOf[CollectionFetchWithCacheOptions]
       }
       
-      extension [Self <: CollectionFetchWithCacheOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CollectionFetchWithCacheOptions] (val x: Self) extends AnyVal {
         
         inline def setPrefillSuccess(value: /* self */ Any => Unit): Self = StObject.set(x, "prefillSuccess", js.Any.fromFunction1(value))
         
@@ -108,7 +109,8 @@ object mod {
         __obj.asInstanceOf[ModelFetchWithCacheOptions]
       }
       
-      extension [Self <: ModelFetchWithCacheOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ModelFetchWithCacheOptions] (val x: Self) extends AnyVal {
         
         inline def setExpires(value: Double): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
         
@@ -152,7 +154,8 @@ object mod {
       __obj.asInstanceOf[Cache]
     }
     
-    extension [Self <: Cache](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Cache] (val x: Self) extends AnyVal {
       
       inline def setExpires(value: Double): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
       
@@ -179,7 +182,8 @@ object mod {
       __obj.asInstanceOf[GetCacheKeyObject]
     }
     
-    extension [Self <: GetCacheKeyObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetCacheKeyObject] (val x: Self) extends AnyVal {
       
       inline def setGetCacheKey(value: /* opts */ js.UndefOr[GetCacheOptions] => String): Self = StObject.set(x, "getCacheKey", js.Any.fromFunction1(value))
       
@@ -211,7 +215,8 @@ object mod {
       __obj.asInstanceOf[GetCacheOptions]
     }
     
-    extension [Self <: GetCacheOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetCacheOptions] (val x: Self) extends AnyVal {
       
       inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -242,7 +247,8 @@ object mod {
       __obj.asInstanceOf[SetCacheOptions]
     }
     
-    extension [Self <: SetCacheOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SetCacheOptions] (val x: Self) extends AnyVal {
       
       inline def setCache(value: Boolean): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
       

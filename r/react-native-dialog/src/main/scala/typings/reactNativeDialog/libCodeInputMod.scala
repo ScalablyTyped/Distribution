@@ -39,7 +39,8 @@ object libCodeInputMod extends Shortcut {
       __obj.asInstanceOf[DialogCodeInputProps]
     }
     
-    extension [Self <: DialogCodeInputProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DialogCodeInputProps] (val x: Self) extends AnyVal {
       
       inline def setCodeLength(value: Double): Self = StObject.set(x, "codeLength", value.asInstanceOf[js.Any])
       

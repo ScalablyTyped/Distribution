@@ -15,7 +15,8 @@ object listenerRegistration {
     __obj.asInstanceOf[listenerRegistration]
   }
   
-  extension [Self <: listenerRegistration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: listenerRegistration] (val x: Self) extends AnyVal {
     
     inline def setRemoveListener(value: () => Unit): Self = StObject.set(x, "removeListener", js.Any.fromFunction0(value))
   }

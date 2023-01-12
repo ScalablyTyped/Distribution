@@ -47,7 +47,8 @@ object mod {
       __obj.asInstanceOf[TracerOptions]
     }
     
-    extension [Self <: TracerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TracerOptions] (val x: Self) extends AnyVal {
       
       inline def setEndpoint(value: String): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
       

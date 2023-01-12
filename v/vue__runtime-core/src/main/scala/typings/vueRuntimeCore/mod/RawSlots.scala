@@ -19,7 +19,8 @@ object RawSlots {
     __obj.asInstanceOf[RawSlots]
   }
   
-  extension [Self <: RawSlots](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RawSlots] (val x: Self) extends AnyVal {
     
     inline def set$stable(value: Boolean): Self = StObject.set(x, "$stable", value.asInstanceOf[js.Any])
     

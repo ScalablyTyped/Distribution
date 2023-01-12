@@ -33,7 +33,8 @@ object UriPathRouteInput {
     __obj.asInstanceOf[UriPathRouteInput]
   }
   
-  extension [Self <: UriPathRouteInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UriPathRouteInput] (val x: Self) extends AnyVal {
     
     inline def setActivationState(value: RouteActivationState): Self = StObject.set(x, "ActivationState", value.asInstanceOf[js.Any])
     

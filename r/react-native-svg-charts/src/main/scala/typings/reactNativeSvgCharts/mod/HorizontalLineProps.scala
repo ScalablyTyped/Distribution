@@ -15,7 +15,8 @@ object HorizontalLineProps {
     __obj.asInstanceOf[HorizontalLineProps]
   }
   
-  extension [Self <: HorizontalLineProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HorizontalLineProps] (val x: Self) extends AnyVal {
     
     inline def setStroke(value: String): Self = StObject.set(x, "stroke", value.asInstanceOf[js.Any])
   }

@@ -19,7 +19,8 @@ object SliderMaxClickEvent {
     __obj.asInstanceOf[SliderMaxClickEvent]
   }
   
-  extension [Self <: SliderMaxClickEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SliderMaxClickEvent] (val x: Self) extends AnyVal {
     
     inline def setType(value: `max-click`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

@@ -178,7 +178,8 @@ object mod {
       __obj.asInstanceOf[IGlobBase]
     }
     
-    extension [Self <: IGlobBase](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IGlobBase] (val x: Self) extends AnyVal {
       
       inline def setAborted(value: Boolean): Self = StObject.set(x, "aborted", value.asInstanceOf[js.Any])
       
@@ -272,7 +273,8 @@ object mod {
       __obj.asInstanceOf[IOptions]
     }
     
-    extension [Self <: IOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
       
       inline def setAbsolute(value: Boolean): Self = StObject.set(x, "absolute", value.asInstanceOf[js.Any])
       

@@ -133,7 +133,8 @@ object mod {
       __obj.asInstanceOf[ErrorDetail]
     }
     
-    extension [Self <: ErrorDetail](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ErrorDetail] (val x: Self) extends AnyVal {
       
       inline def setArgument(value: String): Self = StObject.set(x, "argument", value.asInstanceOf[js.Any])
       
@@ -172,7 +173,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setAllowUnknownAttributes(value: Boolean): Self = StObject.set(x, "allowUnknownAttributes", value.asInstanceOf[js.Any])
       
@@ -327,7 +329,8 @@ object mod {
       __obj.asInstanceOf[Schema]
     }
     
-    extension [Self <: Schema](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Schema] (val x: Self) extends AnyVal {
       
       inline def set$id(value: String): Self = StObject.set(x, "$id", value.asInstanceOf[js.Any])
       
@@ -525,7 +528,8 @@ object mod {
       __obj.asInstanceOf[SchemaContext]
     }
     
-    extension [Self <: SchemaContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SchemaContext] (val x: Self) extends AnyVal {
       
       inline def setBase(value: String): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
       

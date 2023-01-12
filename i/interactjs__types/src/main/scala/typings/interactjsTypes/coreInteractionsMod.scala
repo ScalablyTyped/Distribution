@@ -48,7 +48,8 @@ object coreInteractionsMod extends Shortcut {
         __obj.asInstanceOf[Scope]
       }
       
-      extension [Self <: Scope](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Scope] (val x: Self) extends AnyVal {
         
         inline def setInteraction(value: Instantiable1[/* param0 */ ScopeFire, Interaction[ActionName | Null]]): Self = StObject.set(x, "Interaction", value.asInstanceOf[js.Any])
         
@@ -71,7 +72,8 @@ object coreInteractionsMod extends Shortcut {
         __obj.asInstanceOf[SignalArgs]
       }
       
-      extension [Self <: SignalArgs](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SignalArgs] (val x: Self) extends AnyVal {
         
         inline def setInteractionsColonfind(value: SearchDetails): Self = StObject.set(x, "interactions:find", value.asInstanceOf[js.Any])
       }

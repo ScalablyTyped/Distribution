@@ -182,7 +182,8 @@ object ScaleThemeProperties {
     __obj.asInstanceOf[ScaleThemeProperties]
   }
   
-  extension [Self <: ScaleThemeProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScaleThemeProperties] (val x: Self) extends AnyVal {
     
     inline def setBorderStyles(value: ThemeValue[BorderStyle]): Self = StObject.set(x, "borderStyles", value.asInstanceOf[js.Any])
     

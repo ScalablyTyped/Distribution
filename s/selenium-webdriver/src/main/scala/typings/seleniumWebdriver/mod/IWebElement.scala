@@ -224,7 +224,8 @@ object IWebElement {
     __obj.asInstanceOf[IWebElement]
   }
   
-  extension [Self <: IWebElement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IWebElement] (val x: Self) extends AnyVal {
     
     inline def setClear(value: () => js.Promise[Unit]): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
     

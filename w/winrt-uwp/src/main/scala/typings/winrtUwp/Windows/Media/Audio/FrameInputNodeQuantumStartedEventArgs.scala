@@ -17,7 +17,8 @@ object FrameInputNodeQuantumStartedEventArgs {
     __obj.asInstanceOf[FrameInputNodeQuantumStartedEventArgs]
   }
   
-  extension [Self <: FrameInputNodeQuantumStartedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FrameInputNodeQuantumStartedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setRequiredSamples(value: Double): Self = StObject.set(x, "requiredSamples", value.asInstanceOf[js.Any])
   }

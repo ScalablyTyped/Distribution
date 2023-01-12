@@ -86,7 +86,8 @@ object mod {
       __obj.asInstanceOf[ModelOptions]
     }
     
-    extension [Self <: ModelOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ModelOptions] (val x: Self) extends AnyVal {
       
       inline def setNGramMax(value: Double): Self = StObject.set(x, "nGramMax", value.asInstanceOf[js.Any])
       
@@ -121,7 +122,8 @@ object mod {
       __obj.asInstanceOf[PredictionOptions]
     }
     
-    extension [Self <: PredictionOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PredictionOptions] (val x: Self) extends AnyVal {
       
       inline def setConfidence(value: Double): Self = StObject.set(x, "confidence", value.asInstanceOf[js.Any])
       

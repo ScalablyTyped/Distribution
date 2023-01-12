@@ -23,7 +23,8 @@ object MapTypeOptions {
     __obj.asInstanceOf[MapTypeOptions]
   }
   
-  extension [Self <: MapTypeOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MapTypeOptions] (val x: Self) extends AnyVal {
     
     inline def setErrorImageUrl(value: String): Self = StObject.set(x, "errorImageUrl", value.asInstanceOf[js.Any])
     

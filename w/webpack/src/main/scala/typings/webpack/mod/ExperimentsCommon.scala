@@ -56,7 +56,8 @@ object ExperimentsCommon {
     __obj.asInstanceOf[ExperimentsCommon]
   }
   
-  extension [Self <: ExperimentsCommon](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExperimentsCommon] (val x: Self) extends AnyVal {
     
     inline def setAsyncWebAssembly(value: Boolean): Self = StObject.set(x, "asyncWebAssembly", value.asInstanceOf[js.Any])
     

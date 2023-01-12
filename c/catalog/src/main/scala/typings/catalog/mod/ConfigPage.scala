@@ -31,7 +31,8 @@ object ConfigPage {
     __obj.asInstanceOf[ConfigPage]
   }
   
-  extension [Self <: ConfigPage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConfigPage] (val x: Self) extends AnyVal {
     
     inline def setContent(value: ComponentType[js.Object]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     

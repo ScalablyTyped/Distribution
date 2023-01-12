@@ -19,7 +19,8 @@ object MlPreviewDataFrameAnalyticsRequest {
     __obj.asInstanceOf[MlPreviewDataFrameAnalyticsRequest]
   }
   
-  extension [Self <: MlPreviewDataFrameAnalyticsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlPreviewDataFrameAnalyticsRequest] (val x: Self) extends AnyVal {
     
     inline def setConfig(value: MlPreviewDataFrameAnalyticsDataframePreviewConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     

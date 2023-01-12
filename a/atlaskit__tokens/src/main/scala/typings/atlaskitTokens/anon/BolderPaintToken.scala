@@ -19,7 +19,8 @@ object BolderPaintToken {
     __obj.asInstanceOf[BolderPaintToken[BaseToken]]
   }
   
-  extension [Self <: BolderPaintToken[?], BaseToken](x: Self & BolderPaintToken[BaseToken]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BolderPaintToken[?], BaseToken] (val x: Self & BolderPaintToken[BaseToken]) extends AnyVal {
     
     inline def setBolder(value: PaintToken[BaseToken]): Self = StObject.set(x, "bolder", value.asInstanceOf[js.Any])
     

@@ -32,7 +32,8 @@ object GetFileStreamOptions {
     __obj.asInstanceOf[GetFileStreamOptions]
   }
   
-  extension [Self <: GetFileStreamOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetFileStreamOptions] (val x: Self) extends AnyVal {
     
     inline def setCheckFile(
       value: (/* fieldname */ String, /* file */ Any, /* filename */ String, /* encoding */ String, /* mimetype */ String) => Unit | js.Error

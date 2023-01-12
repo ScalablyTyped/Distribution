@@ -24,7 +24,8 @@ object BlockType {
     __obj.asInstanceOf[BlockType]
   }
   
-  extension [Self <: BlockType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BlockType] (val x: Self) extends AnyVal {
     
     inline def setBlockType(value: String): Self = StObject.set(x, "BlockType", value.asInstanceOf[js.Any])
     

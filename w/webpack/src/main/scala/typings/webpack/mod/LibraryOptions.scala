@@ -42,7 +42,8 @@ object LibraryOptions {
     __obj.asInstanceOf[LibraryOptions]
   }
   
-  extension [Self <: LibraryOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LibraryOptions] (val x: Self) extends AnyVal {
     
     inline def setAuxiliaryComment(value: String | LibraryCustomUmdCommentObject): Self = StObject.set(x, "auxiliaryComment", value.asInstanceOf[js.Any])
     

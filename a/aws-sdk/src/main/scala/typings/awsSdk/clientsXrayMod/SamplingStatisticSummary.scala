@@ -38,7 +38,8 @@ object SamplingStatisticSummary {
     __obj.asInstanceOf[SamplingStatisticSummary]
   }
   
-  extension [Self <: SamplingStatisticSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SamplingStatisticSummary] (val x: Self) extends AnyVal {
     
     inline def setBorrowCount(value: Integer): Self = StObject.set(x, "BorrowCount", value.asInstanceOf[js.Any])
     

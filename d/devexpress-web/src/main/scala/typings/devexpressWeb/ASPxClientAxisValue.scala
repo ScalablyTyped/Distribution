@@ -44,7 +44,8 @@ object ASPxClientAxisValue {
     __obj.asInstanceOf[ASPxClientAxisValue]
   }
   
-  extension [Self <: ASPxClientAxisValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientAxisValue] (val x: Self) extends AnyVal {
     
     inline def setDateTimeValue(value: js.Date): Self = StObject.set(x, "dateTimeValue", value.asInstanceOf[js.Any])
     

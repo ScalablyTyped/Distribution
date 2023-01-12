@@ -27,7 +27,8 @@ object OmitidStructstringnumbern {
     __obj.asInstanceOf[OmitidStructstringnumbern]
   }
   
-  extension [Self <: OmitidStructstringnumbern](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OmitidStructstringnumbern] (val x: Self) extends AnyVal {
     
     inline def setJsonrpc(value: Struct_[`2Dot0`, `2Dot0`]): Self = StObject.set(x, "jsonrpc", value.asInstanceOf[js.Any])
     

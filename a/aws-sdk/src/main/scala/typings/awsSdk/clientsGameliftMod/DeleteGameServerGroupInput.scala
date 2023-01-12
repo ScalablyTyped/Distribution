@@ -23,7 +23,8 @@ object DeleteGameServerGroupInput {
     __obj.asInstanceOf[DeleteGameServerGroupInput]
   }
   
-  extension [Self <: DeleteGameServerGroupInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteGameServerGroupInput] (val x: Self) extends AnyVal {
     
     inline def setDeleteOption(value: GameServerGroupDeleteOption): Self = StObject.set(x, "DeleteOption", value.asInstanceOf[js.Any])
     

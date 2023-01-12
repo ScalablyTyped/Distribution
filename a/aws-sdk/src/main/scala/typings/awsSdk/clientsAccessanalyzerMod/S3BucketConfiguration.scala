@@ -33,7 +33,8 @@ object S3BucketConfiguration {
     __obj.asInstanceOf[S3BucketConfiguration]
   }
   
-  extension [Self <: S3BucketConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: S3BucketConfiguration] (val x: Self) extends AnyVal {
     
     inline def setAccessPoints(value: S3AccessPointConfigurationsMap): Self = StObject.set(x, "accessPoints", value.asInstanceOf[js.Any])
     

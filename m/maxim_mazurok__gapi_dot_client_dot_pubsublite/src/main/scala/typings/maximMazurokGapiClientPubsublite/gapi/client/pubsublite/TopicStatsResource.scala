@@ -15,7 +15,8 @@ object TopicStatsResource {
     __obj.asInstanceOf[TopicStatsResource]
   }
   
-  extension [Self <: TopicStatsResource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TopicStatsResource] (val x: Self) extends AnyVal {
     
     inline def setProjects(value: ProjectsResource): Self = StObject.set(x, "projects", value.asInstanceOf[js.Any])
   }

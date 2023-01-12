@@ -15,7 +15,8 @@ object Harvest {
     __obj.asInstanceOf[Harvest]
   }
   
-  extension [Self <: Harvest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Harvest] (val x: Self) extends AnyVal {
     
     inline def setHarvest(value: typings.screeps.screepsInts.`3`): Self = StObject.set(x, "harvest", value.asInstanceOf[js.Any])
   }

@@ -17,7 +17,8 @@ object CaptureStatus {
     __obj.asInstanceOf[CaptureStatus]
   }
   
-  extension [Self <: CaptureStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CaptureStatus] (val x: Self) extends AnyVal {
     
     inline def setStatus(value: Status): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     

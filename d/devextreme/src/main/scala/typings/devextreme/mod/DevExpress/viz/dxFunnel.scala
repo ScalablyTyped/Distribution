@@ -88,7 +88,8 @@ object dxFunnel {
       __obj.asInstanceOf[FunnelItemInfo]
     }
     
-    extension [Self <: FunnelItemInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FunnelItemInfo] (val x: Self) extends AnyVal {
       
       inline def setItem(value: Item): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     }

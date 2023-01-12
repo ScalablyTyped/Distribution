@@ -29,7 +29,8 @@ object MultidimensionalSubsetProperties {
     __obj.asInstanceOf[MultidimensionalSubsetProperties]
   }
   
-  extension [Self <: MultidimensionalSubsetProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MultidimensionalSubsetProperties] (val x: Self) extends AnyVal {
     
     inline def setAreaOfInterest(value: ExtentPropertiestypeexten | PolygonPropertiestypepoly): Self = StObject.set(x, "areaOfInterest", value.asInstanceOf[js.Any])
     

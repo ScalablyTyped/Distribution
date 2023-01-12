@@ -55,7 +55,8 @@ object XFetchProviderForContentAccess {
     __obj.asInstanceOf[XFetchProviderForContentAccess]
   }
   
-  extension [Self <: XFetchProviderForContentAccess](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XFetchProviderForContentAccess] (val x: Self) extends AnyVal {
     
     inline def setFetchContentIdentifierStrings(value: (Double, Double, Boolean) => FetchResult): Self = StObject.set(x, "fetchContentIdentifierStrings", js.Any.fromFunction3(value))
     

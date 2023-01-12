@@ -23,7 +23,8 @@ object GetCrawlersResponse {
     __obj.asInstanceOf[GetCrawlersResponse]
   }
   
-  extension [Self <: GetCrawlersResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetCrawlersResponse] (val x: Self) extends AnyVal {
     
     inline def setCrawlers(value: CrawlerList): Self = StObject.set(x, "Crawlers", value.asInstanceOf[js.Any])
     

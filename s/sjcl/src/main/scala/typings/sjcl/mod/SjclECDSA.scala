@@ -28,7 +28,8 @@ object SjclECDSA {
     __obj.asInstanceOf[SjclECDSA]
   }
   
-  extension [Self <: SjclECDSA](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SjclECDSA] (val x: Self) extends AnyVal {
     
     inline def setGenerateKeys(
       value: (/* curve */ SjclEllipticalCurve | Double, /* paranoia */ Double, /* sec */ js.UndefOr[BigNumber]) => SjclKeyPair[SjclECDSAPublicKey, SjclECDSASecretKey]

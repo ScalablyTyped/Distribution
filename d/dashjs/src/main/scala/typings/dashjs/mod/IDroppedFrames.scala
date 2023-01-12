@@ -17,7 +17,8 @@ object IDroppedFrames {
     __obj.asInstanceOf[IDroppedFrames]
   }
   
-  extension [Self <: IDroppedFrames](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IDroppedFrames] (val x: Self) extends AnyVal {
     
     inline def setDroppedFrames(value: Double): Self = StObject.set(x, "droppedFrames", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object SiteCollection {
     __obj.asInstanceOf[SiteCollection]
   }
   
-  extension [Self <: SiteCollection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SiteCollection] (val x: Self) extends AnyVal {
     
     inline def setDataLocationCode(value: NullableOption[String]): Self = StObject.set(x, "dataLocationCode", value.asInstanceOf[js.Any])
     

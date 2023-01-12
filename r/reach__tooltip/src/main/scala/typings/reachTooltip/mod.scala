@@ -137,7 +137,8 @@ object mod {
       __obj.asInstanceOf[PRect]
     }
     
-    extension [Self <: PRect](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PRect] (val x: Self) extends AnyVal {
       
       inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       
@@ -202,7 +203,8 @@ object mod {
       __obj.asInstanceOf[TooltipContentProps]
     }
     
-    extension [Self <: TooltipContentProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TooltipContentProps] (val x: Self) extends AnyVal {
       
       inline def setAriaLabel(value: String): Self = StObject.set(x, "ariaLabel", value.asInstanceOf[js.Any])
       
@@ -243,7 +245,8 @@ object mod {
       __obj.asInstanceOf[TooltipParams]
     }
     
-    extension [Self <: TooltipParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TooltipParams] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -268,7 +271,8 @@ object mod {
       __obj.asInstanceOf[TooltipPopupProps]
     }
     
-    extension [Self <: TooltipPopupProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TooltipPopupProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -296,7 +300,8 @@ object mod {
       __obj.asInstanceOf[TooltipProps]
     }
     
-    extension [Self <: TooltipProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TooltipProps] (val x: Self) extends AnyVal {
       
       inline def setAriaLabel(value: String): Self = StObject.set(x, "ariaLabel", value.asInstanceOf[js.Any])
       
@@ -373,7 +378,8 @@ object mod {
       __obj.asInstanceOf[TriggerParams[ElementType]]
     }
     
-    extension [Self <: TriggerParams[?], ElementType /* <: HTMLElement | SVGElement */](x: Self & TriggerParams[ElementType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TriggerParams[?], ElementType /* <: HTMLElement | SVGElement */] (val x: Self & TriggerParams[ElementType]) extends AnyVal {
       
       inline def `setAria-describedby`(value: String): Self = StObject.set(x, "aria-describedby", value.asInstanceOf[js.Any])
       

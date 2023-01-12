@@ -17,7 +17,8 @@ object LoggingChannelOptions {
     __obj.asInstanceOf[LoggingChannelOptions]
   }
   
-  extension [Self <: LoggingChannelOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LoggingChannelOptions] (val x: Self) extends AnyVal {
     
     inline def setGroup(value: String): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
   }

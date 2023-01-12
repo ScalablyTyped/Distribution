@@ -16,7 +16,8 @@ object NegativeKeywordListAssignedTargetingOptionDetails {
     __obj.asInstanceOf[NegativeKeywordListAssignedTargetingOptionDetails]
   }
   
-  extension [Self <: NegativeKeywordListAssignedTargetingOptionDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NegativeKeywordListAssignedTargetingOptionDetails] (val x: Self) extends AnyVal {
     
     inline def setNegativeKeywordListId(value: String): Self = StObject.set(x, "negativeKeywordListId", value.asInstanceOf[js.Any])
     

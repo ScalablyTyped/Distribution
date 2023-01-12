@@ -43,7 +43,8 @@ object AuthorizationRule {
     __obj.asInstanceOf[AuthorizationRule]
   }
   
-  extension [Self <: AuthorizationRule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AuthorizationRule] (val x: Self) extends AnyVal {
     
     inline def setAccessAll(value: Boolean): Self = StObject.set(x, "AccessAll", value.asInstanceOf[js.Any])
     

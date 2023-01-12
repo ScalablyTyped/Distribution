@@ -16,7 +16,8 @@ object UIEvent {
     __obj.asInstanceOf[UIEvent]
   }
   
-  extension [Self <: UIEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UIEvent] (val x: Self) extends AnyVal {
     
     inline def setInputIndex(value: Double): Self = StObject.set(x, "inputIndex", value.asInstanceOf[js.Any])
   }

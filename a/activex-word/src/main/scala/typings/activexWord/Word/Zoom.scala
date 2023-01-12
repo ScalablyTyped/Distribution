@@ -40,7 +40,8 @@ object Zoom {
     __obj.asInstanceOf[Zoom]
   }
   
-  extension [Self <: Zoom](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Zoom] (val x: Self) extends AnyVal {
     
     inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     

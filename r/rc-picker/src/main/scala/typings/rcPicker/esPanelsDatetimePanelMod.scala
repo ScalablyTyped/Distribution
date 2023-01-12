@@ -96,7 +96,8 @@ object esPanelsDatetimePanelMod {
       __obj.asInstanceOf[DatetimePanelProps[DateType]]
     }
     
-    extension [Self <: DatetimePanelProps[?], DateType](x: Self & DatetimePanelProps[DateType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DatetimePanelProps[?], DateType] (val x: Self & DatetimePanelProps[DateType]) extends AnyVal {
       
       inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       

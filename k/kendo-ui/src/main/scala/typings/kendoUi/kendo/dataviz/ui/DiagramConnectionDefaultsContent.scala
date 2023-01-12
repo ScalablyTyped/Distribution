@@ -29,7 +29,8 @@ object DiagramConnectionDefaultsContent {
     __obj.asInstanceOf[DiagramConnectionDefaultsContent]
   }
   
-  extension [Self <: DiagramConnectionDefaultsContent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DiagramConnectionDefaultsContent] (val x: Self) extends AnyVal {
     
     inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

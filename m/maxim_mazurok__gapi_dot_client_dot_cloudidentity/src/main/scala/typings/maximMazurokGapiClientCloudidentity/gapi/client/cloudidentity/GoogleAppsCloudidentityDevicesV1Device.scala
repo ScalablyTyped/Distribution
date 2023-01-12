@@ -103,7 +103,8 @@ object GoogleAppsCloudidentityDevicesV1Device {
     __obj.asInstanceOf[GoogleAppsCloudidentityDevicesV1Device]
   }
   
-  extension [Self <: GoogleAppsCloudidentityDevicesV1Device](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleAppsCloudidentityDevicesV1Device] (val x: Self) extends AnyVal {
     
     inline def setAndroidSpecificAttributes(value: GoogleAppsCloudidentityDevicesV1AndroidAttributes): Self = StObject.set(x, "androidSpecificAttributes", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object BlockchainSubscribed {
     __obj.asInstanceOf[BlockchainSubscribed]
   }
   
-  extension [Self <: BlockchainSubscribed](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BlockchainSubscribed] (val x: Self) extends AnyVal {
     
     inline def setSubscribed(value: Boolean): Self = StObject.set(x, "subscribed", value.asInstanceOf[js.Any])
   }

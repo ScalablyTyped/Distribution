@@ -33,7 +33,8 @@ object OrganizationEventDetailsErrorItem {
     __obj.asInstanceOf[OrganizationEventDetailsErrorItem]
   }
   
-  extension [Self <: OrganizationEventDetailsErrorItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OrganizationEventDetailsErrorItem] (val x: Self) extends AnyVal {
     
     inline def setAwsAccountId(value: accountId): Self = StObject.set(x, "awsAccountId", value.asInstanceOf[js.Any])
     

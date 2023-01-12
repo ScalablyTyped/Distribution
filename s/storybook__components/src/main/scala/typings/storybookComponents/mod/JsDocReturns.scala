@@ -15,7 +15,8 @@ object JsDocReturns {
     __obj.asInstanceOf[JsDocReturns]
   }
   
-  extension [Self <: JsDocReturns](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JsDocReturns] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

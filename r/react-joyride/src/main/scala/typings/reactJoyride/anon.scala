@@ -37,7 +37,8 @@ object anon {
       __obj.asInstanceOf[Arialabel]
     }
     
-    extension [Self <: Arialabel](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Arialabel] (val x: Self) extends AnyVal {
       
       inline def `setAria-label`(value: String): Self = StObject.set(x, "aria-label", value.asInstanceOf[js.Any])
       
@@ -67,7 +68,8 @@ object anon {
       __obj.asInstanceOf[Ariamodal]
     }
     
-    extension [Self <: Ariamodal](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Ariamodal] (val x: Self) extends AnyVal {
       
       inline def `setAria-modal`(value: Boolean): Self = StObject.set(x, "aria-modal", value.asInstanceOf[js.Any])
       
@@ -104,7 +106,8 @@ object anon {
       __obj.asInstanceOf[ArrowColor]
     }
     
-    extension [Self <: ArrowColor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ArrowColor] (val x: Self) extends AnyVal {
       
       inline def setArrowColor(value: String): Self = StObject.set(x, "arrowColor", value.asInstanceOf[js.Any])
       

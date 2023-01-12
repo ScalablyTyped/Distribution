@@ -63,7 +63,8 @@ object SendVoiceMessageRequest {
     __obj.asInstanceOf[SendVoiceMessageRequest]
   }
   
-  extension [Self <: SendVoiceMessageRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SendVoiceMessageRequest] (val x: Self) extends AnyVal {
     
     inline def setConfigurationSetName(value: ConfigurationSetNameOrArn): Self = StObject.set(x, "ConfigurationSetName", value.asInstanceOf[js.Any])
     

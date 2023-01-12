@@ -23,7 +23,8 @@ object SequenceNumberRange {
     __obj.asInstanceOf[SequenceNumberRange]
   }
   
-  extension [Self <: SequenceNumberRange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SequenceNumberRange] (val x: Self) extends AnyVal {
     
     inline def setEndingSequenceNumber(value: SequenceNumber): Self = StObject.set(x, "EndingSequenceNumber", value.asInstanceOf[js.Any])
     

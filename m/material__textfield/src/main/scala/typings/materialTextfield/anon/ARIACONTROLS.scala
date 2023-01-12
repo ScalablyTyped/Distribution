@@ -44,7 +44,8 @@ object ARIACONTROLS {
     __obj.asInstanceOf[ARIACONTROLS]
   }
   
-  extension [Self <: ARIACONTROLS](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ARIACONTROLS] (val x: Self) extends AnyVal {
     
     inline def setARIA_CONTROLS(value: String): Self = StObject.set(x, "ARIA_CONTROLS", value.asInstanceOf[js.Any])
     

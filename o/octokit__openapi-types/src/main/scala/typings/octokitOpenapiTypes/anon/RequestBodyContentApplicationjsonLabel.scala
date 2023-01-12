@@ -19,7 +19,8 @@ object RequestBodyContentApplicationjsonLabel {
     __obj.asInstanceOf[RequestBodyContentApplicationjsonLabel]
   }
   
-  extension [Self <: RequestBodyContentApplicationjsonLabel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RequestBodyContentApplicationjsonLabel] (val x: Self) extends AnyVal {
     
     inline def setParameters(value: PathAssetid): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     

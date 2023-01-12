@@ -28,7 +28,8 @@ object IEventContext {
     __obj.asInstanceOf[IEventContext[C]]
   }
   
-  extension [Self <: IEventContext[?], C /* <: IClient */](x: Self & IEventContext[C]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IEventContext[?], C /* <: IClient */] (val x: Self & IEventContext[C]) extends AnyVal {
     
     inline def setClient(value: C): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
     

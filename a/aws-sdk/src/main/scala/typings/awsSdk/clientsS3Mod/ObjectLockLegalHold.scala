@@ -18,7 +18,8 @@ object ObjectLockLegalHold {
     __obj.asInstanceOf[ObjectLockLegalHold]
   }
   
-  extension [Self <: ObjectLockLegalHold](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ObjectLockLegalHold] (val x: Self) extends AnyVal {
     
     inline def setStatus(value: ObjectLockLegalHoldStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     

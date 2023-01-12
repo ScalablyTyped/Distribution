@@ -57,7 +57,8 @@ object JQueryFinger {
       __obj.asInstanceOf[JQueryFingerOptions]
     }
     
-    extension [Self <: JQueryFingerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JQueryFingerOptions] (val x: Self) extends AnyVal {
       
       inline def setDoubleTapInterval(value: Double): Self = StObject.set(x, "doubleTapInterval", value.asInstanceOf[js.Any])
       

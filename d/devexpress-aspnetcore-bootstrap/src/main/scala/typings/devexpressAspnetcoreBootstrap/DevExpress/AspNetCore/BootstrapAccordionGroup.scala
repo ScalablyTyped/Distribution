@@ -67,7 +67,8 @@ object BootstrapAccordionGroup {
     __obj.asInstanceOf[BootstrapAccordionGroup]
   }
   
-  extension [Self <: BootstrapAccordionGroup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BootstrapAccordionGroup] (val x: Self) extends AnyVal {
     
     inline def setGetEnabled(value: () => Boolean): Self = StObject.set(x, "getEnabled", js.Any.fromFunction0(value))
     

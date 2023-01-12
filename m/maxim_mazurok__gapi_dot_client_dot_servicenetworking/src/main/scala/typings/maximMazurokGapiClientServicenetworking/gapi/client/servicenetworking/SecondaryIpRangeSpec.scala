@@ -34,7 +34,8 @@ object SecondaryIpRangeSpec {
     __obj.asInstanceOf[SecondaryIpRangeSpec]
   }
   
-  extension [Self <: SecondaryIpRangeSpec](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SecondaryIpRangeSpec] (val x: Self) extends AnyVal {
     
     inline def setIpPrefixLength(value: Double): Self = StObject.set(x, "ipPrefixLength", value.asInstanceOf[js.Any])
     

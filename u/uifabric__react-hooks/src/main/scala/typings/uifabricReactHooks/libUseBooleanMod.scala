@@ -30,7 +30,8 @@ object libUseBooleanMod {
       __obj.asInstanceOf[IUseBooleanCallbacks]
     }
     
-    extension [Self <: IUseBooleanCallbacks](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IUseBooleanCallbacks] (val x: Self) extends AnyVal {
       
       inline def setSetFalse(value: () => Unit): Self = StObject.set(x, "setFalse", js.Any.fromFunction0(value))
       

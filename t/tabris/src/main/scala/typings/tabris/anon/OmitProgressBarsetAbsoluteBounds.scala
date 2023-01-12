@@ -645,7 +645,8 @@ object OmitProgressBarsetAbsoluteBounds {
     __obj.asInstanceOf[OmitProgressBarsetAbsoluteBounds]
   }
   
-  extension [Self <: OmitProgressBarsetAbsoluteBounds](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OmitProgressBarsetAbsoluteBounds] (val x: Self) extends AnyVal {
     
     inline def set$getProperty(value: /* name */ String => Any): Self = StObject.set(x, "$getProperty", js.Any.fromFunction1(value))
     

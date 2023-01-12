@@ -17,7 +17,8 @@ object distLicenseTestRunnerMod {
       __obj.asInstanceOf[LicenseTestRunner]
     }
     
-    extension [Self <: LicenseTestRunner](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LicenseTestRunner] (val x: Self) extends AnyVal {
       
       inline def setTest(value: String => Boolean): Self = StObject.set(x, "test", js.Any.fromFunction1(value))
     }

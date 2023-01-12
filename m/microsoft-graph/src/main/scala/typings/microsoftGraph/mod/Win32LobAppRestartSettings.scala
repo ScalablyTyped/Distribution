@@ -22,7 +22,8 @@ object Win32LobAppRestartSettings {
     __obj.asInstanceOf[Win32LobAppRestartSettings]
   }
   
-  extension [Self <: Win32LobAppRestartSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Win32LobAppRestartSettings] (val x: Self) extends AnyVal {
     
     inline def setCountdownDisplayBeforeRestartInMinutes(value: Double): Self = StObject.set(x, "countdownDisplayBeforeRestartInMinutes", value.asInstanceOf[js.Any])
     

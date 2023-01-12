@@ -23,7 +23,8 @@ object TerminologyDataLocation {
     __obj.asInstanceOf[TerminologyDataLocation]
   }
   
-  extension [Self <: TerminologyDataLocation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TerminologyDataLocation] (val x: Self) extends AnyVal {
     
     inline def setLocation(value: String): Self = StObject.set(x, "Location", value.asInstanceOf[js.Any])
     

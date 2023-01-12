@@ -103,7 +103,8 @@ object libDecodeErrorMod {
       __obj.asInstanceOf[Index_[E]]
     }
     
-    extension [Self <: Index_[?], E](x: Self & Index_[E]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Index_[?], E] (val x: Self & Index_[E]) extends AnyVal {
       
       inline def setErrors(value: FreeSemigroup[DecodeError[E]]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
       
@@ -134,7 +135,8 @@ object libDecodeErrorMod {
       __obj.asInstanceOf[Key_[E]]
     }
     
-    extension [Self <: Key_[?], E](x: Self & Key_[E]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Key_[?], E] (val x: Self & Key_[E]) extends AnyVal {
       
       inline def setErrors(value: FreeSemigroup[DecodeError[E]]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
       
@@ -175,7 +177,8 @@ object libDecodeErrorMod {
       __obj.asInstanceOf[Lazy_[E]]
     }
     
-    extension [Self <: Lazy_[?], E](x: Self & Lazy_[E]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Lazy_[?], E] (val x: Self & Lazy_[E]) extends AnyVal {
       
       inline def setErrors(value: FreeSemigroup[DecodeError[E]]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
       
@@ -202,7 +205,8 @@ object libDecodeErrorMod {
       __obj.asInstanceOf[Leaf_[E]]
     }
     
-    extension [Self <: Leaf_[?], E](x: Self & Leaf_[E]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Leaf_[?], E] (val x: Self & Leaf_[E]) extends AnyVal {
       
       inline def setActual(value: Any): Self = StObject.set(x, "actual", value.asInstanceOf[js.Any])
       
@@ -229,7 +233,8 @@ object libDecodeErrorMod {
       __obj.asInstanceOf[Member_[E]]
     }
     
-    extension [Self <: Member_[?], E](x: Self & Member_[E]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Member_[?], E] (val x: Self & Member_[E]) extends AnyVal {
       
       inline def setErrors(value: FreeSemigroup[DecodeError[E]]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
       
@@ -256,7 +261,8 @@ object libDecodeErrorMod {
       __obj.asInstanceOf[Wrap_[E]]
     }
     
-    extension [Self <: Wrap_[?], E](x: Self & Wrap_[E]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Wrap_[?], E] (val x: Self & Wrap_[E]) extends AnyVal {
       
       inline def setError(value: E): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       

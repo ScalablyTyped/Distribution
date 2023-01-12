@@ -389,7 +389,8 @@ object libProcessProcessManagerMod {
       __obj.asInstanceOf[ProcessManager]
     }
     
-    extension [Self <: ProcessManager](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProcessManager] (val x: Self) extends AnyVal {
       
       inline def setCallHandlers(value: Any): Self = StObject.set(x, "callHandlers", value.asInstanceOf[js.Any])
       
@@ -522,7 +523,8 @@ object libProcessProcessManagerMod {
       __obj.asInstanceOf[TabInfo]
     }
     
-    extension [Self <: TabInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TabInfo] (val x: Self) extends AnyVal {
       
       inline def setCurrentProcessId(value: String): Self = StObject.set(x, "currentProcessId", value.asInstanceOf[js.Any])
       

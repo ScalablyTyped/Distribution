@@ -46,7 +46,8 @@ object mod {
       __obj.asInstanceOf[ComplianceTypes]
     }
     
-    extension [Self <: ComplianceTypes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ComplianceTypes] (val x: Self) extends AnyVal {
       
       inline def setInfo(value: String): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
       
@@ -94,7 +95,8 @@ object mod {
       __obj.asInstanceOf[Country]
     }
     
-    extension [Self <: Country](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Country] (val x: Self) extends AnyVal {
       
       inline def setExplicitAction(value: Boolean): Self = StObject.set(x, "explicitAction", value.asInstanceOf[js.Any])
       
@@ -117,7 +119,8 @@ object mod {
       __obj.asInstanceOf[LayoutTypes]
     }
     
-    extension [Self <: LayoutTypes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LayoutTypes] (val x: Self) extends AnyVal {
       
       inline def setBasic(value: String): Self = StObject.set(x, "basic", value.asInstanceOf[js.Any])
       
@@ -204,7 +207,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setAnimateRevokable(value: Boolean): Self = StObject.set(x, "animateRevokable", value.asInstanceOf[js.Any])
       
@@ -409,7 +413,8 @@ object mod {
       __obj.asInstanceOf[Popup]
     }
     
-    extension [Self <: Popup](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Popup] (val x: Self) extends AnyVal {
       
       inline def setAutoOpen(value: Options => Unit): Self = StObject.set(x, "autoOpen", js.Any.fromFunction1(value))
       
@@ -462,7 +467,8 @@ object mod {
       __obj.asInstanceOf[ServiceOptions]
     }
     
-    extension [Self <: ServiceOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ServiceOptions] (val x: Self) extends AnyVal {
       
       inline def setInterpolateUrl(value: StringDictionary[String]): Self = StObject.set(x, "interpolateUrl", value.asInstanceOf[js.Any])
       

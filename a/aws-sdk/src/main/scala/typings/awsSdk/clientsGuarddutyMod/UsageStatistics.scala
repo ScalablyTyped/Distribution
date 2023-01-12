@@ -33,7 +33,8 @@ object UsageStatistics {
     __obj.asInstanceOf[UsageStatistics]
   }
   
-  extension [Self <: UsageStatistics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UsageStatistics] (val x: Self) extends AnyVal {
     
     inline def setSumByAccount(value: UsageAccountResultList): Self = StObject.set(x, "SumByAccount", value.asInstanceOf[js.Any])
     

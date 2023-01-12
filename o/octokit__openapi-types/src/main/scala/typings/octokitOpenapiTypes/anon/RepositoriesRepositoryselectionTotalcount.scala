@@ -19,7 +19,8 @@ object RepositoriesRepositoryselectionTotalcount {
     __obj.asInstanceOf[RepositoriesRepositoryselectionTotalcount]
   }
   
-  extension [Self <: RepositoriesRepositoryselectionTotalcount](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RepositoriesRepositoryselectionTotalcount] (val x: Self) extends AnyVal {
     
     inline def setRepositories(value: js.Array[Allowupdatebranch]): Self = StObject.set(x, "repositories", value.asInstanceOf[js.Any])
     

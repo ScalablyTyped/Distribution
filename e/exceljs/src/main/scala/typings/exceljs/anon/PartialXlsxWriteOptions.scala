@@ -25,7 +25,8 @@ object PartialXlsxWriteOptions {
     __obj.asInstanceOf[PartialXlsxWriteOptions]
   }
   
-  extension [Self <: PartialXlsxWriteOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialXlsxWriteOptions] (val x: Self) extends AnyVal {
     
     inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
     

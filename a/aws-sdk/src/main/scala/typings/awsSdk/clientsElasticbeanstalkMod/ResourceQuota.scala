@@ -18,7 +18,8 @@ object ResourceQuota {
     __obj.asInstanceOf[ResourceQuota]
   }
   
-  extension [Self <: ResourceQuota](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResourceQuota] (val x: Self) extends AnyVal {
     
     inline def setMaximum(value: BoxedInt): Self = StObject.set(x, "Maximum", value.asInstanceOf[js.Any])
     

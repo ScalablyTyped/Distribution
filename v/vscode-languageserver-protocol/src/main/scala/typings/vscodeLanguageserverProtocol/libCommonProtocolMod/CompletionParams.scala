@@ -25,7 +25,8 @@ object CompletionParams {
     __obj.asInstanceOf[CompletionParams]
   }
   
-  extension [Self <: CompletionParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CompletionParams] (val x: Self) extends AnyVal {
     
     inline def setContext(value: CompletionContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     

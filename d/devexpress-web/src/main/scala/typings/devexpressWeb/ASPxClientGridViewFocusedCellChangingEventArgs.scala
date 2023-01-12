@@ -23,7 +23,8 @@ object ASPxClientGridViewFocusedCellChangingEventArgs {
     __obj.asInstanceOf[ASPxClientGridViewFocusedCellChangingEventArgs]
   }
   
-  extension [Self <: ASPxClientGridViewFocusedCellChangingEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientGridViewFocusedCellChangingEventArgs] (val x: Self) extends AnyVal {
     
     inline def setCellInfo(value: ASPxClientGridViewCellInfo): Self = StObject.set(x, "cellInfo", value.asInstanceOf[js.Any])
   }

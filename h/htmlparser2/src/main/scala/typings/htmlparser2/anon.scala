@@ -21,7 +21,8 @@ object anon {
       __obj.asInstanceOf[DecodeEntities]
     }
     
-    extension [Self <: DecodeEntities](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DecodeEntities] (val x: Self) extends AnyVal {
       
       inline def setDecodeEntities(value: Boolean): Self = StObject.set(x, "decodeEntities", value.asInstanceOf[js.Any])
       
@@ -80,7 +81,8 @@ object anon {
       __obj.asInstanceOf[PartialHandler]
     }
     
-    extension [Self <: PartialHandler](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialHandler] (val x: Self) extends AnyVal {
       
       inline def setOnattribute(value: (/* name */ String, /* value */ String, /* quote */ js.UndefOr[String | Null]) => Unit): Self = StObject.set(x, "onattribute", js.Any.fromFunction3(value))
       
@@ -189,7 +191,8 @@ object anon {
       __obj.asInstanceOf[PartialHandlerOnattribute]
     }
     
-    extension [Self <: PartialHandlerOnattribute](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialHandlerOnattribute] (val x: Self) extends AnyVal {
       
       inline def setOnattribute(value: (/* name */ String, /* value */ String, /* quote */ js.UndefOr[String | Null]) => Unit): Self = StObject.set(x, "onattribute", js.Any.fromFunction3(value))
       

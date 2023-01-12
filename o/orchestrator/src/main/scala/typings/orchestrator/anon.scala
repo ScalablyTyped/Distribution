@@ -17,7 +17,8 @@ object anon {
       __obj.asInstanceOf[Dep]
     }
     
-    extension [Self <: Dep](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Dep] (val x: Self) extends AnyVal {
       
       inline def setDep(value: js.Array[String]): Self = StObject.set(x, "dep", value.asInstanceOf[js.Any])
       
@@ -44,7 +45,8 @@ object anon {
       __obj.asInstanceOf[MissingTasks]
     }
     
-    extension [Self <: MissingTasks](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MissingTasks] (val x: Self) extends AnyVal {
       
       inline def setMissingTasks(value: js.Array[String]): Self = StObject.set(x, "missingTasks", value.asInstanceOf[js.Any])
       

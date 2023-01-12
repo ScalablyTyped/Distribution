@@ -25,7 +25,8 @@ object TransformGetTransformStatsCheckpointing {
     __obj.asInstanceOf[TransformGetTransformStatsCheckpointing]
   }
   
-  extension [Self <: TransformGetTransformStatsCheckpointing](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransformGetTransformStatsCheckpointing] (val x: Self) extends AnyVal {
     
     inline def setChanges_last_detected_at(value: long): Self = StObject.set(x, "changes_last_detected_at", value.asInstanceOf[js.Any])
     

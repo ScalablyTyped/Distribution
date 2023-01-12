@@ -26,7 +26,8 @@ object PolygonProps {
     __obj.asInstanceOf[PolygonProps]
   }
   
-  extension [Self <: PolygonProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PolygonProps] (val x: Self) extends AnyVal {
     
     inline def setNoClip(value: Boolean): Self = StObject.set(x, "noClip", value.asInstanceOf[js.Any])
     

@@ -45,7 +45,8 @@ object PartialStyleRulesTouchRip {
     __obj.asInstanceOf[PartialStyleRulesTouchRip]
   }
   
-  extension [Self <: PartialStyleRulesTouchRip](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialStyleRulesTouchRip] (val x: Self) extends AnyVal {
     
     inline def setChild(
       value: CSSProperties | CreateCSSProperties[js.Object] | (PropsFunc[js.Object, CreateCSSProperties[js.Object]])

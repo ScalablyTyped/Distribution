@@ -57,7 +57,8 @@ object TickConfig {
     __obj.asInstanceOf[TickConfig]
   }
   
-  extension [Self <: TickConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TickConfig] (val x: Self) extends AnyVal {
     
     inline def setLabelFormatFunction(
       value: (/* value */ Double, /* type */ js.UndefOr[average | min | max | tick | value], /* index */ js.UndefOr[Double]) => String

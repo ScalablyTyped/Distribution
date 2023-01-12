@@ -59,7 +59,8 @@ object AppointmentRecurrence {
     __obj.asInstanceOf[AppointmentRecurrence]
   }
   
-  extension [Self <: AppointmentRecurrence](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppointmentRecurrence] (val x: Self) extends AnyVal {
     
     inline def setCalendarIdentifier(value: Any): Self = StObject.set(x, "calendarIdentifier", value.asInstanceOf[js.Any])
     

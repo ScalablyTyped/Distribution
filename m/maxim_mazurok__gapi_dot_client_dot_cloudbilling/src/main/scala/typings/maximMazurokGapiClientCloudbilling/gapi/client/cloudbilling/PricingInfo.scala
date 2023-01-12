@@ -35,7 +35,8 @@ object PricingInfo {
     __obj.asInstanceOf[PricingInfo]
   }
   
-  extension [Self <: PricingInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PricingInfo] (val x: Self) extends AnyVal {
     
     inline def setAggregationInfo(value: AggregationInfo): Self = StObject.set(x, "aggregationInfo", value.asInstanceOf[js.Any])
     

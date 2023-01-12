@@ -20,7 +20,8 @@ object PolygonOptions {
     __obj.asInstanceOf[PolygonOptions]
   }
   
-  extension [Self <: PolygonOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PolygonOptions] (val x: Self) extends AnyVal {
     
     inline def setPaths(
       value: (MVCArray[LatLng | MVCArray[LatLng]]) | (js.Array[(js.Array[LatLng | LatLngLiteral]) | LatLng | LatLngLiteral])

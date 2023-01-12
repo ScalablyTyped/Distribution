@@ -16,7 +16,8 @@ object InputConfig {
     __obj.asInstanceOf[InputConfig]
   }
   
-  extension [Self <: InputConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InputConfig] (val x: Self) extends AnyVal {
     
     inline def setGcsSource(value: GcsSource): Self = StObject.set(x, "gcsSource", value.asInstanceOf[js.Any])
     

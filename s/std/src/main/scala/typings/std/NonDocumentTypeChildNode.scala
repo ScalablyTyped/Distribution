@@ -21,7 +21,8 @@ object NonDocumentTypeChildNode {
     __obj.asInstanceOf[NonDocumentTypeChildNode]
   }
   
-  extension [Self <: NonDocumentTypeChildNode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NonDocumentTypeChildNode] (val x: Self) extends AnyVal {
     
     inline def setNextElementSibling(value: Element): Self = StObject.set(x, "nextElementSibling", value.asInstanceOf[js.Any])
     

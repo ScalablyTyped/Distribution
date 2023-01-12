@@ -23,7 +23,8 @@ object ActionMap {
     __obj.asInstanceOf[ActionMap[TContext, TEvent]]
   }
   
-  extension [Self <: ActionMap[?, ?], TContext, TEvent /* <: EventObject */](x: Self & (ActionMap[TContext, TEvent])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ActionMap[?, ?], TContext, TEvent /* <: EventObject */] (val x: Self & (ActionMap[TContext, TEvent])) extends AnyVal {
     
     inline def setActions(value: js.Array[Action[TContext, TEvent]]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     

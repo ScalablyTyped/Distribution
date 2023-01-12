@@ -40,7 +40,8 @@ object XAllListener {
     __obj.asInstanceOf[XAllListener]
   }
   
-  extension [Self <: XAllListener](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XAllListener] (val x: Self) extends AnyVal {
     
     inline def setApproveFiring(value: AllEventObject => Any): Self = StObject.set(x, "approveFiring", js.Any.fromFunction1(value))
     

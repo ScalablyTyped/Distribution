@@ -26,7 +26,8 @@ object ITableViewConnectionPointSaveInfo {
     __obj.asInstanceOf[ITableViewConnectionPointSaveInfo]
   }
   
-  extension [Self <: ITableViewConnectionPointSaveInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ITableViewConnectionPointSaveInfo] (val x: Self) extends AnyVal {
     
     inline def setQFields(value: js.Array[String]): Self = StObject.set(x, "qFields", value.asInstanceOf[js.Any])
     

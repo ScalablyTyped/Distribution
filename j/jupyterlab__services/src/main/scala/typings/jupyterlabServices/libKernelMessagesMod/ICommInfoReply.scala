@@ -22,7 +22,8 @@ object ICommInfoReply {
     __obj.asInstanceOf[ICommInfoReply]
   }
   
-  extension [Self <: ICommInfoReply](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICommInfoReply] (val x: Self) extends AnyVal {
     
     inline def setComms(value: StringDictionary[TargetnameString]): Self = StObject.set(x, "comms", value.asInstanceOf[js.Any])
   }

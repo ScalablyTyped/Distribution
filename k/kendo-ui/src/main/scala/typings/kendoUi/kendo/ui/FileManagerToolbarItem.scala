@@ -49,7 +49,8 @@ object FileManagerToolbarItem {
     __obj.asInstanceOf[FileManagerToolbarItem]
   }
   
-  extension [Self <: FileManagerToolbarItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FileManagerToolbarItem] (val x: Self) extends AnyVal {
     
     inline def setAttributes(value: Any): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     

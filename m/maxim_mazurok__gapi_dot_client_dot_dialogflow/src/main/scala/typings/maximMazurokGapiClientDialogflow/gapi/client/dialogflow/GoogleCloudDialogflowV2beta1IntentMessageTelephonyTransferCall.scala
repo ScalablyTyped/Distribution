@@ -16,7 +16,8 @@ object GoogleCloudDialogflowV2beta1IntentMessageTelephonyTransferCall {
     __obj.asInstanceOf[GoogleCloudDialogflowV2beta1IntentMessageTelephonyTransferCall]
   }
   
-  extension [Self <: GoogleCloudDialogflowV2beta1IntentMessageTelephonyTransferCall](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDialogflowV2beta1IntentMessageTelephonyTransferCall] (val x: Self) extends AnyVal {
     
     inline def setPhoneNumber(value: String): Self = StObject.set(x, "phoneNumber", value.asInstanceOf[js.Any])
     

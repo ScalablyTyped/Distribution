@@ -23,7 +23,8 @@ object IContextualizedStats {
     __obj.asInstanceOf[IContextualizedStats]
   }
   
-  extension [Self <: IContextualizedStats](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IContextualizedStats] (val x: Self) extends AnyVal {
     
     inline def setContext(value: IStatsContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     

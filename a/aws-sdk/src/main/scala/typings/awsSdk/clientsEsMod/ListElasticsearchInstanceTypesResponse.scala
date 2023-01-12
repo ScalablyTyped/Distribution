@@ -23,7 +23,8 @@ object ListElasticsearchInstanceTypesResponse {
     __obj.asInstanceOf[ListElasticsearchInstanceTypesResponse]
   }
   
-  extension [Self <: ListElasticsearchInstanceTypesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListElasticsearchInstanceTypesResponse] (val x: Self) extends AnyVal {
     
     inline def setElasticsearchInstanceTypes(value: ElasticsearchInstanceTypeList): Self = StObject.set(x, "ElasticsearchInstanceTypes", value.asInstanceOf[js.Any])
     

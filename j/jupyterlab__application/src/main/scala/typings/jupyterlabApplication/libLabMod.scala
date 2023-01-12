@@ -112,7 +112,8 @@ object libLabMod {
       @js.native
       val ^ : Token[IInfo] = js.native
       
-      extension [Self <: IInfo](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IInfo] (val x: Self) extends AnyVal {
         
         inline def setDeferred(value: Matches): Self = StObject.set(x, "deferred", value.asInstanceOf[js.Any])
         
@@ -203,7 +204,8 @@ object libLabMod {
         __obj.asInstanceOf[IOptions]
       }
       
-      extension [Self <: IOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
         
         inline def setCommandLinker(value: CommandLinker): Self = StObject.set(x, "commandLinker", value.asInstanceOf[js.Any])
         
@@ -273,7 +275,8 @@ object libLabMod {
         __obj.asInstanceOf[IPluginModule]
       }
       
-      extension [Self <: IPluginModule](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IPluginModule] (val x: Self) extends AnyVal {
         
         inline def setDefault(value: (JupyterFrontEndPlugin[Any, Any, Any]) | (js.Array[JupyterFrontEndPlugin[Any, Any, Any]])): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
         

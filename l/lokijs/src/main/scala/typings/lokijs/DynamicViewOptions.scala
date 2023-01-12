@@ -21,7 +21,8 @@ object DynamicViewOptions {
     __obj.asInstanceOf[DynamicViewOptions]
   }
   
-  extension [Self <: DynamicViewOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DynamicViewOptions] (val x: Self) extends AnyVal {
     
     inline def setMinRebuildInterval(value: Double): Self = StObject.set(x, "minRebuildInterval", value.asInstanceOf[js.Any])
     

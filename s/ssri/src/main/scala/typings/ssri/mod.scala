@@ -205,7 +205,8 @@ object mod {
       __obj.asInstanceOf[HashLike]
     }
     
-    extension [Self <: HashLike](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HashLike] (val x: Self) extends AnyVal {
       
       inline def setAlgorithm(value: String): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
       

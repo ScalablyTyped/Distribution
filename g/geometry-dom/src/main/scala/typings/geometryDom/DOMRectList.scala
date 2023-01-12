@@ -26,7 +26,8 @@ object DOMRectList {
     __obj.asInstanceOf[DOMRectList]
   }
   
-  extension [Self <: DOMRectList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DOMRectList] (val x: Self) extends AnyVal {
     
     inline def setItem(value: Double => DOMRect): Self = StObject.set(x, "item", js.Any.fromFunction1(value))
     

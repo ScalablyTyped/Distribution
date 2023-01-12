@@ -18,7 +18,8 @@ object BatchGrantPermissionsResponse {
     __obj.asInstanceOf[BatchGrantPermissionsResponse]
   }
   
-  extension [Self <: BatchGrantPermissionsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchGrantPermissionsResponse] (val x: Self) extends AnyVal {
     
     inline def setFailures(value: BatchPermissionsFailureList): Self = StObject.set(x, "Failures", value.asInstanceOf[js.Any])
     

@@ -36,7 +36,8 @@ object DescribeStreamInputwaiter {
     __obj.asInstanceOf[DescribeStreamInputwaiter]
   }
   
-  extension [Self <: DescribeStreamInputwaiter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeStreamInputwaiter] (val x: Self) extends AnyVal {
     
     inline def set$waiter(value: WaiterConfiguration): Self = StObject.set(x, "$waiter", value.asInstanceOf[js.Any])
     

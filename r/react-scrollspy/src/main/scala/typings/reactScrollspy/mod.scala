@@ -64,7 +64,8 @@ object mod {
       __obj.asInstanceOf[ScrollspyProps]
     }
     
-    extension [Self <: ScrollspyProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScrollspyProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

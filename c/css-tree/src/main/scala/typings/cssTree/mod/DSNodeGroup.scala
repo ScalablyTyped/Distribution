@@ -28,7 +28,8 @@ object DSNodeGroup {
     __obj.asInstanceOf[DSNodeGroup]
   }
   
-  extension [Self <: DSNodeGroup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DSNodeGroup] (val x: Self) extends AnyVal {
     
     inline def setCombinator(value: DSNodeCombinator): Self = StObject.set(x, "combinator", value.asInstanceOf[js.Any])
     

@@ -80,7 +80,8 @@ object PlotCandlestickAccessibilityPointOptions {
     __obj.asInstanceOf[PlotCandlestickAccessibilityPointOptions]
   }
   
-  extension [Self <: PlotCandlestickAccessibilityPointOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotCandlestickAccessibilityPointOptions] (val x: Self) extends AnyVal {
     
     inline def setDateFormat(value: String): Self = StObject.set(x, "dateFormat", value.asInstanceOf[js.Any])
     

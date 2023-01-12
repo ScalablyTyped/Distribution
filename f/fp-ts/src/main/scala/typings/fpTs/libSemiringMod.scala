@@ -29,7 +29,8 @@ object libSemiringMod {
       __obj.asInstanceOf[Semiring[A]]
     }
     
-    extension [Self <: Semiring[?], A](x: Self & Semiring[A]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Semiring[?], A] (val x: Self & Semiring[A]) extends AnyVal {
       
       inline def setAdd(value: (A, A) => A): Self = StObject.set(x, "add", js.Any.fromFunction2(value))
       

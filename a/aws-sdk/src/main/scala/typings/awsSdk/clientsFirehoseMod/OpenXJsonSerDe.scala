@@ -28,7 +28,8 @@ object OpenXJsonSerDe {
     __obj.asInstanceOf[OpenXJsonSerDe]
   }
   
-  extension [Self <: OpenXJsonSerDe](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OpenXJsonSerDe] (val x: Self) extends AnyVal {
     
     inline def setCaseInsensitive(value: BooleanObject): Self = StObject.set(x, "CaseInsensitive", value.asInstanceOf[js.Any])
     

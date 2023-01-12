@@ -678,7 +678,8 @@ object distNodeGenericKeyValueFilesystemMod {
       __obj.asInstanceOf[AsyncKeyValueROTransaction]
     }
     
-    extension [Self <: AsyncKeyValueROTransaction](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AsyncKeyValueROTransaction] (val x: Self) extends AnyVal {
       
       inline def setGet(value: (String, BFSCallback[Buffer]) => Unit): Self = StObject.set(x, "get", js.Any.fromFunction2(value))
     }
@@ -734,7 +735,8 @@ object distNodeGenericKeyValueFilesystemMod {
       __obj.asInstanceOf[AsyncKeyValueRWTransaction]
     }
     
-    extension [Self <: AsyncKeyValueRWTransaction](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AsyncKeyValueRWTransaction] (val x: Self) extends AnyVal {
       
       inline def setAbort(value: BFSOneArgCallback => Unit): Self = StObject.set(x, "abort", js.Any.fromFunction1(value))
       
@@ -789,7 +791,8 @@ object distNodeGenericKeyValueFilesystemMod {
       __obj.asInstanceOf[SimpleSyncStore]
     }
     
-    extension [Self <: SimpleSyncStore](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SimpleSyncStore] (val x: Self) extends AnyVal {
       
       inline def setDel(value: String => Unit): Self = StObject.set(x, "del", js.Any.fromFunction1(value))
       
@@ -813,7 +816,8 @@ object distNodeGenericKeyValueFilesystemMod {
       __obj.asInstanceOf[SyncKeyValueFileSystemOptions]
     }
     
-    extension [Self <: SyncKeyValueFileSystemOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SyncKeyValueFileSystemOptions] (val x: Self) extends AnyVal {
       
       inline def setStore(value: SyncKeyValueStore): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
     }
@@ -836,7 +840,8 @@ object distNodeGenericKeyValueFilesystemMod {
       __obj.asInstanceOf[SyncKeyValueROTransaction]
     }
     
-    extension [Self <: SyncKeyValueROTransaction](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SyncKeyValueROTransaction] (val x: Self) extends AnyVal {
       
       inline def setGet(value: String => js.UndefOr[Buffer]): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
     }
@@ -885,7 +890,8 @@ object distNodeGenericKeyValueFilesystemMod {
       __obj.asInstanceOf[SyncKeyValueRWTransaction]
     }
     
-    extension [Self <: SyncKeyValueRWTransaction](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SyncKeyValueRWTransaction] (val x: Self) extends AnyVal {
       
       inline def setAbort(value: () => Unit): Self = StObject.set(x, "abort", js.Any.fromFunction0(value))
       

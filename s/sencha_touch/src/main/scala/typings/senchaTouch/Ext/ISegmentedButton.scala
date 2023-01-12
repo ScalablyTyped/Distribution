@@ -111,7 +111,8 @@ object ISegmentedButton {
     __obj.asInstanceOf[ISegmentedButton]
   }
   
-  extension [Self <: ISegmentedButton](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISegmentedButton] (val x: Self) extends AnyVal {
     
     inline def setAllowDepress(value: Boolean): Self = StObject.set(x, "allowDepress", value.asInstanceOf[js.Any])
     

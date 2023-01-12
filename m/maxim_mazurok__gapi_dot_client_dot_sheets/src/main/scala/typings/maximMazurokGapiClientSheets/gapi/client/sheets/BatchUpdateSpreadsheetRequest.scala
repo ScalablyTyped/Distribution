@@ -25,7 +25,8 @@ object BatchUpdateSpreadsheetRequest {
     __obj.asInstanceOf[BatchUpdateSpreadsheetRequest]
   }
   
-  extension [Self <: BatchUpdateSpreadsheetRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchUpdateSpreadsheetRequest] (val x: Self) extends AnyVal {
     
     inline def setIncludeSpreadsheetInResponse(value: Boolean): Self = StObject.set(x, "includeSpreadsheetInResponse", value.asInstanceOf[js.Any])
     

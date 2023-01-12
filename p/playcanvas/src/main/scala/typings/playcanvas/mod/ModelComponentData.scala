@@ -15,7 +15,8 @@ object ModelComponentData {
     __obj.asInstanceOf[ModelComponentData]
   }
   
-  extension [Self <: ModelComponentData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModelComponentData] (val x: Self) extends AnyVal {
     
     inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
   }

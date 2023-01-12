@@ -161,7 +161,8 @@ object srcModelOperationRenameoperationMod {
       __obj.asInstanceOf[RenameOperation]
     }
     
-    extension [Self <: RenameOperation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RenameOperation] (val x: Self) extends AnyVal {
       
       inline def setClone_(value: () => RenameOperation): Self = StObject.set(x, "clone", js.Any.fromFunction0(value))
       

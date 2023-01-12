@@ -21,7 +21,8 @@ object FetchAction {
     __obj.asInstanceOf[FetchAction]
   }
   
-  extension [Self <: FetchAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FetchAction] (val x: Self) extends AnyVal {
     
     inline def setMeta(value: Any): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
     

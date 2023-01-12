@@ -31,7 +31,8 @@ object AccountsLinkRequest {
     __obj.asInstanceOf[AccountsLinkRequest]
   }
   
-  extension [Self <: AccountsLinkRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccountsLinkRequest] (val x: Self) extends AnyVal {
     
     inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     

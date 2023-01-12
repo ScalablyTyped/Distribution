@@ -28,7 +28,8 @@ object ListProfileObjectsItem {
     __obj.asInstanceOf[ListProfileObjectsItem]
   }
   
-  extension [Self <: ListProfileObjectsItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListProfileObjectsItem] (val x: Self) extends AnyVal {
     
     inline def setObject(value: stringifiedJson): Self = StObject.set(x, "Object", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object ConditionalMergeTag {
     __obj.asInstanceOf[ConditionalMergeTag]
   }
   
-  extension [Self <: ConditionalMergeTag](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConditionalMergeTag] (val x: Self) extends AnyVal {
     
     inline def setMergeTags(value: js.Array[SimpleMergeTag]): Self = StObject.set(x, "mergeTags", value.asInstanceOf[js.Any])
     

@@ -180,7 +180,8 @@ object nw {
     @js.native
     val ^ : Clipboard = js.native
     
-    extension [Self <: Clipboard](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Clipboard] (val x: Self) extends AnyVal {
       
       inline def setGet(value: () => clip): Self = StObject.set(x, "get", js.Any.fromFunction0(value))
     }
@@ -433,7 +434,8 @@ object nw {
     @js.native
     val ^ : Shell = js.native
     
-    extension [Self <: Shell](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Shell] (val x: Self) extends AnyVal {
       
       inline def setOpenExternal(value: String => Unit): Self = StObject.set(x, "openExternal", js.Any.fromFunction1(value))
       

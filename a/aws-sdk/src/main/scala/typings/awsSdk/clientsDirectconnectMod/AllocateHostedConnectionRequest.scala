@@ -49,7 +49,8 @@ object AllocateHostedConnectionRequest {
     __obj.asInstanceOf[AllocateHostedConnectionRequest]
   }
   
-  extension [Self <: AllocateHostedConnectionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AllocateHostedConnectionRequest] (val x: Self) extends AnyVal {
     
     inline def setBandwidth(value: Bandwidth): Self = StObject.set(x, "bandwidth", value.asInstanceOf[js.Any])
     

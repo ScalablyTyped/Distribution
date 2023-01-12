@@ -35,7 +35,8 @@ object MoveMoveEvent {
     __obj.asInstanceOf[MoveMoveEvent]
   }
   
-  extension [Self <: MoveMoveEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MoveMoveEvent] (val x: Self) extends AnyVal {
     
     inline def setDeltaX(value: Double): Self = StObject.set(x, "deltaX", value.asInstanceOf[js.Any])
     

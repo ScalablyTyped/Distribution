@@ -67,7 +67,8 @@ object CloudStorage {
     __obj.asInstanceOf[CloudStorage]
   }
   
-  extension [Self <: CloudStorage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CloudStorage] (val x: Self) extends AnyVal {
     
     inline def setEndPosition(value: String): Self = StObject.set(x, "endPosition", value.asInstanceOf[js.Any])
     

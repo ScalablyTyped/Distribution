@@ -15,7 +15,8 @@ object AutocompleteExposed {
     __obj.asInstanceOf[AutocompleteExposed]
   }
   
-  extension [Self <: AutocompleteExposed](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AutocompleteExposed] (val x: Self) extends AnyVal {
     
     inline def setDefaultRefinement(value: String): Self = StObject.set(x, "defaultRefinement", value.asInstanceOf[js.Any])
     

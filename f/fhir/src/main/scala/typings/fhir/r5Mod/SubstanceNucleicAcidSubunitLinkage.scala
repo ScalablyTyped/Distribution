@@ -41,7 +41,8 @@ object SubstanceNucleicAcidSubunitLinkage {
     __obj.asInstanceOf[SubstanceNucleicAcidSubunitLinkage]
   }
   
-  extension [Self <: SubstanceNucleicAcidSubunitLinkage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubstanceNucleicAcidSubunitLinkage] (val x: Self) extends AnyVal {
     
     inline def setConnectivity(value: String): Self = StObject.set(x, "connectivity", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object PackageJsonInfoCache {
     __obj.asInstanceOf[PackageJsonInfoCache]
   }
   
-  extension [Self <: PackageJsonInfoCache](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PackageJsonInfoCache] (val x: Self) extends AnyVal {
     
     inline def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
   }

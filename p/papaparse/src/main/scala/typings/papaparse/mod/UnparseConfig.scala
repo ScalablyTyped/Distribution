@@ -83,7 +83,8 @@ object UnparseConfig {
     __obj.asInstanceOf[UnparseConfig]
   }
   
-  extension [Self <: UnparseConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UnparseConfig] (val x: Self) extends AnyVal {
     
     inline def setColumns(value: js.Array[String]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     

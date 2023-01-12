@@ -19,7 +19,8 @@ object CompletionEntryDataResolved {
     __obj.asInstanceOf[CompletionEntryDataResolved]
   }
   
-  extension [Self <: CompletionEntryDataResolved](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CompletionEntryDataResolved] (val x: Self) extends AnyVal {
     
     inline def setModuleSpecifier(value: java.lang.String): Self = StObject.set(x, "moduleSpecifier", value.asInstanceOf[js.Any])
   }

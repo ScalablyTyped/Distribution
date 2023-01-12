@@ -31,7 +31,8 @@ object QueryResult {
     __obj.asInstanceOf[QueryResult]
   }
   
-  extension [Self <: QueryResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryResult] (val x: Self) extends AnyVal {
     
     inline def setEntityManager(value: EntityManager): Self = StObject.set(x, "entityManager", value.asInstanceOf[js.Any])
     

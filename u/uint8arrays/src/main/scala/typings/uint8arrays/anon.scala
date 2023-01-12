@@ -140,7 +140,8 @@ object anon {
       __obj.asInstanceOf[Typeofbases]
     }
     
-    extension [Self <: Typeofbases](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Typeofbases] (val x: Self) extends AnyVal {
       
       inline def setBase10(value: Codec[base10, `9`]): Self = StObject.set(x, "base10", value.asInstanceOf[js.Any])
       

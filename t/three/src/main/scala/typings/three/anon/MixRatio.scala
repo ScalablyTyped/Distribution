@@ -27,7 +27,8 @@ object MixRatio {
     __obj.asInstanceOf[MixRatio]
   }
   
-  extension [Self <: MixRatio](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MixRatio] (val x: Self) extends AnyVal {
     
     inline def setMixRatio(value: IUniform[Any]): Self = StObject.set(x, "mixRatio", value.asInstanceOf[js.Any])
     

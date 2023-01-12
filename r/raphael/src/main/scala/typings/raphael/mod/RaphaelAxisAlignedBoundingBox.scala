@@ -62,7 +62,8 @@ object RaphaelAxisAlignedBoundingBox {
     __obj.asInstanceOf[RaphaelAxisAlignedBoundingBox]
   }
   
-  extension [Self <: RaphaelAxisAlignedBoundingBox](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RaphaelAxisAlignedBoundingBox] (val x: Self) extends AnyVal {
     
     inline def setCx(value: Double): Self = StObject.set(x, "cx", value.asInstanceOf[js.Any])
     

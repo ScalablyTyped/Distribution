@@ -20,7 +20,8 @@ object DOMException {
     __obj.asInstanceOf[DOMException]
   }
   
-  extension [Self <: DOMException](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DOMException] (val x: Self) extends AnyVal {
     
     inline def setCode(value: DOMExceptionType): Self = StObject.set(x, "Code", value.asInstanceOf[js.Any])
   }

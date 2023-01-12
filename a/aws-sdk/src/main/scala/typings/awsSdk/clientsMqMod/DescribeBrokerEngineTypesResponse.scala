@@ -28,7 +28,8 @@ object DescribeBrokerEngineTypesResponse {
     __obj.asInstanceOf[DescribeBrokerEngineTypesResponse]
   }
   
-  extension [Self <: DescribeBrokerEngineTypesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeBrokerEngineTypesResponse] (val x: Self) extends AnyVal {
     
     inline def setBrokerEngineTypes(value: listOfBrokerEngineType): Self = StObject.set(x, "BrokerEngineTypes", value.asInstanceOf[js.Any])
     

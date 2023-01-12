@@ -32,7 +32,8 @@ object IPixelGeometry {
     __obj.asInstanceOf[IPixelGeometry]
   }
   
-  extension [Self <: IPixelGeometry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPixelGeometry] (val x: Self) extends AnyVal {
     
     inline def setEquals_(value: IPixelGeometry => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction1(value))
     

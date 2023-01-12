@@ -51,7 +51,8 @@ object typesSliderUseSliderMod {
       __obj.asInstanceOf[SliderRequiredProps]
     }
     
-    extension [Self <: SliderRequiredProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SliderRequiredProps] (val x: Self) extends AnyVal {
       
       inline def setValue(value: SliderValue): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
@@ -78,7 +79,8 @@ object typesSliderUseSliderMod {
       __obj.asInstanceOf[UseSliderOptions]
     }
     
-    extension [Self <: UseSliderOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UseSliderOptions] (val x: Self) extends AnyVal {
       
       inline def setOnChange(value: /* value */ SliderValue => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       

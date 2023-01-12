@@ -46,7 +46,8 @@ object BooleanCellValue {
     __obj.asInstanceOf[BooleanCellValue]
   }
   
-  extension [Self <: BooleanCellValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BooleanCellValue] (val x: Self) extends AnyVal {
     
     inline def setBasicType(value: boolean | Boolean): Self = StObject.set(x, "basicType", value.asInstanceOf[js.Any])
     

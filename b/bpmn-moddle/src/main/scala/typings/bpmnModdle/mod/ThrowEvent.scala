@@ -43,7 +43,8 @@ object ThrowEvent {
     __obj.asInstanceOf[ThrowEvent]
   }
   
-  extension [Self <: ThrowEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ThrowEvent] (val x: Self) extends AnyVal {
     
     inline def setDataInputAssociations(value: js.Array[DataInputAssociation]): Self = StObject.set(x, "dataInputAssociations", value.asInstanceOf[js.Any])
     

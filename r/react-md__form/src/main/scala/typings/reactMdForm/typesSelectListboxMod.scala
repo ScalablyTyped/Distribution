@@ -128,7 +128,8 @@ object typesSelectListboxMod {
       __obj.asInstanceOf[ListboxChangeEventData]
     }
     
-    extension [Self <: ListboxChangeEventData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListboxChangeEventData] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -243,7 +244,8 @@ object typesSelectListboxMod {
       __obj.asInstanceOf[ListboxOptions]
     }
     
-    extension [Self <: ListboxOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListboxOptions] (val x: Self) extends AnyVal {
       
       inline def setDisableMovementChange(value: Boolean): Self = StObject.set(x, "disableMovementChange", value.asInstanceOf[js.Any])
       
@@ -829,7 +831,8 @@ object typesSelectListboxMod {
       __obj.asInstanceOf[ListboxProps]
     }
     
-    extension [Self <: ListboxProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListboxProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       

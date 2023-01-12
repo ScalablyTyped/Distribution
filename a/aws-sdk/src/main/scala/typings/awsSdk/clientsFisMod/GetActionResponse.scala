@@ -18,7 +18,8 @@ object GetActionResponse {
     __obj.asInstanceOf[GetActionResponse]
   }
   
-  extension [Self <: GetActionResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetActionResponse] (val x: Self) extends AnyVal {
     
     inline def setAction(value: Action): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     

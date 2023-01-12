@@ -55,7 +55,8 @@ object WorksheetRowSortedEventArgs {
     __obj.asInstanceOf[WorksheetRowSortedEventArgs]
   }
   
-  extension [Self <: WorksheetRowSortedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorksheetRowSortedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     

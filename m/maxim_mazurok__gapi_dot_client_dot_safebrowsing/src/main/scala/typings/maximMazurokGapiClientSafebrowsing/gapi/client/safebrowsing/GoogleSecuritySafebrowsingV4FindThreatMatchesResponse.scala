@@ -16,7 +16,8 @@ object GoogleSecuritySafebrowsingV4FindThreatMatchesResponse {
     __obj.asInstanceOf[GoogleSecuritySafebrowsingV4FindThreatMatchesResponse]
   }
   
-  extension [Self <: GoogleSecuritySafebrowsingV4FindThreatMatchesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleSecuritySafebrowsingV4FindThreatMatchesResponse] (val x: Self) extends AnyVal {
     
     inline def setMatches(value: js.Array[GoogleSecuritySafebrowsingV4ThreatMatch]): Self = StObject.set(x, "matches", value.asInstanceOf[js.Any])
     

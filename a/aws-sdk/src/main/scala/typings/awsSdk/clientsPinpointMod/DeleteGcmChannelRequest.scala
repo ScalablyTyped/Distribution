@@ -18,7 +18,8 @@ object DeleteGcmChannelRequest {
     __obj.asInstanceOf[DeleteGcmChannelRequest]
   }
   
-  extension [Self <: DeleteGcmChannelRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteGcmChannelRequest] (val x: Self) extends AnyVal {
     
     inline def setApplicationId(value: string): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
   }

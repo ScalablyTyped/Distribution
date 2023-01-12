@@ -114,7 +114,8 @@ object mod {
       __obj.asInstanceOf[DevProviderProps]
     }
     
-    extension [Self <: DevProviderProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DevProviderProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -151,7 +152,8 @@ object mod {
       __obj.asInstanceOf[createStyledOpts]
     }
     
-    extension [Self <: createStyledOpts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: createStyledOpts] (val x: Self) extends AnyVal {
       
       inline def setDriver(value: (/* style */ StyleObject, /* styletron */ StandardEngine) => String): Self = StObject.set(x, "driver", js.Any.fromFunction2(value))
       
@@ -174,7 +176,8 @@ object mod {
         __obj.asInstanceOf[Window]
       }
       
-      extension [Self <: Window](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Window] (val x: Self) extends AnyVal {
         
         inline def set__STYLETRON_DEVTOOLS__(value: Any): Self = StObject.set(x, "__STYLETRON_DEVTOOLS__", value.asInstanceOf[js.Any])
       }

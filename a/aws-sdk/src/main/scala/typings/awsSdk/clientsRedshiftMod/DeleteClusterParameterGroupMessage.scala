@@ -18,7 +18,8 @@ object DeleteClusterParameterGroupMessage {
     __obj.asInstanceOf[DeleteClusterParameterGroupMessage]
   }
   
-  extension [Self <: DeleteClusterParameterGroupMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteClusterParameterGroupMessage] (val x: Self) extends AnyVal {
     
     inline def setParameterGroupName(value: String): Self = StObject.set(x, "ParameterGroupName", value.asInstanceOf[js.Any])
   }

@@ -19,7 +19,8 @@ object RevertVariableResponse {
     __obj.asInstanceOf[RevertVariableResponse]
   }
   
-  extension [Self <: RevertVariableResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RevertVariableResponse] (val x: Self) extends AnyVal {
     
     inline def setVariable(value: Variable): Self = StObject.set(x, "variable", value.asInstanceOf[js.Any])
     

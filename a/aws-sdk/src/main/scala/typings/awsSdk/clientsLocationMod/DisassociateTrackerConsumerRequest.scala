@@ -23,7 +23,8 @@ object DisassociateTrackerConsumerRequest {
     __obj.asInstanceOf[DisassociateTrackerConsumerRequest]
   }
   
-  extension [Self <: DisassociateTrackerConsumerRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisassociateTrackerConsumerRequest] (val x: Self) extends AnyVal {
     
     inline def setConsumerArn(value: Arn): Self = StObject.set(x, "ConsumerArn", value.asInstanceOf[js.Any])
     

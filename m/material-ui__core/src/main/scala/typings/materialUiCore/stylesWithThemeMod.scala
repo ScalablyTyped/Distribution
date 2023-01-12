@@ -35,7 +35,8 @@ object stylesWithThemeMod extends Shortcut {
       __obj.asInstanceOf[ThemedComponentProps]
     }
     
-    extension [Self <: ThemedComponentProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ThemedComponentProps] (val x: Self) extends AnyVal {
       
       inline def setInnerRef(value: Ref[Any]): Self = StObject.set(x, "innerRef", value.asInstanceOf[js.Any])
       
@@ -70,7 +71,8 @@ object stylesWithThemeMod extends Shortcut {
       __obj.asInstanceOf[WithTheme]
     }
     
-    extension [Self <: WithTheme](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WithTheme] (val x: Self) extends AnyVal {
       
       inline def setTheme(value: Theme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     }

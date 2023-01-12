@@ -99,7 +99,8 @@ object buildSrcBundlingCallsBundleExecutorMod {
       __obj.asInstanceOf[BundleOptions]
     }
     
-    extension [Self <: BundleOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BundleOptions] (val x: Self) extends AnyVal {
       
       inline def setDelayThreshold(value: Double): Self = StObject.set(x, "delayThreshold", value.asInstanceOf[js.Any])
       

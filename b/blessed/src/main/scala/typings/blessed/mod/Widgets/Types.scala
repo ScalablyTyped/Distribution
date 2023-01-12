@@ -41,7 +41,8 @@ object Types {
       __obj.asInstanceOf[Cursor]
     }
     
-    extension [Self <: Cursor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Cursor] (val x: Self) extends AnyVal {
       
       inline def setArtificial(value: Boolean): Self = StObject.set(x, "artificial", value.asInstanceOf[js.Any])
       
@@ -66,7 +67,8 @@ object Types {
       __obj.asInstanceOf[ListbarCommand]
     }
     
-    extension [Self <: ListbarCommand](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListbarCommand] (val x: Self) extends AnyVal {
       
       inline def setCallback(value: () => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction0(value))
       
@@ -122,7 +124,8 @@ object Types {
       __obj.asInstanceOf[TBorder]
     }
     
-    extension [Self <: TBorder](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TBorder] (val x: Self) extends AnyVal {
       
       inline def setBg(value: Double): Self = StObject.set(x, "bg", value.asInstanceOf[js.Any])
       
@@ -179,7 +182,8 @@ object Types {
       __obj.asInstanceOf[TCursor]
     }
     
-    extension [Self <: TCursor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TCursor] (val x: Self) extends AnyVal {
       
       inline def setArtificial(value: Boolean): Self = StObject.set(x, "artificial", value.asInstanceOf[js.Any])
       
@@ -220,7 +224,8 @@ object Types {
       __obj.asInstanceOf[TImage]
     }
     
-    extension [Self <: TImage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TImage] (val x: Self) extends AnyVal {
       
       inline def setBmp(value: Any): Self = StObject.set(x, "bmp", value.asInstanceOf[js.Any])
       
@@ -290,7 +295,8 @@ object Types {
       __obj.asInstanceOf[TStyle]
     }
     
-    extension [Self <: TStyle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TStyle] (val x: Self) extends AnyVal {
       
       inline def setBg(value: String): Self = StObject.set(x, "bg", value.asInstanceOf[js.Any])
       

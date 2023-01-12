@@ -17,7 +17,8 @@ object ModelCustomerServiceContact {
     __obj.asInstanceOf[ModelCustomerServiceContact]
   }
   
-  extension [Self <: ModelCustomerServiceContact](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModelCustomerServiceContact] (val x: Self) extends AnyVal {
     
     inline def setEmails(value: js.Array[String]): Self = StObject.set(x, "emails", value.asInstanceOf[js.Any])
     

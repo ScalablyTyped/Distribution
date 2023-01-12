@@ -51,7 +51,8 @@ object Dialog {
     __obj.asInstanceOf[Dialog]
   }
   
-  extension [Self <: Dialog](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Dialog] (val x: Self) extends AnyVal {
     
     inline def setBasic(value: DialogTheme): Self = StObject.set(x, "basic", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object GroupsCountResult {
     __obj.asInstanceOf[GroupsCountResult]
   }
   
-  extension [Self <: GroupsCountResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GroupsCountResult] (val x: Self) extends AnyVal {
     
     inline def setAccountCountErrors(value: js.Array[AccountCountError]): Self = StObject.set(x, "accountCountErrors", value.asInstanceOf[js.Any])
     

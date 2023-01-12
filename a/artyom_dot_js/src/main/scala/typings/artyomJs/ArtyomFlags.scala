@@ -15,7 +15,8 @@ object ArtyomFlags {
     __obj.asInstanceOf[ArtyomFlags]
   }
   
-  extension [Self <: ArtyomFlags](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ArtyomFlags] (val x: Self) extends AnyVal {
     
     inline def setRestartRecognition(value: Boolean): Self = StObject.set(x, "restartRecognition", value.asInstanceOf[js.Any])
     

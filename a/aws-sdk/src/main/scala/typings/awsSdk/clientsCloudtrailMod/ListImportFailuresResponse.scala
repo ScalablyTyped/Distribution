@@ -23,7 +23,8 @@ object ListImportFailuresResponse {
     __obj.asInstanceOf[ListImportFailuresResponse]
   }
   
-  extension [Self <: ListImportFailuresResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListImportFailuresResponse] (val x: Self) extends AnyVal {
     
     inline def setFailures(value: ImportFailureList): Self = StObject.set(x, "Failures", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object GetMultiRegionAccessPointPolicyResult {
     __obj.asInstanceOf[GetMultiRegionAccessPointPolicyResult]
   }
   
-  extension [Self <: GetMultiRegionAccessPointPolicyResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetMultiRegionAccessPointPolicyResult] (val x: Self) extends AnyVal {
     
     inline def setPolicy(value: MultiRegionAccessPointPolicyDocument): Self = StObject.set(x, "Policy", value.asInstanceOf[js.Any])
     

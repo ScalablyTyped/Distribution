@@ -32,7 +32,8 @@ object PickOptionsaddDeclaration {
     __obj.asInstanceOf[PickOptionsaddDeclaration]
   }
   
-  extension [Self <: PickOptionsaddDeclaration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickOptionsaddDeclaration] (val x: Self) extends AnyVal {
     
     inline def setAddDeclaration(
       value: /* declaration */ (NameK[

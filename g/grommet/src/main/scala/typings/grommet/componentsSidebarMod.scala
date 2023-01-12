@@ -44,7 +44,8 @@ object componentsSidebarMod {
       __obj.asInstanceOf[SidebarProps]
     }
     
-    extension [Self <: SidebarProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SidebarProps] (val x: Self) extends AnyVal {
       
       inline def setFooter(value: ReactNode): Self = StObject.set(x, "footer", value.asInstanceOf[js.Any])
       

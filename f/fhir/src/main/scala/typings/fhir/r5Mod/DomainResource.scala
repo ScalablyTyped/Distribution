@@ -35,7 +35,8 @@ object DomainResource {
     __obj.asInstanceOf[DomainResource]
   }
   
-  extension [Self <: DomainResource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DomainResource] (val x: Self) extends AnyVal {
     
     inline def setContained(value: js.Array[FhirResource]): Self = StObject.set(x, "contained", value.asInstanceOf[js.Any])
     

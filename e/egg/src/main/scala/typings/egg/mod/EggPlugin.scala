@@ -40,7 +40,8 @@ object EggPlugin {
     __obj.asInstanceOf[EggPlugin]
   }
   
-  extension [Self <: EggPlugin](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EggPlugin] (val x: Self) extends AnyVal {
     
     inline def setDevelopment(value: EggPluginItem): Self = StObject.set(x, "development", value.asInstanceOf[js.Any])
     

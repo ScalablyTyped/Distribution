@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "webprogbase-console-view"
-version := "1.2-dt-20211202Z-3785d5"
+version := "1.2-dt-20211202Z-d7b9eb"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

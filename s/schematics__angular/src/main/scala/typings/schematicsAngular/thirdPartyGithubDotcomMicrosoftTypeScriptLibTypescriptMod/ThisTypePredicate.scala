@@ -28,7 +28,8 @@ object ThisTypePredicate {
     __obj.asInstanceOf[ThisTypePredicate]
   }
   
-  extension [Self <: ThisTypePredicate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ThisTypePredicate] (val x: Self) extends AnyVal {
     
     inline def setKind(value: This): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

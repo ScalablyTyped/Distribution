@@ -28,7 +28,8 @@ object GetResourcesResponse {
     __obj.asInstanceOf[GetResourcesResponse]
   }
   
-  extension [Self <: GetResourcesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetResourcesResponse] (val x: Self) extends AnyVal {
     
     inline def setDocuments(value: DocumentMetadataList): Self = StObject.set(x, "Documents", value.asInstanceOf[js.Any])
     

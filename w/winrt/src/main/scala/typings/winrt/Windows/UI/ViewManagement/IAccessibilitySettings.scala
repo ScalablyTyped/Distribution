@@ -19,7 +19,8 @@ object IAccessibilitySettings {
     __obj.asInstanceOf[IAccessibilitySettings]
   }
   
-  extension [Self <: IAccessibilitySettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IAccessibilitySettings] (val x: Self) extends AnyVal {
     
     inline def setHighContrast(value: Boolean): Self = StObject.set(x, "highContrast", value.asInstanceOf[js.Any])
     

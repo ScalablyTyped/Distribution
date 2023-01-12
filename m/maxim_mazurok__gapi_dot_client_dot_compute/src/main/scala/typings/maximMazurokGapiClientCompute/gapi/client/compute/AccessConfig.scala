@@ -50,7 +50,8 @@ object AccessConfig {
     __obj.asInstanceOf[AccessConfig]
   }
   
-  extension [Self <: AccessConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccessConfig] (val x: Self) extends AnyVal {
     
     inline def setExternalIpv6(value: String): Self = StObject.set(x, "externalIpv6", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object CreateTableParams {
     __obj.asInstanceOf[CreateTableParams]
   }
   
-  extension [Self <: CreateTableParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateTableParams] (val x: Self) extends AnyVal {
     
     inline def setIndexMetas(value: js.Array[IndexMeta]): Self = StObject.set(x, "indexMetas", value.asInstanceOf[js.Any])
     

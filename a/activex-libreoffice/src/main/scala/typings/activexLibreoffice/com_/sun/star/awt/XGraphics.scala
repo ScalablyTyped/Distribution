@@ -203,7 +203,8 @@ object XGraphics {
     __obj.asInstanceOf[XGraphics]
   }
   
-  extension [Self <: XGraphics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XGraphics] (val x: Self) extends AnyVal {
     
     inline def setCopy(value: (XDevice, Double, Double, Double, Double, Double, Double, Double, Double) => Unit): Self = StObject.set(x, "copy", js.Any.fromFunction9(value))
     

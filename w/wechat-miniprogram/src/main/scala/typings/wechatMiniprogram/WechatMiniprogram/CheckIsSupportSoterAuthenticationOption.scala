@@ -22,7 +22,8 @@ object CheckIsSupportSoterAuthenticationOption {
     __obj.asInstanceOf[CheckIsSupportSoterAuthenticationOption]
   }
   
-  extension [Self <: CheckIsSupportSoterAuthenticationOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CheckIsSupportSoterAuthenticationOption] (val x: Self) extends AnyVal {
     
     inline def setComplete(value: /* res */ GeneralCallbackResult => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
     

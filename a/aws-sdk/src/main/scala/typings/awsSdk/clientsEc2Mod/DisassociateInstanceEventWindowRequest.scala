@@ -31,7 +31,8 @@ object DisassociateInstanceEventWindowRequest {
     __obj.asInstanceOf[DisassociateInstanceEventWindowRequest]
   }
   
-  extension [Self <: DisassociateInstanceEventWindowRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisassociateInstanceEventWindowRequest] (val x: Self) extends AnyVal {
     
     inline def setAssociationTarget(value: InstanceEventWindowDisassociationRequest): Self = StObject.set(x, "AssociationTarget", value.asInstanceOf[js.Any])
     

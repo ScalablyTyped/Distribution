@@ -17,7 +17,8 @@ object StackNode {
     __obj.asInstanceOf[StackNode[T]]
   }
   
-  extension [Self <: StackNode[?], T](x: Self & StackNode[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StackNode[?], T] (val x: Self & StackNode[T]) extends AnyVal {
     
     inline def setNext(value: StackNode[T]): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
     

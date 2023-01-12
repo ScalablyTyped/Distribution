@@ -19,7 +19,8 @@ object AssignedLabel {
     __obj.asInstanceOf[AssignedLabel]
   }
   
-  extension [Self <: AssignedLabel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssignedLabel] (val x: Self) extends AnyVal {
     
     inline def setDisplayName(value: NullableOption[String]): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     

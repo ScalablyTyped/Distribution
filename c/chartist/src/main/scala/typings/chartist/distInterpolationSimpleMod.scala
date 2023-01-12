@@ -44,7 +44,8 @@ object distInterpolationSimpleMod {
       __obj.asInstanceOf[SimpleInteractionOptions]
     }
     
-    extension [Self <: SimpleInteractionOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SimpleInteractionOptions] (val x: Self) extends AnyVal {
       
       inline def setDivisor(value: Double): Self = StObject.set(x, "divisor", value.asInstanceOf[js.Any])
       

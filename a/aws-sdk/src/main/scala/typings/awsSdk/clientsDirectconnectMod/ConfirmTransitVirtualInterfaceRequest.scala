@@ -23,7 +23,8 @@ object ConfirmTransitVirtualInterfaceRequest {
     __obj.asInstanceOf[ConfirmTransitVirtualInterfaceRequest]
   }
   
-  extension [Self <: ConfirmTransitVirtualInterfaceRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConfirmTransitVirtualInterfaceRequest] (val x: Self) extends AnyVal {
     
     inline def setDirectConnectGatewayId(value: DirectConnectGatewayId): Self = StObject.set(x, "directConnectGatewayId", value.asInstanceOf[js.Any])
     

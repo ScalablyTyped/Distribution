@@ -25,7 +25,8 @@ object GetStorageOption {
     __obj.asInstanceOf[GetStorageOption]
   }
   
-  extension [Self <: GetStorageOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetStorageOption] (val x: Self) extends AnyVal {
     
     inline def setComplete(value: /* res */ GeneralCallbackResult => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
     

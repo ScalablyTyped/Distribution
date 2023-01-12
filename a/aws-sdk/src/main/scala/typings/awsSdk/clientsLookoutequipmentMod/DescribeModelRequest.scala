@@ -18,7 +18,8 @@ object DescribeModelRequest {
     __obj.asInstanceOf[DescribeModelRequest]
   }
   
-  extension [Self <: DescribeModelRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeModelRequest] (val x: Self) extends AnyVal {
     
     inline def setModelName(value: ModelName): Self = StObject.set(x, "ModelName", value.asInstanceOf[js.Any])
   }

@@ -34,7 +34,8 @@ object AXValue {
     __obj.asInstanceOf[AXValue]
   }
   
-  extension [Self <: AXValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AXValue] (val x: Self) extends AnyVal {
     
     inline def setRelatedNodes(value: js.Array[AXRelatedNode]): Self = StObject.set(x, "relatedNodes", value.asInstanceOf[js.Any])
     

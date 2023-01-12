@@ -32,7 +32,8 @@ object HeatmapTransform {
     __obj.asInstanceOf[HeatmapTransform]
   }
   
-  extension [Self <: HeatmapTransform](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HeatmapTransform] (val x: Self) extends AnyVal {
     
     inline def setAs(value: String | SignalRef): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
     

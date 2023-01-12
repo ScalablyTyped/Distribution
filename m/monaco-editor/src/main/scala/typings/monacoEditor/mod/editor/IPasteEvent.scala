@@ -18,7 +18,8 @@ object IPasteEvent {
     __obj.asInstanceOf[IPasteEvent]
   }
   
-  extension [Self <: IPasteEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPasteEvent] (val x: Self) extends AnyVal {
     
     inline def setLanguageId(value: String): Self = StObject.set(x, "languageId", value.asInstanceOf[js.Any])
     

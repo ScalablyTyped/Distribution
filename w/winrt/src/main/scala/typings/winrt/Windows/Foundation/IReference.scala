@@ -59,7 +59,8 @@ object IReference {
     __obj.asInstanceOf[IReference[T]]
   }
   
-  extension [Self <: IReference[?], T](x: Self & IReference[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IReference[?], T] (val x: Self & IReference[T]) extends AnyVal {
     
     inline def setValue(value: T): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }

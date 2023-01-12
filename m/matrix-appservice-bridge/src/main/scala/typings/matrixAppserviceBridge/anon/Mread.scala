@@ -18,7 +18,8 @@ object Mread {
     __obj.asInstanceOf[Mread]
   }
   
-  extension [Self <: Mread](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Mread] (val x: Self) extends AnyVal {
     
     inline def setMDotread(value: StringDictionary[TsNumber]): Self = StObject.set(x, "m.read", value.asInstanceOf[js.Any])
   }

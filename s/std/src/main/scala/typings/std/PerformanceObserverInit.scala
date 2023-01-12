@@ -22,7 +22,8 @@ object PerformanceObserverInit {
     __obj.asInstanceOf[PerformanceObserverInit]
   }
   
-  extension [Self <: PerformanceObserverInit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PerformanceObserverInit] (val x: Self) extends AnyVal {
     
     inline def setBuffered(value: scala.Boolean): Self = StObject.set(x, "buffered", value.asInstanceOf[js.Any])
     

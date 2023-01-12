@@ -20,7 +20,8 @@ object ResolverOptions {
     __obj.asInstanceOf[ResolverOptions]
   }
   
-  extension [Self <: ResolverOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResolverOptions] (val x: Self) extends AnyVal {
     
     inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     

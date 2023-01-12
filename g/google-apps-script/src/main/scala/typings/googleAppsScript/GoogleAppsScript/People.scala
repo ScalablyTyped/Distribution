@@ -252,7 +252,8 @@ object People {
           __obj.asInstanceOf[MembersCollection]
         }
         
-        extension [Self <: MembersCollection](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: MembersCollection] (val x: Self) extends AnyVal {
           
           inline def setModify(value: (ModifyContactGroupMembersRequest, String) => ModifyContactGroupMembersResponse): Self = StObject.set(x, "modify", js.Any.fromFunction2(value))
         }
@@ -382,7 +383,8 @@ object People {
     }
   }
   
-  extension [Self <: People](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: People] (val x: Self) extends AnyVal {
     
     inline def setContactGroups(value: ContactGroupsCollection): Self = StObject.set(x, "ContactGroups", value.asInstanceOf[js.Any])
     
@@ -510,7 +512,8 @@ object People {
         __obj.asInstanceOf[Address]
       }
       
-      extension [Self <: Address](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Address] (val x: Self) extends AnyVal {
         
         inline def setCity(value: String): Self = StObject.set(x, "city", value.asInstanceOf[js.Any])
         
@@ -575,7 +578,8 @@ object People {
         __obj.asInstanceOf[AgeRangeType]
       }
       
-      extension [Self <: AgeRangeType](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AgeRangeType] (val x: Self) extends AnyVal {
         
         inline def setAgeRange(value: String): Self = StObject.set(x, "ageRange", value.asInstanceOf[js.Any])
         
@@ -598,7 +602,8 @@ object People {
         __obj.asInstanceOf[BatchGetContactGroupsResponse]
       }
       
-      extension [Self <: BatchGetContactGroupsResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: BatchGetContactGroupsResponse] (val x: Self) extends AnyVal {
         
         inline def setResponses(value: js.Array[ContactGroupResponse]): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
         
@@ -623,7 +628,8 @@ object People {
         __obj.asInstanceOf[Biography]
       }
       
-      extension [Self <: Biography](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Biography] (val x: Self) extends AnyVal {
         
         inline def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
         
@@ -654,7 +660,8 @@ object People {
         __obj.asInstanceOf[Birthday]
       }
       
-      extension [Self <: Birthday](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Birthday] (val x: Self) extends AnyVal {
         
         inline def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
         
@@ -683,7 +690,8 @@ object People {
         __obj.asInstanceOf[BraggingRights]
       }
       
-      extension [Self <: BraggingRights](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: BraggingRights] (val x: Self) extends AnyVal {
         
         inline def setMetadata(value: FieldMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
         
@@ -720,7 +728,8 @@ object People {
         __obj.asInstanceOf[ContactGroup]
       }
       
-      extension [Self <: ContactGroup](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ContactGroup] (val x: Self) extends AnyVal {
         
         inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
         
@@ -769,7 +778,8 @@ object People {
         __obj.asInstanceOf[ContactGroupMembership]
       }
       
-      extension [Self <: ContactGroupMembership](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ContactGroupMembership] (val x: Self) extends AnyVal {
         
         inline def setContactGroupId(value: String): Self = StObject.set(x, "contactGroupId", value.asInstanceOf[js.Any])
         
@@ -790,7 +800,8 @@ object People {
         __obj.asInstanceOf[ContactGroupMetadata]
       }
       
-      extension [Self <: ContactGroupMetadata](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ContactGroupMetadata] (val x: Self) extends AnyVal {
         
         inline def setDeleted(value: Boolean): Self = StObject.set(x, "deleted", value.asInstanceOf[js.Any])
         
@@ -817,7 +828,8 @@ object People {
         __obj.asInstanceOf[ContactGroupResponse]
       }
       
-      extension [Self <: ContactGroupResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ContactGroupResponse] (val x: Self) extends AnyVal {
         
         inline def setContactGroup(value: ContactGroup): Self = StObject.set(x, "contactGroup", value.asInstanceOf[js.Any])
         
@@ -848,7 +860,8 @@ object People {
         __obj.asInstanceOf[CoverPhoto]
       }
       
-      extension [Self <: CoverPhoto](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CoverPhoto] (val x: Self) extends AnyVal {
         
         inline def setDefault(value: Boolean): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
         
@@ -875,7 +888,8 @@ object People {
         __obj.asInstanceOf[CreateContactGroupRequest]
       }
       
-      extension [Self <: CreateContactGroupRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CreateContactGroupRequest] (val x: Self) extends AnyVal {
         
         inline def setContactGroup(value: ContactGroup): Self = StObject.set(x, "contactGroup", value.asInstanceOf[js.Any])
         
@@ -898,7 +912,8 @@ object People {
         __obj.asInstanceOf[Date]
       }
       
-      extension [Self <: Date](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Date] (val x: Self) extends AnyVal {
         
         inline def setDay(value: Double): Self = StObject.set(x, "day", value.asInstanceOf[js.Any])
         
@@ -925,7 +940,8 @@ object People {
         __obj.asInstanceOf[DomainMembership]
       }
       
-      extension [Self <: DomainMembership](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: DomainMembership] (val x: Self) extends AnyVal {
         
         inline def setInViewerDomain(value: Boolean): Self = StObject.set(x, "inViewerDomain", value.asInstanceOf[js.Any])
         
@@ -952,7 +968,8 @@ object People {
         __obj.asInstanceOf[EmailAddress]
       }
       
-      extension [Self <: EmailAddress](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: EmailAddress] (val x: Self) extends AnyVal {
         
         inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
         
@@ -993,7 +1010,8 @@ object People {
         __obj.asInstanceOf[Event]
       }
       
-      extension [Self <: Event](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Event] (val x: Self) extends AnyVal {
         
         inline def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
         
@@ -1028,7 +1046,8 @@ object People {
         __obj.asInstanceOf[FieldMetadata]
       }
       
-      extension [Self <: FieldMetadata](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: FieldMetadata] (val x: Self) extends AnyVal {
         
         inline def setPrimary(value: Boolean): Self = StObject.set(x, "primary", value.asInstanceOf[js.Any])
         
@@ -1059,7 +1078,8 @@ object People {
         __obj.asInstanceOf[Gender]
       }
       
-      extension [Self <: Gender](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Gender] (val x: Self) extends AnyVal {
         
         inline def setFormattedValue(value: String): Self = StObject.set(x, "formattedValue", value.asInstanceOf[js.Any])
         
@@ -1086,7 +1106,8 @@ object People {
         __obj.asInstanceOf[GetPeopleResponse]
       }
       
-      extension [Self <: GetPeopleResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: GetPeopleResponse] (val x: Self) extends AnyVal {
         
         inline def setResponses(value: js.Array[PersonResponse]): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
         
@@ -1117,7 +1138,8 @@ object People {
         __obj.asInstanceOf[ImClient]
       }
       
-      extension [Self <: ImClient](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ImClient] (val x: Self) extends AnyVal {
         
         inline def setFormattedProtocol(value: String): Self = StObject.set(x, "formattedProtocol", value.asInstanceOf[js.Any])
         
@@ -1158,7 +1180,8 @@ object People {
         __obj.asInstanceOf[Interest]
       }
       
-      extension [Self <: Interest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Interest] (val x: Self) extends AnyVal {
         
         inline def setMetadata(value: FieldMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
         
@@ -1189,7 +1212,8 @@ object People {
         __obj.asInstanceOf[ListConnectionsResponse]
       }
       
-      extension [Self <: ListConnectionsResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ListConnectionsResponse] (val x: Self) extends AnyVal {
         
         inline def setConnections(value: js.Array[Person]): Self = StObject.set(x, "connections", value.asInstanceOf[js.Any])
         
@@ -1232,7 +1256,8 @@ object People {
         __obj.asInstanceOf[ListContactGroupsResponse]
       }
       
-      extension [Self <: ListContactGroupsResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ListContactGroupsResponse] (val x: Self) extends AnyVal {
         
         inline def setContactGroups(value: js.Array[ContactGroup]): Self = StObject.set(x, "contactGroups", value.asInstanceOf[js.Any])
         
@@ -1267,7 +1292,8 @@ object People {
         __obj.asInstanceOf[Locale]
       }
       
-      extension [Self <: Locale](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Locale] (val x: Self) extends AnyVal {
         
         inline def setMetadata(value: FieldMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
         
@@ -1294,7 +1320,8 @@ object People {
         __obj.asInstanceOf[Membership]
       }
       
-      extension [Self <: Membership](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Membership] (val x: Self) extends AnyVal {
         
         inline def setContactGroupMembership(value: ContactGroupMembership): Self = StObject.set(x, "contactGroupMembership", value.asInstanceOf[js.Any])
         
@@ -1323,7 +1350,8 @@ object People {
         __obj.asInstanceOf[ModifyContactGroupMembersRequest]
       }
       
-      extension [Self <: ModifyContactGroupMembersRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ModifyContactGroupMembersRequest] (val x: Self) extends AnyVal {
         
         inline def setResourceNamesToAdd(value: js.Array[String]): Self = StObject.set(x, "resourceNamesToAdd", value.asInstanceOf[js.Any])
         
@@ -1350,7 +1378,8 @@ object People {
         __obj.asInstanceOf[ModifyContactGroupMembersResponse]
       }
       
-      extension [Self <: ModifyContactGroupMembersResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ModifyContactGroupMembersResponse] (val x: Self) extends AnyVal {
         
         inline def setNotFoundResourceNames(value: js.Array[String]): Self = StObject.set(x, "notFoundResourceNames", value.asInstanceOf[js.Any])
         
@@ -1397,7 +1426,8 @@ object People {
         __obj.asInstanceOf[Name]
       }
       
-      extension [Self <: Name](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Name] (val x: Self) extends AnyVal {
         
         inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
         
@@ -1472,7 +1502,8 @@ object People {
         __obj.asInstanceOf[Nickname]
       }
       
-      extension [Self <: Nickname](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Nickname] (val x: Self) extends AnyVal {
         
         inline def setMetadata(value: FieldMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
         
@@ -1501,7 +1532,8 @@ object People {
         __obj.asInstanceOf[Occupation]
       }
       
-      extension [Self <: Occupation](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Occupation] (val x: Self) extends AnyVal {
         
         inline def setMetadata(value: FieldMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
         
@@ -1550,7 +1582,8 @@ object People {
         __obj.asInstanceOf[Organization]
       }
       
-      extension [Self <: Organization](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Organization] (val x: Self) extends AnyVal {
         
         inline def setCurrent(value: Boolean): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
         
@@ -1683,7 +1716,8 @@ object People {
         __obj.asInstanceOf[Person]
       }
       
-      extension [Self <: Person](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Person] (val x: Self) extends AnyVal {
         
         inline def setAddresses(value: js.Array[Address]): Self = StObject.set(x, "addresses", value.asInstanceOf[js.Any])
         
@@ -1890,7 +1924,8 @@ object People {
         __obj.asInstanceOf[PersonMetadata]
       }
       
-      extension [Self <: PersonMetadata](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: PersonMetadata] (val x: Self) extends AnyVal {
         
         inline def setDeleted(value: Boolean): Self = StObject.set(x, "deleted", value.asInstanceOf[js.Any])
         
@@ -1937,7 +1972,8 @@ object People {
         __obj.asInstanceOf[PersonResponse]
       }
       
-      extension [Self <: PersonResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: PersonResponse] (val x: Self) extends AnyVal {
         
         inline def setHttpStatusCode(value: Double): Self = StObject.set(x, "httpStatusCode", value.asInstanceOf[js.Any])
         
@@ -1976,7 +2012,8 @@ object People {
         __obj.asInstanceOf[PhoneNumber]
       }
       
-      extension [Self <: PhoneNumber](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: PhoneNumber] (val x: Self) extends AnyVal {
         
         inline def setCanonicalForm(value: String): Self = StObject.set(x, "canonicalForm", value.asInstanceOf[js.Any])
         
@@ -2015,7 +2052,8 @@ object People {
         __obj.asInstanceOf[Photo]
       }
       
-      extension [Self <: Photo](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Photo] (val x: Self) extends AnyVal {
         
         inline def setDefault(value: Boolean): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
         
@@ -2044,7 +2082,8 @@ object People {
         __obj.asInstanceOf[ProfileMetadata]
       }
       
-      extension [Self <: ProfileMetadata](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ProfileMetadata] (val x: Self) extends AnyVal {
         
         inline def setObjectType(value: String): Self = StObject.set(x, "objectType", value.asInstanceOf[js.Any])
         
@@ -2075,7 +2114,8 @@ object People {
         __obj.asInstanceOf[Relation]
       }
       
-      extension [Self <: Relation](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Relation] (val x: Self) extends AnyVal {
         
         inline def setFormattedType(value: String): Self = StObject.set(x, "formattedType", value.asInstanceOf[js.Any])
         
@@ -2110,7 +2150,8 @@ object People {
         __obj.asInstanceOf[RelationshipInterest]
       }
       
-      extension [Self <: RelationshipInterest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: RelationshipInterest] (val x: Self) extends AnyVal {
         
         inline def setFormattedValue(value: String): Self = StObject.set(x, "formattedValue", value.asInstanceOf[js.Any])
         
@@ -2141,7 +2182,8 @@ object People {
         __obj.asInstanceOf[RelationshipStatus]
       }
       
-      extension [Self <: RelationshipStatus](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: RelationshipStatus] (val x: Self) extends AnyVal {
         
         inline def setFormattedValue(value: String): Self = StObject.set(x, "formattedValue", value.asInstanceOf[js.Any])
         
@@ -2172,7 +2214,8 @@ object People {
         __obj.asInstanceOf[Residence]
       }
       
-      extension [Self <: Residence](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Residence] (val x: Self) extends AnyVal {
         
         inline def setCurrent(value: Boolean): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
         
@@ -2205,7 +2248,8 @@ object People {
         __obj.asInstanceOf[SipAddress]
       }
       
-      extension [Self <: SipAddress](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SipAddress] (val x: Self) extends AnyVal {
         
         inline def setFormattedType(value: String): Self = StObject.set(x, "formattedType", value.asInstanceOf[js.Any])
         
@@ -2238,7 +2282,8 @@ object People {
         __obj.asInstanceOf[Skill]
       }
       
-      extension [Self <: Skill](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Skill] (val x: Self) extends AnyVal {
         
         inline def setMetadata(value: FieldMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
         
@@ -2269,7 +2314,8 @@ object People {
         __obj.asInstanceOf[Source]
       }
       
-      extension [Self <: Source](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Source] (val x: Self) extends AnyVal {
         
         inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
         
@@ -2308,7 +2354,8 @@ object People {
         __obj.asInstanceOf[Status]
       }
       
-      extension [Self <: Status](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Status] (val x: Self) extends AnyVal {
         
         inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
         
@@ -2339,7 +2386,8 @@ object People {
         __obj.asInstanceOf[Tagline]
       }
       
-      extension [Self <: Tagline](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Tagline] (val x: Self) extends AnyVal {
         
         inline def setMetadata(value: FieldMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
         
@@ -2362,7 +2410,8 @@ object People {
         __obj.asInstanceOf[UpdateContactGroupRequest]
       }
       
-      extension [Self <: UpdateContactGroupRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: UpdateContactGroupRequest] (val x: Self) extends AnyVal {
         
         inline def setContactGroup(value: ContactGroup): Self = StObject.set(x, "contactGroup", value.asInstanceOf[js.Any])
         
@@ -2387,7 +2436,8 @@ object People {
         __obj.asInstanceOf[Url]
       }
       
-      extension [Self <: Url](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Url] (val x: Self) extends AnyVal {
         
         inline def setFormattedType(value: String): Self = StObject.set(x, "formattedType", value.asInstanceOf[js.Any])
         
@@ -2422,7 +2472,8 @@ object People {
         __obj.asInstanceOf[UserDefined]
       }
       
-      extension [Self <: UserDefined](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: UserDefined] (val x: Self) extends AnyVal {
         
         inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
         

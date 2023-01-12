@@ -23,7 +23,8 @@ object UnsubscribeRequest {
     __obj.asInstanceOf[UnsubscribeRequest]
   }
   
-  extension [Self <: UnsubscribeRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UnsubscribeRequest] (val x: Self) extends AnyVal {
     
     inline def setArn(value: NotificationRuleArn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     

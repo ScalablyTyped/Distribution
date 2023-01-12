@@ -23,7 +23,8 @@ object CreateLoadBalancerListenerInput {
     __obj.asInstanceOf[CreateLoadBalancerListenerInput]
   }
   
-  extension [Self <: CreateLoadBalancerListenerInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateLoadBalancerListenerInput] (val x: Self) extends AnyVal {
     
     inline def setListeners(value: Listeners): Self = StObject.set(x, "Listeners", value.asInstanceOf[js.Any])
     

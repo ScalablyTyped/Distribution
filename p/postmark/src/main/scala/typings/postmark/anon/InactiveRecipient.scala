@@ -17,7 +17,8 @@ object InactiveRecipient {
     __obj.asInstanceOf[InactiveRecipient]
   }
   
-  extension [Self <: InactiveRecipient](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InactiveRecipient] (val x: Self) extends AnyVal {
     
     inline def setInactiveRecipient(value: Double): Self = StObject.set(x, "inactiveRecipient", value.asInstanceOf[js.Any])
     

@@ -41,7 +41,8 @@ object PartialStyleRulesRadioCla {
     __obj.asInstanceOf[PartialStyleRulesRadioCla]
   }
   
-  extension [Self <: PartialStyleRulesRadioCla](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialStyleRulesRadioCla] (val x: Self) extends AnyVal {
     
     inline def setChecked(
       value: CSSProperties | CreateCSSProperties[js.Object] | (PropsFunc[js.Object, CreateCSSProperties[js.Object]])

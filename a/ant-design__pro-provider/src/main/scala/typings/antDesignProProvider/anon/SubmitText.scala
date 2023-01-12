@@ -15,7 +15,8 @@ object SubmitText {
     __obj.asInstanceOf[SubmitText]
   }
   
-  extension [Self <: SubmitText](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubmitText] (val x: Self) extends AnyVal {
     
     inline def setSubmitText(value: String): Self = StObject.set(x, "submitText", value.asInstanceOf[js.Any])
   }

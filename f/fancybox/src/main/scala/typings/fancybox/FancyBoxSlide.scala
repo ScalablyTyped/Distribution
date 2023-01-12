@@ -57,7 +57,8 @@ object FancyBoxSlide {
     __obj.asInstanceOf[FancyBoxSlide]
   }
   
-  extension [Self <: FancyBoxSlide](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FancyBoxSlide] (val x: Self) extends AnyVal {
     
     inline def set$content(value: JQuery): Self = StObject.set(x, "$content", value.asInstanceOf[js.Any])
     

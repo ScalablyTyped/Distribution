@@ -33,7 +33,8 @@ object UpdateDomainContactRequest {
     __obj.asInstanceOf[UpdateDomainContactRequest]
   }
   
-  extension [Self <: UpdateDomainContactRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateDomainContactRequest] (val x: Self) extends AnyVal {
     
     inline def setAdminContact(value: ContactDetail): Self = StObject.set(x, "AdminContact", value.asInstanceOf[js.Any])
     

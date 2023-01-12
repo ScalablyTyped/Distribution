@@ -23,7 +23,8 @@ object DescribeAvailabilityOptionsRequest {
     __obj.asInstanceOf[DescribeAvailabilityOptionsRequest]
   }
   
-  extension [Self <: DescribeAvailabilityOptionsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeAvailabilityOptionsRequest] (val x: Self) extends AnyVal {
     
     inline def setDeployed(value: Boolean): Self = StObject.set(x, "Deployed", value.asInstanceOf[js.Any])
     

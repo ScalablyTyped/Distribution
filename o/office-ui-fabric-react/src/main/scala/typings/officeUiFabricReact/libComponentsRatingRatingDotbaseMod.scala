@@ -59,7 +59,8 @@ object libComponentsRatingRatingDotbaseMod {
       __obj.asInstanceOf[IRatingState]
     }
     
-    extension [Self <: IRatingState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IRatingState] (val x: Self) extends AnyVal {
       
       inline def setRating(value: Double): Self = StObject.set(x, "rating", value.asInstanceOf[js.Any])
       

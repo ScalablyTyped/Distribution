@@ -50,7 +50,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[VaporStoreOptions]
     }
     
-    extension [Self <: VaporStoreOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VaporStoreOptions] (val x: Self) extends AnyVal {
       
       inline def setBaseURL(value: String): Self = StObject.set(x, "baseURL", value.asInstanceOf[js.Any])
       

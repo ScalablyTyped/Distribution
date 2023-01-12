@@ -19,7 +19,8 @@ object AesCtrParams {
     __obj.asInstanceOf[AesCtrParams]
   }
   
-  extension [Self <: AesCtrParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AesCtrParams] (val x: Self) extends AnyVal {
     
     inline def setCounter(value: BufferSource): Self = StObject.set(x, "counter", value.asInstanceOf[js.Any])
     

@@ -35,7 +35,8 @@ object TableHeaders {
     __obj.asInstanceOf[TableHeaders]
   }
   
-  extension [Self <: TableHeaders](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TableHeaders] (val x: Self) extends AnyVal {
     
     inline def setCell_id(value: String): Self = StObject.set(x, "cell_id", value.asInstanceOf[js.Any])
     

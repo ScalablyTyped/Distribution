@@ -24,7 +24,8 @@ object ObjectACL {
     __obj.asInstanceOf[ObjectACL]
   }
   
-  extension [Self <: ObjectACL](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ObjectACL] (val x: Self) extends AnyVal {
     
     inline def setObject(value: Double): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
     

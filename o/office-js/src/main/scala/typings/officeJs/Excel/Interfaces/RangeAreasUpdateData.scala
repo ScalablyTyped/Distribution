@@ -40,7 +40,8 @@ object RangeAreasUpdateData {
     __obj.asInstanceOf[RangeAreasUpdateData]
   }
   
-  extension [Self <: RangeAreasUpdateData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RangeAreasUpdateData] (val x: Self) extends AnyVal {
     
     inline def setDataValidation(value: DataValidationUpdateData): Self = StObject.set(x, "dataValidation", value.asInstanceOf[js.Any])
     

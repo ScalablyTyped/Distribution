@@ -50,7 +50,8 @@ object WebAssemblyRenderContext {
     __obj.asInstanceOf[WebAssemblyRenderContext]
   }
   
-  extension [Self <: WebAssemblyRenderContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebAssemblyRenderContext] (val x: Self) extends AnyVal {
     
     inline def setChunk(value: Chunk): Self = StObject.set(x, "chunk", value.asInstanceOf[js.Any])
     

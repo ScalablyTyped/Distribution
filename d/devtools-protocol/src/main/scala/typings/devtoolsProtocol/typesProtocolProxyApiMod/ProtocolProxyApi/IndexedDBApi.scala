@@ -79,7 +79,8 @@ object IndexedDBApi {
     __obj.asInstanceOf[IndexedDBApi]
   }
   
-  extension [Self <: IndexedDBApi](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndexedDBApi] (val x: Self) extends AnyVal {
     
     inline def setClearObjectStore(value: ClearObjectStoreRequest => js.Promise[Unit]): Self = StObject.set(x, "clearObjectStore", js.Any.fromFunction1(value))
     

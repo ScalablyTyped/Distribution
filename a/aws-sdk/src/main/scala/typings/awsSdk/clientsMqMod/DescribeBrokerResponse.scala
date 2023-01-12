@@ -158,7 +158,8 @@ object DescribeBrokerResponse {
     __obj.asInstanceOf[DescribeBrokerResponse]
   }
   
-  extension [Self <: DescribeBrokerResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeBrokerResponse] (val x: Self) extends AnyVal {
     
     inline def setActionsRequired(value: listOfActionRequired): Self = StObject.set(x, "ActionsRequired", value.asInstanceOf[js.Any])
     

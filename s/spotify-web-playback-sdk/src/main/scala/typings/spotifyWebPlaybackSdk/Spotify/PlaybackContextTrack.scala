@@ -37,7 +37,8 @@ object PlaybackContextTrack {
     __obj.asInstanceOf[PlaybackContextTrack]
   }
   
-  extension [Self <: PlaybackContextTrack](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlaybackContextTrack] (val x: Self) extends AnyVal {
     
     inline def setArtists(value: js.Array[Entity]): Self = StObject.set(x, "artists", value.asInstanceOf[js.Any])
     

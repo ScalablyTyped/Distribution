@@ -23,7 +23,8 @@ object ReturnStatement {
     __obj.asInstanceOf[ReturnStatement]
   }
   
-  extension [Self <: ReturnStatement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReturnStatement] (val x: Self) extends AnyVal {
     
     inline def setReturns(value: TemplateChildNode | js.Array[TemplateChildNode] | JSChildNode): Self = StObject.set(x, "returns", value.asInstanceOf[js.Any])
     

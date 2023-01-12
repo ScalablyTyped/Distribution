@@ -111,7 +111,8 @@ object INavMeshParameters {
     __obj.asInstanceOf[INavMeshParameters]
   }
   
-  extension [Self <: INavMeshParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: INavMeshParameters] (val x: Self) extends AnyVal {
     
     inline def setBorderSize(value: Double): Self = StObject.set(x, "borderSize", value.asInstanceOf[js.Any])
     

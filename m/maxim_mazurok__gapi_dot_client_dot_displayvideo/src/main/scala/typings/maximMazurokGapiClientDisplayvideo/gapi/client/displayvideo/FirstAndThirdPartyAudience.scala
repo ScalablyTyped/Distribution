@@ -92,7 +92,8 @@ object FirstAndThirdPartyAudience {
     __obj.asInstanceOf[FirstAndThirdPartyAudience]
   }
   
-  extension [Self <: FirstAndThirdPartyAudience](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FirstAndThirdPartyAudience] (val x: Self) extends AnyVal {
     
     inline def setActiveDisplayAudienceSize(value: String): Self = StObject.set(x, "activeDisplayAudienceSize", value.asInstanceOf[js.Any])
     

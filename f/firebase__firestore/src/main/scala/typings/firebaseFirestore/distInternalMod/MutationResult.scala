@@ -35,7 +35,8 @@ object MutationResult {
     __obj.asInstanceOf[MutationResult]
   }
   
-  extension [Self <: MutationResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MutationResult] (val x: Self) extends AnyVal {
     
     inline def setTransformResults(value: js.Array[Value | Null]): Self = StObject.set(x, "transformResults", value.asInstanceOf[js.Any])
     

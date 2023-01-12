@@ -28,7 +28,8 @@ object ListAppInstanceAdminsResponse {
     __obj.asInstanceOf[ListAppInstanceAdminsResponse]
   }
   
-  extension [Self <: ListAppInstanceAdminsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListAppInstanceAdminsResponse] (val x: Self) extends AnyVal {
     
     inline def setAppInstanceAdmins(value: AppInstanceAdminList): Self = StObject.set(x, "AppInstanceAdmins", value.asInstanceOf[js.Any])
     

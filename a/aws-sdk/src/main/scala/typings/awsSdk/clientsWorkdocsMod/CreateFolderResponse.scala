@@ -18,7 +18,8 @@ object CreateFolderResponse {
     __obj.asInstanceOf[CreateFolderResponse]
   }
   
-  extension [Self <: CreateFolderResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateFolderResponse] (val x: Self) extends AnyVal {
     
     inline def setMetadata(value: FolderMetadata): Self = StObject.set(x, "Metadata", value.asInstanceOf[js.Any])
     

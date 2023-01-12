@@ -43,7 +43,8 @@ object Command {
     */
   inline def is(value: Any): /* is vscode-languageserver-types.vscode-languageserver-types.Command */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-types.vscode-languageserver-types.Command */ Boolean]
   
-  extension [Self <: Command](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Command] (val x: Self) extends AnyVal {
     
     inline def setArguments(value: js.Array[LSPAny]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
     

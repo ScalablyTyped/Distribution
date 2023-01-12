@@ -56,7 +56,8 @@ object csax {
       __obj.asInstanceOf[XCompressedDocumentHandler]
     }
     
-    extension [Self <: XCompressedDocumentHandler](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XCompressedDocumentHandler] (val x: Self) extends AnyVal {
       
       inline def setCompressedCharacters(value: String => Unit): Self = StObject.set(x, "compressedCharacters", js.Any.fromFunction1(value))
       
@@ -92,7 +93,8 @@ object csax {
       __obj.asInstanceOf[XMLAttribute]
     }
     
-    extension [Self <: XMLAttribute](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XMLAttribute] (val x: Self) extends AnyVal {
       
       inline def setSName(value: String): Self = StObject.set(x, "sName", value.asInstanceOf[js.Any])
       

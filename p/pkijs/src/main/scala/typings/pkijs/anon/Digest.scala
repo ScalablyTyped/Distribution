@@ -18,7 +18,8 @@ object Digest {
     __obj.asInstanceOf[Digest]
   }
   
-  extension [Self <: Digest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Digest] (val x: Self) extends AnyVal {
     
     inline def setDigest(value: String): Self = StObject.set(x, "digest", value.asInstanceOf[js.Any])
     

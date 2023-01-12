@@ -38,7 +38,8 @@ object IconDefaults {
     __obj.asInstanceOf[IconDefaults]
   }
   
-  extension [Self <: IconDefaults](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IconDefaults] (val x: Self) extends AnyVal {
     
     inline def setBorderColor(value: String): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
     

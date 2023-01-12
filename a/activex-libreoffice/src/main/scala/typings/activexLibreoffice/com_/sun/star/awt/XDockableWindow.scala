@@ -86,7 +86,8 @@ object XDockableWindow {
     __obj.asInstanceOf[XDockableWindow]
   }
   
-  extension [Self <: XDockableWindow](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XDockableWindow] (val x: Self) extends AnyVal {
     
     inline def setAddDockableWindowListener(value: XDockableWindowListener => Unit): Self = StObject.set(x, "addDockableWindowListener", js.Any.fromFunction1(value))
     

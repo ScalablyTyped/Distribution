@@ -23,7 +23,8 @@ object DeleteFolderMembershipResponse {
     __obj.asInstanceOf[DeleteFolderMembershipResponse]
   }
   
-  extension [Self <: DeleteFolderMembershipResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteFolderMembershipResponse] (val x: Self) extends AnyVal {
     
     inline def setRequestId(value: String): Self = StObject.set(x, "RequestId", value.asInstanceOf[js.Any])
     

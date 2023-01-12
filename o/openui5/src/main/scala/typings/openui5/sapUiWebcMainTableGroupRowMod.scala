@@ -171,7 +171,8 @@ object sapUiWebcMainTableGroupRowMod {
       __obj.asInstanceOf[TableGroupRowSettings]
     }
     
-    extension [Self <: TableGroupRowSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TableGroupRowSettings] (val x: Self) extends AnyVal {
       
       inline def setText(value: String | PropertyBindingInfo): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       

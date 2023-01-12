@@ -27,7 +27,8 @@ object distTypesClassicEditorGeneralDistComponentsRepeaterBoldMod extends Shortc
       __obj.asInstanceOf[RepeaterBoldProps]
     }
     
-    extension [Self <: RepeaterBoldProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RepeaterBoldProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

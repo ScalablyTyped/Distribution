@@ -17,7 +17,8 @@ object RoundZoom {
     __obj.asInstanceOf[RoundZoom]
   }
   
-  extension [Self <: RoundZoom](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RoundZoom] (val x: Self) extends AnyVal {
     
     inline def setRoundZoom(value: Boolean): Self = StObject.set(x, "roundZoom", value.asInstanceOf[js.Any])
     

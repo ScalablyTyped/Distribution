@@ -58,7 +58,8 @@ object SchedulerProps {
     __obj.asInstanceOf[SchedulerProps]
   }
   
-  extension [Self <: SchedulerProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SchedulerProps] (val x: Self) extends AnyVal {
     
     inline def setEventItemClick(value: (/* schedulerData */ SchedulerData, /* event */ Event) => Unit): Self = StObject.set(x, "eventItemClick", js.Any.fromFunction2(value))
     

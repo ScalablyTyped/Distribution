@@ -15,7 +15,8 @@ object OnWindowResizeCallbackResult {
     __obj.asInstanceOf[OnWindowResizeCallbackResult]
   }
   
-  extension [Self <: OnWindowResizeCallbackResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnWindowResizeCallbackResult] (val x: Self) extends AnyVal {
     
     inline def setSize(value: Size): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
   }

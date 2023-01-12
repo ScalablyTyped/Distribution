@@ -19,7 +19,8 @@ object UniversalAdId {
     __obj.asInstanceOf[UniversalAdId]
   }
   
-  extension [Self <: UniversalAdId](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UniversalAdId] (val x: Self) extends AnyVal {
     
     inline def setRegistry(value: String): Self = StObject.set(x, "registry", value.asInstanceOf[js.Any])
     

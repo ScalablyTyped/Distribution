@@ -44,7 +44,8 @@ object GEGlobe {
     __obj.asInstanceOf[GEGlobe]
   }
   
-  extension [Self <: GEGlobe](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GEGlobe] (val x: Self) extends AnyVal {
     
     inline def setGetFeatures(value: () => GEFeatureContainer): Self = StObject.set(x, "getFeatures", js.Any.fromFunction0(value))
     

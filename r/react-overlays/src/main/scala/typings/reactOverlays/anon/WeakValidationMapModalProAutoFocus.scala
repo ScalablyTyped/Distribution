@@ -134,7 +134,8 @@ object WeakValidationMapModalProAutoFocus {
     __obj.asInstanceOf[WeakValidationMapModalProAutoFocus]
   }
   
-  extension [Self <: WeakValidationMapModalProAutoFocus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WeakValidationMapModalProAutoFocus] (val x: Self) extends AnyVal {
     
     inline def setAutoFocus(
       value: /* import warning: importer.ImportType#apply Failed type conversion: null extends boolean | undefined ? react.react.Validator<boolean | undefined | null | undefined> : undefined extends boolean | undefined ? react.react.Validator<boolean | undefined | null | undefined> : react.react.Validator<boolean | undefined> */ js.Any

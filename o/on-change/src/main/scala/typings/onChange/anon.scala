@@ -125,7 +125,8 @@ object anon {
       __obj.asInstanceOf[OptionspathAsArrayfalseun]
     }
     
-    extension [Self <: OptionspathAsArrayfalseun](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OptionspathAsArrayfalseun] (val x: Self) extends AnyVal {
       
       inline def setDetails(value: Boolean | js.Array[String]): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
       
@@ -296,7 +297,8 @@ object anon {
       __obj.asInstanceOf[OptionspathAsArraytrue]
     }
     
-    extension [Self <: OptionspathAsArraytrue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OptionspathAsArraytrue] (val x: Self) extends AnyVal {
       
       inline def setDetails(value: Boolean | js.Array[String]): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
       

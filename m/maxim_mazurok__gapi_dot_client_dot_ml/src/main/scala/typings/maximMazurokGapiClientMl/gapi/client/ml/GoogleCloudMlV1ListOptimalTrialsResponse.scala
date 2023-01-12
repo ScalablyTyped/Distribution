@@ -19,7 +19,8 @@ object GoogleCloudMlV1ListOptimalTrialsResponse {
     __obj.asInstanceOf[GoogleCloudMlV1ListOptimalTrialsResponse]
   }
   
-  extension [Self <: GoogleCloudMlV1ListOptimalTrialsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudMlV1ListOptimalTrialsResponse] (val x: Self) extends AnyVal {
     
     inline def setTrials(value: js.Array[GoogleCloudMlV1Trial]): Self = StObject.set(x, "trials", value.asInstanceOf[js.Any])
     

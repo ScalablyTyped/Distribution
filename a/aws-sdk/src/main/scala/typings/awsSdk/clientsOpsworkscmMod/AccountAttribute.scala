@@ -28,7 +28,8 @@ object AccountAttribute {
     __obj.asInstanceOf[AccountAttribute]
   }
   
-  extension [Self <: AccountAttribute](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccountAttribute] (val x: Self) extends AnyVal {
     
     inline def setMaximum(value: Integer): Self = StObject.set(x, "Maximum", value.asInstanceOf[js.Any])
     

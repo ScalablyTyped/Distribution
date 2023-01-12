@@ -17,7 +17,8 @@ object EcosystemString {
     __obj.asInstanceOf[EcosystemString]
   }
   
-  extension [Self <: EcosystemString](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EcosystemString] (val x: Self) extends AnyVal {
     
     inline def setEcosystem(value: String): Self = StObject.set(x, "ecosystem", value.asInstanceOf[js.Any])
     

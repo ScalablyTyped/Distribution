@@ -27,7 +27,8 @@ object ReceivedMessage {
     __obj.asInstanceOf[ReceivedMessage]
   }
   
-  extension [Self <: ReceivedMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReceivedMessage] (val x: Self) extends AnyVal {
     
     inline def setAckId(value: String): Self = StObject.set(x, "ackId", value.asInstanceOf[js.Any])
     

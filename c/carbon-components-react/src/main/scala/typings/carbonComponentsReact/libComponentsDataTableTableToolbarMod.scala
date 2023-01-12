@@ -31,7 +31,8 @@ object libComponentsDataTableTableToolbarMod extends Shortcut {
       __obj.asInstanceOf[TableToolbarProps]
     }
     
-    extension [Self <: TableToolbarProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TableToolbarProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: lg | normal | sm | small): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

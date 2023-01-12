@@ -20,7 +20,8 @@ object MssManifest {
     __obj.asInstanceOf[MssManifest]
   }
   
-  extension [Self <: MssManifest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MssManifest] (val x: Self) extends AnyVal {
     
     inline def setManifestName(value: string): Self = StObject.set(x, "ManifestName", value.asInstanceOf[js.Any])
     

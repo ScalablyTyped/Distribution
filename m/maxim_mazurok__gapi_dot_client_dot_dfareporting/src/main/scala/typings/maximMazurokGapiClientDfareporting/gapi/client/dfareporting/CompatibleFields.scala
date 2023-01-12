@@ -37,7 +37,8 @@ object CompatibleFields {
     __obj.asInstanceOf[CompatibleFields]
   }
   
-  extension [Self <: CompatibleFields](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CompatibleFields] (val x: Self) extends AnyVal {
     
     inline def setCrossDimensionReachReportCompatibleFields(value: CrossDimensionReachReportCompatibleFields): Self = StObject.set(x, "crossDimensionReachReportCompatibleFields", value.asInstanceOf[js.Any])
     

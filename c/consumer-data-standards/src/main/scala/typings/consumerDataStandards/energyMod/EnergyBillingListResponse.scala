@@ -23,7 +23,8 @@ object EnergyBillingListResponse {
     __obj.asInstanceOf[EnergyBillingListResponse]
   }
   
-  extension [Self <: EnergyBillingListResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnergyBillingListResponse] (val x: Self) extends AnyVal {
     
     inline def setData(value: TransactionsArray): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

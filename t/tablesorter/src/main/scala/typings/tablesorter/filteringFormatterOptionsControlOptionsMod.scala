@@ -20,7 +20,8 @@ object filteringFormatterOptionsControlOptionsMod {
       __obj.asInstanceOf[ControlOptions]
     }
     
-    extension [Self <: ControlOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ControlOptions] (val x: Self) extends AnyVal {
       
       inline def setCellText(value: String): Self = StObject.set(x, "cellText", value.asInstanceOf[js.Any])
       

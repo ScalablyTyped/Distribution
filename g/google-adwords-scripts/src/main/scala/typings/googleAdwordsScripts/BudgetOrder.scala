@@ -38,7 +38,8 @@ object BudgetOrder {
     __obj.asInstanceOf[BudgetOrder]
   }
   
-  extension [Self <: BudgetOrder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BudgetOrder] (val x: Self) extends AnyVal {
     
     inline def setGetBillingAccount(value: () => BillingAccount): Self = StObject.set(x, "getBillingAccount", js.Any.fromFunction0(value))
     

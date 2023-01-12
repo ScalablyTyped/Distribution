@@ -19,7 +19,8 @@ object AggregationsInferenceFeatureImportance {
     __obj.asInstanceOf[AggregationsInferenceFeatureImportance]
   }
   
-  extension [Self <: AggregationsInferenceFeatureImportance](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AggregationsInferenceFeatureImportance] (val x: Self) extends AnyVal {
     
     inline def setClasses(value: js.Array[AggregationsInferenceClassImportance]): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
     

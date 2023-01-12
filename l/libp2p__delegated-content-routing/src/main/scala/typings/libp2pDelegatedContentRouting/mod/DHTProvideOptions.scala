@@ -16,7 +16,8 @@ object DHTProvideOptions {
     __obj.asInstanceOf[DHTProvideOptions]
   }
   
-  extension [Self <: DHTProvideOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DHTProvideOptions] (val x: Self) extends AnyVal {
     
     inline def setRecursive(value: Boolean): Self = StObject.set(x, "recursive", value.asInstanceOf[js.Any])
     

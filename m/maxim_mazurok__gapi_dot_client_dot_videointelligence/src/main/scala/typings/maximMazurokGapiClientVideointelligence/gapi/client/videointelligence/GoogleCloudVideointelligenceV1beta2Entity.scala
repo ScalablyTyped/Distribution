@@ -22,7 +22,8 @@ object GoogleCloudVideointelligenceV1beta2Entity {
     __obj.asInstanceOf[GoogleCloudVideointelligenceV1beta2Entity]
   }
   
-  extension [Self <: GoogleCloudVideointelligenceV1beta2Entity](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudVideointelligenceV1beta2Entity] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

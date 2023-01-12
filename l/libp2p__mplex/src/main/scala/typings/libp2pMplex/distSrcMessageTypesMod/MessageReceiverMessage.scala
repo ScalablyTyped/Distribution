@@ -24,7 +24,8 @@ object MessageReceiverMessage {
     __obj.asInstanceOf[MessageReceiverMessage]
   }
   
-  extension [Self <: MessageReceiverMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MessageReceiverMessage] (val x: Self) extends AnyVal {
     
     inline def setData(value: Uint8ArrayList): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object LiabilityShiftPossible {
     __obj.asInstanceOf[LiabilityShiftPossible]
   }
   
-  extension [Self <: LiabilityShiftPossible](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LiabilityShiftPossible] (val x: Self) extends AnyVal {
     
     inline def setLiabilityShiftPossible(value: Boolean): Self = StObject.set(x, "liabilityShiftPossible", value.asInstanceOf[js.Any])
     

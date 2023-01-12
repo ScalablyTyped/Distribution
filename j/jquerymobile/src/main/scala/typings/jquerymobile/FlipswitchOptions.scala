@@ -31,7 +31,8 @@ object FlipswitchOptions {
     __obj.asInstanceOf[FlipswitchOptions]
   }
   
-  extension [Self <: FlipswitchOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FlipswitchOptions] (val x: Self) extends AnyVal {
     
     inline def setCorners(value: Boolean): Self = StObject.set(x, "corners", value.asInstanceOf[js.Any])
     

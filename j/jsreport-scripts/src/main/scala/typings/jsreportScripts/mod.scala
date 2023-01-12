@@ -29,7 +29,8 @@ object mod {
       __obj.asInstanceOf[Configuration]
     }
     
-    extension [Self <: Configuration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Configuration] (val x: Self) extends AnyVal {
       
       inline def setAllowedModules(value: js.Array[String] | Asterisk): Self = StObject.set(x, "allowedModules", value.asInstanceOf[js.Any])
       
@@ -52,7 +53,8 @@ object mod {
       __obj.asInstanceOf[ScriptsTemplate]
     }
     
-    extension [Self <: ScriptsTemplate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScriptsTemplate] (val x: Self) extends AnyVal {
       
       inline def setScripts(value: js.Array[TemplateScript]): Self = StObject.set(x, "scripts", value.asInstanceOf[js.Any])
       
@@ -77,7 +79,8 @@ object mod {
       __obj.asInstanceOf[TemplateScript]
     }
     
-    extension [Self <: TemplateScript](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TemplateScript] (val x: Self) extends AnyVal {
       
       inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
@@ -107,7 +110,8 @@ object mod {
         __obj.asInstanceOf[TemplateRegistry]
       }
       
-      extension [Self <: TemplateRegistry](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: TemplateRegistry] (val x: Self) extends AnyVal {
         
         inline def setScriptsTemplate(value: ScriptsTemplate): Self = StObject.set(x, "ScriptsTemplate", value.asInstanceOf[js.Any])
       }

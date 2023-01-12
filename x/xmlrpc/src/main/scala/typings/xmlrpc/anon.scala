@@ -20,7 +20,8 @@ object anon {
       __obj.asInstanceOf[Expires]
     }
     
-    extension [Self <: Expires](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Expires] (val x: Self) extends AnyVal {
       
       inline def setExpires(value: js.Date): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
       
@@ -41,7 +42,8 @@ object anon {
       __obj.asInstanceOf[Pass]
     }
     
-    extension [Self <: Pass](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Pass] (val x: Self) extends AnyVal {
       
       inline def setPass(value: String): Self = StObject.set(x, "pass", value.asInstanceOf[js.Any])
       
@@ -60,7 +62,8 @@ object anon {
       __obj.asInstanceOf[Processors]
     }
     
-    extension [Self <: Processors](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Processors] (val x: Self) extends AnyVal {
       
       inline def setProcessors(value: js.Array[HeadersProcessor]): Self = StObject.set(x, "processors", value.asInstanceOf[js.Any])
       

@@ -31,7 +31,8 @@ object TopBottomConditionalFormatUpdateData {
     __obj.asInstanceOf[TopBottomConditionalFormatUpdateData]
   }
   
-  extension [Self <: TopBottomConditionalFormatUpdateData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TopBottomConditionalFormatUpdateData] (val x: Self) extends AnyVal {
     
     inline def setFormat(value: ConditionalRangeFormatUpdateData): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     

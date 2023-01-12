@@ -33,7 +33,8 @@ object Shipping {
     __obj.asInstanceOf[Shipping]
   }
   
-  extension [Self <: Shipping](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Shipping] (val x: Self) extends AnyVal {
     
     inline def setAffiliation(value: String): Self = StObject.set(x, "affiliation", value.asInstanceOf[js.Any])
     

@@ -38,7 +38,8 @@ object ListBotRecommendationsResponse {
     __obj.asInstanceOf[ListBotRecommendationsResponse]
   }
   
-  extension [Self <: ListBotRecommendationsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListBotRecommendationsResponse] (val x: Self) extends AnyVal {
     
     inline def setBotId(value: Id): Self = StObject.set(x, "botId", value.asInstanceOf[js.Any])
     

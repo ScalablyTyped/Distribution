@@ -23,7 +23,8 @@ object UpdateFlowEntitlementResponse {
     __obj.asInstanceOf[UpdateFlowEntitlementResponse]
   }
   
-  extension [Self <: UpdateFlowEntitlementResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateFlowEntitlementResponse] (val x: Self) extends AnyVal {
     
     inline def setEntitlement(value: Entitlement): Self = StObject.set(x, "Entitlement", value.asInstanceOf[js.Any])
     

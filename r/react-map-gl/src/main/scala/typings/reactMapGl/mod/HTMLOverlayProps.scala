@@ -20,7 +20,8 @@ object HTMLOverlayProps {
     __obj.asInstanceOf[HTMLOverlayProps]
   }
   
-  extension [Self <: HTMLOverlayProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HTMLOverlayProps] (val x: Self) extends AnyVal {
     
     inline def setRedraw(value: HTMLRedrawOptions => Unit): Self = StObject.set(x, "redraw", js.Any.fromFunction1(value))
     

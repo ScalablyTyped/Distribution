@@ -20,7 +20,8 @@ object ChartParallelAxesStackLabelsAnimationOptions {
     __obj.asInstanceOf[ChartParallelAxesStackLabelsAnimationOptions]
   }
   
-  extension [Self <: ChartParallelAxesStackLabelsAnimationOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChartParallelAxesStackLabelsAnimationOptions] (val x: Self) extends AnyVal {
     
     inline def setDefer(value: Double): Self = StObject.set(x, "defer", value.asInstanceOf[js.Any])
     

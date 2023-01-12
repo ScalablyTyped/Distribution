@@ -19,7 +19,8 @@ object TableSortInfo {
     __obj.asInstanceOf[TableSortInfo]
   }
   
-  extension [Self <: TableSortInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TableSortInfo] (val x: Self) extends AnyVal {
     
     inline def setAscending(value: Boolean): Self = StObject.set(x, "ascending", value.asInstanceOf[js.Any])
     

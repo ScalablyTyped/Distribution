@@ -22,7 +22,8 @@ object ReturnTypeGetSecurityIsolationStatusResponse {
     __obj.asInstanceOf[ReturnTypeGetSecurityIsolationStatusResponse]
   }
   
-  extension [Self <: ReturnTypeGetSecurityIsolationStatusResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReturnTypeGetSecurityIsolationStatusResponse] (val x: Self) extends AnyVal {
     
     inline def setParamsType(value: js.Array[js.UndefOr[GetSecurityIsolationStatusRequest]]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     

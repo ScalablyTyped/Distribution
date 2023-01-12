@@ -15,7 +15,8 @@ object TokensProviderFactory {
     __obj.asInstanceOf[TokensProviderFactory]
   }
   
-  extension [Self <: TokensProviderFactory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TokensProviderFactory] (val x: Self) extends AnyVal {
     
     inline def setCreate(value: () => ProviderResult[TokensProvider | EncodedTokensProvider | IMonarchLanguage]): Self = StObject.set(x, "create", js.Any.fromFunction0(value))
   }

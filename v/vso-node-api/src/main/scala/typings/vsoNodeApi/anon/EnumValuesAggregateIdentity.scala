@@ -15,7 +15,8 @@ object EnumValuesAggregateIdentity {
     __obj.asInstanceOf[EnumValuesAggregateIdentity]
   }
   
-  extension [Self <: EnumValuesAggregateIdentity](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnumValuesAggregateIdentity] (val x: Self) extends AnyVal {
     
     inline def setEnumValues(value: AggregateIdentity): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
   }

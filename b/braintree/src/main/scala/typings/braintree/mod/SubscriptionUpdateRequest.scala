@@ -18,7 +18,8 @@ object SubscriptionUpdateRequest {
     __obj.asInstanceOf[SubscriptionUpdateRequest]
   }
   
-  extension [Self <: SubscriptionUpdateRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubscriptionUpdateRequest] (val x: Self) extends AnyVal {
     
     inline def setOptions(value: Paypal): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     

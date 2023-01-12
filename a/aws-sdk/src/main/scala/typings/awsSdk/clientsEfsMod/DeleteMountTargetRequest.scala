@@ -18,7 +18,8 @@ object DeleteMountTargetRequest {
     __obj.asInstanceOf[DeleteMountTargetRequest]
   }
   
-  extension [Self <: DeleteMountTargetRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteMountTargetRequest] (val x: Self) extends AnyVal {
     
     inline def setMountTargetId(value: MountTargetId): Self = StObject.set(x, "MountTargetId", value.asInstanceOf[js.Any])
   }

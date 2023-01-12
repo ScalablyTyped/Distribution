@@ -24,7 +24,8 @@ object AriaAttrs {
     __obj.asInstanceOf[AriaAttrs]
   }
   
-  extension [Self <: AriaAttrs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AriaAttrs] (val x: Self) extends AnyVal {
     
     inline def setAllowEmpty(value: Boolean): Self = StObject.set(x, "allowEmpty", value.asInstanceOf[js.Any])
     

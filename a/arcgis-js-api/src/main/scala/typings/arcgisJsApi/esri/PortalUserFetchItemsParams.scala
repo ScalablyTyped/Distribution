@@ -56,7 +56,8 @@ object PortalUserFetchItemsParams {
     __obj.asInstanceOf[PortalUserFetchItemsParams]
   }
   
-  extension [Self <: PortalUserFetchItemsParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PortalUserFetchItemsParams] (val x: Self) extends AnyVal {
     
     inline def setFolder(value: PortalFolder): Self = StObject.set(x, "folder", value.asInstanceOf[js.Any])
     

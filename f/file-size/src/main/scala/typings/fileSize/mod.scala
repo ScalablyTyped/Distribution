@@ -27,7 +27,8 @@ object mod {
       __obj.asInstanceOf[Bits]
     }
     
-    extension [Self <: Bits](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Bits] (val x: Self) extends AnyVal {
       
       inline def setFixed(value: String): Self = StObject.set(x, "fixed", value.asInstanceOf[js.Any])
       
@@ -54,7 +55,8 @@ object mod {
       __obj.asInstanceOf[Calculated]
     }
     
-    extension [Self <: Calculated](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Calculated] (val x: Self) extends AnyVal {
       
       inline def setBits(value: Bits): Self = StObject.set(x, "bits", value.asInstanceOf[js.Any])
       
@@ -81,7 +83,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setFixed(value: Double): Self = StObject.set(x, "fixed", value.asInstanceOf[js.Any])
       

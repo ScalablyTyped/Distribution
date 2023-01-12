@@ -18,7 +18,8 @@ object anon {
       __obj.asInstanceOf[After]
     }
     
-    extension [Self <: After](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: After] (val x: Self) extends AnyVal {
       
       inline def setAfter(value: _empty): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
     }
@@ -41,7 +42,8 @@ object anon {
       __obj.asInstanceOf[_empty]
     }
     
-    extension [Self <: _empty](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: _empty] (val x: Self) extends AnyVal {
       
       inline def setSlashAsterisk(value: (Any, Any, js.Function0[Any]) => Any): Self = StObject.set(x, "/*", js.Any.fromFunction3(value))
     }

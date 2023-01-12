@@ -16,7 +16,8 @@ object RemoveProductFromProductSetRequest {
     __obj.asInstanceOf[RemoveProductFromProductSetRequest]
   }
   
-  extension [Self <: RemoveProductFromProductSetRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RemoveProductFromProductSetRequest] (val x: Self) extends AnyVal {
     
     inline def setProduct(value: String): Self = StObject.set(x, "product", value.asInstanceOf[js.Any])
     

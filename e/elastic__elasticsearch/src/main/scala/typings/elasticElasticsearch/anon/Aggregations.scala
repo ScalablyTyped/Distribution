@@ -103,7 +103,8 @@ object Aggregations {
     __obj.asInstanceOf[Aggregations]
   }
   
-  extension [Self <: Aggregations](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Aggregations] (val x: Self) extends AnyVal {
     
     inline def setAggregations(value: Record[String, AggregationsAggregationContainer]): Self = StObject.set(x, "aggregations", value.asInstanceOf[js.Any])
     

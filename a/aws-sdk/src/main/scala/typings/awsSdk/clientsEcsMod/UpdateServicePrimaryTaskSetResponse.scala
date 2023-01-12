@@ -18,7 +18,8 @@ object UpdateServicePrimaryTaskSetResponse {
     __obj.asInstanceOf[UpdateServicePrimaryTaskSetResponse]
   }
   
-  extension [Self <: UpdateServicePrimaryTaskSetResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateServicePrimaryTaskSetResponse] (val x: Self) extends AnyVal {
     
     inline def setTaskSet(value: TaskSet): Self = StObject.set(x, "taskSet", value.asInstanceOf[js.Any])
     

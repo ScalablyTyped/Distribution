@@ -17,7 +17,8 @@ object Clipboard {
     __obj.asInstanceOf[Clipboard]
   }
   
-  extension [Self <: Clipboard](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Clipboard] (val x: Self) extends AnyVal {
     
     inline def setGetString(value: () => js.Promise[String]): Self = StObject.set(x, "getString", js.Any.fromFunction0(value))
     

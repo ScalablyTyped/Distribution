@@ -40,7 +40,8 @@ object AutoTextEntries {
     __obj.asInstanceOf[AutoTextEntries]
   }
   
-  extension [Self <: AutoTextEntries](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AutoTextEntries] (val x: Self) extends AnyVal {
     
     inline def setAdd(value: (String, Range) => AutoTextEntry): Self = StObject.set(x, "Add", js.Any.fromFunction2(value))
     

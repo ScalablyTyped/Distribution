@@ -19,7 +19,8 @@ object StatResult {
     __obj.asInstanceOf[StatResult]
   }
   
-  extension [Self <: StatResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StatResult] (val x: Self) extends AnyVal {
     
     inline def setCid(value: CID[Any, Double, Double, Version]): Self = StObject.set(x, "cid", value.asInstanceOf[js.Any])
     

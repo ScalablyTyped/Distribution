@@ -21,7 +21,8 @@ object DictkDerRecords {
     __obj.asInstanceOf[DictkDerRecords]
   }
   
-  extension [Self <: DictkDerRecords](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DictkDerRecords] (val x: Self) extends AnyVal {
     
     inline def setDerRecords(value: js.Array[AcConnections]): Self = StObject.set(x, "derRecords", value.asInstanceOf[js.Any])
     

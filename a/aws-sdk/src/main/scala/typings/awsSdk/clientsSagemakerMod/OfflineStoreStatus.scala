@@ -23,7 +23,8 @@ object OfflineStoreStatus {
     __obj.asInstanceOf[OfflineStoreStatus]
   }
   
-  extension [Self <: OfflineStoreStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OfflineStoreStatus] (val x: Self) extends AnyVal {
     
     inline def setBlockedReason(value: BlockedReason): Self = StObject.set(x, "BlockedReason", value.asInstanceOf[js.Any])
     

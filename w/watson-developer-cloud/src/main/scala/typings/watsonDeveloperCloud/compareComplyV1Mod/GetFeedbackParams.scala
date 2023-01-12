@@ -25,7 +25,8 @@ object GetFeedbackParams {
     __obj.asInstanceOf[GetFeedbackParams]
   }
   
-  extension [Self <: GetFeedbackParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetFeedbackParams] (val x: Self) extends AnyVal {
     
     inline def setFeedback_id(value: String): Self = StObject.set(x, "feedback_id", value.asInstanceOf[js.Any])
     

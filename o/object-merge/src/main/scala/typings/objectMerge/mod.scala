@@ -176,7 +176,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[ObjectMergeOptions]
     }
     
-    extension [Self <: ObjectMergeOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ObjectMergeOptions] (val x: Self) extends AnyVal {
       
       inline def setDepth(value: Double | Boolean): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
       

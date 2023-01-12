@@ -15,7 +15,8 @@ object ArgMaxAttrs {
     __obj.asInstanceOf[ArgMaxAttrs]
   }
   
-  extension [Self <: ArgMaxAttrs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ArgMaxAttrs] (val x: Self) extends AnyVal {
     
     inline def setAxis(value: Double): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
   }

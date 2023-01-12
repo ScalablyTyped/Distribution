@@ -28,7 +28,8 @@ object CodeCoverageSummary {
     __obj.asInstanceOf[CodeCoverageSummary]
   }
   
-  extension [Self <: CodeCoverageSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CodeCoverageSummary] (val x: Self) extends AnyVal {
     
     inline def setBuild(value: ShallowReference): Self = StObject.set(x, "build", value.asInstanceOf[js.Any])
     

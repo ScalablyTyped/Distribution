@@ -28,7 +28,8 @@ object CardHeader {
     __obj.asInstanceOf[CardHeader]
   }
   
-  extension [Self <: CardHeader](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CardHeader] (val x: Self) extends AnyVal {
     
     inline def setImageStyle(value: String): Self = StObject.set(x, "imageStyle", value.asInstanceOf[js.Any])
     

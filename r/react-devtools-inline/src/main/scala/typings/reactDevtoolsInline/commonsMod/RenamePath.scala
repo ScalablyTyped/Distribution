@@ -30,7 +30,8 @@ object RenamePath {
     __obj.asInstanceOf[RenamePath]
   }
   
-  extension [Self <: RenamePath](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RenamePath] (val x: Self) extends AnyVal {
     
     inline def setHookID(value: Double): Self = StObject.set(x, "hookID", value.asInstanceOf[js.Any])
     

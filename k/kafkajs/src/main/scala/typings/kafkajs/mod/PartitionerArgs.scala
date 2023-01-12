@@ -19,7 +19,8 @@ object PartitionerArgs {
     __obj.asInstanceOf[PartitionerArgs]
   }
   
-  extension [Self <: PartitionerArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartitionerArgs] (val x: Self) extends AnyVal {
     
     inline def setMessage(value: Message): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     

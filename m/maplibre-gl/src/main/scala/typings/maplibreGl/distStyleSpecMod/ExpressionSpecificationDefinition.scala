@@ -22,7 +22,8 @@ object ExpressionSpecificationDefinition {
     __obj.asInstanceOf[ExpressionSpecificationDefinition]
   }
   
-  extension [Self <: ExpressionSpecificationDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExpressionSpecificationDefinition] (val x: Self) extends AnyVal {
     
     inline def setInterpolated(value: Boolean): Self = StObject.set(x, "interpolated", value.asInstanceOf[js.Any])
     

@@ -52,7 +52,8 @@ object MultiInstanceLoopCharacteristics {
     __obj.asInstanceOf[MultiInstanceLoopCharacteristics]
   }
   
-  extension [Self <: MultiInstanceLoopCharacteristics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MultiInstanceLoopCharacteristics] (val x: Self) extends AnyVal {
     
     inline def setBehavior(value: MultiInstanceBehaviour): Self = StObject.set(x, "behavior", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object PutFeedbackRequest {
     __obj.asInstanceOf[PutFeedbackRequest]
   }
   
-  extension [Self <: PutFeedbackRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutFeedbackRequest] (val x: Self) extends AnyVal {
     
     inline def setInsightFeedback(value: InsightFeedback): Self = StObject.set(x, "InsightFeedback", value.asInstanceOf[js.Any])
     

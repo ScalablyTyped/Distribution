@@ -75,7 +75,8 @@ object AudioSelector {
     __obj.asInstanceOf[AudioSelector]
   }
   
-  extension [Self <: AudioSelector](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AudioSelector] (val x: Self) extends AnyVal {
     
     inline def setAudioDurationCorrection(value: AudioDurationCorrection): Self = StObject.set(x, "AudioDurationCorrection", value.asInstanceOf[js.Any])
     

@@ -47,7 +47,8 @@ object Schema {
     __obj.asInstanceOf[Schema]
   }
   
-  extension [Self <: Schema](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Schema] (val x: Self) extends AnyVal {
     
     inline def `set@context`(value: httpColonSlashSlashwwwDotw3DotorgSlashnsSlashshexDotjsonld): Self = StObject.set(x, "@context", value.asInstanceOf[js.Any])
     

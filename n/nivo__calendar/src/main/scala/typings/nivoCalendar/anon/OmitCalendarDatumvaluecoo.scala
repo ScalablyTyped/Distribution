@@ -45,7 +45,8 @@ object OmitCalendarDatumvaluecoo {
     __obj.asInstanceOf[OmitCalendarDatumvaluecoo]
   }
   
-  extension [Self <: OmitCalendarDatumvaluecoo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OmitCalendarDatumvaluecoo] (val x: Self) extends AnyVal {
     
     inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

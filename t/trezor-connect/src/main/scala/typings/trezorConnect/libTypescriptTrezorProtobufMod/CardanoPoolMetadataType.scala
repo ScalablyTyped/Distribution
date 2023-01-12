@@ -17,7 +17,8 @@ object CardanoPoolMetadataType {
     __obj.asInstanceOf[CardanoPoolMetadataType]
   }
   
-  extension [Self <: CardanoPoolMetadataType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CardanoPoolMetadataType] (val x: Self) extends AnyVal {
     
     inline def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
     

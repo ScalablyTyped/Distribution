@@ -21,7 +21,8 @@ object i18nextNodeFsBackEnd {
       __obj.asInstanceOf[I18nextOptions]
     }
     
-    extension [Self <: I18nextOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: I18nextOptions] (val x: Self) extends AnyVal {
       
       inline def setBackend(value: i18nextNodeFsBackEndOptions): Self = StObject.set(x, "backend", value.asInstanceOf[js.Any])
       
@@ -66,7 +67,8 @@ object i18nextNodeFsBackEnd {
       __obj.asInstanceOf[i18nextNodeFsBackEndOptions]
     }
     
-    extension [Self <: i18nextNodeFsBackEndOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: i18nextNodeFsBackEndOptions] (val x: Self) extends AnyVal {
       
       inline def setAddPath(value: String): Self = StObject.set(x, "addPath", value.asInstanceOf[js.Any])
       

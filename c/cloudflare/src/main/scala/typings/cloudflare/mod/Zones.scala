@@ -37,7 +37,8 @@ object Zones {
     __obj.asInstanceOf[Zones]
   }
   
-  extension [Self <: Zones](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Zones] (val x: Self) extends AnyVal {
     
     inline def setActivationCheck(value: String => js.Promise[js.Object]): Self = StObject.set(x, "activationCheck", js.Any.fromFunction1(value))
     

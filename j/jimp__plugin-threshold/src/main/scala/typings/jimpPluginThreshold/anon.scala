@@ -21,7 +21,8 @@ object anon {
       __obj.asInstanceOf[AutoGreyscale]
     }
     
-    extension [Self <: AutoGreyscale](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AutoGreyscale] (val x: Self) extends AnyVal {
       
       inline def setAutoGreyscale(value: Boolean): Self = StObject.set(x, "autoGreyscale", value.asInstanceOf[js.Any])
       

@@ -28,7 +28,8 @@ object ReservationValue {
     __obj.asInstanceOf[ReservationValue]
   }
   
-  extension [Self <: ReservationValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReservationValue] (val x: Self) extends AnyVal {
     
     inline def setHourlyPrice(value: String): Self = StObject.set(x, "HourlyPrice", value.asInstanceOf[js.Any])
     

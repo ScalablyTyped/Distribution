@@ -75,7 +75,8 @@ object PlusNativeObjPosition {
     __obj.asInstanceOf[PlusNativeObjPosition]
   }
   
-  extension [Self <: PlusNativeObjPosition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlusNativeObjPosition] (val x: Self) extends AnyVal {
     
     inline def setBottom(value: String): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
     

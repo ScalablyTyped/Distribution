@@ -34,7 +34,8 @@ object MlJobTimingStats {
     __obj.asInstanceOf[MlJobTimingStats]
   }
   
-  extension [Self <: MlJobTimingStats](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlJobTimingStats] (val x: Self) extends AnyVal {
     
     inline def setAverage_bucket_processing_time_ms(value: DurationValue[UnitFloatMillis]): Self = StObject.set(x, "average_bucket_processing_time_ms", value.asInstanceOf[js.Any])
     

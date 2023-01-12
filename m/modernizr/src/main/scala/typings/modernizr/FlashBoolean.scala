@@ -18,7 +18,8 @@ object FlashBoolean {
     __obj.asInstanceOf[FlashBoolean]
   }
   
-  extension [Self <: FlashBoolean](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FlashBoolean] (val x: Self) extends AnyVal {
     
     inline def setBlocked(value: scala.Boolean): Self = StObject.set(x, "blocked", value.asInstanceOf[js.Any])
   }

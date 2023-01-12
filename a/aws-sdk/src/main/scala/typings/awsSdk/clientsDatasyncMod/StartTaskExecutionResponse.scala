@@ -18,7 +18,8 @@ object StartTaskExecutionResponse {
     __obj.asInstanceOf[StartTaskExecutionResponse]
   }
   
-  extension [Self <: StartTaskExecutionResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartTaskExecutionResponse] (val x: Self) extends AnyVal {
     
     inline def setTaskExecutionArn(value: TaskExecutionArn): Self = StObject.set(x, "TaskExecutionArn", value.asInstanceOf[js.Any])
     

@@ -56,7 +56,8 @@ object libTypesMod {
       __obj.asInstanceOf[DiffBlock]
     }
     
-    extension [Self <: DiffBlock](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DiffBlock] (val x: Self) extends AnyVal {
       
       inline def setHeader(value: String): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
       
@@ -136,7 +137,8 @@ object libTypesMod {
       __obj.asInstanceOf[DiffFile]
     }
     
-    extension [Self <: DiffFile](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DiffFile] (val x: Self) extends AnyVal {
       
       inline def setAddedLines(value: Double): Self = StObject.set(x, "addedLines", value.asInstanceOf[js.Any])
       
@@ -231,7 +233,8 @@ object libTypesMod {
       __obj.asInstanceOf[DiffFileName]
     }
     
-    extension [Self <: DiffFileName](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DiffFileName] (val x: Self) extends AnyVal {
       
       inline def setNewName(value: String): Self = StObject.set(x, "newName", value.asInstanceOf[js.Any])
       
@@ -252,7 +255,8 @@ object libTypesMod {
       __obj.asInstanceOf[DiffLineContent]
     }
     
-    extension [Self <: DiffLineContent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DiffLineContent] (val x: Self) extends AnyVal {
       
       inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     }
@@ -274,7 +278,8 @@ object libTypesMod {
       __obj.asInstanceOf[DiffLineContext]
     }
     
-    extension [Self <: DiffLineContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DiffLineContext] (val x: Self) extends AnyVal {
       
       inline def setNewNumber(value: Double): Self = StObject.set(x, "newNumber", value.asInstanceOf[js.Any])
       
@@ -300,7 +305,8 @@ object libTypesMod {
       __obj.asInstanceOf[DiffLineDeleted]
     }
     
-    extension [Self <: DiffLineDeleted](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DiffLineDeleted] (val x: Self) extends AnyVal {
       
       inline def setNewNumber(value: Unit): Self = StObject.set(x, "newNumber", value.asInstanceOf[js.Any])
       
@@ -326,7 +332,8 @@ object libTypesMod {
       __obj.asInstanceOf[DiffLineInserted]
     }
     
-    extension [Self <: DiffLineInserted](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DiffLineInserted] (val x: Self) extends AnyVal {
       
       inline def setNewNumber(value: Double): Self = StObject.set(x, "newNumber", value.asInstanceOf[js.Any])
       
@@ -349,7 +356,8 @@ object libTypesMod {
       __obj.asInstanceOf[DiffLineParts]
     }
     
-    extension [Self <: DiffLineParts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DiffLineParts] (val x: Self) extends AnyVal {
       
       inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       

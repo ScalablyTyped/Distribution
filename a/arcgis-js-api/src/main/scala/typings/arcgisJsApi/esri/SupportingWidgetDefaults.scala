@@ -34,7 +34,8 @@ object SupportingWidgetDefaults {
     __obj.asInstanceOf[SupportingWidgetDefaults]
   }
   
-  extension [Self <: SupportingWidgetDefaults](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SupportingWidgetDefaults] (val x: Self) extends AnyVal {
     
     inline def setFeatureForm(value: SupportingWidgetDefaultsFeatureForm): Self = StObject.set(x, "featureForm", value.asInstanceOf[js.Any])
     

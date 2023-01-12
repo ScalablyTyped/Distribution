@@ -18,7 +18,8 @@ object TreeViewDragstartEvent {
     __obj.asInstanceOf[TreeViewDragstartEvent]
   }
   
-  extension [Self <: TreeViewDragstartEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TreeViewDragstartEvent] (val x: Self) extends AnyVal {
     
     inline def setSourceNode(value: Element): Self = StObject.set(x, "sourceNode", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object GoogleCloudDialogflowV2beta1IntentMessageTelephonySynthesizeSpeech {
     __obj.asInstanceOf[GoogleCloudDialogflowV2beta1IntentMessageTelephonySynthesizeSpeech]
   }
   
-  extension [Self <: GoogleCloudDialogflowV2beta1IntentMessageTelephonySynthesizeSpeech](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDialogflowV2beta1IntentMessageTelephonySynthesizeSpeech] (val x: Self) extends AnyVal {
     
     inline def setSsml(value: String): Self = StObject.set(x, "ssml", value.asInstanceOf[js.Any])
     

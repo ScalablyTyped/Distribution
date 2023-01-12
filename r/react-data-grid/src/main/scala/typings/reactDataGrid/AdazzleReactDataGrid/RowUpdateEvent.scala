@@ -37,7 +37,8 @@ object RowUpdateEvent {
     __obj.asInstanceOf[RowUpdateEvent[T]]
   }
   
-  extension [Self <: RowUpdateEvent[?], T](x: Self & RowUpdateEvent[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RowUpdateEvent[?], T] (val x: Self & RowUpdateEvent[T]) extends AnyVal {
     
     inline def setCellKey(value: String): Self = StObject.set(x, "cellKey", value.asInstanceOf[js.Any])
     

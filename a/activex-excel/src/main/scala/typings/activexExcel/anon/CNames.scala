@@ -24,7 +24,8 @@ object CNames {
     __obj.asInstanceOf[CNames]
   }
   
-  extension [Self <: CNames](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CNames] (val x: Self) extends AnyVal {
     
     inline def setCNames(value: Double): Self = StObject.set(x, "cNames", value.asInstanceOf[js.Any])
     

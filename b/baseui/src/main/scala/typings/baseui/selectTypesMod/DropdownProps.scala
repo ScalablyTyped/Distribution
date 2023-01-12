@@ -76,7 +76,8 @@ object DropdownProps {
     __obj.asInstanceOf[DropdownProps]
   }
   
-  extension [Self <: DropdownProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DropdownProps] (val x: Self) extends AnyVal {
     
     inline def setError(value: Boolean): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     

@@ -79,7 +79,8 @@ object distCssCsspropertyMod {
     @js.native
     val ^ : DefinedToken = js.native
     
-    extension [Self <: CSSProperty[?, ?], Parsed, Used](x: Self & (CSSProperty[Parsed, Used])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CSSProperty[?, ?], Parsed, Used] (val x: Self & (CSSProperty[Parsed, Used])) extends AnyVal {
       
       inline def setCalculator(
         value: (/* name */ String, Parsed, Parsed, /* object */ IElement[Any, Any], /* registry */ StyleValueRegistry) => Used

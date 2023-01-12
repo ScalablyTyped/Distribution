@@ -18,7 +18,8 @@ object DeleteDimensionRequest {
     __obj.asInstanceOf[DeleteDimensionRequest]
   }
   
-  extension [Self <: DeleteDimensionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteDimensionRequest] (val x: Self) extends AnyVal {
     
     inline def setName(value: DimensionName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }

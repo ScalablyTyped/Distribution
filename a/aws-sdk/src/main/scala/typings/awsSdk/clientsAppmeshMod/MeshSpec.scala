@@ -20,7 +20,8 @@ object MeshSpec {
     __obj.asInstanceOf[MeshSpec]
   }
   
-  extension [Self <: MeshSpec](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MeshSpec] (val x: Self) extends AnyVal {
     
     inline def setEgressFilter(value: EgressFilter): Self = StObject.set(x, "egressFilter", value.asInstanceOf[js.Any])
     

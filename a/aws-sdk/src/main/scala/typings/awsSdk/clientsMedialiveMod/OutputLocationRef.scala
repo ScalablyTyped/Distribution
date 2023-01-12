@@ -15,7 +15,8 @@ object OutputLocationRef {
     __obj.asInstanceOf[OutputLocationRef]
   }
   
-  extension [Self <: OutputLocationRef](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OutputLocationRef] (val x: Self) extends AnyVal {
     
     inline def setDestinationRefId(value: string): Self = StObject.set(x, "DestinationRefId", value.asInstanceOf[js.Any])
     

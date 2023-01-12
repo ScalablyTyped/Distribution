@@ -16,7 +16,8 @@ object StreamingStageLocation {
     __obj.asInstanceOf[StreamingStageLocation]
   }
   
-  extension [Self <: StreamingStageLocation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StreamingStageLocation] (val x: Self) extends AnyVal {
     
     inline def setStreamId(value: String): Self = StObject.set(x, "streamId", value.asInstanceOf[js.Any])
     

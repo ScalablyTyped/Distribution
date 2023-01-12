@@ -21,7 +21,8 @@ object ConfirmSepaDebitSetupData {
     __obj.asInstanceOf[ConfirmSepaDebitSetupData]
   }
   
-  extension [Self <: ConfirmSepaDebitSetupData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConfirmSepaDebitSetupData] (val x: Self) extends AnyVal {
     
     inline def setPayment_method(value: String | Sepadebit): Self = StObject.set(x, "payment_method", value.asInstanceOf[js.Any])
     

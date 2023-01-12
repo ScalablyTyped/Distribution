@@ -38,7 +38,8 @@ object VpcConfigRequest {
     __obj.asInstanceOf[VpcConfigRequest]
   }
   
-  extension [Self <: VpcConfigRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VpcConfigRequest] (val x: Self) extends AnyVal {
     
     inline def setEndpointPrivateAccess(value: BoxedBoolean): Self = StObject.set(x, "endpointPrivateAccess", value.asInstanceOf[js.Any])
     

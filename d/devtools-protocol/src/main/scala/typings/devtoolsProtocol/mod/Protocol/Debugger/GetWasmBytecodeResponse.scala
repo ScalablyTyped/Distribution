@@ -18,7 +18,8 @@ object GetWasmBytecodeResponse {
     __obj.asInstanceOf[GetWasmBytecodeResponse]
   }
   
-  extension [Self <: GetWasmBytecodeResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetWasmBytecodeResponse] (val x: Self) extends AnyVal {
     
     inline def setBytecode(value: String): Self = StObject.set(x, "bytecode", value.asInstanceOf[js.Any])
   }

@@ -36,7 +36,8 @@ object bindDocOptions {
     __obj.asInstanceOf[bindDocOptions]
   }
   
-  extension [Self <: bindDocOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: bindDocOptions] (val x: Self) extends AnyVal {
     
     inline def setContext(value: js.Object): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     

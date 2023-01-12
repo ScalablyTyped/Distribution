@@ -41,7 +41,8 @@ object distLibCommandsXreadMod {
       __obj.asInstanceOf[XReadOptions]
     }
     
-    extension [Self <: XReadOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XReadOptions] (val x: Self) extends AnyVal {
       
       inline def setBLOCK(value: Double): Self = StObject.set(x, "BLOCK", value.asInstanceOf[js.Any])
       
@@ -66,7 +67,8 @@ object distLibCommandsXreadMod {
       __obj.asInstanceOf[XReadStream]
     }
     
-    extension [Self <: XReadStream](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XReadStream] (val x: Self) extends AnyVal {
       
       inline def setId(value: RedisCommandArgument): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       

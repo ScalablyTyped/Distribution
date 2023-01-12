@@ -72,7 +72,8 @@ object declarationAxisManagerMod {
       __obj.asInstanceOf[AxisOption]
     }
     
-    extension [Self <: AxisOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AxisOption] (val x: Self) extends AnyVal {
       
       inline def setBounce(value: Double | js.Array[Double]): Self = StObject.set(x, "bounce", value.asInstanceOf[js.Any])
       

@@ -33,7 +33,8 @@ object ContainerServiceRegistryLogin {
     __obj.asInstanceOf[ContainerServiceRegistryLogin]
   }
   
-  extension [Self <: ContainerServiceRegistryLogin](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContainerServiceRegistryLogin] (val x: Self) extends AnyVal {
     
     inline def setExpiresAt(value: js.Date): Self = StObject.set(x, "expiresAt", value.asInstanceOf[js.Any])
     

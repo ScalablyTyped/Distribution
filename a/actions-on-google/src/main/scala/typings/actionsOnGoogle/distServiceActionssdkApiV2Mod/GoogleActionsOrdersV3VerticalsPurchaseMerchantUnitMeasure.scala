@@ -23,7 +23,8 @@ object GoogleActionsOrdersV3VerticalsPurchaseMerchantUnitMeasure {
     __obj.asInstanceOf[GoogleActionsOrdersV3VerticalsPurchaseMerchantUnitMeasure]
   }
   
-  extension [Self <: GoogleActionsOrdersV3VerticalsPurchaseMerchantUnitMeasure](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleActionsOrdersV3VerticalsPurchaseMerchantUnitMeasure] (val x: Self) extends AnyVal {
     
     inline def setMeasure(value: Double): Self = StObject.set(x, "measure", value.asInstanceOf[js.Any])
     

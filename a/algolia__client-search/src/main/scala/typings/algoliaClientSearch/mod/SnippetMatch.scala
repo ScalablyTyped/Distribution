@@ -20,7 +20,8 @@ object SnippetMatch {
     __obj.asInstanceOf[SnippetMatch]
   }
   
-  extension [Self <: SnippetMatch](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SnippetMatch] (val x: Self) extends AnyVal {
     
     inline def setMatchLevel(value: none | partial | full): Self = StObject.set(x, "matchLevel", value.asInstanceOf[js.Any])
     

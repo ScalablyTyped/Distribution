@@ -25,7 +25,8 @@ object BUCKETTIMESTAMP {
     __obj.asInstanceOf[BUCKETTIMESTAMP]
   }
   
-  extension [Self <: BUCKETTIMESTAMP](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BUCKETTIMESTAMP] (val x: Self) extends AnyVal {
     
     inline def setBUCKETTIMESTAMP(value: TimeSeriesBucketTimestamp): Self = StObject.set(x, "BUCKETTIMESTAMP", value.asInstanceOf[js.Any])
     

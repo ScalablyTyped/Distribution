@@ -27,7 +27,8 @@ object distTypesResponsiveEditorSystemDistComponentsCommentsMod extends Shortcut
       __obj.asInstanceOf[CommentsProps]
     }
     
-    extension [Self <: CommentsProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommentsProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

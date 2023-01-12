@@ -43,7 +43,8 @@ object libModalStylePromptMod {
       __obj.asInstanceOf[PromptStyle]
     }
     
-    extension [Self <: PromptStyle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PromptStyle] (val x: Self) extends AnyVal {
       
       inline def setInput(value: TextStyle): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
       

@@ -21,7 +21,8 @@ object Journeys {
     __obj.asInstanceOf[Journeys]
   }
   
-  extension [Self <: Journeys](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Journeys] (val x: Self) extends AnyVal {
     
     inline def setEarlierRef(value: String): Self = StObject.set(x, "earlierRef", value.asInstanceOf[js.Any])
     

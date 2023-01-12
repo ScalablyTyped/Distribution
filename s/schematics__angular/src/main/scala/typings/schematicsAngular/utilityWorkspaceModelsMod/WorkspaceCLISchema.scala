@@ -20,7 +20,8 @@ object WorkspaceCLISchema {
     __obj.asInstanceOf[WorkspaceCLISchema]
   }
   
-  extension [Self <: WorkspaceCLISchema](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkspaceCLISchema] (val x: Self) extends AnyVal {
     
     inline def setDefaultCollection(value: String): Self = StObject.set(x, "defaultCollection", value.asInstanceOf[js.Any])
     

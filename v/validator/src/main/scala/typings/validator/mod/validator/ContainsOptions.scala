@@ -26,7 +26,8 @@ object ContainsOptions {
     __obj.asInstanceOf[ContainsOptions]
   }
   
-  extension [Self <: ContainsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContainsOptions] (val x: Self) extends AnyVal {
     
     inline def setIgnoreCase(value: Boolean): Self = StObject.set(x, "ignoreCase", value.asInstanceOf[js.Any])
     

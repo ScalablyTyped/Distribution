@@ -63,7 +63,8 @@ object RelativeDateTimeFormatter {
     __obj.asInstanceOf[RelativeDateTimeFormatter]
   }
   
-  extension [Self <: RelativeDateTimeFormatter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RelativeDateTimeFormatter] (val x: Self) extends AnyVal {
     
     inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     

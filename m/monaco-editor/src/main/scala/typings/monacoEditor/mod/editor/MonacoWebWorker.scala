@@ -34,7 +34,8 @@ object MonacoWebWorker {
     __obj.asInstanceOf[MonacoWebWorker[T]]
   }
   
-  extension [Self <: MonacoWebWorker[?], T](x: Self & MonacoWebWorker[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MonacoWebWorker[?], T] (val x: Self & MonacoWebWorker[T]) extends AnyVal {
     
     inline def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
     

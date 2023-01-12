@@ -15,7 +15,8 @@ object EthereumTypedDataValueRequest {
     __obj.asInstanceOf[EthereumTypedDataValueRequest]
   }
   
-  extension [Self <: EthereumTypedDataValueRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EthereumTypedDataValueRequest] (val x: Self) extends AnyVal {
     
     inline def setMember_path(value: js.Array[Double]): Self = StObject.set(x, "member_path", value.asInstanceOf[js.Any])
     

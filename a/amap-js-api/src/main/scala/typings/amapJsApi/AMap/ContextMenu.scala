@@ -60,7 +60,8 @@ object ContextMenu {
       __obj.asInstanceOf[EventMap[I]]
     }
     
-    extension [Self <: EventMap[?], I](x: Self & EventMap[I]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EventMap[?], I] (val x: Self & EventMap[I]) extends AnyVal {
       
       inline def setClose(value: Event_[close, Target[I]]): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
       
@@ -87,7 +88,8 @@ object ContextMenu {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setContent(value: String | HTMLElement): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       

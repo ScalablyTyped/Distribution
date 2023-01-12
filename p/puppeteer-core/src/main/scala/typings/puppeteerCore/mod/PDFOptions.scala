@@ -118,7 +118,8 @@ object PDFOptions {
     __obj.asInstanceOf[PDFOptions]
   }
   
-  extension [Self <: PDFOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PDFOptions] (val x: Self) extends AnyVal {
     
     inline def setDisplayHeaderFooter(value: Boolean): Self = StObject.set(x, "displayHeaderFooter", value.asInstanceOf[js.Any])
     

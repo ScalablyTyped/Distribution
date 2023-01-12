@@ -24,7 +24,8 @@ object SetOperationNode {
     __obj.asInstanceOf[SetOperationNode]
   }
   
-  extension [Self <: SetOperationNode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetOperationNode] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: js.Array[AstNode]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

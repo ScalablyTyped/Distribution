@@ -25,7 +25,8 @@ object IBulkOptions {
     __obj.asInstanceOf[IBulkOptions]
   }
   
-  extension [Self <: IBulkOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IBulkOptions] (val x: Self) extends AnyVal {
     
     inline def setCheckConstraints(value: Boolean): Self = StObject.set(x, "checkConstraints", value.asInstanceOf[js.Any])
     

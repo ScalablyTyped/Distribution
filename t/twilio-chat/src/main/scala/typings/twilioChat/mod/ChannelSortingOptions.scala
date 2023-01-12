@@ -26,7 +26,8 @@ object ChannelSortingOptions {
     __obj.asInstanceOf[ChannelSortingOptions]
   }
   
-  extension [Self <: ChannelSortingOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChannelSortingOptions] (val x: Self) extends AnyVal {
     
     inline def setCriteria(value: ChannelSortingCriteria): Self = StObject.set(x, "criteria", value.asInstanceOf[js.Any])
     

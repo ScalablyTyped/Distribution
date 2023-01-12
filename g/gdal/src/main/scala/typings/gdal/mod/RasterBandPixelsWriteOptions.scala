@@ -21,7 +21,8 @@ object RasterBandPixelsWriteOptions {
     __obj.asInstanceOf[RasterBandPixelsWriteOptions]
   }
   
-  extension [Self <: RasterBandPixelsWriteOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RasterBandPixelsWriteOptions] (val x: Self) extends AnyVal {
     
     inline def setBuffer_height(value: Double): Self = StObject.set(x, "buffer_height", value.asInstanceOf[js.Any])
     

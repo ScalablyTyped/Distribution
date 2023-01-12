@@ -33,7 +33,8 @@ object PartialPhotoshopPickerSty {
     __obj.asInstanceOf[PartialPhotoshopPickerSty]
   }
   
-  extension [Self <: PartialPhotoshopPickerSty](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialPhotoshopPickerSty] (val x: Self) extends AnyVal {
     
     inline def setActions(value: CSSProperties): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     

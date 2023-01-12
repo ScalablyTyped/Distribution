@@ -16,7 +16,8 @@ object BuildBazelRemoteExecutionV2FindMissingBlobsResponse {
     __obj.asInstanceOf[BuildBazelRemoteExecutionV2FindMissingBlobsResponse]
   }
   
-  extension [Self <: BuildBazelRemoteExecutionV2FindMissingBlobsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BuildBazelRemoteExecutionV2FindMissingBlobsResponse] (val x: Self) extends AnyVal {
     
     inline def setMissingBlobDigests(value: js.Array[BuildBazelRemoteExecutionV2Digest]): Self = StObject.set(x, "missingBlobDigests", value.asInstanceOf[js.Any])
     

@@ -26,7 +26,8 @@ object IApprovalAssignmentClassInfo {
     __obj.asInstanceOf[IApprovalAssignmentClassInfo]
   }
   
-  extension [Self <: IApprovalAssignmentClassInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IApprovalAssignmentClassInfo] (val x: Self) extends AnyVal {
     
     inline def setAnyAssigneeApproves(value: Boolean): Self = StObject.set(x, "AnyAssigneeApproves", value.asInstanceOf[js.Any])
     

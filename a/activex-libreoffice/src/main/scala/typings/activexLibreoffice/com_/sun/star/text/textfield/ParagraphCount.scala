@@ -57,7 +57,8 @@ object ParagraphCount {
     __obj.asInstanceOf[ParagraphCount]
   }
   
-  extension [Self <: ParagraphCount](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParagraphCount] (val x: Self) extends AnyVal {
     
     inline def setNumberingType(value: Double): Self = StObject.set(x, "NumberingType", value.asInstanceOf[js.Any])
   }

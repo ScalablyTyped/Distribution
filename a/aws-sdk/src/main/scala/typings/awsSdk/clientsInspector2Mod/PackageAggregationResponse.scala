@@ -28,7 +28,8 @@ object PackageAggregationResponse {
     __obj.asInstanceOf[PackageAggregationResponse]
   }
   
-  extension [Self <: PackageAggregationResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PackageAggregationResponse] (val x: Self) extends AnyVal {
     
     inline def setAccountId(value: AccountId): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object opensshStreamLocalForwardGlobalRequest {
     __obj.asInstanceOf[opensshStreamLocalForwardGlobalRequest]
   }
   
-  extension [Self <: opensshStreamLocalForwardGlobalRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: opensshStreamLocalForwardGlobalRequest] (val x: Self) extends AnyVal {
     
     inline def setSocketPath(value: String): Self = StObject.set(x, "socketPath", value.asInstanceOf[js.Any])
   }

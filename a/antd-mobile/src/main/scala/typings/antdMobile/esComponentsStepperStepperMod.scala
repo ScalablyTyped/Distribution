@@ -48,7 +48,8 @@ object esComponentsStepperStepperMod {
       __obj.asInstanceOf[ValueProps]
     }
     
-    extension [Self <: ValueProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ValueProps] (val x: Self) extends AnyVal {
       
       inline def setAllowEmpty(value: `true`): Self = StObject.set(x, "allowEmpty", value.asInstanceOf[js.Any])
       
@@ -87,7 +88,8 @@ object esComponentsStepperStepperMod {
       __obj.asInstanceOf[ValuePropsWithNull]
     }
     
-    extension [Self <: ValuePropsWithNull](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ValuePropsWithNull] (val x: Self) extends AnyVal {
       
       inline def setAllowEmpty(value: `false`): Self = StObject.set(x, "allowEmpty", value.asInstanceOf[js.Any])
       

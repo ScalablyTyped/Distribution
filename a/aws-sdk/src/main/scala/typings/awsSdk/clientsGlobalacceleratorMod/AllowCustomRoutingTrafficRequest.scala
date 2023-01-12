@@ -38,7 +38,8 @@ object AllowCustomRoutingTrafficRequest {
     __obj.asInstanceOf[AllowCustomRoutingTrafficRequest]
   }
   
-  extension [Self <: AllowCustomRoutingTrafficRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AllowCustomRoutingTrafficRequest] (val x: Self) extends AnyVal {
     
     inline def setAllowAllTrafficToEndpoint(value: GenericBoolean): Self = StObject.set(x, "AllowAllTrafficToEndpoint", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object BootboxButton {
     __obj.asInstanceOf[BootboxButton]
   }
   
-  extension [Self <: BootboxButton](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BootboxButton] (val x: Self) extends AnyVal {
     
     inline def setCallback(value: () => Any): Self = StObject.set(x, "callback", js.Any.fromFunction0(value))
     

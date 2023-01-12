@@ -18,7 +18,8 @@ object DescribeUserPoolDomainRequest {
     __obj.asInstanceOf[DescribeUserPoolDomainRequest]
   }
   
-  extension [Self <: DescribeUserPoolDomainRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeUserPoolDomainRequest] (val x: Self) extends AnyVal {
     
     inline def setDomain(value: DomainType): Self = StObject.set(x, "Domain", value.asInstanceOf[js.Any])
   }

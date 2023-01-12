@@ -53,7 +53,8 @@ object DetectorModelVersionSummary {
     __obj.asInstanceOf[DetectorModelVersionSummary]
   }
   
-  extension [Self <: DetectorModelVersionSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DetectorModelVersionSummary] (val x: Self) extends AnyVal {
     
     inline def setCreationTime(value: js.Date): Self = StObject.set(x, "creationTime", value.asInstanceOf[js.Any])
     

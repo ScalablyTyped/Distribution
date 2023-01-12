@@ -56,7 +56,8 @@ object HttpHealthCheck {
     __obj.asInstanceOf[HttpHealthCheck]
   }
   
-  extension [Self <: HttpHealthCheck](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HttpHealthCheck] (val x: Self) extends AnyVal {
     
     inline def setCheckIntervalSec(value: Double): Self = StObject.set(x, "checkIntervalSec", value.asInstanceOf[js.Any])
     

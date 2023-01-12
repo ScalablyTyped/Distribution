@@ -15,7 +15,8 @@ object StyleFill {
     __obj.asInstanceOf[StyleFill]
   }
   
-  extension [Self <: StyleFill](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StyleFill] (val x: Self) extends AnyVal {
     
     inline def setStyle(value: Fill): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
   }

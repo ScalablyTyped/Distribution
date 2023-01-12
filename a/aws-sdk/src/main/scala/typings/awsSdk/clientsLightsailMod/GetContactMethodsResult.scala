@@ -18,7 +18,8 @@ object GetContactMethodsResult {
     __obj.asInstanceOf[GetContactMethodsResult]
   }
   
-  extension [Self <: GetContactMethodsResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetContactMethodsResult] (val x: Self) extends AnyVal {
     
     inline def setContactMethods(value: ContactMethodsList): Self = StObject.set(x, "contactMethods", value.asInstanceOf[js.Any])
     

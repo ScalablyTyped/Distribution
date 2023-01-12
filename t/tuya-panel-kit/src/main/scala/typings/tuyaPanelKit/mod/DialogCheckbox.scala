@@ -25,7 +25,8 @@ object DialogCheckbox {
     __obj.asInstanceOf[DialogCheckbox]
   }
   
-  extension [Self <: DialogCheckbox](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DialogCheckbox] (val x: Self) extends AnyVal {
     
     inline def setHideOnUnselect(value: Boolean): Self = StObject.set(x, "hideOnUnselect", value.asInstanceOf[js.Any])
     

@@ -52,7 +52,8 @@ object LineMap {
     __obj.asInstanceOf[LineMap]
   }
   
-  extension [Self <: LineMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LineMap] (val x: Self) extends AnyVal {
     
     inline def setEquals_(value: LineMap => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction1(value))
     

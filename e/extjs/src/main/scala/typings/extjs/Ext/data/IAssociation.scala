@@ -45,7 +45,8 @@ object IAssociation {
     __obj.asInstanceOf[IAssociation]
   }
   
-  extension [Self <: IAssociation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IAssociation] (val x: Self) extends AnyVal {
     
     inline def setAssociatedModel(value: String): Self = StObject.set(x, "associatedModel", value.asInstanceOf[js.Any])
     

@@ -33,7 +33,8 @@ object ScheduleKeyDeletionResponse {
     __obj.asInstanceOf[ScheduleKeyDeletionResponse]
   }
   
-  extension [Self <: ScheduleKeyDeletionResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScheduleKeyDeletionResponse] (val x: Self) extends AnyVal {
     
     inline def setDeletionDate(value: js.Date): Self = StObject.set(x, "DeletionDate", value.asInstanceOf[js.Any])
     

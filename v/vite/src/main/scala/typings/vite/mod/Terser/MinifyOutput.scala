@@ -19,7 +19,8 @@ object MinifyOutput {
     __obj.asInstanceOf[MinifyOutput]
   }
   
-  extension [Self <: MinifyOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MinifyOutput] (val x: Self) extends AnyVal {
     
     inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     

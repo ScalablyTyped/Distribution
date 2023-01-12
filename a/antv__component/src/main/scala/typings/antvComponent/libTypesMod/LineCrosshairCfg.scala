@@ -29,7 +29,8 @@ object LineCrosshairCfg {
     __obj.asInstanceOf[LineCrosshairCfg]
   }
   
-  extension [Self <: LineCrosshairCfg](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LineCrosshairCfg] (val x: Self) extends AnyVal {
     
     inline def setEnd(value: Point): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     

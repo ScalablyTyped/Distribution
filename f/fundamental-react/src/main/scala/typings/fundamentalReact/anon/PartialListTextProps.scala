@@ -23,7 +23,8 @@ object PartialListTextProps {
     __obj.asInstanceOf[PartialListTextProps]
   }
   
-  extension [Self <: PartialListTextProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialListTextProps] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

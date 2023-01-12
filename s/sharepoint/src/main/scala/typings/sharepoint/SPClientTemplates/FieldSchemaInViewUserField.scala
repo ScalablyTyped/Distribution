@@ -56,7 +56,8 @@ object FieldSchemaInViewUserField {
     __obj.asInstanceOf[FieldSchemaInViewUserField]
   }
   
-  extension [Self <: FieldSchemaInViewUserField](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FieldSchemaInViewUserField] (val x: Self) extends AnyVal {
     
     inline def setAllowMultipleValues(value: String): Self = StObject.set(x, "AllowMultipleValues", value.asInstanceOf[js.Any])
     

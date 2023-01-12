@@ -19,7 +19,8 @@ object ExternalProtectionLevelOptions {
     __obj.asInstanceOf[ExternalProtectionLevelOptions]
   }
   
-  extension [Self <: ExternalProtectionLevelOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExternalProtectionLevelOptions] (val x: Self) extends AnyVal {
     
     inline def setEkmConnectionKeyPath(value: String): Self = StObject.set(x, "ekmConnectionKeyPath", value.asInstanceOf[js.Any])
     

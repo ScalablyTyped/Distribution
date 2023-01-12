@@ -39,7 +39,8 @@ object FilePondDragDropProps {
     __obj.asInstanceOf[FilePondDragDropProps]
   }
   
-  extension [Self <: FilePondDragDropProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FilePondDragDropProps] (val x: Self) extends AnyVal {
     
     inline def setDropOnElement(value: Boolean): Self = StObject.set(x, "dropOnElement", value.asInstanceOf[js.Any])
     

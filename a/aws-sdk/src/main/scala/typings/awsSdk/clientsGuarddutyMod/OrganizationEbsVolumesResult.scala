@@ -18,7 +18,8 @@ object OrganizationEbsVolumesResult {
     __obj.asInstanceOf[OrganizationEbsVolumesResult]
   }
   
-  extension [Self <: OrganizationEbsVolumesResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OrganizationEbsVolumesResult] (val x: Self) extends AnyVal {
     
     inline def setAutoEnable(value: Boolean): Self = StObject.set(x, "AutoEnable", value.asInstanceOf[js.Any])
     

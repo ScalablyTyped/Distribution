@@ -47,7 +47,8 @@ object DescribeLineageGroupResponse {
     __obj.asInstanceOf[DescribeLineageGroupResponse]
   }
   
-  extension [Self <: DescribeLineageGroupResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeLineageGroupResponse] (val x: Self) extends AnyVal {
     
     inline def setCreatedBy(value: UserContext): Self = StObject.set(x, "CreatedBy", value.asInstanceOf[js.Any])
     

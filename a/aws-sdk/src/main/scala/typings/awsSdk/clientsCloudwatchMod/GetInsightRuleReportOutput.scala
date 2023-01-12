@@ -43,7 +43,8 @@ object GetInsightRuleReportOutput {
     __obj.asInstanceOf[GetInsightRuleReportOutput]
   }
   
-  extension [Self <: GetInsightRuleReportOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetInsightRuleReportOutput] (val x: Self) extends AnyVal {
     
     inline def setAggregateValue(value: InsightRuleUnboundDouble): Self = StObject.set(x, "AggregateValue", value.asInstanceOf[js.Any])
     

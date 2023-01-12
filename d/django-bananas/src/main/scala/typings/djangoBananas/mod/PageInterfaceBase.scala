@@ -19,7 +19,8 @@ object PageInterfaceBase {
     __obj.asInstanceOf[PageInterfaceBase]
   }
   
-  extension [Self <: PageInterfaceBase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PageInterfaceBase] (val x: Self) extends AnyVal {
     
     inline def setReferer(value: String): Self = StObject.set(x, "referer", value.asInstanceOf[js.Any])
     

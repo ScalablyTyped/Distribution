@@ -93,7 +93,8 @@ object ManualIntervention {
     __obj.asInstanceOf[ManualIntervention]
   }
   
-  extension [Self <: ManualIntervention](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ManualIntervention] (val x: Self) extends AnyVal {
     
     inline def setApprover(value: IdentityRef): Self = StObject.set(x, "approver", value.asInstanceOf[js.Any])
     

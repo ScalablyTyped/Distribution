@@ -84,7 +84,8 @@ object RecursivePartialPartialBuActiveOpacity {
     __obj.asInstanceOf[RecursivePartialPartialBuActiveOpacity]
   }
   
-  extension [Self <: RecursivePartialPartialBuActiveOpacity](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecursivePartialPartialBuActiveOpacity] (val x: Self) extends AnyVal {
     
     inline def setActiveOpacity(value: RecursivePartial[js.UndefOr[Double]]): Self = StObject.set(x, "activeOpacity", value.asInstanceOf[js.Any])
     

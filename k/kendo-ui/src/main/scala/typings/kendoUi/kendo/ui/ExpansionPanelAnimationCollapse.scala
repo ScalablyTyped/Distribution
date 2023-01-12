@@ -17,7 +17,8 @@ object ExpansionPanelAnimationCollapse {
     __obj.asInstanceOf[ExpansionPanelAnimationCollapse]
   }
   
-  extension [Self <: ExpansionPanelAnimationCollapse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExpansionPanelAnimationCollapse] (val x: Self) extends AnyVal {
     
     inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     

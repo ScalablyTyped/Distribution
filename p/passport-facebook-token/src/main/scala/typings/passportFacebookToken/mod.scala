@@ -41,7 +41,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Profile]
     }
     
-    extension [Self <: Profile](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Profile] (val x: Self) extends AnyVal {
       
       inline def setGender(value: String): Self = StObject.set(x, "gender", value.asInstanceOf[js.Any])
       
@@ -102,7 +103,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[StrategyOptions]
     }
     
-    extension [Self <: StrategyOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StrategyOptions] (val x: Self) extends AnyVal {
       
       inline def setAuthorizationURL(value: String): Self = StObject.set(x, "authorizationURL", value.asInstanceOf[js.Any])
       
@@ -149,7 +151,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[StrategyOptionsWithRequest]
     }
     
-    extension [Self <: StrategyOptionsWithRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StrategyOptionsWithRequest] (val x: Self) extends AnyVal {
       
       inline def setPassReqToCallback(value: `true`): Self = StObject.set(x, "passReqToCallback", value.asInstanceOf[js.Any])
     }
@@ -175,7 +178,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[ValueObject]
     }
     
-    extension [Self <: ValueObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ValueObject] (val x: Self) extends AnyVal {
       
       inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }

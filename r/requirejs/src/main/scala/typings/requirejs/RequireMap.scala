@@ -53,7 +53,8 @@ object RequireMap {
     __obj.asInstanceOf[RequireMap]
   }
   
-  extension [Self <: RequireMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RequireMap] (val x: Self) extends AnyVal {
     
     inline def setFullName(value: String): Self = StObject.set(x, "fullName", value.asInstanceOf[js.Any])
     

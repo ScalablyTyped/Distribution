@@ -71,7 +71,8 @@ object IController {
     __obj.asInstanceOf[IController]
   }
   
-  extension [Self <: IController](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IController] (val x: Self) extends AnyVal {
     
     inline def set$doCheck(value: () => Unit): Self = StObject.set(x, "$doCheck", js.Any.fromFunction0(value))
     

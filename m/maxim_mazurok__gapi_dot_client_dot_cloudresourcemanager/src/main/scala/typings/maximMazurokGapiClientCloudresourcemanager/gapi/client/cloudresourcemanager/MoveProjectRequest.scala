@@ -16,7 +16,8 @@ object MoveProjectRequest {
     __obj.asInstanceOf[MoveProjectRequest]
   }
   
-  extension [Self <: MoveProjectRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MoveProjectRequest] (val x: Self) extends AnyVal {
     
     inline def setDestinationParent(value: String): Self = StObject.set(x, "destinationParent", value.asInstanceOf[js.Any])
     

@@ -30,7 +30,8 @@ object typesSubModuleMod {
       __obj.asInstanceOf[SubModule]
     }
     
-    extension [Self <: SubModule](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SubModule] (val x: Self) extends AnyVal {
       
       inline def setAbsolutePath(value: String): Self = StObject.set(x, "absolutePath", value.asInstanceOf[js.Any])
       

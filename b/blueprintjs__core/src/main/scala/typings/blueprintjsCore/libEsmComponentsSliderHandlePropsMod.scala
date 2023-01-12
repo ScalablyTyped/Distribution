@@ -96,7 +96,8 @@ object libEsmComponentsSliderHandlePropsMod {
       __obj.asInstanceOf[HandleHtmlProps]
     }
     
-    extension [Self <: HandleHtmlProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HandleHtmlProps] (val x: Self) extends AnyVal {
       
       inline def `setAria-label`(value: String): Self = StObject.set(x, "aria-label", value.asInstanceOf[js.Any])
       
@@ -165,7 +166,8 @@ object libEsmComponentsSliderHandlePropsMod {
       __obj.asInstanceOf[IHandleProps]
     }
     
-    extension [Self <: IHandleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IHandleProps] (val x: Self) extends AnyVal {
       
       inline def setHtmlProps(value: HandleHtmlProps): Self = StObject.set(x, "htmlProps", value.asInstanceOf[js.Any])
       

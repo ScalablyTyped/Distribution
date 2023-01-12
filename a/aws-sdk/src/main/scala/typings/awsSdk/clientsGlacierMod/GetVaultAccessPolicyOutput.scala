@@ -18,7 +18,8 @@ object GetVaultAccessPolicyOutput {
     __obj.asInstanceOf[GetVaultAccessPolicyOutput]
   }
   
-  extension [Self <: GetVaultAccessPolicyOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetVaultAccessPolicyOutput] (val x: Self) extends AnyVal {
     
     inline def setPolicy(value: VaultAccessPolicy): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
     

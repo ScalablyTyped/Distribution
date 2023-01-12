@@ -21,7 +21,8 @@ object findEntry {
     __obj.asInstanceOf[findEntry]
   }
   
-  extension [Self <: findEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: findEntry] (val x: Self) extends AnyVal {
     
     inline def setContentSnippet(value: String): Self = StObject.set(x, "contentSnippet", value.asInstanceOf[js.Any])
     

@@ -51,7 +51,8 @@ object OrganizationInvitation {
     __obj.asInstanceOf[OrganizationInvitation]
   }
   
-  extension [Self <: OrganizationInvitation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OrganizationInvitation] (val x: Self) extends AnyVal {
     
     inline def setApp_metadata(value: Any): Self = StObject.set(x, "app_metadata", value.asInstanceOf[js.Any])
     

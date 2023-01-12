@@ -23,7 +23,8 @@ object RoleLastUsed {
     __obj.asInstanceOf[RoleLastUsed]
   }
   
-  extension [Self <: RoleLastUsed](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RoleLastUsed] (val x: Self) extends AnyVal {
     
     inline def setLastUsedDate(value: js.Date): Self = StObject.set(x, "LastUsedDate", value.asInstanceOf[js.Any])
     

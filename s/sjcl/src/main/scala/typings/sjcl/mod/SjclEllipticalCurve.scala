@@ -15,7 +15,8 @@ object SjclEllipticalCurve {
     __obj.asInstanceOf[SjclEllipticalCurve]
   }
   
-  extension [Self <: SjclEllipticalCurve](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SjclEllipticalCurve] (val x: Self) extends AnyVal {
     
     inline def setFromBits(value: BitArray_ => SjclEllipticalPoint): Self = StObject.set(x, "fromBits", js.Any.fromFunction1(value))
   }

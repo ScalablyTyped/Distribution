@@ -355,7 +355,8 @@ object XReportControlFormat {
     __obj.asInstanceOf[XReportControlFormat]
   }
   
-  extension [Self <: XReportControlFormat](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XReportControlFormat] (val x: Self) extends AnyVal {
     
     inline def setCharAutoKerning(value: Boolean): Self = StObject.set(x, "CharAutoKerning", value.asInstanceOf[js.Any])
     

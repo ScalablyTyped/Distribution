@@ -28,7 +28,8 @@ object anon {
       __obj.asInstanceOf[GetAppName]
     }
     
-    extension [Self <: GetAppName](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetAppName] (val x: Self) extends AnyVal {
       
       inline def setGetAppName(value: () => js.Promise[String]): Self = StObject.set(x, "getAppName", js.Any.fromFunction0(value))
       

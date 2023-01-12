@@ -21,7 +21,8 @@ object anon {
       __obj.asInstanceOf[Data]
     }
     
-    extension [Self <: Data](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Data] (val x: Self) extends AnyVal {
       
       inline def setData(value: js.Array[Record[String, Any]]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -46,7 +47,8 @@ object anon {
       __obj.asInstanceOf[Description]
     }
     
-    extension [Self <: Description](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Description] (val x: Self) extends AnyVal {
       
       inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
@@ -69,7 +71,8 @@ object anon {
       __obj.asInstanceOf[DocBlocksRegExp]
     }
     
-    extension [Self <: DocBlocksRegExp](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DocBlocksRegExp] (val x: Self) extends AnyVal {
       
       inline def setDocBlocksRegExp(value: js.RegExp): Self = StObject.set(x, "docBlocksRegExp", value.asInstanceOf[js.Any])
       
@@ -96,7 +99,8 @@ object anon {
       __obj.asInstanceOf[GetGroup]
     }
     
-    extension [Self <: GetGroup](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetGroup] (val x: Self) extends AnyVal {
       
       inline def setGetGroup(value: () => String): Self = StObject.set(x, "getGroup", js.Any.fromFunction0(value))
       
@@ -133,7 +137,8 @@ object anon {
       __obj.asInstanceOf[Global]
     }
     
-    extension [Self <: Global](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Global] (val x: Self) extends AnyVal {
       
       inline def setGlobal(value: Any): Self = StObject.set(x, "global", value.asInstanceOf[js.Any])
       
@@ -152,7 +157,8 @@ object anon {
       __obj.asInstanceOf[PostFilter]
     }
     
-    extension [Self <: PostFilter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PostFilter] (val x: Self) extends AnyVal {
       
       inline def setPostFilter(value: (js.Array[ParsedFile], js.Array[String]) => Unit): Self = StObject.set(x, "postFilter", js.Any.fromFunction2(value))
     }

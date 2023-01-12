@@ -41,7 +41,8 @@ object KMLLayerViewMapImage {
     __obj.asInstanceOf[KMLLayerViewMapImage]
   }
   
-  extension [Self <: KMLLayerViewMapImage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KMLLayerViewMapImage] (val x: Self) extends AnyVal {
     
     inline def setExtent(value: Extent): Self = StObject.set(x, "Extent", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object AnalysisKeywordMarkerTokenFilter {
     __obj.asInstanceOf[AnalysisKeywordMarkerTokenFilter]
   }
   
-  extension [Self <: AnalysisKeywordMarkerTokenFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnalysisKeywordMarkerTokenFilter] (val x: Self) extends AnyVal {
     
     inline def setIgnore_case(value: Boolean): Self = StObject.set(x, "ignore_case", value.asInstanceOf[js.Any])
     

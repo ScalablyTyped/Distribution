@@ -28,7 +28,8 @@ object esRawItemMod extends Shortcut {
       __obj.asInstanceOf[RawItemProps]
     }
     
-    extension [Self <: RawItemProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RawItemProps] (val x: Self) extends AnyVal {
       
       inline def setComponent(value: ComponentType): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
       

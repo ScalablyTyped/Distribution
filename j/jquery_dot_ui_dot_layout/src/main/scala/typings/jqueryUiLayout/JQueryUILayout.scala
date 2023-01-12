@@ -1580,7 +1580,8 @@ object JQueryUILayout {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setCenter(value: PaneOptions): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
       
@@ -4430,7 +4431,8 @@ object JQueryUILayout {
       __obj.asInstanceOf[PaneOptions]
     }
     
-    extension [Self <: PaneOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PaneOptions] (val x: Self) extends AnyVal {
       
       inline def setApplyDefaultStyles(value: Boolean): Self = StObject.set(x, "applyDefaultStyles", value.asInstanceOf[js.Any])
       
@@ -4895,7 +4897,8 @@ object JQueryUILayout {
       __obj.asInstanceOf[PaneState]
     }
     
-    extension [Self <: PaneState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PaneState] (val x: Self) extends AnyVal {
       
       inline def setIsClosed(value: Boolean): Self = StObject.set(x, "isClosed", value.asInstanceOf[js.Any])
       

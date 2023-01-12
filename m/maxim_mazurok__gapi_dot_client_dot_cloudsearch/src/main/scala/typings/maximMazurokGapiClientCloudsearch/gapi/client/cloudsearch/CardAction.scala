@@ -18,7 +18,8 @@ object CardAction {
     __obj.asInstanceOf[CardAction]
   }
   
-  extension [Self <: CardAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CardAction] (val x: Self) extends AnyVal {
     
     inline def setActionLabel(value: String): Self = StObject.set(x, "actionLabel", value.asInstanceOf[js.Any])
     

@@ -72,7 +72,8 @@ object buildTypesSerializerMod {
       __obj.asInstanceOf[IJsonSerializerOptions]
     }
     
-    extension [Self <: IJsonSerializerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IJsonSerializerOptions] (val x: Self) extends AnyVal {
       
       inline def setSchemaName(value: String): Self = StObject.set(x, "schemaName", value.asInstanceOf[js.Any])
       

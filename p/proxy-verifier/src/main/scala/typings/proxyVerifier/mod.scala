@@ -60,7 +60,8 @@ object mod {
       __obj.asInstanceOf[AllResults]
     }
     
-    extension [Self <: AllResults](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AllResults] (val x: Self) extends AnyVal {
       
       inline def setAnonymityLevel(value: AnonymityLevel): Self = StObject.set(x, "anonymityLevel", value.asInstanceOf[js.Any])
       
@@ -106,7 +107,8 @@ object mod {
       __obj.asInstanceOf[CustomTestBaseResult]
     }
     
-    extension [Self <: CustomTestBaseResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CustomTestBaseResult] (val x: Self) extends AnyVal {
       
       inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -132,7 +134,8 @@ object mod {
       __obj.asInstanceOf[CustomTestNotWorkingResult]
     }
     
-    extension [Self <: CustomTestNotWorkingResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CustomTestNotWorkingResult] (val x: Self) extends AnyVal {
       
       inline def setError(value: Code): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
@@ -172,7 +175,8 @@ object mod {
       __obj.asInstanceOf[CustomTestWorkingResult]
     }
     
-    extension [Self <: CustomTestWorkingResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CustomTestWorkingResult] (val x: Self) extends AnyVal {
       
       inline def setOk(value: `true`): Self = StObject.set(x, "ok", value.asInstanceOf[js.Any])
     }
@@ -195,7 +199,8 @@ object mod {
       __obj.asInstanceOf[NotWorkingResult]
     }
     
-    extension [Self <: NotWorkingResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NotWorkingResult] (val x: Self) extends AnyVal {
       
       inline def setError(value: Code): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
@@ -245,7 +250,8 @@ object mod {
       __obj.asInstanceOf[Proxy]
     }
     
-    extension [Self <: Proxy](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Proxy] (val x: Self) extends AnyVal {
       
       inline def setAuth(value: String): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
       
@@ -298,7 +304,8 @@ object mod {
       __obj.asInstanceOf[TestOptions]
     }
     
-    extension [Self <: TestOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TestOptions] (val x: Self) extends AnyVal {
       
       inline def setTestFn(value: (String, Double, Headers) => Unit): Self = StObject.set(x, "testFn", js.Any.fromFunction3(value))
       
@@ -319,7 +326,8 @@ object mod {
       __obj.asInstanceOf[WorkingResult]
     }
     
-    extension [Self <: WorkingResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WorkingResult] (val x: Self) extends AnyVal {
       
       inline def setOk(value: `true`): Self = StObject.set(x, "ok", value.asInstanceOf[js.Any])
     }

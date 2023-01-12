@@ -48,7 +48,8 @@ object libSrcComponentsMessageMod extends Shortcut {
       __obj.asInstanceOf[Props[V]]
     }
     
-    extension [Self <: Props[?], V /* <: Record[String, Any] */](x: Self & Props[V]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Props[?], V /* <: Record[String, Any] */] (val x: Self & Props[V]) extends AnyVal {
       
       inline def setChildren(value: /* nodes */ js.Array[ReactNode] => ReactElement | Null): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
       

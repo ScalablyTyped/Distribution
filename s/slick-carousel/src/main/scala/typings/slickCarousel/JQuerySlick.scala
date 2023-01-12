@@ -190,7 +190,8 @@ object JQuerySlick {
     __obj.asInstanceOf[JQuerySlick]
   }
   
-  extension [Self <: JQuerySlick](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JQuerySlick] (val x: Self) extends AnyVal {
     
     inline def set$slider(value: JQuery): Self = StObject.set(x, "$slider", value.asInstanceOf[js.Any])
     

@@ -24,7 +24,8 @@ object JsxSvgCoreProps {
     __obj.asInstanceOf[JsxSvgCoreProps]
   }
   
-  extension [Self <: JsxSvgCoreProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JsxSvgCoreProps] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

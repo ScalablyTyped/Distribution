@@ -217,7 +217,8 @@ object libHandlerMod {
         __obj.asInstanceOf[ICompleterConnecterResponseType]
       }
       
-      extension [Self <: ICompleterConnecterResponseType](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ICompleterConnecterResponseType] (val x: Self) extends AnyVal {
         
         inline def setResponseType(value: typings.jupyterlabCompleter.jupyterlabCompleterStrings.ICompletionItemsReply): Self = StObject.set(x, "responseType", value.asInstanceOf[js.Any])
       }
@@ -273,7 +274,8 @@ object libHandlerMod {
         __obj.asInstanceOf[ICompletionItem]
       }
       
-      extension [Self <: ICompletionItem](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ICompletionItem] (val x: Self) extends AnyVal {
         
         inline def setDeprecated(value: Boolean): Self = StObject.set(x, "deprecated", value.asInstanceOf[js.Any])
         
@@ -339,7 +341,8 @@ object libHandlerMod {
         __obj.asInstanceOf[ICompletionItemsReply]
       }
       
-      extension [Self <: ICompletionItemsReply](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ICompletionItemsReply] (val x: Self) extends AnyVal {
         
         inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
         
@@ -384,7 +387,8 @@ object libHandlerMod {
         __obj.asInstanceOf[IOptions]
       }
       
-      extension [Self <: IOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
         
         inline def setCompleter(value: Completer): Self = StObject.set(x, "completer", value.asInstanceOf[js.Any])
         
@@ -426,7 +430,8 @@ object libHandlerMod {
         __obj.asInstanceOf[IReply]
       }
       
-      extension [Self <: IReply](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IReply] (val x: Self) extends AnyVal {
         
         inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
         
@@ -462,7 +467,8 @@ object libHandlerMod {
         __obj.asInstanceOf[IRequest]
       }
       
-      extension [Self <: IRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IRequest] (val x: Self) extends AnyVal {
         
         inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
         

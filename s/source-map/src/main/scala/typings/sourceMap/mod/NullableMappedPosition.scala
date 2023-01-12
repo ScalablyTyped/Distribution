@@ -21,7 +21,8 @@ object NullableMappedPosition {
     __obj.asInstanceOf[NullableMappedPosition]
   }
   
-  extension [Self <: NullableMappedPosition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NullableMappedPosition] (val x: Self) extends AnyVal {
     
     inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
     

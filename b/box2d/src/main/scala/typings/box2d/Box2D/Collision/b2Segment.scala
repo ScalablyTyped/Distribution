@@ -58,7 +58,8 @@ object b2Segment {
     __obj.asInstanceOf[b2Segment]
   }
   
-  extension [Self <: b2Segment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: b2Segment] (val x: Self) extends AnyVal {
     
     inline def setExtend(value: b2AABB => Unit): Self = StObject.set(x, "Extend", js.Any.fromFunction1(value))
     

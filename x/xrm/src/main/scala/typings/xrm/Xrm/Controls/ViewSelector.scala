@@ -36,7 +36,8 @@ object ViewSelector {
     __obj.asInstanceOf[ViewSelector]
   }
   
-  extension [Self <: ViewSelector](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ViewSelector] (val x: Self) extends AnyVal {
     
     inline def setGetCurrentView(value: () => LookupValue): Self = StObject.set(x, "getCurrentView", js.Any.fromFunction0(value))
     

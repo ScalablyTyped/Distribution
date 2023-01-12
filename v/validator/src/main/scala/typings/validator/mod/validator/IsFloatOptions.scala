@@ -38,7 +38,8 @@ object IsFloatOptions {
     __obj.asInstanceOf[IsFloatOptions]
   }
   
-  extension [Self <: IsFloatOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IsFloatOptions] (val x: Self) extends AnyVal {
     
     inline def setGt(value: Double): Self = StObject.set(x, "gt", value.asInstanceOf[js.Any])
     

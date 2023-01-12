@@ -17,7 +17,8 @@ object KafkaJSNumberOfRetriesExceededMetadata {
     __obj.asInstanceOf[KafkaJSNumberOfRetriesExceededMetadata]
   }
   
-  extension [Self <: KafkaJSNumberOfRetriesExceededMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KafkaJSNumberOfRetriesExceededMetadata] (val x: Self) extends AnyVal {
     
     inline def setRetryCount(value: Double): Self = StObject.set(x, "retryCount", value.asInstanceOf[js.Any])
     

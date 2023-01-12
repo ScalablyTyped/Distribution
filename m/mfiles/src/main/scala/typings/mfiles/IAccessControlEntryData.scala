@@ -36,7 +36,8 @@ object IAccessControlEntryData {
     __obj.asInstanceOf[IAccessControlEntryData]
   }
   
-  extension [Self <: IAccessControlEntryData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IAccessControlEntryData] (val x: Self) extends AnyVal {
     
     inline def setAttachObjectsPermission(value: MFPermission): Self = StObject.set(x, "AttachObjectsPermission", value.asInstanceOf[js.Any])
     

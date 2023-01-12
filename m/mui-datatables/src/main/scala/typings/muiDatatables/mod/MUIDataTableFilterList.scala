@@ -29,7 +29,8 @@ object MUIDataTableFilterList {
     __obj.asInstanceOf[MUIDataTableFilterList]
   }
   
-  extension [Self <: MUIDataTableFilterList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MUIDataTableFilterList] (val x: Self) extends AnyVal {
     
     inline def setClasses(value: js.Object): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
     

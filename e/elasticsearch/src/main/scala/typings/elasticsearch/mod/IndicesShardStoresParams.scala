@@ -28,7 +28,8 @@ object IndicesShardStoresParams {
     __obj.asInstanceOf[IndicesShardStoresParams]
   }
   
-  extension [Self <: IndicesShardStoresParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndicesShardStoresParams] (val x: Self) extends AnyVal {
     
     inline def setAllowNoIndices(value: Boolean): Self = StObject.set(x, "allowNoIndices", value.asInstanceOf[js.Any])
     

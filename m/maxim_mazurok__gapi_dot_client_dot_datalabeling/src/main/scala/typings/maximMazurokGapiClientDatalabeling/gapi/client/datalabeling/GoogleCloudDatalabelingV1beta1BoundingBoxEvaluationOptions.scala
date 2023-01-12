@@ -19,7 +19,8 @@ object GoogleCloudDatalabelingV1beta1BoundingBoxEvaluationOptions {
     __obj.asInstanceOf[GoogleCloudDatalabelingV1beta1BoundingBoxEvaluationOptions]
   }
   
-  extension [Self <: GoogleCloudDatalabelingV1beta1BoundingBoxEvaluationOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDatalabelingV1beta1BoundingBoxEvaluationOptions] (val x: Self) extends AnyVal {
     
     inline def setIouThreshold(value: Double): Self = StObject.set(x, "iouThreshold", value.asInstanceOf[js.Any])
     

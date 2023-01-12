@@ -53,7 +53,8 @@ object UpdateLocationObjectStorageRequest {
     __obj.asInstanceOf[UpdateLocationObjectStorageRequest]
   }
   
-  extension [Self <: UpdateLocationObjectStorageRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateLocationObjectStorageRequest] (val x: Self) extends AnyVal {
     
     inline def setAccessKey(value: ObjectStorageAccessKey): Self = StObject.set(x, "AccessKey", value.asInstanceOf[js.Any])
     

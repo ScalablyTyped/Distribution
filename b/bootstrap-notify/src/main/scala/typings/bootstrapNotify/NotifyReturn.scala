@@ -22,7 +22,8 @@ object NotifyReturn {
     __obj.asInstanceOf[NotifyReturn]
   }
   
-  extension [Self <: NotifyReturn](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NotifyReturn] (val x: Self) extends AnyVal {
     
     inline def set$ele(value: JQuery[HTMLElement]): Self = StObject.set(x, "$ele", value.asInstanceOf[js.Any])
     

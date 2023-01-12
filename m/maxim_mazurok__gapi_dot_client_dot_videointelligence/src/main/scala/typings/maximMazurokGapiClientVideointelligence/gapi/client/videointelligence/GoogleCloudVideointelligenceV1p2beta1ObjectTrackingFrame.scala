@@ -19,7 +19,8 @@ object GoogleCloudVideointelligenceV1p2beta1ObjectTrackingFrame {
     __obj.asInstanceOf[GoogleCloudVideointelligenceV1p2beta1ObjectTrackingFrame]
   }
   
-  extension [Self <: GoogleCloudVideointelligenceV1p2beta1ObjectTrackingFrame](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudVideointelligenceV1p2beta1ObjectTrackingFrame] (val x: Self) extends AnyVal {
     
     inline def setNormalizedBoundingBox(value: GoogleCloudVideointelligenceV1p2beta1NormalizedBoundingBox): Self = StObject.set(x, "normalizedBoundingBox", value.asInstanceOf[js.Any])
     

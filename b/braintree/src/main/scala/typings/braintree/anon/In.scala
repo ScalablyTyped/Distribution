@@ -17,7 +17,8 @@ object In {
     __obj.asInstanceOf[In[T]]
   }
   
-  extension [Self <: In[?], T](x: Self & In[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: In[?], T] (val x: Self & In[T]) extends AnyVal {
     
     inline def setIn(value: js.Array[T] => Unit): Self = StObject.set(x, "in", js.Any.fromFunction1(value))
     

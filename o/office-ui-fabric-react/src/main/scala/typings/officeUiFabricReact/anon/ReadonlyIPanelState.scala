@@ -21,7 +21,8 @@ object ReadonlyIPanelState {
     __obj.asInstanceOf[ReadonlyIPanelState]
   }
   
-  extension [Self <: ReadonlyIPanelState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadonlyIPanelState] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

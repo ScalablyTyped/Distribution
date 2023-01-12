@@ -236,7 +236,8 @@ object mod {
       __obj.asInstanceOf[VivusOptions]
     }
     
-    extension [Self <: VivusOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VivusOptions] (val x: Self) extends AnyVal {
       
       inline def setAnimTimingFunction(value: /* input */ Double => Double): Self = StObject.set(x, "animTimingFunction", js.Any.fromFunction1(value))
       

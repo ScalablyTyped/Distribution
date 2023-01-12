@@ -16,7 +16,8 @@ object WBView {
     __obj.asInstanceOf[WBView]
   }
   
-  extension [Self <: WBView](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WBView] (val x: Self) extends AnyVal {
     
     inline def setRTL(value: Boolean): Self = StObject.set(x, "RTL", value.asInstanceOf[js.Any])
     

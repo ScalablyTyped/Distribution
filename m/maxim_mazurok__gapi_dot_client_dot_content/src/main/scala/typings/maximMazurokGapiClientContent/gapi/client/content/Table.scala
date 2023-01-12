@@ -25,7 +25,8 @@ object Table {
     __obj.asInstanceOf[Table]
   }
   
-  extension [Self <: Table](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Table] (val x: Self) extends AnyVal {
     
     inline def setColumnHeaders(value: Headers): Self = StObject.set(x, "columnHeaders", value.asInstanceOf[js.Any])
     

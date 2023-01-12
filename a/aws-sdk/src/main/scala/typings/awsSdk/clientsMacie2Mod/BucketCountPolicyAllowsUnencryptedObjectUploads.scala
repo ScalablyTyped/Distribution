@@ -28,7 +28,8 @@ object BucketCountPolicyAllowsUnencryptedObjectUploads {
     __obj.asInstanceOf[BucketCountPolicyAllowsUnencryptedObjectUploads]
   }
   
-  extension [Self <: BucketCountPolicyAllowsUnencryptedObjectUploads](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BucketCountPolicyAllowsUnencryptedObjectUploads] (val x: Self) extends AnyVal {
     
     inline def setAllowsUnencryptedObjectUploads(value: long): Self = StObject.set(x, "allowsUnencryptedObjectUploads", value.asInstanceOf[js.Any])
     

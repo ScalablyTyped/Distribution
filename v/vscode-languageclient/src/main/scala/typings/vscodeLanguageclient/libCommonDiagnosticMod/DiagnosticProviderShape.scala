@@ -19,7 +19,8 @@ object DiagnosticProviderShape {
     __obj.asInstanceOf[DiagnosticProviderShape]
   }
   
-  extension [Self <: DiagnosticProviderShape](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DiagnosticProviderShape] (val x: Self) extends AnyVal {
     
     inline def setDiagnostics(value: DiagnosticProvider): Self = StObject.set(x, "diagnostics", value.asInstanceOf[js.Any])
     

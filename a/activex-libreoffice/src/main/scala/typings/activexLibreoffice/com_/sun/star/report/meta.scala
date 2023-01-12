@@ -64,7 +64,8 @@ object meta {
       __obj.asInstanceOf[XFormulaParser]
     }
     
-    extension [Self <: XFormulaParser](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XFormulaParser] (val x: Self) extends AnyVal {
       
       inline def setFormulaOpCodeMapper(value: XFormulaOpCodeMapper): Self = StObject.set(x, "FormulaOpCodeMapper", value.asInstanceOf[js.Any])
       
@@ -118,7 +119,8 @@ object meta {
       __obj.asInstanceOf[XFunctionCategory]
     }
     
-    extension [Self <: XFunctionCategory](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XFunctionCategory] (val x: Self) extends AnyVal {
       
       inline def setGetFunction(value: Double => XFunctionDescription): Self = StObject.set(x, "getFunction", js.Any.fromFunction1(value))
       
@@ -175,7 +177,8 @@ object meta {
       __obj.asInstanceOf[XFunctionDescription]
     }
     
-    extension [Self <: XFunctionDescription](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XFunctionDescription] (val x: Self) extends AnyVal {
       
       inline def setArguments(value: SafeArray[FunctionArgument]): Self = StObject.set(x, "Arguments", value.asInstanceOf[js.Any])
       
@@ -232,7 +235,8 @@ object meta {
       __obj.asInstanceOf[XFunctionManager]
     }
     
-    extension [Self <: XFunctionManager](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XFunctionManager] (val x: Self) extends AnyVal {
       
       inline def setGetCategory(value: Double => XFunctionCategory): Self = StObject.set(x, "getCategory", js.Any.fromFunction1(value))
       

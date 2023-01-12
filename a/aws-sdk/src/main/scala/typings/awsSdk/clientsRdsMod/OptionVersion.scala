@@ -23,7 +23,8 @@ object OptionVersion {
     __obj.asInstanceOf[OptionVersion]
   }
   
-  extension [Self <: OptionVersion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OptionVersion] (val x: Self) extends AnyVal {
     
     inline def setIsDefault(value: Boolean): Self = StObject.set(x, "IsDefault", value.asInstanceOf[js.Any])
     

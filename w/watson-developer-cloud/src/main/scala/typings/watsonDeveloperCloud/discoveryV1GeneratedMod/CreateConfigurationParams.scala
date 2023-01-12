@@ -39,7 +39,8 @@ object CreateConfigurationParams {
     __obj.asInstanceOf[CreateConfigurationParams]
   }
   
-  extension [Self <: CreateConfigurationParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateConfigurationParams] (val x: Self) extends AnyVal {
     
     inline def setConversions(value: Conversions): Self = StObject.set(x, "conversions", value.asInstanceOf[js.Any])
     

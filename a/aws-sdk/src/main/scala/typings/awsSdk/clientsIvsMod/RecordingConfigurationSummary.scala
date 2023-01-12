@@ -42,7 +42,8 @@ object RecordingConfigurationSummary {
     __obj.asInstanceOf[RecordingConfigurationSummary]
   }
   
-  extension [Self <: RecordingConfigurationSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecordingConfigurationSummary] (val x: Self) extends AnyVal {
     
     inline def setArn(value: RecordingConfigurationArn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     

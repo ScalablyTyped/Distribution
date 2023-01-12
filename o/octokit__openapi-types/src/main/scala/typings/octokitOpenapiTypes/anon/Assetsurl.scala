@@ -106,7 +106,8 @@ object Assetsurl {
     __obj.asInstanceOf[Assetsurl]
   }
   
-  extension [Self <: Assetsurl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Assetsurl] (val x: Self) extends AnyVal {
     
     inline def setAssets(
       value: js.Array[

@@ -19,7 +19,8 @@ object HopConfig {
     __obj.asInstanceOf[HopConfig]
   }
   
-  extension [Self <: HopConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HopConfig] (val x: Self) extends AnyVal {
     
     inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     

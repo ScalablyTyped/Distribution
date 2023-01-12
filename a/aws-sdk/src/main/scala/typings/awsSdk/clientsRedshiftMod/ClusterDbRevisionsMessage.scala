@@ -23,7 +23,8 @@ object ClusterDbRevisionsMessage {
     __obj.asInstanceOf[ClusterDbRevisionsMessage]
   }
   
-  extension [Self <: ClusterDbRevisionsMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClusterDbRevisionsMessage] (val x: Self) extends AnyVal {
     
     inline def setClusterDbRevisions(value: ClusterDbRevisionsList): Self = StObject.set(x, "ClusterDbRevisions", value.asInstanceOf[js.Any])
     

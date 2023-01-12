@@ -27,7 +27,8 @@ object typesExtrafieldMod {
       __obj.asInstanceOf[Extrafield]
     }
     
-    extension [Self <: Extrafield](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Extrafield] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       

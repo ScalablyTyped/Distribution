@@ -23,7 +23,8 @@ object ThreatIntelligenceDetail {
     __obj.asInstanceOf[ThreatIntelligenceDetail]
   }
   
-  extension [Self <: ThreatIntelligenceDetail](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ThreatIntelligenceDetail] (val x: Self) extends AnyVal {
     
     inline def setThreatListName(value: String): Self = StObject.set(x, "ThreatListName", value.asInstanceOf[js.Any])
     

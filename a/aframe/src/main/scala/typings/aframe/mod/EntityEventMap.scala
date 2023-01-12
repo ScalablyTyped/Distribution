@@ -63,7 +63,8 @@ object EntityEventMap {
     __obj.asInstanceOf[EntityEventMap]
   }
   
-  extension [Self <: EntityEventMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EntityEventMap] (val x: Self) extends AnyVal {
     
     inline def `setChild-attached`(value: DetailEvent[El]): Self = StObject.set(x, "child-attached", value.asInstanceOf[js.Any])
     

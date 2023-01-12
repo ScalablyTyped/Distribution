@@ -21,7 +21,8 @@ object CommonMarkerProps {
     __obj.asInstanceOf[CommonMarkerProps]
   }
   
-  extension [Self <: CommonMarkerProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CommonMarkerProps] (val x: Self) extends AnyVal {
     
     inline def setMarker(value: String): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
     

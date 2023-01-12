@@ -36,7 +36,8 @@ object LocationLink {
     __obj.asInstanceOf[LocationLink]
   }
   
-  extension [Self <: LocationLink](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LocationLink] (val x: Self) extends AnyVal {
     
     inline def setOriginSelectionRange(value: Range): Self = StObject.set(x, "originSelectionRange", value.asInstanceOf[js.Any])
     

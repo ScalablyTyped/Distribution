@@ -48,7 +48,8 @@ object GetImpersonationRoleResponse {
     __obj.asInstanceOf[GetImpersonationRoleResponse]
   }
   
-  extension [Self <: GetImpersonationRoleResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetImpersonationRoleResponse] (val x: Self) extends AnyVal {
     
     inline def setDateCreated(value: js.Date): Self = StObject.set(x, "DateCreated", value.asInstanceOf[js.Any])
     

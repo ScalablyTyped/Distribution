@@ -25,7 +25,8 @@ object SearchAlteration {
     __obj.asInstanceOf[SearchAlteration]
   }
   
-  extension [Self <: SearchAlteration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchAlteration] (val x: Self) extends AnyVal {
     
     inline def setAlteredHighlightedQueryString(value: NullableOption[String]): Self = StObject.set(x, "alteredHighlightedQueryString", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object PDFViewerMessages {
     __obj.asInstanceOf[PDFViewerMessages]
   }
   
-  extension [Self <: PDFViewerMessages](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PDFViewerMessages] (val x: Self) extends AnyVal {
     
     inline def setDefaultFileName(value: String): Self = StObject.set(x, "defaultFileName", value.asInstanceOf[js.Any])
     

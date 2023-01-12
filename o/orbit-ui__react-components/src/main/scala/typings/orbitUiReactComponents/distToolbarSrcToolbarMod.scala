@@ -108,7 +108,8 @@ object distToolbarSrcToolbarMod {
       __obj.asInstanceOf[InnerToolbarProps]
     }
     
-    extension [Self <: InnerToolbarProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InnerToolbarProps] (val x: Self) extends AnyVal {
       
       inline def setAlign(value: start | end | center): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       

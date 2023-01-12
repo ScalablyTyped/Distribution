@@ -36,7 +36,8 @@ object typesApisSubscriptionsSubscriptionsMod {
       __obj.asInstanceOf[CreateSubscriptionRequestBody]
     }
     
-    extension [Self <: CreateSubscriptionRequestBody](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateSubscriptionRequestBody] (val x: Self) extends AnyVal {
       
       inline def setApplication_context(value: Record[String, Any]): Self = StObject.set(x, "application_context", value.asInstanceOf[js.Any])
       
@@ -102,7 +103,8 @@ object typesApisSubscriptionsSubscriptionsMod {
       __obj.asInstanceOf[SubscriptionDetail]
     }
     
-    extension [Self <: SubscriptionDetail](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SubscriptionDetail] (val x: Self) extends AnyVal {
       
       inline def setDispatching(value: Boolean): Self = StObject.set(x, "dispatching", value.asInstanceOf[js.Any])
       

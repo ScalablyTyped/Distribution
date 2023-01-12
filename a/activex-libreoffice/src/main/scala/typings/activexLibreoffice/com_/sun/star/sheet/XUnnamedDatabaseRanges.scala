@@ -35,7 +35,8 @@ object XUnnamedDatabaseRanges {
     __obj.asInstanceOf[XUnnamedDatabaseRanges]
   }
   
-  extension [Self <: XUnnamedDatabaseRanges](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XUnnamedDatabaseRanges] (val x: Self) extends AnyVal {
     
     inline def setGetByTable(value: Double => Any): Self = StObject.set(x, "getByTable", js.Any.fromFunction1(value))
     

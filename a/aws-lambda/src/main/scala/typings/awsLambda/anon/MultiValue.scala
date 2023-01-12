@@ -19,7 +19,8 @@ object MultiValue {
     __obj.asInstanceOf[MultiValue]
   }
   
-  extension [Self <: MultiValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MultiValue] (val x: Self) extends AnyVal {
     
     inline def setAttributes(value: String): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     

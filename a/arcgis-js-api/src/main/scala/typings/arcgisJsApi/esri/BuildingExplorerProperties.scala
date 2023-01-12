@@ -59,7 +59,8 @@ object BuildingExplorerProperties {
     __obj.asInstanceOf[BuildingExplorerProperties]
   }
   
-  extension [Self <: BuildingExplorerProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BuildingExplorerProperties] (val x: Self) extends AnyVal {
     
     inline def setHeadingLevel(value: Double): Self = StObject.set(x, "headingLevel", value.asInstanceOf[js.Any])
     

@@ -41,7 +41,8 @@ object GetNetworkTypeSuccessCallbackResult {
     __obj.asInstanceOf[GetNetworkTypeSuccessCallbackResult]
   }
   
-  extension [Self <: GetNetworkTypeSuccessCallbackResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetNetworkTypeSuccessCallbackResult] (val x: Self) extends AnyVal {
     
     inline def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
     

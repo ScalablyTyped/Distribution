@@ -64,7 +64,8 @@ object IDBPDatabaseExtends {
     __obj.asInstanceOf[IDBPDatabaseExtends]
   }
   
-  extension [Self <: IDBPDatabaseExtends](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IDBPDatabaseExtends] (val x: Self) extends AnyVal {
     
     inline def setAddEventListener(value: (abort, /* listener */ js.ThisFunction1[IDBPDatabaseExtends, /* ev */ Event, Any]) => Unit): Self = StObject.set(x, "addEventListener", js.Any.fromFunction2(value))
     

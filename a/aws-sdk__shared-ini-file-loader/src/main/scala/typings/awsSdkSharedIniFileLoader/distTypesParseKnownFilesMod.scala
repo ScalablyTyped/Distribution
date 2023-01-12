@@ -30,7 +30,8 @@ object distTypesParseKnownFilesMod {
       __obj.asInstanceOf[SourceProfileInit]
     }
     
-    extension [Self <: SourceProfileInit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SourceProfileInit] (val x: Self) extends AnyVal {
       
       inline def setProfile(value: String): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
       

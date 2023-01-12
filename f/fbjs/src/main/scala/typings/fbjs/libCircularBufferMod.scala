@@ -37,7 +37,8 @@ object libCircularBufferMod {
       __obj.asInstanceOf[CircularBuffer]
     }
     
-    extension [Self <: CircularBuffer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CircularBuffer] (val x: Self) extends AnyVal {
       
       inline def setClear(value: () => CircularBuffer): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
       

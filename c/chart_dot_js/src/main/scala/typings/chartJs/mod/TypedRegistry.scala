@@ -27,7 +27,8 @@ object TypedRegistry {
     __obj.asInstanceOf[TypedRegistry[T]]
   }
   
-  extension [Self <: TypedRegistry[?], T](x: Self & TypedRegistry[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypedRegistry[?], T] (val x: Self & TypedRegistry[T]) extends AnyVal {
     
     inline def setGet(value: String => js.UndefOr[T]): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
     

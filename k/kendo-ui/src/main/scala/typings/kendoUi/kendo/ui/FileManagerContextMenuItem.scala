@@ -21,7 +21,8 @@ object FileManagerContextMenuItem {
     __obj.asInstanceOf[FileManagerContextMenuItem]
   }
   
-  extension [Self <: FileManagerContextMenuItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FileManagerContextMenuItem] (val x: Self) extends AnyVal {
     
     inline def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
     

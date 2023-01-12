@@ -40,7 +40,8 @@ object libHocsCreateShareCountMod {
       __obj.asInstanceOf[SocialMediaShareCountProps]
     }
     
-    extension [Self <: SocialMediaShareCountProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SocialMediaShareCountProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: /* shareCount */ Double => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
       

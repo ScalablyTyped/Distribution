@@ -19,7 +19,8 @@ object GoogleSecuritySafebrowsingV4ThreatHitUserInfo {
     __obj.asInstanceOf[GoogleSecuritySafebrowsingV4ThreatHitUserInfo]
   }
   
-  extension [Self <: GoogleSecuritySafebrowsingV4ThreatHitUserInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleSecuritySafebrowsingV4ThreatHitUserInfo] (val x: Self) extends AnyVal {
     
     inline def setRegionCode(value: String): Self = StObject.set(x, "regionCode", value.asInstanceOf[js.Any])
     

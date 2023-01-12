@@ -23,7 +23,8 @@ object ResultRow {
     __obj.asInstanceOf[ResultRow]
   }
   
-  extension [Self <: ResultRow](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResultRow] (val x: Self) extends AnyVal {
     
     inline def setGroupedBys(value: ListOfResultRowValue): Self = StObject.set(x, "GroupedBys", value.asInstanceOf[js.Any])
     

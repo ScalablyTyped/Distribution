@@ -55,7 +55,8 @@ object Binding {
     __obj.asInstanceOf[Binding[TActivated]]
   }
   
-  extension [Self <: Binding[?], TActivated](x: Self & Binding[TActivated]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Binding[?], TActivated] (val x: Self & Binding[TActivated]) extends AnyVal {
     
     inline def setActivated(value: Boolean): Self = StObject.set(x, "activated", value.asInstanceOf[js.Any])
     

@@ -34,7 +34,8 @@ object libModalOperationContainerDotnativeMod {
       __obj.asInstanceOf[OperationContainerProps]
     }
     
-    extension [Self <: OperationContainerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OperationContainerProps] (val x: Self) extends AnyVal {
       
       inline def setActions(value: js.Array[Action[TextStyle]]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
       

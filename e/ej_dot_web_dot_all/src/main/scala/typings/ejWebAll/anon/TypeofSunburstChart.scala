@@ -20,7 +20,8 @@ object TypeofSunburstChart {
     __obj.asInstanceOf[TypeofSunburstChart]
   }
   
-  extension [Self <: TypeofSunburstChart](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofSunburstChart] (val x: Self) extends AnyVal {
     
     inline def setFn(value: SunburstChart): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
     

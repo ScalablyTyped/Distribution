@@ -28,7 +28,8 @@ object UpdateInputRequest {
     __obj.asInstanceOf[UpdateInputRequest]
   }
   
-  extension [Self <: UpdateInputRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateInputRequest] (val x: Self) extends AnyVal {
     
     inline def setInputDefinition(value: InputDefinition): Self = StObject.set(x, "inputDefinition", value.asInstanceOf[js.Any])
     

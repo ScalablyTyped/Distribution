@@ -22,7 +22,8 @@ object AcceptOptions {
     __obj.asInstanceOf[AcceptOptions]
   }
   
-  extension [Self <: AcceptOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AcceptOptions] (val x: Self) extends AnyVal {
     
     inline def setCallType(value: `1` | `2`): Self = StObject.set(x, "callType", value.asInstanceOf[js.Any])
     

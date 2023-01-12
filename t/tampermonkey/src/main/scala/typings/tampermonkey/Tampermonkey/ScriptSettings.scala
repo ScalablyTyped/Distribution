@@ -47,7 +47,8 @@ object ScriptSettings {
     __obj.asInstanceOf[ScriptSettings]
   }
   
-  extension [Self <: ScriptSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScriptSettings] (val x: Self) extends AnyVal {
     
     inline def setCheck_for_updates(value: Boolean): Self = StObject.set(x, "check_for_updates", value.asInstanceOf[js.Any])
     

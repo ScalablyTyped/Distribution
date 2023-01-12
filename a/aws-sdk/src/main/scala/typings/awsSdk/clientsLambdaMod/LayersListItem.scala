@@ -28,7 +28,8 @@ object LayersListItem {
     __obj.asInstanceOf[LayersListItem]
   }
   
-  extension [Self <: LayersListItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LayersListItem] (val x: Self) extends AnyVal {
     
     inline def setLatestMatchingVersion(value: LayerVersionsListItem): Self = StObject.set(x, "LatestMatchingVersion", value.asInstanceOf[js.Any])
     

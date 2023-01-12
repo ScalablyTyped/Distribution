@@ -18,7 +18,8 @@ object typesObjectAlreadyInActiveTierErrorMod {
       __obj.asInstanceOf[ObjectAlreadyInActiveTierError]
     }
     
-    extension [Self <: ObjectAlreadyInActiveTierError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ObjectAlreadyInActiveTierError] (val x: Self) extends AnyVal {
       
       inline def setName(value: typings.awsSdkClientS3Browser.awsSdkClientS3BrowserStrings.ObjectAlreadyInActiveTierError): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }

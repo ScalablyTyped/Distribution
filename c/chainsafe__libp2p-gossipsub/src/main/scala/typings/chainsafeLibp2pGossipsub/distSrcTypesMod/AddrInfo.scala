@@ -19,7 +19,8 @@ object AddrInfo {
     __obj.asInstanceOf[AddrInfo]
   }
   
-  extension [Self <: AddrInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AddrInfo] (val x: Self) extends AnyVal {
     
     inline def setAddrs(value: js.Array[Multiaddr_]): Self = StObject.set(x, "addrs", value.asInstanceOf[js.Any])
     

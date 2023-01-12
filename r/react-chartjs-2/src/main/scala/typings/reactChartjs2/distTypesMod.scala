@@ -86,7 +86,8 @@ object distTypesMod {
       __obj.asInstanceOf[ChartProps[TType, TData, TLabel]]
     }
     
-    extension [Self <: ChartProps[?, ?, ?], TType /* <: ChartType */, TData, TLabel](x: Self & (ChartProps[TType, TData, TLabel])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChartProps[?, ?, ?], TType /* <: ChartType */, TData, TLabel] (val x: Self & (ChartProps[TType, TData, TLabel])) extends AnyVal {
       
       inline def setData(value: ChartData[TType, TData, TLabel]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       

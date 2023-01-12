@@ -17,7 +17,8 @@ object XDomainCookies {
     __obj.asInstanceOf[XDomainCookies]
   }
   
-  extension [Self <: XDomainCookies](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XDomainCookies] (val x: Self) extends AnyVal {
     
     inline def setMaster(value: String): Self = StObject.set(x, "master", value.asInstanceOf[js.Any])
     

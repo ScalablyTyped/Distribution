@@ -17,7 +17,8 @@ object GanttLocale {
     __obj.asInstanceOf[GanttLocale]
   }
   
-  extension [Self <: GanttLocale](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GanttLocale] (val x: Self) extends AnyVal {
     
     inline def setDate(value: GanttLocaleDate): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     

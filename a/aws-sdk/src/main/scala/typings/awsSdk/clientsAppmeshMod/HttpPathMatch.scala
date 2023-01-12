@@ -23,7 +23,8 @@ object HttpPathMatch {
     __obj.asInstanceOf[HttpPathMatch]
   }
   
-  extension [Self <: HttpPathMatch](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HttpPathMatch] (val x: Self) extends AnyVal {
     
     inline def setExact(value: HttpPathExact): Self = StObject.set(x, "exact", value.asInstanceOf[js.Any])
     

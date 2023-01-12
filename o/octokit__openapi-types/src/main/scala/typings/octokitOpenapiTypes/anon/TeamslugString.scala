@@ -21,7 +21,8 @@ object TeamslugString {
     __obj.asInstanceOf[TeamslugString]
   }
   
-  extension [Self <: TeamslugString](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TeamslugString] (val x: Self) extends AnyVal {
     
     inline def setOrg_(value: String): Self = StObject.set(x, "org", value.asInstanceOf[js.Any])
     

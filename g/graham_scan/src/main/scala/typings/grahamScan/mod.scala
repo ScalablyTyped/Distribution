@@ -33,7 +33,8 @@ object mod {
       __obj.asInstanceOf[ConvexHullGrahamScan]
     }
     
-    extension [Self <: ConvexHullGrahamScan](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConvexHullGrahamScan] (val x: Self) extends AnyVal {
       
       inline def setAddPoint(value: (Double, Double) => Unit): Self = StObject.set(x, "addPoint", js.Any.fromFunction2(value))
       

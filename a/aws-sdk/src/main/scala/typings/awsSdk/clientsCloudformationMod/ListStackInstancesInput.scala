@@ -48,7 +48,8 @@ object ListStackInstancesInput {
     __obj.asInstanceOf[ListStackInstancesInput]
   }
   
-  extension [Self <: ListStackInstancesInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListStackInstancesInput] (val x: Self) extends AnyVal {
     
     inline def setCallAs(value: CallAs): Self = StObject.set(x, "CallAs", value.asInstanceOf[js.Any])
     

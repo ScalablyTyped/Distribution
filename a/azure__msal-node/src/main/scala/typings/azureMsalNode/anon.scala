@@ -25,7 +25,8 @@ object anon {
       __obj.asInstanceOf[Code]
     }
     
-    extension [Self <: Code](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Code] (val x: Self) extends AnyVal {
       
       inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
@@ -69,7 +70,8 @@ object anon {
       __obj.asInstanceOf[PartialBaseAuthRequest]
     }
     
-    extension [Self <: PartialBaseAuthRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialBaseAuthRequest] (val x: Self) extends AnyVal {
       
       inline def setAuthenticationScheme(value: AuthenticationScheme): Self = StObject.set(x, "authenticationScheme", value.asInstanceOf[js.Any])
       
@@ -142,7 +144,8 @@ object anon {
       __obj.asInstanceOf[PrivateKey]
     }
     
-    extension [Self <: PrivateKey](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PrivateKey] (val x: Self) extends AnyVal {
       
       inline def setPrivateKey(value: String): Self = StObject.set(x, "privateKey", value.asInstanceOf[js.Any])
       
@@ -201,7 +204,8 @@ object anon {
       __obj.asInstanceOf[RequiredNodeAuthOptions]
     }
     
-    extension [Self <: RequiredNodeAuthOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequiredNodeAuthOptions] (val x: Self) extends AnyVal {
       
       inline def setAuthority(value: String): Self = StObject.set(x, "authority", value.asInstanceOf[js.Any])
       
@@ -249,7 +253,8 @@ object anon {
       __obj.asInstanceOf[RequiredNodeSystemOptions]
     }
     
-    extension [Self <: RequiredNodeSystemOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequiredNodeSystemOptions] (val x: Self) extends AnyVal {
       
       inline def setLoggerOptions(value: LoggerOptions): Self = StObject.set(x, "loggerOptions", value.asInstanceOf[js.Any])
       
@@ -271,7 +276,8 @@ object anon {
       __obj.asInstanceOf[RequiredNodeTelemetryOpti]
     }
     
-    extension [Self <: RequiredNodeTelemetryOpti](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequiredNodeTelemetryOpti] (val x: Self) extends AnyVal {
       
       inline def setApplication(value: ApplicationTelemetry): Self = StObject.set(x, "application", value.asInstanceOf[js.Any])
     }

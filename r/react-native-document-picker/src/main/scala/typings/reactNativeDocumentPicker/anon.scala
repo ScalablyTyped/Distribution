@@ -76,7 +76,8 @@ object anon {
       __obj.asInstanceOf[Android]
     }
     
-    extension [Self <: Android](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Android] (val x: Self) extends AnyVal {
       
       inline def setAndroid(value: ReadonlyreadonlyallFilesr): Self = StObject.set(x, "android", value.asInstanceOf[js.Any])
       
@@ -149,7 +150,8 @@ object anon {
       __obj.asInstanceOf[ReadonlyreadonlyallFilesp]
     }
     
-    extension [Self <: ReadonlyreadonlyallFilesp](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadonlyreadonlyallFilesp] (val x: Self) extends AnyVal {
       
       inline def setAllFiles(value: publicDotitem): Self = StObject.set(x, "allFiles", value.asInstanceOf[js.Any])
       
@@ -219,7 +221,8 @@ object anon {
       __obj.asInstanceOf[ReadonlyreadonlyallFilesr]
     }
     
-    extension [Self <: ReadonlyreadonlyallFilesr](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadonlyreadonlyallFilesr] (val x: Self) extends AnyVal {
       
       inline def setAllFiles(value: AsteriskSlashAsterisk): Self = StObject.set(x, "allFiles", value.asInstanceOf[js.Any])
       
@@ -289,7 +292,8 @@ object anon {
       __obj.asInstanceOf[ReadonlyreadonlyallFilesrAllFiles]
     }
     
-    extension [Self <: ReadonlyreadonlyallFilesrAllFiles](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadonlyreadonlyallFilesrAllFiles] (val x: Self) extends AnyVal {
       
       inline def setAllFiles(value: Asterisk): Self = StObject.set(x, "allFiles", value.asInstanceOf[js.Any])
       

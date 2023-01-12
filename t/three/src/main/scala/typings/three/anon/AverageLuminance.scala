@@ -33,7 +33,8 @@ object AverageLuminance {
     __obj.asInstanceOf[AverageLuminance]
   }
   
-  extension [Self <: AverageLuminance](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AverageLuminance] (val x: Self) extends AnyVal {
     
     inline def setAverageLuminance(value: IUniform[Any]): Self = StObject.set(x, "averageLuminance", value.asInstanceOf[js.Any])
     

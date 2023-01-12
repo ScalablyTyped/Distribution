@@ -43,7 +43,8 @@ object ArtifactRevision {
     __obj.asInstanceOf[ArtifactRevision]
   }
   
-  extension [Self <: ArtifactRevision](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ArtifactRevision] (val x: Self) extends AnyVal {
     
     inline def setCreated(value: js.Date): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
     

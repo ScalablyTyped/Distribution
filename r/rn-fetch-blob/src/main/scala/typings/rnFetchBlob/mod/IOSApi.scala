@@ -26,7 +26,8 @@ object IOSApi {
     __obj.asInstanceOf[IOSApi]
   }
   
-  extension [Self <: IOSApi](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IOSApi] (val x: Self) extends AnyVal {
     
     inline def setOpenDocument(value: String => Unit): Self = StObject.set(x, "openDocument", js.Any.fromFunction1(value))
     

@@ -21,7 +21,8 @@ object LoRaWANMulticastSession {
     __obj.asInstanceOf[LoRaWANMulticastSession]
   }
   
-  extension [Self <: LoRaWANMulticastSession](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LoRaWANMulticastSession] (val x: Self) extends AnyVal {
     
     inline def setDlDr(value: DlDr): Self = StObject.set(x, "DlDr", value.asInstanceOf[js.Any])
     

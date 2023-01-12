@@ -15,7 +15,8 @@ object Standard {
     __obj.asInstanceOf[Standard]
   }
   
-  extension [Self <: Standard](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Standard] (val x: Self) extends AnyVal {
     
     inline def setStandard(value: AM): Self = StObject.set(x, "standard", value.asInstanceOf[js.Any])
   }

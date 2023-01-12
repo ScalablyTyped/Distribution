@@ -224,7 +224,8 @@ object PlaceSearch {
       __obj.asInstanceOf[Cinema]
     }
     
-    extension [Self <: Cinema](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Cinema] (val x: Self) extends AnyVal {
       
       inline def setDeep_src(value: String): Self = StObject.set(x, "deep_src", value.asInstanceOf[js.Any])
       
@@ -273,7 +274,8 @@ object PlaceSearch {
       __obj.asInstanceOf[CityInfo]
     }
     
-    extension [Self <: CityInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CityInfo] (val x: Self) extends AnyVal {
       
       inline def setAdcode(value: String): Self = StObject.set(x, "adcode", value.asInstanceOf[js.Any])
       
@@ -409,7 +411,8 @@ object PlaceSearch {
       __obj.asInstanceOf[Dining]
     }
     
-    extension [Self <: Dining](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Dining] (val x: Self) extends AnyVal {
       
       inline def setAddition(value: String): Self = StObject.set(x, "addition", value.asInstanceOf[js.Any])
       
@@ -511,7 +514,8 @@ object PlaceSearch {
       __obj.asInstanceOf[Discount]
     }
     
-    extension [Self <: Discount](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Discount] (val x: Self) extends AnyVal {
       
       inline def setDetail(value: String): Self = StObject.set(x, "detail", value.asInstanceOf[js.Any])
       
@@ -596,7 +600,8 @@ object PlaceSearch {
       __obj.asInstanceOf[EventMap]
     }
     
-    extension [Self <: EventMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EventMap] (val x: Self) extends AnyVal {
       
       inline def setComplete(value: Event_[complete, SearchResult]): Self = StObject.set(x, "complete", value.asInstanceOf[js.Any])
       
@@ -727,7 +732,8 @@ object PlaceSearch {
       __obj.asInstanceOf[Groupbuy]
     }
     
-    extension [Self <: Groupbuy](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Groupbuy] (val x: Self) extends AnyVal {
       
       inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       
@@ -847,7 +853,8 @@ object PlaceSearch {
       __obj.asInstanceOf[Hotel]
     }
     
-    extension [Self <: Hotel](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Hotel] (val x: Self) extends AnyVal {
       
       inline def setAddition(value: String): Self = StObject.set(x, "addition", value.asInstanceOf[js.Any])
       
@@ -958,7 +965,8 @@ object PlaceSearch {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setAutoFitView(value: Boolean): Self = StObject.set(x, "autoFitView", value.asInstanceOf[js.Any])
       
@@ -1081,7 +1089,8 @@ object PlaceSearch {
       __obj.asInstanceOf[PoiBase]
     }
     
-    extension [Self <: PoiBase](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PoiBase] (val x: Self) extends AnyVal {
       
       inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
@@ -1141,7 +1150,8 @@ object PlaceSearch {
       __obj.asInstanceOf[PoiList]
     }
     
-    extension [Self <: PoiList](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PoiList] (val x: Self) extends AnyVal {
       
       inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       
@@ -1174,7 +1184,8 @@ object PlaceSearch {
       __obj.asInstanceOf[PoiPhoto]
     }
     
-    extension [Self <: PoiPhoto](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PoiPhoto] (val x: Self) extends AnyVal {
       
       inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
@@ -1270,7 +1281,8 @@ object PlaceSearch {
       __obj.asInstanceOf[Scenic]
     }
     
-    extension [Self <: Scenic](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Scenic] (val x: Self) extends AnyVal {
       
       inline def setDeep_src(value: String): Self = StObject.set(x, "deep_src", value.asInstanceOf[js.Any])
       
@@ -1331,7 +1343,8 @@ object PlaceSearch {
       __obj.asInstanceOf[SearchResult]
     }
     
-    extension [Self <: SearchResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SearchResult] (val x: Self) extends AnyVal {
       
       inline def setCityList(value: js.Array[CityInfo]): Self = StObject.set(x, "cityList", value.asInstanceOf[js.Any])
       
@@ -1402,7 +1415,8 @@ object PlaceSearch {
       __obj.asInstanceOf[SelectChangeEventData]
     }
     
-    extension [Self <: SelectChangeEventData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SelectChangeEventData] (val x: Self) extends AnyVal {
       
       inline def setData(value: js.Array[Poi]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       

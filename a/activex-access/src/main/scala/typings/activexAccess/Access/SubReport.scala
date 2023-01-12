@@ -34,7 +34,8 @@ object SubReport {
     __obj.asInstanceOf[SubReport]
   }
   
-  extension [Self <: SubReport](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubReport] (val x: Self) extends AnyVal {
     
     inline def setAccessDotSubReport_typekey(value: SubReport): Self = StObject.set(x, "Access.SubReport_typekey", value.asInstanceOf[js.Any])
     

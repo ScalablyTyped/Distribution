@@ -18,7 +18,8 @@ object UpdateNavigationConfig {
     __obj.asInstanceOf[UpdateNavigationConfig]
   }
   
-  extension [Self <: UpdateNavigationConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateNavigationConfig] (val x: Self) extends AnyVal {
     
     inline def setStateOnly(value: Boolean): Self = StObject.set(x, "stateOnly", value.asInstanceOf[js.Any])
     

@@ -97,7 +97,8 @@ object distSrcAddressManagerMod {
       __obj.asInstanceOf[AddressManagerInit]
     }
     
-    extension [Self <: AddressManagerInit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AddressManagerInit] (val x: Self) extends AnyVal {
       
       inline def setAnnounce(value: js.Array[String]): Self = StObject.set(x, "announce", value.asInstanceOf[js.Any])
       
@@ -136,7 +137,8 @@ object distSrcAddressManagerMod {
       __obj.asInstanceOf[DefaultAddressManagerComponents]
     }
     
-    extension [Self <: DefaultAddressManagerComponents](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DefaultAddressManagerComponents] (val x: Self) extends AnyVal {
       
       inline def setPeerId(value: PeerId): Self = StObject.set(x, "peerId", value.asInstanceOf[js.Any])
       

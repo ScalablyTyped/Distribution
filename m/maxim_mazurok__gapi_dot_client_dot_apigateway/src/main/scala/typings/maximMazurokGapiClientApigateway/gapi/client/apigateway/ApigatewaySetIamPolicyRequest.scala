@@ -25,7 +25,8 @@ object ApigatewaySetIamPolicyRequest {
     __obj.asInstanceOf[ApigatewaySetIamPolicyRequest]
   }
   
-  extension [Self <: ApigatewaySetIamPolicyRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApigatewaySetIamPolicyRequest] (val x: Self) extends AnyVal {
     
     inline def setPolicy(value: ApigatewayPolicy): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
     

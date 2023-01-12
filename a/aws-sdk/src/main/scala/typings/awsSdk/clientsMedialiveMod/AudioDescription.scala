@@ -71,7 +71,8 @@ object AudioDescription {
     __obj.asInstanceOf[AudioDescription]
   }
   
-  extension [Self <: AudioDescription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AudioDescription] (val x: Self) extends AnyVal {
     
     inline def setAudioNormalizationSettings(value: AudioNormalizationSettings): Self = StObject.set(x, "AudioNormalizationSettings", value.asInstanceOf[js.Any])
     

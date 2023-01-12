@@ -33,7 +33,8 @@ object dataTableColumnAnchorMod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setElementAs(value: ReplacementElementAs | String): Self = StObject.set(x, "elementAs", value.asInstanceOf[js.Any])
       
@@ -56,7 +57,8 @@ object dataTableColumnAnchorMod {
       __obj.asInstanceOf[Value]
     }
     
-    extension [Self <: Value](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Value] (val x: Self) extends AnyVal {
       
       inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       

@@ -15,7 +15,8 @@ object ZoomOptions {
     __obj.asInstanceOf[ZoomOptions]
   }
   
-  extension [Self <: ZoomOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ZoomOptions] (val x: Self) extends AnyVal {
     
     inline def setAnimate(value: Boolean): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     

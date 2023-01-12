@@ -17,7 +17,8 @@ object anon {
       __obj.asInstanceOf[Push]
     }
     
-    extension [Self <: Push](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Push] (val x: Self) extends AnyVal {
       
       inline def setPush(value: Any => Unit): Self = StObject.set(x, "push", js.Any.fromFunction1(value))
     }

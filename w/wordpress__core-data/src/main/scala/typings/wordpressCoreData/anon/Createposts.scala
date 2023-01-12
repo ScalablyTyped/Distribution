@@ -59,7 +59,8 @@ object Createposts {
     __obj.asInstanceOf[Createposts]
   }
   
-  extension [Self <: Createposts](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Createposts] (val x: Self) extends AnyVal {
     
     inline def setCreate_posts(value: String): Self = StObject.set(x, "create_posts", value.asInstanceOf[js.Any])
     

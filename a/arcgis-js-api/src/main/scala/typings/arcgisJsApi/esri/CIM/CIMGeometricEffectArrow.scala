@@ -32,7 +32,8 @@ object CIMGeometricEffectArrow {
     __obj.asInstanceOf[CIMGeometricEffectArrow]
   }
   
-  extension [Self <: CIMGeometricEffectArrow](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CIMGeometricEffectArrow] (val x: Self) extends AnyVal {
     
     inline def setGeometricEffectArrowType(
       value: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof GeometricEffectArrowType * / any */ String

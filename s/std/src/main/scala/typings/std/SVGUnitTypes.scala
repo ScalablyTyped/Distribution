@@ -27,7 +27,8 @@ object SVGUnitTypes {
     __obj.asInstanceOf[SVGUnitTypes]
   }
   
-  extension [Self <: SVGUnitTypes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SVGUnitTypes] (val x: Self) extends AnyVal {
     
     inline def setSVG_UNIT_TYPE_OBJECTBOUNDINGBOX(value: Double): Self = StObject.set(x, "SVG_UNIT_TYPE_OBJECTBOUNDINGBOX", value.asInstanceOf[js.Any])
     

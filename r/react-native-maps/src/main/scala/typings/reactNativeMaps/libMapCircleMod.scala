@@ -187,7 +187,8 @@ object libMapCircleMod {
       __obj.asInstanceOf[MapCircleProps]
     }
     
-    extension [Self <: MapCircleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MapCircleProps] (val x: Self) extends AnyVal {
       
       inline def setCenter(value: LatLng): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
       
@@ -754,7 +755,8 @@ object libMapCircleMod {
       __obj.asInstanceOf[NativeProps]
     }
     
-    extension [Self <: NativeProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NativeProps] (val x: Self) extends AnyVal {
       
       inline def setAccessibilityActions(value: js.Array[AccessibilityActionInfo]): Self = StObject.set(x, "accessibilityActions", value.asInstanceOf[js.Any])
       

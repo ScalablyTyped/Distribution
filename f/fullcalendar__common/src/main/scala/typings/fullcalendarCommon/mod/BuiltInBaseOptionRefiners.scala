@@ -1043,7 +1043,8 @@ object BuiltInBaseOptionRefiners {
     __obj.asInstanceOf[BuiltInBaseOptionRefiners]
   }
   
-  extension [Self <: BuiltInBaseOptionRefiners](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BuiltInBaseOptionRefiners] (val x: Self) extends AnyVal {
     
     inline def setAllDayClassNames(value: ClassNamesGenerator[AllDayContentArg] => ClassNamesGenerator[AllDayContentArg]): Self = StObject.set(x, "allDayClassNames", js.Any.fromFunction1(value))
     

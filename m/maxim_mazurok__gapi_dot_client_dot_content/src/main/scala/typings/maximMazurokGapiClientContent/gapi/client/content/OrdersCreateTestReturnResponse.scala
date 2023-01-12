@@ -19,7 +19,8 @@ object OrdersCreateTestReturnResponse {
     __obj.asInstanceOf[OrdersCreateTestReturnResponse]
   }
   
-  extension [Self <: OrdersCreateTestReturnResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OrdersCreateTestReturnResponse] (val x: Self) extends AnyVal {
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

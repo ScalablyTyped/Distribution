@@ -46,7 +46,8 @@ object ContainerEvent {
     __obj.asInstanceOf[ContainerEvent]
   }
   
-  extension [Self <: ContainerEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContainerEvent] (val x: Self) extends AnyVal {
     
     inline def setButtonDownAny(value: Boolean): Self = StObject.set(x, "buttonDownAny", value.asInstanceOf[js.Any])
     

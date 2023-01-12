@@ -25,7 +25,8 @@ object ProtocolRequest {
     __obj.asInstanceOf[ProtocolRequest]
   }
   
-  extension [Self <: ProtocolRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProtocolRequest] (val x: Self) extends AnyVal {
     
     inline def setHeaders(value: Record[String, String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     

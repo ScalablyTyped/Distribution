@@ -15,7 +15,8 @@ object ExecutionInput {
     __obj.asInstanceOf[ExecutionInput]
   }
   
-  extension [Self <: ExecutionInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExecutionInput] (val x: Self) extends AnyVal {
     
     inline def setParallelExecutionType(value: ParallelExecutionTypes): Self = StObject.set(x, "parallelExecutionType", value.asInstanceOf[js.Any])
   }

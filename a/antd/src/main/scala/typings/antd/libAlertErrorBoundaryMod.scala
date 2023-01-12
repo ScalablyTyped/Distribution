@@ -41,7 +41,8 @@ object libAlertErrorBoundaryMod {
       __obj.asInstanceOf[ErrorBoundaryProps]
     }
     
-    extension [Self <: ErrorBoundaryProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ErrorBoundaryProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -70,7 +71,8 @@ object libAlertErrorBoundaryMod {
       __obj.asInstanceOf[ErrorBoundaryStates]
     }
     
-    extension [Self <: ErrorBoundaryStates](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ErrorBoundaryStates] (val x: Self) extends AnyVal {
       
       inline def setError(value: js.Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       

@@ -18,7 +18,8 @@ object IsExpanded {
     __obj.asInstanceOf[IsExpanded]
   }
   
-  extension [Self <: IsExpanded](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IsExpanded] (val x: Self) extends AnyVal {
     
     inline def setIsExpanded(value: Boolean): Self = StObject.set(x, "isExpanded", value.asInstanceOf[js.Any])
     

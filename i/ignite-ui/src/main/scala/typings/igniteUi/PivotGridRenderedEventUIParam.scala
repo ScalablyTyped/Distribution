@@ -23,7 +23,8 @@ object PivotGridRenderedEventUIParam {
     __obj.asInstanceOf[PivotGridRenderedEventUIParam]
   }
   
-  extension [Self <: PivotGridRenderedEventUIParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PivotGridRenderedEventUIParam] (val x: Self) extends AnyVal {
     
     inline def setGrid(value: Any): Self = StObject.set(x, "grid", value.asInstanceOf[js.Any])
     

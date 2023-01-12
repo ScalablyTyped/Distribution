@@ -19,7 +19,8 @@ object EChartsOptionConfig {
     __obj.asInstanceOf[EChartsOptionConfig]
   }
   
-  extension [Self <: EChartsOptionConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EChartsOptionConfig] (val x: Self) extends AnyVal {
     
     inline def setLazyUpdate(value: Boolean): Self = StObject.set(x, "lazyUpdate", value.asInstanceOf[js.Any])
     

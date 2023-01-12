@@ -302,7 +302,8 @@ object distServiceActionssdkConversationConversationMod {
       __obj.asInstanceOf[ConversationApp[TConvData, TUserStorage]]
     }
     
-    extension [Self <: ConversationApp[?, ?], TConvData, TUserStorage](x: Self & (ConversationApp[TConvData, TUserStorage])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConversationApp[?, ?], TConvData, TUserStorage] (val x: Self & (ConversationApp[TConvData, TUserStorage])) extends AnyVal {
       
       inline def setAuth(value: OAuth2Config): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
       
@@ -344,7 +345,8 @@ object distServiceActionssdkConversationConversationMod {
       __obj.asInstanceOf[ConversationAppOptions[TConvData, TUserStorage]]
     }
     
-    extension [Self <: ConversationAppOptions[?, ?], TConvData, TUserStorage](x: Self & (ConversationAppOptions[TConvData, TUserStorage])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConversationAppOptions[?, ?], TConvData, TUserStorage] (val x: Self & (ConversationAppOptions[TConvData, TUserStorage])) extends AnyVal {
       
       inline def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
       
@@ -381,7 +383,8 @@ object distServiceActionssdkConversationConversationMod {
       __obj.asInstanceOf[ConversationBaseOptions[TConvData, TUserStorage]]
     }
     
-    extension [Self <: ConversationBaseOptions[?, ?], TConvData, TUserStorage](x: Self & (ConversationBaseOptions[TConvData, TUserStorage])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConversationBaseOptions[?, ?], TConvData, TUserStorage] (val x: Self & (ConversationBaseOptions[TConvData, TUserStorage])) extends AnyVal {
       
       inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
       
@@ -422,7 +425,8 @@ object distServiceActionssdkConversationConversationMod {
       __obj.asInstanceOf[ConversationOptions[TUserStorage]]
     }
     
-    extension [Self <: ConversationOptions[?], TUserStorage](x: Self & ConversationOptions[TUserStorage]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConversationOptions[?], TUserStorage] (val x: Self & ConversationOptions[TUserStorage]) extends AnyVal {
       
       inline def setHeaders(value: Headers): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
@@ -457,7 +461,8 @@ object distServiceActionssdkConversationConversationMod {
       __obj.asInstanceOf[ConversationOptionsInit[TConvData, TUserStorage]]
     }
     
-    extension [Self <: ConversationOptionsInit[?, ?], TConvData, TUserStorage](x: Self & (ConversationOptionsInit[TConvData, TUserStorage])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConversationOptionsInit[?, ?], TConvData, TUserStorage] (val x: Self & (ConversationOptionsInit[TConvData, TUserStorage])) extends AnyVal {
       
       inline def setData(value: TConvData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -490,7 +495,8 @@ object distServiceActionssdkConversationConversationMod {
       __obj.asInstanceOf[ConversationResponse]
     }
     
-    extension [Self <: ConversationResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConversationResponse] (val x: Self) extends AnyVal {
       
       inline def setExpectUserResponse(value: Boolean): Self = StObject.set(x, "expectUserResponse", value.asInstanceOf[js.Any])
       
@@ -651,7 +657,8 @@ object distServiceActionssdkConversationConversationMod {
       __obj.asInstanceOf[OAuth2Config]
     }
     
-    extension [Self <: OAuth2Config](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OAuth2Config] (val x: Self) extends AnyVal {
       
       inline def setClient(value: OAuth2ConfigClient): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
     }
@@ -669,7 +676,8 @@ object distServiceActionssdkConversationConversationMod {
       __obj.asInstanceOf[OAuth2ConfigClient]
     }
     
-    extension [Self <: OAuth2ConfigClient](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OAuth2ConfigClient] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     }

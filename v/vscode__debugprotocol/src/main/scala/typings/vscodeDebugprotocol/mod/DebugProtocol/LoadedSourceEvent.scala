@@ -31,7 +31,8 @@ object LoadedSourceEvent {
     __obj.asInstanceOf[LoadedSourceEvent]
   }
   
-  extension [Self <: LoadedSourceEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LoadedSourceEvent] (val x: Self) extends AnyVal {
     
     inline def setBody(value: typings.vscodeDebugprotocol.anon.Source): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
   }

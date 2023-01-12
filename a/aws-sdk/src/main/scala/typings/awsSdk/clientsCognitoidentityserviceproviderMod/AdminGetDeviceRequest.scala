@@ -28,7 +28,8 @@ object AdminGetDeviceRequest {
     __obj.asInstanceOf[AdminGetDeviceRequest]
   }
   
-  extension [Self <: AdminGetDeviceRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AdminGetDeviceRequest] (val x: Self) extends AnyVal {
     
     inline def setDeviceKey(value: DeviceKeyType): Self = StObject.set(x, "DeviceKey", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object GetApiCacheRequest {
     __obj.asInstanceOf[GetApiCacheRequest]
   }
   
-  extension [Self <: GetApiCacheRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetApiCacheRequest] (val x: Self) extends AnyVal {
     
     inline def setApiId(value: String): Self = StObject.set(x, "apiId", value.asInstanceOf[js.Any])
   }

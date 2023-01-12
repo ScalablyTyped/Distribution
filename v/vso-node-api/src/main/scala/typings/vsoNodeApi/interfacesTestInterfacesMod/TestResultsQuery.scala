@@ -19,7 +19,8 @@ object TestResultsQuery {
     __obj.asInstanceOf[TestResultsQuery]
   }
   
-  extension [Self <: TestResultsQuery](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TestResultsQuery] (val x: Self) extends AnyVal {
     
     inline def setFields(value: js.Array[String]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     

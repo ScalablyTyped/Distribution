@@ -21,7 +21,8 @@ object Relationtype {
     __obj.asInstanceOf[Relationtype]
   }
   
-  extension [Self <: Relationtype](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Relationtype] (val x: Self) extends AnyVal {
     
     inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

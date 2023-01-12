@@ -18,7 +18,8 @@ object DeleteFargateProfileResponse {
     __obj.asInstanceOf[DeleteFargateProfileResponse]
   }
   
-  extension [Self <: DeleteFargateProfileResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteFargateProfileResponse] (val x: Self) extends AnyVal {
     
     inline def setFargateProfile(value: FargateProfile): Self = StObject.set(x, "fargateProfile", value.asInstanceOf[js.Any])
     

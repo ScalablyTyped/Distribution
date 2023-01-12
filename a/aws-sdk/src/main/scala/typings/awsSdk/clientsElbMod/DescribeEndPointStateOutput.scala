@@ -18,7 +18,8 @@ object DescribeEndPointStateOutput {
     __obj.asInstanceOf[DescribeEndPointStateOutput]
   }
   
-  extension [Self <: DescribeEndPointStateOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeEndPointStateOutput] (val x: Self) extends AnyVal {
     
     inline def setInstanceStates(value: InstanceStates): Self = StObject.set(x, "InstanceStates", value.asInstanceOf[js.Any])
     

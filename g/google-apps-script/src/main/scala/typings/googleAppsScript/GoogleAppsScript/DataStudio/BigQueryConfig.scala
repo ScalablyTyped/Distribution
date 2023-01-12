@@ -50,7 +50,8 @@ object BigQueryConfig {
     __obj.asInstanceOf[BigQueryConfig]
   }
   
-  extension [Self <: BigQueryConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BigQueryConfig] (val x: Self) extends AnyVal {
     
     inline def setAddQueryParameter(value: (String, BigQueryParameterType, String) => BigQueryConfig): Self = StObject.set(x, "addQueryParameter", js.Any.fromFunction3(value))
     

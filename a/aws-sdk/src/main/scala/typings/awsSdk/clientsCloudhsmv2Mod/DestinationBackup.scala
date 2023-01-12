@@ -33,7 +33,8 @@ object DestinationBackup {
     __obj.asInstanceOf[DestinationBackup]
   }
   
-  extension [Self <: DestinationBackup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DestinationBackup] (val x: Self) extends AnyVal {
     
     inline def setCreateTimestamp(value: js.Date): Self = StObject.set(x, "CreateTimestamp", value.asInstanceOf[js.Any])
     

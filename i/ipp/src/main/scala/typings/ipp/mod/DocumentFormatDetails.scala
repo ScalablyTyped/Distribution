@@ -29,7 +29,8 @@ object DocumentFormatDetails {
     __obj.asInstanceOf[DocumentFormatDetails]
   }
   
-  extension [Self <: DocumentFormatDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DocumentFormatDetails] (val x: Self) extends AnyVal {
     
     inline def `setDocument-format`(value: MimeMediaType): Self = StObject.set(x, "document-format", value.asInstanceOf[js.Any])
     

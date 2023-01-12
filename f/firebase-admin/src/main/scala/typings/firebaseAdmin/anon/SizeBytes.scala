@@ -19,7 +19,8 @@ object SizeBytes {
     __obj.asInstanceOf[SizeBytes]
   }
   
-  extension [Self <: SizeBytes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SizeBytes] (val x: Self) extends AnyVal {
     
     inline def setAutomlModel(value: String): Self = StObject.set(x, "automlModel", value.asInstanceOf[js.Any])
     

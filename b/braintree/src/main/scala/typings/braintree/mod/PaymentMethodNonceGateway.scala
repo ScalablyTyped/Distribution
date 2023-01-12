@@ -20,7 +20,8 @@ object PaymentMethodNonceGateway {
     __obj.asInstanceOf[PaymentMethodNonceGateway]
   }
   
-  extension [Self <: PaymentMethodNonceGateway](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PaymentMethodNonceGateway] (val x: Self) extends AnyVal {
     
     inline def setCreate(value: String => js.Promise[ValidatedResponse[PaymentMethodNonce]]): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
     

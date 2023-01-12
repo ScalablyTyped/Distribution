@@ -25,7 +25,8 @@ object Artifact {
     __obj.asInstanceOf[Artifact]
   }
   
-  extension [Self <: Artifact](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Artifact] (val x: Self) extends AnyVal {
     
     inline def setChecksum(value: String): Self = StObject.set(x, "checksum", value.asInstanceOf[js.Any])
     

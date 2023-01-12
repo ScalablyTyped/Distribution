@@ -48,7 +48,8 @@ object RedisSettings {
     __obj.asInstanceOf[RedisSettings]
   }
   
-  extension [Self <: RedisSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RedisSettings] (val x: Self) extends AnyVal {
     
     inline def setAuthPassword(value: SecretString): Self = StObject.set(x, "AuthPassword", value.asInstanceOf[js.Any])
     

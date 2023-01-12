@@ -63,7 +63,8 @@ object FederatedQueryNoticesParams {
     __obj.asInstanceOf[FederatedQueryNoticesParams]
   }
   
-  extension [Self <: FederatedQueryNoticesParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FederatedQueryNoticesParams] (val x: Self) extends AnyVal {
     
     inline def setAggregation(value: String): Self = StObject.set(x, "aggregation", value.asInstanceOf[js.Any])
     

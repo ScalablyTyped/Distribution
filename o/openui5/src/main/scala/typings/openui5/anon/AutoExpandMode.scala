@@ -66,7 +66,8 @@ object AutoExpandMode {
     __obj.asInstanceOf[AutoExpandMode]
   }
   
-  extension [Self <: AutoExpandMode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AutoExpandMode] (val x: Self) extends AnyVal {
     
     inline def setAutoExpandMode(
       value: TreeAutoExpandMode | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof TreeAutoExpandMode * / any */ String)

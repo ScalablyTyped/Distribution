@@ -28,7 +28,8 @@ object IDetailsListStyleProps {
     __obj.asInstanceOf[IDetailsListStyleProps]
   }
   
-  extension [Self <: IDetailsListStyleProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IDetailsListStyleProps] (val x: Self) extends AnyVal {
     
     inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     

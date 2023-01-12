@@ -25,7 +25,8 @@ object Nesting {
     __obj.asInstanceOf[Nesting]
   }
   
-  extension [Self <: Nesting](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Nesting] (val x: Self) extends AnyVal {
     
     inline def setNodes(value: SelectorList): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
     

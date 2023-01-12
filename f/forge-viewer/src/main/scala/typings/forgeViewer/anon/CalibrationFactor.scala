@@ -19,7 +19,8 @@ object CalibrationFactor {
     __obj.asInstanceOf[CalibrationFactor]
   }
   
-  extension [Self <: CalibrationFactor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CalibrationFactor] (val x: Self) extends AnyVal {
     
     inline def setCalibrationFactor(value: Double): Self = StObject.set(x, "calibrationFactor", value.asInstanceOf[js.Any])
     

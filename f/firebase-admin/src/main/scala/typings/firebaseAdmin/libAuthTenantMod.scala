@@ -103,7 +103,8 @@ object libAuthTenantMod {
       __obj.asInstanceOf[TenantOptionsServerRequest]
     }
     
-    extension [Self <: TenantOptionsServerRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TenantOptionsServerRequest] (val x: Self) extends AnyVal {
       
       inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
       
@@ -152,7 +153,8 @@ object libAuthTenantMod {
       __obj.asInstanceOf[TenantServerResponse]
     }
     
-    extension [Self <: TenantServerResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TenantServerResponse] (val x: Self) extends AnyVal {
       
       inline def setAllowPasswordSignup(value: Boolean): Self = StObject.set(x, "allowPasswordSignup", value.asInstanceOf[js.Any])
       
@@ -226,7 +228,8 @@ object libAuthTenantMod {
       __obj.asInstanceOf[UpdateTenantRequest]
     }
     
-    extension [Self <: UpdateTenantRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UpdateTenantRequest] (val x: Self) extends AnyVal {
       
       inline def setAnonymousSignInEnabled(value: Boolean): Self = StObject.set(x, "anonymousSignInEnabled", value.asInstanceOf[js.Any])
       

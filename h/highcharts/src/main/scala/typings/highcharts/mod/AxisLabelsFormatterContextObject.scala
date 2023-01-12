@@ -71,7 +71,8 @@ object AxisLabelsFormatterContextObject {
     __obj.asInstanceOf[AxisLabelsFormatterContextObject]
   }
   
-  extension [Self <: AxisLabelsFormatterContextObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AxisLabelsFormatterContextObject] (val x: Self) extends AnyVal {
     
     inline def setAxis(value: Axis): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
     

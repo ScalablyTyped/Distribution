@@ -25,7 +25,8 @@ object BigQueryIODetails {
     __obj.asInstanceOf[BigQueryIODetails]
   }
   
-  extension [Self <: BigQueryIODetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BigQueryIODetails] (val x: Self) extends AnyVal {
     
     inline def setDataset(value: String): Self = StObject.set(x, "dataset", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object AllowRangeRequests {
     __obj.asInstanceOf[AllowRangeRequests]
   }
   
-  extension [Self <: AllowRangeRequests](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AllowRangeRequests] (val x: Self) extends AnyVal {
     
     inline def setAllowRangeRequests(value: Boolean): Self = StObject.set(x, "allowRangeRequests", value.asInstanceOf[js.Any])
     

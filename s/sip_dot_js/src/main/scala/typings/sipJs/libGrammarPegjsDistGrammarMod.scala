@@ -109,7 +109,8 @@ object libGrammarPegjsDistGrammarMod {
       __obj.asInstanceOf[IAnyExpectation]
     }
     
-    extension [Self <: IAnyExpectation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IAnyExpectation] (val x: Self) extends AnyVal {
       
       inline def setType(value: any): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
@@ -135,7 +136,8 @@ object libGrammarPegjsDistGrammarMod {
       __obj.asInstanceOf[IClassExpectation]
     }
     
-    extension [Self <: IClassExpectation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IClassExpectation] (val x: Self) extends AnyVal {
       
       inline def setIgnoreCase(value: Boolean): Self = StObject.set(x, "ignoreCase", value.asInstanceOf[js.Any])
       
@@ -174,7 +176,8 @@ object libGrammarPegjsDistGrammarMod {
       __obj.asInstanceOf[IEndExpectation]
     }
     
-    extension [Self <: IEndExpectation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IEndExpectation] (val x: Self) extends AnyVal {
       
       inline def setType(value: end): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
@@ -195,7 +198,8 @@ object libGrammarPegjsDistGrammarMod {
       __obj.asInstanceOf[IFilePosition]
     }
     
-    extension [Self <: IFilePosition](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IFilePosition] (val x: Self) extends AnyVal {
       
       inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
@@ -220,7 +224,8 @@ object libGrammarPegjsDistGrammarMod {
       __obj.asInstanceOf[IFileRange]
     }
     
-    extension [Self <: IFileRange](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IFileRange] (val x: Self) extends AnyVal {
       
       inline def setEnd(value: IFilePosition): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
@@ -248,7 +253,8 @@ object libGrammarPegjsDistGrammarMod {
       __obj.asInstanceOf[ILiteralExpectation]
     }
     
-    extension [Self <: ILiteralExpectation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ILiteralExpectation] (val x: Self) extends AnyVal {
       
       inline def setIgnoreCase(value: Boolean): Self = StObject.set(x, "ignoreCase", value.asInstanceOf[js.Any])
       
@@ -274,7 +280,8 @@ object libGrammarPegjsDistGrammarMod {
       __obj.asInstanceOf[IOtherExpectation]
     }
     
-    extension [Self <: IOtherExpectation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IOtherExpectation] (val x: Self) extends AnyVal {
       
       inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
@@ -299,7 +306,8 @@ object libGrammarPegjsDistGrammarMod {
       __obj.asInstanceOf[IParseOptions]
     }
     
-    extension [Self <: IParseOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IParseOptions] (val x: Self) extends AnyVal {
       
       inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
       

@@ -90,7 +90,8 @@ object mod {
       __obj.asInstanceOf[IOpenAPIRequestValidator]
     }
     
-    extension [Self <: IOpenAPIRequestValidator](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IOpenAPIRequestValidator] (val x: Self) extends AnyVal {
       
       inline def setValidateRequest(value: Request => Any): Self = StObject.set(x, "validateRequest", js.Any.fromFunction1(value))
     }
@@ -156,7 +157,8 @@ object mod {
       __obj.asInstanceOf[OpenAPIRequestValidator]
     }
     
-    extension [Self <: OpenAPIRequestValidator](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OpenAPIRequestValidator] (val x: Self) extends AnyVal {
       
       inline def setAddSchemaProperties(value: Any): Self = StObject.set(x, "addSchemaProperties", value.asInstanceOf[js.Any])
       
@@ -233,7 +235,8 @@ object mod {
       __obj.asInstanceOf[OpenAPIRequestValidatorArgs]
     }
     
-    extension [Self <: OpenAPIRequestValidatorArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OpenAPIRequestValidatorArgs] (val x: Self) extends AnyVal {
       
       inline def setAdditionalQueryProperties(value: Boolean): Self = StObject.set(x, "additionalQueryProperties", value.asInstanceOf[js.Any])
       
@@ -318,7 +321,8 @@ object mod {
       __obj.asInstanceOf[OpenAPIRequestValidatorError]
     }
     
-    extension [Self <: OpenAPIRequestValidatorError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OpenAPIRequestValidatorError] (val x: Self) extends AnyVal {
       
       inline def setErrorCode(value: String): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
       

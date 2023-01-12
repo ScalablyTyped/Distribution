@@ -41,7 +41,8 @@ object FunctionExpression {
     __obj.asInstanceOf[FunctionExpression]
   }
   
-  extension [Self <: FunctionExpression](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FunctionExpression] (val x: Self) extends AnyVal {
     
     inline def setBody(value: BlockStatement | IfStatement): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

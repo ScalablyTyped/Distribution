@@ -19,7 +19,8 @@ object CardOverlay {
     __obj.asInstanceOf[CardOverlay]
   }
   
-  extension [Self <: CardOverlay](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CardOverlay] (val x: Self) extends AnyVal {
     
     inline def setCard(value: ShadowToken[BaseToken]): Self = StObject.set(x, "card", value.asInstanceOf[js.Any])
     

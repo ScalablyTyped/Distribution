@@ -23,7 +23,8 @@ object SqlInjectionMatchSetSummary {
     __obj.asInstanceOf[SqlInjectionMatchSetSummary]
   }
   
-  extension [Self <: SqlInjectionMatchSetSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SqlInjectionMatchSetSummary] (val x: Self) extends AnyVal {
     
     inline def setName(value: ResourceName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     

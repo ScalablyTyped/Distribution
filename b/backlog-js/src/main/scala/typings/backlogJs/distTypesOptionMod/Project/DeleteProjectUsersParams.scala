@@ -15,7 +15,8 @@ object DeleteProjectUsersParams {
     __obj.asInstanceOf[DeleteProjectUsersParams]
   }
   
-  extension [Self <: DeleteProjectUsersParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteProjectUsersParams] (val x: Self) extends AnyVal {
     
     inline def setUserId(value: Double): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
   }

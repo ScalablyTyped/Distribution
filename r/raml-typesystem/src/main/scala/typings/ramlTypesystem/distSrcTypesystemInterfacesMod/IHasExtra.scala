@@ -17,7 +17,8 @@ object IHasExtra {
     __obj.asInstanceOf[IHasExtra]
   }
   
-  extension [Self <: IHasExtra](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IHasExtra] (val x: Self) extends AnyVal {
     
     inline def setGetExtra(value: String => Any): Self = StObject.set(x, "getExtra", js.Any.fromFunction1(value))
     

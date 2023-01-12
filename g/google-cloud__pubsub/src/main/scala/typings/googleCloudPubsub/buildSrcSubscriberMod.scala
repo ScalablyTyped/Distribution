@@ -452,7 +452,8 @@ object buildSrcSubscriberMod {
       __obj.asInstanceOf[SubscriberOptions]
     }
     
-    extension [Self <: SubscriberOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SubscriberOptions] (val x: Self) extends AnyVal {
       
       inline def setAckDeadline(value: Double): Self = StObject.set(x, "ackDeadline", value.asInstanceOf[js.Any])
       

@@ -25,7 +25,8 @@ object PartialCommandInfo {
     __obj.asInstanceOf[PartialCommandInfo]
   }
   
-  extension [Self <: PartialCommandInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialCommandInfo] (val x: Self) extends AnyVal {
     
     inline def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
     

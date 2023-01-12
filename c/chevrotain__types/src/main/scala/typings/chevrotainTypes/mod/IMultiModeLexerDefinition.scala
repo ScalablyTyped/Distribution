@@ -17,7 +17,8 @@ object IMultiModeLexerDefinition {
     __obj.asInstanceOf[IMultiModeLexerDefinition]
   }
   
-  extension [Self <: IMultiModeLexerDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IMultiModeLexerDefinition] (val x: Self) extends AnyVal {
     
     inline def setDefaultMode(value: String): Self = StObject.set(x, "defaultMode", value.asInstanceOf[js.Any])
     

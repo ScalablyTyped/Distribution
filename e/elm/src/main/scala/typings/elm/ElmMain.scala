@@ -16,7 +16,8 @@ object ElmMain {
     __obj.asInstanceOf[ElmMain[P]]
   }
   
-  extension [Self <: ElmMain[?], P](x: Self & ElmMain[P]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ElmMain[?], P] (val x: Self & ElmMain[P]) extends AnyVal {
     
     inline def setInit(value: Flags => ElmApp[P]): Self = StObject.set(x, "init", js.Any.fromFunction1(value))
   }

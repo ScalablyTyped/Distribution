@@ -42,7 +42,8 @@ object esContextPrivateContextMod extends Shortcut {
       __obj.asInstanceOf[PrivateContextProps]
     }
     
-    extension [Self <: PrivateContextProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PrivateContextProps] (val x: Self) extends AnyVal {
       
       inline def set_internalRenderMenuItem(
         value: (/* originNode */ ReactElement, /* menuItemProps */ Any, /* stateProps */ Selected) => ReactElement

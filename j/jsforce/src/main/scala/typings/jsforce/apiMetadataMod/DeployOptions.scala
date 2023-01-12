@@ -33,7 +33,8 @@ object DeployOptions {
     __obj.asInstanceOf[DeployOptions]
   }
   
-  extension [Self <: DeployOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeployOptions] (val x: Self) extends AnyVal {
     
     inline def setAllowMissingFiles(value: Boolean): Self = StObject.set(x, "allowMissingFiles", value.asInstanceOf[js.Any])
     

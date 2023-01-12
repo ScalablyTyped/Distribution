@@ -127,7 +127,8 @@ object ojChartSeriesSettableProperties {
     __obj.asInstanceOf[ojChartSeriesSettableProperties]
   }
   
-  extension [Self <: ojChartSeriesSettableProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ojChartSeriesSettableProperties] (val x: Self) extends AnyVal {
     
     inline def setAreaColor(value: String): Self = StObject.set(x, "areaColor", value.asInstanceOf[js.Any])
     

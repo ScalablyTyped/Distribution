@@ -39,7 +39,8 @@ object WatermarkParams {
     __obj.asInstanceOf[WatermarkParams]
   }
   
-  extension [Self <: WatermarkParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WatermarkParams] (val x: Self) extends AnyVal {
     
     inline def setMark(value: ImgixParamType): Self = StObject.set(x, "mark", value.asInstanceOf[js.Any])
     

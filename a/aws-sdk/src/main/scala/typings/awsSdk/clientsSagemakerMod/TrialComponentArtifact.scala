@@ -23,7 +23,8 @@ object TrialComponentArtifact {
     __obj.asInstanceOf[TrialComponentArtifact]
   }
   
-  extension [Self <: TrialComponentArtifact](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TrialComponentArtifact] (val x: Self) extends AnyVal {
     
     inline def setMediaType(value: MediaType): Self = StObject.set(x, "MediaType", value.asInstanceOf[js.Any])
     

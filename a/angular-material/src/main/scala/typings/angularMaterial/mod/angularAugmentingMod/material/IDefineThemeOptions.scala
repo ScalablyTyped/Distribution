@@ -23,7 +23,8 @@ object IDefineThemeOptions {
     __obj.asInstanceOf[IDefineThemeOptions]
   }
   
-  extension [Self <: IDefineThemeOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IDefineThemeOptions] (val x: Self) extends AnyVal {
     
     inline def setAccent(value: String): Self = StObject.set(x, "accent", value.asInstanceOf[js.Any])
     

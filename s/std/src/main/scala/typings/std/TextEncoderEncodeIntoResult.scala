@@ -19,7 +19,8 @@ object TextEncoderEncodeIntoResult {
     __obj.asInstanceOf[TextEncoderEncodeIntoResult]
   }
   
-  extension [Self <: TextEncoderEncodeIntoResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextEncoderEncodeIntoResult] (val x: Self) extends AnyVal {
     
     inline def setRead(value: Double): Self = StObject.set(x, "read", value.asInstanceOf[js.Any])
     

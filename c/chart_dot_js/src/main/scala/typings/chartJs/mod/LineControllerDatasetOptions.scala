@@ -213,7 +213,8 @@ object LineControllerDatasetOptions {
     __obj.asInstanceOf[LineControllerDatasetOptions]
   }
   
-  extension [Self <: LineControllerDatasetOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LineControllerDatasetOptions] (val x: Self) extends AnyVal {
     
     inline def setAnimation(value: `false` | AnimationSpeclineonProgre): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     

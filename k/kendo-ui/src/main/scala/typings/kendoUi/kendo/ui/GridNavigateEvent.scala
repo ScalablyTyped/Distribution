@@ -18,7 +18,8 @@ object GridNavigateEvent {
     __obj.asInstanceOf[GridNavigateEvent]
   }
   
-  extension [Self <: GridNavigateEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GridNavigateEvent] (val x: Self) extends AnyVal {
     
     inline def setElement(value: JQuery): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     

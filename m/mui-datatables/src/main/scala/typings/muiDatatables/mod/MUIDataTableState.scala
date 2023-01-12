@@ -70,7 +70,8 @@ object MUIDataTableState {
     __obj.asInstanceOf[MUIDataTableState]
   }
   
-  extension [Self <: MUIDataTableState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MUIDataTableState] (val x: Self) extends AnyVal {
     
     inline def setActiveColumn(value: String): Self = StObject.set(x, "activeColumn", value.asInstanceOf[js.Any])
     

@@ -45,7 +45,8 @@ object libDistSrcInterfacesNavigationComponentListenerMod {
       __obj.asInstanceOf[NavigationComponentListener]
     }
     
-    extension [Self <: NavigationComponentListener](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NavigationComponentListener] (val x: Self) extends AnyVal {
       
       inline def setComponentDidAppear(value: /* _event */ ComponentDidAppearEvent => Unit): Self = StObject.set(x, "componentDidAppear", js.Any.fromFunction1(value))
       

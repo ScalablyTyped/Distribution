@@ -1176,7 +1176,8 @@ object modulesStockMod {
         __obj.asInstanceOf[DataGroupingInfoObject]
       }
       
-      extension [Self <: DataGroupingInfoObject](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: DataGroupingInfoObject] (val x: Self) extends AnyVal {
         
         inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
         
@@ -1207,7 +1208,8 @@ object modulesStockMod {
         __obj.asInstanceOf[DataGroupingResultObject]
       }
       
-      extension [Self <: DataGroupingResultObject](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: DataGroupingResultObject] (val x: Self) extends AnyVal {
         
         inline def setGroupMap(value: js.Array[DataGroupingInfoObject]): Self = StObject.set(x, "groupMap", value.asInstanceOf[js.Any])
         
@@ -1234,7 +1236,8 @@ object modulesStockMod {
         __obj.asInstanceOf[Point]
       }
       
-      extension [Self <: Point](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Point] (val x: Self) extends AnyVal {
         
         inline def setDataGroup(value: DataGroupingInfoObject): Self = StObject.set(x, "dataGroup", value.asInstanceOf[js.Any])
         

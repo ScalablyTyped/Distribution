@@ -100,7 +100,8 @@ object IGroup {
     __obj.asInstanceOf[IGroup]
   }
   
-  extension [Self <: IGroup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IGroup] (val x: Self) extends AnyVal {
     
     inline def setAdd(value: /* sprite */ js.UndefOr[ISprite] => Unit): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
     

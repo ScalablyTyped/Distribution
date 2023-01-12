@@ -24,7 +24,8 @@ object DvbSubSourceSettings {
     __obj.asInstanceOf[DvbSubSourceSettings]
   }
   
-  extension [Self <: DvbSubSourceSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DvbSubSourceSettings] (val x: Self) extends AnyVal {
     
     inline def setOcrLanguage(value: DvbSubOcrLanguage): Self = StObject.set(x, "OcrLanguage", value.asInstanceOf[js.Any])
     

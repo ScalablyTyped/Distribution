@@ -18,7 +18,8 @@ object StockToolsGuiDefinitionsSimpleShapesEllipseOptions {
     __obj.asInstanceOf[StockToolsGuiDefinitionsSimpleShapesEllipseOptions]
   }
   
-  extension [Self <: StockToolsGuiDefinitionsSimpleShapesEllipseOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StockToolsGuiDefinitionsSimpleShapesEllipseOptions] (val x: Self) extends AnyVal {
     
     inline def setSymbol(value: String): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
     

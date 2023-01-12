@@ -39,7 +39,8 @@ object distNodeEsmSrcApiAccountManagementMfaMod {
       __obj.asInstanceOf[BaseMfaEnrollment]
     }
     
-    extension [Self <: BaseMfaEnrollment](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseMfaEnrollment] (val x: Self) extends AnyVal {
       
       inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
       
@@ -68,7 +69,8 @@ object distNodeEsmSrcApiAccountManagementMfaMod {
       __obj.asInstanceOf[FinalizePhoneMfaEnrollmentRequest]
     }
     
-    extension [Self <: FinalizePhoneMfaEnrollmentRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FinalizePhoneMfaEnrollmentRequest] (val x: Self) extends AnyVal {
       
       inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
       
@@ -103,7 +105,8 @@ object distNodeEsmSrcApiAccountManagementMfaMod {
       __obj.asInstanceOf[PhoneMfaEnrollment]
     }
     
-    extension [Self <: PhoneMfaEnrollment](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PhoneMfaEnrollment] (val x: Self) extends AnyVal {
       
       inline def setPhoneInfo(value: String): Self = StObject.set(x, "phoneInfo", value.asInstanceOf[js.Any])
     }
@@ -124,7 +127,8 @@ object distNodeEsmSrcApiAccountManagementMfaMod {
       __obj.asInstanceOf[StartPhoneMfaEnrollmentRequest]
     }
     
-    extension [Self <: StartPhoneMfaEnrollmentRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StartPhoneMfaEnrollmentRequest] (val x: Self) extends AnyVal {
       
       inline def setIdToken(value: String): Self = StObject.set(x, "idToken", value.asInstanceOf[js.Any])
       
@@ -147,7 +151,8 @@ object distNodeEsmSrcApiAccountManagementMfaMod {
       __obj.asInstanceOf[StartPhoneMfaEnrollmentResponse]
     }
     
-    extension [Self <: StartPhoneMfaEnrollmentResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StartPhoneMfaEnrollmentResponse] (val x: Self) extends AnyVal {
       
       inline def setPhoneSessionInfo(value: SessionInfo): Self = StObject.set(x, "phoneSessionInfo", value.asInstanceOf[js.Any])
     }
@@ -168,7 +173,8 @@ object distNodeEsmSrcApiAccountManagementMfaMod {
       __obj.asInstanceOf[WithdrawMfaRequest]
     }
     
-    extension [Self <: WithdrawMfaRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WithdrawMfaRequest] (val x: Self) extends AnyVal {
       
       inline def setIdToken(value: String): Self = StObject.set(x, "idToken", value.asInstanceOf[js.Any])
       

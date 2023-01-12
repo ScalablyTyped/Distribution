@@ -34,7 +34,8 @@ object DirectionsViewModelServiceDescription {
     __obj.asInstanceOf[DirectionsViewModelServiceDescription]
   }
   
-  extension [Self <: DirectionsViewModelServiceDescription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DirectionsViewModelServiceDescription] (val x: Self) extends AnyVal {
     
     inline def setCurrentVersion(value: Double): Self = StObject.set(x, "currentVersion", value.asInstanceOf[js.Any])
     

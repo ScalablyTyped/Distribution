@@ -42,7 +42,8 @@ object XTopWindow {
     __obj.asInstanceOf[XTopWindow]
   }
   
-  extension [Self <: XTopWindow](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XTopWindow] (val x: Self) extends AnyVal {
     
     inline def setAddTopWindowListener(value: XTopWindowListener => Unit): Self = StObject.set(x, "addTopWindowListener", js.Any.fromFunction1(value))
     

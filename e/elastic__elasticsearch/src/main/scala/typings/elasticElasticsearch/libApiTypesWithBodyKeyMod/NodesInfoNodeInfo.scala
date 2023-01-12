@@ -73,7 +73,8 @@ object NodesInfoNodeInfo {
     __obj.asInstanceOf[NodesInfoNodeInfo]
   }
   
-  extension [Self <: NodesInfoNodeInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodesInfoNodeInfo] (val x: Self) extends AnyVal {
     
     inline def setAggregations(value: Record[String, NodesInfoNodeInfoAggregation]): Self = StObject.set(x, "aggregations", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object UpdateTerminationProtectionInput {
     __obj.asInstanceOf[UpdateTerminationProtectionInput]
   }
   
-  extension [Self <: UpdateTerminationProtectionInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateTerminationProtectionInput] (val x: Self) extends AnyVal {
     
     inline def setEnableTerminationProtection(value: EnableTerminationProtection): Self = StObject.set(x, "EnableTerminationProtection", value.asInstanceOf[js.Any])
     

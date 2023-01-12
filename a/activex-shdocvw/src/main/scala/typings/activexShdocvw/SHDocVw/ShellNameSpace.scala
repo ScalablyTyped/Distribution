@@ -118,7 +118,8 @@ object ShellNameSpace {
     __obj.asInstanceOf[ShellNameSpace]
   }
   
-  extension [Self <: ShellNameSpace](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShellNameSpace] (val x: Self) extends AnyVal {
     
     inline def setColumns(value: String): Self = StObject.set(x, "Columns", value.asInstanceOf[js.Any])
     

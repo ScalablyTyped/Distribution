@@ -18,7 +18,8 @@ object IonVoicePlayEnd {
     __obj.asInstanceOf[IonVoicePlayEnd]
   }
   
-  extension [Self <: IonVoicePlayEnd](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IonVoicePlayEnd] (val x: Self) extends AnyVal {
     
     inline def setSuccess(value: Resouce => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
   }

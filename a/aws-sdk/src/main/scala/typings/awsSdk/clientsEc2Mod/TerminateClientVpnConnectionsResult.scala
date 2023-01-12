@@ -28,7 +28,8 @@ object TerminateClientVpnConnectionsResult {
     __obj.asInstanceOf[TerminateClientVpnConnectionsResult]
   }
   
-  extension [Self <: TerminateClientVpnConnectionsResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TerminateClientVpnConnectionsResult] (val x: Self) extends AnyVal {
     
     inline def setClientVpnEndpointId(value: String): Self = StObject.set(x, "ClientVpnEndpointId", value.asInstanceOf[js.Any])
     

@@ -75,7 +75,8 @@ object DataHolderBrandSummary {
     __obj.asInstanceOf[DataHolderBrandSummary]
   }
   
-  extension [Self <: DataHolderBrandSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataHolderBrandSummary] (val x: Self) extends AnyVal {
     
     inline def setAbn(value: String): Self = StObject.set(x, "abn", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object Add {
     __obj.asInstanceOf[Add[TTarget, TData]]
   }
   
-  extension [Self <: Add[?, ?], TTarget, TData](x: Self & (Add[TTarget, TData])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Add[?, ?], TTarget, TData] (val x: Self & (Add[TTarget, TData])) extends AnyVal {
     
     inline def setAdd(value: HandleObject[TTarget, TData] => Unit): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
   }

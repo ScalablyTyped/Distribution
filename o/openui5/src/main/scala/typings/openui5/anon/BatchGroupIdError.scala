@@ -40,7 +40,8 @@ object BatchGroupIdError {
     __obj.asInstanceOf[BatchGroupIdError]
   }
   
-  extension [Self <: BatchGroupIdError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchGroupIdError] (val x: Self) extends AnyVal {
     
     inline def setBatchGroupId(value: String): Self = StObject.set(x, "batchGroupId", value.asInstanceOf[js.Any])
     

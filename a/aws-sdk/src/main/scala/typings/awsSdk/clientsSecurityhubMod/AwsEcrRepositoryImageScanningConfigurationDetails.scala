@@ -18,7 +18,8 @@ object AwsEcrRepositoryImageScanningConfigurationDetails {
     __obj.asInstanceOf[AwsEcrRepositoryImageScanningConfigurationDetails]
   }
   
-  extension [Self <: AwsEcrRepositoryImageScanningConfigurationDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsEcrRepositoryImageScanningConfigurationDetails] (val x: Self) extends AnyVal {
     
     inline def setScanOnPush(value: Boolean): Self = StObject.set(x, "ScanOnPush", value.asInstanceOf[js.Any])
     

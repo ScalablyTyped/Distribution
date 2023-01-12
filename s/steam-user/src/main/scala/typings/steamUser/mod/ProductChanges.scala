@@ -19,7 +19,8 @@ object ProductChanges {
     __obj.asInstanceOf[ProductChanges]
   }
   
-  extension [Self <: ProductChanges](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProductChanges] (val x: Self) extends AnyVal {
     
     inline def setAppChanges(value: AppChanges): Self = StObject.set(x, "appChanges", value.asInstanceOf[js.Any])
     

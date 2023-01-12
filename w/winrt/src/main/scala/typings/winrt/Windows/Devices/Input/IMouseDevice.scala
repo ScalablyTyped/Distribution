@@ -15,7 +15,8 @@ object IMouseDevice {
     __obj.asInstanceOf[IMouseDevice]
   }
   
-  extension [Self <: IMouseDevice](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IMouseDevice] (val x: Self) extends AnyVal {
     
     inline def setOnmousemoved(value: Any): Self = StObject.set(x, "onmousemoved", value.asInstanceOf[js.Any])
   }

@@ -21,7 +21,8 @@ object ControlParams {
     __obj.asInstanceOf[ControlParams]
   }
   
-  extension [Self <: ControlParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ControlParams] (val x: Self) extends AnyVal {
     
     inline def setEvent_callback(value: () => Unit): Self = StObject.set(x, "event_callback", js.Any.fromFunction0(value))
     

@@ -23,7 +23,8 @@ object ImportLensOutput {
     __obj.asInstanceOf[ImportLensOutput]
   }
   
-  extension [Self <: ImportLensOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImportLensOutput] (val x: Self) extends AnyVal {
     
     inline def setLensArn(value: LensArn): Self = StObject.set(x, "LensArn", value.asInstanceOf[js.Any])
     

@@ -31,7 +31,8 @@ object ThreadDialogProcParam {
     __obj.asInstanceOf[ThreadDialogProcParam]
   }
   
-  extension [Self <: ThreadDialogProcParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ThreadDialogProcParam] (val x: Self) extends AnyVal {
     
     inline def setDocument(value: Any): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
     

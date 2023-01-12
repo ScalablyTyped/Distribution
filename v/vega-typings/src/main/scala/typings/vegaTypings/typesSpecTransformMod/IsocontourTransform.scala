@@ -42,7 +42,8 @@ object IsocontourTransform {
     __obj.asInstanceOf[IsocontourTransform]
   }
   
-  extension [Self <: IsocontourTransform](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IsocontourTransform] (val x: Self) extends AnyVal {
     
     inline def setAs(value: String | SignalRef): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object SealIdentifier {
     __obj.asInstanceOf[SealIdentifier]
   }
   
-  extension [Self <: SealIdentifier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SealIdentifier] (val x: Self) extends AnyVal {
     
     inline def setSealDisplayName(value: String): Self = StObject.set(x, "sealDisplayName", value.asInstanceOf[js.Any])
     

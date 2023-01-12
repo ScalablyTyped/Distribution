@@ -52,7 +52,8 @@ object anon {
       __obj.asInstanceOf[`0`]
     }
     
-    extension [Self <: `0`](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: `0`] (val x: Self) extends AnyVal {
       
       inline def setReplace(value: `true`): Self = StObject.set(x, "replace", value.asInstanceOf[js.Any])
     }
@@ -73,7 +74,8 @@ object anon {
       __obj.asInstanceOf[Close]
     }
     
-    extension [Self <: Close](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Close] (val x: Self) extends AnyVal {
       
       inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
       
@@ -96,7 +98,8 @@ object anon {
       __obj.asInstanceOf[Collection]
     }
     
-    extension [Self <: Collection](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Collection] (val x: Self) extends AnyVal {
       
       inline def setCollection(value: ICollection[Any]): Self = StObject.set(x, "collection", value.asInstanceOf[js.Any])
       
@@ -115,7 +118,8 @@ object anon {
       __obj.asInstanceOf[Id]
     }
     
-    extension [Self <: Id](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Id] (val x: Self) extends AnyVal {
       
       inline def set_id(value: IObjectID): Self = StObject.set(x, "_id", value.asInstanceOf[js.Any])
     }
@@ -387,7 +391,8 @@ object anon {
       __obj.asInstanceOf[MongoClientOptionscollect]
     }
     
-    extension [Self <: MongoClientOptionscollect](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MongoClientOptionscollect] (val x: Self) extends AnyVal {
       
       inline def setAppName(value: String): Self = StObject.set(x, "appName", value.asInstanceOf[js.Any])
       
@@ -714,7 +719,8 @@ object anon {
       __obj.asInstanceOf[Multi]
     }
     
-    extension [Self <: Multi](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Multi] (val x: Self) extends AnyVal {
       
       inline def setMulti(value: `false`): Self = StObject.set(x, "multi", value.asInstanceOf[js.Any])
       
@@ -745,7 +751,8 @@ object anon {
       __obj.asInstanceOf[MultiReplace]
     }
     
-    extension [Self <: MultiReplace](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MultiReplace] (val x: Self) extends AnyVal {
       
       inline def setMulti(value: `true`): Self = StObject.set(x, "multi", value.asInstanceOf[js.Any])
       
@@ -770,7 +777,8 @@ object anon {
       __obj.asInstanceOf[RawCursor]
     }
     
-    extension [Self <: RawCursor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RawCursor] (val x: Self) extends AnyVal {
       
       inline def setRawCursor(value: `true`): Self = StObject.set(x, "rawCursor", value.asInstanceOf[js.Any])
     }
@@ -787,7 +795,8 @@ object anon {
       __obj.asInstanceOf[Replace]
     }
     
-    extension [Self <: Replace](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Replace] (val x: Self) extends AnyVal {
       
       inline def setReplace(value: `false`): Self = StObject.set(x, "replace", value.asInstanceOf[js.Any])
       
@@ -810,7 +819,8 @@ object anon {
       __obj.asInstanceOf[ReplaceSingle]
     }
     
-    extension [Self <: ReplaceSingle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReplaceSingle] (val x: Self) extends AnyVal {
       
       inline def setMulti(value: `false`): Self = StObject.set(x, "multi", value.asInstanceOf[js.Any])
       
@@ -839,7 +849,8 @@ object anon {
       __obj.asInstanceOf[Single]
     }
     
-    extension [Self <: Single](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Single] (val x: Self) extends AnyVal {
       
       inline def setMulti(value: `true`): Self = StObject.set(x, "multi", value.asInstanceOf[js.Any])
       

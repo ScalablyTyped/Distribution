@@ -36,7 +36,8 @@ object XVolatileBitmap {
     __obj.asInstanceOf[XVolatileBitmap]
   }
   
-  extension [Self <: XVolatileBitmap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XVolatileBitmap] (val x: Self) extends AnyVal {
     
     inline def setIsValid(value: () => Boolean): Self = StObject.set(x, "isValid", js.Any.fromFunction0(value))
   }

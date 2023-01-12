@@ -15,7 +15,8 @@ object PitchWithRotate {
     __obj.asInstanceOf[PitchWithRotate]
   }
   
-  extension [Self <: PitchWithRotate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PitchWithRotate] (val x: Self) extends AnyVal {
     
     inline def setPitchWithRotate(value: Boolean): Self = StObject.set(x, "pitchWithRotate", value.asInstanceOf[js.Any])
   }

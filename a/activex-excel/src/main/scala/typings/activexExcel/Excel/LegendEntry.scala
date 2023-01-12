@@ -61,7 +61,8 @@ object LegendEntry {
     __obj.asInstanceOf[LegendEntry]
   }
   
-  extension [Self <: LegendEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LegendEntry] (val x: Self) extends AnyVal {
     
     inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     

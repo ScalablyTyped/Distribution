@@ -37,7 +37,8 @@ object distLoggerTargetMod {
       __obj.asInstanceOf[LogTarget]
     }
     
-    extension [Self <: LogTarget](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LogTarget] (val x: Self) extends AnyVal {
       
       inline def setFormat(value: /* msg */ LogMessage => String): Self = StObject.set(x, "format", js.Any.fromFunction1(value))
       

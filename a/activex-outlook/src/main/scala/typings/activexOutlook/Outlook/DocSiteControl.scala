@@ -21,7 +21,8 @@ object DocSiteControl {
     __obj.asInstanceOf[DocSiteControl]
   }
   
-  extension [Self <: DocSiteControl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DocSiteControl] (val x: Self) extends AnyVal {
     
     inline def setOutlookDot_DocSiteControl_typekey(value: DocSiteControl): Self = StObject.set(x, "Outlook._DocSiteControl_typekey", value.asInstanceOf[js.Any])
     

@@ -150,7 +150,8 @@ object distSrcDirMod {
       __obj.asInstanceOf[DirProps]
     }
     
-    extension [Self <: DirProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DirProps] (val x: Self) extends AnyVal {
       
       inline def setDir(value: Boolean): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
       

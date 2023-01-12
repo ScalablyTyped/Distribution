@@ -23,7 +23,8 @@ object IAPIError {
     __obj.asInstanceOf[IAPIError]
   }
   
-  extension [Self <: IAPIError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IAPIError] (val x: Self) extends AnyVal {
     
     inline def setErrMsg(value: java.lang.String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
   }

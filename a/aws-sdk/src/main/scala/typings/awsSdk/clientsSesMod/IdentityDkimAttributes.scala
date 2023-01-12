@@ -28,7 +28,8 @@ object IdentityDkimAttributes {
     __obj.asInstanceOf[IdentityDkimAttributes]
   }
   
-  extension [Self <: IdentityDkimAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IdentityDkimAttributes] (val x: Self) extends AnyVal {
     
     inline def setDkimEnabled(value: Enabled): Self = StObject.set(x, "DkimEnabled", value.asInstanceOf[js.Any])
     

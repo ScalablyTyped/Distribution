@@ -17,7 +17,8 @@ object SelectionVisibility {
     __obj.asInstanceOf[SelectionVisibility]
   }
   
-  extension [Self <: SelectionVisibility](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SelectionVisibility] (val x: Self) extends AnyVal {
     
     inline def setHasHidden(value: Boolean): Self = StObject.set(x, "hasHidden", value.asInstanceOf[js.Any])
     

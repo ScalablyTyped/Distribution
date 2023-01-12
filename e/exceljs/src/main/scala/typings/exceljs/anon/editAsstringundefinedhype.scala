@@ -24,7 +24,8 @@ object editAsstringundefinedhype {
     __obj.asInstanceOf[editAsstringundefinedhype]
   }
   
-  extension [Self <: editAsstringundefinedhype](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: editAsstringundefinedhype] (val x: Self) extends AnyVal {
     
     inline def setBr(value: Anchor): Self = StObject.set(x, "br", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object RPCResult {
     __obj.asInstanceOf[RPCResult]
   }
   
-  extension [Self <: RPCResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RPCResult] (val x: Self) extends AnyVal {
     
     inline def setOptions(value: RPCOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
   }

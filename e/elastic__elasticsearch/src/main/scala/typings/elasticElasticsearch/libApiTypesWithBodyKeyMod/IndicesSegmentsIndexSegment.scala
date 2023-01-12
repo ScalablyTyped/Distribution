@@ -16,7 +16,8 @@ object IndicesSegmentsIndexSegment {
     __obj.asInstanceOf[IndicesSegmentsIndexSegment]
   }
   
-  extension [Self <: IndicesSegmentsIndexSegment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndicesSegmentsIndexSegment] (val x: Self) extends AnyVal {
     
     inline def setShards(value: Record[String, IndicesSegmentsShardsSegment | js.Array[IndicesSegmentsShardsSegment]]): Self = StObject.set(x, "shards", value.asInstanceOf[js.Any])
   }

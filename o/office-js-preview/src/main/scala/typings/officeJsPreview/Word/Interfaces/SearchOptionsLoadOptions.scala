@@ -82,7 +82,8 @@ object SearchOptionsLoadOptions {
     __obj.asInstanceOf[SearchOptionsLoadOptions]
   }
   
-  extension [Self <: SearchOptionsLoadOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchOptionsLoadOptions] (val x: Self) extends AnyVal {
     
     inline def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
     

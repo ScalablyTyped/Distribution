@@ -40,7 +40,8 @@ object OMathAutoCorrect {
     __obj.asInstanceOf[OMathAutoCorrect]
   }
   
-  extension [Self <: OMathAutoCorrect](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OMathAutoCorrect] (val x: Self) extends AnyVal {
     
     inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     

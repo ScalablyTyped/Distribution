@@ -39,7 +39,8 @@ object outProvidersTransformersEntryMod {
       __obj.asInstanceOf[EntryTransformer]
     }
     
-    extension [Self <: EntryTransformer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EntryTransformer] (val x: Self) extends AnyVal {
       
       inline def setGetTransformer(value: () => EntryTransformerFunction): Self = StObject.set(x, "getTransformer", js.Any.fromFunction0(value))
       

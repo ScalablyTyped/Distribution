@@ -17,7 +17,8 @@ object IObjectFileAndVersion {
     __obj.asInstanceOf[IObjectFileAndVersion]
   }
   
-  extension [Self <: IObjectFileAndVersion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IObjectFileAndVersion] (val x: Self) extends AnyVal {
     
     inline def setObjectFile(value: IObjectFile): Self = StObject.set(x, "ObjectFile", value.asInstanceOf[js.Any])
     

@@ -41,7 +41,8 @@ object arcadeUtilsExpressionInfo {
     __obj.asInstanceOf[arcadeUtilsExpressionInfo]
   }
   
-  extension [Self <: arcadeUtilsExpressionInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: arcadeUtilsExpressionInfo] (val x: Self) extends AnyVal {
     
     inline def setExpression(value: String): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
     

@@ -98,7 +98,8 @@ object libSecurityFieldPermissionsMod {
       __obj.asInstanceOf[FieldPermissions]
     }
     
-    extension [Self <: FieldPermissions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FieldPermissions] (val x: Self) extends AnyVal {
       
       inline def setAllowNonClassFields_(value: Any): Self = StObject.set(x, "allowNonClassFields_", value.asInstanceOf[js.Any])
       

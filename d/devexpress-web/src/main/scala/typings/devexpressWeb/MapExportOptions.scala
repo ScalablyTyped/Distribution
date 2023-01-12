@@ -28,7 +28,8 @@ object MapExportOptions {
     __obj.asInstanceOf[MapExportOptions]
   }
   
-  extension [Self <: MapExportOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MapExportOptions] (val x: Self) extends AnyVal {
     
     inline def setAutomaticPageLayout(value: Boolean): Self = StObject.set(x, "AutomaticPageLayout", value.asInstanceOf[js.Any])
     

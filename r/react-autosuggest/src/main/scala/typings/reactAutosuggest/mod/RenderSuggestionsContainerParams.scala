@@ -21,7 +21,8 @@ object RenderSuggestionsContainerParams {
     __obj.asInstanceOf[RenderSuggestionsContainerParams]
   }
   
-  extension [Self <: RenderSuggestionsContainerParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RenderSuggestionsContainerParams] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

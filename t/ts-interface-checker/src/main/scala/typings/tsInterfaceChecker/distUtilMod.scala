@@ -153,7 +153,8 @@ object distUtilMod {
       __obj.asInstanceOf[IErrorDetail]
     }
     
-    extension [Self <: IErrorDetail](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IErrorDetail] (val x: Self) extends AnyVal {
       
       inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
@@ -178,7 +179,8 @@ object distUtilMod {
       __obj.asInstanceOf[IUnionResolver]
     }
     
-    extension [Self <: IUnionResolver](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IUnionResolver] (val x: Self) extends AnyVal {
       
       inline def setCreateContext(value: () => IContext): Self = StObject.set(x, "createContext", js.Any.fromFunction0(value))
     }

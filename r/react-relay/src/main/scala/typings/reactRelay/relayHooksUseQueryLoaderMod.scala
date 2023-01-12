@@ -50,7 +50,8 @@ object relayHooksUseQueryLoaderMod {
       __obj.asInstanceOf[UseQueryLoaderLoadQueryOptions]
     }
     
-    extension [Self <: UseQueryLoaderLoadQueryOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UseQueryLoaderLoadQueryOptions] (val x: Self) extends AnyVal {
       
       inline def setFetchPolicy(value: FetchPolicy): Self = StObject.set(x, "fetchPolicy", value.asInstanceOf[js.Any])
       

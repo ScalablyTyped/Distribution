@@ -41,7 +41,8 @@ object IFormlyConfigExtras {
     __obj.asInstanceOf[IFormlyConfigExtras]
   }
   
-  extension [Self <: IFormlyConfigExtras](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IFormlyConfigExtras] (val x: Self) extends AnyVal {
     
     inline def setApiCheckInstance(value: Any): Self = StObject.set(x, "apiCheckInstance", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object DeleteSnapshotScheduleMessage {
     __obj.asInstanceOf[DeleteSnapshotScheduleMessage]
   }
   
-  extension [Self <: DeleteSnapshotScheduleMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteSnapshotScheduleMessage] (val x: Self) extends AnyVal {
     
     inline def setScheduleIdentifier(value: String): Self = StObject.set(x, "ScheduleIdentifier", value.asInstanceOf[js.Any])
   }

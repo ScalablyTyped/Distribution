@@ -21,7 +21,8 @@ object GraphVertex {
     __obj.asInstanceOf[GraphVertex]
   }
   
-  extension [Self <: GraphVertex](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GraphVertex] (val x: Self) extends AnyVal {
     
     inline def setDepth(value: long): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object DeleteVcenterClientRequest {
     __obj.asInstanceOf[DeleteVcenterClientRequest]
   }
   
-  extension [Self <: DeleteVcenterClientRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteVcenterClientRequest] (val x: Self) extends AnyVal {
     
     inline def setVcenterClientID(value: VcenterClientID): Self = StObject.set(x, "vcenterClientID", value.asInstanceOf[js.Any])
   }

@@ -22,7 +22,8 @@ object DataSourceCollection {
     __obj.asInstanceOf[DataSourceCollection]
   }
   
-  extension [Self <: DataSourceCollection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataSourceCollection] (val x: Self) extends AnyVal {
     
     inline def setDataSourceCollection(value: typings.cesium.mod.DataSourceCollection): Self = StObject.set(x, "dataSourceCollection", value.asInstanceOf[js.Any])
     

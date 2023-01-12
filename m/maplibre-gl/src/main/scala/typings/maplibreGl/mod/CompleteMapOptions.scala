@@ -330,7 +330,8 @@ object CompleteMapOptions {
     __obj.asInstanceOf[CompleteMapOptions]
   }
   
-  extension [Self <: CompleteMapOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CompleteMapOptions] (val x: Self) extends AnyVal {
     
     inline def setAntialias(
       value: /* import warning: importer.ImportType#apply Failed type conversion: / * Inlined std.Pick<maplibre-gl.maplibre-gl.MapOptions, 'antialias'> * /

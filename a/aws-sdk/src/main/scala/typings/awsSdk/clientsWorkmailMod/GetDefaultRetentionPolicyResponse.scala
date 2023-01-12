@@ -33,7 +33,8 @@ object GetDefaultRetentionPolicyResponse {
     __obj.asInstanceOf[GetDefaultRetentionPolicyResponse]
   }
   
-  extension [Self <: GetDefaultRetentionPolicyResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetDefaultRetentionPolicyResponse] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     

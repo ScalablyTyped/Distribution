@@ -16,7 +16,8 @@ object BatchRunReportsRequest {
     __obj.asInstanceOf[BatchRunReportsRequest]
   }
   
-  extension [Self <: BatchRunReportsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchRunReportsRequest] (val x: Self) extends AnyVal {
     
     inline def setRequests(value: js.Array[RunReportRequest]): Self = StObject.set(x, "requests", value.asInstanceOf[js.Any])
     

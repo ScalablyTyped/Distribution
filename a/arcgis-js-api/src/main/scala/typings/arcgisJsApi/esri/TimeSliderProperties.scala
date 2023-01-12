@@ -146,7 +146,8 @@ object TimeSliderProperties {
     __obj.asInstanceOf[TimeSliderProperties]
   }
   
-  extension [Self <: TimeSliderProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimeSliderProperties] (val x: Self) extends AnyVal {
     
     inline def setActions(value: CollectionProperties[Action]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     

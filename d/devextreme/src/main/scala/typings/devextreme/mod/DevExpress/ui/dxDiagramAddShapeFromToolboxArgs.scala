@@ -19,7 +19,8 @@ object dxDiagramAddShapeFromToolboxArgs {
     __obj.asInstanceOf[dxDiagramAddShapeFromToolboxArgs]
   }
   
-  extension [Self <: dxDiagramAddShapeFromToolboxArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxDiagramAddShapeFromToolboxArgs] (val x: Self) extends AnyVal {
     
     inline def setShapeType(value: DiagramShapeType | String): Self = StObject.set(x, "shapeType", value.asInstanceOf[js.Any])
     

@@ -43,7 +43,8 @@ object mod {
       __obj.asInstanceOf[FileInputProps]
     }
     
-    extension [Self <: FileInputProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileInputProps] (val x: Self) extends AnyVal {
       
       inline def setAccept(value: String): Self = StObject.set(x, "accept", value.asInstanceOf[js.Any])
       

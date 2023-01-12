@@ -305,7 +305,8 @@ object sapUiCommonsMessageBarMod {
       __obj.asInstanceOf[MessageBarSettings]
     }
     
-    extension [Self <: MessageBarSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MessageBarSettings] (val x: Self) extends AnyVal {
       
       inline def setAnchorID(value: String | PropertyBindingInfo): Self = StObject.set(x, "anchorID", value.asInstanceOf[js.Any])
       

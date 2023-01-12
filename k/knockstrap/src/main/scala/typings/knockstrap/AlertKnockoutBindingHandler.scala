@@ -25,7 +25,8 @@ object AlertKnockoutBindingHandler {
     __obj.asInstanceOf[AlertKnockoutBindingHandler]
   }
   
-  extension [Self <: AlertKnockoutBindingHandler](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AlertKnockoutBindingHandler] (val x: Self) extends AnyVal {
     
     inline def setInit(
       value: (/* element */ Any, /* valueAccessor */ js.Function0[Any], /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutAllBindingsAccessor */ /* allBindingsAccessor */ Any, /* viewModel */ Any, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutBindingContext */ /* bindingContext */ Any) => KnockoutControlsDescendantBindings

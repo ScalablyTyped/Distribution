@@ -47,7 +47,8 @@ object XShapes {
     __obj.asInstanceOf[XShapes]
   }
   
-  extension [Self <: XShapes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XShapes] (val x: Self) extends AnyVal {
     
     inline def setAdd(value: XShape => Unit): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
     

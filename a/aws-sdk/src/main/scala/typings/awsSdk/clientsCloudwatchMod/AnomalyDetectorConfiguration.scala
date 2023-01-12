@@ -23,7 +23,8 @@ object AnomalyDetectorConfiguration {
     __obj.asInstanceOf[AnomalyDetectorConfiguration]
   }
   
-  extension [Self <: AnomalyDetectorConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnomalyDetectorConfiguration] (val x: Self) extends AnyVal {
     
     inline def setExcludedTimeRanges(value: AnomalyDetectorExcludedTimeRanges): Self = StObject.set(x, "ExcludedTimeRanges", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object USBDevicesPermission {
     __obj.asInstanceOf[USBDevicesPermission]
   }
   
-  extension [Self <: USBDevicesPermission](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: USBDevicesPermission] (val x: Self) extends AnyVal {
     
     inline def setUsbDevices(value: js.Array[ProductId]): Self = StObject.set(x, "usbDevices", value.asInstanceOf[js.Any])
     

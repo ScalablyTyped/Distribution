@@ -23,7 +23,8 @@ object ImageUploadResponse {
     __obj.asInstanceOf[ImageUploadResponse]
   }
   
-  extension [Self <: ImageUploadResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImageUploadResponse] (val x: Self) extends AnyVal {
     
     inline def setError(value: String): Self = StObject.set(x, "Error", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object GEPhotoOverlayViewer {
     __obj.asInstanceOf[GEPhotoOverlayViewer]
   }
   
-  extension [Self <: GEPhotoOverlayViewer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GEPhotoOverlayViewer] (val x: Self) extends AnyVal {
     
     inline def setSetPhotoOverlay(value: KmlPhotoOverlay => Unit): Self = StObject.set(x, "setPhotoOverlay", js.Any.fromFunction1(value))
   }

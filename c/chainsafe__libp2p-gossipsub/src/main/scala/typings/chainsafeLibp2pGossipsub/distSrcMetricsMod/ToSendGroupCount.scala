@@ -21,7 +21,8 @@ object ToSendGroupCount {
     __obj.asInstanceOf[ToSendGroupCount]
   }
   
-  extension [Self <: ToSendGroupCount](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ToSendGroupCount] (val x: Self) extends AnyVal {
     
     inline def setDirect(value: Double): Self = StObject.set(x, "direct", value.asInstanceOf[js.Any])
     

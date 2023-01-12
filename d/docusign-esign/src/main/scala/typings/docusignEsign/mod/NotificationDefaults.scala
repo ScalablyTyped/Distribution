@@ -27,7 +27,8 @@ object NotificationDefaults {
     __obj.asInstanceOf[NotificationDefaults]
   }
   
-  extension [Self <: NotificationDefaults](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NotificationDefaults] (val x: Self) extends AnyVal {
     
     inline def setApiEmailNotifications(
       value: /* Contains details about the default notification settings for the envelope notifications that senders and signers receive. */ NotificationDefaultSettings

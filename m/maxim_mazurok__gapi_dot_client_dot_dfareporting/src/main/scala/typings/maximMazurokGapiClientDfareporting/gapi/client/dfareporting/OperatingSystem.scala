@@ -28,7 +28,8 @@ object OperatingSystem {
     __obj.asInstanceOf[OperatingSystem]
   }
   
-  extension [Self <: OperatingSystem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OperatingSystem] (val x: Self) extends AnyVal {
     
     inline def setDartId(value: String): Self = StObject.set(x, "dartId", value.asInstanceOf[js.Any])
     

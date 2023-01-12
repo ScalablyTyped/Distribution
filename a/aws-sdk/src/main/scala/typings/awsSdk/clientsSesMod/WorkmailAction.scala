@@ -23,7 +23,8 @@ object WorkmailAction {
     __obj.asInstanceOf[WorkmailAction]
   }
   
-  extension [Self <: WorkmailAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkmailAction] (val x: Self) extends AnyVal {
     
     inline def setOrganizationArn(value: AmazonResourceName): Self = StObject.set(x, "OrganizationArn", value.asInstanceOf[js.Any])
     

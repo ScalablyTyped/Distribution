@@ -48,7 +48,8 @@ object RequestDetails {
     __obj.asInstanceOf[RequestDetails]
   }
   
-  extension [Self <: RequestDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RequestDetails] (val x: Self) extends AnyVal {
     
     inline def setExportAssetToSignedUrl(value: ExportAssetToSignedUrlRequestDetails): Self = StObject.set(x, "ExportAssetToSignedUrl", value.asInstanceOf[js.Any])
     

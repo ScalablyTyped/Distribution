@@ -37,7 +37,8 @@ object mod {
     @js.native
     val ^ : Config = js.native
     
-    extension [Self <: Config](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
       
       inline def setMONEY_URL(value: String): Self = StObject.set(x, "MONEY_URL", value.asInstanceOf[js.Any])
       
@@ -57,7 +58,8 @@ object mod {
     @js.native
     val ^ : ExternalPaymentStatic = js.native
     
-    extension [Self <: ExternalPayment](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExternalPayment] (val x: Self) extends AnyVal {
       
       inline def setProcess(value: (ProcessOptions, ResponseCallback[ProcessResult]) => Unit): Self = StObject.set(x, "process", js.Any.fromFunction2(value))
       
@@ -108,7 +110,8 @@ object mod {
     @js.native
     val ^ : WalletStatic = js.native
     
-    extension [Self <: Wallet](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Wallet] (val x: Self) extends AnyVal {
       
       inline def setAccountInfo(value: ResponseCallback[AccountInfoResult] => Unit): Self = StObject.set(x, "accountInfo", js.Any.fromFunction1(value))
       

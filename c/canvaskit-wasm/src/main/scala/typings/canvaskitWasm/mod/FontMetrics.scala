@@ -24,7 +24,8 @@ object FontMetrics {
     __obj.asInstanceOf[FontMetrics]
   }
   
-  extension [Self <: FontMetrics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FontMetrics] (val x: Self) extends AnyVal {
     
     inline def setAscent(value: Double): Self = StObject.set(x, "ascent", value.asInstanceOf[js.Any])
     

@@ -39,7 +39,8 @@ object SettableColumnProperties {
     __obj.asInstanceOf[SettableColumnProperties]
   }
   
-  extension [Self <: SettableColumnProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SettableColumnProperties] (val x: Self) extends AnyVal {
     
     inline def setColumnHidden(value: Boolean): Self = StObject.set(x, "columnHidden", value.asInstanceOf[js.Any])
     

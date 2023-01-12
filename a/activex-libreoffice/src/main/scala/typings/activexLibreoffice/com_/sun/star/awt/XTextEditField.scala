@@ -26,7 +26,8 @@ object XTextEditField {
     __obj.asInstanceOf[XTextEditField]
   }
   
-  extension [Self <: XTextEditField](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XTextEditField] (val x: Self) extends AnyVal {
     
     inline def setSetEchoChar(value: String => Unit): Self = StObject.set(x, "setEchoChar", js.Any.fromFunction1(value))
   }

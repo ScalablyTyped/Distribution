@@ -98,7 +98,8 @@ object column {
       __obj.asInstanceOf[IAction]
     }
     
-    extension [Self <: IAction](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IAction] (val x: Self) extends AnyVal {
       
       inline def setAltText(value: String): Self = StObject.set(x, "altText", value.asInstanceOf[js.Any])
       
@@ -176,7 +177,8 @@ object column {
       __obj.asInstanceOf[IBoolean]
     }
     
-    extension [Self <: IBoolean](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IBoolean] (val x: Self) extends AnyVal {
       
       inline def setFalseText(value: String): Self = StObject.set(x, "falseText", value.asInstanceOf[js.Any])
       
@@ -218,7 +220,8 @@ object column {
       __obj.asInstanceOf[ICheckColumn]
     }
     
-    extension [Self <: ICheckColumn](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICheckColumn] (val x: Self) extends AnyVal {
       
       inline def setOnDisable(value: /* silent */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "onDisable", js.Any.fromFunction1(value))
       
@@ -409,7 +412,8 @@ object column {
       __obj.asInstanceOf[typings.extjs.Ext.grid.column.IColumn]
     }
     
-    extension [Self <: typings.extjs.Ext.grid.column.IColumn](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.extjs.Ext.grid.column.IColumn] (val x: Self) extends AnyVal {
       
       inline def setAfterComponentLayout(
         value: (/* width */ js.UndefOr[Any], /* height */ js.UndefOr[Any], /* oldWidth */ js.UndefOr[Any], /* oldHeight */ js.UndefOr[Any]) => Unit
@@ -591,7 +595,8 @@ object column {
       __obj.asInstanceOf[IDate]
     }
     
-    extension [Self <: IDate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDate] (val x: Self) extends AnyVal {
       
       inline def setDefaultRenderer(value: /* value */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "defaultRenderer", js.Any.fromFunction1(value))
       
@@ -617,7 +622,8 @@ object column {
       __obj.asInstanceOf[INumber]
     }
     
-    extension [Self <: INumber](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: INumber] (val x: Self) extends AnyVal {
       
       inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
@@ -662,7 +668,8 @@ object column {
       __obj.asInstanceOf[ITemplate]
     }
     
-    extension [Self <: ITemplate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITemplate] (val x: Self) extends AnyVal {
       
       inline def setDefaultRenderer(
         value: (/* value */ js.UndefOr[Any], /* meta */ js.UndefOr[Any], /* record */ js.UndefOr[Any]) => Unit

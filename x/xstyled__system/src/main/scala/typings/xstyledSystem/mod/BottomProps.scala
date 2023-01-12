@@ -16,7 +16,8 @@ object BottomProps {
     __obj.asInstanceOf[BottomProps[TLength]]
   }
   
-  extension [Self <: BottomProps[?], TLength](x: Self & BottomProps[TLength]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BottomProps[?], TLength] (val x: Self & BottomProps[TLength]) extends AnyVal {
     
     inline def setBottom(value: ResponsiveValue[Bottom[TLength]]): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
     

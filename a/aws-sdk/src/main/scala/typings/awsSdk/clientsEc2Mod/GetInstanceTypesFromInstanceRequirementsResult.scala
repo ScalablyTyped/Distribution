@@ -23,7 +23,8 @@ object GetInstanceTypesFromInstanceRequirementsResult {
     __obj.asInstanceOf[GetInstanceTypesFromInstanceRequirementsResult]
   }
   
-  extension [Self <: GetInstanceTypesFromInstanceRequirementsResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetInstanceTypesFromInstanceRequirementsResult] (val x: Self) extends AnyVal {
     
     inline def setInstanceTypes(value: InstanceTypeInfoFromInstanceRequirementsSet): Self = StObject.set(x, "InstanceTypes", value.asInstanceOf[js.Any])
     

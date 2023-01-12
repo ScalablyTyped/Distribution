@@ -35,7 +35,8 @@ object XActionsApproval {
     __obj.asInstanceOf[XActionsApproval]
   }
   
-  extension [Self <: XActionsApproval](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XActionsApproval] (val x: Self) extends AnyVal {
     
     inline def setApproveAction(value: Double => Boolean): Self = StObject.set(x, "approveAction", js.Any.fromFunction1(value))
   }

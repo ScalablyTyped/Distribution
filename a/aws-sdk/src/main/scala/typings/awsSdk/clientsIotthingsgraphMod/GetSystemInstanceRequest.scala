@@ -18,7 +18,8 @@ object GetSystemInstanceRequest {
     __obj.asInstanceOf[GetSystemInstanceRequest]
   }
   
-  extension [Self <: GetSystemInstanceRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetSystemInstanceRequest] (val x: Self) extends AnyVal {
     
     inline def setId(value: Urn): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
   }

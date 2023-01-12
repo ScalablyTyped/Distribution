@@ -33,7 +33,8 @@ object SeqMapTask {
     __obj.asInstanceOf[SeqMapTask]
   }
   
-  extension [Self <: SeqMapTask](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SeqMapTask] (val x: Self) extends AnyVal {
     
     inline def setInputs(value: js.Array[SideInputInfo]): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object typesContinuousBackupsUnavailableExceptionMod {
       __obj.asInstanceOf[ContinuousBackupsUnavailableException]
     }
     
-    extension [Self <: ContinuousBackupsUnavailableException](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContinuousBackupsUnavailableException] (val x: Self) extends AnyVal {
       
       inline def setName(
         value: typings.awsSdkClientDynamodbBrowser.awsSdkClientDynamodbBrowserStrings.ContinuousBackupsUnavailableException
@@ -45,7 +46,8 @@ object typesContinuousBackupsUnavailableExceptionMod {
       __obj.asInstanceOf[ContinuousBackupsUnavailableExceptionDetails]
     }
     
-    extension [Self <: ContinuousBackupsUnavailableExceptionDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContinuousBackupsUnavailableExceptionDetails] (val x: Self) extends AnyVal {
       
       inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       

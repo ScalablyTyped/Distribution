@@ -30,7 +30,8 @@ object IMotionControllerButtonMeshMap {
     __obj.asInstanceOf[IMotionControllerButtonMeshMap]
   }
   
-  extension [Self <: IMotionControllerButtonMeshMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IMotionControllerButtonMeshMap] (val x: Self) extends AnyVal {
     
     inline def setPressedMesh(value: AbstractMesh): Self = StObject.set(x, "pressedMesh", value.asInstanceOf[js.Any])
     

@@ -43,7 +43,8 @@ object distDeclarationsSrcTypesTransitionMod {
       __obj.asInstanceOf[Change]
     }
     
-    extension [Self <: Change](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Change] (val x: Self) extends AnyVal {
       
       inline def setPayload(value: ControllerUpdate[Lookup[Any], Unit]): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
       
@@ -110,7 +111,8 @@ object distDeclarationsSrcTypesTransitionMod {
       __obj.asInstanceOf[TransitionState[Item, State]]
     }
     
-    extension [Self <: TransitionState[?, ?], Item, State /* <: Lookup[Any] */](x: Self & (TransitionState[Item, State])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TransitionState[?, ?], Item, State /* <: Lookup[Any] */] (val x: Self & (TransitionState[Item, State])) extends AnyVal {
       
       inline def setCtrl(value: Controller[State]): Self = StObject.set(x, "ctrl", value.asInstanceOf[js.Any])
       
@@ -246,7 +248,8 @@ object distDeclarationsSrcTypesTransitionMod {
       __obj.asInstanceOf[UseTransitionProps[Item]]
     }
     
-    extension [Self <: UseTransitionProps[?], Item](x: Self & UseTransitionProps[Item]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UseTransitionProps[?], Item] (val x: Self & UseTransitionProps[Item]) extends AnyVal {
       
       inline def setCancel(
         value: /* import warning: importer.ImportType#apply Failed type conversion: 'cancel' extends keyof {  from :@react-spring/core.@react-spring/core/dist/declarations/src/types/transition.TransitionFrom<Item> | undefined,   initial :@react-spring/core.@react-spring/core/dist/declarations/src/types/transition.TransitionFrom<Item> | undefined,   enter :@react-spring/core.@react-spring/core/dist/declarations/src/types/transition.TransitionTo<Item, @react-spring/types.@react-spring/types/util.Lookup<any>> | undefined,   update :@react-spring/core.@react-spring/core/dist/declarations/src/types/transition.TransitionTo<Item, @react-spring/types.@react-spring/types/util.Lookup<any>> | undefined,   leave :@react-spring/core.@react-spring/core/dist/declarations/src/types/transition.TransitionTo<Item, @react-spring/types.@react-spring/types/util.Lookup<any>> | undefined,   keys :@react-spring/core.@react-spring/core/dist/declarations/src/types/transition.ItemKeys<Item> | undefined,   sort :(a : Item, b : Item): number | undefined,   trail :number | undefined,   exitBeforeEnter :boolean | undefined,   expires :boolean | number | (item : Item): boolean | number | undefined,   config :@react-spring/core.@react-spring/core/dist/declarations/src/types/objects.SpringConfig | (item : Item, index : number, state : @react-spring/core.@react-spring/core/dist/declarations/src/TransitionPhase.TransitionPhase): @react-spring/core.@react-spring/core/dist/declarations/src/types/objects.SpringConfig | (key : @react-spring/core.@react-spring/core/dist/declarations/src/types/common.StringKeys<any>): @react-spring/core.@react-spring/core/dist/declarations/src/types/objects.SpringConfig | undefined | undefined,   onDestroyed :(item : Item, key : @react-spring/core.@react-spring/core/dist/declarations/src/types/transition.Key): void | undefined,   ref :@react-spring/core.@react-spring/core/dist/declarations/src/SpringRef.SpringRef<@react-spring/types.@react-spring/types/util.Lookup<any>> | undefined} ? any | undefined : @react-spring/core.@react-spring/core/dist/declarations/src/types/props.MatchProp<@react-spring/types.@react-spring/types/util.UnknownProps> | undefined | undefined */ js.Any

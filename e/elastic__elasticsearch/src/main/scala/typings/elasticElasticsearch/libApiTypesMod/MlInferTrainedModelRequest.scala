@@ -24,7 +24,8 @@ object MlInferTrainedModelRequest {
     __obj.asInstanceOf[MlInferTrainedModelRequest]
   }
   
-  extension [Self <: MlInferTrainedModelRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlInferTrainedModelRequest] (val x: Self) extends AnyVal {
     
     inline def setDocs(value: js.Array[Record[String, Any]]): Self = StObject.set(x, "docs", value.asInstanceOf[js.Any])
     

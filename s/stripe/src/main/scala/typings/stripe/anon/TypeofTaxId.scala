@@ -15,7 +15,8 @@ object TypeofTaxId {
     __obj.asInstanceOf[TypeofTaxId]
   }
   
-  extension [Self <: TypeofTaxId](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofTaxId] (val x: Self) extends AnyVal {
     
     inline def setVerification(value: Any): Self = StObject.set(x, "Verification", value.asInstanceOf[js.Any])
   }

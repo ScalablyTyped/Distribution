@@ -19,7 +19,8 @@ object ConditionalAccessDevices {
     __obj.asInstanceOf[ConditionalAccessDevices]
   }
   
-  extension [Self <: ConditionalAccessDevices](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConditionalAccessDevices] (val x: Self) extends AnyVal {
     
     inline def setDeviceFilter(value: NullableOption[ConditionalAccessFilter]): Self = StObject.set(x, "deviceFilter", value.asInstanceOf[js.Any])
     

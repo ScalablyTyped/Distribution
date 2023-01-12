@@ -23,7 +23,8 @@ object TieringPolicy {
     __obj.asInstanceOf[TieringPolicy]
   }
   
-  extension [Self <: TieringPolicy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TieringPolicy] (val x: Self) extends AnyVal {
     
     inline def setCoolingPeriod(value: CoolingPeriod): Self = StObject.set(x, "CoolingPeriod", value.asInstanceOf[js.Any])
     

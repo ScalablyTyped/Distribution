@@ -19,7 +19,8 @@ object FirstPartyMobileApplicationTargeting {
     __obj.asInstanceOf[FirstPartyMobileApplicationTargeting]
   }
   
-  extension [Self <: FirstPartyMobileApplicationTargeting](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FirstPartyMobileApplicationTargeting] (val x: Self) extends AnyVal {
     
     inline def setExcludedAppIds(value: js.Array[String]): Self = StObject.set(x, "excludedAppIds", value.asInstanceOf[js.Any])
     

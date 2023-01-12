@@ -18,7 +18,8 @@ object VirtualAccount {
     __obj.asInstanceOf[VirtualAccount]
   }
   
-  extension [Self <: VirtualAccount](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VirtualAccount] (val x: Self) extends AnyVal {
     
     inline def setAccountNumber(
       value: VirtualAccountAccountNumberRequest => js.Promise[AxiosResponse[VirtualAccountAccountNumberResponse, Any]]

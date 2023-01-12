@@ -19,7 +19,8 @@ object MinMaxExtendedOptions {
     __obj.asInstanceOf[MinMaxExtendedOptions]
   }
   
-  extension [Self <: MinMaxExtendedOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MinMaxExtendedOptions] (val x: Self) extends AnyVal {
     
     inline def setGt(value: Double): Self = StObject.set(x, "gt", value.asInstanceOf[js.Any])
     

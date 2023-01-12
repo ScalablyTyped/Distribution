@@ -265,7 +265,8 @@ object libWidgetMod {
         __obj.asInstanceOf[IContentFactory]
       }
       
-      extension [Self <: IContentFactory](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IContentFactory] (val x: Self) extends AnyVal {
         
         inline def setCreateOutputPrompt(value: () => IOutputPrompt): Self = StObject.set(x, "createOutputPrompt", js.Any.fromFunction0(value))
         
@@ -305,7 +306,8 @@ object libWidgetMod {
         __obj.asInstanceOf[IOptions]
       }
       
-      extension [Self <: IOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
         
         inline def setContentFactory(value: IContentFactory): Self = StObject.set(x, "contentFactory", value.asInstanceOf[js.Any])
         
@@ -420,7 +422,8 @@ object libWidgetMod {
         __obj.asInstanceOf[typings.jupyterlabOutputarea.libWidgetMod.Stdin.IOptions]
       }
       
-      extension [Self <: typings.jupyterlabOutputarea.libWidgetMod.Stdin.IOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.jupyterlabOutputarea.libWidgetMod.Stdin.IOptions] (val x: Self) extends AnyVal {
         
         inline def setFuture(value: IShellFuture[IShellMessage[ShellMessageType], IShellMessage[ShellMessageType]]): Self = StObject.set(x, "future", value.asInstanceOf[js.Any])
         

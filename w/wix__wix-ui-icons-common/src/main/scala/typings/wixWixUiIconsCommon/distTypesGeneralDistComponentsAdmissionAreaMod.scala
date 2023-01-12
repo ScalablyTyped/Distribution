@@ -27,7 +27,8 @@ object distTypesGeneralDistComponentsAdmissionAreaMod extends Shortcut {
       __obj.asInstanceOf[AdmissionAreaProps]
     }
     
-    extension [Self <: AdmissionAreaProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AdmissionAreaProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

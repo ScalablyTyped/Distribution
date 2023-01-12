@@ -53,7 +53,8 @@ object IndexedAccessType {
     __obj.asInstanceOf[IndexedAccessType]
   }
   
-  extension [Self <: IndexedAccessType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndexedAccessType] (val x: Self) extends AnyVal {
     
     inline def setConstraint(value: Type): Self = StObject.set(x, "constraint", value.asInstanceOf[js.Any])
     

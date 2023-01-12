@@ -58,7 +58,8 @@ object AllowAddShape {
     __obj.asInstanceOf[AllowAddShape]
   }
   
-  extension [Self <: AllowAddShape](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AllowAddShape] (val x: Self) extends AnyVal {
     
     inline def setAllowAddShape(value: Boolean): Self = StObject.set(x, "allowAddShape", value.asInstanceOf[js.Any])
     

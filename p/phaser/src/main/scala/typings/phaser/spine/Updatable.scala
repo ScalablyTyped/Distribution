@@ -17,7 +17,8 @@ object Updatable {
     __obj.asInstanceOf[Updatable]
   }
   
-  extension [Self <: Updatable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Updatable] (val x: Self) extends AnyVal {
     
     inline def setIsActive(value: () => Boolean): Self = StObject.set(x, "isActive", js.Any.fromFunction0(value))
     

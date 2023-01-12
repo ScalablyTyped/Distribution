@@ -33,7 +33,8 @@ object SCREENSAVEROFF {
     __obj.asInstanceOf[SCREENSAVEROFF]
   }
   
-  extension [Self <: SCREENSAVEROFF](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SCREENSAVEROFF] (val x: Self) extends AnyVal {
     
     inline def setSCREEN_SAVER_OFF(value: `0`): Self = StObject.set(x, "SCREEN_SAVER_OFF", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object RaphaelElementByTechnologyMap {
     __obj.asInstanceOf[RaphaelElementByTechnologyMap[TSvg, TVml]]
   }
   
-  extension [Self <: RaphaelElementByTechnologyMap[?, ?], TSvg /* <: SVGElement */, TVml /* <: VMLElement */](x: Self & (RaphaelElementByTechnologyMap[TSvg, TVml])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RaphaelElementByTechnologyMap[?, ?], TSvg /* <: SVGElement */, TVml /* <: VMLElement */] (val x: Self & (RaphaelElementByTechnologyMap[TSvg, TVml])) extends AnyVal {
     
     inline def setSVG(value: TSvg): Self = StObject.set(x, "SVG", value.asInstanceOf[js.Any])
     

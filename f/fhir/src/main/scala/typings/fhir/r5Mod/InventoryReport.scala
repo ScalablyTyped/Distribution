@@ -86,7 +86,8 @@ object InventoryReport {
     __obj.asInstanceOf[InventoryReport]
   }
   
-  extension [Self <: InventoryReport](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InventoryReport] (val x: Self) extends AnyVal {
     
     inline def setCountType(value: snapshot | difference): Self = StObject.set(x, "countType", value.asInstanceOf[js.Any])
     

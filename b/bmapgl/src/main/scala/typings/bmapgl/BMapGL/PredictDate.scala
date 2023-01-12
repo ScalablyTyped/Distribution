@@ -17,7 +17,8 @@ object PredictDate {
     __obj.asInstanceOf[PredictDate]
   }
   
-  extension [Self <: PredictDate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PredictDate] (val x: Self) extends AnyVal {
     
     inline def setHour(value: Double): Self = StObject.set(x, "hour", value.asInstanceOf[js.Any])
     

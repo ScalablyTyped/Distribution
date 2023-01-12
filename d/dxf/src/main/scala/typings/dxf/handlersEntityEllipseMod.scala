@@ -73,7 +73,8 @@ object handlersEntityEllipseMod {
       __obj.asInstanceOf[EllipseEntityData]
     }
     
-    extension [Self <: EllipseEntityData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EllipseEntityData] (val x: Self) extends AnyVal {
       
       inline def set$INSUNITS(value: UnitTypes): Self = StObject.set(x, "$INSUNITS", value.asInstanceOf[js.Any])
       

@@ -20,7 +20,8 @@ object CommandReturnObject {
     __obj.asInstanceOf[CommandReturnObject]
   }
   
-  extension [Self <: CommandReturnObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CommandReturnObject] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

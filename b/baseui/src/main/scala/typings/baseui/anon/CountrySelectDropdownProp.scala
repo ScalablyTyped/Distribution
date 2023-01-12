@@ -47,7 +47,8 @@ object CountrySelectDropdownProp {
     __obj.asInstanceOf[CountrySelectDropdownProp]
   }
   
-  extension [Self <: CountrySelectDropdownProp](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CountrySelectDropdownProp] (val x: Self) extends AnyVal {
     
     inline def set$country(value: typings.baseui.phoneInputTypesMod.Country): Self = StObject.set(x, "$country", value.asInstanceOf[js.Any])
     

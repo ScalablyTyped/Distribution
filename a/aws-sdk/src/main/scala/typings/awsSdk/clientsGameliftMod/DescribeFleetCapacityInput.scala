@@ -28,7 +28,8 @@ object DescribeFleetCapacityInput {
     __obj.asInstanceOf[DescribeFleetCapacityInput]
   }
   
-  extension [Self <: DescribeFleetCapacityInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeFleetCapacityInput] (val x: Self) extends AnyVal {
     
     inline def setFleetIds(value: FleetIdOrArnList): Self = StObject.set(x, "FleetIds", value.asInstanceOf[js.Any])
     

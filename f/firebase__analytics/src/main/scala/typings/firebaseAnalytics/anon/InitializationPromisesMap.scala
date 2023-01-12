@@ -23,7 +23,8 @@ object InitializationPromisesMap {
     __obj.asInstanceOf[InitializationPromisesMap]
   }
   
-  extension [Self <: InitializationPromisesMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InitializationPromisesMap] (val x: Self) extends AnyVal {
     
     inline def setDynamicConfigPromisesList(value: js.Array[js.Promise[DynamicConfig | MinimalDynamicConfig]]): Self = StObject.set(x, "dynamicConfigPromisesList", value.asInstanceOf[js.Any])
     

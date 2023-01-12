@@ -23,7 +23,8 @@ object HomeDirectoryMapEntry {
     __obj.asInstanceOf[HomeDirectoryMapEntry]
   }
   
-  extension [Self <: HomeDirectoryMapEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HomeDirectoryMapEntry] (val x: Self) extends AnyVal {
     
     inline def setEntry(value: MapEntry): Self = StObject.set(x, "Entry", value.asInstanceOf[js.Any])
     

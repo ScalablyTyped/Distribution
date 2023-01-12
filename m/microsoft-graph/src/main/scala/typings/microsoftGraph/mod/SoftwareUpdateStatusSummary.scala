@@ -60,7 +60,8 @@ object SoftwareUpdateStatusSummary {
     __obj.asInstanceOf[SoftwareUpdateStatusSummary]
   }
   
-  extension [Self <: SoftwareUpdateStatusSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SoftwareUpdateStatusSummary] (val x: Self) extends AnyVal {
     
     inline def setCompliantDeviceCount(value: Double): Self = StObject.set(x, "compliantDeviceCount", value.asInstanceOf[js.Any])
     

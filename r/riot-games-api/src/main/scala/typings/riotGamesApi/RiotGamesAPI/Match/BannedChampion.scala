@@ -17,7 +17,8 @@ object BannedChampion {
     __obj.asInstanceOf[BannedChampion]
   }
   
-  extension [Self <: BannedChampion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BannedChampion] (val x: Self) extends AnyVal {
     
     inline def setChampionId(value: Double): Self = StObject.set(x, "championId", value.asInstanceOf[js.Any])
     

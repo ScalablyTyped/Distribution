@@ -26,7 +26,8 @@ object EnvelopedDataParameters {
     __obj.asInstanceOf[EnvelopedDataParameters]
   }
   
-  extension [Self <: EnvelopedDataParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnvelopedDataParameters] (val x: Self) extends AnyVal {
     
     inline def setEncryptedContentInfo(value: EncryptedContentInfo): Self = StObject.set(x, "encryptedContentInfo", value.asInstanceOf[js.Any])
     

@@ -51,7 +51,8 @@ object mod {
       __obj.asInstanceOf[PostCssCalcOptions]
     }
     
-    extension [Self <: PostCssCalcOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PostCssCalcOptions] (val x: Self) extends AnyVal {
       
       inline def setMediaQueries(value: Boolean): Self = StObject.set(x, "mediaQueries", value.asInstanceOf[js.Any])
       

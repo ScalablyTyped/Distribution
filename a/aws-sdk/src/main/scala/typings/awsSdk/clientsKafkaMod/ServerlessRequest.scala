@@ -27,7 +27,8 @@ object ServerlessRequest {
     __obj.asInstanceOf[ServerlessRequest]
   }
   
-  extension [Self <: ServerlessRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServerlessRequest] (val x: Self) extends AnyVal {
     
     inline def setClientAuthentication(value: ServerlessClientAuthentication): Self = StObject.set(x, "ClientAuthentication", value.asInstanceOf[js.Any])
     

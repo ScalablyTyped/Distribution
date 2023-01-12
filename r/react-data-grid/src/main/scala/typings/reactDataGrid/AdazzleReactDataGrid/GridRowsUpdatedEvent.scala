@@ -53,7 +53,8 @@ object GridRowsUpdatedEvent {
     __obj.asInstanceOf[GridRowsUpdatedEvent[T]]
   }
   
-  extension [Self <: GridRowsUpdatedEvent[?], T](x: Self & GridRowsUpdatedEvent[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GridRowsUpdatedEvent[?], T] (val x: Self & GridRowsUpdatedEvent[T]) extends AnyVal {
     
     inline def setAction(value: cellUpdate | cellDrag | columnFill | copyPaste): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     

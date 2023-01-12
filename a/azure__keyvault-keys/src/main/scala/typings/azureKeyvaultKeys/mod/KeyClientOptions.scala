@@ -27,7 +27,8 @@ object KeyClientOptions {
     __obj.asInstanceOf[KeyClientOptions]
   }
   
-  extension [Self <: KeyClientOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KeyClientOptions] (val x: Self) extends AnyVal {
     
     inline def setDisableChallengeResourceVerification(value: Boolean): Self = StObject.set(x, "disableChallengeResourceVerification", value.asInstanceOf[js.Any])
     

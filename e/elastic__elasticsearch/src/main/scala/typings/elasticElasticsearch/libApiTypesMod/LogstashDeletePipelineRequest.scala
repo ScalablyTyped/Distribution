@@ -17,7 +17,8 @@ object LogstashDeletePipelineRequest {
     __obj.asInstanceOf[LogstashDeletePipelineRequest]
   }
   
-  extension [Self <: LogstashDeletePipelineRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LogstashDeletePipelineRequest] (val x: Self) extends AnyVal {
     
     inline def setId(value: Id): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
   }

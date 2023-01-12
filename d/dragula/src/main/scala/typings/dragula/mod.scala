@@ -86,7 +86,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[DragulaOptions]
     }
     
-    extension [Self <: DragulaOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DragulaOptions] (val x: Self) extends AnyVal {
       
       inline def setAccepts(
         value: (/* el */ js.UndefOr[Element], /* target */ js.UndefOr[Element], /* source */ js.UndefOr[Element], /* sibling */ js.UndefOr[Element]) => Boolean

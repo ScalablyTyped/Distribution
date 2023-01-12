@@ -200,7 +200,8 @@ object StyleUpdateData {
     __obj.asInstanceOf[StyleUpdateData]
   }
   
-  extension [Self <: StyleUpdateData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StyleUpdateData] (val x: Self) extends AnyVal {
     
     inline def setAutoIndent(value: Boolean): Self = StObject.set(x, "autoIndent", value.asInstanceOf[js.Any])
     

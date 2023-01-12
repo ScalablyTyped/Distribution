@@ -83,7 +83,8 @@ object OrBooleanOptionsContext {
     __obj.asInstanceOf[OrBooleanOptionsContext]
   }
   
-  extension [Self <: OrBooleanOptionsContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OrBooleanOptionsContext] (val x: Self) extends AnyVal {
     
     inline def setActionChecker(value: Any | Boolean): Self = StObject.set(x, "actionChecker", value.asInstanceOf[js.Any])
     

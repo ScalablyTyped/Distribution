@@ -54,7 +54,8 @@ object UpdateWorkspaceParams {
     __obj.asInstanceOf[UpdateWorkspaceParams]
   }
   
-  extension [Self <: UpdateWorkspaceParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateWorkspaceParams] (val x: Self) extends AnyVal {
     
     inline def setAppend(value: Boolean): Self = StObject.set(x, "append", value.asInstanceOf[js.Any])
     

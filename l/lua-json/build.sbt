@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "lua-json"
-version := "1.0-dt-20220624Z-4b5384"
+version := "1.0-dt-20220624Z-b87748"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

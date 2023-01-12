@@ -17,7 +17,8 @@ object DeleteWorkloadInput {
     __obj.asInstanceOf[DeleteWorkloadInput]
   }
   
-  extension [Self <: DeleteWorkloadInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteWorkloadInput] (val x: Self) extends AnyVal {
     
     inline def setClientRequestToken(value: ClientRequestToken): Self = StObject.set(x, "ClientRequestToken", value.asInstanceOf[js.Any])
     

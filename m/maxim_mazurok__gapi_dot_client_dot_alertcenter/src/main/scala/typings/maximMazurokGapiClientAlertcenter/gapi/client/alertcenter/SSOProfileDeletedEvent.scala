@@ -16,7 +16,8 @@ object SSOProfileDeletedEvent {
     __obj.asInstanceOf[SSOProfileDeletedEvent]
   }
   
-  extension [Self <: SSOProfileDeletedEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SSOProfileDeletedEvent] (val x: Self) extends AnyVal {
     
     inline def setInboundSsoProfileName(value: String): Self = StObject.set(x, "inboundSsoProfileName", value.asInstanceOf[js.Any])
     

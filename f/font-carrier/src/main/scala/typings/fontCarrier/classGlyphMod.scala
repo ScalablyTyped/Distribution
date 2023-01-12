@@ -61,7 +61,8 @@ object classGlyphMod {
       __obj.asInstanceOf[GlyphOptions]
     }
     
-    extension [Self <: GlyphOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GlyphOptions] (val x: Self) extends AnyVal {
       
       inline def setD(value: String): Self = StObject.set(x, "d", value.asInstanceOf[js.Any])
       

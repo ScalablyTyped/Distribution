@@ -17,7 +17,8 @@ object FieldsNone {
     __obj.asInstanceOf[FieldsNone]
   }
   
-  extension [Self <: FieldsNone](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FieldsNone] (val x: Self) extends AnyVal {
     
     inline def setFields(value: scala.Double): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     

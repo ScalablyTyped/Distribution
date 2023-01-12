@@ -48,7 +48,8 @@ object RespondToAuthChallengeRequest {
     __obj.asInstanceOf[RespondToAuthChallengeRequest]
   }
   
-  extension [Self <: RespondToAuthChallengeRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RespondToAuthChallengeRequest] (val x: Self) extends AnyVal {
     
     inline def setAnalyticsMetadata(value: AnalyticsMetadataType): Self = StObject.set(x, "AnalyticsMetadata", value.asInstanceOf[js.Any])
     

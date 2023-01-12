@@ -77,7 +77,8 @@ object libPathTypesMod {
       __obj.asInstanceOf[LengthFactory]
     }
     
-    extension [Self <: LengthFactory](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LengthFactory] (val x: Self) extends AnyVal {
       
       inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
       
@@ -126,7 +127,8 @@ object libPathTypesMod {
       __obj.asInstanceOf[ParserParams]
     }
     
-    extension [Self <: ParserParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParserParams] (val x: Self) extends AnyVal {
       
       inline def setQx(value: Double): Self = StObject.set(x, "qx", value.asInstanceOf[js.Any])
       
@@ -189,7 +191,8 @@ object libPathTypesMod {
       __obj.asInstanceOf[PathBBox]
     }
     
-    extension [Self <: PathBBox](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PathBBox] (val x: Self) extends AnyVal {
       
       inline def setCx(value: Double): Self = StObject.set(x, "cx", value.asInstanceOf[js.Any])
       
@@ -235,7 +238,8 @@ object libPathTypesMod {
       __obj.asInstanceOf[PathBBoxTotalLength]
     }
     
-    extension [Self <: PathBBoxTotalLength](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PathBBoxTotalLength] (val x: Self) extends AnyVal {
       
       inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     }
@@ -258,7 +262,8 @@ object libPathTypesMod {
       __obj.asInstanceOf[PathLengthFactoryOptions]
     }
     
-    extension [Self <: PathLengthFactoryOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PathLengthFactoryOptions] (val x: Self) extends AnyVal {
       
       inline def setBbox(value: Boolean): Self = StObject.set(x, "bbox", value.asInstanceOf[js.Any])
       
@@ -283,7 +288,8 @@ object libPathTypesMod {
       __obj.asInstanceOf[Point]
     }
     
-    extension [Self <: Point](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Point] (val x: Self) extends AnyVal {
       
       inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
@@ -306,7 +312,8 @@ object libPathTypesMod {
       __obj.asInstanceOf[PointProperties]
     }
     
-    extension [Self <: PointProperties](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PointProperties] (val x: Self) extends AnyVal {
       
       inline def setClosest(value: X): Self = StObject.set(x, "closest", value.asInstanceOf[js.Any])
       
@@ -351,7 +358,8 @@ object libPathTypesMod {
       __obj.asInstanceOf[SegmentLimits]
     }
     
-    extension [Self <: SegmentLimits](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SegmentLimits] (val x: Self) extends AnyVal {
       
       inline def setMax(value: Point): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
       
@@ -382,7 +390,8 @@ object libPathTypesMod {
       __obj.asInstanceOf[SegmentProperties]
     }
     
-    extension [Self <: SegmentProperties](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SegmentProperties] (val x: Self) extends AnyVal {
       
       inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       

@@ -29,7 +29,8 @@ object anon {
       __obj.asInstanceOf[AddWithJSX[StoryFnReturnType]]
     }
     
-    extension [Self <: AddWithJSX[?], StoryFnReturnType](x: Self & AddWithJSX[StoryFnReturnType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AddWithJSX[?], StoryFnReturnType] (val x: Self & AddWithJSX[StoryFnReturnType]) extends AnyVal {
       
       inline def setAddWithJSX(
         value: (/* kind */ String, /* fn */ js.Function0[ReactNode], /* options */ js.UndefOr[AddonParameters]) => StoryApi[StoryFnReturnType]
@@ -60,7 +61,8 @@ object anon {
       __obj.asInstanceOf[ParametersjsxAddonParamet]
     }
     
-    extension [Self <: ParametersjsxAddonParamet](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParametersjsxAddonParamet] (val x: Self) extends AnyVal {
       
       inline def setDocsOnly(value: Boolean): Self = StObject.set(x, "docsOnly", value.asInstanceOf[js.Any])
       

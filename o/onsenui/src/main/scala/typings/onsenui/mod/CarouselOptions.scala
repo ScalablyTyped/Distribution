@@ -19,7 +19,8 @@ object CarouselOptions {
     __obj.asInstanceOf[CarouselOptions]
   }
   
-  extension [Self <: CarouselOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CarouselOptions] (val x: Self) extends AnyVal {
     
     inline def setAnimation(value: String): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     

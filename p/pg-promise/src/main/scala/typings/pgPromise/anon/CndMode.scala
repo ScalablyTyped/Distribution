@@ -20,7 +20,8 @@ object CndMode {
     __obj.asInstanceOf[CndMode]
   }
   
-  extension [Self <: CndMode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CndMode] (val x: Self) extends AnyVal {
     
     inline def setCnd(value: Any): Self = StObject.set(x, "cnd", value.asInstanceOf[js.Any])
     

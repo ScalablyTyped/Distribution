@@ -25,7 +25,8 @@ object ListHITsForQualificationTypeResponse {
     __obj.asInstanceOf[ListHITsForQualificationTypeResponse]
   }
   
-  extension [Self <: ListHITsForQualificationTypeResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListHITsForQualificationTypeResponse] (val x: Self) extends AnyVal {
     
     inline def setHITs(value: HITList): Self = StObject.set(x, "HITs", value.asInstanceOf[js.Any])
     

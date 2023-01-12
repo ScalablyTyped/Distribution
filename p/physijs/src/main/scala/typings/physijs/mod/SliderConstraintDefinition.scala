@@ -39,7 +39,8 @@ object SliderConstraintDefinition {
     __obj.asInstanceOf[SliderConstraintDefinition]
   }
   
-  extension [Self <: SliderConstraintDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SliderConstraintDefinition] (val x: Self) extends AnyVal {
     
     inline def setAxis(value: Vector3): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
     

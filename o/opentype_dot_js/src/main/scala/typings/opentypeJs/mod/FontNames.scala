@@ -56,7 +56,8 @@ object FontNames {
     __obj.asInstanceOf[FontNames]
   }
   
-  extension [Self <: FontNames](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FontNames] (val x: Self) extends AnyVal {
     
     inline def setCopyright(value: LocalizedName): Self = StObject.set(x, "copyright", value.asInstanceOf[js.Any])
     

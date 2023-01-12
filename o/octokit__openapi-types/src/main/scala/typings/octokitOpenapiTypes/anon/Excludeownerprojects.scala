@@ -87,7 +87,8 @@ object Excludeownerprojects {
     __obj.asInstanceOf[Excludeownerprojects]
   }
   
-  extension [Self <: Excludeownerprojects](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Excludeownerprojects] (val x: Self) extends AnyVal {
     
     inline def setArchive_url(value: String): Self = StObject.set(x, "archive_url", value.asInstanceOf[js.Any])
     

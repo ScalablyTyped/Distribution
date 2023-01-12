@@ -35,7 +35,8 @@ object LanguageDetectorAsyncModule {
     __obj.asInstanceOf[LanguageDetectorAsyncModule]
   }
   
-  extension [Self <: LanguageDetectorAsyncModule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LanguageDetectorAsyncModule] (val x: Self) extends AnyVal {
     
     inline def setAsync(value: `true`): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
     

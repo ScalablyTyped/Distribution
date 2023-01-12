@@ -43,7 +43,8 @@ object CreateVirtualRouterInput {
     __obj.asInstanceOf[CreateVirtualRouterInput]
   }
   
-  extension [Self <: CreateVirtualRouterInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateVirtualRouterInput] (val x: Self) extends AnyVal {
     
     inline def setClientToken(value: String): Self = StObject.set(x, "clientToken", value.asInstanceOf[js.Any])
     

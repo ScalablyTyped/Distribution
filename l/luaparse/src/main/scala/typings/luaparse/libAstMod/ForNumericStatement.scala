@@ -27,7 +27,8 @@ object ForNumericStatement {
     __obj.asInstanceOf[ForNumericStatement]
   }
   
-  extension [Self <: ForNumericStatement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ForNumericStatement] (val x: Self) extends AnyVal {
     
     inline def setBody(value: js.Array[Statement]): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

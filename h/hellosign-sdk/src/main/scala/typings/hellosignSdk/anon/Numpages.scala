@@ -21,7 +21,8 @@ object Numpages {
     __obj.asInstanceOf[Numpages]
   }
   
-  extension [Self <: Numpages](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Numpages] (val x: Self) extends AnyVal {
     
     inline def setNum_pages(value: Double): Self = StObject.set(x, "num_pages", value.asInstanceOf[js.Any])
     

@@ -48,7 +48,8 @@ object mod {
       __obj.asInstanceOf[BoxProps]
     }
     
-    extension [Self <: BoxProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BoxProps] (val x: Self) extends AnyVal {
       
       inline def setAs(value: ElementType[Any]): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       

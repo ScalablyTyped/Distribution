@@ -23,7 +23,8 @@ object Setting {
     __obj.asInstanceOf[Setting]
   }
   
-  extension [Self <: Setting](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Setting] (val x: Self) extends AnyVal {
     
     inline def setName(value: DirectoryConfigurationSettingName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     

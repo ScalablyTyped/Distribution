@@ -27,7 +27,8 @@ object SuggestParams {
     __obj.asInstanceOf[SuggestParams]
   }
   
-  extension [Self <: SuggestParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SuggestParams] (val x: Self) extends AnyVal {
     
     inline def setAllowNoIndices(value: Boolean): Self = StObject.set(x, "allowNoIndices", value.asInstanceOf[js.Any])
     

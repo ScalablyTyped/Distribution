@@ -19,7 +19,8 @@ object GetBucketOpts {
     __obj.asInstanceOf[GetBucketOpts]
   }
   
-  extension [Self <: GetBucketOpts](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetBucketOpts] (val x: Self) extends AnyVal {
     
     inline def setBucketId(value: String): Self = StObject.set(x, "bucketId", value.asInstanceOf[js.Any])
     

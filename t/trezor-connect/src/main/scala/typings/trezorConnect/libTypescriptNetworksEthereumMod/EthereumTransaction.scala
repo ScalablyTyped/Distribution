@@ -42,7 +42,8 @@ object EthereumTransaction {
     __obj.asInstanceOf[EthereumTransaction]
   }
   
-  extension [Self <: EthereumTransaction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EthereumTransaction] (val x: Self) extends AnyVal {
     
     inline def setChainId(value: Double): Self = StObject.set(x, "chainId", value.asInstanceOf[js.Any])
     

@@ -196,7 +196,8 @@ object dxTreeView {
       __obj.asInstanceOf[ExplicitTypes[TKey]]
     }
     
-    extension [Self <: ExplicitTypes[?], TKey](x: Self & ExplicitTypes[TKey]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExplicitTypes[?], TKey] (val x: Self & ExplicitTypes[TKey]) extends AnyVal {
       
       inline def setContentReadyEvent(value: ContentReadyEvent[TKey]): Self = StObject.set(x, "ContentReadyEvent", value.asInstanceOf[js.Any])
       
@@ -314,7 +315,8 @@ object dxTreeView {
       __obj.asInstanceOf[ItemInfo[TKey]]
     }
     
-    extension [Self <: ItemInfo[?], TKey](x: Self & ItemInfo[TKey]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ItemInfo[?], TKey] (val x: Self & ItemInfo[TKey]) extends AnyVal {
       
       inline def setItemData(value: Item): Self = StObject.set(x, "itemData", value.asInstanceOf[js.Any])
       
@@ -499,7 +501,8 @@ object dxTreeView {
       __obj.asInstanceOf[Scrollable]
     }
     
-    extension [Self <: Scrollable](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Scrollable] (val x: Self) extends AnyVal {
       
       inline def set$element(value: () => UserDefinedElement[Element]): Self = StObject.set(x, "$element", js.Any.fromFunction0(value))
       
@@ -560,7 +563,8 @@ object dxTreeView {
       __obj.asInstanceOf[SelectAllValueChangedEvent[TKey]]
     }
     
-    extension [Self <: SelectAllValueChangedEvent[?], TKey](x: Self & SelectAllValueChangedEvent[TKey]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SelectAllValueChangedEvent[?], TKey] (val x: Self & SelectAllValueChangedEvent[TKey]) extends AnyVal {
       
       inline def setValue(value: Boolean): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       

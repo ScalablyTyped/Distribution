@@ -20,7 +20,8 @@ object DistributionPointJson {
     __obj.asInstanceOf[DistributionPointJson]
   }
   
-  extension [Self <: DistributionPointJson](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DistributionPointJson] (val x: Self) extends AnyVal {
     
     inline def setCRLIssuer(value: js.Array[GeneralNameJson]): Self = StObject.set(x, "cRLIssuer", value.asInstanceOf[js.Any])
     

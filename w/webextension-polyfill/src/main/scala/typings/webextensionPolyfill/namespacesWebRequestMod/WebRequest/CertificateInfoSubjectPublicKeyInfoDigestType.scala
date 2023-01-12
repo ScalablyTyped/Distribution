@@ -15,7 +15,8 @@ object CertificateInfoSubjectPublicKeyInfoDigestType {
     __obj.asInstanceOf[CertificateInfoSubjectPublicKeyInfoDigestType]
   }
   
-  extension [Self <: CertificateInfoSubjectPublicKeyInfoDigestType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CertificateInfoSubjectPublicKeyInfoDigestType] (val x: Self) extends AnyVal {
     
     inline def setSha256(value: String): Self = StObject.set(x, "sha256", value.asInstanceOf[js.Any])
   }

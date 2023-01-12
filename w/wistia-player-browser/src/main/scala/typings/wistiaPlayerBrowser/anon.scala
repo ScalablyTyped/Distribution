@@ -21,7 +21,8 @@ object anon {
       __obj.asInstanceOf[After]
     }
     
-    extension [Self <: After](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: After] (val x: Self) extends AnyVal {
       
       inline def setAfter(value: String): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
       
@@ -48,7 +49,8 @@ object anon {
       __obj.asInstanceOf[ClickToPlayButton]
     }
     
-    extension [Self <: ClickToPlayButton](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClickToPlayButton] (val x: Self) extends AnyVal {
       
       inline def setClickToPlayButton(value: Boolean): Self = StObject.set(x, "clickToPlayButton", value.asInstanceOf[js.Any])
     }
@@ -69,7 +71,8 @@ object anon {
       __obj.asInstanceOf[Fov]
     }
     
-    extension [Self <: Fov](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Fov] (val x: Self) extends AnyVal {
       
       inline def setFov(value: Double): Self = StObject.set(x, "fov", value.asInstanceOf[js.Any])
       
@@ -98,7 +101,8 @@ object anon {
       __obj.asInstanceOf[Language]
     }
     
-    extension [Self <: Language](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Language] (val x: Self) extends AnyVal {
       
       inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
       
@@ -123,7 +127,8 @@ object anon {
       __obj.asInstanceOf[MaxHeight]
     }
     
-    extension [Self <: MaxHeight](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MaxHeight] (val x: Self) extends AnyVal {
       
       inline def setMaxHeight(value: Double): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
       

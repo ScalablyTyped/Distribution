@@ -33,7 +33,8 @@ object CompletionEntryDetails {
     __obj.asInstanceOf[CompletionEntryDetails]
   }
   
-  extension [Self <: CompletionEntryDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CompletionEntryDetails] (val x: Self) extends AnyVal {
     
     inline def setDocComment(value: String): Self = StObject.set(x, "docComment", value.asInstanceOf[js.Any])
     

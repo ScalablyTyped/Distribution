@@ -17,7 +17,8 @@ object SearchRescore {
     __obj.asInstanceOf[SearchRescore]
   }
   
-  extension [Self <: SearchRescore](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchRescore] (val x: Self) extends AnyVal {
     
     inline def setQuery(value: SearchRescoreQuery): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     

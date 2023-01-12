@@ -23,7 +23,8 @@ object DescribeEnvironmentManagedActionHistoryResult {
     __obj.asInstanceOf[DescribeEnvironmentManagedActionHistoryResult]
   }
   
-  extension [Self <: DescribeEnvironmentManagedActionHistoryResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeEnvironmentManagedActionHistoryResult] (val x: Self) extends AnyVal {
     
     inline def setManagedActionHistoryItems(value: ManagedActionHistoryItems): Self = StObject.set(x, "ManagedActionHistoryItems", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object ZoomProps {
     __obj.asInstanceOf[ZoomProps]
   }
   
-  extension [Self <: ZoomProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ZoomProps] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: ReactElement | js.Array[ReactElement]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

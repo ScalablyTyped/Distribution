@@ -18,7 +18,8 @@ object DeploymentTest {
     __obj.asInstanceOf[DeploymentTest]
   }
   
-  extension [Self <: DeploymentTest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeploymentTest] (val x: Self) extends AnyVal {
     
     inline def setRunId(value: Double): Self = StObject.set(x, "runId", value.asInstanceOf[js.Any])
   }

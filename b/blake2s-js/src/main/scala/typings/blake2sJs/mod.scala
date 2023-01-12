@@ -92,7 +92,8 @@ object mod {
       __obj.asInstanceOf[BLAKE2sConfig]
     }
     
-    extension [Self <: BLAKE2sConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BLAKE2sConfig] (val x: Self) extends AnyVal {
       
       inline def setKey(value: ByteArray): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       

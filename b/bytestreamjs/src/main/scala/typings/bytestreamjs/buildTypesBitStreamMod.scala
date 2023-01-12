@@ -389,7 +389,8 @@ object buildTypesBitStreamMod {
       __obj.asInstanceOf[BitStreamBufferParameters]
     }
     
-    extension [Self <: BitStreamBufferParameters](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BitStreamBufferParameters] (val x: Self) extends AnyVal {
       
       inline def setBitsCount(value: Double): Self = StObject.set(x, "bitsCount", value.asInstanceOf[js.Any])
       
@@ -450,7 +451,8 @@ object buildTypesBitStreamMod {
       __obj.asInstanceOf[BitStreamStreamParameters]
     }
     
-    extension [Self <: BitStreamStreamParameters](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BitStreamStreamParameters] (val x: Self) extends AnyVal {
       
       inline def setBitsCount(value: Double): Self = StObject.set(x, "bitsCount", value.asInstanceOf[js.Any])
       
@@ -475,7 +477,8 @@ object buildTypesBitStreamMod {
       __obj.asInstanceOf[BitStreamStringParameters]
     }
     
-    extension [Self <: BitStreamStringParameters](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BitStreamStringParameters] (val x: Self) extends AnyVal {
       
       inline def setBitsCount(value: Double): Self = StObject.set(x, "bitsCount", value.asInstanceOf[js.Any])
       
@@ -500,7 +503,8 @@ object buildTypesBitStreamMod {
       __obj.asInstanceOf[BitStreamUint32Parameters]
     }
     
-    extension [Self <: BitStreamUint32Parameters](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BitStreamUint32Parameters] (val x: Self) extends AnyVal {
       
       inline def setBitsCount(value: Double): Self = StObject.set(x, "bitsCount", value.asInstanceOf[js.Any])
       
@@ -525,7 +529,8 @@ object buildTypesBitStreamMod {
       __obj.asInstanceOf[BitStreamViewParameters]
     }
     
-    extension [Self <: BitStreamViewParameters](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BitStreamViewParameters] (val x: Self) extends AnyVal {
       
       inline def setBitsCount(value: Double): Self = StObject.set(x, "bitsCount", value.asInstanceOf[js.Any])
       

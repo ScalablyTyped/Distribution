@@ -78,7 +78,8 @@ object DeviceUdi {
     __obj.asInstanceOf[DeviceUdi]
   }
   
-  extension [Self <: DeviceUdi](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeviceUdi] (val x: Self) extends AnyVal {
     
     inline def setCarrierAIDC(value: String): Self = StObject.set(x, "carrierAIDC", value.asInstanceOf[js.Any])
     

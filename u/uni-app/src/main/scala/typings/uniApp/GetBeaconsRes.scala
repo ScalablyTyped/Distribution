@@ -23,7 +23,8 @@ object GetBeaconsRes {
     __obj.asInstanceOf[GetBeaconsRes]
   }
   
-  extension [Self <: GetBeaconsRes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetBeaconsRes] (val x: Self) extends AnyVal {
     
     inline def setBeacons(value: js.Array[Beacon]): Self = StObject.set(x, "beacons", value.asInstanceOf[js.Any])
     

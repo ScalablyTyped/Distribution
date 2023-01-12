@@ -53,7 +53,8 @@ object DashboardExcelExportOptions {
     __obj.asInstanceOf[DashboardExcelExportOptions]
   }
   
-  extension [Self <: DashboardExcelExportOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DashboardExcelExportOptions] (val x: Self) extends AnyVal {
     
     inline def setCsvValueSeparator(value: String): Self = StObject.set(x, "CsvValueSeparator", value.asInstanceOf[js.Any])
     

@@ -33,7 +33,8 @@ object StackCardInterpolatedStyle {
     __obj.asInstanceOf[StackCardInterpolatedStyle]
   }
   
-  extension [Self <: StackCardInterpolatedStyle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StackCardInterpolatedStyle] (val x: Self) extends AnyVal {
     
     inline def setCardStyle(value: Any): Self = StObject.set(x, "cardStyle", value.asInstanceOf[js.Any])
     

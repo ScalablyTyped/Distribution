@@ -24,7 +24,8 @@ object DescribeMultiplexRequestw {
     __obj.asInstanceOf[DescribeMultiplexRequestw]
   }
   
-  extension [Self <: DescribeMultiplexRequestw](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeMultiplexRequestw] (val x: Self) extends AnyVal {
     
     inline def set$waiter(value: WaiterConfiguration): Self = StObject.set(x, "$waiter", value.asInstanceOf[js.Any])
     

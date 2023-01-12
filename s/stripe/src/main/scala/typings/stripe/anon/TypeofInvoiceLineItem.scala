@@ -15,7 +15,8 @@ object TypeofInvoiceLineItem {
     __obj.asInstanceOf[TypeofInvoiceLineItem]
   }
   
-  extension [Self <: TypeofInvoiceLineItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofInvoiceLineItem] (val x: Self) extends AnyVal {
     
     inline def setProrationDetails(value: Any): Self = StObject.set(x, "ProrationDetails", value.asInstanceOf[js.Any])
   }

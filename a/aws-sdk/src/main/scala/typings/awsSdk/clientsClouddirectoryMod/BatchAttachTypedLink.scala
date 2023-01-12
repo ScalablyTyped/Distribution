@@ -38,7 +38,8 @@ object BatchAttachTypedLink {
     __obj.asInstanceOf[BatchAttachTypedLink]
   }
   
-  extension [Self <: BatchAttachTypedLink](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchAttachTypedLink] (val x: Self) extends AnyVal {
     
     inline def setAttributes(value: AttributeNameAndValueList): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
     

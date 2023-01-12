@@ -75,7 +75,8 @@ object libPageHeaderMod {
       __obj.asInstanceOf[PageHeaderProps]
     }
     
-    extension [Self <: PageHeaderProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PageHeaderProps] (val x: Self) extends AnyVal {
       
       inline def setAction(value: ReactNode | String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       

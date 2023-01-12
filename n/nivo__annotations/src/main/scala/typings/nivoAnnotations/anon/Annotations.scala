@@ -19,7 +19,8 @@ object Annotations {
     __obj.asInstanceOf[Annotations[Datum]]
   }
   
-  extension [Self <: Annotations[?], Datum](x: Self & Annotations[Datum]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Annotations[?], Datum] (val x: Self & Annotations[Datum]) extends AnyVal {
     
     inline def setAnnotations(value: js.Array[ComputedAnnotation[Datum]]): Self = StObject.set(x, "annotations", value.asInstanceOf[js.Any])
     

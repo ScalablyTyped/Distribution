@@ -18,7 +18,8 @@ object GetTransitGatewayRouteTableAttachmentResponse {
     __obj.asInstanceOf[GetTransitGatewayRouteTableAttachmentResponse]
   }
   
-  extension [Self <: GetTransitGatewayRouteTableAttachmentResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetTransitGatewayRouteTableAttachmentResponse] (val x: Self) extends AnyVal {
     
     inline def setTransitGatewayRouteTableAttachment(value: TransitGatewayRouteTableAttachment): Self = StObject.set(x, "TransitGatewayRouteTableAttachment", value.asInstanceOf[js.Any])
     

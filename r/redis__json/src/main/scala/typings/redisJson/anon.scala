@@ -34,7 +34,8 @@ object anon {
       __obj.asInstanceOf[TypeofARRAPPEND]
     }
     
-    extension [Self <: TypeofARRAPPEND](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypeofARRAPPEND] (val x: Self) extends AnyVal {
       
       inline def setFIRST_KEY_INDEX(value: /* 1 */ Double): Self = StObject.set(x, "FIRST_KEY_INDEX", value.asInstanceOf[js.Any])
       
@@ -78,7 +79,8 @@ object anon {
       __obj.asInstanceOf[TypeofARRINSERT]
     }
     
-    extension [Self <: TypeofARRINSERT](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypeofARRINSERT] (val x: Self) extends AnyVal {
       
       inline def setFIRST_KEY_INDEX(value: /* 1 */ Double): Self = StObject.set(x, "FIRST_KEY_INDEX", value.asInstanceOf[js.Any])
       
@@ -135,7 +137,8 @@ object anon {
       __obj.asInstanceOf[TypeofARRTRIM]
     }
     
-    extension [Self <: TypeofARRTRIM](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypeofARRTRIM] (val x: Self) extends AnyVal {
       
       inline def setFIRST_KEY_INDEX(value: /* 1 */ Double): Self = StObject.set(x, "FIRST_KEY_INDEX", value.asInstanceOf[js.Any])
       
@@ -211,7 +214,8 @@ object anon {
       __obj.asInstanceOf[TypeofMGET]
     }
     
-    extension [Self <: TypeofMGET](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypeofMGET] (val x: Self) extends AnyVal {
       
       inline def setFIRST_KEY_INDEX(value: /* 1 */ Double): Self = StObject.set(x, "FIRST_KEY_INDEX", value.asInstanceOf[js.Any])
       
@@ -240,7 +244,8 @@ object anon {
       __obj.asInstanceOf[TypeofNUMINCRBY]
     }
     
-    extension [Self <: TypeofNUMINCRBY](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypeofNUMINCRBY] (val x: Self) extends AnyVal {
       
       inline def setFIRST_KEY_INDEX(value: /* 1 */ Double): Self = StObject.set(x, "FIRST_KEY_INDEX", value.asInstanceOf[js.Any])
       
@@ -269,7 +274,8 @@ object anon {
       __obj.asInstanceOf[TypeofNUMMULTBY]
     }
     
-    extension [Self <: TypeofNUMMULTBY](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypeofNUMMULTBY] (val x: Self) extends AnyVal {
       
       inline def setFIRST_KEY_INDEX(value: /* 1 */ Double): Self = StObject.set(x, "FIRST_KEY_INDEX", value.asInstanceOf[js.Any])
       

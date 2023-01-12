@@ -17,7 +17,8 @@ object HashtagEntity {
     __obj.asInstanceOf[HashtagEntity]
   }
   
-  extension [Self <: HashtagEntity](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HashtagEntity] (val x: Self) extends AnyVal {
     
     inline def setIndices(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "indices", value.asInstanceOf[js.Any])
     

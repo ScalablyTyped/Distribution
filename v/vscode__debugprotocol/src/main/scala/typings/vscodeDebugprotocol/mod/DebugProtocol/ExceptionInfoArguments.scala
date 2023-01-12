@@ -17,7 +17,8 @@ object ExceptionInfoArguments {
     __obj.asInstanceOf[ExceptionInfoArguments]
   }
   
-  extension [Self <: ExceptionInfoArguments](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExceptionInfoArguments] (val x: Self) extends AnyVal {
     
     inline def setThreadId(value: Double): Self = StObject.set(x, "threadId", value.asInstanceOf[js.Any])
   }

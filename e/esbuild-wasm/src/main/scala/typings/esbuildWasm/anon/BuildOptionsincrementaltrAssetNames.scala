@@ -228,7 +228,8 @@ object BuildOptionsincrementaltrAssetNames {
     __obj.asInstanceOf[BuildOptionsincrementaltrAssetNames]
   }
   
-  extension [Self <: BuildOptionsincrementaltrAssetNames](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BuildOptionsincrementaltrAssetNames] (val x: Self) extends AnyVal {
     
     inline def setAbsWorkingDir(value: String): Self = StObject.set(x, "absWorkingDir", value.asInstanceOf[js.Any])
     

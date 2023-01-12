@@ -33,7 +33,8 @@ object translateMarkerOptions {
     __obj.asInstanceOf[translateMarkerOptions]
   }
   
-  extension [Self <: translateMarkerOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: translateMarkerOptions] (val x: Self) extends AnyVal {
     
     inline def setAnimationEnd(value: () => Unit): Self = StObject.set(x, "animationEnd", js.Any.fromFunction0(value))
     

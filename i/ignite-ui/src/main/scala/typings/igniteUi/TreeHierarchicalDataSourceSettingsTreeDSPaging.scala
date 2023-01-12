@@ -38,7 +38,8 @@ object TreeHierarchicalDataSourceSettingsTreeDSPaging {
     __obj.asInstanceOf[TreeHierarchicalDataSourceSettingsTreeDSPaging]
   }
   
-  extension [Self <: TreeHierarchicalDataSourceSettingsTreeDSPaging](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TreeHierarchicalDataSourceSettingsTreeDSPaging] (val x: Self) extends AnyVal {
     
     inline def setContextRowMode(value: String): Self = StObject.set(x, "contextRowMode", value.asInstanceOf[js.Any])
     

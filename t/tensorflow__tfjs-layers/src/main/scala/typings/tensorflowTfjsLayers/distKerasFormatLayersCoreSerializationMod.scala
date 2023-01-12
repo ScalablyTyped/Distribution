@@ -38,7 +38,8 @@ object distKerasFormatLayersCoreSerializationMod {
       __obj.asInstanceOf[ActivationLayerConfig]
     }
     
-    extension [Self <: ActivationLayerConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ActivationLayerConfig] (val x: Self) extends AnyVal {
       
       inline def setActivation(value: ActivationSerialization): Self = StObject.set(x, "activation", value.asInstanceOf[js.Any])
     }
@@ -112,7 +113,8 @@ object distKerasFormatLayersCoreSerializationMod {
       __obj.asInstanceOf[DenseLayerConfig]
     }
     
-    extension [Self <: DenseLayerConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DenseLayerConfig] (val x: Self) extends AnyVal {
       
       inline def setActivation(value: ActivationSerialization): Self = StObject.set(x, "activation", value.asInstanceOf[js.Any])
       
@@ -177,7 +179,8 @@ object distKerasFormatLayersCoreSerializationMod {
       __obj.asInstanceOf[DropoutLayerConfig]
     }
     
-    extension [Self <: DropoutLayerConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DropoutLayerConfig] (val x: Self) extends AnyVal {
       
       inline def setNoise_shape(value: js.Array[Double]): Self = StObject.set(x, "noise_shape", value.asInstanceOf[js.Any])
       
@@ -210,7 +213,8 @@ object distKerasFormatLayersCoreSerializationMod {
       __obj.asInstanceOf[MaskingLayerConfig]
     }
     
-    extension [Self <: MaskingLayerConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MaskingLayerConfig] (val x: Self) extends AnyVal {
       
       inline def setMaskValue(value: Double): Self = StObject.set(x, "maskValue", value.asInstanceOf[js.Any])
     }
@@ -231,7 +235,8 @@ object distKerasFormatLayersCoreSerializationMod {
       __obj.asInstanceOf[PermuteLayerConfig]
     }
     
-    extension [Self <: PermuteLayerConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PermuteLayerConfig] (val x: Self) extends AnyVal {
       
       inline def setDims(value: js.Array[Double]): Self = StObject.set(x, "dims", value.asInstanceOf[js.Any])
       
@@ -254,7 +259,8 @@ object distKerasFormatLayersCoreSerializationMod {
       __obj.asInstanceOf[RepeatVectorLayerConfig]
     }
     
-    extension [Self <: RepeatVectorLayerConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RepeatVectorLayerConfig] (val x: Self) extends AnyVal {
       
       inline def setN(value: Double): Self = StObject.set(x, "n", value.asInstanceOf[js.Any])
     }
@@ -275,7 +281,8 @@ object distKerasFormatLayersCoreSerializationMod {
       __obj.asInstanceOf[ReshapeLayerConfig]
     }
     
-    extension [Self <: ReshapeLayerConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReshapeLayerConfig] (val x: Self) extends AnyVal {
       
       inline def setTarget_shape(value: Shape): Self = StObject.set(x, "target_shape", value.asInstanceOf[js.Any])
       

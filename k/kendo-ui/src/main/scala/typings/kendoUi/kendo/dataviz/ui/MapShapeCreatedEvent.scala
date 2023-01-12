@@ -23,7 +23,8 @@ object MapShapeCreatedEvent {
     __obj.asInstanceOf[MapShapeCreatedEvent]
   }
   
-  extension [Self <: MapShapeCreatedEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MapShapeCreatedEvent] (val x: Self) extends AnyVal {
     
     inline def setLayer(value: Shape): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
     

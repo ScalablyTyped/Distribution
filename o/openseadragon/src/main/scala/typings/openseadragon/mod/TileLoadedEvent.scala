@@ -31,7 +31,8 @@ object TileLoadedEvent {
     __obj.asInstanceOf[TileLoadedEvent]
   }
   
-  extension [Self <: TileLoadedEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TileLoadedEvent] (val x: Self) extends AnyVal {
     
     inline def setGetCompletionCallback(value: () => js.Function0[Unit]): Self = StObject.set(x, "getCompletionCallback", js.Any.fromFunction0(value))
     

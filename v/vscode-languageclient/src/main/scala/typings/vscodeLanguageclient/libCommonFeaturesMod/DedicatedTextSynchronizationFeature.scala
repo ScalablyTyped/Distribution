@@ -16,7 +16,8 @@ object DedicatedTextSynchronizationFeature {
     __obj.asInstanceOf[DedicatedTextSynchronizationFeature]
   }
   
-  extension [Self <: DedicatedTextSynchronizationFeature](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DedicatedTextSynchronizationFeature] (val x: Self) extends AnyVal {
     
     inline def setHandles(value: TextDocument => Boolean): Self = StObject.set(x, "handles", js.Any.fromFunction1(value))
   }

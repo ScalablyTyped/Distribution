@@ -21,7 +21,8 @@ object OtherCanMangleProvide {
     __obj.asInstanceOf[OtherCanMangleProvide]
   }
   
-  extension [Self <: OtherCanMangleProvide](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OtherCanMangleProvide] (val x: Self) extends AnyVal {
     
     inline def setExports(value: Any): Self = StObject.set(x, "exports", value.asInstanceOf[js.Any])
     

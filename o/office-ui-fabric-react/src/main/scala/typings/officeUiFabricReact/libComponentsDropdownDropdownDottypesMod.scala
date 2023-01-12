@@ -94,7 +94,8 @@ object libComponentsDropdownDropdownDottypesMod {
       __obj.asInstanceOf[IDropdownOption]
     }
     
-    extension [Self <: IDropdownOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDropdownOption] (val x: Self) extends AnyVal {
       
       inline def setIsSelected(value: Boolean): Self = StObject.set(x, "isSelected", value.asInstanceOf[js.Any])
       
@@ -231,7 +232,8 @@ object libComponentsDropdownDropdownDottypesMod {
       __obj.asInstanceOf[IDropdownProps]
     }
     
-    extension [Self <: IDropdownProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDropdownProps] (val x: Self) extends AnyVal {
       
       inline def setDefaultSelectedKeys(value: js.Array[Double | String]): Self = StObject.set(x, "defaultSelectedKeys", value.asInstanceOf[js.Any])
       
@@ -380,7 +382,8 @@ object libComponentsDropdownDropdownDottypesMod {
       __obj.asInstanceOf[IDropdownStyleProps]
     }
     
-    extension [Self <: IDropdownStyleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDropdownStyleProps] (val x: Self) extends AnyVal {
       
       inline def setCalloutClassName(value: String): Self = StObject.set(x, "calloutClassName", value.asInstanceOf[js.Any])
       
@@ -495,7 +498,8 @@ object libComponentsDropdownDropdownDottypesMod {
       __obj.asInstanceOf[IDropdownStyles]
     }
     
-    extension [Self <: IDropdownStyles](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDropdownStyles] (val x: Self) extends AnyVal {
       
       inline def setCallout(value: IStyle): Self = StObject.set(x, "callout", value.asInstanceOf[js.Any])
       
@@ -637,7 +641,8 @@ object libComponentsDropdownDropdownDottypesMod {
       __obj.asInstanceOf[IDropdownSubComponentStyles]
     }
     
-    extension [Self <: IDropdownSubComponentStyles](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDropdownSubComponentStyles] (val x: Self) extends AnyVal {
       
       inline def setLabel(value: IStyleFunctionOrObject[ILabelStyleProps, ILabelStyles]): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       

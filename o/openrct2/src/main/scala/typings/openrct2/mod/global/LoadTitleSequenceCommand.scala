@@ -21,7 +21,8 @@ object LoadTitleSequenceCommand {
     __obj.asInstanceOf[LoadTitleSequenceCommand]
   }
   
-  extension [Self <: LoadTitleSequenceCommand](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LoadTitleSequenceCommand] (val x: Self) extends AnyVal {
     
     inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     

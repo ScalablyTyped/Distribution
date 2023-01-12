@@ -19,7 +19,8 @@ object ICanvasGradient {
     __obj.asInstanceOf[ICanvasGradient]
   }
   
-  extension [Self <: ICanvasGradient](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICanvasGradient] (val x: Self) extends AnyVal {
     
     inline def setAddColorStop(value: (Double, String) => Unit): Self = StObject.set(x, "addColorStop", js.Any.fromFunction2(value))
     

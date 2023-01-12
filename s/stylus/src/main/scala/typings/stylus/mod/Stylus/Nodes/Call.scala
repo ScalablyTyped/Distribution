@@ -36,7 +36,8 @@ object Call {
     __obj.asInstanceOf[Call]
   }
   
-  extension [Self <: Call](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Call] (val x: Self) extends AnyVal {
     
     inline def setArgs(value: Expression): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     

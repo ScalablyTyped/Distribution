@@ -28,7 +28,8 @@ object CreateBackendStorageResourceConfig {
     __obj.asInstanceOf[CreateBackendStorageResourceConfig]
   }
   
-  extension [Self <: CreateBackendStorageResourceConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateBackendStorageResourceConfig] (val x: Self) extends AnyVal {
     
     inline def setBucketName(value: string): Self = StObject.set(x, "BucketName", value.asInstanceOf[js.Any])
     

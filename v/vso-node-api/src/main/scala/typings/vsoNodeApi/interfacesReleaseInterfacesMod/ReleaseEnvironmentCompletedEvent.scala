@@ -54,7 +54,8 @@ object ReleaseEnvironmentCompletedEvent {
     __obj.asInstanceOf[ReleaseEnvironmentCompletedEvent]
   }
   
-  extension [Self <: ReleaseEnvironmentCompletedEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReleaseEnvironmentCompletedEvent] (val x: Self) extends AnyVal {
     
     inline def setCreatedByName(value: String): Self = StObject.set(x, "createdByName", value.asInstanceOf[js.Any])
     

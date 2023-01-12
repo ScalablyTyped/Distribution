@@ -57,7 +57,8 @@ object libShapesEllipseMod {
       __obj.asInstanceOf[EllipseConfig]
     }
     
-    extension [Self <: EllipseConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EllipseConfig] (val x: Self) extends AnyVal {
       
       inline def setRadiusX(value: Double): Self = StObject.set(x, "radiusX", value.asInstanceOf[js.Any])
       

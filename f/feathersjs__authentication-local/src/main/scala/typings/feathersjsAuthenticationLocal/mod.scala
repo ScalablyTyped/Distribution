@@ -165,7 +165,8 @@ object mod {
       __obj.asInstanceOf[FeathersAuthenticationLocalOptions]
     }
     
-    extension [Self <: FeathersAuthenticationLocalOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FeathersAuthenticationLocalOptions] (val x: Self) extends AnyVal {
       
       inline def setEntity(value: String): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
       

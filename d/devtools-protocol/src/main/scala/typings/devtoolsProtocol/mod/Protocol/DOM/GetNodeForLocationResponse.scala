@@ -29,7 +29,8 @@ object GetNodeForLocationResponse {
     __obj.asInstanceOf[GetNodeForLocationResponse]
   }
   
-  extension [Self <: GetNodeForLocationResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetNodeForLocationResponse] (val x: Self) extends AnyVal {
     
     inline def setBackendNodeId(value: BackendNodeId): Self = StObject.set(x, "backendNodeId", value.asInstanceOf[js.Any])
     

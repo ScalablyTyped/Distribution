@@ -60,7 +60,8 @@ object XYPlotProps {
     __obj.asInstanceOf[XYPlotProps]
   }
   
-  extension [Self <: XYPlotProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XYPlotProps] (val x: Self) extends AnyVal {
     
     inline def setAnimation(value: String | AnimationParam | Boolean): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     

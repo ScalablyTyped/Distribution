@@ -51,7 +51,8 @@ object HyperCubeDef {
     __obj.asInstanceOf[HyperCubeDef]
   }
   
-  extension [Self <: HyperCubeDef](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HyperCubeDef] (val x: Self) extends AnyVal {
     
     inline def setQAlwaysFullyExpanded(value: Boolean): Self = StObject.set(x, "qAlwaysFullyExpanded", value.asInstanceOf[js.Any])
     

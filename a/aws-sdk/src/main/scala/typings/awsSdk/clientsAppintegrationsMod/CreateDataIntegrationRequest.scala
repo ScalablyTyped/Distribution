@@ -48,7 +48,8 @@ object CreateDataIntegrationRequest {
     __obj.asInstanceOf[CreateDataIntegrationRequest]
   }
   
-  extension [Self <: CreateDataIntegrationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateDataIntegrationRequest] (val x: Self) extends AnyVal {
     
     inline def setClientToken(value: IdempotencyToken): Self = StObject.set(x, "ClientToken", value.asInstanceOf[js.Any])
     

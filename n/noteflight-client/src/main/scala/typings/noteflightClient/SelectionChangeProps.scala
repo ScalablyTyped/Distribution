@@ -64,7 +64,8 @@ object SelectionChangeProps {
     __obj.asInstanceOf[SelectionChangeProps]
   }
   
-  extension [Self <: SelectionChangeProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SelectionChangeProps] (val x: Self) extends AnyVal {
     
     inline def setEndIndex(value: Double): Self = StObject.set(x, "endIndex", value.asInstanceOf[js.Any])
     

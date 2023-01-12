@@ -29,7 +29,8 @@ object MailMergeEvent {
     __obj.asInstanceOf[MailMergeEvent]
   }
   
-  extension [Self <: MailMergeEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MailMergeEvent] (val x: Self) extends AnyVal {
     
     inline def setModel(value: XModel): Self = StObject.set(x, "Model", value.asInstanceOf[js.Any])
   }

@@ -109,7 +109,8 @@ object libComponentsMarqueeSelectionMarqueeSelectionDotbaseMod {
       __obj.asInstanceOf[IMarqueeSelectionState]
     }
     
-    extension [Self <: IMarqueeSelectionState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IMarqueeSelectionState] (val x: Self) extends AnyVal {
       
       inline def setDragOrigin(value: Point): Self = StObject.set(x, "dragOrigin", value.asInstanceOf[js.Any])
       

@@ -39,7 +39,8 @@ object GridLayoutOptions {
     __obj.asInstanceOf[GridLayoutOptions]
   }
   
-  extension [Self <: GridLayoutOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GridLayoutOptions] (val x: Self) extends AnyVal {
     
     inline def setAvoidOverlapPadding(value: Double): Self = StObject.set(x, "avoidOverlapPadding", value.asInstanceOf[js.Any])
     

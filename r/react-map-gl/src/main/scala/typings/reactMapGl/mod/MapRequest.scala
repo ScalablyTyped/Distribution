@@ -20,7 +20,8 @@ object MapRequest {
     __obj.asInstanceOf[MapRequest]
   }
   
-  extension [Self <: MapRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MapRequest] (val x: Self) extends AnyVal {
     
     inline def setCredentials(value: String): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
     

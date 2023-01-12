@@ -18,7 +18,8 @@ object Phase2EncryptionAlgorithmsRequestListValue {
     __obj.asInstanceOf[Phase2EncryptionAlgorithmsRequestListValue]
   }
   
-  extension [Self <: Phase2EncryptionAlgorithmsRequestListValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Phase2EncryptionAlgorithmsRequestListValue] (val x: Self) extends AnyVal {
     
     inline def setValue(value: String): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
     

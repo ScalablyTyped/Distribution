@@ -28,7 +28,8 @@ object anon {
       __obj.asInstanceOf[Changed]
     }
     
-    extension [Self <: Changed](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Changed] (val x: Self) extends AnyVal {
       
       inline def setChanged(value: Boolean): Self = StObject.set(x, "changed", value.asInstanceOf[js.Any])
       
@@ -67,7 +68,8 @@ object anon {
       __obj.asInstanceOf[PartialSession]
     }
     
-    extension [Self <: PartialSession](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialSession] (val x: Self) extends AnyVal {
       
       inline def setInspect(value: () => js.Object): Self = StObject.set(x, "inspect", js.Any.fromFunction0(value))
       
@@ -127,7 +129,8 @@ object anon {
       __obj.asInstanceOf[PartialSessionexpirenumbe]
     }
     
-    extension [Self <: PartialSessionexpirenumbe](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialSessionexpirenumbe] (val x: Self) extends AnyVal {
       
       inline def setInspect(value: () => js.Object): Self = StObject.set(x, "inspect", js.Any.fromFunction0(value))
       
@@ -223,7 +226,8 @@ object anon {
       __obj.asInstanceOf[Partialopts]
     }
     
-    extension [Self <: Partialopts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Partialopts] (val x: Self) extends AnyVal {
       
       inline def setAutoCommit(value: Boolean): Self = StObject.set(x, "autoCommit", value.asInstanceOf[js.Any])
       
@@ -330,7 +334,8 @@ object anon {
       __obj.asInstanceOf[Rolling]
     }
     
-    extension [Self <: Rolling](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Rolling] (val x: Self) extends AnyVal {
       
       inline def setRolling(value: Boolean): Self = StObject.set(x, "rolling", value.asInstanceOf[js.Any])
       

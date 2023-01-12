@@ -21,7 +21,8 @@ object MigrationBuilderActions {
     __obj.asInstanceOf[MigrationBuilderActions]
   }
   
-  extension [Self <: MigrationBuilderActions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MigrationBuilderActions] (val x: Self) extends AnyVal {
     
     inline def setDown(value: MigrationAction | `false`): Self = StObject.set(x, "down", value.asInstanceOf[js.Any])
     

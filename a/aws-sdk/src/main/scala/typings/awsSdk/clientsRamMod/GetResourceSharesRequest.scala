@@ -53,7 +53,8 @@ object GetResourceSharesRequest {
     __obj.asInstanceOf[GetResourceSharesRequest]
   }
   
-  extension [Self <: GetResourceSharesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetResourceSharesRequest] (val x: Self) extends AnyVal {
     
     inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     

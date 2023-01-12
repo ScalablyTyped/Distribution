@@ -38,7 +38,8 @@ object UploadParameters {
     __obj.asInstanceOf[UploadParameters]
   }
   
-  extension [Self <: UploadParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UploadParameters] (val x: Self) extends AnyVal {
     
     inline def setContext(value: Record[String, Any]): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     

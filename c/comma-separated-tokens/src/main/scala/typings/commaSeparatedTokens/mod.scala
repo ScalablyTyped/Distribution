@@ -34,7 +34,8 @@ object mod {
       __obj.asInstanceOf[StringifyOptions]
     }
     
-    extension [Self <: StringifyOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StringifyOptions] (val x: Self) extends AnyVal {
       
       inline def setPadLeft(value: Boolean): Self = StObject.set(x, "padLeft", value.asInstanceOf[js.Any])
       

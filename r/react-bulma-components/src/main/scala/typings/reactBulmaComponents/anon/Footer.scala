@@ -27,7 +27,8 @@ object Footer {
     __obj.asInstanceOf[Footer]
   }
   
-  extension [Self <: Footer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Footer] (val x: Self) extends AnyVal {
     
     inline def setBody(value: /* props */ js.Object & (ElementProps[js.Object, div]) => ReactElement): Self = StObject.set(x, "Body", js.Any.fromFunction1(value))
     

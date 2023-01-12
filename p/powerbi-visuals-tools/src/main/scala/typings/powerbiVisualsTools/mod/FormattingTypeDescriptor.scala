@@ -31,7 +31,8 @@ object FormattingTypeDescriptor {
     __obj.asInstanceOf[FormattingTypeDescriptor]
   }
   
-  extension [Self <: FormattingTypeDescriptor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FormattingTypeDescriptor] (val x: Self) extends AnyVal {
     
     inline def setAlignment(value: Boolean): Self = StObject.set(x, "alignment", value.asInstanceOf[js.Any])
     

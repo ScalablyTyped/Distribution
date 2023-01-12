@@ -18,7 +18,8 @@ object SpreadsheetSelectSheetEvent {
     __obj.asInstanceOf[SpreadsheetSelectSheetEvent]
   }
   
-  extension [Self <: SpreadsheetSelectSheetEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpreadsheetSelectSheetEvent] (val x: Self) extends AnyVal {
     
     inline def setSheet(value: Sheet): Self = StObject.set(x, "sheet", value.asInstanceOf[js.Any])
     

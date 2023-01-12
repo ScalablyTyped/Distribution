@@ -15,7 +15,8 @@ object Production {
     __obj.asInstanceOf[Production]
   }
   
-  extension [Self <: Production](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Production] (val x: Self) extends AnyVal {
     
     inline def setProduction(value: Boolean): Self = StObject.set(x, "production", value.asInstanceOf[js.Any])
     

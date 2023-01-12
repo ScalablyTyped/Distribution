@@ -16,7 +16,8 @@ object ContentStreamTypeTargetingOptionDetails {
     __obj.asInstanceOf[ContentStreamTypeTargetingOptionDetails]
   }
   
-  extension [Self <: ContentStreamTypeTargetingOptionDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContentStreamTypeTargetingOptionDetails] (val x: Self) extends AnyVal {
     
     inline def setContentStreamType(value: String): Self = StObject.set(x, "contentStreamType", value.asInstanceOf[js.Any])
     

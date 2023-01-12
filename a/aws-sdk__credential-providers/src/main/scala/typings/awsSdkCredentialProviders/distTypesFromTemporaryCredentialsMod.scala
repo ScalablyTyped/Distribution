@@ -36,7 +36,8 @@ object distTypesFromTemporaryCredentialsMod {
       __obj.asInstanceOf[FromTemporaryCredentialsOptions]
     }
     
-    extension [Self <: FromTemporaryCredentialsOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FromTemporaryCredentialsOptions] (val x: Self) extends AnyVal {
       
       inline def setClientConfig(value: STSClientConfig): Self = StObject.set(x, "clientConfig", value.asInstanceOf[js.Any])
       

@@ -153,7 +153,8 @@ object tableCellTableCellMod {
       __obj.asInstanceOf[TableCellBaseProps]
     }
     
-    extension [Self <: TableCellBaseProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TableCellBaseProps] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double | String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -646,7 +647,8 @@ object tableCellTableCellMod {
       __obj.asInstanceOf[TableCellProps]
     }
     
-    extension [Self <: TableCellProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TableCellProps] (val x: Self) extends AnyVal {
       
       inline def setAbbr(value: String): Self = StObject.set(x, "abbr", value.asInstanceOf[js.Any])
       

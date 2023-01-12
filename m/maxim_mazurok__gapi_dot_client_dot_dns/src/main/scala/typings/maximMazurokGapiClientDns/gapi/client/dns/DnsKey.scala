@@ -55,7 +55,8 @@ object DnsKey {
     __obj.asInstanceOf[DnsKey]
   }
   
-  extension [Self <: DnsKey](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DnsKey] (val x: Self) extends AnyVal {
     
     inline def setAlgorithm(value: String): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
     

@@ -138,7 +138,8 @@ object InlinePictureCollectionLoadOptions {
     __obj.asInstanceOf[InlinePictureCollectionLoadOptions]
   }
   
-  extension [Self <: InlinePictureCollectionLoadOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InlinePictureCollectionLoadOptions] (val x: Self) extends AnyVal {
     
     inline def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
     

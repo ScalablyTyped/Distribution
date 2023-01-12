@@ -21,7 +21,8 @@ object COLUMNHEADERCLICK {
     __obj.asInstanceOf[COLUMNHEADERCLICK]
   }
   
-  extension [Self <: COLUMNHEADERCLICK](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: COLUMNHEADERCLICK] (val x: Self) extends AnyVal {
     
     inline def setCOLUMN_HEADER_CLICK(value: String): Self = StObject.set(x, "COLUMN_HEADER_CLICK", value.asInstanceOf[js.Any])
     

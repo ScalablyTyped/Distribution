@@ -96,7 +96,8 @@ object customizeMod {
       __obj.asInstanceOf[DirtyValuesOptions]
     }
     
-    extension [Self <: DirtyValuesOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DirtyValuesOptions] (val x: Self) extends AnyVal {
       
       inline def setUnsaved(value: Boolean): Self = StObject.set(x, "unsaved", value.asInstanceOf[js.Any])
       
@@ -118,7 +119,8 @@ object customizeMod {
       __obj.asInstanceOf[HandleSettingValiditiesArgs]
     }
     
-    extension [Self <: HandleSettingValiditiesArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HandleSettingValiditiesArgs] (val x: Self) extends AnyVal {
       
       inline def setFocusInvalidControl(value: Boolean): Self = StObject.set(x, "focusInvalidControl", value.asInstanceOf[js.Any])
       
@@ -145,7 +147,8 @@ object customizeMod {
       __obj.asInstanceOf[RequestChangesetUpdateOptions]
     }
     
-    extension [Self <: RequestChangesetUpdateOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequestChangesetUpdateOptions] (val x: Self) extends AnyVal {
       
       inline def setAutosave(value: Boolean): Self = StObject.set(x, "autosave", value.asInstanceOf[js.Any])
       

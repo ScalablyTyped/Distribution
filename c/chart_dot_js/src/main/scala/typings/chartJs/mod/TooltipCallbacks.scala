@@ -57,7 +57,8 @@ object TooltipCallbacks {
     __obj.asInstanceOf[TooltipCallbacks[TType, Model, Item]]
   }
   
-  extension [Self <: TooltipCallbacks[?, ?, ?], TType /* <: ChartType */, Model, Item](x: Self & (TooltipCallbacks[TType, Model, Item])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TooltipCallbacks[?, ?, ?], TType /* <: ChartType */, Model, Item] (val x: Self & (TooltipCallbacks[TType, Model, Item])) extends AnyVal {
     
     inline def setAfterBody(value: js.Array[Item] => String | js.Array[String]): Self = StObject.set(x, "afterBody", js.Any.fromFunction1(value))
     

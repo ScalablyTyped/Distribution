@@ -58,7 +58,8 @@ object AssessmentReport {
     __obj.asInstanceOf[AssessmentReport]
   }
   
-  extension [Self <: AssessmentReport](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssessmentReport] (val x: Self) extends AnyVal {
     
     inline def setAssessmentId(value: UUID): Self = StObject.set(x, "assessmentId", value.asInstanceOf[js.Any])
     

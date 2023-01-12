@@ -25,7 +25,8 @@ object Exif {
     __obj.asInstanceOf[Exif]
   }
   
-  extension [Self <: Exif](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Exif] (val x: Self) extends AnyVal {
     
     inline def setGet(
       value: typings.blueimpLoadImage.blueimpLoadImageStrings.Orientation | Thumbnail | typings.blueimpLoadImage.blueimpLoadImageStrings.Exif | GPSInfo | Interoperability => ExifTagValue

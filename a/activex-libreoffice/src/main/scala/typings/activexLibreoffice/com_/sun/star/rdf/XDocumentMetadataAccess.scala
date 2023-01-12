@@ -190,7 +190,8 @@ object XDocumentMetadataAccess {
     __obj.asInstanceOf[XDocumentMetadataAccess]
   }
   
-  extension [Self <: XDocumentMetadataAccess](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XDocumentMetadataAccess] (val x: Self) extends AnyVal {
     
     inline def setAddContentOrStylesFile(value: String => Unit): Self = StObject.set(x, "addContentOrStylesFile", js.Any.fromFunction1(value))
     

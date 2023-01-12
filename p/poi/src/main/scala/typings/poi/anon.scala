@@ -34,7 +34,8 @@ object anon {
       __obj.asInstanceOf[CacheDirectory]
     }
     
-    extension [Self <: CacheDirectory](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CacheDirectory] (val x: Self) extends AnyVal {
       
       inline def setCacheDirectory(value: String): Self = StObject.set(x, "cacheDirectory", value.asInstanceOf[js.Any])
       
@@ -104,7 +105,8 @@ object anon {
       __obj.asInstanceOf[PartialOptionsentrystring]
     }
     
-    extension [Self <: PartialOptionsentrystring](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialOptionsentrystring] (val x: Self) extends AnyVal {
       
       inline def setCache(value: Boolean): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
       

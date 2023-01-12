@@ -42,7 +42,8 @@ object CreateInstanceExportTaskRequest {
     __obj.asInstanceOf[CreateInstanceExportTaskRequest]
   }
   
-  extension [Self <: CreateInstanceExportTaskRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateInstanceExportTaskRequest] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     

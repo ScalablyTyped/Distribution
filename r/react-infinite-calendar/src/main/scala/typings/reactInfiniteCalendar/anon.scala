@@ -39,7 +39,8 @@ object anon {
       __obj.asInstanceOf[AccentColor]
     }
     
-    extension [Self <: AccentColor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AccentColor] (val x: Self) extends AnyVal {
       
       inline def setAccentColor(value: String): Self = StObject.set(x, "accentColor", value.asInstanceOf[js.Any])
       
@@ -84,7 +85,8 @@ object anon {
       __obj.asInstanceOf[Active]
     }
     
-    extension [Self <: Active](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Active] (val x: Self) extends AnyVal {
       
       inline def setActive(value: String): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
@@ -111,7 +113,8 @@ object anon {
       __obj.asInstanceOf[Background]
     }
     
-    extension [Self <: Background](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Background] (val x: Self) extends AnyVal {
       
       inline def setBackground(value: String): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
       
@@ -148,7 +151,8 @@ object anon {
       __obj.asInstanceOf[Blank]
     }
     
-    extension [Self <: Blank](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Blank] (val x: Self) extends AnyVal {
       
       inline def setBlank(value: String): Self = StObject.set(x, "blank", value.asInstanceOf[js.Any])
       
@@ -191,7 +195,8 @@ object anon {
       __obj.asInstanceOf[DistanceInWords]
     }
     
-    extension [Self <: DistanceInWords](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DistanceInWords] (val x: Self) extends AnyVal {
       
       inline def setDistanceInWords(value: (Any, Any, Any) => Any): Self = StObject.set(x, "distanceInWords", js.Any.fromFunction3(value))
       
@@ -212,7 +217,8 @@ object anon {
       __obj.asInstanceOf[End]
     }
     
-    extension [Self <: End](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: End] (val x: Self) extends AnyVal {
       
       inline def setEnd(value: DateType): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
@@ -249,7 +255,8 @@ object anon {
       __obj.asInstanceOf[HideYearsOnSelect]
     }
     
-    extension [Self <: HideYearsOnSelect](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HideYearsOnSelect] (val x: Self) extends AnyVal {
       
       inline def setHideYearsOnSelect(value: Boolean): Self = StObject.set(x, "hideYearsOnSelect", value.asInstanceOf[js.Any])
       
@@ -304,7 +311,8 @@ object anon {
       __obj.asInstanceOf[Long]
     }
     
-    extension [Self <: Long](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Long] (val x: Self) extends AnyVal {
       
       inline def setLong(value: String): Self = StObject.set(x, "long", value.asInstanceOf[js.Any])
     }

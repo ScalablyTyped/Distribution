@@ -26,7 +26,8 @@ object anon {
       __obj.asInstanceOf[BorderSelector]
     }
     
-    extension [Self <: BorderSelector](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BorderSelector] (val x: Self) extends AnyVal {
       
       inline def setBorderSelector(value: String | `Doteff-reveal-border`): Self = StObject.set(x, "borderSelector", value.asInstanceOf[js.Any])
       

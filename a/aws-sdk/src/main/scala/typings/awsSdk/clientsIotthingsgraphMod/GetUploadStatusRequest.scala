@@ -18,7 +18,8 @@ object GetUploadStatusRequest {
     __obj.asInstanceOf[GetUploadStatusRequest]
   }
   
-  extension [Self <: GetUploadStatusRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetUploadStatusRequest] (val x: Self) extends AnyVal {
     
     inline def setUploadId(value: UploadId): Self = StObject.set(x, "uploadId", value.asInstanceOf[js.Any])
   }

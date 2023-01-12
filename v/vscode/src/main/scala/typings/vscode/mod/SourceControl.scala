@@ -87,7 +87,8 @@ object SourceControl {
     __obj.asInstanceOf[SourceControl]
   }
   
-  extension [Self <: SourceControl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SourceControl] (val x: Self) extends AnyVal {
     
     inline def setAcceptInputCommand(value: Command): Self = StObject.set(x, "acceptInputCommand", value.asInstanceOf[js.Any])
     

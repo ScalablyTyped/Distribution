@@ -26,7 +26,8 @@ object ProtocolMessage {
     __obj.asInstanceOf[ProtocolMessage]
   }
   
-  extension [Self <: ProtocolMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProtocolMessage] (val x: Self) extends AnyVal {
     
     inline def setSeq(value: Double): Self = StObject.set(x, "seq", value.asInstanceOf[js.Any])
     

@@ -33,7 +33,8 @@ object libAssembleLicensesMod {
       __obj.asInstanceOf[AssembledLicense]
     }
     
-    extension [Self <: AssembledLicense](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AssembledLicense] (val x: Self) extends AnyVal {
       
       inline def setBody(value: Data): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
@@ -64,7 +65,8 @@ object libAssembleLicensesMod {
       __obj.asInstanceOf[AssembledLicenseSet]
     }
     
-    extension [Self <: AssembledLicenseSet](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AssembledLicenseSet] (val x: Self) extends AnyVal {
       
       inline def setByLanguageID(value: Map[Double, AssembledLicense]): Self = StObject.set(x, "byLanguageID", value.asInstanceOf[js.Any])
       

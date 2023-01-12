@@ -22,7 +22,8 @@ object anon {
       __obj.asInstanceOf[ElementComponent]
     }
     
-    extension [Self <: ElementComponent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ElementComponent] (val x: Self) extends AnyVal {
       
       inline def setElementComponent(value: Unit & ReactElement): Self = StObject.set(x, "elementComponent", value.asInstanceOf[js.Any])
       
@@ -47,7 +48,8 @@ object anon {
       __obj.asInstanceOf[Left]
     }
     
-    extension [Self <: Left](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Left] (val x: Self) extends AnyVal {
       
       inline def setLeft(value: string): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
       
@@ -1005,7 +1007,8 @@ object anon {
       __obj.asInstanceOf[PartialCSSStyleDeclaratio]
     }
     
-    extension [Self <: PartialCSSStyleDeclaratio](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialCSSStyleDeclaratio] (val x: Self) extends AnyVal {
       
       inline def setAccentColor(value: String): Self = StObject.set(x, "accentColor", value.asInstanceOf[js.Any])
       

@@ -23,7 +23,8 @@ object ListRetainedMessagesRequest {
     __obj.asInstanceOf[ListRetainedMessagesRequest]
   }
   
-  extension [Self <: ListRetainedMessagesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListRetainedMessagesRequest] (val x: Self) extends AnyVal {
     
     inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     

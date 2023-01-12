@@ -32,7 +32,8 @@ object SearchResponse {
     __obj.asInstanceOf[SearchResponse]
   }
   
-  extension [Self <: SearchResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchResponse] (val x: Self) extends AnyVal {
     
     inline def setBoundingRegion(value: CoordinateRegion): Self = StObject.set(x, "boundingRegion", value.asInstanceOf[js.Any])
     

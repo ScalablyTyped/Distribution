@@ -33,7 +33,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setIncludedImpacts(value: js.Array[String]): Self = StObject.set(x, "includedImpacts", value.asInstanceOf[js.Any])
       
@@ -182,7 +183,8 @@ object mod {
           __obj.asInstanceOf[Chainable]
         }
         
-        extension [Self <: Chainable](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: Chainable] (val x: Self) extends AnyVal {
           
           inline def setCheckA11y(
             value: (/* context */ js.UndefOr[String | Node | ContextObject], /* options */ js.UndefOr[Options], /* violationCallback */ js.UndefOr[js.Function1[/* violations */ js.Array[Result], Unit]], /* skipFailures */ js.UndefOr[Boolean]) => Unit
@@ -206,7 +208,8 @@ object mod {
         __obj.asInstanceOf[Window]
       }
       
-      extension [Self <: Window](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Window] (val x: Self) extends AnyVal {
         
         inline def setAxe(value: Typeofaxe): Self = StObject.set(x, "axe", value.asInstanceOf[js.Any])
       }

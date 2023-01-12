@@ -502,7 +502,8 @@ object IgMapSeries {
     __obj.asInstanceOf[IgMapSeries]
   }
   
-  extension [Self <: IgMapSeries](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgMapSeries] (val x: Self) extends AnyVal {
     
     inline def setAngleMemberPath(value: Double): Self = StObject.set(x, "angleMemberPath", value.asInstanceOf[js.Any])
     

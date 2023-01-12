@@ -190,7 +190,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setAbortOnLimit(value: Boolean): Self = StObject.set(x, "abortOnLimit", value.asInstanceOf[js.Any])
       
@@ -325,7 +326,8 @@ object mod {
           __obj.asInstanceOf[Request]
         }
         
-        extension [Self <: Request](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: Request] (val x: Self) extends AnyVal {
           
           inline def setFiles(value: FileArray): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
           

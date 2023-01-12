@@ -56,7 +56,8 @@ object libEncodingUnicodeMod {
       __obj.asInstanceOf[WithGetChar]
     }
     
-    extension [Self <: WithGetChar](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WithGetChar] (val x: Self) extends AnyVal {
       
       inline def setGetChar(value: (js.typedarray.Uint8Array, Double) => Double): Self = StObject.set(x, "getChar", js.Any.fromFunction2(value))
     }

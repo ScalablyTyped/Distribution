@@ -25,7 +25,8 @@ object QuantileScale {
     __obj.asInstanceOf[QuantileScale]
   }
   
-  extension [Self <: QuantileScale](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QuantileScale] (val x: Self) extends AnyVal {
     
     inline def setInterpolate(value: ScaleInterpolate): Self = StObject.set(x, "interpolate", value.asInstanceOf[js.Any])
     

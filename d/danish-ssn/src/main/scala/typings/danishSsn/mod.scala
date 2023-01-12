@@ -37,7 +37,8 @@ object mod {
       __obj.asInstanceOf[DanishSsnStatus]
     }
     
-    extension [Self <: DanishSsnStatus](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DanishSsnStatus] (val x: Self) extends AnyVal {
       
       inline def setCpr(value: String): Self = StObject.set(x, "cpr", value.asInstanceOf[js.Any])
       

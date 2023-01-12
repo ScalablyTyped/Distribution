@@ -98,7 +98,8 @@ object Libp2pInit {
     __obj.asInstanceOf[Libp2pInit]
   }
   
-  extension [Self <: Libp2pInit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Libp2pInit] (val x: Self) extends AnyVal {
     
     inline def setAddresses(value: AddressesConfig): Self = StObject.set(x, "addresses", value.asInstanceOf[js.Any])
     

@@ -16,7 +16,8 @@ object MediaElementAudioSourceOptions {
     __obj.asInstanceOf[MediaElementAudioSourceOptions]
   }
   
-  extension [Self <: MediaElementAudioSourceOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MediaElementAudioSourceOptions] (val x: Self) extends AnyVal {
     
     inline def setMediaElement(value: HTMLMediaElement): Self = StObject.set(x, "mediaElement", value.asInstanceOf[js.Any])
   }

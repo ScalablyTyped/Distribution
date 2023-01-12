@@ -32,7 +32,8 @@ object UpdateTableBorderPropertiesRequest {
     __obj.asInstanceOf[UpdateTableBorderPropertiesRequest]
   }
   
-  extension [Self <: UpdateTableBorderPropertiesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateTableBorderPropertiesRequest] (val x: Self) extends AnyVal {
     
     inline def setBorderPosition(value: String): Self = StObject.set(x, "borderPosition", value.asInstanceOf[js.Any])
     

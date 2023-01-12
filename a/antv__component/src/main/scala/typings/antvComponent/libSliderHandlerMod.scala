@@ -80,7 +80,8 @@ object libSliderHandlerMod {
       __obj.asInstanceOf[HandlerCfg]
     }
     
-    extension [Self <: HandlerCfg](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HandlerCfg] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -117,7 +118,8 @@ object libSliderHandlerMod {
       __obj.asInstanceOf[IStyle]
     }
     
-    extension [Self <: IStyle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IStyle] (val x: Self) extends AnyVal {
       
       inline def setCursor(value: String): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
       

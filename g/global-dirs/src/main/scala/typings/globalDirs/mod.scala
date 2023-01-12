@@ -63,7 +63,8 @@ object mod {
       __obj.asInstanceOf[GlobalDirectories]
     }
     
-    extension [Self <: GlobalDirectories](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GlobalDirectories] (val x: Self) extends AnyVal {
       
       inline def setBinaries(value: String): Self = StObject.set(x, "binaries", value.asInstanceOf[js.Any])
       

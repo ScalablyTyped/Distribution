@@ -18,7 +18,8 @@ object FastLaunchSnapshotConfigurationRequest {
     __obj.asInstanceOf[FastLaunchSnapshotConfigurationRequest]
   }
   
-  extension [Self <: FastLaunchSnapshotConfigurationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FastLaunchSnapshotConfigurationRequest] (val x: Self) extends AnyVal {
     
     inline def setTargetResourceCount(value: Integer): Self = StObject.set(x, "TargetResourceCount", value.asInstanceOf[js.Any])
     

@@ -32,7 +32,8 @@ object WebToken {
     __obj.asInstanceOf[WebToken]
   }
   
-  extension [Self <: WebToken](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebToken] (val x: Self) extends AnyVal {
     
     inline def setEnabledFeatures(value: js.Array[String]): Self = StObject.set(x, "enabledFeatures", value.asInstanceOf[js.Any])
     

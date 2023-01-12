@@ -28,7 +28,8 @@ object ListSkillsStoreSkillsByCategoryRequest {
     __obj.asInstanceOf[ListSkillsStoreSkillsByCategoryRequest]
   }
   
-  extension [Self <: ListSkillsStoreSkillsByCategoryRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListSkillsStoreSkillsByCategoryRequest] (val x: Self) extends AnyVal {
     
     inline def setCategoryId(value: CategoryId): Self = StObject.set(x, "CategoryId", value.asInstanceOf[js.Any])
     

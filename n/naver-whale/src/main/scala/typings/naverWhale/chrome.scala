@@ -23,7 +23,8 @@ object chrome {
         __obj.asInstanceOf[StateType]
       }
       
-      extension [Self <: StateType](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: StateType] (val x: Self) extends AnyVal {
         
         inline def setCOMPLETE(value: String): Self = StObject.set(x, "COMPLETE", value.asInstanceOf[js.Any])
         

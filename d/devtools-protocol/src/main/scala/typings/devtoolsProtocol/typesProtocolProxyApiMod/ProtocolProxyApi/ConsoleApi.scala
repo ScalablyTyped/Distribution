@@ -42,7 +42,8 @@ object ConsoleApi {
     __obj.asInstanceOf[ConsoleApi]
   }
   
-  extension [Self <: ConsoleApi](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConsoleApi] (val x: Self) extends AnyVal {
     
     inline def setClearMessages(value: () => js.Promise[Unit]): Self = StObject.set(x, "clearMessages", js.Any.fromFunction0(value))
     

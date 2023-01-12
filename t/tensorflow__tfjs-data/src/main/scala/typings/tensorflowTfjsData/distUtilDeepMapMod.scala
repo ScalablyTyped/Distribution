@@ -36,7 +36,8 @@ object distUtilDeepMapMod {
       __obj.asInstanceOf[DeepMapAsyncResult]
     }
     
-    extension [Self <: DeepMapAsyncResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeepMapAsyncResult] (val x: Self) extends AnyVal {
       
       inline def setRecurse(value: Boolean): Self = StObject.set(x, "recurse", value.asInstanceOf[js.Any])
       
@@ -57,7 +58,8 @@ object distUtilDeepMapMod {
       __obj.asInstanceOf[DeepMapResult]
     }
     
-    extension [Self <: DeepMapResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeepMapResult] (val x: Self) extends AnyVal {
       
       inline def setRecurse(value: Boolean): Self = StObject.set(x, "recurse", value.asInstanceOf[js.Any])
       

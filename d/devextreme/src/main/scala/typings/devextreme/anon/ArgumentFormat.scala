@@ -84,7 +84,8 @@ object ArgumentFormat {
     __obj.asInstanceOf[ArgumentFormat]
   }
   
-  extension [Self <: ArgumentFormat](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ArgumentFormat] (val x: Self) extends AnyVal {
     
     inline def setArgumentFormat(value: typings.devextreme.mod.DevExpress.ui.Format): Self = StObject.set(x, "argumentFormat", value.asInstanceOf[js.Any])
     

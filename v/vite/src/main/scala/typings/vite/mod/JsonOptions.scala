@@ -26,7 +26,8 @@ object JsonOptions {
     __obj.asInstanceOf[JsonOptions]
   }
   
-  extension [Self <: JsonOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JsonOptions] (val x: Self) extends AnyVal {
     
     inline def setNamedExports(value: Boolean): Self = StObject.set(x, "namedExports", value.asInstanceOf[js.Any])
     

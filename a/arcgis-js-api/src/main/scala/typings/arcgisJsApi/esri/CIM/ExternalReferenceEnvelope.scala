@@ -33,7 +33,8 @@ object ExternalReferenceEnvelope {
     __obj.asInstanceOf[ExternalReferenceEnvelope]
   }
   
-  extension [Self <: ExternalReferenceEnvelope](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExternalReferenceEnvelope] (val x: Self) extends AnyVal {
     
     inline def setMmax(value: Double): Self = StObject.set(x, "mmax", value.asInstanceOf[js.Any])
     

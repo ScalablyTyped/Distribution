@@ -52,7 +52,8 @@ object typesCommitMod {
       __obj.asInstanceOf[Commit]
     }
     
-    extension [Self <: Commit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Commit] (val x: Self) extends AnyVal {
       
       inline def setAdditionalData(value: String): Self = StObject.set(x, "additionalData", value.asInstanceOf[js.Any])
       
@@ -115,7 +116,8 @@ object typesCommitMod {
       __obj.asInstanceOf[UnmarshalledCommit]
     }
     
-    extension [Self <: UnmarshalledCommit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnmarshalledCommit] (val x: Self) extends AnyVal {
       
       inline def setAuthor(value: UnmarshalledUserInfo): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
       

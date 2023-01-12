@@ -31,7 +31,8 @@ object GroupsResource {
     __obj.asInstanceOf[GroupsResource]
   }
   
-  extension [Self <: GroupsResource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GroupsResource] (val x: Self) extends AnyVal {
     
     inline def setDevices(value: DevicesResource): Self = StObject.set(x, "devices", value.asInstanceOf[js.Any])
     

@@ -82,7 +82,8 @@ object mod {
       __obj.asInstanceOf[ReactAppOrParcel[ExtraProps]]
     }
     
-    extension [Self <: ReactAppOrParcel[?], ExtraProps](x: Self & ReactAppOrParcel[ExtraProps]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReactAppOrParcel[?], ExtraProps] (val x: Self & ReactAppOrParcel[ExtraProps]) extends AnyVal {
       
       inline def setBootstrap(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify LifeCycleFn<ExtraProps> */ Any
@@ -171,7 +172,8 @@ object mod {
       __obj.asInstanceOf[SingleSpaReactOpts[RootComponentProps]]
     }
     
-    extension [Self <: SingleSpaReactOpts[?], RootComponentProps](x: Self & SingleSpaReactOpts[RootComponentProps]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SingleSpaReactOpts[?], RootComponentProps] (val x: Self & SingleSpaReactOpts[RootComponentProps]) extends AnyVal {
       
       inline def setDomElementGetter(value: /* props */ RootComponentProps => HTMLElement): Self = StObject.set(x, "domElementGetter", js.Any.fromFunction1(value))
       

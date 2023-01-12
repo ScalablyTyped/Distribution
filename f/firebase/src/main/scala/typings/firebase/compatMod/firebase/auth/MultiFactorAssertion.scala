@@ -24,7 +24,8 @@ object MultiFactorAssertion {
     __obj.asInstanceOf[MultiFactorAssertion]
   }
   
-  extension [Self <: MultiFactorAssertion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MultiFactorAssertion] (val x: Self) extends AnyVal {
     
     inline def setFactorId(value: String): Self = StObject.set(x, "factorId", value.asInstanceOf[js.Any])
   }

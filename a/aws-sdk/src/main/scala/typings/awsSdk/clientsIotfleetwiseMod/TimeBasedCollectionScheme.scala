@@ -18,7 +18,8 @@ object TimeBasedCollectionScheme {
     __obj.asInstanceOf[TimeBasedCollectionScheme]
   }
   
-  extension [Self <: TimeBasedCollectionScheme](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimeBasedCollectionScheme] (val x: Self) extends AnyVal {
     
     inline def setPeriodMs(value: collectionPeriodMs): Self = StObject.set(x, "periodMs", value.asInstanceOf[js.Any])
   }

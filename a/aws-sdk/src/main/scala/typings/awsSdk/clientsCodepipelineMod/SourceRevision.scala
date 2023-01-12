@@ -33,7 +33,8 @@ object SourceRevision {
     __obj.asInstanceOf[SourceRevision]
   }
   
-  extension [Self <: SourceRevision](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SourceRevision] (val x: Self) extends AnyVal {
     
     inline def setActionName(value: ActionName): Self = StObject.set(x, "actionName", value.asInstanceOf[js.Any])
     

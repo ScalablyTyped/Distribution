@@ -19,7 +19,8 @@ object Layout {
     __obj.asInstanceOf[Layout]
   }
   
-  extension [Self <: Layout](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Layout] (val x: Self) extends AnyVal {
     
     inline def setCOLUMN_MAJOR(value: `0`): Self = StObject.set(x, "COLUMN_MAJOR", value.asInstanceOf[js.Any])
     

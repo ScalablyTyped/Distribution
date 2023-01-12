@@ -21,7 +21,8 @@ object abstractTypesMod {
       __obj.asInstanceOf[LookupMatcherResult]
     }
     
-    extension [Self <: LookupMatcherResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LookupMatcherResult] (val x: Self) extends AnyVal {
       
       inline def setExtension(value: String): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
       

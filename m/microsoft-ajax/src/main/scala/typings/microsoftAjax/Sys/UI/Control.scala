@@ -107,7 +107,8 @@ object Control {
     __obj.asInstanceOf[Control]
   }
   
-  extension [Self <: Control](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Control] (val x: Self) extends AnyVal {
     
     inline def setAddCssClass(value: String => Unit): Self = StObject.set(x, "addCssClass", js.Any.fromFunction1(value))
     

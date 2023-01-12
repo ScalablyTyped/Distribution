@@ -26,7 +26,8 @@ object Blockquote {
     __obj.asInstanceOf[Blockquote]
   }
   
-  extension [Self <: Blockquote](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Blockquote] (val x: Self) extends AnyVal {
     
     inline def setRaw(value: String): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
     

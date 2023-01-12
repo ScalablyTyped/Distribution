@@ -17,7 +17,8 @@ object GlideLocale {
     __obj.asInstanceOf[GlideLocale]
   }
   
-  extension [Self <: GlideLocale](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GlideLocale] (val x: Self) extends AnyVal {
     
     inline def setGetDecimalSeparator(value: () => String): Self = StObject.set(x, "getDecimalSeparator", js.Any.fromFunction0(value))
     

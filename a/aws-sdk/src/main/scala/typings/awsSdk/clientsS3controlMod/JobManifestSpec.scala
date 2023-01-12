@@ -23,7 +23,8 @@ object JobManifestSpec {
     __obj.asInstanceOf[JobManifestSpec]
   }
   
-  extension [Self <: JobManifestSpec](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JobManifestSpec] (val x: Self) extends AnyVal {
     
     inline def setFields(value: JobManifestFieldList): Self = StObject.set(x, "Fields", value.asInstanceOf[js.Any])
     

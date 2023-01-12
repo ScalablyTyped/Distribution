@@ -64,7 +64,8 @@ object FormatCodeOptions {
     __obj.asInstanceOf[FormatCodeOptions]
   }
   
-  extension [Self <: FormatCodeOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FormatCodeOptions] (val x: Self) extends AnyVal {
     
     inline def setInsertSpaceAfterCommaDelimiter(value: Boolean): Self = StObject.set(x, "InsertSpaceAfterCommaDelimiter", value.asInstanceOf[js.Any])
     

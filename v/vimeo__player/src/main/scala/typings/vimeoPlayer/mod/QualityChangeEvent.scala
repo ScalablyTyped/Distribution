@@ -15,7 +15,8 @@ object QualityChangeEvent {
     __obj.asInstanceOf[QualityChangeEvent]
   }
   
-  extension [Self <: QualityChangeEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QualityChangeEvent] (val x: Self) extends AnyVal {
     
     inline def setQuality(value: VimeoVideoQuality): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
   }

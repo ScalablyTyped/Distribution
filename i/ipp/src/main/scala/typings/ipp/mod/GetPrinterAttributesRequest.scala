@@ -17,7 +17,8 @@ object GetPrinterAttributesRequest {
     __obj.asInstanceOf[GetPrinterAttributesRequest]
   }
   
-  extension [Self <: GetPrinterAttributesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetPrinterAttributesRequest] (val x: Self) extends AnyVal {
     
     inline def `setOperation-attributes-tag`(value: Printeruri): Self = StObject.set(x, "operation-attributes-tag", value.asInstanceOf[js.Any])
   }

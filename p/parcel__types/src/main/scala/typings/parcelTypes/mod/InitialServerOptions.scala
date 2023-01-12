@@ -21,7 +21,8 @@ object InitialServerOptions {
     __obj.asInstanceOf[InitialServerOptions]
   }
   
-  extension [Self <: InitialServerOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InitialServerOptions] (val x: Self) extends AnyVal {
     
     inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
     

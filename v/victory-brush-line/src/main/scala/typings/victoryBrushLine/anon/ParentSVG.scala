@@ -32,7 +32,8 @@ object ParentSVG {
     __obj.asInstanceOf[ParentSVG]
   }
   
-  extension [Self <: ParentSVG](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParentSVG] (val x: Self) extends AnyVal {
     
     inline def setActiveBrushes(value: MaxHandle): Self = StObject.set(x, "activeBrushes", value.asInstanceOf[js.Any])
     

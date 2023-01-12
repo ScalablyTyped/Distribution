@@ -108,7 +108,8 @@ object rebaseMod {
       __obj.asInstanceOf[RebaseOptions[PayloadType]]
     }
     
-    extension [Self <: RebaseOptions[?], PayloadType](x: Self & RebaseOptions[PayloadType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RebaseOptions[?], PayloadType] (val x: Self & RebaseOptions[PayloadType]) extends AnyVal {
       
       inline def setCheckoutOptions(value: CheckoutOptions): Self = StObject.set(x, "checkoutOptions", value.asInstanceOf[js.Any])
       

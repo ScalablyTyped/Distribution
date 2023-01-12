@@ -49,7 +49,8 @@ object Control {
     __obj.asInstanceOf[Control]
   }
   
-  extension [Self <: Control](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Control] (val x: Self) extends AnyVal {
     
     inline def setDefaultAnchor(value: ControlAnchor): Self = StObject.set(x, "defaultAnchor", value.asInstanceOf[js.Any])
     

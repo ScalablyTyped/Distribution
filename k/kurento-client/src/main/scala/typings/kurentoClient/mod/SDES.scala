@@ -19,7 +19,8 @@ object SDES {
     __obj.asInstanceOf[SDES]
   }
   
-  extension [Self <: SDES](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SDES] (val x: Self) extends AnyVal {
     
     inline def setCrypto(value: CryptoSuite): Self = StObject.set(x, "crypto", value.asInstanceOf[js.Any])
     

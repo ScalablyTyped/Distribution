@@ -17,7 +17,8 @@ object AllJoynSessionLostEventArgs {
     __obj.asInstanceOf[AllJoynSessionLostEventArgs]
   }
   
-  extension [Self <: AllJoynSessionLostEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AllJoynSessionLostEventArgs] (val x: Self) extends AnyVal {
     
     inline def setReason(value: AllJoynSessionLostReason): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
   }

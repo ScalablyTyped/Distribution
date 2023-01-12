@@ -52,7 +52,8 @@ object XItemListListener {
     __obj.asInstanceOf[XItemListListener]
   }
   
-  extension [Self <: XItemListListener](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XItemListListener] (val x: Self) extends AnyVal {
     
     inline def setAllItemsRemoved(value: EventObject => Unit): Self = StObject.set(x, "allItemsRemoved", js.Any.fromFunction1(value))
     

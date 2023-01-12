@@ -24,7 +24,8 @@ object Secret {
     __obj.asInstanceOf[Secret]
   }
   
-  extension [Self <: Secret](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Secret] (val x: Self) extends AnyVal {
     
     inline def setKmsKeyName(value: String): Self = StObject.set(x, "kmsKeyName", value.asInstanceOf[js.Any])
     

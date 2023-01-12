@@ -27,7 +27,8 @@ object distTypesClassicEditorGeneralDistComponentsMapPinMod extends Shortcut {
       __obj.asInstanceOf[MapPinProps]
     }
     
-    extension [Self <: MapPinProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MapPinProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

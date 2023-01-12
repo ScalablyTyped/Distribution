@@ -15,7 +15,8 @@ object IconTab {
     __obj.asInstanceOf[IconTab]
   }
   
-  extension [Self <: IconTab](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IconTab] (val x: Self) extends AnyVal {
     
     inline def set__implements__sap_m_IconTab(value: Boolean): Self = StObject.set(x, "__implements__sap_m_IconTab", value.asInstanceOf[js.Any])
   }

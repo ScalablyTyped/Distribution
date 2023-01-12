@@ -22,7 +22,8 @@ object PartialFailurePercentageE {
     __obj.asInstanceOf[PartialFailurePercentageE]
   }
   
-  extension [Self <: PartialFailurePercentageE](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialFailurePercentageE] (val x: Self) extends AnyVal {
     
     inline def setEnforcement_percentage(value: Double): Self = StObject.set(x, "enforcement_percentage", value.asInstanceOf[js.Any])
     

@@ -42,7 +42,8 @@ object mod {
       __obj.asInstanceOf[DiscourseSSO]
     }
     
-    extension [Self <: DiscourseSSO](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DiscourseSSO] (val x: Self) extends AnyVal {
       
       inline def setBuildLoginString(value: UserParams => String): Self = StObject.set(x, "buildLoginString", js.Any.fromFunction1(value))
       
@@ -81,7 +82,8 @@ object mod {
       __obj.asInstanceOf[UserParams]
     }
     
-    extension [Self <: UserParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UserParams] (val x: Self) extends AnyVal {
       
       inline def setAdd_groups(value: js.Array[String]): Self = StObject.set(x, "add_groups", value.asInstanceOf[js.Any])
       

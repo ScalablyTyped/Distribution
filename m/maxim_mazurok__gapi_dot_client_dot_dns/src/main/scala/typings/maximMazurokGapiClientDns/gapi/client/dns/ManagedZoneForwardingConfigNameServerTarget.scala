@@ -24,7 +24,8 @@ object ManagedZoneForwardingConfigNameServerTarget {
     __obj.asInstanceOf[ManagedZoneForwardingConfigNameServerTarget]
   }
   
-  extension [Self <: ManagedZoneForwardingConfigNameServerTarget](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ManagedZoneForwardingConfigNameServerTarget] (val x: Self) extends AnyVal {
     
     inline def setForwardingPath(value: String): Self = StObject.set(x, "forwardingPath", value.asInstanceOf[js.Any])
     

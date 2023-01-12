@@ -58,7 +58,8 @@ object FargateProfile {
     __obj.asInstanceOf[FargateProfile]
   }
   
-  extension [Self <: FargateProfile](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FargateProfile] (val x: Self) extends AnyVal {
     
     inline def setClusterName(value: String): Self = StObject.set(x, "clusterName", value.asInstanceOf[js.Any])
     

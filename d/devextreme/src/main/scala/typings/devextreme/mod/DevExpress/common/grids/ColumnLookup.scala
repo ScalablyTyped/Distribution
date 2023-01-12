@@ -42,7 +42,8 @@ object ColumnLookup {
     __obj.asInstanceOf[ColumnLookup]
   }
   
-  extension [Self <: ColumnLookup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ColumnLookup] (val x: Self) extends AnyVal {
     
     inline def setAllowClearing(value: Boolean): Self = StObject.set(x, "allowClearing", value.asInstanceOf[js.Any])
     

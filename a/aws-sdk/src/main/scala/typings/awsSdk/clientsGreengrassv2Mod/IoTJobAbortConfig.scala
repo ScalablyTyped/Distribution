@@ -18,7 +18,8 @@ object IoTJobAbortConfig {
     __obj.asInstanceOf[IoTJobAbortConfig]
   }
   
-  extension [Self <: IoTJobAbortConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IoTJobAbortConfig] (val x: Self) extends AnyVal {
     
     inline def setCriteriaList(value: IoTJobAbortCriteriaList): Self = StObject.set(x, "criteriaList", value.asInstanceOf[js.Any])
     

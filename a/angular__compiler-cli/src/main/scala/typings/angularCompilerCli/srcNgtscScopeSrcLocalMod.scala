@@ -201,7 +201,8 @@ object srcNgtscScopeSrcLocalMod {
       __obj.asInstanceOf[DeclarationData]
     }
     
-    extension [Self <: DeclarationData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeclarationData] (val x: Self) extends AnyVal {
       
       inline def setNgModule(value: ClassDeclaration[DeclarationNode]): Self = StObject.set(x, "ngModule", value.asInstanceOf[js.Any])
       
@@ -232,7 +233,8 @@ object srcNgtscScopeSrcLocalMod {
       __obj.asInstanceOf[LocalNgModuleData]
     }
     
-    extension [Self <: LocalNgModuleData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LocalNgModuleData] (val x: Self) extends AnyVal {
       
       inline def setDeclarations(value: js.Array[Reference[ClassDeclaration[DeclarationNode]]]): Self = StObject.set(x, "declarations", value.asInstanceOf[js.Any])
       

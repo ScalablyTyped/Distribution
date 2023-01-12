@@ -46,7 +46,8 @@ object LetBinding {
     __obj.asInstanceOf[LetBinding]
   }
   
-  extension [Self <: LetBinding](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LetBinding] (val x: Self) extends AnyVal {
     
     inline def setBind(value: Scope => Unit): Self = StObject.set(x, "bind", js.Any.fromFunction1(value))
     

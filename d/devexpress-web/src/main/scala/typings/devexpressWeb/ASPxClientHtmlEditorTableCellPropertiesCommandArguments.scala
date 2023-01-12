@@ -32,7 +32,8 @@ object ASPxClientHtmlEditorTableCellPropertiesCommandArguments {
     __obj.asInstanceOf[ASPxClientHtmlEditorTableCellPropertiesCommandArguments]
   }
   
-  extension [Self <: ASPxClientHtmlEditorTableCellPropertiesCommandArguments](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientHtmlEditorTableCellPropertiesCommandArguments] (val x: Self) extends AnyVal {
     
     inline def setApplyForAll(value: Boolean): Self = StObject.set(x, "applyForAll", value.asInstanceOf[js.Any])
     

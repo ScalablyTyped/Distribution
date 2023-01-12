@@ -36,7 +36,8 @@ object libComponentsDatePickerDatePickerDottypesMod {
       __obj.asInstanceOf[IDatePicker]
     }
     
-    extension [Self <: IDatePicker](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDatePicker] (val x: Self) extends AnyVal {
       
       inline def setFocus(value: () => Unit): Self = StObject.set(x, "focus", js.Any.fromFunction0(value))
       
@@ -255,7 +256,8 @@ object libComponentsDatePickerDatePickerDottypesMod {
       __obj.asInstanceOf[IDatePickerProps]
     }
     
-    extension [Self <: IDatePickerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDatePickerProps] (val x: Self) extends AnyVal {
       
       inline def setAllFocusable(value: Boolean): Self = StObject.set(x, "allFocusable", value.asInstanceOf[js.Any])
       
@@ -437,7 +439,8 @@ object libComponentsDatePickerDatePickerDottypesMod {
       __obj.asInstanceOf[IDatePickerStrings]
     }
     
-    extension [Self <: IDatePickerStrings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDatePickerStrings] (val x: Self) extends AnyVal {
       
       inline def setInvalidInputErrorMessage(value: String): Self = StObject.set(x, "invalidInputErrorMessage", value.asInstanceOf[js.Any])
       
@@ -480,7 +483,8 @@ object libComponentsDatePickerDatePickerDottypesMod {
       __obj.asInstanceOf[IDatePickerStyleProps]
     }
     
-    extension [Self <: IDatePickerStyleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDatePickerStyleProps] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -532,7 +536,8 @@ object libComponentsDatePickerDatePickerDottypesMod {
       __obj.asInstanceOf[IDatePickerStyles]
     }
     
-    extension [Self <: IDatePickerStyles](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDatePickerStyles] (val x: Self) extends AnyVal {
       
       inline def setCallout(value: IStyle): Self = StObject.set(x, "callout", value.asInstanceOf[js.Any])
       

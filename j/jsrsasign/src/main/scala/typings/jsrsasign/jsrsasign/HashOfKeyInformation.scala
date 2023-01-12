@@ -21,7 +21,8 @@ object HashOfKeyInformation {
     __obj.asInstanceOf[HashOfKeyInformation]
   }
   
-  extension [Self <: HashOfKeyInformation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HashOfKeyInformation] (val x: Self) extends AnyVal {
     
     inline def setCipher(value: String): Self = StObject.set(x, "cipher", value.asInstanceOf[js.Any])
     

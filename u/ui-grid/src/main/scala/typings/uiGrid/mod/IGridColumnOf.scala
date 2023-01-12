@@ -150,7 +150,8 @@ object IGridColumnOf {
     __obj.asInstanceOf[IGridColumnOf[TEntity]]
   }
   
-  extension [Self <: IGridColumnOf[?], TEntity](x: Self & IGridColumnOf[TEntity]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IGridColumnOf[?], TEntity] (val x: Self & IGridColumnOf[TEntity]) extends AnyVal {
     
     inline def setColDef(value: IColumnDefOf[TEntity]): Self = StObject.set(x, "colDef", value.asInstanceOf[js.Any])
     

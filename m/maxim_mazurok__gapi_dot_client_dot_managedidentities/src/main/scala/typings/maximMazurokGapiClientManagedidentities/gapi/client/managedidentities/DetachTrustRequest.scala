@@ -16,7 +16,8 @@ object DetachTrustRequest {
     __obj.asInstanceOf[DetachTrustRequest]
   }
   
-  extension [Self <: DetachTrustRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DetachTrustRequest] (val x: Self) extends AnyVal {
     
     inline def setTrust(value: Trust): Self = StObject.set(x, "trust", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object CustomLines {
     __obj.asInstanceOf[CustomLines]
   }
   
-  extension [Self <: CustomLines](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomLines] (val x: Self) extends AnyVal {
     
     inline def setAddNewLine(value: () => CustomLine): Self = StObject.set(x, "addNewLine", js.Any.fromFunction0(value))
     

@@ -19,7 +19,8 @@ object ThirdPartyTrackingUrl {
     __obj.asInstanceOf[ThirdPartyTrackingUrl]
   }
   
-  extension [Self <: ThirdPartyTrackingUrl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ThirdPartyTrackingUrl] (val x: Self) extends AnyVal {
     
     inline def setThirdPartyUrlType(value: String): Self = StObject.set(x, "thirdPartyUrlType", value.asInstanceOf[js.Any])
     

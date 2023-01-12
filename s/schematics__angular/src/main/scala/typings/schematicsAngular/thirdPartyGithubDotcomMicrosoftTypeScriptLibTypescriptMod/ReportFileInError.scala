@@ -17,7 +17,8 @@ object ReportFileInError {
     __obj.asInstanceOf[ReportFileInError]
   }
   
-  extension [Self <: ReportFileInError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReportFileInError] (val x: Self) extends AnyVal {
     
     inline def setFileName(value: java.lang.String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
     

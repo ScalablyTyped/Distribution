@@ -39,7 +39,8 @@ object PlotTreemapOnPointPositionOptions {
     __obj.asInstanceOf[PlotTreemapOnPointPositionOptions]
   }
   
-  extension [Self <: PlotTreemapOnPointPositionOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotTreemapOnPointPositionOptions] (val x: Self) extends AnyVal {
     
     inline def setOffsetX(value: Double): Self = StObject.set(x, "offsetX", value.asInstanceOf[js.Any])
     

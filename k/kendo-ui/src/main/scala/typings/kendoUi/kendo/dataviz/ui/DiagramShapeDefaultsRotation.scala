@@ -15,7 +15,8 @@ object DiagramShapeDefaultsRotation {
     __obj.asInstanceOf[DiagramShapeDefaultsRotation]
   }
   
-  extension [Self <: DiagramShapeDefaultsRotation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DiagramShapeDefaultsRotation] (val x: Self) extends AnyVal {
     
     inline def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
     

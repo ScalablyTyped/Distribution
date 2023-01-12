@@ -25,7 +25,8 @@ object MediaSessionActionDetails {
     __obj.asInstanceOf[MediaSessionActionDetails]
   }
   
-  extension [Self <: MediaSessionActionDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MediaSessionActionDetails] (val x: Self) extends AnyVal {
     
     inline def setAction(value: MediaSessionAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     

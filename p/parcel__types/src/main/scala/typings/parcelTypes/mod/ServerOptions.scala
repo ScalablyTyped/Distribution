@@ -23,7 +23,8 @@ object ServerOptions {
     __obj.asInstanceOf[ServerOptions]
   }
   
-  extension [Self <: ServerOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServerOptions] (val x: Self) extends AnyVal {
     
     inline def setDistDir(value: FilePath): Self = StObject.set(x, "distDir", value.asInstanceOf[js.Any])
     

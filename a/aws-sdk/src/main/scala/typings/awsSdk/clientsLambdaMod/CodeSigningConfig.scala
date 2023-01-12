@@ -49,7 +49,8 @@ object CodeSigningConfig {
     __obj.asInstanceOf[CodeSigningConfig]
   }
   
-  extension [Self <: CodeSigningConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CodeSigningConfig] (val x: Self) extends AnyVal {
     
     inline def setAllowedPublishers(value: AllowedPublishers): Self = StObject.set(x, "AllowedPublishers", value.asInstanceOf[js.Any])
     

@@ -297,7 +297,8 @@ object sapUiTableRowSettingsMod {
       __obj.asInstanceOf[RowSettingsSettings]
     }
     
-    extension [Self <: RowSettingsSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RowSettingsSettings] (val x: Self) extends AnyVal {
       
       inline def setHighlight(value: String | PropertyBindingInfo): Self = StObject.set(x, "highlight", value.asInstanceOf[js.Any])
       

@@ -18,7 +18,8 @@ object InstanceIpv6AddressRequest {
     __obj.asInstanceOf[InstanceIpv6AddressRequest]
   }
   
-  extension [Self <: InstanceIpv6AddressRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InstanceIpv6AddressRequest] (val x: Self) extends AnyVal {
     
     inline def setIpv6Address(value: String): Self = StObject.set(x, "Ipv6Address", value.asInstanceOf[js.Any])
     

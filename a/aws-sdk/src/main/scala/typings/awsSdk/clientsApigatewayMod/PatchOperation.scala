@@ -33,7 +33,8 @@ object PatchOperation {
     __obj.asInstanceOf[PatchOperation]
   }
   
-  extension [Self <: PatchOperation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PatchOperation] (val x: Self) extends AnyVal {
     
     inline def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     

@@ -25,7 +25,8 @@ object TimeSeriesCollectionOptions {
     __obj.asInstanceOf[TimeSeriesCollectionOptions]
   }
   
-  extension [Self <: TimeSeriesCollectionOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimeSeriesCollectionOptions] (val x: Self) extends AnyVal {
     
     inline def setGranularity(value: seconds | minutes | hours | String): Self = StObject.set(x, "granularity", value.asInstanceOf[js.Any])
     

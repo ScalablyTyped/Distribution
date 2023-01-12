@@ -33,7 +33,8 @@ object ResponseHeadersPolicyStrictTransportSecurity {
     __obj.asInstanceOf[ResponseHeadersPolicyStrictTransportSecurity]
   }
   
-  extension [Self <: ResponseHeadersPolicyStrictTransportSecurity](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResponseHeadersPolicyStrictTransportSecurity] (val x: Self) extends AnyVal {
     
     inline def setAccessControlMaxAgeSec(value: integer): Self = StObject.set(x, "AccessControlMaxAgeSec", value.asInstanceOf[js.Any])
     

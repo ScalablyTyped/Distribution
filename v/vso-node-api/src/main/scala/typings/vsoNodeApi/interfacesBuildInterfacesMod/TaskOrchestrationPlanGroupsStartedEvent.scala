@@ -15,7 +15,8 @@ object TaskOrchestrationPlanGroupsStartedEvent {
     __obj.asInstanceOf[TaskOrchestrationPlanGroupsStartedEvent]
   }
   
-  extension [Self <: TaskOrchestrationPlanGroupsStartedEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TaskOrchestrationPlanGroupsStartedEvent] (val x: Self) extends AnyVal {
     
     inline def setPlanGroups(value: js.Array[TaskOrchestrationPlanGroupReference]): Self = StObject.set(x, "planGroups", value.asInstanceOf[js.Any])
     

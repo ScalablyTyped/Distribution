@@ -33,7 +33,8 @@ object Verification {
     __obj.asInstanceOf[Verification]
   }
   
-  extension [Self <: Verification](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Verification] (val x: Self) extends AnyVal {
     
     inline def setAuthor(value: DateEmailName): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
     

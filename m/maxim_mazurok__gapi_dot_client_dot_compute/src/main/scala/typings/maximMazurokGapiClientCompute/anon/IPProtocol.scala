@@ -25,7 +25,8 @@ object IPProtocol {
     __obj.asInstanceOf[IPProtocol]
   }
   
-  extension [Self <: IPProtocol](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPProtocol] (val x: Self) extends AnyVal {
     
     inline def setIPProtocol(value: String): Self = StObject.set(x, "IPProtocol", value.asInstanceOf[js.Any])
     

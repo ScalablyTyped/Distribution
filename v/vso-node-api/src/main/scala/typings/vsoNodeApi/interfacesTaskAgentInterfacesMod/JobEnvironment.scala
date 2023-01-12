@@ -36,7 +36,8 @@ object JobEnvironment {
     __obj.asInstanceOf[JobEnvironment]
   }
   
-  extension [Self <: JobEnvironment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JobEnvironment] (val x: Self) extends AnyVal {
     
     inline def setEndpoints(value: js.Array[ServiceEndpoint]): Self = StObject.set(x, "endpoints", value.asInstanceOf[js.Any])
     

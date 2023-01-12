@@ -17,7 +17,8 @@ object anon {
       __obj.asInstanceOf[`0`]
     }
     
-    extension [Self <: `0`](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: `0`] (val x: Self) extends AnyVal {
       
       inline def setSize(value: () => Double): Self = StObject.set(x, "size", js.Any.fromFunction0(value))
     }
@@ -34,7 +35,8 @@ object anon {
       __obj.asInstanceOf[ForEach[T]]
     }
     
-    extension [Self <: ForEach[?], T](x: Self & ForEach[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ForEach[?], T] (val x: Self & ForEach[T]) extends AnyVal {
       
       inline def setForEach(value: js.Function1[/* element */ T, Unit] => Unit): Self = StObject.set(x, "forEach", js.Any.fromFunction1(value))
     }
@@ -51,7 +53,8 @@ object anon {
       __obj.asInstanceOf[Length]
     }
     
-    extension [Self <: Length](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Length] (val x: Self) extends AnyVal {
       
       inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     }
@@ -68,7 +71,8 @@ object anon {
       __obj.asInstanceOf[Size]
     }
     
-    extension [Self <: Size](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Size] (val x: Self) extends AnyVal {
       
       inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     }

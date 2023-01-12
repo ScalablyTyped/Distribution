@@ -27,7 +27,8 @@ object Inset {
     __obj.asInstanceOf[Inset]
   }
   
-  extension [Self <: Inset](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Inset] (val x: Self) extends AnyVal {
     
     inline def setInset(value: Boolean): Self = StObject.set(x, "inset", value.asInstanceOf[js.Any])
     

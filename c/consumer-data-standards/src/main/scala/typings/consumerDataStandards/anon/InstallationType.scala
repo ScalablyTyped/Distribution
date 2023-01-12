@@ -65,7 +65,8 @@ object InstallationType {
     __obj.asInstanceOf[InstallationType]
   }
   
-  extension [Self <: InstallationType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InstallationType] (val x: Self) extends AnyVal {
     
     inline def setInstallationType(
       value: BASIC | COMMS1 | COMMS2 | COMMS3 | COMMS4 | COMMS4C | COMMS4D | MRAM | MRIM | PROF | SAMPLE | UMCP | VICAMI | NCOLNUML

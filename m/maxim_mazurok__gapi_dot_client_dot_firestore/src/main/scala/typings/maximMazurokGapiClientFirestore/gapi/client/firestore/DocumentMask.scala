@@ -16,7 +16,8 @@ object DocumentMask {
     __obj.asInstanceOf[DocumentMask]
   }
   
-  extension [Self <: DocumentMask](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DocumentMask] (val x: Self) extends AnyVal {
     
     inline def setFieldPaths(value: js.Array[String]): Self = StObject.set(x, "fieldPaths", value.asInstanceOf[js.Any])
     

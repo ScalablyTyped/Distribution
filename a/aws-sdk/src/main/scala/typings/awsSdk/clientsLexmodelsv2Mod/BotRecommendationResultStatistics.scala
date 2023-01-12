@@ -23,7 +23,8 @@ object BotRecommendationResultStatistics {
     __obj.asInstanceOf[BotRecommendationResultStatistics]
   }
   
-  extension [Self <: BotRecommendationResultStatistics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BotRecommendationResultStatistics] (val x: Self) extends AnyVal {
     
     inline def setIntents(value: IntentStatistics): Self = StObject.set(x, "intents", value.asInstanceOf[js.Any])
     

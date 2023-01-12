@@ -130,7 +130,8 @@ object XDocument {
     __obj.asInstanceOf[XDocument]
   }
   
-  extension [Self <: XDocument](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XDocument] (val x: Self) extends AnyVal {
     
     inline def setCreateDOM(value: () => IXMLDOMDocument): Self = StObject.set(x, "CreateDOM", js.Any.fromFunction0(value))
     

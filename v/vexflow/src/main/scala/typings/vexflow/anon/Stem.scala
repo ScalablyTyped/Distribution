@@ -19,7 +19,8 @@ object Stem {
     __obj.asInstanceOf[Stem]
   }
   
-  extension [Self <: Stem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Stem] (val x: Self) extends AnyVal {
     
     inline def setClef(value: String): Self = StObject.set(x, "clef", value.asInstanceOf[js.Any])
     

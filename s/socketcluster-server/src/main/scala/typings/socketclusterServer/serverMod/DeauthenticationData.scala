@@ -18,7 +18,8 @@ object DeauthenticationData {
     __obj.asInstanceOf[DeauthenticationData]
   }
   
-  extension [Self <: DeauthenticationData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeauthenticationData] (val x: Self) extends AnyVal {
     
     inline def setSocket(value: typings.socketclusterServer.serversocketMod.^): Self = StObject.set(x, "socket", value.asInstanceOf[js.Any])
   }

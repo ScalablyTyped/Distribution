@@ -23,7 +23,8 @@ object ClusterStateChangeReason {
     __obj.asInstanceOf[ClusterStateChangeReason]
   }
   
-  extension [Self <: ClusterStateChangeReason](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClusterStateChangeReason] (val x: Self) extends AnyVal {
     
     inline def setCode(value: ClusterStateChangeReasonCode): Self = StObject.set(x, "Code", value.asInstanceOf[js.Any])
     

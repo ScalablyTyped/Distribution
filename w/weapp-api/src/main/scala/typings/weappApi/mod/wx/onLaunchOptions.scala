@@ -27,7 +27,8 @@ object onLaunchOptions {
     __obj.asInstanceOf[onLaunchOptions]
   }
   
-  extension [Self <: onLaunchOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: onLaunchOptions] (val x: Self) extends AnyVal {
     
     inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     

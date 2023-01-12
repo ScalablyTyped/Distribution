@@ -22,7 +22,8 @@ object SidebarHeaderProps {
     __obj.asInstanceOf[SidebarHeaderProps[Data]]
   }
   
-  extension [Self <: SidebarHeaderProps[?], Data](x: Self & SidebarHeaderProps[Data]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SidebarHeaderProps[?], Data] (val x: Self & SidebarHeaderProps[Data]) extends AnyVal {
     
     inline def setChildren(value: SidebarHeaderChildrenFnProps[Data] => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
     

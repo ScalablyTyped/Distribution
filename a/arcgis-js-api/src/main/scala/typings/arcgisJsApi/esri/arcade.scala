@@ -47,7 +47,8 @@ object arcade {
     __obj.asInstanceOf[arcade]
   }
   
-  extension [Self <: arcade](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: arcade] (val x: Self) extends AnyVal {
     
     inline def setCreateArcadeExecutor(value: (String, Profile) => js.Promise[ArcadeExecutor]): Self = StObject.set(x, "createArcadeExecutor", js.Any.fromFunction2(value))
     

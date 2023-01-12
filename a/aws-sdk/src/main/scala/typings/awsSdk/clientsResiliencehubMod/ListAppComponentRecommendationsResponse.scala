@@ -23,7 +23,8 @@ object ListAppComponentRecommendationsResponse {
     __obj.asInstanceOf[ListAppComponentRecommendationsResponse]
   }
   
-  extension [Self <: ListAppComponentRecommendationsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListAppComponentRecommendationsResponse] (val x: Self) extends AnyVal {
     
     inline def setComponentRecommendations(value: ComponentRecommendationList): Self = StObject.set(x, "componentRecommendations", value.asInstanceOf[js.Any])
     

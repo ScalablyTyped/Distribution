@@ -23,7 +23,8 @@ object UserGroupsUpdateStatus {
     __obj.asInstanceOf[UserGroupsUpdateStatus]
   }
   
-  extension [Self <: UserGroupsUpdateStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UserGroupsUpdateStatus] (val x: Self) extends AnyVal {
     
     inline def setUserGroupIdsToAdd(value: UserGroupIdList): Self = StObject.set(x, "UserGroupIdsToAdd", value.asInstanceOf[js.Any])
     

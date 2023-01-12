@@ -24,7 +24,8 @@ object KikPickUsersOptions {
     __obj.asInstanceOf[KikPickUsersOptions]
   }
   
-  extension [Self <: KikPickUsersOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KikPickUsersOptions] (val x: Self) extends AnyVal {
     
     inline def setFilterSelf(value: Boolean): Self = StObject.set(x, "filterSelf", value.asInstanceOf[js.Any])
     

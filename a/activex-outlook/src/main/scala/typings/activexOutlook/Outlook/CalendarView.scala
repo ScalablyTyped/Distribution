@@ -119,7 +119,8 @@ object CalendarView {
     __obj.asInstanceOf[CalendarView]
   }
   
-  extension [Self <: CalendarView](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CalendarView] (val x: Self) extends AnyVal {
     
     inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     

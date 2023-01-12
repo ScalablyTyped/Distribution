@@ -27,7 +27,8 @@ object KnowledgeGraphProperties {
     __obj.asInstanceOf[KnowledgeGraphProperties]
   }
   
-  extension [Self <: KnowledgeGraphProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KnowledgeGraphProperties] (val x: Self) extends AnyVal {
     
     inline def setDataModel(value: DataModelProperties): Self = StObject.set(x, "dataModel", value.asInstanceOf[js.Any])
     

@@ -25,7 +25,8 @@ object R3DeclareDependencyMetadataFacade {
     __obj.asInstanceOf[R3DeclareDependencyMetadataFacade]
   }
   
-  extension [Self <: R3DeclareDependencyMetadataFacade](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: R3DeclareDependencyMetadataFacade] (val x: Self) extends AnyVal {
     
     inline def setAttribute(value: Boolean): Self = StObject.set(x, "attribute", value.asInstanceOf[js.Any])
     

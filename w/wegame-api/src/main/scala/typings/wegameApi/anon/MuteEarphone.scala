@@ -23,7 +23,8 @@ object MuteEarphone {
     __obj.asInstanceOf[MuteEarphone]
   }
   
-  extension [Self <: MuteEarphone](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MuteEarphone] (val x: Self) extends AnyVal {
     
     inline def setMuteEarphone(value: Boolean): Self = StObject.set(x, "muteEarphone", value.asInstanceOf[js.Any])
     

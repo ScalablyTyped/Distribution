@@ -20,7 +20,8 @@ object DataUriOptions {
     __obj.asInstanceOf[DataUriOptions]
   }
   
-  extension [Self <: DataUriOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataUriOptions] (val x: Self) extends AnyVal {
     
     inline def setPaddingRequired(value: Boolean): Self = StObject.set(x, "paddingRequired", value.asInstanceOf[js.Any])
     

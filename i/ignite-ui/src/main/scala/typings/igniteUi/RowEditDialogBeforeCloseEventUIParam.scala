@@ -23,7 +23,8 @@ object RowEditDialogBeforeCloseEventUIParam {
     __obj.asInstanceOf[RowEditDialogBeforeCloseEventUIParam]
   }
   
-  extension [Self <: RowEditDialogBeforeCloseEventUIParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RowEditDialogBeforeCloseEventUIParam] (val x: Self) extends AnyVal {
     
     inline def setDialogElement(value: Any): Self = StObject.set(x, "dialogElement", value.asInstanceOf[js.Any])
     

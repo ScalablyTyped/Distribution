@@ -22,7 +22,8 @@ object WidgetClassOptions {
     __obj.asInstanceOf[WidgetClassOptions]
   }
   
-  extension [Self <: WidgetClassOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WidgetClassOptions] (val x: Self) extends AnyVal {
     
     inline def setAttributes(value: Record[String, Attribute | AttributeWithOptions]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     

@@ -43,7 +43,8 @@ object AccountsSettingsPaneCommandsRequestedEventArgs {
     __obj.asInstanceOf[AccountsSettingsPaneCommandsRequestedEventArgs]
   }
   
-  extension [Self <: AccountsSettingsPaneCommandsRequestedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccountsSettingsPaneCommandsRequestedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setCommands(value: IVector[SettingsCommand]): Self = StObject.set(x, "commands", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object ReceivedDate {
     __obj.asInstanceOf[ReceivedDate]
   }
   
-  extension [Self <: ReceivedDate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReceivedDate] (val x: Self) extends AnyVal {
     
     inline def setReceivedDate(value: String | js.Date): Self = StObject.set(x, "receivedDate", value.asInstanceOf[js.Any])
     

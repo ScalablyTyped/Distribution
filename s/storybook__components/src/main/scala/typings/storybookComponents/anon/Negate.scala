@@ -17,7 +17,8 @@ object Negate {
     __obj.asInstanceOf[Negate]
   }
   
-  extension [Self <: Negate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Negate] (val x: Self) extends AnyVal {
     
     inline def setGroupId(value: js.Symbol): Self = StObject.set(x, "groupId", value.asInstanceOf[js.Any])
     

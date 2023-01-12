@@ -27,7 +27,8 @@ object mod {
       __obj.asInstanceOf[RedisOptions]
     }
     
-    extension [Self <: RedisOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RedisOptions] (val x: Self) extends AnyVal {
       
       inline def setClient(value: Any): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
       

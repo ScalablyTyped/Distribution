@@ -37,7 +37,8 @@ object BaseChartLegend {
     __obj.asInstanceOf[BaseChartLegend]
   }
   
-  extension [Self <: BaseChartLegend](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BaseChartLegend] (val x: Self) extends AnyVal {
     
     inline def setCustomizeItems(value: /* items */ js.Array[BaseChartLegendItem] => js.Array[BaseChartLegendItem]): Self = StObject.set(x, "customizeItems", js.Any.fromFunction1(value))
     

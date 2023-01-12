@@ -36,7 +36,8 @@ object ClientSideLoggingObject {
     __obj.asInstanceOf[ClientSideLoggingObject]
   }
   
-  extension [Self <: ClientSideLoggingObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClientSideLoggingObject] (val x: Self) extends AnyVal {
     
     inline def setClient_info(value: ClientSideLoggingClientInfoObject): Self = StObject.set(x, "client_info", value.asInstanceOf[js.Any])
     

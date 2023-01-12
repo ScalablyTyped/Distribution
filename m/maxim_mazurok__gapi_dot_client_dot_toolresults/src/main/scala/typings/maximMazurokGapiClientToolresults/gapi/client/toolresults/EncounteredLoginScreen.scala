@@ -19,7 +19,8 @@ object EncounteredLoginScreen {
     __obj.asInstanceOf[EncounteredLoginScreen]
   }
   
-  extension [Self <: EncounteredLoginScreen](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EncounteredLoginScreen] (val x: Self) extends AnyVal {
     
     inline def setDistinctScreens(value: Double): Self = StObject.set(x, "distinctScreens", value.asInstanceOf[js.Any])
     

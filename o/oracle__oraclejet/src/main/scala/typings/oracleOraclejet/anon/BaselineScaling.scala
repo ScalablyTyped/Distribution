@@ -91,7 +91,8 @@ object BaselineScaling {
     __obj.asInstanceOf[BaselineScaling]
   }
   
-  extension [Self <: BaselineScaling](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BaselineScaling] (val x: Self) extends AnyVal {
     
     inline def setAxisLine(value: LineColorLineWidth): Self = StObject.set(x, "axisLine", value.asInstanceOf[js.Any])
     

@@ -43,7 +43,8 @@ object AliasConfiguration {
     __obj.asInstanceOf[AliasConfiguration]
   }
   
-  extension [Self <: AliasConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AliasConfiguration] (val x: Self) extends AnyVal {
     
     inline def setAliasArn(value: FunctionArn): Self = StObject.set(x, "AliasArn", value.asInstanceOf[js.Any])
     

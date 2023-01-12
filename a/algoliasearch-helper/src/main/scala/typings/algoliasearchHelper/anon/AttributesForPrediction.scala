@@ -19,7 +19,8 @@ object AttributesForPrediction {
     __obj.asInstanceOf[AttributesForPrediction]
   }
   
-  extension [Self <: AttributesForPrediction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AttributesForPrediction] (val x: Self) extends AnyVal {
     
     inline def setAttributesForPrediction(value: js.Array[String]): Self = StObject.set(x, "attributesForPrediction", value.asInstanceOf[js.Any])
     

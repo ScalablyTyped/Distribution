@@ -55,7 +55,8 @@ object ReadonlyToStringOptions {
     __obj.asInstanceOf[ReadonlyToStringOptions]
   }
   
-  extension [Self <: ReadonlyToStringOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadonlyToStringOptions] (val x: Self) extends AnyVal {
     
     inline def setBlockQuote(value: Boolean | folded | literal): Self = StObject.set(x, "blockQuote", value.asInstanceOf[js.Any])
     

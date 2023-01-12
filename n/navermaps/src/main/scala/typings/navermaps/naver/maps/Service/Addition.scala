@@ -18,7 +18,8 @@ object Addition {
     __obj.asInstanceOf[Addition]
   }
   
-  extension [Self <: Addition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Addition] (val x: Self) extends AnyVal {
     
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

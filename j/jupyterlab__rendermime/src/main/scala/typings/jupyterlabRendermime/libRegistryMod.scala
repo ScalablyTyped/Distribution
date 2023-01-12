@@ -155,7 +155,8 @@ object libRegistryMod {
         __obj.asInstanceOf[IOptions]
       }
       
-      extension [Self <: IOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
         
         inline def setInitialFactories(value: js.Array[IRendererFactory]): Self = StObject.set(x, "initialFactories", value.asInstanceOf[js.Any])
         
@@ -223,7 +224,8 @@ object libRegistryMod {
         __obj.asInstanceOf[IUrlResolverOptions]
       }
       
-      extension [Self <: IUrlResolverOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IUrlResolverOptions] (val x: Self) extends AnyVal {
         
         inline def setContents(value: IManager): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
         

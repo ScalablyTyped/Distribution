@@ -18,7 +18,8 @@ object MeasurementProcessingConfig {
     __obj.asInstanceOf[MeasurementProcessingConfig]
   }
   
-  extension [Self <: MeasurementProcessingConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MeasurementProcessingConfig] (val x: Self) extends AnyVal {
     
     inline def setForwardingConfig(value: ForwardingConfig): Self = StObject.set(x, "forwardingConfig", value.asInstanceOf[js.Any])
   }

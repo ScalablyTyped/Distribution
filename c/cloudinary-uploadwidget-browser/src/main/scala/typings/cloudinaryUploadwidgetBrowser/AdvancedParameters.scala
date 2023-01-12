@@ -54,7 +54,8 @@ object AdvancedParameters {
     __obj.asInstanceOf[AdvancedParameters]
   }
   
-  extension [Self <: AdvancedParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AdvancedParameters] (val x: Self) extends AnyVal {
     
     inline def setAutoMinimize(value: Boolean): Self = StObject.set(x, "autoMinimize", value.asInstanceOf[js.Any])
     

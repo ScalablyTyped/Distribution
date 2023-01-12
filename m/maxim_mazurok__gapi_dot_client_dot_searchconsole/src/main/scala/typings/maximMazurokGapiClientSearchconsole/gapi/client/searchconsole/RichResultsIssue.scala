@@ -19,7 +19,8 @@ object RichResultsIssue {
     __obj.asInstanceOf[RichResultsIssue]
   }
   
-  extension [Self <: RichResultsIssue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RichResultsIssue] (val x: Self) extends AnyVal {
     
     inline def setIssueMessage(value: String): Self = StObject.set(x, "issueMessage", value.asInstanceOf[js.Any])
     

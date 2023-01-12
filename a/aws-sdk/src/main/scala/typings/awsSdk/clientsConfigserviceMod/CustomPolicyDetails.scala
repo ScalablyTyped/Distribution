@@ -28,7 +28,8 @@ object CustomPolicyDetails {
     __obj.asInstanceOf[CustomPolicyDetails]
   }
   
-  extension [Self <: CustomPolicyDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomPolicyDetails] (val x: Self) extends AnyVal {
     
     inline def setEnableDebugLogDelivery(value: Boolean): Self = StObject.set(x, "EnableDebugLogDelivery", value.asInstanceOf[js.Any])
     

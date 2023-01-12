@@ -22,7 +22,8 @@ object NEMMosaicSupplyChange {
     __obj.asInstanceOf[NEMMosaicSupplyChange]
   }
   
-  extension [Self <: NEMMosaicSupplyChange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NEMMosaicSupplyChange] (val x: Self) extends AnyVal {
     
     inline def setDelta(value: Double): Self = StObject.set(x, "delta", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object DataTableCustomBatchActionsProps {
     __obj.asInstanceOf[DataTableCustomBatchActionsProps]
   }
   
-  extension [Self <: DataTableCustomBatchActionsProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataTableCustomBatchActionsProps] (val x: Self) extends AnyVal {
     
     inline def setOnCancel(value: () => Unit): Self = StObject.set(x, "onCancel", js.Any.fromFunction0(value))
     

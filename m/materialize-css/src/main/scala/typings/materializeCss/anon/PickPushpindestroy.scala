@@ -18,7 +18,8 @@ object PickPushpindestroy {
     __obj.asInstanceOf[PickPushpindestroy]
   }
   
-  extension [Self <: PickPushpindestroy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickPushpindestroy] (val x: Self) extends AnyVal {
     
     inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
   }

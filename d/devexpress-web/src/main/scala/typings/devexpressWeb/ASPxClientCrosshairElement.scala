@@ -21,7 +21,8 @@ object ASPxClientCrosshairElement {
     __obj.asInstanceOf[ASPxClientCrosshairElement]
   }
   
-  extension [Self <: ASPxClientCrosshairElement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientCrosshairElement] (val x: Self) extends AnyVal {
     
     inline def setSeries(value: ASPxClientSeries): Self = StObject.set(x, "Series", value.asInstanceOf[js.Any])
   }

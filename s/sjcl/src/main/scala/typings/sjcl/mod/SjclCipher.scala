@@ -17,7 +17,8 @@ object SjclCipher {
     __obj.asInstanceOf[SjclCipher]
   }
   
-  extension [Self <: SjclCipher](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SjclCipher] (val x: Self) extends AnyVal {
     
     inline def setDecrypt(value: js.Array[Double] => js.Array[Double]): Self = StObject.set(x, "decrypt", js.Any.fromFunction1(value))
     

@@ -21,7 +21,8 @@ object ScriptDefinition {
     __obj.asInstanceOf[ScriptDefinition]
   }
   
-  extension [Self <: ScriptDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScriptDefinition] (val x: Self) extends AnyVal {
     
     inline def setExec(value: String | js.Array[String]): Self = StObject.set(x, "exec", value.asInstanceOf[js.Any])
     

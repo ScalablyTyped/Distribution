@@ -79,7 +79,8 @@ object croppedImageControlMod {
       __obj.asInstanceOf[ImageSelectOptions]
     }
     
-    extension [Self <: ImageSelectOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ImageSelectOptions] (val x: Self) extends AnyVal {
       
       inline def setAspectRatio(value: String): Self = StObject.set(x, "aspectRatio", value.asInstanceOf[js.Any])
       

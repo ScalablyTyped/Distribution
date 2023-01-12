@@ -36,7 +36,8 @@ object outSrcCpuProfilerMod {
       __obj.asInstanceOf[CpuProfiler]
     }
     
-    extension [Self <: CpuProfiler](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CpuProfiler] (val x: Self) extends AnyVal {
       
       inline def setProfile(
         value: () => js.UndefOr[

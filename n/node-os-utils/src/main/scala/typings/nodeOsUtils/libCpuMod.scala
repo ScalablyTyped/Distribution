@@ -50,7 +50,8 @@ object libCpuMod {
       __obj.asInstanceOf[CpuAverageInfo]
     }
     
-    extension [Self <: CpuAverageInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CpuAverageInfo] (val x: Self) extends AnyVal {
       
       inline def setAvgIdle(value: Double): Self = StObject.set(x, "avgIdle", value.asInstanceOf[js.Any])
       

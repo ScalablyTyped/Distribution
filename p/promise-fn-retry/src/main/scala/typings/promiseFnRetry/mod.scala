@@ -28,7 +28,8 @@ object mod {
       __obj.asInstanceOf[RetryControlOptions]
     }
     
-    extension [Self <: RetryControlOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RetryControlOptions] (val x: Self) extends AnyVal {
       
       inline def setCurrentDelay(value: Double): Self = StObject.set(x, "currentDelay", value.asInstanceOf[js.Any])
       
@@ -55,7 +56,8 @@ object mod {
       __obj.asInstanceOf[RetryOptions]
     }
     
-    extension [Self <: RetryOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RetryOptions] (val x: Self) extends AnyVal {
       
       inline def setInitialDelayTime(value: Double): Self = StObject.set(x, "initialDelayTime", value.asInstanceOf[js.Any])
       

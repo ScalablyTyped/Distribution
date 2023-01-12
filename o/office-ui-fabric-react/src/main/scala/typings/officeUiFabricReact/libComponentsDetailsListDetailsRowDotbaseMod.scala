@@ -102,7 +102,8 @@ object libComponentsDetailsListDetailsRowDotbaseMod {
       __obj.asInstanceOf[IDetailsRowSelectionState]
     }
     
-    extension [Self <: IDetailsRowSelectionState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDetailsRowSelectionState] (val x: Self) extends AnyVal {
       
       inline def setIsSelected(value: Boolean): Self = StObject.set(x, "isSelected", value.asInstanceOf[js.Any])
       
@@ -125,7 +126,8 @@ object libComponentsDetailsListDetailsRowDotbaseMod {
       __obj.asInstanceOf[IDetailsRowState]
     }
     
-    extension [Self <: IDetailsRowState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDetailsRowState] (val x: Self) extends AnyVal {
       
       inline def setColumnMeasureInfo(value: Column): Self = StObject.set(x, "columnMeasureInfo", value.asInstanceOf[js.Any])
       

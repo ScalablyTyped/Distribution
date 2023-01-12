@@ -30,7 +30,8 @@ object SFCTemplateCompileResults {
     __obj.asInstanceOf[SFCTemplateCompileResults]
   }
   
-  extension [Self <: SFCTemplateCompileResults](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SFCTemplateCompileResults] (val x: Self) extends AnyVal {
     
     inline def setAst(value: RootNode): Self = StObject.set(x, "ast", value.asInstanceOf[js.Any])
     

@@ -93,7 +93,8 @@ object libErrorDetailedErrorMod {
       __obj.asInstanceOf[DetailedError]
     }
     
-    extension [Self <: DetailedError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DetailedError] (val x: Self) extends AnyVal {
       
       inline def setCode(value: String | Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       

@@ -23,7 +23,8 @@ object ReadonlyactionLOGfieldsAr {
     __obj.asInstanceOf[ReadonlyactionLOGfieldsAr]
   }
   
-  extension [Self <: ReadonlyactionLOGfieldsAr](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadonlyactionLOGfieldsAr] (val x: Self) extends AnyVal {
     
     inline def setAction(value: LOG): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     

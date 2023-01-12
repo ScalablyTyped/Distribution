@@ -27,7 +27,8 @@ object distTypesGeneralDistComponentsTableChartMod extends Shortcut {
       __obj.asInstanceOf[TableChartProps]
     }
     
-    extension [Self <: TableChartProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TableChartProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

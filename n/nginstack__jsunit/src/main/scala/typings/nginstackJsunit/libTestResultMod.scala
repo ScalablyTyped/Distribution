@@ -96,7 +96,8 @@ object libTestResultMod {
       __obj.asInstanceOf[TestResult]
     }
     
-    extension [Self <: TestResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TestResult] (val x: Self) extends AnyVal {
       
       inline def setErrorCount(value: Double): Self = StObject.set(x, "errorCount", value.asInstanceOf[js.Any])
       

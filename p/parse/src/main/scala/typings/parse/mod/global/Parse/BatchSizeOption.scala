@@ -15,7 +15,8 @@ object BatchSizeOption {
     __obj.asInstanceOf[BatchSizeOption]
   }
   
-  extension [Self <: BatchSizeOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchSizeOption] (val x: Self) extends AnyVal {
     
     inline def setBatchSize(value: Double): Self = StObject.set(x, "batchSize", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object ResourceGroupFilter {
     __obj.asInstanceOf[ResourceGroupFilter]
   }
   
-  extension [Self <: ResourceGroupFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResourceGroupFilter] (val x: Self) extends AnyVal {
     
     inline def setTagName(value: String): Self = StObject.set(x, "tagName", value.asInstanceOf[js.Any])
     

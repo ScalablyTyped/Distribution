@@ -17,7 +17,8 @@ object HmacOptions {
     __obj.asInstanceOf[HmacOptions]
   }
   
-  extension [Self <: HmacOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HmacOptions] (val x: Self) extends AnyVal {
     
     inline def setAlgorithm(value: String): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
     

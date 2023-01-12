@@ -147,7 +147,8 @@ object mod {
       __obj.asInstanceOf[KeyboardOptions]
     }
     
-    extension [Self <: KeyboardOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KeyboardOptions] (val x: Self) extends AnyVal {
       
       inline def setAcceptValid(value: Boolean): Self = StObject.set(x, "acceptValid", value.asInstanceOf[js.Any])
       
@@ -446,7 +447,8 @@ object mod {
       __obj.asInstanceOf[NavigateOptions]
     }
     
-    extension [Self <: NavigateOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NavigateOptions] (val x: Self) extends AnyVal {
       
       inline def setFocusClass(value: String): Self = StObject.set(x, "focusClass", value.asInstanceOf[js.Any])
       
@@ -483,7 +485,8 @@ object mod {
         __obj.asInstanceOf[JQuery]
       }
       
-      extension [Self <: JQuery](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: JQuery] (val x: Self) extends AnyVal {
         
         inline def setAddNavigation(value: NavigateOptions => JQuery): Self = StObject.set(x, "addNavigation", js.Any.fromFunction1(value))
         

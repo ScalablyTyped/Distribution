@@ -18,7 +18,8 @@ object libApiSubscriptionOptionsMod {
       __obj.asInstanceOf[SubscriptionOptions]
     }
     
-    extension [Self <: SubscriptionOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SubscriptionOptions] (val x: Self) extends AnyVal {
       
       inline def setDelegate(value: SubscriptionDelegate): Self = StObject.set(x, "delegate", value.asInstanceOf[js.Any])
       

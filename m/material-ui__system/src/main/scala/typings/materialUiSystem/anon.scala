@@ -21,7 +21,8 @@ object anon {
       __obj.asInstanceOf[Css[Props]]
     }
     
-    extension [Self <: Css[?], Props](x: Self & Css[Props]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Css[?], Props] (val x: Self & Css[Props]) extends AnyVal {
       
       inline def setCss(value: Omit[Props, theme]): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
       
@@ -46,7 +47,8 @@ object anon {
       __obj.asInstanceOf[Sx[Props]]
     }
     
-    extension [Self <: Sx[?], Props](x: Self & Sx[Props]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Sx[?], Props] (val x: Self & Sx[Props]) extends AnyVal {
       
       inline def setCss(value: Omit[Props, theme]): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
       
@@ -69,7 +71,8 @@ object anon {
       __obj.asInstanceOf[ThemeTheme[Theme]]
     }
     
-    extension [Self <: ThemeTheme[?], Theme /* <: js.Object */](x: Self & ThemeTheme[Theme]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ThemeTheme[?], Theme /* <: js.Object */] (val x: Self & ThemeTheme[Theme]) extends AnyVal {
       
       inline def setTheme(value: Theme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     }

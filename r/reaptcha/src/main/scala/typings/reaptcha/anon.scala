@@ -27,7 +27,8 @@ object anon {
       __obj.asInstanceOf[Invisible]
     }
     
-    extension [Self <: Invisible](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Invisible] (val x: Self) extends AnyVal {
       
       inline def setInvisible(value: Boolean): Self = StObject.set(x, "invisible", value.asInstanceOf[js.Any])
     }
@@ -77,7 +78,8 @@ object anon {
       __obj.asInstanceOf[ReadonlyProps]
     }
     
-    extension [Self <: ReadonlyProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadonlyProps] (val x: Self) extends AnyVal {
       
       inline def setBadge(value: bottomright | bottomleft | `inline`): Self = StObject.set(x, "badge", value.asInstanceOf[js.Any])
       

@@ -36,7 +36,8 @@ object Buildtype {
     __obj.asInstanceOf[Buildtype]
   }
   
-  extension [Self <: Buildtype](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Buildtype] (val x: Self) extends AnyVal {
     
     inline def setBuild_type(value: legacy | workflow): Self = StObject.set(x, "build_type", value.asInstanceOf[js.Any])
     

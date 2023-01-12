@@ -20,7 +20,8 @@ object filteringFormatterOptionsDefaultValueOptionsMod {
       __obj.asInstanceOf[DefaultValueOptions[T]]
     }
     
-    extension [Self <: DefaultValueOptions[?], T](x: Self & DefaultValueOptions[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DefaultValueOptions[?], T] (val x: Self & DefaultValueOptions[T]) extends AnyVal {
       
       inline def setValue(value: T): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       

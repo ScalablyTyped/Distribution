@@ -33,7 +33,8 @@ object GetDocumentRequest {
     __obj.asInstanceOf[GetDocumentRequest]
   }
   
-  extension [Self <: GetDocumentRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetDocumentRequest] (val x: Self) extends AnyVal {
     
     inline def setDocumentFormat(value: DocumentFormat): Self = StObject.set(x, "DocumentFormat", value.asInstanceOf[js.Any])
     

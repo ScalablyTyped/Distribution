@@ -40,7 +40,8 @@ object CopyrightControl {
     __obj.asInstanceOf[CopyrightControl]
   }
   
-  extension [Self <: CopyrightControl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CopyrightControl] (val x: Self) extends AnyVal {
     
     inline def setAddCopyright(value: Copyright => Unit): Self = StObject.set(x, "addCopyright", js.Any.fromFunction1(value))
     

@@ -22,7 +22,8 @@ object BasicAutoscalingAlgorithm {
     __obj.asInstanceOf[BasicAutoscalingAlgorithm]
   }
   
-  extension [Self <: BasicAutoscalingAlgorithm](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BasicAutoscalingAlgorithm] (val x: Self) extends AnyVal {
     
     inline def setCooldownPeriod(value: String): Self = StObject.set(x, "cooldownPeriod", value.asInstanceOf[js.Any])
     

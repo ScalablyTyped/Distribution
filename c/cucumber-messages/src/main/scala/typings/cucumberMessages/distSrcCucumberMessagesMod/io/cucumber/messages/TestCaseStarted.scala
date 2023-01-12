@@ -273,7 +273,8 @@ object TestCaseStarted {
       __obj.asInstanceOf[IPlatform]
     }
     
-    extension [Self <: IPlatform](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPlatform] (val x: Self) extends AnyVal {
       
       inline def setCpu(value: String): Self = StObject.set(x, "cpu", value.asInstanceOf[js.Any])
       

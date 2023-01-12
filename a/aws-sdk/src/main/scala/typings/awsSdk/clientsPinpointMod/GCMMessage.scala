@@ -98,7 +98,8 @@ object GCMMessage {
     __obj.asInstanceOf[GCMMessage]
   }
   
-  extension [Self <: GCMMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GCMMessage] (val x: Self) extends AnyVal {
     
     inline def setAction(value: Action): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
     

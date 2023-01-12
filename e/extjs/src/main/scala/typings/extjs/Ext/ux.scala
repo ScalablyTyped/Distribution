@@ -35,7 +35,8 @@ object ux {
       __obj.asInstanceOf[ICheckColumn]
     }
     
-    extension [Self <: ICheckColumn](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICheckColumn] (val x: Self) extends AnyVal {
       
       inline def setOnDisable(value: /* silent */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "onDisable", js.Any.fromFunction1(value))
       
@@ -108,7 +109,8 @@ object ux {
         __obj.asInstanceOf[IFileUploadField]
       }
       
-      extension [Self <: IFileUploadField](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IFileUploadField] (val x: Self) extends AnyVal {
         
         inline def setButton(value: typings.extjs.Ext.button.IButton): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
         

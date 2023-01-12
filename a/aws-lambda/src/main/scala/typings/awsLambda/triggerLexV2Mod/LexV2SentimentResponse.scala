@@ -17,7 +17,8 @@ object LexV2SentimentResponse {
     __obj.asInstanceOf[LexV2SentimentResponse]
   }
   
-  extension [Self <: LexV2SentimentResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LexV2SentimentResponse] (val x: Self) extends AnyVal {
     
     inline def setSentiment(value: String): Self = StObject.set(x, "sentiment", value.asInstanceOf[js.Any])
     

@@ -430,7 +430,8 @@ object ReactHTML {
     __obj.asInstanceOf[ReactHTML]
   }
   
-  extension [Self <: ReactHTML](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReactHTML] (val x: Self) extends AnyVal {
     
     inline def setA(value: DetailedHTMLFactory[AnchorHTMLAttributes[HTMLAnchorElement], HTMLAnchorElement]): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
     

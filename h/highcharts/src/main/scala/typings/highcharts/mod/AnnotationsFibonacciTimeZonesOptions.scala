@@ -34,7 +34,8 @@ object AnnotationsFibonacciTimeZonesOptions {
     __obj.asInstanceOf[AnnotationsFibonacciTimeZonesOptions]
   }
   
-  extension [Self <: AnnotationsFibonacciTimeZonesOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnnotationsFibonacciTimeZonesOptions] (val x: Self) extends AnyVal {
     
     inline def setControlPointOptions(value: AnnotationsFibonacciTimeZonesControlPointOptions): Self = StObject.set(x, "controlPointOptions", value.asInstanceOf[js.Any])
     

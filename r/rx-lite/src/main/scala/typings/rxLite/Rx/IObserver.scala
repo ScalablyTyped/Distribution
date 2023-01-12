@@ -20,7 +20,8 @@ object IObserver {
     __obj.asInstanceOf[IObserver[T]]
   }
   
-  extension [Self <: IObserver[?], T](x: Self & IObserver[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IObserver[?], T] (val x: Self & IObserver[T]) extends AnyVal {
     
     inline def setOnCompleted(value: () => Unit): Self = StObject.set(x, "onCompleted", js.Any.fromFunction0(value))
     

@@ -36,7 +36,8 @@ object Placement {
     __obj.asInstanceOf[Placement]
   }
   
-  extension [Self <: Placement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Placement] (val x: Self) extends AnyVal {
     
     inline def setBordered(value: Boolean): Self = StObject.set(x, "bordered", value.asInstanceOf[js.Any])
     

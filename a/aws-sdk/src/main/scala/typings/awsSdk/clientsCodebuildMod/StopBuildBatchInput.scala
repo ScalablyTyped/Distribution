@@ -18,7 +18,8 @@ object StopBuildBatchInput {
     __obj.asInstanceOf[StopBuildBatchInput]
   }
   
-  extension [Self <: StopBuildBatchInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StopBuildBatchInput] (val x: Self) extends AnyVal {
     
     inline def setId(value: NonEmptyString): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
   }

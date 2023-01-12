@@ -56,7 +56,8 @@ object MomentRelativeTime {
     __obj.asInstanceOf[MomentRelativeTime]
   }
   
-  extension [Self <: MomentRelativeTime](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MomentRelativeTime] (val x: Self) extends AnyVal {
     
     inline def setD(value: Any): Self = StObject.set(x, "d", value.asInstanceOf[js.Any])
     

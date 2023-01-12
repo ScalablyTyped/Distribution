@@ -17,7 +17,8 @@ object SchemaUtils {
     __obj.asInstanceOf[SchemaUtils]
   }
   
-  extension [Self <: SchemaUtils](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SchemaUtils] (val x: Self) extends AnyVal {
     
     inline def setIsSingleProperty(value: Schema_[js.Object] => Boolean): Self = StObject.set(x, "isSingleProperty", js.Any.fromFunction1(value))
     

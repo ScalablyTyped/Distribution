@@ -28,7 +28,8 @@ object UpdateOriginRequestPolicyRequest {
     __obj.asInstanceOf[UpdateOriginRequestPolicyRequest]
   }
   
-  extension [Self <: UpdateOriginRequestPolicyRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateOriginRequestPolicyRequest] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     

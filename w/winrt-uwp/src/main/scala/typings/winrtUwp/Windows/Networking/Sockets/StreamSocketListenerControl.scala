@@ -35,7 +35,8 @@ object StreamSocketListenerControl {
     __obj.asInstanceOf[StreamSocketListenerControl]
   }
   
-  extension [Self <: StreamSocketListenerControl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StreamSocketListenerControl] (val x: Self) extends AnyVal {
     
     inline def setKeepAlive(value: Boolean): Self = StObject.set(x, "keepAlive", value.asInstanceOf[js.Any])
     

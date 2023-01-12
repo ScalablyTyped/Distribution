@@ -32,7 +32,8 @@ object typesGetQueueAttributesOutputMod {
       __obj.asInstanceOf[GetQueueAttributesOutput]
     }
     
-    extension [Self <: GetQueueAttributesOutput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetQueueAttributesOutput] (val x: Self) extends AnyVal {
       
       inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
       

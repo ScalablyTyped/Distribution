@@ -82,7 +82,8 @@ object srcPluginPlayheadMod {
       __obj.asInstanceOf[PlayheadPluginParams]
     }
     
-    extension [Self <: PlayheadPluginParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PlayheadPluginParams] (val x: Self) extends AnyVal {
       
       inline def setDraw(value: Boolean): Self = StObject.set(x, "draw", value.asInstanceOf[js.Any])
       

@@ -23,7 +23,8 @@ object AddRoleToInstanceProfileRequest {
     __obj.asInstanceOf[AddRoleToInstanceProfileRequest]
   }
   
-  extension [Self <: AddRoleToInstanceProfileRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AddRoleToInstanceProfileRequest] (val x: Self) extends AnyVal {
     
     inline def setInstanceProfileName(value: instanceProfileNameType): Self = StObject.set(x, "InstanceProfileName", value.asInstanceOf[js.Any])
     

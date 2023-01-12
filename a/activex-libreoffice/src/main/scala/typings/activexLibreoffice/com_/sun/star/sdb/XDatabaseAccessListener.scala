@@ -36,7 +36,8 @@ object XDatabaseAccessListener {
     __obj.asInstanceOf[XDatabaseAccessListener]
   }
   
-  extension [Self <: XDatabaseAccessListener](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XDatabaseAccessListener] (val x: Self) extends AnyVal {
     
     inline def setApproveConnectionClosing(value: EventObject => Boolean): Self = StObject.set(x, "approveConnectionClosing", js.Any.fromFunction1(value))
     

@@ -19,7 +19,8 @@ object SignatureInfo {
     __obj.asInstanceOf[SignatureInfo]
   }
   
-  extension [Self <: SignatureInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SignatureInfo] (val x: Self) extends AnyVal {
     
     inline def setActiveFormal(value: Double): Self = StObject.set(x, "activeFormal", value.asInstanceOf[js.Any])
     

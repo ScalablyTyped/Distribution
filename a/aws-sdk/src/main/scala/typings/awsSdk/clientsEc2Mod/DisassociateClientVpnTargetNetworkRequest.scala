@@ -28,7 +28,8 @@ object DisassociateClientVpnTargetNetworkRequest {
     __obj.asInstanceOf[DisassociateClientVpnTargetNetworkRequest]
   }
   
-  extension [Self <: DisassociateClientVpnTargetNetworkRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisassociateClientVpnTargetNetworkRequest] (val x: Self) extends AnyVal {
     
     inline def setAssociationId(value: ClientVpnAssociationId): Self = StObject.set(x, "AssociationId", value.asInstanceOf[js.Any])
     

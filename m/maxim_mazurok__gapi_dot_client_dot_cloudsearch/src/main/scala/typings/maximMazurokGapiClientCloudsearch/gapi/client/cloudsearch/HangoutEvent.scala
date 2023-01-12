@@ -21,7 +21,8 @@ object HangoutEvent {
     __obj.asInstanceOf[HangoutEvent]
   }
   
-  extension [Self <: HangoutEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HangoutEvent] (val x: Self) extends AnyVal {
     
     inline def setHangoutDurationSecs(value: String): Self = StObject.set(x, "hangoutDurationSecs", value.asInstanceOf[js.Any])
     

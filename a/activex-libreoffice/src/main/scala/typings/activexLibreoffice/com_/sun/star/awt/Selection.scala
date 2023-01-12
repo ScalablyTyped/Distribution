@@ -20,7 +20,8 @@ object Selection {
     __obj.asInstanceOf[Selection]
   }
   
-  extension [Self <: Selection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Selection] (val x: Self) extends AnyVal {
     
     inline def setMax(value: Double): Self = StObject.set(x, "Max", value.asInstanceOf[js.Any])
     

@@ -29,7 +29,8 @@ object GattPresentationFormat {
     __obj.asInstanceOf[GattPresentationFormat]
   }
   
-  extension [Self <: GattPresentationFormat](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GattPresentationFormat] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: Double): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

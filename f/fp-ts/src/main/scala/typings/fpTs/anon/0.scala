@@ -18,7 +18,8 @@ object `0` {
     __obj.asInstanceOf[`0`]
   }
   
-  extension [Self <: `0`](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: `0`] (val x: Self) extends AnyVal {
     
     inline def set0(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, any> */ Any

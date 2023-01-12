@@ -72,7 +72,8 @@ object TBSCertificate {
     __obj.asInstanceOf[TBSCertificate]
   }
   
-  extension [Self <: TBSCertificate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TBSCertificate] (val x: Self) extends AnyVal {
     
     inline def setSetByParam(value: CertificateTBSParams => Unit): Self = StObject.set(x, "setByParam", js.Any.fromFunction1(value))
   }

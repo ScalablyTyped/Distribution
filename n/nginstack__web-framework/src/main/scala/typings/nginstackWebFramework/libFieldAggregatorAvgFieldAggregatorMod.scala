@@ -77,7 +77,8 @@ object libFieldAggregatorAvgFieldAggregatorMod {
       __obj.asInstanceOf[AvgFieldAggregator]
     }
     
-    extension [Self <: AvgFieldAggregator](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AvgFieldAggregator] (val x: Self) extends AnyVal {
       
       inline def setFValue(value: Any): Self = StObject.set(x, "fValue", value.asInstanceOf[js.Any])
       

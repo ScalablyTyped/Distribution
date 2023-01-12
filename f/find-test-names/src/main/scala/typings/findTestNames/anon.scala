@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[PendingTestCount]
     }
     
-    extension [Self <: PendingTestCount](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PendingTestCount] (val x: Self) extends AnyVal {
       
       inline def setPendingTestCount(value: Double): Self = StObject.set(x, "pendingTestCount", value.asInstanceOf[js.Any])
       

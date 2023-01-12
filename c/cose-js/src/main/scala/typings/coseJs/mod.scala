@@ -41,7 +41,8 @@ object mod {
         __obj.asInstanceOf[CreateOptions]
       }
       
-      extension [Self <: CreateOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CreateOptions] (val x: Self) extends AnyVal {
         
         inline def setContextIv(value: Buffer): Self = StObject.set(x, "contextIv", value.asInstanceOf[js.Any])
         
@@ -76,7 +77,8 @@ object mod {
         __obj.asInstanceOf[Signer]
       }
       
-      extension [Self <: Signer](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Signer] (val x: Self) extends AnyVal {
         
         inline def setKey(value: Buffer): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       }
@@ -104,7 +106,8 @@ object mod {
         __obj.asInstanceOf[Signer]
       }
       
-      extension [Self <: Signer](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Signer] (val x: Self) extends AnyVal {
         
         inline def setKey(value: Buffer): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       }
@@ -143,7 +146,8 @@ object mod {
         __obj.asInstanceOf[CreateOptions]
       }
       
-      extension [Self <: CreateOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CreateOptions] (val x: Self) extends AnyVal {
         
         inline def setEncodep(value: empty): Self = StObject.set(x, "encodep", value.asInstanceOf[js.Any])
         
@@ -168,7 +172,8 @@ object mod {
         __obj.asInstanceOf[Signer]
       }
       
-      extension [Self <: Signer](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Signer] (val x: Self) extends AnyVal {
         
         inline def setExternalAAD(value: Buffer): Self = StObject.set(x, "externalAAD", value.asInstanceOf[js.Any])
         
@@ -189,7 +194,8 @@ object mod {
         __obj.asInstanceOf[VerifyOptions]
       }
       
-      extension [Self <: VerifyOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: VerifyOptions] (val x: Self) extends AnyVal {
         
         inline def setDefaultType(value: Double): Self = StObject.set(x, "defaultType", value.asInstanceOf[js.Any])
         
@@ -233,7 +239,8 @@ object mod {
       __obj.asInstanceOf[HeaderParameters]
     }
     
-    extension [Self <: HeaderParameters](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HeaderParameters] (val x: Self) extends AnyVal {
       
       inline def setAlg(value: BufferLike): Self = StObject.set(x, "alg", value.asInstanceOf[js.Any])
       
@@ -298,7 +305,8 @@ object mod {
       __obj.asInstanceOf[Headers]
     }
     
-    extension [Self <: Headers](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Headers] (val x: Self) extends AnyVal {
       
       inline def setP(value: HeaderParameters): Self = StObject.set(x, "p", value.asInstanceOf[js.Any])
       
@@ -331,7 +339,8 @@ object mod {
       __obj.asInstanceOf[Key]
     }
     
-    extension [Self <: Key](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Key] (val x: Self) extends AnyVal {
       
       inline def setCrv(value: String): Self = StObject.set(x, "crv", value.asInstanceOf[js.Any])
       

@@ -30,7 +30,8 @@ object XMultiTextMarkup {
     __obj.asInstanceOf[XMultiTextMarkup]
   }
   
-  extension [Self <: XMultiTextMarkup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XMultiTextMarkup] (val x: Self) extends AnyVal {
     
     inline def setCommitMultiTextMarkup(value: SeqEquiv[TextMarkupDescriptor] => Unit): Self = StObject.set(x, "commitMultiTextMarkup", js.Any.fromFunction1(value))
   }

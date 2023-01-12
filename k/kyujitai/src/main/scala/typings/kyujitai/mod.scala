@@ -39,7 +39,8 @@ object mod {
       __obj.asInstanceOf[EncodeOptions]
     }
     
-    extension [Self <: EncodeOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EncodeOptions] (val x: Self) extends AnyVal {
       
       inline def setIVD(value: Boolean): Self = StObject.set(x, "IVD", value.asInstanceOf[js.Any])
       
@@ -91,7 +92,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setIvd(value: String): Self = StObject.set(x, "ivd", value.asInstanceOf[js.Any])
       

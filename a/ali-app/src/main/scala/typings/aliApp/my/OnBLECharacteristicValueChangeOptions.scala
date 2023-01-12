@@ -19,7 +19,8 @@ object OnBLECharacteristicValueChangeOptions {
     __obj.asInstanceOf[OnBLECharacteristicValueChangeOptions]
   }
   
-  extension [Self <: OnBLECharacteristicValueChangeOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnBLECharacteristicValueChangeOptions] (val x: Self) extends AnyVal {
     
     inline def setSuccess(value: /* res */ DeviceId => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
     

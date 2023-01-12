@@ -35,7 +35,8 @@ object XpnHostList {
     __obj.asInstanceOf[XpnHostList]
   }
   
-  extension [Self <: XpnHostList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XpnHostList] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

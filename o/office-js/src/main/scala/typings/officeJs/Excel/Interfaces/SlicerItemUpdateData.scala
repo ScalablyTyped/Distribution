@@ -24,7 +24,8 @@ object SlicerItemUpdateData {
     __obj.asInstanceOf[SlicerItemUpdateData]
   }
   
-  extension [Self <: SlicerItemUpdateData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SlicerItemUpdateData] (val x: Self) extends AnyVal {
     
     inline def setIsSelected(value: Boolean): Self = StObject.set(x, "isSelected", value.asInstanceOf[js.Any])
     

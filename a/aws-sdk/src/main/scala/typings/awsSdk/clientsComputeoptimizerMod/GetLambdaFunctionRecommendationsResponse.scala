@@ -23,7 +23,8 @@ object GetLambdaFunctionRecommendationsResponse {
     __obj.asInstanceOf[GetLambdaFunctionRecommendationsResponse]
   }
   
-  extension [Self <: GetLambdaFunctionRecommendationsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetLambdaFunctionRecommendationsResponse] (val x: Self) extends AnyVal {
     
     inline def setLambdaFunctionRecommendations(value: LambdaFunctionRecommendations): Self = StObject.set(x, "lambdaFunctionRecommendations", value.asInstanceOf[js.Any])
     

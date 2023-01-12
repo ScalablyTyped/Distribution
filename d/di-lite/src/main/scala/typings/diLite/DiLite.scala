@@ -63,7 +63,8 @@ object DiLite {
       __obj.asInstanceOf[DiLiteStatic]
     }
     
-    extension [Self <: DiLiteStatic](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DiLiteStatic] (val x: Self) extends AnyVal {
       
       inline def setCreateContext(value: () => CreateContext): Self = StObject.set(x, "createContext", js.Any.fromFunction0(value))
       
@@ -118,7 +119,8 @@ object DiLite {
       __obj.asInstanceOf[FactoryEnum]
     }
     
-    extension [Self <: FactoryEnum](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FactoryEnum] (val x: Self) extends AnyVal {
       
       inline def setFunc(value: (Any, Any) => Any): Self = StObject.set(x, "func", js.Any.fromFunction2(value))
     }
@@ -146,7 +148,8 @@ object DiLite {
       __obj.asInstanceOf[Utils]
     }
     
-    extension [Self <: Utils](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Utils] (val x: Self) extends AnyVal {
       
       inline def setInvokeStmt(value: (Any, String) => String): Self = StObject.set(x, "invokeStmt", js.Any.fromFunction2(value))
     }

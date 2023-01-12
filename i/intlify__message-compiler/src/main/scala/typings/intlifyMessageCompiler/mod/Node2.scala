@@ -22,7 +22,8 @@ object Node2 {
     __obj.asInstanceOf[Node2]
   }
   
-  extension [Self <: Node2](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Node2] (val x: Self) extends AnyVal {
     
     inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object Matches_ {
     __obj.asInstanceOf[Matches_]
   }
   
-  extension [Self <: Matches_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Matches_] (val x: Self) extends AnyVal {
     
     inline def setType(value: typings.esquery.esqueryStrings.matches): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

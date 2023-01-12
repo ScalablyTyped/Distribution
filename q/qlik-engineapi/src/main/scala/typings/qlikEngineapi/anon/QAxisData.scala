@@ -19,7 +19,8 @@ object QAxisData {
     __obj.asInstanceOf[QAxisData]
   }
   
-  extension [Self <: QAxisData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QAxisData] (val x: Self) extends AnyVal {
     
     inline def setQAxisData(value: js.Array[INxAxisData]): Self = StObject.set(x, "qAxisData", value.asInstanceOf[js.Any])
     

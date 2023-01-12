@@ -150,7 +150,8 @@ object mod {
       __obj.asInstanceOf[DiffOptions]
     }
     
-    extension [Self <: DiffOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DiffOptions] (val x: Self) extends AnyVal {
       
       inline def setColor(value: Boolean): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       

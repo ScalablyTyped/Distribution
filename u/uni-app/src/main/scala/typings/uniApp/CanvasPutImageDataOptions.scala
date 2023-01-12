@@ -58,7 +58,8 @@ object CanvasPutImageDataOptions {
     __obj.asInstanceOf[CanvasPutImageDataOptions]
   }
   
-  extension [Self <: CanvasPutImageDataOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CanvasPutImageDataOptions] (val x: Self) extends AnyVal {
     
     inline def setCanvasId(value: String): Self = StObject.set(x, "canvasId", value.asInstanceOf[js.Any])
     

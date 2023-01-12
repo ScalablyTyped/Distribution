@@ -25,7 +25,8 @@ object distLitePackagesFirestoreTestUtilEqualityMatcherMod {
       __obj.asInstanceOf[CustomMatcher[T]]
     }
     
-    extension [Self <: CustomMatcher[?], T](x: Self & CustomMatcher[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CustomMatcher[?], T] (val x: Self & CustomMatcher[T]) extends AnyVal {
       
       inline def setEqualsFn(value: (T, T) => Boolean): Self = StObject.set(x, "equalsFn", js.Any.fromFunction2(value))
       
@@ -44,7 +45,8 @@ object distLitePackagesFirestoreTestUtilEqualityMatcherMod {
       __obj.asInstanceOf[Equatable[T]]
     }
     
-    extension [Self <: Equatable[?], T](x: Self & Equatable[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Equatable[?], T] (val x: Self & Equatable[T]) extends AnyVal {
       
       inline def setIsEqual(value: T => Boolean): Self = StObject.set(x, "isEqual", js.Any.fromFunction1(value))
     }

@@ -20,7 +20,8 @@ object RetainDirtyFlags {
     __obj.asInstanceOf[RetainDirtyFlags]
   }
   
-  extension [Self <: RetainDirtyFlags](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RetainDirtyFlags] (val x: Self) extends AnyVal {
     
     inline def setRetainDirtyFlags(value: Boolean): Self = StObject.set(x, "retainDirtyFlags", value.asInstanceOf[js.Any])
     

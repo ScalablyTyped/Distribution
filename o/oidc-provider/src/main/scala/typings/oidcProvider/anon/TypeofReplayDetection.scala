@@ -17,7 +17,8 @@ object TypeofReplayDetection {
     __obj.asInstanceOf[TypeofReplayDetection]
   }
   
-  extension [Self <: TypeofReplayDetection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofReplayDetection] (val x: Self) extends AnyVal {
     
     inline def setAdapter(value: Adapter): Self = StObject.set(x, "adapter", value.asInstanceOf[js.Any])
   }

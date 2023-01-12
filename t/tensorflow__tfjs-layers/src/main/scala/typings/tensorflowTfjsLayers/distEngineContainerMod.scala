@@ -200,7 +200,8 @@ object distEngineContainerMod {
       __obj.asInstanceOf[ContainerArgs]
     }
     
-    extension [Self <: ContainerArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContainerArgs] (val x: Self) extends AnyVal {
       
       inline def setInputs(value: SymbolicTensor | js.Array[SymbolicTensor]): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
       

@@ -35,7 +35,8 @@ object RequestError {
     __obj.asInstanceOf[RequestError]
   }
   
-  extension [Self <: RequestError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RequestError] (val x: Self) extends AnyVal {
     
     inline def setResponse(value: Response): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
     

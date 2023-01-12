@@ -22,7 +22,8 @@ object TableRange {
     __obj.asInstanceOf[TableRange]
   }
   
-  extension [Self <: TableRange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TableRange] (val x: Self) extends AnyVal {
     
     inline def setColumnSpan(value: Double): Self = StObject.set(x, "columnSpan", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object Separator {
     __obj.asInstanceOf[Separator]
   }
   
-  extension [Self <: Separator](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Separator] (val x: Self) extends AnyVal {
     
     inline def setContainer(value: BoxProps): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     

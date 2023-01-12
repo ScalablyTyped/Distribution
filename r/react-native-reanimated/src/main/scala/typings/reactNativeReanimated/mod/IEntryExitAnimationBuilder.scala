@@ -15,7 +15,8 @@ object IEntryExitAnimationBuilder {
     __obj.asInstanceOf[IEntryExitAnimationBuilder]
   }
   
-  extension [Self <: IEntryExitAnimationBuilder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IEntryExitAnimationBuilder] (val x: Self) extends AnyVal {
     
     inline def setBuild(value: () => EntryExitAnimationFunction): Self = StObject.set(x, "build", js.Any.fromFunction0(value))
   }

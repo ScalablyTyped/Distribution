@@ -33,7 +33,8 @@ object ImageReplicationStatus {
     __obj.asInstanceOf[ImageReplicationStatus]
   }
   
-  extension [Self <: ImageReplicationStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImageReplicationStatus] (val x: Self) extends AnyVal {
     
     inline def setFailureCode(value: ReplicationError): Self = StObject.set(x, "failureCode", value.asInstanceOf[js.Any])
     

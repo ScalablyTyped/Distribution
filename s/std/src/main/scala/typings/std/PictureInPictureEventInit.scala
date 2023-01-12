@@ -18,7 +18,8 @@ object PictureInPictureEventInit {
     __obj.asInstanceOf[PictureInPictureEventInit]
   }
   
-  extension [Self <: PictureInPictureEventInit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PictureInPictureEventInit] (val x: Self) extends AnyVal {
     
     inline def setPictureInPictureWindow(value: PictureInPictureWindow): Self = StObject.set(x, "pictureInPictureWindow", value.asInstanceOf[js.Any])
   }

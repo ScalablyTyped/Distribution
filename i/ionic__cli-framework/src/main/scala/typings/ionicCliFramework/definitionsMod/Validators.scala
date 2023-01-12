@@ -55,7 +55,8 @@ object Validators {
     __obj.asInstanceOf[Validators]
   }
   
-  extension [Self <: Validators](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Validators] (val x: Self) extends AnyVal {
     
     inline def setEmail(value: (/* input */ js.UndefOr[String], /* key */ js.UndefOr[String]) => `true` | String): Self = StObject.set(x, "email", js.Any.fromFunction2(value))
     

@@ -17,7 +17,8 @@ object RollupGetRollupCapsRequest {
     __obj.asInstanceOf[RollupGetRollupCapsRequest]
   }
   
-  extension [Self <: RollupGetRollupCapsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RollupGetRollupCapsRequest] (val x: Self) extends AnyVal {
     
     inline def setId(value: Id): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

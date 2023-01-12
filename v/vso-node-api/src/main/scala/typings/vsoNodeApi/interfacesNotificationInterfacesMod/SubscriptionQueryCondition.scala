@@ -44,7 +44,8 @@ object SubscriptionQueryCondition {
     __obj.asInstanceOf[SubscriptionQueryCondition]
   }
   
-  extension [Self <: SubscriptionQueryCondition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubscriptionQueryCondition] (val x: Self) extends AnyVal {
     
     inline def setFilter(value: ISubscriptionFilter): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     

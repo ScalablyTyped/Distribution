@@ -26,7 +26,8 @@ object ShaderDefineArithmeticOperator {
     __obj.asInstanceOf[ShaderDefineArithmeticOperator]
   }
   
-  extension [Self <: ShaderDefineArithmeticOperator](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShaderDefineArithmeticOperator] (val x: Self) extends AnyVal {
     
     inline def setDefine(value: String): Self = StObject.set(x, "define", value.asInstanceOf[js.Any])
     

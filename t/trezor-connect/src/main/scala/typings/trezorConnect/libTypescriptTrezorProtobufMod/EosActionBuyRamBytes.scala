@@ -19,7 +19,8 @@ object EosActionBuyRamBytes {
     __obj.asInstanceOf[EosActionBuyRamBytes]
   }
   
-  extension [Self <: EosActionBuyRamBytes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EosActionBuyRamBytes] (val x: Self) extends AnyVal {
     
     inline def setBytes(value: Double): Self = StObject.set(x, "bytes", value.asInstanceOf[js.Any])
     

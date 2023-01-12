@@ -29,7 +29,8 @@ object BulkSendingList {
     __obj.asInstanceOf[BulkSendingList]
   }
   
-  extension [Self <: BulkSendingList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BulkSendingList] (val x: Self) extends AnyVal {
     
     inline def setBulkCopies(value: js.Array[BulkSendingCopy]): Self = StObject.set(x, "bulkCopies", value.asInstanceOf[js.Any])
     

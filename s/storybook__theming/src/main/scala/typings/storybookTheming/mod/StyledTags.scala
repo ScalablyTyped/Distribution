@@ -560,7 +560,8 @@ object StyledTags {
     __obj.asInstanceOf[StyledTags[Theme]]
   }
   
-  extension [Self <: StyledTags[?], Theme /* <: js.Object */](x: Self & StyledTags[Theme]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StyledTags[?], Theme /* <: js.Object */] (val x: Self & StyledTags[Theme]) extends AnyVal {
     
     inline def setA(value: CreateStyledComponentIntrinsic[a_, js.Object, Theme]): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
     

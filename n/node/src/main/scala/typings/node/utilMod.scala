@@ -643,7 +643,8 @@ object utilMod {
       __obj.asInstanceOf[EncodeIntoResult]
     }
     
-    extension [Self <: EncodeIntoResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EncodeIntoResult] (val x: Self) extends AnyVal {
       
       inline def setRead(value: Double): Self = StObject.set(x, "read", value.asInstanceOf[js.Any])
       
@@ -743,7 +744,8 @@ object utilMod {
       __obj.asInstanceOf[InspectOptions]
     }
     
-    extension [Self <: InspectOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InspectOptions] (val x: Self) extends AnyVal {
       
       inline def setBreakLength(value: Double): Self = StObject.set(x, "breakLength", value.asInstanceOf[js.Any])
       
@@ -812,7 +814,8 @@ object utilMod {
       __obj.asInstanceOf[InspectOptionsStylized]
     }
     
-    extension [Self <: InspectOptionsStylized](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InspectOptionsStylized] (val x: Self) extends AnyVal {
       
       inline def setStylize(value: (String, Style) => String): Self = StObject.set(x, "stylize", js.Any.fromFunction2(value))
     }
@@ -857,7 +860,8 @@ object utilMod {
       __obj.asInstanceOf[ParseArgsConfig]
     }
     
-    extension [Self <: ParseArgsConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParseArgsConfig] (val x: Self) extends AnyVal {
       
       inline def setAllowPositionals(value: Boolean): Self = StObject.set(x, "allowPositionals", value.asInstanceOf[js.Any])
       
@@ -904,7 +908,8 @@ object utilMod {
       __obj.asInstanceOf[ParseArgsOptionConfig]
     }
     
-    extension [Self <: ParseArgsOptionConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParseArgsOptionConfig] (val x: Self) extends AnyVal {
       
       inline def setDefault(value: String | Boolean | (js.Array[Boolean | String])): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
       

@@ -51,7 +51,8 @@ object ISemanticFormContent {
     __obj.asInstanceOf[ISemanticFormContent]
   }
   
-  extension [Self <: ISemanticFormContent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISemanticFormContent] (val x: Self) extends AnyVal {
     
     inline def setGetFormFormattedValue(value: () => String | js.Promise[Any]): Self = StObject.set(x, "getFormFormattedValue", js.Any.fromFunction0(value))
     

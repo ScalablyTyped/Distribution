@@ -53,7 +53,8 @@ object pluginsCopyPasteCopyPasteMod {
       __obj.asInstanceOf[DetailedSettings]
     }
     
-    extension [Self <: DetailedSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DetailedSettings] (val x: Self) extends AnyVal {
       
       inline def setColumnsLimit(value: Double): Self = StObject.set(x, "columnsLimit", value.asInstanceOf[js.Any])
       
@@ -101,7 +102,8 @@ object pluginsCopyPasteCopyPasteMod {
       __obj.asInstanceOf[RangeType]
     }
     
-    extension [Self <: RangeType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RangeType] (val x: Self) extends AnyVal {
       
       inline def setEndCol(value: Double): Self = StObject.set(x, "endCol", value.asInstanceOf[js.Any])
       

@@ -33,7 +33,8 @@ object ListTriggersRequest {
     __obj.asInstanceOf[ListTriggersRequest]
   }
   
-  extension [Self <: ListTriggersRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListTriggersRequest] (val x: Self) extends AnyVal {
     
     inline def setDependentJobName(value: NameString): Self = StObject.set(x, "DependentJobName", value.asInstanceOf[js.Any])
     

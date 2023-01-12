@@ -19,7 +19,8 @@ object PickCoordinatesleft {
     __obj.asInstanceOf[PickCoordinatesleft]
   }
   
-  extension [Self <: PickCoordinatesleft](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickCoordinatesleft] (val x: Self) extends AnyVal {
     
     inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
   }

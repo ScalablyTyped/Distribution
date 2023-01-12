@@ -15,7 +15,8 @@ object BuildSuggestersResponse {
     __obj.asInstanceOf[BuildSuggestersResponse]
   }
   
-  extension [Self <: BuildSuggestersResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BuildSuggestersResponse] (val x: Self) extends AnyVal {
     
     inline def setFieldNames(value: FieldNameList): Self = StObject.set(x, "FieldNames", value.asInstanceOf[js.Any])
     

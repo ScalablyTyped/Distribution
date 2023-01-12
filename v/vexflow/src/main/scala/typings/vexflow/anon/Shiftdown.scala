@@ -23,7 +23,8 @@ object Shiftdown {
     __obj.asInstanceOf[Shiftdown]
   }
   
-  extension [Self <: Shiftdown](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Shiftdown] (val x: Self) extends AnyVal {
     
     inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     

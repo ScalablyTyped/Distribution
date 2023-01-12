@@ -31,7 +31,8 @@ object DevicePolicy {
     __obj.asInstanceOf[DevicePolicy]
   }
   
-  extension [Self <: DevicePolicy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DevicePolicy] (val x: Self) extends AnyVal {
     
     inline def setAllowedDeviceManagementLevels(value: js.Array[String]): Self = StObject.set(x, "allowedDeviceManagementLevels", value.asInstanceOf[js.Any])
     

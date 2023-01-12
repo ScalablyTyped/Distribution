@@ -23,7 +23,8 @@ object SaveRulesOptions {
     __obj.asInstanceOf[SaveRulesOptions]
   }
   
-  extension [Self <: SaveRulesOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SaveRulesOptions] (val x: Self) extends AnyVal {
     
     inline def setClearExistingRules(value: Boolean): Self = StObject.set(x, "clearExistingRules", value.asInstanceOf[js.Any])
     

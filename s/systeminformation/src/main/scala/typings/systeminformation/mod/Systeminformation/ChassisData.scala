@@ -36,7 +36,8 @@ object ChassisData {
     __obj.asInstanceOf[ChassisData]
   }
   
-  extension [Self <: ChassisData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChassisData] (val x: Self) extends AnyVal {
     
     inline def setAssetTag(value: String): Self = StObject.set(x, "assetTag", value.asInstanceOf[js.Any])
     

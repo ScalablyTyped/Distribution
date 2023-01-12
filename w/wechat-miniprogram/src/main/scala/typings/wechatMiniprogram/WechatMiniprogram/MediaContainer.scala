@@ -65,7 +65,8 @@ object MediaContainer {
     __obj.asInstanceOf[MediaContainer]
   }
   
-  extension [Self <: MediaContainer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MediaContainer] (val x: Self) extends AnyVal {
     
     inline def setAddTrack(value: MediaTrack => Unit): Self = StObject.set(x, "addTrack", js.Any.fromFunction1(value))
     

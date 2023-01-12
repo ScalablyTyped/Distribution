@@ -84,7 +84,8 @@ object anon {
       __obj.asInstanceOf[Ampersand]
     }
     
-    extension [Self <: Ampersand](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Ampersand] (val x: Self) extends AnyVal {
       
       inline def setAmpersand(value: String): Self = StObject.set(x, "ampersand", value.asInstanceOf[js.Any])
       
@@ -149,7 +150,8 @@ object anon {
       __obj.asInstanceOf[Angle]
     }
     
-    extension [Self <: Angle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Angle] (val x: Self) extends AnyVal {
       
       inline def setAngle(value: String): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
       
@@ -201,7 +203,8 @@ object anon {
       __obj.asInstanceOf[Array]
     }
     
-    extension [Self <: Array](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Array] (val x: Self) extends AnyVal {
       
       inline def setArray(value: String): Self = StObject.set(x, "array", value.asInstanceOf[js.Any])
       
@@ -240,7 +243,8 @@ object anon {
       __obj.asInstanceOf[CannotWrap]
     }
     
-    extension [Self <: CannotWrap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CannotWrap] (val x: Self) extends AnyVal {
       
       inline def setCannotWrap(value: String): Self = StObject.set(x, "cannotWrap", value.asInstanceOf[js.Any])
       
@@ -263,7 +267,8 @@ object anon {
       __obj.asInstanceOf[Curly]
     }
     
-    extension [Self <: Curly](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Curly] (val x: Self) extends AnyVal {
       
       inline def setCurly(value: CannotWrap): Self = StObject.set(x, "curly", value.asInstanceOf[js.Any])
       
@@ -286,7 +291,8 @@ object anon {
       __obj.asInstanceOf[Double]
     }
     
-    extension [Self <: Double](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Double] (val x: Self) extends AnyVal {
       
       inline def setDouble(value: String): Self = StObject.set(x, "double", value.asInstanceOf[js.Any])
       
@@ -321,7 +327,8 @@ object anon {
       __obj.asInstanceOf[MissingClose]
     }
     
-    extension [Self <: MissingClose](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MissingClose] (val x: Self) extends AnyVal {
       
       inline def setMissingClose(value: String): Self = StObject.set(x, "missingClose", value.asInstanceOf[js.Any])
       
@@ -350,7 +357,8 @@ object anon {
       __obj.asInstanceOf[NumberAndLetterMissingQuotes]
     }
     
-    extension [Self <: NumberAndLetterMissingQuotes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NumberAndLetterMissingQuotes] (val x: Self) extends AnyVal {
       
       inline def setNumberAndLetterMissingQuotes(value: String): Self = StObject.set(x, "numberAndLetterMissingQuotes", value.asInstanceOf[js.Any])
       
@@ -373,7 +381,8 @@ object anon {
       __obj.asInstanceOf[Permitted]
     }
     
-    extension [Self <: Permitted](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Permitted] (val x: Self) extends AnyVal {
       
       inline def setPermitted(value: String): Self = StObject.set(x, "permitted", value.asInstanceOf[js.Any])
       
@@ -406,7 +415,8 @@ object anon {
       __obj.asInstanceOf[TermSequence]
     }
     
-    extension [Self <: TermSequence](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TermSequence] (val x: Self) extends AnyVal {
       
       inline def setDouble(value: String): Self = StObject.set(x, "double", value.asInstanceOf[js.Any])
       

@@ -38,7 +38,8 @@ object libShaderUtilsGenerateUniformBufferSyncMod {
       __obj.asInstanceOf[UBOElement]
     }
     
-    extension [Self <: UBOElement](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UBOElement] (val x: Self) extends AnyVal {
       
       inline def setData(value: IUniformData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       

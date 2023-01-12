@@ -27,7 +27,8 @@ object anon {
       __obj.asInstanceOf[Lg]
     }
     
-    extension [Self <: Lg](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Lg] (val x: Self) extends AnyVal {
       
       inline def setLg(value: MaxWidth): Self = StObject.set(x, "lg", value.asInstanceOf[js.Any])
       
@@ -56,7 +57,8 @@ object anon {
       __obj.asInstanceOf[MatchMedia]
     }
     
-    extension [Self <: MatchMedia](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MatchMedia] (val x: Self) extends AnyVal {
       
       inline def setMatchMedia(value: String): Self = StObject.set(x, "matchMedia", value.asInstanceOf[js.Any])
       
@@ -79,7 +81,8 @@ object anon {
       __obj.asInstanceOf[MaxWidth]
     }
     
-    extension [Self <: MaxWidth](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MaxWidth] (val x: Self) extends AnyVal {
       
       inline def setMatchMedia(value: String): Self = StObject.set(x, "matchMedia", value.asInstanceOf[js.Any])
       
@@ -102,7 +105,8 @@ object anon {
       __obj.asInstanceOf[MinWidth]
     }
     
-    extension [Self <: MinWidth](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MinWidth] (val x: Self) extends AnyVal {
       
       inline def setMatchMedia(value: String): Self = StObject.set(x, "matchMedia", value.asInstanceOf[js.Any])
       

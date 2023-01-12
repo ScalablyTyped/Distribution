@@ -22,7 +22,8 @@ object ReturnTypeTakeResponseBodyAsStreamResponse {
     __obj.asInstanceOf[ReturnTypeTakeResponseBodyAsStreamResponse]
   }
   
-  extension [Self <: ReturnTypeTakeResponseBodyAsStreamResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReturnTypeTakeResponseBodyAsStreamResponse] (val x: Self) extends AnyVal {
     
     inline def setParamsType(value: js.Array[TakeResponseBodyAsStreamRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     

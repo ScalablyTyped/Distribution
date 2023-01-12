@@ -33,7 +33,8 @@ object DatasetImageStats {
     __obj.asInstanceOf[DatasetImageStats]
   }
   
-  extension [Self <: DatasetImageStats](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DatasetImageStats] (val x: Self) extends AnyVal {
     
     inline def setAnomaly(value: Integer): Self = StObject.set(x, "Anomaly", value.asInstanceOf[js.Any])
     

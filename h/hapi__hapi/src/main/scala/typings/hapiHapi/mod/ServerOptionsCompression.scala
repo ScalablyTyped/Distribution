@@ -15,7 +15,8 @@ object ServerOptionsCompression {
     __obj.asInstanceOf[ServerOptionsCompression]
   }
   
-  extension [Self <: ServerOptionsCompression](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServerOptionsCompression] (val x: Self) extends AnyVal {
     
     inline def setMinBytes(value: Double): Self = StObject.set(x, "minBytes", value.asInstanceOf[js.Any])
   }

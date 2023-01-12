@@ -50,7 +50,8 @@ object libAffixUtilsMod {
       __obj.asInstanceOf[ObserverEntity]
     }
     
-    extension [Self <: ObserverEntity](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ObserverEntity] (val x: Self) extends AnyVal {
       
       inline def setAffixList(value: js.Array[Any]): Self = StObject.set(x, "affixList", value.asInstanceOf[js.Any])
       

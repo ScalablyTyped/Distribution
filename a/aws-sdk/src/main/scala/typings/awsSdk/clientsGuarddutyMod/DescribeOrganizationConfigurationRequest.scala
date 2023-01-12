@@ -18,7 +18,8 @@ object DescribeOrganizationConfigurationRequest {
     __obj.asInstanceOf[DescribeOrganizationConfigurationRequest]
   }
   
-  extension [Self <: DescribeOrganizationConfigurationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeOrganizationConfigurationRequest] (val x: Self) extends AnyVal {
     
     inline def setDetectorId(value: DetectorId): Self = StObject.set(x, "DetectorId", value.asInstanceOf[js.Any])
   }

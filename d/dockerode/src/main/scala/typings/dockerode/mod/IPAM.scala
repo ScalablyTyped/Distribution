@@ -21,7 +21,8 @@ object IPAM {
     __obj.asInstanceOf[IPAM]
   }
   
-  extension [Self <: IPAM](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPAM] (val x: Self) extends AnyVal {
     
     inline def setConfig(value: js.Array[StringDictionary[String]]): Self = StObject.set(x, "Config", value.asInstanceOf[js.Any])
     

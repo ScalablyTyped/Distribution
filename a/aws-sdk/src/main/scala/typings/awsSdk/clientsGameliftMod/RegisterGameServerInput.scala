@@ -42,7 +42,8 @@ object RegisterGameServerInput {
     __obj.asInstanceOf[RegisterGameServerInput]
   }
   
-  extension [Self <: RegisterGameServerInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RegisterGameServerInput] (val x: Self) extends AnyVal {
     
     inline def setConnectionInfo(value: GameServerConnectionInfo): Self = StObject.set(x, "ConnectionInfo", value.asInstanceOf[js.Any])
     

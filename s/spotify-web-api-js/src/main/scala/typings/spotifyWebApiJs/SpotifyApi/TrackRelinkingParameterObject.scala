@@ -15,7 +15,8 @@ object TrackRelinkingParameterObject {
     __obj.asInstanceOf[TrackRelinkingParameterObject]
   }
   
-  extension [Self <: TrackRelinkingParameterObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TrackRelinkingParameterObject] (val x: Self) extends AnyVal {
     
     inline def setMarket(value: String): Self = StObject.set(x, "market", value.asInstanceOf[js.Any])
     

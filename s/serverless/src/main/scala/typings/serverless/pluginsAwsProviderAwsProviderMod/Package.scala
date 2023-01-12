@@ -27,7 +27,8 @@ object Package {
     __obj.asInstanceOf[Package]
   }
   
-  extension [Self <: Package](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Package] (val x: Self) extends AnyVal {
     
     inline def setArtifact(value: String): Self = StObject.set(x, "artifact", value.asInstanceOf[js.Any])
     

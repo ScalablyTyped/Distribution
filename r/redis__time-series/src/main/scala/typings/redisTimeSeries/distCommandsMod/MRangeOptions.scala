@@ -17,7 +17,8 @@ object MRangeOptions {
     __obj.asInstanceOf[MRangeOptions]
   }
   
-  extension [Self <: MRangeOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MRangeOptions] (val x: Self) extends AnyVal {
     
     inline def setGROUPBY(value: MRangeGroupBy): Self = StObject.set(x, "GROUPBY", value.asInstanceOf[js.Any])
     

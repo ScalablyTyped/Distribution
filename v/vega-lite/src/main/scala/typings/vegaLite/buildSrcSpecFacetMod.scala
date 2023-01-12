@@ -58,7 +58,8 @@ object buildSrcSpecFacetMod {
       __obj.asInstanceOf[EncodingFacetMapping[F, ES]]
     }
     
-    extension [Self <: EncodingFacetMapping[?, ?], F /* <: Field */, ES /* <: ExprRef | SignalRef */](x: Self & (EncodingFacetMapping[F, ES])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EncodingFacetMapping[?, ?], F /* <: Field */, ES /* <: ExprRef | SignalRef */] (val x: Self & (EncodingFacetMapping[F, ES])) extends AnyVal {
       
       inline def setFacet(value: FacetEncodingFieldDef[F, ES]): Self = StObject.set(x, "facet", value.asInstanceOf[js.Any])
       
@@ -101,7 +102,8 @@ object buildSrcSpecFacetMod {
       __obj.asInstanceOf[FacetFieldDef[F, ES]]
     }
     
-    extension [Self <: FacetFieldDef[?, ?], F /* <: Field */, ES /* <: ExprRef | SignalRef */](x: Self & (FacetFieldDef[F, ES])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FacetFieldDef[?, ?], F /* <: Field */, ES /* <: ExprRef | SignalRef */] (val x: Self & (FacetFieldDef[F, ES])) extends AnyVal {
       
       inline def setHeader(value: Header[ES]): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
       
@@ -138,7 +140,8 @@ object buildSrcSpecFacetMod {
       __obj.asInstanceOf[FacetMapping[F, FD]]
     }
     
-    extension [Self <: FacetMapping[?, ?], F /* <: Field */, FD /* <: FacetFieldDef[F, ExprRef | SignalRef] */](x: Self & (FacetMapping[F, FD])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FacetMapping[?, ?], F /* <: Field */, FD /* <: FacetFieldDef[F, ExprRef | SignalRef] */] (val x: Self & (FacetMapping[F, FD])) extends AnyVal {
       
       inline def setColumn(value: FD): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
@@ -178,7 +181,8 @@ object buildSrcSpecFacetMod {
       __obj.asInstanceOf[GenericFacetSpec[U, L, F]]
     }
     
-    extension [Self <: GenericFacetSpec[?, ?, ?], U /* <: GenericUnitSpec[Any, Any, SelectionParameter[SelectionType]] */, L /* <: GenericLayerSpec[Any] */, F /* <: Field */](x: Self & (GenericFacetSpec[U, L, F])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GenericFacetSpec[?, ?, ?], U /* <: GenericUnitSpec[Any, Any, SelectionParameter[SelectionType]] */, L /* <: GenericLayerSpec[Any] */, F /* <: Field */] (val x: Self & (GenericFacetSpec[U, L, F])) extends AnyVal {
       
       inline def setFacet(
         value: (FacetFieldDef[F, ExprRef | SignalRef]) | (FacetMapping[F, FacetFieldDef[F, ExprRef | SignalRef]])
@@ -227,7 +231,8 @@ object buildSrcSpecFacetMod {
       __obj.asInstanceOf[RowColumnEncodingFieldDef[F, ES]]
     }
     
-    extension [Self <: RowColumnEncodingFieldDef[?, ?], F /* <: Field */, ES /* <: ExprRef | SignalRef */](x: Self & (RowColumnEncodingFieldDef[F, ES])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RowColumnEncodingFieldDef[?, ?], F /* <: Field */, ES /* <: ExprRef | SignalRef */] (val x: Self & (RowColumnEncodingFieldDef[F, ES])) extends AnyVal {
       
       inline def setAlign(value: LayoutAlign): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       

@@ -30,7 +30,8 @@ object buildTypesMod {
       __obj.asInstanceOf[Entry]
     }
     
-    extension [Self <: Entry](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Entry] (val x: Self) extends AnyVal {
       
       inline def setAppId(value: String): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
       
@@ -65,7 +66,8 @@ object buildTypesMod {
       __obj.asInstanceOf[IFilter]
     }
     
-    extension [Self <: IFilter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IFilter] (val x: Self) extends AnyVal {
       
       inline def setShouldInclude(value: Entry => Boolean): Self = StObject.set(x, "shouldInclude", js.Any.fromFunction1(value))
     }
@@ -84,7 +86,8 @@ object buildTypesMod {
       __obj.asInstanceOf[IParser]
     }
     
-    extension [Self <: IParser](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IParser] (val x: Self) extends AnyVal {
       
       inline def setParseMessages(value: js.Array[String] => js.Array[Entry]): Self = StObject.set(x, "parseMessages", js.Any.fromFunction1(value))
       

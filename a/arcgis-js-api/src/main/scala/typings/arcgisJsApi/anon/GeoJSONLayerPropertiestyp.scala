@@ -385,7 +385,8 @@ object GeoJSONLayerPropertiestyp {
     __obj.asInstanceOf[GeoJSONLayerPropertiestyp]
   }
   
-  extension [Self <: GeoJSONLayerPropertiestyp](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GeoJSONLayerPropertiestyp] (val x: Self) extends AnyVal {
     
     inline def setBlendMode(
       value: average | `color-burn` | `color-dodge` | color | darken | `destination-atop` | `destination-in` | `destination-out` | `destination-over` | difference | exclusion | `hard-light` | hue | invert | lighten | lighter | luminosity | minus | multiply | normal | overlay | plus | reflect | saturation | screen | `soft-light` | `source-atop` | `source-in` | `source-out` | `vivid-light` | xor

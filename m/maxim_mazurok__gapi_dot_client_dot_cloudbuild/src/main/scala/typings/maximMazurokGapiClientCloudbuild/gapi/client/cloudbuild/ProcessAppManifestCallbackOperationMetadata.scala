@@ -22,7 +22,8 @@ object ProcessAppManifestCallbackOperationMetadata {
     __obj.asInstanceOf[ProcessAppManifestCallbackOperationMetadata]
   }
   
-  extension [Self <: ProcessAppManifestCallbackOperationMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProcessAppManifestCallbackOperationMetadata] (val x: Self) extends AnyVal {
     
     inline def setCompleteTime(value: String): Self = StObject.set(x, "completeTime", value.asInstanceOf[js.Any])
     

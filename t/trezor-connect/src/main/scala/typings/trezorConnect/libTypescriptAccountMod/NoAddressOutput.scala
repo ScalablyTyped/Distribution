@@ -21,7 +21,8 @@ object NoAddressOutput {
     __obj.asInstanceOf[NoAddressOutput]
   }
   
-  extension [Self <: NoAddressOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NoAddressOutput] (val x: Self) extends AnyVal {
     
     inline def setAmount(value: String): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
     

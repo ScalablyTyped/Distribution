@@ -59,7 +59,8 @@ object JQueryMaskedInputOptions {
     __obj.asInstanceOf[JQueryMaskedInputOptions]
   }
   
-  extension [Self <: JQueryMaskedInputOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JQueryMaskedInputOptions] (val x: Self) extends AnyVal {
     
     inline def setAlias(value: String): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
     

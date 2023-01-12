@@ -15,7 +15,8 @@ object CounterLabel {
     __obj.asInstanceOf[CounterLabel]
   }
   
-  extension [Self <: CounterLabel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CounterLabel] (val x: Self) extends AnyVal {
     
     inline def setCounterLabel(value: String): Self = StObject.set(x, "counterLabel", value.asInstanceOf[js.Any])
     

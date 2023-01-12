@@ -33,7 +33,8 @@ object SetDataBreakpointsResponse {
     __obj.asInstanceOf[SetDataBreakpointsResponse]
   }
   
-  extension [Self <: SetDataBreakpointsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetDataBreakpointsResponse] (val x: Self) extends AnyVal {
     
     inline def setBody(value: BreakpointsArray): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
   }

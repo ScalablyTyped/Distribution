@@ -28,7 +28,8 @@ object FilesLimit {
     __obj.asInstanceOf[FilesLimit]
   }
   
-  extension [Self <: FilesLimit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FilesLimit] (val x: Self) extends AnyVal {
     
     inline def setMaxFiles(value: MaxFiles): Self = StObject.set(x, "MaxFiles", value.asInstanceOf[js.Any])
     

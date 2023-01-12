@@ -76,7 +76,8 @@ object dxButtonGroupOptions {
     __obj.asInstanceOf[dxButtonGroupOptions]
   }
   
-  extension [Self <: dxButtonGroupOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxButtonGroupOptions] (val x: Self) extends AnyVal {
     
     inline def setButtonTemplate(
       value: template | (js.Function2[

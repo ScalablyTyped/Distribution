@@ -33,7 +33,8 @@ object Object3DGroup {
     __obj.asInstanceOf[Object3DGroup[C]]
   }
   
-  extension [Self <: Object3DGroup[?], C /* <: Object3D */](x: Self & Object3DGroup[C]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Object3DGroup[?], C /* <: Object3D */] (val x: Self & Object3DGroup[C]) extends AnyVal {
     
     inline def setAdd(value: C => Unit): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
     

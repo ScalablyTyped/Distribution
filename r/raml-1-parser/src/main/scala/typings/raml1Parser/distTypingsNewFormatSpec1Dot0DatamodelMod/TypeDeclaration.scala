@@ -92,7 +92,8 @@ object TypeDeclaration {
     __obj.asInstanceOf[TypeDeclaration]
   }
   
-  extension [Self <: TypeDeclaration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeDeclaration] (val x: Self) extends AnyVal {
     
     inline def setAllowedTargets(value: js.Array[String]): Self = StObject.set(x, "allowedTargets", value.asInstanceOf[js.Any])
     

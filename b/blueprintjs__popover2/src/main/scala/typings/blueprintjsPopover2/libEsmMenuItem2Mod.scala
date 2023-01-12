@@ -172,7 +172,8 @@ object libEsmMenuItem2Mod {
       __obj.asInstanceOf[MenuItem2Props]
     }
     
-    extension [Self <: MenuItem2Props](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MenuItem2Props] (val x: Self) extends AnyVal {
       
       inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       

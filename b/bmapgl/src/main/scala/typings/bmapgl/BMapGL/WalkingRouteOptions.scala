@@ -26,7 +26,8 @@ object WalkingRouteOptions {
     __obj.asInstanceOf[WalkingRouteOptions]
   }
   
-  extension [Self <: WalkingRouteOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WalkingRouteOptions] (val x: Self) extends AnyVal {
     
     inline def setOnInfoHtmlSet(value: (/* poi */ LocalResultPoi, /* html */ HTMLElement) => Unit): Self = StObject.set(x, "onInfoHtmlSet", js.Any.fromFunction2(value))
     

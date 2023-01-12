@@ -33,7 +33,8 @@ object DropDownListClosedEventUIParam {
     __obj.asInstanceOf[DropDownListClosedEventUIParam]
   }
   
-  extension [Self <: DropDownListClosedEventUIParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DropDownListClosedEventUIParam] (val x: Self) extends AnyVal {
     
     inline def setEditor(value: Any): Self = StObject.set(x, "editor", value.asInstanceOf[js.Any])
     

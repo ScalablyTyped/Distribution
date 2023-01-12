@@ -20,7 +20,8 @@ object Continuous {
     __obj.asInstanceOf[Continuous]
   }
   
-  extension [Self <: Continuous](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Continuous] (val x: Self) extends AnyVal {
     
     inline def setContinuous(value: Boolean): Self = StObject.set(x, "continuous", value.asInstanceOf[js.Any])
     

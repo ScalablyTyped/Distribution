@@ -38,7 +38,8 @@ object DriverPropertyInfo {
     __obj.asInstanceOf[DriverPropertyInfo]
   }
   
-  extension [Self <: DriverPropertyInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DriverPropertyInfo] (val x: Self) extends AnyVal {
     
     inline def setChoices(value: SafeArray[String]): Self = StObject.set(x, "Choices", value.asInstanceOf[js.Any])
     

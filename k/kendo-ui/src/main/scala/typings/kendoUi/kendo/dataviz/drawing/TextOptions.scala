@@ -34,7 +34,8 @@ object TextOptions {
     __obj.asInstanceOf[TextOptions]
   }
   
-  extension [Self <: TextOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextOptions] (val x: Self) extends AnyVal {
     
     inline def setClip(value: typings.kendoUi.kendo.drawing.Path): Self = StObject.set(x, "clip", value.asInstanceOf[js.Any])
     

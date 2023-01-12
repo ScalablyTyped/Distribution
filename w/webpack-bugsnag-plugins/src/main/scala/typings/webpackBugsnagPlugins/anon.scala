@@ -29,7 +29,8 @@ object anon {
       __obj.asInstanceOf[Debug]
     }
     
-    extension [Self <: Debug](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Debug] (val x: Self) extends AnyVal {
       
       inline def setDebug(value: Any): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
       
@@ -78,7 +79,8 @@ object anon {
       __obj.asInstanceOf[Provider]
     }
     
-    extension [Self <: Provider](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Provider] (val x: Self) extends AnyVal {
       
       inline def setProvider(value: github | `github-enterprise` | gitlab | `gitlab-onpremise` | bitbucket | `bitbucket-server`): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
       

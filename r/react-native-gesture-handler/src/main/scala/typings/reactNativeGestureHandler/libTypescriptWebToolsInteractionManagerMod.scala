@@ -122,7 +122,8 @@ object libTypescriptWebToolsInteractionManagerMod {
       __obj.asInstanceOf[InteractionManager]
     }
     
-    extension [Self <: InteractionManager](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InteractionManager] (val x: Self) extends AnyVal {
       
       inline def setConfigureInteractions(
         value: (typings.reactNativeGestureHandler.libTypescriptWebHandlersGestureHandlerMod.default, Config) => Unit

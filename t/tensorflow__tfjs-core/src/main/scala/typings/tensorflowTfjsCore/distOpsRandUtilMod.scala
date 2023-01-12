@@ -149,7 +149,8 @@ object distOpsRandUtilMod {
       __obj.asInstanceOf[RandGammaDataTypes]
     }
     
-    extension [Self <: RandGammaDataTypes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RandGammaDataTypes] (val x: Self) extends AnyVal {
       
       inline def setFloat32(value: js.typedarray.Float32Array): Self = StObject.set(x, "float32", value.asInstanceOf[js.Any])
       
@@ -170,7 +171,8 @@ object distOpsRandUtilMod {
       __obj.asInstanceOf[RandNormalDataTypes]
     }
     
-    extension [Self <: RandNormalDataTypes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RandNormalDataTypes] (val x: Self) extends AnyVal {
       
       inline def setFloat32(value: js.typedarray.Float32Array): Self = StObject.set(x, "float32", value.asInstanceOf[js.Any])
       
@@ -189,7 +191,8 @@ object distOpsRandUtilMod {
       __obj.asInstanceOf[RandomBase]
     }
     
-    extension [Self <: RandomBase](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RandomBase] (val x: Self) extends AnyVal {
       
       inline def setNextValue(value: () => Double): Self = StObject.set(x, "nextValue", js.Any.fromFunction0(value))
     }
@@ -206,7 +209,8 @@ object distOpsRandUtilMod {
       __obj.asInstanceOf[RandomGamma]
     }
     
-    extension [Self <: RandomGamma](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RandomGamma] (val x: Self) extends AnyVal {
       
       inline def setNextValue(value: () => Double): Self = StObject.set(x, "nextValue", js.Any.fromFunction0(value))
     }

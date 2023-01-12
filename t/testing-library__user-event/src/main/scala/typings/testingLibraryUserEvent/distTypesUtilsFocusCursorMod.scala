@@ -30,7 +30,8 @@ object distTypesUtilsFocusCursorMod {
         __obj.asInstanceOf[Text]
       }
       
-      extension [Self <: Text](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Text] (val x: Self) extends AnyVal {
         
         inline def setNodeValue(value: String): Self = StObject.set(x, "nodeValue", value.asInstanceOf[js.Any])
       }

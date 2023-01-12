@@ -27,7 +27,8 @@ object distTypesClassicEditorSystemDistComponentsAlignCenterVerticleMod extends 
       __obj.asInstanceOf[AlignCenterVerticleProps]
     }
     
-    extension [Self <: AlignCenterVerticleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AlignCenterVerticleProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

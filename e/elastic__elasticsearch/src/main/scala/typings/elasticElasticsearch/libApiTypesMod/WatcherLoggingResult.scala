@@ -15,7 +15,8 @@ object WatcherLoggingResult {
     __obj.asInstanceOf[WatcherLoggingResult]
   }
   
-  extension [Self <: WatcherLoggingResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WatcherLoggingResult] (val x: Self) extends AnyVal {
     
     inline def setLogged_text(value: String): Self = StObject.set(x, "logged_text", value.asInstanceOf[js.Any])
   }

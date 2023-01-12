@@ -35,7 +35,8 @@ object FolderListEntry {
     __obj.asInstanceOf[FolderListEntry]
   }
   
-  extension [Self <: FolderListEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FolderListEntry] (val x: Self) extends AnyVal {
     
     inline def setID(value: String): Self = StObject.set(x, "ID", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object GooglePrivacyDlpV2TransformationOverview {
     __obj.asInstanceOf[GooglePrivacyDlpV2TransformationOverview]
   }
   
-  extension [Self <: GooglePrivacyDlpV2TransformationOverview](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GooglePrivacyDlpV2TransformationOverview] (val x: Self) extends AnyVal {
     
     inline def setTransformationSummaries(value: js.Array[GooglePrivacyDlpV2TransformationSummary]): Self = StObject.set(x, "transformationSummaries", value.asInstanceOf[js.Any])
     

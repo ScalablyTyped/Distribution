@@ -52,7 +52,8 @@ object Arrowheadangle {
     __obj.asInstanceOf[Arrowheadangle]
   }
   
-  extension [Self <: Arrowheadangle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Arrowheadangle] (val x: Self) extends AnyVal {
     
     inline def setArrowhead_angle(value: Double): Self = StObject.set(x, "arrowhead_angle", value.asInstanceOf[js.Any])
     

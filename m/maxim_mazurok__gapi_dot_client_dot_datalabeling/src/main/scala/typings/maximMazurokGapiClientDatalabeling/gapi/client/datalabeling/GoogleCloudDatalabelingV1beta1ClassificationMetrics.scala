@@ -19,7 +19,8 @@ object GoogleCloudDatalabelingV1beta1ClassificationMetrics {
     __obj.asInstanceOf[GoogleCloudDatalabelingV1beta1ClassificationMetrics]
   }
   
-  extension [Self <: GoogleCloudDatalabelingV1beta1ClassificationMetrics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDatalabelingV1beta1ClassificationMetrics] (val x: Self) extends AnyVal {
     
     inline def setConfusionMatrix(value: GoogleCloudDatalabelingV1beta1ConfusionMatrix): Self = StObject.set(x, "confusionMatrix", value.asInstanceOf[js.Any])
     

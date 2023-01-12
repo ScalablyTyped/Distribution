@@ -35,7 +35,8 @@ object ApsAlert {
     __obj.asInstanceOf[ApsAlert]
   }
   
-  extension [Self <: ApsAlert](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApsAlert] (val x: Self) extends AnyVal {
     
     inline def setActionLocKey(value: String): Self = StObject.set(x, "actionLocKey", value.asInstanceOf[js.Any])
     

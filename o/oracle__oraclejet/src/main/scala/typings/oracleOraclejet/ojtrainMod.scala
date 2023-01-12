@@ -210,7 +210,8 @@ object ojtrainMod {
         __obj.asInstanceOf[Step]
       }
       
-      extension [Self <: Step](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Step] (val x: Self) extends AnyVal {
         
         inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
         
@@ -371,7 +372,8 @@ object ojtrainMod {
       __obj.asInstanceOf[ojTrainEventMap]
     }
     
-    extension [Self <: ojTrainEventMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ojTrainEventMap] (val x: Self) extends AnyVal {
       
       inline def setOjBeforeDeselect(value: typings.oracleOraclejet.ojtrainMod.ojTrain.ojBeforeDeselect): Self = StObject.set(x, "ojBeforeDeselect", value.asInstanceOf[js.Any])
       
@@ -402,7 +404,8 @@ object ojtrainMod {
       __obj.asInstanceOf[ojTrainSettableProperties]
     }
     
-    extension [Self <: ojTrainSettableProperties](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ojTrainSettableProperties] (val x: Self) extends AnyVal {
       
       inline def setSelectedStep(value: String): Self = StObject.set(x, "selectedStep", value.asInstanceOf[js.Any])
       
@@ -430,7 +433,8 @@ object ojtrainMod {
       __obj.asInstanceOf[ojTrainSettablePropertiesLenient]
     }
     
-    extension [Self <: ojTrainSettablePropertiesLenient](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ojTrainSettablePropertiesLenient] (val x: Self) extends AnyVal {
       
       inline def setSelectedStep(value: String): Self = StObject.set(x, "selectedStep", value.asInstanceOf[js.Any])
       

@@ -48,7 +48,8 @@ object LifecycleHookSpecification {
     __obj.asInstanceOf[LifecycleHookSpecification]
   }
   
-  extension [Self <: LifecycleHookSpecification](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LifecycleHookSpecification] (val x: Self) extends AnyVal {
     
     inline def setDefaultResult(value: LifecycleActionResult): Self = StObject.set(x, "DefaultResult", value.asInstanceOf[js.Any])
     

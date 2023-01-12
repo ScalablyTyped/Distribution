@@ -17,7 +17,8 @@ object ProgressControlOptions {
     __obj.asInstanceOf[ProgressControlOptions]
   }
   
-  extension [Self <: ProgressControlOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProgressControlOptions] (val x: Self) extends AnyVal {
     
     inline def setSeekBar(value: Boolean): Self = StObject.set(x, "seekBar", value.asInstanceOf[js.Any])
     

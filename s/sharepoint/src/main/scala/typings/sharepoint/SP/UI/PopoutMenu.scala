@@ -20,7 +20,8 @@ object PopoutMenu {
     __obj.asInstanceOf[PopoutMenu]
   }
   
-  extension [Self <: PopoutMenu](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PopoutMenu] (val x: Self) extends AnyVal {
     
     inline def setCloseMenu(value: () => Unit): Self = StObject.set(x, "closeMenu", js.Any.fromFunction0(value))
     

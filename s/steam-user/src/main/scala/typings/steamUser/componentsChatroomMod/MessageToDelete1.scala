@@ -17,7 +17,8 @@ object MessageToDelete1 {
     __obj.asInstanceOf[MessageToDelete1]
   }
   
-  extension [Self <: MessageToDelete1](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MessageToDelete1] (val x: Self) extends AnyVal {
     
     inline def setOrdinal(value: Double): Self = StObject.set(x, "ordinal", value.asInstanceOf[js.Any])
     

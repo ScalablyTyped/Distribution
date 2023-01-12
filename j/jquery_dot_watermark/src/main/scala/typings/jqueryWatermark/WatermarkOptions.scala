@@ -21,7 +21,8 @@ object WatermarkOptions {
     __obj.asInstanceOf[WatermarkOptions]
   }
   
-  extension [Self <: WatermarkOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WatermarkOptions] (val x: Self) extends AnyVal {
     
     inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     

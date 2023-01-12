@@ -43,7 +43,8 @@ object anon {
       __obj.asInstanceOf[Base]
     }
     
-    extension [Self <: Base](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Base] (val x: Self) extends AnyVal {
       
       inline def setBase(value: String): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
       
@@ -110,7 +111,8 @@ object anon {
       __obj.asInstanceOf[FailAfter]
     }
     
-    extension [Self <: FailAfter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FailAfter] (val x: Self) extends AnyVal {
       
       inline def setFailAfter(value: Double): Self = StObject.set(x, "failAfter", value.asInstanceOf[js.Any])
       
@@ -159,7 +161,8 @@ object anon {
       __obj.asInstanceOf[OptionspassReqToCallbackt]
     }
     
-    extension [Self <: OptionspassReqToCallbackt](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OptionspassReqToCallbackt] (val x: Self) extends AnyVal {
       
       inline def setGetUserNameFromHeader(
         value: /* req */ Request_[

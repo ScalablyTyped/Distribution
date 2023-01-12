@@ -155,7 +155,8 @@ object PetitDom {
       __obj.asInstanceOf[Component[P]]
     }
     
-    extension [Self <: Component[?], P /* <: ComponentProps */](x: Self & Component[P]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Component[?], P /* <: ComponentProps */] (val x: Self & Component[P]) extends AnyVal {
       
       inline def setMount(value: (P, js.Array[VNode]) => Element): Self = StObject.set(x, "mount", js.Any.fromFunction2(value))
       
@@ -188,7 +189,8 @@ object PetitDom {
       __obj.asInstanceOf[ComponentClassNode[P]]
     }
     
-    extension [Self <: ComponentClassNode[?], P /* <: ComponentProps */](x: Self & ComponentClassNode[P]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ComponentClassNode[?], P /* <: ComponentProps */] (val x: Self & ComponentClassNode[P]) extends AnyVal {
       
       inline def setProps(value: P & IntrinsicProps): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
       
@@ -214,7 +216,8 @@ object PetitDom {
       __obj.asInstanceOf[ComponentNode[P]]
     }
     
-    extension [Self <: ComponentNode[?], P /* <: ComponentProps */](x: Self & ComponentNode[P]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ComponentNode[?], P /* <: ComponentProps */] (val x: Self & ComponentNode[P]) extends AnyVal {
       
       inline def setProps(value: P & IntrinsicProps): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
       
@@ -869,7 +872,8 @@ object PetitDom {
       __obj.asInstanceOf[DomElements]
     }
     
-    extension [Self <: DomElements](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DomElements] (val x: Self) extends AnyVal {
       
       inline def setA(value: HTMLAnchorElement): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
       
@@ -1231,7 +1235,8 @@ object PetitDom {
       __obj.asInstanceOf[ElementNode[T, E]]
     }
     
-    extension [Self <: ElementNode[?, ?], T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 170, starting with typings.petitDom.petitDomStrings.main, typings.petitDom.petitDomStrings.a, typings.petitDom.petitDomStrings.abbr */ Any */, E /* <: /* import warning: importer.ImportType#apply Failed type conversion: petit-dom.petit-dom.PetitDom.DomElements[T] */ js.Any */](x: Self & (ElementNode[T, E])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ElementNode[?, ?], T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 170, starting with typings.petitDom.petitDomStrings.main, typings.petitDom.petitDomStrings.a, typings.petitDom.petitDomStrings.abbr */ Any */, E /* <: /* import warning: importer.ImportType#apply Failed type conversion: petit-dom.petit-dom.PetitDom.DomElements[T] */ js.Any */] (val x: Self & (ElementNode[T, E])) extends AnyVal {
       
       inline def setProps(value: Props[E]): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
       
@@ -1267,7 +1272,8 @@ object PetitDom {
       __obj.asInstanceOf[FunctionComponentNode[P]]
     }
     
-    extension [Self <: FunctionComponentNode[?], P /* <: ComponentProps */](x: Self & FunctionComponentNode[P]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FunctionComponentNode[?], P /* <: ComponentProps */] (val x: Self & FunctionComponentNode[P]) extends AnyVal {
       
       inline def setProps(value: P & IntrinsicProps): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
       
@@ -1288,7 +1294,8 @@ object PetitDom {
       __obj.asInstanceOf[IntrinsicProps]
     }
     
-    extension [Self <: IntrinsicProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IntrinsicProps] (val x: Self) extends AnyVal {
       
       inline def setContent(value: Content | js.Array[Content]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
@@ -1334,7 +1341,8 @@ object PetitDom {
       __obj.asInstanceOf[VNode]
     }
     
-    extension [Self <: VNode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VNode] (val x: Self) extends AnyVal {
       
       inline def setContent(value: js.Array[VNode]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       

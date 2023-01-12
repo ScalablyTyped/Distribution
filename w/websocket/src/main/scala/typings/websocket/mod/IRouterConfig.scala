@@ -18,7 +18,8 @@ object IRouterConfig {
     __obj.asInstanceOf[IRouterConfig]
   }
   
-  extension [Self <: IRouterConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IRouterConfig] (val x: Self) extends AnyVal {
     
     inline def setServer(value: server): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
   }

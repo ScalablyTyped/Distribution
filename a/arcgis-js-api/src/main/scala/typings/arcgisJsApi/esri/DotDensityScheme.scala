@@ -54,7 +54,8 @@ object DotDensityScheme {
     __obj.asInstanceOf[DotDensityScheme]
   }
   
-  extension [Self <: DotDensityScheme](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DotDensityScheme] (val x: Self) extends AnyVal {
     
     inline def setColors(value: js.Array[Color_]): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
     

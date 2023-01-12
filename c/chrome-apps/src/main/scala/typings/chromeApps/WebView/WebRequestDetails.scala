@@ -31,7 +31,8 @@ object WebRequestDetails {
     __obj.asInstanceOf[WebRequestDetails]
   }
   
-  extension [Self <: WebRequestDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebRequestDetails] (val x: Self) extends AnyVal {
     
     inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
   }

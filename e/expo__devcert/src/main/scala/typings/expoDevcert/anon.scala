@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[CaCertPath]
     }
     
-    extension [Self <: CaCertPath](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CaCertPath] (val x: Self) extends AnyVal {
       
       inline def setCaCertPath(value: String): Self = StObject.set(x, "caCertPath", value.asInstanceOf[js.Any])
       

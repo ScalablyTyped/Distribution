@@ -24,7 +24,8 @@ object esAuthAuthenticatorsAuthenticatorInterfaceMod {
       __obj.asInstanceOf[AuthenticateOptions]
     }
     
-    extension [Self <: AuthenticateOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AuthenticateOptions] (val x: Self) extends AnyVal {
       
       inline def setHeaders(value: OutgoingHttpHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
@@ -55,7 +56,8 @@ object esAuthAuthenticatorsAuthenticatorInterfaceMod {
       __obj.asInstanceOf[AuthenticatorInterface]
     }
     
-    extension [Self <: AuthenticatorInterface](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AuthenticatorInterface] (val x: Self) extends AnyVal {
       
       inline def setAuthenticate(value: AuthenticateOptions => js.Promise[Unit]): Self = StObject.set(x, "authenticate", js.Any.fromFunction1(value))
       

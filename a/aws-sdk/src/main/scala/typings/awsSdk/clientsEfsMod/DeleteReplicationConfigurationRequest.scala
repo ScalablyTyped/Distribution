@@ -18,7 +18,8 @@ object DeleteReplicationConfigurationRequest {
     __obj.asInstanceOf[DeleteReplicationConfigurationRequest]
   }
   
-  extension [Self <: DeleteReplicationConfigurationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteReplicationConfigurationRequest] (val x: Self) extends AnyVal {
     
     inline def setSourceFileSystemId(value: FileSystemId): Self = StObject.set(x, "SourceFileSystemId", value.asInstanceOf[js.Any])
   }

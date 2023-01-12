@@ -145,7 +145,8 @@ object selectbuttonSelectbuttonMod {
       __obj.asInstanceOf[SelectButtonChangeParams]
     }
     
-    extension [Self <: SelectButtonChangeParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SelectButtonChangeParams] (val x: Self) extends AnyVal {
       
       inline def setOriginalEvent(value: SyntheticEvent[Element, Event]): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
       
@@ -174,7 +175,8 @@ object selectbuttonSelectbuttonMod {
       __obj.asInstanceOf[SelectButtonChangeTargetOptions]
     }
     
-    extension [Self <: SelectButtonChangeTargetOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SelectButtonChangeTargetOptions] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -632,7 +634,8 @@ object selectbuttonSelectbuttonMod {
       __obj.asInstanceOf[SelectButtonProps]
     }
     
-    extension [Self <: SelectButtonProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SelectButtonProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       

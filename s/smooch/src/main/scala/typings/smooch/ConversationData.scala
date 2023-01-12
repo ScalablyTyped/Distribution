@@ -15,7 +15,8 @@ object ConversationData {
     __obj.asInstanceOf[ConversationData]
   }
   
-  extension [Self <: ConversationData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConversationData] (val x: Self) extends AnyVal {
     
     inline def setConversation(value: Conversation): Self = StObject.set(x, "conversation", value.asInstanceOf[js.Any])
   }

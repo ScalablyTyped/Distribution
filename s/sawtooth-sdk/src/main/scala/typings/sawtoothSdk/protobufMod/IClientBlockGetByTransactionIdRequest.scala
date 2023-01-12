@@ -16,7 +16,8 @@ object IClientBlockGetByTransactionIdRequest {
     __obj.asInstanceOf[IClientBlockGetByTransactionIdRequest]
   }
   
-  extension [Self <: IClientBlockGetByTransactionIdRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IClientBlockGetByTransactionIdRequest] (val x: Self) extends AnyVal {
     
     inline def setTransactionId(value: String): Self = StObject.set(x, "transactionId", value.asInstanceOf[js.Any])
     

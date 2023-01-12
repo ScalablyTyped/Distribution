@@ -17,7 +17,8 @@ object MaxSockets {
     __obj.asInstanceOf[MaxSockets]
   }
   
-  extension [Self <: MaxSockets](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MaxSockets] (val x: Self) extends AnyVal {
     
     inline def setMaxSockets(value: Double): Self = StObject.set(x, "maxSockets", value.asInstanceOf[js.Any])
     

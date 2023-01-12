@@ -17,7 +17,8 @@ object LoadScriptCompilationHooks {
     __obj.asInstanceOf[LoadScriptCompilationHooks]
   }
   
-  extension [Self <: LoadScriptCompilationHooks](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LoadScriptCompilationHooks] (val x: Self) extends AnyVal {
     
     inline def setCreateScript(value: SyncWaterfallHook[js.Tuple2[String, Chunk], UnsetAdditionalOptions]): Self = StObject.set(x, "createScript", value.asInstanceOf[js.Any])
   }

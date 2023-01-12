@@ -22,7 +22,8 @@ object ModalOptionsBackdropString {
     __obj.asInstanceOf[ModalOptionsBackdropString]
   }
   
-  extension [Self <: ModalOptionsBackdropString](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModalOptionsBackdropString] (val x: Self) extends AnyVal {
     
     inline def setBackdrop(value: String): Self = StObject.set(x, "backdrop", value.asInstanceOf[js.Any])
     

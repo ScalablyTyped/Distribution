@@ -23,7 +23,8 @@ object PartialClientListenCall {
     __obj.asInstanceOf[PartialClientListenCall]
   }
   
-  extension [Self <: PartialClientListenCall](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialClientListenCall] (val x: Self) extends AnyVal {
     
     inline def setEvent(value: String): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     

@@ -38,7 +38,8 @@ object IVaultScheduledJobManagementOperations {
     __obj.asInstanceOf[IVaultScheduledJobManagementOperations]
   }
   
-  extension [Self <: IVaultScheduledJobManagementOperations](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IVaultScheduledJobManagementOperations] (val x: Self) extends AnyVal {
     
     inline def setAddScheduledJob(value: IScheduledJob => Double): Self = StObject.set(x, "AddScheduledJob", js.Any.fromFunction1(value))
     

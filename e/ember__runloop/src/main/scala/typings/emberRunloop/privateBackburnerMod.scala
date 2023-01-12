@@ -43,7 +43,8 @@ object privateBackburnerMod {
       __obj.asInstanceOf[DebugInfo]
     }
     
-    extension [Self <: DebugInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DebugInfo] (val x: Self) extends AnyVal {
       
       inline def setAutorun(value: js.Error): Self = StObject.set(x, "autorun", value.asInstanceOf[js.Any])
       
@@ -90,7 +91,8 @@ object privateBackburnerMod {
       __obj.asInstanceOf[DeferredActionQueues]
     }
     
-    extension [Self <: DeferredActionQueues](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeferredActionQueues] (val x: Self) extends AnyVal {
       
       inline def setFlush(value: Boolean => Any): Self = StObject.set(x, "flush", js.Any.fromFunction1(value))
       
@@ -121,7 +123,8 @@ object privateBackburnerMod {
       __obj.asInstanceOf[QueueItem]
     }
     
-    extension [Self <: QueueItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QueueItem] (val x: Self) extends AnyVal {
       
       inline def setArgs(value: js.Array[js.Object]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       

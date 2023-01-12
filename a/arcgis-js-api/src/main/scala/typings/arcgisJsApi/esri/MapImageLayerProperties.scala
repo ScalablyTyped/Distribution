@@ -127,7 +127,8 @@ object MapImageLayerProperties {
     __obj.asInstanceOf[MapImageLayerProperties]
   }
   
-  extension [Self <: MapImageLayerProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MapImageLayerProperties] (val x: Self) extends AnyVal {
     
     inline def setCopyright(value: String): Self = StObject.set(x, "copyright", value.asInstanceOf[js.Any])
     

@@ -319,7 +319,8 @@ object mod {
       __obj.asInstanceOf[CertificateParams]
     }
     
-    extension [Self <: CertificateParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CertificateParams] (val x: Self) extends AnyVal {
       
       inline def setCert(value: String | (js.Array[Buffer | String]) | Buffer): Self = StObject.set(x, "cert", value.asInstanceOf[js.Any])
       
@@ -377,7 +378,8 @@ object mod {
       __obj.asInstanceOf[CreateServerOptions]
     }
     
-    extension [Self <: CreateServerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateServerOptions] (val x: Self) extends AnyVal {
       
       inline def setCertAuthority(value: CertificateParams): Self = StObject.set(x, "certAuthority", value.asInstanceOf[js.Any])
       
@@ -508,7 +510,8 @@ object mod {
       __obj.asInstanceOf[InterceptOptions]
     }
     
-    extension [Self <: InterceptOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InterceptOptions] (val x: Self) extends AnyVal {
       
       inline def setAs(value: BodyParser): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
@@ -613,7 +616,8 @@ object mod {
       __obj.asInstanceOf[Log]
     }
     
-    extension [Self <: Log](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Log] (val x: Self) extends AnyVal {
       
       inline def setError(value: js.Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
@@ -703,7 +707,8 @@ object mod {
       __obj.asInstanceOf[ServeOptions]
     }
     
-    extension [Self <: ServeOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ServeOptions] (val x: Self) extends AnyVal {
       
       inline def setDocroot(value: String): Self = StObject.set(x, "docroot", value.asInstanceOf[js.Any])
       
@@ -763,7 +768,8 @@ object mod {
       __obj.asInstanceOf[Slow]
     }
     
-    extension [Self <: Slow](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Slow] (val x: Self) extends AnyVal {
       
       inline def setDown(value: Double): Self = StObject.set(x, "down", value.asInstanceOf[js.Any])
       

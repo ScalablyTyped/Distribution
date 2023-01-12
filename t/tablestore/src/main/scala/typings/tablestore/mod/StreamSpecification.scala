@@ -17,7 +17,8 @@ object StreamSpecification {
     __obj.asInstanceOf[StreamSpecification]
   }
   
-  extension [Self <: StreamSpecification](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StreamSpecification] (val x: Self) extends AnyVal {
     
     inline def setEnableStream(value: Boolean): Self = StObject.set(x, "enableStream", value.asInstanceOf[js.Any])
     

@@ -35,7 +35,8 @@ object mod {
       __obj.asInstanceOf[ValidationOptions]
     }
     
-    extension [Self <: ValidationOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ValidationOptions] (val x: Self) extends AnyVal {
       
       inline def `setLoader-enforce-include-or-exclude`(value: Boolean): Self = StObject.set(x, "loader-enforce-include-or-exclude", value.asInstanceOf[js.Any])
       

@@ -33,7 +33,8 @@ object ControlMessage {
     __obj.asInstanceOf[ControlMessage]
   }
   
-  extension [Self <: ControlMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ControlMessage] (val x: Self) extends AnyVal {
     
     inline def setAbortInfo(value: SfjobabortReason): Self = StObject.set(x, "abortInfo", value.asInstanceOf[js.Any])
     

@@ -33,7 +33,8 @@ object AgendaRangeChangingEventUIParam {
     __obj.asInstanceOf[AgendaRangeChangingEventUIParam]
   }
   
-  extension [Self <: AgendaRangeChangingEventUIParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AgendaRangeChangingEventUIParam] (val x: Self) extends AnyVal {
     
     inline def setCurrentAgendaRangeStartDate(value: Any): Self = StObject.set(x, "currentAgendaRangeStartDate", value.asInstanceOf[js.Any])
     

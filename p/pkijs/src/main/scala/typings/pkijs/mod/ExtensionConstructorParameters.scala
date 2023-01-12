@@ -21,7 +21,8 @@ object ExtensionConstructorParameters {
     __obj.asInstanceOf[ExtensionConstructorParameters]
   }
   
-  extension [Self <: ExtensionConstructorParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExtensionConstructorParameters] (val x: Self) extends AnyVal {
     
     inline def setCritical(value: Boolean): Self = StObject.set(x, "critical", value.asInstanceOf[js.Any])
     

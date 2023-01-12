@@ -39,7 +39,8 @@ object PlotLinearregressionOnPointPositionOptions {
     __obj.asInstanceOf[PlotLinearregressionOnPointPositionOptions]
   }
   
-  extension [Self <: PlotLinearregressionOnPointPositionOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotLinearregressionOnPointPositionOptions] (val x: Self) extends AnyVal {
     
     inline def setOffsetX(value: Double): Self = StObject.set(x, "offsetX", value.asInstanceOf[js.Any])
     

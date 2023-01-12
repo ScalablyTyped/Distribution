@@ -26,7 +26,8 @@ object anon {
       __obj.asInstanceOf[`0`]
     }
     
-    extension [Self <: `0`](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: `0`] (val x: Self) extends AnyVal {
       
       inline def setType(value: close): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
@@ -48,7 +49,8 @@ object anon {
       __obj.asInstanceOf[ControlPoint]
     }
     
-    extension [Self <: ControlPoint](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ControlPoint] (val x: Self) extends AnyVal {
       
       inline def setControlPoint(value: Point_): Self = StObject.set(x, "controlPoint", value.asInstanceOf[js.Any])
       
@@ -76,7 +78,8 @@ object anon {
       __obj.asInstanceOf[ControlPoint1]
     }
     
-    extension [Self <: ControlPoint1](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ControlPoint1] (val x: Self) extends AnyVal {
       
       inline def setControlPoint1(value: Point_): Self = StObject.set(x, "controlPoint1", value.asInstanceOf[js.Any])
       
@@ -99,7 +102,8 @@ object anon {
       __obj.asInstanceOf[ConvertQuadraticsToCubics]
     }
     
-    extension [Self <: ConvertQuadraticsToCubics](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConvertQuadraticsToCubics] (val x: Self) extends AnyVal {
       
       inline def setConvertQuadraticsToCubics(value: `true`): Self = StObject.set(x, "convertQuadraticsToCubics", value.asInstanceOf[js.Any])
     }
@@ -128,7 +132,8 @@ object anon {
       __obj.asInstanceOf[Fill]
     }
     
-    extension [Self <: Fill](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Fill] (val x: Self) extends AnyVal {
       
       inline def setFill(value: String): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
       
@@ -175,7 +180,8 @@ object anon {
       __obj.asInstanceOf[Height]
     }
     
-    extension [Self <: Height](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Height] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -205,7 +211,8 @@ object anon {
       __obj.asInstanceOf[To]
     }
     
-    extension [Self <: To](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: To] (val x: Self) extends AnyVal {
       
       inline def setTo(value: Point_): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
       
@@ -227,7 +234,8 @@ object anon {
       __obj.asInstanceOf[Type]
     }
     
-    extension [Self <: Type](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Type] (val x: Self) extends AnyVal {
       
       inline def setTo(value: Point_): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
       
@@ -246,7 +254,8 @@ object anon {
       __obj.asInstanceOf[UnsupportedFeatures]
     }
     
-    extension [Self <: UnsupportedFeatures](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnsupportedFeatures] (val x: Self) extends AnyVal {
       
       inline def setUnsupportedFeatures(value: js.Array[String]): Self = StObject.set(x, "unsupportedFeatures", value.asInstanceOf[js.Any])
       

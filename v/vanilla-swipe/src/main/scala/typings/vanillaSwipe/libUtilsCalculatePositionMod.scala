@@ -27,7 +27,8 @@ object libUtilsCalculatePositionMod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setDirectionDelta(value: Double): Self = StObject.set(x, "directionDelta", value.asInstanceOf[js.Any])
       
@@ -48,7 +49,8 @@ object libUtilsCalculatePositionMod {
       __obj.asInstanceOf[nextPosition]
     }
     
-    extension [Self <: nextPosition](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: nextPosition] (val x: Self) extends AnyVal {
       
       inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       

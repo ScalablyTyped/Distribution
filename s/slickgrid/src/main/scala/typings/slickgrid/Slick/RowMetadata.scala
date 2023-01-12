@@ -43,7 +43,8 @@ object RowMetadata {
     __obj.asInstanceOf[RowMetadata[T]]
   }
   
-  extension [Self <: RowMetadata[?], T /* <: SlickData */](x: Self & RowMetadata[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RowMetadata[?], T /* <: SlickData */] (val x: Self & RowMetadata[T]) extends AnyVal {
     
     inline def setColumns(
       value: (/**

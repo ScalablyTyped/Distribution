@@ -31,7 +31,8 @@ object Service {
     __obj.asInstanceOf[Service]
   }
   
-  extension [Self <: Service](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Service] (val x: Self) extends AnyVal {
     
     inline def setAnnotations(
       value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any

@@ -29,7 +29,8 @@ object IOCRZones {
     __obj.asInstanceOf[IOCRZones]
   }
   
-  extension [Self <: IOCRZones](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IOCRZones] (val x: Self) extends AnyVal {
     
     inline def setAdd(value: (Double, IOCRZone) => Unit): Self = StObject.set(x, "Add", js.Any.fromFunction2(value))
     

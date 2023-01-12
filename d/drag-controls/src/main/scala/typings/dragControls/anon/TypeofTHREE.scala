@@ -2001,7 +2001,8 @@ object TypeofTHREE {
     __obj.asInstanceOf[TypeofTHREE]
   }
   
-  extension [Self <: TypeofTHREE](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofTHREE] (val x: Self) extends AnyVal {
     
     inline def setACESFilmicToneMapping(value: ToneMapping): Self = StObject.set(x, "ACESFilmicToneMapping", value.asInstanceOf[js.Any])
     

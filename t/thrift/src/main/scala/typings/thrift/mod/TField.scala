@@ -20,7 +20,8 @@ object TField {
     __obj.asInstanceOf[TField]
   }
   
-  extension [Self <: TField](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TField] (val x: Self) extends AnyVal {
     
     inline def setFid(value: Double): Self = StObject.set(x, "fid", value.asInstanceOf[js.Any])
     

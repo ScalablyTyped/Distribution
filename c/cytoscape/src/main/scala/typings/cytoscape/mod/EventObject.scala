@@ -48,7 +48,8 @@ object EventObject {
     __obj.asInstanceOf[EventObject]
   }
   
-  extension [Self <: EventObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventObject] (val x: Self) extends AnyVal {
     
     inline def setLayout(value: Any): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
   }

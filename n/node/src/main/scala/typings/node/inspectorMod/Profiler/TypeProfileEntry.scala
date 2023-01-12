@@ -27,7 +27,8 @@ object TypeProfileEntry {
     __obj.asInstanceOf[TypeProfileEntry]
   }
   
-  extension [Self <: TypeProfileEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeProfileEntry] (val x: Self) extends AnyVal {
     
     inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     

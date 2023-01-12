@@ -191,7 +191,8 @@ object sapUiCoreTmplDomattributeMod {
       __obj.asInstanceOf[DOMAttributeSettings]
     }
     
-    extension [Self <: DOMAttributeSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DOMAttributeSettings] (val x: Self) extends AnyVal {
       
       inline def setName(value: String | PropertyBindingInfo): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       

@@ -19,7 +19,8 @@ object ListDatabaseRolesResponse {
     __obj.asInstanceOf[ListDatabaseRolesResponse]
   }
   
-  extension [Self <: ListDatabaseRolesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListDatabaseRolesResponse] (val x: Self) extends AnyVal {
     
     inline def setDatabaseRoles(value: js.Array[DatabaseRole]): Self = StObject.set(x, "databaseRoles", value.asInstanceOf[js.Any])
     

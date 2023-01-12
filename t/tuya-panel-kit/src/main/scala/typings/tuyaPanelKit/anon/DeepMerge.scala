@@ -41,7 +41,8 @@ object DeepMerge {
     __obj.asInstanceOf[DeepMerge]
   }
   
-  extension [Self <: DeepMerge](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeepMerge] (val x: Self) extends AnyVal {
     
     inline def setDeepMerge(value: (js.Object, /* repeated */ js.Object) => js.Object): Self = StObject.set(x, "deepMerge", js.Any.fromFunction2(value))
     

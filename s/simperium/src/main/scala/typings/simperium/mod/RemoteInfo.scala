@@ -19,7 +19,8 @@ object RemoteInfo {
     __obj.asInstanceOf[RemoteInfo[T]]
   }
   
-  extension [Self <: RemoteInfo[?], T](x: Self & RemoteInfo[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RemoteInfo[?], T] (val x: Self & RemoteInfo[T]) extends AnyVal {
     
     inline def setIsIndexing(value: Boolean): Self = StObject.set(x, "isIndexing", value.asInstanceOf[js.Any])
     

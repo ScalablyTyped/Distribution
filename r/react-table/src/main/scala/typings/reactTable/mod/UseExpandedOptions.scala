@@ -22,7 +22,8 @@ object UseExpandedOptions {
     __obj.asInstanceOf[UseExpandedOptions[D]]
   }
   
-  extension [Self <: UseExpandedOptions[?], D /* <: js.Object */](x: Self & UseExpandedOptions[D]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UseExpandedOptions[?], D /* <: js.Object */] (val x: Self & UseExpandedOptions[D]) extends AnyVal {
     
     inline def setAutoResetExpanded(value: Boolean): Self = StObject.set(x, "autoResetExpanded", value.asInstanceOf[js.Any])
     

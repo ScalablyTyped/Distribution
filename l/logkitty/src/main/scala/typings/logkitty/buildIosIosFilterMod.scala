@@ -56,7 +56,8 @@ object buildIosIosFilterMod {
       __obj.asInstanceOf[IosFilter]
     }
     
-    extension [Self <: IosFilter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IosFilter] (val x: Self) extends AnyVal {
       
       inline def setFilter(value: Any): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
       

@@ -22,7 +22,8 @@ object UrlRewrite {
     __obj.asInstanceOf[UrlRewrite]
   }
   
-  extension [Self <: UrlRewrite](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UrlRewrite] (val x: Self) extends AnyVal {
     
     inline def setHostRewrite(value: String): Self = StObject.set(x, "hostRewrite", value.asInstanceOf[js.Any])
     

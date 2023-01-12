@@ -85,7 +85,8 @@ object XPackageTypeInfo {
     __obj.asInstanceOf[XPackageTypeInfo]
   }
   
-  extension [Self <: XPackageTypeInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XPackageTypeInfo] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     

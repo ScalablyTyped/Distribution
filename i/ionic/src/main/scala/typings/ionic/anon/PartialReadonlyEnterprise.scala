@@ -28,7 +28,8 @@ object PartialReadonlyEnterprise {
     __obj.asInstanceOf[PartialReadonlyEnterprise]
   }
   
-  extension [Self <: PartialReadonlyEnterprise](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialReadonlyEnterprise] (val x: Self) extends AnyVal {
     
     inline def setAppId(value: String): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
     

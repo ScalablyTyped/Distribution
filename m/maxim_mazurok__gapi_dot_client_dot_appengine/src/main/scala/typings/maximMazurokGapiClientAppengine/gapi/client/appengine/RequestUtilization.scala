@@ -19,7 +19,8 @@ object RequestUtilization {
     __obj.asInstanceOf[RequestUtilization]
   }
   
-  extension [Self <: RequestUtilization](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RequestUtilization] (val x: Self) extends AnyVal {
     
     inline def setTargetConcurrentRequests(value: Double): Self = StObject.set(x, "targetConcurrentRequests", value.asInstanceOf[js.Any])
     

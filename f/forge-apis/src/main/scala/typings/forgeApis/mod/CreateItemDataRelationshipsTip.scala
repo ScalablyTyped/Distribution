@@ -15,7 +15,8 @@ object CreateItemDataRelationshipsTip {
     __obj.asInstanceOf[CreateItemDataRelationshipsTip]
   }
   
-  extension [Self <: CreateItemDataRelationshipsTip](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateItemDataRelationshipsTip] (val x: Self) extends AnyVal {
     
     inline def setData(value: CreateItemDataRelationshipsTipData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

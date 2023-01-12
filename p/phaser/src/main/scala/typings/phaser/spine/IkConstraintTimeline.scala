@@ -42,7 +42,8 @@ object IkConstraintTimeline {
     __obj.asInstanceOf[IkConstraintTimeline]
   }
   
-  extension [Self <: IkConstraintTimeline](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IkConstraintTimeline] (val x: Self) extends AnyVal {
     
     inline def setFrames(value: ArrayLike[Double]): Self = StObject.set(x, "frames", value.asInstanceOf[js.Any])
     

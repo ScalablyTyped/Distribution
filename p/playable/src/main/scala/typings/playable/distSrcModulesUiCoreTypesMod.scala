@@ -18,7 +18,8 @@ object distSrcModulesUiCoreTypesMod {
       __obj.asInstanceOf[IStylable[TStyles]]
     }
     
-    extension [Self <: IStylable[?], TStyles](x: Self & IStylable[TStyles]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IStylable[?], TStyles] (val x: Self & IStylable[TStyles]) extends AnyVal {
       
       inline def setStyleNames(value: TStyles): Self = StObject.set(x, "styleNames", value.asInstanceOf[js.Any])
     }

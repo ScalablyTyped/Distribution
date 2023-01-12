@@ -55,7 +55,8 @@ object SubtypeGroupLayerApplyEditsEdits {
     __obj.asInstanceOf[SubtypeGroupLayerApplyEditsEdits]
   }
   
-  extension [Self <: SubtypeGroupLayerApplyEditsEdits](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubtypeGroupLayerApplyEditsEdits] (val x: Self) extends AnyVal {
     
     inline def setAddAttachments(value: js.Array[SubtypeGroupLayerAttachmentEdit]): Self = StObject.set(x, "addAttachments", value.asInstanceOf[js.Any])
     

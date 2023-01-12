@@ -23,7 +23,8 @@ object MakeFilePrivateOptions {
     __obj.asInstanceOf[MakeFilePrivateOptions]
   }
   
-  extension [Self <: MakeFilePrivateOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MakeFilePrivateOptions] (val x: Self) extends AnyVal {
     
     inline def setMetadata(value: Metadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     

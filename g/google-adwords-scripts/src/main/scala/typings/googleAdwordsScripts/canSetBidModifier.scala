@@ -17,7 +17,8 @@ object canSetBidModifier {
     __obj.asInstanceOf[canSetBidModifier]
   }
   
-  extension [Self <: canSetBidModifier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: canSetBidModifier] (val x: Self) extends AnyVal {
     
     inline def setGetBidModifier(value: () => Double): Self = StObject.set(x, "getBidModifier", js.Any.fromFunction0(value))
     

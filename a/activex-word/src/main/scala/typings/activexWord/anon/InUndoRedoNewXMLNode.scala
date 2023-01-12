@@ -17,7 +17,8 @@ object InUndoRedoNewXMLNode {
     __obj.asInstanceOf[InUndoRedoNewXMLNode]
   }
   
-  extension [Self <: InUndoRedoNewXMLNode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InUndoRedoNewXMLNode] (val x: Self) extends AnyVal {
     
     inline def setInUndoRedo(value: Boolean): Self = StObject.set(x, "InUndoRedo", value.asInstanceOf[js.Any])
     

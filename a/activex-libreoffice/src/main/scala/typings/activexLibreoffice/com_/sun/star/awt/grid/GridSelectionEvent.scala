@@ -33,7 +33,8 @@ object GridSelectionEvent {
     __obj.asInstanceOf[GridSelectionEvent]
   }
   
-  extension [Self <: GridSelectionEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GridSelectionEvent] (val x: Self) extends AnyVal {
     
     inline def setSelectedColumnIndexes(value: SafeArray[Double]): Self = StObject.set(x, "SelectedColumnIndexes", value.asInstanceOf[js.Any])
     

@@ -57,7 +57,8 @@ object BuildProvenance {
     __obj.asInstanceOf[BuildProvenance]
   }
   
-  extension [Self <: BuildProvenance](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BuildProvenance] (val x: Self) extends AnyVal {
     
     inline def setBuildOptions(
       value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any

@@ -97,7 +97,8 @@ object classBreaksCreateRendererParams {
     __obj.asInstanceOf[classBreaksCreateRendererParams]
   }
   
-  extension [Self <: classBreaksCreateRendererParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: classBreaksCreateRendererParams] (val x: Self) extends AnyVal {
     
     inline def setClassificationMethod(value: `equal-interval` | `natural-breaks` | quantile | `standard-deviation` | `defined-interval`): Self = StObject.set(x, "classificationMethod", value.asInstanceOf[js.Any])
     

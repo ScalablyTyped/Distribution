@@ -45,7 +45,8 @@ object CreatedButton {
     __obj.asInstanceOf[CreatedButton]
   }
   
-  extension [Self <: CreatedButton](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreatedButton] (val x: Self) extends AnyVal {
     
     inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
     

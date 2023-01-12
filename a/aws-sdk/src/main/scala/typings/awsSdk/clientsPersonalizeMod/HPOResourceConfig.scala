@@ -23,7 +23,8 @@ object HPOResourceConfig {
     __obj.asInstanceOf[HPOResourceConfig]
   }
   
-  extension [Self <: HPOResourceConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HPOResourceConfig] (val x: Self) extends AnyVal {
     
     inline def setMaxNumberOfTrainingJobs(value: HPOResource): Self = StObject.set(x, "maxNumberOfTrainingJobs", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object ComputeFarmConfiguration {
     __obj.asInstanceOf[ComputeFarmConfiguration]
   }
   
-  extension [Self <: ComputeFarmConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ComputeFarmConfiguration] (val x: Self) extends AnyVal {
     
     inline def setActiveDirectoryUser(value: String): Self = StObject.set(x, "activeDirectoryUser", value.asInstanceOf[js.Any])
     

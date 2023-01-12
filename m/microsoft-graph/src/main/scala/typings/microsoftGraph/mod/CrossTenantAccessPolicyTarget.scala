@@ -22,7 +22,8 @@ object CrossTenantAccessPolicyTarget {
     __obj.asInstanceOf[CrossTenantAccessPolicyTarget]
   }
   
-  extension [Self <: CrossTenantAccessPolicyTarget](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CrossTenantAccessPolicyTarget] (val x: Self) extends AnyVal {
     
     inline def setTarget(value: NullableOption[String]): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     

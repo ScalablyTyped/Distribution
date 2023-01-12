@@ -23,7 +23,8 @@ object GetContainerLogResult {
     __obj.asInstanceOf[GetContainerLogResult]
   }
   
-  extension [Self <: GetContainerLogResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetContainerLogResult] (val x: Self) extends AnyVal {
     
     inline def setLogEvents(value: ContainerServiceLogEventList): Self = StObject.set(x, "logEvents", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object IFilePosition {
     __obj.asInstanceOf[IFilePosition]
   }
   
-  extension [Self <: IFilePosition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IFilePosition] (val x: Self) extends AnyVal {
     
     inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
     

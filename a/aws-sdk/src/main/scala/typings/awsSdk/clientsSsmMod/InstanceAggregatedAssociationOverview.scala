@@ -23,7 +23,8 @@ object InstanceAggregatedAssociationOverview {
     __obj.asInstanceOf[InstanceAggregatedAssociationOverview]
   }
   
-  extension [Self <: InstanceAggregatedAssociationOverview](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InstanceAggregatedAssociationOverview] (val x: Self) extends AnyVal {
     
     inline def setDetailedStatus(value: StatusName): Self = StObject.set(x, "DetailedStatus", value.asInstanceOf[js.Any])
     

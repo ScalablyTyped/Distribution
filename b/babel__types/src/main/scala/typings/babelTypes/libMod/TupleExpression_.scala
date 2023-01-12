@@ -24,7 +24,8 @@ object TupleExpression_ {
     __obj.asInstanceOf[TupleExpression_]
   }
   
-  extension [Self <: TupleExpression_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TupleExpression_] (val x: Self) extends AnyVal {
     
     inline def setElements(value: js.Array[Expression | SpreadElement_]): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
     

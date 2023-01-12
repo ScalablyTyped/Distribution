@@ -49,7 +49,8 @@ object IndexDocumentParams {
     __obj.asInstanceOf[IndexDocumentParams[T]]
   }
   
-  extension [Self <: IndexDocumentParams[?], T](x: Self & IndexDocumentParams[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndexDocumentParams[?], T] (val x: Self & IndexDocumentParams[T]) extends AnyVal {
     
     inline def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

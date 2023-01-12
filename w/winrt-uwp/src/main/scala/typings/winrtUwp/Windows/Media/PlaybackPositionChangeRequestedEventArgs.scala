@@ -17,7 +17,8 @@ object PlaybackPositionChangeRequestedEventArgs {
     __obj.asInstanceOf[PlaybackPositionChangeRequestedEventArgs]
   }
   
-  extension [Self <: PlaybackPositionChangeRequestedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlaybackPositionChangeRequestedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setRequestedPlaybackPosition(value: Double): Self = StObject.set(x, "requestedPlaybackPosition", value.asInstanceOf[js.Any])
   }

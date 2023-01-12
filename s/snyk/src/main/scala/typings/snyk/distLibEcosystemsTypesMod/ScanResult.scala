@@ -29,7 +29,8 @@ object ScanResult {
     __obj.asInstanceOf[ScanResult]
   }
   
-  extension [Self <: ScanResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScanResult] (val x: Self) extends AnyVal {
     
     inline def setAnalytics(value: js.Array[Analytics]): Self = StObject.set(x, "analytics", value.asInstanceOf[js.Any])
     

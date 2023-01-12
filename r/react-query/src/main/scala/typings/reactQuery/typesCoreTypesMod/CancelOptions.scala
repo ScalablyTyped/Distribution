@@ -17,7 +17,8 @@ object CancelOptions {
     __obj.asInstanceOf[CancelOptions]
   }
   
-  extension [Self <: CancelOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CancelOptions] (val x: Self) extends AnyVal {
     
     inline def setRevert(value: Boolean): Self = StObject.set(x, "revert", value.asInstanceOf[js.Any])
     

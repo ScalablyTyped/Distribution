@@ -87,7 +87,8 @@ object mod {
       __obj.asInstanceOf[GenerateOptions]
     }
     
-    extension [Self <: GenerateOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GenerateOptions] (val x: Self) extends AnyVal {
       
       inline def setCapitalize(value: none | first | all): Self = StObject.set(x, "capitalize", value.asInstanceOf[js.Any])
       

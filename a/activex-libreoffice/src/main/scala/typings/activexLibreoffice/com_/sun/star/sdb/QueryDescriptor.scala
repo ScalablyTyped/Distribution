@@ -79,7 +79,8 @@ object QueryDescriptor {
     __obj.asInstanceOf[QueryDescriptor]
   }
   
-  extension [Self <: QueryDescriptor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryDescriptor] (val x: Self) extends AnyVal {
     
     inline def setCommand(value: String): Self = StObject.set(x, "Command", value.asInstanceOf[js.Any])
     

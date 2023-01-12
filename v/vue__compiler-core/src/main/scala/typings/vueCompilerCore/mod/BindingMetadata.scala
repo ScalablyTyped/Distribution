@@ -21,7 +21,8 @@ object BindingMetadata {
     __obj.asInstanceOf[BindingMetadata]
   }
   
-  extension [Self <: BindingMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BindingMetadata] (val x: Self) extends AnyVal {
     
     inline def set__isScriptSetup(value: Boolean): Self = StObject.set(x, "__isScriptSetup", value.asInstanceOf[js.Any])
     

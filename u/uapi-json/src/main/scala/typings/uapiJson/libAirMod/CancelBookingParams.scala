@@ -19,7 +19,8 @@ object CancelBookingParams {
     __obj.asInstanceOf[CancelBookingParams]
   }
   
-  extension [Self <: CancelBookingParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CancelBookingParams] (val x: Self) extends AnyVal {
     
     inline def setCancelTickets(value: Boolean): Self = StObject.set(x, "cancelTickets", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object JobLimit {
     __obj.asInstanceOf[JobLimit]
   }
   
-  extension [Self <: JobLimit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JobLimit] (val x: Self) extends AnyVal {
     
     inline def setJobLimit(value: Double): Self = StObject.set(x, "jobLimit", value.asInstanceOf[js.Any])
     

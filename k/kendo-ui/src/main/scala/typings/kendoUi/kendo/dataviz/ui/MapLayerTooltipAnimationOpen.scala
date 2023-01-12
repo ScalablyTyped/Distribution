@@ -17,7 +17,8 @@ object MapLayerTooltipAnimationOpen {
     __obj.asInstanceOf[MapLayerTooltipAnimationOpen]
   }
   
-  extension [Self <: MapLayerTooltipAnimationOpen](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MapLayerTooltipAnimationOpen] (val x: Self) extends AnyVal {
     
     inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     

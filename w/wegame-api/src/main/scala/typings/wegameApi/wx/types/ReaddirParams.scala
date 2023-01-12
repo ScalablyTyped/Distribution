@@ -23,7 +23,8 @@ object ReaddirParams {
     __obj.asInstanceOf[ReaddirParams]
   }
   
-  extension [Self <: ReaddirParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReaddirParams] (val x: Self) extends AnyVal {
     
     inline def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
     

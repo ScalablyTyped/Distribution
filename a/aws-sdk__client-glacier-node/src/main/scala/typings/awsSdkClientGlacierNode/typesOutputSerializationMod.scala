@@ -22,7 +22,8 @@ object typesOutputSerializationMod {
       __obj.asInstanceOf[OutputSerialization]
     }
     
-    extension [Self <: OutputSerialization](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OutputSerialization] (val x: Self) extends AnyVal {
       
       inline def setCsv(value: CSVOutput): Self = StObject.set(x, "csv", value.asInstanceOf[js.Any])
       
@@ -47,7 +48,8 @@ object typesOutputSerializationMod {
       __obj.asInstanceOf[UnmarshalledOutputSerialization]
     }
     
-    extension [Self <: UnmarshalledOutputSerialization](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnmarshalledOutputSerialization] (val x: Self) extends AnyVal {
       
       inline def setCsv(value: UnmarshalledCSVOutput): Self = StObject.set(x, "csv", value.asInstanceOf[js.Any])
       

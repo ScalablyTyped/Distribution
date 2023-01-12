@@ -126,7 +126,8 @@ object anon {
       __obj.asInstanceOf[PartialDataTableProps]
     }
     
-    extension [Self <: PartialDataTableProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialDataTableProps] (val x: Self) extends AnyVal {
       
       inline def setColumns(value: js.Array[Column]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
       

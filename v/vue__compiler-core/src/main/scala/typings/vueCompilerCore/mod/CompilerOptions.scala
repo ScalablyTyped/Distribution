@@ -187,7 +187,8 @@ object CompilerOptions {
     __obj.asInstanceOf[CompilerOptions]
   }
   
-  extension [Self <: CompilerOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CompilerOptions] (val x: Self) extends AnyVal {
     
     inline def setBindingMetadata(value: BindingMetadata): Self = StObject.set(x, "bindingMetadata", value.asInstanceOf[js.Any])
     

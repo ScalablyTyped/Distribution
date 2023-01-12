@@ -51,7 +51,8 @@ object distLibCommandsXpendingMod {
       __obj.asInstanceOf[XPendingReply]
     }
     
-    extension [Self <: XPendingReply](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XPendingReply] (val x: Self) extends AnyVal {
       
       inline def setConsumers(value: js.Array[DeliveriesCounter]): Self = StObject.set(x, "consumers", value.asInstanceOf[js.Any])
       

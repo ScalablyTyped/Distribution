@@ -42,7 +42,8 @@ object GoogleApiYouTubeThumbnailResource {
     __obj.asInstanceOf[GoogleApiYouTubeThumbnailResource]
   }
   
-  extension [Self <: GoogleApiYouTubeThumbnailResource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleApiYouTubeThumbnailResource] (val x: Self) extends AnyVal {
     
     inline def setDefault(value: GoogleApiYouTubeThumbnailItemResource): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     

@@ -266,7 +266,8 @@ object BillboardGraphics {
       __obj.asInstanceOf[ConstructorOptions]
     }
     
-    extension [Self <: ConstructorOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConstructorOptions] (val x: Self) extends AnyVal {
       
       inline def setAlignedAxis(value: Property | Cartesian3): Self = StObject.set(x, "alignedAxis", value.asInstanceOf[js.Any])
       

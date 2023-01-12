@@ -38,7 +38,8 @@ object TrainingJobStatusCounters {
     __obj.asInstanceOf[TrainingJobStatusCounters]
   }
   
-  extension [Self <: TrainingJobStatusCounters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TrainingJobStatusCounters] (val x: Self) extends AnyVal {
     
     inline def setCompleted(value: TrainingJobStatusCounter): Self = StObject.set(x, "Completed", value.asInstanceOf[js.Any])
     

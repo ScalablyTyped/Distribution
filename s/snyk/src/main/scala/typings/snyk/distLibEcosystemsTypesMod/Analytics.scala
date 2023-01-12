@@ -17,7 +17,8 @@ object Analytics {
     __obj.asInstanceOf[Analytics]
   }
   
-  extension [Self <: Analytics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Analytics] (val x: Self) extends AnyVal {
     
     inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

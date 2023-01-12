@@ -33,7 +33,8 @@ object meteorEmailMod {
     @js.native
     val ^ : typings.meteorTypings.meteorEmailMod.MailComposerStatic = js.native
     
-    extension [Self <: typings.meteorTypings.meteorEmailMod.MailComposer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.meteorTypings.meteorEmailMod.MailComposer] (val x: Self) extends AnyVal {
       
       inline def setAddHeader(value: (String, String) => Unit): Self = StObject.set(x, "addHeader", js.Any.fromFunction2(value))
       
@@ -91,7 +92,8 @@ object meteorEmailMod {
       __obj.asInstanceOf[typings.meteorTypings.meteorEmailMod.MailComposerOptions]
     }
     
-    extension [Self <: typings.meteorTypings.meteorEmailMod.MailComposerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.meteorTypings.meteorEmailMod.MailComposerOptions] (val x: Self) extends AnyVal {
       
       inline def setCharset(value: String): Self = StObject.set(x, "charset", value.asInstanceOf[js.Any])
       

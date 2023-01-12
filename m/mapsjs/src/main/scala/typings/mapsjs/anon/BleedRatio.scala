@@ -23,7 +23,8 @@ object BleedRatio {
     __obj.asInstanceOf[BleedRatio]
   }
   
-  extension [Self <: BleedRatio](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BleedRatio] (val x: Self) extends AnyVal {
     
     inline def setBleedRatio(value: Double): Self = StObject.set(x, "bleedRatio", value.asInstanceOf[js.Any])
     

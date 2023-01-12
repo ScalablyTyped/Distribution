@@ -88,7 +88,8 @@ object EnhancedImageScanFinding {
     __obj.asInstanceOf[EnhancedImageScanFinding]
   }
   
-  extension [Self <: EnhancedImageScanFinding](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnhancedImageScanFinding] (val x: Self) extends AnyVal {
     
     inline def setAwsAccountId(value: RegistryId): Self = StObject.set(x, "awsAccountId", value.asInstanceOf[js.Any])
     

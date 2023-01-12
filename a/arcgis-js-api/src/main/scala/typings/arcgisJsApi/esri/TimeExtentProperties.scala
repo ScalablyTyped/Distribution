@@ -31,7 +31,8 @@ object TimeExtentProperties {
     __obj.asInstanceOf[TimeExtentProperties]
   }
   
-  extension [Self <: TimeExtentProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimeExtentProperties] (val x: Self) extends AnyVal {
     
     inline def setEnd(value: DateProperties): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     

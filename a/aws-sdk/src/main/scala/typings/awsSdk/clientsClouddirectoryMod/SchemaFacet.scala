@@ -23,7 +23,8 @@ object SchemaFacet {
     __obj.asInstanceOf[SchemaFacet]
   }
   
-  extension [Self <: SchemaFacet](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SchemaFacet] (val x: Self) extends AnyVal {
     
     inline def setFacetName(value: FacetName): Self = StObject.set(x, "FacetName", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object FeatureTemplatesViewModelSelectEvent {
     __obj.asInstanceOf[FeatureTemplatesViewModelSelectEvent]
   }
   
-  extension [Self <: FeatureTemplatesViewModelSelectEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FeatureTemplatesViewModelSelectEvent] (val x: Self) extends AnyVal {
     
     inline def setItem(value: TemplateItem): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     

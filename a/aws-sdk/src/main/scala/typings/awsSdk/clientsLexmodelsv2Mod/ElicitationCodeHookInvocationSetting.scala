@@ -23,7 +23,8 @@ object ElicitationCodeHookInvocationSetting {
     __obj.asInstanceOf[ElicitationCodeHookInvocationSetting]
   }
   
-  extension [Self <: ElicitationCodeHookInvocationSetting](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ElicitationCodeHookInvocationSetting] (val x: Self) extends AnyVal {
     
     inline def setEnableCodeHookInvocation(value: BoxedBoolean): Self = StObject.set(x, "enableCodeHookInvocation", value.asInstanceOf[js.Any])
     

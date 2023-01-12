@@ -26,7 +26,8 @@ object Partialcreatedvoidattache {
     __obj.asInstanceOf[Partialcreatedvoidattache]
   }
   
-  extension [Self <: Partialcreatedvoidattache](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Partialcreatedvoidattache] (val x: Self) extends AnyVal {
     
     inline def setAttached(value: () => Unit): Self = StObject.set(x, "attached", js.Any.fromFunction0(value))
     

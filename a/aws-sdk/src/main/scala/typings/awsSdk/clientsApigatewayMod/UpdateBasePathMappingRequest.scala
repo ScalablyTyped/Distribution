@@ -28,7 +28,8 @@ object UpdateBasePathMappingRequest {
     __obj.asInstanceOf[UpdateBasePathMappingRequest]
   }
   
-  extension [Self <: UpdateBasePathMappingRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateBasePathMappingRequest] (val x: Self) extends AnyVal {
     
     inline def setBasePath(value: String): Self = StObject.set(x, "basePath", value.asInstanceOf[js.Any])
     

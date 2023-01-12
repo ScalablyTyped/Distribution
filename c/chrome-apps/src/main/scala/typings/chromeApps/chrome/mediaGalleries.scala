@@ -37,7 +37,8 @@ object mediaGalleries {
       __obj.asInstanceOf[GalleryChangedEventArgs]
     }
     
-    extension [Self <: GalleryChangedEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GalleryChangedEventArgs] (val x: Self) extends AnyVal {
       
       inline def setGalleryId(value: String): Self = StObject.set(x, "galleryId", value.asInstanceOf[js.Any])
       
@@ -70,7 +71,8 @@ object mediaGalleries {
       __obj.asInstanceOf[GalleryWatchResult]
     }
     
-    extension [Self <: GalleryWatchResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GalleryWatchResult] (val x: Self) extends AnyVal {
       
       inline def setGalleryId(value: String): Self = StObject.set(x, "galleryId", value.asInstanceOf[js.Any])
       
@@ -126,7 +128,8 @@ object mediaGalleries {
       __obj.asInstanceOf[MediaFileSystemMetadata]
     }
     
-    extension [Self <: MediaFileSystemMetadata](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MediaFileSystemMetadata] (val x: Self) extends AnyVal {
       
       inline def setDeviceId(value: String): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
       
@@ -168,7 +171,8 @@ object mediaGalleries {
       __obj.asInstanceOf[MediaFileSystemsOptions]
     }
     
-    extension [Self <: MediaFileSystemsOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MediaFileSystemsOptions] (val x: Self) extends AnyVal {
       
       inline def setInteractive(value: Interactive): Self = StObject.set(x, "interactive", value.asInstanceOf[js.Any])
       
@@ -231,7 +235,8 @@ object mediaGalleries {
       __obj.asInstanceOf[Metadata]
     }
     
-    extension [Self <: Metadata](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Metadata] (val x: Self) extends AnyVal {
       
       inline def setAlbum(value: String): Self = StObject.set(x, "album", value.asInstanceOf[js.Any])
       
@@ -308,7 +313,8 @@ object mediaGalleries {
       __obj.asInstanceOf[MetadataOptions]
     }
     
-    extension [Self <: MetadataOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MetadataOptions] (val x: Self) extends AnyVal {
       
       inline def setMetadataType(value: MetadataOptionsType): Self = StObject.set(x, "metadataType", value.asInstanceOf[js.Any])
     }
@@ -349,7 +355,8 @@ object mediaGalleries {
       __obj.asInstanceOf[RawTag]
     }
     
-    extension [Self <: RawTag](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RawTag] (val x: Self) extends AnyVal {
       
       inline def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
@@ -384,7 +391,8 @@ object mediaGalleries {
       __obj.asInstanceOf[ScanProgressEventArgs]
     }
     
-    extension [Self <: ScanProgressEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScanProgressEventArgs] (val x: Self) extends AnyVal {
       
       inline def setAudioCount(value: integer): Self = StObject.set(x, "audioCount", value.asInstanceOf[js.Any])
       

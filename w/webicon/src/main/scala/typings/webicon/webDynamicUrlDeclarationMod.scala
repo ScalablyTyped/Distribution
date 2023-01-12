@@ -25,7 +25,8 @@ object webDynamicUrlDeclarationMod {
       __obj.asInstanceOf[DynamicUrlDeclaration[T]]
     }
     
-    extension [Self <: DynamicUrlDeclaration[?], T](x: Self & DynamicUrlDeclaration[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DynamicUrlDeclaration[?], T] (val x: Self & DynamicUrlDeclaration[T]) extends AnyVal {
       
       inline def setUrl(value: String | (js.Function1[/* args */ T, String | StaticUrlDeclaration])): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       

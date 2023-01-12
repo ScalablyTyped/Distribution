@@ -43,7 +43,8 @@ object distCommandsBloomInsertMod {
       __obj.asInstanceOf[InsertOptions]
     }
     
-    extension [Self <: InsertOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InsertOptions] (val x: Self) extends AnyVal {
       
       inline def setCAPACITY(value: Double): Self = StObject.set(x, "CAPACITY", value.asInstanceOf[js.Any])
       

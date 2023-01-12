@@ -21,7 +21,8 @@ object RecipientIdentityVerification {
     __obj.asInstanceOf[RecipientIdentityVerification]
   }
   
-  extension [Self <: RecipientIdentityVerification](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecipientIdentityVerification] (val x: Self) extends AnyVal {
     
     inline def setInputOptions(value: js.Array[RecipientIdentityInputOption]): Self = StObject.set(x, "inputOptions", value.asInstanceOf[js.Any])
     

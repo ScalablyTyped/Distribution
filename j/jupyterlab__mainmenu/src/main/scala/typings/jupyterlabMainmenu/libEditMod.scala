@@ -104,7 +104,8 @@ object libEditMod {
         __obj.asInstanceOf[IClearer[T]]
       }
       
-      extension [Self <: IClearer[?], T /* <: Widget */](x: Self & IClearer[T]) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IClearer[?], T /* <: Widget */] (val x: Self & IClearer[T]) extends AnyVal {
         
         inline def setClearAll(value: /* widget */ T => Unit): Self = StObject.set(x, "clearAll", js.Any.fromFunction1(value))
         
@@ -143,7 +144,8 @@ object libEditMod {
         __obj.asInstanceOf[IGoToLiner[T]]
       }
       
-      extension [Self <: IGoToLiner[?], T /* <: Widget */](x: Self & IGoToLiner[T]) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IGoToLiner[?], T /* <: Widget */] (val x: Self & IGoToLiner[T]) extends AnyVal {
         
         inline def setGoToLine(value: /* widget */ T => Unit): Self = StObject.set(x, "goToLine", js.Any.fromFunction1(value))
         
@@ -175,7 +177,8 @@ object libEditMod {
         __obj.asInstanceOf[IUndoer[T]]
       }
       
-      extension [Self <: IUndoer[?], T /* <: Widget */](x: Self & IUndoer[T]) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IUndoer[?], T /* <: Widget */] (val x: Self & IUndoer[T]) extends AnyVal {
         
         inline def setRedo(value: /* widget */ T => Unit): Self = StObject.set(x, "redo", js.Any.fromFunction1(value))
         

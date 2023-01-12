@@ -16,7 +16,8 @@ object QFieldValues {
     __obj.asInstanceOf[QFieldValues]
   }
   
-  extension [Self <: QFieldValues](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QFieldValues] (val x: Self) extends AnyVal {
     
     inline def setQFieldValues(value: js.Array[IFieldValue]): Self = StObject.set(x, "qFieldValues", value.asInstanceOf[js.Any])
     

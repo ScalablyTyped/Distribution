@@ -27,7 +27,8 @@ object IMatrixCellsOwner {
     __obj.asInstanceOf[IMatrixCellsOwner]
   }
   
-  extension [Self <: IMatrixCellsOwner](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IMatrixCellsOwner] (val x: Self) extends AnyVal {
     
     inline def setGetColumns(value: () => js.Array[Any]): Self = StObject.set(x, "getColumns", js.Any.fromFunction0(value))
     

@@ -15,7 +15,8 @@ object EditorNormalizeOptions {
     __obj.asInstanceOf[EditorNormalizeOptions]
   }
   
-  extension [Self <: EditorNormalizeOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EditorNormalizeOptions] (val x: Self) extends AnyVal {
     
     inline def setForce(value: Boolean): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
     

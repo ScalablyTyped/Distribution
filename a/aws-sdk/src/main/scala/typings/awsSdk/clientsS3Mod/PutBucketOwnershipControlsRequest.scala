@@ -33,7 +33,8 @@ object PutBucketOwnershipControlsRequest {
     __obj.asInstanceOf[PutBucketOwnershipControlsRequest]
   }
   
-  extension [Self <: PutBucketOwnershipControlsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutBucketOwnershipControlsRequest] (val x: Self) extends AnyVal {
     
     inline def setBucket(value: BucketName): Self = StObject.set(x, "Bucket", value.asInstanceOf[js.Any])
     

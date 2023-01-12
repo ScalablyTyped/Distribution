@@ -53,7 +53,8 @@ object XTemplateContainer {
     __obj.asInstanceOf[XTemplateContainer]
   }
   
-  extension [Self <: XTemplateContainer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XTemplateContainer] (val x: Self) extends AnyVal {
     
     inline def setElementTemplateName(value: String): Self = StObject.set(x, "ElementTemplateName", value.asInstanceOf[js.Any])
     

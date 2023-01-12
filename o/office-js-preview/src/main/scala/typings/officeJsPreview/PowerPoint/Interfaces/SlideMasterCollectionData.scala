@@ -16,7 +16,8 @@ object SlideMasterCollectionData {
     __obj.asInstanceOf[SlideMasterCollectionData]
   }
   
-  extension [Self <: SlideMasterCollectionData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SlideMasterCollectionData] (val x: Self) extends AnyVal {
     
     inline def setItems(value: js.Array[SlideMasterData]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     

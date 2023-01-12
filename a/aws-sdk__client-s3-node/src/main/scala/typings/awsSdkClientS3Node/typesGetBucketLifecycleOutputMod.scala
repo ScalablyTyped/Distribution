@@ -27,7 +27,8 @@ object typesGetBucketLifecycleOutputMod {
       __obj.asInstanceOf[GetBucketLifecycleOutput]
     }
     
-    extension [Self <: GetBucketLifecycleOutput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetBucketLifecycleOutput] (val x: Self) extends AnyVal {
       
       inline def setRules(value: js.Array[UnmarshalledRule]): Self = StObject.set(x, "Rules", value.asInstanceOf[js.Any])
       

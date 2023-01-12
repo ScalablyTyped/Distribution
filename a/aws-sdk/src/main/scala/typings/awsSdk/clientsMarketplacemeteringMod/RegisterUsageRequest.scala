@@ -28,7 +28,8 @@ object RegisterUsageRequest {
     __obj.asInstanceOf[RegisterUsageRequest]
   }
   
-  extension [Self <: RegisterUsageRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RegisterUsageRequest] (val x: Self) extends AnyVal {
     
     inline def setNonce(value: Nonce): Self = StObject.set(x, "Nonce", value.asInstanceOf[js.Any])
     

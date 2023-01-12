@@ -16,7 +16,8 @@ object GetMatchedStylesForNodeRequest {
     __obj.asInstanceOf[GetMatchedStylesForNodeRequest]
   }
   
-  extension [Self <: GetMatchedStylesForNodeRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetMatchedStylesForNodeRequest] (val x: Self) extends AnyVal {
     
     inline def setNodeId(value: NodeId): Self = StObject.set(x, "nodeId", value.asInstanceOf[js.Any])
   }

@@ -38,7 +38,8 @@ object SubscriptionEvaluationResult {
     __obj.asInstanceOf[SubscriptionEvaluationResult]
   }
   
-  extension [Self <: SubscriptionEvaluationResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubscriptionEvaluationResult] (val x: Self) extends AnyVal {
     
     inline def setEvaluationJobStatus(value: EvaluationOperationStatus): Self = StObject.set(x, "evaluationJobStatus", value.asInstanceOf[js.Any])
     

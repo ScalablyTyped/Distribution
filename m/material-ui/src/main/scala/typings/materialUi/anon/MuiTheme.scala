@@ -15,7 +15,8 @@ object MuiTheme {
     __obj.asInstanceOf[MuiTheme]
   }
   
-  extension [Self <: MuiTheme](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MuiTheme] (val x: Self) extends AnyVal {
     
     inline def setMuiTheme(value: typings.materialUi.MaterialUI.Styles.MuiTheme): Self = StObject.set(x, "muiTheme", value.asInstanceOf[js.Any])
     

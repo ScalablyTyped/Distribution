@@ -19,7 +19,8 @@ object TimeSeriesDescriptor {
     __obj.asInstanceOf[TimeSeriesDescriptor]
   }
   
-  extension [Self <: TimeSeriesDescriptor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimeSeriesDescriptor] (val x: Self) extends AnyVal {
     
     inline def setLabelDescriptors(value: js.Array[LabelDescriptor]): Self = StObject.set(x, "labelDescriptors", value.asInstanceOf[js.Any])
     

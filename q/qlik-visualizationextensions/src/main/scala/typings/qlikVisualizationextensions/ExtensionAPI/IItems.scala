@@ -26,7 +26,8 @@ object IItems {
     __obj.asInstanceOf[IItems]
   }
   
-  extension [Self <: IItems](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IItems] (val x: Self) extends AnyVal {
     
     inline def setAddOns(value: IAddOns): Self = StObject.set(x, "AddOns", value.asInstanceOf[js.Any])
     

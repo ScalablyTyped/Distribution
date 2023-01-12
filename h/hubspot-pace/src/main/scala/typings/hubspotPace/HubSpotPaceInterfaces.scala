@@ -88,7 +88,8 @@ object HubSpotPaceInterfaces {
       __obj.asInstanceOf[PaceAjaxOptions]
     }
     
-    extension [Self <: PaceAjaxOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PaceAjaxOptions] (val x: Self) extends AnyVal {
       
       inline def setIgnoreURLs(value: js.Array[String | js.RegExp]): Self = StObject.set(x, "ignoreURLs", value.asInstanceOf[js.Any])
       
@@ -127,7 +128,8 @@ object HubSpotPaceInterfaces {
       __obj.asInstanceOf[PaceElementsOptions]
     }
     
-    extension [Self <: PaceElementsOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PaceElementsOptions] (val x: Self) extends AnyVal {
       
       inline def setCheckInterval(value: Double): Self = StObject.set(x, "checkInterval", value.asInstanceOf[js.Any])
       
@@ -165,7 +167,8 @@ object HubSpotPaceInterfaces {
       __obj.asInstanceOf[PaceEventLagOptions]
     }
     
-    extension [Self <: PaceEventLagOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PaceEventLagOptions] (val x: Self) extends AnyVal {
       
       inline def setLagThreshold(value: Double): Self = StObject.set(x, "lagThreshold", value.asInstanceOf[js.Any])
       
@@ -248,7 +251,8 @@ object HubSpotPaceInterfaces {
       __obj.asInstanceOf[PaceOptions]
     }
     
-    extension [Self <: PaceOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PaceOptions] (val x: Self) extends AnyVal {
       
       inline def setAjax(value: Boolean | PaceAjaxOptions): Self = StObject.set(x, "ajax", value.asInstanceOf[js.Any])
       

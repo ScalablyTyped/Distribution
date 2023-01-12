@@ -34,7 +34,8 @@ object NodeSingularMetadata {
     __obj.asInstanceOf[NodeSingularMetadata]
   }
   
-  extension [Self <: NodeSingularMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodeSingularMetadata] (val x: Self) extends AnyVal {
     
     inline def setDegree(value: Boolean => Double): Self = StObject.set(x, "degree", js.Any.fromFunction1(value))
     

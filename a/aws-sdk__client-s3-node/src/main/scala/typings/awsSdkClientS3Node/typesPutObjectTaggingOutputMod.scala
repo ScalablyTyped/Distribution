@@ -26,7 +26,8 @@ object typesPutObjectTaggingOutputMod {
       __obj.asInstanceOf[PutObjectTaggingOutput]
     }
     
-    extension [Self <: PutObjectTaggingOutput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PutObjectTaggingOutput] (val x: Self) extends AnyVal {
       
       inline def setVersionId(value: String): Self = StObject.set(x, "VersionId", value.asInstanceOf[js.Any])
       

@@ -87,7 +87,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setCert(value: String): Self = StObject.set(x, "cert", value.asInstanceOf[js.Any])
       
@@ -144,7 +145,8 @@ object mod {
       __obj.asInstanceOf[PortUsedError]
     }
     
-    extension [Self <: PortUsedError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PortUsedError] (val x: Self) extends AnyVal {
       
       inline def setOn(value: (String, js.Function0[Unit]) => Unit): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
       

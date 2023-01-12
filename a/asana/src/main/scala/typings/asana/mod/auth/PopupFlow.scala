@@ -22,7 +22,8 @@ object PopupFlow {
   @js.native
   val ^ : PopupFlowStatic = js.native
   
-  extension [Self <: PopupFlow](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PopupFlow] (val x: Self) extends AnyVal {
     
     inline def setRunReceiver(value: () => Unit): Self = StObject.set(x, "runReceiver", js.Any.fromFunction0(value))
     

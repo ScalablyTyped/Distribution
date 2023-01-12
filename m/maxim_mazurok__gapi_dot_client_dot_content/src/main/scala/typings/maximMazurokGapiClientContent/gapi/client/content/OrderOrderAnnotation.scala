@@ -19,7 +19,8 @@ object OrderOrderAnnotation {
     __obj.asInstanceOf[OrderOrderAnnotation]
   }
   
-  extension [Self <: OrderOrderAnnotation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OrderOrderAnnotation] (val x: Self) extends AnyVal {
     
     inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     

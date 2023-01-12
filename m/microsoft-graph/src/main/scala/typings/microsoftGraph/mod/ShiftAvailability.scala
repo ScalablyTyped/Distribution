@@ -22,7 +22,8 @@ object ShiftAvailability {
     __obj.asInstanceOf[ShiftAvailability]
   }
   
-  extension [Self <: ShiftAvailability](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShiftAvailability] (val x: Self) extends AnyVal {
     
     inline def setRecurrence(value: NullableOption[PatternedRecurrence]): Self = StObject.set(x, "recurrence", value.asInstanceOf[js.Any])
     

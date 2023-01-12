@@ -15,7 +15,8 @@ object WrappedSketchDocument {
     __obj.asInstanceOf[WrappedSketchDocument]
   }
   
-  extension [Self <: WrappedSketchDocument](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WrappedSketchDocument] (val x: Self) extends AnyVal {
     
     inline def setSketchObject(value: SketchDocument | SketchDocumentData): Self = StObject.set(x, "sketchObject", value.asInstanceOf[js.Any])
   }

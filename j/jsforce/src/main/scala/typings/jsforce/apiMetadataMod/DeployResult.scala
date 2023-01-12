@@ -69,7 +69,8 @@ object DeployResult {
     __obj.asInstanceOf[DeployResult]
   }
   
-  extension [Self <: DeployResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeployResult] (val x: Self) extends AnyVal {
     
     inline def setCheckOnly(value: Boolean): Self = StObject.set(x, "checkOnly", value.asInstanceOf[js.Any])
     

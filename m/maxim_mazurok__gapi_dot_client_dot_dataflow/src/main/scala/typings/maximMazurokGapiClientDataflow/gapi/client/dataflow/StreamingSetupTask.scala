@@ -28,7 +28,8 @@ object StreamingSetupTask {
     __obj.asInstanceOf[StreamingSetupTask]
   }
   
-  extension [Self <: StreamingSetupTask](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StreamingSetupTask] (val x: Self) extends AnyVal {
     
     inline def setDrain(value: Boolean): Self = StObject.set(x, "drain", value.asInstanceOf[js.Any])
     

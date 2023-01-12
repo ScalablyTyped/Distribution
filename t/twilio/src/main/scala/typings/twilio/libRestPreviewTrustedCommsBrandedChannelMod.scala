@@ -216,7 +216,8 @@ object libRestPreviewTrustedCommsBrandedChannelMod {
       __obj.asInstanceOf[BrandedChannelResource]
     }
     
-    extension [Self <: BrandedChannelResource](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BrandedChannelResource] (val x: Self) extends AnyVal {
       
       inline def setAccount_sid(value: String): Self = StObject.set(x, "account_sid", value.asInstanceOf[js.Any])
       

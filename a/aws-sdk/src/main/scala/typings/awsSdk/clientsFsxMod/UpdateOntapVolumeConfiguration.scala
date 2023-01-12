@@ -38,7 +38,8 @@ object UpdateOntapVolumeConfiguration {
     __obj.asInstanceOf[UpdateOntapVolumeConfiguration]
   }
   
-  extension [Self <: UpdateOntapVolumeConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateOntapVolumeConfiguration] (val x: Self) extends AnyVal {
     
     inline def setJunctionPath(value: JunctionPath): Self = StObject.set(x, "JunctionPath", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object IEntityReferenceView {
     __obj.asInstanceOf[IEntityReferenceView]
   }
   
-  extension [Self <: IEntityReferenceView](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IEntityReferenceView] (val x: Self) extends AnyVal {
     
     inline def setId(value: java.lang.String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     

@@ -79,7 +79,8 @@ object AdministrableProductDefinition {
     __obj.asInstanceOf[AdministrableProductDefinition]
   }
   
-  extension [Self <: AdministrableProductDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AdministrableProductDefinition] (val x: Self) extends AnyVal {
     
     inline def setAdministrableDoseForm(value: CodeableConcept): Self = StObject.set(x, "administrableDoseForm", value.asInstanceOf[js.Any])
     

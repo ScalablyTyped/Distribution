@@ -21,7 +21,8 @@ object MlUpdateJobRequest {
     __obj.asInstanceOf[MlUpdateJobRequest]
   }
   
-  extension [Self <: MlUpdateJobRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlUpdateJobRequest] (val x: Self) extends AnyVal {
     
     inline def setBody(value: Analysislimits): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

@@ -71,7 +71,8 @@ object distStateMod {
       __obj.asInstanceOf[PluginState]
     }
     
-    extension [Self <: PluginState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PluginState] (val x: Self) extends AnyVal {
       
       inline def setDecorations(value: DecorationSet): Self = StObject.set(x, "decorations", value.asInstanceOf[js.Any])
       

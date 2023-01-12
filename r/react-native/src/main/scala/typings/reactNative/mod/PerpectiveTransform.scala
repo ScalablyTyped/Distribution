@@ -15,7 +15,8 @@ object PerpectiveTransform {
     __obj.asInstanceOf[PerpectiveTransform]
   }
   
-  extension [Self <: PerpectiveTransform](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PerpectiveTransform] (val x: Self) extends AnyVal {
     
     inline def setPerspective(value: Double): Self = StObject.set(x, "perspective", value.asInstanceOf[js.Any])
   }

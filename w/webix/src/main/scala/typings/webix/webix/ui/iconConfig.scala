@@ -73,7 +73,8 @@ object iconConfig {
     __obj.asInstanceOf[iconConfig]
   }
   
-  extension [Self <: iconConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: iconConfig] (val x: Self) extends AnyVal {
     
     inline def setAlign(value: String): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     

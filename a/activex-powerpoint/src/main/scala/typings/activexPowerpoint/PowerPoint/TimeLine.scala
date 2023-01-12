@@ -31,7 +31,8 @@ object TimeLine {
     __obj.asInstanceOf[TimeLine]
   }
   
-  extension [Self <: TimeLine](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimeLine] (val x: Self) extends AnyVal {
     
     inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     

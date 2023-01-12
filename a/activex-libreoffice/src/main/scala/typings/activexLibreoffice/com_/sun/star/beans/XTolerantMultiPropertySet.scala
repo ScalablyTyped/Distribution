@@ -64,7 +64,8 @@ object XTolerantMultiPropertySet {
     __obj.asInstanceOf[XTolerantMultiPropertySet]
   }
   
-  extension [Self <: XTolerantMultiPropertySet](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XTolerantMultiPropertySet] (val x: Self) extends AnyVal {
     
     inline def setGetDirectPropertyValuesTolerant(value: SeqEquiv[String] => SafeArray[GetDirectPropertyTolerantResult]): Self = StObject.set(x, "getDirectPropertyValuesTolerant", js.Any.fromFunction1(value))
     

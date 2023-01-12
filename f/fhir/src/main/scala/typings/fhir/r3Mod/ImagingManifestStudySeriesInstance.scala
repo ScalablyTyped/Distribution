@@ -29,7 +29,8 @@ object ImagingManifestStudySeriesInstance {
     __obj.asInstanceOf[ImagingManifestStudySeriesInstance]
   }
   
-  extension [Self <: ImagingManifestStudySeriesInstance](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImagingManifestStudySeriesInstance] (val x: Self) extends AnyVal {
     
     inline def setSopClass(value: String): Self = StObject.set(x, "sopClass", value.asInstanceOf[js.Any])
     

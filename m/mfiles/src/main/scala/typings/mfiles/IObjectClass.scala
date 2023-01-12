@@ -48,7 +48,8 @@ object IObjectClass {
     __obj.asInstanceOf[IObjectClass]
   }
   
-  extension [Self <: IObjectClass](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IObjectClass] (val x: Self) extends AnyVal {
     
     inline def setAccessControlList(value: IAccessControlList): Self = StObject.set(x, "AccessControlList", value.asInstanceOf[js.Any])
     

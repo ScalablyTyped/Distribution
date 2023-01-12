@@ -17,7 +17,8 @@ object TypeofSwirlEffect {
     __obj.asInstanceOf[TypeofSwirlEffect]
   }
   
-  extension [Self <: TypeofSwirlEffect](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofSwirlEffect] (val x: Self) extends AnyVal {
     
     inline def setInterpolation(value: PowOut): Self = StObject.set(x, "interpolation", value.asInstanceOf[js.Any])
   }

@@ -53,7 +53,8 @@ object ConnectPeer {
     __obj.asInstanceOf[ConnectPeer]
   }
   
-  extension [Self <: ConnectPeer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConnectPeer] (val x: Self) extends AnyVal {
     
     inline def setConfiguration(value: ConnectPeerConfiguration): Self = StObject.set(x, "Configuration", value.asInstanceOf[js.Any])
     

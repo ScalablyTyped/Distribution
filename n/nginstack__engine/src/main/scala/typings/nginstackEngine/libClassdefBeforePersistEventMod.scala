@@ -43,7 +43,8 @@ object libClassdefBeforePersistEventMod {
       __obj.asInstanceOf[BeforePersistEvent]
     }
     
-    extension [Self <: BeforePersistEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BeforePersistEvent] (val x: Self) extends AnyVal {
       
       inline def setAfterValues(value: Any): Self = StObject.set(x, "afterValues", value.asInstanceOf[js.Any])
       

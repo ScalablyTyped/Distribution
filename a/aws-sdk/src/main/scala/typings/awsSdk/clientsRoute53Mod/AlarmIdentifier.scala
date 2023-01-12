@@ -23,7 +23,8 @@ object AlarmIdentifier {
     __obj.asInstanceOf[AlarmIdentifier]
   }
   
-  extension [Self <: AlarmIdentifier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AlarmIdentifier] (val x: Self) extends AnyVal {
     
     inline def setName(value: AlarmName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     

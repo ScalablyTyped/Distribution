@@ -25,7 +25,8 @@ object RTCIceCandidateInit {
     __obj.asInstanceOf[RTCIceCandidateInit]
   }
   
-  extension [Self <: RTCIceCandidateInit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RTCIceCandidateInit] (val x: Self) extends AnyVal {
     
     inline def setCandidate(value: java.lang.String): Self = StObject.set(x, "candidate", value.asInstanceOf[js.Any])
     

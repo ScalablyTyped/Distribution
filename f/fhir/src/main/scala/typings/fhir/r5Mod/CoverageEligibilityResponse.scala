@@ -134,7 +134,8 @@ object CoverageEligibilityResponse {
     __obj.asInstanceOf[CoverageEligibilityResponse]
   }
   
-  extension [Self <: CoverageEligibilityResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CoverageEligibilityResponse] (val x: Self) extends AnyVal {
     
     inline def setCreated(value: String): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
     

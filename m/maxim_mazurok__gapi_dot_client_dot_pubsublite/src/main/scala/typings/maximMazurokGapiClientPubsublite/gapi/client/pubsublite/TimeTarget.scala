@@ -22,7 +22,8 @@ object TimeTarget {
     __obj.asInstanceOf[TimeTarget]
   }
   
-  extension [Self <: TimeTarget](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimeTarget] (val x: Self) extends AnyVal {
     
     inline def setEventTime(value: String): Self = StObject.set(x, "eventTime", value.asInstanceOf[js.Any])
     

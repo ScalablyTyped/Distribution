@@ -48,7 +48,8 @@ object mod {
       __obj.asInstanceOf[LeakDetector]
     }
     
-    extension [Self <: LeakDetector](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LeakDetector] (val x: Self) extends AnyVal {
       
       inline def setIsLeaking(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isLeaking", js.Any.fromFunction0(value))
       

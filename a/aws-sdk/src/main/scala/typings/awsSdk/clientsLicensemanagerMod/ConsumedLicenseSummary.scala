@@ -23,7 +23,8 @@ object ConsumedLicenseSummary {
     __obj.asInstanceOf[ConsumedLicenseSummary]
   }
   
-  extension [Self <: ConsumedLicenseSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConsumedLicenseSummary] (val x: Self) extends AnyVal {
     
     inline def setConsumedLicenses(value: BoxLong): Self = StObject.set(x, "ConsumedLicenses", value.asInstanceOf[js.Any])
     

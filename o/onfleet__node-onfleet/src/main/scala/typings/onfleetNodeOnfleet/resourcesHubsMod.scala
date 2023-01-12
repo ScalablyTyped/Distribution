@@ -50,7 +50,8 @@ object resourcesHubsMod {
       __obj.asInstanceOf[CreateHubProps]
     }
     
-    extension [Self <: CreateHubProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateHubProps] (val x: Self) extends AnyVal {
       
       inline def setAddress(value: DestinationAddress): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
@@ -83,7 +84,8 @@ object resourcesHubsMod {
       __obj.asInstanceOf[Hub]
     }
     
-    extension [Self <: Hub](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Hub] (val x: Self) extends AnyVal {
       
       inline def setCreate(value: CreateHubProps => js.Promise[OnfleetHub]): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
       
@@ -112,7 +114,8 @@ object resourcesHubsMod {
       __obj.asInstanceOf[OnfleetHub]
     }
     
-    extension [Self <: OnfleetHub](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OnfleetHub] (val x: Self) extends AnyVal {
       
       inline def setAddress(value: Apartment): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       

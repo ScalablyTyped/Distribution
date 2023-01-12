@@ -41,7 +41,8 @@ object PartialAlignment {
     __obj.asInstanceOf[PartialAlignment]
   }
   
-  extension [Self <: PartialAlignment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialAlignment] (val x: Self) extends AnyVal {
     
     inline def setHorizontal(value: left | center | right | fill | justify | centerContinuous | distributed): Self = StObject.set(x, "horizontal", value.asInstanceOf[js.Any])
     

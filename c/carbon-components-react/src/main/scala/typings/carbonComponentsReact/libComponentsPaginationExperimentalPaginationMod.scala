@@ -47,7 +47,8 @@ object libComponentsPaginationExperimentalPaginationMod extends Shortcut {
       __obj.asInstanceOf[ExperimentalPaginationProps]
     }
     
-    extension [Self <: ExperimentalPaginationProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExperimentalPaginationProps] (val x: Self) extends AnyVal {
       
       inline def setBackwardText(value: String): Self = StObject.set(x, "backwardText", value.asInstanceOf[js.Any])
       

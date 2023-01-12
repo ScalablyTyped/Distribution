@@ -17,7 +17,8 @@ object TrackLyricsAddParams {
     __obj.asInstanceOf[TrackLyricsAddParams]
   }
   
-  extension [Self <: TrackLyricsAddParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TrackLyricsAddParams] (val x: Self) extends AnyVal {
     
     inline def setLyrics_body(value: String): Self = StObject.set(x, "lyrics_body", value.asInstanceOf[js.Any])
     

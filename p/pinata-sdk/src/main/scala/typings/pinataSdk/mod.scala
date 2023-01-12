@@ -26,7 +26,8 @@ object mod {
       __obj.asInstanceOf[PinHashToIPFSResponseJS]
     }
     
-    extension [Self <: PinHashToIPFSResponseJS](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PinHashToIPFSResponseJS] (val x: Self) extends AnyVal {
       
       inline def setIpfsHash(value: String): Self = StObject.set(x, "ipfsHash", value.asInstanceOf[js.Any])
     }
@@ -47,7 +48,8 @@ object mod {
       __obj.asInstanceOf[PinataConfig]
     }
     
-    extension [Self <: PinataConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PinataConfig] (val x: Self) extends AnyVal {
       
       inline def setApiKey(value: String): Self = StObject.set(x, "apiKey", value.asInstanceOf[js.Any])
       

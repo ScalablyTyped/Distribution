@@ -51,7 +51,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[CompleteEvent]
     }
     
-    extension [Self <: CompleteEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CompleteEvent] (val x: Self) extends AnyVal {
       
       inline def setError(value: js.Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
@@ -275,7 +276,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[I18n]
     }
     
-    extension [Self <: I18n](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: I18n] (val x: Self) extends AnyVal {
       
       inline def setAvailableLanguages(value: String => js.Array[String]): Self = StObject.set(x, "availableLanguages", js.Any.fromFunction1(value))
       
@@ -320,7 +322,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[InstallEvent]
     }
     
-    extension [Self <: InstallEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InstallEvent] (val x: Self) extends AnyVal {
       
       inline def setArgs(value: js.Array[String]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
@@ -460,7 +463,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[LogMessageObject]
     }
     
-    extension [Self <: LogMessageObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LogMessageObject] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -497,7 +501,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[MessageCatalog]
     }
     
-    extension [Self <: MessageCatalog](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MessageCatalog] (val x: Self) extends AnyVal {
       
       inline def setDir(value: String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
       
@@ -520,7 +525,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[ReceiveEvent]
     }
     
-    extension [Self <: ReceiveEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReceiveEvent] (val x: Self) extends AnyVal {
       
       inline def setDestination(value: IdNode): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
       
@@ -546,7 +552,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[SendEvent]
     }
     
-    extension [Self <: SendEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SendEvent] (val x: Self) extends AnyVal {
       
       inline def setCloneMessage(value: Boolean): Self = StObject.set(x, "cloneMessage", value.asInstanceOf[js.Any])
       
@@ -576,7 +583,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[UninstallEvent]
     }
     
-    extension [Self <: UninstallEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UninstallEvent] (val x: Self) extends AnyVal {
       
       inline def setArgs(value: js.Array[String]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
@@ -836,7 +844,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[UtilModule]
     }
     
-    extension [Self <: UtilModule](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UtilModule] (val x: Self) extends AnyVal {
       
       inline def setHooks(value: Hooks): Self = StObject.set(x, "hooks", value.asInstanceOf[js.Any])
       

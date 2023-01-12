@@ -73,7 +73,8 @@ object mod {
       __obj.asInstanceOf[Config]
     }
     
-    extension [Self <: Config](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
       
       inline def setAsyncCaptureLimit(value: Double): Self = StObject.set(x, "asyncCaptureLimit", value.asInstanceOf[js.Any])
       
@@ -158,7 +159,8 @@ object mod {
       __obj.asInstanceOf[KeypressSelector]
     }
     
-    extension [Self <: KeypressSelector](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KeypressSelector] (val x: Self) extends AnyVal {
       
       inline def setKeyPress(value: String): Self = StObject.set(x, "keyPress", value.asInstanceOf[js.Any])
       
@@ -252,7 +254,8 @@ object mod {
       __obj.asInstanceOf[Scenario]
     }
     
-    extension [Self <: Scenario](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Scenario] (val x: Self) extends AnyVal {
       
       inline def setClickSelector(value: String): Self = StObject.set(x, "clickSelector", value.asInstanceOf[js.Any])
       
@@ -401,7 +404,8 @@ object mod {
       __obj.asInstanceOf[ViewportLegacy]
     }
     
-    extension [Self <: ViewportLegacy](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ViewportLegacy] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -428,7 +432,8 @@ object mod {
       __obj.asInstanceOf[ViewportNext]
     }
     
-    extension [Self <: ViewportNext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ViewportNext] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       

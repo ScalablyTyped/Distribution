@@ -28,7 +28,8 @@ object RollbackInfo {
     __obj.asInstanceOf[RollbackInfo]
   }
   
-  extension [Self <: RollbackInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RollbackInfo] (val x: Self) extends AnyVal {
     
     inline def setRollbackDeploymentId(value: DeploymentId): Self = StObject.set(x, "rollbackDeploymentId", value.asInstanceOf[js.Any])
     

@@ -24,7 +24,8 @@ object SetVisibleSizeRequest {
     __obj.asInstanceOf[SetVisibleSizeRequest]
   }
   
-  extension [Self <: SetVisibleSizeRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetVisibleSizeRequest] (val x: Self) extends AnyVal {
     
     inline def setHeight(value: integer): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     

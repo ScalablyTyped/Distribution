@@ -20,7 +20,8 @@ object PartialFilesTypeProps {
     __obj.asInstanceOf[PartialFilesTypeProps]
   }
   
-  extension [Self <: PartialFilesTypeProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialFilesTypeProps] (val x: Self) extends AnyVal {
     
     inline def setKnob(value: FileTypeKnob): Self = StObject.set(x, "knob", value.asInstanceOf[js.Any])
     

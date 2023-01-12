@@ -48,7 +48,8 @@ object ArcAnnotationCfg {
     __obj.asInstanceOf[ArcAnnotationCfg]
   }
   
-  extension [Self <: ArcAnnotationCfg](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ArcAnnotationCfg] (val x: Self) extends AnyVal {
     
     inline def setCenter(value: Point): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
     

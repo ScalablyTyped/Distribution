@@ -17,7 +17,8 @@ object AppString {
     __obj.asInstanceOf[AppString]
   }
   
-  extension [Self <: AppString](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppString] (val x: Self) extends AnyVal {
     
     inline def setApp(value: String): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
     

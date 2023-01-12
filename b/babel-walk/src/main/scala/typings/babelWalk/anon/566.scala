@@ -21,7 +21,8 @@ object `566` {
     __obj.asInstanceOf[`566`[TState]]
   }
   
-  extension [Self <: `566`[?], TState](x: Self & `566`[TState]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: `566`[?], TState] (val x: Self & `566`[TState]) extends AnyVal {
     
     inline def setEnter(
       value: (/* node */ NodeType[StringLiteralTypeAnnotation], TState, /* ancestors */ js.Array[Node]) => Unit

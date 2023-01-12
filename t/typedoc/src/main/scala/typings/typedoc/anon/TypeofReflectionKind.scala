@@ -65,7 +65,8 @@ object TypeofReflectionKind {
     __obj.asInstanceOf[TypeofReflectionKind]
   }
   
-  extension [Self <: TypeofReflectionKind](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofReflectionKind] (val x: Self) extends AnyVal {
     
     inline def setAll(value: Double): Self = StObject.set(x, "All", value.asInstanceOf[js.Any])
     

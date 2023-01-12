@@ -67,7 +67,8 @@ object anon {
       __obj.asInstanceOf[Android]
     }
     
-    extension [Self <: Android](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Android] (val x: Self) extends AnyVal {
       
       inline def setAndroid(value: Boolean): Self = StObject.set(x, "android", value.asInstanceOf[js.Any])
       
@@ -122,7 +123,8 @@ object anon {
       __obj.asInstanceOf[Chrome]
     }
     
-    extension [Self <: Chrome](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Chrome] (val x: Self) extends AnyVal {
       
       inline def setChrome(value: Boolean): Self = StObject.set(x, "chrome", value.asInstanceOf[js.Any])
       

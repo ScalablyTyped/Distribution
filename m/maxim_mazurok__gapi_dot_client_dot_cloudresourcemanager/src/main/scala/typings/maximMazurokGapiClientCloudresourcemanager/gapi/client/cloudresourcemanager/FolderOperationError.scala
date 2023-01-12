@@ -16,7 +16,8 @@ object FolderOperationError {
     __obj.asInstanceOf[FolderOperationError]
   }
   
-  extension [Self <: FolderOperationError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FolderOperationError] (val x: Self) extends AnyVal {
     
     inline def setErrorMessageId(value: String): Self = StObject.set(x, "errorMessageId", value.asInstanceOf[js.Any])
     

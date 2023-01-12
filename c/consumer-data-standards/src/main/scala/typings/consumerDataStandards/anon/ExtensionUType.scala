@@ -40,7 +40,8 @@ object ExtensionUType {
     __obj.asInstanceOf[ExtensionUType]
   }
   
-  extension [Self <: ExtensionUType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExtensionUType] (val x: Self) extends AnyVal {
     
     inline def setExtensionUType(value: x2p101Payload): Self = StObject.set(x, "extensionUType", value.asInstanceOf[js.Any])
     

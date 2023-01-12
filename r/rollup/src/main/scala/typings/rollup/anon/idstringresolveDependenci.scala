@@ -29,7 +29,8 @@ object idstringresolveDependenci {
     __obj.asInstanceOf[idstringresolveDependenci]
   }
   
-  extension [Self <: idstringresolveDependenci](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: idstringresolveDependenci] (val x: Self) extends AnyVal {
     
     inline def setAssertions(value: Record[String, String]): Self = StObject.set(x, "assertions", value.asInstanceOf[js.Any])
     

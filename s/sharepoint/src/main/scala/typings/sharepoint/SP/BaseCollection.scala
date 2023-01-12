@@ -21,7 +21,8 @@ object BaseCollection {
     __obj.asInstanceOf[BaseCollection[T]]
   }
   
-  extension [Self <: BaseCollection[?], T](x: Self & BaseCollection[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BaseCollection[?], T] (val x: Self & BaseCollection[T]) extends AnyVal {
     
     inline def setGet_count(value: () => Double): Self = StObject.set(x, "get_count", js.Any.fromFunction0(value))
     

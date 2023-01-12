@@ -35,7 +35,8 @@ object MemberListResponse {
     __obj.asInstanceOf[MemberListResponse]
   }
   
-  extension [Self <: MemberListResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MemberListResponse] (val x: Self) extends AnyVal {
     
     inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     

@@ -188,7 +188,8 @@ object typingsAbsoluteCellRangeMod {
       __obj.asInstanceOf[SimpleCellRange_]
     }
     
-    extension [Self <: SimpleCellRange_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SimpleCellRange_] (val x: Self) extends AnyVal {
       
       inline def setEnd(value: SimpleCellAddress_): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       

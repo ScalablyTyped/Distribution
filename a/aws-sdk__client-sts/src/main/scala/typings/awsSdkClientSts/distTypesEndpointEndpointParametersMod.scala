@@ -35,7 +35,8 @@ object distTypesEndpointEndpointParametersMod {
       __obj.asInstanceOf[ClientInputEndpointParameters]
     }
     
-    extension [Self <: ClientInputEndpointParameters](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClientInputEndpointParameters] (val x: Self) extends AnyVal {
       
       inline def setEndpoint(value: String | (Provider[Endpoint | EndpointV2 | String]) | Endpoint | EndpointV2): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
       
@@ -82,7 +83,8 @@ object distTypesEndpointEndpointParametersMod {
       __obj.asInstanceOf[ClientResolvedEndpointParameters]
     }
     
-    extension [Self <: ClientResolvedEndpointParameters](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClientResolvedEndpointParameters] (val x: Self) extends AnyVal {
       
       inline def setDefaultSigningName(value: String): Self = StObject.set(x, "defaultSigningName", value.asInstanceOf[js.Any])
     }
@@ -109,7 +111,8 @@ object distTypesEndpointEndpointParametersMod {
       __obj.asInstanceOf[EndpointParameters]
     }
     
-    extension [Self <: EndpointParameters](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EndpointParameters] (val x: Self) extends AnyVal {
       
       inline def setEndpoint(value: String): Self = StObject.set(x, "Endpoint", value.asInstanceOf[js.Any])
       

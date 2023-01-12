@@ -277,7 +277,8 @@ object BrickButtonProps {
     __obj.asInstanceOf[BrickButtonProps]
   }
   
-  extension [Self <: BrickButtonProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BrickButtonProps] (val x: Self) extends AnyVal {
     
     inline def setActiveOpacity(value: Double): Self = StObject.set(x, "activeOpacity", value.asInstanceOf[js.Any])
     

@@ -30,7 +30,8 @@ object mod {
       __obj.asInstanceOf[HtmlReplaceWebpackPluginOption]
     }
     
-    extension [Self <: HtmlReplaceWebpackPluginOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HtmlReplaceWebpackPluginOption] (val x: Self) extends AnyVal {
       
       inline def setPattern(value: String | js.RegExp): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
       

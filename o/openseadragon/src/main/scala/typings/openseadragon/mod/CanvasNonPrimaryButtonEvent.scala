@@ -31,7 +31,8 @@ object CanvasNonPrimaryButtonEvent {
     __obj.asInstanceOf[CanvasNonPrimaryButtonEvent]
   }
   
-  extension [Self <: CanvasNonPrimaryButtonEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CanvasNonPrimaryButtonEvent] (val x: Self) extends AnyVal {
     
     inline def setButton(value: Double): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
     

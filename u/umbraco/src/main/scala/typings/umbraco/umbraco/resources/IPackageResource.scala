@@ -78,7 +78,8 @@ object IPackageResource {
     __obj.asInstanceOf[IPackageResource]
   }
   
-  extension [Self <: IPackageResource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPackageResource] (val x: Self) extends AnyVal {
     
     inline def setCleanUp(value: String => Unit): Self = StObject.set(x, "cleanUp", js.Any.fromFunction1(value))
     

@@ -220,7 +220,8 @@ object XResultSet {
     __obj.asInstanceOf[XResultSet]
   }
   
-  extension [Self <: XResultSet](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XResultSet] (val x: Self) extends AnyVal {
     
     inline def setAbsolute(value: Double => Boolean): Self = StObject.set(x, "absolute", js.Any.fromFunction1(value))
     

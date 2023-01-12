@@ -20,7 +20,8 @@ object RemoteSystemDiscoveryTypeFilter {
     __obj.asInstanceOf[RemoteSystemDiscoveryTypeFilter]
   }
   
-  extension [Self <: RemoteSystemDiscoveryTypeFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RemoteSystemDiscoveryTypeFilter] (val x: Self) extends AnyVal {
     
     inline def setRemoteSystemKinds(value: IVectorView[String]): Self = StObject.set(x, "remoteSystemKinds", value.asInstanceOf[js.Any])
   }

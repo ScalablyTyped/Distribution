@@ -101,7 +101,8 @@ object AMap {
         __obj.asInstanceOf[EventMap]
       }
       
-      extension [Self <: EventMap](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: EventMap] (val x: Self) extends AnyVal {
         
         inline def setComplete(value: Event_[complete, SearchResult]): Self = StObject.set(x, "complete", value.asInstanceOf[js.Any])
         
@@ -157,7 +158,8 @@ object AMap {
         __obj.asInstanceOf[Options]
       }
       
-      extension [Self <: Options](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
         
         inline def setAutoFitView(value: Boolean): Self = StObject.set(x, "autoFitView", value.asInstanceOf[js.Any])
         
@@ -218,7 +220,8 @@ object AMap {
         __obj.asInstanceOf[Poi]
       }
       
-      extension [Self <: Poi](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Poi] (val x: Self) extends AnyVal {
         
         inline def setLocation(value: LngLat): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
         
@@ -252,7 +255,8 @@ object AMap {
         __obj.asInstanceOf[RideRoute]
       }
       
-      extension [Self <: RideRoute](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: RideRoute] (val x: Self) extends AnyVal {
         
         inline def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
         
@@ -335,7 +339,8 @@ object AMap {
         __obj.asInstanceOf[RideStep]
       }
       
-      extension [Self <: RideStep](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: RideStep] (val x: Self) extends AnyVal {
         
         inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
         
@@ -375,7 +380,8 @@ object AMap {
         __obj.asInstanceOf[SearchPoint]
       }
       
-      extension [Self <: SearchPoint](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SearchPoint] (val x: Self) extends AnyVal {
         
         inline def setKeyword(value: String): Self = StObject.set(x, "keyword", value.asInstanceOf[js.Any])
       }
@@ -431,7 +437,8 @@ object AMap {
         __obj.asInstanceOf[SearchResultBase]
       }
       
-      extension [Self <: SearchResultBase](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SearchResultBase] (val x: Self) extends AnyVal {
         
         inline def setEnd(value: Poi): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
         
@@ -477,7 +484,8 @@ object AMap {
         __obj.asInstanceOf[SearchResultCommon]
       }
       
-      extension [Self <: SearchResultCommon](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SearchResultCommon] (val x: Self) extends AnyVal {
         
         inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
         
@@ -535,7 +543,8 @@ object AMap {
         __obj.asInstanceOf[SearchResultExt]
       }
       
-      extension [Self <: SearchResultExt](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SearchResultExt] (val x: Self) extends AnyVal {
         
         inline def setDestinationName(value: String): Self = StObject.set(x, "destinationName", value.asInstanceOf[js.Any])
         

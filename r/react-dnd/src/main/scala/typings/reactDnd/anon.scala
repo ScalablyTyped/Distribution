@@ -22,7 +22,8 @@ object anon {
       __obj.asInstanceOf[`0`]
     }
     
-    extension [Self <: `0`](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: `0`] (val x: Self) extends AnyVal {
       
       inline def setShallow(value: Boolean): Self = StObject.set(x, "shallow", value.asInstanceOf[js.Any])
       
@@ -53,7 +54,8 @@ object anon {
       __obj.asInstanceOf[Backend[BackendContext, BackendOptions]]
     }
     
-    extension [Self <: Backend[?, ?], BackendContext, BackendOptions](x: Self & (Backend[BackendContext, BackendOptions])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Backend[?, ?], BackendContext, BackendOptions] (val x: Self & (Backend[BackendContext, BackendOptions])) extends AnyVal {
       
       inline def setBackend(
         value: (/* manager */ DragDropManager, /* globalContext */ js.UndefOr[Any], /* configuration */ js.UndefOr[Any]) => typings.dndCore.distInterfacesMod.Backend
@@ -92,7 +94,8 @@ object anon {
       __obj.asInstanceOf[Children]
     }
     
-    extension [Self <: Children](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Children] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -113,7 +116,8 @@ object anon {
       __obj.asInstanceOf[HandlerIds]
     }
     
-    extension [Self <: HandlerIds](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HandlerIds] (val x: Self) extends AnyVal {
       
       inline def setHandlerIds(value: js.Array[Identifier]): Self = StObject.set(x, "handlerIds", value.asInstanceOf[js.Any])
       
@@ -134,7 +138,8 @@ object anon {
       __obj.asInstanceOf[Shallow]
     }
     
-    extension [Self <: Shallow](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Shallow] (val x: Self) extends AnyVal {
       
       inline def setShallow(value: Boolean): Self = StObject.set(x, "shallow", value.asInstanceOf[js.Any])
     }

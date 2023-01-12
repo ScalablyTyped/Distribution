@@ -18,7 +18,8 @@ object GetPercentilesResponse {
     __obj.asInstanceOf[GetPercentilesResponse]
   }
   
-  extension [Self <: GetPercentilesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetPercentilesResponse] (val x: Self) extends AnyVal {
     
     inline def setPercentiles(value: Percentiles): Self = StObject.set(x, "percentiles", value.asInstanceOf[js.Any])
     

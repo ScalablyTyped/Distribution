@@ -37,7 +37,8 @@ object XSystemDependentMenuPeer {
     __obj.asInstanceOf[XSystemDependentMenuPeer]
   }
   
-  extension [Self <: XSystemDependentMenuPeer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XSystemDependentMenuPeer] (val x: Self) extends AnyVal {
     
     inline def setGetMenuHandle(value: (SeqEquiv[Double], Double) => Any): Self = StObject.set(x, "getMenuHandle", js.Any.fromFunction2(value))
   }

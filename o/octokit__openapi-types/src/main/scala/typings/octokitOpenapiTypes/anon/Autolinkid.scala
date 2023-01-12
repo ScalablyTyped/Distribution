@@ -26,7 +26,8 @@ object Autolinkid {
     __obj.asInstanceOf[Autolinkid]
   }
   
-  extension [Self <: Autolinkid](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Autolinkid] (val x: Self) extends AnyVal {
     
     inline def setAutolink_id(
       value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['autolink-id'] */ js.Any

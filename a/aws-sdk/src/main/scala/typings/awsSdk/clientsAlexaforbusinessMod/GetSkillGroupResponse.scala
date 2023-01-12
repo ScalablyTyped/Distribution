@@ -18,7 +18,8 @@ object GetSkillGroupResponse {
     __obj.asInstanceOf[GetSkillGroupResponse]
   }
   
-  extension [Self <: GetSkillGroupResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetSkillGroupResponse] (val x: Self) extends AnyVal {
     
     inline def setSkillGroup(value: SkillGroup): Self = StObject.set(x, "SkillGroup", value.asInstanceOf[js.Any])
     

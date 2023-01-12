@@ -34,7 +34,8 @@ object typesRuntimeAnimateMod {
       __obj.asInstanceOf[AnimationConfig]
     }
     
-    extension [Self <: AnimationConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AnimationConfig] (val x: Self) extends AnyVal {
       
       inline def setCss(value: (/* t */ Double, /* u */ Double) => String): Self = StObject.set(x, "css", js.Any.fromFunction2(value))
       
@@ -73,7 +74,8 @@ object typesRuntimeAnimateMod {
       __obj.asInstanceOf[FlipParams]
     }
     
-    extension [Self <: FlipParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FlipParams] (val x: Self) extends AnyVal {
       
       inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
       

@@ -28,7 +28,8 @@ object DeploymentIoTJobConfiguration {
     __obj.asInstanceOf[DeploymentIoTJobConfiguration]
   }
   
-  extension [Self <: DeploymentIoTJobConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeploymentIoTJobConfiguration] (val x: Self) extends AnyVal {
     
     inline def setAbortConfig(value: IoTJobAbortConfig): Self = StObject.set(x, "abortConfig", value.asInstanceOf[js.Any])
     

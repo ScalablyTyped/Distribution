@@ -38,7 +38,8 @@ object QSort {
     __obj.asInstanceOf[QSort]
   }
   
-  extension [Self <: QSort](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QSort] (val x: Self) extends AnyVal {
     
     inline def setOrder(
       value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['order'] */ js.Any

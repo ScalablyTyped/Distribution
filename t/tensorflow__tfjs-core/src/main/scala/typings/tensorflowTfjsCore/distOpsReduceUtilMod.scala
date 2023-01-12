@@ -33,7 +33,8 @@ object distOpsReduceUtilMod {
       __obj.asInstanceOf[ReduceInfo]
     }
     
-    extension [Self <: ReduceInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReduceInfo] (val x: Self) extends AnyVal {
       
       inline def setBatchSize(value: Double): Self = StObject.set(x, "batchSize", value.asInstanceOf[js.Any])
       

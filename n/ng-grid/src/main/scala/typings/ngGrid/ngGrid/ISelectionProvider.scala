@@ -47,7 +47,8 @@ object ISelectionProvider {
     __obj.asInstanceOf[ISelectionProvider]
   }
   
-  extension [Self <: ISelectionProvider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISelectionProvider] (val x: Self) extends AnyVal {
     
     inline def setChangeSelection(value: (Any, Any) => Unit): Self = StObject.set(x, "ChangeSelection", js.Any.fromFunction2(value))
     

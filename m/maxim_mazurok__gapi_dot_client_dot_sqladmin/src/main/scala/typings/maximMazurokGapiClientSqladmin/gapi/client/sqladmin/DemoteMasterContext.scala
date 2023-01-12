@@ -32,7 +32,8 @@ object DemoteMasterContext {
     __obj.asInstanceOf[DemoteMasterContext]
   }
   
-  extension [Self <: DemoteMasterContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DemoteMasterContext] (val x: Self) extends AnyVal {
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

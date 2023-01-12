@@ -21,7 +21,8 @@ object IBResourceImage {
     __obj.asInstanceOf[IBResourceImage]
   }
   
-  extension [Self <: IBResourceImage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IBResourceImage] (val x: Self) extends AnyVal {
     
     inline def set$(value: Height): Self = StObject.set(x, "$", value.asInstanceOf[js.Any])
   }

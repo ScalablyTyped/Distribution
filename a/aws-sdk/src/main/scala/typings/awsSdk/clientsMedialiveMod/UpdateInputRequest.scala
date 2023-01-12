@@ -57,7 +57,8 @@ object UpdateInputRequest {
     __obj.asInstanceOf[UpdateInputRequest]
   }
   
-  extension [Self <: UpdateInputRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateInputRequest] (val x: Self) extends AnyVal {
     
     inline def setDestinations(value: listOfInputDestinationRequest): Self = StObject.set(x, "Destinations", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object IBItemobjectconstraintArr {
     __obj.asInstanceOf[IBItemobjectconstraintArr]
   }
   
-  extension [Self <: IBItemobjectconstraintArr](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IBItemobjectconstraintArr] (val x: Self) extends AnyVal {
     
     inline def set$(value: js.Object): Self = StObject.set(x, "$", value.asInstanceOf[js.Any])
     

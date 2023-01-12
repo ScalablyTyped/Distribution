@@ -236,7 +236,8 @@ object libComponentsPickersBasePickerMod {
       __obj.asInstanceOf[IBasePickerState]
     }
     
-    extension [Self <: IBasePickerState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IBasePickerState] (val x: Self) extends AnyVal {
       
       inline def setIsFocused(value: Boolean): Self = StObject.set(x, "isFocused", value.asInstanceOf[js.Any])
       
@@ -311,7 +312,8 @@ object libComponentsPickersBasePickerMod {
       __obj.asInstanceOf[IPickerAriaIds]
     }
     
-    extension [Self <: IPickerAriaIds](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPickerAriaIds] (val x: Self) extends AnyVal {
       
       inline def setCombobox(value: String): Self = StObject.set(x, "combobox", value.asInstanceOf[js.Any])
       

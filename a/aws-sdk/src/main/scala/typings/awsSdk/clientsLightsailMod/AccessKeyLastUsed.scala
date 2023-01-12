@@ -28,7 +28,8 @@ object AccessKeyLastUsed {
     __obj.asInstanceOf[AccessKeyLastUsed]
   }
   
-  extension [Self <: AccessKeyLastUsed](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccessKeyLastUsed] (val x: Self) extends AnyVal {
     
     inline def setLastUsedDate(value: js.Date): Self = StObject.set(x, "lastUsedDate", value.asInstanceOf[js.Any])
     

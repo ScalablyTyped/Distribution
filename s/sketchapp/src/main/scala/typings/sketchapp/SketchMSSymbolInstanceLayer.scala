@@ -54,7 +54,8 @@ object SketchMSSymbolInstanceLayer {
     __obj.asInstanceOf[SketchMSSymbolInstanceLayer]
   }
   
-  extension [Self <: SketchMSSymbolInstanceLayer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SketchMSSymbolInstanceLayer] (val x: Self) extends AnyVal {
     
     inline def setHorizontalSpacing(value: Double): Self = StObject.set(x, "horizontalSpacing", value.asInstanceOf[js.Any])
     

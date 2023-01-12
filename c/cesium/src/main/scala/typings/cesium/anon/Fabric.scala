@@ -25,7 +25,8 @@ object Fabric {
     __obj.asInstanceOf[Fabric]
   }
   
-  extension [Self <: Fabric](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Fabric] (val x: Self) extends AnyVal {
     
     inline def setFabric(value: Any): Self = StObject.set(x, "fabric", value.asInstanceOf[js.Any])
     

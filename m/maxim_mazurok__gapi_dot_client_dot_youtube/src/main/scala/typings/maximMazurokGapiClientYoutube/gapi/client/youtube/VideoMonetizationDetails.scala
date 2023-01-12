@@ -16,7 +16,8 @@ object VideoMonetizationDetails {
     __obj.asInstanceOf[VideoMonetizationDetails]
   }
   
-  extension [Self <: VideoMonetizationDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VideoMonetizationDetails] (val x: Self) extends AnyVal {
     
     inline def setAccess(value: AccessPolicy): Self = StObject.set(x, "access", value.asInstanceOf[js.Any])
     

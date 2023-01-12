@@ -27,7 +27,8 @@ object distTypesResponsiveEditorGeneralDistComponentsColorDropDisabledMod extend
       __obj.asInstanceOf[ColorDropDisabledProps]
     }
     
-    extension [Self <: ColorDropDisabledProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColorDropDisabledProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

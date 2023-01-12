@@ -29,7 +29,8 @@ object OptionalIndexedAccessType_ {
     __obj.asInstanceOf[OptionalIndexedAccessType_]
   }
   
-  extension [Self <: OptionalIndexedAccessType_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OptionalIndexedAccessType_] (val x: Self) extends AnyVal {
     
     inline def setIndexType(value: FlowType): Self = StObject.set(x, "indexType", value.asInstanceOf[js.Any])
     

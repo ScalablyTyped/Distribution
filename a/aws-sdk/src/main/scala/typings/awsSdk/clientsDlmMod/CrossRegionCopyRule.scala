@@ -48,7 +48,8 @@ object CrossRegionCopyRule {
     __obj.asInstanceOf[CrossRegionCopyRule]
   }
   
-  extension [Self <: CrossRegionCopyRule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CrossRegionCopyRule] (val x: Self) extends AnyVal {
     
     inline def setCmkArn(value: CmkArn): Self = StObject.set(x, "CmkArn", value.asInstanceOf[js.Any])
     

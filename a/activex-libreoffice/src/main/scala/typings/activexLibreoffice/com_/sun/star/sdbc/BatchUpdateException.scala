@@ -34,7 +34,8 @@ object BatchUpdateException {
     __obj.asInstanceOf[BatchUpdateException]
   }
   
-  extension [Self <: BatchUpdateException](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchUpdateException] (val x: Self) extends AnyVal {
     
     inline def setUpdateCounts(value: SafeArray[Double]): Self = StObject.set(x, "UpdateCounts", value.asInstanceOf[js.Any])
   }

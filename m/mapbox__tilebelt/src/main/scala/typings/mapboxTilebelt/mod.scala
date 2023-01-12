@@ -209,7 +209,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[TilebeltStatic]
     }
     
-    extension [Self <: TilebeltStatic](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TilebeltStatic] (val x: Self) extends AnyVal {
       
       inline def setBboxToTile(value: js.Array[Double] => js.Array[Double]): Self = StObject.set(x, "bboxToTile", js.Any.fromFunction1(value))
       

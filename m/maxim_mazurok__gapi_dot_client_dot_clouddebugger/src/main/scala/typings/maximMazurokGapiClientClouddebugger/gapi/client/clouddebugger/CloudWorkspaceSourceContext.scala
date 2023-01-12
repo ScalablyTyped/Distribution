@@ -19,7 +19,8 @@ object CloudWorkspaceSourceContext {
     __obj.asInstanceOf[CloudWorkspaceSourceContext]
   }
   
-  extension [Self <: CloudWorkspaceSourceContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CloudWorkspaceSourceContext] (val x: Self) extends AnyVal {
     
     inline def setSnapshotId(value: String): Self = StObject.set(x, "snapshotId", value.asInstanceOf[js.Any])
     

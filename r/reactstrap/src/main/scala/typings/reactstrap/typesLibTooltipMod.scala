@@ -43,7 +43,8 @@ object typesLibTooltipMod {
       __obj.asInstanceOf[TooltipProps]
     }
     
-    extension [Self <: TooltipProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TooltipProps] (val x: Self) extends AnyVal {
       
       inline def setIsOpen(value: Boolean): Self = StObject.set(x, "isOpen", value.asInstanceOf[js.Any])
       
@@ -98,7 +99,8 @@ object typesLibTooltipMod {
       __obj.asInstanceOf[UncontrolledTooltipProps]
     }
     
-    extension [Self <: UncontrolledTooltipProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UncontrolledTooltipProps] (val x: Self) extends AnyVal {
       
       inline def setAutohide(value: Boolean): Self = StObject.set(x, "autohide", value.asInstanceOf[js.Any])
       

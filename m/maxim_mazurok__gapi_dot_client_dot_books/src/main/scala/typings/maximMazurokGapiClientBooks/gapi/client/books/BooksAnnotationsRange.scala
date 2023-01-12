@@ -25,7 +25,8 @@ object BooksAnnotationsRange {
     __obj.asInstanceOf[BooksAnnotationsRange]
   }
   
-  extension [Self <: BooksAnnotationsRange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BooksAnnotationsRange] (val x: Self) extends AnyVal {
     
     inline def setEndOffset(value: String): Self = StObject.set(x, "endOffset", value.asInstanceOf[js.Any])
     

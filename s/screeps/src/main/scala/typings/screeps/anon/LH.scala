@@ -50,7 +50,8 @@ object LH {
     __obj.asInstanceOf[LH]
   }
   
-  extension [Self <: LH](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LH] (val x: Self) extends AnyVal {
     
     inline def setGH(value: UpgradeController): Self = StObject.set(x, "GH", value.asInstanceOf[js.Any])
     

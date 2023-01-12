@@ -131,7 +131,8 @@ object association {
       __obj.asInstanceOf[typings.senchaTouch.Ext.data.association.IAssociation]
     }
     
-    extension [Self <: typings.senchaTouch.Ext.data.association.IAssociation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.senchaTouch.Ext.data.association.IAssociation] (val x: Self) extends AnyVal {
       
       inline def setAssociatedModel(value: String): Self = StObject.set(x, "associatedModel", value.asInstanceOf[js.Any])
       
@@ -295,7 +296,8 @@ object association {
       __obj.asInstanceOf[IBelongsTo]
     }
     
-    extension [Self <: IBelongsTo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IBelongsTo] (val x: Self) extends AnyVal {
       
       inline def setForeignKey(value: String): Self = StObject.set(x, "foreignKey", value.asInstanceOf[js.Any])
       
@@ -438,7 +440,8 @@ object association {
       __obj.asInstanceOf[IHasMany]
     }
     
-    extension [Self <: IHasMany](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IHasMany] (val x: Self) extends AnyVal {
       
       inline def setAutoLoad(value: Boolean): Self = StObject.set(x, "autoLoad", value.asInstanceOf[js.Any])
       
@@ -582,7 +585,8 @@ object association {
       __obj.asInstanceOf[IHasOne]
     }
     
-    extension [Self <: IHasOne](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IHasOne] (val x: Self) extends AnyVal {
       
       inline def setForeignKey(value: String): Self = StObject.set(x, "foreignKey", value.asInstanceOf[js.Any])
       

@@ -23,7 +23,8 @@ object ASPxClientProcessingModeCancelEventArgs {
     __obj.asInstanceOf[ASPxClientProcessingModeCancelEventArgs]
   }
   
-  extension [Self <: ASPxClientProcessingModeCancelEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientProcessingModeCancelEventArgs] (val x: Self) extends AnyVal {
     
     inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
   }

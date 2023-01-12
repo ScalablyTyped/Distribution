@@ -29,7 +29,8 @@ object LayoutOptions {
     __obj.asInstanceOf[LayoutOptions]
   }
   
-  extension [Self <: LayoutOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LayoutOptions] (val x: Self) extends AnyVal {
     
     inline def setAlignContent(value: String): Self = StObject.set(x, "alignContent", value.asInstanceOf[js.Any])
     

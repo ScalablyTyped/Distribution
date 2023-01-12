@@ -34,7 +34,8 @@ object DirectoryRole {
     __obj.asInstanceOf[DirectoryRole]
   }
   
-  extension [Self <: DirectoryRole](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DirectoryRole] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: NullableOption[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

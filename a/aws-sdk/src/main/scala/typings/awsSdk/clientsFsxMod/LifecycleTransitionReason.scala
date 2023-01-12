@@ -15,7 +15,8 @@ object LifecycleTransitionReason {
     __obj.asInstanceOf[LifecycleTransitionReason]
   }
   
-  extension [Self <: LifecycleTransitionReason](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LifecycleTransitionReason] (val x: Self) extends AnyVal {
     
     inline def setMessage(value: ErrorMessage): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
     

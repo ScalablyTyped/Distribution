@@ -21,7 +21,8 @@ object HmacImportParams {
     __obj.asInstanceOf[HmacImportParams]
   }
   
-  extension [Self <: HmacImportParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HmacImportParams] (val x: Self) extends AnyVal {
     
     inline def setHash(value: HashAlgorithmIdentifier): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
     

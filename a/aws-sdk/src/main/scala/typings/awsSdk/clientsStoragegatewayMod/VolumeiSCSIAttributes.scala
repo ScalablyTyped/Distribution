@@ -38,7 +38,8 @@ object VolumeiSCSIAttributes {
     __obj.asInstanceOf[VolumeiSCSIAttributes]
   }
   
-  extension [Self <: VolumeiSCSIAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VolumeiSCSIAttributes] (val x: Self) extends AnyVal {
     
     inline def setChapEnabled(value: scala.Boolean): Self = StObject.set(x, "ChapEnabled", value.asInstanceOf[js.Any])
     

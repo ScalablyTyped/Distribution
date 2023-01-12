@@ -63,7 +63,8 @@ object Datastore {
     __obj.asInstanceOf[Datastore]
   }
   
-  extension [Self <: Datastore](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Datastore] (val x: Self) extends AnyVal {
     
     inline def setArn(value: DatastoreArn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     

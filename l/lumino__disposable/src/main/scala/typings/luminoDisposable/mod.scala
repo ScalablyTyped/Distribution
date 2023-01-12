@@ -256,7 +256,8 @@ object mod {
       __obj.asInstanceOf[IDisposable]
     }
     
-    extension [Self <: IDisposable](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDisposable] (val x: Self) extends AnyVal {
       
       inline def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
       
@@ -280,7 +281,8 @@ object mod {
       __obj.asInstanceOf[IObservableDisposable]
     }
     
-    extension [Self <: IObservableDisposable](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IObservableDisposable] (val x: Self) extends AnyVal {
       
       inline def setDisposed(value: ISignal[IObservableDisposable, Unit]): Self = StObject.set(x, "disposed", value.asInstanceOf[js.Any])
     }

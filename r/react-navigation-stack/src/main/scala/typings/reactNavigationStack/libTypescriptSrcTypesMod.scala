@@ -33,7 +33,8 @@ object libTypescriptSrcTypesMod {
       __obj.asInstanceOf[NavigationStackScreenProps[Params, ScreenProps]]
     }
     
-    extension [Self <: NavigationStackScreenProps[?, ?], Params, ScreenProps](x: Self & (NavigationStackScreenProps[Params, ScreenProps])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NavigationStackScreenProps[?, ?], Params, ScreenProps] (val x: Self & (NavigationStackScreenProps[Params, ScreenProps])) extends AnyVal {
       
       inline def setNavigation(value: StackNavigationProp[NavigationRoute[NavigationParams], Params]): Self = StObject.set(x, "navigation", value.asInstanceOf[js.Any])
       

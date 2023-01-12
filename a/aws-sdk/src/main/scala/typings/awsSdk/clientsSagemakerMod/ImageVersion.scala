@@ -55,7 +55,8 @@ object ImageVersion {
     __obj.asInstanceOf[ImageVersion]
   }
   
-  extension [Self <: ImageVersion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImageVersion] (val x: Self) extends AnyVal {
     
     inline def setCreationTime(value: js.Date): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     

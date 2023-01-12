@@ -19,7 +19,8 @@ object Node {
     __obj.asInstanceOf[Node[Datum]]
   }
   
-  extension [Self <: Node[?], Datum](x: Self & Node[Datum]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Node[?], Datum] (val x: Self & Node[Datum]) extends AnyVal {
     
     inline def setNode(value: HierarchyNode[Datum]): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
     

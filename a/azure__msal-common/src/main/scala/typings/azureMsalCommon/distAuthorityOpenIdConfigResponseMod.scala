@@ -31,7 +31,8 @@ object distAuthorityOpenIdConfigResponseMod {
       __obj.asInstanceOf[OpenIdConfigResponse]
     }
     
-    extension [Self <: OpenIdConfigResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OpenIdConfigResponse] (val x: Self) extends AnyVal {
       
       inline def setAuthorization_endpoint(value: String): Self = StObject.set(x, "authorization_endpoint", value.asInstanceOf[js.Any])
       

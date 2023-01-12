@@ -15,7 +15,8 @@ object GetCampaignStateResponse {
     __obj.asInstanceOf[GetCampaignStateResponse]
   }
   
-  extension [Self <: GetCampaignStateResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetCampaignStateResponse] (val x: Self) extends AnyVal {
     
     inline def setState(value: CampaignState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     

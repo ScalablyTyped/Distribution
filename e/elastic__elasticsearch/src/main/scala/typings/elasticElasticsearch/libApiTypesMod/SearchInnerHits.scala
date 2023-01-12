@@ -46,7 +46,8 @@ object SearchInnerHits {
     __obj.asInstanceOf[SearchInnerHits]
   }
   
-  extension [Self <: SearchInnerHits](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchInnerHits] (val x: Self) extends AnyVal {
     
     inline def setCollapse(value: SearchFieldCollapse): Self = StObject.set(x, "collapse", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object DashConfiguration {
     __obj.asInstanceOf[DashConfiguration]
   }
   
-  extension [Self <: DashConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DashConfiguration] (val x: Self) extends AnyVal {
     
     inline def setManifestEndpointPrefix(value: _String): Self = StObject.set(x, "ManifestEndpointPrefix", value.asInstanceOf[js.Any])
     

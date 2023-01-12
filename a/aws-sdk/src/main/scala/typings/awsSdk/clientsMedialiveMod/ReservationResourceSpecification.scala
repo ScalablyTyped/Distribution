@@ -53,7 +53,8 @@ object ReservationResourceSpecification {
     __obj.asInstanceOf[ReservationResourceSpecification]
   }
   
-  extension [Self <: ReservationResourceSpecification](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReservationResourceSpecification] (val x: Self) extends AnyVal {
     
     inline def setChannelClass(value: ChannelClass): Self = StObject.set(x, "ChannelClass", value.asInstanceOf[js.Any])
     

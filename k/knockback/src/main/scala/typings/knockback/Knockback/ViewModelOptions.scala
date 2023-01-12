@@ -30,7 +30,8 @@ object ViewModelOptions {
     __obj.asInstanceOf[ViewModelOptions]
   }
   
-  extension [Self <: ViewModelOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ViewModelOptions] (val x: Self) extends AnyVal {
     
     inline def setFactories(value: Any): Self = StObject.set(x, "factories", value.asInstanceOf[js.Any])
     

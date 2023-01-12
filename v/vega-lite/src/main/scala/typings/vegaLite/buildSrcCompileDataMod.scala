@@ -83,7 +83,8 @@ object buildSrcCompileDataMod {
       __obj.asInstanceOf[DataComponent]
     }
     
-    extension [Self <: DataComponent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DataComponent] (val x: Self) extends AnyVal {
       
       inline def setAncestorParse(value: AncestorParse): Self = StObject.set(x, "ancestorParse", value.asInstanceOf[js.Any])
       

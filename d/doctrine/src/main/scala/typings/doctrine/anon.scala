@@ -17,7 +17,8 @@ object anon {
       __obj.asInstanceOf[Midstream]
     }
     
-    extension [Self <: Midstream](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Midstream] (val x: Self) extends AnyVal {
       
       inline def setMidstream(value: Boolean): Self = StObject.set(x, "midstream", value.asInstanceOf[js.Any])
     }

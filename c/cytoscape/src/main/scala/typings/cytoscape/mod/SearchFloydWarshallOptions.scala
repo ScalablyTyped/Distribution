@@ -22,7 +22,8 @@ object SearchFloydWarshallOptions {
     __obj.asInstanceOf[SearchFloydWarshallOptions]
   }
   
-  extension [Self <: SearchFloydWarshallOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchFloydWarshallOptions] (val x: Self) extends AnyVal {
     
     inline def setDirected(value: Boolean): Self = StObject.set(x, "directed", value.asInstanceOf[js.Any])
     

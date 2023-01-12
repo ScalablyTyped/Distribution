@@ -52,7 +52,8 @@ object mod {
       __obj.asInstanceOf[SankeyGraph[N, L]]
     }
     
-    extension [Self <: SankeyGraph[?, ?], N /* <: SankeyExtraProperties */, L /* <: SankeyExtraProperties */](x: Self & (SankeyGraph[N, L])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SankeyGraph[?, ?], N /* <: SankeyExtraProperties */, L /* <: SankeyExtraProperties */] (val x: Self & (SankeyGraph[N, L])) extends AnyVal {
       
       inline def setLinks(value: js.Array[SankeyLink[N, L]]): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
       
@@ -301,7 +302,8 @@ object mod {
       __obj.asInstanceOf[SankeyLinkMinimal[N, L]]
     }
     
-    extension [Self <: SankeyLinkMinimal[?, ?], N /* <: SankeyExtraProperties */, L /* <: SankeyExtraProperties */](x: Self & (SankeyLinkMinimal[N, L])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SankeyLinkMinimal[?, ?], N /* <: SankeyExtraProperties */, L /* <: SankeyExtraProperties */] (val x: Self & (SankeyLinkMinimal[N, L])) extends AnyVal {
       
       inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
@@ -391,7 +393,8 @@ object mod {
       __obj.asInstanceOf[SankeyNodeMinimal[N, L]]
     }
     
-    extension [Self <: SankeyNodeMinimal[?, ?], N /* <: SankeyExtraProperties */, L /* <: SankeyExtraProperties */](x: Self & (SankeyNodeMinimal[N, L])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SankeyNodeMinimal[?, ?], N /* <: SankeyExtraProperties */, L /* <: SankeyExtraProperties */] (val x: Self & (SankeyNodeMinimal[N, L])) extends AnyVal {
       
       inline def setDepth(value: Double): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
       

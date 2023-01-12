@@ -20,7 +20,8 @@ object PartialSelectTypePropsSel {
     __obj.asInstanceOf[PartialSelectTypePropsSel]
   }
   
-  extension [Self <: PartialSelectTypePropsSel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialSelectTypePropsSel] (val x: Self) extends AnyVal {
     
     inline def setKnob(value: SelectTypeKnob[SelectTypeKnobValue]): Self = StObject.set(x, "knob", value.asInstanceOf[js.Any])
     

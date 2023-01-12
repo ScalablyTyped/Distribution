@@ -67,7 +67,8 @@ object User {
       __obj.asInstanceOf[GetRecentlyViewedParams]
     }
     
-    extension [Self <: GetRecentlyViewedParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetRecentlyViewedParams] (val x: Self) extends AnyVal {
       
       inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       
@@ -102,7 +103,8 @@ object User {
       __obj.asInstanceOf[GetUserActivitiesParams]
     }
     
-    extension [Self <: GetUserActivitiesParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetUserActivitiesParams] (val x: Self) extends AnyVal {
       
       inline def setActivityTypeId(value: js.Array[ActivityType]): Self = StObject.set(x, "activityTypeId", value.asInstanceOf[js.Any])
       
@@ -141,7 +143,8 @@ object User {
       __obj.asInstanceOf[GetUserStarsCountParams]
     }
     
-    extension [Self <: GetUserStarsCountParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetUserStarsCountParams] (val x: Self) extends AnyVal {
       
       inline def setSince(value: String): Self = StObject.set(x, "since", value.asInstanceOf[js.Any])
       
@@ -170,7 +173,8 @@ object User {
       __obj.asInstanceOf[GetUserStarsParams]
     }
     
-    extension [Self <: GetUserStarsParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetUserStarsParams] (val x: Self) extends AnyVal {
       
       inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       
@@ -207,7 +211,8 @@ object User {
       __obj.asInstanceOf[PatchUserParams]
     }
     
-    extension [Self <: PatchUserParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PatchUserParams] (val x: Self) extends AnyVal {
       
       inline def setMailAddress(value: String): Self = StObject.set(x, "mailAddress", value.asInstanceOf[js.Any])
       
@@ -246,7 +251,8 @@ object User {
       __obj.asInstanceOf[PostUserParams]
     }
     
-    extension [Self <: PostUserParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PostUserParams] (val x: Self) extends AnyVal {
       
       inline def setMailAddress(value: String): Self = StObject.set(x, "mailAddress", value.asInstanceOf[js.Any])
       

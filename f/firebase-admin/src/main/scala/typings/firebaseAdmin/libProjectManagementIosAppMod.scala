@@ -70,7 +70,8 @@ object libProjectManagementIosAppMod {
       __obj.asInstanceOf[IosAppMetadata]
     }
     
-    extension [Self <: IosAppMetadata](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IosAppMetadata] (val x: Self) extends AnyVal {
       
       inline def setBundleId(value: String): Self = StObject.set(x, "bundleId", value.asInstanceOf[js.Any])
       

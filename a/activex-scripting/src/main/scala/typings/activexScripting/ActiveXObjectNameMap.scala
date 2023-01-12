@@ -38,7 +38,8 @@ object ActiveXObjectNameMap {
     __obj.asInstanceOf[ActiveXObjectNameMap]
   }
   
-  extension [Self <: ActiveXObjectNameMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ActiveXObjectNameMap] (val x: Self) extends AnyVal {
     
     inline def setScriptingDotDictionary(value: Dictionary[Any, Any]): Self = StObject.set(x, "Scripting.Dictionary", value.asInstanceOf[js.Any])
     

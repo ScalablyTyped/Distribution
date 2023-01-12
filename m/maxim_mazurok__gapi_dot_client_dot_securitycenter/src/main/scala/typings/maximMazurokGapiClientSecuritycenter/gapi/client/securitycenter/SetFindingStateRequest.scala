@@ -19,7 +19,8 @@ object SetFindingStateRequest {
     __obj.asInstanceOf[SetFindingStateRequest]
   }
   
-  extension [Self <: SetFindingStateRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetFindingStateRequest] (val x: Self) extends AnyVal {
     
     inline def setStartTime(value: String): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     

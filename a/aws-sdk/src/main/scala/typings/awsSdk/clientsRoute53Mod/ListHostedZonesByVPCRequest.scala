@@ -33,7 +33,8 @@ object ListHostedZonesByVPCRequest {
     __obj.asInstanceOf[ListHostedZonesByVPCRequest]
   }
   
-  extension [Self <: ListHostedZonesByVPCRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListHostedZonesByVPCRequest] (val x: Self) extends AnyVal {
     
     inline def setMaxItems(value: PageMaxItems): Self = StObject.set(x, "MaxItems", value.asInstanceOf[js.Any])
     

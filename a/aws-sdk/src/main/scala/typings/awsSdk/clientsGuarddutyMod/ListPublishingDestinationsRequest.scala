@@ -28,7 +28,8 @@ object ListPublishingDestinationsRequest {
     __obj.asInstanceOf[ListPublishingDestinationsRequest]
   }
   
-  extension [Self <: ListPublishingDestinationsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListPublishingDestinationsRequest] (val x: Self) extends AnyVal {
     
     inline def setDetectorId(value: DetectorId): Self = StObject.set(x, "DetectorId", value.asInstanceOf[js.Any])
     

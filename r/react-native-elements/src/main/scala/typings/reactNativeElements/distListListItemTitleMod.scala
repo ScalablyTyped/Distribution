@@ -29,7 +29,8 @@ object distListListItemTitleMod extends Shortcut {
       __obj.asInstanceOf[TitleProps]
     }
     
-    extension [Self <: TitleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TitleProps] (val x: Self) extends AnyVal {
       
       inline def setRight(value: Boolean): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
       

@@ -33,7 +33,8 @@ object ProductSearchParams {
     __obj.asInstanceOf[ProductSearchParams]
   }
   
-  extension [Self <: ProductSearchParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProductSearchParams] (val x: Self) extends AnyVal {
     
     inline def setBoundingPoly(value: BoundingPoly): Self = StObject.set(x, "boundingPoly", value.asInstanceOf[js.Any])
     

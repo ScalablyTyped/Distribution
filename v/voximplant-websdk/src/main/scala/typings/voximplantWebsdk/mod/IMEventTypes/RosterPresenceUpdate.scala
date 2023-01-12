@@ -40,7 +40,8 @@ object RosterPresenceUpdate {
     __obj.asInstanceOf[RosterPresenceUpdate]
   }
   
-  extension [Self <: RosterPresenceUpdate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RosterPresenceUpdate] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

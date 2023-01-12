@@ -53,7 +53,8 @@ object CreateEnvironmentRequest {
     __obj.asInstanceOf[CreateEnvironmentRequest]
   }
   
-  extension [Self <: CreateEnvironmentRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateEnvironmentRequest] (val x: Self) extends AnyVal {
     
     inline def setDataBundles(value: DataBundleArns): Self = StObject.set(x, "dataBundles", value.asInstanceOf[js.Any])
     

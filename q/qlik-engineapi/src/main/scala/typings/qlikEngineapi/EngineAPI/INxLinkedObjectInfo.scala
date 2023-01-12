@@ -29,7 +29,8 @@ object INxLinkedObjectInfo {
     __obj.asInstanceOf[INxLinkedObjectInfo]
   }
   
-  extension [Self <: INxLinkedObjectInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: INxLinkedObjectInfo] (val x: Self) extends AnyVal {
     
     inline def setQInfo(value: INxInfo): Self = StObject.set(x, "qInfo", value.asInstanceOf[js.Any])
     

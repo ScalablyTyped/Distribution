@@ -22,7 +22,8 @@ object KeyidOwnerRepo {
     __obj.asInstanceOf[KeyidOwnerRepo]
   }
   
-  extension [Self <: KeyidOwnerRepo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KeyidOwnerRepo] (val x: Self) extends AnyVal {
     
     inline def setKey_id(value: Double): Self = StObject.set(x, "key_id", value.asInstanceOf[js.Any])
     

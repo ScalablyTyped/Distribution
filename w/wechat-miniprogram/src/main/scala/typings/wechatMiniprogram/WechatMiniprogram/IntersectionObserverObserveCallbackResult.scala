@@ -43,7 +43,8 @@ object IntersectionObserverObserveCallbackResult {
     __obj.asInstanceOf[IntersectionObserverObserveCallbackResult]
   }
   
-  extension [Self <: IntersectionObserverObserveCallbackResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IntersectionObserverObserveCallbackResult] (val x: Self) extends AnyVal {
     
     inline def setBoundingClientRect(value: BoundingClientRectResult): Self = StObject.set(x, "boundingClientRect", value.asInstanceOf[js.Any])
     

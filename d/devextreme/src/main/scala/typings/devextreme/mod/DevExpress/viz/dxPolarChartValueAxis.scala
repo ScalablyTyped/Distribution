@@ -125,7 +125,8 @@ object dxPolarChartValueAxis {
     __obj.asInstanceOf[dxPolarChartValueAxis]
   }
   
-  extension [Self <: dxPolarChartValueAxis](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxPolarChartValueAxis] (val x: Self) extends AnyVal {
     
     inline def setAxisDivisionFactor(value: Double): Self = StObject.set(x, "axisDivisionFactor", value.asInstanceOf[js.Any])
     

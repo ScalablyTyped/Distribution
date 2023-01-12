@@ -36,7 +36,8 @@ object outUpdateInfoMod {
       __obj.asInstanceOf[BlockMapDataHolder]
     }
     
-    extension [Self <: BlockMapDataHolder](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BlockMapDataHolder] (val x: Self) extends AnyVal {
       
       inline def setBlockMapSize(value: Double): Self = StObject.set(x, "blockMapSize", value.asInstanceOf[js.Any])
       
@@ -67,7 +68,8 @@ object outUpdateInfoMod {
       __obj.asInstanceOf[PackageFileInfo]
     }
     
-    extension [Self <: PackageFileInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PackageFileInfo] (val x: Self) extends AnyVal {
       
       inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     }
@@ -92,7 +94,8 @@ object outUpdateInfoMod {
       __obj.asInstanceOf[ReleaseNoteInfo]
     }
     
-    extension [Self <: ReleaseNoteInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReleaseNoteInfo] (val x: Self) extends AnyVal {
       
       inline def setNote(value: String): Self = StObject.set(x, "note", value.asInstanceOf[js.Any])
       
@@ -115,7 +118,8 @@ object outUpdateInfoMod {
       __obj.asInstanceOf[UpdateFileInfo]
     }
     
-    extension [Self <: UpdateFileInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UpdateFileInfo] (val x: Self) extends AnyVal {
       
       inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
@@ -169,7 +173,8 @@ object outUpdateInfoMod {
       __obj.asInstanceOf[UpdateInfo]
     }
     
-    extension [Self <: UpdateInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UpdateInfo] (val x: Self) extends AnyVal {
       
       inline def setFiles(value: js.Array[UpdateFileInfo]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
       
@@ -228,7 +233,8 @@ object outUpdateInfoMod {
       __obj.asInstanceOf[WindowsUpdateInfo]
     }
     
-    extension [Self <: WindowsUpdateInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WindowsUpdateInfo] (val x: Self) extends AnyVal {
       
       inline def setPackages(value: StringDictionary[PackageFileInfo]): Self = StObject.set(x, "packages", value.asInstanceOf[js.Any])
       

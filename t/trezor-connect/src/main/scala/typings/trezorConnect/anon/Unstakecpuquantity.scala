@@ -21,7 +21,8 @@ object Unstakecpuquantity {
     __obj.asInstanceOf[Unstakecpuquantity]
   }
   
-  extension [Self <: Unstakecpuquantity](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Unstakecpuquantity] (val x: Self) extends AnyVal {
     
     inline def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     

@@ -25,7 +25,8 @@ object EditorImageBrowserTransport {
     __obj.asInstanceOf[EditorImageBrowserTransport]
   }
   
-  extension [Self <: EditorImageBrowserTransport](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EditorImageBrowserTransport] (val x: Self) extends AnyVal {
     
     inline def setCreate(value: String | EditorImageBrowserTransportCreate): Self = StObject.set(x, "create", value.asInstanceOf[js.Any])
     

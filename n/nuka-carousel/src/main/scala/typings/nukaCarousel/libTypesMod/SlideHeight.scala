@@ -17,7 +17,8 @@ object SlideHeight {
     __obj.asInstanceOf[SlideHeight]
   }
   
-  extension [Self <: SlideHeight](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SlideHeight] (val x: Self) extends AnyVal {
     
     inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     

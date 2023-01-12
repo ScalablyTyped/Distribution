@@ -22,7 +22,8 @@ object LoadSubpackageTask {
     __obj.asInstanceOf[LoadSubpackageTask]
   }
   
-  extension [Self <: LoadSubpackageTask](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LoadSubpackageTask] (val x: Self) extends AnyVal {
     
     inline def setOnProgressUpdate(value: js.Function1[/* res */ Progress, Unit] => Unit): Self = StObject.set(x, "onProgressUpdate", js.Any.fromFunction1(value))
   }

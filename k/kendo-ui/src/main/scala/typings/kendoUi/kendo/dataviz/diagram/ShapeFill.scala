@@ -19,7 +19,8 @@ object ShapeFill {
     __obj.asInstanceOf[ShapeFill]
   }
   
-  extension [Self <: ShapeFill](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShapeFill] (val x: Self) extends AnyVal {
     
     inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

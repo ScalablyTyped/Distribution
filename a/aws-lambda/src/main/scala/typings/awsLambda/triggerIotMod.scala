@@ -40,7 +40,8 @@ object triggerIotMod {
       __obj.asInstanceOf[IoTPreProvisioningHookEvent]
     }
     
-    extension [Self <: IoTPreProvisioningHookEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IoTPreProvisioningHookEvent] (val x: Self) extends AnyVal {
       
       inline def setCertificateId(value: String): Self = StObject.set(x, "certificateId", value.asInstanceOf[js.Any])
       
@@ -71,7 +72,8 @@ object triggerIotMod {
       __obj.asInstanceOf[IoTPreProvisioningHookResult]
     }
     
-    extension [Self <: IoTPreProvisioningHookResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IoTPreProvisioningHookResult] (val x: Self) extends AnyVal {
       
       inline def setAllowProvisioning(value: Boolean): Self = StObject.set(x, "allowProvisioning", value.asInstanceOf[js.Any])
       

@@ -17,7 +17,8 @@ object InnerRef {
     __obj.asInstanceOf[InnerRef]
   }
   
-  extension [Self <: InnerRef](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InnerRef] (val x: Self) extends AnyVal {
     
     inline def setInnerRef(value: Ref[HTMLInputElement]): Self = StObject.set(x, "innerRef", value.asInstanceOf[js.Any])
     

@@ -148,7 +148,8 @@ object Pickvaluenumberundefinedv {
     __obj.asInstanceOf[Pickvaluenumberundefinedv]
   }
   
-  extension [Self <: Pickvaluenumberundefinedv](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Pickvaluenumberundefinedv] (val x: Self) extends AnyVal {
     
     inline def setAccessibilityActions(value: js.Array[AccessibilityActionInfo]): Self = StObject.set(x, "accessibilityActions", value.asInstanceOf[js.Any])
     

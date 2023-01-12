@@ -27,7 +27,8 @@ object TileMapOptions {
     __obj.asInstanceOf[TileMapOptions]
   }
   
-  extension [Self <: TileMapOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TileMapOptions] (val x: Self) extends AnyVal {
     
     inline def setBuffer(value: Double): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
     

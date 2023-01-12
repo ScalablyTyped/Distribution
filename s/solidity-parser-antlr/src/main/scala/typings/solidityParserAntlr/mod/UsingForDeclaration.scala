@@ -24,7 +24,8 @@ object UsingForDeclaration {
     __obj.asInstanceOf[UsingForDeclaration]
   }
   
-  extension [Self <: UsingForDeclaration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UsingForDeclaration] (val x: Self) extends AnyVal {
     
     inline def setLibraryName(value: String): Self = StObject.set(x, "libraryName", value.asInstanceOf[js.Any])
     

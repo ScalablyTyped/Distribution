@@ -18,7 +18,8 @@ object BlockSaveProps {
     __obj.asInstanceOf[BlockSaveProps[T]]
   }
   
-  extension [Self <: BlockSaveProps[?], T /* <: Record[String, Any] */](x: Self & BlockSaveProps[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BlockSaveProps[?], T /* <: Record[String, Any] */] (val x: Self & BlockSaveProps[T]) extends AnyVal {
     
     inline def setAttributes(value: T): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     

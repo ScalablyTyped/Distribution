@@ -33,7 +33,8 @@ object AutoScalingGroupNamesType {
     __obj.asInstanceOf[AutoScalingGroupNamesType]
   }
   
-  extension [Self <: AutoScalingGroupNamesType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AutoScalingGroupNamesType] (val x: Self) extends AnyVal {
     
     inline def setAutoScalingGroupNames(value: AutoScalingGroupNames): Self = StObject.set(x, "AutoScalingGroupNames", value.asInstanceOf[js.Any])
     

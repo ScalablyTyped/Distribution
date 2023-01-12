@@ -418,7 +418,8 @@ object ASPxClientGantt {
     __obj.asInstanceOf[ASPxClientGantt]
   }
   
-  extension [Self <: ASPxClientGantt](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientGantt] (val x: Self) extends AnyVal {
     
     inline def setAssignResourceToTask(value: (Any, Any) => Unit): Self = StObject.set(x, "AssignResourceToTask", js.Any.fromFunction2(value))
     

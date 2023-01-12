@@ -18,7 +18,8 @@ object Blurred {
     __obj.asInstanceOf[Blurred]
   }
   
-  extension [Self <: Blurred](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Blurred] (val x: Self) extends AnyVal {
     
     inline def setBlurred(value: PostProcess): Self = StObject.set(x, "blurred", value.asInstanceOf[js.Any])
     

@@ -745,7 +745,8 @@ object mod {
       __obj.asInstanceOf[EditorStateConfig]
     }
     
-    extension [Self <: EditorStateConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EditorStateConfig] (val x: Self) extends AnyVal {
       
       inline def setDoc(value: Node): Self = StObject.set(x, "doc", value.asInstanceOf[js.Any])
       
@@ -794,7 +795,8 @@ object mod {
       __obj.asInstanceOf[NodeBookmark]
     }
     
-    extension [Self <: NodeBookmark](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NodeBookmark] (val x: Self) extends AnyVal {
       
       inline def setAnchor(value: Double): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
       
@@ -883,7 +885,8 @@ object mod {
       __obj.asInstanceOf[PluginSpec[PluginState]]
     }
     
-    extension [Self <: PluginSpec[?], PluginState](x: Self & PluginSpec[PluginState]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PluginSpec[?], PluginState] (val x: Self & PluginSpec[PluginState]) extends AnyVal {
       
       inline def setAppendTransaction(
         value: (/* transactions */ js.Array[Transaction], /* oldState */ EditorState, /* newState */ EditorState) => js.UndefOr[Transaction | Null]
@@ -947,7 +950,8 @@ object mod {
       __obj.asInstanceOf[PluginView]
     }
     
-    extension [Self <: PluginView](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PluginView] (val x: Self) extends AnyVal {
       
       inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
       
@@ -988,7 +992,8 @@ object mod {
       __obj.asInstanceOf[SelectionBookmark]
     }
     
-    extension [Self <: SelectionBookmark](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SelectionBookmark] (val x: Self) extends AnyVal {
       
       inline def setMap(value: Mappable => SelectionBookmark): Self = StObject.set(x, "map", js.Any.fromFunction1(value))
       
@@ -1045,7 +1050,8 @@ object mod {
       __obj.asInstanceOf[StateField[T]]
     }
     
-    extension [Self <: StateField[?], T](x: Self & StateField[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StateField[?], T] (val x: Self & StateField[T]) extends AnyVal {
       
       inline def setApply(value: (Transaction, T, EditorState, EditorState) => T): Self = StObject.set(x, "apply", js.Any.fromFunction4(value))
       
@@ -1078,7 +1084,8 @@ object mod {
       __obj.asInstanceOf[TextBookmark]
     }
     
-    extension [Self <: TextBookmark](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TextBookmark] (val x: Self) extends AnyVal {
       
       inline def setAnchor(value: Double): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
       

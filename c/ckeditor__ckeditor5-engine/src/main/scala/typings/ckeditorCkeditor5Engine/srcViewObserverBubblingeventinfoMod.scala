@@ -66,7 +66,8 @@ object srcViewObserverBubblingeventinfoMod {
       __obj.asInstanceOf[BubblingEventInfo[S]]
     }
     
-    extension [Self <: BubblingEventInfo[?], S /* <: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Emitter */ Any) | Node | Window */](x: Self & BubblingEventInfo[S]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BubblingEventInfo[?], S /* <: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Emitter */ Any) | Node | Window */] (val x: Self & BubblingEventInfo[S]) extends AnyVal {
       
       inline def setCurrentTarget(
         value: typings.ckeditorCkeditor5Engine.srcViewDocumentMod.default | typings.ckeditorCkeditor5Engine.srcViewNodeMod.default

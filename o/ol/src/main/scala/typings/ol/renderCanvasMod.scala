@@ -211,7 +211,8 @@ object renderCanvasMod {
       __obj.asInstanceOf[FillState]
     }
     
-    extension [Self <: FillState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FillState] (val x: Self) extends AnyVal {
       
       inline def setFillStyle(value: ColorLike): Self = StObject.set(x, "fillStyle", value.asInstanceOf[js.Any])
     }
@@ -260,7 +261,8 @@ object renderCanvasMod {
       __obj.asInstanceOf[FillStrokeState]
     }
     
-    extension [Self <: FillStrokeState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FillStrokeState] (val x: Self) extends AnyVal {
       
       inline def setCurrentFillStyle(value: ColorLike): Self = StObject.set(x, "currentFillStyle", value.asInstanceOf[js.Any])
       
@@ -347,7 +349,8 @@ object renderCanvasMod {
       __obj.asInstanceOf[Label]
     }
     
-    extension [Self <: Label](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Label] (val x: Self) extends AnyVal {
       
       inline def setContextInstructions(value: js.Array[String | Double]): Self = StObject.set(x, "contextInstructions", value.asInstanceOf[js.Any])
       
@@ -384,7 +387,8 @@ object renderCanvasMod {
       __obj.asInstanceOf[SerializableInstructions]
     }
     
-    extension [Self <: SerializableInstructions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SerializableInstructions] (val x: Self) extends AnyVal {
       
       inline def setCoordinates(value: js.Array[Double]): Self = StObject.set(x, "coordinates", value.asInstanceOf[js.Any])
       
@@ -443,7 +447,8 @@ object renderCanvasMod {
       __obj.asInstanceOf[StrokeState]
     }
     
-    extension [Self <: StrokeState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StrokeState] (val x: Self) extends AnyVal {
       
       inline def setLineCap(value: CanvasLineCap): Self = StObject.set(x, "lineCap", value.asInstanceOf[js.Any])
       
@@ -492,7 +497,8 @@ object renderCanvasMod {
       __obj.asInstanceOf[TextState]
     }
     
-    extension [Self <: TextState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TextState] (val x: Self) extends AnyVal {
       
       inline def setBackgroundFill(value: typings.ol.styleFillMod.default): Self = StObject.set(x, "backgroundFill", value.asInstanceOf[js.Any])
       

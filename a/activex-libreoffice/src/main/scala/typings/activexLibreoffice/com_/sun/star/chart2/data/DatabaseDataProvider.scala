@@ -123,7 +123,8 @@ object DatabaseDataProvider {
     __obj.asInstanceOf[DatabaseDataProvider]
   }
   
-  extension [Self <: DatabaseDataProvider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DatabaseDataProvider] (val x: Self) extends AnyVal {
     
     inline def setCreateWithConnection(value: XConnection => Unit): Self = StObject.set(x, "createWithConnection", js.Any.fromFunction1(value))
   }

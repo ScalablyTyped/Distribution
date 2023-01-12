@@ -43,7 +43,8 @@ object IgGridHidingColumnSetting {
     __obj.asInstanceOf[IgGridHidingColumnSetting]
   }
   
-  extension [Self <: IgGridHidingColumnSetting](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgGridHidingColumnSetting] (val x: Self) extends AnyVal {
     
     inline def setAllowHiding(value: Boolean): Self = StObject.set(x, "allowHiding", value.asInstanceOf[js.Any])
     

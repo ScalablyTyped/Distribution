@@ -48,7 +48,8 @@ object lercDecodeDotesMod {
       __obj.asInstanceOf[BandStats]
     }
     
-    extension [Self <: BandStats](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BandStats] (val x: Self) extends AnyVal {
       
       inline def setDepthStats(value: MaxValues): Self = StObject.set(x, "depthStats", value.asInstanceOf[js.Any])
       
@@ -75,7 +76,8 @@ object lercDecodeDotesMod {
       __obj.asInstanceOf[DecodeOptions]
     }
     
-    extension [Self <: DecodeOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DecodeOptions] (val x: Self) extends AnyVal {
       
       inline def setInputOffset(value: Double): Self = StObject.set(x, "inputOffset", value.asInstanceOf[js.Any])
       
@@ -124,7 +126,8 @@ object lercDecodeDotesMod {
       __obj.asInstanceOf[LercData]
     }
     
-    extension [Self <: LercData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LercData] (val x: Self) extends AnyVal {
       
       inline def setBandMasks(value: js.Array[js.typedarray.Uint8Array]): Self = StObject.set(x, "bandMasks", value.asInstanceOf[js.Any])
       
@@ -204,7 +207,8 @@ object lercDecodeDotesMod {
       __obj.asInstanceOf[LercHeaderInfo]
     }
     
-    extension [Self <: LercHeaderInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LercHeaderInfo] (val x: Self) extends AnyVal {
       
       inline def setBandCount(value: Double): Self = StObject.set(x, "bandCount", value.asInstanceOf[js.Any])
       

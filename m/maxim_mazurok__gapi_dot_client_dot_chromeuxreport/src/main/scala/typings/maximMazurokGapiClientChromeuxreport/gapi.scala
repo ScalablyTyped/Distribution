@@ -31,7 +31,8 @@ object gapi {
           __obj.asInstanceOf[Bin]
         }
         
-        extension [Self <: Bin](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: Bin] (val x: Self) extends AnyVal {
           
           inline def setDensity(value: Double): Self = StObject.set(x, "density", value.asInstanceOf[js.Any])
           
@@ -78,7 +79,8 @@ object gapi {
           __obj.asInstanceOf[Key]
         }
         
-        extension [Self <: Key](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: Key] (val x: Self) extends AnyVal {
           
           inline def setEffectiveConnectionType(value: String): Self = StObject.set(x, "effectiveConnectionType", value.asInstanceOf[js.Any])
           
@@ -113,7 +115,8 @@ object gapi {
           __obj.asInstanceOf[Metric]
         }
         
-        extension [Self <: Metric](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: Metric] (val x: Self) extends AnyVal {
           
           inline def setHistogram(value: js.Array[Bin]): Self = StObject.set(x, "histogram", value.asInstanceOf[js.Any])
           
@@ -139,7 +142,8 @@ object gapi {
           __obj.asInstanceOf[Percentiles]
         }
         
-        extension [Self <: Percentiles](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: Percentiles] (val x: Self) extends AnyVal {
           
           inline def setP75(value: Any): Self = StObject.set(x, "p75", value.asInstanceOf[js.Any])
           
@@ -181,7 +185,8 @@ object gapi {
           __obj.asInstanceOf[QueryRequest]
         }
         
-        extension [Self <: QueryRequest](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: QueryRequest] (val x: Self) extends AnyVal {
           
           inline def setEffectiveConnectionType(value: String): Self = StObject.set(x, "effectiveConnectionType", value.asInstanceOf[js.Any])
           
@@ -222,7 +227,8 @@ object gapi {
           __obj.asInstanceOf[QueryResponse]
         }
         
-        extension [Self <: QueryResponse](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: QueryResponse] (val x: Self) extends AnyVal {
           
           inline def setRecord(value: Record): Self = StObject.set(x, "record", value.asInstanceOf[js.Any])
           
@@ -254,7 +260,8 @@ object gapi {
           __obj.asInstanceOf[Record]
         }
         
-        extension [Self <: Record](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: Record] (val x: Self) extends AnyVal {
           
           inline def setKey(value: Key): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
           
@@ -294,7 +301,8 @@ object gapi {
           __obj.asInstanceOf[UrlNormalization]
         }
         
-        extension [Self <: UrlNormalization](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: UrlNormalization] (val x: Self) extends AnyVal {
           
           inline def setNormalizedUrl(value: String): Self = StObject.set(x, "normalizedUrl", value.asInstanceOf[js.Any])
           

@@ -22,7 +22,8 @@ object anon {
       __obj.asInstanceOf[GetPercentageForValue]
     }
     
-    extension [Self <: GetPercentageForValue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetPercentageForValue] (val x: Self) extends AnyVal {
       
       inline def setGetPercentageForValue(value: (Double, Double, Double) => Double): Self = StObject.set(x, "getPercentageForValue", js.Any.fromFunction3(value))
       

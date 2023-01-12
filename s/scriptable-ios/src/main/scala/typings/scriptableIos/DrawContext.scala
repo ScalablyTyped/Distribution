@@ -272,7 +272,8 @@ object DrawContext {
     __obj.asInstanceOf[DrawContext]
   }
   
-  extension [Self <: DrawContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DrawContext] (val x: Self) extends AnyVal {
     
     inline def setAddPath(value: Path => Unit): Self = StObject.set(x, "addPath", js.Any.fromFunction1(value))
     

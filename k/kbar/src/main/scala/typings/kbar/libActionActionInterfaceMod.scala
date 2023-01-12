@@ -39,7 +39,8 @@ object libActionActionInterfaceMod {
       __obj.asInstanceOf[ActionInterfaceOptions]
     }
     
-    extension [Self <: ActionInterfaceOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ActionInterfaceOptions] (val x: Self) extends AnyVal {
       
       inline def setHistoryManager(value: History): Self = StObject.set(x, "historyManager", value.asInstanceOf[js.Any])
       

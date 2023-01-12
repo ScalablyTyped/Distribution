@@ -20,7 +20,8 @@ object HistoryData {
     __obj.asInstanceOf[HistoryData]
   }
   
-  extension [Self <: HistoryData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HistoryData] (val x: Self) extends AnyVal {
     
     inline def setEntries(value: HistoryEntries): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
     

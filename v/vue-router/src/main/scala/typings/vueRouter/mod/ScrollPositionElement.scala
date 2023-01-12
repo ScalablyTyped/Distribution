@@ -32,7 +32,8 @@ object ScrollPositionElement {
     __obj.asInstanceOf[ScrollPositionElement]
   }
   
-  extension [Self <: ScrollPositionElement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScrollPositionElement] (val x: Self) extends AnyVal {
     
     inline def setEl(value: String | Element): Self = StObject.set(x, "el", value.asInstanceOf[js.Any])
   }

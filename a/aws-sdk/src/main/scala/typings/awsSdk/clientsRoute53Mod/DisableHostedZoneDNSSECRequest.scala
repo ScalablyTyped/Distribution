@@ -18,7 +18,8 @@ object DisableHostedZoneDNSSECRequest {
     __obj.asInstanceOf[DisableHostedZoneDNSSECRequest]
   }
   
-  extension [Self <: DisableHostedZoneDNSSECRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisableHostedZoneDNSSECRequest] (val x: Self) extends AnyVal {
     
     inline def setHostedZoneId(value: ResourceId): Self = StObject.set(x, "HostedZoneId", value.asInstanceOf[js.Any])
   }

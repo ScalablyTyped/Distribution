@@ -43,7 +43,8 @@ object ServiceSetting {
     __obj.asInstanceOf[ServiceSetting]
   }
   
-  extension [Self <: ServiceSetting](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServiceSetting] (val x: Self) extends AnyVal {
     
     inline def setARN(value: String): Self = StObject.set(x, "ARN", value.asInstanceOf[js.Any])
     

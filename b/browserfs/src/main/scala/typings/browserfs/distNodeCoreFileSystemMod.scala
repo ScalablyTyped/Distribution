@@ -506,7 +506,8 @@ object distNodeCoreFileSystemMod {
       __obj.asInstanceOf[FileSystemConstructor]
     }
     
-    extension [Self <: FileSystemConstructor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileSystemConstructor] (val x: Self) extends AnyVal {
       
       inline def setCreate(value: (js.Object, BFSCallback[FileSystem]) => Unit): Self = StObject.set(x, "Create", js.Any.fromFunction2(value))
       
@@ -536,7 +537,8 @@ object distNodeCoreFileSystemMod {
       __obj.asInstanceOf[FileSystemOption[T]]
     }
     
-    extension [Self <: FileSystemOption[?], T](x: Self & FileSystemOption[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileSystemOption[?], T] (val x: Self & FileSystemOption[T]) extends AnyVal {
       
       inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       

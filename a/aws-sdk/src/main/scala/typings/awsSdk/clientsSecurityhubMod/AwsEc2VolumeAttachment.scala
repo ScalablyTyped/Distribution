@@ -33,7 +33,8 @@ object AwsEc2VolumeAttachment {
     __obj.asInstanceOf[AwsEc2VolumeAttachment]
   }
   
-  extension [Self <: AwsEc2VolumeAttachment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsEc2VolumeAttachment] (val x: Self) extends AnyVal {
     
     inline def setAttachTime(value: NonEmptyString): Self = StObject.set(x, "AttachTime", value.asInstanceOf[js.Any])
     

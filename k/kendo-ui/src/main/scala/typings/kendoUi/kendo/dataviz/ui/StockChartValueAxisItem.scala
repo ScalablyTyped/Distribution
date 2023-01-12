@@ -57,7 +57,8 @@ object StockChartValueAxisItem {
     __obj.asInstanceOf[StockChartValueAxisItem]
   }
   
-  extension [Self <: StockChartValueAxisItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StockChartValueAxisItem] (val x: Self) extends AnyVal {
     
     inline def setAxisCrossingValue(value: Any | js.Date): Self = StObject.set(x, "axisCrossingValue", value.asInstanceOf[js.Any])
     

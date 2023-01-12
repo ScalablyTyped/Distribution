@@ -27,7 +27,8 @@ object distTypesResponsiveEditorSystemDistComponentsHealthCheckMod extends Short
       __obj.asInstanceOf[HealthCheckProps]
     }
     
-    extension [Self <: HealthCheckProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HealthCheckProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

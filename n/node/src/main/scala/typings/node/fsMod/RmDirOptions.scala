@@ -41,7 +41,8 @@ object RmDirOptions {
     __obj.asInstanceOf[RmDirOptions]
   }
   
-  extension [Self <: RmDirOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RmDirOptions] (val x: Self) extends AnyVal {
     
     inline def setMaxRetries(value: Double): Self = StObject.set(x, "maxRetries", value.asInstanceOf[js.Any])
     

@@ -27,7 +27,8 @@ object RouteArrowOptions {
     __obj.asInstanceOf[RouteArrowOptions]
   }
   
-  extension [Self <: RouteArrowOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RouteArrowOptions] (val x: Self) extends AnyVal {
     
     inline def setFillColor(value: String): Self = StObject.set(x, "fillColor", value.asInstanceOf[js.Any])
     

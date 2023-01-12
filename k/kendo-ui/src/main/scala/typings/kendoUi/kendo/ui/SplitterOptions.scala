@@ -31,7 +31,8 @@ object SplitterOptions {
     __obj.asInstanceOf[SplitterOptions]
   }
   
-  extension [Self <: SplitterOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SplitterOptions] (val x: Self) extends AnyVal {
     
     inline def setCollapse(value: /* e */ SplitterCollapseEvent => Unit): Self = StObject.set(x, "collapse", js.Any.fromFunction1(value))
     

@@ -18,7 +18,8 @@ object DisassociateNodeResponse {
     __obj.asInstanceOf[DisassociateNodeResponse]
   }
   
-  extension [Self <: DisassociateNodeResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisassociateNodeResponse] (val x: Self) extends AnyVal {
     
     inline def setNodeAssociationStatusToken(value: NodeAssociationStatusToken): Self = StObject.set(x, "NodeAssociationStatusToken", value.asInstanceOf[js.Any])
     

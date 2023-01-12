@@ -115,7 +115,8 @@ object UserDataAccounts {
         __obj.asInstanceOf[DeviceAccountConfiguration]
       }
       
-      extension [Self <: DeviceAccountConfiguration](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: DeviceAccountConfiguration] (val x: Self) extends AnyVal {
         
         inline def setAccountName(value: String): Self = StObject.set(x, "accountName", value.asInstanceOf[js.Any])
         
@@ -306,7 +307,8 @@ object UserDataAccounts {
       __obj.asInstanceOf[UserDataAccount]
     }
     
-    extension [Self <: UserDataAccount](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UserDataAccount] (val x: Self) extends AnyVal {
       
       inline def setDeleteAsync(value: () => IPromiseWithIAsyncAction): Self = StObject.set(x, "deleteAsync", js.Any.fromFunction0(value))
       
@@ -375,7 +377,8 @@ object UserDataAccounts {
       __obj.asInstanceOf[UserDataAccountStore]
     }
     
-    extension [Self <: UserDataAccountStore](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UserDataAccountStore] (val x: Self) extends AnyVal {
       
       inline def setCreateAccountAsync(value: String => IPromiseWithIAsyncOperation[UserDataAccount]): Self = StObject.set(x, "createAccountAsync", js.Any.fromFunction1(value))
       

@@ -34,7 +34,8 @@ object ASPxClientFixedValueErrorBars {
     __obj.asInstanceOf[ASPxClientFixedValueErrorBars]
   }
   
-  extension [Self <: ASPxClientFixedValueErrorBars](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientFixedValueErrorBars] (val x: Self) extends AnyVal {
     
     inline def setNegativeError(value: Double): Self = StObject.set(x, "negativeError", value.asInstanceOf[js.Any])
     

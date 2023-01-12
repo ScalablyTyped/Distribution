@@ -23,7 +23,8 @@ object ResultProcessingOptions {
     __obj.asInstanceOf[ResultProcessingOptions]
   }
   
-  extension [Self <: ResultProcessingOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResultProcessingOptions] (val x: Self) extends AnyVal {
     
     inline def setBuild(value: Boolean): Self = StObject.set(x, "build", value.asInstanceOf[js.Any])
     

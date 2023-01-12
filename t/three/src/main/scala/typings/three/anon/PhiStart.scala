@@ -35,7 +35,8 @@ object PhiStart {
     __obj.asInstanceOf[PhiStart]
   }
   
-  extension [Self <: PhiStart](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PhiStart] (val x: Self) extends AnyVal {
     
     inline def setHeightSegments(value: Double): Self = StObject.set(x, "heightSegments", value.asInstanceOf[js.Any])
     

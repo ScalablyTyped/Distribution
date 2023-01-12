@@ -211,7 +211,8 @@ object mod {
       __obj.asInstanceOf[AnimatableAnimationMethods]
     }
     
-    extension [Self <: AnimatableAnimationMethods](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AnimatableAnimationMethods] (val x: Self) extends AnyVal {
       
       inline def setBounce(value: /* duration */ js.UndefOr[Double] => js.Promise[Finished]): Self = StObject.set(x, "bounce", js.Any.fromFunction1(value))
       
@@ -518,7 +519,8 @@ object mod {
       __obj.asInstanceOf[AnimatableProperties[S]]
     }
     
-    extension [Self <: AnimatableProperties[?], S /* <: js.Object */](x: Self & AnimatableProperties[S]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AnimatableProperties[?], S /* <: js.Object */] (val x: Self & AnimatableProperties[S]) extends AnyVal {
       
       inline def setAnimation(value: Animation | String | (CustomAnimation[TextStyle & ViewStyle & ImageStyle])): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
       
@@ -789,7 +791,8 @@ object mod {
       __obj.asInstanceOf[CustomAnimation[T]]
     }
     
-    extension [Self <: CustomAnimation[?], T](x: Self & CustomAnimation[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CustomAnimation[?], T] (val x: Self & CustomAnimation[T]) extends AnyVal {
       
       inline def setEasing(value: Easing): Self = StObject.set(x, "easing", value.asInstanceOf[js.Any])
       

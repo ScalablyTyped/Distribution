@@ -15,7 +15,8 @@ object Syntax {
     __obj.asInstanceOf[Syntax]
   }
   
-  extension [Self <: Syntax](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Syntax] (val x: Self) extends AnyVal {
     
     inline def setSyntax(value: String): Self = StObject.set(x, "syntax", value.asInstanceOf[js.Any])
   }

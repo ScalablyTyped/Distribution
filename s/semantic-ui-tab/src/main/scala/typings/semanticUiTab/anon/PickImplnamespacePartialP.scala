@@ -109,7 +109,8 @@ object PickImplnamespacePartialP {
     __obj.asInstanceOf[PickImplnamespacePartialP]
   }
   
-  extension [Self <: PickImplnamespacePartialP](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickImplnamespacePartialP] (val x: Self) extends AnyVal {
     
     inline def setAlwaysRefresh(value: Boolean): Self = StObject.set(x, "alwaysRefresh", value.asInstanceOf[js.Any])
     

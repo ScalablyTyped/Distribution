@@ -33,7 +33,8 @@ object UpdateResourceServerRequest {
     __obj.asInstanceOf[UpdateResourceServerRequest]
   }
   
-  extension [Self <: UpdateResourceServerRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateResourceServerRequest] (val x: Self) extends AnyVal {
     
     inline def setIdentifier(value: ResourceServerIdentifierType): Self = StObject.set(x, "Identifier", value.asInstanceOf[js.Any])
     

@@ -69,7 +69,8 @@ object RegionAttachment {
     __obj.asInstanceOf[RegionAttachment]
   }
   
-  extension [Self <: RegionAttachment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RegionAttachment] (val x: Self) extends AnyVal {
     
     inline def setColor(value: Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

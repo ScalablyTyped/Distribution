@@ -48,7 +48,8 @@ object libProgressLineMod {
       __obj.asInstanceOf[LineProps]
     }
     
-    extension [Self <: LineProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LineProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

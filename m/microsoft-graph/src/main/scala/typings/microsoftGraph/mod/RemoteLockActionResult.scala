@@ -18,7 +18,8 @@ object RemoteLockActionResult {
     __obj.asInstanceOf[RemoteLockActionResult]
   }
   
-  extension [Self <: RemoteLockActionResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RemoteLockActionResult] (val x: Self) extends AnyVal {
     
     inline def setUnlockPin(value: NullableOption[String]): Self = StObject.set(x, "unlockPin", value.asInstanceOf[js.Any])
     

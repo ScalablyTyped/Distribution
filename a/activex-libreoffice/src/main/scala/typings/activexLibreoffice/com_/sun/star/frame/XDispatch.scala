@@ -70,7 +70,8 @@ object XDispatch {
     __obj.asInstanceOf[XDispatch]
   }
   
-  extension [Self <: XDispatch](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XDispatch] (val x: Self) extends AnyVal {
     
     inline def setAddStatusListener(value: (XStatusListener, URL) => Unit): Self = StObject.set(x, "addStatusListener", js.Any.fromFunction2(value))
     

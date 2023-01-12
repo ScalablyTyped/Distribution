@@ -62,7 +62,8 @@ object typesSearchUseKeyboardSearchMod {
       __obj.asInstanceOf[BaseKeyboardSearchOptions[D, E]]
     }
     
-    extension [Self <: BaseKeyboardSearchOptions[?, ?], D, E /* <: HTMLElement */](x: Self & (BaseKeyboardSearchOptions[D, E])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseKeyboardSearchOptions[?, ?], D, E /* <: HTMLElement */] (val x: Self & (BaseKeyboardSearchOptions[D, E])) extends AnyVal {
       
       inline def setFindMatchIndex(
         value: (/* value */ String, /* values */ js.Array[String], /* startIndex */ Double, /* isSelfMatchable */ js.UndefOr[Boolean]) => Double
@@ -103,7 +104,8 @@ object typesSearchUseKeyboardSearchMod {
       __obj.asInstanceOf[KeyboardSearchOptions[D, E]]
     }
     
-    extension [Self <: KeyboardSearchOptions[?, ?], D, E /* <: HTMLElement */](x: Self & (KeyboardSearchOptions[D, E])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KeyboardSearchOptions[?, ?], D, E /* <: HTMLElement */] (val x: Self & (KeyboardSearchOptions[D, E])) extends AnyVal {
       
       inline def setSearchIndex(value: Double): Self = StObject.set(x, "searchIndex", value.asInstanceOf[js.Any])
     }
@@ -151,7 +153,8 @@ object typesSearchUseKeyboardSearchMod {
       __obj.asInstanceOf[SearchData[D, E]]
     }
     
-    extension [Self <: SearchData[?, ?], D, E /* <: HTMLElement */](x: Self & (SearchData[D, E])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SearchData[?, ?], D, E /* <: HTMLElement */] (val x: Self & (SearchData[D, E])) extends AnyVal {
       
       inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       

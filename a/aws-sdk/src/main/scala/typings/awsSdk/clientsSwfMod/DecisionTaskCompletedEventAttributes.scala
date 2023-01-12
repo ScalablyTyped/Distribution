@@ -28,7 +28,8 @@ object DecisionTaskCompletedEventAttributes {
     __obj.asInstanceOf[DecisionTaskCompletedEventAttributes]
   }
   
-  extension [Self <: DecisionTaskCompletedEventAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DecisionTaskCompletedEventAttributes] (val x: Self) extends AnyVal {
     
     inline def setExecutionContext(value: Data): Self = StObject.set(x, "executionContext", value.asInstanceOf[js.Any])
     

@@ -56,7 +56,8 @@ object CommentTrackingCriteria {
     __obj.asInstanceOf[CommentTrackingCriteria]
   }
   
-  extension [Self <: CommentTrackingCriteria](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CommentTrackingCriteria] (val x: Self) extends AnyVal {
     
     inline def setFirstComparingIteration(value: Double): Self = StObject.set(x, "firstComparingIteration", value.asInstanceOf[js.Any])
     

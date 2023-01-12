@@ -178,7 +178,8 @@ object Form {
         __obj.asInstanceOf[Impl]
       }
       
-      extension [Self <: Impl](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Impl] (val x: Self) extends AnyVal {
         
         inline def setActive(value: String): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
         
@@ -248,13 +249,15 @@ object Form {
         __obj.asInstanceOf[Impl]
       }
       
-      extension [Self <: Impl](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Impl] (val x: Self) extends AnyVal {
         
         inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       }
     }
     
-    extension [Self <: ErrorSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ErrorSettings] (val x: Self) extends AnyVal {
       
       inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     }
@@ -271,7 +274,8 @@ object Form {
         __obj.asInstanceOf[typings.semanticUiForm.SemanticUI.Form.ErrorSettings.Param]
       }
       
-      extension [Self <: typings.semanticUiForm.SemanticUI.Form.ErrorSettings.Param](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.semanticUiForm.SemanticUI.Form.ErrorSettings.Param] (val x: Self) extends AnyVal {
         
         inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       }
@@ -293,7 +297,8 @@ object Form {
       __obj.asInstanceOf[Field]
     }
     
-    extension [Self <: Field](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Field] (val x: Self) extends AnyVal {
       
       inline def setIdentifier(value: String): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
       
@@ -335,13 +340,15 @@ object Form {
         __obj.asInstanceOf[Impl]
       }
       
-      extension [Self <: Impl](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Impl] (val x: Self) extends AnyVal {
         
         inline def setValidate(value: String): Self = StObject.set(x, "validate", value.asInstanceOf[js.Any])
       }
     }
     
-    extension [Self <: MetadataSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MetadataSettings] (val x: Self) extends AnyVal {
       
       inline def setValidate(value: String): Self = StObject.set(x, "validate", value.asInstanceOf[js.Any])
     }
@@ -358,7 +365,8 @@ object Form {
         __obj.asInstanceOf[typings.semanticUiForm.SemanticUI.Form.MetadataSettings.Param]
       }
       
-      extension [Self <: typings.semanticUiForm.SemanticUI.Form.MetadataSettings.Param](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.semanticUiForm.SemanticUI.Form.MetadataSettings.Param] (val x: Self) extends AnyVal {
         
         inline def setValidate(value: String): Self = StObject.set(x, "validate", value.asInstanceOf[js.Any])
       }
@@ -534,7 +542,8 @@ object Form {
         __obj.asInstanceOf[Impl]
       }
       
-      extension [Self <: Impl](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Impl] (val x: Self) extends AnyVal {
         
         inline def setChecked(value: String): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
         
@@ -769,7 +778,8 @@ object Form {
       __obj.asInstanceOf[Rule]
     }
     
-    extension [Self <: Rule](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Rule] (val x: Self) extends AnyVal {
       
       inline def setPrompt(value: String): Self = StObject.set(x, "prompt", value.asInstanceOf[js.Any])
       
@@ -788,7 +798,8 @@ object Form {
       __obj.asInstanceOf[Rules]
     }
     
-    extension [Self <: Rules](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Rules] (val x: Self) extends AnyVal {
       
       inline def setRules(value: js.Array[Rule]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
       
@@ -837,7 +848,8 @@ object Form {
         __obj.asInstanceOf[Impl]
       }
       
-      extension [Self <: Impl](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Impl] (val x: Self) extends AnyVal {
         
         inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
         
@@ -912,7 +924,8 @@ object Form {
         __obj.asInstanceOf[Impl]
       }
       
-      extension [Self <: Impl](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Impl] (val x: Self) extends AnyVal {
         
         inline def setError(value: js.Array[String] => JQuery): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
         
@@ -961,7 +974,8 @@ object Form {
         __obj.asInstanceOf[Impl]
       }
       
-      extension [Self <: Impl](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Impl] (val x: Self) extends AnyVal {
         
         inline def setUnspecifiedField(value: String): Self = StObject.set(x, "unspecifiedField", value.asInstanceOf[js.Any])
         

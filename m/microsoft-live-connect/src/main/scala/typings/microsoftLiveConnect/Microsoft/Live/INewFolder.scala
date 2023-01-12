@@ -32,7 +32,8 @@ object INewFolder {
     __obj.asInstanceOf[INewFolder]
   }
   
-  extension [Self <: INewFolder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: INewFolder] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

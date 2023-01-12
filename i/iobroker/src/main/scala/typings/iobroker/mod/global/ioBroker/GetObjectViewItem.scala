@@ -19,7 +19,8 @@ object GetObjectViewItem {
     __obj.asInstanceOf[GetObjectViewItem[T]]
   }
   
-  extension [Self <: GetObjectViewItem[?], T](x: Self & GetObjectViewItem[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetObjectViewItem[?], T] (val x: Self & GetObjectViewItem[T]) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

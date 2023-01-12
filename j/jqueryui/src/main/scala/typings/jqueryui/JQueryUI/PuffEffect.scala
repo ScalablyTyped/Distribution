@@ -15,7 +15,8 @@ object PuffEffect {
     __obj.asInstanceOf[PuffEffect]
   }
   
-  extension [Self <: PuffEffect](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PuffEffect] (val x: Self) extends AnyVal {
     
     inline def setPercent(value: Double): Self = StObject.set(x, "percent", value.asInstanceOf[js.Any])
     

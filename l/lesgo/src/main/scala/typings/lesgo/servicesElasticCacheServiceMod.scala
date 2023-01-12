@@ -36,7 +36,8 @@ object servicesElasticCacheServiceMod {
       __obj.asInstanceOf[ElasticCacheService]
     }
     
-    extension [Self <: ElasticCacheService](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ElasticCacheService] (val x: Self) extends AnyVal {
       
       inline def setDriver(value: ^): Self = StObject.set(x, "driver", value.asInstanceOf[js.Any])
       
@@ -57,7 +58,8 @@ object servicesElasticCacheServiceMod {
       __obj.asInstanceOf[ElasticCacheServiceParams]
     }
     
-    extension [Self <: ElasticCacheServiceParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ElasticCacheServiceParams] (val x: Self) extends AnyVal {
       
       inline def setOptions(value: MemcachedElasticCache): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
@@ -84,7 +86,8 @@ object servicesElasticCacheServiceMod {
       __obj.asInstanceOf[MemcachedElasticCache]
     }
     
-    extension [Self <: MemcachedElasticCache](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MemcachedElasticCache] (val x: Self) extends AnyVal {
       
       inline def setAutoDiscover(value: Boolean): Self = StObject.set(x, "autoDiscover", value.asInstanceOf[js.Any])
       

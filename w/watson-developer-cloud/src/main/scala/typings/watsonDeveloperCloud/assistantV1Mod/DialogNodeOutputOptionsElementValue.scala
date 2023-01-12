@@ -17,7 +17,8 @@ object DialogNodeOutputOptionsElementValue {
     __obj.asInstanceOf[DialogNodeOutputOptionsElementValue]
   }
   
-  extension [Self <: DialogNodeOutputOptionsElementValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DialogNodeOutputOptionsElementValue] (val x: Self) extends AnyVal {
     
     inline def setInput(value: MessageInput): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
     

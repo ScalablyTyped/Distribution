@@ -19,7 +19,8 @@ object SipInterconnect {
     __obj.asInstanceOf[SipInterconnect]
   }
   
-  extension [Self <: SipInterconnect](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SipInterconnect] (val x: Self) extends AnyVal {
     
     inline def setConnectionId(value: String): Self = StObject.set(x, "connectionId", value.asInstanceOf[js.Any])
     

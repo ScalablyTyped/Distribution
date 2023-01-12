@@ -20,7 +20,8 @@ object GoalResult {
     __obj.asInstanceOf[GoalResult]
   }
   
-  extension [Self <: GoalResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoalResult] (val x: Self) extends AnyVal {
     
     inline def setDivergence(value: Double): Self = StObject.set(x, "Divergence", value.asInstanceOf[js.Any])
     

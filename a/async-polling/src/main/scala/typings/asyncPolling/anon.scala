@@ -22,7 +22,8 @@ object anon {
       __obj.asInstanceOf[On]
     }
     
-    extension [Self <: On](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: On] (val x: Self) extends AnyVal {
       
       inline def setOn(value: (EventName, js.Function) => Any): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
       

@@ -28,7 +28,8 @@ object GlobalClusterMember {
     __obj.asInstanceOf[GlobalClusterMember]
   }
   
-  extension [Self <: GlobalClusterMember](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GlobalClusterMember] (val x: Self) extends AnyVal {
     
     inline def setDBClusterArn(value: String): Self = StObject.set(x, "DBClusterArn", value.asInstanceOf[js.Any])
     

@@ -26,7 +26,8 @@ object ComposeActionResponseBuilder {
     __obj.asInstanceOf[ComposeActionResponseBuilder]
   }
   
-  extension [Self <: ComposeActionResponseBuilder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ComposeActionResponseBuilder] (val x: Self) extends AnyVal {
     
     inline def setBuild(value: () => ComposeActionResponse): Self = StObject.set(x, "build", js.Any.fromFunction0(value))
     

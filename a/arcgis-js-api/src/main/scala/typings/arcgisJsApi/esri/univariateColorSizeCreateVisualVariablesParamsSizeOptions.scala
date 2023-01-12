@@ -38,7 +38,8 @@ object univariateColorSizeCreateVisualVariablesParamsSizeOptions {
     __obj.asInstanceOf[univariateColorSizeCreateVisualVariablesParamsSizeOptions]
   }
   
-  extension [Self <: univariateColorSizeCreateVisualVariablesParamsSizeOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: univariateColorSizeCreateVisualVariablesParamsSizeOptions] (val x: Self) extends AnyVal {
     
     inline def setAxis(value: all | height): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
     

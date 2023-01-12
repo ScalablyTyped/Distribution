@@ -27,7 +27,8 @@ object distTypesResponsiveEditorGeneralDistComponentsCloneCodeMod extends Shortc
       __obj.asInstanceOf[CloneCodeProps]
     }
     
-    extension [Self <: CloneCodeProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CloneCodeProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

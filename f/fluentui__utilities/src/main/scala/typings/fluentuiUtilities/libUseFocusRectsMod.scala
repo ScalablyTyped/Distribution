@@ -67,7 +67,8 @@ object libUseFocusRectsMod {
       __obj.asInstanceOf[IFocusRectsContext]
     }
     
-    extension [Self <: IFocusRectsContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IFocusRectsContext] (val x: Self) extends AnyVal {
       
       inline def setProviderRef(value: RefObject[HTMLElement]): Self = StObject.set(x, "providerRef", value.asInstanceOf[js.Any])
       
@@ -103,7 +104,8 @@ object libUseFocusRectsMod {
       __obj.asInstanceOf[ListenerCallbacks]
     }
     
-    extension [Self <: ListenerCallbacks](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListenerCallbacks] (val x: Self) extends AnyVal {
       
       inline def setOnKeyDown(value: KeyboardEvent => Unit): Self = StObject.set(x, "onKeyDown", js.Any.fromFunction1(value))
       

@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[Observe]
     }
     
-    extension [Self <: Observe](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Observe] (val x: Self) extends AnyVal {
       
       inline def setObserve(value: () => Unit): Self = StObject.set(x, "observe", js.Any.fromFunction0(value))
       

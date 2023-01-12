@@ -19,7 +19,8 @@ object NetworkEndpointWithHealthStatus {
     __obj.asInstanceOf[NetworkEndpointWithHealthStatus]
   }
   
-  extension [Self <: NetworkEndpointWithHealthStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NetworkEndpointWithHealthStatus] (val x: Self) extends AnyVal {
     
     inline def setHealths(value: js.Array[HealthStatusForNetworkEndpoint]): Self = StObject.set(x, "healths", value.asInstanceOf[js.Any])
     

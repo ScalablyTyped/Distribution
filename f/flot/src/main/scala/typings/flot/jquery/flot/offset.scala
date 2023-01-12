@@ -17,7 +17,8 @@ object offset {
     __obj.asInstanceOf[offset]
   }
   
-  extension [Self <: offset](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: offset] (val x: Self) extends AnyVal {
     
     inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
     

@@ -302,7 +302,8 @@ object modulesApplePayMod {
       __obj.asInstanceOf[ApplePayDetails]
     }
     
-    extension [Self <: ApplePayDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ApplePayDetails] (val x: Self) extends AnyVal {
       
       inline def setCardType(value: String): Self = StObject.set(x, "cardType", value.asInstanceOf[js.Any])
       
@@ -341,7 +342,8 @@ object modulesApplePayMod {
       __obj.asInstanceOf[ApplePayLineItem]
     }
     
-    extension [Self <: ApplePayLineItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ApplePayLineItem] (val x: Self) extends AnyVal {
       
       inline def setAmount(value: String): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
       
@@ -422,7 +424,8 @@ object modulesApplePayMod {
       __obj.asInstanceOf[ApplePayPayload]
     }
     
-    extension [Self <: ApplePayPayload](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ApplePayPayload] (val x: Self) extends AnyVal {
       
       inline def setBinData(value: Commercial): Self = StObject.set(x, "binData", value.asInstanceOf[js.Any])
       
@@ -481,7 +484,8 @@ object modulesApplePayMod {
       __obj.asInstanceOf[ApplePayPaymentRequest]
     }
     
-    extension [Self <: ApplePayPaymentRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ApplePayPaymentRequest] (val x: Self) extends AnyVal {
       
       inline def setBillingContact(value: Any): Self = StObject.set(x, "billingContact", value.asInstanceOf[js.Any])
       

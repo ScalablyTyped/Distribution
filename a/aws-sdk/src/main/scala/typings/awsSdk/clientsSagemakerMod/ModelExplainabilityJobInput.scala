@@ -20,7 +20,8 @@ object ModelExplainabilityJobInput {
     __obj.asInstanceOf[ModelExplainabilityJobInput]
   }
   
-  extension [Self <: ModelExplainabilityJobInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModelExplainabilityJobInput] (val x: Self) extends AnyVal {
     
     inline def setBatchTransformInput(value: BatchTransformInput): Self = StObject.set(x, "BatchTransformInput", value.asInstanceOf[js.Any])
     

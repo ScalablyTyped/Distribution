@@ -25,7 +25,8 @@ object PreservedStatePreservedDisk {
     __obj.asInstanceOf[PreservedStatePreservedDisk]
   }
   
-  extension [Self <: PreservedStatePreservedDisk](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PreservedStatePreservedDisk] (val x: Self) extends AnyVal {
     
     inline def setAutoDelete(value: String): Self = StObject.set(x, "autoDelete", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object ListMuteConfigsResponse {
     __obj.asInstanceOf[ListMuteConfigsResponse]
   }
   
-  extension [Self <: ListMuteConfigsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListMuteConfigsResponse] (val x: Self) extends AnyVal {
     
     inline def setMuteConfigs(value: js.Array[GoogleCloudSecuritycenterV1MuteConfig]): Self = StObject.set(x, "muteConfigs", value.asInstanceOf[js.Any])
     

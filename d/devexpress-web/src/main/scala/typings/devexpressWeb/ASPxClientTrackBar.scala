@@ -156,7 +156,8 @@ object ASPxClientTrackBar {
     __obj.asInstanceOf[ASPxClientTrackBar]
   }
   
-  extension [Self <: ASPxClientTrackBar](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientTrackBar] (val x: Self) extends AnyVal {
     
     inline def setGetItemCount(value: () => Double): Self = StObject.set(x, "GetItemCount", js.Any.fromFunction0(value))
     

@@ -51,7 +51,8 @@ object ArrayTypeDeclarationScalarsAnnotations {
     __obj.asInstanceOf[ArrayTypeDeclarationScalarsAnnotations]
   }
   
-  extension [Self <: ArrayTypeDeclarationScalarsAnnotations](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ArrayTypeDeclarationScalarsAnnotations] (val x: Self) extends AnyVal {
     
     inline def setItems(value: () => js.Array[js.Array[AnnotationRef]]): Self = StObject.set(x, "items", js.Any.fromFunction0(value))
     

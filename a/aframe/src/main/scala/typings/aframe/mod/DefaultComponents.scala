@@ -23,7 +23,8 @@ object DefaultComponents {
     __obj.asInstanceOf[DefaultComponents]
   }
   
-  extension [Self <: DefaultComponents](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DefaultComponents] (val x: Self) extends AnyVal {
     
     inline def setPosition(value: Component[Coordinate, System[Any]]): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     

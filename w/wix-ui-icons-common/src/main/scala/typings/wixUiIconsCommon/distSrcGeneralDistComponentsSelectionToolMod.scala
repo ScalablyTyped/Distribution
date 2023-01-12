@@ -27,7 +27,8 @@ object distSrcGeneralDistComponentsSelectionToolMod extends Shortcut {
       __obj.asInstanceOf[SelectionToolProps]
     }
     
-    extension [Self <: SelectionToolProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SelectionToolProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

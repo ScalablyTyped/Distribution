@@ -26,7 +26,8 @@ object libContextTypesMod {
     @js.native
     val ^ : Context[MosaicContext[MosaicKey]] = js.native
     
-    extension [Self <: MosaicContext[?], T /* <: MosaicKey */](x: Self & MosaicContext[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MosaicContext[?], T /* <: MosaicKey */] (val x: Self & MosaicContext[T]) extends AnyVal {
       
       inline def setBlueprintNamespace(value: String): Self = StObject.set(x, "blueprintNamespace", value.asInstanceOf[js.Any])
       
@@ -48,7 +49,8 @@ object libContextTypesMod {
     @js.native
     val ^ : Context[MosaicWindowContext] = js.native
     
-    extension [Self <: MosaicWindowContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MosaicWindowContext] (val x: Self) extends AnyVal {
       
       inline def setBlueprintNamespace(value: String): Self = StObject.set(x, "blueprintNamespace", value.asInstanceOf[js.Any])
       
@@ -144,7 +146,8 @@ object libContextTypesMod {
       __obj.asInstanceOf[MosaicWindowActions]
     }
     
-    extension [Self <: MosaicWindowActions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MosaicWindowActions] (val x: Self) extends AnyVal {
       
       inline def setConnectDragSource(value: ReactElement => ReactElement | Null): Self = StObject.set(x, "connectDragSource", js.Any.fromFunction1(value))
       

@@ -24,7 +24,8 @@ object anon {
       __obj.asInstanceOf[Aggregations[I, A]]
     }
     
-    extension [Self <: Aggregations[?, ?], I /* <: js.Object */, A /* <: String */](x: Self & (Aggregations[I, A])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Aggregations[?, ?], I /* <: js.Object */, A /* <: String */] (val x: Self & (Aggregations[I, A])) extends AnyVal {
       
       inline def setAggregations(value: Record[A, SearchAggregation[I, A]]): Self = StObject.set(x, "aggregations", value.asInstanceOf[js.Any])
       
@@ -51,7 +52,8 @@ object anon {
       __obj.asInstanceOf[Buckets[I]]
     }
     
-    extension [Self <: Buckets[?], I /* <: js.Object */](x: Self & Buckets[I]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Buckets[?], I /* <: js.Object */] (val x: Self & Buckets[I]) extends AnyVal {
       
       inline def setBuckets(value: typings.itemsjs.mod.Buckets[I]): Self = StObject.set(x, "buckets", value.asInstanceOf[js.Any])
       
@@ -74,7 +76,8 @@ object anon {
       __obj.asInstanceOf[Data[I, A]]
     }
     
-    extension [Self <: Data[?, ?], I /* <: js.Object */, A /* <: String */](x: Self & (Data[I, A])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Data[?, ?], I /* <: js.Object */, A /* <: String */] (val x: Self & (Data[I, A])) extends AnyVal {
       
       inline def setData(value: Aggregations[I, A]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -97,7 +100,8 @@ object anon {
       __obj.asInstanceOf[DataPagination[I]]
     }
     
-    extension [Self <: DataPagination[?], I /* <: js.Object */](x: Self & DataPagination[I]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DataPagination[?], I /* <: js.Object */] (val x: Self & DataPagination[I]) extends AnyVal {
       
       inline def setData(value: Items[I]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -122,7 +126,8 @@ object anon {
       __obj.asInstanceOf[Facets]
     }
     
-    extension [Self <: Facets](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Facets] (val x: Self) extends AnyVal {
       
       inline def setFacets(value: Double): Self = StObject.set(x, "facets", value.asInstanceOf[js.Any])
       
@@ -147,7 +152,8 @@ object anon {
       __obj.asInstanceOf[Id]
     }
     
-    extension [Self <: Id](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Id] (val x: Self) extends AnyVal {
       
       inline def setIntersection_length(value: Double): Self = StObject.set(x, "intersection_length", value.asInstanceOf[js.Any])
       
@@ -166,7 +172,8 @@ object anon {
       __obj.asInstanceOf[Items[I]]
     }
     
-    extension [Self <: Items[?], I /* <: js.Object */](x: Self & Items[I]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Items[?], I /* <: js.Object */] (val x: Self & Items[I]) extends AnyVal {
       
       inline def setItems(value: js.Array[I & Id]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
@@ -187,7 +194,8 @@ object anon {
       __obj.asInstanceOf[Pagination[I]]
     }
     
-    extension [Self <: Pagination[?], I /* <: js.Object */](x: Self & Pagination[I]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Pagination[?], I /* <: js.Object */] (val x: Self & Pagination[I]) extends AnyVal {
       
       inline def setData(value: Buckets[I]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       

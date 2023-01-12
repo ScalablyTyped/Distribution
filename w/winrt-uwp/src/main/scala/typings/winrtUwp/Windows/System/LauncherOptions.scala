@@ -58,7 +58,8 @@ object LauncherOptions {
     __obj.asInstanceOf[LauncherOptions]
   }
   
-  extension [Self <: LauncherOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LauncherOptions] (val x: Self) extends AnyVal {
     
     inline def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
     

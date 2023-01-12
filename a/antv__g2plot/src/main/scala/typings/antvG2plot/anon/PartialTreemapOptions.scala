@@ -107,7 +107,8 @@ object PartialTreemapOptions {
     __obj.asInstanceOf[PartialTreemapOptions]
   }
   
-  extension [Self <: PartialTreemapOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialTreemapOptions] (val x: Self) extends AnyVal {
     
     inline def setAnimation(value: Animation): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     

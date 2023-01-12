@@ -19,7 +19,8 @@ object StreamMessageReply {
     __obj.asInstanceOf[StreamMessageReply]
   }
   
-  extension [Self <: StreamMessageReply](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StreamMessageReply] (val x: Self) extends AnyVal {
     
     inline def setId(value: RedisCommandArgument): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

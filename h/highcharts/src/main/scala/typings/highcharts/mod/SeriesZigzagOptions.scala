@@ -77,7 +77,8 @@ object SeriesZigzagOptions {
     __obj.asInstanceOf[SeriesZigzagOptions]
   }
   
-  extension [Self <: SeriesZigzagOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SeriesZigzagOptions] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

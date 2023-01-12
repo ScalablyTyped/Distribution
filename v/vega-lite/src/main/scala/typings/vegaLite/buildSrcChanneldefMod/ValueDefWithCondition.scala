@@ -26,7 +26,8 @@ object ValueDefWithCondition {
     __obj.asInstanceOf[ValueDefWithCondition[F, V]]
   }
   
-  extension [Self <: ValueDefWithCondition[?, ?], F /* <: (FieldDef[Any, Any]) | (DatumDef[Any, PrimitiveValue | DateTime | ExprRef | SignalRef]) */, V /* <: Value[ExprRef | SignalRef] */](x: Self & (ValueDefWithCondition[F, V])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ValueDefWithCondition[?, ?], F /* <: (FieldDef[Any, Any]) | (DatumDef[Any, PrimitiveValue | DateTime | ExprRef | SignalRef]) */, V /* <: Value[ExprRef | SignalRef] */] (val x: Self & (ValueDefWithCondition[F, V])) extends AnyVal {
     
     inline def setCondition(
       value: (Conditional[F | (ValueDef[V | ExprRef | SignalRef])]) | (js.Array[Conditional[ValueDef[V | ExprRef | SignalRef]]])

@@ -18,7 +18,8 @@ object OutputSettings {
     __obj.asInstanceOf[OutputSettings]
   }
   
-  extension [Self <: OutputSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OutputSettings] (val x: Self) extends AnyVal {
     
     inline def setHlsSettings(value: HlsSettings): Self = StObject.set(x, "HlsSettings", value.asInstanceOf[js.Any])
     

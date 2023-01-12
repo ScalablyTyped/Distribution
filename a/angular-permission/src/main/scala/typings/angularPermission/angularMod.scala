@@ -23,7 +23,8 @@ object angularMod {
         __obj.asInstanceOf[DataWithPermissions]
       }
       
-      extension [Self <: DataWithPermissions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: DataWithPermissions] (val x: Self) extends AnyVal {
         
         inline def setPermissions(value: Except): Self = StObject.set(x, "permissions", value.asInstanceOf[js.Any])
         
@@ -43,7 +44,8 @@ object angularMod {
         __obj.asInstanceOf[IPermissionState]
       }
       
-      extension [Self <: IPermissionState](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IPermissionState] (val x: Self) extends AnyVal {
         
         inline def setData(value: Any | DataWithPermissions): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
         
@@ -66,7 +68,8 @@ object angularMod {
         __obj.asInstanceOf[Permission]
       }
       
-      extension [Self <: Permission](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Permission] (val x: Self) extends AnyVal {
         
         inline def setPermissionName(value: String): Self = StObject.set(x, "permissionName", value.asInstanceOf[js.Any])
         
@@ -97,7 +100,8 @@ object angularMod {
         __obj.asInstanceOf[PermissionRedirectConfigation]
       }
       
-      extension [Self <: PermissionRedirectConfigation](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: PermissionRedirectConfigation] (val x: Self) extends AnyVal {
         
         inline def setOptions(
           value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.ui.IStateOptions */ Any
@@ -188,7 +192,8 @@ object angularMod {
         __obj.asInstanceOf[PermissionStore]
       }
       
-      extension [Self <: PermissionStore](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: PermissionStore] (val x: Self) extends AnyVal {
         
         inline def setClearStore(value: () => Unit): Self = StObject.set(x, "clearStore", js.Any.fromFunction0(value))
         
@@ -229,7 +234,8 @@ object angularMod {
         __obj.asInstanceOf[Role]
       }
       
-      extension [Self <: Role](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Role] (val x: Self) extends AnyVal {
         
         inline def setPermissionNames(value: js.Array[String]): Self = StObject.set(x, "permissionNames", value.asInstanceOf[js.Any])
         
@@ -343,7 +349,8 @@ object angularMod {
         __obj.asInstanceOf[TransitionProperties]
       }
       
-      extension [Self <: TransitionProperties](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: TransitionProperties] (val x: Self) extends AnyVal {
         
         inline def setFromParams(
           value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.ui.IStateParamsService */ Any

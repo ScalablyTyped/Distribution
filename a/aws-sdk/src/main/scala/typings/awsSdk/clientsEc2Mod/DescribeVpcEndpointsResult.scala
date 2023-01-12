@@ -23,7 +23,8 @@ object DescribeVpcEndpointsResult {
     __obj.asInstanceOf[DescribeVpcEndpointsResult]
   }
   
-  extension [Self <: DescribeVpcEndpointsResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeVpcEndpointsResult] (val x: Self) extends AnyVal {
     
     inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

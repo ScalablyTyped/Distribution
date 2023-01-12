@@ -24,7 +24,8 @@ object OnMemoryWarningCallbackResult {
     __obj.asInstanceOf[OnMemoryWarningCallbackResult]
   }
   
-  extension [Self <: OnMemoryWarningCallbackResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnMemoryWarningCallbackResult] (val x: Self) extends AnyVal {
     
     inline def setLevel(value: `5` | `10` | `15`): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
   }

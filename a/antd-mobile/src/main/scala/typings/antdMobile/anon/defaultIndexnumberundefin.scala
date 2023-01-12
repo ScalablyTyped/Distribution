@@ -332,7 +332,8 @@ object defaultIndexnumberundefin {
     __obj.asInstanceOf[defaultIndexnumberundefin]
   }
   
-  extension [Self <: defaultIndexnumberundefin](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: defaultIndexnumberundefin] (val x: Self) extends AnyVal {
     
     inline def setAllowTouchMove(value: Boolean): Self = StObject.set(x, "allowTouchMove", value.asInstanceOf[js.Any])
     

@@ -35,7 +35,8 @@ object colorUtils {
     __obj.asInstanceOf[colorUtils]
   }
   
-  extension [Self <: colorUtils](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: colorUtils] (val x: Self) extends AnyVal {
     
     inline def setGetBackgroundColor(value: MapView => js.Promise[Color_]): Self = StObject.set(x, "getBackgroundColor", js.Any.fromFunction1(value))
     

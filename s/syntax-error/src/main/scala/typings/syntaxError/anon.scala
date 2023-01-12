@@ -43,7 +43,8 @@ object anon {
       __obj.asInstanceOf[SyntaxErrorlinenumbercolu]
     }
     
-    extension [Self <: SyntaxErrorlinenumbercolu](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SyntaxErrorlinenumbercolu] (val x: Self) extends AnyVal {
       
       inline def setAnnotated(value: String): Self = StObject.set(x, "annotated", value.asInstanceOf[js.Any])
       

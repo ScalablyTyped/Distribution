@@ -34,7 +34,8 @@ object DrawSelectionChangeEvent {
     __obj.asInstanceOf[DrawSelectionChangeEvent]
   }
   
-  extension [Self <: DrawSelectionChangeEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DrawSelectionChangeEvent] (val x: Self) extends AnyVal {
     
     inline def setFeatures(value: js.Array[Feature[Geometry, GeoJsonProperties]]): Self = StObject.set(x, "features", value.asInstanceOf[js.Any])
     

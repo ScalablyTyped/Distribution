@@ -67,7 +67,8 @@ object XTabController {
     __obj.asInstanceOf[XTabController]
   }
   
-  extension [Self <: XTabController](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XTabController] (val x: Self) extends AnyVal {
     
     inline def setActivateFirst(value: () => Unit): Self = StObject.set(x, "activateFirst", js.Any.fromFunction0(value))
     

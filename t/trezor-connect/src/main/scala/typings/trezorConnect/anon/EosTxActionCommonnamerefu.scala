@@ -28,7 +28,8 @@ object EosTxActionCommonnamerefu {
     __obj.asInstanceOf[EosTxActionCommonnamerefu]
   }
   
-  extension [Self <: EosTxActionCommonnamerefu](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EosTxActionCommonnamerefu] (val x: Self) extends AnyVal {
     
     inline def setAccount(value: String): Self = StObject.set(x, "account", value.asInstanceOf[js.Any])
     

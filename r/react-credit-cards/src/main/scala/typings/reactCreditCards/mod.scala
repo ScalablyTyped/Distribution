@@ -27,7 +27,8 @@ object mod {
       __obj.asInstanceOf[CallbackArgument]
     }
     
-    extension [Self <: CallbackArgument](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CallbackArgument] (val x: Self) extends AnyVal {
       
       inline def setIssuer(value: String): Self = StObject.set(x, "issuer", value.asInstanceOf[js.Any])
       
@@ -86,7 +87,8 @@ object mod {
       __obj.asInstanceOf[ReactCreditCardProps]
     }
     
-    extension [Self <: ReactCreditCardProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReactCreditCardProps] (val x: Self) extends AnyVal {
       
       inline def setAcceptedCards(value: js.Array[String]): Self = StObject.set(x, "acceptedCards", value.asInstanceOf[js.Any])
       

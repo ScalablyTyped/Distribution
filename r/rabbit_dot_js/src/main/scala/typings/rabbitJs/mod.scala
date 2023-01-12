@@ -134,7 +134,8 @@ object mod {
       __obj.asInstanceOf[RequestMessage]
     }
     
-    extension [Self <: RequestMessage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequestMessage] (val x: Self) extends AnyVal {
       
       inline def setContent(value: Any): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
@@ -174,7 +175,8 @@ object mod {
       __obj.asInstanceOf[SocketOptions]
     }
     
-    extension [Self <: SocketOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SocketOptions] (val x: Self) extends AnyVal {
       
       inline def setExpiration(value: Any): Self = StObject.set(x, "expiration", value.asInstanceOf[js.Any])
       

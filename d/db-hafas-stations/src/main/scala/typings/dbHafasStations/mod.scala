@@ -99,7 +99,8 @@ object mod {
       __obj.asInstanceOf[Location]
     }
     
-    extension [Self <: Location](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Location] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -151,7 +152,8 @@ object mod {
       __obj.asInstanceOf[Products]
     }
     
-    extension [Self <: Products](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Products] (val x: Self) extends AnyVal {
       
       inline def setBus(value: Boolean): Self = StObject.set(x, "bus", value.asInstanceOf[js.Any])
       
@@ -218,7 +220,8 @@ object mod {
       __obj.asInstanceOf[Station]
     }
     
-    extension [Self <: Station](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Station] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -248,7 +251,8 @@ object mod {
       __obj.asInstanceOf[StationFull]
     }
     
-    extension [Self <: StationFull](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StationFull] (val x: Self) extends AnyVal {
       
       inline def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
       

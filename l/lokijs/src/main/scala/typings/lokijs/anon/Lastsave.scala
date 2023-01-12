@@ -19,7 +19,8 @@ object Lastsave {
     __obj.asInstanceOf[Lastsave]
   }
   
-  extension [Self <: Lastsave](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Lastsave] (val x: Self) extends AnyVal {
     
     inline def setLastsave(value: js.Date): Self = StObject.set(x, "lastsave", value.asInstanceOf[js.Any])
     

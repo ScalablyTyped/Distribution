@@ -18,7 +18,8 @@ object anon {
       __obj.asInstanceOf[`0`[Theme]]
     }
     
-    extension [Self <: `0`[?], Theme](x: Self & `0`[Theme]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: `0`[?], Theme] (val x: Self & `0`[Theme]) extends AnyVal {
       
       inline def setTheme(value: NonNullable[Theme]): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       
@@ -37,7 +38,8 @@ object anon {
       __obj.asInstanceOf[ThemeNonNullable[Theme]]
     }
     
-    extension [Self <: ThemeNonNullable[?], Theme](x: Self & ThemeNonNullable[Theme]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ThemeNonNullable[?], Theme] (val x: Self & ThemeNonNullable[Theme]) extends AnyVal {
       
       inline def setTheme(value: NonNullable[Theme]): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     }

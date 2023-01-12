@@ -18,7 +18,8 @@ object typesSdkmetadataMod {
       __obj.asInstanceOf[SdkMetadata]
     }
     
-    extension [Self <: SdkMetadata](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SdkMetadata] (val x: Self) extends AnyVal {
       
       inline def setSdk(value: SdkInfo): Self = StObject.set(x, "sdk", value.asInstanceOf[js.Any])
       

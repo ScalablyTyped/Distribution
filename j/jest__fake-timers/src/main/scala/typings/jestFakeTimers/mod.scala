@@ -169,7 +169,8 @@ object mod {
       __obj.asInstanceOf[TimerConfig[Ref]]
     }
     
-    extension [Self <: TimerConfig[?], Ref](x: Self & TimerConfig[Ref]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TimerConfig[?], Ref] (val x: Self & TimerConfig[Ref]) extends AnyVal {
       
       inline def setIdToRef(value: Double => Ref): Self = StObject.set(x, "idToRef", js.Any.fromFunction1(value))
       

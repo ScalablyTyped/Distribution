@@ -16,7 +16,8 @@ object ResourceIssue {
     __obj.asInstanceOf[ResourceIssue]
   }
   
-  extension [Self <: ResourceIssue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResourceIssue] (val x: Self) extends AnyVal {
     
     inline def setBlockedResource(value: BlockedResource): Self = StObject.set(x, "blockedResource", value.asInstanceOf[js.Any])
     

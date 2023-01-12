@@ -32,7 +32,8 @@ object AuditEventSource {
     __obj.asInstanceOf[AuditEventSource]
   }
   
-  extension [Self <: AuditEventSource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AuditEventSource] (val x: Self) extends AnyVal {
     
     inline def setIdentifier(value: Identifier): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
     

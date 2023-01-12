@@ -15,7 +15,8 @@ object IGeoWithinCommandOptions {
     __obj.asInstanceOf[IGeoWithinCommandOptions]
   }
   
-  extension [Self <: IGeoWithinCommandOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IGeoWithinCommandOptions] (val x: Self) extends AnyVal {
     
     inline def setGeometry(value: GeoPolygon | GeoMultiPolygon): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
   }

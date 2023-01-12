@@ -28,7 +28,8 @@ object IdCheckConfiguration {
     __obj.asInstanceOf[IdCheckConfiguration]
   }
   
-  extension [Self <: IdCheckConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IdCheckConfiguration] (val x: Self) extends AnyVal {
     
     inline def setAuthSteps(value: js.Array[IdCheckSecurityStep]): Self = StObject.set(x, "authSteps", value.asInstanceOf[js.Any])
     

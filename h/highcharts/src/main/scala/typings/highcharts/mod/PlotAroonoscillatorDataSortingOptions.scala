@@ -31,7 +31,8 @@ object PlotAroonoscillatorDataSortingOptions {
     __obj.asInstanceOf[PlotAroonoscillatorDataSortingOptions]
   }
   
-  extension [Self <: PlotAroonoscillatorDataSortingOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotAroonoscillatorDataSortingOptions] (val x: Self) extends AnyVal {
     
     inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     

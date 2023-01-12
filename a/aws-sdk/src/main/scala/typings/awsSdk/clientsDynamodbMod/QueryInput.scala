@@ -95,7 +95,8 @@ object QueryInput {
     __obj.asInstanceOf[QueryInput]
   }
   
-  extension [Self <: QueryInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryInput] (val x: Self) extends AnyVal {
     
     inline def setAttributesToGet(value: AttributeNameList): Self = StObject.set(x, "AttributesToGet", value.asInstanceOf[js.Any])
     

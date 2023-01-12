@@ -17,7 +17,8 @@ object TypeofSWAPDB {
     __obj.asInstanceOf[TypeofSWAPDB]
   }
   
-  extension [Self <: TypeofSWAPDB](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofSWAPDB] (val x: Self) extends AnyVal {
     
     inline def setTransformArguments(value: (Double, Double) => js.Array[String]): Self = StObject.set(x, "transformArguments", js.Any.fromFunction2(value))
     

@@ -21,7 +21,8 @@ object QueueAttributes {
     __obj.asInstanceOf[QueueAttributes]
   }
   
-  extension [Self <: QueueAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueueAttributes] (val x: Self) extends AnyVal {
     
     inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     

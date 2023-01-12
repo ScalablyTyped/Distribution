@@ -254,7 +254,8 @@ object anon {
       __obj.asInstanceOf[Arrow]
     }
     
-    extension [Self <: Arrow](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Arrow] (val x: Self) extends AnyVal {
       
       inline def setArrow(value: TokenType): Self = StObject.set(x, "arrow", value.asInstanceOf[js.Any])
       
@@ -452,7 +453,8 @@ object anon {
       __obj.asInstanceOf[Bexpr]
     }
     
-    extension [Self <: Bexpr](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Bexpr] (val x: Self) extends AnyVal {
       
       inline def setB_expr(value: TokContext): Self = StObject.set(x, "b_expr", value.asInstanceOf[js.Any])
       
@@ -520,7 +522,8 @@ object anon {
       __obj.asInstanceOf[TypeofParser]
     }
     
-    extension [Self <: TypeofParser](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypeofParser] (val x: Self) extends AnyVal {
       
       inline def setExtend(
         value: /* repeated */ js.Function1[

@@ -38,7 +38,8 @@ object StartLabelDetectionRequest {
     __obj.asInstanceOf[StartLabelDetectionRequest]
   }
   
-  extension [Self <: StartLabelDetectionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartLabelDetectionRequest] (val x: Self) extends AnyVal {
     
     inline def setClientRequestToken(value: ClientRequestToken): Self = StObject.set(x, "ClientRequestToken", value.asInstanceOf[js.Any])
     

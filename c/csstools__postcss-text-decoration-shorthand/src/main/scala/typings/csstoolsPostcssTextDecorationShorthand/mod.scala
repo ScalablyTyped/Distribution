@@ -30,7 +30,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[pluginOptions]
     }
     
-    extension [Self <: pluginOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: pluginOptions] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       

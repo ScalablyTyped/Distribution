@@ -19,7 +19,8 @@ object LicenseGetRequest {
     __obj.asInstanceOf[LicenseGetRequest]
   }
   
-  extension [Self <: LicenseGetRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LicenseGetRequest] (val x: Self) extends AnyVal {
     
     inline def setAccept_enterprise(value: Boolean): Self = StObject.set(x, "accept_enterprise", value.asInstanceOf[js.Any])
     

@@ -34,7 +34,8 @@ object MSIAppServiceOptions {
     __obj.asInstanceOf[MSIAppServiceOptions]
   }
   
-  extension [Self <: MSIAppServiceOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MSIAppServiceOptions] (val x: Self) extends AnyVal {
     
     inline def setMsiApiVersion(value: String): Self = StObject.set(x, "msiApiVersion", value.asInstanceOf[js.Any])
     

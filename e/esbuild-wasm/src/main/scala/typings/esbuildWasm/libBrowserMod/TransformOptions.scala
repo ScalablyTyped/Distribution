@@ -26,7 +26,8 @@ object TransformOptions {
     __obj.asInstanceOf[TransformOptions]
   }
   
-  extension [Self <: TransformOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransformOptions] (val x: Self) extends AnyVal {
     
     inline def setBanner(value: String): Self = StObject.set(x, "banner", value.asInstanceOf[js.Any])
     

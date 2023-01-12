@@ -18,7 +18,8 @@ object DeleteEvaluationOutput {
     __obj.asInstanceOf[DeleteEvaluationOutput]
   }
   
-  extension [Self <: DeleteEvaluationOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteEvaluationOutput] (val x: Self) extends AnyVal {
     
     inline def setEvaluationId(value: EntityId): Self = StObject.set(x, "EvaluationId", value.asInstanceOf[js.Any])
     

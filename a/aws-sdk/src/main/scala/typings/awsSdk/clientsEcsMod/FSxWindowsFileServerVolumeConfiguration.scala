@@ -32,7 +32,8 @@ object FSxWindowsFileServerVolumeConfiguration {
     __obj.asInstanceOf[FSxWindowsFileServerVolumeConfiguration]
   }
   
-  extension [Self <: FSxWindowsFileServerVolumeConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FSxWindowsFileServerVolumeConfiguration] (val x: Self) extends AnyVal {
     
     inline def setAuthorizationConfig(value: FSxWindowsFileServerAuthorizationConfig): Self = StObject.set(x, "authorizationConfig", value.asInstanceOf[js.Any])
     

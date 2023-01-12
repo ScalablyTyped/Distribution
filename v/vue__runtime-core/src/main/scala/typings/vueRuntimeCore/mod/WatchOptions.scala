@@ -19,7 +19,8 @@ object WatchOptions {
     __obj.asInstanceOf[WatchOptions[Immediate]]
   }
   
-  extension [Self <: WatchOptions[?], Immediate](x: Self & WatchOptions[Immediate]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WatchOptions[?], Immediate] (val x: Self & WatchOptions[Immediate]) extends AnyVal {
     
     inline def setDeep(value: Boolean): Self = StObject.set(x, "deep", value.asInstanceOf[js.Any])
     

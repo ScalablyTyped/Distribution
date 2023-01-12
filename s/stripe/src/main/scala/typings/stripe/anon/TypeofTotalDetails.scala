@@ -15,7 +15,8 @@ object TypeofTotalDetails {
     __obj.asInstanceOf[TypeofTotalDetails]
   }
   
-  extension [Self <: TypeofTotalDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofTotalDetails] (val x: Self) extends AnyVal {
     
     inline def setBreakdown(value: Any): Self = StObject.set(x, "Breakdown", value.asInstanceOf[js.Any])
   }

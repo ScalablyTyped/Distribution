@@ -142,7 +142,8 @@ object TopLevelGenericHConcatSpe {
     __obj.asInstanceOf[TopLevelGenericHConcatSpe]
   }
   
-  extension [Self <: TopLevelGenericHConcatSpe](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TopLevelGenericHConcatSpe] (val x: Self) extends AnyVal {
     
     inline def set$schema(value: String): Self = StObject.set(x, "$schema", value.asInstanceOf[js.Any])
     

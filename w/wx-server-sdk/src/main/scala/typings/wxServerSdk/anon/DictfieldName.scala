@@ -18,7 +18,8 @@ object DictfieldName {
     __obj.asInstanceOf[DictfieldName]
   }
   
-  extension [Self <: DictfieldName](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DictfieldName] (val x: Self) extends AnyVal {
     
     inline def set_id(value: Any): Self = StObject.set(x, "_id", value.asInstanceOf[js.Any])
   }

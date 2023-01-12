@@ -17,7 +17,8 @@ object CapacityPatch {
     __obj.asInstanceOf[CapacityPatch]
   }
   
-  extension [Self <: CapacityPatch](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CapacityPatch] (val x: Self) extends AnyVal {
     
     inline def setActivities(value: js.Array[Activity]): Self = StObject.set(x, "activities", value.asInstanceOf[js.Any])
     

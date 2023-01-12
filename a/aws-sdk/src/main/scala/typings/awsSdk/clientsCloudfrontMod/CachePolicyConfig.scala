@@ -43,7 +43,8 @@ object CachePolicyConfig {
     __obj.asInstanceOf[CachePolicyConfig]
   }
   
-  extension [Self <: CachePolicyConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CachePolicyConfig] (val x: Self) extends AnyVal {
     
     inline def setComment(value: String): Self = StObject.set(x, "Comment", value.asInstanceOf[js.Any])
     

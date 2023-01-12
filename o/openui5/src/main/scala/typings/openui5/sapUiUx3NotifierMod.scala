@@ -398,7 +398,8 @@ object sapUiUx3NotifierMod {
       __obj.asInstanceOf[NotifierSettings]
     }
     
-    extension [Self <: NotifierSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NotifierSettings] (val x: Self) extends AnyVal {
       
       inline def setIcon(value: URI | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
       

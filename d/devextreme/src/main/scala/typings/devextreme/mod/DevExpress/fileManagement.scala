@@ -115,7 +115,8 @@ object fileManagement {
       __obj.asInstanceOf[CustomFileSystemProviderOptions]
     }
     
-    extension [Self <: CustomFileSystemProviderOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CustomFileSystemProviderOptions] (val x: Self) extends AnyVal {
       
       inline def setAbortFileUpload(
         value: (/* file */ File, /* uploadInfo */ UploadInfo, /* destinationDirectory */ FileSystemItem) => PromiseLike[Any] | Any
@@ -195,7 +196,8 @@ object fileManagement {
       __obj.asInstanceOf[FileSystemError]
     }
     
-    extension [Self <: FileSystemError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileSystemError] (val x: Self) extends AnyVal {
       
       inline def setErrorCode(value: Double): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
       
@@ -287,7 +289,8 @@ object fileManagement {
       __obj.asInstanceOf[FileSystemItem]
     }
     
-    extension [Self <: FileSystemItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileSystemItem] (val x: Self) extends AnyVal {
       
       inline def setDataItem(value: Any): Self = StObject.set(x, "dataItem", value.asInstanceOf[js.Any])
       
@@ -385,7 +388,8 @@ object fileManagement {
       __obj.asInstanceOf[FileSystemProviderBase]
     }
     
-    extension [Self <: FileSystemProviderBase](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileSystemProviderBase] (val x: Self) extends AnyVal {
       
       inline def setAbortFileUpload(value: (File, UploadInfo, FileSystemItem) => js.Promise[Any]): Self = StObject.set(x, "abortFileUpload", js.Any.fromFunction3(value))
       
@@ -448,7 +452,8 @@ object fileManagement {
       __obj.asInstanceOf[FileSystemProviderBaseOptions[T]]
     }
     
-    extension [Self <: FileSystemProviderBaseOptions[?], T](x: Self & FileSystemProviderBaseOptions[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileSystemProviderBaseOptions[?], T] (val x: Self & FileSystemProviderBaseOptions[T]) extends AnyVal {
       
       inline def setDateModifiedExpr(value: String | js.Function): Self = StObject.set(x, "dateModifiedExpr", value.asInstanceOf[js.Any])
       
@@ -508,7 +513,8 @@ object fileManagement {
       __obj.asInstanceOf[ObjectFileSystemProviderOptions]
     }
     
-    extension [Self <: ObjectFileSystemProviderOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ObjectFileSystemProviderOptions] (val x: Self) extends AnyVal {
       
       inline def setContentExpr(value: String | js.Function): Self = StObject.set(x, "contentExpr", value.asInstanceOf[js.Any])
       
@@ -568,7 +574,8 @@ object fileManagement {
       __obj.asInstanceOf[RemoteFileSystemProviderOptions]
     }
     
-    extension [Self <: RemoteFileSystemProviderOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RemoteFileSystemProviderOptions] (val x: Self) extends AnyVal {
       
       inline def setBeforeAjaxSend(value: /* options */ FormData => Unit): Self = StObject.set(x, "beforeAjaxSend", js.Any.fromFunction1(value))
       
@@ -626,7 +633,8 @@ object fileManagement {
       __obj.asInstanceOf[UploadInfo]
     }
     
-    extension [Self <: UploadInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UploadInfo] (val x: Self) extends AnyVal {
       
       inline def setBytesUploaded(value: Double): Self = StObject.set(x, "bytesUploaded", value.asInstanceOf[js.Any])
       

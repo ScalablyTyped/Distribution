@@ -66,7 +66,8 @@ object BehindSecureProxy {
     __obj.asInstanceOf[BehindSecureProxy]
   }
   
-  extension [Self <: BehindSecureProxy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BehindSecureProxy] (val x: Self) extends AnyVal {
     
     inline def setBehindSecureProxy(value: Boolean): Self = StObject.set(x, "behindSecureProxy", value.asInstanceOf[js.Any])
     

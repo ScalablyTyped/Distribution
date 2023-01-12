@@ -28,7 +28,8 @@ object GetMappingRequest {
     __obj.asInstanceOf[GetMappingRequest]
   }
   
-  extension [Self <: GetMappingRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetMappingRequest] (val x: Self) extends AnyVal {
     
     inline def setLocation(value: Location): Self = StObject.set(x, "Location", value.asInstanceOf[js.Any])
     

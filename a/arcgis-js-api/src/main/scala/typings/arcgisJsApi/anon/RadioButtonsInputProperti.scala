@@ -34,7 +34,8 @@ object RadioButtonsInputProperti {
     __obj.asInstanceOf[RadioButtonsInputProperti]
   }
   
-  extension [Self <: RadioButtonsInputProperti](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RadioButtonsInputProperti] (val x: Self) extends AnyVal {
     
     inline def setNoValueOptionLabel(value: String): Self = StObject.set(x, "noValueOptionLabel", value.asInstanceOf[js.Any])
     

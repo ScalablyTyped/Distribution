@@ -30,7 +30,8 @@ object PlotBubbleOnPointConnectorOptions {
     __obj.asInstanceOf[PlotBubbleOnPointConnectorOptions]
   }
   
-  extension [Self <: PlotBubbleOnPointConnectorOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotBubbleOnPointConnectorOptions] (val x: Self) extends AnyVal {
     
     inline def setDashstyle(value: String): Self = StObject.set(x, "dashstyle", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object DescribeSSLPoliciesOutput {
     __obj.asInstanceOf[DescribeSSLPoliciesOutput]
   }
   
-  extension [Self <: DescribeSSLPoliciesOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeSSLPoliciesOutput] (val x: Self) extends AnyVal {
     
     inline def setNextMarker(value: Marker): Self = StObject.set(x, "NextMarker", value.asInstanceOf[js.Any])
     

@@ -38,7 +38,8 @@ object GitAsyncRefOperationParameters {
     __obj.asInstanceOf[GitAsyncRefOperationParameters]
   }
   
-  extension [Self <: GitAsyncRefOperationParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GitAsyncRefOperationParameters] (val x: Self) extends AnyVal {
     
     inline def setGeneratedRefName(value: String): Self = StObject.set(x, "generatedRefName", value.asInstanceOf[js.Any])
     

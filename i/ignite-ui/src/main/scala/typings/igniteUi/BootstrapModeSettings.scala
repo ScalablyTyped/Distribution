@@ -23,7 +23,8 @@ object BootstrapModeSettings {
     __obj.asInstanceOf[BootstrapModeSettings]
   }
   
-  extension [Self <: BootstrapModeSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BootstrapModeSettings] (val x: Self) extends AnyVal {
     
     inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     

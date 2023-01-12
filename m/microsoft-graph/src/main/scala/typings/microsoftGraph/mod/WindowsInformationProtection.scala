@@ -140,7 +140,8 @@ object WindowsInformationProtection {
     __obj.asInstanceOf[WindowsInformationProtection]
   }
   
-  extension [Self <: WindowsInformationProtection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WindowsInformationProtection] (val x: Self) extends AnyVal {
     
     inline def setAssignments(value: NullableOption[js.Array[TargetedManagedAppPolicyAssignment]]): Self = StObject.set(x, "assignments", value.asInstanceOf[js.Any])
     

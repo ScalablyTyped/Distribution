@@ -22,7 +22,8 @@ object ExtensionSchemaProperty {
     __obj.asInstanceOf[ExtensionSchemaProperty]
   }
   
-  extension [Self <: ExtensionSchemaProperty](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExtensionSchemaProperty] (val x: Self) extends AnyVal {
     
     inline def setName(value: NullableOption[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

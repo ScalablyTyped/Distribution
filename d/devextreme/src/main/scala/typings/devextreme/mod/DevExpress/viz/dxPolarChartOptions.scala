@@ -167,7 +167,8 @@ object dxPolarChartOptions {
     __obj.asInstanceOf[dxPolarChartOptions]
   }
   
-  extension [Self <: dxPolarChartOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxPolarChartOptions] (val x: Self) extends AnyVal {
     
     inline def setAdaptiveLayout(value: dxPolarChartAdaptiveLayout): Self = StObject.set(x, "adaptiveLayout", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object ConfigureAgentResponse {
     __obj.asInstanceOf[ConfigureAgentResponse]
   }
   
-  extension [Self <: ConfigureAgentResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConfigureAgentResponse] (val x: Self) extends AnyVal {
     
     inline def setConfiguration(value: AgentConfiguration): Self = StObject.set(x, "configuration", value.asInstanceOf[js.Any])
   }

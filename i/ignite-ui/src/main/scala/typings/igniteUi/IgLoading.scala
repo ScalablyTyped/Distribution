@@ -23,7 +23,8 @@ object IgLoading {
     __obj.asInstanceOf[IgLoading]
   }
   
-  extension [Self <: IgLoading](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgLoading] (val x: Self) extends AnyVal {
     
     inline def setCssClass(value: Any): Self = StObject.set(x, "cssClass", value.asInstanceOf[js.Any])
     

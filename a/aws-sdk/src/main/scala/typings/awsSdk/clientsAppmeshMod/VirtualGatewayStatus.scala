@@ -18,7 +18,8 @@ object VirtualGatewayStatus {
     __obj.asInstanceOf[VirtualGatewayStatus]
   }
   
-  extension [Self <: VirtualGatewayStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VirtualGatewayStatus] (val x: Self) extends AnyVal {
     
     inline def setStatus(value: VirtualGatewayStatusCode): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }

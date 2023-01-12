@@ -19,7 +19,8 @@ object GoogleAnalyticsAdminV1alphaDataStreamAndroidAppStreamData {
     __obj.asInstanceOf[GoogleAnalyticsAdminV1alphaDataStreamAndroidAppStreamData]
   }
   
-  extension [Self <: GoogleAnalyticsAdminV1alphaDataStreamAndroidAppStreamData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleAnalyticsAdminV1alphaDataStreamAndroidAppStreamData] (val x: Self) extends AnyVal {
     
     inline def setFirebaseAppId(value: String): Self = StObject.set(x, "firebaseAppId", value.asInstanceOf[js.Any])
     

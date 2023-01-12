@@ -21,7 +21,8 @@ object IPv4Range {
     __obj.asInstanceOf[IPv4Range]
   }
   
-  extension [Self <: IPv4Range](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPv4Range] (val x: Self) extends AnyVal {
     
     inline def setLowerAddress(value: String): Self = StObject.set(x, "lowerAddress", value.asInstanceOf[js.Any])
     

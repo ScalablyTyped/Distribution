@@ -28,7 +28,8 @@ object ExportProjectResult {
     __obj.asInstanceOf[ExportProjectResult]
   }
   
-  extension [Self <: ExportProjectResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExportProjectResult] (val x: Self) extends AnyVal {
     
     inline def setDownloadUrl(value: DownloadUrl): Self = StObject.set(x, "downloadUrl", value.asInstanceOf[js.Any])
     

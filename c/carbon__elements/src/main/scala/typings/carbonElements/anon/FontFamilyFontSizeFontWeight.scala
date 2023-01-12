@@ -27,7 +27,8 @@ object FontFamilyFontSizeFontWeight {
     __obj.asInstanceOf[FontFamilyFontSizeFontWeight]
   }
   
-  extension [Self <: FontFamilyFontSizeFontWeight](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FontFamilyFontSizeFontWeight] (val x: Self) extends AnyVal {
     
     inline def setFontFamily(
       value: /* 'IBM Plex Mono', 'Menlo', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', Courier, monospace */ String

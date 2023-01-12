@@ -20,7 +20,8 @@ object DeprecationIssueDetails {
     __obj.asInstanceOf[DeprecationIssueDetails]
   }
   
-  extension [Self <: DeprecationIssueDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeprecationIssueDetails] (val x: Self) extends AnyVal {
     
     inline def setAffectedFrame(value: AffectedFrame): Self = StObject.set(x, "affectedFrame", value.asInstanceOf[js.Any])
     

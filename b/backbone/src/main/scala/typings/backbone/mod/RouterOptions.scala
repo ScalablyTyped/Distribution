@@ -15,7 +15,8 @@ object RouterOptions {
     __obj.asInstanceOf[RouterOptions]
   }
   
-  extension [Self <: RouterOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RouterOptions] (val x: Self) extends AnyVal {
     
     inline def setRoutes(value: Result[RoutesHash]): Self = StObject.set(x, "routes", value.asInstanceOf[js.Any])
     

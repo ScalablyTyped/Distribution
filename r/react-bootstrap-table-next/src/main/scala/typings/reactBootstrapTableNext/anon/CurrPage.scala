@@ -17,7 +17,8 @@ object CurrPage {
     __obj.asInstanceOf[CurrPage]
   }
   
-  extension [Self <: CurrPage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CurrPage] (val x: Self) extends AnyVal {
     
     inline def setCurrPage(value: Double): Self = StObject.set(x, "currPage", value.asInstanceOf[js.Any])
     

@@ -39,7 +39,8 @@ object mod {
       __obj.asInstanceOf[MatchResult]
     }
     
-    extension [Self <: MatchResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MatchResult] (val x: Self) extends AnyVal {
       
       inline def setMiddleware(value: IMiddleware[Any, js.Object]): Self = StObject.set(x, "middleware", value.asInstanceOf[js.Any])
       
@@ -69,7 +70,8 @@ object mod {
       __obj.asInstanceOf[Subdomain]
     }
     
-    extension [Self <: Subdomain](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Subdomain] (val x: Self) extends AnyVal {
       
       inline def setMatch(value: js.Array[String] => MatchResult | Null): Self = StObject.set(x, "match", js.Any.fromFunction1(value))
       

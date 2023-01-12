@@ -28,7 +28,8 @@ object PartialSearchOptions {
     __obj.asInstanceOf[PartialSearchOptions]
   }
   
-  extension [Self <: PartialSearchOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialSearchOptions] (val x: Self) extends AnyVal {
     
     inline def setClassClearHidden(value: String): Self = StObject.set(x, "classClearHidden", value.asInstanceOf[js.Any])
     

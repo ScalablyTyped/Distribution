@@ -17,7 +17,8 @@ object IgnoreMarkers {
     __obj.asInstanceOf[IgnoreMarkers]
   }
   
-  extension [Self <: IgnoreMarkers](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgnoreMarkers] (val x: Self) extends AnyVal {
     
     inline def setIgnoreMarkers(value: Boolean): Self = StObject.set(x, "ignoreMarkers", value.asInstanceOf[js.Any])
     

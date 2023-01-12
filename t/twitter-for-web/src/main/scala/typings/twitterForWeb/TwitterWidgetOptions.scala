@@ -41,7 +41,8 @@ object TwitterWidgetOptions {
     __obj.asInstanceOf[TwitterWidgetOptions]
   }
   
-  extension [Self <: TwitterWidgetOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TwitterWidgetOptions] (val x: Self) extends AnyVal {
     
     inline def setDnt(value: Boolean): Self = StObject.set(x, "dnt", value.asInstanceOf[js.Any])
     

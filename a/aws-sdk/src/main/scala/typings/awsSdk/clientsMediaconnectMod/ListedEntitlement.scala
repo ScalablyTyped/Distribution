@@ -28,7 +28,8 @@ object ListedEntitlement {
     __obj.asInstanceOf[ListedEntitlement]
   }
   
-  extension [Self <: ListedEntitlement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListedEntitlement] (val x: Self) extends AnyVal {
     
     inline def setDataTransferSubscriberFeePercent(value: integer): Self = StObject.set(x, "DataTransferSubscriberFeePercent", value.asInstanceOf[js.Any])
     

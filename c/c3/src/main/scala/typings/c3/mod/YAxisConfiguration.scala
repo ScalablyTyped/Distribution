@@ -47,7 +47,8 @@ object YAxisConfiguration {
     __obj.asInstanceOf[YAxisConfiguration]
   }
   
-  extension [Self <: YAxisConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: YAxisConfiguration] (val x: Self) extends AnyVal {
     
     inline def setCenter(value: Double): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
     

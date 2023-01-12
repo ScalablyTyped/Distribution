@@ -18,7 +18,8 @@ object ResetDistributionCacheRequest {
     __obj.asInstanceOf[ResetDistributionCacheRequest]
   }
   
-  extension [Self <: ResetDistributionCacheRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResetDistributionCacheRequest] (val x: Self) extends AnyVal {
     
     inline def setDistributionName(value: ResourceName): Self = StObject.set(x, "distributionName", value.asInstanceOf[js.Any])
     

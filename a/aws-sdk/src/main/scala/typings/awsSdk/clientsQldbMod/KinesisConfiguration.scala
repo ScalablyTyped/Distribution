@@ -23,7 +23,8 @@ object KinesisConfiguration {
     __obj.asInstanceOf[KinesisConfiguration]
   }
   
-  extension [Self <: KinesisConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KinesisConfiguration] (val x: Self) extends AnyVal {
     
     inline def setAggregationEnabled(value: Boolean): Self = StObject.set(x, "AggregationEnabled", value.asInstanceOf[js.Any])
     

@@ -465,7 +465,8 @@ object Intermediary {
     __obj.asInstanceOf[Intermediary]
   }
   
-  extension [Self <: Intermediary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Intermediary] (val x: Self) extends AnyVal {
     
     inline def setAccessCode(value: String): Self = StObject.set(x, "accessCode", value.asInstanceOf[js.Any])
     

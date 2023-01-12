@@ -27,7 +27,8 @@ object distSrcGeneralDistComponentsWixFormsFilledMod extends Shortcut {
       __obj.asInstanceOf[WixFormsFilledProps]
     }
     
-    extension [Self <: WixFormsFilledProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WixFormsFilledProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

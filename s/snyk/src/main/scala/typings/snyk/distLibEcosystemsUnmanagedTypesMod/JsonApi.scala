@@ -15,7 +15,8 @@ object JsonApi {
     __obj.asInstanceOf[JsonApi]
   }
   
-  extension [Self <: JsonApi](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JsonApi] (val x: Self) extends AnyVal {
     
     inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }

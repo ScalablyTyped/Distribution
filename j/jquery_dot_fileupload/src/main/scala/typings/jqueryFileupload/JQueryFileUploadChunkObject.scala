@@ -33,7 +33,8 @@ object JQueryFileUploadChunkObject {
     __obj.asInstanceOf[JQueryFileUploadChunkObject]
   }
   
-  extension [Self <: JQueryFileUploadChunkObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JQueryFileUploadChunkObject] (val x: Self) extends AnyVal {
     
     inline def setBlob(value: Any): Self = StObject.set(x, "blob", value.asInstanceOf[js.Any])
     

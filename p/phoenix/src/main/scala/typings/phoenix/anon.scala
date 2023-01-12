@@ -21,7 +21,8 @@ object anon {
       __obj.asInstanceOf[Diff]
     }
     
-    extension [Self <: Diff](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Diff] (val x: Self) extends AnyVal {
       
       inline def setDiff(value: String): Self = StObject.set(x, "diff", value.asInstanceOf[js.Any])
       
@@ -42,7 +43,8 @@ object anon {
       __obj.asInstanceOf[Joins]
     }
     
-    extension [Self <: Joins](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Joins] (val x: Self) extends AnyVal {
       
       inline def setJoins(value: js.Object): Self = StObject.set(x, "joins", value.asInstanceOf[js.Any])
       
@@ -88,7 +90,8 @@ object anon {
       __obj.asInstanceOf[PartialSocketConnectOptio]
     }
     
-    extension [Self <: PartialSocketConnectOptio](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialSocketConnectOptio] (val x: Self) extends AnyVal {
       
       inline def setBinaryType(value: BinaryType): Self = StObject.set(x, "binaryType", value.asInstanceOf[js.Any])
       

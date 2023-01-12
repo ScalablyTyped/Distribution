@@ -18,7 +18,8 @@ object JsonLogicMap {
     __obj.asInstanceOf[JsonLogicMap[AddOps]]
   }
   
-  extension [Self <: JsonLogicMap[?], AddOps /* <: AdditionalOperation */](x: Self & JsonLogicMap[AddOps]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JsonLogicMap[?], AddOps /* <: AdditionalOperation */] (val x: Self & JsonLogicMap[AddOps]) extends AnyVal {
     
     inline def setMap(value: js.Tuple2[RulesLogic[AddOps], RulesLogic[AddOps]]): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
   }

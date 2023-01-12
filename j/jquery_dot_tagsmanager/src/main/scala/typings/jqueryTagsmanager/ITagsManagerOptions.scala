@@ -61,7 +61,8 @@ object ITagsManagerOptions {
     __obj.asInstanceOf[ITagsManagerOptions]
   }
   
-  extension [Self <: ITagsManagerOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ITagsManagerOptions] (val x: Self) extends AnyVal {
     
     inline def setAjaxPush(value: String): Self = StObject.set(x, "AjaxPush", value.asInstanceOf[js.Any])
     

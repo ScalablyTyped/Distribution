@@ -44,7 +44,8 @@ object CreateMultiplexRequest {
     __obj.asInstanceOf[CreateMultiplexRequest]
   }
   
-  extension [Self <: CreateMultiplexRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateMultiplexRequest] (val x: Self) extends AnyVal {
     
     inline def setAvailabilityZones(value: listOfString): Self = StObject.set(x, "AvailabilityZones", value.asInstanceOf[js.Any])
     

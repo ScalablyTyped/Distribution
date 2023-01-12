@@ -48,7 +48,8 @@ object mod {
       __obj.asInstanceOf[TestData]
     }
     
-    extension [Self <: TestData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TestData] (val x: Self) extends AnyVal {
       
       inline def setBuild(value: String): Self = StObject.set(x, "build", value.asInstanceOf[js.Any])
       
@@ -93,7 +94,8 @@ object mod {
       __obj.asInstanceOf[TestLabData]
     }
     
-    extension [Self <: TestLabData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TestLabData] (val x: Self) extends AnyVal {
       
       inline def `setTest[cron]`(value: String): Self = StObject.set(x, "test[cron]", value.asInstanceOf[js.Any])
       
@@ -214,7 +216,8 @@ object mod {
       __obj.asInstanceOf[TestingBotOptions]
     }
     
-    extension [Self <: TestingBotOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TestingBotOptions] (val x: Self) extends AnyVal {
       
       inline def setApi_key(value: String): Self = StObject.set(x, "api_key", value.asInstanceOf[js.Any])
       
@@ -241,7 +244,8 @@ object mod {
       __obj.asInstanceOf[UserInfo]
     }
     
-    extension [Self <: UserInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UserInfo] (val x: Self) extends AnyVal {
       
       inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
       

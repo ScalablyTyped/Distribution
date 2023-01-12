@@ -27,7 +27,8 @@ object sourceAsYouTypeFormatterDotPatternMatcherMod {
       __obj.asInstanceOf[MatchOptions]
     }
     
-    extension [Self <: MatchOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MatchOptions] (val x: Self) extends AnyVal {
       
       inline def setAllowOverflow(value: Boolean): Self = StObject.set(x, "allowOverflow", value.asInstanceOf[js.Any])
       
@@ -65,7 +66,8 @@ object sourceAsYouTypeFormatterDotPatternMatcherMod {
       __obj.asInstanceOf[MatchResultFullMatch]
     }
     
-    extension [Self <: MatchResultFullMatch](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MatchResultFullMatch] (val x: Self) extends AnyVal {
       
       inline def setMatch(value: `true`): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
       
@@ -105,7 +107,8 @@ object sourceAsYouTypeFormatterDotPatternMatcherMod {
       __obj.asInstanceOf[MatchResultOverflow]
     }
     
-    extension [Self <: MatchResultOverflow](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MatchResultOverflow] (val x: Self) extends AnyVal {
       
       inline def setOverflow(value: `true`): Self = StObject.set(x, "overflow", value.asInstanceOf[js.Any])
     }
@@ -133,7 +136,8 @@ object sourceAsYouTypeFormatterDotPatternMatcherMod {
       __obj.asInstanceOf[MatchResultPartialMatch]
     }
     
-    extension [Self <: MatchResultPartialMatch](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MatchResultPartialMatch] (val x: Self) extends AnyVal {
       
       inline def setPartialMatch(value: `true`): Self = StObject.set(x, "partialMatch", value.asInstanceOf[js.Any])
     }

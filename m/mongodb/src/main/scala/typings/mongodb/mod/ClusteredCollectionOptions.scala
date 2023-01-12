@@ -22,7 +22,8 @@ object ClusteredCollectionOptions {
     __obj.asInstanceOf[ClusteredCollectionOptions]
   }
   
-  extension [Self <: ClusteredCollectionOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClusteredCollectionOptions] (val x: Self) extends AnyVal {
     
     inline def setKey(value: Document): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     

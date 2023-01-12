@@ -35,7 +35,8 @@ object PartialPolarLayoutBgcolor {
     __obj.asInstanceOf[PartialPolarLayoutBgcolor]
   }
   
-  extension [Self <: PartialPolarLayoutBgcolor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialPolarLayoutBgcolor] (val x: Self) extends AnyVal {
     
     inline def setAngularaxis(value: Partial[LayoutAxis]): Self = StObject.set(x, "angularaxis", value.asInstanceOf[js.Any])
     

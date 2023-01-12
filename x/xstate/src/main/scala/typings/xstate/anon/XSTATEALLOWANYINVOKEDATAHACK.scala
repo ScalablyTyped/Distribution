@@ -15,7 +15,8 @@ object XSTATEALLOWANYINVOKEDATAHACK {
     __obj.asInstanceOf[XSTATEALLOWANYINVOKEDATAHACK]
   }
   
-  extension [Self <: XSTATEALLOWANYINVOKEDATAHACK](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XSTATEALLOWANYINVOKEDATAHACK] (val x: Self) extends AnyVal {
     
     inline def set__XSTATE_ALLOW_ANY_INVOKE_DATA_HACK__(value: DataAny): Self = StObject.set(x, "__XSTATE_ALLOW_ANY_INVOKE_DATA_HACK__", value.asInstanceOf[js.Any])
   }

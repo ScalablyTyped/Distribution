@@ -23,7 +23,8 @@ object TransactionToFinish {
     __obj.asInstanceOf[TransactionToFinish]
   }
   
-  extension [Self <: TransactionToFinish](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransactionToFinish] (val x: Self) extends AnyVal {
     
     inline def setComment(value: String): Self = StObject.set(x, "Comment", value.asInstanceOf[js.Any])
     

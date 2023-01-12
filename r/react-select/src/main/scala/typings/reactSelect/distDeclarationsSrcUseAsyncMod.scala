@@ -65,7 +65,8 @@ object distDeclarationsSrcUseAsyncMod {
       __obj.asInstanceOf[AsyncAdditionalProps[Option, Group]]
     }
     
-    extension [Self <: AsyncAdditionalProps[?, ?], Option, Group /* <: GroupBase[Option] */](x: Self & (AsyncAdditionalProps[Option, Group])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AsyncAdditionalProps[?, ?], Option, Group /* <: GroupBase[Option] */] (val x: Self & (AsyncAdditionalProps[Option, Group])) extends AnyVal {
       
       inline def setCacheOptions(value: Any): Self = StObject.set(x, "cacheOptions", value.asInstanceOf[js.Any])
       

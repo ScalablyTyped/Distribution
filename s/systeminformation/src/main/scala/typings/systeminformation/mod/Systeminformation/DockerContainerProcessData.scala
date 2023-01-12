@@ -56,7 +56,8 @@ object DockerContainerProcessData {
     __obj.asInstanceOf[DockerContainerProcessData]
   }
   
-  extension [Self <: DockerContainerProcessData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DockerContainerProcessData] (val x: Self) extends AnyVal {
     
     inline def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
     

@@ -25,7 +25,8 @@ object ErrorProto {
     __obj.asInstanceOf[ErrorProto]
   }
   
-  extension [Self <: ErrorProto](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ErrorProto] (val x: Self) extends AnyVal {
     
     inline def setDebugInfo(value: String): Self = StObject.set(x, "debugInfo", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object Readonlynamestorenotifyco {
     __obj.asInstanceOf[Readonlynamestorenotifyco]
   }
   
-  extension [Self <: Readonlynamestorenotifyco](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Readonlynamestorenotifyco] (val x: Self) extends AnyVal {
     
     inline def setInvalidatedRecordIDs(value: DataIDSet): Self = StObject.set(x, "invalidatedRecordIDs", value.asInstanceOf[js.Any])
     

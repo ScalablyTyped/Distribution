@@ -415,7 +415,8 @@ object mod {
         __obj.asInstanceOf[typings.colors.mod.global.String]
       }
       
-      extension [Self <: typings.colors.mod.global.String](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.colors.mod.global.String] (val x: Self) extends AnyVal {
         
         inline def setAmerica(value: java.lang.String): Self = StObject.set(x, "america", value.asInstanceOf[js.Any])
         

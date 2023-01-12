@@ -266,7 +266,8 @@ object SVGElementTagNameMap {
     __obj.asInstanceOf[SVGElementTagNameMap]
   }
   
-  extension [Self <: SVGElementTagNameMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SVGElementTagNameMap] (val x: Self) extends AnyVal {
     
     inline def setA(value: SVGAElement): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
     

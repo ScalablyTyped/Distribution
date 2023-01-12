@@ -28,7 +28,8 @@ object GdataBlobstore2Info {
     __obj.asInstanceOf[GdataBlobstore2Info]
   }
   
-  extension [Self <: GdataBlobstore2Info](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GdataBlobstore2Info] (val x: Self) extends AnyVal {
     
     inline def setBlobGeneration(value: String): Self = StObject.set(x, "blobGeneration", value.asInstanceOf[js.Any])
     

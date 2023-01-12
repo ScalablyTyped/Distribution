@@ -62,7 +62,8 @@ object mod {
         __obj.asInstanceOf[TransitionProps]
       }
       
-      extension [Self <: TransitionProps](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: TransitionProps] (val x: Self) extends AnyVal {
         
         inline def setAppear(value: Style): Self = StObject.set(x, "appear", value.asInstanceOf[js.Any])
         

@@ -32,7 +32,8 @@ object SyncPoint {
     __obj.asInstanceOf[SyncPoint]
   }
   
-  extension [Self <: SyncPoint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SyncPoint] (val x: Self) extends AnyVal {
     
     inline def setViews(value: Map[String, View]): Self = StObject.set(x, "views", value.asInstanceOf[js.Any])
   }

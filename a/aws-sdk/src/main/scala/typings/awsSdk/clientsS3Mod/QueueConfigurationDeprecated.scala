@@ -27,7 +27,8 @@ object QueueConfigurationDeprecated {
     __obj.asInstanceOf[QueueConfigurationDeprecated]
   }
   
-  extension [Self <: QueueConfigurationDeprecated](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueueConfigurationDeprecated] (val x: Self) extends AnyVal {
     
     inline def setEvent(value: Event): Self = StObject.set(x, "Event", value.asInstanceOf[js.Any])
     

@@ -44,7 +44,8 @@ object WhenOptions {
     __obj.asInstanceOf[WhenOptions]
   }
   
-  extension [Self <: WhenOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WhenOptions] (val x: Self) extends AnyVal {
     
     inline def setBreak(value: Boolean): Self = StObject.set(x, "break", value.asInstanceOf[js.Any])
     

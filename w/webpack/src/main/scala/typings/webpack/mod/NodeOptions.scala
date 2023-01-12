@@ -37,7 +37,8 @@ object NodeOptions {
     __obj.asInstanceOf[NodeOptions]
   }
   
-  extension [Self <: NodeOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodeOptions] (val x: Self) extends AnyVal {
     
     inline def setGlobal(value: Boolean | warn): Self = StObject.set(x, "global", value.asInstanceOf[js.Any])
     

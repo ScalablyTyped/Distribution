@@ -19,7 +19,8 @@ object ExtrapolationConfig {
     __obj.asInstanceOf[ExtrapolationConfig]
   }
   
-  extension [Self <: ExtrapolationConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExtrapolationConfig] (val x: Self) extends AnyVal {
     
     inline def setExtrapolateLeft(value: Extrapolation | String): Self = StObject.set(x, "extrapolateLeft", value.asInstanceOf[js.Any])
     

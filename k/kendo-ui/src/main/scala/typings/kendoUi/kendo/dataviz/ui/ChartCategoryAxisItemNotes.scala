@@ -25,7 +25,8 @@ object ChartCategoryAxisItemNotes {
     __obj.asInstanceOf[ChartCategoryAxisItemNotes]
   }
   
-  extension [Self <: ChartCategoryAxisItemNotes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChartCategoryAxisItemNotes] (val x: Self) extends AnyVal {
     
     inline def setData(value: js.Array[ChartCategoryAxisItemNotesDataItem]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

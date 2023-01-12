@@ -21,7 +21,8 @@ object HTCPropertyBehavior {
     __obj.asInstanceOf[HTCPropertyBehavior]
   }
   
-  extension [Self <: HTCPropertyBehavior](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HTCPropertyBehavior] (val x: Self) extends AnyVal {
     
     inline def setFireChange(value: () => Unit): Self = StObject.set(x, "fireChange", js.Any.fromFunction0(value))
     

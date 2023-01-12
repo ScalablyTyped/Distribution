@@ -17,7 +17,8 @@ object Responses200ContentApplicationjsonReposcount {
     __obj.asInstanceOf[Responses200ContentApplicationjsonReposcount]
   }
   
-  extension [Self <: Responses200ContentApplicationjsonReposcount](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Responses200ContentApplicationjsonReposcount] (val x: Self) extends AnyVal {
     
     inline def setParameters(value: PathTeamslugString): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     

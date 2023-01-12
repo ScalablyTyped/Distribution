@@ -185,7 +185,8 @@ object mod {
       __obj.asInstanceOf[CellsByColumn]
     }
     
-    extension [Self <: CellsByColumn](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CellsByColumn] (val x: Self) extends AnyVal {
       
       inline def setColumnWidth(value: Double | String): Self = StObject.set(x, "columnWidth", value.asInstanceOf[js.Any])
       
@@ -210,7 +211,8 @@ object mod {
       __obj.asInstanceOf[CellsByRow]
     }
     
-    extension [Self <: CellsByRow](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CellsByRow] (val x: Self) extends AnyVal {
       
       inline def setColumnWidth(value: Double | String): Self = StObject.set(x, "columnWidth", value.asInstanceOf[js.Any])
       
@@ -235,7 +237,8 @@ object mod {
       __obj.asInstanceOf[FitRows]
     }
     
-    extension [Self <: FitRows](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FitRows] (val x: Self) extends AnyVal {
       
       inline def setGutter(value: Double | String): Self = StObject.set(x, "gutter", value.asInstanceOf[js.Any])
       
@@ -254,7 +257,8 @@ object mod {
       __obj.asInstanceOf[Horizontal]
     }
     
-    extension [Self <: Horizontal](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Horizontal] (val x: Self) extends AnyVal {
       
       inline def setVerticalAligment(value: Double): Self = StObject.set(x, "verticalAligment", value.asInstanceOf[js.Any])
       
@@ -395,7 +399,8 @@ object mod {
       __obj.asInstanceOf[Isotope]
     }
     
-    extension [Self <: Isotope](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Isotope] (val x: Self) extends AnyVal {
       
       inline def setAddItems(value: Elements => Unit): Self = StObject.set(x, "addItems", js.Any.fromFunction1(value))
       
@@ -579,7 +584,8 @@ object mod {
       __obj.asInstanceOf[IsotopeOptions]
     }
     
-    extension [Self <: IsotopeOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IsotopeOptions] (val x: Self) extends AnyVal {
       
       inline def setCellsByColumn(value: CellsByColumn): Self = StObject.set(x, "cellsByColumn", value.asInstanceOf[js.Any])
       
@@ -735,7 +741,8 @@ object mod {
       __obj.asInstanceOf[Masonry]
     }
     
-    extension [Self <: Masonry](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Masonry] (val x: Self) extends AnyVal {
       
       inline def setColumnWidth(value: Double | String): Self = StObject.set(x, "columnWidth", value.asInstanceOf[js.Any])
       
@@ -764,7 +771,8 @@ object mod {
       __obj.asInstanceOf[MasonryHorizontal]
     }
     
-    extension [Self <: MasonryHorizontal](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MasonryHorizontal] (val x: Self) extends AnyVal {
       
       inline def setGutter(value: Double | String): Self = StObject.set(x, "gutter", value.asInstanceOf[js.Any])
       
@@ -793,7 +801,8 @@ object mod {
       __obj.asInstanceOf[Packery]
     }
     
-    extension [Self <: Packery](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Packery] (val x: Self) extends AnyVal {
       
       inline def setColumnWidth(value: Double | String): Self = StObject.set(x, "columnWidth", value.asInstanceOf[js.Any])
       
@@ -830,7 +839,8 @@ object mod {
       __obj.asInstanceOf[Vertical]
     }
     
-    extension [Self <: Vertical](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Vertical] (val x: Self) extends AnyVal {
       
       inline def setHorizontalAlignment(value: Double): Self = StObject.set(x, "horizontalAlignment", value.asInstanceOf[js.Any])
       

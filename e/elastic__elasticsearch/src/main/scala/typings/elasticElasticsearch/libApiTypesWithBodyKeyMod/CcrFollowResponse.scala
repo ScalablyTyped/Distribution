@@ -23,7 +23,8 @@ object CcrFollowResponse {
     __obj.asInstanceOf[CcrFollowResponse]
   }
   
-  extension [Self <: CcrFollowResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CcrFollowResponse] (val x: Self) extends AnyVal {
     
     inline def setFollow_index_created(value: Boolean): Self = StObject.set(x, "follow_index_created", value.asInstanceOf[js.Any])
     

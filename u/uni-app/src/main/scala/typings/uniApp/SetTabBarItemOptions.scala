@@ -48,7 +48,8 @@ object SetTabBarItemOptions {
     __obj.asInstanceOf[SetTabBarItemOptions]
   }
   
-  extension [Self <: SetTabBarItemOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetTabBarItemOptions] (val x: Self) extends AnyVal {
     
     inline def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
     

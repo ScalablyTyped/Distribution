@@ -17,7 +17,8 @@ object IAccessControlLists {
     __obj.asInstanceOf[IAccessControlLists]
   }
   
-  extension [Self <: IAccessControlLists](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IAccessControlLists] (val x: Self) extends AnyVal {
     
     inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object TypeofPivotTreeMap {
     __obj.asInstanceOf[TypeofPivotTreeMap]
   }
   
-  extension [Self <: TypeofPivotTreeMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofPivotTreeMap] (val x: Self) extends AnyVal {
     
     inline def setFn(value: PivotTreeMap): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
     

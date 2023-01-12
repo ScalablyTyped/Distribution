@@ -61,7 +61,8 @@ object JQueryStatic {
     __obj.asInstanceOf[JQueryStatic]
   }
   
-  extension [Self <: JQueryStatic](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JQueryStatic] (val x: Self) extends AnyVal {
     
     inline def setRender(value: StringDictionary[TemplateRender]): Self = StObject.set(x, "render", value.asInstanceOf[js.Any])
     

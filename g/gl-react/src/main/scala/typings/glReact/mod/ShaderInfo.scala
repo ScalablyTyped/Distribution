@@ -17,7 +17,8 @@ object ShaderInfo {
     __obj.asInstanceOf[ShaderInfo]
   }
   
-  extension [Self <: ShaderInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShaderInfo] (val x: Self) extends AnyVal {
     
     inline def setFrag(value: String): Self = StObject.set(x, "frag", value.asInstanceOf[js.Any])
     

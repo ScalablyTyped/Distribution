@@ -21,7 +21,8 @@ object OverrideValue {
     __obj.asInstanceOf[OverrideValue]
   }
   
-  extension [Self <: OverrideValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OverrideValue] (val x: Self) extends AnyVal {
     
     inline def setPath(value: js.Array[String | Double]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     

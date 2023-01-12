@@ -48,7 +48,8 @@ object PointerArgPropstypemovedx {
     __obj.asInstanceOf[PointerArgPropstypemovedx]
   }
   
-  extension [Self <: PointerArgPropstypemovedx](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PointerArgPropstypemovedx] (val x: Self) extends AnyVal {
     
     inline def setDuplicate(value: Boolean): Self = StObject.set(x, "duplicate", value.asInstanceOf[js.Any])
     

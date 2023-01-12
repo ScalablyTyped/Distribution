@@ -672,7 +672,8 @@ object mod {
       __obj.asInstanceOf[Orderable]
     }
     
-    extension [Self <: Orderable](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Orderable] (val x: Self) extends AnyVal {
       
       inline def setAfter(value: String => Orderable): Self = StObject.set(x, "after", js.Any.fromFunction1(value))
       
@@ -696,7 +697,8 @@ object mod {
       __obj.asInstanceOf[RuntimeChunk]
     }
     
-    extension [Self <: RuntimeChunk](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RuntimeChunk] (val x: Self) extends AnyVal {
       
       inline def setName(value: String | RuntimeChunkFunction): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -721,7 +723,8 @@ object mod {
         __obj.asInstanceOf[typings.webpackChain.mod._Config.Chained[Parent]]
       }
       
-      extension [Self <: typings.webpackChain.mod._Config.Chained[?], Parent](x: Self & typings.webpackChain.mod._Config.Chained[Parent]) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.webpackChain.mod._Config.Chained[?], Parent] (val x: Self & typings.webpackChain.mod._Config.Chained[Parent]) extends AnyVal {
         
         inline def setEnd(value: () => Parent): Self = StObject.set(x, "end", js.Any.fromFunction0(value))
       }

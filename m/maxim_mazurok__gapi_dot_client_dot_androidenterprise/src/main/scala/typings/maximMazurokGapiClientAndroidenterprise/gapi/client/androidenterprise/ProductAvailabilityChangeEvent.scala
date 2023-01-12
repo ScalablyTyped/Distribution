@@ -19,7 +19,8 @@ object ProductAvailabilityChangeEvent {
     __obj.asInstanceOf[ProductAvailabilityChangeEvent]
   }
   
-  extension [Self <: ProductAvailabilityChangeEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProductAvailabilityChangeEvent] (val x: Self) extends AnyVal {
     
     inline def setAvailabilityStatus(value: String): Self = StObject.set(x, "availabilityStatus", value.asInstanceOf[js.Any])
     

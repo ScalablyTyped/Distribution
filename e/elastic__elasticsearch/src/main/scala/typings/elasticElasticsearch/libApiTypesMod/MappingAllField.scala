@@ -44,7 +44,8 @@ object MappingAllField {
     __obj.asInstanceOf[MappingAllField]
   }
   
-  extension [Self <: MappingAllField](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MappingAllField] (val x: Self) extends AnyVal {
     
     inline def setAnalyzer(value: String): Self = StObject.set(x, "analyzer", value.asInstanceOf[js.Any])
     

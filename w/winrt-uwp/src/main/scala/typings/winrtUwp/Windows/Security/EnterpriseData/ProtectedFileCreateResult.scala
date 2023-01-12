@@ -25,7 +25,8 @@ object ProtectedFileCreateResult {
     __obj.asInstanceOf[ProtectedFileCreateResult]
   }
   
-  extension [Self <: ProtectedFileCreateResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProtectedFileCreateResult] (val x: Self) extends AnyVal {
     
     inline def setFile(value: StorageFile): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
     

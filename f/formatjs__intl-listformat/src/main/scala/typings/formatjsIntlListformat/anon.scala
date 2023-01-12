@@ -20,7 +20,8 @@ object anon {
       __obj.asInstanceOf[PickIntlListFormatOptions]
     }
     
-    extension [Self <: PickIntlListFormatOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PickIntlListFormatOptions] (val x: Self) extends AnyVal {
       
       inline def setLocaleMatcher(value: (`best fit`) | lookup): Self = StObject.set(x, "localeMatcher", value.asInstanceOf[js.Any])
       

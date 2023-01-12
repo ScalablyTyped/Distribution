@@ -44,7 +44,8 @@ object OnCommittedDetails {
     __obj.asInstanceOf[OnCommittedDetails]
   }
   
-  extension [Self <: OnCommittedDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnCommittedDetails] (val x: Self) extends AnyVal {
     
     inline def setFrameId(value: Double): Self = StObject.set(x, "frameId", value.asInstanceOf[js.Any])
     

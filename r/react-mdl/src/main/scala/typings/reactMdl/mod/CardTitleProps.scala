@@ -18,7 +18,8 @@ object CardTitleProps {
     __obj.asInstanceOf[CardTitleProps]
   }
   
-  extension [Self <: CardTitleProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CardTitleProps] (val x: Self) extends AnyVal {
     
     inline def setExpand(value: Boolean): Self = StObject.set(x, "expand", value.asInstanceOf[js.Any])
     

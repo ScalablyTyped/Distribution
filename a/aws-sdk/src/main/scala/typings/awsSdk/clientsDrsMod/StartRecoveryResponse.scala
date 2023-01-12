@@ -18,7 +18,8 @@ object StartRecoveryResponse {
     __obj.asInstanceOf[StartRecoveryResponse]
   }
   
-  extension [Self <: StartRecoveryResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartRecoveryResponse] (val x: Self) extends AnyVal {
     
     inline def setJob(value: Job): Self = StObject.set(x, "job", value.asInstanceOf[js.Any])
     

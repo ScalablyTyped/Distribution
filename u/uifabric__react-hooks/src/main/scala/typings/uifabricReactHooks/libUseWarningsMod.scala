@@ -70,7 +70,8 @@ object libUseWarningsMod {
       __obj.asInstanceOf[IWarningOptions[P]]
     }
     
-    extension [Self <: IWarningOptions[?], P](x: Self & IWarningOptions[P]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IWarningOptions[?], P] (val x: Self & IWarningOptions[P]) extends AnyVal {
       
       inline def setConditionallyRequired(value: js.Array[Condition]): Self = StObject.set(x, "conditionallyRequired", value.asInstanceOf[js.Any])
       

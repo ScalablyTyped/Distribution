@@ -108,7 +108,8 @@ object OptionsData {
     __obj.asInstanceOf[OptionsData]
   }
   
-  extension [Self <: OptionsData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OptionsData] (val x: Self) extends AnyVal {
     
     inline def setAjaxConfig(value: HttpMethod | AjaxConfig): Self = StObject.set(x, "ajaxConfig", value.asInstanceOf[js.Any])
     

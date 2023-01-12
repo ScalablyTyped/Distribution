@@ -30,7 +30,8 @@ object E {
     __obj.asInstanceOf[E[W, M]]
   }
   
-  extension [Self <: E[?, ?], W, M](x: Self & (E[W, M])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: E[?, ?], W, M] (val x: Self & (E[W, M])) extends AnyVal {
     
     inline def setAp(value: (WriterT[M, W, js.Function1[Any, Any]], WriterT[M, W, Any]) => WriterT[M, W, Any]): Self = StObject.set(x, "ap", js.Any.fromFunction2(value))
     

@@ -20,7 +20,8 @@ object MembershipChangeEvent {
     __obj.asInstanceOf[MembershipChangeEvent]
   }
   
-  extension [Self <: MembershipChangeEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MembershipChangeEvent] (val x: Self) extends AnyVal {
     
     inline def setLeaveReason(value: String): Self = StObject.set(x, "leaveReason", value.asInstanceOf[js.Any])
     

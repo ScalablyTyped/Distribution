@@ -58,7 +58,8 @@ object IndexDescription {
     __obj.asInstanceOf[IndexDescription]
   }
   
-  extension [Self <: IndexDescription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndexDescription] (val x: Self) extends AnyVal {
     
     inline def set2dsphereIndexVersion(value: scala.Double): Self = StObject.set(x, "2dsphereIndexVersion", value.asInstanceOf[js.Any])
     

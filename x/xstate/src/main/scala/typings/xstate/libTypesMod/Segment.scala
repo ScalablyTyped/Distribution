@@ -26,7 +26,8 @@ object Segment {
     __obj.asInstanceOf[Segment[TContext, TEvent]]
   }
   
-  extension [Self <: Segment[?, ?], TContext, TEvent /* <: EventObject */](x: Self & (Segment[TContext, TEvent])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Segment[?, ?], TContext, TEvent /* <: EventObject */] (val x: Self & (Segment[TContext, TEvent])) extends AnyVal {
     
     inline def setEvent(value: TEvent): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     

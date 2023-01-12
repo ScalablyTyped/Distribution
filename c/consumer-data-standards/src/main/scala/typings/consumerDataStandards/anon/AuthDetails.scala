@@ -71,7 +71,8 @@ object AuthDetails {
     __obj.asInstanceOf[AuthDetails]
   }
   
-  extension [Self <: AuthDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AuthDetails] (val x: Self) extends AnyVal {
     
     inline def setAuthDetails(value: js.Array[JwksEndpoint]): Self = StObject.set(x, "authDetails", value.asInstanceOf[js.Any])
     

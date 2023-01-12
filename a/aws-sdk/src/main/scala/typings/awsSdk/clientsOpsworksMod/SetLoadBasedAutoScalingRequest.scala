@@ -33,7 +33,8 @@ object SetLoadBasedAutoScalingRequest {
     __obj.asInstanceOf[SetLoadBasedAutoScalingRequest]
   }
   
-  extension [Self <: SetLoadBasedAutoScalingRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetLoadBasedAutoScalingRequest] (val x: Self) extends AnyVal {
     
     inline def setDownScaling(value: AutoScalingThresholds): Self = StObject.set(x, "DownScaling", value.asInstanceOf[js.Any])
     

@@ -43,7 +43,8 @@ object eskdfMod {
       __obj.asInstanceOf[OptsLength]
     }
     
-    extension [Self <: OptsLength](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OptsLength] (val x: Self) extends AnyVal {
       
       inline def setKeyLength(value: Double): Self = StObject.set(x, "keyLength", value.asInstanceOf[js.Any])
     }
@@ -62,7 +63,8 @@ object eskdfMod {
       __obj.asInstanceOf[OptsMod]
     }
     
-    extension [Self <: OptsMod](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OptsMod] (val x: Self) extends AnyVal {
       
       inline def setModulus(value: js.BigInt): Self = StObject.set(x, "modulus", value.asInstanceOf[js.Any])
     }

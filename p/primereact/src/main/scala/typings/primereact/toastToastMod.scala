@@ -152,7 +152,8 @@ object toastToastMod {
       __obj.asInstanceOf[ToastMessage]
     }
     
-    extension [Self <: ToastMessage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ToastMessage] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -621,7 +622,8 @@ object toastToastMod {
       __obj.asInstanceOf[ToastProps]
     }
     
-    extension [Self <: ToastProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ToastProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       

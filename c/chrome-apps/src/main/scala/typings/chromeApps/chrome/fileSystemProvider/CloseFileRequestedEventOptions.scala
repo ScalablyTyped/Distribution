@@ -20,7 +20,8 @@ object CloseFileRequestedEventOptions {
     __obj.asInstanceOf[CloseFileRequestedEventOptions]
   }
   
-  extension [Self <: CloseFileRequestedEventOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CloseFileRequestedEventOptions] (val x: Self) extends AnyVal {
     
     inline def setOpenRequestId(value: integer): Self = StObject.set(x, "openRequestId", value.asInstanceOf[js.Any])
   }

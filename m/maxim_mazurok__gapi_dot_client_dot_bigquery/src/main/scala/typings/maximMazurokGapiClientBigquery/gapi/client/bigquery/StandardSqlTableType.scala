@@ -16,7 +16,8 @@ object StandardSqlTableType {
     __obj.asInstanceOf[StandardSqlTableType]
   }
   
-  extension [Self <: StandardSqlTableType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StandardSqlTableType] (val x: Self) extends AnyVal {
     
     inline def setColumns(value: js.Array[StandardSqlField]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     

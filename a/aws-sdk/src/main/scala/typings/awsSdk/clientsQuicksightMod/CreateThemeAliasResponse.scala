@@ -28,7 +28,8 @@ object CreateThemeAliasResponse {
     __obj.asInstanceOf[CreateThemeAliasResponse]
   }
   
-  extension [Self <: CreateThemeAliasResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateThemeAliasResponse] (val x: Self) extends AnyVal {
     
     inline def setRequestId(value: String): Self = StObject.set(x, "RequestId", value.asInstanceOf[js.Any])
     

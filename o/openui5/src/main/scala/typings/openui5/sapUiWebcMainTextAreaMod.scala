@@ -1034,7 +1034,8 @@ object sapUiWebcMainTextAreaMod {
       __obj.asInstanceOf[TextAreaSettings]
     }
     
-    extension [Self <: TextAreaSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TextAreaSettings] (val x: Self) extends AnyVal {
       
       inline def setAccessibleName(value: String | PropertyBindingInfo): Self = StObject.set(x, "accessibleName", value.asInstanceOf[js.Any])
       

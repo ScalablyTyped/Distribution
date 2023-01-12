@@ -18,7 +18,8 @@ object PartialClassNameMapAccordRoot {
     __obj.asInstanceOf[PartialClassNameMapAccordRoot]
   }
   
-  extension [Self <: PartialClassNameMapAccordRoot](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialClassNameMapAccordRoot] (val x: Self) extends AnyVal {
     
     inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     

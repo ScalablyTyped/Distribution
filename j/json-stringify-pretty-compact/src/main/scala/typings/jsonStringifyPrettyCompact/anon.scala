@@ -23,7 +23,8 @@ object anon {
       __obj.asInstanceOf[Indent]
     }
     
-    extension [Self <: Indent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Indent] (val x: Self) extends AnyVal {
       
       inline def setIndent(value: Double | String): Self = StObject.set(x, "indent", value.asInstanceOf[js.Any])
       

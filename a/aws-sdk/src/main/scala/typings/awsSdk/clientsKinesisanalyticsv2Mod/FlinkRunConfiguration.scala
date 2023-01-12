@@ -18,7 +18,8 @@ object FlinkRunConfiguration {
     __obj.asInstanceOf[FlinkRunConfiguration]
   }
   
-  extension [Self <: FlinkRunConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FlinkRunConfiguration] (val x: Self) extends AnyVal {
     
     inline def setAllowNonRestoredState(value: BooleanObject): Self = StObject.set(x, "AllowNonRestoredState", value.asInstanceOf[js.Any])
     

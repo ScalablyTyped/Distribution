@@ -64,7 +64,8 @@ object libModelsEventsCreateEventMod {
       __obj.asInstanceOf[CreateEventContent]
     }
     
-    extension [Self <: CreateEventContent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateEventContent] (val x: Self) extends AnyVal {
       
       inline def setCreator(value: String): Self = StObject.set(x, "creator", value.asInstanceOf[js.Any])
       
@@ -105,7 +106,8 @@ object libModelsEventsCreateEventMod {
       __obj.asInstanceOf[PreviousRoomInfo]
     }
     
-    extension [Self <: PreviousRoomInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PreviousRoomInfo] (val x: Self) extends AnyVal {
       
       inline def setEvent_id(value: String): Self = StObject.set(x, "event_id", value.asInstanceOf[js.Any])
       

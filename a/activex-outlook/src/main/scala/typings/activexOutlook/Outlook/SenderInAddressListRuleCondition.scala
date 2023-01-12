@@ -40,7 +40,8 @@ object SenderInAddressListRuleCondition {
     __obj.asInstanceOf[SenderInAddressListRuleCondition]
   }
   
-  extension [Self <: SenderInAddressListRuleCondition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SenderInAddressListRuleCondition] (val x: Self) extends AnyVal {
     
     inline def setAddressList(value: AddressList): Self = StObject.set(x, "AddressList", value.asInstanceOf[js.Any])
     

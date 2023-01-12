@@ -152,7 +152,8 @@ object DynatreeOptions {
     __obj.asInstanceOf[DynatreeOptions]
   }
   
-  extension [Self <: DynatreeOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DynatreeOptions] (val x: Self) extends AnyVal {
     
     inline def setActiveVisible(value: Boolean): Self = StObject.set(x, "activeVisible", value.asInstanceOf[js.Any])
     

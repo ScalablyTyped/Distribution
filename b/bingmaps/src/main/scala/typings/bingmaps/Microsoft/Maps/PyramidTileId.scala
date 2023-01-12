@@ -31,7 +31,8 @@ object PyramidTileId {
     __obj.asInstanceOf[PyramidTileId]
   }
   
-  extension [Self <: PyramidTileId](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PyramidTileId] (val x: Self) extends AnyVal {
     
     inline def setPixelHeight(value: Double): Self = StObject.set(x, "pixelHeight", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object GoogleCloudDialogflowV2IntentMessageMediaContentResponseMediaObject {
     __obj.asInstanceOf[GoogleCloudDialogflowV2IntentMessageMediaContentResponseMediaObject]
   }
   
-  extension [Self <: GoogleCloudDialogflowV2IntentMessageMediaContentResponseMediaObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDialogflowV2IntentMessageMediaContentResponseMediaObject] (val x: Self) extends AnyVal {
     
     inline def setContentUrl(value: String): Self = StObject.set(x, "contentUrl", value.asInstanceOf[js.Any])
     

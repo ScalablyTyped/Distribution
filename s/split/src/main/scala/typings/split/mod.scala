@@ -38,7 +38,8 @@ object mod {
       __obj.asInstanceOf[SplitOptions]
     }
     
-    extension [Self <: SplitOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SplitOptions] (val x: Self) extends AnyVal {
       
       inline def setMaxLength(value: Double): Self = StObject.set(x, "maxLength", value.asInstanceOf[js.Any])
       

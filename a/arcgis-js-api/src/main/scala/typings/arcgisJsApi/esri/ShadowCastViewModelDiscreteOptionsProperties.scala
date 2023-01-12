@@ -38,7 +38,8 @@ object ShadowCastViewModelDiscreteOptionsProperties {
     __obj.asInstanceOf[ShadowCastViewModelDiscreteOptionsProperties]
   }
   
-  extension [Self <: ShadowCastViewModelDiscreteOptionsProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShadowCastViewModelDiscreteOptionsProperties] (val x: Self) extends AnyVal {
     
     inline def setColor(value: Color_): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

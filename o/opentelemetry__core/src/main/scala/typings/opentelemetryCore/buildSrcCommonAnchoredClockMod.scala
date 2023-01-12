@@ -46,7 +46,8 @@ object buildSrcCommonAnchoredClockMod {
       __obj.asInstanceOf[Clock]
     }
     
-    extension [Self <: Clock](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Clock] (val x: Self) extends AnyVal {
       
       inline def setNow(value: () => Double): Self = StObject.set(x, "now", js.Any.fromFunction0(value))
     }

@@ -17,7 +17,8 @@ object VirtualCardsWithrawRequest {
     __obj.asInstanceOf[VirtualCardsWithrawRequest]
   }
   
-  extension [Self <: VirtualCardsWithrawRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VirtualCardsWithrawRequest] (val x: Self) extends AnyVal {
     
     inline def setAmount(value: String): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
     

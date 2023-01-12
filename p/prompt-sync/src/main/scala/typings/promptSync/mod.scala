@@ -42,7 +42,8 @@ object mod {
       __obj.asInstanceOf[Config]
     }
     
-    extension [Self <: Config](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
       
       inline def setAutocomplete(value: /* input */ String => js.Array[String]): Self = StObject.set(x, "autocomplete", js.Any.fromFunction1(value))
       
@@ -99,7 +100,8 @@ object mod {
       __obj.asInstanceOf[History]
     }
     
-    extension [Self <: History](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: History] (val x: Self) extends AnyVal {
       
       inline def setAtEnd(value: () => Boolean): Self = StObject.set(x, "atEnd", js.Any.fromFunction0(value))
       
@@ -138,7 +140,8 @@ object mod {
       __obj.asInstanceOf[Option]
     }
     
-    extension [Self <: Option](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Option] (val x: Self) extends AnyVal {
       
       inline def setAsk(value: String): Self = StObject.set(x, "ask", value.asInstanceOf[js.Any])
       

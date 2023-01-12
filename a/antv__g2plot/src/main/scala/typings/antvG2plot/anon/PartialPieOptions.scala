@@ -112,7 +112,8 @@ object PartialPieOptions {
     __obj.asInstanceOf[PartialPieOptions]
   }
   
-  extension [Self <: PartialPieOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialPieOptions] (val x: Self) extends AnyVal {
     
     inline def setAngleField(value: String): Self = StObject.set(x, "angleField", value.asInstanceOf[js.Any])
     

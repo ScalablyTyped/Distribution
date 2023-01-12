@@ -20,7 +20,8 @@ object anon {
       __obj.asInstanceOf[AttributeNames]
     }
     
-    extension [Self <: AttributeNames](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AttributeNames] (val x: Self) extends AnyVal {
       
       inline def setAttributeNames(value: Any): Self = StObject.set(x, "attributeNames", value.asInstanceOf[js.Any])
       
@@ -41,7 +42,8 @@ object anon {
       __obj.asInstanceOf[CapacityUnits]
     }
     
-    extension [Self <: CapacityUnits](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CapacityUnits] (val x: Self) extends AnyVal {
       
       inline def setCapacityUnits(value: Double): Self = StObject.set(x, "CapacityUnits", value.asInstanceOf[js.Any])
       
@@ -62,7 +64,8 @@ object anon {
       __obj.asInstanceOf[Dynamodb]
     }
     
-    extension [Self <: Dynamodb](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Dynamodb] (val x: Self) extends AnyVal {
       
       inline def setDynamodb(value: DynamoDB): Self = StObject.set(x, "dynamodb", value.asInstanceOf[js.Any])
       
@@ -87,7 +90,8 @@ object anon {
       __obj.asInstanceOf[ReadCapacity]
     }
     
-    extension [Self <: ReadCapacity](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadCapacity] (val x: Self) extends AnyVal {
       
       inline def setReadCapacity(value: Double): Self = StObject.set(x, "readCapacity", value.asInstanceOf[js.Any])
       

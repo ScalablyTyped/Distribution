@@ -68,7 +68,8 @@ object ASPxClientLayoutItem {
     __obj.asInstanceOf[ASPxClientLayoutItem]
   }
   
-  extension [Self <: ASPxClientLayoutItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientLayoutItem] (val x: Self) extends AnyVal {
     
     inline def setFormLayout(value: ASPxClientFormLayout): Self = StObject.set(x, "formLayout", value.asInstanceOf[js.Any])
     

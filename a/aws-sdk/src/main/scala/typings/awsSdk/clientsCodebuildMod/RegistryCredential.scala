@@ -23,7 +23,8 @@ object RegistryCredential {
     __obj.asInstanceOf[RegistryCredential]
   }
   
-  extension [Self <: RegistryCredential](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RegistryCredential] (val x: Self) extends AnyVal {
     
     inline def setCredential(value: NonEmptyString): Self = StObject.set(x, "credential", value.asInstanceOf[js.Any])
     

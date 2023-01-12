@@ -30,7 +30,8 @@ object libIssueIssueMatchMod {
       __obj.asInstanceOf[IssueMatch]
     }
     
-    extension [Self <: IssueMatch](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IssueMatch] (val x: Self) extends AnyVal {
       
       inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       

@@ -55,7 +55,8 @@ object IField {
     __obj.asInstanceOf[IField]
   }
   
-  extension [Self <: IField](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IField] (val x: Self) extends AnyVal {
     
     inline def setConvert(value: Any): Self = StObject.set(x, "convert", value.asInstanceOf[js.Any])
     

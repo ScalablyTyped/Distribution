@@ -52,7 +52,8 @@ object mod {
       __obj.asInstanceOf[ModulesFromFileType]
     }
     
-    extension [Self <: ModulesFromFileType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ModulesFromFileType] (val x: Self) extends AnyVal {
       
       inline def setExclude(value: String | js.Array[String]): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
       
@@ -122,7 +123,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setAdditionalModuleDirs(value: js.Array[String]): Self = StObject.set(x, "additionalModuleDirs", value.asInstanceOf[js.Any])
       

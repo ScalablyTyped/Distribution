@@ -28,7 +28,8 @@ object GetSessionEmbedUrlResponse {
     __obj.asInstanceOf[GetSessionEmbedUrlResponse]
   }
   
-  extension [Self <: GetSessionEmbedUrlResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetSessionEmbedUrlResponse] (val x: Self) extends AnyVal {
     
     inline def setEmbedUrl(value: EmbeddingUrl): Self = StObject.set(x, "EmbedUrl", value.asInstanceOf[js.Any])
     

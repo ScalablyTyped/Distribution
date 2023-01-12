@@ -23,7 +23,8 @@ object BatchDisassociateResourceResponse {
     __obj.asInstanceOf[BatchDisassociateResourceResponse]
   }
   
-  extension [Self <: BatchDisassociateResourceResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchDisassociateResourceResponse] (val x: Self) extends AnyVal {
     
     inline def setFailedItems(value: FailedItemList): Self = StObject.set(x, "FailedItems", value.asInstanceOf[js.Any])
     

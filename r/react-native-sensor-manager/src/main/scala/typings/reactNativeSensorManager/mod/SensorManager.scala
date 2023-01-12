@@ -68,7 +68,8 @@ object SensorManager {
     __obj.asInstanceOf[SensorManager]
   }
   
-  extension [Self <: SensorManager](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SensorManager] (val x: Self) extends AnyVal {
     
     inline def setStartAccelerometer(value: Double => Unit): Self = StObject.set(x, "startAccelerometer", js.Any.fromFunction1(value))
     

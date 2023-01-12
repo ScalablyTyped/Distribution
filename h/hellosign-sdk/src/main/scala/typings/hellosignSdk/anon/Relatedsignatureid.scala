@@ -19,7 +19,8 @@ object Relatedsignatureid {
     __obj.asInstanceOf[Relatedsignatureid]
   }
   
-  extension [Self <: Relatedsignatureid](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Relatedsignatureid] (val x: Self) extends AnyVal {
     
     inline def setRelated_signature_id(value: String): Self = StObject.set(x, "related_signature_id", value.asInstanceOf[js.Any])
     

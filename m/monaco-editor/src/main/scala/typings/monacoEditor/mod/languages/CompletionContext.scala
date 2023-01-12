@@ -25,7 +25,8 @@ object CompletionContext {
     __obj.asInstanceOf[CompletionContext]
   }
   
-  extension [Self <: CompletionContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CompletionContext] (val x: Self) extends AnyVal {
     
     inline def setTriggerCharacter(value: String): Self = StObject.set(x, "triggerCharacter", value.asInstanceOf[js.Any])
     

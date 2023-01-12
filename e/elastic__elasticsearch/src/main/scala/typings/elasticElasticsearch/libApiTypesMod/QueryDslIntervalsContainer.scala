@@ -25,7 +25,8 @@ object QueryDslIntervalsContainer {
     __obj.asInstanceOf[QueryDslIntervalsContainer]
   }
   
-  extension [Self <: QueryDslIntervalsContainer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryDslIntervalsContainer] (val x: Self) extends AnyVal {
     
     inline def setAll_of(value: QueryDslIntervalsAllOf): Self = StObject.set(x, "all_of", value.asInstanceOf[js.Any])
     

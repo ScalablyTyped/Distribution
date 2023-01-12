@@ -17,7 +17,8 @@ object EditorImmutables {
     __obj.asInstanceOf[EditorImmutables]
   }
   
-  extension [Self <: EditorImmutables](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EditorImmutables] (val x: Self) extends AnyVal {
     
     inline def setDeserialization(value: js.Function): Self = StObject.set(x, "deserialization", value.asInstanceOf[js.Any])
     

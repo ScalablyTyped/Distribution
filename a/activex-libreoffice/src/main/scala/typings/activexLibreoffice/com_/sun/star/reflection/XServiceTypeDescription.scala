@@ -105,7 +105,8 @@ object XServiceTypeDescription {
     __obj.asInstanceOf[XServiceTypeDescription]
   }
   
-  extension [Self <: XServiceTypeDescription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XServiceTypeDescription] (val x: Self) extends AnyVal {
     
     inline def setGetMandatoryInterfaces(value: () => SafeArray[XInterfaceTypeDescription]): Self = StObject.set(x, "getMandatoryInterfaces", js.Any.fromFunction0(value))
     

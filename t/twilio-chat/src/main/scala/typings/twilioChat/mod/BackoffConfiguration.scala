@@ -19,7 +19,8 @@ object BackoffConfiguration {
     __obj.asInstanceOf[BackoffConfiguration]
   }
   
-  extension [Self <: BackoffConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BackoffConfiguration] (val x: Self) extends AnyVal {
     
     inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     

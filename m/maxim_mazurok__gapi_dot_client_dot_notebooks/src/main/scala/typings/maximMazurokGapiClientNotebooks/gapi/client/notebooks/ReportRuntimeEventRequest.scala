@@ -19,7 +19,8 @@ object ReportRuntimeEventRequest {
     __obj.asInstanceOf[ReportRuntimeEventRequest]
   }
   
-  extension [Self <: ReportRuntimeEventRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReportRuntimeEventRequest] (val x: Self) extends AnyVal {
     
     inline def setEvent(value: Event): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     

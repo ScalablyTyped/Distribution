@@ -37,7 +37,8 @@ object distTypesBulletMarkersMod {
       __obj.asInstanceOf[EventHandlers]
     }
     
-    extension [Self <: EventHandlers](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EventHandlers] (val x: Self) extends AnyVal {
       
       inline def setOnClick(
         value: (/* datum */ ComputedMarkersDatum, /* event */ typings.react.mod.MouseEvent[SVGLineElement, MouseEvent]) => Unit

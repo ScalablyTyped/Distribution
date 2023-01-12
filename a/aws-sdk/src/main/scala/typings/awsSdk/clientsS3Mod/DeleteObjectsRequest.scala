@@ -45,7 +45,8 @@ object DeleteObjectsRequest {
     __obj.asInstanceOf[DeleteObjectsRequest]
   }
   
-  extension [Self <: DeleteObjectsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteObjectsRequest] (val x: Self) extends AnyVal {
     
     inline def setBucket(value: BucketName): Self = StObject.set(x, "Bucket", value.asInstanceOf[js.Any])
     

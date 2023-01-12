@@ -20,7 +20,8 @@ object Pluggable {
     __obj.asInstanceOf[Pluggable[Input, Output]]
   }
   
-  extension [Self <: Pluggable[?, ?], Input /* <: js.Object */, Output /* <: js.Object */](x: Self & (Pluggable[Input, Output])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Pluggable[?, ?], Input /* <: js.Object */, Output /* <: js.Object */] (val x: Self & (Pluggable[Input, Output])) extends AnyVal {
     
     inline def setApplyToStack(value: MiddlewareStack[Input, Output] => Unit): Self = StObject.set(x, "applyToStack", js.Any.fromFunction1(value))
   }

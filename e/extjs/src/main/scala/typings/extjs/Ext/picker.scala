@@ -65,7 +65,8 @@ object picker {
       __obj.asInstanceOf[IColor]
     }
     
-    extension [Self <: IColor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IColor] (val x: Self) extends AnyVal {
       
       inline def setAllowReselect(value: Boolean): Self = StObject.set(x, "allowReselect", value.asInstanceOf[js.Any])
       
@@ -298,7 +299,8 @@ object picker {
       __obj.asInstanceOf[typings.extjs.Ext.picker.IDate]
     }
     
-    extension [Self <: typings.extjs.Ext.picker.IDate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.extjs.Ext.picker.IDate] (val x: Self) extends AnyVal {
       
       inline def setAriaTitle(value: java.lang.String): Self = StObject.set(x, "ariaTitle", value.asInstanceOf[js.Any])
       
@@ -525,7 +527,8 @@ object picker {
       __obj.asInstanceOf[IMonth]
     }
     
-    extension [Self <: IMonth](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IMonth] (val x: Self) extends AnyVal {
       
       inline def setAdjustYear(value: /* offset */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "adjustYear", js.Any.fromFunction1(value))
       
@@ -607,7 +610,8 @@ object picker {
       __obj.asInstanceOf[ITime]
     }
     
-    extension [Self <: ITime](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITime] (val x: Self) extends AnyVal {
       
       inline def setFocusNode(value: /* rec */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "focusNode", js.Any.fromFunction1(value))
       

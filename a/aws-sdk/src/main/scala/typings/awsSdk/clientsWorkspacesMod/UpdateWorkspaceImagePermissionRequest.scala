@@ -28,7 +28,8 @@ object UpdateWorkspaceImagePermissionRequest {
     __obj.asInstanceOf[UpdateWorkspaceImagePermissionRequest]
   }
   
-  extension [Self <: UpdateWorkspaceImagePermissionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateWorkspaceImagePermissionRequest] (val x: Self) extends AnyVal {
     
     inline def setAllowCopyImage(value: BooleanObject): Self = StObject.set(x, "AllowCopyImage", value.asInstanceOf[js.Any])
     

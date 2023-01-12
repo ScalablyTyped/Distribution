@@ -104,7 +104,8 @@ object CommonQueryMethodsType {
     __obj.asInstanceOf[CommonQueryMethodsType]
   }
   
-  extension [Self <: CommonQueryMethodsType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CommonQueryMethodsType] (val x: Self) extends AnyVal {
     
     inline def setAny(value: /* args */ QueryMethodParams[Any] => js.Promise[js.Array[Any]]): Self = StObject.set(x, "any", js.Any.fromFunction1(value))
     

@@ -21,7 +21,8 @@ object typingsModelsBillingMod {
         __obj.asInstanceOf[BillingData]
       }
       
-      extension [Self <: BillingData](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: BillingData] (val x: Self) extends AnyVal {
         
         inline def setAddress(value: Address | AddressData | String): Self = StObject.set(x, "Address", value.asInstanceOf[js.Any])
       }
@@ -42,7 +43,8 @@ object typingsModelsBillingMod {
         __obj.asInstanceOf[BillingOrShippingRecurringPayInData]
       }
       
-      extension [Self <: BillingOrShippingRecurringPayInData](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: BillingOrShippingRecurringPayInData] (val x: Self) extends AnyVal {
         
         inline def setAddress(value: AddressData): Self = StObject.set(x, "Address", value.asInstanceOf[js.Any])
         

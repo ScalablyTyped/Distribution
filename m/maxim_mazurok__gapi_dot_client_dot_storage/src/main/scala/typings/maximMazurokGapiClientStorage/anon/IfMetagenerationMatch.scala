@@ -49,7 +49,8 @@ object IfMetagenerationMatch {
     __obj.asInstanceOf[IfMetagenerationMatch]
   }
   
-  extension [Self <: IfMetagenerationMatch](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IfMetagenerationMatch] (val x: Self) extends AnyVal {
     
     inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
     

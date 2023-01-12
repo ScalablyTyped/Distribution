@@ -31,7 +31,8 @@ object SearchCompletionSuggester {
     __obj.asInstanceOf[SearchCompletionSuggester]
   }
   
-  extension [Self <: SearchCompletionSuggester](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchCompletionSuggester] (val x: Self) extends AnyVal {
     
     inline def setContexts(
       value: Record[

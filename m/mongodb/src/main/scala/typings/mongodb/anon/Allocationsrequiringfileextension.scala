@@ -54,7 +54,8 @@ object Allocationsrequiringfileextension {
     __obj.asInstanceOf[Allocationsrequiringfileextension]
   }
   
-  extension [Self <: Allocationsrequiringfileextension](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Allocationsrequiringfileextension] (val x: Self) extends AnyVal {
     
     inline def `setAllocations requiring file extension`(value: Double): Self = StObject.set(x, "allocations requiring file extension", value.asInstanceOf[js.Any])
     

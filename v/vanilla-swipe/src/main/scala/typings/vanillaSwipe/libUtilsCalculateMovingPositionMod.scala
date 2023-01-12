@@ -35,7 +35,8 @@ object libUtilsCalculateMovingPositionMod {
       __obj.asInstanceOf[E]
     }
     
-    extension [Self <: E](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: E] (val x: Self) extends AnyVal {
       
       inline def setChangedTouches(value: js.Array[ClientX]): Self = StObject.set(x, "changedTouches", value.asInstanceOf[js.Any])
       

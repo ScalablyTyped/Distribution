@@ -23,7 +23,8 @@ object TextWithLinkOptions {
     __obj.asInstanceOf[TextWithLinkOptions]
   }
   
-  extension [Self <: TextWithLinkOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextWithLinkOptions] (val x: Self) extends AnyVal {
     
     inline def setMagFactor(value: Fit | FitH | FitV | XYZ): Self = StObject.set(x, "magFactor", value.asInstanceOf[js.Any])
     

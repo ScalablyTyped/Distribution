@@ -55,7 +55,8 @@ object CartItemSnakeCase {
     __obj.asInstanceOf[CartItemSnakeCase]
   }
   
-  extension [Self <: CartItemSnakeCase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CartItemSnakeCase] (val x: Self) extends AnyVal {
     
     inline def setDiscount_each(value: Double): Self = StObject.set(x, "discount_each", value.asInstanceOf[js.Any])
     

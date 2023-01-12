@@ -31,7 +31,8 @@ object AppsDynamiteBabelMessageProps {
     __obj.asInstanceOf[AppsDynamiteBabelMessageProps]
   }
   
-  extension [Self <: AppsDynamiteBabelMessageProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppsDynamiteBabelMessageProps] (val x: Self) extends AnyVal {
     
     inline def setClientGeneratedId(value: String): Self = StObject.set(x, "clientGeneratedId", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object ListBoxMessages {
     __obj.asInstanceOf[ListBoxMessages]
   }
   
-  extension [Self <: ListBoxMessages](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListBoxMessages] (val x: Self) extends AnyVal {
     
     inline def setTools(value: ListBoxMessagesTools): Self = StObject.set(x, "tools", value.asInstanceOf[js.Any])
     

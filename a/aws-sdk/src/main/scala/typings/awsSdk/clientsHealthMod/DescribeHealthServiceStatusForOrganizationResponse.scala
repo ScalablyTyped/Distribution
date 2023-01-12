@@ -18,7 +18,8 @@ object DescribeHealthServiceStatusForOrganizationResponse {
     __obj.asInstanceOf[DescribeHealthServiceStatusForOrganizationResponse]
   }
   
-  extension [Self <: DescribeHealthServiceStatusForOrganizationResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeHealthServiceStatusForOrganizationResponse] (val x: Self) extends AnyVal {
     
     inline def setHealthServiceAccessStatusForOrganization(value: healthServiceAccessStatusForOrganization): Self = StObject.set(x, "healthServiceAccessStatusForOrganization", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object GeoMatchParams {
     __obj.asInstanceOf[GeoMatchParams]
   }
   
-  extension [Self <: GeoMatchParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GeoMatchParams] (val x: Self) extends AnyVal {
     
     inline def setAreaCode(value: AreaCode): Self = StObject.set(x, "AreaCode", value.asInstanceOf[js.Any])
     

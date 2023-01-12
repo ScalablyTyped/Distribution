@@ -25,7 +25,8 @@ object ShapeNode {
     __obj.asInstanceOf[ShapeNode]
   }
   
-  extension [Self <: ShapeNode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShapeNode] (val x: Self) extends AnyVal {
     
     inline def setAt(value: PositionNode): Self = StObject.set(x, "at", value.asInstanceOf[js.Any])
     

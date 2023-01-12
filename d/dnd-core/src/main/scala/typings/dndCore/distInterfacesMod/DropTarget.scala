@@ -23,7 +23,8 @@ object DropTarget {
     __obj.asInstanceOf[DropTarget]
   }
   
-  extension [Self <: DropTarget](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DropTarget] (val x: Self) extends AnyVal {
     
     inline def setCanDrop(value: (DragDropMonitor, Identifier) => Boolean): Self = StObject.set(x, "canDrop", js.Any.fromFunction2(value))
     

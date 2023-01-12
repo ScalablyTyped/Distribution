@@ -33,7 +33,8 @@ object IPConfigProperties {
     __obj.asInstanceOf[IPConfigProperties[M, B, S, SL, L]]
   }
   
-  extension [Self <: IPConfigProperties[?, ?, ?, ?, ?], M /* <: ManagedObject */, B, S, SL, L](x: Self & (IPConfigProperties[M, B, S, SL, L])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPConfigProperties[?, ?, ?, ?, ?], M /* <: ManagedObject */, B, S, SL, L] (val x: Self & (IPConfigProperties[M, B, S, SL, L])) extends AnyVal {
     
     inline def setGateway(value: S): Self = StObject.set(x, "Gateway", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object Settlement {
     __obj.asInstanceOf[Settlement]
   }
   
-  extension [Self <: Settlement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Settlement] (val x: Self) extends AnyVal {
     
     inline def setFetch(value: SettlementFetchRequest => js.Promise[AxiosResponse[SettlementFetchResponse, Any]]): Self = StObject.set(x, "fetch", js.Any.fromFunction1(value))
     

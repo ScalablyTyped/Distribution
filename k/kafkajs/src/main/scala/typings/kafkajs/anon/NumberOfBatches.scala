@@ -19,7 +19,8 @@ object NumberOfBatches {
     __obj.asInstanceOf[NumberOfBatches]
   }
   
-  extension [Self <: NumberOfBatches](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NumberOfBatches] (val x: Self) extends AnyVal {
     
     inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     

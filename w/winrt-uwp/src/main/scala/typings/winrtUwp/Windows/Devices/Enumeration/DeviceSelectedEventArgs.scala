@@ -17,7 +17,8 @@ object DeviceSelectedEventArgs {
     __obj.asInstanceOf[DeviceSelectedEventArgs]
   }
   
-  extension [Self <: DeviceSelectedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeviceSelectedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setSelectedDevice(value: DeviceInformation): Self = StObject.set(x, "selectedDevice", value.asInstanceOf[js.Any])
   }

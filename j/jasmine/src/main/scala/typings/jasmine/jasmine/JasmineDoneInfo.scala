@@ -32,7 +32,8 @@ object JasmineDoneInfo {
     __obj.asInstanceOf[JasmineDoneInfo]
   }
   
-  extension [Self <: JasmineDoneInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JasmineDoneInfo] (val x: Self) extends AnyVal {
     
     inline def setDeprecationWarnings(value: js.Array[ExpectationResult]): Self = StObject.set(x, "deprecationWarnings", value.asInstanceOf[js.Any])
     

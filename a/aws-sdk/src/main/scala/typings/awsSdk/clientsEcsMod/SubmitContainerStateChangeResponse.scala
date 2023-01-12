@@ -18,7 +18,8 @@ object SubmitContainerStateChangeResponse {
     __obj.asInstanceOf[SubmitContainerStateChangeResponse]
   }
   
-  extension [Self <: SubmitContainerStateChangeResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubmitContainerStateChangeResponse] (val x: Self) extends AnyVal {
     
     inline def setAcknowledgment(value: String): Self = StObject.set(x, "acknowledgment", value.asInstanceOf[js.Any])
     

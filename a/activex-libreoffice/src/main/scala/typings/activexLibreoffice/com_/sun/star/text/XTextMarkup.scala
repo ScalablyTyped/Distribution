@@ -53,7 +53,8 @@ object XTextMarkup {
     __obj.asInstanceOf[XTextMarkup]
   }
   
-  extension [Self <: XTextMarkup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XTextMarkup] (val x: Self) extends AnyVal {
     
     inline def setCommitStringMarkup(value: (Double, String, Double, Double, XStringKeyMap) => Unit): Self = StObject.set(x, "commitStringMarkup", js.Any.fromFunction5(value))
     

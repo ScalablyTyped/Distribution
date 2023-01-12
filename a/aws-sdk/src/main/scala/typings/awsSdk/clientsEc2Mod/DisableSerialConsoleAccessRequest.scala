@@ -18,7 +18,8 @@ object DisableSerialConsoleAccessRequest {
     __obj.asInstanceOf[DisableSerialConsoleAccessRequest]
   }
   
-  extension [Self <: DisableSerialConsoleAccessRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisableSerialConsoleAccessRequest] (val x: Self) extends AnyVal {
     
     inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object MlTimingStats {
     __obj.asInstanceOf[MlTimingStats]
   }
   
-  extension [Self <: MlTimingStats](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlTimingStats] (val x: Self) extends AnyVal {
     
     inline def setElapsed_time(value: DurationValue[UnitMillis]): Self = StObject.set(x, "elapsed_time", value.asInstanceOf[js.Any])
     

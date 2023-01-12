@@ -36,7 +36,8 @@ object CallbackInterfaceType {
     __obj.asInstanceOf[CallbackInterfaceType]
   }
   
-  extension [Self <: CallbackInterfaceType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CallbackInterfaceType] (val x: Self) extends AnyVal {
     
     inline def setInheritance(value: Null): Self = StObject.set(x, "inheritance", value.asInstanceOf[js.Any])
     

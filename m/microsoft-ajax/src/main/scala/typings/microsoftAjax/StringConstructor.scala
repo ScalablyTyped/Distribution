@@ -33,7 +33,8 @@ object StringConstructor {
     __obj.asInstanceOf[StringConstructor]
   }
   
-  extension [Self <: StringConstructor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StringConstructor] (val x: Self) extends AnyVal {
     
     inline def setFormat(value: (java.lang.String, /* repeated */ Any) => java.lang.String): Self = StObject.set(x, "format", js.Any.fromFunction2(value))
     

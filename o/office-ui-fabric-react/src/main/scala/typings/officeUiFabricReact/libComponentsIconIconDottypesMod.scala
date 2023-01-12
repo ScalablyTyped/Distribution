@@ -83,7 +83,8 @@ object libComponentsIconIconDottypesMod {
       __obj.asInstanceOf[IFontIconProps]
     }
     
-    extension [Self <: IFontIconProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IFontIconProps] (val x: Self) extends AnyVal {
       
       inline def setIconName(value: String): Self = StObject.set(x, "iconName", value.asInstanceOf[js.Any])
       
@@ -138,7 +139,8 @@ object libComponentsIconIconDottypesMod {
       __obj.asInstanceOf[IIconProps]
     }
     
-    extension [Self <: IIconProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IIconProps] (val x: Self) extends AnyVal {
       
       inline def setAriaLabel(value: String): Self = StObject.set(x, "ariaLabel", value.asInstanceOf[js.Any])
       
@@ -193,7 +195,8 @@ object libComponentsIconIconDottypesMod {
       __obj.asInstanceOf[IIconStyleProps]
     }
     
-    extension [Self <: IIconStyleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IIconStyleProps] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -234,7 +237,8 @@ object libComponentsIconIconDottypesMod {
       __obj.asInstanceOf[IIconStyles]
     }
     
-    extension [Self <: IIconStyles](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IIconStyles] (val x: Self) extends AnyVal {
       
       inline def setImageContainer(value: IStyle): Self = StObject.set(x, "imageContainer", value.asInstanceOf[js.Any])
       
@@ -266,7 +270,8 @@ object libComponentsIconIconDottypesMod {
       __obj.asInstanceOf[IImageIconProps]
     }
     
-    extension [Self <: IImageIconProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IImageIconProps] (val x: Self) extends AnyVal {
       
       inline def setImageProps(value: IImageProps): Self = StObject.set(x, "imageProps", value.asInstanceOf[js.Any])
     }

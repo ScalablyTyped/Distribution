@@ -38,7 +38,8 @@ object ListFindingsRequest {
     __obj.asInstanceOf[ListFindingsRequest]
   }
   
-  extension [Self <: ListFindingsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListFindingsRequest] (val x: Self) extends AnyVal {
     
     inline def setAnalyzerArn(value: AnalyzerArn): Self = StObject.set(x, "analyzerArn", value.asInstanceOf[js.Any])
     

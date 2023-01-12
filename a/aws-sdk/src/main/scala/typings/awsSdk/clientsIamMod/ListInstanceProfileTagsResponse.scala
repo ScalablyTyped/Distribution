@@ -28,7 +28,8 @@ object ListInstanceProfileTagsResponse {
     __obj.asInstanceOf[ListInstanceProfileTagsResponse]
   }
   
-  extension [Self <: ListInstanceProfileTagsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListInstanceProfileTagsResponse] (val x: Self) extends AnyVal {
     
     inline def setIsTruncated(value: booleanType): Self = StObject.set(x, "IsTruncated", value.asInstanceOf[js.Any])
     

@@ -26,7 +26,8 @@ object IsUTCScale {
     __obj.asInstanceOf[IsUTCScale]
   }
   
-  extension [Self <: IsUTCScale](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IsUTCScale] (val x: Self) extends AnyVal {
     
     inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     

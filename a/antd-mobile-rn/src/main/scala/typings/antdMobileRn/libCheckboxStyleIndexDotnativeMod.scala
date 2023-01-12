@@ -79,7 +79,8 @@ object libCheckboxStyleIndexDotnativeMod {
       __obj.asInstanceOf[ICheckboxStyle]
     }
     
-    extension [Self <: ICheckboxStyle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICheckboxStyle] (val x: Self) extends AnyVal {
       
       inline def setAgreeItem(value: ViewStyle): Self = StObject.set(x, "agreeItem", value.asInstanceOf[js.Any])
       

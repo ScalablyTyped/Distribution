@@ -27,7 +27,8 @@ object anon {
       __obj.asInstanceOf[Action]
     }
     
-    extension [Self <: Action](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Action] (val x: Self) extends AnyVal {
       
       inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
@@ -48,7 +49,8 @@ object anon {
       __obj.asInstanceOf[AppData]
     }
     
-    extension [Self <: AppData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AppData] (val x: Self) extends AnyVal {
       
       inline def setAppData(value: js.Object): Self = StObject.set(x, "appData", value.asInstanceOf[js.Any])
       
@@ -77,7 +79,8 @@ object anon {
       __obj.asInstanceOf[CacheOpaqueResponses]
     }
     
-    extension [Self <: CacheOpaqueResponses](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CacheOpaqueResponses] (val x: Self) extends AnyVal {
       
       inline def setCacheOpaqueResponses(value: Boolean): Self = StObject.set(x, "cacheOpaqueResponses", value.asInstanceOf[js.Any])
       
@@ -110,7 +113,8 @@ object anon {
       __obj.asInstanceOf[Files]
     }
     
-    extension [Self <: Files](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Files] (val x: Self) extends AnyVal {
       
       inline def setFiles(value: js.Array[Glob]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
       
@@ -139,7 +143,8 @@ object anon {
       __obj.asInstanceOf[Hash]
     }
     
-    extension [Self <: Hash](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Hash] (val x: Self) extends AnyVal {
       
       inline def setAppData(value: js.Object): Self = StObject.set(x, "appData", value.asInstanceOf[js.Any])
       
@@ -203,7 +208,8 @@ object anon {
       __obj.asInstanceOf[NotificationOptionstitles]
     }
     
-    extension [Self <: NotificationOptionstitles](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NotificationOptionstitles] (val x: Self) extends AnyVal {
       
       inline def setActions(value: js.Array[NotificationAction]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
       
@@ -281,7 +287,8 @@ object anon {
       __obj.asInstanceOf[PickCacheQueryOptionsigno]
     }
     
-    extension [Self <: PickCacheQueryOptionsigno](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PickCacheQueryOptionsigno] (val x: Self) extends AnyVal {
       
       inline def setIgnoreSearch(value: Boolean): Self = StObject.set(x, "ignoreSearch", value.asInstanceOf[js.Any])
       
@@ -300,7 +307,8 @@ object anon {
       __obj.asInstanceOf[ServerPublicKey]
     }
     
-    extension [Self <: ServerPublicKey](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ServerPublicKey] (val x: Self) extends AnyVal {
       
       inline def setServerPublicKey(value: String): Self = StObject.set(x, "serverPublicKey", value.asInstanceOf[js.Any])
     }

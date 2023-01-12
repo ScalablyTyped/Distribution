@@ -44,7 +44,8 @@ object MediaPlaylist {
     __obj.asInstanceOf[MediaPlaylist]
   }
   
-  extension [Self <: MediaPlaylist](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MediaPlaylist] (val x: Self) extends AnyVal {
     
     inline def setAutoselect(value: Boolean): Self = StObject.set(x, "autoselect", value.asInstanceOf[js.Any])
     

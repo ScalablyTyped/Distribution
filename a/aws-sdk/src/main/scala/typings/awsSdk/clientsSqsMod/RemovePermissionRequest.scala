@@ -23,7 +23,8 @@ object RemovePermissionRequest {
     __obj.asInstanceOf[RemovePermissionRequest]
   }
   
-  extension [Self <: RemovePermissionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RemovePermissionRequest] (val x: Self) extends AnyVal {
     
     inline def setLabel(value: String): Self = StObject.set(x, "Label", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object CustomerNodeEndpoint {
     __obj.asInstanceOf[CustomerNodeEndpoint]
   }
   
-  extension [Self <: CustomerNodeEndpoint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomerNodeEndpoint] (val x: Self) extends AnyVal {
     
     inline def setAddress(value: String): Self = StObject.set(x, "Address", value.asInstanceOf[js.Any])
     

@@ -83,7 +83,8 @@ object libErrorNativeDetailedErrorWrapperMod {
       __obj.asInstanceOf[NativeDetailedErrorWrapper]
     }
     
-    extension [Self <: NativeDetailedErrorWrapper](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NativeDetailedErrorWrapper] (val x: Self) extends AnyVal {
       
       inline def setToHtmlString(value: () => Any): Self = StObject.set(x, "toHtmlString", js.Any.fromFunction0(value))
       

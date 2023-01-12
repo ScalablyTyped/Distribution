@@ -26,7 +26,8 @@ object SamplerConfig {
     __obj.asInstanceOf[SamplerConfig]
   }
   
-  extension [Self <: SamplerConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SamplerConfig] (val x: Self) extends AnyVal {
     
     inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
     

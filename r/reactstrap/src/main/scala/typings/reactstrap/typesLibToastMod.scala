@@ -45,7 +45,8 @@ object typesLibToastMod {
       __obj.asInstanceOf[ToastProps]
     }
     
-    extension [Self <: ToastProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ToastProps] (val x: Self) extends AnyVal {
       
       inline def setCssModule(value: CSSModule): Self = StObject.set(x, "cssModule", value.asInstanceOf[js.Any])
       

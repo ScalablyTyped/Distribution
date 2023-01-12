@@ -17,7 +17,8 @@ object LabelEnhancer {
     __obj.asInstanceOf[LabelEnhancer]
   }
   
-  extension [Self <: LabelEnhancer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LabelEnhancer] (val x: Self) extends AnyVal {
     
     inline def setLabelEnhancerContent(value: String): Self = StObject.set(x, "labelEnhancerContent", value.asInstanceOf[js.Any])
     

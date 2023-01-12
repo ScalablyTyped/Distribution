@@ -28,7 +28,8 @@ object MemInfo {
     __obj.asInstanceOf[MemInfo]
   }
   
-  extension [Self <: MemInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MemInfo] (val x: Self) extends AnyVal {
     
     inline def setCurrentLimitBytes(value: String): Self = StObject.set(x, "currentLimitBytes", value.asInstanceOf[js.Any])
     

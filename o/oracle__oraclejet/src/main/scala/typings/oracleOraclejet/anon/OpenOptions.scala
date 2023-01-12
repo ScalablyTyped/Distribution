@@ -18,7 +18,8 @@ object OpenOptions {
     __obj.asInstanceOf[OpenOptions]
   }
   
-  extension [Self <: OpenOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OpenOptions] (val x: Self) extends AnyVal {
     
     inline def setOpenOptions(value: typings.oracleOraclejet.ojmenuMod.ojMenu.OpenOptions): Self = StObject.set(x, "openOptions", value.asInstanceOf[js.Any])
   }

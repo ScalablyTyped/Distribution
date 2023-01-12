@@ -48,7 +48,8 @@ object libMonadTaskMod {
       __obj.asInstanceOf[MonadTask[M]]
     }
     
-    extension [Self <: MonadTask[?], M](x: Self & MonadTask[M]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MonadTask[?], M] (val x: Self & MonadTask[M]) extends AnyVal {
       
       inline def setURI(value: M): Self = StObject.set(x, "URI", value.asInstanceOf[js.Any])
     }
@@ -80,7 +81,8 @@ object libMonadTaskMod {
       __obj.asInstanceOf[MonadTask1[M]]
     }
     
-    extension [Self <: MonadTask1[?], M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ Any */](x: Self & MonadTask1[M]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MonadTask1[?], M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ Any */] (val x: Self & MonadTask1[M]) extends AnyVal {
       
       inline def setURI(value: M): Self = StObject.set(x, "URI", value.asInstanceOf[js.Any])
     }
@@ -139,7 +141,8 @@ object libMonadTaskMod {
       __obj.asInstanceOf[MonadTask2C[M, E]]
     }
     
-    extension [Self <: MonadTask2C[?, ?], M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */, E](x: Self & (MonadTask2C[M, E])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MonadTask2C[?, ?], M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */, E] (val x: Self & (MonadTask2C[M, E])) extends AnyVal {
       
       inline def setURI(value: M): Self = StObject.set(x, "URI", value.asInstanceOf[js.Any])
       
@@ -173,7 +176,8 @@ object libMonadTaskMod {
       __obj.asInstanceOf[MonadTask3[M]]
     }
     
-    extension [Self <: MonadTask3[?], M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */](x: Self & MonadTask3[M]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MonadTask3[?], M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */] (val x: Self & MonadTask3[M]) extends AnyVal {
       
       inline def setURI(value: M): Self = StObject.set(x, "URI", value.asInstanceOf[js.Any])
     }
@@ -209,7 +213,8 @@ object libMonadTaskMod {
       __obj.asInstanceOf[MonadTask3C[M, E]]
     }
     
-    extension [Self <: MonadTask3C[?, ?], M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */, E](x: Self & (MonadTask3C[M, E])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MonadTask3C[?, ?], M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */, E] (val x: Self & (MonadTask3C[M, E])) extends AnyVal {
       
       inline def setURI(value: M): Self = StObject.set(x, "URI", value.asInstanceOf[js.Any])
       
@@ -243,7 +248,8 @@ object libMonadTaskMod {
       __obj.asInstanceOf[MonadTask4[M]]
     }
     
-    extension [Self <: MonadTask4[?], M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS4 */ Any */](x: Self & MonadTask4[M]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MonadTask4[?], M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS4 */ Any */] (val x: Self & MonadTask4[M]) extends AnyVal {
       
       inline def setURI(value: M): Self = StObject.set(x, "URI", value.asInstanceOf[js.Any])
     }

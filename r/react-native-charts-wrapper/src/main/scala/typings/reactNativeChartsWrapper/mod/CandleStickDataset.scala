@@ -22,7 +22,8 @@ object CandleStickDataset {
     __obj.asInstanceOf[CandleStickDataset]
   }
   
-  extension [Self <: CandleStickDataset](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CandleStickDataset] (val x: Self) extends AnyVal {
     
     inline def setConfig(value: CandleStickDatasetConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     

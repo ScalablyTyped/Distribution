@@ -181,7 +181,8 @@ object libUiJsDiff2htmlUiBaseMod {
       __obj.asInstanceOf[Diff2HtmlUIConfig]
     }
     
-    extension [Self <: Diff2HtmlUIConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Diff2HtmlUIConfig] (val x: Self) extends AnyVal {
       
       inline def setFileContentToggle(value: Boolean): Self = StObject.set(x, "fileContentToggle", value.asInstanceOf[js.Any])
       

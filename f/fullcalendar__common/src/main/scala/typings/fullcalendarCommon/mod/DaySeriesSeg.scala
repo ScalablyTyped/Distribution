@@ -21,7 +21,8 @@ object DaySeriesSeg {
     __obj.asInstanceOf[DaySeriesSeg]
   }
   
-  extension [Self <: DaySeriesSeg](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DaySeriesSeg] (val x: Self) extends AnyVal {
     
     inline def setFirstIndex(value: Double): Self = StObject.set(x, "firstIndex", value.asInstanceOf[js.Any])
     

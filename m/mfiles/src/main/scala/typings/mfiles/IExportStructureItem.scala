@@ -27,7 +27,8 @@ object IExportStructureItem {
     __obj.asInstanceOf[IExportStructureItem]
   }
   
-  extension [Self <: IExportStructureItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IExportStructureItem] (val x: Self) extends AnyVal {
     
     inline def setClone(value: () => IExportStructureItem): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     

@@ -62,7 +62,8 @@ object ImageIdentifyResultProperties {
     __obj.asInstanceOf[ImageIdentifyResultProperties]
   }
   
-  extension [Self <: ImageIdentifyResultProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImageIdentifyResultProperties] (val x: Self) extends AnyVal {
     
     inline def setCatalogItemVisibilities(value: js.Array[Double]): Self = StObject.set(x, "catalogItemVisibilities", value.asInstanceOf[js.Any])
     

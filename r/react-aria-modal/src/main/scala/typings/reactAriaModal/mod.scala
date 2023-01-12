@@ -232,7 +232,8 @@ object mod {
       __obj.asInstanceOf[AriaModalProps]
     }
     
-    extension [Self <: AriaModalProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AriaModalProps] (val x: Self) extends AnyVal {
       
       inline def setAlert(value: Boolean): Self = StObject.set(x, "alert", value.asInstanceOf[js.Any])
       

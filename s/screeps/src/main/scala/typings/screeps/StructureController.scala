@@ -111,7 +111,8 @@ object StructureController {
     __obj.asInstanceOf[StructureController]
   }
   
-  extension [Self <: StructureController](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StructureController] (val x: Self) extends AnyVal {
     
     inline def setActivateSafeMode(value: () => ScreepsReturnCode): Self = StObject.set(x, "activateSafeMode", js.Any.fromFunction0(value))
     

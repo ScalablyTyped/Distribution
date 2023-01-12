@@ -22,7 +22,8 @@ object SketchTooltipOptionsProperties {
     __obj.asInstanceOf[SketchTooltipOptionsProperties]
   }
   
-  extension [Self <: SketchTooltipOptionsProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SketchTooltipOptionsProperties] (val x: Self) extends AnyVal {
     
     inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     

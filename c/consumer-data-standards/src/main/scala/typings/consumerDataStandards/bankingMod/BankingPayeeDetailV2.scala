@@ -46,7 +46,8 @@ object BankingPayeeDetailV2 {
     __obj.asInstanceOf[BankingPayeeDetailV2]
   }
   
-  extension [Self <: BankingPayeeDetailV2](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BankingPayeeDetailV2] (val x: Self) extends AnyVal {
     
     inline def setBiller(value: BillerCode): Self = StObject.set(x, "biller", value.asInstanceOf[js.Any])
     

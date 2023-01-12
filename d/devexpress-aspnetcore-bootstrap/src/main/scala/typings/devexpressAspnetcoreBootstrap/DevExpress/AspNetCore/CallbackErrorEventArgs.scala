@@ -19,7 +19,8 @@ object CallbackErrorEventArgs {
     __obj.asInstanceOf[CallbackErrorEventArgs]
   }
   
-  extension [Self <: CallbackErrorEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CallbackErrorEventArgs] (val x: Self) extends AnyVal {
     
     inline def setHandled(value: Boolean): Self = StObject.set(x, "handled", value.asInstanceOf[js.Any])
     

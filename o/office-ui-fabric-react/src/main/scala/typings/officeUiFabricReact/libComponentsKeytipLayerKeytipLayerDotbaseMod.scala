@@ -208,7 +208,8 @@ object libComponentsKeytipLayerKeytipLayerDotbaseMod {
       __obj.asInstanceOf[IKeytipLayerState]
     }
     
-    extension [Self <: IKeytipLayerState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IKeytipLayerState] (val x: Self) extends AnyVal {
       
       inline def setInKeytipMode(value: Boolean): Self = StObject.set(x, "inKeytipMode", value.asInstanceOf[js.Any])
       

@@ -88,7 +88,8 @@ object typesDevtoolsThemeMod {
       __obj.asInstanceOf[ProviderProps]
     }
     
-    extension [Self <: ProviderProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProviderProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -129,7 +130,8 @@ object typesDevtoolsThemeMod {
       __obj.asInstanceOf[Theme]
     }
     
-    extension [Self <: Theme](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Theme] (val x: Self) extends AnyVal {
       
       inline def setActive(value: Numbersign006bff): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       

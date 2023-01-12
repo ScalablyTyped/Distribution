@@ -159,7 +159,8 @@ object esmDropdownMenuMod {
       __obj.asInstanceOf[DropdownMenuProps]
     }
     
-    extension [Self <: DropdownMenuProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DropdownMenuProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: (UserDropdownMenuProps, UseDropdownMenuMetadata) => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction2(value))
     }
@@ -192,7 +193,8 @@ object esmDropdownMenuMod {
       __obj.asInstanceOf[UseDropdownMenuMetadata]
     }
     
-    extension [Self <: UseDropdownMenuMetadata](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UseDropdownMenuMetadata] (val x: Self) extends AnyVal {
       
       inline def setAlignEnd(value: Boolean): Self = StObject.set(x, "alignEnd", value.asInstanceOf[js.Any])
       
@@ -241,7 +243,8 @@ object esmDropdownMenuMod {
       __obj.asInstanceOf[UseDropdownMenuOptions]
     }
     
-    extension [Self <: UseDropdownMenuOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UseDropdownMenuOptions] (val x: Self) extends AnyVal {
       
       inline def setAlignEnd(value: Boolean): Self = StObject.set(x, "alignEnd", value.asInstanceOf[js.Any])
       

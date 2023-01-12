@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "bootstrap4-toggle"
-version := "3.6-dt-20211202Z-169cb5"
+version := "3.6-dt-20211202Z-6a2273"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

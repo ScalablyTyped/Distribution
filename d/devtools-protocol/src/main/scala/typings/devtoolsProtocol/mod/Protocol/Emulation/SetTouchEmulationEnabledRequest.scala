@@ -24,7 +24,8 @@ object SetTouchEmulationEnabledRequest {
     __obj.asInstanceOf[SetTouchEmulationEnabledRequest]
   }
   
-  extension [Self <: SetTouchEmulationEnabledRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetTouchEmulationEnabledRequest] (val x: Self) extends AnyVal {
     
     inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     

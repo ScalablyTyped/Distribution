@@ -19,7 +19,8 @@ object LUDecomposition {
     __obj.asInstanceOf[LUDecomposition]
   }
   
-  extension [Self <: LUDecomposition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LUDecomposition] (val x: Self) extends AnyVal {
     
     inline def setL(value: MathCollection): Self = StObject.set(x, "L", value.asInstanceOf[js.Any])
     

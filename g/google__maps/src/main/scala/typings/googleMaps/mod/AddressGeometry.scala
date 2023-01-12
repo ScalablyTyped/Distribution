@@ -34,7 +34,8 @@ object AddressGeometry {
     __obj.asInstanceOf[AddressGeometry]
   }
   
-  extension [Self <: AddressGeometry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AddressGeometry] (val x: Self) extends AnyVal {
     
     inline def setBounds(value: LatLngBounds): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
     

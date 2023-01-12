@@ -28,7 +28,8 @@ object CreateProtectionRequest {
     __obj.asInstanceOf[CreateProtectionRequest]
   }
   
-  extension [Self <: CreateProtectionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateProtectionRequest] (val x: Self) extends AnyVal {
     
     inline def setName(value: ProtectionName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     

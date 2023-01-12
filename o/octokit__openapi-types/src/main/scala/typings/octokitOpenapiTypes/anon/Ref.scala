@@ -43,7 +43,8 @@ object Ref {
     __obj.asInstanceOf[Ref]
   }
   
-  extension [Self <: Ref](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Ref] (val x: Self) extends AnyVal {
     
     inline def setDirection(
       value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['direction'] */ js.Any

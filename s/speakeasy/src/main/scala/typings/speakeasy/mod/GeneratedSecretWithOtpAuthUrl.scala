@@ -21,7 +21,8 @@ object GeneratedSecretWithOtpAuthUrl {
     __obj.asInstanceOf[GeneratedSecretWithOtpAuthUrl]
   }
   
-  extension [Self <: GeneratedSecretWithOtpAuthUrl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GeneratedSecretWithOtpAuthUrl] (val x: Self) extends AnyVal {
     
     inline def setOtpauth_url(value: String): Self = StObject.set(x, "otpauth_url", value.asInstanceOf[js.Any])
   }

@@ -232,7 +232,8 @@ object Directive {
   @js.native
   val ^ : DirectiveDecorator = js.native
   
-  extension [Self <: Directive](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Directive] (val x: Self) extends AnyVal {
     
     inline def setExportAs(value: String): Self = StObject.set(x, "exportAs", value.asInstanceOf[js.Any])
     

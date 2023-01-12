@@ -30,7 +30,8 @@ object BaseComment {
     __obj.asInstanceOf[BaseComment]
   }
   
-  extension [Self <: BaseComment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BaseComment] (val x: Self) extends AnyVal {
     
     inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     

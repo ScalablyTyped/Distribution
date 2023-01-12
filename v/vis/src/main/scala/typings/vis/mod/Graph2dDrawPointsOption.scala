@@ -22,7 +22,8 @@ object Graph2dDrawPointsOption {
     __obj.asInstanceOf[Graph2dDrawPointsOption]
   }
   
-  extension [Self <: Graph2dDrawPointsOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Graph2dDrawPointsOption] (val x: Self) extends AnyVal {
     
     inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[Time[T]]
     }
     
-    extension [Self <: Time[?], T](x: Self & Time[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Time[?], T] (val x: Self & Time[T]) extends AnyVal {
       
       inline def setTime(value: Double): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
       

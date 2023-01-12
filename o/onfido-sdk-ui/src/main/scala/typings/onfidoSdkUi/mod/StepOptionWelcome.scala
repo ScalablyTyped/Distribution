@@ -19,7 +19,8 @@ object StepOptionWelcome {
     __obj.asInstanceOf[StepOptionWelcome]
   }
   
-  extension [Self <: StepOptionWelcome](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StepOptionWelcome] (val x: Self) extends AnyVal {
     
     inline def setDescriptions(value: js.Array[String]): Self = StObject.set(x, "descriptions", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object Outline {
     __obj.asInstanceOf[Outline]
   }
   
-  extension [Self <: Outline](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Outline] (val x: Self) extends AnyVal {
     
     inline def setAdd(value: (Any, String, OutlineOptions) => OutlineItem): Self = StObject.set(x, "add", js.Any.fromFunction3(value))
   }

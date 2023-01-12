@@ -40,7 +40,8 @@ object PartialSurface {
     __obj.asInstanceOf[PartialSurface]
   }
   
-  extension [Self <: PartialSurface](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialSurface] (val x: Self) extends AnyVal {
     
     inline def setConstructor(value: (/* points */ js.Array[Point], /* painter */ js.UndefOr[Painter]) => Any): Self = StObject.set(x, "constructor", js.Any.fromFunction2(value))
     

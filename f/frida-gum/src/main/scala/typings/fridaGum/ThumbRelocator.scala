@@ -103,7 +103,8 @@ object ThumbRelocator {
     __obj.asInstanceOf[ThumbRelocator]
   }
   
-  extension [Self <: ThumbRelocator](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ThumbRelocator] (val x: Self) extends AnyVal {
     
     inline def setCopyOne(value: () => Boolean): Self = StObject.set(x, "copyOne", js.Any.fromFunction0(value))
     

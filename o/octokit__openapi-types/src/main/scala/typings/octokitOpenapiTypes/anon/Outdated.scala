@@ -30,7 +30,8 @@ object Outdated {
     __obj.asInstanceOf[Outdated]
   }
   
-  extension [Self <: Outdated](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Outdated] (val x: Self) extends AnyVal {
     
     inline def setOutdated(value: String): Self = StObject.set(x, "outdated", value.asInstanceOf[js.Any])
     

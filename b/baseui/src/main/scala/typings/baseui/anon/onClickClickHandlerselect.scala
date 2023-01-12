@@ -54,7 +54,8 @@ object onClickClickHandlerselect {
     __obj.asInstanceOf[onClickClickHandlerselect]
   }
   
-  extension [Self <: onClickClickHandlerselect](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: onClickClickHandlerselect] (val x: Self) extends AnyVal {
     
     inline def `setAria-label`(value: String): Self = StObject.set(x, "aria-label", value.asInstanceOf[js.Any])
     

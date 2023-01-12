@@ -19,7 +19,8 @@ object ShWorksheetTargetPivotTable {
     __obj.asInstanceOf[ShWorksheetTargetPivotTable]
   }
   
-  extension [Self <: ShWorksheetTargetPivotTable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShWorksheetTargetPivotTable] (val x: Self) extends AnyVal {
     
     inline def setSh(value: Worksheet): Self = StObject.set(x, "Sh", value.asInstanceOf[js.Any])
     

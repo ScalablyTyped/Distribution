@@ -18,7 +18,8 @@ object CreateNotificationSubscriptionResponse {
     __obj.asInstanceOf[CreateNotificationSubscriptionResponse]
   }
   
-  extension [Self <: CreateNotificationSubscriptionResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateNotificationSubscriptionResponse] (val x: Self) extends AnyVal {
     
     inline def setSubscription(value: Subscription): Self = StObject.set(x, "Subscription", value.asInstanceOf[js.Any])
     

@@ -540,7 +540,8 @@ object libComponentsModalWrapperModalWrapperMod {
       __obj.asInstanceOf[ModalWrapperProps]
     }
     
-    extension [Self <: ModalWrapperProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ModalWrapperProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       
@@ -1371,7 +1372,8 @@ object libComponentsModalWrapperModalWrapperMod {
       __obj.asInstanceOf[TriggerProps]
     }
     
-    extension [Self <: TriggerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TriggerProps] (val x: Self) extends AnyVal {
       
       inline def setButtonTriggerClassName(value: String): Self = StObject.set(x, "buttonTriggerClassName", value.asInstanceOf[js.Any])
       

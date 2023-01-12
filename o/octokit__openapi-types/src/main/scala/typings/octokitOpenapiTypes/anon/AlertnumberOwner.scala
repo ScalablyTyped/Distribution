@@ -26,7 +26,8 @@ object AlertnumberOwner {
     __obj.asInstanceOf[AlertnumberOwner]
   }
   
-  extension [Self <: AlertnumberOwner](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AlertnumberOwner] (val x: Self) extends AnyVal {
     
     inline def setAlert_number(
       value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['dependabot-alert-number'] */ js.Any

@@ -34,7 +34,8 @@ object AssignedPlan {
     __obj.asInstanceOf[AssignedPlan]
   }
   
-  extension [Self <: AssignedPlan](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssignedPlan] (val x: Self) extends AnyVal {
     
     inline def setAssignedDateTime(value: NullableOption[String]): Self = StObject.set(x, "assignedDateTime", value.asInstanceOf[js.Any])
     

@@ -32,7 +32,8 @@ object BufferAppendingData {
     __obj.asInstanceOf[BufferAppendingData]
   }
   
-  extension [Self <: BufferAppendingData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BufferAppendingData] (val x: Self) extends AnyVal {
     
     inline def setChunkMeta(value: ChunkMetadata): Self = StObject.set(x, "chunkMeta", value.asInstanceOf[js.Any])
     

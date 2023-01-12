@@ -26,7 +26,8 @@ object IHistoryRequestSearch {
     __obj.asInstanceOf[IHistoryRequestSearch]
   }
   
-  extension [Self <: IHistoryRequestSearch](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IHistoryRequestSearch] (val x: Self) extends AnyVal {
     
     inline def setHist_access_type(value: search): Self = StObject.set(x, "hist_access_type", value.asInstanceOf[js.Any])
     

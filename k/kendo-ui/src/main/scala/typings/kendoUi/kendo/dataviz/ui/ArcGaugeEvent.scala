@@ -19,7 +19,8 @@ object ArcGaugeEvent {
     __obj.asInstanceOf[ArcGaugeEvent]
   }
   
-  extension [Self <: ArcGaugeEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ArcGaugeEvent] (val x: Self) extends AnyVal {
     
     inline def setIsDefaultPrevented(value: () => Boolean): Self = StObject.set(x, "isDefaultPrevented", js.Any.fromFunction0(value))
     

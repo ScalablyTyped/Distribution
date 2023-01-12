@@ -22,7 +22,8 @@ object SpreadsheetChangingEvent {
     __obj.asInstanceOf[SpreadsheetChangingEvent]
   }
   
-  extension [Self <: SpreadsheetChangingEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpreadsheetChangingEvent] (val x: Self) extends AnyVal {
     
     inline def setChangeType(value: String): Self = StObject.set(x, "changeType", value.asInstanceOf[js.Any])
     

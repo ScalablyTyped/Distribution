@@ -297,7 +297,8 @@ object SeriesNetworkgraphDataLabelsOptionsObject {
     __obj.asInstanceOf[SeriesNetworkgraphDataLabelsOptionsObject]
   }
   
-  extension [Self <: SeriesNetworkgraphDataLabelsOptionsObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SeriesNetworkgraphDataLabelsOptionsObject] (val x: Self) extends AnyVal {
     
     inline def setAlign(value: AlignValue): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     

@@ -36,7 +36,8 @@ object BusinessesSearchRequest {
     __obj.asInstanceOf[BusinessesSearchRequest]
   }
   
-  extension [Self <: BusinessesSearchRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BusinessesSearchRequest] (val x: Self) extends AnyVal {
     
     inline def setAttributes(value: String): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     

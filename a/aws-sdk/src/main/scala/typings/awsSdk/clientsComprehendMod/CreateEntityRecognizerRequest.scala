@@ -73,7 +73,8 @@ object CreateEntityRecognizerRequest {
     __obj.asInstanceOf[CreateEntityRecognizerRequest]
   }
   
-  extension [Self <: CreateEntityRecognizerRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateEntityRecognizerRequest] (val x: Self) extends AnyVal {
     
     inline def setClientRequestToken(value: ClientRequestTokenString): Self = StObject.set(x, "ClientRequestToken", value.asInstanceOf[js.Any])
     

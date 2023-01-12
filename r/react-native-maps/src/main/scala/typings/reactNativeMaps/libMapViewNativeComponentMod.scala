@@ -67,7 +67,8 @@ object libMapViewNativeComponentMod {
       __obj.asInstanceOf[NativeCommands]
     }
     
-    extension [Self <: NativeCommands](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NativeCommands] (val x: Self) extends AnyVal {
       
       inline def setAnimateCamera(value: (NonNullable[MapViewNativeComponentType | Null], PartialCamera, Double) => Unit): Self = StObject.set(x, "animateCamera", js.Any.fromFunction3(value))
       

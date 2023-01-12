@@ -23,7 +23,8 @@ object DeviceConfigurationType {
     __obj.asInstanceOf[DeviceConfigurationType]
   }
   
-  extension [Self <: DeviceConfigurationType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeviceConfigurationType] (val x: Self) extends AnyVal {
     
     inline def setChallengeRequiredOnNewDevice(value: BooleanType): Self = StObject.set(x, "ChallengeRequiredOnNewDevice", value.asInstanceOf[js.Any])
     

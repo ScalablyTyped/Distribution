@@ -39,7 +39,8 @@ object distTypesTypesMod {
       __obj.asInstanceOf[AnnotationInstructions]
     }
     
-    extension [Self <: AnnotationInstructions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AnnotationInstructions] (val x: Self) extends AnyVal {
       
       inline def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
       
@@ -126,7 +127,8 @@ object distTypesTypesMod {
       __obj.asInstanceOf[BaseAnnotationSpec[Datum]]
     }
     
-    extension [Self <: BaseAnnotationSpec[?], Datum](x: Self & BaseAnnotationSpec[Datum]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseAnnotationSpec[?], Datum] (val x: Self & BaseAnnotationSpec[Datum]) extends AnyVal {
       
       inline def setNote(value: Note[Datum]): Self = StObject.set(x, "note", value.asInstanceOf[js.Any])
       
@@ -181,7 +183,8 @@ object distTypesTypesMod {
       __obj.asInstanceOf[CircleAnnotationSpec[Datum]]
     }
     
-    extension [Self <: CircleAnnotationSpec[?], Datum](x: Self & CircleAnnotationSpec[Datum]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CircleAnnotationSpec[?], Datum] (val x: Self & CircleAnnotationSpec[Datum]) extends AnyVal {
       
       inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
       
@@ -225,7 +228,8 @@ object distTypesTypesMod {
       __obj.asInstanceOf[DotAnnotationSpec[Datum]]
     }
     
-    extension [Self <: DotAnnotationSpec[?], Datum](x: Self & DotAnnotationSpec[Datum]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DotAnnotationSpec[?], Datum] (val x: Self & DotAnnotationSpec[Datum]) extends AnyVal {
       
       inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
       
@@ -290,7 +294,8 @@ object distTypesTypesMod {
       __obj.asInstanceOf[RectAnnotationSpec[Datum]]
     }
     
-    extension [Self <: RectAnnotationSpec[?], Datum](x: Self & RectAnnotationSpec[Datum]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RectAnnotationSpec[?], Datum] (val x: Self & RectAnnotationSpec[Datum]) extends AnyVal {
       
       inline def setBorderRadius(value: Double): Self = StObject.set(x, "borderRadius", value.asInstanceOf[js.Any])
       

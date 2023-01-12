@@ -49,7 +49,8 @@ object PartialStyleRulesAvatarCl {
     __obj.asInstanceOf[PartialStyleRulesAvatarCl]
   }
   
-  extension [Self <: PartialStyleRulesAvatarCl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialStyleRulesAvatarCl] (val x: Self) extends AnyVal {
     
     inline def setCircle(
       value: CSSProperties | CreateCSSProperties[js.Object] | (PropsFunc[js.Object, CreateCSSProperties[js.Object]])

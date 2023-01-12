@@ -38,7 +38,8 @@ object libModelsEventsRedactionEventMod {
       __obj.asInstanceOf[RedactionEventContent]
     }
     
-    extension [Self <: RedactionEventContent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RedactionEventContent] (val x: Self) extends AnyVal {
       
       inline def setRedacts(value: String | js.Array[String]): Self = StObject.set(x, "redacts", value.asInstanceOf[js.Any])
       

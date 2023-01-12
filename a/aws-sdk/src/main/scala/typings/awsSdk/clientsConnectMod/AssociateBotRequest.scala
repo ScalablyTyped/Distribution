@@ -25,7 +25,8 @@ object AssociateBotRequest {
     __obj.asInstanceOf[AssociateBotRequest]
   }
   
-  extension [Self <: AssociateBotRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssociateBotRequest] (val x: Self) extends AnyVal {
     
     inline def setInstanceId(value: InstanceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
     

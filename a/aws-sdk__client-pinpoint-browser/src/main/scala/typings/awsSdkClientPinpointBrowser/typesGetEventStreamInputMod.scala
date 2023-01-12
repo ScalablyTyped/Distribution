@@ -46,7 +46,8 @@ object typesGetEventStreamInputMod {
       __obj.asInstanceOf[GetEventStreamInput]
     }
     
-    extension [Self <: GetEventStreamInput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetEventStreamInput] (val x: Self) extends AnyVal {
       
       inline def set$abortSignal(value: AbortSignal): Self = StObject.set(x, "$abortSignal", value.asInstanceOf[js.Any])
       

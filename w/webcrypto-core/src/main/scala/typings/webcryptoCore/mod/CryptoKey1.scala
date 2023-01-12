@@ -25,7 +25,8 @@ object CryptoKey1 {
     __obj.asInstanceOf[CryptoKey1]
   }
   
-  extension [Self <: CryptoKey1](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CryptoKey1] (val x: Self) extends AnyVal {
     
     inline def setAlgorithm(value: KeyAlgorithm): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
     

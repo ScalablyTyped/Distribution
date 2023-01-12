@@ -19,7 +19,8 @@ object VacateChange {
     __obj.asInstanceOf[VacateChange]
   }
   
-  extension [Self <: VacateChange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VacateChange] (val x: Self) extends AnyVal {
     
     inline def setChangeKey(value: IChangeKey): Self = StObject.set(x, "changeKey", value.asInstanceOf[js.Any])
   }

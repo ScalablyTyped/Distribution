@@ -127,7 +127,8 @@ object drawing {
       __obj.asInstanceOf[ControlPointOptions]
     }
     
-    extension [Self <: ControlPointOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ControlPointOptions] (val x: Self) extends AnyVal {
       
       inline def setAnchorPointOptions(value: CircleOptions): Self = StObject.set(x, "anchorPointOptions", value.asInstanceOf[js.Any])
       
@@ -148,7 +149,8 @@ object drawing {
       __obj.asInstanceOf[DrawingControlOptions]
     }
     
-    extension [Self <: DrawingControlOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DrawingControlOptions] (val x: Self) extends AnyVal {
       
       inline def setStyle(value: DrawingStyle): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
@@ -211,7 +213,8 @@ object drawing {
       __obj.asInstanceOf[DrawingOptions]
     }
     
-    extension [Self <: DrawingOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DrawingOptions] (val x: Self) extends AnyVal {
       
       inline def setArrowlineOptions(value: PolylineOptions): Self = StObject.set(x, "arrowlineOptions", value.asInstanceOf[js.Any])
       

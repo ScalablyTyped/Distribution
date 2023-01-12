@@ -65,7 +65,8 @@ object mod {
       __obj.asInstanceOf[ParkMiller]
     }
     
-    extension [Self <: ParkMiller](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParkMiller] (val x: Self) extends AnyVal {
       
       inline def setBoolean(value: () => Boolean): Self = StObject.set(x, "boolean", js.Any.fromFunction0(value))
       

@@ -18,7 +18,8 @@ object ExportDataEventObject {
     __obj.asInstanceOf[ExportDataEventObject]
   }
   
-  extension [Self <: ExportDataEventObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExportDataEventObject] (val x: Self) extends AnyVal {
     
     inline def setDataRows(value: js.Array[js.Array[String]]): Self = StObject.set(x, "dataRows", value.asInstanceOf[js.Any])
     

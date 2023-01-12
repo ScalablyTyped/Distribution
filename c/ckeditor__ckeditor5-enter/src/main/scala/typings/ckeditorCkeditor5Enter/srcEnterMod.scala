@@ -42,7 +42,8 @@ object srcEnterMod {
         __obj.asInstanceOf[Plugins]
       }
       
-      extension [Self <: Plugins](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Plugins] (val x: Self) extends AnyVal {
         
         inline def setEnter(value: Enter): Self = StObject.set(x, "Enter", value.asInstanceOf[js.Any])
       }

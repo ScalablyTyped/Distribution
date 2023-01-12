@@ -28,7 +28,8 @@ object ComponentBindingPropertiesValue {
     __obj.asInstanceOf[ComponentBindingPropertiesValue]
   }
   
-  extension [Self <: ComponentBindingPropertiesValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ComponentBindingPropertiesValue] (val x: Self) extends AnyVal {
     
     inline def setBindingProperties(value: ComponentBindingPropertiesValueProperties): Self = StObject.set(x, "bindingProperties", value.asInstanceOf[js.Any])
     

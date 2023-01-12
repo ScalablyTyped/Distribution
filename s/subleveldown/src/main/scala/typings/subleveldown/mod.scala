@@ -72,7 +72,8 @@ object mod {
       __obj.asInstanceOf[SubDownOptions]
     }
     
-    extension [Self <: SubDownOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SubDownOptions] (val x: Self) extends AnyVal {
       
       inline def setOpen(value: /* callback */ ErrorCallback => Unit): Self = StObject.set(x, "open", js.Any.fromFunction1(value))
       

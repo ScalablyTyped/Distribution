@@ -25,7 +25,8 @@ object BucketAggregationRange {
     __obj.asInstanceOf[BucketAggregationRange]
   }
   
-  extension [Self <: BucketAggregationRange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BucketAggregationRange] (val x: Self) extends AnyVal {
     
     inline def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     

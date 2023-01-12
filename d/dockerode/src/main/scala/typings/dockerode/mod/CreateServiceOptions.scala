@@ -20,7 +20,8 @@ object CreateServiceOptions {
     __obj.asInstanceOf[CreateServiceOptions]
   }
   
-  extension [Self <: CreateServiceOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateServiceOptions] (val x: Self) extends AnyVal {
     
     inline def setAbortSignal(value: AbortSignal): Self = StObject.set(x, "abortSignal", value.asInstanceOf[js.Any])
     

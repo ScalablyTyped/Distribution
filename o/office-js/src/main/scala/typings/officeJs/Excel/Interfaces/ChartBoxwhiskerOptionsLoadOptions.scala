@@ -65,7 +65,8 @@ object ChartBoxwhiskerOptionsLoadOptions {
     __obj.asInstanceOf[ChartBoxwhiskerOptionsLoadOptions]
   }
   
-  extension [Self <: ChartBoxwhiskerOptionsLoadOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChartBoxwhiskerOptionsLoadOptions] (val x: Self) extends AnyVal {
     
     inline def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
     

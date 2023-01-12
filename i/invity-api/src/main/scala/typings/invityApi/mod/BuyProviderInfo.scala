@@ -60,7 +60,8 @@ object BuyProviderInfo {
     __obj.asInstanceOf[BuyProviderInfo]
   }
   
-  extension [Self <: BuyProviderInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BuyProviderInfo] (val x: Self) extends AnyVal {
     
     inline def setCompanyName(value: String): Self = StObject.set(x, "companyName", value.asInstanceOf[js.Any])
     

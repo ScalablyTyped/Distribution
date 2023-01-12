@@ -24,7 +24,8 @@ object TVLJSNSLocale {
     __obj.asInstanceOf[TVLJSNSLocale]
   }
   
-  extension [Self <: TVLJSNSLocale](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TVLJSNSLocale] (val x: Self) extends AnyVal {
     
     inline def setLocaleIdentifier(value: String): Self = StObject.set(x, "localeIdentifier", value.asInstanceOf[js.Any])
   }

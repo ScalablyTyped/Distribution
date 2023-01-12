@@ -20,7 +20,8 @@ object anon {
       __obj.asInstanceOf[Hifistatus]
     }
     
-    extension [Self <: Hifistatus](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Hifistatus] (val x: Self) extends AnyVal {
       
       inline def setHifi_status(value: String): Self = StObject.set(x, "hifi_status", value.asInstanceOf[js.Any])
     }
@@ -39,7 +40,8 @@ object anon {
       __obj.asInstanceOf[Id]
     }
     
-    extension [Self <: Id](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Id] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -69,7 +71,8 @@ object anon {
       __obj.asInstanceOf[PlayerInitidstring]
     }
     
-    extension [Self <: PlayerInitidstring](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PlayerInitidstring] (val x: Self) extends AnyVal {
       
       inline def setGetOAuthToken(value: js.Function1[/* token */ String, Unit] => Unit): Self = StObject.set(x, "getOAuthToken", js.Any.fromFunction1(value))
       
@@ -96,7 +99,8 @@ object anon {
       __obj.asInstanceOf[Repeatmode]
     }
     
-    extension [Self <: Repeatmode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Repeatmode] (val x: Self) extends AnyVal {
       
       inline def setRepeat_mode(value: String): Self = StObject.set(x, "repeat_mode", value.asInstanceOf[js.Any])
       
@@ -115,7 +119,8 @@ object anon {
       __obj.asInstanceOf[TypeofSpotify]
     }
     
-    extension [Self <: TypeofSpotify](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypeofSpotify] (val x: Self) extends AnyVal {
       
       inline def setPlayer(value: Instantiable1[/* options */ PlayerInit, Player]): Self = StObject.set(x, "Player", value.asInstanceOf[js.Any])
     }

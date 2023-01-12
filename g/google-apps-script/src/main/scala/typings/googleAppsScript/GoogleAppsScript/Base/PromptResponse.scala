@@ -36,7 +36,8 @@ object PromptResponse {
     __obj.asInstanceOf[PromptResponse]
   }
   
-  extension [Self <: PromptResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PromptResponse] (val x: Self) extends AnyVal {
     
     inline def setGetResponseText(value: () => String): Self = StObject.set(x, "getResponseText", js.Any.fromFunction0(value))
     

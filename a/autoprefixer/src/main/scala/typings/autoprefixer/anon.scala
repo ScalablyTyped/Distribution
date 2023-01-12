@@ -23,7 +23,8 @@ object anon {
       __obj.asInstanceOf[Browsers]
     }
     
-    extension [Self <: Browsers](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Browsers] (val x: Self) extends AnyVal {
       
       inline def setBrowsers(value: StringDictionary[js.UndefOr[js.Object]]): Self = StObject.set(x, "browsers", value.asInstanceOf[js.Any])
       
@@ -42,7 +43,8 @@ object anon {
       __obj.asInstanceOf[From]
     }
     
-    extension [Self <: From](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: From] (val x: Self) extends AnyVal {
       
       inline def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       

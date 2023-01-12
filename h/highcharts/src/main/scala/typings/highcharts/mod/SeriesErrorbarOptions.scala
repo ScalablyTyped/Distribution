@@ -106,7 +106,8 @@ object SeriesErrorbarOptions {
     __obj.asInstanceOf[SeriesErrorbarOptions]
   }
   
-  extension [Self <: SeriesErrorbarOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SeriesErrorbarOptions] (val x: Self) extends AnyVal {
     
     inline def setData(
       value: js.Array[

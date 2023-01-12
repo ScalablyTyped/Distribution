@@ -28,7 +28,8 @@ object componentsNavbarNavbarContextMod {
       __obj.asInstanceOf[NavbarContextValue]
     }
     
-    extension [Self <: NavbarContextValue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NavbarContextValue] (val x: Self) extends AnyVal {
       
       inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       

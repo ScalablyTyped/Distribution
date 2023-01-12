@@ -19,7 +19,8 @@ object QueryResultItem {
     __obj.asInstanceOf[QueryResultItem]
   }
   
-  extension [Self <: QueryResultItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryResultItem] (val x: Self) extends AnyVal {
     
     inline def set_doc(value: js.Array[Any]): Self = StObject.set(x, "_doc", value.asInstanceOf[js.Any])
     

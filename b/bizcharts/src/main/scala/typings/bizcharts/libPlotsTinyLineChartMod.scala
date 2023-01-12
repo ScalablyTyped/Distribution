@@ -110,7 +110,8 @@ object libPlotsTinyLineChartMod extends Shortcut {
       __obj.asInstanceOf[Opt]
     }
     
-    extension [Self <: Opt](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Opt] (val x: Self) extends AnyVal {
       
       inline def setAnimation(value: Animation): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
       
@@ -283,7 +284,8 @@ object libPlotsTinyLineChartMod extends Shortcut {
       __obj.asInstanceOf[TinyLineOptions]
     }
     
-    extension [Self <: TinyLineOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TinyLineOptions] (val x: Self) extends AnyVal {
       
       inline def setData(value: js.Array[Double | (Record[String, Any])]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       

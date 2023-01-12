@@ -43,7 +43,8 @@ object TrainingRun {
     __obj.asInstanceOf[TrainingRun]
   }
   
-  extension [Self <: TrainingRun](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TrainingRun] (val x: Self) extends AnyVal {
     
     inline def setClassLevelGlobalExplanations(value: js.Array[GlobalExplanation]): Self = StObject.set(x, "classLevelGlobalExplanations", value.asInstanceOf[js.Any])
     

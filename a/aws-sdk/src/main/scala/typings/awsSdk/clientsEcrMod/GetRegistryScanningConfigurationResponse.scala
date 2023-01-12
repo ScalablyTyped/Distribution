@@ -23,7 +23,8 @@ object GetRegistryScanningConfigurationResponse {
     __obj.asInstanceOf[GetRegistryScanningConfigurationResponse]
   }
   
-  extension [Self <: GetRegistryScanningConfigurationResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetRegistryScanningConfigurationResponse] (val x: Self) extends AnyVal {
     
     inline def setRegistryId(value: RegistryId): Self = StObject.set(x, "registryId", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object DescribeDominantLanguageDetectionJobResponse {
     __obj.asInstanceOf[DescribeDominantLanguageDetectionJobResponse]
   }
   
-  extension [Self <: DescribeDominantLanguageDetectionJobResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeDominantLanguageDetectionJobResponse] (val x: Self) extends AnyVal {
     
     inline def setDominantLanguageDetectionJobProperties(value: DominantLanguageDetectionJobProperties): Self = StObject.set(x, "DominantLanguageDetectionJobProperties", value.asInstanceOf[js.Any])
     

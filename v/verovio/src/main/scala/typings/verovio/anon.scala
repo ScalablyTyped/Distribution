@@ -23,7 +23,8 @@ object anon {
       __obj.asInstanceOf[Attribute]
     }
     
-    extension [Self <: Attribute](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Attribute] (val x: Self) extends AnyVal {
       
       inline def setAttribute(value: String): Self = StObject.set(x, "attribute", value.asInstanceOf[js.Any])
       
@@ -50,7 +51,8 @@ object anon {
       __obj.asInstanceOf[CtrlKey]
     }
     
-    extension [Self <: CtrlKey](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CtrlKey] (val x: Self) extends AnyVal {
       
       inline def setCtrlKey(value: Boolean): Self = StObject.set(x, "ctrlKey", value.asInstanceOf[js.Any])
       
@@ -73,7 +75,8 @@ object anon {
       __obj.asInstanceOf[ElementId]
     }
     
-    extension [Self <: ElementId](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ElementId] (val x: Self) extends AnyVal {
       
       inline def setElementId(value: String): Self = StObject.set(x, "elementId", value.asInstanceOf[js.Any])
     }
@@ -94,7 +97,8 @@ object anon {
       __obj.asInstanceOf[ElementType]
     }
     
-    extension [Self <: ElementType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ElementType] (val x: Self) extends AnyVal {
       
       inline def setElementType(value: String): Self = StObject.set(x, "elementType", value.asInstanceOf[js.Any])
       
@@ -117,7 +121,8 @@ object anon {
       __obj.asInstanceOf[Name]
     }
     
-    extension [Self <: Name](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Name] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -138,7 +143,8 @@ object anon {
       __obj.asInstanceOf[Notes]
     }
     
-    extension [Self <: Notes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Notes] (val x: Self) extends AnyVal {
       
       inline def setNotes(value: js.Array[String]): Self = StObject.set(x, "notes", value.asInstanceOf[js.Any])
       
@@ -176,7 +182,8 @@ object anon {
       __obj.asInstanceOf[RealTimeOffsetMilliseconds]
     }
     
-    extension [Self <: RealTimeOffsetMilliseconds](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RealTimeOffsetMilliseconds] (val x: Self) extends AnyVal {
       
       inline def setRealTimeOffsetMilliseconds(value: Double): Self = StObject.set(x, "realTimeOffsetMilliseconds", value.asInstanceOf[js.Any])
       
@@ -207,7 +214,8 @@ object anon {
       __obj.asInstanceOf[X]
     }
     
-    extension [Self <: X](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: X] (val x: Self) extends AnyVal {
       
       inline def setElementId(value: String): Self = StObject.set(x, "elementId", value.asInstanceOf[js.Any])
       

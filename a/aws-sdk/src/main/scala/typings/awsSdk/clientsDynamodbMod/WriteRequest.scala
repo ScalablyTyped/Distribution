@@ -23,7 +23,8 @@ object WriteRequest {
     __obj.asInstanceOf[WriteRequest]
   }
   
-  extension [Self <: WriteRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WriteRequest] (val x: Self) extends AnyVal {
     
     inline def setDeleteRequest(value: DeleteRequest): Self = StObject.set(x, "DeleteRequest", value.asInstanceOf[js.Any])
     

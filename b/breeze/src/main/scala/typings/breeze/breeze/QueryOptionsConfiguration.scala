@@ -17,7 +17,8 @@ object QueryOptionsConfiguration {
     __obj.asInstanceOf[QueryOptionsConfiguration]
   }
   
-  extension [Self <: QueryOptionsConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryOptionsConfiguration] (val x: Self) extends AnyVal {
     
     inline def setFetchStrategy(value: FetchStrategySymbol): Self = StObject.set(x, "fetchStrategy", value.asInstanceOf[js.Any])
     

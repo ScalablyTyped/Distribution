@@ -38,7 +38,8 @@ object CreateLocationNfsRequest {
     __obj.asInstanceOf[CreateLocationNfsRequest]
   }
   
-  extension [Self <: CreateLocationNfsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateLocationNfsRequest] (val x: Self) extends AnyVal {
     
     inline def setMountOptions(value: NfsMountOptions): Self = StObject.set(x, "MountOptions", value.asInstanceOf[js.Any])
     

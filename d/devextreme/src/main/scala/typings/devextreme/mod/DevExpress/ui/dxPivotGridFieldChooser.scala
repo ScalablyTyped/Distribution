@@ -61,7 +61,8 @@ object dxPivotGridFieldChooser {
       __obj.asInstanceOf[ContextMenuPreparingEvent]
     }
     
-    extension [Self <: ContextMenuPreparingEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContextMenuPreparingEvent] (val x: Self) extends AnyVal {
       
       inline def setArea(value: String): Self = StObject.set(x, "area", value.asInstanceOf[js.Any])
       

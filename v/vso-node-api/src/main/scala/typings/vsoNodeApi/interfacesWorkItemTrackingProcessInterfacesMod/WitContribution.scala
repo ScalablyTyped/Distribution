@@ -39,7 +39,8 @@ object WitContribution {
     __obj.asInstanceOf[WitContribution]
   }
   
-  extension [Self <: WitContribution](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WitContribution] (val x: Self) extends AnyVal {
     
     inline def setContributionId(value: String): Self = StObject.set(x, "contributionId", value.asInstanceOf[js.Any])
     

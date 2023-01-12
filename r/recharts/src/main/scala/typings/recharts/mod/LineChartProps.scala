@@ -28,7 +28,8 @@ object LineChartProps {
     __obj.asInstanceOf[LineChartProps]
   }
   
-  extension [Self <: LineChartProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LineChartProps] (val x: Self) extends AnyVal {
     
     inline def setOnMouseOut(value: RechartsFunction): Self = StObject.set(x, "onMouseOut", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object PortRangeFilter {
     __obj.asInstanceOf[PortRangeFilter]
   }
   
-  extension [Self <: PortRangeFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PortRangeFilter] (val x: Self) extends AnyVal {
     
     inline def setBeginInclusive(value: Port): Self = StObject.set(x, "beginInclusive", value.asInstanceOf[js.Any])
     

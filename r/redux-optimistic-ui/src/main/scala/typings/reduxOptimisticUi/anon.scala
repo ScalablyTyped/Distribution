@@ -30,7 +30,8 @@ object anon {
       __obj.asInstanceOf[Id]
     }
     
-    extension [Self <: Id](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Id] (val x: Self) extends AnyVal {
       
       inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -52,7 +53,8 @@ object anon {
       __obj.asInstanceOf[Optimistic]
     }
     
-    extension [Self <: Optimistic](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Optimistic] (val x: Self) extends AnyVal {
       
       inline def setOptimistic(value: Id): Self = StObject.set(x, "optimistic", value.asInstanceOf[js.Any])
     }

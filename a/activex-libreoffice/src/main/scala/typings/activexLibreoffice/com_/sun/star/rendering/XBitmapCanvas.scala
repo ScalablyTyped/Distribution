@@ -81,7 +81,8 @@ object XBitmapCanvas {
     __obj.asInstanceOf[XBitmapCanvas]
   }
   
-  extension [Self <: XBitmapCanvas](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XBitmapCanvas] (val x: Self) extends AnyVal {
     
     inline def setCopyRect(
       value: (XBitmapCanvas, RealRectangle2D, ViewState, RenderState, RealRectangle2D, ViewState, RenderState) => Unit

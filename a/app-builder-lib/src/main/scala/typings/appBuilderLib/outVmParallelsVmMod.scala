@@ -41,7 +41,8 @@ object outVmParallelsVmMod {
       __obj.asInstanceOf[ParallelsVm]
     }
     
-    extension [Self <: ParallelsVm](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParallelsVm] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       

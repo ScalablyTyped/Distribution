@@ -15,7 +15,8 @@ object TypeofUsDomesticWire {
     __obj.asInstanceOf[TypeofUsDomesticWire]
   }
   
-  extension [Self <: TypeofUsDomesticWire](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofUsDomesticWire] (val x: Self) extends AnyVal {
     
     inline def setStatusDetail(value: Any): Self = StObject.set(x, "StatusDetail", value.asInstanceOf[js.Any])
   }

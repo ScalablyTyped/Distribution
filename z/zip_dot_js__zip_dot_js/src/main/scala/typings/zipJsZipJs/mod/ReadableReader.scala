@@ -22,7 +22,8 @@ object ReadableReader {
     __obj.asInstanceOf[ReadableReader]
   }
   
-  extension [Self <: ReadableReader](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadableReader] (val x: Self) extends AnyVal {
     
     inline def setReadable(value: ReadableStream[Any]): Self = StObject.set(x, "readable", value.asInstanceOf[js.Any])
   }

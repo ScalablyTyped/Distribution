@@ -23,7 +23,8 @@ object ICreateSyntaxDiagramsConfig {
     __obj.asInstanceOf[ICreateSyntaxDiagramsConfig]
   }
   
-  extension [Self <: ICreateSyntaxDiagramsConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICreateSyntaxDiagramsConfig] (val x: Self) extends AnyVal {
     
     inline def setCss(value: String): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
     

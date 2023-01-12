@@ -28,7 +28,8 @@ object TypeofGSSAPICanonicalizat {
     __obj.asInstanceOf[TypeofGSSAPICanonicalizat]
   }
   
-  extension [Self <: TypeofGSSAPICanonicalizat](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofGSSAPICanonicalizat] (val x: Self) extends AnyVal {
     
     inline def setForward(value: forward): Self = StObject.set(x, "forward", value.asInstanceOf[js.Any])
     

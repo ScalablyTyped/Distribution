@@ -39,7 +39,8 @@ object Typeofdriving {
     __obj.asInstanceOf[Typeofdriving]
   }
   
-  extension [Self <: Typeofdriving](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Typeofdriving] (val x: Self) extends AnyVal {
     
     inline def setPath(value: Instantiable0[Path]): Self = StObject.set(x, "Path", value.asInstanceOf[js.Any])
     

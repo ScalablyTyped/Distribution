@@ -53,7 +53,8 @@ object MedicationAdministrationDosage {
     __obj.asInstanceOf[MedicationAdministrationDosage]
   }
   
-  extension [Self <: MedicationAdministrationDosage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MedicationAdministrationDosage] (val x: Self) extends AnyVal {
     
     inline def setDose(value: Quantity): Self = StObject.set(x, "dose", value.asInstanceOf[js.Any])
     

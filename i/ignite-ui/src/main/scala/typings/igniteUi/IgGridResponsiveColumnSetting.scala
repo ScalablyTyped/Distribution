@@ -43,7 +43,8 @@ object IgGridResponsiveColumnSetting {
     __obj.asInstanceOf[IgGridResponsiveColumnSetting]
   }
   
-  extension [Self <: IgGridResponsiveColumnSetting](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgGridResponsiveColumnSetting] (val x: Self) extends AnyVal {
     
     inline def setClasses(value: String): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
     

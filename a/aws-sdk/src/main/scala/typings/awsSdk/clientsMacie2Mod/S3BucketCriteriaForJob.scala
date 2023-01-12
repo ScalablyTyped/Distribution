@@ -23,7 +23,8 @@ object S3BucketCriteriaForJob {
     __obj.asInstanceOf[S3BucketCriteriaForJob]
   }
   
-  extension [Self <: S3BucketCriteriaForJob](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: S3BucketCriteriaForJob] (val x: Self) extends AnyVal {
     
     inline def setExcludes(value: CriteriaBlockForJob): Self = StObject.set(x, "excludes", value.asInstanceOf[js.Any])
     

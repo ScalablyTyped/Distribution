@@ -59,7 +59,8 @@ object FinderPatternFinder {
     __obj.asInstanceOf[FinderPatternFinder]
   }
   
-  extension [Self <: FinderPatternFinder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FinderPatternFinder] (val x: Self) extends AnyVal {
     
     inline def setCenterFromEnd(value: (js.Tuple5[Double, Double, Double, Double, Double], Double) => Double): Self = StObject.set(x, "centerFromEnd", js.Any.fromFunction2(value))
     

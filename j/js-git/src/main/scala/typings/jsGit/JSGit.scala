@@ -63,7 +63,8 @@ object JSGit {
       __obj.asInstanceOf[DB]
     }
     
-    extension [Self <: DB](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DB] (val x: Self) extends AnyVal {
       
       inline def setClear(value: js.Function1[/* err */ Any, Unit] => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction1(value))
       
@@ -96,7 +97,8 @@ object JSGit {
       __obj.asInstanceOf[GitAuthor]
     }
     
-    extension [Self <: GitAuthor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GitAuthor] (val x: Self) extends AnyVal {
       
       inline def setDate(value: js.Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
       
@@ -121,7 +123,8 @@ object JSGit {
       __obj.asInstanceOf[GitCommit]
     }
     
-    extension [Self <: GitCommit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GitCommit] (val x: Self) extends AnyVal {
       
       inline def setAuthor(value: GitAuthor): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
       
@@ -145,7 +148,8 @@ object JSGit {
       __obj.asInstanceOf[GitObject]
     }
     
-    extension [Self <: GitObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GitObject] (val x: Self) extends AnyVal {
       
       inline def setBody(value: Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
@@ -170,7 +174,8 @@ object JSGit {
       __obj.asInstanceOf[GitTreeElem]
     }
     
-    extension [Self <: GitTreeElem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GitTreeElem] (val x: Self) extends AnyVal {
       
       inline def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
       
@@ -318,7 +323,8 @@ object JSGit {
       __obj.asInstanceOf[Repo]
     }
     
-    extension [Self <: Repo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Repo] (val x: Self) extends AnyVal {
       
       inline def setFetch(value: (Remote, js.Object, js.Function1[/* err */ Any, Unit]) => Unit): Self = StObject.set(x, "fetch", js.Any.fromFunction3(value))
       

@@ -67,7 +67,8 @@ object libEsmCommonPropsMod {
       __obj.asInstanceOf[IActionProps]
     }
     
-    extension [Self <: IActionProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IActionProps] (val x: Self) extends AnyVal {
       
       inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
@@ -107,7 +108,8 @@ object libEsmCommonPropsMod {
       __obj.asInstanceOf[IControlledProps]
     }
     
-    extension [Self <: IControlledProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IControlledProps] (val x: Self) extends AnyVal {
       
       inline def setDefaultValue(value: String): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
       
@@ -138,7 +140,8 @@ object libEsmCommonPropsMod {
       __obj.asInstanceOf[IControlledProps2]
     }
     
-    extension [Self <: IControlledProps2](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IControlledProps2] (val x: Self) extends AnyVal {
       
       inline def setDefaultValue(value: String): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
       
@@ -162,7 +165,8 @@ object libEsmCommonPropsMod {
       __obj.asInstanceOf[IElementRefProps[E]]
     }
     
-    extension [Self <: IElementRefProps[?], E /* <: HTMLElement */](x: Self & IElementRefProps[E]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IElementRefProps[?], E /* <: HTMLElement */] (val x: Self & IElementRefProps[E]) extends AnyVal {
       
       inline def setElementRef(value: Ref[E]): Self = StObject.set(x, "elementRef", value.asInstanceOf[js.Any])
       
@@ -186,7 +190,8 @@ object libEsmCommonPropsMod {
       __obj.asInstanceOf[IIntentProps]
     }
     
-    extension [Self <: IIntentProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IIntentProps] (val x: Self) extends AnyVal {
       
       inline def setIntent(value: Intent): Self = StObject.set(x, "intent", value.asInstanceOf[js.Any])
       
@@ -209,7 +214,8 @@ object libEsmCommonPropsMod {
       __obj.asInstanceOf[ILinkProps]
     }
     
-    extension [Self <: ILinkProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ILinkProps] (val x: Self) extends AnyVal {
       
       inline def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
       
@@ -241,7 +247,8 @@ object libEsmCommonPropsMod {
       __obj.asInstanceOf[IOptionProps]
     }
     
-    extension [Self <: IOptionProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IOptionProps] (val x: Self) extends AnyVal {
       
       inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
@@ -267,7 +274,8 @@ object libEsmCommonPropsMod {
       __obj.asInstanceOf[IProps]
     }
     
-    extension [Self <: IProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IProps] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       

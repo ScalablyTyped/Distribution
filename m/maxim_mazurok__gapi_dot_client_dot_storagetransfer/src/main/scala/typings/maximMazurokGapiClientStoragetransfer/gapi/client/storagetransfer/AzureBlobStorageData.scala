@@ -31,7 +31,8 @@ object AzureBlobStorageData {
     __obj.asInstanceOf[AzureBlobStorageData]
   }
   
-  extension [Self <: AzureBlobStorageData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AzureBlobStorageData] (val x: Self) extends AnyVal {
     
     inline def setAzureCredentials(value: AzureCredentials): Self = StObject.set(x, "azureCredentials", value.asInstanceOf[js.Any])
     

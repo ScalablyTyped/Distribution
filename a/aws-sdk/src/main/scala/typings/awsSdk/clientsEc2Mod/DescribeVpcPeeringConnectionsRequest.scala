@@ -38,7 +38,8 @@ object DescribeVpcPeeringConnectionsRequest {
     __obj.asInstanceOf[DescribeVpcPeeringConnectionsRequest]
   }
   
-  extension [Self <: DescribeVpcPeeringConnectionsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeVpcPeeringConnectionsRequest] (val x: Self) extends AnyVal {
     
     inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     

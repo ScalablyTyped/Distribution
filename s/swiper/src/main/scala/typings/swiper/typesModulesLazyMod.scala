@@ -32,7 +32,8 @@ object typesModulesLazyMod {
       __obj.asInstanceOf[LazyEvents]
     }
     
-    extension [Self <: LazyEvents](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LazyEvents] (val x: Self) extends AnyVal {
       
       inline def setLazyImageLoad(value: (default, HTMLElement, HTMLElement) => Unit): Self = StObject.set(x, "lazyImageLoad", js.Any.fromFunction3(value))
       
@@ -60,7 +61,8 @@ object typesModulesLazyMod {
       __obj.asInstanceOf[LazyMethods]
     }
     
-    extension [Self <: LazyMethods](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LazyMethods] (val x: Self) extends AnyVal {
       
       inline def setLoad(value: () => Unit): Self = StObject.set(x, "load", js.Any.fromFunction0(value))
       
@@ -145,7 +147,8 @@ object typesModulesLazyMod {
       __obj.asInstanceOf[LazyOptions]
     }
     
-    extension [Self <: LazyOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LazyOptions] (val x: Self) extends AnyVal {
       
       inline def setCheckInView(value: Boolean): Self = StObject.set(x, "checkInView", value.asInstanceOf[js.Any])
       

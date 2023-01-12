@@ -123,7 +123,8 @@ object mod {
       __obj.asInstanceOf[ServiceConfiguration]
     }
     
-    extension [Self <: ServiceConfiguration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ServiceConfiguration] (val x: Self) extends AnyVal {
       
       inline def setLog(value: Config): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
     }

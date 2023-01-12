@@ -31,7 +31,8 @@ object Knob {
     __obj.asInstanceOf[Knob]
   }
   
-  extension [Self <: Knob](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Knob] (val x: Self) extends AnyVal {
     
     inline def setBackground(value: BackgroundType): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     

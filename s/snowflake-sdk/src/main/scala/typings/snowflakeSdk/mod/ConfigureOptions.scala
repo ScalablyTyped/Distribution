@@ -28,7 +28,8 @@ object ConfigureOptions {
     __obj.asInstanceOf[ConfigureOptions]
   }
   
-  extension [Self <: ConfigureOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConfigureOptions] (val x: Self) extends AnyVal {
     
     inline def setInsecureConnect(value: Boolean): Self = StObject.set(x, "insecureConnect", value.asInstanceOf[js.Any])
     

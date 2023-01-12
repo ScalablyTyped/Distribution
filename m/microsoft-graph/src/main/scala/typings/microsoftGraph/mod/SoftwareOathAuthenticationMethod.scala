@@ -18,7 +18,8 @@ object SoftwareOathAuthenticationMethod {
     __obj.asInstanceOf[SoftwareOathAuthenticationMethod]
   }
   
-  extension [Self <: SoftwareOathAuthenticationMethod](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SoftwareOathAuthenticationMethod] (val x: Self) extends AnyVal {
     
     inline def setSecretKey(value: NullableOption[String]): Self = StObject.set(x, "secretKey", value.asInstanceOf[js.Any])
     

@@ -29,7 +29,8 @@ object buildDevToolsMiddlewareMod {
       __obj.asInstanceOf[LaunchDevToolsOptions]
     }
     
-    extension [Self <: LaunchDevToolsOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LaunchDevToolsOptions] (val x: Self) extends AnyVal {
       
       inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       

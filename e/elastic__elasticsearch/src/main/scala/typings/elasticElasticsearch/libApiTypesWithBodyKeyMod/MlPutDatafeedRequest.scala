@@ -29,7 +29,8 @@ object MlPutDatafeedRequest {
     __obj.asInstanceOf[MlPutDatafeedRequest]
   }
   
-  extension [Self <: MlPutDatafeedRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlPutDatafeedRequest] (val x: Self) extends AnyVal {
     
     inline def setAllow_no_indices(value: Boolean): Self = StObject.set(x, "allow_no_indices", value.asInstanceOf[js.Any])
     

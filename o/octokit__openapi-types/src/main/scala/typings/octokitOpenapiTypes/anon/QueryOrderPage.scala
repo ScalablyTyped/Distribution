@@ -15,7 +15,8 @@ object QueryOrderPage {
     __obj.asInstanceOf[QueryOrderPage]
   }
   
-  extension [Self <: QueryOrderPage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryOrderPage] (val x: Self) extends AnyVal {
     
     inline def setQuery(value: OrderPage): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
   }

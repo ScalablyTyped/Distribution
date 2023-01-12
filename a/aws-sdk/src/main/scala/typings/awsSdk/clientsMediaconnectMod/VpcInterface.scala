@@ -50,7 +50,8 @@ object VpcInterface {
     __obj.asInstanceOf[VpcInterface]
   }
   
-  extension [Self <: VpcInterface](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VpcInterface] (val x: Self) extends AnyVal {
     
     inline def setName(value: string): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     

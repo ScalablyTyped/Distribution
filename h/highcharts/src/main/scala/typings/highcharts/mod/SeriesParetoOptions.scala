@@ -95,7 +95,8 @@ object SeriesParetoOptions {
     __obj.asInstanceOf[SeriesParetoOptions]
   }
   
-  extension [Self <: SeriesParetoOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SeriesParetoOptions] (val x: Self) extends AnyVal {
     
     inline def setBaseSeries(value: Double | String): Self = StObject.set(x, "baseSeries", value.asInstanceOf[js.Any])
     

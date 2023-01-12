@@ -18,7 +18,8 @@ object verifyOptions {
     __obj.asInstanceOf[verifyOptions]
   }
   
-  extension [Self <: verifyOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: verifyOptions] (val x: Self) extends AnyVal {
     
     inline def setSuccess(value: /* res */ verifyTask => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
     

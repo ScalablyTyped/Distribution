@@ -18,7 +18,8 @@ object ConstructorMetadata {
     __obj.asInstanceOf[ConstructorMetadata]
   }
   
-  extension [Self <: ConstructorMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConstructorMetadata] (val x: Self) extends AnyVal {
     
     inline def setCompilerGeneratedMetadata(value: js.Array[NewableFunction]): Self = StObject.set(x, "compilerGeneratedMetadata", value.asInstanceOf[js.Any])
     

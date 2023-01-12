@@ -19,7 +19,8 @@ object NumberFilterValue {
     __obj.asInstanceOf[NumberFilterValue]
   }
   
-  extension [Self <: NumberFilterValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NumberFilterValue] (val x: Self) extends AnyVal {
     
     inline def setComparator(value: FilterComparator): Self = StObject.set(x, "comparator", value.asInstanceOf[js.Any])
     

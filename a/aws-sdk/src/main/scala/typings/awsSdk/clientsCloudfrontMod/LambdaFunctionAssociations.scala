@@ -23,7 +23,8 @@ object LambdaFunctionAssociations {
     __obj.asInstanceOf[LambdaFunctionAssociations]
   }
   
-  extension [Self <: LambdaFunctionAssociations](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LambdaFunctionAssociations] (val x: Self) extends AnyVal {
     
     inline def setItems(value: LambdaFunctionAssociationList): Self = StObject.set(x, "Items", value.asInstanceOf[js.Any])
     

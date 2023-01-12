@@ -31,7 +31,8 @@ object ConditionalFormatRule {
     __obj.asInstanceOf[ConditionalFormatRule]
   }
   
-  extension [Self <: ConditionalFormatRule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConditionalFormatRule] (val x: Self) extends AnyVal {
     
     inline def setCopy(value: () => ConditionalFormatRuleBuilder): Self = StObject.set(x, "copy", js.Any.fromFunction0(value))
     

@@ -50,7 +50,8 @@ object stat {
     __obj.asInstanceOf[stat]
   }
   
-  extension [Self <: stat](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: stat] (val x: Self) extends AnyVal {
     
     inline def setAversion(value: Double): Self = StObject.set(x, "aversion", value.asInstanceOf[js.Any])
     

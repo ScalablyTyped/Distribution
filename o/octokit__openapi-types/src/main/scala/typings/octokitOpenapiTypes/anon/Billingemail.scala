@@ -255,7 +255,8 @@ object Billingemail {
     __obj.asInstanceOf[Billingemail]
   }
   
-  extension [Self <: Billingemail](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Billingemail] (val x: Self) extends AnyVal {
     
     inline def setAdvanced_security_enabled_for_new_repositories(value: Boolean): Self = StObject.set(x, "advanced_security_enabled_for_new_repositories", value.asInstanceOf[js.Any])
     

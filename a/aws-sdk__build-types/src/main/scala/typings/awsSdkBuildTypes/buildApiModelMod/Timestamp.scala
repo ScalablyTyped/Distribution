@@ -23,7 +23,8 @@ object Timestamp {
     __obj.asInstanceOf[Timestamp]
   }
   
-  extension [Self <: Timestamp](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Timestamp] (val x: Self) extends AnyVal {
     
     inline def setTimestampFormat(value: java.lang.String): Self = StObject.set(x, "timestampFormat", value.asInstanceOf[js.Any])
     

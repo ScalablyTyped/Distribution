@@ -84,7 +84,8 @@ object mod {
       __obj.asInstanceOf[CallbackRsp]
     }
     
-    extension [Self <: CallbackRsp](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CallbackRsp] (val x: Self) extends AnyVal {
       
       inline def setApply_num(value: String): Self = StObject.set(x, "apply_num", value.asInstanceOf[js.Any])
       
@@ -211,7 +212,8 @@ object mod {
       __obj.asInstanceOf[CertificationData]
     }
     
-    extension [Self <: CertificationData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CertificationData] (val x: Self) extends AnyVal {
       
       inline def setApp_scheme(value: String): Self = StObject.set(x, "app_scheme", value.asInstanceOf[js.Any])
       
@@ -262,7 +264,8 @@ object mod {
       __obj.asInstanceOf[CertificationProps]
     }
     
-    extension [Self <: CertificationProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CertificationProps] (val x: Self) extends AnyVal {
       
       inline def setCallback(value: CallbackRsp => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
       
@@ -495,7 +498,8 @@ object mod {
       __obj.asInstanceOf[PaymentData]
     }
     
-    extension [Self <: PaymentData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PaymentData] (val x: Self) extends AnyVal {
       
       inline def setAmount(value: Double): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
       
@@ -604,7 +608,8 @@ object mod {
       __obj.asInstanceOf[PaymentProps]
     }
     
-    extension [Self <: PaymentProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PaymentProps] (val x: Self) extends AnyVal {
       
       inline def setCallback(value: CallbackRsp => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
       

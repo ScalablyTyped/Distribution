@@ -16,7 +16,8 @@ object EditorFragmentDeletionOptions {
     __obj.asInstanceOf[EditorFragmentDeletionOptions]
   }
   
-  extension [Self <: EditorFragmentDeletionOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EditorFragmentDeletionOptions] (val x: Self) extends AnyVal {
     
     inline def setDirection(value: TextDirection): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     

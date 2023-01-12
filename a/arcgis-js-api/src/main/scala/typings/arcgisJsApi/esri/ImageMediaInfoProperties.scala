@@ -29,7 +29,8 @@ object ImageMediaInfoProperties {
     __obj.asInstanceOf[ImageMediaInfoProperties]
   }
   
-  extension [Self <: ImageMediaInfoProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImageMediaInfoProperties] (val x: Self) extends AnyVal {
     
     inline def setRefreshInterval(value: Double): Self = StObject.set(x, "refreshInterval", value.asInstanceOf[js.Any])
     

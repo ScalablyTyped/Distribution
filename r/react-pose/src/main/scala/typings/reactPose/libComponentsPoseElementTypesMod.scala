@@ -27,7 +27,8 @@ object libComponentsPoseElementTypesMod {
       __obj.asInstanceOf[ChildRegistration]
     }
     
-    extension [Self <: ChildRegistration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChildRegistration] (val x: Self) extends AnyVal {
       
       inline def setElement(value: Element): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
@@ -60,7 +61,8 @@ object libComponentsPoseElementTypesMod {
       __obj.asInstanceOf[PopStyle]
     }
     
-    extension [Self <: PopStyle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PopStyle] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -91,7 +93,8 @@ object libComponentsPoseElementTypesMod {
       __obj.asInstanceOf[PoseContextProps]
     }
     
-    extension [Self <: PoseContextProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PoseContextProps] (val x: Self) extends AnyVal {
       
       inline def setGetInitialPoseFromParent(value: () => CurrentPose | Unit): Self = StObject.set(x, "getInitialPoseFromParent", js.Any.fromFunction0(value))
       
@@ -151,7 +154,8 @@ object libComponentsPoseElementTypesMod {
       __obj.asInstanceOf[PoseElementInternalProps]
     }
     
-    extension [Self <: PoseElementInternalProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PoseElementInternalProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: Any): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -245,7 +249,8 @@ object libComponentsPoseElementTypesMod {
       __obj.asInstanceOf[PoseElementProps]
     }
     
-    extension [Self <: PoseElementProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PoseElementProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: Any): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

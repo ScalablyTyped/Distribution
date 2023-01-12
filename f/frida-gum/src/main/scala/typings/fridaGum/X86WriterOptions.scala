@@ -22,7 +22,8 @@ object X86WriterOptions {
     __obj.asInstanceOf[X86WriterOptions]
   }
   
-  extension [Self <: X86WriterOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: X86WriterOptions] (val x: Self) extends AnyVal {
     
     inline def setPc(value: NativePointer): Self = StObject.set(x, "pc", value.asInstanceOf[js.Any])
     

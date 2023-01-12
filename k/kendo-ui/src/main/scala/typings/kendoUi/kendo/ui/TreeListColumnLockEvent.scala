@@ -17,7 +17,8 @@ object TreeListColumnLockEvent {
     __obj.asInstanceOf[TreeListColumnLockEvent]
   }
   
-  extension [Self <: TreeListColumnLockEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TreeListColumnLockEvent] (val x: Self) extends AnyVal {
     
     inline def setColumn(value: Any): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
     

@@ -43,7 +43,8 @@ object PickImplsiblingLabelParti {
     __obj.asInstanceOf[PickImplsiblingLabelParti]
   }
   
-  extension [Self <: PickImplsiblingLabelParti](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickImplsiblingLabelParti] (val x: Self) extends AnyVal {
     
     inline def setAddition(value: String): Self = StObject.set(x, "addition", value.asInstanceOf[js.Any])
     

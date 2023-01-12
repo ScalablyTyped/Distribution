@@ -37,7 +37,8 @@ object BaseLayerViewGL2DProperties {
     __obj.asInstanceOf[BaseLayerViewGL2DProperties]
   }
   
-  extension [Self <: BaseLayerViewGL2DProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BaseLayerViewGL2DProperties] (val x: Self) extends AnyVal {
     
     inline def setContext(value: WebGLRenderingContext | Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     

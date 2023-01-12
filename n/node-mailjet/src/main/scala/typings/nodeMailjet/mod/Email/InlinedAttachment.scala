@@ -17,7 +17,8 @@ object InlinedAttachment {
     __obj.asInstanceOf[InlinedAttachment]
   }
   
-  extension [Self <: InlinedAttachment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InlinedAttachment] (val x: Self) extends AnyVal {
     
     inline def setContentID(value: String): Self = StObject.set(x, "ContentID", value.asInstanceOf[js.Any])
   }

@@ -61,7 +61,8 @@ object ExceptionDetails {
     __obj.asInstanceOf[ExceptionDetails]
   }
   
-  extension [Self <: ExceptionDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExceptionDetails] (val x: Self) extends AnyVal {
     
     inline def setColumnNumber(value: Double): Self = StObject.set(x, "columnNumber", value.asInstanceOf[js.Any])
     

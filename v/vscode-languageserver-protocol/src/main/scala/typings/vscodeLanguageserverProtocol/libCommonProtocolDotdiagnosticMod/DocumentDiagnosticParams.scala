@@ -34,7 +34,8 @@ object DocumentDiagnosticParams {
     __obj.asInstanceOf[DocumentDiagnosticParams]
   }
   
-  extension [Self <: DocumentDiagnosticParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DocumentDiagnosticParams] (val x: Self) extends AnyVal {
     
     inline def setIdentifier(value: String): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
     

@@ -70,7 +70,8 @@ object system {
       __obj.asInstanceOf[SystemShellExecuteException]
     }
     
-    extension [Self <: SystemShellExecuteException](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SystemShellExecuteException] (val x: Self) extends AnyVal {
       
       inline def setPosixError(value: Double): Self = StObject.set(x, "PosixError", value.asInstanceOf[js.Any])
     }
@@ -129,7 +130,8 @@ object system {
       __obj.asInstanceOf[XSimpleMailClient]
     }
     
-    extension [Self <: XSimpleMailClient](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XSimpleMailClient] (val x: Self) extends AnyVal {
       
       inline def setCreateSimpleMailMessage(value: () => XSimpleMailMessage): Self = StObject.set(x, "createSimpleMailMessage", js.Any.fromFunction0(value))
       
@@ -164,7 +166,8 @@ object system {
       __obj.asInstanceOf[XSimpleMailClientSupplier]
     }
     
-    extension [Self <: XSimpleMailClientSupplier](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XSimpleMailClientSupplier] (val x: Self) extends AnyVal {
       
       inline def setQuerySimpleMailClient(value: () => XSimpleMailClient): Self = StObject.set(x, "querySimpleMailClient", js.Any.fromFunction0(value))
     }
@@ -313,7 +316,8 @@ object system {
       __obj.asInstanceOf[XSimpleMailMessage]
     }
     
-    extension [Self <: XSimpleMailMessage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XSimpleMailMessage] (val x: Self) extends AnyVal {
       
       inline def setAttachement(value: SafeArray[String]): Self = StObject.set(x, "Attachement", value.asInstanceOf[js.Any])
       
@@ -393,7 +397,8 @@ object system {
       __obj.asInstanceOf[XSimpleMailMessage2]
     }
     
-    extension [Self <: XSimpleMailMessage2](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XSimpleMailMessage2] (val x: Self) extends AnyVal {
       
       inline def setBody(value: String): Self = StObject.set(x, "Body", value.asInstanceOf[js.Any])
     }
@@ -427,7 +432,8 @@ object system {
       __obj.asInstanceOf[XSystemShellExecute]
     }
     
-    extension [Self <: XSystemShellExecute](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XSystemShellExecute] (val x: Self) extends AnyVal {
       
       inline def setExecute(value: (String, String, Double) => Unit): Self = StObject.set(x, "execute", js.Any.fromFunction3(value))
     }

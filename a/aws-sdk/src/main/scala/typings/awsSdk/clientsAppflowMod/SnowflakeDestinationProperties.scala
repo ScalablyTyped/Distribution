@@ -34,7 +34,8 @@ object SnowflakeDestinationProperties {
     __obj.asInstanceOf[SnowflakeDestinationProperties]
   }
   
-  extension [Self <: SnowflakeDestinationProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SnowflakeDestinationProperties] (val x: Self) extends AnyVal {
     
     inline def setBucketPrefix(value: BucketPrefix): Self = StObject.set(x, "bucketPrefix", value.asInstanceOf[js.Any])
     

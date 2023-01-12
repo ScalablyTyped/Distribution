@@ -31,7 +31,8 @@ object RequestChildNodesRequest {
     __obj.asInstanceOf[RequestChildNodesRequest]
   }
   
-  extension [Self <: RequestChildNodesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RequestChildNodesRequest] (val x: Self) extends AnyVal {
     
     inline def setDepth(value: integer): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
     

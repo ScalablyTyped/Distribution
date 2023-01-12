@@ -23,7 +23,8 @@ object SetDefaultMessageTypeRequest {
     __obj.asInstanceOf[SetDefaultMessageTypeRequest]
   }
   
-  extension [Self <: SetDefaultMessageTypeRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetDefaultMessageTypeRequest] (val x: Self) extends AnyVal {
     
     inline def setConfigurationSetName(value: ConfigurationSetNameOrArn): Self = StObject.set(x, "ConfigurationSetName", value.asInstanceOf[js.Any])
     

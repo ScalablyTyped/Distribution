@@ -15,7 +15,8 @@ object EnumValuesMultiConfiguration {
     __obj.asInstanceOf[EnumValuesMultiConfiguration]
   }
   
-  extension [Self <: EnumValuesMultiConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnumValuesMultiConfiguration] (val x: Self) extends AnyVal {
     
     inline def setEnumValues(value: MultiConfiguration): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
   }

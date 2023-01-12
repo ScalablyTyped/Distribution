@@ -19,7 +19,8 @@ object VRStageParameters {
     __obj.asInstanceOf[VRStageParameters]
   }
   
-  extension [Self <: VRStageParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VRStageParameters] (val x: Self) extends AnyVal {
     
     inline def setSittingToStandingTransform(value: js.typedarray.Float32Array): Self = StObject.set(x, "sittingToStandingTransform", value.asInstanceOf[js.Any])
     

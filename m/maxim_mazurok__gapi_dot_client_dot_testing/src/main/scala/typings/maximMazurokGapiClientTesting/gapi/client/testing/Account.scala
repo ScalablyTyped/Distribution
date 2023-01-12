@@ -16,7 +16,8 @@ object Account {
     __obj.asInstanceOf[Account]
   }
   
-  extension [Self <: Account](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Account] (val x: Self) extends AnyVal {
     
     inline def setGoogleAuto(value: Any): Self = StObject.set(x, "googleAuto", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object AccessTokenIdLength {
     __obj.asInstanceOf[AccessTokenIdLength]
   }
   
-  extension [Self <: AccessTokenIdLength](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccessTokenIdLength] (val x: Self) extends AnyVal {
     
     inline def setAccessTokenIdLength(value: Double): Self = StObject.set(x, "accessTokenIdLength", value.asInstanceOf[js.Any])
     

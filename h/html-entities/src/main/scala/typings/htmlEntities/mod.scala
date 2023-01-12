@@ -41,7 +41,8 @@ object mod {
       __obj.asInstanceOf[CommonOptions]
     }
     
-    extension [Self <: CommonOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommonOptions] (val x: Self) extends AnyVal {
       
       inline def setLevel(value: Level): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
       
@@ -62,7 +63,8 @@ object mod {
       __obj.asInstanceOf[DecodeOptions]
     }
     
-    extension [Self <: DecodeOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DecodeOptions] (val x: Self) extends AnyVal {
       
       inline def setScope(value: DecodeScope): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
       
@@ -118,7 +120,8 @@ object mod {
       __obj.asInstanceOf[EncodeOptions]
     }
     
-    extension [Self <: EncodeOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EncodeOptions] (val x: Self) extends AnyVal {
       
       inline def setMode(value: EncodeMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       

@@ -46,7 +46,8 @@ object PointCloudRendererPointSizeAlgorithm {
     __obj.asInstanceOf[PointCloudRendererPointSizeAlgorithm]
   }
   
-  extension [Self <: PointCloudRendererPointSizeAlgorithm](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PointCloudRendererPointSizeAlgorithm] (val x: Self) extends AnyVal {
     
     inline def setScaleFactor(value: Double): Self = StObject.set(x, "scaleFactor", value.asInstanceOf[js.Any])
     

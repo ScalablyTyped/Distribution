@@ -60,7 +60,8 @@ object sourceBingMapsMod {
       __obj.asInstanceOf[BingMapsImageryMetadataResponse]
     }
     
-    extension [Self <: BingMapsImageryMetadataResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BingMapsImageryMetadataResponse] (val x: Self) extends AnyVal {
       
       inline def setAuthenticationResultCode(value: String): Self = StObject.set(x, "authenticationResultCode", value.asInstanceOf[js.Any])
       
@@ -89,7 +90,8 @@ object sourceBingMapsMod {
       __obj.asInstanceOf[CoverageArea]
     }
     
-    extension [Self <: CoverageArea](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CoverageArea] (val x: Self) extends AnyVal {
       
       inline def setBbox(value: js.Array[Double]): Self = StObject.set(x, "bbox", value.asInstanceOf[js.Any])
       
@@ -114,7 +116,8 @@ object sourceBingMapsMod {
       __obj.asInstanceOf[ImageryProvider]
     }
     
-    extension [Self <: ImageryProvider](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ImageryProvider] (val x: Self) extends AnyVal {
       
       inline def setAttribution(value: String): Self = StObject.set(x, "attribution", value.asInstanceOf[js.Any])
       
@@ -157,7 +160,8 @@ object sourceBingMapsMod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setCacheSize(value: Double): Self = StObject.set(x, "cacheSize", value.asInstanceOf[js.Any])
       
@@ -231,7 +235,8 @@ object sourceBingMapsMod {
       __obj.asInstanceOf[Resource]
     }
     
-    extension [Self <: Resource](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Resource] (val x: Self) extends AnyVal {
       
       inline def setImageHeight(value: Double): Self = StObject.set(x, "imageHeight", value.asInstanceOf[js.Any])
       
@@ -266,7 +271,8 @@ object sourceBingMapsMod {
       __obj.asInstanceOf[ResourceSet]
     }
     
-    extension [Self <: ResourceSet](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResourceSet] (val x: Self) extends AnyVal {
       
       inline def setResources(value: js.Array[Resource]): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
       

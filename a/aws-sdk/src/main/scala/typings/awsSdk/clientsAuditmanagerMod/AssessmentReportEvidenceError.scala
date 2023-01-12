@@ -28,7 +28,8 @@ object AssessmentReportEvidenceError {
     __obj.asInstanceOf[AssessmentReportEvidenceError]
   }
   
-  extension [Self <: AssessmentReportEvidenceError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssessmentReportEvidenceError] (val x: Self) extends AnyVal {
     
     inline def setErrorCode(value: ErrorCode): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
     

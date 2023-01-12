@@ -176,7 +176,8 @@ object libComponentsPrometheusmetricsMod {
       __obj.asInstanceOf[BridgeGaugesCounts]
     }
     
-    extension [Self <: BridgeGaugesCounts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BridgeGaugesCounts] (val x: Self) extends AnyVal {
       
       inline def setMatrixGhosts(value: Double): Self = StObject.set(x, "matrixGhosts", value.asInstanceOf[js.Any])
       
@@ -235,7 +236,8 @@ object libComponentsPrometheusmetricsMod {
       __obj.asInstanceOf[CounterOpts]
     }
     
-    extension [Self <: CounterOpts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CounterOpts] (val x: Self) extends AnyVal {
       
       inline def setHelp(value: String): Self = StObject.set(x, "help", value.asInstanceOf[js.Any])
       
@@ -266,7 +268,8 @@ object libComponentsPrometheusmetricsMod {
       __obj.asInstanceOf[GaugeOpts]
     }
     
-    extension [Self <: GaugeOpts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GaugeOpts] (val x: Self) extends AnyVal {
       
       inline def setRefresh(value: /* gauge */ Gauge[String] => Unit): Self = StObject.set(x, "refresh", js.Any.fromFunction1(value))
       
@@ -287,7 +290,8 @@ object libComponentsPrometheusmetricsMod {
       __obj.asInstanceOf[HistogramOpts]
     }
     
-    extension [Self <: HistogramOpts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HistogramOpts] (val x: Self) extends AnyVal {
       
       inline def setBuckets(value: js.Array[Double]): Self = StObject.set(x, "buckets", value.asInstanceOf[js.Any])
       

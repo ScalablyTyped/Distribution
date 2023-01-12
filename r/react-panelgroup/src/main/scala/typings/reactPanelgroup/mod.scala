@@ -37,7 +37,8 @@ object mod {
       __obj.asInstanceOf[PanelWidth]
     }
     
-    extension [Self <: PanelWidth](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PanelWidth] (val x: Self) extends AnyVal {
       
       inline def setMinSize(value: Double): Self = StObject.set(x, "minSize", value.asInstanceOf[js.Any])
       
@@ -82,7 +83,8 @@ object mod {
       __obj.asInstanceOf[PropTypes]
     }
     
-    extension [Self <: PropTypes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PropTypes] (val x: Self) extends AnyVal {
       
       inline def setBorderColor(value: String): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
       

@@ -29,7 +29,8 @@ object UseMultipleSelectionActions {
     __obj.asInstanceOf[UseMultipleSelectionActions[Item]]
   }
   
-  extension [Self <: UseMultipleSelectionActions[?], Item](x: Self & UseMultipleSelectionActions[Item]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UseMultipleSelectionActions[?], Item] (val x: Self & UseMultipleSelectionActions[Item]) extends AnyVal {
     
     inline def setAddSelectedItem(value: Item => Unit): Self = StObject.set(x, "addSelectedItem", js.Any.fromFunction1(value))
     

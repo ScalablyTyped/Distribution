@@ -55,7 +55,8 @@ object TextDocument {
     __obj.asInstanceOf[TextDocument]
   }
   
-  extension [Self <: TextDocument](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextDocument] (val x: Self) extends AnyVal {
     
     inline def setEol(value: String): Self = StObject.set(x, "eol", value.asInstanceOf[js.Any])
     

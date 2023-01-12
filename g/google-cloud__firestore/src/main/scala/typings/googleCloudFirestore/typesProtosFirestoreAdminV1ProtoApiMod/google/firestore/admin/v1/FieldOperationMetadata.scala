@@ -141,7 +141,8 @@ object FieldOperationMetadata {
       __obj.asInstanceOf[IIndexConfigDelta]
     }
     
-    extension [Self <: IIndexConfigDelta](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IIndexConfigDelta] (val x: Self) extends AnyVal {
       
       inline def setChangeType(value: ChangeType): Self = StObject.set(x, "changeType", value.asInstanceOf[js.Any])
       

@@ -20,7 +20,8 @@ object OrgTeamConcurrencyValues {
     __obj.asInstanceOf[OrgTeamConcurrencyValues]
   }
   
-  extension [Self <: OrgTeamConcurrencyValues](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OrgTeamConcurrencyValues] (val x: Self) extends AnyVal {
     
     inline def setAllowed(value: ConcurrencyValues): Self = StObject.set(x, "allowed", value.asInstanceOf[js.Any])
     

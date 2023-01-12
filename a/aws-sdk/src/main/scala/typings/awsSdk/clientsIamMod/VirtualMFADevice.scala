@@ -43,7 +43,8 @@ object VirtualMFADevice {
     __obj.asInstanceOf[VirtualMFADevice]
   }
   
-  extension [Self <: VirtualMFADevice](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VirtualMFADevice] (val x: Self) extends AnyVal {
     
     inline def setBase32StringSeed(value: BootstrapDatum): Self = StObject.set(x, "Base32StringSeed", value.asInstanceOf[js.Any])
     

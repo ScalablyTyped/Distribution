@@ -37,7 +37,8 @@ object TickConfiguration {
     __obj.asInstanceOf[TickConfiguration]
   }
   
-  extension [Self <: TickConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TickConfiguration] (val x: Self) extends AnyVal {
     
     inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     

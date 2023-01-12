@@ -31,7 +31,8 @@ object LookupValue {
     __obj.asInstanceOf[LookupValue]
   }
   
-  extension [Self <: LookupValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LookupValue] (val x: Self) extends AnyVal {
     
     inline def setEntityType(value: String): Self = StObject.set(x, "entityType", value.asInstanceOf[js.Any])
     

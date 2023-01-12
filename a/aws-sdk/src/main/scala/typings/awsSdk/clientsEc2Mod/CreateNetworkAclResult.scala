@@ -18,7 +18,8 @@ object CreateNetworkAclResult {
     __obj.asInstanceOf[CreateNetworkAclResult]
   }
   
-  extension [Self <: CreateNetworkAclResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateNetworkAclResult] (val x: Self) extends AnyVal {
     
     inline def setNetworkAcl(value: NetworkAcl): Self = StObject.set(x, "NetworkAcl", value.asInstanceOf[js.Any])
     

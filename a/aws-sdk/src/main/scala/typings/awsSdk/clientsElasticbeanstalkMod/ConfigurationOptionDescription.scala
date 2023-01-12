@@ -68,7 +68,8 @@ object ConfigurationOptionDescription {
     __obj.asInstanceOf[ConfigurationOptionDescription]
   }
   
-  extension [Self <: ConfigurationOptionDescription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConfigurationOptionDescription] (val x: Self) extends AnyVal {
     
     inline def setChangeSeverity(value: ConfigurationOptionSeverity): Self = StObject.set(x, "ChangeSeverity", value.asInstanceOf[js.Any])
     

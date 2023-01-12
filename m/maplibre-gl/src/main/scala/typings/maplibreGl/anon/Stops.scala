@@ -23,7 +23,8 @@ object Stops {
     __obj.asInstanceOf[Stops[T]]
   }
   
-  extension [Self <: Stops[?], T](x: Self & Stops[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Stops[?], T] (val x: Self & Stops[T]) extends AnyVal {
     
     inline def setStops(value: js.Array[js.Tuple2[Double, T]]): Self = StObject.set(x, "stops", value.asInstanceOf[js.Any])
     

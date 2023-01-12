@@ -1114,7 +1114,8 @@ object modulesBoostMod {
         __obj.asInstanceOf[Chart]
       }
       
-      extension [Self <: Chart](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Chart] (val x: Self) extends AnyVal {
         
         inline def setIsChartSeriesBoosting(value: Chart => Boolean): Self = StObject.set(x, "isChartSeriesBoosting", js.Any.fromFunction1(value))
       }

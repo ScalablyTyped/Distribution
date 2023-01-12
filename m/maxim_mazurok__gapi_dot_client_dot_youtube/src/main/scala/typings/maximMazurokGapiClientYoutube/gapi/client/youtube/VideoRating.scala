@@ -19,7 +19,8 @@ object VideoRating {
     __obj.asInstanceOf[VideoRating]
   }
   
-  extension [Self <: VideoRating](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VideoRating] (val x: Self) extends AnyVal {
     
     inline def setRating(value: String): Self = StObject.set(x, "rating", value.asInstanceOf[js.Any])
     

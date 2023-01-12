@@ -24,7 +24,8 @@ object Ellipse {
     __obj.asInstanceOf[Ellipse]
   }
   
-  extension [Self <: Ellipse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Ellipse] (val x: Self) extends AnyVal {
     
     inline def setModels(value: IModelMap): Self = StObject.set(x, "models", value.asInstanceOf[js.Any])
     

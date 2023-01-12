@@ -35,7 +35,8 @@ object TextareaProps {
     __obj.asInstanceOf[TextareaProps]
   }
   
-  extension [Self <: TextareaProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextareaProps] (val x: Self) extends AnyVal {
     
     inline def setFloatingLabel(value: Boolean): Self = StObject.set(x, "floatingLabel", value.asInstanceOf[js.Any])
     

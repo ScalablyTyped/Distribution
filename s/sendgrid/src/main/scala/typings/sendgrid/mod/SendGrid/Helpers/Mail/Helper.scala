@@ -167,7 +167,8 @@ object Helper {
     __obj.asInstanceOf[Helper]
   }
   
-  extension [Self <: Helper](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Helper] (val x: Self) extends AnyVal {
     
     inline def setAsm(value: Instantiable2[/* group_id */ Double, /* groups_to_display */ js.Array[Double], Asm]): Self = StObject.set(x, "Asm", value.asInstanceOf[js.Any])
     

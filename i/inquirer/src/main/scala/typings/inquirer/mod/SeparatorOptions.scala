@@ -28,7 +28,8 @@ object SeparatorOptions {
     __obj.asInstanceOf[SeparatorOptions]
   }
   
-  extension [Self <: SeparatorOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SeparatorOptions] (val x: Self) extends AnyVal {
     
     inline def setLine(value: String): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
     

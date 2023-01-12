@@ -17,7 +17,8 @@ object CustomClaims {
     __obj.asInstanceOf[CustomClaims]
   }
   
-  extension [Self <: CustomClaims](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomClaims] (val x: Self) extends AnyVal {
     
     inline def setCustomClaims(value: Boolean): Self = StObject.set(x, "customClaims", value.asInstanceOf[js.Any])
     

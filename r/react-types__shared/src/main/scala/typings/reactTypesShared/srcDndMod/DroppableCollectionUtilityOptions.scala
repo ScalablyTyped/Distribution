@@ -45,7 +45,8 @@ object DroppableCollectionUtilityOptions {
     __obj.asInstanceOf[DroppableCollectionUtilityOptions]
   }
   
-  extension [Self <: DroppableCollectionUtilityOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DroppableCollectionUtilityOptions] (val x: Self) extends AnyVal {
     
     inline def setAcceptedDragTypes(value: all | (js.Array[String | js.Symbol])): Self = StObject.set(x, "acceptedDragTypes", value.asInstanceOf[js.Any])
     

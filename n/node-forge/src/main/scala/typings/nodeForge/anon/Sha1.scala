@@ -39,7 +39,8 @@ object Sha1 {
     __obj.asInstanceOf[Sha1]
   }
   
-  extension [Self <: Sha1](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Sha1] (val x: Self) extends AnyVal {
     
     inline def setMd5(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof md.md5 */ Any): Self = StObject.set(x, "md5", value.asInstanceOf[js.Any])
     

@@ -34,7 +34,8 @@ object SafeArea {
     __obj.asInstanceOf[SafeArea]
   }
   
-  extension [Self <: SafeArea](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SafeArea] (val x: Self) extends AnyVal {
     
     inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
     

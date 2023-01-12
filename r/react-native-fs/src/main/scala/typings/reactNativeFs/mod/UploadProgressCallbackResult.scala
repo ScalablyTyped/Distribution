@@ -21,7 +21,8 @@ object UploadProgressCallbackResult {
     __obj.asInstanceOf[UploadProgressCallbackResult]
   }
   
-  extension [Self <: UploadProgressCallbackResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UploadProgressCallbackResult] (val x: Self) extends AnyVal {
     
     inline def setJobId(value: Double): Self = StObject.set(x, "jobId", value.asInstanceOf[js.Any])
     

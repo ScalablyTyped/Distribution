@@ -236,7 +236,8 @@ object RegExp {
       __obj.asInstanceOf[ChainableBase[RawValue]]
     }
     
-    extension [Self <: ChainableBase[?], RawValue](x: Self & ChainableBase[RawValue]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChainableBase[?], RawValue] (val x: Self & ChainableBase[RawValue]) extends AnyVal {
       
       inline def setAddFlags(value: java.lang.String => SugarDefaultChainable[typings.sugar.RegExp]): Self = StObject.set(x, "addFlags", js.Any.fromFunction1(value))
       

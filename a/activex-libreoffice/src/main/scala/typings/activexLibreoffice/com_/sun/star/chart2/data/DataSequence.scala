@@ -91,7 +91,8 @@ object DataSequence {
     __obj.asInstanceOf[DataSequence]
   }
   
-  extension [Self <: DataSequence](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataSequence] (val x: Self) extends AnyVal {
     
     inline def setHiddenValues(value: SafeArray[Double]): Self = StObject.set(x, "HiddenValues", value.asInstanceOf[js.Any])
     

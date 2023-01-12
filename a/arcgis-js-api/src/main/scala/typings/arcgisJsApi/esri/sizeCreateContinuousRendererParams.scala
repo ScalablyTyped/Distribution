@@ -167,7 +167,8 @@ object sizeCreateContinuousRendererParams {
     __obj.asInstanceOf[sizeCreateContinuousRendererParams]
   }
   
-  extension [Self <: sizeCreateContinuousRendererParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: sizeCreateContinuousRendererParams] (val x: Self) extends AnyVal {
     
     inline def setDefaultSymbolEnabled(value: Boolean): Self = StObject.set(x, "defaultSymbolEnabled", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object anon {
       __obj.asInstanceOf[Conjunction]
     }
     
-    extension [Self <: Conjunction](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Conjunction] (val x: Self) extends AnyVal {
       
       inline def setConjunction(value: String): Self = StObject.set(x, "conjunction", value.asInstanceOf[js.Any])
       

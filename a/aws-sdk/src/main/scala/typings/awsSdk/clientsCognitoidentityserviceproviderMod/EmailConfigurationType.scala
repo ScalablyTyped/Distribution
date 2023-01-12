@@ -38,7 +38,8 @@ object EmailConfigurationType {
     __obj.asInstanceOf[EmailConfigurationType]
   }
   
-  extension [Self <: EmailConfigurationType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EmailConfigurationType] (val x: Self) extends AnyVal {
     
     inline def setConfigurationSet(value: SESConfigurationSet): Self = StObject.set(x, "ConfigurationSet", value.asInstanceOf[js.Any])
     

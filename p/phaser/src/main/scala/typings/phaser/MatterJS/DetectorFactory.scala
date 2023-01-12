@@ -35,7 +35,8 @@ object DetectorFactory {
     __obj.asInstanceOf[DetectorFactory]
   }
   
-  extension [Self <: DetectorFactory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DetectorFactory] (val x: Self) extends AnyVal {
     
     inline def setCanCollide(value: (ICollisionFilter, ICollisionFilter) => Boolean): Self = StObject.set(x, "canCollide", js.Any.fromFunction2(value))
     

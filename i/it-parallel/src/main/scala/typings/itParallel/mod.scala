@@ -33,7 +33,8 @@ object mod {
       __obj.asInstanceOf[ParallelOptions]
     }
     
-    extension [Self <: ParallelOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParallelOptions] (val x: Self) extends AnyVal {
       
       inline def setConcurrency(value: Double): Self = StObject.set(x, "concurrency", value.asInstanceOf[js.Any])
       

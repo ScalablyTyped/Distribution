@@ -87,7 +87,8 @@ object TestPlan {
     __obj.asInstanceOf[TestPlan]
   }
   
-  extension [Self <: TestPlan](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TestPlan] (val x: Self) extends AnyVal {
     
     inline def setArea(value: ShallowReference): Self = StObject.set(x, "area", value.asInstanceOf[js.Any])
     

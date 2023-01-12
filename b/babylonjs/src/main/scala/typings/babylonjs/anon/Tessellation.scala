@@ -28,7 +28,8 @@ object Tessellation {
     __obj.asInstanceOf[Tessellation]
   }
   
-  extension [Self <: Tessellation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Tessellation] (val x: Self) extends AnyVal {
     
     inline def setArc(value: Double): Self = StObject.set(x, "arc", value.asInstanceOf[js.Any])
     

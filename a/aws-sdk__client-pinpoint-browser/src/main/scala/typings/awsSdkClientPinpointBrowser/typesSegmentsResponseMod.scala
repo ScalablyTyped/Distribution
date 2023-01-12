@@ -27,7 +27,8 @@ object typesSegmentsResponseMod {
       __obj.asInstanceOf[SegmentsResponse]
     }
     
-    extension [Self <: SegmentsResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SegmentsResponse] (val x: Self) extends AnyVal {
       
       inline def setItem(value: js.Array[SegmentResponse] | js.Iterable[SegmentResponse]): Self = StObject.set(x, "Item", value.asInstanceOf[js.Any])
       
@@ -58,7 +59,8 @@ object typesSegmentsResponseMod {
       __obj.asInstanceOf[UnmarshalledSegmentsResponse]
     }
     
-    extension [Self <: UnmarshalledSegmentsResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnmarshalledSegmentsResponse] (val x: Self) extends AnyVal {
       
       inline def setItem(value: js.Array[UnmarshalledSegmentResponse]): Self = StObject.set(x, "Item", value.asInstanceOf[js.Any])
       

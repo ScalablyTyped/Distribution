@@ -32,7 +32,8 @@ object mod {
       __obj.asInstanceOf[BooleanMapping]
     }
     
-    extension [Self <: BooleanMapping](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BooleanMapping] (val x: Self) extends AnyVal {
       
       inline def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
       
@@ -56,7 +57,8 @@ object mod {
       __obj.asInstanceOf[GenericMapping]
     }
     
-    extension [Self <: GenericMapping](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GenericMapping] (val x: Self) extends AnyVal {
       
       inline def setKeypath(value: String): Self = StObject.set(x, "keypath", value.asInstanceOf[js.Any])
       
@@ -84,7 +86,8 @@ object mod {
       __obj.asInstanceOf[IntegerMapping]
     }
     
-    extension [Self <: IntegerMapping](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IntegerMapping] (val x: Self) extends AnyVal {
       
       inline def setRadix(value: Double): Self = StObject.set(x, "radix", value.asInstanceOf[js.Any])
       
@@ -131,7 +134,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setParsers(value: Parsers): Self = StObject.set(x, "parsers", value.asInstanceOf[js.Any])
     }

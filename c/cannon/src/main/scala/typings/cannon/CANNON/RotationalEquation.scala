@@ -60,7 +60,8 @@ object RotationalEquation {
     __obj.asInstanceOf[RotationalEquation]
   }
   
-  extension [Self <: RotationalEquation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RotationalEquation] (val x: Self) extends AnyVal {
     
     inline def setInvIi(value: Mat3): Self = StObject.set(x, "invIi", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object StorageConnector {
     __obj.asInstanceOf[StorageConnector]
   }
   
-  extension [Self <: StorageConnector](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StorageConnector] (val x: Self) extends AnyVal {
     
     inline def setConnectorType(value: StorageConnectorType): Self = StObject.set(x, "ConnectorType", value.asInstanceOf[js.Any])
     

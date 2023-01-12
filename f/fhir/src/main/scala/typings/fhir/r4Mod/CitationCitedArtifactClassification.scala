@@ -30,7 +30,8 @@ object CitationCitedArtifactClassification {
     __obj.asInstanceOf[CitationCitedArtifactClassification]
   }
   
-  extension [Self <: CitationCitedArtifactClassification](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CitationCitedArtifactClassification] (val x: Self) extends AnyVal {
     
     inline def setClassifier(value: js.Array[CodeableConcept]): Self = StObject.set(x, "classifier", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object angular {
       __obj.asInstanceOf[IConfigParam]
     }
     
-    extension [Self <: IConfigParam](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IConfigParam] (val x: Self) extends AnyVal {
       
       inline def setElement(value: Node): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
@@ -48,7 +49,8 @@ object angular {
       __obj.asInstanceOf[IDeferredBootstrapperStatic]
     }
     
-    extension [Self <: IDeferredBootstrapperStatic](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDeferredBootstrapperStatic] (val x: Self) extends AnyVal {
       
       inline def setBootstrap(value: IConfigParam => IPromise[Boolean]): Self = StObject.set(x, "bootstrap", js.Any.fromFunction1(value))
     }

@@ -23,7 +23,8 @@ object PickImplclosePartialPickI {
     __obj.asInstanceOf[PickImplclosePartialPickI]
   }
   
-  extension [Self <: PickImplclosePartialPickI](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickImplclosePartialPickI] (val x: Self) extends AnyVal {
     
     inline def setApprove(value: String): Self = StObject.set(x, "approve", value.asInstanceOf[js.Any])
     

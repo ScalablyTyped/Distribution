@@ -21,7 +21,8 @@ object anon {
       __obj.asInstanceOf[Exports]
     }
     
-    extension [Self <: Exports](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Exports] (val x: Self) extends AnyVal {
       
       inline def setExports(value: Any): Self = StObject.set(x, "exports", value.asInstanceOf[js.Any])
       
@@ -46,7 +47,8 @@ object anon {
       __obj.asInstanceOf[IsWeakDep]
     }
     
-    extension [Self <: IsWeakDep](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IsWeakDep] (val x: Self) extends AnyVal {
       
       inline def setIsWeakDep(value: Boolean): Self = StObject.set(x, "isWeakDep", value.asInstanceOf[js.Any])
       
@@ -92,7 +94,8 @@ object anon {
       __obj.asInstanceOf[PartialContextLoaderOptio]
     }
     
-    extension [Self <: PartialContextLoaderOptio](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialContextLoaderOptio] (val x: Self) extends AnyVal {
       
       inline def setCall(value: Boolean): Self = StObject.set(x, "call", value.asInstanceOf[js.Any])
       
@@ -182,7 +185,8 @@ object anon {
       __obj.asInstanceOf[PartialFileLoaderOption]
     }
     
-    extension [Self <: PartialFileLoaderOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialFileLoaderOption] (val x: Self) extends AnyVal {
       
       inline def setCall(value: Boolean): Self = StObject.set(x, "call", value.asInstanceOf[js.Any])
       
@@ -247,7 +251,8 @@ object anon {
       __obj.asInstanceOf[Path]
     }
     
-    extension [Self <: Path](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Path] (val x: Self) extends AnyVal {
       
       inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
@@ -269,7 +274,8 @@ object anon {
       __obj.asInstanceOf[Type]
     }
     
-    extension [Self <: Type](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Type] (val x: Self) extends AnyVal {
       
       inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       

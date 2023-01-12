@@ -17,7 +17,8 @@ object ReorderPlaylistTracksOptions {
     __obj.asInstanceOf[ReorderPlaylistTracksOptions]
   }
   
-  extension [Self <: ReorderPlaylistTracksOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReorderPlaylistTracksOptions] (val x: Self) extends AnyVal {
     
     inline def setRange_length(value: Double): Self = StObject.set(x, "range_length", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object ClusterDeleteVotingConfigExclusionsRequest {
     __obj.asInstanceOf[ClusterDeleteVotingConfigExclusionsRequest]
   }
   
-  extension [Self <: ClusterDeleteVotingConfigExclusionsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClusterDeleteVotingConfigExclusionsRequest] (val x: Self) extends AnyVal {
     
     inline def setWait_for_removal(value: Boolean): Self = StObject.set(x, "wait_for_removal", value.asInstanceOf[js.Any])
     

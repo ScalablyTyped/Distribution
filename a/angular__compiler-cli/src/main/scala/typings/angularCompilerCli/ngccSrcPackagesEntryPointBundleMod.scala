@@ -153,7 +153,8 @@ object ngccSrcPackagesEntryPointBundleMod {
       __obj.asInstanceOf[EntryPointBundle]
     }
     
-    extension [Self <: EntryPointBundle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EntryPointBundle] (val x: Self) extends AnyVal {
       
       inline def setDts(value: BundleProgram): Self = StObject.set(x, "dts", value.asInstanceOf[js.Any])
       

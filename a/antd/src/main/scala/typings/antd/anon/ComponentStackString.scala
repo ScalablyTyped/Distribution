@@ -15,7 +15,8 @@ object ComponentStackString {
     __obj.asInstanceOf[ComponentStackString]
   }
   
-  extension [Self <: ComponentStackString](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ComponentStackString] (val x: Self) extends AnyVal {
     
     inline def setComponentStack(value: String): Self = StObject.set(x, "componentStack", value.asInstanceOf[js.Any])
   }

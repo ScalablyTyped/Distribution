@@ -35,7 +35,8 @@ object typesCampaignLimitsMod {
       __obj.asInstanceOf[CampaignLimits]
     }
     
-    extension [Self <: CampaignLimits](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CampaignLimits] (val x: Self) extends AnyVal {
       
       inline def setDaily(value: Double): Self = StObject.set(x, "Daily", value.asInstanceOf[js.Any])
       

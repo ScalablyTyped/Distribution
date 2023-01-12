@@ -33,7 +33,8 @@ object DescribeRepositoriesRequest {
     __obj.asInstanceOf[DescribeRepositoriesRequest]
   }
   
-  extension [Self <: DescribeRepositoriesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeRepositoriesRequest] (val x: Self) extends AnyVal {
     
     inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     

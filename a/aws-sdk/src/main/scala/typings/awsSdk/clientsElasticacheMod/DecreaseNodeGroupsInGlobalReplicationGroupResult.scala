@@ -15,7 +15,8 @@ object DecreaseNodeGroupsInGlobalReplicationGroupResult {
     __obj.asInstanceOf[DecreaseNodeGroupsInGlobalReplicationGroupResult]
   }
   
-  extension [Self <: DecreaseNodeGroupsInGlobalReplicationGroupResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DecreaseNodeGroupsInGlobalReplicationGroupResult] (val x: Self) extends AnyVal {
     
     inline def setGlobalReplicationGroup(value: GlobalReplicationGroup): Self = StObject.set(x, "GlobalReplicationGroup", value.asInstanceOf[js.Any])
     

@@ -51,7 +51,8 @@ object buildAndroidResourcesMod {
       __obj.asInstanceOf[ResourceGroupXML]
     }
     
-    extension [Self <: ResourceGroupXML](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResourceGroupXML] (val x: Self) extends AnyVal {
       
       inline def set$(value: Parent): Self = StObject.set(x, "$", value.asInstanceOf[js.Any])
       
@@ -77,7 +78,8 @@ object buildAndroidResourcesMod {
       __obj.asInstanceOf[ResourceItemXML]
     }
     
-    extension [Self <: ResourceItemXML](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResourceItemXML] (val x: Self) extends AnyVal {
       
       inline def set$(value: ToolstargetApi): Self = StObject.set(x, "$", value.asInstanceOf[js.Any])
       
@@ -117,7 +119,8 @@ object buildAndroidResourcesMod {
       __obj.asInstanceOf[ResourceXML]
     }
     
-    extension [Self <: ResourceXML](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResourceXML] (val x: Self) extends AnyVal {
       
       inline def setResources(value: Color): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
     }

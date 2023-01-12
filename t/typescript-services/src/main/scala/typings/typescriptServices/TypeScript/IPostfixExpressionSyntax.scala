@@ -43,7 +43,8 @@ object IPostfixExpressionSyntax {
     __obj.asInstanceOf[IPostfixExpressionSyntax]
   }
   
-  extension [Self <: IPostfixExpressionSyntax](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPostfixExpressionSyntax] (val x: Self) extends AnyVal {
     
     inline def setIsPostfixExpression(value: () => Boolean): Self = StObject.set(x, "isPostfixExpression", js.Any.fromFunction0(value))
   }

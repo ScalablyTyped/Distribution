@@ -43,7 +43,8 @@ object XDataFormatTranslator {
     __obj.asInstanceOf[XDataFormatTranslator]
   }
   
-  extension [Self <: XDataFormatTranslator](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XDataFormatTranslator] (val x: Self) extends AnyVal {
     
     inline def setGetDataFlavorFromSystemDataType(value: Any => DataFlavor): Self = StObject.set(x, "getDataFlavorFromSystemDataType", js.Any.fromFunction1(value))
     

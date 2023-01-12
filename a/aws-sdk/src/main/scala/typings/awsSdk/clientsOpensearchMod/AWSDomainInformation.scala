@@ -28,7 +28,8 @@ object AWSDomainInformation {
     __obj.asInstanceOf[AWSDomainInformation]
   }
   
-  extension [Self <: AWSDomainInformation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AWSDomainInformation] (val x: Self) extends AnyVal {
     
     inline def setDomainName(value: DomainName): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
     

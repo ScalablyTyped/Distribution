@@ -21,7 +21,8 @@ object TextHtmlToken {
     __obj.asInstanceOf[TextHtmlToken]
   }
   
-  extension [Self <: TextHtmlToken](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextHtmlToken] (val x: Self) extends AnyVal {
     
     inline def setVal(value: String): Self = StObject.set(x, "val", value.asInstanceOf[js.Any])
   }

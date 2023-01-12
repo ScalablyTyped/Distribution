@@ -108,7 +108,8 @@ object TemplateRecipients {
     __obj.asInstanceOf[TemplateRecipients]
   }
   
-  extension [Self <: TemplateRecipients](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TemplateRecipients] (val x: Self) extends AnyVal {
     
     inline def setAgents(
       value: js.Array[

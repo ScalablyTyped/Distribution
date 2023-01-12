@@ -19,7 +19,8 @@ object SeriesColor {
     __obj.asInstanceOf[SeriesColor]
   }
   
-  extension [Self <: SeriesColor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SeriesColor] (val x: Self) extends AnyVal {
     
     inline def setSeriesColor(value: String): Self = StObject.set(x, "seriesColor", value.asInstanceOf[js.Any])
     

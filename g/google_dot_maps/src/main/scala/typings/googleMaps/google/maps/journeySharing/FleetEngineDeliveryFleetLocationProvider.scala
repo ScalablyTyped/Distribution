@@ -53,7 +53,8 @@ object FleetEngineDeliveryFleetLocationProvider {
     __obj.asInstanceOf[FleetEngineDeliveryFleetLocationProvider]
   }
   
-  extension [Self <: FleetEngineDeliveryFleetLocationProvider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FleetEngineDeliveryFleetLocationProvider] (val x: Self) extends AnyVal {
     
     inline def setDeliveryVehicleFilter(value: String): Self = StObject.set(x, "deliveryVehicleFilter", value.asInstanceOf[js.Any])
     

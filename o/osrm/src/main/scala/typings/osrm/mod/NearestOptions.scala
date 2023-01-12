@@ -37,7 +37,8 @@ object NearestOptions {
     __obj.asInstanceOf[NearestOptions]
   }
   
-  extension [Self <: NearestOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NearestOptions] (val x: Self) extends AnyVal {
     
     inline def setApproaches(value: js.Array[ApproachTypes]): Self = StObject.set(x, "approaches", value.asInstanceOf[js.Any])
     

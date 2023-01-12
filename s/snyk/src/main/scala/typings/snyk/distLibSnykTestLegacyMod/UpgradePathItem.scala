@@ -21,7 +21,8 @@ object UpgradePathItem {
     __obj.asInstanceOf[UpgradePathItem]
   }
   
-  extension [Self <: UpgradePathItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpgradePathItem] (val x: Self) extends AnyVal {
     
     inline def setIsDropped(value: Boolean): Self = StObject.set(x, "isDropped", value.asInstanceOf[js.Any])
     

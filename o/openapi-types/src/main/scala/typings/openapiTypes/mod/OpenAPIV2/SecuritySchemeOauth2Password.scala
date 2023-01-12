@@ -23,7 +23,8 @@ object SecuritySchemeOauth2Password {
     __obj.asInstanceOf[SecuritySchemeOauth2Password]
   }
   
-  extension [Self <: SecuritySchemeOauth2Password](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SecuritySchemeOauth2Password] (val x: Self) extends AnyVal {
     
     inline def setFlow(value: password): Self = StObject.set(x, "flow", value.asInstanceOf[js.Any])
     

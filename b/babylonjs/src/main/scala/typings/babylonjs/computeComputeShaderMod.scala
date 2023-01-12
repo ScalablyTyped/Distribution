@@ -214,7 +214,8 @@ object computeComputeShaderMod {
       __obj.asInstanceOf[IComputeShaderOptions]
     }
     
-    extension [Self <: IComputeShaderOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IComputeShaderOptions] (val x: Self) extends AnyVal {
       
       inline def setBindingsMapping(value: ComputeBindingMapping): Self = StObject.set(x, "bindingsMapping", value.asInstanceOf[js.Any])
       

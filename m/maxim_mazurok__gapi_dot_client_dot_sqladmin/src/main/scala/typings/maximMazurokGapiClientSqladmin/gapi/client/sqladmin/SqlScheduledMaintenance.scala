@@ -24,7 +24,8 @@ object SqlScheduledMaintenance {
     __obj.asInstanceOf[SqlScheduledMaintenance]
   }
   
-  extension [Self <: SqlScheduledMaintenance](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SqlScheduledMaintenance] (val x: Self) extends AnyVal {
     
     inline def setCanDefer(value: Boolean): Self = StObject.set(x, "canDefer", value.asInstanceOf[js.Any])
     

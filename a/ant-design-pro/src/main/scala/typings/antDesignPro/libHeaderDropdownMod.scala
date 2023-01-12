@@ -38,7 +38,8 @@ object libHeaderDropdownMod {
       __obj.asInstanceOf[HeaderDropdownProps]
     }
     
-    extension [Self <: HeaderDropdownProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HeaderDropdownProps] (val x: Self) extends AnyVal {
       
       inline def setOverlay(value: ReactNode | OverlayFunc): Self = StObject.set(x, "overlay", value.asInstanceOf[js.Any])
       

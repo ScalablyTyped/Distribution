@@ -25,7 +25,8 @@ object distLibPluginsRubygemsInspectorsTryGetSpecMod {
       __obj.asInstanceOf[File]
     }
     
-    extension [Self <: File](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: File] (val x: Self) extends AnyVal {
       
       inline def setContents(value: String): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
       
@@ -46,7 +47,8 @@ object distLibPluginsRubygemsInspectorsTryGetSpecMod {
       __obj.asInstanceOf[Files]
     }
     
-    extension [Self <: Files](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Files] (val x: Self) extends AnyVal {
       
       inline def setGemfileLock(value: File): Self = StObject.set(x, "gemfileLock", value.asInstanceOf[js.Any])
       

@@ -19,7 +19,8 @@ object MinMaxDecimationOptions {
     __obj.asInstanceOf[MinMaxDecimationOptions]
   }
   
-  extension [Self <: MinMaxDecimationOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MinMaxDecimationOptions] (val x: Self) extends AnyVal {
     
     inline def setAlgorithm(value: `min-max`): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
   }

@@ -212,7 +212,8 @@ object idstringundefinedmaskstri {
     __obj.asInstanceOf[idstringundefinedmaskstri]
   }
   
-  extension [Self <: idstringundefinedmaskstri](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: idstringundefinedmaskstri] (val x: Self) extends AnyVal {
     
     inline def setClipPath(value: String): Self = StObject.set(x, "clipPath", value.asInstanceOf[js.Any])
     

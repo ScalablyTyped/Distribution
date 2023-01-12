@@ -289,7 +289,8 @@ object buildSrcLegendMod {
       __obj.asInstanceOf[BaseLegendNoValueRefs[ES]]
     }
     
-    extension [Self <: BaseLegendNoValueRefs[?], ES /* <: ExprRef | SignalRef */](x: Self & BaseLegendNoValueRefs[ES]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseLegendNoValueRefs[?], ES /* <: ExprRef | SignalRef */] (val x: Self & BaseLegendNoValueRefs[ES]) extends AnyVal {
       
       inline def setAria(
         value: /* import warning: importer.ImportType#apply Failed type conversion: vega-typings.vega-typings/types/spec/signal.SignalRef extends boolean | undefined ? std.Exclude<boolean | undefined, vega-typings.vega-typings/types/spec/encode.ScaledValueRef<any> | vega-typings.vega-typings/types/spec/encode.NumericValueRef | vega-typings.vega-typings/types/spec/encode.ColorValueRef> | ES : std.Exclude<boolean | undefined, vega-typings.vega-typings/types/spec/encode.ScaledValueRef<any> | vega-typings.vega-typings/types/spec/encode.NumericValueRef | vega-typings.vega-typings/types/spec/encode.ColorValueRef> */ js.Any
@@ -978,7 +979,8 @@ object buildSrcLegendMod {
       __obj.asInstanceOf[Legend[ES]]
     }
     
-    extension [Self <: Legend[?], ES /* <: ExprRef | SignalRef */](x: Self & Legend[ES]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Legend[?], ES /* <: ExprRef | SignalRef */] (val x: Self & Legend[ES]) extends AnyVal {
       
       inline def setAria(
         value: /* import warning: importer.ImportType#apply Failed type conversion: vega-typings.vega-typings/types/spec/signal.SignalRef extends boolean | undefined ? std.Exclude<boolean | undefined, vega-typings.vega-typings/types/spec/encode.ScaledValueRef<any> | vega-typings.vega-typings/types/spec/encode.NumericValueRef | vega-typings.vega-typings/types/spec/encode.ColorValueRef> | ES : std.Exclude<boolean | undefined, vega-typings.vega-typings/types/spec/encode.ScaledValueRef<any> | vega-typings.vega-typings/types/spec/encode.NumericValueRef | vega-typings.vega-typings/types/spec/encode.ColorValueRef> */ js.Any
@@ -1718,7 +1720,8 @@ object buildSrcLegendMod {
       __obj.asInstanceOf[LegendConfig[ES]]
     }
     
-    extension [Self <: LegendConfig[?], ES /* <: ExprRef | SignalRef */](x: Self & LegendConfig[ES]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LegendConfig[?], ES /* <: ExprRef | SignalRef */] (val x: Self & LegendConfig[ES]) extends AnyVal {
       
       inline def setAria(
         value: /* import warning: importer.ImportType#apply Failed type conversion: vega-typings.vega-typings/types/spec/signal.SignalRef extends std.Exclude<boolean | undefined, vega-typings.vega-typings/types/spec/encode.ScaledValueRef<any> | vega-typings.vega-typings/types/spec/encode.NumericValueRef | vega-typings.vega-typings/types/spec/encode.ColorValueRef> | vega-typings.vega-typings/types/spec/config.KeepSignal<boolean | undefined> | undefined ? std.Exclude<std.Exclude<boolean | undefined, vega-typings.vega-typings/types/spec/encode.ScaledValueRef<any> | vega-typings.vega-typings/types/spec/encode.NumericValueRef | vega-typings.vega-typings/types/spec/encode.ColorValueRef> | vega-typings.vega-typings/types/spec/config.KeepSignal<boolean | undefined> | undefined, vega-typings.vega-typings/types/spec/encode.ScaledValueRef<any> | vega-typings.vega-typings/types/spec/encode.NumericValueRef | vega-typings.vega-typings/types/spec/encode.ColorValueRef> | ES : std.Exclude<std.Exclude<boolean | undefined, vega-typings.vega-typings/types/spec/encode.ScaledValueRef<any> | vega-typings.vega-typings/types/spec/encode.NumericValueRef | vega-typings.vega-typings/types/spec/encode.ColorValueRef> | vega-typings.vega-typings/types/spec/config.KeepSignal<boolean | undefined> | undefined, vega-typings.vega-typings/types/spec/encode.ScaledValueRef<any> | vega-typings.vega-typings/types/spec/encode.NumericValueRef | vega-typings.vega-typings/types/spec/encode.ColorValueRef> */ js.Any
@@ -2183,7 +2186,8 @@ object buildSrcLegendMod {
       __obj.asInstanceOf[LegendEncoding]
     }
     
-    extension [Self <: LegendEncoding](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LegendEncoding] (val x: Self) extends AnyVal {
       
       inline def setGradient(value: GuideEncodingEntry): Self = StObject.set(x, "gradient", value.asInstanceOf[js.Any])
       
@@ -2242,7 +2246,8 @@ object buildSrcLegendMod {
       __obj.asInstanceOf[LegendMixins[ES]]
     }
     
-    extension [Self <: LegendMixins[?], ES /* <: ExprRef | SignalRef */](x: Self & LegendMixins[ES]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LegendMixins[?], ES /* <: ExprRef | SignalRef */] (val x: Self & LegendMixins[ES]) extends AnyVal {
       
       inline def setDirection(value: Orientation): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       

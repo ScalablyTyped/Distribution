@@ -49,7 +49,8 @@ object SearchOptions2 {
     __obj.asInstanceOf[SearchOptions2]
   }
   
-  extension [Self <: SearchOptions2](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchOptions2] (val x: Self) extends AnyVal {
     
     inline def setAlgorithmType2(value: Double): Self = StObject.set(x, "AlgorithmType2", value.asInstanceOf[js.Any])
     

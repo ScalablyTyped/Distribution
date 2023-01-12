@@ -41,7 +41,8 @@ object EndpointSettings {
     __obj.asInstanceOf[EndpointSettings]
   }
   
-  extension [Self <: EndpointSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EndpointSettings] (val x: Self) extends AnyVal {
     
     inline def setAliases(value: js.Array[String]): Self = StObject.set(x, "Aliases", value.asInstanceOf[js.Any])
     

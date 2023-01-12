@@ -15,7 +15,8 @@ object Border {
     __obj.asInstanceOf[Border]
   }
   
-  extension [Self <: Border](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Border] (val x: Self) extends AnyVal {
     
     inline def setBorder(value: Disabled): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
   }

@@ -50,7 +50,8 @@ object StellarSetOptionsOperation {
     __obj.asInstanceOf[StellarSetOptionsOperation]
   }
   
-  extension [Self <: StellarSetOptionsOperation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StellarSetOptionsOperation] (val x: Self) extends AnyVal {
     
     inline def setClearFlags(value: Double): Self = StObject.set(x, "clearFlags", value.asInstanceOf[js.Any])
     

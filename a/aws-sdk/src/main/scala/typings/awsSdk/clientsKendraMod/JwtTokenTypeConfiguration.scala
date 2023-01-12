@@ -48,7 +48,8 @@ object JwtTokenTypeConfiguration {
     __obj.asInstanceOf[JwtTokenTypeConfiguration]
   }
   
-  extension [Self <: JwtTokenTypeConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JwtTokenTypeConfiguration] (val x: Self) extends AnyVal {
     
     inline def setClaimRegex(value: ClaimRegex): Self = StObject.set(x, "ClaimRegex", value.asInstanceOf[js.Any])
     

@@ -30,7 +30,8 @@ object WeakValidationMapListSele {
     __obj.asInstanceOf[WeakValidationMapListSele]
   }
   
-  extension [Self <: WeakValidationMapListSele](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WeakValidationMapListSele] (val x: Self) extends AnyVal {
     
     inline def setCheckBoxAriaLabel(
       value: /* import warning: importer.ImportType#apply Failed type conversion: null extends string ? react.react.Validator<string | null | undefined> : undefined extends string ? react.react.Validator<string | null | undefined> : react.react.Validator<string> */ js.Any

@@ -16,7 +16,8 @@ object MultinomialInputs {
     __obj.asInstanceOf[MultinomialInputs]
   }
   
-  extension [Self <: MultinomialInputs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MultinomialInputs] (val x: Self) extends AnyVal {
     
     inline def setLogits(value: scala.Any): Self = StObject.set(x, "logits", value.asInstanceOf[js.Any])
     

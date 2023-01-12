@@ -147,7 +147,8 @@ object distCommonjsElementsIconIconMod {
       __obj.asInstanceOf[StrictIconProps]
     }
     
-    extension [Self <: StrictIconProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StrictIconProps] (val x: Self) extends AnyVal {
       
       inline def `setAria-hidden`(value: String): Self = StObject.set(x, "aria-hidden", value.asInstanceOf[js.Any])
       

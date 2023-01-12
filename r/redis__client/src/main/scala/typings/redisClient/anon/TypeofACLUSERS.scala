@@ -22,7 +22,8 @@ object TypeofACLUSERS {
     __obj.asInstanceOf[TypeofACLUSERS]
   }
   
-  extension [Self <: TypeofACLUSERS](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofACLUSERS] (val x: Self) extends AnyVal {
     
     inline def setTransformArguments(value: () => RedisCommandArguments): Self = StObject.set(x, "transformArguments", js.Any.fromFunction0(value))
     

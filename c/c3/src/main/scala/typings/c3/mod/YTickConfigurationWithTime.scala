@@ -18,7 +18,8 @@ object YTickConfigurationWithTime {
     __obj.asInstanceOf[YTickConfigurationWithTime]
   }
   
-  extension [Self <: YTickConfigurationWithTime](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: YTickConfigurationWithTime] (val x: Self) extends AnyVal {
     
     inline def setTime(value: Interval): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
     

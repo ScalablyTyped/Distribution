@@ -22,7 +22,8 @@ object UnitInvoiceTaxLine {
     __obj.asInstanceOf[UnitInvoiceTaxLine]
   }
   
-  extension [Self <: UnitInvoiceTaxLine](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UnitInvoiceTaxLine] (val x: Self) extends AnyVal {
     
     inline def setTaxAmount(value: Price): Self = StObject.set(x, "taxAmount", value.asInstanceOf[js.Any])
     

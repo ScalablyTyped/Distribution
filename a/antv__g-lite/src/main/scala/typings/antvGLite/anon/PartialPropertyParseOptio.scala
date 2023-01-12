@@ -22,7 +22,8 @@ object PartialPropertyParseOptio {
     __obj.asInstanceOf[PartialPropertyParseOptio]
   }
   
-  extension [Self <: PartialPropertyParseOptio](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialPropertyParseOptio] (val x: Self) extends AnyVal {
     
     inline def setForceUpdateGeometry(value: Boolean): Self = StObject.set(x, "forceUpdateGeometry", value.asInstanceOf[js.Any])
     

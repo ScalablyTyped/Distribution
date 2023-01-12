@@ -20,7 +20,8 @@ object TooltipFormatterContextObject {
     __obj.asInstanceOf[TooltipFormatterContextObject]
   }
   
-  extension [Self <: TooltipFormatterContextObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TooltipFormatterContextObject] (val x: Self) extends AnyVal {
     
     inline def setPoints(value: js.Array[TooltipFormatterContextObject]): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
     

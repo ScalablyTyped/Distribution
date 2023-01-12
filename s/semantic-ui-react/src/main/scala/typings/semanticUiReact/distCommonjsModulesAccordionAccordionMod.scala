@@ -104,7 +104,8 @@ object distCommonjsModulesAccordionAccordionMod {
       __obj.asInstanceOf[StrictAccordionProps]
     }
     
-    extension [Self <: StrictAccordionProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StrictAccordionProps] (val x: Self) extends AnyVal {
       
       inline def setFluid(value: Boolean): Self = StObject.set(x, "fluid", value.asInstanceOf[js.Any])
       

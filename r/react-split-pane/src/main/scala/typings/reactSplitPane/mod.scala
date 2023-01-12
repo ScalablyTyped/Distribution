@@ -67,7 +67,8 @@ object mod {
       __obj.asInstanceOf[PaneProps]
     }
     
-    extension [Self <: PaneProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PaneProps] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -168,7 +169,8 @@ object mod {
       __obj.asInstanceOf[SplitPaneProps]
     }
     
-    extension [Self <: SplitPaneProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SplitPaneProps] (val x: Self) extends AnyVal {
       
       inline def setAllowResize(value: Boolean): Self = StObject.set(x, "allowResize", value.asInstanceOf[js.Any])
       
@@ -265,7 +267,8 @@ object mod {
       __obj.asInstanceOf[SplitPaneState]
     }
     
-    extension [Self <: SplitPaneState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SplitPaneState] (val x: Self) extends AnyVal {
       
       inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       

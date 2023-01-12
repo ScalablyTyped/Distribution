@@ -58,7 +58,8 @@ object anon {
       __obj.asInstanceOf[Color]
     }
     
-    extension [Self <: Color](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Color] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -116,7 +117,8 @@ object anon {
       __obj.asInstanceOf[Colors[RawDatum]]
     }
     
-    extension [Self <: Colors[?], RawDatum /* <: ScatterPlotDatum */](x: Self & Colors[RawDatum]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Colors[?], RawDatum /* <: ScatterPlotDatum */] (val x: Self & Colors[RawDatum]) extends AnyVal {
       
       inline def setColors(value: OrdinalColorScaleConfig[SerieId]): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
       
@@ -194,7 +196,8 @@ object anon {
       __obj.asInstanceOf[FormatX[RawDatum]]
     }
     
-    extension [Self <: FormatX[?], RawDatum /* <: ScatterPlotDatum */](x: Self & FormatX[RawDatum]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FormatX[?], RawDatum /* <: ScatterPlotDatum */] (val x: Self & FormatX[RawDatum]) extends AnyVal {
       
       inline def setFormatX(
         value: /* import warning: importer.ImportType#apply Failed type conversion: RawDatum['x'] */ js.Any => String | Double
@@ -223,7 +226,8 @@ object anon {
       __obj.asInstanceOf[Id]
     }
     
-    extension [Self <: Id](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Id] (val x: Self) extends AnyVal {
       
       inline def setId(value: String | Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     }
@@ -267,7 +271,8 @@ object anon {
       __obj.asInstanceOf[LegendData[RawDatum]]
     }
     
-    extension [Self <: LegendData[?], RawDatum /* <: ScatterPlotDatum */](x: Self & LegendData[RawDatum]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LegendData[?], RawDatum /* <: ScatterPlotDatum */] (val x: Self & LegendData[RawDatum]) extends AnyVal {
       
       inline def setLegendData(value: js.Array[Color]): Self = StObject.set(x, "legendData", value.asInstanceOf[js.Any])
       
@@ -389,7 +394,8 @@ object anon {
       __obj.asInstanceOf[OmitScatterPlotCanvasProp]
     }
     
-    extension [Self <: OmitScatterPlotCanvasProp](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OmitScatterPlotCanvasProp] (val x: Self) extends AnyVal {
       
       inline def setAnnotations(value: js.Array[AnnotationMatcher[ScatterPlotNodeData[ScatterPlotDatum]]]): Self = StObject.set(x, "annotations", value.asInstanceOf[js.Any])
       
@@ -630,7 +636,8 @@ object anon {
       __obj.asInstanceOf[OmitScatterPlotNodeDataSc]
     }
     
-    extension [Self <: OmitScatterPlotNodeDataSc](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OmitScatterPlotNodeDataSc] (val x: Self) extends AnyVal {
       
       inline def setData(value: ScatterPlotDatum): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -698,7 +705,8 @@ object anon {
       __obj.asInstanceOf[OmitScatterPlotNodeDataScData]
     }
     
-    extension [Self <: OmitScatterPlotNodeDataScData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OmitScatterPlotNodeDataScData] (val x: Self) extends AnyVal {
       
       inline def setData(value: ScatterPlotDatum): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -822,7 +830,8 @@ object anon {
       __obj.asInstanceOf[PartialScatterPlotCommonP]
     }
     
-    extension [Self <: PartialScatterPlotCommonP](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialScatterPlotCommonP] (val x: Self) extends AnyVal {
       
       inline def setAnnotations(value: js.Array[AnnotationMatcher[ScatterPlotNodeData[ScatterPlotDatum]]]): Self = StObject.set(x, "annotations", value.asInstanceOf[js.Any])
       
@@ -1037,7 +1046,8 @@ object anon {
       __obj.asInstanceOf[SerieId]
     }
     
-    extension [Self <: SerieId](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SerieId] (val x: Self) extends AnyVal {
       
       inline def setSerieId(value: String | Double): Self = StObject.set(x, "serieId", value.asInstanceOf[js.Any])
     }

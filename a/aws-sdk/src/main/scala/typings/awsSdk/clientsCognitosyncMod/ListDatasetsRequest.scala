@@ -33,7 +33,8 @@ object ListDatasetsRequest {
     __obj.asInstanceOf[ListDatasetsRequest]
   }
   
-  extension [Self <: ListDatasetsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListDatasetsRequest] (val x: Self) extends AnyVal {
     
     inline def setIdentityId(value: IdentityId): Self = StObject.set(x, "IdentityId", value.asInstanceOf[js.Any])
     

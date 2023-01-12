@@ -17,7 +17,8 @@ object ListBoxToolbar {
     __obj.asInstanceOf[ListBoxToolbar]
   }
   
-  extension [Self <: ListBoxToolbar](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListBoxToolbar] (val x: Self) extends AnyVal {
     
     inline def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     

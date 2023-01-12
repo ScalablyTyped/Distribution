@@ -21,7 +21,8 @@ object AccessReviewInstanceDecisionItemAccessPackageAssignmentPolicyResource {
     __obj.asInstanceOf[AccessReviewInstanceDecisionItemAccessPackageAssignmentPolicyResource]
   }
   
-  extension [Self <: AccessReviewInstanceDecisionItemAccessPackageAssignmentPolicyResource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccessReviewInstanceDecisionItemAccessPackageAssignmentPolicyResource] (val x: Self) extends AnyVal {
     
     inline def setAccessPackageDisplayName(value: NullableOption[String]): Self = StObject.set(x, "accessPackageDisplayName", value.asInstanceOf[js.Any])
     

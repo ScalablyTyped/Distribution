@@ -29,7 +29,8 @@ object TransactionStats {
     __obj.asInstanceOf[TransactionStats]
   }
   
-  extension [Self <: TransactionStats](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransactionStats] (val x: Self) extends AnyVal {
     
     inline def setChangedTableCount(value: () => Double): Self = StObject.set(x, "changedTableCount", js.Any.fromFunction0(value))
     

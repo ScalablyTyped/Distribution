@@ -18,7 +18,8 @@ object GetAccessorOutput {
     __obj.asInstanceOf[GetAccessorOutput]
   }
   
-  extension [Self <: GetAccessorOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetAccessorOutput] (val x: Self) extends AnyVal {
     
     inline def setAccessor(value: Accessor): Self = StObject.set(x, "Accessor", value.asInstanceOf[js.Any])
     

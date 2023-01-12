@@ -62,7 +62,8 @@ object CategoryId {
     __obj.asInstanceOf[CategoryId]
   }
   
-  extension [Self <: CategoryId](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CategoryId] (val x: Self) extends AnyVal {
     
     inline def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
     

@@ -25,7 +25,8 @@ object Modification {
     __obj.asInstanceOf[Modification]
   }
   
-  extension [Self <: Modification](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Modification] (val x: Self) extends AnyVal {
     
     inline def setCreate(value: ColumnFamily): Self = StObject.set(x, "create", value.asInstanceOf[js.Any])
     

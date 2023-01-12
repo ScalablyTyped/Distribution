@@ -18,7 +18,8 @@ object Values {
     __obj.asInstanceOf[Values]
   }
   
-  extension [Self <: Values](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Values] (val x: Self) extends AnyVal {
     
     inline def setValue(value: QCStatementSchema): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     

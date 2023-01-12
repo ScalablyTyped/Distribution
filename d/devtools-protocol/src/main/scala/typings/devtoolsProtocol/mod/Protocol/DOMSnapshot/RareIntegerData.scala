@@ -18,7 +18,8 @@ object RareIntegerData {
     __obj.asInstanceOf[RareIntegerData]
   }
   
-  extension [Self <: RareIntegerData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RareIntegerData] (val x: Self) extends AnyVal {
     
     inline def setIndex(value: js.Array[integer]): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     

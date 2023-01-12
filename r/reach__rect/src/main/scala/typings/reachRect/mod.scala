@@ -74,7 +74,8 @@ object mod {
       __obj.asInstanceOf[PRect]
     }
     
-    extension [Self <: PRect](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PRect] (val x: Self) extends AnyVal {
       
       inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       
@@ -140,7 +141,8 @@ object mod {
       __obj.asInstanceOf[RectProps]
     }
     
-    extension [Self <: RectProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RectProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: typings.reachRect.anon.Rect => typings.react.mod.global.JSX.Element): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
     }
@@ -181,7 +183,8 @@ object mod {
       __obj.asInstanceOf[UseRectOptions]
     }
     
-    extension [Self <: UseRectOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UseRectOptions] (val x: Self) extends AnyVal {
       
       inline def setObserve(value: Boolean): Self = StObject.set(x, "observe", value.asInstanceOf[js.Any])
       

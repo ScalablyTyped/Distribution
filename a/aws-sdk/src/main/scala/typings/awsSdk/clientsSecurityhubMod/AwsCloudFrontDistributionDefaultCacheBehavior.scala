@@ -18,7 +18,8 @@ object AwsCloudFrontDistributionDefaultCacheBehavior {
     __obj.asInstanceOf[AwsCloudFrontDistributionDefaultCacheBehavior]
   }
   
-  extension [Self <: AwsCloudFrontDistributionDefaultCacheBehavior](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsCloudFrontDistributionDefaultCacheBehavior] (val x: Self) extends AnyVal {
     
     inline def setViewerProtocolPolicy(value: NonEmptyString): Self = StObject.set(x, "ViewerProtocolPolicy", value.asInstanceOf[js.Any])
     

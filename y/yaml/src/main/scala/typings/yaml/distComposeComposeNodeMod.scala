@@ -75,7 +75,8 @@ object distComposeComposeNodeMod {
       __obj.asInstanceOf[ComposeContext]
     }
     
-    extension [Self <: ComposeContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ComposeContext] (val x: Self) extends AnyVal {
       
       inline def setAtRoot(value: Boolean): Self = StObject.set(x, "atRoot", value.asInstanceOf[js.Any])
       
@@ -108,7 +109,8 @@ object distComposeComposeNodeMod {
       __obj.asInstanceOf[Props]
     }
     
-    extension [Self <: Props](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
       
       inline def setAnchor(value: SourceToken): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
       

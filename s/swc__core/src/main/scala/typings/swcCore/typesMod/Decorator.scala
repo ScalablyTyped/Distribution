@@ -22,7 +22,8 @@ object Decorator {
     __obj.asInstanceOf[Decorator]
   }
   
-  extension [Self <: Decorator](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Decorator] (val x: Self) extends AnyVal {
     
     inline def setExpression(value: Expression): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
     

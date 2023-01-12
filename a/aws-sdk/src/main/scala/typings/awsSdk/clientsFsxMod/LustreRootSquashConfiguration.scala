@@ -23,7 +23,8 @@ object LustreRootSquashConfiguration {
     __obj.asInstanceOf[LustreRootSquashConfiguration]
   }
   
-  extension [Self <: LustreRootSquashConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LustreRootSquashConfiguration] (val x: Self) extends AnyVal {
     
     inline def setNoSquashNids(value: LustreNoSquashNids): Self = StObject.set(x, "NoSquashNids", value.asInstanceOf[js.Any])
     

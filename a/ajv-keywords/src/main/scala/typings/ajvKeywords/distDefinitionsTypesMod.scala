@@ -18,7 +18,8 @@ object distDefinitionsTypesMod {
       __obj.asInstanceOf[DefinitionOptions]
     }
     
-    extension [Self <: DefinitionOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DefinitionOptions] (val x: Self) extends AnyVal {
       
       inline def setDefaultMeta(value: String | Boolean): Self = StObject.set(x, "defaultMeta", value.asInstanceOf[js.Any])
       

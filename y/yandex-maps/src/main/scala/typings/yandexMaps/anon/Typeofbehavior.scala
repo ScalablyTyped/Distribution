@@ -80,7 +80,8 @@ object Typeofbehavior {
     __obj.asInstanceOf[Typeofbehavior]
   }
   
-  extension [Self <: Typeofbehavior](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Typeofbehavior] (val x: Self) extends AnyVal {
     
     inline def setDblClickZoom(value: Instantiable1[/* options */ js.UndefOr[IDblClickZoomOptions], DblClickZoom]): Self = StObject.set(x, "DblClickZoom", value.asInstanceOf[js.Any])
     

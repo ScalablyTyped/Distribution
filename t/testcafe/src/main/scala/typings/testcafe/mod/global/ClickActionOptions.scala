@@ -21,7 +21,8 @@ object ClickActionOptions {
     __obj.asInstanceOf[ClickActionOptions]
   }
   
-  extension [Self <: ClickActionOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClickActionOptions] (val x: Self) extends AnyVal {
     
     inline def setCaretPos(value: Double): Self = StObject.set(x, "caretPos", value.asInstanceOf[js.Any])
     

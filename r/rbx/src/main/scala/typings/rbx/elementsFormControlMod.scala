@@ -86,7 +86,8 @@ object elementsFormControlMod {
       __obj.asInstanceOf[ControlModifierProps]
     }
     
-    extension [Self <: ControlModifierProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ControlModifierProps] (val x: Self) extends AnyVal {
       
       inline def setExpanded(value: Boolean): Self = StObject.set(x, "expanded", value.asInstanceOf[js.Any])
       
@@ -204,7 +205,8 @@ object elementsFormControlMod {
       __obj.asInstanceOf[ControlProps]
     }
     
-    extension [Self <: ControlProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ControlProps] (val x: Self) extends AnyVal {
       
       inline def setBackgroundColor(
         value: primary | success | info | warning | danger | light | dark | white | black | link | `black-bis` | `black-ter` | `grey-darker` | `grey-dark` | grey | `grey-light` | `grey-lighter` | `white-ter` | `white-bis`
@@ -376,7 +378,8 @@ object elementsFormControlMod {
       __obj.asInstanceOf[ControlVariables]
     }
     
-    extension [Self <: ControlVariables](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ControlVariables] (val x: Self) extends AnyVal {
       
       inline def setSizes(value: small | medium | large): Self = StObject.set(x, "sizes", value.asInstanceOf[js.Any])
     }
@@ -393,7 +396,8 @@ object elementsFormControlMod {
       __obj.asInstanceOf[ControlVariablesDefaults]
     }
     
-    extension [Self <: ControlVariablesDefaults](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ControlVariablesDefaults] (val x: Self) extends AnyVal {
       
       inline def setSizes(value: small | medium | large): Self = StObject.set(x, "sizes", value.asInstanceOf[js.Any])
     }

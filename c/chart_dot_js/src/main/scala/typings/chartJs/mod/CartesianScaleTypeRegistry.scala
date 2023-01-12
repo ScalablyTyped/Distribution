@@ -33,7 +33,8 @@ object CartesianScaleTypeRegistry {
     __obj.asInstanceOf[CartesianScaleTypeRegistry]
   }
   
-  extension [Self <: CartesianScaleTypeRegistry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CartesianScaleTypeRegistry] (val x: Self) extends AnyVal {
     
     inline def setCategory(value: OptionsCategoryScaleOptions): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     

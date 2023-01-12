@@ -40,7 +40,8 @@ object LocationState {
     __obj.asInstanceOf[LocationState[TKeys, TState]]
   }
   
-  extension [Self <: LocationState[?, ?], TKeys, TState](x: Self & (LocationState[TKeys, TState])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LocationState[?, ?], TKeys, TState] (val x: Self & (LocationState[TKeys, TState])) extends AnyVal {
     
     inline def setHasSSR(value: Boolean): Self = StObject.set(x, "hasSSR", value.asInstanceOf[js.Any])
     

@@ -33,7 +33,8 @@ object XLibraryContainerExport {
     __obj.asInstanceOf[XLibraryContainerExport]
   }
   
-  extension [Self <: XLibraryContainerExport](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XLibraryContainerExport] (val x: Self) extends AnyVal {
     
     inline def setExportLibrary(value: (String, String, XInteractionHandler) => Unit): Self = StObject.set(x, "exportLibrary", js.Any.fromFunction3(value))
   }

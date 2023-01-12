@@ -32,7 +32,8 @@ object XDataTransferEventListener {
     __obj.asInstanceOf[XDataTransferEventListener]
   }
   
-  extension [Self <: XDataTransferEventListener](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XDataTransferEventListener] (val x: Self) extends AnyVal {
     
     inline def setCancelled(value: DataTransferEvent => Unit): Self = StObject.set(x, "cancelled", js.Any.fromFunction1(value))
     

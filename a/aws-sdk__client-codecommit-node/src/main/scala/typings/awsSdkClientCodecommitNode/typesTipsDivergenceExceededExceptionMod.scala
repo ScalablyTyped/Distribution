@@ -21,7 +21,8 @@ object typesTipsDivergenceExceededExceptionMod {
       __obj.asInstanceOf[TipsDivergenceExceededException]
     }
     
-    extension [Self <: TipsDivergenceExceededException](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TipsDivergenceExceededException] (val x: Self) extends AnyVal {
       
       inline def setName(
         value: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.TipsDivergenceExceededException

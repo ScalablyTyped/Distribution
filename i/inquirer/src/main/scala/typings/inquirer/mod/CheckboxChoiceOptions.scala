@@ -20,7 +20,8 @@ object CheckboxChoiceOptions {
     __obj.asInstanceOf[CheckboxChoiceOptions[T]]
   }
   
-  extension [Self <: CheckboxChoiceOptions[?], T /* <: Answers */](x: Self & CheckboxChoiceOptions[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CheckboxChoiceOptions[?], T /* <: Answers */] (val x: Self & CheckboxChoiceOptions[T]) extends AnyVal {
     
     inline def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
     

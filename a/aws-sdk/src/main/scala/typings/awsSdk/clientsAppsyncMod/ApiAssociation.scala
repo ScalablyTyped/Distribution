@@ -33,7 +33,8 @@ object ApiAssociation {
     __obj.asInstanceOf[ApiAssociation]
   }
   
-  extension [Self <: ApiAssociation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApiAssociation] (val x: Self) extends AnyVal {
     
     inline def setApiId(value: String): Self = StObject.set(x, "apiId", value.asInstanceOf[js.Any])
     

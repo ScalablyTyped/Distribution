@@ -19,7 +19,8 @@ object HighlightPassedThru {
     __obj.asInstanceOf[HighlightPassedThru[TDoc]]
   }
   
-  extension [Self <: HighlightPassedThru[?], TDoc](x: Self & HighlightPassedThru[TDoc]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HighlightPassedThru[?], TDoc] (val x: Self & HighlightPassedThru[TDoc]) extends AnyVal {
     
     inline def setAttribute(value: String): Self = StObject.set(x, "attribute", value.asInstanceOf[js.Any])
     

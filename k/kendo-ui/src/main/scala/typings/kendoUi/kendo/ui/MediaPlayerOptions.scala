@@ -45,7 +45,8 @@ object MediaPlayerOptions {
     __obj.asInstanceOf[MediaPlayerOptions]
   }
   
-  extension [Self <: MediaPlayerOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MediaPlayerOptions] (val x: Self) extends AnyVal {
     
     inline def setAutoPlay(value: Boolean): Self = StObject.set(x, "autoPlay", value.asInstanceOf[js.Any])
     

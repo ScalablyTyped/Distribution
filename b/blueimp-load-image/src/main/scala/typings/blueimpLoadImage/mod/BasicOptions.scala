@@ -29,7 +29,8 @@ object BasicOptions {
     __obj.asInstanceOf[BasicOptions]
   }
   
-  extension [Self <: BasicOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BasicOptions] (val x: Self) extends AnyVal {
     
     inline def setContain(value: Boolean): Self = StObject.set(x, "contain", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object AnalysisKStemTokenFilter {
     __obj.asInstanceOf[AnalysisKStemTokenFilter]
   }
   
-  extension [Self <: AnalysisKStemTokenFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnalysisKStemTokenFilter] (val x: Self) extends AnyVal {
     
     inline def setType(value: kstem): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

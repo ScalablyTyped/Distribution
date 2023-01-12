@@ -26,7 +26,8 @@ object CreateMacBuiltinOption {
     __obj.asInstanceOf[CreateMacBuiltinOption]
   }
   
-  extension [Self <: CreateMacBuiltinOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateMacBuiltinOption] (val x: Self) extends AnyVal {
     
     inline def setHideEdit(value: Boolean): Self = StObject.set(x, "hideEdit", value.asInstanceOf[js.Any])
     

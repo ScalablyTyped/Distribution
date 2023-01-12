@@ -16,7 +16,8 @@ object SearchContactsSuccessCallbackOption {
     __obj.asInstanceOf[SearchContactsSuccessCallbackOption]
   }
   
-  extension [Self <: SearchContactsSuccessCallbackOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchContactsSuccessCallbackOption] (val x: Self) extends AnyVal {
     
     inline def setResult(value: js.Array[SearchContactsResult]): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     

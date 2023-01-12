@@ -26,7 +26,8 @@ object OmitTrendCfgdatadataArray {
     __obj.asInstanceOf[OmitTrendCfgdatadataArray]
   }
   
-  extension [Self <: OmitTrendCfgdatadataArray](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OmitTrendCfgdatadataArray] (val x: Self) extends AnyVal {
     
     inline def setAreaStyle(value: js.Object): Self = StObject.set(x, "areaStyle", value.asInstanceOf[js.Any])
     

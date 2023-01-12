@@ -17,7 +17,8 @@ object SelectMultipleModifiers {
     __obj.asInstanceOf[SelectMultipleModifiers]
   }
   
-  extension [Self <: SelectMultipleModifiers](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SelectMultipleModifiers] (val x: Self) extends AnyVal {
     
     inline def setDisabled(value: Any): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     

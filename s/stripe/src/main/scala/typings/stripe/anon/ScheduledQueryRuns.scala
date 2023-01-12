@@ -16,7 +16,8 @@ object ScheduledQueryRuns {
     __obj.asInstanceOf[ScheduledQueryRuns]
   }
   
-  extension [Self <: ScheduledQueryRuns](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScheduledQueryRuns] (val x: Self) extends AnyVal {
     
     inline def setScheduledQueryRuns(value: ScheduledQueryRunsResource): Self = StObject.set(x, "scheduledQueryRuns", value.asInstanceOf[js.Any])
   }

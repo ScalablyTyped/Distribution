@@ -17,7 +17,8 @@ object InternalEditorRenderLineNumbersOptions {
     __obj.asInstanceOf[InternalEditorRenderLineNumbersOptions]
   }
   
-  extension [Self <: InternalEditorRenderLineNumbersOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InternalEditorRenderLineNumbersOptions] (val x: Self) extends AnyVal {
     
     inline def setRenderFn(value: /* lineNumber */ Double => String): Self = StObject.set(x, "renderFn", js.Any.fromFunction1(value))
     

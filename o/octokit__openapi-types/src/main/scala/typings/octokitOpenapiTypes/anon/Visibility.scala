@@ -32,7 +32,8 @@ object Visibility {
     __obj.asInstanceOf[Visibility]
   }
   
-  extension [Self <: Visibility](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Visibility] (val x: Self) extends AnyVal {
     
     inline def setEncrypted_value(value: String): Self = StObject.set(x, "encrypted_value", value.asInstanceOf[js.Any])
     

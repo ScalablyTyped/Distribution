@@ -17,7 +17,8 @@ object IUriEscapeStatics {
     __obj.asInstanceOf[IUriEscapeStatics]
   }
   
-  extension [Self <: IUriEscapeStatics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IUriEscapeStatics] (val x: Self) extends AnyVal {
     
     inline def setEscapeComponent(value: String => String): Self = StObject.set(x, "escapeComponent", js.Any.fromFunction1(value))
     

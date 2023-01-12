@@ -20,7 +20,8 @@ object TwitterTimelineWidgetUrlDataSource {
     __obj.asInstanceOf[TwitterTimelineWidgetUrlDataSource]
   }
   
-  extension [Self <: TwitterTimelineWidgetUrlDataSource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TwitterTimelineWidgetUrlDataSource] (val x: Self) extends AnyVal {
     
     inline def setSourceType(value: url): Self = StObject.set(x, "sourceType", value.asInstanceOf[js.Any])
     

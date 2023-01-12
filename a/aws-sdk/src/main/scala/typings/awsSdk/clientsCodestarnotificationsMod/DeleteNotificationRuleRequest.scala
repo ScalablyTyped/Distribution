@@ -18,7 +18,8 @@ object DeleteNotificationRuleRequest {
     __obj.asInstanceOf[DeleteNotificationRuleRequest]
   }
   
-  extension [Self <: DeleteNotificationRuleRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteNotificationRuleRequest] (val x: Self) extends AnyVal {
     
     inline def setArn(value: NotificationRuleArn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
   }

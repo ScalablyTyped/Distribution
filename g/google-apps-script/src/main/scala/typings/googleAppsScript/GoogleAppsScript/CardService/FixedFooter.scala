@@ -20,7 +20,8 @@ object FixedFooter {
     __obj.asInstanceOf[FixedFooter]
   }
   
-  extension [Self <: FixedFooter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FixedFooter] (val x: Self) extends AnyVal {
     
     inline def setSetPrimaryButton(value: TextButton => FixedFooter): Self = StObject.set(x, "setPrimaryButton", js.Any.fromFunction1(value))
     

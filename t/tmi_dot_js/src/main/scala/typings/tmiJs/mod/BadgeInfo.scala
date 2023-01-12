@@ -18,7 +18,8 @@ object BadgeInfo {
     __obj.asInstanceOf[BadgeInfo]
   }
   
-  extension [Self <: BadgeInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BadgeInfo] (val x: Self) extends AnyVal {
     
     inline def setSubscriber(value: String): Self = StObject.set(x, "subscriber", value.asInstanceOf[js.Any])
     

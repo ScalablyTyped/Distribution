@@ -43,7 +43,8 @@ object ExpenseField {
     __obj.asInstanceOf[ExpenseField]
   }
   
-  extension [Self <: ExpenseField](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExpenseField] (val x: Self) extends AnyVal {
     
     inline def setCurrency(value: ExpenseCurrency): Self = StObject.set(x, "Currency", value.asInstanceOf[js.Any])
     

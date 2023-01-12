@@ -19,7 +19,8 @@ object PreloadableConcreteRequest {
     __obj.asInstanceOf[PreloadableConcreteRequest[TQuery]]
   }
   
-  extension [Self <: PreloadableConcreteRequest[?], TQuery /* <: OperationType */](x: Self & PreloadableConcreteRequest[TQuery]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PreloadableConcreteRequest[?], TQuery /* <: OperationType */] (val x: Self & PreloadableConcreteRequest[TQuery]) extends AnyVal {
     
     inline def setKind(value: typings.reactRelay.reactRelayStrings.PreloadableConcreteRequest): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

@@ -78,7 +78,8 @@ object libComponentsShortcutUIMod {
       __obj.asInstanceOf[IShortcutUIProps]
     }
     
-    extension [Self <: IShortcutUIProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IShortcutUIProps] (val x: Self) extends AnyVal {
       
       inline def setExternal(value: IShortcutUIexternal): Self = StObject.set(x, "external", value.asInstanceOf[js.Any])
       
@@ -122,7 +123,8 @@ object libComponentsShortcutUIMod {
       __obj.asInstanceOf[IShortcutUIState]
     }
     
-    extension [Self <: IShortcutUIState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IShortcutUIState] (val x: Self) extends AnyVal {
       
       inline def setContextMenu(value: Any): Self = StObject.set(x, "contextMenu", value.asInstanceOf[js.Any])
       

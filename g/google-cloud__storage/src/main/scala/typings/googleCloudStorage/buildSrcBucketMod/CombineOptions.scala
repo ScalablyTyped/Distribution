@@ -20,7 +20,8 @@ object CombineOptions {
     __obj.asInstanceOf[CombineOptions]
   }
   
-  extension [Self <: CombineOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CombineOptions] (val x: Self) extends AnyVal {
     
     inline def setKmsKeyName(value: String): Self = StObject.set(x, "kmsKeyName", value.asInstanceOf[js.Any])
     

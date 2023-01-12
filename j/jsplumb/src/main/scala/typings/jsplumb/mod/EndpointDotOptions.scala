@@ -19,7 +19,8 @@ object EndpointDotOptions {
     __obj.asInstanceOf[EndpointDotOptions]
   }
   
-  extension [Self <: EndpointDotOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EndpointDotOptions] (val x: Self) extends AnyVal {
     
     inline def setCssClass(value: String): Self = StObject.set(x, "cssClass", value.asInstanceOf[js.Any])
     

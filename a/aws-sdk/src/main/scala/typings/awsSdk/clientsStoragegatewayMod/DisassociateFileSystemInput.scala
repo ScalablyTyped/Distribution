@@ -23,7 +23,8 @@ object DisassociateFileSystemInput {
     __obj.asInstanceOf[DisassociateFileSystemInput]
   }
   
-  extension [Self <: DisassociateFileSystemInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisassociateFileSystemInput] (val x: Self) extends AnyVal {
     
     inline def setFileSystemAssociationARN(value: FileSystemAssociationARN): Self = StObject.set(x, "FileSystemAssociationARN", value.asInstanceOf[js.Any])
     

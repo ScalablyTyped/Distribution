@@ -33,7 +33,8 @@ object CreateThingGroupRequest {
     __obj.asInstanceOf[CreateThingGroupRequest]
   }
   
-  extension [Self <: CreateThingGroupRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateThingGroupRequest] (val x: Self) extends AnyVal {
     
     inline def setParentGroupName(value: ThingGroupName): Self = StObject.set(x, "parentGroupName", value.asInstanceOf[js.Any])
     

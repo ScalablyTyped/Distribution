@@ -23,7 +23,8 @@ object ButtonDomSettings {
     __obj.asInstanceOf[ButtonDomSettings]
   }
   
-  extension [Self <: ButtonDomSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ButtonDomSettings] (val x: Self) extends AnyVal {
     
     inline def setButton(value: ButtonDomButtomButton): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
     

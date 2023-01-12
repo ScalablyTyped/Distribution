@@ -18,7 +18,8 @@ object OptInPhoneNumberInput {
     __obj.asInstanceOf[OptInPhoneNumberInput]
   }
   
-  extension [Self <: OptInPhoneNumberInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OptInPhoneNumberInput] (val x: Self) extends AnyVal {
     
     inline def setPhoneNumber(value: PhoneNumber): Self = StObject.set(x, "phoneNumber", value.asInstanceOf[js.Any])
   }

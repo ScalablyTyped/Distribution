@@ -546,7 +546,8 @@ object PlusWebviewWebviewStyles {
     __obj.asInstanceOf[PlusWebviewWebviewStyles]
   }
   
-  extension [Self <: PlusWebviewWebviewStyles](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlusWebviewWebviewStyles] (val x: Self) extends AnyVal {
     
     inline def setAdditionalHttpHeaders(value: Any): Self = StObject.set(x, "additionalHttpHeaders", value.asInstanceOf[js.Any])
     

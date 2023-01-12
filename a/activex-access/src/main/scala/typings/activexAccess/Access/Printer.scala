@@ -88,7 +88,8 @@ object Printer {
     __obj.asInstanceOf[Printer]
   }
   
-  extension [Self <: Printer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Printer] (val x: Self) extends AnyVal {
     
     inline def setAccessDotPrinter_typekey(value: Printer): Self = StObject.set(x, "Access.Printer_typekey", value.asInstanceOf[js.Any])
     

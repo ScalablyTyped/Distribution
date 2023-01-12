@@ -43,7 +43,8 @@ object libActivityIndicatorStyleMod {
       __obj.asInstanceOf[ActivityIndicatorStyle]
     }
     
-    extension [Self <: ActivityIndicatorStyle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ActivityIndicatorStyle] (val x: Self) extends AnyVal {
       
       inline def setContainer(value: ViewStyle): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
       

@@ -33,7 +33,8 @@ object RequiredActivatedType {
     __obj.asInstanceOf[RequiredActivatedType]
   }
   
-  extension [Self <: RequiredActivatedType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RequiredActivatedType] (val x: Self) extends AnyVal {
     
     inline def setOriginalTypeName(value: TypeName): Self = StObject.set(x, "OriginalTypeName", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object Owner {
     __obj.asInstanceOf[Owner]
   }
   
-  extension [Self <: Owner](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Owner] (val x: Self) extends AnyVal {
     
     inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
   }

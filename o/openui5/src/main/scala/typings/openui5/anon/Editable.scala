@@ -86,7 +86,8 @@ object Editable {
     __obj.asInstanceOf[Editable]
   }
   
-  extension [Self <: Editable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Editable] (val x: Self) extends AnyVal {
     
     inline def setControlType(value: String | js.Function): Self = StObject.set(x, "controlType", value.asInstanceOf[js.Any])
     

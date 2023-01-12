@@ -18,7 +18,8 @@ object DescribeAccountLimitsInput {
     __obj.asInstanceOf[DescribeAccountLimitsInput]
   }
   
-  extension [Self <: DescribeAccountLimitsInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeAccountLimitsInput] (val x: Self) extends AnyVal {
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

@@ -82,7 +82,8 @@ object mod {
       __obj.asInstanceOf[IParseOptions]
     }
     
-    extension [Self <: IParseOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IParseOptions] (val x: Self) extends AnyVal {
       
       inline def setAllowDots(value: Boolean): Self = StObject.set(x, "allowDots", value.asInstanceOf[js.Any])
       
@@ -199,7 +200,8 @@ object mod {
       __obj.asInstanceOf[IStringifyOptions]
     }
     
-    extension [Self <: IStringifyOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IStringifyOptions] (val x: Self) extends AnyVal {
       
       inline def setAddQueryPrefix(value: Boolean): Self = StObject.set(x, "addQueryPrefix", value.asInstanceOf[js.Any])
       

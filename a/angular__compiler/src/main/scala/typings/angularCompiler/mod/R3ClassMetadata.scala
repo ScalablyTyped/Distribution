@@ -36,7 +36,8 @@ object R3ClassMetadata {
     __obj.asInstanceOf[R3ClassMetadata]
   }
   
-  extension [Self <: R3ClassMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: R3ClassMetadata] (val x: Self) extends AnyVal {
     
     inline def setCtorParameters(value: Expression): Self = StObject.set(x, "ctorParameters", value.asInstanceOf[js.Any])
     

@@ -29,7 +29,8 @@ object GoogleCloudVisionV1p3beta1ReferenceImage {
     __obj.asInstanceOf[GoogleCloudVisionV1p3beta1ReferenceImage]
   }
   
-  extension [Self <: GoogleCloudVisionV1p3beta1ReferenceImage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudVisionV1p3beta1ReferenceImage] (val x: Self) extends AnyVal {
     
     inline def setBoundingPolys(value: js.Array[GoogleCloudVisionV1p3beta1BoundingPoly]): Self = StObject.set(x, "boundingPolys", value.asInstanceOf[js.Any])
     

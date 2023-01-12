@@ -53,7 +53,8 @@ object mod {
       __obj.asInstanceOf[CLSContext]
     }
     
-    extension [Self <: CLSContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CLSContext] (val x: Self) extends AnyVal {
       
       inline def setLetContext(value: (TraceId, js.Function0[Any]) => Any): Self = StObject.set(x, "letContext", js.Any.fromFunction2(value))
       

@@ -486,7 +486,8 @@ object sapUiCommonsDropdownBoxMod {
       __obj.asInstanceOf[DropdownBoxSettings]
     }
     
-    extension [Self <: DropdownBoxSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DropdownBoxSettings] (val x: Self) extends AnyVal {
       
       inline def setMaxHistoryItems(value: int | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "maxHistoryItems", value.asInstanceOf[js.Any])
       

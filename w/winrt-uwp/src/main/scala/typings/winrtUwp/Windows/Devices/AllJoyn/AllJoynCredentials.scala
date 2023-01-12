@@ -33,7 +33,8 @@ object AllJoynCredentials {
     __obj.asInstanceOf[AllJoynCredentials]
   }
   
-  extension [Self <: AllJoynCredentials](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AllJoynCredentials] (val x: Self) extends AnyVal {
     
     inline def setAuthenticationMechanism(value: AllJoynAuthenticationMechanism): Self = StObject.set(x, "authenticationMechanism", value.asInstanceOf[js.Any])
     

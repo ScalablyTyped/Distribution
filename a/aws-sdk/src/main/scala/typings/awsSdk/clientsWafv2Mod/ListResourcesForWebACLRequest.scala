@@ -23,7 +23,8 @@ object ListResourcesForWebACLRequest {
     __obj.asInstanceOf[ListResourcesForWebACLRequest]
   }
   
-  extension [Self <: ListResourcesForWebACLRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListResourcesForWebACLRequest] (val x: Self) extends AnyVal {
     
     inline def setResourceType(value: ResourceType): Self = StObject.set(x, "ResourceType", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object TouchableWithoutFeedbackPropsAndroid {
     __obj.asInstanceOf[TouchableWithoutFeedbackPropsAndroid]
   }
   
-  extension [Self <: TouchableWithoutFeedbackPropsAndroid](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TouchableWithoutFeedbackPropsAndroid] (val x: Self) extends AnyVal {
     
     inline def setTouchSoundDisabled(value: Boolean): Self = StObject.set(x, "touchSoundDisabled", value.asInstanceOf[js.Any])
     

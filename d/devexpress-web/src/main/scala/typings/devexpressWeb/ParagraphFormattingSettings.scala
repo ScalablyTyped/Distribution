@@ -101,7 +101,8 @@ object ParagraphFormattingSettings {
     __obj.asInstanceOf[ParagraphFormattingSettings]
   }
   
-  extension [Self <: ParagraphFormattingSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParagraphFormattingSettings] (val x: Self) extends AnyVal {
     
     inline def setAlignment(value: ParagraphAlignment): Self = StObject.set(x, "alignment", value.asInstanceOf[js.Any])
     

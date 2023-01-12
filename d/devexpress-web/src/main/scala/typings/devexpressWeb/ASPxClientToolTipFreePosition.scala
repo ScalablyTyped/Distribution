@@ -38,7 +38,8 @@ object ASPxClientToolTipFreePosition {
     __obj.asInstanceOf[ASPxClientToolTipFreePosition]
   }
   
-  extension [Self <: ASPxClientToolTipFreePosition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientToolTipFreePosition] (val x: Self) extends AnyVal {
     
     inline def setDockPosition(value: String): Self = StObject.set(x, "dockPosition", value.asInstanceOf[js.Any])
     

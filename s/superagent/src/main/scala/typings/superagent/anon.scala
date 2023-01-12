@@ -22,7 +22,8 @@ object anon {
       __obj.asInstanceOf[`0`]
     }
     
-    extension [Self <: `0`](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: `0`] (val x: Self) extends AnyVal {
       
       inline def setType(value: bearer): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
@@ -41,7 +42,8 @@ object anon {
       __obj.asInstanceOf[ContentType]
     }
     
-    extension [Self <: ContentType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContentType] (val x: Self) extends AnyVal {
       
       inline def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
       
@@ -66,7 +68,8 @@ object anon {
       __obj.asInstanceOf[Deadline]
     }
     
-    extension [Self <: Deadline](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Deadline] (val x: Self) extends AnyVal {
       
       inline def setDeadline(value: Double): Self = StObject.set(x, "deadline", value.asInstanceOf[js.Any])
       
@@ -91,7 +94,8 @@ object anon {
       __obj.asInstanceOf[Passphrase]
     }
     
-    extension [Self <: Passphrase](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Passphrase] (val x: Self) extends AnyVal {
       
       inline def setPassphrase(value: String): Self = StObject.set(x, "passphrase", value.asInstanceOf[js.Any])
       
@@ -111,7 +115,8 @@ object anon {
       __obj.asInstanceOf[Type]
     }
     
-    extension [Self <: Type](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Type] (val x: Self) extends AnyVal {
       
       inline def setType(value: basic | auto): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }

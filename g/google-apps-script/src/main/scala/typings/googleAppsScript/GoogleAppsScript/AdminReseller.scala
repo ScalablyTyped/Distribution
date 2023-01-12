@@ -152,7 +152,8 @@ object AdminReseller {
     }
   }
   
-  extension [Self <: AdminReseller](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AdminReseller] (val x: Self) extends AnyVal {
     
     inline def setCustomers(value: CustomersCollection): Self = StObject.set(x, "Customers", value.asInstanceOf[js.Any])
     
@@ -218,7 +219,8 @@ object AdminReseller {
         __obj.asInstanceOf[Address]
       }
       
-      extension [Self <: Address](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Address] (val x: Self) extends AnyVal {
         
         inline def setAddressLine1(value: String): Self = StObject.set(x, "addressLine1", value.asInstanceOf[js.Any])
         
@@ -281,7 +283,8 @@ object AdminReseller {
         __obj.asInstanceOf[ChangePlanRequest]
       }
       
-      extension [Self <: ChangePlanRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ChangePlanRequest] (val x: Self) extends AnyVal {
         
         inline def setDealCode(value: String): Self = StObject.set(x, "dealCode", value.asInstanceOf[js.Any])
         
@@ -330,7 +333,8 @@ object AdminReseller {
         __obj.asInstanceOf[Customer]
       }
       
-      extension [Self <: Customer](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Customer] (val x: Self) extends AnyVal {
         
         inline def setAlternateEmail(value: String): Self = StObject.set(x, "alternateEmail", value.asInstanceOf[js.Any])
         
@@ -379,7 +383,8 @@ object AdminReseller {
         __obj.asInstanceOf[RenewalSettings]
       }
       
-      extension [Self <: RenewalSettings](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: RenewalSettings] (val x: Self) extends AnyVal {
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -404,7 +409,8 @@ object AdminReseller {
         __obj.asInstanceOf[ResellernotifyGetwatchdetailsResponse]
       }
       
-      extension [Self <: ResellernotifyGetwatchdetailsResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ResellernotifyGetwatchdetailsResponse] (val x: Self) extends AnyVal {
         
         inline def setServiceAccountEmailAddresses(value: js.Array[String]): Self = StObject.set(x, "serviceAccountEmailAddresses", value.asInstanceOf[js.Any])
         
@@ -429,7 +435,8 @@ object AdminReseller {
         __obj.asInstanceOf[ResellernotifyResource]
       }
       
-      extension [Self <: ResellernotifyResource](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ResellernotifyResource] (val x: Self) extends AnyVal {
         
         inline def setTopicName(value: String): Self = StObject.set(x, "topicName", value.asInstanceOf[js.Any])
         
@@ -454,7 +461,8 @@ object AdminReseller {
         __obj.asInstanceOf[Seats]
       }
       
-      extension [Self <: Seats](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Seats] (val x: Self) extends AnyVal {
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -519,7 +527,8 @@ object AdminReseller {
         __obj.asInstanceOf[Subscription]
       }
       
-      extension [Self <: Subscription](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Subscription] (val x: Self) extends AnyVal {
         
         inline def setBillingMethod(value: String): Self = StObject.set(x, "billingMethod", value.asInstanceOf[js.Any])
         
@@ -612,7 +621,8 @@ object AdminReseller {
         __obj.asInstanceOf[SubscriptionPlan]
       }
       
-      extension [Self <: SubscriptionPlan](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SubscriptionPlan] (val x: Self) extends AnyVal {
         
         inline def setCommitmentInterval(value: SubscriptionPlanCommitmentInterval): Self = StObject.set(x, "commitmentInterval", value.asInstanceOf[js.Any])
         
@@ -641,7 +651,8 @@ object AdminReseller {
         __obj.asInstanceOf[SubscriptionPlanCommitmentInterval]
       }
       
-      extension [Self <: SubscriptionPlanCommitmentInterval](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SubscriptionPlanCommitmentInterval] (val x: Self) extends AnyVal {
         
         inline def setEndTime(value: String): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
         
@@ -666,7 +677,8 @@ object AdminReseller {
         __obj.asInstanceOf[SubscriptionTransferInfo]
       }
       
-      extension [Self <: SubscriptionTransferInfo](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SubscriptionTransferInfo] (val x: Self) extends AnyVal {
         
         inline def setMinimumTransferableSeats(value: Double): Self = StObject.set(x, "minimumTransferableSeats", value.asInstanceOf[js.Any])
         
@@ -691,7 +703,8 @@ object AdminReseller {
         __obj.asInstanceOf[SubscriptionTrialSettings]
       }
       
-      extension [Self <: SubscriptionTrialSettings](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SubscriptionTrialSettings] (val x: Self) extends AnyVal {
         
         inline def setIsInTrial(value: Boolean): Self = StObject.set(x, "isInTrial", value.asInstanceOf[js.Any])
         
@@ -718,7 +731,8 @@ object AdminReseller {
         __obj.asInstanceOf[Subscriptions]
       }
       
-      extension [Self <: Subscriptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Subscriptions] (val x: Self) extends AnyVal {
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         

@@ -48,7 +48,8 @@ object ProducerConfig {
     __obj.asInstanceOf[ProducerConfig]
   }
   
-  extension [Self <: ProducerConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProducerConfig] (val x: Self) extends AnyVal {
     
     inline def setBatchingEnabled(value: Boolean): Self = StObject.set(x, "batchingEnabled", value.asInstanceOf[js.Any])
     

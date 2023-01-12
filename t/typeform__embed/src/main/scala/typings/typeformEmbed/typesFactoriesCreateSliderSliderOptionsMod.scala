@@ -53,7 +53,8 @@ object typesFactoriesCreateSliderSliderOptionsMod {
       __obj.asInstanceOf[SliderOptions]
     }
     
-    extension [Self <: SliderOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SliderOptions] (val x: Self) extends AnyVal {
       
       inline def setAutoClose(value: Double | Boolean): Self = StObject.set(x, "autoClose", value.asInstanceOf[js.Any])
       

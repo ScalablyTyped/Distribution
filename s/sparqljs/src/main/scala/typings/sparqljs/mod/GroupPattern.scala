@@ -22,7 +22,8 @@ object GroupPattern {
     __obj.asInstanceOf[GroupPattern]
   }
   
-  extension [Self <: GroupPattern](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GroupPattern] (val x: Self) extends AnyVal {
     
     inline def setPatterns(value: js.Array[Pattern]): Self = StObject.set(x, "patterns", value.asInstanceOf[js.Any])
     

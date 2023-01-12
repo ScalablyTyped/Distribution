@@ -60,7 +60,8 @@ object usermanagerConfig {
     __obj.asInstanceOf[usermanagerConfig]
   }
   
-  extension [Self <: usermanagerConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: usermanagerConfig] (val x: Self) extends AnyVal {
     
     inline def setAnimate(value: Boolean | obj): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     

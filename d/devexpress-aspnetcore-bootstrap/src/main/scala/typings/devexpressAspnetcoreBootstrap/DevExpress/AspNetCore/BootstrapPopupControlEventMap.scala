@@ -50,7 +50,8 @@ object BootstrapPopupControlEventMap {
     __obj.asInstanceOf[BootstrapPopupControlEventMap]
   }
   
-  extension [Self <: BootstrapPopupControlEventMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BootstrapPopupControlEventMap] (val x: Self) extends AnyVal {
     
     inline def setAfterResizing(value: PopupWindowEventArgs): Self = StObject.set(x, "afterResizing", value.asInstanceOf[js.Any])
     

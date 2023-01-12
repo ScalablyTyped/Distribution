@@ -49,7 +49,8 @@ object distSrcScoreScoreMetricsMod {
       __obj.asInstanceOf[ScoreWeights[T]]
     }
     
-    extension [Self <: ScoreWeights[?], T](x: Self & ScoreWeights[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScoreWeights[?], T] (val x: Self & ScoreWeights[T]) extends AnyVal {
       
       inline def setByTopic(value: Map[TopicLabel, TopicScoreWeights[T]]): Self = StObject.set(x, "byTopic", value.asInstanceOf[js.Any])
       
@@ -84,7 +85,8 @@ object distSrcScoreScoreMetricsMod {
       __obj.asInstanceOf[TopicScoreWeights[T]]
     }
     
-    extension [Self <: TopicScoreWeights[?], T](x: Self & TopicScoreWeights[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TopicScoreWeights[?], T] (val x: Self & TopicScoreWeights[T]) extends AnyVal {
       
       inline def setP1w(value: T): Self = StObject.set(x, "p1w", value.asInstanceOf[js.Any])
       

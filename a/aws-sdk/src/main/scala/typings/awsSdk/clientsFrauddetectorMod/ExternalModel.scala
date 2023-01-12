@@ -58,7 +58,8 @@ object ExternalModel {
     __obj.asInstanceOf[ExternalModel]
   }
   
-  extension [Self <: ExternalModel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExternalModel] (val x: Self) extends AnyVal {
     
     inline def setArn(value: fraudDetectorArn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     

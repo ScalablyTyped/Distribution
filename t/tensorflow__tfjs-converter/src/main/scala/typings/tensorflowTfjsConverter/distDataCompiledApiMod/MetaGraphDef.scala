@@ -34,7 +34,8 @@ object MetaGraphDef {
       __obj.asInstanceOf[IMetaInfoDef]
     }
     
-    extension [Self <: IMetaInfoDef](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IMetaInfoDef] (val x: Self) extends AnyVal {
       
       inline def setAnyInfo(value: IAny): Self = StObject.set(x, "anyInfo", value.asInstanceOf[js.Any])
       

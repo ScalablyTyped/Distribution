@@ -26,7 +26,8 @@ object Relationship {
     __obj.asInstanceOf[Relationship[Data]]
   }
   
-  extension [Self <: Relationship[?], Data](x: Self & Relationship[Data]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Relationship[?], Data] (val x: Self & Relationship[Data]) extends AnyVal {
     
     inline def setData(value: js.Array[Data]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

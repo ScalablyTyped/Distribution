@@ -38,7 +38,8 @@ object libGridBeforeSelectRecordEventMod {
       __obj.asInstanceOf[BeforeSelectRecordEvent]
     }
     
-    extension [Self <: BeforeSelectRecordEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BeforeSelectRecordEvent] (val x: Self) extends AnyVal {
       
       inline def setBookmarks(value: js.Array[String]): Self = StObject.set(x, "bookmarks", value.asInstanceOf[js.Any])
       

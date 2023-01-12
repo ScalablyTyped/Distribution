@@ -18,7 +18,8 @@ object BaseModuleSpecifier {
     __obj.asInstanceOf[BaseModuleSpecifier]
   }
   
-  extension [Self <: BaseModuleSpecifier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BaseModuleSpecifier] (val x: Self) extends AnyVal {
     
     inline def setLocal(value: Identifier): Self = StObject.set(x, "local", value.asInstanceOf[js.Any])
   }

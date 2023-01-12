@@ -27,7 +27,8 @@ object TSTypeQuery_ {
     __obj.asInstanceOf[TSTypeQuery_]
   }
   
-  extension [Self <: TSTypeQuery_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TSTypeQuery_] (val x: Self) extends AnyVal {
     
     inline def setExprName(value: TSEntityName | TSImportType_): Self = StObject.set(x, "exprName", value.asInstanceOf[js.Any])
     

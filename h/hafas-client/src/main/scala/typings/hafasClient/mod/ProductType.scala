@@ -46,7 +46,8 @@ object ProductType {
     __obj.asInstanceOf[ProductType]
   }
   
-  extension [Self <: ProductType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProductType] (val x: Self) extends AnyVal {
     
     inline def setBitmasks(value: js.Array[Double]): Self = StObject.set(x, "bitmasks", value.asInstanceOf[js.Any])
     

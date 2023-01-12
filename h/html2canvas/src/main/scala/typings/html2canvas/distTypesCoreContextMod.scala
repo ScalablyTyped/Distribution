@@ -51,7 +51,8 @@ object distTypesCoreContextMod {
       __obj.asInstanceOf[ContextOptions]
     }
     
-    extension [Self <: ContextOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContextOptions] (val x: Self) extends AnyVal {
       
       inline def setCache(value: Cache): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
       

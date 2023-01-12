@@ -36,7 +36,8 @@ object QuirksModeIssueDetails {
     __obj.asInstanceOf[QuirksModeIssueDetails]
   }
   
-  extension [Self <: QuirksModeIssueDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QuirksModeIssueDetails] (val x: Self) extends AnyVal {
     
     inline def setDocumentNodeId(value: BackendNodeId): Self = StObject.set(x, "documentNodeId", value.asInstanceOf[js.Any])
     

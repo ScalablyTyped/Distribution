@@ -17,7 +17,8 @@ object IGCOptions {
     __obj.asInstanceOf[IGCOptions]
   }
   
-  extension [Self <: IGCOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IGCOptions] (val x: Self) extends AnyVal {
     
     inline def setAltitudeMode(value: IGCZ): Self = StObject.set(x, "altitudeMode", value.asInstanceOf[js.Any])
     

@@ -35,7 +35,8 @@ object IFit {
     __obj.asInstanceOf[IFit]
   }
   
-  extension [Self <: IFit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IFit] (val x: Self) extends AnyVal {
     
     inline def setCalculate(value: /* ownerContext */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "calculate", js.Any.fromFunction1(value))
     

@@ -23,7 +23,8 @@ object UnsignedMessage {
     __obj.asInstanceOf[UnsignedMessage]
   }
   
-  extension [Self <: UnsignedMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UnsignedMessage] (val x: Self) extends AnyVal {
     
     inline def setData(value: js.typedarray.Uint8Array): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

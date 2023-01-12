@@ -73,7 +73,8 @@ object Network {
     __obj.asInstanceOf[Network]
   }
   
-  extension [Self <: Network](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Network] (val x: Self) extends AnyVal {
     
     inline def setArn(value: ArnString): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     

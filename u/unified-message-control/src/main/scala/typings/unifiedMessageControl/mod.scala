@@ -33,7 +33,8 @@ object mod {
       __obj.asInstanceOf[Mark]
     }
     
-    extension [Self <: Mark](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Mark] (val x: Self) extends AnyVal {
       
       inline def setPoint(value: Point): Self = StObject.set(x, "point", value.asInstanceOf[js.Any])
       
@@ -77,7 +78,8 @@ object mod {
       __obj.asInstanceOf[Marker]
     }
     
-    extension [Self <: Marker](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Marker] (val x: Self) extends AnyVal {
       
       inline def setAttributes(value: String): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
@@ -167,7 +169,8 @@ object mod {
       __obj.asInstanceOf[OptionsBaseFields]
     }
     
-    extension [Self <: OptionsBaseFields](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OptionsBaseFields] (val x: Self) extends AnyVal {
       
       inline def setKnown(value: js.Array[String]): Self = StObject.set(x, "known", value.asInstanceOf[js.Any])
       
@@ -231,7 +234,8 @@ object mod {
       __obj.asInstanceOf[OptionsWithResetFields]
     }
     
-    extension [Self <: OptionsWithResetFields](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OptionsWithResetFields] (val x: Self) extends AnyVal {
       
       inline def setEnable(value: js.Array[String]): Self = StObject.set(x, "enable", value.asInstanceOf[js.Any])
       
@@ -275,7 +279,8 @@ object mod {
       __obj.asInstanceOf[OptionsWithoutResetFields]
     }
     
-    extension [Self <: OptionsWithoutResetFields](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OptionsWithoutResetFields] (val x: Self) extends AnyVal {
       
       inline def setDisable(value: js.Array[String]): Self = StObject.set(x, "disable", value.asInstanceOf[js.Any])
       

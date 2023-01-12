@@ -19,7 +19,8 @@ object RawIndexMap {
     __obj.asInstanceOf[RawIndexMap]
   }
   
-  extension [Self <: RawIndexMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RawIndexMap] (val x: Self) extends AnyVal {
     
     inline def setSections(value: js.Array[RawSection]): Self = StObject.set(x, "sections", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object GetLifecyclePolicyOutput {
     __obj.asInstanceOf[GetLifecyclePolicyOutput]
   }
   
-  extension [Self <: GetLifecyclePolicyOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetLifecyclePolicyOutput] (val x: Self) extends AnyVal {
     
     inline def setLifecyclePolicy(value: LifecyclePolicy): Self = StObject.set(x, "LifecyclePolicy", value.asInstanceOf[js.Any])
   }

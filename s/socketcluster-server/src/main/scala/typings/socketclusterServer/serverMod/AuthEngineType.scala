@@ -27,7 +27,8 @@ object AuthEngineType {
     __obj.asInstanceOf[AuthEngineType]
   }
   
-  extension [Self <: AuthEngineType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AuthEngineType] (val x: Self) extends AnyVal {
     
     inline def setSignToken(value: (/* token */ String, /* key */ Secret) => js.Promise[js.UndefOr[String]]): Self = StObject.set(x, "signToken", js.Any.fromFunction2(value))
     

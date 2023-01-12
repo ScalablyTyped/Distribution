@@ -41,7 +41,8 @@ object IRange {
     __obj.asInstanceOf[IRange]
   }
   
-  extension [Self <: IRange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IRange] (val x: Self) extends AnyVal {
     
     inline def setQMax(value: Double): Self = StObject.set(x, "qMax", value.asInstanceOf[js.Any])
     

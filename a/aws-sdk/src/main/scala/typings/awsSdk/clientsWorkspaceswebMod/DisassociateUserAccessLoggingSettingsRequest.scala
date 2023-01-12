@@ -18,7 +18,8 @@ object DisassociateUserAccessLoggingSettingsRequest {
     __obj.asInstanceOf[DisassociateUserAccessLoggingSettingsRequest]
   }
   
-  extension [Self <: DisassociateUserAccessLoggingSettingsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisassociateUserAccessLoggingSettingsRequest] (val x: Self) extends AnyVal {
     
     inline def setPortalArn(value: ARN): Self = StObject.set(x, "portalArn", value.asInstanceOf[js.Any])
   }

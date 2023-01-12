@@ -28,7 +28,8 @@ object DispatchInformation {
     __obj.asInstanceOf[DispatchInformation]
   }
   
-  extension [Self <: DispatchInformation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DispatchInformation] (val x: Self) extends AnyVal {
     
     inline def setCommand(value: String): Self = StObject.set(x, "Command", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object ListDistributionsByCachePolicyIdRequest {
     __obj.asInstanceOf[ListDistributionsByCachePolicyIdRequest]
   }
   
-  extension [Self <: ListDistributionsByCachePolicyIdRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListDistributionsByCachePolicyIdRequest] (val x: Self) extends AnyVal {
     
     inline def setCachePolicyId(value: String): Self = StObject.set(x, "CachePolicyId", value.asInstanceOf[js.Any])
     

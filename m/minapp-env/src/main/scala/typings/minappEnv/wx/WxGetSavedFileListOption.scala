@@ -22,7 +22,8 @@ object WxGetSavedFileListOption {
     __obj.asInstanceOf[WxGetSavedFileListOption]
   }
   
-  extension [Self <: WxGetSavedFileListOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WxGetSavedFileListOption] (val x: Self) extends AnyVal {
     
     inline def setComplete(value: /* res */ GeneralCallbackResult => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
     

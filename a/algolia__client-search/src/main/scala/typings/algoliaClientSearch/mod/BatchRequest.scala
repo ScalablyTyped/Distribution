@@ -25,7 +25,8 @@ object BatchRequest {
     __obj.asInstanceOf[BatchRequest]
   }
   
-  extension [Self <: BatchRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchRequest] (val x: Self) extends AnyVal {
     
     inline def setAction(value: BatchActionType): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     

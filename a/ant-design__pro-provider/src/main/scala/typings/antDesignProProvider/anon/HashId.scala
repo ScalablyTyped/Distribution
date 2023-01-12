@@ -20,7 +20,8 @@ object HashId {
     __obj.asInstanceOf[HashId]
   }
   
-  extension [Self <: HashId](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HashId] (val x: Self) extends AnyVal {
     
     inline def setHashId(value: String): Self = StObject.set(x, "hashId", value.asInstanceOf[js.Any])
     

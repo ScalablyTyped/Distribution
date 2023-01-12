@@ -25,7 +25,8 @@ object AuditActivityInitiator {
     __obj.asInstanceOf[AuditActivityInitiator]
   }
   
-  extension [Self <: AuditActivityInitiator](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AuditActivityInitiator] (val x: Self) extends AnyVal {
     
     inline def setApp(value: NullableOption[AppIdentity]): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
     

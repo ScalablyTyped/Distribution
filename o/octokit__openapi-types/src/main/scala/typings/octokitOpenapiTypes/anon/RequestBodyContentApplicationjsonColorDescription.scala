@@ -19,7 +19,8 @@ object RequestBodyContentApplicationjsonColorDescription {
     __obj.asInstanceOf[RequestBodyContentApplicationjsonColorDescription]
   }
   
-  extension [Self <: RequestBodyContentApplicationjsonColorDescription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RequestBodyContentApplicationjsonColorDescription] (val x: Self) extends AnyVal {
     
     inline def setParameters(value: `135`): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object MlDataframeEvaluationRegressionMetricsHuber {
     __obj.asInstanceOf[MlDataframeEvaluationRegressionMetricsHuber]
   }
   
-  extension [Self <: MlDataframeEvaluationRegressionMetricsHuber](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlDataframeEvaluationRegressionMetricsHuber] (val x: Self) extends AnyVal {
     
     inline def setDelta(value: double): Self = StObject.set(x, "delta", value.asInstanceOf[js.Any])
     

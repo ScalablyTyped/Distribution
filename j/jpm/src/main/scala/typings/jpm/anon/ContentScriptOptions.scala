@@ -23,7 +23,8 @@ object ContentScriptOptions {
     __obj.asInstanceOf[ContentScriptOptions]
   }
   
-  extension [Self <: ContentScriptOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContentScriptOptions] (val x: Self) extends AnyVal {
     
     inline def setContentScript(value: String | js.Array[String]): Self = StObject.set(x, "contentScript", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object GetMapStyleDescriptorResponse {
     __obj.asInstanceOf[GetMapStyleDescriptorResponse]
   }
   
-  extension [Self <: GetMapStyleDescriptorResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetMapStyleDescriptorResponse] (val x: Self) extends AnyVal {
     
     inline def setBlob(value: _Blob): Self = StObject.set(x, "Blob", value.asInstanceOf[js.Any])
     

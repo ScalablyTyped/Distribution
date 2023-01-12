@@ -42,7 +42,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[PluginOptions]
     }
     
-    extension [Self <: PluginOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PluginOptions] (val x: Self) extends AnyVal {
       
       inline def setConfiguration(value: Any): Self = StObject.set(x, "configuration", value.asInstanceOf[js.Any])
       
@@ -91,7 +92,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[ReportOptions]
     }
     
-    extension [Self <: ReportOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReportOptions] (val x: Self) extends AnyVal {
       
       inline def setAllowWarnings(value: Boolean): Self = StObject.set(x, "allowWarnings", value.asInstanceOf[js.Any])
       
@@ -139,7 +141,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[TslintFile]
     }
     
-    extension [Self <: TslintFile](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TslintFile] (val x: Self) extends AnyVal {
       
       inline def setContents(value: Buffer | Any): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
       

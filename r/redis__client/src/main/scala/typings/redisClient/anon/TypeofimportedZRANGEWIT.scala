@@ -36,7 +36,8 @@ object TypeofimportedZRANGEWIT {
     __obj.asInstanceOf[TypeofimportedZRANGEWIT]
   }
   
-  extension [Self <: TypeofimportedZRANGEWIT](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofimportedZRANGEWIT] (val x: Self) extends AnyVal {
     
     inline def setFIRST_KEY_INDEX(value: /* 1 */ Double): Self = StObject.set(x, "FIRST_KEY_INDEX", value.asInstanceOf[js.Any])
     

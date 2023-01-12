@@ -121,7 +121,8 @@ object XSprite {
     __obj.asInstanceOf[XSprite]
   }
   
-  extension [Self <: XSprite](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XSprite] (val x: Self) extends AnyVal {
     
     inline def setClip(value: XPolyPolygon2D => Unit): Self = StObject.set(x, "clip", js.Any.fromFunction1(value))
     

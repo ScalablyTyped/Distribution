@@ -19,7 +19,8 @@ object CompanionClickThroughOverride {
     __obj.asInstanceOf[CompanionClickThroughOverride]
   }
   
-  extension [Self <: CompanionClickThroughOverride](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CompanionClickThroughOverride] (val x: Self) extends AnyVal {
     
     inline def setClickThroughUrl(value: ClickThroughUrl): Self = StObject.set(x, "clickThroughUrl", value.asInstanceOf[js.Any])
     

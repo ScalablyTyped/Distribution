@@ -19,7 +19,8 @@ object RendererSettings {
     __obj.asInstanceOf[RendererSettings]
   }
   
-  extension [Self <: RendererSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RendererSettings] (val x: Self) extends AnyVal {
     
     inline def setHeader(value: String): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
     

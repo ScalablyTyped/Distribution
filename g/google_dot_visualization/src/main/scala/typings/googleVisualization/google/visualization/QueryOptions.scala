@@ -17,7 +17,8 @@ object QueryOptions {
     __obj.asInstanceOf[QueryOptions]
   }
   
-  extension [Self <: QueryOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryOptions] (val x: Self) extends AnyVal {
     
     inline def setMakeRequestParams(value: js.Object): Self = StObject.set(x, "makeRequestParams", value.asInstanceOf[js.Any])
     

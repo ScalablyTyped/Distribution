@@ -19,7 +19,8 @@ object MutatesVariables {
     __obj.asInstanceOf[MutatesVariables]
   }
   
-  extension [Self <: MutatesVariables](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MutatesVariables] (val x: Self) extends AnyVal {
     
     inline def setSetVariable(value: (String, String) => Unit): Self = StObject.set(x, "setVariable", js.Any.fromFunction2(value))
   }

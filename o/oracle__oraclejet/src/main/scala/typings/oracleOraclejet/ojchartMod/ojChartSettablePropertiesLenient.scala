@@ -185,7 +185,8 @@ object ojChartSettablePropertiesLenient {
     __obj.asInstanceOf[ojChartSettablePropertiesLenient[K, D]]
   }
   
-  extension [Self <: ojChartSettablePropertiesLenient[?, ?], K, D](x: Self & (ojChartSettablePropertiesLenient[K, D])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ojChartSettablePropertiesLenient[?, ?], K, D] (val x: Self & (ojChartSettablePropertiesLenient[K, D])) extends AnyVal {
     
     inline def setAnimationOnDataChange(value: auto | slideToLeft | slideToRight | none): Self = StObject.set(x, "animationOnDataChange", value.asInstanceOf[js.Any])
     

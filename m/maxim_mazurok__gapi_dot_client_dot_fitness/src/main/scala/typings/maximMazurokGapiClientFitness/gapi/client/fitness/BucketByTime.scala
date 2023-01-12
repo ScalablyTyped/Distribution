@@ -18,7 +18,8 @@ object BucketByTime {
     __obj.asInstanceOf[BucketByTime]
   }
   
-  extension [Self <: BucketByTime](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BucketByTime] (val x: Self) extends AnyVal {
     
     inline def setDurationMillis(value: String): Self = StObject.set(x, "durationMillis", value.asInstanceOf[js.Any])
     

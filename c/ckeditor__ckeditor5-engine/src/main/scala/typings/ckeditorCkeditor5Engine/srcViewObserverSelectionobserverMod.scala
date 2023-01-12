@@ -48,7 +48,8 @@ object srcViewObserverSelectionobserverMod {
         __obj.asInstanceOf[Observers]
       }
       
-      extension [Self <: Observers](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Observers] (val x: Self) extends AnyVal {
         
         inline def setSelectionObserver(value: SelectionObserver): Self = StObject.set(x, "SelectionObserver", value.asInstanceOf[js.Any])
       }

@@ -27,7 +27,8 @@ object SinonFakeUploadProgress {
     __obj.asInstanceOf[SinonFakeUploadProgress]
   }
   
-  extension [Self <: SinonFakeUploadProgress](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SinonFakeUploadProgress] (val x: Self) extends AnyVal {
     
     inline def setAddEventListener(value: (String, js.Function1[/* e */ Event, Any]) => Unit): Self = StObject.set(x, "addEventListener", js.Any.fromFunction2(value))
     

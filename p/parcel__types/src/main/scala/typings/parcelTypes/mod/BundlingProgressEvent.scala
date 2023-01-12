@@ -22,7 +22,8 @@ object BundlingProgressEvent {
     __obj.asInstanceOf[BundlingProgressEvent]
   }
   
-  extension [Self <: BundlingProgressEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BundlingProgressEvent] (val x: Self) extends AnyVal {
     
     inline def setPhase(value: bundling): Self = StObject.set(x, "phase", value.asInstanceOf[js.Any])
     

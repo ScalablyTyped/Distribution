@@ -23,7 +23,8 @@ object CoreInternalOptions {
     __obj.asInstanceOf[CoreInternalOptions]
   }
   
-  extension [Self <: CoreInternalOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CoreInternalOptions] (val x: Self) extends AnyVal {
     
     inline def set__datetimeFormatters(value: Map[String, typings.std.Intl.DateTimeFormat]): Self = StObject.set(x, "__datetimeFormatters", value.asInstanceOf[js.Any])
     

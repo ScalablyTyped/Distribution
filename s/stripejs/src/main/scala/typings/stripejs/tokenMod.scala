@@ -50,7 +50,8 @@ object tokenMod {
       __obj.asInstanceOf[BankTokenData]
     }
     
-    extension [Self <: BankTokenData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BankTokenData] (val x: Self) extends AnyVal {
       
       inline def setAccount_number(value: String): Self = StObject.set(x, "account_number", value.asInstanceOf[js.Any])
       
@@ -87,7 +88,8 @@ object tokenMod {
       __obj.asInstanceOf[IBANTokenData]
     }
     
-    extension [Self <: IBANTokenData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IBANTokenData] (val x: Self) extends AnyVal {
       
       inline def setAccount_holder_name(value: String): Self = StObject.set(x, "account_holder_name", value.asInstanceOf[js.Any])
       
@@ -111,7 +113,8 @@ object tokenMod {
       __obj.asInstanceOf[PiiTokenData]
     }
     
-    extension [Self <: PiiTokenData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PiiTokenData] (val x: Self) extends AnyVal {
       
       inline def setPersonal_id_number(value: String): Self = StObject.set(x, "personal_id_number", value.asInstanceOf[js.Any])
     }
@@ -178,7 +181,8 @@ object tokenMod {
       __obj.asInstanceOf[Token]
     }
     
-    extension [Self <: Token](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Token] (val x: Self) extends AnyVal {
       
       inline def setBank_account(value: BankAccount): Self = StObject.set(x, "bank_account", value.asInstanceOf[js.Any])
       
@@ -254,7 +258,8 @@ object tokenMod {
       __obj.asInstanceOf[TokenData]
     }
     
-    extension [Self <: TokenData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TokenData] (val x: Self) extends AnyVal {
       
       inline def setAddress_city(value: String): Self = StObject.set(x, "address_city", value.asInstanceOf[js.Any])
       
@@ -303,7 +308,8 @@ object tokenMod {
       __obj.asInstanceOf[TokenResult]
     }
     
-    extension [Self <: TokenResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TokenResult] (val x: Self) extends AnyVal {
       
       inline def setError(value: StripeError): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       

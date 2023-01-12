@@ -29,7 +29,8 @@ object typesInvalidMaxResultsExceptionMod {
       __obj.asInstanceOf[InvalidMaxResultsException]
     }
     
-    extension [Self <: InvalidMaxResultsException](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InvalidMaxResultsException] (val x: Self) extends AnyVal {
       
       inline def setName(
         value: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.InvalidMaxResultsException

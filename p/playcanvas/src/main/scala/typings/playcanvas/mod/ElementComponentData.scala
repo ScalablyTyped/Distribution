@@ -15,7 +15,8 @@ object ElementComponentData {
     __obj.asInstanceOf[ElementComponentData]
   }
   
-  extension [Self <: ElementComponentData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ElementComponentData] (val x: Self) extends AnyVal {
     
     inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
   }

@@ -25,7 +25,8 @@ object IdentitytoolkitRelyingpartyVerifyCustomTokenRequest {
     __obj.asInstanceOf[IdentitytoolkitRelyingpartyVerifyCustomTokenRequest]
   }
   
-  extension [Self <: IdentitytoolkitRelyingpartyVerifyCustomTokenRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IdentitytoolkitRelyingpartyVerifyCustomTokenRequest] (val x: Self) extends AnyVal {
     
     inline def setDelegatedProjectNumber(value: String): Self = StObject.set(x, "delegatedProjectNumber", value.asInstanceOf[js.Any])
     

@@ -31,7 +31,8 @@ object SecurityGetTokenAuthenticatedUser {
     __obj.asInstanceOf[SecurityGetTokenAuthenticatedUser]
   }
   
-  extension [Self <: SecurityGetTokenAuthenticatedUser](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SecurityGetTokenAuthenticatedUser] (val x: Self) extends AnyVal {
     
     inline def setAuthentication_provider(value: SecurityGetTokenAuthenticationProvider): Self = StObject.set(x, "authentication_provider", value.asInstanceOf[js.Any])
     

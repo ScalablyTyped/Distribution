@@ -18,7 +18,8 @@ object GetCheckerIpRangesResponse {
     __obj.asInstanceOf[GetCheckerIpRangesResponse]
   }
   
-  extension [Self <: GetCheckerIpRangesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetCheckerIpRangesResponse] (val x: Self) extends AnyVal {
     
     inline def setCheckerIpRanges(value: CheckerIpRanges): Self = StObject.set(x, "CheckerIpRanges", value.asInstanceOf[js.Any])
     

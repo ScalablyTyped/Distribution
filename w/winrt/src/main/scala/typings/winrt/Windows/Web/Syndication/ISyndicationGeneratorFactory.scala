@@ -15,7 +15,8 @@ object ISyndicationGeneratorFactory {
     __obj.asInstanceOf[ISyndicationGeneratorFactory]
   }
   
-  extension [Self <: ISyndicationGeneratorFactory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISyndicationGeneratorFactory] (val x: Self) extends AnyVal {
     
     inline def setCreateSyndicationGenerator(value: String => SyndicationGenerator): Self = StObject.set(x, "createSyndicationGenerator", js.Any.fromFunction1(value))
   }

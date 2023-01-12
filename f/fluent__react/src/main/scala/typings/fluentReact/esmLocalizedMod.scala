@@ -37,7 +37,8 @@ object esmLocalizedMod {
       __obj.asInstanceOf[LocalizedProps]
     }
     
-    extension [Self <: LocalizedProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LocalizedProps] (val x: Self) extends AnyVal {
       
       inline def setAttrs(value: Record[String, Boolean]): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
       

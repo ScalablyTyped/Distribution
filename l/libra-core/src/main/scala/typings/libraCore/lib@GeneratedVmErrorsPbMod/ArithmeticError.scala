@@ -90,7 +90,8 @@ object ArithmeticError {
       __obj.asInstanceOf[AsObject]
     }
     
-    extension [Self <: AsObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AsObject] (val x: Self) extends AnyVal {
       
       inline def setErrorCode(value: ArithmeticErrorType): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
     }

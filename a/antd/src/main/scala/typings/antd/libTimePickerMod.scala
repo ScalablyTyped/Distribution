@@ -114,7 +114,8 @@ object libTimePickerMod extends Shortcut {
       __obj.asInstanceOf[TimePickerLocale]
     }
     
-    extension [Self <: TimePickerLocale](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TimePickerLocale] (val x: Self) extends AnyVal {
       
       inline def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
       
@@ -392,7 +393,8 @@ object libTimePickerMod extends Shortcut {
       __obj.asInstanceOf[TimePickerProps]
     }
     
-    extension [Self <: TimePickerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TimePickerProps] (val x: Self) extends AnyVal {
       
       inline def setAddon(value: () => ReactNode): Self = StObject.set(x, "addon", js.Any.fromFunction0(value))
       
@@ -1184,7 +1186,8 @@ object libTimePickerMod extends Shortcut {
       __obj.asInstanceOf[TimeRangePickerProps]
     }
     
-    extension [Self <: TimeRangePickerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TimeRangePickerProps] (val x: Self) extends AnyVal {
       
       inline def setActivePickerIndex(value: `0` | `1`): Self = StObject.set(x, "activePickerIndex", value.asInstanceOf[js.Any])
       

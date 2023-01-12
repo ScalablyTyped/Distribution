@@ -20,7 +20,8 @@ object JsonLogicGreaterThanOrEqual {
     __obj.asInstanceOf[JsonLogicGreaterThanOrEqual[AddOps]]
   }
   
-  extension [Self <: JsonLogicGreaterThanOrEqual[?], AddOps /* <: AdditionalOperation */](x: Self & JsonLogicGreaterThanOrEqual[AddOps]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JsonLogicGreaterThanOrEqual[?], AddOps /* <: AdditionalOperation */] (val x: Self & JsonLogicGreaterThanOrEqual[AddOps]) extends AnyVal {
     
     inline def setGreaterthansignEqualssign(value: js.Tuple2[RulesLogic[AddOps], RulesLogic[AddOps]]): Self = StObject.set(x, ">=", value.asInstanceOf[js.Any])
   }

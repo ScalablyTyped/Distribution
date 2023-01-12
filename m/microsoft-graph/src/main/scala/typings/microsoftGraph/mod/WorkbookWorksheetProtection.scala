@@ -21,7 +21,8 @@ object WorkbookWorksheetProtection {
     __obj.asInstanceOf[WorkbookWorksheetProtection]
   }
   
-  extension [Self <: WorkbookWorksheetProtection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkbookWorksheetProtection] (val x: Self) extends AnyVal {
     
     inline def setOptions(value: NullableOption[WorkbookWorksheetProtectionOptions]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     

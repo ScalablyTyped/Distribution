@@ -116,7 +116,8 @@ object distCommonjsModulesDropdownDropdownItemMod extends Shortcut {
       __obj.asInstanceOf[StrictDropdownItemProps]
     }
     
-    extension [Self <: StrictDropdownItemProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StrictDropdownItemProps] (val x: Self) extends AnyVal {
       
       inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       

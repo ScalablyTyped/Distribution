@@ -23,7 +23,8 @@ object CreateWorkerBlockRequest {
     __obj.asInstanceOf[CreateWorkerBlockRequest]
   }
   
-  extension [Self <: CreateWorkerBlockRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateWorkerBlockRequest] (val x: Self) extends AnyVal {
     
     inline def setReason(value: String): Self = StObject.set(x, "Reason", value.asInstanceOf[js.Any])
     

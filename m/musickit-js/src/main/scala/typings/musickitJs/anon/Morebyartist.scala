@@ -21,7 +21,8 @@ object Morebyartist {
     __obj.asInstanceOf[Morebyartist]
   }
   
-  extension [Self <: Morebyartist](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Morebyartist] (val x: Self) extends AnyVal {
     
     inline def `setMore-by-artist`(value: View[MusicVideos]): Self = StObject.set(x, "more-by-artist", value.asInstanceOf[js.Any])
     

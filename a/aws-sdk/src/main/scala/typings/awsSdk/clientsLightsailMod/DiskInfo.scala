@@ -33,7 +33,8 @@ object DiskInfo {
     __obj.asInstanceOf[DiskInfo]
   }
   
-  extension [Self <: DiskInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DiskInfo] (val x: Self) extends AnyVal {
     
     inline def setIsSystemDisk(value: Boolean): Self = StObject.set(x, "isSystemDisk", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object Ref {
     __obj.asInstanceOf[Ref[State]]
   }
   
-  extension [Self <: Ref[?], State /* <: Lookup[Any] */](x: Self & Ref[State]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Ref[?], State /* <: Lookup[Any] */] (val x: Self & Ref[State]) extends AnyVal {
     
     inline def setRef(value: SpringRef[State]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
     

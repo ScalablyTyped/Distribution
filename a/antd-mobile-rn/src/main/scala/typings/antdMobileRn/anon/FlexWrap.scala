@@ -17,7 +17,8 @@ object FlexWrap {
     __obj.asInstanceOf[FlexWrap]
   }
   
-  extension [Self <: FlexWrap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FlexWrap] (val x: Self) extends AnyVal {
     
     inline def setFlexDirection(value: String): Self = StObject.set(x, "flexDirection", value.asInstanceOf[js.Any])
     

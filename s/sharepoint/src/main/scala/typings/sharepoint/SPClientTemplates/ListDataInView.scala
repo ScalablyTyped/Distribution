@@ -50,7 +50,8 @@ object ListDataInView {
     __obj.asInstanceOf[ListDataInView]
   }
   
-  extension [Self <: ListDataInView](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListDataInView] (val x: Self) extends AnyVal {
     
     inline def setFilterFields(value: String): Self = StObject.set(x, "FilterFields", value.asInstanceOf[js.Any])
     

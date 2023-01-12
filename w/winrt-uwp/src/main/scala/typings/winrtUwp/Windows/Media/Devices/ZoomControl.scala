@@ -51,7 +51,8 @@ object ZoomControl {
     __obj.asInstanceOf[ZoomControl]
   }
   
-  extension [Self <: ZoomControl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ZoomControl] (val x: Self) extends AnyVal {
     
     inline def setConfigure(value: ZoomSettings => Unit): Self = StObject.set(x, "configure", js.Any.fromFunction1(value))
     

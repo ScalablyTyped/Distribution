@@ -23,7 +23,8 @@ object ListRestoreJobsOutput {
     __obj.asInstanceOf[ListRestoreJobsOutput]
   }
   
-  extension [Self <: ListRestoreJobsOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListRestoreJobsOutput] (val x: Self) extends AnyVal {
     
     inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

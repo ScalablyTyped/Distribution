@@ -28,7 +28,8 @@ object GetOfferingStatusResult {
     __obj.asInstanceOf[GetOfferingStatusResult]
   }
   
-  extension [Self <: GetOfferingStatusResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetOfferingStatusResult] (val x: Self) extends AnyVal {
     
     inline def setCurrent(value: OfferingStatusMap): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
     

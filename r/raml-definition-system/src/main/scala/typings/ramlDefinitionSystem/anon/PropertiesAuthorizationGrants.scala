@@ -17,7 +17,8 @@ object PropertiesAuthorizationGrants {
     __obj.asInstanceOf[PropertiesAuthorizationGrants]
   }
   
-  extension [Self <: PropertiesAuthorizationGrants](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PropertiesAuthorizationGrants] (val x: Self) extends AnyVal {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

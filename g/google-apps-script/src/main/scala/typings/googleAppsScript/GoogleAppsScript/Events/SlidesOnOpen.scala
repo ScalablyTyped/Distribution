@@ -20,7 +20,8 @@ object SlidesOnOpen {
     __obj.asInstanceOf[SlidesOnOpen]
   }
   
-  extension [Self <: SlidesOnOpen](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SlidesOnOpen] (val x: Self) extends AnyVal {
     
     inline def setSource(value: Presentation): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
   }

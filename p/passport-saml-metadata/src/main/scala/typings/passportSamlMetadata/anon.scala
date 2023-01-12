@@ -22,7 +22,8 @@ object anon {
       __obj.asInstanceOf[CamelCase]
     }
     
-    extension [Self <: CamelCase](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CamelCase] (val x: Self) extends AnyVal {
       
       inline def setCamelCase(value: String): Self = StObject.set(x, "camelCase", value.asInstanceOf[js.Any])
       
@@ -43,7 +44,8 @@ object anon {
       __obj.asInstanceOf[Data]
     }
     
-    extension [Self <: Data](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Data] (val x: Self) extends AnyVal {
       
       inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     }
@@ -67,7 +69,8 @@ object anon {
       __obj.asInstanceOf[MultipleCerts]
     }
     
-    extension [Self <: MultipleCerts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MultipleCerts] (val x: Self) extends AnyVal {
       
       inline def setMultipleCerts(value: Boolean): Self = StObject.set(x, "multipleCerts", value.asInstanceOf[js.Any])
     }
@@ -89,7 +92,8 @@ object anon {
       __obj.asInstanceOf[PartialFetchAxiosConfig]
     }
     
-    extension [Self <: PartialFetchAxiosConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialFetchAxiosConfig] (val x: Self) extends AnyVal {
       
       inline def setBackupStore(value: Map[String, String]): Self = StObject.set(x, "backupStore", value.asInstanceOf[js.Any])
       
@@ -119,7 +123,8 @@ object anon {
       __obj.asInstanceOf[PartialMetadataConstructo]
     }
     
-    extension [Self <: PartialMetadataConstructo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialMetadataConstructo] (val x: Self) extends AnyVal {
       
       inline def setAuthnRequestBinding(value: String): Self = StObject.set(x, "authnRequestBinding", value.asInstanceOf[js.Any])
       

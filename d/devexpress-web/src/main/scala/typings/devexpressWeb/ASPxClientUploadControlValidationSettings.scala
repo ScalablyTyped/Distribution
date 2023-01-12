@@ -41,7 +41,8 @@ object ASPxClientUploadControlValidationSettings {
     __obj.asInstanceOf[ASPxClientUploadControlValidationSettings]
   }
   
-  extension [Self <: ASPxClientUploadControlValidationSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientUploadControlValidationSettings] (val x: Self) extends AnyVal {
     
     inline def setAllowedFileExtensions(value: js.Array[String]): Self = StObject.set(x, "allowedFileExtensions", value.asInstanceOf[js.Any])
     

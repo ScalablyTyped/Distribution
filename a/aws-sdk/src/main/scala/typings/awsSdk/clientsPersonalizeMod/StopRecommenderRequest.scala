@@ -18,7 +18,8 @@ object StopRecommenderRequest {
     __obj.asInstanceOf[StopRecommenderRequest]
   }
   
-  extension [Self <: StopRecommenderRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StopRecommenderRequest] (val x: Self) extends AnyVal {
     
     inline def setRecommenderArn(value: Arn): Self = StObject.set(x, "recommenderArn", value.asInstanceOf[js.Any])
   }

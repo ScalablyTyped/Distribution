@@ -19,7 +19,8 @@ object ReportKey {
     __obj.asInstanceOf[ReportKey]
   }
   
-  extension [Self <: ReportKey](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReportKey] (val x: Self) extends AnyVal {
     
     inline def setQueryId(value: String): Self = StObject.set(x, "queryId", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object PointTooltipProps {
     __obj.asInstanceOf[PointTooltipProps]
   }
   
-  extension [Self <: PointTooltipProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PointTooltipProps] (val x: Self) extends AnyVal {
     
     inline def setPoint(value: Point): Self = StObject.set(x, "point", value.asInstanceOf[js.Any])
   }

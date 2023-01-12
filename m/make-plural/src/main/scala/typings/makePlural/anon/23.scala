@@ -49,7 +49,8 @@ object `23` {
     __obj.asInstanceOf[`23`]
   }
   
-  extension [Self <: `23`](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: `23`] (val x: Self) extends AnyVal {
     
     inline def setFew(value: js.Array[typings.makePlural.makePluralStrings.`4`]): Self = StObject.set(x, "few", value.asInstanceOf[js.Any])
     

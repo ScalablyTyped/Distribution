@@ -33,7 +33,8 @@ object SpacingProps {
     __obj.asInstanceOf[SpacingProps]
   }
   
-  extension [Self <: SpacingProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpacingProps] (val x: Self) extends AnyVal {
     
     inline def setBlockGap(value: Boolean | js.Array[AxialDirection]): Self = StObject.set(x, "blockGap", value.asInstanceOf[js.Any])
     

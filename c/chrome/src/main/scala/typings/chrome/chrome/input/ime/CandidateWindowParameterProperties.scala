@@ -56,7 +56,8 @@ object CandidateWindowParameterProperties {
     __obj.asInstanceOf[CandidateWindowParameterProperties]
   }
   
-  extension [Self <: CandidateWindowParameterProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CandidateWindowParameterProperties] (val x: Self) extends AnyVal {
     
     inline def setAuxiliaryText(value: String): Self = StObject.set(x, "auxiliaryText", value.asInstanceOf[js.Any])
     

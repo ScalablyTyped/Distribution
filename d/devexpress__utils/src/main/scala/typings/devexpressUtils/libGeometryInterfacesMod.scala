@@ -23,7 +23,8 @@ object libGeometryInterfacesMod {
       __obj.asInstanceOf[IOffsets]
     }
     
-    extension [Self <: IOffsets](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IOffsets] (val x: Self) extends AnyVal {
       
       inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       
@@ -48,7 +49,8 @@ object libGeometryInterfacesMod {
       __obj.asInstanceOf[IPoint]
     }
     
-    extension [Self <: IPoint](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPoint] (val x: Self) extends AnyVal {
       
       inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
@@ -81,7 +83,8 @@ object libGeometryInterfacesMod {
       __obj.asInstanceOf[ISize]
     }
     
-    extension [Self <: ISize](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISize] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       

@@ -17,7 +17,8 @@ object CheckAddress {
     __obj.asInstanceOf[CheckAddress]
   }
   
-  extension [Self <: CheckAddress](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CheckAddress] (val x: Self) extends AnyVal {
     
     inline def setCheckAddress(value: /* ip */ String => Boolean): Self = StObject.set(x, "checkAddress", js.Any.fromFunction1(value))
     

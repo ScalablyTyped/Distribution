@@ -51,7 +51,8 @@ object mod {
       __obj.asInstanceOf[BaseUrlOptions]
     }
     
-    extension [Self <: BaseUrlOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseUrlOptions] (val x: Self) extends AnyVal {
       
       inline def setAccessToken(value: String): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
       
@@ -149,7 +150,8 @@ object mod {
         __obj.asInstanceOf[ActionCard]
       }
       
-      extension [Self <: ActionCard](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ActionCard] (val x: Self) extends AnyVal {
         
         inline def setActionCard(value: BtnOrientation): Self = StObject.set(x, "actionCard", value.asInstanceOf[js.Any])
         
@@ -172,7 +174,8 @@ object mod {
         __obj.asInstanceOf[FeedCardItem]
       }
       
-      extension [Self <: FeedCardItem](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: FeedCardItem] (val x: Self) extends AnyVal {
         
         inline def setFeedCard(value: MessageURL_): Self = StObject.set(x, "feedCard", value.asInstanceOf[js.Any])
         
@@ -195,7 +198,8 @@ object mod {
         __obj.asInstanceOf[Link]
       }
       
-      extension [Self <: Link](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Link] (val x: Self) extends AnyVal {
         
         inline def setLink(value: MessageUrl): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
         
@@ -218,7 +222,8 @@ object mod {
         __obj.asInstanceOf[Markdown]
       }
       
-      extension [Self <: Markdown](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Markdown] (val x: Self) extends AnyVal {
         
         inline def setMarkdown(value: IsAtAll): Self = StObject.set(x, "markdown", value.asInstanceOf[js.Any])
         
@@ -243,7 +248,8 @@ object mod {
         __obj.asInstanceOf[Text]
       }
       
-      extension [Self <: Text](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Text] (val x: Self) extends AnyVal {
         
         inline def setAt(value: AtMobiles): Self = StObject.set(x, "at", value.asInstanceOf[js.Any])
         
@@ -305,7 +311,8 @@ object mod {
       __obj.asInstanceOf[WebHookOptions]
     }
     
-    extension [Self <: WebHookOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WebHookOptions] (val x: Self) extends AnyVal {
       
       inline def setHttpclient(value: Any): Self = StObject.set(x, "httpclient", value.asInstanceOf[js.Any])
       

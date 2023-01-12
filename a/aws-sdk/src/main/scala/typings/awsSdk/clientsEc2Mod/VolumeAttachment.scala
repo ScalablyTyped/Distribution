@@ -43,7 +43,8 @@ object VolumeAttachment {
     __obj.asInstanceOf[VolumeAttachment]
   }
   
-  extension [Self <: VolumeAttachment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VolumeAttachment] (val x: Self) extends AnyVal {
     
     inline def setAttachTime(value: js.Date): Self = StObject.set(x, "AttachTime", value.asInstanceOf[js.Any])
     

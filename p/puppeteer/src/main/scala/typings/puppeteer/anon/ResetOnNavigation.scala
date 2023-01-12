@@ -15,7 +15,8 @@ object ResetOnNavigation {
     __obj.asInstanceOf[ResetOnNavigation]
   }
   
-  extension [Self <: ResetOnNavigation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResetOnNavigation] (val x: Self) extends AnyVal {
     
     inline def setResetOnNavigation(value: Boolean): Self = StObject.set(x, "resetOnNavigation", value.asInstanceOf[js.Any])
     

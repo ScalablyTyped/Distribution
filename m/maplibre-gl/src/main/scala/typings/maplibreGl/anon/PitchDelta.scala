@@ -15,7 +15,8 @@ object PitchDelta {
     __obj.asInstanceOf[PitchDelta]
   }
   
-  extension [Self <: PitchDelta](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PitchDelta] (val x: Self) extends AnyVal {
     
     inline def setPitchDelta(value: Double): Self = StObject.set(x, "pitchDelta", value.asInstanceOf[js.Any])
   }

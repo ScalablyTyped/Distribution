@@ -19,7 +19,8 @@ object DraggableCallbackArgument {
     __obj.asInstanceOf[DraggableCallbackArgument]
   }
   
-  extension [Self <: DraggableCallbackArgument](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DraggableCallbackArgument] (val x: Self) extends AnyVal {
     
     inline def setDx(value: Double): Self = StObject.set(x, "dx", value.asInstanceOf[js.Any])
     

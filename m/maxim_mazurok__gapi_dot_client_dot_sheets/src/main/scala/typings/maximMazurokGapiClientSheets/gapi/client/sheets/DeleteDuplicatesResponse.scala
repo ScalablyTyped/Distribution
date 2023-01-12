@@ -16,7 +16,8 @@ object DeleteDuplicatesResponse {
     __obj.asInstanceOf[DeleteDuplicatesResponse]
   }
   
-  extension [Self <: DeleteDuplicatesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteDuplicatesResponse] (val x: Self) extends AnyVal {
     
     inline def setDuplicatesRemovedCount(value: Double): Self = StObject.set(x, "duplicatesRemovedCount", value.asInstanceOf[js.Any])
     

@@ -37,7 +37,8 @@ object mod {
       __obj.asInstanceOf[FocusableInput]
     }
     
-    extension [Self <: FocusableInput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FocusableInput] (val x: Self) extends AnyVal {
       
       inline def setFocus(value: () => Unit): Self = StObject.set(x, "focus", js.Any.fromFunction0(value))
       

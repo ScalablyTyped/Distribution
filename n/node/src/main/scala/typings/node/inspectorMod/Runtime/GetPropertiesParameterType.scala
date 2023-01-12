@@ -35,7 +35,8 @@ object GetPropertiesParameterType {
     __obj.asInstanceOf[GetPropertiesParameterType]
   }
   
-  extension [Self <: GetPropertiesParameterType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetPropertiesParameterType] (val x: Self) extends AnyVal {
     
     inline def setAccessorPropertiesOnly(value: Boolean): Self = StObject.set(x, "accessorPropertiesOnly", value.asInstanceOf[js.Any])
     

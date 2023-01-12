@@ -28,7 +28,8 @@ object WMSTileLayerProps {
     __obj.asInstanceOf[WMSTileLayerProps]
   }
   
-  extension [Self <: WMSTileLayerProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WMSTileLayerProps] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: Children): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object GitMergeOriginRef {
     __obj.asInstanceOf[GitMergeOriginRef]
   }
   
-  extension [Self <: GitMergeOriginRef](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GitMergeOriginRef] (val x: Self) extends AnyVal {
     
     inline def setPullRequestId(value: Double): Self = StObject.set(x, "pullRequestId", value.asInstanceOf[js.Any])
   }

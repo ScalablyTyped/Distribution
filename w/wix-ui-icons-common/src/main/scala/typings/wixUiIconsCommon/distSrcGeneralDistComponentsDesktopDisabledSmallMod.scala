@@ -27,7 +27,8 @@ object distSrcGeneralDistComponentsDesktopDisabledSmallMod extends Shortcut {
       __obj.asInstanceOf[DesktopDisabledSmallProps]
     }
     
-    extension [Self <: DesktopDisabledSmallProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DesktopDisabledSmallProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

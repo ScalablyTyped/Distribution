@@ -18,7 +18,8 @@ object GetRemoteAccessSessionRequest {
     __obj.asInstanceOf[GetRemoteAccessSessionRequest]
   }
   
-  extension [Self <: GetRemoteAccessSessionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetRemoteAccessSessionRequest] (val x: Self) extends AnyVal {
     
     inline def setArn(value: AmazonResourceName): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
   }

@@ -29,7 +29,8 @@ object libComponentsBreadcrumbBreadcrumbItemMod extends Shortcut {
       __obj.asInstanceOf[BreadcrumbItemProps]
     }
     
-    extension [Self <: BreadcrumbItemProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BreadcrumbItemProps] (val x: Self) extends AnyVal {
       
       inline def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
       

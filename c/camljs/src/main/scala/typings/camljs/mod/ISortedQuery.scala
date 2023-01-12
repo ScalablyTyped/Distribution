@@ -26,7 +26,8 @@ object ISortedQuery {
     __obj.asInstanceOf[ISortedQuery]
   }
   
-  extension [Self <: ISortedQuery](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISortedQuery] (val x: Self) extends AnyVal {
     
     inline def setThenBy(value: String => ISortedQuery): Self = StObject.set(x, "ThenBy", js.Any.fromFunction1(value))
     

@@ -22,7 +22,8 @@ object TypeofFileReader {
     __obj.asInstanceOf[TypeofFileReader]
   }
   
-  extension [Self <: TypeofFileReader](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofFileReader] (val x: Self) extends AnyVal {
     
     inline def setDONE(value: Double): Self = StObject.set(x, "DONE", value.asInstanceOf[js.Any])
     

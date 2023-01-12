@@ -15,7 +15,8 @@ object EnumValuesUndelete {
     __obj.asInstanceOf[EnumValuesUndelete]
   }
   
-  extension [Self <: EnumValuesUndelete](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnumValuesUndelete] (val x: Self) extends AnyVal {
     
     inline def setEnumValues(value: Undelete): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
   }

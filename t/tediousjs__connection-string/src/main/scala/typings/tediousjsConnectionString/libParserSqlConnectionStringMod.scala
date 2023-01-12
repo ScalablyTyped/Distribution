@@ -136,7 +136,8 @@ object libParserSqlConnectionStringMod {
       __obj.asInstanceOf[SchemaItem]
     }
     
-    extension [Self <: SchemaItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SchemaItem] (val x: Self) extends AnyVal {
       
       inline def setAliases(value: js.Array[String]): Self = StObject.set(x, "aliases", value.asInstanceOf[js.Any])
       

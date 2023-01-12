@@ -28,7 +28,8 @@ object GetSubscriptionDefinitionVersionRequest {
     __obj.asInstanceOf[GetSubscriptionDefinitionVersionRequest]
   }
   
-  extension [Self <: GetSubscriptionDefinitionVersionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetSubscriptionDefinitionVersionRequest] (val x: Self) extends AnyVal {
     
     inline def setNextToken(value: string): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

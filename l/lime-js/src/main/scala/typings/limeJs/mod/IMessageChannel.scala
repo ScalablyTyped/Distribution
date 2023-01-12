@@ -17,7 +17,8 @@ object IMessageChannel {
     __obj.asInstanceOf[IMessageChannel]
   }
   
-  extension [Self <: IMessageChannel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IMessageChannel] (val x: Self) extends AnyVal {
     
     inline def setOnMessage(value: Message => Any): Self = StObject.set(x, "onMessage", js.Any.fromFunction1(value))
     

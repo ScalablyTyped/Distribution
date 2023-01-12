@@ -298,7 +298,8 @@ object sapMImageContentMod {
       __obj.asInstanceOf[ImageContentSettings]
     }
     
-    extension [Self <: ImageContentSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ImageContentSettings] (val x: Self) extends AnyVal {
       
       inline def setDescription(value: String | PropertyBindingInfo): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       

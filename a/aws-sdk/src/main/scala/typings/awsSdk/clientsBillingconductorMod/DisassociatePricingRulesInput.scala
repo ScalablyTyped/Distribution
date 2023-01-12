@@ -23,7 +23,8 @@ object DisassociatePricingRulesInput {
     __obj.asInstanceOf[DisassociatePricingRulesInput]
   }
   
-  extension [Self <: DisassociatePricingRulesInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisassociatePricingRulesInput] (val x: Self) extends AnyVal {
     
     inline def setArn(value: PricingPlanArn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     

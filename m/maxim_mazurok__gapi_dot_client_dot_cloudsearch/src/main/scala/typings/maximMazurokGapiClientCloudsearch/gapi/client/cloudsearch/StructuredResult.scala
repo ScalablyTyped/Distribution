@@ -16,7 +16,8 @@ object StructuredResult {
     __obj.asInstanceOf[StructuredResult]
   }
   
-  extension [Self <: StructuredResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StructuredResult] (val x: Self) extends AnyVal {
     
     inline def setPerson(value: Person): Self = StObject.set(x, "person", value.asInstanceOf[js.Any])
     

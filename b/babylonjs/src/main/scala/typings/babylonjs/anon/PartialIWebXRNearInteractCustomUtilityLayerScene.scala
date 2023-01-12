@@ -37,7 +37,8 @@ object PartialIWebXRNearInteractCustomUtilityLayerScene {
     __obj.asInstanceOf[PartialIWebXRNearInteractCustomUtilityLayerScene]
   }
   
-  extension [Self <: PartialIWebXRNearInteractCustomUtilityLayerScene](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialIWebXRNearInteractCustomUtilityLayerScene] (val x: Self) extends AnyVal {
     
     inline def setCustomUtilityLayerScene(value: Scene): Self = StObject.set(x, "customUtilityLayerScene", value.asInstanceOf[js.Any])
     

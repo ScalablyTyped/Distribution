@@ -19,7 +19,8 @@ object GoogleCloudVisionV1p4beta1FaceRecognitionResult {
     __obj.asInstanceOf[GoogleCloudVisionV1p4beta1FaceRecognitionResult]
   }
   
-  extension [Self <: GoogleCloudVisionV1p4beta1FaceRecognitionResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudVisionV1p4beta1FaceRecognitionResult] (val x: Self) extends AnyVal {
     
     inline def setCelebrity(value: GoogleCloudVisionV1p4beta1Celebrity): Self = StObject.set(x, "celebrity", value.asInstanceOf[js.Any])
     

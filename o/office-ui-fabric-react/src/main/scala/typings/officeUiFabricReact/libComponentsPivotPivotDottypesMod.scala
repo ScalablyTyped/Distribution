@@ -90,7 +90,8 @@ object libComponentsPivotPivotDottypesMod {
       __obj.asInstanceOf[IPivot]
     }
     
-    extension [Self <: IPivot](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPivot] (val x: Self) extends AnyVal {
       
       inline def setFocus(value: () => Unit): Self = StObject.set(x, "focus", js.Any.fromFunction0(value))
     }
@@ -204,7 +205,8 @@ object libComponentsPivotPivotDottypesMod {
       __obj.asInstanceOf[IPivotProps]
     }
     
-    extension [Self <: IPivotProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPivotProps] (val x: Self) extends AnyVal {
       
       inline def setComponentRef(value: IRefObject[IPivot]): Self = StObject.set(x, "componentRef", value.asInstanceOf[js.Any])
       
@@ -298,7 +300,8 @@ object libComponentsPivotPivotDottypesMod {
       __obj.asInstanceOf[IPivotStyleProps]
     }
     
-    extension [Self <: IPivotStyleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPivotStyleProps] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -348,7 +351,8 @@ object libComponentsPivotPivotDottypesMod {
       __obj.asInstanceOf[IPivotStyles]
     }
     
-    extension [Self <: IPivotStyles](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPivotStyles] (val x: Self) extends AnyVal {
       
       inline def setCount(value: IStyle): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       

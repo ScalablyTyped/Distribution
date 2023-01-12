@@ -36,7 +36,8 @@ object DAVCollectionOptions {
     __obj.asInstanceOf[DAVCollectionOptions[T]]
   }
   
-  extension [Self <: DAVCollectionOptions[?], T](x: Self & DAVCollectionOptions[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DAVCollectionOptions[?], T] (val x: Self & DAVCollectionOptions[T]) extends AnyVal {
     
     inline def setAccount(value: Account): Self = StObject.set(x, "account", value.asInstanceOf[js.Any])
     

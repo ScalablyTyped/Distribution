@@ -21,7 +21,8 @@ object Filter {
     __obj.asInstanceOf[Filter[T]]
   }
   
-  extension [Self <: Filter[?], T /* <: HasRoomPosition | RoomPosition */](x: Self & Filter[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Filter[?], T /* <: HasRoomPosition | RoomPosition */] (val x: Self & Filter[T]) extends AnyVal {
     
     inline def setAlgorithm(value: FindClosestByPathAlgorithm): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
     

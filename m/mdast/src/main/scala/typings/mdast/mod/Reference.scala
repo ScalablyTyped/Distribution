@@ -17,7 +17,8 @@ object Reference {
     __obj.asInstanceOf[Reference]
   }
   
-  extension [Self <: Reference](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Reference] (val x: Self) extends AnyVal {
     
     inline def setReferenceType(value: ReferenceType): Self = StObject.set(x, "referenceType", value.asInstanceOf[js.Any])
   }

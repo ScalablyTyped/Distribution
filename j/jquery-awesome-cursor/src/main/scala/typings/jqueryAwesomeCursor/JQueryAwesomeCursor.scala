@@ -19,7 +19,8 @@ object JQueryAwesomeCursor {
       __obj.asInstanceOf[Font]
     }
     
-    extension [Self <: Font](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Font] (val x: Self) extends AnyVal {
       
       inline def setCssClass(value: String | cssHandler): Self = StObject.set(x, "cssClass", value.asInstanceOf[js.Any])
       
@@ -52,7 +53,8 @@ object JQueryAwesomeCursor {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       

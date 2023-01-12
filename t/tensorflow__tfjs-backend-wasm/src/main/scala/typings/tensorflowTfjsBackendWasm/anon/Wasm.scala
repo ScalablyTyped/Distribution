@@ -17,7 +17,8 @@ object Wasm {
     __obj.asInstanceOf[Wasm]
   }
   
-  extension [Self <: Wasm](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Wasm] (val x: Self) extends AnyVal {
     
     inline def setWasm(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BackendWasmModule */ Any

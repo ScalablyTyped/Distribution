@@ -103,7 +103,8 @@ object MetaDetail {
     __obj.asInstanceOf[MetaDetail]
   }
   
-  extension [Self <: MetaDetail](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MetaDetail] (val x: Self) extends AnyVal {
     
     inline def setAwards(value: String): Self = StObject.set(x, "awards", value.asInstanceOf[js.Any])
     

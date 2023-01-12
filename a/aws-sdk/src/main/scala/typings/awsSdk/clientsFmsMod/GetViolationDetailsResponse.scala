@@ -18,7 +18,8 @@ object GetViolationDetailsResponse {
     __obj.asInstanceOf[GetViolationDetailsResponse]
   }
   
-  extension [Self <: GetViolationDetailsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetViolationDetailsResponse] (val x: Self) extends AnyVal {
     
     inline def setViolationDetail(value: ViolationDetail): Self = StObject.set(x, "ViolationDetail", value.asInstanceOf[js.Any])
     

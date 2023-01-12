@@ -23,7 +23,8 @@ object ListServiceQuotaIncreaseRequestsInTemplateResponse {
     __obj.asInstanceOf[ListServiceQuotaIncreaseRequestsInTemplateResponse]
   }
   
-  extension [Self <: ListServiceQuotaIncreaseRequestsInTemplateResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListServiceQuotaIncreaseRequestsInTemplateResponse] (val x: Self) extends AnyVal {
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

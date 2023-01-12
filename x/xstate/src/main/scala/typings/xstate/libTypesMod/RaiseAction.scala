@@ -22,7 +22,8 @@ object RaiseAction {
     __obj.asInstanceOf[RaiseAction[TEvent]]
   }
   
-  extension [Self <: RaiseAction[?], TEvent /* <: EventObject */](x: Self & RaiseAction[TEvent]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RaiseAction[?], TEvent /* <: EventObject */] (val x: Self & RaiseAction[TEvent]) extends AnyVal {
     
     inline def setEvent(
       value: /* import warning: importer.ImportType#apply Failed type conversion: TEvent['type'] */ js.Any

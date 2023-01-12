@@ -43,7 +43,8 @@ object Mp4Settings {
     __obj.asInstanceOf[Mp4Settings]
   }
   
-  extension [Self <: Mp4Settings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Mp4Settings] (val x: Self) extends AnyVal {
     
     inline def setAudioDuration(value: CmfcAudioDuration): Self = StObject.set(x, "AudioDuration", value.asInstanceOf[js.Any])
     

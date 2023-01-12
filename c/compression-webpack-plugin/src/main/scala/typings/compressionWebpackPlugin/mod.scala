@@ -167,7 +167,8 @@ object mod {
       __obj.asInstanceOf[BasePluginOptions[T]]
     }
     
-    extension [Self <: BasePluginOptions[?], T](x: Self & BasePluginOptions[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BasePluginOptions[?], T] (val x: Self & BasePluginOptions[T]) extends AnyVal {
       
       inline def setDeleteOriginalAssets(value: DeleteOriginalAssets): Self = StObject.set(x, "deleteOriginalAssets", value.asInstanceOf[js.Any])
       
@@ -324,7 +325,8 @@ object mod {
       __obj.asInstanceOf[CompressionPlugin[T]]
     }
     
-    extension [Self <: CompressionPlugin[?], T](x: Self & CompressionPlugin[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CompressionPlugin[?], T] (val x: Self & CompressionPlugin[T]) extends AnyVal {
       
       inline def setAlgorithm(value: Any): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
       
@@ -395,7 +397,8 @@ object mod {
       __obj.asInstanceOf[InternalPluginOptions[T]]
     }
     
-    extension [Self <: InternalPluginOptions[?], T](x: Self & InternalPluginOptions[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InternalPluginOptions[?], T] (val x: Self & InternalPluginOptions[T]) extends AnyVal {
       
       inline def setAlgorithm(value: String | AlgorithmFunction[T]): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
       

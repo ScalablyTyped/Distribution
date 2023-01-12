@@ -74,7 +74,8 @@ object VoxelLayerProperties {
     __obj.asInstanceOf[VoxelLayerProperties]
   }
   
-  extension [Self <: VoxelLayerProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VoxelLayerProperties] (val x: Self) extends AnyVal {
     
     inline def setCurrentVariableId(value: Double): Self = StObject.set(x, "currentVariableId", value.asInstanceOf[js.Any])
     

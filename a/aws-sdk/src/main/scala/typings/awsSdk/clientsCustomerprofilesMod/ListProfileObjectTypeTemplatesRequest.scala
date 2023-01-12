@@ -23,7 +23,8 @@ object ListProfileObjectTypeTemplatesRequest {
     __obj.asInstanceOf[ListProfileObjectTypeTemplatesRequest]
   }
   
-  extension [Self <: ListProfileObjectTypeTemplatesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListProfileObjectTypeTemplatesRequest] (val x: Self) extends AnyVal {
     
     inline def setMaxResults(value: maxSize100): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     

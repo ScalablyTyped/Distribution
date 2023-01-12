@@ -18,7 +18,8 @@ object AttachToBrowserTargetResponse {
     __obj.asInstanceOf[AttachToBrowserTargetResponse]
   }
   
-  extension [Self <: AttachToBrowserTargetResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AttachToBrowserTargetResponse] (val x: Self) extends AnyVal {
     
     inline def setSessionId(value: SessionID): Self = StObject.set(x, "sessionId", value.asInstanceOf[js.Any])
   }

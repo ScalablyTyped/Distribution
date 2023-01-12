@@ -24,7 +24,8 @@ object AutoDectect {
     __obj.asInstanceOf[AutoDectect]
   }
   
-  extension [Self <: AutoDectect](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AutoDectect] (val x: Self) extends AnyVal {
     
     inline def setAutoDectect(value: Boolean): Self = StObject.set(x, "autoDectect", value.asInstanceOf[js.Any])
     

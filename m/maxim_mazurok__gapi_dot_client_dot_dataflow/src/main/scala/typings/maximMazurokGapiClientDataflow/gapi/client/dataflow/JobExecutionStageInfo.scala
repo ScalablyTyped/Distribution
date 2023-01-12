@@ -16,7 +16,8 @@ object JobExecutionStageInfo {
     __obj.asInstanceOf[JobExecutionStageInfo]
   }
   
-  extension [Self <: JobExecutionStageInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JobExecutionStageInfo] (val x: Self) extends AnyVal {
     
     inline def setStepName(value: js.Array[String]): Self = StObject.set(x, "stepName", value.asInstanceOf[js.Any])
     

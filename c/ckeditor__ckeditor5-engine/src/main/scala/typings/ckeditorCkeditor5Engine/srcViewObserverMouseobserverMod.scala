@@ -39,7 +39,8 @@ object srcViewObserverMouseobserverMod {
         __obj.asInstanceOf[Observers]
       }
       
-      extension [Self <: Observers](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Observers] (val x: Self) extends AnyVal {
         
         inline def setMouseObserver(value: MouseObserver): Self = StObject.set(x, "MouseObserver", value.asInstanceOf[js.Any])
       }

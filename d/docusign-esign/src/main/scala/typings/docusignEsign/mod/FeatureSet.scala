@@ -62,7 +62,8 @@ object FeatureSet {
     __obj.asInstanceOf[FeatureSet]
   }
   
-  extension [Self <: FeatureSet](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FeatureSet] (val x: Self) extends AnyVal {
     
     inline def setCurrencyFeatureSetPrices(
       value: js.Array[

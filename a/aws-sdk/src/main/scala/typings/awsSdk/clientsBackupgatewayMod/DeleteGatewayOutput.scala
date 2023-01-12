@@ -18,7 +18,8 @@ object DeleteGatewayOutput {
     __obj.asInstanceOf[DeleteGatewayOutput]
   }
   
-  extension [Self <: DeleteGatewayOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteGatewayOutput] (val x: Self) extends AnyVal {
     
     inline def setGatewayArn(value: GatewayArn): Self = StObject.set(x, "GatewayArn", value.asInstanceOf[js.Any])
     

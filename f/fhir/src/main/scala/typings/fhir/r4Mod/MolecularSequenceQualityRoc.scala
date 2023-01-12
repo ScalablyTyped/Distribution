@@ -50,7 +50,8 @@ object MolecularSequenceQualityRoc {
     __obj.asInstanceOf[MolecularSequenceQualityRoc]
   }
   
-  extension [Self <: MolecularSequenceQualityRoc](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MolecularSequenceQualityRoc] (val x: Self) extends AnyVal {
     
     inline def setFMeasure(value: js.Array[Double]): Self = StObject.set(x, "fMeasure", value.asInstanceOf[js.Any])
     

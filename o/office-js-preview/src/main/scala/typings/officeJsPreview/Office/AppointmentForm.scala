@@ -200,7 +200,8 @@ object AppointmentForm {
     __obj.asInstanceOf[AppointmentForm]
   }
   
-  extension [Self <: AppointmentForm](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppointmentForm] (val x: Self) extends AnyVal {
     
     inline def setBody(value: Body | String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

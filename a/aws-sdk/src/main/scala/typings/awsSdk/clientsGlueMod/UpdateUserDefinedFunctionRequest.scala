@@ -33,7 +33,8 @@ object UpdateUserDefinedFunctionRequest {
     __obj.asInstanceOf[UpdateUserDefinedFunctionRequest]
   }
   
-  extension [Self <: UpdateUserDefinedFunctionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateUserDefinedFunctionRequest] (val x: Self) extends AnyVal {
     
     inline def setCatalogId(value: CatalogIdString): Self = StObject.set(x, "CatalogId", value.asInstanceOf[js.Any])
     

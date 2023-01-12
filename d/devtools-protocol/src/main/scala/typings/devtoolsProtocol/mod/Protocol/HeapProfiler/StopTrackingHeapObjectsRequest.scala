@@ -34,7 +34,8 @@ object StopTrackingHeapObjectsRequest {
     __obj.asInstanceOf[StopTrackingHeapObjectsRequest]
   }
   
-  extension [Self <: StopTrackingHeapObjectsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StopTrackingHeapObjectsRequest] (val x: Self) extends AnyVal {
     
     inline def setCaptureNumericValue(value: Boolean): Self = StObject.set(x, "captureNumericValue", value.asInstanceOf[js.Any])
     

@@ -59,7 +59,8 @@ object libApiInviterOptionsMod {
       __obj.asInstanceOf[InviterOptions]
     }
     
-    extension [Self <: InviterOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InviterOptions] (val x: Self) extends AnyVal {
       
       inline def setAnonymous(value: Boolean): Self = StObject.set(x, "anonymous", value.asInstanceOf[js.Any])
       

@@ -18,7 +18,8 @@ object GetAWSDefaultServiceQuotaResponse {
     __obj.asInstanceOf[GetAWSDefaultServiceQuotaResponse]
   }
   
-  extension [Self <: GetAWSDefaultServiceQuotaResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetAWSDefaultServiceQuotaResponse] (val x: Self) extends AnyVal {
     
     inline def setQuota(value: ServiceQuota): Self = StObject.set(x, "Quota", value.asInstanceOf[js.Any])
     

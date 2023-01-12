@@ -33,7 +33,8 @@ object TargetTrackingConfiguration {
     __obj.asInstanceOf[TargetTrackingConfiguration]
   }
   
-  extension [Self <: TargetTrackingConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TargetTrackingConfiguration] (val x: Self) extends AnyVal {
     
     inline def setCustomizedMetricSpecification(value: CustomizedMetricSpecification): Self = StObject.set(x, "CustomizedMetricSpecification", value.asInstanceOf[js.Any])
     

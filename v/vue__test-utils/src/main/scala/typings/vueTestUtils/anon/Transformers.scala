@@ -16,7 +16,8 @@ object Transformers {
     __obj.asInstanceOf[Transformers]
   }
   
-  extension [Self <: Transformers](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Transformers] (val x: Self) extends AnyVal {
     
     inline def setTransformers(value: js.Array[VTUVNodeTypeTransformer]): Self = StObject.set(x, "transformers", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object OrganizationsResource {
     __obj.asInstanceOf[OrganizationsResource]
   }
   
-  extension [Self <: OrganizationsResource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OrganizationsResource] (val x: Self) extends AnyVal {
     
     inline def setGcpUserAccessBindings(value: GcpUserAccessBindingsResource): Self = StObject.set(x, "gcpUserAccessBindings", value.asInstanceOf[js.Any])
   }

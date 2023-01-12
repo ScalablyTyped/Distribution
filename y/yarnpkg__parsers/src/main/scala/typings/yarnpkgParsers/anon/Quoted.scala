@@ -24,7 +24,8 @@ object Quoted {
     __obj.asInstanceOf[Quoted]
   }
   
-  extension [Self <: Quoted](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Quoted] (val x: Self) extends AnyVal {
     
     inline def setQuoted(value: Boolean): Self = StObject.set(x, "quoted", value.asInstanceOf[js.Any])
     

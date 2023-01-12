@@ -19,7 +19,8 @@ object MigrateBasePlanPricesRequest {
     __obj.asInstanceOf[MigrateBasePlanPricesRequest]
   }
   
-  extension [Self <: MigrateBasePlanPricesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MigrateBasePlanPricesRequest] (val x: Self) extends AnyVal {
     
     inline def setRegionalPriceMigrations(value: js.Array[RegionalPriceMigrationConfig]): Self = StObject.set(x, "regionalPriceMigrations", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object ListFilteredBidsResponse {
     __obj.asInstanceOf[ListFilteredBidsResponse]
   }
   
-  extension [Self <: ListFilteredBidsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListFilteredBidsResponse] (val x: Self) extends AnyVal {
     
     inline def setCreativeStatusRows(value: js.Array[CreativeStatusRow]): Self = StObject.set(x, "creativeStatusRows", value.asInstanceOf[js.Any])
     

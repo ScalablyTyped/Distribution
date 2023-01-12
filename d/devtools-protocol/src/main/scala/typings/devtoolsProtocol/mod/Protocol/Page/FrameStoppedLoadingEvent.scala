@@ -18,7 +18,8 @@ object FrameStoppedLoadingEvent {
     __obj.asInstanceOf[FrameStoppedLoadingEvent]
   }
   
-  extension [Self <: FrameStoppedLoadingEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FrameStoppedLoadingEvent] (val x: Self) extends AnyVal {
     
     inline def setFrameId(value: FrameId): Self = StObject.set(x, "frameId", value.asInstanceOf[js.Any])
   }

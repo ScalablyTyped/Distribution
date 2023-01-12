@@ -21,7 +21,8 @@ object GlobalFakeTimersConfig {
     __obj.asInstanceOf[GlobalFakeTimersConfig]
   }
   
-  extension [Self <: GlobalFakeTimersConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GlobalFakeTimersConfig] (val x: Self) extends AnyVal {
     
     inline def setEnableGlobally(value: Boolean): Self = StObject.set(x, "enableGlobally", value.asInstanceOf[js.Any])
     

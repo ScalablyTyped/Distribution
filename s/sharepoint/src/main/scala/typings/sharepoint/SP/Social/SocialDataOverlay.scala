@@ -50,7 +50,8 @@ object SocialDataOverlay {
     __obj.asInstanceOf[SocialDataOverlay]
   }
   
-  extension [Self <: SocialDataOverlay](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SocialDataOverlay] (val x: Self) extends AnyVal {
     
     inline def setGet_actorIndexes(value: () => js.Array[Double]): Self = StObject.set(x, "get_actorIndexes", js.Any.fromFunction0(value))
     

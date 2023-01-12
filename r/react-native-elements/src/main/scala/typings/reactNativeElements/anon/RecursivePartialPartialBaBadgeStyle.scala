@@ -55,7 +55,8 @@ object RecursivePartialPartialBaBadgeStyle {
     __obj.asInstanceOf[RecursivePartialPartialBaBadgeStyle]
   }
   
-  extension [Self <: RecursivePartialPartialBaBadgeStyle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecursivePartialPartialBaBadgeStyle] (val x: Self) extends AnyVal {
     
     inline def setBadgeStyle(value: RecursivePartial[js.UndefOr[StyleProp[ViewStyle]]]): Self = StObject.set(x, "badgeStyle", value.asInstanceOf[js.Any])
     

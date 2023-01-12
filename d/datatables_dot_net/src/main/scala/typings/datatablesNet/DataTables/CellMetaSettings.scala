@@ -19,7 +19,8 @@ object CellMetaSettings {
     __obj.asInstanceOf[CellMetaSettings]
   }
   
-  extension [Self <: CellMetaSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CellMetaSettings] (val x: Self) extends AnyVal {
     
     inline def setCol(value: Double): Self = StObject.set(x, "col", value.asInstanceOf[js.Any])
     

@@ -75,7 +75,8 @@ object CreateGameServerGroupInput {
     __obj.asInstanceOf[CreateGameServerGroupInput]
   }
   
-  extension [Self <: CreateGameServerGroupInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateGameServerGroupInput] (val x: Self) extends AnyVal {
     
     inline def setAutoScalingPolicy(value: GameServerGroupAutoScalingPolicy): Self = StObject.set(x, "AutoScalingPolicy", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object UpdateResponseHeadersPolicyResult {
     __obj.asInstanceOf[UpdateResponseHeadersPolicyResult]
   }
   
-  extension [Self <: UpdateResponseHeadersPolicyResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateResponseHeadersPolicyResult] (val x: Self) extends AnyVal {
     
     inline def setETag(value: String): Self = StObject.set(x, "ETag", value.asInstanceOf[js.Any])
     

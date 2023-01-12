@@ -15,7 +15,8 @@ object PDFViewerPdfjsProcessing {
     __obj.asInstanceOf[PDFViewerPdfjsProcessing]
   }
   
-  extension [Self <: PDFViewerPdfjsProcessing](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PDFViewerPdfjsProcessing] (val x: Self) extends AnyVal {
     
     inline def setFile(value: Any | String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
     

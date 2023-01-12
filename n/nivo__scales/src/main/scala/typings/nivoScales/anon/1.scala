@@ -16,7 +16,8 @@ object `1` {
     __obj.asInstanceOf[`1`[XValue, YValue]]
   }
   
-  extension [Self <: `1`[?, ?], XValue /* <: ScaleValue */, YValue /* <: ScaleValue */](x: Self & (`1`[XValue, YValue])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: `1`[?, ?], XValue /* <: ScaleValue */, YValue /* <: ScaleValue */] (val x: Self & (`1`[XValue, YValue])) extends AnyVal {
     
     inline def setData(value: js.Array[DataXY[XValue, YValue]]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

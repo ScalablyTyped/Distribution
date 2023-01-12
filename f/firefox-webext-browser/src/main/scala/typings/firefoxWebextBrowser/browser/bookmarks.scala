@@ -60,7 +60,8 @@ object bookmarks {
       __obj.asInstanceOf[BookmarkTreeNode]
     }
     
-    extension [Self <: BookmarkTreeNode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BookmarkTreeNode] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: js.Array[BookmarkTreeNode]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -146,7 +147,8 @@ object bookmarks {
       __obj.asInstanceOf[CreateDetails]
     }
     
-    extension [Self <: CreateDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateDetails] (val x: Self) extends AnyVal {
       
       inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
@@ -183,7 +185,8 @@ object bookmarks {
       __obj.asInstanceOf[MoveDestination]
     }
     
-    extension [Self <: MoveDestination](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MoveDestination] (val x: Self) extends AnyVal {
       
       inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
@@ -208,7 +211,8 @@ object bookmarks {
       __obj.asInstanceOf[OnChangedChangeInfo]
     }
     
-    extension [Self <: OnChangedChangeInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OnChangedChangeInfo] (val x: Self) extends AnyVal {
       
       inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
@@ -229,7 +233,8 @@ object bookmarks {
       __obj.asInstanceOf[OnChildrenReorderedReorderInfo]
     }
     
-    extension [Self <: OnChildrenReorderedReorderInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OnChildrenReorderedReorderInfo] (val x: Self) extends AnyVal {
       
       inline def setChildIds(value: js.Array[String]): Self = StObject.set(x, "childIds", value.asInstanceOf[js.Any])
       
@@ -254,7 +259,8 @@ object bookmarks {
       __obj.asInstanceOf[OnMovedMoveInfo]
     }
     
-    extension [Self <: OnMovedMoveInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OnMovedMoveInfo] (val x: Self) extends AnyVal {
       
       inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
@@ -281,7 +287,8 @@ object bookmarks {
       __obj.asInstanceOf[OnRemovedRemoveInfo]
     }
     
-    extension [Self <: OnRemovedRemoveInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OnRemovedRemoveInfo] (val x: Self) extends AnyVal {
       
       inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
@@ -304,7 +311,8 @@ object bookmarks {
       __obj.asInstanceOf[UpdateChanges]
     }
     
-    extension [Self <: UpdateChanges](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UpdateChanges] (val x: Self) extends AnyVal {
       
       inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       

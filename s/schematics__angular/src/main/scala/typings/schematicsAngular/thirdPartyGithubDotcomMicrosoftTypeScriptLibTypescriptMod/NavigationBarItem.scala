@@ -44,7 +44,8 @@ object NavigationBarItem {
     __obj.asInstanceOf[NavigationBarItem]
   }
   
-  extension [Self <: NavigationBarItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NavigationBarItem] (val x: Self) extends AnyVal {
     
     inline def setBolded(value: Boolean): Self = StObject.set(x, "bolded", value.asInstanceOf[js.Any])
     

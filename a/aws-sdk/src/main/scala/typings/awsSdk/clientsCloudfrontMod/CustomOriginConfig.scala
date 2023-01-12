@@ -43,7 +43,8 @@ object CustomOriginConfig {
     __obj.asInstanceOf[CustomOriginConfig]
   }
   
-  extension [Self <: CustomOriginConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomOriginConfig] (val x: Self) extends AnyVal {
     
     inline def setHTTPPort(value: integer): Self = StObject.set(x, "HTTPPort", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object IPanoramaMarkerIcon {
     __obj.asInstanceOf[IPanoramaMarkerIcon]
   }
   
-  extension [Self <: IPanoramaMarkerIcon](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPanoramaMarkerIcon] (val x: Self) extends AnyVal {
     
     inline def setImage(value: HTMLCanvasElement | HTMLImageElement): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     

@@ -25,7 +25,8 @@ object ChatRoomsDataReceived {
     __obj.asInstanceOf[ChatRoomsDataReceived]
   }
   
-  extension [Self <: ChatRoomsDataReceived](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChatRoomsDataReceived] (val x: Self) extends AnyVal {
     
     inline def setRooms(value: js.Array[ChatRoom]): Self = StObject.set(x, "rooms", value.asInstanceOf[js.Any])
     

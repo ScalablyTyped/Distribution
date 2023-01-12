@@ -46,7 +46,8 @@ object libInterfacesMod {
       __obj.asInstanceOf[AuthProvider]
     }
     
-    extension [Self <: AuthProvider](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AuthProvider] (val x: Self) extends AnyVal {
       
       inline def setGetUser(
         value: (Request_[
@@ -79,7 +80,8 @@ object libInterfacesMod {
       __obj.asInstanceOf[ControllerMetadata]
     }
     
-    extension [Self <: ControllerMetadata](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ControllerMetadata] (val x: Self) extends AnyVal {
       
       inline def setMiddleware(value: js.Array[Middleware]): Self = StObject.set(x, "middleware", value.asInstanceOf[js.Any])
       
@@ -112,7 +114,8 @@ object libInterfacesMod {
       __obj.asInstanceOf[ControllerMethodMetadata]
     }
     
-    extension [Self <: ControllerMethodMetadata](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ControllerMethodMetadata] (val x: Self) extends AnyVal {
       
       inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
@@ -160,7 +163,8 @@ object libInterfacesMod {
       __obj.asInstanceOf[HttpContext]
     }
     
-    extension [Self <: HttpContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HttpContext] (val x: Self) extends AnyVal {
       
       inline def setContainer(value: Container): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
       
@@ -191,7 +195,8 @@ object libInterfacesMod {
       __obj.asInstanceOf[IHttpActionResult]
     }
     
-    extension [Self <: IHttpActionResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IHttpActionResult] (val x: Self) extends AnyVal {
       
       inline def setExecuteAsync(value: () => js.Promise[HttpResponseMessage]): Self = StObject.set(x, "executeAsync", js.Any.fromFunction0(value))
     }
@@ -223,7 +228,8 @@ object libInterfacesMod {
       __obj.asInstanceOf[ParameterMetadata]
     }
     
-    extension [Self <: ParameterMetadata](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParameterMetadata] (val x: Self) extends AnyVal {
       
       inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
@@ -259,7 +265,8 @@ object libInterfacesMod {
       __obj.asInstanceOf[Principal]
     }
     
-    extension [Self <: Principal](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Principal] (val x: Self) extends AnyVal {
       
       inline def setDetails(value: Any): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
       
@@ -290,7 +297,8 @@ object libInterfacesMod {
       __obj.asInstanceOf[RawMetadata]
     }
     
-    extension [Self <: RawMetadata](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RawMetadata] (val x: Self) extends AnyVal {
       
       inline def setControllerMetadata(value: ControllerMetadata): Self = StObject.set(x, "controllerMetadata", value.asInstanceOf[js.Any])
       
@@ -315,7 +323,8 @@ object libInterfacesMod {
       __obj.asInstanceOf[RouteDetails]
     }
     
-    extension [Self <: RouteDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RouteDetails] (val x: Self) extends AnyVal {
       
       inline def setArgs(value: js.Array[String]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
@@ -340,7 +349,8 @@ object libInterfacesMod {
       __obj.asInstanceOf[RouteInfo]
     }
     
-    extension [Self <: RouteInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RouteInfo] (val x: Self) extends AnyVal {
       
       inline def setController(value: Any): Self = StObject.set(x, "controller", value.asInstanceOf[js.Any])
       
@@ -361,7 +371,8 @@ object libInterfacesMod {
       __obj.asInstanceOf[RoutingConfig]
     }
     
-    extension [Self <: RoutingConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RoutingConfig] (val x: Self) extends AnyVal {
       
       inline def setRootPath(value: String): Self = StObject.set(x, "rootPath", value.asInstanceOf[js.Any])
     }

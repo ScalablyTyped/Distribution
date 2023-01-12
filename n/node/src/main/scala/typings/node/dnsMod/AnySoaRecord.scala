@@ -28,7 +28,8 @@ object AnySoaRecord {
     __obj.asInstanceOf[AnySoaRecord]
   }
   
-  extension [Self <: AnySoaRecord](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnySoaRecord] (val x: Self) extends AnyVal {
     
     inline def setType(value: SOA): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

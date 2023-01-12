@@ -63,7 +63,8 @@ object XStringSubstitution {
     __obj.asInstanceOf[XStringSubstitution]
   }
   
-  extension [Self <: XStringSubstitution](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XStringSubstitution] (val x: Self) extends AnyVal {
     
     inline def setGetSubstituteVariableValue(value: String => String): Self = StObject.set(x, "getSubstituteVariableValue", js.Any.fromFunction1(value))
     

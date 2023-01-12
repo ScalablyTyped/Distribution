@@ -28,7 +28,8 @@ object AnalysisCommonGramsTokenFilter {
     __obj.asInstanceOf[AnalysisCommonGramsTokenFilter]
   }
   
-  extension [Self <: AnalysisCommonGramsTokenFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnalysisCommonGramsTokenFilter] (val x: Self) extends AnyVal {
     
     inline def setCommon_words(value: js.Array[String]): Self = StObject.set(x, "common_words", value.asInstanceOf[js.Any])
     

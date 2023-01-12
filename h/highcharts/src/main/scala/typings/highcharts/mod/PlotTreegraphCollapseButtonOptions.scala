@@ -50,7 +50,8 @@ object PlotTreegraphCollapseButtonOptions {
     __obj.asInstanceOf[PlotTreegraphCollapseButtonOptions]
   }
   
-  extension [Self <: PlotTreegraphCollapseButtonOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotTreegraphCollapseButtonOptions] (val x: Self) extends AnyVal {
     
     inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     

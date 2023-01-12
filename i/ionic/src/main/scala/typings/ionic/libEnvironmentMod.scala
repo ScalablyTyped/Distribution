@@ -105,7 +105,8 @@ object libEnvironmentMod {
       __obj.asInstanceOf[EnvironmentDeps]
     }
     
-    extension [Self <: EnvironmentDeps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EnvironmentDeps] (val x: Self) extends AnyVal {
       
       inline def setClient(value: IClient): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
       

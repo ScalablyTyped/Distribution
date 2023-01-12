@@ -31,7 +31,8 @@ object anon {
       __obj.asInstanceOf[Error]
     }
     
-    extension [Self <: Error](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Error] (val x: Self) extends AnyVal {
       
       inline def setError(value: ERR_INVALID_ARGS | ERR_INVALID_TARGET | ERR_FULL): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
@@ -56,7 +57,8 @@ object anon {
       __obj.asInstanceOf[ErrorObject]
     }
     
-    extension [Self <: ErrorObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ErrorObject] (val x: Self) extends AnyVal {
       
       inline def setError(value: ERR_BUSY | ERR_INVALID_ARGS | ERR_NOT_ENOUGH_ENERGY): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
@@ -82,7 +84,8 @@ object anon {
       __obj.asInstanceOf[Hits]
     }
     
-    extension [Self <: Hits](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Hits] (val x: Self) extends AnyVal {
       
       inline def setHits(value: Double): Self = StObject.set(x, "hits", value.asInstanceOf[js.Any])
       
@@ -103,7 +106,8 @@ object anon {
       __obj.asInstanceOf[Object]
     }
     
-    extension [Self <: Object](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Object] (val x: Self) extends AnyVal {
       
       inline def setError(value: ERR_BUSY | ERR_INVALID_ARGS | ERR_NOT_ENOUGH_ENERGY): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
@@ -128,7 +132,8 @@ object anon {
       __obj.asInstanceOf[Pos]
     }
     
-    extension [Self <: Pos](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Pos] (val x: Self) extends AnyVal {
       
       inline def setPos(value: RoomPosition): Self = StObject.set(x, "pos", value.asInstanceOf[js.Any])
       

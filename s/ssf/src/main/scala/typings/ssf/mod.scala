@@ -83,7 +83,8 @@ object mod {
       __obj.asInstanceOf[SSFDate]
     }
     
-    extension [Self <: SSFDate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SSFDate] (val x: Self) extends AnyVal {
       
       inline def setD(value: Double): Self = StObject.set(x, "D", value.asInstanceOf[js.Any])
       

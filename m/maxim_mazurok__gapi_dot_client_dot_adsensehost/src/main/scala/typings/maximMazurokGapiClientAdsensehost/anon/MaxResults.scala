@@ -43,7 +43,8 @@ object MaxResults {
     __obj.asInstanceOf[MaxResults]
   }
   
-  extension [Self <: MaxResults](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MaxResults] (val x: Self) extends AnyVal {
     
     inline def setAdClientId(value: String): Self = StObject.set(x, "adClientId", value.asInstanceOf[js.Any])
     

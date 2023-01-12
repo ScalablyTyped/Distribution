@@ -17,7 +17,8 @@ object PruneContainersInfo {
     __obj.asInstanceOf[PruneContainersInfo]
   }
   
-  extension [Self <: PruneContainersInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PruneContainersInfo] (val x: Self) extends AnyVal {
     
     inline def setContainersDeleted(value: js.Array[String]): Self = StObject.set(x, "ContainersDeleted", value.asInstanceOf[js.Any])
     

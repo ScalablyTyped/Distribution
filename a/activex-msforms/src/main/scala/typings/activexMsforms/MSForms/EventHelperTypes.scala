@@ -65,7 +65,8 @@ object EventHelperTypes {
       __obj.asInstanceOf[ContainerBeforeDragOverParameter]
     }
     
-    extension [Self <: ContainerBeforeDragOverParameter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContainerBeforeDragOverParameter] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: ReturnBoolean): Self = StObject.set(x, "Cancel", value.asInstanceOf[js.Any])
       
@@ -130,7 +131,8 @@ object EventHelperTypes {
       __obj.asInstanceOf[ContainerBeforeDropOrPasteParameter]
     }
     
-    extension [Self <: ContainerBeforeDropOrPasteParameter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContainerBeforeDropOrPasteParameter] (val x: Self) extends AnyVal {
       
       inline def setAction(value: fmAction): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
       
@@ -180,7 +182,8 @@ object EventHelperTypes {
       __obj.asInstanceOf[ContainerScrollParameter]
     }
     
-    extension [Self <: ContainerScrollParameter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContainerScrollParameter] (val x: Self) extends AnyVal {
       
       inline def setActionX(value: fmScrollAction): Self = StObject.set(x, "ActionX", value.asInstanceOf[js.Any])
       
@@ -229,7 +232,8 @@ object EventHelperTypes {
       __obj.asInstanceOf[ControlBeforeDragOverParameter]
     }
     
-    extension [Self <: ControlBeforeDragOverParameter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ControlBeforeDragOverParameter] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: ReturnBoolean): Self = StObject.set(x, "Cancel", value.asInstanceOf[js.Any])
       
@@ -280,7 +284,8 @@ object EventHelperTypes {
       __obj.asInstanceOf[ControlBeforeDropOrPasteParameter]
     }
     
-    extension [Self <: ControlBeforeDropOrPasteParameter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ControlBeforeDropOrPasteParameter] (val x: Self) extends AnyVal {
       
       inline def setAction(value: fmAction): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
       
@@ -331,7 +336,8 @@ object EventHelperTypes {
       __obj.asInstanceOf[ErrorParameter]
     }
     
-    extension [Self <: ErrorParameter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ErrorParameter] (val x: Self) extends AnyVal {
       
       inline def setCancelDisplay(value: ReturnBoolean): Self = StObject.set(x, "CancelDisplay", value.asInstanceOf[js.Any])
       
@@ -398,7 +404,8 @@ object EventHelperTypes {
       __obj.asInstanceOf[MultiPageBeforeDragOverParameter]
     }
     
-    extension [Self <: MultiPageBeforeDragOverParameter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MultiPageBeforeDragOverParameter] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: ReturnBoolean): Self = StObject.set(x, "Cancel", value.asInstanceOf[js.Any])
       
@@ -469,7 +476,8 @@ object EventHelperTypes {
       __obj.asInstanceOf[MultiPageBeforeDropOrPasteParameter]
     }
     
-    extension [Self <: MultiPageBeforeDropOrPasteParameter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MultiPageBeforeDropOrPasteParameter] (val x: Self) extends AnyVal {
       
       inline def setAction(value: fmAction): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
       
@@ -527,7 +535,8 @@ object EventHelperTypes {
       __obj.asInstanceOf[MultiPageErrorParameter]
     }
     
-    extension [Self <: MultiPageErrorParameter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MultiPageErrorParameter] (val x: Self) extends AnyVal {
       
       inline def setCancelDisplay(value: ReturnBoolean): Self = StObject.set(x, "CancelDisplay", value.asInstanceOf[js.Any])
       
@@ -580,7 +589,8 @@ object EventHelperTypes {
       __obj.asInstanceOf[MultiPageScrollParameter]
     }
     
-    extension [Self <: MultiPageScrollParameter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MultiPageScrollParameter] (val x: Self) extends AnyVal {
       
       inline def setActionX(value: fmScrollAction): Self = StObject.set(x, "ActionX", value.asInstanceOf[js.Any])
       
@@ -634,7 +644,8 @@ object EventHelperTypes {
       __obj.asInstanceOf[TabStripBeforeDragOverParameter]
     }
     
-    extension [Self <: TabStripBeforeDragOverParameter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TabStripBeforeDragOverParameter] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: ReturnBoolean): Self = StObject.set(x, "Cancel", value.asInstanceOf[js.Any])
       
@@ -690,7 +701,8 @@ object EventHelperTypes {
       __obj.asInstanceOf[TabStripBeforeDropOrPasteParameter]
     }
     
-    extension [Self <: TabStripBeforeDropOrPasteParameter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TabStripBeforeDropOrPasteParameter] (val x: Self) extends AnyVal {
       
       inline def setAction(value: fmAction): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
       

@@ -32,7 +32,8 @@ object mod {
       __obj.asInstanceOf[S3StreamDownloaderOptions]
     }
     
-    extension [Self <: S3StreamDownloaderOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: S3StreamDownloaderOptions] (val x: Self) extends AnyVal {
       
       inline def setChunkSize(value: String): Self = StObject.set(x, "chunkSize", value.asInstanceOf[js.Any])
       

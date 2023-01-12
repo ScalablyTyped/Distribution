@@ -17,7 +17,8 @@ object ColumnSortMetaData {
     __obj.asInstanceOf[ColumnSortMetaData]
   }
   
-  extension [Self <: ColumnSortMetaData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ColumnSortMetaData] (val x: Self) extends AnyVal {
     
     inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     

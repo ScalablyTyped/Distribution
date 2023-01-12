@@ -33,7 +33,8 @@ object TsParserConfig {
     __obj.asInstanceOf[TsParserConfig]
   }
   
-  extension [Self <: TsParserConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TsParserConfig] (val x: Self) extends AnyVal {
     
     inline def setDecorators(value: Boolean): Self = StObject.set(x, "decorators", value.asInstanceOf[js.Any])
     

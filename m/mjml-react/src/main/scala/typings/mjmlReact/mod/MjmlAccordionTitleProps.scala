@@ -26,7 +26,8 @@ object MjmlAccordionTitleProps {
     __obj.asInstanceOf[MjmlAccordionTitleProps]
   }
   
-  extension [Self <: MjmlAccordionTitleProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MjmlAccordionTitleProps] (val x: Self) extends AnyVal {
     
     inline def setBackgroundColor(value: BackgroundColor): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     

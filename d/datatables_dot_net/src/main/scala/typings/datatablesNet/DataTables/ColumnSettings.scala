@@ -110,7 +110,8 @@ object ColumnSettings {
     __obj.asInstanceOf[ColumnSettings]
   }
   
-  extension [Self <: ColumnSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ColumnSettings] (val x: Self) extends AnyVal {
     
     inline def setCellType(value: String): Self = StObject.set(x, "cellType", value.asInstanceOf[js.Any])
     

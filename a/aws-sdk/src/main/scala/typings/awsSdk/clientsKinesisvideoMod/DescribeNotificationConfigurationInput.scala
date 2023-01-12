@@ -23,7 +23,8 @@ object DescribeNotificationConfigurationInput {
     __obj.asInstanceOf[DescribeNotificationConfigurationInput]
   }
   
-  extension [Self <: DescribeNotificationConfigurationInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeNotificationConfigurationInput] (val x: Self) extends AnyVal {
     
     inline def setStreamARN(value: ResourceARN): Self = StObject.set(x, "StreamARN", value.asInstanceOf[js.Any])
     

@@ -34,7 +34,8 @@ object ResultsOptions {
     __obj.asInstanceOf[ResultsOptions]
   }
   
-  extension [Self <: ResultsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResultsOptions] (val x: Self) extends AnyVal {
     
     inline def setBreakDown(value: Boolean): Self = StObject.set(x, "breakDown", value.asInstanceOf[js.Any])
     

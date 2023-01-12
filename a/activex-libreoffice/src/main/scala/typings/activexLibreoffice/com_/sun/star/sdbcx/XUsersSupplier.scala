@@ -37,7 +37,8 @@ object XUsersSupplier {
     __obj.asInstanceOf[XUsersSupplier]
   }
   
-  extension [Self <: XUsersSupplier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XUsersSupplier] (val x: Self) extends AnyVal {
     
     inline def setGetUsers(value: () => XNameAccess): Self = StObject.set(x, "getUsers", js.Any.fromFunction0(value))
     

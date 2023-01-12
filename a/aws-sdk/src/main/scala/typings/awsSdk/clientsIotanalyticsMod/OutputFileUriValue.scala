@@ -18,7 +18,8 @@ object OutputFileUriValue {
     __obj.asInstanceOf[OutputFileUriValue]
   }
   
-  extension [Self <: OutputFileUriValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OutputFileUriValue] (val x: Self) extends AnyVal {
     
     inline def setFileName(value: OutputFileName): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
   }

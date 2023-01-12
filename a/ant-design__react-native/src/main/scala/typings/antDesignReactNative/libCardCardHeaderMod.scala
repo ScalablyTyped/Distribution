@@ -48,7 +48,8 @@ object libCardCardHeaderMod {
       __obj.asInstanceOf[CardHeaderProps]
     }
     
-    extension [Self <: CardHeaderProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CardHeaderProps] (val x: Self) extends AnyVal {
       
       inline def setStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
@@ -82,7 +83,8 @@ object libCardCardHeaderMod {
       __obj.asInstanceOf[CardHeaderPropsType]
     }
     
-    extension [Self <: CardHeaderPropsType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CardHeaderPropsType] (val x: Self) extends AnyVal {
       
       inline def setExtra(value: ReactNode): Self = StObject.set(x, "extra", value.asInstanceOf[js.Any])
       

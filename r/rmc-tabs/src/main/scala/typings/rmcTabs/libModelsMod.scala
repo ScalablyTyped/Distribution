@@ -26,7 +26,8 @@ object libModelsMod {
         __obj.asInstanceOf[TabData]
       }
       
-      extension [Self <: TabData](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: TabData] (val x: Self) extends AnyVal {
         
         inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
         

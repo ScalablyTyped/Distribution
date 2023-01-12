@@ -19,7 +19,8 @@ object PreserveDecimals {
     __obj.asInstanceOf[PreserveDecimals]
   }
   
-  extension [Self <: PreserveDecimals](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PreserveDecimals] (val x: Self) extends AnyVal {
     
     inline def setPreserveDecimals(value: Boolean): Self = StObject.set(x, "preserveDecimals", value.asInstanceOf[js.Any])
     

@@ -39,7 +39,8 @@ object ImpostorSize {
     __obj.asInstanceOf[ImpostorSize]
   }
   
-  extension [Self <: ImpostorSize](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImpostorSize] (val x: Self) extends AnyVal {
     
     inline def setFriction(value: Double): Self = StObject.set(x, "friction", value.asInstanceOf[js.Any])
     

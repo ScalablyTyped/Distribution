@@ -17,7 +17,8 @@ object LegalInstruction {
     __obj.asInstanceOf[LegalInstruction]
   }
   
-  extension [Self <: LegalInstruction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LegalInstruction] (val x: Self) extends AnyVal {
     
     inline def setLegalContent(value: String): Self = StObject.set(x, "legalContent", value.asInstanceOf[js.Any])
     

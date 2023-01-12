@@ -28,7 +28,8 @@ object AttributeOption {
     __obj.asInstanceOf[AttributeOption]
   }
   
-  extension [Self <: AttributeOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AttributeOption] (val x: Self) extends AnyVal {
     
     inline def setCallback(value: /* repeated */ Any => Any): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
     

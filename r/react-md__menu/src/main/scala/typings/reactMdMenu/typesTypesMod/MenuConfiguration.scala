@@ -49,7 +49,8 @@ object MenuConfiguration {
     __obj.asInstanceOf[MenuConfiguration]
   }
   
-  extension [Self <: MenuConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MenuConfiguration] (val x: Self) extends AnyVal {
     
     inline def setRenderAsSheet(value: RenderMenuAsSheet): Self = StObject.set(x, "renderAsSheet", value.asInstanceOf[js.Any])
     

@@ -107,7 +107,8 @@ object TimelineView {
     __obj.asInstanceOf[TimelineView]
   }
   
-  extension [Self <: TimelineView](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimelineView] (val x: Self) extends AnyVal {
     
     inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     

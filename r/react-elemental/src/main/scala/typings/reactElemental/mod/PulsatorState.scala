@@ -15,7 +15,8 @@ object PulsatorState {
     __obj.asInstanceOf[PulsatorState]
   }
   
-  extension [Self <: PulsatorState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PulsatorState] (val x: Self) extends AnyVal {
     
     inline def setColor(value: Any): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
   }

@@ -23,7 +23,8 @@ object DocumentReviewCommentSource {
     __obj.asInstanceOf[DocumentReviewCommentSource]
   }
   
-  extension [Self <: DocumentReviewCommentSource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DocumentReviewCommentSource] (val x: Self) extends AnyVal {
     
     inline def setContent(value: DocumentReviewComment): Self = StObject.set(x, "Content", value.asInstanceOf[js.Any])
     

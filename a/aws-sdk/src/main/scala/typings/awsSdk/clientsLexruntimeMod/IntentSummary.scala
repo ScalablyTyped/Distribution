@@ -48,7 +48,8 @@ object IntentSummary {
     __obj.asInstanceOf[IntentSummary]
   }
   
-  extension [Self <: IntentSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IntentSummary] (val x: Self) extends AnyVal {
     
     inline def setCheckpointLabel(value: IntentSummaryCheckpointLabel): Self = StObject.set(x, "checkpointLabel", value.asInstanceOf[js.Any])
     

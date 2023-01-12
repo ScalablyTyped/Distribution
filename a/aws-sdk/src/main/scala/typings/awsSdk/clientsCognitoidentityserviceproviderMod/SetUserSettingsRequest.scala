@@ -23,7 +23,8 @@ object SetUserSettingsRequest {
     __obj.asInstanceOf[SetUserSettingsRequest]
   }
   
-  extension [Self <: SetUserSettingsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetUserSettingsRequest] (val x: Self) extends AnyVal {
     
     inline def setAccessToken(value: TokenModelType): Self = StObject.set(x, "AccessToken", value.asInstanceOf[js.Any])
     

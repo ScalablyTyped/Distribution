@@ -83,7 +83,8 @@ object XMethodParameter {
     __obj.asInstanceOf[XMethodParameter]
   }
   
-  extension [Self <: XMethodParameter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XMethodParameter] (val x: Self) extends AnyVal {
     
     inline def setGetName(value: () => String): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
     

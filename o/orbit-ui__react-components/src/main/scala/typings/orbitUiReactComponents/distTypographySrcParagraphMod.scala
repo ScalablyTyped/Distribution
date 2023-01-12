@@ -68,7 +68,8 @@ object distTypographySrcParagraphMod {
       __obj.asInstanceOf[InnerParagraphProps]
     }
     
-    extension [Self <: InnerParagraphProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InnerParagraphProps] (val x: Self) extends AnyVal {
       
       inline def setAs(value: ElementType[Any]): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       

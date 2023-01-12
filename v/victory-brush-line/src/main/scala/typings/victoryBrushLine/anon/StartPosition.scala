@@ -32,7 +32,8 @@ object StartPosition {
     __obj.asInstanceOf[StartPosition]
   }
   
-  extension [Self <: StartPosition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartPosition] (val x: Self) extends AnyVal {
     
     inline def setActiveBrushes(value: Any): Self = StObject.set(x, "activeBrushes", value.asInstanceOf[js.Any])
     

@@ -242,7 +242,8 @@ object Draw {
       __obj.asInstanceOf[EventHandlers]
     }
     
-    extension [Self <: EventHandlers](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EventHandlers] (val x: Self) extends AnyVal {
       
       inline def setOnCreated(value: drawColoncreated): Self = StObject.set(x, "onCreated", value.asInstanceOf[js.Any])
       

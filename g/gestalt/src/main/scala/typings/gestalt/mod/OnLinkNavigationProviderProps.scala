@@ -15,7 +15,8 @@ object OnLinkNavigationProviderProps {
     __obj.asInstanceOf[OnLinkNavigationProviderProps]
   }
   
-  extension [Self <: OnLinkNavigationProviderProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnLinkNavigationProviderProps] (val x: Self) extends AnyVal {
     
     inline def setOnNavigation(value: /* args */ OnNavigationArgs => js.UndefOr[EventHandlerType | Null]): Self = StObject.set(x, "onNavigation", js.Any.fromFunction1(value))
     

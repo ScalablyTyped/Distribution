@@ -66,7 +66,8 @@ object mod {
         __obj.asInstanceOf[AnchorInfo]
       }
       
-      extension [Self <: AnchorInfo](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AnchorInfo] (val x: Self) extends AnyVal {
         
         inline def setSlug(value: String): Self = StObject.set(x, "slug", value.asInstanceOf[js.Any])
         
@@ -97,7 +98,8 @@ object mod {
         __obj.asInstanceOf[AnchorOptions]
       }
       
-      extension [Self <: AnchorOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AnchorOptions] (val x: Self) extends AnyVal {
         
         inline def setCallback(value: (/* token */ ^, /* anchor_info */ AnchorInfo) => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction2(value))
         
@@ -148,7 +150,8 @@ object mod {
         __obj.asInstanceOf[AriaHiddenPermalinkOptions]
       }
       
-      extension [Self <: AriaHiddenPermalinkOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AriaHiddenPermalinkOptions] (val x: Self) extends AnyVal {
         
         inline def setPlacement(value: before | after): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
         
@@ -173,7 +176,8 @@ object mod {
         __obj.asInstanceOf[HeaderLinkPermalinkOptions]
       }
       
-      extension [Self <: HeaderLinkPermalinkOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: HeaderLinkPermalinkOptions] (val x: Self) extends AnyVal {
         
         inline def setSafariReaderFix(value: Boolean): Self = StObject.set(x, "safariReaderFix", value.asInstanceOf[js.Any])
         
@@ -204,7 +208,8 @@ object mod {
         __obj.asInstanceOf[LinkAfterHeaderPermalinkOptions]
       }
       
-      extension [Self <: LinkAfterHeaderPermalinkOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: LinkAfterHeaderPermalinkOptions] (val x: Self) extends AnyVal {
         
         inline def setAssistiveText(value: /* title */ String => String): Self = StObject.set(x, "assistiveText", js.Any.fromFunction1(value))
         
@@ -251,7 +256,8 @@ object mod {
         __obj.asInstanceOf[LinkInsideHeaderPermalinkOptions]
       }
       
-      extension [Self <: LinkInsideHeaderPermalinkOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: LinkInsideHeaderPermalinkOptions] (val x: Self) extends AnyVal {
         
         inline def setAriaHidden(value: Boolean): Self = StObject.set(x, "ariaHidden", value.asInstanceOf[js.Any])
         
@@ -292,7 +298,8 @@ object mod {
         __obj.asInstanceOf[PermalinkOptions]
       }
       
-      extension [Self <: PermalinkOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: PermalinkOptions] (val x: Self) extends AnyVal {
         
         inline def setClass(value: String): Self = StObject.set(x, "class", value.asInstanceOf[js.Any])
         

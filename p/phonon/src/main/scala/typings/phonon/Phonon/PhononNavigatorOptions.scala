@@ -27,7 +27,8 @@ object PhononNavigatorOptions {
     __obj.asInstanceOf[PhononNavigatorOptions]
   }
   
-  extension [Self <: PhononNavigatorOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PhononNavigatorOptions] (val x: Self) extends AnyVal {
     
     inline def setAnimatePages(value: Boolean): Self = StObject.set(x, "animatePages", value.asInstanceOf[js.Any])
     

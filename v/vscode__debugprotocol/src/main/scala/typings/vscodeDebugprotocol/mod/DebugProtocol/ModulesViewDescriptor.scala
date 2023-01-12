@@ -18,7 +18,8 @@ object ModulesViewDescriptor {
     __obj.asInstanceOf[ModulesViewDescriptor]
   }
   
-  extension [Self <: ModulesViewDescriptor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModulesViewDescriptor] (val x: Self) extends AnyVal {
     
     inline def setColumns(value: js.Array[ColumnDescriptor]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     

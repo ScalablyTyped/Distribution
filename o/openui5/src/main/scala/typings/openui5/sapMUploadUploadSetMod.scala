@@ -3447,7 +3447,8 @@ object sapMUploadUploadSetMod {
       __obj.asInstanceOf[UploadSetSettings]
     }
     
-    extension [Self <: UploadSetSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UploadSetSettings] (val x: Self) extends AnyVal {
       
       inline def setAfterItemAdded(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "afterItemAdded", js.Any.fromFunction1(value))
       

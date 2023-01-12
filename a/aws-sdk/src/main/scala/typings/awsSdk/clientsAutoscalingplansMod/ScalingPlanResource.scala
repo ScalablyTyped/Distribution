@@ -60,7 +60,8 @@ object ScalingPlanResource {
     __obj.asInstanceOf[ScalingPlanResource]
   }
   
-  extension [Self <: ScalingPlanResource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScalingPlanResource] (val x: Self) extends AnyVal {
     
     inline def setResourceId(value: ResourceIdMaxLen1600): Self = StObject.set(x, "ResourceId", value.asInstanceOf[js.Any])
     

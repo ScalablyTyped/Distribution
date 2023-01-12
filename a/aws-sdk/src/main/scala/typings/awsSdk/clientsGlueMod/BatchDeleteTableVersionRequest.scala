@@ -33,7 +33,8 @@ object BatchDeleteTableVersionRequest {
     __obj.asInstanceOf[BatchDeleteTableVersionRequest]
   }
   
-  extension [Self <: BatchDeleteTableVersionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchDeleteTableVersionRequest] (val x: Self) extends AnyVal {
     
     inline def setCatalogId(value: CatalogIdString): Self = StObject.set(x, "CatalogId", value.asInstanceOf[js.Any])
     

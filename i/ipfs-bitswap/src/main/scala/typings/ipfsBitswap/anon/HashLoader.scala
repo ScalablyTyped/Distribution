@@ -28,7 +28,8 @@ object HashLoader {
     __obj.asInstanceOf[HashLoader]
   }
   
-  extension [Self <: HashLoader](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HashLoader] (val x: Self) extends AnyVal {
     
     inline def setHashLoader(value: MultihashHasherLoader): Self = StObject.set(x, "hashLoader", value.asInstanceOf[js.Any])
     

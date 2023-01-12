@@ -66,7 +66,8 @@ object TextField_ {
     __obj.asInstanceOf[TextField_]
   }
   
-  extension [Self <: TextField_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextField_] (val x: Self) extends AnyVal {
     
     inline def setIsFieldDisplayed(value: Boolean): Self = StObject.set(x, "IsFieldDisplayed", value.asInstanceOf[js.Any])
     

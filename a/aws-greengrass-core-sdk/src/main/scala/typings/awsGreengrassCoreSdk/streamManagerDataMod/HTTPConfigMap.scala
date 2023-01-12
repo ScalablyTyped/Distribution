@@ -19,7 +19,8 @@ object HTTPConfigMap {
     __obj.asInstanceOf[HTTPConfigMap]
   }
   
-  extension [Self <: HTTPConfigMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HTTPConfigMap] (val x: Self) extends AnyVal {
     
     inline def setExportFormat(value: ExportFormatMap): Self = StObject.set(x, "exportFormat", value.asInstanceOf[js.Any])
     

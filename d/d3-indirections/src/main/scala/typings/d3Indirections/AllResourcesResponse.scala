@@ -21,7 +21,8 @@ object AllResourcesResponse {
     __obj.asInstanceOf[AllResourcesResponse[T]]
   }
   
-  extension [Self <: AllResourcesResponse[?], T /* <: ResourceType */](x: Self & AllResourcesResponse[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AllResourcesResponse[?], T /* <: ResourceType */] (val x: Self & AllResourcesResponse[T]) extends AnyVal {
     
     inline def setResult(value: js.Array[Resource[T]]): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     

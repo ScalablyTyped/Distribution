@@ -17,7 +17,8 @@ object CreateWorkloadOutput {
     __obj.asInstanceOf[CreateWorkloadOutput]
   }
   
-  extension [Self <: CreateWorkloadOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateWorkloadOutput] (val x: Self) extends AnyVal {
     
     inline def setWorkloadArn(value: WorkloadArn): Self = StObject.set(x, "WorkloadArn", value.asInstanceOf[js.Any])
     

@@ -30,7 +30,8 @@ object typesCancelKeyDeletionOutputMod {
       __obj.asInstanceOf[CancelKeyDeletionOutput]
     }
     
-    extension [Self <: CancelKeyDeletionOutput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CancelKeyDeletionOutput] (val x: Self) extends AnyVal {
       
       inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
       

@@ -141,7 +141,8 @@ object renderingOutlineRendererMod {
         __obj.asInstanceOf[AbstractMesh]
       }
       
-      extension [Self <: AbstractMesh](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AbstractMesh] (val x: Self) extends AnyVal {
         
         inline def setRenderOutline(value: Boolean): Self = StObject.set(x, "renderOutline", value.asInstanceOf[js.Any])
         
@@ -175,7 +176,8 @@ object renderingOutlineRendererMod {
         __obj.asInstanceOf[typings.babylonjs.renderingOutlineRendererMod.babylonjsSceneAugmentingMod.Scene]
       }
       
-      extension [Self <: typings.babylonjs.renderingOutlineRendererMod.babylonjsSceneAugmentingMod.Scene](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.babylonjs.renderingOutlineRendererMod.babylonjsSceneAugmentingMod.Scene] (val x: Self) extends AnyVal {
         
         inline def setGetOutlineRenderer(value: () => OutlineRenderer): Self = StObject.set(x, "getOutlineRenderer", js.Any.fromFunction0(value))
         

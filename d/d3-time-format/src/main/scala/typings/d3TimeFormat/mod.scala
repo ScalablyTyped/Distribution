@@ -84,7 +84,8 @@ object mod {
       __obj.asInstanceOf[TimeLocaleDefinition]
     }
     
-    extension [Self <: TimeLocaleDefinition](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TimeLocaleDefinition] (val x: Self) extends AnyVal {
       
       inline def setDate(value: String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
       
@@ -214,7 +215,8 @@ object mod {
       __obj.asInstanceOf[TimeLocaleObject]
     }
     
-    extension [Self <: TimeLocaleObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TimeLocaleObject] (val x: Self) extends AnyVal {
       
       inline def setFormat(value: String => js.Function1[/* date */ js.Date, String]): Self = StObject.set(x, "format", js.Any.fromFunction1(value))
       

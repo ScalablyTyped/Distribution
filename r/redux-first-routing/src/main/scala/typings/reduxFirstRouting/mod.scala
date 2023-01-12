@@ -88,7 +88,8 @@ object mod {
       __obj.asInstanceOf[State]
     }
     
-    extension [Self <: State](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: State] (val x: Self) extends AnyVal {
       
       inline def setHash(value: Hash): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
       
@@ -114,7 +115,8 @@ object mod {
       __obj.asInstanceOf[goAction[T]]
     }
     
-    extension [Self <: goAction[?], T /* <: Double */](x: Self & goAction[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: goAction[?], T /* <: Double */] (val x: Self & goAction[T]) extends AnyVal {
       
       inline def setPayload(value: T): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     }
@@ -138,7 +140,8 @@ object mod {
       __obj.asInstanceOf[locationChangeAction[P, S, H]]
     }
     
-    extension [Self <: locationChangeAction[?, ?, ?], P /* <: Pathname */, S /* <: Search */, H /* <: Hash */](x: Self & (locationChangeAction[P, S, H])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: locationChangeAction[?, ?, ?], P /* <: Pathname */, S /* <: Search */, H /* <: Hash */] (val x: Self & (locationChangeAction[P, S, H])) extends AnyVal {
       
       inline def setPayload(value: typings.reduxFirstRouting.anon.Hash[P, S, H]): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     }
@@ -158,7 +161,8 @@ object mod {
       __obj.asInstanceOf[pushAction[T]]
     }
     
-    extension [Self <: pushAction[?], T /* <: Path | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify LocationDescriptorObject */ Any) */](x: Self & pushAction[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: pushAction[?], T /* <: Path | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify LocationDescriptorObject */ Any) */] (val x: Self & pushAction[T]) extends AnyVal {
       
       inline def setPayload(value: T): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     }
@@ -178,7 +182,8 @@ object mod {
       __obj.asInstanceOf[replaceAction[T]]
     }
     
-    extension [Self <: replaceAction[?], T /* <: Path | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify LocationDescriptorObject */ Any) */](x: Self & replaceAction[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: replaceAction[?], T /* <: Path | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify LocationDescriptorObject */ Any) */] (val x: Self & replaceAction[T]) extends AnyVal {
       
       inline def setPayload(value: T): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     }

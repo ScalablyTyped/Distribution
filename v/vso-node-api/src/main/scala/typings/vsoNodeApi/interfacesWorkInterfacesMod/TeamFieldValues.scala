@@ -36,7 +36,8 @@ object TeamFieldValues {
     __obj.asInstanceOf[TeamFieldValues]
   }
   
-  extension [Self <: TeamFieldValues](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TeamFieldValues] (val x: Self) extends AnyVal {
     
     inline def setDefaultValue(value: String): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
     

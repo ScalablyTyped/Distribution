@@ -16,7 +16,8 @@ object AnalyzeMoveResponse {
     __obj.asInstanceOf[AnalyzeMoveResponse]
   }
   
-  extension [Self <: AnalyzeMoveResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnalyzeMoveResponse] (val x: Self) extends AnyVal {
     
     inline def setMoveAnalysis(value: js.Array[MoveAnalysis]): Self = StObject.set(x, "moveAnalysis", value.asInstanceOf[js.Any])
     

@@ -54,7 +54,8 @@ object apiUrlstringaccessKeyneve {
     __obj.asInstanceOf[apiUrlstringaccessKeyneve]
   }
   
-  extension [Self <: apiUrlstringaccessKeyneve](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: apiUrlstringaccessKeyneve] (val x: Self) extends AnyVal {
     
     inline def setApiUrl(value: String): Self = StObject.set(x, "apiUrl", value.asInstanceOf[js.Any])
     

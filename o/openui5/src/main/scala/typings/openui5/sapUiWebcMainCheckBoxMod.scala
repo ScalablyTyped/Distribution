@@ -784,7 +784,8 @@ object sapUiWebcMainCheckBoxMod {
       __obj.asInstanceOf[CheckBoxSettings]
     }
     
-    extension [Self <: CheckBoxSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CheckBoxSettings] (val x: Self) extends AnyVal {
       
       inline def setAccessibleName(value: String | PropertyBindingInfo): Self = StObject.set(x, "accessibleName", value.asInstanceOf[js.Any])
       

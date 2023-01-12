@@ -32,7 +32,8 @@ object AggregationsStandardDeviationBoundsAsString {
     __obj.asInstanceOf[AggregationsStandardDeviationBoundsAsString]
   }
   
-  extension [Self <: AggregationsStandardDeviationBoundsAsString](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AggregationsStandardDeviationBoundsAsString] (val x: Self) extends AnyVal {
     
     inline def setLower(value: String): Self = StObject.set(x, "lower", value.asInstanceOf[js.Any])
     

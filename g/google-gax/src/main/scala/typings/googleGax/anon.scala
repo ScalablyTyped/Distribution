@@ -71,7 +71,8 @@ object anon {
       __obj.asInstanceOf[Cancel]
     }
     
-    extension [Self <: Cancel](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Cancel] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
     }
@@ -88,7 +89,8 @@ object anon {
       __obj.asInstanceOf[Deadline]
     }
     
-    extension [Self <: Deadline](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Deadline] (val x: Self) extends AnyVal {
       
       inline def setDeadline(value: js.Date): Self = StObject.set(x, "deadline", value.asInstanceOf[js.Any])
       
@@ -160,7 +162,8 @@ object anon {
       __obj.asInstanceOf[GrpcClientOptionsfallback]
     }
     
-    extension [Self <: GrpcClientOptionsfallback](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GrpcClientOptionsfallback] (val x: Self) extends AnyVal {
       
       inline def setAuth(value: GoogleAuth[JSONClient]): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
       
@@ -244,7 +247,8 @@ object anon {
       __obj.asInstanceOf[PartialRetryOptions]
     }
     
-    extension [Self <: PartialRetryOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialRetryOptions] (val x: Self) extends AnyVal {
       
       inline def setBackoffSettings(value: BackoffSettings): Self = StObject.set(x, "backoffSettings", value.asInstanceOf[js.Any])
       
@@ -273,7 +277,8 @@ object anon {
       __obj.asInstanceOf[String]
     }
     
-    extension [Self <: String](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: String] (val x: Self) extends AnyVal {
       
       inline def setString(value: java.lang.String): Self = StObject.set(x, "string", value.asInstanceOf[js.Any])
     }
@@ -519,7 +524,8 @@ object anon {
       __obj.asInstanceOf[Typeofcredentials]
     }
     
-    extension [Self <: Typeofcredentials](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Typeofcredentials] (val x: Self) extends AnyVal {
       
       inline def setCombineCallCredentials(
         value: (typings.grpcGrpcJs.buildSrcCallCredentialsMod.CallCredentials, /* repeated */ typings.grpcGrpcJs.buildSrcCallCredentialsMod.CallCredentials) => typings.grpcGrpcJs.buildSrcCallCredentialsMod.CallCredentials
@@ -648,7 +654,8 @@ object anon {
       __obj.asInstanceOf[authOAuth2Clientfallbackb]
     }
     
-    extension [Self <: authOAuth2Clientfallbackb](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: authOAuth2Clientfallbackb] (val x: Self) extends AnyVal {
       
       inline def setAuth(value: typings.googleAuthLibrary.mod.OAuth2Client): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
       

@@ -19,7 +19,8 @@ object APIResponseMeta {
     __obj.asInstanceOf[APIResponseMeta]
   }
   
-  extension [Self <: APIResponseMeta](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: APIResponseMeta] (val x: Self) extends AnyVal {
     
     inline def setRequest_id(value: String): Self = StObject.set(x, "request_id", value.asInstanceOf[js.Any])
     

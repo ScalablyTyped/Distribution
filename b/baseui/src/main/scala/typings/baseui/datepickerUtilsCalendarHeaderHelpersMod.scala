@@ -27,7 +27,8 @@ object datepickerUtilsCalendarHeaderHelpersMod {
       __obj.asInstanceOf[GetMonthItemsArgs]
     }
     
-    extension [Self <: GetMonthItemsArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetMonthItemsArgs] (val x: Self) extends AnyVal {
       
       inline def setFilterMonthsList(value: js.Array[Double]): Self = StObject.set(x, "filterMonthsList", value.asInstanceOf[js.Any])
       
@@ -54,7 +55,8 @@ object datepickerUtilsCalendarHeaderHelpersMod {
       __obj.asInstanceOf[Option]
     }
     
-    extension [Self <: Option](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Option] (val x: Self) extends AnyVal {
       
       inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       

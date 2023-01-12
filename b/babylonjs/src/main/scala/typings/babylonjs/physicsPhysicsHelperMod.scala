@@ -396,7 +396,8 @@ object physicsPhysicsHelperMod {
       __obj.asInstanceOf[PhysicsAffectedImpostorWithData]
     }
     
-    extension [Self <: PhysicsAffectedImpostorWithData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PhysicsAffectedImpostorWithData] (val x: Self) extends AnyVal {
       
       inline def setHitData(value: PhysicsHitData): Self = StObject.set(x, "hitData", value.asInstanceOf[js.Any])
       
@@ -464,7 +465,8 @@ object physicsPhysicsHelperMod {
       __obj.asInstanceOf[PhysicsGravitationalFieldEventData]
     }
     
-    extension [Self <: PhysicsGravitationalFieldEventData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PhysicsGravitationalFieldEventData] (val x: Self) extends AnyVal {
       
       inline def setSphere(value: Mesh): Self = StObject.set(x, "sphere", value.asInstanceOf[js.Any])
     }
@@ -494,7 +496,8 @@ object physicsPhysicsHelperMod {
       __obj.asInstanceOf[PhysicsHitData]
     }
     
-    extension [Self <: PhysicsHitData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PhysicsHitData] (val x: Self) extends AnyVal {
       
       inline def setContactPoint(value: Vector3): Self = StObject.set(x, "contactPoint", value.asInstanceOf[js.Any])
       
@@ -565,7 +568,8 @@ object physicsPhysicsHelperMod {
       __obj.asInstanceOf[PhysicsRadialExplosionEventData]
     }
     
-    extension [Self <: PhysicsRadialExplosionEventData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PhysicsRadialExplosionEventData] (val x: Self) extends AnyVal {
       
       inline def setSphere(value: Mesh): Self = StObject.set(x, "sphere", value.asInstanceOf[js.Any])
     }
@@ -644,7 +648,8 @@ object physicsPhysicsHelperMod {
       __obj.asInstanceOf[PhysicsUpdraftEventData]
     }
     
-    extension [Self <: PhysicsUpdraftEventData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PhysicsUpdraftEventData] (val x: Self) extends AnyVal {
       
       inline def setCylinder(value: Mesh): Self = StObject.set(x, "cylinder", value.asInstanceOf[js.Any])
     }
@@ -721,7 +726,8 @@ object physicsPhysicsHelperMod {
       __obj.asInstanceOf[PhysicsVortexEventData]
     }
     
-    extension [Self <: PhysicsVortexEventData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PhysicsVortexEventData] (val x: Self) extends AnyVal {
       
       inline def setCylinder(value: Mesh): Self = StObject.set(x, "cylinder", value.asInstanceOf[js.Any])
     }

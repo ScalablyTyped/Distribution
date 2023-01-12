@@ -21,7 +21,8 @@ object BaseFontSizeBreakpoints {
     __obj.asInstanceOf[BaseFontSizeBreakpoints]
   }
   
-  extension [Self <: BaseFontSizeBreakpoints](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BaseFontSizeBreakpoints] (val x: Self) extends AnyVal {
     
     inline def setBaseFontSize(value: Double): Self = StObject.set(x, "baseFontSize", value.asInstanceOf[js.Any])
     

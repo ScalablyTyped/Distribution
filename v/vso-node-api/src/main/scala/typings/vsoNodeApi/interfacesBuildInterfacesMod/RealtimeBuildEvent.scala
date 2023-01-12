@@ -15,7 +15,8 @@ object RealtimeBuildEvent {
     __obj.asInstanceOf[RealtimeBuildEvent]
   }
   
-  extension [Self <: RealtimeBuildEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RealtimeBuildEvent] (val x: Self) extends AnyVal {
     
     inline def setBuildId(value: Double): Self = StObject.set(x, "buildId", value.asInstanceOf[js.Any])
   }

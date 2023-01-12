@@ -31,7 +31,8 @@ object RightToLeft {
     __obj.asInstanceOf[RightToLeft]
   }
   
-  extension [Self <: RightToLeft](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RightToLeft] (val x: Self) extends AnyVal {
     
     inline def setArgCount(value: `2`): Self = StObject.set(x, "argCount", value.asInstanceOf[js.Any])
     

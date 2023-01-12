@@ -73,7 +73,8 @@ object AnimationEffect {
     __obj.asInstanceOf[AnimationEffect]
   }
   
-  extension [Self <: AnimationEffect](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnimationEffect] (val x: Self) extends AnyVal {
     
     inline def setBackendNodeId(value: BackendNodeId): Self = StObject.set(x, "backendNodeId", value.asInstanceOf[js.Any])
     

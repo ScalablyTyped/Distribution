@@ -146,7 +146,8 @@ object Statement {
     __obj.asInstanceOf[Statement]
   }
   
-  extension [Self <: Statement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Statement] (val x: Self) extends AnyVal {
     
     inline def setCursorName(value: String): Self = StObject.set(x, "CursorName", value.asInstanceOf[js.Any])
     

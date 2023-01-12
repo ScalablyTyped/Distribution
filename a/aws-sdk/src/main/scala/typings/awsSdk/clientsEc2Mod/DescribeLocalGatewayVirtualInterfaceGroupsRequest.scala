@@ -38,7 +38,8 @@ object DescribeLocalGatewayVirtualInterfaceGroupsRequest {
     __obj.asInstanceOf[DescribeLocalGatewayVirtualInterfaceGroupsRequest]
   }
   
-  extension [Self <: DescribeLocalGatewayVirtualInterfaceGroupsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeLocalGatewayVirtualInterfaceGroupsRequest] (val x: Self) extends AnyVal {
     
     inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     

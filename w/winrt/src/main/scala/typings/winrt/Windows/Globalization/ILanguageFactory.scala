@@ -15,7 +15,8 @@ object ILanguageFactory {
     __obj.asInstanceOf[ILanguageFactory]
   }
   
-  extension [Self <: ILanguageFactory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ILanguageFactory] (val x: Self) extends AnyVal {
     
     inline def setCreateLanguage(value: String => Language): Self = StObject.set(x, "createLanguage", js.Any.fromFunction1(value))
   }

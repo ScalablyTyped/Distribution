@@ -22,7 +22,8 @@ object EndKey {
     __obj.asInstanceOf[EndKey]
   }
   
-  extension [Self <: EndKey](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EndKey] (val x: Self) extends AnyVal {
     
     inline def setEndKey(value: typings.rcTree.esInterfaceMod.Key): Self = StObject.set(x, "endKey", value.asInstanceOf[js.Any])
     

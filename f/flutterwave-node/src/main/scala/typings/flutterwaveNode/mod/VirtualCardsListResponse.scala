@@ -18,7 +18,8 @@ object VirtualCardsListResponse {
     __obj.asInstanceOf[VirtualCardsListResponse]
   }
   
-  extension [Self <: VirtualCardsListResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VirtualCardsListResponse] (val x: Self) extends AnyVal {
     
     inline def setData(value: js.Array[Address2]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

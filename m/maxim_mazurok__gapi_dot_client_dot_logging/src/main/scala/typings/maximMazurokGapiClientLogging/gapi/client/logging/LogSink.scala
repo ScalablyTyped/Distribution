@@ -72,7 +72,8 @@ object LogSink {
     __obj.asInstanceOf[LogSink]
   }
   
-  extension [Self <: LogSink](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LogSink] (val x: Self) extends AnyVal {
     
     inline def setBigqueryOptions(value: BigQueryOptions): Self = StObject.set(x, "bigqueryOptions", value.asInstanceOf[js.Any])
     

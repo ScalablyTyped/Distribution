@@ -81,7 +81,8 @@ object GoogleApiYouTubeChannelResource {
     __obj.asInstanceOf[GoogleApiYouTubeChannelResource]
   }
   
-  extension [Self <: GoogleApiYouTubeChannelResource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleApiYouTubeChannelResource] (val x: Self) extends AnyVal {
     
     inline def setBrandingSettings(value: Channel): Self = StObject.set(x, "brandingSettings", value.asInstanceOf[js.Any])
     

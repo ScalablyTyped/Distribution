@@ -19,7 +19,8 @@ object OperatingSystemTargeting {
     __obj.asInstanceOf[OperatingSystemTargeting]
   }
   
-  extension [Self <: OperatingSystemTargeting](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OperatingSystemTargeting] (val x: Self) extends AnyVal {
     
     inline def setOperatingSystemCriteria(value: CriteriaTargeting): Self = StObject.set(x, "operatingSystemCriteria", value.asInstanceOf[js.Any])
     

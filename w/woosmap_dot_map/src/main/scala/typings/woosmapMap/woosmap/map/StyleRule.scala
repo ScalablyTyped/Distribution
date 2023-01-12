@@ -23,7 +23,8 @@ object StyleRule {
     __obj.asInstanceOf[StyleRule]
   }
   
-  extension [Self <: StyleRule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StyleRule] (val x: Self) extends AnyVal {
     
     inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

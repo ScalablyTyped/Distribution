@@ -41,7 +41,8 @@ object ContainerRef {
     __obj.asInstanceOf[ContainerRef]
   }
   
-  extension [Self <: ContainerRef](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContainerRef] (val x: Self) extends AnyVal {
     
     inline def setContainerRef(value: RefObject[View]): Self = StObject.set(x, "containerRef", value.asInstanceOf[js.Any])
     

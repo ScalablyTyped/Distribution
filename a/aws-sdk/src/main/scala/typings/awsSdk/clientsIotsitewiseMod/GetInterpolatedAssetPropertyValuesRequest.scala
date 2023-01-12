@@ -85,7 +85,8 @@ object GetInterpolatedAssetPropertyValuesRequest {
     __obj.asInstanceOf[GetInterpolatedAssetPropertyValuesRequest]
   }
   
-  extension [Self <: GetInterpolatedAssetPropertyValuesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetInterpolatedAssetPropertyValuesRequest] (val x: Self) extends AnyVal {
     
     inline def setAssetId(value: ID): Self = StObject.set(x, "assetId", value.asInstanceOf[js.Any])
     

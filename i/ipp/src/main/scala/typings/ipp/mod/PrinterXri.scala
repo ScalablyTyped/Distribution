@@ -19,7 +19,8 @@ object PrinterXri {
     __obj.asInstanceOf[PrinterXri]
   }
   
-  extension [Self <: PrinterXri](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PrinterXri] (val x: Self) extends AnyVal {
     
     inline def `setXri-authentication`(value: XriAuthentication): Self = StObject.set(x, "xri-authentication", value.asInstanceOf[js.Any])
     

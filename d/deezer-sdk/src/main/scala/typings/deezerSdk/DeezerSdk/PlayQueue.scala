@@ -18,7 +18,8 @@ object PlayQueue {
     __obj.asInstanceOf[PlayQueue]
   }
   
-  extension [Self <: PlayQueue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlayQueue] (val x: Self) extends AnyVal {
     
     inline def setTracks(value: js.Array[Track]): Self = StObject.set(x, "tracks", value.asInstanceOf[js.Any])
     

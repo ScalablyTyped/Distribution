@@ -52,7 +52,8 @@ object IdentitytoolkitRelyingpartyUploadAccountRequest {
     __obj.asInstanceOf[IdentitytoolkitRelyingpartyUploadAccountRequest]
   }
   
-  extension [Self <: IdentitytoolkitRelyingpartyUploadAccountRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IdentitytoolkitRelyingpartyUploadAccountRequest] (val x: Self) extends AnyVal {
     
     inline def setAllowOverwrite(value: Boolean): Self = StObject.set(x, "allowOverwrite", value.asInstanceOf[js.Any])
     

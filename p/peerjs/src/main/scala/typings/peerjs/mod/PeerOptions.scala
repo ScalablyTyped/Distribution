@@ -25,7 +25,8 @@ object PeerOptions {
     __obj.asInstanceOf[PeerOptions]
   }
   
-  extension [Self <: PeerOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PeerOptions] (val x: Self) extends AnyVal {
     
     inline def setConfig(value: Any): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object RadialGaugeGaugeAreaMargin {
     __obj.asInstanceOf[RadialGaugeGaugeAreaMargin]
   }
   
-  extension [Self <: RadialGaugeGaugeAreaMargin](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RadialGaugeGaugeAreaMargin] (val x: Self) extends AnyVal {
     
     inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
     

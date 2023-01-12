@@ -38,7 +38,8 @@ object ByteMatchStatement {
     __obj.asInstanceOf[ByteMatchStatement]
   }
   
-  extension [Self <: ByteMatchStatement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ByteMatchStatement] (val x: Self) extends AnyVal {
     
     inline def setFieldToMatch(value: FieldToMatch): Self = StObject.set(x, "FieldToMatch", value.asInstanceOf[js.Any])
     

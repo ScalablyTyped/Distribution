@@ -17,7 +17,8 @@ object OSDEvent {
     __obj.asInstanceOf[OSDEvent[T]]
   }
   
-  extension [Self <: OSDEvent[?], T](x: Self & OSDEvent[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OSDEvent[?], T] (val x: Self & OSDEvent[T]) extends AnyVal {
     
     inline def setEventSource(value: T): Self = StObject.set(x, "eventSource", value.asInstanceOf[js.Any])
     

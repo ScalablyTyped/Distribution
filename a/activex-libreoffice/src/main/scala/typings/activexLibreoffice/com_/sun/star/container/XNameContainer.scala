@@ -41,7 +41,8 @@ object XNameContainer {
     __obj.asInstanceOf[XNameContainer]
   }
   
-  extension [Self <: XNameContainer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XNameContainer] (val x: Self) extends AnyVal {
     
     inline def setInsertByName(value: (String, Any) => Unit): Self = StObject.set(x, "insertByName", js.Any.fromFunction2(value))
     

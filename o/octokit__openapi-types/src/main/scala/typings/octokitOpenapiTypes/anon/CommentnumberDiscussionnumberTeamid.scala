@@ -22,7 +22,8 @@ object CommentnumberDiscussionnumberTeamid {
     __obj.asInstanceOf[CommentnumberDiscussionnumberTeamid]
   }
   
-  extension [Self <: CommentnumberDiscussionnumberTeamid](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CommentnumberDiscussionnumberTeamid] (val x: Self) extends AnyVal {
     
     inline def setComment_number(value: Double): Self = StObject.set(x, "comment_number", value.asInstanceOf[js.Any])
     

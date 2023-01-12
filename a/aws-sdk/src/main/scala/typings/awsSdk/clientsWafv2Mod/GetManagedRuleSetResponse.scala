@@ -23,7 +23,8 @@ object GetManagedRuleSetResponse {
     __obj.asInstanceOf[GetManagedRuleSetResponse]
   }
   
-  extension [Self <: GetManagedRuleSetResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetManagedRuleSetResponse] (val x: Self) extends AnyVal {
     
     inline def setLockToken(value: LockToken): Self = StObject.set(x, "LockToken", value.asInstanceOf[js.Any])
     

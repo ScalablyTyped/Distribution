@@ -17,7 +17,8 @@ object LogEntryEvent {
     __obj.asInstanceOf[LogEntryEvent]
   }
   
-  extension [Self <: LogEntryEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LogEntryEvent] (val x: Self) extends AnyVal {
     
     inline def setRemoved(value: Boolean): Self = StObject.set(x, "removed", value.asInstanceOf[js.Any])
   }

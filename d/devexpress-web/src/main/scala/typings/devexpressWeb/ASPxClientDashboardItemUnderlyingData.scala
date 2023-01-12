@@ -49,7 +49,8 @@ object ASPxClientDashboardItemUnderlyingData {
     __obj.asInstanceOf[ASPxClientDashboardItemUnderlyingData]
   }
   
-  extension [Self <: ASPxClientDashboardItemUnderlyingData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientDashboardItemUnderlyingData] (val x: Self) extends AnyVal {
     
     inline def setGetDataMembers(value: () => js.Array[String]): Self = StObject.set(x, "GetDataMembers", js.Any.fromFunction0(value))
     

@@ -19,7 +19,8 @@ object RTCEncodedAudioFrameMetadata {
     __obj.asInstanceOf[RTCEncodedAudioFrameMetadata]
   }
   
-  extension [Self <: RTCEncodedAudioFrameMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RTCEncodedAudioFrameMetadata] (val x: Self) extends AnyVal {
     
     inline def setContributingSources(value: js.Array[Double]): Self = StObject.set(x, "contributingSources", value.asInstanceOf[js.Any])
     

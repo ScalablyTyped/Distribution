@@ -28,7 +28,8 @@ object anon {
       __obj.asInstanceOf[Action[A]]
     }
     
-    extension [Self <: Action[?], A /* <: typings.redux.mod.Action[Any] */](x: Self & Action[A]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Action[?], A /* <: typings.redux.mod.Action[Any] */] (val x: Self & Action[A]) extends AnyVal {
       
       inline def setAction(value: A): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
@@ -55,7 +56,8 @@ object anon {
       __obj.asInstanceOf[Error[S]]
     }
     
-    extension [Self <: Error[?], S](x: Self & Error[S]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Error[?], S] (val x: Self & Error[S]) extends AnyVal {
       
       inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
@@ -78,7 +80,8 @@ object anon {
       __obj.asInstanceOf[LiftedStore[S, A, MonitorState, NextStateExt]]
     }
     
-    extension [Self <: LiftedStore[?, ?, ?, ?], S, A /* <: typings.redux.mod.Action[Any] */, MonitorState, NextStateExt](x: Self & (LiftedStore[S, A, MonitorState, NextStateExt])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LiftedStore[?, ?, ?, ?], S, A /* <: typings.redux.mod.Action[Any] */, MonitorState, NextStateExt] (val x: Self & (LiftedStore[S, A, MonitorState, NextStateExt])) extends AnyVal {
       
       inline def setLiftedStore(value: Store[(LiftedState[S, A, MonitorState]) & NextStateExt, LiftedAction[S, A, MonitorState]]): Self = StObject.set(x, "liftedStore", value.asInstanceOf[js.Any])
     }

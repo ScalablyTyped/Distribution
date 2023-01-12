@@ -41,7 +41,8 @@ object ImageCanvasOptions {
     __obj.asInstanceOf[ImageCanvasOptions]
   }
   
-  extension [Self <: ImageCanvasOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImageCanvasOptions] (val x: Self) extends AnyVal {
     
     inline def setAttributions(value: AttributionLike): Self = StObject.set(x, "attributions", value.asInstanceOf[js.Any])
     

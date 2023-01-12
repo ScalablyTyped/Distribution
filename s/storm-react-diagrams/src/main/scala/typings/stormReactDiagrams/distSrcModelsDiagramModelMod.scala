@@ -112,7 +112,8 @@ object distSrcModelsDiagramModelMod {
       __obj.asInstanceOf[DiagramListener]
     }
     
-    extension [Self <: DiagramListener](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DiagramListener] (val x: Self) extends AnyVal {
       
       inline def setGridUpdated(value: /* event */ BaseEventDiagramModelsize => Unit): Self = StObject.set(x, "gridUpdated", js.Any.fromFunction1(value))
       

@@ -31,7 +31,8 @@ object ISVGElement {
     __obj.asInstanceOf[ISVGElement]
   }
   
-  extension [Self <: ISVGElement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISVGElement] (val x: Self) extends AnyVal {
     
     inline def setFocusable(value: SVGAnimatedEnumeration): Self = StObject.set(x, "focusable", value.asInstanceOf[js.Any])
     

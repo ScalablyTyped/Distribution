@@ -25,7 +25,8 @@ object InputConfig {
     __obj.asInstanceOf[InputConfig]
   }
   
-  extension [Self <: InputConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InputConfig] (val x: Self) extends AnyVal {
     
     inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     

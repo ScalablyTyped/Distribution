@@ -32,7 +32,8 @@ object IPrintCustomItemListOptionDetails {
     __obj.asInstanceOf[IPrintCustomItemListOptionDetails]
   }
   
-  extension [Self <: IPrintCustomItemListOptionDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPrintCustomItemListOptionDetails] (val x: Self) extends AnyVal {
     
     inline def setAddItem(value: (String, String) => Unit): Self = StObject.set(x, "addItem", js.Any.fromFunction2(value))
     

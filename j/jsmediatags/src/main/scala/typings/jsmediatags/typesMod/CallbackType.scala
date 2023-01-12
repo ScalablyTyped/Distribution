@@ -17,7 +17,8 @@ object CallbackType {
     __obj.asInstanceOf[CallbackType]
   }
   
-  extension [Self <: CallbackType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CallbackType] (val x: Self) extends AnyVal {
     
     inline def setOnError(value: /* error */ jsmediatagsError => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
     

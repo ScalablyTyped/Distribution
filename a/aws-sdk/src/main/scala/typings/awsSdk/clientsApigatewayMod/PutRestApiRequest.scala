@@ -38,7 +38,8 @@ object PutRestApiRequest {
     __obj.asInstanceOf[PutRestApiRequest]
   }
   
-  extension [Self <: PutRestApiRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutRestApiRequest] (val x: Self) extends AnyVal {
     
     inline def setBody(value: _Blob): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object GetWorldTemplateBodyRequest {
     __obj.asInstanceOf[GetWorldTemplateBodyRequest]
   }
   
-  extension [Self <: GetWorldTemplateBodyRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetWorldTemplateBodyRequest] (val x: Self) extends AnyVal {
     
     inline def setGenerationJob(value: Arn): Self = StObject.set(x, "generationJob", value.asInstanceOf[js.Any])
     

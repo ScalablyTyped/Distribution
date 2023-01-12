@@ -19,7 +19,8 @@ object distTypesCssPropertyDescriptorsZIndexMod {
     @js.native
     val ^ : IPropertyValueDescriptor[zIndex] = js.native
     
-    extension [Self <: zIndex](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: zIndex] (val x: Self) extends AnyVal {
       
       inline def setAuto(value: Boolean): Self = StObject.set(x, "auto", value.asInstanceOf[js.Any])
       

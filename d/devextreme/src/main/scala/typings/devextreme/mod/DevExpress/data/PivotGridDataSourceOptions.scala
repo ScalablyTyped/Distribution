@@ -68,7 +68,8 @@ object PivotGridDataSourceOptions {
     __obj.asInstanceOf[PivotGridDataSourceOptions]
   }
   
-  extension [Self <: PivotGridDataSourceOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PivotGridDataSourceOptions] (val x: Self) extends AnyVal {
     
     inline def setFields(value: js.Array[Field]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     

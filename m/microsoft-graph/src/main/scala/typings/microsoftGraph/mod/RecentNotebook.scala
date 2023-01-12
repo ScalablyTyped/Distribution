@@ -31,7 +31,8 @@ object RecentNotebook {
     __obj.asInstanceOf[RecentNotebook]
   }
   
-  extension [Self <: RecentNotebook](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecentNotebook] (val x: Self) extends AnyVal {
     
     inline def setDisplayName(value: NullableOption[String]): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     

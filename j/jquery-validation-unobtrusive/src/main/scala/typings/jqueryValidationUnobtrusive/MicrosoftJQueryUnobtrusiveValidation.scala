@@ -26,7 +26,8 @@ object MicrosoftJQueryUnobtrusiveValidation {
       __obj.asInstanceOf[Adapter]
     }
     
-    extension [Self <: Adapter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Adapter] (val x: Self) extends AnyVal {
       
       inline def setAdapt(value: js.Function): Self = StObject.set(x, "adapt", value.asInstanceOf[js.Any])
       

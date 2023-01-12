@@ -35,7 +35,8 @@ object SlotLaneMountArg {
     __obj.asInstanceOf[SlotLaneMountArg]
   }
   
-  extension [Self <: SlotLaneMountArg](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SlotLaneMountArg] (val x: Self) extends AnyVal {
     
     inline def setDate(value: js.Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     

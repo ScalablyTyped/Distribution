@@ -18,7 +18,8 @@ object GetBrowserSettingsResponse {
     __obj.asInstanceOf[GetBrowserSettingsResponse]
   }
   
-  extension [Self <: GetBrowserSettingsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetBrowserSettingsResponse] (val x: Self) extends AnyVal {
     
     inline def setBrowserSettings(value: BrowserSettings): Self = StObject.set(x, "browserSettings", value.asInstanceOf[js.Any])
     

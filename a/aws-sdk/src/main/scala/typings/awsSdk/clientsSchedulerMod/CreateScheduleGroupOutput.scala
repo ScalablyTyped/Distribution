@@ -18,7 +18,8 @@ object CreateScheduleGroupOutput {
     __obj.asInstanceOf[CreateScheduleGroupOutput]
   }
   
-  extension [Self <: CreateScheduleGroupOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateScheduleGroupOutput] (val x: Self) extends AnyVal {
     
     inline def setScheduleGroupArn(value: ScheduleGroupArn): Self = StObject.set(x, "ScheduleGroupArn", value.asInstanceOf[js.Any])
   }

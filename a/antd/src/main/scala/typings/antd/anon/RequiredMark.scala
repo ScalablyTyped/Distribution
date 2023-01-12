@@ -20,7 +20,8 @@ object RequiredMark {
     __obj.asInstanceOf[RequiredMark]
   }
   
-  extension [Self <: RequiredMark](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RequiredMark] (val x: Self) extends AnyVal {
     
     inline def setColon(value: Boolean): Self = StObject.set(x, "colon", value.asInstanceOf[js.Any])
     

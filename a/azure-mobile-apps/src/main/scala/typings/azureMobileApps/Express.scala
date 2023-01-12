@@ -19,7 +19,8 @@ object Express {
       __obj.asInstanceOf[Request]
     }
     
-    extension [Self <: Request](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Request] (val x: Self) extends AnyVal {
       
       inline def setAzureMobile(value: Context): Self = StObject.set(x, "azureMobile", value.asInstanceOf[js.Any])
     }
@@ -36,7 +37,8 @@ object Express {
       __obj.asInstanceOf[Response]
     }
     
-    extension [Self <: Response](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Response] (val x: Self) extends AnyVal {
       
       inline def setResults(value: Any): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
       

@@ -102,7 +102,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setDepth(value: Double): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
       
@@ -147,7 +148,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Queryable]
     }
     
-    extension [Self <: Queryable](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Queryable] (val x: Self) extends AnyVal {
       
       inline def setQuerySelectorAll(
         value: (/* selector */ String, /* onError */ js.Function1[/* error */ Any, Unit]) => ArrayLike[Element]
@@ -260,7 +262,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[WindowLike]
     }
     
-    extension [Self <: WindowLike](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WindowLike] (val x: Self) extends AnyVal {
       
       inline def setDocument(value: Queryable): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
     }
@@ -303,7 +306,8 @@ object mod extends Shortcut {
         __obj.asInstanceOf[Window]
       }
       
-      extension [Self <: Window](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Window] (val x: Self) extends AnyVal {
         
         inline def setSimmer(value: SimmernoConflictany): Self = StObject.set(x, "Simmer", value.asInstanceOf[js.Any])
       }

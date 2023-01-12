@@ -49,7 +49,8 @@ object SyncEngine {
     __obj.asInstanceOf[SyncEngine]
   }
   
-  extension [Self <: SyncEngine](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SyncEngine] (val x: Self) extends AnyVal {
     
     inline def setIsPrimaryClient(value: Boolean): Self = StObject.set(x, "isPrimaryClient", value.asInstanceOf[js.Any])
   }

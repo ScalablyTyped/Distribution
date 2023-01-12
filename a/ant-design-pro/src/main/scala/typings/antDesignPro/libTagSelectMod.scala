@@ -61,7 +61,8 @@ object libTagSelectMod {
       __obj.asInstanceOf[TagSelectProps]
     }
     
-    extension [Self <: TagSelectProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TagSelectProps] (val x: Self) extends AnyVal {
       
       inline def setActionsText(value: CollapseText): Self = StObject.set(x, "actionsText", value.asInstanceOf[js.Any])
       

@@ -122,7 +122,8 @@ object TouchSpinOptions {
     __obj.asInstanceOf[TouchSpinOptions]
   }
   
-  extension [Self <: TouchSpinOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TouchSpinOptions] (val x: Self) extends AnyVal {
     
     inline def setBoostat(value: Double): Self = StObject.set(x, "boostat", value.asInstanceOf[js.Any])
     

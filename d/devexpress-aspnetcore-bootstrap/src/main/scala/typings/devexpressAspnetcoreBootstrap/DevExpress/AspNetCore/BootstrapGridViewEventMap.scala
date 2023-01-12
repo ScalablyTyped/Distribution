@@ -114,7 +114,8 @@ object BootstrapGridViewEventMap {
     __obj.asInstanceOf[BootstrapGridViewEventMap]
   }
   
-  extension [Self <: BootstrapGridViewEventMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BootstrapGridViewEventMap] (val x: Self) extends AnyVal {
     
     inline def setBatchEditChangesCanceling(value: GridViewBatchEditChangesCancelingEventArgs): Self = StObject.set(x, "batchEditChangesCanceling", value.asInstanceOf[js.Any])
     

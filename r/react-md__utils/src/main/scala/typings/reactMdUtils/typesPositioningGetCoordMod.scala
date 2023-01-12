@@ -52,7 +52,8 @@ object typesPositioningGetCoordMod {
       __obj.asInstanceOf[XCoordConfig]
     }
     
-    extension [Self <: XCoordConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XCoordConfig] (val x: Self) extends AnyVal {
       
       inline def setContainerRect(value: DOMRect): Self = StObject.set(x, "containerRect", value.asInstanceOf[js.Any])
       
@@ -83,7 +84,8 @@ object typesPositioningGetCoordMod {
       __obj.asInstanceOf[YCoordConfig]
     }
     
-    extension [Self <: YCoordConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: YCoordConfig] (val x: Self) extends AnyVal {
       
       inline def setContainerRect(value: DOMRect): Self = StObject.set(x, "containerRect", value.asInstanceOf[js.Any])
       

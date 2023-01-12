@@ -28,7 +28,8 @@ object InlineQueryResultCachedMpeg4Gif {
     __obj.asInstanceOf[InlineQueryResultCachedMpeg4Gif]
   }
   
-  extension [Self <: InlineQueryResultCachedMpeg4Gif](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InlineQueryResultCachedMpeg4Gif] (val x: Self) extends AnyVal {
     
     inline def setCaption(value: String): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
     

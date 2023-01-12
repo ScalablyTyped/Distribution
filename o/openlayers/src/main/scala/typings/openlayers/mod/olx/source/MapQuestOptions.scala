@@ -25,7 +25,8 @@ object MapQuestOptions {
     __obj.asInstanceOf[MapQuestOptions]
   }
   
-  extension [Self <: MapQuestOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MapQuestOptions] (val x: Self) extends AnyVal {
     
     inline def setCacheSize(value: Double): Self = StObject.set(x, "cacheSize", value.asInstanceOf[js.Any])
     

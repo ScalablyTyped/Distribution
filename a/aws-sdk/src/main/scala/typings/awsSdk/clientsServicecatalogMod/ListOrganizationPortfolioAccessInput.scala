@@ -38,7 +38,8 @@ object ListOrganizationPortfolioAccessInput {
     __obj.asInstanceOf[ListOrganizationPortfolioAccessInput]
   }
   
-  extension [Self <: ListOrganizationPortfolioAccessInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListOrganizationPortfolioAccessInput] (val x: Self) extends AnyVal {
     
     inline def setAcceptLanguage(value: AcceptLanguage): Self = StObject.set(x, "AcceptLanguage", value.asInstanceOf[js.Any])
     

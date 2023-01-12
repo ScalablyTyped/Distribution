@@ -28,7 +28,8 @@ object CreateTapePrintParamsXmlParams {
     __obj.asInstanceOf[CreateTapePrintParamsXmlParams]
   }
   
-  extension [Self <: CreateTapePrintParamsXmlParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateTapePrintParamsXmlParams] (val x: Self) extends AnyVal {
     
     inline def setAlignment(value: TapeAlignment): Self = StObject.set(x, "alignment", value.asInstanceOf[js.Any])
     

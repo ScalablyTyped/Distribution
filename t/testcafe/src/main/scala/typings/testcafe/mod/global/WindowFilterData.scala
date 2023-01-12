@@ -24,7 +24,8 @@ object WindowFilterData {
     __obj.asInstanceOf[WindowFilterData]
   }
   
-  extension [Self <: WindowFilterData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WindowFilterData] (val x: Self) extends AnyVal {
     
     inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     

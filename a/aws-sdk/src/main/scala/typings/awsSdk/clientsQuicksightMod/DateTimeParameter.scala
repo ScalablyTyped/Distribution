@@ -23,7 +23,8 @@ object DateTimeParameter {
     __obj.asInstanceOf[DateTimeParameter]
   }
   
-  extension [Self <: DateTimeParameter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DateTimeParameter] (val x: Self) extends AnyVal {
     
     inline def setName(value: NonEmptyString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     

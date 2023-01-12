@@ -18,7 +18,8 @@ object AwsS3BucketBucketLifecycleConfigurationRulesAbortIncompleteMultipartUploa
     __obj.asInstanceOf[AwsS3BucketBucketLifecycleConfigurationRulesAbortIncompleteMultipartUploadDetails]
   }
   
-  extension [Self <: AwsS3BucketBucketLifecycleConfigurationRulesAbortIncompleteMultipartUploadDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsS3BucketBucketLifecycleConfigurationRulesAbortIncompleteMultipartUploadDetails] (val x: Self) extends AnyVal {
     
     inline def setDaysAfterInitiation(value: Integer): Self = StObject.set(x, "DaysAfterInitiation", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object DkimSigningAttributes {
     __obj.asInstanceOf[DkimSigningAttributes]
   }
   
-  extension [Self <: DkimSigningAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DkimSigningAttributes] (val x: Self) extends AnyVal {
     
     inline def setDomainSigningPrivateKey(value: PrivateKey): Self = StObject.set(x, "DomainSigningPrivateKey", value.asInstanceOf[js.Any])
     

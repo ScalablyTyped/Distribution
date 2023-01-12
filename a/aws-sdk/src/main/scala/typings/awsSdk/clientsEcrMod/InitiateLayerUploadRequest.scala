@@ -23,7 +23,8 @@ object InitiateLayerUploadRequest {
     __obj.asInstanceOf[InitiateLayerUploadRequest]
   }
   
-  extension [Self <: InitiateLayerUploadRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InitiateLayerUploadRequest] (val x: Self) extends AnyVal {
     
     inline def setRegistryId(value: RegistryId): Self = StObject.set(x, "registryId", value.asInstanceOf[js.Any])
     

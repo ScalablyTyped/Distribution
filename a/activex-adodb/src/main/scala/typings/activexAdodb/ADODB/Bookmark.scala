@@ -17,7 +17,8 @@ object Bookmark {
     __obj.asInstanceOf[Bookmark]
   }
   
-  extension [Self <: Bookmark](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Bookmark] (val x: Self) extends AnyVal {
     
     inline def setADODBDotBookmark_typekey(value: Bookmark): Self = StObject.set(x, "ADODB.Bookmark_typekey", value.asInstanceOf[js.Any])
   }

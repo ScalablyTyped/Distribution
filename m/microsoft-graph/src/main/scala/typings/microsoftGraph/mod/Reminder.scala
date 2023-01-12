@@ -44,7 +44,8 @@ object Reminder {
     __obj.asInstanceOf[Reminder]
   }
   
-  extension [Self <: Reminder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Reminder] (val x: Self) extends AnyVal {
     
     inline def setChangeKey(value: NullableOption[String]): Self = StObject.set(x, "changeKey", value.asInstanceOf[js.Any])
     

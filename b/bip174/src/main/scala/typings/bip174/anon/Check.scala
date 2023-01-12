@@ -32,7 +32,8 @@ object Check {
     __obj.asInstanceOf[Check]
   }
   
-  extension [Self <: Check](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Check] (val x: Self) extends AnyVal {
     
     inline def setCanAddToArray(value: (js.Array[TapBip32Derivation], TapBip32Derivation, Set[String]) => Boolean): Self = StObject.set(x, "canAddToArray", js.Any.fromFunction3(value))
     

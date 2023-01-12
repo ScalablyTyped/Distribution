@@ -40,7 +40,8 @@ object ICreateElementTreeDelta {
     __obj.asInstanceOf[ICreateElementTreeDelta]
   }
   
-  extension [Self <: ICreateElementTreeDelta](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICreateElementTreeDelta] (val x: Self) extends AnyVal {
     
     inline def setAdditionIndex(value: Double): Self = StObject.set(x, "additionIndex", value.asInstanceOf[js.Any])
     

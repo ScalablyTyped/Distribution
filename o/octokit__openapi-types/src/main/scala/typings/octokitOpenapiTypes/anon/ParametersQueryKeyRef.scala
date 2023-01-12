@@ -17,7 +17,8 @@ object ParametersQueryKeyRef {
     __obj.asInstanceOf[ParametersQueryKeyRef]
   }
   
-  extension [Self <: ParametersQueryKeyRef](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParametersQueryKeyRef] (val x: Self) extends AnyVal {
     
     inline def setParameters(value: QueryKeyRef): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     

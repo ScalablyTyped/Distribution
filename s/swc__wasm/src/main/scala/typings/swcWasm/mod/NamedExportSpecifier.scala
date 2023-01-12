@@ -30,7 +30,8 @@ object NamedExportSpecifier {
     __obj.asInstanceOf[NamedExportSpecifier]
   }
   
-  extension [Self <: NamedExportSpecifier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NamedExportSpecifier] (val x: Self) extends AnyVal {
     
     inline def setExported(value: ModuleExportName): Self = StObject.set(x, "exported", value.asInstanceOf[js.Any])
     

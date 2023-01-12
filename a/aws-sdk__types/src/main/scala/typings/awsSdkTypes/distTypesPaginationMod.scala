@@ -32,7 +32,8 @@ object distTypesPaginationMod {
       __obj.asInstanceOf[PaginationConfiguration]
     }
     
-    extension [Self <: PaginationConfiguration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PaginationConfiguration] (val x: Self) extends AnyVal {
       
       inline def setClient(value: Client[Any, Any, Any]): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
       

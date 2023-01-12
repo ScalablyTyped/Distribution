@@ -19,7 +19,8 @@ object GoogleCloudDialogflowCxV3ResponseMessageText {
     __obj.asInstanceOf[GoogleCloudDialogflowCxV3ResponseMessageText]
   }
   
-  extension [Self <: GoogleCloudDialogflowCxV3ResponseMessageText](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDialogflowCxV3ResponseMessageText] (val x: Self) extends AnyVal {
     
     inline def setAllowPlaybackInterruption(value: Boolean): Self = StObject.set(x, "allowPlaybackInterruption", value.asInstanceOf[js.Any])
     

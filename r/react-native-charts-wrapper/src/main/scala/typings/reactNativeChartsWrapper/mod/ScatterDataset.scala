@@ -22,7 +22,8 @@ object ScatterDataset {
     __obj.asInstanceOf[ScatterDataset]
   }
   
-  extension [Self <: ScatterDataset](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScatterDataset] (val x: Self) extends AnyVal {
     
     inline def setConfig(value: ScatterDatasetConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     

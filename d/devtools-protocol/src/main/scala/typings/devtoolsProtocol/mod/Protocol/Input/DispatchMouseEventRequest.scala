@@ -104,7 +104,8 @@ object DispatchMouseEventRequest {
     __obj.asInstanceOf[DispatchMouseEventRequest]
   }
   
-  extension [Self <: DispatchMouseEventRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DispatchMouseEventRequest] (val x: Self) extends AnyVal {
     
     inline def setButton(value: MouseButton): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
     

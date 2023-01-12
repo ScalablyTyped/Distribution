@@ -39,7 +39,8 @@ object SketchUpdateEvent {
     __obj.asInstanceOf[SketchUpdateEvent]
   }
   
-  extension [Self <: SketchUpdateEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SketchUpdateEvent] (val x: Self) extends AnyVal {
     
     inline def setAborted(value: Boolean): Self = StObject.set(x, "aborted", value.asInstanceOf[js.Any])
     

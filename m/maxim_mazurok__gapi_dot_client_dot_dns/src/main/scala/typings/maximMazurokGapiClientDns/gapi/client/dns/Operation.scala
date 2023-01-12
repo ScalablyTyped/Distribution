@@ -42,7 +42,8 @@ object Operation {
     __obj.asInstanceOf[Operation]
   }
   
-  extension [Self <: Operation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Operation] (val x: Self) extends AnyVal {
     
     inline def setDnsKeyContext(value: OperationDnsKeyContext): Self = StObject.set(x, "dnsKeyContext", value.asInstanceOf[js.Any])
     

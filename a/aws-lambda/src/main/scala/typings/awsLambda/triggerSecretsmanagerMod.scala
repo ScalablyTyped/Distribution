@@ -22,7 +22,8 @@ object triggerSecretsmanagerMod {
       __obj.asInstanceOf[SecretsManagerRotationEvent]
     }
     
-    extension [Self <: SecretsManagerRotationEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SecretsManagerRotationEvent] (val x: Self) extends AnyVal {
       
       inline def setClientRequestToken(value: String): Self = StObject.set(x, "ClientRequestToken", value.asInstanceOf[js.Any])
       

@@ -20,7 +20,8 @@ object MapNotesLayerCapabilitiesOperations {
     __obj.asInstanceOf[MapNotesLayerCapabilitiesOperations]
   }
   
-  extension [Self <: MapNotesLayerCapabilitiesOperations](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MapNotesLayerCapabilitiesOperations] (val x: Self) extends AnyVal {
     
     inline def setSupportsMapNotesEditing(value: Boolean): Self = StObject.set(x, "supportsMapNotesEditing", value.asInstanceOf[js.Any])
   }

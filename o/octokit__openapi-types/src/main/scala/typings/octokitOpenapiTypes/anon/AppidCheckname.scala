@@ -40,7 +40,8 @@ object AppidCheckname {
     __obj.asInstanceOf[AppidCheckname]
   }
   
-  extension [Self <: AppidCheckname](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppidCheckname] (val x: Self) extends AnyVal {
     
     inline def setApp_id(value: Double): Self = StObject.set(x, "app_id", value.asInstanceOf[js.Any])
     

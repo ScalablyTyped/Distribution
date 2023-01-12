@@ -60,7 +60,8 @@ object DescribePackageResponse {
     __obj.asInstanceOf[DescribePackageResponse]
   }
   
-  extension [Self <: DescribePackageResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribePackageResponse] (val x: Self) extends AnyVal {
     
     inline def setArn(value: NodePackageArn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     

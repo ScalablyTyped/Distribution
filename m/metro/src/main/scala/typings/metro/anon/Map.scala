@@ -17,7 +17,8 @@ object Map {
     __obj.asInstanceOf[Map]
   }
   
-  extension [Self <: Map](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Map] (val x: Self) extends AnyVal {
     
     inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object PeerCredential {
     __obj.asInstanceOf[PeerCredential]
   }
   
-  extension [Self <: PeerCredential](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PeerCredential] (val x: Self) extends AnyVal {
     
     inline def setAuthToken(value: String): Self = StObject.set(x, "authToken", value.asInstanceOf[js.Any])
     

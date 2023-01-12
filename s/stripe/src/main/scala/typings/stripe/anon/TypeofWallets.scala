@@ -17,7 +17,8 @@ object TypeofWallets {
     __obj.asInstanceOf[TypeofWallets]
   }
   
-  extension [Self <: TypeofWallets](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofWallets] (val x: Self) extends AnyVal {
     
     inline def setApplePay(value: Any): Self = StObject.set(x, "ApplePay", value.asInstanceOf[js.Any])
     

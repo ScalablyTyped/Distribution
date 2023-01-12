@@ -38,7 +38,8 @@ object ListCommandsRequest {
     __obj.asInstanceOf[ListCommandsRequest]
   }
   
-  extension [Self <: ListCommandsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListCommandsRequest] (val x: Self) extends AnyVal {
     
     inline def setCommandId(value: CommandId): Self = StObject.set(x, "CommandId", value.asInstanceOf[js.Any])
     

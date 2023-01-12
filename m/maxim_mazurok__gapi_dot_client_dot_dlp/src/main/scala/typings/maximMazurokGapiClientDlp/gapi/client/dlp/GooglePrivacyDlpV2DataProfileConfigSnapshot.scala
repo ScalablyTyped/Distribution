@@ -19,7 +19,8 @@ object GooglePrivacyDlpV2DataProfileConfigSnapshot {
     __obj.asInstanceOf[GooglePrivacyDlpV2DataProfileConfigSnapshot]
   }
   
-  extension [Self <: GooglePrivacyDlpV2DataProfileConfigSnapshot](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GooglePrivacyDlpV2DataProfileConfigSnapshot] (val x: Self) extends AnyVal {
     
     inline def setDataProfileJob(value: GooglePrivacyDlpV2DataProfileJobConfig): Self = StObject.set(x, "dataProfileJob", value.asInstanceOf[js.Any])
     

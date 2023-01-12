@@ -26,7 +26,8 @@ object PressureObserver {
     __obj.asInstanceOf[PressureObserver]
   }
   
-  extension [Self <: PressureObserver](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PressureObserver] (val x: Self) extends AnyVal {
     
     inline def setDisconnect(value: () => Unit): Self = StObject.set(x, "disconnect", js.Any.fromFunction0(value))
     

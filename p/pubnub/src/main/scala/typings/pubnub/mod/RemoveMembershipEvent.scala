@@ -20,7 +20,8 @@ object RemoveMembershipEvent {
     __obj.asInstanceOf[RemoveMembershipEvent]
   }
   
-  extension [Self <: RemoveMembershipEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RemoveMembershipEvent] (val x: Self) extends AnyVal {
     
     inline def setMessage(value: DataUuid): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
   }

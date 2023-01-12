@@ -33,7 +33,8 @@ object DescribePendingMaintenanceActionsMessage {
     __obj.asInstanceOf[DescribePendingMaintenanceActionsMessage]
   }
   
-  extension [Self <: DescribePendingMaintenanceActionsMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribePendingMaintenanceActionsMessage] (val x: Self) extends AnyVal {
     
     inline def setFilters(value: FilterList): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
     

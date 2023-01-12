@@ -96,7 +96,8 @@ object IGlobalEditorOptions {
     __obj.asInstanceOf[IGlobalEditorOptions]
   }
   
-  extension [Self <: IGlobalEditorOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IGlobalEditorOptions] (val x: Self) extends AnyVal {
     
     inline def setAutoDetectHighContrast(value: Boolean): Self = StObject.set(x, "autoDetectHighContrast", value.asInstanceOf[js.Any])
     

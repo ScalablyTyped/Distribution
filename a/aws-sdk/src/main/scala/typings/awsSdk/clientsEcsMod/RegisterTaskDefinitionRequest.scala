@@ -98,7 +98,8 @@ object RegisterTaskDefinitionRequest {
     __obj.asInstanceOf[RegisterTaskDefinitionRequest]
   }
   
-  extension [Self <: RegisterTaskDefinitionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RegisterTaskDefinitionRequest] (val x: Self) extends AnyVal {
     
     inline def setContainerDefinitions(value: ContainerDefinitions): Self = StObject.set(x, "containerDefinitions", value.asInstanceOf[js.Any])
     

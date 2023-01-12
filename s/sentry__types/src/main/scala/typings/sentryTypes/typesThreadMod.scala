@@ -26,7 +26,8 @@ object typesThreadMod {
       __obj.asInstanceOf[Thread]
     }
     
-    extension [Self <: Thread](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Thread] (val x: Self) extends AnyVal {
       
       inline def setCrashed(value: Boolean): Self = StObject.set(x, "crashed", value.asInstanceOf[js.Any])
       

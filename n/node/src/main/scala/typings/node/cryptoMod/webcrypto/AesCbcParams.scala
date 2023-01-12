@@ -17,7 +17,8 @@ object AesCbcParams {
     __obj.asInstanceOf[AesCbcParams]
   }
   
-  extension [Self <: AesCbcParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AesCbcParams] (val x: Self) extends AnyVal {
     
     inline def setIv(value: BufferSource): Self = StObject.set(x, "iv", value.asInstanceOf[js.Any])
   }

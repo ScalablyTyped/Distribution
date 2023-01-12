@@ -18,7 +18,8 @@ object DepthwiseConv2dNativeInputs {
     __obj.asInstanceOf[DepthwiseConv2dNativeInputs]
   }
   
-  extension [Self <: DepthwiseConv2dNativeInputs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DepthwiseConv2dNativeInputs] (val x: Self) extends AnyVal {
     
     inline def setFilter(value: scala.Any): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     

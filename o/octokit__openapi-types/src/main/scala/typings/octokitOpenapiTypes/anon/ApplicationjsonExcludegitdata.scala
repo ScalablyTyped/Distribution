@@ -17,7 +17,8 @@ object ApplicationjsonExcludegitdata {
     __obj.asInstanceOf[ApplicationjsonExcludegitdata]
   }
   
-  extension [Self <: ApplicationjsonExcludegitdata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApplicationjsonExcludegitdata] (val x: Self) extends AnyVal {
     
     inline def setApplicationSlashjson(value: Excludegitdata): Self = StObject.set(x, "application/json", value.asInstanceOf[js.Any])
   }

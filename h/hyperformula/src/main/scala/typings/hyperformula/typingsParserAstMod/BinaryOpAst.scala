@@ -19,7 +19,8 @@ object BinaryOpAst {
     __obj.asInstanceOf[BinaryOpAst]
   }
   
-  extension [Self <: BinaryOpAst](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BinaryOpAst] (val x: Self) extends AnyVal {
     
     inline def setLeft(value: Ast): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
     

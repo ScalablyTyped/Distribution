@@ -260,7 +260,8 @@ object libEsmPuppeteerApiBrowserMod {
       __obj.asInstanceOf[BrowserContextOptions]
     }
     
-    extension [Self <: BrowserContextOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BrowserContextOptions] (val x: Self) extends AnyVal {
       
       inline def setProxyBypassList(value: js.Array[String]): Self = StObject.set(x, "proxyBypassList", value.asInstanceOf[js.Any])
       
@@ -402,7 +403,8 @@ object libEsmPuppeteerApiBrowserMod {
       __obj.asInstanceOf[WaitForTargetOptions]
     }
     
-    extension [Self <: WaitForTargetOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WaitForTargetOptions] (val x: Self) extends AnyVal {
       
       inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       

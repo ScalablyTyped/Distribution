@@ -18,7 +18,8 @@ object OmitFocusManagerOptionson {
     __obj.asInstanceOf[OmitFocusManagerOptionson]
   }
   
-  extension [Self <: OmitFocusManagerOptionson](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OmitFocusManagerOptionson] (val x: Self) extends AnyVal {
     
     inline def setIsVirtual(value: Boolean): Self = StObject.set(x, "isVirtual", value.asInstanceOf[js.Any])
     

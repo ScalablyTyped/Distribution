@@ -16,7 +16,8 @@ object ThemeConsumerProps {
     __obj.asInstanceOf[ThemeConsumerProps]
   }
   
-  extension [Self <: ThemeConsumerProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ThemeConsumerProps] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: ThemeProps => ReactElement): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
   }

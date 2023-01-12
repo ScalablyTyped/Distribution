@@ -25,7 +25,8 @@ object AttachOpts {
     __obj.asInstanceOf[AttachOpts]
   }
   
-  extension [Self <: AttachOpts](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AttachOpts] (val x: Self) extends AnyVal {
     
     inline def setAppend(value: Boolean): Self = StObject.set(x, "append", value.asInstanceOf[js.Any])
     

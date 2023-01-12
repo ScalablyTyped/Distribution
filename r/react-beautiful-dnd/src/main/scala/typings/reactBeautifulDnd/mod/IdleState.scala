@@ -22,7 +22,8 @@ object IdleState {
     __obj.asInstanceOf[IdleState]
   }
   
-  extension [Self <: IdleState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IdleState] (val x: Self) extends AnyVal {
     
     inline def setCompleted(value: CompletedDrag): Self = StObject.set(x, "completed", value.asInstanceOf[js.Any])
     

@@ -38,7 +38,8 @@ object ActualSize {
     __obj.asInstanceOf[ActualSize]
   }
   
-  extension [Self <: ActualSize](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ActualSize] (val x: Self) extends AnyVal {
     
     inline def setActualSize(value: String): Self = StObject.set(x, "actualSize", value.asInstanceOf[js.Any])
     

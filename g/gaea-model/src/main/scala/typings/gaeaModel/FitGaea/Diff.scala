@@ -65,7 +65,8 @@ object Diff {
     __obj.asInstanceOf[Diff]
   }
   
-  extension [Self <: Diff](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Diff] (val x: Self) extends AnyVal {
     
     inline def setAdd(value: Index): Self = StObject.set(x, "add", value.asInstanceOf[js.Any])
     

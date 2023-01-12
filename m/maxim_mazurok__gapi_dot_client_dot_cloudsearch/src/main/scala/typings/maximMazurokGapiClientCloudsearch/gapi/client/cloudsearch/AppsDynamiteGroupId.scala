@@ -19,7 +19,8 @@ object AppsDynamiteGroupId {
     __obj.asInstanceOf[AppsDynamiteGroupId]
   }
   
-  extension [Self <: AppsDynamiteGroupId](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppsDynamiteGroupId] (val x: Self) extends AnyVal {
     
     inline def setDmId(value: AppsDynamiteDmId): Self = StObject.set(x, "dmId", value.asInstanceOf[js.Any])
     

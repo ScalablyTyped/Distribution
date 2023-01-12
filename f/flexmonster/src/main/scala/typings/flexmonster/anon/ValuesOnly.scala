@@ -25,7 +25,8 @@ object ValuesOnly {
     __obj.asInstanceOf[ValuesOnly]
   }
   
-  extension [Self <: ValuesOnly](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ValuesOnly] (val x: Self) extends AnyVal {
     
     inline def setPrepareDataFunction(value: /* rawData */ Any => Any): Self = StObject.set(x, "prepareDataFunction", js.Any.fromFunction1(value))
     

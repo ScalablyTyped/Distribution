@@ -21,7 +21,8 @@ object HeaderFooter {
     __obj.asInstanceOf[HeaderFooter]
   }
   
-  extension [Self <: HeaderFooter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HeaderFooter] (val x: Self) extends AnyVal {
     
     inline def setExcelDotHeaderFooter_typekey(value: HeaderFooter): Self = StObject.set(x, "Excel.HeaderFooter_typekey", value.asInstanceOf[js.Any])
     

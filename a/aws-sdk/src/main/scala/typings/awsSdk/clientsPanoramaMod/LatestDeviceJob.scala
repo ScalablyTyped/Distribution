@@ -28,7 +28,8 @@ object LatestDeviceJob {
     __obj.asInstanceOf[LatestDeviceJob]
   }
   
-  extension [Self <: LatestDeviceJob](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LatestDeviceJob] (val x: Self) extends AnyVal {
     
     inline def setImageVersion(value: ImageVersion): Self = StObject.set(x, "ImageVersion", value.asInstanceOf[js.Any])
     

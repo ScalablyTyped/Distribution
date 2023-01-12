@@ -44,7 +44,8 @@ object OriginAccessControlConfig {
     __obj.asInstanceOf[OriginAccessControlConfig]
   }
   
-  extension [Self <: OriginAccessControlConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OriginAccessControlConfig] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     

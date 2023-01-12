@@ -23,7 +23,8 @@ object GetAdminAccountResponse {
     __obj.asInstanceOf[GetAdminAccountResponse]
   }
   
-  extension [Self <: GetAdminAccountResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetAdminAccountResponse] (val x: Self) extends AnyVal {
     
     inline def setAdminAccount(value: AWSAccountId): Self = StObject.set(x, "AdminAccount", value.asInstanceOf[js.Any])
     

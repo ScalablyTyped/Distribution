@@ -28,7 +28,8 @@ object ImportMigrationTaskRequest {
     __obj.asInstanceOf[ImportMigrationTaskRequest]
   }
   
-  extension [Self <: ImportMigrationTaskRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImportMigrationTaskRequest] (val x: Self) extends AnyVal {
     
     inline def setDryRun(value: DryRun): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     

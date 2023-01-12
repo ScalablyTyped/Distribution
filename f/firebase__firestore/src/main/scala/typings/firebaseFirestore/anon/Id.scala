@@ -23,7 +23,8 @@ object Id {
     __obj.asInstanceOf[Id]
   }
   
-  extension [Self <: Id](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Id] (val x: Self) extends AnyVal {
     
     inline def setFields(value: js.Array[js.Tuple2[/* field */ String, /* kind */ IndexKind]]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     

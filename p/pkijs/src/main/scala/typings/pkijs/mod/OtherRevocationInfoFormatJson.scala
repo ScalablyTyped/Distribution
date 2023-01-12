@@ -19,7 +19,8 @@ object OtherRevocationInfoFormatJson {
     __obj.asInstanceOf[OtherRevocationInfoFormatJson]
   }
   
-  extension [Self <: OtherRevocationInfoFormatJson](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OtherRevocationInfoFormatJson] (val x: Self) extends AnyVal {
     
     inline def setOtherRevInfo(value: Any): Self = StObject.set(x, "otherRevInfo", value.asInstanceOf[js.Any])
     

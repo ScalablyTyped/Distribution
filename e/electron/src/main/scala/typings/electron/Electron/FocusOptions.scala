@@ -20,7 +20,8 @@ object FocusOptions {
     __obj.asInstanceOf[FocusOptions]
   }
   
-  extension [Self <: FocusOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FocusOptions] (val x: Self) extends AnyVal {
     
     inline def setSteal(value: Boolean): Self = StObject.set(x, "steal", value.asInstanceOf[js.Any])
   }

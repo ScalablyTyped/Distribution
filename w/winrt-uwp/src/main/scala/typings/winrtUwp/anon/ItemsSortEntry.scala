@@ -18,7 +18,8 @@ object ItemsSortEntry {
     __obj.asInstanceOf[ItemsSortEntry]
   }
   
-  extension [Self <: ItemsSortEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ItemsSortEntry] (val x: Self) extends AnyVal {
     
     inline def setItems(value: SortEntry): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     

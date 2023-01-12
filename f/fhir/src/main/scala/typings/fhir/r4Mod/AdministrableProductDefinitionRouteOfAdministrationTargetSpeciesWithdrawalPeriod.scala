@@ -32,7 +32,8 @@ object AdministrableProductDefinitionRouteOfAdministrationTargetSpeciesWithdrawa
     __obj.asInstanceOf[AdministrableProductDefinitionRouteOfAdministrationTargetSpeciesWithdrawalPeriod]
   }
   
-  extension [Self <: AdministrableProductDefinitionRouteOfAdministrationTargetSpeciesWithdrawalPeriod](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AdministrableProductDefinitionRouteOfAdministrationTargetSpeciesWithdrawalPeriod] (val x: Self) extends AnyVal {
     
     inline def setSupportingInformation(value: String): Self = StObject.set(x, "supportingInformation", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object MapZoomEndEvent {
     __obj.asInstanceOf[MapZoomEndEvent]
   }
   
-  extension [Self <: MapZoomEndEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MapZoomEndEvent] (val x: Self) extends AnyVal {
     
     inline def setOriginalEvent(value: Any): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
     

@@ -92,7 +92,8 @@ object ICompositeDefinition {
     __obj.asInstanceOf[ICompositeDefinition]
   }
   
-  extension [Self <: ICompositeDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICompositeDefinition] (val x: Self) extends AnyVal {
     
     inline def setBodies(value: js.Array[Body]): Self = StObject.set(x, "bodies", value.asInstanceOf[js.Any])
     

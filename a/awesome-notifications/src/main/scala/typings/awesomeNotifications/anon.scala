@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[Async]
     }
     
-    extension [Self <: Async](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Async] (val x: Self) extends AnyVal {
       
       inline def setAsync(value: Double): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
       
@@ -44,7 +45,8 @@ object anon {
       __obj.asInstanceOf[Asyncblock]
     }
     
-    extension [Self <: Asyncblock](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Asyncblock] (val x: Self) extends AnyVal {
       
       inline def setAsync(value: String): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
       

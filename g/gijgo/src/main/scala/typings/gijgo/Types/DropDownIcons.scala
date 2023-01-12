@@ -16,7 +16,8 @@ object DropDownIcons {
     __obj.asInstanceOf[DropDownIcons]
   }
   
-  extension [Self <: DropDownIcons](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DropDownIcons] (val x: Self) extends AnyVal {
     
     inline def setDropdown(value: String): Self = StObject.set(x, "dropdown", value.asInstanceOf[js.Any])
     

@@ -41,7 +41,8 @@ object distComponentsDebugStatsMod {
       __obj.asInstanceOf[DebugStatsProps]
     }
     
-    extension [Self <: DebugStatsProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DebugStatsProps] (val x: Self) extends AnyVal {
       
       inline def setBackend(value: String): Self = StObject.set(x, "backend", value.asInstanceOf[js.Any])
       

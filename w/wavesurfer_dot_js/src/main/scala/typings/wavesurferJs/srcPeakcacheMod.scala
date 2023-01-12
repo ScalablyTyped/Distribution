@@ -41,7 +41,8 @@ object srcPeakcacheMod {
       __obj.asInstanceOf[PeakCache]
     }
     
-    extension [Self <: PeakCache](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PeakCache] (val x: Self) extends AnyVal {
       
       inline def setAddRangeToPeakCache(value: (Double, Double, Double) => js.Array[js.Array[Double]]): Self = StObject.set(x, "addRangeToPeakCache", js.Any.fromFunction3(value))
       

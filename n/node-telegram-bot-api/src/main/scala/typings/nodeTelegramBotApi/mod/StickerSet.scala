@@ -34,7 +34,8 @@ object StickerSet {
     __obj.asInstanceOf[StickerSet]
   }
   
-  extension [Self <: StickerSet](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StickerSet] (val x: Self) extends AnyVal {
     
     inline def setIs_animated(value: Boolean): Self = StObject.set(x, "is_animated", value.asInstanceOf[js.Any])
     

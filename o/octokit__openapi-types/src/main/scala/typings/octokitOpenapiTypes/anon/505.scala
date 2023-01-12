@@ -15,7 +15,8 @@ object `505` {
     __obj.asInstanceOf[`505`]
   }
   
-  extension [Self <: `505`](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: `505`] (val x: Self) extends AnyVal {
     
     inline def setPath(value: OwnerPathRepo): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
   }

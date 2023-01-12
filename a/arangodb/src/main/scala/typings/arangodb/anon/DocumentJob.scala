@@ -84,7 +84,8 @@ object DocumentJob {
     __obj.asInstanceOf[DocumentJob]
   }
   
-  extension [Self <: DocumentJob](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DocumentJob] (val x: Self) extends AnyVal {
     
     inline def setAbort(value: () => Unit): Self = StObject.set(x, "abort", js.Any.fromFunction0(value))
     

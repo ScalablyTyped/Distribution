@@ -23,7 +23,8 @@ object RecoveryData {
     __obj.asInstanceOf[RecoveryData]
   }
   
-  extension [Self <: RecoveryData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecoveryData] (val x: Self) extends AnyVal {
     
     inline def setData(value: DefaultQuizData & (Record[String, Any])): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

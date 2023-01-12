@@ -37,7 +37,8 @@ object Customglyphcode {
     __obj.asInstanceOf[Customglyphcode]
   }
   
-  extension [Self <: Customglyphcode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Customglyphcode] (val x: Self) extends AnyVal {
     
     inline def setCustom_glyph_code(value: String): Self = StObject.set(x, "custom_glyph_code", value.asInstanceOf[js.Any])
     

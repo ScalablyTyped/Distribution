@@ -24,7 +24,8 @@ object FindingSource {
     __obj.asInstanceOf[FindingSource]
   }
   
-  extension [Self <: FindingSource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FindingSource] (val x: Self) extends AnyVal {
     
     inline def setDetail(value: FindingSourceDetail): Self = StObject.set(x, "detail", value.asInstanceOf[js.Any])
     

@@ -39,7 +39,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setHandlebars(value: TypeofHandlebars): Self = StObject.set(x, "handlebars", value.asInstanceOf[js.Any])
       
@@ -91,7 +92,8 @@ object mod {
       __obj.asInstanceOf[Utils_]
     }
     
-    extension [Self <: Utils_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Utils_] (val x: Self) extends AnyVal {
       
       inline def setChangecase(value: (String, js.Function1[/* str */ String, String]) => String): Self = StObject.set(x, "changecase", js.Any.fromFunction2(value))
       

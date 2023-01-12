@@ -23,7 +23,8 @@ object DBClusterParameterGroupsMessage {
     __obj.asInstanceOf[DBClusterParameterGroupsMessage]
   }
   
-  extension [Self <: DBClusterParameterGroupsMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DBClusterParameterGroupsMessage] (val x: Self) extends AnyVal {
     
     inline def setDBClusterParameterGroups(value: DBClusterParameterGroupList): Self = StObject.set(x, "DBClusterParameterGroups", value.asInstanceOf[js.Any])
     

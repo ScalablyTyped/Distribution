@@ -42,7 +42,8 @@ object StyleSheets {
     __obj.asInstanceOf[StyleSheets]
   }
   
-  extension [Self <: StyleSheets](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StyleSheets] (val x: Self) extends AnyVal {
     
     inline def setAdd(value: (String, WdStyleSheetLinkType, String, WdStyleSheetPrecedence) => StyleSheet): Self = StObject.set(x, "Add", js.Any.fromFunction4(value))
     

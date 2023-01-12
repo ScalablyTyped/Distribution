@@ -48,7 +48,8 @@ object UpdateTimelineEventInput {
     __obj.asInstanceOf[UpdateTimelineEventInput]
   }
   
-  extension [Self <: UpdateTimelineEventInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateTimelineEventInput] (val x: Self) extends AnyVal {
     
     inline def setClientToken(value: ClientToken): Self = StObject.set(x, "clientToken", value.asInstanceOf[js.Any])
     

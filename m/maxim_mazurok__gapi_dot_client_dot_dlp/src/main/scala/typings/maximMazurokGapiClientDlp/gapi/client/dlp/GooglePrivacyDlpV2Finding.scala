@@ -64,7 +64,8 @@ object GooglePrivacyDlpV2Finding {
     __obj.asInstanceOf[GooglePrivacyDlpV2Finding]
   }
   
-  extension [Self <: GooglePrivacyDlpV2Finding](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GooglePrivacyDlpV2Finding] (val x: Self) extends AnyVal {
     
     inline def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     

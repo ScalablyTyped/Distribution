@@ -30,7 +30,8 @@ object DataStore {
     __obj.asInstanceOf[DataStore]
   }
   
-  extension [Self <: DataStore](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataStore] (val x: Self) extends AnyVal {
     
     inline def setCapacity(value: Double): Self = StObject.set(x, "capacity", value.asInstanceOf[js.Any])
     

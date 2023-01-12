@@ -45,7 +45,8 @@ object LegacyVulnApiResult {
     __obj.asInstanceOf[LegacyVulnApiResult]
   }
   
-  extension [Self <: LegacyVulnApiResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LegacyVulnApiResult] (val x: Self) extends AnyVal {
     
     inline def setDependencyCount(value: Double): Self = StObject.set(x, "dependencyCount", value.asInstanceOf[js.Any])
     

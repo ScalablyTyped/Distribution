@@ -30,7 +30,8 @@ object mod {
       __obj.asInstanceOf[CommandLineOptions]
     }
     
-    extension [Self <: CommandLineOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommandLineOptions] (val x: Self) extends AnyVal {
       
       inline def set_unknown(value: js.Array[String]): Self = StObject.set(x, "_unknown", value.asInstanceOf[js.Any])
       
@@ -91,7 +92,8 @@ object mod {
       __obj.asInstanceOf[OptionDefinition]
     }
     
-    extension [Self <: OptionDefinition](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OptionDefinition] (val x: Self) extends AnyVal {
       
       inline def setAlias(value: String): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
       
@@ -163,7 +165,8 @@ object mod {
       __obj.asInstanceOf[ParseOptions]
     }
     
-    extension [Self <: ParseOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParseOptions] (val x: Self) extends AnyVal {
       
       inline def setArgv(value: js.Array[String]): Self = StObject.set(x, "argv", value.asInstanceOf[js.Any])
       

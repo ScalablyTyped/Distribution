@@ -23,7 +23,8 @@ object EditModeEnteringEventUIParam {
     __obj.asInstanceOf[EditModeEnteringEventUIParam]
   }
   
-  extension [Self <: EditModeEnteringEventUIParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EditModeEnteringEventUIParam] (val x: Self) extends AnyVal {
     
     inline def setCell(value: String): Self = StObject.set(x, "cell", value.asInstanceOf[js.Any])
     

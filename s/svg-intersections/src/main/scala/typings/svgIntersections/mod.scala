@@ -32,7 +32,8 @@ object mod {
       __obj.asInstanceOf[CircleProps]
     }
     
-    extension [Self <: CircleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CircleProps] (val x: Self) extends AnyVal {
       
       inline def setCx(value: Double): Self = StObject.set(x, "cx", value.asInstanceOf[js.Any])
       
@@ -59,7 +60,8 @@ object mod {
       __obj.asInstanceOf[EllipseProps]
     }
     
-    extension [Self <: EllipseProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EllipseProps] (val x: Self) extends AnyVal {
       
       inline def setCx(value: Double): Self = StObject.set(x, "cx", value.asInstanceOf[js.Any])
       
@@ -84,7 +86,8 @@ object mod {
       __obj.asInstanceOf[Intersection]
     }
     
-    extension [Self <: Intersection](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Intersection] (val x: Self) extends AnyVal {
       
       inline def setPoints(value: js.Array[Point2D]): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
       
@@ -111,7 +114,8 @@ object mod {
       __obj.asInstanceOf[LineProps]
     }
     
-    extension [Self <: LineProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LineProps] (val x: Self) extends AnyVal {
       
       inline def setX1(value: Double): Self = StObject.set(x, "x1", value.asInstanceOf[js.Any])
       
@@ -144,7 +148,8 @@ object mod {
       __obj.asInstanceOf[Matrix2D]
     }
     
-    extension [Self <: Matrix2D](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Matrix2D] (val x: Self) extends AnyVal {
       
       inline def setA(value: Double): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
       
@@ -171,7 +176,8 @@ object mod {
       __obj.asInstanceOf[PathProps]
     }
     
-    extension [Self <: PathProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PathProps] (val x: Self) extends AnyVal {
       
       inline def setD(value: String): Self = StObject.set(x, "d", value.asInstanceOf[js.Any])
     }
@@ -190,7 +196,8 @@ object mod {
       __obj.asInstanceOf[Point2D]
     }
     
-    extension [Self <: Point2D](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Point2D] (val x: Self) extends AnyVal {
       
       inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
@@ -209,7 +216,8 @@ object mod {
       __obj.asInstanceOf[PolygonProps]
     }
     
-    extension [Self <: PolygonProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PolygonProps] (val x: Self) extends AnyVal {
       
       inline def setPoints(value: String): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
     }
@@ -238,7 +246,8 @@ object mod {
       __obj.asInstanceOf[RectProps]
     }
     
-    extension [Self <: RectProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RectProps] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -274,7 +283,8 @@ object mod {
       __obj.asInstanceOf[Shape_]
     }
     
-    extension [Self <: Shape_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Shape_] (val x: Self) extends AnyVal {
       
       inline def setMeta(value: js.Object): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
       

@@ -21,7 +21,8 @@ object UrlObj {
     __obj.asInstanceOf[UrlObj]
   }
   
-  extension [Self <: UrlObj](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UrlObj] (val x: Self) extends AnyVal {
     
     inline def setDelFlag(value: Boolean | Double): Self = StObject.set(x, "delFlag", value.asInstanceOf[js.Any])
     

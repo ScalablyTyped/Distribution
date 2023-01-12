@@ -86,7 +86,8 @@ object FenceGeotriggerProperties {
     __obj.asInstanceOf[FenceGeotriggerProperties]
   }
   
-  extension [Self <: FenceGeotriggerProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FenceGeotriggerProperties] (val x: Self) extends AnyVal {
     
     inline def setEnterExitRule(
       value: `enter-contains-and-exit-does-not-contain` | `enter-contains-and-exit-does-not-intersect` | `enter-intersects-and-exit-does-not-intersect`

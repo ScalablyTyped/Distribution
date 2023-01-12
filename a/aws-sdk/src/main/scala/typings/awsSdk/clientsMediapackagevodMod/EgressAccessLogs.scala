@@ -18,7 +18,8 @@ object EgressAccessLogs {
     __obj.asInstanceOf[EgressAccessLogs]
   }
   
-  extension [Self <: EgressAccessLogs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EgressAccessLogs] (val x: Self) extends AnyVal {
     
     inline def setLogGroupName(value: string): Self = StObject.set(x, "LogGroupName", value.asInstanceOf[js.Any])
     

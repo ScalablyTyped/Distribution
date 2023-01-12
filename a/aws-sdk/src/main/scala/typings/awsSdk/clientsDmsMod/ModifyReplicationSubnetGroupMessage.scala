@@ -28,7 +28,8 @@ object ModifyReplicationSubnetGroupMessage {
     __obj.asInstanceOf[ModifyReplicationSubnetGroupMessage]
   }
   
-  extension [Self <: ModifyReplicationSubnetGroupMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModifyReplicationSubnetGroupMessage] (val x: Self) extends AnyVal {
     
     inline def setReplicationSubnetGroupDescription(value: String): Self = StObject.set(x, "ReplicationSubnetGroupDescription", value.asInstanceOf[js.Any])
     

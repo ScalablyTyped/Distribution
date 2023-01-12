@@ -20,7 +20,8 @@ object anon {
       __obj.asInstanceOf[OriginalMessage]
     }
     
-    extension [Self <: OriginalMessage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OriginalMessage] (val x: Self) extends AnyVal {
       
       inline def setOriginalMessage(value: String): Self = StObject.set(x, "originalMessage", value.asInstanceOf[js.Any])
       
@@ -61,7 +62,8 @@ object anon {
       __obj.asInstanceOf[RequiredOmitOptionsmodify]
     }
     
-    extension [Self <: RequiredOmitOptionsmodify](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequiredOmitOptionsmodify] (val x: Self) extends AnyVal {
       
       inline def setBindReceiver(value: Boolean): Self = StObject.set(x, "bindReceiver", value.asInstanceOf[js.Any])
       

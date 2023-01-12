@@ -57,7 +57,8 @@ object SplitButton {
       __obj.asInstanceOf[BeforeOpenEventArgs]
     }
     
-    extension [Self <: BeforeOpenEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BeforeOpenEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -102,7 +103,8 @@ object SplitButton {
       __obj.asInstanceOf[ClickEventArgs]
     }
     
-    extension [Self <: ClickEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClickEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -147,7 +149,8 @@ object SplitButton {
       __obj.asInstanceOf[CloseEventArgs]
     }
     
-    extension [Self <: CloseEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CloseEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -184,7 +187,8 @@ object SplitButton {
       __obj.asInstanceOf[CreateEventArgs]
     }
     
-    extension [Self <: CreateEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -221,7 +225,8 @@ object SplitButton {
       __obj.asInstanceOf[DestroyEventArgs]
     }
     
-    extension [Self <: DestroyEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DestroyEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -270,7 +275,8 @@ object SplitButton {
       __obj.asInstanceOf[ItemMouseOutEventArgs]
     }
     
-    extension [Self <: ItemMouseOutEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ItemMouseOutEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -331,7 +337,8 @@ object SplitButton {
       __obj.asInstanceOf[ItemMouseOverEventArgs]
     }
     
-    extension [Self <: ItemMouseOverEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ItemMouseOverEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -396,7 +403,8 @@ object SplitButton {
       __obj.asInstanceOf[ItemSelectedEventArgs]
     }
     
-    extension [Self <: ItemSelectedEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ItemSelectedEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -552,7 +560,8 @@ object SplitButton {
       __obj.asInstanceOf[typings.ejWebAll.ej.SplitButton.Model]
     }
     
-    extension [Self <: typings.ejWebAll.ej.SplitButton.Model](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.ejWebAll.ej.SplitButton.Model] (val x: Self) extends AnyVal {
       
       inline def setArrowPosition(value: String | ArrowPosition): Self = StObject.set(x, "arrowPosition", value.asInstanceOf[js.Any])
       
@@ -681,7 +690,8 @@ object SplitButton {
       __obj.asInstanceOf[OpenEventArgs]
     }
     
-    extension [Self <: OpenEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OpenEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       

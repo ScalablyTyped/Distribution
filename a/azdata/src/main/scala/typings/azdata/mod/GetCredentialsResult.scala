@@ -17,7 +17,8 @@ object GetCredentialsResult {
     __obj.asInstanceOf[GetCredentialsResult]
   }
   
-  extension [Self <: GetCredentialsResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetCredentialsResult] (val x: Self) extends AnyVal {
     
     inline def setCredentials(value: js.Array[CredentialInfo]): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
     

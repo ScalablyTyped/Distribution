@@ -78,7 +78,8 @@ object FewManyOne {
     __obj.asInstanceOf[FewManyOne]
   }
   
-  extension [Self <: FewManyOne](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FewManyOne] (val x: Self) extends AnyVal {
     
     inline def setFew(
       value: js.Tuple2[typings.makePlural.makePluralStrings.`2`, typings.makePlural.makePluralStrings.`4`]

@@ -23,7 +23,8 @@ object SegmentDrawActionDrawCompleteEvent {
     __obj.asInstanceOf[SegmentDrawActionDrawCompleteEvent]
   }
   
-  extension [Self <: SegmentDrawActionDrawCompleteEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SegmentDrawActionDrawCompleteEvent] (val x: Self) extends AnyVal {
     
     inline def setDefaultPrevented(value: Boolean): Self = StObject.set(x, "defaultPrevented", value.asInstanceOf[js.Any])
     

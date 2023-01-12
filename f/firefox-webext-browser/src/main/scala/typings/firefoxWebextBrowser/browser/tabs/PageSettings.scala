@@ -83,7 +83,8 @@ object PageSettings {
     __obj.asInstanceOf[PageSettings]
   }
   
-  extension [Self <: PageSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PageSettings] (val x: Self) extends AnyVal {
     
     inline def setEdgeBottom(value: Double): Self = StObject.set(x, "edgeBottom", value.asInstanceOf[js.Any])
     

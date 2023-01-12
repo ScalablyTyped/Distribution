@@ -86,7 +86,8 @@ object INxFieldDescription {
     __obj.asInstanceOf[INxFieldDescription]
   }
   
-  extension [Self <: INxFieldDescription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: INxFieldDescription] (val x: Self) extends AnyVal {
     
     inline def setQAndMode(value: Boolean): Self = StObject.set(x, "qAndMode", value.asInstanceOf[js.Any])
     

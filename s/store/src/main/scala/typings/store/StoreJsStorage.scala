@@ -32,7 +32,8 @@ object StoreJsStorage {
     __obj.asInstanceOf[StoreJsStorage]
   }
   
-  extension [Self <: StoreJsStorage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StoreJsStorage] (val x: Self) extends AnyVal {
     
     inline def setClearAll(value: () => Unit): Self = StObject.set(x, "clearAll", js.Any.fromFunction0(value))
     

@@ -56,7 +56,8 @@ object SnappingOptionsProperties {
     __obj.asInstanceOf[SnappingOptionsProperties]
   }
   
-  extension [Self <: SnappingOptionsProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SnappingOptionsProperties] (val x: Self) extends AnyVal {
     
     inline def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
     

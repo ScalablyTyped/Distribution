@@ -103,7 +103,8 @@ object mod {
       __obj.asInstanceOf[CommerceConfig]
     }
     
-    extension [Self <: CommerceConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommerceConfig] (val x: Self) extends AnyVal {
       
       inline def setAxiosConfig(value: Any): Self = StObject.set(x, "axiosConfig", value.asInstanceOf[js.Any])
       

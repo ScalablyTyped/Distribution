@@ -28,7 +28,8 @@ object NodesJvmMemoryStats {
     __obj.asInstanceOf[NodesJvmMemoryStats]
   }
   
-  extension [Self <: NodesJvmMemoryStats](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodesJvmMemoryStats] (val x: Self) extends AnyVal {
     
     inline def setHeap_committed_in_bytes(value: long): Self = StObject.set(x, "heap_committed_in_bytes", value.asInstanceOf[js.Any])
     

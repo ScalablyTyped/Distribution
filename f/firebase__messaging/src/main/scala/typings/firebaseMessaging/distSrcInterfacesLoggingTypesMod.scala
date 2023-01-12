@@ -42,7 +42,8 @@ object distSrcInterfacesLoggingTypesMod {
       __obj.asInstanceOf[FcmEvent]
     }
     
-    extension [Self <: FcmEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FcmEvent] (val x: Self) extends AnyVal {
       
       inline def setAnalytics_label(value: String): Self = StObject.set(x, "analytics_label", value.asInstanceOf[js.Any])
       
@@ -79,7 +80,8 @@ object distSrcInterfacesLoggingTypesMod {
       __obj.asInstanceOf[LogEvent]
     }
     
-    extension [Self <: LogEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LogEvent] (val x: Self) extends AnyVal {
       
       inline def setEvent_time_ms(value: String): Self = StObject.set(x, "event_time_ms", value.asInstanceOf[js.Any])
       
@@ -100,7 +102,8 @@ object distSrcInterfacesLoggingTypesMod {
       __obj.asInstanceOf[LogRequest]
     }
     
-    extension [Self <: LogRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LogRequest] (val x: Self) extends AnyVal {
       
       inline def setLog_event(value: js.Array[LogEvent]): Self = StObject.set(x, "log_event", value.asInstanceOf[js.Any])
       
@@ -123,7 +126,8 @@ object distSrcInterfacesLoggingTypesMod {
       __obj.asInstanceOf[LogResponse]
     }
     
-    extension [Self <: LogResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LogResponse] (val x: Self) extends AnyVal {
       
       inline def setLogResponseDetails(value: js.Array[LogResponseDetails]): Self = StObject.set(x, "logResponseDetails", value.asInstanceOf[js.Any])
       
@@ -144,7 +148,8 @@ object distSrcInterfacesLoggingTypesMod {
       __obj.asInstanceOf[LogResponseDetails]
     }
     
-    extension [Self <: LogResponseDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LogResponseDetails] (val x: Self) extends AnyVal {
       
       inline def setResponseAction(value: UserResponse): Self = StObject.set(x, "responseAction", value.asInstanceOf[js.Any])
     }

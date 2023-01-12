@@ -45,7 +45,8 @@ object DateTimeOptions {
     __obj.asInstanceOf[DateTimeOptions[Key, Locales]]
   }
   
-  extension [Self <: DateTimeOptions[?, ?], Key, Locales](x: Self & (DateTimeOptions[Key, Locales])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DateTimeOptions[?, ?], Key, Locales] (val x: Self & (DateTimeOptions[Key, Locales])) extends AnyVal {
     
     inline def setFallbackWarn(value: Boolean): Self = StObject.set(x, "fallbackWarn", value.asInstanceOf[js.Any])
     

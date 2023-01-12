@@ -32,7 +32,8 @@ object Delegate {
     __obj.asInstanceOf[Delegate]
   }
   
-  extension [Self <: Delegate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Delegate] (val x: Self) extends AnyVal {
     
     inline def setBeforeDisplay(value: (/* message */ Message, /* data */ ConversationData) => Message | Null): Self = StObject.set(x, "beforeDisplay", js.Any.fromFunction2(value))
     

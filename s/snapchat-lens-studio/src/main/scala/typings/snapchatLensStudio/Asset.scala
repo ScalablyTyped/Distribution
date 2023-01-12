@@ -71,7 +71,8 @@ object Asset {
       __obj.asInstanceOf[AnimationLayer]
     }
     
-    extension [Self <: AnimationLayer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AnimationLayer] (val x: Self) extends AnyVal {
       
       inline def setGetBlendShapeTrack(value: String => FloatAnimationTrack): Self = StObject.set(x, "getBlendShapeTrack", js.Any.fromFunction1(value))
       
@@ -138,7 +139,8 @@ object Asset {
       __obj.asInstanceOf[MarkerAsset]
     }
     
-    extension [Self <: MarkerAsset](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MarkerAsset] (val x: Self) extends AnyVal {
       
       inline def setGetAspectRatio(value: () => Double): Self = StObject.set(x, "getAspectRatio", js.Any.fromFunction0(value))
     }
@@ -184,7 +186,8 @@ object Asset {
       __obj.asInstanceOf[Material]
     }
     
-    extension [Self <: Material](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Material] (val x: Self) extends AnyVal {
       
       inline def setGetPass(value: Double => Pass): Self = StObject.set(x, "getPass", js.Any.fromFunction1(value))
       
@@ -194,7 +197,8 @@ object Asset {
     }
   }
   
-  extension [Self <: Asset](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Asset] (val x: Self) extends AnyVal {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
@@ -238,7 +242,8 @@ object Asset {
       __obj.asInstanceOf[RenderMesh]
     }
     
-    extension [Self <: RenderMesh](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RenderMesh] (val x: Self) extends AnyVal {
       
       inline def setAabbMax(value: vec3): Self = StObject.set(x, "aabbMax", value.asInstanceOf[js.Any])
       
@@ -292,7 +297,8 @@ object Asset {
       __obj.asInstanceOf[Texture]
     }
     
-    extension [Self <: Texture](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Texture] (val x: Self) extends AnyVal {
       
       inline def setControl(value: TextureProvider): Self = StObject.set(x, "control", value.asInstanceOf[js.Any])
       

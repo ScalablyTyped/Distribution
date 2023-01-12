@@ -167,7 +167,8 @@ object StandardShorthandPropertiesHyphenFallback {
     __obj.asInstanceOf[StandardShorthandPropertiesHyphenFallback[TLength, TTime]]
   }
   
-  extension [Self <: StandardShorthandPropertiesHyphenFallback[?, ?], TLength, TTime](x: Self & (StandardShorthandPropertiesHyphenFallback[TLength, TTime])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StandardShorthandPropertiesHyphenFallback[?, ?], TLength, TTime] (val x: Self & (StandardShorthandPropertiesHyphenFallback[TLength, TTime])) extends AnyVal {
     
     inline def setAll(value: All | js.Array[NonNullable[js.UndefOr[All]]]): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
     

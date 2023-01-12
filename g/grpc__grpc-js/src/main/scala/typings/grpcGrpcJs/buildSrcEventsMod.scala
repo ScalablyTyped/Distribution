@@ -37,7 +37,8 @@ object buildSrcEventsMod {
       __obj.asInstanceOf[EmitterAugmentation1[Name, Arg]]
     }
     
-    extension [Self <: EmitterAugmentation1[?, ?], Name /* <: String | js.Symbol */, Arg](x: Self & (EmitterAugmentation1[Name, Arg])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EmitterAugmentation1[?, ?], Name /* <: String | js.Symbol */, Arg] (val x: Self & (EmitterAugmentation1[Name, Arg])) extends AnyVal {
       
       inline def setAddListener(value: (Name, js.Function1[/* arg1 */ Arg, Unit]) => EmitterAugmentation1[Name, Arg]): Self = StObject.set(x, "addListener", js.Any.fromFunction2(value))
       

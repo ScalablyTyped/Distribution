@@ -28,7 +28,8 @@ object ListAvailableManagementCidrRangesRequest {
     __obj.asInstanceOf[ListAvailableManagementCidrRangesRequest]
   }
   
-  extension [Self <: ListAvailableManagementCidrRangesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListAvailableManagementCidrRangesRequest] (val x: Self) extends AnyVal {
     
     inline def setManagementCidrRangeConstraint(value: ManagementCidrRangeConstraint): Self = StObject.set(x, "ManagementCidrRangeConstraint", value.asInstanceOf[js.Any])
     

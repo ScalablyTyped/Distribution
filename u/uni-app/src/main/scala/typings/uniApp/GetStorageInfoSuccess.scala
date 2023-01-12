@@ -28,7 +28,8 @@ object GetStorageInfoSuccess {
     __obj.asInstanceOf[GetStorageInfoSuccess]
   }
   
-  extension [Self <: GetStorageInfoSuccess](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetStorageInfoSuccess] (val x: Self) extends AnyVal {
     
     inline def setCurrentSize(value: Double): Self = StObject.set(x, "currentSize", value.asInstanceOf[js.Any])
     

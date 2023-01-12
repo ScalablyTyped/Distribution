@@ -31,7 +31,8 @@ object SecretVolume {
     __obj.asInstanceOf[SecretVolume]
   }
   
-  extension [Self <: SecretVolume](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SecretVolume] (val x: Self) extends AnyVal {
     
     inline def setMountPath(value: String): Self = StObject.set(x, "mountPath", value.asInstanceOf[js.Any])
     

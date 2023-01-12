@@ -78,7 +78,8 @@ object ParameterHistory {
     __obj.asInstanceOf[ParameterHistory]
   }
   
-  extension [Self <: ParameterHistory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParameterHistory] (val x: Self) extends AnyVal {
     
     inline def setAllowedPattern(value: AllowedPattern): Self = StObject.set(x, "AllowedPattern", value.asInstanceOf[js.Any])
     

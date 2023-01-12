@@ -52,7 +52,8 @@ object Definitions {
     __obj.asInstanceOf[Definitions]
   }
   
-  extension [Self <: Definitions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Definitions] (val x: Self) extends AnyVal {
     
     inline def setDiagrams(value: BPMNDiagram): Self = StObject.set(x, "diagrams", value.asInstanceOf[js.Any])
     

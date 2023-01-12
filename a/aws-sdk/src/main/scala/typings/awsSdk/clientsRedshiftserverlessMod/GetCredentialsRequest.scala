@@ -28,7 +28,8 @@ object GetCredentialsRequest {
     __obj.asInstanceOf[GetCredentialsRequest]
   }
   
-  extension [Self <: GetCredentialsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetCredentialsRequest] (val x: Self) extends AnyVal {
     
     inline def setDbName(value: DbName): Self = StObject.set(x, "dbName", value.asInstanceOf[js.Any])
     

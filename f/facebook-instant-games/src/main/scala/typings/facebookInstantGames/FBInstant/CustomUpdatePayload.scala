@@ -70,7 +70,8 @@ object CustomUpdatePayload {
     __obj.asInstanceOf[CustomUpdatePayload]
   }
   
-  extension [Self <: CustomUpdatePayload](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomUpdatePayload] (val x: Self) extends AnyVal {
     
     inline def setAction(value: UpdateAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     

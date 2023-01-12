@@ -59,7 +59,8 @@ object IndexMinPQ {
     __obj.asInstanceOf[IndexMinPQ[T]]
   }
   
-  extension [Self <: IndexMinPQ[?], T](x: Self & IndexMinPQ[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndexMinPQ[?], T] (val x: Self & IndexMinPQ[T]) extends AnyVal {
     
     inline def setCompare(value: Any): Self = StObject.set(x, "compare", value.asInstanceOf[js.Any])
     

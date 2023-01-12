@@ -18,7 +18,8 @@ object FunctionUrlConfig {
     __obj.asInstanceOf[FunctionUrlConfig]
   }
   
-  extension [Self <: FunctionUrlConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FunctionUrlConfig] (val x: Self) extends AnyVal {
     
     inline def setAuthorizer(value: aws_iam): Self = StObject.set(x, "authorizer", value.asInstanceOf[js.Any])
     

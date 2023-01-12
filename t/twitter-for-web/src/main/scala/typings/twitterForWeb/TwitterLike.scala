@@ -20,7 +20,8 @@ object TwitterLike {
     __obj.asInstanceOf[TwitterLike]
   }
   
-  extension [Self <: TwitterLike](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TwitterLike] (val x: Self) extends AnyVal {
     
     inline def setReady(value: js.Function1[/* twttr */ Twitter, Unit] => Unit): Self = StObject.set(x, "ready", js.Any.fromFunction1(value))
   }

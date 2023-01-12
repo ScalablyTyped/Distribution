@@ -16,7 +16,8 @@ object RegExpValidatorFactory {
     __obj.asInstanceOf[RegExpValidatorFactory]
   }
   
-  extension [Self <: RegExpValidatorFactory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RegExpValidatorFactory] (val x: Self) extends AnyVal {
     
     inline def setCreateValidator(value: ValidatorOptions => RegExpValidator): Self = StObject.set(x, "createValidator", js.Any.fromFunction1(value))
   }

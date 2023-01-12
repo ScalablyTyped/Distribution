@@ -39,7 +39,8 @@ object anon {
       __obj.asInstanceOf[PartialHookMap]
     }
     
-    extension [Self <: PartialHookMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialHookMap] (val x: Self) extends AnyVal {
       
       inline def setAll(value: Hook | js.Array[Hook]): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
       
@@ -131,7 +132,8 @@ object anon {
       __obj.asInstanceOf[PartialHooksObject]
     }
     
-    extension [Self <: PartialHooksObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialHooksObject] (val x: Self) extends AnyVal {
       
       inline def setAfter(value: PartialHookMap | Hook | js.Array[Hook]): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
       
@@ -218,7 +220,8 @@ object anon {
       __obj.asInstanceOf[PartialServiceMethodsanyS]
     }
     
-    extension [Self <: PartialServiceMethodsanyS](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialServiceMethodsanyS] (val x: Self) extends AnyVal {
       
       inline def setCreate(
         value: (/* data */ Partial[Any] | js.Array[Partial[Any]], /* params */ js.UndefOr[Params]) => js.Promise[Any | js.Array[Any]]
@@ -266,7 +269,8 @@ object anon {
       __obj.asInstanceOf[PickPaginationOptionsmax]
     }
     
-    extension [Self <: PickPaginationOptionsmax](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PickPaginationOptionsmax] (val x: Self) extends AnyVal {
       
       inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     }

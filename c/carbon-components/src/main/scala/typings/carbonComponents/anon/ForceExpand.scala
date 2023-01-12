@@ -18,7 +18,8 @@ object ForceExpand {
     __obj.asInstanceOf[ForceExpand]
   }
   
-  extension [Self <: ForceExpand](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ForceExpand] (val x: Self) extends AnyVal {
     
     inline def setElement(value: HTMLElement): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     

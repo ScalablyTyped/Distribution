@@ -22,7 +22,8 @@ object typesPullRequestStatusChangedEventMetadataMod {
       __obj.asInstanceOf[PullRequestStatusChangedEventMetadata]
     }
     
-    extension [Self <: PullRequestStatusChangedEventMetadata](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PullRequestStatusChangedEventMetadata] (val x: Self) extends AnyVal {
       
       inline def setPullRequestStatus(value: OPEN | CLOSED | String): Self = StObject.set(x, "pullRequestStatus", value.asInstanceOf[js.Any])
       

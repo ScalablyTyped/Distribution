@@ -26,7 +26,8 @@ object MessageEntry {
     __obj.asInstanceOf[MessageEntry]
   }
   
-  extension [Self <: MessageEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MessageEntry] (val x: Self) extends AnyVal {
     
     inline def setCluid(value: String): Self = StObject.set(x, "cluid", value.asInstanceOf[js.Any])
     

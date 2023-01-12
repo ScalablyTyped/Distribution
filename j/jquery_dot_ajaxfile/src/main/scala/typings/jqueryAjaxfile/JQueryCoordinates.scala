@@ -20,7 +20,8 @@ object JQueryCoordinates {
     __obj.asInstanceOf[JQueryCoordinates]
   }
   
-  extension [Self <: JQueryCoordinates](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JQueryCoordinates] (val x: Self) extends AnyVal {
     
     inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
     

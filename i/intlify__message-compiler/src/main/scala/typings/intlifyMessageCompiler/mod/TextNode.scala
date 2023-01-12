@@ -23,7 +23,8 @@ object TextNode {
     __obj.asInstanceOf[TextNode]
   }
   
-  extension [Self <: TextNode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextNode] (val x: Self) extends AnyVal {
     
     inline def setType(value: `3`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

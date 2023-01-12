@@ -28,7 +28,8 @@ object PreviewAgentsRequest {
     __obj.asInstanceOf[PreviewAgentsRequest]
   }
   
-  extension [Self <: PreviewAgentsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PreviewAgentsRequest] (val x: Self) extends AnyVal {
     
     inline def setMaxResults(value: PreviewAgentsMaxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     

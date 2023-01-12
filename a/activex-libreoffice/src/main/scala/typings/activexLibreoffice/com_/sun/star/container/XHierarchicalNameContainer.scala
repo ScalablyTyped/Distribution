@@ -32,7 +32,8 @@ object XHierarchicalNameContainer {
     __obj.asInstanceOf[XHierarchicalNameContainer]
   }
   
-  extension [Self <: XHierarchicalNameContainer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XHierarchicalNameContainer] (val x: Self) extends AnyVal {
     
     inline def setInsertByHierarchicalName(value: (String, Any) => Unit): Self = StObject.set(x, "insertByHierarchicalName", js.Any.fromFunction2(value))
     

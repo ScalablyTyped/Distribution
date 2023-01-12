@@ -31,7 +31,8 @@ object ClusterRerouteRequest {
     __obj.asInstanceOf[ClusterRerouteRequest]
   }
   
-  extension [Self <: ClusterRerouteRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClusterRerouteRequest] (val x: Self) extends AnyVal {
     
     inline def setBody(value: Commands): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

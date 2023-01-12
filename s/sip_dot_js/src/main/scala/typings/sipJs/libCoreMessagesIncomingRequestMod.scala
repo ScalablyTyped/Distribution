@@ -86,7 +86,8 @@ object libCoreMessagesIncomingRequestMod {
       __obj.asInstanceOf[IncomingRequestDelegate]
     }
     
-    extension [Self <: IncomingRequestDelegate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IncomingRequestDelegate] (val x: Self) extends AnyVal {
       
       inline def setOnCancel(value: /* message */ IncomingRequestMessage => Unit): Self = StObject.set(x, "onCancel", js.Any.fromFunction1(value))
       

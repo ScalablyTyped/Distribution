@@ -77,7 +77,8 @@ object FaxOutgoingQueue {
     __obj.asInstanceOf[FaxOutgoingQueue]
   }
   
-  extension [Self <: FaxOutgoingQueue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FaxOutgoingQueue] (val x: Self) extends AnyVal {
     
     inline def setAgeLimit(value: Double): Self = StObject.set(x, "AgeLimit", value.asInstanceOf[js.Any])
     

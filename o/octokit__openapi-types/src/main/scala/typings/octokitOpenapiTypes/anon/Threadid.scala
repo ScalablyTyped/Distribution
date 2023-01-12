@@ -18,7 +18,8 @@ object Threadid {
     __obj.asInstanceOf[Threadid]
   }
   
-  extension [Self <: Threadid](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Threadid] (val x: Self) extends AnyVal {
     
     inline def setThread_id(
       value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['thread-id'] */ js.Any

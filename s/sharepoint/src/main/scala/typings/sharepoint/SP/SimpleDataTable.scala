@@ -15,7 +15,8 @@ object SimpleDataTable {
     __obj.asInstanceOf[SimpleDataTable]
   }
   
-  extension [Self <: SimpleDataTable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SimpleDataTable] (val x: Self) extends AnyVal {
     
     inline def setGet_rows(value: () => js.Array[Any]): Self = StObject.set(x, "get_rows", js.Any.fromFunction0(value))
   }

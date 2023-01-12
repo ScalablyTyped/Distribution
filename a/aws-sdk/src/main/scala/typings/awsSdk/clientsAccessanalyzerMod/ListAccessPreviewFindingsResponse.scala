@@ -23,7 +23,8 @@ object ListAccessPreviewFindingsResponse {
     __obj.asInstanceOf[ListAccessPreviewFindingsResponse]
   }
   
-  extension [Self <: ListAccessPreviewFindingsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListAccessPreviewFindingsResponse] (val x: Self) extends AnyVal {
     
     inline def setFindings(value: AccessPreviewFindingsList): Self = StObject.set(x, "findings", value.asInstanceOf[js.Any])
     

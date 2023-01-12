@@ -34,7 +34,8 @@ object CompactableComposition12 {
     __obj.asInstanceOf[CompactableComposition12[F, G]]
   }
   
-  extension [Self <: CompactableComposition12[?, ?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ Any */, G /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */](x: Self & (CompactableComposition12[F, G])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CompactableComposition12[?, ?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ Any */, G /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */] (val x: Self & (CompactableComposition12[F, G])) extends AnyVal {
     
     inline def setCompact(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<F, Kind2<G, E, Option<A>>> */ Any => Any

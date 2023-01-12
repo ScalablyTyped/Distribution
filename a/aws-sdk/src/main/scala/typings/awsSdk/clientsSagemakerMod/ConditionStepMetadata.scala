@@ -18,7 +18,8 @@ object ConditionStepMetadata {
     __obj.asInstanceOf[ConditionStepMetadata]
   }
   
-  extension [Self <: ConditionStepMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConditionStepMetadata] (val x: Self) extends AnyVal {
     
     inline def setOutcome(value: ConditionOutcome): Self = StObject.set(x, "Outcome", value.asInstanceOf[js.Any])
     

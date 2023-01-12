@@ -55,7 +55,8 @@ object VocabularySummary {
     __obj.asInstanceOf[VocabularySummary]
   }
   
-  extension [Self <: VocabularySummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VocabularySummary] (val x: Self) extends AnyVal {
     
     inline def setArn(value: ARN): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object AgreementFileLocalization {
     __obj.asInstanceOf[AgreementFileLocalization]
   }
   
-  extension [Self <: AgreementFileLocalization](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AgreementFileLocalization] (val x: Self) extends AnyVal {
     
     inline def setVersions(value: NullableOption[js.Array[AgreementFileVersion]]): Self = StObject.set(x, "versions", value.asInstanceOf[js.Any])
     

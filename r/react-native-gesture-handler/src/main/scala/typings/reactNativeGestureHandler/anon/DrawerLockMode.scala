@@ -41,7 +41,8 @@ object DrawerLockMode {
     __obj.asInstanceOf[DrawerLockMode]
   }
   
-  extension [Self <: DrawerLockMode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DrawerLockMode] (val x: Self) extends AnyVal {
     
     inline def setDrawerLockMode(value: String): Self = StObject.set(x, "drawerLockMode", value.asInstanceOf[js.Any])
     

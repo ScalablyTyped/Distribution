@@ -328,7 +328,8 @@ object crypto {
       __obj.asInstanceOf[ECParameter]
     }
     
-    extension [Self <: ECParameter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ECParameter] (val x: Self) extends AnyVal {
       
       inline def setCurve(value: ECCurveFp): Self = StObject.set(x, "curve", value.asInstanceOf[js.Any])
       
@@ -586,7 +587,8 @@ object crypto {
       __obj.asInstanceOf[MessageDigest]
     }
     
-    extension [Self <: MessageDigest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MessageDigest] (val x: Self) extends AnyVal {
       
       inline def setDigest(value: () => String): Self = StObject.set(x, "digest", js.Any.fromFunction0(value))
       

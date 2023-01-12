@@ -58,7 +58,8 @@ object DescribeOrganizationResponse {
     __obj.asInstanceOf[DescribeOrganizationResponse]
   }
   
-  extension [Self <: DescribeOrganizationResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeOrganizationResponse] (val x: Self) extends AnyVal {
     
     inline def setARN(value: AmazonResourceName): Self = StObject.set(x, "ARN", value.asInstanceOf[js.Any])
     

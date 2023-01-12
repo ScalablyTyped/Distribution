@@ -28,7 +28,8 @@ object MetricFilter {
     __obj.asInstanceOf[MetricFilter]
   }
   
-  extension [Self <: MetricFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MetricFilter] (val x: Self) extends AnyVal {
     
     inline def setComparisonValue(value: String): Self = StObject.set(x, "comparisonValue", value.asInstanceOf[js.Any])
     

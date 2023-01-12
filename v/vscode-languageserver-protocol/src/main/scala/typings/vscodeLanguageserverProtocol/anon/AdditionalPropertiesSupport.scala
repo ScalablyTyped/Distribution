@@ -20,7 +20,8 @@ object AdditionalPropertiesSupport {
     __obj.asInstanceOf[AdditionalPropertiesSupport]
   }
   
-  extension [Self <: AdditionalPropertiesSupport](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AdditionalPropertiesSupport] (val x: Self) extends AnyVal {
     
     inline def setAdditionalPropertiesSupport(value: Boolean): Self = StObject.set(x, "additionalPropertiesSupport", value.asInstanceOf[js.Any])
     

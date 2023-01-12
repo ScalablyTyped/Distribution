@@ -117,7 +117,8 @@ object MultiFile {
     __obj.asInstanceOf[MultiFile]
   }
   
-  extension [Self <: MultiFile](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MultiFile] (val x: Self) extends AnyVal {
     
     inline def setAddToMultiFile(value: File => MultiFile): Self = StObject.set(x, "addToMultiFile", js.Any.fromFunction1(value))
     

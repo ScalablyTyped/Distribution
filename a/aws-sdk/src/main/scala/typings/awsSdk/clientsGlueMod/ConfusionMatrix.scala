@@ -33,7 +33,8 @@ object ConfusionMatrix {
     __obj.asInstanceOf[ConfusionMatrix]
   }
   
-  extension [Self <: ConfusionMatrix](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConfusionMatrix] (val x: Self) extends AnyVal {
     
     inline def setNumFalseNegatives(value: RecordsCount): Self = StObject.set(x, "NumFalseNegatives", value.asInstanceOf[js.Any])
     

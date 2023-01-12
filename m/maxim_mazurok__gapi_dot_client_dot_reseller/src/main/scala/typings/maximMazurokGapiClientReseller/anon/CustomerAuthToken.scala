@@ -58,7 +58,8 @@ object CustomerAuthToken {
     __obj.asInstanceOf[CustomerAuthToken]
   }
   
-  extension [Self <: CustomerAuthToken](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomerAuthToken] (val x: Self) extends AnyVal {
     
     inline def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
     

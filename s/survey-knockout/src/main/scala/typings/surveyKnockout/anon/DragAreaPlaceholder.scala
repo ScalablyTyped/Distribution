@@ -47,7 +47,8 @@ object DragAreaPlaceholder {
     __obj.asInstanceOf[DragAreaPlaceholder]
   }
   
-  extension [Self <: DragAreaPlaceholder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DragAreaPlaceholder] (val x: Self) extends AnyVal {
     
     inline def setDragAreaPlaceholder(value: String): Self = StObject.set(x, "dragAreaPlaceholder", value.asInstanceOf[js.Any])
     

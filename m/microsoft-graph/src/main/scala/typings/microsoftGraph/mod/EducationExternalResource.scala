@@ -18,7 +18,8 @@ object EducationExternalResource {
     __obj.asInstanceOf[EducationExternalResource]
   }
   
-  extension [Self <: EducationExternalResource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EducationExternalResource] (val x: Self) extends AnyVal {
     
     inline def setWebUrl(value: NullableOption[String]): Self = StObject.set(x, "webUrl", value.asInstanceOf[js.Any])
     

@@ -44,7 +44,8 @@ object CitationCitedArtifactClassificationWhoClassified {
     __obj.asInstanceOf[CitationCitedArtifactClassificationWhoClassified]
   }
   
-  extension [Self <: CitationCitedArtifactClassificationWhoClassified](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CitationCitedArtifactClassificationWhoClassified] (val x: Self) extends AnyVal {
     
     inline def setClassifierCopyright(value: String): Self = StObject.set(x, "classifierCopyright", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object TestCaseGroup {
     __obj.asInstanceOf[TestCaseGroup]
   }
   
-  extension [Self <: TestCaseGroup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TestCaseGroup] (val x: Self) extends AnyVal {
     
     inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     

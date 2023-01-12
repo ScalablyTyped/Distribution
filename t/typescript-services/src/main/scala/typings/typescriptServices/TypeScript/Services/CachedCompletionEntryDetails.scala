@@ -26,7 +26,8 @@ object CachedCompletionEntryDetails {
     __obj.asInstanceOf[CachedCompletionEntryDetails]
   }
   
-  extension [Self <: CachedCompletionEntryDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CachedCompletionEntryDetails] (val x: Self) extends AnyVal {
     
     inline def setIsResolved(value: () => Boolean): Self = StObject.set(x, "isResolved", js.Any.fromFunction0(value))
   }

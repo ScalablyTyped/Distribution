@@ -239,7 +239,8 @@ object anon {
       __obj.asInstanceOf[Css]
     }
     
-    extension [Self <: Css](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Css] (val x: Self) extends AnyVal {
       
       inline def set$css(value: String): Self = StObject.set(x, "$css", value.asInstanceOf[js.Any])
       
@@ -571,7 +572,8 @@ object anon {
       __obj.asInstanceOf[RequiredPickHoststcsts]
     }
     
-    extension [Self <: RequiredPickHoststcsts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequiredPickHoststcsts] (val x: Self) extends AnyVal {
       
       inline def setStc(value: (/* namespace */ String, /* stateMapping */ js.UndefOr[StateMap | Null]) => String): Self = StObject.set(x, "stc", js.Any.fromFunction2(value))
       
@@ -628,7 +630,8 @@ object anon {
       __obj.asInstanceOf[RequiredPickHoststcstsStc]
     }
     
-    extension [Self <: RequiredPickHoststcstsStc](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequiredPickHoststcstsStc] (val x: Self) extends AnyVal {
       
       inline def setStc(
         value: (/* namespace */ String, /* stateMapping */ js.UndefOr[typings.stylableRuntime.esmTypesMod.StateMap | Null]) => String

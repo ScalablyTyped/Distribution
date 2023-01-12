@@ -77,7 +77,8 @@ object jsonldMod {
       __obj.asInstanceOf[ContextDefinition]
     }
     
-    extension [Self <: ContextDefinition](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContextDefinition] (val x: Self) extends AnyVal {
       
       inline def `set@base`(value: String): Self = StObject.set(x, "@base", value.asInstanceOf[js.Any])
       
@@ -160,7 +161,8 @@ object jsonldMod {
       __obj.asInstanceOf[GraphObject]
     }
     
-    extension [Self <: GraphObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GraphObject] (val x: Self) extends AnyVal {
       
       inline def `set@context`(value: OrArray[Null | String | ContextDefinition]): Self = StObject.set(x, "@context", value.asInstanceOf[js.Any])
       
@@ -341,7 +343,8 @@ object jsonldMod {
       __obj.asInstanceOf[Keyword]
     }
     
-    extension [Self <: Keyword](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Keyword] (val x: Self) extends AnyVal {
       
       inline def `set@base`(value: String): Self = StObject.set(x, "@base", value.asInstanceOf[js.Any])
       
@@ -437,7 +440,8 @@ object jsonldMod {
       __obj.asInstanceOf[ListObject]
     }
     
-    extension [Self <: ListObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListObject] (val x: Self) extends AnyVal {
       
       inline def `set@index`(value: String): Self = StObject.set(x, "@index", value.asInstanceOf[js.Any])
       
@@ -487,7 +491,8 @@ object jsonldMod {
       __obj.asInstanceOf[NodeObject]
     }
     
-    extension [Self <: NodeObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NodeObject] (val x: Self) extends AnyVal {
       
       inline def `set@context`(value: OrArray[Null | String | ContextDefinition]): Self = StObject.set(x, "@context", value.asInstanceOf[js.Any])
       
@@ -557,7 +562,8 @@ object jsonldMod {
       __obj.asInstanceOf[SetObject]
     }
     
-    extension [Self <: SetObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SetObject] (val x: Self) extends AnyVal {
       
       inline def `set@index`(value: String): Self = StObject.set(x, "@index", value.asInstanceOf[js.Any])
       

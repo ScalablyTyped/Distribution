@@ -64,7 +64,8 @@ object RestoreTableFromClusterSnapshotMessage {
     __obj.asInstanceOf[RestoreTableFromClusterSnapshotMessage]
   }
   
-  extension [Self <: RestoreTableFromClusterSnapshotMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RestoreTableFromClusterSnapshotMessage] (val x: Self) extends AnyVal {
     
     inline def setClusterIdentifier(value: String): Self = StObject.set(x, "ClusterIdentifier", value.asInstanceOf[js.Any])
     

@@ -1228,7 +1228,8 @@ object sapUiWebcMainTreeMod {
       __obj.asInstanceOf[TreeSettings]
     }
     
-    extension [Self <: TreeSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TreeSettings] (val x: Self) extends AnyVal {
       
       inline def setFooterText(value: String | PropertyBindingInfo): Self = StObject.set(x, "footerText", value.asInstanceOf[js.Any])
       

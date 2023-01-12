@@ -19,7 +19,8 @@ object AdditionalDocumentation {
     __obj.asInstanceOf[AdditionalDocumentation]
   }
   
-  extension [Self <: AdditionalDocumentation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AdditionalDocumentation] (val x: Self) extends AnyVal {
     
     inline def setAdditionalDocumentation(value: String): Self = StObject.set(x, "additionalDocumentation", value.asInstanceOf[js.Any])
     

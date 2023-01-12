@@ -20,7 +20,8 @@ object OnStateChangeEvent {
     __obj.asInstanceOf[OnStateChangeEvent]
   }
   
-  extension [Self <: OnStateChangeEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnStateChangeEvent] (val x: Self) extends AnyVal {
     
     inline def setData(value: PlayerState): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
   }

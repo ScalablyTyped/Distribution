@@ -23,7 +23,8 @@ object Subnet {
     __obj.asInstanceOf[Subnet]
   }
   
-  extension [Self <: Subnet](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Subnet] (val x: Self) extends AnyVal {
     
     inline def setSubnetAvailabilityZone(value: String): Self = StObject.set(x, "SubnetAvailabilityZone", value.asInstanceOf[js.Any])
     

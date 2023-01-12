@@ -32,7 +32,8 @@ object ImperativeMethods {
     __obj.asInstanceOf[ImperativeMethods]
   }
   
-  extension [Self <: ImperativeMethods](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImperativeMethods] (val x: Self) extends AnyVal {
     
     inline def setBlur(value: () => Unit): Self = StObject.set(x, "blur", js.Any.fromFunction0(value))
     

@@ -18,7 +18,8 @@ object CreateVirtualRouterOutput {
     __obj.asInstanceOf[CreateVirtualRouterOutput]
   }
   
-  extension [Self <: CreateVirtualRouterOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateVirtualRouterOutput] (val x: Self) extends AnyVal {
     
     inline def setVirtualRouter(value: VirtualRouterData): Self = StObject.set(x, "virtualRouter", value.asInstanceOf[js.Any])
   }

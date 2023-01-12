@@ -50,7 +50,8 @@ object XPreparedBatchExecution {
     __obj.asInstanceOf[XPreparedBatchExecution]
   }
   
-  extension [Self <: XPreparedBatchExecution](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XPreparedBatchExecution] (val x: Self) extends AnyVal {
     
     inline def setAddBatch(value: () => Unit): Self = StObject.set(x, "addBatch", js.Any.fromFunction0(value))
     

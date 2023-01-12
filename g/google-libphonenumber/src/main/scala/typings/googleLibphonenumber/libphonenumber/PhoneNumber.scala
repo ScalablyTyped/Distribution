@@ -186,7 +186,8 @@ object PhoneNumber {
          with CountryCodeSource
   }
   
-  extension [Self <: PhoneNumber](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PhoneNumber] (val x: Self) extends AnyVal {
     
     inline def setClearCountryCode(value: () => Unit): Self = StObject.set(x, "clearCountryCode", js.Any.fromFunction0(value))
     

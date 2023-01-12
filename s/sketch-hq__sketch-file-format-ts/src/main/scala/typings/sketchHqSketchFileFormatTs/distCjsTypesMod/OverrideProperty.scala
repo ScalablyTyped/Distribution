@@ -22,7 +22,8 @@ object OverrideProperty {
     __obj.asInstanceOf[OverrideProperty]
   }
   
-  extension [Self <: OverrideProperty](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OverrideProperty] (val x: Self) extends AnyVal {
     
     inline def setCanOverride(value: Boolean): Self = StObject.set(x, "canOverride", value.asInstanceOf[js.Any])
     

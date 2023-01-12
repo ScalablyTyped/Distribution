@@ -23,7 +23,8 @@ object ManifestBaseDeveloperType {
     __obj.asInstanceOf[ManifestBaseDeveloperType]
   }
   
-  extension [Self <: ManifestBaseDeveloperType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ManifestBaseDeveloperType] (val x: Self) extends AnyVal {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

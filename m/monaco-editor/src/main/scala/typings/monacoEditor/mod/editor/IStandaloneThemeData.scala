@@ -23,7 +23,8 @@ object IStandaloneThemeData {
     __obj.asInstanceOf[IStandaloneThemeData]
   }
   
-  extension [Self <: IStandaloneThemeData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IStandaloneThemeData] (val x: Self) extends AnyVal {
     
     inline def setBase(value: BuiltinTheme): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
     

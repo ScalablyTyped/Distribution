@@ -24,7 +24,8 @@ object MachineSchema {
     __obj.asInstanceOf[MachineSchema[TContext, TEvent, TServiceMap]]
   }
   
-  extension [Self <: MachineSchema[?, ?, ?], TContext, TEvent /* <: EventObject */, TServiceMap /* <: ServiceMap */](x: Self & (MachineSchema[TContext, TEvent, TServiceMap])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MachineSchema[?, ?, ?], TContext, TEvent /* <: EventObject */, TServiceMap /* <: ServiceMap */] (val x: Self & (MachineSchema[TContext, TEvent, TServiceMap])) extends AnyVal {
     
     inline def setActions(value: Dictkey): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     

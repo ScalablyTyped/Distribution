@@ -17,7 +17,8 @@ object AnimatedKeyboardInfo {
     __obj.asInstanceOf[AnimatedKeyboardInfo]
   }
   
-  extension [Self <: AnimatedKeyboardInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnimatedKeyboardInfo] (val x: Self) extends AnyVal {
     
     inline def setHeight(value: SharedValue[Double]): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     

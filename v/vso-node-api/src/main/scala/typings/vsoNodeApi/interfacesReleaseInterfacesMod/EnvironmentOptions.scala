@@ -38,7 +38,8 @@ object EnvironmentOptions {
     __obj.asInstanceOf[EnvironmentOptions]
   }
   
-  extension [Self <: EnvironmentOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnvironmentOptions] (val x: Self) extends AnyVal {
     
     inline def setAutoLinkWorkItems(value: Boolean): Self = StObject.set(x, "autoLinkWorkItems", value.asInstanceOf[js.Any])
     

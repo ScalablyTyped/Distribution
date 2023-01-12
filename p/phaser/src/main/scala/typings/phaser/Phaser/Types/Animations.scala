@@ -80,7 +80,8 @@ object Animations {
       __obj.asInstanceOf[Animation]
     }
     
-    extension [Self <: Animation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Animation] (val x: Self) extends AnyVal {
       
       inline def setDefaultTextureKey(value: String): Self = StObject.set(x, "defaultTextureKey", value.asInstanceOf[js.Any])
       
@@ -167,7 +168,8 @@ object Animations {
       __obj.asInstanceOf[AnimationFrame]
     }
     
-    extension [Self <: AnimationFrame](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AnimationFrame] (val x: Self) extends AnyVal {
       
       inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
@@ -231,7 +233,8 @@ object Animations {
       __obj.asInstanceOf[GenerateFrameNames]
     }
     
-    extension [Self <: GenerateFrameNames](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GenerateFrameNames] (val x: Self) extends AnyVal {
       
       inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
@@ -301,7 +304,8 @@ object Animations {
       __obj.asInstanceOf[GenerateFrameNumbers]
     }
     
-    extension [Self <: GenerateFrameNumbers](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GenerateFrameNumbers] (val x: Self) extends AnyVal {
       
       inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
@@ -412,7 +416,8 @@ object Animations {
       __obj.asInstanceOf[JSONAnimation]
     }
     
-    extension [Self <: JSONAnimation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JSONAnimation] (val x: Self) extends AnyVal {
       
       inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
       
@@ -466,7 +471,8 @@ object Animations {
       __obj.asInstanceOf[JSONAnimationFrame]
     }
     
-    extension [Self <: JSONAnimationFrame](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JSONAnimationFrame] (val x: Self) extends AnyVal {
       
       inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
@@ -495,7 +501,8 @@ object Animations {
       __obj.asInstanceOf[JSONAnimations]
     }
     
-    extension [Self <: JSONAnimations](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JSONAnimations] (val x: Self) extends AnyVal {
       
       inline def setAnims(value: js.Array[JSONAnimation]): Self = StObject.set(x, "anims", value.asInstanceOf[js.Any])
       
@@ -569,7 +576,8 @@ object Animations {
       __obj.asInstanceOf[PlayAnimationConfig]
     }
     
-    extension [Self <: PlayAnimationConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PlayAnimationConfig] (val x: Self) extends AnyVal {
       
       inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
       

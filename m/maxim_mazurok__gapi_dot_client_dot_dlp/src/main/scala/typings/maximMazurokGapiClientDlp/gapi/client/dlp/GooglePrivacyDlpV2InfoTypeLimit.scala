@@ -22,7 +22,8 @@ object GooglePrivacyDlpV2InfoTypeLimit {
     __obj.asInstanceOf[GooglePrivacyDlpV2InfoTypeLimit]
   }
   
-  extension [Self <: GooglePrivacyDlpV2InfoTypeLimit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GooglePrivacyDlpV2InfoTypeLimit] (val x: Self) extends AnyVal {
     
     inline def setInfoType(value: GooglePrivacyDlpV2InfoType): Self = StObject.set(x, "infoType", value.asInstanceOf[js.Any])
     

@@ -255,7 +255,8 @@ object distLayersNormalizationMod {
       __obj.asInstanceOf[BatchNormalizationLayerArgs]
     }
     
-    extension [Self <: BatchNormalizationLayerArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BatchNormalizationLayerArgs] (val x: Self) extends AnyVal {
       
       inline def setAxis(value: Double): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
       
@@ -368,7 +369,8 @@ object distLayersNormalizationMod {
       __obj.asInstanceOf[LayerNormalizationLayerArgs]
     }
     
-    extension [Self <: LayerNormalizationLayerArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LayerNormalizationLayerArgs] (val x: Self) extends AnyVal {
       
       inline def setAxis(value: Double | js.Array[Double]): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
       

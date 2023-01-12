@@ -38,7 +38,8 @@ object HTMLMSCSSKeyframeRule {
     __obj.asInstanceOf[HTMLMSCSSKeyframeRule]
   }
   
-  extension [Self <: HTMLMSCSSKeyframeRule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HTMLMSCSSKeyframeRule] (val x: Self) extends AnyVal {
     
     inline def setCssText(value: String): Self = StObject.set(x, "cssText", value.asInstanceOf[js.Any])
     

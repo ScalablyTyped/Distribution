@@ -74,7 +74,8 @@ object JobStatistics {
     __obj.asInstanceOf[JobStatistics]
   }
   
-  extension [Self <: JobStatistics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JobStatistics] (val x: Self) extends AnyVal {
     
     inline def setCompletionRatio(value: Double): Self = StObject.set(x, "completionRatio", value.asInstanceOf[js.Any])
     

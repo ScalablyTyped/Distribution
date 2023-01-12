@@ -17,7 +17,8 @@ object VoiceCommandConfirmationResult {
     __obj.asInstanceOf[VoiceCommandConfirmationResult]
   }
   
-  extension [Self <: VoiceCommandConfirmationResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VoiceCommandConfirmationResult] (val x: Self) extends AnyVal {
     
     inline def setConfirmed(value: Boolean): Self = StObject.set(x, "confirmed", value.asInstanceOf[js.Any])
   }

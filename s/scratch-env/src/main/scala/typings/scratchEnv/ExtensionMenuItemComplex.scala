@@ -20,7 +20,8 @@ object ExtensionMenuItemComplex {
     __obj.asInstanceOf[ExtensionMenuItemComplex]
   }
   
-  extension [Self <: ExtensionMenuItemComplex](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExtensionMenuItemComplex] (val x: Self) extends AnyVal {
     
     inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     

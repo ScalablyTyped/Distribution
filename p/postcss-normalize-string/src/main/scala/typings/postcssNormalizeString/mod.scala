@@ -39,7 +39,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setPreferredQuote(value: double | single): Self = StObject.set(x, "preferredQuote", value.asInstanceOf[js.Any])
       
@@ -62,7 +63,8 @@ object mod {
       __obj.asInstanceOf[StringAst]
     }
     
-    extension [Self <: StringAst](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StringAst] (val x: Self) extends AnyVal {
       
       inline def setNodes(value: js.Array[StringAstNode]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
       
@@ -88,7 +90,8 @@ object mod {
       __obj.asInstanceOf[StringAstNode]
     }
     
-    extension [Self <: StringAstNode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StringAstNode] (val x: Self) extends AnyVal {
       
       inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       

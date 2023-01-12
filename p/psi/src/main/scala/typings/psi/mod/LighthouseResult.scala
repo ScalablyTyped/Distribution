@@ -57,7 +57,8 @@ object LighthouseResult {
     __obj.asInstanceOf[LighthouseResult]
   }
   
-  extension [Self <: LighthouseResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LighthouseResult] (val x: Self) extends AnyVal {
     
     inline def setAudits(value: StringDictionary[Audit]): Self = StObject.set(x, "audits", value.asInstanceOf[js.Any])
     

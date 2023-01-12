@@ -41,7 +41,8 @@ object AggregatedViewInitOptions {
     __obj.asInstanceOf[AggregatedViewInitOptions]
   }
   
-  extension [Self <: AggregatedViewInitOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AggregatedViewInitOptions] (val x: Self) extends AnyVal {
     
     inline def setCameraValidator(value: Boolean): Self = StObject.set(x, "cameraValidator", value.asInstanceOf[js.Any])
     

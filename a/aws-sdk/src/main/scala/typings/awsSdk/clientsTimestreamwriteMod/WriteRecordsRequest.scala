@@ -33,7 +33,8 @@ object WriteRecordsRequest {
     __obj.asInstanceOf[WriteRecordsRequest]
   }
   
-  extension [Self <: WriteRecordsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WriteRecordsRequest] (val x: Self) extends AnyVal {
     
     inline def setCommonAttributes(value: Record): Self = StObject.set(x, "CommonAttributes", value.asInstanceOf[js.Any])
     

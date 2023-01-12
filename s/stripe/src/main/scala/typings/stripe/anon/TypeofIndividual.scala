@@ -15,7 +15,8 @@ object TypeofIndividual {
     __obj.asInstanceOf[TypeofIndividual]
   }
   
-  extension [Self <: TypeofIndividual](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofIndividual] (val x: Self) extends AnyVal {
     
     inline def setVerification(value: Any): Self = StObject.set(x, "Verification", value.asInstanceOf[js.Any])
   }

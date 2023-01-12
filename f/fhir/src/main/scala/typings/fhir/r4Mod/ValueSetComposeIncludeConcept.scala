@@ -34,7 +34,8 @@ object ValueSetComposeIncludeConcept {
     __obj.asInstanceOf[ValueSetComposeIncludeConcept]
   }
   
-  extension [Self <: ValueSetComposeIncludeConcept](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ValueSetComposeIncludeConcept] (val x: Self) extends AnyVal {
     
     inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     

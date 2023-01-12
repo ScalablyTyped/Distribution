@@ -15,7 +15,8 @@ object ListTasksParams {
     __obj.asInstanceOf[ListTasksParams]
   }
   
-  extension [Self <: ListTasksParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListTasksParams] (val x: Self) extends AnyVal {
     
     inline def setListActiveTasksOnly(value: Boolean): Self = StObject.set(x, "listActiveTasksOnly", value.asInstanceOf[js.Any])
   }

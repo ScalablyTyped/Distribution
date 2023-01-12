@@ -31,7 +31,8 @@ object ViewDefinition {
     __obj.asInstanceOf[ViewDefinition]
   }
   
-  extension [Self <: ViewDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ViewDefinition] (val x: Self) extends AnyVal {
     
     inline def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     

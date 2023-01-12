@@ -56,7 +56,8 @@ object GuardianId {
     __obj.asInstanceOf[GuardianId]
   }
   
-  extension [Self <: GuardianId](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GuardianId] (val x: Self) extends AnyVal {
     
     inline def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
     

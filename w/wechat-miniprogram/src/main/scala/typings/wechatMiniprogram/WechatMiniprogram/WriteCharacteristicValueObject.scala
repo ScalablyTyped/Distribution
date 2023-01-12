@@ -37,7 +37,8 @@ object WriteCharacteristicValueObject {
     __obj.asInstanceOf[WriteCharacteristicValueObject]
   }
   
-  extension [Self <: WriteCharacteristicValueObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WriteCharacteristicValueObject] (val x: Self) extends AnyVal {
     
     inline def setCallbackId(value: Double): Self = StObject.set(x, "callbackId", value.asInstanceOf[js.Any])
     

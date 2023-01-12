@@ -33,7 +33,8 @@ object AbsoluteTimeRange {
     __obj.asInstanceOf[AbsoluteTimeRange]
   }
   
-  extension [Self <: AbsoluteTimeRange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AbsoluteTimeRange] (val x: Self) extends AnyVal {
     
     inline def setEndTime(value: TimestampMilliseconds): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
     

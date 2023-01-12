@@ -28,7 +28,8 @@ object CaptionSelector {
     __obj.asInstanceOf[CaptionSelector]
   }
   
-  extension [Self <: CaptionSelector](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CaptionSelector] (val x: Self) extends AnyVal {
     
     inline def setLanguageCode(value: string): Self = StObject.set(x, "LanguageCode", value.asInstanceOf[js.Any])
     

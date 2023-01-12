@@ -27,7 +27,8 @@ object OpeningHours {
     __obj.asInstanceOf[OpeningHours]
   }
   
-  extension [Self <: OpeningHours](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OpeningHours] (val x: Self) extends AnyVal {
     
     inline def setOpen_now(value: Boolean): Self = StObject.set(x, "open_now", value.asInstanceOf[js.Any])
     

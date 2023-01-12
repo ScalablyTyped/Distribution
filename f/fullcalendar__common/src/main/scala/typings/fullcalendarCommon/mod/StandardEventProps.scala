@@ -45,7 +45,8 @@ object StandardEventProps {
     __obj.asInstanceOf[StandardEventProps]
   }
   
-  extension [Self <: StandardEventProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StandardEventProps] (val x: Self) extends AnyVal {
     
     inline def setDefaultContent(
       value: /* hookProps */ EventContentArg => /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ComponentChildren */ Any

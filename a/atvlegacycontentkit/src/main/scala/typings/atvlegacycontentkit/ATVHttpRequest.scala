@@ -29,7 +29,8 @@ object ATVHttpRequest {
     __obj.asInstanceOf[ATVHttpRequest]
   }
   
-  extension [Self <: ATVHttpRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ATVHttpRequest] (val x: Self) extends AnyVal {
     
     inline def setSetRequestHeader(value: (String, String) => Unit): Self = StObject.set(x, "setRequestHeader", js.Any.fromFunction2(value))
     

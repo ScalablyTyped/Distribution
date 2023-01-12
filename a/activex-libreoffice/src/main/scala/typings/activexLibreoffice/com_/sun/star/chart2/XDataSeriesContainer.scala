@@ -46,7 +46,8 @@ object XDataSeriesContainer {
     __obj.asInstanceOf[XDataSeriesContainer]
   }
   
-  extension [Self <: XDataSeriesContainer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XDataSeriesContainer] (val x: Self) extends AnyVal {
     
     inline def setAddDataSeries(value: XDataSeries => Unit): Self = StObject.set(x, "addDataSeries", js.Any.fromFunction1(value))
     

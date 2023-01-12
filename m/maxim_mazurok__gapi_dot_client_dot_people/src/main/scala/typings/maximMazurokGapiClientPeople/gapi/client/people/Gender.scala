@@ -28,7 +28,8 @@ object Gender {
     __obj.asInstanceOf[Gender]
   }
   
-  extension [Self <: Gender](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Gender] (val x: Self) extends AnyVal {
     
     inline def setAddressMeAs(value: String): Self = StObject.set(x, "addressMeAs", value.asInstanceOf[js.Any])
     

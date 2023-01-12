@@ -47,7 +47,8 @@ object mod {
       __obj.asInstanceOf[TressJob]
     }
     
-    extension [Self <: TressJob](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TressJob] (val x: Self) extends AnyVal {
       
       inline def setCallback(value: TressJobCallback): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
       
@@ -78,7 +79,8 @@ object mod {
       __obj.asInstanceOf[TressJobQueues]
     }
     
-    extension [Self <: TressJobQueues](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TressJobQueues] (val x: Self) extends AnyVal {
       
       inline def setFailed(value: js.Array[TressJobData]): Self = StObject.set(x, "failed", value.asInstanceOf[js.Any])
       

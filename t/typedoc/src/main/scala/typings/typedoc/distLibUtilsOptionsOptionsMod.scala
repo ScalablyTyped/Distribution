@@ -2040,7 +2040,8 @@ object distLibUtilsOptionsOptionsMod {
       __obj.asInstanceOf[OptionsReader]
     }
     
-    extension [Self <: OptionsReader](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OptionsReader] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       

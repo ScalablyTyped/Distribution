@@ -187,7 +187,8 @@ object libSideNavigationSideNavMod {
       __obj.asInstanceOf[SideNavListItemProps]
     }
     
-    extension [Self <: SideNavListItemProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SideNavListItemProps] (val x: Self) extends AnyVal {
       
       inline def setCondensed(value: Boolean): Self = StObject.set(x, "condensed", value.asInstanceOf[js.Any])
       
@@ -266,7 +267,8 @@ object libSideNavigationSideNavMod {
       __obj.asInstanceOf[SideNavListProps]
     }
     
-    extension [Self <: SideNavListProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SideNavListProps] (val x: Self) extends AnyVal {
       
       inline def setCompact(value: Boolean): Self = StObject.set(x, "compact", value.asInstanceOf[js.Any])
       
@@ -333,7 +335,8 @@ object libSideNavigationSideNavMod {
       __obj.asInstanceOf[SideNavProps]
     }
     
-    extension [Self <: SideNavProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SideNavProps] (val x: Self) extends AnyVal {
       
       inline def setCompact(value: Boolean): Self = StObject.set(x, "compact", value.asInstanceOf[js.Any])
       

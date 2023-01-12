@@ -23,7 +23,8 @@ object Typeofinput {
     __obj.asInstanceOf[Typeofinput]
   }
   
-  extension [Self <: Typeofinput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Typeofinput] (val x: Self) extends AnyVal {
     
     inline def setIme(value: Typeofime): Self = StObject.set(x, "ime", value.asInstanceOf[js.Any])
   }

@@ -23,7 +23,8 @@ object PutDeliverabilityDashboardOptionRequest {
     __obj.asInstanceOf[PutDeliverabilityDashboardOptionRequest]
   }
   
-  extension [Self <: PutDeliverabilityDashboardOptionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutDeliverabilityDashboardOptionRequest] (val x: Self) extends AnyVal {
     
     inline def setDashboardEnabled(value: Enabled): Self = StObject.set(x, "DashboardEnabled", value.asInstanceOf[js.Any])
     

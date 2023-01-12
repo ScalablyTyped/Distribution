@@ -35,7 +35,8 @@ object ExecuteBatchDmlRequest {
     __obj.asInstanceOf[ExecuteBatchDmlRequest]
   }
   
-  extension [Self <: ExecuteBatchDmlRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExecuteBatchDmlRequest] (val x: Self) extends AnyVal {
     
     inline def setRequestOptions(value: RequestOptions): Self = StObject.set(x, "requestOptions", value.asInstanceOf[js.Any])
     

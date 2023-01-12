@@ -24,7 +24,8 @@ object FontSizeFontWeightLetterSpacing {
     __obj.asInstanceOf[FontSizeFontWeightLetterSpacing]
   }
   
-  extension [Self <: FontSizeFontWeightLetterSpacing](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FontSizeFontWeightLetterSpacing] (val x: Self) extends AnyVal {
     
     inline def setFontSize(value: `1rem`): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
     

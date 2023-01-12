@@ -36,7 +36,8 @@ object AppConfiguration {
     __obj.asInstanceOf[AppConfiguration]
   }
   
-  extension [Self <: AppConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppConfiguration] (val x: Self) extends AnyVal {
     
     inline def setBuild(value: String): Self = StObject.set(x, "build", value.asInstanceOf[js.Any])
     

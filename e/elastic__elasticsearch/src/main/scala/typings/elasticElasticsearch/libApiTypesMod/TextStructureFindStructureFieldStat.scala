@@ -31,7 +31,8 @@ object TextStructureFindStructureFieldStat {
     __obj.asInstanceOf[TextStructureFindStructureFieldStat]
   }
   
-  extension [Self <: TextStructureFindStructureFieldStat](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextStructureFindStructureFieldStat] (val x: Self) extends AnyVal {
     
     inline def setCardinality(value: integer): Self = StObject.set(x, "cardinality", value.asInstanceOf[js.Any])
     

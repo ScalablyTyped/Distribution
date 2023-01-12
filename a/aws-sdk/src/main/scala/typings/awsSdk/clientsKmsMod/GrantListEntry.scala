@@ -58,7 +58,8 @@ object GrantListEntry {
     __obj.asInstanceOf[GrantListEntry]
   }
   
-  extension [Self <: GrantListEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GrantListEntry] (val x: Self) extends AnyVal {
     
     inline def setConstraints(value: GrantConstraints): Self = StObject.set(x, "Constraints", value.asInstanceOf[js.Any])
     

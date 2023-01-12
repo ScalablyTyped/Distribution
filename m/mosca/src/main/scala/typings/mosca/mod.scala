@@ -202,7 +202,8 @@ object mod {
         __obj.asInstanceOf[Persistence]
       }
       
-      extension [Self <: Persistence](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Persistence] (val x: Self) extends AnyVal {
         
         inline def setWire(value: Server => Unit): Self = StObject.set(x, "wire", js.Any.fromFunction1(value))
       }
@@ -226,7 +227,8 @@ object mod {
       __obj.asInstanceOf[Message]
     }
     
-    extension [Self <: Message](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Message] (val x: Self) extends AnyVal {
       
       inline def setPayload(value: Any): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
       
@@ -257,7 +259,8 @@ object mod {
       __obj.asInstanceOf[Packet]
     }
     
-    extension [Self <: Packet](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Packet] (val x: Self) extends AnyVal {
       
       inline def setMessageId(value: String): Self = StObject.set(x, "messageId", value.asInstanceOf[js.Any])
       
@@ -306,7 +309,8 @@ object mod {
       __obj.asInstanceOf[ServerOptions]
     }
     
-    extension [Self <: ServerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ServerOptions] (val x: Self) extends AnyVal {
       
       inline def setAllowNonSecure(value: Boolean): Self = StObject.set(x, "allowNonSecure", value.asInstanceOf[js.Any])
       

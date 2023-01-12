@@ -15,7 +15,8 @@ object CRLDistributionPointsJson {
     __obj.asInstanceOf[CRLDistributionPointsJson]
   }
   
-  extension [Self <: CRLDistributionPointsJson](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CRLDistributionPointsJson] (val x: Self) extends AnyVal {
     
     inline def setDistributionPoints(value: js.Array[DistributionPointJson]): Self = StObject.set(x, "distributionPoints", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object MutationActionSetStateParameter {
     __obj.asInstanceOf[MutationActionSetStateParameter]
   }
   
-  extension [Self <: MutationActionSetStateParameter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MutationActionSetStateParameter] (val x: Self) extends AnyVal {
     
     inline def setComponentName(value: String): Self = StObject.set(x, "componentName", value.asInstanceOf[js.Any])
     

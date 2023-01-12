@@ -21,7 +21,8 @@ object FetchTime {
     __obj.asInstanceOf[FetchTime]
   }
   
-  extension [Self <: FetchTime](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FetchTime] (val x: Self) extends AnyVal {
     
     inline def setFetchTime(value: Double): Self = StObject.set(x, "fetchTime", value.asInstanceOf[js.Any])
     

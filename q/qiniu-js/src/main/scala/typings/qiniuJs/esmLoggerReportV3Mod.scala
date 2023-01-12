@@ -53,7 +53,8 @@ object esmLoggerReportV3Mod {
       __obj.asInstanceOf[V3LogInfo]
     }
     
-    extension [Self <: V3LogInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: V3LogInfo] (val x: Self) extends AnyVal {
       
       inline def setBytesSent(value: Double): Self = StObject.set(x, "bytesSent", value.asInstanceOf[js.Any])
       

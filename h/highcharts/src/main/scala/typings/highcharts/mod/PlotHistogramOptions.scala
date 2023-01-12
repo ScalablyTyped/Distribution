@@ -880,7 +880,8 @@ object PlotHistogramOptions {
     __obj.asInstanceOf[PlotHistogramOptions]
   }
   
-  extension [Self <: PlotHistogramOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotHistogramOptions] (val x: Self) extends AnyVal {
     
     inline def setAccessibility(value: SeriesAccessibilityOptionsObject): Self = StObject.set(x, "accessibility", value.asInstanceOf[js.Any])
     

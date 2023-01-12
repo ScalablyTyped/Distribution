@@ -33,7 +33,8 @@ object FeatureRolloutPolicy {
     __obj.asInstanceOf[FeatureRolloutPolicy]
   }
   
-  extension [Self <: FeatureRolloutPolicy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FeatureRolloutPolicy] (val x: Self) extends AnyVal {
     
     inline def setAppliesTo(value: NullableOption[js.Array[DirectoryObject]]): Self = StObject.set(x, "appliesTo", value.asInstanceOf[js.Any])
     

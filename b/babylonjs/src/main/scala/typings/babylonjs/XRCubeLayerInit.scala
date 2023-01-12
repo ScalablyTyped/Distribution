@@ -18,7 +18,8 @@ object XRCubeLayerInit {
     __obj.asInstanceOf[XRCubeLayerInit]
   }
   
-  extension [Self <: XRCubeLayerInit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XRCubeLayerInit] (val x: Self) extends AnyVal {
     
     inline def setOrientation(value: DOMPointReadOnly): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
     

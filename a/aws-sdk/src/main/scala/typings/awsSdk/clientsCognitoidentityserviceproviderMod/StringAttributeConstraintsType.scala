@@ -23,7 +23,8 @@ object StringAttributeConstraintsType {
     __obj.asInstanceOf[StringAttributeConstraintsType]
   }
   
-  extension [Self <: StringAttributeConstraintsType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StringAttributeConstraintsType] (val x: Self) extends AnyVal {
     
     inline def setMaxLength(value: StringType): Self = StObject.set(x, "MaxLength", value.asInstanceOf[js.Any])
     

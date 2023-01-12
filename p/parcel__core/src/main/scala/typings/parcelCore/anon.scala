@@ -35,7 +35,8 @@ object anon {
       __obj.asInstanceOf[PartialFarmOptions]
     }
     
-    extension [Self <: PartialFarmOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialFarmOptions] (val x: Self) extends AnyVal {
       
       inline def setBackend(value: BackendType): Self = StObject.set(x, "backend", value.asInstanceOf[js.Any])
       

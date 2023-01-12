@@ -16,7 +16,8 @@ object GoogleCloudAssuredworkloadsV1beta1WorkloadCJISSettings {
     __obj.asInstanceOf[GoogleCloudAssuredworkloadsV1beta1WorkloadCJISSettings]
   }
   
-  extension [Self <: GoogleCloudAssuredworkloadsV1beta1WorkloadCJISSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudAssuredworkloadsV1beta1WorkloadCJISSettings] (val x: Self) extends AnyVal {
     
     inline def setKmsSettings(value: GoogleCloudAssuredworkloadsV1beta1WorkloadKMSSettings): Self = StObject.set(x, "kmsSettings", value.asInstanceOf[js.Any])
     

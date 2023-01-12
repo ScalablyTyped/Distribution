@@ -23,7 +23,8 @@ object TechnicalCueSegment {
     __obj.asInstanceOf[TechnicalCueSegment]
   }
   
-  extension [Self <: TechnicalCueSegment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TechnicalCueSegment] (val x: Self) extends AnyVal {
     
     inline def setConfidence(value: SegmentConfidence): Self = StObject.set(x, "Confidence", value.asInstanceOf[js.Any])
     

@@ -240,7 +240,8 @@ object Utility {
       __obj.asInstanceOf[FormOpenParameters]
     }
     
-    extension [Self <: FormOpenParameters](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FormOpenParameters] (val x: Self) extends AnyVal {
       
       inline def setCmdbar(value: CmdBarDisplay): Self = StObject.set(x, "cmdbar", value.asInstanceOf[js.Any])
       
@@ -284,7 +285,8 @@ object Utility {
       __obj.asInstanceOf[WindowOptions]
     }
     
-    extension [Self <: WindowOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WindowOptions] (val x: Self) extends AnyVal {
       
       inline def setOpenInNewWindow(value: Boolean): Self = StObject.set(x, "openInNewWindow", value.asInstanceOf[js.Any])
     }

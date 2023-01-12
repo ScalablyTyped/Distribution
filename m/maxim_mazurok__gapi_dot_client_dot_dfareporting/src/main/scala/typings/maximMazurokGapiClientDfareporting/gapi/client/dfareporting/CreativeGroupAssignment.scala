@@ -19,7 +19,8 @@ object CreativeGroupAssignment {
     __obj.asInstanceOf[CreativeGroupAssignment]
   }
   
-  extension [Self <: CreativeGroupAssignment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreativeGroupAssignment] (val x: Self) extends AnyVal {
     
     inline def setCreativeGroupId(value: String): Self = StObject.set(x, "creativeGroupId", value.asInstanceOf[js.Any])
     

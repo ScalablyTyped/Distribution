@@ -33,7 +33,8 @@ object ListMailboxPermissionsRequest {
     __obj.asInstanceOf[ListMailboxPermissionsRequest]
   }
   
-  extension [Self <: ListMailboxPermissionsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListMailboxPermissionsRequest] (val x: Self) extends AnyVal {
     
     inline def setEntityId(value: WorkMailIdentifier): Self = StObject.set(x, "EntityId", value.asInstanceOf[js.Any])
     

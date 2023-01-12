@@ -68,7 +68,8 @@ object UpdateResolverRequest {
     __obj.asInstanceOf[UpdateResolverRequest]
   }
   
-  extension [Self <: UpdateResolverRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateResolverRequest] (val x: Self) extends AnyVal {
     
     inline def setApiId(value: String): Self = StObject.set(x, "apiId", value.asInstanceOf[js.Any])
     

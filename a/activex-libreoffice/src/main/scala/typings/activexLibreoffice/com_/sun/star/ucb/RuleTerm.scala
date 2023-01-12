@@ -43,7 +43,8 @@ object RuleTerm {
     __obj.asInstanceOf[RuleTerm]
   }
   
-  extension [Self <: RuleTerm](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RuleTerm] (val x: Self) extends AnyVal {
     
     inline def setCaseSensitive(value: Boolean): Self = StObject.set(x, "CaseSensitive", value.asInstanceOf[js.Any])
     

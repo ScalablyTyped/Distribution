@@ -48,7 +48,8 @@ object ExplanationOfBenefitBenefitBalanceFinancial {
     __obj.asInstanceOf[ExplanationOfBenefitBenefitBalanceFinancial]
   }
   
-  extension [Self <: ExplanationOfBenefitBenefitBalanceFinancial](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExplanationOfBenefitBenefitBalanceFinancial] (val x: Self) extends AnyVal {
     
     inline def setAllowedMoney(value: Money): Self = StObject.set(x, "allowedMoney", value.asInstanceOf[js.Any])
     

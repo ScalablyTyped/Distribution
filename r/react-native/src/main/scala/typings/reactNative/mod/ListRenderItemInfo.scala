@@ -20,7 +20,8 @@ object ListRenderItemInfo {
     __obj.asInstanceOf[ListRenderItemInfo[ItemT]]
   }
   
-  extension [Self <: ListRenderItemInfo[?], ItemT](x: Self & ListRenderItemInfo[ItemT]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListRenderItemInfo[?], ItemT] (val x: Self & ListRenderItemInfo[ItemT]) extends AnyVal {
     
     inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     

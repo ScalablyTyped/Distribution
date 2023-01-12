@@ -476,7 +476,8 @@ object sapUiWebcMainCardMod {
       __obj.asInstanceOf[CardSettings]
     }
     
-    extension [Self <: CardSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CardSettings] (val x: Self) extends AnyVal {
       
       inline def setAccessibleName(value: String | PropertyBindingInfo): Self = StObject.set(x, "accessibleName", value.asInstanceOf[js.Any])
       

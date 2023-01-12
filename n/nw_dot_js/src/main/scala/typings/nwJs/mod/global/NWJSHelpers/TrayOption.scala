@@ -47,7 +47,8 @@ object TrayOption {
     __obj.asInstanceOf[TrayOption]
   }
   
-  extension [Self <: TrayOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TrayOption] (val x: Self) extends AnyVal {
     
     inline def setAlticon(value: String): Self = StObject.set(x, "alticon", value.asInstanceOf[js.Any])
     

@@ -44,7 +44,8 @@ object IBaseCellMetadata {
     __obj.asInstanceOf[IBaseCellMetadata]
   }
   
-  extension [Self <: IBaseCellMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IBaseCellMetadata] (val x: Self) extends AnyVal {
     
     inline def setJupyter(value: PartialIBaseCellJupyterMe): Self = StObject.set(x, "jupyter", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object NotDraggingStyle {
     __obj.asInstanceOf[NotDraggingStyle]
   }
   
-  extension [Self <: NotDraggingStyle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NotDraggingStyle] (val x: Self) extends AnyVal {
     
     inline def setTransform(value: String): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
     

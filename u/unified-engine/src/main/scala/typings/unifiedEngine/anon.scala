@@ -30,7 +30,8 @@ object anon {
       __obj.asInstanceOf[Create[Value]]
     }
     
-    extension [Self <: Create[?], Value /* <: /* import warning: importer.ImportType#apply Failed type conversion: {  filePath :string | undefined} */ js.Any */](x: Self & Create[Value]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Create[?], Value /* <: /* import warning: importer.ImportType#apply Failed type conversion: {  filePath :string | undefined} */ js.Any */] (val x: Self & Create[Value]) extends AnyVal {
       
       inline def setCreate(value: (Buffer, String) => js.UndefOr[js.Promise[js.UndefOr[Value]] | Value]): Self = StObject.set(x, "create", js.Any.fromFunction2(value))
       
@@ -61,7 +62,8 @@ object anon {
       __obj.asInstanceOf[FilePath]
     }
     
-    extension [Self <: FilePath](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FilePath] (val x: Self) extends AnyVal {
       
       inline def setFilePath(value: String): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
       
@@ -80,7 +82,8 @@ object anon {
       __obj.asInstanceOf[PluginId]
     }
     
-    extension [Self <: PluginId](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PluginId] (val x: Self) extends AnyVal {
       
       inline def setPluginId(value: String): Self = StObject.set(x, "pluginId", value.asInstanceOf[js.Any])
       

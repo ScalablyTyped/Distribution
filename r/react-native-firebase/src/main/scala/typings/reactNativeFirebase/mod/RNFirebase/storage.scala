@@ -134,7 +134,8 @@ object storage {
       __obj.asInstanceOf[DownloadTaskSnapshot]
     }
     
-    extension [Self <: DownloadTaskSnapshot](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DownloadTaskSnapshot] (val x: Self) extends AnyVal {
       
       inline def setBytesTransferred(value: Double): Self = StObject.set(x, "bytesTransferred", value.asInstanceOf[js.Any])
       
@@ -184,7 +185,8 @@ object storage {
       __obj.asInstanceOf[FullMetadata]
     }
     
-    extension [Self <: FullMetadata](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FullMetadata] (val x: Self) extends AnyVal {
       
       inline def setBucket(value: String): Self = StObject.set(x, "bucket", value.asInstanceOf[js.Any])
       
@@ -294,7 +296,8 @@ object storage {
       __obj.asInstanceOf[SettableMetadata]
     }
     
-    extension [Self <: SettableMetadata](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SettableMetadata] (val x: Self) extends AnyVal {
       
       inline def setCacheControl(value: String): Self = StObject.set(x, "cacheControl", value.asInstanceOf[js.Any])
       
@@ -347,7 +350,8 @@ object storage {
       __obj.asInstanceOf[StorageStatics]
     }
     
-    extension [Self <: StorageStatics](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StorageStatics] (val x: Self) extends AnyVal {
       
       inline def setNative(value: CACHESDIRECTORYPATH): Self = StObject.set(x, "Native", value.asInstanceOf[js.Any])
       
@@ -416,7 +420,8 @@ object storage {
       __obj.asInstanceOf[UploadTaskSnapshot]
     }
     
-    extension [Self <: UploadTaskSnapshot](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UploadTaskSnapshot] (val x: Self) extends AnyVal {
       
       inline def setBytesTransferred(value: Double): Self = StObject.set(x, "bytesTransferred", value.asInstanceOf[js.Any])
       

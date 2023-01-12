@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[DomainGroupId]
     }
     
-    extension [Self <: DomainGroupId](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DomainGroupId] (val x: Self) extends AnyVal {
       
       inline def setDomainGroupId(value: String): Self = StObject.set(x, "domainGroupId", value.asInstanceOf[js.Any])
       

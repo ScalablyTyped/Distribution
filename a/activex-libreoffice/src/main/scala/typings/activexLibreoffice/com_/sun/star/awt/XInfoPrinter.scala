@@ -49,7 +49,8 @@ object XInfoPrinter {
     __obj.asInstanceOf[XInfoPrinter]
   }
   
-  extension [Self <: XInfoPrinter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XInfoPrinter] (val x: Self) extends AnyVal {
     
     inline def setCreateDevice(value: () => XDevice): Self = StObject.set(x, "createDevice", js.Any.fromFunction0(value))
   }

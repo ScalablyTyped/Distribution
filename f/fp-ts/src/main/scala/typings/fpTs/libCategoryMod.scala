@@ -27,7 +27,8 @@ object libCategoryMod {
       __obj.asInstanceOf[Category[F]]
     }
     
-    extension [Self <: Category[?], F](x: Self & Category[F]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Category[?], F] (val x: Self & Category[F]) extends AnyVal {
       
       inline def setId(value: () => Any): Self = StObject.set(x, "id", js.Any.fromFunction0(value))
     }
@@ -50,7 +51,8 @@ object libCategoryMod {
       __obj.asInstanceOf[Category2[F]]
     }
     
-    extension [Self <: Category2[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */](x: Self & Category2[F]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Category2[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */] (val x: Self & Category2[F]) extends AnyVal {
       
       inline def setId(value: () => Any): Self = StObject.set(x, "id", js.Any.fromFunction0(value))
     }
@@ -73,7 +75,8 @@ object libCategoryMod {
       __obj.asInstanceOf[Category3[F]]
     }
     
-    extension [Self <: Category3[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */](x: Self & Category3[F]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Category3[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */] (val x: Self & Category3[F]) extends AnyVal {
       
       inline def setId(value: () => Any): Self = StObject.set(x, "id", js.Any.fromFunction0(value))
     }
@@ -96,7 +99,8 @@ object libCategoryMod {
       __obj.asInstanceOf[Category4[F]]
     }
     
-    extension [Self <: Category4[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS4 */ Any */](x: Self & Category4[F]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Category4[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS4 */ Any */] (val x: Self & Category4[F]) extends AnyVal {
       
       inline def setId(value: () => Any): Self = StObject.set(x, "id", js.Any.fromFunction0(value))
     }

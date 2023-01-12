@@ -31,7 +31,8 @@ object anon {
       __obj.asInstanceOf[Attachments]
     }
     
-    extension [Self <: Attachments](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Attachments] (val x: Self) extends AnyVal {
       
       inline def setAttachments(value: js.Array[MimeType]): Self = StObject.set(x, "attachments", value.asInstanceOf[js.Any])
       
@@ -96,7 +97,8 @@ object anon {
       __obj.asInstanceOf[MimeType]
     }
     
-    extension [Self <: MimeType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MimeType] (val x: Self) extends AnyVal {
       
       inline def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
       

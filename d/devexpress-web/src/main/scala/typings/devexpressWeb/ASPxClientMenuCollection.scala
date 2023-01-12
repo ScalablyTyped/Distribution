@@ -42,7 +42,8 @@ object ASPxClientMenuCollection {
     __obj.asInstanceOf[ASPxClientMenuCollection]
   }
   
-  extension [Self <: ASPxClientMenuCollection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientMenuCollection] (val x: Self) extends AnyVal {
     
     inline def setHideAll(value: () => Unit): Self = StObject.set(x, "HideAll", js.Any.fromFunction0(value))
     

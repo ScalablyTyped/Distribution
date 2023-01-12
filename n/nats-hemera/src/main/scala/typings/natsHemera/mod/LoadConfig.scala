@@ -21,7 +21,8 @@ object LoadConfig {
     __obj.asInstanceOf[LoadConfig]
   }
   
-  extension [Self <: LoadConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LoadConfig] (val x: Self) extends AnyVal {
     
     inline def setCheckPolicy(value: Boolean): Self = StObject.set(x, "checkPolicy", value.asInstanceOf[js.Any])
     

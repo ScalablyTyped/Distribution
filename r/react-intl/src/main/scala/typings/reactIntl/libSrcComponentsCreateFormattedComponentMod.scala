@@ -76,7 +76,8 @@ object libSrcComponentsCreateFormattedComponentMod {
       __obj.asInstanceOf[Formatter]
     }
     
-    extension [Self <: Formatter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Formatter] (val x: Self) extends AnyVal {
       
       inline def setFormatDate(value: FormatDateOptions): Self = StObject.set(x, "formatDate", value.asInstanceOf[js.Any])
       

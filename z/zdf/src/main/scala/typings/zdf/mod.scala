@@ -62,7 +62,8 @@ object mod {
       __obj.asInstanceOf[ZdfInfo]
     }
     
-    extension [Self <: ZdfInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ZdfInfo] (val x: Self) extends AnyVal {
       
       inline def setFiles(value: js.Array[Quality]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
       
@@ -91,7 +92,8 @@ object mod {
       __obj.asInstanceOf[ZdfInfoMeta]
     }
     
-    extension [Self <: ZdfInfoMeta](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ZdfInfoMeta] (val x: Self) extends AnyVal {
       
       inline def setPreview(value: String): Self = StObject.set(x, "preview", value.asInstanceOf[js.Any])
       
@@ -120,7 +122,8 @@ object mod {
       __obj.asInstanceOf[ZdfProgress]
     }
     
-    extension [Self <: ZdfProgress](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ZdfProgress] (val x: Self) extends AnyVal {
       
       inline def setAll(value: Double): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
       

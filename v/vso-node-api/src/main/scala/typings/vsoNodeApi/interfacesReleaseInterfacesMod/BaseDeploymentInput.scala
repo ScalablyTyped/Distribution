@@ -33,7 +33,8 @@ object BaseDeploymentInput {
     __obj.asInstanceOf[BaseDeploymentInput]
   }
   
-  extension [Self <: BaseDeploymentInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BaseDeploymentInput] (val x: Self) extends AnyVal {
     
     inline def setCondition(value: String): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
     

@@ -46,7 +46,8 @@ object XBroadcaster {
     __obj.asInstanceOf[XBroadcaster]
   }
   
-  extension [Self <: XBroadcaster](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XBroadcaster] (val x: Self) extends AnyVal {
     
     inline def setLockBroadcasts(value: () => Unit): Self = StObject.set(x, "lockBroadcasts", js.Any.fromFunction0(value))
     

@@ -29,7 +29,8 @@ object CalendarSpec {
     __obj.asInstanceOf[CalendarSpec]
   }
   
-  extension [Self <: CalendarSpec](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CalendarSpec] (val x: Self) extends AnyVal {
     
     inline def setLastDay(value: CalendarSpecVal): Self = StObject.set(x, "lastDay", value.asInstanceOf[js.Any])
     

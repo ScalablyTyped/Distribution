@@ -27,7 +27,8 @@ object ForceNBody {
     __obj.asInstanceOf[ForceNBody]
   }
   
-  extension [Self <: ForceNBody](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ForceNBody] (val x: Self) extends AnyVal {
     
     inline def setDistanceMax(value: Double | SignalRef): Self = StObject.set(x, "distanceMax", value.asInstanceOf[js.Any])
     

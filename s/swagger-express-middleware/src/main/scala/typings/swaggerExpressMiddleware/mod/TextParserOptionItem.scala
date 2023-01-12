@@ -71,7 +71,8 @@ object TextParserOptionItem {
     __obj.asInstanceOf[TextParserOptionItem]
   }
   
-  extension [Self <: TextParserOptionItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextParserOptionItem] (val x: Self) extends AnyVal {
     
     inline def setDefaultCharset(value: String): Self = StObject.set(x, "defaultCharset", value.asInstanceOf[js.Any])
     

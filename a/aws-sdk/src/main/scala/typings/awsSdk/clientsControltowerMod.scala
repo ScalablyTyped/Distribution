@@ -36,7 +36,8 @@ object clientsControltowerMod {
       __obj.asInstanceOf[ClientApiVersions]
     }
     
-    extension [Self <: ClientApiVersions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClientApiVersions] (val x: Self) extends AnyVal {
       
       inline def setApiVersion(value: apiVersion): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
       
@@ -85,7 +86,8 @@ object clientsControltowerMod {
       __obj.asInstanceOf[ControlOperation]
     }
     
-    extension [Self <: ControlOperation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ControlOperation] (val x: Self) extends AnyVal {
       
       inline def setEndTime(value: js.Date): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
       
@@ -206,7 +208,8 @@ object clientsControltowerMod {
       __obj.asInstanceOf[DisableControlInput]
     }
     
-    extension [Self <: DisableControlInput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DisableControlInput] (val x: Self) extends AnyVal {
       
       inline def setControlIdentifier(value: ControlIdentifier): Self = StObject.set(x, "controlIdentifier", value.asInstanceOf[js.Any])
       
@@ -228,7 +231,8 @@ object clientsControltowerMod {
       __obj.asInstanceOf[DisableControlOutput]
     }
     
-    extension [Self <: DisableControlOutput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DisableControlOutput] (val x: Self) extends AnyVal {
       
       inline def setOperationIdentifier(value: OperationIdentifier): Self = StObject.set(x, "operationIdentifier", value.asInstanceOf[js.Any])
     }
@@ -253,7 +257,8 @@ object clientsControltowerMod {
       __obj.asInstanceOf[EnableControlInput]
     }
     
-    extension [Self <: EnableControlInput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EnableControlInput] (val x: Self) extends AnyVal {
       
       inline def setControlIdentifier(value: ControlIdentifier): Self = StObject.set(x, "controlIdentifier", value.asInstanceOf[js.Any])
       
@@ -275,7 +280,8 @@ object clientsControltowerMod {
       __obj.asInstanceOf[EnableControlOutput]
     }
     
-    extension [Self <: EnableControlOutput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EnableControlOutput] (val x: Self) extends AnyVal {
       
       inline def setOperationIdentifier(value: OperationIdentifier): Self = StObject.set(x, "operationIdentifier", value.asInstanceOf[js.Any])
     }
@@ -295,7 +301,8 @@ object clientsControltowerMod {
       __obj.asInstanceOf[EnabledControlSummary]
     }
     
-    extension [Self <: EnabledControlSummary](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EnabledControlSummary] (val x: Self) extends AnyVal {
       
       inline def setControlIdentifier(value: ControlIdentifier): Self = StObject.set(x, "controlIdentifier", value.asInstanceOf[js.Any])
       
@@ -319,7 +326,8 @@ object clientsControltowerMod {
       __obj.asInstanceOf[GetControlOperationInput]
     }
     
-    extension [Self <: GetControlOperationInput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetControlOperationInput] (val x: Self) extends AnyVal {
       
       inline def setOperationIdentifier(value: OperationIdentifier): Self = StObject.set(x, "operationIdentifier", value.asInstanceOf[js.Any])
     }
@@ -339,7 +347,8 @@ object clientsControltowerMod {
       __obj.asInstanceOf[GetControlOperationOutput]
     }
     
-    extension [Self <: GetControlOperationOutput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetControlOperationOutput] (val x: Self) extends AnyVal {
       
       inline def setControlOperation(value: ControlOperation): Self = StObject.set(x, "controlOperation", value.asInstanceOf[js.Any])
     }
@@ -369,7 +378,8 @@ object clientsControltowerMod {
       __obj.asInstanceOf[ListEnabledControlsInput]
     }
     
-    extension [Self <: ListEnabledControlsInput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListEnabledControlsInput] (val x: Self) extends AnyVal {
       
       inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
       
@@ -402,7 +412,8 @@ object clientsControltowerMod {
       __obj.asInstanceOf[ListEnabledControlsOutput]
     }
     
-    extension [Self <: ListEnabledControlsOutput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListEnabledControlsOutput] (val x: Self) extends AnyVal {
       
       inline def setEnabledControls(value: EnabledControls): Self = StObject.set(x, "enabledControls", value.asInstanceOf[js.Any])
       

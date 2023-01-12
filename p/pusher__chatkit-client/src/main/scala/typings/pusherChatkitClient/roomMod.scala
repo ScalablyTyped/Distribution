@@ -27,7 +27,8 @@ object roomMod {
       __obj.asInstanceOf[PusherReadCursor]
     }
     
-    extension [Self <: PusherReadCursor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PusherReadCursor] (val x: Self) extends AnyVal {
       
       inline def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       
@@ -80,7 +81,8 @@ object roomMod {
       __obj.asInstanceOf[PusherRoom]
     }
     
-    extension [Self <: PusherRoom](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PusherRoom] (val x: Self) extends AnyVal {
       
       inline def setCreatedAt(value: String): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
       

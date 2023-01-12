@@ -131,7 +131,8 @@ object examplesJsmShadersBokehShader2Mod {
       __obj.asInstanceOf[BokehShaderUniforms]
     }
     
-    extension [Self <: BokehShaderUniforms](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BokehShaderUniforms] (val x: Self) extends AnyVal {
       
       inline def setBias(value: IUniform[Any]): Self = StObject.set(x, "bias", value.asInstanceOf[js.Any])
       

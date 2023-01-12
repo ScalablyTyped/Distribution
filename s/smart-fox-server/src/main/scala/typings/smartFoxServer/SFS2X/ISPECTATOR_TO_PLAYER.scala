@@ -21,7 +21,8 @@ object ISPECTATOR_TO_PLAYER {
     __obj.asInstanceOf[ISPECTATOR_TO_PLAYER]
   }
   
-  extension [Self <: ISPECTATOR_TO_PLAYER](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISPECTATOR_TO_PLAYER] (val x: Self) extends AnyVal {
     
     inline def setPlayerId(value: Double): Self = StObject.set(x, "playerId", value.asInstanceOf[js.Any])
     

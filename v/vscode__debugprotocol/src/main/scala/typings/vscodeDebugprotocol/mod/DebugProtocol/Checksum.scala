@@ -20,7 +20,8 @@ object Checksum {
     __obj.asInstanceOf[Checksum]
   }
   
-  extension [Self <: Checksum](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Checksum] (val x: Self) extends AnyVal {
     
     inline def setAlgorithm(value: ChecksumAlgorithm): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
     

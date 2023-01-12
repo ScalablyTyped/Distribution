@@ -39,7 +39,8 @@ object srcCommandsRunCliMod {
       __obj.asInstanceOf[RunCommandArgs]
     }
     
-    extension [Self <: RunCommandArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RunCommandArgs] (val x: Self) extends AnyVal {
       
       inline def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     }

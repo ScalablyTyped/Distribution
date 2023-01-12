@@ -68,7 +68,8 @@ object Asciimath2jaxPreprocessor {
     __obj.asInstanceOf[Asciimath2jaxPreprocessor]
   }
   
-  extension [Self <: Asciimath2jaxPreprocessor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Asciimath2jaxPreprocessor] (val x: Self) extends AnyVal {
     
     inline def setDelimiters(value: Any): Self = StObject.set(x, "delimiters", value.asInstanceOf[js.Any])
     

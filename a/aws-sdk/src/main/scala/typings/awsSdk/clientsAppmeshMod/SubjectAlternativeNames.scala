@@ -19,7 +19,8 @@ object SubjectAlternativeNames {
     __obj.asInstanceOf[SubjectAlternativeNames]
   }
   
-  extension [Self <: SubjectAlternativeNames](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubjectAlternativeNames] (val x: Self) extends AnyVal {
     
     inline def setMatch(value: SubjectAlternativeNameMatchers): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
   }

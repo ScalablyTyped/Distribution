@@ -43,7 +43,8 @@ object distNodeEsmSrcApiAuthenticationEmailAndPasswordMod {
       __obj.asInstanceOf[EmailSignInRequest]
     }
     
-    extension [Self <: EmailSignInRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EmailSignInRequest] (val x: Self) extends AnyVal {
       
       inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
       
@@ -84,7 +85,8 @@ object distNodeEsmSrcApiAuthenticationEmailAndPasswordMod {
       __obj.asInstanceOf[GetOobCodeRequest]
     }
     
-    extension [Self <: GetOobCodeRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetOobCodeRequest] (val x: Self) extends AnyVal {
       
       inline def setAndroidInstallApp(value: Boolean): Self = StObject.set(x, "androidInstallApp", value.asInstanceOf[js.Any])
       
@@ -143,7 +145,8 @@ object distNodeEsmSrcApiAuthenticationEmailAndPasswordMod {
       __obj.asInstanceOf[GetOobCodeResponse]
     }
     
-    extension [Self <: GetOobCodeResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetOobCodeResponse] (val x: Self) extends AnyVal {
       
       inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     }
@@ -167,7 +170,8 @@ object distNodeEsmSrcApiAuthenticationEmailAndPasswordMod {
       __obj.asInstanceOf[PasswordResetRequest]
     }
     
-    extension [Self <: PasswordResetRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PasswordResetRequest] (val x: Self) extends AnyVal {
       
       inline def setCaptchaResp(value: String): Self = StObject.set(x, "captchaResp", value.asInstanceOf[js.Any])
       
@@ -198,7 +202,8 @@ object distNodeEsmSrcApiAuthenticationEmailAndPasswordMod {
       __obj.asInstanceOf[SignInWithPasswordRequest]
     }
     
-    extension [Self <: SignInWithPasswordRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SignInWithPasswordRequest] (val x: Self) extends AnyVal {
       
       inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
       
@@ -230,7 +235,8 @@ object distNodeEsmSrcApiAuthenticationEmailAndPasswordMod {
       __obj.asInstanceOf[SignInWithPasswordResponse]
     }
     
-    extension [Self <: SignInWithPasswordResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SignInWithPasswordResponse] (val x: Self) extends AnyVal {
       
       inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
       
@@ -255,7 +261,8 @@ object distNodeEsmSrcApiAuthenticationEmailAndPasswordMod {
       __obj.asInstanceOf[VerifyAndChangeEmailRequest]
     }
     
-    extension [Self <: VerifyAndChangeEmailRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VerifyAndChangeEmailRequest] (val x: Self) extends AnyVal {
       
       inline def setIdToken(value: IdToken): Self = StObject.set(x, "idToken", value.asInstanceOf[js.Any])
       
@@ -282,7 +289,8 @@ object distNodeEsmSrcApiAuthenticationEmailAndPasswordMod {
       __obj.asInstanceOf[VerifyEmailRequest]
     }
     
-    extension [Self <: VerifyEmailRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VerifyEmailRequest] (val x: Self) extends AnyVal {
       
       inline def setIdToken(value: IdToken): Self = StObject.set(x, "idToken", value.asInstanceOf[js.Any])
       

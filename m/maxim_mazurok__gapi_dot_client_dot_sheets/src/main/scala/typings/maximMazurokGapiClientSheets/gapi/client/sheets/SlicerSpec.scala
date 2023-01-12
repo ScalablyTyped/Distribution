@@ -40,7 +40,8 @@ object SlicerSpec {
     __obj.asInstanceOf[SlicerSpec]
   }
   
-  extension [Self <: SlicerSpec](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SlicerSpec] (val x: Self) extends AnyVal {
     
     inline def setApplyToPivotTables(value: Boolean): Self = StObject.set(x, "applyToPivotTables", value.asInstanceOf[js.Any])
     

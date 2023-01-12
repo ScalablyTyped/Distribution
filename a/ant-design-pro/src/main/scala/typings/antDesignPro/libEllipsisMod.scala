@@ -43,7 +43,8 @@ object libEllipsisMod {
       __obj.asInstanceOf[EllipsisProps]
     }
     
-    extension [Self <: EllipsisProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EllipsisProps] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -85,7 +86,8 @@ object libEllipsisMod {
       __obj.asInstanceOf[EllipsisTooltipProps]
     }
     
-    extension [Self <: EllipsisTooltipProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EllipsisTooltipProps] (val x: Self) extends AnyVal {
       
       inline def setOverlayStyle(value: Unit): Self = StObject.set(x, "overlayStyle", value.asInstanceOf[js.Any])
       

@@ -32,7 +32,8 @@ object ProgressOptions {
     __obj.asInstanceOf[ProgressOptions]
   }
   
-  extension [Self <: ProgressOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProgressOptions] (val x: Self) extends AnyVal {
     
     inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     

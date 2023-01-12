@@ -35,7 +35,8 @@ object ZoneList {
     __obj.asInstanceOf[ZoneList]
   }
   
-  extension [Self <: ZoneList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ZoneList] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

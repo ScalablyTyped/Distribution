@@ -113,7 +113,8 @@ object buildSrcAuthStscredentialsMod {
       __obj.asInstanceOf[StsCredentialsOptions]
     }
     
-    extension [Self <: StsCredentialsOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StsCredentialsOptions] (val x: Self) extends AnyVal {
       
       inline def setActingParty(value: ActorToken): Self = StObject.set(x, "actingParty", value.asInstanceOf[js.Any])
       
@@ -168,7 +169,8 @@ object buildSrcAuthStscredentialsMod {
       __obj.asInstanceOf[StsSuccessfulResponse]
     }
     
-    extension [Self <: StsSuccessfulResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StsSuccessfulResponse] (val x: Self) extends AnyVal {
       
       inline def setAccess_token(value: String): Self = StObject.set(x, "access_token", value.asInstanceOf[js.Any])
       

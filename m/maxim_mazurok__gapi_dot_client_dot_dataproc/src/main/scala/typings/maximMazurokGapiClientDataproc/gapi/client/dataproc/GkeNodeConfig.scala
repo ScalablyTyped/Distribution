@@ -46,7 +46,8 @@ object GkeNodeConfig {
     __obj.asInstanceOf[GkeNodeConfig]
   }
   
-  extension [Self <: GkeNodeConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GkeNodeConfig] (val x: Self) extends AnyVal {
     
     inline def setAccelerators(value: js.Array[GkeNodePoolAcceleratorConfig]): Self = StObject.set(x, "accelerators", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object DataSourceAssetCallback {
     __obj.asInstanceOf[DataSourceAssetCallback]
   }
   
-  extension [Self <: DataSourceAssetCallback](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataSourceAssetCallback] (val x: Self) extends AnyVal {
     
     inline def setGetRowData(value: (/* dataBlob */ Any, /* sectionID */ Double | String, /* rowID */ Double | String) => Any): Self = StObject.set(x, "getRowData", js.Any.fromFunction3(value))
     

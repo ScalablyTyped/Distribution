@@ -24,7 +24,8 @@ object ComponentWillLoad {
     __obj.asInstanceOf[ComponentWillLoad]
   }
   
-  extension [Self <: ComponentWillLoad](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ComponentWillLoad] (val x: Self) extends AnyVal {
     
     inline def setComponentWillLoad(value: () => js.Promise[Unit] | Unit): Self = StObject.set(x, "componentWillLoad", js.Any.fromFunction0(value))
   }

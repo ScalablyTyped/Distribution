@@ -26,7 +26,8 @@ object RequestGameRange {
     __obj.asInstanceOf[RequestGameRange]
   }
   
-  extension [Self <: RequestGameRange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RequestGameRange] (val x: Self) extends AnyVal {
     
     inline def setIndex(value: PageTuple): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     

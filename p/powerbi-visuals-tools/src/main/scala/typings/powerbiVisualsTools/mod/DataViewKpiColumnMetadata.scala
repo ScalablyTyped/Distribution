@@ -19,7 +19,8 @@ object DataViewKpiColumnMetadata {
     __obj.asInstanceOf[DataViewKpiColumnMetadata]
   }
   
-  extension [Self <: DataViewKpiColumnMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataViewKpiColumnMetadata] (val x: Self) extends AnyVal {
     
     inline def setGraphic(value: String): Self = StObject.set(x, "graphic", value.asInstanceOf[js.Any])
     

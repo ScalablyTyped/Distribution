@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "text-mask-addons"
-version := "3.8-dt-20211202Z-337261"
+version := "3.8-dt-20211202Z-b19397"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

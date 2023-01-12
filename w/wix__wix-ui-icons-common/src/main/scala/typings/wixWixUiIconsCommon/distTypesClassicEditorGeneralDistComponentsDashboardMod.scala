@@ -27,7 +27,8 @@ object distTypesClassicEditorGeneralDistComponentsDashboardMod extends Shortcut 
       __obj.asInstanceOf[DashboardProps]
     }
     
-    extension [Self <: DashboardProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DashboardProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

@@ -20,7 +20,8 @@ object UsersEvents {
     __obj.asInstanceOf[UsersEvents]
   }
   
-  extension [Self <: UsersEvents](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UsersEvents] (val x: Self) extends AnyVal {
     
     inline def setUserSubscribed(value: User => Unit): Self = StObject.set(x, "userSubscribed", js.Any.fromFunction1(value))
     

@@ -23,7 +23,8 @@ object ResponseHeadersPolicyAccessControlExposeHeaders {
     __obj.asInstanceOf[ResponseHeadersPolicyAccessControlExposeHeaders]
   }
   
-  extension [Self <: ResponseHeadersPolicyAccessControlExposeHeaders](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResponseHeadersPolicyAccessControlExposeHeaders] (val x: Self) extends AnyVal {
     
     inline def setItems(value: AccessControlExposeHeadersList): Self = StObject.set(x, "Items", value.asInstanceOf[js.Any])
     

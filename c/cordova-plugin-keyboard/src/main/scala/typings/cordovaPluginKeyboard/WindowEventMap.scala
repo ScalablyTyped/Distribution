@@ -45,7 +45,8 @@ object WindowEventMap {
     __obj.asInstanceOf[WindowEventMap]
   }
   
-  extension [Self <: WindowEventMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WindowEventMap] (val x: Self) extends AnyVal {
     
     inline def setKeyboardDidHide(value: Event): Self = StObject.set(x, "keyboardDidHide", value.asInstanceOf[js.Any])
     

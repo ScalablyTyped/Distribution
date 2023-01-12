@@ -133,7 +133,8 @@ object libUtilitiesKeytipsKeytipManagerMod {
       __obj.asInstanceOf[IUniqueKeytip]
     }
     
-    extension [Self <: IUniqueKeytip](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IUniqueKeytip] (val x: Self) extends AnyVal {
       
       inline def setKeytip(value: IKeytipProps): Self = StObject.set(x, "keytip", value.asInstanceOf[js.Any])
       

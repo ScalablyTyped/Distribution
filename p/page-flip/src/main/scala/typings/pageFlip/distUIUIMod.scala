@@ -92,7 +92,8 @@ object distUIUIMod {
       __obj.asInstanceOf[SwipeData]
     }
     
-    extension [Self <: SwipeData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SwipeData] (val x: Self) extends AnyVal {
       
       inline def setPoint(value: Point): Self = StObject.set(x, "point", value.asInstanceOf[js.Any])
       

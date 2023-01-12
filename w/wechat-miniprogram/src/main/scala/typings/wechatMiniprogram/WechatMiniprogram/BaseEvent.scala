@@ -35,7 +35,8 @@ object BaseEvent {
     __obj.asInstanceOf[BaseEvent[Mark, CurrentTargetDataset, TargetDataset]]
   }
   
-  extension [Self <: BaseEvent[?, ?, ?], Mark /* <: IAnyObject */, CurrentTargetDataset /* <: IAnyObject */, TargetDataset /* <: IAnyObject */](x: Self & (BaseEvent[Mark, CurrentTargetDataset, TargetDataset])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BaseEvent[?, ?, ?], Mark /* <: IAnyObject */, CurrentTargetDataset /* <: IAnyObject */, TargetDataset /* <: IAnyObject */] (val x: Self & (BaseEvent[Mark, CurrentTargetDataset, TargetDataset])) extends AnyVal {
     
     inline def setCurrentTarget(value: Target[CurrentTargetDataset]): Self = StObject.set(x, "currentTarget", value.asInstanceOf[js.Any])
     

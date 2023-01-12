@@ -58,7 +58,8 @@ object OnBeforeRequestListenerDetails {
     __obj.asInstanceOf[OnBeforeRequestListenerDetails]
   }
   
-  extension [Self <: OnBeforeRequestListenerDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnBeforeRequestListenerDetails] (val x: Self) extends AnyVal {
     
     inline def setFrame(value: WebFrameMain_): Self = StObject.set(x, "frame", value.asInstanceOf[js.Any])
     

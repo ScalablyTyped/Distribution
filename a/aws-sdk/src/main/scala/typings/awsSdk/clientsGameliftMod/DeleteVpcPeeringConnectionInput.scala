@@ -23,7 +23,8 @@ object DeleteVpcPeeringConnectionInput {
     __obj.asInstanceOf[DeleteVpcPeeringConnectionInput]
   }
   
-  extension [Self <: DeleteVpcPeeringConnectionInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteVpcPeeringConnectionInput] (val x: Self) extends AnyVal {
     
     inline def setFleetId(value: FleetId): Self = StObject.set(x, "FleetId", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object WorkItemColor {
     __obj.asInstanceOf[WorkItemColor]
   }
   
-  extension [Self <: WorkItemColor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkItemColor] (val x: Self) extends AnyVal {
     
     inline def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     

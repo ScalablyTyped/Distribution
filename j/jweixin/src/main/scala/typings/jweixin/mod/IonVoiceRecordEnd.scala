@@ -19,7 +19,8 @@ object IonVoiceRecordEnd {
     __obj.asInstanceOf[IonVoiceRecordEnd]
   }
   
-  extension [Self <: IonVoiceRecordEnd](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IonVoiceRecordEnd] (val x: Self) extends AnyVal {
     
     inline def setComplete(value: Resouce => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
   }

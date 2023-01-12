@@ -25,7 +25,8 @@ object ConditionEvidence {
     __obj.asInstanceOf[ConditionEvidence]
   }
   
-  extension [Self <: ConditionEvidence](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConditionEvidence] (val x: Self) extends AnyVal {
     
     inline def setCode(value: js.Array[CodeableConcept]): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     

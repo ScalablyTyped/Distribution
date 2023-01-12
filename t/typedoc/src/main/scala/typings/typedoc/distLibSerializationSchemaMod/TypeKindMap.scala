@@ -76,7 +76,8 @@ object TypeKindMap {
     __obj.asInstanceOf[TypeKindMap]
   }
   
-  extension [Self <: TypeKindMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeKindMap] (val x: Self) extends AnyVal {
     
     inline def setArray(value: ArrayType): Self = StObject.set(x, "array", value.asInstanceOf[js.Any])
     

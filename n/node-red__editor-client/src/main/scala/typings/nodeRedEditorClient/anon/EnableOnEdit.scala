@@ -26,7 +26,8 @@ object EnableOnEdit {
     __obj.asInstanceOf[EnableOnEdit]
   }
   
-  extension [Self <: EnableOnEdit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnableOnEdit] (val x: Self) extends AnyVal {
     
     inline def setEnableOnEdit(value: Boolean): Self = StObject.set(x, "enableOnEdit", value.asInstanceOf[js.Any])
     

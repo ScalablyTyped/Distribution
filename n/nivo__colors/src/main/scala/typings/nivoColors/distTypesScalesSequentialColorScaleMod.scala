@@ -47,7 +47,8 @@ object distTypesScalesSequentialColorScaleMod {
       __obj.asInstanceOf[SequentialColorScaleBaseConfig]
     }
     
-    extension [Self <: SequentialColorScaleBaseConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SequentialColorScaleBaseConfig] (val x: Self) extends AnyVal {
       
       inline def setMaxValue(value: Double): Self = StObject.set(x, "maxValue", value.asInstanceOf[js.Any])
       
@@ -76,7 +77,8 @@ object distTypesScalesSequentialColorScaleMod {
       __obj.asInstanceOf[SequentialColorScaleColorsConfig]
     }
     
-    extension [Self <: SequentialColorScaleColorsConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SequentialColorScaleColorsConfig] (val x: Self) extends AnyVal {
       
       inline def setColors(value: js.Tuple2[String, String]): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
     }
@@ -126,7 +128,8 @@ object distTypesScalesSequentialColorScaleMod {
       __obj.asInstanceOf[SequentialColorScaleInterpolatorConfig]
     }
     
-    extension [Self <: SequentialColorScaleInterpolatorConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SequentialColorScaleInterpolatorConfig] (val x: Self) extends AnyVal {
       
       inline def setInterpolator(value: Double => String): Self = StObject.set(x, "interpolator", js.Any.fromFunction1(value))
     }
@@ -147,7 +150,8 @@ object distTypesScalesSequentialColorScaleMod {
       __obj.asInstanceOf[SequentialColorScaleSchemeConfig]
     }
     
-    extension [Self <: SequentialColorScaleSchemeConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SequentialColorScaleSchemeConfig] (val x: Self) extends AnyVal {
       
       inline def setScheme(value: ColorInterpolatorId): Self = StObject.set(x, "scheme", value.asInstanceOf[js.Any])
       
@@ -170,7 +174,8 @@ object distTypesScalesSequentialColorScaleMod {
       __obj.asInstanceOf[SequentialColorScaleValues]
     }
     
-    extension [Self <: SequentialColorScaleValues](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SequentialColorScaleValues] (val x: Self) extends AnyVal {
       
       inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
       

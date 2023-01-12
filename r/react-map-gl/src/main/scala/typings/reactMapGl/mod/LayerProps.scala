@@ -45,7 +45,8 @@ object LayerProps {
     __obj.asInstanceOf[LayerProps]
   }
   
-  extension [Self <: LayerProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LayerProps] (val x: Self) extends AnyVal {
     
     inline def setBeforeId(value: String): Self = StObject.set(x, "beforeId", value.asInstanceOf[js.Any])
     

@@ -30,7 +30,8 @@ object NielsenWatermarksSettings {
     __obj.asInstanceOf[NielsenWatermarksSettings]
   }
   
-  extension [Self <: NielsenWatermarksSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NielsenWatermarksSettings] (val x: Self) extends AnyVal {
     
     inline def setNielsenCbetSettings(value: NielsenCBET): Self = StObject.set(x, "NielsenCbetSettings", value.asInstanceOf[js.Any])
     

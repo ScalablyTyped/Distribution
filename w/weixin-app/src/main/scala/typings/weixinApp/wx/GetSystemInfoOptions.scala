@@ -19,7 +19,8 @@ object GetSystemInfoOptions {
     __obj.asInstanceOf[GetSystemInfoOptions]
   }
   
-  extension [Self <: GetSystemInfoOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetSystemInfoOptions] (val x: Self) extends AnyVal {
     
     inline def setSuccess(value: SystemInfo => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
   }

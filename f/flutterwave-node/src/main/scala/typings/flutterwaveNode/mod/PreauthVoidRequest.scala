@@ -21,7 +21,8 @@ object PreauthVoidRequest {
     __obj.asInstanceOf[PreauthVoidRequest]
   }
   
-  extension [Self <: PreauthVoidRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PreauthVoidRequest] (val x: Self) extends AnyVal {
     
     inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     

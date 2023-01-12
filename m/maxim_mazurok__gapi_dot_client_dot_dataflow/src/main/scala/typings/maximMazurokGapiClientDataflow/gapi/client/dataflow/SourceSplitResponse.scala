@@ -28,7 +28,8 @@ object SourceSplitResponse {
     __obj.asInstanceOf[SourceSplitResponse]
   }
   
-  extension [Self <: SourceSplitResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SourceSplitResponse] (val x: Self) extends AnyVal {
     
     inline def setBundles(value: js.Array[DerivedSource]): Self = StObject.set(x, "bundles", value.asInstanceOf[js.Any])
     

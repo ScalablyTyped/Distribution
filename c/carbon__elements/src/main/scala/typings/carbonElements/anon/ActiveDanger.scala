@@ -588,7 +588,8 @@ object ActiveDanger {
     __obj.asInstanceOf[ActiveDanger]
   }
   
-  extension [Self <: ActiveDanger](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ActiveDanger] (val x: Self) extends AnyVal {
     
     inline def setActive01(value: Numbersignc6c6c6): Self = StObject.set(x, "active01", value.asInstanceOf[js.Any])
     

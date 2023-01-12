@@ -15,7 +15,8 @@ object GetApnsSandboxChannelResponse {
     __obj.asInstanceOf[GetApnsSandboxChannelResponse]
   }
   
-  extension [Self <: GetApnsSandboxChannelResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetApnsSandboxChannelResponse] (val x: Self) extends AnyVal {
     
     inline def setAPNSSandboxChannelResponse(value: APNSSandboxChannelResponse): Self = StObject.set(x, "APNSSandboxChannelResponse", value.asInstanceOf[js.Any])
   }

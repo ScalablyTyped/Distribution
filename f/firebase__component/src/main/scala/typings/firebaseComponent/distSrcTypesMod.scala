@@ -46,7 +46,8 @@ object distSrcTypesMod {
       __obj.asInstanceOf[InstanceFactoryOptions]
     }
     
-    extension [Self <: InstanceFactoryOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InstanceFactoryOptions] (val x: Self) extends AnyVal {
       
       inline def setInstanceIdentifier(value: String): Self = StObject.set(x, "instanceIdentifier", value.asInstanceOf[js.Any])
       

@@ -39,7 +39,8 @@ object distSrcDrawRowMod {
       __obj.asInstanceOf[DrawRowConfig]
     }
     
-    extension [Self <: DrawRowConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DrawRowConfig] (val x: Self) extends AnyVal {
       
       inline def setBorder(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BodyBorderConfig */ Any

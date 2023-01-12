@@ -18,7 +18,8 @@ object AwsSecretsManagerSecretRotationRules {
     __obj.asInstanceOf[AwsSecretsManagerSecretRotationRules]
   }
   
-  extension [Self <: AwsSecretsManagerSecretRotationRules](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsSecretsManagerSecretRotationRules] (val x: Self) extends AnyVal {
     
     inline def setAutomaticallyAfterDays(value: Integer): Self = StObject.set(x, "AutomaticallyAfterDays", value.asInstanceOf[js.Any])
     

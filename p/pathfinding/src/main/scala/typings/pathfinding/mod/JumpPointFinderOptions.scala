@@ -17,7 +17,8 @@ object JumpPointFinderOptions {
     __obj.asInstanceOf[JumpPointFinderOptions]
   }
   
-  extension [Self <: JumpPointFinderOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JumpPointFinderOptions] (val x: Self) extends AnyVal {
     
     inline def setDiagonalMovement(value: DiagonalMovement): Self = StObject.set(x, "diagonalMovement", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object ListOperationsRequest {
     __obj.asInstanceOf[ListOperationsRequest]
   }
   
-  extension [Self <: ListOperationsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListOperationsRequest] (val x: Self) extends AnyVal {
     
     inline def setMarker(value: PageMarker): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object Hdr10Plus {
     __obj.asInstanceOf[Hdr10Plus]
   }
   
-  extension [Self <: Hdr10Plus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Hdr10Plus] (val x: Self) extends AnyVal {
     
     inline def setMasteringMonitorNits(value: integerMin0Max4000): Self = StObject.set(x, "MasteringMonitorNits", value.asInstanceOf[js.Any])
     

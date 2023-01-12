@@ -24,7 +24,8 @@ object PrivateKey {
     __obj.asInstanceOf[PrivateKey]
   }
   
-  extension [Self <: PrivateKey](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PrivateKey] (val x: Self) extends AnyVal {
     
     inline def setHashAlgorithm(value: String): Self = StObject.set(x, "hashAlgorithm", value.asInstanceOf[js.Any])
     

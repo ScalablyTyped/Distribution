@@ -46,7 +46,8 @@ object TransitOptions {
     __obj.asInstanceOf[TransitOptions]
   }
   
-  extension [Self <: TransitOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransitOptions] (val x: Self) extends AnyVal {
     
     inline def setArrivalTime(value: js.Date): Self = StObject.set(x, "arrivalTime", value.asInstanceOf[js.Any])
     

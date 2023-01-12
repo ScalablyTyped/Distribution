@@ -24,7 +24,8 @@ object PluginArgs {
     __obj.asInstanceOf[PluginArgs]
   }
   
-  extension [Self <: PluginArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PluginArgs] (val x: Self) extends AnyVal {
     
     inline def setInstance(
       value: (Ractive[/* ractive.ractive.Ractive<any> */ Any]) | (Static[Ractive[/* ractive.ractive.Ractive<any> */ Any]])

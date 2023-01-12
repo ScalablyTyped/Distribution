@@ -17,7 +17,8 @@ object RtpEndpointOptions {
     __obj.asInstanceOf[RtpEndpointOptions]
   }
   
-  extension [Self <: RtpEndpointOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RtpEndpointOptions] (val x: Self) extends AnyVal {
     
     inline def setCrypto(value: SDES): Self = StObject.set(x, "crypto", value.asInstanceOf[js.Any])
     

@@ -123,7 +123,8 @@ object PartialHeatmapOptions {
     __obj.asInstanceOf[PartialHeatmapOptions]
   }
   
-  extension [Self <: PartialHeatmapOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialHeatmapOptions] (val x: Self) extends AnyVal {
     
     inline def setAnimation(value: Animation): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     

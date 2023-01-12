@@ -27,7 +27,8 @@ object InsertOptions {
     __obj.asInstanceOf[InsertOptions]
   }
   
-  extension [Self <: InsertOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InsertOptions] (val x: Self) extends AnyVal {
     
     inline def setConflict(
       value: error | replace | update | (js.Function3[/* id */ String, /* oldDoc */ Any, /* newDoc */ Any, Any])

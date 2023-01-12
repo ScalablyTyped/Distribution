@@ -32,7 +32,8 @@ object libTabContainerMod {
       __obj.asInstanceOf[TabContainerProps]
     }
     
-    extension [Self <: TabContainerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TabContainerProps] (val x: Self) extends AnyVal {
       
       inline def setActiveKey(value: Any): Self = StObject.set(x, "activeKey", value.asInstanceOf[js.Any])
       

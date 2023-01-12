@@ -18,7 +18,8 @@ object SpreadsheetPdfExportEvent {
     __obj.asInstanceOf[SpreadsheetPdfExportEvent]
   }
   
-  extension [Self <: SpreadsheetPdfExportEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpreadsheetPdfExportEvent] (val x: Self) extends AnyVal {
     
     inline def setPromise(value: JQueryPromise[Any]): Self = StObject.set(x, "promise", value.asInstanceOf[js.Any])
     

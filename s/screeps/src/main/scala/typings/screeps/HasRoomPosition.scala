@@ -15,7 +15,8 @@ object HasRoomPosition {
     __obj.asInstanceOf[HasRoomPosition]
   }
   
-  extension [Self <: HasRoomPosition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HasRoomPosition] (val x: Self) extends AnyVal {
     
     inline def setPos(value: RoomPosition): Self = StObject.set(x, "pos", value.asInstanceOf[js.Any])
   }

@@ -27,7 +27,8 @@ object PolylineDrawActionProperties {
     __obj.asInstanceOf[PolylineDrawActionProperties]
   }
   
-  extension [Self <: PolylineDrawActionProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PolylineDrawActionProperties] (val x: Self) extends AnyVal {
     
     inline def setMode(value: hybrid | freehand | click): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     

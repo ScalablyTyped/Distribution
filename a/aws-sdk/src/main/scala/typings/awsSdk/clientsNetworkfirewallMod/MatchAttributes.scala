@@ -43,7 +43,8 @@ object MatchAttributes {
     __obj.asInstanceOf[MatchAttributes]
   }
   
-  extension [Self <: MatchAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MatchAttributes] (val x: Self) extends AnyVal {
     
     inline def setDestinationPorts(value: PortRanges): Self = StObject.set(x, "DestinationPorts", value.asInstanceOf[js.Any])
     

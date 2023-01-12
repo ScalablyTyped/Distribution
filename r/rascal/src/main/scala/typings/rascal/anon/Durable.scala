@@ -15,7 +15,8 @@ object Durable {
     __obj.asInstanceOf[Durable]
   }
   
-  extension [Self <: Durable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Durable] (val x: Self) extends AnyVal {
     
     inline def setDurable(value: Boolean): Self = StObject.set(x, "durable", value.asInstanceOf[js.Any])
   }

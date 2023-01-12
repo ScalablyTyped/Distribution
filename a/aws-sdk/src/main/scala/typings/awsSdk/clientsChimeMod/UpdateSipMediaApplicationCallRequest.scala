@@ -32,7 +32,8 @@ object UpdateSipMediaApplicationCallRequest {
     __obj.asInstanceOf[UpdateSipMediaApplicationCallRequest]
   }
   
-  extension [Self <: UpdateSipMediaApplicationCallRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateSipMediaApplicationCallRequest] (val x: Self) extends AnyVal {
     
     inline def setArguments(value: SMAUpdateCallArgumentsMap): Self = StObject.set(x, "Arguments", value.asInstanceOf[js.Any])
     

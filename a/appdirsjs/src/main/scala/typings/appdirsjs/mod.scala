@@ -29,7 +29,8 @@ object mod {
       __obj.asInstanceOf[Directories]
     }
     
-    extension [Self <: Directories](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Directories] (val x: Self) extends AnyVal {
       
       inline def setCache(value: String): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
       
@@ -56,7 +57,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setAppName(value: String): Self = StObject.set(x, "appName", value.asInstanceOf[js.Any])
       

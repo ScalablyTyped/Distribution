@@ -19,7 +19,8 @@ object DidChangeLanguageFlavorParams {
     __obj.asInstanceOf[DidChangeLanguageFlavorParams]
   }
   
-  extension [Self <: DidChangeLanguageFlavorParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DidChangeLanguageFlavorParams] (val x: Self) extends AnyVal {
     
     inline def setFlavor(value: String): Self = StObject.set(x, "flavor", value.asInstanceOf[js.Any])
     

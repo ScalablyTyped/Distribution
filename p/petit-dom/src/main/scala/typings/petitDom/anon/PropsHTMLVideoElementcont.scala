@@ -814,7 +814,8 @@ object PropsHTMLVideoElementcont {
     __obj.asInstanceOf[PropsHTMLVideoElementcont]
   }
   
-  extension [Self <: PropsHTMLVideoElementcont](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PropsHTMLVideoElementcont] (val x: Self) extends AnyVal {
     
     inline def setATTRIBUTE_NODE(value: Double): Self = StObject.set(x, "ATTRIBUTE_NODE", value.asInstanceOf[js.Any])
     

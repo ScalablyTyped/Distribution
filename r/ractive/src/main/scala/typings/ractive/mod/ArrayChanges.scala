@@ -28,7 +28,8 @@ object ArrayChanges {
     __obj.asInstanceOf[ArrayChanges]
   }
   
-  extension [Self <: ArrayChanges](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ArrayChanges] (val x: Self) extends AnyVal {
     
     inline def setDeleted(value: js.Array[Any]): Self = StObject.set(x, "deleted", value.asInstanceOf[js.Any])
     

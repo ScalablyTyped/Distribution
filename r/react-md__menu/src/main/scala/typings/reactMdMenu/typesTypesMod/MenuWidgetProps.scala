@@ -88,7 +88,8 @@ object MenuWidgetProps {
     __obj.asInstanceOf[MenuWidgetProps]
   }
   
-  extension [Self <: MenuWidgetProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MenuWidgetProps] (val x: Self) extends AnyVal {
     
     inline def setDisableElevation(value: Boolean): Self = StObject.set(x, "disableElevation", value.asInstanceOf[js.Any])
     

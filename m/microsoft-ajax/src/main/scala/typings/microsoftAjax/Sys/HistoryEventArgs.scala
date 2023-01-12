@@ -28,7 +28,8 @@ object HistoryEventArgs {
     __obj.asInstanceOf[HistoryEventArgs]
   }
   
-  extension [Self <: HistoryEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HistoryEventArgs] (val x: Self) extends AnyVal {
     
     inline def setGet_State(value: () => Any): Self = StObject.set(x, "get_State", js.Any.fromFunction0(value))
   }

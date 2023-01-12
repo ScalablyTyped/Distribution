@@ -20,7 +20,8 @@ object PASETOStructured {
     __obj.asInstanceOf[PASETOStructured]
   }
   
-  extension [Self <: PASETOStructured](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PASETOStructured] (val x: Self) extends AnyVal {
     
     inline def setAssertion(value: String | Buffer): Self = StObject.set(x, "assertion", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object HtmlPropertyOptions {
     __obj.asInstanceOf[HtmlPropertyOptions]
   }
   
-  extension [Self <: HtmlPropertyOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HtmlPropertyOptions] (val x: Self) extends AnyVal {
     
     inline def setOperatorOptions(value: HtmlOperatorOptions): Self = StObject.set(x, "operatorOptions", value.asInstanceOf[js.Any])
     

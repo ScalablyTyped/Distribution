@@ -1276,7 +1276,8 @@ object mod {
       __obj.asInstanceOf[ConvertOptions]
     }
     
-    extension [Self <: ConvertOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConvertOptions] (val x: Self) extends AnyVal {
       
       inline def `set-adaptive-blur`(value: String): Self = StObject.set(x, "-adaptive-blur", value.asInstanceOf[js.Any])
       
@@ -2278,7 +2279,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setConvertExtension(value: String): Self = StObject.set(x, "convertExtension", value.asInstanceOf[js.Any])
       
@@ -2363,7 +2365,8 @@ object mod {
       __obj.asInstanceOf[PDFInfo]
     }
     
-    extension [Self <: PDFInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PDFInfo] (val x: Self) extends AnyVal {
       
       inline def setCreationDate(value: String): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
       

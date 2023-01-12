@@ -18,7 +18,8 @@ object VastAdAttributes {
     __obj.asInstanceOf[VastAdAttributes]
   }
   
-  extension [Self <: VastAdAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VastAdAttributes] (val x: Self) extends AnyVal {
     
     inline def setFallback_index(value: String): Self = StObject.set(x, "fallback_index", value.asInstanceOf[js.Any])
     

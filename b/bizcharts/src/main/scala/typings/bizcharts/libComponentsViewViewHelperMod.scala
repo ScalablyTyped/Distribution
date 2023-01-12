@@ -80,7 +80,8 @@ object libComponentsViewViewHelperMod {
       __obj.asInstanceOf[ViewHelper]
     }
     
-    extension [Self <: ViewHelper](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ViewHelper] (val x: Self) extends AnyVal {
       
       inline def setChart(value: typings.antvG2.libChartChartMod.default): Self = StObject.set(x, "chart", value.asInstanceOf[js.Any])
       

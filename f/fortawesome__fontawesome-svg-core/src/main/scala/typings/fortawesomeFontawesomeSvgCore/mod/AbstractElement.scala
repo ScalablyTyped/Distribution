@@ -19,7 +19,8 @@ object AbstractElement {
     __obj.asInstanceOf[AbstractElement]
   }
   
-  extension [Self <: AbstractElement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AbstractElement] (val x: Self) extends AnyVal {
     
     inline def setAttributes(value: Any): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     

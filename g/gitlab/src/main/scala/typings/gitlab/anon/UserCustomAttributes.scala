@@ -45,7 +45,8 @@ object UserCustomAttributes {
     __obj.asInstanceOf[UserCustomAttributes]
   }
   
-  extension [Self <: UserCustomAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UserCustomAttributes] (val x: Self) extends AnyVal {
     
     inline def setUserCustomAttributes(
       value: Instantiable1[

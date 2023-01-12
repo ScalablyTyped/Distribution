@@ -32,7 +32,8 @@ object TextReverseConversionGenerator {
     __obj.asInstanceOf[TextReverseConversionGenerator]
   }
   
-  extension [Self <: TextReverseConversionGenerator](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextReverseConversionGenerator] (val x: Self) extends AnyVal {
     
     inline def setConvertBackAsync(value: String => IPromiseWithIAsyncOperation[String]): Self = StObject.set(x, "convertBackAsync", js.Any.fromFunction1(value))
     

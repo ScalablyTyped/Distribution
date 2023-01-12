@@ -54,7 +54,8 @@ object typingsContentChangesMod {
       __obj.asInstanceOf[CellValueChange]
     }
     
-    extension [Self <: CellValueChange](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CellValueChange] (val x: Self) extends AnyVal {
       
       inline def setAddress(value: SimpleCellAddress_): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
@@ -77,7 +78,8 @@ object typingsContentChangesMod {
       __obj.asInstanceOf[ChangeExporter[T]]
     }
     
-    extension [Self <: ChangeExporter[?], T](x: Self & ChangeExporter[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChangeExporter[?], T] (val x: Self & ChangeExporter[T]) extends AnyVal {
       
       inline def setExportChange(value: CellValueChange => T | js.Array[T]): Self = StObject.set(x, "exportChange", js.Any.fromFunction1(value))
     }

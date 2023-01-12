@@ -61,7 +61,8 @@ object mod {
       __obj.asInstanceOf[Gradient]
     }
     
-    extension [Self <: Gradient](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Gradient] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -100,7 +101,8 @@ object mod {
       __obj.asInstanceOf[Granim]
     }
     
-    extension [Self <: Granim](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Granim] (val x: Self) extends AnyVal {
       
       inline def setChangeBlendingMode(value: String => Unit): Self = StObject.set(x, "changeBlendingMode", js.Any.fromFunction1(value))
       
@@ -135,7 +137,8 @@ object mod {
       __obj.asInstanceOf[Image]
     }
     
-    extension [Self <: Image](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Image] (val x: Self) extends AnyVal {
       
       inline def setBlendingMode(value: String): Self = StObject.set(x, "blendingMode", value.asInstanceOf[js.Any])
       
@@ -175,7 +178,8 @@ object mod {
       __obj.asInstanceOf[OnGradientChangeObject]
     }
     
-    extension [Self <: OnGradientChangeObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OnGradientChangeObject] (val x: Self) extends AnyVal {
       
       inline def setActiveState(value: String): Self = StObject.set(x, "activeState", value.asInstanceOf[js.Any])
       
@@ -224,7 +228,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setCustomDirection(value: X0): Self = StObject.set(x, "customDirection", value.asInstanceOf[js.Any])
       
@@ -295,7 +300,8 @@ object mod {
       __obj.asInstanceOf[State]
     }
     
-    extension [Self <: State](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: State] (val x: Self) extends AnyVal {
       
       inline def setGradients(value: js.Array[js.Array[Gradient | String]]): Self = StObject.set(x, "gradients", value.asInstanceOf[js.Any])
       

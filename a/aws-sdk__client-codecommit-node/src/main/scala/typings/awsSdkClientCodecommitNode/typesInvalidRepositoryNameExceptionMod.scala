@@ -77,7 +77,8 @@ object typesInvalidRepositoryNameExceptionMod {
       __obj.asInstanceOf[InvalidRepositoryNameException]
     }
     
-    extension [Self <: InvalidRepositoryNameException](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InvalidRepositoryNameException] (val x: Self) extends AnyVal {
       
       inline def setName(
         value: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.InvalidRepositoryNameException

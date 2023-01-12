@@ -17,7 +17,8 @@ object ReleaseAbandonedEvent {
     __obj.asInstanceOf[ReleaseAbandonedEvent]
   }
   
-  extension [Self <: ReleaseAbandonedEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReleaseAbandonedEvent] (val x: Self) extends AnyVal {
     
     inline def setProject(value: ProjectReference): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
     

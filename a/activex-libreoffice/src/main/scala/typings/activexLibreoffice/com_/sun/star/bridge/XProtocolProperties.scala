@@ -70,7 +70,8 @@ object XProtocolProperties {
     __obj.asInstanceOf[XProtocolProperties]
   }
   
-  extension [Self <: XProtocolProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XProtocolProperties] (val x: Self) extends AnyVal {
     
     inline def setCommitChange(value: SeqEquiv[ProtocolProperty] => Unit): Self = StObject.set(x, "commitChange", js.Any.fromFunction1(value))
     

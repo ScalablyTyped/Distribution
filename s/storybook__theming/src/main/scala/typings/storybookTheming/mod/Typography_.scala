@@ -22,7 +22,8 @@ object Typography_ {
     __obj.asInstanceOf[Typography_]
   }
   
-  extension [Self <: Typography_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Typography_] (val x: Self) extends AnyVal {
     
     inline def setFonts(value: Base): Self = StObject.set(x, "fonts", value.asInstanceOf[js.Any])
     

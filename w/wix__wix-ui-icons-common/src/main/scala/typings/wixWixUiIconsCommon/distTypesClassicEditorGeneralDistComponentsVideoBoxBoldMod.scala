@@ -27,7 +27,8 @@ object distTypesClassicEditorGeneralDistComponentsVideoBoxBoldMod extends Shortc
       __obj.asInstanceOf[VideoBoxBoldProps]
     }
     
-    extension [Self <: VideoBoxBoldProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VideoBoxBoldProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

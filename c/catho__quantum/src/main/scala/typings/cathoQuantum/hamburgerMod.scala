@@ -31,7 +31,8 @@ object hamburgerMod {
       __obj.asInstanceOf[HamburgerProps]
     }
     
-    extension [Self <: HamburgerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HamburgerProps] (val x: Self) extends AnyVal {
       
       inline def setAriaLabelDescription(value: String): Self = StObject.set(x, "ariaLabelDescription", value.asInstanceOf[js.Any])
       

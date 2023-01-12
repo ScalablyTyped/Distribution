@@ -28,7 +28,8 @@ object MeasureValue {
     __obj.asInstanceOf[MeasureValue]
   }
   
-  extension [Self <: MeasureValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MeasureValue] (val x: Self) extends AnyVal {
     
     inline def setName(value: SchemaName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     

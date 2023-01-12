@@ -19,7 +19,8 @@ object TransitionalOptions {
     __obj.asInstanceOf[TransitionalOptions]
   }
   
-  extension [Self <: TransitionalOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransitionalOptions] (val x: Self) extends AnyVal {
     
     inline def setClarifyTimeoutError(value: Boolean): Self = StObject.set(x, "clarifyTimeoutError", value.asInstanceOf[js.Any])
     

@@ -48,7 +48,8 @@ object Playlist {
     __obj.asInstanceOf[Playlist]
   }
   
-  extension [Self <: Playlist](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Playlist] (val x: Self) extends AnyVal {
     
     inline def setFormat(value: PlaylistFormat): Self = StObject.set(x, "Format", value.asInstanceOf[js.Any])
     

@@ -45,7 +45,8 @@ object distLibClientResp2ComposersStringMod {
       __obj.asInstanceOf[StringComposer]
     }
     
-    extension [Self <: StringComposer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StringComposer] (val x: Self) extends AnyVal {
       
       inline def setDecoder(value: Any): Self = StObject.set(x, "decoder", value.asInstanceOf[js.Any])
       

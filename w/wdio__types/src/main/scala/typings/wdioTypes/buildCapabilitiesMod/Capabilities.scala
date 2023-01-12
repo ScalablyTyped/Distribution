@@ -72,7 +72,8 @@ object Capabilities {
     __obj.asInstanceOf[Capabilities]
   }
   
-  extension [Self <: Capabilities](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Capabilities] (val x: Self) extends AnyVal {
     
     inline def setAcceptInsecureCerts(value: Boolean): Self = StObject.set(x, "acceptInsecureCerts", value.asInstanceOf[js.Any])
     

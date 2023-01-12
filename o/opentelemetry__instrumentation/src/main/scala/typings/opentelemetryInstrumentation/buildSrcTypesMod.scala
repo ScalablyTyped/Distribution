@@ -65,7 +65,8 @@ object buildSrcTypesMod {
       __obj.asInstanceOf[Instrumentation]
     }
     
-    extension [Self <: Instrumentation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Instrumentation] (val x: Self) extends AnyVal {
       
       inline def setDisable(value: () => Unit): Self = StObject.set(x, "disable", js.Any.fromFunction0(value))
       
@@ -110,7 +111,8 @@ object buildSrcTypesMod {
       __obj.asInstanceOf[InstrumentationConfig]
     }
     
-    extension [Self <: InstrumentationConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InstrumentationConfig] (val x: Self) extends AnyVal {
       
       inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       

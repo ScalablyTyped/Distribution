@@ -39,7 +39,8 @@ object EndTime {
     __obj.asInstanceOf[EndTime]
   }
   
-  extension [Self <: EndTime](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EndTime] (val x: Self) extends AnyVal {
     
     inline def setDays(value: js.Array[SUN | MON | TUE | WED | THU | FRI | SAT | PUBLIC_HOLIDAYS]): Self = StObject.set(x, "days", value.asInstanceOf[js.Any])
     

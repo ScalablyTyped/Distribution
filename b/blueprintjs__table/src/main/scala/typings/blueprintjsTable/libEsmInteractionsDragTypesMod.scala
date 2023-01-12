@@ -55,7 +55,8 @@ object libEsmInteractionsDragTypesMod {
       __obj.asInstanceOf[ICoordinateData]
     }
     
-    extension [Self <: ICoordinateData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICoordinateData] (val x: Self) extends AnyVal {
       
       inline def setActivation(value: IClientCoordinates): Self = StObject.set(x, "activation", value.asInstanceOf[js.Any])
       
@@ -133,7 +134,8 @@ object libEsmInteractionsDragTypesMod {
       __obj.asInstanceOf[IDragHandler]
     }
     
-    extension [Self <: IDragHandler](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDragHandler] (val x: Self) extends AnyVal {
       
       inline def setOnActivate(value: /* event */ MouseEvent => Boolean): Self = StObject.set(x, "onActivate", js.Any.fromFunction1(value))
       

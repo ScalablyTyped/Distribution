@@ -17,7 +17,8 @@ object ShowCounter {
     __obj.asInstanceOf[ShowCounter]
   }
   
-  extension [Self <: ShowCounter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShowCounter] (val x: Self) extends AnyVal {
     
     inline def setDefaultValue(value: Any): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
     

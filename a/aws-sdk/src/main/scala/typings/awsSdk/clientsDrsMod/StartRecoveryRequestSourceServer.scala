@@ -23,7 +23,8 @@ object StartRecoveryRequestSourceServer {
     __obj.asInstanceOf[StartRecoveryRequestSourceServer]
   }
   
-  extension [Self <: StartRecoveryRequestSourceServer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartRecoveryRequestSourceServer] (val x: Self) extends AnyVal {
     
     inline def setRecoverySnapshotID(value: RecoverySnapshotID): Self = StObject.set(x, "recoverySnapshotID", value.asInstanceOf[js.Any])
     

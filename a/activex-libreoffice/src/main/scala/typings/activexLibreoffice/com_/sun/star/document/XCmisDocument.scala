@@ -62,7 +62,8 @@ object XCmisDocument {
     __obj.asInstanceOf[XCmisDocument]
   }
   
-  extension [Self <: XCmisDocument](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XCmisDocument] (val x: Self) extends AnyVal {
     
     inline def setAllVersions(value: SafeArray[CmisVersion]): Self = StObject.set(x, "AllVersions", value.asInstanceOf[js.Any])
     

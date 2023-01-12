@@ -23,7 +23,8 @@ object AppendFileOptions {
     __obj.asInstanceOf[AppendFileOptions]
   }
   
-  extension [Self <: AppendFileOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppendFileOptions] (val x: Self) extends AnyVal {
     
     inline def setData(value: String | js.typedarray.ArrayBuffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

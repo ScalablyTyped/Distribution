@@ -38,7 +38,8 @@ object IFileClass {
     __obj.asInstanceOf[IFileClass]
   }
   
-  extension [Self <: IFileClass](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IFileClass] (val x: Self) extends AnyVal {
     
     inline def setClone(value: () => IFileClass): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     

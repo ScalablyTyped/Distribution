@@ -32,7 +32,8 @@ object ConsumedLength {
     __obj.asInstanceOf[ConsumedLength]
   }
   
-  extension [Self <: ConsumedLength](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConsumedLength] (val x: Self) extends AnyVal {
     
     inline def setConsumedLength(value: Double): Self = StObject.set(x, "consumedLength", value.asInstanceOf[js.Any])
     

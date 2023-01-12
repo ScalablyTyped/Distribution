@@ -77,7 +77,8 @@ object componentsDrawerDrawerMod {
       __obj.asInstanceOf[DrawerCommonProps]
     }
     
-    extension [Self <: DrawerCommonProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DrawerCommonProps] (val x: Self) extends AnyVal {
       
       inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
@@ -122,7 +123,8 @@ object componentsDrawerDrawerMod {
       __obj.asInstanceOf[DrawerProps]
     }
     
-    extension [Self <: DrawerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DrawerProps] (val x: Self) extends AnyVal {
       
       inline def setTheme(value: DrawerTheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       
@@ -169,7 +171,8 @@ object componentsDrawerDrawerMod {
       __obj.asInstanceOf[DrawerTheme]
     }
     
-    extension [Self <: DrawerTheme](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DrawerTheme] (val x: Self) extends AnyVal {
       
       inline def setActive(value: String): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       

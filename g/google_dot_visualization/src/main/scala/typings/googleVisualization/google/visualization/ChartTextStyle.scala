@@ -27,7 +27,8 @@ object ChartTextStyle {
     __obj.asInstanceOf[ChartTextStyle]
   }
   
-  extension [Self <: ChartTextStyle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChartTextStyle] (val x: Self) extends AnyVal {
     
     inline def setAuraColor(value: String): Self = StObject.set(x, "auraColor", value.asInstanceOf[js.Any])
     

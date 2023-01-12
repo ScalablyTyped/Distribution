@@ -16,7 +16,8 @@ object CloudStorageSink {
     __obj.asInstanceOf[CloudStorageSink]
   }
   
-  extension [Self <: CloudStorageSink](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CloudStorageSink] (val x: Self) extends AnyVal {
     
     inline def setFiles(value: js.Array[CloudStorageFile]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object FormatDateOptions {
     __obj.asInstanceOf[FormatDateOptions]
   }
   
-  extension [Self <: FormatDateOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FormatDateOptions] (val x: Self) extends AnyVal {
     
     inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     

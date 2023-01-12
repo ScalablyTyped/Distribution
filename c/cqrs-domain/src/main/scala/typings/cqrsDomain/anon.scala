@@ -26,7 +26,8 @@ object anon {
       __obj.asInstanceOf[Aggregate]
     }
     
-    extension [Self <: Aggregate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Aggregate] (val x: Self) extends AnyVal {
       
       inline def setAggregate(value: String): Self = StObject.set(x, "aggregate", value.asInstanceOf[js.Any])
       
@@ -70,7 +71,8 @@ object anon {
       __obj.asInstanceOf[AuthSource]
     }
     
-    extension [Self <: AuthSource](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AuthSource] (val x: Self) extends AnyVal {
       
       inline def setAuthSource(value: String): Self = StObject.set(x, "authSource", value.asInstanceOf[js.Any])
       
@@ -144,7 +146,8 @@ object anon {
       __obj.asInstanceOf[Db]
     }
     
-    extension [Self <: Db](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Db] (val x: Self) extends AnyVal {
       
       inline def setDb(value: Double): Self = StObject.set(x, "db", value.asInstanceOf[js.Any])
       
@@ -198,7 +201,8 @@ object anon {
       __obj.asInstanceOf[Host]
     }
     
-    extension [Self <: Host](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Host] (val x: Self) extends AnyVal {
       
       inline def setDb(value: Double): Self = StObject.set(x, "db", value.asInstanceOf[js.Any])
       

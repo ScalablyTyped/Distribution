@@ -38,7 +38,8 @@ object mod {
       __obj.asInstanceOf[FacebookLoginInfo]
     }
     
-    extension [Self <: FacebookLoginInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FacebookLoginInfo] (val x: Self) extends AnyVal {
       
       inline def setAccessToken(value: String): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
       
@@ -77,7 +78,8 @@ object mod {
       __obj.asInstanceOf[FacebookLoginProps]
     }
     
-    extension [Self <: FacebookLoginProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FacebookLoginProps] (val x: Self) extends AnyVal {
       
       inline def setButtonText(value: String): Self = StObject.set(x, "buttonText", value.asInstanceOf[js.Any])
       

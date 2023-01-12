@@ -350,7 +350,8 @@ object ImagePropsComponentcontex {
     __obj.asInstanceOf[ImagePropsComponentcontex]
   }
   
-  extension [Self <: ImagePropsComponentcontex](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImagePropsComponentcontex] (val x: Self) extends AnyVal {
     
     inline def setAccessibilityActions(value: js.Array[AccessibilityActionInfo]): Self = StObject.set(x, "accessibilityActions", value.asInstanceOf[js.Any])
     

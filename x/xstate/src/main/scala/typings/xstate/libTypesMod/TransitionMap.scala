@@ -15,7 +15,8 @@ object TransitionMap {
     __obj.asInstanceOf[TransitionMap]
   }
   
-  extension [Self <: TransitionMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransitionMap] (val x: Self) extends AnyVal {
     
     inline def setState(value: StateValue): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     

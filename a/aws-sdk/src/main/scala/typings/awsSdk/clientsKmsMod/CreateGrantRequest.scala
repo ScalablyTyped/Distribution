@@ -48,7 +48,8 @@ object CreateGrantRequest {
     __obj.asInstanceOf[CreateGrantRequest]
   }
   
-  extension [Self <: CreateGrantRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateGrantRequest] (val x: Self) extends AnyVal {
     
     inline def setConstraints(value: GrantConstraints): Self = StObject.set(x, "Constraints", value.asInstanceOf[js.Any])
     

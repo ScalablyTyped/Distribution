@@ -22,7 +22,8 @@ object ScriptWarning {
     __obj.asInstanceOf[ScriptWarning]
   }
   
-  extension [Self <: ScriptWarning](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScriptWarning] (val x: Self) extends AnyVal {
     
     inline def setInfo(value: StringDictionary[String]): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
     

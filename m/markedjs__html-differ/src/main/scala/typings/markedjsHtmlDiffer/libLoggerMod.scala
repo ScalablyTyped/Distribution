@@ -32,7 +32,8 @@ object libLoggerMod {
       __obj.asInstanceOf[LoggerOptions]
     }
     
-    extension [Self <: LoggerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LoggerOptions] (val x: Self) extends AnyVal {
       
       inline def setCharsAroundDiff(value: Double): Self = StObject.set(x, "charsAroundDiff", value.asInstanceOf[js.Any])
       

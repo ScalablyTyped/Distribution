@@ -43,7 +43,8 @@ object CustomTemplate {
     __obj.asInstanceOf[CustomTemplate]
   }
   
-  extension [Self <: CustomTemplate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomTemplate] (val x: Self) extends AnyVal {
     
     inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     

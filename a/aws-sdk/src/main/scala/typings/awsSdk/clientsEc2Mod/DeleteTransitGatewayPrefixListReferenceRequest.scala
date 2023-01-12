@@ -28,7 +28,8 @@ object DeleteTransitGatewayPrefixListReferenceRequest {
     __obj.asInstanceOf[DeleteTransitGatewayPrefixListReferenceRequest]
   }
   
-  extension [Self <: DeleteTransitGatewayPrefixListReferenceRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteTransitGatewayPrefixListReferenceRequest] (val x: Self) extends AnyVal {
     
     inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     

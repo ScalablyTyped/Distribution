@@ -19,7 +19,8 @@ object ReturnTypeCreateIsolatedWorldResponse {
     __obj.asInstanceOf[ReturnTypeCreateIsolatedWorldResponse]
   }
   
-  extension [Self <: ReturnTypeCreateIsolatedWorldResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReturnTypeCreateIsolatedWorldResponse] (val x: Self) extends AnyVal {
     
     inline def setParamsType(value: js.Array[CreateIsolatedWorldRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     

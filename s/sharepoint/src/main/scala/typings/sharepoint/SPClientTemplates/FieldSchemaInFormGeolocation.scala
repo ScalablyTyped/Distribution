@@ -37,7 +37,8 @@ object FieldSchemaInFormGeolocation {
     __obj.asInstanceOf[FieldSchemaInFormGeolocation]
   }
   
-  extension [Self <: FieldSchemaInFormGeolocation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FieldSchemaInFormGeolocation] (val x: Self) extends AnyVal {
     
     inline def setBingMapsKey(value: String): Self = StObject.set(x, "BingMapsKey", value.asInstanceOf[js.Any])
     

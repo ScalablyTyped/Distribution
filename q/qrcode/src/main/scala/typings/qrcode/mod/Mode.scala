@@ -19,7 +19,8 @@ object Mode {
     __obj.asInstanceOf[Mode[TModeId]]
   }
   
-  extension [Self <: Mode[?], TModeId /* <: ModeId */](x: Self & Mode[TModeId]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Mode[?], TModeId /* <: ModeId */] (val x: Self & Mode[TModeId]) extends AnyVal {
     
     inline def setBit(value: Double): Self = StObject.set(x, "bit", value.asInstanceOf[js.Any])
     

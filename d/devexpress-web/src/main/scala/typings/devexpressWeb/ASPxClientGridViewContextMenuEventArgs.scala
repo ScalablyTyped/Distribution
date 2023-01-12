@@ -43,7 +43,8 @@ object ASPxClientGridViewContextMenuEventArgs {
     __obj.asInstanceOf[ASPxClientGridViewContextMenuEventArgs]
   }
   
-  extension [Self <: ASPxClientGridViewContextMenuEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientGridViewContextMenuEventArgs] (val x: Self) extends AnyVal {
     
     inline def setHtmlEvent(value: Any): Self = StObject.set(x, "htmlEvent", value.asInstanceOf[js.Any])
     

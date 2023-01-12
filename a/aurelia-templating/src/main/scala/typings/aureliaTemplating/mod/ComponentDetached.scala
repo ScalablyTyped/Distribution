@@ -18,7 +18,8 @@ object ComponentDetached {
     __obj.asInstanceOf[ComponentDetached]
   }
   
-  extension [Self <: ComponentDetached](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ComponentDetached] (val x: Self) extends AnyVal {
     
     inline def setDetached(value: () => Unit): Self = StObject.set(x, "detached", js.Any.fromFunction0(value))
   }

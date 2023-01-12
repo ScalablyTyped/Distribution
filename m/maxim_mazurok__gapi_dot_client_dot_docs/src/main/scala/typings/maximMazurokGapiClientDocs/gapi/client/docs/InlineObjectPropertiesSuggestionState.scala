@@ -16,7 +16,8 @@ object InlineObjectPropertiesSuggestionState {
     __obj.asInstanceOf[InlineObjectPropertiesSuggestionState]
   }
   
-  extension [Self <: InlineObjectPropertiesSuggestionState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InlineObjectPropertiesSuggestionState] (val x: Self) extends AnyVal {
     
     inline def setEmbeddedObjectSuggestionState(value: EmbeddedObjectSuggestionState): Self = StObject.set(x, "embeddedObjectSuggestionState", value.asInstanceOf[js.Any])
     

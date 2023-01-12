@@ -26,7 +26,8 @@ object Top10RuleType {
     __obj.asInstanceOf[Top10RuleType]
   }
   
-  extension [Self <: Top10RuleType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Top10RuleType] (val x: Self) extends AnyVal {
     
     inline def setBottom(value: Boolean): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
     

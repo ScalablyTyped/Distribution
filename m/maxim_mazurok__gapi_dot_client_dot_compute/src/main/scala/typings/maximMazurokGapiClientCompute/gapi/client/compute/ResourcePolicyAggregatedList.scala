@@ -42,7 +42,8 @@ object ResourcePolicyAggregatedList {
     __obj.asInstanceOf[ResourcePolicyAggregatedList]
   }
   
-  extension [Self <: ResourcePolicyAggregatedList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResourcePolicyAggregatedList] (val x: Self) extends AnyVal {
     
     inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object ReservationsScopedList {
     __obj.asInstanceOf[ReservationsScopedList]
   }
   
-  extension [Self <: ReservationsScopedList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReservationsScopedList] (val x: Self) extends AnyVal {
     
     inline def setReservations(value: js.Array[Reservation]): Self = StObject.set(x, "reservations", value.asInstanceOf[js.Any])
     

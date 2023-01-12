@@ -18,7 +18,8 @@ object GetContainerForNodeResponse {
     __obj.asInstanceOf[GetContainerForNodeResponse]
   }
   
-  extension [Self <: GetContainerForNodeResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetContainerForNodeResponse] (val x: Self) extends AnyVal {
     
     inline def setNodeId(value: NodeId): Self = StObject.set(x, "nodeId", value.asInstanceOf[js.Any])
     

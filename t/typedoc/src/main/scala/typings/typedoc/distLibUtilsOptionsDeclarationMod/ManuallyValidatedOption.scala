@@ -15,7 +15,8 @@ object ManuallyValidatedOption {
     __obj.asInstanceOf[ManuallyValidatedOption[T]]
   }
   
-  extension [Self <: ManuallyValidatedOption[?], T](x: Self & ManuallyValidatedOption[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ManuallyValidatedOption[?], T] (val x: Self & ManuallyValidatedOption[T]) extends AnyVal {
     
     inline def set__validated(value: T): Self = StObject.set(x, "__validated", value.asInstanceOf[js.Any])
   }

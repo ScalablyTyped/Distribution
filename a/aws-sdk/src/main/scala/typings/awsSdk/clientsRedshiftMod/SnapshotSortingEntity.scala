@@ -23,7 +23,8 @@ object SnapshotSortingEntity {
     __obj.asInstanceOf[SnapshotSortingEntity]
   }
   
-  extension [Self <: SnapshotSortingEntity](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SnapshotSortingEntity] (val x: Self) extends AnyVal {
     
     inline def setAttribute(value: SnapshotAttributeToSortBy): Self = StObject.set(x, "Attribute", value.asInstanceOf[js.Any])
     

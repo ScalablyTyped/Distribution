@@ -43,7 +43,8 @@ object IMarkerData {
     __obj.asInstanceOf[IMarkerData]
   }
   
-  extension [Self <: IMarkerData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IMarkerData] (val x: Self) extends AnyVal {
     
     inline def setCode(value: String | Target): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     

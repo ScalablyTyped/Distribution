@@ -56,7 +56,8 @@ object mod {
       __obj.asInstanceOf[ADProperties]
     }
     
-    extension [Self <: ADProperties](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ADProperties] (val x: Self) extends AnyVal {
       
       inline def setAttributes(value: Group): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
@@ -287,7 +288,8 @@ object mod {
       __obj.asInstanceOf[AttributeSpec]
     }
     
-    extension [Self <: AttributeSpec](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AttributeSpec] (val x: Self) extends AnyVal {
       
       inline def setGroup(value: js.Array[GroupAttributes]): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
       
@@ -314,7 +316,8 @@ object mod {
       __obj.asInstanceOf[FindResult]
     }
     
-    extension [Self <: FindResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FindResult] (val x: Self) extends AnyVal {
       
       inline def setGroups(value: js.Array[js.Object]): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
       
@@ -373,7 +376,8 @@ object mod {
       __obj.asInstanceOf[LDAPjsReqProps]
     }
     
-    extension [Self <: LDAPjsReqProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LDAPjsReqProps] (val x: Self) extends AnyVal {
       
       inline def setConnectionTimeout(value: Double): Self = StObject.set(x, "connectionTimeout", value.asInstanceOf[js.Any])
       
@@ -455,7 +459,8 @@ object mod {
       __obj.asInstanceOf[ReqProps]
     }
     
-    extension [Self <: ReqProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReqProps] (val x: Self) extends AnyVal {
       
       inline def setAttributes(value: AttributeSpec): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       

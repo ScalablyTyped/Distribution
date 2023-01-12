@@ -37,7 +37,8 @@ object GoogleCloudDatacatalogV1Taxonomy {
     __obj.asInstanceOf[GoogleCloudDatacatalogV1Taxonomy]
   }
   
-  extension [Self <: GoogleCloudDatacatalogV1Taxonomy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDatacatalogV1Taxonomy] (val x: Self) extends AnyVal {
     
     inline def setActivatedPolicyTypes(value: js.Array[String]): Self = StObject.set(x, "activatedPolicyTypes", value.asInstanceOf[js.Any])
     

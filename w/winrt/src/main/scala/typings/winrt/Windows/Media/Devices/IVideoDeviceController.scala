@@ -64,7 +64,8 @@ object IVideoDeviceController {
     __obj.asInstanceOf[IVideoDeviceController]
   }
   
-  extension [Self <: IVideoDeviceController](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IVideoDeviceController] (val x: Self) extends AnyVal {
     
     inline def setBacklightCompensation(value: MediaDeviceControl): Self = StObject.set(x, "backlightCompensation", value.asInstanceOf[js.Any])
     

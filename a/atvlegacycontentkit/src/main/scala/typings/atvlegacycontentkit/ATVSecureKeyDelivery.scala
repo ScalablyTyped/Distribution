@@ -59,7 +59,8 @@ object ATVSecureKeyDelivery {
     __obj.asInstanceOf[ATVSecureKeyDelivery]
   }
   
-  extension [Self <: ATVSecureKeyDelivery](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ATVSecureKeyDelivery] (val x: Self) extends AnyVal {
     
     inline def setCancelAllRequests(value: () => Unit): Self = StObject.set(x, "cancelAllRequests", js.Any.fromFunction0(value))
     

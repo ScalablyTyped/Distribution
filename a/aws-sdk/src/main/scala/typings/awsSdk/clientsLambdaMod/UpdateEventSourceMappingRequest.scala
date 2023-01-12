@@ -83,7 +83,8 @@ object UpdateEventSourceMappingRequest {
     __obj.asInstanceOf[UpdateEventSourceMappingRequest]
   }
   
-  extension [Self <: UpdateEventSourceMappingRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateEventSourceMappingRequest] (val x: Self) extends AnyVal {
     
     inline def setBatchSize(value: BatchSize): Self = StObject.set(x, "BatchSize", value.asInstanceOf[js.Any])
     

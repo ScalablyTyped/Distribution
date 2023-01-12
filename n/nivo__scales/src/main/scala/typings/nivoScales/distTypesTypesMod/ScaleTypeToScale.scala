@@ -94,7 +94,8 @@ object ScaleTypeToScale {
     __obj.asInstanceOf[ScaleTypeToScale[Input, Output]]
   }
   
-  extension [Self <: ScaleTypeToScale[?, ?], Input, Output](x: Self & (ScaleTypeToScale[Input, Output])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScaleTypeToScale[?, ?], Input, Output] (val x: Self & (ScaleTypeToScale[Input, Output])) extends AnyVal {
     
     inline def setBand(value: ScaleBand[Input]): Self = StObject.set(x, "band", value.asInstanceOf[js.Any])
     

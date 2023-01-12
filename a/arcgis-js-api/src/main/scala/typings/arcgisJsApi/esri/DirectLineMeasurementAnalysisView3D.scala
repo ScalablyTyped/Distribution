@@ -47,7 +47,8 @@ object DirectLineMeasurementAnalysisView3D {
     __obj.asInstanceOf[DirectLineMeasurementAnalysisView3D]
   }
   
-  extension [Self <: DirectLineMeasurementAnalysisView3D](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DirectLineMeasurementAnalysisView3D] (val x: Self) extends AnyVal {
     
     inline def setAnalysis(value: DirectLineMeasurementAnalysis): Self = StObject.set(x, "analysis", value.asInstanceOf[js.Any])
     

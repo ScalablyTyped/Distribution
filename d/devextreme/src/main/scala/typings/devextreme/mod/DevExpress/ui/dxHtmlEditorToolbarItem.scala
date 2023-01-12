@@ -38,7 +38,8 @@ object dxHtmlEditorToolbarItem {
     __obj.asInstanceOf[dxHtmlEditorToolbarItem]
   }
   
-  extension [Self <: dxHtmlEditorToolbarItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxHtmlEditorToolbarItem] (val x: Self) extends AnyVal {
     
     inline def setAcceptedValues(value: js.Array[String | Double | Boolean]): Self = StObject.set(x, "acceptedValues", value.asInstanceOf[js.Any])
     

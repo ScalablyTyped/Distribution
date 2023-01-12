@@ -28,7 +28,8 @@ object mod {
       __obj.asInstanceOf[LernaPackage]
     }
     
-    extension [Self <: LernaPackage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LernaPackage] (val x: Self) extends AnyVal {
       
       inline def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
       

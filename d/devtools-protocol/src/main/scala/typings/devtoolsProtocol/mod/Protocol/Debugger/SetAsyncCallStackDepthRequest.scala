@@ -20,7 +20,8 @@ object SetAsyncCallStackDepthRequest {
     __obj.asInstanceOf[SetAsyncCallStackDepthRequest]
   }
   
-  extension [Self <: SetAsyncCallStackDepthRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetAsyncCallStackDepthRequest] (val x: Self) extends AnyVal {
     
     inline def setMaxDepth(value: integer): Self = StObject.set(x, "maxDepth", value.asInstanceOf[js.Any])
   }

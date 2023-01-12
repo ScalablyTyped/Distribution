@@ -28,7 +28,8 @@ object DisassociateEntitiesFromExperienceRequest {
     __obj.asInstanceOf[DisassociateEntitiesFromExperienceRequest]
   }
   
-  extension [Self <: DisassociateEntitiesFromExperienceRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisassociateEntitiesFromExperienceRequest] (val x: Self) extends AnyVal {
     
     inline def setEntityList(value: DisassociateEntityList): Self = StObject.set(x, "EntityList", value.asInstanceOf[js.Any])
     

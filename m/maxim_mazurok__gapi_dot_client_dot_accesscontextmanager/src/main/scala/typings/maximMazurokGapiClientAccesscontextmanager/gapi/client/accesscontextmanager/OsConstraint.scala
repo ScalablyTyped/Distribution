@@ -25,7 +25,8 @@ object OsConstraint {
     __obj.asInstanceOf[OsConstraint]
   }
   
-  extension [Self <: OsConstraint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OsConstraint] (val x: Self) extends AnyVal {
     
     inline def setMinimumVersion(value: String): Self = StObject.set(x, "minimumVersion", value.asInstanceOf[js.Any])
     

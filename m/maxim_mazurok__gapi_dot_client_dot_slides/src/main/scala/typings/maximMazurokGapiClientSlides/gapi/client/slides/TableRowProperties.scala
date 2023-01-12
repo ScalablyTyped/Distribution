@@ -16,7 +16,8 @@ object TableRowProperties {
     __obj.asInstanceOf[TableRowProperties]
   }
   
-  extension [Self <: TableRowProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TableRowProperties] (val x: Self) extends AnyVal {
     
     inline def setMinRowHeight(value: Dimension): Self = StObject.set(x, "minRowHeight", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object `24` {
     __obj.asInstanceOf[`24`[T]]
   }
   
-  extension [Self <: `24`[?], T](x: Self & `24`[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: `24`[?], T] (val x: Self & `24`[T]) extends AnyVal {
     
     inline def setFailure(value: (KiiServerCodeEntry, T, KiiServerCodeExecResult, String) => Any): Self = StObject.set(x, "failure", js.Any.fromFunction4(value))
     

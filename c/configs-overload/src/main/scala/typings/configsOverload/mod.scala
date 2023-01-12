@@ -29,7 +29,8 @@ object mod {
       __obj.asInstanceOf[ConfigsOverloadOptions]
     }
     
-    extension [Self <: ConfigsOverloadOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConfigsOverloadOptions] (val x: Self) extends AnyVal {
       
       inline def setDefaultEnv(value: String): Self = StObject.set(x, "defaultEnv", value.asInstanceOf[js.Any])
       

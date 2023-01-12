@@ -25,7 +25,8 @@ object ConditionDefinitionMedication {
     __obj.asInstanceOf[ConditionDefinitionMedication]
   }
   
-  extension [Self <: ConditionDefinitionMedication](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConditionDefinitionMedication] (val x: Self) extends AnyVal {
     
     inline def setCategory(value: CodeableConcept): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     

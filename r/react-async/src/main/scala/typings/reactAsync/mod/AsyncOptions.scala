@@ -53,7 +53,8 @@ object AsyncOptions {
     __obj.asInstanceOf[AsyncOptions[T]]
   }
   
-  extension [Self <: AsyncOptions[?], T](x: Self & AsyncOptions[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AsyncOptions[?], T] (val x: Self & AsyncOptions[T]) extends AnyVal {
     
     inline def setDebugLabel(value: String): Self = StObject.set(x, "debugLabel", value.asInstanceOf[js.Any])
     

@@ -114,7 +114,8 @@ object geckoProfiler {
       __obj.asInstanceOf[StartSettings]
     }
     
-    extension [Self <: StartSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StartSettings] (val x: Self) extends AnyVal {
       
       inline def setBufferSize(value: Double): Self = StObject.set(x, "bufferSize", value.asInstanceOf[js.Any])
       

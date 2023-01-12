@@ -78,7 +78,8 @@ object LinearParams {
     __obj.asInstanceOf[LinearParams]
   }
   
-  extension [Self <: LinearParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LinearParams] (val x: Self) extends AnyVal {
     
     inline def setAlarmSound(value: String): Self = StObject.set(x, "alarmSound", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object ResourceRequest {
     __obj.asInstanceOf[ResourceRequest]
   }
   
-  extension [Self <: ResourceRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResourceRequest] (val x: Self) extends AnyVal {
     
     inline def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
   }

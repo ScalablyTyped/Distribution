@@ -44,7 +44,8 @@ object AssigneeAssigner {
     __obj.asInstanceOf[AssigneeAssigner]
   }
   
-  extension [Self <: AssigneeAssigner](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssigneeAssigner] (val x: Self) extends AnyVal {
     
     inline def setActor(value: Avatarurl): Self = StObject.set(x, "actor", value.asInstanceOf[js.Any])
     

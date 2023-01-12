@@ -27,7 +27,8 @@ object CallbackFn {
     __obj.asInstanceOf[CallbackFn]
   }
   
-  extension [Self <: CallbackFn](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CallbackFn] (val x: Self) extends AnyVal {
     
     inline def setCallbackFn(
       value: (MouseEvent[HTMLButtonElement | HTMLAnchorElement, NativeMouseEvent]) | (TouchEvent[HTMLButtonElement | HTMLAnchorElement]) => Unit

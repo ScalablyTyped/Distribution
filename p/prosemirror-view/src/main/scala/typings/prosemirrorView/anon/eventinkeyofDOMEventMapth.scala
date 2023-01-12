@@ -448,7 +448,8 @@ object eventinkeyofDOMEventMapth {
     __obj.asInstanceOf[eventinkeyofDOMEventMapth]
   }
   
-  extension [Self <: eventinkeyofDOMEventMapth](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: eventinkeyofDOMEventMapth] (val x: Self) extends AnyVal {
     
     inline def setAbort(
       value: js.ThisFunction2[/* this */ Any, eventinkeyofDOMEventMapth, /* event */ UIEvent, Boolean | Unit]

@@ -47,7 +47,8 @@ object PartialServerOptions {
     __obj.asInstanceOf[PartialServerOptions]
   }
   
-  extension [Self <: PartialServerOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialServerOptions] (val x: Self) extends AnyVal {
     
     inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
     

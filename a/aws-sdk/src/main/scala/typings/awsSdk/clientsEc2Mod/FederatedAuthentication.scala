@@ -23,7 +23,8 @@ object FederatedAuthentication {
     __obj.asInstanceOf[FederatedAuthentication]
   }
   
-  extension [Self <: FederatedAuthentication](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FederatedAuthentication] (val x: Self) extends AnyVal {
     
     inline def setSamlProviderArn(value: String): Self = StObject.set(x, "SamlProviderArn", value.asInstanceOf[js.Any])
     

@@ -83,7 +83,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[ConfigOptions]
     }
     
-    extension [Self <: ConfigOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConfigOptions] (val x: Self) extends AnyVal {
       
       inline def setAliases(value: Record[String, String]): Self = StObject.set(x, "aliases", value.asInstanceOf[js.Any])
       
@@ -144,7 +145,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[ConfigureOptions]
     }
     
-    extension [Self <: ConfigureOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConfigureOptions] (val x: Self) extends AnyVal {
       
       inline def setHooks(value: HookOptions): Self = StObject.set(x, "hooks", value.asInstanceOf[js.Any])
       
@@ -214,7 +216,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[HookOptions]
     }
     
-    extension [Self <: HookOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HookOptions] (val x: Self) extends AnyVal {
       
       inline def setPost(value: (/* root */ Root_, /* postcss */ Postcss) => Unit): Self = StObject.set(x, "post", js.Any.fromFunction2(value))
       
@@ -241,7 +244,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[MapOptions]
     }
     
-    extension [Self <: MapOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MapOptions] (val x: Self) extends AnyVal {
       
       inline def setGreedy(value: Boolean): Self = StObject.set(x, "greedy", value.asInstanceOf[js.Any])
       
@@ -266,7 +270,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Plugin]
     }
     
-    extension [Self <: Plugin](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Plugin] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
@@ -305,7 +310,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[StringMap]
     }
     
-    extension [Self <: StringMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StringMap] (val x: Self) extends AnyVal {
       
       inline def setExclusive(value: Boolean): Self = StObject.set(x, "exclusive", value.asInstanceOf[js.Any])
       

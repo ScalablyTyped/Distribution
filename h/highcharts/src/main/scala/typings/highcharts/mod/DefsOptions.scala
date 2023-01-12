@@ -17,7 +17,8 @@ object DefsOptions {
     __obj.asInstanceOf[DefsOptions]
   }
   
-  extension [Self <: DefsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DefsOptions] (val x: Self) extends AnyVal {
     
     inline def setArrow(value: ASTNode | DefsArrowOptions): Self = StObject.set(x, "arrow", value.asInstanceOf[js.Any])
     

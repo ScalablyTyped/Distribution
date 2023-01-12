@@ -234,7 +234,8 @@ object mod {
       __obj.asInstanceOf[AnserJsonEntry]
     }
     
-    extension [Self <: AnserJsonEntry](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AnserJsonEntry] (val x: Self) extends AnyVal {
       
       inline def setBg(value: String): Self = StObject.set(x, "bg", value.asInstanceOf[js.Any])
       
@@ -279,7 +280,8 @@ object mod {
       __obj.asInstanceOf[AnserOptions]
     }
     
-    extension [Self <: AnserOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AnserOptions] (val x: Self) extends AnyVal {
       
       inline def setJson(value: Boolean): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
       
@@ -339,7 +341,8 @@ object mod {
       __obj.asInstanceOf[OptionsWithJson]
     }
     
-    extension [Self <: OptionsWithJson](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OptionsWithJson] (val x: Self) extends AnyVal {
       
       inline def setJson(value: `true`): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
     }

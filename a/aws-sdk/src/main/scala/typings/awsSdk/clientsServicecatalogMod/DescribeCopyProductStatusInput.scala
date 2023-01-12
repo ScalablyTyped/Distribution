@@ -23,7 +23,8 @@ object DescribeCopyProductStatusInput {
     __obj.asInstanceOf[DescribeCopyProductStatusInput]
   }
   
-  extension [Self <: DescribeCopyProductStatusInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeCopyProductStatusInput] (val x: Self) extends AnyVal {
     
     inline def setAcceptLanguage(value: AcceptLanguage): Self = StObject.set(x, "AcceptLanguage", value.asInstanceOf[js.Any])
     

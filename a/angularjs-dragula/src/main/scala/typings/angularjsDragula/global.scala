@@ -41,7 +41,8 @@ object global {
             __obj.asInstanceOf[Bag]
           }
           
-          extension [Self <: Bag](x: Self) {
+          @scala.inline
+          implicit open class MutableBuilder[Self <: Bag] (val x: Self) extends AnyVal {
             
             inline def setDrake(value: Drake): Self = StObject.set(x, "drake", value.asInstanceOf[js.Any])
             

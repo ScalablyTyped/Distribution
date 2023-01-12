@@ -16,7 +16,8 @@ object HeightProps {
     __obj.asInstanceOf[HeightProps[TLength]]
   }
   
-  extension [Self <: HeightProps[?], TLength](x: Self & HeightProps[TLength]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HeightProps[?], TLength] (val x: Self & HeightProps[TLength]) extends AnyVal {
     
     inline def setHeight(value: ResponsiveValue[Height[TLength]]): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     

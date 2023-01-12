@@ -242,7 +242,8 @@ object sapUiWebcMainGroupHeaderListItemMod {
       __obj.asInstanceOf[GroupHeaderListItemSettings]
     }
     
-    extension [Self <: GroupHeaderListItemSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GroupHeaderListItemSettings] (val x: Self) extends AnyVal {
       
       inline def setAccessibleName(value: String | PropertyBindingInfo): Self = StObject.set(x, "accessibleName", value.asInstanceOf[js.Any])
       

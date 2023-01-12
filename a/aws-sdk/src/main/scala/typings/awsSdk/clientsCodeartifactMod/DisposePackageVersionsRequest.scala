@@ -66,7 +66,8 @@ object DisposePackageVersionsRequest {
     __obj.asInstanceOf[DisposePackageVersionsRequest]
   }
   
-  extension [Self <: DisposePackageVersionsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisposePackageVersionsRequest] (val x: Self) extends AnyVal {
     
     inline def setDomain(value: DomainName): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
     

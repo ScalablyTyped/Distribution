@@ -19,7 +19,8 @@ object VideoTargeting {
     __obj.asInstanceOf[VideoTargeting]
   }
   
-  extension [Self <: VideoTargeting](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VideoTargeting] (val x: Self) extends AnyVal {
     
     inline def setExcludedPositionTypes(value: js.Array[String]): Self = StObject.set(x, "excludedPositionTypes", value.asInstanceOf[js.Any])
     

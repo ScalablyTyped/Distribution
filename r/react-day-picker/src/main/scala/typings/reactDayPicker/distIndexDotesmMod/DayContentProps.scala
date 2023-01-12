@@ -23,7 +23,8 @@ object DayContentProps {
     __obj.asInstanceOf[DayContentProps]
   }
   
-  extension [Self <: DayContentProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DayContentProps] (val x: Self) extends AnyVal {
     
     inline def setActiveModifiers(value: ActiveModifiers): Self = StObject.set(x, "activeModifiers", value.asInstanceOf[js.Any])
     

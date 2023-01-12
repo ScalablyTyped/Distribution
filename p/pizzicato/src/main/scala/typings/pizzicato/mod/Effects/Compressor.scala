@@ -82,7 +82,8 @@ object Compressor {
   def threshold: Double = js.native
   inline def threshold_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("threshold")(x.asInstanceOf[js.Any])
   
-  extension [Self <: Compressor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Compressor] (val x: Self) extends AnyVal {
     
     inline def setAttack(value: Double): Self = StObject.set(x, "attack", value.asInstanceOf[js.Any])
     

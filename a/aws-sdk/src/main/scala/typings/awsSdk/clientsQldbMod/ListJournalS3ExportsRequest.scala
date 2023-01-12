@@ -23,7 +23,8 @@ object ListJournalS3ExportsRequest {
     __obj.asInstanceOf[ListJournalS3ExportsRequest]
   }
   
-  extension [Self <: ListJournalS3ExportsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListJournalS3ExportsRequest] (val x: Self) extends AnyVal {
     
     inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     

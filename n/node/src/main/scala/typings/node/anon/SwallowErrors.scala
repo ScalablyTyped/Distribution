@@ -15,7 +15,8 @@ object SwallowErrors {
     __obj.asInstanceOf[SwallowErrors]
   }
   
-  extension [Self <: SwallowErrors](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SwallowErrors] (val x: Self) extends AnyVal {
     
     inline def setSwallowErrors(value: Boolean): Self = StObject.set(x, "swallowErrors", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object VoiceCommandUserMessage {
     __obj.asInstanceOf[VoiceCommandUserMessage]
   }
   
-  extension [Self <: VoiceCommandUserMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VoiceCommandUserMessage] (val x: Self) extends AnyVal {
     
     inline def setDisplayMessage(value: String): Self = StObject.set(x, "displayMessage", value.asInstanceOf[js.Any])
     

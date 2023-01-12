@@ -27,7 +27,8 @@ object distTypesClassicEditorSystemDistComponentsColorMod extends Shortcut {
       __obj.asInstanceOf[ColorProps]
     }
     
-    extension [Self <: ColorProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColorProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

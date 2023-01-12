@@ -66,7 +66,8 @@ object mod {
       __obj.asInstanceOf[Features]
     }
     
-    extension [Self <: Features](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Features] (val x: Self) extends AnyVal {
       
       inline def setDepth(value: Double): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
       
@@ -139,7 +140,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setColorspace(value: Any): Self = StObject.set(x, "colorspace", value.asInstanceOf[js.Any])
       
@@ -218,7 +220,8 @@ object mod {
       __obj.asInstanceOf[ResizeArgs_]
     }
     
-    extension [Self <: ResizeArgs_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResizeArgs_] (val x: Self) extends AnyVal {
       
       inline def setArgs(value: js.Array[String]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       

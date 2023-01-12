@@ -68,7 +68,8 @@ object InstrumentationBatchReport {
     __obj.asInstanceOf[InstrumentationBatchReport]
   }
   
-  extension [Self <: InstrumentationBatchReport](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InstrumentationBatchReport] (val x: Self) extends AnyVal {
     
     inline def setAppUnderTestId(value: Id): Self = StObject.set(x, "appUnderTestId", value.asInstanceOf[js.Any])
     

@@ -80,7 +80,8 @@ object FieldSchemaInFormDateTime {
     __obj.asInstanceOf[FieldSchemaInFormDateTime]
   }
   
-  extension [Self <: FieldSchemaInFormDateTime](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FieldSchemaInFormDateTime] (val x: Self) extends AnyVal {
     
     inline def setCalendarType(value: DateTimeCalendarType): Self = StObject.set(x, "CalendarType", value.asInstanceOf[js.Any])
     

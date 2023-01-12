@@ -51,7 +51,8 @@ object anon {
       __obj.asInstanceOf[Capture]
     }
     
-    extension [Self <: Capture](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Capture] (val x: Self) extends AnyVal {
       
       inline def setCapture(value: Boolean): Self = StObject.set(x, "capture", value.asInstanceOf[js.Any])
       
@@ -80,7 +81,8 @@ object anon {
       __obj.asInstanceOf[Config]
     }
     
-    extension [Self <: Config](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
       
       inline def setConfig(value: ParsedOptions): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
@@ -116,7 +118,8 @@ object anon {
       __obj.asInstanceOf[Hours]
     }
     
-    extension [Self <: Hours](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Hours] (val x: Self) extends AnyVal {
       
       inline def setHours(value: Double): Self = StObject.set(x, "hours", value.asInstanceOf[js.Any])
       
@@ -142,7 +145,8 @@ object anon {
       __obj.asInstanceOf[Longhand]
     }
     
-    extension [Self <: Longhand](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Longhand] (val x: Self) extends AnyVal {
       
       inline def setLonghand(
         value: js.Tuple12[String, String, String, String, String, String, String, String, String, String, String, String]
@@ -174,7 +178,8 @@ object anon {
       __obj.asInstanceOf[PartialConfig]
     }
     
-    extension [Self <: PartialConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialConfig] (val x: Self) extends AnyVal {
       
       inline def setAltFormat(value: String): Self = StObject.set(x, "altFormat", value.asInstanceOf[js.Any])
       
@@ -240,7 +245,8 @@ object anon {
       __obj.asInstanceOf[PartialCustomLocale]
     }
     
-    extension [Self <: PartialCustomLocale](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialCustomLocale] (val x: Self) extends AnyVal {
       
       inline def setAmPM(value: js.Tuple2[String, String]): Self = StObject.set(x, "amPM", value.asInstanceOf[js.Any])
       
@@ -454,7 +460,8 @@ object anon {
       __obj.asInstanceOf[PartialParsedOptions]
     }
     
-    extension [Self <: PartialParsedOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialParsedOptions] (val x: Self) extends AnyVal {
       
       inline def setAllowInput(value: Boolean): Self = StObject.set(x, "allowInput", value.asInstanceOf[js.Any])
       
@@ -783,7 +790,8 @@ object anon {
       __obj.asInstanceOf[Remove]
     }
     
-    extension [Self <: Remove](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Remove] (val x: Self) extends AnyVal {
       
       inline def setRemove(value: () => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction0(value))
     }
@@ -805,7 +813,8 @@ object anon {
       __obj.asInstanceOf[Shorthand]
     }
     
-    extension [Self <: Shorthand](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Shorthand] (val x: Self) extends AnyVal {
       
       inline def setLonghand(value: js.Tuple7[String, String, String, String, String, String, String]): Self = StObject.set(x, "longhand", value.asInstanceOf[js.Any])
       
@@ -953,7 +962,8 @@ object anon {
       __obj.asInstanceOf[kinkeyCustomLocaledefault]
     }
     
-    extension [Self <: kinkeyCustomLocaledefault](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: kinkeyCustomLocaledefault] (val x: Self) extends AnyVal {
       
       inline def setAr(value: CustomLocale): Self = StObject.set(x, "ar", value.asInstanceOf[js.Any])
       
@@ -1353,7 +1363,8 @@ object anon {
       __obj.asInstanceOf[kinkeyofOptionsOptionsk]
     }
     
-    extension [Self <: kinkeyofOptionsOptionsk](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: kinkeyofOptionsOptionsk] (val x: Self) extends AnyVal {
       
       inline def setAllowInput(value: Boolean): Self = StObject.set(x, "allowInput", value.asInstanceOf[js.Any])
       

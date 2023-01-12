@@ -18,7 +18,8 @@ object StopFailbackRequest {
     __obj.asInstanceOf[StopFailbackRequest]
   }
   
-  extension [Self <: StopFailbackRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StopFailbackRequest] (val x: Self) extends AnyVal {
     
     inline def setRecoveryInstanceID(value: RecoveryInstanceID): Self = StObject.set(x, "recoveryInstanceID", value.asInstanceOf[js.Any])
   }

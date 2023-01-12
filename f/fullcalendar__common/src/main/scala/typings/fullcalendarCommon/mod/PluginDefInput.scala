@@ -82,7 +82,8 @@ object PluginDefInput {
     __obj.asInstanceOf[PluginDefInput]
   }
   
-  extension [Self <: PluginDefInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PluginDefInput] (val x: Self) extends AnyVal {
     
     inline def setCalendarInteractions(value: js.Array[CalendarInteractionClass]): Self = StObject.set(x, "calendarInteractions", value.asInstanceOf[js.Any])
     

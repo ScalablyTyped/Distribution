@@ -19,7 +19,8 @@ object Acceptance {
     __obj.asInstanceOf[Acceptance]
   }
   
-  extension [Self <: Acceptance](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Acceptance] (val x: Self) extends AnyVal {
     
     inline def setAcceptance(value: TopicValidatorResult): Self = StObject.set(x, "acceptance", value.asInstanceOf[js.Any])
     

@@ -63,7 +63,8 @@ object EmailIrmInfo {
     __obj.asInstanceOf[EmailIrmInfo]
   }
   
-  extension [Self <: EmailIrmInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EmailIrmInfo] (val x: Self) extends AnyVal {
     
     inline def setCanEdit(value: Boolean): Self = StObject.set(x, "canEdit", value.asInstanceOf[js.Any])
     

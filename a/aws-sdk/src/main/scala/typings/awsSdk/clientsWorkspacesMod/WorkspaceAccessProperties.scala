@@ -53,7 +53,8 @@ object WorkspaceAccessProperties {
     __obj.asInstanceOf[WorkspaceAccessProperties]
   }
   
-  extension [Self <: WorkspaceAccessProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkspaceAccessProperties] (val x: Self) extends AnyVal {
     
     inline def setDeviceTypeAndroid(value: AccessPropertyValue): Self = StObject.set(x, "DeviceTypeAndroid", value.asInstanceOf[js.Any])
     

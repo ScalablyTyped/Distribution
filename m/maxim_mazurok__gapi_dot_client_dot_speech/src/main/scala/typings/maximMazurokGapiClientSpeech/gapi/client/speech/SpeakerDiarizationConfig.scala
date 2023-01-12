@@ -31,7 +31,8 @@ object SpeakerDiarizationConfig {
     __obj.asInstanceOf[SpeakerDiarizationConfig]
   }
   
-  extension [Self <: SpeakerDiarizationConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpeakerDiarizationConfig] (val x: Self) extends AnyVal {
     
     inline def setEnableSpeakerDiarization(value: Boolean): Self = StObject.set(x, "enableSpeakerDiarization", value.asInstanceOf[js.Any])
     

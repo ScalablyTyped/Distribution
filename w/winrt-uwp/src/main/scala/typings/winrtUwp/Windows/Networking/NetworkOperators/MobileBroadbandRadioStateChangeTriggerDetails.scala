@@ -18,7 +18,8 @@ object MobileBroadbandRadioStateChangeTriggerDetails {
     __obj.asInstanceOf[MobileBroadbandRadioStateChangeTriggerDetails]
   }
   
-  extension [Self <: MobileBroadbandRadioStateChangeTriggerDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MobileBroadbandRadioStateChangeTriggerDetails] (val x: Self) extends AnyVal {
     
     inline def setRadioStateChanges(value: IVectorView[MobileBroadbandRadioStateChange]): Self = StObject.set(x, "radioStateChanges", value.asInstanceOf[js.Any])
   }

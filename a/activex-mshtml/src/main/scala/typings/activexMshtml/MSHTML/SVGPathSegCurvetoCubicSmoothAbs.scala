@@ -37,7 +37,8 @@ object SVGPathSegCurvetoCubicSmoothAbs {
     __obj.asInstanceOf[SVGPathSegCurvetoCubicSmoothAbs]
   }
   
-  extension [Self <: SVGPathSegCurvetoCubicSmoothAbs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SVGPathSegCurvetoCubicSmoothAbs] (val x: Self) extends AnyVal {
     
     inline def setMSHTMLDotSVGPathSegCurvetoCubicSmoothAbs_typekey(value: SVGPathSegCurvetoCubicSmoothAbs): Self = StObject.set(x, "MSHTML.SVGPathSegCurvetoCubicSmoothAbs_typekey", value.asInstanceOf[js.Any])
     

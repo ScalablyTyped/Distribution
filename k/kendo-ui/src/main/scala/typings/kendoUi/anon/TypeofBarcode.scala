@@ -20,7 +20,8 @@ object TypeofBarcode {
     __obj.asInstanceOf[TypeofBarcode]
   }
   
-  extension [Self <: TypeofBarcode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofBarcode] (val x: Self) extends AnyVal {
     
     inline def setExtend(value: js.Object => Barcode): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
     

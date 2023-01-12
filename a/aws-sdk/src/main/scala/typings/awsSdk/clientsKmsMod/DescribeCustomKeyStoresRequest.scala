@@ -33,7 +33,8 @@ object DescribeCustomKeyStoresRequest {
     __obj.asInstanceOf[DescribeCustomKeyStoresRequest]
   }
   
-  extension [Self <: DescribeCustomKeyStoresRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeCustomKeyStoresRequest] (val x: Self) extends AnyVal {
     
     inline def setCustomKeyStoreId(value: CustomKeyStoreIdType): Self = StObject.set(x, "CustomKeyStoreId", value.asInstanceOf[js.Any])
     

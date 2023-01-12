@@ -25,7 +25,8 @@ object uirouterCoreLibRouterAugmentingMod {
       __obj.asInstanceOf[typings.uirouterAngularjs.mod.uirouterCoreLibRouterAugmentingMod.UIRouter]
     }
     
-    extension [Self <: typings.uirouterAngularjs.mod.uirouterCoreLibRouterAugmentingMod.UIRouter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.uirouterAngularjs.mod.uirouterCoreLibRouterAugmentingMod.UIRouter] (val x: Self) extends AnyVal {
       
       inline def setStateProvider(value: typings.uirouterAngularjs.libStateProviderMod.StateProvider): Self = StObject.set(x, "stateProvider", value.asInstanceOf[js.Any])
       

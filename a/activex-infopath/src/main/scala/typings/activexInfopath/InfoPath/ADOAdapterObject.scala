@@ -47,7 +47,8 @@ object ADOAdapterObject {
     __obj.asInstanceOf[ADOAdapterObject]
   }
   
-  extension [Self <: ADOAdapterObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ADOAdapterObject] (val x: Self) extends AnyVal {
     
     inline def setBuildSQLFromXMLNodes(value: IXMLDOMNode => String): Self = StObject.set(x, "BuildSQLFromXMLNodes", js.Any.fromFunction1(value))
     

@@ -26,7 +26,8 @@ object ArangoSearchViewCollectionLink {
     __obj.asInstanceOf[ArangoSearchViewCollectionLink]
   }
   
-  extension [Self <: ArangoSearchViewCollectionLink](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ArangoSearchViewCollectionLink] (val x: Self) extends AnyVal {
     
     inline def setAnalyzers(value: js.Array[String]): Self = StObject.set(x, "analyzers", value.asInstanceOf[js.Any])
     

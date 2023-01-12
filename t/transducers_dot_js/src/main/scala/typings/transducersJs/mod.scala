@@ -41,7 +41,8 @@ object mod {
     @js.native
     val ^ : ReducedConstructor = js.native
     
-    extension [Self <: Reduced[?], T](x: Self & Reduced[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Reduced[?], T] (val x: Self & Reduced[T]) extends AnyVal {
       
       inline def `set@@transducerSlashreduced`(value: `true`): Self = StObject.set(x, "@@transducer/reduced", value.asInstanceOf[js.Any])
       
@@ -220,7 +221,8 @@ object mod {
       __obj.asInstanceOf[CompletingTransformer[TResult, TCompleteResult, TInput]]
     }
     
-    extension [Self <: CompletingTransformer[?, ?, ?], TResult, TCompleteResult, TInput](x: Self & (CompletingTransformer[TResult, TCompleteResult, TInput])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CompletingTransformer[?, ?, ?], TResult, TCompleteResult, TInput] (val x: Self & (CompletingTransformer[TResult, TCompleteResult, TInput])) extends AnyVal {
       
       inline def `set@@transducerSlashinit`(value: () => TResult | Unit): Self = StObject.set(x, "@@transducer/init", js.Any.fromFunction0(value))
       

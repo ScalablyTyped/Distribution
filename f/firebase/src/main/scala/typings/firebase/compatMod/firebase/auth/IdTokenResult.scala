@@ -69,7 +69,8 @@ object IdTokenResult {
     __obj.asInstanceOf[IdTokenResult]
   }
   
-  extension [Self <: IdTokenResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IdTokenResult] (val x: Self) extends AnyVal {
     
     inline def setAuthTime(value: String): Self = StObject.set(x, "authTime", value.asInstanceOf[js.Any])
     

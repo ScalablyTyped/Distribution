@@ -50,7 +50,8 @@ object mod {
       __obj.asInstanceOf[Issue]
     }
     
-    extension [Self <: Issue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Issue] (val x: Self) extends AnyVal {
       
       inline def setIssue(value: IssueRecord): Self = StObject.set(x, "issue", value.asInstanceOf[js.Any])
     }
@@ -67,7 +68,8 @@ object mod {
       __obj.asInstanceOf[IssueData]
     }
     
-    extension [Self <: IssueData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IssueData] (val x: Self) extends AnyVal {
       
       inline def setIssue(value: IssueParams): Self = StObject.set(x, "issue", value.asInstanceOf[js.Any])
     }
@@ -104,7 +106,8 @@ object mod {
       __obj.asInstanceOf[IssueParams]
     }
     
-    extension [Self <: IssueParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IssueParams] (val x: Self) extends AnyVal {
       
       inline def setAssigned_to_id(value: Double): Self = StObject.set(x, "assigned_to_id", value.asInstanceOf[js.Any])
       
@@ -212,7 +215,8 @@ object mod {
       __obj.asInstanceOf[IssueRecord]
     }
     
-    extension [Self <: IssueRecord](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IssueRecord] (val x: Self) extends AnyVal {
       
       inline def setAssigned_to(value: IssueRecordField): Self = StObject.set(x, "assigned_to", value.asInstanceOf[js.Any])
       
@@ -277,7 +281,8 @@ object mod {
       __obj.asInstanceOf[IssueRecordField]
     }
     
-    extension [Self <: IssueRecordField](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IssueRecordField] (val x: Self) extends AnyVal {
       
       inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -298,7 +303,8 @@ object mod {
       __obj.asInstanceOf[Issues]
     }
     
-    extension [Self <: Issues](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Issues] (val x: Self) extends AnyVal {
       
       inline def setIssues(value: js.Array[IssueRecord]): Self = StObject.set(x, "issues", value.asInstanceOf[js.Any])
       
@@ -321,7 +327,8 @@ object mod {
       __obj.asInstanceOf[UploadRecord]
     }
     
-    extension [Self <: UploadRecord](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UploadRecord] (val x: Self) extends AnyVal {
       
       inline def setContent_type(value: String): Self = StObject.set(x, "content_type", value.asInstanceOf[js.Any])
       
@@ -344,7 +351,8 @@ object mod {
       __obj.asInstanceOf[UploadResult]
     }
     
-    extension [Self <: UploadResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UploadResult] (val x: Self) extends AnyVal {
       
       inline def setUpload(value: UploadRecord): Self = StObject.set(x, "upload", value.asInstanceOf[js.Any])
     }

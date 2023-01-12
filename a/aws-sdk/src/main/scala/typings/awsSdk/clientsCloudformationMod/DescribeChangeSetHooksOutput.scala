@@ -48,7 +48,8 @@ object DescribeChangeSetHooksOutput {
     __obj.asInstanceOf[DescribeChangeSetHooksOutput]
   }
   
-  extension [Self <: DescribeChangeSetHooksOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeChangeSetHooksOutput] (val x: Self) extends AnyVal {
     
     inline def setChangeSetId(value: ChangeSetId): Self = StObject.set(x, "ChangeSetId", value.asInstanceOf[js.Any])
     

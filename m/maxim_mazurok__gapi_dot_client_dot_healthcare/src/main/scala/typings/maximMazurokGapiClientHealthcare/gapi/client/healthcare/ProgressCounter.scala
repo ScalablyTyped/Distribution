@@ -22,7 +22,8 @@ object ProgressCounter {
     __obj.asInstanceOf[ProgressCounter]
   }
   
-  extension [Self <: ProgressCounter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProgressCounter] (val x: Self) extends AnyVal {
     
     inline def setFailure(value: String): Self = StObject.set(x, "failure", value.asInstanceOf[js.Any])
     

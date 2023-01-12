@@ -27,7 +27,8 @@ object distSrcGeneralDistComponentsRefundSmallMod extends Shortcut {
       __obj.asInstanceOf[RefundSmallProps]
     }
     
-    extension [Self <: RefundSmallProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RefundSmallProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

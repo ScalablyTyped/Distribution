@@ -21,7 +21,8 @@ object EnumProperty {
     __obj.asInstanceOf[EnumProperty[EnumType]]
   }
   
-  extension [Self <: EnumProperty[?], EnumType](x: Self & EnumProperty[EnumType]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnumProperty[?], EnumType] (val x: Self & EnumProperty[EnumType]) extends AnyVal {
     
     inline def setRaw(value: EnumType): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
     

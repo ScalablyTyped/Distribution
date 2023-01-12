@@ -27,7 +27,8 @@ object distTypesGeneralDistComponentsBowMod extends Shortcut {
       __obj.asInstanceOf[BowProps]
     }
     
-    extension [Self <: BowProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BowProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

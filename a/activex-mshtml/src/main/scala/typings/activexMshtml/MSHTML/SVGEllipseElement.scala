@@ -76,7 +76,8 @@ object SVGEllipseElement {
     __obj.asInstanceOf[SVGEllipseElement]
   }
   
-  extension [Self <: SVGEllipseElement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SVGEllipseElement] (val x: Self) extends AnyVal {
     
     inline def setCx(value: SVGAnimatedLength): Self = StObject.set(x, "cx", value.asInstanceOf[js.Any])
     

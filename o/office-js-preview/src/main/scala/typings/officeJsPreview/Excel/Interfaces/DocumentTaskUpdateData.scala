@@ -59,7 +59,8 @@ object DocumentTaskUpdateData {
     __obj.asInstanceOf[DocumentTaskUpdateData]
   }
   
-  extension [Self <: DocumentTaskUpdateData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DocumentTaskUpdateData] (val x: Self) extends AnyVal {
     
     inline def setDueDateTime(value: js.Date): Self = StObject.set(x, "dueDateTime", value.asInstanceOf[js.Any])
     

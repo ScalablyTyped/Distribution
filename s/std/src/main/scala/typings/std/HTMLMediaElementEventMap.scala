@@ -125,7 +125,8 @@ object HTMLMediaElementEventMap {
     __obj.asInstanceOf[HTMLMediaElementEventMap]
   }
   
-  extension [Self <: HTMLMediaElementEventMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HTMLMediaElementEventMap] (val x: Self) extends AnyVal {
     
     inline def setEncrypted(value: MediaEncryptedEvent): Self = StObject.set(x, "encrypted", value.asInstanceOf[js.Any])
     

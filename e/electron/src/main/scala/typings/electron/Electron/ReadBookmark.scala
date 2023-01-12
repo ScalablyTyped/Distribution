@@ -17,7 +17,8 @@ object ReadBookmark {
     __obj.asInstanceOf[ReadBookmark]
   }
   
-  extension [Self <: ReadBookmark](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadBookmark] (val x: Self) extends AnyVal {
     
     inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     

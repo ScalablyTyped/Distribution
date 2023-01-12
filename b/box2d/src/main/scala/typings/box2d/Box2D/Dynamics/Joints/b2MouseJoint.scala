@@ -85,7 +85,8 @@ object b2MouseJoint {
     __obj.asInstanceOf[b2MouseJoint]
   }
   
-  extension [Self <: b2MouseJoint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: b2MouseJoint] (val x: Self) extends AnyVal {
     
     inline def setGetDampingRatio(value: () => Double): Self = StObject.set(x, "GetDampingRatio", js.Any.fromFunction0(value))
     

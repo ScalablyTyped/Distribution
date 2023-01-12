@@ -66,7 +66,8 @@ object CryptoStorage {
     __obj.asInstanceOf[CryptoStorage[T]]
   }
   
-  extension [Self <: CryptoStorage[?], T](x: Self & CryptoStorage[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CryptoStorage[?], T] (val x: Self & CryptoStorage[T]) extends AnyVal {
     
     inline def setClear(value: () => js.Promise[Unit]): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
     

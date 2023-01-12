@@ -57,7 +57,8 @@ object commonCloudfrontMod {
       __obj.asInstanceOf[CloudFrontCustomOrigin]
     }
     
-    extension [Self <: CloudFrontCustomOrigin](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CloudFrontCustomOrigin] (val x: Self) extends AnyVal {
       
       inline def setCustomHeaders(value: CloudFrontHeaders): Self = StObject.set(x, "customHeaders", value.asInstanceOf[js.Any])
       
@@ -90,7 +91,8 @@ object commonCloudfrontMod {
       __obj.asInstanceOf[CloudFrontEvent]
     }
     
-    extension [Self <: CloudFrontEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CloudFrontEvent] (val x: Self) extends AnyVal {
       
       inline def setConfig(value: DistributionDomainName): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     }
@@ -160,7 +162,8 @@ object commonCloudfrontMod {
       __obj.asInstanceOf[CloudFrontFunctionsEvent]
     }
     
-    extension [Self <: CloudFrontFunctionsEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CloudFrontFunctionsEvent] (val x: Self) extends AnyVal {
       
       inline def setContext(value: DistributionId): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
@@ -223,7 +226,8 @@ object commonCloudfrontMod {
       __obj.asInstanceOf[CloudFrontRequest]
     }
     
-    extension [Self <: CloudFrontRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CloudFrontRequest] (val x: Self) extends AnyVal {
       
       inline def setBody(value: Action): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
@@ -260,7 +264,8 @@ object commonCloudfrontMod {
       __obj.asInstanceOf[CloudFrontResponse]
     }
     
-    extension [Self <: CloudFrontResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CloudFrontResponse] (val x: Self) extends AnyVal {
       
       inline def setHeaders(value: CloudFrontHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
@@ -291,7 +296,8 @@ object commonCloudfrontMod {
       __obj.asInstanceOf[CloudFrontResultResponse]
     }
     
-    extension [Self <: CloudFrontResultResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CloudFrontResultResponse] (val x: Self) extends AnyVal {
       
       inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
@@ -338,7 +344,8 @@ object commonCloudfrontMod {
       __obj.asInstanceOf[CloudFrontS3Origin]
     }
     
-    extension [Self <: CloudFrontS3Origin](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CloudFrontS3Origin] (val x: Self) extends AnyVal {
       
       inline def setAuthMethod(value: `origin-access-identity` | none_): Self = StObject.set(x, "authMethod", value.asInstanceOf[js.Any])
       

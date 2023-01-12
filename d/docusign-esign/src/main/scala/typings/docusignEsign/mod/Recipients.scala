@@ -101,7 +101,8 @@ object Recipients {
     __obj.asInstanceOf[Recipients]
   }
   
-  extension [Self <: Recipients](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Recipients] (val x: Self) extends AnyVal {
     
     inline def setAgents(
       value: js.Array[

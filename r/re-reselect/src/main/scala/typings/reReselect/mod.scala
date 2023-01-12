@@ -10010,7 +10010,8 @@ object mod {
       __obj.asInstanceOf[ICacheObject]
     }
     
-    extension [Self <: ICacheObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICacheObject] (val x: Self) extends AnyVal {
       
       inline def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
       
@@ -10053,7 +10054,8 @@ object mod {
       __obj.asInstanceOf[Options[S, C, D]]
     }
     
-    extension [Self <: Options[?, ?, ?], S, C, D](x: Self & (Options[S, C, D])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options[?, ?, ?], S, C, D] (val x: Self & (Options[S, C, D])) extends AnyVal {
       
       inline def setCacheObject(value: ICacheObject): Self = StObject.set(x, "cacheObject", value.asInstanceOf[js.Any])
       
@@ -10137,7 +10139,8 @@ object mod {
       __obj.asInstanceOf[ParametricOptions[S, P, C, D]]
     }
     
-    extension [Self <: ParametricOptions[?, ?, ?, ?], S, P, C, D](x: Self & (ParametricOptions[S, P, C, D])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParametricOptions[?, ?, ?, ?], S, P, C, D] (val x: Self & (ParametricOptions[S, P, C, D])) extends AnyVal {
       
       inline def setCacheObject(value: ICacheObject): Self = StObject.set(x, "cacheObject", value.asInstanceOf[js.Any])
       

@@ -18,7 +18,8 @@ object DisassociateTransitGatewayConnectPeerResponse {
     __obj.asInstanceOf[DisassociateTransitGatewayConnectPeerResponse]
   }
   
-  extension [Self <: DisassociateTransitGatewayConnectPeerResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisassociateTransitGatewayConnectPeerResponse] (val x: Self) extends AnyVal {
     
     inline def setTransitGatewayConnectPeerAssociation(value: TransitGatewayConnectPeerAssociation): Self = StObject.set(x, "TransitGatewayConnectPeerAssociation", value.asInstanceOf[js.Any])
     

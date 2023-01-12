@@ -27,7 +27,8 @@ object SearchProps {
     __obj.asInstanceOf[SearchProps[T]]
   }
   
-  extension [Self <: SearchProps[?], T](x: Self & SearchProps[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchProps[?], T] (val x: Self & SearchProps[T]) extends AnyVal {
     
     inline def setDefaultSearch(value: String): Self = StObject.set(x, "defaultSearch", value.asInstanceOf[js.Any])
     

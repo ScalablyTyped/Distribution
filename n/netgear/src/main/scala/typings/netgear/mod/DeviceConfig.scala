@@ -29,7 +29,8 @@ object DeviceConfig {
     __obj.asInstanceOf[DeviceConfig]
   }
   
-  extension [Self <: DeviceConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeviceConfig] (val x: Self) extends AnyVal {
     
     inline def setBlankState(value: String): Self = StObject.set(x, "BlankState", value.asInstanceOf[js.Any])
     

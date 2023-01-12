@@ -29,7 +29,8 @@ object PartialGetLocationOptions {
     __obj.asInstanceOf[PartialGetLocationOptions]
   }
   
-  extension [Self <: PartialGetLocationOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialGetLocationOptions] (val x: Self) extends AnyVal {
     
     inline def setCacheTimeout(value: Double): Self = StObject.set(x, "cacheTimeout", value.asInstanceOf[js.Any])
     

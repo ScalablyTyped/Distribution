@@ -93,7 +93,8 @@ object libLogMonitorEntryMod {
       __obj.asInstanceOf[Props[S, A]]
     }
     
-    extension [Self <: Props[?, ?], S, A /* <: Action[Any] */](x: Self & (Props[S, A])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Props[?, ?], S, A /* <: Action[Any] */] (val x: Self & (Props[S, A])) extends AnyVal {
       
       inline def setAction(value: A): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       

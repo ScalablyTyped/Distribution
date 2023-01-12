@@ -35,7 +35,8 @@ object BuildReference {
     __obj.asInstanceOf[BuildReference]
   }
   
-  extension [Self <: BuildReference](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BuildReference] (val x: Self) extends AnyVal {
     
     inline def setBranchName(value: String): Self = StObject.set(x, "branchName", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object Softline_ {
     __obj.asInstanceOf[Softline_]
   }
   
-  extension [Self <: Softline_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Softline_] (val x: Self) extends AnyVal {
     
     inline def setSoft(value: `true`): Self = StObject.set(x, "soft", value.asInstanceOf[js.Any])
   }

@@ -21,7 +21,8 @@ object IndexedHotKey {
     __obj.asInstanceOf[IndexedHotKey]
   }
   
-  extension [Self <: IndexedHotKey](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndexedHotKey] (val x: Self) extends AnyVal {
     
     inline def setSparseHotKeys(
       value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: number} */ js.Any

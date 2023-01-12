@@ -23,7 +23,8 @@ object pluploadResize {
     __obj.asInstanceOf[pluploadResize]
   }
   
-  extension [Self <: pluploadResize](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: pluploadResize] (val x: Self) extends AnyVal {
     
     inline def setCrop(value: Boolean): Self = StObject.set(x, "crop", value.asInstanceOf[js.Any])
     

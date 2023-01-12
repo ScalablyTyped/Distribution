@@ -25,7 +25,8 @@ object anon {
       __obj.asInstanceOf[Args]
     }
     
-    extension [Self <: Args](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Args] (val x: Self) extends AnyVal {
       
       inline def setArgs(value: js.Array[Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
@@ -52,7 +53,8 @@ object anon {
       __obj.asInstanceOf[Context[Ctx, Name]]
     }
     
-    extension [Self <: Context[?, ?], Ctx /* <: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in Name ]: (this : Ctx, args : ...any): any} */ js.Any */, Name /* <: String */](x: Self & (Context[Ctx, Name])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Context[?, ?], Ctx /* <: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in Name ]: (this : Ctx, args : ...any): any} */ js.Any */, Name /* <: String */] (val x: Self & (Context[Ctx, Name])) extends AnyVal {
       
       inline def setContext(value: Ctx): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
@@ -73,7 +75,8 @@ object anon {
       __obj.asInstanceOf[ContextCtx[Ctx, Fn]]
     }
     
-    extension [Self <: ContextCtx[?, ?], Ctx, Fn /* <: js.ThisFunction1[/* this */ Ctx, /* repeated */ Any, Unit] */](x: Self & (ContextCtx[Ctx, Fn])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContextCtx[?, ?], Ctx, Fn /* <: js.ThisFunction1[/* this */ Ctx, /* repeated */ Any, Unit] */] (val x: Self & (ContextCtx[Ctx, Fn])) extends AnyVal {
       
       inline def setContext(value: Ctx): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
@@ -94,7 +97,8 @@ object anon {
       __obj.asInstanceOf[ContextFn[Ctx, Fn]]
     }
     
-    extension [Self <: ContextFn[?, ?], Ctx, Fn /* <: js.ThisFunction1[/* this */ Ctx, /* repeated */ Any, Any] */](x: Self & (ContextFn[Ctx, Fn])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContextFn[?, ?], Ctx, Fn /* <: js.ThisFunction1[/* this */ Ctx, /* repeated */ Any, Any] */] (val x: Self & (ContextFn[Ctx, Fn])) extends AnyVal {
       
       inline def setContext(value: Ctx): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
@@ -119,7 +123,8 @@ object anon {
       __obj.asInstanceOf[Effect]
     }
     
-    extension [Self <: Effect](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Effect] (val x: Self) extends AnyVal {
       
       inline def setEffect(value: Any): Self = StObject.set(x, "effect", value.asInstanceOf[js.Any])
       
@@ -146,7 +151,8 @@ object anon {
       __obj.asInstanceOf[Fn[Ctx, Name]]
     }
     
-    extension [Self <: Fn[?, ?], Ctx /* <: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in Name ]: (this : Ctx, args : ...any): void} */ js.Any */, Name /* <: String */](x: Self & (Fn[Ctx, Name])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Fn[?, ?], Ctx /* <: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in Name ]: (this : Ctx, args : ...any): void} */ js.Any */, Name /* <: String */] (val x: Self & (Fn[Ctx, Name])) extends AnyVal {
       
       inline def setContext(value: Ctx): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       

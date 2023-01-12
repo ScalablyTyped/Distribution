@@ -226,7 +226,8 @@ object anon {
       __obj.asInstanceOf[ReadonlySourceMapMappings]
     }
     
-    extension [Self <: ReadonlySourceMapMappings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadonlySourceMapMappings] (val x: Self) extends AnyVal {
       
       inline def setAt(value: Double => js.UndefOr[SourceMapLine]): Self = StObject.set(x, "at", js.Any.fromFunction1(value))
       

@@ -37,7 +37,8 @@ object MemberResult {
     __obj.asInstanceOf[MemberResult]
   }
   
-  extension [Self <: MemberResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MemberResult] (val x: Self) extends AnyVal {
     
     inline def setCaption(value: String): Self = StObject.set(x, "Caption", value.asInstanceOf[js.Any])
     

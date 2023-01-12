@@ -103,7 +103,8 @@ object CreateDeploymentGroupInput {
     __obj.asInstanceOf[CreateDeploymentGroupInput]
   }
   
-  extension [Self <: CreateDeploymentGroupInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateDeploymentGroupInput] (val x: Self) extends AnyVal {
     
     inline def setAlarmConfiguration(value: AlarmConfiguration): Self = StObject.set(x, "alarmConfiguration", value.asInstanceOf[js.Any])
     

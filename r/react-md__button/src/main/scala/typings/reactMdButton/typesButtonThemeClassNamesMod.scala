@@ -80,7 +80,8 @@ object typesButtonThemeClassNamesMod {
       __obj.asInstanceOf[ButtonThemeProps]
     }
     
-    extension [Self <: ButtonThemeProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ButtonThemeProps] (val x: Self) extends AnyVal {
       
       inline def setButtonType(value: ButtonType): Self = StObject.set(x, "buttonType", value.asInstanceOf[js.Any])
       

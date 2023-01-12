@@ -38,7 +38,8 @@ object MutationObserverBaseResult {
     __obj.asInstanceOf[MutationObserverBaseResult[TData, TError, TVariables, TContext]]
   }
   
-  extension [Self <: MutationObserverBaseResult[?, ?, ?, ?], TData, TError, TVariables, TContext](x: Self & (MutationObserverBaseResult[TData, TError, TVariables, TContext])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MutationObserverBaseResult[?, ?, ?, ?], TData, TError, TVariables, TContext] (val x: Self & (MutationObserverBaseResult[TData, TError, TVariables, TContext])) extends AnyVal {
     
     inline def setIsError(value: Boolean): Self = StObject.set(x, "isError", value.asInstanceOf[js.Any])
     

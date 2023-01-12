@@ -37,7 +37,8 @@ object XMLFileAdapterObject {
     __obj.asInstanceOf[XMLFileAdapterObject]
   }
   
-  extension [Self <: XMLFileAdapterObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XMLFileAdapterObject] (val x: Self) extends AnyVal {
     
     inline def setFileURL(value: String): Self = StObject.set(x, "FileURL", value.asInstanceOf[js.Any])
     

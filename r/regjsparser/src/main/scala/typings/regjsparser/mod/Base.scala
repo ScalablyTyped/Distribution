@@ -20,7 +20,8 @@ object Base {
     __obj.asInstanceOf[Base[T]]
   }
   
-  extension [Self <: Base[?], T /* <: AstNodeType */](x: Self & Base[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Base[?], T /* <: AstNodeType */] (val x: Self & Base[T]) extends AnyVal {
     
     inline def setRange(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     

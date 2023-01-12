@@ -45,7 +45,8 @@ object IframeHTMLAttributes {
     __obj.asInstanceOf[IframeHTMLAttributes]
   }
   
-  extension [Self <: IframeHTMLAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IframeHTMLAttributes] (val x: Self) extends AnyVal {
     
     inline def setAllow(value: String): Self = StObject.set(x, "allow", value.asInstanceOf[js.Any])
     

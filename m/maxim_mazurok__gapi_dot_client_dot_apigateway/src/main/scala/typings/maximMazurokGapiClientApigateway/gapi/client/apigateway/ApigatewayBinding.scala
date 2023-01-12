@@ -38,7 +38,8 @@ object ApigatewayBinding {
     __obj.asInstanceOf[ApigatewayBinding]
   }
   
-  extension [Self <: ApigatewayBinding](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApigatewayBinding] (val x: Self) extends AnyVal {
     
     inline def setCondition(value: ApigatewayExpr): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
     

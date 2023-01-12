@@ -21,7 +21,8 @@ object NodesRecording {
     __obj.asInstanceOf[NodesRecording]
   }
   
-  extension [Self <: NodesRecording](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodesRecording] (val x: Self) extends AnyVal {
     
     inline def setCumulative_execution_count(value: long): Self = StObject.set(x, "cumulative_execution_count", value.asInstanceOf[js.Any])
     

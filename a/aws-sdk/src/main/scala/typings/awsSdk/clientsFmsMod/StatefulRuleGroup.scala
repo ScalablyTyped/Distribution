@@ -33,7 +33,8 @@ object StatefulRuleGroup {
     __obj.asInstanceOf[StatefulRuleGroup]
   }
   
-  extension [Self <: StatefulRuleGroup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StatefulRuleGroup] (val x: Self) extends AnyVal {
     
     inline def setOverride(value: NetworkFirewallStatefulRuleGroupOverride): Self = StObject.set(x, "Override", value.asInstanceOf[js.Any])
     

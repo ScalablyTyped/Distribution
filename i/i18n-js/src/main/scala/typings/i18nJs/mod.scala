@@ -198,7 +198,8 @@ object mod {
       __obj.asInstanceOf[ToCurrencyOptions]
     }
     
-    extension [Self <: ToCurrencyOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ToCurrencyOptions] (val x: Self) extends AnyVal {
       
       inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
@@ -229,7 +230,8 @@ object mod {
       __obj.asInstanceOf[ToHumanSizeOptions]
     }
     
-    extension [Self <: ToHumanSizeOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ToHumanSizeOptions] (val x: Self) extends AnyVal {
       
       inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
@@ -260,7 +262,8 @@ object mod {
       __obj.asInstanceOf[ToNumberOptions]
     }
     
-    extension [Self <: ToNumberOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ToNumberOptions] (val x: Self) extends AnyVal {
       
       inline def setDelimiter(value: String): Self = StObject.set(x, "delimiter", value.asInstanceOf[js.Any])
       
@@ -301,7 +304,8 @@ object mod {
       __obj.asInstanceOf[TranslateOptions]
     }
     
-    extension [Self <: TranslateOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TranslateOptions] (val x: Self) extends AnyVal {
       
       inline def setDefaultValue(value: Message): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
       

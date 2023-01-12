@@ -52,7 +52,8 @@ object GEHtmlDivBalloon {
     __obj.asInstanceOf[GEHtmlDivBalloon]
   }
   
-  extension [Self <: GEHtmlDivBalloon](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GEHtmlDivBalloon] (val x: Self) extends AnyVal {
     
     inline def setGetContentDiv(value: () => HTMLDivElement): Self = StObject.set(x, "getContentDiv", js.Any.fromFunction0(value))
     

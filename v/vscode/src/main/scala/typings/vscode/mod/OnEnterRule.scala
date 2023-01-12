@@ -33,7 +33,8 @@ object OnEnterRule {
     __obj.asInstanceOf[OnEnterRule]
   }
   
-  extension [Self <: OnEnterRule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnEnterRule] (val x: Self) extends AnyVal {
     
     inline def setAction(value: EnterAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     

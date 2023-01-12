@@ -119,7 +119,8 @@ object anon {
       __obj.asInstanceOf[BlurButton]
     }
     
-    extension [Self <: BlurButton](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BlurButton] (val x: Self) extends AnyVal {
       
       inline def setBlurButton(value: blurButton): Self = StObject.set(x, "blurButton", value.asInstanceOf[js.Any])
       
@@ -232,7 +233,8 @@ object anon {
       __obj.asInstanceOf[ControlledPropUpdatedSelectedItem]
     }
     
-    extension [Self <: ControlledPropUpdatedSelectedItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ControlledPropUpdatedSelectedItem] (val x: Self) extends AnyVal {
       
       inline def setControlledPropUpdatedSelectedItem(value: typings.downshift.mod.UseComboboxStateChangeTypes.ControlledPropUpdatedSelectedItem): Self = StObject.set(x, "ControlledPropUpdatedSelectedItem", value.asInstanceOf[js.Any])
       
@@ -331,7 +333,8 @@ object anon {
       __obj.asInstanceOf[DropdownClick]
     }
     
-    extension [Self <: DropdownClick](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DropdownClick] (val x: Self) extends AnyVal {
       
       inline def setDropdownClick(value: typings.downshift.mod.UseMultipleSelectionStateChangeTypes.DropdownClick): Self = StObject.set(x, "DropdownClick", value.asInstanceOf[js.Any])
       
@@ -437,7 +440,8 @@ object anon {
       __obj.asInstanceOf[FunctionCloseMenu]
     }
     
-    extension [Self <: FunctionCloseMenu](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FunctionCloseMenu] (val x: Self) extends AnyVal {
       
       inline def setFunctionCloseMenu(value: typings.downshift.mod.UseSelectStateChangeTypes.FunctionCloseMenu): Self = StObject.set(x, "FunctionCloseMenu", value.asInstanceOf[js.Any])
       

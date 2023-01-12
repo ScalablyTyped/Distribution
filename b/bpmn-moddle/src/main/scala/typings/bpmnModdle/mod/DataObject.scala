@@ -35,7 +35,8 @@ object DataObject {
     __obj.asInstanceOf[DataObject]
   }
   
-  extension [Self <: DataObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataObject] (val x: Self) extends AnyVal {
     
     inline def setDataState(value: DataState): Self = StObject.set(x, "dataState", value.asInstanceOf[js.Any])
     

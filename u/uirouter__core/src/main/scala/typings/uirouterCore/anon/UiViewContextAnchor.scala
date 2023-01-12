@@ -17,7 +17,8 @@ object UiViewContextAnchor {
     __obj.asInstanceOf[UiViewContextAnchor]
   }
   
-  extension [Self <: UiViewContextAnchor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UiViewContextAnchor] (val x: Self) extends AnyVal {
     
     inline def setUiViewContextAnchor(value: String): Self = StObject.set(x, "uiViewContextAnchor", value.asInstanceOf[js.Any])
     

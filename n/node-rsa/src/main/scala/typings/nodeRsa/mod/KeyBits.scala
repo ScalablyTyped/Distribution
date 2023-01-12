@@ -18,7 +18,8 @@ object KeyBits {
     __obj.asInstanceOf[KeyBits]
   }
   
-  extension [Self <: KeyBits](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KeyBits] (val x: Self) extends AnyVal {
     
     inline def setB(value: Double): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
   }

@@ -18,7 +18,8 @@ object LoRaWANListDevice {
     __obj.asInstanceOf[LoRaWANListDevice]
   }
   
-  extension [Self <: LoRaWANListDevice](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LoRaWANListDevice] (val x: Self) extends AnyVal {
     
     inline def setDevEui(value: DevEui): Self = StObject.set(x, "DevEui", value.asInstanceOf[js.Any])
     

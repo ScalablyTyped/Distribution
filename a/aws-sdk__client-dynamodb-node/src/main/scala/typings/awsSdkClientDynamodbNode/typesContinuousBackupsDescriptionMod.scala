@@ -31,7 +31,8 @@ object typesContinuousBackupsDescriptionMod {
       __obj.asInstanceOf[ContinuousBackupsDescription]
     }
     
-    extension [Self <: ContinuousBackupsDescription](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContinuousBackupsDescription] (val x: Self) extends AnyVal {
       
       inline def setContinuousBackupsStatus(value: ENABLED | DISABLED | String): Self = StObject.set(x, "ContinuousBackupsStatus", value.asInstanceOf[js.Any])
       
@@ -58,7 +59,8 @@ object typesContinuousBackupsDescriptionMod {
       __obj.asInstanceOf[UnmarshalledContinuousBackupsDescription]
     }
     
-    extension [Self <: UnmarshalledContinuousBackupsDescription](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnmarshalledContinuousBackupsDescription] (val x: Self) extends AnyVal {
       
       inline def setPointInTimeRecoveryDescription(value: UnmarshalledPointInTimeRecoveryDescription): Self = StObject.set(x, "PointInTimeRecoveryDescription", value.asInstanceOf[js.Any])
       

@@ -26,7 +26,8 @@ object CoordinateSpace {
     __obj.asInstanceOf[CoordinateSpace]
   }
   
-  extension [Self <: CoordinateSpace](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CoordinateSpace] (val x: Self) extends AnyVal {
     
     inline def setCoordinateSpace(value: Any): Self = StObject.set(x, "coordinateSpace", value.asInstanceOf[js.Any])
     

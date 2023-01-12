@@ -55,7 +55,8 @@ object PivotFieldData {
     __obj.asInstanceOf[PivotFieldData]
   }
   
-  extension [Self <: PivotFieldData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PivotFieldData] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

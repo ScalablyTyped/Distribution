@@ -23,7 +23,8 @@ object EnumOptionsType {
     __obj.asInstanceOf[EnumOptionsType]
   }
   
-  extension [Self <: EnumOptionsType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnumOptionsType] (val x: Self) extends AnyVal {
     
     inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     

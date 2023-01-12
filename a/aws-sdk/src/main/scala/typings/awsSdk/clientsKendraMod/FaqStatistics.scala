@@ -18,7 +18,8 @@ object FaqStatistics {
     __obj.asInstanceOf[FaqStatistics]
   }
   
-  extension [Self <: FaqStatistics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FaqStatistics] (val x: Self) extends AnyVal {
     
     inline def setIndexedQuestionAnswersCount(value: IndexedQuestionAnswersCount): Self = StObject.set(x, "IndexedQuestionAnswersCount", value.asInstanceOf[js.Any])
   }

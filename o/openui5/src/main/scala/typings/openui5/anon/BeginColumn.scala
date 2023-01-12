@@ -28,7 +28,8 @@ object BeginColumn {
     __obj.asInstanceOf[BeginColumn]
   }
   
-  extension [Self <: BeginColumn](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BeginColumn] (val x: Self) extends AnyVal {
     
     inline def setBeginColumn(value: Boolean): Self = StObject.set(x, "beginColumn", value.asInstanceOf[js.Any])
     

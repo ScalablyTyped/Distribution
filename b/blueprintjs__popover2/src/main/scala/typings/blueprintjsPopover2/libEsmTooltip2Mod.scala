@@ -191,7 +191,8 @@ object libEsmTooltip2Mod {
       __obj.asInstanceOf[ITooltip2Props[TProps]]
     }
     
-    extension [Self <: ITooltip2Props[?], TProps](x: Self & ITooltip2Props[TProps]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITooltip2Props[?], TProps] (val x: Self & ITooltip2Props[TProps]) extends AnyVal {
       
       inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
       

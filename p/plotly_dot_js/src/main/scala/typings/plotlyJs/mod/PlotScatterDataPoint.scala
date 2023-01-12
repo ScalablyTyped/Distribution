@@ -38,7 +38,8 @@ object PlotScatterDataPoint {
     __obj.asInstanceOf[PlotScatterDataPoint]
   }
   
-  extension [Self <: PlotScatterDataPoint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotScatterDataPoint] (val x: Self) extends AnyVal {
     
     inline def setCurveNumber(value: Double): Self = StObject.set(x, "curveNumber", value.asInstanceOf[js.Any])
     

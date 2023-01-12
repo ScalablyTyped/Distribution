@@ -25,7 +25,8 @@ object SetEnableDebugOption {
     __obj.asInstanceOf[SetEnableDebugOption]
   }
   
-  extension [Self <: SetEnableDebugOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetEnableDebugOption] (val x: Self) extends AnyVal {
     
     inline def setComplete(value: /* res */ GeneralCallbackResult => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
     

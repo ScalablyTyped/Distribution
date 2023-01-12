@@ -61,7 +61,8 @@ object AreaCode {
     __obj.asInstanceOf[AreaCode]
   }
   
-  extension [Self <: AreaCode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AreaCode] (val x: Self) extends AnyVal {
     
     inline def setAreaCode(value: String): Self = StObject.set(x, "areaCode", value.asInstanceOf[js.Any])
     

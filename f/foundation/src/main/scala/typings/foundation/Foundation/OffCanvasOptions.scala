@@ -18,7 +18,8 @@ object OffCanvasOptions {
     __obj.asInstanceOf[OffCanvasOptions]
   }
   
-  extension [Self <: OffCanvasOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OffCanvasOptions] (val x: Self) extends AnyVal {
     
     inline def setClose_on_click(value: Boolean): Self = StObject.set(x, "close_on_click", value.asInstanceOf[js.Any])
     

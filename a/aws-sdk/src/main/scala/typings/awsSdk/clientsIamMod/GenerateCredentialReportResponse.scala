@@ -23,7 +23,8 @@ object GenerateCredentialReportResponse {
     __obj.asInstanceOf[GenerateCredentialReportResponse]
   }
   
-  extension [Self <: GenerateCredentialReportResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GenerateCredentialReportResponse] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: ReportStateDescriptionType): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     

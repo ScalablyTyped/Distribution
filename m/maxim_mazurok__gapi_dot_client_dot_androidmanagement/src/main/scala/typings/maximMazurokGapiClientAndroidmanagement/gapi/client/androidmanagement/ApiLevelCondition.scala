@@ -16,7 +16,8 @@ object ApiLevelCondition {
     __obj.asInstanceOf[ApiLevelCondition]
   }
   
-  extension [Self <: ApiLevelCondition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApiLevelCondition] (val x: Self) extends AnyVal {
     
     inline def setMinApiLevel(value: Double): Self = StObject.set(x, "minApiLevel", value.asInstanceOf[js.Any])
     

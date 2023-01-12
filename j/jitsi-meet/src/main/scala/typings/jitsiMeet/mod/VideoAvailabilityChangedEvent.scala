@@ -15,7 +15,8 @@ object VideoAvailabilityChangedEvent {
     __obj.asInstanceOf[VideoAvailabilityChangedEvent]
   }
   
-  extension [Self <: VideoAvailabilityChangedEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VideoAvailabilityChangedEvent] (val x: Self) extends AnyVal {
     
     inline def setAvailable(value: Boolean): Self = StObject.set(x, "available", value.asInstanceOf[js.Any])
   }

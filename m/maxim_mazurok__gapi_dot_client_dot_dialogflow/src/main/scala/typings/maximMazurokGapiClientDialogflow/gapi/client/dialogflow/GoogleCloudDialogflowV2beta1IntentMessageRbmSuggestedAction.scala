@@ -35,7 +35,8 @@ object GoogleCloudDialogflowV2beta1IntentMessageRbmSuggestedAction {
     __obj.asInstanceOf[GoogleCloudDialogflowV2beta1IntentMessageRbmSuggestedAction]
   }
   
-  extension [Self <: GoogleCloudDialogflowV2beta1IntentMessageRbmSuggestedAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDialogflowV2beta1IntentMessageRbmSuggestedAction] (val x: Self) extends AnyVal {
     
     inline def setDial(value: GoogleCloudDialogflowV2beta1IntentMessageRbmSuggestedActionRbmSuggestedActionDial): Self = StObject.set(x, "dial", value.asInstanceOf[js.Any])
     

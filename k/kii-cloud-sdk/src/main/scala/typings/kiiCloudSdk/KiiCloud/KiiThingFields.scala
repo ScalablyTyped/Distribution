@@ -104,7 +104,8 @@ object KiiThingFields {
     __obj.asInstanceOf[KiiThingFields]
   }
   
-  extension [Self <: KiiThingFields](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KiiThingFields] (val x: Self) extends AnyVal {
     
     inline def set_firmwareVersion(value: String): Self = StObject.set(x, "_firmwareVersion", value.asInstanceOf[js.Any])
     

@@ -152,7 +152,8 @@ object PickImplloadingDurationPa {
     __obj.asInstanceOf[PickImplloadingDurationPa]
   }
   
-  extension [Self <: PickImplloadingDurationPa](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickImplloadingDurationPa] (val x: Self) extends AnyVal {
     
     inline def setAction(value: String | `false`): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     

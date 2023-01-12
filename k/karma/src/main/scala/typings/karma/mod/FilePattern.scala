@@ -53,7 +53,8 @@ object FilePattern {
     __obj.asInstanceOf[FilePattern]
   }
   
-  extension [Self <: FilePattern](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FilePattern] (val x: Self) extends AnyVal {
     
     inline def setIncluded(value: Boolean): Self = StObject.set(x, "included", value.asInstanceOf[js.Any])
     

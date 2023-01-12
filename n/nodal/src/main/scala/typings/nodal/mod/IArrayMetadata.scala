@@ -20,7 +20,8 @@ object IArrayMetadata {
     __obj.asInstanceOf[IArrayMetadata]
   }
   
-  extension [Self <: IArrayMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IArrayMetadata] (val x: Self) extends AnyVal {
     
     inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     

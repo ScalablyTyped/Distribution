@@ -16,7 +16,8 @@ object GoogleCloudVideointelligenceV1p1beta1NormalizedBoundingPoly {
     __obj.asInstanceOf[GoogleCloudVideointelligenceV1p1beta1NormalizedBoundingPoly]
   }
   
-  extension [Self <: GoogleCloudVideointelligenceV1p1beta1NormalizedBoundingPoly](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudVideointelligenceV1p1beta1NormalizedBoundingPoly] (val x: Self) extends AnyVal {
     
     inline def setVertices(value: js.Array[GoogleCloudVideointelligenceV1p1beta1NormalizedVertex]): Self = StObject.set(x, "vertices", value.asInstanceOf[js.Any])
     

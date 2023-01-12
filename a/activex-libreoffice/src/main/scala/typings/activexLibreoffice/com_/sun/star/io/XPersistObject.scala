@@ -76,7 +76,8 @@ object XPersistObject {
     __obj.asInstanceOf[XPersistObject]
   }
   
-  extension [Self <: XPersistObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XPersistObject] (val x: Self) extends AnyVal {
     
     inline def setGetServiceName(value: () => String): Self = StObject.set(x, "getServiceName", js.Any.fromFunction0(value))
     

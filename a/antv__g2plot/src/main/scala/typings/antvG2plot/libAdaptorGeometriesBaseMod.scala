@@ -160,7 +160,8 @@ object libAdaptorGeometriesBaseMod {
       __obj.asInstanceOf[GeometryOptions]
     }
     
-    extension [Self <: GeometryOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GeometryOptions] (val x: Self) extends AnyVal {
       
       inline def setAnimation(value: Animation): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
       
@@ -407,7 +408,8 @@ object libAdaptorGeometriesBaseMod {
       __obj.asInstanceOf[Geometry_]
     }
     
-    extension [Self <: Geometry_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Geometry_] (val x: Self) extends AnyVal {
       
       inline def setArgs(value: Any): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
@@ -495,7 +497,8 @@ object libAdaptorGeometriesBaseMod {
       __obj.asInstanceOf[MappingOptions]
     }
     
-    extension [Self <: MappingOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MappingOptions] (val x: Self) extends AnyVal {
       
       inline def setColor(value: ColorAttr): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       

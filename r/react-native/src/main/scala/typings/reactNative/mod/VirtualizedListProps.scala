@@ -18,7 +18,8 @@ object VirtualizedListProps {
     __obj.asInstanceOf[VirtualizedListProps[ItemT]]
   }
   
-  extension [Self <: VirtualizedListProps[?], ItemT](x: Self & VirtualizedListProps[ItemT]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VirtualizedListProps[?], ItemT] (val x: Self & VirtualizedListProps[ItemT]) extends AnyVal {
     
     inline def setRenderItem(value: /* info */ ListRenderItemInfo[ItemT] => ReactElement | Null): Self = StObject.set(x, "renderItem", js.Any.fromFunction1(value))
     

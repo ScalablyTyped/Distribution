@@ -34,7 +34,8 @@ object storage {
       __obj.asInstanceOf[StorageCapacityInfo]
     }
     
-    extension [Self <: StorageCapacityInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StorageCapacityInfo] (val x: Self) extends AnyVal {
       
       inline def setAvailableCapacity(value: integer): Self = StObject.set(x, "availableCapacity", value.asInstanceOf[js.Any])
       
@@ -87,7 +88,8 @@ object storage {
       __obj.asInstanceOf[StorageUnitInfo]
     }
     
-    extension [Self <: StorageUnitInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StorageUnitInfo] (val x: Self) extends AnyVal {
       
       inline def setCapacity(value: integer): Self = StObject.set(x, "capacity", value.asInstanceOf[js.Any])
       

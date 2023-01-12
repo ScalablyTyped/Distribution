@@ -16,7 +16,8 @@ object LookupInvoiceCurrencyResponse {
     __obj.asInstanceOf[LookupInvoiceCurrencyResponse]
   }
   
-  extension [Self <: LookupInvoiceCurrencyResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LookupInvoiceCurrencyResponse] (val x: Self) extends AnyVal {
     
     inline def setCurrencyCode(value: String): Self = StObject.set(x, "currencyCode", value.asInstanceOf[js.Any])
     

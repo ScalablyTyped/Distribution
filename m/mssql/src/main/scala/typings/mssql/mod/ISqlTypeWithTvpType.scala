@@ -25,7 +25,8 @@ object ISqlTypeWithTvpType {
     __obj.asInstanceOf[ISqlTypeWithTvpType]
   }
   
-  extension [Self <: ISqlTypeWithTvpType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISqlTypeWithTvpType] (val x: Self) extends AnyVal {
     
     inline def setTvpType(value: Any): Self = StObject.set(x, "tvpType", value.asInstanceOf[js.Any])
     

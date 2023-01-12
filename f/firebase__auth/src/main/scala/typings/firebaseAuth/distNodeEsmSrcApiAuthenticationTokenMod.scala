@@ -35,7 +35,8 @@ object distNodeEsmSrcApiAuthenticationTokenMod {
       __obj.asInstanceOf[RequestStsTokenResponse]
     }
     
-    extension [Self <: RequestStsTokenResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequestStsTokenResponse] (val x: Self) extends AnyVal {
       
       inline def setAccessToken(value: String): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
       

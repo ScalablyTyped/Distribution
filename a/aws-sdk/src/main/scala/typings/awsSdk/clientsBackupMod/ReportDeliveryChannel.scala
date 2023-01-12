@@ -28,7 +28,8 @@ object ReportDeliveryChannel {
     __obj.asInstanceOf[ReportDeliveryChannel]
   }
   
-  extension [Self <: ReportDeliveryChannel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReportDeliveryChannel] (val x: Self) extends AnyVal {
     
     inline def setFormats(value: FormatList): Self = StObject.set(x, "Formats", value.asInstanceOf[js.Any])
     

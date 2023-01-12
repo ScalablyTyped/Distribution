@@ -17,7 +17,8 @@ object FieldSizeUsage {
     __obj.asInstanceOf[FieldSizeUsage]
   }
   
-  extension [Self <: FieldSizeUsage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FieldSizeUsage] (val x: Self) extends AnyVal {
     
     inline def setSize(value: ByteSize): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     

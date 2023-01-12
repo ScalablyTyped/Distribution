@@ -51,7 +51,8 @@ object IgResponsiveContainerMethods {
     __obj.asInstanceOf[IgResponsiveContainerMethods]
   }
   
-  extension [Self <: IgResponsiveContainerMethods](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgResponsiveContainerMethods] (val x: Self) extends AnyVal {
     
     inline def setAddCallback(value: (js.Function, js.Object, Double, js.Object) => Unit): Self = StObject.set(x, "addCallback", js.Any.fromFunction4(value))
     

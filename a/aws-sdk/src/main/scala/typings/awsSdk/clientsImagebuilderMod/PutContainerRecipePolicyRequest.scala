@@ -23,7 +23,8 @@ object PutContainerRecipePolicyRequest {
     __obj.asInstanceOf[PutContainerRecipePolicyRequest]
   }
   
-  extension [Self <: PutContainerRecipePolicyRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutContainerRecipePolicyRequest] (val x: Self) extends AnyVal {
     
     inline def setContainerRecipeArn(value: ContainerRecipeArn): Self = StObject.set(x, "containerRecipeArn", value.asInstanceOf[js.Any])
     

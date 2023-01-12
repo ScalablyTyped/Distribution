@@ -17,7 +17,8 @@ object MlFlushJobResponse {
     __obj.asInstanceOf[MlFlushJobResponse]
   }
   
-  extension [Self <: MlFlushJobResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlFlushJobResponse] (val x: Self) extends AnyVal {
     
     inline def setFlushed(value: Boolean): Self = StObject.set(x, "flushed", value.asInstanceOf[js.Any])
     

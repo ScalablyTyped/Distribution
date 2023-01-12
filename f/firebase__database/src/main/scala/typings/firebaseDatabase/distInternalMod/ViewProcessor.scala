@@ -15,7 +15,8 @@ object ViewProcessor {
     __obj.asInstanceOf[ViewProcessor]
   }
   
-  extension [Self <: ViewProcessor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ViewProcessor] (val x: Self) extends AnyVal {
     
     inline def setFilter(value: NodeFilter2): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
   }

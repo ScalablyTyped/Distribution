@@ -18,7 +18,8 @@ object BatchCreateVehicleRequest {
     __obj.asInstanceOf[BatchCreateVehicleRequest]
   }
   
-  extension [Self <: BatchCreateVehicleRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchCreateVehicleRequest] (val x: Self) extends AnyVal {
     
     inline def setVehicles(value: createVehicleRequestItems): Self = StObject.set(x, "vehicles", value.asInstanceOf[js.Any])
     

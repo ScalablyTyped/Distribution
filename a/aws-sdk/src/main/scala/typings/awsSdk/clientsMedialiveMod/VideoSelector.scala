@@ -33,7 +33,8 @@ object VideoSelector {
     __obj.asInstanceOf[VideoSelector]
   }
   
-  extension [Self <: VideoSelector](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VideoSelector] (val x: Self) extends AnyVal {
     
     inline def setColorSpace(value: VideoSelectorColorSpace): Self = StObject.set(x, "ColorSpace", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object EnumValuesCloak {
     __obj.asInstanceOf[EnumValuesCloak]
   }
   
-  extension [Self <: EnumValuesCloak](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnumValuesCloak] (val x: Self) extends AnyVal {
     
     inline def setEnumValues(value: Cloak): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
   }

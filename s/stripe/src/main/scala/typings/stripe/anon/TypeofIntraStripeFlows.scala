@@ -15,7 +15,8 @@ object TypeofIntraStripeFlows {
     __obj.asInstanceOf[TypeofIntraStripeFlows]
   }
   
-  extension [Self <: TypeofIntraStripeFlows](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofIntraStripeFlows] (val x: Self) extends AnyVal {
     
     inline def setStatusDetail(value: Any): Self = StObject.set(x, "StatusDetail", value.asInstanceOf[js.Any])
   }

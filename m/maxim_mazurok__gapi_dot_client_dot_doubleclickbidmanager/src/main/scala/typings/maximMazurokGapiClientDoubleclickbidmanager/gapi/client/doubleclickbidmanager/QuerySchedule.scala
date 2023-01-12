@@ -25,7 +25,8 @@ object QuerySchedule {
     __obj.asInstanceOf[QuerySchedule]
   }
   
-  extension [Self <: QuerySchedule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QuerySchedule] (val x: Self) extends AnyVal {
     
     inline def setEndDate(value: Date): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
     

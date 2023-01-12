@@ -36,7 +36,8 @@ object R3PartialDeclaration {
     __obj.asInstanceOf[R3PartialDeclaration]
   }
   
-  extension [Self <: R3PartialDeclaration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: R3PartialDeclaration] (val x: Self) extends AnyVal {
     
     inline def setMinVersion(value: String): Self = StObject.set(x, "minVersion", value.asInstanceOf[js.Any])
     

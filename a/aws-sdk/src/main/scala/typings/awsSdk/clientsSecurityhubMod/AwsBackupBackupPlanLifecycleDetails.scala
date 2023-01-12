@@ -23,7 +23,8 @@ object AwsBackupBackupPlanLifecycleDetails {
     __obj.asInstanceOf[AwsBackupBackupPlanLifecycleDetails]
   }
   
-  extension [Self <: AwsBackupBackupPlanLifecycleDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsBackupBackupPlanLifecycleDetails] (val x: Self) extends AnyVal {
     
     inline def setDeleteAfterDays(value: Long): Self = StObject.set(x, "DeleteAfterDays", value.asInstanceOf[js.Any])
     

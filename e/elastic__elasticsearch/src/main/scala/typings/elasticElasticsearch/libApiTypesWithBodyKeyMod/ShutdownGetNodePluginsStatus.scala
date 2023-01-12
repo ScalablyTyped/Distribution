@@ -15,7 +15,8 @@ object ShutdownGetNodePluginsStatus {
     __obj.asInstanceOf[ShutdownGetNodePluginsStatus]
   }
   
-  extension [Self <: ShutdownGetNodePluginsStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShutdownGetNodePluginsStatus] (val x: Self) extends AnyVal {
     
     inline def setStatus(value: ShutdownGetNodeShutdownStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }

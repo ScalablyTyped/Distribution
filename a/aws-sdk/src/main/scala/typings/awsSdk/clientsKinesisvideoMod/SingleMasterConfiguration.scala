@@ -18,7 +18,8 @@ object SingleMasterConfiguration {
     __obj.asInstanceOf[SingleMasterConfiguration]
   }
   
-  extension [Self <: SingleMasterConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SingleMasterConfiguration] (val x: Self) extends AnyVal {
     
     inline def setMessageTtlSeconds(value: MessageTtlSeconds): Self = StObject.set(x, "MessageTtlSeconds", value.asInstanceOf[js.Any])
     

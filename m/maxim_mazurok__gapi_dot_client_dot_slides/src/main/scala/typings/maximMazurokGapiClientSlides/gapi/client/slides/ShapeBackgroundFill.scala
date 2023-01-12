@@ -22,7 +22,8 @@ object ShapeBackgroundFill {
     __obj.asInstanceOf[ShapeBackgroundFill]
   }
   
-  extension [Self <: ShapeBackgroundFill](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShapeBackgroundFill] (val x: Self) extends AnyVal {
     
     inline def setPropertyState(value: String): Self = StObject.set(x, "propertyState", value.asInstanceOf[js.Any])
     

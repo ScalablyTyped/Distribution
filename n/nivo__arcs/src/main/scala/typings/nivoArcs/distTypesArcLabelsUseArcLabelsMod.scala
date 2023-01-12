@@ -44,7 +44,8 @@ object distTypesArcLabelsUseArcLabelsMod {
       __obj.asInstanceOf[ArcLabel[Datum]]
     }
     
-    extension [Self <: ArcLabel[?], Datum /* <: DatumWithArcAndColor */](x: Self & ArcLabel[Datum]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ArcLabel[?], Datum /* <: DatumWithArcAndColor */] (val x: Self & ArcLabel[Datum]) extends AnyVal {
       
       inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       

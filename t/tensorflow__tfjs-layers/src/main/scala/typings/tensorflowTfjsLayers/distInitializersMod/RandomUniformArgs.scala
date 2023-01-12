@@ -22,7 +22,8 @@ object RandomUniformArgs {
     __obj.asInstanceOf[RandomUniformArgs]
   }
   
-  extension [Self <: RandomUniformArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RandomUniformArgs] (val x: Self) extends AnyVal {
     
     inline def setMaxval(value: Double): Self = StObject.set(x, "maxval", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object PanoramaLocation {
     __obj.asInstanceOf[PanoramaLocation]
   }
   
-  extension [Self <: PanoramaLocation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PanoramaLocation] (val x: Self) extends AnyVal {
     
     inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     

@@ -142,7 +142,8 @@ object mod {
       __obj.asInstanceOf[PiwikTrackOptions]
     }
     
-    extension [Self <: PiwikTrackOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PiwikTrackOptions] (val x: Self) extends AnyVal {
       
       inline def setAction_name(value: String): Self = StObject.set(x, "action_name", value.asInstanceOf[js.Any])
       

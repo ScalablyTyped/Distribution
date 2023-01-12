@@ -17,7 +17,8 @@ object AnimationEffectReadOnly {
     __obj.asInstanceOf[AnimationEffectReadOnly]
   }
   
-  extension [Self <: AnimationEffectReadOnly](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnimationEffectReadOnly] (val x: Self) extends AnyVal {
     
     inline def setGetComputedTiming(value: () => ComputedTimingProperties): Self = StObject.set(x, "getComputedTiming", js.Any.fromFunction0(value))
     

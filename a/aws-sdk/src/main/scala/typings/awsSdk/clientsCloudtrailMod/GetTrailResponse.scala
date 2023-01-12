@@ -15,7 +15,8 @@ object GetTrailResponse {
     __obj.asInstanceOf[GetTrailResponse]
   }
   
-  extension [Self <: GetTrailResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetTrailResponse] (val x: Self) extends AnyVal {
     
     inline def setTrail(value: Trail): Self = StObject.set(x, "Trail", value.asInstanceOf[js.Any])
     

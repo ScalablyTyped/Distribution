@@ -26,7 +26,8 @@ object distRequestCommonClientCredentialRequestMod {
       __obj.asInstanceOf[CommonClientCredentialRequest]
     }
     
-    extension [Self <: CommonClientCredentialRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommonClientCredentialRequest] (val x: Self) extends AnyVal {
       
       inline def setAzureRegion(value: AzureRegion): Self = StObject.set(x, "azureRegion", value.asInstanceOf[js.Any])
       

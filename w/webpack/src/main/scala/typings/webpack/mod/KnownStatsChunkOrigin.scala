@@ -25,7 +25,8 @@ object KnownStatsChunkOrigin {
     __obj.asInstanceOf[KnownStatsChunkOrigin]
   }
   
-  extension [Self <: KnownStatsChunkOrigin](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KnownStatsChunkOrigin] (val x: Self) extends AnyVal {
     
     inline def setLoc(value: String): Self = StObject.set(x, "loc", value.asInstanceOf[js.Any])
     

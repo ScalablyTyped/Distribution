@@ -33,7 +33,8 @@ object Dependency {
     __obj.asInstanceOf[Dependency]
   }
   
-  extension [Self <: Dependency](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Dependency] (val x: Self) extends AnyVal {
     
     inline def setDependsOn(value: js.Array[BasicDependency]): Self = StObject.set(x, "dependsOn", value.asInstanceOf[js.Any])
     

@@ -66,7 +66,8 @@ object jQueryCountdown {
       __obj.asInstanceOf[Event]
     }
     
-    extension [Self <: Event](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Event] (val x: Self) extends AnyVal {
       
       inline def setElapsed(value: Boolean): Self = StObject.set(x, "elapsed", value.asInstanceOf[js.Any])
       
@@ -187,7 +188,8 @@ object jQueryCountdown {
       __obj.asInstanceOf[OffsetEvent]
     }
     
-    extension [Self <: OffsetEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OffsetEvent] (val x: Self) extends AnyVal {
       
       inline def setDays(value: Double): Self = StObject.set(x, "days", value.asInstanceOf[js.Any])
       
@@ -243,7 +245,8 @@ object jQueryCountdown {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setDefer(value: Boolean): Self = StObject.set(x, "defer", value.asInstanceOf[js.Any])
       

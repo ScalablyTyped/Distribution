@@ -17,7 +17,8 @@ object SubscriptionActivateRequest {
     __obj.asInstanceOf[SubscriptionActivateRequest]
   }
   
-  extension [Self <: SubscriptionActivateRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubscriptionActivateRequest] (val x: Self) extends AnyVal {
     
     inline def setFetch_by_tx(value: String): Self = StObject.set(x, "fetch_by_tx", value.asInstanceOf[js.Any])
     

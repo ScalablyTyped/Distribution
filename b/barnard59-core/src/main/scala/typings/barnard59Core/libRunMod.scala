@@ -26,7 +26,8 @@ object libRunMod {
       __obj.asInstanceOf[Run]
     }
     
-    extension [Self <: Run](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Run] (val x: Self) extends AnyVal {
       
       inline def setEnd(value: Boolean): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       

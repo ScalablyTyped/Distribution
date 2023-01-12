@@ -43,7 +43,8 @@ object ConnectionAttributes {
     __obj.asInstanceOf[ConnectionAttributes]
   }
   
-  extension [Self <: ConnectionAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConnectionAttributes] (val x: Self) extends AnyVal {
     
     inline def setAuth(value: String): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     

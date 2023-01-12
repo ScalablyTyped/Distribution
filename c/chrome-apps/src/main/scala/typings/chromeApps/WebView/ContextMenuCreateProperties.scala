@@ -81,7 +81,8 @@ object ContextMenuCreateProperties {
     __obj.asInstanceOf[ContextMenuCreateProperties]
   }
   
-  extension [Self <: ContextMenuCreateProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContextMenuCreateProperties] (val x: Self) extends AnyVal {
     
     inline def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object UpdateParam {
     __obj.asInstanceOf[UpdateParam]
   }
   
-  extension [Self <: UpdateParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateParam] (val x: Self) extends AnyVal {
     
     inline def setType(value: UpdateParamType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

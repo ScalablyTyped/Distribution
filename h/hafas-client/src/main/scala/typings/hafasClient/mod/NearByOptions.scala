@@ -67,7 +67,8 @@ object NearByOptions {
     __obj.asInstanceOf[NearByOptions]
   }
   
-  extension [Self <: NearByOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NearByOptions] (val x: Self) extends AnyVal {
     
     inline def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
     

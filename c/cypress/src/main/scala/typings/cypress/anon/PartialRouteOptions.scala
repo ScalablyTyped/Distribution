@@ -35,7 +35,8 @@ object PartialRouteOptions {
     __obj.asInstanceOf[PartialRouteOptions]
   }
   
-  extension [Self <: PartialRouteOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialRouteOptions] (val x: Self) extends AnyVal {
     
     inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
     

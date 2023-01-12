@@ -19,7 +19,8 @@ object AmplitudeSourceProperties {
     __obj.asInstanceOf[AmplitudeSourceProperties]
   }
   
-  extension [Self <: AmplitudeSourceProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AmplitudeSourceProperties] (val x: Self) extends AnyVal {
     
     inline def setObject(value: Object): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
   }

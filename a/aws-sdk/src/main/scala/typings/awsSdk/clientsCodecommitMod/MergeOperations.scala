@@ -23,7 +23,8 @@ object MergeOperations {
     __obj.asInstanceOf[MergeOperations]
   }
   
-  extension [Self <: MergeOperations](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MergeOperations] (val x: Self) extends AnyVal {
     
     inline def setDestination(value: ChangeTypeEnum): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
     

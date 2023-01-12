@@ -16,7 +16,8 @@ object TryGetLockOptions {
     __obj.asInstanceOf[TryGetLockOptions]
   }
   
-  extension [Self <: TryGetLockOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TryGetLockOptions] (val x: Self) extends AnyVal {
     
     inline def setSourceEvent(value: Event): Self = StObject.set(x, "sourceEvent", value.asInstanceOf[js.Any])
     

@@ -142,7 +142,8 @@ object mod {
       __obj.asInstanceOf[AlertDialogContentProps]
     }
     
-    extension [Self <: AlertDialogContentProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AlertDialogContentProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -188,7 +189,8 @@ object mod {
       __obj.asInstanceOf[AlertDialogProps]
     }
     
-    extension [Self <: AlertDialogProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AlertDialogProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

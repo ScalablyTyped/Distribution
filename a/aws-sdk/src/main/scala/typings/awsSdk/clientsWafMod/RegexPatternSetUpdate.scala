@@ -23,7 +23,8 @@ object RegexPatternSetUpdate {
     __obj.asInstanceOf[RegexPatternSetUpdate]
   }
   
-  extension [Self <: RegexPatternSetUpdate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RegexPatternSetUpdate] (val x: Self) extends AnyVal {
     
     inline def setAction(value: ChangeAction): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
     

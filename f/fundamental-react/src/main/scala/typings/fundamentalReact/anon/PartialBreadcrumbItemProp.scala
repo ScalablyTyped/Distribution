@@ -458,7 +458,8 @@ object PartialBreadcrumbItemProp {
     __obj.asInstanceOf[PartialBreadcrumbItemProp]
   }
   
-  extension [Self <: PartialBreadcrumbItemProp](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialBreadcrumbItemProp] (val x: Self) extends AnyVal {
     
     inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object DeleteContentRequest {
     __obj.asInstanceOf[DeleteContentRequest]
   }
   
-  extension [Self <: DeleteContentRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteContentRequest] (val x: Self) extends AnyVal {
     
     inline def setContentId(value: UuidOrArn): Self = StObject.set(x, "contentId", value.asInstanceOf[js.Any])
     

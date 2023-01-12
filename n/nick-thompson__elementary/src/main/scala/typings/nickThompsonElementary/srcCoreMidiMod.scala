@@ -46,7 +46,8 @@ object srcCoreMidiMod {
       __obj.asInstanceOf[MidiControllerEvent]
     }
     
-    extension [Self <: MidiControllerEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MidiControllerEvent] (val x: Self) extends AnyVal {
       
       inline def setChannel(value: Double): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
       
@@ -125,7 +126,8 @@ object srcCoreMidiMod {
       __obj.asInstanceOf[MidiEventBase]
     }
     
-    extension [Self <: MidiEventBase](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MidiEventBase] (val x: Self) extends AnyVal {
       
       inline def setBytes(value: String): Self = StObject.set(x, "bytes", value.asInstanceOf[js.Any])
       
@@ -194,7 +196,8 @@ object srcCoreMidiMod {
       __obj.asInstanceOf[MidiNoteEventBase]
     }
     
-    extension [Self <: MidiNoteEventBase](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MidiNoteEventBase] (val x: Self) extends AnyVal {
       
       inline def setNoteFrequency(value: Double): Self = StObject.set(x, "noteFrequency", value.asInstanceOf[js.Any])
       
@@ -224,7 +227,8 @@ object srcCoreMidiMod {
       __obj.asInstanceOf[MidiNoteOffEvent]
     }
     
-    extension [Self <: MidiNoteOffEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MidiNoteOffEvent] (val x: Self) extends AnyVal {
       
       inline def setType(value: noteOff): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
@@ -250,7 +254,8 @@ object srcCoreMidiMod {
       __obj.asInstanceOf[MidiNoteOnEvent]
     }
     
-    extension [Self <: MidiNoteOnEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MidiNoteOnEvent] (val x: Self) extends AnyVal {
       
       inline def setType(value: noteOn): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
@@ -275,7 +280,8 @@ object srcCoreMidiMod {
       __obj.asInstanceOf[MidiRawEvent]
     }
     
-    extension [Self <: MidiRawEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MidiRawEvent] (val x: Self) extends AnyVal {
       
       inline def setType(value: raw): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }

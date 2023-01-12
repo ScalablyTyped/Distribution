@@ -25,7 +25,8 @@ object FS {
       __obj.asInstanceOf[Lookup]
     }
     
-    extension [Self <: Lookup](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Lookup] (val x: Self) extends AnyVal {
       
       inline def setNode(value: FSNode): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
       

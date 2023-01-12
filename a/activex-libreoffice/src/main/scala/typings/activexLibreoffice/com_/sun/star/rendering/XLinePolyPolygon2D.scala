@@ -66,7 +66,8 @@ object XLinePolyPolygon2D {
     __obj.asInstanceOf[XLinePolyPolygon2D]
   }
   
-  extension [Self <: XLinePolyPolygon2D](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XLinePolyPolygon2D] (val x: Self) extends AnyVal {
     
     inline def setGetPoint(value: (Double, Double) => RealPoint2D): Self = StObject.set(x, "getPoint", js.Any.fromFunction2(value))
     

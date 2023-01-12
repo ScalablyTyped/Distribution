@@ -34,7 +34,8 @@ object DeprecatedOptions {
     __obj.asInstanceOf[DeprecatedOptions[K, V]]
   }
   
-  extension [Self <: DeprecatedOptions[?, ?], K, V](x: Self & (DeprecatedOptions[K, V])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeprecatedOptions[?, ?], K, V] (val x: Self & (DeprecatedOptions[K, V])) extends AnyVal {
     
     inline def setLength(value: (V, K) => Double): Self = StObject.set(x, "length", js.Any.fromFunction2(value))
     

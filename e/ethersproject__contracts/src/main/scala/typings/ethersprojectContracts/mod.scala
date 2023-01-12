@@ -216,7 +216,8 @@ object mod {
       __obj.asInstanceOf[CallOverrides]
     }
     
-    extension [Self <: CallOverrides](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CallOverrides] (val x: Self) extends AnyVal {
       
       inline def setBlockTag(value: BlockTag | js.Promise[BlockTag]): Self = StObject.set(x, "blockTag", value.asInstanceOf[js.Any])
       
@@ -266,7 +267,8 @@ object mod {
       __obj.asInstanceOf[ContractReceipt]
     }
     
-    extension [Self <: ContractReceipt](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContractReceipt] (val x: Self) extends AnyVal {
       
       inline def setEvents(value: js.Array[Event]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
       
@@ -324,7 +326,8 @@ object mod {
       __obj.asInstanceOf[Event]
     }
     
-    extension [Self <: Event](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Event] (val x: Self) extends AnyVal {
       
       inline def setArgs(value: Result): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
@@ -369,7 +372,8 @@ object mod {
       __obj.asInstanceOf[EventFilter]
     }
     
-    extension [Self <: EventFilter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EventFilter] (val x: Self) extends AnyVal {
       
       inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
@@ -410,7 +414,8 @@ object mod {
       __obj.asInstanceOf[Overrides]
     }
     
-    extension [Self <: Overrides](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Overrides] (val x: Self) extends AnyVal {
       
       inline def setAccessList(value: AccessListish): Self = StObject.set(x, "accessList", value.asInstanceOf[js.Any])
       
@@ -465,7 +470,8 @@ object mod {
       __obj.asInstanceOf[PayableOverrides]
     }
     
-    extension [Self <: PayableOverrides](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PayableOverrides] (val x: Self) extends AnyVal {
       
       inline def setValue(value: BigNumberish | js.Promise[BigNumberish]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
@@ -510,7 +516,8 @@ object mod {
       __obj.asInstanceOf[PopulatedTransaction]
     }
     
-    extension [Self <: PopulatedTransaction](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PopulatedTransaction] (val x: Self) extends AnyVal {
       
       inline def setAccessList(value: AccessList): Self = StObject.set(x, "accessList", value.asInstanceOf[js.Any])
       
@@ -615,7 +622,8 @@ object mod {
       __obj.asInstanceOf[RunningEvent]
     }
     
-    extension [Self <: RunningEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RunningEvent] (val x: Self) extends AnyVal {
       
       inline def setAddListener(value: (Listener, Boolean) => Unit): Self = StObject.set(x, "addListener", js.Any.fromFunction2(value))
       

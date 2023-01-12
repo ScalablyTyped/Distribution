@@ -18,7 +18,8 @@ object ListDistributionsResult {
     __obj.asInstanceOf[ListDistributionsResult]
   }
   
-  extension [Self <: ListDistributionsResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListDistributionsResult] (val x: Self) extends AnyVal {
     
     inline def setDistributionList(value: DistributionList): Self = StObject.set(x, "DistributionList", value.asInstanceOf[js.Any])
     

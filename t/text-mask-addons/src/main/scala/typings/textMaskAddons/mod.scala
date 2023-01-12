@@ -44,7 +44,8 @@ object mod {
       __obj.asInstanceOf[DatePipeYears]
     }
     
-    extension [Self <: DatePipeYears](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DatePipeYears] (val x: Self) extends AnyVal {
       
       inline def setMaxYear(value: Double): Self = StObject.set(x, "maxYear", value.asInstanceOf[js.Any])
       
@@ -94,7 +95,8 @@ object mod {
       __obj.asInstanceOf[NumberMaskOptions]
     }
     
-    extension [Self <: NumberMaskOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NumberMaskOptions] (val x: Self) extends AnyVal {
       
       inline def setAllowDecimal(value: Boolean): Self = StObject.set(x, "allowDecimal", value.asInstanceOf[js.Any])
       

@@ -23,7 +23,8 @@ object TileMinimizedEventUIParam {
     __obj.asInstanceOf[TileMinimizedEventUIParam]
   }
   
-  extension [Self <: TileMinimizedEventUIParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TileMinimizedEventUIParam] (val x: Self) extends AnyVal {
     
     inline def setOwner(value: Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     

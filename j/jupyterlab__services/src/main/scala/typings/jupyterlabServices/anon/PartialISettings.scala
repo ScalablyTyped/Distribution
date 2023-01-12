@@ -43,7 +43,8 @@ object PartialISettings {
     __obj.asInstanceOf[PartialISettings]
   }
   
-  extension [Self <: PartialISettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialISettings] (val x: Self) extends AnyVal {
     
     inline def setAppUrl(value: String): Self = StObject.set(x, "appUrl", value.asInstanceOf[js.Any])
     

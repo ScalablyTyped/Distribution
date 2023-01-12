@@ -18,7 +18,8 @@ object GameSessionQueueDestination {
     __obj.asInstanceOf[GameSessionQueueDestination]
   }
   
-  extension [Self <: GameSessionQueueDestination](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GameSessionQueueDestination] (val x: Self) extends AnyVal {
     
     inline def setDestinationArn(value: ArnStringModel): Self = StObject.set(x, "DestinationArn", value.asInstanceOf[js.Any])
     

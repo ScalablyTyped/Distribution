@@ -17,7 +17,8 @@ object AppleSignInAPI {
       __obj.asInstanceOf[AppleID]
     }
     
-    extension [Self <: AppleID](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AppleID] (val x: Self) extends AnyVal {
       
       inline def setAuth(value: AuthI): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     }
@@ -53,7 +54,8 @@ object AppleSignInAPI {
       __obj.asInstanceOf[AuthorizationI]
     }
     
-    extension [Self <: AuthorizationI](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AuthorizationI] (val x: Self) extends AnyVal {
       
       inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
@@ -89,7 +91,8 @@ object AppleSignInAPI {
       __obj.asInstanceOf[ClientConfigI]
     }
     
-    extension [Self <: ClientConfigI](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClientConfigI] (val x: Self) extends AnyVal {
       
       inline def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
       
@@ -131,7 +134,8 @@ object AppleSignInAPI {
       __obj.asInstanceOf[NameI]
     }
     
-    extension [Self <: NameI](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NameI] (val x: Self) extends AnyVal {
       
       inline def setFirstName(value: String): Self = StObject.set(x, "firstName", value.asInstanceOf[js.Any])
       
@@ -151,7 +155,8 @@ object AppleSignInAPI {
       __obj.asInstanceOf[SignInErrorI]
     }
     
-    extension [Self <: SignInErrorI](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SignInErrorI] (val x: Self) extends AnyVal {
       
       inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     }
@@ -171,7 +176,8 @@ object AppleSignInAPI {
       __obj.asInstanceOf[SignInResponseI]
     }
     
-    extension [Self <: SignInResponseI](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SignInResponseI] (val x: Self) extends AnyVal {
       
       inline def setAuthorization(value: AuthorizationI): Self = StObject.set(x, "authorization", value.asInstanceOf[js.Any])
       
@@ -195,7 +201,8 @@ object AppleSignInAPI {
       __obj.asInstanceOf[UserI]
     }
     
-    extension [Self <: UserI](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UserI] (val x: Self) extends AnyVal {
       
       inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
       

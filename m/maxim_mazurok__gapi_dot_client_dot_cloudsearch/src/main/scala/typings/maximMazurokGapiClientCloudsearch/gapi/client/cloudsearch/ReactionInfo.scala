@@ -16,7 +16,8 @@ object ReactionInfo {
     __obj.asInstanceOf[ReactionInfo]
   }
   
-  extension [Self <: ReactionInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReactionInfo] (val x: Self) extends AnyVal {
     
     inline def setEmoji(value: String): Self = StObject.set(x, "emoji", value.asInstanceOf[js.Any])
     

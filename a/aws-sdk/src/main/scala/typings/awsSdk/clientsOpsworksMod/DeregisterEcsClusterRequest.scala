@@ -18,7 +18,8 @@ object DeregisterEcsClusterRequest {
     __obj.asInstanceOf[DeregisterEcsClusterRequest]
   }
   
-  extension [Self <: DeregisterEcsClusterRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeregisterEcsClusterRequest] (val x: Self) extends AnyVal {
     
     inline def setEcsClusterArn(value: String): Self = StObject.set(x, "EcsClusterArn", value.asInstanceOf[js.Any])
   }

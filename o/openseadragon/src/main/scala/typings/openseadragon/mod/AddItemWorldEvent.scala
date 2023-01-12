@@ -17,7 +17,8 @@ object AddItemWorldEvent {
     __obj.asInstanceOf[AddItemWorldEvent]
   }
   
-  extension [Self <: AddItemWorldEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AddItemWorldEvent] (val x: Self) extends AnyVal {
     
     inline def setItem(value: TiledImage): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
   }

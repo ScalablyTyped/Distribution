@@ -29,7 +29,8 @@ object libBinaryCarrierMod {
       __obj.asInstanceOf[BinaryCarrier]
     }
     
-    extension [Self <: BinaryCarrier](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BinaryCarrier] (val x: Self) extends AnyVal {
       
       inline def setBuffer(value: ArrayLike[Double]): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
     }

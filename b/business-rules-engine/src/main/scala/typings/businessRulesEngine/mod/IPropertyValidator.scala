@@ -19,7 +19,8 @@ object IPropertyValidator {
     __obj.asInstanceOf[IPropertyValidator]
   }
   
-  extension [Self <: IPropertyValidator](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPropertyValidator] (val x: Self) extends AnyVal {
     
     inline def setCustomMessage(value: (/* config */ Any, /* args */ Any) => String): Self = StObject.set(x, "customMessage", js.Any.fromFunction2(value))
     

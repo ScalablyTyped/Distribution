@@ -19,7 +19,8 @@ object GooglePrivacyDlpV2ListJobTriggersResponse {
     __obj.asInstanceOf[GooglePrivacyDlpV2ListJobTriggersResponse]
   }
   
-  extension [Self <: GooglePrivacyDlpV2ListJobTriggersResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GooglePrivacyDlpV2ListJobTriggersResponse] (val x: Self) extends AnyVal {
     
     inline def setJobTriggers(value: js.Array[GooglePrivacyDlpV2JobTrigger]): Self = StObject.set(x, "jobTriggers", value.asInstanceOf[js.Any])
     

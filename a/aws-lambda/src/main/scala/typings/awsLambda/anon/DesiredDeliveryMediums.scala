@@ -29,7 +29,8 @@ object DesiredDeliveryMediums {
     __obj.asInstanceOf[DesiredDeliveryMediums]
   }
   
-  extension [Self <: DesiredDeliveryMediums](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DesiredDeliveryMediums] (val x: Self) extends AnyVal {
     
     inline def setDesiredDeliveryMediums(value: js.Array[SMS | EMAIL]): Self = StObject.set(x, "desiredDeliveryMediums", value.asInstanceOf[js.Any])
     

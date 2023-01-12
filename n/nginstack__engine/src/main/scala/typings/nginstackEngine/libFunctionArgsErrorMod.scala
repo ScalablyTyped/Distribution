@@ -41,7 +41,8 @@ object libFunctionArgsErrorMod {
       __obj.asInstanceOf[ArgsError]
     }
     
-    extension [Self <: ArgsError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ArgsError] (val x: Self) extends AnyVal {
       
       inline def set_name(value: Any): Self = StObject.set(x, "_name", value.asInstanceOf[js.Any])
     }

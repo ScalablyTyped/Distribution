@@ -27,7 +27,8 @@ object distTypesClassicEditorGeneralDistComponentsRouterMod extends Shortcut {
       __obj.asInstanceOf[RouterProps]
     }
     
-    extension [Self <: RouterProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RouterProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

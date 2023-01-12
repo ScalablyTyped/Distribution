@@ -18,7 +18,8 @@ object DeviceJobConfig {
     __obj.asInstanceOf[DeviceJobConfig]
   }
   
-  extension [Self <: DeviceJobConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeviceJobConfig] (val x: Self) extends AnyVal {
     
     inline def setOTAJobConfig(value: OTAJobConfig): Self = StObject.set(x, "OTAJobConfig", value.asInstanceOf[js.Any])
     

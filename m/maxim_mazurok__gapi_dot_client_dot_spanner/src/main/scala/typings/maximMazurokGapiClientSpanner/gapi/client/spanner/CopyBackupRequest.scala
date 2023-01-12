@@ -34,7 +34,8 @@ object CopyBackupRequest {
     __obj.asInstanceOf[CopyBackupRequest]
   }
   
-  extension [Self <: CopyBackupRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CopyBackupRequest] (val x: Self) extends AnyVal {
     
     inline def setBackupId(value: String): Self = StObject.set(x, "backupId", value.asInstanceOf[js.Any])
     

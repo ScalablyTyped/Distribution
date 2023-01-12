@@ -38,7 +38,8 @@ object SearchSettings {
     __obj.asInstanceOf[SearchSettings]
   }
   
-  extension [Self <: SearchSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchSettings] (val x: Self) extends AnyVal {
     
     inline def setCaseInsensitive(value: Boolean): Self = StObject.set(x, "caseInsensitive", value.asInstanceOf[js.Any])
     

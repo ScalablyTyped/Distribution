@@ -50,7 +50,8 @@ object WiredTigerData {
     __obj.asInstanceOf[WiredTigerData]
   }
   
-  extension [Self <: WiredTigerData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WiredTigerData] (val x: Self) extends AnyVal {
     
     inline def `setBlock-manager`(value: Allocationsrequiringfileextension): Self = StObject.set(x, "block-manager", value.asInstanceOf[js.Any])
     

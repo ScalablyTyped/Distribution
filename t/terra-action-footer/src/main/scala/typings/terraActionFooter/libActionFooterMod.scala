@@ -36,7 +36,8 @@ object libActionFooterMod extends Shortcut {
       __obj.asInstanceOf[ActionFooterProps]
     }
     
-    extension [Self <: ActionFooterProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ActionFooterProps] (val x: Self) extends AnyVal {
       
       inline def setEnd(value: ReactNode): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       

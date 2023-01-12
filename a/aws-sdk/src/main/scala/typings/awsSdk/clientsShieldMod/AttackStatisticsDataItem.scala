@@ -23,7 +23,8 @@ object AttackStatisticsDataItem {
     __obj.asInstanceOf[AttackStatisticsDataItem]
   }
   
-  extension [Self <: AttackStatisticsDataItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AttackStatisticsDataItem] (val x: Self) extends AnyVal {
     
     inline def setAttackCount(value: Long): Self = StObject.set(x, "AttackCount", value.asInstanceOf[js.Any])
     

@@ -47,7 +47,8 @@ object anon {
       __obj.asInstanceOf[AddColorStop]
     }
     
-    extension [Self <: AddColorStop](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AddColorStop] (val x: Self) extends AnyVal {
       
       inline def setAddColorStop(value: (Double, String) => Unit): Self = StObject.set(x, "addColorStop", js.Any.fromFunction2(value))
       
@@ -82,7 +83,8 @@ object anon {
       __obj.asInstanceOf[Color]
     }
     
-    extension [Self <: Color](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Color] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       

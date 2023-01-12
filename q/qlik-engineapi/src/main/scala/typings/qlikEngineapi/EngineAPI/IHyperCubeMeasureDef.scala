@@ -21,7 +21,8 @@ object IHyperCubeMeasureDef {
     __obj.asInstanceOf[IHyperCubeMeasureDef]
   }
   
-  extension [Self <: IHyperCubeMeasureDef](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IHyperCubeMeasureDef] (val x: Self) extends AnyVal {
     
     inline def setQDef(value: IHyperCubeMeasureqDef): Self = StObject.set(x, "qDef", value.asInstanceOf[js.Any])
   }

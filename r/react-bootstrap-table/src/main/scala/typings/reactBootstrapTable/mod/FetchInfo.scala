@@ -18,7 +18,8 @@ object FetchInfo {
     __obj.asInstanceOf[FetchInfo]
   }
   
-  extension [Self <: FetchInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FetchInfo] (val x: Self) extends AnyVal {
     
     inline def setDataTotalSize(value: Double): Self = StObject.set(x, "dataTotalSize", value.asInstanceOf[js.Any])
   }

@@ -25,7 +25,8 @@ object TextDocumentRegistrationOptions {
   
   inline def is(value: Any): /* is vscode-languageserver-protocol.vscode-languageserver-protocol/lib/common/protocol.TextDocumentRegistrationOptions */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-protocol.vscode-languageserver-protocol/lib/common/protocol.TextDocumentRegistrationOptions */ Boolean]
   
-  extension [Self <: TextDocumentRegistrationOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextDocumentRegistrationOptions] (val x: Self) extends AnyVal {
     
     inline def setDocumentSelector(value: DocumentSelector): Self = StObject.set(x, "documentSelector", value.asInstanceOf[js.Any])
     

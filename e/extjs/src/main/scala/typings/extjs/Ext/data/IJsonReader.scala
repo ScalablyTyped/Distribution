@@ -27,7 +27,8 @@ object IJsonReader {
     __obj.asInstanceOf[IJsonReader]
   }
   
-  extension [Self <: IJsonReader](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IJsonReader] (val x: Self) extends AnyVal {
     
     inline def setJsonData(value: Any): Self = StObject.set(x, "jsonData", value.asInstanceOf[js.Any])
     

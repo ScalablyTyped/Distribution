@@ -18,7 +18,8 @@ object DeleteHypervisorInput {
     __obj.asInstanceOf[DeleteHypervisorInput]
   }
   
-  extension [Self <: DeleteHypervisorInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteHypervisorInput] (val x: Self) extends AnyVal {
     
     inline def setHypervisorArn(value: ServerArn): Self = StObject.set(x, "HypervisorArn", value.asInstanceOf[js.Any])
   }

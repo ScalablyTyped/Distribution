@@ -43,7 +43,8 @@ object PluralOptions {
     __obj.asInstanceOf[PluralOptions]
   }
   
-  extension [Self <: PluralOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PluralOptions] (val x: Self) extends AnyVal {
     
     inline def setMany(value: String): Self = StObject.set(x, "many", value.asInstanceOf[js.Any])
     

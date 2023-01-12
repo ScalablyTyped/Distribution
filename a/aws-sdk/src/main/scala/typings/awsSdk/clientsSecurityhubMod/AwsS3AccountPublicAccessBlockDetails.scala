@@ -33,7 +33,8 @@ object AwsS3AccountPublicAccessBlockDetails {
     __obj.asInstanceOf[AwsS3AccountPublicAccessBlockDetails]
   }
   
-  extension [Self <: AwsS3AccountPublicAccessBlockDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsS3AccountPublicAccessBlockDetails] (val x: Self) extends AnyVal {
     
     inline def setBlockPublicAcls(value: Boolean): Self = StObject.set(x, "BlockPublicAcls", value.asInstanceOf[js.Any])
     

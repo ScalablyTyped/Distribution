@@ -44,7 +44,8 @@ object DatasetIdFields {
     __obj.asInstanceOf[DatasetIdFields]
   }
   
-  extension [Self <: DatasetIdFields](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DatasetIdFields] (val x: Self) extends AnyVal {
     
     inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object BatchGetObjectInformationResponse {
     __obj.asInstanceOf[BatchGetObjectInformationResponse]
   }
   
-  extension [Self <: BatchGetObjectInformationResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchGetObjectInformationResponse] (val x: Self) extends AnyVal {
     
     inline def setObjectIdentifier(value: ObjectIdentifier): Self = StObject.set(x, "ObjectIdentifier", value.asInstanceOf[js.Any])
     

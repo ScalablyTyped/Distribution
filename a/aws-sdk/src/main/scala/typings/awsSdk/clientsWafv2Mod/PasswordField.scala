@@ -18,7 +18,8 @@ object PasswordField {
     __obj.asInstanceOf[PasswordField]
   }
   
-  extension [Self <: PasswordField](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PasswordField] (val x: Self) extends AnyVal {
     
     inline def setIdentifier(value: FieldIdentifier): Self = StObject.set(x, "Identifier", value.asInstanceOf[js.Any])
   }

@@ -24,7 +24,8 @@ object AUTO {
     __obj.asInstanceOf[AUTO]
   }
   
-  extension [Self <: AUTO](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AUTO] (val x: Self) extends AnyVal {
     
     inline def setAUTO(value: typings.desmos.desmosStrings.AUTO): Self = StObject.set(x, "AUTO", value.asInstanceOf[js.Any])
     

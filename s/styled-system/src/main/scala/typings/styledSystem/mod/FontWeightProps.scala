@@ -22,7 +22,8 @@ object FontWeightProps {
     __obj.asInstanceOf[FontWeightProps[ThemeType, TVal]]
   }
   
-  extension [Self <: FontWeightProps[?, ?], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal](x: Self & (FontWeightProps[ThemeType, TVal])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FontWeightProps[?, ?], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] (val x: Self & (FontWeightProps[ThemeType, TVal])) extends AnyVal {
     
     inline def setFontWeight(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "fontWeight", value.asInstanceOf[js.Any])
     

@@ -57,7 +57,8 @@ object TvShowMediaMetadata {
     __obj.asInstanceOf[TvShowMediaMetadata]
   }
   
-  extension [Self <: TvShowMediaMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TvShowMediaMetadata] (val x: Self) extends AnyVal {
     
     inline def setEpisode(value: Double): Self = StObject.set(x, "episode", value.asInstanceOf[js.Any])
     

@@ -57,7 +57,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setAlwaysParseAsBig(value: Boolean): Self = StObject.set(x, "alwaysParseAsBig", value.asInstanceOf[js.Any])
       

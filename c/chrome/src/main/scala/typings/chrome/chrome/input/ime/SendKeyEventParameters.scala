@@ -19,7 +19,8 @@ object SendKeyEventParameters {
     __obj.asInstanceOf[SendKeyEventParameters]
   }
   
-  extension [Self <: SendKeyEventParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SendKeyEventParameters] (val x: Self) extends AnyVal {
     
     inline def setContextID(value: Double): Self = StObject.set(x, "contextID", value.asInstanceOf[js.Any])
     

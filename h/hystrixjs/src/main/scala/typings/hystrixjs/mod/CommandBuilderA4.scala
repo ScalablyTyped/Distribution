@@ -63,7 +63,8 @@ object CommandBuilderA4 {
     __obj.asInstanceOf[CommandBuilderA4[R, T, U, V, W]]
   }
   
-  extension [Self <: CommandBuilderA4[?, ?, ?, ?, ?], R, T, U, V, W](x: Self & (CommandBuilderA4[R, T, U, V, W])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CommandBuilderA4[?, ?, ?, ?, ?], R, T, U, V, W] (val x: Self & (CommandBuilderA4[R, T, U, V, W])) extends AnyVal {
     
     inline def setBuild(value: () => CommandA4[R, T, U, V, W]): Self = StObject.set(x, "build", js.Any.fromFunction0(value))
     

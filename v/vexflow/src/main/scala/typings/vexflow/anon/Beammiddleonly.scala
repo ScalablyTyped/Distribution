@@ -26,7 +26,8 @@ object Beammiddleonly {
     __obj.asInstanceOf[Beammiddleonly]
   }
   
-  extension [Self <: Beammiddleonly](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Beammiddleonly] (val x: Self) extends AnyVal {
     
     inline def setBeam_middle_only(value: Boolean): Self = StObject.set(x, "beam_middle_only", value.asInstanceOf[js.Any])
     

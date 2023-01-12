@@ -18,7 +18,8 @@ object GetPlatformApplicationAttributesInput {
     __obj.asInstanceOf[GetPlatformApplicationAttributesInput]
   }
   
-  extension [Self <: GetPlatformApplicationAttributesInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetPlatformApplicationAttributesInput] (val x: Self) extends AnyVal {
     
     inline def setPlatformApplicationArn(value: String): Self = StObject.set(x, "PlatformApplicationArn", value.asInstanceOf[js.Any])
   }

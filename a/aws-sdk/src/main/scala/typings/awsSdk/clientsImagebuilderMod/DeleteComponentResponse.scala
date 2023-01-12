@@ -23,7 +23,8 @@ object DeleteComponentResponse {
     __obj.asInstanceOf[DeleteComponentResponse]
   }
   
-  extension [Self <: DeleteComponentResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteComponentResponse] (val x: Self) extends AnyVal {
     
     inline def setComponentBuildVersionArn(value: ComponentBuildVersionArn): Self = StObject.set(x, "componentBuildVersionArn", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object RatingLabel {
     __obj.asInstanceOf[RatingLabel]
   }
   
-  extension [Self <: RatingLabel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RatingLabel] (val x: Self) extends AnyVal {
     
     inline def setTemplate(value: String | js.Function): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
   }

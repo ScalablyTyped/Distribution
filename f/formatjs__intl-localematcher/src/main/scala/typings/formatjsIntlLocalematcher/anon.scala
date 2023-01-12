@@ -20,7 +20,8 @@ object anon {
       __obj.asInstanceOf[Dictk]
     }
     
-    extension [Self <: Dictk](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Dictk] (val x: Self) extends AnyVal {
       
       inline def setLocaleMatcher(value: String): Self = StObject.set(x, "localeMatcher", value.asInstanceOf[js.Any])
     }

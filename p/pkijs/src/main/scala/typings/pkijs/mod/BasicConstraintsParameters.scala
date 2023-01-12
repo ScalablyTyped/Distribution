@@ -21,7 +21,8 @@ object BasicConstraintsParameters {
     __obj.asInstanceOf[BasicConstraintsParameters]
   }
   
-  extension [Self <: BasicConstraintsParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BasicConstraintsParameters] (val x: Self) extends AnyVal {
     
     inline def setCA(value: Boolean): Self = StObject.set(x, "cA", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object XMLHttpRequestEventTarget {
     __obj.asInstanceOf[XMLHttpRequestEventTarget]
   }
   
-  extension [Self <: XMLHttpRequestEventTarget](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XMLHttpRequestEventTarget] (val x: Self) extends AnyVal {
     
     inline def setAddEventListener(value: (String, Any, Boolean) => Unit): Self = StObject.set(x, "addEventListener", js.Any.fromFunction3(value))
     

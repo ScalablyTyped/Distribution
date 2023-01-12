@@ -53,7 +53,8 @@ object PlacementGroup {
     __obj.asInstanceOf[PlacementGroup]
   }
   
-  extension [Self <: PlacementGroup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlacementGroup] (val x: Self) extends AnyVal {
     
     inline def setGroupArn(value: String): Self = StObject.set(x, "GroupArn", value.asInstanceOf[js.Any])
     

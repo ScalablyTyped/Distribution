@@ -80,7 +80,8 @@ object ButtonPrevDisabled {
     __obj.asInstanceOf[ButtonPrevDisabled]
   }
   
-  extension [Self <: ButtonPrevDisabled](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ButtonPrevDisabled] (val x: Self) extends AnyVal {
     
     inline def setButton(value: String): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
     

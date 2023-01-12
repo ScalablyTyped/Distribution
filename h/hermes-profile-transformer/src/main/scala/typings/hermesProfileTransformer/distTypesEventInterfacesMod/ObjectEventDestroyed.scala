@@ -22,7 +22,8 @@ object ObjectEventDestroyed {
     __obj.asInstanceOf[ObjectEventDestroyed]
   }
   
-  extension [Self <: ObjectEventDestroyed](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ObjectEventDestroyed] (val x: Self) extends AnyVal {
     
     inline def setPh(value: OBJECT_EVENTS_DESTROYED): Self = StObject.set(x, "ph", value.asInstanceOf[js.Any])
     

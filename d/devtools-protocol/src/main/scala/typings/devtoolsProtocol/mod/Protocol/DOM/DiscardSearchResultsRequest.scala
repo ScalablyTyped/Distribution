@@ -18,7 +18,8 @@ object DiscardSearchResultsRequest {
     __obj.asInstanceOf[DiscardSearchResultsRequest]
   }
   
-  extension [Self <: DiscardSearchResultsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DiscardSearchResultsRequest] (val x: Self) extends AnyVal {
     
     inline def setSearchId(value: String): Self = StObject.set(x, "searchId", value.asInstanceOf[js.Any])
   }

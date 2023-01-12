@@ -18,7 +18,8 @@ object LambdaConflictHandlerConfig {
     __obj.asInstanceOf[LambdaConflictHandlerConfig]
   }
   
-  extension [Self <: LambdaConflictHandlerConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LambdaConflictHandlerConfig] (val x: Self) extends AnyVal {
     
     inline def setLambdaConflictHandlerArn(value: String): Self = StObject.set(x, "lambdaConflictHandlerArn", value.asInstanceOf[js.Any])
     

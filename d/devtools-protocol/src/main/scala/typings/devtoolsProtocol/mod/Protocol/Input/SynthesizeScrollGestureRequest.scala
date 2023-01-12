@@ -77,7 +77,8 @@ object SynthesizeScrollGestureRequest {
     __obj.asInstanceOf[SynthesizeScrollGestureRequest]
   }
   
-  extension [Self <: SynthesizeScrollGestureRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SynthesizeScrollGestureRequest] (val x: Self) extends AnyVal {
     
     inline def setGestureSourceType(value: GestureSourceType): Self = StObject.set(x, "gestureSourceType", value.asInstanceOf[js.Any])
     

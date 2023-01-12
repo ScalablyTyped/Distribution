@@ -25,7 +25,8 @@ object GoogleSecuritySafebrowsingV4RiceDeltaEncoding {
     __obj.asInstanceOf[GoogleSecuritySafebrowsingV4RiceDeltaEncoding]
   }
   
-  extension [Self <: GoogleSecuritySafebrowsingV4RiceDeltaEncoding](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleSecuritySafebrowsingV4RiceDeltaEncoding] (val x: Self) extends AnyVal {
     
     inline def setEncodedData(value: String): Self = StObject.set(x, "encodedData", value.asInstanceOf[js.Any])
     

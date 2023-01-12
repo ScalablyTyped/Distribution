@@ -45,7 +45,8 @@ object mod {
       __obj.asInstanceOf[FFProbeResult]
     }
     
-    extension [Self <: FFProbeResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FFProbeResult] (val x: Self) extends AnyVal {
       
       inline def setStreams(value: js.Array[FFProbeStream]): Self = StObject.set(x, "streams", value.asInstanceOf[js.Any])
       
@@ -180,7 +181,8 @@ object mod {
       __obj.asInstanceOf[FFProbeStream]
     }
     
-    extension [Self <: FFProbeStream](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FFProbeStream] (val x: Self) extends AnyVal {
       
       inline def setAvg_frame_rate(value: String): Self = StObject.set(x, "avg_frame_rate", value.asInstanceOf[js.Any])
       
@@ -375,7 +377,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     }

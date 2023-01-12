@@ -29,7 +29,8 @@ object SchedulerMessagesRecurrenceMessages {
     __obj.asInstanceOf[SchedulerMessagesRecurrenceMessages]
   }
   
-  extension [Self <: SchedulerMessagesRecurrenceMessages](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SchedulerMessagesRecurrenceMessages] (val x: Self) extends AnyVal {
     
     inline def setDeleteRecurring(value: String): Self = StObject.set(x, "deleteRecurring", value.asInstanceOf[js.Any])
     

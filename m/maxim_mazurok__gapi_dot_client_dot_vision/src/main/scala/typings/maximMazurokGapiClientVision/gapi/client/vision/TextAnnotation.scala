@@ -19,7 +19,8 @@ object TextAnnotation {
     __obj.asInstanceOf[TextAnnotation]
   }
   
-  extension [Self <: TextAnnotation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextAnnotation] (val x: Self) extends AnyVal {
     
     inline def setPages(value: js.Array[Page]): Self = StObject.set(x, "pages", value.asInstanceOf[js.Any])
     

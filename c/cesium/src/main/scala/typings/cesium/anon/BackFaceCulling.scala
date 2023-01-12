@@ -140,7 +140,8 @@ object BackFaceCulling {
     __obj.asInstanceOf[BackFaceCulling]
   }
   
-  extension [Self <: BackFaceCulling](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BackFaceCulling] (val x: Self) extends AnyVal {
     
     inline def setBackFaceCulling(value: Boolean): Self = StObject.set(x, "backFaceCulling", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object ColProps {
     __obj.asInstanceOf[ColProps]
   }
   
-  extension [Self <: ColProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ColProps] (val x: Self) extends AnyVal {
     
     inline def setMinWidth(value: CssDimValue): Self = StObject.set(x, "minWidth", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object CancelDataRepositoryTaskResponse {
     __obj.asInstanceOf[CancelDataRepositoryTaskResponse]
   }
   
-  extension [Self <: CancelDataRepositoryTaskResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CancelDataRepositoryTaskResponse] (val x: Self) extends AnyVal {
     
     inline def setLifecycle(value: DataRepositoryTaskLifecycle): Self = StObject.set(x, "Lifecycle", value.asInstanceOf[js.Any])
     

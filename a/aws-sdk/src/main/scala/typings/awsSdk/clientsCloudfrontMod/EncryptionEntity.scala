@@ -28,7 +28,8 @@ object EncryptionEntity {
     __obj.asInstanceOf[EncryptionEntity]
   }
   
-  extension [Self <: EncryptionEntity](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EncryptionEntity] (val x: Self) extends AnyVal {
     
     inline def setFieldPatterns(value: FieldPatterns): Self = StObject.set(x, "FieldPatterns", value.asInstanceOf[js.Any])
     

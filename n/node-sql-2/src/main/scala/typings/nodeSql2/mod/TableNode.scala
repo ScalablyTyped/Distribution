@@ -17,7 +17,8 @@ object TableNode {
     __obj.asInstanceOf[TableNode]
   }
   
-  extension [Self <: TableNode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TableNode] (val x: Self) extends AnyVal {
     
     inline def setJoin(value: TableNode => JoinTableNode): Self = StObject.set(x, "join", js.Any.fromFunction1(value))
     

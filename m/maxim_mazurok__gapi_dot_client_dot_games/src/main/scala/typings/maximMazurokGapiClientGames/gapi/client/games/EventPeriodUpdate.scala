@@ -22,7 +22,8 @@ object EventPeriodUpdate {
     __obj.asInstanceOf[EventPeriodUpdate]
   }
   
-  extension [Self <: EventPeriodUpdate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventPeriodUpdate] (val x: Self) extends AnyVal {
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

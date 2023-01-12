@@ -25,7 +25,8 @@ object GridDetailInitEvent {
     __obj.asInstanceOf[GridDetailInitEvent]
   }
   
-  extension [Self <: GridDetailInitEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GridDetailInitEvent] (val x: Self) extends AnyVal {
     
     inline def setData(value: ObservableObject): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

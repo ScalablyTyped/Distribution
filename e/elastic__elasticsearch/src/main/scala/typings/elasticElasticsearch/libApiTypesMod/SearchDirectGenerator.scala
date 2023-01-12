@@ -35,7 +35,8 @@ object SearchDirectGenerator {
     __obj.asInstanceOf[SearchDirectGenerator]
   }
   
-  extension [Self <: SearchDirectGenerator](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchDirectGenerator] (val x: Self) extends AnyVal {
     
     inline def setField(value: Field): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     

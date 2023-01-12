@@ -52,7 +52,8 @@ object EmbedClientItem {
     __obj.asInstanceOf[EmbedClientItem]
   }
   
-  extension [Self <: EmbedClientItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EmbedClientItem] (val x: Self) extends AnyVal {
     
     inline def setCanonicalId(value: String): Self = StObject.set(x, "canonicalId", value.asInstanceOf[js.Any])
     

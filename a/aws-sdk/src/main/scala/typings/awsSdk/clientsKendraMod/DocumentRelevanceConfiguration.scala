@@ -23,7 +23,8 @@ object DocumentRelevanceConfiguration {
     __obj.asInstanceOf[DocumentRelevanceConfiguration]
   }
   
-  extension [Self <: DocumentRelevanceConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DocumentRelevanceConfiguration] (val x: Self) extends AnyVal {
     
     inline def setName(value: DocumentMetadataConfigurationName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     

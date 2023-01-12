@@ -81,7 +81,8 @@ object Configuration {
       __obj.asInstanceOf[typings.azureMobileApps.Azure.MobileApps.Configuration.Auth]
     }
     
-    extension [Self <: typings.azureMobileApps.Azure.MobileApps.Configuration.Auth](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.azureMobileApps.Azure.MobileApps.Configuration.Auth] (val x: Self) extends AnyVal {
       
       inline def setSecret(value: String): Self = StObject.set(x, "secret", value.asInstanceOf[js.Any])
       
@@ -106,7 +107,8 @@ object Configuration {
       __obj.asInstanceOf[Cors]
     }
     
-    extension [Self <: Cors](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Cors] (val x: Self) extends AnyVal {
       
       inline def setExposeHeaders(value: String): Self = StObject.set(x, "exposeHeaders", value.asInstanceOf[js.Any])
       
@@ -153,7 +155,8 @@ object Configuration {
       __obj.asInstanceOf[typings.azureMobileApps.Azure.MobileApps.Configuration.Data]
     }
     
-    extension [Self <: typings.azureMobileApps.Azure.MobileApps.Configuration.Data](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.azureMobileApps.Azure.MobileApps.Configuration.Data] (val x: Self) extends AnyVal {
       
       inline def setConnectionTimeout(value: String): Self = StObject.set(x, "connectionTimeout", value.asInstanceOf[js.Any])
       
@@ -212,7 +215,8 @@ object Configuration {
       __obj.asInstanceOf[Logging]
     }
     
-    extension [Self <: Logging](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Logging] (val x: Self) extends AnyVal {
       
       inline def setLevel(value: String): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
       
@@ -228,7 +232,8 @@ object Configuration {
   
   trait LoggingTransport extends StObject
   
-  extension [Self <: Configuration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Configuration] (val x: Self) extends AnyVal {
     
     inline def setApiRootPath(value: String): Self = StObject.set(x, "apiRootPath", value.asInstanceOf[js.Any])
     
@@ -340,7 +345,8 @@ object Configuration {
       __obj.asInstanceOf[Notifications]
     }
     
-    extension [Self <: Notifications](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Notifications] (val x: Self) extends AnyVal {
       
       inline def setConnectionString(value: String): Self = StObject.set(x, "connectionString", value.asInstanceOf[js.Any])
       

@@ -21,7 +21,8 @@ object YAxisLabelsLevelsOptions {
     __obj.asInstanceOf[YAxisLabelsLevelsOptions]
   }
   
-  extension [Self <: YAxisLabelsLevelsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: YAxisLabelsLevelsOptions] (val x: Self) extends AnyVal {
     
     inline def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     

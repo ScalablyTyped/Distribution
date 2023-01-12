@@ -28,7 +28,8 @@ object UpdateCondition {
     __obj.asInstanceOf[UpdateCondition]
   }
   
-  extension [Self <: UpdateCondition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateCondition] (val x: Self) extends AnyVal {
     
     inline def setExists(value: Boolean): Self = StObject.set(x, "Exists", value.asInstanceOf[js.Any])
     

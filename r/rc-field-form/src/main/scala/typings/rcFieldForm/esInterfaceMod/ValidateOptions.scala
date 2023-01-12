@@ -23,7 +23,8 @@ object ValidateOptions {
     __obj.asInstanceOf[ValidateOptions]
   }
   
-  extension [Self <: ValidateOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ValidateOptions] (val x: Self) extends AnyVal {
     
     inline def setRecursive(value: Boolean): Self = StObject.set(x, "recursive", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object CSRFilter {
     __obj.asInstanceOf[CSRFilter]
   }
   
-  extension [Self <: CSRFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CSRFilter] (val x: Self) extends AnyVal {
     
     inline def setIsSelected(value: Boolean): Self = StObject.set(x, "IsSelected", value.asInstanceOf[js.Any])
     

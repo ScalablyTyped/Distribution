@@ -18,7 +18,8 @@ object PickRequiredCalendarSvgPr0 {
     __obj.asInstanceOf[PickRequiredCalendarSvgPr0]
   }
   
-  extension [Self <: PickRequiredCalendarSvgPr0](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickRequiredCalendarSvgPr0] (val x: Self) extends AnyVal {
     
     inline def setDirection(value: horizontal | vertical): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
   }

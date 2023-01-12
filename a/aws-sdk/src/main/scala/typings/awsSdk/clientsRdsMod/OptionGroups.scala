@@ -23,7 +23,8 @@ object OptionGroups {
     __obj.asInstanceOf[OptionGroups]
   }
   
-  extension [Self <: OptionGroups](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OptionGroups] (val x: Self) extends AnyVal {
     
     inline def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object IJsonArrayStatics {
     __obj.asInstanceOf[IJsonArrayStatics]
   }
   
-  extension [Self <: IJsonArrayStatics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IJsonArrayStatics] (val x: Self) extends AnyVal {
     
     inline def setParse(value: String => JsonArray): Self = StObject.set(x, "parse", js.Any.fromFunction1(value))
     

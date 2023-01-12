@@ -38,7 +38,8 @@ object ManagedRuleGroupConfig {
     __obj.asInstanceOf[ManagedRuleGroupConfig]
   }
   
-  extension [Self <: ManagedRuleGroupConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ManagedRuleGroupConfig] (val x: Self) extends AnyVal {
     
     inline def setAWSManagedRulesBotControlRuleSet(value: AWSManagedRulesBotControlRuleSet): Self = StObject.set(x, "AWSManagedRulesBotControlRuleSet", value.asInstanceOf[js.Any])
     

@@ -140,7 +140,8 @@ object IDataTypeResource {
     __obj.asInstanceOf[IDataTypeResource]
   }
   
-  extension [Self <: IDataTypeResource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IDataTypeResource] (val x: Self) extends AnyVal {
     
     inline def setDeleteById(value: Double => IPromise[IResourcePromise]): Self = StObject.set(x, "deleteById", js.Any.fromFunction1(value))
     

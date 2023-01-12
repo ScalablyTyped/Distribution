@@ -22,7 +22,8 @@ object ResponseJWKS {
     __obj.asInstanceOf[ResponseJWKS]
   }
   
-  extension [Self <: ResponseJWKS](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResponseJWKS] (val x: Self) extends AnyVal {
     
     inline def setKeys(value: js.Array[Alg]): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
     

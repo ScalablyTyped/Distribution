@@ -98,7 +98,8 @@ object mod {
       __obj.asInstanceOf[SubRange]
     }
     
-    extension [Self <: SubRange](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SubRange] (val x: Self) extends AnyVal {
       
       inline def setHigh(value: Double): Self = StObject.set(x, "high", value.asInstanceOf[js.Any])
       

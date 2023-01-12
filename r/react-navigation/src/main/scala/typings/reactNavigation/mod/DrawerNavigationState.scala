@@ -23,7 +23,8 @@ object DrawerNavigationState {
     __obj.asInstanceOf[DrawerNavigationState]
   }
   
-  extension [Self <: DrawerNavigationState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DrawerNavigationState] (val x: Self) extends AnyVal {
     
     inline def setIsDrawerOpen(value: Boolean): Self = StObject.set(x, "isDrawerOpen", value.asInstanceOf[js.Any])
   }

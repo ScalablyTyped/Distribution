@@ -49,7 +49,8 @@ object NoteItemLoadOptions {
     __obj.asInstanceOf[NoteItemLoadOptions]
   }
   
-  extension [Self <: NoteItemLoadOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NoteItemLoadOptions] (val x: Self) extends AnyVal {
     
     inline def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object NavigateToOptions {
     __obj.asInstanceOf[NavigateToOptions]
   }
   
-  extension [Self <: NavigateToOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NavigateToOptions] (val x: Self) extends AnyVal {
     
     inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }

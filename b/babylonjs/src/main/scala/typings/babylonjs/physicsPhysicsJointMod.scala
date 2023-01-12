@@ -263,7 +263,8 @@ object physicsPhysicsJointMod {
       __obj.asInstanceOf[DistanceJointData]
     }
     
-    extension [Self <: DistanceJointData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DistanceJointData] (val x: Self) extends AnyVal {
       
       inline def setMaxDistance(value: Double): Self = StObject.set(x, "maxDistance", value.asInstanceOf[js.Any])
     }
@@ -343,7 +344,8 @@ object physicsPhysicsJointMod {
       __obj.asInstanceOf[PhysicsJointData]
     }
     
-    extension [Self <: PhysicsJointData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PhysicsJointData] (val x: Self) extends AnyVal {
       
       inline def setCollision(value: Boolean): Self = StObject.set(x, "collision", value.asInstanceOf[js.Any])
       
@@ -400,7 +402,8 @@ object physicsPhysicsJointMod {
       __obj.asInstanceOf[SpringJointData]
     }
     
-    extension [Self <: SpringJointData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SpringJointData] (val x: Self) extends AnyVal {
       
       inline def setDamping(value: Double): Self = StObject.set(x, "damping", value.asInstanceOf[js.Any])
       

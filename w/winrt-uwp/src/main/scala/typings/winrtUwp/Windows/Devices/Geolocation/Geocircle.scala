@@ -35,7 +35,8 @@ object Geocircle {
     __obj.asInstanceOf[Geocircle]
   }
   
-  extension [Self <: Geocircle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Geocircle] (val x: Self) extends AnyVal {
     
     inline def setAltitudeReferenceSystem(value: AltitudeReferenceSystem): Self = StObject.set(x, "altitudeReferenceSystem", value.asInstanceOf[js.Any])
     

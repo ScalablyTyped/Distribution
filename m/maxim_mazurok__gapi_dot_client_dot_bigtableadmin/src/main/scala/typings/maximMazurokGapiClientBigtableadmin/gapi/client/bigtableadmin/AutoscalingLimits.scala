@@ -19,7 +19,8 @@ object AutoscalingLimits {
     __obj.asInstanceOf[AutoscalingLimits]
   }
   
-  extension [Self <: AutoscalingLimits](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AutoscalingLimits] (val x: Self) extends AnyVal {
     
     inline def setMaxServeNodes(value: Double): Self = StObject.set(x, "maxServeNodes", value.asInstanceOf[js.Any])
     

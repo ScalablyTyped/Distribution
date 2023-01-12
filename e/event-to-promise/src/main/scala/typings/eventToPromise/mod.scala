@@ -46,7 +46,8 @@ object mod {
       __obj.asInstanceOf[EventToPromiseOptions]
     }
     
-    extension [Self <: EventToPromiseOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EventToPromiseOptions] (val x: Self) extends AnyVal {
       
       inline def setArray(value: Boolean): Self = StObject.set(x, "array", value.asInstanceOf[js.Any])
       

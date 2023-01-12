@@ -19,7 +19,8 @@ object ARRAYCONSTRAIN {
     __obj.asInstanceOf[ARRAYCONSTRAIN]
   }
   
-  extension [Self <: ARRAYCONSTRAIN](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ARRAYCONSTRAIN] (val x: Self) extends AnyVal {
     
     inline def setARRAYFORMULA(value: ArrayFunction): Self = StObject.set(x, "ARRAYFORMULA", value.asInstanceOf[js.Any])
     

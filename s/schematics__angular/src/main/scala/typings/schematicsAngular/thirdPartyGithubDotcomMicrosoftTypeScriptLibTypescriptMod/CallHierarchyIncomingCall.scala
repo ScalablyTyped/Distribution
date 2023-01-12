@@ -17,7 +17,8 @@ object CallHierarchyIncomingCall {
     __obj.asInstanceOf[CallHierarchyIncomingCall]
   }
   
-  extension [Self <: CallHierarchyIncomingCall](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CallHierarchyIncomingCall] (val x: Self) extends AnyVal {
     
     inline def setFrom(value: CallHierarchyItem): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     

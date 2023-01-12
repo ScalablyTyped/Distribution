@@ -45,7 +45,8 @@ object PlacementBuilder {
     __obj.asInstanceOf[PlacementBuilder]
   }
   
-  extension [Self <: PlacementBuilder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlacementBuilder] (val x: Self) extends AnyVal {
     
     inline def setExclude(value: () => ExcludedPlacementOperation): Self = StObject.set(x, "exclude", js.Any.fromFunction0(value))
     

@@ -28,7 +28,8 @@ object VariableDeclarator {
     __obj.asInstanceOf[VariableDeclarator]
   }
   
-  extension [Self <: VariableDeclarator](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VariableDeclarator] (val x: Self) extends AnyVal {
     
     inline def setDefinite(value: Boolean): Self = StObject.set(x, "definite", value.asInstanceOf[js.Any])
     

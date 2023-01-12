@@ -15,7 +15,8 @@ object IRmdirOptions {
     __obj.asInstanceOf[IRmdirOptions]
   }
   
-  extension [Self <: IRmdirOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IRmdirOptions] (val x: Self) extends AnyVal {
     
     inline def setRecursive(value: Boolean): Self = StObject.set(x, "recursive", value.asInstanceOf[js.Any])
     

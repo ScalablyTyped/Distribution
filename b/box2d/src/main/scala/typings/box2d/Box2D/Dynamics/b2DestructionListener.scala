@@ -26,7 +26,8 @@ object b2DestructionListener {
     __obj.asInstanceOf[b2DestructionListener]
   }
   
-  extension [Self <: b2DestructionListener](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: b2DestructionListener] (val x: Self) extends AnyVal {
     
     inline def setSayGoodbyeFixture(value: b2Fixture => Unit): Self = StObject.set(x, "SayGoodbyeFixture", js.Any.fromFunction1(value))
     

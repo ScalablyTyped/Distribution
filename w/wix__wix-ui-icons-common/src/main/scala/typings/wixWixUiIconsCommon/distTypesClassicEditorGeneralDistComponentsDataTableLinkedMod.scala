@@ -27,7 +27,8 @@ object distTypesClassicEditorGeneralDistComponentsDataTableLinkedMod extends Sho
       __obj.asInstanceOf[DataTableLinkedProps]
     }
     
-    extension [Self <: DataTableLinkedProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DataTableLinkedProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

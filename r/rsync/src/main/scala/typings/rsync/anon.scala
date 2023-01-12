@@ -132,7 +132,8 @@ object anon {
       __obj.asInstanceOf[PartialPropertyinkeyofRsy]
     }
     
-    extension [Self <: PartialPropertyinkeyofRsy](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialPropertyinkeyofRsy] (val x: Self) extends AnyVal {
       
       inline def setArchive(
         value: /* import warning: importer.ImportType#apply Failed type conversion: [std.Parameters<(): rsync.rsync.Rsync>[0]] extends [undefined] ? true : std.Parameters<(): rsync.rsync.Rsync>[0] */ js.Any

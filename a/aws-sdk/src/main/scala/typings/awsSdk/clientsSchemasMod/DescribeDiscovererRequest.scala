@@ -18,7 +18,8 @@ object DescribeDiscovererRequest {
     __obj.asInstanceOf[DescribeDiscovererRequest]
   }
   
-  extension [Self <: DescribeDiscovererRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeDiscovererRequest] (val x: Self) extends AnyVal {
     
     inline def setDiscovererId(value: string): Self = StObject.set(x, "DiscovererId", value.asInstanceOf[js.Any])
   }

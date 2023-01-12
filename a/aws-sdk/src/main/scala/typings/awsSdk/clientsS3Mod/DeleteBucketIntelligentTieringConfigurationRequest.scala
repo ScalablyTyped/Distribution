@@ -23,7 +23,8 @@ object DeleteBucketIntelligentTieringConfigurationRequest {
     __obj.asInstanceOf[DeleteBucketIntelligentTieringConfigurationRequest]
   }
   
-  extension [Self <: DeleteBucketIntelligentTieringConfigurationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteBucketIntelligentTieringConfigurationRequest] (val x: Self) extends AnyVal {
     
     inline def setBucket(value: BucketName): Self = StObject.set(x, "Bucket", value.asInstanceOf[js.Any])
     

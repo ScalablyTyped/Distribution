@@ -22,7 +22,8 @@ object OpacityProps {
     __obj.asInstanceOf[OpacityProps[ThemeType]]
   }
   
-  extension [Self <: OpacityProps[?], ThemeType /* <: Theme[TLengthStyledSystem] */](x: Self & OpacityProps[ThemeType]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OpacityProps[?], ThemeType /* <: Theme[TLengthStyledSystem] */] (val x: Self & OpacityProps[ThemeType]) extends AnyVal {
     
     inline def setOpacity(value: ResponsiveValue[Opacity, ThemeType]): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
     

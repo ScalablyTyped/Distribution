@@ -23,7 +23,8 @@ object DatasetLabelStats {
     __obj.asInstanceOf[DatasetLabelStats]
   }
   
-  extension [Self <: DatasetLabelStats](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DatasetLabelStats] (val x: Self) extends AnyVal {
     
     inline def setBoundingBoxCount(value: UInteger): Self = StObject.set(x, "BoundingBoxCount", value.asInstanceOf[js.Any])
     

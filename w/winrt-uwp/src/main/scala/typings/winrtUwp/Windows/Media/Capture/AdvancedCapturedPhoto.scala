@@ -24,7 +24,8 @@ object AdvancedCapturedPhoto {
     __obj.asInstanceOf[AdvancedCapturedPhoto]
   }
   
-  extension [Self <: AdvancedCapturedPhoto](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AdvancedCapturedPhoto] (val x: Self) extends AnyVal {
     
     inline def setContext(value: Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     

@@ -25,7 +25,8 @@ object ViewState {
     __obj.asInstanceOf[ViewState]
   }
   
-  extension [Self <: ViewState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ViewState] (val x: Self) extends AnyVal {
     
     inline def setAltitude(value: Double): Self = StObject.set(x, "altitude", value.asInstanceOf[js.Any])
     

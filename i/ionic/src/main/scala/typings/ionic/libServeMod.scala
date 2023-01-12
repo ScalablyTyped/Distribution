@@ -260,7 +260,8 @@ object libServeMod {
       __obj.asInstanceOf[ServeCLIOptions]
     }
     
-    extension [Self <: ServeCLIOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ServeCLIOptions] (val x: Self) extends AnyVal {
       
       inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
@@ -300,7 +301,8 @@ object libServeMod {
       __obj.asInstanceOf[ServeRunnerDeps]
     }
     
-    extension [Self <: ServeRunnerDeps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ServeRunnerDeps] (val x: Self) extends AnyVal {
       
       inline def setConfig(value: IConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       

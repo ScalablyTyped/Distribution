@@ -35,7 +35,8 @@ object AwsS3Data {
     __obj.asInstanceOf[AwsS3Data]
   }
   
-  extension [Self <: AwsS3Data](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsS3Data] (val x: Self) extends AnyVal {
     
     inline def setAwsAccessKey(value: AwsAccessKey): Self = StObject.set(x, "awsAccessKey", value.asInstanceOf[js.Any])
     

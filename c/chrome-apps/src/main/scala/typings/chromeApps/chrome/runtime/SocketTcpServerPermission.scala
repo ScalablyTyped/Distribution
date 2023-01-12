@@ -19,7 +19,8 @@ object SocketTcpServerPermission {
     __obj.asInstanceOf[SocketTcpServerPermission]
   }
   
-  extension [Self <: SocketTcpServerPermission](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SocketTcpServerPermission] (val x: Self) extends AnyVal {
     
     inline def setListen(value: String | js.Array[String]): Self = StObject.set(x, "listen", value.asInstanceOf[js.Any])
     

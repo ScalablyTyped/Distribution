@@ -50,7 +50,8 @@ object mod {
       __obj.asInstanceOf[SassVarsOptions]
     }
     
-    extension [Self <: SassVarsOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SassVarsOptions] (val x: Self) extends AnyVal {
       
       inline def setCamelize(value: Boolean): Self = StObject.set(x, "camelize", value.asInstanceOf[js.Any])
       

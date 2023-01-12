@@ -19,7 +19,8 @@ object CalendarSharingMessageAction {
     __obj.asInstanceOf[CalendarSharingMessageAction]
   }
   
-  extension [Self <: CalendarSharingMessageAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CalendarSharingMessageAction] (val x: Self) extends AnyVal {
     
     inline def setAction(value: NullableOption[CalendarSharingAction]): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     

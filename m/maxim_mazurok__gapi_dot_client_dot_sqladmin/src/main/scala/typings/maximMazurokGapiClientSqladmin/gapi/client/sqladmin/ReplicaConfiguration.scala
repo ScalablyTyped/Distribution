@@ -29,7 +29,8 @@ object ReplicaConfiguration {
     __obj.asInstanceOf[ReplicaConfiguration]
   }
   
-  extension [Self <: ReplicaConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReplicaConfiguration] (val x: Self) extends AnyVal {
     
     inline def setFailoverTarget(value: Boolean): Self = StObject.set(x, "failoverTarget", value.asInstanceOf[js.Any])
     

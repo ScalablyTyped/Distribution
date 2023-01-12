@@ -53,7 +53,8 @@ object DataPilotItem {
     __obj.asInstanceOf[DataPilotItem]
   }
   
-  extension [Self <: DataPilotItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataPilotItem] (val x: Self) extends AnyVal {
     
     inline def setIsHidden(value: Boolean): Self = StObject.set(x, "IsHidden", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object IROOM_VARIABLES_UPDATE {
     __obj.asInstanceOf[IROOM_VARIABLES_UPDATE]
   }
   
-  extension [Self <: IROOM_VARIABLES_UPDATE](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IROOM_VARIABLES_UPDATE] (val x: Self) extends AnyVal {
     
     inline def setChangedVars(value: js.Array[String]): Self = StObject.set(x, "changedVars", value.asInstanceOf[js.Any])
     

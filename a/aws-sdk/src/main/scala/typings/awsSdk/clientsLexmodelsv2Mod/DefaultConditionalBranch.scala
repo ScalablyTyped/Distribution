@@ -20,7 +20,8 @@ object DefaultConditionalBranch {
     __obj.asInstanceOf[DefaultConditionalBranch]
   }
   
-  extension [Self <: DefaultConditionalBranch](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DefaultConditionalBranch] (val x: Self) extends AnyVal {
     
     inline def setNextStep(value: DialogState): Self = StObject.set(x, "nextStep", value.asInstanceOf[js.Any])
     

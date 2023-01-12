@@ -41,7 +41,8 @@ object ImportCryptoKeyVersionRequest {
     __obj.asInstanceOf[ImportCryptoKeyVersionRequest]
   }
   
-  extension [Self <: ImportCryptoKeyVersionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImportCryptoKeyVersionRequest] (val x: Self) extends AnyVal {
     
     inline def setAlgorithm(value: String): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
     

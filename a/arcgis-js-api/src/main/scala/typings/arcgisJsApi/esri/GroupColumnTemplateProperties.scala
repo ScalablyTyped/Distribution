@@ -24,7 +24,8 @@ object GroupColumnTemplateProperties {
     __obj.asInstanceOf[GroupColumnTemplateProperties]
   }
   
-  extension [Self <: GroupColumnTemplateProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GroupColumnTemplateProperties] (val x: Self) extends AnyVal {
     
     inline def setColumnTemplates(value: js.Array[FieldColumnTemplateProper | GroupColumnTemplateProper]): Self = StObject.set(x, "columnTemplates", value.asInstanceOf[js.Any])
     

@@ -41,7 +41,8 @@ object MidiControlChangeMessage {
     __obj.asInstanceOf[MidiControlChangeMessage]
   }
   
-  extension [Self <: MidiControlChangeMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MidiControlChangeMessage] (val x: Self) extends AnyVal {
     
     inline def setChannel(value: Double): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
     

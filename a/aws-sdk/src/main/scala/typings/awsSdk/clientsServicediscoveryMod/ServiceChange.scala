@@ -28,7 +28,8 @@ object ServiceChange {
     __obj.asInstanceOf[ServiceChange]
   }
   
-  extension [Self <: ServiceChange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServiceChange] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: ResourceDescription): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     

@@ -45,7 +45,8 @@ object CIMHatchFill {
     __obj.asInstanceOf[CIMHatchFill]
   }
   
-  extension [Self <: CIMHatchFill](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CIMHatchFill] (val x: Self) extends AnyVal {
     
     inline def setLineSymbol(value: CIMLineSymbol): Self = StObject.set(x, "lineSymbol", value.asInstanceOf[js.Any])
     

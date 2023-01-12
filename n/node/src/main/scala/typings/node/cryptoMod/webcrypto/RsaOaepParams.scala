@@ -17,7 +17,8 @@ object RsaOaepParams {
     __obj.asInstanceOf[RsaOaepParams]
   }
   
-  extension [Self <: RsaOaepParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RsaOaepParams] (val x: Self) extends AnyVal {
     
     inline def setLabel(value: BufferSource): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object LightPosition {
     __obj.asInstanceOf[LightPosition]
   }
   
-  extension [Self <: LightPosition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LightPosition] (val x: Self) extends AnyVal {
     
     inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     

@@ -443,7 +443,8 @@ object libTypesMod {
       __obj.asInstanceOf[Generator]
     }
     
-    extension [Self <: Generator](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Generator] (val x: Self) extends AnyVal {
       
       inline def setArrayExpression(value: Handler): Self = StObject.set(x, "ArrayExpression", value.asInstanceOf[js.Any])
       
@@ -799,7 +800,8 @@ object libTypesMod {
       __obj.asInstanceOf[Handlers]
     }
     
-    extension [Self <: Handlers](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Handlers] (val x: Self) extends AnyVal {
       
       inline def setArrayExpression(value: Handler): Self = StObject.set(x, "ArrayExpression", value.asInstanceOf[js.Any])
       

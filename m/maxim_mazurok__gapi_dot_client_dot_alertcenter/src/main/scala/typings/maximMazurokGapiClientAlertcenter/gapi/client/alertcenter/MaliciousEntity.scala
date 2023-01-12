@@ -22,7 +22,8 @@ object MaliciousEntity {
     __obj.asInstanceOf[MaliciousEntity]
   }
   
-  extension [Self <: MaliciousEntity](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MaliciousEntity] (val x: Self) extends AnyVal {
     
     inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     

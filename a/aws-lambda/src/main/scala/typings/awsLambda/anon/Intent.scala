@@ -21,7 +21,8 @@ object Intent {
     __obj.asInstanceOf[Intent]
   }
   
-  extension [Self <: Intent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Intent] (val x: Self) extends AnyVal {
     
     inline def setDialogAction(value: LexV2ResultDialogAction): Self = StObject.set(x, "dialogAction", value.asInstanceOf[js.Any])
     

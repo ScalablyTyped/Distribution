@@ -29,7 +29,8 @@ object StrutStyle {
     __obj.asInstanceOf[StrutStyle]
   }
   
-  extension [Self <: StrutStyle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StrutStyle] (val x: Self) extends AnyVal {
     
     inline def setFontFamilies(value: js.Array[String]): Self = StObject.set(x, "fontFamilies", value.asInstanceOf[js.Any])
     

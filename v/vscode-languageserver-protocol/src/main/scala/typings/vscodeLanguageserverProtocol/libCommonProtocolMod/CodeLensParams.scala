@@ -22,7 +22,8 @@ object CodeLensParams {
     __obj.asInstanceOf[CodeLensParams]
   }
   
-  extension [Self <: CodeLensParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CodeLensParams] (val x: Self) extends AnyVal {
     
     inline def setTextDocument(value: TextDocumentIdentifier): Self = StObject.set(x, "textDocument", value.asInstanceOf[js.Any])
   }

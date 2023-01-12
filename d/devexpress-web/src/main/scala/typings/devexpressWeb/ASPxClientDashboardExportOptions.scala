@@ -150,7 +150,8 @@ object ASPxClientDashboardExportOptions {
     __obj.asInstanceOf[ASPxClientDashboardExportOptions]
   }
   
-  extension [Self <: ASPxClientDashboardExportOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientDashboardExportOptions] (val x: Self) extends AnyVal {
     
     inline def setAutoFitPageCount(value: Double): Self = StObject.set(x, "AutoFitPageCount", value.asInstanceOf[js.Any])
     

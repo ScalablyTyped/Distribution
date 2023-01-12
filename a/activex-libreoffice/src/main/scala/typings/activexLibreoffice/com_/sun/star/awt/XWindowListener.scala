@@ -45,7 +45,8 @@ object XWindowListener {
     __obj.asInstanceOf[XWindowListener]
   }
   
-  extension [Self <: XWindowListener](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XWindowListener] (val x: Self) extends AnyVal {
     
     inline def setWindowHidden(value: EventObject => Unit): Self = StObject.set(x, "windowHidden", js.Any.fromFunction1(value))
     

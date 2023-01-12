@@ -41,7 +41,8 @@ object Forward {
     __obj.asInstanceOf[Forward]
   }
   
-  extension [Self <: Forward](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Forward] (val x: Self) extends AnyVal {
     
     inline def setDepth(value: Double): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object TypeofFunded {
     __obj.asInstanceOf[TypeofFunded]
   }
   
-  extension [Self <: TypeofFunded](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofFunded] (val x: Self) extends AnyVal {
     
     inline def setBankTransfer(value: Any): Self = StObject.set(x, "BankTransfer", value.asInstanceOf[js.Any])
   }

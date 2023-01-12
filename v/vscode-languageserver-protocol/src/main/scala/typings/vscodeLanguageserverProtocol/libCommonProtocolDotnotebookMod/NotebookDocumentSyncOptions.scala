@@ -26,7 +26,8 @@ object NotebookDocumentSyncOptions {
     __obj.asInstanceOf[NotebookDocumentSyncOptions]
   }
   
-  extension [Self <: NotebookDocumentSyncOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NotebookDocumentSyncOptions] (val x: Self) extends AnyVal {
     
     inline def setNotebookSelector(value: js.Array[Cells | Notebook]): Self = StObject.set(x, "notebookSelector", value.asInstanceOf[js.Any])
     

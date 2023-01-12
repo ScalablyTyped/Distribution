@@ -75,7 +75,8 @@ object mod {
       __obj.asInstanceOf[CollabConfig]
     }
     
-    extension [Self <: CollabConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CollabConfig] (val x: Self) extends AnyVal {
       
       inline def setClientID(value: Double | String): Self = StObject.set(x, "clientID", value.asInstanceOf[js.Any])
       

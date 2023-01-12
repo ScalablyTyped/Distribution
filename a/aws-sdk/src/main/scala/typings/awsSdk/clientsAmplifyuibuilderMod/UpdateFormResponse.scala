@@ -18,7 +18,8 @@ object UpdateFormResponse {
     __obj.asInstanceOf[UpdateFormResponse]
   }
   
-  extension [Self <: UpdateFormResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateFormResponse] (val x: Self) extends AnyVal {
     
     inline def setEntity(value: Form): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
     

@@ -60,7 +60,8 @@ object FaxReceiptOptions {
     __obj.asInstanceOf[FaxReceiptOptions]
   }
   
-  extension [Self <: FaxReceiptOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FaxReceiptOptions] (val x: Self) extends AnyVal {
     
     inline def setAllowedReceipts(value: FAX_RECEIPT_TYPE_ENUM): Self = StObject.set(x, "AllowedReceipts", value.asInstanceOf[js.Any])
     

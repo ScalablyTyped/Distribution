@@ -16,7 +16,8 @@ object InsufficientGpsFailureDetails {
     __obj.asInstanceOf[InsufficientGpsFailureDetails]
   }
   
-  extension [Self <: InsufficientGpsFailureDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InsufficientGpsFailureDetails] (val x: Self) extends AnyVal {
     
     inline def setGpsPointsFound(value: Double): Self = StObject.set(x, "gpsPointsFound", value.asInstanceOf[js.Any])
     

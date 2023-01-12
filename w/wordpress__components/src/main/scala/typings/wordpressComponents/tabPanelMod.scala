@@ -75,7 +75,8 @@ object tabPanelMod {
         __obj.asInstanceOf[Props]
       }
       
-      extension [Self <: Props](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
         
         inline def setActiveClass(value: String): Self = StObject.set(x, "activeClass", value.asInstanceOf[js.Any])
         
@@ -135,7 +136,8 @@ object tabPanelMod {
         __obj.asInstanceOf[Tab]
       }
       
-      extension [Self <: Tab](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Tab] (val x: Self) extends AnyVal {
         
         inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
         

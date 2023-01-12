@@ -21,7 +21,8 @@ object IBViewController {
     __obj.asInstanceOf[IBViewController]
   }
   
-  extension [Self <: IBViewController](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IBViewController] (val x: Self) extends AnyVal {
     
     inline def set$(value: Id): Self = StObject.set(x, "$", value.asInstanceOf[js.Any])
     

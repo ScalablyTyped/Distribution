@@ -60,7 +60,8 @@ object libTypesReanimated2InterpolationMod {
       __obj.asInstanceOf[ExtrapolationConfig]
     }
     
-    extension [Self <: ExtrapolationConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExtrapolationConfig] (val x: Self) extends AnyVal {
       
       inline def setExtrapolateLeft(value: Extrapolation | String): Self = StObject.set(x, "extrapolateLeft", value.asInstanceOf[js.Any])
       
@@ -91,7 +92,8 @@ object libTypesReanimated2InterpolationMod {
       __obj.asInstanceOf[InterpolatedNode]
     }
     
-    extension [Self <: InterpolatedNode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InterpolatedNode] (val x: Self) extends AnyVal {
       
       inline def set__nodeId(value: Double): Self = StObject.set(x, "__nodeId", value.asInstanceOf[js.Any])
     }

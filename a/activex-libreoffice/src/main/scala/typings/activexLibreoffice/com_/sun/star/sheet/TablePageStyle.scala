@@ -298,7 +298,8 @@ object TablePageStyle {
     __obj.asInstanceOf[TablePageStyle]
   }
   
-  extension [Self <: TablePageStyle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TablePageStyle] (val x: Self) extends AnyVal {
     
     inline def setCenterHorizontally(value: Boolean): Self = StObject.set(x, "CenterHorizontally", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object ConditionMessage {
     __obj.asInstanceOf[ConditionMessage]
   }
   
-  extension [Self <: ConditionMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConditionMessage] (val x: Self) extends AnyVal {
     
     inline def setCondition(value: String): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
   }

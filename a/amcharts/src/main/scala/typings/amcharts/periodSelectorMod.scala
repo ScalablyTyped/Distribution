@@ -218,7 +218,8 @@ object periodSelectorMod {
       __obj.asInstanceOf[PeriodSelector]
     }
     
-    extension [Self <: PeriodSelector](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PeriodSelector] (val x: Self) extends AnyVal {
       
       inline def setAddListener(value: (String, js.Function1[/* e */ Count, Unit]) => Unit): Self = StObject.set(x, "addListener", js.Any.fromFunction2(value))
       

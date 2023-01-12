@@ -66,7 +66,8 @@ object DocumentApp {
     __obj.asInstanceOf[DocumentApp]
   }
   
-  extension [Self <: DocumentApp](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DocumentApp] (val x: Self) extends AnyVal {
     
     inline def setAttribute(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Attribute */ Any): Self = StObject.set(x, "Attribute", value.asInstanceOf[js.Any])
     

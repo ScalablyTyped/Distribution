@@ -26,7 +26,8 @@ object PluginObj {
     __obj.asInstanceOf[PluginObj[S]]
   }
   
-  extension [Self <: PluginObj[?], S](x: Self & PluginObj[S]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PluginObj[?], S] (val x: Self & PluginObj[S]) extends AnyVal {
     
     inline def setInherits(value: Any): Self = StObject.set(x, "inherits", value.asInstanceOf[js.Any])
     

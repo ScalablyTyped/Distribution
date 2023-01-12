@@ -63,7 +63,8 @@ object CreateLagRequest {
     __obj.asInstanceOf[CreateLagRequest]
   }
   
-  extension [Self <: CreateLagRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateLagRequest] (val x: Self) extends AnyVal {
     
     inline def setChildConnectionTags(value: TagList): Self = StObject.set(x, "childConnectionTags", value.asInstanceOf[js.Any])
     

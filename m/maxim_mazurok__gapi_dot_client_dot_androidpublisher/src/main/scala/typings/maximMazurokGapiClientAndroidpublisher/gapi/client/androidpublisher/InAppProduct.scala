@@ -59,7 +59,8 @@ object InAppProduct {
     __obj.asInstanceOf[InAppProduct]
   }
   
-  extension [Self <: InAppProduct](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InAppProduct] (val x: Self) extends AnyVal {
     
     inline def setDefaultLanguage(value: String): Self = StObject.set(x, "defaultLanguage", value.asInstanceOf[js.Any])
     

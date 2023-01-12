@@ -25,7 +25,8 @@ object EntityManager {
     __obj.asInstanceOf[EntityManager]
   }
   
-  extension [Self <: EntityManager](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EntityManager] (val x: Self) extends AnyVal {
     
     inline def setEntityManager(value: typings.breeze.breeze.EntityManager): Self = StObject.set(x, "entityManager", value.asInstanceOf[js.Any])
     

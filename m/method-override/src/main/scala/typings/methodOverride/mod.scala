@@ -131,7 +131,8 @@ object mod {
         __obj.asInstanceOf[Request]
       }
       
-      extension [Self <: Request](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Request] (val x: Self) extends AnyVal {
         
         inline def setOriginalMethod(value: String): Self = StObject.set(x, "originalMethod", value.asInstanceOf[js.Any])
         
@@ -151,7 +152,8 @@ object mod {
       __obj.asInstanceOf[MethodOverrideOptions]
     }
     
-    extension [Self <: MethodOverrideOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MethodOverrideOptions] (val x: Self) extends AnyVal {
       
       inline def setMethods(value: js.Array[String]): Self = StObject.set(x, "methods", value.asInstanceOf[js.Any])
       

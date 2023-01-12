@@ -23,7 +23,8 @@ object HealthConfig {
     __obj.asInstanceOf[HealthConfig]
   }
   
-  extension [Self <: HealthConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HealthConfig] (val x: Self) extends AnyVal {
     
     inline def setInterval(value: Double): Self = StObject.set(x, "Interval", value.asInstanceOf[js.Any])
     

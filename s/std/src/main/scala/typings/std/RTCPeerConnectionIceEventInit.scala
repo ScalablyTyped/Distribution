@@ -21,7 +21,8 @@ object RTCPeerConnectionIceEventInit {
     __obj.asInstanceOf[RTCPeerConnectionIceEventInit]
   }
   
-  extension [Self <: RTCPeerConnectionIceEventInit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RTCPeerConnectionIceEventInit] (val x: Self) extends AnyVal {
     
     inline def setCandidate(value: RTCIceCandidate): Self = StObject.set(x, "candidate", value.asInstanceOf[js.Any])
     

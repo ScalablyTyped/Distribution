@@ -48,7 +48,8 @@ object BackendEnvironment {
     __obj.asInstanceOf[BackendEnvironment]
   }
   
-  extension [Self <: BackendEnvironment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BackendEnvironment] (val x: Self) extends AnyVal {
     
     inline def setBackendEnvironmentArn(value: BackendEnvironmentArn): Self = StObject.set(x, "backendEnvironmentArn", value.asInstanceOf[js.Any])
     

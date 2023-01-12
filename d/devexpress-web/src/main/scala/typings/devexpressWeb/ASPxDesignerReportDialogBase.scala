@@ -47,7 +47,8 @@ object ASPxDesignerReportDialogBase {
     __obj.asInstanceOf[ASPxDesignerReportDialogBase]
   }
   
-  extension [Self <: ASPxDesignerReportDialogBase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxDesignerReportDialogBase] (val x: Self) extends AnyVal {
     
     inline def setButtons(value: js.Array[Any]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
     

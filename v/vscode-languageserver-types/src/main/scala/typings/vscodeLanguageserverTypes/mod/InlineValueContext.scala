@@ -38,7 +38,8 @@ object InlineValueContext {
     */
   inline def is(value: Any): /* is vscode-languageserver-types.vscode-languageserver-types.InlineValueContext */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-types.vscode-languageserver-types.InlineValueContext */ Boolean]
   
-  extension [Self <: InlineValueContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InlineValueContext] (val x: Self) extends AnyVal {
     
     inline def setFrameId(value: integer): Self = StObject.set(x, "frameId", value.asInstanceOf[js.Any])
     

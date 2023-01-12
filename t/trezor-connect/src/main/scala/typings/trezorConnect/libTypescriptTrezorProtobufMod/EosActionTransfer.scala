@@ -21,7 +21,8 @@ object EosActionTransfer {
     __obj.asInstanceOf[EosActionTransfer]
   }
   
-  extension [Self <: EosActionTransfer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EosActionTransfer] (val x: Self) extends AnyVal {
     
     inline def setMemo(value: String): Self = StObject.set(x, "memo", value.asInstanceOf[js.Any])
     

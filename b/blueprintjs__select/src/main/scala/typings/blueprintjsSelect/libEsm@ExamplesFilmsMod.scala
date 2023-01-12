@@ -75,7 +75,8 @@ object `libEsm@ExamplesFilmsMod` {
       __obj.asInstanceOf[Film]
     }
     
-    extension [Self <: Film](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Film] (val x: Self) extends AnyVal {
       
       inline def setRank(value: Double): Self = StObject.set(x, "rank", value.asInstanceOf[js.Any])
       

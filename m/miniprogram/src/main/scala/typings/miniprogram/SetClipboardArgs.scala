@@ -17,7 +17,8 @@ object SetClipboardArgs {
     __obj.asInstanceOf[SetClipboardArgs]
   }
   
-  extension [Self <: SetClipboardArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetClipboardArgs] (val x: Self) extends AnyVal {
     
     inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
   }

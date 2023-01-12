@@ -102,7 +102,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setComments(value: Boolean): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
       
@@ -145,7 +146,8 @@ object mod {
       __obj.asInstanceOf[Parser]
     }
     
-    extension [Self <: Parser](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Parser] (val x: Self) extends AnyVal {
       
       inline def setEnd(value: String => Chunk): Self = StObject.set(x, "end", js.Any.fromFunction1(value))
       
@@ -175,7 +177,8 @@ object mod {
       __obj.asInstanceOf[Token]
     }
     
-    extension [Self <: Token](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Token] (val x: Self) extends AnyVal {
       
       inline def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
       

@@ -25,7 +25,8 @@ object DestinationFound {
     __obj.asInstanceOf[DestinationFound]
   }
   
-  extension [Self <: DestinationFound](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DestinationFound] (val x: Self) extends AnyVal {
     
     inline def setDestinationFound(
       value: (/* viewModel */ GeocoderViewModel, /* destination */ Cartesian3 | typings.cesium.mod.Rectangle) => Unit

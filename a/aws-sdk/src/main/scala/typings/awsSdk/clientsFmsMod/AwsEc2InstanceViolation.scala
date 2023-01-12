@@ -23,7 +23,8 @@ object AwsEc2InstanceViolation {
     __obj.asInstanceOf[AwsEc2InstanceViolation]
   }
   
-  extension [Self <: AwsEc2InstanceViolation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsEc2InstanceViolation] (val x: Self) extends AnyVal {
     
     inline def setAwsEc2NetworkInterfaceViolations(value: AwsEc2NetworkInterfaceViolations): Self = StObject.set(x, "AwsEc2NetworkInterfaceViolations", value.asInstanceOf[js.Any])
     

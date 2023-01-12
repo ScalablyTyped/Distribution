@@ -18,7 +18,8 @@ object anon {
       __obj.asInstanceOf[Babel]
     }
     
-    extension [Self <: Babel](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Babel] (val x: Self) extends AnyVal {
       
       inline def setBabel(value: Plugins): Self = StObject.set(x, "babel", value.asInstanceOf[js.Any])
       
@@ -37,7 +38,8 @@ object anon {
       __obj.asInstanceOf[Name]
     }
     
-    extension [Self <: Name](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Name] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -56,7 +58,8 @@ object anon {
       __obj.asInstanceOf[Plugins]
     }
     
-    extension [Self <: Plugins](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Plugins] (val x: Self) extends AnyVal {
       
       inline def setPlugins(value: js.Array[BabelPluginConfig]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
       

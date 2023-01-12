@@ -20,7 +20,8 @@ object IValidator {
     __obj.asInstanceOf[IValidator]
   }
   
-  extension [Self <: IValidator](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IValidator] (val x: Self) extends AnyVal {
     
     inline def setExpression(value: String | IExpressionFunction): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
     

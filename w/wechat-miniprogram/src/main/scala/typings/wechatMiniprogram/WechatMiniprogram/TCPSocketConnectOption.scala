@@ -19,7 +19,8 @@ object TCPSocketConnectOption {
     __obj.asInstanceOf[TCPSocketConnectOption]
   }
   
-  extension [Self <: TCPSocketConnectOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TCPSocketConnectOption] (val x: Self) extends AnyVal {
     
     inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     

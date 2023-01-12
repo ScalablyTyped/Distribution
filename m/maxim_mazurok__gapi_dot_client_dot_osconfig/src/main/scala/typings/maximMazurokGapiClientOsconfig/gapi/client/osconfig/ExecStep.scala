@@ -19,7 +19,8 @@ object ExecStep {
     __obj.asInstanceOf[ExecStep]
   }
   
-  extension [Self <: ExecStep](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExecStep] (val x: Self) extends AnyVal {
     
     inline def setLinuxExecStepConfig(value: ExecStepConfig): Self = StObject.set(x, "linuxExecStepConfig", value.asInstanceOf[js.Any])
     

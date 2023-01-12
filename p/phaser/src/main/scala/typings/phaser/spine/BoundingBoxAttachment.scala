@@ -28,7 +28,8 @@ object BoundingBoxAttachment {
     __obj.asInstanceOf[BoundingBoxAttachment]
   }
   
-  extension [Self <: BoundingBoxAttachment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BoundingBoxAttachment] (val x: Self) extends AnyVal {
     
     inline def setColor(value: Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
   }

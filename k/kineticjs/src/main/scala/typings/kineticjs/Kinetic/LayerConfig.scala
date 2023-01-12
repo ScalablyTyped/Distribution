@@ -17,7 +17,8 @@ object LayerConfig {
     __obj.asInstanceOf[LayerConfig]
   }
   
-  extension [Self <: LayerConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LayerConfig] (val x: Self) extends AnyVal {
     
     inline def setClearBeforeDraw(value: Boolean): Self = StObject.set(x, "clearBeforeDraw", value.asInstanceOf[js.Any])
     

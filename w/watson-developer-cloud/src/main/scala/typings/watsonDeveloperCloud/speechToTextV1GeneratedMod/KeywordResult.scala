@@ -26,7 +26,8 @@ object KeywordResult {
     __obj.asInstanceOf[KeywordResult]
   }
   
-  extension [Self <: KeywordResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KeywordResult] (val x: Self) extends AnyVal {
     
     inline def setConfidence(value: Double): Self = StObject.set(x, "confidence", value.asInstanceOf[js.Any])
     

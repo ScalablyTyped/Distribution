@@ -15,7 +15,8 @@ object PreserveAspectRatio {
     __obj.asInstanceOf[PreserveAspectRatio]
   }
   
-  extension [Self <: PreserveAspectRatio](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PreserveAspectRatio] (val x: Self) extends AnyVal {
     
     inline def setPreserveAspectRatio(value: String): Self = StObject.set(x, "preserveAspectRatio", value.asInstanceOf[js.Any])
   }

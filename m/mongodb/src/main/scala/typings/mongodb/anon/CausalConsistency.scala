@@ -15,7 +15,8 @@ object CausalConsistency {
     __obj.asInstanceOf[CausalConsistency]
   }
   
-  extension [Self <: CausalConsistency](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CausalConsistency] (val x: Self) extends AnyVal {
     
     inline def setCausalConsistency(value: Boolean): Self = StObject.set(x, "causalConsistency", value.asInstanceOf[js.Any])
   }

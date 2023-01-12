@@ -389,7 +389,8 @@ object libClientMod {
         __obj.asInstanceOf[ExportLayerBase]
       }
       
-      extension [Self <: ExportLayerBase](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ExportLayerBase] (val x: Self) extends AnyVal {
         
         inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
         
@@ -416,7 +417,8 @@ object libClientMod {
         __obj.asInstanceOf[ExportedState]
       }
       
-      extension [Self <: ExportedState](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ExportedState] (val x: Self) extends AnyVal {
         
         inline def setCurrentState(value: State): Self = StObject.set(x, "currentState", value.asInstanceOf[js.Any])
         

@@ -23,7 +23,8 @@ object RemoveRegionsFromReplicationResponse {
     __obj.asInstanceOf[RemoveRegionsFromReplicationResponse]
   }
   
-  extension [Self <: RemoveRegionsFromReplicationResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RemoveRegionsFromReplicationResponse] (val x: Self) extends AnyVal {
     
     inline def setARN(value: SecretARNType): Self = StObject.set(x, "ARN", value.asInstanceOf[js.Any])
     

@@ -26,7 +26,8 @@ object GraphQueryOptions {
     __obj.asInstanceOf[GraphQueryOptions]
   }
   
-  extension [Self <: GraphQueryOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GraphQueryOptions] (val x: Self) extends AnyVal {
     
     inline def setGraphLanguage(value: String): Self = StObject.set(x, "graphLanguage", value.asInstanceOf[js.Any])
     

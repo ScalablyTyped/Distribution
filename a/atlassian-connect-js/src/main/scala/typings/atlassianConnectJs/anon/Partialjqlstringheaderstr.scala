@@ -24,7 +24,8 @@ object Partialjqlstringheaderstr {
     __obj.asInstanceOf[Partialjqlstringheaderstr]
   }
   
-  extension [Self <: Partialjqlstringheaderstr](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Partialjqlstringheaderstr] (val x: Self) extends AnyVal {
     
     inline def setCancelText(value: String): Self = StObject.set(x, "cancelText", value.asInstanceOf[js.Any])
     

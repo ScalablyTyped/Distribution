@@ -33,7 +33,8 @@ object WavSettings {
     __obj.asInstanceOf[WavSettings]
   }
   
-  extension [Self <: WavSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WavSettings] (val x: Self) extends AnyVal {
     
     inline def setBitDepth(value: integerMin16Max24): Self = StObject.set(x, "BitDepth", value.asInstanceOf[js.Any])
     

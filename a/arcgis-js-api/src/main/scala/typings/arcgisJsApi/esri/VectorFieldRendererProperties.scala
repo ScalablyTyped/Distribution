@@ -70,7 +70,8 @@ object VectorFieldRendererProperties {
     __obj.asInstanceOf[VectorFieldRendererProperties]
   }
   
-  extension [Self <: VectorFieldRendererProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VectorFieldRendererProperties] (val x: Self) extends AnyVal {
     
     inline def setAttributeField(value: Magnitude): Self = StObject.set(x, "attributeField", value.asInstanceOf[js.Any])
     

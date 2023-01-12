@@ -23,7 +23,8 @@ object BatchRestrictions {
     __obj.asInstanceOf[BatchRestrictions]
   }
   
-  extension [Self <: BatchRestrictions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchRestrictions] (val x: Self) extends AnyVal {
     
     inline def setComputeTypesAllowed(value: ComputeTypesAllowed): Self = StObject.set(x, "computeTypesAllowed", value.asInstanceOf[js.Any])
     

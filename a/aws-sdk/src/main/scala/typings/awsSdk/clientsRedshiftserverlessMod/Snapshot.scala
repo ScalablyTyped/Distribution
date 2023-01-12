@@ -113,7 +113,8 @@ object Snapshot {
     __obj.asInstanceOf[Snapshot]
   }
   
-  extension [Self <: Snapshot](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Snapshot] (val x: Self) extends AnyVal {
     
     inline def setAccountsWithProvisionedRestoreAccess(value: AccountIdList): Self = StObject.set(x, "accountsWithProvisionedRestoreAccess", value.asInstanceOf[js.Any])
     

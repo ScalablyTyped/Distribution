@@ -39,7 +39,8 @@ object INgModelOptions {
     __obj.asInstanceOf[INgModelOptions]
   }
   
-  extension [Self <: INgModelOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: INgModelOptions] (val x: Self) extends AnyVal {
     
     inline def setAllowInvalid(value: Boolean): Self = StObject.set(x, "allowInvalid", value.asInstanceOf[js.Any])
     

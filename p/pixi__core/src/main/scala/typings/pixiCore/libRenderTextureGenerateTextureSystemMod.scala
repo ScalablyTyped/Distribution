@@ -72,7 +72,8 @@ object libRenderTextureGenerateTextureSystemMod {
       __obj.asInstanceOf[IGenerateTextureOptions]
     }
     
-    extension [Self <: IGenerateTextureOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IGenerateTextureOptions] (val x: Self) extends AnyVal {
       
       inline def setMultisample(value: MSAA_QUALITY): Self = StObject.set(x, "multisample", value.asInstanceOf[js.Any])
       

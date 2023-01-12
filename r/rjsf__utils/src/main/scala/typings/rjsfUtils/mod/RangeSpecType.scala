@@ -23,7 +23,8 @@ object RangeSpecType {
     __obj.asInstanceOf[RangeSpecType]
   }
   
-  extension [Self <: RangeSpecType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RangeSpecType] (val x: Self) extends AnyVal {
     
     inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     

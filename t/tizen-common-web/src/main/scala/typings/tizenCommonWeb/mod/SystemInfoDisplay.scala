@@ -60,7 +60,8 @@ object SystemInfoDisplay {
     __obj.asInstanceOf[SystemInfoDisplay]
   }
   
-  extension [Self <: SystemInfoDisplay](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SystemInfoDisplay] (val x: Self) extends AnyVal {
     
     inline def setBrightness(value: Double): Self = StObject.set(x, "brightness", value.asInstanceOf[js.Any])
     

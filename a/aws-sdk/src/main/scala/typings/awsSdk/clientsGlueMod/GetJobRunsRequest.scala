@@ -28,7 +28,8 @@ object GetJobRunsRequest {
     __obj.asInstanceOf[GetJobRunsRequest]
   }
   
-  extension [Self <: GetJobRunsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetJobRunsRequest] (val x: Self) extends AnyVal {
     
     inline def setJobName(value: NameString): Self = StObject.set(x, "JobName", value.asInstanceOf[js.Any])
     

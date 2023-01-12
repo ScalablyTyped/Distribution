@@ -24,7 +24,8 @@ object HasPendingMappingsResponse {
     __obj.asInstanceOf[HasPendingMappingsResponse]
   }
   
-  extension [Self <: HasPendingMappingsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HasPendingMappingsResponse] (val x: Self) extends AnyVal {
     
     inline def setClusters(value: StringDictionary[js.Array[String]]): Self = StObject.set(x, "clusters", value.asInstanceOf[js.Any])
     

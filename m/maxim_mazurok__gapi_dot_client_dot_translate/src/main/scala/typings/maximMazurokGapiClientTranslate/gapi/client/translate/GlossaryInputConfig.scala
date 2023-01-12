@@ -22,7 +22,8 @@ object GlossaryInputConfig {
     __obj.asInstanceOf[GlossaryInputConfig]
   }
   
-  extension [Self <: GlossaryInputConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GlossaryInputConfig] (val x: Self) extends AnyVal {
     
     inline def setGcsSource(value: GcsSource): Self = StObject.set(x, "gcsSource", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object BackupContext {
     __obj.asInstanceOf[BackupContext]
   }
   
-  extension [Self <: BackupContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BackupContext] (val x: Self) extends AnyVal {
     
     inline def setBackupId(value: String): Self = StObject.set(x, "backupId", value.asInstanceOf[js.Any])
     

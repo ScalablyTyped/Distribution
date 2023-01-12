@@ -17,7 +17,8 @@ object GridViewBatchEditRowInsertingEventArgs {
     __obj.asInstanceOf[GridViewBatchEditRowInsertingEventArgs]
   }
   
-  extension [Self <: GridViewBatchEditRowInsertingEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GridViewBatchEditRowInsertingEventArgs] (val x: Self) extends AnyVal {
     
     inline def setVisibleIndex(value: Double): Self = StObject.set(x, "visibleIndex", value.asInstanceOf[js.Any])
   }

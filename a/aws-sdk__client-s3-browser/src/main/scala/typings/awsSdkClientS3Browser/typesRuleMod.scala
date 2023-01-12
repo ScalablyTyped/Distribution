@@ -73,7 +73,8 @@ object typesRuleMod {
       __obj.asInstanceOf[Rule]
     }
     
-    extension [Self <: Rule](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Rule] (val x: Self) extends AnyVal {
       
       inline def setAbortIncompleteMultipartUpload(value: AbortIncompleteMultipartUpload): Self = StObject.set(x, "AbortIncompleteMultipartUpload", value.asInstanceOf[js.Any])
       
@@ -146,7 +147,8 @@ object typesRuleMod {
       __obj.asInstanceOf[UnmarshalledRule]
     }
     
-    extension [Self <: UnmarshalledRule](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnmarshalledRule] (val x: Self) extends AnyVal {
       
       inline def setAbortIncompleteMultipartUpload(value: UnmarshalledAbortIncompleteMultipartUpload): Self = StObject.set(x, "AbortIncompleteMultipartUpload", value.asInstanceOf[js.Any])
       

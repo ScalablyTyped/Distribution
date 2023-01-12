@@ -257,7 +257,8 @@ object sapUiTestMatchersLabelForMod {
       __obj.asInstanceOf[LabelForSettings]
     }
     
-    extension [Self <: LabelForSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LabelForSettings] (val x: Self) extends AnyVal {
       
       inline def setKey(value: String | PropertyBindingInfo): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       

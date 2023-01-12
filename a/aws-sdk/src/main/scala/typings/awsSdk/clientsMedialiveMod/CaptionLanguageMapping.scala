@@ -28,7 +28,8 @@ object CaptionLanguageMapping {
     __obj.asInstanceOf[CaptionLanguageMapping]
   }
   
-  extension [Self <: CaptionLanguageMapping](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CaptionLanguageMapping] (val x: Self) extends AnyVal {
     
     inline def setCaptionChannel(value: integerMin1Max4): Self = StObject.set(x, "CaptionChannel", value.asInstanceOf[js.Any])
     

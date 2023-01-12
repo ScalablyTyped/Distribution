@@ -18,7 +18,8 @@ object Ldapdn {
     __obj.asInstanceOf[Ldapdn]
   }
   
-  extension [Self <: Ldapdn](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Ldapdn] (val x: Self) extends AnyVal {
     
     inline def setLdapdn(value: String): Self = StObject.set(x, "ldapdn", value.asInstanceOf[js.Any])
   }

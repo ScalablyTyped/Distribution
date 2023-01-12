@@ -16,7 +16,8 @@ object `14` {
     __obj.asInstanceOf[`14`[BaseToken]]
   }
   
-  extension [Self <: `14`[?], BaseToken](x: Self & `14`[BaseToken]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: `14`[?], BaseToken] (val x: Self & `14`[BaseToken]) extends AnyVal {
     
     inline def `set[default]`(value: DefaultHoveredPressed[BaseToken]): Self = StObject.set(x, "[default]", value.asInstanceOf[js.Any])
   }

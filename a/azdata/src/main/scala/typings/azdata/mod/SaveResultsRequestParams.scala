@@ -56,7 +56,8 @@ object SaveResultsRequestParams {
     __obj.asInstanceOf[SaveResultsRequestParams]
   }
   
-  extension [Self <: SaveResultsRequestParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SaveResultsRequestParams] (val x: Self) extends AnyVal {
     
     inline def setBatchIndex(value: Double): Self = StObject.set(x, "batchIndex", value.asInstanceOf[js.Any])
     

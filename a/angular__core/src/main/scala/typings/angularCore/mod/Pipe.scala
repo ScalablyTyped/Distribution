@@ -40,7 +40,8 @@ object Pipe {
   @js.native
   val ^ : PipeDecorator = js.native
   
-  extension [Self <: Pipe](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Pipe] (val x: Self) extends AnyVal {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

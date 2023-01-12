@@ -21,7 +21,8 @@ object LocalStatement {
     __obj.asInstanceOf[LocalStatement]
   }
   
-  extension [Self <: LocalStatement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LocalStatement] (val x: Self) extends AnyVal {
     
     inline def setInit(value: js.Array[Expression]): Self = StObject.set(x, "init", value.asInstanceOf[js.Any])
     

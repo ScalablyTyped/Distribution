@@ -15,7 +15,8 @@ object Typedefs {
     __obj.asInstanceOf[Typedefs]
   }
   
-  extension [Self <: Typedefs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Typedefs] (val x: Self) extends AnyVal {
     
     inline def setTypedefs(value: js.Array[java.lang.String]): Self = StObject.set(x, "typedefs", value.asInstanceOf[js.Any])
     

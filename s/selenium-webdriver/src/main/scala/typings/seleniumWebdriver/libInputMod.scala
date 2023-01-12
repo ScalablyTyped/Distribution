@@ -247,7 +247,8 @@ object libInputMod {
       __obj.asInstanceOf[IDirection]
     }
     
-    extension [Self <: IDirection](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDirection] (val x: Self) extends AnyVal {
       
       inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
@@ -477,7 +478,8 @@ object libInputMod {
       __obj.asInstanceOf[IKey]
     }
     
-    extension [Self <: IKey](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IKey] (val x: Self) extends AnyVal {
       
       inline def setADD(value: String): Self = StObject.set(x, "ADD", value.asInstanceOf[js.Any])
       

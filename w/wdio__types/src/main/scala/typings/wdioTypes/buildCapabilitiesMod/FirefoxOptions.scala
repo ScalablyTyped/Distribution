@@ -26,7 +26,8 @@ object FirefoxOptions {
     __obj.asInstanceOf[FirefoxOptions]
   }
   
-  extension [Self <: FirefoxOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FirefoxOptions] (val x: Self) extends AnyVal {
     
     inline def setArgs(value: js.Array[String]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     

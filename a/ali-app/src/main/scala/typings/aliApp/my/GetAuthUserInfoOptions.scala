@@ -21,7 +21,8 @@ object GetAuthUserInfoOptions {
     __obj.asInstanceOf[GetAuthUserInfoOptions]
   }
   
-  extension [Self <: GetAuthUserInfoOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetAuthUserInfoOptions] (val x: Self) extends AnyVal {
     
     inline def setSuccess(value: /* res */ NickName => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
     

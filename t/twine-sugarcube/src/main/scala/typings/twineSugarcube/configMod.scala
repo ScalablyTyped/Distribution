@@ -119,7 +119,8 @@ object configMod {
       __obj.asInstanceOf[ConfigAPI]
     }
     
-    extension [Self <: ConfigAPI](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConfigAPI] (val x: Self) extends AnyVal {
       
       inline def setAddVisitedLinkClass(value: Boolean): Self = StObject.set(x, "addVisitedLinkClass", value.asInstanceOf[js.Any])
       

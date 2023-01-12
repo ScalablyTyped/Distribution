@@ -41,7 +41,8 @@ object libSplitButtonMod {
       __obj.asInstanceOf[SplitButtonProps]
     }
     
-    extension [Self <: SplitButtonProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SplitButtonProps] (val x: Self) extends AnyVal {
       
       inline def setBsSize(value: Sizes): Self = StObject.set(x, "bsSize", value.asInstanceOf[js.Any])
       

@@ -22,7 +22,8 @@ object GoogleCloudDialogflowCxV3VersionVariantsVariant {
     __obj.asInstanceOf[GoogleCloudDialogflowCxV3VersionVariantsVariant]
   }
   
-  extension [Self <: GoogleCloudDialogflowCxV3VersionVariantsVariant](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDialogflowCxV3VersionVariantsVariant] (val x: Self) extends AnyVal {
     
     inline def setIsControlGroup(value: Boolean): Self = StObject.set(x, "isControlGroup", value.asInstanceOf[js.Any])
     

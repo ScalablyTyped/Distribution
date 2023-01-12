@@ -40,7 +40,8 @@ object OverflowProps {
     __obj.asInstanceOf[OverflowProps[ThemeType]]
   }
   
-  extension [Self <: OverflowProps[?], ThemeType /* <: Theme[TLengthStyledSystem] */](x: Self & OverflowProps[ThemeType]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OverflowProps[?], ThemeType /* <: Theme[TLengthStyledSystem] */] (val x: Self & OverflowProps[ThemeType]) extends AnyVal {
     
     inline def setOverflow(value: ResponsiveValue[Overflow, ThemeType]): Self = StObject.set(x, "overflow", value.asInstanceOf[js.Any])
     

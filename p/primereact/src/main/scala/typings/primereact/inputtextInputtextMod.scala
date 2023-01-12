@@ -559,7 +559,8 @@ object inputtextInputtextMod {
       __obj.asInstanceOf[InputTextProps]
     }
     
-    extension [Self <: InputTextProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InputTextProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       

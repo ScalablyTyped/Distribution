@@ -29,7 +29,8 @@ object StockChartNavigatorPaneTitle {
     __obj.asInstanceOf[StockChartNavigatorPaneTitle]
   }
   
-  extension [Self <: StockChartNavigatorPaneTitle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StockChartNavigatorPaneTitle] (val x: Self) extends AnyVal {
     
     inline def setBackground(value: String): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     

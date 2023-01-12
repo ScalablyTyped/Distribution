@@ -15,7 +15,8 @@ object DoubleClick {
     __obj.asInstanceOf[DoubleClick]
   }
   
-  extension [Self <: DoubleClick](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DoubleClick] (val x: Self) extends AnyVal {
     
     inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
   }

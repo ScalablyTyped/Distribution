@@ -25,7 +25,8 @@ object CreativeOptimizationConfiguration {
     __obj.asInstanceOf[CreativeOptimizationConfiguration]
   }
   
-  extension [Self <: CreativeOptimizationConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreativeOptimizationConfiguration] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

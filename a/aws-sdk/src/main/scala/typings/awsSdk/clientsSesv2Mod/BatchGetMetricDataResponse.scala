@@ -23,7 +23,8 @@ object BatchGetMetricDataResponse {
     __obj.asInstanceOf[BatchGetMetricDataResponse]
   }
   
-  extension [Self <: BatchGetMetricDataResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchGetMetricDataResponse] (val x: Self) extends AnyVal {
     
     inline def setErrors(value: MetricDataErrorList): Self = StObject.set(x, "Errors", value.asInstanceOf[js.Any])
     

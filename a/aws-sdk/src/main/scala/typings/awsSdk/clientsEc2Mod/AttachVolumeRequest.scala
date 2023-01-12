@@ -33,7 +33,8 @@ object AttachVolumeRequest {
     __obj.asInstanceOf[AttachVolumeRequest]
   }
   
-  extension [Self <: AttachVolumeRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AttachVolumeRequest] (val x: Self) extends AnyVal {
     
     inline def setDevice(value: String): Self = StObject.set(x, "Device", value.asInstanceOf[js.Any])
     

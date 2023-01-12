@@ -18,7 +18,8 @@ object GenerateOptions {
     __obj.asInstanceOf[GenerateOptions]
   }
   
-  extension [Self <: GenerateOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GenerateOptions] (val x: Self) extends AnyVal {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

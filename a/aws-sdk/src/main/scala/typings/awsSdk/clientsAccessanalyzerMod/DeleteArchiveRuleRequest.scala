@@ -28,7 +28,8 @@ object DeleteArchiveRuleRequest {
     __obj.asInstanceOf[DeleteArchiveRuleRequest]
   }
   
-  extension [Self <: DeleteArchiveRuleRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteArchiveRuleRequest] (val x: Self) extends AnyVal {
     
     inline def setAnalyzerName(value: Name): Self = StObject.set(x, "analyzerName", value.asInstanceOf[js.Any])
     

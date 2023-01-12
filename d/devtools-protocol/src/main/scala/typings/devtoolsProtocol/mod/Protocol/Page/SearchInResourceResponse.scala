@@ -19,7 +19,8 @@ object SearchInResourceResponse {
     __obj.asInstanceOf[SearchInResourceResponse]
   }
   
-  extension [Self <: SearchInResourceResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchInResourceResponse] (val x: Self) extends AnyVal {
     
     inline def setResult(value: js.Array[SearchMatch]): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     

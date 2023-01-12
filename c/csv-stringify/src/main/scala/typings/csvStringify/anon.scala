@@ -32,7 +32,8 @@ object anon {
       __obj.asInstanceOf[Boolean]
     }
     
-    extension [Self <: Boolean](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Boolean] (val x: Self) extends AnyVal {
       
       inline def setBoolean(value: (scala.Boolean, /* context */ CastingContext) => String | CastReturnObject): Self = StObject.set(x, "boolean", js.Any.fromFunction2(value))
       

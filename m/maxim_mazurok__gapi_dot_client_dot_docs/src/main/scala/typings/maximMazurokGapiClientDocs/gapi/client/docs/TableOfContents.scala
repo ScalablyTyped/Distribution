@@ -22,7 +22,8 @@ object TableOfContents {
     __obj.asInstanceOf[TableOfContents]
   }
   
-  extension [Self <: TableOfContents](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TableOfContents] (val x: Self) extends AnyVal {
     
     inline def setContent(value: js.Array[StructuralElement]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     

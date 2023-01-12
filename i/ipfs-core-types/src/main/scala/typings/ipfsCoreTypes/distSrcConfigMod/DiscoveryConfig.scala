@@ -17,7 +17,8 @@ object DiscoveryConfig {
     __obj.asInstanceOf[DiscoveryConfig]
   }
   
-  extension [Self <: DiscoveryConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DiscoveryConfig] (val x: Self) extends AnyVal {
     
     inline def setMDNS(value: MDNSDiscovery): Self = StObject.set(x, "MDNS", value.asInstanceOf[js.Any])
     

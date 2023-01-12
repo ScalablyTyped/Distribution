@@ -25,7 +25,8 @@ object StoreStats {
     __obj.asInstanceOf[StoreStats]
   }
   
-  extension [Self <: StoreStats](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StoreStats] (val x: Self) extends AnyVal {
     
     inline def setReserved(value: ByteSize): Self = StObject.set(x, "reserved", value.asInstanceOf[js.Any])
     

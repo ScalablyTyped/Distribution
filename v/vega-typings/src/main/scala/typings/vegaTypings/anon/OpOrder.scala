@@ -22,7 +22,8 @@ object OpOrder {
     __obj.asInstanceOf[OpOrder]
   }
   
-  extension [Self <: OpOrder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OpOrder] (val x: Self) extends AnyVal {
     
     inline def setOp(value: count): Self = StObject.set(x, "op", value.asInstanceOf[js.Any])
     

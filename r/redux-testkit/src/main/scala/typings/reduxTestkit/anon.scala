@@ -22,7 +22,8 @@ object anon {
       __obj.asInstanceOf[Execute]
     }
     
-    extension [Self <: Execute](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Execute] (val x: Self) extends AnyVal {
       
       inline def setExecute(value: (Any, /* repeated */ Any) => Any): Self = StObject.set(x, "execute", js.Any.fromFunction2(value))
       
@@ -43,7 +44,8 @@ object anon {
       __obj.asInstanceOf[Flush]
     }
     
-    extension [Self <: Flush](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Flush] (val x: Self) extends AnyVal {
       
       inline def setFlush(value: () => Unit): Self = StObject.set(x, "flush", js.Any.fromFunction0(value))
       
@@ -71,7 +73,8 @@ object anon {
       __obj.asInstanceOf[ReducerTestkitwithStatest]
     }
     
-    extension [Self <: ReducerTestkitwithStatest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReducerTestkitwithStatest] (val x: Self) extends AnyVal {
       
       inline def setExecute(value: Action[Any] => Any): Self = StObject.set(x, "execute", js.Any.fromFunction1(value))
       
@@ -95,7 +98,8 @@ object anon {
       __obj.asInstanceOf[ThunkTestkitwithStatestat]
     }
     
-    extension [Self <: ThunkTestkitwithStatestat](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ThunkTestkitwithStatestat] (val x: Self) extends AnyVal {
       
       inline def setExecute(value: /* repeated */ Any => Any): Self = StObject.set(x, "execute", js.Any.fromFunction1(value))
       
@@ -118,7 +122,8 @@ object anon {
       __obj.asInstanceOf[ToChangeInState]
     }
     
-    extension [Self <: ToChangeInState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ToChangeInState] (val x: Self) extends AnyVal {
       
       inline def setToChangeInState(value: Any => Unit): Self = StObject.set(x, "toChangeInState", js.Any.fromFunction1(value))
       
@@ -139,7 +144,8 @@ object anon {
       __obj.asInstanceOf[ToReturn]
     }
     
-    extension [Self <: ToReturn](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ToReturn] (val x: Self) extends AnyVal {
       
       inline def setToReturn(value: Any => Unit): Self = StObject.set(x, "toReturn", js.Any.fromFunction1(value))
     }

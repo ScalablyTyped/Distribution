@@ -21,7 +21,8 @@ object ChannelCredentials {
     __obj.asInstanceOf[ChannelCredentials]
   }
   
-  extension [Self <: ChannelCredentials](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChannelCredentials] (val x: Self) extends AnyVal {
     
     inline def setCompose(value: CallCredentials => ChannelCredentials): Self = StObject.set(x, "compose", js.Any.fromFunction1(value))
   }

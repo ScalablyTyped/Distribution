@@ -28,7 +28,8 @@ object anon {
       __obj.asInstanceOf[ERRPATHMUSTBEABSOLUTE]
     }
     
-    extension [Self <: ERRPATHMUSTBEABSOLUTE](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ERRPATHMUSTBEABSOLUTE] (val x: Self) extends AnyVal {
       
       inline def setERR_PATH_MUST_BE_ABSOLUTE(value: String): Self = StObject.set(x, "ERR_PATH_MUST_BE_ABSOLUTE", value.asInstanceOf[js.Any])
       

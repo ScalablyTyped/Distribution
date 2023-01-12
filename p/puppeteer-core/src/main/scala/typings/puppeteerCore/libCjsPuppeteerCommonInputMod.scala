@@ -297,7 +297,8 @@ object libCjsPuppeteerCommonInputMod {
       __obj.asInstanceOf[MouseOptions]
     }
     
-    extension [Self <: MouseOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MouseOptions] (val x: Self) extends AnyVal {
       
       inline def setButton(value: MouseButton): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
       
@@ -322,7 +323,8 @@ object libCjsPuppeteerCommonInputMod {
       __obj.asInstanceOf[MouseWheelOptions]
     }
     
-    extension [Self <: MouseWheelOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MouseWheelOptions] (val x: Self) extends AnyVal {
       
       inline def setDeltaX(value: Double): Self = StObject.set(x, "deltaX", value.asInstanceOf[js.Any])
       

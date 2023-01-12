@@ -49,7 +49,8 @@ object CardPreAuthorizedPayInData {
     __obj.asInstanceOf[CardPreAuthorizedPayInData]
   }
   
-  extension [Self <: CardPreAuthorizedPayInData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CardPreAuthorizedPayInData] (val x: Self) extends AnyVal {
     
     inline def setExecutionType(value: DIRECT): Self = StObject.set(x, "ExecutionType", value.asInstanceOf[js.Any])
     

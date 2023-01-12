@@ -22,7 +22,8 @@ object HistogramRule {
     __obj.asInstanceOf[HistogramRule]
   }
   
-  extension [Self <: HistogramRule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HistogramRule] (val x: Self) extends AnyVal {
     
     inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     

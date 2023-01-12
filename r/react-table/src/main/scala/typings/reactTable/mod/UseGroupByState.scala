@@ -15,7 +15,8 @@ object UseGroupByState {
     __obj.asInstanceOf[UseGroupByState[D]]
   }
   
-  extension [Self <: UseGroupByState[?], D /* <: js.Object */](x: Self & UseGroupByState[D]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UseGroupByState[?], D /* <: js.Object */] (val x: Self & UseGroupByState[D]) extends AnyVal {
     
     inline def setGroupBy(value: js.Array[IdType[D]]): Self = StObject.set(x, "groupBy", value.asInstanceOf[js.Any])
     

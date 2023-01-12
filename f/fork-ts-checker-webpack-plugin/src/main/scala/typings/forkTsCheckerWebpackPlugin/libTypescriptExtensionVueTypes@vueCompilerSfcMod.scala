@@ -25,7 +25,8 @@ object `libTypescriptExtensionVueTypes@vueCompilerSfcMod` {
       __obj.asInstanceOf[CompilerError]
     }
     
-    extension [Self <: CompilerError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CompilerError] (val x: Self) extends AnyVal {
       
       inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
@@ -50,7 +51,8 @@ object `libTypescriptExtensionVueTypes@vueCompilerSfcMod` {
       __obj.asInstanceOf[Position]
     }
     
-    extension [Self <: Position](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Position] (val x: Self) extends AnyVal {
       
       inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
@@ -82,7 +84,8 @@ object `libTypescriptExtensionVueTypes@vueCompilerSfcMod` {
       __obj.asInstanceOf[SFCBlock]
     }
     
-    extension [Self <: SFCBlock](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SFCBlock] (val x: Self) extends AnyVal {
       
       inline def setAttrs(value: Record[String, String | `true`]): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
       
@@ -121,7 +124,8 @@ object `libTypescriptExtensionVueTypes@vueCompilerSfcMod` {
       __obj.asInstanceOf[SFCDescriptor]
     }
     
-    extension [Self <: SFCDescriptor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SFCDescriptor] (val x: Self) extends AnyVal {
       
       inline def setCustomBlocks(value: js.Array[SFCBlock]): Self = StObject.set(x, "customBlocks", value.asInstanceOf[js.Any])
       
@@ -156,7 +160,8 @@ object `libTypescriptExtensionVueTypes@vueCompilerSfcMod` {
       __obj.asInstanceOf[SFCParseResult]
     }
     
-    extension [Self <: SFCParseResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SFCParseResult] (val x: Self) extends AnyVal {
       
       inline def setDescriptor(value: SFCDescriptor): Self = StObject.set(x, "descriptor", value.asInstanceOf[js.Any])
       
@@ -181,7 +186,8 @@ object `libTypescriptExtensionVueTypes@vueCompilerSfcMod` {
       __obj.asInstanceOf[SourceLocation]
     }
     
-    extension [Self <: SourceLocation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SourceLocation] (val x: Self) extends AnyVal {
       
       inline def setEnd(value: Position): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       

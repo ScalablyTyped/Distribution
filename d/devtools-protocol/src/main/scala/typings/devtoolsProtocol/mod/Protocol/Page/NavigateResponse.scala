@@ -30,7 +30,8 @@ object NavigateResponse {
     __obj.asInstanceOf[NavigateResponse]
   }
   
-  extension [Self <: NavigateResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NavigateResponse] (val x: Self) extends AnyVal {
     
     inline def setErrorText(value: String): Self = StObject.set(x, "errorText", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object SettlementFetchResponse {
     __obj.asInstanceOf[SettlementFetchResponse]
   }
   
-  extension [Self <: SettlementFetchResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SettlementFetchResponse] (val x: Self) extends AnyVal {
     
     inline def setData(value: Accountcountry): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
   }

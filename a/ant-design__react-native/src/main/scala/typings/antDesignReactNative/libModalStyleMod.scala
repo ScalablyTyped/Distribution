@@ -85,7 +85,8 @@ object libModalStyleMod {
       __obj.asInstanceOf[ModalStyle]
     }
     
-    extension [Self <: ModalStyle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ModalStyle] (val x: Self) extends AnyVal {
       
       inline def setBody(value: ViewStyle): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       

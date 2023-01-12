@@ -18,7 +18,8 @@ object ChallengeConfig {
     __obj.asInstanceOf[ChallengeConfig]
   }
   
-  extension [Self <: ChallengeConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChallengeConfig] (val x: Self) extends AnyVal {
     
     inline def setImmunityTimeProperty(value: ImmunityTimeProperty): Self = StObject.set(x, "ImmunityTimeProperty", value.asInstanceOf[js.Any])
     

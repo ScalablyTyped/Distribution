@@ -31,7 +31,8 @@ object Fido2AuthenticationMethodConfiguration {
     __obj.asInstanceOf[Fido2AuthenticationMethodConfiguration]
   }
   
-  extension [Self <: Fido2AuthenticationMethodConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Fido2AuthenticationMethodConfiguration] (val x: Self) extends AnyVal {
     
     inline def setIncludeTargets(value: NullableOption[js.Array[AuthenticationMethodTarget]]): Self = StObject.set(x, "includeTargets", value.asInstanceOf[js.Any])
     

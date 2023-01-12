@@ -20,7 +20,8 @@ object StringParamcertissuerstri {
     __obj.asInstanceOf[StringParamcertissuerstri]
   }
   
-  extension [Self <: StringParamcertissuerstri](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StringParamcertissuerstri] (val x: Self) extends AnyVal {
     
     inline def setCertissuer(value: String): Self = StObject.set(x, "certissuer", value.asInstanceOf[js.Any])
     

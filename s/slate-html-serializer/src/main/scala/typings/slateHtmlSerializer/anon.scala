@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[`0`]
     }
     
-    extension [Self <: `0`](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: `0`] (val x: Self) extends AnyVal {
       
       inline def setToJSON(value: `false`): Self = StObject.set(x, "toJSON", value.asInstanceOf[js.Any])
       
@@ -38,7 +39,8 @@ object anon {
       __obj.asInstanceOf[`1`]
     }
     
-    extension [Self <: `1`](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: `1`] (val x: Self) extends AnyVal {
       
       inline def setRender(value: `false`): Self = StObject.set(x, "render", value.asInstanceOf[js.Any])
     }
@@ -55,7 +57,8 @@ object anon {
       __obj.asInstanceOf[Render]
     }
     
-    extension [Self <: Render](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Render] (val x: Self) extends AnyVal {
       
       inline def setRender(value: `true`): Self = StObject.set(x, "render", value.asInstanceOf[js.Any])
       
@@ -74,7 +77,8 @@ object anon {
       __obj.asInstanceOf[ToJSON]
     }
     
-    extension [Self <: ToJSON](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ToJSON] (val x: Self) extends AnyVal {
       
       inline def setToJSON(value: `true`): Self = StObject.set(x, "toJSON", value.asInstanceOf[js.Any])
     }

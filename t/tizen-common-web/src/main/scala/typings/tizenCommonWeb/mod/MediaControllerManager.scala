@@ -42,7 +42,8 @@ object MediaControllerManager {
     __obj.asInstanceOf[MediaControllerManager]
   }
   
-  extension [Self <: MediaControllerManager](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MediaControllerManager] (val x: Self) extends AnyVal {
     
     inline def setCreateServer(value: () => MediaControllerServer): Self = StObject.set(x, "createServer", js.Any.fromFunction0(value))
     

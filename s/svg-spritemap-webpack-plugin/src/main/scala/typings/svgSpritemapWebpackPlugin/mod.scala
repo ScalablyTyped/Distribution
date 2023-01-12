@@ -56,7 +56,8 @@ object mod {
       __obj.asInstanceOf[InputOptions]
     }
     
-    extension [Self <: InputOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InputOptions] (val x: Self) extends AnyVal {
       
       inline def setAllowDuplicates(value: Boolean): Self = StObject.set(x, "allowDuplicates", value.asInstanceOf[js.Any])
       
@@ -97,7 +98,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setInput(value: InputOptions): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
       

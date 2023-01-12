@@ -18,7 +18,8 @@ object GetCookiesResponse {
     __obj.asInstanceOf[GetCookiesResponse]
   }
   
-  extension [Self <: GetCookiesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetCookiesResponse] (val x: Self) extends AnyVal {
     
     inline def setCookies(value: js.Array[Cookie]): Self = StObject.set(x, "cookies", value.asInstanceOf[js.Any])
     

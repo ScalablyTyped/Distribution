@@ -24,7 +24,8 @@ object PathsWebhooksComponents {
     __obj.asInstanceOf[PathsWebhooksComponents[T]]
   }
   
-  extension [Self <: PathsWebhooksComponents[?], T /* <: js.Object */](x: Self & PathsWebhooksComponents[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PathsWebhooksComponents[?], T /* <: js.Object */] (val x: Self & PathsWebhooksComponents[T]) extends AnyVal {
     
     inline def setComponents(value: ComponentsObject): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
     

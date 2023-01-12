@@ -60,7 +60,8 @@ object libComponentsDocumentCardDocumentCardActionsDottypesMod {
       __obj.asInstanceOf[IDocumentCardActionsProps]
     }
     
-    extension [Self <: IDocumentCardActionsProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDocumentCardActionsProps] (val x: Self) extends AnyVal {
       
       inline def setActions(value: js.Array[IButtonProps]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
       
@@ -111,7 +112,8 @@ object libComponentsDocumentCardDocumentCardActionsDottypesMod {
       __obj.asInstanceOf[IDocumentCardActionsStyleProps]
     }
     
-    extension [Self <: IDocumentCardActionsStyleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDocumentCardActionsStyleProps] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -138,7 +140,8 @@ object libComponentsDocumentCardDocumentCardActionsDottypesMod {
       __obj.asInstanceOf[IDocumentCardActionsStyles]
     }
     
-    extension [Self <: IDocumentCardActionsStyles](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDocumentCardActionsStyles] (val x: Self) extends AnyVal {
       
       inline def setAction(value: IStyle): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       

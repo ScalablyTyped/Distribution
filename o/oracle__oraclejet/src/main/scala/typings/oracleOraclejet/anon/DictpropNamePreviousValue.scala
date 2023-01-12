@@ -20,7 +20,8 @@ object DictpropNamePreviousValue {
     __obj.asInstanceOf[DictpropNamePreviousValue]
   }
   
-  extension [Self <: DictpropNamePreviousValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DictpropNamePreviousValue] (val x: Self) extends AnyVal {
     
     inline def setPreviousValue(value: Any): Self = StObject.set(x, "previousValue", value.asInstanceOf[js.Any])
     

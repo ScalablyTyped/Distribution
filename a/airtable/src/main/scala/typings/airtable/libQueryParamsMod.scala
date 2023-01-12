@@ -87,7 +87,8 @@ object libQueryParamsMod {
       __obj.asInstanceOf[QueryParams[TFields]]
     }
     
-    extension [Self <: QueryParams[?], TFields](x: Self & QueryParams[TFields]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QueryParams[?], TFields] (val x: Self & QueryParams[TFields]) extends AnyVal {
       
       inline def setCellFormat(value: json | string): Self = StObject.set(x, "cellFormat", value.asInstanceOf[js.Any])
       
@@ -156,7 +157,8 @@ object libQueryParamsMod {
       __obj.asInstanceOf[SortParameter[TFields]]
     }
     
-    extension [Self <: SortParameter[?], TFields](x: Self & SortParameter[TFields]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SortParameter[?], TFields] (val x: Self & SortParameter[TFields]) extends AnyVal {
       
       inline def setDirection(value: asc | desc): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       

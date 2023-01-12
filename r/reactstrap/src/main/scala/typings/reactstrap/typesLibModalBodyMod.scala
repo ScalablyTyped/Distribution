@@ -35,7 +35,8 @@ object typesLibModalBodyMod {
       __obj.asInstanceOf[ModalBodyProps]
     }
     
-    extension [Self <: ModalBodyProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ModalBodyProps] (val x: Self) extends AnyVal {
       
       inline def setCssModule(value: CSSModule): Self = StObject.set(x, "cssModule", value.asInstanceOf[js.Any])
       

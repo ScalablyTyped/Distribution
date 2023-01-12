@@ -54,7 +54,8 @@ object ListViewOptions {
     __obj.asInstanceOf[ListViewOptions]
   }
   
-  extension [Self <: ListViewOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListViewOptions] (val x: Self) extends AnyVal {
     
     inline def setAppendOnRefresh(value: Boolean): Self = StObject.set(x, "appendOnRefresh", value.asInstanceOf[js.Any])
     

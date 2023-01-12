@@ -20,7 +20,8 @@ object Readonlyreadonlysecondary {
     __obj.asInstanceOf[Readonlyreadonlysecondary]
   }
   
-  extension [Self <: Readonlyreadonlysecondary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Readonlyreadonlysecondary] (val x: Self) extends AnyVal {
     
     inline def setSecondary(value: secondary): Self = StObject.set(x, "secondary", value.asInstanceOf[js.Any])
     

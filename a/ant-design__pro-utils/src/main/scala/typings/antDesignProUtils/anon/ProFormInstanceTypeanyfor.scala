@@ -59,7 +59,8 @@ object ProFormInstanceTypeanyfor {
     __obj.asInstanceOf[ProFormInstanceTypeanyfor]
   }
   
-  extension [Self <: ProFormInstanceTypeanyfor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProFormInstanceTypeanyfor] (val x: Self) extends AnyVal {
     
     inline def setFormRef(value: MutableRefObject[FormInstance[Any]]): Self = StObject.set(x, "formRef", value.asInstanceOf[js.Any])
     

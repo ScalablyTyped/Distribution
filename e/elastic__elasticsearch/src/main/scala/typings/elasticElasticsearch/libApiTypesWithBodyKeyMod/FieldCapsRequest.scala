@@ -32,7 +32,8 @@ object FieldCapsRequest {
     __obj.asInstanceOf[FieldCapsRequest]
   }
   
-  extension [Self <: FieldCapsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FieldCapsRequest] (val x: Self) extends AnyVal {
     
     inline def setAllow_no_indices(value: Boolean): Self = StObject.set(x, "allow_no_indices", value.asInstanceOf[js.Any])
     

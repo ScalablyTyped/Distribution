@@ -20,7 +20,8 @@ object TimesOpAst {
     __obj.asInstanceOf[TimesOpAst]
   }
   
-  extension [Self <: TimesOpAst](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimesOpAst] (val x: Self) extends AnyVal {
     
     inline def setType(value: TIMES_OP): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

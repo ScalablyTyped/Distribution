@@ -19,7 +19,8 @@ object TerminalSplitLocationOptions {
     __obj.asInstanceOf[TerminalSplitLocationOptions]
   }
   
-  extension [Self <: TerminalSplitLocationOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TerminalSplitLocationOptions] (val x: Self) extends AnyVal {
     
     inline def setParentTerminal(value: Terminal): Self = StObject.set(x, "parentTerminal", value.asInstanceOf[js.Any])
   }

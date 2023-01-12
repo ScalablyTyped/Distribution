@@ -17,7 +17,8 @@ object LangAccessibilityTableOptions {
     __obj.asInstanceOf[LangAccessibilityTableOptions]
   }
   
-  extension [Self <: LangAccessibilityTableOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LangAccessibilityTableOptions] (val x: Self) extends AnyVal {
     
     inline def setTableSummary(value: String): Self = StObject.set(x, "tableSummary", value.asInstanceOf[js.Any])
     

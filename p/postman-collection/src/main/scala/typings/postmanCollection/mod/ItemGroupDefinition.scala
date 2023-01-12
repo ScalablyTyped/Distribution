@@ -21,7 +21,8 @@ object ItemGroupDefinition {
     __obj.asInstanceOf[ItemGroupDefinition]
   }
   
-  extension [Self <: ItemGroupDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ItemGroupDefinition] (val x: Self) extends AnyVal {
     
     inline def setAuth(value: RequestAuthDefinition): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     

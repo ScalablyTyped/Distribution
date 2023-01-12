@@ -82,7 +82,8 @@ object IInitProperties {
     __obj.asInstanceOf[IInitProperties]
   }
   
-  extension [Self <: IInitProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IInitProperties] (val x: Self) extends AnyVal {
     
     inline def setClient_id(value: String): Self = StObject.set(x, "client_id", value.asInstanceOf[js.Any])
     

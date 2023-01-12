@@ -19,7 +19,8 @@ object GoogleCloudAssuredworkloadsV1WorkloadSaaEnrollmentResponse {
     __obj.asInstanceOf[GoogleCloudAssuredworkloadsV1WorkloadSaaEnrollmentResponse]
   }
   
-  extension [Self <: GoogleCloudAssuredworkloadsV1WorkloadSaaEnrollmentResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudAssuredworkloadsV1WorkloadSaaEnrollmentResponse] (val x: Self) extends AnyVal {
     
     inline def setSetupErrors(value: js.Array[String]): Self = StObject.set(x, "setupErrors", value.asInstanceOf[js.Any])
     

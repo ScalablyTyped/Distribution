@@ -16,7 +16,8 @@ object BuildNote {
     __obj.asInstanceOf[BuildNote]
   }
   
-  extension [Self <: BuildNote](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BuildNote] (val x: Self) extends AnyVal {
     
     inline def setBuilderVersion(value: String): Self = StObject.set(x, "builderVersion", value.asInstanceOf[js.Any])
     

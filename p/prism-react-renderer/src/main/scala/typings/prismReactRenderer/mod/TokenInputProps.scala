@@ -25,7 +25,8 @@ object TokenInputProps {
     __obj.asInstanceOf[TokenInputProps]
   }
   
-  extension [Self <: TokenInputProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TokenInputProps] (val x: Self) extends AnyVal {
     
     inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object AuthConfig {
     __obj.asInstanceOf[AuthConfig]
   }
   
-  extension [Self <: AuthConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AuthConfig] (val x: Self) extends AnyVal {
     
     inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     

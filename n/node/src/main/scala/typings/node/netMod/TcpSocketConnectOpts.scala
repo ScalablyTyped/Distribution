@@ -38,7 +38,8 @@ object TcpSocketConnectOpts {
     __obj.asInstanceOf[TcpSocketConnectOpts]
   }
   
-  extension [Self <: TcpSocketConnectOpts](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TcpSocketConnectOpts] (val x: Self) extends AnyVal {
     
     inline def setFamily(value: Double): Self = StObject.set(x, "family", value.asInstanceOf[js.Any])
     

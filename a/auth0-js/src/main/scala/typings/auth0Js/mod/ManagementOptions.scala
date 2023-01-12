@@ -29,7 +29,8 @@ object ManagementOptions {
     __obj.asInstanceOf[ManagementOptions]
   }
   
-  extension [Self <: ManagementOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ManagementOptions] (val x: Self) extends AnyVal {
     
     inline def setAudience(value: String): Self = StObject.set(x, "audience", value.asInstanceOf[js.Any])
     

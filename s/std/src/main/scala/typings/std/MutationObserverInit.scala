@@ -41,7 +41,8 @@ object MutationObserverInit {
     __obj.asInstanceOf[MutationObserverInit]
   }
   
-  extension [Self <: MutationObserverInit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MutationObserverInit] (val x: Self) extends AnyVal {
     
     inline def setAttributeFilter(value: js.Array[java.lang.String]): Self = StObject.set(x, "attributeFilter", value.asInstanceOf[js.Any])
     

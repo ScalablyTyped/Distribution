@@ -34,7 +34,8 @@ object BulkSendTestResponse {
     __obj.asInstanceOf[BulkSendTestResponse]
   }
   
-  extension [Self <: BulkSendTestResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BulkSendTestResponse] (val x: Self) extends AnyVal {
     
     inline def setCanBeSent(value: Boolean): Self = StObject.set(x, "canBeSent", value.asInstanceOf[js.Any])
     

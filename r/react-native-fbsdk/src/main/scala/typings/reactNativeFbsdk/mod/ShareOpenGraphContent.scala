@@ -41,7 +41,8 @@ object ShareOpenGraphContent {
     __obj.asInstanceOf[ShareOpenGraphContent]
   }
   
-  extension [Self <: ShareOpenGraphContent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShareOpenGraphContent] (val x: Self) extends AnyVal {
     
     inline def setAction(value: ShareOpenGraphAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     

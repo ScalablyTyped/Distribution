@@ -37,7 +37,8 @@ object distTypesStreamMod {
       __obj.asInstanceOf[GetAwsChunkedEncodingStreamOptions]
     }
     
-    extension [Self <: GetAwsChunkedEncodingStreamOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetAwsChunkedEncodingStreamOptions] (val x: Self) extends AnyVal {
       
       inline def setBase64Encoder(value: /* input */ js.typedarray.Uint8Array => String): Self = StObject.set(x, "base64Encoder", js.Any.fromFunction1(value))
       

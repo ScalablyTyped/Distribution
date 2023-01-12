@@ -152,7 +152,8 @@ object PickImplinterruptRequests {
     __obj.asInstanceOf[PickImplinterruptRequests]
   }
   
-  extension [Self <: PickImplinterruptRequests](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickImplinterruptRequests] (val x: Self) extends AnyVal {
     
     inline def setAction(value: String | `false`): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     

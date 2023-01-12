@@ -21,7 +21,8 @@ object ManagedAppConfiguration {
     __obj.asInstanceOf[ManagedAppConfiguration]
   }
   
-  extension [Self <: ManagedAppConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ManagedAppConfiguration] (val x: Self) extends AnyVal {
     
     inline def setCustomSettings(value: js.Array[KeyValuePair]): Self = StObject.set(x, "customSettings", value.asInstanceOf[js.Any])
     

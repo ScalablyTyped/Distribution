@@ -21,7 +21,8 @@ object IonicContext {
     __obj.asInstanceOf[IonicContext]
   }
   
-  extension [Self <: IonicContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IonicContext] (val x: Self) extends AnyVal {
     
     inline def setBinPath(value: String): Self = StObject.set(x, "binPath", value.asInstanceOf[js.Any])
     

@@ -46,7 +46,8 @@ object permissions {
       __obj.asInstanceOf[Permissions]
     }
     
-    extension [Self <: Permissions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Permissions] (val x: Self) extends AnyVal {
       
       inline def setOrigins(value: js.Array[String | UrlMatches]): Self = StObject.set(x, "origins", value.asInstanceOf[js.Any])
       

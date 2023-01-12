@@ -505,7 +505,8 @@ object distCjsLibIpv6Mod {
       __obj.asInstanceOf[SixToFourProperties]
     }
     
-    extension [Self <: SixToFourProperties](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SixToFourProperties] (val x: Self) extends AnyVal {
       
       inline def setGateway(value: String): Self = StObject.set(x, "gateway", value.asInstanceOf[js.Any])
       
@@ -544,7 +545,8 @@ object distCjsLibIpv6Mod {
       __obj.asInstanceOf[TeredoProperties]
     }
     
-    extension [Self <: TeredoProperties](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TeredoProperties] (val x: Self) extends AnyVal {
       
       inline def setClient4(value: String): Self = StObject.set(x, "client4", value.asInstanceOf[js.Any])
       

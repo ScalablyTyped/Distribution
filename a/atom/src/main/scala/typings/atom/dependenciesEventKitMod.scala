@@ -136,7 +136,8 @@ object dependenciesEventKitMod {
       __obj.asInstanceOf[DisposableLike]
     }
     
-    extension [Self <: DisposableLike](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DisposableLike] (val x: Self) extends AnyVal {
       
       inline def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
     }

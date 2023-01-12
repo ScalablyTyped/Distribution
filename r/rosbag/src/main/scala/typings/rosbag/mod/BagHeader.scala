@@ -31,7 +31,8 @@ object BagHeader {
     __obj.asInstanceOf[BagHeader]
   }
   
-  extension [Self <: BagHeader](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BagHeader] (val x: Self) extends AnyVal {
     
     inline def setChunkCount(value: Double): Self = StObject.set(x, "chunkCount", value.asInstanceOf[js.Any])
     

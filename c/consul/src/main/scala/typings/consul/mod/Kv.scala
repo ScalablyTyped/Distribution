@@ -121,7 +121,8 @@ object Kv {
       __obj.asInstanceOf[DelOptions]
     }
     
-    extension [Self <: DelOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DelOptions] (val x: Self) extends AnyVal {
       
       inline def setCas(value: String): Self = StObject.set(x, "cas", value.asInstanceOf[js.Any])
       
@@ -161,7 +162,8 @@ object Kv {
       __obj.asInstanceOf[GetOptions]
     }
     
-    extension [Self <: GetOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetOptions] (val x: Self) extends AnyVal {
       
       inline def setBuffer(value: Boolean): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
       
@@ -202,7 +204,8 @@ object Kv {
       __obj.asInstanceOf[KeysOptions]
     }
     
-    extension [Self <: KeysOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KeysOptions] (val x: Self) extends AnyVal {
       
       inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
@@ -235,7 +238,8 @@ object Kv {
       __obj.asInstanceOf[SetOptions]
     }
     
-    extension [Self <: SetOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SetOptions] (val x: Self) extends AnyVal {
       
       inline def setAcquire(value: String): Self = StObject.set(x, "acquire", value.asInstanceOf[js.Any])
       

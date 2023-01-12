@@ -193,7 +193,8 @@ object CapabilityStatement2 {
     __obj.asInstanceOf[CapabilityStatement2]
   }
   
-  extension [Self <: CapabilityStatement2](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CapabilityStatement2] (val x: Self) extends AnyVal {
     
     inline def setContact(value: js.Array[ContactDetail]): Self = StObject.set(x, "contact", value.asInstanceOf[js.Any])
     

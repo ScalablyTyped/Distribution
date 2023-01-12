@@ -18,7 +18,8 @@ object RunCommandParameters {
     __obj.asInstanceOf[RunCommandParameters]
   }
   
-  extension [Self <: RunCommandParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RunCommandParameters] (val x: Self) extends AnyVal {
     
     inline def setRunCommandTargets(value: RunCommandTargets): Self = StObject.set(x, "RunCommandTargets", value.asInstanceOf[js.Any])
     

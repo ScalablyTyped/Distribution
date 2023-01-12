@@ -25,7 +25,8 @@ object CliThemeConfig {
     __obj.asInstanceOf[CliThemeConfig]
   }
   
-  extension [Self <: CliThemeConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CliThemeConfig] (val x: Self) extends AnyVal {
     
     inline def setDelimiter(value: Format): Self = StObject.set(x, "delimiter", value.asInstanceOf[js.Any])
     

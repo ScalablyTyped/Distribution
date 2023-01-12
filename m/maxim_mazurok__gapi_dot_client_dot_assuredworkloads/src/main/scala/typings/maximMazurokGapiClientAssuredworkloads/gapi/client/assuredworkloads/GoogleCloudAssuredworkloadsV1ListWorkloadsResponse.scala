@@ -19,7 +19,8 @@ object GoogleCloudAssuredworkloadsV1ListWorkloadsResponse {
     __obj.asInstanceOf[GoogleCloudAssuredworkloadsV1ListWorkloadsResponse]
   }
   
-  extension [Self <: GoogleCloudAssuredworkloadsV1ListWorkloadsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudAssuredworkloadsV1ListWorkloadsResponse] (val x: Self) extends AnyVal {
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     

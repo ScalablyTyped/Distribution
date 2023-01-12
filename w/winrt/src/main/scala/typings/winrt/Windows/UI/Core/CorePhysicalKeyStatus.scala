@@ -32,7 +32,8 @@ object CorePhysicalKeyStatus {
     __obj.asInstanceOf[CorePhysicalKeyStatus]
   }
   
-  extension [Self <: CorePhysicalKeyStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CorePhysicalKeyStatus] (val x: Self) extends AnyVal {
     
     inline def setIsExtendedKey(value: Boolean): Self = StObject.set(x, "isExtendedKey", value.asInstanceOf[js.Any])
     

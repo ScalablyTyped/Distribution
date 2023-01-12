@@ -42,7 +42,8 @@ object DeregisterPackageVersionRequest {
     __obj.asInstanceOf[DeregisterPackageVersionRequest]
   }
   
-  extension [Self <: DeregisterPackageVersionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeregisterPackageVersionRequest] (val x: Self) extends AnyVal {
     
     inline def setOwnerAccount(value: PackageOwnerAccount): Self = StObject.set(x, "OwnerAccount", value.asInstanceOf[js.Any])
     

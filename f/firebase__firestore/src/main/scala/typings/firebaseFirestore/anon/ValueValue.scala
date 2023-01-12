@@ -20,7 +20,8 @@ object ValueValue {
     __obj.asInstanceOf[ValueValue]
   }
   
-  extension [Self <: ValueValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ValueValue] (val x: Self) extends AnyVal {
     
     inline def setInclusive(value: Boolean): Self = StObject.set(x, "inclusive", value.asInstanceOf[js.Any])
     

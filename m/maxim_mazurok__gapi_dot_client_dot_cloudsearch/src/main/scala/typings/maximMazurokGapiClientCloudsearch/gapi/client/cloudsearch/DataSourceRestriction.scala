@@ -23,7 +23,8 @@ object DataSourceRestriction {
     __obj.asInstanceOf[DataSourceRestriction]
   }
   
-  extension [Self <: DataSourceRestriction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataSourceRestriction] (val x: Self) extends AnyVal {
     
     inline def setFilterOptions(value: js.Array[FilterOptions]): Self = StObject.set(x, "filterOptions", value.asInstanceOf[js.Any])
     

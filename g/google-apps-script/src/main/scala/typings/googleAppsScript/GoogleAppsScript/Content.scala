@@ -1168,7 +1168,8 @@ object Content {
         __obj.asInstanceOf[OrderinvoicesCollection]
       }
       
-      extension [Self <: OrderinvoicesCollection](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: OrderinvoicesCollection] (val x: Self) extends AnyVal {
         
         inline def setCreatechargeinvoice(
           value: (OrderinvoicesCreateChargeInvoiceRequest, String, String) => OrderinvoicesCreateChargeInvoiceResponse
@@ -1206,7 +1207,8 @@ object Content {
         __obj.asInstanceOf[OrderpaymentsCollection]
       }
       
-      extension [Self <: OrderpaymentsCollection](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: OrderpaymentsCollection] (val x: Self) extends AnyVal {
         
         inline def setNotifyauthapproved(
           value: (OrderpaymentsNotifyAuthApprovedRequest, String, String) => OrderpaymentsNotifyAuthApprovedResponse
@@ -1461,7 +1463,8 @@ object Content {
     def createTextOutput(content: String): TextOutput = js.native
   }
   
-  extension [Self <: Content](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Content] (val x: Self) extends AnyVal {
     
     inline def setAccounts(value: AccountsCollection): Self = StObject.set(x, "Accounts", value.asInstanceOf[js.Any])
     
@@ -1857,7 +1860,8 @@ object Content {
         __obj.asInstanceOf[Account]
       }
       
-      extension [Self <: Account](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Account] (val x: Self) extends AnyVal {
         
         inline def setAdultContent(value: Boolean): Self = StObject.set(x, "adultContent", value.asInstanceOf[js.Any])
         
@@ -1934,7 +1938,8 @@ object Content {
         __obj.asInstanceOf[AccountAddress]
       }
       
-      extension [Self <: AccountAddress](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AccountAddress] (val x: Self) extends AnyVal {
         
         inline def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
         
@@ -1971,7 +1976,8 @@ object Content {
         __obj.asInstanceOf[AccountAdwordsLink]
       }
       
-      extension [Self <: AccountAdwordsLink](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AccountAdwordsLink] (val x: Self) extends AnyVal {
         
         inline def setAdwordsId(value: String): Self = StObject.set(x, "adwordsId", value.asInstanceOf[js.Any])
         
@@ -1998,7 +2004,8 @@ object Content {
         __obj.asInstanceOf[AccountBusinessInformation]
       }
       
-      extension [Self <: AccountBusinessInformation](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AccountBusinessInformation] (val x: Self) extends AnyVal {
         
         inline def setAddress(value: AccountAddress): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
         
@@ -2029,7 +2036,8 @@ object Content {
         __obj.asInstanceOf[AccountCustomerService]
       }
       
-      extension [Self <: AccountCustomerService](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AccountCustomerService] (val x: Self) extends AnyVal {
         
         inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
         
@@ -2058,7 +2066,8 @@ object Content {
         __obj.asInstanceOf[AccountGoogleMyBusinessLink]
       }
       
-      extension [Self <: AccountGoogleMyBusinessLink](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AccountGoogleMyBusinessLink] (val x: Self) extends AnyVal {
         
         inline def setGmbEmail(value: String): Self = StObject.set(x, "gmbEmail", value.asInstanceOf[js.Any])
         
@@ -2083,7 +2092,8 @@ object Content {
         __obj.asInstanceOf[AccountIdentifier]
       }
       
-      extension [Self <: AccountIdentifier](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AccountIdentifier] (val x: Self) extends AnyVal {
         
         inline def setAggregatorId(value: String): Self = StObject.set(x, "aggregatorId", value.asInstanceOf[js.Any])
         
@@ -2116,7 +2126,8 @@ object Content {
         __obj.asInstanceOf[AccountStatus]
       }
       
-      extension [Self <: AccountStatus](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AccountStatus] (val x: Self) extends AnyVal {
         
         inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
         
@@ -2173,7 +2184,8 @@ object Content {
         __obj.asInstanceOf[AccountStatusAccountLevelIssue]
       }
       
-      extension [Self <: AccountStatusAccountLevelIssue](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AccountStatusAccountLevelIssue] (val x: Self) extends AnyVal {
         
         inline def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
         
@@ -2236,7 +2248,8 @@ object Content {
         __obj.asInstanceOf[AccountStatusDataQualityIssue]
       }
       
-      extension [Self <: AccountStatusDataQualityIssue](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AccountStatusDataQualityIssue] (val x: Self) extends AnyVal {
         
         inline def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
         
@@ -2305,7 +2318,8 @@ object Content {
         __obj.asInstanceOf[AccountStatusExampleItem]
       }
       
-      extension [Self <: AccountStatusExampleItem](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AccountStatusExampleItem] (val x: Self) extends AnyVal {
         
         inline def setItemId(value: String): Self = StObject.set(x, "itemId", value.asInstanceOf[js.Any])
         
@@ -2354,7 +2368,8 @@ object Content {
         __obj.asInstanceOf[AccountStatusItemLevelIssue]
       }
       
-      extension [Self <: AccountStatusItemLevelIssue](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AccountStatusItemLevelIssue] (val x: Self) extends AnyVal {
         
         inline def setAttributeName(value: String): Self = StObject.set(x, "attributeName", value.asInstanceOf[js.Any])
         
@@ -2409,7 +2424,8 @@ object Content {
         __obj.asInstanceOf[AccountStatusProducts]
       }
       
-      extension [Self <: AccountStatusProducts](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AccountStatusProducts] (val x: Self) extends AnyVal {
         
         inline def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
         
@@ -2452,7 +2468,8 @@ object Content {
         __obj.asInstanceOf[AccountStatusStatistics]
       }
       
-      extension [Self <: AccountStatusStatistics](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AccountStatusStatistics] (val x: Self) extends AnyVal {
         
         inline def setActive(value: String): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
         
@@ -2487,7 +2504,8 @@ object Content {
         __obj.asInstanceOf[AccountTax]
       }
       
-      extension [Self <: AccountTax](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AccountTax] (val x: Self) extends AnyVal {
         
         inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
         
@@ -2524,7 +2542,8 @@ object Content {
         __obj.asInstanceOf[AccountTaxTaxRule]
       }
       
-      extension [Self <: AccountTaxTaxRule](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AccountTaxTaxRule] (val x: Self) extends AnyVal {
         
         inline def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
         
@@ -2567,7 +2586,8 @@ object Content {
         __obj.asInstanceOf[AccountUser]
       }
       
-      extension [Self <: AccountUser](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AccountUser] (val x: Self) extends AnyVal {
         
         inline def setAdmin(value: Boolean): Self = StObject.set(x, "admin", value.asInstanceOf[js.Any])
         
@@ -2604,7 +2624,8 @@ object Content {
         __obj.asInstanceOf[AccountYouTubeChannelLink]
       }
       
-      extension [Self <: AccountYouTubeChannelLink](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AccountYouTubeChannelLink] (val x: Self) extends AnyVal {
         
         inline def setChannelId(value: String): Self = StObject.set(x, "channelId", value.asInstanceOf[js.Any])
         
@@ -2629,7 +2650,8 @@ object Content {
         __obj.asInstanceOf[AccountsAuthInfoResponse]
       }
       
-      extension [Self <: AccountsAuthInfoResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AccountsAuthInfoResponse] (val x: Self) extends AnyVal {
         
         inline def setAccountIdentifiers(value: js.Array[AccountIdentifier]): Self = StObject.set(x, "accountIdentifiers", value.asInstanceOf[js.Any])
         
@@ -2654,7 +2676,8 @@ object Content {
         __obj.asInstanceOf[AccountsClaimWebsiteResponse]
       }
       
-      extension [Self <: AccountsClaimWebsiteResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AccountsClaimWebsiteResponse] (val x: Self) extends AnyVal {
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -2673,7 +2696,8 @@ object Content {
         __obj.asInstanceOf[AccountsCustomBatchRequest]
       }
       
-      extension [Self <: AccountsCustomBatchRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AccountsCustomBatchRequest] (val x: Self) extends AnyVal {
         
         inline def setEntries(value: js.Array[AccountsCustomBatchRequestEntry]): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
         
@@ -2708,7 +2732,8 @@ object Content {
         __obj.asInstanceOf[AccountsCustomBatchRequestEntry]
       }
       
-      extension [Self <: AccountsCustomBatchRequestEntry](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AccountsCustomBatchRequestEntry] (val x: Self) extends AnyVal {
         
         inline def setAccount(value: Account): Self = StObject.set(x, "account", value.asInstanceOf[js.Any])
         
@@ -2759,7 +2784,8 @@ object Content {
         __obj.asInstanceOf[AccountsCustomBatchRequestEntryLinkRequest]
       }
       
-      extension [Self <: AccountsCustomBatchRequestEntryLinkRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AccountsCustomBatchRequestEntryLinkRequest] (val x: Self) extends AnyVal {
         
         inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
         
@@ -2788,7 +2814,8 @@ object Content {
         __obj.asInstanceOf[AccountsCustomBatchResponse]
       }
       
-      extension [Self <: AccountsCustomBatchResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AccountsCustomBatchResponse] (val x: Self) extends AnyVal {
         
         inline def setEntries(value: js.Array[AccountsCustomBatchResponseEntry]): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
         
@@ -2821,7 +2848,8 @@ object Content {
         __obj.asInstanceOf[AccountsCustomBatchResponseEntry]
       }
       
-      extension [Self <: AccountsCustomBatchResponseEntry](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AccountsCustomBatchResponseEntry] (val x: Self) extends AnyVal {
         
         inline def setAccount(value: Account): Self = StObject.set(x, "account", value.asInstanceOf[js.Any])
         
@@ -2860,7 +2888,8 @@ object Content {
         __obj.asInstanceOf[AccountsLinkRequest]
       }
       
-      extension [Self <: AccountsLinkRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AccountsLinkRequest] (val x: Self) extends AnyVal {
         
         inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
         
@@ -2887,7 +2916,8 @@ object Content {
         __obj.asInstanceOf[AccountsLinkResponse]
       }
       
-      extension [Self <: AccountsLinkResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AccountsLinkResponse] (val x: Self) extends AnyVal {
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -2910,7 +2940,8 @@ object Content {
         __obj.asInstanceOf[AccountsListResponse]
       }
       
-      extension [Self <: AccountsListResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AccountsListResponse] (val x: Self) extends AnyVal {
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -2939,7 +2970,8 @@ object Content {
         __obj.asInstanceOf[AccountstatusesCustomBatchRequest]
       }
       
-      extension [Self <: AccountstatusesCustomBatchRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AccountstatusesCustomBatchRequest] (val x: Self) extends AnyVal {
         
         inline def setEntries(value: js.Array[AccountstatusesCustomBatchRequestEntry]): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
         
@@ -2968,7 +3000,8 @@ object Content {
         __obj.asInstanceOf[AccountstatusesCustomBatchRequestEntry]
       }
       
-      extension [Self <: AccountstatusesCustomBatchRequestEntry](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AccountstatusesCustomBatchRequestEntry] (val x: Self) extends AnyVal {
         
         inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
         
@@ -3007,7 +3040,8 @@ object Content {
         __obj.asInstanceOf[AccountstatusesCustomBatchResponse]
       }
       
-      extension [Self <: AccountstatusesCustomBatchResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AccountstatusesCustomBatchResponse] (val x: Self) extends AnyVal {
         
         inline def setEntries(value: js.Array[AccountstatusesCustomBatchResponseEntry]): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
         
@@ -3036,7 +3070,8 @@ object Content {
         __obj.asInstanceOf[AccountstatusesCustomBatchResponseEntry]
       }
       
-      extension [Self <: AccountstatusesCustomBatchResponseEntry](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AccountstatusesCustomBatchResponseEntry] (val x: Self) extends AnyVal {
         
         inline def setAccountStatus(value: AccountStatus): Self = StObject.set(x, "accountStatus", value.asInstanceOf[js.Any])
         
@@ -3067,7 +3102,8 @@ object Content {
         __obj.asInstanceOf[AccountstatusesListResponse]
       }
       
-      extension [Self <: AccountstatusesListResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AccountstatusesListResponse] (val x: Self) extends AnyVal {
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -3096,7 +3132,8 @@ object Content {
         __obj.asInstanceOf[AccounttaxCustomBatchRequest]
       }
       
-      extension [Self <: AccounttaxCustomBatchRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AccounttaxCustomBatchRequest] (val x: Self) extends AnyVal {
         
         inline def setEntries(value: js.Array[AccounttaxCustomBatchRequestEntry]): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
         
@@ -3125,7 +3162,8 @@ object Content {
         __obj.asInstanceOf[AccounttaxCustomBatchRequestEntry]
       }
       
-      extension [Self <: AccounttaxCustomBatchRequestEntry](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AccounttaxCustomBatchRequestEntry] (val x: Self) extends AnyVal {
         
         inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
         
@@ -3162,7 +3200,8 @@ object Content {
         __obj.asInstanceOf[AccounttaxCustomBatchResponse]
       }
       
-      extension [Self <: AccounttaxCustomBatchResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AccounttaxCustomBatchResponse] (val x: Self) extends AnyVal {
         
         inline def setEntries(value: js.Array[AccounttaxCustomBatchResponseEntry]): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
         
@@ -3193,7 +3232,8 @@ object Content {
         __obj.asInstanceOf[AccounttaxCustomBatchResponseEntry]
       }
       
-      extension [Self <: AccounttaxCustomBatchResponseEntry](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AccounttaxCustomBatchResponseEntry] (val x: Self) extends AnyVal {
         
         inline def setAccountTax(value: AccountTax): Self = StObject.set(x, "accountTax", value.asInstanceOf[js.Any])
         
@@ -3228,7 +3268,8 @@ object Content {
         __obj.asInstanceOf[AccounttaxListResponse]
       }
       
-      extension [Self <: AccounttaxListResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AccounttaxListResponse] (val x: Self) extends AnyVal {
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -3259,7 +3300,8 @@ object Content {
         __obj.asInstanceOf[Amount]
       }
       
-      extension [Self <: Amount](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Amount] (val x: Self) extends AnyVal {
         
         inline def setPretax(value: Price): Self = StObject.set(x, "pretax", value.asInstanceOf[js.Any])
         
@@ -3292,7 +3334,8 @@ object Content {
         __obj.asInstanceOf[CarrierRate]
       }
       
-      extension [Self <: CarrierRate](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CarrierRate] (val x: Self) extends AnyVal {
         
         inline def setCarrierName(value: String): Self = StObject.set(x, "carrierName", value.asInstanceOf[js.Any])
         
@@ -3335,7 +3378,8 @@ object Content {
         __obj.asInstanceOf[CarriersCarrier]
       }
       
-      extension [Self <: CarriersCarrier](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CarriersCarrier] (val x: Self) extends AnyVal {
         
         inline def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
         
@@ -3370,7 +3414,8 @@ object Content {
         __obj.asInstanceOf[CustomAttribute]
       }
       
-      extension [Self <: CustomAttribute](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CustomAttribute] (val x: Self) extends AnyVal {
         
         inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
@@ -3403,7 +3448,8 @@ object Content {
         __obj.asInstanceOf[CustomGroup]
       }
       
-      extension [Self <: CustomGroup](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CustomGroup] (val x: Self) extends AnyVal {
         
         inline def setAttributes(value: js.Array[CustomAttribute]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
         
@@ -3430,7 +3476,8 @@ object Content {
         __obj.asInstanceOf[CustomerReturnReason]
       }
       
-      extension [Self <: CustomerReturnReason](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CustomerReturnReason] (val x: Self) extends AnyVal {
         
         inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
         
@@ -3457,7 +3504,8 @@ object Content {
         __obj.asInstanceOf[CutoffTime]
       }
       
-      extension [Self <: CutoffTime](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CutoffTime] (val x: Self) extends AnyVal {
         
         inline def setHour(value: Double): Self = StObject.set(x, "hour", value.asInstanceOf[js.Any])
         
@@ -3506,7 +3554,8 @@ object Content {
         __obj.asInstanceOf[Datafeed]
       }
       
-      extension [Self <: Datafeed](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Datafeed] (val x: Self) extends AnyVal {
         
         inline def setAttributeLanguage(value: String): Self = StObject.set(x, "attributeLanguage", value.asInstanceOf[js.Any])
         
@@ -3589,7 +3638,8 @@ object Content {
         __obj.asInstanceOf[DatafeedFetchSchedule]
       }
       
-      extension [Self <: DatafeedFetchSchedule](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: DatafeedFetchSchedule] (val x: Self) extends AnyVal {
         
         inline def setDayOfMonth(value: Double): Self = StObject.set(x, "dayOfMonth", value.asInstanceOf[js.Any])
         
@@ -3644,7 +3694,8 @@ object Content {
         __obj.asInstanceOf[DatafeedFormat]
       }
       
-      extension [Self <: DatafeedFormat](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: DatafeedFormat] (val x: Self) extends AnyVal {
         
         inline def setColumnDelimiter(value: String): Self = StObject.set(x, "columnDelimiter", value.asInstanceOf[js.Any])
         
@@ -3689,7 +3740,8 @@ object Content {
         __obj.asInstanceOf[DatafeedStatus]
       }
       
-      extension [Self <: DatafeedStatus](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: DatafeedStatus] (val x: Self) extends AnyVal {
         
         inline def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
         
@@ -3754,7 +3806,8 @@ object Content {
         __obj.asInstanceOf[DatafeedStatusError]
       }
       
-      extension [Self <: DatafeedStatusError](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: DatafeedStatusError] (val x: Self) extends AnyVal {
         
         inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
         
@@ -3791,7 +3844,8 @@ object Content {
         __obj.asInstanceOf[DatafeedStatusExample]
       }
       
-      extension [Self <: DatafeedStatusExample](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: DatafeedStatusExample] (val x: Self) extends AnyVal {
         
         inline def setItemId(value: String): Self = StObject.set(x, "itemId", value.asInstanceOf[js.Any])
         
@@ -3824,7 +3878,8 @@ object Content {
         __obj.asInstanceOf[DatafeedTarget]
       }
       
-      extension [Self <: DatafeedTarget](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: DatafeedTarget] (val x: Self) extends AnyVal {
         
         inline def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
         
@@ -3859,7 +3914,8 @@ object Content {
         __obj.asInstanceOf[DatafeedsCustomBatchRequest]
       }
       
-      extension [Self <: DatafeedsCustomBatchRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: DatafeedsCustomBatchRequest] (val x: Self) extends AnyVal {
         
         inline def setEntries(value: js.Array[DatafeedsCustomBatchRequestEntry]): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
         
@@ -3888,7 +3944,8 @@ object Content {
         __obj.asInstanceOf[DatafeedsCustomBatchRequestEntry]
       }
       
-      extension [Self <: DatafeedsCustomBatchRequestEntry](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: DatafeedsCustomBatchRequestEntry] (val x: Self) extends AnyVal {
         
         inline def setBatchId(value: Double): Self = StObject.set(x, "batchId", value.asInstanceOf[js.Any])
         
@@ -3925,7 +3982,8 @@ object Content {
         __obj.asInstanceOf[DatafeedsCustomBatchResponse]
       }
       
-      extension [Self <: DatafeedsCustomBatchResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: DatafeedsCustomBatchResponse] (val x: Self) extends AnyVal {
         
         inline def setEntries(value: js.Array[DatafeedsCustomBatchResponseEntry]): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
         
@@ -3954,7 +4012,8 @@ object Content {
         __obj.asInstanceOf[DatafeedsCustomBatchResponseEntry]
       }
       
-      extension [Self <: DatafeedsCustomBatchResponseEntry](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: DatafeedsCustomBatchResponseEntry] (val x: Self) extends AnyVal {
         
         inline def setBatchId(value: Double): Self = StObject.set(x, "batchId", value.asInstanceOf[js.Any])
         
@@ -3981,7 +4040,8 @@ object Content {
         __obj.asInstanceOf[DatafeedsFetchNowResponse]
       }
       
-      extension [Self <: DatafeedsFetchNowResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: DatafeedsFetchNowResponse] (val x: Self) extends AnyVal {
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -4004,7 +4064,8 @@ object Content {
         __obj.asInstanceOf[DatafeedsListResponse]
       }
       
-      extension [Self <: DatafeedsListResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: DatafeedsListResponse] (val x: Self) extends AnyVal {
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -4033,7 +4094,8 @@ object Content {
         __obj.asInstanceOf[DatafeedstatusesCustomBatchRequest]
       }
       
-      extension [Self <: DatafeedstatusesCustomBatchRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: DatafeedstatusesCustomBatchRequest] (val x: Self) extends AnyVal {
         
         inline def setEntries(value: js.Array[DatafeedstatusesCustomBatchRequestEntry]): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
         
@@ -4064,7 +4126,8 @@ object Content {
         __obj.asInstanceOf[DatafeedstatusesCustomBatchRequestEntry]
       }
       
-      extension [Self <: DatafeedstatusesCustomBatchRequestEntry](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: DatafeedstatusesCustomBatchRequestEntry] (val x: Self) extends AnyVal {
         
         inline def setBatchId(value: Double): Self = StObject.set(x, "batchId", value.asInstanceOf[js.Any])
         
@@ -4105,7 +4168,8 @@ object Content {
         __obj.asInstanceOf[DatafeedstatusesCustomBatchResponse]
       }
       
-      extension [Self <: DatafeedstatusesCustomBatchResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: DatafeedstatusesCustomBatchResponse] (val x: Self) extends AnyVal {
         
         inline def setEntries(value: js.Array[DatafeedstatusesCustomBatchResponseEntry]): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
         
@@ -4134,7 +4198,8 @@ object Content {
         __obj.asInstanceOf[DatafeedstatusesCustomBatchResponseEntry]
       }
       
-      extension [Self <: DatafeedstatusesCustomBatchResponseEntry](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: DatafeedstatusesCustomBatchResponseEntry] (val x: Self) extends AnyVal {
         
         inline def setBatchId(value: Double): Self = StObject.set(x, "batchId", value.asInstanceOf[js.Any])
         
@@ -4165,7 +4230,8 @@ object Content {
         __obj.asInstanceOf[DatafeedstatusesListResponse]
       }
       
-      extension [Self <: DatafeedstatusesListResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: DatafeedstatusesListResponse] (val x: Self) extends AnyVal {
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -4206,7 +4272,8 @@ object Content {
         __obj.asInstanceOf[DeliveryTime]
       }
       
-      extension [Self <: DeliveryTime](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: DeliveryTime] (val x: Self) extends AnyVal {
         
         inline def setCutoffTime(value: CutoffTime): Self = StObject.set(x, "cutoffTime", value.asInstanceOf[js.Any])
         
@@ -4255,7 +4322,8 @@ object Content {
         __obj.asInstanceOf[Error]
       }
       
-      extension [Self <: Error](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Error] (val x: Self) extends AnyVal {
         
         inline def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
         
@@ -4286,7 +4354,8 @@ object Content {
         __obj.asInstanceOf[Errors]
       }
       
-      extension [Self <: Errors](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Errors] (val x: Self) extends AnyVal {
         
         inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
         
@@ -4317,7 +4386,8 @@ object Content {
         __obj.asInstanceOf[GmbAccounts]
       }
       
-      extension [Self <: GmbAccounts](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: GmbAccounts] (val x: Self) extends AnyVal {
         
         inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
         
@@ -4348,7 +4418,8 @@ object Content {
         __obj.asInstanceOf[GmbAccountsGmbAccount]
       }
       
-      extension [Self <: GmbAccountsGmbAccount](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: GmbAccountsGmbAccount] (val x: Self) extends AnyVal {
         
         inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
         
@@ -4387,7 +4458,8 @@ object Content {
         __obj.asInstanceOf[Headers]
       }
       
-      extension [Self <: Headers](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Headers] (val x: Self) extends AnyVal {
         
         inline def setLocations(value: js.Array[LocationIdSet]): Self = StObject.set(x, "locations", value.asInstanceOf[js.Any])
         
@@ -4440,7 +4512,8 @@ object Content {
         __obj.asInstanceOf[HolidayCutoff]
       }
       
-      extension [Self <: HolidayCutoff](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: HolidayCutoff] (val x: Self) extends AnyVal {
         
         inline def setDeadlineDate(value: String): Self = StObject.set(x, "deadlineDate", value.asInstanceOf[js.Any])
         
@@ -4485,7 +4558,8 @@ object Content {
         __obj.asInstanceOf[HolidaysHoliday]
       }
       
-      extension [Self <: HolidaysHoliday](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: HolidaysHoliday] (val x: Self) extends AnyVal {
         
         inline def setCountryCode(value: String): Self = StObject.set(x, "countryCode", value.asInstanceOf[js.Any])
         
@@ -4526,7 +4600,8 @@ object Content {
         __obj.asInstanceOf[Installment]
       }
       
-      extension [Self <: Installment](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Installment] (val x: Self) extends AnyVal {
         
         inline def setAmount(value: Price): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
         
@@ -4579,7 +4654,8 @@ object Content {
         __obj.asInstanceOf[Inventory]
       }
       
-      extension [Self <: Inventory](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Inventory] (val x: Self) extends AnyVal {
         
         inline def setAvailability(value: String): Self = StObject.set(x, "availability", value.asInstanceOf[js.Any])
         
@@ -4658,7 +4734,8 @@ object Content {
         __obj.asInstanceOf[InventoryCustomBatchRequest]
       }
       
-      extension [Self <: InventoryCustomBatchRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: InventoryCustomBatchRequest] (val x: Self) extends AnyVal {
         
         inline def setEntries(value: js.Array[InventoryCustomBatchRequestEntry]): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
         
@@ -4687,7 +4764,8 @@ object Content {
         __obj.asInstanceOf[InventoryCustomBatchRequestEntry]
       }
       
-      extension [Self <: InventoryCustomBatchRequestEntry](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: InventoryCustomBatchRequestEntry] (val x: Self) extends AnyVal {
         
         inline def setBatchId(value: Double): Self = StObject.set(x, "batchId", value.asInstanceOf[js.Any])
         
@@ -4724,7 +4802,8 @@ object Content {
         __obj.asInstanceOf[InventoryCustomBatchResponse]
       }
       
-      extension [Self <: InventoryCustomBatchResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: InventoryCustomBatchResponse] (val x: Self) extends AnyVal {
         
         inline def setEntries(value: js.Array[InventoryCustomBatchResponseEntry]): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
         
@@ -4753,7 +4832,8 @@ object Content {
         __obj.asInstanceOf[InventoryCustomBatchResponseEntry]
       }
       
-      extension [Self <: InventoryCustomBatchResponseEntry](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: InventoryCustomBatchResponseEntry] (val x: Self) extends AnyVal {
         
         inline def setBatchId(value: Double): Self = StObject.set(x, "batchId", value.asInstanceOf[js.Any])
         
@@ -4782,7 +4862,8 @@ object Content {
         __obj.asInstanceOf[InventoryPickup]
       }
       
-      extension [Self <: InventoryPickup](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: InventoryPickup] (val x: Self) extends AnyVal {
         
         inline def setPickupMethod(value: String): Self = StObject.set(x, "pickupMethod", value.asInstanceOf[js.Any])
         
@@ -4833,7 +4914,8 @@ object Content {
         __obj.asInstanceOf[InventorySetRequest]
       }
       
-      extension [Self <: InventorySetRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: InventorySetRequest] (val x: Self) extends AnyVal {
         
         inline def setAvailability(value: String): Self = StObject.set(x, "availability", value.asInstanceOf[js.Any])
         
@@ -4908,7 +4990,8 @@ object Content {
         __obj.asInstanceOf[InventorySetResponse]
       }
       
-      extension [Self <: InventorySetResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: InventorySetResponse] (val x: Self) extends AnyVal {
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -4937,7 +5020,8 @@ object Content {
         __obj.asInstanceOf[InvoiceSummary]
       }
       
-      extension [Self <: InvoiceSummary](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: InvoiceSummary] (val x: Self) extends AnyVal {
         
         inline def setAdditionalChargeSummaries(value: js.Array[InvoiceSummaryAdditionalChargeSummary]): Self = StObject.set(x, "additionalChargeSummaries", value.asInstanceOf[js.Any])
         
@@ -4982,7 +5066,8 @@ object Content {
         __obj.asInstanceOf[InvoiceSummaryAdditionalChargeSummary]
       }
       
-      extension [Self <: InvoiceSummaryAdditionalChargeSummary](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: InvoiceSummaryAdditionalChargeSummary] (val x: Self) extends AnyVal {
         
         inline def setTotalAmount(value: Amount): Self = StObject.set(x, "totalAmount", value.asInstanceOf[js.Any])
         
@@ -5007,7 +5092,8 @@ object Content {
         __obj.asInstanceOf[LiaAboutPageSettings]
       }
       
-      extension [Self <: LiaAboutPageSettings](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: LiaAboutPageSettings] (val x: Self) extends AnyVal {
         
         inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
         
@@ -5042,7 +5128,8 @@ object Content {
         __obj.asInstanceOf[LiaCountrySettings]
       }
       
-      extension [Self <: LiaCountrySettings](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: LiaCountrySettings] (val x: Self) extends AnyVal {
         
         inline def setAbout(value: LiaAboutPageSettings): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
         
@@ -5091,7 +5178,8 @@ object Content {
         __obj.asInstanceOf[LiaInventorySettings]
       }
       
-      extension [Self <: LiaInventorySettings](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: LiaInventorySettings] (val x: Self) extends AnyVal {
         
         inline def setInventoryVerificationContactEmail(value: String): Self = StObject.set(x, "inventoryVerificationContactEmail", value.asInstanceOf[js.Any])
         
@@ -5124,7 +5212,8 @@ object Content {
         __obj.asInstanceOf[LiaOnDisplayToOrderSettings]
       }
       
-      extension [Self <: LiaOnDisplayToOrderSettings](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: LiaOnDisplayToOrderSettings] (val x: Self) extends AnyVal {
         
         inline def setShippingCostPolicyUrl(value: String): Self = StObject.set(x, "shippingCostPolicyUrl", value.asInstanceOf[js.Any])
         
@@ -5149,7 +5238,8 @@ object Content {
         __obj.asInstanceOf[LiaPosDataProvider]
       }
       
-      extension [Self <: LiaPosDataProvider](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: LiaPosDataProvider] (val x: Self) extends AnyVal {
         
         inline def setPosDataProviderId(value: String): Self = StObject.set(x, "posDataProviderId", value.asInstanceOf[js.Any])
         
@@ -5176,7 +5266,8 @@ object Content {
         __obj.asInstanceOf[LiaSettings]
       }
       
-      extension [Self <: LiaSettings](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: LiaSettings] (val x: Self) extends AnyVal {
         
         inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
         
@@ -5205,7 +5296,8 @@ object Content {
         __obj.asInstanceOf[LiasettingsCustomBatchRequest]
       }
       
-      extension [Self <: LiasettingsCustomBatchRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: LiasettingsCustomBatchRequest] (val x: Self) extends AnyVal {
         
         inline def setEntries(value: js.Array[LiasettingsCustomBatchRequestEntry]): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
         
@@ -5246,7 +5338,8 @@ object Content {
         __obj.asInstanceOf[LiasettingsCustomBatchRequestEntry]
       }
       
-      extension [Self <: LiasettingsCustomBatchRequestEntry](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: LiasettingsCustomBatchRequestEntry] (val x: Self) extends AnyVal {
         
         inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
         
@@ -5307,7 +5400,8 @@ object Content {
         __obj.asInstanceOf[LiasettingsCustomBatchResponse]
       }
       
-      extension [Self <: LiasettingsCustomBatchResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: LiasettingsCustomBatchResponse] (val x: Self) extends AnyVal {
         
         inline def setEntries(value: js.Array[LiasettingsCustomBatchResponseEntry]): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
         
@@ -5342,7 +5436,8 @@ object Content {
         __obj.asInstanceOf[LiasettingsCustomBatchResponseEntry]
       }
       
-      extension [Self <: LiasettingsCustomBatchResponseEntry](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: LiasettingsCustomBatchResponseEntry] (val x: Self) extends AnyVal {
         
         inline def setBatchId(value: Double): Self = StObject.set(x, "batchId", value.asInstanceOf[js.Any])
         
@@ -5387,7 +5482,8 @@ object Content {
         __obj.asInstanceOf[LiasettingsGetAccessibleGmbAccountsResponse]
       }
       
-      extension [Self <: LiasettingsGetAccessibleGmbAccountsResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: LiasettingsGetAccessibleGmbAccountsResponse] (val x: Self) extends AnyVal {
         
         inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
         
@@ -5418,7 +5514,8 @@ object Content {
         __obj.asInstanceOf[LiasettingsListPosDataProvidersResponse]
       }
       
-      extension [Self <: LiasettingsListPosDataProvidersResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: LiasettingsListPosDataProvidersResponse] (val x: Self) extends AnyVal {
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -5447,7 +5544,8 @@ object Content {
         __obj.asInstanceOf[LiasettingsListResponse]
       }
       
-      extension [Self <: LiasettingsListResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: LiasettingsListResponse] (val x: Self) extends AnyVal {
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -5476,7 +5574,8 @@ object Content {
         __obj.asInstanceOf[LiasettingsRequestGmbAccessResponse]
       }
       
-      extension [Self <: LiasettingsRequestGmbAccessResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: LiasettingsRequestGmbAccessResponse] (val x: Self) extends AnyVal {
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -5495,7 +5594,8 @@ object Content {
         __obj.asInstanceOf[LiasettingsRequestInventoryVerificationResponse]
       }
       
-      extension [Self <: LiasettingsRequestInventoryVerificationResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: LiasettingsRequestInventoryVerificationResponse] (val x: Self) extends AnyVal {
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -5514,7 +5614,8 @@ object Content {
         __obj.asInstanceOf[LiasettingsSetInventoryVerificationContactResponse]
       }
       
-      extension [Self <: LiasettingsSetInventoryVerificationContactResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: LiasettingsSetInventoryVerificationContactResponse] (val x: Self) extends AnyVal {
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -5533,7 +5634,8 @@ object Content {
         __obj.asInstanceOf[LiasettingsSetPosDataProviderResponse]
       }
       
-      extension [Self <: LiasettingsSetPosDataProviderResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: LiasettingsSetPosDataProviderResponse] (val x: Self) extends AnyVal {
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -5552,7 +5654,8 @@ object Content {
         __obj.asInstanceOf[LocationIdSet]
       }
       
-      extension [Self <: LocationIdSet](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: LocationIdSet] (val x: Self) extends AnyVal {
         
         inline def setLocationIds(value: js.Array[String]): Self = StObject.set(x, "locationIds", value.asInstanceOf[js.Any])
         
@@ -5577,7 +5680,8 @@ object Content {
         __obj.asInstanceOf[LoyaltyPoints]
       }
       
-      extension [Self <: LoyaltyPoints](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: LoyaltyPoints] (val x: Self) extends AnyVal {
         
         inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
@@ -5614,7 +5718,8 @@ object Content {
         __obj.asInstanceOf[MerchantOrderReturn]
       }
       
-      extension [Self <: MerchantOrderReturn](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: MerchantOrderReturn] (val x: Self) extends AnyVal {
         
         inline def setCreationDate(value: String): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
         
@@ -5667,7 +5772,8 @@ object Content {
         __obj.asInstanceOf[MerchantOrderReturnItem]
       }
       
-      extension [Self <: MerchantOrderReturnItem](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: MerchantOrderReturnItem] (val x: Self) extends AnyVal {
         
         inline def setCustomerReturnReason(value: CustomerReturnReason): Self = StObject.set(x, "customerReturnReason", value.asInstanceOf[js.Any])
         
@@ -5748,7 +5854,8 @@ object Content {
         __obj.asInstanceOf[Order]
       }
       
-      extension [Self <: Order](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Order] (val x: Self) extends AnyVal {
         
         inline def setAcknowledged(value: Boolean): Self = StObject.set(x, "acknowledged", value.asInstanceOf[js.Any])
         
@@ -5869,7 +5976,8 @@ object Content {
         __obj.asInstanceOf[OrderAddress]
       }
       
-      extension [Self <: OrderAddress](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: OrderAddress] (val x: Self) extends AnyVal {
         
         inline def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
         
@@ -5928,7 +6036,8 @@ object Content {
         __obj.asInstanceOf[OrderCancellation]
       }
       
-      extension [Self <: OrderCancellation](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: OrderCancellation] (val x: Self) extends AnyVal {
         
         inline def setActor(value: String): Self = StObject.set(x, "actor", value.asInstanceOf[js.Any])
         
@@ -5969,7 +6078,8 @@ object Content {
         __obj.asInstanceOf[OrderCustomer]
       }
       
-      extension [Self <: OrderCustomer](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: OrderCustomer] (val x: Self) extends AnyVal {
         
         inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
         
@@ -6004,7 +6114,8 @@ object Content {
         __obj.asInstanceOf[OrderCustomerMarketingRightsInfo]
       }
       
-      extension [Self <: OrderCustomerMarketingRightsInfo](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: OrderCustomerMarketingRightsInfo] (val x: Self) extends AnyVal {
         
         inline def setExplicitMarketingPreference(value: String): Self = StObject.set(x, "explicitMarketingPreference", value.asInstanceOf[js.Any])
         
@@ -6033,7 +6144,8 @@ object Content {
         __obj.asInstanceOf[OrderDeliveryDetails]
       }
       
-      extension [Self <: OrderDeliveryDetails](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: OrderDeliveryDetails] (val x: Self) extends AnyVal {
         
         inline def setAddress(value: OrderAddress): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
         
@@ -6068,7 +6180,8 @@ object Content {
         __obj.asInstanceOf[OrderLegacyPromotion]
       }
       
-      extension [Self <: OrderLegacyPromotion](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: OrderLegacyPromotion] (val x: Self) extends AnyVal {
         
         inline def setBenefits(value: js.Array[OrderLegacyPromotionBenefit]): Self = StObject.set(x, "benefits", value.asInstanceOf[js.Any])
         
@@ -6121,7 +6234,8 @@ object Content {
         __obj.asInstanceOf[OrderLegacyPromotionBenefit]
       }
       
-      extension [Self <: OrderLegacyPromotionBenefit](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: OrderLegacyPromotionBenefit] (val x: Self) extends AnyVal {
         
         inline def setDiscount(value: Price): Self = StObject.set(x, "discount", value.asInstanceOf[js.Any])
         
@@ -6186,7 +6300,8 @@ object Content {
         __obj.asInstanceOf[OrderLineItem]
       }
       
-      extension [Self <: OrderLineItem](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: OrderLineItem] (val x: Self) extends AnyVal {
         
         inline def setAnnotations(value: js.Array[OrderMerchantProvidedAnnotation]): Self = StObject.set(x, "annotations", value.asInstanceOf[js.Any])
         
@@ -6297,7 +6412,8 @@ object Content {
         __obj.asInstanceOf[OrderLineItemProduct]
       }
       
-      extension [Self <: OrderLineItemProduct](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: OrderLineItemProduct] (val x: Self) extends AnyVal {
         
         inline def setBrand(value: String): Self = StObject.set(x, "brand", value.asInstanceOf[js.Any])
         
@@ -6382,7 +6498,8 @@ object Content {
         __obj.asInstanceOf[OrderLineItemProductFee]
       }
       
-      extension [Self <: OrderLineItemProductFee](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: OrderLineItemProductFee] (val x: Self) extends AnyVal {
         
         inline def setAmount(value: Price): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
         
@@ -6407,7 +6524,8 @@ object Content {
         __obj.asInstanceOf[OrderLineItemProductVariantAttribute]
       }
       
-      extension [Self <: OrderLineItemProductVariantAttribute](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: OrderLineItemProductVariantAttribute] (val x: Self) extends AnyVal {
         
         inline def setDimension(value: String): Self = StObject.set(x, "dimension", value.asInstanceOf[js.Any])
         
@@ -6434,7 +6552,8 @@ object Content {
         __obj.asInstanceOf[OrderLineItemReturnInfo]
       }
       
-      extension [Self <: OrderLineItemReturnInfo](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: OrderLineItemReturnInfo] (val x: Self) extends AnyVal {
         
         inline def setDaysToReturn(value: Double): Self = StObject.set(x, "daysToReturn", value.asInstanceOf[js.Any])
         
@@ -6465,7 +6584,8 @@ object Content {
         __obj.asInstanceOf[OrderLineItemShippingDetails]
       }
       
-      extension [Self <: OrderLineItemShippingDetails](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: OrderLineItemShippingDetails] (val x: Self) extends AnyVal {
         
         inline def setDeliverByDate(value: String): Self = StObject.set(x, "deliverByDate", value.asInstanceOf[js.Any])
         
@@ -6498,7 +6618,8 @@ object Content {
         __obj.asInstanceOf[OrderLineItemShippingDetailsMethod]
       }
       
-      extension [Self <: OrderLineItemShippingDetailsMethod](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: OrderLineItemShippingDetailsMethod] (val x: Self) extends AnyVal {
         
         inline def setCarrier(value: String): Self = StObject.set(x, "carrier", value.asInstanceOf[js.Any])
         
@@ -6531,7 +6652,8 @@ object Content {
         __obj.asInstanceOf[OrderMerchantProvidedAnnotation]
       }
       
-      extension [Self <: OrderMerchantProvidedAnnotation](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: OrderMerchantProvidedAnnotation] (val x: Self) extends AnyVal {
         
         inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
         
@@ -6564,7 +6686,8 @@ object Content {
         __obj.asInstanceOf[OrderPaymentMethod]
       }
       
-      extension [Self <: OrderPaymentMethod](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: OrderPaymentMethod] (val x: Self) extends AnyVal {
         
         inline def setBillingAddress(value: OrderAddress): Self = StObject.set(x, "billingAddress", value.asInstanceOf[js.Any])
         
@@ -6611,7 +6734,8 @@ object Content {
         __obj.asInstanceOf[OrderRefund]
       }
       
-      extension [Self <: OrderRefund](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: OrderRefund] (val x: Self) extends AnyVal {
         
         inline def setActor(value: String): Self = StObject.set(x, "actor", value.asInstanceOf[js.Any])
         
@@ -6654,7 +6778,8 @@ object Content {
         __obj.asInstanceOf[OrderReportDisbursement]
       }
       
-      extension [Self <: OrderReportDisbursement](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: OrderReportDisbursement] (val x: Self) extends AnyVal {
         
         inline def setDisbursementAmount(value: Price): Self = StObject.set(x, "disbursementAmount", value.asInstanceOf[js.Any])
         
@@ -6707,7 +6832,8 @@ object Content {
         __obj.asInstanceOf[OrderReportTransaction]
       }
       
-      extension [Self <: OrderReportTransaction](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: OrderReportTransaction] (val x: Self) extends AnyVal {
         
         inline def setDisbursementAmount(value: Price): Self = StObject.set(x, "disbursementAmount", value.asInstanceOf[js.Any])
         
@@ -6770,7 +6896,8 @@ object Content {
         __obj.asInstanceOf[OrderReturn]
       }
       
-      extension [Self <: OrderReturn](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: OrderReturn] (val x: Self) extends AnyVal {
         
         inline def setActor(value: String): Self = StObject.set(x, "actor", value.asInstanceOf[js.Any])
         
@@ -6817,7 +6944,8 @@ object Content {
         __obj.asInstanceOf[OrderShipment]
       }
       
-      extension [Self <: OrderShipment](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: OrderShipment] (val x: Self) extends AnyVal {
         
         inline def setCarrier(value: String): Self = StObject.set(x, "carrier", value.asInstanceOf[js.Any])
         
@@ -6866,7 +6994,8 @@ object Content {
         __obj.asInstanceOf[OrderShipmentLineItemShipment]
       }
       
-      extension [Self <: OrderShipmentLineItemShipment](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: OrderShipmentLineItemShipment] (val x: Self) extends AnyVal {
         
         inline def setLineItemId(value: String): Self = StObject.set(x, "lineItemId", value.asInstanceOf[js.Any])
         
@@ -6901,7 +7030,8 @@ object Content {
         __obj.asInstanceOf[OrderinvoicesCreateChargeInvoiceRequest]
       }
       
-      extension [Self <: OrderinvoicesCreateChargeInvoiceRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: OrderinvoicesCreateChargeInvoiceRequest] (val x: Self) extends AnyVal {
         
         inline def setInvoiceId(value: String): Self = StObject.set(x, "invoiceId", value.asInstanceOf[js.Any])
         
@@ -6940,7 +7070,8 @@ object Content {
         __obj.asInstanceOf[OrderinvoicesCreateChargeInvoiceResponse]
       }
       
-      extension [Self <: OrderinvoicesCreateChargeInvoiceResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: OrderinvoicesCreateChargeInvoiceResponse] (val x: Self) extends AnyVal {
         
         inline def setExecutionStatus(value: String): Self = StObject.set(x, "executionStatus", value.asInstanceOf[js.Any])
         
@@ -6971,7 +7102,8 @@ object Content {
         __obj.asInstanceOf[OrderinvoicesCreateRefundInvoiceRequest]
       }
       
-      extension [Self <: OrderinvoicesCreateRefundInvoiceRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: OrderinvoicesCreateRefundInvoiceRequest] (val x: Self) extends AnyVal {
         
         inline def setInvoiceId(value: String): Self = StObject.set(x, "invoiceId", value.asInstanceOf[js.Any])
         
@@ -7010,7 +7142,8 @@ object Content {
         __obj.asInstanceOf[OrderinvoicesCreateRefundInvoiceResponse]
       }
       
-      extension [Self <: OrderinvoicesCreateRefundInvoiceResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: OrderinvoicesCreateRefundInvoiceResponse] (val x: Self) extends AnyVal {
         
         inline def setExecutionStatus(value: String): Self = StObject.set(x, "executionStatus", value.asInstanceOf[js.Any])
         
@@ -7035,7 +7168,8 @@ object Content {
         __obj.asInstanceOf[OrderinvoicesCustomBatchRequestEntryCreateRefundInvoiceRefundOption]
       }
       
-      extension [Self <: OrderinvoicesCustomBatchRequestEntryCreateRefundInvoiceRefundOption](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: OrderinvoicesCustomBatchRequestEntryCreateRefundInvoiceRefundOption] (val x: Self) extends AnyVal {
         
         inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
         
@@ -7060,7 +7194,8 @@ object Content {
         __obj.asInstanceOf[OrderinvoicesCustomBatchRequestEntryCreateRefundInvoiceReturnOption]
       }
       
-      extension [Self <: OrderinvoicesCustomBatchRequestEntryCreateRefundInvoiceReturnOption](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: OrderinvoicesCustomBatchRequestEntryCreateRefundInvoiceReturnOption] (val x: Self) extends AnyVal {
         
         inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
         
@@ -7085,7 +7220,8 @@ object Content {
         __obj.asInstanceOf[OrderpaymentsNotifyAuthApprovedRequest]
       }
       
-      extension [Self <: OrderpaymentsNotifyAuthApprovedRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: OrderpaymentsNotifyAuthApprovedRequest] (val x: Self) extends AnyVal {
         
         inline def setAuthAmountPretax(value: Price): Self = StObject.set(x, "authAmountPretax", value.asInstanceOf[js.Any])
         
@@ -7110,7 +7246,8 @@ object Content {
         __obj.asInstanceOf[OrderpaymentsNotifyAuthApprovedResponse]
       }
       
-      extension [Self <: OrderpaymentsNotifyAuthApprovedResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: OrderpaymentsNotifyAuthApprovedResponse] (val x: Self) extends AnyVal {
         
         inline def setExecutionStatus(value: String): Self = StObject.set(x, "executionStatus", value.asInstanceOf[js.Any])
         
@@ -7133,7 +7270,8 @@ object Content {
         __obj.asInstanceOf[OrderpaymentsNotifyAuthDeclinedRequest]
       }
       
-      extension [Self <: OrderpaymentsNotifyAuthDeclinedRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: OrderpaymentsNotifyAuthDeclinedRequest] (val x: Self) extends AnyVal {
         
         inline def setDeclineReason(value: String): Self = StObject.set(x, "declineReason", value.asInstanceOf[js.Any])
         
@@ -7154,7 +7292,8 @@ object Content {
         __obj.asInstanceOf[OrderpaymentsNotifyAuthDeclinedResponse]
       }
       
-      extension [Self <: OrderpaymentsNotifyAuthDeclinedResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: OrderpaymentsNotifyAuthDeclinedResponse] (val x: Self) extends AnyVal {
         
         inline def setExecutionStatus(value: String): Self = StObject.set(x, "executionStatus", value.asInstanceOf[js.Any])
         
@@ -7181,7 +7320,8 @@ object Content {
         __obj.asInstanceOf[OrderpaymentsNotifyChargeRequest]
       }
       
-      extension [Self <: OrderpaymentsNotifyChargeRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: OrderpaymentsNotifyChargeRequest] (val x: Self) extends AnyVal {
         
         inline def setChargeState(value: String): Self = StObject.set(x, "chargeState", value.asInstanceOf[js.Any])
         
@@ -7212,7 +7352,8 @@ object Content {
         __obj.asInstanceOf[OrderpaymentsNotifyChargeResponse]
       }
       
-      extension [Self <: OrderpaymentsNotifyChargeResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: OrderpaymentsNotifyChargeResponse] (val x: Self) extends AnyVal {
         
         inline def setExecutionStatus(value: String): Self = StObject.set(x, "executionStatus", value.asInstanceOf[js.Any])
         
@@ -7239,7 +7380,8 @@ object Content {
         __obj.asInstanceOf[OrderpaymentsNotifyRefundRequest]
       }
       
-      extension [Self <: OrderpaymentsNotifyRefundRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: OrderpaymentsNotifyRefundRequest] (val x: Self) extends AnyVal {
         
         inline def setInvoiceId(value: String): Self = StObject.set(x, "invoiceId", value.asInstanceOf[js.Any])
         
@@ -7270,7 +7412,8 @@ object Content {
         __obj.asInstanceOf[OrderpaymentsNotifyRefundResponse]
       }
       
-      extension [Self <: OrderpaymentsNotifyRefundResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: OrderpaymentsNotifyRefundResponse] (val x: Self) extends AnyVal {
         
         inline def setExecutionStatus(value: String): Self = StObject.set(x, "executionStatus", value.asInstanceOf[js.Any])
         
@@ -7297,7 +7440,8 @@ object Content {
         __obj.asInstanceOf[OrderreportsListDisbursementsResponse]
       }
       
-      extension [Self <: OrderreportsListDisbursementsResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: OrderreportsListDisbursementsResponse] (val x: Self) extends AnyVal {
         
         inline def setDisbursements(value: js.Array[OrderReportDisbursement]): Self = StObject.set(x, "disbursements", value.asInstanceOf[js.Any])
         
@@ -7330,7 +7474,8 @@ object Content {
         __obj.asInstanceOf[OrderreportsListTransactionsResponse]
       }
       
-      extension [Self <: OrderreportsListTransactionsResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: OrderreportsListTransactionsResponse] (val x: Self) extends AnyVal {
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -7363,7 +7508,8 @@ object Content {
         __obj.asInstanceOf[OrderreturnsListResponse]
       }
       
-      extension [Self <: OrderreturnsListResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: OrderreturnsListResponse] (val x: Self) extends AnyVal {
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -7392,7 +7538,8 @@ object Content {
         __obj.asInstanceOf[OrdersAcknowledgeRequest]
       }
       
-      extension [Self <: OrdersAcknowledgeRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: OrdersAcknowledgeRequest] (val x: Self) extends AnyVal {
         
         inline def setOperationId(value: String): Self = StObject.set(x, "operationId", value.asInstanceOf[js.Any])
         
@@ -7413,7 +7560,8 @@ object Content {
         __obj.asInstanceOf[OrdersAcknowledgeResponse]
       }
       
-      extension [Self <: OrdersAcknowledgeResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: OrdersAcknowledgeResponse] (val x: Self) extends AnyVal {
         
         inline def setExecutionStatus(value: String): Self = StObject.set(x, "executionStatus", value.asInstanceOf[js.Any])
         
@@ -7436,7 +7584,8 @@ object Content {
         __obj.asInstanceOf[OrdersAdvanceTestOrderResponse]
       }
       
-      extension [Self <: OrdersAdvanceTestOrderResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: OrdersAdvanceTestOrderResponse] (val x: Self) extends AnyVal {
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -7471,7 +7620,8 @@ object Content {
         __obj.asInstanceOf[OrdersCancelLineItemRequest]
       }
       
-      extension [Self <: OrdersCancelLineItemRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: OrdersCancelLineItemRequest] (val x: Self) extends AnyVal {
         
         inline def setAmount(value: Price): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
         
@@ -7524,7 +7674,8 @@ object Content {
         __obj.asInstanceOf[OrdersCancelLineItemResponse]
       }
       
-      extension [Self <: OrdersCancelLineItemResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: OrdersCancelLineItemResponse] (val x: Self) extends AnyVal {
         
         inline def setExecutionStatus(value: String): Self = StObject.set(x, "executionStatus", value.asInstanceOf[js.Any])
         
@@ -7551,7 +7702,8 @@ object Content {
         __obj.asInstanceOf[OrdersCancelRequest]
       }
       
-      extension [Self <: OrdersCancelRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: OrdersCancelRequest] (val x: Self) extends AnyVal {
         
         inline def setOperationId(value: String): Self = StObject.set(x, "operationId", value.asInstanceOf[js.Any])
         
@@ -7580,7 +7732,8 @@ object Content {
         __obj.asInstanceOf[OrdersCancelResponse]
       }
       
-      extension [Self <: OrdersCancelResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: OrdersCancelResponse] (val x: Self) extends AnyVal {
         
         inline def setExecutionStatus(value: String): Self = StObject.set(x, "executionStatus", value.asInstanceOf[js.Any])
         
@@ -7603,7 +7756,8 @@ object Content {
         __obj.asInstanceOf[OrdersCancelTestOrderByCustomerRequest]
       }
       
-      extension [Self <: OrdersCancelTestOrderByCustomerRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: OrdersCancelTestOrderByCustomerRequest] (val x: Self) extends AnyVal {
         
         inline def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
         
@@ -7622,7 +7776,8 @@ object Content {
         __obj.asInstanceOf[OrdersCancelTestOrderByCustomerResponse]
       }
       
-      extension [Self <: OrdersCancelTestOrderByCustomerResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: OrdersCancelTestOrderByCustomerResponse] (val x: Self) extends AnyVal {
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -7645,7 +7800,8 @@ object Content {
         __obj.asInstanceOf[OrdersCreateTestOrderRequest]
       }
       
-      extension [Self <: OrdersCreateTestOrderRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: OrdersCreateTestOrderRequest] (val x: Self) extends AnyVal {
         
         inline def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
         
@@ -7674,7 +7830,8 @@ object Content {
         __obj.asInstanceOf[OrdersCreateTestOrderResponse]
       }
       
-      extension [Self <: OrdersCreateTestOrderResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: OrdersCreateTestOrderResponse] (val x: Self) extends AnyVal {
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -7697,7 +7854,8 @@ object Content {
         __obj.asInstanceOf[OrdersCreateTestReturnRequest]
       }
       
-      extension [Self <: OrdersCreateTestReturnRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: OrdersCreateTestReturnRequest] (val x: Self) extends AnyVal {
         
         inline def setItems(value: js.Array[OrdersCustomBatchRequestEntryCreateTestReturnReturnItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
         
@@ -7720,7 +7878,8 @@ object Content {
         __obj.asInstanceOf[OrdersCreateTestReturnResponse]
       }
       
-      extension [Self <: OrdersCreateTestReturnResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: OrdersCreateTestReturnResponse] (val x: Self) extends AnyVal {
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -7743,7 +7902,8 @@ object Content {
         __obj.asInstanceOf[OrdersCustomBatchRequest]
       }
       
-      extension [Self <: OrdersCustomBatchRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: OrdersCustomBatchRequest] (val x: Self) extends AnyVal {
         
         inline def setEntries(value: js.Array[OrdersCustomBatchRequestEntry]): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
         
@@ -7796,7 +7956,8 @@ object Content {
         __obj.asInstanceOf[OrdersCustomBatchRequestEntry]
       }
       
-      extension [Self <: OrdersCustomBatchRequestEntry](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: OrdersCustomBatchRequestEntry] (val x: Self) extends AnyVal {
         
         inline def setBatchId(value: Double): Self = StObject.set(x, "batchId", value.asInstanceOf[js.Any])
         
@@ -7881,7 +8042,8 @@ object Content {
         __obj.asInstanceOf[OrdersCustomBatchRequestEntryCancel]
       }
       
-      extension [Self <: OrdersCustomBatchRequestEntryCancel](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: OrdersCustomBatchRequestEntryCancel] (val x: Self) extends AnyVal {
         
         inline def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
         
@@ -7918,7 +8080,8 @@ object Content {
         __obj.asInstanceOf[OrdersCustomBatchRequestEntryCancelLineItem]
       }
       
-      extension [Self <: OrdersCustomBatchRequestEntryCancelLineItem](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: OrdersCustomBatchRequestEntryCancelLineItem] (val x: Self) extends AnyVal {
         
         inline def setAmount(value: Price): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
         
@@ -7967,7 +8130,8 @@ object Content {
         __obj.asInstanceOf[OrdersCustomBatchRequestEntryCreateTestReturnReturnItem]
       }
       
-      extension [Self <: OrdersCustomBatchRequestEntryCreateTestReturnReturnItem](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: OrdersCustomBatchRequestEntryCreateTestReturnReturnItem] (val x: Self) extends AnyVal {
         
         inline def setLineItemId(value: String): Self = StObject.set(x, "lineItemId", value.asInstanceOf[js.Any])
         
@@ -8002,7 +8166,8 @@ object Content {
         __obj.asInstanceOf[OrdersCustomBatchRequestEntryInStoreRefundLineItem]
       }
       
-      extension [Self <: OrdersCustomBatchRequestEntryInStoreRefundLineItem](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: OrdersCustomBatchRequestEntryInStoreRefundLineItem] (val x: Self) extends AnyVal {
         
         inline def setAmountPretax(value: Price): Self = StObject.set(x, "amountPretax", value.asInstanceOf[js.Any])
         
@@ -8053,7 +8218,8 @@ object Content {
         __obj.asInstanceOf[OrdersCustomBatchRequestEntryRefund]
       }
       
-      extension [Self <: OrdersCustomBatchRequestEntryRefund](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: OrdersCustomBatchRequestEntryRefund] (val x: Self) extends AnyVal {
         
         inline def setAmount(value: Price): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
         
@@ -8096,7 +8262,8 @@ object Content {
         __obj.asInstanceOf[OrdersCustomBatchRequestEntryRejectReturnLineItem]
       }
       
-      extension [Self <: OrdersCustomBatchRequestEntryRejectReturnLineItem](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: OrdersCustomBatchRequestEntryRejectReturnLineItem] (val x: Self) extends AnyVal {
         
         inline def setLineItemId(value: String): Self = StObject.set(x, "lineItemId", value.asInstanceOf[js.Any])
         
@@ -8139,7 +8306,8 @@ object Content {
         __obj.asInstanceOf[OrdersCustomBatchRequestEntryReturnLineItem]
       }
       
-      extension [Self <: OrdersCustomBatchRequestEntryReturnLineItem](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: OrdersCustomBatchRequestEntryReturnLineItem] (val x: Self) extends AnyVal {
         
         inline def setLineItemId(value: String): Self = StObject.set(x, "lineItemId", value.asInstanceOf[js.Any])
         
@@ -8186,7 +8354,8 @@ object Content {
         __obj.asInstanceOf[OrdersCustomBatchRequestEntryReturnRefundLineItem]
       }
       
-      extension [Self <: OrdersCustomBatchRequestEntryReturnRefundLineItem](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: OrdersCustomBatchRequestEntryReturnRefundLineItem] (val x: Self) extends AnyVal {
         
         inline def setAmountPretax(value: Price): Self = StObject.set(x, "amountPretax", value.asInstanceOf[js.Any])
         
@@ -8233,7 +8402,8 @@ object Content {
         __obj.asInstanceOf[OrdersCustomBatchRequestEntrySetLineItemMetadata]
       }
       
-      extension [Self <: OrdersCustomBatchRequestEntrySetLineItemMetadata](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: OrdersCustomBatchRequestEntrySetLineItemMetadata] (val x: Self) extends AnyVal {
         
         inline def setAnnotations(value: js.Array[OrderMerchantProvidedAnnotation]): Self = StObject.set(x, "annotations", value.asInstanceOf[js.Any])
         
@@ -8272,7 +8442,8 @@ object Content {
         __obj.asInstanceOf[OrdersCustomBatchRequestEntryShipLineItems]
       }
       
-      extension [Self <: OrdersCustomBatchRequestEntryShipLineItems](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: OrdersCustomBatchRequestEntryShipLineItems] (val x: Self) extends AnyVal {
         
         inline def setCarrier(value: String): Self = StObject.set(x, "carrier", value.asInstanceOf[js.Any])
         
@@ -8319,7 +8490,8 @@ object Content {
         __obj.asInstanceOf[OrdersCustomBatchRequestEntryShipLineItemsShipmentInfo]
       }
       
-      extension [Self <: OrdersCustomBatchRequestEntryShipLineItemsShipmentInfo](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: OrdersCustomBatchRequestEntryShipLineItemsShipmentInfo] (val x: Self) extends AnyVal {
         
         inline def setCarrier(value: String): Self = StObject.set(x, "carrier", value.asInstanceOf[js.Any])
         
@@ -8352,7 +8524,8 @@ object Content {
         __obj.asInstanceOf[OrdersCustomBatchRequestEntryUpdateLineItemShippingDetails]
       }
       
-      extension [Self <: OrdersCustomBatchRequestEntryUpdateLineItemShippingDetails](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: OrdersCustomBatchRequestEntryUpdateLineItemShippingDetails] (val x: Self) extends AnyVal {
         
         inline def setDeliverByDate(value: String): Self = StObject.set(x, "deliverByDate", value.asInstanceOf[js.Any])
         
@@ -8391,7 +8564,8 @@ object Content {
         __obj.asInstanceOf[OrdersCustomBatchRequestEntryUpdateShipment]
       }
       
-      extension [Self <: OrdersCustomBatchRequestEntryUpdateShipment](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: OrdersCustomBatchRequestEntryUpdateShipment] (val x: Self) extends AnyVal {
         
         inline def setCarrier(value: String): Self = StObject.set(x, "carrier", value.asInstanceOf[js.Any])
         
@@ -8428,7 +8602,8 @@ object Content {
         __obj.asInstanceOf[OrdersCustomBatchResponse]
       }
       
-      extension [Self <: OrdersCustomBatchResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: OrdersCustomBatchResponse] (val x: Self) extends AnyVal {
         
         inline def setEntries(value: js.Array[OrdersCustomBatchResponseEntry]): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
         
@@ -8461,7 +8636,8 @@ object Content {
         __obj.asInstanceOf[OrdersCustomBatchResponseEntry]
       }
       
-      extension [Self <: OrdersCustomBatchResponseEntry](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: OrdersCustomBatchResponseEntry] (val x: Self) extends AnyVal {
         
         inline def setBatchId(value: Double): Self = StObject.set(x, "batchId", value.asInstanceOf[js.Any])
         
@@ -8498,7 +8674,8 @@ object Content {
         __obj.asInstanceOf[OrdersGetByMerchantOrderIdResponse]
       }
       
-      extension [Self <: OrdersGetByMerchantOrderIdResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: OrdersGetByMerchantOrderIdResponse] (val x: Self) extends AnyVal {
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -8523,7 +8700,8 @@ object Content {
         __obj.asInstanceOf[OrdersGetTestOrderTemplateResponse]
       }
       
-      extension [Self <: OrdersGetTestOrderTemplateResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: OrdersGetTestOrderTemplateResponse] (val x: Self) extends AnyVal {
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -8560,7 +8738,8 @@ object Content {
         __obj.asInstanceOf[OrdersInStoreRefundLineItemRequest]
       }
       
-      extension [Self <: OrdersInStoreRefundLineItemRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: OrdersInStoreRefundLineItemRequest] (val x: Self) extends AnyVal {
         
         inline def setAmountPretax(value: Price): Self = StObject.set(x, "amountPretax", value.asInstanceOf[js.Any])
         
@@ -8609,7 +8788,8 @@ object Content {
         __obj.asInstanceOf[OrdersInStoreRefundLineItemResponse]
       }
       
-      extension [Self <: OrdersInStoreRefundLineItemResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: OrdersInStoreRefundLineItemResponse] (val x: Self) extends AnyVal {
         
         inline def setExecutionStatus(value: String): Self = StObject.set(x, "executionStatus", value.asInstanceOf[js.Any])
         
@@ -8636,7 +8816,8 @@ object Content {
         __obj.asInstanceOf[OrdersListResponse]
       }
       
-      extension [Self <: OrdersListResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: OrdersListResponse] (val x: Self) extends AnyVal {
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -8675,7 +8856,8 @@ object Content {
         __obj.asInstanceOf[OrdersRefundRequest]
       }
       
-      extension [Self <: OrdersRefundRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: OrdersRefundRequest] (val x: Self) extends AnyVal {
         
         inline def setAmount(value: Price): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
         
@@ -8716,7 +8898,8 @@ object Content {
         __obj.asInstanceOf[OrdersRefundResponse]
       }
       
-      extension [Self <: OrdersRefundResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: OrdersRefundResponse] (val x: Self) extends AnyVal {
         
         inline def setExecutionStatus(value: String): Self = StObject.set(x, "executionStatus", value.asInstanceOf[js.Any])
         
@@ -8749,7 +8932,8 @@ object Content {
         __obj.asInstanceOf[OrdersRejectReturnLineItemRequest]
       }
       
-      extension [Self <: OrdersRejectReturnLineItemRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: OrdersRejectReturnLineItemRequest] (val x: Self) extends AnyVal {
         
         inline def setLineItemId(value: String): Self = StObject.set(x, "lineItemId", value.asInstanceOf[js.Any])
         
@@ -8790,7 +8974,8 @@ object Content {
         __obj.asInstanceOf[OrdersRejectReturnLineItemResponse]
       }
       
-      extension [Self <: OrdersRejectReturnLineItemResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: OrdersRejectReturnLineItemResponse] (val x: Self) extends AnyVal {
         
         inline def setExecutionStatus(value: String): Self = StObject.set(x, "executionStatus", value.asInstanceOf[js.Any])
         
@@ -8823,7 +9008,8 @@ object Content {
         __obj.asInstanceOf[OrdersReturnLineItemRequest]
       }
       
-      extension [Self <: OrdersReturnLineItemRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: OrdersReturnLineItemRequest] (val x: Self) extends AnyVal {
         
         inline def setLineItemId(value: String): Self = StObject.set(x, "lineItemId", value.asInstanceOf[js.Any])
         
@@ -8864,7 +9050,8 @@ object Content {
         __obj.asInstanceOf[OrdersReturnLineItemResponse]
       }
       
-      extension [Self <: OrdersReturnLineItemResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: OrdersReturnLineItemResponse] (val x: Self) extends AnyVal {
         
         inline def setExecutionStatus(value: String): Self = StObject.set(x, "executionStatus", value.asInstanceOf[js.Any])
         
@@ -8901,7 +9088,8 @@ object Content {
         __obj.asInstanceOf[OrdersReturnRefundLineItemRequest]
       }
       
-      extension [Self <: OrdersReturnRefundLineItemRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: OrdersReturnRefundLineItemRequest] (val x: Self) extends AnyVal {
         
         inline def setAmountPretax(value: Price): Self = StObject.set(x, "amountPretax", value.asInstanceOf[js.Any])
         
@@ -8950,7 +9138,8 @@ object Content {
         __obj.asInstanceOf[OrdersReturnRefundLineItemResponse]
       }
       
-      extension [Self <: OrdersReturnRefundLineItemResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: OrdersReturnRefundLineItemResponse] (val x: Self) extends AnyVal {
         
         inline def setExecutionStatus(value: String): Self = StObject.set(x, "executionStatus", value.asInstanceOf[js.Any])
         
@@ -8979,7 +9168,8 @@ object Content {
         __obj.asInstanceOf[OrdersSetLineItemMetadataRequest]
       }
       
-      extension [Self <: OrdersSetLineItemMetadataRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: OrdersSetLineItemMetadataRequest] (val x: Self) extends AnyVal {
         
         inline def setAnnotations(value: js.Array[OrderMerchantProvidedAnnotation]): Self = StObject.set(x, "annotations", value.asInstanceOf[js.Any])
         
@@ -9014,7 +9204,8 @@ object Content {
         __obj.asInstanceOf[OrdersSetLineItemMetadataResponse]
       }
       
-      extension [Self <: OrdersSetLineItemMetadataResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: OrdersSetLineItemMetadataResponse] (val x: Self) extends AnyVal {
         
         inline def setExecutionStatus(value: String): Self = StObject.set(x, "executionStatus", value.asInstanceOf[js.Any])
         
@@ -9049,7 +9240,8 @@ object Content {
         __obj.asInstanceOf[OrdersShipLineItemsRequest]
       }
       
-      extension [Self <: OrdersShipLineItemsRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: OrdersShipLineItemsRequest] (val x: Self) extends AnyVal {
         
         inline def setCarrier(value: String): Self = StObject.set(x, "carrier", value.asInstanceOf[js.Any])
         
@@ -9098,7 +9290,8 @@ object Content {
         __obj.asInstanceOf[OrdersShipLineItemsResponse]
       }
       
-      extension [Self <: OrdersShipLineItemsResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: OrdersShipLineItemsResponse] (val x: Self) extends AnyVal {
         
         inline def setExecutionStatus(value: String): Self = StObject.set(x, "executionStatus", value.asInstanceOf[js.Any])
         
@@ -9129,7 +9322,8 @@ object Content {
         __obj.asInstanceOf[OrdersUpdateLineItemShippingDetailsRequest]
       }
       
-      extension [Self <: OrdersUpdateLineItemShippingDetailsRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: OrdersUpdateLineItemShippingDetailsRequest] (val x: Self) extends AnyVal {
         
         inline def setDeliverByDate(value: String): Self = StObject.set(x, "deliverByDate", value.asInstanceOf[js.Any])
         
@@ -9166,7 +9360,8 @@ object Content {
         __obj.asInstanceOf[OrdersUpdateLineItemShippingDetailsResponse]
       }
       
-      extension [Self <: OrdersUpdateLineItemShippingDetailsResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: OrdersUpdateLineItemShippingDetailsResponse] (val x: Self) extends AnyVal {
         
         inline def setExecutionStatus(value: String): Self = StObject.set(x, "executionStatus", value.asInstanceOf[js.Any])
         
@@ -9191,7 +9386,8 @@ object Content {
         __obj.asInstanceOf[OrdersUpdateMerchantOrderIdRequest]
       }
       
-      extension [Self <: OrdersUpdateMerchantOrderIdRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: OrdersUpdateMerchantOrderIdRequest] (val x: Self) extends AnyVal {
         
         inline def setMerchantOrderId(value: String): Self = StObject.set(x, "merchantOrderId", value.asInstanceOf[js.Any])
         
@@ -9216,7 +9412,8 @@ object Content {
         __obj.asInstanceOf[OrdersUpdateMerchantOrderIdResponse]
       }
       
-      extension [Self <: OrdersUpdateMerchantOrderIdResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: OrdersUpdateMerchantOrderIdResponse] (val x: Self) extends AnyVal {
         
         inline def setExecutionStatus(value: String): Self = StObject.set(x, "executionStatus", value.asInstanceOf[js.Any])
         
@@ -9249,7 +9446,8 @@ object Content {
         __obj.asInstanceOf[OrdersUpdateShipmentRequest]
       }
       
-      extension [Self <: OrdersUpdateShipmentRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: OrdersUpdateShipmentRequest] (val x: Self) extends AnyVal {
         
         inline def setCarrier(value: String): Self = StObject.set(x, "carrier", value.asInstanceOf[js.Any])
         
@@ -9290,7 +9488,8 @@ object Content {
         __obj.asInstanceOf[OrdersUpdateShipmentResponse]
       }
       
-      extension [Self <: OrdersUpdateShipmentResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: OrdersUpdateShipmentResponse] (val x: Self) extends AnyVal {
         
         inline def setExecutionStatus(value: String): Self = StObject.set(x, "executionStatus", value.asInstanceOf[js.Any])
         
@@ -9313,7 +9512,8 @@ object Content {
         __obj.asInstanceOf[PosCustomBatchRequest]
       }
       
-      extension [Self <: PosCustomBatchRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: PosCustomBatchRequest] (val x: Self) extends AnyVal {
         
         inline def setEntries(value: js.Array[PosCustomBatchRequestEntry]): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
         
@@ -9348,7 +9548,8 @@ object Content {
         __obj.asInstanceOf[PosCustomBatchRequestEntry]
       }
       
-      extension [Self <: PosCustomBatchRequestEntry](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: PosCustomBatchRequestEntry] (val x: Self) extends AnyVal {
         
         inline def setBatchId(value: Double): Self = StObject.set(x, "batchId", value.asInstanceOf[js.Any])
         
@@ -9397,7 +9598,8 @@ object Content {
         __obj.asInstanceOf[PosCustomBatchResponse]
       }
       
-      extension [Self <: PosCustomBatchResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: PosCustomBatchResponse] (val x: Self) extends AnyVal {
         
         inline def setEntries(value: js.Array[PosCustomBatchResponseEntry]): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
         
@@ -9432,7 +9634,8 @@ object Content {
         __obj.asInstanceOf[PosCustomBatchResponseEntry]
       }
       
-      extension [Self <: PosCustomBatchResponseEntry](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: PosCustomBatchResponseEntry] (val x: Self) extends AnyVal {
         
         inline def setBatchId(value: Double): Self = StObject.set(x, "batchId", value.asInstanceOf[js.Any])
         
@@ -9473,7 +9676,8 @@ object Content {
         __obj.asInstanceOf[PosDataProviders]
       }
       
-      extension [Self <: PosDataProviders](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: PosDataProviders] (val x: Self) extends AnyVal {
         
         inline def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
         
@@ -9502,7 +9706,8 @@ object Content {
         __obj.asInstanceOf[PosDataProvidersPosDataProvider]
       }
       
-      extension [Self <: PosDataProvidersPosDataProvider](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: PosDataProvidersPosDataProvider] (val x: Self) extends AnyVal {
         
         inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
         
@@ -9545,7 +9750,8 @@ object Content {
         __obj.asInstanceOf[PosInventory]
       }
       
-      extension [Self <: PosInventory](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: PosInventory] (val x: Self) extends AnyVal {
         
         inline def setContentLanguage(value: String): Self = StObject.set(x, "contentLanguage", value.asInstanceOf[js.Any])
         
@@ -9610,7 +9816,8 @@ object Content {
         __obj.asInstanceOf[PosInventoryRequest]
       }
       
-      extension [Self <: PosInventoryRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: PosInventoryRequest] (val x: Self) extends AnyVal {
         
         inline def setContentLanguage(value: String): Self = StObject.set(x, "contentLanguage", value.asInstanceOf[js.Any])
         
@@ -9673,7 +9880,8 @@ object Content {
         __obj.asInstanceOf[PosInventoryResponse]
       }
       
-      extension [Self <: PosInventoryResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: PosInventoryResponse] (val x: Self) extends AnyVal {
         
         inline def setContentLanguage(value: String): Self = StObject.set(x, "contentLanguage", value.asInstanceOf[js.Any])
         
@@ -9726,7 +9934,8 @@ object Content {
         __obj.asInstanceOf[PosListResponse]
       }
       
-      extension [Self <: PosListResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: PosListResponse] (val x: Self) extends AnyVal {
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -9769,7 +9978,8 @@ object Content {
         __obj.asInstanceOf[PosSale]
       }
       
-      extension [Self <: PosSale](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: PosSale] (val x: Self) extends AnyVal {
         
         inline def setContentLanguage(value: String): Self = StObject.set(x, "contentLanguage", value.asInstanceOf[js.Any])
         
@@ -9840,7 +10050,8 @@ object Content {
         __obj.asInstanceOf[PosSaleRequest]
       }
       
-      extension [Self <: PosSaleRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: PosSaleRequest] (val x: Self) extends AnyVal {
         
         inline def setContentLanguage(value: String): Self = StObject.set(x, "contentLanguage", value.asInstanceOf[js.Any])
         
@@ -9909,7 +10120,8 @@ object Content {
         __obj.asInstanceOf[PosSaleResponse]
       }
       
-      extension [Self <: PosSaleResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: PosSaleResponse] (val x: Self) extends AnyVal {
         
         inline def setContentLanguage(value: String): Self = StObject.set(x, "contentLanguage", value.asInstanceOf[js.Any])
         
@@ -9968,7 +10180,8 @@ object Content {
         __obj.asInstanceOf[PosStore]
       }
       
-      extension [Self <: PosStore](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: PosStore] (val x: Self) extends AnyVal {
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -9999,7 +10212,8 @@ object Content {
         __obj.asInstanceOf[PostalCodeGroup]
       }
       
-      extension [Self <: PostalCodeGroup](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: PostalCodeGroup] (val x: Self) extends AnyVal {
         
         inline def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
         
@@ -10030,7 +10244,8 @@ object Content {
         __obj.asInstanceOf[PostalCodeRange]
       }
       
-      extension [Self <: PostalCodeRange](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: PostalCodeRange] (val x: Self) extends AnyVal {
         
         inline def setPostalCodeRangeBegin(value: String): Self = StObject.set(x, "postalCodeRangeBegin", value.asInstanceOf[js.Any])
         
@@ -10055,7 +10270,8 @@ object Content {
         __obj.asInstanceOf[Price]
       }
       
-      extension [Self <: Price](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Price] (val x: Self) extends AnyVal {
         
         inline def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
         
@@ -10232,7 +10448,8 @@ object Content {
         __obj.asInstanceOf[Product]
       }
       
-      extension [Self <: Product](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Product] (val x: Self) extends AnyVal {
         
         inline def setAdditionalImageLinks(value: js.Array[String]): Self = StObject.set(x, "additionalImageLinks", value.asInstanceOf[js.Any])
         
@@ -10591,7 +10808,8 @@ object Content {
         __obj.asInstanceOf[ProductAmount]
       }
       
-      extension [Self <: ProductAmount](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ProductAmount] (val x: Self) extends AnyVal {
         
         inline def setPriceAmount(value: Price): Self = StObject.set(x, "priceAmount", value.asInstanceOf[js.Any])
         
@@ -10622,7 +10840,8 @@ object Content {
         __obj.asInstanceOf[ProductAspect]
       }
       
-      extension [Self <: ProductAspect](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ProductAspect] (val x: Self) extends AnyVal {
         
         inline def setAspectName(value: String): Self = StObject.set(x, "aspectName", value.asInstanceOf[js.Any])
         
@@ -10651,7 +10870,8 @@ object Content {
         __obj.asInstanceOf[ProductDestination]
       }
       
-      extension [Self <: ProductDestination](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ProductDestination] (val x: Self) extends AnyVal {
         
         inline def setDestinationName(value: String): Self = StObject.set(x, "destinationName", value.asInstanceOf[js.Any])
         
@@ -10686,7 +10906,8 @@ object Content {
         __obj.asInstanceOf[ProductShipping]
       }
       
-      extension [Self <: ProductShipping](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ProductShipping] (val x: Self) extends AnyVal {
         
         inline def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
         
@@ -10731,7 +10952,8 @@ object Content {
         __obj.asInstanceOf[ProductShippingDimension]
       }
       
-      extension [Self <: ProductShippingDimension](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ProductShippingDimension] (val x: Self) extends AnyVal {
         
         inline def setUnit(value: String): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
         
@@ -10756,7 +10978,8 @@ object Content {
         __obj.asInstanceOf[ProductShippingWeight]
       }
       
-      extension [Self <: ProductShippingWeight](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ProductShippingWeight] (val x: Self) extends AnyVal {
         
         inline def setUnit(value: String): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
         
@@ -10799,7 +11022,8 @@ object Content {
         __obj.asInstanceOf[ProductStatus]
       }
       
-      extension [Self <: ProductStatus](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ProductStatus] (val x: Self) extends AnyVal {
         
         inline def setCreationDate(value: String): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
         
@@ -10880,7 +11104,8 @@ object Content {
         __obj.asInstanceOf[ProductStatusDataQualityIssue]
       }
       
-      extension [Self <: ProductStatusDataQualityIssue](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ProductStatusDataQualityIssue] (val x: Self) extends AnyVal {
         
         inline def setDestination(value: String): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
         
@@ -10937,7 +11162,8 @@ object Content {
         __obj.asInstanceOf[ProductStatusDestinationStatus]
       }
       
-      extension [Self <: ProductStatusDestinationStatus](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ProductStatusDestinationStatus] (val x: Self) extends AnyVal {
         
         inline def setApprovalPending(value: Boolean): Self = StObject.set(x, "approvalPending", value.asInstanceOf[js.Any])
         
@@ -10982,7 +11208,8 @@ object Content {
         __obj.asInstanceOf[ProductStatusItemLevelIssue]
       }
       
-      extension [Self <: ProductStatusItemLevelIssue](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ProductStatusItemLevelIssue] (val x: Self) extends AnyVal {
         
         inline def setAttributeName(value: String): Self = StObject.set(x, "attributeName", value.asInstanceOf[js.Any])
         
@@ -11039,7 +11266,8 @@ object Content {
         __obj.asInstanceOf[ProductTax]
       }
       
-      extension [Self <: ProductTax](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ProductTax] (val x: Self) extends AnyVal {
         
         inline def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
         
@@ -11080,7 +11308,8 @@ object Content {
         __obj.asInstanceOf[ProductUnitPricingBaseMeasure]
       }
       
-      extension [Self <: ProductUnitPricingBaseMeasure](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ProductUnitPricingBaseMeasure] (val x: Self) extends AnyVal {
         
         inline def setUnit(value: String): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
         
@@ -11105,7 +11334,8 @@ object Content {
         __obj.asInstanceOf[ProductUnitPricingMeasure]
       }
       
-      extension [Self <: ProductUnitPricingMeasure](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ProductUnitPricingMeasure] (val x: Self) extends AnyVal {
         
         inline def setUnit(value: String): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
         
@@ -11128,7 +11358,8 @@ object Content {
         __obj.asInstanceOf[ProductsCustomBatchRequest]
       }
       
-      extension [Self <: ProductsCustomBatchRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ProductsCustomBatchRequest] (val x: Self) extends AnyVal {
         
         inline def setEntries(value: js.Array[ProductsCustomBatchRequestEntry]): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
         
@@ -11157,7 +11388,8 @@ object Content {
         __obj.asInstanceOf[ProductsCustomBatchRequestEntry]
       }
       
-      extension [Self <: ProductsCustomBatchRequestEntry](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ProductsCustomBatchRequestEntry] (val x: Self) extends AnyVal {
         
         inline def setBatchId(value: Double): Self = StObject.set(x, "batchId", value.asInstanceOf[js.Any])
         
@@ -11194,7 +11426,8 @@ object Content {
         __obj.asInstanceOf[ProductsCustomBatchResponse]
       }
       
-      extension [Self <: ProductsCustomBatchResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ProductsCustomBatchResponse] (val x: Self) extends AnyVal {
         
         inline def setEntries(value: js.Array[ProductsCustomBatchResponseEntry]): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
         
@@ -11225,7 +11458,8 @@ object Content {
         __obj.asInstanceOf[ProductsCustomBatchResponseEntry]
       }
       
-      extension [Self <: ProductsCustomBatchResponseEntry](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ProductsCustomBatchResponseEntry] (val x: Self) extends AnyVal {
         
         inline def setBatchId(value: Double): Self = StObject.set(x, "batchId", value.asInstanceOf[js.Any])
         
@@ -11260,7 +11494,8 @@ object Content {
         __obj.asInstanceOf[ProductsListResponse]
       }
       
-      extension [Self <: ProductsListResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ProductsListResponse] (val x: Self) extends AnyVal {
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -11289,7 +11524,8 @@ object Content {
         __obj.asInstanceOf[ProductstatusesCustomBatchRequest]
       }
       
-      extension [Self <: ProductstatusesCustomBatchRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ProductstatusesCustomBatchRequest] (val x: Self) extends AnyVal {
         
         inline def setEntries(value: js.Array[ProductstatusesCustomBatchRequestEntry]): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
         
@@ -11320,7 +11556,8 @@ object Content {
         __obj.asInstanceOf[ProductstatusesCustomBatchRequestEntry]
       }
       
-      extension [Self <: ProductstatusesCustomBatchRequestEntry](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ProductstatusesCustomBatchRequestEntry] (val x: Self) extends AnyVal {
         
         inline def setBatchId(value: Double): Self = StObject.set(x, "batchId", value.asInstanceOf[js.Any])
         
@@ -11363,7 +11600,8 @@ object Content {
         __obj.asInstanceOf[ProductstatusesCustomBatchResponse]
       }
       
-      extension [Self <: ProductstatusesCustomBatchResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ProductstatusesCustomBatchResponse] (val x: Self) extends AnyVal {
         
         inline def setEntries(value: js.Array[ProductstatusesCustomBatchResponseEntry]): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
         
@@ -11394,7 +11632,8 @@ object Content {
         __obj.asInstanceOf[ProductstatusesCustomBatchResponseEntry]
       }
       
-      extension [Self <: ProductstatusesCustomBatchResponseEntry](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ProductstatusesCustomBatchResponseEntry] (val x: Self) extends AnyVal {
         
         inline def setBatchId(value: Double): Self = StObject.set(x, "batchId", value.asInstanceOf[js.Any])
         
@@ -11429,7 +11668,8 @@ object Content {
         __obj.asInstanceOf[ProductstatusesListResponse]
       }
       
-      extension [Self <: ProductstatusesListResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ProductstatusesListResponse] (val x: Self) extends AnyVal {
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -11460,7 +11700,8 @@ object Content {
         __obj.asInstanceOf[Promotion]
       }
       
-      extension [Self <: Promotion](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Promotion] (val x: Self) extends AnyVal {
         
         inline def setPromotionAmount(value: Amount): Self = StObject.set(x, "promotionAmount", value.asInstanceOf[js.Any])
         
@@ -11493,7 +11734,8 @@ object Content {
         __obj.asInstanceOf[RateGroup]
       }
       
-      extension [Self <: RateGroup](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: RateGroup] (val x: Self) extends AnyVal {
         
         inline def setApplicableShippingLabels(value: js.Array[String]): Self = StObject.set(x, "applicableShippingLabels", value.asInstanceOf[js.Any])
         
@@ -11540,7 +11782,8 @@ object Content {
         __obj.asInstanceOf[RefundReason]
       }
       
-      extension [Self <: RefundReason](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: RefundReason] (val x: Self) extends AnyVal {
         
         inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
         
@@ -11575,7 +11818,8 @@ object Content {
         __obj.asInstanceOf[ReturnShipment]
       }
       
-      extension [Self <: ReturnShipment](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ReturnShipment] (val x: Self) extends AnyVal {
         
         inline def setCreationDate(value: String): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
         
@@ -11620,7 +11864,8 @@ object Content {
         __obj.asInstanceOf[Row]
       }
       
-      extension [Self <: Row](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Row] (val x: Self) extends AnyVal {
         
         inline def setCells(value: js.Array[Value]): Self = StObject.set(x, "cells", value.asInstanceOf[js.Any])
         
@@ -11655,7 +11900,8 @@ object Content {
         __obj.asInstanceOf[Service]
       }
       
-      extension [Self <: Service](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Service] (val x: Self) extends AnyVal {
         
         inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
         
@@ -11708,7 +11954,8 @@ object Content {
         __obj.asInstanceOf[ShipmentInvoice]
       }
       
-      extension [Self <: ShipmentInvoice](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ShipmentInvoice] (val x: Self) extends AnyVal {
         
         inline def setInvoiceSummary(value: InvoiceSummary): Self = StObject.set(x, "invoiceSummary", value.asInstanceOf[js.Any])
         
@@ -11743,7 +11990,8 @@ object Content {
         __obj.asInstanceOf[ShipmentInvoiceLineItemInvoice]
       }
       
-      extension [Self <: ShipmentInvoiceLineItemInvoice](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ShipmentInvoiceLineItemInvoice] (val x: Self) extends AnyVal {
         
         inline def setLineItemId(value: String): Self = StObject.set(x, "lineItemId", value.asInstanceOf[js.Any])
         
@@ -11778,7 +12026,8 @@ object Content {
         __obj.asInstanceOf[ShipmentTrackingInfo]
       }
       
-      extension [Self <: ShipmentTrackingInfo](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ShipmentTrackingInfo] (val x: Self) extends AnyVal {
         
         inline def setCarrier(value: String): Self = StObject.set(x, "carrier", value.asInstanceOf[js.Any])
         
@@ -11805,7 +12054,8 @@ object Content {
         __obj.asInstanceOf[ShippingSettings]
       }
       
-      extension [Self <: ShippingSettings](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ShippingSettings] (val x: Self) extends AnyVal {
         
         inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
         
@@ -11836,7 +12086,8 @@ object Content {
         __obj.asInstanceOf[ShippingsettingsCustomBatchRequest]
       }
       
-      extension [Self <: ShippingsettingsCustomBatchRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ShippingsettingsCustomBatchRequest] (val x: Self) extends AnyVal {
         
         inline def setEntries(value: js.Array[ShippingsettingsCustomBatchRequestEntry]): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
         
@@ -11865,7 +12116,8 @@ object Content {
         __obj.asInstanceOf[ShippingsettingsCustomBatchRequestEntry]
       }
       
-      extension [Self <: ShippingsettingsCustomBatchRequestEntry](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ShippingsettingsCustomBatchRequestEntry] (val x: Self) extends AnyVal {
         
         inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
         
@@ -11902,7 +12154,8 @@ object Content {
         __obj.asInstanceOf[ShippingsettingsCustomBatchResponse]
       }
       
-      extension [Self <: ShippingsettingsCustomBatchResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ShippingsettingsCustomBatchResponse] (val x: Self) extends AnyVal {
         
         inline def setEntries(value: js.Array[ShippingsettingsCustomBatchResponseEntry]): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
         
@@ -11933,7 +12186,8 @@ object Content {
         __obj.asInstanceOf[ShippingsettingsCustomBatchResponseEntry]
       }
       
-      extension [Self <: ShippingsettingsCustomBatchResponseEntry](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ShippingsettingsCustomBatchResponseEntry] (val x: Self) extends AnyVal {
         
         inline def setBatchId(value: Double): Self = StObject.set(x, "batchId", value.asInstanceOf[js.Any])
         
@@ -11966,7 +12220,8 @@ object Content {
         __obj.asInstanceOf[ShippingsettingsGetSupportedCarriersResponse]
       }
       
-      extension [Self <: ShippingsettingsGetSupportedCarriersResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ShippingsettingsGetSupportedCarriersResponse] (val x: Self) extends AnyVal {
         
         inline def setCarriers(value: js.Array[CarriersCarrier]): Self = StObject.set(x, "carriers", value.asInstanceOf[js.Any])
         
@@ -11993,7 +12248,8 @@ object Content {
         __obj.asInstanceOf[ShippingsettingsGetSupportedHolidaysResponse]
       }
       
-      extension [Self <: ShippingsettingsGetSupportedHolidaysResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ShippingsettingsGetSupportedHolidaysResponse] (val x: Self) extends AnyVal {
         
         inline def setHolidays(value: js.Array[HolidaysHoliday]): Self = StObject.set(x, "holidays", value.asInstanceOf[js.Any])
         
@@ -12022,7 +12278,8 @@ object Content {
         __obj.asInstanceOf[ShippingsettingsListResponse]
       }
       
-      extension [Self <: ShippingsettingsListResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ShippingsettingsListResponse] (val x: Self) extends AnyVal {
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -12057,7 +12314,8 @@ object Content {
         __obj.asInstanceOf[Table]
       }
       
-      extension [Self <: Table](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Table] (val x: Self) extends AnyVal {
         
         inline def setColumnHeaders(value: Headers): Self = StObject.set(x, "columnHeaders", value.asInstanceOf[js.Any])
         
@@ -12110,7 +12368,8 @@ object Content {
         __obj.asInstanceOf[TestOrder]
       }
       
-      extension [Self <: TestOrder](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: TestOrder] (val x: Self) extends AnyVal {
         
         inline def setCustomer(value: TestOrderCustomer): Self = StObject.set(x, "customer", value.asInstanceOf[js.Any])
         
@@ -12179,7 +12438,8 @@ object Content {
         __obj.asInstanceOf[TestOrderCustomer]
       }
       
-      extension [Self <: TestOrderCustomer](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: TestOrderCustomer] (val x: Self) extends AnyVal {
         
         inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
         
@@ -12212,7 +12472,8 @@ object Content {
         __obj.asInstanceOf[TestOrderCustomerMarketingRightsInfo]
       }
       
-      extension [Self <: TestOrderCustomerMarketingRightsInfo](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: TestOrderCustomerMarketingRightsInfo] (val x: Self) extends AnyVal {
         
         inline def setExplicitMarketingPreference(value: String): Self = StObject.set(x, "explicitMarketingPreference", value.asInstanceOf[js.Any])
         
@@ -12243,7 +12504,8 @@ object Content {
         __obj.asInstanceOf[TestOrderLineItem]
       }
       
-      extension [Self <: TestOrderLineItem](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: TestOrderLineItem] (val x: Self) extends AnyVal {
         
         inline def setProduct(value: TestOrderLineItemProduct): Self = StObject.set(x, "product", value.asInstanceOf[js.Any])
         
@@ -12302,7 +12564,8 @@ object Content {
         __obj.asInstanceOf[TestOrderLineItemProduct]
       }
       
-      extension [Self <: TestOrderLineItemProduct](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: TestOrderLineItemProduct] (val x: Self) extends AnyVal {
         
         inline def setBrand(value: String): Self = StObject.set(x, "brand", value.asInstanceOf[js.Any])
         
@@ -12379,7 +12642,8 @@ object Content {
         __obj.asInstanceOf[TestOrderPaymentMethod]
       }
       
-      extension [Self <: TestOrderPaymentMethod](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: TestOrderPaymentMethod] (val x: Self) extends AnyVal {
         
         inline def setExpirationMonth(value: Double): Self = StObject.set(x, "expirationMonth", value.asInstanceOf[js.Any])
         
@@ -12418,7 +12682,8 @@ object Content {
         __obj.asInstanceOf[TransitTable]
       }
       
-      extension [Self <: TransitTable](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: TransitTable] (val x: Self) extends AnyVal {
         
         inline def setPostalCodeGroupNames(value: js.Array[String]): Self = StObject.set(x, "postalCodeGroupNames", value.asInstanceOf[js.Any])
         
@@ -12451,7 +12716,8 @@ object Content {
         __obj.asInstanceOf[TransitTableTransitTimeRow]
       }
       
-      extension [Self <: TransitTableTransitTimeRow](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: TransitTableTransitTimeRow] (val x: Self) extends AnyVal {
         
         inline def setValues(value: js.Array[TransitTableTransitTimeRowTransitTimeValue]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
         
@@ -12474,7 +12740,8 @@ object Content {
         __obj.asInstanceOf[TransitTableTransitTimeRowTransitTimeValue]
       }
       
-      extension [Self <: TransitTableTransitTimeRowTransitTimeValue](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: TransitTableTransitTimeRowTransitTimeValue] (val x: Self) extends AnyVal {
         
         inline def setMaxTransitTimeInDays(value: Double): Self = StObject.set(x, "maxTransitTimeInDays", value.asInstanceOf[js.Any])
         
@@ -12503,7 +12770,8 @@ object Content {
         __obj.asInstanceOf[UnitInvoice]
       }
       
-      extension [Self <: UnitInvoice](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: UnitInvoice] (val x: Self) extends AnyVal {
         
         inline def setAdditionalCharges(value: js.Array[UnitInvoiceAdditionalCharge]): Self = StObject.set(x, "additionalCharges", value.asInstanceOf[js.Any])
         
@@ -12544,7 +12812,8 @@ object Content {
         __obj.asInstanceOf[UnitInvoiceAdditionalCharge]
       }
       
-      extension [Self <: UnitInvoiceAdditionalCharge](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: UnitInvoiceAdditionalCharge] (val x: Self) extends AnyVal {
         
         inline def setAdditionalChargeAmount(value: Amount): Self = StObject.set(x, "additionalChargeAmount", value.asInstanceOf[js.Any])
         
@@ -12577,7 +12846,8 @@ object Content {
         __obj.asInstanceOf[UnitInvoiceTaxLine]
       }
       
-      extension [Self <: UnitInvoiceTaxLine](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: UnitInvoiceTaxLine] (val x: Self) extends AnyVal {
         
         inline def setTaxAmount(value: Price): Self = StObject.set(x, "taxAmount", value.asInstanceOf[js.Any])
         
@@ -12612,7 +12882,8 @@ object Content {
         __obj.asInstanceOf[Value]
       }
       
-      extension [Self <: Value](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Value] (val x: Self) extends AnyVal {
         
         inline def setCarrierRateName(value: String): Self = StObject.set(x, "carrierRateName", value.asInstanceOf[js.Any])
         
@@ -12649,7 +12920,8 @@ object Content {
         __obj.asInstanceOf[Weight]
       }
       
-      extension [Self <: Weight](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Weight] (val x: Self) extends AnyVal {
         
         inline def setUnit(value: String): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
         
@@ -12711,7 +12983,8 @@ object Content {
       __obj.asInstanceOf[TextOutput]
     }
     
-    extension [Self <: TextOutput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TextOutput] (val x: Self) extends AnyVal {
       
       inline def setAppend(value: String => TextOutput): Self = StObject.set(x, "append", js.Any.fromFunction1(value))
       

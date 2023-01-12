@@ -23,7 +23,8 @@ object Learnset {
     __obj.asInstanceOf[Learnset]
   }
   
-  extension [Self <: Learnset](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Learnset] (val x: Self) extends AnyVal {
     
     inline def setEgg_move(value: Boolean): Self = StObject.set(x, "egg_move", value.asInstanceOf[js.Any])
     

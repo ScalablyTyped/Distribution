@@ -22,7 +22,8 @@ object FireParameters {
     __obj.asInstanceOf[FireParameters]
   }
   
-  extension [Self <: FireParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FireParameters] (val x: Self) extends AnyVal {
     
     inline def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
     

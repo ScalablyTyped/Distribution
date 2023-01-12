@@ -21,7 +21,8 @@ object UseCapture {
     __obj.asInstanceOf[UseCapture]
   }
   
-  extension [Self <: UseCapture](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UseCapture] (val x: Self) extends AnyVal {
     
     inline def setPriority(
       value: Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PriorityString */ Any)

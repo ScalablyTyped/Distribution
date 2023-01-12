@@ -48,7 +48,8 @@ object ListTrackersResponseEntry {
     __obj.asInstanceOf[ListTrackersResponseEntry]
   }
   
-  extension [Self <: ListTrackersResponseEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListTrackersResponseEntry] (val x: Self) extends AnyVal {
     
     inline def setCreateTime(value: js.Date): Self = StObject.set(x, "CreateTime", value.asInstanceOf[js.Any])
     

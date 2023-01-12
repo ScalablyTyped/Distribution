@@ -38,7 +38,8 @@ object CreateModelRequest {
     __obj.asInstanceOf[CreateModelRequest]
   }
   
-  extension [Self <: CreateModelRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateModelRequest] (val x: Self) extends AnyVal {
     
     inline def setApiId(value: string): Self = StObject.set(x, "ApiId", value.asInstanceOf[js.Any])
     

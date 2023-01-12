@@ -23,7 +23,8 @@ object IndexedDBListUpdatedEvent {
     __obj.asInstanceOf[IndexedDBListUpdatedEvent]
   }
   
-  extension [Self <: IndexedDBListUpdatedEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndexedDBListUpdatedEvent] (val x: Self) extends AnyVal {
     
     inline def setOrigin(value: String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
     

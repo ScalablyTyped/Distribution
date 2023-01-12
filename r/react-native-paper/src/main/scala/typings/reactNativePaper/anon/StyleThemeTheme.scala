@@ -22,7 +22,8 @@ object StyleThemeTheme {
     __obj.asInstanceOf[StyleThemeTheme]
   }
   
-  extension [Self <: StyleThemeTheme](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StyleThemeTheme] (val x: Self) extends AnyVal {
     
     inline def setStyle(value: StyleProp[TextStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     

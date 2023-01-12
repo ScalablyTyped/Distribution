@@ -43,7 +43,8 @@ object DllPluginOptions {
     __obj.asInstanceOf[DllPluginOptions]
   }
   
-  extension [Self <: DllPluginOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DllPluginOptions] (val x: Self) extends AnyVal {
     
     inline def setContext(value: String): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     

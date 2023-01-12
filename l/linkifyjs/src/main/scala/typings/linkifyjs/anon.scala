@@ -237,7 +237,8 @@ object anon {
       __obj.asInstanceOf[PartialGlobalEventHandler]
     }
     
-    extension [Self <: PartialGlobalEventHandler](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialGlobalEventHandler] (val x: Self) extends AnyVal {
       
       inline def setAddEventListener(
         value: (abort, /* listener */ js.ThisFunction1[PartialGlobalEventHandler, /* ev */ UIEvent, Any]) => Unit
@@ -819,7 +820,8 @@ object anon {
       __obj.asInstanceOf[PartialRecordLinkEntityTy]
     }
     
-    extension [Self <: PartialRecordLinkEntityTy](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialRecordLinkEntityTy] (val x: Self) extends AnyVal {
       
       inline def setEmail(value: String | (js.Function1[/* href */ String, String])): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
       
@@ -865,7 +867,8 @@ object anon {
       __obj.asInstanceOf[PartialRecordLinkEntityTyEmail]
     }
     
-    extension [Self <: PartialRecordLinkEntityTyEmail](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialRecordLinkEntityTyEmail] (val x: Self) extends AnyVal {
       
       inline def setEmail(value: /* value */ String => String): Self = StObject.set(x, "email", js.Any.fromFunction1(value))
       
@@ -903,7 +906,8 @@ object anon {
       __obj.asInstanceOf[PartialRecordLinkEntityTyHashtag]
     }
     
-    extension [Self <: PartialRecordLinkEntityTyHashtag](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialRecordLinkEntityTyHashtag] (val x: Self) extends AnyVal {
       
       inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
       
@@ -941,7 +945,8 @@ object anon {
       __obj.asInstanceOf[PartialRecordLinkEntityTyMention]
     }
     
-    extension [Self <: PartialRecordLinkEntityTyMention](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialRecordLinkEntityTyMention] (val x: Self) extends AnyVal {
       
       inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
       
@@ -987,7 +992,8 @@ object anon {
       __obj.asInstanceOf[PartialRecordLinkEntityTyUrl]
     }
     
-    extension [Self <: PartialRecordLinkEntityTyUrl](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialRecordLinkEntityTyUrl] (val x: Self) extends AnyVal {
       
       inline def setEmail(value: /* href */ String => Boolean): Self = StObject.set(x, "email", js.Any.fromFunction1(value))
       
@@ -1018,7 +1024,8 @@ object anon {
       __obj.asInstanceOf[V]
     }
     
-    extension [Self <: V](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: V] (val x: Self) extends AnyVal {
       
       inline def setV(value: String): Self = StObject.set(x, "v", value.asInstanceOf[js.Any])
     }
@@ -1035,7 +1042,8 @@ object anon {
       __obj.asInstanceOf[VArray]
     }
     
-    extension [Self <: VArray](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VArray] (val x: Self) extends AnyVal {
       
       inline def setV(value: js.Array[V]): Self = StObject.set(x, "v", value.asInstanceOf[js.Any])
       

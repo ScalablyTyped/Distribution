@@ -35,7 +35,8 @@ object PasswordProfile {
     __obj.asInstanceOf[PasswordProfile]
   }
   
-  extension [Self <: PasswordProfile](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PasswordProfile] (val x: Self) extends AnyVal {
     
     inline def setForceChangePasswordNextSignIn(value: NullableOption[Boolean]): Self = StObject.set(x, "forceChangePasswordNextSignIn", value.asInstanceOf[js.Any])
     

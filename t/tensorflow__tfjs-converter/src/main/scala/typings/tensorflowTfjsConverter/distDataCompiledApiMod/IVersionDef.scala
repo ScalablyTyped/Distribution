@@ -22,7 +22,8 @@ object IVersionDef {
     __obj.asInstanceOf[IVersionDef]
   }
   
-  extension [Self <: IVersionDef](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IVersionDef] (val x: Self) extends AnyVal {
     
     inline def setBadConsumers(value: js.Array[Double]): Self = StObject.set(x, "badConsumers", value.asInstanceOf[js.Any])
     

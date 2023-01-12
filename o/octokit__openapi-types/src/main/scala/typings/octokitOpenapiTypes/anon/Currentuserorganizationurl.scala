@@ -43,7 +43,8 @@ object Currentuserorganizationurl {
     __obj.asInstanceOf[Currentuserorganizationurl]
   }
   
-  extension [Self <: Currentuserorganizationurl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Currentuserorganizationurl] (val x: Self) extends AnyVal {
     
     inline def setCurrent_user_actor_url(value: String): Self = StObject.set(x, "current_user_actor_url", value.asInstanceOf[js.Any])
     

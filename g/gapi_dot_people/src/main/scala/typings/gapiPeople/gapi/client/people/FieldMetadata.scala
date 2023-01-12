@@ -19,7 +19,8 @@ object FieldMetadata {
     __obj.asInstanceOf[FieldMetadata]
   }
   
-  extension [Self <: FieldMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FieldMetadata] (val x: Self) extends AnyVal {
     
     inline def setPrimary(value: Boolean): Self = StObject.set(x, "primary", value.asInstanceOf[js.Any])
     

@@ -30,7 +30,8 @@ object PayoutItem {
     __obj.asInstanceOf[PayoutItem]
   }
   
-  extension [Self <: PayoutItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PayoutItem] (val x: Self) extends AnyVal {
     
     inline def setAlternate_notification_method(value: Phone): Self = StObject.set(x, "alternate_notification_method", value.asInstanceOf[js.Any])
     

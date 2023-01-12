@@ -15,7 +15,8 @@ object DateTimeResult {
     __obj.asInstanceOf[DateTimeResult]
   }
   
-  extension [Self <: DateTimeResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DateTimeResult] (val x: Self) extends AnyVal {
     
     inline def setGet_value(value: () => js.Date): Self = StObject.set(x, "get_value", js.Any.fromFunction0(value))
   }

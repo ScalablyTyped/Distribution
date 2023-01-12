@@ -49,7 +49,8 @@ object typesSrcCoreAuthOptionsMod {
       __obj.asInstanceOf[AuthOptionsT[AuthHandler]]
     }
     
-    extension [Self <: AuthOptionsT[?], AuthHandler](x: Self & AuthOptionsT[AuthHandler]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AuthOptionsT[?], AuthHandler] (val x: Self & AuthOptionsT[AuthHandler]) extends AnyVal {
       
       inline def setCustomHandler(value: AuthHandler): Self = StObject.set(x, "customHandler", value.asInstanceOf[js.Any])
       
@@ -88,7 +89,8 @@ object typesSrcCoreAuthOptionsMod {
       __obj.asInstanceOf[ChannelAuthorizationData]
     }
     
-    extension [Self <: ChannelAuthorizationData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChannelAuthorizationData] (val x: Self) extends AnyVal {
       
       inline def setAuth(value: String): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
       
@@ -123,7 +125,8 @@ object typesSrcCoreAuthOptionsMod {
       __obj.asInstanceOf[ChannelAuthorizationRequestParams]
     }
     
-    extension [Self <: ChannelAuthorizationRequestParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChannelAuthorizationRequestParams] (val x: Self) extends AnyVal {
       
       inline def setChannelName(value: String): Self = StObject.set(x, "channelName", value.asInstanceOf[js.Any])
       
@@ -148,7 +151,8 @@ object typesSrcCoreAuthOptionsMod {
       __obj.asInstanceOf[InternalAuthOptions]
     }
     
-    extension [Self <: InternalAuthOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InternalAuthOptions] (val x: Self) extends AnyVal {
       
       inline def setEndpoint(value: String): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
       
@@ -179,7 +183,8 @@ object typesSrcCoreAuthOptionsMod {
       __obj.asInstanceOf[UserAuthenticationData]
     }
     
-    extension [Self <: UserAuthenticationData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UserAuthenticationData] (val x: Self) extends AnyVal {
       
       inline def setAuth(value: String): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
       
@@ -206,7 +211,8 @@ object typesSrcCoreAuthOptionsMod {
       __obj.asInstanceOf[UserAuthenticationRequestParams]
     }
     
-    extension [Self <: UserAuthenticationRequestParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UserAuthenticationRequestParams] (val x: Self) extends AnyVal {
       
       inline def setSocketId(value: String): Self = StObject.set(x, "socketId", value.asInstanceOf[js.Any])
     }

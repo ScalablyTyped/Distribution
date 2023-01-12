@@ -63,7 +63,8 @@ object DeliveryVehicle {
     __obj.asInstanceOf[DeliveryVehicle]
   }
   
-  extension [Self <: DeliveryVehicle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeliveryVehicle] (val x: Self) extends AnyVal {
     
     inline def setAttributes(value: StringDictionary[String | Null]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     

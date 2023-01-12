@@ -168,7 +168,8 @@ object IdentifyParametersProperties {
     __obj.asInstanceOf[IdentifyParametersProperties]
   }
   
-  extension [Self <: IdentifyParametersProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IdentifyParametersProperties] (val x: Self) extends AnyVal {
     
     inline def setDpi(value: Double): Self = StObject.set(x, "dpi", value.asInstanceOf[js.Any])
     

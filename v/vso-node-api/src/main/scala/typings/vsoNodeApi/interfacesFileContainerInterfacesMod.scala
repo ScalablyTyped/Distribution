@@ -220,7 +220,8 @@ object interfacesFileContainerInterfacesMod {
       __obj.asInstanceOf[FileContainer]
     }
     
-    extension [Self <: FileContainer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileContainer] (val x: Self) extends AnyVal {
       
       inline def setArtifactUri(value: String): Self = StObject.set(x, "artifactUri", value.asInstanceOf[js.Any])
       
@@ -364,7 +365,8 @@ object interfacesFileContainerInterfacesMod {
       __obj.asInstanceOf[FileContainerItem]
     }
     
-    extension [Self <: FileContainerItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileContainerItem] (val x: Self) extends AnyVal {
       
       inline def setContainerId(value: Double): Self = StObject.set(x, "containerId", value.asInstanceOf[js.Any])
       

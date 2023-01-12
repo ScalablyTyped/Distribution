@@ -21,7 +21,8 @@ object ScaleControlOptions {
     __obj.asInstanceOf[ScaleControlOptions]
   }
   
-  extension [Self <: ScaleControlOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScaleControlOptions] (val x: Self) extends AnyVal {
     
     inline def setStyle(value: ScaleControlStyle): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     

@@ -52,7 +52,8 @@ object TVInfoManager {
     __obj.asInstanceOf[TVInfoManager]
   }
   
-  extension [Self <: TVInfoManager](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TVInfoManager] (val x: Self) extends AnyVal {
     
     inline def setAddCaptionValueChangeListener(value: (CaptionInfoKey, CaptionValueChangeCallback) => Double): Self = StObject.set(x, "addCaptionValueChangeListener", js.Any.fromFunction2(value))
     

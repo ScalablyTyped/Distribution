@@ -20,7 +20,8 @@ object AdaptiveMediaSourceDownloadBitrateChangedEventArgs {
     __obj.asInstanceOf[AdaptiveMediaSourceDownloadBitrateChangedEventArgs]
   }
   
-  extension [Self <: AdaptiveMediaSourceDownloadBitrateChangedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AdaptiveMediaSourceDownloadBitrateChangedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setNewValue(value: Double): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
     

@@ -63,7 +63,8 @@ object typesInvalidArgumentExceptionMod {
       __obj.asInstanceOf[InvalidArgumentException]
     }
     
-    extension [Self <: InvalidArgumentException](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InvalidArgumentException] (val x: Self) extends AnyVal {
       
       inline def setName(
         value: typings.awsSdkClientKinesisBrowser.awsSdkClientKinesisBrowserStrings.InvalidArgumentException
@@ -85,7 +86,8 @@ object typesInvalidArgumentExceptionMod {
       __obj.asInstanceOf[InvalidArgumentExceptionDetails]
     }
     
-    extension [Self <: InvalidArgumentExceptionDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InvalidArgumentExceptionDetails] (val x: Self) extends AnyVal {
       
       inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       

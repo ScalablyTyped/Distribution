@@ -25,7 +25,8 @@ object FileRenamedStats {
     __obj.asInstanceOf[FileRenamedStats]
   }
   
-  extension [Self <: FileRenamedStats](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FileRenamedStats] (val x: Self) extends AnyVal {
     
     inline def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
     

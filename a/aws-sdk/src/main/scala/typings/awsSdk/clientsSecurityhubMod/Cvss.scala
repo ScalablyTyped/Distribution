@@ -38,7 +38,8 @@ object Cvss {
     __obj.asInstanceOf[Cvss]
   }
   
-  extension [Self <: Cvss](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Cvss] (val x: Self) extends AnyVal {
     
     inline def setAdjustments(value: AdjustmentList): Self = StObject.set(x, "Adjustments", value.asInstanceOf[js.Any])
     

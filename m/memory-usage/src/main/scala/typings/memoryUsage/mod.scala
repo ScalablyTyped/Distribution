@@ -72,7 +72,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setFreq(value: Double): Self = StObject.set(x, "freq", value.asInstanceOf[js.Any])
       
@@ -118,7 +119,8 @@ object mod {
       __obj.asInstanceOf[Sample]
     }
     
-    extension [Self <: Sample](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Sample] (val x: Self) extends AnyVal {
       
       inline def setGc(value: GCType): Self = StObject.set(x, "gc", value.asInstanceOf[js.Any])
       

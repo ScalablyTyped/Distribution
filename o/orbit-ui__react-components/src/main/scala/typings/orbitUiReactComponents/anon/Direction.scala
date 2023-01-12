@@ -15,7 +15,8 @@ object Direction {
     __obj.asInstanceOf[Direction]
   }
   
-  extension [Self <: Direction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Direction] (val x: Self) extends AnyVal {
     
     inline def setDirection(value: typings.orbitUiReactComponents.distLayoutSrcAdaptersMod.Direction): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
   }

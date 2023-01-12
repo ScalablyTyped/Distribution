@@ -16,7 +16,8 @@ object ReadOnly {
     __obj.asInstanceOf[ReadOnly]
   }
   
-  extension [Self <: ReadOnly](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadOnly] (val x: Self) extends AnyVal {
     
     inline def setReadTime(value: String): Self = StObject.set(x, "readTime", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object XpackUsageAudit {
     __obj.asInstanceOf[XpackUsageAudit]
   }
   
-  extension [Self <: XpackUsageAudit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XpackUsageAudit] (val x: Self) extends AnyVal {
     
     inline def setOutputs(value: js.Array[String]): Self = StObject.set(x, "outputs", value.asInstanceOf[js.Any])
     

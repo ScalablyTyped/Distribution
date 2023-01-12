@@ -17,7 +17,8 @@ object IBooleanValue {
     __obj.asInstanceOf[IBooleanValue]
   }
   
-  extension [Self <: IBooleanValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IBooleanValue] (val x: Self) extends AnyVal {
     
     inline def setClone(value: () => IBooleanValue): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     

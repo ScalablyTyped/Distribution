@@ -38,7 +38,8 @@ object DrawerPostion {
     __obj.asInstanceOf[DrawerPostion]
   }
   
-  extension [Self <: DrawerPostion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DrawerPostion] (val x: Self) extends AnyVal {
     
     inline def setDrawerPostion(value: String): Self = StObject.set(x, "drawerPostion", value.asInstanceOf[js.Any])
     

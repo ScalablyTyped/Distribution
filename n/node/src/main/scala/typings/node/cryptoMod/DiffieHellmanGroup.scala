@@ -72,7 +72,8 @@ object DiffieHellmanGroup {
   @js.native
   val ^ : DiffieHellmanGroupConstructor = js.native
   
-  extension [Self <: DiffieHellmanGroup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DiffieHellmanGroup] (val x: Self) extends AnyVal {
     
     inline def setComputeSecret(
       value: (/* otherPublicKey */ ArrayBufferView, /* inputEncoding */ js.UndefOr[Null], /* outputEncoding */ js.UndefOr[Null]) => Buffer

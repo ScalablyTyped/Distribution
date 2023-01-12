@@ -18,7 +18,8 @@ object RouterFeature {
     __obj.asInstanceOf[RouterFeature[FeatureKind]]
   }
   
-  extension [Self <: RouterFeature[?], FeatureKind /* <: RouterFeatureKind */](x: Self & RouterFeature[FeatureKind]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RouterFeature[?], FeatureKind /* <: RouterFeatureKind */] (val x: Self & RouterFeature[FeatureKind]) extends AnyVal {
     
     inline def setƟkind(value: FeatureKind): Self = StObject.set(x, "\u0275kind", value.asInstanceOf[js.Any])
     

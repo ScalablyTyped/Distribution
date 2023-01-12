@@ -35,7 +35,8 @@ object RoomMembership {
     __obj.asInstanceOf[RoomMembership]
   }
   
-  extension [Self <: RoomMembership](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RoomMembership] (val x: Self) extends AnyVal {
     
     inline def setInvitedBy(value: NonEmptyString): Self = StObject.set(x, "InvitedBy", value.asInstanceOf[js.Any])
     

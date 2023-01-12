@@ -21,7 +21,8 @@ object BOUNCE {
     __obj.asInstanceOf[BOUNCE]
   }
   
-  extension [Self <: BOUNCE](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BOUNCE] (val x: Self) extends AnyVal {
     
     inline def setBOUNCE(value: Double): Self = StObject.set(x, "BOUNCE", value.asInstanceOf[js.Any])
     

@@ -26,7 +26,8 @@ object AsyncFormatDefinition {
     __obj.asInstanceOf[AsyncFormatDefinition[T]]
   }
   
-  extension [Self <: AsyncFormatDefinition[?], T /* <: String | Double */](x: Self & AsyncFormatDefinition[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AsyncFormatDefinition[?], T /* <: String | Double */] (val x: Self & AsyncFormatDefinition[T]) extends AnyVal {
     
     inline def setAsync(value: `true`): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
     

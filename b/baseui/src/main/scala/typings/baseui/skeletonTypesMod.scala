@@ -20,7 +20,8 @@ object skeletonTypesMod {
       __obj.asInstanceOf[SkeletonOverrides]
     }
     
-    extension [Self <: SkeletonOverrides](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SkeletonOverrides] (val x: Self) extends AnyVal {
       
       inline def setRoot(value: Override[Any]): Self = StObject.set(x, "Root", value.asInstanceOf[js.Any])
       
@@ -55,7 +56,8 @@ object skeletonTypesMod {
       __obj.asInstanceOf[SkeletonProps]
     }
     
-    extension [Self <: SkeletonProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SkeletonProps] (val x: Self) extends AnyVal {
       
       inline def setAnimation(value: Boolean): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
       

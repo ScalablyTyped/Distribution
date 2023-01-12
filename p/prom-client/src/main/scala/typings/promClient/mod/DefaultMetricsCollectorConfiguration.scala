@@ -23,7 +23,8 @@ object DefaultMetricsCollectorConfiguration {
     __obj.asInstanceOf[DefaultMetricsCollectorConfiguration]
   }
   
-  extension [Self <: DefaultMetricsCollectorConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DefaultMetricsCollectorConfiguration] (val x: Self) extends AnyVal {
     
     inline def setEventLoopMonitoringPrecision(value: Double): Self = StObject.set(x, "eventLoopMonitoringPrecision", value.asInstanceOf[js.Any])
     

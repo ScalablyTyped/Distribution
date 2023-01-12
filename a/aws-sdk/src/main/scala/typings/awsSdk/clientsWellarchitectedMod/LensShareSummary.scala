@@ -24,7 +24,8 @@ object LensShareSummary {
     __obj.asInstanceOf[LensShareSummary]
   }
   
-  extension [Self <: LensShareSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LensShareSummary] (val x: Self) extends AnyVal {
     
     inline def setShareId(value: ShareId): Self = StObject.set(x, "ShareId", value.asInstanceOf[js.Any])
     

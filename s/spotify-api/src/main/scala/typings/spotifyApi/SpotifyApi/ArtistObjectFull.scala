@@ -53,7 +53,8 @@ object ArtistObjectFull {
     __obj.asInstanceOf[ArtistObjectFull]
   }
   
-  extension [Self <: ArtistObjectFull](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ArtistObjectFull] (val x: Self) extends AnyVal {
     
     inline def setFollowers(value: FollowersObject): Self = StObject.set(x, "followers", value.asInstanceOf[js.Any])
     

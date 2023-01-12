@@ -26,7 +26,8 @@ object Analysisid {
     __obj.asInstanceOf[Analysisid]
   }
   
-  extension [Self <: Analysisid](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Analysisid] (val x: Self) extends AnyVal {
     
     inline def setAnalysis_id(value: Double): Self = StObject.set(x, "analysis_id", value.asInstanceOf[js.Any])
     

@@ -84,7 +84,8 @@ object dxForm {
       __obj.asInstanceOf[EditorEnterKeyEvent]
     }
     
-    extension [Self <: EditorEnterKeyEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EditorEnterKeyEvent] (val x: Self) extends AnyVal {
       
       inline def setDataField(value: String): Self = StObject.set(x, "dataField", value.asInstanceOf[js.Any])
       
@@ -109,7 +110,8 @@ object dxForm {
       __obj.asInstanceOf[FieldDataChangedEvent]
     }
     
-    extension [Self <: FieldDataChangedEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FieldDataChangedEvent] (val x: Self) extends AnyVal {
       
       inline def setDataField(value: String): Self = StObject.set(x, "dataField", value.asInstanceOf[js.Any])
       
@@ -232,7 +234,8 @@ object dxForm {
       __obj.asInstanceOf[GroupItemTemplateData]
     }
     
-    extension [Self <: GroupItemTemplateData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GroupItemTemplateData] (val x: Self) extends AnyVal {
       
       inline def setComponent(value: dxForm): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
       
@@ -296,7 +299,8 @@ object dxForm {
       __obj.asInstanceOf[SimpleItemTemplateData]
     }
     
-    extension [Self <: SimpleItemTemplateData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SimpleItemTemplateData] (val x: Self) extends AnyVal {
       
       inline def setComponent(value: dxForm): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
       

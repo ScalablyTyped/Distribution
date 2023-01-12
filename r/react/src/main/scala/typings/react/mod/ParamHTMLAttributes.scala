@@ -19,7 +19,8 @@ object ParamHTMLAttributes {
     __obj.asInstanceOf[ParamHTMLAttributes[T]]
   }
   
-  extension [Self <: ParamHTMLAttributes[?], T](x: Self & ParamHTMLAttributes[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParamHTMLAttributes[?], T] (val x: Self & ParamHTMLAttributes[T]) extends AnyVal {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

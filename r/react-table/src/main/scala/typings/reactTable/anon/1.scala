@@ -17,7 +17,8 @@ object `1` {
     __obj.asInstanceOf[`1`[D]]
   }
   
-  extension [Self <: `1`[?], D /* <: js.Object */](x: Self & `1`[D]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: `1`[?], D /* <: js.Object */] (val x: Self & `1`[D]) extends AnyVal {
     
     inline def setAccessor(
       value: /* import warning: importer.ImportType#apply Failed type conversion: keyof D extends never ? react-table.react-table.IdType<D> : never */ js.Any

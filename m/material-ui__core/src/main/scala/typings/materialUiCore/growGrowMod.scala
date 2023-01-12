@@ -80,7 +80,8 @@ object growGrowMod {
       __obj.asInstanceOf[GrowProps]
     }
     
-    extension [Self <: GrowProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GrowProps] (val x: Self) extends AnyVal {
       
       inline def setAddEndListener(value: Any): Self = StObject.set(x, "addEndListener", value.asInstanceOf[js.Any])
       

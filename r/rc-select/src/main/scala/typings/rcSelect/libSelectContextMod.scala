@@ -62,7 +62,8 @@ object libSelectContextMod extends Shortcut {
       __obj.asInstanceOf[SelectContextProps]
     }
     
-    extension [Self <: SelectContextProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SelectContextProps] (val x: Self) extends AnyVal {
       
       inline def setChildrenAsData(value: Boolean): Self = StObject.set(x, "childrenAsData", value.asInstanceOf[js.Any])
       

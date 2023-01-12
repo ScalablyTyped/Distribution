@@ -24,7 +24,8 @@ object Types {
     __obj.asInstanceOf[Types[T, Base]]
   }
   
-  extension [Self <: Types[?, ?], T /* <: Base */, Base](x: Self & (Types[T, Base])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Types[?, ?], T /* <: Base */, Base] (val x: Self & (Types[T, Base])) extends AnyVal {
     
     inline def setBase(value: Constructor[Base] | js.Function): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
     

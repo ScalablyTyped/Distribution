@@ -29,7 +29,8 @@ object boxoverflow {
       __obj.asInstanceOf[IMenu]
     }
     
-    extension [Self <: IMenu](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IMenu] (val x: Self) extends AnyVal {
       
       inline def setMenuItems(value: Array): Self = StObject.set(x, "menuItems", value.asInstanceOf[js.Any])
       
@@ -101,7 +102,8 @@ object boxoverflow {
       __obj.asInstanceOf[IScroller]
     }
     
-    extension [Self <: IScroller](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IScroller] (val x: Self) extends AnyVal {
       
       inline def setAfterCtCls(value: String): Self = StObject.set(x, "afterCtCls", value.asInstanceOf[js.Any])
       

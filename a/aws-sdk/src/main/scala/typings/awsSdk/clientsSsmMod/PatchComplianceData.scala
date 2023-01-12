@@ -55,7 +55,8 @@ object PatchComplianceData {
     __obj.asInstanceOf[PatchComplianceData]
   }
   
-  extension [Self <: PatchComplianceData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PatchComplianceData] (val x: Self) extends AnyVal {
     
     inline def setCVEIds(value: PatchCVEIds): Self = StObject.set(x, "CVEIds", value.asInstanceOf[js.Any])
     

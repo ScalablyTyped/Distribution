@@ -23,7 +23,8 @@ object AwsCloudFrontDistributionOriginGroupFailoverStatusCodes {
     __obj.asInstanceOf[AwsCloudFrontDistributionOriginGroupFailoverStatusCodes]
   }
   
-  extension [Self <: AwsCloudFrontDistributionOriginGroupFailoverStatusCodes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsCloudFrontDistributionOriginGroupFailoverStatusCodes] (val x: Self) extends AnyVal {
     
     inline def setItems(value: AwsCloudFrontDistributionOriginGroupFailoverStatusCodesItemList): Self = StObject.set(x, "Items", value.asInstanceOf[js.Any])
     

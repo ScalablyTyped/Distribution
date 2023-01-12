@@ -30,7 +30,8 @@ object anon {
       __obj.asInstanceOf[Cell]
     }
     
-    extension [Self <: Cell](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Cell] (val x: Self) extends AnyVal {
       
       inline def setCell(
         value: String | (js.Function2[/* props */ Any, /* column */ typings.reactabularTable.mod.Column, Element]) | (js.Function1[/* props */ Any, ReactInstance])
@@ -71,7 +72,8 @@ object anon {
       __obj.asInstanceOf[Column]
     }
     
-    extension [Self <: Column](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Column] (val x: Self) extends AnyVal {
       
       inline def setColumn(value: typings.reactabularTable.mod.Column): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
@@ -106,7 +108,8 @@ object anon {
       __obj.asInstanceOf[ColumnIndex]
     }
     
-    extension [Self <: ColumnIndex](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColumnIndex] (val x: Self) extends AnyVal {
       
       inline def setColumn(value: typings.reactabularTable.mod.Column): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
@@ -141,7 +144,8 @@ object anon {
       __obj.asInstanceOf[Draggable]
     }
     
-    extension [Self <: Draggable](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Draggable] (val x: Self) extends AnyVal {
       
       inline def setDraggable(value: Boolean): Self = StObject.set(x, "draggable", value.asInstanceOf[js.Any])
       
@@ -184,7 +188,8 @@ object anon {
       __obj.asInstanceOf[Formatters]
     }
     
-    extension [Self <: Formatters](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Formatters] (val x: Self) extends AnyVal {
       
       inline def setFormatters(value: js.Array[CellFormatter]): Self = StObject.set(x, "formatters", value.asInstanceOf[js.Any])
       
@@ -1150,7 +1155,8 @@ object anon {
       __obj.asInstanceOf[PartialCSSStyleDeclaratio]
     }
     
-    extension [Self <: PartialCSSStyleDeclaratio](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialCSSStyleDeclaratio] (val x: Self) extends AnyVal {
       
       inline def setAccentColor(value: String): Self = StObject.set(x, "accentColor", value.asInstanceOf[js.Any])
       
@@ -3053,7 +3059,8 @@ object anon {
       __obj.asInstanceOf[Row]
     }
     
-    extension [Self <: Row](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Row] (val x: Self) extends AnyVal {
       
       inline def setCell(value: String | (js.Function1[/* props */ Any, Element | ReactInstance])): Self = StObject.set(x, "cell", value.asInstanceOf[js.Any])
       
@@ -3094,7 +3101,8 @@ object anon {
       __obj.asInstanceOf[RowData]
     }
     
-    extension [Self <: RowData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RowData] (val x: Self) extends AnyVal {
       
       inline def setColumn(value: typings.reactabularTable.mod.Column): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
@@ -3121,7 +3129,8 @@ object anon {
       __obj.asInstanceOf[RowIndex]
     }
     
-    extension [Self <: RowIndex](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RowIndex] (val x: Self) extends AnyVal {
       
       inline def setColumn(value: typings.reactabularTable.mod.Column): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
@@ -3144,7 +3153,8 @@ object anon {
       __obj.asInstanceOf[RowIndexNumber]
     }
     
-    extension [Self <: RowIndexNumber](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RowIndexNumber] (val x: Self) extends AnyVal {
       
       inline def setRowIndex(value: Double): Self = StObject.set(x, "rowIndex", value.asInstanceOf[js.Any])
     }

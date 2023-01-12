@@ -26,7 +26,8 @@ object GoogleApiHttpBody {
     __obj.asInstanceOf[GoogleApiHttpBody]
   }
   
-  extension [Self <: GoogleApiHttpBody](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleApiHttpBody] (val x: Self) extends AnyVal {
     
     inline def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
     

@@ -37,7 +37,8 @@ object distLibMittMod {
       __obj.asInstanceOf[MittEmitter]
     }
     
-    extension [Self <: MittEmitter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MittEmitter] (val x: Self) extends AnyVal {
       
       inline def setEmit(value: (String, /* repeated */ Any) => Unit): Self = StObject.set(x, "emit", js.Any.fromFunction2(value))
       

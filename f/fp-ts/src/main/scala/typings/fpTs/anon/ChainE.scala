@@ -30,7 +30,8 @@ object ChainE {
     __obj.asInstanceOf[ChainE[W, M, E]]
   }
   
-  extension [Self <: ChainE[?, ?, ?], W, M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */, E](x: Self & (ChainE[W, M, E])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChainE[?, ?, ?], W, M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */, E] (val x: Self & (ChainE[W, M, E])) extends AnyVal {
     
     inline def setAp(
       value: (WriterT2[M, E, W, js.Function1[Any, Any]], WriterT2[M, E, W, Any]) => WriterT2[M, E, W, Any]

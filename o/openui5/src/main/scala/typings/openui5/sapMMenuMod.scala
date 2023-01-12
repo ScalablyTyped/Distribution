@@ -642,7 +642,8 @@ object sapMMenuMod {
       __obj.asInstanceOf[MenuSettings]
     }
     
-    extension [Self <: MenuSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MenuSettings] (val x: Self) extends AnyVal {
       
       inline def setClosed(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "closed", js.Any.fromFunction1(value))
       

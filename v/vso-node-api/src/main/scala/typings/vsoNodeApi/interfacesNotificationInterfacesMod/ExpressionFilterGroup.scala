@@ -28,7 +28,8 @@ object ExpressionFilterGroup {
     __obj.asInstanceOf[ExpressionFilterGroup]
   }
   
-  extension [Self <: ExpressionFilterGroup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExpressionFilterGroup] (val x: Self) extends AnyVal {
     
     inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     

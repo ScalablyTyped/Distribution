@@ -52,7 +52,8 @@ object RemoteEvent {
     __obj.asInstanceOf[RemoteEvent]
   }
   
-  extension [Self <: RemoteEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RemoteEvent] (val x: Self) extends AnyVal {
     
     inline def setDocumentUpdates(value: MutableDocumentMap): Self = StObject.set(x, "documentUpdates", value.asInstanceOf[js.Any])
     

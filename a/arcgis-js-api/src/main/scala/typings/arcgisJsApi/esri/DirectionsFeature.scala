@@ -46,7 +46,8 @@ object DirectionsFeature {
     __obj.asInstanceOf[DirectionsFeature]
   }
   
-  extension [Self <: DirectionsFeature](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DirectionsFeature] (val x: Self) extends AnyVal {
     
     inline def setAttributes(value: Any): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     

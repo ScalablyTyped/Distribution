@@ -18,7 +18,8 @@ object EnableDomainTransferLockRequest {
     __obj.asInstanceOf[EnableDomainTransferLockRequest]
   }
   
-  extension [Self <: EnableDomainTransferLockRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnableDomainTransferLockRequest] (val x: Self) extends AnyVal {
     
     inline def setDomainName(value: DomainName): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
   }

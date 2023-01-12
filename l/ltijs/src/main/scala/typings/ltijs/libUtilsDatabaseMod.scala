@@ -51,7 +51,8 @@ object libUtilsDatabaseMod {
       __obj.asInstanceOf[DatabaseOptions]
     }
     
-    extension [Self <: DatabaseOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DatabaseOptions] (val x: Self) extends AnyVal {
       
       inline def setConnection(value: KeepAlive): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
       

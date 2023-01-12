@@ -33,7 +33,8 @@ object ReadDirItem {
     __obj.asInstanceOf[ReadDirItem]
   }
   
-  extension [Self <: ReadDirItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadDirItem] (val x: Self) extends AnyVal {
     
     inline def setCtime(value: js.Date): Self = StObject.set(x, "ctime", value.asInstanceOf[js.Any])
     

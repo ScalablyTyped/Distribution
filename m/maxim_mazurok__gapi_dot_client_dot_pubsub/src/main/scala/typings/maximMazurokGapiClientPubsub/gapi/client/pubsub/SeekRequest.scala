@@ -24,7 +24,8 @@ object SeekRequest {
     __obj.asInstanceOf[SeekRequest]
   }
   
-  extension [Self <: SeekRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SeekRequest] (val x: Self) extends AnyVal {
     
     inline def setSnapshot(value: String): Self = StObject.set(x, "snapshot", value.asInstanceOf[js.Any])
     

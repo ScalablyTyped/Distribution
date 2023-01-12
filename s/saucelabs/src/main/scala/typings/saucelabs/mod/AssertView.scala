@@ -18,7 +18,8 @@ object AssertView {
     __obj.asInstanceOf[AssertView]
   }
   
-  extension [Self <: AssertView](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssertView] (val x: Self) extends AnyVal {
     
     inline def setMetric_name(value: AssertDetails): Self = StObject.set(x, "metric_name", value.asInstanceOf[js.Any])
     

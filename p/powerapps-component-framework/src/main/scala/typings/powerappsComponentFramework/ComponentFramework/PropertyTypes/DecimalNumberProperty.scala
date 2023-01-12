@@ -23,7 +23,8 @@ object DecimalNumberProperty {
     __obj.asInstanceOf[DecimalNumberProperty]
   }
   
-  extension [Self <: DecimalNumberProperty](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DecimalNumberProperty] (val x: Self) extends AnyVal {
     
     inline def setAttributes(value: DecimalNumberMetadata): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     

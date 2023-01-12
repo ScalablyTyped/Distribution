@@ -18,7 +18,8 @@ object UnsupportedTimestamps {
     __obj.asInstanceOf[UnsupportedTimestamps]
   }
   
-  extension [Self <: UnsupportedTimestamps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UnsupportedTimestamps] (val x: Self) extends AnyVal {
     
     inline def setTotalNumberOfUnsupportedTimestamps(value: Integer): Self = StObject.set(x, "TotalNumberOfUnsupportedTimestamps", value.asInstanceOf[js.Any])
   }

@@ -46,7 +46,8 @@ object VertexAttachment {
     __obj.asInstanceOf[VertexAttachment]
   }
   
-  extension [Self <: VertexAttachment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VertexAttachment] (val x: Self) extends AnyVal {
     
     inline def setBones(value: js.Array[Double]): Self = StObject.set(x, "bones", value.asInstanceOf[js.Any])
     

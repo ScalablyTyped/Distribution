@@ -28,7 +28,8 @@ object ImportFindingsError {
     __obj.asInstanceOf[ImportFindingsError]
   }
   
-  extension [Self <: ImportFindingsError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImportFindingsError] (val x: Self) extends AnyVal {
     
     inline def setErrorCode(value: NonEmptyString): Self = StObject.set(x, "ErrorCode", value.asInstanceOf[js.Any])
     

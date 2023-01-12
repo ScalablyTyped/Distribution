@@ -26,7 +26,8 @@ object anon {
       __obj.asInstanceOf[`0`]
     }
     
-    extension [Self <: `0`](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: `0`] (val x: Self) extends AnyVal {
       
       inline def setType(value: Z): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
@@ -43,7 +44,8 @@ object anon {
       __obj.asInstanceOf[LowMemory]
     }
     
-    extension [Self <: LowMemory](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LowMemory] (val x: Self) extends AnyVal {
       
       inline def setLowMemory(value: Boolean): Self = StObject.set(x, "lowMemory", value.asInstanceOf[js.Any])
     }
@@ -67,7 +69,8 @@ object anon {
       __obj.asInstanceOf[Type]
     }
     
-    extension [Self <: Type](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Type] (val x: Self) extends AnyVal {
       
       inline def setType(value: M): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
@@ -95,7 +98,8 @@ object anon {
       __obj.asInstanceOf[X]
     }
     
-    extension [Self <: X](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: X] (val x: Self) extends AnyVal {
       
       inline def setType(value: L): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
@@ -131,7 +135,8 @@ object anon {
       __obj.asInstanceOf[X1]
     }
     
-    extension [Self <: X1](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: X1] (val x: Self) extends AnyVal {
       
       inline def setType(value: C): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
@@ -171,7 +176,8 @@ object anon {
       __obj.asInstanceOf[Y]
     }
     
-    extension [Self <: Y](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Y] (val x: Self) extends AnyVal {
       
       inline def setType(value: Q): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       

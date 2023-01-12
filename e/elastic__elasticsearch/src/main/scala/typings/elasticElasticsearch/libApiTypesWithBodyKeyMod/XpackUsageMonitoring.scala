@@ -25,7 +25,8 @@ object XpackUsageMonitoring {
     __obj.asInstanceOf[XpackUsageMonitoring]
   }
   
-  extension [Self <: XpackUsageMonitoring](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XpackUsageMonitoring] (val x: Self) extends AnyVal {
     
     inline def setCollection_enabled(value: Boolean): Self = StObject.set(x, "collection_enabled", value.asInstanceOf[js.Any])
     

@@ -67,7 +67,8 @@ object BeginOptions {
     __obj.asInstanceOf[BeginOptions]
   }
   
-  extension [Self <: BeginOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BeginOptions] (val x: Self) extends AnyVal {
     
     inline def setIgnoreDecorators(value: Boolean): Self = StObject.set(x, "ignoreDecorators", value.asInstanceOf[js.Any])
     

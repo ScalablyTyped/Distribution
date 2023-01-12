@@ -27,7 +27,8 @@ object distSrcClassicEditorGeneralDistComponentsNewspaperMod extends Shortcut {
       __obj.asInstanceOf[NewspaperProps]
     }
     
-    extension [Self <: NewspaperProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NewspaperProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

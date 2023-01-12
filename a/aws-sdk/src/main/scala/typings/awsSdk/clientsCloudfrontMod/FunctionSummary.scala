@@ -33,7 +33,8 @@ object FunctionSummary {
     __obj.asInstanceOf[FunctionSummary]
   }
   
-  extension [Self <: FunctionSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FunctionSummary] (val x: Self) extends AnyVal {
     
     inline def setFunctionConfig(value: FunctionConfig): Self = StObject.set(x, "FunctionConfig", value.asInstanceOf[js.Any])
     

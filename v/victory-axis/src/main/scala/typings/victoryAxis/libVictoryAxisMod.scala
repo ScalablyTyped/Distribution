@@ -76,7 +76,8 @@ object libVictoryAxisMod {
       __obj.asInstanceOf[VictoryAxisProps]
     }
     
-    extension [Self <: VictoryAxisProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VictoryAxisProps] (val x: Self) extends AnyVal {
       
       inline def setCrossAxis(value: Boolean): Self = StObject.set(x, "crossAxis", value.asInstanceOf[js.Any])
       

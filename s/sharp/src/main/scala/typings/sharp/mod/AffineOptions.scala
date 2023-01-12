@@ -37,7 +37,8 @@ object AffineOptions {
     __obj.asInstanceOf[AffineOptions]
   }
   
-  extension [Self <: AffineOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AffineOptions] (val x: Self) extends AnyVal {
     
     inline def setBackground(value: String | js.Object): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     

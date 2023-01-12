@@ -33,7 +33,8 @@ object SearchDashboardsResponse {
     __obj.asInstanceOf[SearchDashboardsResponse]
   }
   
-  extension [Self <: SearchDashboardsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchDashboardsResponse] (val x: Self) extends AnyVal {
     
     inline def setDashboardSummaryList(value: DashboardSummaryList): Self = StObject.set(x, "DashboardSummaryList", value.asInstanceOf[js.Any])
     

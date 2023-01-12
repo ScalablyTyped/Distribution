@@ -23,7 +23,8 @@ object TransitGatewayAttachmentPropagation {
     __obj.asInstanceOf[TransitGatewayAttachmentPropagation]
   }
   
-  extension [Self <: TransitGatewayAttachmentPropagation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransitGatewayAttachmentPropagation] (val x: Self) extends AnyVal {
     
     inline def setState(value: TransitGatewayPropagationState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     

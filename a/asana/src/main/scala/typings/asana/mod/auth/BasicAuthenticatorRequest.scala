@@ -16,7 +16,8 @@ object BasicAuthenticatorRequest {
     __obj.asInstanceOf[BasicAuthenticatorRequest]
   }
   
-  extension [Self <: BasicAuthenticatorRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BasicAuthenticatorRequest] (val x: Self) extends AnyVal {
     
     inline def setAuth(value: Password): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
   }

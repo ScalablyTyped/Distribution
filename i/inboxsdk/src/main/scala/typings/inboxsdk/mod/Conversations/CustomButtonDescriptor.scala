@@ -19,7 +19,8 @@ object CustomButtonDescriptor {
     __obj.asInstanceOf[CustomButtonDescriptor]
   }
   
-  extension [Self <: CustomButtonDescriptor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomButtonDescriptor] (val x: Self) extends AnyVal {
     
     inline def setIconUrl(value: String): Self = StObject.set(x, "iconUrl", value.asInstanceOf[js.Any])
     

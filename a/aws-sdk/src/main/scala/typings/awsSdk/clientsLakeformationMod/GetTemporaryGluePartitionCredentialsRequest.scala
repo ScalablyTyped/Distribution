@@ -47,7 +47,8 @@ object GetTemporaryGluePartitionCredentialsRequest {
     __obj.asInstanceOf[GetTemporaryGluePartitionCredentialsRequest]
   }
   
-  extension [Self <: GetTemporaryGluePartitionCredentialsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetTemporaryGluePartitionCredentialsRequest] (val x: Self) extends AnyVal {
     
     inline def setAuditContext(value: AuditContext): Self = StObject.set(x, "AuditContext", value.asInstanceOf[js.Any])
     

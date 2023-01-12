@@ -38,7 +38,8 @@ object CreateOTAUpdateResponse {
     __obj.asInstanceOf[CreateOTAUpdateResponse]
   }
   
-  extension [Self <: CreateOTAUpdateResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateOTAUpdateResponse] (val x: Self) extends AnyVal {
     
     inline def setAwsIotJobArn(value: AwsIotJobArn): Self = StObject.set(x, "awsIotJobArn", value.asInstanceOf[js.Any])
     

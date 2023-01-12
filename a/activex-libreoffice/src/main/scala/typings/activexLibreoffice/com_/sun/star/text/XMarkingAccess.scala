@@ -16,7 +16,8 @@ object XMarkingAccess {
     __obj.asInstanceOf[XMarkingAccess]
   }
   
-  extension [Self <: XMarkingAccess](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XMarkingAccess] (val x: Self) extends AnyVal {
     
     inline def setInvalidateMarkings(value: Double => Unit): Self = StObject.set(x, "invalidateMarkings", js.Any.fromFunction1(value))
   }

@@ -56,7 +56,8 @@ object IosApp {
     __obj.asInstanceOf[IosApp]
   }
   
-  extension [Self <: IosApp](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IosApp] (val x: Self) extends AnyVal {
     
     inline def setApiKeyId(value: String): Self = StObject.set(x, "apiKeyId", value.asInstanceOf[js.Any])
     

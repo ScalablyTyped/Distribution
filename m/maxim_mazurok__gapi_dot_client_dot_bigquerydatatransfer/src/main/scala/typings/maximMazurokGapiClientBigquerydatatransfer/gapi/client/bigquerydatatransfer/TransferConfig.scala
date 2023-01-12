@@ -89,7 +89,8 @@ object TransferConfig {
     __obj.asInstanceOf[TransferConfig]
   }
   
-  extension [Self <: TransferConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransferConfig] (val x: Self) extends AnyVal {
     
     inline def setDataRefreshWindowDays(value: Double): Self = StObject.set(x, "dataRefreshWindowDays", value.asInstanceOf[js.Any])
     

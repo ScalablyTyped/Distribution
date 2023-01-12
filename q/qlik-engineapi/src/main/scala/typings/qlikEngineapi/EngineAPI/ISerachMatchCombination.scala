@@ -26,7 +26,8 @@ object ISerachMatchCombination {
     __obj.asInstanceOf[ISerachMatchCombination]
   }
   
-  extension [Self <: ISerachMatchCombination](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISerachMatchCombination] (val x: Self) extends AnyVal {
     
     inline def setQFieldMatches(value: js.Array[ISerachFieldMatch]): Self = StObject.set(x, "qFieldMatches", value.asInstanceOf[js.Any])
     

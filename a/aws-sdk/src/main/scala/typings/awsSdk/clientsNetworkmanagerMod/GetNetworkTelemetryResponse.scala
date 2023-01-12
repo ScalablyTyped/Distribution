@@ -23,7 +23,8 @@ object GetNetworkTelemetryResponse {
     __obj.asInstanceOf[GetNetworkTelemetryResponse]
   }
   
-  extension [Self <: GetNetworkTelemetryResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetNetworkTelemetryResponse] (val x: Self) extends AnyVal {
     
     inline def setNetworkTelemetry(value: NetworkTelemetryList): Self = StObject.set(x, "NetworkTelemetry", value.asInstanceOf[js.Any])
     

@@ -64,7 +64,8 @@ object InstanceDataStorage {
     __obj.asInstanceOf[InstanceDataStorage]
   }
   
-  extension [Self <: InstanceDataStorage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InstanceDataStorage] (val x: Self) extends AnyVal {
     
     inline def setBatchCache(value: InstancesBatch): Self = StObject.set(x, "batchCache", value.asInstanceOf[js.Any])
     

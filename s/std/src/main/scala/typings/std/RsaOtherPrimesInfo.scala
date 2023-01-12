@@ -22,7 +22,8 @@ object RsaOtherPrimesInfo {
     __obj.asInstanceOf[RsaOtherPrimesInfo]
   }
   
-  extension [Self <: RsaOtherPrimesInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RsaOtherPrimesInfo] (val x: Self) extends AnyVal {
     
     inline def setD(value: java.lang.String): Self = StObject.set(x, "d", value.asInstanceOf[js.Any])
     

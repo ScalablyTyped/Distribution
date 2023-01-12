@@ -28,7 +28,8 @@ object OrdinalScale {
     __obj.asInstanceOf[OrdinalScale]
   }
   
-  extension [Self <: OrdinalScale](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OrdinalScale] (val x: Self) extends AnyVal {
     
     inline def setDomainImplicit(value: Boolean | SignalRef): Self = StObject.set(x, "domainImplicit", value.asInstanceOf[js.Any])
     

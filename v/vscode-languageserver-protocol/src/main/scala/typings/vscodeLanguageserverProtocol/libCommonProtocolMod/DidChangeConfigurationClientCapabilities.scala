@@ -18,7 +18,8 @@ object DidChangeConfigurationClientCapabilities {
     __obj.asInstanceOf[DidChangeConfigurationClientCapabilities]
   }
   
-  extension [Self <: DidChangeConfigurationClientCapabilities](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DidChangeConfigurationClientCapabilities] (val x: Self) extends AnyVal {
     
     inline def setDynamicRegistration(value: Boolean): Self = StObject.set(x, "dynamicRegistration", value.asInstanceOf[js.Any])
     

@@ -27,7 +27,8 @@ object SideInputInfo {
     __obj.asInstanceOf[SideInputInfo]
   }
   
-  extension [Self <: SideInputInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SideInputInfo] (val x: Self) extends AnyVal {
     
     inline def setKind(
       value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any

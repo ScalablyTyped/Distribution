@@ -605,7 +605,8 @@ object typesRuntimeMod {
       __obj.asInstanceOf[DefineMark[T, I, R]]
     }
     
-    extension [Self <: DefineMark[?, ?, ?], T /* <: String */, I, R /* <: String */](x: Self & (DefineMark[T, I, R])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DefineMark[?, ?, ?], T /* <: String */, I, R /* <: String */] (val x: Self & (DefineMark[T, I, R])) extends AnyVal {
       
       inline def setGroup(value: Any): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
       
@@ -640,7 +641,8 @@ object typesRuntimeMod {
       __obj.asInstanceOf[Item[T]]
     }
     
-    extension [Self <: Item[?], T](x: Self & Item[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Item[?], T] (val x: Self & Item[T]) extends AnyVal {
       
       inline def setDatum(value: T): Self = StObject.set(x, "datum", value.asInstanceOf[js.Any])
       
@@ -667,7 +669,8 @@ object typesRuntimeMod {
       __obj.asInstanceOf[LoaderOptions]
     }
     
-    extension [Self <: LoaderOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LoaderOptions] (val x: Self) extends AnyVal {
       
       inline def setBaseURL(value: String): Self = StObject.set(x, "baseURL", value.asInstanceOf[js.Any])
       
@@ -738,7 +741,8 @@ object typesRuntimeMod {
       __obj.asInstanceOf[LocaleFormatters]
     }
     
-    extension [Self <: LocaleFormatters](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LocaleFormatters] (val x: Self) extends AnyVal {
       
       inline def setFormat(value: String => NumberFormat): Self = StObject.set(x, "format", js.Any.fromFunction1(value))
       
@@ -791,7 +795,8 @@ object typesRuntimeMod {
       __obj.asInstanceOf[ToCanvasOptions]
     }
     
-    extension [Self <: ToCanvasOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ToCanvasOptions] (val x: Self) extends AnyVal {
       
       inline def setContext(value: Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
@@ -846,7 +851,8 @@ object typesRuntimeMod {
       __obj.asInstanceOf[ViewOptions]
     }
     
-    extension [Self <: ViewOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ViewOptions] (val x: Self) extends AnyVal {
       
       inline def setBackground(value: Color): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
       

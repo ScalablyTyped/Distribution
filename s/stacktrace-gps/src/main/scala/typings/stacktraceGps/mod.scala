@@ -76,7 +76,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setAjax(value: /* url */ String => js.Promise[String]): Self = StObject.set(x, "ajax", js.Any.fromFunction1(value))
       
@@ -140,7 +141,8 @@ object mod {
       __obj.asInstanceOf[StackTraceGPS]
     }
     
-    extension [Self <: StackTraceGPS](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StackTraceGPS] (val x: Self) extends AnyVal {
       
       inline def setFindFunctionName(value: typings.stackframe.mod.^ => js.Promise[typings.stackframe.mod.^]): Self = StObject.set(x, "findFunctionName", js.Any.fromFunction1(value))
       

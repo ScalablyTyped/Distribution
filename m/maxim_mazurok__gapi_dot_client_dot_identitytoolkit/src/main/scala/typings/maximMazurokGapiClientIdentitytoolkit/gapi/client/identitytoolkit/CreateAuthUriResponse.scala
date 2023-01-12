@@ -40,7 +40,8 @@ object CreateAuthUriResponse {
     __obj.asInstanceOf[CreateAuthUriResponse]
   }
   
-  extension [Self <: CreateAuthUriResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateAuthUriResponse] (val x: Self) extends AnyVal {
     
     inline def setAllProviders(value: js.Array[String]): Self = StObject.set(x, "allProviders", value.asInstanceOf[js.Any])
     

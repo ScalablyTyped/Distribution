@@ -914,7 +914,8 @@ object osMod {
       __obj.asInstanceOf[CpuInfo]
     }
     
-    extension [Self <: CpuInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CpuInfo] (val x: Self) extends AnyVal {
       
       inline def setModel(value: String): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
@@ -943,7 +944,8 @@ object osMod {
       __obj.asInstanceOf[NetworkInterfaceBase]
     }
     
-    extension [Self <: NetworkInterfaceBase](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NetworkInterfaceBase] (val x: Self) extends AnyVal {
       
       inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
@@ -993,7 +995,8 @@ object osMod {
       __obj.asInstanceOf[NetworkInterfaceInfoIPv4]
     }
     
-    extension [Self <: NetworkInterfaceInfoIPv4](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NetworkInterfaceInfoIPv4] (val x: Self) extends AnyVal {
       
       inline def setFamily(value: IPv4): Self = StObject.set(x, "family", value.asInstanceOf[js.Any])
       
@@ -1017,7 +1020,8 @@ object osMod {
       __obj.asInstanceOf[NetworkInterfaceInfoIPv6]
     }
     
-    extension [Self <: NetworkInterfaceInfoIPv6](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NetworkInterfaceInfoIPv6] (val x: Self) extends AnyVal {
       
       inline def setFamily(value: IPv6): Self = StObject.set(x, "family", value.asInstanceOf[js.Any])
       
@@ -1147,7 +1151,8 @@ object osMod {
       __obj.asInstanceOf[SignalConstants]
     }
     
-    extension [Self <: SignalConstants](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SignalConstants] (val x: Self) extends AnyVal {
       
       inline def setSIGABRT(value: Double): Self = StObject.set(x, "SIGABRT", value.asInstanceOf[js.Any])
       
@@ -1244,7 +1249,8 @@ object osMod {
       __obj.asInstanceOf[UserInfo_[T]]
     }
     
-    extension [Self <: UserInfo_[?], T](x: Self & UserInfo_[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UserInfo_[?], T] (val x: Self & UserInfo_[T]) extends AnyVal {
       
       inline def setGid(value: Double): Self = StObject.set(x, "gid", value.asInstanceOf[js.Any])
       

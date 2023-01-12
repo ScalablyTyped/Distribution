@@ -79,7 +79,8 @@ object BarItemProps {
     __obj.asInstanceOf[BarItemProps[RawDatum]]
   }
   
-  extension [Self <: BarItemProps[?], RawDatum /* <: BarDatum */](x: Self & BarItemProps[RawDatum]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BarItemProps[?], RawDatum /* <: BarDatum */] (val x: Self & BarItemProps[RawDatum]) extends AnyVal {
     
     inline def setAriaDescribedBy(value: /* data */ ComputedDatum[RawDatum] => js.UndefOr[String]): Self = StObject.set(x, "ariaDescribedBy", js.Any.fromFunction1(value))
     

@@ -33,7 +33,8 @@ object ExpectedAttributeValue {
     __obj.asInstanceOf[ExpectedAttributeValue]
   }
   
-  extension [Self <: ExpectedAttributeValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExpectedAttributeValue] (val x: Self) extends AnyVal {
     
     inline def setAttributeValueList(value: AttributeValueList): Self = StObject.set(x, "AttributeValueList", value.asInstanceOf[js.Any])
     

@@ -55,7 +55,8 @@ object MACOS {
     __obj.asInstanceOf[MACOS]
   }
   
-  extension [Self <: MACOS](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MACOS] (val x: Self) extends AnyVal {
     
     inline def setMACOS(value: Double): Self = StObject.set(x, "MACOS", value.asInstanceOf[js.Any])
     

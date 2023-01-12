@@ -28,7 +28,8 @@ object UpdateInstruction {
     __obj.asInstanceOf[UpdateInstruction]
   }
   
-  extension [Self <: UpdateInstruction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateInstruction] (val x: Self) extends AnyVal {
     
     inline def setAction(value: UpdateAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     

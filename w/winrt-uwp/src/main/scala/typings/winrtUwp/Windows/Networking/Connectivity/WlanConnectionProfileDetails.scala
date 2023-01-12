@@ -20,7 +20,8 @@ object WlanConnectionProfileDetails {
     __obj.asInstanceOf[WlanConnectionProfileDetails]
   }
   
-  extension [Self <: WlanConnectionProfileDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WlanConnectionProfileDetails] (val x: Self) extends AnyVal {
     
     inline def setGetConnectedSsid(value: () => String): Self = StObject.set(x, "getConnectedSsid", js.Any.fromFunction0(value))
   }

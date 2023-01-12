@@ -18,7 +18,8 @@ object TermvectorsTermVector {
     __obj.asInstanceOf[TermvectorsTermVector]
   }
   
-  extension [Self <: TermvectorsTermVector](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TermvectorsTermVector] (val x: Self) extends AnyVal {
     
     inline def setField_statistics(value: TermvectorsFieldStatistics): Self = StObject.set(x, "field_statistics", value.asInstanceOf[js.Any])
     

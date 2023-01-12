@@ -95,7 +95,8 @@ object libPromisePromiseMod {
       __obj.asInstanceOf[Promise]
     }
     
-    extension [Self <: Promise](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Promise] (val x: Self) extends AnyVal {
       
       inline def setCatch(value: js.Function1[/* arg0 */ Any, Any] => Promise): Self = StObject.set(x, "catch", js.Any.fromFunction1(value))
       

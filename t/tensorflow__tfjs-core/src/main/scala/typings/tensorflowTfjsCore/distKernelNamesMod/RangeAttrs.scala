@@ -23,7 +23,8 @@ object RangeAttrs {
     __obj.asInstanceOf[RangeAttrs]
   }
   
-  extension [Self <: RangeAttrs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RangeAttrs] (val x: Self) extends AnyVal {
     
     inline def setDtype(value: float32 | int32): Self = StObject.set(x, "dtype", value.asInstanceOf[js.Any])
     

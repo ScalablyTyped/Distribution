@@ -24,7 +24,8 @@ object BuildHookInput {
     __obj.asInstanceOf[BuildHookInput]
   }
   
-  extension [Self <: BuildHookInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BuildHookInput] (val x: Self) extends AnyVal {
     
     inline def setBuild(value: AngularBuildOptions | IonicAngularBuildOptions | Ionic1BuildOptions): Self = StObject.set(x, "build", value.asInstanceOf[js.Any])
     

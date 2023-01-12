@@ -20,7 +20,8 @@ object IPAMConfig {
     __obj.asInstanceOf[IPAMConfig]
   }
   
-  extension [Self <: IPAMConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPAMConfig] (val x: Self) extends AnyVal {
     
     inline def setIPv4Address(value: String): Self = StObject.set(x, "IPv4Address", value.asInstanceOf[js.Any])
     

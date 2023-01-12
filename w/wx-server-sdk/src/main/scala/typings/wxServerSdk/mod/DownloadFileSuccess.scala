@@ -18,7 +18,8 @@ object DownloadFileSuccess {
     __obj.asInstanceOf[DownloadFileSuccess]
   }
   
-  extension [Self <: DownloadFileSuccess](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DownloadFileSuccess] (val x: Self) extends AnyVal {
     
     inline def setFileContent(value: Buffer): Self = StObject.set(x, "fileContent", value.asInstanceOf[js.Any])
     

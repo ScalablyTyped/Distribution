@@ -25,7 +25,8 @@ object Auth0LockAdditionalHiddenSignUpField {
     __obj.asInstanceOf[Auth0LockAdditionalHiddenSignUpField]
   }
   
-  extension [Self <: Auth0LockAdditionalHiddenSignUpField](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Auth0LockAdditionalHiddenSignUpField] (val x: Self) extends AnyVal {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object RenewDomainResponse {
     __obj.asInstanceOf[RenewDomainResponse]
   }
   
-  extension [Self <: RenewDomainResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RenewDomainResponse] (val x: Self) extends AnyVal {
     
     inline def setOperationId(value: OperationId): Self = StObject.set(x, "OperationId", value.asInstanceOf[js.Any])
   }

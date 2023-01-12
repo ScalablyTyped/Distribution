@@ -83,7 +83,8 @@ object CreateDocumentClassifierRequest {
     __obj.asInstanceOf[CreateDocumentClassifierRequest]
   }
   
-  extension [Self <: CreateDocumentClassifierRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateDocumentClassifierRequest] (val x: Self) extends AnyVal {
     
     inline def setClientRequestToken(value: ClientRequestTokenString): Self = StObject.set(x, "ClientRequestToken", value.asInstanceOf[js.Any])
     

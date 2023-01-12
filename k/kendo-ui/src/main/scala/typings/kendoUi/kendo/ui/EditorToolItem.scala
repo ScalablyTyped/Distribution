@@ -19,7 +19,8 @@ object EditorToolItem {
     __obj.asInstanceOf[EditorToolItem]
   }
   
-  extension [Self <: EditorToolItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EditorToolItem] (val x: Self) extends AnyVal {
     
     inline def setContext(value: String): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     

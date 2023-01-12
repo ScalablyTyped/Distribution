@@ -16,7 +16,8 @@ object ThemeWrapperProps {
     __obj.asInstanceOf[ThemeWrapperProps]
   }
   
-  extension [Self <: ThemeWrapperProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ThemeWrapperProps] (val x: Self) extends AnyVal {
     
     inline def setTheme(value: MuiTheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
   }

@@ -33,7 +33,8 @@ object CloseBLEConnectionOptions {
     __obj.asInstanceOf[CloseBLEConnectionOptions]
   }
   
-  extension [Self <: CloseBLEConnectionOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CloseBLEConnectionOptions] (val x: Self) extends AnyVal {
     
     inline def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
     

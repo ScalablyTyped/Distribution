@@ -20,7 +20,8 @@ object GriddleStyleConfig {
     __obj.asInstanceOf[GriddleStyleConfig]
   }
   
-  extension [Self <: GriddleStyleConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GriddleStyleConfig] (val x: Self) extends AnyVal {
     
     inline def setClassNames(value: GriddleStyleElements[String]): Self = StObject.set(x, "classNames", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object PhoneCallHistoryEntryReader {
     __obj.asInstanceOf[PhoneCallHistoryEntryReader]
   }
   
-  extension [Self <: PhoneCallHistoryEntryReader](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PhoneCallHistoryEntryReader] (val x: Self) extends AnyVal {
     
     inline def setReadBatchAsync(value: () => IPromiseWithIAsyncOperation[IVectorView[Any]]): Self = StObject.set(x, "readBatchAsync", js.Any.fromFunction0(value))
   }

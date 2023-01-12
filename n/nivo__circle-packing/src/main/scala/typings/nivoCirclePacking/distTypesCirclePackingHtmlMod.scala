@@ -120,7 +120,8 @@ object distTypesCirclePackingHtmlMod {
       __obj.asInstanceOf[InnerCirclePackingHtmlProps[RawDatum]]
     }
     
-    extension [Self <: InnerCirclePackingHtmlProps[?], RawDatum](x: Self & InnerCirclePackingHtmlProps[RawDatum]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InnerCirclePackingHtmlProps[?], RawDatum] (val x: Self & InnerCirclePackingHtmlProps[RawDatum]) extends AnyVal {
       
       inline def setBorderColor(value: InheritedColorConfig[ComputedDatum[RawDatum]]): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
       

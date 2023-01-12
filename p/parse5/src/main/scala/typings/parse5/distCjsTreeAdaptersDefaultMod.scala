@@ -95,7 +95,8 @@ object distCjsTreeAdaptersDefaultMod {
       __obj.asInstanceOf[CommentNode]
     }
     
-    extension [Self <: CommentNode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommentNode] (val x: Self) extends AnyVal {
       
       inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -152,7 +153,8 @@ object distCjsTreeAdaptersDefaultMod {
       __obj.asInstanceOf[Document]
     }
     
-    extension [Self <: Document](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Document] (val x: Self) extends AnyVal {
       
       inline def setChildNodes(value: js.Array[ChildNode]): Self = StObject.set(x, "childNodes", value.asInstanceOf[js.Any])
       
@@ -190,7 +192,8 @@ object distCjsTreeAdaptersDefaultMod {
       __obj.asInstanceOf[DocumentFragment]
     }
     
-    extension [Self <: DocumentFragment](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DocumentFragment] (val x: Self) extends AnyVal {
       
       inline def setChildNodes(value: js.Array[ChildNode]): Self = StObject.set(x, "childNodes", value.asInstanceOf[js.Any])
       
@@ -235,7 +238,8 @@ object distCjsTreeAdaptersDefaultMod {
       __obj.asInstanceOf[DocumentType]
     }
     
-    extension [Self <: DocumentType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DocumentType] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -296,7 +300,8 @@ object distCjsTreeAdaptersDefaultMod {
       __obj.asInstanceOf[Element]
     }
     
-    extension [Self <: Element](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Element] (val x: Self) extends AnyVal {
       
       inline def setAttrs(value: js.Array[Attribute]): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
       
@@ -449,7 +454,8 @@ object distCjsTreeAdaptersDefaultMod {
       __obj.asInstanceOf[Template]
     }
     
-    extension [Self <: Template](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Template] (val x: Self) extends AnyVal {
       
       inline def setContent(value: DocumentFragment): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
@@ -481,7 +487,8 @@ object distCjsTreeAdaptersDefaultMod {
       __obj.asInstanceOf[TextNode]
     }
     
-    extension [Self <: TextNode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TextNode] (val x: Self) extends AnyVal {
       
       inline def setNodeName(value: Numbersigntext): Self = StObject.set(x, "nodeName", value.asInstanceOf[js.Any])
       

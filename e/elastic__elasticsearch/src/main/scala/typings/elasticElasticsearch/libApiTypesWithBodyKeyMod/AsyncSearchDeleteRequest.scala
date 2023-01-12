@@ -17,7 +17,8 @@ object AsyncSearchDeleteRequest {
     __obj.asInstanceOf[AsyncSearchDeleteRequest]
   }
   
-  extension [Self <: AsyncSearchDeleteRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AsyncSearchDeleteRequest] (val x: Self) extends AnyVal {
     
     inline def setId(value: Id): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
   }

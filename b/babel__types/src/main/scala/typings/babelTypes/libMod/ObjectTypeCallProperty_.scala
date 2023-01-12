@@ -27,7 +27,8 @@ object ObjectTypeCallProperty_ {
     __obj.asInstanceOf[ObjectTypeCallProperty_]
   }
   
-  extension [Self <: ObjectTypeCallProperty_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ObjectTypeCallProperty_] (val x: Self) extends AnyVal {
     
     inline def setStatic(value: Boolean): Self = StObject.set(x, "static", value.asInstanceOf[js.Any])
     

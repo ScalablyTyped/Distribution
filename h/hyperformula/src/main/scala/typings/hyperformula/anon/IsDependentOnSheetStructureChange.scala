@@ -29,7 +29,8 @@ object IsDependentOnSheetStructureChange {
     __obj.asInstanceOf[IsDependentOnSheetStructureChange]
   }
   
-  extension [Self <: IsDependentOnSheetStructureChange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IsDependentOnSheetStructureChange] (val x: Self) extends AnyVal {
     
     inline def setDoesNotNeedArgumentsToBeComputed(value: Boolean): Self = StObject.set(x, "doesNotNeedArgumentsToBeComputed", value.asInstanceOf[js.Any])
     

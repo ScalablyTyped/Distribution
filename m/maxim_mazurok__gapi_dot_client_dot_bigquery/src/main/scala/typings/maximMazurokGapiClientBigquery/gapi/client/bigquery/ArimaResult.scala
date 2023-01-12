@@ -19,7 +19,8 @@ object ArimaResult {
     __obj.asInstanceOf[ArimaResult]
   }
   
-  extension [Self <: ArimaResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ArimaResult] (val x: Self) extends AnyVal {
     
     inline def setArimaModelInfo(value: js.Array[ArimaModelInfo]): Self = StObject.set(x, "arimaModelInfo", value.asInstanceOf[js.Any])
     

@@ -77,7 +77,8 @@ object CanvasProps {
     __obj.asInstanceOf[CanvasProps[RawDatum]]
   }
   
-  extension [Self <: CanvasProps[?], RawDatum /* <: Datum */](x: Self & CanvasProps[RawDatum]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CanvasProps[?], RawDatum /* <: Datum */] (val x: Self & CanvasProps[RawDatum]) extends AnyVal {
     
     inline def setBorderColor(value: InheritedColorConfig[Cell[RawDatum]]): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
     

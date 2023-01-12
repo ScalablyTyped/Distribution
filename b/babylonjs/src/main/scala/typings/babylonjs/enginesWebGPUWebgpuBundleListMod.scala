@@ -146,7 +146,8 @@ object enginesWebGPUWebgpuBundleListMod {
       __obj.asInstanceOf[IWebGPURenderItem]
     }
     
-    extension [Self <: IWebGPURenderItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IWebGPURenderItem] (val x: Self) extends AnyVal {
       
       inline def setRun(value: GPURenderPassEncoder => Unit): Self = StObject.set(x, "run", js.Any.fromFunction1(value))
     }

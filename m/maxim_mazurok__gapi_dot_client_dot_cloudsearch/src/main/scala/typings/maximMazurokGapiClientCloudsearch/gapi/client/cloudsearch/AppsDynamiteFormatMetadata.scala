@@ -22,7 +22,8 @@ object AppsDynamiteFormatMetadata {
     __obj.asInstanceOf[AppsDynamiteFormatMetadata]
   }
   
-  extension [Self <: AppsDynamiteFormatMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppsDynamiteFormatMetadata] (val x: Self) extends AnyVal {
     
     inline def setFontColor(value: Double): Self = StObject.set(x, "fontColor", value.asInstanceOf[js.Any])
     

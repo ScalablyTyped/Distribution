@@ -32,7 +32,8 @@ object IWeatherChangedEventData {
     __obj.asInstanceOf[IWeatherChangedEventData]
   }
   
-  extension [Self <: IWeatherChangedEventData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IWeatherChangedEventData] (val x: Self) extends AnyVal {
     
     inline def setDimension(value: Dimension): Self = StObject.set(x, "dimension", value.asInstanceOf[js.Any])
     

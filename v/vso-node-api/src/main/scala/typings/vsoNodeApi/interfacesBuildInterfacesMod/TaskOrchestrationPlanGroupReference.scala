@@ -23,7 +23,8 @@ object TaskOrchestrationPlanGroupReference {
     __obj.asInstanceOf[TaskOrchestrationPlanGroupReference]
   }
   
-  extension [Self <: TaskOrchestrationPlanGroupReference](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TaskOrchestrationPlanGroupReference] (val x: Self) extends AnyVal {
     
     inline def setPlanGroup(value: String): Self = StObject.set(x, "planGroup", value.asInstanceOf[js.Any])
     

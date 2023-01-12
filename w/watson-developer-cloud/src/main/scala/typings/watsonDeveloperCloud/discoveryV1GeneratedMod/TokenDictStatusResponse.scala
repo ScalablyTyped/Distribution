@@ -20,7 +20,8 @@ object TokenDictStatusResponse {
     __obj.asInstanceOf[TokenDictStatusResponse]
   }
   
-  extension [Self <: TokenDictStatusResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TokenDictStatusResponse] (val x: Self) extends AnyVal {
     
     inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     

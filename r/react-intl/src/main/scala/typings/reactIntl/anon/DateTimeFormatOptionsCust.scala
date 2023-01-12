@@ -107,7 +107,8 @@ object DateTimeFormatOptionsCust {
     __obj.asInstanceOf[DateTimeFormatOptionsCust]
   }
   
-  extension [Self <: DateTimeFormatOptionsCust](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DateTimeFormatOptionsCust] (val x: Self) extends AnyVal {
     
     inline def setCalendar(value: String): Self = StObject.set(x, "calendar", value.asInstanceOf[js.Any])
     

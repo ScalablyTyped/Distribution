@@ -108,7 +108,8 @@ object mod {
       __obj.asInstanceOf[DiffOptions]
     }
     
-    extension [Self <: DiffOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DiffOptions] (val x: Self) extends AnyVal {
       
       inline def setAAnnotation(value: String): Self = StObject.set(x, "aAnnotation", value.asInstanceOf[js.Any])
       

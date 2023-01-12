@@ -22,7 +22,8 @@ object anon {
       __obj.asInstanceOf[`0`]
     }
     
-    extension [Self <: `0`](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: `0`] (val x: Self) extends AnyVal {
       
       inline def setTheme(value: typings.emotionReact.mod.Theme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       
@@ -43,7 +44,8 @@ object anon {
       __obj.asInstanceOf[As]
     }
     
-    extension [Self <: As](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: As] (val x: Self) extends AnyVal {
       
       inline def setAs(value: ElementType[Any]): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
@@ -66,7 +68,8 @@ object anon {
       __obj.asInstanceOf[Ref[C]]
     }
     
-    extension [Self <: Ref[?], C /* <: ComponentClass[ComponentProps[C], ComponentState] */](x: Self & Ref[C]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Ref[?], C /* <: ComponentClass[ComponentProps[C], ComponentState] */] (val x: Self & Ref[C]) extends AnyVal {
       
       inline def setRef(value: typings.react.mod.Ref[InstanceType[C]]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
       
@@ -89,7 +92,8 @@ object anon {
       __obj.asInstanceOf[Theme]
     }
     
-    extension [Self <: Theme](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Theme] (val x: Self) extends AnyVal {
       
       inline def setTheme(value: typings.emotionReact.mod.Theme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     }

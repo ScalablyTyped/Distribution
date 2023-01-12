@@ -23,7 +23,8 @@ object PushSync {
     __obj.asInstanceOf[PushSync]
   }
   
-  extension [Self <: PushSync](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PushSync] (val x: Self) extends AnyVal {
     
     inline def setApplicationArns(value: ApplicationArnList): Self = StObject.set(x, "ApplicationArns", value.asInstanceOf[js.Any])
     

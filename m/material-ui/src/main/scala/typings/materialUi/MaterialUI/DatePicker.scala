@@ -91,7 +91,8 @@ object DatePicker {
       __obj.asInstanceOf[DatePickerDialogProps]
     }
     
-    extension [Self <: DatePickerDialogProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DatePickerDialogProps] (val x: Self) extends AnyVal {
       
       inline def setAnimation(value: ComponentClass[PopoverAnimationProps, ComponentState]): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
       
@@ -279,7 +280,8 @@ object DatePicker {
       __obj.asInstanceOf[DatePickerProps]
     }
     
-    extension [Self <: DatePickerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DatePickerProps] (val x: Self) extends AnyVal {
       
       inline def setAutoOk(value: Boolean): Self = StObject.set(x, "autoOk", value.asInstanceOf[js.Any])
       

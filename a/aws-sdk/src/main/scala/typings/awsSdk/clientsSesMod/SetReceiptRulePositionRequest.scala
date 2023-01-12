@@ -28,7 +28,8 @@ object SetReceiptRulePositionRequest {
     __obj.asInstanceOf[SetReceiptRulePositionRequest]
   }
   
-  extension [Self <: SetReceiptRulePositionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetReceiptRulePositionRequest] (val x: Self) extends AnyVal {
     
     inline def setAfter(value: ReceiptRuleName): Self = StObject.set(x, "After", value.asInstanceOf[js.Any])
     

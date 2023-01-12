@@ -25,7 +25,8 @@ object IndicesStatsShardFileSizeInfo {
     __obj.asInstanceOf[IndicesStatsShardFileSizeInfo]
   }
   
-  extension [Self <: IndicesStatsShardFileSizeInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndicesStatsShardFileSizeInfo] (val x: Self) extends AnyVal {
     
     inline def setAverage_size_in_bytes(value: long): Self = StObject.set(x, "average_size_in_bytes", value.asInstanceOf[js.Any])
     

@@ -50,7 +50,8 @@ object anon {
       __obj.asInstanceOf[Absorbsinput]
     }
     
-    extension [Self <: Absorbsinput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Absorbsinput] (val x: Self) extends AnyVal {
       
       inline def setAbsorbs_input(value: Boolean): Self = StObject.set(x, "absorbs_input", value.asInstanceOf[js.Any])
       

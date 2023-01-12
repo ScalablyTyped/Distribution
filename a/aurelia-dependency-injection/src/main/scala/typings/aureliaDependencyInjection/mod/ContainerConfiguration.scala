@@ -20,7 +20,8 @@ object ContainerConfiguration {
     __obj.asInstanceOf[ContainerConfiguration]
   }
   
-  extension [Self <: ContainerConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContainerConfiguration] (val x: Self) extends AnyVal {
     
     inline def setHandlers(value: Map[Any, Any]): Self = StObject.set(x, "handlers", value.asInstanceOf[js.Any])
     

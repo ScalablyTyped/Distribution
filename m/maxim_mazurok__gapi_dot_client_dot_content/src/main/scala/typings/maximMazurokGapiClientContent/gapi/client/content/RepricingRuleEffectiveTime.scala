@@ -16,7 +16,8 @@ object RepricingRuleEffectiveTime {
     __obj.asInstanceOf[RepricingRuleEffectiveTime]
   }
   
-  extension [Self <: RepricingRuleEffectiveTime](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RepricingRuleEffectiveTime] (val x: Self) extends AnyVal {
     
     inline def setFixedTimePeriods(value: js.Array[RepricingRuleEffectiveTimeFixedTimePeriod]): Self = StObject.set(x, "fixedTimePeriods", value.asInstanceOf[js.Any])
     

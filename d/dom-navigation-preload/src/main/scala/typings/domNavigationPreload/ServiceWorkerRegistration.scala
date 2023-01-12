@@ -16,7 +16,8 @@ object ServiceWorkerRegistration {
     __obj.asInstanceOf[ServiceWorkerRegistration]
   }
   
-  extension [Self <: ServiceWorkerRegistration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServiceWorkerRegistration] (val x: Self) extends AnyVal {
     
     inline def setNavigationPreload(value: NavigationPreloadManager): Self = StObject.set(x, "navigationPreload", value.asInstanceOf[js.Any])
   }

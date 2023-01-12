@@ -33,7 +33,8 @@ object mod {
       __obj.asInstanceOf[MultiRef[K, V]]
     }
     
-    extension [Self <: MultiRef[?, ?], K, V](x: Self & (MultiRef[K, V])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MultiRef[?, ?], K, V] (val x: Self & (MultiRef[K, V])) extends AnyVal {
       
       inline def setMap(value: Map[K, V]): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
       

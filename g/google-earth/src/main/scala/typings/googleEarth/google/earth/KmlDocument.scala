@@ -77,7 +77,8 @@ object KmlDocument {
     __obj.asInstanceOf[KmlDocument]
   }
   
-  extension [Self <: KmlDocument](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KmlDocument] (val x: Self) extends AnyVal {
     
     inline def setGetElementsByStyleUrl(value: String => KmlObjectList[KmlObject]): Self = StObject.set(x, "getElementsByStyleUrl", js.Any.fromFunction1(value))
     

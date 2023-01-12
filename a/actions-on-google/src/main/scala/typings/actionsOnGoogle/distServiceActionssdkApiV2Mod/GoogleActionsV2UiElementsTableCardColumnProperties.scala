@@ -24,7 +24,8 @@ object GoogleActionsV2UiElementsTableCardColumnProperties {
     __obj.asInstanceOf[GoogleActionsV2UiElementsTableCardColumnProperties]
   }
   
-  extension [Self <: GoogleActionsV2UiElementsTableCardColumnProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleActionsV2UiElementsTableCardColumnProperties] (val x: Self) extends AnyVal {
     
     inline def setHeader(value: String): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
     

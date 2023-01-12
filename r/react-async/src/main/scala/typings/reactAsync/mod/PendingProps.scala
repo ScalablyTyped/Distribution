@@ -18,7 +18,8 @@ object PendingProps {
     __obj.asInstanceOf[PendingProps[T]]
   }
   
-  extension [Self <: PendingProps[?], T](x: Self & PendingProps[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PendingProps[?], T] (val x: Self & PendingProps[T]) extends AnyVal {
     
     inline def setChildren(value: PendingChildren[T]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

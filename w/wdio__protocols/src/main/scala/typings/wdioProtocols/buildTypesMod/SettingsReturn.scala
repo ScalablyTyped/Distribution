@@ -47,7 +47,8 @@ object SettingsReturn {
     __obj.asInstanceOf[SettingsReturn]
   }
   
-  extension [Self <: SettingsReturn](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SettingsReturn] (val x: Self) extends AnyVal {
     
     inline def setActionAcknowledgmentTimeout(value: Double): Self = StObject.set(x, "actionAcknowledgmentTimeout", value.asInstanceOf[js.Any])
     

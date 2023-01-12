@@ -43,7 +43,8 @@ object NetworkRouteDestination {
     __obj.asInstanceOf[NetworkRouteDestination]
   }
   
-  extension [Self <: NetworkRouteDestination](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NetworkRouteDestination] (val x: Self) extends AnyVal {
     
     inline def setCoreNetworkAttachmentId(value: AttachmentId): Self = StObject.set(x, "CoreNetworkAttachmentId", value.asInstanceOf[js.Any])
     

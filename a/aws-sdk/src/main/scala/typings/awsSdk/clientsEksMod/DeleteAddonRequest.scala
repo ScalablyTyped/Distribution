@@ -28,7 +28,8 @@ object DeleteAddonRequest {
     __obj.asInstanceOf[DeleteAddonRequest]
   }
   
-  extension [Self <: DeleteAddonRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteAddonRequest] (val x: Self) extends AnyVal {
     
     inline def setAddonName(value: String): Self = StObject.set(x, "addonName", value.asInstanceOf[js.Any])
     

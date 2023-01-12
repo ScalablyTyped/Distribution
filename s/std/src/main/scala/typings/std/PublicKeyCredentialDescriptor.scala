@@ -23,7 +23,8 @@ object PublicKeyCredentialDescriptor {
     __obj.asInstanceOf[PublicKeyCredentialDescriptor]
   }
   
-  extension [Self <: PublicKeyCredentialDescriptor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PublicKeyCredentialDescriptor] (val x: Self) extends AnyVal {
     
     inline def setId(value: BufferSource): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

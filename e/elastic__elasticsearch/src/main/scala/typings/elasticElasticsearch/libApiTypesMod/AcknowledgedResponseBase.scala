@@ -15,7 +15,8 @@ object AcknowledgedResponseBase {
     __obj.asInstanceOf[AcknowledgedResponseBase]
   }
   
-  extension [Self <: AcknowledgedResponseBase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AcknowledgedResponseBase] (val x: Self) extends AnyVal {
     
     inline def setAcknowledged(value: Boolean): Self = StObject.set(x, "acknowledged", value.asInstanceOf[js.Any])
   }

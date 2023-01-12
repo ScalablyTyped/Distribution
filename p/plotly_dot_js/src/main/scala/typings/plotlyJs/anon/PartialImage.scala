@@ -54,7 +54,8 @@ object PartialImage {
     __obj.asInstanceOf[PartialImage]
   }
   
-  extension [Self <: PartialImage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialImage] (val x: Self) extends AnyVal {
     
     inline def setLayer(value: above | below): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
     

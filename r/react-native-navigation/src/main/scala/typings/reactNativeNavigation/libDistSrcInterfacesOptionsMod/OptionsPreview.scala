@@ -42,7 +42,8 @@ object OptionsPreview {
     __obj.asInstanceOf[OptionsPreview]
   }
   
-  extension [Self <: OptionsPreview](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OptionsPreview] (val x: Self) extends AnyVal {
     
     inline def setActions(value: js.Array[OptionsPreviewAction]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     

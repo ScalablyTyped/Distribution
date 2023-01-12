@@ -21,7 +21,8 @@ object IfClause {
     __obj.asInstanceOf[IfClause]
   }
   
-  extension [Self <: IfClause](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IfClause] (val x: Self) extends AnyVal {
     
     inline def setBody(value: js.Array[Statement]): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

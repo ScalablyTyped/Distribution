@@ -23,7 +23,8 @@ object Authentication {
     __obj.asInstanceOf[Authentication]
   }
   
-  extension [Self <: Authentication](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Authentication] (val x: Self) extends AnyVal {
     
     inline def setPasswordCount(value: IntegerOptional): Self = StObject.set(x, "PasswordCount", value.asInstanceOf[js.Any])
     

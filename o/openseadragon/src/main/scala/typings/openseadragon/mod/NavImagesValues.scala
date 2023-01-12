@@ -21,7 +21,8 @@ object NavImagesValues {
     __obj.asInstanceOf[NavImagesValues]
   }
   
-  extension [Self <: NavImagesValues](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NavImagesValues] (val x: Self) extends AnyVal {
     
     inline def setDOWN(value: String): Self = StObject.set(x, "DOWN", value.asInstanceOf[js.Any])
     

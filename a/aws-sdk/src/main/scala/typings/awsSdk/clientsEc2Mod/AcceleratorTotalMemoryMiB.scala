@@ -23,7 +23,8 @@ object AcceleratorTotalMemoryMiB {
     __obj.asInstanceOf[AcceleratorTotalMemoryMiB]
   }
   
-  extension [Self <: AcceleratorTotalMemoryMiB](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AcceleratorTotalMemoryMiB] (val x: Self) extends AnyVal {
     
     inline def setMax(value: Integer): Self = StObject.set(x, "Max", value.asInstanceOf[js.Any])
     

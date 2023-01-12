@@ -78,7 +78,8 @@ object KeyPhrasesDetectionJobProperties {
     __obj.asInstanceOf[KeyPhrasesDetectionJobProperties]
   }
   
-  extension [Self <: KeyPhrasesDetectionJobProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KeyPhrasesDetectionJobProperties] (val x: Self) extends AnyVal {
     
     inline def setDataAccessRoleArn(value: IamRoleArn): Self = StObject.set(x, "DataAccessRoleArn", value.asInstanceOf[js.Any])
     

@@ -92,7 +92,8 @@ object MediaFlags {
     __obj.asInstanceOf[MediaFlags]
   }
   
-  extension [Self <: MediaFlags](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MediaFlags] (val x: Self) extends AnyVal {
     
     inline def setCanLoop(value: Boolean): Self = StObject.set(x, "canLoop", value.asInstanceOf[js.Any])
     

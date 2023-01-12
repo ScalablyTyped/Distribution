@@ -28,7 +28,8 @@ object CreateEnvironmentResponse {
     __obj.asInstanceOf[CreateEnvironmentResponse]
   }
   
-  extension [Self <: CreateEnvironmentResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateEnvironmentResponse] (val x: Self) extends AnyVal {
     
     inline def setEnvironmentArn(value: EnvironmentArn): Self = StObject.set(x, "environmentArn", value.asInstanceOf[js.Any])
     

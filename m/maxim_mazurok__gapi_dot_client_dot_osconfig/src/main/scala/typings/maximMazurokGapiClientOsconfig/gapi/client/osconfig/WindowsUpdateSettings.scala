@@ -22,7 +22,8 @@ object WindowsUpdateSettings {
     __obj.asInstanceOf[WindowsUpdateSettings]
   }
   
-  extension [Self <: WindowsUpdateSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WindowsUpdateSettings] (val x: Self) extends AnyVal {
     
     inline def setClassifications(value: js.Array[String]): Self = StObject.set(x, "classifications", value.asInstanceOf[js.Any])
     

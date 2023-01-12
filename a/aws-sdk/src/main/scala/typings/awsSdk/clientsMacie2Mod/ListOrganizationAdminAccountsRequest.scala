@@ -23,7 +23,8 @@ object ListOrganizationAdminAccountsRequest {
     __obj.asInstanceOf[ListOrganizationAdminAccountsRequest]
   }
   
-  extension [Self <: ListOrganizationAdminAccountsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListOrganizationAdminAccountsRequest] (val x: Self) extends AnyVal {
     
     inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     

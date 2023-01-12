@@ -33,7 +33,8 @@ object BouncedRecipientInfo {
     __obj.asInstanceOf[BouncedRecipientInfo]
   }
   
-  extension [Self <: BouncedRecipientInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BouncedRecipientInfo] (val x: Self) extends AnyVal {
     
     inline def setBounceType(value: BounceType): Self = StObject.set(x, "BounceType", value.asInstanceOf[js.Any])
     

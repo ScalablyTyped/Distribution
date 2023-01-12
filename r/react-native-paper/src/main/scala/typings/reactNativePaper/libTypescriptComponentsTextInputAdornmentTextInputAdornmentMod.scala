@@ -65,7 +65,8 @@ object libTypescriptComponentsTextInputAdornmentTextInputAdornmentMod {
       __obj.asInstanceOf[TextInputAdornmentProps]
     }
     
-    extension [Self <: TextInputAdornmentProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TextInputAdornmentProps] (val x: Self) extends AnyVal {
       
       inline def setAdornmentConfig(value: js.Array[AdornmentConfig]): Self = StObject.set(x, "adornmentConfig", value.asInstanceOf[js.Any])
       

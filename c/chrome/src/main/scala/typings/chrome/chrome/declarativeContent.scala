@@ -41,7 +41,8 @@ object declarativeContent {
       __obj.asInstanceOf[PageStateMatcherProperties]
     }
     
-    extension [Self <: PageStateMatcherProperties](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PageStateMatcherProperties] (val x: Self) extends AnyVal {
       
       inline def setCss(value: js.Array[String]): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
       
@@ -128,7 +129,8 @@ object declarativeContent {
       __obj.asInstanceOf[PageStateUrlDetails]
     }
     
-    extension [Self <: PageStateUrlDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PageStateUrlDetails] (val x: Self) extends AnyVal {
       
       inline def setHostContains(value: String): Self = StObject.set(x, "hostContains", value.asInstanceOf[js.Any])
       

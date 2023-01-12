@@ -23,7 +23,8 @@ object ClusterVersionsMessage {
     __obj.asInstanceOf[ClusterVersionsMessage]
   }
   
-  extension [Self <: ClusterVersionsMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClusterVersionsMessage] (val x: Self) extends AnyVal {
     
     inline def setClusterVersions(value: ClusterVersionList): Self = StObject.set(x, "ClusterVersions", value.asInstanceOf[js.Any])
     

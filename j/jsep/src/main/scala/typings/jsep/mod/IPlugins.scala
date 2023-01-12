@@ -18,7 +18,8 @@ object IPlugins {
     __obj.asInstanceOf[IPlugins]
   }
   
-  extension [Self <: IPlugins](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPlugins] (val x: Self) extends AnyVal {
     
     inline def setRegister(value: /* repeated */ IPlugin => Unit): Self = StObject.set(x, "register", js.Any.fromFunction1(value))
     

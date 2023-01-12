@@ -20,7 +20,8 @@ object EditingInfo {
     __obj.asInstanceOf[EditingInfo]
   }
   
-  extension [Self <: EditingInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EditingInfo] (val x: Self) extends AnyVal {
     
     inline def setLastEditDate(value: js.Date): Self = StObject.set(x, "lastEditDate", value.asInstanceOf[js.Any])
   }

@@ -18,7 +18,8 @@ object Passphrase {
     __obj.asInstanceOf[Passphrase]
   }
   
-  extension [Self <: Passphrase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Passphrase] (val x: Self) extends AnyVal {
     
     inline def setPassphrase(value: String): Self = StObject.set(x, "passphrase", value.asInstanceOf[js.Any])
     

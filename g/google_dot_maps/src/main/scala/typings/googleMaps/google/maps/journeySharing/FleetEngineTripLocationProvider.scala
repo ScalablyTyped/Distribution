@@ -31,7 +31,8 @@ object FleetEngineTripLocationProvider {
     __obj.asInstanceOf[FleetEngineTripLocationProvider]
   }
   
-  extension [Self <: FleetEngineTripLocationProvider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FleetEngineTripLocationProvider] (val x: Self) extends AnyVal {
     
     inline def setRefresh(value: () => Unit): Self = StObject.set(x, "refresh", js.Any.fromFunction0(value))
     

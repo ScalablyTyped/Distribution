@@ -15,7 +15,8 @@ object RecipientProofFile {
     __obj.asInstanceOf[RecipientProofFile]
   }
   
-  extension [Self <: RecipientProofFile](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecipientProofFile] (val x: Self) extends AnyVal {
     
     inline def setIsInProofFile(value: String): Self = StObject.set(x, "isInProofFile", value.asInstanceOf[js.Any])
     

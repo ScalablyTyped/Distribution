@@ -24,7 +24,8 @@ object buildSrcResolveMod {
       __obj.asInstanceOf[AxisResolveMap]
     }
     
-    extension [Self <: AxisResolveMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AxisResolveMap] (val x: Self) extends AnyVal {
       
       inline def setX(value: ResolveMode): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
@@ -53,7 +54,8 @@ object buildSrcResolveMod {
       __obj.asInstanceOf[Resolve]
     }
     
-    extension [Self <: Resolve](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Resolve] (val x: Self) extends AnyVal {
       
       inline def setAxis(value: AxisResolveMap): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
       

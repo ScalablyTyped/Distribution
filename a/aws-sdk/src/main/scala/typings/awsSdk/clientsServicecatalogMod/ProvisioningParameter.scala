@@ -23,7 +23,8 @@ object ProvisioningParameter {
     __obj.asInstanceOf[ProvisioningParameter]
   }
   
-  extension [Self <: ProvisioningParameter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProvisioningParameter] (val x: Self) extends AnyVal {
     
     inline def setKey(value: ParameterKey): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
     

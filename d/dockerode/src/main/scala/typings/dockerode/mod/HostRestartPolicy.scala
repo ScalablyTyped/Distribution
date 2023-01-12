@@ -17,7 +17,8 @@ object HostRestartPolicy {
     __obj.asInstanceOf[HostRestartPolicy]
   }
   
-  extension [Self <: HostRestartPolicy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HostRestartPolicy] (val x: Self) extends AnyVal {
     
     inline def setMaximumRetryCount(value: Double): Self = StObject.set(x, "MaximumRetryCount", value.asInstanceOf[js.Any])
     

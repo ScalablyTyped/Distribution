@@ -23,7 +23,8 @@ object ModelViewDashboardOptions {
     __obj.asInstanceOf[ModelViewDashboardOptions]
   }
   
-  extension [Self <: ModelViewDashboardOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModelViewDashboardOptions] (val x: Self) extends AnyVal {
     
     inline def setAlwaysShowTabs(value: Boolean): Self = StObject.set(x, "alwaysShowTabs", value.asInstanceOf[js.Any])
     

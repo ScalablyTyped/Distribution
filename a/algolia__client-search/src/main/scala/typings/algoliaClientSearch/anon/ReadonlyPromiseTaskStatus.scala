@@ -28,7 +28,8 @@ object ReadonlyPromiseTaskStatus {
     __obj.asInstanceOf[ReadonlyPromiseTaskStatus]
   }
   
-  extension [Self <: ReadonlyPromiseTaskStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadonlyPromiseTaskStatus] (val x: Self) extends AnyVal {
     
     inline def setCatch(value: () => js.Promise[TaskStatusResponse | Any]): Self = StObject.set(x, "catch", js.Any.fromFunction0(value))
     

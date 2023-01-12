@@ -19,7 +19,8 @@ object IndicesRecoveryFileDetails {
     __obj.asInstanceOf[IndicesRecoveryFileDetails]
   }
   
-  extension [Self <: IndicesRecoveryFileDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndicesRecoveryFileDetails] (val x: Self) extends AnyVal {
     
     inline def setLength(value: long): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     

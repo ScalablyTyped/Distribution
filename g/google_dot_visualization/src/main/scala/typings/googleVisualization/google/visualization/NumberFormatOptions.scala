@@ -54,7 +54,8 @@ object NumberFormatOptions {
     __obj.asInstanceOf[NumberFormatOptions]
   }
   
-  extension [Self <: NumberFormatOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NumberFormatOptions] (val x: Self) extends AnyVal {
     
     inline def setDecimalSymbol(value: String): Self = StObject.set(x, "decimalSymbol", value.asInstanceOf[js.Any])
     

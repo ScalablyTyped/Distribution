@@ -19,7 +19,8 @@ object ProcessId {
     __obj.asInstanceOf[ProcessId]
   }
   
-  extension [Self <: ProcessId](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProcessId] (val x: Self) extends AnyVal {
     
     inline def setProcessId(value: Double): Self = StObject.set(x, "processId", value.asInstanceOf[js.Any])
     

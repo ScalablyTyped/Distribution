@@ -17,7 +17,8 @@ object Legacytemplatetodelete {
     __obj.asInstanceOf[Legacytemplatetodelete]
   }
   
-  extension [Self <: Legacytemplatetodelete](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Legacytemplatetodelete] (val x: Self) extends AnyVal {
     
     inline def setLegacy_template_to_delete(value: String): Self = StObject.set(x, "legacy_template_to_delete", value.asInstanceOf[js.Any])
     

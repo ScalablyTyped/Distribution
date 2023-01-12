@@ -20,7 +20,8 @@ object PartialWaitUntilOptions {
     __obj.asInstanceOf[PartialWaitUntilOptions]
   }
   
-  extension [Self <: PartialWaitUntilOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialWaitUntilOptions] (val x: Self) extends AnyVal {
     
     inline def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
     

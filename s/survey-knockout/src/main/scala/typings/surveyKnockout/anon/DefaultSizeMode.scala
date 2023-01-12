@@ -38,7 +38,8 @@ object DefaultSizeMode {
     __obj.asInstanceOf[DefaultSizeMode]
   }
   
-  extension [Self <: DefaultSizeMode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DefaultSizeMode] (val x: Self) extends AnyVal {
     
     inline def setDefaultSizeMode(value: String): Self = StObject.set(x, "defaultSizeMode", value.asInstanceOf[js.Any])
     

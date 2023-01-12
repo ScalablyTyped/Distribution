@@ -36,7 +36,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
       
@@ -81,7 +82,8 @@ object mod {
       __obj.asInstanceOf[TTest]
     }
     
-    extension [Self <: TTest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TTest] (val x: Self) extends AnyVal {
       
       inline def setConfidence(value: () => js.Array[Double]): Self = StObject.set(x, "confidence", js.Any.fromFunction0(value))
       

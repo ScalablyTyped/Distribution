@@ -19,7 +19,8 @@ object CatAliasesRequest {
     __obj.asInstanceOf[CatAliasesRequest]
   }
   
-  extension [Self <: CatAliasesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CatAliasesRequest] (val x: Self) extends AnyVal {
     
     inline def setExpand_wildcards(value: ExpandWildcards): Self = StObject.set(x, "expand_wildcards", value.asInstanceOf[js.Any])
     

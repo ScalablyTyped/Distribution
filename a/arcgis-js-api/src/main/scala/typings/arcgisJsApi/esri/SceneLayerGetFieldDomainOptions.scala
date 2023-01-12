@@ -20,7 +20,8 @@ object SceneLayerGetFieldDomainOptions {
     __obj.asInstanceOf[SceneLayerGetFieldDomainOptions]
   }
   
-  extension [Self <: SceneLayerGetFieldDomainOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SceneLayerGetFieldDomainOptions] (val x: Self) extends AnyVal {
     
     inline def setFeature(value: Graphic): Self = StObject.set(x, "feature", value.asInstanceOf[js.Any])
   }

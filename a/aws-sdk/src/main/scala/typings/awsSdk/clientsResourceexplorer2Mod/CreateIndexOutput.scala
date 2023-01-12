@@ -28,7 +28,8 @@ object CreateIndexOutput {
     __obj.asInstanceOf[CreateIndexOutput]
   }
   
-  extension [Self <: CreateIndexOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateIndexOutput] (val x: Self) extends AnyVal {
     
     inline def setArn(value: String): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object CommentTag {
     __obj.asInstanceOf[CommentTag]
   }
   
-  extension [Self <: CommentTag](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CommentTag] (val x: Self) extends AnyVal {
     
     inline def setContent(value: js.Array[CommentDisplayPart]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     

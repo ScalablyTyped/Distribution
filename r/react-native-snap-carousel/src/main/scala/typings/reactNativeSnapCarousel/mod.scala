@@ -91,7 +91,8 @@ object mod {
       __obj.asInstanceOf[AdditionalParallaxProps]
     }
     
-    extension [Self <: AdditionalParallaxProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AdditionalParallaxProps] (val x: Self) extends AnyVal {
       
       inline def setCarouselRef(value: Component[FlatListProps[Any], js.Object, Any]): Self = StObject.set(x, "carouselRef", value.asInstanceOf[js.Any])
       
@@ -721,7 +722,8 @@ object mod {
       __obj.asInstanceOf[PaginationProperties]
     }
     
-    extension [Self <: PaginationProperties](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PaginationProperties] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -863,7 +865,8 @@ object mod {
       __obj.asInstanceOf[PaginationProps]
     }
     
-    extension [Self <: PaginationProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PaginationProps] (val x: Self) extends AnyVal {
       
       inline def setActiveDotIndex(value: Double): Self = StObject.set(x, "activeDotIndex", value.asInstanceOf[js.Any])
       
@@ -972,7 +975,8 @@ object mod {
       __obj.asInstanceOf[ParallaxImageProperties]
     }
     
-    extension [Self <: ParallaxImageProperties](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParallaxImageProperties] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -1025,7 +1029,8 @@ object mod {
       __obj.asInstanceOf[ParallaxImageProps]
     }
     
-    extension [Self <: ParallaxImageProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParallaxImageProps] (val x: Self) extends AnyVal {
       
       inline def setContainerStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "containerStyle", value.asInstanceOf[js.Any])
       

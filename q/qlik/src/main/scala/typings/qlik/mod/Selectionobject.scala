@@ -19,7 +19,8 @@ object Selectionobject {
     __obj.asInstanceOf[Selectionobject]
   }
   
-  extension [Self <: Selectionobject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Selectionobject] (val x: Self) extends AnyVal {
     
     inline def setQBackCount(value: Double): Self = StObject.set(x, "qBackCount", value.asInstanceOf[js.Any])
     

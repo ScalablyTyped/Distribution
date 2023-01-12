@@ -64,7 +64,8 @@ object GoogleCloudDialogflowCxV3Agent {
     __obj.asInstanceOf[GoogleCloudDialogflowCxV3Agent]
   }
   
-  extension [Self <: GoogleCloudDialogflowCxV3Agent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDialogflowCxV3Agent] (val x: Self) extends AnyVal {
     
     inline def setAdvancedSettings(value: GoogleCloudDialogflowCxV3AdvancedSettings): Self = StObject.set(x, "advancedSettings", value.asInstanceOf[js.Any])
     

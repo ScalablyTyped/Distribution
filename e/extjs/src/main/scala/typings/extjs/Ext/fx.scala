@@ -80,7 +80,8 @@ object fx {
       __obj.asInstanceOf[IAnim]
     }
     
-    extension [Self <: IAnim](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IAnim] (val x: Self) extends AnyVal {
       
       inline def setAlternate(value: Boolean): Self = StObject.set(x, "alternate", value.asInstanceOf[js.Any])
       
@@ -210,7 +211,8 @@ object fx {
       __obj.asInstanceOf[IAnimator]
     }
     
-    extension [Self <: IAnimator](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IAnimator] (val x: Self) extends AnyVal {
       
       inline def setCurrentIteration(value: Double): Self = StObject.set(x, "currentIteration", value.asInstanceOf[js.Any])
       
@@ -305,7 +307,8 @@ object fx {
         __obj.asInstanceOf[typings.extjs.Ext.fx.target.ICompositeElement]
       }
       
-      extension [Self <: typings.extjs.Ext.fx.target.ICompositeElement](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.extjs.Ext.fx.target.ICompositeElement] (val x: Self) extends AnyVal {
         
         inline def setIsComposite(value: Boolean): Self = StObject.set(x, "isComposite", value.asInstanceOf[js.Any])
         

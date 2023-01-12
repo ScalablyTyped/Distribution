@@ -22,7 +22,8 @@ object enginesWebGPUExtensionsEngineDotcomputeShaderMod {
         __obj.asInstanceOf[WebGPUEngine]
       }
       
-      extension [Self <: WebGPUEngine](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: WebGPUEngine] (val x: Self) extends AnyVal {
         
         inline def set_createComputePipelineStageDescriptor(value: (String, Nullable[String], String) => GPUProgrammableStage): Self = StObject.set(x, "_createComputePipelineStageDescriptor", js.Any.fromFunction3(value))
       }

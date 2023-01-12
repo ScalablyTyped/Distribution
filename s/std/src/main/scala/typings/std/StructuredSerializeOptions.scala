@@ -16,7 +16,8 @@ object StructuredSerializeOptions {
     __obj.asInstanceOf[StructuredSerializeOptions]
   }
   
-  extension [Self <: StructuredSerializeOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StructuredSerializeOptions] (val x: Self) extends AnyVal {
     
     inline def setTransfer(value: js.Array[Transferable]): Self = StObject.set(x, "transfer", value.asInstanceOf[js.Any])
     

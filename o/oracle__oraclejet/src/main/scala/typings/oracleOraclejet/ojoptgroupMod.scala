@@ -1209,7 +1209,8 @@ object ojoptgroupMod {
       __obj.asInstanceOf[ojOptgroupEventMap]
     }
     
-    extension [Self <: ojOptgroupEventMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ojOptgroupEventMap] (val x: Self) extends AnyVal {
       
       inline def setDisabledChanged(value: JetElementCustomEvent[Boolean]): Self = StObject.set(x, "disabledChanged", value.asInstanceOf[js.Any])
       
@@ -1232,7 +1233,8 @@ object ojoptgroupMod {
       __obj.asInstanceOf[ojOptgroupSettableProperties]
     }
     
-    extension [Self <: ojOptgroupSettableProperties](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ojOptgroupSettableProperties] (val x: Self) extends AnyVal {
       
       inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
@@ -1256,7 +1258,8 @@ object ojoptgroupMod {
       __obj.asInstanceOf[ojOptgroupSettablePropertiesLenient]
     }
     
-    extension [Self <: ojOptgroupSettablePropertiesLenient](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ojOptgroupSettablePropertiesLenient] (val x: Self) extends AnyVal {
       
       inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       

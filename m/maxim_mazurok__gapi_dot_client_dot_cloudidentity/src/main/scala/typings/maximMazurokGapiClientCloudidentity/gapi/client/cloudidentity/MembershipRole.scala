@@ -25,7 +25,8 @@ object MembershipRole {
     __obj.asInstanceOf[MembershipRole]
   }
   
-  extension [Self <: MembershipRole](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MembershipRole] (val x: Self) extends AnyVal {
     
     inline def setExpiryDetail(value: ExpiryDetail): Self = StObject.set(x, "expiryDetail", value.asInstanceOf[js.Any])
     

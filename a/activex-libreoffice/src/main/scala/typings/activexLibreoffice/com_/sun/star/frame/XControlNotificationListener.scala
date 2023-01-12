@@ -32,7 +32,8 @@ object XControlNotificationListener {
     __obj.asInstanceOf[XControlNotificationListener]
   }
   
-  extension [Self <: XControlNotificationListener](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XControlNotificationListener] (val x: Self) extends AnyVal {
     
     inline def setControlEvent(value: ControlEvent => Unit): Self = StObject.set(x, "controlEvent", js.Any.fromFunction1(value))
   }

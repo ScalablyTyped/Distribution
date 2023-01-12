@@ -22,7 +22,8 @@ object ChangeStreamCreateIndexDocument {
     __obj.asInstanceOf[ChangeStreamCreateIndexDocument]
   }
   
-  extension [Self <: ChangeStreamCreateIndexDocument](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChangeStreamCreateIndexDocument] (val x: Self) extends AnyVal {
     
     inline def setOperationType(value: createIndexes): Self = StObject.set(x, "operationType", value.asInstanceOf[js.Any])
   }

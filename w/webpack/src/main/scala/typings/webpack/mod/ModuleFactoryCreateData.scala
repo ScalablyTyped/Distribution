@@ -25,7 +25,8 @@ object ModuleFactoryCreateData {
     __obj.asInstanceOf[ModuleFactoryCreateData]
   }
   
-  extension [Self <: ModuleFactoryCreateData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModuleFactoryCreateData] (val x: Self) extends AnyVal {
     
     inline def setContext(value: String): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     

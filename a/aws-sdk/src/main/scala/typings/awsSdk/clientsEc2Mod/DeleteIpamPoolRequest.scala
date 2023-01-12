@@ -23,7 +23,8 @@ object DeleteIpamPoolRequest {
     __obj.asInstanceOf[DeleteIpamPoolRequest]
   }
   
-  extension [Self <: DeleteIpamPoolRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteIpamPoolRequest] (val x: Self) extends AnyVal {
     
     inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     

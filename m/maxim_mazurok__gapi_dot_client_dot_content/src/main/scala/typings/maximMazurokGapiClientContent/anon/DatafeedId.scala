@@ -53,7 +53,8 @@ object DatafeedId {
     __obj.asInstanceOf[DatafeedId]
   }
   
-  extension [Self <: DatafeedId](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DatafeedId] (val x: Self) extends AnyVal {
     
     inline def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
     

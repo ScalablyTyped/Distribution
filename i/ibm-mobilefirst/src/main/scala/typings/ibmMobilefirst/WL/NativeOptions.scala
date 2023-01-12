@@ -25,7 +25,8 @@ object NativeOptions {
     __obj.asInstanceOf[NativeOptions]
   }
   
-  extension [Self <: NativeOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NativeOptions] (val x: Self) extends AnyVal {
     
     inline def setAutoSendLogs(value: Boolean): Self = StObject.set(x, "autoSendLogs", value.asInstanceOf[js.Any])
     

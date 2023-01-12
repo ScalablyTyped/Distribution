@@ -28,7 +28,8 @@ object PhoneNumber {
     __obj.asInstanceOf[PhoneNumber]
   }
   
-  extension [Self <: PhoneNumber](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PhoneNumber] (val x: Self) extends AnyVal {
     
     inline def setPrimary(value: SensitiveBooleanType): Self = StObject.set(x, "Primary", value.asInstanceOf[js.Any])
     

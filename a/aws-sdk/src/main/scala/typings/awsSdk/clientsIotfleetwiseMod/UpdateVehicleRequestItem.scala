@@ -38,7 +38,8 @@ object UpdateVehicleRequestItem {
     __obj.asInstanceOf[UpdateVehicleRequestItem]
   }
   
-  extension [Self <: UpdateVehicleRequestItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateVehicleRequestItem] (val x: Self) extends AnyVal {
     
     inline def setAttributeUpdateMode(value: UpdateMode): Self = StObject.set(x, "attributeUpdateMode", value.asInstanceOf[js.Any])
     

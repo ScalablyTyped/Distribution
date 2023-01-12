@@ -17,7 +17,8 @@ object ParametersQueryConfirmdelete {
     __obj.asInstanceOf[ParametersQueryConfirmdelete]
   }
   
-  extension [Self <: ParametersQueryConfirmdelete](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParametersQueryConfirmdelete] (val x: Self) extends AnyVal {
     
     inline def setParameters(value: QueryConfirmdelete): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     

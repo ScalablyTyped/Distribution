@@ -167,7 +167,8 @@ object distSrcModulesUiControlsPictureInPicturePictureInPictureMod {
       __obj.asInstanceOf[PictureInPictureControl]
     }
     
-    extension [Self <: PictureInPictureControl](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PictureInPictureControl] (val x: Self) extends AnyVal {
       
       inline def setIsHidden(value: Boolean): Self = StObject.set(x, "isHidden", value.asInstanceOf[js.Any])
       

@@ -23,7 +23,8 @@ object QueueInfo {
     __obj.asInstanceOf[QueueInfo]
   }
   
-  extension [Self <: QueueInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueueInfo] (val x: Self) extends AnyVal {
     
     inline def setEnqueueTimestamp(value: js.Date): Self = StObject.set(x, "EnqueueTimestamp", value.asInstanceOf[js.Any])
     

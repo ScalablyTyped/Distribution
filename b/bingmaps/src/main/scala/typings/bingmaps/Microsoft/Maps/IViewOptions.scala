@@ -43,7 +43,8 @@ object IViewOptions {
     __obj.asInstanceOf[IViewOptions]
   }
   
-  extension [Self <: IViewOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IViewOptions] (val x: Self) extends AnyVal {
     
     inline def setBounds(value: LocationRect): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
     

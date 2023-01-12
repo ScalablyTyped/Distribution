@@ -22,7 +22,8 @@ object Children {
     __obj.asInstanceOf[Children]
   }
   
-  extension [Self <: Children](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Children] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: js.Array[IGeoObject[IGeometry]]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

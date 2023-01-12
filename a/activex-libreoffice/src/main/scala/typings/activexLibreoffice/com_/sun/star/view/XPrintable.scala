@@ -56,7 +56,8 @@ object XPrintable {
     __obj.asInstanceOf[XPrintable]
   }
   
-  extension [Self <: XPrintable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XPrintable] (val x: Self) extends AnyVal {
     
     inline def setGetPrinter(value: () => SafeArray[PropertyValue]): Self = StObject.set(x, "getPrinter", js.Any.fromFunction0(value))
     

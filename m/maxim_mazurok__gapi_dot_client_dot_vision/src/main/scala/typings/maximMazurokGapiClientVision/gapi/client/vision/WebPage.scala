@@ -28,7 +28,8 @@ object WebPage {
     __obj.asInstanceOf[WebPage]
   }
   
-  extension [Self <: WebPage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebPage] (val x: Self) extends AnyVal {
     
     inline def setFullMatchingImages(value: js.Array[WebImage]): Self = StObject.set(x, "fullMatchingImages", value.asInstanceOf[js.Any])
     

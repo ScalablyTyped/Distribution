@@ -57,7 +57,8 @@ object distFrameworkLambdaMod {
       __obj.asInstanceOf[LambdaMetadata]
     }
     
-    extension [Self <: LambdaMetadata](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LambdaMetadata] (val x: Self) extends AnyVal {
       
       inline def setContext(value: Context): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       

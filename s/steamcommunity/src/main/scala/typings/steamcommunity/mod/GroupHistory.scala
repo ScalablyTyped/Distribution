@@ -25,7 +25,8 @@ object GroupHistory {
     __obj.asInstanceOf[GroupHistory]
   }
   
-  extension [Self <: GroupHistory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GroupHistory] (val x: Self) extends AnyVal {
     
     inline def setFirst(value: Double): Self = StObject.set(x, "first", value.asInstanceOf[js.Any])
     

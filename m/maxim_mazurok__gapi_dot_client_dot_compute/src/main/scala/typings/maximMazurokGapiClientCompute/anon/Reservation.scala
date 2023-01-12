@@ -67,7 +67,8 @@ object Reservation {
     __obj.asInstanceOf[Reservation]
   }
   
-  extension [Self <: Reservation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Reservation] (val x: Self) extends AnyVal {
     
     inline def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
     

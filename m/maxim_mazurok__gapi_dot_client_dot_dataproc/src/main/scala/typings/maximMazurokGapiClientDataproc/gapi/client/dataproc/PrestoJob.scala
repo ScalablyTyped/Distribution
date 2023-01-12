@@ -39,7 +39,8 @@ object PrestoJob {
     __obj.asInstanceOf[PrestoJob]
   }
   
-  extension [Self <: PrestoJob](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PrestoJob] (val x: Self) extends AnyVal {
     
     inline def setClientTags(value: js.Array[String]): Self = StObject.set(x, "clientTags", value.asInstanceOf[js.Any])
     

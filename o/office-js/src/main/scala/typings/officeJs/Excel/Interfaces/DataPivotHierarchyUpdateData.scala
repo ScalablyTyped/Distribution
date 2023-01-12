@@ -79,7 +79,8 @@ object DataPivotHierarchyUpdateData {
     __obj.asInstanceOf[DataPivotHierarchyUpdateData]
   }
   
-  extension [Self <: DataPivotHierarchyUpdateData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataPivotHierarchyUpdateData] (val x: Self) extends AnyVal {
     
     inline def setField(value: PivotFieldUpdateData): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     

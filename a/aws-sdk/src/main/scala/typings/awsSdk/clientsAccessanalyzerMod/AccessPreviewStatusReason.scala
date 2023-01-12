@@ -18,7 +18,8 @@ object AccessPreviewStatusReason {
     __obj.asInstanceOf[AccessPreviewStatusReason]
   }
   
-  extension [Self <: AccessPreviewStatusReason](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccessPreviewStatusReason] (val x: Self) extends AnyVal {
     
     inline def setCode(value: AccessPreviewStatusReasonCode): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
   }

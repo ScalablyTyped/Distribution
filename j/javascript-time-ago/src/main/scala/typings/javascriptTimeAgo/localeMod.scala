@@ -62,7 +62,8 @@ object localeMod {
       __obj.asInstanceOf[Duration]
     }
     
-    extension [Self <: Duration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Duration] (val x: Self) extends AnyVal {
       
       inline def setDay(value: Tense): Self = StObject.set(x, "day", value.asInstanceOf[js.Any])
       
@@ -166,7 +167,8 @@ object localeMod {
       __obj.asInstanceOf[Locale]
     }
     
-    extension [Self <: Locale](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Locale] (val x: Self) extends AnyVal {
       
       inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
       
@@ -223,7 +225,8 @@ object localeMod {
       __obj.asInstanceOf[QuantifyType]
     }
     
-    extension [Self <: QuantifyType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QuantifyType] (val x: Self) extends AnyVal {
       
       inline def setFew(value: String): Self = StObject.set(x, "few", value.asInstanceOf[js.Any])
       
@@ -264,7 +267,8 @@ object localeMod {
       __obj.asInstanceOf[RTFFormatter]
     }
     
-    extension [Self <: RTFFormatter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RTFFormatter] (val x: Self) extends AnyVal {
       
       inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
       
@@ -297,7 +301,8 @@ object localeMod {
       __obj.asInstanceOf[Tense]
     }
     
-    extension [Self <: Tense](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Tense] (val x: Self) extends AnyVal {
       
       inline def setCurrent(value: QuantifyType | String): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
       

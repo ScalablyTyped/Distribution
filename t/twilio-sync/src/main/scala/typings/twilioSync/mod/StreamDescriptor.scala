@@ -24,7 +24,8 @@ object StreamDescriptor {
     __obj.asInstanceOf[StreamDescriptor]
   }
   
-  extension [Self <: StreamDescriptor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StreamDescriptor] (val x: Self) extends AnyVal {
     
     inline def setDate_expires(value: String): Self = StObject.set(x, "date_expires", value.asInstanceOf[js.Any])
     

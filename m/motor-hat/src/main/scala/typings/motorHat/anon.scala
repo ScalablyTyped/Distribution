@@ -26,7 +26,8 @@ object anon {
       __obj.asInstanceOf[M1]
     }
     
-    extension [Self <: M1](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: M1] (val x: Self) extends AnyVal {
       
       inline def setM1(value: MotorPins): Self = StObject.set(x, "M1", value.asInstanceOf[js.Any])
       
@@ -57,7 +58,8 @@ object anon {
       __obj.asInstanceOf[W1]
     }
     
-    extension [Self <: W1](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: W1] (val x: Self) extends AnyVal {
       
       inline def setW1(value: PinDefinition): Self = StObject.set(x, "W1", value.asInstanceOf[js.Any])
       
@@ -82,7 +84,8 @@ object anon {
       __obj.asInstanceOf[W2]
     }
     
-    extension [Self <: W2](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: W2] (val x: Self) extends AnyVal {
       
       inline def setW1(value: Motor): Self = StObject.set(x, "W1", value.asInstanceOf[js.Any])
       

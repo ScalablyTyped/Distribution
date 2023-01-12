@@ -19,7 +19,8 @@ object IKernelSpec {
     __obj.asInstanceOf[IKernelSpec]
   }
   
-  extension [Self <: IKernelSpec](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IKernelSpec] (val x: Self) extends AnyVal {
     
     inline def setDisplay_name(value: String): Self = StObject.set(x, "display_name", value.asInstanceOf[js.Any])
     

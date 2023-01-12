@@ -41,7 +41,8 @@ object LinearGaugeScale {
     __obj.asInstanceOf[LinearGaugeScale]
   }
   
-  extension [Self <: LinearGaugeScale](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LinearGaugeScale] (val x: Self) extends AnyVal {
     
     inline def setLabels(value: LinearGaugeScaleLabels): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     

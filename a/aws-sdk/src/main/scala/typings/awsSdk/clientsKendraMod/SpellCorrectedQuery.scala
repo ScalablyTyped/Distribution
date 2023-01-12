@@ -23,7 +23,8 @@ object SpellCorrectedQuery {
     __obj.asInstanceOf[SpellCorrectedQuery]
   }
   
-  extension [Self <: SpellCorrectedQuery](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpellCorrectedQuery] (val x: Self) extends AnyVal {
     
     inline def setCorrections(value: CorrectionList): Self = StObject.set(x, "Corrections", value.asInstanceOf[js.Any])
     

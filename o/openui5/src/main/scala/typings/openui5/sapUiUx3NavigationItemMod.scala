@@ -313,7 +313,8 @@ object sapUiUx3NavigationItemMod {
       __obj.asInstanceOf[NavigationItemSettings]
     }
     
-    extension [Self <: NavigationItemSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NavigationItemSettings] (val x: Self) extends AnyVal {
       
       inline def setHref(value: URI | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
       

@@ -28,7 +28,8 @@ object ModelOutputConfiguration {
     __obj.asInstanceOf[ModelOutputConfiguration]
   }
   
-  extension [Self <: ModelOutputConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModelOutputConfiguration] (val x: Self) extends AnyVal {
     
     inline def setCsvIndexToVariableMap(value: CsvIndexToVariableMap): Self = StObject.set(x, "csvIndexToVariableMap", value.asInstanceOf[js.Any])
     

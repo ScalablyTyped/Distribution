@@ -229,7 +229,8 @@ object ojComboboxManyEventMap {
     __obj.asInstanceOf[ojComboboxManyEventMap[K, D]]
   }
   
-  extension [Self <: ojComboboxManyEventMap[?, ?], K, D](x: Self & (ojComboboxManyEventMap[K, D])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ojComboboxManyEventMap[?, ?], K, D] (val x: Self & (ojComboboxManyEventMap[K, D])) extends AnyVal {
     
     inline def setAsyncValidatorsChanged(value: JetElementCustomEvent[js.Array[AsyncValidator[js.Array[Any]]]]): Self = StObject.set(x, "asyncValidatorsChanged", value.asInstanceOf[js.Any])
     

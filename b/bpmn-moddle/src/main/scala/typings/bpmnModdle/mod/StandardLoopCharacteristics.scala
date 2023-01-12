@@ -28,7 +28,8 @@ object StandardLoopCharacteristics {
     __obj.asInstanceOf[StandardLoopCharacteristics]
   }
   
-  extension [Self <: StandardLoopCharacteristics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StandardLoopCharacteristics] (val x: Self) extends AnyVal {
     
     inline def setLoopCondition(value: Expression): Self = StObject.set(x, "loopCondition", value.asInstanceOf[js.Any])
     

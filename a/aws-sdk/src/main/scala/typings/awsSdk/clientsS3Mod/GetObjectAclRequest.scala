@@ -35,7 +35,8 @@ object GetObjectAclRequest {
     __obj.asInstanceOf[GetObjectAclRequest]
   }
   
-  extension [Self <: GetObjectAclRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetObjectAclRequest] (val x: Self) extends AnyVal {
     
     inline def setBucket(value: BucketName): Self = StObject.set(x, "Bucket", value.asInstanceOf[js.Any])
     

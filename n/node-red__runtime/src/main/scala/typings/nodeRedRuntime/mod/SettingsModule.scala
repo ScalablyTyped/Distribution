@@ -95,7 +95,8 @@ object SettingsModule {
     __obj.asInstanceOf[SettingsModule]
   }
   
-  extension [Self <: SettingsModule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SettingsModule] (val x: Self) extends AnyVal {
     
     inline def setGenerateUserKey(value: Comment => js.Promise[String]): Self = StObject.set(x, "generateUserKey", js.Any.fromFunction1(value))
     

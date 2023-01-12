@@ -26,7 +26,8 @@ object libToolsAndroidManifestMod extends Shortcut {
       __obj.asInstanceOf[APKInfo]
     }
     
-    extension [Self <: APKInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: APKInfo] (val x: Self) extends AnyVal {
       
       inline def setApkActivity(value: String): Self = StObject.set(x, "apkActivity", value.asInstanceOf[js.Any])
       

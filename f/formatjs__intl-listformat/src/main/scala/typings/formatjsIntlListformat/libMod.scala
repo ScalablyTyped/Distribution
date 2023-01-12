@@ -103,7 +103,8 @@ object libMod {
       __obj.asInstanceOf[ElementPart[T]]
     }
     
-    extension [Self <: ElementPart[?], T](x: Self & ElementPart[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ElementPart[?], T] (val x: Self & ElementPart[T]) extends AnyVal {
       
       inline def setType(value: element): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
@@ -147,7 +148,8 @@ object libMod {
       __obj.asInstanceOf[IntlListFormatOptions]
     }
     
-    extension [Self <: IntlListFormatOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IntlListFormatOptions] (val x: Self) extends AnyVal {
       
       inline def setLocaleMatcher(value: (`best fit`) | lookup): Self = StObject.set(x, "localeMatcher", value.asInstanceOf[js.Any])
       
@@ -182,7 +184,8 @@ object libMod {
       __obj.asInstanceOf[ListFormat]
     }
     
-    extension [Self <: ListFormat](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListFormat] (val x: Self) extends AnyVal {
       
       inline def setFormat(value: js.Array[String] => String): Self = StObject.set(x, "format", js.Any.fromFunction1(value))
       
@@ -230,7 +233,8 @@ object libMod {
       __obj.asInstanceOf[ResolvedIntlListFormatOptions]
     }
     
-    extension [Self <: ResolvedIntlListFormatOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResolvedIntlListFormatOptions] (val x: Self) extends AnyVal {
       
       inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
       

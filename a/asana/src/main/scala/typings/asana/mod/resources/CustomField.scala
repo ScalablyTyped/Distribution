@@ -32,7 +32,8 @@ object CustomField {
     __obj.asInstanceOf[CustomField]
   }
   
-  extension [Self <: CustomField](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomField] (val x: Self) extends AnyVal {
     
     inline def setCreated_by(value: Resource): Self = StObject.set(x, "created_by", value.asInstanceOf[js.Any])
     

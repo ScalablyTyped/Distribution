@@ -18,7 +18,8 @@ object UpdateNetworkConfigurationInput {
     __obj.asInstanceOf[UpdateNetworkConfigurationInput]
   }
   
-  extension [Self <: UpdateNetworkConfigurationInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateNetworkConfigurationInput] (val x: Self) extends AnyVal {
     
     inline def setSecurityGroupIds(value: SecurityGroupList): Self = StObject.set(x, "SecurityGroupIds", value.asInstanceOf[js.Any])
     

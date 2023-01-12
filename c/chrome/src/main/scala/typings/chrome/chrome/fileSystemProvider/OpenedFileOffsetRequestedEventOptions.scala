@@ -21,7 +21,8 @@ object OpenedFileOffsetRequestedEventOptions {
     __obj.asInstanceOf[OpenedFileOffsetRequestedEventOptions]
   }
   
-  extension [Self <: OpenedFileOffsetRequestedEventOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OpenedFileOffsetRequestedEventOptions] (val x: Self) extends AnyVal {
     
     inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     

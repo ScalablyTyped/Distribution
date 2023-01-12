@@ -40,7 +40,8 @@ object Key {
     __obj.asInstanceOf[Key]
   }
   
-  extension [Self <: Key](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Key] (val x: Self) extends AnyVal {
     
     inline def setADOXDotKey_typekey(value: Key): Self = StObject.set(x, "ADOX.Key_typekey", value.asInstanceOf[js.Any])
     

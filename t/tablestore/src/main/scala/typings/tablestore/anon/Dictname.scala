@@ -19,7 +19,8 @@ object Dictname {
     __obj.asInstanceOf[Dictname]
   }
   
-  extension [Self <: Dictname](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Dictname] (val x: Self) extends AnyVal {
     
     inline def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     

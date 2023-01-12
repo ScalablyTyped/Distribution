@@ -63,7 +63,8 @@ object XAnimationListener {
     __obj.asInstanceOf[XAnimationListener]
   }
   
-  extension [Self <: XAnimationListener](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XAnimationListener] (val x: Self) extends AnyVal {
     
     inline def setBeginEvent(value: XAnimationNode => Unit): Self = StObject.set(x, "beginEvent", js.Any.fromFunction1(value))
     

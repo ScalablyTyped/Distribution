@@ -23,7 +23,8 @@ object DocumentClassifierOutputDataConfig {
     __obj.asInstanceOf[DocumentClassifierOutputDataConfig]
   }
   
-  extension [Self <: DocumentClassifierOutputDataConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DocumentClassifierOutputDataConfig] (val x: Self) extends AnyVal {
     
     inline def setKmsKeyId(value: KmsKeyId): Self = StObject.set(x, "KmsKeyId", value.asInstanceOf[js.Any])
     

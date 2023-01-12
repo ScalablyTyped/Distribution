@@ -118,7 +118,8 @@ object srcLibElectrumClientMod {
       __obj.asInstanceOf[Client]
     }
     
-    extension [Self <: Client](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Client] (val x: Self) extends AnyVal {
       
       inline def setBroadcastTransaction(value: String => String): Self = StObject.set(x, "broadcastTransaction", js.Any.fromFunction1(value))
       
@@ -169,7 +170,8 @@ object srcLibElectrumClientMod {
       __obj.asInstanceOf[Config]
     }
     
-    extension [Self <: Config](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
       
       inline def setOptions(value: Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       

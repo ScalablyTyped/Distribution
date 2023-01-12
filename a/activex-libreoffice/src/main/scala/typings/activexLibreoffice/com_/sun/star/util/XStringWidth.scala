@@ -36,7 +36,8 @@ object XStringWidth {
     __obj.asInstanceOf[XStringWidth]
   }
   
-  extension [Self <: XStringWidth](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XStringWidth] (val x: Self) extends AnyVal {
     
     inline def setQueryStringWidth(value: String => Double): Self = StObject.set(x, "queryStringWidth", js.Any.fromFunction1(value))
   }

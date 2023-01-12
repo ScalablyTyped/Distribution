@@ -18,7 +18,8 @@ object BackTestConfiguration {
     __obj.asInstanceOf[BackTestConfiguration]
   }
   
-  extension [Self <: BackTestConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BackTestConfiguration] (val x: Self) extends AnyVal {
     
     inline def setRunBackTestMode(value: Boolean): Self = StObject.set(x, "RunBackTestMode", value.asInstanceOf[js.Any])
   }

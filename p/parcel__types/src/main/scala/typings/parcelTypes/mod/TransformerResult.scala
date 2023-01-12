@@ -72,7 +72,8 @@ object TransformerResult {
     __obj.asInstanceOf[TransformerResult]
   }
   
-  extension [Self <: TransformerResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransformerResult] (val x: Self) extends AnyVal {
     
     inline def setAst(value: AST): Self = StObject.set(x, "ast", value.asInstanceOf[js.Any])
     

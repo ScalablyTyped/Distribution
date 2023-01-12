@@ -29,7 +29,8 @@ object IExecuteReply {
     __obj.asInstanceOf[IExecuteReply]
   }
   
-  extension [Self <: IExecuteReply](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IExecuteReply] (val x: Self) extends AnyVal {
     
     inline def setPayload(value: js.Array[JSONObject]): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     

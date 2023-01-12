@@ -19,7 +19,8 @@ object LineReaderOptions {
     __obj.asInstanceOf[LineReaderOptions]
   }
   
-  extension [Self <: LineReaderOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LineReaderOptions] (val x: Self) extends AnyVal {
     
     inline def setBufferSize(value: Double): Self = StObject.set(x, "bufferSize", value.asInstanceOf[js.Any])
     

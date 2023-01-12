@@ -18,7 +18,8 @@ object UpdateViewOutput {
     __obj.asInstanceOf[UpdateViewOutput]
   }
   
-  extension [Self <: UpdateViewOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateViewOutput] (val x: Self) extends AnyVal {
     
     inline def setView(value: View): Self = StObject.set(x, "View", value.asInstanceOf[js.Any])
     

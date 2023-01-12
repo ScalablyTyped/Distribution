@@ -27,7 +27,8 @@ object mod {
       __obj.asInstanceOf[GetProxyData]
     }
     
-    extension [Self <: GetProxyData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetProxyData] (val x: Self) extends AnyVal {
       
       inline def setRetryCount(value: Double): Self = StObject.set(x, "retryCount", value.asInstanceOf[js.Any])
       
@@ -72,7 +73,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setCacheDir(value: String): Self = StObject.set(x, "cacheDir", value.asInstanceOf[js.Any])
       

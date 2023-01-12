@@ -49,7 +49,8 @@ object ChartMapOptionsLoadOptions {
     __obj.asInstanceOf[ChartMapOptionsLoadOptions]
   }
   
-  extension [Self <: ChartMapOptionsLoadOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChartMapOptionsLoadOptions] (val x: Self) extends AnyVal {
     
     inline def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
     

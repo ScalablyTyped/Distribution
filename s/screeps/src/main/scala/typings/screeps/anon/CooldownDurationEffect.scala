@@ -58,7 +58,8 @@ object CooldownDurationEffect {
     __obj.asInstanceOf[CooldownDurationEffect]
   }
   
-  extension [Self <: CooldownDurationEffect](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CooldownDurationEffect] (val x: Self) extends AnyVal {
     
     inline def setClassName(value: operator): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     

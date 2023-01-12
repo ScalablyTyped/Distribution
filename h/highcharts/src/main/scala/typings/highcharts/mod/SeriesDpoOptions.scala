@@ -77,7 +77,8 @@ object SeriesDpoOptions {
     __obj.asInstanceOf[SeriesDpoOptions]
   }
   
-  extension [Self <: SeriesDpoOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SeriesDpoOptions] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

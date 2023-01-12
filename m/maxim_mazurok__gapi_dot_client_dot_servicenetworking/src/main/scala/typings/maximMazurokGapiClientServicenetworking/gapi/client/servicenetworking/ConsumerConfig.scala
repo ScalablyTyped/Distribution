@@ -55,7 +55,8 @@ object ConsumerConfig {
     __obj.asInstanceOf[ConsumerConfig]
   }
   
-  extension [Self <: ConsumerConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConsumerConfig] (val x: Self) extends AnyVal {
     
     inline def setCloudsqlConfigs(value: js.Array[CloudSQLConfig]): Self = StObject.set(x, "cloudsqlConfigs", value.asInstanceOf[js.Any])
     

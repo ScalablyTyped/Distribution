@@ -23,7 +23,8 @@ object LaunchTemplateTagSpecification {
     __obj.asInstanceOf[LaunchTemplateTagSpecification]
   }
   
-  extension [Self <: LaunchTemplateTagSpecification](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LaunchTemplateTagSpecification] (val x: Self) extends AnyVal {
     
     inline def setResourceType(value: ResourceType): Self = StObject.set(x, "ResourceType", value.asInstanceOf[js.Any])
     

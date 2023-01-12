@@ -16,7 +16,8 @@ object HangoutsChatExportOptions {
     __obj.asInstanceOf[HangoutsChatExportOptions]
   }
   
-  extension [Self <: HangoutsChatExportOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HangoutsChatExportOptions] (val x: Self) extends AnyVal {
     
     inline def setExportFormat(value: String): Self = StObject.set(x, "exportFormat", value.asInstanceOf[js.Any])
     

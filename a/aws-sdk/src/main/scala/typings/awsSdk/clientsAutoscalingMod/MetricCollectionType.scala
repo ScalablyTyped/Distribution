@@ -18,7 +18,8 @@ object MetricCollectionType {
     __obj.asInstanceOf[MetricCollectionType]
   }
   
-  extension [Self <: MetricCollectionType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MetricCollectionType] (val x: Self) extends AnyVal {
     
     inline def setMetric(value: XmlStringMaxLen255): Self = StObject.set(x, "Metric", value.asInstanceOf[js.Any])
     

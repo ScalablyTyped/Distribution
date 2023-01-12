@@ -24,7 +24,8 @@ object ExchangeCoinInfo {
     __obj.asInstanceOf[ExchangeCoinInfo]
   }
   
-  extension [Self <: ExchangeCoinInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExchangeCoinInfo] (val x: Self) extends AnyVal {
     
     inline def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     

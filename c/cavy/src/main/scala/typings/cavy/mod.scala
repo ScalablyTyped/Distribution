@@ -103,7 +103,8 @@ object mod {
       __obj.asInstanceOf[TestReport]
     }
     
-    extension [Self <: TestReport](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TestReport] (val x: Self) extends AnyVal {
       
       inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
@@ -128,7 +129,8 @@ object mod {
       __obj.asInstanceOf[TestResult]
     }
     
-    extension [Self <: TestResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TestResult] (val x: Self) extends AnyVal {
       
       inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
@@ -166,7 +168,8 @@ object mod {
       __obj.asInstanceOf[TesterProps]
     }
     
-    extension [Self <: TesterProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TesterProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactElement): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

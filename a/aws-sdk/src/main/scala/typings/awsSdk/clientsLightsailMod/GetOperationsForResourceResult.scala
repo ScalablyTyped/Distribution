@@ -28,7 +28,8 @@ object GetOperationsForResourceResult {
     __obj.asInstanceOf[GetOperationsForResourceResult]
   }
   
-  extension [Self <: GetOperationsForResourceResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetOperationsForResourceResult] (val x: Self) extends AnyVal {
     
     inline def setNextPageCount(value: String): Self = StObject.set(x, "nextPageCount", value.asInstanceOf[js.Any])
     

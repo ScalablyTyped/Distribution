@@ -45,7 +45,8 @@ object RenderedChunk {
     __obj.asInstanceOf[RenderedChunk]
   }
   
-  extension [Self <: RenderedChunk](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RenderedChunk] (val x: Self) extends AnyVal {
     
     inline def setDynamicImports(value: js.Array[String]): Self = StObject.set(x, "dynamicImports", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object GoogleCloudDatalabelingV1beta1VideoPayload {
     __obj.asInstanceOf[GoogleCloudDatalabelingV1beta1VideoPayload]
   }
   
-  extension [Self <: GoogleCloudDatalabelingV1beta1VideoPayload](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDatalabelingV1beta1VideoPayload] (val x: Self) extends AnyVal {
     
     inline def setFrameRate(value: Double): Self = StObject.set(x, "frameRate", value.asInstanceOf[js.Any])
     

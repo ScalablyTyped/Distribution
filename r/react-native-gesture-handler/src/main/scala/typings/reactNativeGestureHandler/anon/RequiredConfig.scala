@@ -72,7 +72,8 @@ object RequiredConfig {
     __obj.asInstanceOf[RequiredConfig]
   }
   
-  extension [Self <: RequiredConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RequiredConfig] (val x: Self) extends AnyVal {
     
     inline def setActiveOffsetXEnd(value: Double): Self = StObject.set(x, "activeOffsetXEnd", value.asInstanceOf[js.Any])
     

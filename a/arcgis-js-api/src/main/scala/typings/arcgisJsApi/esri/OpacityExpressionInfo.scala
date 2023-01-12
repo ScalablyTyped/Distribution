@@ -34,7 +34,8 @@ object OpacityExpressionInfo {
     __obj.asInstanceOf[OpacityExpressionInfo]
   }
   
-  extension [Self <: OpacityExpressionInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OpacityExpressionInfo] (val x: Self) extends AnyVal {
     
     inline def setHistogramQuery(value: SQLExpressionInfo): Self = StObject.set(x, "histogramQuery", value.asInstanceOf[js.Any])
     

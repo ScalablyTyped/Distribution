@@ -15,7 +15,8 @@ object CampaignFilters {
     __obj.asInstanceOf[CampaignFilters]
   }
   
-  extension [Self <: CampaignFilters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CampaignFilters] (val x: Self) extends AnyVal {
     
     inline def setInstanceIdFilter(value: InstanceIdFilter): Self = StObject.set(x, "instanceIdFilter", value.asInstanceOf[js.Any])
     

@@ -54,7 +54,8 @@ object BootstrapClientMenu {
     __obj.asInstanceOf[BootstrapClientMenu]
   }
   
-  extension [Self <: BootstrapClientMenu](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BootstrapClientMenu] (val x: Self) extends AnyVal {
     
     inline def setSetSelectedItem(value: BootstrapClientMenuItem => Unit): Self = StObject.set(x, "SetSelectedItem", js.Any.fromFunction1(value))
   }

@@ -39,7 +39,8 @@ object mod {
       __obj.asInstanceOf[oddball]
     }
     
-    extension [Self <: oddball](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: oddball] (val x: Self) extends AnyVal {
       
       inline def setIncluded(value: Boolean): Self = StObject.set(x, "included", value.asInstanceOf[js.Any])
       

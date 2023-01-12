@@ -21,7 +21,8 @@ object SignedCurve25519OTKfallba {
     __obj.asInstanceOf[SignedCurve25519OTKfallba]
   }
   
-  extension [Self <: SignedCurve25519OTKfallba](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SignedCurve25519OTKfallba] (val x: Self) extends AnyVal {
     
     inline def setFallback(value: Boolean): Self = StObject.set(x, "fallback", value.asInstanceOf[js.Any])
     

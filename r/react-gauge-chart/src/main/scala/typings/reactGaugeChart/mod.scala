@@ -144,7 +144,8 @@ object mod {
       __obj.asInstanceOf[GaugeChartProps]
     }
     
-    extension [Self <: GaugeChartProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GaugeChartProps] (val x: Self) extends AnyVal {
       
       inline def setAnimDelay(value: Double): Self = StObject.set(x, "animDelay", value.asInstanceOf[js.Any])
       

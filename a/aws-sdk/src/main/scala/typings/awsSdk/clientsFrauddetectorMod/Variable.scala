@@ -58,7 +58,8 @@ object Variable {
     __obj.asInstanceOf[Variable]
   }
   
-  extension [Self <: Variable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Variable] (val x: Self) extends AnyVal {
     
     inline def setArn(value: fraudDetectorArn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     

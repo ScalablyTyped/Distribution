@@ -28,7 +28,8 @@ object CoreDevice {
     __obj.asInstanceOf[CoreDevice]
   }
   
-  extension [Self <: CoreDevice](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CoreDevice] (val x: Self) extends AnyVal {
     
     inline def setCoreDeviceThingName(value: CoreDeviceThingName): Self = StObject.set(x, "coreDeviceThingName", value.asInstanceOf[js.Any])
     

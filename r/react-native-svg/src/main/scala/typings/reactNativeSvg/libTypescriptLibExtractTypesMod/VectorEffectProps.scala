@@ -21,7 +21,8 @@ object VectorEffectProps {
     __obj.asInstanceOf[VectorEffectProps]
   }
   
-  extension [Self <: VectorEffectProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VectorEffectProps] (val x: Self) extends AnyVal {
     
     inline def setVectorEffect(value: none | `non-scaling-stroke` | nonScalingStroke | default | inherit | uri): Self = StObject.set(x, "vectorEffect", value.asInstanceOf[js.Any])
     

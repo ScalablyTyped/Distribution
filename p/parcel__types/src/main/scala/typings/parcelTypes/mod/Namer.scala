@@ -20,7 +20,8 @@ object Namer {
     __obj.asInstanceOf[Namer[ConfigType]]
   }
   
-  extension [Self <: Namer[?], ConfigType](x: Self & Namer[ConfigType]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Namer[?], ConfigType] (val x: Self & Namer[ConfigType]) extends AnyVal {
     
     inline def setLoadConfig(value: /* arg0 */ typings.parcelTypes.anon.Config => js.Promise[ConfigType] | ConfigType): Self = StObject.set(x, "loadConfig", js.Any.fromFunction1(value))
     

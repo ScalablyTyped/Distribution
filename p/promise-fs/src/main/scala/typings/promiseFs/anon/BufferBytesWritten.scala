@@ -17,7 +17,8 @@ object BufferBytesWritten {
     __obj.asInstanceOf[BufferBytesWritten]
   }
   
-  extension [Self <: BufferBytesWritten](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BufferBytesWritten] (val x: Self) extends AnyVal {
     
     inline def setBuffer(value: String): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
     

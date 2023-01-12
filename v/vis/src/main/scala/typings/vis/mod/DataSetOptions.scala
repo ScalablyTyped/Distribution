@@ -33,7 +33,8 @@ object DataSetOptions {
     __obj.asInstanceOf[DataSetOptions]
   }
   
-  extension [Self <: DataSetOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataSetOptions] (val x: Self) extends AnyVal {
     
     inline def setFieldId(value: String): Self = StObject.set(x, "fieldId", value.asInstanceOf[js.Any])
     

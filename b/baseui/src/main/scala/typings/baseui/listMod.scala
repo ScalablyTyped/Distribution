@@ -154,7 +154,8 @@ object listMod {
       __obj.asInstanceOf[StyledHeadingEndEnhancerContainerPropsT]
     }
     
-    extension [Self <: StyledHeadingEndEnhancerContainerPropsT](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StyledHeadingEndEnhancerContainerPropsT] (val x: Self) extends AnyVal {
       
       inline def set$isText(value: Boolean): Self = StObject.set(x, "$isText", value.asInstanceOf[js.Any])
     }

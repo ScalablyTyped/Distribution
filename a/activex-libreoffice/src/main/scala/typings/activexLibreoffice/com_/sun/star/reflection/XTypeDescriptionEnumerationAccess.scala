@@ -43,7 +43,8 @@ object XTypeDescriptionEnumerationAccess {
     __obj.asInstanceOf[XTypeDescriptionEnumerationAccess]
   }
   
-  extension [Self <: XTypeDescriptionEnumerationAccess](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XTypeDescriptionEnumerationAccess] (val x: Self) extends AnyVal {
     
     inline def setCreateTypeDescriptionEnumeration(value: (String, SeqEquiv[TypeClass], TypeDescriptionSearchDepth) => XTypeDescriptionEnumeration): Self = StObject.set(x, "createTypeDescriptionEnumeration", js.Any.fromFunction3(value))
   }

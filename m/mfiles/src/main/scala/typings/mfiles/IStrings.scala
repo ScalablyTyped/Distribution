@@ -35,7 +35,8 @@ object IStrings {
     __obj.asInstanceOf[IStrings]
   }
   
-  extension [Self <: IStrings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IStrings] (val x: Self) extends AnyVal {
     
     inline def setAdd(value: (Double, String) => Unit): Self = StObject.set(x, "Add", js.Any.fromFunction2(value))
     

@@ -17,7 +17,8 @@ object anon {
       __obj.asInstanceOf[MatchBare]
     }
     
-    extension [Self <: MatchBare](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MatchBare] (val x: Self) extends AnyVal {
       
       inline def setMatchBare(value: Boolean): Self = StObject.set(x, "matchBare", value.asInstanceOf[js.Any])
     }

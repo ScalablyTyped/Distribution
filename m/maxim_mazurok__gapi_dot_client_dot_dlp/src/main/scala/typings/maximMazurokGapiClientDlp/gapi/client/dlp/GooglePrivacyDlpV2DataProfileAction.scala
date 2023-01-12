@@ -19,7 +19,8 @@ object GooglePrivacyDlpV2DataProfileAction {
     __obj.asInstanceOf[GooglePrivacyDlpV2DataProfileAction]
   }
   
-  extension [Self <: GooglePrivacyDlpV2DataProfileAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GooglePrivacyDlpV2DataProfileAction] (val x: Self) extends AnyVal {
     
     inline def setExportData(value: GooglePrivacyDlpV2Export): Self = StObject.set(x, "exportData", value.asInstanceOf[js.Any])
     

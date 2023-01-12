@@ -17,7 +17,8 @@ object RecognizeResult {
     __obj.asInstanceOf[RecognizeResult]
   }
   
-  extension [Self <: RecognizeResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecognizeResult] (val x: Self) extends AnyVal {
     
     inline def setData(value: Page): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

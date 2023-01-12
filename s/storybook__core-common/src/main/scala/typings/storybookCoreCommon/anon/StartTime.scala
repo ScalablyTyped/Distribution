@@ -19,7 +19,8 @@ object StartTime {
     __obj.asInstanceOf[StartTime]
   }
   
-  extension [Self <: StartTime](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartTime] (val x: Self) extends AnyVal {
     
     inline def setOptions(value: typings.storybookCoreCommon.distTs3Dot9TypesMod.Options): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     

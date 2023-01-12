@@ -43,7 +43,8 @@ object dxLinearGaugeOptions {
     __obj.asInstanceOf[dxLinearGaugeOptions]
   }
   
-  extension [Self <: dxLinearGaugeOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxLinearGaugeOptions] (val x: Self) extends AnyVal {
     
     inline def setGeometry(value: `5`): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
     

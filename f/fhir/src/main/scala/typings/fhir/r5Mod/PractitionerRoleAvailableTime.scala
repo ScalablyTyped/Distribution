@@ -50,7 +50,8 @@ object PractitionerRoleAvailableTime {
     __obj.asInstanceOf[PractitionerRoleAvailableTime]
   }
   
-  extension [Self <: PractitionerRoleAvailableTime](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PractitionerRoleAvailableTime] (val x: Self) extends AnyVal {
     
     inline def setAllDay(value: Boolean): Self = StObject.set(x, "allDay", value.asInstanceOf[js.Any])
     

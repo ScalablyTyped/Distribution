@@ -18,7 +18,8 @@ object RemoveRegionRequest {
     __obj.asInstanceOf[RemoveRegionRequest]
   }
   
-  extension [Self <: RemoveRegionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RemoveRegionRequest] (val x: Self) extends AnyVal {
     
     inline def setDirectoryId(value: DirectoryId): Self = StObject.set(x, "DirectoryId", value.asInstanceOf[js.Any])
   }

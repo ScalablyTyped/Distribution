@@ -102,7 +102,8 @@ object LegendItem {
     __obj.asInstanceOf[LegendItem]
   }
   
-  extension [Self <: LegendItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LegendItem] (val x: Self) extends AnyVal {
     
     inline def setBorderRadius(value: Double | BorderRadius): Self = StObject.set(x, "borderRadius", value.asInstanceOf[js.Any])
     

@@ -39,7 +39,8 @@ object XApproveActionListener {
     __obj.asInstanceOf[XApproveActionListener]
   }
   
-  extension [Self <: XApproveActionListener](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XApproveActionListener] (val x: Self) extends AnyVal {
     
     inline def setApproveAction(value: EventObject => Boolean): Self = StObject.set(x, "approveAction", js.Any.fromFunction1(value))
   }

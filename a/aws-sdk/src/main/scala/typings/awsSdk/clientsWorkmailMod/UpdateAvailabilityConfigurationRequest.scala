@@ -33,7 +33,8 @@ object UpdateAvailabilityConfigurationRequest {
     __obj.asInstanceOf[UpdateAvailabilityConfigurationRequest]
   }
   
-  extension [Self <: UpdateAvailabilityConfigurationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateAvailabilityConfigurationRequest] (val x: Self) extends AnyVal {
     
     inline def setDomainName(value: DomainName): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
     

@@ -56,7 +56,8 @@ object typesLibMessageIdProviderMod {
       __obj.asInstanceOf[IMessageIdProvider]
     }
     
-    extension [Self <: IMessageIdProvider](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IMessageIdProvider] (val x: Self) extends AnyVal {
       
       inline def setAllocate(value: () => Number | Null): Self = StObject.set(x, "allocate", js.Any.fromFunction0(value))
       

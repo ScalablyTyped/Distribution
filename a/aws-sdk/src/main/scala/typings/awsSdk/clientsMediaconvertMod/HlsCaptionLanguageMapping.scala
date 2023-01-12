@@ -33,7 +33,8 @@ object HlsCaptionLanguageMapping {
     __obj.asInstanceOf[HlsCaptionLanguageMapping]
   }
   
-  extension [Self <: HlsCaptionLanguageMapping](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HlsCaptionLanguageMapping] (val x: Self) extends AnyVal {
     
     inline def setCaptionChannel(value: integerMinNegative2147483648Max2147483647): Self = StObject.set(x, "CaptionChannel", value.asInstanceOf[js.Any])
     

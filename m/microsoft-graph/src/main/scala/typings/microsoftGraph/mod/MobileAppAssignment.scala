@@ -27,7 +27,8 @@ object MobileAppAssignment {
     __obj.asInstanceOf[MobileAppAssignment]
   }
   
-  extension [Self <: MobileAppAssignment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MobileAppAssignment] (val x: Self) extends AnyVal {
     
     inline def setIntent(value: InstallIntent): Self = StObject.set(x, "intent", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object JSMath2jaxPreprocessor {
     __obj.asInstanceOf[JSMath2jaxPreprocessor]
   }
   
-  extension [Self <: JSMath2jaxPreprocessor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JSMath2jaxPreprocessor] (val x: Self) extends AnyVal {
     
     inline def setPreview(value: Any): Self = StObject.set(x, "preview", value.asInstanceOf[js.Any])
   }

@@ -67,7 +67,8 @@ object XSimpleText {
     __obj.asInstanceOf[XSimpleText]
   }
   
-  extension [Self <: XSimpleText](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XSimpleText] (val x: Self) extends AnyVal {
     
     inline def setCreateTextCursor(value: () => XTextCursor): Self = StObject.set(x, "createTextCursor", js.Any.fromFunction0(value))
     

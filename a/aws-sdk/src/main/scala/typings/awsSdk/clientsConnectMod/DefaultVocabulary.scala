@@ -38,7 +38,8 @@ object DefaultVocabulary {
     __obj.asInstanceOf[DefaultVocabulary]
   }
   
-  extension [Self <: DefaultVocabulary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DefaultVocabulary] (val x: Self) extends AnyVal {
     
     inline def setInstanceId(value: InstanceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
     

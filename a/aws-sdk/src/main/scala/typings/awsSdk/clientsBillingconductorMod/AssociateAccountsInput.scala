@@ -23,7 +23,8 @@ object AssociateAccountsInput {
     __obj.asInstanceOf[AssociateAccountsInput]
   }
   
-  extension [Self <: AssociateAccountsInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssociateAccountsInput] (val x: Self) extends AnyVal {
     
     inline def setAccountIds(value: AccountIdList): Self = StObject.set(x, "AccountIds", value.asInstanceOf[js.Any])
     

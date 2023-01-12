@@ -98,7 +98,8 @@ object distTypesRenderCanvasCanvasRendererMod {
       __obj.asInstanceOf[RenderConfigurations]
     }
     
-    extension [Self <: RenderConfigurations](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RenderConfigurations] (val x: Self) extends AnyVal {
       
       inline def setBackgroundColor(value: Color_): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
       
@@ -127,7 +128,8 @@ object distTypesRenderCanvasCanvasRendererMod {
       __obj.asInstanceOf[RenderOptions]
     }
     
-    extension [Self <: RenderOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RenderOptions] (val x: Self) extends AnyVal {
       
       inline def setCanvas(value: HTMLCanvasElement): Self = StObject.set(x, "canvas", value.asInstanceOf[js.Any])
       

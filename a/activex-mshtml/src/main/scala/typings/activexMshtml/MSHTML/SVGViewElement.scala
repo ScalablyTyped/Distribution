@@ -46,7 +46,8 @@ object SVGViewElement {
     __obj.asInstanceOf[SVGViewElement]
   }
   
-  extension [Self <: SVGViewElement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SVGViewElement] (val x: Self) extends AnyVal {
     
     inline def setExternalResourcesRequired(value: SVGAnimatedBoolean): Self = StObject.set(x, "externalResourcesRequired", value.asInstanceOf[js.Any])
     

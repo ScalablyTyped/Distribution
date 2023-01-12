@@ -17,7 +17,8 @@ object HttpContentCodingHeaderValue {
     __obj.asInstanceOf[HttpContentCodingHeaderValue]
   }
   
-  extension [Self <: HttpContentCodingHeaderValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HttpContentCodingHeaderValue] (val x: Self) extends AnyVal {
     
     inline def setContentCoding(value: String): Self = StObject.set(x, "contentCoding", value.asInstanceOf[js.Any])
   }

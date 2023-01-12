@@ -25,7 +25,8 @@ object DeserializationContentTypes {
     __obj.asInstanceOf[DeserializationContentTypes]
   }
   
-  extension [Self <: DeserializationContentTypes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeserializationContentTypes] (val x: Self) extends AnyVal {
     
     inline def setJson(value: js.Array[String]): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
     

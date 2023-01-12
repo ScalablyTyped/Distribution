@@ -15,7 +15,8 @@ object EnumValuesRegex {
     __obj.asInstanceOf[EnumValuesRegex]
   }
   
-  extension [Self <: EnumValuesRegex](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnumValuesRegex] (val x: Self) extends AnyVal {
     
     inline def setEnumValues(value: Regex): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
   }

@@ -16,7 +16,8 @@ object SubordinateConfigChain {
     __obj.asInstanceOf[SubordinateConfigChain]
   }
   
-  extension [Self <: SubordinateConfigChain](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubordinateConfigChain] (val x: Self) extends AnyVal {
     
     inline def setPemCertificates(value: js.Array[String]): Self = StObject.set(x, "pemCertificates", value.asInstanceOf[js.Any])
     

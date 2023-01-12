@@ -21,7 +21,8 @@ object DurandalRelativeRouteSettings {
     __obj.asInstanceOf[DurandalRelativeRouteSettings]
   }
   
-  extension [Self <: DurandalRelativeRouteSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DurandalRelativeRouteSettings] (val x: Self) extends AnyVal {
     
     inline def setDynamicHash(value: String): Self = StObject.set(x, "dynamicHash", value.asInstanceOf[js.Any])
     

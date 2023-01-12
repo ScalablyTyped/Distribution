@@ -59,7 +59,8 @@ object Footnote {
     __obj.asInstanceOf[Footnote]
   }
   
-  extension [Self <: Footnote](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Footnote] (val x: Self) extends AnyVal {
     
     inline def setGetFootnoteContents(value: () => FootnoteSection): Self = StObject.set(x, "getFootnoteContents", js.Any.fromFunction0(value))
   }

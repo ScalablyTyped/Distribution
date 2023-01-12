@@ -38,7 +38,8 @@ object XCachedPrimitive {
     __obj.asInstanceOf[XCachedPrimitive]
   }
   
-  extension [Self <: XCachedPrimitive](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XCachedPrimitive] (val x: Self) extends AnyVal {
     
     inline def setRedraw(value: ViewState => Double): Self = StObject.set(x, "redraw", js.Any.fromFunction1(value))
   }

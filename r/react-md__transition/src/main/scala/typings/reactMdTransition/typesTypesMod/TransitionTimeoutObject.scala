@@ -20,7 +20,8 @@ object TransitionTimeoutObject {
     __obj.asInstanceOf[TransitionTimeoutObject]
   }
   
-  extension [Self <: TransitionTimeoutObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransitionTimeoutObject] (val x: Self) extends AnyVal {
     
     inline def setAppear(value: Double): Self = StObject.set(x, "appear", value.asInstanceOf[js.Any])
     

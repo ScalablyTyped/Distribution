@@ -22,7 +22,8 @@ object AnalysisidOwner {
     __obj.asInstanceOf[AnalysisidOwner]
   }
   
-  extension [Self <: AnalysisidOwner](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnalysisidOwner] (val x: Self) extends AnyVal {
     
     inline def setAnalysis_id(value: Double): Self = StObject.set(x, "analysis_id", value.asInstanceOf[js.Any])
     

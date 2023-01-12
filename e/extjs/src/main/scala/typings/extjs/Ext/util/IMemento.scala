@@ -52,7 +52,8 @@ object IMemento {
     __obj.asInstanceOf[IMemento]
   }
   
-  extension [Self <: IMemento](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IMemento] (val x: Self) extends AnyVal {
     
     inline def setCapture(value: (/* props */ js.UndefOr[Any], /* target */ js.UndefOr[Any]) => Unit): Self = StObject.set(x, "capture", js.Any.fromFunction2(value))
     

@@ -27,7 +27,8 @@ object LoginItemSettingsOptions {
     __obj.asInstanceOf[LoginItemSettingsOptions]
   }
   
-  extension [Self <: LoginItemSettingsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LoginItemSettingsOptions] (val x: Self) extends AnyVal {
     
     inline def setArgs(value: js.Array[String]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object TemplateMetadata {
     __obj.asInstanceOf[TemplateMetadata]
   }
   
-  extension [Self <: TemplateMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TemplateMetadata] (val x: Self) extends AnyVal {
     
     inline def setCreatedTimestamp(value: js.Date): Self = StObject.set(x, "CreatedTimestamp", value.asInstanceOf[js.Any])
     

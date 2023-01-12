@@ -24,7 +24,8 @@ object buildTestFrameworkTypesMod {
       __obj.asInstanceOf[AfterHookParam[T]]
     }
     
-    extension [Self <: AfterHookParam[?], T](x: Self & AfterHookParam[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AfterHookParam[?], T] (val x: Self & AfterHookParam[T]) extends AnyVal {
       
       inline def setAfterFn(value: js.Function | js.Array[js.Function]): Self = StObject.set(x, "afterFn", value.asInstanceOf[js.Any])
       
@@ -49,7 +50,8 @@ object buildTestFrameworkTypesMod {
       __obj.asInstanceOf[BeforeHookParam[T]]
     }
     
-    extension [Self <: BeforeHookParam[?], T](x: Self & BeforeHookParam[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BeforeHookParam[?], T] (val x: Self & BeforeHookParam[T]) extends AnyVal {
       
       inline def setBeforeFn(value: js.Function | js.Array[js.Function]): Self = StObject.set(x, "beforeFn", value.asInstanceOf[js.Any])
       
@@ -72,7 +74,8 @@ object buildTestFrameworkTypesMod {
       __obj.asInstanceOf[JasmineContext]
     }
     
-    extension [Self <: JasmineContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JasmineContext] (val x: Self) extends AnyVal {
       
       inline def setFailedExpectations(value: js.Array[Record[String, Any]]): Self = StObject.set(x, "failedExpectations", value.asInstanceOf[js.Any])
       
@@ -95,7 +98,8 @@ object buildTestFrameworkTypesMod {
       __obj.asInstanceOf[SpecFunction]
     }
     
-    extension [Self <: SpecFunction](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SpecFunction] (val x: Self) extends AnyVal {
       
       inline def setSpecFn(value: js.Function): Self = StObject.set(x, "specFn", value.asInstanceOf[js.Any])
       
@@ -160,7 +164,8 @@ object buildTestFrameworkTypesMod {
       __obj.asInstanceOf[WrapperMethods]
     }
     
-    extension [Self <: WrapperMethods](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WrapperMethods] (val x: Self) extends AnyVal {
       
       inline def setExecuteAsync(
         value: js.ThisFunction3[

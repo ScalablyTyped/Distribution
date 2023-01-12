@@ -31,7 +31,8 @@ object AccordionMenu {
     __obj.asInstanceOf[AccordionMenu]
   }
   
-  extension [Self <: AccordionMenu](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccordionMenu] (val x: Self) extends AnyVal {
     
     inline def setDown(value: (JQuery, Boolean) => Unit): Self = StObject.set(x, "down", js.Any.fromFunction2(value))
     

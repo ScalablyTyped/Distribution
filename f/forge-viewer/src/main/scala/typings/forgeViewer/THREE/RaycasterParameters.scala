@@ -23,7 +23,8 @@ object RaycasterParameters {
     __obj.asInstanceOf[RaycasterParameters]
   }
   
-  extension [Self <: RaycasterParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RaycasterParameters] (val x: Self) extends AnyVal {
     
     inline def setLOD(value: Any): Self = StObject.set(x, "LOD", value.asInstanceOf[js.Any])
     

@@ -266,7 +266,8 @@ object IColumnDefOf {
     __obj.asInstanceOf[IColumnDefOf[TEntity]]
   }
   
-  extension [Self <: IColumnDefOf[?], TEntity](x: Self & IColumnDefOf[TEntity]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IColumnDefOf[?], TEntity] (val x: Self & IColumnDefOf[TEntity]) extends AnyVal {
     
     inline def setAggregationHideLabel(value: Boolean): Self = StObject.set(x, "aggregationHideLabel", value.asInstanceOf[js.Any])
     

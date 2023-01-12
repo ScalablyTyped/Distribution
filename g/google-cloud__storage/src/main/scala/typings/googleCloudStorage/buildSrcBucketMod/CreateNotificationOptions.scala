@@ -24,7 +24,8 @@ object CreateNotificationOptions {
     __obj.asInstanceOf[CreateNotificationOptions]
   }
   
-  extension [Self <: CreateNotificationOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateNotificationOptions] (val x: Self) extends AnyVal {
     
     inline def setCustomAttributes(value: StringDictionary[String]): Self = StObject.set(x, "customAttributes", value.asInstanceOf[js.Any])
     

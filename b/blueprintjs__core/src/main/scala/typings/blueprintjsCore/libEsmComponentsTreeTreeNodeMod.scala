@@ -128,7 +128,8 @@ object libEsmComponentsTreeTreeNodeMod {
       __obj.asInstanceOf[ITreeNode[T]]
     }
     
-    extension [Self <: ITreeNode[?], T](x: Self & ITreeNode[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITreeNode[?], T] (val x: Self & ITreeNode[T]) extends AnyVal {
       
       inline def setChildNodes(value: js.Array[TreeNodeInfo[T]]): Self = StObject.set(x, "childNodes", value.asInstanceOf[js.Any])
       
@@ -223,7 +224,8 @@ object libEsmComponentsTreeTreeNodeMod {
       __obj.asInstanceOf[ITreeNodeProps[T]]
     }
     
-    extension [Self <: ITreeNodeProps[?], T](x: Self & ITreeNodeProps[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITreeNodeProps[?], T] (val x: Self & ITreeNodeProps[T]) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

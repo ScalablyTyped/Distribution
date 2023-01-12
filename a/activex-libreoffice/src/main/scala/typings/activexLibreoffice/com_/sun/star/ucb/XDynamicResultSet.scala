@@ -112,7 +112,8 @@ object XDynamicResultSet {
     __obj.asInstanceOf[XDynamicResultSet]
   }
   
-  extension [Self <: XDynamicResultSet](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XDynamicResultSet] (val x: Self) extends AnyVal {
     
     inline def setCapabilities(value: Double): Self = StObject.set(x, "Capabilities", value.asInstanceOf[js.Any])
     

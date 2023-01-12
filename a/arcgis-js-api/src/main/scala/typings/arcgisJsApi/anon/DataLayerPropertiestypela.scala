@@ -76,7 +76,8 @@ object DataLayerPropertiestypela {
     __obj.asInstanceOf[DataLayerPropertiestypela]
   }
   
-  extension [Self <: DataLayerPropertiestypela](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataLayerPropertiestypela] (val x: Self) extends AnyVal {
     
     inline def setDoNotLocateOnRestrictedElements(value: Boolean): Self = StObject.set(x, "doNotLocateOnRestrictedElements", value.asInstanceOf[js.Any])
     

@@ -42,7 +42,8 @@ object Logarithmic {
     __obj.asInstanceOf[Logarithmic]
   }
   
-  extension [Self <: Logarithmic](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Logarithmic] (val x: Self) extends AnyVal {
     
     inline def setLogarithmic(value: (Double, Double, js.Array[Value]) => String): Self = StObject.set(x, "logarithmic", js.Any.fromFunction3(value))
     

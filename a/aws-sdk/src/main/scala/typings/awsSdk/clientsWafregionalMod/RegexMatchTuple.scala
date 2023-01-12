@@ -28,7 +28,8 @@ object RegexMatchTuple {
     __obj.asInstanceOf[RegexMatchTuple]
   }
   
-  extension [Self <: RegexMatchTuple](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RegexMatchTuple] (val x: Self) extends AnyVal {
     
     inline def setFieldToMatch(value: FieldToMatch): Self = StObject.set(x, "FieldToMatch", value.asInstanceOf[js.Any])
     

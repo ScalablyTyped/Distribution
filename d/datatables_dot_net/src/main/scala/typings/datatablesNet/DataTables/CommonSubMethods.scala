@@ -21,7 +21,8 @@ object CommonSubMethods {
     __obj.asInstanceOf[CommonSubMethods]
   }
   
-  extension [Self <: CommonSubMethods](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CommonSubMethods] (val x: Self) extends AnyVal {
     
     inline def setCache(value: String => Api): Self = StObject.set(x, "cache", js.Any.fromFunction1(value))
   }

@@ -29,7 +29,8 @@ object LoadFileOptions {
     __obj.asInstanceOf[LoadFileOptions]
   }
   
-  extension [Self <: LoadFileOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LoadFileOptions] (val x: Self) extends AnyVal {
     
     inline def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
     

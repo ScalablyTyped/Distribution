@@ -30,7 +30,8 @@ object libCreateDevToolsMod {
       __obj.asInstanceOf[Props[S, A, MonitorState, MonitorAction]]
     }
     
-    extension [Self <: Props[?, ?, ?, ?], S, A /* <: Action[Any] */, MonitorState, MonitorAction /* <: Action[Any] */](x: Self & (Props[S, A, MonitorState, MonitorAction])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Props[?, ?, ?, ?], S, A /* <: Action[Any] */, MonitorState, MonitorAction /* <: Action[Any] */] (val x: Self & (Props[S, A, MonitorState, MonitorAction])) extends AnyVal {
       
       inline def setStore(value: EnhancedStore[S, A, MonitorState]): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
       

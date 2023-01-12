@@ -29,7 +29,8 @@ object VisualizationCommon {
     __obj.asInstanceOf[VisualizationCommon]
   }
   
-  extension [Self <: VisualizationCommon](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VisualizationCommon] (val x: Self) extends AnyVal {
     
     inline def setFootnote(value: String): Self = StObject.set(x, "footnote", value.asInstanceOf[js.Any])
     

@@ -33,7 +33,8 @@ object libGridTreeExpandEventMod {
       __obj.asInstanceOf[TreeExpandEvent]
     }
     
-    extension [Self <: TreeExpandEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TreeExpandEvent] (val x: Self) extends AnyVal {
       
       inline def setNodeValue(value: Any): Self = StObject.set(x, "nodeValue", value.asInstanceOf[js.Any])
     }

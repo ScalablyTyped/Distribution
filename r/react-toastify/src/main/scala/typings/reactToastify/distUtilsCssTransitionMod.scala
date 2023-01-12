@@ -53,7 +53,8 @@ object distUtilsCssTransitionMod {
       __obj.asInstanceOf[CSSTransitionProps]
     }
     
-    extension [Self <: CSSTransitionProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CSSTransitionProps] (val x: Self) extends AnyVal {
       
       inline def setAppendPosition(value: Boolean): Self = StObject.set(x, "appendPosition", value.asInstanceOf[js.Any])
       

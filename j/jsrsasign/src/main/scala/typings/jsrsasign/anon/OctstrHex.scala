@@ -18,7 +18,8 @@ object OctstrHex {
     __obj.asInstanceOf[OctstrHex]
   }
   
-  extension [Self <: OctstrHex](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OctstrHex] (val x: Self) extends AnyVal {
     
     inline def setOctstr(value: Hex): Self = StObject.set(x, "octstr", value.asInstanceOf[js.Any])
   }

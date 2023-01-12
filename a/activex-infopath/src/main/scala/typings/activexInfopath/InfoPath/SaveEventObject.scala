@@ -37,7 +37,8 @@ object SaveEventObject {
     __obj.asInstanceOf[SaveEventObject]
   }
   
-  extension [Self <: SaveEventObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SaveEventObject] (val x: Self) extends AnyVal {
     
     inline def setFileName(value: String): Self = StObject.set(x, "FileName", value.asInstanceOf[js.Any])
     

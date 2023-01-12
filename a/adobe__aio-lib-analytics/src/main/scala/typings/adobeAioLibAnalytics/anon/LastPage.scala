@@ -17,7 +17,8 @@ object LastPage {
     __obj.asInstanceOf[LastPage]
   }
   
-  extension [Self <: LastPage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LastPage] (val x: Self) extends AnyVal {
     
     inline def setLastPage(value: Boolean): Self = StObject.set(x, "lastPage", value.asInstanceOf[js.Any])
     

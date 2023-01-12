@@ -338,7 +338,8 @@ object spPageContextInfo {
     __obj.asInstanceOf[spPageContextInfo]
   }
   
-  extension [Self <: spPageContextInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: spPageContextInfo] (val x: Self) extends AnyVal {
     
     inline def setAlertsEnabled(value: Boolean): Self = StObject.set(x, "alertsEnabled", value.asInstanceOf[js.Any])
     

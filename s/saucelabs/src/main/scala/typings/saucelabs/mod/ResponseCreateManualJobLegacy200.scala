@@ -25,7 +25,8 @@ object ResponseCreateManualJobLegacy200 {
     __obj.asInstanceOf[ResponseCreateManualJobLegacy200]
   }
   
-  extension [Self <: ResponseCreateManualJobLegacy200](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResponseCreateManualJobLegacy200] (val x: Self) extends AnyVal {
     
     inline def setError(value: Boolean): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     

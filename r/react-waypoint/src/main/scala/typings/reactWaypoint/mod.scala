@@ -96,7 +96,8 @@ object mod {
         __obj.asInstanceOf[CallbackArgs]
       }
       
-      extension [Self <: CallbackArgs](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CallbackArgs] (val x: Self) extends AnyVal {
         
         inline def setCurrentPosition(value: String): Self = StObject.set(x, "currentPosition", value.asInstanceOf[js.Any])
         
@@ -195,7 +196,8 @@ object mod {
         __obj.asInstanceOf[WaypointProps]
       }
       
-      extension [Self <: WaypointProps](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: WaypointProps] (val x: Self) extends AnyVal {
         
         inline def setBottomOffset(value: String | Double): Self = StObject.set(x, "bottomOffset", value.asInstanceOf[js.Any])
         

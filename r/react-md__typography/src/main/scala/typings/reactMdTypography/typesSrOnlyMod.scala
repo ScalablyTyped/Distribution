@@ -32,7 +32,8 @@ object typesSrOnlyMod {
       __obj.asInstanceOf[SrOnlyProps]
     }
     
-    extension [Self <: SrOnlyProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SrOnlyProps] (val x: Self) extends AnyVal {
       
       inline def setFocusable(value: Boolean): Self = StObject.set(x, "focusable", value.asInstanceOf[js.Any])
       

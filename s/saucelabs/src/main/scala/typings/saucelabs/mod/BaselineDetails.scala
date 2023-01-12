@@ -24,7 +24,8 @@ object BaselineDetails {
     __obj.asInstanceOf[BaselineDetails]
   }
   
-  extension [Self <: BaselineDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BaselineDetails] (val x: Self) extends AnyVal {
     
     inline def setBaseline(value: Double): Self = StObject.set(x, "baseline", value.asInstanceOf[js.Any])
     

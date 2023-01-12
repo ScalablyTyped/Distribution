@@ -35,7 +35,8 @@ object PartialCreatePayOut {
     __obj.asInstanceOf[PartialCreatePayOut]
   }
   
-  extension [Self <: PartialCreatePayOut](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialCreatePayOut] (val x: Self) extends AnyVal {
     
     inline def setAuthorId(value: String): Self = StObject.set(x, "AuthorId", value.asInstanceOf[js.Any])
     

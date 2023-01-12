@@ -32,7 +32,8 @@ object ContextualGroup {
     __obj.asInstanceOf[ContextualGroup]
   }
   
-  extension [Self <: ContextualGroup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContextualGroup] (val x: Self) extends AnyVal {
     
     inline def setDispose(value: () => scala.Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
     

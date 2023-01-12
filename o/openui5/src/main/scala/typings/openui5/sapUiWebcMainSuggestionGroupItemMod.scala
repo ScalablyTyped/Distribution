@@ -171,7 +171,8 @@ object sapUiWebcMainSuggestionGroupItemMod {
       __obj.asInstanceOf[SuggestionGroupItemSettings]
     }
     
-    extension [Self <: SuggestionGroupItemSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SuggestionGroupItemSettings] (val x: Self) extends AnyVal {
       
       inline def setText(value: String | PropertyBindingInfo): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       

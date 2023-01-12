@@ -78,7 +78,8 @@ object GlobalShortcut {
     __obj.asInstanceOf[GlobalShortcut]
   }
   
-  extension [Self <: GlobalShortcut](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GlobalShortcut] (val x: Self) extends AnyVal {
     
     inline def setIsRegistered(value: Accelerator => Boolean): Self = StObject.set(x, "isRegistered", js.Any.fromFunction1(value))
     

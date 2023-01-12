@@ -19,7 +19,8 @@ object SelectOptions {
     __obj.asInstanceOf[SelectOptions]
   }
   
-  extension [Self <: SelectOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SelectOptions] (val x: Self) extends AnyVal {
     
     inline def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
   }

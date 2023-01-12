@@ -22,7 +22,8 @@ object JSON2SheetOpts {
     __obj.asInstanceOf[JSON2SheetOpts]
   }
   
-  extension [Self <: JSON2SheetOpts](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JSON2SheetOpts] (val x: Self) extends AnyVal {
     
     inline def setHeader(value: js.Array[String]): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
     

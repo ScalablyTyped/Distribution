@@ -112,7 +112,8 @@ object TaskLoop {
     __obj.asInstanceOf[TaskLoop]
   }
   
-  extension [Self <: TaskLoop](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TaskLoop] (val x: Self) extends AnyVal {
     
     inline def setClearInterval(value: () => Boolean): Self = StObject.set(x, "clearInterval", js.Any.fromFunction0(value))
     

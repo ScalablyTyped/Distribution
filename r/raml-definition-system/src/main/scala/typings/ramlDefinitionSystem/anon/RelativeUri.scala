@@ -45,7 +45,8 @@ object RelativeUri {
     __obj.asInstanceOf[RelativeUri]
   }
   
-  extension [Self <: RelativeUri](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RelativeUri] (val x: Self) extends AnyVal {
     
     inline def setAnnotations(value: NameString): Self = StObject.set(x, "annotations", value.asInstanceOf[js.Any])
     

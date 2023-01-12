@@ -33,7 +33,8 @@ object DescribeGameServerInstancesInput {
     __obj.asInstanceOf[DescribeGameServerInstancesInput]
   }
   
-  extension [Self <: DescribeGameServerInstancesInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeGameServerInstancesInput] (val x: Self) extends AnyVal {
     
     inline def setGameServerGroupName(value: GameServerGroupNameOrArn): Self = StObject.set(x, "GameServerGroupName", value.asInstanceOf[js.Any])
     

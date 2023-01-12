@@ -20,7 +20,8 @@ object Configuration {
     __obj.asInstanceOf[Configuration]
   }
   
-  extension [Self <: Configuration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Configuration] (val x: Self) extends AnyVal {
     
     inline def setAuthorizedAppIds(value: NullableOption[js.Array[String]]): Self = StObject.set(x, "authorizedAppIds", value.asInstanceOf[js.Any])
     

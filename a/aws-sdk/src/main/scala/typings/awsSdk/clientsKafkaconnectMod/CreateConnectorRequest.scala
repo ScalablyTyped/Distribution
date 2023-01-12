@@ -83,7 +83,8 @@ object CreateConnectorRequest {
     __obj.asInstanceOf[CreateConnectorRequest]
   }
   
-  extension [Self <: CreateConnectorRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateConnectorRequest] (val x: Self) extends AnyVal {
     
     inline def setCapacity(value: Capacity): Self = StObject.set(x, "capacity", value.asInstanceOf[js.Any])
     

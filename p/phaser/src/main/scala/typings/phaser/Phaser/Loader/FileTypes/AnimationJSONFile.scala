@@ -68,7 +68,8 @@ object AnimationJSONFile {
     __obj.asInstanceOf[AnimationJSONFile]
   }
   
-  extension [Self <: AnimationJSONFile](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnimationJSONFile] (val x: Self) extends AnyVal {
     
     inline def setOnLoadComplete(value: () => Unit): Self = StObject.set(x, "onLoadComplete", js.Any.fromFunction0(value))
   }

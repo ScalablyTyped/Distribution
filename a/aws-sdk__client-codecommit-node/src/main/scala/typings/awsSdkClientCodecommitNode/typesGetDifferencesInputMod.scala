@@ -76,7 +76,8 @@ object typesGetDifferencesInputMod {
       __obj.asInstanceOf[GetDifferencesInput]
     }
     
-    extension [Self <: GetDifferencesInput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetDifferencesInput] (val x: Self) extends AnyVal {
       
       inline def set$abortSignal(value: AbortSignal): Self = StObject.set(x, "$abortSignal", value.asInstanceOf[js.Any])
       

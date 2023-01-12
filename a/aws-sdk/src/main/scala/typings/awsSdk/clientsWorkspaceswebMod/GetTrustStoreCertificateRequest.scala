@@ -23,7 +23,8 @@ object GetTrustStoreCertificateRequest {
     __obj.asInstanceOf[GetTrustStoreCertificateRequest]
   }
   
-  extension [Self <: GetTrustStoreCertificateRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetTrustStoreCertificateRequest] (val x: Self) extends AnyVal {
     
     inline def setThumbprint(value: CertificateThumbprint): Self = StObject.set(x, "thumbprint", value.asInstanceOf[js.Any])
     

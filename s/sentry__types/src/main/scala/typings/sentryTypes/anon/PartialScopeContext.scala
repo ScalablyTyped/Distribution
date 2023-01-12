@@ -39,7 +39,8 @@ object PartialScopeContext {
     __obj.asInstanceOf[PartialScopeContext]
   }
   
-  extension [Self <: PartialScopeContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialScopeContext] (val x: Self) extends AnyVal {
     
     inline def setContexts(value: Contexts): Self = StObject.set(x, "contexts", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object GetUserRequest {
     __obj.asInstanceOf[GetUserRequest]
   }
   
-  extension [Self <: GetUserRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetUserRequest] (val x: Self) extends AnyVal {
     
     inline def setAccessToken(value: TokenModelType): Self = StObject.set(x, "AccessToken", value.asInstanceOf[js.Any])
   }

@@ -107,7 +107,8 @@ object Borders {
     __obj.asInstanceOf[Borders]
   }
   
-  extension [Self <: Borders](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Borders] (val x: Self) extends AnyVal {
     
     inline def setAlwaysInFront(value: Boolean): Self = StObject.set(x, "AlwaysInFront", value.asInstanceOf[js.Any])
     

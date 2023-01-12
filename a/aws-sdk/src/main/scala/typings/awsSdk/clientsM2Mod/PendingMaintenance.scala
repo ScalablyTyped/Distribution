@@ -23,7 +23,8 @@ object PendingMaintenance {
     __obj.asInstanceOf[PendingMaintenance]
   }
   
-  extension [Self <: PendingMaintenance](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PendingMaintenance] (val x: Self) extends AnyVal {
     
     inline def setEngineVersion(value: String): Self = StObject.set(x, "engineVersion", value.asInstanceOf[js.Any])
     

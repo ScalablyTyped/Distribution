@@ -55,7 +55,8 @@ object ScanConfig {
     __obj.asInstanceOf[ScanConfig]
   }
   
-  extension [Self <: ScanConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScanConfig] (val x: Self) extends AnyVal {
     
     inline def setAuthentication(value: Authentication): Self = StObject.set(x, "authentication", value.asInstanceOf[js.Any])
     

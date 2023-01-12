@@ -38,7 +38,8 @@ object PartialClassNameMapTableC {
     __obj.asInstanceOf[PartialClassNameMapTableC]
   }
   
-  extension [Self <: PartialClassNameMapTableC](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialClassNameMapTableC] (val x: Self) extends AnyVal {
     
     inline def setAlignCenter(value: String): Self = StObject.set(x, "alignCenter", value.asInstanceOf[js.Any])
     

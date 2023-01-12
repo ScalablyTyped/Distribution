@@ -53,7 +53,8 @@ object srcValidationResultMod {
       __obj.asInstanceOf[ResultFactoryBuilderOptions[T]]
     }
     
-    extension [Self <: ResultFactoryBuilderOptions[?], T](x: Self & ResultFactoryBuilderOptions[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResultFactoryBuilderOptions[?], T] (val x: Self & ResultFactoryBuilderOptions[T]) extends AnyVal {
       
       inline def setFormatter(value: /* error */ ValidationError => T): Self = StObject.set(x, "formatter", js.Any.fromFunction1(value))
     }

@@ -167,7 +167,8 @@ object TextInputIOSProps {
     __obj.asInstanceOf[TextInputIOSProps]
   }
   
-  extension [Self <: TextInputIOSProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextInputIOSProps] (val x: Self) extends AnyVal {
     
     inline def setClearButtonMode(value: never | `while-editing` | `unless-editing` | always): Self = StObject.set(x, "clearButtonMode", value.asInstanceOf[js.Any])
     

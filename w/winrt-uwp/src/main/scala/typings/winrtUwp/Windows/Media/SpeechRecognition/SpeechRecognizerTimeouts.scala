@@ -23,7 +23,8 @@ object SpeechRecognizerTimeouts {
     __obj.asInstanceOf[SpeechRecognizerTimeouts]
   }
   
-  extension [Self <: SpeechRecognizerTimeouts](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpeechRecognizerTimeouts] (val x: Self) extends AnyVal {
     
     inline def setBabbleTimeout(value: Double): Self = StObject.set(x, "babbleTimeout", value.asInstanceOf[js.Any])
     

@@ -16,7 +16,8 @@ object ObjectReferences {
     __obj.asInstanceOf[ObjectReferences]
   }
   
-  extension [Self <: ObjectReferences](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ObjectReferences] (val x: Self) extends AnyVal {
     
     inline def setObjectIds(value: js.Array[String]): Self = StObject.set(x, "objectIds", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object DecoderBuffer {
     __obj.asInstanceOf[DecoderBuffer]
   }
   
-  extension [Self <: DecoderBuffer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DecoderBuffer] (val x: Self) extends AnyVal {
     
     inline def setInit(value: (js.typedarray.Int8Array, Double) => Unit): Self = StObject.set(x, "Init", js.Any.fromFunction2(value))
   }

@@ -35,7 +35,8 @@ object XTransferableEx {
     __obj.asInstanceOf[XTransferableEx]
   }
   
-  extension [Self <: XTransferableEx](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XTransferableEx] (val x: Self) extends AnyVal {
     
     inline def setQueryTransferDataFlavors(value: SeqEquiv[DataFlavor] => SafeArray[DataFlavor]): Self = StObject.set(x, "queryTransferDataFlavors", js.Any.fromFunction1(value))
   }

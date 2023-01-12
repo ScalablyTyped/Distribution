@@ -16,7 +16,8 @@ object `3` {
     __obj.asInstanceOf[`3`]
   }
   
-  extension [Self <: `3`](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: `3`] (val x: Self) extends AnyVal {
     
     inline def setPromise(value: js.Promise[GridMenuResponse]): Self = StObject.set(x, "promise", value.asInstanceOf[js.Any])
   }

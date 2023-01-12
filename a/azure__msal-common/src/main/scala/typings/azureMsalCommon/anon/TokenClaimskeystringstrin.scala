@@ -97,7 +97,8 @@ object TokenClaimskeystringstrin {
     __obj.asInstanceOf[TokenClaimskeystringstrin]
   }
   
-  extension [Self <: TokenClaimskeystringstrin](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TokenClaimskeystringstrin] (val x: Self) extends AnyVal {
     
     inline def setAmr(value: js.Array[String]): Self = StObject.set(x, "amr", value.asInstanceOf[js.Any])
     

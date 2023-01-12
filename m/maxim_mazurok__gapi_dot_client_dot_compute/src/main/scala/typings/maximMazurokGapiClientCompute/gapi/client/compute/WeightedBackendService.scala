@@ -33,7 +33,8 @@ object WeightedBackendService {
     __obj.asInstanceOf[WeightedBackendService]
   }
   
-  extension [Self <: WeightedBackendService](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WeightedBackendService] (val x: Self) extends AnyVal {
     
     inline def setBackendService(value: String): Self = StObject.set(x, "backendService", value.asInstanceOf[js.Any])
     

@@ -63,7 +63,8 @@ object StageDetails {
     __obj.asInstanceOf[StageDetails]
   }
   
-  extension [Self <: StageDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StageDetails] (val x: Self) extends AnyVal {
     
     inline def setArn(value: ARN): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     

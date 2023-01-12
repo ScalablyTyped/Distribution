@@ -23,7 +23,8 @@ object TagsType {
     __obj.asInstanceOf[TagsType]
   }
   
-  extension [Self <: TagsType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TagsType] (val x: Self) extends AnyVal {
     
     inline def setNextToken(value: XmlString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

@@ -50,7 +50,8 @@ object mod {
       __obj.asInstanceOf[IcofontProps]
     }
     
-    extension [Self <: IcofontProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IcofontProps] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       

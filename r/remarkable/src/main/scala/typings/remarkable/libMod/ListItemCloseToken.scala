@@ -21,7 +21,8 @@ object ListItemCloseToken {
     __obj.asInstanceOf[ListItemCloseToken]
   }
   
-  extension [Self <: ListItemCloseToken](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListItemCloseToken] (val x: Self) extends AnyVal {
     
     inline def setType(value: list_item_close): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

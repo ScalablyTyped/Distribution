@@ -35,7 +35,8 @@ object ResponseBase {
     __obj.asInstanceOf[ResponseBase]
   }
   
-  extension [Self <: ResponseBase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResponseBase] (val x: Self) extends AnyVal {
     
     inline def setReadyState(value: ReadyState): Self = StObject.set(x, "readyState", value.asInstanceOf[js.Any])
     

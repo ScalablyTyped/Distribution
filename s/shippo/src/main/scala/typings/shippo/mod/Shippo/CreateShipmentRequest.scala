@@ -35,7 +35,8 @@ object CreateShipmentRequest {
     __obj.asInstanceOf[CreateShipmentRequest]
   }
   
-  extension [Self <: CreateShipmentRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateShipmentRequest] (val x: Self) extends AnyVal {
     
     inline def setAddress_from(value: CreateAddressRequest | String): Self = StObject.set(x, "address_from", value.asInstanceOf[js.Any])
     

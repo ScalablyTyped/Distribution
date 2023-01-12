@@ -28,7 +28,8 @@ object StartAssetImportResponse {
     __obj.asInstanceOf[StartAssetImportResponse]
   }
   
-  extension [Self <: StartAssetImportResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartAssetImportResponse] (val x: Self) extends AnyVal {
     
     inline def setAssetId(value: String): Self = StObject.set(x, "assetId", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object NodesInfoNodeInfoXpackSecurityAuthcToken {
     __obj.asInstanceOf[NodesInfoNodeInfoXpackSecurityAuthcToken]
   }
   
-  extension [Self <: NodesInfoNodeInfoXpackSecurityAuthcToken](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodesInfoNodeInfoXpackSecurityAuthcToken] (val x: Self) extends AnyVal {
     
     inline def setEnabled(value: String): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
   }

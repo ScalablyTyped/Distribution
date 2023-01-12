@@ -45,7 +45,8 @@ object buildSrcCompileMarkBaseMod {
       __obj.asInstanceOf[MarkCompiler]
     }
     
-    extension [Self <: MarkCompiler](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MarkCompiler] (val x: Self) extends AnyVal {
       
       inline def setEncodeEntry(value: UnitModel => VgEncodeEntry): Self = StObject.set(x, "encodeEntry", js.Any.fromFunction1(value))
       

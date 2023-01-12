@@ -34,7 +34,8 @@ object messaging {
       __obj.asInstanceOf[FcmOptions]
     }
     
-    extension [Self <: FcmOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FcmOptions] (val x: Self) extends AnyVal {
       
       inline def setAnalyticsLabel(value: String): Self = StObject.set(x, "analyticsLabel", value.asInstanceOf[js.Any])
       
@@ -82,7 +83,8 @@ object messaging {
       __obj.asInstanceOf[MessagePayload]
     }
     
-    extension [Self <: MessagePayload](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MessagePayload] (val x: Self) extends AnyVal {
       
       inline def setCollapseKey(value: String): Self = StObject.set(x, "collapseKey", value.asInstanceOf[js.Any])
       
@@ -206,7 +208,8 @@ object messaging {
       __obj.asInstanceOf[NotificationPayload]
     }
     
-    extension [Self <: NotificationPayload](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NotificationPayload] (val x: Self) extends AnyVal {
       
       inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       

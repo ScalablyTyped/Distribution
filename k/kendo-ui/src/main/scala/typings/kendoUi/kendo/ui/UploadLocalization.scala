@@ -49,7 +49,8 @@ object UploadLocalization {
     __obj.asInstanceOf[UploadLocalization]
   }
   
-  extension [Self <: UploadLocalization](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UploadLocalization] (val x: Self) extends AnyVal {
     
     inline def setCancel(value: String): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
     

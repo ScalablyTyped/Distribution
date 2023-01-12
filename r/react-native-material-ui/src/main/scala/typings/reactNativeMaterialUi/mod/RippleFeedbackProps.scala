@@ -20,7 +20,8 @@ object RippleFeedbackProps {
     __obj.asInstanceOf[RippleFeedbackProps]
   }
   
-  extension [Self <: RippleFeedbackProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RippleFeedbackProps] (val x: Self) extends AnyVal {
     
     inline def setBorderless(value: Boolean): Self = StObject.set(x, "borderless", value.asInstanceOf[js.Any])
     

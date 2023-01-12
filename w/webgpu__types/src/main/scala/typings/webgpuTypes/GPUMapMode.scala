@@ -24,7 +24,8 @@ object GPUMapMode {
     __obj.asInstanceOf[GPUMapMode]
   }
   
-  extension [Self <: GPUMapMode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GPUMapMode] (val x: Self) extends AnyVal {
     
     inline def setREAD(value: GPUFlagsConstant): Self = StObject.set(x, "READ", value.asInstanceOf[js.Any])
     

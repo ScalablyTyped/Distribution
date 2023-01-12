@@ -26,7 +26,8 @@ object ParsedTemplate {
     __obj.asInstanceOf[ParsedTemplate]
   }
   
-  extension [Self <: ParsedTemplate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParsedTemplate] (val x: Self) extends AnyVal {
     
     inline def setE(value: StringDictionary[js.Function]): Self = StObject.set(x, "e", value.asInstanceOf[js.Any])
     

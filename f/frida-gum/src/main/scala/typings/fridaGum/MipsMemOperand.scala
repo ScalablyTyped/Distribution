@@ -22,7 +22,8 @@ object MipsMemOperand {
     __obj.asInstanceOf[MipsMemOperand]
   }
   
-  extension [Self <: MipsMemOperand](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MipsMemOperand] (val x: Self) extends AnyVal {
     
     inline def setType(value: mem): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

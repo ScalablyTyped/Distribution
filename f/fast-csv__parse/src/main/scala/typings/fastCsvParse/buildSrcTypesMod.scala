@@ -57,7 +57,8 @@ object buildSrcTypesMod {
       __obj.asInstanceOf[RowValidationResult[R]]
     }
     
-    extension [Self <: RowValidationResult[?], R /* <: Row[Any] */](x: Self & RowValidationResult[R]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RowValidationResult[?], R /* <: Row[Any] */] (val x: Self & RowValidationResult[R]) extends AnyVal {
       
       inline def setIsValid(value: Boolean): Self = StObject.set(x, "isValid", value.asInstanceOf[js.Any])
       

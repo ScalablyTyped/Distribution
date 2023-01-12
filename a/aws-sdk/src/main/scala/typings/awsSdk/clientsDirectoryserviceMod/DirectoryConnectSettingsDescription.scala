@@ -43,7 +43,8 @@ object DirectoryConnectSettingsDescription {
     __obj.asInstanceOf[DirectoryConnectSettingsDescription]
   }
   
-  extension [Self <: DirectoryConnectSettingsDescription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DirectoryConnectSettingsDescription] (val x: Self) extends AnyVal {
     
     inline def setAvailabilityZones(value: AvailabilityZones): Self = StObject.set(x, "AvailabilityZones", value.asInstanceOf[js.Any])
     

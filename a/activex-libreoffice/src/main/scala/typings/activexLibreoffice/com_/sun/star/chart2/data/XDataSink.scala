@@ -39,7 +39,8 @@ object XDataSink {
     __obj.asInstanceOf[XDataSink]
   }
   
-  extension [Self <: XDataSink](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XDataSink] (val x: Self) extends AnyVal {
     
     inline def setSetData(value: SeqEquiv[XLabeledDataSequence] => Unit): Self = StObject.set(x, "setData", js.Any.fromFunction1(value))
   }

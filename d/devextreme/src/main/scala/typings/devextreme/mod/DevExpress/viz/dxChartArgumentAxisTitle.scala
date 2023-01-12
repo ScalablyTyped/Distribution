@@ -20,7 +20,8 @@ object dxChartArgumentAxisTitle {
     __obj.asInstanceOf[dxChartArgumentAxisTitle]
   }
   
-  extension [Self <: dxChartArgumentAxisTitle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxChartArgumentAxisTitle] (val x: Self) extends AnyVal {
     
     inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     

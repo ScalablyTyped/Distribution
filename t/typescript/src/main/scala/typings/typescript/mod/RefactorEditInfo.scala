@@ -25,7 +25,8 @@ object RefactorEditInfo {
     __obj.asInstanceOf[RefactorEditInfo]
   }
   
-  extension [Self <: RefactorEditInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RefactorEditInfo] (val x: Self) extends AnyVal {
     
     inline def setCommands(value: js.Array[CodeActionCommand]): Self = StObject.set(x, "commands", value.asInstanceOf[js.Any])
     

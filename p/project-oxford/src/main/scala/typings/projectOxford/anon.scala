@@ -31,7 +31,8 @@ object anon {
       __obj.asInstanceOf[AccentColor]
     }
     
-    extension [Self <: AccentColor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AccentColor] (val x: Self) extends AnyVal {
       
       inline def setAccentColor(value: String): Self = StObject.set(x, "accentColor", value.asInstanceOf[js.Any])
       
@@ -64,7 +65,8 @@ object anon {
       __obj.asInstanceOf[AdultScore]
     }
     
-    extension [Self <: AdultScore](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AdultScore] (val x: Self) extends AnyVal {
       
       inline def setAdultScore(value: Double): Self = StObject.set(x, "adultScore", value.asInstanceOf[js.Any])
       
@@ -91,7 +93,8 @@ object anon {
       __obj.asInstanceOf[Age]
     }
     
-    extension [Self <: Age](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Age] (val x: Self) extends AnyVal {
       
       inline def setAge(value: Double): Self = StObject.set(x, "age", value.asInstanceOf[js.Any])
       
@@ -114,7 +117,8 @@ object anon {
       __obj.asInstanceOf[BoundingBox]
     }
     
-    extension [Self <: BoundingBox](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BoundingBox] (val x: Self) extends AnyVal {
       
       inline def setBoundingBox(value: String): Self = StObject.set(x, "boundingBox", value.asInstanceOf[js.Any])
       
@@ -135,7 +139,8 @@ object anon {
       __obj.asInstanceOf[ClipArtType]
     }
     
-    extension [Self <: ClipArtType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClipArtType] (val x: Self) extends AnyVal {
       
       inline def setClipArtType(value: Double): Self = StObject.set(x, "clipArtType", value.asInstanceOf[js.Any])
       
@@ -156,7 +161,8 @@ object anon {
       __obj.asInstanceOf[Confidence]
     }
     
-    extension [Self <: Confidence](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Confidence] (val x: Self) extends AnyVal {
       
       inline def setConfidence(value: Double): Self = StObject.set(x, "confidence", value.asInstanceOf[js.Any])
       
@@ -179,7 +185,8 @@ object anon {
       __obj.asInstanceOf[Format]
     }
     
-    extension [Self <: Format](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Format] (val x: Self) extends AnyVal {
       
       inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
@@ -206,7 +213,8 @@ object anon {
       __obj.asInstanceOf[Height]
     }
     
-    extension [Self <: Height](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Height] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -231,7 +239,8 @@ object anon {
       __obj.asInstanceOf[Lines]
     }
     
-    extension [Self <: Lines](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Lines] (val x: Self) extends AnyVal {
       
       inline def setBoundingBox(value: String): Self = StObject.set(x, "boundingBox", value.asInstanceOf[js.Any])
       
@@ -254,7 +263,8 @@ object anon {
       __obj.asInstanceOf[Name]
     }
     
-    extension [Self <: Name](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Name] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -273,7 +283,8 @@ object anon {
       __obj.asInstanceOf[PersonId]
     }
     
-    extension [Self <: PersonId](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PersonId] (val x: Self) extends AnyVal {
       
       inline def setPersonId(value: String): Self = StObject.set(x, "personId", value.asInstanceOf[js.Any])
     }
@@ -294,7 +305,8 @@ object anon {
       __obj.asInstanceOf[Pitch]
     }
     
-    extension [Self <: Pitch](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Pitch] (val x: Self) extends AnyVal {
       
       inline def setPitch(value: Double): Self = StObject.set(x, "pitch", value.asInstanceOf[js.Any])
       
@@ -317,7 +329,8 @@ object anon {
       __obj.asInstanceOf[Words]
     }
     
-    extension [Self <: Words](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Words] (val x: Self) extends AnyVal {
       
       inline def setBoundingBox(value: String): Self = StObject.set(x, "boundingBox", value.asInstanceOf[js.Any])
       

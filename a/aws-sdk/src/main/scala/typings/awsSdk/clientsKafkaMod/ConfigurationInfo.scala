@@ -27,7 +27,8 @@ object ConfigurationInfo {
     __obj.asInstanceOf[ConfigurationInfo]
   }
   
-  extension [Self <: ConfigurationInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConfigurationInfo] (val x: Self) extends AnyVal {
     
     inline def setArn(value: string): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     

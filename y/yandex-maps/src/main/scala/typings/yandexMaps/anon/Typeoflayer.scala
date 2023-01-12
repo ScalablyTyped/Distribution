@@ -22,7 +22,8 @@ object Typeoflayer {
     __obj.asInstanceOf[Typeoflayer]
   }
   
-  extension [Self <: Typeoflayer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Typeoflayer] (val x: Self) extends AnyVal {
     
     inline def setManager(value: Instantiable2[/* map */ Map_, /* options */ js.UndefOr[TrafficImageZIndex], Manager]): Self = StObject.set(x, "Manager", value.asInstanceOf[js.Any])
   }

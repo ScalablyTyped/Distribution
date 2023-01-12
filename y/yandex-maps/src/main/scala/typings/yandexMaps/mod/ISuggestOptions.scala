@@ -28,7 +28,8 @@ object ISuggestOptions {
     __obj.asInstanceOf[ISuggestOptions]
   }
   
-  extension [Self <: ISuggestOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISuggestOptions] (val x: Self) extends AnyVal {
     
     inline def setBoundedBy(value: js.Array[js.Array[Double]]): Self = StObject.set(x, "boundedBy", value.asInstanceOf[js.Any])
     

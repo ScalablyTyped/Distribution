@@ -31,7 +31,8 @@ object ListConnectionsResponse {
     __obj.asInstanceOf[ListConnectionsResponse]
   }
   
-  extension [Self <: ListConnectionsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListConnectionsResponse] (val x: Self) extends AnyVal {
     
     inline def setConnections(value: js.Array[Person]): Self = StObject.set(x, "connections", value.asInstanceOf[js.Any])
     

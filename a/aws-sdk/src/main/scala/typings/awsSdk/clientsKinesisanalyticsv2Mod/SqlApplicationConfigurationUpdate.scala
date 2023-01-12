@@ -28,7 +28,8 @@ object SqlApplicationConfigurationUpdate {
     __obj.asInstanceOf[SqlApplicationConfigurationUpdate]
   }
   
-  extension [Self <: SqlApplicationConfigurationUpdate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SqlApplicationConfigurationUpdate] (val x: Self) extends AnyVal {
     
     inline def setInputUpdates(value: InputUpdates): Self = StObject.set(x, "InputUpdates", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object DeregisterAppInstanceUserEndpointRequest {
     __obj.asInstanceOf[DeregisterAppInstanceUserEndpointRequest]
   }
   
-  extension [Self <: DeregisterAppInstanceUserEndpointRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeregisterAppInstanceUserEndpointRequest] (val x: Self) extends AnyVal {
     
     inline def setAppInstanceUserArn(value: SensitiveChimeArn): Self = StObject.set(x, "AppInstanceUserArn", value.asInstanceOf[js.Any])
     

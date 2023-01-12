@@ -73,7 +73,8 @@ object ImageSummary {
     __obj.asInstanceOf[ImageSummary]
   }
   
-  extension [Self <: ImageSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImageSummary] (val x: Self) extends AnyVal {
     
     inline def setArn(value: ImageBuilderArn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     

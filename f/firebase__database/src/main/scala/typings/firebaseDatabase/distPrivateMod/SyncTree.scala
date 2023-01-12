@@ -57,7 +57,8 @@ object SyncTree {
     __obj.asInstanceOf[SyncTree]
   }
   
-  extension [Self <: SyncTree](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SyncTree] (val x: Self) extends AnyVal {
     
     inline def setListenProvider_(value: ListenProvider): Self = StObject.set(x, "listenProvider_", value.asInstanceOf[js.Any])
     

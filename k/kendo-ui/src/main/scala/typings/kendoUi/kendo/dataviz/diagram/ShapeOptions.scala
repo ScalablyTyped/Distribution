@@ -53,7 +53,8 @@ object ShapeOptions {
     __obj.asInstanceOf[ShapeOptions]
   }
   
-  extension [Self <: ShapeOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShapeOptions] (val x: Self) extends AnyVal {
     
     inline def setConnectorDefaults(value: ShapeConnectorDefaults): Self = StObject.set(x, "connectorDefaults", value.asInstanceOf[js.Any])
     

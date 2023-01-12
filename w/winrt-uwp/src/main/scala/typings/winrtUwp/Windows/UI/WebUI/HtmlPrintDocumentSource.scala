@@ -63,7 +63,8 @@ object HtmlPrintDocumentSource {
     __obj.asInstanceOf[HtmlPrintDocumentSource]
   }
   
-  extension [Self <: HtmlPrintDocumentSource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HtmlPrintDocumentSource] (val x: Self) extends AnyVal {
     
     inline def setBottomMargin(value: Double): Self = StObject.set(x, "bottomMargin", value.asInstanceOf[js.Any])
     

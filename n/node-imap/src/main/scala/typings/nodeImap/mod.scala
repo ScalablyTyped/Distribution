@@ -158,7 +158,8 @@ object mod {
       __obj.asInstanceOf[AppendOptions]
     }
     
-    extension [Self <: AppendOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AppendOptions] (val x: Self) extends AnyVal {
       
       inline def setDate(value: js.Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
       
@@ -233,7 +234,8 @@ object mod {
       __obj.asInstanceOf[Box]
     }
     
-    extension [Self <: Box](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Box] (val x: Self) extends AnyVal {
       
       inline def setFlags(value: js.Array[String]): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
       
@@ -310,7 +312,8 @@ object mod {
       __obj.asInstanceOf[Config]
     }
     
-    extension [Self <: Config](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
       
       inline def setAuthTimeout(value: Double): Self = StObject.set(x, "authTimeout", value.asInstanceOf[js.Any])
       
@@ -493,7 +496,8 @@ object mod {
       __obj.asInstanceOf[FetchOptions]
     }
     
-    extension [Self <: FetchOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FetchOptions] (val x: Self) extends AnyVal {
       
       inline def setBodies(value: String | js.Array[String]): Self = StObject.set(x, "bodies", value.asInstanceOf[js.Any])
       
@@ -544,7 +548,8 @@ object mod {
       __obj.asInstanceOf[Folder]
     }
     
-    extension [Self <: Folder](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Folder] (val x: Self) extends AnyVal {
       
       inline def setAttribs(value: js.Array[String]): Self = StObject.set(x, "attribs", value.asInstanceOf[js.Any])
       
@@ -617,7 +622,8 @@ object mod {
       __obj.asInstanceOf[ImapMessageAttributes]
     }
     
-    extension [Self <: ImapMessageAttributes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ImapMessageAttributes] (val x: Self) extends AnyVal {
       
       inline def setDate(value: js.Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
       
@@ -654,7 +660,8 @@ object mod {
       __obj.asInstanceOf[ImapMessageBodyInfo]
     }
     
-    extension [Self <: ImapMessageBodyInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ImapMessageBodyInfo] (val x: Self) extends AnyVal {
       
       inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
@@ -680,7 +687,8 @@ object mod {
       __obj.asInstanceOf[KeepAlive]
     }
     
-    extension [Self <: KeepAlive](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KeepAlive] (val x: Self) extends AnyVal {
       
       inline def setForceNoop(value: Boolean): Self = StObject.set(x, "forceNoop", value.asInstanceOf[js.Any])
       
@@ -814,7 +822,8 @@ object mod {
       __obj.asInstanceOf[MessageFunctions]
     }
     
-    extension [Self <: MessageFunctions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MessageFunctions] (val x: Self) extends AnyVal {
       
       inline def setAddFlags(value: (Any, Any, js.Function1[/* error */ js.Error, Unit]) => Unit): Self = StObject.set(x, "addFlags", js.Any.fromFunction3(value))
       

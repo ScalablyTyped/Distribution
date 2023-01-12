@@ -652,7 +652,8 @@ object DetailedHTMLPropsAudioHTM {
     __obj.asInstanceOf[DetailedHTMLPropsAudioHTM]
   }
   
-  extension [Self <: DetailedHTMLPropsAudioHTM](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DetailedHTMLPropsAudioHTM] (val x: Self) extends AnyVal {
     
     inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
     

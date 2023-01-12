@@ -23,7 +23,8 @@ object SaveRuleResponse {
     __obj.asInstanceOf[SaveRuleResponse]
   }
   
-  extension [Self <: SaveRuleResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SaveRuleResponse] (val x: Self) extends AnyVal {
     
     inline def setTaskID(value: Double): Self = StObject.set(x, "taskID", value.asInstanceOf[js.Any])
     

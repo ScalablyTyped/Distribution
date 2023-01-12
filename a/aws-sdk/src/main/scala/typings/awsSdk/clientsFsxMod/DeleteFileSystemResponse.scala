@@ -32,7 +32,8 @@ object DeleteFileSystemResponse {
     __obj.asInstanceOf[DeleteFileSystemResponse]
   }
   
-  extension [Self <: DeleteFileSystemResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteFileSystemResponse] (val x: Self) extends AnyVal {
     
     inline def setFileSystemId(value: FileSystemId): Self = StObject.set(x, "FileSystemId", value.asInstanceOf[js.Any])
     

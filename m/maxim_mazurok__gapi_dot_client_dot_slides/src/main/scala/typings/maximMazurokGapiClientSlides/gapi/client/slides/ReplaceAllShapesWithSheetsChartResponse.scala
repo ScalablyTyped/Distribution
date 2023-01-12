@@ -16,7 +16,8 @@ object ReplaceAllShapesWithSheetsChartResponse {
     __obj.asInstanceOf[ReplaceAllShapesWithSheetsChartResponse]
   }
   
-  extension [Self <: ReplaceAllShapesWithSheetsChartResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReplaceAllShapesWithSheetsChartResponse] (val x: Self) extends AnyVal {
     
     inline def setOccurrencesChanged(value: Double): Self = StObject.set(x, "occurrencesChanged", value.asInstanceOf[js.Any])
     

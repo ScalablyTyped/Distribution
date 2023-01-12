@@ -35,7 +35,8 @@ object anon {
       __obj.asInstanceOf[Abort]
     }
     
-    extension [Self <: Abort](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Abort] (val x: Self) extends AnyVal {
       
       inline def setAbort(value: (/* msg */ Double, /* file */ Double, /* line */ Double, /* column */ Double) => Unit): Self = StObject.set(x, "abort", js.Any.fromFunction4(value))
       
@@ -74,7 +75,8 @@ object anon {
       __obj.asInstanceOf[Exports[T]]
     }
     
-    extension [Self <: Exports[?], T /* <: Record[String, Any] */](x: Self & Exports[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Exports[?], T /* <: Record[String, Any] */] (val x: Self & Exports[T]) extends AnyVal {
       
       inline def setExports(value: ASUtil & T): Self = StObject.set(x, "exports", value.asInstanceOf[js.Any])
     }

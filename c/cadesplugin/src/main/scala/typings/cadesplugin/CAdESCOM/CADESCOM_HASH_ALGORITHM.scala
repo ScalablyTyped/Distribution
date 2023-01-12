@@ -43,7 +43,8 @@ object CADESCOM_HASH_ALGORITHM {
     __obj.asInstanceOf[CADESCOM_HASH_ALGORITHM]
   }
   
-  extension [Self <: CADESCOM_HASH_ALGORITHM](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CADESCOM_HASH_ALGORITHM] (val x: Self) extends AnyVal {
     
     inline def setCADESCOM_HASH_ALGORITHM_CP_GOST_3411(value: `100`): Self = StObject.set(x, "CADESCOM_HASH_ALGORITHM_CP_GOST_3411", value.asInstanceOf[js.Any])
     

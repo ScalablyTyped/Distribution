@@ -74,7 +74,8 @@ object Bulkloadedcursorinsertcalls {
     __obj.asInstanceOf[Bulkloadedcursorinsertcalls]
   }
   
-  extension [Self <: Bulkloadedcursorinsertcalls](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Bulkloadedcursorinsertcalls] (val x: Self) extends AnyVal {
     
     inline def `setBulk-loaded cursor-insert calls`(value: Double): Self = StObject.set(x, "bulk-loaded cursor-insert calls", value.asInstanceOf[js.Any])
     

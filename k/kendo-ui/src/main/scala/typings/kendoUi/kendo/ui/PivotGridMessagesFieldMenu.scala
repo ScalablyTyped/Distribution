@@ -35,7 +35,8 @@ object PivotGridMessagesFieldMenu {
     __obj.asInstanceOf[PivotGridMessagesFieldMenu]
   }
   
-  extension [Self <: PivotGridMessagesFieldMenu](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PivotGridMessagesFieldMenu] (val x: Self) extends AnyVal {
     
     inline def setCancel(value: String): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
     

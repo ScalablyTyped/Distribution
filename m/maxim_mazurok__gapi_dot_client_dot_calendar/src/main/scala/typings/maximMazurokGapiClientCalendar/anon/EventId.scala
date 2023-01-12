@@ -53,7 +53,8 @@ object EventId {
     __obj.asInstanceOf[EventId]
   }
   
-  extension [Self <: EventId](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventId] (val x: Self) extends AnyVal {
     
     inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object AutoDetectionS3SourceConfig {
     __obj.asInstanceOf[AutoDetectionS3SourceConfig]
   }
   
-  extension [Self <: AutoDetectionS3SourceConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AutoDetectionS3SourceConfig] (val x: Self) extends AnyVal {
     
     inline def setHistoricalDataPathList(value: HistoricalDataPathList): Self = StObject.set(x, "HistoricalDataPathList", value.asInstanceOf[js.Any])
     

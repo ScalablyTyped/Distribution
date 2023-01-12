@@ -43,7 +43,8 @@ object SasPortalDeviceConfig {
     __obj.asInstanceOf[SasPortalDeviceConfig]
   }
   
-  extension [Self <: SasPortalDeviceConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SasPortalDeviceConfig] (val x: Self) extends AnyVal {
     
     inline def setAirInterface(value: SasPortalDeviceAirInterface): Self = StObject.set(x, "airInterface", value.asInstanceOf[js.Any])
     

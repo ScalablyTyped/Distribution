@@ -202,7 +202,8 @@ object xRFeaturesWebXRControllerMovementMod {
       __obj.asInstanceOf[IWebXRControllerMovementOptions]
     }
     
-    extension [Self <: IWebXRControllerMovementOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IWebXRControllerMovementOptions] (val x: Self) extends AnyVal {
       
       inline def setCustomRegistrationConfigurations(value: js.Array[WebXRControllerMovementRegistrationConfiguration]): Self = StObject.set(x, "customRegistrationConfigurations", value.asInstanceOf[js.Any])
       
@@ -271,7 +272,8 @@ object xRFeaturesWebXRControllerMovementMod {
       __obj.asInstanceOf[WebXRControllerMovementFeatureContext]
     }
     
-    extension [Self <: WebXRControllerMovementFeatureContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WebXRControllerMovementFeatureContext] (val x: Self) extends AnyVal {
       
       inline def setMovementEnabled(value: Boolean): Self = StObject.set(x, "movementEnabled", value.asInstanceOf[js.Any])
       
@@ -328,7 +330,8 @@ object xRFeaturesWebXRControllerMovementMod {
       __obj.asInstanceOf[WebXRControllerMovementState]
     }
     
-    extension [Self <: WebXRControllerMovementState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WebXRControllerMovementState] (val x: Self) extends AnyVal {
       
       inline def setMoveX(value: Double): Self = StObject.set(x, "moveX", value.asInstanceOf[js.Any])
       

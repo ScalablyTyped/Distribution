@@ -34,7 +34,8 @@ object HTMLOption {
     __obj.asInstanceOf[HTMLOption]
   }
   
-  extension [Self <: HTMLOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HTMLOption] (val x: Self) extends AnyVal {
     
     inline def setChecked(value: Boolean): Self = StObject.set(x, "Checked", value.asInstanceOf[js.Any])
     

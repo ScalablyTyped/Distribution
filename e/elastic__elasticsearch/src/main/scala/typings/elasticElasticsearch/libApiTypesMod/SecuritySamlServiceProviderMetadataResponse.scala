@@ -15,7 +15,8 @@ object SecuritySamlServiceProviderMetadataResponse {
     __obj.asInstanceOf[SecuritySamlServiceProviderMetadataResponse]
   }
   
-  extension [Self <: SecuritySamlServiceProviderMetadataResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SecuritySamlServiceProviderMetadataResponse] (val x: Self) extends AnyVal {
     
     inline def setMetadata(value: String): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
   }

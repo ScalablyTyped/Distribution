@@ -15,7 +15,8 @@ object WatcherHourlySchedule {
     __obj.asInstanceOf[WatcherHourlySchedule]
   }
   
-  extension [Self <: WatcherHourlySchedule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WatcherHourlySchedule] (val x: Self) extends AnyVal {
     
     inline def setMinute(value: js.Array[integer]): Self = StObject.set(x, "minute", value.asInstanceOf[js.Any])
     

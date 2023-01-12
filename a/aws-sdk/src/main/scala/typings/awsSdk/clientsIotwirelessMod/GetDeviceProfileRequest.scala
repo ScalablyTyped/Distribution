@@ -18,7 +18,8 @@ object GetDeviceProfileRequest {
     __obj.asInstanceOf[GetDeviceProfileRequest]
   }
   
-  extension [Self <: GetDeviceProfileRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetDeviceProfileRequest] (val x: Self) extends AnyVal {
     
     inline def setId(value: DeviceProfileId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
   }

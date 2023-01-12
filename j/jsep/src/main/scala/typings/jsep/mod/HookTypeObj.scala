@@ -24,7 +24,8 @@ object HookTypeObj {
     __obj.asInstanceOf[HookTypeObj]
   }
   
-  extension [Self <: HookTypeObj](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HookTypeObj] (val x: Self) extends AnyVal {
     
     inline def `setAfter-expression`(value: HookCallback): Self = StObject.set(x, "after-expression", value.asInstanceOf[js.Any])
     

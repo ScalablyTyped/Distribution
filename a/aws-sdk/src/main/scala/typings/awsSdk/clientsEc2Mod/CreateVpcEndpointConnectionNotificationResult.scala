@@ -23,7 +23,8 @@ object CreateVpcEndpointConnectionNotificationResult {
     __obj.asInstanceOf[CreateVpcEndpointConnectionNotificationResult]
   }
   
-  extension [Self <: CreateVpcEndpointConnectionNotificationResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateVpcEndpointConnectionNotificationResult] (val x: Self) extends AnyVal {
     
     inline def setClientToken(value: String): Self = StObject.set(x, "ClientToken", value.asInstanceOf[js.Any])
     

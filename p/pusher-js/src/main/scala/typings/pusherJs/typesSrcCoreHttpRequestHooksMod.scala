@@ -20,7 +20,8 @@ object typesSrcCoreHttpRequestHooksMod {
       __obj.asInstanceOf[RequestHooks]
     }
     
-    extension [Self <: RequestHooks](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequestHooks] (val x: Self) extends AnyVal {
       
       inline def setAbortRequest(value: Any => Unit): Self = StObject.set(x, "abortRequest", js.Any.fromFunction1(value))
       

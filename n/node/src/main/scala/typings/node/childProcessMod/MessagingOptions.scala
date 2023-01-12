@@ -34,7 +34,8 @@ object MessagingOptions {
     __obj.asInstanceOf[MessagingOptions]
   }
   
-  extension [Self <: MessagingOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MessagingOptions] (val x: Self) extends AnyVal {
     
     inline def setKillSignal(value: Signals | Double): Self = StObject.set(x, "killSignal", value.asInstanceOf[js.Any])
     

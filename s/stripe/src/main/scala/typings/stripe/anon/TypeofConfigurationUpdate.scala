@@ -15,7 +15,8 @@ object TypeofConfigurationUpdate {
     __obj.asInstanceOf[TypeofConfigurationUpdate]
   }
   
-  extension [Self <: TypeofConfigurationUpdate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofConfigurationUpdate] (val x: Self) extends AnyVal {
     
     inline def setFeatures(value: TypeofFeatures): Self = StObject.set(x, "Features", value.asInstanceOf[js.Any])
   }

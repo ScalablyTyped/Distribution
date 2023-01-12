@@ -23,7 +23,8 @@ object DeleteConfigurationResponse {
     __obj.asInstanceOf[DeleteConfigurationResponse]
   }
   
-  extension [Self <: DeleteConfigurationResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteConfigurationResponse] (val x: Self) extends AnyVal {
     
     inline def setConfiguration_id(value: String): Self = StObject.set(x, "configuration_id", value.asInstanceOf[js.Any])
     

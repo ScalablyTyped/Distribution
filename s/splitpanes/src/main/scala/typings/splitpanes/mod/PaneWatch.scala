@@ -19,7 +19,8 @@ object PaneWatch {
     __obj.asInstanceOf[PaneWatch]
   }
   
-  extension [Self <: PaneWatch](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PaneWatch] (val x: Self) extends AnyVal {
     
     inline def setMaxSizeNumber(value: Double => Unit): Self = StObject.set(x, "maxSizeNumber", js.Any.fromFunction1(value))
     

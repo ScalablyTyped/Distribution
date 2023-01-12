@@ -28,7 +28,8 @@ object XInteractionContinuation {
     __obj.asInstanceOf[XInteractionContinuation]
   }
   
-  extension [Self <: XInteractionContinuation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XInteractionContinuation] (val x: Self) extends AnyVal {
     
     inline def setSelect(value: () => Unit): Self = StObject.set(x, "select", js.Any.fromFunction0(value))
   }

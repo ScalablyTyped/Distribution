@@ -34,7 +34,8 @@ object PublisherConnection {
     __obj.asInstanceOf[PublisherConnection]
   }
   
-  extension [Self <: PublisherConnection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PublisherConnection] (val x: Self) extends AnyVal {
     
     inline def setBiddingState(value: String): Self = StObject.set(x, "biddingState", value.asInstanceOf[js.Any])
     

@@ -32,7 +32,8 @@ object ChangeParagraphFormattingCommand {
     __obj.asInstanceOf[ChangeParagraphFormattingCommand]
   }
   
-  extension [Self <: ChangeParagraphFormattingCommand](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChangeParagraphFormattingCommand] (val x: Self) extends AnyVal {
     
     inline def setExecute(value: ParagraphFormattingSettings => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction1(value))
     

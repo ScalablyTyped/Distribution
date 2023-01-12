@@ -42,7 +42,8 @@ object RouterConfigLoader {
     __obj.asInstanceOf[RouterConfigLoader]
   }
   
-  extension [Self <: RouterConfigLoader](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RouterConfigLoader] (val x: Self) extends AnyVal {
     
     inline def setChildrenLoaders(value: Any): Self = StObject.set(x, "childrenLoaders", value.asInstanceOf[js.Any])
     

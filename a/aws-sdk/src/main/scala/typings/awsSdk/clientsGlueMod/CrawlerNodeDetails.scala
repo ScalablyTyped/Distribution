@@ -18,7 +18,8 @@ object CrawlerNodeDetails {
     __obj.asInstanceOf[CrawlerNodeDetails]
   }
   
-  extension [Self <: CrawlerNodeDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CrawlerNodeDetails] (val x: Self) extends AnyVal {
     
     inline def setCrawls(value: CrawlList): Self = StObject.set(x, "Crawls", value.asInstanceOf[js.Any])
     

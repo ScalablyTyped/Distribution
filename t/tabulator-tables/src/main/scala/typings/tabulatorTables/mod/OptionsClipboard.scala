@@ -91,7 +91,8 @@ object OptionsClipboard {
     __obj.asInstanceOf[OptionsClipboard]
   }
   
-  extension [Self <: OptionsClipboard](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OptionsClipboard] (val x: Self) extends AnyVal {
     
     inline def setClipboard(value: Boolean | copy | paste): Self = StObject.set(x, "clipboard", value.asInstanceOf[js.Any])
     

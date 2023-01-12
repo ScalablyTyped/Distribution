@@ -24,7 +24,8 @@ object distCliCommandsMonitorTypesMod {
       __obj.asInstanceOf[BadResult]
     }
     
-    extension [Self <: BadResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BadResult] (val x: Self) extends AnyVal {
       
       inline def setData(value: MonitorError): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -51,7 +52,8 @@ object distCliCommandsMonitorTypesMod {
       __obj.asInstanceOf[GoodResult]
     }
     
-    extension [Self <: GoodResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GoodResult] (val x: Self) extends AnyVal {
       
       inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       

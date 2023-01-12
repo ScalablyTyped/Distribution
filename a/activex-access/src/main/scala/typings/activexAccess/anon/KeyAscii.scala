@@ -15,7 +15,8 @@ object KeyAscii {
     __obj.asInstanceOf[KeyAscii]
   }
   
-  extension [Self <: KeyAscii](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KeyAscii] (val x: Self) extends AnyVal {
     
     inline def setKeyAscii(value: Double): Self = StObject.set(x, "KeyAscii", value.asInstanceOf[js.Any])
   }

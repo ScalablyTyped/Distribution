@@ -15,7 +15,8 @@ object BooksVolumesRecommendedRateResponse {
     __obj.asInstanceOf[BooksVolumesRecommendedRateResponse]
   }
   
-  extension [Self <: BooksVolumesRecommendedRateResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BooksVolumesRecommendedRateResponse] (val x: Self) extends AnyVal {
     
     inline def setConsistency_token(value: String): Self = StObject.set(x, "consistency_token", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object PickImplprogressPartialPi {
     __obj.asInstanceOf[PickImplprogressPartialPi]
   }
   
-  extension [Self <: PickImplprogressPartialPi](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickImplprogressPartialPi] (val x: Self) extends AnyVal {
     
     inline def setBar(value: String): Self = StObject.set(x, "bar", value.asInstanceOf[js.Any])
     

@@ -57,7 +57,8 @@ object SDPIceCandidate {
     __obj.asInstanceOf[SDPIceCandidate]
   }
   
-  extension [Self <: SDPIceCandidate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SDPIceCandidate] (val x: Self) extends AnyVal {
     
     inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     

@@ -25,7 +25,8 @@ object AudienceSegment {
     __obj.asInstanceOf[AudienceSegment]
   }
   
-  extension [Self <: AudienceSegment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AudienceSegment] (val x: Self) extends AnyVal {
     
     inline def setAllocation(value: Double): Self = StObject.set(x, "allocation", value.asInstanceOf[js.Any])
     

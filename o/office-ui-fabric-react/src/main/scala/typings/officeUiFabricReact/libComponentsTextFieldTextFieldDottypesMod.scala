@@ -81,7 +81,8 @@ object libComponentsTextFieldTextFieldDottypesMod {
       __obj.asInstanceOf[ITextField]
     }
     
-    extension [Self <: ITextField](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITextField] (val x: Self) extends AnyVal {
       
       inline def setBlur(value: () => Unit): Self = StObject.set(x, "blur", js.Any.fromFunction0(value))
       
@@ -333,7 +334,8 @@ object libComponentsTextFieldTextFieldDottypesMod {
       __obj.asInstanceOf[ITextFieldProps]
     }
     
-    extension [Self <: ITextFieldProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITextFieldProps] (val x: Self) extends AnyVal {
       
       inline def setAriaLabel(value: String): Self = StObject.set(x, "ariaLabel", value.asInstanceOf[js.Any])
       
@@ -531,7 +533,8 @@ object libComponentsTextFieldTextFieldDottypesMod {
       __obj.asInstanceOf[ITextFieldStyleProps]
     }
     
-    extension [Self <: ITextFieldStyleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITextFieldStyleProps] (val x: Self) extends AnyVal {
       
       inline def setAutoAdjustHeight(value: Boolean): Self = StObject.set(x, "autoAdjustHeight", value.asInstanceOf[js.Any])
       
@@ -667,7 +670,8 @@ object libComponentsTextFieldTextFieldDottypesMod {
       __obj.asInstanceOf[ITextFieldStyles]
     }
     
-    extension [Self <: ITextFieldStyles](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITextFieldStyles] (val x: Self) extends AnyVal {
       
       inline def setDescription(value: IStyle): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
@@ -759,7 +763,8 @@ object libComponentsTextFieldTextFieldDottypesMod {
       __obj.asInstanceOf[ITextFieldSubComponentStyles]
     }
     
-    extension [Self <: ITextFieldSubComponentStyles](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITextFieldSubComponentStyles] (val x: Self) extends AnyVal {
       
       inline def setLabel(value: IStyleFunctionOrObject[Any, Any]): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       

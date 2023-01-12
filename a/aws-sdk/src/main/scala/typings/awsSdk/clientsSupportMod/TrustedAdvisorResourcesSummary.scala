@@ -38,7 +38,8 @@ object TrustedAdvisorResourcesSummary {
     __obj.asInstanceOf[TrustedAdvisorResourcesSummary]
   }
   
-  extension [Self <: TrustedAdvisorResourcesSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TrustedAdvisorResourcesSummary] (val x: Self) extends AnyVal {
     
     inline def setResourcesFlagged(value: Long): Self = StObject.set(x, "resourcesFlagged", value.asInstanceOf[js.Any])
     

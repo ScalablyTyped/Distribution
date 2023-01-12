@@ -171,7 +171,8 @@ object ASPxClientTreeViewNode {
     __obj.asInstanceOf[ASPxClientTreeViewNode]
   }
   
-  extension [Self <: ASPxClientTreeViewNode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientTreeViewNode] (val x: Self) extends AnyVal {
     
     inline def setGetCheckState(value: () => String): Self = StObject.set(x, "GetCheckState", js.Any.fromFunction0(value))
     

@@ -52,7 +52,8 @@ object TextLine {
     __obj.asInstanceOf[TextLine]
   }
   
-  extension [Self <: TextLine](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextLine] (val x: Self) extends AnyVal {
     
     inline def setFirstNonWhitespaceCharacterIndex(value: Double): Self = StObject.set(x, "firstNonWhitespaceCharacterIndex", value.asInstanceOf[js.Any])
     

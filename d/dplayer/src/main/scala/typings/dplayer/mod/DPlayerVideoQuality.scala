@@ -19,7 +19,8 @@ object DPlayerVideoQuality {
     __obj.asInstanceOf[DPlayerVideoQuality]
   }
   
-  extension [Self <: DPlayerVideoQuality](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DPlayerVideoQuality] (val x: Self) extends AnyVal {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

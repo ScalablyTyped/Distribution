@@ -23,7 +23,8 @@ object ListMetricSetsResponse {
     __obj.asInstanceOf[ListMetricSetsResponse]
   }
   
-  extension [Self <: ListMetricSetsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListMetricSetsResponse] (val x: Self) extends AnyVal {
     
     inline def setMetricSetSummaryList(value: MetricSetSummaryList): Self = StObject.set(x, "MetricSetSummaryList", value.asInstanceOf[js.Any])
     

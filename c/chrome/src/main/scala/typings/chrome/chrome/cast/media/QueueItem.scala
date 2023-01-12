@@ -36,7 +36,8 @@ object QueueItem {
     __obj.asInstanceOf[QueueItem]
   }
   
-  extension [Self <: QueueItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueueItem] (val x: Self) extends AnyVal {
     
     inline def setActiveTrackIds(value: js.Array[Number]): Self = StObject.set(x, "activeTrackIds", value.asInstanceOf[js.Any])
     

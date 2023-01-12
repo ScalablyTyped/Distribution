@@ -28,7 +28,8 @@ object LogConfig {
     __obj.asInstanceOf[LogConfig]
   }
   
-  extension [Self <: LogConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LogConfig] (val x: Self) extends AnyVal {
     
     inline def setCloudWatchLogsRoleArn(value: String): Self = StObject.set(x, "cloudWatchLogsRoleArn", value.asInstanceOf[js.Any])
     

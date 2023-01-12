@@ -21,7 +21,8 @@ object IInputStreamReference {
     __obj.asInstanceOf[IInputStreamReference]
   }
   
-  extension [Self <: IInputStreamReference](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IInputStreamReference] (val x: Self) extends AnyVal {
     
     inline def setOpenSequentialReadAsync(value: () => IPromiseWithIAsyncOperation[IInputStream]): Self = StObject.set(x, "openSequentialReadAsync", js.Any.fromFunction0(value))
   }

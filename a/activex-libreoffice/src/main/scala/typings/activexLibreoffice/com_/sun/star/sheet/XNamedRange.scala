@@ -88,7 +88,8 @@ object XNamedRange {
     __obj.asInstanceOf[XNamedRange]
   }
   
-  extension [Self <: XNamedRange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XNamedRange] (val x: Self) extends AnyVal {
     
     inline def setContent(value: String): Self = StObject.set(x, "Content", value.asInstanceOf[js.Any])
     

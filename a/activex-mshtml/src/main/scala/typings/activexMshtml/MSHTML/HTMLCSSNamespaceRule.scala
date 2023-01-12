@@ -38,7 +38,8 @@ object HTMLCSSNamespaceRule {
     __obj.asInstanceOf[HTMLCSSNamespaceRule]
   }
   
-  extension [Self <: HTMLCSSNamespaceRule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HTMLCSSNamespaceRule] (val x: Self) extends AnyVal {
     
     inline def setCssText(value: String): Self = StObject.set(x, "cssText", value.asInstanceOf[js.Any])
     

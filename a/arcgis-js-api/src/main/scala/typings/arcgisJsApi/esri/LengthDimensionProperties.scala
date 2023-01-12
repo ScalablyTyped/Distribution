@@ -57,7 +57,8 @@ object LengthDimensionProperties {
     __obj.asInstanceOf[LengthDimensionProperties]
   }
   
-  extension [Self <: LengthDimensionProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LengthDimensionProperties] (val x: Self) extends AnyVal {
     
     inline def setEndPoint(value: PointProperties): Self = StObject.set(x, "endPoint", value.asInstanceOf[js.Any])
     

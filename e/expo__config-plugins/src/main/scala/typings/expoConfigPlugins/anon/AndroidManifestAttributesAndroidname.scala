@@ -27,7 +27,8 @@ object AndroidManifestAttributesAndroidname {
     __obj.asInstanceOf[AndroidManifestAttributesAndroidname]
   }
   
-  extension [Self <: AndroidManifestAttributesAndroidname](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AndroidManifestAttributesAndroidname] (val x: Self) extends AnyVal {
     
     inline def setAndroidColonname(value: String | androidDotintentDotactionDotVIEW): Self = StObject.set(x, "android:name", value.asInstanceOf[js.Any])
     

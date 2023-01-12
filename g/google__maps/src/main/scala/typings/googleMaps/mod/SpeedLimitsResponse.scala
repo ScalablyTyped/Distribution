@@ -19,7 +19,8 @@ object SpeedLimitsResponse {
     __obj.asInstanceOf[SpeedLimitsResponse]
   }
   
-  extension [Self <: SpeedLimitsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpeedLimitsResponse] (val x: Self) extends AnyVal {
     
     inline def setSnappedPoints(value: js.Array[SnappedPoint]): Self = StObject.set(x, "snappedPoints", value.asInstanceOf[js.Any])
     

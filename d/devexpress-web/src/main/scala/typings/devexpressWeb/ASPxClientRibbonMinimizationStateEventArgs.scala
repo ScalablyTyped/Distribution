@@ -23,7 +23,8 @@ object ASPxClientRibbonMinimizationStateEventArgs {
     __obj.asInstanceOf[ASPxClientRibbonMinimizationStateEventArgs]
   }
   
-  extension [Self <: ASPxClientRibbonMinimizationStateEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientRibbonMinimizationStateEventArgs] (val x: Self) extends AnyVal {
     
     inline def setRibbonState(value: Double): Self = StObject.set(x, "ribbonState", value.asInstanceOf[js.Any])
   }

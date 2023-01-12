@@ -23,7 +23,8 @@ object CheckDomainTransferabilityRequest {
     __obj.asInstanceOf[CheckDomainTransferabilityRequest]
   }
   
-  extension [Self <: CheckDomainTransferabilityRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CheckDomainTransferabilityRequest] (val x: Self) extends AnyVal {
     
     inline def setAuthCode(value: DomainAuthCode): Self = StObject.set(x, "AuthCode", value.asInstanceOf[js.Any])
     

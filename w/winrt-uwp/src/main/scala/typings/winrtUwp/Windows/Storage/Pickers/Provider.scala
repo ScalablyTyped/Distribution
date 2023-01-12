@@ -176,7 +176,8 @@ object Provider {
       __obj.asInstanceOf[FileRemovedEventArgs]
     }
     
-    extension [Self <: FileRemovedEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileRemovedEventArgs] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     }
@@ -249,7 +250,8 @@ object Provider {
       __obj.asInstanceOf[PickerClosingDeferral]
     }
     
-    extension [Self <: PickerClosingDeferral](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PickerClosingDeferral] (val x: Self) extends AnyVal {
       
       inline def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
     }
@@ -271,7 +273,8 @@ object Provider {
       __obj.asInstanceOf[PickerClosingEventArgs]
     }
     
-    extension [Self <: PickerClosingEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PickerClosingEventArgs] (val x: Self) extends AnyVal {
       
       inline def setClosingOperation(value: PickerClosingOperation): Self = StObject.set(x, "closingOperation", value.asInstanceOf[js.Any])
       
@@ -298,7 +301,8 @@ object Provider {
       __obj.asInstanceOf[PickerClosingOperation]
     }
     
-    extension [Self <: PickerClosingOperation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PickerClosingOperation] (val x: Self) extends AnyVal {
       
       inline def setDeadline(value: js.Date): Self = StObject.set(x, "deadline", value.asInstanceOf[js.Any])
       
@@ -325,7 +329,8 @@ object Provider {
       __obj.asInstanceOf[TargetFileRequest]
     }
     
-    extension [Self <: TargetFileRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TargetFileRequest] (val x: Self) extends AnyVal {
       
       inline def setGetDeferral(value: () => TargetFileRequestDeferral): Self = StObject.set(x, "getDeferral", js.Any.fromFunction0(value))
       
@@ -346,7 +351,8 @@ object Provider {
       __obj.asInstanceOf[TargetFileRequestDeferral]
     }
     
-    extension [Self <: TargetFileRequestDeferral](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TargetFileRequestDeferral] (val x: Self) extends AnyVal {
       
       inline def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
     }
@@ -365,7 +371,8 @@ object Provider {
       __obj.asInstanceOf[TargetFileRequestedEventArgs]
     }
     
-    extension [Self <: TargetFileRequestedEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TargetFileRequestedEventArgs] (val x: Self) extends AnyVal {
       
       inline def setRequest(value: TargetFileRequest): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     }

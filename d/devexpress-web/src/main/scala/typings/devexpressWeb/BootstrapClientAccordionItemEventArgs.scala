@@ -33,7 +33,8 @@ object BootstrapClientAccordionItemEventArgs {
     __obj.asInstanceOf[BootstrapClientAccordionItemEventArgs]
   }
   
-  extension [Self <: BootstrapClientAccordionItemEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BootstrapClientAccordionItemEventArgs] (val x: Self) extends AnyVal {
     
     inline def setHtmlElement(value: Any): Self = StObject.set(x, "htmlElement", value.asInstanceOf[js.Any])
     

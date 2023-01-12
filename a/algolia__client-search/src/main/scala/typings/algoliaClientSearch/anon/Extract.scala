@@ -19,7 +19,8 @@ object Extract {
     __obj.asInstanceOf[Extract]
   }
   
-  extension [Self <: Extract](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Extract] (val x: Self) extends AnyVal {
     
     inline def setExtract(value: String): Self = StObject.set(x, "extract", value.asInstanceOf[js.Any])
     

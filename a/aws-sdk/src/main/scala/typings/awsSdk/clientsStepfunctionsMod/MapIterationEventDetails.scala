@@ -23,7 +23,8 @@ object MapIterationEventDetails {
     __obj.asInstanceOf[MapIterationEventDetails]
   }
   
-  extension [Self <: MapIterationEventDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MapIterationEventDetails] (val x: Self) extends AnyVal {
     
     inline def setIndex(value: UnsignedInteger): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     

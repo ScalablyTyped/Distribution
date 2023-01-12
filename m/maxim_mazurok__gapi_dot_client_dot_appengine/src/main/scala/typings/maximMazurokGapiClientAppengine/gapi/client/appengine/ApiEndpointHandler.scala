@@ -16,7 +16,8 @@ object ApiEndpointHandler {
     __obj.asInstanceOf[ApiEndpointHandler]
   }
   
-  extension [Self <: ApiEndpointHandler](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApiEndpointHandler] (val x: Self) extends AnyVal {
     
     inline def setScriptPath(value: String): Self = StObject.set(x, "scriptPath", value.asInstanceOf[js.Any])
     

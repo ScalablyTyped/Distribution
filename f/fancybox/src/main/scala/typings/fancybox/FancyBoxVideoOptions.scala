@@ -19,7 +19,8 @@ object FancyBoxVideoOptions {
     __obj.asInstanceOf[FancyBoxVideoOptions]
   }
   
-  extension [Self <: FancyBoxVideoOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FancyBoxVideoOptions] (val x: Self) extends AnyVal {
     
     inline def setAutoStart(value: Boolean): Self = StObject.set(x, "autoStart", value.asInstanceOf[js.Any])
     

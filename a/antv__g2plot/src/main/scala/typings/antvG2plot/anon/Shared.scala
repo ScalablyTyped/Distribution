@@ -19,7 +19,8 @@ object Shared {
     __obj.asInstanceOf[Shared]
   }
   
-  extension [Self <: Shared](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Shared] (val x: Self) extends AnyVal {
     
     inline def setShared(value: Boolean): Self = StObject.set(x, "shared", value.asInstanceOf[js.Any])
     

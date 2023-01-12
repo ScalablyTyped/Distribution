@@ -27,7 +27,8 @@ object ColorRampColorsForClassBreaks {
     __obj.asInstanceOf[ColorRampColorsForClassBreaks]
   }
   
-  extension [Self <: ColorRampColorsForClassBreaks](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ColorRampColorsForClassBreaks] (val x: Self) extends AnyVal {
     
     inline def setColors(value: js.Array[Color_]): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
     

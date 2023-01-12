@@ -28,7 +28,8 @@ object TaskTemplateConstraints {
     __obj.asInstanceOf[TaskTemplateConstraints]
   }
   
-  extension [Self <: TaskTemplateConstraints](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TaskTemplateConstraints] (val x: Self) extends AnyVal {
     
     inline def setInvisibleFields(value: InvisibleTaskTemplateFields): Self = StObject.set(x, "InvisibleFields", value.asInstanceOf[js.Any])
     

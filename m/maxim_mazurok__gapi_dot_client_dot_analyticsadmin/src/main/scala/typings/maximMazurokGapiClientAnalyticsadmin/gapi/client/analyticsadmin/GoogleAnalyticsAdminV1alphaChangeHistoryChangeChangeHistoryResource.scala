@@ -55,7 +55,8 @@ object GoogleAnalyticsAdminV1alphaChangeHistoryChangeChangeHistoryResource {
     __obj.asInstanceOf[GoogleAnalyticsAdminV1alphaChangeHistoryChangeChangeHistoryResource]
   }
   
-  extension [Self <: GoogleAnalyticsAdminV1alphaChangeHistoryChangeChangeHistoryResource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleAnalyticsAdminV1alphaChangeHistoryChangeChangeHistoryResource] (val x: Self) extends AnyVal {
     
     inline def setAccount(value: GoogleAnalyticsAdminV1alphaAccount): Self = StObject.set(x, "account", value.asInstanceOf[js.Any])
     

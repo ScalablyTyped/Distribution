@@ -68,7 +68,8 @@ object ElasticsearchClusterConfig {
     __obj.asInstanceOf[ElasticsearchClusterConfig]
   }
   
-  extension [Self <: ElasticsearchClusterConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ElasticsearchClusterConfig] (val x: Self) extends AnyVal {
     
     inline def setColdStorageOptions(value: ColdStorageOptions): Self = StObject.set(x, "ColdStorageOptions", value.asInstanceOf[js.Any])
     

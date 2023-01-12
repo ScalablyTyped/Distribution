@@ -30,7 +30,8 @@ object DnsRecordWithoutPriority {
     __obj.asInstanceOf[DnsRecordWithoutPriority]
   }
   
-  extension [Self <: DnsRecordWithoutPriority](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DnsRecordWithoutPriority] (val x: Self) extends AnyVal {
     
     inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     

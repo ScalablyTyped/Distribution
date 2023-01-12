@@ -27,7 +27,8 @@ object JSXMemberExpression {
     __obj.asInstanceOf[JSXMemberExpression]
   }
   
-  extension [Self <: JSXMemberExpression](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JSXMemberExpression] (val x: Self) extends AnyVal {
     
     inline def setObject(value: JSXObject): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
     

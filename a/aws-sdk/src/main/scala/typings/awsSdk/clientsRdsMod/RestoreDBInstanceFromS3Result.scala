@@ -15,7 +15,8 @@ object RestoreDBInstanceFromS3Result {
     __obj.asInstanceOf[RestoreDBInstanceFromS3Result]
   }
   
-  extension [Self <: RestoreDBInstanceFromS3Result](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RestoreDBInstanceFromS3Result] (val x: Self) extends AnyVal {
     
     inline def setDBInstance(value: DBInstance): Self = StObject.set(x, "DBInstance", value.asInstanceOf[js.Any])
     

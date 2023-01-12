@@ -29,7 +29,8 @@ object PhonegapPluginPush {
       __obj.asInstanceOf[CategoryAction]
     }
     
-    extension [Self <: CategoryAction](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CategoryAction] (val x: Self) extends AnyVal {
       
       inline def setMaybe(value: CategoryActionData): Self = StObject.set(x, "maybe", value.asInstanceOf[js.Any])
       
@@ -62,7 +63,8 @@ object PhonegapPluginPush {
       __obj.asInstanceOf[CategoryActionData]
     }
     
-    extension [Self <: CategoryActionData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CategoryActionData] (val x: Self) extends AnyVal {
       
       inline def setCallback(value: String): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
       
@@ -115,7 +117,8 @@ object PhonegapPluginPush {
       __obj.asInstanceOf[InitOptions]
     }
     
-    extension [Self <: InitOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InitOptions] (val x: Self) extends AnyVal {
       
       inline def setAndroid(value: ClearBadge): Self = StObject.set(x, "android", value.asInstanceOf[js.Any])
       
@@ -170,7 +173,8 @@ object PhonegapPluginPush {
       __obj.asInstanceOf[NotificationEventAdditionalData]
     }
     
-    extension [Self <: NotificationEventAdditionalData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NotificationEventAdditionalData] (val x: Self) extends AnyVal {
       
       inline def setColdstart(value: Boolean): Self = StObject.set(x, "coldstart", value.asInstanceOf[js.Any])
       
@@ -242,7 +246,8 @@ object PhonegapPluginPush {
       __obj.asInstanceOf[NotificationEventResponse]
     }
     
-    extension [Self <: NotificationEventResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NotificationEventResponse] (val x: Self) extends AnyVal {
       
       inline def setAdditionalData(value: NotificationEventAdditionalData): Self = StObject.set(x, "additionalData", value.asInstanceOf[js.Any])
       
@@ -408,7 +413,8 @@ object PhonegapPluginPush {
       __obj.asInstanceOf[RegistrationEventResponse]
     }
     
-    extension [Self <: RegistrationEventResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RegistrationEventResponse] (val x: Self) extends AnyVal {
       
       inline def setRegistrationId(value: String): Self = StObject.set(x, "registrationId", value.asInstanceOf[js.Any])
     }

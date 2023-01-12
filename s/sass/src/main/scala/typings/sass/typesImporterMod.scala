@@ -65,7 +65,8 @@ object typesImporterMod {
       __obj.asInstanceOf[FileImporter[sync]]
     }
     
-    extension [Self <: FileImporter[?], sync /* <: typings.sass.sassStrings.sync | async */](x: Self & FileImporter[sync]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileImporter[?], sync /* <: typings.sass.sassStrings.sync | async */] (val x: Self & FileImporter[sync]) extends AnyVal {
       
       inline def setFindFileUrl(value: (String, FromImport) => PromiseOr[URL | Null, sync]): Self = StObject.set(x, "findFileUrl", js.Any.fromFunction2(value))
     }
@@ -202,7 +203,8 @@ object typesImporterMod {
       __obj.asInstanceOf[Importer[sync]]
     }
     
-    extension [Self <: Importer[?], sync /* <: typings.sass.sassStrings.sync | async */](x: Self & Importer[sync]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Importer[?], sync /* <: typings.sass.sassStrings.sync | async */] (val x: Self & Importer[sync]) extends AnyVal {
       
       inline def setCanonicalize(value: (String, FromImport) => PromiseOr[URL | Null, sync]): Self = StObject.set(x, "canonicalize", js.Any.fromFunction2(value))
       
@@ -235,7 +237,8 @@ object typesImporterMod {
       __obj.asInstanceOf[ImporterResult]
     }
     
-    extension [Self <: ImporterResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ImporterResult] (val x: Self) extends AnyVal {
       
       inline def setContents(value: String): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
       

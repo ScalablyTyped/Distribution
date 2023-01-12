@@ -30,7 +30,8 @@ object GlobalTransferCommandArgument2 {
     __obj.asInstanceOf[GlobalTransferCommandArgument2]
   }
   
-  extension [Self <: GlobalTransferCommandArgument2](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GlobalTransferCommandArgument2] (val x: Self) extends AnyVal {
     
     inline def setDocumentId(value: String): Self = StObject.set(x, "DocumentId", value.asInstanceOf[js.Any])
     

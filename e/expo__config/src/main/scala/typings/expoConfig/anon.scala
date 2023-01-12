@@ -65,7 +65,8 @@ object anon {
       __obj.asInstanceOf[AndroidManifestPath]
     }
     
-    extension [Self <: AndroidManifestPath](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AndroidManifestPath] (val x: Self) extends AnyVal {
       
       inline def setAndroidManifestPath(value: String): Self = StObject.set(x, "androidManifestPath", value.asInstanceOf[js.Any])
       
@@ -90,7 +91,8 @@ object anon {
       __obj.asInstanceOf[AppName]
     }
     
-    extension [Self <: AppName](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AppName] (val x: Self) extends AnyVal {
       
       inline def setAppName(value: String): Self = StObject.set(x, "appName", value.asInstanceOf[js.Any])
       
@@ -120,7 +122,8 @@ object anon {
       __obj.asInstanceOf[ClientScopingConfigexpoCl]
     }
     
-    extension [Self <: ClientScopingConfigexpoCl](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClientScopingConfigexpoCl] (val x: Self) extends AnyVal {
       
       inline def setEas(value: EASConfig): Self = StObject.set(x, "eas", value.asInstanceOf[js.Any])
       
@@ -156,7 +159,8 @@ object anon {
       __obj.asInstanceOf[Config]
     }
     
-    extension [Self <: Config](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
       
       inline def setConfig(value: AppJSONConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
@@ -185,7 +189,8 @@ object anon {
       __obj.asInstanceOf[ConfigName]
     }
     
-    extension [Self <: ConfigName](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConfigName] (val x: Self) extends AnyVal {
       
       inline def setConfigName(value: String): Self = StObject.set(x, "configName", value.asInstanceOf[js.Any])
       
@@ -211,7 +216,8 @@ object anon {
       __obj.asInstanceOf[ExportedObjectType]
     }
     
-    extension [Self <: ExportedObjectType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExportedObjectType] (val x: Self) extends AnyVal {
       
       inline def setConfig(value: Any): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
@@ -323,7 +329,8 @@ object anon {
       __obj.asInstanceOf[PartialExpoConfig]
     }
     
-    extension [Self <: PartialExpoConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialExpoConfig] (val x: Self) extends AnyVal {
       
       inline def setAndroid(value: Android): Self = StObject.set(x, "android", value.asInstanceOf[js.Any])
       
@@ -529,7 +536,8 @@ object anon {
       __obj.asInstanceOf[PickExpoConfigowner]
     }
     
-    extension [Self <: PickExpoConfigowner](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PickExpoConfigowner] (val x: Self) extends AnyVal {
       
       inline def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
       
@@ -551,7 +559,8 @@ object anon {
       __obj.asInstanceOf[PickExpoConfigownerslug]
     }
     
-    extension [Self <: PickExpoConfigownerslug](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PickExpoConfigownerslug] (val x: Self) extends AnyVal {
       
       inline def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
       
@@ -573,7 +582,8 @@ object anon {
       __obj.asInstanceOf[PickExpoConfigsdkVersion]
     }
     
-    extension [Self <: PickExpoConfigsdkVersion](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PickExpoConfigsdkVersion] (val x: Self) extends AnyVal {
       
       inline def setSdkVersion(value: String): Self = StObject.set(x, "sdkVersion", value.asInstanceOf[js.Any])
       
@@ -594,7 +604,8 @@ object anon {
       __obj.asInstanceOf[Platform]
     }
     
-    extension [Self <: Platform](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Platform] (val x: Self) extends AnyVal {
       
       inline def setPlatform(value: String): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
       
@@ -617,7 +628,8 @@ object anon {
       __obj.asInstanceOf[ProjectRoot]
     }
     
-    extension [Self <: ProjectRoot](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProjectRoot] (val x: Self) extends AnyVal {
       
       inline def setProjectRoot(value: String): Self = StObject.set(x, "projectRoot", value.asInstanceOf[js.Any])
       

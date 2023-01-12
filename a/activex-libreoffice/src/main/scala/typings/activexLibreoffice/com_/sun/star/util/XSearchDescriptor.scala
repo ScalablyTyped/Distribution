@@ -45,7 +45,8 @@ object XSearchDescriptor {
     __obj.asInstanceOf[XSearchDescriptor]
   }
   
-  extension [Self <: XSearchDescriptor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XSearchDescriptor] (val x: Self) extends AnyVal {
     
     inline def setGetSearchString(value: () => String): Self = StObject.set(x, "getSearchString", js.Any.fromFunction0(value))
     

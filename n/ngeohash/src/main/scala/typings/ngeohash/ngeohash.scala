@@ -24,7 +24,8 @@ object ngeohash {
       __obj.asInstanceOf[GeographicPoint]
     }
     
-    extension [Self <: GeographicPoint](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GeographicPoint] (val x: Self) extends AnyVal {
       
       inline def setError(value: Latitude): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       

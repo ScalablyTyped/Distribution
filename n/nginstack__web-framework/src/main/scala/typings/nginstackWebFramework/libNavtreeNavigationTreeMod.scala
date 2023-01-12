@@ -247,7 +247,8 @@ object libNavtreeNavigationTreeMod {
       __obj.asInstanceOf[NavigationTree]
     }
     
-    extension [Self <: NavigationTree](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NavigationTree] (val x: Self) extends AnyVal {
       
       inline def setAccessibleChildren(value: Any): Self = StObject.set(x, "accessibleChildren", value.asInstanceOf[js.Any])
       

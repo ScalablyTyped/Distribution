@@ -31,7 +31,8 @@ object SelectOptions {
     __obj.asInstanceOf[SelectOptions]
   }
   
-  extension [Self <: SelectOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SelectOptions] (val x: Self) extends AnyVal {
     
     inline def setExpression(value: String): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
     

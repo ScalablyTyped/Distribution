@@ -17,7 +17,8 @@ object NavigationProp {
     __obj.asInstanceOf[NavigationProp[S]]
   }
   
-  extension [Self <: NavigationProp[?], S](x: Self & NavigationProp[S]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NavigationProp[?], S] (val x: Self & NavigationProp[S]) extends AnyVal {
     
     inline def setDispatch(value: /* action */ NavigationAction => Boolean): Self = StObject.set(x, "dispatch", js.Any.fromFunction1(value))
     

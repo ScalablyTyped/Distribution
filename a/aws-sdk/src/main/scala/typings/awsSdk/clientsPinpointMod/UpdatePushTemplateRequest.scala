@@ -30,7 +30,8 @@ object UpdatePushTemplateRequest {
     __obj.asInstanceOf[UpdatePushTemplateRequest]
   }
   
-  extension [Self <: UpdatePushTemplateRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdatePushTemplateRequest] (val x: Self) extends AnyVal {
     
     inline def setCreateNewVersion(value: boolean): Self = StObject.set(x, "CreateNewVersion", value.asInstanceOf[js.Any])
     

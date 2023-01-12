@@ -33,7 +33,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[ValidateCustomResponse]
     }
     
-    extension [Self <: ValidateCustomResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ValidateCustomResponse] (val x: Self) extends AnyVal {
       
       inline def setResponse(value: Any): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
     }
@@ -52,7 +53,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[ValidateResponse]
     }
     
-    extension [Self <: ValidateResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ValidateResponse] (val x: Self) extends AnyVal {
       
       inline def setCredentials(value: Any): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
       

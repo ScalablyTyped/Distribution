@@ -31,7 +31,8 @@ object SourceMandateAcceptance {
     __obj.asInstanceOf[SourceMandateAcceptance]
   }
   
-  extension [Self <: SourceMandateAcceptance](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SourceMandateAcceptance] (val x: Self) extends AnyVal {
     
     inline def setDate(value: Double): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     

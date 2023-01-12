@@ -27,7 +27,8 @@ object FragmentRefPathInResponse {
     __obj.asInstanceOf[FragmentRefPathInResponse]
   }
   
-  extension [Self <: FragmentRefPathInResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FragmentRefPathInResponse] (val x: Self) extends AnyVal {
     
     inline def setFragmentRefPathInResponse(value: js.Array[String | Double]): Self = StObject.set(x, "fragmentRefPathInResponse", value.asInstanceOf[js.Any])
     

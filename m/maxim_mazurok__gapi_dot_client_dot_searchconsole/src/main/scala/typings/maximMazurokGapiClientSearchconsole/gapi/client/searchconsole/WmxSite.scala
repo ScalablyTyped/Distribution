@@ -19,7 +19,8 @@ object WmxSite {
     __obj.asInstanceOf[WmxSite]
   }
   
-  extension [Self <: WmxSite](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WmxSite] (val x: Self) extends AnyVal {
     
     inline def setPermissionLevel(value: String): Self = StObject.set(x, "permissionLevel", value.asInstanceOf[js.Any])
     

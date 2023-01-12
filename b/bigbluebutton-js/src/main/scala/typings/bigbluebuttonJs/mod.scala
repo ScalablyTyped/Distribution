@@ -52,7 +52,8 @@ object mod {
       __obj.asInstanceOf[AdministrationType]
     }
     
-    extension [Self <: AdministrationType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AdministrationType] (val x: Self) extends AnyVal {
       
       inline def setCreate(value: (String, String, js.Object) => String): Self = StObject.set(x, "create", js.Any.fromFunction3(value))
       
@@ -84,7 +85,8 @@ object mod {
       __obj.asInstanceOf[ApiType]
     }
     
-    extension [Self <: ApiType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ApiType] (val x: Self) extends AnyVal {
       
       inline def setAdministration(value: AdministrationType): Self = StObject.set(x, "administration", value.asInstanceOf[js.Any])
       
@@ -115,7 +117,8 @@ object mod {
       __obj.asInstanceOf[HooksType]
     }
     
-    extension [Self <: HooksType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HooksType] (val x: Self) extends AnyVal {
       
       inline def setCreate(value: (String, js.Object) => String): Self = StObject.set(x, "create", js.Any.fromFunction2(value))
       
@@ -140,7 +143,8 @@ object mod {
       __obj.asInstanceOf[MonitoringType]
     }
     
-    extension [Self <: MonitoringType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MonitoringType] (val x: Self) extends AnyVal {
       
       inline def setGetMeetingInfo(value: String => String): Self = StObject.set(x, "getMeetingInfo", js.Any.fromFunction1(value))
       
@@ -172,7 +176,8 @@ object mod {
       __obj.asInstanceOf[RecordingType]
     }
     
-    extension [Self <: RecordingType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RecordingType] (val x: Self) extends AnyVal {
       
       inline def setDeleteRecordings(value: String => String): Self = StObject.set(x, "deleteRecordings", js.Any.fromFunction1(value))
       

@@ -20,7 +20,8 @@ object Collection {
     __obj.asInstanceOf[Collection[K]]
   }
   
-  extension [Self <: Collection[?], K](x: Self & Collection[K]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Collection[?], K] (val x: Self & Collection[K]) extends AnyVal {
     
     inline def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
     

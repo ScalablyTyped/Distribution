@@ -15,7 +15,8 @@ object ViewStateChangeInfo {
     __obj.asInstanceOf[ViewStateChangeInfo]
   }
   
-  extension [Self <: ViewStateChangeInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ViewStateChangeInfo] (val x: Self) extends AnyVal {
     
     inline def setViewState(value: ViewportProps): Self = StObject.set(x, "viewState", value.asInstanceOf[js.Any])
   }

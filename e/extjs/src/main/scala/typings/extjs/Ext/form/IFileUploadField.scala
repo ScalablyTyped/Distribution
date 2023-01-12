@@ -62,7 +62,8 @@ object IFileUploadField {
     __obj.asInstanceOf[IFileUploadField]
   }
   
-  extension [Self <: IFileUploadField](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IFileUploadField] (val x: Self) extends AnyVal {
     
     inline def setButton(value: IButton): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
     

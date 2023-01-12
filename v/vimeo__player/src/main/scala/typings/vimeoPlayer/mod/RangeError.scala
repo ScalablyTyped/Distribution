@@ -18,7 +18,8 @@ object RangeError {
     __obj.asInstanceOf[RangeError]
   }
   
-  extension [Self <: RangeError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RangeError] (val x: Self) extends AnyVal {
     
     inline def setName(value: typings.vimeoPlayer.vimeoPlayerStrings.RangeError): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }

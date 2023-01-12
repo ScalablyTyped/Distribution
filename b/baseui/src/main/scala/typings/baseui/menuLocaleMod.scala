@@ -24,7 +24,8 @@ object menuLocaleMod extends Shortcut {
       __obj.asInstanceOf[MenuLocale]
     }
     
-    extension [Self <: MenuLocale](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MenuLocale] (val x: Self) extends AnyVal {
       
       inline def setNoResultsMsg(value: String): Self = StObject.set(x, "noResultsMsg", value.asInstanceOf[js.Any])
       

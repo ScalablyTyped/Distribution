@@ -43,7 +43,8 @@ object EntitySummary {
     __obj.asInstanceOf[EntitySummary]
   }
   
-  extension [Self <: EntitySummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EntitySummary] (val x: Self) extends AnyVal {
     
     inline def setEntityArn(value: ARN): Self = StObject.set(x, "EntityArn", value.asInstanceOf[js.Any])
     

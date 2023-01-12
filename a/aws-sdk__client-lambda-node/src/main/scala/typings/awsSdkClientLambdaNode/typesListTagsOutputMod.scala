@@ -31,7 +31,8 @@ object typesListTagsOutputMod {
       __obj.asInstanceOf[ListTagsOutput]
     }
     
-    extension [Self <: ListTagsOutput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListTagsOutput] (val x: Self) extends AnyVal {
       
       inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
       

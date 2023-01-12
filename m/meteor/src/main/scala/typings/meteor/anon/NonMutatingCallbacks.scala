@@ -15,7 +15,8 @@ object NonMutatingCallbacks {
     __obj.asInstanceOf[NonMutatingCallbacks]
   }
   
-  extension [Self <: NonMutatingCallbacks](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NonMutatingCallbacks] (val x: Self) extends AnyVal {
     
     inline def setNonMutatingCallbacks(value: Boolean): Self = StObject.set(x, "nonMutatingCallbacks", value.asInstanceOf[js.Any])
     

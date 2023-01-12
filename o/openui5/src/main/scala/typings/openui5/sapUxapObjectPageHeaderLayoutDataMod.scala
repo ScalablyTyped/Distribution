@@ -344,7 +344,8 @@ object sapUxapObjectPageHeaderLayoutDataMod {
       __obj.asInstanceOf[ObjectPageHeaderLayoutDataSettings]
     }
     
-    extension [Self <: ObjectPageHeaderLayoutDataSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ObjectPageHeaderLayoutDataSettings] (val x: Self) extends AnyVal {
       
       inline def setShowSeparatorAfter(value: Boolean | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "showSeparatorAfter", value.asInstanceOf[js.Any])
       

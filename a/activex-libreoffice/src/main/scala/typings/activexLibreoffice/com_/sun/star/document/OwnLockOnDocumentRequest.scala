@@ -30,7 +30,8 @@ object OwnLockOnDocumentRequest {
     __obj.asInstanceOf[OwnLockOnDocumentRequest]
   }
   
-  extension [Self <: OwnLockOnDocumentRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OwnLockOnDocumentRequest] (val x: Self) extends AnyVal {
     
     inline def setDocumentURL(value: String): Self = StObject.set(x, "DocumentURL", value.asInstanceOf[js.Any])
     

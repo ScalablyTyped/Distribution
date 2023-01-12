@@ -49,7 +49,8 @@ object SearchActivatedEventArgs {
     __obj.asInstanceOf[SearchActivatedEventArgs]
   }
   
-  extension [Self <: SearchActivatedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchActivatedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setCurrentlyShownApplicationViewId(value: Double): Self = StObject.set(x, "currentlyShownApplicationViewId", value.asInstanceOf[js.Any])
     

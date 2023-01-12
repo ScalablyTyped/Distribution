@@ -23,7 +23,8 @@ object ThirdPartyJob {
     __obj.asInstanceOf[ThirdPartyJob]
   }
   
-  extension [Self <: ThirdPartyJob](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ThirdPartyJob] (val x: Self) extends AnyVal {
     
     inline def setClientId(value: ClientId): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
     

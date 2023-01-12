@@ -29,7 +29,8 @@ object FoldersResource {
     __obj.asInstanceOf[FoldersResource]
   }
   
-  extension [Self <: FoldersResource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FoldersResource] (val x: Self) extends AnyVal {
     
     inline def setAssets(value: AssetsResource): Self = StObject.set(x, "assets", value.asInstanceOf[js.Any])
     

@@ -58,7 +58,8 @@ object RecoveryInstanceFailback {
     __obj.asInstanceOf[RecoveryInstanceFailback]
   }
   
-  extension [Self <: RecoveryInstanceFailback](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecoveryInstanceFailback] (val x: Self) extends AnyVal {
     
     inline def setAgentLastSeenByServiceDateTime(value: ISO8601DatetimeString): Self = StObject.set(x, "agentLastSeenByServiceDateTime", value.asInstanceOf[js.Any])
     

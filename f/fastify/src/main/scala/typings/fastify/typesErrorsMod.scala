@@ -607,7 +607,8 @@ object typesErrorsMod {
       __obj.asInstanceOf[FastifyErrorCodes]
     }
     
-    extension [Self <: FastifyErrorCodes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FastifyErrorCodes] (val x: Self) extends AnyVal {
       
       inline def setFST_ERR_BAD_STATUS_CODE(value: FastifyErrorConstructor): Self = StObject.set(x, "FST_ERR_BAD_STATUS_CODE", value.asInstanceOf[js.Any])
       

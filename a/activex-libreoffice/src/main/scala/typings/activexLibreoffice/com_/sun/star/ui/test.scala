@@ -45,7 +45,8 @@ object test {
       __obj.asInstanceOf[XUIObject]
     }
     
-    extension [Self <: XUIObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XUIObject] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: SafeArray[String]): Self = StObject.set(x, "Children", value.asInstanceOf[js.Any])
       
@@ -82,7 +83,8 @@ object test {
       __obj.asInstanceOf[XUITest]
     }
     
-    extension [Self <: XUITest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XUITest] (val x: Self) extends AnyVal {
       
       inline def setExecuteCommand(value: String => Unit): Self = StObject.set(x, "executeCommand", js.Any.fromFunction1(value))
       

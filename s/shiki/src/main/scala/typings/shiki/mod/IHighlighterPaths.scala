@@ -23,7 +23,8 @@ object IHighlighterPaths {
     __obj.asInstanceOf[IHighlighterPaths]
   }
   
-  extension [Self <: IHighlighterPaths](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IHighlighterPaths] (val x: Self) extends AnyVal {
     
     inline def setLanguages(value: String): Self = StObject.set(x, "languages", value.asInstanceOf[js.Any])
     

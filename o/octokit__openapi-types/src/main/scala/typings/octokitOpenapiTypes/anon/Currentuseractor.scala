@@ -46,7 +46,8 @@ object Currentuseractor {
     __obj.asInstanceOf[Currentuseractor]
   }
   
-  extension [Self <: Currentuseractor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Currentuseractor] (val x: Self) extends AnyVal {
     
     inline def setCurrent_user(
       value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['link-with-type'] */ js.Any

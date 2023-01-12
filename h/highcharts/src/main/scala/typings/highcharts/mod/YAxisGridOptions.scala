@@ -42,7 +42,8 @@ object YAxisGridOptions {
     __obj.asInstanceOf[YAxisGridOptions]
   }
   
-  extension [Self <: YAxisGridOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: YAxisGridOptions] (val x: Self) extends AnyVal {
     
     inline def setBorderColor(value: ColorString): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
     

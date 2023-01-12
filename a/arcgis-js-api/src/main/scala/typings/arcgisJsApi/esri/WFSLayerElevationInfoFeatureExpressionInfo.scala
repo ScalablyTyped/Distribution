@@ -20,7 +20,8 @@ object WFSLayerElevationInfoFeatureExpressionInfo {
     __obj.asInstanceOf[WFSLayerElevationInfoFeatureExpressionInfo]
   }
   
-  extension [Self <: WFSLayerElevationInfoFeatureExpressionInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WFSLayerElevationInfoFeatureExpressionInfo] (val x: Self) extends AnyVal {
     
     inline def setExpression(value: String): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
     

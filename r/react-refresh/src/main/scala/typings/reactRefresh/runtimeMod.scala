@@ -54,7 +54,8 @@ object runtimeMod {
       __obj.asInstanceOf[Family]
     }
     
-    extension [Self <: Family](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Family] (val x: Self) extends AnyVal {
       
       inline def setCurrent(value: Any): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
     }
@@ -75,7 +76,8 @@ object runtimeMod {
       __obj.asInstanceOf[RefreshUpdate]
     }
     
-    extension [Self <: RefreshUpdate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RefreshUpdate] (val x: Self) extends AnyVal {
       
       inline def setStaleFamilies(value: Set[Family]): Self = StObject.set(x, "staleFamilies", value.asInstanceOf[js.Any])
       

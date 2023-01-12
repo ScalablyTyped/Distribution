@@ -330,7 +330,8 @@ object srcViewStylesmapMod {
       __obj.asInstanceOf[BoxSides]
     }
     
-    extension [Self <: BoxSides](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BoxSides] (val x: Self) extends AnyVal {
       
       inline def setBottom(value: String): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       

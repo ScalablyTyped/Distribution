@@ -31,7 +31,8 @@ object typesRuntimeMotionSpringMod {
       __obj.asInstanceOf[SpringOpts]
     }
     
-    extension [Self <: SpringOpts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SpringOpts] (val x: Self) extends AnyVal {
       
       inline def setDamping(value: Double): Self = StObject.set(x, "damping", value.asInstanceOf[js.Any])
       
@@ -60,7 +61,8 @@ object typesRuntimeMotionSpringMod {
       __obj.asInstanceOf[SpringUpdateOpts]
     }
     
-    extension [Self <: SpringUpdateOpts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SpringUpdateOpts] (val x: Self) extends AnyVal {
       
       inline def setHard(value: Any): Self = StObject.set(x, "hard", value.asInstanceOf[js.Any])
       

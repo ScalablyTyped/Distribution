@@ -66,7 +66,8 @@ object domain {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setAllowUnicode(value: Boolean): Self = StObject.set(x, "allowUnicode", value.asInstanceOf[js.Any])
       
@@ -95,7 +96,8 @@ object domain {
         __obj.asInstanceOf[Allow]
       }
       
-      extension [Self <: Allow](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Allow] (val x: Self) extends AnyVal {
         
         inline def setAllow(value: Set[String] | `true`): Self = StObject.set(x, "allow", value.asInstanceOf[js.Any])
       }
@@ -112,7 +114,8 @@ object domain {
         __obj.asInstanceOf[Deny]
       }
       
-      extension [Self <: Deny](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Deny] (val x: Self) extends AnyVal {
         
         inline def setDeny(value: Set[String]): Self = StObject.set(x, "deny", value.asInstanceOf[js.Any])
       }

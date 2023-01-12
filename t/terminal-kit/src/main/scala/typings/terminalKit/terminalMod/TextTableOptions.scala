@@ -73,7 +73,8 @@ object TextTableOptions {
     __obj.asInstanceOf[TextTableOptions]
   }
   
-  extension [Self <: TextTableOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextTableOptions] (val x: Self) extends AnyVal {
     
     inline def setBorderAttr(value: js.Object): Self = StObject.set(x, "borderAttr", value.asInstanceOf[js.Any])
     

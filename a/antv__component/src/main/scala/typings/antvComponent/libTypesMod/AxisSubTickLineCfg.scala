@@ -32,7 +32,8 @@ object AxisSubTickLineCfg {
     __obj.asInstanceOf[AxisSubTickLineCfg]
   }
   
-  extension [Self <: AxisSubTickLineCfg](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AxisSubTickLineCfg] (val x: Self) extends AnyVal {
     
     inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     

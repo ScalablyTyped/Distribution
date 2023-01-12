@@ -25,7 +25,8 @@ object BoundsMixins {
     __obj.asInstanceOf[BoundsMixins]
   }
   
-  extension [Self <: BoundsMixins](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BoundsMixins] (val x: Self) extends AnyVal {
     
     inline def setBounds(value: full | flush): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object ManyToManyAttribute {
     __obj.asInstanceOf[ManyToManyAttribute]
   }
   
-  extension [Self <: ManyToManyAttribute](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ManyToManyAttribute] (val x: Self) extends AnyVal {
     
     inline def setCollection(value: String): Self = StObject.set(x, "collection", value.asInstanceOf[js.Any])
     

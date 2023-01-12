@@ -32,7 +32,8 @@ object MapShowItemsOptions {
     __obj.asInstanceOf[MapShowItemsOptions]
   }
   
-  extension [Self <: MapShowItemsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MapShowItemsOptions] (val x: Self) extends AnyVal {
     
     inline def setAnimate(value: Boolean): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     

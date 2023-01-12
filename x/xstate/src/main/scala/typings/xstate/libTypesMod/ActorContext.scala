@@ -22,7 +22,8 @@ object ActorContext {
     __obj.asInstanceOf[ActorContext[TEvent, TEmitted]]
   }
   
-  extension [Self <: ActorContext[?, ?], TEvent /* <: EventObject */, TEmitted](x: Self & (ActorContext[TEvent, TEmitted])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ActorContext[?, ?], TEvent /* <: EventObject */, TEmitted] (val x: Self & (ActorContext[TEvent, TEmitted])) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

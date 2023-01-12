@@ -20,7 +20,8 @@ object IGeneralSubtree {
     __obj.asInstanceOf[IGeneralSubtree]
   }
   
-  extension [Self <: IGeneralSubtree](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IGeneralSubtree] (val x: Self) extends AnyVal {
     
     inline def setBase(value: GeneralName): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
     

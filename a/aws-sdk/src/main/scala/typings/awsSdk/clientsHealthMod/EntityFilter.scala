@@ -43,7 +43,8 @@ object EntityFilter {
     __obj.asInstanceOf[EntityFilter]
   }
   
-  extension [Self <: EntityFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EntityFilter] (val x: Self) extends AnyVal {
     
     inline def setEntityArns(value: entityArnList): Self = StObject.set(x, "entityArns", value.asInstanceOf[js.Any])
     

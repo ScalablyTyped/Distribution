@@ -68,7 +68,8 @@ object Window {
     __obj.asInstanceOf[Window]
   }
   
-  extension [Self <: Window](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Window] (val x: Self) extends AnyVal {
     
     inline def setCaption(value: String): Self = StObject.set(x, "Caption", value.asInstanceOf[js.Any])
     

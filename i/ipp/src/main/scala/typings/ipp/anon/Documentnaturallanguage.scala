@@ -39,7 +39,8 @@ object Documentnaturallanguage {
     __obj.asInstanceOf[Documentnaturallanguage]
   }
   
-  extension [Self <: Documentnaturallanguage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Documentnaturallanguage] (val x: Self) extends AnyVal {
     
     inline def `setAttributes-charset`(value: CharacterSet): Self = StObject.set(x, "attributes-charset", value.asInstanceOf[js.Any])
     

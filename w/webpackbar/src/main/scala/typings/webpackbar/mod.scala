@@ -70,7 +70,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setBasic(value: Boolean): Self = StObject.set(x, "basic", value.asInstanceOf[js.Any])
       
@@ -155,7 +156,8 @@ object mod {
       __obj.asInstanceOf[Reporter]
     }
     
-    extension [Self <: Reporter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Reporter] (val x: Self) extends AnyVal {
       
       inline def setAfterAllDone(value: /* context */ WebpackBar => Unit): Self = StObject.set(x, "afterAllDone", js.Any.fromFunction1(value))
       
@@ -237,7 +239,8 @@ object mod {
       __obj.asInstanceOf[Status]
     }
     
-    extension [Self <: Status](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Status] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       

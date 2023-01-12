@@ -66,7 +66,8 @@ object libCommonSignatureHelpMod {
       __obj.asInstanceOf[SignatureHelpMiddleware]
     }
     
-    extension [Self <: SignatureHelpMiddleware](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SignatureHelpMiddleware] (val x: Self) extends AnyVal {
       
       inline def setProvideSignatureHelp(
         value: js.ThisFunction5[

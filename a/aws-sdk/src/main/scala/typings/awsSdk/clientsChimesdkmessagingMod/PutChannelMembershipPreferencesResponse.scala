@@ -28,7 +28,8 @@ object PutChannelMembershipPreferencesResponse {
     __obj.asInstanceOf[PutChannelMembershipPreferencesResponse]
   }
   
-  extension [Self <: PutChannelMembershipPreferencesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutChannelMembershipPreferencesResponse] (val x: Self) extends AnyVal {
     
     inline def setChannelArn(value: ChimeArn): Self = StObject.set(x, "ChannelArn", value.asInstanceOf[js.Any])
     

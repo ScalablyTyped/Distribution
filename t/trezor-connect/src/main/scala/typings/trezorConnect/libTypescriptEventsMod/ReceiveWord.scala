@@ -20,7 +20,8 @@ object ReceiveWord {
     __obj.asInstanceOf[ReceiveWord]
   }
   
-  extension [Self <: ReceiveWord](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReceiveWord] (val x: Self) extends AnyVal {
     
     inline def setPayload(value: String): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     

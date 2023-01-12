@@ -35,7 +35,8 @@ object RequiredOmitParseOptionsD {
     __obj.asInstanceOf[RequiredOmitParseOptionsD]
   }
   
-  extension [Self <: RequiredOmitParseOptionsD](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RequiredOmitParseOptionsD] (val x: Self) extends AnyVal {
     
     inline def setIntAsBigInt(value: Boolean): Self = StObject.set(x, "intAsBigInt", value.asInstanceOf[js.Any])
     

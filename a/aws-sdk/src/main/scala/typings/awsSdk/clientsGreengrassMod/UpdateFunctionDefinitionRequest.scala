@@ -23,7 +23,8 @@ object UpdateFunctionDefinitionRequest {
     __obj.asInstanceOf[UpdateFunctionDefinitionRequest]
   }
   
-  extension [Self <: UpdateFunctionDefinitionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateFunctionDefinitionRequest] (val x: Self) extends AnyVal {
     
     inline def setFunctionDefinitionId(value: string): Self = StObject.set(x, "FunctionDefinitionId", value.asInstanceOf[js.Any])
     

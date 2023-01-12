@@ -19,7 +19,8 @@ object BITAND {
     __obj.asInstanceOf[BITAND]
   }
   
-  extension [Self <: BITAND](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BITAND] (val x: Self) extends AnyVal {
     
     inline def setBITAND(value: MethodString): Self = StObject.set(x, "BITAND", value.asInstanceOf[js.Any])
     

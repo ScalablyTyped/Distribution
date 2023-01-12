@@ -21,7 +21,8 @@ object SequentialScale {
     __obj.asInstanceOf[SequentialScale]
   }
   
-  extension [Self <: SequentialScale](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SequentialScale] (val x: Self) extends AnyVal {
     
     inline def setType(value: sequential): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

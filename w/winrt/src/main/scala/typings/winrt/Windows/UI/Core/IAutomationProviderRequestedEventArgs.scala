@@ -17,7 +17,8 @@ object IAutomationProviderRequestedEventArgs {
     __obj.asInstanceOf[IAutomationProviderRequestedEventArgs]
   }
   
-  extension [Self <: IAutomationProviderRequestedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IAutomationProviderRequestedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setAutomationProvider(value: Any): Self = StObject.set(x, "automationProvider", value.asInstanceOf[js.Any])
   }

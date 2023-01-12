@@ -92,7 +92,8 @@ object mod {
       __obj.asInstanceOf[LDOptions]
     }
     
-    extension [Self <: LDOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LDOptions] (val x: Self) extends AnyVal {
       
       inline def setFetchGoals(value: Boolean): Self = StObject.set(x, "fetchGoals", value.asInstanceOf[js.Any])
       

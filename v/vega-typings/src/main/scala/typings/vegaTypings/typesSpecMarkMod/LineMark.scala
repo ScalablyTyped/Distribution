@@ -23,7 +23,8 @@ object LineMark {
     __obj.asInstanceOf[LineMark]
   }
   
-  extension [Self <: LineMark](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LineMark] (val x: Self) extends AnyVal {
     
     inline def setType(value: line): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

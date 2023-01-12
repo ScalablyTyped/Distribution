@@ -16,7 +16,8 @@ object IUtilImage {
     __obj.asInstanceOf[IUtilImage]
   }
   
-  extension [Self <: IUtilImage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IUtilImage] (val x: Self) extends AnyVal {
     
     inline def setSetImageSmoothing(value: (CanvasRenderingContext2D, Any) => Unit): Self = StObject.set(x, "setImageSmoothing", js.Any.fromFunction2(value))
   }

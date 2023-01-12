@@ -27,7 +27,8 @@ object SourceKafka {
     __obj.asInstanceOf[SourceKafka]
   }
   
-  extension [Self <: SourceKafka](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SourceKafka] (val x: Self) extends AnyVal {
     
     inline def setKafka_topic_name(value: String): Self = StObject.set(x, "kafka_topic_name", value.asInstanceOf[js.Any])
     

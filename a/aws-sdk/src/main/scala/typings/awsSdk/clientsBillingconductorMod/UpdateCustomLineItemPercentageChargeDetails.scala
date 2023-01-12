@@ -18,7 +18,8 @@ object UpdateCustomLineItemPercentageChargeDetails {
     __obj.asInstanceOf[UpdateCustomLineItemPercentageChargeDetails]
   }
   
-  extension [Self <: UpdateCustomLineItemPercentageChargeDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateCustomLineItemPercentageChargeDetails] (val x: Self) extends AnyVal {
     
     inline def setPercentageValue(value: CustomLineItemPercentageChargeValue): Self = StObject.set(x, "PercentageValue", value.asInstanceOf[js.Any])
   }

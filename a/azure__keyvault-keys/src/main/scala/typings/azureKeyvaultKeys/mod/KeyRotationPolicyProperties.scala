@@ -25,7 +25,8 @@ object KeyRotationPolicyProperties {
     __obj.asInstanceOf[KeyRotationPolicyProperties]
   }
   
-  extension [Self <: KeyRotationPolicyProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KeyRotationPolicyProperties] (val x: Self) extends AnyVal {
     
     inline def setExpiresIn(value: String): Self = StObject.set(x, "expiresIn", value.asInstanceOf[js.Any])
     

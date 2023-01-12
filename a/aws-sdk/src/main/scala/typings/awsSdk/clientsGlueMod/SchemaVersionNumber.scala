@@ -23,7 +23,8 @@ object SchemaVersionNumber {
     __obj.asInstanceOf[SchemaVersionNumber]
   }
   
-  extension [Self <: SchemaVersionNumber](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SchemaVersionNumber] (val x: Self) extends AnyVal {
     
     inline def setLatestVersion(value: LatestSchemaVersionBoolean): Self = StObject.set(x, "LatestVersion", value.asInstanceOf[js.Any])
     

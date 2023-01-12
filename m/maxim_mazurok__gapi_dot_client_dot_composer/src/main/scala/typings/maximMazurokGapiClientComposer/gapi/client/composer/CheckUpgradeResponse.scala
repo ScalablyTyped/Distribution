@@ -30,7 +30,8 @@ object CheckUpgradeResponse {
     __obj.asInstanceOf[CheckUpgradeResponse]
   }
   
-  extension [Self <: CheckUpgradeResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CheckUpgradeResponse] (val x: Self) extends AnyVal {
     
     inline def setBuildLogUri(value: String): Self = StObject.set(x, "buildLogUri", value.asInstanceOf[js.Any])
     

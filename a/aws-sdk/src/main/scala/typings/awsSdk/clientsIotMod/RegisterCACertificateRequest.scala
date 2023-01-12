@@ -48,7 +48,8 @@ object RegisterCACertificateRequest {
     __obj.asInstanceOf[RegisterCACertificateRequest]
   }
   
-  extension [Self <: RegisterCACertificateRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RegisterCACertificateRequest] (val x: Self) extends AnyVal {
     
     inline def setAllowAutoRegistration(value: AllowAutoRegistration): Self = StObject.set(x, "allowAutoRegistration", value.asInstanceOf[js.Any])
     

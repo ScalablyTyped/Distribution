@@ -17,7 +17,8 @@ object Uptime {
     __obj.asInstanceOf[Uptime]
   }
   
-  extension [Self <: Uptime](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Uptime] (val x: Self) extends AnyVal {
     
     inline def setIdle(value: Double): Self = StObject.set(x, "idle", value.asInstanceOf[js.Any])
     

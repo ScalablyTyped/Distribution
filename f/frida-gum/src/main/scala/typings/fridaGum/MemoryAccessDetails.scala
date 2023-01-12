@@ -58,7 +58,8 @@ object MemoryAccessDetails {
     __obj.asInstanceOf[MemoryAccessDetails]
   }
   
-  extension [Self <: MemoryAccessDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MemoryAccessDetails] (val x: Self) extends AnyVal {
     
     inline def setAddress(value: NativePointer): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     

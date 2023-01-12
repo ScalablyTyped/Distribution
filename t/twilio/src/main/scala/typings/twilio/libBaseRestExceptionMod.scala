@@ -53,7 +53,8 @@ object libBaseRestExceptionMod {
       __obj.asInstanceOf[RestException]
     }
     
-    extension [Self <: RestException](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RestException] (val x: Self) extends AnyVal {
       
       inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       

@@ -48,7 +48,8 @@ object namespacesNormandyAddonStudyMod {
         __obj.asInstanceOf[Static]
       }
       
-      extension [Self <: Static](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Static] (val x: Self) extends AnyVal {
         
         inline def setEndStudy(value: String => Unit): Self = StObject.set(x, "endStudy", js.Any.fromFunction1(value))
         
@@ -154,7 +155,8 @@ object namespacesNormandyAddonStudyMod {
         __obj.asInstanceOf[Study]
       }
       
-      extension [Self <: Study](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Study] (val x: Self) extends AnyVal {
         
         inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
         

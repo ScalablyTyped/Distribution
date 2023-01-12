@@ -54,7 +54,8 @@ object UpdateLevelEvent {
     __obj.asInstanceOf[UpdateLevelEvent]
   }
   
-  extension [Self <: UpdateLevelEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateLevelEvent] (val x: Self) extends AnyVal {
     
     inline def setBest(value: js.Object): Self = StObject.set(x, "best", value.asInstanceOf[js.Any])
     

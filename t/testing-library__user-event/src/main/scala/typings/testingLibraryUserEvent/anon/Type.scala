@@ -20,7 +20,8 @@ object Type {
     __obj.asInstanceOf[Type]
   }
   
-  extension [Self <: Type](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Type] (val x: Self) extends AnyVal {
     
     inline def setSelection(value: typings.std.Selection): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
     

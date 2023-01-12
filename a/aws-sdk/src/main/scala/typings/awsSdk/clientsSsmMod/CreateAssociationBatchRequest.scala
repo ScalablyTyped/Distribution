@@ -18,7 +18,8 @@ object CreateAssociationBatchRequest {
     __obj.asInstanceOf[CreateAssociationBatchRequest]
   }
   
-  extension [Self <: CreateAssociationBatchRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateAssociationBatchRequest] (val x: Self) extends AnyVal {
     
     inline def setEntries(value: CreateAssociationBatchRequestEntries): Self = StObject.set(x, "Entries", value.asInstanceOf[js.Any])
     

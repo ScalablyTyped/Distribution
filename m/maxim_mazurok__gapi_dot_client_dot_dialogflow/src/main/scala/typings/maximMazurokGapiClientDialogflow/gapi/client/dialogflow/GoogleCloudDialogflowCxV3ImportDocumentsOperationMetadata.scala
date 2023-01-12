@@ -16,7 +16,8 @@ object GoogleCloudDialogflowCxV3ImportDocumentsOperationMetadata {
     __obj.asInstanceOf[GoogleCloudDialogflowCxV3ImportDocumentsOperationMetadata]
   }
   
-  extension [Self <: GoogleCloudDialogflowCxV3ImportDocumentsOperationMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDialogflowCxV3ImportDocumentsOperationMetadata] (val x: Self) extends AnyVal {
     
     inline def setGenericMetadata(value: GoogleCloudDialogflowCxV3GenericKnowledgeOperationMetadata): Self = StObject.set(x, "genericMetadata", value.asInstanceOf[js.Any])
     

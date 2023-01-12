@@ -19,7 +19,8 @@ object BaseImageRemediation {
     __obj.asInstanceOf[BaseImageRemediation]
   }
   
-  extension [Self <: BaseImageRemediation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BaseImageRemediation] (val x: Self) extends AnyVal {
     
     inline def setAdvice(value: js.Array[BaseImageRemediationAdvice]): Self = StObject.set(x, "advice", value.asInstanceOf[js.Any])
     

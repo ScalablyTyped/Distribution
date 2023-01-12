@@ -55,7 +55,8 @@ object KmlBalloonStyle {
     __obj.asInstanceOf[KmlBalloonStyle]
   }
   
-  extension [Self <: KmlBalloonStyle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KmlBalloonStyle] (val x: Self) extends AnyVal {
     
     inline def setGetBgColor(value: () => KmlColor): Self = StObject.set(x, "getBgColor", js.Any.fromFunction0(value))
     

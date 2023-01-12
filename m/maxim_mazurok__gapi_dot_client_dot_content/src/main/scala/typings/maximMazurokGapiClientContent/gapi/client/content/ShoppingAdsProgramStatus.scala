@@ -19,7 +19,8 @@ object ShoppingAdsProgramStatus {
     __obj.asInstanceOf[ShoppingAdsProgramStatus]
   }
   
-  extension [Self <: ShoppingAdsProgramStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShoppingAdsProgramStatus] (val x: Self) extends AnyVal {
     
     inline def setGlobalState(value: String): Self = StObject.set(x, "globalState", value.asInstanceOf[js.Any])
     

@@ -36,7 +36,8 @@ object PartialModifierstring {
     __obj.asInstanceOf[PartialModifierstring]
   }
   
-  extension [Self <: PartialModifierstring](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialModifierstring] (val x: Self) extends AnyVal {
     
     inline def setData(value: Obj): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

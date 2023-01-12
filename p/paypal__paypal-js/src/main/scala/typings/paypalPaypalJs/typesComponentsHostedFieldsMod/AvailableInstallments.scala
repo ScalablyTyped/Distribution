@@ -18,7 +18,8 @@ object AvailableInstallments {
     __obj.asInstanceOf[AvailableInstallments]
   }
   
-  extension [Self <: AvailableInstallments](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AvailableInstallments] (val x: Self) extends AnyVal {
     
     inline def setConfiguration_owner_account(value: String): Self = StObject.set(x, "configuration_owner_account", value.asInstanceOf[js.Any])
     

@@ -27,7 +27,8 @@ object datePickerCalendarMod {
     @js.native
     val ^ : DatePickerCalendar = js.native
     
-    extension [Self <: DatePickerCalendar](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DatePickerCalendar] (val x: Self) extends AnyVal {
       
       inline def setDate(value: () => ReceivedDate): Self = StObject.set(x, "date", js.Any.fromFunction0(value))
       

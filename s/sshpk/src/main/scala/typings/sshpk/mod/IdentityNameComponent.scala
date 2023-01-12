@@ -18,7 +18,8 @@ object IdentityNameComponent {
     __obj.asInstanceOf[IdentityNameComponent]
   }
   
-  extension [Self <: IdentityNameComponent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IdentityNameComponent] (val x: Self) extends AnyVal {
     
     inline def setName(value: IndentityOidName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

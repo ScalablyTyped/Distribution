@@ -23,7 +23,8 @@ object ProximitySensorReading {
     __obj.asInstanceOf[ProximitySensorReading]
   }
   
-  extension [Self <: ProximitySensorReading](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProximitySensorReading] (val x: Self) extends AnyVal {
     
     inline def setDistanceInMillimeters(value: Double): Self = StObject.set(x, "distanceInMillimeters", value.asInstanceOf[js.Any])
     

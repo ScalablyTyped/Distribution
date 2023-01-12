@@ -73,7 +73,8 @@ object libWatchWatchFileSystemMod {
       __obj.asInstanceOf[WatchFileSystem]
     }
     
-    extension [Self <: WatchFileSystem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WatchFileSystem] (val x: Self) extends AnyVal {
       
       inline def setWatch(
         value: (/* files */ js.Iterable[String], /* directories */ js.Iterable[String], /* missing */ js.Iterable[String], /* startTime */ Double, /* options */ WatchOptions, /* callback */ js.Function5[

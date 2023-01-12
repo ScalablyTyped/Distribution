@@ -47,7 +47,8 @@ object libTypesMod {
       __obj.asInstanceOf[CancelSync]
     }
     
-    extension [Self <: CancelSync](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CancelSync] (val x: Self) extends AnyVal {
       
       inline def setPostRender(value: /* process */ Process => Unit): Self = StObject.set(x, "postRender", js.Any.fromFunction1(value))
       
@@ -104,7 +105,8 @@ object libTypesMod {
       __obj.asInstanceOf[FlushSync]
     }
     
-    extension [Self <: FlushSync](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FlushSync] (val x: Self) extends AnyVal {
       
       inline def setPostRender(value: () => Unit): Self = StObject.set(x, "postRender", js.Any.fromFunction0(value))
       
@@ -133,7 +135,8 @@ object libTypesMod {
       __obj.asInstanceOf[FrameData]
     }
     
-    extension [Self <: FrameData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FrameData] (val x: Self) extends AnyVal {
       
       inline def setDelta(value: Double): Self = StObject.set(x, "delta", value.asInstanceOf[js.Any])
       
@@ -174,7 +177,8 @@ object libTypesMod {
       __obj.asInstanceOf[Step]
     }
     
-    extension [Self <: Step](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Step] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Process => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction1(value))
       
@@ -232,7 +236,8 @@ object libTypesMod {
       __obj.asInstanceOf[Steps]
     }
     
-    extension [Self <: Steps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Steps] (val x: Self) extends AnyVal {
       
       inline def setPostRender(value: Step): Self = StObject.set(x, "postRender", value.asInstanceOf[js.Any])
       
@@ -307,7 +312,8 @@ object libTypesMod {
       __obj.asInstanceOf[Sync]
     }
     
-    extension [Self <: Sync](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Sync] (val x: Self) extends AnyVal {
       
       inline def setPostRender(
         value: (/* process */ Process, /* keepAlive */ js.UndefOr[Boolean], /* immediate */ js.UndefOr[Boolean]) => Process

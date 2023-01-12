@@ -22,7 +22,8 @@ object ConditionalFormatRule {
     __obj.asInstanceOf[ConditionalFormatRule]
   }
   
-  extension [Self <: ConditionalFormatRule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConditionalFormatRule] (val x: Self) extends AnyVal {
     
     inline def setBooleanRule(value: BooleanRule): Self = StObject.set(x, "booleanRule", value.asInstanceOf[js.Any])
     

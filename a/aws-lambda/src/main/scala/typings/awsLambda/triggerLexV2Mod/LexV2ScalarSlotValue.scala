@@ -20,7 +20,8 @@ object LexV2ScalarSlotValue {
     __obj.asInstanceOf[LexV2ScalarSlotValue]
   }
   
-  extension [Self <: LexV2ScalarSlotValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LexV2ScalarSlotValue] (val x: Self) extends AnyVal {
     
     inline def setShape(value: Scalar): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
     

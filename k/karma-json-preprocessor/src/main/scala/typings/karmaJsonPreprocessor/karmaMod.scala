@@ -21,7 +21,8 @@ object karmaMod {
       __obj.asInstanceOf[ConfigOptions]
     }
     
-    extension [Self <: ConfigOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConfigOptions] (val x: Self) extends AnyVal {
       
       inline def setJsonPreprocessor(value: JsonPreprocessorOptions): Self = StObject.set(x, "jsonPreprocessor", value.asInstanceOf[js.Any])
       
@@ -52,7 +53,8 @@ object karmaMod {
       __obj.asInstanceOf[JsonPreprocessorOptions]
     }
     
-    extension [Self <: JsonPreprocessorOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JsonPreprocessorOptions] (val x: Self) extends AnyVal {
       
       inline def setStripPrefix(value: String): Self = StObject.set(x, "stripPrefix", value.asInstanceOf[js.Any])
       

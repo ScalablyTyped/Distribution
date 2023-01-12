@@ -33,7 +33,8 @@ object MinuteRange {
     __obj.asInstanceOf[MinuteRange]
   }
   
-  extension [Self <: MinuteRange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MinuteRange] (val x: Self) extends AnyVal {
     
     inline def setEndMinutesAgo(value: Double): Self = StObject.set(x, "endMinutesAgo", value.asInstanceOf[js.Any])
     

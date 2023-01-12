@@ -31,7 +31,8 @@ object TypeoftapTree {
     __obj.asInstanceOf[TypeoftapTree]
   }
   
-  extension [Self <: TypeoftapTree](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeoftapTree] (val x: Self) extends AnyVal {
     
     inline def setCanAdd(value: (Any, Any) => Boolean): Self = StObject.set(x, "canAdd", js.Any.fromFunction2(value))
     

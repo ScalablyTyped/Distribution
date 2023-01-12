@@ -18,7 +18,8 @@ object PlotMapbubbleDragDropGuideBoxOptions {
     __obj.asInstanceOf[PlotMapbubbleDragDropGuideBoxOptions]
   }
   
-  extension [Self <: PlotMapbubbleDragDropGuideBoxOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotMapbubbleDragDropGuideBoxOptions] (val x: Self) extends AnyVal {
     
     inline def setDefault(value: DragDropGuideBoxOptionsObject): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     

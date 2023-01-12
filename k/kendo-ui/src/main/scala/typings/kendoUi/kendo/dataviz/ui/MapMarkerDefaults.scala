@@ -17,7 +17,8 @@ object MapMarkerDefaults {
     __obj.asInstanceOf[MapMarkerDefaults]
   }
   
-  extension [Self <: MapMarkerDefaults](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MapMarkerDefaults] (val x: Self) extends AnyVal {
     
     inline def setShape(value: String): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object JourneyPushMessage {
     __obj.asInstanceOf[JourneyPushMessage]
   }
   
-  extension [Self <: JourneyPushMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JourneyPushMessage] (val x: Self) extends AnyVal {
     
     inline def setTimeToLive(value: string): Self = StObject.set(x, "TimeToLive", value.asInstanceOf[js.Any])
     

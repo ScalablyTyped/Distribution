@@ -20,7 +20,8 @@ object CIStat {
     __obj.asInstanceOf[CIStat]
   }
   
-  extension [Self <: CIStat](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CIStat] (val x: Self) extends AnyVal {
     
     inline def setPlatform(value: String): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
     

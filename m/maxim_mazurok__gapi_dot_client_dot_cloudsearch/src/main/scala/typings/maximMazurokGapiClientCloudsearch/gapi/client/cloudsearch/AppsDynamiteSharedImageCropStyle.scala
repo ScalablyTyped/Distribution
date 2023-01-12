@@ -19,7 +19,8 @@ object AppsDynamiteSharedImageCropStyle {
     __obj.asInstanceOf[AppsDynamiteSharedImageCropStyle]
   }
   
-  extension [Self <: AppsDynamiteSharedImageCropStyle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppsDynamiteSharedImageCropStyle] (val x: Self) extends AnyVal {
     
     inline def setAspectRatio(value: Double): Self = StObject.set(x, "aspectRatio", value.asInstanceOf[js.Any])
     

@@ -739,7 +739,8 @@ object PropsHTMLBodyElementconte {
     __obj.asInstanceOf[PropsHTMLBodyElementconte]
   }
   
-  extension [Self <: PropsHTMLBodyElementconte](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PropsHTMLBodyElementconte] (val x: Self) extends AnyVal {
     
     inline def setALink(value: String): Self = StObject.set(x, "aLink", value.asInstanceOf[js.Any])
     

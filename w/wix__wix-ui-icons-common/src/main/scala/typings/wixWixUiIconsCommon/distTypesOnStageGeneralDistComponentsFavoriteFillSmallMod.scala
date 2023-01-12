@@ -27,7 +27,8 @@ object distTypesOnStageGeneralDistComponentsFavoriteFillSmallMod extends Shortcu
       __obj.asInstanceOf[FavoriteFillSmallProps]
     }
     
-    extension [Self <: FavoriteFillSmallProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FavoriteFillSmallProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

@@ -28,7 +28,8 @@ object ArcEncodeEntry {
     __obj.asInstanceOf[ArcEncodeEntry]
   }
   
-  extension [Self <: ArcEncodeEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ArcEncodeEntry] (val x: Self) extends AnyVal {
     
     inline def setCornerRadius(value: ProductionRule[NumericValueRef]): Self = StObject.set(x, "cornerRadius", value.asInstanceOf[js.Any])
     

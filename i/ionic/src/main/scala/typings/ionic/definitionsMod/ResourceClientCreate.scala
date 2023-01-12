@@ -15,7 +15,8 @@ object ResourceClientCreate {
     __obj.asInstanceOf[ResourceClientCreate[T, U]]
   }
   
-  extension [Self <: ResourceClientCreate[?, ?], T /* <: js.Object */, U /* <: js.Object */](x: Self & (ResourceClientCreate[T, U])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResourceClientCreate[?, ?], T /* <: js.Object */, U /* <: js.Object */] (val x: Self & (ResourceClientCreate[T, U])) extends AnyVal {
     
     inline def setCreate(value: U => js.Promise[T]): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
   }

@@ -48,7 +48,8 @@ object ZipReaderOptions {
     __obj.asInstanceOf[ZipReaderOptions]
   }
   
-  extension [Self <: ZipReaderOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ZipReaderOptions] (val x: Self) extends AnyVal {
     
     inline def setCheckSignature(value: Boolean): Self = StObject.set(x, "checkSignature", value.asInstanceOf[js.Any])
     

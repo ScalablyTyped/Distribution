@@ -17,7 +17,8 @@ object CodecEngine {
     __obj.asInstanceOf[CodecEngine]
   }
   
-  extension [Self <: CodecEngine](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CodecEngine] (val x: Self) extends AnyVal {
     
     inline def setDecode(value: Any => Any): Self = StObject.set(x, "decode", js.Any.fromFunction1(value))
     

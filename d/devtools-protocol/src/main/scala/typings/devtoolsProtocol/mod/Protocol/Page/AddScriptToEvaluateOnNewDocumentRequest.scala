@@ -28,7 +28,8 @@ object AddScriptToEvaluateOnNewDocumentRequest {
     __obj.asInstanceOf[AddScriptToEvaluateOnNewDocumentRequest]
   }
   
-  extension [Self <: AddScriptToEvaluateOnNewDocumentRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AddScriptToEvaluateOnNewDocumentRequest] (val x: Self) extends AnyVal {
     
     inline def setIncludeCommandLineAPI(value: Boolean): Self = StObject.set(x, "includeCommandLineAPI", value.asInstanceOf[js.Any])
     

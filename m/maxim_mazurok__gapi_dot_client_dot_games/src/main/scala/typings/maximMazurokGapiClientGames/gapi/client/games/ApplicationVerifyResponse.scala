@@ -22,7 +22,8 @@ object ApplicationVerifyResponse {
     __obj.asInstanceOf[ApplicationVerifyResponse]
   }
   
-  extension [Self <: ApplicationVerifyResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApplicationVerifyResponse] (val x: Self) extends AnyVal {
     
     inline def setAlternate_player_id(value: String): Self = StObject.set(x, "alternate_player_id", value.asInstanceOf[js.Any])
     

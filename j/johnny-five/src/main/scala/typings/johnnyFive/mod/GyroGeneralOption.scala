@@ -15,7 +15,8 @@ object GyroGeneralOption {
     __obj.asInstanceOf[GyroGeneralOption]
   }
   
-  extension [Self <: GyroGeneralOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GyroGeneralOption] (val x: Self) extends AnyVal {
     
     inline def setController(value: String): Self = StObject.set(x, "controller", value.asInstanceOf[js.Any])
     

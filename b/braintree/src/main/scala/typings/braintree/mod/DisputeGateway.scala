@@ -39,7 +39,8 @@ object DisputeGateway {
     __obj.asInstanceOf[DisputeGateway]
   }
   
-  extension [Self <: DisputeGateway](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisputeGateway] (val x: Self) extends AnyVal {
     
     inline def setAccept(value: String => js.Promise[ValidatedResponse[Dispute]]): Self = StObject.set(x, "accept", js.Any.fromFunction1(value))
     

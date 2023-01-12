@@ -37,7 +37,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setCloseMarker(value: String): Self = StObject.set(x, "closeMarker", value.asInstanceOf[js.Any])
       

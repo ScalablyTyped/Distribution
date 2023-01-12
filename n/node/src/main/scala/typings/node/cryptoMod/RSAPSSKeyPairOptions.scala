@@ -49,7 +49,8 @@ object RSAPSSKeyPairOptions {
     __obj.asInstanceOf[RSAPSSKeyPairOptions[PubF, PrivF]]
   }
   
-  extension [Self <: RSAPSSKeyPairOptions[?, ?], PubF /* <: KeyFormat */, PrivF /* <: KeyFormat */](x: Self & (RSAPSSKeyPairOptions[PubF, PrivF])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RSAPSSKeyPairOptions[?, ?], PubF /* <: KeyFormat */, PrivF /* <: KeyFormat */] (val x: Self & (RSAPSSKeyPairOptions[PubF, PrivF])) extends AnyVal {
     
     inline def setHashAlgorithm(value: String): Self = StObject.set(x, "hashAlgorithm", value.asInstanceOf[js.Any])
     

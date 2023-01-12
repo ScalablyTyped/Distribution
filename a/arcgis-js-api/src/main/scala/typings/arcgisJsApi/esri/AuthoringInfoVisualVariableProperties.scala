@@ -93,7 +93,8 @@ object AuthoringInfoVisualVariableProperties {
     __obj.asInstanceOf[AuthoringInfoVisualVariableProperties]
   }
   
-  extension [Self <: AuthoringInfoVisualVariableProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AuthoringInfoVisualVariableProperties] (val x: Self) extends AnyVal {
     
     inline def setEndTime(value: String | Double): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     

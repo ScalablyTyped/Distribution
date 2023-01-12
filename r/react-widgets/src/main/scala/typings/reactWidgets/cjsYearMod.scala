@@ -50,7 +50,8 @@ object cjsYearMod {
       __obj.asInstanceOf[YearProps]
     }
     
-    extension [Self <: YearProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: YearProps] (val x: Self) extends AnyVal {
       
       inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       

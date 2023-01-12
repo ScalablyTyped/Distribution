@@ -16,7 +16,8 @@ object BatchCreateRowsResponse {
     __obj.asInstanceOf[BatchCreateRowsResponse]
   }
   
-  extension [Self <: BatchCreateRowsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchCreateRowsResponse] (val x: Self) extends AnyVal {
     
     inline def setRows(value: js.Array[Row]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
     

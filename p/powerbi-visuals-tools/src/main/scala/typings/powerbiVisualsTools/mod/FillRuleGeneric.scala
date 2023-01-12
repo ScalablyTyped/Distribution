@@ -17,7 +17,8 @@ object FillRuleGeneric {
     __obj.asInstanceOf[FillRuleGeneric[TColor, TValue, TStrategy]]
   }
   
-  extension [Self <: FillRuleGeneric[?, ?, ?], TColor, TValue, TStrategy](x: Self & (FillRuleGeneric[TColor, TValue, TStrategy])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FillRuleGeneric[?, ?, ?], TColor, TValue, TStrategy] (val x: Self & (FillRuleGeneric[TColor, TValue, TStrategy])) extends AnyVal {
     
     inline def setLinearGradient2(value: LinearGradient2Generic[TColor, TValue, TStrategy]): Self = StObject.set(x, "linearGradient2", value.asInstanceOf[js.Any])
     

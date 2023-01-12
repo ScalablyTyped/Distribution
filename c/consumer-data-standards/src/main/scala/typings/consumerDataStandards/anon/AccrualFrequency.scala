@@ -89,7 +89,8 @@ object AccrualFrequency {
     __obj.asInstanceOf[AccrualFrequency]
   }
   
-  extension [Self <: AccrualFrequency](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccrualFrequency] (val x: Self) extends AnyVal {
     
     inline def setAccrualFrequency(value: String): Self = StObject.set(x, "accrualFrequency", value.asInstanceOf[js.Any])
     

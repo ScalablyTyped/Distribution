@@ -21,7 +21,8 @@ object HTMLAttributesidclassName {
     __obj.asInstanceOf[HTMLAttributesidclassName]
   }
   
-  extension [Self <: HTMLAttributesidclassName](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HTMLAttributesidclassName] (val x: Self) extends AnyVal {
     
     inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     

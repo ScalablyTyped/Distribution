@@ -18,7 +18,8 @@ object DirectoryServiceAuthenticationRequest {
     __obj.asInstanceOf[DirectoryServiceAuthenticationRequest]
   }
   
-  extension [Self <: DirectoryServiceAuthenticationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DirectoryServiceAuthenticationRequest] (val x: Self) extends AnyVal {
     
     inline def setDirectoryId(value: String): Self = StObject.set(x, "DirectoryId", value.asInstanceOf[js.Any])
     

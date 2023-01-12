@@ -18,7 +18,8 @@ object ScalingTrigger {
     __obj.asInstanceOf[ScalingTrigger]
   }
   
-  extension [Self <: ScalingTrigger](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScalingTrigger] (val x: Self) extends AnyVal {
     
     inline def setCloudWatchAlarmDefinition(value: CloudWatchAlarmDefinition): Self = StObject.set(x, "CloudWatchAlarmDefinition", value.asInstanceOf[js.Any])
   }

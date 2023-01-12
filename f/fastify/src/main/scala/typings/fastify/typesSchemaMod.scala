@@ -32,7 +32,8 @@ object typesSchemaMod {
       __obj.asInstanceOf[FastifyRouteSchemaDef[T]]
     }
     
-    extension [Self <: FastifyRouteSchemaDef[?], T](x: Self & FastifyRouteSchemaDef[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FastifyRouteSchemaDef[?], T] (val x: Self & FastifyRouteSchemaDef[T]) extends AnyVal {
       
       inline def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
       
@@ -73,7 +74,8 @@ object typesSchemaMod {
       __obj.asInstanceOf[FastifySchema]
     }
     
-    extension [Self <: FastifySchema](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FastifySchema] (val x: Self) extends AnyVal {
       
       inline def setBody(value: Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
@@ -112,7 +114,8 @@ object typesSchemaMod {
       __obj.asInstanceOf[FastifySchemaControllerOptions]
     }
     
-    extension [Self <: FastifySchemaControllerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FastifySchemaControllerOptions] (val x: Self) extends AnyVal {
       
       inline def setBucket(value: /* parentSchemas */ js.UndefOr[Any] => Add): Self = StObject.set(x, "bucket", js.Any.fromFunction1(value))
       
@@ -148,7 +151,8 @@ object typesSchemaMod {
       __obj.asInstanceOf[FastifySchemaValidationError]
     }
     
-    extension [Self <: FastifySchemaValidationError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FastifySchemaValidationError] (val x: Self) extends AnyVal {
       
       inline def setInstancePath(value: String): Self = StObject.set(x, "instancePath", value.asInstanceOf[js.Any])
       

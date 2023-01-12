@@ -154,7 +154,8 @@ object PanGestureHandlerPropsPar {
     __obj.asInstanceOf[PanGestureHandlerPropsPar]
   }
   
-  extension [Self <: PanGestureHandlerPropsPar](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PanGestureHandlerPropsPar] (val x: Self) extends AnyVal {
     
     inline def setActivateAfterLongPress(value: Double): Self = StObject.set(x, "activateAfterLongPress", value.asInstanceOf[js.Any])
     

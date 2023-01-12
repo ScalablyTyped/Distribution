@@ -59,7 +59,8 @@ object INDTransmitterProperties {
     __obj.asInstanceOf[INDTransmitterProperties]
   }
   
-  extension [Self <: INDTransmitterProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: INDTransmitterProperties] (val x: Self) extends AnyVal {
     
     inline def setCertificateType(value: NDCertificateType): Self = StObject.set(x, "certificateType", value.asInstanceOf[js.Any])
     

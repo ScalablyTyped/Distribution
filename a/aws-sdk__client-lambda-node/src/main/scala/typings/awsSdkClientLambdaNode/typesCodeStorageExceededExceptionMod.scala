@@ -25,7 +25,8 @@ object typesCodeStorageExceededExceptionMod {
       __obj.asInstanceOf[CodeStorageExceededException]
     }
     
-    extension [Self <: CodeStorageExceededException](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CodeStorageExceededException] (val x: Self) extends AnyVal {
       
       inline def setName(value: typings.awsSdkClientLambdaNode.awsSdkClientLambdaNodeStrings.CodeStorageExceededException): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
@@ -50,7 +51,8 @@ object typesCodeStorageExceededExceptionMod {
       __obj.asInstanceOf[CodeStorageExceededExceptionDetails]
     }
     
-    extension [Self <: CodeStorageExceededExceptionDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CodeStorageExceededExceptionDetails] (val x: Self) extends AnyVal {
       
       inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       

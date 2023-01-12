@@ -71,7 +71,8 @@ object SignificantDigitsNumberRounder {
     __obj.asInstanceOf[SignificantDigitsNumberRounder]
   }
   
-  extension [Self <: SignificantDigitsNumberRounder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SignificantDigitsNumberRounder] (val x: Self) extends AnyVal {
     
     inline def setRoundDouble(value: Double => Double): Self = StObject.set(x, "roundDouble", js.Any.fromFunction1(value))
     

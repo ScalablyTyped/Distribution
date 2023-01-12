@@ -27,7 +27,8 @@ object AvifOptions {
     __obj.asInstanceOf[AvifOptions]
   }
   
-  extension [Self <: AvifOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AvifOptions] (val x: Self) extends AnyVal {
     
     inline def setChromaSubsampling(value: String): Self = StObject.set(x, "chromaSubsampling", value.asInstanceOf[js.Any])
     

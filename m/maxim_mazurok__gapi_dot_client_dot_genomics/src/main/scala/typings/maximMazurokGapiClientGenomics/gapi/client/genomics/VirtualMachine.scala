@@ -88,7 +88,8 @@ object VirtualMachine {
     __obj.asInstanceOf[VirtualMachine]
   }
   
-  extension [Self <: VirtualMachine](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VirtualMachine] (val x: Self) extends AnyVal {
     
     inline def setAccelerators(value: js.Array[Accelerator]): Self = StObject.set(x, "accelerators", value.asInstanceOf[js.Any])
     

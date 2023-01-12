@@ -41,7 +41,8 @@ object AddAudioParams {
     __obj.asInstanceOf[AddAudioParams]
   }
   
-  extension [Self <: AddAudioParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AddAudioParams] (val x: Self) extends AnyVal {
     
     inline def setAllow_overwrite(value: Boolean): Self = StObject.set(x, "allow_overwrite", value.asInstanceOf[js.Any])
     

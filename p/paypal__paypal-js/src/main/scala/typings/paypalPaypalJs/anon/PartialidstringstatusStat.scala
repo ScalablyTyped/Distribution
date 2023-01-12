@@ -65,7 +65,8 @@ object PartialidstringstatusStat {
     __obj.asInstanceOf[PartialidstringstatusStat]
   }
   
-  extension [Self <: PartialidstringstatusStat](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialidstringstatusStat] (val x: Self) extends AnyVal {
     
     inline def setAuto_renewal(value: Boolean): Self = StObject.set(x, "auto_renewal", value.asInstanceOf[js.Any])
     

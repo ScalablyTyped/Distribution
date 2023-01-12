@@ -28,7 +28,8 @@ object ListAddonsRequest {
     __obj.asInstanceOf[ListAddonsRequest]
   }
   
-  extension [Self <: ListAddonsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListAddonsRequest] (val x: Self) extends AnyVal {
     
     inline def setClusterName(value: ClusterName): Self = StObject.set(x, "clusterName", value.asInstanceOf[js.Any])
     

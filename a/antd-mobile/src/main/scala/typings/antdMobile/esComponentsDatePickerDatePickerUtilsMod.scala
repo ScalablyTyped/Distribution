@@ -63,7 +63,8 @@ object esComponentsDatePickerDatePickerUtilsMod {
       __obj.asInstanceOf[DatePickerFilter]
     }
     
-    extension [Self <: DatePickerFilter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DatePickerFilter] (val x: Self) extends AnyVal {
       
       inline def setDay(value: (/* val */ Double, /* extend */ Date) => Boolean): Self = StObject.set(x, "day", js.Any.fromFunction2(value))
       

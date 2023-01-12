@@ -20,7 +20,8 @@ object DescribeLoggingConfigurationResponse {
     __obj.asInstanceOf[DescribeLoggingConfigurationResponse]
   }
   
-  extension [Self <: DescribeLoggingConfigurationResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeLoggingConfigurationResponse] (val x: Self) extends AnyVal {
     
     inline def setFirewallArn(value: ResourceArn): Self = StObject.set(x, "FirewallArn", value.asInstanceOf[js.Any])
     

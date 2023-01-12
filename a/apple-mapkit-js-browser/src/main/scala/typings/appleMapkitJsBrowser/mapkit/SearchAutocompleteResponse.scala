@@ -26,7 +26,8 @@ object SearchAutocompleteResponse {
     __obj.asInstanceOf[SearchAutocompleteResponse]
   }
   
-  extension [Self <: SearchAutocompleteResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchAutocompleteResponse] (val x: Self) extends AnyVal {
     
     inline def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     

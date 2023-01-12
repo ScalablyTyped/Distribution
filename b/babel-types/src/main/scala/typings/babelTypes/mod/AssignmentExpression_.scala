@@ -46,7 +46,8 @@ object AssignmentExpression_ {
     __obj.asInstanceOf[AssignmentExpression_]
   }
   
-  extension [Self <: AssignmentExpression_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssignmentExpression_] (val x: Self) extends AnyVal {
     
     inline def setLeft(value: LVal): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
     

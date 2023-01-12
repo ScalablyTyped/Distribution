@@ -23,7 +23,8 @@ object distSrcTypesMetaCuratedAssetsResponseMod {
       __obj.asInstanceOf[CuratedAssetsResponse]
     }
     
-    extension [Self <: CuratedAssetsResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CuratedAssetsResponse] (val x: Self) extends AnyVal {
       
       inline def setCurrencies(value: js.Array[String]): Self = StObject.set(x, "currencies", value.asInstanceOf[js.Any])
       

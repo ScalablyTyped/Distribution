@@ -20,7 +20,8 @@ object TypeofArcGauge {
     __obj.asInstanceOf[TypeofArcGauge]
   }
   
-  extension [Self <: TypeofArcGauge](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofArcGauge] (val x: Self) extends AnyVal {
     
     inline def setExtend(value: js.Object => ArcGauge): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
     

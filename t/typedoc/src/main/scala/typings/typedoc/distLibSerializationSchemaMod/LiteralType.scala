@@ -20,7 +20,8 @@ object LiteralType {
     __obj.asInstanceOf[LiteralType]
   }
   
-  extension [Self <: LiteralType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LiteralType] (val x: Self) extends AnyVal {
     
     inline def setType(value: ToSerialized[/* "literal" */ String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

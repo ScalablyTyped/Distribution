@@ -15,7 +15,8 @@ object AuthorizeCacheSecurityGroupIngressResult {
     __obj.asInstanceOf[AuthorizeCacheSecurityGroupIngressResult]
   }
   
-  extension [Self <: AuthorizeCacheSecurityGroupIngressResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AuthorizeCacheSecurityGroupIngressResult] (val x: Self) extends AnyVal {
     
     inline def setCacheSecurityGroup(value: CacheSecurityGroup): Self = StObject.set(x, "CacheSecurityGroup", value.asInstanceOf[js.Any])
     

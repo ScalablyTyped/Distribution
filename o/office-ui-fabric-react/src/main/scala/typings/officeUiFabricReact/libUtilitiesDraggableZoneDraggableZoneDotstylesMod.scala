@@ -23,7 +23,8 @@ object libUtilitiesDraggableZoneDraggableZoneDotstylesMod {
       __obj.asInstanceOf[IDraggableZoneStyles]
     }
     
-    extension [Self <: IDraggableZoneStyles](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDraggableZoneStyles] (val x: Self) extends AnyVal {
       
       inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     }

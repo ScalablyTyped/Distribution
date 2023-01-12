@@ -19,7 +19,8 @@ object MeasurementConfig {
     __obj.asInstanceOf[MeasurementConfig]
   }
   
-  extension [Self <: MeasurementConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MeasurementConfig] (val x: Self) extends AnyVal {
     
     inline def setDv360ToCmCostReportingEnabled(value: Boolean): Self = StObject.set(x, "dv360ToCmCostReportingEnabled", value.asInstanceOf[js.Any])
     

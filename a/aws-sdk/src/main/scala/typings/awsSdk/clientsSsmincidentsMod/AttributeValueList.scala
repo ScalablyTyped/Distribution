@@ -23,7 +23,8 @@ object AttributeValueList {
     __obj.asInstanceOf[AttributeValueList]
   }
   
-  extension [Self <: AttributeValueList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AttributeValueList] (val x: Self) extends AnyVal {
     
     inline def setIntegerValues(value: IntegerList): Self = StObject.set(x, "integerValues", value.asInstanceOf[js.Any])
     

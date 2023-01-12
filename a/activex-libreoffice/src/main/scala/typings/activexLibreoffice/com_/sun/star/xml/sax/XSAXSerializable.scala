@@ -27,7 +27,8 @@ object XSAXSerializable {
     __obj.asInstanceOf[XSAXSerializable]
   }
   
-  extension [Self <: XSAXSerializable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XSAXSerializable] (val x: Self) extends AnyVal {
     
     inline def setSerialize(value: (XDocumentHandler, SeqEquiv[StringPair]) => Unit): Self = StObject.set(x, "serialize", js.Any.fromFunction2(value))
   }

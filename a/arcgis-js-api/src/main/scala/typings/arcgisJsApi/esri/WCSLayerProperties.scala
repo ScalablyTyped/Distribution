@@ -110,7 +110,8 @@ object WCSLayerProperties {
     __obj.asInstanceOf[WCSLayerProperties]
   }
   
-  extension [Self <: WCSLayerProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WCSLayerProperties] (val x: Self) extends AnyVal {
     
     inline def setCoverageId(value: String): Self = StObject.set(x, "coverageId", value.asInstanceOf[js.Any])
     

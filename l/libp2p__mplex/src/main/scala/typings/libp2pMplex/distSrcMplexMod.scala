@@ -106,7 +106,8 @@ object distSrcMplexMod {
       __obj.asInstanceOf[MplexStream]
     }
     
-    extension [Self <: MplexStream](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MplexStream] (val x: Self) extends AnyVal {
       
       inline def setSourcePush(value: Uint8ArrayList => Unit): Self = StObject.set(x, "sourcePush", js.Any.fromFunction1(value))
       

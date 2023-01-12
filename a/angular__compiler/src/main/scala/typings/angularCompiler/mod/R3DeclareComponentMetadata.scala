@@ -104,7 +104,8 @@ object R3DeclareComponentMetadata {
     __obj.asInstanceOf[R3DeclareComponentMetadata]
   }
   
-  extension [Self <: R3DeclareComponentMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: R3DeclareComponentMetadata] (val x: Self) extends AnyVal {
     
     inline def setAnimations(value: Expression): Self = StObject.set(x, "animations", value.asInstanceOf[js.Any])
     

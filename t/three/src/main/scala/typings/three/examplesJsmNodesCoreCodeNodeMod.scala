@@ -39,7 +39,8 @@ object examplesJsmNodesCoreCodeNodeMod {
       __obj.asInstanceOf[CodeNodeInclude]
     }
     
-    extension [Self <: CodeNodeInclude](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CodeNodeInclude] (val x: Self) extends AnyVal {
       
       inline def setBuild(value: typings.three.examplesJsmNodesCoreNodeBuilderMod.default => Unit): Self = StObject.set(x, "build", js.Any.fromFunction1(value))
     }

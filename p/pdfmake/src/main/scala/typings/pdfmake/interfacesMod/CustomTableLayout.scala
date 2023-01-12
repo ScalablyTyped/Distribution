@@ -140,7 +140,8 @@ object CustomTableLayout {
     __obj.asInstanceOf[CustomTableLayout]
   }
   
-  extension [Self <: CustomTableLayout](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomTableLayout] (val x: Self) extends AnyVal {
     
     inline def setDefaultBorder(value: Boolean): Self = StObject.set(x, "defaultBorder", value.asInstanceOf[js.Any])
     

@@ -39,7 +39,8 @@ object PartialBlockStatement {
     __obj.asInstanceOf[PartialBlockStatement]
   }
   
-  extension [Self <: PartialBlockStatement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialBlockStatement] (val x: Self) extends AnyVal {
     
     inline def setCloseStrip(value: StripFlags): Self = StObject.set(x, "closeStrip", value.asInstanceOf[js.Any])
     

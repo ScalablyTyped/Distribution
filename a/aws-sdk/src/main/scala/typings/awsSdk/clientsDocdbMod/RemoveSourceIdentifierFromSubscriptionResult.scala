@@ -15,7 +15,8 @@ object RemoveSourceIdentifierFromSubscriptionResult {
     __obj.asInstanceOf[RemoveSourceIdentifierFromSubscriptionResult]
   }
   
-  extension [Self <: RemoveSourceIdentifierFromSubscriptionResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RemoveSourceIdentifierFromSubscriptionResult] (val x: Self) extends AnyVal {
     
     inline def setEventSubscription(value: EventSubscription): Self = StObject.set(x, "EventSubscription", value.asInstanceOf[js.Any])
     

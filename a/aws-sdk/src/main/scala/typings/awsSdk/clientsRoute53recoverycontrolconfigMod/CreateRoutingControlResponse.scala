@@ -18,7 +18,8 @@ object CreateRoutingControlResponse {
     __obj.asInstanceOf[CreateRoutingControlResponse]
   }
   
-  extension [Self <: CreateRoutingControlResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateRoutingControlResponse] (val x: Self) extends AnyVal {
     
     inline def setRoutingControl(value: RoutingControl): Self = StObject.set(x, "RoutingControl", value.asInstanceOf[js.Any])
     

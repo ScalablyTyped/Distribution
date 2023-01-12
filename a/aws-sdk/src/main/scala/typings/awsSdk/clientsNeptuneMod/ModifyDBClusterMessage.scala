@@ -105,7 +105,8 @@ object ModifyDBClusterMessage {
     __obj.asInstanceOf[ModifyDBClusterMessage]
   }
   
-  extension [Self <: ModifyDBClusterMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModifyDBClusterMessage] (val x: Self) extends AnyVal {
     
     inline def setAllowMajorVersionUpgrade(value: Boolean): Self = StObject.set(x, "AllowMajorVersionUpgrade", value.asInstanceOf[js.Any])
     

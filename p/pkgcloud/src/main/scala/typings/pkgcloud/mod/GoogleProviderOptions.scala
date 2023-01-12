@@ -20,7 +20,8 @@ object GoogleProviderOptions {
     __obj.asInstanceOf[GoogleProviderOptions]
   }
   
-  extension [Self <: GoogleProviderOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleProviderOptions] (val x: Self) extends AnyVal {
     
     inline def setKeyFilename(value: String): Self = StObject.set(x, "keyFilename", value.asInstanceOf[js.Any])
     

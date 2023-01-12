@@ -43,7 +43,8 @@ object Chart3DBarProperties {
     __obj.asInstanceOf[Chart3DBarProperties]
   }
   
-  extension [Self <: Chart3DBarProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Chart3DBarProperties] (val x: Self) extends AnyVal {
     
     inline def setSolidType(value: Double): Self = StObject.set(x, "SolidType", value.asInstanceOf[js.Any])
   }

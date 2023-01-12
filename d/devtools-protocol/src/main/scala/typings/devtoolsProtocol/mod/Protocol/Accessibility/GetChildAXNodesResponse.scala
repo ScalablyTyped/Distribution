@@ -15,7 +15,8 @@ object GetChildAXNodesResponse {
     __obj.asInstanceOf[GetChildAXNodesResponse]
   }
   
-  extension [Self <: GetChildAXNodesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetChildAXNodesResponse] (val x: Self) extends AnyVal {
     
     inline def setNodes(value: js.Array[AXNode]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
     

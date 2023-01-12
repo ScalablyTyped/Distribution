@@ -23,7 +23,8 @@ object CharacteristicDescriptor {
     __obj.asInstanceOf[CharacteristicDescriptor]
   }
   
-  extension [Self <: CharacteristicDescriptor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CharacteristicDescriptor] (val x: Self) extends AnyVal {
     
     inline def setPermission(value: DescriptorPermission): Self = StObject.set(x, "permission", value.asInstanceOf[js.Any])
     
